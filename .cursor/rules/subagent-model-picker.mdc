@@ -20,7 +20,16 @@ Grok is **never** used for:
 - Threads review, bank copy, or content judgment (`threads-smart-agent-gpt-sol.mdc`)
 - Mock / Anki bank content review (`mock-bank-review-model.mdc` — Sol default, Opus escalate)
 
-If Sol/Opus are not available as a subagent model, do the content review in the main chat — do not fall back to Grok.
+If Sol/Opus are not available as a subagent model, use `inherit` subagents (same model as the main chat) for content writing and review — never fall back to Grok or Composer for content.
+
+## Parallel content work (set 2026-10-02, user: «быстрее за счёт оптимизации, не жертвуя качеством»)
+
+Bank / deck audits are split across **parallel `inherit` subagents** instead of one long main-chat pass:
+
+- Main chat: gates → chunk inputs (`tmp/<slug>/…json`) + a chunk **validator** script → launch writers in one message (`run_in_background: true`) → while they run, do mechanical prep (pipeline, scripts) → merge → full gates → spot-read + fix → cascade.
+- Split by topic / id range (bank, ~15–25 items per writer) and by row batch (deck, ~50–60 cards per writer). Give each writer: the standard, its coverage plan (no overlap between writers), key-letter quota, output path, and the validator command it must pass before returning.
+- Mechanical steps with no content judgment (ops pipeline, apkg build, Gumroad replace/publish, sample render, tests) may go to `composer-2.5-fast`.
+- Point-rewrite: only items/cards that fail the standard are rewritten; passing ones stay. Full rewrite only when most of the artifact fails.
 
 ## Always
 

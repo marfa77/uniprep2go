@@ -1,0 +1,548 @@
+{
+  "ptcb-pharmacy-technician-mock": {
+    "ptcb-pharmacy-technician-mock-001": {
+      "difficulty": "easy",
+      "prompt": "A patient hands in a prescription for Zoloft 50 mg. Which generic drug should the technician select during order entry?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Escitalopram",
+        "b": "Fluoxetine",
+        "c": "Sertraline",
+        "d": "Paroxetine"
+      },
+      "explanation": "Zoloft is the brand name for sertraline, an SSRI used for depression, panic disorder, OCD, PTSD and social anxiety. All four options are SSRIs with overlapping uses, which is exactly why picking the wrong one is a common selection error at order entry.",
+      "distractorExplanations": {
+        "a": "Escitalopram is the generic for Lexapro, a different SSRI.",
+        "b": "Fluoxetine is the generic for Prozac, a long-half-life SSRI.",
+        "d": "Paroxetine is the generic for Paxil, a different SSRI with more anticholinergic effects."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-002": {
+      "difficulty": "medium",
+      "prompt": "A 68-year-old man is prescribed Flomax 0.4 mg once daily for urinary hesitancy caused by an enlarged prostate. Which generic name and drug class match this order?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Tamsulosin; alpha-1 blocker",
+        "b": "Finasteride; 5-alpha-reductase inhibitor",
+        "c": "Oxybutynin; anticholinergic",
+        "d": "Tadalafil; PDE-5 inhibitor"
+      },
+      "explanation": "Flomax is tamsulosin, an alpha-1 blocker that relaxes smooth muscle in the prostate and bladder neck to improve urine flow in BPH. Dizziness and orthostatic hypotension are common, especially after the first dose, and the capsule should not be crushed or opened.",
+      "distractorExplanations": {
+        "b": "Finasteride (Proscar) also treats BPH, but it shrinks the prostate by blocking 5-alpha-reductase; it is not Flomax.",
+        "c": "Oxybutynin (Ditropan) is an anticholinergic for overactive bladder, not an alpha blocker for BPH.",
+        "d": "Tadalafil (Cialis) is a PDE-5 inhibitor approved for BPH and erectile dysfunction, but it is not Flomax."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-003": {
+      "difficulty": "medium",
+      "prompt": "A cardiologist prescribes Plavix 75 mg daily after a patient receives a coronary stent. Which statement about this drug is correct?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "It is warfarin, a vitamin K antagonist that needs INR checks",
+        "b": "It is clopidogrel, an antiplatelet that raises bleeding risk",
+        "c": "It is apixaban, a factor Xa inhibitor for atrial fibrillation",
+        "d": "It is atorvastatin, a statin that lowers LDL cholesterol"
+      },
+      "explanation": "Plavix is clopidogrel, a P2Y12 antiplatelet used after stents and to prevent heart attack and stroke. It increases bleeding risk, and strong CYP2C19 inhibitors such as omeprazole can reduce its activation, so that combination is flagged for the pharmacist.",
+      "distractorExplanations": {
+        "a": "Warfarin is Coumadin or Jantoven, an anticoagulant monitored by INR, not Plavix.",
+        "c": "Apixaban is Eliquis, an anticoagulant, not an antiplatelet like Plavix.",
+        "d": "Atorvastatin (Lipitor) is often prescribed after a stent too, but it is a statin, not Plavix."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-004": {
+      "difficulty": "medium",
+      "prompt": "A discharge medication list shows apixaban 5 mg twice daily for atrial fibrillation. The patient asks which brand name to look for on the bottles at home. Which brand matches?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Xarelto",
+        "b": "Pradaxa",
+        "c": "Coumadin",
+        "d": "Eliquis"
+      },
+      "explanation": "Eliquis is apixaban, a direct oral factor Xa inhibitor dosed twice daily for stroke prevention in atrial fibrillation and for VTE. It needs no routine INR monitoring, but it is still a high-alert anticoagulant with bleeding risk.",
+      "distractorExplanations": {
+        "a": "Xarelto is rivaroxaban, another factor Xa inhibitor that is usually dosed once daily with food.",
+        "b": "Pradaxa is dabigatran, a direct thrombin inhibitor, not a factor Xa inhibitor.",
+        "c": "Coumadin is warfarin, a vitamin K antagonist that requires INR monitoring."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-005": {
+      "difficulty": "medium",
+      "prompt": "Which auxiliary label is most important to place on a prescription for doxycycline hyclate 100 mg capsules?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Avoid prolonged exposure to sunlight",
+        "b": "May turn urine reddish-orange",
+        "c": "Take with milk to prevent stomach upset",
+        "d": "Shake well before each use"
+      },
+      "explanation": "Doxycycline is a tetracycline antibiotic that causes photosensitivity, so the sun-exposure label is standard. Patients also take it with a full glass of water, stay upright to avoid esophageal irritation, and separate it from dairy, antacids and iron, which block absorption.",
+      "distractorExplanations": {
+        "b": "Reddish-orange urine is a label for rifampin or phenazopyridine, not doxycycline.",
+        "c": "Milk and other calcium sources chelate tetracyclines and cut absorption; doses are separated from dairy.",
+        "d": "Shake well applies to suspensions; these are capsules."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-006": {
+      "difficulty": "easy",
+      "prompt": "A patient starts levothyroxine 50 mcg daily. Which administration instruction belongs on the prescription label?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Take with breakfast and a calcium supplement",
+        "b": "Take at bedtime right after a full meal",
+        "c": "Take on an empty stomach before breakfast",
+        "d": "Take it on days when symptoms appear"
+      },
+      "explanation": "Levothyroxine (Synthroid, Levoxyl) is daily thyroid hormone replacement with a narrow therapeutic index. It is taken consistently on an empty stomach, usually 30 to 60 minutes before breakfast, and separated from calcium, iron and antacids by about 4 hours.",
+      "distractorExplanations": {
+        "a": "Food and calcium reduce levothyroxine absorption; calcium is separated by about 4 hours.",
+        "b": "Bedtime dosing is acceptable only on an empty stomach, about 3 hours after the last meal, not right after eating.",
+        "d": "Levothyroxine is daily replacement therapy; as-needed dosing would leave the patient hypothyroid."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-007": {
+      "difficulty": "medium",
+      "prompt": "Levaquin 500 mg daily is prescribed for community-acquired pneumonia. Which antibiotic class and key warning apply to this drug?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Macrolide; risk of severe diarrhea and QT changes",
+        "b": "Fluoroquinolone; tendinitis and tendon rupture",
+        "c": "Cephalosporin; cross-reactivity with penicillin allergy",
+        "d": "Tetracycline; permanent tooth staining in children"
+      },
+      "explanation": "Levaquin is levofloxacin, a fluoroquinolone. Fluoroquinolones carry a boxed warning for tendinitis and tendon rupture (higher risk in older adults and with corticosteroids), peripheral neuropathy and CNS effects. Antacids, iron and calcium block their absorption.",
+      "distractorExplanations": {
+        "a": "Macrolides are azithromycin (Zithromax) and clarithromycin (Biaxin), not levofloxacin.",
+        "c": "Cephalosporins include cephalexin (Keflex) and ceftriaxone (Rocephin), not Levaquin.",
+        "d": "Tooth staining is the classic tetracycline warning (doxycycline, minocycline), not a fluoroquinolone warning."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-008": {
+      "difficulty": "medium",
+      "prompt": "A customer asks for Pepcid AC for occasional heartburn. Which active ingredient and drug class does this product contain?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Omeprazole; proton pump inhibitor (PPI)",
+        "b": "Calcium carbonate; antacid",
+        "c": "Ranitidine; H2 receptor antagonist",
+        "d": "Famotidine; H2 receptor antagonist"
+      },
+      "explanation": "Pepcid is famotidine, an H2 receptor antagonist that reduces stomach acid secretion; it is sold OTC (Pepcid AC) and by prescription. Since ranitidine was withdrawn from the US market in 2020, the product sold as Zantac 360 is also famotidine.",
+      "distractorExplanations": {
+        "a": "Omeprazole is Prilosec, a proton pump inhibitor, not Pepcid.",
+        "b": "Calcium carbonate is Tums, an antacid that neutralizes acid rather than blocking its secretion.",
+        "c": "Ranitidine was the original Zantac and was withdrawn in 2020 over NDMA impurities; it is not Pepcid."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-009": {
+      "difficulty": "medium",
+      "prompt": "A patient recently started atorvastatin (Lipitor) 40 mg. Which new symptom should prompt a call to the prescriber?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Unexplained muscle pain or weakness",
+        "b": "A persistent dry, tickling cough at night",
+        "c": "Swollen gums that bleed easily",
+        "d": "Ringing or buzzing in the ears"
+      },
+      "explanation": "Atorvastatin is an HMG-CoA reductase inhibitor (statin). Unexplained muscle pain, tenderness or weakness can signal myopathy or rare rhabdomyolysis. Risk rises with interacting drugs such as gemfibrozil or strong CYP3A4 inhibitors like clarithromycin.",
+      "distractorExplanations": {
+        "b": "A dry cough is the classic ACE inhibitor effect (lisinopril), not a statin effect.",
+        "c": "Gum overgrowth is linked to phenytoin, cyclosporine and some calcium channel blockers.",
+        "d": "Tinnitus is a sign of salicylate toxicity or loop diuretic ototoxicity, not statin therapy."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-010": {
+      "difficulty": "medium",
+      "prompt": "A patient profile lists an allergy to sulfonamide antibiotics. Which new prescription should the technician flag for the pharmacist before filling?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Augmentin (amoxicillin-clavulanate)",
+        "b": "Zithromax (azithromycin)",
+        "c": "Bactrim DS (SMX-TMP)",
+        "d": "Keflex (cephalexin)"
+      },
+      "explanation": "Bactrim is sulfamethoxazole-trimethoprim (SMX-TMP), a sulfonamide antibiotic combination. A documented sulfa allergy conflicts with it, so the order must go to the pharmacist before filling. None of the other three antibiotics contains a sulfonamide.",
+      "distractorExplanations": {
+        "a": "Augmentin is a penicillin; it matters for a penicillin allergy, not a sulfa allergy.",
+        "b": "Azithromycin is a macrolide with no sulfonamide group.",
+        "d": "Cephalexin is a cephalosporin; its cross-allergy concern is with penicillin, not sulfa."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-011": {
+      "difficulty": "hard",
+      "prompt": "A new prescription for rheumatoid arthritis reads: methotrexate 2.5 mg tablets, take 4 tablets by mouth daily. What is the main concern?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "The dose is too low to control arthritis",
+        "b": "RA dosing is usually once weekly, not daily",
+        "c": "Methotrexate for RA must be given by injection",
+        "d": "The tablets require refrigeration"
+      },
+      "explanation": "For rheumatoid arthritis and psoriasis, methotrexate is taken once weekly; 10 mg is a typical weekly dose. Taking it daily by mistake has caused fatal toxicity, which is why ISMP lists oral methotrexate as a high-alert drug and the order must be verified with the prescriber.",
+      "distractorExplanations": {
+        "a": "10 mg is a normal weekly RA dose; the danger is the daily frequency, not the amount.",
+        "c": "Oral tablets (Trexall, generics) are standard for RA; injection is an option, not a requirement.",
+        "d": "Methotrexate tablets are stored at room temperature, protected from light."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-012": {
+      "difficulty": "medium",
+      "prompt": "A patient who takes warfarin daily brings naproxen (Aleve) to the counter for back pain. Why should the technician refer the patient to the pharmacist?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Naproxen speeds warfarin metabolism and weakens it",
+        "b": "Naproxen drops blood pressure sharply with warfarin",
+        "c": "Naproxen causes heavy drowsiness with warfarin",
+        "d": "Naproxen raises bleeding risk with warfarin"
+      },
+      "explanation": "NSAIDs such as naproxen and ibuprofen impair platelet function and irritate the GI lining, so combining them with warfarin markedly raises bleeding risk, especially GI bleeding. Any OTC recommendation for a patient on an anticoagulant requires pharmacist judgment.",
+      "distractorExplanations": {
+        "a": "Naproxen does not induce warfarin metabolism; enzyme inducers such as rifampin or carbamazepine do.",
+        "b": "NSAIDs tend to raise blood pressure, not drop it.",
+        "c": "Drowsiness is not a recognized naproxen-warfarin interaction."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-013": {
+      "difficulty": "medium",
+      "prompt": "A caregiver asks whether pantoprazole (Protonix) 40 mg tablets can be crushed into applesauce. Which class and handling rule apply?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Proton pump inhibitor; do not crush",
+        "b": "H2 blocker; may be crushed into soft food",
+        "c": "Antacid; chew well before swallowing",
+        "d": "Prokinetic; dissolve under the tongue"
+      },
+      "explanation": "Pantoprazole (Protonix) is a proton pump inhibitor. The oral tablet is delayed-release (enteric-coated) and must be swallowed whole, because crushing exposes the drug to stomach acid. Patients who cannot swallow tablets may use the delayed-release granule packets instead.",
+      "distractorExplanations": {
+        "b": "Pantoprazole is not an H2 blocker, and its enteric coating makes crushing inappropriate.",
+        "c": "Antacids such as calcium carbonate are chewed; pantoprazole is a PPI tablet, not an antacid.",
+        "d": "Prokinetics such as metoclopramide speed gastric emptying; pantoprazole is not a sublingual product."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-014": {
+      "difficulty": "medium",
+      "prompt": "Which adverse effect is most closely associated with glipizide (Glucotrol)?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Lactic acidosis in kidney disease",
+        "b": "Genital yeast infections",
+        "c": "Hypoglycemia if meals are skipped",
+        "d": "Fluid retention and edema"
+      },
+      "explanation": "Glipizide is a sulfonylurea that stimulates insulin release regardless of blood glucose, so hypoglycemia is its key risk, especially with skipped meals, alcohol, or reduced kidney function in older adults. Patients should carry a fast-acting sugar source.",
+      "distractorExplanations": {
+        "a": "Lactic acidosis is the rare boxed warning for metformin (Glucophage), not glipizide.",
+        "b": "Genital yeast infections are typical of SGLT2 inhibitors such as empagliflozin (Jardiance).",
+        "d": "Fluid retention and heart-failure warnings belong to pioglitazone (Actos), a thiazolidinedione."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-015": {
+      "difficulty": "medium",
+      "prompt": "A prescription for Norco 5/325 is presented. Which active ingredients and federal DEA schedule apply?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Oxycodone/acetaminophen; Schedule II",
+        "b": "Hydrocodone/acetaminophen; Schedule III",
+        "c": "Tramadol/acetaminophen; Schedule IV",
+        "d": "Hydrocodone/acetaminophen; Schedule II"
+      },
+      "explanation": "Norco is hydrocodone 5 mg with acetaminophen 325 mg. Since October 2014, all hydrocodone combination products are Schedule II, so the prescription cannot be refilled and each fill needs a new prescription.",
+      "distractorExplanations": {
+        "a": "Oxycodone/acetaminophen is Percocet, not Norco.",
+        "b": "Hydrocodone combinations were Schedule III only until the DEA moved them to Schedule II in October 2014.",
+        "c": "Tramadol/acetaminophen is Ultracet, a Schedule IV product, not Norco."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-016": {
+      "difficulty": "easy",
+      "prompt": "A wholesaler delivery includes unopened vials of insulin glargine (Lantus). How should they be stored in the pharmacy until dispensing?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "At room temperature, away from direct light",
+        "b": "In the refrigerator at 2-8 °C, not frozen",
+        "c": "In the freezer to extend the expiration date",
+        "d": "In the refrigerator door for easy access"
+      },
+      "explanation": "Unopened insulin is refrigerated at 2-8 °C (36-46 °F) until its expiration date, and frozen insulin must be discarded. After opening, a Lantus vial may be kept at room temperature or refrigerated and is discarded 28 days after first use.",
+      "distractorExplanations": {
+        "a": "Room-temperature storage is allowed only after opening, and only for the labeled in-use period.",
+        "c": "Freezing destroys insulin; frozen product cannot be used.",
+        "d": "The door has the largest temperature swings; product goes on a main shelf away from the cooling element."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-017": {
+      "difficulty": "medium",
+      "prompt": "A patient stopped lisinopril because of a persistent dry cough. The prescriber wants a drug that acts on the same hormone pathway without that cough. Which choice is most likely?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Losartan (Cozaar)",
+        "b": "Enalapril (Vasotec)",
+        "c": "Amlodipine (Norvasc)",
+        "d": "Ramipril (Altace)"
+      },
+      "explanation": "Losartan is an angiotensin II receptor blocker (ARB). ARBs act on the renin-angiotensin system like ACE inhibitors but do not raise bradykinin levels, so they rarely cause the dry cough that leads patients to stop lisinopril.",
+      "distractorExplanations": {
+        "b": "Enalapril is another ACE inhibitor (-pril) with the same cough risk.",
+        "c": "Amlodipine is a calcium channel blocker; it lowers blood pressure but does not act on the angiotensin pathway.",
+        "d": "Ramipril is also an ACE inhibitor, so the cough would likely return."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-018": {
+      "difficulty": "medium",
+      "prompt": "Which instruction applies to potassium chloride extended-release tablets such as Klor-Con or K-Dur?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Chew the tablet well before swallowing",
+        "b": "Take on an empty stomach at bedtime",
+        "c": "Take with food and a full glass of water",
+        "d": "Let the tablet dissolve under the tongue"
+      },
+      "explanation": "Extended-release potassium chloride is taken with meals and a full glass of water and is not crushed or chewed, because concentrated potassium can ulcerate the esophagus or stomach. Potassium supplements also add to the hyperkalemia risk of ACE inhibitors, ARBs and potassium-sparing diuretics.",
+      "distractorExplanations": {
+        "a": "Chewing an ER potassium tablet releases a concentrated dose that can injure the GI lining.",
+        "b": "Potassium is taken with food to reduce stomach irritation, not on an empty stomach.",
+        "d": "Potassium chloride tablets are swallowed; they are not a sublingual dosage form."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-019": {
+      "difficulty": "medium",
+      "prompt": "While checking a stock bottle against a prescription, a technician must confirm the brand-generic pair. Which pair is correctly matched?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Lexapro - citalopram",
+        "b": "Celexa - escitalopram",
+        "c": "Paxil - fluoxetine",
+        "d": "Lexapro - escitalopram"
+      },
+      "explanation": "Lexapro is escitalopram and Celexa is citalopram. The names differ by one prefix and escitalopram is the active isomer of citalopram, so mixing them up is a common selection error; NDC barcode scanning at fill is the main safeguard.",
+      "distractorExplanations": {
+        "a": "Citalopram is Celexa, not Lexapro; the generic names differ by the es- prefix.",
+        "b": "This reverses the pair: Celexa is citalopram and escitalopram is Lexapro.",
+        "c": "Paxil is paroxetine; fluoxetine is Prozac."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-020": {
+      "difficulty": "easy",
+      "prompt": "Gabapentin (Neurontin) 300 mg three times daily is prescribed. Which use is FDA-approved for this drug?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Postherpetic neuralgia and partial seizures",
+        "b": "Major depression and smoking cessation support",
+        "c": "Parkinson disease tremor and rigidity",
+        "d": "High blood pressure and stable angina"
+      },
+      "explanation": "Gabapentin is an anticonvulsant approved for partial-onset seizures and postherpetic neuralgia, and it is widely used for other nerve pain. It causes dizziness and sedation, is dose-adjusted in kidney impairment, and is a controlled substance in several states.",
+      "distractorExplanations": {
+        "b": "Depression and smoking cessation are the uses of bupropion (Wellbutrin, Zyban).",
+        "c": "Parkinson symptoms are treated with drugs such as carbidopa-levodopa (Sinemet).",
+        "d": "Hypertension and angina are treated with drugs such as amlodipine or metoprolol, not gabapentin."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-021": {
+      "difficulty": "medium",
+      "prompt": "Which of these drugs has a narrow therapeutic index, so small changes in dose or blood level can cause toxicity?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Amoxicillin (Amoxil)",
+        "b": "Digoxin (Lanoxin)",
+        "c": "Loratadine (Claritin)",
+        "d": "Omeprazole (Prilosec)"
+      },
+      "explanation": "Digoxin is a narrow-therapeutic-index drug: toxic levels are close to effective levels. Toxicity (nausea, visual changes, slow pulse, arrhythmias) is more likely with low potassium or kidney impairment. Warfarin, lithium, phenytoin and levothyroxine are other NTI examples.",
+      "distractorExplanations": {
+        "a": "Amoxicillin has a wide safety margin between effective and toxic doses.",
+        "c": "Loratadine is a non-sedating antihistamine with a wide therapeutic range.",
+        "d": "Omeprazole is a PPI with a wide therapeutic range; no blood-level monitoring is needed."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-022": {
+      "difficulty": "medium",
+      "prompt": "A prescription for alprazolam 0.5 mg three times daily as needed for anxiety is received. Which drug class and key safety concern apply?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "SSRI; serotonin syndrome with MAO inhibitors",
+        "b": "Beta-blocker; masks signs of low blood sugar",
+        "c": "Benzodiazepine; sedation, worse with opioids",
+        "d": "Antihistamine; dry mouth and urine retention"
+      },
+      "explanation": "Alprazolam (Xanax) is a Schedule IV benzodiazepine. It causes sedation and dependence, and combining benzodiazepines with opioids carries an FDA boxed warning for profound sedation, respiratory depression and death. Stopping abruptly after regular use can trigger withdrawal.",
+      "distractorExplanations": {
+        "a": "SSRIs such as sertraline treat anxiety too, but alprazolam is not an SSRI.",
+        "b": "Masking hypoglycemia is a beta-blocker concern (metoprolol, propranolol), not a benzodiazepine concern.",
+        "d": "Anticholinergic dry mouth fits antihistamines such as hydroxyzine, not alprazolam."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-023": {
+      "difficulty": "medium",
+      "prompt": "Which administration instruction is required for alendronate (Fosamax) 70 mg once weekly?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Take with plain water; stay upright 30 min",
+        "b": "Take with orange juice and a full breakfast",
+        "c": "Take at bedtime so it can work overnight",
+        "d": "Take with a calcium tablet to aid absorption"
+      },
+      "explanation": "Alendronate is a bisphosphonate for osteoporosis. It is taken first thing in the morning on an empty stomach with 6-8 oz of plain water, and the patient stays upright for at least 30 minutes and until the first food of the day to prevent esophageal injury and poor absorption.",
+      "distractorExplanations": {
+        "b": "Juice, coffee and food sharply reduce absorption; only plain water is allowed.",
+        "c": "Lying down after a dose risks esophageal irritation and ulceration.",
+        "d": "Calcium binds alendronate, so supplements are taken at a different time of day."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-024": {
+      "difficulty": "medium",
+      "prompt": "A patient has taken prednisone 40 mg daily for three weeks. The new prescription tapers the dose gradually. What is the main reason for the taper?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "To prevent an allergic reaction to the drug",
+        "b": "To lower the risk of stomach ulcers",
+        "c": "To keep blood pressure from rising",
+        "d": "To let the adrenals restart cortisol output"
+      },
+      "explanation": "Prolonged systemic corticosteroid therapy suppresses the hypothalamic-pituitary-adrenal axis. A gradual taper lets the adrenal glands resume natural cortisol production; stopping abruptly after weeks of use can cause adrenal insufficiency.",
+      "distractorExplanations": {
+        "a": "Tapering has nothing to do with drug allergy.",
+        "b": "Taking prednisone with food helps GI upset; the taper is not an ulcer-prevention step.",
+        "c": "Prednisone can raise blood pressure while taken, but preventing that is not why the dose is tapered."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-025": {
+      "difficulty": "medium",
+      "prompt": "While putting away an order, a technician must decide which item goes into the pharmacy refrigerator. Which product requires refrigeration before it is dispensed?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Amoxicillin 500 mg capsules",
+        "b": "Unopened Xalatan eye drops",
+        "c": "Levothyroxine 50 mcg tablets",
+        "d": "Nitroglycerin SL tablets"
+      },
+      "explanation": "Unopened latanoprost (Xalatan) bottles are refrigerated at 2-8 °C; once opened they may be kept at room temperature for up to 6 weeks. Other common refrigerated items include insulin, many vaccines and some reconstituted antibiotic suspensions.",
+      "distractorExplanations": {
+        "a": "Amoxicillin capsules are stored at room temperature; only the reconstituted suspension is refrigeration-preferred.",
+        "c": "Levothyroxine is stored at room temperature, protected from light and moisture.",
+        "d": "Sublingual nitroglycerin stays at room temperature in its original tightly capped glass bottle."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-026": {
+      "difficulty": "medium",
+      "prompt": "Bupropion (Wellbutrin XL) is contraindicated in a patient with which condition?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Well-controlled hypothyroidism",
+        "b": "A history of gout flares",
+        "c": "A seizure disorder",
+        "d": "Seasonal allergic rhinitis"
+      },
+      "explanation": "Bupropion lowers the seizure threshold, so it is contraindicated with seizure disorders, current or prior bulimia or anorexia, and abrupt alcohol or benzodiazepine withdrawal. It is used for depression and, as Zyban, for smoking cessation.",
+      "distractorExplanations": {
+        "a": "Treated hypothyroidism is not a bupropion contraindication.",
+        "b": "Gout does not interact with bupropion; it matters for drugs such as thiazide diuretics.",
+        "d": "Allergic rhinitis is not a contraindication to bupropion."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-027": {
+      "difficulty": "easy",
+      "prompt": "A patient newly started on metformin (Glucophage) asks which side effect is most common in the first weeks. Which answer is correct?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Nausea, diarrhea and stomach upset",
+        "b": "Low blood sugar when used alone",
+        "c": "Weight gain of several pounds a month",
+        "d": "A persistent dry cough"
+      },
+      "explanation": "GI upset (nausea, diarrhea, bloating) is the most common metformin effect and is reduced by taking it with meals, titrating slowly or using the extended-release form. Metformin alone rarely causes hypoglycemia; lactic acidosis is a rare boxed warning.",
+      "distractorExplanations": {
+        "b": "Metformin does not stimulate insulin release, so hypoglycemia is uncommon when it is used alone, unlike sulfonylureas.",
+        "c": "Metformin is weight-neutral or causes mild weight loss.",
+        "d": "A dry cough is an ACE inhibitor effect, not a metformin effect."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-028": {
+      "difficulty": "easy",
+      "prompt": "A prescription reads: nitroglycerin 0.4 mg, 1 tablet SL every 5 minutes as needed for chest pain, maximum 3 doses. How is this dosage form used?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Swallowed whole with a glass of water",
+        "b": "Applied to the skin as a patch",
+        "c": "Inhaled through a nebulizer",
+        "d": "Dissolved under the tongue"
+      },
+      "explanation": "SL means sublingual: the tablet dissolves under the tongue and is absorbed directly into the bloodstream, which gives rapid relief of angina. Sublingual nitroglycerin is kept in its original glass bottle, tightly capped, because it loses potency with heat, light and moisture.",
+      "distractorExplanations": {
+        "a": "Swallowing sends the drug through first-pass liver metabolism and delays relief.",
+        "b": "Nitroglycerin patches exist (transdermal), but SL tablets are not applied to the skin.",
+        "c": "Nebulized drugs are inhaled; SL tablets are not an inhaled dosage form."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-029": {
+      "difficulty": "medium",
+      "prompt": "Which prescription most needs an 'Avoid grapefruit juice' auxiliary label?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Amoxicillin (Amoxil)",
+        "b": "Simvastatin (Zocor)",
+        "c": "Metformin (Glucophage)",
+        "d": "Lisinopril (Zestril)"
+      },
+      "explanation": "Grapefruit juice inhibits CYP3A4 in the gut wall and can sharply raise blood levels of simvastatin (and lovastatin), increasing the risk of muscle toxicity. Other CYP3A4 substrates, such as some calcium channel blockers and immunosuppressants, carry similar warnings.",
+      "distractorExplanations": {
+        "a": "Amoxicillin is not metabolized by CYP3A4 and has no grapefruit interaction.",
+        "c": "Metformin is excreted unchanged by the kidneys; grapefruit does not affect it.",
+        "d": "Lisinopril is not a CYP3A4 substrate; its key interactions are with potassium and NSAIDs."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-030": {
+      "difficulty": "easy",
+      "prompt": "A patient with asthma receives albuterol HFA and fluticasone HFA (Flovent). Which statement describes the albuterol inhaler?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Daily controller that reduces airway inflammation",
+        "b": "Long-acting bronchodilator used twice daily",
+        "c": "Leukotriene blocker taken in the evening",
+        "d": "Quick-relief inhaler used for acute symptoms"
+      },
+      "explanation": "Albuterol (ProAir, Proventil, Ventolin) is a short-acting beta-2 agonist (SABA) used as a rescue inhaler; tremor and a fast heart rate are common. Fluticasone is the inhaled corticosteroid controller, and patients rinse their mouth after each use to prevent thrush.",
+      "distractorExplanations": {
+        "a": "That describes the fluticasone controller, an inhaled corticosteroid.",
+        "b": "Twice-daily long-acting bronchodilators are LABAs such as salmeterol, not albuterol.",
+        "c": "Leukotriene blockers are oral tablets such as montelukast (Singulair)."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-031": {
+      "difficulty": "medium",
+      "prompt": "A patient taking ciprofloxacin (Cipro) also uses a daily antacid containing magnesium and aluminum. What is the concern with this combination?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The antacid binds ciprofloxacin in the gut",
+        "b": "The antacid raises ciprofloxacin to toxic levels",
+        "c": "Ciprofloxacin neutralizes the antacid's effect",
+        "d": "The two together cause severe drowsiness"
+      },
+      "explanation": "Multivalent cations (magnesium, aluminum, calcium, iron, zinc) chelate fluoroquinolones and tetracyclines in the gut and can reduce absorption dramatically. Ciprofloxacin is taken at least 2 hours before or 6 hours after these products.",
+      "distractorExplanations": {
+        "b": "Chelation lowers ciprofloxacin levels; it does not raise them.",
+        "c": "Ciprofloxacin does not alter how the antacid works; the problem is lost antibiotic absorption.",
+        "d": "Drowsiness is not a recognized effect of this combination."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-032": {
+      "difficulty": "medium",
+      "prompt": "Which statement about tramadol (Ultram) 50 mg tablets is correct?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "It is an NSAID with no potential for abuse or misuse",
+        "b": "It is Schedule II and cannot be refilled",
+        "c": "It is C-IV and may lower the seizure threshold",
+        "d": "It is sold over the counter in most states"
+      },
+      "explanation": "Tramadol is a centrally acting opioid analgesic placed in DEA Schedule IV in 2014. It can lower the seizure threshold and, because it also blocks serotonin reuptake, raises serotonin syndrome risk with SSRIs, SNRIs and MAO inhibitors.",
+      "distractorExplanations": {
+        "a": "Tramadol is an opioid agonist, not an NSAID, and it has abuse potential.",
+        "b": "Tramadol is Schedule IV, so refills are allowed; Schedule II applies to drugs such as oxycodone.",
+        "d": "Tramadol is a prescription-only controlled substance everywhere in the US."
+      }
+    }
+  }
+}

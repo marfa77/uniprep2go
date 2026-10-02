@@ -1,0 +1,244 @@
+{
+  "veterinary-assistant-readiness-check": {
+    "veterinary-assistant-readiness-check-nursing-001": {
+      "prompt": "During admission, a veterinary assistant records these resting values for a calm adult domestic cat: temperature 101.5°F, heart rate 190 beats/min, respiratory rate 28 breaths/min. How should the assistant interpret the readings?",
+      "options": {
+        "a": "The heart rate is high for a cat and should be flagged as tachycardia",
+        "b": "Each value falls within the normal resting range for an adult cat",
+        "c": "The temperature is low for a cat and the patient needs active warming",
+        "d": "The respiratory rate is high for a cat and points to respiratory distress"
+      },
+      "correctOptionId": "b",
+      "explanation": "Normal adult cat values are roughly 100–102.5°F, 140–220 beats/min and 20–30 breaths/min, so all three readings are normal. Cats run faster heart rates than dogs (about 60–140 beats/min in adult dogs), so species-specific ranges must be used when charting.",
+      "distractorExplanations": {
+        "a": "This applies an adult dog heart-rate range to a cat; 190 beats/min is within the normal feline range of about 140–220.",
+        "c": "101.5°F sits in the middle of the normal feline range of about 100–102.5°F, so warming is not indicated by this reading.",
+        "d": "28 breaths/min is inside the normal resting feline range of about 20–30; distress would show as a high rate with visible effort."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-002": {
+      "prompt": "During a morning check on a hospitalized Labrador, an assistant finds pale, almost white gums and a capillary refill time of about 3 seconds. What should the assistant do?",
+      "options": {
+        "a": "Chart the findings and recheck them at the next scheduled treatment time",
+        "b": "Rub the gums briskly to restore color, then repeat the capillary refill test",
+        "c": "Chart the findings as normal, since a refill time under 4 seconds is expected",
+        "d": "Chart the findings and notify the veterinarian or technician right away"
+      },
+      "correctOptionId": "d",
+      "explanation": "Normal gums are pink with a capillary refill time under 2 seconds. Pale membranes with a prolonged refill can signal shock, blood loss or poor perfusion, so the assistant records the values and reports them immediately for veterinary assessment.",
+      "distractorExplanations": {
+        "a": "Waiting for the next scheduled check delays care for possible shock or blood loss; abnormal perfusion findings are reported at once.",
+        "b": "Rubbing the gums changes local blood flow and distorts the reading, and it delays reporting a potentially serious perfusion problem.",
+        "c": "The normal capillary refill time is under 2 seconds, not 4; a 3-second refill with pale gums is abnormal and must be reported."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-003": {
+      "prompt": "An assistant is taking a rectal temperature on a calm 20-kg dog with a digital thermometer. Which technique gives a safe and accurate reading?",
+      "options": {
+        "a": "Lubricate the tip, insert it gently toward the rectal wall, and hold it until it beeps",
+        "b": "Insert the dry probe tip quickly to full length and release it while the dog stands",
+        "c": "Take the reading right after a brisk walk, once the dog has settled and stopped panting",
+        "d": "Hold the lubricated probe in for about 10 seconds and read it before the device beeps"
+      },
+      "correctOptionId": "a",
+      "explanation": "A lubricated probe inserted gently and angled against the rectal wall (not into a fecal ball) and held in place until the thermometer signals gives a true core reading without injuring the mucosa or losing the thermometer.",
+      "distractorExplanations": {
+        "b": "A dry probe irritates the rectal mucosa, and releasing the thermometer risks it being lost or broken if the dog moves or sits.",
+        "c": "Exercise raises body temperature for some time, so a reading taken right after a walk can look falsely elevated even once panting stops.",
+        "d": "Reading before the device signals gives a falsely low value because the probe has not yet equilibrated with core temperature."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-004": {
+      "prompt": "Using a 9-point body condition scale, an assistant examines an adult dog whose ribs are easily felt under a slight fat cover, with a visible waist from above and an abdominal tuck from the side. Which score should be recorded?",
+      "options": {
+        "a": "1 of 9 (emaciated)",
+        "b": "3 of 9 (thin)",
+        "c": "5 of 9 (ideal)",
+        "d": "7 of 9 (overweight)"
+      },
+      "correctOptionId": "c",
+      "explanation": "On the 9-point scale, ideal condition (4–5) means ribs are palpable with slight fat cover, a waist is visible from above and the abdomen tucks up from the side. Lower scores show prominent bones; higher scores hide the ribs and waist.",
+      "distractorExplanations": {
+        "a": "A score of 1 means ribs, spine and pelvic bones are visible from a distance with no fat and obvious muscle loss.",
+        "b": "A score of 3 means ribs are easily felt and may be visible with almost no fat cover and prominent hip bones.",
+        "d": "A score of 7 means ribs are hard to feel under heavy fat, with the waist absent or barely visible and fat deposits present."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-005": {
+      "prompt": "A 35-kg dog that cannot stand after spinal surgery will lie in a run for several days. Which nursing plan best prevents decubital ulcers?",
+      "options": {
+        "a": "Keep the dog on the same side so the surgical site is not disturbed",
+        "b": "Use thick padded bedding, turn the dog every 4 hours or as ordered, and check bony points",
+        "c": "Lay a thin towel on the bare run floor so urine drains away from the dog",
+        "d": "Turn the dog once daily at morning treatments and add padding once sores appear on the hips"
+      },
+      "correctOptionId": "b",
+      "explanation": "Pressure sores form over bony points (hips, elbows, hocks, shoulders) when a heavy patient lies still on a hard surface. Deep padding, turning at least every 4 hours or as the veterinarian orders, and checking pressure points prevent them.",
+      "distractorExplanations": {
+        "a": "Lying on one side keeps constant pressure on the same bony points and also raises the risk of lung congestion in the down side.",
+        "c": "A thin towel gives almost no pressure relief on a hard floor; a large dog needs thick padding plus absorbent, dry bedding.",
+        "d": "Once-daily turning is far too infrequent, and padding should prevent sores rather than be added after damage has started."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-006": {
+      "prompt": "A recumbent cat in the hospital ward is found lying in urine, and the skin on its inner thighs is red and moist. What should the assistant do?",
+      "options": {
+        "a": "Place a dry towel over the wet bedding and wait for the next scheduled bath",
+        "b": "Apply the clinic's antiseptic ointment to the red skin and change the bedding",
+        "c": "Bathe the whole cat in warm water and leave it to air-dry in the cage",
+        "d": "Clean and dry the area gently, change the bedding, and report the red skin"
+      },
+      "correctOptionId": "d",
+      "explanation": "Urine scald develops when urine stays against the skin. The assistant cleans and dries the soiled area gently, replaces bedding with dry absorbent material, and reports the reddened skin so the veterinarian can decide on any barrier cream or treatment.",
+      "distractorExplanations": {
+        "a": "A towel over wet bedding keeps urine against the skin, and delaying cleaning lets the scald worsen into open sores.",
+        "b": "Choosing and applying a topical product without an order is outside the assistant's scope; the skin change should be reported.",
+        "c": "A full bath with air-drying chills a weak recumbent cat and risks hypothermia; spot-cleaning and thorough drying is safer."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-007": {
+      "prompt": "An assistant is watching an intubated dog recover from anesthesia while the technician responsible for extubation steps into the next room. The dog begins to swallow and chew at the tube. What should the assistant do?",
+      "options": {
+        "a": "Call the technician back at once, because swallowing is the cue for tube removal",
+        "b": "Wait until the dog lifts its head and tries to stand before telling the technician",
+        "c": "Tape the tube more firmly to the muzzle so the dog cannot dislodge it while chewing",
+        "d": "Turn up the oxygen flow on the anesthetic machine and keep the dog lying still"
+      },
+      "correctOptionId": "a",
+      "explanation": "A returning swallow reflex means the patient can protect its airway, so the endotracheal tube should be removed promptly before it is chewed through or aspirated. The assistant observes this cue and alerts the person responsible for extubation immediately.",
+      "distractorExplanations": {
+        "b": "Waiting for head lifting or standing is too late; a dog with a swallow reflex can bite through the tube and inhale a piece of it.",
+        "c": "Securing the tube more tightly keeps it in a dog that is ready for removal and increases the chance it is bitten through.",
+        "d": "Adjusting machine settings is a technician or veterinarian task, and more oxygen does not address the need to remove the tube."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-008": {
+      "prompt": "A dog is being discharged with an Elizabethan collar to stop it licking sutures on its hind leg. Which check confirms the collar fits correctly?",
+      "options": {
+        "a": "It ends level with the eyes so the dog can see and eat more comfortably",
+        "b": "It is fastened so snugly that a finger cannot slide under the neck band",
+        "c": "It reaches past the nose tip and two fingers fit under the neck band",
+        "d": "It is the largest cone size in stock so the dog cannot reach any body part"
+      },
+      "correctOptionId": "c",
+      "explanation": "An E-collar works only if it extends beyond the nose so the dog cannot reach the wound, while a two-finger gap at the neck prevents choking or rubbing yet keeps the dog from slipping out. Eating and drinking should be checked with it on.",
+      "distractorExplanations": {
+        "a": "A collar that stops at the eyes leaves the muzzle free, so the dog can still reach and lick or chew the sutures.",
+        "b": "A band that is too tight can restrict breathing and rub the neck; a two-finger gap is the standard fit check.",
+        "d": "An oversized cone can stop the dog eating, drinking or moving safely; the cone should just extend past the nose."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-009": {
+      "prompt": "A hospitalized dog has a padded bandage on its forelimb. During a check, the assistant sees the two middle toes swollen and spread apart, and they feel cool. What is the best response?",
+      "options": {
+        "a": "Note it on the chart and recheck the toes at the next scheduled bandage check",
+        "b": "Report it right away to the veterinarian or technician as a possible tight bandage",
+        "c": "Loosen the bandage by cutting a slit along its outer layer, then chart the change",
+        "d": "Elevate the limb on a pillow and place a warm compress over the swollen toes"
+      },
+      "correctOptionId": "b",
+      "explanation": "The middle toes are left exposed so swelling, spreading or coolness can reveal a bandage that is too tight and cutting off circulation. That is an urgent finding the assistant reports immediately; the veterinary team decides whether to remove or replace the bandage.",
+      "distractorExplanations": {
+        "a": "Waiting for the next check allows circulation loss to continue; swollen, cool toes under a bandage are reported at once.",
+        "c": "Cutting or altering a bandage is the veterinary team's decision; a partial slit may not relieve pressure and can disturb the wound.",
+        "d": "Elevation and warmth do not relieve constriction from a tight bandage and delay the team from correcting the real problem."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-010": {
+      "prompt": "During ward rounds, an assistant finds a cat's IV fluid pump alarming 'occlusion', and the leg above the catheter looks puffy. What should the assistant do?",
+      "options": {
+        "a": "Raise the fluid rate on the pump to push the fluid past the blockage",
+        "b": "Flush the catheter with saline from the treatment cart to clear the line",
+        "c": "Restart the pump and recheck the leg at the end of the current shift",
+        "d": "Notify the technician or veterinarian and leave the pump settings alone"
+      },
+      "correctOptionId": "d",
+      "explanation": "An occlusion alarm with swelling above the catheter suggests a kinked line or fluid leaking into tissue (infiltration). Assistants observe and report IV problems; changing rates, flushing or restarting fluids belongs to the technician or veterinarian.",
+      "distractorExplanations": {
+        "a": "Adjusting fluid rates is outside the assistant's scope, and forcing more fluid into an infiltrated catheter worsens tissue swelling.",
+        "b": "Flushing a catheter is a technician task, and flushing one that may be infiltrated pushes more fluid into the tissues.",
+        "c": "Restarting the pump ignores possible infiltration, and waiting until the end of the shift delays a problem that needs prompt attention."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-011": {
+      "prompt": "A veterinarian prescribes doxycycline tablets for a cat, and the assistant demonstrates pilling to the owner. What should the owner be told to do right after the cat swallows each tablet?",
+      "options": {
+        "a": "Give about 5 mL of water by syringe or a small treat to wash it down",
+        "b": "Give each tablet dry and fast so the cat has less time to fight the pill",
+        "c": "Let the cat lie down and rest quietly so the tablet is not vomited back up",
+        "d": "Wait an hour before offering water so the drug can be absorbed completely"
+      },
+      "correctOptionId": "a",
+      "explanation": "Tablets given dry to cats can lodge in the esophagus, and doxycycline in particular can cause esophagitis and stricture. Following each pill with a few milliliters of water or a small treat moves it into the stomach.",
+      "distractorExplanations": {
+        "b": "Dry pilling is exactly what lets tablets stick in a cat's esophagus, which with doxycycline can lead to a stricture.",
+        "c": "Lying down right after pilling slows esophageal transit and increases the chance the tablet stays lodged and causes injury.",
+        "d": "Withholding water leaves the tablet in the esophagus longer; a small water chaser is advised immediately after pilling."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-012": {
+      "prompt": "A hospitalized dog is offered 1 cup of its prescribed recovery diet, and after 20 minutes about one-quarter has been eaten. How should the assistant record and handle this meal?",
+      "options": {
+        "a": "Record the meal as eaten, since the dog clearly showed interest in the food",
+        "b": "Leave the bowl in the cage for the rest of the day so the dog can finish later",
+        "c": "Record about 25% eaten, remove the leftover food, and flag the low intake",
+        "d": "Mix in a different canned food to tempt the dog and record the combined total"
+      },
+      "correctOptionId": "c",
+      "explanation": "Accurate intake records (amount offered, amount eaten, time) let the veterinary team track appetite, calories and recovery. Uneaten food is removed after a set time to keep it fresh and avoid food aversion, and a reduced appetite is flagged to the team.",
+      "distractorExplanations": {
+        "a": "Recording a partial meal as eaten falsifies intake data and can hide inappetence caused by pain, nausea or complications.",
+        "b": "Food left out all day spoils, can cause food aversion and makes it impossible to measure how much was actually eaten.",
+        "d": "Changing the prescribed diet without an order is outside the assistant's scope and can conflict with the patient's treatment plan."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-013": {
+      "prompt": "An assistant notices that a hospitalized puppy with vomiting has a skin tent that stays up for several seconds and gums that feel tacky. What is the appropriate action?",
+      "options": {
+        "a": "Offer as much water as the puppy will drink and recheck the skin in an hour",
+        "b": "Report these signs of dehydration so the veterinarian can decide on fluids",
+        "c": "Give subcutaneous fluids from the clinic supply to rehydrate the puppy now",
+        "d": "Chart mild dehydration and recheck the skin tent at the next feeding time"
+      },
+      "correctOptionId": "b",
+      "explanation": "A slow-returning skin tent and tacky mucous membranes are signs of dehydration, which can become dangerous quickly in a vomiting puppy. The assistant reports the findings; the veterinarian assesses the patient and decides on fluid therapy.",
+      "distractorExplanations": {
+        "a": "Free access to water can trigger more vomiting in a puppy that is already losing fluid, and it delays veterinary assessment.",
+        "c": "Selecting and giving fluids requires a veterinary order; assistants report dehydration signs rather than starting treatment.",
+        "d": "Delaying until the next feeding risks rapid worsening in a young vomiting patient; these signs are reported promptly."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-014": {
+      "prompt": "While trimming the black nails of a hospitalized dog, an assistant cuts into the quick and the nail starts to bleed. What should the assistant do?",
+      "options": {
+        "a": "Finish trimming the remaining nails first and then check the bleeding nail",
+        "b": "Wrap the paw firmly in a bandage and return the dog to its kennel to rest",
+        "c": "Rinse the nail under running water until the bleeding slows on its own",
+        "d": "Press styptic powder onto the nail tip and hold gentle pressure briefly"
+      },
+      "correctOptionId": "d",
+      "explanation": "Styptic powder pressed onto the cut nail tip with light pressure stops quick bleeding within moments. On dark nails the quick is not visible, so small slices should be taken and stopped when a moist, dark center appears on the cut surface.",
+      "distractorExplanations": {
+        "a": "Leaving a bleeding quick while finishing other nails lets blood loss and mess continue and adds to the dog's discomfort.",
+        "b": "An unneeded tight paw wrap can restrict circulation, and a kennelled dog may chew it off before the bleeding has stopped.",
+        "c": "Running water washes away the forming clot and keeps the nail bleeding instead of letting it seal."
+      }
+    },
+    "veterinary-assistant-readiness-check-nursing-015": {
+      "prompt": "Six hours after spay surgery, a cat sits hunched at the back of its cage with squinted eyes, ears rotated outward and whiskers pulled back. What should the assistant do?",
+      "options": {
+        "a": "Chart the posture and facial signs and report likely pain promptly",
+        "b": "Record the cat as calm and sleepy, since it is resting quietly in its cage",
+        "c": "Give the next scheduled pain medication dose early to settle the cat down",
+        "d": "Leave the cat undisturbed until morning so handling does not stress it more"
+      },
+      "correctOptionId": "a",
+      "explanation": "The Feline Grimace Scale scores orbital tightening, ear position, muzzle tension, whisker position and head position; a hunched posture adds to the picture. These signs suggest pain, so the assistant records them and reports to the veterinarian, who decides on analgesia.",
+      "distractorExplanations": {
+        "b": "Cats often hide pain by sitting still; a hunched, squinting cat with flattened ears is showing pain signs, not calm rest.",
+        "c": "Changing the timing or amount of any analgesic is a veterinary decision; giving a dose early without an order is outside scope.",
+        "d": "Leaving a painful cat untreated overnight prolongs suffering and slows recovery; the signs need reporting now."
+      }
+    }
+  }
+}

@@ -264,7 +264,7 @@ export const floridaFoodManagerDbprRulesPost: BlogPostDraft = {
                 "Cold holding: 41°F or below",
                 "Hot holding: 135°F or above",
                 "Ground meat: 155°F for 15 seconds",
-                "Poultry and stuffed items: 165°F for 15 seconds",
+                "Poultry and stuffed items: 165°F for less than 1 second (instantaneous)",
                 "Reheating: 165°F within 2 hours",
               ],
             },

@@ -213,7 +213,7 @@ describe("LLM documents", () => {
       "US insurance and California real estate licensing exam prep",
     );
     expect(catalog.primary_use_cases).toContain(
-      "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps free mocks indexed",
+      "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps timed mocks indexed (first mock free)",
     );
     expect(catalog.anki_deck_explanation).toContain("spaced-repetition app");
     expect(catalog.snippet_signals).toContain("exact card or question counts");

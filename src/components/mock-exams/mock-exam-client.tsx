@@ -3,7 +3,17 @@
 import Link from "next/link";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
 import { getMockCta } from "@/lib/mock-exams/mock-cta";
-import { LEARN_PASS_PRICE_USD } from "@/lib/mock-exams/learn-pass";
+import {
+  MOCK_PASS_ATTEMPTS,
+  MOCK_PASS_PRICE_USD,
+  decideMockStart,
+} from "@/lib/mock-exams/mock-pass";
+import {
+  browserStorage,
+  markFreeAttemptUsed,
+  readFreeAttempt,
+  type FreeAttemptRecord,
+} from "@/lib/mock-exams/free-attempt";
 import type { MockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
   buildMockReport,
@@ -13,7 +23,7 @@ import {
 } from "@/lib/mock-exams/scoring";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { getMockRepairCheckoutCtaLabel } from "@/lib/checkout-pricing";
-import { LearnPassPaywall } from "./learn-pass-paywall";
+import { MockPassPaywall } from "./mock-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
 import type { LinkedDeckCheckout } from "./mock-report-handoff";
@@ -45,8 +55,8 @@ export type MockExamClientProps = {
   runnable: boolean;
   /** From `?mode=learn`; default exam. */
   initialMode?: MockSessionMode;
-  /** Server-only kill switch — when false, Learn is free and paywall is never shown. */
-  learnPassEnabled?: boolean;
+  /** Server kill switch (MOCK_PAYWALL=off) — when false every attempt is free. */
+  paywallEnabled?: boolean;
 };
 
 function formatDuration(minutes: number) {
@@ -63,17 +73,13 @@ const examBrief = [
   "Full topic report + repair plan at the end",
 ] as const;
 
-const learnBriefFree = [
+const learnBrief = [
   "Untimed — focus on understanding each item",
   "Instant correct/incorrect + explanations",
   "Same full topic report when you finish",
 ] as const;
 
-const learnBriefPaid = [
-  `Learn Pass · $${LEARN_PASS_PRICE_USD} · untimed with instant explanations`,
-  "Correct/incorrect + why after each answer",
-  "Same full topic report when you finish",
-] as const;
+type PassStatus = { loaded: boolean; hasPass: boolean; remaining: number };
 
 /** Sibling length options for the SIE pair (full vs quick). */
 const mockLengthAlternates: Partial<
@@ -98,7 +104,7 @@ export function MockExamClient({
   linkedDeckShortName,
   runnable,
   initialMode = "exam",
-  learnPassEnabled = false,
+  paywallEnabled = false,
 }: MockExamClientProps) {
   const searchParams = useSearchParams();
   const modeFromUrl = parseMockSessionMode(searchParams.get("mode"));
@@ -108,28 +114,30 @@ export function MockExamClient({
   const [sessionMode, setSessionMode] = useState<MockSessionMode>(resolvedInitialMode);
   const [attemptSeed, setAttemptSeed] = useState<string>("");
   const [report, setReport] = useState<MockReport | null>(null);
-  const [deepLinkConsumed, setDeepLinkConsumed] = useState(false);
-  const [learnRemaining, setLearnRemaining] = useState(0);
-  const [learnStatusLoaded, setLearnStatusLoaded] = useState(!learnPassEnabled);
-  const [learnBusy, setLearnBusy] = useState(false);
-  const [learnError, setLearnError] = useState<string | null>(null);
+  const [freeAttempt, setFreeAttempt] = useState<FreeAttemptRecord | null>(null);
+  const [accessHydrated, setAccessHydrated] = useState(false);
+  const [pass, setPass] = useState<PassStatus>({ loaded: !paywallEnabled, hasPass: false, remaining: 0 });
+  const [startBusy, setStartBusy] = useState(false);
+  const [startError, setStartError] = useState<string | null>(null);
+  const [retakePaywallOpen, setRetakePaywallOpen] = useState(false);
   const cta = getMockCta(accessState);
 
-  const refreshLearnStatus = useCallback(async () => {
-    if (!learnPassEnabled) {
-      setLearnStatusLoaded(true);
+  const refreshPassStatus = useCallback(async () => {
+    if (!paywallEnabled) {
       return;
     }
     try {
-      const res = await fetch("/api/mock-exams/learn/status", { cache: "no-store" });
-      const data = (await res.json().catch(() => ({}))) as { remaining?: number };
-      setLearnRemaining(typeof data.remaining === "number" ? data.remaining : 0);
+      const res = await fetch("/api/mock-exams/pass/status", { cache: "no-store" });
+      const data = (await res.json().catch(() => ({}))) as { hasPass?: boolean; remaining?: number };
+      setPass({
+        loaded: true,
+        hasPass: Boolean(data.hasPass),
+        remaining: typeof data.remaining === "number" ? data.remaining : 0,
+      });
     } catch {
-      setLearnRemaining(0);
-    } finally {
-      setLearnStatusLoaded(true);
+      setPass((current) => ({ ...current, loaded: true }));
     }
-  }, [learnPassEnabled]);
+  }, [paywallEnabled]);
 
   useEffect(() => {
     trackMockEvent({
@@ -141,8 +149,10 @@ export function MockExamClient({
   }, [config.linkedDeckSlug, config.slug]);
 
   useEffect(() => {
-    void refreshLearnStatus();
-  }, [refreshLearnStatus]);
+    setFreeAttempt(readFreeAttempt(browserStorage()));
+    setAccessHydrated(true);
+    void refreshPassStatus();
+  }, [refreshPassStatus]);
 
   // Focus shell covers the SEO page — lock background scroll while in session/results.
   useEffect(() => {
@@ -163,6 +173,7 @@ export function MockExamClient({
       setSelectedMode(mode);
       setAttemptSeed(seed);
       setReport(null);
+      setRetakePaywallOpen(false);
       setScreen("exam");
       trackMockEvent({
         name: "mock_started",
@@ -174,73 +185,6 @@ export function MockExamClient({
     [config.linkedDeckSlug, config.slug],
   );
 
-  const consumeAndStartLearn = useCallback(
-    async (source: string) => {
-      setLearnBusy(true);
-      setLearnError(null);
-      try {
-        const res = await fetch("/api/mock-exams/learn/start", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ mockSlug: config.slug }),
-        });
-        const data = (await res.json().catch(() => ({}))) as {
-          ok?: boolean;
-          message?: string;
-          remaining?: number;
-        };
-        if (!res.ok || !data.ok) {
-          setLearnRemaining(typeof data.remaining === "number" ? data.remaining : 0);
-          setLearnError(data.message || "Buy or redeem a Learn Pass to continue.");
-          setSelectedMode("learn");
-          setScreen("landing");
-          return false;
-        }
-        const remaining = typeof data.remaining === "number" ? data.remaining : 0;
-        setLearnRemaining(remaining);
-        trackMockEvent({
-          name: "learn_credit_consumed",
-          deckSlug: config.linkedDeckSlug,
-          mockSlug: config.slug,
-          source: `mock:${config.slug}:learn:consumed:left:${remaining}`,
-        });
-        enterSession("learn", source);
-        return true;
-      } catch {
-        setLearnError("Could not start Learn mode. Try again.");
-        return false;
-      } finally {
-        setLearnBusy(false);
-      }
-    },
-    [config.linkedDeckSlug, config.slug, enterSession],
-  );
-
-  useEffect(() => {
-    if (!runnable || deepLinkConsumed || resolvedInitialMode !== "learn" || !learnStatusLoaded) {
-      return;
-    }
-    setDeepLinkConsumed(true);
-    setSelectedMode("learn");
-    if (!learnPassEnabled) {
-      enterSession("learn", `mock:${config.slug}:start:learn:deeplink`);
-      return;
-    }
-    if (learnRemaining > 0) {
-      void consumeAndStartLearn(`mock:${config.slug}:start:learn:deeplink`);
-    }
-  }, [
-    consumeAndStartLearn,
-    config.slug,
-    deepLinkConsumed,
-    enterSession,
-    resolvedInitialMode,
-    learnPassEnabled,
-    learnRemaining,
-    learnStatusLoaded,
-    runnable,
-  ]);
-
   const shuffledQuestions = useMemo(() => {
     if (!attemptSeed) {
       return questions;
@@ -250,22 +194,98 @@ export function MockExamClient({
     return shuffleQuestions(sessionQuestions, attemptSeed);
   }, [attemptSeed, config, questions]);
 
-  async function startMock(mode: MockSessionMode) {
-    if (mode === "exam" || !learnPassEnabled) {
+  const startDecision = decideMockStart({
+    paywallEnabled,
+    freeAttemptUsed: Boolean(freeAttempt),
+    remaining: pass.remaining,
+  });
+  const needsPaywall = accessHydrated && pass.loaded && startDecision === "paywall";
+
+  function openPaywall(placement: "landing" | "retake") {
+    if (placement === "retake") {
+      setRetakePaywallOpen(true);
+      window.requestAnimationFrame(() =>
+        document.getElementById("mock-pass")?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      );
+    }
+  }
+
+  async function startMock(mode: MockSessionMode, placement: "landing" | "retake") {
+    setStartError(null);
+    const storage = browserStorage();
+    const recorded = readFreeAttempt(storage);
+    const decision = decideMockStart({
+      paywallEnabled,
+      freeAttemptUsed: Boolean(recorded),
+      remaining: pass.remaining,
+    });
+
+    if (decision === "open") {
       enterSession(mode, `mock:${config.slug}:start:${mode}`);
       return;
     }
-    if (learnRemaining <= 0) {
-      setSelectedMode("learn");
-      setLearnError("Buy or redeem a Learn Pass to start Learn mode.");
+
+    if (decision === "free") {
+      const record: FreeAttemptRecord = { slug: config.slug, mode, at: new Date().toISOString() };
+      markFreeAttemptUsed(storage, record);
+      setFreeAttempt(record);
+      enterSession(mode, `mock:${config.slug}:start:${mode}:free`);
       return;
     }
-    await consumeAndStartLearn(`mock:${config.slug}:start:learn`);
+
+    setFreeAttempt(recorded);
+    if (decision === "paywall" && pass.loaded) {
+      openPaywall(placement);
+      return;
+    }
+
+    setStartBusy(true);
+    try {
+      const res = await fetch("/api/mock-exams/pass/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mockSlug: config.slug, mode }),
+      });
+      const data = (await res.json().catch(() => ({}))) as {
+        ok?: boolean;
+        code?: string;
+        message?: string;
+        remaining?: number;
+      };
+      if (res.ok && data.ok) {
+        const remaining = typeof data.remaining === "number" ? data.remaining : 0;
+        setPass({ loaded: true, hasPass: true, remaining });
+        trackMockEvent({
+          name: "mock_pass_attempt_used",
+          deckSlug: config.linkedDeckSlug,
+          mockSlug: config.slug,
+          source: `mock:${config.slug}:pass:attempt:${mode}:left:${remaining}`,
+        });
+        enterSession(mode, `mock:${config.slug}:start:${mode}:paid`);
+        return;
+      }
+      if (res.status === 402) {
+        setPass((current) => ({ loaded: true, hasPass: current.hasPass || data.code === "no_attempts", remaining: 0 }));
+        openPaywall(placement);
+        return;
+      }
+      setStartError(data.message || "Could not start the mock. Try again.");
+    } catch {
+      setStartError("Network error — could not start the mock. Try again.");
+    } finally {
+      setStartBusy(false);
+    }
+  }
+
+  function handleRedeemed(remaining: number) {
+    setPass({ loaded: true, hasPass: true, remaining });
+    setStartError(null);
+    setRetakePaywallOpen(false);
   }
 
   function exitExam() {
     setScreen("landing");
-    void refreshLearnStatus();
+    void refreshPassStatus();
     scrollToTop();
   }
 
@@ -291,7 +311,7 @@ export function MockExamClient({
     setReport(nextReport);
     setScreen("results");
     scrollToTop();
-    void refreshLearnStatus();
+    void refreshPassStatus();
 
     trackMockEvent({
       name: "mock_completed",
@@ -340,6 +360,12 @@ export function MockExamClient({
 
   if (screen === "results" && report) {
     const hideInterestCta = Boolean(linkedCheckout?.checkoutUrl);
+    const retakeSuffix =
+      startDecision === "paid"
+        ? ` · 1 of ${pass.remaining} attempts`
+        : startDecision === "paywall"
+          ? ` · $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`
+          : "";
 
     return (
       <MockFocusShell>
@@ -349,6 +375,7 @@ export function MockExamClient({
             config={config}
             linkedCheckout={linkedCheckout}
             linkedDeckShortName={linkedDeckShortName}
+            onRetake={() => void startMock(sessionMode, "retake")}
             report={report}
             sessionMode={sessionMode}
           />
@@ -378,11 +405,13 @@ export function MockExamClient({
             ) : null}
             <button
               className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/20 px-6 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50"
-              disabled={learnBusy}
-              onClick={() => void startMock(sessionMode)}
+              disabled={startBusy}
+              onClick={() => void startMock(sessionMode, "retake")}
               type="button"
             >
-              Retake {sessionMode === "learn" ? "learn mode" : "exam"}
+              {startBusy
+                ? "Starting…"
+                : `Retake ${sessionMode === "learn" ? "learn mode" : "exam"}${retakeSuffix}`}
             </button>
             <Link
               className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/20 px-6 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
@@ -398,15 +427,26 @@ export function MockExamClient({
               {linkedCheckout?.checkoutUrl ? "Deck details" : "Join exam prep waitlist"}
             </Link>
           </div>
-          {learnPassEnabled && sessionMode === "learn" && learnRemaining <= 0 ? (
-            <LearnPassPaywall
+          {paywallEnabled && startDecision !== "open" ? (
+            <p className="text-sm leading-6 text-[#5f5749]">
+              {startDecision === "paid"
+                ? `Mock Pass: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, either mode.`
+                : `Your free mock is done. Retakes and other mocks: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`}
+            </p>
+          ) : null}
+          {startError ? (
+            <p className="text-sm text-[#7a2e2e]" role="alert">
+              {startError}
+            </p>
+          ) : null}
+          {retakePaywallOpen && needsPaywall ? (
+            <MockPassPaywall
               deckSlug={config.linkedDeckSlug}
+              freeAttempt={freeAttempt}
               mockSlug={config.slug}
-              remaining={learnRemaining}
-              onRedeemed={(remaining) => {
-                setLearnRemaining(remaining);
-                setLearnError(null);
-              }}
+              onRedeemed={handleRedeemed}
+              passExhausted={pass.hasPass}
+              placement="retake"
             />
           ) : null}
         </div>
@@ -414,20 +454,33 @@ export function MockExamClient({
     );
   }
 
-  const brief = selectedMode === "learn" ? (learnPassEnabled ? learnBriefPaid : learnBriefFree) : examBrief;
+  const brief = selectedMode === "learn" ? learnBrief : examBrief;
   const timingLabel =
     selectedMode === "learn" ? "Untimed · instant feedback" : formatDuration(config.durationMinutes);
-  const showLearnPaywall = learnPassEnabled && selectedMode === "learn" && learnRemaining <= 0;
   const lengthAlternate = mockLengthAlternates[config.slug];
   const sellDeckFirst =
     Boolean(linkedCheckout?.checkoutUrl) &&
     (config.slug === "sie-full-mock" || config.slug === "sie-quick-diagnostic");
-  const startCtaLabel =
+  const startBase =
     selectedMode === "learn"
       ? "Start learn mode"
       : config.questionCount <= 30
-        ? `Start free diagnostic · ${config.questionCount} questions`
-        : `Start timed exam · free · no signup`;
+        ? `Start diagnostic · ${config.questionCount} questions`
+        : "Start timed exam";
+  const startSuffix = !accessHydrated
+    ? ""
+    : startDecision === "free"
+      ? " · first mock free"
+      : startDecision === "paid"
+        ? ` · 1 of ${pass.remaining} attempts`
+        : "";
+  const startCtaLabel = `${startBase}${startSuffix}`;
+  const accessNote =
+    !paywallEnabled
+      ? null
+      : startDecision === "paid"
+        ? `Mock Pass active: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, Exam or Learn mode.`
+        : `First mock free — any exam, Exam or Learn mode, no signup. After that: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`;
   const startButtonClass = (primary: boolean) =>
     primary
       ? "inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50 sm:w-auto"
@@ -478,10 +531,7 @@ export function MockExamClient({
                       ? "bg-[#18140f] text-[#fffaf0]"
                       : "text-[#18140f] hover:bg-[#fffaf0]"
                   }`}
-                  onClick={() => {
-                    setSelectedMode("exam");
-                    setLearnError(null);
-                  }}
+                  onClick={() => setSelectedMode("exam")}
                   role="radio"
                   type="button"
                 >
@@ -522,21 +572,23 @@ export function MockExamClient({
                 ))}
               </ul>
 
-              {learnPassEnabled && selectedMode === "learn" && learnRemaining > 0 ? (
-                <p className="text-sm font-medium text-[#1f3d28]" aria-live="polite">
-                  {learnRemaining} Learn session{learnRemaining === 1 ? "" : "s"} left
+              {accessNote ? (
+                <p
+                  aria-live="polite"
+                  className="rounded-xl border border-[#1f3d28]/15 bg-[#1f3d28]/[0.05] px-3 py-2 text-sm leading-6 text-[#1f3d28]"
+                >
+                  {accessNote}
                 </p>
               ) : null}
 
-              {showLearnPaywall ? (
-                <LearnPassPaywall
+              {needsPaywall ? (
+                <MockPassPaywall
                   deckSlug={config.linkedDeckSlug}
+                  freeAttempt={freeAttempt}
                   mockSlug={config.slug}
-                  remaining={learnRemaining}
-                  onRedeemed={(remaining) => {
-                    setLearnRemaining(remaining);
-                    setLearnError(null);
-                  }}
+                  onRedeemed={handleRedeemed}
+                  passExhausted={pass.hasPass}
+                  placement="landing"
                 />
               ) : null}
 
@@ -568,14 +620,14 @@ export function MockExamClient({
                     {linkedCheckout.ctaLabel}
                   </TrackedCheckoutLink>
                 ) : null}
-                {!showLearnPaywall ? (
+                {!needsPaywall ? (
                   <button
                     className={startButtonClass(!sellDeckFirst)}
-                    disabled={learnBusy}
-                    onClick={() => void startMock(selectedMode)}
+                    disabled={startBusy}
+                    onClick={() => void startMock(selectedMode, "landing")}
                     type="button"
                   >
-                    {learnBusy ? "Starting…" : startCtaLabel}
+                    {startBusy ? "Starting…" : startCtaLabel}
                   </button>
                 ) : null}
                 {linkedCheckout?.checkoutUrl && !sellDeckFirst ? (
@@ -601,9 +653,9 @@ export function MockExamClient({
                 </p>
               ) : null}
 
-              {learnError ? (
+              {startError ? (
                 <p className="text-sm text-[#7a2e2e]" role="alert">
-                  {learnError}
+                  {startError}
                 </p>
               ) : null}
             </div>

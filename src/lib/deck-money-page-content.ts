@@ -29,7 +29,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "gre-anki-deck":
     "Planned 350 Verbal + Quant cards for the shorter GRE — free 30-question / 45-minute readiness check is live now (both axes required). Not a Magoosh/Manhattan vocab mega.",
   "ptcb-pharmacy-technician-anki-deck":
-    "300 PTCE cards for top-200 drugs, sig codes, and pharmacy math — pairs with the 2026 printable study guide PDF.",
+    "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
     "239 French + 239 English Vivre ensemble cards in subdecks for the 3 official exam modules, each with a key-point explanation — facts checked against the 2023 Constitution. $16 one-time for both languages, plus a free 40-question, 60-minute exam simulation. Not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
@@ -118,7 +118,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "gre-anki-deck":
     "Planned 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. Free 30-question timed diagnostic (15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
   "ptcb-pharmacy-technician-anki-deck":
-    "Front-load brand/generic pairs, sig abbreviations, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
+    "Front-load high-yield drugs and interactions, high-alert safety, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
   "ace-cpt-anki-deck":
     "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the free 60-question readiness check first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
   "luxembourg-vivre-ensemble-anki-deck":
@@ -209,7 +209,7 @@ export const positioningOverrides: Partial<
   "frm-part-1-anki-deck": {
     ourEdge: [
       "Ownable 444-card .apkg — not a monthly AnalystPrep / Bionic Turtle subscription",
-      "VaR, ES, Greeks, credit risk, and governance prompts from the coverage table",
+      "Weighted 20/20/30/30 like the exam; every card has a worked example and the common mistake",
       "Free 50-question FRM Part 1 timed practice test with topic scoring",
       "Current-cycle Part 1 only — drill weak pillars after the mock, not random volume",
     ],
@@ -236,7 +236,7 @@ export const positioningOverrides: Partial<
   },
   "ptcb-pharmacy-technician-anki-deck": {
     ourEdge: [
-      "300 cards: top-200 brand/generic, sig codes, math, DEA, DSCSA",
+      "300 unique cards: 105 Medications, 71 Safety, 68 Order Entry, 56 Federal",
       "January 2026 PTCE blueprint — compounding/alligation removed",
       "Free 90-question timed mock + printable 2026 study guide (separate SKUs)",
       "Ownable .apkg — 10–15 cards/shift, not a Quizlet or account-gated bank",
@@ -428,7 +428,7 @@ export const positioningOverrides: Partial<
   "medical-scribe-anki-deck": {
     ourEdge: [
       "Planned 60-card medical scribe Anki (documentation, terminology, EHR, HIPAA)",
-      "Free 60Q / 75 min timed diagnostic live now — no signup",
+      "60Q / 75 min timed diagnostic live now — first mock free, no signup",
       "Honest: AHDPG MSCE ~100Q / 75 min / 80%; our check is shorter",
       "≠ NHA CCMA / CMA (AAMA) clinical assistant",
     ],
@@ -613,7 +613,7 @@ NHA registration, the official practice test, or a skills lab. Ownable .apkg onl
 
 Two ownable .apkg files with the same 239 cards each — one in French, one in English — so you study in the language you will sit (the exam is offered in Luxembourgish, French, German and English).
 
-Each file opens as subdecks that follow the official exam split: module 1 fundamental rights has 42 cards (10 of the 40 exam questions), module 2 state and municipal institutions including justice has 104 cards (20 questions), and module 3 history and European integration has 49 cards (10 questions). Two short context subdecks cover exam and nationality steps (17 cards) and life in Luxembourg (25 cards).
+Each file opens as subdecks that follow the official exam split: module 1 fundamental rights has 42 cards (10 of the 40 exam questions), module 2 state and municipal institutions including justice has 104 cards (20 questions), and module 3 history and European integration has 49 cards (10 questions). Two short context subdecks cover exam and nationality steps (19 cards) and life in Luxembourg (25 cards).
 
 Every card shows the answer plus a key-point line — the article, date or distinction that makes the answer stick. 22 cards are flagged as common traps — including the CAI exemption that shortens the course but not the exam.
 
@@ -747,7 +747,7 @@ Level 2 failures often come from mis-applying inventory and lease adjustments in
 
 ### Study plan with the free mock and Anki deck
 
-**Week 1:** Print weak-topic tables (Fixed Income, Equity, FSA first). **Week 2:** Run the 80-question recall drill timed; review every explanation. **Week 3:** Take the [free 60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check) — no signup — and map topic gaps back to the PDF tables. **Week 4+:** Drill missed formulas in the [495-card Level 2 Anki deck](/decks/cfa-level-2-anki-deck) between mock retakes.
+**Week 1:** Print weak-topic tables (Fixed Income, Equity, FSA first). **Week 2:** Run the 80-question recall drill timed; review every explanation. **Week 3:** Take the [60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check) — first mock free, no signup — and map topic gaps back to the PDF tables. **Week 4+:** Drill missed formulas in the [495-card Level 2 Anki deck](/decks/cfa-level-2-anki-deck) between mock retakes.
 
 Official CFA Level 2 is vignette / item-set across 10 equally weighted topics — this PDF is a recall companion, not CFA Institute curriculum.
 
@@ -1362,7 +1362,7 @@ Import the language file for your canton, then **20–30 cards/day** while you s
 
 ### What makes this Gumroad edition different
 
-One **$12** three-language Swiss civics bundle with instant download — spaced repetition for the federal block, waitlist-free after the free mocks.`,
+One **$12** three-language Swiss civics bundle with instant download — spaced repetition for the federal block, waitlist-free after your mock diagnostic.`,
 
   "citizenship-naturalization-anki-bundle": `### Who this bundle is for
 
@@ -1488,7 +1488,7 @@ ETS PowerPrep, official practice books, or tutoring. Anki is **planned** on UniP
 
   "ptcb-pharmacy-technician-anki-deck": `### What is inside
 
-Roughly 300 prompts organized for the January 2026 PTCE: top 200 brand/generic pairs, common sig codes (q.d., b.i.d., p.r.n.), days-supply calculations, DEA schedules, DSCSA traceability basics, recall and error-prevention workflow, and federal law. Official PTCE is **90 questions (80 scored + 10 pretest) / 1 hour 50 minutes / scaled pass 1,400** at Pearson VUE (in-person; online proctoring suspended December 12, 2025). Math cards use the short integer setups the exam favors — no alligation or compounding (removed from the 2026 outline).
+300 unique cards in January 2026 PTCE proportions: 105 Medications (60 high-yield Top 200 drugs — generic, class, use, and the safety point — plus interactions, stems, dosage forms, and storage), 56 Federal Requirements (DEA schedules and forms, C-II rules, DSCSA, HIPAA, REMS, recalls), 71 Patient Safety (high-alert drugs, look-alike names, ISMP abbreviations, USP <797>/<800>), and 68 Order Entry (sigs, days-supply and dosing math, claims, inventory). Every card carries a worked example and a common mistake. Official PTCE is **90 questions (80 scored + 10 pretest) / 1 hour 50 minutes / scaled pass 1,400** at Pearson VUE (in-person; online proctoring suspended December 12, 2025). Math cards use the short integer setups the exam favors — no alligation or compounding (removed from the 2026 outline).
 
 ### Shift-friendly study plan with the study guide
 
@@ -1668,7 +1668,7 @@ NHA registration, Candidate Handbook policies (including coding-manual rules for
 
   "frm-part-1-anki-deck": `### What is inside
 
-444 cards across Part 1: risk governance, CAPM and regression diagnostics, futures/forwards/swaps/options mechanics, VaR and Expected Shortfall methods, credit risk metrics, operational risk frameworks, and fixed-income valuation. Greeks and volatility surfaces appear in valuation-and-risk-models rows.
+444 cards weighted like the exam: 89 Foundations (governance, CAPM and factor models, ERM, case studies such as LTCM and the 2007-09 crisis), 89 Quantitative Analysis (probability, hypothesis tests, regression, time series, volatility, simulation, machine learning), 133 Financial Markets and Products (banks and funds, futures and hedging, options and strategies, swaps, MBS) and 133 Valuation and Risk Models (VaR and ES, GARCH, credit and country risk, operational risk, stress tests, bond pricing, duration and convexity, trees, Black-Scholes-Merton and Greeks). Every card asks a real exam question, explains the rule, works a numeric example where it applies, and names the mistake candidates make.
 
 ### Plan with the free FRM mock
 

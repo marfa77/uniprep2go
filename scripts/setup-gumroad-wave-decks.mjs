@@ -14,10 +14,10 @@
  *   node scripts/setup-gumroad-wave-decks.mjs --assets-only
  *   node scripts/setup-gumroad-wave-decks.mjs --slug ace-cpt-anki-deck --polish-only
  *
- * Always ships rich HTML description + sample screenshots:
- *   1) --preview-image gallery
- *   2) custom landing Sample cards body (publish-wave-gumroad-landings.py)
- * when public/samples/{slug}-sample-{1,2,3}.webp exist. Missing samples fail polish/assets.
+ * Always ships the classic Gumroad product page (what Gumroad Discover search shows):
+ * rich HTML description (from src/data/gumroad/landing-copy.json when present) + summary
+ * + 3 sample screenshots in the --preview-image gallery from public/samples/{slug}-sample-{1,2,3}.webp.
+ * Missing samples fail polish/assets. No custom landing pages.
  *
  * Env:
  *   GUMROAD_ACCESS_TOKEN — auto-resolved from .env.local, gumroad CLI config, or `gumroad auth token`
@@ -35,6 +35,7 @@ import {
 } from "./lib/gumroad-auth.mjs";
 import { gumroadDiscoverFields } from "./lib/gumroad-discover.mjs";
 import { putGumroadDigitalSettings } from "./lib/gumroad-product-settings.mjs";
+import { buildCopyDescription, loadLandingCopy } from "./lib/landing-copy.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CATALOG_PATH = join(root, "src/data/gumroad/wave-anki-decks.json");
@@ -151,9 +152,21 @@ function buildProductDescription({ title, mockPath, apkgReady, spec }) {
     ? `<p>Built from the same validated item bank as the <a href="${mockPath}">free readiness check</a> on UniPrep2Go.</p>`
     : "<p>Pairs with the free UniPrep2Go readiness check on <a href=\"https://uniprep2go.study/mock-exams\">uniprep2go.study</a>.</p>";
 
+  const copy = loadLandingCopy(deckSlug);
+  if (copy) {
+    return buildCopyDescription({
+      copy,
+      spec,
+      mockUrl: mockPath,
+      deckUrl: copy.sitePage === false ? null : `https://uniprep2go.study/decks/${deckSlug}`,
+      delivery,
+      hasSamples: resolveSampleWebps(deckSlug).length >= 3,
+    });
+  }
+
   const samplesNote =
     resolveSampleWebps(deckSlug || "").length >= 3
-      ? `<hr><h2><strong>Sample cards</strong></h2><p>Real Anki screenshots from this deck (question, options, answer, and explanation) are shown in the <strong>Sample cards</strong> section on this product page and in the image gallery.</p>`
+      ? `<hr><h2><strong>Sample cards</strong></h2><p>Real Anki screenshots from this deck (question, options, answer, and explanation) are in the image gallery above.</p>`
       : "";
 
   const countLine = count
@@ -244,11 +257,15 @@ function uploadSamplePreviews({ productId, slug, dryRun }) {
   }
 }
 
-/** Publish custom landing HTML with Sample cards images in the product body. */
-function publishSampleLanding({ slug, dryRun }) {
-  const cmd = `python3 scripts/publish-wave-gumroad-landings.py --slug ${slug}${dryRun ? " --dry-run" : ""}`;
-  console.log(`  landing: Sample cards body → Gumroad custom page`);
-  execSync(cmd, { cwd: root, stdio: "inherit" });
+/** A custom landing replaces the classic page (iframe), hiding the description Discover buyers should see. */
+function clearCustomLanding(productId) {
+  try {
+    runGumroad(`products page clear ${productId}`);
+    console.log(`  custom landing cleared → classic product page`);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (!/not found|no landing|404/i.test(message)) throw error;
+  }
 }
 
 function resolveCoverPath(slug) {
@@ -263,6 +280,8 @@ function buildApkgDisplayName(slug, titles) {
 }
 
 function discoverFieldsForWave(slug, spec) {
+  const copyTags = loadLandingCopy(slug)?.tags;
+  if (copyTags?.length) return { ...gumroadDiscoverFields({ slug }), tags: copyTags };
   return gumroadDiscoverFields({
     slug,
     tagPrefix: spec?.tagPrefix,
@@ -289,6 +308,7 @@ async function putGumroadDescriptionAsync(productId, description, dryRun, slug, 
     body: JSON.stringify({
       description,
       ...(slug ? discoverFieldsForWave(slug, spec) : {}),
+      ...(loadLandingCopy(slug)?.summary ? { custom_summary: loadLandingCopy(slug).summary } : {}),
     }),
   });
   const payload = await response.json();
@@ -517,7 +537,7 @@ async function syncProductAssets({
     throw new Error(`${slug}: cover not found at public/covers/${slug}.webp`);
   }
 
-  const name = titles[slug] ?? slug;
+  const name = loadLandingCopy(slug)?.title ?? titles[slug] ?? slug;
   const specs = loadSpecs();
   const spec = specs[slug];
   const mock = getAllMockExams().find((entry) => entry.linkedDeckSlug === slug);
@@ -552,7 +572,6 @@ async function syncProductAssets({
   let samplesReady = false;
   if (sampleCount >= 3) {
     uploadSamplePreviews({ productId, slug, dryRun: false });
-    publishSampleLanding({ slug, dryRun: false });
     samplesReady = true;
   } else {
     console.warn(
@@ -592,14 +611,14 @@ async function syncProductPolish({ slug, record, titles, getAllMockExams, catalo
   if (!spec) {
     throw new Error(`${slug}: missing wave-deck-specs entry`);
   }
-  const name = titles[slug] ?? slug;
+  const name = loadLandingCopy(slug)?.title ?? titles[slug] ?? slug;
   const mock = getAllMockExams().find((entry) => entry.linkedDeckSlug === slug);
   const mockPath = mock ? `https://uniprep2go.study/mock-exams/${mock.slug}` : null;
   const apkgReady = Boolean(resolveApkgPath(slug));
   const description = buildProductDescription({ title: name, mockPath, apkgReady, spec });
 
   if (dryRun) {
-    console.log(`  would polish description + upload 3 sample previews + publish Sample cards landing`);
+    console.log(`  would polish description + summary + upload 3 sample previews`);
     return;
   }
 
@@ -607,7 +626,7 @@ async function syncProductPolish({ slug, record, titles, getAllMockExams, catalo
   runGumroad(`products update ${productId} --name "${name.replace(/"/g, '\\"')}"`, { dryRun: false });
   await putGumroadDigitalSettings(resolveGumroadToken(), productId);
   await putGumroadDescriptionAsync(productId, description, false, slug, spec);
-  publishSampleLanding({ slug, dryRun: false });
+  if (loadLandingCopy(slug)) clearCustomLanding(productId);
   runGumroad(`products publish ${productId}`);
   const refreshed = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
   catalog.products[slug] = {
@@ -744,7 +763,7 @@ async function main() {
       throw new Error(`Unknown slug in catalog: ${slug}`);
     }
 
-    const name = titles[slug] ?? slug;
+    const name = loadLandingCopy(slug)?.title ?? titles[slug] ?? slug;
     const mock = getAllMockExams().find((entry) => entry.linkedDeckSlug === slug);
     const mockPath = mock ? `https://uniprep2go.study/mock-exams/${mock.slug}` : null;
     const apkgPath = resolveApkgPath(slug);

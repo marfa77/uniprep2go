@@ -1,0 +1,688 @@
+{
+  "sat-readiness-check": {
+    "sat-readiness-check-math-001": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "If 4x - 7 = 21, what is the value of x?",
+      "options": {
+        "a": "3.5",
+        "b": "7",
+        "c": "14",
+        "d": "28"
+      },
+      "correctOptionId": "b",
+      "explanation": "Undo the operations in reverse order: add 7 to both sides to get 4x = 28, then divide both sides by 4 to get x = 7. Check: 4(7) - 7 = 21.",
+      "distractorExplanations": {
+        "a": "Subtracts 7 instead of adding it: 4x = 14 gives 3.5.",
+        "c": "Adds 7 correctly but divides 28 by 2 instead of by 4.",
+        "d": "Stops at 4x = 28 and forgets to divide by 4."
+      }
+    },
+    "sat-readiness-check-math-002": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "If 3(x + 4) = 2x - 5, what is the value of x?",
+      "options": {
+        "a": "-17",
+        "b": "-9",
+        "c": "-17/5",
+        "d": "7"
+      },
+      "correctOptionId": "a",
+      "explanation": "Distribute first: 3x + 12 = 2x - 5. Subtract 2x from both sides: x + 12 = -5. Subtract 12: x = -17. Check: 3(-13) = -39 and 2(-17) - 5 = -39.",
+      "distractorExplanations": {
+        "b": "Forgets to distribute the 3 to the 4: 3x + 4 = 2x - 5 gives x = -9.",
+        "c": "Adds 2x to the left side instead of subtracting it, getting 5x = -17.",
+        "d": "Moves 12 to the other side without changing its sign: x = 12 - 5 = 7."
+      }
+    },
+    "sat-readiness-check-math-003": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A plumber charges a $65 service fee plus $40 per hour of work. A customer's bill for one job was $245. For how many hours did the plumber work?",
+      "options": {
+        "a": "4.5",
+        "b": "6.125",
+        "c": "7.75",
+        "d": "180"
+      },
+      "correctOptionId": "a",
+      "explanation": "Model the bill as 65 + 40h = 245. Subtract the one-time fee: 40h = 180. Divide by the hourly rate: h = 4.5 hours.",
+      "distractorExplanations": {
+        "b": "Divides the whole bill by 40 without removing the $65 fee first.",
+        "c": "Adds the fee instead of subtracting it: (245 + 65) / 40 = 7.75.",
+        "d": "Finds the labor cost, $180, but never divides by the $40 hourly rate."
+      }
+    },
+    "sat-readiness-check-math-004": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "If (2/3)x + 5 = (1/2)x + 8, what is the value of x?",
+      "options": {
+        "a": "18/7",
+        "b": "3",
+        "c": "18",
+        "d": "78"
+      },
+      "correctOptionId": "c",
+      "explanation": "Collect x-terms: (2/3)x - (1/2)x = 8 - 5, so (1/6)x = 3. Multiply both sides by 6: x = 18. Clearing fractions first (multiply everything by 6: 4x + 30 = 3x + 48) gives the same answer.",
+      "distractorExplanations": {
+        "a": "Adds the coefficients (2/3 + 1/2 = 7/6) instead of subtracting them, so (7/6)x = 3.",
+        "b": "Gets (1/6)x = 3 but reports 3 without multiplying by 6.",
+        "d": "Adds 5 and 8 instead of subtracting, so (1/6)x = 13 and x = 78."
+      }
+    },
+    "sat-readiness-check-math-005": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "In the equation 5(x - 2) = 5x + k, k is a constant. If the equation has infinitely many solutions, what is the value of k?",
+      "options": {
+        "a": "-10",
+        "b": "-2",
+        "c": "10",
+        "d": "Any value except -10"
+      },
+      "correctOptionId": "a",
+      "explanation": "Distribute: 5x - 10 = 5x + k. An equation has infinitely many solutions when both sides are identical, so k must equal -10.",
+      "distractorExplanations": {
+        "b": "Forgets to multiply the 2 by 5 when distributing, giving 5x - 2.",
+        "c": "Drops the negative sign after distributing 5(x - 2).",
+        "d": "Describes the condition for no solution (parallel, never equal), not infinitely many solutions."
+      }
+    },
+    "sat-readiness-check-math-073": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "The function f is defined by f(x) = 3x - 4. What is the value of f(5)?",
+      "options": {
+        "a": "3",
+        "b": "11",
+        "c": "15",
+        "d": "19"
+      },
+      "correctOptionId": "b",
+      "explanation": "Substitute 5 for x: f(5) = 3(5) - 4 = 15 - 4 = 11. f(5) means the output when the input is 5.",
+      "distractorExplanations": {
+        "a": "Solves f(x) = 5 (3x - 4 = 5 gives x = 3), mixing up the input and the output.",
+        "c": "Multiplies 3 by 5 but forgets to subtract 4.",
+        "d": "Adds 4 instead of subtracting it: 15 + 4 = 19."
+      }
+    },
+    "sat-readiness-check-math-007": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A line in the xy-plane passes through the points (-2, 7) and (4, -5). What is the slope of the line?",
+      "options": {
+        "a": "-2",
+        "b": "-1/2",
+        "c": "1/2",
+        "d": "2"
+      },
+      "correctOptionId": "a",
+      "explanation": "Slope = change in y / change in x = (-5 - 7) / (4 - (-2)) = -12 / 6 = -2. The line falls 2 units for every 1 unit to the right.",
+      "distractorExplanations": {
+        "b": "Divides the change in x by the change in y (6 / -12), inverting the slope formula.",
+        "c": "Inverts the slope formula and also loses the negative sign.",
+        "d": "Gets the size right but loses the sign; y decreases as x increases, so the slope is negative."
+      }
+    },
+    "sat-readiness-check-math-008": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The monthly cost, in dollars, of a phone plan is modeled by C(m) = 0.15m + 25, where m is the number of minutes used beyond the plan's included minutes. What is the best interpretation of 25 in this context?",
+      "options": {
+        "a": "The cost of each minute used beyond the included minutes",
+        "b": "The monthly cost when no minutes are used beyond the included minutes",
+        "c": "The number of minutes included in the plan before extra charges begin",
+        "d": "The maximum monthly cost of the plan, in dollars"
+      },
+      "correctOptionId": "b",
+      "explanation": "In C(m) = 0.15m + 25, the constant term is the value of C when m = 0. So $25 is the monthly cost when no extra minutes are used; 0.15 is the cost per extra minute.",
+      "distractorExplanations": {
+        "a": "That is the meaning of 0.15, the coefficient of m, not the constant 25.",
+        "c": "25 is measured in dollars, not minutes, and the model does not give the included minutes.",
+        "d": "The cost grows as m increases, so 25 is the minimum cost, not the maximum."
+      }
+    },
+    "sat-readiness-check-math-009": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "For the linear function g, g(2) = 11 and g(6) = 23. What is the value of g(0)?",
+      "options": {
+        "a": "3",
+        "b": "5",
+        "c": "8",
+        "d": "11"
+      },
+      "correctOptionId": "b",
+      "explanation": "The slope is (23 - 11) / (6 - 2) = 12 / 4 = 3. Going from x = 2 back to x = 0 lowers g by 2 x 3 = 6, so g(0) = 11 - 6 = 5. Equivalently g(x) = 3x + 5.",
+      "distractorExplanations": {
+        "a": "Reports the slope, 3, instead of the y-intercept.",
+        "c": "Subtracts only one slope step (11 - 3) instead of two steps from x = 2 to x = 0.",
+        "d": "Gives g(2) instead of finding the value at x = 0."
+      }
+    },
+    "sat-readiness-check-math-010": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The graph of y = -4x + b in the xy-plane passes through the point (3, 2). What is the value of b?",
+      "options": {
+        "a": "-10",
+        "b": "2",
+        "c": "10",
+        "d": "14"
+      },
+      "correctOptionId": "d",
+      "explanation": "Substitute the point: 2 = -4(3) + b, so 2 = -12 + b and b = 14.",
+      "distractorExplanations": {
+        "a": "Subtracts 12 from 2 instead of adding 12 to both sides.",
+        "b": "Uses the y-coordinate of the point as the y-intercept.",
+        "c": "Subtracts in the wrong order, computing 12 - 2 instead of 2 + 12."
+      }
+    },
+    "sat-readiness-check-math-011": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Tickets to a school play cost $8 for students and $12 for adults. A family spent $68 on tickets, including 4 student tickets. How many adult tickets did the family buy?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "5",
+        "d": "8.5"
+      },
+      "correctOptionId": "a",
+      "explanation": "Student tickets cost 4 x $8 = $32. The rest, $68 - $32 = $36, went to adult tickets, and $36 / $12 = 3 adult tickets.",
+      "distractorExplanations": {
+        "b": "Assumes the family bought as many adult tickets as student tickets.",
+        "c": "Divides the whole $68 by $12 and rounds down, ignoring the student tickets.",
+        "d": "Divides $68 by the student price, $8, which is not the number of any ticket type."
+      }
+    },
+    "sat-readiness-check-math-012": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The equation 6x + 4y = 52 represents the shelf space, in inches, used by x large boxes and y small boxes. If 6 large boxes are on the shelf, how many small boxes fill the remaining space?",
+      "options": {
+        "a": "4",
+        "b": "6",
+        "c": "13",
+        "d": "22"
+      },
+      "correctOptionId": "a",
+      "explanation": "Substitute x = 6: 6(6) + 4y = 52, so 36 + 4y = 52, 4y = 16, and y = 4.",
+      "distractorExplanations": {
+        "b": "Repeats the number of large boxes instead of solving for y.",
+        "c": "Divides 52 by 4, ignoring the space taken by the large boxes.",
+        "d": "Adds 36 instead of subtracting it: 4y = 88."
+      }
+    },
+    "sat-readiness-check-math-013": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "What is the x-intercept of the graph of 3x - 5y = 30 in the xy-plane?",
+      "options": {
+        "a": "(0, -6)",
+        "b": "(-6, 0)",
+        "c": "(30, 0)",
+        "d": "(10, 0)"
+      },
+      "correctOptionId": "d",
+      "explanation": "The x-intercept is where y = 0. Then 3x = 30, so x = 10, and the intercept is (10, 0).",
+      "distractorExplanations": {
+        "a": "That is the y-intercept, found by setting x = 0.",
+        "b": "Uses the y-intercept's value and places it on the x-axis.",
+        "c": "Uses the constant 30 without dividing by the coefficient 3."
+      }
+    },
+    "sat-readiness-check-math-014": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Line k in the xy-plane is perpendicular to the line y = (2/5)x - 3 and passes through the point (4, 1). Which equation defines line k?",
+      "options": {
+        "a": "y = (5/2)x - 9",
+        "b": "y = -(2/5)x + 13/5",
+        "c": "y = (2/5)x - 3/5",
+        "d": "y = -(5/2)x + 11"
+      },
+      "correctOptionId": "d",
+      "explanation": "Perpendicular slopes are negative reciprocals, so line k has slope -5/2. Using (4, 1): 1 = -(5/2)(4) + b = -10 + b, so b = 11.",
+      "distractorExplanations": {
+        "a": "Takes the reciprocal but not the negative, so the line is not perpendicular.",
+        "b": "Takes the negative but not the reciprocal.",
+        "c": "Keeps the same slope, which gives a parallel line, not a perpendicular one."
+      }
+    },
+    "sat-readiness-check-math-015": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "When the equation 2x + 3y = 12 is graphed in the xy-plane, what is the y-coordinate of its y-intercept?",
+      "options": {
+        "a": "-2/3",
+        "b": "4",
+        "c": "6",
+        "d": "12"
+      },
+      "correctOptionId": "b",
+      "explanation": "Set x = 0: 3y = 12, so y = 4. Rewriting as y = -(2/3)x + 4 shows the same intercept.",
+      "distractorExplanations": {
+        "a": "That is the slope in slope-intercept form, not the intercept.",
+        "c": "That is the x-intercept value (set y = 0: 2x = 12).",
+        "d": "Uses the constant 12 without dividing by the coefficient of y."
+      }
+    },
+    "sat-readiness-check-math-016": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "If x + y = 14 and x - y = 4, what is the value of x?",
+      "options": {
+        "a": "5",
+        "b": "9",
+        "c": "10",
+        "d": "18"
+      },
+      "correctOptionId": "b",
+      "explanation": "Add the equations to eliminate y: 2x = 18, so x = 9. Then y = 14 - 9 = 5.",
+      "distractorExplanations": {
+        "a": "That is the value of y, not x.",
+        "c": "Subtracts the right sides (14 - 4) instead of adding the equations.",
+        "d": "Adds the equations but forgets to divide 2x = 18 by 2."
+      }
+    },
+    "sat-readiness-check-math-017": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "If 2x + 3y = 21 and x = y + 3, what is the value of y?",
+      "options": {
+        "a": "3",
+        "b": "3.6",
+        "c": "4.2",
+        "d": "6"
+      },
+      "correctOptionId": "a",
+      "explanation": "Substitute x = y + 3: 2(y + 3) + 3y = 21, so 5y + 6 = 21, 5y = 15, and y = 3 (then x = 6).",
+      "distractorExplanations": {
+        "b": "Writes 2(y + 3) as 2y + 3, so 5y + 3 = 21 and y = 3.6.",
+        "c": "Drops the 6 from distributing: 5y = 21 gives 4.2.",
+        "d": "That is the value of x, not y."
+      }
+    },
+    "sat-readiness-check-math-018": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A theater sold 300 tickets for a total of $2,880. Adult tickets cost $12 each and child tickets cost $6 each. How many adult tickets were sold?",
+      "options": {
+        "a": "120",
+        "b": "150",
+        "c": "180",
+        "d": "240"
+      },
+      "correctOptionId": "c",
+      "explanation": "Let a be adult tickets and c child tickets: a + c = 300 and 12a + 6c = 2,880. Substitute c = 300 - a: 12a + 1,800 - 6a = 2,880, so 6a = 1,080 and a = 180.",
+      "distractorExplanations": {
+        "a": "That is the number of child tickets (300 - 180).",
+        "b": "Assumes the tickets were split evenly without using the revenue.",
+        "d": "Divides the total revenue by the adult price, as if every ticket were an adult ticket."
+      }
+    },
+    "sat-readiness-check-math-019": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "In the system 4x - 2y = 9 and kx - y = 3, k is a constant. If the system has no solution, what is the value of k?",
+      "options": {
+        "a": "-2",
+        "b": "1/2",
+        "c": "2",
+        "d": "4"
+      },
+      "correctOptionId": "c",
+      "explanation": "No solution means parallel lines: same slope, different intercepts. The first line is y = 2x - 4.5; the second is y = kx - 3. Matching slopes gives k = 2, and the intercepts differ, so the lines never meet.",
+      "distractorExplanations": {
+        "a": "Gets the slope's size but the wrong sign.",
+        "b": "Uses the reciprocal of the slope.",
+        "d": "Copies the coefficient 4 without dividing by 2 to put both equations on the same scale."
+      }
+    },
+    "sat-readiness-check-math-020": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A chemist mixes a 10% saline solution with a 30% saline solution to make 40 liters of a 25% saline solution. How many liters of the 10% solution does the chemist use?",
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "20",
+        "d": "30"
+      },
+      "correctOptionId": "a",
+      "explanation": "Let x be liters of 10% solution and 40 - x liters of 30% solution. Salt: 0.10x + 0.30(40 - x) = 0.25(40) = 10. So 12 - 0.2x = 10, giving x = 10.",
+      "distractorExplanations": {
+        "b": "Uses the 15-point gap between 10% and 25% as a number of liters.",
+        "c": "Assumes equal amounts, which would give a 20% mixture, not 25%.",
+        "d": "That is the amount of the 30% solution, not the 10% solution."
+      }
+    },
+    "sat-readiness-check-math-021": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Which of the following values of x satisfies the inequality 5x - 3 > 17?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "5"
+      },
+      "correctOptionId": "d",
+      "explanation": "Add 3: 5x > 20. Divide by 5: x > 4. Only 5 is greater than 4; check: 5(5) - 3 = 22 > 17.",
+      "distractorExplanations": {
+        "a": "5(2) - 3 = 7, which is not greater than 17.",
+        "b": "Works only if you subtract 3 instead of adding it (x > 2.8).",
+        "c": "x = 4 gives exactly 17, and the inequality is strict (greater than, not equal to)."
+      }
+    },
+    "sat-readiness-check-math-022": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Which of the following describes all solutions to -3x + 7 ≤ 22?",
+      "options": {
+        "a": "x ≤ -5",
+        "b": "x ≥ -5",
+        "c": "x ≤ 5",
+        "d": "x ≥ 5"
+      },
+      "correctOptionId": "b",
+      "explanation": "Subtract 7: -3x ≤ 15. Dividing by a negative number reverses the inequality: x ≥ -5. Check x = 0: 7 ≤ 22 is true.",
+      "distractorExplanations": {
+        "a": "Divides by -3 but forgets to flip the inequality sign.",
+        "c": "Loses the negative when dividing and does not flip the sign.",
+        "d": "Flips the sign but drops the negative from 15 / -3."
+      }
+    },
+    "sat-readiness-check-math-023": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Mia has $50 to spend on a bike rental that costs $8 plus $6 per hour. What is the maximum number of whole hours she can rent the bike?",
+      "options": {
+        "a": "6",
+        "b": "7",
+        "c": "8",
+        "d": "9"
+      },
+      "correctOptionId": "b",
+      "explanation": "Set up 8 + 6h ≤ 50. Then 6h ≤ 42 and h ≤ 7, so the maximum is 7 whole hours, costing exactly $50.",
+      "distractorExplanations": {
+        "a": "One hour short: 7 hours cost exactly $50, which is allowed.",
+        "c": "Divides $50 by $6 and ignores the $8 base charge (8 hours would cost $56).",
+        "d": "Adds the $8 to $50 before dividing: 58 / 6 is about 9.7."
+      }
+    },
+    "sat-readiness-check-math-024": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A delivery van can carry at most 1,500 kilograms. The driver weighs 80 kilograms, and each box weighs 35 kilograms. Which inequality represents the number of boxes, b, the van can carry along with the driver?",
+      "options": {
+        "a": "80 + 35b ≤ 1,500",
+        "b": "80 + 35b ≥ 1,500",
+        "c": "35 + 80b ≤ 1,500",
+        "d": "35(80 + b) ≤ 1,500"
+      },
+      "correctOptionId": "a",
+      "explanation": "Total weight is the driver plus b boxes: 80 + 35b. 'At most 1,500' means the total must be less than or equal to 1,500.",
+      "distractorExplanations": {
+        "b": "Uses 'greater than or equal to,' which would require at least 1,500 kilograms.",
+        "c": "Swaps the driver's weight and the box weight.",
+        "d": "Multiplies the driver's weight by 35 as if the driver were 35 boxes."
+      }
+    },
+    "sat-readiness-check-math-074": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Which point (x, y) is a solution to the system of inequalities y > 2x - 1 and y ≤ -x + 5?",
+      "options": {
+        "a": "(1, 3)",
+        "b": "(-1, -3)",
+        "c": "(0, 6)",
+        "d": "(3, 5)"
+      },
+      "correctOptionId": "a",
+      "explanation": "Test (1, 3): 3 > 2(1) - 1 = 1 is true, and 3 ≤ -1 + 5 = 4 is true. A solution must satisfy both inequalities.",
+      "distractorExplanations": {
+        "b": "-3 > 2(-1) - 1 = -3 is false; the first inequality is strict.",
+        "c": "Satisfies the first inequality, but 6 ≤ 5 is false.",
+        "d": "5 > 2(3) - 1 = 5 is false because the inequality is strict."
+      }
+    },
+    "sat-readiness-check-math-026": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Which expression is equivalent to (x + 5)(x - 3)?",
+      "options": {
+        "a": "x² - 15",
+        "b": "x² - 2x - 15",
+        "c": "x² + 8x - 15",
+        "d": "x² + 2x - 15"
+      },
+      "correctOptionId": "d",
+      "explanation": "Multiply each term: x·x + x·(-3) + 5·x + 5·(-3) = x² - 3x + 5x - 15 = x² + 2x - 15.",
+      "distractorExplanations": {
+        "a": "Multiplies only the first and last terms and skips the middle terms.",
+        "b": "Gets the sign of the middle term wrong: -3x + 5x is +2x.",
+        "c": "Adds 5 and 3 instead of combining 5x and -3x."
+      }
+    },
+    "sat-readiness-check-math-027": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Which expression is equivalent to x² - 13x + 40?",
+      "options": {
+        "a": "(x - 5)(x - 8)",
+        "b": "(x + 5)(x + 8)",
+        "c": "(x - 4)(x - 10)",
+        "d": "(x - 5)(x + 8)"
+      },
+      "correctOptionId": "a",
+      "explanation": "Find two numbers whose product is 40 and whose sum is -13: -5 and -8. So x² - 13x + 40 = (x - 5)(x - 8).",
+      "distractorExplanations": {
+        "b": "Gives +13x for the middle term; the signs must both be negative.",
+        "c": "-4 and -10 multiply to 40 but add to -14, not -13.",
+        "d": "Multiplies to -40, so the constant term would be negative."
+      }
+    },
+    "sat-readiness-check-math-028": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "For nonzero x and y, which expression is equivalent to (6x³y²) / (2xy)?",
+      "options": {
+        "a": "4x²y",
+        "b": "3x³y",
+        "c": "12x⁴y³",
+        "d": "3x²y"
+      },
+      "correctOptionId": "d",
+      "explanation": "Divide the coefficients (6 / 2 = 3) and subtract exponents of the same base: x³/x = x² and y²/y = y. Result: 3x²y.",
+      "distractorExplanations": {
+        "a": "Subtracts the coefficients (6 - 2) instead of dividing them.",
+        "b": "Divides x³ by x incorrectly and leaves the exponent at 3.",
+        "c": "Multiplies instead of dividing: coefficients multiplied and exponents added."
+      }
+    },
+    "sat-readiness-check-math-029": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Which expression is equivalent to 4x² - 25?",
+      "options": {
+        "a": "(2x - 5)(2x + 5)",
+        "b": "(2x - 5)²",
+        "c": "(4x - 5)(x + 5)",
+        "d": "(x - 5)(4x + 5)"
+      },
+      "correctOptionId": "a",
+      "explanation": "4x² - 25 is a difference of squares: (2x)² - 5² = (2x - 5)(2x + 5). The middle terms -10x and +10x cancel.",
+      "distractorExplanations": {
+        "b": "Squaring (2x - 5) gives 4x² - 20x + 25, which has a middle term and +25.",
+        "c": "Expands to 4x² + 15x - 25, which has a middle term.",
+        "d": "Expands to 4x² - 15x - 25, which also has a middle term."
+      }
+    },
+    "sat-readiness-check-math-030": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "For x ≠ -3, which expression is equivalent to (x² - 9) / (x + 3)?",
+      "options": {
+        "a": "x + 3",
+        "b": "x - 9",
+        "c": "x² - 3",
+        "d": "x - 3"
+      },
+      "correctOptionId": "d",
+      "explanation": "Factor the numerator as a difference of squares: (x - 3)(x + 3). Cancel the common factor (x + 3) to get x - 3.",
+      "distractorExplanations": {
+        "a": "Cancels the wrong factor; (x + 3) is the factor removed by the division.",
+        "b": "Cancels x² with x and leaves -9, which is not valid algebra.",
+        "c": "Divides the 9 by 3 term by term, which is not how fractions simplify."
+      }
+    },
+    "sat-readiness-check-math-031": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "In the equation (ax + 3)(2x - 5) = 6x² + bx - 15, a and b are constants, and the equation is true for all values of x. What is the value of b?",
+      "options": {
+        "a": "-21",
+        "b": "-15",
+        "c": "-9",
+        "d": "9"
+      },
+      "correctOptionId": "c",
+      "explanation": "Match the x² terms: 2a = 6, so a = 3. The x-term is a(-5)x + 3(2x) = -15x + 6x = -9x, so b = -9.",
+      "distractorExplanations": {
+        "a": "Subtracts 6x instead of adding it: -15x - 6x.",
+        "b": "Uses only one of the two products that make up the middle term.",
+        "d": "Combines -15x and 6x correctly but drops the negative sign."
+      }
+    },
+    "sat-readiness-check-math-032": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "For x > 0, which expression is equivalent to (√x)⁶?",
+      "options": {
+        "a": "x³",
+        "b": "x¹²",
+        "c": "x^(13/2)",
+        "d": "x^(1/12)"
+      },
+      "correctOptionId": "a",
+      "explanation": "√x = x^(1/2). Raising a power to a power multiplies the exponents: (x^(1/2))⁶ = x^(6/2) = x³.",
+      "distractorExplanations": {
+        "b": "Treats the square root as squaring and multiplies 2 by 6.",
+        "c": "Adds the exponents (1/2 + 6) instead of multiplying them.",
+        "d": "Divides the exponents the wrong way, giving 1/(2 x 6)."
+      }
+    },
+    "sat-readiness-check-math-033": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The expression x² + 10x + 7 can be rewritten as (x + h)² + k, where h and k are constants. What is the value of k?",
+      "options": {
+        "a": "-18",
+        "b": "-3",
+        "c": "7",
+        "d": "32"
+      },
+      "correctOptionId": "a",
+      "explanation": "Complete the square: half of 10 is 5, so (x + 5)² = x² + 10x + 25. To keep the expression equal, subtract 25: x² + 10x + 7 = (x + 5)² - 25 + 7 = (x + 5)² - 18.",
+      "distractorExplanations": {
+        "b": "Subtracts 10 instead of 25, using the coefficient rather than its half squared.",
+        "c": "Assumes the constant term stays the same after completing the square.",
+        "d": "Adds 25 instead of subtracting it to balance the added term."
+      }
+    },
+    "sat-readiness-check-math-034": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "What is the positive solution to x² - 3x - 28 = 0?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "7",
+        "d": "28"
+      },
+      "correctOptionId": "c",
+      "explanation": "Factor: (x - 7)(x + 4) = 0, because -7 x 4 = -28 and -7 + 4 = -3. The solutions are x = 7 and x = -4, so the positive solution is 7.",
+      "distractorExplanations": {
+        "a": "Uses the size of the middle coefficient instead of solving.",
+        "b": "Takes the factor (x + 4) and drops the sign; that solution is -4, which is negative.",
+        "d": "Uses the size of the constant term instead of factoring."
+      }
+    },
+    "sat-readiness-check-math-035": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "What are all the solutions to the equation 2x² - 8 = 0?",
+      "options": {
+        "a": "x = 2 only",
+        "b": "x = -4 and x = 4",
+        "c": "x = √8 only",
+        "d": "x = -2 and x = 2"
+      },
+      "correctOptionId": "d",
+      "explanation": "Add 8 and divide by 2: x² = 4. A positive number has two square roots, so x = 2 or x = -2.",
+      "distractorExplanations": {
+        "a": "Forgets the negative square root; (-2)² = 4 as well.",
+        "b": "Gets x² = 4 but reports 4 as the solutions, forgetting to take the square root.",
+        "c": "Takes the square root of 8 without dividing by 2 first, and misses the negative root."
+      }
+    },
+    "sat-readiness-check-math-036": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "How many distinct real solutions does the equation x² - 6x + 9 = 0 have?",
+      "options": {
+        "a": "Zero",
+        "b": "Exactly one",
+        "c": "Exactly two",
+        "d": "Infinitely many"
+      },
+      "correctOptionId": "b",
+      "explanation": "x² - 6x + 9 = (x - 3)², so the only solution is x = 3. The discriminant confirms it: (-6)² - 4(1)(9) = 0, which means one repeated real root.",
+      "distractorExplanations": {
+        "a": "Zero real solutions requires a negative discriminant, but here it equals 0.",
+        "c": "Two distinct solutions requires a positive discriminant; this is a perfect square.",
+        "d": "A quadratic that is not identically zero has at most two solutions."
+      }
+    }
+  }
+}

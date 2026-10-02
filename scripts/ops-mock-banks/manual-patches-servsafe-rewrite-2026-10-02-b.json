@@ -1,0 +1,616 @@
+{
+  "servsafe-manager-mock": {
+    "servsafe-manager-mock-031": {
+      "difficulty": "medium",
+      "prompt": "A food handler tells the manager she has been diagnosed with Shigella but feels fine. What must the manager do?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Restrict her to dishwashing and away from open food",
+        "b": "Let her work if she wears gloves",
+        "c": "Let her work after one day of antibiotics",
+        "d": "Exclude her and notify the regulatory authority"
+      },
+      "explanation": "Food handlers diagnosed with a Big Six pathogen (norovirus, hepatitis A, Shigella, Shiga toxin-producing E. coli, Salmonella Typhi or nontyphoidal Salmonella) must be excluded from the operation, and the regulatory authority must be notified. Return requires approval as set by the regulatory authority.",
+      "distractorExplanations": {
+        "a": "Restriction is for milder cases such as a sore throat with fever; a Big Six diagnosis requires exclusion.",
+        "b": "Gloves do not make it safe for someone diagnosed with Shigella to work in the operation.",
+        "c": "Starting antibiotics does not clear her to return; the regulatory authority decides when she may come back."
+      }
+    },
+    "servsafe-manager-mock-032": {
+      "difficulty": "medium",
+      "prompt": "A cook was sent home for vomiting and diarrhea. He has no diagnosed illness. When may he return to work?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "As soon as he feels well enough",
+        "b": "After 8 hours without symptoms",
+        "c": "After 24 hours without symptoms",
+        "d": "After 7 days, whatever his symptoms"
+      },
+      "explanation": "Food handlers with vomiting or diarrhea must be excluded. Without a diagnosed Big Six illness, they may return once they have been symptom-free for at least 24 hours or have medical documentation that the symptoms come from a noninfectious condition.",
+      "distractorExplanations": {
+        "a": "Feeling better is not the standard; he can still shed virus after symptoms ease.",
+        "b": "Eight hours is too short; the rule is at least 24 hours symptom-free.",
+        "d": "The return rule is based on being symptom-free, not a fixed 7-day wait."
+      }
+    },
+    "servsafe-manager-mock-033": {
+      "difficulty": "medium",
+      "prompt": "A server has a sore throat with a fever. The restaurant serves the general public, not a high-risk population. What action is required?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Exclude the server from the operation",
+        "b": "Restrict the server from working with food",
+        "c": "No action; sore throats are not covered",
+        "d": "Allow normal work if the server wears a mask"
+      },
+      "explanation": "Restrict food handlers with a sore throat and fever from working with or around food. Exclusion is required only in operations that mainly serve high-risk populations, such as hospitals or nursing homes. A written medical release is needed before the restriction is lifted.",
+      "distractorExplanations": {
+        "a": "Exclusion applies to a sore throat with fever only when the operation mainly serves a high-risk population.",
+        "c": "A sore throat with fever is a reportable symptom that requires restriction.",
+        "d": "A mask does not meet the requirement; the server must be kept away from food."
+      }
+    },
+    "servsafe-manager-mock-034": {
+      "difficulty": "easy",
+      "prompt": "How long should the whole handwashing process take, and how long should hands be scrubbed?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "At least 20 seconds total, scrubbing 10 to 15",
+        "b": "At least 10 seconds total, scrubbing 5",
+        "c": "At least 30 seconds total, with 20 of them rinsing",
+        "d": "At least 60 seconds total, scrubbing 45"
+      },
+      "explanation": "The whole handwashing process takes at least 20 seconds: wet hands and arms with running water at least 100°F, apply soap, scrub hands and arms for 10 to 15 seconds (between fingers and under nails), rinse, and dry with a single-use paper towel or hand dryer.",
+      "distractorExplanations": {
+        "b": "Ten seconds total is too short to scrub and rinse properly.",
+        "c": "The time that matters is scrubbing with soap; a long rinse does not replace it.",
+        "d": "A full minute is not the standard and is impractical during service."
+      }
+    },
+    "servsafe-manager-mock-035": {
+      "difficulty": "medium",
+      "prompt": "After taking out the trash, a cook wants to use hand sanitizer gel instead of washing. What is correct?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Sanitizer is enough if hands look clean",
+        "b": "Use sanitizer, then put on fresh gloves",
+        "c": "Rinse hands with water, then apply sanitizer",
+        "d": "Wash hands first; use sanitizer only after"
+      },
+      "explanation": "Hand antiseptics do not remove dirt or all pathogens; they only supplement handwashing. Taking out garbage requires a full handwash. If the operation uses hand antiseptic, it is applied after washing, and only products that meet FDA standards are used.",
+      "distractorExplanations": {
+        "a": "Hands can carry pathogens without looking dirty, and sanitizer does not replace washing.",
+        "b": "Gloves over unwashed hands become contaminated when they are put on.",
+        "c": "A water rinse without soap and scrubbing is not handwashing."
+      }
+    },
+    "servsafe-manager-mock-036": {
+      "difficulty": "medium",
+      "prompt": "When must a food handler change single-use gloves?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "At the end of each shift and before every break",
+        "b": "After handling raw meat, but not between RTE tasks",
+        "c": "When dirty or torn, between tasks, every 4 hours",
+        "d": "Every 30 minutes, whatever the task is"
+      },
+      "explanation": "Change gloves as soon as they become dirty or torn, before starting a different task, after an interruption such as a phone call, after handling raw meat, seafood or poultry and before handling ready-to-eat food, and after 4 hours of continuous use on the same task.",
+      "distractorExplanations": {
+        "a": "Waiting until the end of a shift ignores torn or dirty gloves and task changes.",
+        "b": "Gloves must also be changed between different ready-to-eat tasks and after interruptions.",
+        "d": "There is no 30-minute rule; the limit for continuous use on one task is 4 hours."
+      }
+    },
+    "servsafe-manager-mock-037": {
+      "difficulty": "easy",
+      "prompt": "Which task requires gloves, tongs or another utensil instead of bare hands?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Washing raw potatoes before they are baked",
+        "b": "Placing lettuce and tomato on a sandwich",
+        "c": "Seasoning raw chicken before roasting",
+        "d": "Breading raw fish before frying"
+      },
+      "explanation": "Bare-hand contact with ready-to-eat food is not allowed unless the regulatory authority has approved an exception. Sandwich toppings will not be cooked again, so they must be handled with gloves, tongs, deli tissue or spatulas. Raw food that will be cooked may be handled with clean bare hands.",
+      "distractorExplanations": {
+        "a": "Raw potatoes will be cooked, so clean bare hands are acceptable.",
+        "c": "Raw chicken will be cooked to 165°F, which controls pathogens from hands.",
+        "d": "Raw fish will be fried, so bare-hand contact is acceptable with clean hands."
+      }
+    },
+    "servsafe-manager-mock-038": {
+      "difficulty": "easy",
+      "prompt": "Which jewelry may a food handler wear on the hands or arms while prepping food?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "A medical alert bracelet",
+        "b": "A smartwatch",
+        "c": "A ring with a small stone",
+        "d": "A plain band ring"
+      },
+      "explanation": "Jewelry can hold pathogens and fall into food. Food handlers remove rings (except a plain band), bracelets including medical ID bracelets, and watches before prepping food. Some operations ban even plain bands, so company policy and local rules apply.",
+      "distractorExplanations": {
+        "a": "Medical ID bracelets must also be removed; the information can be worn on a necklace instead.",
+        "b": "Watches, including smartwatches, must be removed while prepping food.",
+        "c": "Rings with stones trap food and pathogens; only a plain band is allowed."
+      }
+    },
+    "servsafe-manager-mock-039": {
+      "difficulty": "medium",
+      "prompt": "A prep cook has a cut on her finger. How should it be handled before she continues prepping salad?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Cover it with an impermeable bandage and a glove",
+        "b": "Cover it with a cloth bandage and keep working",
+        "c": "Clean it with sanitizer and leave it uncovered",
+        "d": "Move her to raw meat prep, where gloves are not needed"
+      },
+      "explanation": "A wound on the hand or wrist must be covered with an impermeable cover, such as a finger cot or bandage, and then a single-use glove. A wound on the arm needs an impermeable cover. If an infected wound cannot be covered, the food handler must be restricted.",
+      "distractorExplanations": {
+        "b": "Cloth bandages absorb fluid and are not impermeable.",
+        "c": "An open cut must be covered; sanitizer does not prevent contamination from the wound.",
+        "d": "A hand wound needs an impermeable cover and a glove for any food prep."
+      }
+    },
+    "servsafe-manager-mock-040": {
+      "difficulty": "easy",
+      "prompt": "A cook trims raw chicken on a cutting board and next needs to slice tomatoes for salads. What must happen first?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Wipe the board down well with a clean dry towel",
+        "b": "Flip the board and use the other side",
+        "c": "Clean and sanitize the board, or use another one",
+        "d": "Rinse the board thoroughly under hot running water"
+      },
+      "explanation": "To prevent cross-contamination, use separate equipment for raw meat and ready-to-eat food, or wash, rinse and sanitize equipment between tasks. Prepping ready-to-eat food before raw food also reduces risk. A rinse or a wipe does not remove or kill pathogens.",
+      "distractorExplanations": {
+        "a": "Wiping moves pathogens around but does not remove or kill them.",
+        "b": "Juices from raw chicken can reach both sides, and the board was not cleaned.",
+        "d": "Rinsing without washing and sanitizing leaves pathogens on the board."
+      }
+    },
+    "servsafe-manager-mock-041": {
+      "difficulty": "easy",
+      "prompt": "A cook wants to keep a drink nearby during a busy shift. Which practice is acceptable?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "An open cup on the prep table",
+        "b": "A covered cup with a straw, away from food",
+        "c": "Any cup, if hands are washed after drinking",
+        "d": "An open cup on the shelf above the prep table"
+      },
+      "explanation": "Food handlers eat, drink, smoke and chew gum only in designated areas away from food prep, equipment and service. In prep areas, a drink must be in a covered container handled to prevent contamination, such as one with a lid and straw.",
+      "distractorExplanations": {
+        "a": "An open cup on the prep table can spill and transfer saliva to food and surfaces.",
+        "c": "Handwashing does not stop spills or saliva from an open cup near food.",
+        "d": "A cup above the prep table can drip or spill straight onto food below."
+      }
+    },
+    "servsafe-manager-mock-042": {
+      "difficulty": "easy",
+      "prompt": "A cook leaves the line to take out the garbage. What should he do with his apron?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Wipe it off when he comes back",
+        "b": "Turn it around so the clean side faces out",
+        "c": "Keep it on, since aprons are washed nightly",
+        "d": "Take it off before leaving the prep area"
+      },
+      "explanation": "Aprons are removed when leaving prep areas, such as before taking out garbage or using the restroom, so pathogens are not carried back to food. Food handlers also wear clean clothing and a hair restraint, and change dirty aprons.",
+      "distractorExplanations": {
+        "a": "Wiping does not remove pathogens picked up from garbage.",
+        "b": "Turning the apron around still brings the contaminated apron back into prep.",
+        "c": "Nightly washing does not help if the apron is contaminated mid-shift."
+      }
+    },
+    "servsafe-manager-mock-043": {
+      "difficulty": "medium",
+      "prompt": "A ticket is marked 'peanut allergy.' Which food handler practice best prevents cross-contact?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Wash hands, change gloves, use sanitized tools",
+        "b": "Wipe the prep surface with a dry towel",
+        "c": "Use the same tongs after shaking off crumbs",
+        "d": "Prep it right after the peanut dish to save time"
+      },
+      "explanation": "To prevent allergen cross-contact, wash hands and change gloves before prepping the order, use equipment that has been washed, rinsed and sanitized (or is dedicated to allergen-safe prep), and keep the food away from allergen-containing items. Many operations use purple allergen-safe tools.",
+      "distractorExplanations": {
+        "b": "A dry wipe leaves allergen proteins on the surface.",
+        "c": "Shaking tongs does not remove peanut protein.",
+        "d": "Prepping it right after the peanut dish increases the risk of cross-contact."
+      }
+    },
+    "servsafe-manager-mock-044": {
+      "difficulty": "easy",
+      "prompt": "How should a bartender scoop ice for drinks?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "With a sturdy glass to save time",
+        "b": "With freshly washed bare hands",
+        "c": "With a clean scoop kept outside the ice",
+        "d": "With the scoop left standing in the ice bin"
+      },
+      "explanation": "Ice used in drinks is ready-to-eat food. Use clean scoops or tongs, store the scoop outside the ice in a clean container, and do not use a glass, which can chip or break into the ice. Ice used to cool food may not be used in drinks.",
+      "distractorExplanations": {
+        "a": "A glass can chip or break, leaving glass in the ice.",
+        "b": "Ice for drinks is ready-to-eat, so bare-hand contact is not allowed.",
+        "d": "A scoop stored in the ice lets the handle and hands contaminate the ice."
+      }
+    },
+    "servsafe-manager-mock-045": {
+      "difficulty": "easy",
+      "prompt": "A food handler wearing nail polish wants to work on the prep line. What is the rule?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Polish is fine as long as it is clear",
+        "b": "Polish is allowed only under single-use gloves",
+        "c": "False nails are fine if they are trimmed very short",
+        "d": "Polish is allowed on one hand only"
+      },
+      "explanation": "Fingernails should be short, clean and unpolished. Nail polish can flake into food, and false nails are hard to keep clean and can break off. Food handlers may not wear either while handling food unless they wear single-use gloves.",
+      "distractorExplanations": {
+        "a": "Clear polish can still chip into food; the rule does not depend on color.",
+        "c": "Short false nails can still break off and are hard to clean, so gloves are required.",
+        "d": "There is no one-hand exception; gloves are required on any polished hand."
+      }
+    },
+    "servsafe-manager-mock-046": {
+      "difficulty": "easy",
+      "prompt": "A dishwasher sprays sanitizer on a cutting board that still has dried egg on it. Why won't this work?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Sanitizer works only on stainless steel",
+        "b": "The board must be heated to 171°F first",
+        "c": "Sanitizer must be wiped off at once with a towel",
+        "d": "Food soil shields pathogens; clean first"
+      },
+      "explanation": "Cleaning removes food and dirt from a surface; sanitizing reduces pathogens on a clean surface to safe levels. Food residue shields pathogens and weakens many sanitizers, so surfaces are scraped, washed, rinsed, then sanitized and air-dried.",
+      "distractorExplanations": {
+        "a": "Chemical sanitizers work on many food-contact materials, including plastic boards.",
+        "b": "171°F is the hot-water sanitizing temperature in a three-compartment sink, not a step before chemical sanitizing.",
+        "c": "Sanitizer must stay on for its contact time, and items should air-dry, not be towel-dried."
+      }
+    },
+    "servsafe-manager-mock-047": {
+      "difficulty": "easy",
+      "prompt": "What is the correct order for cleaning items in a three-compartment sink?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Wash, rinse, sanitize, then towel-dry with a clean cloth",
+        "b": "Scrape, wash, rinse, sanitize, air-dry",
+        "c": "Rinse, sanitize, wash, air-dry",
+        "d": "Scrape, sanitize, wash, rinse, air-dry"
+      },
+      "explanation": "Rinse, scrape or soak items first; wash them in detergent solution at least 110°F; rinse in clean water; sanitize by immersion in hot water or chemical sanitizer for the required time; then air-dry. Towel drying can recontaminate items.",
+      "distractorExplanations": {
+        "a": "Towel drying can recontaminate clean items; they must air-dry, and scraping comes first.",
+        "c": "Items must be washed before they are sanitized.",
+        "d": "Sanitizing a dirty item does not work; washing and rinsing come first."
+      }
+    },
+    "servsafe-manager-mock-048": {
+      "difficulty": "medium",
+      "prompt": "A three-compartment sink uses hot water instead of chemicals to sanitize. What must the sanitizing water reach?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "135°F for 15 seconds",
+        "b": "165°F for 15 seconds",
+        "c": "171°F for 30 seconds",
+        "d": "212°F for 1 second"
+      },
+      "explanation": "For hot-water sanitizing in a three-compartment sink, items are soaked in water at least 171°F (77°C) for 30 seconds. In high-temperature dishwashers, the final sanitizing rinse must be at least 180°F (165°F for stationary-rack, single-temperature machines).",
+      "distractorExplanations": {
+        "a": "135°F is the hot-holding minimum, far too low to sanitize.",
+        "b": "165°F for 15 seconds is the reheating rule for food, not the sink sanitizing rule.",
+        "d": "The standard is 171°F for 30 seconds, not boiling water for 1 second."
+      }
+    },
+    "servsafe-manager-mock-049": {
+      "difficulty": "medium",
+      "prompt": "A test strip shows the chlorine sanitizer bucket is at 10 ppm. What should staff do?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Remake it within the label range (50–99 ppm)",
+        "b": "Keep using it; any chlorine level works",
+        "c": "Add very hot water to raise its sanitizing strength",
+        "d": "Add detergent to boost its cleaning power"
+      },
+      "explanation": "Too little sanitizer will not reduce pathogens; too much can be toxic and corrode surfaces. Chlorine is typically effective at 50–99 ppm with at least 7 seconds of contact, but always follow the manufacturer's label and use the correct test kit. Detergent and food residue weaken sanitizer.",
+      "distractorExplanations": {
+        "b": "Below the label range, chlorine does not reliably reduce pathogens.",
+        "c": "Adding water dilutes the solution further and lowers the ppm.",
+        "d": "Detergent reacts with sanitizer and makes it less effective."
+      }
+    },
+    "servsafe-manager-mock-050": {
+      "difficulty": "medium",
+      "prompt": "A quat sanitizer label requires 30 seconds of contact time. A cook sprays a counter and wipes it dry right away. What is the problem?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Quats must be rinsed off with hot water",
+        "b": "Quats work only in water at 171°F",
+        "c": "The counter needed detergent after the quat",
+        "d": "The counter did not stay wet long enough"
+      },
+      "explanation": "Contact time is how long a sanitizer must stay on a surface to reduce pathogens. Concentration, water temperature, pH and water hardness also affect sanitizers. Quats typically need about 30 seconds of contact; wiping the surface dry early leaves pathogens alive.",
+      "distractorExplanations": {
+        "a": "Food-contact sanitizers at label strength are left to air-dry, not rinsed off.",
+        "b": "171°F is the hot-water sanitizing temperature; quats work at normal water temperatures on the label.",
+        "c": "Detergent goes on before sanitizing, during cleaning, not after."
+      }
+    },
+    "servsafe-manager-mock-051": {
+      "difficulty": "medium",
+      "prompt": "A deli slicer is used for turkey all afternoon without a break. How often must it be cleaned and sanitized?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "At least every 4 hours",
+        "b": "At least every 6 hours",
+        "c": "At least every 8 hours",
+        "d": "Once, at closing time"
+      },
+      "explanation": "Food-contact surfaces must be cleaned and sanitized after each use, before working with a different type of food, after interruptions, and at least every 4 hours when in constant use. Slicers are taken apart, washed, rinsed and sanitized, then reassembled.",
+      "distractorExplanations": {
+        "b": "Six hours is longer than the 4-hour limit for equipment in constant use.",
+        "c": "Eight hours is twice the allowed interval.",
+        "d": "A slicer in constant use cannot wait until closing."
+      }
+    },
+    "servsafe-manager-mock-052": {
+      "difficulty": "easy",
+      "prompt": "Where should wet wiping cloths used on counters be kept between uses?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Over the cook's shoulder for quick reach",
+        "b": "In sanitizer solution at the right strength",
+        "c": "On the counter right next to the cutting board",
+        "d": "In a dry bin under the prep table"
+      },
+      "explanation": "Wet wiping cloths are stored in sanitizer solution at the required concentration between uses, and the solution is changed regularly. Cloths used for raw animal food are kept separate. Dry cloths used for wiping spills must stay dry and free of food debris.",
+      "distractorExplanations": {
+        "a": "Cloths on shoulders touch clothing and hair and carry pathogens to surfaces.",
+        "c": "A damp cloth left on the counter grows pathogens and contaminates the surface.",
+        "d": "Wet cloths left in a dry bin grow pathogens; they belong in sanitizer solution."
+      }
+    },
+    "servsafe-manager-mock-053": {
+      "difficulty": "medium",
+      "prompt": "In a walk-in cooler, which top-to-bottom shelf order is correct?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Poultry, ground beef, whole beef, seafood, ready-to-eat",
+        "b": "Seafood, ready-to-eat, poultry, ground beef, whole beef",
+        "c": "Ground beef, poultry, ready-to-eat, seafood, whole beef",
+        "d": "Ready-to-eat, seafood, whole beef, ground beef, poultry"
+      },
+      "explanation": "Store food top to bottom by minimum internal cooking temperature: ready-to-eat food on top, then seafood (145°F), whole cuts of beef and pork (145°F), ground meat and ground fish (155°F), and whole or ground poultry (165°F) on the bottom, so drips fall only on food cooked hotter.",
+      "distractorExplanations": {
+        "a": "This is the order upside down; poultry juices would drip onto ready-to-eat food.",
+        "b": "Ready-to-eat food goes on the top shelf, not under raw seafood.",
+        "c": "Ground beef and poultry above ready-to-eat food can drip onto it."
+      }
+    },
+    "servsafe-manager-mock-054": {
+      "difficulty": "easy",
+      "prompt": "How far off the floor must food be stored?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "At least 2 inches",
+        "b": "At least 4 inches",
+        "c": "At least 6 inches",
+        "d": "At least 12 inches"
+      },
+      "explanation": "Store food at least 6 inches (15 cm) off the floor and away from walls, in a clean, dry location. This allows cleaning and pest inspection and keeps food away from splashes and floor contamination.",
+      "distractorExplanations": {
+        "a": "Two inches is too low to clean under and inspect for pests.",
+        "b": "Four inches is the equipment leg height for some tabletop equipment, not the food storage rule.",
+        "d": "Twelve inches is more than required; the Food Code minimum is 6 inches."
+      }
+    },
+    "servsafe-manager-mock-055": {
+      "difficulty": "hard",
+      "prompt": "Chicken salad is made in-house on October 6 and held at 41°F. What is the last day it may be served?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "October 11",
+        "b": "October 12",
+        "c": "October 13",
+        "d": "October 14"
+      },
+      "explanation": "Ready-to-eat TCS food prepared in-house and held more than 24 hours must be date-marked. It may be stored for up to 7 days at 41°F or lower, and the day of preparation counts as day 1: October 6 is day 1, so October 12 is day 7, the last day it may be served.",
+      "distractorExplanations": {
+        "a": "October 11 is only day 6; the salad may still be served on day 7.",
+        "c": "October 13 is day 8, because the day of preparation counts as day 1.",
+        "d": "October 14 is day 9, two days past the 7-day limit."
+      }
+    },
+    "servsafe-manager-mock-056": {
+      "difficulty": "easy",
+      "prompt": "A delivery of fresh chicken arrives, and the probe reads 48°F. What should the receiver do?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Reject it; it must arrive at 41°F or lower",
+        "b": "Accept it and move it to the freezer now",
+        "c": "Accept it; 48°F is within poultry receiving limits",
+        "d": "Accept it as long as it smells normal"
+      },
+      "explanation": "Cold TCS food must be received at 41°F or lower unless otherwise specified (live shellfish, milk and shell eggs have their own rules). Chicken at 48°F has been temperature-abused and must be rejected; freezing it does not undo the abuse.",
+      "distractorExplanations": {
+        "b": "Freezing stops growth but does not undo pathogen growth that already happened.",
+        "c": "The receiving limit for cold TCS food such as chicken is 41°F, not 48°F.",
+        "d": "Pathogens do not change how food smells, so smell cannot clear abused chicken."
+      }
+    },
+    "servsafe-manager-mock-057": {
+      "difficulty": "medium",
+      "prompt": "How long must shellstock identification tags for live oysters be kept on file?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "30 days after the last oyster is served",
+        "b": "60 days after the last oyster is served",
+        "c": "90 days after the last oyster is served",
+        "d": "365 days after the last oyster is served"
+      },
+      "explanation": "Shellstock tags record where and when live shellfish were harvested, so regulators can trace an outbreak. Keep tags on the container until the last shellfish is used, then keep them on file for 90 days from the date the last shellfish was sold or served.",
+      "distractorExplanations": {
+        "a": "Thirty days is too short; illnesses such as hepatitis A can take weeks to show and be traced.",
+        "b": "Sixty days is short of the 90-day requirement.",
+        "d": "A full year is more than the Food Code requires; the rule is 90 days."
+      }
+    },
+    "servsafe-manager-mock-058": {
+      "difficulty": "hard",
+      "prompt": "At what air temperature may live oysters be received?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "41°F or lower",
+        "b": "45°F or lower",
+        "c": "50°F or lower",
+        "d": "55°F or lower"
+      },
+      "explanation": "Live shellfish are received at an air temperature of 45°F or lower and an internal temperature no higher than 50°F. Once received, they must be cooled to 41°F or lower within 4 hours. Shucked shellfish and milk are also received at 45°F or lower.",
+      "distractorExplanations": {
+        "a": "41°F is the general receiving rule for cold TCS food; live shellfish have a 45°F air-temperature exception.",
+        "c": "50°F is the maximum internal temperature for live shellfish, not the air temperature.",
+        "d": "55°F is above both shellfish receiving limits."
+      }
+    },
+    "servsafe-manager-mock-059": {
+      "difficulty": "medium",
+      "prompt": "Which sign means a case of frozen shrimp should be rejected?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The shrimp are frozen solid",
+        "b": "The case arrives with a product temperature of 0°F",
+        "c": "The label lists the packer's name",
+        "d": "Large ice crystals and water stains"
+      },
+      "explanation": "Frozen food should arrive frozen solid. Large ice crystals, frozen liquid in the packaging, or water stains on the case are signs of thawing and refreezing, which means the food was time-temperature abused and must be rejected.",
+      "distractorExplanations": {
+        "a": "Frozen solid is what a receiver wants to see.",
+        "b": "0°F is a normal temperature for frozen food.",
+        "c": "A packer's name is normal labeling, not a sign of abuse."
+      }
+    },
+    "servsafe-manager-mock-060": {
+      "difficulty": "easy",
+      "prompt": "Which canned item should be rejected at receiving?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "A can with a slightly dusty label",
+        "b": "A can with a use-by date two years away",
+        "c": "A can with a swollen end",
+        "d": "A can delivered in a sealed case"
+      },
+      "explanation": "Reject cans with swollen ends, leaks, rust, missing labels or deep dents, especially along the seams. Swelling can mean gas from Clostridium botulinum growth. Approved suppliers and careful receiving keep damaged cans out of storage.",
+      "distractorExplanations": {
+        "a": "A dusty label is cosmetic; the can should be inspected for swelling, leaks, rust and dents.",
+        "b": "A distant use-by date is normal for canned food.",
+        "d": "A sealed case is how canned goods should arrive."
+      }
+    },
+    "servsafe-manager-mock-061": {
+      "difficulty": "easy",
+      "prompt": "Where should cleaning chemicals be stored?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Below and away from food, in labeled containers",
+        "b": "On a shelf above the prep table for quick access",
+        "c": "In unlabeled spray bottles near the dish area",
+        "d": "In rinsed-out food containers to save space"
+      },
+      "explanation": "Store chemicals in their original containers, or in working containers labeled with the chemical's common name, in a separate area away from and below food, equipment, utensils and single-use items. Never store chemicals in food containers or food in chemical containers.",
+      "distractorExplanations": {
+        "b": "Chemicals above prep tables can drip or spill onto food.",
+        "c": "Working containers must be labeled with the chemical's common name.",
+        "d": "Chemicals in food containers can be mistaken for food."
+      }
+    },
+    "servsafe-manager-mock-062": {
+      "difficulty": "easy",
+      "prompt": "An employee splashes degreaser into her eye. Where can the manager quickly find first-aid steps for this chemical?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The HACCP plan",
+        "b": "The master cleaning schedule",
+        "c": "The supplier's invoice",
+        "d": "The Safety Data Sheet (SDS)"
+      },
+      "explanation": "Safety Data Sheets (SDS) describe a chemical's hazards, safe handling, storage, required protective equipment and first-aid steps. OSHA requires employers to keep an SDS for each hazardous chemical and make it available to employees.",
+      "distractorExplanations": {
+        "a": "A HACCP plan covers food-safety hazards and critical control points, not chemical first aid.",
+        "b": "A cleaning schedule lists what to clean, when and how, not chemical first-aid steps.",
+        "c": "An invoice shows prices and quantities, not safety information."
+      }
+    },
+    "servsafe-manager-mock-063": {
+      "difficulty": "medium",
+      "prompt": "What is the only completely reliable way to prevent backflow into the drinkable water supply?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A vacuum breaker",
+        "b": "An air gap",
+        "c": "A floor drain",
+        "d": "A grease trap"
+      },
+      "explanation": "Backflow is the reverse flow of contaminants into the drinkable water supply through a cross-connection. An air gap, the air space between a water outlet and the flood rim of a sink, is the only completely reliable method; vacuum breakers are mechanical devices that can fail.",
+      "distractorExplanations": {
+        "a": "Vacuum breakers help prevent backflow but are mechanical and can fail.",
+        "c": "A floor drain carries wastewater away; it does not protect the water supply.",
+        "d": "A grease trap keeps grease out of the sewer; it does not prevent backflow."
+      }
+    },
+    "servsafe-manager-mock-064": {
+      "difficulty": "medium",
+      "prompt": "Which sign most strongly suggests a cockroach infestation?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Gnaw marks and shredded-paper nests",
+        "b": "Grease rub marks and tracks in dust",
+        "c": "An oily odor and pepper-like droppings",
+        "d": "Small holes and silky webbing in the flour bags"
+      },
+      "explanation": "Cockroach signs include a strong oily odor, droppings that look like grains of black pepper, and capsule-shaped egg cases. Gnaw marks, shredded-paper nests, grease rub marks and tracks point to rodents. Report any signs to the licensed pest control operator.",
+      "distractorExplanations": {
+        "a": "Gnaw marks and shredded-paper nests are signs of rodents.",
+        "b": "Grease rub marks and tracks in dust are also rodent signs.",
+        "d": "Holes and webbing in flour usually mean pantry moths or other stored-product insects."
+      }
+    },
+    "servsafe-manager-mock-065": {
+      "difficulty": "medium",
+      "prompt": "Staff find mouse droppings in dry storage. What is the manager's best action?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Call the licensed pest control operator",
+        "b": "Have staff spray a store-bought pesticide",
+        "c": "Set poison bait right next to the food",
+        "d": "Clean up the droppings and move on"
+      },
+      "explanation": "Integrated pest management means denying pests access (sealing gaps, inspecting deliveries), denying them food and shelter (cleaning, storing food properly, removing garbage), and working with a licensed pest control operator. Only licensed operators should apply pesticides.",
+      "distractorExplanations": {
+        "b": "Staff should not apply pesticides; misuse can contaminate food.",
+        "c": "Poison bait near food risks chemical contamination and is applied only by licensed operators.",
+        "d": "Cleaning alone ignores the infestation and the entry points behind it."
+      }
+    },
+    "servsafe-manager-mock-066": {
+      "difficulty": "easy",
+      "prompt": "Where should dirty mop water be dumped?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "In the handwashing sink",
+        "b": "In the food-prep sink once service has ended",
+        "c": "In the three-compartment sink",
+        "d": "In a service sink or curbed floor drain"
+      },
+      "explanation": "Mop water and other wastewater go into a service sink or a curbed cleaning area with a floor drain, never into handwashing, food-prep or dishwashing sinks. This keeps wastewater from contaminating surfaces used for food or hands.",
+      "distractorExplanations": {
+        "a": "Handwashing sinks are only for washing hands.",
+        "b": "Prep sinks are used for food; dumping mop water there contaminates them even after closing.",
+        "c": "The three-compartment sink is used for cleaning tableware and utensils."
+      }
+    }
+  }
+}

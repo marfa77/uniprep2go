@@ -16,6 +16,7 @@ import {
   getPricedDeckBySlug,
   type PricedDeck,
 } from "@/lib/checkout-pricing";
+import { MOCK_ACCESS_SHORT } from "@/lib/mock-exams/mock-pass";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary, btnQuiet } from "@/lib/ui-button-classes";
 
@@ -203,6 +204,9 @@ function CtaBand({
           </Link>
         )}
       </div>
+      {post.mockSlug && post.cta.mockLabel ? (
+        <p className="mt-3 text-xs leading-5 text-[#5f5749]">{MOCK_ACCESS_SHORT}</p>
+      ) : null}
       {deck?.checkoutUrl ? (
         <p className="mt-4">
           <Link className={btnQuiet} href={`/decks/${post.deckSlug}`}>

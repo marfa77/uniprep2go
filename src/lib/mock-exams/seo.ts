@@ -1,7 +1,14 @@
 import type { MockExamConfig } from "./types";
 import { getNicheExamExplainer } from "./niche-exam-explainers";
 import { getMockOfficialResources } from "./official-resources";
-import { mockFreeAccessNotice, mockFreeAccessPriceLabel, mockFunnelNoticeForLinkedDeck } from "./pricing";
+import { mockFreeAccessNotice, mockFunnelNoticeForLinkedDeck } from "./pricing";
+import {
+  MOCK_ACCESS_RULE,
+  MOCK_PASS_ATTEMPTS,
+  MOCK_PASS_NAME,
+  MOCK_PASS_PRICE_USD,
+} from "./mock-pass";
+import { withMockAccessDisclosure } from "./mock-access-faq";
 import { getDeckBySlug } from "../decks";
 import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
@@ -74,8 +81,8 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
   return {
     title: `Free ${practiceName} 2026 | ${config.questionCount} Questions Online`,
     description: niche
-      ? `Free ${practiceName.toLowerCase()}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, and answer review. ${niche.administeredBy}. Independent prep — not official exam material.`
-      : `Take a free online ${examLabel} ${type}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, answer review, and pass/no-pass report. Independent prep — not official exam material.`,
+      ? `${practiceName}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, and answer review — first mock free, no signup. ${niche.administeredBy}. Independent prep — not official exam material.`
+      : `Online ${examLabel} ${type}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, answer review, and pass/no-pass report — first mock free, no signup. Independent prep — not official exam material.`,
     keywords: [
       ...(niche?.keywords ?? []),
       `free ${config.shortTitle.toLowerCase()} practice test`,
@@ -84,7 +91,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
       ...aliasKeywords,
     ].slice(0, 12),
     headline: `Free ${practiceName}`,
-    intro: `${config.description} Use this free timed ${type} as a baseline before exam day or before drilling the linked Anki deck.`,
+    intro: `${config.description} Use this timed ${type} as a baseline before exam day or before drilling the linked Anki deck — your first mock is free.`,
     audience:
       niche?.whoFor ??
       (niche
@@ -105,7 +112,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     // CTR pattern: Prep2Go (exam + concrete need + year) + PixID (specific offer in blue link)
     title: "SIE Practice Test Free 2026 | 75Q Timed, No Signup",
     description:
-      "Free SIE practice test online — no signup: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Then repair weak domains with the $11 / 300-card SIE Anki deck. Independent — not official FINRA material.",
+      "SIE practice test online — first mock free, no signup: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Then repair weak domains with the $11 / 300-card SIE Anki deck. Independent — not official FINRA material.",
     keywords: [
       "free sie practice test",
       "sie practice test",
@@ -117,7 +124,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free SIE Practice Test — 75 Questions, Timed",
     intro:
-      "A 75-question FINRA SIE diagnostic modeled on the scored portion of the official exam (the official SIE is 80 items — 75 scored + 5 unscored pretest — in 105 minutes). This mock runs 75 questions in 105 minutes with a UniPrep2Go readiness target of 70% (the official FINRA passing score is 70 on an equated scale, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
+      "A 75-question FINRA SIE diagnostic modeled on the scored portion of the official exam (the official SIE is 80 items — 75 scored + 5 unscored pretest — in 105 minutes). This mock runs 75 questions in 105 minutes with a UniPrep2Go readiness target of 70% (the official FINRA passing score is 70 on an equated scale, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — your first mock is free, start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
     audience:
       "SIE candidates, finance students, and career changers entering brokerage and securities roles who need a timed baseline before paying for a prep course.",
     practiceTestLabel: "FINRA SIE practice test",
@@ -125,7 +132,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "servsafe-manager-mock": {
     title: "Free ServSafe Manager Practice Test 2026 | 90-Question Mock Exam",
     description:
-      "Free ServSafe Manager practice test — no signup: 90 timed questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target, food-safety topic scoring — then repair with the linked $19 / 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours. Independent — not NRA/ServSafe material.",
+      "ServSafe Manager practice test — first mock free, no signup: 90 timed questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target, food-safety topic scoring — then repair with the linked $19 / 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours. Independent — not NRA/ServSafe material.",
     keywords: [
       "servsafe manager practice test",
       "servsafe manager mock exam",
@@ -163,7 +170,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nha-excpt-readiness-check": {
     title: "Free NHA ExCPT Practice Test | 60 Questions Online",
     description:
-      "Free NHA ExCPT pharmacy technician practice test: 60 timed questions, 75 minutes, domain scoring for pharmacology, federal law, order entry, and dispensing — full answer review, no signup, no 20-question paywall. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
+      "Free NHA ExCPT pharmacy technician practice test: 60 timed questions, 75 minutes, domain scoring for pharmacology, federal law, order entry, and dispensing — full answer review — first mock free in full (no signup, no 20-question tease), then $5 for 5 attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
     keywords: [
       "free nha excpt practice test",
       "nha excpt practice test",
@@ -174,7 +181,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free NHA ExCPT Pharmacy Technician Practice Test",
     intro:
-      "A timed ExCPT-pathway diagnostic with domain scoring — pharmacology, federal requirements, order entry, and dispensing practice — built for candidates who chose NHA rather than PTCB. No signup; full answer review after you finish. Independent prep — not retired NHA items.",
+      "A timed ExCPT-pathway diagnostic with domain scoring — pharmacology, federal requirements, order entry, and dispensing practice — built for candidates who chose NHA rather than PTCB. First mock free, no signup; full answer review after you finish. Independent prep — not retired NHA items.",
     audience:
       "Pharmacy technician candidates targeting NHA ExCPT (not PTCB PTCE) who want a free timed baseline with topic scoring before paying for a question bank.",
     practiceTestLabel: "NHA ExCPT practice test",
@@ -199,7 +206,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-7-readiness-check": {
     title: "Series 7 Practice Test 2026 | Free 60Q Timed Online",
     description:
-      "Free Series 7 practice test — no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
+      "Series 7 practice test — first mock free, no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
     keywords: [
       "series 7 practice test",
       "free series 7 practice test",
@@ -305,7 +312,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "life-and-health-insurance-readiness-check": {
     title: "Life & Health Insurance Practice Test 2026 | Free 60Q",
     description:
-      "Free Life & Health insurance practice test — no signup: 60 timed questions, 90 minutes, 70% target, topic scoring, and full answer review. Pairs with 400-card Anki deck. Independent prep — not official state exam material.",
+      "Life & Health insurance practice test — first mock free, no signup: 60 timed questions, 90 minutes, 70% target, topic scoring, and full answer review. Pairs with 400-card Anki deck. Independent prep — not official state exam material.",
     keywords: [
       "life and health insurance practice test",
       "free life and health insurance practice test",
@@ -316,7 +323,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Life & Health Insurance Practice Test — 60 Questions",
     intro:
-      "A Life & Health insurance licensing practice test built from UniPrep2Go deck content — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic with topic scoring — no signup. Drill weak areas in the 400-card Life & Health Anki deck between sittings.",
+      "A Life & Health insurance licensing practice test built from UniPrep2Go deck content — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic with topic scoring — first mock free, no signup. Drill weak areas in the 400-card Life & Health Anki deck between sittings.",
     audience: "Insurance producer candidates preparing for state Life & Health licensing exams.",
     practiceTestLabel: "Life & Health insurance practice test",
   },
@@ -341,7 +348,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-63-readiness-check": {
     title: "Series 63 Practice Test 2026 | Free 60Q NASAA",
     description:
-      "Free Series 63 practice test — no signup: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic readiness scoring — then fix weak law rows before the state sit. Independent — not official NASAA material.",
+      "Series 63 practice test — first mock free, no signup: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic readiness scoring — then fix weak law rows before the state sit. Independent — not official NASAA material.",
     keywords: [
       "series 63 practice test",
       "free series 63 practice test",
@@ -353,7 +360,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Series 63 Practice Test — 60 Questions",
     intro:
-      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic with a readiness report — no signup — then repair only your weak law rows.",
+      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic with a readiness report — first mock free, no signup — then repair only your weak law rows.",
     audience: "Series 63 candidates who need a timed diagnostic after SIE and Series 7 prep.",
     practiceTestLabel: "Series 63 practice test",
   },
@@ -434,7 +441,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "gre-readiness-check": {
     title: "Free GRE Practice Test | 30-Question Mock",
     description:
-      "Free GRE General practice — no signup: 30 timed questions (15 Verbal + 15 Quant), 45 minutes, both sections must clear 70% readiness — then waitlist for the planned 350-card Anki. Official shorter GRE is ~1h58 with 27V+27Q; this check is a diagnostic, not PowerPrep. Independent — not ETS material.",
+      "GRE General practice — first mock free, no signup: 30 timed questions (15 Verbal + 15 Quant), 45 minutes, both sections must clear 70% readiness — then waitlist for the planned 350-card Anki. Official shorter GRE is ~1h58 with 27V+27Q; this check is a diagnostic, not PowerPrep. Independent — not ETS material.",
     keywords: [
       "gre practice test",
       "gre mock exam",
@@ -512,7 +519,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nha-cbcs-readiness-check": {
     title: "Free NHA CBCS Practice Test 2026 | 60-Question Billing & Coding Mock",
     description:
-      "Free NHA CBCS practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Independent — not NHA material. Not AAPC CPC.",
+      "NHA CBCS practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Independent — not NHA material. Not AAPC CPC.",
     keywords: [
       "nha cbcs practice test",
       "free nha cbcs practice test",
@@ -531,7 +538,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cosmetology-state-readiness-check": {
     title: "Free Cosmetology Practice Test 2026 | 60Q NIC Theory Mock",
     description:
-      "Free cosmetology state-board practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes; state CIBs vary. Independent — not NIC/PSI material.",
+      "Cosmetology state-board practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes; state CIBs vary. Independent — not NIC/PSI material.",
     keywords: [
       "cosmetology practice test",
       "free cosmetology practice test",
@@ -550,7 +557,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cdl-general-knowledge-readiness-check": {
     title: "Free CDL General Knowledge Practice Test 2026 | 60Q Mock",
     description:
-      "Free CDL General Knowledge practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Most state GK forms are ~50Q / 80%; this is a longer diagnostic. Independent — not a DMV/FMCSA exam.",
+      "CDL General Knowledge practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Most state GK forms are ~50Q / 80%; this is a longer diagnostic. Independent — not a DMV/FMCSA exam.",
     keywords: [
       "cdl general knowledge practice test",
       "free cdl practice test",
@@ -569,7 +576,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "armed-security-officer-readiness-check": {
     title: "Free Armed Security Practice Test 2026 | 60Q Written Mock",
     description:
-      "Free armed security officer practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. State-specific (≠ unarmed card; range qualification separate). Independent — not a state board exam.",
+      "Armed security officer practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. State-specific (≠ unarmed card; range qualification separate). Independent — not a state board exam.",
     keywords: [
       "armed security practice test",
       "free armed security guard exam",
@@ -587,7 +594,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "veterinary-assistant-readiness-check": {
     title: "Free Veterinary Assistant Practice Test 2026 | 60Q AVA Mock",
     description:
-      "Free veterinary assistant / AVA-style practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
+      "Veterinary assistant / AVA-style practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
     keywords: [
       "veterinary assistant practice test",
       "navta ava practice test",
@@ -605,7 +612,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "medical-scribe-readiness-check": {
     title: "Free Medical Scribe Practice Test 2026 | 60Q Timed Mock",
     description:
-      "Free medical scribe practice test — no signup: 60 timed questions, 75 minutes, 70% readiness target across documentation, terminology, EHR workflow, and HIPAA — then waitlist for the planned 60-card Anki. AHDPG MSCE is 100Q / 75 min / 80%. Independent — not AHDPG or ACMSS material. Not CCMA or CMA.",
+      "Medical scribe practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target across documentation, terminology, EHR workflow, and HIPAA — then waitlist for the planned 60-card Anki. AHDPG MSCE is 100Q / 75 min / 80%. Independent — not AHDPG or ACMSS material. Not CCMA or CMA.",
     keywords: [
       "medical scribe practice test",
       "free medical scribe practice test",
@@ -1225,13 +1232,21 @@ export function buildMockSearchFaqs(config: MockExamConfig) {
   const waitlist = config.status === "coming_soon";
 
   return [
-    ...examFaqs,
+    ...withMockAccessDisclosure(examFaqs),
     {
       question: `Is there a free ${profile.practiceTestLabel}?`,
       answer: waitlist
         ? `A free ${profile.practiceTestLabel} is coming soon on ${siteConfig.name}: planned ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, and topic scoring. Use Notify me when this launches on this page.`
-        : `Yes — ${siteConfig.name} hosts a free online ${profile.practiceTestLabel} with ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. ${mockFreeAccessPriceLabel}.`,
+        : `Yes — your first ${siteConfig.name} mock is free, and it can be this one: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. The free attempt covers any one mock in Exam or Learn mode, with no signup; after that, the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} unlocks ${MOCK_PASS_ATTEMPTS} more attempts on any mock.`,
     },
+    ...(waitlist
+      ? []
+      : [
+          {
+            question: `How many free attempts do I get on this ${profile.practiceTestLabel}?`,
+            answer: `One. ${MOCK_ACCESS_RULE} Every attempt ends with the full topic report and answer review — the report itself is never paywalled.`,
+          },
+        ]),
     {
       question: `How many questions are on this free ${profile.practiceTestLabel}?`,
       answer: waitlist
@@ -1317,13 +1332,12 @@ export function buildMockExamHubFaqs(indexedCount: number, totalCount: number) {
 
   return [
     {
-      question: "How many free practice tests does UniPrep2Go offer?",
-      answer: `${indexedCount} indexed free timed practice tests are promoted in search (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and other pathways). ${previewCount > 0 ? `${previewCount} additional pages are not yet indexed. ` : ""}${mockFreeAccessNotice}`,
+      question: "How many practice tests does UniPrep2Go offer?",
+      answer: `${indexedCount} indexed timed practice tests are promoted in search (FINRA SIE, Series 7, CFA, FRM, ServSafe, PTCB, EPA 608, LEED, MRICS, GMAT Focus, and other pathways). ${previewCount > 0 ? `${previewCount} additional pages are not yet indexed. ` : ""}${mockFreeAccessNotice}`,
     },
     {
-      question: "Do I need to sign up for the free mocks?",
-      answer:
-        "No signup wall — start a timed mock directly from the landing page. Your readiness report appears immediately after submit with topic scoring and answer review.",
+      question: "Are the mocks free? Do I need to sign up?",
+      answer: `No signup. ${MOCK_ACCESS_RULE} Start directly from any mock page; the readiness report with topic scoring and answer review appears right after submit on every attempt.`,
     },
     {
       question: "What happens after the mock report?",

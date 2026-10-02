@@ -1,0 +1,514 @@
+{
+  "servsafe-manager-mock": {
+    "servsafe-manager-mock-001": {
+      "difficulty": "medium",
+      "prompt": "Which pathogen is most often spread to ready-to-eat food by a food handler with vomiting or diarrhea, and needs only a few particles to make someone sick?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Clostridium perfringens",
+        "b": "Bacillus cereus",
+        "c": "Norovirus",
+        "d": "Vibrio vulnificus"
+      },
+      "explanation": "Norovirus spreads through feces, vomit particles and contaminated surfaces, and a very small dose causes illness. Prevention: exclude food handlers with vomiting or diarrhea, wash hands, avoid bare-hand contact with ready-to-eat food, and clean up vomit with a written procedure.",
+      "distractorExplanations": {
+        "a": "C. perfringens grows in meat and gravy that are cooled too slowly; it is not spread person to person.",
+        "b": "B. cereus is linked to rice and starchy food held at the wrong temperature, not to sick food handlers.",
+        "d": "Vibrio comes from raw oysters harvested from warm water, not from food handlers."
+      }
+    },
+    "servsafe-manager-mock-002": {
+      "difficulty": "medium",
+      "prompt": "A large batch of rice is cooked in the morning and left on the counter until dinner. Several guests vomit within an hour of eating fried rice made from it. Which pathogen is most likely?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Shigella spp.",
+        "b": "Bacillus cereus",
+        "c": "Hepatitis A virus",
+        "d": "Listeria monocytogenes"
+      },
+      "explanation": "Bacillus cereus is a spore-forming bacterium found in rice and other starchy foods. When cooked rice sits in the temperature danger zone, it produces a vomiting toxin that reheating does not destroy. Hold rice at 135°F or higher, or cool it quickly to 41°F or lower.",
+      "distractorExplanations": {
+        "a": "Shigella is spread by flies and food handlers with poor hygiene, usually through salads, not time-abused rice.",
+        "c": "Hepatitis A takes weeks to cause symptoms, not one hour.",
+        "d": "Listeria is linked to deli meat and unpasteurized dairy and causes illness days to weeks later."
+      }
+    },
+    "servsafe-manager-mock-003": {
+      "difficulty": "medium",
+      "prompt": "Minutes after eating grilled tuna, a guest develops flushing, a headache and a peppery taste in the mouth. The tuna had been left unrefrigerated on the receiving dock. What caused the illness?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Ciguatoxin from the fish's reef diet",
+        "b": "Anisakis worms that survived the grilling step",
+        "c": "Norovirus from a sick food handler",
+        "d": "Histamine from time-temperature abuse"
+      },
+      "explanation": "When fish such as tuna, mackerel and mahi-mahi are time-temperature abused, bacteria produce histamine (scombrotoxin). Cooking, freezing, smoking or curing does not destroy it. Prevention is buying from approved suppliers and keeping the fish at the right temperature at every step.",
+      "distractorExplanations": {
+        "a": "Ciguatoxin comes from predatory reef fish such as barracuda and grouper that eat toxic algae, not from temperature abuse.",
+        "b": "Proper cooking destroys Anisakis, and parasites do not cause immediate flushing.",
+        "c": "Norovirus causes vomiting and diarrhea hours later, not immediate flushing and a peppery taste."
+      }
+    },
+    "servsafe-manager-mock-004": {
+      "difficulty": "medium",
+      "prompt": "Which pathogen can grow at refrigerator temperatures and is especially dangerous for pregnant guests?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Salmonella Typhi",
+        "b": "Clostridium perfringens",
+        "c": "Listeria monocytogenes",
+        "d": "Shigella spp."
+      },
+      "explanation": "Listeria monocytogenes grows in cool, moist places and can multiply in refrigerated ready-to-eat food such as deli meat and soft cheese. It can cause miscarriage or stillbirth. Discard RTE food past its date-mark limit and avoid unpasteurized dairy for high-risk guests.",
+      "distractorExplanations": {
+        "a": "Salmonella Typhi is carried by people and spread through poor hygiene; growth in the cooler is not its feature.",
+        "b": "C. perfringens grows in meat dishes that are cooled too slowly, not at refrigeration temperatures.",
+        "d": "Shigella spreads through feces and flies; it is not known for growing at refrigeration temperatures."
+      }
+    },
+    "servsafe-manager-mock-005": {
+      "difficulty": "medium",
+      "prompt": "A cook makes a garlic-in-oil mixture and leaves it at room temperature overnight. Which pathogen is the main concern?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Vibrio vulnificus",
+        "b": "Hepatitis A virus",
+        "c": "Salmonella Enteritidis",
+        "d": "Clostridium botulinum"
+      },
+      "explanation": "Clostridium botulinum grows without oxygen and produces a deadly toxin. Garlic or herbs in oil, reduced-oxygen packaged food, improperly canned food and temperature-abused baked potatoes are classic sources. Keep garlic-in-oil at 41°F or lower and reject bulging or leaking cans.",
+      "distractorExplanations": {
+        "a": "Vibrio is linked to raw oysters from warm water, not oil mixtures.",
+        "b": "Hepatitis A comes from infected food handlers or contaminated shellfish, not oxygen-free storage.",
+        "c": "Salmonella Enteritidis is linked to eggs and poultry; the oxygen-free oil points to botulism."
+      }
+    },
+    "servsafe-manager-mock-006": {
+      "difficulty": "medium",
+      "prompt": "A food handler is diagnosed with hepatitis A. Which statement about this virus is correct?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Normal cooking destroys it, so only cold food is at risk",
+        "b": "It can be spread before symptoms like jaundice appear",
+        "c": "It comes mainly from undercooked ground beef",
+        "d": "It spreads mainly through rodent droppings in storage"
+      },
+      "explanation": "Hepatitis A spreads by the fecal-oral route, often through ready-to-eat food or shellfish from contaminated water. Infected people can be contagious weeks before jaundice appears, and cooking does not reliably destroy the virus. The food handler must be excluded and the regulatory authority notified.",
+      "distractorExplanations": {
+        "a": "Cooking does not reliably destroy hepatitis A, so any food the handler touched is at risk.",
+        "c": "Undercooked ground beef is the classic source of Shiga toxin-producing E. coli.",
+        "d": "Hepatitis A comes from human feces; rodents are linked to other pathogens such as Salmonella."
+      }
+    },
+    "servsafe-manager-mock-007": {
+      "difficulty": "medium",
+      "prompt": "Which pathogen is most associated with undercooked ground beef and contaminated produce, and can cause kidney failure?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Clostridium perfringens",
+        "b": "Vibrio vulnificus",
+        "c": "Shiga toxin-producing E. coli",
+        "d": "Salmonella Typhi"
+      },
+      "explanation": "Shiga toxin-producing E. coli (such as O157:H7) lives in cattle intestines, contaminates beef during slaughter and grinding, and reaches produce through contaminated water. It can cause bloody diarrhea and kidney failure. Cook ground beef to 155°F for 17 seconds and buy produce from approved suppliers.",
+      "distractorExplanations": {
+        "a": "C. perfringens causes diarrhea after meat or gravy is cooled too slowly; it is not linked to kidney failure.",
+        "b": "Vibrio comes from raw shellfish harvested in warm water.",
+        "d": "Salmonella Typhi is carried by people and spread through ready-to-eat food and drinks, not ground beef."
+      }
+    },
+    "servsafe-manager-mock-008": {
+      "difficulty": "easy",
+      "prompt": "Which list contains only items from the nine major food allergens recognized in the United States?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Milk, sesame, soy, wheat",
+        "b": "Corn, peanuts, eggs, shellfish",
+        "c": "Strawberries, milk, fish, tree nuts",
+        "d": "Mustard, soy, eggs, wheat"
+      },
+      "explanation": "The nine major allergens in the US are milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy and sesame (sesame was added in 2023). Corn, strawberries and mustard can cause allergic reactions, but they are not on the federal major-allergen list.",
+      "distractorExplanations": {
+        "b": "Corn is not one of the nine major allergens, even though peanuts, eggs and shellfish are.",
+        "c": "Strawberries can trigger reactions but are not a major allergen under US law.",
+        "d": "Mustard is a regulated allergen in some countries, but not one of the nine US major allergens."
+      }
+    },
+    "servsafe-manager-mock-009": {
+      "difficulty": "medium",
+      "prompt": "A guest with a severe shellfish allergy orders French fries. The fries are normally cooked in the same oil as breaded shrimp. What should the kitchen do?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Serve them; frying heat destroys shellfish allergens",
+        "b": "Cook them in oil never used for shellfish",
+        "c": "Drain the fries well on paper towels first",
+        "d": "Serve them after skimming crumbs from the oil"
+      },
+      "explanation": "Cooking does not destroy allergens, so oil used for breaded shrimp carries shellfish protein to anything fried in it. Allergen-safe prep uses separate fryer oil, cleaned and sanitized equipment, fresh gloves and clear communication between server and kitchen.",
+      "distractorExplanations": {
+        "a": "Heat does not destroy food allergens; the shared oil still carries shellfish protein.",
+        "c": "Draining removes surface oil, not the allergen proteins absorbed during frying.",
+        "d": "Skimming removes visible crumbs, but the oil itself still contains shellfish protein."
+      }
+    },
+    "servsafe-manager-mock-010": {
+      "difficulty": "easy",
+      "prompt": "Shortly after eating, a guest's lips swell and she has trouble breathing. What should staff do first?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Call emergency services right away",
+        "b": "Give her water and wait to see if it passes",
+        "c": "Offer an antacid from the first-aid kit",
+        "d": "Move her to a quiet table and observe her"
+      },
+      "explanation": "Swelling and trouble breathing after eating suggest a severe allergic reaction (anaphylaxis), which can be fatal within minutes. Call emergency services immediately; the guest may use her own epinephrine auto-injector. Afterward, managers review what was served to find the allergen.",
+      "distractorExplanations": {
+        "b": "Waiting wastes minutes during a reaction that can close the airway.",
+        "c": "Antacids do nothing for an allergic reaction.",
+        "d": "Observing her without calling for help delays emergency treatment."
+      }
+    },
+    "servsafe-manager-mock-011": {
+      "difficulty": "medium",
+      "prompt": "Which practice best prevents Shigella outbreaks linked to a salad bar?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Cook all salad greens to 135°F",
+        "b": "Freeze prepared salads before display",
+        "c": "Buy prewashed greens with a longer printed shelf life",
+        "d": "Control flies and exclude staff with diarrhea"
+      },
+      "explanation": "Shigella spreads through human feces, by unwashed hands and by flies moving between garbage and food. Exclude food handlers with diarrhea, require handwashing, prevent bare-hand contact with ready-to-eat food such as salads, and keep flies out of the operation.",
+      "distractorExplanations": {
+        "a": "Salad greens are served raw; cooking them is not a realistic control.",
+        "b": "Freezing does not reliably kill Shigella and would ruin the salads.",
+        "c": "Shelf life does not address the real source: feces carried by hands and flies."
+      }
+    },
+    "servsafe-manager-mock-012": {
+      "difficulty": "hard",
+      "prompt": "A sushi restaurant serves raw salmon. What controls the risk of parasites such as Anisakis?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Rinse each fillet well under cold running drinkable water",
+        "b": "Use fish frozen to the required time and temperature",
+        "c": "Marinate the fish in lemon juice for an hour",
+        "d": "Keep the fish at 41°F until it is sliced"
+      },
+      "explanation": "Fish served raw or undercooked must be frozen to kill parasites, for example at -4°F (-20°C) or lower for 7 days, as documented by the supplier. Keep the parasite-destruction records for 90 days after the fish is sold. Rinsing, acid marinades and refrigeration do not kill parasites.",
+      "distractorExplanations": {
+        "a": "Rinsing removes surface debris but not parasites inside the flesh.",
+        "c": "Acid marinades change texture but do not kill parasites.",
+        "d": "Refrigeration slows bacteria but does not kill parasites; freezing does."
+      }
+    },
+    "servsafe-manager-mock-013": {
+      "difficulty": "easy",
+      "prompt": "A prep cook finds metal shavings in a can of tomatoes after using a worn can opener. What type of contamination is this?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Chemical contamination",
+        "b": "Biological contamination",
+        "c": "Physical contamination",
+        "d": "Allergen cross-contact"
+      },
+      "explanation": "Physical contaminants are foreign objects in food: metal shavings from worn can openers, glass from broken bulbs, staples, bandages or jewelry, as well as natural objects such as fish bones. Prevention includes maintaining equipment and inspecting food closely.",
+      "distractorExplanations": {
+        "a": "Chemical contamination involves substances such as cleaners, pesticides or toxic metals leaching into food.",
+        "b": "Biological contamination involves pathogens or toxins from living organisms.",
+        "d": "Cross-contact means an allergen is transferred to food; metal shavings are not an allergen."
+      }
+    },
+    "servsafe-manager-mock-014": {
+      "difficulty": "medium",
+      "prompt": "Lemonade is served from a galvanized (zinc-coated) container, and several guests report nausea soon after drinking it. What most likely happened?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Norovirus spread from the server's hands",
+        "b": "The lemons carried Salmonella from the farm",
+        "c": "Mold toxins formed in the cut lemon peels overnight",
+        "d": "Acid in the drink leached metal from the container"
+      },
+      "explanation": "Acidic food such as lemonade, tomato sauce or fruit punch can leach toxic metals from galvanized, copper, brass or pewter containers, causing nausea and vomiting within minutes. Use only food-grade containers and utensils designed for the food being prepared.",
+      "distractorExplanations": {
+        "a": "Norovirus symptoms usually start hours later, not soon after drinking.",
+        "b": "Salmonella illness typically takes 6 to 48 hours to appear.",
+        "c": "Mold toxins do not cause sudden illness from one overnight batch; the galvanized container is the clue."
+      }
+    },
+    "servsafe-manager-mock-015": {
+      "difficulty": "easy",
+      "prompt": "Two guests who ate the same chicken salad at a catered event report the same symptoms the next day, and an investigation confirms the salad as the source. What is this event called?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A foodborne-illness outbreak",
+        "b": "A near miss",
+        "c": "A food allergy cross-contact incident",
+        "d": "An isolated guest complaint"
+      },
+      "explanation": "A foodborne-illness outbreak occurs when two or more people have the same symptoms after eating the same food, and an investigation by state and local regulatory authorities confirms the source. Managers record details and work with the regulatory authority.",
+      "distractorExplanations": {
+        "b": "A near miss is a problem caught before anyone is affected; here two guests got sick.",
+        "c": "An allergy incident is a reaction to an allergen, not shared illness from a contaminated food.",
+        "d": "Two people with the same symptoms from the same confirmed food is more than an isolated complaint."
+      }
+    },
+    "servsafe-manager-mock-016": {
+      "difficulty": "easy",
+      "prompt": "A cook says a pan of chili can safely sit on the counter at 100°F. Which temperature range is the danger zone?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "32°F to 100°F",
+        "b": "41°F to 135°F",
+        "c": "45°F to 140°F",
+        "d": "70°F to 165°F"
+      },
+      "explanation": "The temperature danger zone is 41°F to 135°F (5°C to 57°C). Pathogens grow in this range, fastest between 70°F and 125°F. Keep TCS food out of it: hold cold food at 41°F or lower and hot food at 135°F or higher.",
+      "distractorExplanations": {
+        "a": "Pathogens keep growing above 100°F, up to 135°F.",
+        "c": "45°F to 140°F is an outdated range; the current Food Code uses 41°F to 135°F.",
+        "d": "165°F is a cooking and reheating temperature, not the upper limit of the danger zone."
+      }
+    },
+    "servsafe-manager-mock-017": {
+      "difficulty": "easy",
+      "prompt": "What is the minimum internal cooking temperature for chicken breasts?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "135°F",
+        "b": "145°F for 15 seconds",
+        "c": "155°F for 17 seconds",
+        "d": "165°F, instantaneous"
+      },
+      "explanation": "Poultry (whole or ground chicken, turkey and duck), stuffing made with TCS ingredients, stuffed meat or pasta, and dishes containing previously cooked TCS ingredients must reach 165°F for less than 1 second (instantaneous).",
+      "distractorExplanations": {
+        "a": "135°F is the hot-holding minimum and the cooking temperature for plant food that will be hot-held.",
+        "b": "145°F for 15 seconds is for seafood and whole-muscle steaks and chops, not poultry.",
+        "c": "155°F for 17 seconds is for ground meat and injected meat, not poultry."
+      }
+    },
+    "servsafe-manager-mock-018": {
+      "difficulty": "easy",
+      "prompt": "A cook is grilling hamburger patties made from ground beef. What minimum internal temperature must they reach?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "135°F, instantaneous",
+        "b": "145°F for 15 seconds",
+        "c": "155°F for 17 seconds",
+        "d": "165°F, instantaneous"
+      },
+      "explanation": "Ground meat (beef, pork and other meat), injected or mechanically tenderized meat, ground seafood, and shell eggs that will be hot-held must reach 155°F for 17 seconds. Grinding spreads surface pathogens such as E. coli throughout the meat.",
+      "distractorExplanations": {
+        "a": "135°F is the hot-holding minimum, not a cooking temperature for ground beef.",
+        "b": "145°F for 15 seconds is enough for an intact steak, where pathogens stay on the surface, not for ground beef.",
+        "d": "165°F is required for poultry and stuffed food; ground beef needs 155°F for 17 seconds."
+      }
+    },
+    "servsafe-manager-mock-019": {
+      "difficulty": "medium",
+      "prompt": "Which item may be cooked to a minimum internal temperature of 145°F for 15 seconds?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A pork chop",
+        "b": "A ground turkey burger",
+        "c": "A stuffed chicken breast",
+        "d": "A brine-injected beef roast"
+      },
+      "explanation": "Seafood, steaks and chops of beef, pork, veal and lamb, commercially raised game, and shell eggs cooked for immediate service must reach 145°F for 15 seconds. Roasts of these meats need 145°F for 4 minutes.",
+      "distractorExplanations": {
+        "b": "Ground turkey is poultry and must reach 165°F.",
+        "c": "Stuffed food must reach 165°F.",
+        "d": "Injecting brine pushes surface pathogens inside, so injected meat needs 155°F for 17 seconds."
+      }
+    },
+    "servsafe-manager-mock-020": {
+      "difficulty": "medium",
+      "prompt": "A batch of soup is cooked to 165°F and then cooled. Under the two-stage cooling method, what are the time limits?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "70°F within 4 hours, then 41°F in the next 2 hours",
+        "b": "70°F within 1 hour, then 41°F in the next 8",
+        "c": "41°F within 2 hours, with no middle check",
+        "d": "70°F within 2 hours, then 41°F in the next 4"
+      },
+      "explanation": "TCS food must cool from 135°F to 70°F within 2 hours, then from 70°F to 41°F or lower in the next 4 hours, for a total of 6 hours. The first stage matters most because pathogens grow fastest between 125°F and 70°F.",
+      "distractorExplanations": {
+        "a": "This reverses the stages; the first 2 hours are the critical window.",
+        "b": "The total limit is 6 hours, not 9, and the first stage is 2 hours.",
+        "c": "The rule has two checkpoints: 70°F within 2 hours and 41°F within 6 hours total."
+      }
+    },
+    "servsafe-manager-mock-021": {
+      "difficulty": "hard",
+      "prompt": "A batch of chili has been cooling for 2 hours and is now at 85°F. What should the manager do?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Reheat it to 165°F and cool again, or discard it",
+        "b": "Keep cooling it; there are still 4 hours left",
+        "c": "Move it to the freezer and log it as properly cooled",
+        "d": "Serve it now as a lunch special at 85°F"
+      },
+      "explanation": "If food has not reached 70°F within 2 hours, the first cooling stage has failed. The food must be thrown out, or reheated to 165°F for 15 seconds and then cooled again correctly. Using the remaining 4 hours does not undo the time spent in the fastest-growth range.",
+      "distractorExplanations": {
+        "b": "The 4-hour second stage applies only after food reaches 70°F within the first 2 hours.",
+        "c": "Logging the chili as cooled hides a failed critical limit and leaves the risk in place.",
+        "d": "Serving food at 85°F means serving it in the danger zone after a failed cooling step."
+      }
+    },
+    "servsafe-manager-mock-022": {
+      "difficulty": "easy",
+      "prompt": "What is the best way to cool a large stockpot of chicken stock?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Put the covered pot straight into the walk-in cooler",
+        "b": "Let it sit on the counter until it is lukewarm",
+        "c": "Split it into shallow pans in an ice-water bath",
+        "d": "Put the pot in the freezer with a tight lid on"
+      },
+      "explanation": "Cool food faster by reducing its mass and increasing surface area: divide it into smaller or shallow containers, use ice-water baths, ice paddles or a blast chiller, stir often, and leave containers loosely covered at first. A full covered stockpot stays in the danger zone too long.",
+      "distractorExplanations": {
+        "a": "A large covered pot traps heat and can warm the other food in the cooler.",
+        "b": "Counter cooling leaves the stock in the danger zone for hours.",
+        "d": "A full, tightly covered pot cools slowly even in a freezer and can warm nearby food."
+      }
+    },
+    "servsafe-manager-mock-023": {
+      "difficulty": "medium",
+      "prompt": "Beef stew cooked and cooled yesterday will be reheated for hot holding. What is the requirement?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "135°F for 15 seconds within 4 hours",
+        "b": "145°F for 15 seconds within 2 hours",
+        "c": "155°F for 17 seconds within 6 hours",
+        "d": "165°F for 15 seconds within 2 hours"
+      },
+      "explanation": "TCS food that was cooked, cooled and reheated for hot holding must reach 165°F for 15 seconds within 2 hours. Commercially processed, packaged ready-to-eat food, such as canned chili, only needs to reach 135°F for hot holding.",
+      "distractorExplanations": {
+        "a": "135°F applies to commercially processed ready-to-eat food, not stew made in-house.",
+        "b": "145°F is a cooking temperature for steaks and seafood, not the reheating rule.",
+        "c": "155°F for 17 seconds is the ground-meat cooking temperature, and 6 hours is far too long."
+      }
+    },
+    "servsafe-manager-mock-024": {
+      "difficulty": "medium",
+      "prompt": "Raw chicken pieces are cooked in a microwave. Which requirement applies?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Cook to 145°F, then hot-hold at 135°F",
+        "b": "Cook to 165°F, cover, rotate, stand 2 minutes",
+        "c": "Cook it uncovered until the juices run clear",
+        "d": "Cook to 155°F and serve without a standing time"
+      },
+      "explanation": "Raw meat, seafood, poultry and eggs cooked in a microwave must reach 165°F in all parts. Cover the food to hold in moisture, rotate or stir it halfway through for even heating, and let it stand 2 minutes so the temperature evens out before checking it.",
+      "distractorExplanations": {
+        "a": "145°F is too low for poultry and for any raw animal food cooked in a microwave.",
+        "c": "Juice color is not a reliable doneness test, and covering the food helps it heat evenly.",
+        "d": "Microwave cooking requires 165°F and a 2-minute standing time."
+      }
+    },
+    "servsafe-manager-mock-025": {
+      "difficulty": "medium",
+      "prompt": "A cook checks thin hamburger patties with a bimetallic stemmed thermometer. Why is this a problem?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Its sensing area (tip to dimple) is too long for thin food",
+        "b": "It measures only the surface temperature, like an infrared unit",
+        "c": "It cannot read temperatures above 135°F",
+        "d": "It must be recalibrated after every reading"
+      },
+      "explanation": "A bimetallic stemmed thermometer senses temperature along the stem from the tip to the dimple, about 2 inches, so the stem must go in that deep. For thin food such as patties, use a thermocouple or thermistor, which senses at the tip.",
+      "distractorExplanations": {
+        "b": "Bimetallic thermometers measure internal temperature; infrared units measure only the surface.",
+        "c": "Bimetallic thermometers read well above 135°F, typically from 0°F to 220°F.",
+        "d": "Calibration is needed regularly, such as before shifts or after a drop, not after every reading."
+      }
+    },
+    "servsafe-manager-mock-026": {
+      "difficulty": "easy",
+      "prompt": "A manager calibrates a bimetallic stemmed thermometer using the ice-point method. What should it read in the ice water?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "0°F",
+        "b": "32°F",
+        "c": "41°F",
+        "d": "212°F"
+      },
+      "explanation": "For the ice-point method, fill a container with crushed ice and water, insert the stem for 30 seconds, and adjust the calibration nut until the thermometer reads 32°F (0°C). The boiling-point method uses 212°F (100°C) at sea level.",
+      "distractorExplanations": {
+        "a": "0°F is far below the temperature of ice water; 0 is the Celsius reading.",
+        "c": "41°F is the cold-holding limit, not the temperature of ice water.",
+        "d": "212°F is the boiling-point calibration reading at sea level."
+      }
+    },
+    "servsafe-manager-mock-027": {
+      "difficulty": "hard",
+      "prompt": "Hot TCS food is taken off temperature control for a catered breakfast under time-as-a-public-health-control rules. What is required?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Serve it within 6 hours if it stays below 70°F",
+        "b": "Reheat it to 165°F every 2 hours to reset the clock",
+        "c": "Label it and serve or discard it within 4 hours",
+        "d": "Keep it out until it drops below 135°F, then toss it"
+      },
+      "explanation": "Food held without temperature control must start at 135°F or higher (hot) or 41°F or lower (cold) and be labeled with the time it was removed and the time it must be thrown out. Hot food must be sold, served or discarded within 4 hours.",
+      "distractorExplanations": {
+        "a": "Six hours with a 70°F ceiling is the rule for cold food, not hot food.",
+        "b": "Reheating does not reset the time limit once food is under time control.",
+        "d": "Under time control, the food's temperature is not monitored; the 4-hour time limit governs."
+      }
+    },
+    "servsafe-manager-mock-028": {
+      "difficulty": "medium",
+      "prompt": "Tuna salad in a cold-holding unit reads 46°F, and no one knows how long it has been above 41°F. What should be done?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Stir in ice to bring it back to 41°F",
+        "b": "Move it to the walk-in and serve it tomorrow",
+        "c": "Keep serving it if it looks and smells fine",
+        "d": "Throw it out, since the time is unknown"
+      },
+      "explanation": "Cold TCS food must be held at 41°F or lower. If food is above 41°F and staff cannot show how long it has been there, it must be thrown out. Checking holding temperatures at least every 4 hours (every 2 hours leaves time for corrective action) catches failures earlier.",
+      "distractorExplanations": {
+        "a": "Chilling it again does not undo an unknown time in the danger zone.",
+        "b": "Refrigerating it later does not remove the pathogen growth that may have happened.",
+        "c": "Pathogens do not change how food looks or smells."
+      }
+    },
+    "servsafe-manager-mock-029": {
+      "difficulty": "easy",
+      "prompt": "Which is an acceptable way to thaw a frozen turkey?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "On the counter overnight in its wrapper",
+        "b": "In a cooler that holds 41°F or lower",
+        "c": "In a sink of warm water at about 100°F",
+        "d": "In the hot-holding cabinet at 135°F"
+      },
+      "explanation": "Acceptable thawing methods are: in a cooler at 41°F or lower; submerged under running drinkable water at 70°F or lower; in a microwave if the food will be cooked immediately; or as part of the cooking process. Counter thawing and warm water leave the outer layer in the danger zone.",
+      "distractorExplanations": {
+        "a": "Counter thawing lets the surface sit in the danger zone for hours.",
+        "c": "Running water must be 70°F or lower; standing warm water warms the surface into the danger zone.",
+        "d": "A hot-holding cabinet is not a thawing method and leaves the turkey in the danger zone."
+      }
+    },
+    "servsafe-manager-mock-030": {
+      "difficulty": "medium",
+      "prompt": "A cook puts cold leftover rice straight into the steam table to reheat it for service. Why is this wrong?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Hot-holding units are not designed to reheat food",
+        "b": "Cooled rice has to be reheated in a microwave oven",
+        "c": "Steam tables are meant for raw food only",
+        "d": "Rice must be held cold during service"
+      },
+      "explanation": "Hot-holding equipment is built to keep hot food at 135°F or higher, not to heat cold food. Reheating in it leaves food in the danger zone too long. Reheat on a stove, in an oven or in a microwave to 165°F within 2 hours, then move it to the hot-holding unit.",
+      "distractorExplanations": {
+        "b": "Cooled rice may be reheated on a stove, in an oven or in a microwave, as long as it reaches 165°F within 2 hours.",
+        "c": "Steam tables hold cooked food hot; they are not for raw food.",
+        "d": "Rice may be hot-held at 135°F or higher; it does not have to be held cold."
+      }
+    }
+  }
+}

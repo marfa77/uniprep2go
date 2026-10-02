@@ -1,0 +1,384 @@
+{
+  "frm-part-1-readiness-check": {
+    "frm-part-1-readiness-check-foundations-001": {
+      "topicId": "foundations",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A stock has a beta of 1.3. The risk-free rate is 3% and the expected market return is 9%. Under the CAPM, what is the stock's expected return?",
+      "options": {
+        "a": "9.0%",
+        "b": "10.8%",
+        "c": "11.7%",
+        "d": "14.7%"
+      },
+      "correctOptionId": "b",
+      "explanation": "CAPM: E(R) = Rf + β × [E(Rm) − Rf] = 3% + 1.3 × (9% − 3%) = 3% + 7.8% = 10.8%. Beta scales only the market risk premium, not the risk-free component.",
+      "distractorExplanations": {
+        "a": "Returns the market's expected return, ignoring that a beta of 1.3 carries more systematic risk than the market.",
+        "c": "Multiplies beta by the market return (1.3 × 9%) and drops the risk-free rate altogether.",
+        "d": "Applies beta to the whole market return instead of to the 6% market risk premium: 3% + 1.3 × 9%."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-002": {
+      "topicId": "foundations",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A portfolio returned 14% last year with a beta of 1.2. The risk-free rate was 4% and the market returned 11%. What was the portfolio's Jensen's alpha?",
+      "options": {
+        "a": "0.8%",
+        "b": "1.6%",
+        "c": "3.0%",
+        "d": "10.0%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Jensen's alpha = Rp − [Rf + β × (Rm − Rf)] = 14% − [4% + 1.2 × 7%] = 14% − 12.4% = 1.6%. A positive alpha means the manager beat the return the CAPM requires for that level of systematic risk.",
+      "distractorExplanations": {
+        "a": "Multiplies beta by the total market return (14% − 1.2 × 11%) and leaves out the risk-free rate.",
+        "c": "Subtracts the market return directly, which implicitly assumes a beta of 1 instead of 1.2.",
+        "d": "That is the portfolio's excess return over the risk-free rate, not its return above the CAPM benchmark."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-003": {
+      "topicId": "foundations",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A large endowment already holds a well-diversified portfolio and will add a small allocation to one of several equity funds. Which performance measure is most appropriate for comparing the candidate funds?",
+      "options": {
+        "a": "The Sharpe ratio, because it scales excess return by total volatility",
+        "b": "The Sortino ratio, because it scales excess return by downside deviation",
+        "c": "The information ratio, because it scales active return by tracking error",
+        "d": "The Treynor ratio, because it scales excess return by beta"
+      },
+      "correctOptionId": "d",
+      "explanation": "For an investor whose holdings are already well diversified, a new fund's idiosyncratic risk largely diversifies away, so the risk that matters is its systematic risk (beta). The Treynor ratio, (Rp − Rf) / βp, measures reward per unit of that risk; the Sharpe ratio is the right choice when the fund is the investor's entire portfolio.",
+      "distractorExplanations": {
+        "a": "Total volatility suits a fund held as the whole portfolio; here the endowment's other holdings remove most of the fund's specific risk.",
+        "b": "Downside deviation still counts diversifiable risk, which the endowment's existing holdings largely eliminate.",
+        "c": "The information ratio judges consistency against a benchmark, not reward per unit of the systematic risk the fund adds."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-004": {
+      "topicId": "foundations",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A portfolio returned 9.5% against its benchmark's 8.0%. The annualized standard deviation of the return difference (tracking error) was 3%. What is the information ratio?",
+      "options": {
+        "a": "0.16",
+        "b": "0.19",
+        "c": "0.50",
+        "d": "2.00"
+      },
+      "correctOptionId": "c",
+      "explanation": "Information ratio = (Rp − Rb) / tracking error = (9.5% − 8.0%) / 3% = 0.50. It measures the active return earned per unit of active risk taken relative to the benchmark.",
+      "distractorExplanations": {
+        "a": "Divides the active return by the portfolio's own return; the denominator must be the tracking error.",
+        "b": "Divides the active return by the benchmark return instead of by the tracking error.",
+        "d": "Inverts the ratio, dividing the tracking error by the active return."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-005": {
+      "topicId": "foundations",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "In a two-factor arbitrage pricing model, a stock has a sensitivity of 1.2 to factor 1 (risk premium 4%) and 0.5 to factor 2 (risk premium 2%). The risk-free rate is 2%. What is the stock's expected return?",
+      "options": {
+        "a": "5.8%",
+        "b": "6.0%",
+        "c": "7.8%",
+        "d": "8.0%"
+      },
+      "correctOptionId": "c",
+      "explanation": "APT: E(R) = Rf + β1λ1 + β2λ2 = 2% + 1.2 × 4% + 0.5 × 2% = 2% + 4.8% + 1.0% = 7.8%. Each factor's risk premium is scaled by the stock's sensitivity to that factor.",
+      "distractorExplanations": {
+        "a": "Adds the two factor contributions (4.8% + 1.0%) but leaves out the risk-free rate.",
+        "b": "Adds the raw factor premiums (4% + 2%) without the sensitivities and without the risk-free rate.",
+        "d": "Adds the risk-free rate to the raw factor premiums, ignoring the stock's factor sensitivities."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-006": {
+      "topicId": "foundations",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Under the three-lines-of-defense model, which function is primarily responsible for independently challenging a trading desk's risk-taking and monitoring its limits day to day?",
+      "options": {
+        "a": "The business line's own front-office managers",
+        "b": "The internal audit function reporting to the audit committee",
+        "c": "The independent risk management function led by the CRO",
+        "d": "The external auditor engaged to review the financial statements"
+      },
+      "correctOptionId": "c",
+      "explanation": "The first line (business units) owns and manages its risks; the second line (independent risk management and compliance, led by the CRO) sets limits, monitors them, and challenges risk-taking; the third line (internal audit) gives the board independent assurance that the whole framework works.",
+      "distractorExplanations": {
+        "a": "Front-office managers are the first line: they own the risk, so they cannot provide the independent challenge.",
+        "b": "Internal audit is the third line: it periodically tests the framework rather than monitoring limits day to day.",
+        "d": "External auditors give an opinion on the financial statements and sit outside the three-lines structure."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-007": {
+      "topicId": "foundations",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Long-Term Capital Management's 1998 collapse is most often cited to illustrate which risk management failure?",
+      "options": {
+        "a": "A single rogue trader hiding losses in an unmonitored error account",
+        "b": "Rolling short-dated futures against long-term supply contracts, draining cash",
+        "c": "Using customers' segregated funds to cover the firm's own trading losses",
+        "d": "Extreme leverage plus models assuming correlations and liquidity would hold"
+      },
+      "correctOptionId": "d",
+      "explanation": "LTCM ran convergence trades at roughly 25:1 balance-sheet leverage, far more including derivatives. After Russia's 1998 default, spreads widened together, correlations jumped, and liquidity vanished, so positions could not be exited and losses compounded. The lessons are model risk, leverage, liquidity risk, and crowded trades.",
+      "distractorExplanations": {
+        "a": "That describes Barings (Nick Leeson's error account 88888), not LTCM.",
+        "b": "That describes Metallgesellschaft's stack-and-roll oil hedge and its funding squeeze.",
+        "c": "That describes MF Global's misuse of segregated customer funds in 2011."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-008": {
+      "topicId": "foundations",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Metallgesellschaft's U.S. subsidiary sold long-term fixed-price oil supply contracts and hedged them with a stack of short-dated futures that it rolled forward. When oil prices fell sharply in 1993, what was the main problem?",
+      "options": {
+        "a": "Margin calls on the futures drained cash before supply-contract gains arrived",
+        "b": "Customers defaulted on the supply contracts, so the hedge no longer had an exposure",
+        "c": "The futures and the supply contracts lost value together, doubling the total loss",
+        "d": "Exchange position limits forced the whole futures stack to be closed in a single day"
+      },
+      "correctOptionId": "a",
+      "explanation": "Falling oil prices produced losses on the long futures that were settled in cash daily, while the offsetting gains on the fixed-price sale contracts would arrive only over up to ten years. That cash-flow timing mismatch, plus a shift to contango that made rolling costly, created a funding liquidity crisis, and the parent unwound the hedge at a loss.",
+      "distractorExplanations": {
+        "b": "Customer credit risk was a concern, but the losses came from the hedge's cash drain, not from customer defaults.",
+        "c": "The positions were offsetting: falling prices hurt the long futures but made the fixed-price sale contracts more valuable.",
+        "d": "Position limits were not what broke the strategy; the margin-driven funding need was."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-009": {
+      "topicId": "foundations",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Before the 2007–2009 crisis, many mortgage lenders sold most of their loans into securitizations soon after origination. Which incentive problem did this originate-to-distribute model create?",
+      "options": {
+        "a": "Investors bore too little credit risk, so they demanded yields that were too high",
+        "b": "Lenders kept the riskiest tranches, so they tightened underwriting excessively",
+        "c": "Rating agencies were paid by investors, so their ratings were systematically harsh",
+        "d": "Lenders kept little credit risk, so they had weak incentives to screen borrowers"
+      },
+      "correctOptionId": "d",
+      "explanation": "When a lender expects to sell a loan within weeks, the loan's eventual default risk falls on the investors, not on the originator. That weakens the incentive to verify income and screen borrowers, which is why post-crisis rules added risk retention (skin in the game) for securitizers.",
+      "distractorExplanations": {
+        "a": "Reverses the problem: investors bore the credit risk and, relying on ratings, often demanded yields that were too low.",
+        "b": "Most originators sold the risk rather than keeping it, and underwriting loosened rather than tightened.",
+        "c": "Agencies were paid by issuers, and the conflict pushed structured-finance ratings toward being too generous."
+      }
+    },
+    "frm-part-1-readiness-check-foundations-010": {
+      "topicId": "foundations",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "During the 2007–2009 crisis, haircuts on repo collateral backed by private-label securitizations rose sharply. What was the direct effect on dealers that financed these assets in the repo market?",
+      "options": {
+        "a": "They could borrow less against the same collateral and had to sell assets or raise funds",
+        "b": "They could borrow more against the same collateral, because higher haircuts protect lenders",
+        "c": "Their collateral was revalued upward, which offset the effect of the higher haircuts",
+        "d": "Their repo rates fell to zero as central banks cut policy rates, easing their funding"
+      },
+      "correctOptionId": "a",
+      "explanation": "A haircut is the discount a lender applies to collateral value: with a 2% haircut, $100 of bonds supports $98 of borrowing; with a 20% haircut, only $80. Rising haircuts forced dealers to fund the gap or deleverage by selling assets, which pushed prices down and raised haircuts again — a run on repo.",
+      "distractorExplanations": {
+        "b": "Reverses the mechanics: a higher haircut protects the lender precisely by lending less per dollar of collateral.",
+        "c": "Securitized collateral was being marked down, which compounded rather than offset the higher haircuts.",
+        "d": "Policy-rate cuts did not reach dealers whose collateral lenders no longer accepted on the old terms."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-001": {
+      "topicId": "quant-analysis",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "In a loan book, 5% of borrowers default. An early-warning model flags 80% of borrowers who later default and 10% of borrowers who do not. If a borrower is flagged, what is the probability that the borrower defaults?",
+      "options": {
+        "a": "4.0%",
+        "b": "29.6%",
+        "c": "42.1%",
+        "d": "80.0%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Bayes: P(D | flag) = P(flag | D) × P(D) / P(flag). P(flag) = 0.80 × 0.05 + 0.10 × 0.95 = 0.135, so P(D | flag) = 0.04 / 0.135 ≈ 29.6%. Because defaults are rare, most flags are false positives even with a good model.",
+      "distractorExplanations": {
+        "a": "That is the joint probability of defaulting and being flagged (0.80 × 0.05), not the conditional probability.",
+        "c": "Divides by the false-positive mass only (0.04 / 0.095) instead of by the total probability of a flag.",
+        "d": "Confuses P(flag | default) with P(default | flag), the classic inverse-probability error."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-002": {
+      "topicId": "quant-analysis",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A strategy's 36 monthly returns have a sample mean of 1.2% and a sample standard deviation of 3.0%. Testing the null hypothesis that the true mean is zero at the 5% level (two-tailed), what is the t-statistic and the conclusion?",
+      "options": {
+        "a": "t = 0.40; fail to reject the null that the mean is zero",
+        "b": "t = 2.40; fail to reject the null that the mean is zero",
+        "c": "t = 2.40; reject the null that the mean is zero",
+        "d": "t = 14.40; reject the null that the mean is zero"
+      },
+      "correctOptionId": "c",
+      "explanation": "Standard error = s / √n = 3.0% / √36 = 0.5%, so t = (1.2% − 0) / 0.5% = 2.40. The two-tailed 5% critical value with 35 degrees of freedom is about 2.03, and 2.40 > 2.03, so the null of a zero mean is rejected.",
+      "distractorExplanations": {
+        "a": "Divides the mean by the standard deviation instead of by the standard error s / √n.",
+        "b": "The t-statistic is right, but 2.40 exceeds the critical value of about 2.03, so the null is rejected.",
+        "d": "Multiplies by n instead of by √n when forming the test statistic."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-003": {
+      "topicId": "quant-analysis",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Regressing a fund's excess returns on the market's excess returns over 62 months gives a slope of 0.84 with a standard error of 0.30. At the 5% level, can you conclude that the fund's beta differs from 1?",
+      "options": {
+        "a": "No; t ≈ −0.53, well inside the critical values of about ±2.0",
+        "b": "Yes; t ≈ 2.80, which exceeds the critical value of about 2.0",
+        "c": "Yes; the estimated slope of 0.84 is below 1, so beta is lower",
+        "d": "No; slope estimates are tested against zero, not against 1"
+      },
+      "correctOptionId": "a",
+      "explanation": "t = (b − β0) / SE = (0.84 − 1) / 0.30 ≈ −0.53. With 60 degrees of freedom the 5% two-tailed critical value is about ±2.0, so the null that beta equals 1 cannot be rejected: the estimate is too imprecise to distinguish 0.84 from 1.",
+      "distractorExplanations": {
+        "b": "Tests beta against zero (0.84 / 0.30), not against the hypothesized value of 1.",
+        "c": "A point estimate below 1 is not evidence on its own; the gap must be large relative to its standard error.",
+        "d": "Any hypothesized value can be tested: t = (estimate − hypothesized value) / standard error."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-004": {
+      "topicId": "quant-analysis",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "An analyst adds a fourth explanatory variable to a regression. R² rises from 0.620 to 0.622, while adjusted R² falls from 0.611 to 0.609. What is the best interpretation?",
+      "options": {
+        "a": "The new variable is statistically significant, because R² increased",
+        "b": "The model got worse, because R² should fall when a useful variable is added",
+        "c": "The regression now suffers from perfect multicollinearity among its regressors",
+        "d": "The new variable adds too little fit to justify the degree of freedom it uses"
+      },
+      "correctOptionId": "d",
+      "explanation": "R² never falls when a regressor is added, so its small rise says nothing about usefulness. Adjusted R² = 1 − (1 − R²)(n − 1)/(n − k − 1) penalizes each extra variable; its decline shows the new variable's contribution is smaller than the penalty for the lost degree of freedom.",
+      "distractorExplanations": {
+        "a": "R² rises mechanically with any added variable; significance needs a t-test or F-test.",
+        "b": "R² cannot fall when a variable is added, useful or not; the warning sign is the drop in adjusted R².",
+        "c": "Perfect multicollinearity would make the regression impossible to estimate, not merely lower adjusted R²."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-005": {
+      "topicId": "quant-analysis",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A regression of bank stock returns on interest-rate changes omits credit-spread changes. Credit spreads affect bank returns and are correlated with rate changes. What is the consequence for the estimated rate coefficient?",
+      "options": {
+        "a": "It is unbiased but has a larger standard error than in the full model",
+        "b": "It is unbiased, because omitting a variable only lowers the model's R²",
+        "c": "It is biased only in small samples, and the bias disappears as n grows",
+        "d": "It is biased, because it absorbs part of the omitted spread effect"
+      },
+      "correctOptionId": "d",
+      "explanation": "Omitted variable bias needs two conditions: the omitted variable affects the dependent variable, and it is correlated with an included regressor. Both hold here, so the rate coefficient picks up part of the spread effect and is biased — and inconsistent, so more data does not fix it.",
+      "distractorExplanations": {
+        "a": "Higher variance without bias describes including an irrelevant or collinear variable, not omitting a relevant one.",
+        "b": "Omission is harmless for the coefficient only when the omitted variable is uncorrelated with the regressors.",
+        "c": "Omitted variable bias does not shrink with sample size; the estimator is inconsistent."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-006": {
+      "topicId": "quant-analysis",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "In a cross-sectional regression of trading costs on firm characteristics, the residual variance grows with firm size (conditional heteroskedasticity). What does this do to the OLS results?",
+      "options": {
+        "a": "Coefficients become biased, while the usual standard errors remain correct",
+        "b": "Coefficients and the usual standard errors both remain fully reliable",
+        "c": "Coefficients stay unbiased, but the usual standard errors are unreliable",
+        "d": "R² can no longer be computed, so the model's fit cannot be assessed"
+      },
+      "correctOptionId": "c",
+      "explanation": "Heteroskedasticity does not bias OLS coefficients, but the usual standard errors assume constant variance and are wrong, so t-tests and confidence intervals mislead. The standard fix is heteroskedasticity-robust (White) standard errors; weighted least squares can also restore efficiency.",
+      "distractorExplanations": {
+        "a": "Reverses the effect: the coefficients stay unbiased and it is the standard errors that break.",
+        "b": "The usual OLS standard errors rely on homoskedasticity, so inference is unreliable here.",
+        "d": "R² is still computed as usual; heteroskedasticity affects inference, not the ability to measure fit."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-007": {
+      "topicId": "quant-analysis",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A credit spread follows the stationary AR(1) process S(t) = 0.6 + 0.7 × S(t−1) + ε(t), with S in percentage points. What is the long-run mean of the spread?",
+      "options": {
+        "a": "0.42",
+        "b": "0.60",
+        "c": "0.86",
+        "d": "2.00"
+      },
+      "correctOptionId": "d",
+      "explanation": "For a stationary AR(1), the long-run mean is c / (1 − φ) = 0.6 / (1 − 0.7) = 2.0 percentage points. Because |φ| < 1, shocks decay and the spread reverts toward this level.",
+      "distractorExplanations": {
+        "a": "Multiplies the intercept by the AR coefficient instead of dividing by (1 − φ).",
+        "b": "Gives the intercept, which equals the mean only when φ = 0.",
+        "c": "Divides the intercept by φ instead of by (1 − φ)."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-008": {
+      "topicId": "quant-analysis",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A RiskMetrics EWMA model with λ = 0.94 estimated yesterday's daily volatility at 1.0%. Yesterday the asset returned −2.0%. What is today's updated daily volatility estimate?",
+      "options": {
+        "a": "1.03%",
+        "b": "1.09%",
+        "c": "1.18%",
+        "d": "1.95%"
+      },
+      "correctOptionId": "b",
+      "explanation": "EWMA: σ²(t) = λ × σ²(t−1) + (1 − λ) × r²(t−1) = 0.94 × 1.0² + 0.06 × 2.0² = 0.94 + 0.24 = 1.18 (in %²). Volatility = √1.18 ≈ 1.09%. The large move raises the estimate, but only through its 6% weight.",
+      "distractorExplanations": {
+        "a": "Uses the 2% return instead of its square: √(0.94 × 1 + 0.06 × 2).",
+        "c": "Stops at the variance (1.18) and forgets to take the square root.",
+        "d": "Swaps the weights, putting 0.94 on the latest squared return and 0.06 on the old variance."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-009": {
+      "topicId": "quant-analysis",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A GARCH(1,1) model of daily returns has ω = 0.000002, α = 0.08, and β = 0.90. What is the model's long-run daily volatility?",
+      "options": {
+        "a": "0.01%",
+        "b": "0.14%",
+        "c": "1.00%",
+        "d": "15.87%"
+      },
+      "correctOptionId": "c",
+      "explanation": "Long-run variance = ω / (1 − α − β) = 0.000002 / (1 − 0.98) = 0.0001, so long-run daily volatility = √0.0001 = 1.0%. Because α + β = 0.98 < 1, volatility mean-reverts to this level, slowly.",
+      "distractorExplanations": {
+        "a": "Reports the long-run variance (0.0001) as if it were the volatility.",
+        "b": "Divides ω by (α + β) instead of by (1 − α − β) before taking the root.",
+        "d": "Annualizes with √252; the question asks for the daily long-run volatility."
+      }
+    },
+    "frm-part-1-readiness-check-quant-analysis-010": {
+      "topicId": "quant-analysis",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A credit model has 400 candidate predictors, many of them irrelevant. The team wants a regularized regression that also drops irrelevant predictors from the model. Which method fits best?",
+      "options": {
+        "a": "LASSO, because its L1 penalty can set coefficients exactly to zero",
+        "b": "Ridge regression, because its L2 penalty sets weak coefficients to zero",
+        "c": "OLS, because adding predictors always improves out-of-sample accuracy",
+        "d": "PCA, because it keeps the original predictors and simply drops the rest"
+      },
+      "correctOptionId": "a",
+      "explanation": "LASSO adds a penalty proportional to the sum of absolute coefficients (L1), which pushes some coefficients exactly to zero — built-in variable selection. Ridge's squared (L2) penalty shrinks all coefficients toward zero but rarely makes any exactly zero.",
+      "distractorExplanations": {
+        "b": "Ridge shrinks coefficients toward zero but almost never to exactly zero, so it keeps every predictor.",
+        "c": "Unregularized OLS with 400 predictors tends to overfit, so out-of-sample accuracy usually falls.",
+        "d": "PCA builds new components as combinations of all predictors; it does not select original variables."
+      }
+    }
+  }
+}

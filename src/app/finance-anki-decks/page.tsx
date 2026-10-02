@@ -59,7 +59,7 @@ export async function generateMetadata(): Promise<Metadata> {
       openGraph: {
         title: "Finance Anki Decks | FINRA, Series 65, CFA | UniPrep2Go",
         description:
-          "Independent Anki flashcard decks for FINRA licensing, Series 65, CFA, FRM, and MBA admissions exams with linked free mocks.",
+          "Independent Anki flashcard decks for FINRA licensing, Series 65, CFA, FRM, and MBA admissions exams with linked timed mocks (first one free).",
         url: "/finance-anki-decks",
       },
     }),

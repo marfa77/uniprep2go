@@ -57,7 +57,7 @@ import { buildMockCompanionCheckouts } from "@/lib/mock-exams/mock-companion-dec
 import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getLiveQuestionBank } from "@/lib/mock-exams/question-bank-ops";
 import { isMockExamRunnableFromQuestions } from "@/lib/mock-exams/question-bank";
-import { isLearnPassEnabled } from "@/lib/mock-exams/learn-pass";
+import { isMockPaywallEnabled } from "@/lib/mock-exams/mock-pass";
 import {
   buildMockSeoDescription,
   buildMockSeoKeywords,
@@ -132,12 +132,12 @@ export async function generateMetadata({
 function mockEyebrow(config: NonNullable<ReturnType<typeof getMockExamConfig>>) {
   const vertical = getVerticalDefinition(config.verticalId);
   if (config.status === "coming_soon") {
-    return `${vertical?.label ?? "Exam prep"} · free practice test coming soon · notify me`;
+    return `${vertical?.label ?? "Exam prep"} · practice test coming soon · notify me`;
   }
   if (config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock") {
-    return `${vertical?.label ?? "Professional certification"} · free timed practice test`;
+    return `${vertical?.label ?? "Professional certification"} · timed practice test · first mock free`;
   }
-  return `${vertical?.label ?? "Exam prep"} · free timed practice test · ${config.examBody}`;
+  return `${vertical?.label ?? "Exam prep"} · timed practice test · first mock free · ${config.examBody}`;
 }
 
 export default async function MockExamPage({
@@ -249,7 +249,7 @@ export default async function MockExamPage({
           <MockExamClientLoader
             accessState={accessState}
             config={config}
-            learnPassEnabled={isLearnPassEnabled()}
+            paywallEnabled={isMockPaywallEnabled()}
             linkedCheckout={linkedCheckout}
             linkedDeckShortName={linkedDeck?.shortName}
             companionCheckouts={companionCheckouts}

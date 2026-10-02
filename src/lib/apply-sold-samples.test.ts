@@ -6,17 +6,32 @@ describe("applySoldSamplesToDeck", () => {
   it("keeps screenshot-faithful finance questions", () => {
     const cfa = getDeckBySlug("cfa-level-1-anki-deck");
     expect(cfa?.sampleCards.map((card) => card.question)).toEqual([
-      "What is a forward contract?",
-      "What is the no-arbitrage forward price for an asset with no income?",
-      "What is the forward price for an asset that pays income?",
+      "How is portfolio duration calculated?",
+      "What is the variance of a two-asset portfolio?",
+      "What is a protective put?",
     ]);
   });
 
-  it("replaces weak SIE definition stems", () => {
+  it("never overlays sold-sample text on a real card screenshot", () => {
     const sie = getDeckBySlug("sie-exam-anki-deck");
-    expect(sie?.sampleCards.map((card) => card.question)).not.toContain("What is the SEC?");
-    expect(sie?.sampleCards[0]?.question.length).toBeGreaterThan(28);
-    expect(sie?.sampleCards[0]?.imageUrl).toContain("/samples/sie-exam-anki-deck-sample-1");
+    expect(sie?.sampleCards[0]).toMatchObject({
+      question: "How do you find the conversion ratio and parity price of a convertible bond?",
+      imageUrl: "/samples/sie-exam-anki-deck-sample-1.webp",
+    });
+    const nebosh = getDeckBySlug("nebosh-anki-deck");
+    expect(nebosh?.sampleCards.some((card) => /bleach/i.test(card.question))).toBe(true);
+  });
+
+  it("uses sold samples only over cover images", () => {
+    const deck = applySoldSamplesToDeck({
+      slug: "sie-exam-anki-deck",
+      category: "finance",
+      coverImage: "/covers/sie.webp",
+      sampleCards: [{ question: "Old", answer: "Old", imageUrl: "/covers/sie.webp" }],
+    });
+    expect(deck.sampleCards).toHaveLength(3);
+    expect(deck.sampleCards.every((card) => card.imageUrl === "/covers/sie.webp")).toBe(true);
+    expect(deck.sampleCards[0]?.question).not.toBe("Old");
   });
 
   it("does not rewrite language-exam shop samples", () => {

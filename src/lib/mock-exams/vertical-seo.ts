@@ -1,3 +1,4 @@
+import { withMockAccessDisclosure } from "./mock-access-faq";
 /**
  * Long-form SEO copy for /mock-exams/v/[vertical] hubs.
  * Link lists alone are too thin for Google; each vertical gets unique Q&A-style body.
@@ -33,7 +34,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What citizenship practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks include U.S. citizenship civics, Life in the UK, Canadian and Australian citizenship, Leben in Deutschland, French naturalization themes, CCSE España, Finland kansalaisuuskoe (2027), Belgium Flanders/Wallonie, and other pathways listed on this hub — each with topic scoring and answer review.",
+          "Timed mocks (your first one free) include U.S. citizenship civics, Life in the UK, Canadian and Australian citizenship, Leben in Deutschland, French naturalization themes, CCSE España, Finland kansalaisuuskoe (2027), Belgium Flanders/Wallonie, and other pathways listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Are these official government citizenship exams?",
@@ -71,7 +72,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What building certification practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks include EPA 608, LEED Green Associate, LEED AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, BMS/BAS, PMP/CAPM, Six Sigma Green Belt, and related building pathways listed on this hub — each with topic scoring and answer review.",
+          "Timed mocks (your first one free) include EPA 608, LEED Green Associate, LEED AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, BMS/BAS, PMP/CAPM, Six Sigma Green Belt, and related building pathways listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Are these official EPA, USGBC, or RICS exams?",
@@ -180,7 +181,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What CDL practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks cover CDL general knowledge and common endorsements listed on this hub — each with topic scoring and answer review.",
+          "Timed mocks (your first one free) cover CDL general knowledge and common endorsements listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Are these official DMV CDL exams?",
@@ -241,7 +242,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What NREMT practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks for EMR, EMT, AEMT, and Paramedic readiness themes listed on this hub — each with topic scoring and answer review.",
+          "Timed mocks (your first one free) for EMR, EMT, AEMT, and Paramedic readiness themes listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Is this the official NREMT exam?",
@@ -409,7 +410,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What CPT practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks for major personal-trainer pathways listed on this hub — each with topic scoring and answer review.",
+          "Timed mocks (your first one free) for major personal-trainer pathways listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Are these official NASM or ACE exams?",
@@ -661,7 +662,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What US licensing practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks include SIE and Series pathways, insurance licensing themes, ServSafe, and related professional licenses listed on this hub.",
+          "Timed mocks (your first one free) include SIE and Series pathways, insurance licensing themes, ServSafe, and related professional licenses listed on this hub.",
       },
       {
         question: "Are these official FINRA or ServSafe exams?",
@@ -689,7 +690,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         question: "What finance practice tests are free on UniPrep2Go?",
         answer:
-          "Free timed mocks include CFA Level 1/2, FRM Part 1, GMAT Focus, GRE, SAT, and related pathways listed on this hub — each with topic scoring and answer review.",
+          "Timed mocks (your first one free) include CFA Level 1/2, FRM Part 1, GMAT Focus, GRE, SAT, and related pathways listed on this hub — each with topic scoring and answer review.",
       },
       {
         question: "Are these official CFA Institute or GARP exams?",
@@ -706,5 +707,6 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
 };
 
 export function getVerticalSeoCopy(verticalId: MockVerticalId): VerticalSeoCopy {
-  return verticalSeoCopy[verticalId];
+  const copy = verticalSeoCopy[verticalId];
+  return copy ? { ...copy, faqs: withMockAccessDisclosure(copy.faqs) } : copy;
 }

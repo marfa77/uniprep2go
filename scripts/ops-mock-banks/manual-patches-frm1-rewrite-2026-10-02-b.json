@@ -1,0 +1,574 @@
+{
+  "frm-part-1-readiness-check": {
+    "frm-part-1-readiness-check-financial-markets-001": {
+      "topicId": "financial-markets",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "An airline will buy 2 million gallons of jet fuel in three months and hedges with heating oil futures (42,000 gallons per contract). The standard deviation of price changes is 0.032 for jet fuel and 0.040 for the futures, and their correlation is 0.90. How many futures contracts minimize the variance of the hedged position?",
+      "options": {
+        "a": "Buy 34 contracts",
+        "b": "Buy 38 contracts",
+        "c": "Buy 48 contracts",
+        "d": "Sell 34 contracts"
+      },
+      "correctOptionId": "a",
+      "explanation": "Minimum-variance hedge ratio h* = ρ × σS / σF = 0.90 × 0.032 / 0.040 = 0.72. Contracts = h* × exposure / contract size = 0.72 × 2,000,000 / 42,000 ≈ 34.3, so about 34 contracts, bought because the airline is short jet fuel.",
+      "distractorExplanations": {
+        "b": "Uses σS / σF = 0.80 and leaves out the correlation.",
+        "c": "Hedges one-for-one (h = 1), ignoring imperfect correlation and the different volatilities.",
+        "d": "Right size, wrong side: the airline will buy fuel, so it is short the commodity and must buy futures."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-002": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A manager wants to cut the beta of a $120 million equity portfolio from 1.2 to 0.6 using stock index futures. The futures price is 4,000 and the contract multiplier is $250. What should she do?",
+      "options": {
+        "a": "Buy 72 contracts",
+        "b": "Sell 60 contracts",
+        "c": "Sell 72 contracts",
+        "d": "Sell 144 contracts"
+      },
+      "correctOptionId": "c",
+      "explanation": "Contracts = (β target − β current) × portfolio value / futures contract value = (0.6 − 1.2) × $120,000,000 / (4,000 × $250) = −0.6 × 120 = −72. The negative sign means sell 72 contracts.",
+      "distractorExplanations": {
+        "a": "Buying futures raises beta; reducing beta from 1.2 to 0.6 requires selling.",
+        "b": "Scales the portfolio by the ratio of the betas (0.6 / 1.2 × 120) instead of using their difference.",
+        "d": "Uses the full beta of 1.2, which would hedge the portfolio all the way to a beta of zero."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-003": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A stock index is at 2,000. The continuously compounded risk-free rate is 4% and the index's continuous dividend yield is 1.5%. What is the no-arbitrage price of a six-month futures contract on the index?",
+      "options": {
+        "a": "1,975.16",
+        "b": "2,025.16",
+        "c": "2,040.40",
+        "d": "2,055.76"
+      },
+      "correctOptionId": "b",
+      "explanation": "F0 = S0 × e^((r − q) × T) = 2,000 × e^((0.04 − 0.015) × 0.5) = 2,000 × e^0.0125 ≈ 2,025.16. Dividends received while holding the index offset part of the financing cost, so the futures premium reflects r − q.",
+      "distractorExplanations": {
+        "a": "Reverses the carry, using (q − r), so the futures price falls below spot.",
+        "c": "Ignores the dividend yield, which lowers the net cost of carrying the index.",
+        "d": "Adds the dividend yield to the financing rate instead of subtracting it."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-004": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The spot exchange rate is USD 1.1000 per EUR. One-year interest rates are 5% in U.S. dollars and 3% in euros (annual compounding). What one-year forward rate, in USD per EUR, rules out covered interest arbitrage?",
+      "options": {
+        "a": "1.0790",
+        "b": "1.1000",
+        "c": "1.1214",
+        "d": "1.1220"
+      },
+      "correctOptionId": "c",
+      "explanation": "Covered interest parity: F = S × (1 + r USD) / (1 + r EUR) = 1.1000 × 1.05 / 1.03 ≈ 1.1214 USD per EUR. The lower-yielding euro trades at a forward premium that exactly offsets its lower interest rate.",
+      "distractorExplanations": {
+        "a": "Inverts the rate ratio (1.03 / 1.05), which would put the lower-yielding euro at a forward discount.",
+        "b": "Assumes the forward equals spot, ignoring the interest rate differential.",
+        "d": "Approximates by adding the 2% differential to spot; exact parity uses the ratio 1.05 / 1.03."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-005": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A non-dividend-paying stock trades at $50. A one-year European call with a $50 strike costs $6.00, and the one-year risk-free rate is 5% (annual compounding). What is the no-arbitrage price of the matching European put?",
+      "options": {
+        "a": "$2.38",
+        "b": "$3.62",
+        "c": "$6.00",
+        "d": "$8.38"
+      },
+      "correctOptionId": "b",
+      "explanation": "Put–call parity: c + PV(K) = p + S, so p = c − S + PV(K) = 6.00 − 50 + 50 / 1.05 = 6.00 − 50 + 47.62 = $3.62.",
+      "distractorExplanations": {
+        "a": "Gives S − PV(K) = 50 − 47.62, the lower bound on the call's value, not the put price.",
+        "c": "Assumes at-the-money puts and calls cost the same; with positive rates the call is worth more.",
+        "d": "Adds S − PV(K) to the call price instead of subtracting it."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-006": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Why is it never optimal to exercise an American call option early on a non-dividend-paying stock?",
+      "options": {
+        "a": "Early exercise pays only when the stock is deep in the money near expiry",
+        "b": "American calls are worth less than otherwise identical European calls",
+        "c": "Exercising early locks in the option's remaining time value immediately",
+        "d": "The call is worth at least S − PV(K), more than the S − K from exercise"
+      },
+      "correctOptionId": "d",
+      "explanation": "Before expiry, a call on a non-dividend stock is worth at least S − PV(K), which exceeds S − K when rates are positive, and it also keeps insurance value against a price fall. Selling the call therefore beats exercising it, so the American call is worth the same as the European call.",
+      "distractorExplanations": {
+        "a": "Even deep in the money, selling the call beats exercising because the call is worth at least S − PV(K) > S − K.",
+        "b": "An American option gives every right a European one does and more, so it is never worth less.",
+        "c": "Exercise destroys the time value; the holder receives only the intrinsic value S − K."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-007": {
+      "topicId": "financial-markets",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A trader buys a straddle: a call and a put on the same stock, both with a $100 strike and the same expiry. The call costs $4 and the put costs $3. At expiry, at what stock prices does the position break even?",
+      "options": {
+        "a": "$86 and $114",
+        "b": "$93 and $107",
+        "c": "$96 and $103",
+        "d": "$97 and $104"
+      },
+      "correctOptionId": "b",
+      "explanation": "The straddle costs 4 + 3 = $7, and at expiry only one leg pays off. It breaks even when that leg is worth $7: S = 100 − 7 = $93 on the downside or S = 100 + 7 = $107 on the upside. The trader profits from a large move in either direction.",
+      "distractorExplanations": {
+        "a": "Counts the combined $7 premium twice on each side.",
+        "c": "Applies the call premium on the downside and the put premium on the upside, each only once.",
+        "d": "Recovers each leg's own premium, but the full $7 cost must be recovered on either side."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-008": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A company has entered a $20 million plain vanilla interest rate swap in which it pays a fixed 4.0% and receives floating SOFR, with semiannual net settlement. For the current period, the floating rate is 4.6% and the accrual fraction is 0.5. What is the company's net settlement?",
+      "options": {
+        "a": "Receives $60,000",
+        "b": "Pays $60,000",
+        "c": "Receives $120,000",
+        "d": "Receives $460,000"
+      },
+      "correctOptionId": "a",
+      "explanation": "Net settlement = (floating − fixed) × notional × accrual = (4.6% − 4.0%) × $20,000,000 × 0.5 = $60,000. Because floating exceeds fixed, the pay-fixed company receives the difference; the notional is never exchanged.",
+      "distractorExplanations": {
+        "b": "Reverses the direction: floating (4.6%) exceeds fixed (4.0%), so the fixed payer receives.",
+        "c": "Uses the annual rate difference without the 0.5 accrual fraction.",
+        "d": "Counts the gross floating payment; swap legs are netted, and the fixed leg offsets most of it."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-009": {
+      "topicId": "financial-markets",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A firm is long a 3×6 FRA on $10 million notional at a contract rate of 5.0% (actual/360, 90-day period). At settlement in three months the 90-day reference rate is 5.6%, and the FRA settles in cash at the start of the period. What does the firm receive or pay?",
+      "options": {
+        "a": "Pays $14,793",
+        "b": "Receives $14,793",
+        "c": "Receives $15,000 at the end of the period",
+        "d": "Receives $60,000"
+      },
+      "correctOptionId": "b",
+      "explanation": "A long FRA gains when rates rise: the interest difference is (5.6% − 5.0%) × 90/360 × $10,000,000 = $15,000, payable at the end of the period. Settling at the start, it is discounted at the reference rate: 15,000 / (1 + 0.056 × 0.25) ≈ $14,793.",
+      "distractorExplanations": {
+        "a": "Reverses the direction: the long FRA benefits when the reference rate rises above the contract rate.",
+        "c": "That is the undiscounted end-of-period amount; this FRA settles at the start, so the $15,000 is discounted.",
+        "d": "Omits the 90/360 accrual fraction, treating the rate difference as earned for a full year."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-010": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A trader buys 2 gold futures contracts (100 ounces each) at $2,000 per ounce. Initial margin is $10,000 and maintenance margin $7,500 per contract. The next day the settlement price is $1,970. What variation margin, if any, must the trader deposit?",
+      "options": {
+        "a": "$0",
+        "b": "$1,000",
+        "c": "$6,000",
+        "d": "$14,000"
+      },
+      "correctOptionId": "c",
+      "explanation": "Loss = ($2,000 − $1,970) × 200 oz = $6,000, so the account falls from $20,000 to $14,000, below the $15,000 maintenance margin. The trader must restore the balance to the initial $20,000, depositing $6,000 of variation margin.",
+      "distractorExplanations": {
+        "a": "The balance ($14,000) is below the $15,000 maintenance level, so a margin call is triggered.",
+        "b": "Tops the account up only to the maintenance level; futures margin calls restore the initial margin.",
+        "d": "Confuses the remaining account balance with the amount the trader must deposit."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-011": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Regulators have required most standardized OTC interest rate swaps to be cleared through central counterparties (CCPs). Which statement about this change is most accurate?",
+      "options": {
+        "a": "It removes counterparty risk entirely, because a CCP cannot default",
+        "b": "It lowers collateral needs, because CCPs do not collect initial margin",
+        "c": "It applies only to exchange-traded futures, so swaps are unaffected",
+        "d": "It allows multilateral netting but concentrates risk in the CCP"
+      },
+      "correctOptionId": "d",
+      "explanation": "A CCP becomes buyer to every seller and seller to every buyer, so each member's exposures net multilaterally and are collateralized with initial margin, variation margin, and a default fund. The trade-off is concentration: the CCP becomes a systemically critical node whose failure would be severe.",
+      "distractorExplanations": {
+        "a": "CCPs reduce but do not eliminate counterparty risk; they can fail, which is why their default waterfalls matter.",
+        "b": "CCPs collect both initial and variation margin, so collateral needs often rise for some members.",
+        "c": "The clearing mandate targets standardized OTC derivatives such as swaps; futures were already cleared."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-012": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Mortgage rates fall by 150 basis points. What is the main risk for an investor holding agency pass-through MBS bought at a premium?",
+      "options": {
+        "a": "Prepayments speed up, returning principal to reinvest at lower rates",
+        "b": "Slower prepayments lengthen the security's average life beyond the plan",
+        "c": "The agency guarantee lapses, exposing the investor to default losses",
+        "d": "The MBS price rises far more than a comparable noncallable bond's price"
+      },
+      "correctOptionId": "a",
+      "explanation": "When rates fall, homeowners refinance, so prepayments accelerate. Principal comes back sooner (contraction risk) and must be reinvested at lower yields, and the premium paid is lost faster. This prepayment option gives MBS negative convexity: prices rise less than a comparable noncallable bond's.",
+      "distractorExplanations": {
+        "b": "That is extension risk, which arises when rates rise and refinancing slows.",
+        "c": "The agency guarantee does not depend on interest rates; credit risk is not the issue here.",
+        "d": "Reverses negative convexity: the prepayment option caps MBS price gains when rates fall."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-013": {
+      "topicId": "financial-markets",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The Treasury bond futures settlement price is 112.00. The short can deliver any of three bonds. Which bond is cheapest to deliver?",
+      "options": {
+        "a": "Bond A: quoted price 118.50, conversion factor 1.0500",
+        "b": "Bond B: quoted price 104.20, conversion factor 0.9250",
+        "c": "Bond C: quoted price 131.10, conversion factor 1.1650",
+        "d": "All three, because conversion factors equalize delivery cost"
+      },
+      "correctOptionId": "b",
+      "explanation": "The short delivers the bond that minimizes quoted price − futures price × conversion factor: A = 118.50 − 117.60 = 0.90; B = 104.20 − 103.60 = 0.60; C = 131.10 − 130.48 = 0.62. Bond B is cheapest to deliver.",
+      "distractorExplanations": {
+        "a": "Net cost = 118.50 − 112 × 1.05 = 0.90, the most expensive of the three to deliver.",
+        "c": "Net cost = 131.10 − 112 × 1.165 = 0.62, slightly more than Bond B's 0.60.",
+        "d": "Conversion factors only approximately equalize bonds; differences in net delivery cost remain."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-014": {
+      "topicId": "financial-markets",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A hedge fund charges a 20% incentive fee subject to a high-water mark. Its assets fell from $100 million to $90 million in year 1 and rose to $108 million in year 2, with no flows. Ignoring the management fee, what incentive fee is earned for year 2?",
+      "options": {
+        "a": "$0",
+        "b": "$1.6 million",
+        "c": "$2.16 million",
+        "d": "$3.6 million"
+      },
+      "correctOptionId": "b",
+      "explanation": "The high-water mark is the previous peak, $100 million. The incentive fee applies only to gains above it: 20% × ($108M − $100M) = $1.6 million. The first $10 million of year-2 gains merely recovered year-1 losses.",
+      "distractorExplanations": {
+        "a": "The fund ended above its $100 million high-water mark, so gains above that level earn the fee.",
+        "c": "That is 2% of year-end assets, a management-fee figure, not the incentive fee.",
+        "d": "Charges 20% on the full $18 million recovery, ignoring the high-water mark."
+      }
+    },
+    "frm-part-1-readiness-check-financial-markets-015": {
+      "topicId": "financial-markets",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A company's defined benefit pension plan becomes underfunded after a fall in interest rates raises the present value of its promised benefits. Who bears this shortfall?",
+      "options": {
+        "a": "The sponsoring company, which must make additional contributions",
+        "b": "The plan participants, whose promised pensions are cut to match assets",
+        "c": "The plan's asset managers, who guarantee a minimum investment return",
+        "d": "The government pension insurer, which covers every funding gap in full"
+      },
+      "correctOptionId": "a",
+      "explanation": "In a defined benefit plan the employer promises a benefit formula, so investment shortfalls, lower discount rates, and longer-than-expected lifetimes fall on the sponsor, which must contribute more. In a defined contribution plan, participants bear these risks instead.",
+      "distractorExplanations": {
+        "b": "That describes a defined contribution plan, where benefits depend on account performance.",
+        "c": "Asset managers invest for a fee and do not guarantee the plan's liabilities.",
+        "d": "Government insurers such as the PBGC step in only when a sponsor fails, and only up to limits."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-001": {
+      "topicId": "valuation-models",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A $20 million equity position has daily return volatility of 1.5%. Assuming normal returns with zero mean, what is its 10-day 99% VaR (z = 2.33) under the square-root-of-time rule?",
+      "options": {
+        "a": "$0.70 million",
+        "b": "$1.56 million",
+        "c": "$2.21 million",
+        "d": "$6.99 million"
+      },
+      "correctOptionId": "c",
+      "explanation": "VaR = position × daily σ × z × √T = $20M × 1.5% × 2.33 × √10 = $699,000 × 3.162 ≈ $2.21 million. Square-root-of-time scaling assumes returns are independent and identically distributed.",
+      "distractorExplanations": {
+        "a": "That is the 1-day VaR; it still needs scaling by √10.",
+        "b": "Uses the 95% multiplier (1.645) instead of the 99% multiplier (2.33).",
+        "d": "Scales by 10 instead of √10; volatility grows with the square root of time."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-002": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A historical simulation over 1,000 trading days produces these ten largest daily losses ($ millions): 9.8, 8.1, 7.4, 6.9, 6.2, 5.8, 5.5, 5.1, 4.9, 4.6. Using these 10 tail observations, what is the one-day 99% expected shortfall?",
+      "options": {
+        "a": "$4.60 million",
+        "b": "$6.43 million",
+        "c": "$7.68 million",
+        "d": "$64.30 million"
+      },
+      "correctOptionId": "b",
+      "explanation": "At 99% over 1,000 days the tail holds 1% × 1,000 = 10 observations. Expected shortfall is their average: 64.3 / 10 = $6.43 million. ES answers how bad the loss is once we are in the tail, which VaR does not.",
+      "distractorExplanations": {
+        "a": "That is the edge of the tail, a VaR-type figure, not the average loss within the tail.",
+        "c": "Averages only the five worst losses — the 99.5% tail, not the 99% tail.",
+        "d": "Sums the ten tail losses instead of averaging them."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-003": {
+      "topicId": "valuation-models",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Two bonds each have a 4% chance of defaulting with a $100 loss, and no loss otherwise; defaults are independent. Each bond's 95% VaR is $0, but the chance of at least one default in the two-bond portfolio is 7.84%, so the portfolio's 95% VaR is $100. What does this illustrate?",
+      "options": {
+        "a": "VaR fails monotonicity, because the portfolio loses more in every state",
+        "b": "Expected shortfall fails subadditivity in exactly the same example",
+        "c": "VaR fails translation invariance, because no cash is added to the bonds",
+        "d": "VaR can fail subadditivity, so it can penalize diversification"
+      },
+      "correctOptionId": "d",
+      "explanation": "Subadditivity requires VaR(A + B) ≤ VaR(A) + VaR(B). Here $100 > $0 + $0, so VaR is not a coherent risk measure: combining the bonds appears to create risk. Expected shortfall averages the tail losses and is always subadditive, one reason the Basel FRTB moved from VaR to ES.",
+      "distractorExplanations": {
+        "a": "Monotonicity concerns a position that loses more in every state; that comparison is not made here.",
+        "b": "Expected shortfall is coherent and subadditive, so it would not show this anomaly.",
+        "c": "Translation invariance concerns adding cash to a position, which plays no role in this example."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-004": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A bank's 99% one-day VaR model recorded 7 exceptions over the last 250 trading days. How is the model classified under the Basel traffic-light backtest?",
+      "options": {
+        "a": "Yellow zone: too many exceptions, so the capital multiplier rises",
+        "b": "Green zone: 7 exceptions are consistent with an accurate 99% VaR model",
+        "c": "Red zone: the model must be rejected and replaced immediately",
+        "d": "No conclusion: a backtest needs at least 1,000 days of data"
+      },
+      "correctOptionId": "a",
+      "explanation": "An accurate 99% model should breach about 1% × 250 = 2.5 times a year. Under the Basel traffic-light test, 0–4 exceptions are green, 5–9 yellow, and 10 or more red. Seven exceptions fall in the yellow zone, where the supervisor adds a plus factor to the capital multiplier and the bank must investigate.",
+      "distractorExplanations": {
+        "b": "The green zone ends at 4 exceptions; 7 is almost three times the 2.5 expected.",
+        "c": "The red zone starts at 10 exceptions; 7 calls for a higher multiplier and review, not automatic rejection.",
+        "d": "The Basel backtest is defined on 250 days of data, so a conclusion is required."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-005": {
+      "topicId": "valuation-models",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A bank has a $5 million exposure at default to a borrower with a one-year probability of default of 2% and an expected recovery rate of 40%. What is the one-year expected loss?",
+      "options": {
+        "a": "$40,000",
+        "b": "$60,000",
+        "c": "$100,000",
+        "d": "$3,000,000"
+      },
+      "correctOptionId": "b",
+      "explanation": "EL = PD × LGD × EAD, with LGD = 1 − recovery = 60%. EL = 0.02 × 0.60 × $5,000,000 = $60,000. Expected loss is covered by pricing and provisions; capital is held against unexpected loss.",
+      "distractorExplanations": {
+        "a": "Uses the 40% recovery rate as if it were the loss given default.",
+        "c": "Leaves out loss given default, assuming the whole exposure is lost on default.",
+        "d": "Gives the loss if default occurs (EAD × LGD) without weighting it by the 2% PD."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-006": {
+      "topicId": "valuation-models",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A $5 million loan has a one-year probability of default of 2% and a fixed loss given default of 60%. What is its one-year unexpected loss, measured as the standard deviation of the credit loss?",
+      "options": {
+        "a": "$60,000",
+        "b": "$420,000",
+        "c": "$700,000",
+        "d": "$2,940,000"
+      },
+      "correctOptionId": "b",
+      "explanation": "With a fixed LGD, the credit loss is a Bernoulli outcome scaled by EAD × LGD, so UL = EAD × LGD × √[PD × (1 − PD)] = $5,000,000 × 0.60 × √(0.02 × 0.98) = $3,000,000 × 0.14 = $420,000.",
+      "distractorExplanations": {
+        "a": "That is the expected loss (PD × LGD × EAD), not the standard deviation around it.",
+        "c": "Leaves out the 60% loss given default, which scales the loss if default occurs.",
+        "d": "Multiplies EAD × LGD by (1 − PD) instead of by √[PD × (1 − PD)]."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-007": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A trader is long $10 million face of a 10-year bond with a DV01 of 0.081 per 100 face. She hedges with a 5-year note whose DV01 is 0.045 per 100 face. What hedge makes the position DV01-neutral?",
+      "options": {
+        "a": "Sell $5.56 million face of the note",
+        "b": "Sell $10.00 million face of the note",
+        "c": "Sell $18.00 million face of the note",
+        "d": "Buy $18.00 million face of the 5-year note"
+      },
+      "correctOptionId": "c",
+      "explanation": "A DV01-neutral hedge equates dollar sensitivities: hedge face = $10,000,000 × 0.081 / 0.045 = $18 million. Each dollar of the 5-year note is less rate-sensitive, so more face is needed, and it is sold to offset the long bond.",
+      "distractorExplanations": {
+        "a": "Inverts the DV01 ratio (0.045 / 0.081), leaving about 70% of the rate risk unhedged.",
+        "b": "Matches face amounts, ignoring that the 5-year note is far less rate-sensitive than the bond.",
+        "d": "Buying the note adds rate exposure instead of offsetting the long bond."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-008": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A bond has a modified duration of 7.0 and convexity of 60. Using the duration–convexity approximation, what is the percentage price change if its yield rises by 100 basis points?",
+      "options": {
+        "a": "−7.3%",
+        "b": "−7.0%",
+        "c": "−6.7%",
+        "d": "+23.0%"
+      },
+      "correctOptionId": "c",
+      "explanation": "%ΔP ≈ −D × Δy + ½ × C × (Δy)² = −7.0 × 0.01 + 0.5 × 60 × (0.01)² = −7.0% + 0.3% = −6.7%. Positive convexity cushions the loss when yields rise.",
+      "distractorExplanations": {
+        "a": "Subtracts the convexity term; positive convexity adds to price for a move in either direction.",
+        "b": "Uses duration alone and ignores the convexity adjustment.",
+        "d": "Plugs in Δy = 1 (percent) instead of 0.01 (decimal), so the convexity term swamps duration."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-009": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A two-year bond pays a 5% annual coupon on $100 face. The one-year spot rate is 4% and the two-year spot rate is 6% (annual compounding). What is the bond's no-arbitrage price?",
+      "options": {
+        "a": "$98.17",
+        "b": "$98.26",
+        "c": "$100.00",
+        "d": "$101.89"
+      },
+      "correctOptionId": "b",
+      "explanation": "Discount each cash flow at its own spot rate: P = 5 / 1.04 + 105 / 1.06² = 4.81 + 93.45 = $98.26.",
+      "distractorExplanations": {
+        "a": "Discounts both cash flows at the two-year spot rate; the first coupon should use the one-year rate.",
+        "c": "Assumes the bond trades at par, as if a flat 5% rate applied to both periods.",
+        "d": "Discounts both cash flows at the one-year spot rate of 4%."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-010": {
+      "topicId": "valuation-models",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "The one-year spot rate is 3.0% and the two-year spot rate is 4.5%, both with annual compounding. What is the one-year forward rate one year from now?",
+      "options": {
+        "a": "1.50%",
+        "b": "3.75%",
+        "c": "6.02%",
+        "d": "7.50%"
+      },
+      "correctOptionId": "c",
+      "explanation": "Solve (1 + z2)² = (1 + z1) × (1 + f): f = 1.045² / 1.03 − 1 = 1.092025 / 1.03 − 1 ≈ 6.02%. Investing two years at 4.5% must equal investing one year at 3% and rolling over at the forward rate.",
+      "distractorExplanations": {
+        "a": "Subtracts the spot rates; the forward rate is a rate in its own right, not the gap between rates.",
+        "b": "Averages the two spot rates; the forward must make the two-year return match.",
+        "d": "Adds the two spot rates instead of solving (1.045)² = 1.03 × (1 + f)."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-011": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A stock at $50 will move to $60 or $40 in one year. The one-year risk-free rate is 5% (annual compounding). In a one-step binomial model, what is the value of a one-year European call with a $50 strike?",
+      "options": {
+        "a": "$4.76",
+        "b": "$5.95",
+        "c": "$6.25",
+        "d": "$10.00"
+      },
+      "correctOptionId": "b",
+      "explanation": "Risk-neutral probability p = (1.05 − 0.8) / (1.2 − 0.8) = 0.625. The call pays $10 in the up state and $0 in the down state, so c = (0.625 × 10 + 0.375 × 0) / 1.05 ≈ $5.95.",
+      "distractorExplanations": {
+        "a": "Uses a 50/50 probability instead of the risk-neutral probability of 0.625.",
+        "c": "Forgets to discount the expected payoff at the risk-free rate.",
+        "d": "Takes the up-state payoff, ignoring both the probabilities and discounting."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-012": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A dealer has written 100 European call contracts (100 shares each) on a non-dividend-paying stock. In the Black–Scholes–Merton model, N(d1) = 0.62. What trade makes the position delta-neutral?",
+      "options": {
+        "a": "Buy 6,200 shares",
+        "b": "Buy 3,800 shares",
+        "c": "Buy 10,000 shares",
+        "d": "Sell 6,200 shares"
+      },
+      "correctOptionId": "a",
+      "explanation": "A BSM call's delta is N(d1) = 0.62, so 10,000 written calls have a delta of −6,200. Buying 6,200 shares (delta +1 each) offsets it. The hedge must be rebalanced as delta changes with the stock price and time.",
+      "distractorExplanations": {
+        "b": "Uses 1 − N(d1) = 0.38, the size of a put's delta, not the call's.",
+        "c": "Hedges one share per option, ignoring that the call's delta is only 0.62.",
+        "d": "Selling shares adds negative delta to a position that is already short delta."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-013": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "An options book is delta-neutral but has large negative gamma. Which action makes it gamma-neutral?",
+      "options": {
+        "a": "Buy more of the underlying stock, which carries positive gamma",
+        "b": "Sell more options with the same strike and expiry as the book",
+        "c": "Sell futures on the underlying until the book's gamma is zero",
+        "d": "Buy traded options, then rebalance delta with the underlying"
+      },
+      "correctOptionId": "d",
+      "explanation": "Gamma is the rate of change of delta. The underlying and its futures have zero gamma, so only options can change a book's gamma. Buying options adds positive gamma; their delta is then neutralized with the underlying, leaving the book both delta- and gamma-neutral.",
+      "distractorExplanations": {
+        "a": "The underlying has a delta of 1 and a gamma of zero, so trading it cannot change gamma.",
+        "b": "Selling options adds more negative gamma, making the problem worse.",
+        "c": "Futures, like the underlying, have essentially zero gamma and only change delta."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-014": {
+      "topicId": "valuation-models",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A trader conceals losses for months by booking fictitious offsetting trades. Under the Basel operational risk event types, how is the resulting loss classified?",
+      "options": {
+        "a": "Clients, products, and business practices",
+        "b": "Execution, delivery, and process management",
+        "c": "External fraud",
+        "d": "Internal fraud"
+      },
+      "correctOptionId": "d",
+      "explanation": "Basel defines internal fraud as losses from acts intended to defraud, misappropriate property, or circumvent regulation or company policy involving at least one internal party. Unauthorized trading and hidden positions (Barings, Société Générale) are the classic cases.",
+      "distractorExplanations": {
+        "a": "That category covers unintentional or negligent failures toward clients, such as mis-selling.",
+        "b": "That category covers unintentional processing errors, not deliberate concealment by an employee.",
+        "c": "External fraud is committed by a third party; here the perpetrator is the firm's own trader."
+      }
+    },
+    "frm-part-1-readiness-check-valuation-models-015": {
+      "topicId": "valuation-models",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "During a recession, a bank's internal point-in-time PD estimates rise sharply, while agency ratings for the same borrowers barely change. What best explains the difference?",
+      "options": {
+        "a": "Agencies rate through the cycle, looking past temporary conditions",
+        "b": "Agencies rate point in time, so ratings move only after defaults occur",
+        "c": "Agencies may revise a rating only once a year, as required by regulation",
+        "d": "Agencies base ratings on equity prices, which are stable in recessions"
+      },
+      "correctOptionId": "a",
+      "explanation": "Rating agencies aim for through-the-cycle ratings that reflect creditworthiness over a full business cycle, so ratings move slowly and avoid reversals. Point-in-time models, such as bank PDs built from current financials or market data, rise quickly in a downturn. The trade-off is stability versus timeliness.",
+      "distractorExplanations": {
+        "b": "Point-in-time measures are the responsive ones; agencies deliberately rate through the cycle.",
+        "c": "No rule limits agencies to annual revisions; they can act at any time.",
+        "d": "Agency ratings rest mainly on fundamental credit analysis, and equity prices fall in recessions anyway."
+      }
+    }
+  }
+}

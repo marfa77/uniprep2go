@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Deck } from "@/lib/decks";
+import { MOCK_ACCESS_SHORT } from "@/lib/mock-exams/mock-pass";
 import { getDeckLongDescription, formatExamFocusedContent } from "@/lib/deck-page-copy";
 import { getDeckLinkedMock, getDeckLinkedMocks } from "@/lib/deck-seo";
 import { getDeckSeoProfile } from "@/lib/deck-seo";
@@ -61,7 +62,7 @@ export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {
           className="mt-5 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
           href={`/mock-exams/${linkedMock.slug}`}
         >
-          Take the free {deck.shortName} practice test first
+          Take the {deck.shortName} practice test first ({MOCK_ACCESS_SHORT})
         </Link>
       ) : null}
     </section>

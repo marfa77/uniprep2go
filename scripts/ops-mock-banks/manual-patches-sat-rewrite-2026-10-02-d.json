@@ -1,0 +1,688 @@
+{
+  "sat-readiness-check": {
+    "sat-readiness-check-math-037": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "In the equation x² + 8x + c = 0, c is a constant. For what value of c does the equation have exactly one real solution?",
+      "options": {
+        "a": "4",
+        "b": "8",
+        "c": "16",
+        "d": "64"
+      },
+      "correctOptionId": "c",
+      "explanation": "Exactly one real solution means the discriminant is zero: 8² - 4(1)(c) = 0, so 64 = 4c and c = 16. Then x² + 8x + 16 = (x + 4)².",
+      "distractorExplanations": {
+        "a": "Uses half of 8 without squaring it; completing the square needs (8/2)² = 16.",
+        "b": "Copies the coefficient of x instead of using the discriminant.",
+        "d": "Sets c equal to b² and forgets to divide by 4a."
+      }
+    },
+    "sat-readiness-check-math-038": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "What is the solution to the equation √(2x + 3) = 5?",
+      "options": {
+        "a": "1",
+        "b": "11",
+        "c": "14",
+        "d": "22"
+      },
+      "correctOptionId": "b",
+      "explanation": "Square both sides: 2x + 3 = 25. Subtract 3: 2x = 22. Divide by 2: x = 11. Check: √(25) = 5.",
+      "distractorExplanations": {
+        "a": "Forgets to square both sides: 2x + 3 = 5 gives x = 1.",
+        "c": "Adds 3 instead of subtracting it: 2x = 28.",
+        "d": "Stops at 2x = 22 without dividing by 2."
+      }
+    },
+    "sat-readiness-check-math-039": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The graphs of y = x² - 4 and y = 3x intersect in the xy-plane at two points. What is the positive x-coordinate of an intersection point?",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "correctOptionId": "d",
+      "explanation": "Set the expressions equal: x² - 4 = 3x, so x² - 3x - 4 = 0, which factors as (x - 4)(x + 1) = 0. The x-coordinates are 4 and -1; the positive one is 4.",
+      "distractorExplanations": {
+        "a": "Drops the sign of the root -1 from the factor (x + 1).",
+        "b": "Solves x² - 4 = 0, the parabola's x-intercept, instead of intersecting the two graphs.",
+        "c": "Uses the slope of the line, 3, as an intersection value."
+      }
+    },
+    "sat-readiness-check-math-040": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "If 12 / (x - 2) = 3, what is the value of x?",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "14/3",
+        "d": "6"
+      },
+      "correctOptionId": "d",
+      "explanation": "Multiply both sides by (x - 2): 12 = 3(x - 2) = 3x - 6. Then 3x = 18 and x = 6. Check: 12 / 4 = 3.",
+      "distractorExplanations": {
+        "a": "x = 2 makes the denominator zero, so it cannot be a solution.",
+        "b": "Finds x - 2 = 4 but forgets to add 2.",
+        "c": "Multiplies only the x by 3 (12 = 3x - 2), forgetting to distribute to the 2."
+      }
+    },
+    "sat-readiness-check-math-041": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "If 3^(x + 1) = 81, what is the value of x?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "26",
+        "d": "27"
+      },
+      "correctOptionId": "a",
+      "explanation": "Write 81 as a power of 3: 81 = 3⁴. With equal bases, the exponents are equal: x + 1 = 4, so x = 3.",
+      "distractorExplanations": {
+        "b": "Finds the exponent 4 but forgets to subtract 1.",
+        "c": "Divides 81 by 3 and subtracts 1, treating the exponent like a multiplier.",
+        "d": "Divides 81 by 3, treating 3^(x + 1) as 3(x + 1)."
+      }
+    },
+    "sat-readiness-check-math-042": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "What is the sum of all solutions to the equation |x - 4| = 9?",
+      "options": {
+        "a": "8",
+        "b": "9",
+        "c": "13",
+        "d": "18"
+      },
+      "correctOptionId": "a",
+      "explanation": "Absolute value equations split into two cases: x - 4 = 9 gives x = 13, and x - 4 = -9 gives x = -5. Their sum is 13 + (-5) = 8.",
+      "distractorExplanations": {
+        "b": "Uses the value on the right side instead of solving both cases.",
+        "c": "Finds only the positive case and misses x = -5.",
+        "d": "Adds 9 and 9 instead of adding the two solutions."
+      }
+    },
+    "sat-readiness-check-math-043": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "The function f is defined by f(x) = x² - 5x. What is the value of f(-2)?",
+      "options": {
+        "a": "-14",
+        "b": "-6",
+        "c": "6",
+        "d": "14"
+      },
+      "correctOptionId": "d",
+      "explanation": "Substitute carefully with parentheses: (-2)² - 5(-2) = 4 + 10 = 14.",
+      "distractorExplanations": {
+        "a": "Treats (-2)² as -4 and -5(-2) as -10.",
+        "b": "Squares correctly but treats -5(-2) as -10: 4 - 10 = -6.",
+        "c": "Treats (-2)² as -4 but multiplies -5(-2) correctly: -4 + 10 = 6."
+      }
+    },
+    "sat-readiness-check-math-044": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A parabola in the xy-plane has equation y = 2(x - 3)² + 5. What is the least possible y-coordinate of a point on this parabola?",
+      "options": {
+        "a": "-3",
+        "b": "3",
+        "c": "5",
+        "d": "23"
+      },
+      "correctOptionId": "c",
+      "explanation": "In vertex form a(x - h)² + k with a > 0, the minimum value is k. The squared term is never negative and equals 0 at x = 3, so the minimum is 5.",
+      "distractorExplanations": {
+        "a": "Reads the sign inside the parentheses as the vertex's x-value and gives it as the minimum.",
+        "b": "Gives the x-coordinate of the vertex (where the least y occurs), not the least y-value itself.",
+        "d": "Substitutes x = 0 to get 2(9) + 5 = 23, which is the y-intercept, not the lowest point."
+      }
+    },
+    "sat-readiness-check-math-045": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The population of a town is modeled by P(t) = 48,000(1.03)^t, where t is the number of years after 2020. Which statement best describes the model?",
+      "options": {
+        "a": "The population increases by 1,030 people each year.",
+        "b": "The population increases by 103% each year.",
+        "c": "The population increases by 3 people each year.",
+        "d": "The population increases by 3% each year."
+      },
+      "correctOptionId": "d",
+      "explanation": "A growth factor of 1.03 means each year's population is 103% of the previous year's, which is a 3% increase per year. Exponential models grow by a constant percent, not a constant number of people.",
+      "distractorExplanations": {
+        "a": "Treats the growth factor as a fixed number of people, which describes linear growth.",
+        "b": "Confuses the growth factor (103% of last year) with the growth rate (3%).",
+        "c": "Reads 0.03 as a count of people instead of a percent."
+      }
+    },
+    "sat-readiness-check-math-046": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A car worth $30,000 loses 15% of its value each year. Which function gives the car's value V, in dollars, t years from now?",
+      "options": {
+        "a": "V = 30,000(0.85)^t",
+        "b": "V = 30,000(0.15)^t",
+        "c": "V = 30,000(1.15)^t",
+        "d": "V = 30,000(1 - 0.15t)"
+      },
+      "correctOptionId": "a",
+      "explanation": "Losing 15% each year leaves 85% of the previous value, so the yearly factor is 1 - 0.15 = 0.85, applied t times: 30,000(0.85)^t.",
+      "distractorExplanations": {
+        "b": "Uses the percent lost as the factor, which would keep only 15% each year.",
+        "c": "Uses a growth factor, which would increase the value by 15% each year.",
+        "d": "Subtracts 15% of the original value each year, which is linear decay, not a percent of the current value."
+      }
+    },
+    "sat-readiness-check-math-047": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "| x | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| f(x) | 5 | 10 | 20 | 40 |",
+      "prompt": "The table shows four values of x and their corresponding values of f(x). Which equation could define the function f?",
+      "options": {
+        "a": "f(x) = 5x + 5",
+        "b": "f(x) = 2(5)^x",
+        "c": "f(x) = 5x² + 5",
+        "d": "f(x) = 5(2)^x"
+      },
+      "correctOptionId": "d",
+      "explanation": "Each output doubles as x increases by 1, and f(0) = 5. That is exponential growth with initial value 5 and factor 2: f(x) = 5(2)^x. Check x = 3: 5 x 8 = 40.",
+      "distractorExplanations": {
+        "a": "Matches x = 0 and x = 1 but gives 15 at x = 2; the table doubles rather than adding 5.",
+        "b": "Swaps the initial value and the factor: f(0) would be 2, not 5.",
+        "c": "Matches x = 0 and x = 1 but gives 25 at x = 2, not 20."
+      }
+    },
+    "sat-readiness-check-math-048": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The graph of y = f(x) in the xy-plane is shifted 4 units to the right and 2 units down. Which equation represents the resulting graph?",
+      "options": {
+        "a": "y = f(x - 4) - 2",
+        "b": "y = f(x + 4) - 2",
+        "c": "y = f(x - 2) + 4",
+        "d": "y = f(x + 4) + 2"
+      },
+      "correctOptionId": "a",
+      "explanation": "A horizontal shift of h units right replaces x with x - h, and a vertical shift down subtracts outside the function. Right 4 and down 2 gives f(x - 4) - 2.",
+      "distractorExplanations": {
+        "b": "f(x + 4) shifts the graph 4 units left, not right.",
+        "c": "Swaps the horizontal and vertical amounts and the vertical direction.",
+        "d": "Shifts left 4 and up 2, the opposite of both requested shifts."
+      }
+    },
+    "sat-readiness-check-math-049": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The function h is defined by h(x) = (x + 2)(x - 6). What is the x-coordinate of the vertex of the graph of y = h(x) in the xy-plane?",
+      "options": {
+        "a": "-2",
+        "b": "2",
+        "c": "4",
+        "d": "6"
+      },
+      "correctOptionId": "b",
+      "explanation": "The zeros are x = -2 and x = 6. A parabola is symmetric, so its vertex lies halfway between the zeros: (-2 + 6) / 2 = 2.",
+      "distractorExplanations": {
+        "a": "That is one of the zeros, not the vertex.",
+        "c": "Finds the distance from the vertex to each zero, not the vertex's location.",
+        "d": "That is the other zero, not the vertex."
+      }
+    },
+    "sat-readiness-check-math-050": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The height, in feet, of a ball t seconds after it is thrown is modeled by h(t) = -16t² + 64t + 5. What is the maximum height of the ball, in feet?",
+      "options": {
+        "a": "2",
+        "b": "5",
+        "c": "64",
+        "d": "69"
+      },
+      "correctOptionId": "d",
+      "explanation": "The maximum occurs at the vertex, t = -b / (2a) = -64 / (2 x -16) = 2 seconds. The height then is -16(4) + 64(2) + 5 = -64 + 128 + 5 = 69 feet.",
+      "distractorExplanations": {
+        "a": "That is the time of the maximum, not the maximum height.",
+        "b": "That is the starting height at t = 0.",
+        "c": "Uses the coefficient of t as the height."
+      }
+    },
+    "sat-readiness-check-math-051": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A recipe uses 3 cups of flour for every 2 cups of sugar. How many cups of flour are needed if 8 cups of sugar are used?",
+      "options": {
+        "a": "16/3",
+        "b": "9",
+        "c": "12",
+        "d": "16"
+      },
+      "correctOptionId": "c",
+      "explanation": "Set up the proportion flour/sugar = 3/2 = f/8. Then f = 8 x 3/2 = 12 cups. Sugar quadrupled (2 to 8), so flour quadruples (3 to 12).",
+      "distractorExplanations": {
+        "a": "Inverts the ratio, multiplying 8 by 2/3.",
+        "b": "Adds the difference between the ratio terms (8 + 1) instead of scaling.",
+        "d": "Doubles 8 instead of scaling by 3/2."
+      }
+    },
+    "sat-readiness-check-math-052": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A printer prints 45 pages per minute. At this rate, how many pages does it print in 2.5 hours?",
+      "options": {
+        "a": "112.5",
+        "b": "2,700",
+        "c": "6,750",
+        "d": "11,250"
+      },
+      "correctOptionId": "c",
+      "explanation": "Convert hours to minutes first: 2.5 x 60 = 150 minutes. Then 45 x 150 = 6,750 pages.",
+      "distractorExplanations": {
+        "a": "Multiplies by 2.5 without converting hours to minutes.",
+        "b": "Finds the pages for one hour (45 x 60) only.",
+        "d": "Treats 2.5 hours as 250 minutes."
+      }
+    },
+    "sat-readiness-check-math-053": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The price of a jacket was increased by 20%, and then the new price was decreased by 20%. The final price is what percent of the original price?",
+      "options": {
+        "a": "80%",
+        "b": "96%",
+        "c": "100%",
+        "d": "104%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Percent changes multiply: 1.20 x 0.80 = 0.96, so the final price is 96% of the original. The 20% decrease applies to a larger amount than the 20% increase did.",
+      "distractorExplanations": {
+        "a": "Applies only the 20% decrease to the original price.",
+        "c": "Assumes a 20% increase and a 20% decrease cancel out.",
+        "d": "Applies the changes in the wrong direction, as if the net effect were a 4% increase."
+      }
+    },
+    "sat-readiness-check-math-054": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The number of members in a club rose from 240 to 300. By what percent did membership increase?",
+      "options": {
+        "a": "20%",
+        "b": "25%",
+        "c": "60%",
+        "d": "80%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Percent increase = change / original = (300 - 240) / 240 = 60 / 240 = 0.25, a 25% increase. Always divide by the starting value.",
+      "distractorExplanations": {
+        "a": "Divides the change by the new value, 300, instead of the original value.",
+        "c": "Reports the raw change in members as a percent.",
+        "d": "Divides the original by the new value (240 / 300), which is a ratio, not a percent change."
+      }
+    },
+    "sat-readiness-check-math-055": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "The data set 4, 7, 7, 9, 13 has a mean of 8 and a median of 7. If the value 13 is replaced with 33, which statement about the new data set is true?",
+      "options": {
+        "a": "The mean and the median both increase by 4.",
+        "b": "The median increases and the mean stays the same.",
+        "c": "The mean and the median both stay the same.",
+        "d": "The mean increases and the median stays the same."
+      },
+      "correctOptionId": "d",
+      "explanation": "The sum grows by 20, so the mean rises by 20 / 5 = 4, to 12. The median is the middle value of the ordered list, which is still 7, because only the largest value changed.",
+      "distractorExplanations": {
+        "a": "The mean rises by 4, but the middle value stays 7, so the median does not change.",
+        "b": "Reverses the effect: an extreme value pulls the mean, not the median.",
+        "c": "The sum of the data changes, so the mean must change."
+      }
+    },
+    "sat-readiness-check-math-075": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The mean score of 20 students on a test was 78. After one student's score was removed, the mean of the remaining 19 scores was 80. What was the removed score?",
+      "options": {
+        "a": "2",
+        "b": "38",
+        "c": "40",
+        "d": "79"
+      },
+      "correctOptionId": "c",
+      "explanation": "Work with totals: 20 x 78 = 1,560 and 19 x 80 = 1,520. The removed score is 1,560 - 1,520 = 40.",
+      "distractorExplanations": {
+        "a": "Subtracts the two means instead of the two totals.",
+        "b": "Multiplies the 2-point change by 19 but does not account for the original total.",
+        "d": "Averages the two means, which does not give any individual score."
+      }
+    },
+    "sat-readiness-check-math-057": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "| | Plays a sport | Does not play a sport | Total |\n|---|---|---|---|\n| Grade 10 | 42 | 38 | 80 |\n| Grade 11 | 54 | 26 | 80 |\n| Total | 96 | 64 | 160 |",
+      "prompt": "The table shows how many students in two grades play a sport. If a student who plays a sport is selected at random, what is the probability that the student is in grade 11?",
+      "options": {
+        "a": "27/80",
+        "b": "13/32",
+        "c": "9/16",
+        "d": "27/40"
+      },
+      "correctOptionId": "c",
+      "explanation": "The condition 'plays a sport' limits the group to 96 students. Of those, 54 are in grade 11, so the probability is 54 / 96 = 9/16.",
+      "distractorExplanations": {
+        "a": "Divides by all 160 students (54/160) instead of only those who play a sport.",
+        "b": "Uses grade 11 students who do not play a sport (26 out of 64).",
+        "d": "Divides by the 80 grade 11 students (54/80), reversing the condition."
+      }
+    },
+    "sat-readiness-check-math-058": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A line of best fit for data on hours studied, x, and test score, y, is y = 4.5x + 62. Which is the best interpretation of 4.5 in this context?",
+      "options": {
+        "a": "The predicted test score for a student who studies 0 hours",
+        "b": "The predicted increase in test score for each additional hour studied",
+        "c": "The number of hours a student must study to earn a score of 62",
+        "d": "The exact increase in score that every student in the data earned for each hour studied"
+      },
+      "correctOptionId": "b",
+      "explanation": "The slope of a line of best fit is the predicted change in y per one-unit increase in x: about 4.5 more points for each additional hour. It is a prediction, not an exact result for each student.",
+      "distractorExplanations": {
+        "a": "That is the meaning of 62, the y-intercept.",
+        "c": "62 is a score, not a number of hours, and 4.5 is not a threshold.",
+        "d": "A best-fit line gives a predicted trend; individual students vary around it."
+      }
+    },
+    "sat-readiness-check-math-059": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A random sample of 400 voters in a city found that 56% support building a new library, with a margin of error of 4 percentage points. Which conclusion is most appropriate?",
+      "options": {
+        "a": "Exactly 56% of all voters in the city support the new library, with no uncertainty.",
+        "b": "Between 52% and 60% of the 400 voters in the sample support the new library.",
+        "c": "The library will certainly win if every voter in the city casts a ballot on it.",
+        "d": "Between 52% and 60% of all voters in the city likely support the new library."
+      },
+      "correctOptionId": "d",
+      "explanation": "A margin of error describes uncertainty about the whole population, not the sample. The plausible range for all city voters is 56% ± 4%, or 52% to 60%.",
+      "distractorExplanations": {
+        "a": "Ignores the margin of error; a sample estimate is never exact for the population.",
+        "b": "The sample's percentage is known exactly (56%); the range applies to the whole city.",
+        "c": "Even the low end (52%) is an estimate, so a win is likely but not certain."
+      }
+    },
+    "sat-readiness-check-math-060": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A bag contains 5 red, 7 blue, and 8 green marbles. If one marble is drawn at random, what is the probability that it is not blue?",
+      "options": {
+        "a": "1/3",
+        "b": "7/20",
+        "c": "7/13",
+        "d": "13/20"
+      },
+      "correctOptionId": "d",
+      "explanation": "There are 5 + 7 + 8 = 20 marbles, and 5 + 8 = 13 are not blue. The probability is 13/20.",
+      "distractorExplanations": {
+        "a": "Treats the three colors as equally likely instead of counting marbles.",
+        "b": "Gives the probability of drawing blue instead of not blue.",
+        "c": "Compares blue with non-blue marbles (7 to 13), which is a ratio, not a probability."
+      }
+    },
+    "sat-readiness-check-math-061": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Researchers randomly assigned 200 adult volunteers to drink either green tea or water every day for 8 weeks. The green tea group ended with significantly lower average blood pressure. Which conclusion is best supported by the study?",
+      "options": {
+        "a": "Drinking green tea lowers blood pressure for all adults everywhere, not just for volunteers like these.",
+        "b": "The study cannot suggest any cause, because the participants were volunteers.",
+        "c": "People with lower blood pressure are more likely to choose to drink green tea.",
+        "d": "Drinking green tea likely caused lower blood pressure among people like these volunteers."
+      },
+      "correctOptionId": "d",
+      "explanation": "Random assignment to groups supports a cause-and-effect conclusion. Because the participants were volunteers rather than a random sample, the conclusion should be limited to people similar to them.",
+      "distractorExplanations": {
+        "a": "Volunteers are not a random sample of all adults, so the result cannot be generalized that widely.",
+        "b": "Random assignment allows a causal conclusion; using volunteers limits only how far it generalizes.",
+        "c": "Participants did not choose their drink; it was assigned randomly."
+      }
+    },
+    "sat-readiness-check-math-062": {
+      "topicId": "math",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "A rectangle has a perimeter of 46 centimeters and a length of 15 centimeters. What is the area of the rectangle, in square centimeters?",
+      "options": {
+        "a": "31",
+        "b": "120",
+        "c": "345",
+        "d": "690"
+      },
+      "correctOptionId": "b",
+      "explanation": "Perimeter = 2(length + width), so 46 = 2(15 + w), 23 = 15 + w, and w = 8. Area = 15 x 8 = 120 square centimeters.",
+      "distractorExplanations": {
+        "a": "Subtracts the length from the perimeter, which is not the width.",
+        "c": "Uses half the perimeter (23) as the width.",
+        "d": "Multiplies the perimeter by the length."
+      }
+    },
+    "sat-readiness-check-math-063": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A right circular cylinder has a radius of 3 inches and a height of 10 inches. What is the volume of the cylinder, in cubic inches?",
+      "options": {
+        "a": "30π",
+        "b": "60π",
+        "c": "90π",
+        "d": "300π"
+      },
+      "correctOptionId": "c",
+      "explanation": "Volume of a cylinder = base area x height = πr²h. The base is a circle of area π(3²) = 9π, so the volume is 9π x 10 = 90π cubic inches.",
+      "distractorExplanations": {
+        "a": "Forgets to square the radius: π(3)(10).",
+        "b": "Computes the lateral surface area, 2πrh, instead of the volume.",
+        "d": "Swaps the radius and height: π(10²)(3)."
+      }
+    },
+    "sat-readiness-check-math-064": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "In triangle ABC, the measure of angle A is 48°, and the measure of angle B is twice the measure of angle C. What is the measure of angle B?",
+      "options": {
+        "a": "44°",
+        "b": "66°",
+        "c": "88°",
+        "d": "96°"
+      },
+      "correctOptionId": "c",
+      "explanation": "The angles sum to 180°, so B + C = 132°. With B = 2C, 3C = 132°, C = 44°, and B = 88°.",
+      "distractorExplanations": {
+        "a": "That is the measure of angle C, not angle B.",
+        "b": "Splits the remaining 132° evenly between B and C.",
+        "d": "Doubles angle A instead of angle C."
+      }
+    },
+    "sat-readiness-check-math-065": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Triangle PQR is similar to triangle STU, where P corresponds to S, Q corresponds to T, and R corresponds to U. If PQ = 6, QR = 9, and ST = 10, what is the length of TU?",
+      "options": {
+        "a": "5.4",
+        "b": "13",
+        "c": "15",
+        "d": "90"
+      },
+      "correctOptionId": "c",
+      "explanation": "Corresponding sides are proportional: TU / QR = ST / PQ = 10 / 6. So TU = 9 x 10/6 = 15.",
+      "distractorExplanations": {
+        "a": "Uses the scale factor upside down: 9 x 6/10.",
+        "b": "Adds the difference (10 - 6 = 4) instead of multiplying by the scale factor.",
+        "d": "Multiplies QR by ST without dividing by PQ."
+      }
+    },
+    "sat-readiness-check-math-066": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A 13-foot ladder leans against a vertical wall, with its base 5 feet from the wall on level ground. How high up the wall does the top of the ladder reach, in feet?",
+      "options": {
+        "a": "8",
+        "b": "12",
+        "c": "13.9",
+        "d": "18"
+      },
+      "correctOptionId": "b",
+      "explanation": "The ladder is the hypotenuse of a right triangle: 5² + h² = 13², so h² = 169 - 25 = 144 and h = 12 feet.",
+      "distractorExplanations": {
+        "a": "Subtracts the side lengths (13 - 5) instead of using the Pythagorean theorem.",
+        "c": "Treats 13 as a leg instead of the hypotenuse: √(13² + 5²) ≈ 13.9.",
+        "d": "Adds the two given lengths (13 + 5) instead of applying the Pythagorean theorem."
+      }
+    },
+    "sat-readiness-check-math-067": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "In right triangle ABC, angle C is the right angle and sin A = 5/13. What is the value of cos A?",
+      "options": {
+        "a": "5/12",
+        "b": "8/13",
+        "c": "12/13",
+        "d": "13/12"
+      },
+      "correctOptionId": "c",
+      "explanation": "sin A = opposite / hypotenuse, so the side opposite A is 5 and the hypotenuse is 13. The adjacent side is √(13² - 5²) = 12, so cos A = adjacent / hypotenuse = 12/13.",
+      "distractorExplanations": {
+        "a": "That is tan A (opposite / adjacent), not cos A.",
+        "b": "Subtracts 5 from 13 instead of using the Pythagorean theorem.",
+        "d": "Inverts the cosine ratio; a cosine can never exceed 1."
+      }
+    },
+    "sat-readiness-check-math-068": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Triangle XYZ has a right angle at vertex Z. Given that cos X = 0.6, find sin Y.",
+      "options": {
+        "a": "0.36",
+        "b": "0.4",
+        "c": "0.6",
+        "d": "0.8"
+      },
+      "correctOptionId": "c",
+      "explanation": "X and Y are complementary acute angles, and the cosine of an angle equals the sine of its complement. The side adjacent to X is the side opposite Y, so sin Y = cos X = 0.6.",
+      "distractorExplanations": {
+        "a": "Squares 0.6, which gives cos² X, not sin Y.",
+        "b": "Subtracts 0.6 from 1; sine and cosine of complements are equal, not complementary.",
+        "d": "That is sin X (from 0.6² + 0.8² = 1), not sin Y."
+      }
+    },
+    "sat-readiness-check-math-069": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A circle has a circumference of 18π centimeters. What is the area of the circle, in square centimeters?",
+      "options": {
+        "a": "9π",
+        "b": "18π",
+        "c": "81π",
+        "d": "324π"
+      },
+      "correctOptionId": "c",
+      "explanation": "Circumference = 2πr = 18π, so r = 9. Area = πr² = 81π square centimeters.",
+      "distractorExplanations": {
+        "a": "Finds the radius but does not square it.",
+        "b": "Repeats the circumference as the area.",
+        "d": "Squares the diameter (18) instead of the radius."
+      }
+    },
+    "sat-readiness-check-math-070": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "The equation x² + y² - 6x + 8y = 11 defines a circle in the xy-plane. What is the radius of the circle?",
+      "options": {
+        "a": "√11",
+        "b": "5",
+        "c": "6",
+        "d": "36"
+      },
+      "correctOptionId": "c",
+      "explanation": "Complete the square in x and y: (x - 3)² + (y + 4)² = 11 + 9 + 16 = 36. The right side is r², so r = 6.",
+      "distractorExplanations": {
+        "a": "Uses the original constant without completing the square.",
+        "b": "Uses the distance from the origin to the center (3, -4), not the radius.",
+        "d": "Stops at the right side of the completed-square form, which is r² = 36, and forgets to take the square root."
+      }
+    },
+    "sat-readiness-check-math-071": {
+      "topicId": "math",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A circle has a radius of 12 inches. What is the length, in inches, of an arc of the circle that has a central angle of 60°?",
+      "options": {
+        "a": "2π",
+        "b": "4π",
+        "c": "24π",
+        "d": "144π"
+      },
+      "correctOptionId": "b",
+      "explanation": "An arc's length is the fraction of the circumference set by its central angle: (60/360) x 2π(12) = (1/6)(24π) = 4π inches.",
+      "distractorExplanations": {
+        "a": "Uses πr instead of 2πr for the circumference, giving half the correct length.",
+        "c": "Gives the full circumference instead of one-sixth of it.",
+        "d": "Computes the circle's area, πr², instead of an arc length."
+      }
+    },
+    "sat-readiness-check-math-072": {
+      "topicId": "math",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Two parallel lines are cut by a transversal. One angle formed measures (3x + 15)°, and its same-side interior angle measures (5x + 5)°. What is the value of x?",
+      "options": {
+        "a": "5",
+        "b": "8.75",
+        "c": "20",
+        "d": "42.5"
+      },
+      "correctOptionId": "c",
+      "explanation": "Same-side interior angles formed by parallel lines are supplementary: (3x + 15) + (5x + 5) = 180. So 8x + 20 = 180 and x = 20.",
+      "distractorExplanations": {
+        "a": "Sets the angles equal, which applies to alternate interior angles, not same-side interior angles.",
+        "b": "Makes the angles sum to 90° instead of 180°.",
+        "d": "Makes the angles sum to 360°."
+      }
+    }
+  }
+}

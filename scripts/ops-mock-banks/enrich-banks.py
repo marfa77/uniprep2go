@@ -375,6 +375,11 @@ def enrich_bank(slug: str, questions: list[dict], relaxed: set[str] | None = Non
     if slug == "ptcb-pharmacy-technician-mock":
         normalize_ptcb_brand_items(bank, stats)
 
+    retired = {qid for qid, patch in MANUAL_PATCHES.get(slug, {}).items() if patch.get("retired")}
+    if retired:
+        bank[:] = [q for q in bank if q.get("id") not in retired]
+        stats["retired"] = len(retired)
+
     for q in bank:
         patch = MANUAL_PATCHES.get(slug, {}).get(q.get("id"))
         if not patch:

@@ -16,6 +16,7 @@ const CACHE_FILES = [
   { kind: "wave", path: "src/data/gumroad/wave-sample-cdn.json" },
   { kind: "language", path: "src/data/gumroad/language-sample-cdn.json" },
   { kind: "finance", path: "src/data/gumroad/finance-sample-cdn.json" },
+  { kind: "authored", path: "src/data/gumroad/authored-sample-cdn.json" },
 ];
 
 const BROKEN = new Set([403, 404, 410]);

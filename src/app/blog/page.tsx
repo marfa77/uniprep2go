@@ -11,7 +11,7 @@ import { absoluteUrl, siteConfig } from "@/lib/site";
 const blogIndexTitle = leafPageTitle("Exam Prep Guides | Citizenship, SIE, ServSafe");
 
 const blogDescription =
-  "Practical UniPrep2Go study guides for EU citizenship exams, EPA 608, ServSafe, FINRA SIE, and more — with free timed mocks and Anki decks.";
+  "Practical UniPrep2Go study guides for EU citizenship exams, EPA 608, ServSafe, FINRA SIE, and more — with timed mocks (first one free) and Anki decks.";
 
 export const metadata: Metadata = withAiMetadata(
   finalize({
@@ -52,7 +52,7 @@ export default function BlogIndexPage() {
         "@id": `${pageUrl}#blog`,
         name: "UniPrep2Go Exam Prep Guides",
         description:
-          "Practical study guides for US licensing and finance exams, paired with free timed mocks.",
+          "Practical study guides for US licensing and finance exams, paired with timed mocks (first one free).",
         url: pageUrl,
         publisher: {
           "@type": "Organization",

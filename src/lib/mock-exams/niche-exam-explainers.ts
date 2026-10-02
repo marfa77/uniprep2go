@@ -357,7 +357,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is there a free NHA CPT / phlebotomy practice test?",
         answer:
-          "Yes — this page offers a free timed UniPrep2Go NHA CPT phlebotomy readiness check with topic scoring and answer review. No signup wall for the practice session.",
+          "Yes — this page offers a free timed UniPrep2Go NHA CPT phlebotomy readiness check with topic scoring and answer review. Your first mock is free with no signup; more attempts are $5 for 5.",
       },
     ],
     keywords: [
@@ -441,7 +441,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Where can I take a free NHA ExCPT practice test online?",
         answer:
-          "UniPrep2Go’s free NHA ExCPT readiness check is a timed 60-question diagnostic with domain scoring and full answer review — no signup and no 20-question paywall tease. It is independent prep, not an NHA exam or retired NHA items.",
+          "UniPrep2Go’s free NHA ExCPT readiness check is a timed 60-question diagnostic with domain scoring and full answer review — first mock free in full, no signup and no 20-question tease. It is independent prep, not an NHA exam or retired NHA items.",
       },
       {
         question: "How should I use this readiness check before ExCPT day?",

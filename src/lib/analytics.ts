@@ -20,9 +20,10 @@ export const funnelEventNames = [
   "deck_waitlist_interest",
   "mock_deck_cta_click",
   "mock_checkout_placeholder_click",
-  "learn_checkout_click",
-  "learn_redeem_success",
-  "learn_credit_consumed",
+  "mock_paywall_view",
+  "mock_pass_checkout_click",
+  "mock_pass_redeem_success",
+  "mock_pass_attempt_used",
 ] as const;
 
 export type FunnelEventName = (typeof funnelEventNames)[number];

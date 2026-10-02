@@ -197,24 +197,24 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     },
     topics: [
-      { id: "ethics", label: "Ethical and Professional Standards", weightPercent: 15, targetPercent: 70 },
+      { id: "ethics", label: "Ethical and Professional Standards", weightPercent: 17, targetPercent: 70 },
       { id: "quant", label: "Quantitative Methods", weightPercent: 8, targetPercent: 70 },
       { id: "economics", label: "Economics", weightPercent: 8, targetPercent: 70 },
-      { id: "fra", label: "Financial Statement Analysis", weightPercent: 11, targetPercent: 70 },
-      { id: "corp-finance", label: "Corporate Issuers", weightPercent: 6, targetPercent: 70 },
-      { id: "equity", label: "Equity Investments", weightPercent: 11, targetPercent: 70 },
-      { id: "fixed-income", label: "Fixed Income", weightPercent: 11, targetPercent: 70 },
-      { id: "derivatives", label: "Derivatives", weightPercent: 8, targetPercent: 70 },
-      { id: "alternatives", label: "Alternative Investments", weightPercent: 14, targetPercent: 70 },
-      { id: "portfolio", label: "Portfolio Management", weightPercent: 8, targetPercent: 70 },
+      { id: "fra", label: "Financial Statement Analysis", weightPercent: 12, targetPercent: 70 },
+      { id: "corp-finance", label: "Corporate Issuers", weightPercent: 7, targetPercent: 70 },
+      { id: "equity", label: "Equity Investments", weightPercent: 12, targetPercent: 70 },
+      { id: "fixed-income", label: "Fixed Income", weightPercent: 12, targetPercent: 70 },
+      { id: "derivatives", label: "Derivatives", weightPercent: 6, targetPercent: 70 },
+      { id: "alternatives", label: "Alternative Investments", weightPercent: 9, targetPercent: 70 },
+      { id: "portfolio", label: "Portfolio Management", weightPercent: 9, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check sampled across 2026 CFA Level I topic weights. Official exam: 180 questions, ~4.5 hours; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
+      "60 questions spread across all ten 2026 CFA Level I topics within the official weight ranges (Ethics 10 questions; FSA, Equity and Fixed Income 7 each; Portfolio Management 6; Quant, Economics and Alternatives 5 each; Corporate Issuers and Derivatives 4 each). Official exam: 180 three-option multiple-choice questions in two 135-minute sessions (4.5 hours); CFA Institute sets the minimum passing score (MPS) after each administration and does not publish a fixed percentage. Our items use four options at the same 90-second pace. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
       "A free 60-question CFA Level 1 readiness diagnostic with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-09-30",
+    lastUpdated: "2026-10-02",
   },
   {
     slug: "cfa-level-2-readiness-check",
@@ -316,11 +316,13 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     ],
     officialSourceNote:
       "Readiness check aligned to 2026 FRM Part 1 topic weights. Official exam: 100 multiple-choice questions, 4 hours; GARP does not publish a fixed passing score and sets the cutoff each cycle. UniPrep2Go readiness target: 70%. Not official GARP exam material.",
+    questionSourceNote:
+      "Original UniPrep2Go questions authored for the FRM Part 1 readiness check (50 items weighted 10 Foundations / 10 Quantitative Analysis / 15 Financial Markets and Products / 15 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer).",
     disclaimer: financeDisclaimer,
     description:
       "A free 50-question FRM Part 1 readiness diagnostic with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
-    lastUpdated: "2026-09-30",
+    lastUpdated: "2026-10-02",
   },
   {
     slug: "series-7-readiness-check",
@@ -348,12 +350,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "s7-f4", label: "Obtains and Verifies Customer Instructions", weightPercent: 11, targetPercent: 72 },
     ],
     officialSourceNote:
-      "Readiness check sampled from the Series 7 deck across FINRA job-function areas. Official Series 7 Top-Off: 130 items (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
+      "60 original scenario and calculation questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions), with a teaching note on every wrong answer. Official Series 7 Top-Off: 130 items (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A free 60-question Series 7 readiness diagnostic built from UniPrep2Go deck content, with FINRA job-function weighted scoring, answer review, and a linked Anki deck repair plan.",
+      "A free 60-question Series 7 readiness diagnostic: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-09-30",
+    lastUpdated: "2026-10-02",
   },
   {
     slug: "series-63-readiness-check",
@@ -379,18 +381,18 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "s63-bd", label: "Broker-Dealer State Registration", weightPercent: 12, targetPercent: 72 },
       { id: "s63-ethics", label: "Ethical Practices and Fiduciary Duties", weightPercent: 25, targetPercent: 72 },
       { id: "s63-comm", label: "Communications, Records, and Sales Practices", weightPercent: 20, targetPercent: 72 },
-      { id: "s63-remedies", label: "Enforcement, Remedies, and Penalties", weightPercent: 12, targetPercent: 72 },
+      { id: "s63-remedies", label: "Enforcement, Remedies, and Penalties", weightPercent: 11, targetPercent: 72 },
       { id: "s63-securities", label: "Securities and Exemptions", weightPercent: 9, targetPercent: 72 },
       { id: "s63-ia", label: "Investment Advisers", weightPercent: 5, targetPercent: 72 },
-      { id: "s63-iar", label: "Investment Adviser Representatives", weightPercent: 4, targetPercent: 72 },
+      { id: "s63-iar", label: "Investment Adviser Representatives", weightPercent: 5, targetPercent: 72 },
     ],
     officialSourceNote:
-      "Readiness check sampled from the Series 63 deck across NASAA-style state law and ethics topics. Not official NASAA exam material.",
+      "60 original scenario questions with the same per-area counts as NASAA's scored Series 63 (15 ethics, 12 communications, 8 agents, 7 broker-dealers, 7 remedies, 5 securities, 3 investment advisers, 3 IARs) and a teaching note on every wrong answer. Official exam: 65 questions (60 scored + 5 unscored pretest) in 75 minutes; pass = 43 of 60 scored (72%). Not official NASAA exam material.",
     disclaimer: financeDisclaimer,
     description:
-      "A 60-question Series 63 readiness diagnostic built from UniPrep2Go deck content, with state-law topic diagnosis and full question review.",
+      "A free 60-question Series 63 readiness diagnostic on the Uniform Securities Act: registration, ethics, communications and remedies scenarios in NASAA's scored mix, with full answer review.",
     examBody: "NASAA",
-    lastUpdated: "2026-06-01",
+    lastUpdated: "2026-10-02",
   },
   {
     slug: "california-real-estate-readiness-check",
@@ -557,7 +559,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A timed 90-question ServSafe Manager mock with topic-weighted scoring, full question review, and a pass/no-pass readiness verdict aligned to the official exam format.",
     examBody: "ServSafe / National Restaurant Association",
-    lastUpdated: "2026-09-29",
+    lastUpdated: "2026-10-02",
   },
   {
     slug: "ptcb-pharmacy-technician-mock",
@@ -614,7 +616,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A timed 90-question PTCB / PTCE mock with 2026 domain-weighted scoring, full question review, and a pass/no-pass readiness verdict before you drill the linked Anki deck.",
     examBody: "PTCB / PTCE",
-    lastUpdated: "2026-07-15",
+    lastUpdated: "2026-10-02",
   },
   {
     slug: "gmat-focus-readiness-check",
@@ -712,10 +714,10 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 49-question Digital SAT readiness diagnostic scored on the two official axes — Reading and Writing and Math — with pacing feedback and full answer review. Independent prep aligned to College Board section types.",
     examBody: "College Board",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-10-02",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the Digital SAT readiness check (175 Reading and Writing + 175 Math in the Anki bank; 49-question timed session).",
-    ankiDeckCardCount: 342,
+      "Original UniPrep2Go questions authored for the Digital SAT readiness check (88 Reading and Writing + 72 Math in the Anki bank; 49-question timed session).",
+    ankiDeckCardCount: 160,
   },
   {
     slug: "pmp-readiness-check",

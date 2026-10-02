@@ -3,64 +3,64 @@
     "id": "ptcb-pharmacy-technician-mock-001",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Prozac — what is the generic name, drug class, and primary use?",
+    "prompt": "A patient hands in a prescription for Zoloft 50 mg. Which generic drug should the technician select during order entry?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Fluoxetine. Class: SSRI. Primary use: Depression, OCD. Key note: Long half-life."
+        "text": "Escitalopram"
       },
       {
         "id": "b",
-        "text": "Seroquel. Class: Atypical antipsychotic."
+        "text": "Fluoxetine"
       },
       {
         "id": "c",
-        "text": "Generic: Tramadol. Class: Opioid-like analgesic. Primary use: Moderate pain. Key note: DEA Schedule IV; seizure and serotonin syndrome risk."
+        "text": "Sertraline"
       },
       {
         "id": "d",
-        "text": "Generic: Nitrofurantoin. Class: Nitrofuran antibiotic. Primary use: Uncomplicated lower UTI. Key note: For bladder-level infection only—not for pyelonephritis or systemic infection."
+        "text": "Paroxetine"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Generic: Fluoxetine. Class: SSRI. Primary use: Depression, OCD. Key note: Long half-life. Example: Prescription written for Prozac.",
+    "correctOptionId": "c",
+    "explanation": "Zoloft is the brand name for sertraline, an SSRI used for depression, panic disorder, OCD, PTSD and social anxiety. All four options are SSRIs with overlapping uses, which is exactly why picking the wrong one is a common selection error at order entry.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Generic: Fluoxetine. Class: SSRI. Primary use: Depression, OCD. Key note: Long half-life”.",
-      "c": "Not the best answer here; the right answer is “Generic: Fluoxetine. Class: SSRI. Primary use: Depression, OCD. Key note: Long half-life”.",
-      "d": "Not the best answer here; the right answer is “Generic: Fluoxetine. Class: SSRI. Primary use: Depression, OCD. Key note: Long half-life”."
+      "a": "Escitalopram is the generic for Lexapro, a different SSRI.",
+      "b": "Fluoxetine is the generic for Prozac, a long-half-life SSRI.",
+      "d": "Paroxetine is the generic for Paxil, a different SSRI with more anticholinergic effects."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-002",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Tamsulosin? Select the best answer.",
+    "prompt": "A 68-year-old man is prescribed Flomax 0.4 mg once daily for urinary hesitancy caused by an enlarged prostate. Which generic name and drug class match this order?",
     "options": [
       {
         "id": "a",
-        "text": "Flomax"
+        "text": "Tamsulosin; alpha-1 blocker"
       },
       {
         "id": "b",
-        "text": "Fosamax"
+        "text": "Finasteride; 5-alpha-reductase inhibitor"
       },
       {
         "id": "c",
-        "text": "Lasix"
+        "text": "Oxybutynin; anticholinergic"
       },
       {
         "id": "d",
-        "text": "Singulair"
+        "text": "Tadalafil; PDE-5 inhibitor"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Flomax. Class: Alpha-1 blocker. Example: Dispense Tamsulosin for Flomax Rx.",
+    "explanation": "Flomax is tamsulosin, an alpha-1 blocker that relaxes smooth muscle in the prostate and bladder neck to improve urine flow in BPH. Dizziness and orthostatic hypotension are common, especially after the first dose, and the capsule should not be crushed or opened.",
     "distractorExplanations": {
-      "b": "Fosamax is a brand name for Alendronate, not Tamsulosin.",
-      "c": "Sound-alike brand confusion.",
-      "d": "Sound-alike brand confusion."
+      "b": "Finasteride (Proscar) also treats BPH, but it shrinks the prostate by blocking 5-alpha-reductase; it is not Flomax.",
+      "c": "Oxybutynin (Ditropan) is an anticholinergic for overactive bladder, not an alpha blocker for BPH.",
+      "d": "Tadalafil (Cialis) is a PDE-5 inhibitor approved for BPH and erectile dysfunction, but it is not Flomax."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -69,31 +69,31 @@
     "id": "ptcb-pharmacy-technician-mock-003",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Plavix — what is the generic name, drug class, and primary use?",
+    "prompt": "A cardiologist prescribes Plavix 75 mg daily after a patient receives a coronary stent. Which statement about this drug is correct?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Sertraline. Class: SSRI. Primary use: Depression, anxiety. Key note: Serotonin syndrome risk."
+        "text": "It is warfarin, a vitamin K antagonist that needs INR checks"
       },
       {
         "id": "b",
-        "text": "Generic: Clopidogrel. Class: Antiplatelet. Primary use: CAD/stroke prevention. Key note: Bleeding risk."
+        "text": "It is clopidogrel, an antiplatelet that raises bleeding risk"
       },
       {
         "id": "c",
-        "text": "Ultram. Class: Opioid-like analgesic."
+        "text": "It is apixaban, a factor Xa inhibitor for atrial fibrillation"
       },
       {
         "id": "d",
-        "text": "Lipitor. Class: Statin."
+        "text": "It is atorvastatin, a statin that lowers LDL cholesterol"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Generic: Clopidogrel. Class: Antiplatelet. Primary use: CAD/stroke prevention. Key note: Bleeding risk. Example: Prescription written for Plavix.",
+    "explanation": "Plavix is clopidogrel, a P2Y12 antiplatelet used after stents and to prevent heart attack and stroke. It increases bleeding risk, and strong CYP2C19 inhibitors such as omeprazole can reduce its activation, so that combination is flagged for the pharmacist.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Generic: Clopidogrel. Class: Antiplatelet. Primary use: CAD/stroke prevention. Key note: Bleeding risk”.",
-      "c": "Not the best answer here; the right answer is “Generic: Clopidogrel. Class: Antiplatelet. Primary use: CAD/stroke prevention. Key note: Bleeding risk”.",
-      "d": "Not the best answer here; the right answer is “Generic: Clopidogrel. Class: Antiplatelet. Primary use: CAD/stroke prevention. Key note: Bleeding risk”."
+      "a": "Warfarin is Coumadin or Jantoven, an anticoagulant monitored by INR, not Plavix.",
+      "c": "Apixaban is Eliquis, an anticoagulant, not an antiplatelet like Plavix.",
+      "d": "Atorvastatin (Lipitor) is often prescribed after a stent too, but it is a statin, not Plavix."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -102,31 +102,31 @@
     "id": "ptcb-pharmacy-technician-mock-004",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Apixaban? Select the best answer.",
+    "prompt": "A discharge medication list shows apixaban 5 mg twice daily for atrial fibrillation. The patient asks which brand name to look for on the bottles at home. Which brand matches?",
     "options": [
       {
         "id": "a",
-        "text": "Macrobid"
+        "text": "Xarelto"
       },
       {
         "id": "b",
-        "text": "Vibramycin"
+        "text": "Pradaxa"
       },
       {
         "id": "c",
-        "text": "Eliquis"
+        "text": "Coumadin"
       },
       {
         "id": "d",
-        "text": "Flomax"
+        "text": "Eliquis"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Eliquis. Class: Factor Xa inhibitor. Example: Dispense Apixaban for Eliquis Rx.",
+    "correctOptionId": "d",
+    "explanation": "Eliquis is apixaban, a direct oral factor Xa inhibitor dosed twice daily for stroke prevention in atrial fibrillation and for VTE. It needs no routine INR monitoring, but it is still a high-alert anticoagulant with bleeding risk.",
     "distractorExplanations": {
-      "a": "Macrobid is a brand name for Nitrofurantoin, not Apixaban.",
-      "b": "Sound-alike brand confusion.",
-      "d": "Flomax is a brand name for Tamsulosin, not Apixaban."
+      "a": "Xarelto is rivaroxaban, another factor Xa inhibitor that is usually dosed once daily with food.",
+      "b": "Pradaxa is dabigatran, a direct thrombin inhibitor, not a factor Xa inhibitor.",
+      "c": "Coumadin is warfarin, a vitamin K antagonist that requires INR monitoring."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -135,31 +135,31 @@
     "id": "ptcb-pharmacy-technician-mock-005",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Vibramycin — what is the generic name, drug class, and primary use?",
+    "prompt": "Which auxiliary label is most important to place on a prescription for doxycycline hyclate 100 mg capsules?",
     "options": [
       {
         "id": "a",
-        "text": "Xanax. Class: Benzodiazepine."
+        "text": "Avoid prolonged exposure to sunlight"
       },
       {
         "id": "b",
-        "text": "Generic: TMP-SMX. Class: Sulfa antibiotic combo. Primary use: UTI, some MRSA. Key note: Sulfa allergy."
+        "text": "May turn urine reddish-orange"
       },
       {
         "id": "c",
-        "text": "Generic: Doxycycline. Class: Tetracycline. Primary use: Acne, infections. Key note: Photosensitivity; avoid pregnancy."
+        "text": "Take with milk to prevent stomach upset"
       },
       {
         "id": "d",
-        "text": "Generic: Prednisone. Class: Systemic corticosteroid. Primary use: Anti-inflammatory/immunosuppression. Key note: Taper after prolonged systemic use unless directed otherwise."
+        "text": "Shake well before each use"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Generic: Doxycycline. Class: Tetracycline. Primary use: Acne, infections. Key note: Photosensitivity; avoid pregnancy. Example: Prescription written for Vibramycin.",
+    "correctOptionId": "a",
+    "explanation": "Doxycycline is a tetracycline antibiotic that causes photosensitivity, so the sun-exposure label is standard. Patients also take it with a full glass of water, stay upright to avoid esophageal irritation, and separate it from dairy, antacids and iron, which block absorption.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“What is a common brand name for Alprazolam?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Generic: Doxycycline. Class: Tetracycline. Primary use: Acne, infections. Key note: Photosensitivity; avoid pregnancy”.",
-      "d": "Not the best answer here; the right answer is “Generic: Doxycycline. Class: Tetracycline. Primary use: Acne, infections. Key note: Photosensitivity; avoid pregnancy”."
+      "b": "Reddish-orange urine is a label for rifampin or phenazopyridine, not doxycycline.",
+      "c": "Milk and other calcium sources chelate tetracyclines and cut absorption; doses are separated from dairy.",
+      "d": "Shake well applies to suspensions; these are capsules."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -168,64 +168,64 @@
     "id": "ptcb-pharmacy-technician-mock-006",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Synthroid — what is the generic name, drug class, and primary use?",
+    "prompt": "A patient starts levothyroxine 50 mcg daily. Which administration instruction belongs on the prescription label?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Fluoxetine. Class: SSRI. Primary use: Depression, OCD. Key note: Long half-life."
+        "text": "Take with breakfast and a calcium supplement"
       },
       {
         "id": "b",
-        "text": "Generic: Levothyroxine. Class: Thyroid hormone. Primary use: Hypothyroidism. Key note: Take at the same time each day per product labeling (often morning; follow specific brand directions)."
+        "text": "Take at bedtime right after a full meal"
       },
       {
         "id": "c",
-        "text": "Generic: Aripiprazole. Class: Atypical antipsychotic. Primary use: Schizophrenia, bipolar. Key note: Akathisia possible."
+        "text": "Take on an empty stomach before breakfast"
       },
       {
         "id": "d",
-        "text": "Generic: Colchicine. Class: Antigout agent. Primary use: Acute gout flares; prophylaxis. Key note: Narrow therapeutic index; toxicity increased with strong CYP3A4/P-gp inhibitors."
+        "text": "Take it on days when symptoms appear"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Generic: Levothyroxine. Class: Thyroid hormone. Primary use: Hypothyroidism. Key note: Take at the same time each day per product labeling (often morning; follow specific brand directions). Example: Prescription written for Synthroid.",
+    "correctOptionId": "c",
+    "explanation": "Levothyroxine (Synthroid, Levoxyl) is daily thyroid hormone replacement with a narrow therapeutic index. It is taken consistently on an empty stomach, usually 30 to 60 minutes before breakfast, and separated from calcium, iron and antacids by about 4 hours.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Prozac — what is the generic name, drug class, and primary use?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Generic: Levothyroxine. Class: Thyroid hormone. Primary use: Hypothyroidism. Key note: Take at the same time each day per product labeling…”.",
-      "d": "Not the best answer here; the right answer is “Generic: Levothyroxine. Class: Thyroid hormone. Primary use: Hypothyroidism. Key note: Take at the same time each day per product labeling…”."
+      "a": "Food and calcium reduce levothyroxine absorption; calcium is separated by about 4 hours.",
+      "b": "Bedtime dosing is acceptable only on an empty stomach, about 3 hours after the last meal, not right after eating.",
+      "d": "Levothyroxine is daily replacement therapy; as-needed dosing would leave the patient hypothyroid."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-007",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Levofloxacin? Select the best answer.",
+    "prompt": "Levaquin 500 mg daily is prescribed for community-acquired pneumonia. Which antibiotic class and key warning apply to this drug?",
     "options": [
       {
         "id": "a",
-        "text": "Glucotrol"
+        "text": "Macrolide; risk of severe diarrhea and QT changes"
       },
       {
         "id": "b",
-        "text": "Flovent"
+        "text": "Fluoroquinolone; tendinitis and tendon rupture"
       },
       {
         "id": "c",
-        "text": "Levaquin"
+        "text": "Cephalosporin; cross-reactivity with penicillin allergy"
       },
       {
         "id": "d",
-        "text": "Lopressor"
+        "text": "Tetracycline; permanent tooth staining in children"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Levaquin. Class: Fluoroquinolone. Example: Dispense Levofloxacin for Levaquin Rx.",
+    "correctOptionId": "b",
+    "explanation": "Levaquin is levofloxacin, a fluoroquinolone. Fluoroquinolones carry a boxed warning for tendinitis and tendon rupture (higher risk in older adults and with corticosteroids), peripheral neuropathy and CNS effects. Antacids, iron and calcium block their absorption.",
     "distractorExplanations": {
-      "a": "Glucotrol is a brand name for Glipizide, not Levofloxacin.",
-      "b": "Flovent is a brand name for Fluticasone (inhaled), not Levofloxacin.",
-      "d": "Lopressor is a brand name for Metoprolol, not Levofloxacin."
+      "a": "Macrolides are azithromycin (Zithromax) and clarithromycin (Biaxin), not levofloxacin.",
+      "c": "Cephalosporins include cephalexin (Keflex) and ceftriaxone (Rocephin), not Levaquin.",
+      "d": "Tooth staining is the classic tetracycline warning (doxycycline, minocycline), not a fluoroquinolone warning."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -234,31 +234,31 @@
     "id": "ptcb-pharmacy-technician-mock-008",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Famotidine? Select the best answer.",
+    "prompt": "A customer asks for Pepcid AC for occasional heartburn. Which active ingredient and drug class does this product contain?",
     "options": [
       {
         "id": "a",
-        "text": "Levaquin"
+        "text": "Omeprazole; proton pump inhibitor (PPI)"
       },
       {
         "id": "b",
-        "text": "Neurontin"
+        "text": "Calcium carbonate; antacid"
       },
       {
         "id": "c",
-        "text": "Norvasc"
+        "text": "Ranitidine; H2 receptor antagonist"
       },
       {
         "id": "d",
-        "text": "Pepcid"
+        "text": "Famotidine; H2 receptor antagonist"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Pepcid is the brand name for famotidine, an H2 blocker used for GERD and ulcers.",
+    "explanation": "Pepcid is famotidine, an H2 receptor antagonist that reduces stomach acid secretion; it is sold OTC (Pepcid AC) and by prescription. Since ranitidine was withdrawn from the US market in 2020, the product sold as Zantac 360 is also famotidine.",
     "distractorExplanations": {
-      "a": "Levaquin is a brand name for Levofloxacin, not Famotidine.",
-      "b": "Neurontin is a brand name for Gabapentin, not Famotidine.",
-      "c": "Not the best answer here; the right answer is “Pepcid”."
+      "a": "Omeprazole is Prilosec, a proton pump inhibitor, not Pepcid.",
+      "b": "Calcium carbonate is Tums, an antacid that neutralizes acid rather than blocking its secretion.",
+      "c": "Ranitidine was the original Zantac and was withdrawn in 2020 over NDMA impurities; it is not Pepcid."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -267,31 +267,31 @@
     "id": "ptcb-pharmacy-technician-mock-009",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Atorvastatin? Select the best answer.",
+    "prompt": "A patient recently started atorvastatin (Lipitor) 40 mg. Which new symptom should prompt a call to the prescriber?",
     "options": [
       {
         "id": "a",
-        "text": "Pepcid"
+        "text": "Unexplained muscle pain or weakness"
       },
       {
         "id": "b",
-        "text": "Lipitor"
+        "text": "A persistent dry, tickling cough at night"
       },
       {
         "id": "c",
-        "text": "Synthroid"
+        "text": "Swollen gums that bleed easily"
       },
       {
         "id": "d",
-        "text": "Xanax"
+        "text": "Ringing or buzzing in the ears"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Lipitor. Class: Statin. Example: Dispense Atorvastatin for Lipitor Rx.",
+    "correctOptionId": "a",
+    "explanation": "Atorvastatin is an HMG-CoA reductase inhibitor (statin). Unexplained muscle pain, tenderness or weakness can signal myopathy or rare rhabdomyolysis. Risk rises with interacting drugs such as gemfibrozil or strong CYP3A4 inhibitors like clarithromycin.",
     "distractorExplanations": {
-      "a": "Pepcid is a brand name for Famotidine, not Atorvastatin.",
-      "c": "Synthroid is a brand name for Levothyroxine, not Atorvastatin.",
-      "d": "Xanax is a brand name for Alprazolam, not Atorvastatin."
+      "b": "A dry cough is the classic ACE inhibitor effect (lisinopril), not a statin effect.",
+      "c": "Gum overgrowth is linked to phenytoin, cyclosporine and some calcium channel blockers.",
+      "d": "Tinnitus is a sign of salicylate toxicity or loop diuretic ototoxicity, not statin therapy."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -300,31 +300,31 @@
     "id": "ptcb-pharmacy-technician-mock-010",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for TMP-SMX? Select the best answer.",
+    "prompt": "A patient profile lists an allergy to sulfonamide antibiotics. Which new prescription should the technician flag for the pharmacist before filling?",
     "options": [
       {
         "id": "a",
-        "text": "Zyloprim"
+        "text": "Augmentin (amoxicillin-clavulanate)"
       },
       {
         "id": "b",
-        "text": "Lipitor"
+        "text": "Zithromax (azithromycin)"
       },
       {
         "id": "c",
-        "text": "Bactrim"
+        "text": "Bactrim DS (SMX-TMP)"
       },
       {
         "id": "d",
-        "text": "Aldactone"
+        "text": "Keflex (cephalexin)"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Bactrim. Class: Sulfa antibiotic combo. Example: Dispense TMP-SMX for Bactrim Rx.",
+    "explanation": "Bactrim is sulfamethoxazole-trimethoprim (SMX-TMP), a sulfonamide antibiotic combination. A documented sulfa allergy conflicts with it, so the order must go to the pharmacist before filling. None of the other three antibiotics contains a sulfonamide.",
     "distractorExplanations": {
-      "a": "Zyloprim is a brand name for Allopurinol, not TMP-SMX.",
-      "b": "Lipitor is a brand name for Atorvastatin, not TMP-SMX.",
-      "d": "Sound-alike brand confusion."
+      "a": "Augmentin is a penicillin; it matters for a penicillin allergy, not a sulfa allergy.",
+      "b": "Azithromycin is a macrolide with no sulfonamide group.",
+      "d": "Cephalexin is a cephalosporin; its cross-allergy concern is with penicillin, not sulfa."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -333,64 +333,64 @@
     "id": "ptcb-pharmacy-technician-mock-011",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Methotrexate? Select the best answer.",
+    "prompt": "A new prescription for rheumatoid arthritis reads: methotrexate 2.5 mg tablets, take 4 tablets by mouth daily. What is the main concern?",
     "options": [
       {
         "id": "a",
-        "text": "Trexall"
+        "text": "The dose is too low to control arthritis"
       },
       {
         "id": "b",
-        "text": "Ambien"
+        "text": "RA dosing is usually once weekly, not daily"
       },
       {
         "id": "c",
-        "text": "Pyridium"
+        "text": "Methotrexate for RA must be given by injection"
       },
       {
         "id": "d",
-        "text": "Abilify"
+        "text": "The tablets require refrigeration"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Trexall. Class: Antimetabolite. Example: Dispense Methotrexate for Trexall Rx.",
+    "correctOptionId": "b",
+    "explanation": "For rheumatoid arthritis and psoriasis, methotrexate is taken once weekly; 10 mg is a typical weekly dose. Taking it daily by mistake has caused fatal toxicity, which is why ISMP lists oral methotrexate as a high-alert drug and the order must be verified with the prescriber.",
     "distractorExplanations": {
-      "b": "Sound-alike brand confusion.",
-      "c": "Sound-alike brand confusion.",
-      "d": "Sound-alike brand confusion."
+      "a": "10 mg is a normal weekly RA dose; the danger is the daily frequency, not the amount.",
+      "c": "Oral tablets (Trexall, generics) are standard for RA; injection is an option, not a requirement.",
+      "d": "Methotrexate tablets are stored at room temperature, protected from light."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-012",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Naproxen? Select the best answer.",
+    "prompt": "A patient who takes warfarin daily brings naproxen (Aleve) to the counter for back pain. Why should the technician refer the patient to the pharmacist?",
     "options": [
       {
         "id": "a",
-        "text": "Prilosec"
+        "text": "Naproxen speeds warfarin metabolism and weakens it"
       },
       {
         "id": "b",
-        "text": "Neurontin"
+        "text": "Naproxen drops blood pressure sharply with warfarin"
       },
       {
         "id": "c",
-        "text": "Aleve"
+        "text": "Naproxen causes heavy drowsiness with warfarin"
       },
       {
         "id": "d",
-        "text": "Lexapro"
+        "text": "Naproxen raises bleeding risk with warfarin"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Aleve. Class: NSAID. Example: Dispense Naproxen for Aleve Rx.",
+    "correctOptionId": "d",
+    "explanation": "NSAIDs such as naproxen and ibuprofen impair platelet function and irritate the GI lining, so combining them with warfarin markedly raises bleeding risk, especially GI bleeding. Any OTC recommendation for a patient on an anticoagulant requires pharmacist judgment.",
     "distractorExplanations": {
-      "a": "Prilosec is a brand name for Omeprazole, not Naproxen.",
-      "b": "Neurontin is a brand name for Gabapentin, not Naproxen.",
-      "d": "Lexapro is a brand name for Escitalopram, not Naproxen."
+      "a": "Naproxen does not induce warfarin metabolism; enzyme inducers such as rifampin or carbamazepine do.",
+      "b": "NSAIDs tend to raise blood pressure, not drop it.",
+      "c": "Drowsiness is not a recognized naproxen-warfarin interaction."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -399,31 +399,31 @@
     "id": "ptcb-pharmacy-technician-mock-013",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Pantoprazole? Select the best answer.",
+    "prompt": "A caregiver asks whether pantoprazole (Protonix) 40 mg tablets can be crushed into applesauce. Which class and handling rule apply?",
     "options": [
       {
         "id": "a",
-        "text": "Protonix"
+        "text": "Proton pump inhibitor; do not crush"
       },
       {
         "id": "b",
-        "text": "Norvasc"
+        "text": "H2 blocker; may be crushed into soft food"
       },
       {
         "id": "c",
-        "text": "Prilosec"
+        "text": "Antacid; chew well before swallowing"
       },
       {
         "id": "d",
-        "text": "Neurontin"
+        "text": "Prokinetic; dissolve under the tongue"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Protonix. Class: PPI. Example: Dispense Pantoprazole for Protonix Rx.",
+    "explanation": "Pantoprazole (Protonix) is a proton pump inhibitor. The oral tablet is delayed-release (enteric-coated) and must be swallowed whole, because crushing exposes the drug to stomach acid. Patients who cannot swallow tablets may use the delayed-release granule packets instead.",
     "distractorExplanations": {
-      "b": "Sound-alike brand confusion.",
-      "c": "Prilosec is a brand name for Omeprazole, not Pantoprazole.",
-      "d": "Neurontin is a brand name for Gabapentin, not Pantoprazole."
+      "b": "Pantoprazole is not an H2 blocker, and its enteric coating makes crushing inappropriate.",
+      "c": "Antacids such as calcium carbonate are chewed; pantoprazole is a PPI tablet, not an antacid.",
+      "d": "Prokinetics such as metoclopramide speed gastric emptying; pantoprazole is not a sublingual product."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -432,31 +432,31 @@
     "id": "ptcb-pharmacy-technician-mock-014",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Glipizide? Select the best answer.",
+    "prompt": "Which adverse effect is most closely associated with glipizide (Glucotrol)?",
     "options": [
       {
         "id": "a",
-        "text": "Glucotrol"
+        "text": "Lactic acidosis in kidney disease"
       },
       {
         "id": "b",
-        "text": "Flovent"
+        "text": "Genital yeast infections"
       },
       {
         "id": "c",
-        "text": "Lexapro"
+        "text": "Hypoglycemia if meals are skipped"
       },
       {
         "id": "d",
-        "text": "Deltasone"
+        "text": "Fluid retention and edema"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Glucotrol. Class: Sulfonylurea. Example: Dispense Glipizide for Glucotrol Rx.",
+    "correctOptionId": "c",
+    "explanation": "Glipizide is a sulfonylurea that stimulates insulin release regardless of blood glucose, so hypoglycemia is its key risk, especially with skipped meals, alcohol, or reduced kidney function in older adults. Patients should carry a fast-acting sugar source.",
     "distractorExplanations": {
-      "b": "Flovent is a brand name for Fluticasone (inhaled), not Glipizide.",
-      "c": "Lexapro is a brand name for Escitalopram, not Glipizide.",
-      "d": "Deltasone is a brand name for Prednisone, not Glipizide."
+      "a": "Lactic acidosis is the rare boxed warning for metformin (Glucophage), not glipizide.",
+      "b": "Genital yeast infections are typical of SGLT2 inhibitors such as empagliflozin (Jardiance).",
+      "d": "Fluid retention and heart-failure warnings belong to pioglitazone (Actos), a thiazolidinedione."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -465,31 +465,31 @@
     "id": "ptcb-pharmacy-technician-mock-015",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Norco — what is the generic name, drug class, and primary use?",
+    "prompt": "A prescription for Norco 5/325 is presented. Which active ingredients and federal DEA schedule apply?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Oxycodone/APAP. Class: Opioid + APAP. Primary use: Moderate to severe pain."
+        "text": "Oxycodone/acetaminophen; Schedule II"
       },
       {
         "id": "b",
-        "text": "Generic: Ibuprofen. Class: NSAID. Primary use: Pain and inflammation."
+        "text": "Hydrocodone/acetaminophen; Schedule III"
       },
       {
         "id": "c",
-        "text": "Generic: Tramadol. Class: Opioid analgesic. Primary use: Moderate pain."
+        "text": "Tramadol/acetaminophen; Schedule IV"
       },
       {
         "id": "d",
-        "text": "Generic: Hydrocodone/APAP. Class: Opioid + APAP. Primary use: Moderate pain (C-II)."
+        "text": "Hydrocodone/acetaminophen; Schedule II"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Norco is hydrocodone with acetaminophen (APAP), an opioid combination used for moderate pain. Hydrocodone combination products are DEA Schedule II, so refills are not allowed.",
+    "explanation": "Norco is hydrocodone 5 mg with acetaminophen 325 mg. Since October 2014, all hydrocodone combination products are Schedule II, so the prescription cannot be refilled and each fill needs a new prescription.",
     "distractorExplanations": {
-      "a": "Oxycodone/APAP is Percocet, not Norco.",
-      "b": "Ibuprofen is Motrin/Advil, an NSAID, not an opioid combination.",
-      "c": "Tramadol is Ultram, not Norco."
+      "a": "Oxycodone/acetaminophen is Percocet, not Norco.",
+      "b": "Hydrocodone combinations were Schedule III only until the DEA moved them to Schedule II in October 2014.",
+      "c": "Tramadol/acetaminophen is Ultracet, a Schedule IV product, not Norco."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -498,64 +498,64 @@
     "id": "ptcb-pharmacy-technician-mock-016",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Eliquis — what is the generic name, drug class, and primary use?",
+    "prompt": "A wholesaler delivery includes unopened vials of insulin glargine (Lantus). How should they be stored in the pharmacy until dispensing?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Apixaban. Class: Factor Xa inhibitor. Primary use: AFib, VTE. Key note: No routine INR."
+        "text": "At room temperature, away from direct light"
       },
       {
         "id": "b",
-        "text": "Zofran. Class: 5-HT3 antiemetic."
+        "text": "In the refrigerator at 2-8 °C, not frozen"
       },
       {
         "id": "c",
-        "text": "Pyridium. Class: Urinary tract analgesic."
+        "text": "In the freezer to extend the expiration date"
       },
       {
         "id": "d",
-        "text": "Generic: Pantoprazole. Class: PPI. Primary use: GERD. Key note: IV form in hospitals."
+        "text": "In the refrigerator door for easy access"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Generic: Apixaban. Class: Factor Xa inhibitor. Primary use: AFib, VTE. Key note: No routine INR. Example: Prescription written for Eliquis.",
+    "correctOptionId": "b",
+    "explanation": "Unopened insulin is refrigerated at 2-8 °C (36-46 °F) until its expiration date, and frozen insulin must be discarded. After opening, a Lantus vial may be kept at room temperature or refrigerated and is discarded 28 days after first use.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Generic: Apixaban. Class: Factor Xa inhibitor. Primary use: AFib, VTE. Key note: No routine INR”.",
-      "c": "Not the best answer here; the right answer is “Generic: Apixaban. Class: Factor Xa inhibitor. Primary use: AFib, VTE. Key note: No routine INR”.",
-      "d": "Not the best answer here; the right answer is “Generic: Apixaban. Class: Factor Xa inhibitor. Primary use: AFib, VTE. Key note: No routine INR”."
+      "a": "Room-temperature storage is allowed only after opening, and only for the labeled in-use period.",
+      "c": "Freezing destroys insulin; frozen product cannot be used.",
+      "d": "The door has the largest temperature swings; product goes on a main shelf away from the cooling element."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-017",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Hydrocodone/APAP? Select the best answer.",
+    "prompt": "A patient stopped lisinopril because of a persistent dry cough. The prescriber wants a drug that acts on the same hormone pathway without that cough. Which choice is most likely?",
     "options": [
       {
         "id": "a",
-        "text": "Flovent"
+        "text": "Losartan (Cozaar)"
       },
       {
         "id": "b",
-        "text": "Glucotrol"
+        "text": "Enalapril (Vasotec)"
       },
       {
         "id": "c",
-        "text": "Lasix"
+        "text": "Amlodipine (Norvasc)"
       },
       {
         "id": "d",
-        "text": "Norco"
+        "text": "Ramipril (Altace)"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Norco. Class: Opioid + APAP. Example: Dispense Hydrocodone/APAP for Norco Rx.",
+    "correctOptionId": "a",
+    "explanation": "Losartan is an angiotensin II receptor blocker (ARB). ARBs act on the renin-angiotensin system like ACE inhibitors but do not raise bradykinin levels, so they rarely cause the dry cough that leads patients to stop lisinopril.",
     "distractorExplanations": {
-      "a": "Flovent is a brand name for Fluticasone (inhaled), not Hydrocodone/APAP.",
-      "b": "Glucotrol is a brand name for Glipizide, not Hydrocodone/APAP.",
-      "c": "Sound-alike brand confusion."
+      "b": "Enalapril is another ACE inhibitor (-pril) with the same cough risk.",
+      "c": "Amlodipine is a calcium channel blocker; it lowers blood pressure but does not act on the angiotensin pathway.",
+      "d": "Ramipril is also an ACE inhibitor, so the cough would likely return."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -564,31 +564,31 @@
     "id": "ptcb-pharmacy-technician-mock-018",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Potassium chloride? Select the best answer.",
+    "prompt": "Which instruction applies to potassium chloride extended-release tablets such as Klor-Con or K-Dur?",
     "options": [
       {
         "id": "a",
-        "text": "K-Dur"
+        "text": "Chew the tablet well before swallowing"
       },
       {
         "id": "b",
-        "text": "Bactrim"
+        "text": "Take on an empty stomach at bedtime"
       },
       {
         "id": "c",
-        "text": "Synthroid"
+        "text": "Take with food and a full glass of water"
       },
       {
         "id": "d",
-        "text": "Prilosec"
+        "text": "Let the tablet dissolve under the tongue"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "K-Dur. Class: Electrolyte supplement. Example: Dispense Potassium chloride for K-Dur Rx.",
+    "correctOptionId": "c",
+    "explanation": "Extended-release potassium chloride is taken with meals and a full glass of water and is not crushed or chewed, because concentrated potassium can ulcerate the esophagus or stomach. Potassium supplements also add to the hyperkalemia risk of ACE inhibitors, ARBs and potassium-sparing diuretics.",
     "distractorExplanations": {
-      "b": "Bactrim is a brand name for Tmp-smx, not Potassium chloride.",
-      "c": "Synthroid is a brand name for Levothyroxine, not Potassium chloride.",
-      "d": "Prilosec is a brand name for Omeprazole, not Potassium chloride."
+      "a": "Chewing an ER potassium tablet releases a concentrated dose that can injure the GI lining.",
+      "b": "Potassium is taken with food to reduce stomach irritation, not on an empty stomach.",
+      "d": "Potassium chloride tablets are swallowed; they are not a sublingual dosage form."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -597,31 +597,31 @@
     "id": "ptcb-pharmacy-technician-mock-019",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Escitalopram? Select the best answer.",
+    "prompt": "While checking a stock bottle against a prescription, a technician must confirm the brand-generic pair. Which pair is correctly matched?",
     "options": [
       {
         "id": "a",
-        "text": "Lexapro"
+        "text": "Lexapro - citalopram"
       },
       {
         "id": "b",
-        "text": "Pepcid"
+        "text": "Celexa - escitalopram"
       },
       {
         "id": "c",
-        "text": "Viagra"
+        "text": "Paxil - fluoxetine"
       },
       {
         "id": "d",
-        "text": "Seroquel"
+        "text": "Lexapro - escitalopram"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Lexapro. Class: SSRI. Example: Dispense Escitalopram for Lexapro Rx.",
+    "correctOptionId": "d",
+    "explanation": "Lexapro is escitalopram and Celexa is citalopram. The names differ by one prefix and escitalopram is the active isomer of citalopram, so mixing them up is a common selection error; NDC barcode scanning at fill is the main safeguard.",
     "distractorExplanations": {
-      "b": "Pepcid is a brand name for Famotidine, not Escitalopram.",
-      "c": "Sound-alike brand confusion.",
-      "d": "Sound-alike brand confusion."
+      "a": "Citalopram is Celexa, not Lexapro; the generic names differ by the es- prefix.",
+      "b": "This reverses the pair: Celexa is citalopram and escitalopram is Lexapro.",
+      "c": "Paxil is paroxetine; fluoxetine is Prozac."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -630,64 +630,64 @@
     "id": "ptcb-pharmacy-technician-mock-020",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Gabapentin? Select the best answer.",
+    "prompt": "Gabapentin (Neurontin) 300 mg three times daily is prescribed. Which use is FDA-approved for this drug?",
     "options": [
       {
         "id": "a",
-        "text": "Naprosyn"
+        "text": "Postherpetic neuralgia and partial seizures"
       },
       {
         "id": "b",
-        "text": "Cozaar"
+        "text": "Major depression and smoking cessation support"
       },
       {
         "id": "c",
-        "text": "Prinivil, Zestril"
+        "text": "Parkinson disease tremor and rigidity"
       },
       {
         "id": "d",
-        "text": "Neurontin"
+        "text": "High blood pressure and stable angina"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Neurontin. Class: Anticonvulsant. Example: Dispense Gabapentin for Neurontin Rx.",
+    "correctOptionId": "a",
+    "explanation": "Gabapentin is an anticonvulsant approved for partial-onset seizures and postherpetic neuralgia, and it is widely used for other nerve pain. It causes dizziness and sedation, is dose-adjusted in kidney impairment, and is a controlled substance in several states.",
     "distractorExplanations": {
-      "a": "Naprosyn is a brand name for Naproxen, not Gabapentin.",
-      "b": "Cozaar is a brand name for Losartan, not Gabapentin.",
-      "c": "Sound-alike brand confusion."
+      "b": "Depression and smoking cessation are the uses of bupropion (Wellbutrin, Zyban).",
+      "c": "Parkinson symptoms are treated with drugs such as carbidopa-levodopa (Sinemet).",
+      "d": "Hypertension and angina are treated with drugs such as amlodipine or metoprolol, not gabapentin."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-021",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Cozaar — what is the generic name, drug class, and primary use?",
+    "prompt": "Which of these drugs has a narrow therapeutic index, so small changes in dose or blood level can cause toxicity?",
     "options": [
       {
         "id": "a",
-        "text": "Pyridium. Class: Urinary tract analgesic."
+        "text": "Amoxicillin (Amoxil)"
       },
       {
         "id": "b",
-        "text": "Generic: Digoxin. Class: Cardiac glycoside. Primary use: Heart failure; atrial fibrillation rate control. Key note: Narrow therapeutic index; check apical pulse; hypokalemia increases toxicity."
+        "text": "Digoxin (Lanoxin)"
       },
       {
         "id": "c",
-        "text": "Generic: Losartan. Class: ARB. Primary use: Hypertension. Key note: Alternative if ACE cough."
+        "text": "Loratadine (Claritin)"
       },
       {
         "id": "d",
-        "text": "Singulair. Class: LTRA."
+        "text": "Omeprazole (Prilosec)"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Generic: Losartan. Class: ARB. Primary use: Hypertension. Key note: Alternative if ACE cough. Example: Prescription written for Cozaar.",
+    "correctOptionId": "b",
+    "explanation": "Digoxin is a narrow-therapeutic-index drug: toxic levels are close to effective levels. Toxicity (nausea, visual changes, slow pulse, arrhythmias) is more likely with low potassium or kidney impairment. Warfarin, lithium, phenytoin and levothyroxine are other NTI examples.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Generic: Losartan. Class: ARB. Primary use: Hypertension. Key note: Alternative if ACE cough”.",
-      "b": "Not the best answer here; the right answer is “Generic: Losartan. Class: ARB. Primary use: Hypertension. Key note: Alternative if ACE cough”.",
-      "d": "Not the best answer here; the right answer is “Generic: Losartan. Class: ARB. Primary use: Hypertension. Key note: Alternative if ACE cough”."
+      "a": "Amoxicillin has a wide safety margin between effective and toxic doses.",
+      "c": "Loratadine is a non-sedating antihistamine with a wide therapeutic range.",
+      "d": "Omeprazole is a PPI with a wide therapeutic range; no blood-level monitoring is needed."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -696,31 +696,31 @@
     "id": "ptcb-pharmacy-technician-mock-022",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Alprazolam? Select the best answer.",
+    "prompt": "A prescription for alprazolam 0.5 mg three times daily as needed for anxiety is received. Which drug class and key safety concern apply?",
     "options": [
       {
         "id": "a",
-        "text": "Prozac"
+        "text": "SSRI; serotonin syndrome with MAO inhibitors"
       },
       {
         "id": "b",
-        "text": "Xanax"
+        "text": "Beta-blocker; masks signs of low blood sugar"
       },
       {
         "id": "c",
-        "text": "Ativan"
+        "text": "Benzodiazepine; sedation, worse with opioids"
       },
       {
         "id": "d",
-        "text": "Seroquel"
+        "text": "Antihistamine; dry mouth and urine retention"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Xanax. Class: Benzodiazepine. Example: Dispense Alprazolam for Xanax Rx.",
+    "correctOptionId": "c",
+    "explanation": "Alprazolam (Xanax) is a Schedule IV benzodiazepine. It causes sedation and dependence, and combining benzodiazepines with opioids carries an FDA boxed warning for profound sedation, respiratory depression and death. Stopping abruptly after regular use can trigger withdrawal.",
     "distractorExplanations": {
-      "a": "Prozac is a brand name for Fluoxetine, not Alprazolam.",
-      "c": "Ativan is a brand name for Lorazepam, not Alprazolam.",
-      "d": "Sound-alike brand confusion."
+      "a": "SSRIs such as sertraline treat anxiety too, but alprazolam is not an SSRI.",
+      "b": "Masking hypoglycemia is a beta-blocker concern (metoprolol, propranolol), not a benzodiazepine concern.",
+      "d": "Anticholinergic dry mouth fits antihistamines such as hydroxyzine, not alprazolam."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -729,31 +729,31 @@
     "id": "ptcb-pharmacy-technician-mock-023",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Fosamax — what is the generic name, drug class, and primary use?",
+    "prompt": "Which administration instruction is required for alendronate (Fosamax) 70 mg once weekly?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Pantoprazole. Class: PPI. Primary use: GERD. Key note: Take before breakfast."
+        "text": "Take with plain water; stay upright 30 min"
       },
       {
         "id": "b",
-        "text": "Generic: Alendronate. Class: Bisphosphonate. Primary use: Osteoporosis. Key note: Take upright with a full glass of water."
+        "text": "Take with orange juice and a full breakfast"
       },
       {
         "id": "c",
-        "text": "Generic: Escitalopram. Class: SSRI. Primary use: Depression, GAD. Key note: Start low in elderly."
+        "text": "Take at bedtime so it can work overnight"
       },
       {
         "id": "d",
-        "text": "Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than a PPI."
+        "text": "Take with a calcium tablet to aid absorption"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Generic: Alendronate. Class: Bisphosphonate. Primary use: Osteoporosis. Key note: Take with full glass of water; remain upright ≥30 minutes; do not lie down after dose. Example: Prescription written for Fosamax.",
+    "correctOptionId": "a",
+    "explanation": "Alendronate is a bisphosphonate for osteoporosis. It is taken first thing in the morning on an empty stomach with 6-8 oz of plain water, and the patient stays upright for at least 30 minutes and until the first food of the day to prevent esophageal injury and poor absorption.",
     "distractorExplanations": {
-      "a": "Pantoprazole is Protonix, not Fosamax.",
-      "c": "Escitalopram is Lexapro, not Fosamax.",
-      "d": "Famotidine is Pepcid, not Fosamax."
+      "b": "Juice, coffee and food sharply reduce absorption; only plain water is allowed.",
+      "c": "Lying down after a dose risks esophageal irritation and ulceration.",
+      "d": "Calcium binds alendronate, so supplements are taken at a different time of day."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -762,31 +762,31 @@
     "id": "ptcb-pharmacy-technician-mock-024",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Prednisone? Select the best answer.",
+    "prompt": "A patient has taken prednisone 40 mg daily for three weeks. The new prescription tapers the dose gradually. What is the main reason for the taper?",
     "options": [
       {
         "id": "a",
-        "text": "Protonix"
+        "text": "To prevent an allergic reaction to the drug"
       },
       {
         "id": "b",
-        "text": "Macrobid"
+        "text": "To lower the risk of stomach ulcers"
       },
       {
         "id": "c",
-        "text": "Deltasone"
+        "text": "To keep blood pressure from rising"
       },
       {
         "id": "d",
-        "text": "Fosamax"
+        "text": "To let the adrenals restart cortisol output"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Deltasone. Class: Systemic corticosteroid. Example: Dispense Prednisone for Deltasone Rx.",
+    "correctOptionId": "d",
+    "explanation": "Prolonged systemic corticosteroid therapy suppresses the hypothalamic-pituitary-adrenal axis. A gradual taper lets the adrenal glands resume natural cortisol production; stopping abruptly after weeks of use can cause adrenal insufficiency.",
     "distractorExplanations": {
-      "a": "Protonix is a brand name for Pantoprazole, not Prednisone.",
-      "b": "Macrobid is a brand name for Nitrofurantoin, not Prednisone.",
-      "d": "Fosamax is a brand name for Alendronate, not Prednisone."
+      "a": "Tapering has nothing to do with drug allergy.",
+      "b": "Taking prednisone with food helps GI upset; the taper is not an ulcer-prevention step.",
+      "c": "Prednisone can raise blood pressure while taken, but preventing that is not why the dose is tapered."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -795,31 +795,31 @@
     "id": "ptcb-pharmacy-technician-mock-025",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Lorazepam? Select the best answer.",
+    "prompt": "While putting away an order, a technician must decide which item goes into the pharmacy refrigerator. Which product requires refrigeration before it is dispensed?",
     "options": [
       {
         "id": "a",
-        "text": "Coumadin"
+        "text": "Amoxicillin 500 mg capsules"
       },
       {
         "id": "b",
-        "text": "Ativan"
+        "text": "Unopened Xalatan eye drops"
       },
       {
         "id": "c",
-        "text": "Zyrtec"
+        "text": "Levothyroxine 50 mcg tablets"
       },
       {
         "id": "d",
-        "text": "Wellbutrin"
+        "text": "Nitroglycerin SL tablets"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Ativan. Class: Benzodiazepine. Example: Dispense Lorazepam for Ativan Rx.",
+    "explanation": "Unopened latanoprost (Xalatan) bottles are refrigerated at 2-8 °C; once opened they may be kept at room temperature for up to 6 weeks. Other common refrigerated items include insulin, many vaccines and some reconstituted antibiotic suspensions.",
     "distractorExplanations": {
-      "a": "Coumadin is a brand name for Warfarin, not Lorazepam.",
-      "c": "Sound-alike brand confusion.",
-      "d": "Sound-alike brand confusion."
+      "a": "Amoxicillin capsules are stored at room temperature; only the reconstituted suspension is refrigeration-preferred.",
+      "c": "Levothyroxine is stored at room temperature, protected from light and moisture.",
+      "d": "Sublingual nitroglycerin stays at room temperature in its original tightly capped glass bottle."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local short-stem expansion"
@@ -828,31 +828,31 @@
     "id": "ptcb-pharmacy-technician-mock-026",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Wellbutrin — what is the generic name, drug class, and primary use?",
+    "prompt": "Bupropion (Wellbutrin XL) is contraindicated in a patient with which condition?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Doxycycline. Class: Tetracycline. Primary use: Acne, infections. Key note: Photosensitivity; avoid pregnancy."
+        "text": "Well-controlled hypothyroidism"
       },
       {
         "id": "b",
-        "text": "Generic: Losartan. Class: ARB. Primary use: Hypertension. Key note: Alternative if ACE cough."
+        "text": "A history of gout flares"
       },
       {
         "id": "c",
-        "text": "Generic: Insulin lispro. Class: Rapid insulin. Primary use: Diabetes with meals. Key note: Give with meals."
+        "text": "A seizure disorder"
       },
       {
         "id": "d",
-        "text": "Generic: Bupropion. Class: NDRI. Primary use: Depression, smoking cessation. Key note: Lowers seizure threshold."
+        "text": "Seasonal allergic rhinitis"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Generic: Bupropion. Class: NDRI. Primary use: Depression, smoking cessation. Key note: Lowers seizure threshold. Example: Prescription written for Wellbutrin.",
+    "correctOptionId": "c",
+    "explanation": "Bupropion lowers the seizure threshold, so it is contraindicated with seizure disorders, current or prior bulimia or anorexia, and abrupt alcohol or benzodiazepine withdrawal. It is used for depression and, as Zyban, for smoking cessation.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Vibramycin — what is the generic name, drug class, and primary use?”), not to this one.",
-      "b": "This is the answer to a different question (“Cozaar — what is the generic name, drug class, and primary use?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Generic: Bupropion. Class: NDRI. Primary use: Depression, smoking cessation. Key note: Lowers seizure threshold”."
+      "a": "Treated hypothyroidism is not a bupropion contraindication.",
+      "b": "Gout does not interact with bupropion; it matters for drugs such as thiazide diuretics.",
+      "d": "Allergic rhinitis is not a contraindication to bupropion."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -861,97 +861,97 @@
     "id": "ptcb-pharmacy-technician-mock-027",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Glucophage — what is the generic name, drug class, and primary use?",
+    "prompt": "A patient newly started on metformin (Glucophage) asks which side effect is most common in the first weeks. Which answer is correct?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Metoprolol. Class: Beta-blocker. Primary use: Hypertension, angina. Key note: Do not stop abruptly."
+        "text": "Nausea, diarrhea and stomach upset"
       },
       {
         "id": "b",
-        "text": "Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold around iodinated contrast per protocol."
+        "text": "Low blood sugar when used alone"
       },
       {
         "id": "c",
-        "text": "Generic: Nitrofurantoin. Class: Nitrofuran antibiotic. Primary use: Uncomplicated UTI. Key note: Take with food."
+        "text": "Weight gain of several pounds a month"
       },
       {
         "id": "d",
-        "text": "Generic: Spironolactone. Class: K-sparing diuretic. Primary use: HF, HTN. Key note: Hyperkalemia risk."
+        "text": "A persistent dry cough"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Generic: Metformin. Class: Biguanide. Primary use: Type 2 diabetes. Key note: Hold or adjust per eGFR and iodinated contrast protocol per labeling. Example: Prescription written for Glucophage.",
+    "correctOptionId": "a",
+    "explanation": "GI upset (nausea, diarrhea, bloating) is the most common metformin effect and is reduced by taking it with meals, titrating slowly or using the extended-release form. Metformin alone rarely causes hypoglycemia; lactic acidosis is a rare boxed warning.",
     "distractorExplanations": {
-      "a": "Metoprolol is Lopressor / Toprol XL, not Glucophage.",
-      "c": "Nitrofurantoin is Macrobid, not Glucophage.",
-      "d": "Spironolactone is Aldactone, not Glucophage."
+      "b": "Metformin does not stimulate insulin release, so hypoglycemia is uncommon when it is used alone, unlike sulfonylureas.",
+      "c": "Metformin is weight-neutral or causes mild weight loss.",
+      "d": "A dry cough is an ACE inhibitor effect, not a metformin effect."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-028",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Pepcid — what is the generic name, drug class, and primary use?",
+    "prompt": "A prescription reads: nitroglycerin 0.4 mg, 1 tablet SL every 5 minutes as needed for chest pain, maximum 3 doses. How is this dosage form used?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than PPI."
+        "text": "Swallowed whole with a glass of water"
       },
       {
         "id": "b",
-        "text": "Generic: Tamsulosin. Class: Alpha-1 blocker. Primary use: BPH. Key note: First-dose hypotension."
+        "text": "Applied to the skin as a patch"
       },
       {
         "id": "c",
-        "text": "Generic: Ibuprofen. Class: NSAID. Primary use: Pain, inflammation. Key note: GI/renal risk chronic use."
+        "text": "Inhaled through a nebulizer"
       },
       {
         "id": "d",
-        "text": "Generic: Insulin glargine. Class: Long-acting insulin. Primary use: Diabetes. Key note: Do not mix with other insulins in syringe unless directed."
+        "text": "Dissolved under the tongue"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than PPI. Example: Prescription written for Pepcid.",
+    "correctOptionId": "d",
+    "explanation": "SL means sublingual: the tablet dissolves under the tongue and is absorbed directly into the bloodstream, which gives rapid relief of angina. Sublingual nitroglycerin is kept in its original glass bottle, tightly capped, because it loses potency with heat, light and moisture.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than PPI”.",
-      "c": "Not the best answer here; the right answer is “Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than PPI”.",
-      "d": "Not the best answer here; the right answer is “Generic: Famotidine. Class: H2 blocker. Primary use: GERD. Key note: Less acid suppression than PPI”."
+      "a": "Swallowing sends the drug through first-pass liver metabolism and delays relief.",
+      "b": "Nitroglycerin patches exist (transdermal), but SL tablets are not applied to the skin.",
+      "c": "Nebulized drugs are inhaled; SL tablets are not an inhaled dosage form."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-029",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Prilosec — what is the generic name, drug class, and primary use?",
+    "prompt": "Which prescription most needs an 'Avoid grapefruit juice' auxiliary label?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Omeprazole. Class: PPI. Primary use: GERD, ulcers. Key note: Long-term nutrient effects."
+        "text": "Amoxicillin (Amoxil)"
       },
       {
         "id": "b",
-        "text": "Generic: Amlodipine. Class: CCB (dihydropyridine). Primary use: Hypertension, angina. Key note: Peripheral edema."
+        "text": "Simvastatin (Zocor)"
       },
       {
         "id": "c",
-        "text": "Colcrys. Class: Antigout."
+        "text": "Metformin (Glucophage)"
       },
       {
         "id": "d",
-        "text": "Lopressor (tartrate, immediate release); Toprol XL (succinate, extended release). Class: Beta-blocker."
+        "text": "Lisinopril (Zestril)"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Generic: Omeprazole. Class: PPI. Primary use: GERD, ulcers. Key note: Long-term nutrient effects. Example: Prescription written for Prilosec.",
+    "correctOptionId": "b",
+    "explanation": "Grapefruit juice inhibits CYP3A4 in the gut wall and can sharply raise blood levels of simvastatin (and lovastatin), increasing the risk of muscle toxicity. Other CYP3A4 substrates, such as some calcium channel blockers and immunosuppressants, carry similar warnings.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Generic: Omeprazole. Class: PPI. Primary use: GERD, ulcers. Key note: Long-term nutrient effects”.",
-      "c": "Not the best answer here; the right answer is “Generic: Omeprazole. Class: PPI. Primary use: GERD, ulcers. Key note: Long-term nutrient effects”.",
-      "d": "Not the best answer here; the right answer is “Generic: Omeprazole. Class: PPI. Primary use: GERD, ulcers. Key note: Long-term nutrient effects”."
+      "a": "Amoxicillin is not metabolized by CYP3A4 and has no grapefruit interaction.",
+      "c": "Metformin is excreted unchanged by the kidneys; grapefruit does not affect it.",
+      "d": "Lisinopril is not a CYP3A4 substrate; its key interactions are with potassium and NSAIDs."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -960,64 +960,64 @@
     "id": "ptcb-pharmacy-technician-mock-030",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "Proventil — what is the generic name, drug class, and primary use?",
+    "prompt": "A patient with asthma receives albuterol HFA and fluticasone HFA (Flovent). Which statement describes the albuterol inhaler?",
     "options": [
       {
         "id": "a",
-        "text": "Generic: Fluticasone (inhaled). Class: Inhaled corticosteroid (ICS). Primary use: Asthma maintenance. Key note: Rinse mouth after inhalation; do not confuse with nasal fluticasone (Flonase)."
+        "text": "Daily controller that reduces airway inflammation"
       },
       {
         "id": "b",
-        "text": "Generic: Tamsulosin. Class: Alpha-1 blocker. Primary use: BPH. Key note: First-dose hypotension."
+        "text": "Long-acting bronchodilator used twice daily"
       },
       {
         "id": "c",
-        "text": "Generic: Atorvastatin. Class: Statin. Primary use: Hyperlipidemia. Key note: Muscle pain report."
+        "text": "Leukotriene blocker taken in the evening"
       },
       {
         "id": "d",
-        "text": "Generic: Albuterol. Class: SABA. Primary use: Asthma rescue. Key note: Tremor/tachycardia."
+        "text": "Quick-relief inhaler used for acute symptoms"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Generic: Albuterol. Class: SABA. Primary use: Asthma rescue. Key note: Tremor/tachycardia. Example: Prescription written for Proventil.",
+    "explanation": "Albuterol (ProAir, Proventil, Ventolin) is a short-acting beta-2 agonist (SABA) used as a rescue inhaler; tremor and a fast heart rate are common. Fluticasone is the inhaled corticosteroid controller, and patients rinse their mouth after each use to prevent thrush.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Generic: Albuterol. Class: SABA. Primary use: Asthma rescue. Key note: Tremor/tachycardia”.",
-      "b": "Not the best answer here; the right answer is “Generic: Albuterol. Class: SABA. Primary use: Asthma rescue. Key note: Tremor/tachycardia”.",
-      "c": "Not the best answer here; the right answer is “Generic: Albuterol. Class: SABA. Primary use: Asthma rescue. Key note: Tremor/tachycardia”."
+      "a": "That describes the fluticasone controller, an inhaled corticosteroid.",
+      "b": "Twice-daily long-acting bronchodilators are LABAs such as salmeterol, not albuterol.",
+      "c": "Leukotriene blockers are oral tablets such as montelukast (Singulair)."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-031",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Ciprofloxacin? Select the best answer.",
+    "prompt": "A patient taking ciprofloxacin (Cipro) also uses a daily antacid containing magnesium and aluminum. What is the concern with this combination?",
     "options": [
       {
         "id": "a",
-        "text": "Cipro"
+        "text": "The antacid binds ciprofloxacin in the gut"
       },
       {
         "id": "b",
-        "text": "Synthroid"
+        "text": "The antacid raises ciprofloxacin to toxic levels"
       },
       {
         "id": "c",
-        "text": "Glucotrol"
+        "text": "Ciprofloxacin neutralizes the antacid's effect"
       },
       {
         "id": "d",
-        "text": "Zyloprim"
+        "text": "The two together cause severe drowsiness"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Cipro. Class: Fluoroquinolone. Example: Dispense Ciprofloxacin for Cipro Rx.",
+    "explanation": "Multivalent cations (magnesium, aluminum, calcium, iron, zinc) chelate fluoroquinolones and tetracyclines in the gut and can reduce absorption dramatically. Ciprofloxacin is taken at least 2 hours before or 6 hours after these products.",
     "distractorExplanations": {
-      "b": "Synthroid is a brand name for Levothyroxine, not Ciprofloxacin.",
-      "c": "Glucotrol is a brand name for Glipizide, not Ciprofloxacin.",
-      "d": "Zyloprim is a brand name for Allopurinol, not Ciprofloxacin."
+      "b": "Chelation lowers ciprofloxacin levels; it does not raise them.",
+      "c": "Ciprofloxacin does not alter how the antacid works; the problem is lost antibiotic absorption.",
+      "d": "Drowsiness is not a recognized effect of this combination."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -1026,31 +1026,31 @@
     "id": "ptcb-pharmacy-technician-mock-032",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "medications",
-    "prompt": "On the PTCB / PTCE Mock, what is a common brand name for Tramadol? Select the best answer.",
+    "prompt": "Which statement about tramadol (Ultram) 50 mg tablets is correct?",
     "options": [
       {
         "id": "a",
-        "text": "Xanax"
+        "text": "It is an NSAID with no potential for abuse or misuse"
       },
       {
         "id": "b",
-        "text": "Zyloprim"
+        "text": "It is Schedule II and cannot be refilled"
       },
       {
         "id": "c",
-        "text": "Norco"
+        "text": "It is C-IV and may lower the seizure threshold"
       },
       {
         "id": "d",
-        "text": "Ultram"
+        "text": "It is sold over the counter in most states"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Ultram. Class: Opioid-like analgesic. Example: Dispense Tramadol for Ultram Rx.",
+    "correctOptionId": "c",
+    "explanation": "Tramadol is a centrally acting opioid analgesic placed in DEA Schedule IV in 2014. It can lower the seizure threshold and, because it also blocks serotonin reuptake, raises serotonin syndrome risk with SSRIs, SNRIs and MAO inhibitors.",
     "distractorExplanations": {
-      "a": "Xanax is a brand name for Alprazolam, not Tramadol.",
-      "b": "Zyloprim is a brand name for Allopurinol, not Tramadol.",
-      "c": "Norco is a brand name for Hydrocodone/APAP, not Tramadol."
+      "a": "Tramadol is an opioid agonist, not an NSAID, and it has abuse potential.",
+      "b": "Tramadol is Schedule IV, so refills are allowed; Schedule II applies to drugs such as oxycodone.",
+      "d": "Tramadol is a prescription-only controlled substance everywhere in the US."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, TOP-200). · Local QA repair (stems/distractors)"
@@ -1059,31 +1059,31 @@
     "id": "ptcb-pharmacy-technician-mock-033",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: Black box warning? Select the best answer.",
+    "prompt": "A customer asks to buy pseudoephedrine tablets kept behind the counter. Under the Combat Methamphetamine Epidemic Act, what is the federal limit per purchaser per day?",
     "options": [
       {
         "id": "a",
-        "text": "Serious risk warning in labeling."
+        "text": "1.8 g of base"
       },
       {
         "id": "b",
-        "text": "Quarantine affected lots for recalls."
+        "text": "3.6 g of base"
       },
       {
         "id": "c",
-        "text": "Reduces handwriting errors."
+        "text": "7.5 g of base"
       },
       {
         "id": "d",
-        "text": "Required patient med guide for certain drugs."
+        "text": "9 g of base"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Serious risk warning in labeling.",
+    "correctOptionId": "b",
+    "explanation": "The CMEA (2005) limits retail sales of pseudoephedrine, ephedrine and phenylpropanolamine to 3.6 g of base per purchaser per day and 9 g per 30 days (7.5 g per 30 days for mail order or mobile retail). Products stay behind the counter, the buyer shows photo ID, and the sale goes in a logbook kept for 2 years.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Pharmacy law: Lot tracking?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Serious risk warning in labeling”.",
-      "d": "Omit MedGuide."
+      "a": "1.8 g is half the federal daily limit; some states are stricter, but federal law allows 3.6 g.",
+      "c": "7.5 g is the 30-day limit for mail-order or mobile retail sales, not the daily limit.",
+      "d": "9 g is the 30-day retail limit, not the amount allowed in one day."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1092,64 +1092,64 @@
     "id": "ptcb-pharmacy-technician-mock-034",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: Combat Meth Act? Select the best answer.",
+    "prompt": "A prescriber calls asking the pharmacy to add two refills to a patient's existing oxycodone 5 mg prescription. What is the correct response?",
     "options": [
       {
         "id": "a",
-        "text": "Report serious adverse events."
+        "text": "Add the refills after the pharmacist confirms the call"
       },
       {
         "id": "b",
-        "text": "PSE sales limits, logbook, ID."
+        "text": "Up to five refills may be added within six months"
       },
       {
         "id": "c",
-        "text": "Offer counsel Medicaid new/changed Rx; document."
+        "text": "Refills are valid if a signed fax follows in 72 hours"
       },
       {
         "id": "d",
-        "text": "Supply chain traceability for Rx drugs."
+        "text": "A new prescription is needed; C-II cannot be refilled"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "PSE sales limits, logbook, ID.",
+    "correctOptionId": "d",
+    "explanation": "Federal law prohibits refills of Schedule II controlled substances. Each fill needs a new prescription, written or sent through a DEA-compliant electronic system. A prescriber may issue multiple C-II prescriptions totaling up to a 90-day supply with 'do not fill before' dates.",
     "distractorExplanations": {
-      "a": "Hide errors.",
-      "c": "Skip documentation.",
-      "d": "This is the answer to a different question (“Pharmacy law: DSCSA?”), not to this one."
+      "a": "A phone call cannot create refills for a Schedule II drug, even with pharmacist confirmation.",
+      "b": "Five refills within six months is the Schedule III and IV rule.",
+      "c": "No fax follow-up rule creates C-II refills; the 7-day written follow-up applies only to emergency oral C-II orders."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-035",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: BUD? Select the best answer.",
+    "prompt": "A pharmacy that does not use CSOS needs to order oxycodone from its wholesaler. Which DEA form must be completed?",
     "options": [
       {
         "id": "a",
-        "text": "Beyond-use date for compounded/repackaged"
+        "text": "DEA Form 41"
       },
       {
         "id": "b",
-        "text": "Secure limited access; perpetual inventory."
+        "text": "DEA Form 106"
       },
       {
         "id": "c",
-        "text": "State law + DAW govern substitution."
+        "text": "DEA Form 222"
       },
       {
         "id": "d",
-        "text": "Only per strict federal/state rules."
+        "text": "DEA Form 224"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Beyond-use date for compounded/repackaged.",
+    "correctOptionId": "c",
+    "explanation": "Schedule I and II substances are ordered on DEA Form 222 (now a single-sheet form that replaced the old triplicate) or electronically through CSOS. The pharmacy records the quantity and date received for each item and keeps its copy for at least 2 years.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Pharmacy law: Controlled storage?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Beyond-use date for compounded/repackaged”.",
-      "d": "Not the best answer here; the right answer is “Beyond-use date for compounded/repackaged”."
+      "a": "Form 41 records the destruction of controlled substances.",
+      "b": "Form 106 reports theft or significant loss of controlled substances.",
+      "d": "Form 224 is the application for a new pharmacy DEA registration."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local QA repair (stems/distractors)"
@@ -1158,31 +1158,31 @@
     "id": "ptcb-pharmacy-technician-mock-036",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: DSCSA? Select the best answer.",
+    "prompt": "During a routine count, a pharmacy discovers a significant loss of hydrocodone/acetaminophen tablets that it suspects is theft. What does federal law require?",
     "options": [
       {
         "id": "a",
-        "text": "Safe handling PPE for hazardous drugs."
+        "text": "Notify DEA within 1 business day; file Form 106"
       },
       {
         "id": "b",
-        "text": "Secure limited access; perpetual inventory."
+        "text": "Note it at the next biennial inventory"
       },
       {
         "id": "c",
-        "text": "Supply chain traceability for Rx drugs."
+        "text": "File DEA Form 41 after the next monthly inventory"
       },
       {
         "id": "d",
-        "text": "Report theft/loss of controls promptly."
+        "text": "Report the loss to the FDA through MedWatch"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Supply chain traceability for Rx drugs.",
+    "correctOptionId": "a",
+    "explanation": "Theft or significant loss of controlled substances must be reported in writing to the DEA field office within one business day of discovery, followed by a completed DEA Form 106 filed online. Local police are usually notified as well when theft is suspected.",
     "distractorExplanations": {
-      "a": "No PPE chemo.",
-      "b": "Unlocked safe.",
-      "d": "Delay report."
+      "b": "Waiting for the biennial inventory violates the one-business-day notice requirement.",
+      "c": "Form 41 documents destruction of controlled substances, not loss or theft.",
+      "d": "MedWatch is for adverse events and product quality problems, not controlled-substance theft."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1191,97 +1191,97 @@
     "id": "ptcb-pharmacy-technician-mock-037",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: FDA MedWatch? Select the best answer.",
+    "prompt": "How often must a DEA-registered pharmacy take a complete inventory of all controlled substances on hand?",
     "options": [
       {
         "id": "a",
-        "text": "Required patient med guide for certain drugs."
+        "text": "Every 6 months"
       },
       {
         "id": "b",
-        "text": "Offer counsel Medicaid new/changed Rx; document."
+        "text": "Every year"
       },
       {
         "id": "c",
-        "text": "Generally substitutable if law allows."
+        "text": "Every 2 years"
       },
       {
         "id": "d",
-        "text": "Report serious adverse events."
+        "text": "Every 5 years"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Report serious adverse events.",
+    "correctOptionId": "c",
+    "explanation": "The DEA requires an initial inventory and then a biennial inventory, at least every 2 years. Schedule II counts must be exact; Schedule III-V may be estimated unless a container holds more than 1,000 units. Inventory records are kept for at least 2 years, and some states require annual counts.",
     "distractorExplanations": {
-      "a": "Omit MedGuide.",
-      "b": "Skip documentation.",
-      "c": "Ignore DAW."
+      "a": "Six-month counts may be internal policy, but they are not the federal requirement.",
+      "b": "Annual inventories are required by some states, not by federal DEA rules.",
+      "d": "Five years is too long; the federal interval is two years."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-038",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: Technician scope? Select the best answer.",
+    "prompt": "Under federal law, how may a prescription for zolpidem (Ambien), a Schedule IV drug, be refilled if the prescriber authorizes refills?",
     "options": [
       {
         "id": "a",
-        "text": "Lower abuse potential; up to 5 refills in 6 months if authorized (federal). Examples: benzodiazepines, zolpidem, tramadol."
+        "text": "It cannot be refilled under any circumstances"
       },
       {
         "id": "b",
-        "text": "Supply chain traceability for Rx drugs."
+        "text": "Up to 11 times within 12 months"
       },
       {
         "id": "c",
-        "text": "Technicians work under pharmacist per state law"
+        "text": "As many times as needed within one year"
       },
       {
         "id": "d",
-        "text": "Moderate abuse potential; up to 5 refills in 6 months if authorized on Rx (federal). Examples: ketamine; combination products with ≤90 mg codeine per dosage unit."
+        "text": "Up to 5 times within 6 months"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Technicians work under pharmacist per state law.",
+    "correctOptionId": "d",
+    "explanation": "Federal law allows Schedule III and IV prescriptions to be refilled up to 5 times within 6 months of the date written, if authorized; after that a new prescription is required. Schedule V refills are set by the prescriber, and state law may be stricter.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Technicians work under pharmacist per state law”.",
-      "b": "This is the answer to a different question (“Pharmacy law: DSCSA?”), not to this one.",
-      "d": "This is the answer to a different question (“Pharmacy law: DEA Schedule III?”), not to this one."
+      "a": "No refills is the Schedule II rule, not the Schedule IV rule.",
+      "b": "Refills over 12 months apply to non-controlled prescriptions in many states, not to C-IV drugs.",
+      "c": "No controlled-substance schedule allows open-ended refills for a year."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-039",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: Lot tracking? Select the best answer.",
+    "prompt": "The FDA announces a recall because use of an affected drug lot may cause serious adverse health consequences or death. How is this recall classified?",
     "options": [
       {
         "id": "a",
-        "text": "Safe handling PPE for hazardous drugs."
+        "text": "Class I recall"
       },
       {
         "id": "b",
-        "text": "Quarantine affected lots for recalls."
+        "text": "Class II recall"
       },
       {
         "id": "c",
-        "text": "Look-alike sound-alike; tall man lettering."
+        "text": "Class III recall"
       },
       {
         "id": "d",
-        "text": "Lower abuse potential; up to 5 refills in 6 months if authorized (federal). Examples: benzodiazepines, zolpidem, tramadol."
+        "text": "Market withdrawal"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Quarantine affected lots for recalls.",
+    "correctOptionId": "a",
+    "explanation": "Class I is the most serious recall: a reasonable probability that use will cause serious adverse health consequences or death. Class II covers temporary or medically reversible effects, or a remote chance of serious harm; Class III covers products unlikely to cause harm, such as minor labeling defects.",
     "distractorExplanations": {
-      "a": "No PPE chemo.",
-      "c": "Not the best answer here; the right answer is “Quarantine affected lots for recalls”.",
-      "d": "Treating as OTC."
+      "b": "Class II involves temporary or reversible effects, or only a remote chance of serious harm.",
+      "c": "Class III is for products unlikely to cause any adverse health effect.",
+      "d": "A market withdrawal covers a minor violation the FDA would not pursue, or no violation at all."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1290,31 +1290,31 @@
     "id": "ptcb-pharmacy-technician-mock-040",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: MedGuide? Select the best answer.",
+    "prompt": "A Class II recall notice lists a lot number the pharmacy has on its shelf. What should the technician do first?",
     "options": [
       {
         "id": "a",
-        "text": "Prescription drug monitoring for controls many states."
+        "text": "Dispense that stock first, then return the empties"
       },
       {
         "id": "b",
-        "text": "Child-resistant packaging rules."
+        "text": "Discard the lot in the pharmacy's regular trash"
       },
       {
         "id": "c",
-        "text": "Capitalize parts of name to reduce errors."
+        "text": "Keep it on the shelf with a warning sticker"
       },
       {
         "id": "d",
-        "text": "Required patient med guide for certain drugs."
+        "text": "Pull and quarantine that lot per the recall notice"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Required patient med guide for certain drugs.",
+    "explanation": "When a recall names a lot the pharmacy holds, staff check stock by lot number, remove the affected units, label and quarantine them away from saleable inventory, and return or destroy them as the recall instructions direct. Whether patients are contacted depends on the recall class and notice.",
     "distractorExplanations": {
-      "a": "Skip PDMP.",
-      "b": "Not the best answer here; the right answer is “Required patient med guide for certain drugs”.",
-      "c": "Not the best answer here; the right answer is “Required patient med guide for certain drugs”."
+      "a": "Dispensing recalled product puts patients at risk and defeats the recall.",
+      "b": "Recalled drugs are returned or destroyed per the recall instructions, and the action is documented, not thrown in the trash.",
+      "c": "Recalled lots must leave saleable inventory; a sticker does not stop them from being dispensed."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1323,31 +1323,31 @@
     "id": "ptcb-pharmacy-technician-mock-041",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: PPPA? Select the best answer.",
+    "prompt": "A patient presents a prescription for isotretinoin capsules for severe acne. Which federal program controls whether the pharmacy may dispense it?",
     "options": [
       {
         "id": "a",
-        "text": "Lower abuse potential; up to 5 refills in 6 months if authorized (federal). Examples: benzodiazepines, zolpidem, tramadol."
+        "text": "The TIRF REMS Access program"
       },
       {
         "id": "b",
-        "text": "Child-resistant packaging rules"
+        "text": "The iPLEDGE REMS program"
       },
       {
         "id": "c",
-        "text": "Beyond-use date for compounded/repackaged."
+        "text": "OBRA '90 Medicaid counseling rules"
       },
       {
         "id": "d",
-        "text": "Lowest abuse potential; some preparations may be OTC depending on state law (e.g. low-dose codeine cough syrups where permitted)."
+        "text": "The Combat Meth Act sales logbook"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Child-resistant packaging rules.",
+    "explanation": "Isotretinoin is dispensed only under the iPLEDGE REMS because it causes severe birth defects. Prescribers, patients and pharmacies must be registered, and the pharmacy must obtain authorization in the iPLEDGE system within the dispensing window before the prescription is filled.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Child-resistant packaging rules”.",
-      "c": "Not the best answer here; the right answer is “Child-resistant packaging rules”.",
-      "d": "Not the best answer here; the right answer is “Child-resistant packaging rules”."
+      "a": "TIRF REMS covers transmucosal immediate-release fentanyl products, not isotretinoin.",
+      "c": "OBRA '90 requires an offer to counsel Medicaid patients; it does not restrict isotretinoin dispensing.",
+      "d": "The CMEA logbook applies to pseudoephedrine and ephedrine sales."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local QA repair (stems/distractors)"
@@ -1356,64 +1356,64 @@
     "id": "ptcb-pharmacy-technician-mock-042",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: REMS? Select the best answer.",
+    "prompt": "In an outpatient pharmacy, which prescription must be dispensed with an FDA-approved Medication Guide?",
     "options": [
       {
         "id": "a",
-        "text": "Lowest abuse potential; some preparations may be OTC depending on state law (e.g. low-dose codeine cough syrups where permitted)."
+        "text": "Any generic drug filled for the first time"
       },
       {
         "id": "b",
-        "text": "Not likely adverse consequences."
+        "text": "A prescription for a prenatal vitamin"
       },
       {
         "id": "c",
-        "text": "Restricted dispensing program"
+        "text": "Any drug packaged in unit-dose blisters"
       },
       {
         "id": "d",
-        "text": "Prescription drug monitoring for controls many states."
+        "text": "Prescription-strength naproxen tablets"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Restricted dispensing program.",
+    "correctOptionId": "d",
+    "explanation": "The FDA requires Medication Guides for specific drugs with serious risks, including prescription NSAIDs such as naproxen, antidepressants and many others. In outpatient settings the guide is provided each time the drug is dispensed, including refills.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Restricted dispensing program”.",
-      "b": "Not the best answer here; the right answer is “Restricted dispensing program”.",
-      "d": "This is the answer to a different question (“Pharmacy law: PDMP?”), not to this one."
+      "a": "Being a generic does not trigger a Medication Guide; the specific drug does.",
+      "b": "Prenatal vitamins do not carry a Medication Guide requirement.",
+      "c": "Packaging type does not trigger the requirement; the drug's FDA labeling does."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local QA repair (stems/distractors)"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-043",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: A-rated generic? Select the best answer.",
+    "prompt": "A prescription for Lipitor has no 'dispense as written' notation, and state law allows substitution. Which reference shows whether a generic atorvastatin is therapeutically equivalent?",
     "options": [
       {
         "id": "a",
-        "text": "Offer counsel Medicaid new/changed Rx; document."
+        "text": "The FDA Orange Book"
       },
       {
         "id": "b",
-        "text": "Prescription drug monitoring for controls many states."
+        "text": "The FDA Purple Book"
       },
       {
         "id": "c",
-        "text": "Supply chain traceability for Rx drugs."
+        "text": "The USP-NF compendium"
       },
       {
         "id": "d",
-        "text": "Generally substitutable if law allows."
+        "text": "The DEA schedules list"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Generally substitutable if law allows.",
+    "correctOptionId": "a",
+    "explanation": "The FDA Orange Book (Approved Drug Products with Therapeutic Equivalence Evaluations) lists therapeutic-equivalence codes. A-rated generics, such as AB, are considered substitutable; B-rated products are not. The Purple Book covers biologics, biosimilars and interchangeable products.",
     "distractorExplanations": {
-      "a": "Skip documentation.",
-      "b": "Skip PDMP.",
-      "c": "This is the answer to a different question (“Pharmacy law: DSCSA?”), not to this one."
+      "b": "The Purple Book lists biological products and biosimilars, not small-molecule generics like atorvastatin.",
+      "c": "USP-NF sets quality and compounding standards; it does not rate therapeutic equivalence.",
+      "d": "DEA schedules classify controlled substances by abuse potential."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1422,31 +1422,31 @@
     "id": "ptcb-pharmacy-technician-mock-044",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: NIOSH hazardous drugs? Select the best answer.",
+    "prompt": "A technician needs to count methotrexate tablets, which appear on the NIOSH list of hazardous drugs. Which practice is appropriate?",
     "options": [
       {
         "id": "a",
-        "text": "Lowest abuse potential; some preparations may be OTC depending on state law (e.g. low-dose codeine cough syrups where permitted)."
+        "text": "Use the shared tray, then wipe it with a dry towel"
       },
       {
         "id": "b",
-        "text": "Safe handling PPE for hazardous drugs."
+        "text": "Count by hand so the tray stays clean"
       },
       {
         "id": "c",
-        "text": "Report theft/loss of controls promptly."
+        "text": "Wear gloves and use a dedicated counting tray"
       },
       {
         "id": "d",
-        "text": "Not likely adverse consequences."
+        "text": "Split extra tablets before returning them to stock"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Safe handling PPE for hazardous drugs.",
+    "correctOptionId": "c",
+    "explanation": "NIOSH-listed hazardous drugs such as methotrexate are handled under USP <800> precautions: gloves, a dedicated counting tray and spatula, and cleaning procedures so residue does not contaminate other patients' medications or expose staff.",
     "distractorExplanations": {
-      "a": "Assuming all C-V are Rx everywhere.",
-      "c": "Delay report.",
-      "d": "Not the best answer here; the right answer is “Safe handling PPE for hazardous drugs”."
+      "a": "A shared tray can carry hazardous residue to other prescriptions; a dry wipe does not decontaminate it.",
+      "b": "Bare-hand counting exposes the technician to a hazardous drug.",
+      "d": "Splitting hazardous tablets creates dust and staff exposure; leftover tablets go back to stock whole."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1455,64 +1455,64 @@
     "id": "ptcb-pharmacy-technician-mock-045",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: Perpetual inventory? Select the best answer.",
+    "prompt": "Under federal DEA rules, how may a retail pharmacy store its Schedule II controlled substances?",
     "options": [
       {
         "id": "a",
-        "text": "Prescription drug monitoring for controls many states."
+        "text": "In a refrigerator with a daily temperature log"
       },
       {
         "id": "b",
-        "text": "Capitalize parts of name to reduce errors."
+        "text": "On open shelves with no extra safeguards"
       },
       {
         "id": "c",
-        "text": "Offer counsel Medicaid new/changed Rx; document."
+        "text": "Solely in a time-delay safe approved by the FDA"
       },
       {
         "id": "d",
-        "text": "Running balance of controls."
+        "text": "In a locked cabinet or dispersed among other stock"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Running balance of controls.",
+    "explanation": "Federal rules let pharmacies store controlled substances in a securely locked, substantially constructed cabinet, or disperse them throughout the noncontrolled stock to deter theft. Many states and employers are stricter and require a locked safe for Schedule II drugs.",
     "distractorExplanations": {
-      "a": "Skip PDMP.",
-      "b": "Not the best answer here; the right answer is “Running balance of controls”.",
-      "c": "Skip documentation."
+      "a": "Refrigeration is a temperature requirement for certain products, not a DEA security rule.",
+      "b": "Open shelving without dispersal or locking does not meet DEA security requirements.",
+      "c": "The FDA does not approve pharmacy safes; time-delay safes are an employer or state choice."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-046",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: DEA Schedule III? Select the best answer.",
+    "prompt": "Which of these drugs is a federal Schedule III controlled substance?",
     "options": [
       {
         "id": "a",
-        "text": "High abuse potential; no refills allowed; examples: oxycodone, fentanyl, amphetamine salts."
+        "text": "Oxycodone (Roxicodone)"
       },
       {
         "id": "b",
-        "text": "Lower abuse potential than C-III; up to 5 refills in 6 months; examples: alprazolam, tramadol."
+        "text": "Testosterone cypionate"
       },
       {
         "id": "c",
-        "text": "Moderate abuse potential; up to 5 refills in 6 months; examples: ketamine, testosterone, codeine ≤90 mg/unit combos."
+        "text": "Alprazolam (Xanax)"
       },
       {
         "id": "d",
-        "text": "No accepted medical use in the US; cannot be dispensed; examples: heroin, LSD."
+        "text": "Pregabalin (Lyrica)"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Schedule III drugs have moderate-to-low potential for physical dependence. Federal law allows up to 5 refills within 6 months if the prescriber authorizes them. Examples include ketamine, anabolic steroids such as testosterone, and products with no more than 90 mg of codeine per dosage unit.",
+    "correctOptionId": "b",
+    "explanation": "Anabolic steroids such as testosterone are Schedule III, along with ketamine, buprenorphine and products with up to 90 mg of codeine per dosage unit, such as Tylenol with Codeine. Schedule III prescriptions may be refilled up to 5 times within 6 months.",
     "distractorExplanations": {
-      "a": "That describes Schedule II: high abuse potential and no refills.",
-      "b": "That describes Schedule IV, which has lower abuse potential than Schedule III.",
-      "d": "That describes Schedule I: no accepted medical use in the US."
+      "a": "Oxycodone is Schedule II: high abuse potential and no refills.",
+      "c": "Alprazolam is Schedule IV, like other benzodiazepines.",
+      "d": "Pregabalin is Schedule V, the lowest controlled schedule."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1521,31 +1521,31 @@
     "id": "ptcb-pharmacy-technician-mock-047",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: PDMP? Select the best answer.",
+    "prompt": "Before an opioid prescription is filled, the pharmacist checks the state prescription drug monitoring program (PDMP). What information does the PDMP provide?",
     "options": [
       {
         "id": "a",
-        "text": "Only per strict federal/state rules."
+        "text": "The patient's controlled fills at all pharmacies"
       },
       {
         "id": "b",
-        "text": "Not likely adverse consequences."
+        "text": "The wholesaler's controlled-drug purchase invoices"
       },
       {
         "id": "c",
-        "text": "Prescription drug monitoring for controls many states"
+        "text": "The patient's insurance formulary tiers"
       },
       {
         "id": "d",
-        "text": "State regulates technicians and pharmacies."
+        "text": "The manufacturer's recall list by lot"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Prescription drug monitoring for controls many states.",
+    "correctOptionId": "a",
+    "explanation": "A PDMP is a state database of dispensed controlled-substance prescriptions. It shows overlapping prescriptions, multiple prescribers or pharmacies, and early fills that may signal misuse; many states require a check before opioids are prescribed or dispensed.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Prescription drug monitoring for controls many states”.",
-      "b": "Not the best answer here; the right answer is “Prescription drug monitoring for controls many states”.",
-      "d": "Not the best answer here; the right answer is “Prescription drug monitoring for controls many states”."
+      "b": "Wholesaler invoices are the pharmacy's own purchasing records, not PDMP data.",
+      "c": "Formulary tiers come from the insurer's adjudication system, not the PDMP.",
+      "d": "Recall information comes from FDA and manufacturer notices."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local QA repair (stems/distractors)"
@@ -1554,31 +1554,31 @@
     "id": "ptcb-pharmacy-technician-mock-048",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: Controlled storage? Select the best answer.",
+    "prompt": "A patient wants to return unused hydrocodone tablets left over after surgery. Which response complies with DEA rules?",
     "options": [
       {
         "id": "a",
-        "text": "Safe handling PPE for hazardous drugs."
+        "text": "Accept them back into stock after inspection"
       },
       {
         "id": "b",
-        "text": "Report serious adverse events."
+        "text": "Log them into the pharmacy's C-II safe"
       },
       {
         "id": "c",
-        "text": "Secure limited access; perpetual inventory."
+        "text": "Mail them back to the drug's manufacturer"
       },
       {
         "id": "d",
-        "text": "Serious risk warning in labeling."
+        "text": "Use a DEA-authorized take-back kiosk or event"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Secure limited access; perpetual inventory.",
+    "correctOptionId": "d",
+    "explanation": "Pharmacies may not take dispensed controlled substances back into inventory. Patients use DEA-authorized collection receptacles (which registered pharmacies may host), take-back events or mail-back envelopes; drugs on the FDA flush list may be flushed when take-back is not available.",
     "distractorExplanations": {
-      "a": "No PPE chemo.",
-      "b": "Hide errors.",
-      "d": "Ignore BBW."
+      "a": "Dispensed controlled substances can never be returned to pharmacy stock.",
+      "b": "The pharmacy cannot add patient-returned drugs to its controlled inventory.",
+      "c": "Patients do not return controlled drugs to manufacturers; authorized mail-back programs use special envelopes."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1587,31 +1587,31 @@
     "id": "ptcb-pharmacy-technician-mock-049",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy law: Recall Class II? Select the best answer.",
+    "prompt": "Under the Poison Prevention Packaging Act, when may a pharmacy dispense an oral prescription in a non-child-resistant container?",
     "options": [
       {
         "id": "a",
-        "text": "Not likely adverse consequences."
+        "text": "Whenever the dispensed drug is a generic"
       },
       {
         "id": "b",
-        "text": "Temporary reversible serious risk."
+        "text": "For Schedule II drugs and no others"
       },
       {
         "id": "c",
-        "text": "Report theft/loss of controls promptly."
+        "text": "When the patient or prescriber requests it"
       },
       {
         "id": "d",
-        "text": "Documented transfer between pharmacies."
+        "text": "Whenever the prescription is a refill"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Temporary reversible serious risk.",
+    "correctOptionId": "c",
+    "explanation": "The PPPA (1970) requires child-resistant packaging for most oral prescription drugs. The patient may request a non-child-resistant container (a blanket request can be kept on file), or the prescriber may request it for that prescription only. Some products, such as sublingual nitroglycerin, are exempt.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Temporary reversible serious risk”.",
-      "c": "Delay report.",
-      "d": "Informal transfer."
+      "a": "Generic status does not exempt a drug from child-resistant packaging.",
+      "b": "Controlled substances follow the same PPPA rule; schedule does not create an exemption.",
+      "d": "Refills still need child-resistant packaging unless a valid request is on file."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, FEDERAL-LAW). · Local short-stem expansion"
@@ -1620,97 +1620,97 @@
     "id": "ptcb-pharmacy-technician-mock-050",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, inventory: Receiving? Select the best answer.",
+    "prompt": "Shelf labels in a pharmacy read hydrALAZINE and hydrOXYzine. What is the purpose of writing the names this way?",
     "options": [
       {
         "id": "a",
-        "text": "Immediate IM epinephrine is first-line; call emergency services; antihistamines/bronchodilators are adjuncts, not substitutes."
+        "text": "To mark both drugs as controlled substances"
       },
       {
         "id": "b",
-        "text": "2-8°C monitor min/max daily."
+        "text": "To show that the two are interchangeable"
       },
       {
         "id": "c",
-        "text": "Check qty, NDC, exp, damage, temp."
+        "text": "To flag drugs that need refrigeration"
       },
       {
         "id": "d",
-        "text": "Weight-based; verify concentration mg/5 mL."
+        "text": "To make the differing letters stand out"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Check qty, NDC, exp, damage, temp.",
+    "correctOptionId": "d",
+    "explanation": "Tall man lettering capitalizes the distinguishing letters of look-alike, sound-alike (LASA) names, such as hydrALAZINE vs hydrOXYzine or predniSONE vs prednisoLONE, to reduce selection errors. It works best combined with separate shelf locations and barcode scanning.",
     "distractorExplanations": {
-      "a": "Using oral antihistamine alone for anaphylaxis.",
-      "b": "Door shelf storage.",
-      "d": "Adult dose to child."
+      "a": "Neither drug is controlled; tall man lettering is not a scheduling mark.",
+      "b": "Hydralazine is an antihypertensive and hydroxyzine an antihistamine; they are not interchangeable.",
+      "c": "Storage temperature is shown with refrigeration labels, not capital letters in the name."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, INVENTORY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-051",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Sharps disposal? Select the best answer.",
+    "prompt": "A technician who is certified to immunize under state law has just given a flu shot. What should happen to the used needle?",
     "options": [
       {
         "id": "a",
-        "text": "Document offer/decline counseling."
+        "text": "Engage the safety cap; use a sharps bin"
       },
       {
         "id": "b",
-        "text": "Repeat critical info to confirm accuracy."
+        "text": "Recap it with two hands, then throw it away"
       },
       {
         "id": "c",
-        "text": "Two drugs same class may duplicate."
+        "text": "Bag it and place it in the regular trash"
       },
       {
         "id": "d",
-        "text": "Immediate sharps container after use."
+        "text": "Set it on the tray until the area is cleaned"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Immediate sharps container after use.",
+    "correctOptionId": "a",
+    "explanation": "Used needles go straight into a puncture-resistant sharps container at the point of use, after the safety device is engaged. Two-handed recapping is a leading cause of needlestick injuries and is prohibited under OSHA bloodborne pathogen rules.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Immediate sharps container after use”.",
-      "b": "Uh-huh only.",
-      "c": "This is the answer to a different question (“Patient safety: Duplicate therapy?”), not to this one."
+      "b": "Two-handed recapping causes needlestick injuries and violates OSHA practice.",
+      "c": "Needles in regular trash can injure staff and sanitation workers, even inside a bag.",
+      "d": "Leaving an exposed needle on a tray risks an accidental stick; disposal must be immediate."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-052",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Serotonin syndrome? Select the best answer.",
+    "prompt": "A patient who takes sertraline daily brings in a new prescription for phenelzine (Nardil). Why must the technician alert the pharmacist?",
     "options": [
       {
         "id": "a",
-        "text": "Immediate IM epinephrine is first-line; call emergency services; antihistamines/bronchodilators are adjuncts, not substitutes."
+        "text": "Phenelzine blocks the absorption of sertraline"
       },
       {
         "id": "b",
-        "text": "Loss theft/damage/errors."
+        "text": "The combination can cause serotonin syndrome"
       },
       {
         "id": "c",
-        "text": "Caught before patient; report to improve systems."
+        "text": "The combination causes severe hypoglycemia"
       },
       {
         "id": "d",
-        "text": "Excess serotonin: agitation, hyperthermia, clonus."
+        "text": "Both drugs are Schedule IV controlled drugs"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Excess serotonin: agitation, hyperthermia, clonus. Example: SSRI + MAOI risk.",
+    "correctOptionId": "b",
+    "explanation": "Phenelzine is an MAO inhibitor. Combining an MAOI with an SSRI can cause serotonin syndrome (agitation, high fever, tremor, clonus), which can be fatal. A washout period is required: at least 2 weeks after stopping sertraline, or 5 weeks after fluoxetine.",
     "distractorExplanations": {
-      "a": "Using oral antihistamine alone for anaphylaxis.",
-      "b": "This is the answer to a different question (“Inventory: Shrinkage?”), not to this one.",
-      "c": "Hide near miss."
+      "a": "The danger is excess serotonin, not reduced absorption.",
+      "c": "Hypoglycemia is not the recognized risk of an MAOI-SSRI combination.",
+      "d": "Neither phenelzine nor sertraline is a controlled substance."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -1719,31 +1719,31 @@
     "id": "ptcb-pharmacy-technician-mock-053",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Immunization screening? Select the best answer.",
+    "prompt": "A pregnant patient asks about vaccines at the pharmacy's immunization clinic. Which vaccine is contraindicated during pregnancy?",
     "options": [
       {
         "id": "a",
-        "text": "Shake well, take with food, may cause drowsiness."
+        "text": "Tdap (tetanus, diphtheria, pertussis)"
       },
       {
         "id": "b",
-        "text": "Plain language; teach-back."
+        "text": "Inactivated influenza vaccine"
       },
       {
         "id": "c",
-        "text": "Screen contraindications before vaccines."
+        "text": "Hepatitis B vaccine when indicated"
       },
       {
         "id": "d",
-        "text": "Use short dated before long dated."
+        "text": "MMR (measles, mumps, rubella)"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Screen contraindications before vaccines.",
+    "correctOptionId": "d",
+    "explanation": "MMR is a live attenuated vaccine and is contraindicated during pregnancy, as are other live vaccines. Tdap is recommended during each pregnancy (ideally at 27-36 weeks), and inactivated influenza vaccine is recommended in any trimester during flu season.",
     "distractorExplanations": {
-      "a": "Missing labels.",
-      "b": "Handout only.",
-      "d": "This is the answer to a different question (“Inventory: Short dated?”), not to this one."
+      "a": "Tdap is recommended in every pregnancy to protect the newborn from pertussis.",
+      "b": "Inactivated flu vaccine is safe and recommended in any trimester.",
+      "c": "Hepatitis B vaccine is not live and may be given in pregnancy when indicated."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -1752,31 +1752,31 @@
     "id": "ptcb-pharmacy-technician-mock-054",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, inventory: Cycle count? Select the best answer.",
+    "prompt": "A technician fills metoprolol tartrate when the prescription is for metoprolol succinate ER, and the pharmacist catches it at final verification. How should this event be classified?",
     "options": [
       {
         "id": "a",
-        "text": "CR caps unless permitted override documented."
+        "text": "A near miss that should still be reported"
       },
       {
         "id": "b",
-        "text": "Before compounding/food areas."
+        "text": "A medication error that reached the patient"
       },
       {
         "id": "c",
-        "text": "Freezing destroys many biologics."
+        "text": "An adverse drug reaction to metoprolol"
       },
       {
         "id": "d",
-        "text": "Reconcile physical vs system."
+        "text": "Not an event, because no harm occurred"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Reconcile physical vs system.",
+    "correctOptionId": "a",
+    "explanation": "An error caught before it reaches the patient is a near miss. Reporting near misses internally, and to programs such as the ISMP Medication Errors Reporting Program, exposes system weaknesses (here, look-alike salt forms of metoprolol) before a patient is harmed.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Reconcile physical vs system”.",
-      "b": "This is the answer to a different question (“Patient safety: Hand hygiene?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Reconcile physical vs system”."
+      "b": "The wrong product never left the pharmacy, so the error did not reach the patient.",
+      "c": "An adverse drug reaction is harm from a correctly used drug; this was a dispensing error.",
+      "d": "Near misses are events worth reporting precisely because they reveal risk before harm."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, INVENTORY). · Local short-stem expansion"
@@ -1785,31 +1785,31 @@
     "id": "ptcb-pharmacy-technician-mock-055",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Renal dose adjust? Select the best answer.",
+    "prompt": "A patient's profile notes severely reduced kidney function (eGFR below 30 mL/min). Which new prescription is most likely to need pharmacist review?",
     "options": [
       {
         "id": "a",
-        "text": "Many drugs need lower dose in renal impairment."
+        "text": "Levothyroxine 75 mcg every morning"
       },
       {
         "id": "b",
-        "text": "Do not mix 340B inventory."
+        "text": "Sertraline 50 mg daily"
       },
       {
         "id": "c",
-        "text": "Immediate IM epinephrine is first-line; call emergency services; antihistamines/bronchodilators are adjuncts, not substitutes."
+        "text": "Metformin 1,000 mg twice daily"
       },
       {
         "id": "d",
-        "text": "Reconcile physical vs system."
+        "text": "Ondansetron 4 mg as needed"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Many drugs need lower dose in renal impairment. Example: Consult reference.",
+    "correctOptionId": "c",
+    "explanation": "Metformin is cleared by the kidneys. It is contraindicated when eGFR is below 30 mL/min because accumulation raises the risk of lactic acidosis. Gabapentin, many antibiotics and enoxaparin are other drugs that commonly need renal dose adjustment.",
     "distractorExplanations": {
-      "b": "Mix stock.",
-      "c": "Using oral antihistamine alone for anaphylaxis.",
-      "d": "This is the answer to a different question (“Inventory: Cycle count?”), not to this one."
+      "a": "Levothyroxine does not need dose adjustment for kidney function.",
+      "b": "Sertraline is cleared mainly by the liver and needs no renal adjustment.",
+      "d": "Ondansetron needs no renal dose adjustment."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -1818,31 +1818,31 @@
     "id": "ptcb-pharmacy-technician-mock-056",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: High-risk populations? Select the best answer.",
+    "prompt": "A new prescription for diphenhydramine 50 mg at bedtime for sleep is written for an 82-year-old patient. Why might the pharmacist contact the prescriber?",
     "options": [
       {
         "id": "a",
-        "text": "Amber bag/light protection when required."
+        "text": "It is a controlled drug for patients over 80"
       },
       {
         "id": "b",
-        "text": "Perpetual + biennial physical."
+        "text": "It loses its effect in patients over 65"
       },
       {
         "id": "c",
-        "text": "Immediate IM epinephrine is first-line; call emergency services; antihistamines/bronchodilators are adjuncts, not substitutes."
+        "text": "It must be taken in the morning to work"
       },
       {
         "id": "d",
-        "text": "Elderly, pregnant, immunocompromised need extra care."
+        "text": "Anticholinergic effects raise fall risk"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Elderly, pregnant, immunocompromised need extra care. Example: Counsel thoroughly.",
+    "explanation": "First-generation antihistamines such as diphenhydramine are on the AGS Beers Criteria as potentially inappropriate for older adults: strong anticholinergic effects cause confusion, constipation, urinary retention and falls. The pharmacist may suggest a safer option.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Elderly, pregnant, immunocompromised need extra care”.",
-      "b": "Not the best answer here; the right answer is “Elderly, pregnant, immunocompromised need extra care”.",
-      "c": "Using oral antihistamine alone for anaphylaxis."
+      "a": "Diphenhydramine is not a controlled substance at any age.",
+      "b": "Older adults are more sensitive to diphenhydramine, not less.",
+      "c": "Diphenhydramine is sedating, so bedtime dosing is the usual pattern; timing is not the issue."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -1851,64 +1851,64 @@
     "id": "ptcb-pharmacy-technician-mock-057",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Read-back? Select the best answer.",
+    "prompt": "A prescriber phones in a new prescription to the pharmacist. What should the pharmacist do before ending the call?",
     "options": [
       {
         "id": "a",
-        "text": "Elderly, pregnant, immunocompromised need extra care."
+        "text": "Ask the prescriber to spell the drug name alone"
       },
       {
         "id": "b",
-        "text": "Repeat critical info to confirm accuracy."
+        "text": "Read the full order back to confirm it"
       },
       {
         "id": "c",
-        "text": "Immediate sharps container after use."
+        "text": "Wait for a fax copy before writing it down"
       },
       {
         "id": "d",
-        "text": "Two drugs same class may duplicate."
+        "text": "Enter the order later from memory"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Repeat critical info to confirm accuracy. Example: Phone order repeat.",
+    "explanation": "Read-back means writing the verbal order down and repeating the whole order (drug, strength, directions, quantity, refills) so the prescriber can confirm it. It catches sound-alike errors such as fifteen vs fifty and is a core ISMP and Joint Commission safety practice.",
     "distractorExplanations": {
-      "a": "One script all.",
-      "c": "Recap needles.",
-      "d": "This is the answer to a different question (“Patient safety: Duplicate therapy?”), not to this one."
+      "a": "Spelling the drug name helps, but strength, directions and quantity must also be confirmed.",
+      "c": "Verbal orders are valid; the order is written down during the call and read back.",
+      "d": "Entering an order from memory invites transcription errors."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-058",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: High-alert meds? Select the best answer.",
+    "prompt": "Which medication appears on the ISMP list of high-alert medications for community and ambulatory settings?",
     "options": [
       {
         "id": "a",
-        "text": "Perpetual + biennial physical."
+        "text": "Insulin glargine (Lantus)"
       },
       {
         "id": "b",
-        "text": "CR caps unless permitted override documented."
+        "text": "Amoxicillin (Amoxil)"
       },
       {
         "id": "c",
-        "text": "Extra checks: insulin, anticoagulants, opioids, chemo."
+        "text": "Loratadine (Claritin)"
       },
       {
         "id": "d",
-        "text": "Many drugs need lower dose in renal impairment."
+        "text": "Fluticasone nasal (Flonase)"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Extra checks: insulin, anticoagulants, opioids, chemo. Example: Double-check insulin.",
+    "correctOptionId": "a",
+    "explanation": "High-alert medications cause significant harm when used in error. The ISMP community/ambulatory list includes insulin, oral anticoagulants, opioids, oral methotrexate, sulfonylureas and pediatric liquids that need measuring. Extra safeguards, such as independent double checks, apply.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Extra checks: insulin, anticoagulants, opioids, chemo”.",
-      "b": "Not the best answer here; the right answer is “Extra checks: insulin, anticoagulants, opioids, chemo”.",
-      "d": "Full metformin severe renal."
+      "b": "Amoxicillin errors are rarely catastrophic, so it is not on the high-alert list.",
+      "c": "Loratadine has a wide safety margin and is not a high-alert drug.",
+      "d": "Nasal fluticasone is not on the ISMP high-alert list."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -1917,31 +1917,31 @@
     "id": "ptcb-pharmacy-technician-mock-059",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Error reporting culture? Select the best answer.",
+    "prompt": "Which approach best describes a 'just culture' for handling medication errors in a pharmacy?",
     "options": [
       {
         "id": "a",
-        "text": "Amber bag/light protection when required."
+        "text": "The person who made the error is disciplined first"
       },
       {
         "id": "b",
-        "text": "Plain language; teach-back."
+        "text": "Errors are reported only if harm reaches a patient"
       },
       {
         "id": "c",
-        "text": "Two drugs same class may duplicate."
+        "text": "Reports are filed anonymously and not reviewed"
       },
       {
         "id": "d",
-        "text": "Report to fix systems not only blame."
+        "text": "Errors are reported openly and analyzed for causes"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Report to fix systems not only blame.",
+    "explanation": "A just culture encourages reporting by looking for system causes (workflow, look-alike packaging, staffing) while still holding staff accountable for reckless behavior. Punitive responses drive errors underground and prevent the pharmacy from learning.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Report to fix systems not only blame”.",
-      "b": "Handout only.",
-      "c": "This is the answer to a different question (“Patient safety: Duplicate therapy?”), not to this one."
+      "a": "Automatic discipline discourages reporting, which is the opposite of a just culture.",
+      "b": "Near misses and no-harm errors should also be reported; they reveal risk early.",
+      "c": "Reports are only useful if they are reviewed and lead to system fixes."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -1950,64 +1950,64 @@
     "id": "ptcb-pharmacy-technician-mock-060",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, inventory: FIFO/FEFO? Select the best answer.",
+    "prompt": "While restocking shelves from a new delivery, where should a technician place bottles that have the latest expiration date?",
     "options": [
       {
         "id": "a",
-        "text": "Buy from licensed wholesalers only."
+        "text": "In front, so the new stock is used first"
       },
       {
         "id": "b",
-        "text": "Immediate sharps container after use."
+        "text": "In overflow until older stock expires"
       },
       {
         "id": "c",
-        "text": "Rotate stock; use earliest expiration first."
+        "text": "Behind the stock that expires sooner"
       },
       {
         "id": "d",
-        "text": "Loss theft/damage/errors."
+        "text": "Anywhere, as long as the NDC matches"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Rotate stock; use earliest expiration first.",
+    "explanation": "Stock rotation (first-expiring, first-out) keeps the earliest-expiring product in front so it is used first. Newer, longer-dated bottles go behind, reducing expired waste and the risk of dispensing outdated medication.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Rotate stock; use earliest expiration first”.",
-      "b": "Recap needles.",
-      "d": "This is the answer to a different question (“Inventory: Shrinkage?”), not to this one."
+      "a": "Putting new stock in front leaves older bottles to expire on the shelf.",
+      "b": "Holding stock aside until old product expires wastes inventory and invites missed outdates.",
+      "d": "A matching NDC confirms the product, but placement still has to follow expiration dates."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, INVENTORY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-061",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Hand hygiene? Select the best answer.",
+    "prompt": "A technician is about to compound a nonsterile oral suspension. Which hand-hygiene step is appropriate?",
     "options": [
       {
         "id": "a",
-        "text": "Excess serotonin: agitation, hyperthermia, clonus."
+        "text": "Wash hands with soap and water, then glove"
       },
       {
         "id": "b",
-        "text": "hydrALAZINE vs hydrOXYzine; separate storage."
+        "text": "Apply hand lotion so gloves go on easily"
       },
       {
         "id": "c",
-        "text": "Screen contraindications before vaccines."
+        "text": "Wipe hands with a dry paper towel only"
       },
       {
         "id": "d",
-        "text": "Before compounding/food areas."
+        "text": "Skip handwashing because gloves will be worn"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Before compounding/food areas.",
+    "correctOptionId": "a",
+    "explanation": "USP <795> calls for washing hands with soap and water before nonsterile compounding, then putting on clean gloves. Gloves do not replace handwashing; jewelry is removed and gloves are changed if they become contaminated or torn.",
     "distractorExplanations": {
-      "a": "Miss interaction.",
-      "b": "Rush verification.",
-      "c": "This is the answer to a different question (“Patient safety: Immunization screening?”), not to this one."
+      "b": "Lotion can contaminate the preparation and does not clean the hands.",
+      "c": "A dry wipe removes neither microbes nor drug residue.",
+      "d": "Gloves supplement handwashing; they never replace it."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -2016,64 +2016,64 @@
     "id": "ptcb-pharmacy-technician-mock-062",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Auxiliary labels? Select the best answer.",
+    "prompt": "Which auxiliary labels belong on a bottle of amoxicillin oral suspension after it has been reconstituted?",
     "options": [
       {
         "id": "a",
-        "text": "Shake well, take with food, may cause drowsiness."
+        "text": "Do not shake; may cause drowsiness"
       },
       {
         "id": "b",
-        "text": "Private area for PHI discussion."
+        "text": "Shake well; discard after 14 days"
       },
       {
         "id": "c",
-        "text": "Weight-based; verify concentration mg/5 mL."
+        "text": "For external use only; do not swallow"
       },
       {
         "id": "d",
-        "text": "U-100 syringe; separate storage; double-check units."
+        "text": "Dissolve under the tongue; do not chew"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Shake well, take with food, may cause drowsiness. Example: Suspension shake well.",
+    "correctOptionId": "b",
+    "explanation": "Reconstituted amoxicillin suspension must be shaken before each dose because the particles settle, and it is discarded 14 days after mixing; refrigeration is preferred but not required. Every reconstituted antibiotic gets a beyond-use date on its label.",
     "distractorExplanations": {
-      "b": "Public loud counsel.",
-      "c": "Adult dose to child.",
-      "d": "Wrong syringe."
+      "a": "Suspensions must be shaken, and amoxicillin does not usually cause drowsiness.",
+      "c": "Amoxicillin suspension is taken by mouth, not applied externally.",
+      "d": "Sublingual instructions apply to tablets such as nitroglycerin, not oral liquids."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-063",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Barcode scanning? Select the best answer.",
+    "prompt": "During filling, the NDC barcode on a stock bottle does not match the product selected in the dispensing system. What should the technician do?",
     "options": [
       {
         "id": "a",
-        "text": "Do not mix 340B inventory."
+        "text": "Override the scan if the drug name matches"
       },
       {
         "id": "b",
-        "text": "Document offer/decline counseling."
+        "text": "Fill it and leave a note for the pharmacist"
       },
       {
         "id": "c",
-        "text": "Reduces dispensing errors."
+        "text": "Type the NDC by hand to force a match"
       },
       {
         "id": "d",
-        "text": "Plain language; teach-back."
+        "text": "Stop and resolve the mismatch before filling"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Reduces dispensing errors. Example: Will call scan.",
+    "correctOptionId": "d",
+    "explanation": "A barcode mismatch means the product, strength or package may differ from the order. The technician stops, compares drug, strength, dosage form and NDC with the order, and resolves or escalates the problem before filling. Overriding the scan defeats the safety check.",
     "distractorExplanations": {
-      "a": "Mix stock.",
-      "b": "Not the best answer here; the right answer is “Reduces dispensing errors”.",
-      "d": "Handout only."
+      "a": "The same name can hide a different strength or form; overriding defeats the check.",
+      "b": "Filling first puts a possibly wrong product into the workflow.",
+      "c": "Typing a matching NDC hides the discrepancy instead of resolving it."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -2082,97 +2082,97 @@
     "id": "ptcb-pharmacy-technician-mock-064",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, inventory: Short dated? Select the best answer.",
+    "prompt": "A stock bottle's manufacturer expiration date reads 06/2027 with no day listed. Through what date may the product be used?",
     "options": [
       {
         "id": "a",
-        "text": "Use short dated before long dated."
+        "text": "June 30, 2027"
       },
       {
         "id": "b",
-        "text": "Separate recalled/damaged/suspect stock."
+        "text": "June 1, 2027"
       },
       {
         "id": "c",
-        "text": "Report to fix systems not only blame."
+        "text": "May 31, 2027"
       },
       {
         "id": "d",
-        "text": "CR caps unless permitted override documented."
+        "text": "December 31, 2027"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Use short dated before long dated.",
+    "explanation": "When an expiration date shows only a month and year, the product is good through the last day of that month, here June 30, 2027. The beyond-use date on a patient's label may be earlier, for example one year from dispensing, under state rules.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Use short dated before long dated”.",
-      "c": "Punish reporter.",
-      "d": "Not the best answer here; the right answer is “Use short dated before long dated”."
+      "b": "The product does not expire at the start of the month; it is good through the last day.",
+      "c": "The product is good through the end of the listed month, not the month before.",
+      "d": "The month on the label is the limit; the product is not good through the end of the year."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, INVENTORY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-065",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, inventory: Shrinkage? Select the best answer.",
+    "prompt": "Two patients with similar names are waiting at pickup. Which step best prevents handing a prescription to the wrong person?",
     "options": [
       {
         "id": "a",
-        "text": "Loss theft/damage/errors."
+        "text": "Ask the patient to state a last name"
       },
       {
         "id": "b",
-        "text": "U-100 syringe; separate storage; double-check units."
+        "text": "Confirm name and date of birth"
       },
       {
         "id": "c",
-        "text": "Caught before patient; report to improve systems."
+        "text": "Ask if the patient has visited before"
       },
       {
         "id": "d",
-        "text": "CR caps unless permitted override documented."
+        "text": "Check the patient's insurance card"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Loss theft/damage/errors.",
+    "correctOptionId": "b",
+    "explanation": "Using two patient identifiers, typically full name plus date of birth or address, prevents wrong-patient errors, especially with similar names. It is a Joint Commission National Patient Safety Goal and standard pharmacy policy at pickup.",
     "distractorExplanations": {
-      "b": "Wrong syringe.",
-      "c": "Hide near miss.",
-      "d": "Not the best answer here; the right answer is “Loss theft/damage/errors”."
+      "a": "A last name alone cannot tell apart two patients with similar names.",
+      "c": "A prior visit does not identify which prescription belongs to the patient.",
+      "d": "An insurance card shows coverage, not that this bag belongs to this patient."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, INVENTORY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-066",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Insulin errors? Select the best answer.",
+    "prompt": "Why should 'units' be written out instead of abbreviated as 'U' on an insulin prescription?",
     "options": [
       {
         "id": "a",
-        "text": "Document offer/decline counseling."
+        "text": "'U' is reserved for unit-dose packaging"
       },
       {
         "id": "b",
-        "text": "Immediate sharps container after use."
+        "text": "Insurance plans reject claims showing 'U'"
       },
       {
         "id": "c",
-        "text": "Elderly, pregnant, immunocompromised need extra care."
+        "text": "'U' means 'use as directed' on prescriptions"
       },
       {
         "id": "d",
-        "text": "U-100 syringe; separate storage; double-check units."
+        "text": "'U' can be misread as a zero or a four"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "U-100 syringe; separate storage; double-check units. Example: 10 vs 100 units.",
+    "explanation": "ISMP and the Joint Commission 'Do Not Use' list ban 'U' for units because it can be read as 0, 4 or cc, so '10U' becomes 100. Writing 'units' prevents tenfold insulin overdoses with a high-alert drug.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “U-100 syringe; separate storage; double-check units”.",
-      "b": "Recap needles.",
-      "c": "One script all."
+      "a": "'U' is not a unit-dose packaging code; the problem is misreading it as a number.",
+      "b": "The ban is a safety rule, not an insurance billing rule.",
+      "c": "'Use as directed' is written UD or spelled out; 'U' does not mean that."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -2181,31 +2181,31 @@
     "id": "ptcb-pharmacy-technician-mock-067",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Fall risk sedatives? Select the best answer.",
+    "prompt": "A pediatric prescription orders a dose in mg/kg. Which information must be on the patient profile before the dose can be checked?",
     "options": [
       {
         "id": "a",
-        "text": "Benzo + opioid increases falls elderly."
+        "text": "The parent's insurance member ID"
       },
       {
         "id": "b",
-        "text": "Buy from licensed wholesalers only."
+        "text": "The child's height in centimeters"
       },
       {
         "id": "c",
-        "text": "Patient, drug, dose, route, time (+ documentation)."
+        "text": "The child's current weight"
       },
       {
         "id": "d",
-        "text": "Reconcile physical vs system."
+        "text": "The prescriber's DEA number"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Benzo + opioid increases falls elderly. Example: Counsel cautiously.",
+    "correctOptionId": "c",
+    "explanation": "Weight-based pediatric doses (mg/kg) can only be verified with a current, accurately recorded weight, ideally in kilograms. Missing or outdated weights and pound-kilogram mix-ups are leading causes of pediatric dosing errors.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Benzo + opioid increases falls elderly”.",
-      "c": "Only 3 rights.",
-      "d": "This is the answer to a different question (“Inventory: Cycle count?”), not to this one."
+      "a": "Insurance details matter for billing, not for checking a mg/kg dose.",
+      "b": "Height is used for body-surface-area dosing; a mg/kg dose needs weight.",
+      "d": "A DEA number is needed only for controlled substances and does not verify the dose."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -2214,64 +2214,64 @@
     "id": "ptcb-pharmacy-technician-mock-068",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Duplicate therapy? Select the best answer.",
+    "prompt": "A patient has an active prescription for ibuprofen 800 mg three times daily, and a new prescription arrives for meloxicam 15 mg daily. What should the technician flag?",
     "options": [
       {
         "id": "a",
-        "text": "Spill kit PPE procedure."
+        "text": "Therapeutic duplication of two NSAIDs"
       },
       {
         "id": "b",
-        "text": "Immediate IM epinephrine is first-line; call emergency services; antihistamines/bronchodilators are adjuncts, not substitutes."
+        "text": "A food interaction with grapefruit juice"
       },
       {
         "id": "c",
-        "text": "Immediate sharps container after use."
+        "text": "An early refill of a controlled drug"
       },
       {
         "id": "d",
-        "text": "Two drugs same class may duplicate."
+        "text": "A conflict with a sulfa drug allergy"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Two drugs same class may duplicate. Example: Two NSAIDs.",
+    "correctOptionId": "a",
+    "explanation": "Ibuprofen and meloxicam are both NSAIDs. Taking them together adds GI bleeding, kidney and cardiovascular risk without added benefit. The therapeutic duplication alert goes to the pharmacist, who may contact the prescriber.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Two drugs same class may duplicate”.",
-      "b": "Using oral antihistamine alone for anaphylaxis.",
-      "c": "Recap needles."
+      "b": "Neither ibuprofen nor meloxicam has a clinically important grapefruit interaction.",
+      "c": "Neither drug is a controlled substance.",
+      "d": "Meloxicam and ibuprofen are not sulfonamides, and no allergy is listed."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-069",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Look-alike names? Select the best answer.",
+    "prompt": "A prescription for Celebrex 200 mg is being entered. Which product is a known look-alike/sound-alike mix-up risk for this name?",
     "options": [
       {
         "id": "a",
-        "text": "Excess serotonin: agitation, hyperthermia, clonus."
+        "text": "Crestor (rosuvastatin)"
       },
       {
         "id": "b",
-        "text": "hydrALAZINE vs hydrOXYzine; separate storage."
+        "text": "Cozaar (losartan)"
       },
       {
         "id": "c",
-        "text": "2-8°C monitor min/max daily."
+        "text": "Coreg (carvedilol)"
       },
       {
         "id": "d",
-        "text": "Before compounding/food areas."
+        "text": "Celexa (citalopram)"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "hydrALAZINE vs hydrOXYzine; separate storage. Example: LASA list.",
+    "correctOptionId": "d",
+    "explanation": "Celebrex (celecoxib, an NSAID), Celexa (citalopram, an SSRI) and Cerebyx (fosphenytoin) are on the ISMP list of confused drug names. Checking the indication, the strength (Celebrex 100/200 mg vs Celexa 10/20/40 mg) and the barcode helps catch a wrong selection.",
     "distractorExplanations": {
-      "a": "Miss interaction.",
-      "c": "Door shelf storage.",
-      "d": "This is the answer to a different question (“Patient safety: Hand hygiene?”), not to this one."
+      "a": "Crestor shares a first letter, but it is not on the confused-names list with Celebrex.",
+      "b": "Cozaar is confused with Zocor, not with Celebrex.",
+      "c": "Coreg is confused with Corgard, not with Celebrex."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -2280,31 +2280,31 @@
     "id": "ptcb-pharmacy-technician-mock-070",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "patient-safety",
-    "prompt": "For the PTCB / PTCE Mock, patient safety: Privacy counseling? Select the best answer.",
+    "prompt": "A patient's coworker calls asking whether the patient's prescription is ready and what it is for. What is appropriate under HIPAA?",
     "options": [
       {
         "id": "a",
-        "text": "Private area for PHI discussion."
+        "text": "Share the drug name because the caller knows the patient"
       },
       {
         "id": "b",
-        "text": "2-8°C monitor min/max daily."
+        "text": "Withhold details unless the patient has authorized it"
       },
       {
         "id": "c",
-        "text": "Freezing destroys many biologics."
+        "text": "Share details once the caller gives the birth date"
       },
       {
         "id": "d",
-        "text": "Do not mix 340B inventory."
+        "text": "Read the label aloud so the caller can confirm it"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Private area for PHI discussion. Example: Counseling booth.",
+    "correctOptionId": "b",
+    "explanation": "Protected health information, including what a prescription is for, may not be disclosed to coworkers or others without the patient's authorization, except as HIPAA permits (for example, to a person the patient has designated). Knowing a birth date does not make a caller authorized.",
     "distractorExplanations": {
-      "b": "Door shelf storage.",
-      "c": "Not the best answer here; the right answer is “Private area for PHI discussion”.",
-      "d": "Mix stock."
+      "a": "Knowing the patient does not give the caller a right to protected health information.",
+      "c": "A birth date verifies identity details, not authorization to receive them.",
+      "d": "Reading the label to the caller discloses protected health information."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PATIENT-SAFETY). · Local short-stem expansion"
@@ -2313,64 +2313,64 @@
     "id": "ptcb-pharmacy-technician-mock-071",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Percent w/v? Select the best answer.",
+    "prompt": "How many grams of dextrose are in a 500 mL bag of D5W (5% dextrose in water)?",
     "options": [
       {
         "id": "a",
-        "text": "Grams of drug per 100 g of product; 1% = 1 g/100 g."
+        "text": "2.5 g"
       },
       {
         "id": "b",
-        "text": "Grams of drug per 100 mL of solution; 1% w/v = 1 g/100 mL."
+        "text": "5 g"
       },
       {
         "id": "c",
-        "text": "Milliliters of drug per 100 mL of solution; 1% = 1 mL/100 mL."
+        "text": "25 g"
       },
       {
         "id": "d",
-        "text": "Milligrams of drug per 1 mL of solution; 1% = 1 mg/mL."
+        "text": "50 g"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Grams drug per 100 mL solution; 1% w/v = 1 g/100 mL. Example: 5% dextrose.",
+    "correctOptionId": "c",
+    "explanation": "D5W is 5% w/v, meaning 5 g of dextrose per 100 mL. For 500 mL: 5 g x (500 / 100) = 25 g. Percent weight-in-volume always means grams per 100 mL of solution.",
     "distractorExplanations": {
-      "a": "That is percent weight-in-weight (w/w), used for ointments and creams.",
-      "c": "That is percent volume-in-volume (v/v), used for liquids mixed with liquids.",
-      "d": "1% w/v is 1 g per 100 mL, which equals 10 mg/mL, not 1 mg/mL."
+      "a": "2.5 g treats 5% as 5 g per 1,000 mL instead of per 100 mL.",
+      "b": "5 g is the amount in only 100 mL, not the whole 500 mL bag.",
+      "d": "50 g in 500 mL would be a 10% solution (D10W)."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-072",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: mg/kg/day? Select the best answer.",
+    "prompt": "A child weighs 44 lb. Amoxicillin is ordered at 40 mg/kg/day, divided every 12 hours. How many milligrams should each dose contain?",
     "options": [
       {
         "id": "a",
-        "text": "Daily mg = mg/kg/day × kg; divide by doses/day."
+        "text": "200 mg"
       },
       {
         "id": "b",
-        "text": "Patient, drug, strength, sig, prescriber, date, auth signature/e-Rx."
+        "text": "400 mg"
       },
       {
         "id": "c",
-        "text": "Divide lb by 2.2 for kg."
+        "text": "800 mg"
       },
       {
         "id": "d",
-        "text": "Of each equal parts"
+        "text": "1,760 mg"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Daily mg = mg/kg/day × kg; divide by doses/day. Example: Pediatric weight dosing.",
+    "correctOptionId": "b",
+    "explanation": "Convert weight first: 44 lb / 2.2 = 20 kg. Daily dose = 40 mg/kg/day x 20 kg = 800 mg/day. Every 12 hours means 2 doses a day, so each dose is 800 / 2 = 400 mg.",
     "distractorExplanations": {
-      "b": "Incomplete Rx.",
-      "c": "Wrong factor.",
-      "d": "Similar abbreviation confusion."
+      "a": "200 mg divides the daily dose into 4 doses (every 6 hours) instead of 2.",
+      "c": "800 mg is the total daily dose, not the amount per dose.",
+      "d": "1,760 mg uses 44 lb as if it were 44 kg, the classic pound-kilogram error."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
@@ -2379,31 +2379,31 @@
     "id": "ptcb-pharmacy-technician-mock-073",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Clark rule? Select the best answer.",
+    "prompt": "Using Clark's rule, what dose should a 30-lb child receive if the adult dose is 250 mg?",
     "options": [
       {
         "id": "a",
-        "text": "Grams drug per 100 g product."
+        "text": "25 mg"
       },
       {
         "id": "b",
-        "text": "Set equal ratios with consistent units (e.g., mg/mL = mg/mL) and solve for the unknown."
+        "text": "50 mg"
       },
       {
         "id": "c",
-        "text": "Child dose = (lb/150)× adult dose when specified."
+        "text": "75 mg"
       },
       {
         "id": "d",
-        "text": "Split only scored tablets if directed."
+        "text": "125 mg"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Child dose = (lb/150)× adult dose when specified. Example: Only if exam says Clark.",
+    "correctOptionId": "b",
+    "explanation": "Clark's rule: child dose = (child's weight in lb / 150) x adult dose. (30 / 150) x 250 mg = 0.2 x 250 mg = 50 mg. Weight-based mg/kg dosing is preferred in practice, but the PTCE may name Clark's rule directly.",
     "distractorExplanations": {
-      "a": "Using volume incorrectly.",
-      "b": "Cross-multiplying with mismatched units.",
-      "d": "Split ER/EC products."
+      "a": "25 mg divides by 300 instead of 150, halving the correct result.",
+      "c": "75 mg divides by 100 instead of 150.",
+      "d": "125 mg simply halves the adult dose without using the child's weight."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
@@ -2412,229 +2412,229 @@
     "id": "ptcb-pharmacy-technician-mock-074",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"mL\" mean on a prescription sig? Select the best answer.",
+    "prompt": "A prescription for an oral suspension reads: 5 mL po bid x 10 days. What total volume should be dispensed?",
     "options": [
       {
         "id": "a",
-        "text": "Microgram"
+        "text": "10 mL"
       },
       {
         "id": "b",
-        "text": "Every other day"
+        "text": "50 mL"
       },
       {
         "id": "c",
-        "text": "Milliliter"
+        "text": "100 mL"
       },
       {
         "id": "d",
-        "text": "Volume/tablets = desired ÷ available per unit."
+        "text": "150 mL"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Milliliter Example: Label: mL.",
+    "explanation": "Total volume = dose x doses per day x days: 5 mL x 2 (bid, twice daily) x 10 days = 100 mL. 'po' means by mouth.",
     "distractorExplanations": {
-      "a": "Similar abbreviation confusion.",
-      "b": "Similar abbreviation confusion.",
-      "d": "Unit mismatch."
+      "a": "10 mL is only one day's supply (5 mL twice).",
+      "b": "50 mL assumes once-daily dosing instead of twice daily.",
+      "d": "150 mL assumes three-times-daily (tid) dosing."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-075",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"mcg\" mean on a prescription sig? Select the best answer.",
+    "prompt": "A prescription is written for levothyroxine 0.075 mg daily. Which tablet strength, labeled in micrograms, matches this order?",
     "options": [
       {
         "id": "a",
-        "text": "Microgram"
+        "text": "7.5 mcg"
       },
       {
         "id": "b",
-        "text": "Every 6 hours"
+        "text": "75 mcg"
       },
       {
         "id": "c",
-        "text": "Divide lb by 2.2 for kg."
+        "text": "750 mcg"
       },
       {
         "id": "d",
-        "text": "Milligram"
+        "text": "7,500 mcg"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Microgram Example: Label: mcg.",
+    "correctOptionId": "b",
+    "explanation": "1 mg = 1,000 mcg, so 0.075 mg x 1,000 = 75 mcg. Levothyroxine strengths are labeled in mcg (25, 50, 75, 88, 100 and so on), and a misplaced decimal point changes the dose tenfold.",
     "distractorExplanations": {
-      "b": "Similar abbreviation confusion.",
-      "c": "Wrong factor.",
-      "d": "Similar abbreviation confusion."
+      "a": "7.5 mcg multiplies by 100 instead of 1,000.",
+      "c": "750 mcg multiplies by 10,000, a tenfold overdose.",
+      "d": "7,500 mcg multiplies by 100,000, a hundredfold overdose."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-076",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: IV gtt/min? Select the best answer.",
+    "prompt": "500 mL of normal saline is to infuse over 4 hours using tubing with a drop factor of 20 gtt/mL. What is the rate in drops per minute, rounded to the nearest whole drop?",
     "options": [
       {
         "id": "a",
-        "text": "(Volume × minutes) ÷ drop factor."
+        "text": "21 gtt/min"
       },
       {
         "id": "b",
-        "text": "Volume ÷ (drop factor × minutes)."
+        "text": "31 gtt/min"
       },
       {
         "id": "c",
-        "text": "(Volume ÷ hours) × drop factor."
+        "text": "42 gtt/min"
       },
       {
         "id": "d",
-        "text": "(Volume × drop factor) ÷ minutes."
+        "text": "125 gtt/min"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "(Volume×drop factor)÷minutes; use given factor. Example: Exam provides factor.",
+    "correctOptionId": "c",
+    "explanation": "gtt/min = (volume x drop factor) / time in minutes. (500 mL x 20 gtt/mL) / 240 min = 41.7, about 42 gtt/min. Always convert hours to minutes and use the drop factor printed on the tubing package.",
     "distractorExplanations": {
-      "a": "Minutes belong in the denominator and the drop factor in the numerator.",
-      "b": "The drop factor multiplies the volume; it does not divide it.",
-      "c": "That gives drops per hour; divide by 60 to get drops per minute."
+      "a": "21 gtt/min uses a 10 gtt/mL drop factor instead of 20.",
+      "b": "31 gtt/min uses a 15 gtt/mL drop factor instead of 20.",
+      "d": "125 is the rate in mL per hour (500 mL / 4 h), not drops per minute."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-077",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"t.i.d.\" mean on a prescription sig? Select the best answer.",
+    "prompt": "A prescription reads: amoxicillin 500 mg, 1 capsule po tid x 10 days. How many capsules should be dispensed?",
     "options": [
       {
         "id": "a",
-        "text": "Three times daily"
+        "text": "40 capsules"
       },
       {
         "id": "b",
-        "text": "Child dose = age/(age+12)× adult dose when specified."
+        "text": "30 capsules"
       },
       {
         "id": "c",
-        "text": "Verify patient identity at pickup."
+        "text": "20 capsules"
       },
       {
         "id": "d",
-        "text": "Short beyond-use date after opening/reconstituting."
+        "text": "10 capsules"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Three times daily Example: Label: t.i.d.",
+    "correctOptionId": "b",
+    "explanation": "tid means three times daily. 1 capsule x 3 per day x 10 days = 30 capsules. Confusing tid with bid (twice daily) or qid (four times daily) changes both the quantity and the days' supply.",
     "distractorExplanations": {
-      "b": "Wrong rule.",
-      "c": "Wrong patient.",
-      "d": "Use vial exp after open."
+      "a": "40 capsules treats tid as qid (four times daily).",
+      "c": "20 capsules treats tid as bid (twice daily).",
+      "d": "10 capsules assumes once-daily dosing."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-078",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Insulin U-100? Select the best answer.",
+    "prompt": "A patient injects 30 units of insulin glargine (Lantus) daily from a 10 mL vial of U-100 insulin. An opened vial must be discarded after 28 days. What days' supply should be entered?",
     "options": [
       {
         "id": "a",
-        "text": "Update allergies and med list each visit."
+        "text": "28 days"
       },
       {
         "id": "b",
-        "text": "Grams drug per 100 mL solution; 1% w/v = 1 g/100 mL."
+        "text": "30 days"
       },
       {
         "id": "c",
-        "text": "Freezing destroys most refrigerated vaccines."
+        "text": "33 days"
       },
       {
         "id": "d",
-        "text": "100 units per mL; use unit syringe."
+        "text": "100 days"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "100 units per mL; use unit syringe. Example: 30 units insulin.",
+    "correctOptionId": "a",
+    "explanation": "A 10 mL vial of U-100 holds 100 units/mL x 10 mL = 1,000 units, and 1,000 / 30 units per day is about 33 days. But an opened Lantus vial is discarded after 28 days, so the usable and billable days' supply is 28 days.",
     "distractorExplanations": {
-      "a": "Stale profile.",
-      "b": "Confusing w/w.",
-      "c": "Return to fridge after freeze."
+      "b": "30 days is a default month, not the result of the math or the discard limit.",
+      "c": "33 days is the correct unit math, but it ignores the 28-day discard rule after opening.",
+      "d": "100 days confuses the U-100 concentration with a number of days."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-079",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"p.o.\" mean on a prescription sig? Select the best answer.",
+    "prompt": "An ophthalmic prescription reads: 2 gtts OU bid. How should the patient use the drops?",
     "options": [
       {
         "id": "a",
-        "text": "Subcutaneous"
+        "text": "Two drops in the right eye twice daily"
       },
       {
         "id": "b",
-        "text": "mg per each mL."
+        "text": "Two drops in each ear twice daily"
       },
       {
         "id": "c",
-        "text": "By mouth"
+        "text": "Two drops in the left eye twice daily"
       },
       {
         "id": "d",
-        "text": "Inhalation (by inhaler/nebulizer). Note: INH also means isoniazid—use context."
+        "text": "Two drops in each eye twice daily"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "By mouth Example: Label: p.o.",
+    "correctOptionId": "d",
+    "explanation": "OU means both eyes; OD is the right eye and OS the left eye. AU, AD and AS are the matching ear abbreviations. ISMP recommends writing these out because they are easily confused with each other.",
     "distractorExplanations": {
-      "a": "Similar abbreviation confusion.",
-      "b": "Total bottle mg confusion.",
-      "d": "Similar abbreviation confusion."
+      "a": "The right eye alone is OD, not OU.",
+      "b": "Both ears is AU; OU refers to the eyes.",
+      "c": "The left eye alone is OS, not OU."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-080",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"UD\" mean on a prescription sig? Select the best answer.",
+    "prompt": "Which abbreviation is on the Joint Commission 'Do Not Use' list because it is often misread on prescriptions?",
     "options": [
       {
         "id": "a",
-        "text": "Update allergies and med list each visit."
+        "text": "QD (daily)"
       },
       {
         "id": "b",
-        "text": "Divide mg by 1000."
+        "text": "BID (twice daily)"
       },
       {
         "id": "c",
-        "text": "Right eye"
+        "text": "PO (by mouth)"
       },
       {
         "id": "d",
-        "text": "As directed"
+        "text": "PRN (as needed)"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "As directed Example: Label: UD.",
+    "correctOptionId": "a",
+    "explanation": "QD is on the Joint Commission 'Do Not Use' list because it can be mistaken for QID (four times daily) or QOD; 'daily' should be written out. Other banned items include U for units, trailing zeros (1.0 mg) and missing leading zeros (.5 mg).",
     "distractorExplanations": {
-      "a": "Stale profile.",
-      "b": "Decimal error.",
-      "c": "Similar abbreviation confusion."
+      "b": "BID is widely used and is not on the official 'Do Not Use' list.",
+      "c": "PO is a standard route abbreviation and is not on the list.",
+      "d": "PRN is standard and is not on the 'Do Not Use' list."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"
@@ -2643,31 +2643,31 @@
     "id": "ptcb-pharmacy-technician-mock-081",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"OD\" mean on a prescription sig? Select the best answer.",
+    "prompt": "A new order reads: warfarin 1.0 mg by mouth daily. What is the safety problem with how this dose is written?",
     "options": [
       {
         "id": "a",
-        "text": "May use max daily dose per policy for days supply."
+        "text": "Warfarin is not made as a 1 mg tablet"
       },
       {
         "id": "b",
-        "text": "Patient, drug, strength, sig, prescriber, date, auth signature/e-Rx."
+        "text": "The dose should be written in micrograms"
       },
       {
         "id": "c",
-        "text": "Right eye"
+        "text": "The trailing zero can be misread as 10 mg"
       },
       {
         "id": "d",
-        "text": "Divide lb by 2.2 for kg."
+        "text": "Warfarin doses must be written in units"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Right eye Example: Label: OD.",
+    "explanation": "Trailing zeros (1.0 mg) are on the 'Do Not Use' list because a missed decimal point turns 1.0 mg into 10 mg, a tenfold overdose of a high-alert anticoagulant. Correct forms are '1 mg' and, for doses under 1, a leading zero such as '0.5 mg'.",
     "distractorExplanations": {
-      "a": "Average PRN guess.",
-      "b": "Incomplete Rx.",
-      "d": "Wrong factor."
+      "a": "Warfarin 1 mg tablets exist (color-coded pink); the strength is not the problem.",
+      "b": "Warfarin doses are written in milligrams; micrograms would add a conversion error.",
+      "d": "Units are used for insulin and heparin, not warfarin."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"
@@ -2676,64 +2676,64 @@
     "id": "ptcb-pharmacy-technician-mock-082",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Reconstitution? Select the best answer.",
+    "prompt": "An amoxicillin powder bottle says to add 68 mL of water to make 100 mL of a 250 mg/5 mL suspension. How many milligrams of amoxicillin does the bottle contain?",
     "options": [
       {
         "id": "a",
-        "text": "Add the labeled volume of the labeled diluent to reach the stated mg/mL."
+        "text": "250 mg"
       },
       {
         "id": "b",
-        "text": "Add any convenient volume of sterile water, then label the final mg/mL."
+        "text": "3,400 mg"
       },
       {
         "id": "c",
-        "text": "Fill the vial completely with diluent so no air space remains inside."
+        "text": "5,000 mg"
       },
       {
         "id": "d",
-        "text": "Inject the dry powder directly into the patient's IV fluid bag."
+        "text": "25,000 mg"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Add labeled diluent for final mg/mL. Example: Antibiotic vials.",
+    "correctOptionId": "c",
+    "explanation": "250 mg/5 mL equals 50 mg/mL. The final volume is 100 mL (the powder takes up about 32 mL), so the bottle holds 50 mg/mL x 100 mL = 5,000 mg. Always use the final volume, not the volume of water added.",
     "distractorExplanations": {
-      "b": "The diluent volume must follow the label; a different volume changes the concentration.",
-      "c": "Filling the vial ignores the labeled volume and produces the wrong concentration.",
-      "d": "Powder is reconstituted in its vial with the labeled diluent before any further dilution."
+      "a": "250 mg is the amount in a single 5 mL dose, not the whole bottle.",
+      "b": "3,400 mg uses the 68 mL of water added instead of the 100 mL final volume.",
+      "d": "25,000 mg multiplies 250 mg by 100 mL without dividing by 5 mL."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-083",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Child liquid mg/5mL? Select the best answer.",
+    "prompt": "A child needs 300 mg of amoxicillin per dose. The pharmacy has amoxicillin suspension 400 mg/5 mL. How many milliliters are needed per dose?",
     "options": [
       {
         "id": "a",
-        "text": "Convert all to metric before calculating."
+        "text": "6.67 mL"
       },
       {
         "id": "b",
-        "text": "Always identify concentration on bottle."
+        "text": "5 mL"
       },
       {
         "id": "c",
-        "text": "Days = mL dispensed ÷ mL per day."
+        "text": "3.75 mL"
       },
       {
         "id": "d",
-        "text": "Subcutaneous"
+        "text": "2.5 mL"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Always identify concentration on bottle. Example: Amoxicillin 400 mg/5 mL.",
+    "correctOptionId": "c",
+    "explanation": "Set up the proportion 400 mg / 5 mL = 300 mg / x mL, so x = (300 x 5) / 400 = 3.75 mL. Always read the concentration on the bottle, because amoxicillin comes as 125, 200, 250 and 400 mg/5 mL.",
     "distractorExplanations": {
-      "a": "Mixed units.",
-      "c": "Tablet formula on liquid.",
-      "d": "Similar abbreviation confusion."
+      "a": "6.67 mL inverts the ratio (400 / 300 x 5).",
+      "b": "5 mL is one teaspoon regardless of strength and would deliver 400 mg.",
+      "d": "2.5 mL delivers only 200 mg of this suspension."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
@@ -2742,97 +2742,97 @@
     "id": "ptcb-pharmacy-technician-mock-084",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"s\" mean on a prescription sig? Select the best answer.",
+    "prompt": "A prescription sig reads: 1 tab po qhs. When should the patient take the dose?",
     "options": [
       {
         "id": "a",
-        "text": "Without"
+        "text": "Every hour while awake"
       },
       {
         "id": "b",
-        "text": "Cancel units to desired answer."
+        "text": "At bedtime"
       },
       {
         "id": "c",
-        "text": "Quantity sufficient to make"
+        "text": "Every morning"
       },
       {
         "id": "d",
-        "text": "Returns usually not restocked."
+        "text": "After each meal"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Without Example: Label: s.",
+    "correctOptionId": "b",
+    "explanation": "qhs (or hs) means at bedtime, from the Latin hora somni. 'qh' means every hour, 'qam' every morning and 'pc' after meals. Because 'qhs' can be misread as 'qhr', ISMP suggests writing 'at bedtime' instead.",
     "distractorExplanations": {
-      "b": "Wrong unit left.",
-      "c": "Similar abbreviation confusion.",
-      "d": "Not the best answer here; the right answer is “Without”."
+      "a": "Every hour is 'qh', not 'qhs'.",
+      "c": "Every morning is 'qam' or 'qAM'.",
+      "d": "After meals is 'pc'; 'ac' means before meals."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-085",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: mcg to mg? Select the best answer.",
+    "prompt": "How much 10% hydrocortisone cream and 1% hydrocortisone cream should be combined to make 90 g of 2.5% cream?",
     "options": [
       {
         "id": "a",
-        "text": "Child dose = age/(age+12)× adult dose when specified."
+        "text": "75 g of 10% and 15 g of 1%"
       },
       {
         "id": "b",
-        "text": "Divide mcg by 1000."
+        "text": "22.5 g of 10% and 67.5 g of 1%"
       },
       {
         "id": "c",
-        "text": "Tablet"
+        "text": "45 g of 10% and 45 g of 1%"
       },
       {
         "id": "d",
-        "text": "0.9% NaCl isotonic."
+        "text": "15 g of 10% and 75 g of 1%"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Divide mcg by 1000. Example: 500 mcg = 0.5 mg.",
+    "correctOptionId": "d",
+    "explanation": "Alligation: 10 - 2.5 = 7.5 parts of 1% cream and 2.5 - 1 = 1.5 parts of 10% cream, 9 parts in total. 90 g / 9 = 10 g per part, so 15 g of 10% and 75 g of 1%. Check: (1.5 g + 0.75 g) / 90 g = 2.5%.",
     "distractorExplanations": {
-      "a": "Wrong rule.",
-      "c": "Similar abbreviation confusion.",
-      "d": "Tonicity confusion."
+      "a": "This swaps the parts and produces an 8.5% cream.",
+      "b": "This uses 2.5% as a quarter of the batch and produces a 3.25% cream.",
+      "c": "An even split produces a 5.5% cream, not 2.5%."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-086",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Days supply liquid? Select the best answer.",
+    "prompt": "A prescription for 150 mL of cefdinir suspension reads: 6 mL po bid. What days' supply should be entered?",
     "options": [
       {
         "id": "a",
-        "text": "Always identify concentration on bottle."
+        "text": "10 days"
       },
       {
         "id": "b",
-        "text": "Twice daily"
+        "text": "12 days"
       },
       {
         "id": "c",
-        "text": "Days = mL dispensed ÷ mL per day."
+        "text": "15 days"
       },
       {
         "id": "d",
-        "text": "Offer and document counseling."
+        "text": "25 days"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Days = mL dispensed ÷ mL per day. Example: 120 mL, 5 mL TID = 8 days.",
+    "correctOptionId": "b",
+    "explanation": "Daily volume = 6 mL x 2 = 12 mL per day. Days' supply = 150 mL / 12 mL per day = 12.5, which is rounded down to 12 days because a partial day is not billed as a full day.",
     "distractorExplanations": {
-      "a": "Assume 5 mL is 5 mg.",
-      "b": "Similar abbreviation confusion.",
-      "d": "Not the best answer here; the right answer is “Days = mL dispensed ÷ mL per day”."
+      "a": "10 days is a typical antibiotic course, not the math from this quantity and sig.",
+      "c": "15 days assumes 5 mL doses twice daily instead of 6 mL.",
+      "d": "25 days assumes once-daily dosing instead of bid."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
@@ -2841,97 +2841,97 @@
     "id": "ptcb-pharmacy-technician-mock-087",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Household measure? Select the best answer.",
+    "prompt": "A parent asks how many milliliters equal one teaspoon when measuring a child's liquid medicine. What is the standard pharmacy conversion?",
     "options": [
       {
         "id": "a",
-        "text": "Capsule"
+        "text": "15 mL"
       },
       {
         "id": "b",
-        "text": "Verify patient identity at pickup."
+        "text": "10 mL"
       },
       {
         "id": "c",
-        "text": "Drug:total ratio; convert consistently for alligation."
+        "text": "5 mL"
       },
       {
         "id": "d",
-        "text": "Use oral syringe not kitchen spoons."
+        "text": "2.5 mL"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Use oral syringe not kitchen spoons. Example: Pediatric liquids.",
+    "correctOptionId": "c",
+    "explanation": "1 teaspoon = 5 mL and 1 tablespoon = 15 mL. Pharmacies dispense an oral syringe or dosing cup marked in mL because kitchen spoons vary widely; ISMP recommends mL-only dosing for oral liquids.",
     "distractorExplanations": {
-      "a": "Similar abbreviation confusion.",
-      "b": "Wrong patient.",
-      "c": "Inverting ratio."
+      "a": "15 mL is one tablespoon, three times a teaspoon.",
+      "b": "10 mL equals two teaspoons, which would double a one-teaspoon dose.",
+      "d": "2.5 mL is half a teaspoon."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-088",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, pharmacy math: Flow rate? Select the best answer.",
+    "prompt": "1,000 mL of D5W is ordered to run over 8 hours on an infusion pump. What rate in mL/hr should be programmed?",
     "options": [
       {
         "id": "a",
-        "text": "mL/hr = volume ÷ hours."
+        "text": "12.5 mL/hr"
       },
       {
         "id": "b",
-        "text": "Drug:total ratio; convert consistently for alligation."
+        "text": "125 mL/hr"
       },
       {
         "id": "c",
-        "text": "i=1, v=5, x=10 common on Rx."
+        "text": "167 mL/hr"
       },
       {
         "id": "d",
-        "text": "Formal transfer between pharmacies."
+        "text": "250 mL/hr"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "mL/hr = volume ÷ hours. Example: 1000 mL/8 hr = 125 mL/hr.",
+    "correctOptionId": "b",
+    "explanation": "mL/hr = total volume / hours = 1,000 mL / 8 h = 125 mL/hr. Pumps are programmed in mL/hr; gravity sets need conversion to drops per minute using the tubing's drop factor.",
     "distractorExplanations": {
-      "b": "Inverting ratio.",
-      "c": "Misread numerals.",
-      "d": "Informal."
+      "a": "12.5 mL/hr is a decimal-place error (1,000 / 80).",
+      "c": "167 mL/hr divides by 6 hours instead of 8.",
+      "d": "250 mL/hr divides by 4 hours, which would finish in half the ordered time."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, PHARM-MATH). · Local short-stem expansion"
   },
   {
     "id": "ptcb-pharmacy-technician-mock-089",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "For the PTCB / PTCE Mock, dispensing workflow: Prospective DUR? Select the best answer.",
+    "prompt": "During order entry, the system flags that a new clarithromycin prescription interacts with the patient's simvastatin. What type of drug utilization review is this?",
     "options": [
       {
         "id": "a",
-        "text": "Review claims data after dispensing to find prescribing trends."
+        "text": "Prospective DUR, done before dispensing"
       },
       {
         "id": "b",
-        "text": "Screen for interactions and duplications before dispensing."
+        "text": "Retrospective DUR, done after dispensing"
       },
       {
         "id": "c",
-        "text": "Monitor the patient's therapy while the drug is being taken."
+        "text": "Concurrent DUR, done during the therapy"
       },
       {
         "id": "d",
-        "text": "Count controlled-substance inventory at least every two years."
+        "text": "A DEA audit of controlled-drug records"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Screen interactions before dispensing.",
+    "correctOptionId": "a",
+    "explanation": "Prospective DUR screens a prescription before it is dispensed for interactions, duplications, allergies and dose problems; OBRA '90 requires it for Medicaid prescriptions. The technician does not override an interaction alert; it goes to the pharmacist.",
     "distractorExplanations": {
-      "a": "Reviewing claims after dispensing is retrospective DUR.",
-      "c": "Monitoring during therapy is concurrent DUR.",
-      "d": "The biennial controlled-substance count is a DEA inventory rule, not DUR."
+      "b": "Retrospective DUR reviews claims after dispensing to spot prescribing patterns.",
+      "c": "Concurrent DUR monitors a patient while therapy is under way, usually in hospitals.",
+      "d": "DEA audits cover controlled-substance records; neither drug here is controlled."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, ORDER-ENTRY). · Local short-stem expansion"
@@ -2940,31 +2940,31 @@
     "id": "ptcb-pharmacy-technician-mock-090",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
-    "prompt": "On the PTCB / PTCE Mock, what does \"q12h\" mean on a prescription sig? Select the best answer.",
+    "prompt": "While checking a stock bottle, a technician reads its National Drug Code (NDC). What does the first segment of the NDC identify?",
     "options": [
       {
         "id": "a",
-        "text": "Microgram"
+        "text": "The labeler of the product"
       },
       {
         "id": "b",
-        "text": "DAW does not change days supply math alone."
+        "text": "The drug's strength and dosage form"
       },
       {
         "id": "c",
-        "text": "Not more than"
+        "text": "The package size and type"
       },
       {
         "id": "d",
-        "text": "Every 12 hours"
+        "text": "The lot number of the batch"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Every 12 hours Example: Label: q12h.",
+    "correctOptionId": "a",
+    "explanation": "An NDC has three segments: the labeler (manufacturer, repackager or distributor), the product (drug, strength and dosage form) and the package (size and type). Lot numbers and expiration dates are printed separately and are not part of the NDC.",
     "distractorExplanations": {
-      "a": "Similar abbreviation confusion.",
-      "b": "Mix concepts.",
-      "c": "Similar abbreviation confusion."
+      "b": "Strength and dosage form are encoded in the middle (product) segment.",
+      "c": "Package size and type are encoded in the last segment.",
+      "d": "Lot numbers are printed separately and are not part of the NDC."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (ptcb_pharmacy_tech_300_authored.csv, SIG-CODES). · Local short-stem expansion"

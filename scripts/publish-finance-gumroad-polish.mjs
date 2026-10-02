@@ -5,6 +5,8 @@
  *
  *   node scripts/publish-finance-gumroad-polish.mjs --dry-run
  *   node scripts/publish-finance-gumroad-polish.mjs --slug cfa-level-1-anki-deck
+ *   node scripts/publish-finance-gumroad-polish.mjs --slug sie-exam-anki-deck --refresh-samples
+ *     (new public/samples webps: upload new gallery previews, publish landing, then remove the old previews)
  */
 
 import { execSync } from "node:child_process";
@@ -18,21 +20,12 @@ const FINANCE_CATALOG = join(root, "src/data/gumroad/finance-anki-decks.json");
 const CDN_CACHE = join(root, "src/data/gumroad/finance-sample-cdn.json");
 const OUT_DIR = join(root, "landing-pages/finance");
 
-const SCREENSHOT_FAITHFUL = new Set([
-  "cfa-level-1-anki-deck",
-  "cfa-level-2-anki-deck",
-  "cfa-level-1-formula-reference-2026",
-  "cfa-level-2-formula-reference-2026",
-  "frm-part-1-anki-deck",
-  "series-7-anki-deck",
-  "series-63-anki-deck",
-]);
-
 function parseArgs(argv) {
-  const args = { dryRun: false, slug: null };
+  const args = { dryRun: false, slug: null, refreshSamples: false };
   for (let i = 2; i < argv.length; i += 1) {
     if (argv[i] === "--dry-run") args.dryRun = true;
     else if (argv[i] === "--slug") args.slug = argv[++i];
+    else if (argv[i] === "--refresh-samples") args.refreshSamples = true;
   }
   return args;
 }
@@ -113,11 +106,25 @@ function ensureCdnUrls(productId, slug, cache, dryRun) {
   return urls.slice(0, 3);
 }
 
-function loadSoldSamples(slug) {
-  const path = join(root, "src/data/sold-samples.json");
-  if (!existsSync(path)) return [];
-  const rows = JSON.parse(readFileSync(path, "utf8"))[slug];
-  return Array.isArray(rows) ? rows.slice(0, 3) : [];
+// Captions sit under card screenshots, so they come from the decks.ts sampleCard whose imageUrl is that
+// capture (render-anki-sample-shots writes both from the same note) — never from another card's text.
+function deckSampleCaptions(slug) {
+  const src = readFileSync(join(root, "src/lib/decks.ts"), "utf8");
+  const at = src.indexOf(`slug: "${slug}"`);
+  const next = src.indexOf('\n  {\n    slug: "', at + 1);
+  const chunk = src.slice(at, next > 0 ? next : undefined);
+  const start = chunk.indexOf("sampleCards: [");
+  const block = start < 0 ? "" : chunk.slice(start, chunk.indexOf("\n    ],", start));
+  const str = String.raw`("(?:\\.|[^"\\])*")`;
+  const byImage = new Map();
+  for (const m of block.matchAll(new RegExp(String.raw`question:\s*${str}\s*,\s*answer:\s*${str}\s*,\s*imageUrl:\s*"([^"]+)"`, "g"))) {
+    byImage.set(m[3], { q: JSON.parse(m[1]), a: JSON.parse(m[2]) });
+  }
+  return [1, 2, 3].map((n) => {
+    const caption = byImage.get(`/samples/${slug}-sample-${n}.webp`);
+    if (!caption) throw new Error(`decks.ts ${slug} has no sampleCard for /samples/${slug}-sample-${n}.webp`);
+    return caption;
+  });
 }
 
 function escapeHtml(value) {
@@ -149,9 +156,18 @@ ${samplesHtml}
 }
 
 function linkedMockSlug(deckSlug) {
-  const configs = readFileSync(join(root, "src/lib/mock-exams/configs.ts"), "utf8");
-  const re = new RegExp(`slug:\\s*"([^"]+)"[\\s\\S]*?linkedDeckSlug:\\s*"${deckSlug}"`);
-  return configs.match(re)?.[1] ?? null;
+  const dir = join(root, "src/lib/mock-exams");
+  for (const file of ["configs.ts", "wave1-configs.ts", "wave2-configs.ts", "wave3-configs.ts", "wave4-configs.ts"]) {
+    const path = join(dir, file);
+    if (!existsSync(path)) continue;
+    const src = readFileSync(path, "utf8");
+    const at = src.indexOf(`linkedDeckSlug: "${deckSlug}"`);
+    if (at < 0) continue;
+    // The owning config's slug is the last top-level `slug:` before its linkedDeckSlug.
+    const slugs = [...src.slice(0, at).matchAll(/\n\s+slug:\s*"([^"]+)"/g)];
+    if (slugs.length) return slugs[slugs.length - 1][1];
+  }
+  return null;
 }
 
 function main() {
@@ -183,6 +199,8 @@ function main() {
       const productId = product.id;
       if (!productId) throw new Error("no product id");
 
+      const staleUrls = args.refreshSamples ? (cdnCache[slug] ?? []) : [];
+      if (args.refreshSamples && !args.dryRun) delete cdnCache[slug];
       const sampleUrls = ensureCdnUrls(productId, slug, cdnCache, args.dryRun);
       const mockSlug = linkedMockSlug(slug);
       const mockUrl = mockSlug ? `https://uniprep2go.study/mock-exams/${mockSlug}` : null;
@@ -193,7 +211,7 @@ function main() {
         slug,
         sampleUrls,
         mockUrl,
-        sampleCaptions: SCREENSHOT_FAITHFUL.has(slug) ? [] : loadSoldSamples(slug),
+        sampleCaptions: deckSampleCaptions(slug),
       });
       const outPath = join(OUT_DIR, `${slug}.html`);
       writeFileSync(outPath, html);
@@ -209,6 +227,16 @@ function main() {
         stdio: "inherit",
       });
       execSync(`gumroad products publish --non-interactive -- "${perm}"`, { stdio: "inherit" });
+      if (staleUrls.length) {
+        const covers = (gumroadJson(["products", "view", productId]).product ?? {}).covers ?? [];
+        for (const cover of covers) {
+          if (staleUrls.includes(cover.original_url || cover.url)) {
+            execSync(`gumroad products covers remove --non-interactive --yes -- "${productId}" "${cover.id}"`, {
+              stdio: "inherit",
+            });
+          }
+        }
+      }
 
       catalog.products[slug] = {
         ...(catalog.products[slug] ?? { permalink: perm }),

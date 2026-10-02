@@ -54,20 +54,26 @@ const SCREENSHOT_FAITHFUL_SLUGS = new Set([
   "series-63-anki-deck",
 ]);
 
+/** A `/samples/` image is a capture of one specific card; its text must stay that card's text. */
+export function hasCardScreenshots(sampleCards: SampleCard[]): boolean {
+  return sampleCards.slice(0, 3).some((card) => card.imageUrl?.startsWith("/samples/"));
+}
+
 export function applySoldSamplesToDeck<
   T extends { slug: string; category: string; sampleCards: SampleCard[]; coverImage?: string },
 >(deck: T): T {
   if (LANGUAGE_EXAM_SLUGS.has(deck.slug) || SCREENSHOT_FAITHFUL_SLUGS.has(deck.slug)) return deck;
+  if (hasCardScreenshots(deck.sampleCards)) return deck;
   const picks = soldSamplesForSlug(deck.slug);
   if (picks.length < 3) return deck;
 
   const cover = deck.coverImage ?? `/covers/${deck.slug}.webp`;
   return {
     ...deck,
-    sampleCards: picks.map((pick, index) => ({
+    sampleCards: picks.map((pick) => ({
       question: pick.q,
       answer: pick.a,
-      imageUrl: deck.sampleCards[index]?.imageUrl || cover,
+      imageUrl: cover,
     })),
   };
 }

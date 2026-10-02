@@ -3,31 +3,31 @@
     "id": "series-63-readiness-check-s63-agent-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "Under the Uniform Securities Act framework tested on Series 63, may an agent generally represent more than one broker-dealer at the same time?",
+    "prompt": "Four people are involved in selling securities to residents of a state. Under the Uniform Securities Act, which one must register as an agent?",
     "options": [
       {
         "id": "a",
-        "text": "Generally no, unless the broker-dealers are affiliated or another specific exception/approval applies"
+        "text": "A broker-dealer receptionist who schedules client meetings and takes messages for registered reps"
       },
       {
         "id": "b",
-        "text": "Yes, always, with no notice to any firm or Administrator"
+        "text": "An issuer employee selling the issuer's stock in a private placement to institutional buyers"
       },
       {
         "id": "c",
-        "text": "Only if the agent also registers as an investment adviser representative in every state"
+        "text": "A corporate officer paid a bonus per share to sell the issuer's stock in a public offering"
       },
       {
         "id": "d",
-        "text": "Only if the agent exclusively sells insurance products"
+        "text": "A company director selling the issuer's shares to existing employees with no commission paid"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Dual registration with unaffiliated broker-dealers is generally restricted; affiliation or a narrow exception/approval is typically required.",
+    "correctOptionId": "c",
+    "explanation": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect purchases or sales of securities. An issuer's representative is excluded when selling exempt securities, in exempt transactions, or to existing employees, partners, or directors with no commission paid. Selling nonexempt stock to the public for per-share compensation makes the officer an agent.",
     "distractorExplanations": {
-      "b": "Silent dual association is not the general rule.",
-      "c": "IAR registration does not by itself authorize dual BD representation.",
-      "d": "Insurance-only activity is a different licensing path and does not answer the agent dual-BD rule."
+      "a": "Purely clerical staff who do not solicit or effect securities transactions are not agents under the Act.",
+      "b": "A private placement to institutional investors is an exempt transaction, so the issuer's employee is excluded from the agent definition.",
+      "d": "Sales to an issuer's existing employees with no commission paid fall within the exclusion for issuer representatives."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -36,31 +36,31 @@
     "id": "series-63-readiness-check-s63-agent-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "In Series 63 agent registration, how can exempt transactions affect agent status?",
+    "prompt": "A broker-dealer files Form U4 for a new agent with the state Administrator on March 2. No denial proceeding is started, and the Administrator sets no earlier date. Under the Uniform Securities Act, when does the agent's registration take effect?",
     "options": [
       {
         "id": "a",
-        "text": "Generally not unless the broker-dealers are affiliated or an exception/approval applies."
+        "text": "At noon on the 30th day after the application is filed"
       },
       {
         "id": "b",
-        "text": "An individual representing an issuer in certain exempt transactions may be excluded from agent definition"
+        "text": "Immediately on filing, subject to later denial by the Administrator"
       },
       {
         "id": "c",
-        "text": "Having a place of business in a state generally strengthens registration requirement for agent and firm."
+        "text": "At noon on the 15th day after the filing, if no deficiency letter is sent"
       },
       {
         "id": "d",
-        "text": "Agents must satisfy exam/qualification requirements unless waived or exempt under applicable rules."
+        "text": "At midnight on the 45th day after filing, matching the SEC adviser timeline"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "An individual representing an issuer in certain exempt transactions may be excluded from agent definition. Example: Private placement to institutional investors may affect agent registration.",
+    "correctOptionId": "a",
+    "explanation": "Under the Uniform Securities Act, a registration application becomes effective at noon on the 30th day after a complete filing, unless a denial proceeding is instituted or the Administrator orders an earlier effective date. Until then, the individual may not act as an agent in that state, and the agent's registration also depends on the sponsoring broker-dealer being registered.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “An individual representing an issuer in certain exempt transactions may be excluded from agent definition”.",
-      "c": "This is the answer to a different question (“In Series 63 agent registration, what if an agent has an office in the state?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “An individual representing an issuer in certain exempt transactions may be excluded from agent definition”."
+      "b": "Filing alone does not authorize activity; the applicant must wait for effectiveness before acting as an agent.",
+      "c": "Uses the wrong waiting period; the Act sets the 30th day, not the 15th, absent an earlier Administrator order.",
+      "d": "Forty-five days is the SEC's period to act on an investment adviser application, not the state agent effectiveness rule."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -69,31 +69,31 @@
     "id": "series-63-readiness-check-s63-agent-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "Which statement best applies to Are clerical employees agents in Series 63 agent registration?",
+    "prompt": "An agent resigns from Firm X and joins unaffiliated Firm Y, both registered in the same state. Under the Uniform Securities Act, who must promptly notify the Administrator of the change?",
     "options": [
       {
         "id": "a",
-        "text": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt."
+        "text": "Firm X, through Form U5; neither the agent nor Firm Y has a separate notice duty"
       },
       {
         "id": "b",
-        "text": "Dishonest or unethical practices can lead to denial, suspension, revocation, or sanctions."
+        "text": "The agent personally; the firms report the move on their next annual renewal"
       },
       {
         "id": "c",
-        "text": "Purely clerical or ministerial employees who do not solicit or effect securities transactions are generally not agents"
+        "text": "Firm Y, through a new Form U4; Firm X's duty ends when the agent resigns"
       },
       {
         "id": "d",
-        "text": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions."
+        "text": "The agent, Firm X, and Firm Y each have a duty to notify the Administrator"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Purely clerical or ministerial employees who do not solicit or effect securities transactions are generally not agents. Example: Receptionist scheduling meetings without securities discussion is not an agent.",
+    "correctOptionId": "d",
+    "explanation": "When an agent begins or ends association with a broker-dealer, the Uniform Securities Act requires both the agent and the broker-dealer to promptly notify the Administrator. In a firm change, that means the agent, the departing firm (which files Form U5), and the hiring firm (which files Form U4) each have a notice obligation.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 agent registration, when must an agent register in a state?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Purely clerical or ministerial employees who do not solicit or effect securities transactions are generally not agents”.",
-      "d": "This is the answer to a different question (“In standard Series 63 agent registration practice, which description correctly identifies an agent under the…”), not to this one."
+      "a": "Form U5 covers the departing firm, but the Act also places a notice duty on the agent and the hiring firm.",
+      "b": "Annual renewal is not notice; firm changes must be reported promptly, not deferred to year-end.",
+      "c": "The departing firm still must report the termination; its obligation does not end with the resignation."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -102,31 +102,31 @@
     "id": "series-63-readiness-check-s63-agent-004",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "When an agent’s association with a broker-dealer ends, what notice obligation is most accurate under Series 63 state registration practice?",
+    "prompt": "An agent with Firm A is offered part-time work selling municipal bonds for Firm B, an unaffiliated broker-dealer. Under the Uniform Securities Act, may the agent represent both firms at once?",
     "options": [
       {
         "id": "a",
-        "text": "Both the broker-dealer and the agent may have prompt notice/filing duties to the Administrator"
+        "text": "Yes, if both firms consent in writing and each files a separate Form U4"
       },
       {
         "id": "b",
-        "text": "Only the customer must notify the Administrator, and only within 24 hours of the change"
+        "text": "No, unless the firms are under common control or the Administrator permits it"
       },
       {
         "id": "c",
-        "text": "No filing is ever required if the agent moves directly to an affiliated bank or trust company"
+        "text": "Yes, because municipal bonds are exempt securities that need no agent registration"
       },
       {
         "id": "d",
-        "text": "Only FINRA Arbitration must be notified; the state Administrator is never told of terminations"
+        "text": "No, unless the agent first drops Firm A and waits 30 days before joining Firm B"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Termination of association typically triggers notice obligations (commonly discussed as Form U5-type processes) involving the firm and affecting the agent’s registration status with the Administrator.",
+    "correctOptionId": "b",
+    "explanation": "The Uniform Securities Act bars an individual from acting as an agent for more than one broker-dealer (or issuer) at the same time unless the firms are affiliated by direct or indirect common control or the Administrator permits it by rule or order. Firm consent alone does not satisfy the rule.",
     "distractorExplanations": {
-      "b": "Customers have no filing duty when an agent's association with a firm ends.",
-      "c": "Moving to an affiliate does not remove the prompt notice duty to the Administrator.",
-      "d": "The Administrator must be notified; FINRA arbitration is a dispute forum, not a registration notice."
+      "a": "Simultaneous association with unaffiliated firms is barred regardless of consent or separate U4 filings.",
+      "c": "The exempt-security exclusion covers issuer representatives; an agent selling munis for a broker-dealer must be registered.",
+      "d": "There is no 30-day waiting period between firms; the issue is simultaneous association with unaffiliated firms."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -135,31 +135,31 @@
     "id": "series-63-readiness-check-s63-agent-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "In Series 63 agent registration, what if an agent has an office in the state?",
+    "prompt": "A registered agent learns that the IRS has filed a federal tax lien against him for unpaid personal income taxes. What must happen with his Form U4?",
     "options": [
       {
         "id": "a",
-        "text": "Having a place of business in a state generally strengthens registration requirement for agent and firm"
+        "text": "Nothing, because personal tax matters are unrelated to securities business"
       },
       {
         "id": "b",
-        "text": "An agent’s registration obligation can depend on customer residence, solicitation, and whether a valid exclusion applies."
+        "text": "Disclose it at the next annual renewal on December 31"
       },
       {
         "id": "c",
-        "text": "Only after required registration is effective; filing an application alone is not enough."
+        "text": "Amend the U4 promptly, within 30 days of learning of the lien"
       },
       {
         "id": "d",
-        "text": "Dishonest or unethical practices can lead to denial, suspension, revocation, or sanctions."
+        "text": "Disclose it if the lien is still unsatisfied 12 months after filing"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Having a place of business in a state generally strengthens registration requirement for agent and firm. Example: Rep opens branch office in State A.",
+    "correctOptionId": "c",
+    "explanation": "Form U4 asks about unsatisfied judgments and liens, and the form must be kept current. FINRA's By-Laws require an amendment within 30 days after the registrant learns of the facts, and the Uniform Securities Act requires prompt correcting amendments when registration information becomes materially inaccurate. A tax lien is a reportable financial disclosure even though it is personal.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Having a place of business in a state generally strengthens registration requirement for agent and firm”.",
-      "c": "Not the best answer here; the right answer is “Having a place of business in a state generally strengthens registration requirement for agent and firm”.",
-      "d": "Not the best answer here; the right answer is “Having a place of business in a state generally strengthens registration requirement for agent and firm”."
+      "a": "Form U4 financial disclosure questions specifically ask about liens, so a personal tax lien is reportable.",
+      "b": "Annual renewal is not the amendment deadline; material changes must be reported within 30 days.",
+      "d": "Invents a 12-month waiting period; an unsatisfied lien is reportable as soon as the agent learns of it."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -168,31 +168,31 @@
     "id": "series-63-readiness-check-s63-agent-006",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "An unregistered administrative employee at a broker-dealer wants to cold-call residents to recommend specific stocks and open accounts. What is the Series 63 concern?",
+    "prompt": "An agent registered only in State A has a long-time client whose home is in State A. While on a three-week vacation in State B, the client calls to buy shares. The agent and firm have no office in State B and are not registered there. Under the Uniform Securities Act, may the agent accept the order?",
     "options": [
       {
         "id": "a",
-        "text": "Soliciting or recommending securities generally requires agent registration (unless a specific exclusion applies)"
+        "text": "Yes, because the client is an existing customer temporarily present in State B"
       },
       {
         "id": "b",
-        "text": "Administrative staff may solicit freely as long as they are paid only a salary and no commissions"
+        "text": "No, because the agent must be registered in the state where the client is physically located"
       },
       {
         "id": "c",
-        "text": "Cold-calling to recommend stocks is allowed without registration if orders are limited to odd lots"
+        "text": "Yes, if the agent files a notice with the State B Administrator within 10 days of the trade"
       },
       {
         "id": "d",
-        "text": "Registration is required only after the employee completes 50 solicitations in a calendar year"
+        "text": "No, unless the client returns to State A and resubmits the order from there"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Effecting or soliciting securities transactions for a BD is agent activity; clerical staff who solicit/recommend typically must be registered.",
+    "explanation": "The Uniform Securities Act excludes from registration a broker-dealer, and its agents, with no place of business in a state when they deal with an existing customer who is not a resident of that state, such as a client on vacation. The client's principal residence remains in State A, where the agent is registered, so a temporary visit to State B does not trigger State B registration.",
     "distractorExplanations": {
-      "b": "How the employee is paid does not matter; soliciting and recommending securities requires agent registration.",
-      "c": "Order size does not create an exclusion from agent registration.",
-      "d": "There is no 50-solicitation threshold; registration is required before soliciting."
+      "b": "Registration turns on the customer's residence and the firm's presence, not on where an existing client happens to be calling from.",
+      "c": "The Act has no post-trade notice filing for this situation; the existing-customer exclusion applies without any filing.",
+      "d": "Forcing the client home is unnecessary; the order may be accepted while the existing client is temporarily out of state."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -201,31 +201,31 @@
     "id": "series-63-readiness-check-s63-agent-007",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "In Series 63 agent registration, when must an agent register in a state?",
+    "prompt": "An agent's registration was withdrawn effective January 15, with no proceeding pending. In September of the same year, the Administrator uncovers unethical sales practices the agent committed while registered. Under the Uniform Securities Act, what may the Administrator do?",
     "options": [
       {
         "id": "a",
-        "text": "Generally not unless the broker-dealers are affiliated or an exception/approval applies."
+        "text": "Nothing, because the Administrator loses authority once a withdrawal takes effect"
       },
       {
         "id": "b",
-        "text": "An individual representing an issuer in securities transactions can be an agent unless an exclusion applies, such as certain exempt securities or exempt transactions."
+        "text": "Refer the matter to FINRA, because FINRA alone keeps jurisdiction over former registered agents"
       },
       {
         "id": "c",
-        "text": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt"
+        "text": "Wait until the agent applies to re-register, and then deny that new application"
       },
       {
         "id": "d",
-        "text": "Both broker-dealer and agent may have notice obligations to the Administrator when association terminates."
+        "text": "Start a revocation or suspension proceeding, since it is within 1 year of withdrawal"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt. Example: A rep soliciting residents of State B needs State B registration.",
+    "correctOptionId": "d",
+    "explanation": "Under the Uniform Securities Act, if no proceeding is pending when a withdrawal becomes effective, the Administrator may still institute a revocation or suspension proceeding within one year after the withdrawal took effect. September of the same year falls inside that window, so the Administrator can act on misconduct from the registration period.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt”.",
-      "b": "Not the best answer here; the right answer is “An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt”.",
-      "d": "Not the best answer here; the right answer is “An agent generally registers in each state where they represent a broker-dealer or issuer in transactions with residents, unless exempt”."
+      "a": "Withdrawal does not end authority immediately; the Act preserves a one-year window to start revocation or suspension.",
+      "b": "FINRA's 2-year retained jurisdiction is a separate SRO rule; the state Administrator has its own one-year window.",
+      "c": "The Administrator need not wait for a new application; it can proceed against the withdrawn registration within one year."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -234,31 +234,31 @@
     "id": "series-63-readiness-check-s63-agent-008",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-agent",
-    "prompt": "In standard Series 63 agent registration practice, which description correctly identifies an agent under the Uniform Securities Act?",
+    "prompt": "An agent leaves the securities industry in a state that participates in NASAA's Exam Validity Extension Program (EVEP) and may return in a few years. How can she keep her Series 63 qualification from lapsing?",
     "options": [
       {
         "id": "a",
-        "text": "Agents must satisfy exam/qualification requirements unless waived or exempt under applicable rules."
+        "text": "She cannot extend it; a Series 63 result lapses 2 years after her registration terminates"
       },
       {
         "id": "b",
-        "text": "Having a place of business in a state generally strengthens registration requirement for agent and firm."
+        "text": "Complete annual continuing education to extend exam validity for up to 5 years after leaving"
       },
       {
         "id": "c",
-        "text": "Administrative staff should not solicit, recommend, or effect securities transactions unless properly registered."
+        "text": "Keep paying her state agent renewal fee each December while she is not with a firm"
       },
       {
         "id": "d",
-        "text": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions"
+        "text": "Do nothing, because the EVEP keeps a passing Series 63 score valid for 10 years after leaving"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions. Example: A rep soliciting stock purchases for a BD is an agent.",
+    "correctOptionId": "b",
+    "explanation": "Without an extension, a Series 63 result generally lapses once the individual has been unregistered for 2 years. Under NASAA's EVEP, which mirrors FINRA's Maintaining Qualifications Program, an eligible person who terminates registration can extend exam validity for up to 5 years by completing annual continuing education, provided the state participates.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions”.",
-      "b": "This is the answer to a different question (“In Series 63 agent registration, what if an agent has an office in the state?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions”."
+      "a": "Ignores EVEP; the 2-year lapse is the default rule, but the program allows an extension in participating states.",
+      "c": "Agent registration requires association with a registered broker-dealer; paying fees without a sponsoring firm does not maintain it.",
+      "d": "Overstates the window: EVEP extends exam validity for up to 5 years, not 10, and it requires annual continuing education."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-AGENT). · Local QA repair (stems/distractors)"
@@ -267,31 +267,31 @@
     "id": "series-63-readiness-check-s63-bd-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "Does a vacationing existing customer usually trigger new state BD registration?",
+    "prompt": "Four parties effect securities transactions in State X. Absent an exemption, which one meets the Uniform Securities Act definition of a broker-dealer and must register in State X as one?",
     "options": [
       {
         "id": "a",
-        "text": "An existing customer temporarily in another state generally does not by itself make the BD register there, depending on facts and state law"
+        "text": "A registered agent who solicits State X residents on behalf of her employing firm"
       },
       {
         "id": "b",
-        "text": "Withdrawal becomes effective after a period unless proceedings or conditions delay effectiveness, and liability for prior acts can remain."
+        "text": "A manufacturing company that sells its own newly issued bonds directly to investors"
       },
       {
         "id": "c",
-        "text": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than retail residents."
+        "text": "A firm with a State X branch that executes trades for its retail brokerage clients"
       },
       {
         "id": "d",
-        "text": "Material changes generally require prompt amendment of registration filings."
+        "text": "A state-chartered trust company that trades securities for the trust accounts it manages"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "An existing customer temporarily in another state generally does not by itself make the BD register there, depending on facts and state law. Example: Customer travels to Florida and calls existing New York broker.",
+    "correctOptionId": "c",
+    "explanation": "Under USA §401, a broker-dealer is any person engaged in the business of effecting securities transactions for the accounts of others or for its own account. The definition excludes agents, issuers, and banks, savings institutions and trust companies, so the brokerage firm with a State X branch is the one that must register there as a broker-dealer.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “An existing customer temporarily in another state generally does not by itself make the BD register there, depending on facts and state law”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes the no-place-of-business institutional exclusion for broker-dealers as…”), not to this one.",
-      "d": "Not the best answer here; the right answer is “An existing customer temporarily in another state generally does not by itself make the BD register there, depending on facts and state law”."
+      "a": "Agents are expressly excluded from the broker-dealer definition; this individual registers as an agent of her firm, not as a broker-dealer.",
+      "b": "Issuers selling their own securities are excluded from the broker-dealer definition; the bond sale raises securities-registration questions, not BD registration.",
+      "d": "Banks, savings institutions and trust companies are excluded from the broker-dealer definition, so trading for its trust accounts does not make it a BD."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
@@ -300,31 +300,31 @@
     "id": "series-63-readiness-check-s63-bd-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "Which statement best describes a state’s books-and-records authority over a registered broker-dealer for Series 63 purposes?",
+    "prompt": "Keystone Securities is registered with the SEC and in State A, where its sole office is located. It has no place of business in State B, and its State B business is limited to trades with insurance companies, banks and other broker-dealers located there. What does the Uniform Securities Act require of Keystone in State B?",
     "options": [
       {
         "id": "a",
-        "text": "The state may require records consistent with federal standards and examine registered firms"
+        "text": "No broker-dealer registration, because it has no State B office and deals only with institutions"
       },
       {
         "id": "b",
-        "text": "States may never request records from any federally registered firm"
+        "text": "Broker-dealer registration, because it effects transactions with State B residents for profit"
       },
       {
         "id": "c",
-        "text": "Only issuers, not broker-dealers, keep books subject to state exam"
+        "text": "A notice filing and fee, because federal registration replaces state broker-dealer registration"
       },
       {
         "id": "d",
-        "text": "States may demand records that conflict with and override all SEC record rules without limit"
+        "text": "Broker-dealer registration, unless each State B trade was unsolicited by Keystone's agents"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Administrators can require and examine BD records, generally aligned with federal recordkeeping frameworks rather than inventing wholly conflicting regimes.",
+    "explanation": "USA §401 excludes from the broker-dealer definition a firm that has no place of business in the state and effects transactions there exclusively with issuers, other broker-dealers, or institutional investors such as banks and insurance companies. Keystone is therefore not a broker-dealer in State B; taking on a single retail client there would change that.",
     "distractorExplanations": {
-      "b": "Federal registration does not bar all state record/exam authority for state-registered activity.",
-      "c": "Broker-dealers are primary recordkeepers for their business.",
-      "d": "State power is real but not an unbounded override of federal record rules."
+      "b": "Dealing with State B persons is not enough when the firm has no office there and its counterparties are all issuers, broker-dealers or institutions.",
+      "c": "Notice filing applies to federal covered advisers and federal covered securities; SEC registration does not replace state broker-dealer registration.",
+      "d": "Whether orders are solicited is not the test for this exclusion; the test is no in-state office plus institutional-only counterparties."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
@@ -333,31 +333,31 @@
     "id": "series-63-readiness-check-s63-bd-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "In Series 63 broker-dealer registration, when must a broker-dealer register in a state?",
+    "prompt": "Harbor Brokerage has no office in Florida and is not registered there. A long-standing New Jersey client is spending three winter months at her Florida condo and phones Harbor to sell shares in her account. Under the Uniform Securities Act, what is Harbor's registration position in Florida?",
     "options": [
       {
         "id": "a",
-        "text": "A broker-dealer generally must never register in a state when it has an office there or effects transactions"
+        "text": "Harbor must register in Florida before it may execute any order the client places from there"
       },
       {
         "id": "b",
-        "text": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers."
+        "text": "Harbor may execute the order but must file for Florida registration within 30 days afterward"
       },
       {
         "id": "c",
-        "text": "A broker-dealer generally must register in a state when it has an office there or effects transactions with residents of that state, unless an exclusion or exemption applies."
+        "text": "Harbor needs Florida registration unless the shares are a federal covered security on an exchange"
       },
       {
         "id": "d",
-        "text": "Withdrawal becomes effective after a period unless proceedings or conditions delay effectiveness, and liability for prior acts can remain."
+        "text": "Harbor need not register, because the client is an existing customer only temporarily in Florida"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "A broker-dealer generally must register in a state when it has an office there or effects transactions with residents of that state, unless an exclusion or exemption applies. Example: A firm with retail customers in State A generally needs State A registration.",
+    "correctOptionId": "d",
+    "explanation": "Under the USA, a broker-dealer with no place of business in a state does not have to register there to deal with an existing customer who resides elsewhere and is only temporarily present in the state. The client's residence stays in New Jersey, so Harbor may handle her order without Florida registration; a client who moved to Florida permanently would require it.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A broker-dealer generally must register in a state when it has an office there or effects transactions with residents of that state, unless…”.",
-      "b": "This is the answer to a different question (“Can states impose financial requirements on broker-dealers ?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “A broker-dealer generally must register in a state when it has an office there or effects transactions with residents of that state, unless…”."
+      "a": "This ignores the existing-customer exclusion; a firm with no in-state office may keep serving a client who is only temporarily present.",
+      "b": "There is no after-the-fact 30-day filing window; either the exclusion applies and no registration is needed, or registration is required first.",
+      "c": "Federal covered status exempts a security from state registration; it says nothing about whether the broker-dealer itself must register."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
@@ -366,31 +366,31 @@
     "id": "series-63-readiness-check-s63-bd-004",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "Which statement correctly describes successor registration as tested in Series 63 broker-dealer registration?",
+    "prompt": "Cedar Point Securities files a complete Form BD through CRD to register in State X. No denial proceeding is started and the Administrator sets no earlier date. Two months after approval, the firm moves its main office. Which statement is accurate under the Uniform Securities Act?",
     "options": [
       {
         "id": "a",
-        "text": "Registration generally expires at year-end unless renewed."
+        "text": "Registration took effect at midnight on the 15th day after filing; the move is reported at renewal"
       },
       {
         "id": "b",
-        "text": "For statutory grounds such as false filings, willful violations, insolvency, injunctions, dishonest practices, or lack of qualification, if in public interest."
+        "text": "Registration took effect at noon on the 30th day after filing; the move requires a prompt Form BD amendment"
       },
       {
         "id": "c",
-        "text": "A broker-dealer is a person engaged in the business of effecting securities transactions for the account of others or for its own account."
+        "text": "Registration took effect at noon on the 30th day after filing; the move is reported at year-end renewal"
       },
       {
         "id": "d",
-        "text": "A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to filing requirements."
+        "text": "Registration took effect when the Administrator signed a written approval order; the move requires a new Form BD"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to filing requirements. Example: BD changes legal form and files as successor.",
+    "correctOptionId": "b",
+    "explanation": "Under the USA, a broker-dealer registration becomes effective at noon on the 30th day after a complete application is filed, unless a proceeding is pending or the Administrator sets an earlier date. A registrant must promptly amend Form BD when filed information, such as its main office address, becomes inaccurate; registrations then expire each December 31 unless renewed.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to…”.",
-      "b": "Not the best answer here; the right answer is “A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to…”.",
-      "c": "Not the best answer here; the right answer is “A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to…”."
+      "a": "The effective time is noon on the 30th day, not midnight on the 15th, and material changes cannot wait for annual renewal.",
+      "c": "The effective date is right, but a material change such as a new main office must be reported by prompt amendment, not held until renewal.",
+      "d": "Registration becomes effective automatically by lapse of time; no signed approval order is needed, and a change is filed as an amendment, not a new Form BD."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
@@ -399,31 +399,31 @@
     "id": "series-63-readiness-check-s63-bd-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "May states impose net capital or other financial responsibility requirements on broker-dealers under the Series 63 framework?",
+    "prompt": "State X's Administrator proposes a rule requiring every broker-dealer registered in the state, including SEC-registered firms, to keep net capital 25% above the SEC minimum and to post a surety bond. How does federal law affect the rule as applied to SEC-registered firms?",
     "options": [
       {
         "id": "a",
-        "text": "Yes, but for many federally regulated BDs state requirements cannot exceed applicable federal limitations"
+        "text": "It is valid, because each state sets its own financial standards for firms registered there"
       },
       {
         "id": "b",
-        "text": "Never, because only the MSRB sets BD capital rules"
+        "text": "It is valid for firms with a State X office but preempted for firms with no office there"
       },
       {
         "id": "c",
-        "text": "Yes, and states may always impose higher capital than federal rules with no limit"
+        "text": "It is preempted, because NSMIA bars state capital and bonding rules beyond SEC requirements"
       },
       {
         "id": "d",
-        "text": "Only if the BD sells insurance in that state"
+        "text": "It is preempted unless the Administrator first holds a public hearing and documents a local need"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "States can address financial responsibility, but federal law constrains how far states may go for broker-dealers already subject to federal capital standards.",
+    "correctOptionId": "c",
+    "explanation": "The National Securities Markets Improvement Act of 1996 (Exchange Act §15(i)) bars states from imposing capital, custody, margin, financial responsibility, books-and-records, bonding or reporting requirements on SEC-registered broker-dealers that differ from or add to SEC rules. State X may still require registration, collect fees and enforce antifraud provisions, but this rule cannot apply to those firms.",
     "distractorExplanations": {
-      "b": "MSRB is not the sole capital-rule source for all BDs.",
-      "c": "Federal ceilings/limits matter; states are not unbounded.",
-      "d": "Insurance licensing is separate from BD financial responsibility rules."
+      "a": "Before NSMIA states set their own financial standards, but since 1996 they may not exceed SEC capital and bonding rules for SEC-registered firms.",
+      "b": "The NSMIA limit turns on SEC registration, not on whether the firm has an office in the state, so an in-state office does not revive the rule.",
+      "d": "No hearing or local-need finding lets a state override NSMIA; the preemption applies regardless of the state's rulemaking procedure."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
@@ -432,31 +432,31 @@
     "id": "series-63-readiness-check-s63-bd-006",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "Which statement correctly describes the no-place-of-business institutional exclusion for broker-dealers as tested in Series 63 broker-dealer registration?",
+    "prompt": "An agent at Pinecrest Securities churned several elderly clients' accounts for a year. Pinecrest had no written supervisory procedures and never reviewed the agent's trading activity. Besides acting against the agent, what may the Administrator do?",
     "options": [
       {
         "id": "a",
-        "text": "States can require records consistent with federal law and examine registered firms."
+        "text": "Act against Pinecrest's registration for failing to reasonably supervise its agent"
       },
       {
         "id": "b",
-        "text": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than retail residents."
+        "text": "Nothing against Pinecrest, because the firm did not know about the agent's churning"
       },
       {
         "id": "c",
-        "text": "A successor firm may continue predecessor registration when succession is due to merger, consolidation, or similar continuity, subject to filing requirements."
+        "text": "Act against Pinecrest once FINRA has first found the firm liable for the churning"
       },
       {
         "id": "d",
-        "text": "A broker-dealer is a person engaged in the business of effecting securities transactions for the account of others or for its own account."
+        "text": "Fine Pinecrest, but leave its registration intact because the agent acted alone"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than retail residents. Example: Transactions with banks or other BDs may not trigger state BD registration.",
+    "correctOptionId": "a",
+    "explanation": "USA §204 lets the Administrator deny, suspend or revoke a broker-dealer's registration if the firm failed reasonably to supervise its agents. FINRA Rule 3110 likewise requires written supervisory procedures and review of agent activity. Lack of knowledge is no defense when the firm had no system that would have detected a year of churning.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than…”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes successor registration as tested in Series 63 broker-dealer registration?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “A broker-dealer with no place of business in a state may be excluded for transactions with specified institutional investors rather than…”."
+      "b": "Ignorance is not a defense; failure to supervise is itself a ground for action, and having no procedures is why the firm did not know.",
+      "c": "The Administrator acts under state law independently of FINRA; a prior FINRA finding is not a precondition to a state order.",
+      "d": "Failure to supervise supports suspension or revocation of the firm's registration; an agent acting alone does not shield a firm with no supervisory system."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
@@ -465,31 +465,31 @@
     "id": "series-63-readiness-check-s63-bd-007",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-bd",
-    "prompt": "On the Series 63, can states impose financial requirements on broker-dealers ? Choose the best answer.",
+    "prompt": "First County Bank leases lobby space to Meridian Brokerage, whose registered agents sell mutual funds and annuities to bank customers. Under NASAA's rules for sales of securities at financial institutions, which arrangement complies?",
     "options": [
       {
         "id": "a",
-        "text": "Material changes generally require prompt amendment of registration filings."
+        "text": "Meridian's agents work at the teller stations, provided their name badges show the Meridian name"
       },
       {
         "id": "b",
-        "text": "Registration generally expires at year-end unless renewed."
+        "text": "Agents work apart from the tellers and disclose that products are not FDIC insured and can lose value"
       },
       {
         "id": "c",
-        "text": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers."
+        "text": "Tellers take fund orders from depositors and forward them to Meridian's agents for execution"
       },
       {
         "id": "d",
-        "text": "Some model rules permit limited transactions with existing Canadian clients temporarily in a state, subject to conditions."
+        "text": "Tellers earn a commission on each fund sale that results from a depositor they referred to Meridian"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers. Example: Net capital rules interact with state limits.",
+    "correctOptionId": "b",
+    "explanation": "NASAA's 1998 Rules for Sales of Securities at Financial Institutions require broker-dealer services to be conducted in an area physically separate from routine deposit-taking. Customers must be told the products are not FDIC insured, are not deposits or obligations of the bank, are not bank-guaranteed, and are subject to investment risk, including possible loss of principal.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers”.",
-      "b": "Not the best answer here; the right answer is “States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers”.",
-      "d": "Not the best answer here; the right answer is “States may impose requirements, but cannot exceed certain federal limitations for federally regulated broker-dealers”."
+      "a": "Selling at teller stations breaks the physical-separation requirement; a name badge does not cure customer confusion between deposits and securities.",
+      "c": "Accepting securities orders is agent activity; unregistered tellers may not take orders even if a registered agent later executes them.",
+      "d": "Unregistered bank employees may not receive transaction-based pay; a referral may earn at most a nominal fixed fee not tied to a sale."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-BD). · Local QA repair (stems/distractors)"
@@ -498,31 +498,31 @@
     "id": "series-63-readiness-check-s63-ethics-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement correctly describes a fictitious account issue as tested in Series 63 ethics and sales practices?",
+    "prompt": "A customer phones her agent: \"Buy 300 shares of XYZ for me today, and use your judgment on the price.\" She has never signed a discretionary authorization. What may the agent do under the NASAA Statement of Policy on dishonest or unethical practices?",
     "options": [
       {
         "id": "a",
-        "text": "Backdating creates false records and can conceal violations."
+        "text": "Decline the order until the customer signs and returns a written discretionary authorization form"
       },
       {
         "id": "b",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "Enter the order today, choosing the time and price, without written discretionary authority"
       },
       {
         "id": "c",
-        "text": "Misstating qualifications, registrations, certifications, or experience misleads customers."
+        "text": "Buy XYZ or a similar stock in the same industry if XYZ looks overpriced during the day"
       },
       {
         "id": "d",
-        "text": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited"
+        "text": "Enter the order now and obtain her written authorization within 10 business days"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited. Example: Opening account under relative’s name to conceal trading.",
+    "correctOptionId": "b",
+    "explanation": "The Statement of Policy bars exercising discretion without prior written authority, but discretion that relates solely to the time and/or price of execution is excluded. The customer chose the security, the action and the quantity, so the agent may pick the timing and price. Under FINRA Rule 3260 that time-and-price authority lapses at the end of the business day it was given.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 ethics and sales practices, why is backdating documents unethical?”), not to this one.",
-      "b": "This is the answer to a different question (“Which statement best applies to Can agents lend money to customers in Series 63 ethics and sales practices?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Creating or using false account names or nominee accounts to hide ownership or activity is prohibited”."
+      "a": "Over-applies the written-authority rule; time-and-price discretion is carved out, so no signed discretionary form is needed for this order.",
+      "c": "Choosing a different security is true discretion over the asset itself, which requires prior written authority the customer never gave.",
+      "d": "Borrows the IA model rule's 10-business-day window for oral discretion; it is not needed here and does not apply to a broker-dealer agent."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -531,31 +531,31 @@
     "id": "series-63-readiness-check-s63-ethics-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "In Series 63 ethics and sales practices, when is sharing in customer accounts problematic?",
+    "prompt": "Over six months, an agent turned over a retired customer's $150,000 conservative income account about eight times. Every trade was solicited and approved by the customer, and commissions equaled roughly 18% of the account. Which violation does this pattern most clearly indicate?",
     "options": [
       {
         "id": "a",
-        "text": "Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed"
+        "text": "Unauthorized trading, because solicited trades need written discretionary authority"
       },
       {
         "id": "b",
-        "text": "Sharing gains/losses is restricted and usually forbids firm approval and proportional contribution, if allowed"
+        "text": "Front-running, because the agent placed firm orders ahead of the customer's orders"
       },
       {
         "id": "c",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "Market manipulation, because the volume of trades moved the prices of the securities"
       },
       {
         "id": "d",
-        "text": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits."
+        "text": "Churning, because trading was excessive in size and frequency for this account"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed. Example: Rep splits profits with customer without approval.",
+    "correctOptionId": "d",
+    "explanation": "Churning is inducing trading that is excessive in size or frequency in view of the customer's financial resources and the character of the account. High turnover and commissions consuming about 18% of a conservative retiree's account are classic signs, and customer approval of each solicited trade does not cure it.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed”.",
-      "c": "This is the answer to a different question (“In Series 63 ethics and sales practices, why is misuse of customer funds severe?”), not to this one.",
-      "d": "This is the answer to a different question (“Which statement correctly describes a Ponzi scheme as tested in Series 63 ethics and sales practices?”), not to this one."
+      "a": "Confuses churning with unauthorized trading; the customer approved each solicited trade, so no discretionary authority was exercised.",
+      "b": "Front-running means trading ahead of a customer's block order to profit from it; nothing in the facts shows firm orders placed first.",
+      "c": "Manipulation requires trading designed to create false price or volume signals; trades in one retail account are not shown to move prices."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -564,31 +564,31 @@
     "id": "series-63-readiness-check-s63-ethics-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "In Series 63 ethics and sales practices, what makes a recommendation unsuitable?",
+    "prompt": "A 72-year-old widow tells an agent she lives on her $200,000 account, has no other savings and wants low risk. The agent recommends putting 60% of it into an illiquid non-traded REIT because it pays a 7% distribution. What is the agent's primary violation?",
     "options": [
       {
         "id": "a",
-        "text": "Exploiting or failing to escalate suspected exploitation of seniors/vulnerable adults can violate rules and model acts."
+        "text": "Recommending a security without reasonable grounds to believe it suits her profile"
       },
       {
         "id": "b",
-        "text": "It fails to match customer objectives, risk tolerance, financial situation, needs, and other profile facts"
+        "text": "Failing to obtain her written discretionary authority before recommending the REIT"
       },
       {
         "id": "c",
-        "text": "Trading ahead of customer orders or recommendations to benefit from expected price movement."
+        "text": "Quoting a distribution rate before the REIT's prospectus had been delivered to her"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "Selling a security that is not listed on any national securities exchange to a retiree"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "It fails to match customer objectives, risk tolerance, financial situation, needs, and other profile facts. Example: Speculative penny stock for retired income client is unsuitable.",
+    "correctOptionId": "a",
+    "explanation": "The NASAA Statement of Policy, FINRA Rule 2111 and Regulation Best Interest require reasonable grounds to believe a recommendation fits the customer's age, income needs, liquidity, risk tolerance and objectives. Concentrating a low-risk retiree's only savings in an illiquid, speculative product fails that test regardless of its yield.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “It fails to match customer objectives, risk tolerance, financial situation, needs, and other profile facts”.",
-      "c": "Not the best answer here; the right answer is “It fails to match customer objectives, risk tolerance, financial situation, needs, and other profile facts”.",
-      "d": "This is the answer to a different question (“Which statement best applies to Can agents lend money to customers in Series 63 ethics and sales practices?”), not to this one."
+      "b": "Discretionary authority matters only when the agent trades without the customer's approval; a recommendation she accepts needs none.",
+      "c": "Prospectus timing is a disclosure issue; even with a prospectus in hand, the core problem is that the REIT does not fit her profile.",
+      "d": "Non-listed securities are lawful to sell; being unlisted is not a violation unless the product is unsuitable, as it is here."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -597,31 +597,31 @@
     "id": "series-63-readiness-check-s63-ethics-004",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "In Series 63 ethics and sales practices, what should agents do with conflicts?",
+    "prompt": "An agent needs a $40,000 loan for a home renovation. The agent's firm has written procedures on customer loans, and the agent's sole connection to each customer below is the brokerage account. From which customer may the agent borrow?",
     "options": [
       {
         "id": "a",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "A wealthy retiree who signs a promissory note at a market interest rate"
       },
       {
         "id": "b",
-        "text": "Spreading false or unverified rumors to influence trading is prohibited."
+        "text": "A long-time client who volunteers the loan and confirms it in a signed letter"
       },
       {
         "id": "c",
-        "text": "Disclose, mitigate, avoid, or obtain required approval depending on conflict and rule"
+        "text": "A customer that is a bank, lending on its ordinary commercial loan terms"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "A discretionary-account client, provided the loan is repaid within 30 days"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Disclose, mitigate, avoid, or obtain required approval depending on conflict and rule. Example: Higher payout product conflict must be addressed.",
+    "explanation": "Borrowing from customers is an unethical practice except in narrow categories. A financial institution in the business of lending is a permitted lender under FINRA Rule 3240 (and under NASAA's adviser conduct model rule), provided the firm's written procedures allow it. Individual customers whose only tie to the agent is the account fall outside every permitted category.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 ethics and sales practices, why is misuse of customer funds severe?”), not to this one.",
-      "b": "This is the answer to a different question (“Which statement best applies to Can agents spread market rumors in Series 63 ethics and sales practices?”), not to this one.",
-      "d": "This is the answer to a different question (“Which statement best applies to Can agents lend money to customers in Series 63 ethics and sales practices?”), not to this one."
+      "a": "A market rate and a promissory note do not change the category; an individual customer with no outside relationship is not a permitted lender.",
+      "b": "Customer willingness and a signed letter do not create an exception; the conflict of borrowing from an account-only customer remains.",
+      "d": "Discretionary authority makes the conflict worse, and a short repayment period is not one of the recognized lender exceptions."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -630,31 +630,31 @@
     "id": "series-63-readiness-check-s63-ethics-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement correctly describes a fictitious account issue as tested in Series 63 ethics and sales practices? (applied scenario 2)?",
+    "prompt": "A customer invites her agent to share in the profits and losses of her trading account, and the agent will contribute 25% of the money in it. Which arrangement is permissible?",
     "options": [
       {
         "id": "a",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "The agent shares 50% of gains and losses once the customer gives verbal approval by phone"
       },
       {
         "id": "b",
-        "text": "Failing to state a material fact can make other statements misleading, creating antifraud liability."
+        "text": "The agent takes 25% of gains while the customer absorbs every loss, with firm approval"
       },
       {
         "id": "c",
-        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions."
+        "text": "The agent shares 25% of gains and losses after telling the branch manager orally"
       },
       {
         "id": "d",
-        "text": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited"
+        "text": "The agent shares 25% of gains and losses with prior written consent of customer and firm"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Creating or using false account names or nominee accounts to hide ownership or activity is prohibited. Example: Opening account under relative’s name to conceal trading.",
+    "explanation": "Sharing in a customer account requires prior written authorization from the customer and from the employing firm, and the agent's share of gains and losses must be in proportion to the agent's contribution (FINRA Rule 2150; NASAA treats unauthorized sharing as unethical). Accounts of immediate family are excepted from the proportionality limit.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 ethics and sales practices, why is misuse of customer funds severe?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Creating or using false account names or nominee accounts to hide ownership or activity is prohibited”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes churning as tested in Series 63 ethics and sales practices?”), not to this one."
+      "a": "Verbal approval is not enough, and a 50% share exceeds the agent's 25% contribution, breaking the proportionality requirement.",
+      "b": "Taking gains without bearing losses is not proportional sharing; it amounts to profiting from the account at the customer's sole risk.",
+      "c": "The share is proportional, but oral notice to a manager is not the prior written authorization required from both firm and customer."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -663,31 +663,31 @@
     "id": "series-63-readiness-check-s63-ethics-006",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement correctly describes misrepresentation as tested in Series 63 ethics and sales practices?",
+    "prompt": "To calm a nervous customer, an agent writes: \"If ABC is below your purchase price in 12 months, I will personally reimburse your loss.\" ABC rises 30% and no payment is ever made. How is the agent's conduct treated under the NASAA Statement of Policy?",
     "options": [
       {
         "id": "a",
-        "text": "Making false or misleading statements about securities, risks, returns, registration, or qualifications"
+        "text": "Permitted, because the promise was put in writing and its terms were made clear to the customer"
       },
       {
         "id": "b",
-        "text": "Borrowing from customers is generally prohibited unless narrow conditions and firm procedures allow it."
+        "text": "Unethical, because guaranteeing a customer against loss is prohibited even if nothing is paid"
       },
       {
         "id": "c",
-        "text": "Participating in securities transactions outside the broker-dealer without required notice and approval."
+        "text": "Permitted, because the stock rose and the customer suffered no loss from the promise"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "Unethical, but curable if the agent's firm countersigns the written promise in advance"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Making false or misleading statements about securities, risks, returns, registration, or qualifications. Example: Claiming a security is “state approved” because registered is misleading.",
+    "correctOptionId": "b",
+    "explanation": "Guaranteeing a customer against loss in a securities account is a listed dishonest or unethical practice. The violation is the promise itself, so a later gain, written terms or a payment that never happens do not cure it. This differs from a security that carries an issuer or third-party guarantee, such as a guaranteed bond.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Making false or misleading statements about securities, risks, returns, registration, or qualifications”.",
-      "c": "Not the best answer here; the right answer is “Making false or misleading statements about securities, risks, returns, registration, or qualifications”.",
-      "d": "This is the answer to a different question (“Which statement best applies to Can agents lend money to customers in Series 63 ethics and sales practices?”), not to this one."
+      "a": "Writing the promise down documents the violation rather than curing it; the guarantee is prohibited however it is delivered.",
+      "c": "The outcome of the trade is irrelevant; the unethical act was making the guarantee, which was complete when it was given.",
+      "d": "Firm sign-off does not make a guarantee against loss acceptable; supervisors cannot authorize a prohibited practice."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -696,31 +696,31 @@
     "id": "series-63-readiness-check-s63-ethics-007",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement correctly describes a material fact as tested in Series 63 ethics and sales practices?",
+    "prompt": "A friend asks an agent to sell interests in the friend's private real estate LLC to several of the agent's customers for a 6% fee. The agent's broker-dealer knows nothing about it. What must happen before the agent participates?",
     "options": [
       {
         "id": "a",
-        "text": "Fraud includes intentional or reckless deception, misstatements, omissions, or schemes in connection with securities transactions or advice."
+        "text": "The agent gives the firm prior written notice, and the firm approves and records the sales"
       },
       {
         "id": "b",
-        "text": "A fact is material if a reasonable investor would consider it important in making an investment decision"
+        "text": "The agent tells customers the firm is not involved and collects their signed acknowledgments"
       },
       {
         "id": "c",
-        "text": "Charging unreasonable compensation in securities transactions is dishonest or unethical."
+        "text": "The agent registers the LLC interests in the state, after which notice to the firm is unneeded"
       },
       {
         "id": "d",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions."
+        "text": "The agent notifies the firm in writing within 30 days after the first sale has closed"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "A fact is material if a reasonable investor would consider it important in making an investment decision. Example: Issuer bankruptcy risk is material to a bond buyer.",
+    "correctOptionId": "a",
+    "explanation": "Effecting securities transactions not recorded on the firm's books without the firm's prior written authorization is unethical under the NASAA Statement of Policy (selling away). FINRA Rule 3280 requires prior written notice; for a paid transaction the firm must approve or disapprove in writing and, if approved, record and supervise it as its own.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement best describes securities fraud as tested in Series 63 ethics and sales practices?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “A fact is material if a reasonable investor would consider it important in making an investment decision”.",
-      "d": "This is the answer to a different question (“Which statement best applies to Can agents lend money to customers in Series 63 ethics and sales practices?”), not to this one."
+      "b": "Customer acknowledgments do not replace the firm's prior written authorization; disclaiming the firm is the essence of selling away.",
+      "c": "Registering the securities addresses the issuer's offering, not the agent's duty to obtain firm approval for outside sales.",
+      "d": "Notice must come before participation; telling the firm after sales close is still an unapproved private securities transaction."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -729,31 +729,31 @@
     "id": "series-63-readiness-check-s63-ethics-008",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement best applies to Can agents lend money to customers in Series 63 ethics and sales practices?",
+    "prompt": "A state-registered investment adviser will begin an arrangement that gives it custody of client funds and securities. Under the NASAA custody model rule, which set of steps is required?",
     "options": [
       {
         "id": "a",
-        "text": "Lending to customers is generally restricted and forbids compliance with firm and regulatory exceptions"
+        "text": "Keep client assets in the adviser's own account and send clients annual statements"
       },
       {
         "id": "b",
-        "text": "Trading or tipping while in possession of material nonpublic information."
+        "text": "Notify the Administrator within 90 days and have each client sign a custody waiver"
       },
       {
         "id": "c",
-        "text": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions"
+        "text": "Notify the Administrator on Form ADV, use a qualified custodian, ensure quarterly statements"
       },
       {
         "id": "d",
-        "text": "Fraud includes intentional or reckless deception, misstatements, omissions, or schemes in connection with securities transactions or advice."
+        "text": "Use a qualified custodian and make sure each client receives an account statement once a year"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions. Example: Rep cannot lend money so customer can meet margin call without approval.",
+    "explanation": "Model Rule 102(e)(1)-1 requires an adviser with custody to notify the Administrator promptly on Form ADV, keep client assets with a qualified custodian in segregated client accounts, tell clients where assets are held, and have a reasonable basis to believe the custodian sends account statements at least quarterly, with an annual surprise exam by an independent CPA.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions”.",
-      "b": "Not the best answer here; the right answer is “Lending to customers is generally restricted and requires compliance with firm and regulatory exceptions”.",
-      "d": "This is the answer to a different question (“Which statement best describes securities fraud as tested in Series 63 ethics and sales practices?”), not to this one."
+      "a": "Holding client assets in the adviser's own account is commingling, and annual statements fall short of the quarterly requirement.",
+      "b": "Clients cannot waive the custody safeguards, and the rule calls for prompt Form ADV notice rather than a 90-day window.",
+      "d": "Uses the right custodian but the wrong frequency; the rule requires account statements at least quarterly, not yearly."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -762,31 +762,31 @@
     "id": "series-63-readiness-check-s63-ethics-009",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement best applies to Can an agent guarantee against loss in Series 63 ethics and sales practices?",
+    "prompt": "A customer plans to invest $48,000 in a fund family whose sales charge drops at $50,000. The agent instead recommends $24,000 in each of two different fund families and never mentions the discount level. Which prohibited practice does this describe?",
     "options": [
       {
         "id": "a",
-        "text": "Spreading false or unverified rumors to influence trading is prohibited."
+        "text": "Switching, because the customer redeems shares of one fund to buy another family"
       },
       {
         "id": "b",
-        "text": "They enable unauthorized activity and inaccurate records."
+        "text": "Excessive 12b-1 fees, because two fund families charge more distribution expenses"
       },
       {
         "id": "c",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles."
+        "text": "Unauthorized trading, because the customer did not sign a letter of intent form"
       },
       {
         "id": "d",
-        "text": "No"
+        "text": "Breakpoint selling, because splitting the order avoids a reduced sales charge"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "No. Agents generally cannot guarantee customers against market losses. Example: “I’ll make you whole if it falls” is prohibited.",
+    "explanation": "The NASAA Statement of Policy on investment company shares bars recommending purchases just below, or split around, a breakpoint so the customer pays a higher sales charge, and failing to disclose breakpoints, rights of accumulation and letters of intent. A letter of intent lets the customer reach the $50,000 level within 13 months.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement best applies to Can agents spread market rumors in Series 63 ethics and sales practices?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “No”.",
-      "c": "This is the answer to a different question (“In Series 63 ethics and sales practices, why is misuse of customer funds severe?”), not to this one."
+      "a": "Switching involves selling existing fund shares to buy another fund; this customer is making a new purchase with fresh money.",
+      "b": "The issue is the forgone breakpoint discount on the front-end load, not the size of ongoing 12b-1 distribution fees.",
+      "c": "A letter of intent is an optional discount tool the agent should have disclosed; its absence does not make the trades unauthorized."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -795,31 +795,31 @@
     "id": "series-63-readiness-check-s63-ethics-010",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "In Series 63 ethics and sales practices, why is backdating documents unethical?",
+    "prompt": "An agent pitches a regional bank's bonds, accurately citing their 6% coupon and the A rating assigned two years ago. The agent knows the issuer disclosed this week a regulatory investigation and a rating review for downgrade, but says nothing. How does USA Section 101 treat this pitch?",
     "options": [
       {
         "id": "a",
-        "text": "Backdating creates false records and can conceal violations"
+        "text": "Fraudulent, because omitting a material fact made the true statements misleading"
       },
       {
         "id": "b",
-        "text": "Exploiting or failing to escalate suspected exploitation of seniors/vulnerable adults can violate rules and model acts."
+        "text": "Permissible, because each statement the agent actually made was factually accurate"
       },
       {
         "id": "c",
-        "text": "Outside activities can create conflicts, supervision gaps, and customer confusion."
+        "text": "Permissible, because an agent has no duty to repeat news the issuer made public"
       },
       {
         "id": "d",
-        "text": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits."
+        "text": "Fraudulent when the bonds later fall in price, and lawful if they hold their value"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Backdating creates false records and can conceal violations. Example: Changing date on disclosure after complaint.",
+    "explanation": "Section 101 makes it unlawful, in connection with the offer or sale of a security, to omit a material fact necessary to make the statements made not misleading. A pending investigation and downgrade review would matter to a reasonable investor, so a pitch of accurate but stale positives is a misleading half-truth.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Backdating creates false records and can conceal violations”.",
-      "c": "Not the best answer here; the right answer is “Backdating creates false records and can conceal violations”.",
-      "d": "This is the answer to a different question (“Which statement correctly describes a Ponzi scheme as tested in Series 63 ethics and sales practices?”), not to this one."
+      "b": "Literal accuracy is not a defense; selective true statements that leave out a material fact are a misleading omission.",
+      "c": "Public availability does not excuse leaving it out of a sales pitch that relies on an outdated rating to persuade the customer.",
+      "d": "Antifraud liability turns on the misleading pitch, not the later price; a fraud violation exists whether or not the bonds decline."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -828,31 +828,31 @@
     "id": "series-63-readiness-check-s63-ethics-011",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement correctly describes a Ponzi scheme as tested in Series 63 ethics and sales practices?",
+    "prompt": "A qualified individual at a broker-dealer reasonably believes an 80-year-old customer's new caregiver is trying to drain her account, and the firm delays a requested disbursement. Under the NASAA Model Act to Protect Vulnerable Adults from Financial Exploitation, how long may that delay last?",
     "options": [
       {
         "id": "a",
-        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions."
+        "text": "5 business days, after which the funds must be released unless a court orders more"
       },
       {
         "id": "b",
-        "text": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits"
+        "text": "10 business days, extendable once by the firm's compliance department for 10 more"
       },
       {
         "id": "c",
-        "text": "Sharing gains/losses is restricted and usually requires firm approval and proportional contribution, if allowed."
+        "text": "15 business days, extendable to 25 in total if APS or the Administrator requests it"
       },
       {
         "id": "d",
-        "text": "No. Agents generally cannot guarantee customers against market losses."
+        "text": "30 calendar days, extendable for as long as the firm's internal review remains open"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits. Example: Consistent high returns funded by new deposits are red flags.",
+    "correctOptionId": "c",
+    "explanation": "Under the Model Act a delay expires at the earlier of the firm's determination that no exploitation will result or 15 business days, and APS or the securities Administrator may request an extension to 25 business days total; a court may extend further. The firm must notify APS and the Administrator and tell authorized account parties (not the suspect) in writing within 2 business days.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes churning as tested in Series 63 ethics and sales practices?”), not to this one.",
-      "c": "This is the answer to a different question (“In Series 63 ethics and sales practices, when is sharing in customer accounts problematic?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “A fraudulent scheme using new investor money to pay earlier investors rather than legitimate profits”."
+      "a": "Understates the initial period; the Model Act allows up to 15 business days before any extension is needed.",
+      "b": "Wrong length and wrong party; extensions come at the request of APS or the Administrator, not the firm's own compliance staff.",
+      "d": "The Model Act counts business days, not calendar days, and an internal review alone cannot keep the hold open past the limit."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -861,31 +861,31 @@
     "id": "series-63-readiness-check-s63-ethics-012",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "In Series 63 ethics and sales practices, why is misuse of customer funds severe?",
+    "prompt": "A dealer sells a customer 1,000 shares of a heavily traded large-cap stock from inventory with a 4.5% markup. Its compliance officer argues the trade is fine because the markup is under 5%. How does FINRA Rule 2121 treat that argument?",
     "options": [
       {
         "id": "a",
-        "text": "Written customer authorization and firm acceptance are required before exercising discretion over security, action, or amount."
+        "text": "Correct, because a markup at or below 5% is a safe harbor for any equity trade"
       },
       {
         "id": "b",
-        "text": "They enable unauthorized activity and inaccurate records."
+        "text": "Incorrect, because the 5% policy is a guide and 4.5% on a liquid stock may be unfair"
       },
       {
         "id": "c",
-        "text": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles"
+        "text": "Correct, because principal sales from inventory are exempt from the markup policy"
       },
       {
         "id": "d",
-        "text": "A fact is material if a reasonable investor would consider it important in making an investment decision."
+        "text": "Incorrect, because FINRA caps each equity markup at 3% of the prevailing market price"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles. Example: Depositing customer check into personal account.",
+    "correctOptionId": "b",
+    "explanation": "The 5% policy is a guideline, not a rule or a safe harbor. Fairness depends on factors such as the security's type and availability, price, trade size, total dollar amount and the firm's services. A markup near 5% on a routine trade in a liquid large-cap stock can be excessive, which NASAA also treats as charging an unreasonable profit.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles”.",
-      "b": "Not the best answer here; the right answer is “Using, borrowing, or converting customer funds/securities violates antifraud and fiduciary principles”.",
-      "d": "This is the answer to a different question (“Which statement correctly describes a material fact as tested in Series 63 ethics and sales practices?”), not to this one."
+      "a": "Treats the 5% guideline as a safe harbor; FINRA says a markup under 5% can still be unfair given the trade's facts.",
+      "c": "Markups apply precisely to principal sales from inventory; that is the trade type the fair-price rule is aimed at.",
+      "d": "Invents a hard cap; FINRA sets no fixed percentage ceiling, and 3% is not a rule anywhere in the markup policy."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -894,31 +894,31 @@
     "id": "series-63-readiness-check-s63-ethics-013",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement best describes securities fraud as tested in Series 63 ethics and sales practices?",
+    "prompt": "A state-registered adviser wants to charge a fee equal to 20% of each client's capital gains. Applying the SEC qualified-client standard that states adopt, which prospective client may sign such a contract?",
     "options": [
       {
         "id": "a",
-        "text": "Making an unintentional math error on a client statement without any intent to deceive"
+        "text": "A client with $2 million net worth excluding her home who will place $800,000"
       },
       {
         "id": "b",
-        "text": "Following a written supervisory procedure that was later updated by the firm"
+        "text": "A client with $3 million net worth, half of it equity in her primary residence"
       },
       {
         "id": "c",
-        "text": "Disclosing a material risk in writing before the customer commits to the transaction"
+        "text": "A client who earns $400,000 a year in salary and will place $900,000 with the firm"
       },
       {
         "id": "d",
-        "text": "Intentional or reckless deception, misstatements, omissions, or schemes in securities dealings"
+        "text": "A client who will have $1.5 million managed by the adviser right after signing"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Securities fraud centers on intentional or reckless deception — misstatements, omissions, or schemes — in connection with the offer, purchase, or sale of securities. Accidents, routine supervision updates, or proper disclosure are not the fraud definition.",
+    "explanation": "Performance fees are allowed only for qualified clients under SEC Rule 205-3. Since June 29, 2026 that means at least $1.4 million under the adviser's management immediately after signing, or net worth above $2.7 million excluding the primary residence (previously $1.1 million and $2.2 million). A client with $1.5 million under management meets either version.",
     "distractorExplanations": {
-      "a": "Unintentional clerical mistakes without deception are not the fraud standard tested here.",
-      "b": "Following then-current firm procedures is a supervision issue, not the fraud definition.",
-      "c": "Timely written risk disclosure is generally the opposite of fraudulent omission."
+      "a": "Fails both tests: $2 million net worth is below the threshold and $800,000 under management is below the assets test.",
+      "b": "The primary residence is excluded, leaving about $1.5 million of net worth, which is well short of the net worth test.",
+      "c": "Income is not a qualified-client test, and $900,000 under management falls below the assets-under-management threshold."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -927,31 +927,31 @@
     "id": "series-63-readiness-check-s63-ethics-014",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement correctly describes churning as tested in Series 63 ethics and sales practices?",
+    "prompt": "A trustee's diversified trust portfolio includes a small allocation to emerging-market small-cap stocks, which the beneficiaries call too risky. Under the Uniform Prudent Investor Act, how is that holding judged?",
     "options": [
       {
         "id": "a",
-        "text": "Excessive trading in a customer account controlled by the agent primarily to generate commissions"
+        "text": "In the context of the whole portfolio and its overall risk-and-return strategy"
       },
       {
         "id": "b",
-        "text": "A fact is material if a reasonable investor would consider it important in making an investment decision."
+        "text": "On its own merits, so a speculative holding is imprudent regardless of the rest"
       },
       {
         "id": "c",
-        "text": "A securities transaction outside regular firm business requiring notice and often approval/supervision."
+        "text": "By whether that position produced a gain during the trustee's time in office"
       },
       {
         "id": "d",
-        "text": "No. Registration or filing does not mean the Administrator approved merits of the security."
+        "text": "By whether the beneficiaries approved the specific investment in writing first"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Excessive trading in a customer account controlled by the agent primarily to generate commissions. Example: High turnover in conservative account can be churning.",
+    "explanation": "The Uniform Prudent Investor Act judges each investment as part of the overall portfolio and a strategy with risk and return objectives suited to the trust, not in isolation. No category of investment is imprudent per se, diversification is required absent special circumstances, and duties may be delegated with care in selecting and monitoring the agent.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which statement correctly describes a material fact as tested in Series 63 ethics and sales practices?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Excessive trading in a customer account controlled by the agent primarily to generate commissions”.",
-      "d": "Not the best answer here; the right answer is “Excessive trading in a customer account controlled by the agent primarily to generate commissions”."
+      "b": "Reflects the old prudent-man approach of judging assets one by one; the Act rejects per se imprudence for any category.",
+      "c": "Prudence is measured by the decision process at the time, not by hindsight results for a single position.",
+      "d": "Beneficiary pre-approval is not the prudence standard; the trustee must meet the Act's duties regardless of approval."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -960,31 +960,31 @@
     "id": "series-63-readiness-check-s63-ethics-015",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ethics",
-    "prompt": "Which statement best applies to Can agents spread market rumors in Series 63 ethics and sales practices?",
+    "prompt": "An investment adviser directs client trades to a broker-dealer that supplies soft-dollar benefits in return. Which benefit falls within the safe harbor of Section 28(e) of the Securities Exchange Act?",
     "options": [
       {
         "id": "a",
-        "text": "Backdating creates false records and can conceal violations."
+        "text": "Rent on the adviser's new branch office located near the broker's headquarters"
       },
       {
         "id": "b",
-        "text": "Spreading false or unverified rumors to influence trading is prohibited"
+        "text": "Travel and hotel costs for the adviser's staff to attend an industry conference"
       },
       {
         "id": "c",
-        "text": "Disclose, mitigate, avoid, or obtain required approval depending on conflict and rule."
+        "text": "Third-party research reports the adviser uses in making client investment decisions"
       },
       {
         "id": "d",
-        "text": "Borrowing from customers is generally prohibited unless narrow conditions and firm procedures allow it."
+        "text": "Office furniture and the salaries of the adviser's administrative support staff"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Spreading false or unverified rumors to influence trading is prohibited. Example: Telling clients a takeover rumor as fact to push purchases.",
+    "correctOptionId": "c",
+    "explanation": "Section 28(e) protects an adviser that pays higher commissions in good faith for brokerage and research services that assist its investment decision-making, such as research reports and analytical tools. Overhead that benefits the adviser rather than clients falls outside, and soft-dollar arrangements must be disclosed to clients.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 ethics and sales practices, why is backdating documents unethical?”), not to this one.",
-      "c": "This is the answer to a different question (“In Series 63 ethics and sales practices, what should agents do with conflicts?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Spreading false or unverified rumors to influence trading is prohibited”."
+      "a": "Office rent is general overhead that benefits the adviser's business, not research or brokerage services under 28(e).",
+      "b": "Travel and lodging are excluded from the safe harbor even when the conference covers investment topics.",
+      "d": "Furniture and administrative salaries are overhead expenses the adviser must pay itself, outside the 28(e) safe harbor."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-ETHICS). · Local QA repair (stems/distractors)"
@@ -993,31 +993,31 @@
     "id": "series-63-readiness-check-s63-comm-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, why retain emails and electronic communications?",
+    "prompt": "An agent selling a newly registered limited partnership offering tells a prospect, \"The state Administrator reviewed this deal and approved it, so you know it's sound.\" The registration is effective. How does the Uniform Securities Act treat this statement?",
     "options": [
       {
         "id": "a",
-        "text": "Business communications must never be preserved for supervision and regulatory examination"
+        "text": "Permitted, because an effective registration means the Administrator has reviewed the offering's merits"
       },
       {
         "id": "b",
-        "text": "They rely on assumptions and can mislead if presented like actual performance."
+        "text": "Prohibited; the agent may say the offering is registered but may not imply the Administrator approved it"
       },
       {
         "id": "c",
-        "text": "Business communications must be preserved for supervision and regulatory examination"
+        "text": "Permitted, provided the prospect also receives a prospectus before the order is accepted"
       },
       {
         "id": "d",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "Prohibited unless the agent first obtains the Administrator's written consent to describe the outcome of its review"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Business communications must be preserved for supervision and regulatory examination. Example: Recommendation by text or email is a business record.",
+    "correctOptionId": "b",
+    "explanation": "Under the Uniform Securities Act it is unlawful to represent that the Administrator has passed on the merits, truth, or accuracy of a registration statement, or has recommended or approved a security. An agent may truthfully state that a security (or the agent) is registered, but registration is not an endorsement.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Business communications must be preserved for supervision and regulatory examination”.",
-      "b": "This is the answer to a different question (“In Series 63 communications and records, why are hypothetical returns dangerous?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Business communications must be preserved for supervision and regulatory examination”."
+      "a": "Confuses effectiveness with approval: registration means filing requirements were met, not that the Administrator vouches for the merits.",
+      "c": "Prospectus delivery does not cure a false claim of regulatory approval; the misrepresentation itself is the violation.",
+      "d": "No consent procedure exists; the Administrator cannot authorize an agent to imply approval, which is unlawful in itself."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1026,31 +1026,31 @@
     "id": "series-63-readiness-check-s63-comm-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "Which statement correctly describes the role of prospectus disclosure as tested in Series 63 communications and records?",
+    "prompt": "A 47-year-old customer opening an individual cash account at a FINRA member firm declines to name a trusted contact person. Under FINRA Rule 4512, how should the agent proceed?",
     "options": [
       {
         "id": "a",
-        "text": "Prospectus never provides required offering information, but delivery does not cure misstatements or unsuitable"
+        "text": "Hold the account opening until the customer names a trusted contact, because the rule requires one"
       },
       {
         "id": "b",
-        "text": "Seminar invitations and presentations are communications and must be balanced, supervised, and not misleading."
+        "text": "Skip the request, because trusted contact information is required for customers age 65 and older"
       },
       {
         "id": "c",
-        "text": "Compare similar features with balanced discussion of costs, risks, tax treatment, liquidity, and assumptions."
+        "text": "List the customer's spouse as the default trusted contact, since one must appear on each account record"
       },
       {
         "id": "d",
-        "text": "Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations."
+        "text": "Open the account; the rule requires a reasonable effort to obtain the name, not the customer's agreement"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations. Example: Mutual fund prospectus explains fees and risks.",
+    "explanation": "FINRA Rule 4512 requires a member to make reasonable efforts to obtain the name and contact information of a trusted contact person (age 18 or older) for each non-institutional customer account. A refusal does not prevent opening the account; the firm documents the attempt. The account record must also show the signature of the partner, officer, or manager who accepts the account; the customer's signature is not required on the new account form.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations”.",
-      "b": "Not the best answer here; the right answer is “Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations”.",
-      "c": "Not the best answer here; the right answer is “Prospectus provides required offering information, but delivery does not cure misstatements or unsuitable recommendations”."
+      "a": "Treats the trusted contact as a mandatory field; the rule demands a reasonable attempt, and a refusal does not block the account.",
+      "b": "Confuses Rule 4512 with the Rule 2165 'specified adult' (65+) concept; the trusted contact request applies to adult customers of any age.",
+      "c": "A firm cannot designate a trusted contact on the customer's behalf; the person must be named voluntarily by the customer."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1059,31 +1059,31 @@
     "id": "series-63-readiness-check-s63-comm-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "Which statement correctly describes balanced risk disclosure as tested in Series 63 communications and records?",
+    "prompt": "A new customer signs the credit agreement and hypothecation agreement for a margin account but refuses to sign the loan consent, then buys $30,000 of marginable stock. What is the result under Regulation T and standard margin documentation?",
     "options": [
       {
         "id": "a",
-        "text": "Risks must be presented prominently and meaningfully, not hidden in fine print"
+        "text": "The purchase may proceed, and the customer must deposit $15,000 to meet the initial requirement"
       },
       {
         "id": "b",
-        "text": "Risks must never be presented prominently and meaningfully, not hidden in fine print"
+        "text": "The purchase is blocked until the loan consent is signed, because margin accounts need every document signed"
       },
       {
         "id": "c",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules."
+        "text": "The purchase may proceed, and the customer must deposit $7,500 to meet the initial requirement"
       },
       {
         "id": "d",
-        "text": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk."
+        "text": "The purchase may proceed, and the customer must deposit $2,000, the minimum equity required"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Risks must be presented prominently and meaningfully, not hidden in fine print. Example: Options communication must discuss potential loss.",
+    "explanation": "A margin account requires a signed credit agreement (loan terms and interest) and a hypothecation agreement (pledging securities as collateral). The loan consent, which lets the firm lend customer securities, is optional. Regulation T sets initial margin at 50% of the purchase price, so a $30,000 purchase requires $15,000; the FINRA Rule 4210 $2,000 minimum equity is already exceeded.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Risks must be presented prominently and meaningfully, not hidden in fine print”.",
-      "c": "This is the answer to a different question (“In Series 63 communications and records, what must agents remember when cold calling? (applied scenario 2)”), not to this one.",
-      "d": "This is the answer to a different question (“In Series 63 communications and records, why must customer agreements be accurate?”), not to this one."
+      "b": "The loan consent is optional; refusing to let the firm lend securities does not prevent opening or using a margin account.",
+      "c": "Uses 25%, the FINRA maintenance minimum for long positions, instead of the 50% Regulation T initial requirement.",
+      "d": "The $2,000 FINRA minimum governs only when it exceeds the Reg T amount; here 50% of $30,000 is far larger."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1092,31 +1092,31 @@
     "id": "series-63-readiness-check-s63-comm-004",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, what must communications with customers be?",
+    "prompt": "A registered options principal approves a customer's account for options trading on May 1, after the agent delivered the Options Disclosure Document. The customer trades on May 3 but has not yet returned the signed options agreement. Under FINRA Rule 2360, what is required?",
     "options": [
       {
         "id": "a",
-        "text": "Communications must never be fair, balanced, not misleading, and disclose material risks and limitations"
+        "text": "The May 3 trade must be canceled, because the signed agreement is due before any option trade"
       },
       {
         "id": "b",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations"
+        "text": "Nothing further, because delivery of the ODD replaces the need for a signed options agreement"
       },
       {
         "id": "c",
-        "text": "Risks must be presented prominently and meaningfully, not hidden in fine print."
+        "text": "The customer must return the signed agreement within 15 days after approval to keep opening positions"
       },
       {
         "id": "d",
-        "text": "They rely on assumptions and can mislead if presented like actual performance."
+        "text": "The agent must obtain the signed agreement within 30 days of the first trade, or the account is restricted"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations. Example: A bond ad must discuss credit and interest-rate risk.",
+    "correctOptionId": "c",
+    "explanation": "FINRA Rule 2360 requires the ODD to be delivered at or before the time the account is approved for options, and approval must come from a registered options principal. The customer's signed agreement to abide by position and exercise limits is due within 15 days after approval; if it is not received, the firm limits the account to closing transactions.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Communications must be fair, balanced, not misleading, and disclose material risks and limitations”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes balanced risk disclosure as tested in Series 63 communications and…”), not to this one.",
-      "d": "This is the answer to a different question (“In Series 63 communications and records, why are hypothetical returns dangerous?”), not to this one."
+      "a": "Trading may begin once the account is approved; the rule gives the customer 15 days after approval to return the signed agreement.",
+      "b": "The ODD is a risk disclosure, not a contract; delivering it does not satisfy the separate signed-agreement requirement.",
+      "d": "Uses the wrong period and start date: the deadline is 15 days measured from account approval, not 30 days from the first trade."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1125,31 +1125,31 @@
     "id": "series-63-readiness-check-s63-comm-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, why retain emails and electronic communications? (applied scenario 2)",
+    "prompt": "A customer buys 1 XYZ Jun 60 put for a premium of 8 when XYZ is trading at 54. What is the put's intrinsic value per contract (100 shares) at the time of purchase?",
     "options": [
       {
         "id": "a",
-        "text": "Business communications must never be preserved for supervision and regulatory examination"
+        "text": "$0"
       },
       {
         "id": "b",
-        "text": "They rely on assumptions and can mislead if presented like actual performance."
+        "text": "$200"
       },
       {
         "id": "c",
-        "text": "Business communications must be preserved for supervision and regulatory examination"
+        "text": "$600"
       },
       {
         "id": "d",
-        "text": "If prior information becomes materially inaccurate or stale, continued use can mislead."
+        "text": "$800"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Business communications must be preserved for supervision and regulatory examination. Example: Recommendation by text or email is a business record.",
+    "explanation": "A put is in the money when the market price is below the strike price. Intrinsic value = strike - market = 60 - 54 = 6 points, or $600 per 100-share contract. The remaining 2 points of the 8-point premium ($200) are time value.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Business communications must be preserved for supervision and regulatory examination”.",
-      "b": "This is the answer to a different question (“In Series 63 communications and records, why are hypothetical returns dangerous?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Business communications must be preserved for supervision and regulatory examination”."
+      "a": "Treats the put like a call; a put is in the money when the stock is below the strike, as it is here (54 < 60).",
+      "b": "This is the time value (premium of 8 minus intrinsic value of 6 = 2 points), not the intrinsic value.",
+      "d": "This is the full premium paid; premium equals intrinsic value plus time value, so it overstates intrinsic value."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1158,31 +1158,31 @@
     "id": "series-63-readiness-check-s63-comm-006",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "Which statement correctly describes risky about performance claims as tested in Series 63 communications and records?",
+    "prompt": "Over a two-week period, an agent emails the same market-outlook letter, which recommends buying a utility stock, to 40 retail customers. How does FINRA Rule 2210 classify the letter, and what approval applies?",
     "options": [
       {
         "id": "a",
-        "text": "No, unless an actual guarantee exists and terms/guarantor are clearly disclosed; market securities generally cannot be presented as risk-free."
+        "text": "Retail communication; a registered principal must approve it before it is sent"
       },
       {
         "id": "b",
-        "text": "Fees, commissions, markups, surrender charges, and expenses are material to recommendations."
+        "text": "Correspondence; it is reviewed under the firm's supervisory procedures after it is sent"
       },
       {
         "id": "c",
-        "text": "Rules often focus on written complaints, but oral complaints can still require escalation under firm procedures."
+        "text": "Institutional communication; no principal approval is needed because it goes by email"
       },
       {
         "id": "d",
-        "text": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context"
+        "text": "Retail communication; it must be filed with FINRA at least 10 business days before first use"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context. Example: Showing only best month of returns misleads.",
+    "correctOptionId": "a",
+    "explanation": "Under FINRA Rule 2210, a written communication distributed or made available to more than 25 retail investors within any 30-calendar-day period is a retail communication, which generally needs approval by a qualified registered principal before use. The same letter sent to 25 or fewer retail investors in 30 days would be correspondence, which is supervised but not pre-approved.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context”.",
-      "b": "Not the best answer here; the right answer is “They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context”.",
-      "c": "Not the best answer here; the right answer is “They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context”."
+      "b": "Correspondence is limited to 25 or fewer retail investors within 30 calendar days; 40 recipients in two weeks crosses that line.",
+      "c": "Institutional communications go to institutional investors; the delivery medium (email) does not change a retail audience.",
+      "d": "Filing 10 business days before use applies to certain retail communications, such as a new member's in its first year, not to this letter."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1191,31 +1191,31 @@
     "id": "series-63-readiness-check-s63-comm-007",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, what must agents remember when cold calling?",
+    "prompt": "An agent updates the 'About' section of her business LinkedIn profile to describe the firm's services, and later replies to questions in a live LinkedIn discussion thread. Under FINRA social media guidance, which content needs principal approval before posting?",
     "options": [
       {
         "id": "a",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules"
+        "text": "Both the profile update and each reply, since every social media post is a retail communication"
       },
       {
         "id": "b",
-        "text": "Calls must never follow time, identification, do-not-call, firm, and anti-fraud communication rules"
+        "text": "Neither, because social media content is supervised through post-use sampling by compliance"
       },
       {
         "id": "c",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "The live replies, while the profile update is treated as correspondence reviewed after posting"
       },
       {
         "id": "d",
-        "text": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk."
+        "text": "The profile update, while the live replies are supervised like correspondence after posting"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules. Example: Identify caller, firm, purpose, and respect DNC requests.",
+    "correctOptionId": "d",
+    "explanation": "FINRA Regulatory Notices 10-06 and 11-39 treat static content (profiles, background information, banner text) as a retail communication that needs principal pre-approval. Interactive, real-time content such as replies in a discussion thread is treated like correspondence: supervised and retained, but not pre-approved. If an agent shares or endorses third-party content, the firm may be deemed to have adopted it.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules”.",
-      "c": "Not the best answer here; the right answer is “Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules”.",
-      "d": "This is the answer to a different question (“In Series 63 communications and records, why must customer agreements be accurate?”), not to this one."
+      "a": "Overextends pre-approval: interactive real-time posts are supervised like correspondence, not approved before use.",
+      "b": "Static profile content is a retail communication, so it does need principal approval before it is posted.",
+      "c": "Reverses the guidance: the static profile needs pre-approval, while interactive replies are reviewed after the fact."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1224,31 +1224,31 @@
     "id": "series-63-readiness-check-s63-comm-008",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, what must communications with customers be? (applied scenario 2)",
+    "prompt": "An agent discusses a client's bond purchase by text through a personal messaging app that the firm cannot capture or archive. Which statement best describes the recordkeeping problem under SEC Rule 17a-4?",
     "options": [
       {
         "id": "a",
-        "text": "Communications must never be fair, balanced, not misleading, and disclose material risks and limitations"
+        "text": "No problem arises, because messages sent from an agent's personal device are not firm records"
       },
       {
         "id": "b",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations"
+        "text": "Business messages must be kept 3 years, the first 2 easily accessible, so these texts are a breach"
       },
       {
         "id": "c",
-        "text": "Scale, selected period, missing benchmarks, or omitted volatility can distort impression."
+        "text": "Business messages must be kept 6 years, the first 2 easily accessible, so these texts violate the rule"
       },
       {
         "id": "d",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "No problem arises if the agent forwards a monthly summary of the text conversations to compliance"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations. Example: A bond ad must discuss credit and interest-rate risk.",
+    "explanation": "SEC Rule 17a-4 requires broker-dealers to preserve communications relating to the business as such for at least 3 years, the first 2 in an easily accessible place. The duty turns on content, not device: business texts on an unapproved app the firm cannot archive are off-channel communications, a recordkeeping and supervision failure the SEC has fined heavily.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Communications must be fair, balanced, not misleading, and disclose material risks and limitations”.",
-      "c": "Not the best answer here; the right answer is “Communications must be fair, balanced, not misleading, and disclose material risks and limitations”.",
-      "d": "Not the best answer here; the right answer is “Communications must be fair, balanced, not misleading, and disclose material risks and limitations”."
+      "a": "Recordkeeping turns on business content, not who owns the device; business texts on personal apps must still be preserved.",
+      "c": "Six years applies to records such as blotters and ledgers; business communications carry a 3-year retention period.",
+      "d": "A summary is not the original message; the rule requires preserving the communications themselves in an archivable form."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1257,31 +1257,31 @@
     "id": "series-63-readiness-check-s63-comm-009",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, why are testimonials sensitive?",
+    "prompt": "An agent registered in State A posts general market commentary on a public website. A resident of State B, where neither the agent nor the agent's firm is registered, emails asking whether to buy a specific mutual fund. Under NASAA's Internet communications guidance, how should the agent respond?",
     "options": [
       {
         "id": "a",
-        "text": "They can mislead if cherry-picked, hypothetical, gross of fees, or lacking time period and risk context."
+        "text": "Answer the question, because the State B resident initiated the contact, which makes the reply unsolicited"
       },
       {
         "id": "b",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules."
+        "text": "Answer by phone instead of email, since spoken advice falls outside the Internet guidance"
       },
       {
         "id": "c",
-        "text": "Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly disclosed."
+        "text": "Withhold individualized advice until the agent and firm are registered or exempt in State B"
       },
       {
         "id": "d",
-        "text": "Fees, commissions, markups, surrender charges, and expenses are material to recommendations."
+        "text": "Remove the website, because posting it already required registration in each state where it is viewable"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly disclosed. Example: Paid customer endorsement requires disclosure.",
+    "explanation": "NASAA's statement of policy on Internet communications treats a website as not an offer in a state where the agent is unregistered if it carries a legend limiting business to states where the agent is registered or exempt and uses firewalls so no individualized response about a specific security goes to that state's residents until the agent and firm are registered or exempt there.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes risky about performance claims as tested in Series 63 communications and…”), not to this one.",
-      "b": "This is the answer to a different question (“In Series 63 communications and records, what must agents remember when cold calling? (applied scenario 2)”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly disclosed”."
+      "a": "A resident's inquiry does not excuse a tailored recommendation; individualized responses require registration or an exemption first.",
+      "b": "Switching channels does not change the analysis; a specific recommendation to a State B resident is business in State B.",
+      "d": "A properly legended, firewalled website is not an offer in states where the agent is unregistered, so blanket registration is unnecessary."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1290,31 +1290,31 @@
     "id": "series-63-readiness-check-s63-comm-010",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, what must agents remember when cold calling? (applied scenario 2)",
+    "prompt": "A broker-dealer wants to give its customer list, with account balances, to an unaffiliated insurance agency that will market its own policies. Under SEC Regulation S-P, what must the firm do first?",
     "options": [
       {
         "id": "a",
-        "text": "Calls must never follow time, identification, do-not-call, firm, and anti-fraud communication rules"
+        "text": "Give customers a privacy notice and opt-out notice, with a reasonable chance to opt out"
       },
       {
         "id": "b",
-        "text": "They are regulated communications subject to supervision, retention, and content standards."
+        "text": "Obtain each customer's signed written opt-in consent before any of the data is transferred"
       },
       {
         "id": "c",
-        "text": "If prior information becomes materially inaccurate or stale, continued use can mislead."
+        "text": "File a notice of the sharing arrangement with the SEC before transferring the list"
       },
       {
         "id": "d",
-        "text": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules"
+        "text": "Send the annual privacy notice afterward, disclosing the sharing that already took place"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules. Example: Identify caller, firm, purpose, and respect DNC requests.",
+    "correctOptionId": "a",
+    "explanation": "Regulation S-P requires an initial privacy notice when the customer relationship is formed and generally an annual notice afterward. Before sharing nonpublic personal information (including who its customers are and their balances) with a nonaffiliated third party outside the rule's exceptions, the firm must give an opt-out notice and a reasonable opportunity to opt out. The federal standard is opt-out, not opt-in.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules”.",
-      "b": "Not the best answer here; the right answer is “Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules”.",
-      "c": "Not the best answer here; the right answer is “Calls must follow time, identification, do-not-call, firm, and anti-fraud communication rules”."
+      "b": "Regulation S-P uses an opt-out model; affirmative opt-in consent is stricter than the federal rule requires (some state laws differ).",
+      "c": "Regulation S-P has no SEC filing or approval step for sharing; the duty runs to customers through notice and opt-out.",
+      "d": "Notice after the fact is too late; customers must receive the opt-out notice and time to respond before any sharing."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1323,31 +1323,31 @@
     "id": "series-63-readiness-check-s63-comm-011",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, why must customer agreements be accurate?",
+    "prompt": "A broker-dealer's compliance officer proposes destroying records once they are four years old. The files include the firm's purchase and sales blotters and its order tickets (memoranda of orders). Under SEC Rule 17a-4, which records may be destroyed?",
     "options": [
       {
         "id": "a",
-        "text": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk."
+        "text": "Both sets, because broker-dealer records generally carry a 3-year retention period"
       },
       {
         "id": "b",
-        "text": "Participation in seminars, interviews, webinars, or public forums about securities business can be regulated communication."
+        "text": "Neither set, because the state Administrator can impose a 5-year rule on top of SEC retention"
       },
       {
         "id": "c",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations."
+        "text": "The blotters, while the order tickets must be kept for 6 years with 2 easily accessible"
       },
       {
         "id": "d",
-        "text": "Compare similar features with balanced discussion of costs, risks, tax treatment, liquidity, and assumptions."
+        "text": "The order tickets, while the blotters must be kept 6 years, the first 2 easily accessible"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory risk. Example: Margin agreement must be signed before margin activity.",
+    "correctOptionId": "d",
+    "explanation": "SEC Rule 17a-4 requires blotters (and general and customer ledgers) to be kept 6 years, the first 2 easily accessible, while memoranda of orders are kept 3 years. Under NSMIA, states may not impose broker-dealer recordkeeping requirements different from or in addition to the SEC's, although the Administrator may still examine a registered firm's records.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory…”.",
-      "c": "This is the answer to a different question (“In Series 63 communications and records, what must communications with customers be? (applied scenario 2)”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Agreements define account rights, margin, arbitration, discretion, and other obligations; false or incomplete agreements create regulatory…”."
+      "a": "Three years covers order tickets and communications, but blotters and ledgers fall in the 6-year category.",
+      "b": "NSMIA bars states from imposing books-and-records requirements beyond SEC rules, so a state 5-year rule would be preempted.",
+      "c": "Reverses the categories: blotters are 6-year records, and order tickets are 3-year records eligible for destruction here."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1356,31 +1356,31 @@
     "id": "series-63-readiness-check-s63-comm-012",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-comm",
-    "prompt": "In Series 63 communications and records, why are hypothetical returns dangerous?",
+    "prompt": "An agent of a broker-dealer that operates in a bank's lobby recommends a mutual fund to a bank depositor. Under NASAA's rules for sales of securities at financial institutions, what must the agent disclose?",
     "options": [
       {
         "id": "a",
-        "text": "Testimonials can mislead if compensation, conflicts, experience, or representativeness are not properly disclosed."
+        "text": "That the fund is FDIC insured up to $250,000 because it is purchased on bank premises"
       },
       {
         "id": "b",
-        "text": "They rely on assumptions and can mislead if presented like actual performance"
+        "text": "That the fund is not FDIC insured, not a bank deposit or guaranteed by the bank, and may lose value"
       },
       {
         "id": "c",
-        "text": "Communications must be fair, balanced, not misleading, and disclose material risks and limitations."
+        "text": "That the fund is covered by SIPC, which protects the depositor against investment losses of up to $500,000"
       },
       {
         "id": "d",
-        "text": "Scale, selected period, missing benchmarks, or omitted volatility can distort impression."
+        "text": "That the bank's holding company backs the fund's share price if its net asset value falls below $1"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "They rely on assumptions and can mislead if presented like actual performance. Example: Backtested strategy needs assumptions and limitations.",
+    "explanation": "NASAA's Rules for Sales of Securities at Financial Institutions require broker-dealers and agents selling on bank premises to disclose that securities are not FDIC insured, are not deposits or obligations of the institution, are not guaranteed by it, and are subject to investment risk, including possible loss of principal. The rule targets depositor confusion between bank products and investments.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 communications and records, why are testimonials sensitive?”), not to this one.",
-      "c": "This is the answer to a different question (“In Series 63 communications and records, what must communications with customers be? (applied scenario 2)”), not to this one.",
-      "d": "Not the best answer here; the right answer is “They rely on assumptions and can mislead if presented like actual performance”."
+      "a": "FDIC insurance covers deposits, not mutual fund shares, even when the fund is purchased in a bank branch.",
+      "c": "SIPC protects customer assets if a broker-dealer fails; it does not cover market losses on investments.",
+      "d": "No bank guarantee backs fund shares; implying institutional support is the exact confusion the disclosure rule targets."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-COMM). · Local QA repair (stems/distractors)"
@@ -1389,31 +1389,31 @@
     "id": "series-63-readiness-check-s63-remedies-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "Which statement correctly describes rescission as tested in Series 63 enforcement remedies?",
+    "prompt": "While investigating an unregistered offering, the State X Administrator needs records kept at the promoter's office in another state and testimony from a reluctant former salesperson. Which step is within the Administrator's authority under the Uniform Securities Act?",
     "options": [
       {
         "id": "a",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences."
+        "text": "Ordering the salesperson jailed for contempt by administrative order if he refuses to testify"
       },
       {
         "id": "b",
-        "text": "The state securities regulator responsible for administering and enforcing state securities law."
+        "text": "Limiting the inquiry to records and witnesses physically located inside State X"
       },
       {
         "id": "c",
-        "text": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received"
+        "text": "Obtaining a court warrant before issuing any subpoena for records or testimony"
       },
       {
         "id": "d",
-        "text": "Selling securities through material misstatement/omission or unlawful sale can create rescission or damages liability."
+        "text": "Issuing subpoenas and, if the witness refuses, asking a court to compel compliance"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received. Example: Investor returns security and receives money back.",
+    "correctOptionId": "d",
+    "explanation": "Under USA §407, the Administrator may conduct public or private investigations within or outside the state, subpoena witnesses and records, take testimony, publish information about violations, and cooperate with other states' administrators and the SEC. If a person disobeys a subpoena, the Administrator applies to a court, which can order compliance and punish contempt.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 enforcement remedies, why does final order status matter? (applied scenario 2)”), not to this one.",
-      "b": "Not the best answer here; the right answer is “A remedy unwinding the transaction, generally returning purchase price plus interest minus income received”.",
-      "d": "Not the best answer here; the right answer is “A remedy unwinding the transaction, generally returning purchase price plus interest minus income received”."
+      "a": "Contempt and jail are judicial powers; the Administrator must ask a court to enforce the subpoena rather than jail anyone itself.",
+      "b": "The Act lets the Administrator investigate within or outside the state, and other regulators can help reach out-of-state evidence.",
+      "c": "The Administrator issues its own subpoenas without a warrant; a court becomes involved only when someone refuses to comply."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
@@ -1422,31 +1422,31 @@
     "id": "series-63-readiness-check-s63-remedies-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "Which statement correctly describes rescission as tested in Series 63 enforcement remedies? (applied scenario 2)?",
+    "prompt": "The Administrator learns that a firm is about to begin selling unregistered, nonexempt promissory notes to state residents next week. Under the Uniform Securities Act, how may the Administrator respond?",
     "options": [
       {
         "id": "a",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences."
+        "text": "Issue a cease-and-desist order at once; the firm may then request a hearing on it"
       },
       {
         "id": "b",
-        "text": "Selling securities through material misstatement/omission or unlawful sale can create rescission or damages liability."
+        "text": "Issue a cease-and-desist order once the firm has had notice and a prior hearing"
       },
       {
         "id": "c",
-        "text": "Affected persons often can request hearing after denial, suspension, revocation, or summary action."
+        "text": "Issue a permanent injunction itself, after giving the firm 30 days' written notice"
       },
       {
         "id": "d",
-        "text": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received"
+        "text": "Wait until a sale is completed, since an order cannot address planned violations"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "A remedy unwinding the transaction, generally returning purchase price plus interest minus income received. Example: Investor returns security and receives money back.",
+    "correctOptionId": "a",
+    "explanation": "When the Administrator believes a person has engaged or is about to engage in a violation, it may issue a cease-and-desist order without prior notice or hearing. The respondent may then request a hearing, which must be set within 15 days of the request. Injunctions, by contrast, are issued by a court on the Administrator's application.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 63 enforcement remedies, why does final order status matter? (applied scenario 2)”), not to this one.",
-      "b": "Not the best answer here; the right answer is “A remedy unwinding the transaction, generally returning purchase price plus interest minus income received”.",
-      "c": "This is the answer to a different question (“In Series 63 enforcement remedies, what hearing rights exist after certain orders?”), not to this one."
+      "b": "A cease-and-desist order may be issued summarily; the hearing comes afterward on request, not as a precondition.",
+      "c": "The Administrator cannot issue injunctions; it must apply to a court, and no 30-day notice period applies to that remedy.",
+      "d": "Orders may target conduct a person is about to engage in; the Administrator need not wait for investors to be harmed."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
@@ -1455,31 +1455,31 @@
     "id": "series-63-readiness-check-s63-remedies-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "In Series 63 enforcement remedies, why does final order status matter?",
+    "prompt": "The Administrator is reviewing an individual's Form U4 application to register as an agent. Which fact, standing alone, is NOT a ground for denying the registration under the Uniform Securities Act?",
     "options": [
       {
         "id": "a",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences"
+        "text": "A felony conviction for tax fraud entered seven years ago"
       },
       {
         "id": "b",
-        "text": "Civil actions must be brought within specified time limits after discovery or violation."
+        "text": "A willful violation of the state securities act at a prior firm"
       },
       {
         "id": "c",
-        "text": "The state securities regulator responsible for administering and enforcing state securities law."
+        "text": "Lack of industry experience, though the Series 63 was passed"
       },
       {
         "id": "d",
-        "text": "Willful violations can lead to criminal penalties, but prosecution usually involves appropriate criminal authorities."
+        "text": "A conviction for a securities-related misdemeanor four years ago"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Final orders can create disqualification, disclosure, or registration consequences. Example: Prior final order for fraud can affect registration.",
+    "correctOptionId": "c",
+    "explanation": "USA §204 permits denial for, among other things, a willful violation of the Act, any felony conviction within the past 10 years, and a securities-related misdemeanor conviction within 10 years; insolvency is a further ground for firms. The Administrator may not deny registration solely for lack of experience when the applicant is qualified by training or knowledge, which passing the exam shows.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which of the following best answers this item: In Series 63 enforcement remedies, why do limitation periods…”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Final orders can create disqualification, disclosure, or registration consequences”.",
-      "d": "Not the best answer here; the right answer is “Final orders can create disqualification, disclosure, or registration consequences”."
+      "a": "Any felony conviction within the past 10 years is a ground for denial, whether or not it involved securities.",
+      "b": "A willful violation of the Act or its rules is a core statutory ground for denial, suspension or revocation.",
+      "d": "A misdemeanor involving securities or the securities business within the past 10 years is a ground for denial."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
@@ -1488,31 +1488,31 @@
     "id": "series-63-readiness-check-s63-remedies-004",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "Which statement correctly describes a cease-and-desist order as tested in Series 63 enforcement remedies?",
+    "prompt": "During a pending revocation proceeding, the Administrator concludes that a broker-dealer's continued operation threatens investors before the case can be decided. What does the Uniform Securities Act allow?",
     "options": [
       {
         "id": "a",
-        "text": "The person claiming an exemption generally has the burden of proving it."
+        "text": "A summary revocation that becomes final with no further opportunity for a hearing"
       },
       {
         "id": "b",
-        "text": "An administrative order requiring a person to stop violating securities law or rules"
+        "text": "A summary suspension pending final determination, with a hearing on request"
       },
       {
         "id": "c",
-        "text": "A court order restraining conduct, often sought by Administrator to stop violations."
+        "text": "A request that the SEC suspend the firm, since a state cannot act before a final order"
       },
       {
         "id": "d",
-        "text": "Registration does not mean the state approved, recommended, or guaranteed the security."
+        "text": "A suspension that takes effect once the firm consents in writing to the interim order"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "An administrative order requiring a person to stop violating securities law or rules. Example: Order stops ongoing unregistered sales.",
+    "explanation": "USA §204 lets the Administrator summarily postpone or suspend a registration pending final determination of a proceeding. The registrant must be promptly notified of the order and its reasons, and the matter is set for hearing within 15 days after a written request. Summary action is interim; a final revocation still requires notice and an opportunity for hearing.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “An administrative order requiring a person to stop violating securities law or rules”.",
-      "c": "Not the best answer here; the right answer is “An administrative order requiring a person to stop violating securities law or rules”.",
-      "d": "Not the best answer here; the right answer is “An administrative order requiring a person to stop violating securities law or rules”."
+      "a": "Summary action is limited to postponement or suspension pending the outcome; revocation is final and requires notice and a hearing opportunity.",
+      "c": "The Administrator has its own summary power under state law and does not need the SEC to act before a final order.",
+      "d": "A summary order takes effect when entered; the registrant's consent is not required, though it may request a hearing."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
@@ -1521,31 +1521,31 @@
     "id": "series-63-readiness-check-s63-remedies-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "For the Series 63, which of the following best answers this item: In Series 63 enforcement remedies, why do limitation periods matter?",
+    "prompt": "On May 1, 2025, an agent sold Ms. Lee $20,000 of unregistered, nonexempt stock. She received $600 in dividends, still holds the shares, learned of the violation in March 2026, and filed suit in September 2026. Under the Uniform Securities Act, what is the likely result?",
     "options": [
       {
         "id": "a",
-        "text": "Civil actions must never be brought within specified time limits after discovery or violation"
+        "text": "Her claim is barred, because she did not file suit within one year of the sale date"
       },
       {
         "id": "b",
-        "text": "A court order restraining conduct, often sought by Administrator to stop violations."
+        "text": "She recovers three times the $20,000 price as damages, less the $600 in dividends"
       },
       {
         "id": "c",
-        "text": "Civil actions must be brought within specified time limits after discovery or violation"
+        "text": "She recovers $20,000 plus interest and attorney's fees, with no offset for dividends"
       },
       {
         "id": "d",
-        "text": "Affected persons often can request hearing after denial, suspension, revocation, or summary action."
+        "text": "She recovers $20,000 plus interest and attorney's fees, less the $600 in dividends"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Civil actions must be brought within specified time limits after discovery or violation. Example: Claim may be barred if filed too late.",
+    "correctOptionId": "d",
+    "explanation": "Under USA §410, a buyer in an unlawful sale may sue to recover the consideration paid plus interest at the legal rate and reasonable attorney's fees, less any income received, upon tendering the security. The limitation period is commonly tested as 3 years from the sale or 2 years from discovery, whichever comes first, so a suit 16 months after the sale is timely.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Civil actions must be brought within specified time limits after discovery or violation”.",
-      "b": "Not the best answer here; the right answer is “Civil actions must be brought within specified time limits after discovery or violation”.",
-      "d": "This is the answer to a different question (“In Series 63 enforcement remedies, what hearing rights exist after certain orders?”), not to this one."
+      "a": "The USA limitation period runs years from the sale and from discovery, not one year from the sale, so this suit is timely.",
+      "b": "Treble damages belong to other laws, such as federal insider-trading penalties; USA §410 restores the price plus interest and fees.",
+      "c": "Income received on the security, such as these dividends, is deducted from the recovery so the buyer is not paid twice."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
@@ -1554,31 +1554,31 @@
     "id": "series-63-readiness-check-s63-remedies-006",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "In Series 63 enforcement remedies, why does final order status matter? (applied scenario 2)",
+    "prompt": "After discovering it sold unregistered, nonexempt bonds to a client, a broker-dealer sends a written rescission offer refunding the purchase price plus interest, less income received. The client ignores the offer for 30 days after receiving it. What is the consequence under the Uniform Securities Act?",
     "options": [
       {
         "id": "a",
-        "text": "The person claiming an exemption generally has the burden of proving it."
+        "text": "The client loses the right to sue the firm under the Act for that sale"
       },
       {
         "id": "b",
-        "text": "Willful violations can lead to criminal penalties, but prosecution usually involves appropriate criminal authorities."
+        "text": "The client keeps the right to sue for 2 years after discovering the violation"
       },
       {
         "id": "c",
-        "text": "Registration, investigation, subpoena, examination, orders, rulemaking, and enforcement powers under state law."
+        "text": "The client may still sue, but recovery is capped at the amount offered"
       },
       {
         "id": "d",
-        "text": "Final orders can create disqualification, disclosure, or registration consequences"
+        "text": "The client may still sue, because rescission offers must stay open 90 days"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Final orders can create disqualification, disclosure, or registration consequences. Example: Prior final order for fraud can affect registration.",
+    "correctOptionId": "a",
+    "explanation": "Under USA §410, a buyer who receives a written offer, before suit and while owning the security, to refund the consideration paid plus interest less income received, and who fails to accept it within 30 days of receipt, loses the right to sue under the Act for that sale. The offer does not bar the Administrator from taking its own enforcement action.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Final orders can create disqualification, disclosure, or registration consequences”.",
-      "b": "Not the best answer here; the right answer is “Final orders can create disqualification, disclosure, or registration consequences”.",
-      "c": "Not the best answer here; the right answer is “Final orders can create disqualification, disclosure, or registration consequences”."
+      "b": "The limitation period does not survive an ignored rescission offer; failing to accept within 30 days ends the civil claim.",
+      "c": "There is no capped claim; a properly made offer that is not accepted within 30 days bars the civil suit altogether.",
+      "d": "The acceptance window is 30 days from receipt, not 90, and once it passes the buyer can no longer sue under the Act."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
@@ -1587,31 +1587,31 @@
     "id": "series-63-readiness-check-s63-remedies-007",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-remedies",
-    "prompt": "In Series 63 enforcement remedies, what hearing rights exist after certain orders?",
+    "prompt": "An investigation shows an agent knowingly and willfully sold unregistered, nonexempt securities to state residents. Under the Uniform Securities Act of 1956, which criminal consequence applies?",
     "options": [
       {
         "id": "a",
-        "text": "Affected persons often can request hearing after denial, suspension, revocation, or summary action"
+        "text": "The Administrator may impose a criminal fine of up to $5,000 by order after a hearing"
       },
       {
         "id": "b",
-        "text": "An administrative order requiring a person to stop violating securities law or rules."
+        "text": "A court may impose up to $5,000 and 3 years in prison, whether or not the act was willful"
       },
       {
         "id": "c",
-        "text": "Civil actions must be brought within specified time limits after discovery or violation."
+        "text": "On referral for prosecution, a court may impose up to $5,000, 3 years in prison, or both"
       },
       {
         "id": "d",
-        "text": "Registration does not mean the state approved, recommended, or guaranteed the security."
+        "text": "The Administrator may order up to 3 years in prison, subject to appeal within 60 days"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Affected persons often can request hearing after denial, suspension, revocation, or summary action. Example: Registrant requests hearing after suspension.",
+    "correctOptionId": "c",
+    "explanation": "USA §409 makes a willful violation a crime punishable by a fine of up to $5,000, imprisonment of up to 3 years, or both. The Administrator cannot impose criminal penalties; it refers evidence to the attorney general or a local prosecutor. Separately, a person aggrieved by an Administrator's final order may seek judicial review within 60 days.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which statement correctly describes a cease-and-desist order as tested in Series 63 enforcement remedies?”), not to this one.",
-      "c": "This is the answer to a different question (“Which of the following best answers this item: In Series 63 enforcement remedies, why do limitation periods…”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Affected persons often can request hearing after denial, suspension, revocation, or summary action”."
+      "a": "Criminal fines are imposed by a court after prosecution; the Administrator's own orders are administrative, not criminal.",
+      "b": "Criminal liability under the USA requires a willful violation; a non-willful mistake leads to administrative or civil remedies.",
+      "d": "Prison terms come from a criminal court; the 60-day period applies to appealing an Administrator's final order, not to sentencing."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-REMEDIES). · Local QA repair (stems/distractors)"
@@ -1620,31 +1620,31 @@
     "id": "series-63-readiness-check-s63-securities-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-securities",
-    "prompt": "Which statement correctly describes registration by qualification as tested in Series 63 securities and exemptions?",
+    "prompt": "A promoter sells investors units in a vineyard it manages. Each buyer receives title to specific rows of vines, pays cash, and shares pro rata in profits from the grapes the promoter grows and markets. How are the units treated under the Howey test?",
     "options": [
       {
         "id": "a",
-        "text": "A state filing for certain federal covered securities, often with documents, consent to service, and fees, not full merit registration."
+        "text": "As real estate interests outside securities law, because buyers hold title to the rows"
       },
       {
         "id": "b",
-        "text": "State registration method used when coordination or filing is unavailable, requiring detailed disclosure to Administrator"
+        "text": "As investment contracts, because buyers rely on the promoter's efforts for profits"
       },
       {
         "id": "c",
-        "text": "A transaction where proceeds go to the issuer, usually primary market."
+        "text": "As agricultural commodities regulated by the CFTC rather than by state securities law"
       },
       {
         "id": "d",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "As securities if the promoter guarantees a fixed return; otherwise as real property"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "State registration method used when coordination or filing is unavailable, requiring detailed disclosure to Administrator. Example: Intrastate offering may use qualification.",
+    "explanation": "Under SEC v. W.J. Howey Co. (1946), an investment contract exists when there is an investment of money in a common enterprise with an expectation of profits derived from the efforts of others. Buyers here contribute cash, profits are pooled pro rata, and the promoter does the work, so the units are securities even though buyers hold title to land.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “State registration method used when coordination or filing is unavailable, requiring detailed disclosure to Administrator”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes an issuer transaction as tested in Series 63 securities and exemptions?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “State registration method used when coordination or filing is unavailable, requiring detailed disclosure to Administrator”."
+      "a": "Howey itself involved deeded rows of citrus trees; title to land does not defeat security status when profits depend on the promoter.",
+      "c": "The buyers are not trading commodity futures; they are passive investors in a managed enterprise, which is a securities question.",
+      "d": "A guaranteed return is not required; the Howey test looks at expected profits from others' efforts, not at fixed payouts."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
@@ -1653,31 +1653,31 @@
     "id": "series-63-readiness-check-s63-securities-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-securities",
-    "prompt": "Which statement correctly describes a security under the Uniform Securities Act as tested in Series 63 securities and exemptions?",
+    "prompt": "A two-year-old startup with no federal registration plans to raise $3 million solely from residents of its home state, relying on the federal intrastate exemption. Which state registration method fits the offering under the Uniform Securities Act?",
     "options": [
       {
         "id": "a",
-        "text": "A security exempt from state registration requirements because of issuer/type, though antifraud rules still apply."
+        "text": "Coordination, effective at the same moment the SEC declares the registration effective"
       },
       {
         "id": "b",
-        "text": "Separate offerings may be combined for exemption analysis if they are really one financing plan."
+        "text": "Notification, which becomes effective automatically on the second business day after filing"
       },
       {
         "id": "c",
-        "text": "A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments"
+        "text": "No state registration, because the offering qualifies for a federal exemption"
       },
       {
         "id": "d",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "Qualification, effective when the Administrator orders the registration effective"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments. Example: An investment contract can be a security even if not called stock.",
+    "correctOptionId": "d",
+    "explanation": "Registration by coordination requires a pending federal registration, and notification (filing) is limited to established issuers with a multi-year operating and earnings history. An issuer with neither must register by qualification under USA §304, which requires full disclosure to the Administrator, and the registration becomes effective when the Administrator so orders.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments”.",
-      "b": "Not the best answer here; the right answer is “A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments”.",
-      "d": "Not the best answer here; the right answer is “A broad category including stocks, bonds, notes, investment contracts, limited partnership interests, and many other instruments”."
+      "a": "Coordination piggybacks on a Securities Act registration statement; this issuer is not filing with the SEC at all.",
+      "b": "Notification is reserved for seasoned issuers with years of continuous operation and earnings, which a two-year-old startup lacks.",
+      "c": "A federal intrastate exemption removes SEC registration only; the offering still needs state registration or a state exemption."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
@@ -1686,31 +1686,31 @@
     "id": "series-63-readiness-check-s63-securities-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-securities",
-    "prompt": "Which statement correctly describes the investment contract concept as tested in Series 63 securities and exemptions?",
+    "prompt": "An issuer is selling shares to accredited investors in State X under SEC Regulation D, Rule 506(b). What may the State X Administrator require for the offering?",
     "options": [
       {
         "id": "a",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "A notice filing with a copy of Form D, a fee, and consent to service of process"
       },
       {
         "id": "b",
-        "text": "A security exempt from state registration requirements because of issuer/type, though antifraud rules still apply."
+        "text": "Registration by qualification, since the shares are not registered with the SEC"
       },
       {
         "id": "c",
-        "text": "A transaction exempt from registration, often because of buyer type or transaction nature, while the security itself may not be exempt."
+        "text": "Registration by coordination, effective once the issuer files Form D with the SEC"
       },
       {
         "id": "d",
-        "text": "Investment of money in a common enterprise with expectation of profits primarily from efforts of others"
+        "text": "Merit review of the terms before sale, since accredited investors buy unregistered stock"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Investment of money in a common enterprise with expectation of profits primarily from efforts of others. Example: Passive real estate program can be investment contract.",
+    "correctOptionId": "a",
+    "explanation": "Rule 506 offerings are federal covered securities under NSMIA, so states may not require registration or merit review. A state may still require a notice filing, generally a copy of Form D within 15 days after the first sale in the state, plus a filing fee and a consent to service of process, and it keeps its antifraud authority.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Investment of money in a common enterprise with expectation of profits primarily from efforts of others”.",
-      "b": "Not the best answer here; the right answer is “Investment of money in a common enterprise with expectation of profits primarily from efforts of others”.",
-      "c": "Not the best answer here; the right answer is “Investment of money in a common enterprise with expectation of profits primarily from efforts of others”."
+      "b": "Lack of SEC registration does not trigger state qualification here; NSMIA preempts state registration of Rule 506 offerings.",
+      "c": "Coordination applies to offerings registered under the Securities Act; filing Form D is a federal notice, not a registration statement.",
+      "d": "NSMIA bars state merit review of federal covered securities, including Rule 506 offerings, regardless of who the buyers are."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
@@ -1719,31 +1719,31 @@
     "id": "series-63-readiness-check-s63-securities-004",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-securities",
-    "prompt": "Which statement correctly describes a nonissuer transaction as tested in Series 63 securities and exemptions?",
+    "prompt": "Within 12 months, an issuer offers unregistered shares in State X to 8 individuals and 15 insurance companies. No commission is paid for soliciting the individuals, and the issuer reasonably believes all buyers are purchasing for investment. How does the Uniform Securities Act treat the offering?",
     "options": [
       {
         "id": "a",
-        "text": "A transaction where proceeds do not go to issuer, typically secondary trading between investors"
+        "text": "It is not exempt, because the 23 offerees exceed the ten-offeree limit"
       },
       {
         "id": "b",
-        "text": "Investment of money in a common enterprise with expectation of profits primarily from efforts of others."
+        "text": "The shares become exempt securities, so later resales are also exempt"
       },
       {
         "id": "c",
-        "text": "A security whose state registration is preempted under federal law, though states may require notice filings and fees."
+        "text": "It is an exempt private placement transaction; the shares are not exempt"
       },
       {
         "id": "d",
-        "text": "A transaction where proceeds go to the issuer, usually primary market."
+        "text": "It is exempt if no more than 35 of the buyers are nonaccredited investors"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "A transaction where proceeds do not go to issuer, typically secondary trading between investors. Example: Investor sells shares to another investor.",
+    "correctOptionId": "c",
+    "explanation": "USA §402 exempts offers to no more than 10 persons in the state, excluding institutional investors, during 12 months if no commission is paid for soliciting noninstitutional buyers and the seller reasonably believes they buy for investment. Insurance companies are institutional, so only 8 offerees count. The exemption covers the transaction, not the security, so a later resale needs its own exemption or registration.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which statement correctly describes the investment contract concept as tested in Series 63 securities and…”), not to this one.",
-      "c": "Not the best answer here; the right answer is “A transaction where proceeds do not go to issuer, typically secondary trading between investors”.",
-      "d": "This is the answer to a different question (“Which statement correctly describes an issuer transaction as tested in Series 63 securities and exemptions?”), not to this one."
+      "a": "Institutional investors such as insurance companies are not counted toward the ten-offeree limit, so only 8 offerees count.",
+      "b": "A transactional exemption does not make the security itself exempt; each later resale must find its own exemption or be registered.",
+      "d": "The 35-purchaser figure is the federal Rule 506 cap on nonaccredited buyers; the USA private placement test counts noninstitutional offerees, not buyers."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
@@ -1752,31 +1752,31 @@
     "id": "series-63-readiness-check-s63-securities-005",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-securities",
-    "prompt": "Which statement correctly describes a stop order as tested in Series 63 securities and exemptions?",
+    "prompt": "An agent sells general obligation municipal bonds, which are exempt from state registration, and tells a client they carry a AAA rating when the actual rating is BBB. Under the Uniform Securities Act, what is the status of the agent's conduct?",
     "options": [
       {
         "id": "a",
-        "text": "A transaction where proceeds do not go to issuer, typically secondary trading between investors."
+        "text": "It is outside the Act, because exempt securities are not covered by state law"
       },
       {
         "id": "b",
-        "text": "Administrator order denying, suspending, or revoking effectiveness of a securities registration"
+        "text": "It violates the antifraud rule, which applies to exempt securities as well"
       },
       {
         "id": "c",
-        "text": "State registration coordinated with a federal Securities Act registration statement."
+        "text": "It becomes a violation once the client sells the bonds at a realized loss"
       },
       {
         "id": "d",
-        "text": "Separate offerings may be combined for exemption analysis if they are really one financing plan."
+        "text": "It is an MSRB matter alone, since municipal bonds fall outside state authority"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Administrator order denying, suspending, or revoking effectiveness of a securities registration. Example: False filing can lead to stop order.",
+    "explanation": "USA §101 makes it unlawful, in connection with the offer, sale or purchase of any security, to make an untrue statement of a material fact. Exemptions from registration do not exempt anyone from the antifraud provisions, so misstating the bonds' rating is fraud even though the bonds need no state registration.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes a nonissuer transaction as tested in Series 63 securities and exemptions?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Administrator order denying, suspending, or revoking effectiveness of a securities registration”.",
-      "d": "Not the best answer here; the right answer is “Administrator order denying, suspending, or revoking effectiveness of a securities registration”."
+      "a": "Exempt securities are excused from registration, not from the Act; the antifraud provisions reach every security.",
+      "c": "The misstatement is a violation when made; a realized loss matters for a civil damages claim, not for whether fraud occurred.",
+      "d": "MSRB rules apply to municipal dealers, but state antifraud authority over misstatements in any security sale remains in force."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
@@ -1784,32 +1784,32 @@
   {
     "id": "series-63-readiness-check-s63-securities-006",
     "examSlug": "series-63-readiness-check",
-    "topicId": "s63-securities",
-    "prompt": "Which statement correctly describes an issuer transaction as tested in Series 63 securities and exemptions?",
+    "topicId": "s63-iar",
+    "prompt": "Under the NASAA model rule on IAR registration requirements, which applicant satisfies the IAR qualification examination requirement without passing another exam?",
     "options": [
       {
         "id": "a",
-        "text": "A transaction exempt from registration, often because of buyer type or transaction nature, while the security itself may not be exempt."
+        "text": "An applicant who passed the Series 7 and Series 63 last year"
       },
       {
         "id": "b",
-        "text": "A state filing for certain federal covered securities, often with documents, consent to service, and fees, not full merit registration."
+        "text": "An applicant who passed the Series 66 but has not passed the Series 7"
       },
       {
         "id": "c",
-        "text": "A transaction where proceeds go to the issuer, usually primary market"
+        "text": "An applicant who holds a CPA license and no other credential"
       },
       {
         "id": "d",
-        "text": "A transaction where proceeds do not go to issuer, typically secondary trading between investors."
+        "text": "An applicant who currently holds the CFA charter in good standing"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "A transaction where proceeds go to the issuer, usually primary market. Example: Company sells newly issued shares.",
+    "correctOptionId": "d",
+    "explanation": "The NASAA IAR registration model rule qualifies an IAR who has passed the Series 65, or the Series 66 together with the Series 7, within two years before applying. It waives the exam for holders of the CFP, ChFC, PFS, CFA or CIC designation in good standing, so a current CFA charterholder qualifies without testing.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A transaction where proceeds go to the issuer, usually primary market”.",
-      "b": "Not the best answer here; the right answer is “A transaction where proceeds go to the issuer, usually primary market”.",
-      "d": "This is the answer to a different question (“Which statement correctly describes a nonissuer transaction as tested in Series 63 securities and exemptions?”), not to this one."
+      "a": "The Series 7 and 63 qualify a broker-dealer agent; neither exam covers the advisory content needed for IAR registration.",
+      "b": "The Series 66 qualifies an IAR only when combined with the Series 7; without it the applicant still needs another exam.",
+      "c": "A CPA license alone is not on the model rule's waiver list; a CPA needs the PFS credential or must pass the qualifying exam."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-SECURITIES). · Local QA repair (stems/distractors)"
@@ -1818,31 +1818,31 @@
     "id": "series-63-readiness-check-s63-ia-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ia",
-    "prompt": "In Series 63 investment advisers, why does special compensation matter for broker-dealer IA exclusion?",
+    "prompt": "A state Administrator is reviewing four people who give investment-related advice. Which one meets the definition of an investment adviser under the Uniform Securities Act?",
     "options": [
       {
         "id": "a",
-        "text": "Broker-dealer advice must never be solely incidental and without special advisory compensation to remain excluded"
+        "text": "A professor who explains stock valuation methods in a university finance course"
       },
       {
         "id": "b",
-        "text": "A person in business of advising others about securities for compensation."
+        "text": "A CPA who advertises a separate hourly fee for recommending specific mutual funds"
       },
       {
         "id": "c",
-        "text": "Advice about securities, in the business, for compensation."
+        "text": "A broker-dealer that gives advice incidental to trades for no fee beyond commissions"
       },
       {
         "id": "d",
-        "text": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded"
+        "text": "The publisher of a weekly financial newspaper of general and regular circulation"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded. Example: Charging separate planning fee can create IA status.",
+    "correctOptionId": "b",
+    "explanation": "The USA excludes lawyers, accountants, engineers and teachers whose advice is solely incidental to their profession. A CPA who holds out advisory services and charges a separate fee for specific fund recommendations is no longer giving incidental advice, so the CPA is in the business of advising others for compensation and is an investment adviser.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded”.",
-      "b": "Not the best answer here; the right answer is “Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded”.",
-      "c": "Not the best answer here; the right answer is “Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded”."
+      "a": "Teachers are excluded when investment content is incidental to teaching; a finance course is classic excluded instruction.",
+      "c": "A broker-dealer is excluded when its advice is incidental to brokerage and it receives no special compensation for it.",
+      "d": "Publishers of bona fide newspapers or magazines of general, regular circulation are excluded from the definition."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA). · Local QA repair (stems/distractors)"
@@ -1851,31 +1851,31 @@
     "id": "series-63-readiness-check-s63-ia-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ia",
-    "prompt": "Which statement correctly describes a federal covered adviser as tested in Series 63 investment advisers?",
+    "prompt": "An adviser based in one state has grown to $104 million in regulatory assets under management. Under Section 203A of the Investment Advisers Act and SEC Rule 203A-1, which statement about its registration is correct?",
     "options": [
       {
         "id": "a",
-        "text": "An adviser registered with the SEC, or excluded from state registration by federal preemption (typically due to AUM or adviser type)."
+        "text": "It must register with the SEC because its assets now exceed $100 million"
       },
       {
         "id": "b",
-        "text": "State advisers generally register in states where they have place of business or clients unless exempt/preempted."
+        "text": "It must stay with the state and may not apply to the SEC before $110 million"
       },
       {
         "id": "c",
-        "text": "Any person in the business of advising others about securities for compensation, whether registered with a state or the SEC."
+        "text": "It must register with both the SEC and its home state during the buffer range"
       },
       {
         "id": "d",
-        "text": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded."
+        "text": "It may register with the SEC now but is not required to until $110 million"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "An adviser registered with the SEC or excluded from state registration due to federal preemption, often based on assets under management or adviser type. Example: Large advisers generally register with SEC.",
+    "correctOptionId": "d",
+    "explanation": "Rule 203A-1 creates a buffer: an adviser with $100 million to $110 million of assets under management may register with the SEC but need not, and must register with the SEC at $110 million. An SEC-registered adviser need not withdraw until assets fall below $90 million. Once federal covered, it notice-files with the states instead of registering.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “An adviser registered with the SEC or excluded from state registration due to federal preemption, often based on assets under management or…”.",
-      "c": "That is the general definition of an investment adviser, not the federal covered subset.",
-      "d": "This is the answer to a different question (“In Series 63 investment advisers, why does special compensation matter for broker-dealer IA exclusion?”), not to this one."
+      "a": "Treats $100 million as mandatory; SEC registration becomes required at $110 million, so $104 million is optional territory.",
+      "b": "Reverses the buffer; the rule permits, rather than prohibits, SEC registration once assets reach $100 million.",
+      "c": "Dual registration is not the rule; an SEC-registered adviser makes notice filings with states rather than registering there."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA). · Local QA repair (stems/distractors)"
@@ -1884,31 +1884,31 @@
     "id": "series-63-readiness-check-s63-ia-003",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-ia",
-    "prompt": "For the Series 63, which of the following best answers this item: In Series 63 investment advisers, why is custody an IA concern?",
+    "prompt": "An adviser's advisory contracts follow the Uniform Securities Act. Which planned event requires the adviser to obtain each client's consent before it takes effect?",
     "options": [
       {
         "id": "a",
-        "text": "An adviser registered with the SEC or excluded from state registration due to federal preemption, often based on assets under management or adviser type."
+        "text": "Admitting a new minority partner to the adviser, which is organized as a partnership"
       },
       {
         "id": "b",
-        "text": "Custody of client funds/securities triggers safeguards, disclosure, and examination requirements"
+        "text": "Moving the adviser's principal office and amending Form ADV to report the new address"
       },
       {
         "id": "c",
-        "text": "Banks, lawyers/accountants/teachers/engineers whose advice is incidental, broker-dealers with incidental advice and no special compensation, publishers, and others may be excluded."
+        "text": "Transferring its advisory contracts to another adviser as part of a sale of the business"
       },
       {
         "id": "d",
-        "text": "Broker-dealer advice must be solely incidental and without special advisory compensation to remain excluded."
+        "text": "Assigning a newly hired IAR to take over servicing an existing client's account at the firm"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Custody of client funds/securities triggers safeguards, disclosure, and examination requirements. Example: Adviser can withdraw fees from client account; check custody rule.",
+    "correctOptionId": "c",
+    "explanation": "Under the USA an advisory contract must provide that it cannot be assigned without the client's consent, and a transfer of the contracts or of a controlling interest is an assignment. A partnership adviser must notify clients of a change in membership, but a minority partner's admission is not an assignment requiring consent.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes a federal covered adviser as tested in Series 63 investment advisers?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Custody of client funds/securities triggers safeguards, disclosure, and examination requirements”.",
-      "d": "This is the answer to a different question (“In Series 63 investment advisers, why does special compensation matter for broker-dealer IA exclusion?”), not to this one."
+      "a": "A change in minority partners is not an assignment; the partnership need only notify clients of the change in membership.",
+      "b": "An address change is handled by amending Form ADV with the Administrator; it does not alter or assign the client's contract.",
+      "d": "Reassigning servicing staff within the same adviser leaves the contract with the same firm, so no assignment occurs."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IA). · Local QA repair (stems/distractors)"
@@ -1917,31 +1917,31 @@
     "id": "series-63-readiness-check-s63-iar-001",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-iar",
-    "prompt": "An investment adviser representative (IAR) opens a place of business in State A while the advisory firm is registered there. What registration consequence is most accurate under Series 63 principles?",
+    "prompt": "An IAR works for an SEC-registered (federal covered) adviser out of its sole office in State A and has individual clients living in States A, B and C. Where must the IAR register?",
     "options": [
       {
         "id": "a",
-        "text": "A place of business in a state often triggers IAR registration there"
+        "text": "In State A, where the IAR maintains a place of business"
       },
       {
         "id": "b",
-        "text": "IARs never register in any state if the SEC regulates the firm"
+        "text": "In States A, B and C, where the IAR's clients each reside"
       },
       {
         "id": "c",
-        "text": "Only the firm registers; individuals performing advisory functions never register"
+        "text": "With the SEC, which preempts state IAR registration"
       },
       {
         "id": "d",
-        "text": "Place of business matters only for broker-dealer agents, never IARs"
+        "text": "In every state where the adviser makes a notice filing"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Having a place of business in a state is a classic trigger for IAR registration in that state (subject to specific exclusions). Firm registration status does not erase individual IAR duties.",
+    "explanation": "Under Section 203A of the Investment Advisers Act and SEC Rule 203A-3, a state may require an IAR of a federal covered adviser to register only if the IAR has a place of business in that state. This IAR's office is in State A, so State A registration is required, while States B and C cannot require it.",
     "distractorExplanations": {
-      "b": "Federal covered advisers change the firm analysis; IARs still often have state notice/registration issues.",
-      "c": "Individuals who meet the IAR definition generally must register or notice-file as required.",
-      "d": "Place-of-business analysis applies to IARs as well as to BD agents in their own regimes."
+      "b": "Client residence drives registration for state-registered advisers' staff, not for IARs of federal covered advisers.",
+      "c": "The SEC does not register IARs; NSMIA preserved state registration of IARs who have a place of business in the state.",
+      "d": "Confuses the firm's notice filings with the IAR's duty; IAR registration follows the IAR's own place of business."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IAR). · Local QA repair (stems/distractors) · Local IAR distractor rewrite"
@@ -1950,31 +1950,31 @@
     "id": "series-63-readiness-check-s63-iar-002",
     "examSlug": "series-63-readiness-check",
     "topicId": "s63-iar",
-    "prompt": "Which activity most clearly points toward investment adviser representative status under the Series 63 framework?",
+    "prompt": "A state-registered adviser employs the four people described below. Which one falls outside the IAR definition and does not need to register as an IAR?",
     "options": [
       {
         "id": "a",
-        "text": "Soliciting advisory clients for compensation in a role covered by the IAR definition"
+        "text": "A staff member who phones prospects to solicit new advisory clients for the firm's IARs"
       },
       {
         "id": "b",
-        "text": "Working solely as a receptionist with no securities or advisory contact"
+        "text": "An assistant who schedules meetings and updates client records but gives no advice"
       },
       {
         "id": "c",
-        "text": "Driving a delivery van for the advisory firm’s office supplies"
+        "text": "A manager who supervises the employees who make portfolio recommendations"
       },
       {
         "id": "d",
-        "text": "Owning shares of an unrelated public company in a personal brokerage account"
+        "text": "An analyst who determines which securities the firm's advisers will recommend"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Soliciting advisory clients for compensation is core IAR territory under state adviser frameworks tested on Series 63.",
+    "correctOptionId": "b",
+    "explanation": "Under USA Section 401 an IAR includes anyone who makes recommendations or gives advice, manages accounts, determines which recommendations to make, solicits or sells advisory services, or supervises employees who do. Staff performing only clerical or ministerial functions are excluded, so the scheduling assistant need not register.",
     "distractorExplanations": {
-      "b": "Pure clerical roles without solicitation/advice are typically excluded.",
-      "c": "Non-advisory logistics work is not IAR activity.",
-      "d": "Personal investing alone does not make someone an IAR of a firm."
+      "a": "Soliciting or offering the adviser's services is expressly within the IAR definition, so this person must register.",
+      "c": "Supervising employees who give advice or make recommendations brings a manager within the IAR definition.",
+      "d": "Determining which recommendations will be made to clients is an IAR function even without direct client contact."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IAR). · Local QA repair (stems/distractors) · Local IAR distractor rewrite"

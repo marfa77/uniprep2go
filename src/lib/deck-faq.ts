@@ -7,6 +7,7 @@ import { getDeckShortPitch, getDeckLongDescription, formatExamFocusedContent } f
 import { getDeckPositioning } from "./deck-positioning";
 import { getDeckUniqueContent } from "./deck-money-page-content";
 import { getExamFactsProfileForDeck } from "./exam-facts";
+import { withMockAccessDisclosure } from "./mock-exams/mock-access-faq";
 
 function normalizeQuestion(question: string): string {
   return question.toLowerCase().replace(/\s+/g, " ").trim();
@@ -112,7 +113,7 @@ export function buildMergedDeckFaqs(deck: Deck): DeckFaq[] {
     }
   }
 
-  return merged.slice(0, 8);
+  return withMockAccessDisclosure(merged.slice(0, 8));
 }
 
 /** Plain text export for boilerplate CI (visible page copy only). */

@@ -1,0 +1,361 @@
+{
+  "ptcb-pharmacy-technician-mock": {
+    "ptcb-pharmacy-technician-mock-050": {
+      "difficulty": "easy",
+      "prompt": "Shelf labels in a pharmacy read hydrALAZINE and hydrOXYzine. What is the purpose of writing the names this way?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "To mark both drugs as controlled substances",
+        "b": "To show that the two are interchangeable",
+        "c": "To flag drugs that need refrigeration",
+        "d": "To make the differing letters stand out"
+      },
+      "explanation": "Tall man lettering capitalizes the distinguishing letters of look-alike, sound-alike (LASA) names, such as hydrALAZINE vs hydrOXYzine or predniSONE vs prednisoLONE, to reduce selection errors. It works best combined with separate shelf locations and barcode scanning.",
+      "distractorExplanations": {
+        "a": "Neither drug is controlled; tall man lettering is not a scheduling mark.",
+        "b": "Hydralazine is an antihypertensive and hydroxyzine an antihistamine; they are not interchangeable.",
+        "c": "Storage temperature is shown with refrigeration labels, not capital letters in the name."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-051": {
+      "difficulty": "easy",
+      "prompt": "A technician who is certified to immunize under state law has just given a flu shot. What should happen to the used needle?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Engage the safety cap; use a sharps bin",
+        "b": "Recap it with two hands, then throw it away",
+        "c": "Bag it and place it in the regular trash",
+        "d": "Set it on the tray until the area is cleaned"
+      },
+      "explanation": "Used needles go straight into a puncture-resistant sharps container at the point of use, after the safety device is engaged. Two-handed recapping is a leading cause of needlestick injuries and is prohibited under OSHA bloodborne pathogen rules.",
+      "distractorExplanations": {
+        "b": "Two-handed recapping causes needlestick injuries and violates OSHA practice.",
+        "c": "Needles in regular trash can injure staff and sanitation workers, even inside a bag.",
+        "d": "Leaving an exposed needle on a tray risks an accidental stick; disposal must be immediate."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-052": {
+      "difficulty": "medium",
+      "prompt": "A patient who takes sertraline daily brings in a new prescription for phenelzine (Nardil). Why must the technician alert the pharmacist?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Phenelzine blocks the absorption of sertraline",
+        "b": "The combination can cause serotonin syndrome",
+        "c": "The combination causes severe hypoglycemia",
+        "d": "Both drugs are Schedule IV controlled drugs"
+      },
+      "explanation": "Phenelzine is an MAO inhibitor. Combining an MAOI with an SSRI can cause serotonin syndrome (agitation, high fever, tremor, clonus), which can be fatal. A washout period is required: at least 2 weeks after stopping sertraline, or 5 weeks after fluoxetine.",
+      "distractorExplanations": {
+        "a": "The danger is excess serotonin, not reduced absorption.",
+        "c": "Hypoglycemia is not the recognized risk of an MAOI-SSRI combination.",
+        "d": "Neither phenelzine nor sertraline is a controlled substance."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-053": {
+      "difficulty": "medium",
+      "prompt": "A pregnant patient asks about vaccines at the pharmacy's immunization clinic. Which vaccine is contraindicated during pregnancy?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Tdap (tetanus, diphtheria, pertussis)",
+        "b": "Inactivated influenza vaccine",
+        "c": "Hepatitis B vaccine when indicated",
+        "d": "MMR (measles, mumps, rubella)"
+      },
+      "explanation": "MMR is a live attenuated vaccine and is contraindicated during pregnancy, as are other live vaccines. Tdap is recommended during each pregnancy (ideally at 27-36 weeks), and inactivated influenza vaccine is recommended in any trimester during flu season.",
+      "distractorExplanations": {
+        "a": "Tdap is recommended in every pregnancy to protect the newborn from pertussis.",
+        "b": "Inactivated flu vaccine is safe and recommended in any trimester.",
+        "c": "Hepatitis B vaccine is not live and may be given in pregnancy when indicated."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-054": {
+      "difficulty": "medium",
+      "prompt": "A technician fills metoprolol tartrate when the prescription is for metoprolol succinate ER, and the pharmacist catches it at final verification. How should this event be classified?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A near miss that should still be reported",
+        "b": "A medication error that reached the patient",
+        "c": "An adverse drug reaction to metoprolol",
+        "d": "Not an event, because no harm occurred"
+      },
+      "explanation": "An error caught before it reaches the patient is a near miss. Reporting near misses internally, and to programs such as the ISMP Medication Errors Reporting Program, exposes system weaknesses (here, look-alike salt forms of metoprolol) before a patient is harmed.",
+      "distractorExplanations": {
+        "b": "The wrong product never left the pharmacy, so the error did not reach the patient.",
+        "c": "An adverse drug reaction is harm from a correctly used drug; this was a dispensing error.",
+        "d": "Near misses are events worth reporting precisely because they reveal risk before harm."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-055": {
+      "difficulty": "medium",
+      "prompt": "A patient's profile notes severely reduced kidney function (eGFR below 30 mL/min). Which new prescription is most likely to need pharmacist review?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Levothyroxine 75 mcg every morning",
+        "b": "Sertraline 50 mg daily",
+        "c": "Metformin 1,000 mg twice daily",
+        "d": "Ondansetron 4 mg as needed"
+      },
+      "explanation": "Metformin is cleared by the kidneys. It is contraindicated when eGFR is below 30 mL/min because accumulation raises the risk of lactic acidosis. Gabapentin, many antibiotics and enoxaparin are other drugs that commonly need renal dose adjustment.",
+      "distractorExplanations": {
+        "a": "Levothyroxine does not need dose adjustment for kidney function.",
+        "b": "Sertraline is cleared mainly by the liver and needs no renal adjustment.",
+        "d": "Ondansetron needs no renal dose adjustment."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-056": {
+      "difficulty": "medium",
+      "prompt": "A new prescription for diphenhydramine 50 mg at bedtime for sleep is written for an 82-year-old patient. Why might the pharmacist contact the prescriber?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "It is a controlled drug for patients over 80",
+        "b": "It loses its effect in patients over 65",
+        "c": "It must be taken in the morning to work",
+        "d": "Anticholinergic effects raise fall risk"
+      },
+      "explanation": "First-generation antihistamines such as diphenhydramine are on the AGS Beers Criteria as potentially inappropriate for older adults: strong anticholinergic effects cause confusion, constipation, urinary retention and falls. The pharmacist may suggest a safer option.",
+      "distractorExplanations": {
+        "a": "Diphenhydramine is not a controlled substance at any age.",
+        "b": "Older adults are more sensitive to diphenhydramine, not less.",
+        "c": "Diphenhydramine is sedating, so bedtime dosing is the usual pattern; timing is not the issue."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-057": {
+      "difficulty": "easy",
+      "prompt": "A prescriber phones in a new prescription to the pharmacist. What should the pharmacist do before ending the call?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Ask the prescriber to spell the drug name alone",
+        "b": "Read the full order back to confirm it",
+        "c": "Wait for a fax copy before writing it down",
+        "d": "Enter the order later from memory"
+      },
+      "explanation": "Read-back means writing the verbal order down and repeating the whole order (drug, strength, directions, quantity, refills) so the prescriber can confirm it. It catches sound-alike errors such as fifteen vs fifty and is a core ISMP and Joint Commission safety practice.",
+      "distractorExplanations": {
+        "a": "Spelling the drug name helps, but strength, directions and quantity must also be confirmed.",
+        "c": "Verbal orders are valid; the order is written down during the call and read back.",
+        "d": "Entering an order from memory invites transcription errors."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-058": {
+      "difficulty": "medium",
+      "prompt": "Which medication appears on the ISMP list of high-alert medications for community and ambulatory settings?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Insulin glargine (Lantus)",
+        "b": "Amoxicillin (Amoxil)",
+        "c": "Loratadine (Claritin)",
+        "d": "Fluticasone nasal (Flonase)"
+      },
+      "explanation": "High-alert medications cause significant harm when used in error. The ISMP community/ambulatory list includes insulin, oral anticoagulants, opioids, oral methotrexate, sulfonylureas and pediatric liquids that need measuring. Extra safeguards, such as independent double checks, apply.",
+      "distractorExplanations": {
+        "b": "Amoxicillin errors are rarely catastrophic, so it is not on the high-alert list.",
+        "c": "Loratadine has a wide safety margin and is not a high-alert drug.",
+        "d": "Nasal fluticasone is not on the ISMP high-alert list."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-059": {
+      "difficulty": "medium",
+      "prompt": "Which approach best describes a 'just culture' for handling medication errors in a pharmacy?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The person who made the error is disciplined first",
+        "b": "Errors are reported only if harm reaches a patient",
+        "c": "Reports are filed anonymously and not reviewed",
+        "d": "Errors are reported openly and analyzed for causes"
+      },
+      "explanation": "A just culture encourages reporting by looking for system causes (workflow, look-alike packaging, staffing) while still holding staff accountable for reckless behavior. Punitive responses drive errors underground and prevent the pharmacy from learning.",
+      "distractorExplanations": {
+        "a": "Automatic discipline discourages reporting, which is the opposite of a just culture.",
+        "b": "Near misses and no-harm errors should also be reported; they reveal risk early.",
+        "c": "Reports are only useful if they are reviewed and lead to system fixes."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-060": {
+      "difficulty": "easy",
+      "prompt": "While restocking shelves from a new delivery, where should a technician place bottles that have the latest expiration date?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "In front, so the new stock is used first",
+        "b": "In overflow until older stock expires",
+        "c": "Behind the stock that expires sooner",
+        "d": "Anywhere, as long as the NDC matches"
+      },
+      "explanation": "Stock rotation (first-expiring, first-out) keeps the earliest-expiring product in front so it is used first. Newer, longer-dated bottles go behind, reducing expired waste and the risk of dispensing outdated medication.",
+      "distractorExplanations": {
+        "a": "Putting new stock in front leaves older bottles to expire on the shelf.",
+        "b": "Holding stock aside until old product expires wastes inventory and invites missed outdates.",
+        "d": "A matching NDC confirms the product, but placement still has to follow expiration dates."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-061": {
+      "difficulty": "medium",
+      "prompt": "A technician is about to compound a nonsterile oral suspension. Which hand-hygiene step is appropriate?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Wash hands with soap and water, then glove",
+        "b": "Apply hand lotion so gloves go on easily",
+        "c": "Wipe hands with a dry paper towel only",
+        "d": "Skip handwashing because gloves will be worn"
+      },
+      "explanation": "USP <795> calls for washing hands with soap and water before nonsterile compounding, then putting on clean gloves. Gloves do not replace handwashing; jewelry is removed and gloves are changed if they become contaminated or torn.",
+      "distractorExplanations": {
+        "b": "Lotion can contaminate the preparation and does not clean the hands.",
+        "c": "A dry wipe removes neither microbes nor drug residue.",
+        "d": "Gloves supplement handwashing; they never replace it."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-062": {
+      "difficulty": "easy",
+      "prompt": "Which auxiliary labels belong on a bottle of amoxicillin oral suspension after it has been reconstituted?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Do not shake; may cause drowsiness",
+        "b": "Shake well; discard after 14 days",
+        "c": "For external use only; do not swallow",
+        "d": "Dissolve under the tongue; do not chew"
+      },
+      "explanation": "Reconstituted amoxicillin suspension must be shaken before each dose because the particles settle, and it is discarded 14 days after mixing; refrigeration is preferred but not required. Every reconstituted antibiotic gets a beyond-use date on its label.",
+      "distractorExplanations": {
+        "a": "Suspensions must be shaken, and amoxicillin does not usually cause drowsiness.",
+        "c": "Amoxicillin suspension is taken by mouth, not applied externally.",
+        "d": "Sublingual instructions apply to tablets such as nitroglycerin, not oral liquids."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-063": {
+      "difficulty": "medium",
+      "prompt": "During filling, the NDC barcode on a stock bottle does not match the product selected in the dispensing system. What should the technician do?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Override the scan if the drug name matches",
+        "b": "Fill it and leave a note for the pharmacist",
+        "c": "Type the NDC by hand to force a match",
+        "d": "Stop and resolve the mismatch before filling"
+      },
+      "explanation": "A barcode mismatch means the product, strength or package may differ from the order. The technician stops, compares drug, strength, dosage form and NDC with the order, and resolves or escalates the problem before filling. Overriding the scan defeats the safety check.",
+      "distractorExplanations": {
+        "a": "The same name can hide a different strength or form; overriding defeats the check.",
+        "b": "Filling first puts a possibly wrong product into the workflow.",
+        "c": "Typing a matching NDC hides the discrepancy instead of resolving it."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-064": {
+      "difficulty": "easy",
+      "prompt": "A stock bottle's manufacturer expiration date reads 06/2027 with no day listed. Through what date may the product be used?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "June 30, 2027",
+        "b": "June 1, 2027",
+        "c": "May 31, 2027",
+        "d": "December 31, 2027"
+      },
+      "explanation": "When an expiration date shows only a month and year, the product is good through the last day of that month, here June 30, 2027. The beyond-use date on a patient's label may be earlier, for example one year from dispensing, under state rules.",
+      "distractorExplanations": {
+        "b": "The product does not expire at the start of the month; it is good through the last day.",
+        "c": "The product is good through the end of the listed month, not the month before.",
+        "d": "The month on the label is the limit; the product is not good through the end of the year."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-065": {
+      "difficulty": "easy",
+      "prompt": "Two patients with similar names are waiting at pickup. Which step best prevents handing a prescription to the wrong person?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Ask the patient to state a last name",
+        "b": "Confirm name and date of birth",
+        "c": "Ask if the patient has visited before",
+        "d": "Check the patient's insurance card"
+      },
+      "explanation": "Using two patient identifiers, typically full name plus date of birth or address, prevents wrong-patient errors, especially with similar names. It is a Joint Commission National Patient Safety Goal and standard pharmacy policy at pickup.",
+      "distractorExplanations": {
+        "a": "A last name alone cannot tell apart two patients with similar names.",
+        "c": "A prior visit does not identify which prescription belongs to the patient.",
+        "d": "An insurance card shows coverage, not that this bag belongs to this patient."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-066": {
+      "difficulty": "medium",
+      "prompt": "Why should 'units' be written out instead of abbreviated as 'U' on an insulin prescription?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "'U' is reserved for unit-dose packaging",
+        "b": "Insurance plans reject claims showing 'U'",
+        "c": "'U' means 'use as directed' on prescriptions",
+        "d": "'U' can be misread as a zero or a four"
+      },
+      "explanation": "ISMP and the Joint Commission 'Do Not Use' list ban 'U' for units because it can be read as 0, 4 or cc, so '10U' becomes 100. Writing 'units' prevents tenfold insulin overdoses with a high-alert drug.",
+      "distractorExplanations": {
+        "a": "'U' is not a unit-dose packaging code; the problem is misreading it as a number.",
+        "b": "The ban is a safety rule, not an insurance billing rule.",
+        "c": "'Use as directed' is written UD or spelled out; 'U' does not mean that."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-067": {
+      "difficulty": "medium",
+      "prompt": "A pediatric prescription orders a dose in mg/kg. Which information must be on the patient profile before the dose can be checked?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The parent's insurance member ID",
+        "b": "The child's height in centimeters",
+        "c": "The child's current weight",
+        "d": "The prescriber's DEA number"
+      },
+      "explanation": "Weight-based pediatric doses (mg/kg) can only be verified with a current, accurately recorded weight, ideally in kilograms. Missing or outdated weights and pound-kilogram mix-ups are leading causes of pediatric dosing errors.",
+      "distractorExplanations": {
+        "a": "Insurance details matter for billing, not for checking a mg/kg dose.",
+        "b": "Height is used for body-surface-area dosing; a mg/kg dose needs weight.",
+        "d": "A DEA number is needed only for controlled substances and does not verify the dose."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-068": {
+      "difficulty": "easy",
+      "prompt": "A patient has an active prescription for ibuprofen 800 mg three times daily, and a new prescription arrives for meloxicam 15 mg daily. What should the technician flag?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Therapeutic duplication of two NSAIDs",
+        "b": "A food interaction with grapefruit juice",
+        "c": "An early refill of a controlled drug",
+        "d": "A conflict with a sulfa drug allergy"
+      },
+      "explanation": "Ibuprofen and meloxicam are both NSAIDs. Taking them together adds GI bleeding, kidney and cardiovascular risk without added benefit. The therapeutic duplication alert goes to the pharmacist, who may contact the prescriber.",
+      "distractorExplanations": {
+        "b": "Neither ibuprofen nor meloxicam has a clinically important grapefruit interaction.",
+        "c": "Neither drug is a controlled substance.",
+        "d": "Meloxicam and ibuprofen are not sulfonamides, and no allergy is listed."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-069": {
+      "difficulty": "medium",
+      "prompt": "A prescription for Celebrex 200 mg is being entered. Which product is a known look-alike/sound-alike mix-up risk for this name?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Crestor (rosuvastatin)",
+        "b": "Cozaar (losartan)",
+        "c": "Coreg (carvedilol)",
+        "d": "Celexa (citalopram)"
+      },
+      "explanation": "Celebrex (celecoxib, an NSAID), Celexa (citalopram, an SSRI) and Cerebyx (fosphenytoin) are on the ISMP list of confused drug names. Checking the indication, the strength (Celebrex 100/200 mg vs Celexa 10/20/40 mg) and the barcode helps catch a wrong selection.",
+      "distractorExplanations": {
+        "a": "Crestor shares a first letter, but it is not on the confused-names list with Celebrex.",
+        "b": "Cozaar is confused with Zocor, not with Celebrex.",
+        "c": "Coreg is confused with Corgard, not with Celebrex."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-070": {
+      "difficulty": "medium",
+      "prompt": "A patient's coworker calls asking whether the patient's prescription is ready and what it is for. What is appropriate under HIPAA?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Share the drug name because the caller knows the patient",
+        "b": "Withhold details unless the patient has authorized it",
+        "c": "Share details once the caller gives the birth date",
+        "d": "Read the label aloud so the caller can confirm it"
+      },
+      "explanation": "Protected health information, including what a prescription is for, may not be disclosed to coworkers or others without the patient's authorization, except as HIPAA permits (for example, to a person the patient has designated). Knowing a birth date does not make a caller authorized.",
+      "distractorExplanations": {
+        "a": "Knowing the patient does not give the caller a right to protected health information.",
+        "c": "A birth date verifies identity details, not authorization to receive them.",
+        "d": "Reading the label to the caller discloses protected health information."
+      }
+    }
+  }
+}

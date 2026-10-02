@@ -1,0 +1,340 @@
+{
+  "series-7-readiness-check": {
+    "series-7-readiness-check-s7-f3-022": {
+      "prompt": "A customer buys shares of an open-end growth fund whose NAV is $23.75. The fund's maximum sales charge is 5% of the public offering price, and the purchase is below the first breakpoint. What public offering price does the customer pay per share?",
+      "options": {
+        "a": "$22.56",
+        "b": "$24.94",
+        "c": "$25.00",
+        "d": "$26.25"
+      },
+      "correctOptionId": "c",
+      "explanation": "Sales charges are quoted as a percentage of the public offering price, not of NAV, so POP = NAV ÷ (1 − sales charge %) = $23.75 ÷ 0.95 = $25.00. Check: 5% of $25.00 is $1.25, and $25.00 − $1.25 = $23.75 NAV. That $1.25 load equals about 5.26% of the amount actually invested at NAV.",
+      "distractorExplanations": {
+        "a": "Subtracts 5% from NAV ($23.75 × 0.95); the sales charge is added on top of NAV to reach the offering price, not deducted from it.",
+        "b": "Adds 5% of NAV ($23.75 × 1.05 = $24.94); because the load is a percentage of POP, NAV must be divided by 0.95 instead.",
+        "d": "Adds another 5% on top of the correct $25.00 offering price ($25.00 × 1.05), double-counting the sales charge."
+      }
+    },
+    "series-7-readiness-check-s7-f3-023": {
+      "prompt": "A customer owns shares of a fund family's growth fund that cost $38,000 and are now worth $44,000. She plans to buy $7,000 of the same family's income fund. The family's first breakpoint is $50,000, and it computes rights of accumulation on current value. How is her $7,000 purchase priced?",
+      "options": {
+        "a": "At the reduced breakpoint rate, since $44,000 of holdings plus $7,000 tops $50,000",
+        "b": "At the full sales charge, because rights of accumulation count her $38,000 cost, not value",
+        "c": "At the full sales charge unless she signs a letter of intent backdated up to 90 days",
+        "d": "At the full sales charge, since holdings in a different fund of the family do not count"
+      },
+      "correctOptionId": "a",
+      "explanation": "Rights of accumulation let a customer combine existing holdings in the same fund family with a new purchase to reach a breakpoint. This family uses current value: $44,000 + $7,000 = $51,000, which exceeds the $50,000 breakpoint, so the new $7,000 purchase receives the reduced sales charge. No letter of intent is needed, and ROA does not expire.",
+      "distractorExplanations": {
+        "b": "Uses her cost basis; this family computes ROA on current value. On cost, $38,000 + $7,000 = $45,000 would miss the breakpoint, which is the trap.",
+        "c": "A letter of intent is a 13-month promise to invest more, with backdating of up to 90 days; it is unnecessary when ROA already reaches the breakpoint.",
+        "d": "Breakpoint discounts generally aggregate purchases across funds within the same family; it is funds outside the family that cannot be combined."
+      }
+    },
+    "series-7-readiness-check-s7-f3-024": {
+      "prompt": "A 45-year-old customer will invest $250,000 in one fund family's large-cap fund and expects to hold it for at least 20 years. The family offers Class A, B and C shares, and $250,000 is past several A-share breakpoints. Which recommendation best serves the customer?",
+      "options": {
+        "a": "Class C shares, since the absence of a front-end load makes them cheapest over any holding period",
+        "b": "Class A shares, because the breakpoint cuts the front load and the ongoing 12b-1 fee is lower",
+        "c": "Class B shares, because the deferred sales charge declines to zero after several years of holding",
+        "d": "Split the money evenly between A shares of two fund families to diversify the managers"
+      },
+      "correctOptionId": "b",
+      "explanation": "For a large, long-term purchase, Class A shares usually cost least: $250,000 qualifies for a reduced front-end load, and A shares carry a low 12b-1 fee (commonly 0.25%) for the life of the holding. Class C's level 12b-1 fee (often about 1%) compounds against the customer for 20 years, and a large B-share purchase forfeits breakpoints. Splitting across families so each piece misses a breakpoint is breakpoint selling.",
+      "distractorExplanations": {
+        "a": "C shares avoid a front load but charge a higher annual 12b-1 fee, so over a 20-year holding they usually cost more than discounted A shares.",
+        "c": "The CDSC does fade, but B shares carry higher 12b-1 fees until conversion and a $250,000 B purchase gives up the A-share breakpoint discount.",
+        "d": "Dividing the purchase between families leaves each $125,000 piece at a smaller breakpoint and a higher load, a breakpoint-selling concern."
+      }
+    },
+    "series-7-readiness-check-s7-f3-025": {
+      "prompt": "At 11:00 a.m. a customer enters orders to sell 500 shares of an S&P 500 index mutual fund and 500 shares of an S&P 500 ETF. How will the two sales be priced?",
+      "options": {
+        "a": "Both at the prior day's closing NAV, published before the market opened",
+        "b": "Both at the market price when executed, which can drift from the day's NAV",
+        "c": "The fund at its 11 a.m. market quote; the ETF at the NAV computed after the close",
+        "d": "The ETF at market when filled; the fund at the NAV computed after the close"
+      },
+      "correctOptionId": "d",
+      "explanation": "Open-end mutual funds use forward pricing: a redemption is priced at the next NAV computed after the order is received, normally at the 4:00 p.m. ET close. ETFs trade on an exchange, so the ETF sale fills at the market price when executed. Authorized participants create and redeem ETF shares in large creation units, and that arbitrage keeps the ETF's market price close to its NAV during the day.",
+      "distractorExplanations": {
+        "a": "Pricing an order at a previously published NAV is backward pricing, which forward-pricing rules prohibit for open-end fund orders.",
+        "b": "Right for the ETF, but an open-end fund has no secondary market; the fund itself redeems shares at the next computed NAV.",
+        "c": "Reverses the two products: open-end fund shares are redeemed by the fund at NAV, while ETF shares trade on an exchange at market prices."
+      }
+    },
+    "series-7-readiness-check-s7-f3-026": {
+      "prompt": "A 78-year-old customer owns a variable annuity bought nine years ago whose surrender period has ended. A rep proposes a 1035 exchange into a new variable annuity with a living-benefit rider and a seven-year surrender schedule. What is the main suitability concern?",
+      "options": {
+        "a": "A new surrender period would limit access to her money for seven more years",
+        "b": "The exchange makes the gains in the old contract taxable as ordinary income",
+        "c": "Her purchase payments would buy annuity units, whose value is fixed until payout",
+        "d": "FINRA rules bar a variable annuity exchange within 36 months of the last one"
+      },
+      "correctOptionId": "a",
+      "explanation": "A 1035 exchange moves value tax-free from one annuity to another, but it can restart surrender charges. For a 78-year-old, a new seven-year schedule ties up money into her mid-80s, when liquidity or care needs are likely. FINRA Rule 2330 requires the rep and a reviewing principal to weigh new surrender charges, rider costs and lost benefits; the rider must be worth that loss of liquidity.",
+      "distractorExplanations": {
+        "b": "Section 1035 allows one annuity to be exchanged for another without current taxation; the gains stay tax-deferred in the new contract.",
+        "c": "Payments during the accumulation period buy accumulation units; annuity units arise at annuitization, and their value still varies with the separate account.",
+        "d": "Rule 2330 makes a prior exchange within 36 months a factor the firm must consider, not an outright prohibition on exchanging."
+      }
+    },
+    "series-7-readiness-check-s7-f3-027": {
+      "prompt": "High-income grandparents want to put a large sum aside for a newborn grandchild's college costs, keep control of the account themselves, and have the growth come out free of federal tax if used for qualified expenses. Which account fits best?",
+      "options": {
+        "a": "A Coverdell ESA, since its contributions are deductible on the grandparents' federal return",
+        "b": "A Coverdell ESA, since the grandchild can leave the money invested well past age 30",
+        "c": "A 529 plan, since the grandparents can deduct contributions on their federal tax return",
+        "d": "A 529 plan, since it has no contributor income limit and the owner keeps control"
+      },
+      "correctOptionId": "d",
+      "explanation": "A 529 plan has no income limit on who may contribute, allows large balances, and leaves the account owner (here the grandparents) in control, including the right to change the beneficiary. Earnings withdrawn for qualified education expenses are free of federal tax. Coverdell ESAs bar contributions above income thresholds, allow only small annual contributions, and generally must be used by the beneficiary's age 30.",
+      "distractorExplanations": {
+        "a": "Coverdell contributions are after-tax with no federal deduction, and high-income donors may be barred from contributing to one at all.",
+        "b": "Coverdell balances generally must be distributed by the beneficiary's age 30 (special-needs beneficiaries excepted) or the earnings become taxable.",
+        "c": "529 contributions are not deductible on the federal return; some states offer a state income-tax deduction, which is a different benefit."
+      }
+    },
+    "series-7-readiness-check-s7-f3-028": {
+      "prompt": "A wealthy client has substantial passive income from rental properties and wants an investment whose tax losses flow through to her return to offset that income. She is comparing an equity REIT with a real estate limited partnership. Which recommendation fits her goal?",
+      "options": {
+        "a": "The REIT, because its operating losses pass through to shareholders' returns",
+        "b": "The partnership, because its losses pass through and can offset passive income",
+        "c": "The REIT, because it must pay out at least 90% of taxable income as tax-free dividends",
+        "d": "The partnership, because its losses can offset her wages and portfolio income"
+      },
+      "correctOptionId": "b",
+      "explanation": "A limited partnership (direct participation program) is a pass-through entity: income, losses and deductions such as depreciation flow to the limited partners. LP losses are passive, so they can offset passive income such as her rents. A REIT is a corporation that avoids entity-level tax by distributing at least 90% of its taxable income; its losses stay inside the REIT, and its dividends are taxable to shareholders.",
+      "distractorExplanations": {
+        "a": "A REIT is taxed as a corporation; it passes income out through dividends but cannot pass operating losses through to shareholders.",
+        "c": "The 90% distribution rule is real, but REIT dividends are taxable, mostly at ordinary rates, so they add income instead of offsetting it.",
+        "d": "Limited partnership losses are passive and generally offset passive income, not wages, interest or dividends."
+      }
+    },
+    "series-7-readiness-check-s7-f3-029": {
+      "prompt": "A customer opens a new margin account and buys 100 shares of a stock at $30 on margin, with no other assets in the account. Under Regulation T and FINRA's minimum equity rule, how much must the customer deposit?",
+      "options": {
+        "a": "$750",
+        "b": "$1,500",
+        "c": "$2,000",
+        "d": "$3,000"
+      },
+      "correctOptionId": "c",
+      "explanation": "Reg T requires 50% of the $3,000 purchase, or $1,500, but FINRA requires at least $2,000 of equity in a margin account before credit is extended. The customer deposits the greater amount, $2,000, and borrows the remaining $1,000. Had the purchase cost less than $2,000, the customer would simply pay 100% of the cost.",
+      "distractorExplanations": {
+        "a": "Applies the 25% maintenance requirement to the purchase; maintenance governs an existing position, not the initial deposit.",
+        "b": "That is the Reg T 50% figure, but FINRA's $2,000 minimum equity requirement is higher here and controls the deposit.",
+        "d": "Full payment is required when a purchase costs less than $2,000; a $3,000 purchase can be financed above the $2,000 minimum."
+      }
+    },
+    "series-7-readiness-check-s7-f3-030": {
+      "prompt": "A customer buys 1,000 shares at $40 in a margin account, depositing the Reg T requirement. Ignoring interest, at what share price would the account reach FINRA's 25% minimum maintenance level, below which a maintenance call is issued?",
+      "options": {
+        "a": "$15.00",
+        "b": "$20.00",
+        "c": "$26.67",
+        "d": "$28.57"
+      },
+      "correctOptionId": "c",
+      "explanation": "The debit balance is $20,000 (50% of the $40,000 purchase). For a long account, the maintenance call value is debit ÷ (1 − 0.25) = $20,000 ÷ 0.75 = $26,666.67, or $26.67 per share. Check: at a $26,667 market value, equity is $6,667, exactly 25% of market value; any further decline triggers a call.",
+      "distractorExplanations": {
+        "a": "Multiplies the debit by 0.75 ($15,000); the formula divides the debit by 0.75 to find the market value where equity equals 25%.",
+        "b": "That is debit ÷ shares, the price at which equity would be zero, well below the point where the 25% requirement is breached.",
+        "d": "Divides the debit by 0.70, applying the 30% short-account requirement to a long margin position."
+      }
+    },
+    "series-7-readiness-check-s7-f3-031": {
+      "prompt": "A customer sells short 1,000 shares at $50 in a margin account and meets the Reg T requirement, creating a $75,000 credit balance. At what share price would the account hit FINRA's 30% minimum maintenance requirement for short positions?",
+      "options": {
+        "a": "$52.50",
+        "b": "$57.69",
+        "c": "$60.00",
+        "d": "$75.00"
+      },
+      "correctOptionId": "b",
+      "explanation": "In a short account, equity = credit balance − short market value, and maintenance is 30% of market value, so the call value is credit ÷ 1.30 = $75,000 ÷ 1.30 = $57,692, about $57.69 per share. Check: equity of $17,308 is 30% of $57,692. The $75,000 credit is $50,000 of sale proceeds plus the $25,000 Reg T deposit.",
+      "distractorExplanations": {
+        "a": "Multiplies the credit by 0.70 ($52,500); for a short account the credit balance is divided by 1.30, not reduced by 30%.",
+        "c": "Divides the credit by 1.25, using the 25% long-account requirement instead of the 30% short-account requirement.",
+        "d": "At $75 the short market value equals the credit balance, so equity is zero, well past the point where a maintenance call is issued."
+      }
+    },
+    "series-7-readiness-check-s7-f3-032": {
+      "prompt": "A customer bought 200 shares at $90. The company then executed a 3-for-2 stock split, and later the customer reinvested a $600 cash dividend in 10 more shares at $60. What is the customer's total cost basis in the position?",
+      "options": {
+        "a": "$18,000",
+        "b": "$18,600",
+        "c": "$27,000",
+        "d": "$27,900"
+      },
+      "correctOptionId": "b",
+      "explanation": "A stock split changes the share count and per-share basis but not total basis: 200 × $90 = $18,000 becomes 300 shares at $60. A reinvested dividend is taxed in the year paid, so it adds to basis: $18,000 + $600 = $18,600 for 310 shares, about $60 per share.",
+      "distractorExplanations": {
+        "a": "Ignores the reinvested dividend; because the $600 was taxed as income, it becomes cost basis in the 10 new shares.",
+        "c": "Multiplies the post-split 300 shares by the pre-split $90 price; a split does not increase total cost basis.",
+        "d": "Applies the pre-split $90 price to all 310 post-split shares, inflating basis by the 3-for-2 split ratio."
+      }
+    },
+    "series-7-readiness-check-s7-f3-033": {
+      "prompt": "On November 10 a customer sells 100 shares of XYZ at $42 that she bought two years ago at $50. On December 1 she buys 100 shares of XYZ at $44. How is the sale treated for tax purposes?",
+      "options": {
+        "a": "The $800 loss is deductible, and the new shares carry a $4,400 basis",
+        "b": "The $800 loss is disallowed, and the new shares carry a $4,400 basis",
+        "c": "The $800 loss is disallowed, and the new shares carry a $5,000 basis",
+        "d": "The $800 loss is disallowed; the new shares carry a $5,200 basis"
+      },
+      "correctOptionId": "d",
+      "explanation": "A loss is disallowed when substantially identical securities are bought within 30 days before or after the sale. December 1 is 21 days after November 10, so the $800 loss ($5,000 cost − $4,200 proceeds) is a wash sale. The disallowed loss is added to the replacement shares' basis: $4,400 + $800 = $5,200 ($52 per share), and the original holding period carries over.",
+      "distractorExplanations": {
+        "a": "Treats a 21-day gap as outside the window; the wash-sale period runs 30 days before and 30 days after the sale date.",
+        "b": "Correctly disallows the loss but forgets to add the $800 to the replacement shares' basis, which is how the loss is preserved for later.",
+        "c": "Carries over the original $50 cost; the new basis is the $44 repurchase price plus the $800 disallowed loss."
+      }
+    },
+    "series-7-readiness-check-s7-f3-034": {
+      "prompt": "A customer in a high federal bracket receives, in one year: dividends on common stock held for three years, distributions from an equity REIT, interest on a general obligation bond of her state, and a profit from selling a municipal bond she bought at par three years earlier. Which statement about her federal taxes is accurate?",
+      "options": {
+        "a": "The profit on the municipal bond sale is a taxable long-term capital gain",
+        "b": "The REIT distributions qualify for the lower qualified-dividend tax rates",
+        "c": "The muni bond profit is tax-exempt, just like the bond's interest income",
+        "d": "The common stock dividends are taxed at ordinary rates because they are cash"
+      },
+      "correctOptionId": "a",
+      "explanation": "Municipal bond interest is generally exempt from federal income tax, but gains from selling the bond are not: a bond bought at par and sold above cost after more than a year produces a taxable long-term capital gain. Dividends on common stock held well past the 60-day holding test are qualified and taxed at capital-gains rates, while ordinary REIT dividends are generally nonqualified and taxed as ordinary income.",
+      "distractorExplanations": {
+        "b": "REIT dividends generally do not meet the qualified-dividend definition and are taxed mostly at ordinary income rates.",
+        "c": "The federal exemption covers municipal interest, not price gains; selling the bond above cost creates a capital gain.",
+        "d": "Cash dividends on common stock held well beyond the 60-day holding test are qualified and taxed at capital-gains rates."
+      }
+    },
+    "series-7-readiness-check-s7-f3-035": {
+      "prompt": "A 61-year-old customer opened her first Roth IRA three years ago and has contributed $15,000; the account is now worth $19,000. She withdraws the full $19,000. How is the distribution taxed?",
+      "options": {
+        "a": "The full $19,000 is tax-free because she is older than age 59½ at withdrawal",
+        "b": "The full $19,000 is taxable as income, but no 10% penalty applies after age 59½",
+        "c": "The $4,000 of earnings is taxable and also subject to the 10% early-withdrawal penalty",
+        "d": "$15,000 is tax-free; the $4,000 of earnings is taxable but not penalized"
+      },
+      "correctOptionId": "d",
+      "explanation": "A Roth distribution is qualified (fully tax-free) only if the owner is 59½ or older and five years have passed since the year of her first Roth contribution. She meets the age test but not the 5-year rule. Ordering rules return contributions first, tax-free; the $4,000 of earnings is taxable income, but the 10% penalty does not apply because she is over 59½.",
+      "distractorExplanations": {
+        "a": "Age 59½ alone is not enough; earnings are tax-free once the 5-year rule is also satisfied, and her account is three years old.",
+        "b": "Roth contributions were made with after-tax dollars, so the $15,000 of contributions comes back tax-free under the ordering rules.",
+        "c": "The earnings are taxable here, but the 10% early-withdrawal penalty does not apply to an owner who is over 59½."
+      }
+    },
+    "series-7-readiness-check-s7-f3-036": {
+      "prompt": "A customer born in March 1953 turns 73 in 2026. She owns a traditional IRA and a Roth IRA and has never taken a distribution. Which statement about her required minimum distributions is correct?",
+      "options": {
+        "a": "Her first RMD must be taken by December 31, 2026, with no extension available",
+        "b": "Her first RMD may wait until April 1, 2027, but then two RMDs fall in 2027",
+        "c": "She must take RMDs from both IRAs, starting with the 2026 calendar year's amount",
+        "d": "Her RMDs do not begin until age 75 under the SECURE 2.0 Act schedule"
+      },
+      "correctOptionId": "b",
+      "explanation": "Under SECURE 2.0, owners born 1951–1959 begin RMDs at 73. Her first RMD (for 2026) may be delayed to April 1 of the following year, 2027, but the 2027 RMD is still due by December 31, 2027, so delaying puts two taxable distributions in one tax year. Roth IRAs have no RMDs during the original owner's lifetime.",
+      "distractorExplanations": {
+        "a": "The first RMD can be deferred to April 1 of the year after she turns 73; later RMDs are the ones due by December 31.",
+        "c": "Original owners of Roth IRAs are not subject to lifetime RMDs; her traditional IRA is the account that requires distributions.",
+        "d": "Age 75 applies to owners born in 1960 or later; someone born in 1953 starts RMDs at age 73."
+      }
+    },
+    "series-7-readiness-check-s7-f3-037": {
+      "prompt": "In March 2026 a customer took a check from IRA #1 and redeposited it into IRA #2 within 40 days. In October 2026 she wants to move money from IRA #3 to a new IRA at another firm. Which method avoids tax problems?",
+      "options": {
+        "a": "Take a check from IRA #3 and redeposit it within 60 days, since it is a different IRA",
+        "b": "Take a check from IRA #3 and redeposit it within 30 days to stay inside the limit",
+        "c": "Use a direct trustee-to-trustee transfer, which the once-a-year limit does not cover",
+        "d": "Wait until January 2027, when a new calendar year resets the rollover limit"
+      },
+      "correctOptionId": "c",
+      "explanation": "An investor may make one 60-day indirect IRA-to-IRA rollover per 12-month period, counting all of her IRAs together. The March rollover uses that allowance until March 2027, so a second indirect rollover in October would be treated as a taxable distribution (plus a possible 10% penalty if under 59½). Direct trustee-to-trustee transfers are not rollovers and can be done any number of times.",
+      "distractorExplanations": {
+        "a": "Since 2015 the once-per-12-months limit applies across all of a person's IRAs combined, not separately to each account.",
+        "b": "Shortening the redeposit period does not help; any second indirect IRA-to-IRA rollover within 12 months is disallowed.",
+        "d": "The limit runs 12 months from the prior distribution, not by calendar year, so January 2027 is still too early."
+      }
+    },
+    "series-7-readiness-check-s7-f3-038": {
+      "prompt": "A 70-year-old retiree with moderate risk tolerance wants protection against a market decline over the next two years. A rep recommends she buy and hold a 2x inverse S&P 500 ETF for that period. Under Reg BI's care obligation, what is the main problem?",
+      "options": {
+        "a": "It resets daily, so a two-year return can stray far from −2x the index's return",
+        "b": "Inverse ETFs must be held in a margin account because they are economically short",
+        "c": "No problem exists if she signs a disclosure acknowledging the fund's leverage risks",
+        "d": "Exchange-listed ETFs are diversified, so the recommendation meets the care standard"
+      },
+      "correctOptionId": "a",
+      "explanation": "Leveraged and inverse ETFs seek their stated multiple for a single day. Daily resetting and compounding mean results over months or years can diverge widely from −2x the index, and in volatile markets the fund can lose money even when the index falls. A buy-and-hold recommendation to a moderate-risk retiree lacks a reasonable basis under Reg BI's care obligation; FINRA treats these funds as short-term trading tools.",
+      "distractorExplanations": {
+        "b": "Buying an inverse ETF is a long purchase of fund shares and can be done in a cash account, so margin is not the issue.",
+        "c": "Disclosure meets the disclosure obligation, but it does not cure a recommendation that fails the separate care obligation.",
+        "d": "Exchange listing and a basket of holdings do not address the daily-reset decay that makes a two-year hold unsuitable."
+      }
+    },
+    "series-7-readiness-check-s7-f3-039": {
+      "prompt": "A broker-dealer announces a 60-day contest: the reps who sell the most of the firm's new proprietary bond fund win a resort trip. How does Regulation Best Interest treat this contest?",
+      "options": {
+        "a": "It is allowed if the firm discloses the contest in its Form CRS relationship summary",
+        "b": "It is allowed if each customer signs an acknowledgment of the rep's incentive",
+        "c": "It is restricted for retirement accounts but allowed in taxable brokerage accounts",
+        "d": "The firm must eliminate it, since it ties rewards to one product in a limited time"
+      },
+      "correctOptionId": "d",
+      "explanation": "Reg BI's conflict-of-interest obligation requires a broker-dealer to identify and eliminate sales contests, sales quotas, bonuses and non-cash compensation based on sales of specific securities or specific types of securities within a limited period. A 60-day trip contest on one proprietary fund is exactly that, so disclosing or mitigating it is not enough. Other conflicts may be handled through disclosure and mitigation.",
+      "distractorExplanations": {
+        "a": "Form CRS disclosure does not cure this conflict; Reg BI requires eliminating contests tied to specific securities in a limited period.",
+        "b": "Customer consent cannot waive Reg BI; this category of incentive must be eliminated, not merely acknowledged by the customer.",
+        "c": "Reg BI applies to recommendations to retail customers in any account type, taxable or retirement, so the account type is irrelevant."
+      }
+    },
+    "series-7-readiness-check-s7-f3-040": {
+      "prompt": "A customer buys 25-year Treasury STRIPS but expects to sell them in three years to fund a home purchase. Which risk most threatens the amount she will receive at that sale?",
+      "options": {
+        "a": "Reinvestment risk on the semiannual interest payments",
+        "b": "Default risk on the U.S. Treasury's payment of principal",
+        "c": "Interest-rate risk from the zeros' long duration",
+        "d": "Call risk if the Treasury redeems the STRIPS before maturity"
+      },
+      "correctOptionId": "c",
+      "explanation": "STRIPS are zero-coupon bonds, so their duration equals their maturity, 25 years, making their prices the most sensitive to rate changes. Selling after three years means she receives market value, which falls sharply if rates rise. Interest-rate risk is systematic and cannot be diversified away. Zeros eliminate reinvestment risk, Treasuries carry minimal default risk, and STRIPS are not callable.",
+      "distractorExplanations": {
+        "a": "STRIPS make no periodic interest payments, so there is nothing to reinvest; zero-coupon bonds remove reinvestment risk.",
+        "b": "Treasury securities are backed by the full faith and credit of the U.S. government, so credit risk is minimal here.",
+        "d": "STRIPS are created from noncallable Treasury notes and bonds, so the Treasury cannot redeem them before maturity."
+      }
+    },
+    "series-7-readiness-check-s7-f3-041": {
+      "prompt": "On Monday, a customer's new firm submits a transfer instruction through ACATS to move her account from her old firm. Assuming no holidays and no exceptions, by when must the old firm validate the instruction and complete the transfer?",
+      "options": {
+        "a": "Validate by Wednesday; complete by the following Monday",
+        "b": "Validate by Monday; complete by the following Monday",
+        "c": "Validate by Tuesday; complete by the following Tuesday",
+        "d": "Validate by Tuesday; complete by that Friday"
+      },
+      "correctOptionId": "d",
+      "explanation": "Under FINRA Rule 11870, the carrying (delivering) firm has one business day after receiving the transfer instruction to validate it or take exception, and it must complete the transfer within three business days after validation. An instruction received Monday is validated by Tuesday, and the assets must be delivered by Friday (Wednesday, Thursday and Friday).",
+      "distractorExplanations": {
+        "a": "Allows two business days to validate; the rule gives one business day, then three business days after validation to complete.",
+        "b": "Validation is due within one business day, not the same day, and completion follows three business days after validation, not five.",
+        "c": "Counts five business days after validation; completion is due three business days after Tuesday's validation, which is Friday."
+      }
+    },
+    "series-7-readiness-check-s7-f3-042": {
+      "prompt": "A customer emails her rep alleging that he bought shares in her account without her permission. The rep wants to call her, smooth things over, and delete the email. What must happen?",
+      "options": {
+        "a": "It is a written complaint the firm must record and keep for four years",
+        "b": "Emails are not written complaints, so a phone resolution without a record suffices",
+        "c": "The rep may resolve it privately by reimbursing her loss from his own funds",
+        "d": "The firm must record it but may discard the record once the matter is resolved"
+      },
+      "correctOptionId": "a",
+      "explanation": "Any written grievance about the handling of a customer's account, including an email, is a written complaint. The rep must forward it to his supervising principal instead of handling it alone, and deleting business email would also violate recordkeeping rules. Under FINRA Rule 4513 the firm keeps a record of each written complaint for at least four years, and Rule 4530 requires quarterly complaint statistics to FINRA.",
+      "distractorExplanations": {
+        "b": "FINRA treats any written grievance, including an email or text, as a written complaint; the delivery format does not matter.",
+        "c": "Reps may not settle customer disputes privately without the firm's knowledge; settlements must run through the firm and its principals.",
+        "d": "Rule 4513 requires the complaint record to be kept for at least four years, regardless of whether the matter has been resolved."
+      }
+    }
+  }
+}

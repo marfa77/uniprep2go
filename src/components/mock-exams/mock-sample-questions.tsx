@@ -1,4 +1,5 @@
 import type { MockExamConfig, MockQuestion } from "@/lib/mock-exams/types";
+import { pickSellingSamples } from "@/lib/sample-pick";
 
 const SAMPLE_COUNT = 5;
 
@@ -9,51 +10,55 @@ type MockSampleQuestionsSectionProps = {
   lead?: string;
 };
 
-function sampleScore(question: MockQuestion): number {
+const TEMPLATE_RE =
+  /fdic deposit insurance|remapped from sibling|matches this rule|does not match the correct definition|this concept (is identical|has no application|always eliminates)|placeholder/i;
+
+/** Hard gate (<= 0 drops the item) + selling score: applied scenario, real reasoning, fair options. */
+export function sampleScore(question: MockQuestion): number {
   const prompt = question.prompt.trim();
-  let score = Math.min(prompt.length, 180);
-  // Prefer applied / scenario stems over thin definition drills.
-  if (/^(what is|what are|who is|define)\b/i.test(prompt)) score -= 40;
-  if (/\(drill\b/i.test(prompt)) score -= 50;
-  if (prompt.length >= 70) score += 25;
-  if (/\b(which|when|if|candidate|client|customer|broker|agent)\b/i.test(prompt)) {
-    score += 15;
+  const options = question.options.map((o) => o.text.trim());
+  const correct = question.options.find((o) => o.id === question.correctOptionId)?.text.trim() ?? "";
+  const allText = [prompt, ...options, question.explanation ?? ""].join(" ");
+
+  if (prompt.length < 40 || prompt.length > 420) return 0;
+  if (/\(drill\b/i.test(prompt)) return 0;
+  if (/^(what is|what are|who is|define)\b/i.test(prompt) && prompt.length < 70) return 0;
+  if (options.length < 3 || options.some((text) => text.length < 2) || !correct) return 0;
+  if (new Set(options.map((text) => text.toLowerCase())).size !== options.length) return 0;
+  if (/\b(all|none) of the above\b/i.test(options.join(" "))) return 0;
+  if (TEMPLATE_RE.test(allText)) return 0;
+  if ((question.explanation ?? "").trim().length < 40) return 0;
+
+  let score = 50 + Math.min(prompt.length, 220) / 4;
+  if (/\b(client|customer|candidate|patient|investor|representative|manager|technician|contractor|employee|owner)\b/i.test(prompt)) {
+    score += 20;
   }
-  // Slight topic diversity bonus handled by picker.
-  score += question.options.filter((o) => o.text.trim().length >= 24).length * 2;
+  if (/^(a|an|after|before|during|if|when|while)\b/i.test(prompt)) score += 10;
+  if (/\b(not|except)\b/.test(prompt)) score -= 10;
+  if (/^(on|for) the [^,]+(mock|readiness|exam)\b|select the best answer|as tested (on|in)\b|which statement correctly describes/i.test(prompt)) {
+    score -= 45;
+  }
+  if (question.formula) score += 5;
+  const longest = Math.max(...options.map((text) => text.length));
+  const shortest = Math.min(...options.map((text) => text.length));
+  if (correct.length === longest && longest > shortest * 1.6) score -= 15;
+  score += options.filter((text) => text.length >= 24).length * 2;
   return score;
 }
 
-/** Pick the strongest SSR sample stems for Google/LLM extraction. */
+/** Quality-gated, seeded-random SSR samples for Google/LLM extraction (stable per bank content). */
 export function pickMockSampleQuestions(
   questions: MockQuestion[],
   count = SAMPLE_COUNT,
+  seed = "",
 ): MockQuestion[] {
-  if (questions.length <= count) {
-    return questions;
-  }
-
-  const ranked = [...questions].sort((a, b) => sampleScore(b) - sampleScore(a));
-  const picked: MockQuestion[] = [];
-  const usedTopics = new Set<string>();
-
-  for (const question of ranked) {
-    if (picked.length >= count) break;
-    if (usedTopics.has(question.topicId) && picked.length < count - 1) {
-      continue;
-    }
-    picked.push(question);
-    usedTopics.add(question.topicId);
-  }
-
-  // Fill remaining if topic diversity skipped too many.
-  for (const question of ranked) {
-    if (picked.length >= count) break;
-    if (picked.some((q) => q.id === question.id)) continue;
-    picked.push(question);
-  }
-
-  return picked;
+  return pickSellingSamples(questions, {
+    count,
+    seed: seed || questions[0]?.examSlug || "mock",
+    score: sampleScore,
+    text: (question) => question.prompt,
+    topic: (question) => question.topicId,
+  });
 }
 
 /**
@@ -65,7 +70,7 @@ export function MockSampleQuestionsSection({
   questions,
   lead,
 }: MockSampleQuestionsSectionProps) {
-  const samples = pickMockSampleQuestions(questions, SAMPLE_COUNT);
+  const samples = pickMockSampleQuestions(questions, SAMPLE_COUNT, config.slug);
   if (samples.length === 0) {
     return null;
   }

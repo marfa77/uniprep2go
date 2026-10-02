@@ -195,7 +195,7 @@ export function validateQuestionBank(
 
   const hasTopicQuotas = topics.some((topic) => typeof topic.questionCount === "number");
 
-  // Sale-grade banks (e.g. SAT 350 / session 49) are larger than the timed session.
+  // Sale-grade banks (e.g. SAT 160 / session 49) are larger than the timed session.
   // Require at least the session size; exact equality only for legacy 1:1 banks.
   if (questions.length < expectedCount) {
     errors.push(`Expected at least ${expectedCount} questions, found ${questions.length}`);

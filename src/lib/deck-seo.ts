@@ -698,7 +698,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 2 Formula Sheet PDF 2026 — 219 Formulas + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 formula sheet PDF for 2026: 219 typeset formulas, 276 definitions, 80-question recall drill, 60 print pages — plus free 60-question timed L2 mock (no signup). Pairs with 495-card Anki. Not CFA Institute curriculum.",
+      "CFA Level 2 formula sheet PDF for 2026: 219 typeset formulas, 276 definitions, 80-question recall drill, 60 print pages — plus a 60-question timed L2 mock (first mock free, no signup). Pairs with 495-card Anki. Not CFA Institute curriculum.",
     keywords: [
       "cfa level 2 formula sheet",
       "cfa level 2 formula reference",
@@ -764,7 +764,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Series 7 Exam Prep — 300 Flashcards + Free 60Q Test",
     studyLabel: "Series 7 exam prep",
     description:
-      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a free 60-question Series 7 practice test online (no signup). Official exam is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); our mock is shorter. For US registered rep candidates.",
+      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a 60-question Series 7 practice test online (first mock free, no signup). Official exam is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); our mock is shorter. For US registered rep candidates.",
     keywords: [
       "series 7 exam prep",
       "series 7 flashcards",
@@ -813,7 +813,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "PTCB Exam Prep — Free Practice Test + 300 PTCE Flashcards",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB exam prep for the January 2026 PTCE: free 90-question timed mock with domain readiness scoring, plus 300 flashcards (top 200 drugs, sig codes, days-supply math, DEA, DSCSA). Independent — not official PTCB material.",
+      "PTCB exam prep for the January 2026 PTCE: free 90-question timed mock with domain readiness scoring, plus 300 flashcards in 2026 PTCE proportions (60 high-yield drugs, interactions, DEA, DSCSA, safety, sigs, days-supply math). Independent — not official PTCB material.",
     keywords: [
       "ptcb exam prep",
       "ptcb anki deck",
@@ -864,7 +864,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Life & Health Insurance Exam Prep — 400 Flashcards + Free Mock",
     studyLabel: "Life & Health insurance exam prep",
     description:
-      "Life & Health insurance license prep: 400 Anki flashcards (provisions, annuities, Medicare) + free 60-question timed practice test online — no signup. Independent study aid — not official state exam material.",
+      "Life & Health insurance license prep: 400 Anki flashcards (provisions, annuities, Medicare) + 60-question timed practice test online — first mock free, no signup. Independent study aid — not official state exam material.",
     keywords: [
       "life and health insurance practice test",
       "insurance license exam prep",
@@ -942,11 +942,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "MBA and business master's applicants using spaced repetition alongside official GMAC materials.",
   },
   "sat-anki-deck": {
-    title: "Digital SAT Exam Prep | 342 Cards + Free Mock",
-    headline: "Digital SAT Exam Prep — 342 Flashcards + Free Mock",
+    title: "Digital SAT Exam Prep | 160 Cards + Free Mock",
+    headline: "Digital SAT Exam Prep — 160 Flashcards + Free Mock",
     studyLabel: "Digital SAT exam prep",
     description:
-      "Digital SAT exam prep with 342 Anki flashcards for Reading and Writing and Math — plus a free 49-question timed readiness check scored on both official section axes. Independent college admissions prep — not College Board material.",
+      "Digital SAT exam prep with 160 Anki flashcards for Reading and Writing and Math — plus a free 49-question timed readiness check scored on both official section axes. Independent college admissions prep — not College Board material.",
     keywords: [
       "digital sat anki deck",
       "sat flashcards",

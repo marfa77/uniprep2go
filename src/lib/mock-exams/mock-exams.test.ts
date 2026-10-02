@@ -592,6 +592,53 @@ describe("scoring", () => {
     expect(first).not.toEqual(third);
   });
 
+  it("shuffles answer options per attempt and keeps key + distractor notes with their text", () => {
+    const base: MockQuestion = {
+      ...sampleQuestions[0]!,
+      prompt: "Which order type fills immediately whatever it can and cancels the rest?",
+      options: [
+        { id: "a", text: "Immediate-or-cancel" },
+        { id: "b", text: "Fill-or-kill" },
+        { id: "c", text: "All-or-none" },
+        { id: "d", text: "Good-til-canceled" },
+      ],
+      correctOptionId: "a",
+      explanation: "IOC fills what it can at once; the unfilled remainder is canceled.",
+      distractorExplanations: { b: "FOK note", c: "AON note", d: "GTC note" },
+    };
+    const keyLetters = new Set<string>();
+    for (let attempt = 0; attempt < 40; attempt += 1) {
+      const [shuffled] = shuffleQuestions([base], `attempt-${attempt}`);
+      expect(shuffled!.options.map((option) => option.id)).toEqual(["a", "b", "c", "d"]);
+      const correct = shuffled!.options.find((option) => option.id === shuffled!.correctOptionId);
+      expect(correct?.text).toBe("Immediate-or-cancel");
+      for (const option of shuffled!.options) {
+        if (option.id === shuffled!.correctOptionId) continue;
+        const original = base.options.find((item) => item.text === option.text)!;
+        expect(shuffled!.distractorExplanations[option.id]).toBe(base.distractorExplanations[original.id]);
+      }
+      keyLetters.add(shuffled!.correctOptionId);
+    }
+    expect(keyLetters.size).toBe(4);
+    expect(shuffleQuestions([base], "seed-x")).toEqual(shuffleQuestions([base], "seed-x"));
+  });
+
+  it("keeps option order when the text points at options by letter", () => {
+    const positional: MockQuestion = {
+      ...sampleQuestions[0]!,
+      options: [
+        { id: "a", text: "Stocks" },
+        { id: "b", text: "Bonds" },
+        { id: "c", text: "Both A and B" },
+        { id: "d", text: "Neither" },
+      ],
+      correctOptionId: "c",
+    };
+    for (const seed of ["s1", "s2", "s3"]) {
+      expect(shuffleQuestions([positional], seed)[0]).toEqual(positional);
+    }
+  });
+
   it("selects a stratified session subset from a larger bank", () => {
     const config = getMockExamConfig("epa-608-readiness-check");
     expect(config).not.toBeNull();

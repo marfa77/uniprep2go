@@ -29,16 +29,49 @@ function mulberry32(seed: number) {
   };
 }
 
+function shuffleInPlace<T>(items: T[], random: () => number) {
+  for (let index = items.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(random() * (index + 1));
+    [items[index], items[swapIndex]] = [items[swapIndex], items[index]];
+  }
+  return items;
+}
+
+/** Text that points at an option by letter or position breaks if the options move. */
+const POSITIONAL_OPTION_RE =
+  /\b(?:options?|choices?|answers?)\s*\(?[a-d]\)?(?![a-z])|\bcorrect (?:answer|option|choice) is \(?[a-d]\)?(?![a-z])|\([a-dA-D]\)|\b(?:both|all|none|neither) of (?:the )?(?:above|these|those)\b|\b[A-D] and [A-D]\b/i;
+
+/**
+ * Shuffle answer options and relabel them by position, so the key letter changes between attempts
+ * while choices still read A–D in order.
+ */
+export function shuffleQuestionOptions(question: MockQuestion, random: () => number): MockQuestion {
+  const text = [
+    question.prompt,
+    ...question.options.map((option) => option.text),
+    question.explanation,
+    ...Object.values(question.distractorExplanations ?? {}),
+  ].join("\n");
+  if (question.options.length < 2 || POSITIONAL_OPTION_RE.test(text)) return question;
+
+  const labels = question.options.map((option) => option.id);
+  const order = shuffleInPlace([...question.options], random);
+  const relabel = new Map(order.map((option, index) => [option.id, labels[index]!]));
+
+  return {
+    ...question,
+    options: order.map((option, index) => ({ ...option, id: labels[index]! })),
+    correctOptionId: relabel.get(question.correctOptionId) ?? question.correctOptionId,
+    distractorExplanations: Object.fromEntries(
+      Object.entries(question.distractorExplanations ?? {}).map(([id, note]) => [relabel.get(id) ?? id, note]),
+    ),
+  };
+}
+
 export function shuffleQuestions(questions: MockQuestion[], attemptSeed: string) {
   const random = mulberry32(hashSeed(attemptSeed));
-  const copy = [...questions];
-
-  for (let index = copy.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(random() * (index + 1));
-    [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
-  }
-
-  return copy;
+  const optionRandom = mulberry32(hashSeed(`${attemptSeed}:options`));
+  return shuffleInPlace([...questions], random).map((question) => shuffleQuestionOptions(question, optionRandom));
 }
 
 function sampleWithoutReplacement<T>(items: T[], count: number, random: () => number) {

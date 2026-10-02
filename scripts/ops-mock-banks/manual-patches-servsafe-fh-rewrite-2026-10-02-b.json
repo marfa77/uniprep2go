@@ -1,0 +1,544 @@
+{
+  "servsafe-food-handler-readiness-check": {
+    "servsafe-food-handler-readiness-check-time-temp-001": {
+      "topicId": "time-temp",
+      "difficulty": "easy",
+      "prompt": "What is the temperature danger zone for TCS food?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "32°F to 100°F",
+        "b": "41°F to 135°F",
+        "c": "45°F to 140°F",
+        "d": "50°F to 165°F"
+      },
+      "explanation": "Pathogens grow fastest between 41°F and 135°F (5°C to 57°C), especially between 70°F and 125°F. Cold TCS food is held at 41°F or lower and hot TCS food at 135°F or higher to keep it out of this range.",
+      "distractorExplanations": {
+        "a": "32°F is freezing; the danger zone starts at 41°F, the cold-holding limit.",
+        "c": "45°F and 140°F are older or rounded figures; the current danger zone is 41°F to 135°F.",
+        "d": "165°F is the cooking temperature for poultry and the reheating temperature, not the top of the danger zone."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-002": {
+      "topicId": "time-temp",
+      "difficulty": "hard",
+      "prompt": "A pot of chili started cooling at 135°F at 1:00 p.m. At 3:00 p.m. it reads 90°F. What must happen now?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Keep cooling it; it has 4 more hours to reach 41°F",
+        "b": "Move it to the cooler; it has until 7:00 p.m.",
+        "c": "Serve it right away while it is still warm",
+        "d": "Reheat to 165°F and recool, or throw it out"
+      },
+      "explanation": "Cooked TCS food must cool from 135°F to 70°F within 2 hours, then from 70°F to 41°F or lower within the next 4 hours (6 hours total). If it misses 70°F in the first 2 hours, reheat it to 165°F for 15 seconds and start cooling again, or throw it out.",
+      "distractorExplanations": {
+        "a": "The 4-hour stage only starts after the food reaches 70°F; at 90°F the first stage has already failed.",
+        "b": "7:00 p.m. assumes the 6-hour total still applies, but missing 70°F at 2 hours means reheat or discard.",
+        "c": "Food that failed cooling spent too long in the danger zone and cannot simply be served."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-003": {
+      "topicId": "time-temp",
+      "difficulty": "medium",
+      "prompt": "What is the minimum internal cooking temperature for poultry, such as whole or ground chicken and turkey?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "165°F (instantaneous)",
+        "b": "155°F for 17 seconds",
+        "c": "145°F for 15 seconds",
+        "d": "135°F (no hold time)"
+      },
+      "explanation": "Poultry, whole or ground, must reach 165°F for less than 1 second (instantaneous). The same temperature applies to stuffing, stuffed meat, fish or pasta, and dishes made with previously cooked TCS ingredients.",
+      "distractorExplanations": {
+        "b": "155°F for 17 seconds is for ground beef, pork and other ground meat, not poultry.",
+        "c": "145°F for 15 seconds is for seafood, steaks and chops, and eggs cooked for immediate service.",
+        "d": "135°F is the hot-holding temperature and the reheat for commercially processed food, not raw poultry."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-004": {
+      "topicId": "time-temp",
+      "difficulty": "medium",
+      "prompt": "A cook is grilling hamburger patties made from ground beef. What minimum internal temperature must they reach?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "135°F with no hold time",
+        "b": "145°F for 15 seconds",
+        "c": "155°F for 17 seconds",
+        "d": "165°F for 15 seconds"
+      },
+      "explanation": "Ground meat (beef, pork and lamb), injected or mechanically tenderized meat, and ground seafood must reach 155°F for 17 seconds. Grinding moves surface pathogens such as Shiga toxin-producing E. coli into the center of the patty.",
+      "distractorExplanations": {
+        "a": "135°F is the hot-holding temperature, not a cooking temperature for raw ground beef.",
+        "b": "145°F for 15 seconds is for whole steaks and chops, where pathogens stay on the surface.",
+        "d": "165°F is the poultry and stuffed-food temperature; ground beef needs 155°F for 17 seconds."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-005": {
+      "topicId": "time-temp",
+      "difficulty": "medium",
+      "prompt": "Which of these foods must reach a minimum internal temperature of 145°F for 15 seconds?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Ground beef patties",
+        "b": "Salmon fillets",
+        "c": "Chicken breasts",
+        "d": "Stuffed pasta shells"
+      },
+      "explanation": "145°F for 15 seconds applies to seafood (fish and shellfish), steaks and chops of beef, pork, veal and lamb, and shell eggs cooked for immediate service. Roasts use 145°F for 4 minutes.",
+      "distractorExplanations": {
+        "a": "Ground beef needs 155°F for 17 seconds because grinding spreads surface pathogens inside.",
+        "c": "Chicken is poultry and must reach 165°F (instantaneous).",
+        "d": "Stuffed pasta must reach 165°F because the stuffing can hold pathogens from raw ingredients."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-006": {
+      "topicId": "time-temp",
+      "difficulty": "hard",
+      "prompt": "On a buffet, mashed potatoes read 136°F at the last check two hours ago. Now they read 128°F. What should the food handler do?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Reheat to 165°F for 15 seconds and hot-hold",
+        "b": "Keep serving them; 128°F is still hot enough",
+        "c": "Cover the pan and check again in 4 hours",
+        "d": "Turn up the steam table and keep serving"
+      },
+      "explanation": "Hot TCS food must be held at 135°F or higher. Because the potatoes were last at a safe temperature less than 2 hours ago, they can be reheated to 165°F for 15 seconds and returned to hot holding. If the time below 135°F is unknown or longer, throw the food out.",
+      "distractorExplanations": {
+        "b": "128°F is inside the danger zone; hot holding requires 135°F or higher.",
+        "c": "Waiting another 4 hours would leave the food in the danger zone far too long.",
+        "d": "Hot-holding equipment is not designed to reheat food quickly through the danger zone."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-007": {
+      "topicId": "time-temp",
+      "difficulty": "medium",
+      "prompt": "Chili made and cooled in-house yesterday will be reheated for hot holding today. What is the reheating rule?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "135°F within 4 hours",
+        "b": "145°F for 15 seconds within 6 hours",
+        "c": "155°F for 17 seconds within 1 hour",
+        "d": "165°F for 15 seconds within 2 hours"
+      },
+      "explanation": "TCS food that was cooked and cooled in-house and is reheated for hot holding must reach 165°F for 15 seconds within 2 hours. Commercially processed, packaged ready-to-eat food can instead be reheated to at least 135°F.",
+      "distractorExplanations": {
+        "a": "135°F is for reheating commercially processed ready-to-eat food, and 4 hours is too slow.",
+        "b": "145°F is a cooking temperature for seafood and steaks, not the reheating rule, and 6 hours is too long.",
+        "c": "155°F for 17 seconds is the ground-meat cooking temperature, not the rule for reheating leftovers."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-008": {
+      "topicId": "time-temp",
+      "difficulty": "easy",
+      "prompt": "Which is an acceptable way to thaw a frozen turkey?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "On the prep counter overnight at room temperature",
+        "b": "In a sink of warm water changed every few hours",
+        "c": "In a cooler at 41°F or lower",
+        "d": "Outside the back door on a cold day"
+      },
+      "explanation": "Approved thawing methods: in a cooler at 41°F or lower; submerged under running drinkable water at 70°F or lower; in a microwave if the food is cooked right away; or as part of the cooking process. Counter thawing lets the outside of the food sit in the danger zone.",
+      "distractorExplanations": {
+        "a": "Room-temperature thawing lets the outer layer sit in the danger zone for hours.",
+        "b": "Water thawing must use running water at 70°F or lower, not standing warm water.",
+        "d": "Outdoor thawing has no temperature control and exposes food to pests and contamination."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-009": {
+      "topicId": "time-temp",
+      "difficulty": "medium",
+      "prompt": "A food handler cooks raw chicken thighs in a microwave. What must she do?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Cook it to 145°F and serve it right away",
+        "b": "Reach 165°F, cover, rotate, and stand 2 minutes",
+        "c": "Cook it to 135°F and finish it on a steam table",
+        "d": "Cook it uncovered to 155°F so steam can escape"
+      },
+      "explanation": "Raw meat, poultry, seafood and eggs cooked in a microwave must reach 165°F. Cover the food, rotate or stir it halfway through, let it stand for 2 minutes after cooking so heat spreads evenly, and check the temperature in at least two places.",
+      "distractorExplanations": {
+        "a": "145°F is too low for microwave-cooked raw animal food; microwaves heat unevenly, so 165°F is required.",
+        "c": "Steam tables hold hot food; they cannot finish cooking raw chicken safely.",
+        "d": "The food should be covered so it heats evenly, and 155°F is below the 165°F microwave rule."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-010": {
+      "topicId": "time-temp",
+      "difficulty": "medium",
+      "prompt": "How is a bimetallic stemmed thermometer calibrated with the ice-point method?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Adjust it to read 32°F in a glass of ice water",
+        "b": "Adjust it to read 41°F in a cooler for 5 minutes",
+        "c": "Adjust it to read 0°F inside the freezer",
+        "d": "Adjust it to read 70°F at room temperature"
+      },
+      "explanation": "Fill a container with crushed ice and water, hold the stem in it for about 30 seconds, and turn the calibration nut until it reads 32°F (0°C). Calibrate regularly, after the thermometer is dropped, and after big temperature changes.",
+      "distractorExplanations": {
+        "b": "41°F is the cold-holding limit, and cooler air varies; it is not a fixed reference point.",
+        "c": "Freezer temperatures vary; the ice-point method uses ice water at exactly 32°F.",
+        "d": "Room temperature changes constantly, so it cannot be used as a reference point."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-011": {
+      "topicId": "time-temp",
+      "difficulty": "medium",
+      "prompt": "A cook checks whether a roast is done by pointing an infrared thermometer at it. Why is this a problem?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Infrared thermometers cannot read above 100°F",
+        "b": "Infrared thermometers must touch the food to work",
+        "c": "They read surface temperature, not internal",
+        "d": "They need an ice-water calibration before each read"
+      },
+      "explanation": "Infrared thermometers measure surface temperature without touching the food, which is useful for checking deliveries or holding equipment. They cannot show internal temperature, so doneness must be checked with a probe in the thickest part of the food.",
+      "distractorExplanations": {
+        "a": "Infrared thermometers read a wide range, including hot food; their range is not the issue.",
+        "b": "Infrared thermometers work without contact, which is their main advantage.",
+        "d": "They are not calibrated in ice water before every reading; the problem is that they only see the surface."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-012": {
+      "topicId": "time-temp",
+      "difficulty": "easy",
+      "prompt": "Where should the thermometer probe go when checking a chicken breast's temperature?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "On the surface of the meat",
+        "b": "Against the side of the hot pan",
+        "c": "In the thinnest part of the meat",
+        "d": "In the thickest part of the meat"
+      },
+      "explanation": "Insert the probe into the thickest part of the food, which heats last, and check in more than one spot. Wait for the reading to steady, and clean and sanitize the probe between foods.",
+      "distractorExplanations": {
+        "a": "A surface reading shows the outside is hot, not that the center reached a safe temperature.",
+        "b": "The pan is hotter than the food and gives a falsely high reading.",
+        "c": "The thinnest part cooks first, so it overstates how done the center is."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-013": {
+      "topicId": "time-temp",
+      "difficulty": "hard",
+      "prompt": "An operation uses time as the control for cold TCS sandwiches on a display with no refrigeration. What is the limit?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Up to 2 hours, then it must be thrown out",
+        "b": "Up to 6 hours from 41°F if it never exceeds 70°F",
+        "c": "Up to 8 hours if it is labeled with the time it was removed",
+        "d": "Up to 12 hours if covered and kept out of direct sunlight"
+      },
+      "explanation": "Cold TCS food can be held without temperature control for up to 6 hours if it starts at 41°F or lower and never goes above 70°F. Label it with the time it was removed and the time it must be thrown out. Hot TCS food held this way gets 4 hours.",
+      "distractorExplanations": {
+        "a": "2 hours is the home-kitchen rule of thumb; the Food Code gives cold TCS food up to 6 hours if it starts at 41°F and stays at or below 70°F.",
+        "c": "Labeling is required, but 8 hours is too long; the limit is 6 hours.",
+        "d": "Covering food does not extend the time limit, and 12 hours is double the 6-hour rule."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-014": {
+      "topicId": "time-temp",
+      "difficulty": "easy",
+      "prompt": "What is the highest temperature at which cold TCS food, such as potato salad, may be held?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "32°F",
+        "b": "41°F",
+        "c": "45°F",
+        "d": "50°F"
+      },
+      "explanation": "Cold TCS food must be held at 41°F (5°C) or lower. Check holding temperatures at least every 4 hours; checking every 2 hours leaves time to fix a problem before food must be thrown out.",
+      "distractorExplanations": {
+        "a": "32°F is the freezing point; potato salad does not need to be frozen, and the maximum is 41°F.",
+        "c": "45°F is inside the danger zone; older codes used it, but the current maximum is 41°F.",
+        "d": "50°F is well inside the danger zone, where bacteria grow quickly."
+      }
+    },
+    "servsafe-food-handler-readiness-check-time-temp-015": {
+      "topicId": "time-temp",
+      "difficulty": "easy",
+      "prompt": "A cook must cool a large stockpot of soup. Which method works best?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Divide it into shallow pans and stir with an ice paddle",
+        "b": "Put the covered stockpot straight into the walk-in cooler",
+        "c": "Leave the pot on the counter until it reaches room temperature",
+        "d": "Put it in the freezer in the same deep pot"
+      },
+      "explanation": "Large, dense batches cool too slowly in a deep pot. Divide the food into shallow pans or smaller containers, use ice-water baths, ice paddles or blast chillers, stir often, and leave covers loose so heat can escape.",
+      "distractorExplanations": {
+        "b": "A covered stockpot traps heat and can warm other food in the walk-in; the center cools far too slowly.",
+        "c": "Cooling on the counter keeps the soup in the danger zone for hours.",
+        "d": "A freezer does not fix the deep-pot problem; the center still cools slowly, and freezers are not built for it."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-001": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "What is the difference between cleaning and sanitizing a food-contact surface?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Cleaning kills pathogens; sanitizing removes visible dirt",
+        "b": "They mean the same thing, so either step can be skipped",
+        "c": "Sanitizing removes grease; cleaning is done once a week",
+        "d": "Cleaning removes dirt; sanitizing reduces pathogens"
+      },
+      "explanation": "Cleaning removes food and dirt from a surface. Sanitizing then reduces pathogens on the clean surface to safe levels, using heat or chemicals. A surface must be cleaned before it is sanitized, because dirt stops the sanitizer from working.",
+      "distractorExplanations": {
+        "a": "This reverses the terms: cleaning removes dirt and sanitizing reduces pathogens.",
+        "b": "Both steps are needed; sanitizer cannot work on a surface that has not been cleaned.",
+        "c": "Removing grease is part of cleaning, and food-contact surfaces are cleaned far more often than weekly."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-002": {
+      "topicId": "cleaning",
+      "difficulty": "medium",
+      "prompt": "A food handler has been slicing turkey on the same slicer for several hours. How often must it be cleaned and sanitized?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "At least every 4 hours while it is in constant use",
+        "b": "At the end of the shift when slicing is finished",
+        "c": "Every 8 hours, as long as it is used just for turkey",
+        "d": "Whenever the blade starts to look visibly dirty"
+      },
+      "explanation": "Food-contact surfaces are cleaned and sanitized after each use, before working with a different food, after interruptions, whenever they are contaminated, and at least every 4 hours if they are in constant use.",
+      "distractorExplanations": {
+        "b": "Waiting until the end of the shift lets pathogens build up; the limit is every 4 hours of constant use.",
+        "c": "8 hours is too long; even single-food use needs cleaning and sanitizing every 4 hours.",
+        "d": "Pathogens are invisible, so surfaces are cleaned on a schedule, not only when dirt appears."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-003": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "What is the correct order of steps for washing items in a three-compartment sink?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Wash, sanitize, rinse, scrape, towel-dry",
+        "b": "Scrape, wash, rinse, sanitize, air-dry",
+        "c": "Rinse, sanitize, wash, scrape, air-dry",
+        "d": "Scrape, wash, sanitize, rinse, air-dry"
+      },
+      "explanation": "Scrape or rinse off food, wash in a detergent solution, rinse in clean water, sanitize by soaking for the required contact time, then air-dry on a clean rack. Rinsing before sanitizing keeps detergent from weakening the sanitizer, and towel-drying can recontaminate items.",
+      "distractorExplanations": {
+        "a": "Sanitizing before rinsing lets leftover detergent weaken the sanitizer, and towels can recontaminate items.",
+        "c": "Items must be washed before they are sanitized; sanitizer cannot work on dirty items.",
+        "d": "Rinsing after sanitizing washes the sanitizer off; the clean-water rinse goes between washing and sanitizing."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-004": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "How should a food handler check that a chemical sanitizer solution is the right strength?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Smell it to make sure it is strong enough",
+        "b": "Look at the color of the water in the sink",
+        "c": "Use a test kit made for that sanitizer",
+        "d": "Add extra sanitizer just to be safe"
+      },
+      "explanation": "Sanitizer concentration is checked with a test kit made for that chemical, such as chlorine, iodine or quats. Too weak and it will not reduce pathogens; too strong and it can be unsafe and leave residue on food-contact surfaces.",
+      "distractorExplanations": {
+        "a": "Smell cannot measure concentration; only a test kit can.",
+        "b": "Water color does not show the strength of most sanitizers.",
+        "d": "Too much sanitizer can be toxic and leave residue, so the strength must still be tested."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-005": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "Between uses, where should a wet wiping cloth used on food-contact surfaces be kept?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "In an apron pocket for quick access",
+        "b": "On the prep counter next to the cutting board",
+        "c": "Over the shoulder so it stays out of the way",
+        "d": "In a sanitizer solution at the right strength"
+      },
+      "explanation": "Wet wiping cloths for food-contact surfaces are stored in a sanitizer solution between uses, and the solution is changed regularly. Cloths used for raw meat are kept separate, and dry cloths must stay dry and free of food.",
+      "distractorExplanations": {
+        "a": "A cloth in a pocket stays damp and dirty and can spread pathogens to hands.",
+        "b": "A wet cloth left on the counter lets pathogens grow and spread to the board.",
+        "c": "A cloth over the shoulder touches hair and clothing and does not stay sanitized."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-006": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "A new bottle of degreaser has been delivered. Where should it be stored?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "In a separate area away from food and utensils",
+        "b": "On the shelf above the prep table for easy reach",
+        "c": "In an empty food container labeled with a marker",
+        "d": "In dry storage next to the paper cups and napkins"
+      },
+      "explanation": "Chemicals are stored in their original labeled containers in a separate area, away from and never above food, utensils, linens and single-use items. If a chemical is moved into a working container, that container is labeled with the chemical's common name.",
+      "distractorExplanations": {
+        "b": "Chemicals stored above prep areas can drip or spill into food.",
+        "c": "Food containers must never hold chemicals, because someone could mistake the chemical for food.",
+        "d": "Single-use items touch food and mouths, so chemicals must not be stored beside them."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-007": {
+      "topicId": "cleaning",
+      "difficulty": "medium",
+      "prompt": "An employee splashes a cleaning chemical on her arm. Where can she find first-aid and safe-handling information for that product?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "On the latest health inspection report",
+        "b": "On the product's Safety Data Sheet (SDS)",
+        "c": "In the operation's HACCP plan binder",
+        "d": "On the dish machine's temperature log"
+      },
+      "explanation": "A Safety Data Sheet lists a chemical's hazards, safe use and storage, protective equipment and first-aid steps. OSHA requires employers to keep SDS where staff can reach them and to train employees on chemical hazards.",
+      "distractorExplanations": {
+        "a": "Inspection reports list violations; they do not give chemical first-aid instructions.",
+        "c": "A HACCP plan controls food hazards at critical control points, not chemical first aid.",
+        "d": "Dish machine logs track temperatures and sanitizer levels, not chemical safety information."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-008": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "Where should dirty mop water be dumped?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "In a handwashing sink",
+        "b": "In a food-prep sink",
+        "c": "In a utility (service) sink",
+        "d": "In a three-compartment sink"
+      },
+      "explanation": "Dirty mop water and other liquid waste go into a utility (service) sink or a floor drain. Dumping it into sinks used for hands, food or dishes would contaminate them.",
+      "distractorExplanations": {
+        "a": "Hand sinks are used only for washing hands; mop water would contaminate them.",
+        "b": "Prep sinks are used for food, so mop water could contaminate produce washed there.",
+        "d": "The three-compartment sink cleans dishes and utensils, so mop water there would spread contamination."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-009": {
+      "topicId": "cleaning",
+      "difficulty": "medium",
+      "prompt": "A food handler finds droppings and gnawed flour bags in dry storage. What should happen?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Set out store-bought rat poison next to the food shelves",
+        "b": "Throw away the bags and tell no one about it",
+        "c": "Spray insecticide on the shelves during service hours",
+        "d": "Report it to the manager for licensed pest control"
+      },
+      "explanation": "Droppings, gnaw marks, nests and odors are signs of pests. Report them to the manager right away. Pest control is handled by a licensed pest control operator, and food damaged by pests is thrown out.",
+      "distractorExplanations": {
+        "a": "Food handlers should not apply pesticides, and poison near food can contaminate it.",
+        "b": "Hiding the problem lets the infestation grow; it must be reported so it can be treated.",
+        "c": "Applying pesticides is a job for a licensed operator, and spraying near food during service contaminates it."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-010": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "Which list contains only major food allergens recognized in the United States?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Milk, eggs, fish, shellfish, peanuts, sesame",
+        "b": "Milk, eggs, corn, rice, garlic, mustard",
+        "c": "Wheat, soy, chicken, beef, pork, lamb",
+        "d": "Peanuts, strawberries, tomatoes, citrus"
+      },
+      "explanation": "The nine major U.S. food allergens are milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy and sesame (added in 2023). They cause most serious allergic reactions, so staff must be able to identify them in menu items.",
+      "distractorExplanations": {
+        "b": "Milk and eggs are major allergens, but corn, rice, garlic and mustard are not on the U.S. list.",
+        "c": "Wheat and soy are major allergens, but chicken, beef, pork and lamb are not.",
+        "d": "Peanuts are a major allergen, but strawberries, tomatoes and citrus are not."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-011": {
+      "topicId": "cleaning",
+      "difficulty": "medium",
+      "prompt": "Minutes after eating, a guest has hives, swollen lips and trouble breathing. What should staff do?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Give the guest water and wait to see if it passes",
+        "b": "Offer a free dessert and ask the guest to leave",
+        "c": "Call 911 and follow the operation's emergency plan",
+        "d": "Have the guest drive to a clinic after the meal"
+      },
+      "explanation": "Hives, swelling, wheezing or trouble breathing after eating can signal anaphylaxis, a severe allergic reaction that can be fatal within minutes. Call emergency services right away and follow the operation's emergency procedures.",
+      "distractorExplanations": {
+        "a": "Waiting can be fatal; anaphylaxis needs emergency help immediately.",
+        "b": "This ignores a medical emergency and delays care.",
+        "d": "A guest who cannot breathe properly must not drive; call emergency services."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-012": {
+      "topicId": "cleaning",
+      "difficulty": "easy",
+      "prompt": "A guest asks whether the pesto contains nuts. The server is not sure. What should the server do?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Say it is safe if the guest orders a small portion",
+        "b": "Check the recipe or ask the chef before answering",
+        "c": "Tell the guest to pick out any nuts they can see",
+        "d": "Suggest a different dish without checking it"
+      },
+      "explanation": "Servers must describe dishes accurately, including hidden allergens. If unsure, check the recipe or ingredient label or ask the manager or chef, then answer the guest and mark the allergy clearly on the order.",
+      "distractorExplanations": {
+        "a": "Portion size does not matter; even a tiny amount of an allergen can cause a reaction.",
+        "c": "Picking out visible nuts does not remove allergen proteins already in the sauce.",
+        "d": "Recommending another dish without checking it can still expose the guest to nuts."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-013": {
+      "topicId": "cleaning",
+      "difficulty": "medium",
+      "prompt": "A guest with a shellfish allergy sends back a salad because it has shrimp on it. The cook removes the shrimp and sends the same salad back. What is wrong?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Nothing, once the shrimp is fully removed",
+        "b": "The salad should have been rinsed with water",
+        "c": "The salad needed to be held at 41°F or lower",
+        "d": "The allergen is still there; make a new salad"
+      },
+      "explanation": "Removing an allergen from a finished dish does not remove the proteins left behind; this is cross-contact. Make a new dish with clean and sanitized equipment, utensils and surfaces, after washing hands and changing gloves.",
+      "distractorExplanations": {
+        "a": "Removing the shrimp leaves shellfish proteins on the other ingredients, so the dish is unsafe.",
+        "b": "Rinsing with water does not reliably remove allergen proteins and adds a contamination risk.",
+        "c": "Temperature has no effect on allergens; the problem is cross-contact."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-014": {
+      "topicId": "cleaning",
+      "difficulty": "hard",
+      "prompt": "A kitchen fries breaded shrimp and French fries in the same oil. A guest with a shellfish allergy orders fries. What is the safest option?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Use separate oil that has never cooked shellfish",
+        "b": "Fry them in the shared oil at a higher temperature",
+        "c": "Strain the shared oil before frying the order",
+        "d": "Serve the fries, since potatoes have no shellfish"
+      },
+      "explanation": "Shared fryer oil carries allergen proteins from one food to another. Use a dedicated fryer or fresh oil that has not cooked the allergen, with clean baskets and utensils. Heat and straining do not remove allergen proteins.",
+      "distractorExplanations": {
+        "b": "Higher frying temperatures do not destroy shellfish allergen proteins.",
+        "c": "Straining removes crumbs, not the allergen proteins dissolved in the oil.",
+        "d": "The fries pick up shellfish proteins from the shared oil even though potatoes contain none."
+      }
+    },
+    "servsafe-food-handler-readiness-check-cleaning-015": {
+      "topicId": "cleaning",
+      "difficulty": "medium",
+      "prompt": "A plastic cutting board has deep scratches and grooves that no longer come clean. What should be done?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Sanitize it for twice the normal contact time",
+        "b": "Keep using it, but for raw meat from now on",
+        "c": "Resurface it or replace it",
+        "d": "Cover the scratches with plastic wrap"
+      },
+      "explanation": "Deep scratches and grooves trap food and bacteria where cleaning and sanitizing cannot reach. Cutting boards with deep grooves must be resurfaced or thrown out, because food equipment must be kept in good repair.",
+      "distractorExplanations": {
+        "a": "A longer contact time cannot reach pathogens trapped deep in the grooves.",
+        "b": "Raw-meat juices would collect in the grooves too; the damage makes the board unsafe for any food.",
+        "d": "Plastic wrap can tear and become a physical contaminant, and it does not repair the board."
+      }
+    }
+  }
+}

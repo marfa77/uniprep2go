@@ -16,7 +16,11 @@ Mechanical gates (`triage:mock-banks`, `validate:wave-deck`, `validate:certifica
 
 **Never:** Grok for bank content. **Never:** OpenRouter `validate:mock-banks` as a substitute (forbidden — see `no-openrouter.mdc`).
 
+**Sol/Opus not in the subagent list:** use parallel `inherit` subagents (same model as the main chat) for writing and review, split by topic/rows with a chunk validator — see `subagent-model-picker.mdc` § Parallel content work. The main chat merges, re-runs all gates and spot-reads before "done".
+
 ## What the reviewer must check
+
+Full standard (item checklist, distractor rules, metric gates, Anki rebuild cascade, selling samples): **`mock-bank-audit-standard.mdc`**. Minimum:
 
 - Credential match (stems say the right role: scribe ≠ CMA/CCMA, etc.)
 - No sibling-remap leftovers (`remapped from sibling`, wrong exam body in prompts)

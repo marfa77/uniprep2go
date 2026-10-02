@@ -1,0 +1,344 @@
+{
+  "ptcb-pharmacy-technician-mock": {
+    "ptcb-pharmacy-technician-mock-071": {
+      "difficulty": "easy",
+      "prompt": "How many grams of dextrose are in a 500 mL bag of D5W (5% dextrose in water)?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "2.5 g",
+        "b": "5 g",
+        "c": "25 g",
+        "d": "50 g"
+      },
+      "explanation": "D5W is 5% w/v, meaning 5 g of dextrose per 100 mL. For 500 mL: 5 g x (500 / 100) = 25 g. Percent weight-in-volume always means grams per 100 mL of solution.",
+      "distractorExplanations": {
+        "a": "2.5 g treats 5% as 5 g per 1,000 mL instead of per 100 mL.",
+        "b": "5 g is the amount in only 100 mL, not the whole 500 mL bag.",
+        "d": "50 g in 500 mL would be a 10% solution (D10W)."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-072": {
+      "difficulty": "medium",
+      "prompt": "A child weighs 44 lb. Amoxicillin is ordered at 40 mg/kg/day, divided every 12 hours. How many milligrams should each dose contain?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "200 mg",
+        "b": "400 mg",
+        "c": "800 mg",
+        "d": "1,760 mg"
+      },
+      "explanation": "Convert weight first: 44 lb / 2.2 = 20 kg. Daily dose = 40 mg/kg/day x 20 kg = 800 mg/day. Every 12 hours means 2 doses a day, so each dose is 800 / 2 = 400 mg.",
+      "distractorExplanations": {
+        "a": "200 mg divides the daily dose into 4 doses (every 6 hours) instead of 2.",
+        "c": "800 mg is the total daily dose, not the amount per dose.",
+        "d": "1,760 mg uses 44 lb as if it were 44 kg, the classic pound-kilogram error."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-073": {
+      "difficulty": "medium",
+      "prompt": "Using Clark's rule, what dose should a 30-lb child receive if the adult dose is 250 mg?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "25 mg",
+        "b": "50 mg",
+        "c": "75 mg",
+        "d": "125 mg"
+      },
+      "explanation": "Clark's rule: child dose = (child's weight in lb / 150) x adult dose. (30 / 150) x 250 mg = 0.2 x 250 mg = 50 mg. Weight-based mg/kg dosing is preferred in practice, but the PTCE may name Clark's rule directly.",
+      "distractorExplanations": {
+        "a": "25 mg divides by 300 instead of 150, halving the correct result.",
+        "c": "75 mg divides by 100 instead of 150.",
+        "d": "125 mg simply halves the adult dose without using the child's weight."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-074": {
+      "difficulty": "easy",
+      "prompt": "A prescription for an oral suspension reads: 5 mL po bid x 10 days. What total volume should be dispensed?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "10 mL",
+        "b": "50 mL",
+        "c": "100 mL",
+        "d": "150 mL"
+      },
+      "explanation": "Total volume = dose x doses per day x days: 5 mL x 2 (bid, twice daily) x 10 days = 100 mL. 'po' means by mouth.",
+      "distractorExplanations": {
+        "a": "10 mL is only one day's supply (5 mL twice).",
+        "b": "50 mL assumes once-daily dosing instead of twice daily.",
+        "d": "150 mL assumes three-times-daily (tid) dosing."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-075": {
+      "difficulty": "easy",
+      "prompt": "A prescription is written for levothyroxine 0.075 mg daily. Which tablet strength, labeled in micrograms, matches this order?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "7.5 mcg",
+        "b": "75 mcg",
+        "c": "750 mcg",
+        "d": "7,500 mcg"
+      },
+      "explanation": "1 mg = 1,000 mcg, so 0.075 mg x 1,000 = 75 mcg. Levothyroxine strengths are labeled in mcg (25, 50, 75, 88, 100 and so on), and a misplaced decimal point changes the dose tenfold.",
+      "distractorExplanations": {
+        "a": "7.5 mcg multiplies by 100 instead of 1,000.",
+        "c": "750 mcg multiplies by 10,000, a tenfold overdose.",
+        "d": "7,500 mcg multiplies by 100,000, a hundredfold overdose."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-076": {
+      "difficulty": "hard",
+      "prompt": "500 mL of normal saline is to infuse over 4 hours using tubing with a drop factor of 20 gtt/mL. What is the rate in drops per minute, rounded to the nearest whole drop?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "21 gtt/min",
+        "b": "31 gtt/min",
+        "c": "42 gtt/min",
+        "d": "125 gtt/min"
+      },
+      "explanation": "gtt/min = (volume x drop factor) / time in minutes. (500 mL x 20 gtt/mL) / 240 min = 41.7, about 42 gtt/min. Always convert hours to minutes and use the drop factor printed on the tubing package.",
+      "distractorExplanations": {
+        "a": "21 gtt/min uses a 10 gtt/mL drop factor instead of 20.",
+        "b": "31 gtt/min uses a 15 gtt/mL drop factor instead of 20.",
+        "d": "125 is the rate in mL per hour (500 mL / 4 h), not drops per minute."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-077": {
+      "difficulty": "easy",
+      "prompt": "A prescription reads: amoxicillin 500 mg, 1 capsule po tid x 10 days. How many capsules should be dispensed?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "40 capsules",
+        "b": "30 capsules",
+        "c": "20 capsules",
+        "d": "10 capsules"
+      },
+      "explanation": "tid means three times daily. 1 capsule x 3 per day x 10 days = 30 capsules. Confusing tid with bid (twice daily) or qid (four times daily) changes both the quantity and the days' supply.",
+      "distractorExplanations": {
+        "a": "40 capsules treats tid as qid (four times daily).",
+        "c": "20 capsules treats tid as bid (twice daily).",
+        "d": "10 capsules assumes once-daily dosing."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-078": {
+      "difficulty": "hard",
+      "prompt": "A patient injects 30 units of insulin glargine (Lantus) daily from a 10 mL vial of U-100 insulin. An opened vial must be discarded after 28 days. What days' supply should be entered?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "28 days",
+        "b": "30 days",
+        "c": "33 days",
+        "d": "100 days"
+      },
+      "explanation": "A 10 mL vial of U-100 holds 100 units/mL x 10 mL = 1,000 units, and 1,000 / 30 units per day is about 33 days. But an opened Lantus vial is discarded after 28 days, so the usable and billable days' supply is 28 days.",
+      "distractorExplanations": {
+        "b": "30 days is a default month, not the result of the math or the discard limit.",
+        "c": "33 days is the correct unit math, but it ignores the 28-day discard rule after opening.",
+        "d": "100 days confuses the U-100 concentration with a number of days."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-079": {
+      "difficulty": "easy",
+      "prompt": "An ophthalmic prescription reads: 2 gtts OU bid. How should the patient use the drops?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Two drops in the right eye twice daily",
+        "b": "Two drops in each ear twice daily",
+        "c": "Two drops in the left eye twice daily",
+        "d": "Two drops in each eye twice daily"
+      },
+      "explanation": "OU means both eyes; OD is the right eye and OS the left eye. AU, AD and AS are the matching ear abbreviations. ISMP recommends writing these out because they are easily confused with each other.",
+      "distractorExplanations": {
+        "a": "The right eye alone is OD, not OU.",
+        "b": "Both ears is AU; OU refers to the eyes.",
+        "c": "The left eye alone is OS, not OU."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-080": {
+      "difficulty": "medium",
+      "prompt": "Which abbreviation is on the Joint Commission 'Do Not Use' list because it is often misread on prescriptions?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "QD (daily)",
+        "b": "BID (twice daily)",
+        "c": "PO (by mouth)",
+        "d": "PRN (as needed)"
+      },
+      "explanation": "QD is on the Joint Commission 'Do Not Use' list because it can be mistaken for QID (four times daily) or QOD; 'daily' should be written out. Other banned items include U for units, trailing zeros (1.0 mg) and missing leading zeros (.5 mg).",
+      "distractorExplanations": {
+        "b": "BID is widely used and is not on the official 'Do Not Use' list.",
+        "c": "PO is a standard route abbreviation and is not on the list.",
+        "d": "PRN is standard and is not on the 'Do Not Use' list."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-081": {
+      "difficulty": "medium",
+      "prompt": "A new order reads: warfarin 1.0 mg by mouth daily. What is the safety problem with how this dose is written?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Warfarin is not made as a 1 mg tablet",
+        "b": "The dose should be written in micrograms",
+        "c": "The trailing zero can be misread as 10 mg",
+        "d": "Warfarin doses must be written in units"
+      },
+      "explanation": "Trailing zeros (1.0 mg) are on the 'Do Not Use' list because a missed decimal point turns 1.0 mg into 10 mg, a tenfold overdose of a high-alert anticoagulant. Correct forms are '1 mg' and, for doses under 1, a leading zero such as '0.5 mg'.",
+      "distractorExplanations": {
+        "a": "Warfarin 1 mg tablets exist (color-coded pink); the strength is not the problem.",
+        "b": "Warfarin doses are written in milligrams; micrograms would add a conversion error.",
+        "d": "Units are used for insulin and heparin, not warfarin."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-082": {
+      "difficulty": "hard",
+      "prompt": "An amoxicillin powder bottle says to add 68 mL of water to make 100 mL of a 250 mg/5 mL suspension. How many milligrams of amoxicillin does the bottle contain?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "250 mg",
+        "b": "3,400 mg",
+        "c": "5,000 mg",
+        "d": "25,000 mg"
+      },
+      "explanation": "250 mg/5 mL equals 50 mg/mL. The final volume is 100 mL (the powder takes up about 32 mL), so the bottle holds 50 mg/mL x 100 mL = 5,000 mg. Always use the final volume, not the volume of water added.",
+      "distractorExplanations": {
+        "a": "250 mg is the amount in a single 5 mL dose, not the whole bottle.",
+        "b": "3,400 mg uses the 68 mL of water added instead of the 100 mL final volume.",
+        "d": "25,000 mg multiplies 250 mg by 100 mL without dividing by 5 mL."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-083": {
+      "difficulty": "medium",
+      "prompt": "A child needs 300 mg of amoxicillin per dose. The pharmacy has amoxicillin suspension 400 mg/5 mL. How many milliliters are needed per dose?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "6.67 mL",
+        "b": "5 mL",
+        "c": "3.75 mL",
+        "d": "2.5 mL"
+      },
+      "explanation": "Set up the proportion 400 mg / 5 mL = 300 mg / x mL, so x = (300 x 5) / 400 = 3.75 mL. Always read the concentration on the bottle, because amoxicillin comes as 125, 200, 250 and 400 mg/5 mL.",
+      "distractorExplanations": {
+        "a": "6.67 mL inverts the ratio (400 / 300 x 5).",
+        "b": "5 mL is one teaspoon regardless of strength and would deliver 400 mg.",
+        "d": "2.5 mL delivers only 200 mg of this suspension."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-084": {
+      "difficulty": "easy",
+      "prompt": "A prescription sig reads: 1 tab po qhs. When should the patient take the dose?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Every hour while awake",
+        "b": "At bedtime",
+        "c": "Every morning",
+        "d": "After each meal"
+      },
+      "explanation": "qhs (or hs) means at bedtime, from the Latin hora somni. 'qh' means every hour, 'qam' every morning and 'pc' after meals. Because 'qhs' can be misread as 'qhr', ISMP suggests writing 'at bedtime' instead.",
+      "distractorExplanations": {
+        "a": "Every hour is 'qh', not 'qhs'.",
+        "c": "Every morning is 'qam' or 'qAM'.",
+        "d": "After meals is 'pc'; 'ac' means before meals."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-085": {
+      "difficulty": "hard",
+      "prompt": "How much 10% hydrocortisone cream and 1% hydrocortisone cream should be combined to make 90 g of 2.5% cream?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "75 g of 10% and 15 g of 1%",
+        "b": "22.5 g of 10% and 67.5 g of 1%",
+        "c": "45 g of 10% and 45 g of 1%",
+        "d": "15 g of 10% and 75 g of 1%"
+      },
+      "explanation": "Alligation: 10 - 2.5 = 7.5 parts of 1% cream and 2.5 - 1 = 1.5 parts of 10% cream, 9 parts in total. 90 g / 9 = 10 g per part, so 15 g of 10% and 75 g of 1%. Check: (1.5 g + 0.75 g) / 90 g = 2.5%.",
+      "distractorExplanations": {
+        "a": "This swaps the parts and produces an 8.5% cream.",
+        "b": "This uses 2.5% as a quarter of the batch and produces a 3.25% cream.",
+        "c": "An even split produces a 5.5% cream, not 2.5%."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-086": {
+      "difficulty": "medium",
+      "prompt": "A prescription for 150 mL of cefdinir suspension reads: 6 mL po bid. What days' supply should be entered?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "10 days",
+        "b": "12 days",
+        "c": "15 days",
+        "d": "25 days"
+      },
+      "explanation": "Daily volume = 6 mL x 2 = 12 mL per day. Days' supply = 150 mL / 12 mL per day = 12.5, which is rounded down to 12 days because a partial day is not billed as a full day.",
+      "distractorExplanations": {
+        "a": "10 days is a typical antibiotic course, not the math from this quantity and sig.",
+        "c": "15 days assumes 5 mL doses twice daily instead of 6 mL.",
+        "d": "25 days assumes once-daily dosing instead of bid."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-087": {
+      "difficulty": "easy",
+      "prompt": "A parent asks how many milliliters equal one teaspoon when measuring a child's liquid medicine. What is the standard pharmacy conversion?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "15 mL",
+        "b": "10 mL",
+        "c": "5 mL",
+        "d": "2.5 mL"
+      },
+      "explanation": "1 teaspoon = 5 mL and 1 tablespoon = 15 mL. Pharmacies dispense an oral syringe or dosing cup marked in mL because kitchen spoons vary widely; ISMP recommends mL-only dosing for oral liquids.",
+      "distractorExplanations": {
+        "a": "15 mL is one tablespoon, three times a teaspoon.",
+        "b": "10 mL equals two teaspoons, which would double a one-teaspoon dose.",
+        "d": "2.5 mL is half a teaspoon."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-088": {
+      "difficulty": "easy",
+      "prompt": "1,000 mL of D5W is ordered to run over 8 hours on an infusion pump. What rate in mL/hr should be programmed?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "12.5 mL/hr",
+        "b": "125 mL/hr",
+        "c": "167 mL/hr",
+        "d": "250 mL/hr"
+      },
+      "explanation": "mL/hr = total volume / hours = 1,000 mL / 8 h = 125 mL/hr. Pumps are programmed in mL/hr; gravity sets need conversion to drops per minute using the tubing's drop factor.",
+      "distractorExplanations": {
+        "a": "12.5 mL/hr is a decimal-place error (1,000 / 80).",
+        "c": "167 mL/hr divides by 6 hours instead of 8.",
+        "d": "250 mL/hr divides by 4 hours, which would finish in half the ordered time."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-089": {
+      "difficulty": "medium",
+      "prompt": "During order entry, the system flags that a new clarithromycin prescription interacts with the patient's simvastatin. What type of drug utilization review is this?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Prospective DUR, done before dispensing",
+        "b": "Retrospective DUR, done after dispensing",
+        "c": "Concurrent DUR, done during the therapy",
+        "d": "A DEA audit of controlled-drug records"
+      },
+      "explanation": "Prospective DUR screens a prescription before it is dispensed for interactions, duplications, allergies and dose problems; OBRA '90 requires it for Medicaid prescriptions. The technician does not override an interaction alert; it goes to the pharmacist.",
+      "distractorExplanations": {
+        "b": "Retrospective DUR reviews claims after dispensing to spot prescribing patterns.",
+        "c": "Concurrent DUR monitors a patient while therapy is under way, usually in hospitals.",
+        "d": "DEA audits cover controlled-substance records; neither drug here is controlled."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-090": {
+      "difficulty": "medium",
+      "prompt": "While checking a stock bottle, a technician reads its National Drug Code (NDC). What does the first segment of the NDC identify?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The labeler of the product",
+        "b": "The drug's strength and dosage form",
+        "c": "The package size and type",
+        "d": "The lot number of the batch"
+      },
+      "explanation": "An NDC has three segments: the labeler (manufacturer, repackager or distributor), the product (drug, strength and dosage form) and the package (size and type). Lot numbers and expiration dates are printed separately and are not part of the NDC.",
+      "distractorExplanations": {
+        "b": "Strength and dosage form are encoded in the middle (product) segment.",
+        "c": "Package size and type are encoded in the last segment.",
+        "d": "Lot numbers are printed separately and are not part of the NDC."
+      }
+    }
+  }
+}

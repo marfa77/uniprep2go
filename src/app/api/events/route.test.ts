@@ -5,6 +5,8 @@ import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 
 const notifyCheckoutClick = vi.fn(async () => true);
 const notifyMockStarted = vi.fn(async () => true);
+const notifyMockPassCheckoutClick = vi.fn(async () => true);
+const notifyMockPassRedeem = vi.fn(async () => true);
 const recordFunnelEvent = vi.fn(async () => undefined);
 const pricedDeck = {
   slug: "cfa-level-1-anki-deck",
@@ -14,7 +16,12 @@ const pricedDeck = {
   price: { amount: 11, currency: "USD" },
 };
 
-vi.mock("@/lib/telegram-notify", () => ({ notifyCheckoutClick, notifyMockStarted }));
+vi.mock("@/lib/telegram-notify", () => ({
+  notifyCheckoutClick,
+  notifyMockStarted,
+  notifyMockPassCheckoutClick,
+  notifyMockPassRedeem,
+}));
 vi.mock("@/lib/funnel-store", () => ({ recordFunnelEvent }));
 vi.mock("@/lib/checkout-pricing", () => ({
   getPricedDeckBySlug: vi.fn(async () => pricedDeck),
@@ -28,7 +35,35 @@ describe("POST /api/events", () => {
   beforeEach(() => {
     notifyCheckoutClick.mockClear();
     notifyMockStarted.mockClear();
+    notifyMockPassCheckoutClick.mockClear();
+    notifyMockPassRedeem.mockClear();
     recordFunnelEvent.mockClear();
+  });
+
+  it("sends a Telegram DM when a visitor clicks Mock Pass checkout", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    const response = await POST(
+      new Request("https://uniprep2go.study/api/events", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-vercel-ip-country": "US" },
+        body: JSON.stringify({
+          name: "mock_pass_checkout_click",
+          deckSlug: "series-63-anki-deck",
+          source: "mock:series-63-readiness-check:pass:checkout:landing",
+          destinationUrl: "https://pixidstudio.gumroad.com/l/uniprep-mock-pass?wanted=true",
+        }),
+      }),
+    );
+
+    expect(response.status).toBe(204);
+    expect(notifyMockPassCheckoutClick).toHaveBeenCalledTimes(1);
+    const [event, mock] = notifyMockPassCheckoutClick.mock.calls[0] as unknown as [
+      { name: string },
+      { slug: string } | undefined,
+    ];
+    expect(event.name).toBe("mock_pass_checkout_click");
+    expect(mock?.slug).toBe("series-63-readiness-check");
+    expect(notifyCheckoutClick).not.toHaveBeenCalled();
   });
 
   it("sends Telegram checkout alerts even when funnel stats are excluded", async () => {

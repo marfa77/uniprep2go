@@ -12,7 +12,7 @@ function q(partial: Partial<MockQuestion> & Pick<MockQuestion, "id" | "prompt" |
       { id: "d", text: "Long enough option text D for scoring" },
     ],
     correctOptionId: "a",
-    explanation: "Because A is correct.",
+    explanation: "A is correct because the rule applies to this scenario; the others misstate it.",
     distractorExplanations: {
       b: "B is wrong.",
       c: "C is wrong.",
@@ -54,5 +54,33 @@ describe("pickMockSampleQuestions", () => {
     expect(samples).toHaveLength(3);
     expect(samples.every((item) => !/^What is\b/i.test(item.prompt))).toBe(true);
     expect(new Set(samples.map((item) => item.topicId)).size).toBe(3);
+  });
+
+  it("drops template, drill, and thin-explanation items before picking", () => {
+    const scenario =
+      "A customer asks a representative which account feature fits a short horizon. Which answer is most accurate?";
+    const questions = [
+      q({ id: "t", topicId: "a", prompt: `${scenario} (template)`, explanation: "The correct choice (A) matches this rule." }),
+      q({ id: "d", topicId: "b", prompt: `${scenario} (Drill 2)` }),
+      q({ id: "e", topicId: "c", prompt: `${scenario} (thin)`, explanation: "A." }),
+      q({ id: "ok", topicId: "d", prompt: scenario }),
+    ];
+    expect(pickMockSampleQuestions(questions, 3).map((item) => item.id)).toEqual(["ok"]);
+  });
+
+  it("is seeded: stable for the same bank, random among the top pool across seeds", () => {
+    const questions = Array.from({ length: 40 }, (_, i) =>
+      q({
+        id: String(i),
+        topicId: `t${i}`,
+        prompt: `A client in case ${i} asks a representative about suitability rule ${i}. Which response is most accurate here?`,
+      }),
+    );
+    const first = pickMockSampleQuestions(questions, 5, "demo").map((item) => item.id);
+    expect(pickMockSampleQuestions(questions, 5, "demo").map((item) => item.id)).toEqual(first);
+    const seeds = ["a", "b", "c", "d", "e", "f"].map((seed) =>
+      pickMockSampleQuestions(questions, 5, seed).map((item) => item.id).join(","),
+    );
+    expect(new Set(seeds).size).toBeGreaterThan(1);
   });
 });

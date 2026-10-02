@@ -1,0 +1,244 @@
+{
+  "veterinary-assistant-readiness-check": {
+    "veterinary-assistant-readiness-check-hospital-001": {
+      "prompt": "A 15 kg dog is prescribed an injectable drug at 4 mg/kg, and the vial is labeled 20 mg/mL. The veterinarian asks the assistant to work out the volume for the technician to verify. How many milliliters is the dose?",
+      "options": {
+        "a": "0.33 mL",
+        "b": "1.36 mL",
+        "c": "3.0 mL",
+        "d": "6.6 mL"
+      },
+      "correctOptionId": "c",
+      "explanation": "Dose in mg = mg/kg × body weight in kg, then volume = mg ÷ concentration. Here 4 mg/kg × 15 kg = 60 mg, and 60 mg ÷ 20 mg/mL = 3.0 mL. The weight is already in kilograms, so no conversion is needed, and the volume is still verified by the veterinarian or technician before it is given.",
+      "distractorExplanations": {
+        "a": "Inverts the last step: divides the concentration by the dose (20 ÷ 60) instead of the dose by the concentration (60 ÷ 20).",
+        "b": "Treats 15 kg as 15 lb and divides by 2.2 (6.8 kg × 4 = 27.3 mg ÷ 20), an unneeded conversion that underdoses the dog.",
+        "d": "Multiplies kilograms by 2.2 as if converting to pounds (33 × 4 = 132 mg ÷ 20), more than doubling the correct volume."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-002": {
+      "prompt": "A cat weighs 11 lb on the clinic scale. The veterinarian orders an oral suspension at 2 mg/kg, and the bottle contains 10 mg/mL. What volume should the assistant measure into the dosing syringe?",
+      "options": {
+        "a": "1.0 mL",
+        "b": "2.2 mL",
+        "c": "4.84 mL",
+        "d": "10.0 mL"
+      },
+      "correctOptionId": "a",
+      "explanation": "Convert pounds to kilograms first by dividing by 2.2: 11 lb ÷ 2.2 = 5 kg. Then 5 kg × 2 mg/kg = 10 mg, and 10 mg ÷ 10 mg/mL = 1.0 mL. Doses are written per kilogram, so skipping the conversion more than doubles the dose for a small cat.",
+      "distractorExplanations": {
+        "b": "Forgot to convert pounds to kilograms: 11 × 2 mg = 22 mg ÷ 10 mg/mL gives 2.2 mL, more than twice the ordered dose.",
+        "c": "Multiplied by 2.2 instead of dividing (11 × 2.2 = 24.2 'kg'), producing 48.4 mg and nearly five times the correct volume.",
+        "d": "Stopped at the 10 mg dose and measured it as 10 mL, confusing milligrams of drug with milliliters of suspension."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-003": {
+      "prompt": "The veterinarian prescribes amoxicillin–clavulanate 250 mg tablets: give 1½ tablets by mouth every 12 hours for 10 days. How many tablets should the assistant count out on the counting tray before the label is printed and checked?",
+      "options": {
+        "a": "10 tablets",
+        "b": "15 tablets",
+        "c": "20 tablets",
+        "d": "30 tablets"
+      },
+      "correctOptionId": "d",
+      "explanation": "Multiply tablets per dose × doses per day × days: 1.5 × 2 × 10 = 30 tablets, because every 12 hours means two doses a day. The finished label must still show the patient and owner, drug name and strength, directions, quantity, prescribing veterinarian and clinic, and the veterinarian checks it before it is dispensed.",
+      "distractorExplanations": {
+        "a": "Counts one whole tablet once a day for 10 days, ignoring both the half tablet and the twice-daily schedule.",
+        "b": "Keeps the 1½ tablets but treats every 12 hours as once daily, so the pet runs out halfway through the course.",
+        "c": "Uses twice-daily dosing but drops the half tablet, dispensing one tablet per dose instead of 1½."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-004": {
+      "prompt": "The assistant is not on the clinic's list of staff authorized to handle controlled substances. A busy technician hands over the safe key and asks the assistant to take out a vial of hydromorphone, a Schedule II opioid, for a surgery patient. What should the assistant do?",
+      "options": {
+        "a": "Remove the vial and record the withdrawal in the log under the technician's name",
+        "b": "Return the key and ask the technician or veterinarian to withdraw and log the drug",
+        "c": "Remove the vial now and add the controlled-drug log entry at the end of the shift",
+        "d": "Remove the vial, since a credentialed technician's verbal request counts as authorization"
+      },
+      "correctOptionId": "b",
+      "explanation": "Controlled substances must stay secured, be handled by staff the DEA registrant has authorized, and have every withdrawal recorded promptly in the controlled-substance log with patient, amount, and handler. An unauthorized assistant taking the vial breaks that chain of accountability even when a coworker asks, so the authorized person withdraws and logs it.",
+      "distractorExplanations": {
+        "a": "Logging under someone else's name falsifies the controlled-substance record and hides who actually handled the Schedule II drug.",
+        "c": "Delayed logging is a classic diversion red flag; withdrawals are recorded when they happen, and the assistant still lacks authorization.",
+        "d": "A coworker cannot delegate access; authorization comes from the DEA registrant's clinic policy, not a verbal request at the safe."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-005": {
+      "prompt": "A shipment of canine vaccines arrives on ice packs during a busy morning. Where and how should the assistant store the vials?",
+      "options": {
+        "a": "In the freezer compartment, which keeps the vaccines potent for longer",
+        "b": "On the pharmacy shelf until the afternoon restock, since they are still cold",
+        "c": "Promptly on an inner shelf of the medication refrigerator at 2–8 °C (35–46 °F)",
+        "d": "On the refrigerator door shelves, where staff can grab them quickly"
+      },
+      "correctOptionId": "c",
+      "explanation": "Most veterinary vaccines must be kept refrigerated at 2–8 °C (35–46 °F) and protected from light. They go into the monitored medication refrigerator as soon as they arrive, on interior shelves where the temperature is most stable. Freezing or warming can inactivate a vaccine without any visible change to the vial.",
+      "distractorExplanations": {
+        "a": "Freezing damages most vaccines, especially adjuvanted killed products, so frozen vials may give the patient no protection.",
+        "b": "Hours at room temperature are a temperature excursion that can reduce potency even if the box still feels cool to the touch.",
+        "d": "Door shelves swing in temperature every time the refrigerator is opened, making them the least stable spot for vaccines."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-006": {
+      "prompt": "A client drops off a dog's stool sample collected at 7 a.m., but the technician will not run the fecal flotation until 3 p.m. How should the assistant handle the sample in the meantime?",
+      "options": {
+        "a": "Freeze it so any parasite eggs stay intact until the test is run",
+        "b": "Leave it in its sealed bag at the front desk at room temperature",
+        "c": "Mix it with flotation solution now so the eggs have time to float",
+        "d": "Label it with patient and collection time, then refrigerate it"
+      },
+      "correctOptionId": "d",
+      "explanation": "Fecal flotation is most accurate on a fresh sample, ideally examined within about an hour of collection. When testing is delayed, the labeled sample is refrigerated (not frozen), which slows egg development and hatching and keeps it usable for roughly a day or two. The recorded collection time lets the technician judge whether the sample is still suitable.",
+      "distractorExplanations": {
+        "a": "Freezing distorts or ruptures parasite eggs and destroys fragile protozoa, so a frozen sample can give a false negative.",
+        "b": "Hours at room temperature let eggs embryonate or hatch into larvae that no longer float, reducing flotation accuracy.",
+        "c": "Eggs left in concentrated flotation solution for hours distort and collapse; the slide is read soon after it is set up."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-007": {
+      "prompt": "A voided urine sample is collected from a dog at 10:00 a.m., and the analyzer is tied up with other tests. How soon should urine kept at room temperature be analyzed before the assistant needs to refrigerate it?",
+      "options": {
+        "a": "Within about 30 to 60 minutes of collection",
+        "b": "Within about 4 hours, as long as the cup stays closed",
+        "c": "Within about 12 hours, if it is kept out of sunlight",
+        "d": "Within about 24 hours, stored on the lab counter"
+      },
+      "correctOptionId": "a",
+      "explanation": "Urinalysis should be run within roughly 30–60 minutes of collection. After that, bacteria multiply, pH rises, casts and cells break down, and glucose can be consumed, so a delayed sample is labeled and refrigerated, then brought back to room temperature before testing.",
+      "distractorExplanations": {
+        "b": "A closed lid does not stop bacterial growth or cell breakdown; four hours at room temperature changes pH and sediment results.",
+        "c": "Light protection helps bilirubin, but twelve unrefrigerated hours lets casts dissolve and bacteria overgrow the sample.",
+        "d": "A day on the counter makes sediment and chemistry results unreliable; the sample needed refrigeration within the hour."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-008": {
+      "prompt": "The veterinarian orders a CBC and a serum chemistry panel on a senior cat. Which tubes should the assistant set out and label for the technician drawing the blood?",
+      "options": {
+        "a": "Red top for the CBC and lavender top for the chemistry panel",
+        "b": "Light-blue citrate top for the CBC and red top for the chemistry",
+        "c": "Lavender EDTA top for the CBC and red or tiger top for chemistry",
+        "d": "One lavender EDTA top, since a single tube can be used for both panels"
+      },
+      "correctOptionId": "c",
+      "explanation": "A CBC needs unclotted whole blood, so it goes in a lavender (purple) EDTA tube. Serum chemistry needs serum, collected in a plain red-top or a tiger-top serum separator tube that is allowed to clot and then centrifuged. Each tube is labeled with patient, owner, date, and time right after it is filled.",
+      "distractorExplanations": {
+        "a": "Swaps the tubes: a red top lets the blood clot so cells cannot be counted, and EDTA plasma is wrong for serum chemistry.",
+        "b": "Light-blue citrate tubes are for coagulation tests; the liquid citrate dilutes the sample and is not the standard CBC tube.",
+        "d": "EDTA binds calcium and its potassium salt raises potassium, so EDTA plasma gives false serum chemistry results."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-009": {
+      "prompt": "The assistant unloads a spay pack from the autoclave and sees that the indicator tape on the outside wrap has changed color. What does that color change tell the surgical team?",
+      "options": {
+        "a": "The instruments inside reached sterilizing temperature for the full cycle",
+        "b": "The pack went through a cycle; an internal indicator checks the contents",
+        "c": "The pack will stay sterile on the storage shelf for at least a full year",
+        "d": "The load no longer needs its routine biological indicator spore test"
+      },
+      "correctOptionId": "b",
+      "explanation": "Autoclave tape is an external process indicator: it shows the pack was exposed to the sterilizing process, not that steam and heat penetrated to the instruments long enough. An internal chemical indicator placed in the center of the pack is read when it is opened, and routine biological spore tests verify the sterilizer itself.",
+      "distractorExplanations": {
+        "a": "Tape on the outer wrap changes quickly and cannot show that the center of a dense instrument pack was penetrated.",
+        "c": "Shelf life is event-related or set by clinic policy; tape color says nothing about how long the wrap stays intact.",
+        "d": "Spore testing checks the autoclave's performance on a schedule; a tape color change does not replace that test."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-010": {
+      "prompt": "During a surgery, the veterinarian asks the non-scrubbed assistant to open a wrapped sterile gauze pack for the sterile field. Which technique is correct?",
+      "options": {
+        "a": "Reach across the field and drop the gauze next to the instrument tray",
+        "b": "Open the first flap toward your body, then the sides, and the last flap away from you",
+        "c": "Hold the gauze in bare fingers and pass it into the surgeon's gloved hand",
+        "d": "Open the first flap away from you and present it without reaching over the field"
+      },
+      "correctOptionId": "d",
+      "explanation": "A non-sterile person opens a wrapped item by unfolding the first flap away from the body, then the sides, and the last flap toward the body, holding the wrap back so only the sterile contents are offered to the surgeon or dropped from a safe distance. Reaching over the sterile field can drop contaminants onto it.",
+      "distractorExplanations": {
+        "a": "Reaching across the field lets the assistant's arm and clothing shed contaminants over the sterile instruments.",
+        "b": "Reverses the order: opening the first flap toward you forces you to reach over the exposed sterile contents for the last flap.",
+        "c": "Bare fingers contaminate the gauze; sterile items are transferred by presenting them inside the opened wrap."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-011": {
+      "prompt": "A dog is being prepared for an ovariohysterectomy, and the assistant is assigned the clip. Which approach matches correct surgical prep and the assistant's role?",
+      "options": {
+        "a": "Clip a wide margin in the prep room, vacuum the hair, and leave the aseptic scrub to the technician",
+        "b": "Clip a narrow strip over the incision line, then perform the final sterile scrub in the surgery suite",
+        "c": "Clip the abdomen on the surgery table so the patient is moved just once before the incision is made",
+        "d": "Shave the abdomen with a razor the evening before so the morning surgery schedule runs on time"
+      },
+      "correctOptionId": "a",
+      "explanation": "Hair is clipped in a prep area away from the surgery suite, with a generous margin around the planned incision (for a spay, roughly xiphoid to pubis and well out to each side) so the drape window and any extended incision stay clean. Loose hair is vacuumed, and the aseptic skin scrub is done by the credentialed technician or veterinarian per clinic protocol.",
+      "distractorExplanations": {
+        "b": "A narrow clip leaves hair at the drape edge if the incision is extended, and the final aseptic scrub is not an assistant task.",
+        "c": "Clipping in the surgery suite spreads hair and dander into the room where the sterile field will be set up.",
+        "d": "Razor shaving the night before leaves nicks that bacteria colonize, raising the risk of surgical site infection."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-012": {
+      "prompt": "The veterinarian requests a right lateral thoracic radiograph, and the assistant is helping position the dog. How should the dog be positioned and the image marked?",
+      "options": {
+        "a": "Left side down against the table, with a left (L) marker in the field",
+        "b": "Right side down on the table, with a left (L) lead marker in the beam",
+        "c": "Right side down on the table, with a right (R) marker in the field",
+        "d": "Left side down, with a right (R) marker placed beside the sternum"
+      },
+      "correctOptionId": "c",
+      "explanation": "Lateral views are named for the side closest to the table or image receptor, so a right lateral means the dog lies on its right side. The lead R marker is placed inside the collimated field to identify the side that is down, so the image is labeled correctly and cannot be read backward.",
+      "distractorExplanations": {
+        "a": "Describes a left lateral view; the view name refers to the side against the table, so the dog is on the wrong side.",
+        "b": "Positioning is correct, but an L marker mislabels the side that is down and can cause the image to be misread.",
+        "d": "The dog is on the wrong side, and the marker must match the side against the table rather than be placed arbitrarily."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-013": {
+      "prompt": "At check-in for a scheduled dental cleaning with possible extractions, the owner says, 'Just do whatever the doctor thinks,' and starts to leave without signing anything. What should the assistant do?",
+      "options": {
+        "a": "Let the owner go and have a technician sign the consent form as a witness later in the day",
+        "b": "Write 'owner verbally agreed' in the chart and admit the patient without any signature",
+        "c": "Ask the owner to sign a blank consent so the doctor can add extractions during the dental",
+        "d": "Review the estimate, get the owner's signed consent, and confirm a reachable phone number"
+      },
+      "correctOptionId": "d",
+      "explanation": "Anesthesia and surgical procedures require informed consent signed by the owner or an authorized agent, ideally after reviewing an estimate. Confirming a reachable phone number lets the veterinarian call for approval if extractions or costs exceed the estimate, instead of guessing mid-procedure.",
+      "distractorExplanations": {
+        "a": "A staff signature cannot stand in for the owner's consent; the owner is present and must sign the form personally.",
+        "b": "Vague verbal approval at the desk does not document informed consent to anesthesia, extractions, or estimated cost.",
+        "c": "A blank form is not informed consent, because the owner never agreed to the specific procedures and their costs."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-014": {
+      "prompt": "The morning after a busy shift, the assistant realizes they never charted that a hospitalized cat vomited at 6 p.m. the previous evening. How should the medical record be corrected?",
+      "options": {
+        "a": "Squeeze the note into yesterday's entry so the timeline looks continuous",
+        "b": "Add a dated, initialed late entry stating when the vomiting occurred",
+        "c": "Delete yesterday's notes and rewrite the whole day in chronological order",
+        "d": "Tell the veterinarian verbally and leave the chart as is, since the cat is better"
+      },
+      "correctOptionId": "b",
+      "explanation": "The medical record is a legal document, so information is not backdated, squeezed in, or erased. A missed observation is added as a clearly labeled late entry with the current date and time, the time the event actually happened, and the writer's initials, keeping the SOAP history accurate and auditable.",
+      "distractorExplanations": {
+        "a": "Inserting text into an old entry looks like backdating and undermines the record's credibility as a legal document.",
+        "c": "Deleting and rewriting original entries destroys the legal record; corrections must leave the original visible.",
+        "d": "Verbal reports are not a record; vomiting can matter for diagnosis and treatment even after the cat improves."
+      }
+    },
+    "veterinary-assistant-readiness-check-hospital-015": {
+      "prompt": "An owner calls to schedule euthanasia for their elderly dog. How should the assistant plan the paperwork and payment to support the family on the day?",
+      "options": {
+        "a": "Take consent and payment beforehand in a private room so the family can leave quietly",
+        "b": "Collect payment at the front counter afterward, once the family has said their goodbyes",
+        "c": "Skip the consent form, because the owner already confirmed the decision over the phone",
+        "d": "Send the owner to the lobby with the aftercare forms to fill out while the staff prepare"
+      },
+      "correctOptionId": "a",
+      "explanation": "Euthanasia consent is signed by the owner, and aftercare choices such as private or communal cremation are recorded before the procedure. Handling consent and payment ahead of time, in a private room or before arrival, means grieving clients are not asked to stand at the counter afterward and can leave quietly when they are ready.",
+      "distractorExplanations": {
+        "b": "Asking grieving clients to pay at a busy counter right after the loss is exactly what good grief support aims to avoid.",
+        "c": "A phone conversation does not replace a signed euthanasia consent, which is required before the procedure begins.",
+        "d": "Filling out aftercare forms in a public lobby denies the family privacy at an intensely emotional moment."
+      }
+    }
+  }
+}

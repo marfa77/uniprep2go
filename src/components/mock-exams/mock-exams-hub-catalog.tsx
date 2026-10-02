@@ -172,7 +172,7 @@ export function MockExamsHubCatalog({
 
       {!hasQuery && filteredFeatured.length > 0 ? (
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold tracking-tight">Featured free mocks</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">Featured mocks · first one free</h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             {filteredFeatured.map((mock) => (
               <article

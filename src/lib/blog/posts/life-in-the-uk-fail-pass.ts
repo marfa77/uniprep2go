@@ -22,7 +22,7 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
     mockLabel: "Take the free Life in the UK readiness check",
     deckLabel: "Get the Life in the UK Anki deck ($9)",
     summary:
-      "Run the free 60-question Life in the UK readiness check (no signup) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the $9 Life in the UK Anki deck before you pay £50 on gov.uk.",
+      "Run the 60-question Life in the UK readiness check (first mock free, no signup; $5 for 5 more attempts) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the $9 Life in the UK Anki deck before you pay £50 on gov.uk.",
   },
   sections: [
     {

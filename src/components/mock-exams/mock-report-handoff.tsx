@@ -19,6 +19,7 @@ type MockReportHandoffProps = {
   mockSlug: string;
   recommendDeck: boolean;
   retakeHref: string;
+  onRetake?: () => void;
   weakTopicLabels?: string[];
 };
 
@@ -30,6 +31,7 @@ export function MockReportHandoff({
   mockSlug,
   recommendDeck,
   retakeHref,
+  onRetake,
   weakTopicLabels = [],
 }: MockReportHandoffProps) {
   function trackDeckClick(source: string) {
@@ -85,12 +87,22 @@ export function MockReportHandoff({
           {weakLabel ? "View weak topics on deck" : "View deck details"}
         </Link>
       ) : null}
-      <Link
-        className="inline-flex rounded-lg border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
-        href={retakeHref}
-      >
-        Retake this mock
-      </Link>
+      {onRetake ? (
+        <button
+          className="inline-flex rounded-lg border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
+          onClick={onRetake}
+          type="button"
+        >
+          Retake this mock
+        </button>
+      ) : (
+        <Link
+          className="inline-flex rounded-lg border border-[#18140f]/20 px-5 py-2.5 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
+          href={retakeHref}
+        >
+          Retake this mock
+        </Link>
+      )}
       {recommendDeck ? (
         <p className="w-full text-sm leading-7 text-[#4f493e]">
           Recommended next step: fix {weakLabel ?? "your weakest topics"} with {deckShortName}

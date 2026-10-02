@@ -45,7 +45,7 @@ const examCategories = [
   {
     title: "US Licensing",
     description:
-      "PTCB, FINRA (SIE → 7 → 63/65), Life & Health, ServSafe, and major-state real estate — free timed mocks with topic readiness reports.",
+      "PTCB, FINRA (SIE → 7 → 63/65), Life & Health, ServSafe, and major-state real estate — timed mocks with topic readiness reports; your first mock is free.",
     href: "/mock-exams",
     cta: "Browse US licensing mocks",
   },
@@ -105,9 +105,9 @@ const heroSecondaryLinks = [
 
 const howItWorksSteps = [
   {
-    title: "Take a free timed mock",
+    title: "Take your first mock free",
     detail:
-      "Pick a practice test or readiness check — no signup wall. Timing and topic weights follow published official outlines; questions are original practice items.",
+      "Pick any practice test or readiness check — the first attempt is free in Exam or Learn mode, no signup; after that, $5 unlocks 5 more attempts. Timing and topic weights follow published official outlines; questions are original practice items.",
   },
   {
     title: "Read your readiness report",
@@ -238,8 +238,8 @@ export default async function HomePage() {
                 Find your weak topics before exam day
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                Free timed PTCB or Series 63 practice test — no signup — then a pass/no-pass topic
-                readiness report so you fix only the gaps that matter.
+                Your first timed mock is free — PTCB, Series 63 or any other exam, no signup — then a
+                pass/no-pass topic readiness report so you fix only the gaps that matter.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
@@ -332,11 +332,11 @@ export default async function HomePage() {
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Popular exams</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Free timed mocks for the exams we push hardest
+              Timed mocks for the exams we push hardest
             </h2>
             <p className="mt-3 max-w-3xl text-[#4f493e]">
-              PTCB, FINRA, Life &amp; Health, EPA 608, ServSafe, and CFA Level 2 — start a mock, get a
-              topic readiness report, then fix only the gaps.
+              PTCB, FINRA, Life &amp; Health, EPA 608, ServSafe, and CFA Level 2 — start a mock (the first
+              one is free), get a topic readiness report, then fix only the gaps.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {featuredMocks.map((mock) => (
@@ -496,7 +496,7 @@ export default async function HomePage() {
                   >
                     <div className="flex flex-col rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
                       <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
-                        {mock.status === "live" ? "Free timed mock" : "Readiness check"}
+                        {mock.status === "live" ? "Timed mock · first one free" : "Readiness check"}
                       </p>
                       <h3 className="mt-2 text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
                       <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">

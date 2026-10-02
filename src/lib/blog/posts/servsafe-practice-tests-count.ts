@@ -210,7 +210,7 @@ export const servsafePracticeTestsCountPost: BlogPostDraft = {
           caption: "Critical temperatures",
           headers: ["Food / condition", "Minimum internal temp"],
           rows: [
-            ["Poultry; stuffed meats; reheated TCS foods", "165°F (15 sec)"],
+            ["Poultry; stuffed meats; reheated TCS foods", "165°F (instantaneous, <1 sec)"],
             ["Ground meat; injected meat; ground seafood", "155°F (15 sec)"],
             [
               "Whole cuts (steaks, chops, fish); eggs for immediate service",

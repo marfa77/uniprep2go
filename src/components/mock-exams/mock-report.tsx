@@ -50,6 +50,7 @@ type MockReportPanelProps = {
   companionCheckouts?: MockCompanionCheckout[];
   report: MockReport;
   sessionMode?: MockSessionMode;
+  onRetake?: () => void;
 };
 
 export function MockReportPanel({
@@ -59,6 +60,7 @@ export function MockReportPanel({
   companionCheckouts = [],
   report,
   sessionMode = "exam",
+  onRetake,
 }: MockReportPanelProps) {
   const deckShortName =
     linkedDeckShortName ?? config.linkedDeckSlug.replace(/-anki-deck$/, "").replace(/-/g, " ");
@@ -141,6 +143,7 @@ export function MockReportPanel({
               linkedCheckout={linkedCheckout}
               mockSlug={config.slug}
               recommendDeck={false}
+              onRetake={onRetake}
               retakeHref={`/mock-exams/${config.slug}`}
               weakTopicLabels={weakTopicLabels}
             />
@@ -266,7 +269,8 @@ export function MockReportPanel({
           linkedCheckout={linkedCheckout}
           mockSlug={config.slug}
           recommendDeck={shouldRecommendDeck}
-          retakeHref={`/mock-exams/${config.slug}`}
+          onRetake={onRetake}
+              retakeHref={`/mock-exams/${config.slug}`}
           weakTopicLabels={weakTopicLabels}
         />
       </section>

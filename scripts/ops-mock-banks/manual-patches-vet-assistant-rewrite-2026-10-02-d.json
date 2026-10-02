@@ -1,0 +1,244 @@
+{
+  "veterinary-assistant-readiness-check": {
+    "veterinary-assistant-readiness-check-safety-001": {
+      "prompt": "While a veterinary assistant restrains an unvaccinated stray dog at intake, the dog bites through her glove and breaks the skin on her hand. What should she do first?",
+      "options": {
+        "a": "Finish the intake exam, then clean the wound once the dog is kenneled",
+        "b": "Wash the wound with soap and water for several minutes, then report it",
+        "c": "Have the dog euthanized at once so its brain can be tested for rabies",
+        "d": "Cover the wound with a bandage and watch it for signs of infection later"
+      },
+      "correctOptionId": "b",
+      "explanation": "Prompt, thorough washing of a bite with soap and water (CDC advises about 15 minutes) sharply reduces rabies virus and bacteria in the wound. Reporting right away starts the exposure plan: medical evaluation for post-exposure prophylaxis and a public-health decision on the dog, usually 10-day confinement and observation or testing.",
+      "distractorExplanations": {
+        "a": "Delaying wound care to finish the exam loses the window when washing removes the most virus and bacteria from the bite.",
+        "c": "Euthanasia and testing versus 10-day observation is decided by public health under local law, not ordered first by the bitten assistant.",
+        "d": "Bandaging and waiting skips wound washing and reporting, so post-exposure prophylaxis decisions for rabies are delayed."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-002": {
+      "prompt": "A dog with suspected leptospirosis is on IV fluids and producing large volumes of urine. Which plan best protects the veterinary assistant who cleans its run?",
+      "options": {
+        "a": "Hose the run with a high-pressure sprayer to clear the urine quickly",
+        "b": "Skip extra PPE because the dog's chart shows a current lepto vaccine",
+        "c": "Wear gloves, a gown and face protection, and avoid splashing urine",
+        "d": "Wear a surgical mask, since leptospires spread mainly through coughing"
+      },
+      "correctOptionId": "c",
+      "explanation": "Leptospira bacteria are shed in urine and infect people through mucous membranes and broken skin. Gloves, a gown or apron, and eye and face protection block that route, and gentle cleaning that avoids splashing or aerosolizing urine keeps droplets off the face.",
+      "distractorExplanations": {
+        "a": "High-pressure spraying aerosolizes infected urine and splashes it toward the eyes, nose and mouth of the person cleaning.",
+        "b": "Vaccination does not guarantee the dog is not shedding, and a sick suspect patient needs barrier precautions regardless of history.",
+        "d": "Leptospirosis is not a respiratory disease; the exposure route is urine contact with skin and mucous membranes, not coughing."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-003": {
+      "prompt": "A kitten in the boarding ward is diagnosed with Microsporum canis ringworm. Which step best limits spread of the infection to staff and other cats?",
+      "options": {
+        "a": "Clip the lesions short and keep the kitten in the general cat ward",
+        "b": "Wipe its cage with alcohol hand sanitizer between daily feedings",
+        "c": "Isolate the kitten but reuse its towels for other cats after tumble-drying",
+        "d": "Isolate the kitten, remove hair and debris, then wash and disinfect"
+      },
+      "correctOptionId": "d",
+      "explanation": "Dermatophyte spores on shed hair survive in the environment for months and spread by direct contact and fomites, including to people. Isolation plus mechanical removal of hair, washing with detergent, and a sporicidal disinfectant such as dilute bleach or accelerated hydrogen peroxide is what controls it.",
+      "distractorExplanations": {
+        "a": "Clipping can scatter infected hairs, and leaving the kitten in the shared ward exposes the other cats and staff to spores.",
+        "b": "Hand sanitizer is not a sporicidal surface disinfectant, and wiping without first removing hair leaves the spore load in place.",
+        "c": "Drying does not kill dermatophyte spores; bedding from the patient must be laundered and disinfected or discarded."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-004": {
+      "prompt": "A pregnant veterinary assistant is scheduled to clean the litter boxes in the hospital cat ward. What is the best way to lower her risk of toxoplasmosis?",
+      "options": {
+        "a": "Reassign litter duty if possible; otherwise wear gloves and scoop daily",
+        "b": "Scoop the boxes every two to three days so fewer oocysts accumulate",
+        "c": "Keep cleaning the boxes but avoid petting cats, the main source of spread",
+        "d": "Get a toxoplasmosis vaccine before starting work in the cat ward"
+      },
+      "correctOptionId": "a",
+      "explanation": "Toxoplasma oocysts in cat feces need one to five days to become infective, so removing feces at least daily prevents exposure. CDC advises pregnant workers to avoid litter duty when someone else can do it, and otherwise to wear gloves and wash hands afterward.",
+      "distractorExplanations": {
+        "b": "Waiting two to three days gives oocysts time to sporulate and become infective, which increases rather than reduces the risk.",
+        "c": "Petting a cat is a minor route; infection comes from ingesting sporulated oocysts in feces, so litter handling is the real hazard.",
+        "d": "No human vaccine against toxoplasmosis exists, so protection relies on avoiding feces exposure and on hygiene."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-005": {
+      "prompt": "A puppy with confirmed parvovirus has just been discharged from isolation. Which disinfection plan for its isolation run is most effective?",
+      "options": {
+        "a": "Spray a quaternary ammonium product and wipe it dry after about one minute",
+        "b": "Pour undiluted bleach over the soiled floor and rinse it off right away",
+        "c": "Clean off feces first, then leave dilute bleach on for its contact time",
+        "d": "Mop with hot water and detergent, since heat inactivates parvovirus"
+      },
+      "correctOptionId": "c",
+      "explanation": "Parvovirus is a non-enveloped virus that resists many disinfectants and survives for months. Organic matter must be removed first because it inactivates disinfectants; then dilute bleach (about 1:32) or accelerated hydrogen peroxide must stay wet for the labeled contact time, often 10 minutes for bleach.",
+      "distractorExplanations": {
+        "a": "Standard quaternary ammonium products are weak against parvovirus, and a one-minute contact time is far too short to kill it.",
+        "b": "Bleach applied over feces is inactivated by organic matter, and rinsing it off at once skips the required contact time.",
+        "d": "Mop water and detergent clean but do not reliably inactivate parvovirus; a parvocidal disinfectant is still required."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-006": {
+      "prompt": "A boarding dog develops a honking cough and nasal discharge overnight. How should the veterinary assistant manage it until the veterinarian examines it?",
+      "options": {
+        "a": "Walk it in the shared exercise yard so the cough can be observed there",
+        "b": "Move it to isolation and care for it last, with dedicated PPE and gear",
+        "c": "Keep it in the ward but feed it first each morning to shorten contact",
+        "d": "Move it to isolation but keep using the general ward's leashes and bowls"
+      },
+      "correctOptionId": "b",
+      "explanation": "Canine infectious respiratory disease spreads by droplets, close contact and fomites. Moving the dog to isolation, caring for it after healthy patients, and using dedicated PPE, leashes and bowls keeps staff from carrying the pathogens back into the boarding ward.",
+      "distractorExplanations": {
+        "a": "A shared yard exposes other dogs to respiratory droplets and contaminates a common area used by healthy boarders.",
+        "c": "Sick patients are handled last, not first, so staff do not carry pathogens from the coughing dog to healthy dogs.",
+        "d": "Shared leashes and bowls act as fomites and carry the infection back to the ward, undoing the benefit of isolation."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-007": {
+      "prompt": "A veterinary assistant wearing exam gloves finishes expressing one dog's anal glands and is called to restrain the next patient. What should she do in between?",
+      "options": {
+        "a": "Rinse the gloved hands under the tap and continue with the next dog",
+        "b": "Spray the gloves with disinfectant and keep wearing the same pair",
+        "c": "Keep the gloves on and wash her hands after the last patient of the day",
+        "d": "Remove and discard the gloves, clean her hands, and put on a new pair"
+      },
+      "correctOptionId": "d",
+      "explanation": "Exam gloves are single-use barriers for one patient. Removing them, performing hand hygiene with soap and water or alcohol rub (gloves can have pinholes and hands get contaminated during removal), and donning a fresh pair prevents carrying fecal organisms to the next animal.",
+      "distractorExplanations": {
+        "a": "Rinsing gloved hands does not remove organisms reliably and leaves contamination on gloves that are about to touch another dog.",
+        "b": "Disposable exam gloves are not designed to be disinfected and reused, and chemicals can degrade the glove material.",
+        "c": "Delaying hand hygiene until the end of the day lets one glove pair carry organisms between several patients."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-008": {
+      "prompt": "After giving a vaccine, the veterinarian hands the veterinary assistant the used syringe with the needle still attached. How should she dispose of it?",
+      "options": {
+        "a": "Place the uncapped needle and syringe straight into a sharps container",
+        "b": "Recap the needle with both hands, then put it in a red biohazard bag",
+        "c": "Bend the needle against the counter, then drop it in the sharps container",
+        "d": "Unscrew the needle by hand and place it alone in the sharps container"
+      },
+      "correctOptionId": "a",
+      "explanation": "OSHA's Bloodborne Pathogens Standard prohibits recapping, bending or removing contaminated needles unless no alternative exists, because those steps cause most needlesticks. The syringe and needle go uncapped, as one unit, into a closable, puncture-resistant sharps container kept close to the point of use.",
+      "distractorExplanations": {
+        "b": "Two-handed recapping is a leading cause of needlesticks, and a red bag is not puncture resistant for sharps.",
+        "c": "Bending a contaminated needle by hand is prohibited because it brings fingers close to the point and can cause a stick.",
+        "d": "Removing the needle by hand exposes the fingers to the contaminated point; the syringe and needle are discarded together."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-009": {
+      "prompt": "A sedated dog needs a lateral chest radiograph, and a veterinary assistant is helping position it. Which practice best follows radiation safety rules?",
+      "options": {
+        "a": "Hold the dog in the beam while wearing lead gloves, since lead blocks the primary beam",
+        "b": "Wear the dosimetry badge under the lead apron so it records the true body dose",
+        "c": "Position with sandbags and tape, then step back as far as possible during exposure",
+        "d": "Have the pregnant assistant hold the dog, provided she wears a lead apron"
+      },
+      "correctOptionId": "c",
+      "explanation": "Under ALARA, time, distance and shielding limit dose, and distance is the most effective. Positioning aids let staff leave the room or stand well back during exposure; lead protects only against scatter, and hands must never be in the primary beam.",
+      "distractorExplanations": {
+        "a": "Lead gloves and aprons only reduce scatter radiation; they do not protect hands placed in the primary beam.",
+        "b": "A single dosimetry badge is worn at the collar outside the apron to record the highest exposure, not hidden beneath it.",
+        "d": "Pregnant staff should not manually restrain for radiographs; a lead apron does not make that exposure acceptable."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-010": {
+      "prompt": "While a patient recovers from isoflurane anesthesia, a veterinary assistant notices a strong anesthetic odor around the machine. Which response best reduces waste anesthetic gas exposure?",
+      "options": {
+        "a": "Switch to mask inductions for the rest of the day to use less gas",
+        "b": "Disconnect the patient while leaving the vaporizer and oxygen on",
+        "c": "Wear a surgical mask, which filters isoflurane vapor from the air",
+        "d": "Check that the scavenger is connected and report it for a leak test"
+      },
+      "correctOptionId": "d",
+      "explanation": "A noticeable anesthetic odor means gas is escaping, most often from a disconnected scavenging line or a leak in the circuit. Confirming the scavenger is attached and having the machine leak-checked addresses the source, which protects staff from chronic waste anesthetic gas exposure.",
+      "distractorExplanations": {
+        "a": "Mask and chamber inductions release more waste gas into the breathing zone than intubated maintenance, increasing exposure.",
+        "b": "Disconnecting with the vaporizer on dumps anesthetic gas into the room; the vaporizer is turned off and the circuit flushed first.",
+        "c": "Surgical masks do not filter anesthetic vapors, so they give a false sense of protection while the leak continues."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-011": {
+      "prompt": "A veterinary assistant dilutes a concentrated disinfectant into spray bottles that the whole team will use in exam rooms. What does OSHA's Hazard Communication Standard require for those bottles?",
+      "options": {
+        "a": "Leave them unlabeled because they hold a diluted form of a labeled product",
+        "b": "Label each with the product name and hazards, and keep its SDS accessible",
+        "c": "Write the mixing date on each, since the date is the required label element",
+        "d": "Label the contents just when the dilution is stronger than the label rate"
+      },
+      "correctOptionId": "b",
+      "explanation": "Secondary containers shared by other workers must carry the product identity and its hazard information, and the Safety Data Sheet must be available to every employee. Dilution does not remove the requirement, because coworkers need to know what is in the bottle and how to respond to exposure.",
+      "distractorExplanations": {
+        "a": "A diluted chemical is still hazardous, and the immediate-use exemption covers one worker's own use, not a team's bottles.",
+        "c": "A mixing date can be useful, but the required elements are the product identity and hazard warnings, not a date.",
+        "d": "Labeling does not depend on dilution strength; every shared secondary container of a hazardous chemical needs a label."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-012": {
+      "prompt": "A dog received an oral chemotherapy drug yesterday, and a veterinary assistant is assigned to walk it and clean its kennel. Which precaution is most appropriate?",
+      "options": {
+        "a": "Use no added PPE, since oral chemotherapy is not excreted in urine or feces",
+        "b": "Wear a surgical mask, since the dog's breath is the main exposure route",
+        "c": "Wear chemotherapy-rated gloves and bag its waste as hazardous drug waste",
+        "d": "Hose its urine and feces into the floor drain to dilute the drug residue"
+      },
+      "correctOptionId": "c",
+      "explanation": "Many chemotherapy drugs and their active metabolites are excreted in urine, feces and saliva for days after dosing, regardless of route. Chemotherapy-rated gloves and disposal of excreta and bedding as hazardous drug waste protect staff during that excretion window.",
+      "distractorExplanations": {
+        "a": "Oral chemotherapy is still excreted in urine and feces, so skipping PPE exposes the handler to drug residues.",
+        "b": "Excreta and saliva, not exhaled breath, carry the drug residues, and a surgical mask does not prevent skin contact.",
+        "d": "Hosing excreta aerosolizes and spreads drug residue and can send hazardous drug waste into the drain system."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-013": {
+      "prompt": "A veterinary assistant needs to move a sedated 65-lb Labrador from the exam table onto a gurney. What is the safest way to do it?",
+      "options": {
+        "a": "Lift the dog alone by bending at the waist with the arms held straight",
+        "b": "Lift the dog alone, keeping it close, since it weighs less than 70 lb",
+        "c": "Slide the dog off the table by its legs while a coworker holds the gurney",
+        "d": "Lift with a coworker, knees bent, one at the chest and one at the hips"
+      },
+      "correctOptionId": "d",
+      "explanation": "Animals over roughly 40 to 50 lb should be lifted by two or more people. A team lift with knees bent, a straight back and the load held close, with one person supporting the chest and one the hindquarters, protects backs and keeps a sedated dog stable.",
+      "distractorExplanations": {
+        "a": "Bending at the waist with straight arms puts the load on the lower back and holds the weight far from the body.",
+        "b": "A 65-lb dog is above the usual 40 to 50 lb single-person limit, so lifting it alone risks a back injury.",
+        "c": "Pulling a sedated dog by its legs can injure its joints and lets it drop between the table and the gurney."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-014": {
+      "prompt": "A cat bites a veterinary assistant's finger during a nail trim, leaving small puncture wounds that look minor. What should she do?",
+      "options": {
+        "a": "Wash the punctures well, report the bite, and seek medical care promptly",
+        "b": "Skip the report because cat bites usually heal faster than dog bites do",
+        "c": "Seal the punctures with tissue glue so that bacteria cannot get inside",
+        "d": "Report it later if redness and swelling appear over the next few days"
+      },
+      "correctOptionId": "a",
+      "explanation": "Cat teeth inject bacteria such as Pasteurella multocida deep into tissue, and infection can develop within hours, especially on the hands. Washing the wound, reporting it for documentation and workers' compensation, and prompt medical evaluation (often antibiotics) are standard.",
+      "distractorExplanations": {
+        "b": "Cat bites have a higher infection rate than dog bites because the deep punctures trap bacteria, so they need reporting.",
+        "c": "Sealing a puncture traps Pasteurella and other bacteria inside the wound and raises the risk of abscess or cellulitis.",
+        "d": "Pasteurella infections can appear within 12 to 24 hours, so waiting days delays treatment and the required report."
+      }
+    },
+    "veterinary-assistant-readiness-check-safety-015": {
+      "prompt": "While refilling a dispenser, a veterinary assistant splashes concentrated disinfectant into one eye. What should she do immediately?",
+      "options": {
+        "a": "Rinse the eye briefly, then read the SDS to decide whether it needs care",
+        "b": "Go to the eyewash station and flush the eye for at least 15 minutes",
+        "c": "Rub the eye with a clean towel to remove the chemical before rinsing",
+        "d": "Use lubricating eye drops and keep the eye closed until it stops stinging"
+      },
+      "correctOptionId": "b",
+      "explanation": "Chemical splashes damage the eye within seconds, so flushing starts immediately and continues for at least 15 minutes at a plumbed or self-contained eyewash station, holding the eyelids open. The SDS and a medical evaluation follow once flushing is underway.",
+      "distractorExplanations": {
+        "a": "A brief rinse leaves chemical in the eye while the SDS is read; the 15-minute flush comes first and the SDS second.",
+        "c": "Rubbing grinds the chemical into the cornea and spreads it, increasing injury before any rinsing has started.",
+        "d": "Lubricating drops do not remove a corrosive chemical, and keeping the eye closed holds it against the surface."
+      }
+    }
+  }
+}

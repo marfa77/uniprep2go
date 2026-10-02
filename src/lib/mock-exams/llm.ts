@@ -12,6 +12,13 @@ import { isMockExamRunnable } from "./question-bank";
 import { getVerticalDefinition } from "./taxonomy";
 import { shouldIndexMockExam } from "../seo";
 import { mockFreeAccessPriceLabel, mockFunnelNoticeForLinkedDeck } from "./pricing";
+import {
+  MOCK_PASS_ATTEMPTS,
+  MOCK_PASS_NAME,
+  MOCK_PASS_PRICE_USD,
+  MOCK_PASS_PRODUCT_URL,
+  isMockPaywallEnabled,
+} from "./mock-pass";
 import { absoluteUrl, siteConfig } from "../site";
 import {
   buildExamFactsMarkdownSection,
@@ -69,6 +76,14 @@ export function buildMockExamFacts(config: MockExamConfig) {
     pass_threshold_percent: config.passRule.passPercent,
     price: mockFreeAccessPriceLabel,
     pricing_note: pricingNote,
+    free_attempts_per_visitor: 1,
+    mock_pass: {
+      name: MOCK_PASS_NAME,
+      price_usd: MOCK_PASS_PRICE_USD,
+      attempts: MOCK_PASS_ATTEMPTS,
+      scope: "Any UniPrep2Go mock, Exam or Learn mode; Gumroad license key works on any device",
+      checkout_url: MOCK_PASS_PRODUCT_URL,
+    },
     exam_body: config.examBody,
     certifier: official.certifier,
     verify_at_url: official.verifyAtUrl,
@@ -173,6 +188,7 @@ ${officialLinks}
 - Pass threshold: ${config.passRule.passPercent}%
 - Price: ${mockFreeAccessPriceLabel}
 - Pricing note: ${facts.pricing_note}
+- Mock Pass: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts on any mock — ${MOCK_PASS_PRODUCT_URL}
 - Exam body: ${config.examBody}
 - Search aliases: ${(config.searchAliases ?? []).join(", ") || "n/a"}
 - Landing page: ${absoluteUrl(`/mock-exams/${config.slug}`)}
@@ -268,6 +284,33 @@ export function buildFeaturedMockItemListJsonLd(slugs: string[]) {
 export function buildMockExamPageJsonLd(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
   const pageUrl = absoluteUrl(`/mock-exams/${config.slug}`);
+  const mockOffers =
+    config.status === "coming_soon"
+      ? undefined
+      : [
+          {
+            "@type": "Offer",
+            name: "First mock attempt",
+            description: "One free attempt on any UniPrep2Go mock, Exam or Learn mode, no signup.",
+            price: 0,
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: pageUrl,
+          },
+          ...(isMockPaywallEnabled()
+            ? [
+                {
+                  "@type": "Offer",
+                  name: `${MOCK_PASS_NAME} — ${MOCK_PASS_ATTEMPTS} attempts`,
+                  description: `${MOCK_PASS_ATTEMPTS} more attempts on any UniPrep2Go mock, Exam or Learn mode, via a Gumroad license key.`,
+                  price: MOCK_PASS_PRICE_USD,
+                  priceCurrency: "USD",
+                  availability: "https://schema.org/InStock",
+                  url: MOCK_PASS_PRODUCT_URL,
+                },
+              ]
+            : []),
+        ];
   const seoDescription = buildMockSeoDescription(config);
   const official = getMockOfficialResources(config);
   const vertical = getVerticalDefinition(config.verticalId);
@@ -310,6 +353,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         numberOfQuestions: config.questionCount,
         about: certifierOrg,
         isAccessibleForFree: config.accessMode === "free_demand_test",
+        offers: mockOffers,
       },
       {
         "@type": "Course",

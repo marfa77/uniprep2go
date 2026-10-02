@@ -1,3 +1,4 @@
+import { withMockAccessDisclosure } from "@/lib/mock-exams/mock-access-faq";
 import { ankiDeckShelfLifePost } from "./posts/anki-deck-shelf-life";
 import { ankiVsQuizletExamPrepPost } from "./posts/anki-vs-quizlet-exam-prep";
 import { australianCitizenshipTestPost } from "./posts/australian-citizenship-test";
@@ -126,7 +127,9 @@ const blogPostDrafts: BlogPostDraft[] = [
 ];
 
 /** Newest first — used by /blog index, sitemap, and llms.txt. */
-export const blogPosts: BlogPost[] = blogPostDrafts.map(withBlogStockImages);
+export const blogPosts: BlogPost[] = blogPostDrafts
+  .map(withBlogStockImages)
+  .map((post) => ({ ...post, faqs: withMockAccessDisclosure(post.faqs) }));
 
 export function getAllBlogPosts(): BlogPost[] {
   return blogPosts;

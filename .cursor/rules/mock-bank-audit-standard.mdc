@@ -1,0 +1,73 @@
+---
+description: Market-best mock bank audit standard — item quality, distractors, metric gates, Anki rebuild/republish cascade, selling-sample selection
+alwaysApply: true
+---
+
+# Mock bank audit standard (market-best)
+
+Goal: every live bank is the **best practice bank on the market** for its exam, not just "mechanically clean". Applies to every bank audit, rewrite, or point-fix (mock + linked Anki pair). Reviewer model: `mock-bank-review-model.mdc` (Sol default, Opus escalate, never Grok, never OpenRouter).
+
+## 1. Process (every audit)
+
+1. Export ops → git first if ops is newer (`export-ready-to-git.py --write <slug>`); audit the JSON users actually get.
+2. Mechanical gates: `npm run triage:mock-banks -- --slug <slug>` (then `git checkout` the smell-board) + `npm run audit:bank-quality -- --slug <slug>`.
+3. **Line-by-line content review of every item** (main chat or Sol/Opus subagent). Mechanical pass ≠ content OK.
+4. Fix via `scripts/ops-mock-banks/manual-patches-*.json` → `enrich-banks.py` → `apply-enriched-banks.py --write` → `export-ready-to-git.py --write` → `check-live-runnable.ts` → `npx vitest run src/lib/mock-exams/`.
+5. Re-run step 2 until **0 FAIL**; WARNs need a written reason or a fix.
+6. Run the cascade (section 4) and samples (section 5). Log the result in `docs/mock-bank-qa/bank-audit-ledger.md`.
+
+## 2. Item checklist (each question)
+
+**Stem**: one unambiguous best answer; applied/scenario over bare "What is X?"; no boilerplate wrappers ("On the X Mock…", "Select the best answer"); no answer leak in the wording; NOT/EXCEPT used rarely and in capitals.
+
+**Correct answer**: factually current (official outline, current rule numbers/limits/dates); same length, grammar and specificity as the distractors.
+
+**Distractors** (where most banks fail):
+- Plausible misconceptions a real candidate holds (confused sibling rule, wrong threshold, swapped party, right concept in the wrong context).
+- Same domain, form, and length band as the key. No joke or absurd options ("Store the mixture for reuse tomorrow").
+- No absolute-word giveaways ("always/never/only" on wrong options only); no "all/none of the above"; no two options that mean the same thing.
+- Not copied from another item's correct answer verbatim; numeric options in order.
+
+**Explanations**: the key explanation teaches the rule and why it applies (≥60 chars, not a restatement of the answer). Every distractor note names the specific error ("confuses X with Y", "that is the 30-day limit, not 15").
+
+**Bank level**: covers every official content area in roughly blueprint weight, with ≥3 items per topic; varied difficulty; 0 duplicates or near-duplicate template families; session Q count / time / pass line honest vs the official exam on both mock and deck pages.
+
+## 3. Metric gates (`npm run audit:bank-quality`)
+
+FAIL (must be 0 or within limit): invalid key · duplicate or near-duplicate/templated stems · duplicate options · all/none of the above · missing / template / thin distractor notes (incl. "Not the best answer here; the right answer is …") · thin explanations · boilerplate stem wrappers ("On the X Mock…", "Select the best answer.") · distractor copied from another item's correct answer > 5% · correct = longest option > 30% · correct >40% longer than every distractor > 10% · any key letter outside 15–35% (n ≥ 40).
+WARN: absolute-word giveaways > 10% · short definition stems > 20% · NOT/EXCEPT > 10% · topic < 3 items.
+
+## 4. Cascade after any bank correction (same pass, before "done")
+
+| Linked deck source | Action |
+|---|---|
+| **Wave / building** (apkg built from the bank) | Rebuild the apkg in the canonical vault (`wave_deck_pipeline` / `building_deck_pipeline --deck-slug {slug}`) → `node scripts/replace-gumroad-apkg-files.mjs --slug {slug}` → `npm run check:gumroad-sample-cdn` → sync card count in `decks.ts` / specs if it changed |
+| **Authored CSV** (FINRA SIE/7/63, CFA, FRM, PTCB, ServSafe: `internal_deck_generator/*/*_authored.csv`) | apkg does not change with the bank, but the deck is part of the same audit. Read every card; if it is below standard (label fronts like "Topic: X?", backs under ~120 chars, near-duplicate pairs, no example/mistake, domain mix off the official outline), **rewrite the CSV in the same pass** — never just flag it in the ledger. Keep old note GUIDs via a `Note GUID` column for 1:1 rewrites, rebuild the apkg, replace the Gumroad file, re-render samples, fix site/Gumroad copy that no longer matches the deck. Only skip when the user explicitly says so |
+| **Civic / language** | Never rebuilt from a mock fix |
+
+Always: refresh samples (section 5) · `npm run llms:export` · focused tests · Gumroad description or landing re-publish if samples or facts changed. Commit/push only on user OK; mock pages pick up ops within 1 h (ISR).
+
+**Card-count honesty:** the advertised card count = unique cards. No `(Drill N)` copies or duplicate backs counted toward "300 cards". Padding is a P0: flag it to the user before shipping anything else on that SKU.
+
+## 5. Selling samples: best quality, random among the best, selling
+
+Picker: `src/lib/sample-pick.ts` (mock pages via `pickMockSampleQuestions`; decks via `npm run refresh:sold-samples -- --slug {deckSlug}`).
+
+1. **Hard quality gate first**: no drills, templates, thin explanations, duplicate or absurd options, meta questions ("how many questions…"), bare definitions.
+2. **Pool** = only items scoring ≥ 80% of the best (min 2× count).
+3. **Random**: seeded shuffle (slug + pool content). Stable across renders, re-rolls only when the bank changes. Reviewer re-roll: `--salt N`.
+4. **Diversity**: different topics/sections, no near-duplicate wording.
+5. **Selling** = shows why we beat free banks: realistic scenario, a trap with a teaching note, a calculation or rule a candidate actually gets wrong. The reviewer confirms all 3 picks; any weak pick is re-rolled, never shipped.
+6. **Deck samples are real cards from the shipped deck** (deck source, not mock MCQs, when the deck is authored separately).
+7. **Text must match the image**: a `/samples/{slug}-sample-N.webp` is a capture of one card, and its site text, `/api/facts`, llms docs and Gumroad caption are that card's text. Never overlay other text on a screenshot (`applySoldSamplesToDeck` enforces this). To change samples (no user screenshots needed):
+   1. `npm run refresh:sold-samples -- --slug {deckSlug}` (picks)
+   2. `npm run render:sample-shots -- --slug {deckSlug}` → review the PNGs in `tmp/anki-shots/{slug}/` (renders the shipped `.apkg` card with its own template + CSS + MathJax in headless Chrome)
+   3. same command with `--write --publish` → `public/samples/{slug}-sample-{1,2,3}.webp` + `decks.ts` sampleCards text from the same notes, then the Gumroad publisher for the deck type, then `check:gumroad-sample-cdn`:
+      - finance catalog / `category: "finance"` (SIE, 7, 63, CFA, FRM…) → `publish-finance-gumroad-polish.mjs --refresh-samples`
+      - wave live on Gumroad → `setup:gumroad-wave-decks --polish-only`
+      - building live on Gumroad → `publish-building-gumroad-landings.py --force-cdn`
+      - authored deck with a hand-built landing (PTCB, ServSafe Manager…) → `publish-authored-gumroad-samples.mjs`: keeps the rich landing/description, swaps only the `sample-cards` section + description figures, removes the old sample previews (never the main cover), backup in `tmp/gumroad-backups/`
+      - planned (no Gumroad product) → nothing, site samples only
+      New authored deck: add its `.apkg` to `AUTHORED_APKG` in `render-anki-sample-shots.mjs`. Unsure → `node scripts/publish-authored-gumroad-samples.mjs --slug {slug} --dry-run` first.
+   4. Set the deck's `sold-samples.json` entry to the same 3 cards; update the deck test that pins sample questions.
+   5. Focused tests (`decks.test.ts`, `apply-sold-samples.test.ts`).

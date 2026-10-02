@@ -113,7 +113,10 @@ EXAM_CONTEXT: dict[str, dict[str, Any]] = {
         "format": "Two scored sections — Reading and Writing, and Math (adaptive modules)",
         "scoring": "Total 400–1600 (200–800 per section)",
         "who": "College-bound high-school students preparing for Digital SAT test dates",
-        "deck_covers": "Reading & Writing and Math skill drills aligned to Digital SAT section practice.",
+        "deck_covers": (
+            "88 Reading and Writing + 72 Math cards across all eight official Digital SAT content "
+            "domains, each with a worked explanation and a note on every wrong choice."
+        ),
         "not_included": "Full Bluebook adaptive exams — use College Board Bluebook for timed full lengths.",
         "why_anki": "Digital SAT is module-adaptive. Daily Anki keeps high-frequency grammar, vocab-in-context, and math patterns sharp.",
         "official_url": "https://satsuite.collegeboard.org/sat",
@@ -714,7 +717,7 @@ def render_landing(spec: dict, product: dict, cover_url: str, sample_urls: list[
     captions = {
         "gre-anki-deck": ["Quantitative Reasoning", "Verbal Reasoning", "Quantitative Reasoning"],
         "gmat-focus-anki-deck": ["Quantitative Reasoning", "Verbal Reasoning", "Data Insights"],
-        "sat-anki-deck": ["Reading and Writing", "Math", "Math"],
+        "sat-anki-deck": ["Reading and Writing", "Math", "Reading and Writing"],
         "pmp-anki-deck": ["People", "Process", "Business Environment"],
     }.get(slug)
     sample_figures = []

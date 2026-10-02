@@ -1,5 +1,6 @@
 import { enrichDeckWithShopPreviews } from "./prep2go-shop-samples";
 import { applySoldSamplesToDeck } from "./apply-sold-samples";
+import { withMockAccessDisclosure } from "./mock-exams/mock-access-faq";
 import { prep2GoAppDecks, prep2GoCitizenshipAppDecks } from "./prep2go-app-decks";
 import { applyAnkiDeckLaunchToCatalog } from "./anki-deck-launch";
 import { citizenshipPlannedDecks } from "./citizenship-planned-decks";
@@ -398,21 +399,21 @@ const rawDecks: Deck[] = [
     topicCoverage: cfaLevelOneTopics,
     sampleCards: [
       {
-        question: "What is a forward contract?",
+        question: "How is portfolio duration calculated?",
         answer:
-          "A private OTC agreement to buy or sell an asset at a specified forward price on a future date. No money changes hands upfront, and the contract is binding on both parties with no optionality.",
+          "Weighted average of individual bond durations, weights = market value proportions.",
         imageUrl: "/samples/cfa-level-1-anki-deck-sample-1.webp",
       },
       {
-        question: "What is the no-arbitrage forward price for an asset with no income?",
+        question: "What is the variance of a two-asset portfolio?",
         answer:
-          "The future value of the current spot price at the risk-free rate for the forward period. Forward price is the no-arbitrage price set to eliminate riskless profit.",
+          "Depends on individual variances AND covariance (correlation) between assets.",
         imageUrl: "/samples/cfa-level-1-anki-deck-sample-2.webp",
       },
       {
-        question: "What is the forward price for an asset that pays income?",
+        question: "What is a protective put?",
         answer:
-          "Spot price minus the present value of income, compounded at the risk-free rate. Income reduces forward price because the holder of the spot asset receives it.",
+          "Long stock + long put. Limits downside while keeping upside. Acts as portfolio insurance.",
         imageUrl: "/samples/cfa-level-1-anki-deck-sample-3.webp",
       },
     ],
@@ -628,8 +629,8 @@ const rawDecks: Deck[] = [
     shortName: "FRM Part 1",
     subtitle: "444 FRM Part 1 Anki cards + free 50-question timed practice test — VaR, ES, Greeks, credit risk.",
     directAnswer:
-      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg covering foundations of risk, quant, markets/products, valuation models, VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks — plus a free 50-question timed readiness-check mock with topic scoring. Delivered for {PRICE} through Gumroad. Built for active recall after a diagnostic mock — not a generic risk trivia pack and not affiliated with or endorsed by GARP.",
-    lastUpdated: "2026-09-29",
+      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake, plus a free 50-question timed readiness-check mock with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
+    lastUpdated: "2026-10-02",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
     coverImage: "/covers/frm-part-1-anki-deck.webp",
@@ -638,34 +639,34 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "444",
-      topics: "Full FRM Part 1 curriculum structure",
-      formulas: "Concise explanations, formulas, examples, and common mistakes",
+      topics: "All four FRM Part 1 books, weighted 20/20/30/30 like the exam, across 62 reading-level sections",
+      formulas: "Every card: question, explanation, worked example, and common mistake; 176 MathJax formula cards",
       examYear: "Current FRM Part 1 cycle",
-      delivery: "Digital download through Gumroad (364 KB)",
+      delivery: "Digital download through Gumroad (460 KB)",
     },
     topicCoverage: [
-      { name: "Foundations of Risk Management", examWeight: "20% of Part I", cards: "87" },
-      { name: "Quantitative Analysis", examWeight: "20% of Part I", cards: "122" },
-      { name: "Financial Markets and Products", examWeight: "30% of Part I", cards: "124" },
-      { name: "Valuation and Risk Models", examWeight: "30% of Part I", cards: "111" },
+      { name: "Foundations of Risk Management", examWeight: "20% of Part I", cards: "89" },
+      { name: "Quantitative Analysis", examWeight: "20% of Part I", cards: "89" },
+      { name: "Financial Markets and Products", examWeight: "30% of Part I", cards: "133" },
+      { name: "Valuation and Risk Models", examWeight: "30% of Part I", cards: "133" },
     ],
     sampleCards: [
       {
-        question: "What are the investment grade vs speculative grade rating boundaries?",
+        question: "How are the single monthly mortality rate and the conditional prepayment rate related?",
         answer:
-          "Investment grade: Baa3/BBB- and above. Speculative grade or high yield: Ba1/BB+ and below. Fallen angels are IG bonds downgraded to HY; rising stars are HY bonds upgraded to IG.",
+          "The SMM is the share of remaining principal prepaid in a month. The CPR is its annualized equivalent. They are linked by compounding survival over 12 months.",
         imageUrl: "/samples/frm-part-1-anki-deck-sample-1.webp",
       },
       {
-        question: "What is a CDS and how does it work?",
+        question: "How does default correlation affect a two-loan portfolio's unexpected loss?",
         answer:
-          "A credit default swap is insurance against bond default. The protection buyer pays a periodic CDS spread; if default occurs, the seller pays par minus recovery value.",
+          "Portfolio UL combines each loan's UL with the correlation between their losses. With low correlation, portfolio UL is much less than the sum of individual ULs; with correlation of 1, they add.",
         imageUrl: "/samples/frm-part-1-anki-deck-sample-2.webp",
       },
       {
-        question: "What is credit risk (counterparty risk) in derivatives?",
+        question: "How are the OLS slope and intercept estimated in a simple regression?",
         answer:
-          "Counterparty credit risk is the risk that the counterparty defaults when the derivative has positive mark-to-market value to you. It is one-sided and only exists when the contract has positive value.",
+          "The OLS slope equals the sample covariance of X and Y divided by the sample variance of X; the intercept makes the line pass through the means. OLS minimizes the sum of squared residuals.",
         imageUrl: "/samples/frm-part-1-anki-deck-sample-3.webp",
       },
     ],
@@ -678,7 +679,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the FRM Part 1 deck include?",
         answer:
-          "444 high-yield Anki cards covering the FRM Part 1 curriculum structure, including formulas, definitions, examples, common mistakes, and exam-style recall prompts — plus a free 50-question timed mock.",
+          "444 Anki cards across all four Part 1 books (89 foundations, 89 quant, 133 markets and products, 133 valuation and risk models). Each card asks a real exam question, explains the rule, works a numeric example where it applies, and names the common mistake; 176 cards carry MathJax formulas. Plus a free 50-question timed mock.",
       },
       {
         question: "Is there a free FRM Part 1 practice test?",
@@ -738,21 +739,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What is the SEC?",
+        question: "How do you find the conversion ratio and parity price of a convertible bond?",
         answer:
-          "The Securities and Exchange Commission is the federal regulator overseeing securities markets, issuers, exchanges, broker-dealers, investment advisers, and disclosure rules.",
+          "Conversion ratio = par value / conversion price. Parity stock price = bond market price / conversion ratio; at parity, converting neither gains nor loses value.",
         imageUrl: "/samples/sie-exam-anki-deck-sample-1.webp",
       },
       {
-        question: "What is FINRA?",
+        question: "How does the Securities Exchange Act of 1934 differ from the 1933 Act?",
         answer:
-          "FINRA is a self-regulatory organization overseeing broker-dealers and registered representatives, including qualification exams, sales practice rules, and member firm supervision.",
+          "The 1934 Act created the SEC and regulates the secondary market: exchanges, broker-dealers, trading practices, insider trading, margin credit, and ongoing issuer reporting.",
         imageUrl: "/samples/sie-exam-anki-deck-sample-2.webp",
       },
       {
-        question: "What does the MSRB regulate?",
+        question: "When must a firm file a Currency Transaction Report?",
         answer:
-          "The Municipal Securities Rulemaking Board writes rules for municipal securities dealers, municipal advisors, and municipal market conduct.",
+          "A CTR is filed for cash transactions over $10,000 in one business day, including multiple cash deposits that add up to more than $10,000.",
         imageUrl: "/samples/sie-exam-anki-deck-sample-3.webp",
       },
     ],
@@ -787,8 +788,8 @@ const rawDecks: Deck[] = [
     shortName: "Series 7",
     subtitle: "A focused Anki deck for FINRA Series 7 Top-Off active recall.",
     directAnswer:
-      "UniPrep2Go sells an independent Series 7 Anki deck with 300 high-yield cards covering FINRA's Series 7 job-function outline: seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 60-question / 90-minute Series 7 readiness check (official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 equated). The deck is a supplementary active-recall study aid for Series 7 candidates and is not official FINRA material.",
-    lastUpdated: "2026-09-29",
+      "UniPrep2Go sells an independent Series 7 Anki deck with 300 high-yield cards covering FINRA's Series 7 job-function outline: seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 60-question / 90-minute Series 7 readiness check (official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 equated). Every card pairs the rule with a worked example and a common-mistake note, and the 300 cards follow FINRA's 7/9/73/11% job-function weights. The deck is a supplementary active-recall study aid for Series 7 candidates and is not official FINRA material.",
+    lastUpdated: "2026-10-02",
     audience: "Series 7 candidates sponsored by a FINRA member firm, new financial advisors, registered representative trainees, and SIE passers who want focused spaced-repetition review.",
     format: ".apkg",
     coverImage: "/covers/series-7-anki-deck.webp",
@@ -798,7 +799,7 @@ const rawDecks: Deck[] = [
     facts: {
       cards: "300",
       topics: "FINRA Series 7 job functions: communications, account opening, products, recommendations, suitability, records, order handling, settlement, and trade processing",
-      formulas: "Clear explanations, exam traps, and MathJax support for formulas",
+      formulas: "Worked example and common-mistake note on every card; 50 formula cards (bond yields, options strategies, margin, financial ratios) rendered with MathJax",
       examYear: "Current Series 7 Top-Off exam cycle",
       delivery: "Digital download through Gumroad",
     },
@@ -818,28 +819,28 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What must a registered representative remember when prospecting for new customers?",
+        question: "How do defined benefit and defined contribution plans differ?",
         answer:
-          "Prospecting communications must be fair, balanced, not misleading, properly supervised, and consistent with firm communication rules.",
+          "Defined benefit promises a set retirement benefit and the employer bears the investment risk. Defined contribution sets contributions, and the employee bears investment risk.",
         imageUrl: "/samples/series-7-anki-deck-sample-1.webp",
       },
       {
-        question: "When does retail communication require heightened review?",
+        question: "When must retail communications about registered investment companies be filed with FINRA?",
         answer:
-          "Retail communication often requires principal approval before use depending on content and product, especially recommendations, rankings, options, investment companies, and new issue materials.",
+          "Retail communications about mutual funds, ETFs, UITs, and variable products that were not previously filed must be filed within 10 business days after first use.",
         imageUrl: "/samples/series-7-anki-deck-sample-2.webp",
       },
       {
-        question: "Who is an institutional customer?",
+        question: "How do all-or-none, fill-or-kill, and immediate-or-cancel orders differ?",
         answer:
-          "An institutional customer includes banks, investment companies, advisers, insurance companies, and other entities meeting institutional criteria.",
+          "AON: fill the whole order or nothing, but not necessarily immediately. FOK: fill the whole order immediately or cancel it. IOC: fill immediately whatever is possible and cancel the rest.",
         imageUrl: "/samples/series-7-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
       {
         question: "What does the Series 7 deck include?",
-        answer: "300 high-yield Anki cards covering FINRA Series 7 Top-Off topics including suitability, products, options, bonds, customer accounts, order handling, settlement, and communications.",
+        answer: "300 high-yield Anki cards covering FINRA Series 7 Top-Off topics including suitability, products, options, bonds, customer accounts, order handling, settlement, and communications. Each card has a question-style front, a rule-level answer, a worked example, and a common-mistake note; 50 cards carry formulas.",
       },
       {
         question: "Who is this deck for?",
@@ -873,8 +874,8 @@ const rawDecks: Deck[] = [
     subtitle:
       "Series 63 flashcards: 250 NASAA Anki cards + free 60-question timed practice test — registration, ethics, communications.",
     directAnswer:
-      "UniPrep2Go sells Series 63 flashcards as a 250-card Anki deck for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a free 60-question timed Series 63 practice test (no signup) with topic readiness scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
-    lastUpdated: "2026-09-24",
+      "UniPrep2Go sells Series 63 flashcards as a 250-card Anki deck for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a 60-question timed Series 63 practice test (first mock free, no signup) in NASAA's exact scored area mix, with topic readiness scoring. The official exam is 65 questions (60 scored + 5 pretest) in 75 minutes; passing is 43 of 60 scored. Card counts follow NASAA's weights (ethics 63, communications 50, agents 33, broker-dealers 30, remedies 28), and every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
+    lastUpdated: "2026-10-02",
     audience:
       "Series 63 candidates searching for flashcards, new broker-dealer agents, and SIE/Series 7 passers who need state registration via spaced repetition plus a free timed mock.",
     format: ".apkg",
@@ -886,36 +887,37 @@ const rawDecks: Deck[] = [
       cards: "250",
       topics:
         "NASAA Series 63 structure: broker-dealer regulation, agent registration, ethics, communications, securities and exemptions, investment advisers, and remedies",
-      formulas: "Clear explanations, common exam traps, and mobile-friendly card design",
-      examYear: "Current Series 63 exam cycle",
+      formulas: "Worked example and common-mistake note on every card; question-style fronts written to NASAA's Uniform Securities Act outline",
+      examYear: "Current Series 63 exam cycle (NASAA content outline effective June 2023)",
       delivery: "Digital download through Gumroad (188 KB)",
     },
     topicCoverage: [
-      { name: "Broker-Dealer Regulation", examWeight: "Series 63 topic", cards: "High-yield cards" },
-      { name: "Broker-Dealer Agent Registration", examWeight: "Series 63 topic", cards: "High-yield cards" },
-      { name: "Ethical Practices and Obligations", examWeight: "Series 63 topic", cards: "High-yield cards" },
-      { name: "Communications with Customers and Prospects", examWeight: "Series 63 topic", cards: "High-yield cards" },
-      { name: "Securities, Issuers, Exemptions, and Transactions", examWeight: "Series 63 topic", cards: "High-yield cards" },
-      { name: "Investment Adviser Basics and Representatives", examWeight: "Series 63 topic", cards: "High-yield cards" },
-      { name: "Remedies and Administrative Provisions", examWeight: "Series 63 topic", cards: "High-yield cards" },
+      { name: "Ethical Practices and Obligations", examWeight: "25% of exam (15 scored items)", cards: "63" },
+      { name: "Communications with Customers and Prospects", examWeight: "20% of exam (12 scored items)", cards: "50" },
+      { name: "Broker-Dealer Agents", examWeight: "13% of exam (8 scored items)", cards: "33" },
+      { name: "Broker-Dealers", examWeight: "12% of exam (7 scored items)", cards: "30" },
+      { name: "Remedies and Administrative Provisions", examWeight: "11% of exam (7 scored items)", cards: "28" },
+      { name: "Securities, Issuers, Exemptions, and Transactions", examWeight: "9% of exam (5 scored items)", cards: "22" },
+      { name: "Investment Advisers", examWeight: "5% of exam (3 scored items)", cards: "12" },
+      { name: "Investment Adviser Representatives", examWeight: "5% of exam (3 scored items)", cards: "12" },
     ],
     sampleCards: [
       {
-        question: "What is a broker-dealer under state securities law?",
+        question: "When must Form CRS be updated and existing clients informed?",
         answer:
-          "A broker-dealer is a person engaged in the business of effecting securities transactions for the account of others or for its own account. A firm executing customer stock trades is a broker-dealer.",
+          "Within 30 days after information becomes materially inaccurate, and the changes must be communicated to existing retail investors within 60 days after the update is required.",
         imageUrl: "/samples/series-63-anki-deck-sample-1.webp",
       },
       {
-        question: "Why is an issuer usually excluded from broker-dealer definition?",
+        question: "When can a person avoid imprisonment for violating a rule or order?",
         answer:
-          "An issuer selling its own securities is generally not treated as a broker-dealer merely for issuing those securities. A corporation issuing its own stock is an issuer, not a BD solely for that issuance.",
+          "A person cannot be imprisoned for violating a rule or order if they prove they had no knowledge of it. Fines may still apply, and the defense does not cover violations of the Act itself.",
         imageUrl: "/samples/series-63-anki-deck-sample-2.webp",
       },
       {
-        question: "Are agents themselves broker-dealers?",
+        question: "When does an investment adviser not need to register in a state?",
         answer:
-          "No. Individuals representing broker-dealers or issuers are agents, not broker-dealers. A registered rep of a BD is an agent.",
+          "When it has no place of business in the state and, during the preceding 12 months, had five or fewer noninstitutional clients who are residents there. Advisers to only institutional clients are also excluded.",
         imageUrl: "/samples/series-63-anki-deck-sample-3.webp",
       },
     ],
@@ -928,7 +930,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Series 63 practice test with these flashcards?",
         answer:
-          "Yes. Take the free 60-question timed Series 63 readiness check on UniPrep2Go (no signup) for a topic readiness report, then drill only the weak flashcard topics in this deck between sittings.",
+          "Yes. Take the 60-question timed Series 63 readiness check on UniPrep2Go — your first mock is free, no signup — for a topic readiness report, then drill only the weak flashcard topics in this deck between sittings.",
       },
       {
         question: "Who is this deck for?",
@@ -1052,7 +1054,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "400 Life & Health insurance flashcards + free 60-question timed practice test — provisions, annuities, Medicare.",
     directAnswer:
-      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a free 60-question timed Life & Health readiness check (no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
+      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a 60-question timed Life & Health readiness check (first mock free, no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
     lastUpdated: "2026-09-21",
     audience:
       "Life & Health insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for policy provisions, riders, annuities, health plans, and insurance terminology.",
@@ -1108,7 +1110,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Life & Health insurance practice test?",
         answer:
-          "Yes. Take the free 60-question timed Life & Health readiness check on UniPrep2Go (no signup), then drill weak topics with this Anki deck between sittings.",
+          "Yes. Take the 60-question timed Life & Health readiness check on UniPrep2Go — your first mock is free, no signup — then drill weak topics with this Anki deck between sittings.",
       },
       {
         question: "Who is this deck for?",
@@ -1310,7 +1312,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus free 60Q timed mock.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) organized across all 10 Level 2 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents — same validated bank as the 495-card Anki deck and free 60-question timed CFA Level 2 readiness check (no signup). Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
+      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) organized across all 10 Level 2 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents — same validated bank as the 495-card Anki deck and the 60-question timed CFA Level 2 readiness check (first mock free, no signup). Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
     lastUpdated: "2026-09-29",
     audience:
       "CFA Level 2 candidates who need fast formula retrieval under item-set exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
@@ -3079,13 +3081,13 @@ const rawDecks: Deck[] = [
     shortName: "Digital SAT",
     subtitle: "A planned spaced-repetition deck for Digital SAT Reading and Writing and Math.",
     directAnswer:
-      "The Digital SAT Anki Deck is a planned UniPrep2Go product with 342 flashcards across Reading and Writing and Math. It is not yet available for purchase. Take the free Digital SAT readiness check to benchmark both scored sections first.",
-    lastUpdated: "2026-07-16",
+      "The Digital SAT Anki Deck is a planned UniPrep2Go product with 160 flashcards — 88 Reading and Writing and 72 Math — written to the eight official Digital SAT content domains. It is not yet available for purchase. Take the free Digital SAT readiness check to benchmark both scored sections first.",
+    lastUpdated: "2026-10-02",
     audience:
       "High school students preparing for the Digital SAT using spaced repetition alongside College Board Bluebook practice.",
     format: ".apkg",
     facts: {
-      cards: "342",
+      cards: "160",
       topics: "Reading and Writing, Math",
       formulas: "High-yield Digital SAT section skills, grammar rules, algebra, and data analysis drills",
       examYear: "Digital SAT Suite (400–1600 scale)",
@@ -3095,34 +3097,31 @@ const rawDecks: Deck[] = [
       {
         name: "Reading and Writing",
         examWeight: "Section score 200–800 (54 official questions)",
-        cards: "175",
+        cards: "88",
       },
       {
         name: "Math",
         examWeight: "Section score 200–800 (44 official questions)",
-        cards: "167",
+        cards: "72",
       },
     ],
     sampleCards: [
       {
-        question:
-          "Passage: During wartime rationing, households received coupons limiting purchases of sugar and meat. Officials hoped the system would distribute scarce goods more evenly across income levels. What is the main point of the passage?",
+        question: "In the novel The Lantern Keeper, the narrator's grandfather is portrayed as someone who values careful work over speed. Which quotation from the novel most effectively illustrates this portrayal?",
         answer:
-          "Correct: (a) Rationing aimed to share scarce goods more fairly. The main point summarizes the historical claim supported by the details given.",
+          "Correct: (a) \"He sanded each oar three times, though one pass would have satisfied anyone else.\" The portrayal is about choosing care over speed. Sanding each oar three times when one pass would satisfy others shows him spending extra time to do the job thoroughly.",
         imageUrl: "/samples/sat-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "Passage: After a city added protected bike lanes, weekday cycling trips rose for 6 consecutive years, while reported bicycle-car collisions fell by 12%. Which inference is best supported by the passage?",
+        question: "A random sample of 400 voters in a city found that 56% support building a new library, with a margin of error of 4 percentage points. Which conclusion is most appropriate?",
         answer:
-          "Correct: (d) Protected bike lanes were associated with safer and more frequent cycling. The passage links protected lanes to rising trips and fewer collisions, contrary to critics' prediction.",
+          "Correct: (d) Between 52% and 60% of all voters in the city likely support the new library. A margin of error describes uncertainty about the whole population, not the sample. The plausible range for all city voters is 56% ± 4%, or 52% to 60%.",
         imageUrl: "/samples/sat-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "In a draft essay (item 24), a writer includes a brief anecdote about a failed launch. What is the most likely purpose of that inclusion?",
+        question: "Hoping to finish the mural before the festival, ______ Which choice completes the text so that it conforms to the conventions of Standard English?",
         answer:
-          "Correct: (c) Illustrate a claim about learning from early setbacks. Authors typically insert such material to serve a clear rhetorical function in the argument.",
+          "Correct: (b) the artists worked through the night. An introductory modifier describes the noun that comes right after the comma. The artists are the ones hoping to finish, so 'the artists' must follow the modifier.",
         imageUrl: "/samples/sat-anki-deck-sample-3.webp",
       },
     ],
@@ -3130,7 +3129,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Digital SAT practice test?",
         answer:
-          "Yes. Take the free 49-question Digital SAT readiness check at uniprep2go.study/mock-exams/sat-readiness-check — scored on Reading and Writing and Math with full answer review. The paid Anki deck includes 342 cards from the same validated bank for daily drilling.",
+          "Yes. Take the free 49-question Digital SAT readiness check at uniprep2go.study/mock-exams/sat-readiness-check — scored on Reading and Writing and Math with full answer review. The paid Anki deck includes 160 cards from the same validated bank for daily drilling.",
       },
       {
         question: "How is this mock scored compared with the real SAT?",
@@ -3140,7 +3139,7 @@ const rawDecks: Deck[] = [
       {
         question: "How many cards are in the Digital SAT Anki deck?",
         answer:
-          "The deck includes 342 flashcards — 175 Reading and Writing and 167 Math — built from the same validated item bank as the free readiness check.",
+          "The deck includes 160 unique flashcards — 88 Reading and Writing (information and ideas, craft and structure, expression of ideas, Standard English conventions) and 72 Math (algebra, advanced math, problem-solving and data analysis, geometry and trigonometry) — built from the same validated item bank as the free readiness check. Every card explains the correct answer and why each wrong choice fails.",
       },
     ],
   },
@@ -4296,21 +4295,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What is the temperature danger zone?",
+        question: "What if cooked TCS food reaches 70°F in 2 hours but not 41°F within 6 total hours?",
         answer:
-          "The range where pathogens can grow quickly in TCS food. ServSafe commonly teaches 41°F to 135°F; managers limit how long food stays in that range.",
+          "It must be discarded because it missed the total cooling limit.",
         imageUrl: "/samples/servsafe-manager-anki-deck-sample-1.webp",
       },
       {
-        question: "What is cross-contamination?",
+        question: "How long should shellstock tags be kept?",
         answer:
-          "The transfer of pathogens from one food or surface to another, often through hands, cutting boards, utensils, storage errors, or unclean equipment.",
+          "Shellstock tags are commonly kept for 90 days after the last shellfish from the container is sold or served.",
         imageUrl: "/samples/servsafe-manager-anki-deck-sample-2.webp",
       },
       {
-        question: "What does sanitizing do?",
+        question: "When must food-contact surfaces be cleaned and sanitized?",
         answer:
-          "Sanitizing reduces pathogens on a cleaned surface to safe levels. Clean first, then sanitize with the correct concentration and contact time.",
+          "Clean and sanitize after use, before working with different food types, after interruptions, after contamination, and at least every 4 hours during continuous use with TCS foods.",
         imageUrl: "/samples/servsafe-manager-anki-deck-sample-3.webp",
       },
     ],
@@ -4436,12 +4435,12 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
     shortName: "PTCB Pharmacy Technician",
-    subtitle: "300 flashcards for PTCE prep — top 200 drugs, sig codes, pharmacy math, and federal law.",
+    subtitle: "300 flashcards weighted to the January 2026 PTCE — high-yield drugs, interactions, federal law, safety, sigs, and math.",
     directAnswer:
-      "Built for pharmacy technicians preparing for the PTCE: 300 Anki flashcards covering the top 200 brand/generic pairs, drug classes, sig abbreviations, days-supply math, DEA schedules, HIPAA basics, recalls, and order-entry workflow. Official PTCE is 90 questions (80 scored) / 1 hour 50 minutes / scaled pass 1,400. Short daily sessions on your phone beat rereading notes the week before the exam. Independent study aid — not official PTCB, NHA, FDA, or DEA material. .apkg download for {PRICE} via Gumroad.",
-    lastUpdated: "2026-08-23",
+      "Built for pharmacy technicians preparing for the PTCE: 300 unique Anki flashcards weighted to the January 2026 outline — 105 Medications (60 high-yield Top 200 drugs with generic, class, use, and the safety point, plus interactions, stems, dosage forms, and storage), 56 Federal Requirements (DEA, CSOS, DSCSA, HIPAA, REMS, recalls), 71 Patient Safety (high-alert drugs, look-alike names, ISMP abbreviations, USP <797>/<800>), and 68 Order Entry (sigs, days-supply math, claims, inventory). Every card has a worked example and a common mistake. Official PTCE is 90 questions (80 scored) / 1 hour 50 minutes / scaled pass 1,400. Short daily sessions on your phone beat rereading notes the week before the exam. Independent study aid — not official PTCB, NHA, FDA, or DEA material. .apkg download for {PRICE} via Gumroad.",
+    lastUpdated: "2026-10-02",
     audience:
-      "Pharmacy technician candidates, pharmacy tech students, career changers preparing for the PTCE, and technicians who want daily brand/generic and sig-code recall on their phone.",
+      "Pharmacy technician candidates, pharmacy tech students, career changers preparing for the PTCE, and technicians who want daily drug, law, safety, and math recall on their phone.",
     format: ".apkg",
     coverImage: "/covers/ptcb-pharmacy-technician-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh?wanted=true",
@@ -4450,34 +4449,34 @@ const rawDecks: Deck[] = [
     facts: {
       cards: "300",
       topics:
-        "Top 200 drugs, sig codes, pharmacy math, DEA schedules, federal law, and dispensing workflow",
-      formulas: "Brand/generic recall, sig abbreviations, days-supply math, DEA schedule rules, and high-alert safety concepts",
+        "60 high-yield Top 200 drugs, interactions, DEA and DSCSA law, patient safety, sig codes, pharmacy math, and order entry",
+      formulas: "Days supply, mg/kg dosing, concentrations, percent and ratio strength, dilutions, IV rates, DEA check digit",
       examYear: "January 2026 PTCE / pharmacy technician review",
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Medications (top 200 drugs)", examWeight: "35%", cards: "Brand ↔ generic ↔ class with primary use" },
-      { name: "Patient Safety & QA", examWeight: "23.75%", cards: "High-alert, LASA pairs, error-prevention workflow" },
-      { name: "Order Entry, sigs & math", examWeight: "22.5%", cards: "Sig codes, days supply, conversions, labeling" },
-      { name: "Federal Requirements", examWeight: "18.75%", cards: "DEA schedules, HIPAA, recalls, DSCSA traceability" },
+      { name: "Medications", examWeight: "35%", cards: "105 cards: 60 high-yield drugs (generic, class, use, safety point), interactions, stems, dosage forms, storage" },
+      { name: "Patient Safety & QA", examWeight: "23.75%", cards: "71 cards: high-alert drugs, LASA pairs, ISMP abbreviations, error reporting, USP <797>/<800>" },
+      { name: "Order Entry & Processing", examWeight: "22.5%", cards: "68 cards: sig codes, days supply and dosing math, claims, inventory" },
+      { name: "Federal Requirements", examWeight: "18.75%", cards: "56 cards: DEA schedules and forms, C-II rules, DSCSA, HIPAA, REMS, recalls" },
     ],
     sampleCards: [
       {
-        question: "Prinivil — generic name, class, and primary use",
+        question: "Lopressor vs Toprol XL — generic name, class, use, and the substitution trap?",
         answer:
-          "Generic: Lisinopril. Class: ACE inhibitor. Primary use: hypertension and heart failure. Key note: dry cough is a common side effect.",
+          "Metoprolol, a cardioselective beta-blocker (-olol), for hypertension, angina, heart failure, and rate control. Lopressor = metoprolol tartrate (immediate release, usually twice daily); Toprol XL = metoprolol succinate (extended release, once daily). Do not stop abruptly.",
         imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-1.webp",
       },
       {
-        question: "Common brand names for Lisinopril",
+        question: "How do you verify the check digit of DEA number BL6324817?",
         answer:
-          "Prinivil and Zestril. Class: ACE inhibitor. Useful when the prescription uses the brand name but the pharmacy dispenses generic Lisinopril.",
+          "Add digits 1, 3, 5: 6 + 2 + 8 = 16. Add digits 2, 4, 6 and double: (3 + 4 + 1) × 2 = 16. Total = 32. The last digit of the total (2) must equal the seventh digit — here it is 7, so BL6324817 fails and the Rx must be verified.",
         imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-2.webp",
       },
       {
-        question: 'What does the sig code "bid" mean?',
+        question: "Why is concentrated oral morphine solution a classic dosing-error drug?",
         answer:
-          "Twice daily (bis in die). Common on outpatient Rx labels — do not confuse with tid (three times daily).",
+          "Morphine oral solution comes as 10 mg/5 mL and 100 mg/5 mL (20 mg/mL). Confusing mg with mL or picking the wrong concentration has caused fatal tenfold to twentyfold overdoses. Orders should state dose in mg and volume, and the concentrated form is reserved for opioid-tolerant patients.",
         imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-3.webp",
       },
     ],
@@ -4485,12 +4484,12 @@ const rawDecks: Deck[] = [
       {
         question: "What does the PTCB Pharmacy Technician deck include?",
         answer:
-          "300 Anki flashcards covering top 200 drugs, sig codes, pharmacy math, DEA schedules, federal law, patient safety, and order-entry workflow, plus 2 legal intro cards and a READ_FIRST.txt file in the download folder.",
+          "300 unique Anki flashcards in January 2026 PTCE proportions: 105 Medications (60 high-yield Top 200 drugs plus interactions, stems, dosage forms, storage), 56 Federal Requirements, 71 Patient Safety, and 68 Order Entry (sigs, math, claims, inventory). Each card has a worked example and a common mistake. Plus 2 legal intro cards and a READ_FIRST.txt file in the download folder.",
       },
       {
         question: "Who is this deck for?",
         answer:
-          "Pharmacy technician candidates preparing for the PTCE, pharmacy tech students, and technicians who want short daily recall sessions on brand/generic pairs, sig abbreviations, and exam math.",
+          "Pharmacy technician candidates preparing for the PTCE, pharmacy tech students, and technicians who want short daily recall sessions on drugs, federal law, safety, sig abbreviations, and exam math.",
       },
       {
         question: "Is this official PTCB material?",
@@ -4837,7 +4836,9 @@ const uniqueWavePlannedDecks = [
 
 export const decks: Deck[] = applyAnkiDeckLaunchToCatalog(
   [...rawDecks, ...uniqueWavePlannedDecks].map(enrichDeckWithShopPreviews),
-).map(applySoldSamplesToDeck);
+)
+  .map(applySoldSamplesToDeck)
+  .map((deck) => ({ ...deck, faqs: withMockAccessDisclosure(deck.faqs) }));
 
 export const catalogAvailableDecks = decks.filter(
   (deck): deck is CatalogAvailableDeck => deck.status === "available",
@@ -5016,7 +5017,7 @@ export const siteFaqs = [
   {
     question: "Are there free practice tests for US licensing exams?",
     answer:
-      "Yes — UniPrep2Go publishes free timed practice tests with topic scoring and full answer review (no signup) for FINRA SIE / Series 7 / 63, California real estate, insurance, PTCB PTCE, NHA ExCPT, ServSafe, CFA, FRM, EPA 608, LEED, MRICS QS, and more at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck or PDF only when you want daily remediation on the gaps the report surfaces — better than a 20-question teaser behind a paywall.",
+      "Yes — UniPrep2Go publishes timed practice tests with topic scoring and full answer review (first mock free with no signup, then $5 for 5 attempts) for FINRA SIE / Series 7 / 63, California real estate, insurance, PTCB PTCE, NHA ExCPT, ServSafe, CFA, FRM, EPA 608, LEED, MRICS QS, and more at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck or PDF only when you want daily remediation on the gaps the report surfaces — better than a 20-question teaser behind a paywall.",
   },
   {
     question: "Do you cover PTCB PTCE and NHA ExCPT pharmacy technician exams?",

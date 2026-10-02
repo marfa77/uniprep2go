@@ -326,6 +326,9 @@ def render_landing(
 
     topics = list((spec.get("topics") or {}).values())
     captions = topics[:3] if topics else [f"Sample {i}" for i in range(1, 4)]
+    shots = json.loads((ROOT / "src/data/deck-sample-shots.json").read_text(encoding="utf-8")).get(slug) or []
+    if len(shots) == 3 and all(s.get("topic") for s in shots):
+        captions = [s["topic"] for s in shots]
 
     sample_figures = []
     for i, url in enumerate(sample_urls[:3], 1):

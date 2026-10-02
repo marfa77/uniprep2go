@@ -229,7 +229,7 @@ export function homeMetadata(): Metadata {
   // Dual-track + Tier A (2026-09-24): outcome diagnostic, not Anki-as-VP.
   const title = "Free PTCB & Series 63 Mocks | Weak Topics";
   const description =
-    "Free timed PTCB, Series 63, Life & Health, and CFA mocks — no signup. Pass/no-pass topic readiness reports, then fix only your weak areas. Independent US exam prep.";
+    "Timed PTCB, Series 63, Life & Health, and CFA mocks — first mock free, no signup. Pass/no-pass topic readiness reports, then fix only your weak areas. Independent US exam prep.";
 
   return finalize({
     title: {

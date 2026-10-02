@@ -1,0 +1,544 @@
+{
+  "servsafe-food-handler-readiness-check": {
+    "servsafe-food-handler-readiness-check-contamination-001": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "Tuna sat on the receiving dock for several hours before it was cooked. Minutes after eating it, a guest has a flushed face, sweating, a headache and a peppery taste in the mouth. Which illness is most likely?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Ciguatera fish poisoning from a reef fish",
+        "b": "Scombroid poisoning from histamine in the fish",
+        "c": "Vibrio infection from undercooked shellfish",
+        "d": "Norovirus passed on by a sick food handler"
+      },
+      "explanation": "Scombroid poisoning happens when fish such as tuna, mackerel or mahi-mahi is time-temperature abused: bacteria produce histamine, which cooking and freezing do not destroy. Symptoms start within minutes (flushed face, sweating, headache, burning or peppery taste). Prevention is buying from approved suppliers and keeping fish cold from receiving on.",
+      "distractorExplanations": {
+        "a": "Ciguatoxin comes from reef fish such as barracuda that ate toxic algae; it is not caused by leaving tuna warm on the dock.",
+        "c": "Vibrio is linked to raw oysters from warm water and takes hours to a day to cause illness, not minutes after tuna.",
+        "d": "Norovirus causes vomiting and diarrhea 12 to 48 hours later and spreads from people, not from warm tuna."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-002": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "A large batch of cooked rice was left on the counter overnight and then reheated for lunch. Which pathogen is the main concern?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Hepatitis A",
+        "b": "Shigella spp.",
+        "c": "Listeria monocytogenes",
+        "d": "Bacillus cereus"
+      },
+      "explanation": "Bacillus cereus forms spores that survive cooking. When cooked rice sits in the temperature danger zone, the spores grow and produce a toxin that reheating does not destroy. Cooked rice must be cooled quickly or held hot at 135°F or higher.",
+      "distractorExplanations": {
+        "a": "Hepatitis A spreads from an infected worker's hands to ready-to-eat food; it does not grow in rice left out.",
+        "b": "Shigella spreads through feces and flies, often on salads and produce; rice left warm is not its typical source.",
+        "c": "Listeria grows in cold ready-to-eat food such as deli meat and soft cheese, not in rice left at room temperature."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-003": {
+      "topicId": "contamination",
+      "difficulty": "easy",
+      "prompt": "A food handler cuts raw chicken on a cutting board, then uses the same unwashed board to slice tomatoes for a salad. What is this an example of?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Cross-contamination",
+        "b": "Time-temperature abuse",
+        "c": "Physical contamination",
+        "d": "Chemical contamination"
+      },
+      "explanation": "Pathogens from the raw chicken were moved onto a ready-to-eat food that will not be cooked. Prevent it by washing, rinsing and sanitizing the board between tasks, or by using separate boards for raw meat and produce.",
+      "distractorExplanations": {
+        "b": "Time-temperature abuse means food stays too long between 41°F and 135°F; here the problem is transfer from raw chicken.",
+        "c": "Physical contamination means objects such as glass, metal or bandages, not pathogens carried on a board.",
+        "d": "Chemical contamination comes from cleaners, sanitizers or toxic metals; raw-chicken juice is a biological hazard."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-004": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "Which group contains only TCS (time/temperature control for safety) foods?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Bread, crackers, dry pasta, and flour",
+        "b": "Whole raw apples, honey, and peanut butter",
+        "c": "Cooked rice, sliced melon, sprouts, and tofu",
+        "d": "Cooked rice, bread, raw carrots, and jam"
+      },
+      "explanation": "TCS foods need time and temperature control because they are moist, high in protein or close to neutral pH, so pathogens grow in them. Cooked rice, cut melon, sprouts, tofu, milk, eggs, meat, cut tomatoes and cut leafy greens are all TCS.",
+      "distractorExplanations": {
+        "a": "Dry baked goods, dry pasta and flour are too low in moisture for bacteria to grow, so they are not TCS.",
+        "b": "Whole uncut fruit, honey and peanut butter are protected or low in moisture, so they are not TCS.",
+        "d": "Cooked rice is TCS, but bread, whole raw carrots and jam are not, so the group is not all TCS."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-005": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "Which pathogen is spread mainly by infected food handlers, can be passed on before symptoms appear, and often causes yellowing of the skin and eyes?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Norovirus",
+        "b": "Hepatitis A",
+        "c": "Salmonella Typhi",
+        "d": "Shigella spp."
+      },
+      "explanation": "Hepatitis A is a virus carried in feces. Infected workers can spread it for weeks, even before they feel sick, and jaundice (yellow skin or eyes) is its hallmark. A food handler with jaundice must be reported to the regulatory authority and excluded.",
+      "distractorExplanations": {
+        "a": "Norovirus causes vomiting and diarrhea, not jaundice; yellow skin and eyes point to the liver virus, Hepatitis A.",
+        "c": "Salmonella Typhi causes typhoid fever with a high fever; jaundice is the classic sign of Hepatitis A.",
+        "d": "Shigella causes diarrhea, often bloody, and spreads through feces and flies, but it does not cause jaundice."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-006": {
+      "topicId": "contamination",
+      "difficulty": "easy",
+      "prompt": "A worn can-opener blade is leaving small metal slivers in each can it opens. What type of hazard is this?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Biological contamination from the can",
+        "b": "Chemical contamination from the coating",
+        "c": "Cross-contact with a food allergen",
+        "d": "Physical contamination from the metal"
+      },
+      "explanation": "Physical contaminants are objects that get into food: metal shavings, glass, staples, bandages, jewelry, fruit pits or bone. Replace worn can openers and clean and inspect the blade regularly.",
+      "distractorExplanations": {
+        "a": "Biological hazards are pathogens or toxins from living things; metal slivers are objects, not organisms.",
+        "b": "Chemical contamination comes from cleaners or metals dissolving into acidic food, not from pieces of steel.",
+        "c": "Cross-contact moves an allergen protein into food; a metal sliver is not an allergen."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-007": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "Why should tomato sauce never be stored in a galvanized (zinc-coated) or copper container?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The acid can leach toxic metals into the sauce",
+        "b": "The metal keeps the sauce above 41°F for too long",
+        "c": "The container rusts and adds physical contaminants",
+        "d": "The coating absorbs moisture and spoils the sauce"
+      },
+      "explanation": "Acidic foods such as tomato sauce, citrus juice and vinegar dressings can dissolve copper, zinc or lead from containers and equipment, causing toxic-metal poisoning. Store and cook acidic food only in food-grade containers.",
+      "distractorExplanations": {
+        "b": "Metal containers usually cool food faster, not slower; the hazard is chemical leaching, not temperature.",
+        "c": "Rust can be a physical hazard, but the specific danger of acid in zinc or copper is toxic-metal poisoning.",
+        "d": "The coating does not absorb moisture; acid dissolving the metal into the food is the real risk."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-008": {
+      "topicId": "contamination",
+      "difficulty": "easy",
+      "prompt": "A coworker brings in wild mushrooms she picked herself and offers them for the daily special. What should the kitchen do?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Cook them to 165°F so any toxins are destroyed",
+        "b": "Accept them if an experienced forager checks them",
+        "c": "Refuse them; use only approved-supplier mushrooms",
+        "d": "Freeze them for 7 days and then serve them cooked"
+      },
+      "explanation": "Mushroom toxins are not destroyed by cooking, freezing or drying, and toxic species are hard to tell apart from safe ones. All food must come from approved, inspected sources, so wild mushrooms are used only when they come from an approved supplier.",
+      "distractorExplanations": {
+        "a": "Cooking does not destroy mushroom toxins, so heating to 165°F does not make wild mushrooms safe.",
+        "b": "A coworker's or forager's experience is not an approved source; regulations require approved suppliers.",
+        "d": "Freezing is used to kill parasites in fish; it has no effect on mushroom toxins."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-009": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "Most foodborne bacteria grow best under which conditions?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Dry food held below 41°F in a sealed container",
+        "b": "Moist, low-acid food held between 41°F and 135°F",
+        "c": "Highly acidic food held at 135°F or higher",
+        "d": "Salty, dry food stored at room temperature"
+      },
+      "explanation": "FAT TOM lists what bacteria need: food (protein and carbohydrates), acidity near neutral, temperature in the danger zone (41°F to 135°F), time, oxygen (for most), and moisture. Moist, low-acid food in the danger zone gives them everything they need.",
+      "distractorExplanations": {
+        "a": "Low moisture and cold temperatures both slow bacterial growth, so dry, cold food is a poor environment.",
+        "c": "High acidity and temperatures at or above 135°F both slow or stop bacterial growth.",
+        "d": "Salt and dryness take away the water bacteria need, even at room temperature."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-010": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "Why is Listeria monocytogenes a special concern in ready-to-eat deli meat?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "It is destroyed as soon as the meat is refrigerated",
+        "b": "It mainly comes from the hands of sick food handlers",
+        "c": "It forms a toxin when deli meat is reheated slowly",
+        "d": "It can keep growing at refrigerator temperatures"
+      },
+      "explanation": "Listeria survives and slowly grows in the cooler, so ready-to-eat foods such as deli meat, hot dogs and unpasteurized soft cheese become riskier over time. Pregnant women, older adults and people with weak immune systems are most at risk, which is why date marking and the 7-day discard rule matter.",
+      "distractorExplanations": {
+        "a": "Refrigeration slows most bacteria, but Listeria keeps growing at 41°F, which is exactly why it is a concern.",
+        "b": "Listeria comes from soil, water and processing environments, not mainly from sick workers.",
+        "c": "Listeria causes illness by growing in food; it is not a toxin formed by slow reheating."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-011": {
+      "topicId": "contamination",
+      "difficulty": "easy",
+      "prompt": "What is a foodborne-illness outbreak?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Two or more people with the same illness from the same food",
+        "b": "A single guest reports an illness to the local health department",
+        "c": "A manufacturer issues a recall for one of its food products",
+        "d": "Several guests complain that the same dish tasted spoiled"
+      },
+      "explanation": "An outbreak is when two or more people have the same symptoms after eating the same food, and health authorities confirm it through investigation and lab testing. One sick guest is a complaint to take seriously, not an outbreak.",
+      "distractorExplanations": {
+        "b": "One case is not an outbreak; the definition requires two or more people with the same illness from the same food.",
+        "c": "A recall removes a product from sale; it may follow an outbreak but is not what an outbreak is.",
+        "d": "Complaints about taste are not illnesses; an outbreak needs people who actually got sick from the same food."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-012": {
+      "topicId": "contamination",
+      "difficulty": "easy",
+      "prompt": "A daycare center orders lunch for a group of toddlers. Why does this order need extra food safety care?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Young children need their food served hotter than adults",
+        "b": "Daycare orders are inspected more often by health officials",
+        "c": "Young children's immune systems are not fully developed",
+        "d": "Toddlers are more likely to have food allergies than adults"
+      },
+      "explanation": "High-risk populations include infants and preschool-age children, pregnant women, older adults and people with weakened immune systems. Their bodies fight pathogens less well, so the same dose can cause more severe illness.",
+      "distractorExplanations": {
+        "a": "Serving temperature depends on the food, not the guest's age; the issue is the children's immune response.",
+        "b": "Inspection frequency is not the reason; young children are a high-risk population for foodborne illness.",
+        "d": "Allergies matter for every guest, but children are high-risk because their immune systems are still developing."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-013": {
+      "topicId": "contamination",
+      "difficulty": "hard",
+      "prompt": "A chef cooks a large barracuda thoroughly, yet a guest later develops ciguatera fish poisoning. Why did cooking not prevent it?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "The fish was not cooked to 165°F for 15 seconds",
+        "b": "Ciguatoxin is not destroyed by cooking or freezing",
+        "c": "Ciguatoxin forms when fish is stored above 41°F",
+        "d": "The toxin came from cross-contamination at the station"
+      },
+      "explanation": "Ciguatoxin builds up in large predatory reef fish that eat smaller fish feeding on toxic algae. Cooking, freezing, smoking and curing do not destroy it, so the only control is buying fish from approved, reputable suppliers.",
+      "distractorExplanations": {
+        "a": "No cooking temperature destroys ciguatoxin, and fish only needs 145°F; a higher temperature would not have helped.",
+        "c": "That describes histamine (scombroid) in tuna or mackerel; ciguatoxin is already in the fish when it is caught.",
+        "d": "Ciguatoxin is in the fish's flesh from its diet; it is not transferred from another food at the station."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-014": {
+      "topicId": "contamination",
+      "difficulty": "medium",
+      "prompt": "Shiga toxin-producing E. coli is most often linked to which foods?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Cooked rice held warm at room temperature",
+        "b": "Large predatory reef fish such as barracuda",
+        "c": "Home-canned vegetables with bulging lids",
+        "d": "Undercooked ground beef and raw produce"
+      },
+      "explanation": "Shiga toxin-producing E. coli lives in cattle intestines. It gets into ground beef during processing and onto produce through contaminated water. Prevent it by cooking ground beef to 155°F for 17 seconds, buying from approved suppliers and excluding workers diagnosed with it.",
+      "distractorExplanations": {
+        "a": "Cooked rice left warm points to Bacillus cereus, not Shiga toxin-producing E. coli.",
+        "b": "Large reef fish are linked to ciguatoxin, a seafood toxin, not to E. coli.",
+        "c": "Bulging cans point to Clostridium botulinum, which grows without oxygen."
+      }
+    },
+    "servsafe-food-handler-readiness-check-contamination-015": {
+      "topicId": "contamination",
+      "difficulty": "easy",
+      "prompt": "A case of canned beans arrives with several cans bulging at both ends. What is the biggest risk if they are used?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Botulism from Clostridium botulinum",
+        "b": "Listeriosis from Listeria monocytogenes",
+        "c": "Scombroid poisoning from histamine",
+        "d": "Hepatitis A from the outer packaging"
+      },
+      "explanation": "Bulging, leaking or deeply dented cans may contain Clostridium botulinum, which grows without oxygen and produces a deadly toxin. Reject swollen cans at receiving or throw them out; never open or taste them to check.",
+      "distractorExplanations": {
+        "b": "Listeria grows in cold ready-to-eat food such as deli meat; it is not the classic hazard of swollen cans.",
+        "c": "Scombroid toxin comes from temperature-abused fish such as tuna, not from swollen canned goods.",
+        "d": "Hepatitis A spreads from infected people to food; damaged packaging does not cause it."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-001": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "How long should the whole handwashing process take, from wetting the hands to drying them?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "At least 5 seconds",
+        "b": "At least 10 seconds",
+        "c": "At least 20 seconds",
+        "d": "At least 60 seconds"
+      },
+      "explanation": "Wet hands and arms with warm running water, apply soap, scrub for 10 to 15 seconds including between fingers and under nails, rinse, and dry with a single-use paper towel or hand dryer. The whole process takes at least 20 seconds.",
+      "distractorExplanations": {
+        "a": "5 seconds is far too short to remove pathogens; the full process takes at least 20 seconds.",
+        "b": "10 to 15 seconds is the scrubbing step only; the whole handwashing process takes at least 20 seconds.",
+        "d": "60 seconds is more than required; the standard is at least 20 seconds for the full process."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-002": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "After washing his hands, a cook dries them on his apron and goes back to making salads. What did he do wrong?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "He recontaminated his hands by drying them on his apron",
+        "b": "He should have used hand antiseptic instead of washing",
+        "c": "He should have dried his hands on a reusable cloth towel",
+        "d": "He needed to rinse his hands again in the food-prep sink"
+      },
+      "explanation": "Aprons and clothing carry dirt and pathogens, so drying hands on them undoes the handwashing. Hands should be dried with a single-use paper towel or a hand dryer before going back to ready-to-eat food.",
+      "distractorExplanations": {
+        "b": "Hand antiseptic may be used after washing, never instead of it; the real error was drying on the apron.",
+        "c": "Shared cloth towels can spread pathogens; the rule is single-use paper towels or a hand dryer.",
+        "d": "Hands are never washed in a food-prep sink, and rinsing again would not fix drying them on the apron."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-003": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "Which of these tasks requires a food handler to wash hands before going back to food prep?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Moving from slicing bread to plating the same order",
+        "b": "Restocking sealed bottles of water in a reach-in",
+        "c": "Checking soup with a clean, sanitized thermometer",
+        "d": "Taking out the trash before plating sandwiches"
+      },
+      "explanation": "Hands must be washed after handling garbage, using the restroom, touching hair or the body, handling raw meat, sneezing or coughing, eating or drinking, handling chemicals or dirty equipment, and before putting on gloves. Garbage carries pathogens straight to ready-to-eat food.",
+      "distractorExplanations": {
+        "a": "Moving between ready-to-eat steps on the same order does not by itself contaminate hands.",
+        "b": "Stocking sealed bottles does not soil hands the way garbage does.",
+        "c": "Using a clean, sanitized probe is routine prep and does not contaminate hands like trash."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-004": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "Where should food handlers wash their hands?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "In the three-compartment sink after the wash step",
+        "b": "Only in a sink designated for handwashing",
+        "c": "In the food-prep sink if it has been sanitized",
+        "d": "In the dish sink when a cart blocks the hand sink"
+      },
+      "explanation": "Handwashing sinks are used only for washing hands, and prep, dish or utility sinks are never used for it. Hand sinks must have soap, warm water, paper towels or a hand dryer, a waste container and signage, and must never be blocked.",
+      "distractorExplanations": {
+        "a": "The three-compartment sink is for cleaning and sanitizing items; washing hands there can contaminate dishes.",
+        "c": "Washing hands in a prep sink can splash pathogens onto produce that will be prepared there.",
+        "d": "A hand sink must never be blocked; move the cart rather than using the dish sink."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-005": {
+      "topicId": "hygiene",
+      "difficulty": "medium",
+      "prompt": "When is it correct for a food handler to use hand antiseptic (hand sanitizer gel)?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Instead of washing hands after using the restroom",
+        "b": "Instead of washing hands when the hand sink is busy",
+        "c": "After washing hands, not in place of washing",
+        "d": "Before touching ready-to-eat food so gloves are not needed"
+      },
+      "explanation": "Hand antiseptics lower the number of pathogens on skin, but they do not remove dirt and cannot replace handwashing. If used, apply them after washing and let them dry before touching food or putting on gloves.",
+      "distractorExplanations": {
+        "a": "After the restroom, hands must be washed with soap and water; antiseptic cannot replace that.",
+        "b": "A busy sink is not a reason to skip washing; antiseptic is only an extra step after washing.",
+        "d": "Antiseptic does not replace the no-bare-hand-contact rule; ready-to-eat food still needs gloves or utensils."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-006": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "A server needs to place a lemon wedge on a guest's drink. How should she handle the lemon?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "With tongs, a scoop, or single-use gloves",
+        "b": "With bare hands if she washed them earlier",
+        "c": "With a napkin taken from a guest table",
+        "d": "With bare hands, because it only touches the rim"
+      },
+      "explanation": "Ready-to-eat food, including garnishes, ice and bread, must not be touched with bare hands. Use tongs, deli sheets, scoops or single-use gloves so pathogens on hands cannot reach the guest.",
+      "distractorExplanations": {
+        "b": "Even washed hands carry pathogens; bare-hand contact with ready-to-eat food is not allowed.",
+        "c": "Table napkins are not food-safe utensils and may already be contaminated by guests.",
+        "d": "The garnish touches the drink and is often eaten, so it is ready-to-eat food."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-007": {
+      "topicId": "hygiene",
+      "difficulty": "medium",
+      "prompt": "A cook wearing gloves forms raw burger patties and is then asked to slice cheese for sandwiches. What should he do first?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Rinse his gloved hands under hot running water",
+        "b": "Wipe the gloves with a sanitizer-soaked towel",
+        "c": "Put a fresh pair of gloves over the old pair",
+        "d": "Remove gloves, wash hands, put on new gloves"
+      },
+      "explanation": "Gloves are single-use. Change them when they are dirty or torn, before starting a different task, after handling raw meat and before handling ready-to-eat food, and at least every 4 hours of continuous use. Wash hands before putting on the new pair.",
+      "distractorExplanations": {
+        "a": "Rinsing does not reliably remove raw-meat pathogens, and gloves are not meant to be reused.",
+        "b": "Sanitizing gloves does not make them safe to reuse after handling raw meat.",
+        "c": "Double-gloving over contaminated gloves can still transfer pathogens to the cheese."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-008": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "A food handler has a small cut on her finger. What must she do before handling food?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Leave the cut uncovered so it can dry and heal",
+        "b": "Cover it with a bandage and a single-use glove",
+        "c": "Cover it with a bandage and skip handwashing",
+        "d": "Wear a glove only on days she handles raw meat"
+      },
+      "explanation": "Wounds on the hand or wrist must be covered with an impermeable cover, such as a bandage or finger cot, and then a single-use glove. A wound on the arm needs an impermeable cover. An infected, draining wound that cannot be covered means the worker is kept away from food.",
+      "distractorExplanations": {
+        "a": "An open cut can carry Staphylococcus aureus into food, so it must be covered.",
+        "c": "Hands must still be washed; the bandage plus glove protects the food, not the washing step.",
+        "d": "The cut must be gloved for all food handling, not just on raw-meat days."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-009": {
+      "topicId": "hygiene",
+      "difficulty": "medium",
+      "prompt": "Which piece of jewelry may a food handler wear on the hands or arms while prepping food?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A plain band ring",
+        "b": "A watch with a metal band",
+        "c": "A medical-alert bracelet",
+        "d": "A ring with a small set stone"
+      },
+      "explanation": "Before prepping food, food handlers remove rings except a plain band, bracelets (including medical bracelets) and watches. Jewelry holds pathogens, can fall into food and makes handwashing less effective.",
+      "distractorExplanations": {
+        "b": "Watches trap dirt and moisture under the band and must be removed during food prep.",
+        "c": "Bracelets, including medical bracelets, are not allowed on the hands or arms during food prep.",
+        "d": "Rings with stones have crevices that hold pathogens and can lose stones in food; only a plain band is allowed."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-010": {
+      "topicId": "hygiene",
+      "difficulty": "medium",
+      "prompt": "A line cook tells the manager he has had diarrhea since this morning. What should the manager do?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Restrict him to washing dishes for the shift",
+        "b": "Let him work if he wears gloves the whole shift",
+        "c": "Exclude him from the operation",
+        "d": "Let him work as long as he has no fever"
+      },
+      "explanation": "Food handlers with vomiting or diarrhea must be excluded from the operation, because pathogens such as norovirus spread easily from them. They may return after at least 24 hours without symptoms or with a written release from a medical practitioner, depending on the cause.",
+      "distractorExplanations": {
+        "a": "Restriction is used for problems such as a sore throat with fever; diarrhea requires exclusion from the operation.",
+        "b": "Gloves do not stop a worker with diarrhea from spreading pathogens to surfaces and food.",
+        "d": "Fever is not the test; diarrhea alone is enough to exclude the worker."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-011": {
+      "topicId": "hygiene",
+      "difficulty": "hard",
+      "prompt": "A food handler has been diagnosed with Hepatitis A but says he feels fine today. What must happen?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "He can work if he does not touch ready-to-eat food",
+        "b": "He can work if he wears gloves and a hair restraint",
+        "c": "He should be restricted to non-food tasks for a day",
+        "d": "Exclude him and report it to the health authority"
+      },
+      "explanation": "A diagnosis with any of the Big Six pathogens (norovirus, Hepatitis A, Shigella, Shiga toxin-producing E. coli, Salmonella Typhi, nontyphoidal Salmonella) must be reported to the regulatory authority. A Hepatitis A diagnosis means exclusion, even without symptoms, until the authority approves return.",
+      "distractorExplanations": {
+        "a": "Hepatitis A spreads before and without symptoms, so a diagnosed worker is excluded, not restricted.",
+        "b": "Gloves and hair restraints do not control a Big Six diagnosis; exclusion and reporting are required.",
+        "c": "A one-day restriction is not enough; the worker stays excluded until the regulatory authority approves return."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-012": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "Where may a food handler eat a snack or smoke during a shift?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "At the prep station if all food is covered",
+        "b": "Only in designated areas away from food prep",
+        "c": "In the dish area if hands are washed afterward",
+        "d": "In the dry-storage room during a short break"
+      },
+      "explanation": "Eating, smoking and chewing gum or tobacco can move saliva and pathogens to hands, food and surfaces. These activities are allowed only in designated areas away from food, utensils and prep surfaces, and hands are washed before returning to work.",
+      "distractorExplanations": {
+        "a": "Covering the food does not stop saliva and pathogens from reaching hands, equipment and surfaces.",
+        "c": "Dish areas hold clean utensils; eating there risks contaminating them even if hands are washed later.",
+        "d": "Dry storage holds food and single-use items; snacking or smoking there can contaminate them."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-013": {
+      "topicId": "hygiene",
+      "difficulty": "easy",
+      "prompt": "What is the main reason food handlers must wear a hair restraint?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "To keep hair out of food and hands off hair",
+        "b": "To keep heads cool near hot kitchen equipment",
+        "c": "To show guests which staff members handle food",
+        "d": "So hands need not be washed after touching hair"
+      },
+      "explanation": "Hair restraints such as hairnets, hats and beard restraints keep hair from falling into food and discourage workers from touching their hair. If a worker does touch their hair, hands must be washed before returning to food.",
+      "distractorExplanations": {
+        "b": "Comfort is not the reason; hair restraints prevent physical and biological contamination.",
+        "c": "Hair restraints are a food safety control, not a way to identify staff.",
+        "d": "Touching hair still requires handwashing; restraints reduce contact, they do not excuse it."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-014": {
+      "topicId": "hygiene",
+      "difficulty": "hard",
+      "prompt": "A food handler at a nursing-home kitchen has a sore throat with a fever. What should happen?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "She can work if she wears a face mask",
+        "b": "She may work if she handles only trash and mopping",
+        "c": "She must be excluded from the operation",
+        "d": "She should be restricted to working with raw food"
+      },
+      "explanation": "A sore throat with fever means the worker is restricted from working with or around food in a general operation, and excluded if the operation mainly serves a high-risk population such as a nursing home or hospital. She can return with written clearance from a medical practitioner.",
+      "distractorExplanations": {
+        "a": "A mask does not meet the rule; with a high-risk population the worker must be excluded.",
+        "b": "Keeping her to non-food tasks is a restriction, which is the rule for general operations, not for a nursing home.",
+        "d": "Raw food is still food; restriction keeps a worker away from all food, and here exclusion applies."
+      }
+    },
+    "servsafe-food-handler-readiness-check-hygiene-015": {
+      "topicId": "hygiene",
+      "difficulty": "medium",
+      "prompt": "Which of these must a food handler report to the manager before starting work?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "A roommate at home has a common cold",
+        "b": "Feeling tired after working a double shift",
+        "c": "A mild sunburn on both forearms",
+        "d": "Yellow skin or eyes (jaundice)"
+      },
+      "explanation": "Food handlers must report vomiting, diarrhea, jaundice, sore throat with fever, infected wounds, and any Big Six diagnosis or exposure. Jaundice can signal Hepatitis A, so the worker is excluded and the regulatory authority is notified.",
+      "distractorExplanations": {
+        "a": "A household member's common cold is not reportable; exposure to a Big Six illness would be.",
+        "b": "Fatigue is not one of the symptoms food handlers must report.",
+        "c": "A sunburn is not a food safety illness; an infected, draining wound would need to be reported."
+      }
+    }
+  }
+}

@@ -102,7 +102,7 @@ function buildDescription(product) {
       "<li><strong>Module 1 · Fundamental rights</strong> — 42 cards (10 of the 40 exam questions)</li>",
       "<li><strong>Module 2 · State &amp; municipal institutions</strong> incl. justice — 104 cards (20 questions)</li>",
       "<li><strong>Module 3 · History &amp; European integration</strong> — 49 cards (10 questions)</li>",
-      "<li>Plus <strong>exam &amp; nationality steps</strong> (17) and <strong>life in Luxembourg</strong> context (25)</li>",
+      "<li>Plus <strong>exam &amp; nationality steps</strong> (19) and <strong>life in Luxembourg</strong> context (25)</li>",
       "<li>Answer + <strong>key-point explanation on every card</strong>; 22 <strong>common-trap</strong> cards (Council of State vs Chamber, 1839 vs 1867, who votes in which election)</li>",
       "<li>Facts checked against the <strong>2023 Constitution</strong>, the 2023 intercultural living-together law and 2026 STATEC figures</li>",
       "</ul>",

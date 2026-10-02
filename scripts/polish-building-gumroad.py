@@ -61,7 +61,16 @@ EXAM_CONTEXT: dict[str, dict[str, str]] = {
             "The Digital SAT is College Board's college admissions exam with two scored sections: "
             "Reading and Writing, and Math (total 400–1600)."
         ),
-        "covers": "This deck drills Reading & Writing and Math skills aligned to Digital SAT section practice.",
+        "covers": (
+            "This deck drills all eight official Digital SAT content domains with original MCQs: "
+            "every card explains the correct answer and why each wrong choice fails."
+        ),
+        "topic_lines": [
+            "Reading and Writing — 88 cards: Information and Ideas, Craft and Structure, "
+            "Expression of Ideas, Standard English Conventions",
+            "Math — 72 cards: Algebra, Advanced Math, Problem-Solving and Data Analysis, "
+            "Geometry and Trigonometry",
+        ],
         "disclaimer": "College Board",
     },
     "pmp-anki-deck": {

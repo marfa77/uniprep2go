@@ -144,7 +144,7 @@ export function MockExamSnapshot({ config }: { config: MockExamConfig }) {
     { label: "Exam body", value: config.examBody },
     {
       label: "Status",
-      value: waitlist ? "Coming soon" : config.status === "live" ? "Live · free" : "Preview",
+      value: waitlist ? "Coming soon" : config.status === "live" ? "Live · first mock free" : "Preview",
     },
   ];
 

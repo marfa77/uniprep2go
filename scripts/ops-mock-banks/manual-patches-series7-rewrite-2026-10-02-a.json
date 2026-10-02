@@ -1,0 +1,292 @@
+{
+  "series-7-readiness-check": {
+    "series-7-readiness-check-s7-f1-001": {
+      "prompt": "At 6:30 p.m. Pacific time, a registered rep in Los Angeles starts cold-calling residential prospects in New York City. None of the prospects has an account with the firm or has given permission to be called. How should the branch manager view these calls?",
+      "options": {
+        "a": "They violate FINRA's rule, because it is 9:30 p.m. where the prospects live",
+        "b": "They are permitted, because it is before 9 p.m. where the rep is calling from",
+        "c": "They are permitted, provided each number was scrubbed against the national do-not-call list",
+        "d": "They become violations once a prospect asks to be put on the firm's do-not-call list"
+      },
+      "correctOptionId": "a",
+      "explanation": "FINRA Rule 3230 bars outbound telemarketing calls to a residence before 8 a.m. or after 9 p.m., measured in the called party's local time. At 6:30 p.m. Pacific it is 9:30 p.m. Eastern, so these cold calls fall outside the window. With no existing relationship or prior permission, no exception applies, and do-not-call scrubbing does not cure a time-of-day violation.",
+      "distractorExplanations": {
+        "b": "Uses the caller's time zone; the 8 a.m.–9 p.m. window is measured at the called party's location, where it is already 9:30 p.m.",
+        "c": "Confuses the do-not-call requirement with the time-of-day restriction; scrubbing the national registry does not make a 9:30 p.m. call permissible.",
+        "d": "Mixes up two separate rules: a firm-specific do-not-call request governs future calls, but these calls already break the calling-hours limit."
+      }
+    },
+    "series-7-readiness-check-s7-f1-002": {
+      "prompt": "A rep at a long-established broker-dealer is hosting a free retirement-planning seminar at a public library. She wrote a slide deck on general income strategies that names no specific fund or product, and she will hand printed copies to about 60 retail attendees. What does FINRA Rule 2210 require before she uses the deck?",
+      "options": {
+        "a": "No review, since seminar materials count as unscripted public appearances",
+        "b": "A principal's review within 30 days after use, as with correspondence",
+        "c": "Approval by a qualified registered principal before first use",
+        "d": "Filing with FINRA at least 10 business days before the seminar date"
+      },
+      "correctOptionId": "c",
+      "explanation": "Written material distributed or made available to more than 25 retail investors within 30 calendar days is a retail communication. Under Rule 2210, an appropriately qualified principal must approve a retail communication before the earlier of its use or filing. A general deck that promotes no investment company or other filing-trigger product does not need to be filed by an established firm, but pre-approval still applies. Her live, unscripted remarks are a public appearance, which is supervised but not pre-approved.",
+      "distractorExplanations": {
+        "a": "Confuses the rep's live, unscripted remarks (a public appearance) with the written slides, which are a retail communication requiring pre-approval.",
+        "b": "Applies the correspondence standard; correspondence goes to 25 or fewer retail investors, and 60 attendees makes this a retail communication.",
+        "d": "Pre-filing 10 business days ahead applies to a new member's first year and certain products, not a general deck at an established firm."
+      }
+    },
+    "series-7-readiness-check-s7-f1-003": {
+      "prompt": "A rep wants the firm's public website to feature a short written quote from a long-time retail client praising the rep's portfolio reviews. The client was not paid anything for the quote. Which disclosure must the firm include with the testimonial?",
+      "options": {
+        "a": "That the client received no compensation for providing the statement",
+        "b": "That it may not reflect other clients' experience or future performance",
+        "c": "That the client's account returns were verified by the firm's outside auditor",
+        "d": "That FINRA reviewed the testimonial and found it fair and balanced"
+      },
+      "correctOptionId": "b",
+      "explanation": "Rule 2210 lets a retail communication use a testimonial about the firm's investment advice or performance only with prominent disclosure that it may not be representative of other customers' experience and is no guarantee of future performance or success. A paid-testimonial statement is added when the client receives more than $100; an unpaid quote needs no compensation statement.",
+      "distractorExplanations": {
+        "a": "Reverses the paid-testimonial rule: a statement about compensation is required when the client is paid more than $100, not when unpaid.",
+        "c": "Invents a verification requirement; Rule 2210 requires disclosures about representativeness and future results, not an audit of returns.",
+        "d": "Implying FINRA approval is itself misleading; FINRA does not approve communications, and the firm's principal performs the review."
+      }
+    },
+    "series-7-readiness-check-s7-f1-004": {
+      "prompt": "During a call about a new bond offering, an existing customer who traded through the firm last month tells the rep, \"Stop calling me with sales pitches.\" How must the firm handle the customer's request?",
+      "options": {
+        "a": "Keep calling, since an existing relationship overrides do-not-call requests",
+        "b": "Stop calling if the customer's number is also on the national registry",
+        "c": "Stop sales calls for 18 months, then resume under the business relationship",
+        "d": "Add the number to its firm-specific do-not-call list and stop sales calls"
+      },
+      "correctOptionId": "d",
+      "explanation": "Under FINRA Rule 3230 and the federal telemarketing rules, a firm must keep its own do-not-call list and honor a request not to receive telemarketing calls within a reasonable time, no later than 30 days. An established business relationship exempts calls to numbers on the national registry, but it cannot override a request made directly to the firm. The firm may still contact the customer about servicing the account, just not to solicit.",
+      "distractorExplanations": {
+        "a": "Confuses the exemption: an established business relationship permits calls to numbers on the national registry, not after a firm-specific request.",
+        "b": "Treats the national registry as the test; a direct request to the firm triggers the firm-specific list whether or not the number is registered nationally.",
+        "c": "Borrows the 18-month established-business-relationship window; a firm-specific do-not-call request does not lapse after 18 months."
+      }
+    },
+    "series-7-readiness-check-s7-f2-001": {
+      "prompt": "A U.S. citizen applying for a new individual brokerage account gives only a P.O. box as his address and says he prefers not to share where he lives. He supplies his name, date of birth, and Social Security number. Under the firm's Customer Identification Program, what should the rep do?",
+      "options": {
+        "a": "Accept the P.O. box, since any valid mailing address meets CIP standards",
+        "b": "Accept the P.O. box once his Social Security number has been verified",
+        "c": "Obtain a residential or business street address before opening the account",
+        "d": "Open the account and file a SAR, since withholding an address is suspicious"
+      },
+      "correctOptionId": "c",
+      "explanation": "CIP rules under the USA PATRIOT Act require the firm to obtain, before opening an account, an individual's name, date of birth, address, and identification number. For an individual, the address must be a residential or business street address; a P.O. box works only as a mailing address. The firm then verifies identity within a reasonable time and should not open the account if required information is withheld.",
+      "distractorExplanations": {
+        "a": "Ignores the street-address requirement; a P.O. box can be a mailing address, but CIP needs a residential or business street address.",
+        "b": "Verifying the SSN satisfies a different CIP data element; it does not replace the required residential or business street address.",
+        "d": "Jumps to a SAR; the first step is obtaining the missing CIP element, and a SAR depends on facts suggesting suspicious activity, not one gap."
+      }
+    },
+    "series-7-readiness-check-s7-f2-002": {
+      "prompt": "The treasurer of a small manufacturing corporation wants to open a margin account to invest the company's excess cash. The firm already has a corporate resolution naming the officers who may trade. Which additional document shows that the corporation is permitted to buy securities on margin?",
+      "options": {
+        "a": "The corporate charter or bylaws authorizing margin purchases",
+        "b": "The company's most recent audited balance sheet and income statement",
+        "c": "A personal guarantee of the margin debt signed by the treasurer",
+        "d": "A trading authorization signed by each of the company's shareholders"
+      },
+      "correctOptionId": "a",
+      "explanation": "A corporate resolution identifies who may act for the corporation, but a margin account also needs evidence that the corporation itself has the power to borrow to buy securities. That authority comes from the corporate charter (articles of incorporation) or bylaws, which the firm keeps on file with the margin agreement.",
+      "distractorExplanations": {
+        "b": "Financial statements show creditworthiness, not legal authority; they cannot establish that the charter permits margin borrowing.",
+        "c": "A personal guarantee covers repayment risk; it does not show that the corporation is legally empowered to borrow on margin.",
+        "d": "Shareholders do not authorize trading; the board acts through the corporate resolution, and the charter or bylaws define corporate powers."
+      }
+    },
+    "series-7-readiness-check-s7-f2-003": {
+      "prompt": "An 81-year-old customer asks to wire $90,000 to an overseas \"friend\" she met online. Suspecting financial exploitation, the firm places a temporary hold on the disbursement under FINRA Rule 2165. What notice must the firm give after placing the hold?",
+      "options": {
+        "a": "Notify the state securities regulator within 15 business days of the hold",
+        "b": "Notify the customer's adult children, whether or not they are on the account",
+        "c": "Notify the overseas recipient that the wire is under internal review",
+        "d": "Within 2 business days, notify authorized parties and the trusted contact"
+      },
+      "correctOptionId": "d",
+      "explanation": "Rule 2165 lets a firm delay a disbursement or transaction for a specified adult (65 or older, or 18+ with a qualifying impairment) when it reasonably believes exploitation is occurring. Within two business days it must notify everyone authorized to transact on the account and the trusted contact person, unless that person is unavailable or suspected of the exploitation. The initial hold runs up to 15 business days and can be extended while the firm investigates.",
+      "distractorExplanations": {
+        "a": "Confuses the 15-business-day length of the initial hold with a notice duty; a regulator referral can extend the hold but is not the required notice.",
+        "b": "Family members get notice only if they are authorized on the account or named as the trusted contact; relationship alone does not qualify.",
+        "c": "Tipping off the suspected recipient defeats the hold's purpose; notice goes to account parties and the trusted contact, not the payee."
+      }
+    },
+    "series-7-readiness-check-s7-f2-004": {
+      "prompt": "Two unrelated business partners own a joint brokerage account as tenants in common, with a 60/40 ownership split. The partner who owns 60% dies. Which statement correctly describes what happens next?",
+      "options": {
+        "a": "Her 60% passes to the surviving partner under the right of survivorship",
+        "b": "Her 60% goes to her estate, and the account is frozen pending estate papers",
+        "c": "Her interest resets to 50%, with the other half going to the surviving partner",
+        "d": "The surviving partner may keep trading the whole account until probate closes"
+      },
+      "correctOptionId": "b",
+      "explanation": "Tenants in common hold fractional interests, which may be unequal, with no right of survivorship. When one tenant dies, her share becomes part of her estate and passes under her will or state intestacy law. The firm freezes the account until it receives documents such as a death certificate and letters testamentary, so the survivor cannot trade the account in the meantime.",
+      "distractorExplanations": {
+        "a": "Describes JTWROS; tenants in common have no right of survivorship, so the deceased's share does not pass to the co-owner.",
+        "c": "Invents an equalization step; TIC interests may be unequal, and the deceased's 60% passes intact to her estate.",
+        "d": "Ignores the freeze on a deceased owner's account; the estate documents must be processed before the account trades again."
+      }
+    },
+    "series-7-readiness-check-s7-f2-005": {
+      "prompt": "A new customer wants to start buying listed call options as soon as possible. Which sequence of steps complies with FINRA's options account rules?",
+      "options": {
+        "a": "Customer signs the options agreement, then receives the ODD, then may trade",
+        "b": "Customer trades, then receives the ODD and principal approval within 15 days",
+        "c": "Customer receives the ODD, a principal approves, then trading starts",
+        "d": "Customer receives the ODD and trades, then a principal approves within 15 days"
+      },
+      "correctOptionId": "c",
+      "explanation": "Under FINRA Rule 2360, the customer must receive the Options Disclosure Document at or before the time the account is approved, and a registered options principal must approve the account before the first options trade. The signed options agreement is due within 15 days after approval; if it is not returned, the customer is limited to closing transactions.",
+      "distractorExplanations": {
+        "a": "Puts the signed agreement first; the agreement may follow approval by up to 15 days, while the ODD is due at or before approval.",
+        "b": "Lets trading precede both the ODD and approval; a principal must approve the account before any opening options transaction.",
+        "d": "Misplaces the 15-day window; it applies to returning the signed agreement after approval, not to approving the account after trading."
+      }
+    },
+    "series-7-readiness-check-s7-f2-006": {
+      "prompt": "A customer calls her rep: \"Buy 500 shares of XYZ for me sometime today; you decide the exact time and price.\" The account has no written discretionary authorization. How may the rep handle the order?",
+      "options": {
+        "a": "Accept it; time-and-price discretion for the day needs no written authority",
+        "b": "Decline it until the customer signs a written discretionary authorization",
+        "c": "Accept it, and switch to a similar stock if XYZ looks weak later in the day",
+        "d": "Accept it as a good-till-canceled order that stays open until she revokes it"
+      },
+      "correctOptionId": "a",
+      "explanation": "When the customer specifies the action, the security, and the quantity, the rep is choosing only time and price, which is not discretion under FINRA Rule 3260. No written authorization is needed, but time-and-price discretion is limited to the day it is granted unless the customer gives a signed, dated written instruction otherwise. Choosing the security, quantity, or action would require written discretionary authority.",
+      "distractorExplanations": {
+        "b": "Treats time and price as full discretion; written authority is needed when the rep chooses the security, quantity, or buy/sell action.",
+        "c": "Choosing a different stock is discretion over the asset, which requires written authorization the account does not have.",
+        "d": "Time-and-price discretion expires at the end of the day granted unless the customer signs a dated written instruction extending it."
+      }
+    },
+    "series-7-readiness-check-s7-f4-001": {
+      "prompt": "A customer holds XYZ, now trading at 47, and enters a sell stop order at 45 to protect her position. The next trades print at 46.10, 45.05, 44.90, and 45.20. When is the order triggered, and what does it become?",
+      "options": {
+        "a": "At 45.05, becoming a limit order to sell at 45",
+        "b": "At 45.05, becoming a market order to sell",
+        "c": "At 44.90, becoming a limit order to sell at 45",
+        "d": "At 44.90, becoming a market order to sell"
+      },
+      "correctOptionId": "d",
+      "explanation": "A sell stop sits below the market and is triggered when a trade occurs at or below the stop price. The 45.05 print is still above 45, so the first trigger is the 44.90 trade. Once triggered, a plain stop becomes a market order and executes at the next available price, which may be below 45; a stop-limit order is the type that becomes a limit order.",
+      "distractorExplanations": {
+        "a": "Two errors: 45.05 is above the stop price, and a plain stop becomes a market order, not a limit order.",
+        "b": "Triggers too early; a sell stop needs a trade at or below 45, and the 45.05 print has not reached the stop price.",
+        "c": "Right trigger but wrong result; becoming a limit order at 45 describes a sell stop-limit order, not a plain stop."
+      }
+    },
+    "series-7-readiness-check-s7-f4-002": {
+      "prompt": "A margin customer asks to sell short 2,000 shares of a thinly traded small-cap stock that he does not own. Before the firm accepts and executes the order, what does Regulation SHO require?",
+      "options": {
+        "a": "Confirmation that the customer held the stock long within the past 30 days",
+        "b": "Reasonable grounds to believe the shares can be borrowed, documented by the firm",
+        "c": "A trade at a price above the last sale, under the short-sale uptick rule",
+        "d": "Full cash payment of the sale value deposited before the order is entered"
+      },
+      "correctOptionId": "b",
+      "explanation": "Rule 203 of Regulation SHO is the locate requirement: before accepting or effecting a short sale in an equity security, a broker-dealer must borrow the shares, arrange to borrow them, or have reasonable grounds to believe they can be borrowed for delivery by settlement, and it must document the locate. Thinly traded names are where locates most often fail.",
+      "distractorExplanations": {
+        "a": "Invents a prior-ownership test; a short sale is by definition a sale of shares the customer does not own, and no holding period applies.",
+        "c": "Cites the tick test repealed in 2007; Rule 201 now restricts short-sale prices only after a 10% intraday decline triggers the circuit breaker.",
+        "d": "Misstates margin; Reg T requires a short sale to be backed by 150% of its value, with the proceeds counting and the customer depositing 50%."
+      }
+    },
+    "series-7-readiness-check-s7-f4-003": {
+      "prompt": "In a cash account, a customer buys 300 shares of ABC on Monday and sells them on Tuesday at a profit. He sends no payment for the purchase, planning to let the sale proceeds cover it. What is the consequence under Regulation T?",
+      "options": {
+        "a": "The purchase is canceled and rebilled at Tuesday's closing price",
+        "b": "The firm charges margin interest on the purchase from trade date to sale date",
+        "c": "The account is frozen for 90 days, requiring cash on hand before any purchase",
+        "d": "No restriction applies, because sale proceeds arrive before the Reg T payment date"
+      },
+      "correctOptionId": "c",
+      "explanation": "Selling a security in a cash account before paying for it, and using the sale proceeds as payment, is free riding. Regulation T's remedy is a 90-day freeze: for 90 calendar days the customer must have full payment in the account before the firm executes any purchase. The firm cannot simply wait for the sale proceeds, even though they settle before the payment deadline.",
+      "distractorExplanations": {
+        "a": "Cancel and rebill is the remedy for an operational trade error, not for a customer who sold before paying for the purchase.",
+        "b": "A cash account extends no margin credit to charge interest on; the Reg T consequence for free riding is the 90-day freeze.",
+        "d": "Describes the free-riding pattern itself: paying for a purchase with the proceeds of selling it is exactly what triggers the 90-day freeze."
+      }
+    },
+    "series-7-readiness-check-s7-f4-004": {
+      "prompt": "A firm sells a retail customer 200 shares of a thinly traded OTC stock from its own inventory at a 6% markup over the prevailing market price. The confirmation discloses the firm's principal capacity. How should compliance evaluate the markup under FINRA's 5% policy?",
+      "options": {
+        "a": "It may be fair, since 5% is a guideline weighed with factors such as liquidity",
+        "b": "It violates FINRA's rule capping markups at 5% over the dealer's own cost",
+        "c": "It is fair because it was disclosed, whatever its size relative to the market",
+        "d": "It falls outside the policy, which applies to commissions rather than markups"
+      },
+      "correctOptionId": "a",
+      "explanation": "FINRA's 5% markup policy is a guideline, not a hard limit. Fairness under Rule 2121 depends on factors such as the type of security, its availability and liquidity, price, dollar amount, services provided, and the firm's pattern of markups, measured from the prevailing market price rather than the firm's cost. A 6% markup on an illiquid stock can be fair, while 5% on a liquid stock may be excessive.",
+      "distractorExplanations": {
+        "b": "Two errors: the 5% figure is a guideline rather than a cap, and markups are measured from the prevailing market price, not the dealer's cost.",
+        "c": "Disclosure is one factor, but it cannot make an excessive markup fair; the price still has to be reasonable in light of the market.",
+        "d": "The 5% policy covers commissions, markups, and markdowns, including riskless principal and proceeds transactions."
+      }
+    },
+    "series-7-readiness-check-s7-f4-005": {
+      "prompt": "A firm fills a customer's market order to buy 400 shares of a NYSE-listed stock, acting as agent and buying from another broker-dealer. Which confirmation requirement applies to this trade?",
+      "options": {
+        "a": "Send it within 15 days after settlement, showing the agency capacity",
+        "b": "Disclose the firm's markup over the prevailing market price",
+        "c": "Omit the commission, because agency charges are itemized on the monthly account statement",
+        "d": "Send it by settlement, showing the agency capacity and the commission charged"
+      },
+      "correctOptionId": "d",
+      "explanation": "SEC Rule 10b-10 and FINRA Rule 2232 require a written confirmation at or before completion of the transaction, which is settlement. When the firm acts as agent, the confirmation must disclose its agency capacity and the commission charged, along with the trade date, security, quantity, and price; the time of execution and the contra party are available on request.",
+      "distractorExplanations": {
+        "a": "Pushes the deadline past settlement; a confirmation is due at or before completion of the transaction, not 15 days after.",
+        "b": "Markup disclosure fits a principal trade; an agency trade discloses the commission the customer pays, not a dealer markup.",
+        "c": "The commission must appear on the confirmation itself; the monthly statement does not substitute for trade-by-trade disclosure."
+      }
+    },
+    "series-7-readiness-check-s7-f4-006": {
+      "prompt": "A rep mistakenly books a customer's filled market order to buy 1,000 shares into a different customer's account. The error is caught the next morning, after the stock has fallen. How should the firm correct it?",
+      "options": {
+        "a": "Leave the shares in the wrong account and ask that customer to ratify the trade",
+        "b": "Cancel and rebill to the ordering customer at the original price, with principal approval",
+        "c": "Cancel it and rebill the ordering customer at today's lower price, since the stock dropped",
+        "d": "Move the position to the rep's own account and settle the loss with the customers directly"
+      },
+      "correctOptionId": "b",
+      "explanation": "A trade booked to the wrong account is fixed by cancel and rebill: the erroneous entry is canceled, the trade is rebooked to the customer who actually placed the order at the original execution price, and a principal approves and documents the correction. The customer who never ordered the trade bears no cost, and any loss caused by the error itself is absorbed by the firm.",
+      "distractorExplanations": {
+        "a": "Asking an uninvolved customer to accept a trade he never ordered creates an unauthorized trade rather than correcting the error.",
+        "c": "Rebilling at a later price misstates the execution; the customer who placed the order receives the original fill price.",
+        "d": "Reps may not take errors into personal accounts or settle losses privately; corrections go through the firm with principal approval."
+      }
+    },
+    "series-7-readiness-check-s7-f4-007": {
+      "prompt": "A customer holds one long XYZ 60 call, an American-style equity option. On Wednesday, with XYZ trading at 68, he exercises it. When does the resulting stock purchase settle, and what does he pay?",
+      "options": {
+        "a": "Thursday, paying $68 per share",
+        "b": "Friday, paying $60 per share",
+        "c": "Thursday, paying $60 per share",
+        "d": "Friday, receiving $800 in cash per contract"
+      },
+      "correctOptionId": "c",
+      "explanation": "Exercising an equity call means buying 100 shares at the strike price, $60 per share or $6,000 per contract, regardless of the $68 market price. Since the industry moved to T+1 in May 2024, stock delivered on an equity option exercise settles one business day after exercise, so a Wednesday exercise settles Thursday.",
+      "distractorExplanations": {
+        "a": "Uses the market price; the exercising call holder pays the $60 strike, which is why the call has $8 of intrinsic value here.",
+        "b": "Applies the old T+2 cycle; equity option exercises now settle T+1, so a Wednesday exercise settles Thursday.",
+        "d": "Describes cash settlement, which applies to index options; an equity option exercise delivers 100 shares of stock at the strike."
+      }
+    },
+    "series-7-readiness-check-s7-f4-008": {
+      "prompt": "A retail customer asks to start entering orders in her online broker's after-hours session, which runs until 8 p.m. Eastern. Under FINRA Rule 2265, what must the firm do before permitting her to trade in that session?",
+      "options": {
+        "a": "Furnish her a risk disclosure statement about extended hours trading",
+        "b": "Obtain a principal's written approval of each after-hours order she places",
+        "c": "Convert her orders to market orders so each one is certain to execute",
+        "d": "Have her sign a margin agreement, since late-session trades settle on credit"
+      },
+      "correctOptionId": "a",
+      "explanation": "FINRA Rule 2265 bars a firm from letting a customer trade in extended hours unless it has first furnished a risk disclosure statement. The statement covers risks such as lower liquidity, higher volatility, changing prices, unlinked markets, news announcements, and wider quote spreads. Because of those risks, most firms accept only limit orders in these sessions.",
+      "distractorExplanations": {
+        "b": "Order-by-order principal approval is not the requirement; the rule is a risk disclosure delivered before extended-hours trading begins.",
+        "c": "Gets it backward: thin liquidity makes market orders dangerous after hours, and firms typically accept limit orders in these sessions.",
+        "d": "Extended-hours trades settle T+1 like regular-session trades; a cash account can trade after hours without a margin agreement."
+      }
+    }
+  }
+}

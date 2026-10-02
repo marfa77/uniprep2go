@@ -85,7 +85,7 @@ export default async function BuildingCertificationHubPage() {
     {
       question: "Which building certifications have free practice tests?",
       answer:
-        "UniPrep2Go lists free timed readiness checks for EPA 608, LEED Green Associate, LEED AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, BMS/BAS, and related pathways — each linked from this hub to its mock page and Anki deck.",
+        "UniPrep2Go lists timed readiness checks for EPA 608, LEED Green Associate, LEED AP BD+C, WELL AP, NEBOSH, CFPS, MRICS, CDCP, CEM, BMS/BAS, and related pathways — each linked from this hub to its mock page and Anki deck. Your first mock is free (any exam, either mode); after that, $5 unlocks 5 more attempts.",
     },
     {
       question: "Are these official EPA, USGBC, or RICS exams?",

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Export ready ops banks to src/data/mock-exams when they differ from git.
 
-Skips civic / naturalization. Usage:
-  python3 scripts/ops-mock-banks/export-ready-to-git.py [--write] [slug ...]
+Skips civic / naturalization unless --include-civic and the slug is named. Usage:
+  python3 scripts/ops-mock-banks/export-ready-to-git.py [--write] [--include-civic] [slug ...]
 If no slugs given, exports every ready non-civic bank listed in bank-meta.json
 plus any extra slugs passed in.
 """
@@ -129,6 +129,7 @@ def write_bank(path: Path, questions: list[dict]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--write", action="store_true")
+    parser.add_argument("--include-civic", action="store_true", help="export civic slugs named on the command line")
     parser.add_argument("slugs", nargs="*")
     args = parser.parse_args()
     load_env()
@@ -136,7 +137,7 @@ def main() -> None:
     slugs = args.slugs or sorted(meta)
     rows = []
     for slug in slugs:
-        if is_civic(slug, meta):
+        if is_civic(slug, meta) and not (args.include_civic and args.slugs):
             rows.append({"slug": slug, "status": "skip-civic"})
             continue
         ops = fetch_bank(slug)

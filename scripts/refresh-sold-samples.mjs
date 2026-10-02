@@ -1,16 +1,31 @@
 #!/usr/bin/env node
 /**
- * Pick the strongest 3 selling samples for every sold SKU except language-exam decks.
+ * Pick 3 selling samples per sold SKU (except language-exam decks): hard quality gate ->
+ * top-quality pool -> seeded random -> topic/wording diversity (src/lib/sample-pick.ts).
  * Writes src/data/sold-samples.json and updates civic catalog sample Q&As.
+ *
+ * Usage:
+ *   node scripts/refresh-sold-samples.mjs                 # all SKUs
+ *   node scripts/refresh-sold-samples.mjs --slug sie-exam-anki-deck [--slug ...]
+ *   ... --salt 2   # reviewer re-roll when a pick is weak (same pool, new seed)
+ *
+ * Decks with real /samples/ screenshots keep their screenshot text on the site; their
+ * picks here are the candidates to capture next (see mock-bank-audit-standard.mdc).
  */
-import { createRequire } from "node:module";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { pickSellingSamples } from "../src/lib/sample-pick.ts";
 
-const require = createRequire(import.meta.url);
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ANKI_OUT = join(dirname(root), "Anki Generator", "out");
+const FINANCE_CSV = join(dirname(root), "Anki Generator", "internal_deck_generator", "Finance");
+
+const argv = process.argv.slice(2);
+const onlySlugs = new Set(argv.flatMap((arg, i) => (arg === "--slug" && argv[i + 1] ? [argv[i + 1]] : [])));
+const wanted = (slug) => onlySlugs.size === 0 || onlySlugs.has(slug);
+const saltIndex = argv.indexOf("--salt");
+const salt = saltIndex >= 0 ? argv[saltIndex + 1] || "" : "";
 
 const LANGUAGE_EXAM = new Set([
   "ciple-a2-european-portuguese-anki-deck",
@@ -79,15 +94,6 @@ function tokens(text) {
   );
 }
 
-function jaccard(a, b) {
-  const A = tokens(a);
-  const B = tokens(b);
-  if (!A.size || !B.size) return 0;
-  let inter = 0;
-  for (const w of A) if (B.has(w)) inter += 1;
-  return inter / (A.size + B.size - inter);
-}
-
 function overlapHint(text, hint) {
   const H = tokens(hint);
   const T = tokens(text);
@@ -131,22 +137,14 @@ function scoreMcq(q, a, allOptionText, hint) {
   return score;
 }
 
-function diversify(ranked, count = 3) {
-  const picks = [];
-  const usedTopics = new Set();
-  for (const row of ranked) {
-    if (picks.length >= count) break;
-    if (picks.some((p) => jaccard(p.q, row.q) > 0.45)) continue;
-    if (row.topic && usedTopics.has(row.topic) && picks.length < count - 1) continue;
-    picks.push({ q: row.q, a: row.a });
-    if (row.topic) usedTopics.add(row.topic);
-  }
-  for (const row of ranked) {
-    if (picks.length >= count) break;
-    if (picks.some((p) => p.q === row.q || jaccard(p.q, row.q) > 0.45)) continue;
-    picks.push({ q: row.q, a: row.a });
-  }
-  return picks.slice(0, count);
+function diversify(rows, seed, count = 3) {
+  return pickSellingSamples(rows, {
+    count,
+    seed: salt ? `${seed}:${salt}` : seed,
+    score: (row) => row.score,
+    text: (row) => row.q,
+    topic: (row) => row.topic || "",
+  }).map((row) => ({ q: row.q, a: row.a }));
 }
 
 function parseCsv(text) {
@@ -181,22 +179,53 @@ function parseCsv(text) {
   return rows;
 }
 
-function pickCivicFromCsv(folder, hint) {
+function pickCivicFromCsv(slug, folder, hint) {
   const path = join(ANKI_OUT, folder, "source.csv");
   if (!existsSync(path)) return [];
   const rows = parseCsv(readFileSync(path, "utf8")).slice(1);
-  const ranked = rows
-    .map((cells) => ({
-      q: sanitizeStem(cells[0]),
-      a: clean(cells[1]),
-      score: scoreCivic(cells[0], cells[1], hint),
-    }))
-    .filter((row) => row.score > 0)
-    .sort((a, b) => b.score - a.score);
-  return diversify(ranked);
+  const ranked = rows.map((cells) => ({
+    q: sanitizeStem(cells[0]),
+    a: clean(cells[1]),
+    score: scoreCivic(cells[0], cells[1], hint),
+  }));
+  return diversify(ranked, slug);
 }
 
-function pickFromMockBank(file, hint) {
+/** Authored FINRA deck CSVs: real deck cards, "(Drill N)" padding copies excluded. */
+function pickFromAuthoredDeckCsv(slug, file) {
+  const path = join(FINANCE_CSV, file);
+  if (!existsSync(path)) return [];
+  const [header, ...rows] = parseCsv(readFileSync(path, "utf8"));
+  const col = (name) => header.indexOf(name);
+  const [iSection, iFront, iBack, iFormula, iExample, iMistake] = [
+    "Section",
+    "Front (Question)",
+    "Back (Answer)",
+    "Formula (LaTeX)",
+    "Example",
+    "Common Mistake",
+  ].map(col);
+  const ranked = rows
+    .filter((cells) => !/\(Drill \d+\)/i.test(cells[iFront] || ""))
+    .map((cells) => {
+      const q = clean(cells[iFront]);
+      const a = clean(cells[iBack]);
+      if (q.length < 20 || a.length < 30 || a.length > 220) return { q, a, score: 0 };
+      let score = 10;
+      if (/^(what is|what are|what does)\b/i.test(q)) score -= 6;
+      if (/\b(how|why|when|differ|breakeven|compare|versus|vs\.?)\b/i.test(q)) score += 6;
+      if (clean(cells[iMistake])) score += 3;
+      if (clean(cells[iExample])) score += 2;
+      if (clean(cells[iFormula])) score += 3;
+      if (/\d/.test(a)) score += 3;
+      if (/\b(can affect|matters?|is important|various|generally)\b/i.test(a)) score -= 4;
+      if (/\b(matter|important)\??$/i.test(q)) score -= 5;
+      return { q, a, topic: clean(cells[iSection]), score };
+    });
+  return diversify(ranked, slug);
+}
+
+function pickFromMockBank(slug, file, hint) {
   const path = join(root, "src/data/mock-exams", file);
   if (!existsSync(path)) return [];
   const questions = JSON.parse(readFileSync(path, "utf8"));
@@ -215,10 +244,8 @@ function pickFromMockBank(file, hint) {
           hint,
         ),
       };
-    })
-    .filter((row) => row.score > 0)
-    .sort((a, b) => b.score - a.score);
-  return diversify(ranked);
+    });
+  return diversify(ranked, slug);
 }
 
 function loadJson(path, fallback) {
@@ -231,23 +258,36 @@ const wave = loadJson(join(root, "src/data/wave-deck-specs.json"), {});
 const building = loadJson(join(root, "src/data/building-deck-specs.json"), {});
 const immigration = loadJson(join(root, "src/data/prep2go-immigration-samples.json"), {});
 
-const out = {};
+const soldPath = join(root, "src/data/sold-samples.json");
+const out = onlySlugs.size ? loadJson(soldPath, {}) : {};
+const done = new Set();
 let civicUpdated = 0;
 
+function keep(slug, picks) {
+  if (done.has(slug) || !wanted(slug) || picks.length !== 3) return;
+  out[slug] = picks;
+  done.add(slug);
+}
+
 for (const [slug, product] of Object.entries(civic.products || {})) {
-  const picks = pickCivicFromCsv(product.folder, `${product.exam} ${product.name}`);
-  if (picks.length === 3) {
-    out[slug] = picks;
-  }
+  if (!wanted(slug)) continue;
+  keep(slug, pickCivicFromCsv(slug, product.folder, `${product.exam} ${product.name}`));
+}
+
+const authoredDeckCsv = [
+  ["sie-exam-anki-deck", "sie_300_authored.csv"],
+  ["series-7-anki-deck", "series7_300_authored.csv"],
+  ["series-63-anki-deck", "series63_250_authored.csv"],
+  ["frm-part-1-anki-deck", "frm_part1_v2_authored.csv"],
+];
+for (const [slug, file] of authoredDeckCsv) {
+  if (wanted(slug)) keep(slug, pickFromAuthoredDeckCsv(slug, file));
 }
 
 for (const spec of [...Object.values(wave), ...Object.values(building)]) {
   const slug = spec.deckSlug;
-  if (!slug || LANGUAGE_EXAM.has(slug) || out[slug]) continue;
-  const mockSlug = spec.mockSlug;
-  if (!mockSlug) continue;
-  const picks = pickFromMockBank(`${mockSlug}.json`, `${spec.deckLabel || ""} ${spec.deckName || ""} ${slug}`);
-  if (picks.length === 3) out[slug] = picks;
+  if (!slug || LANGUAGE_EXAM.has(slug) || done.has(slug) || !wanted(slug) || !spec.mockSlug) continue;
+  keep(slug, pickFromMockBank(slug, `${spec.mockSlug}.json`, `${spec.deckLabel || ""} ${spec.deckName || ""} ${slug}`));
 }
 
 const extraMocks = [
@@ -282,36 +322,32 @@ const extraMocks = [
 ];
 
 for (const [slug, file, hint] of extraMocks) {
-  if (out[slug]) continue;
-  const picks = pickFromMockBank(file, hint);
-  if (picks.length === 3) out[slug] = picks;
+  if (done.has(slug) || !wanted(slug)) continue;
+  keep(slug, pickFromMockBank(slug, file, hint));
 }
 
 for (const [slug, cards] of Object.entries(immigration)) {
-  if (out[slug] || !Array.isArray(cards)) continue;
-  const ranked = cards
-    .map((card) => ({
-      q: sanitizeStem(card.question),
-      a: clean(card.answer).slice(0, 180),
-      score: scoreCivic(card.question, String(card.answer || "").slice(0, 180), slug),
-    }))
-    .filter((row) => row.score > 0)
-    .sort((a, b) => b.score - a.score);
-  const picks = diversify(ranked);
-  if (picks.length === 3) out[slug] = picks;
+  if (done.has(slug) || !wanted(slug) || !Array.isArray(cards)) continue;
+  const ranked = cards.map((card) => ({
+    q: sanitizeStem(card.question),
+    a: clean(card.answer).slice(0, 180),
+    score: scoreCivic(card.question, String(card.answer || "").slice(0, 180), slug),
+  }));
+  keep(slug, diversify(ranked, slug));
 }
 
 for (const [slug, product] of Object.entries(civic.products || {})) {
-  if (out[slug]?.length === 3) {
+  if (done.has(slug)) {
     product.samples = out[slug];
     civicUpdated += 1;
   }
 }
 
-writeFileSync(join(root, "src/data/sold-samples.json"), `${JSON.stringify(out, null, 2)}\n`);
-writeFileSync(join(root, "src/data/gumroad/civic-anki-decks.json"), `${JSON.stringify(civic, null, 2)}\n`);
+writeFileSync(soldPath, `${JSON.stringify(out, null, 2)}\n`);
+if (civicUpdated) {
+  writeFileSync(join(root, "src/data/gumroad/civic-anki-decks.json"), `${JSON.stringify(civic, null, 2)}\n`);
+}
 
-const changed = Object.entries(out).map(([slug, picks]) => `${slug}\n  1. ${picks[0].q}\n  2. ${picks[1].q}\n  3. ${picks[2].q}`);
-console.log(`sold-samples ${Object.keys(out).length} slugs; civic catalogs updated ${civicUpdated}`);
-console.log(changed.slice(0, 12).join("\n"));
-console.log("...");
+const changed = [...done].map((slug) => `${slug}\n${out[slug].map((p, i) => `  ${i + 1}. ${p.q}\n     -> ${p.a}`).join("\n")}`);
+console.log(`sold-samples refreshed ${done.size} slug(s); total ${Object.keys(out).length}; civic catalogs updated ${civicUpdated}`);
+console.log(changed.slice(0, onlySlugs.size || 12).join("\n"));

@@ -6,9 +6,11 @@ import {
 } from "./pricing";
 
 describe("mock pricing policy", () => {
-  it("positions mocks as a free lead magnet into Anki decks", () => {
-    expect(mockFreeAccessPriceLabel.toLowerCase()).toContain("free");
-    expect(mockFreeAccessNotice.toLowerCase()).toContain("free timed mocks");
+  it("states one free mock, then the $5 / 5-attempt Mock Pass", () => {
+    expect(mockFreeAccessPriceLabel).toBe("First mock free, then $5 for 5 attempts");
+    expect(mockFreeAccessNotice).toMatch(/first UniPrep2Go mock is free — any exam, Exam or Learn mode/);
+    expect(mockFreeAccessNotice).toMatch(/\$5 UniPrep2Go Mock Pass .* unlocks 5 more attempts/);
+    expect(mockFreeAccessNotice.toLowerCase()).not.toContain("free timed mocks");
     expect(mockFreeAccessNotice).toMatch(/Anki deck/i);
     expect(mockFreeAccessNotice.toLowerCase()).not.toContain("first 20");
     expect(mockFreeAccessNotice.toLowerCase()).not.toContain("validate demand");

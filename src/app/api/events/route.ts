@@ -6,7 +6,8 @@ import { recordFunnelEvent } from "@/lib/funnel-store";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import {
   notifyCheckoutClick,
-  notifyLearnCheckoutClick,
+  notifyMockPassCheckoutClick,
+  notifyMockPassRedeem,
   notifyMockStarted,
 } from "@/lib/telegram-notify";
 
@@ -82,20 +83,23 @@ export async function POST(request: Request) {
       }
     }
 
-    if (event.name === "learn_checkout_click") {
+    if (event.name === "mock_pass_checkout_click" || event.name === "mock_pass_redeem_success") {
       const mockSlug = event.source?.match(/^mock:([^:]+)/)?.[1];
       const mock = mockSlug ? getMockExamConfig(mockSlug) : undefined;
 
       try {
-        const sent = await notifyLearnCheckoutClick(event, mock);
+        const sent =
+          event.name === "mock_pass_checkout_click"
+            ? await notifyMockPassCheckoutClick(event, mock)
+            : await notifyMockPassRedeem(event, mock);
         if (!sent) {
-          console.warn("[telegram_notify] learn checkout alert not sent", {
-            deckSlug: event.deckSlug,
+          console.warn("[telegram_notify] mock pass alert not sent", {
+            name: event.name,
             source: event.source,
           });
         }
       } catch (error) {
-        console.error("[telegram_notify] learn checkout alert failed", error);
+        console.error("[telegram_notify] mock pass alert failed", error);
       }
     }
 

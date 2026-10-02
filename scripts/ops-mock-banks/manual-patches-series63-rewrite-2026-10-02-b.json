@@ -1,0 +1,344 @@
+{
+  "series-63-readiness-check": {
+    "series-63-readiness-check-s63-comm-001": {
+      "topicId": "s63-comm",
+      "prompt": "An agent selling a newly registered limited partnership offering tells a prospect, \"The state Administrator reviewed this deal and approved it, so you know it's sound.\" The registration is effective. How does the Uniform Securities Act treat this statement?",
+      "options": {
+        "a": "Permitted, because an effective registration means the Administrator has reviewed the offering's merits",
+        "b": "Prohibited; the agent may say the offering is registered but may not imply the Administrator approved it",
+        "c": "Permitted, provided the prospect also receives a prospectus before the order is accepted",
+        "d": "Prohibited unless the agent first obtains the Administrator's written consent to describe the outcome of its review"
+      },
+      "correctOptionId": "b",
+      "explanation": "Under the Uniform Securities Act it is unlawful to represent that the Administrator has passed on the merits, truth, or accuracy of a registration statement, or has recommended or approved a security. An agent may truthfully state that a security (or the agent) is registered, but registration is not an endorsement.",
+      "distractorExplanations": {
+        "a": "Confuses effectiveness with approval: registration means filing requirements were met, not that the Administrator vouches for the merits.",
+        "c": "Prospectus delivery does not cure a false claim of regulatory approval; the misrepresentation itself is the violation.",
+        "d": "No consent procedure exists; the Administrator cannot authorize an agent to imply approval, which is unlawful in itself."
+      }
+    },
+    "series-63-readiness-check-s63-comm-002": {
+      "topicId": "s63-comm",
+      "prompt": "A 47-year-old customer opening an individual cash account at a FINRA member firm declines to name a trusted contact person. Under FINRA Rule 4512, how should the agent proceed?",
+      "options": {
+        "a": "Hold the account opening until the customer names a trusted contact, because the rule requires one",
+        "b": "Skip the request, because trusted contact information is required for customers age 65 and older",
+        "c": "List the customer's spouse as the default trusted contact, since one must appear on each account record",
+        "d": "Open the account; the rule requires a reasonable effort to obtain the name, not the customer's agreement"
+      },
+      "correctOptionId": "d",
+      "explanation": "FINRA Rule 4512 requires a member to make reasonable efforts to obtain the name and contact information of a trusted contact person (age 18 or older) for each non-institutional customer account. A refusal does not prevent opening the account; the firm documents the attempt. The account record must also show the signature of the partner, officer, or manager who accepts the account; the customer's signature is not required on the new account form.",
+      "distractorExplanations": {
+        "a": "Treats the trusted contact as a mandatory field; the rule demands a reasonable attempt, and a refusal does not block the account.",
+        "b": "Confuses Rule 4512 with the Rule 2165 'specified adult' (65+) concept; the trusted contact request applies to adult customers of any age.",
+        "c": "A firm cannot designate a trusted contact on the customer's behalf; the person must be named voluntarily by the customer."
+      }
+    },
+    "series-63-readiness-check-s63-comm-003": {
+      "topicId": "s63-comm",
+      "prompt": "A new customer signs the credit agreement and hypothecation agreement for a margin account but refuses to sign the loan consent, then buys $30,000 of marginable stock. What is the result under Regulation T and standard margin documentation?",
+      "options": {
+        "a": "The purchase may proceed, and the customer must deposit $15,000 to meet the initial requirement",
+        "b": "The purchase is blocked until the loan consent is signed, because margin accounts need every document signed",
+        "c": "The purchase may proceed, and the customer must deposit $7,500 to meet the initial requirement",
+        "d": "The purchase may proceed, and the customer must deposit $2,000, the minimum equity required"
+      },
+      "correctOptionId": "a",
+      "explanation": "A margin account requires a signed credit agreement (loan terms and interest) and a hypothecation agreement (pledging securities as collateral). The loan consent, which lets the firm lend customer securities, is optional. Regulation T sets initial margin at 50% of the purchase price, so a $30,000 purchase requires $15,000; the FINRA Rule 4210 $2,000 minimum equity is already exceeded.",
+      "distractorExplanations": {
+        "b": "The loan consent is optional; refusing to let the firm lend securities does not prevent opening or using a margin account.",
+        "c": "Uses 25%, the FINRA maintenance minimum for long positions, instead of the 50% Regulation T initial requirement.",
+        "d": "The $2,000 FINRA minimum governs only when it exceeds the Reg T amount; here 50% of $30,000 is far larger."
+      }
+    },
+    "series-63-readiness-check-s63-comm-004": {
+      "topicId": "s63-comm",
+      "prompt": "A registered options principal approves a customer's account for options trading on May 1, after the agent delivered the Options Disclosure Document. The customer trades on May 3 but has not yet returned the signed options agreement. Under FINRA Rule 2360, what is required?",
+      "options": {
+        "a": "The May 3 trade must be canceled, because the signed agreement is due before any option trade",
+        "b": "Nothing further, because delivery of the ODD replaces the need for a signed options agreement",
+        "c": "The customer must return the signed agreement within 15 days after approval to keep opening positions",
+        "d": "The agent must obtain the signed agreement within 30 days of the first trade, or the account is restricted"
+      },
+      "correctOptionId": "c",
+      "explanation": "FINRA Rule 2360 requires the ODD to be delivered at or before the time the account is approved for options, and approval must come from a registered options principal. The customer's signed agreement to abide by position and exercise limits is due within 15 days after approval; if it is not received, the firm limits the account to closing transactions.",
+      "distractorExplanations": {
+        "a": "Trading may begin once the account is approved; the rule gives the customer 15 days after approval to return the signed agreement.",
+        "b": "The ODD is a risk disclosure, not a contract; delivering it does not satisfy the separate signed-agreement requirement.",
+        "d": "Uses the wrong period and start date: the deadline is 15 days measured from account approval, not 30 days from the first trade."
+      }
+    },
+    "series-63-readiness-check-s63-comm-005": {
+      "topicId": "s63-comm",
+      "prompt": "A customer buys 1 XYZ Jun 60 put for a premium of 8 when XYZ is trading at 54. What is the put's intrinsic value per contract (100 shares) at the time of purchase?",
+      "options": {
+        "a": "$0",
+        "b": "$200",
+        "c": "$600",
+        "d": "$800"
+      },
+      "correctOptionId": "c",
+      "explanation": "A put is in the money when the market price is below the strike price. Intrinsic value = strike - market = 60 - 54 = 6 points, or $600 per 100-share contract. The remaining 2 points of the 8-point premium ($200) are time value.",
+      "distractorExplanations": {
+        "a": "Treats the put like a call; a put is in the money when the stock is below the strike, as it is here (54 < 60).",
+        "b": "This is the time value (premium of 8 minus intrinsic value of 6 = 2 points), not the intrinsic value.",
+        "d": "This is the full premium paid; premium equals intrinsic value plus time value, so it overstates intrinsic value."
+      }
+    },
+    "series-63-readiness-check-s63-comm-006": {
+      "topicId": "s63-comm",
+      "prompt": "Over a two-week period, an agent emails the same market-outlook letter, which recommends buying a utility stock, to 40 retail customers. How does FINRA Rule 2210 classify the letter, and what approval applies?",
+      "options": {
+        "a": "Retail communication; a registered principal must approve it before it is sent",
+        "b": "Correspondence; it is reviewed under the firm's supervisory procedures after it is sent",
+        "c": "Institutional communication; no principal approval is needed because it goes by email",
+        "d": "Retail communication; it must be filed with FINRA at least 10 business days before first use"
+      },
+      "correctOptionId": "a",
+      "explanation": "Under FINRA Rule 2210, a written communication distributed or made available to more than 25 retail investors within any 30-calendar-day period is a retail communication, which generally needs approval by a qualified registered principal before use. The same letter sent to 25 or fewer retail investors in 30 days would be correspondence, which is supervised but not pre-approved.",
+      "distractorExplanations": {
+        "b": "Correspondence is limited to 25 or fewer retail investors within 30 calendar days; 40 recipients in two weeks crosses that line.",
+        "c": "Institutional communications go to institutional investors; the delivery medium (email) does not change a retail audience.",
+        "d": "Filing 10 business days before use applies to certain retail communications, such as a new member's in its first year, not to this letter."
+      }
+    },
+    "series-63-readiness-check-s63-comm-007": {
+      "topicId": "s63-comm",
+      "prompt": "An agent updates the 'About' section of her business LinkedIn profile to describe the firm's services, and later replies to questions in a live LinkedIn discussion thread. Under FINRA social media guidance, which content needs principal approval before posting?",
+      "options": {
+        "a": "Both the profile update and each reply, since every social media post is a retail communication",
+        "b": "Neither, because social media content is supervised through post-use sampling by compliance",
+        "c": "The live replies, while the profile update is treated as correspondence reviewed after posting",
+        "d": "The profile update, while the live replies are supervised like correspondence after posting"
+      },
+      "correctOptionId": "d",
+      "explanation": "FINRA Regulatory Notices 10-06 and 11-39 treat static content (profiles, background information, banner text) as a retail communication that needs principal pre-approval. Interactive, real-time content such as replies in a discussion thread is treated like correspondence: supervised and retained, but not pre-approved. If an agent shares or endorses third-party content, the firm may be deemed to have adopted it.",
+      "distractorExplanations": {
+        "a": "Overextends pre-approval: interactive real-time posts are supervised like correspondence, not approved before use.",
+        "b": "Static profile content is a retail communication, so it does need principal approval before it is posted.",
+        "c": "Reverses the guidance: the static profile needs pre-approval, while interactive replies are reviewed after the fact."
+      }
+    },
+    "series-63-readiness-check-s63-comm-008": {
+      "topicId": "s63-comm",
+      "prompt": "An agent discusses a client's bond purchase by text through a personal messaging app that the firm cannot capture or archive. Which statement best describes the recordkeeping problem under SEC Rule 17a-4?",
+      "options": {
+        "a": "No problem arises, because messages sent from an agent's personal device are not firm records",
+        "b": "Business messages must be kept 3 years, the first 2 easily accessible, so these texts are a breach",
+        "c": "Business messages must be kept 6 years, the first 2 easily accessible, so these texts violate the rule",
+        "d": "No problem arises if the agent forwards a monthly summary of the text conversations to compliance"
+      },
+      "correctOptionId": "b",
+      "explanation": "SEC Rule 17a-4 requires broker-dealers to preserve communications relating to the business as such for at least 3 years, the first 2 in an easily accessible place. The duty turns on content, not device: business texts on an unapproved app the firm cannot archive are off-channel communications, a recordkeeping and supervision failure the SEC has fined heavily.",
+      "distractorExplanations": {
+        "a": "Recordkeeping turns on business content, not who owns the device; business texts on personal apps must still be preserved.",
+        "c": "Six years applies to records such as blotters and ledgers; business communications carry a 3-year retention period.",
+        "d": "A summary is not the original message; the rule requires preserving the communications themselves in an archivable form."
+      }
+    },
+    "series-63-readiness-check-s63-comm-009": {
+      "topicId": "s63-comm",
+      "prompt": "An agent registered in State A posts general market commentary on a public website. A resident of State B, where neither the agent nor the agent's firm is registered, emails asking whether to buy a specific mutual fund. Under NASAA's Internet communications guidance, how should the agent respond?",
+      "options": {
+        "a": "Answer the question, because the State B resident initiated the contact, which makes the reply unsolicited",
+        "b": "Answer by phone instead of email, since spoken advice falls outside the Internet guidance",
+        "c": "Withhold individualized advice until the agent and firm are registered or exempt in State B",
+        "d": "Remove the website, because posting it already required registration in each state where it is viewable"
+      },
+      "correctOptionId": "c",
+      "explanation": "NASAA's statement of policy on Internet communications treats a website as not an offer in a state where the agent is unregistered if it carries a legend limiting business to states where the agent is registered or exempt and uses firewalls so no individualized response about a specific security goes to that state's residents until the agent and firm are registered or exempt there.",
+      "distractorExplanations": {
+        "a": "A resident's inquiry does not excuse a tailored recommendation; individualized responses require registration or an exemption first.",
+        "b": "Switching channels does not change the analysis; a specific recommendation to a State B resident is business in State B.",
+        "d": "A properly legended, firewalled website is not an offer in states where the agent is unregistered, so blanket registration is unnecessary."
+      }
+    },
+    "series-63-readiness-check-s63-comm-010": {
+      "topicId": "s63-comm",
+      "prompt": "A broker-dealer wants to give its customer list, with account balances, to an unaffiliated insurance agency that will market its own policies. Under SEC Regulation S-P, what must the firm do first?",
+      "options": {
+        "a": "Give customers a privacy notice and opt-out notice, with a reasonable chance to opt out",
+        "b": "Obtain each customer's signed written opt-in consent before any of the data is transferred",
+        "c": "File a notice of the sharing arrangement with the SEC before transferring the list",
+        "d": "Send the annual privacy notice afterward, disclosing the sharing that already took place"
+      },
+      "correctOptionId": "a",
+      "explanation": "Regulation S-P requires an initial privacy notice when the customer relationship is formed and generally an annual notice afterward. Before sharing nonpublic personal information (including who its customers are and their balances) with a nonaffiliated third party outside the rule's exceptions, the firm must give an opt-out notice and a reasonable opportunity to opt out. The federal standard is opt-out, not opt-in.",
+      "distractorExplanations": {
+        "b": "Regulation S-P uses an opt-out model; affirmative opt-in consent is stricter than the federal rule requires (some state laws differ).",
+        "c": "Regulation S-P has no SEC filing or approval step for sharing; the duty runs to customers through notice and opt-out.",
+        "d": "Notice after the fact is too late; customers must receive the opt-out notice and time to respond before any sharing."
+      }
+    },
+    "series-63-readiness-check-s63-comm-011": {
+      "topicId": "s63-comm",
+      "prompt": "A broker-dealer's compliance officer proposes destroying records once they are four years old. The files include the firm's purchase and sales blotters and its order tickets (memoranda of orders). Under SEC Rule 17a-4, which records may be destroyed?",
+      "options": {
+        "a": "Both sets, because broker-dealer records generally carry a 3-year retention period",
+        "b": "Neither set, because the state Administrator can impose a 5-year rule on top of SEC retention",
+        "c": "The blotters, while the order tickets must be kept for 6 years with 2 easily accessible",
+        "d": "The order tickets, while the blotters must be kept 6 years, the first 2 easily accessible"
+      },
+      "correctOptionId": "d",
+      "explanation": "SEC Rule 17a-4 requires blotters (and general and customer ledgers) to be kept 6 years, the first 2 easily accessible, while memoranda of orders are kept 3 years. Under NSMIA, states may not impose broker-dealer recordkeeping requirements different from or in addition to the SEC's, although the Administrator may still examine a registered firm's records.",
+      "distractorExplanations": {
+        "a": "Three years covers order tickets and communications, but blotters and ledgers fall in the 6-year category.",
+        "b": "NSMIA bars states from imposing books-and-records requirements beyond SEC rules, so a state 5-year rule would be preempted.",
+        "c": "Reverses the categories: blotters are 6-year records, and order tickets are 3-year records eligible for destruction here."
+      }
+    },
+    "series-63-readiness-check-s63-comm-012": {
+      "topicId": "s63-comm",
+      "prompt": "An agent of a broker-dealer that operates in a bank's lobby recommends a mutual fund to a bank depositor. Under NASAA's rules for sales of securities at financial institutions, what must the agent disclose?",
+      "options": {
+        "a": "That the fund is FDIC insured up to $250,000 because it is purchased on bank premises",
+        "b": "That the fund is not FDIC insured, not a bank deposit or guaranteed by the bank, and may lose value",
+        "c": "That the fund is covered by SIPC, which protects the depositor against investment losses of up to $500,000",
+        "d": "That the bank's holding company backs the fund's share price if its net asset value falls below $1"
+      },
+      "correctOptionId": "b",
+      "explanation": "NASAA's Rules for Sales of Securities at Financial Institutions require broker-dealers and agents selling on bank premises to disclose that securities are not FDIC insured, are not deposits or obligations of the institution, are not guaranteed by it, and are subject to investment risk, including possible loss of principal. The rule targets depositor confusion between bank products and investments.",
+      "distractorExplanations": {
+        "a": "FDIC insurance covers deposits, not mutual fund shares, even when the fund is purchased in a bank branch.",
+        "c": "SIPC protects customer assets if a broker-dealer fails; it does not cover market losses on investments.",
+        "d": "No bank guarantee backs fund shares; implying institutional support is the exact confusion the disclosure rule targets."
+      }
+    },
+    "series-63-readiness-check-s63-agent-001": {
+      "topicId": "s63-agent",
+      "prompt": "Four people are involved in selling securities to residents of a state. Under the Uniform Securities Act, which one must register as an agent?",
+      "options": {
+        "a": "A broker-dealer receptionist who schedules client meetings and takes messages for registered reps",
+        "b": "An issuer employee selling the issuer's stock in a private placement to institutional buyers",
+        "c": "A corporate officer paid a bonus per share to sell the issuer's stock in a public offering",
+        "d": "A company director selling the issuer's shares to existing employees with no commission paid"
+      },
+      "correctOptionId": "c",
+      "explanation": "An agent is an individual who represents a broker-dealer or issuer in effecting or attempting to effect purchases or sales of securities. An issuer's representative is excluded when selling exempt securities, in exempt transactions, or to existing employees, partners, or directors with no commission paid. Selling nonexempt stock to the public for per-share compensation makes the officer an agent.",
+      "distractorExplanations": {
+        "a": "Purely clerical staff who do not solicit or effect securities transactions are not agents under the Act.",
+        "b": "A private placement to institutional investors is an exempt transaction, so the issuer's employee is excluded from the agent definition.",
+        "d": "Sales to an issuer's existing employees with no commission paid fall within the exclusion for issuer representatives."
+      }
+    },
+    "series-63-readiness-check-s63-agent-002": {
+      "topicId": "s63-agent",
+      "prompt": "A broker-dealer files Form U4 for a new agent with the state Administrator on March 2. No denial proceeding is started, and the Administrator sets no earlier date. Under the Uniform Securities Act, when does the agent's registration take effect?",
+      "options": {
+        "a": "At noon on the 30th day after the application is filed",
+        "b": "Immediately on filing, subject to later denial by the Administrator",
+        "c": "At noon on the 15th day after the filing, if no deficiency letter is sent",
+        "d": "At midnight on the 45th day after filing, matching the SEC adviser timeline"
+      },
+      "correctOptionId": "a",
+      "explanation": "Under the Uniform Securities Act, a registration application becomes effective at noon on the 30th day after a complete filing, unless a denial proceeding is instituted or the Administrator orders an earlier effective date. Until then, the individual may not act as an agent in that state, and the agent's registration also depends on the sponsoring broker-dealer being registered.",
+      "distractorExplanations": {
+        "b": "Filing alone does not authorize activity; the applicant must wait for effectiveness before acting as an agent.",
+        "c": "Uses the wrong waiting period; the Act sets the 30th day, not the 15th, absent an earlier Administrator order.",
+        "d": "Forty-five days is the SEC's period to act on an investment adviser application, not the state agent effectiveness rule."
+      }
+    },
+    "series-63-readiness-check-s63-agent-003": {
+      "topicId": "s63-agent",
+      "prompt": "An agent resigns from Firm X and joins unaffiliated Firm Y, both registered in the same state. Under the Uniform Securities Act, who must promptly notify the Administrator of the change?",
+      "options": {
+        "a": "Firm X, through Form U5; neither the agent nor Firm Y has a separate notice duty",
+        "b": "The agent personally; the firms report the move on their next annual renewal",
+        "c": "Firm Y, through a new Form U4; Firm X's duty ends when the agent resigns",
+        "d": "The agent, Firm X, and Firm Y each have a duty to notify the Administrator"
+      },
+      "correctOptionId": "d",
+      "explanation": "When an agent begins or ends association with a broker-dealer, the Uniform Securities Act requires both the agent and the broker-dealer to promptly notify the Administrator. In a firm change, that means the agent, the departing firm (which files Form U5), and the hiring firm (which files Form U4) each have a notice obligation.",
+      "distractorExplanations": {
+        "a": "Form U5 covers the departing firm, but the Act also places a notice duty on the agent and the hiring firm.",
+        "b": "Annual renewal is not notice; firm changes must be reported promptly, not deferred to year-end.",
+        "c": "The departing firm still must report the termination; its obligation does not end with the resignation."
+      }
+    },
+    "series-63-readiness-check-s63-agent-004": {
+      "topicId": "s63-agent",
+      "prompt": "An agent with Firm A is offered part-time work selling municipal bonds for Firm B, an unaffiliated broker-dealer. Under the Uniform Securities Act, may the agent represent both firms at once?",
+      "options": {
+        "a": "Yes, if both firms consent in writing and each files a separate Form U4",
+        "b": "No, unless the firms are under common control or the Administrator permits it",
+        "c": "Yes, because municipal bonds are exempt securities that need no agent registration",
+        "d": "No, unless the agent first drops Firm A and waits 30 days before joining Firm B"
+      },
+      "correctOptionId": "b",
+      "explanation": "The Uniform Securities Act bars an individual from acting as an agent for more than one broker-dealer (or issuer) at the same time unless the firms are affiliated by direct or indirect common control or the Administrator permits it by rule or order. Firm consent alone does not satisfy the rule.",
+      "distractorExplanations": {
+        "a": "Simultaneous association with unaffiliated firms is barred regardless of consent or separate U4 filings.",
+        "c": "The exempt-security exclusion covers issuer representatives; an agent selling munis for a broker-dealer must be registered.",
+        "d": "There is no 30-day waiting period between firms; the issue is simultaneous association with unaffiliated firms."
+      }
+    },
+    "series-63-readiness-check-s63-agent-005": {
+      "topicId": "s63-agent",
+      "prompt": "A registered agent learns that the IRS has filed a federal tax lien against him for unpaid personal income taxes. What must happen with his Form U4?",
+      "options": {
+        "a": "Nothing, because personal tax matters are unrelated to securities business",
+        "b": "Disclose it at the next annual renewal on December 31",
+        "c": "Amend the U4 promptly, within 30 days of learning of the lien",
+        "d": "Disclose it if the lien is still unsatisfied 12 months after filing"
+      },
+      "correctOptionId": "c",
+      "explanation": "Form U4 asks about unsatisfied judgments and liens, and the form must be kept current. FINRA's By-Laws require an amendment within 30 days after the registrant learns of the facts, and the Uniform Securities Act requires prompt correcting amendments when registration information becomes materially inaccurate. A tax lien is a reportable financial disclosure even though it is personal.",
+      "distractorExplanations": {
+        "a": "Form U4 financial disclosure questions specifically ask about liens, so a personal tax lien is reportable.",
+        "b": "Annual renewal is not the amendment deadline; material changes must be reported within 30 days.",
+        "d": "Invents a 12-month waiting period; an unsatisfied lien is reportable as soon as the agent learns of it."
+      }
+    },
+    "series-63-readiness-check-s63-agent-006": {
+      "topicId": "s63-agent",
+      "prompt": "An agent registered only in State A has a long-time client whose home is in State A. While on a three-week vacation in State B, the client calls to buy shares. The agent and firm have no office in State B and are not registered there. Under the Uniform Securities Act, may the agent accept the order?",
+      "options": {
+        "a": "Yes, because the client is an existing customer temporarily present in State B",
+        "b": "No, because the agent must be registered in the state where the client is physically located",
+        "c": "Yes, if the agent files a notice with the State B Administrator within 10 days of the trade",
+        "d": "No, unless the client returns to State A and resubmits the order from there"
+      },
+      "correctOptionId": "a",
+      "explanation": "The Uniform Securities Act excludes from registration a broker-dealer, and its agents, with no place of business in a state when they deal with an existing customer who is not a resident of that state, such as a client on vacation. The client's principal residence remains in State A, where the agent is registered, so a temporary visit to State B does not trigger State B registration.",
+      "distractorExplanations": {
+        "b": "Registration turns on the customer's residence and the firm's presence, not on where an existing client happens to be calling from.",
+        "c": "The Act has no post-trade notice filing for this situation; the existing-customer exclusion applies without any filing.",
+        "d": "Forcing the client home is unnecessary; the order may be accepted while the existing client is temporarily out of state."
+      }
+    },
+    "series-63-readiness-check-s63-agent-007": {
+      "topicId": "s63-agent",
+      "prompt": "An agent's registration was withdrawn effective January 15, with no proceeding pending. In September of the same year, the Administrator uncovers unethical sales practices the agent committed while registered. Under the Uniform Securities Act, what may the Administrator do?",
+      "options": {
+        "a": "Nothing, because the Administrator loses authority once a withdrawal takes effect",
+        "b": "Refer the matter to FINRA, because FINRA alone keeps jurisdiction over former registered agents",
+        "c": "Wait until the agent applies to re-register, and then deny that new application",
+        "d": "Start a revocation or suspension proceeding, since it is within 1 year of withdrawal"
+      },
+      "correctOptionId": "d",
+      "explanation": "Under the Uniform Securities Act, if no proceeding is pending when a withdrawal becomes effective, the Administrator may still institute a revocation or suspension proceeding within one year after the withdrawal took effect. September of the same year falls inside that window, so the Administrator can act on misconduct from the registration period.",
+      "distractorExplanations": {
+        "a": "Withdrawal does not end authority immediately; the Act preserves a one-year window to start revocation or suspension.",
+        "b": "FINRA's 2-year retained jurisdiction is a separate SRO rule; the state Administrator has its own one-year window.",
+        "c": "The Administrator need not wait for a new application; it can proceed against the withdrawn registration within one year."
+      }
+    },
+    "series-63-readiness-check-s63-agent-008": {
+      "topicId": "s63-agent",
+      "prompt": "An agent leaves the securities industry in a state that participates in NASAA's Exam Validity Extension Program (EVEP) and may return in a few years. How can she keep her Series 63 qualification from lapsing?",
+      "options": {
+        "a": "She cannot extend it; a Series 63 result lapses 2 years after her registration terminates",
+        "b": "Complete annual continuing education to extend exam validity for up to 5 years after leaving",
+        "c": "Keep paying her state agent renewal fee each December while she is not with a firm",
+        "d": "Do nothing, because the EVEP keeps a passing Series 63 score valid for 10 years after leaving"
+      },
+      "correctOptionId": "b",
+      "explanation": "Without an extension, a Series 63 result generally lapses once the individual has been unregistered for 2 years. Under NASAA's EVEP, which mirrors FINRA's Maintaining Qualifications Program, an eligible person who terminates registration can extend exam validity for up to 5 years by completing annual continuing education, provided the state participates.",
+      "distractorExplanations": {
+        "a": "Ignores EVEP; the 2-year lapse is the default rule, but the program allows an extension in participating states.",
+        "c": "Agent registration requires association with a registered broker-dealer; paying fees without a sponsoring firm does not maintain it.",
+        "d": "Overstates the window: EVEP extends exam validity for up to 5 years, not 10, and it requires annual continuing education."
+      }
+    }
+  }
+}

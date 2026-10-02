@@ -1,0 +1,2288 @@
+{
+  "sie-full-mock": {
+    "sie-full-mock-capital-markets-001": {
+      "prompt": "An issuer is preparing an initial public offering. Which federal law primarily governs registration of the new issue and delivery of a prospectus?",
+      "explanation": "The Securities Act of 1933 (the 'paper act') governs new issues in the primary market: the issuer files a registration statement with the SEC and investors receive a prospectus.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Securities Act of 1933",
+        "b": "Securities Exchange Act of 1934",
+        "c": "Investment Company Act of 1940",
+        "d": "Trust Indenture Act of 1939"
+      },
+      "distractorExplanations": {
+        "b": "The 1934 Act regulates secondary-market trading, broker-dealers, and exchanges, and it created the SEC.",
+        "c": "The 1940 Act regulates investment companies such as mutual funds, not every new corporate issue.",
+        "d": "The Trust Indenture Act requires a trust indenture for certain corporate bond offerings; it is not the general registration law."
+      }
+    },
+    "sie-full-mock-capital-markets-002": {
+      "prompt": "Under Regulation D, which individual qualifies as an accredited investor?",
+      "explanation": "An individual is accredited with income over $200,000 ($300,000 jointly) in each of the last two years with the same expected this year, or net worth over $1 million excluding the primary residence.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A single person whose only major asset is a primary residence worth $1.2 million",
+        "b": "A single person who earned $210,000 in each of the last two years and expects the same this year",
+        "c": "A married couple with $250,000 of joint income in each of the last two years and the same expected this year",
+        "d": "Any investor who signs a written statement acknowledging that they understand the risks of private placements"
+      },
+      "distractorExplanations": {
+        "a": "The value of a primary residence is excluded from the $1 million net-worth test.",
+        "c": "The joint-income test is $300,000; $250,000 does not meet it.",
+        "d": "A risk acknowledgment does not make someone accredited; the investor must meet income, net-worth, or other specified criteria."
+      }
+    },
+    "sie-full-mock-capital-markets-003": {
+      "prompt": "Which statement about the Securities and Exchange Commission (SEC) is accurate?",
+      "explanation": "The SEC was created by the Securities Exchange Act of 1934. It enforces federal securities laws, oversees exchanges and SROs, and reviews registration statements without passing on investment merit.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "It is a self-regulatory organization funded by member firm fees",
+        "b": "It is a federal agency that enforces the federal securities laws",
+        "c": "It insures customer accounts when a broker-dealer fails",
+        "d": "It approves the investment merits of the securities it registers"
+      },
+      "distractorExplanations": {
+        "a": "That describes FINRA. The SEC is a government agency that oversees SROs such as FINRA.",
+        "c": "SIPC, not the SEC, protects customers of failed broker-dealers.",
+        "d": "The SEC does not approve or endorse securities; claiming it does is prohibited."
+      }
+    },
+    "sie-full-mock-capital-markets-004": {
+      "prompt": "Which economic indicator is generally classified as a lagging indicator?",
+      "explanation": "Lagging indicators change after the economy has already turned. Examples include average duration of unemployment, the prime rate, and outstanding commercial loans.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Building permits for new private housing",
+        "b": "Average duration of unemployment",
+        "c": "Industrial production",
+        "d": "Stock market prices"
+      },
+      "distractorExplanations": {
+        "a": "Building permits are a leading indicator; they change before the economy turns.",
+        "c": "Industrial production is a coincident indicator; it moves with the economy.",
+        "d": "Stock prices are a leading indicator because markets anticipate economic changes."
+      }
+    },
+    "sie-full-mock-capital-markets-005": {
+      "prompt": "A customer wants a U.S. Treasury security whose principal adjusts with inflation. Which security fits?",
+      "explanation": "TIPS principal is adjusted with the Consumer Price Index, and the fixed coupon rate is applied to the adjusted principal, which helps protect purchasing power.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Treasury bills bought at a discount at weekly auctions",
+        "b": "Treasury STRIPS created from Treasury notes and bonds",
+        "c": "GNMA pass-through certificates",
+        "d": "Treasury Inflation-Protected Securities (TIPS)"
+      },
+      "distractorExplanations": {
+        "a": "T-bills are short-term discount securities; their principal is not adjusted for inflation.",
+        "b": "STRIPS are zero-coupon Treasury securities with no inflation adjustment.",
+        "c": "GNMA certificates are mortgage-backed securities exposed to prepayment risk, not inflation-indexed Treasuries."
+      }
+    },
+    "sie-full-mock-capital-markets-006": {
+      "prompt": "A firm sells bonds to a customer out of its own inventory and adds a markup. In this trade, the firm acted as:",
+      "explanation": "A dealer acts as principal, buying for or selling from its own account and earning a markup or markdown. A broker acts as agent and earns a commission.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "A broker (agent)",
+        "b": "A transfer agent",
+        "c": "An underwriter in a best-efforts offering",
+        "d": "A dealer (principal)"
+      },
+      "distractorExplanations": {
+        "a": "An agent arranges a trade between buyer and seller for a commission and does not sell from its own inventory.",
+        "b": "Transfer agents maintain issuer ownership records; they do not sell bonds from inventory.",
+        "c": "In a best-efforts offering the underwriter acts as agent for the issuer and does not own the securities."
+      }
+    },
+    "sie-full-mock-capital-markets-007": {
+      "prompt": "To ease monetary policy and lower short-term rates, the Federal Reserve is most likely to:",
+      "explanation": "When the Fed buys securities in the open market, it adds reserves to the banking system, which increases the money supply and puts downward pressure on short-term rates.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Sell Treasury securities through open market operations",
+        "b": "Raise the discount rate",
+        "c": "Buy Treasury securities through open market operations",
+        "d": "Raise federal income tax rates"
+      },
+      "distractorExplanations": {
+        "a": "Selling securities drains reserves from banks and tightens monetary policy.",
+        "b": "A higher discount rate makes borrowing from the Fed more expensive, which tightens policy.",
+        "d": "Tax rates are fiscal policy, set by Congress and the President, not by the Fed."
+      }
+    },
+    "sie-full-mock-capital-markets-008": {
+      "prompt": "Which organization writes conduct rules for broker-dealers and their registered representatives and administers the SIE?",
+      "explanation": "FINRA is the self-regulatory organization for broker-dealers. It writes and enforces member rules, registers representatives, and administers qualification exams including the SIE.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The SEC",
+        "b": "The MSRB",
+        "c": "FINRA",
+        "d": "NASAA"
+      },
+      "distractorExplanations": {
+        "a": "The SEC is the federal regulator that oversees FINRA, but FINRA writes member conduct rules and administers the SIE.",
+        "b": "The MSRB writes rules for municipal securities dealers and advisors but does not enforce them or administer the SIE.",
+        "d": "NASAA is an association of state regulators; it writes the Series 63, 65, and 66 exams, not the SIE."
+      }
+    },
+    "sie-full-mock-capital-markets-009": {
+      "prompt": "Which sequence correctly lists the phases of the business cycle in order?",
+      "explanation": "The business cycle moves from expansion to a peak, then contraction to a trough, and back to expansion. A recession is a significant, broad decline in economic activity during the contraction phase.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Peak, expansion, trough, contraction",
+        "b": "Contraction, peak, expansion, trough",
+        "c": "Expansion, peak, contraction, trough",
+        "d": "Trough, peak, expansion, contraction"
+      },
+      "distractorExplanations": {
+        "a": "Expansion leads up to a peak, not away from it; this order is out of sequence.",
+        "b": "A contraction ends in a trough, not a peak.",
+        "d": "After a trough the economy expands before reaching a peak."
+      }
+    },
+    "sie-full-mock-products-risks-002": {
+      "prompt": "A customer owns a brokered CD and needs to sell it before maturity. Which risk is most relevant?",
+      "explanation": "Brokered CDs can be sold in the secondary market before maturity. If rates have risen, the CD's market price falls, so the customer may receive less than par.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Loss of FDIC coverage on the principal because it was sold early",
+        "b": "Interest-rate risk: it may sell below par if rates have risen",
+        "c": "Unlimited loss, because brokered CDs are leveraged products",
+        "d": "Default risk on the broker-dealer that sold the CD"
+      },
+      "distractorExplanations": {
+        "a": "FDIC insurance covers the issuing bank's failure; it does not guarantee a secondary-market sale price.",
+        "c": "CDs are not leveraged; any loss on an early sale comes from market price changes.",
+        "d": "The CD is an obligation of the issuing bank, not of the broker-dealer that sold it."
+      }
+    },
+    "sie-full-mock-products-risks-003": {
+      "prompt": "A mutual fund has a net asset value of $20.00 and a public offering price of $21.05. The $1.05 difference represents:",
+      "explanation": "Public offering price = NAV + sales charge. Here $21.05 − $20.00 = $1.05, which is about 5% of the POP.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "The fund's annual 12b-1 fee",
+        "b": "The front-end sales charge",
+        "c": "The fund's management fee",
+        "d": "A contingent deferred sales charge"
+      },
+      "distractorExplanations": {
+        "a": "12b-1 fees are deducted from fund assets each year; they are not added to the purchase price.",
+        "c": "The management fee is an ongoing expense paid from fund assets, not part of the offering price.",
+        "d": "A CDSC is charged when shares are redeemed, not added when they are bought."
+      }
+    },
+    "sie-full-mock-products-risks-004": {
+      "prompt": "XYZ stock trades at $57. What is the intrinsic value of an XYZ 50 call that was purchased for a $9 premium?",
+      "explanation": "Call intrinsic value = stock price − strike when positive: $57 − $50 = $7. The remaining $2 of the $9 premium is time value.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "$0",
+        "b": "$2",
+        "c": "$7",
+        "d": "$9"
+      },
+      "distractorExplanations": {
+        "a": "A call is in the money when the stock price is above the strike, so it has intrinsic value here.",
+        "b": "$2 is the time value ($9 premium − $7 intrinsic value).",
+        "d": "$9 is the premium, which equals intrinsic value plus time value."
+      }
+    },
+    "sie-full-mock-products-risks-005": {
+      "prompt": "An investor buys 1 ABC 40 put for a $3 premium. What are the breakeven and the maximum gain per share?",
+      "explanation": "Long put breakeven = strike − premium = $40 − $3 = $37. The maximum gain occurs if the stock falls to zero: $37 per share.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Breakeven $43; maximum gain unlimited",
+        "b": "Breakeven $37; maximum gain $37",
+        "c": "Breakeven $37; maximum gain $3",
+        "d": "Breakeven $43; maximum gain $40"
+      },
+      "distractorExplanations": {
+        "a": "Strike plus premium is the breakeven for a call; a put's gain is capped because the stock cannot fall below zero.",
+        "c": "A $3 maximum gain is the put writer's (seller's) maximum gain, not the buyer's.",
+        "d": "Put breakeven is strike minus premium, and the maximum gain is that breakeven amount."
+      }
+    },
+    "sie-full-mock-products-risks-006": {
+      "prompt": "How does an ETF differ from a traditional open-end mutual fund?",
+      "explanation": "ETFs are bought and sold on exchanges at market prices during the trading day and can be bought on margin or sold short. Mutual fund shares are bought from and redeemed by the fund at the next computed NAV.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "ETF shares are redeemed by the fund at the next computed NAV for retail investors",
+        "b": "ETFs are always actively managed and never track an index",
+        "c": "ETF purchases always include a front-end sales load",
+        "d": "ETF shares trade on an exchange throughout the day at market prices"
+      },
+      "distractorExplanations": {
+        "a": "Redemption at the next NAV describes an open-end mutual fund; retail ETF investors sell on an exchange.",
+        "b": "Many ETFs are passively managed index trackers.",
+        "c": "ETFs trade like stocks, usually with commissions or spreads, not mutual fund sales loads."
+      }
+    },
+    "sie-full-mock-products-risks-007": {
+      "prompt": "A customer places an order to buy open-end mutual fund shares at 2:30 p.m. Eastern time. At what price will the order be filled?",
+      "explanation": "Mutual funds use forward pricing: an order receives the next NAV (plus any sales charge) calculated after it is received, typically at the 4 p.m. Eastern close.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The NAV computed at the previous day's close, since the order came in midday",
+        "b": "The price of the last trade in the fund's shares on the exchange",
+        "c": "The NAV in effect at the exact moment the order was entered at 2:30 p.m.",
+        "d": "The next price computed after the order, normally at that day's close"
+      },
+      "distractorExplanations": {
+        "a": "Using the prior day's price would be backward pricing, which is not allowed.",
+        "b": "Open-end fund shares do not trade on an exchange; they are bought from the fund.",
+        "c": "Mutual funds do not price continuously; orders get the next calculated price."
+      }
+    },
+    "sie-full-mock-products-risks-008": {
+      "prompt": "Which statement about a preliminary prospectus (red herring) is accurate?",
+      "explanation": "During the cooling-off period, a red herring may be distributed so customers can give non-binding indications of interest. It lacks the final price, and sales cannot occur until the registration is effective.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "It lets the firm accept binding orders before the registration becomes effective",
+        "b": "It contains the final public offering price and the effective date of the registration",
+        "c": "It must be approved by the SEC as to the accuracy of its contents",
+        "d": "It may be used to gather indications of interest, but it omits the final offering price"
+      },
+      "distractorExplanations": {
+        "a": "No sales or binding orders are allowed during the cooling-off period.",
+        "b": "The final price and effective date appear in the final prospectus.",
+        "c": "The SEC does not approve the accuracy or adequacy of a prospectus."
+      }
+    },
+    "sie-full-mock-products-risks-009": {
+      "prompt": "Which preferred stock feature requires omitted past dividends to be paid before common stockholders receive any dividend?",
+      "explanation": "With cumulative preferred, missed dividends accumulate as arrears and must be paid before any common dividend.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Cumulative",
+        "b": "Callable",
+        "c": "Convertible",
+        "d": "Participating"
+      },
+      "distractorExplanations": {
+        "b": "A call feature lets the issuer redeem the shares; it says nothing about missed dividends.",
+        "c": "A conversion feature lets holders exchange preferred for common shares.",
+        "d": "Participating preferred may receive extra dividends above the stated rate; it does not cover arrears."
+      }
+    },
+    "sie-full-mock-products-risks-010": {
+      "prompt": "Which investment company has a fixed, unmanaged portfolio, issues redeemable units, and has a set termination date?",
+      "explanation": "A UIT buys a fixed portfolio, which is supervised but not actively managed. It issues redeemable units and terminates on a stated date.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Closed-end management company",
+        "b": "Open-end management company",
+        "c": "Exchange-traded fund",
+        "d": "Unit investment trust"
+      },
+      "distractorExplanations": {
+        "a": "Closed-end funds are actively managed and their shares trade in the market rather than being redeemed.",
+        "b": "Open-end funds are managed, continuously offer new shares, and have no set termination date.",
+        "c": "ETF shares trade on an exchange throughout the day, and most ETFs have no termination date."
+      }
+    },
+    "sie-full-mock-products-risks-012": {
+      "prompt": "A closed-end fund's shares trade at $18 while its NAV is $20. Which statement is correct?",
+      "explanation": "Closed-end funds issue a fixed number of shares that trade on exchanges. Their market price can be at a premium or a discount to NAV.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The fund must redeem shares at $20 whenever a shareholder asks",
+        "b": "The fund will keep issuing new shares at $20 to new investors until the gap closes",
+        "c": "The shares trade at a discount because the price is set by market supply and demand",
+        "d": "This cannot happen, because closed-end fund shares are required to trade at their NAV"
+      },
+      "distractorExplanations": {
+        "a": "Closed-end funds do not redeem shares; investors sell them in the secondary market.",
+        "b": "Closed-end funds have a fixed number of shares after the initial offering.",
+        "d": "Closed-end shares can trade above or below NAV."
+      }
+    },
+    "sie-full-mock-products-risks-013": {
+      "prompt": "If market interest rates rise, which bond's price would typically fall the most?",
+      "explanation": "Bond prices and yields move inversely. Longer maturities and lower coupons increase sensitivity (duration), so a long-term zero-coupon bond is the most affected.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "A 30-year bond with an 8% coupon",
+        "b": "A 2-year Treasury note",
+        "c": "A 6-month Treasury bill",
+        "d": "A 30-year zero-coupon bond"
+      },
+      "distractorExplanations": {
+        "a": "Higher coupons return cash sooner, so this bond is less price-sensitive than a zero of the same maturity.",
+        "b": "Short maturities have relatively little price sensitivity to rate changes.",
+        "c": "A T-bill matures quickly, so a rate change has little effect on its price."
+      }
+    },
+    "sie-full-mock-products-risks-014": {
+      "prompt": "During the accumulation phase of a variable annuity, who bears the investment risk of the separate account?",
+      "explanation": "Variable annuity values depend on the performance of separate-account subaccounts, so the contract owner bears market risk. Variable annuities are securities and require a securities registration to sell.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The contract owner",
+        "b": "The insurance company",
+        "c": "The FDIC",
+        "d": "The broker-dealer that sold the contract"
+      },
+      "distractorExplanations": {
+        "b": "The insurer bears investment risk in a fixed annuity, not in a variable annuity's separate account.",
+        "c": "Annuities are not bank deposits and are not FDIC-insured.",
+        "d": "The selling firm does not guarantee subaccount performance."
+      }
+    },
+    "sie-full-mock-products-risks-015": {
+      "prompt": "Which statement about commercial paper is accurate?",
+      "explanation": "Commercial paper is a money market instrument: short-term (maximum 270 days for the registration exemption), unsecured, and usually sold at a discount by highly rated corporations.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "It is long-term corporate debt secured by a first lien on the issuer's real estate",
+        "b": "It is a municipal note backed by anticipated tax collections",
+        "c": "It is short-term, unsecured corporate debt that is typically issued at a discount",
+        "d": "It is short-term debt backed by the full faith and credit of the U.S. government"
+      },
+      "distractorExplanations": {
+        "a": "That describes a mortgage bond, not commercial paper.",
+        "b": "That describes a tax anticipation note (TAN).",
+        "d": "Commercial paper is a corporate obligation, not a government guarantee."
+      }
+    },
+    "sie-full-mock-products-risks-016": {
+      "prompt": "A customer says, “My money market fund is basically a bank savings account.” Which response is accurate?",
+      "explanation": "Money market mutual funds invest in short-term debt and seek a stable value, but they are not bank deposits, are not FDIC-insured, and can lose money.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Yes — it is FDIC-insured up to $250,000 per depositor, the same as a savings account",
+        "b": "The fund sponsor guarantees its $1.00 share price, so the principal can never decline",
+        "c": "It is not FDIC-insured, and its value is not guaranteed even though it seeks a stable value",
+        "d": "It invests mainly in long-term corporate bonds, which is why it pays more than savings"
+      },
+      "distractorExplanations": {
+        "a": "Money market funds are securities, not bank deposits, so they are not FDIC-insured.",
+        "b": "Sponsors do not guarantee the share price; a fund can lose value.",
+        "d": "Money market funds hold short-term, high-quality debt instruments."
+      }
+    },
+    "sie-full-mock-products-risks-017": {
+      "prompt": "A callable bond is trading at a premium. Which of its yields will be the lowest?",
+      "explanation": "For a premium bond the order is nominal yield > current yield > yield to maturity > yield to call, because the premium is lost faster if the bond is called early.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Nominal (coupon) yield",
+        "b": "Current yield",
+        "c": "Yield to maturity",
+        "d": "Yield to call"
+      },
+      "distractorExplanations": {
+        "a": "For a premium bond, the nominal yield is the highest of the yields.",
+        "b": "Current yield falls below the coupon for a premium bond but stays above YTM and YTC.",
+        "c": "YTM is lower than current yield but higher than YTC for a premium callable bond."
+      }
+    },
+    "sie-full-mock-products-risks-018": {
+      "prompt": "A retired customer wants current income with moderate risk. Which recommendation fits best?",
+      "explanation": "An income objective prioritizes regular cash flow. Investment-grade bonds and dividend-paying stocks provide income with moderate risk.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Growth stocks that reinvest earnings and pay no dividends",
+        "b": "Investment-grade bonds and dividend-paying stocks",
+        "c": "Long-dated call options on technology stocks",
+        "d": "Zero-coupon STRIPS maturing in 20 years"
+      },
+      "distractorExplanations": {
+        "a": "Non-dividend growth stocks do not provide current income.",
+        "c": "Options are speculative and produce no income for the buyer.",
+        "d": "Zero-coupon bonds pay nothing until maturity, so they do not meet a current-income objective."
+      }
+    },
+    "sie-full-mock-products-risks-019": {
+      "prompt": "Which statement correctly compares warrants with stock rights?",
+      "explanation": "Warrants are long-term instruments, often attached to bonds or preferred stock to make them more attractive. Rights are short-term and let existing shareholders keep their proportionate ownership.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Warrants are typically long-term and often attached to bonds; rights are short-term",
+        "b": "Rights are long-term and are usually issued as a sweetener with bonds",
+        "c": "Warrants are normally issued with an exercise price set below the current market price",
+        "d": "Both are issued only to existing common shareholders, pro rata"
+      },
+      "distractorExplanations": {
+        "b": "This reverses the two: warrants are the long-term sweeteners, and rights expire quickly.",
+        "c": "Warrants are usually issued with an exercise price above the current market price.",
+        "d": "Rights go to existing shareholders pro rata; warrants are often attached to new bond or preferred issues."
+      }
+    },
+    "sie-full-mock-products-risks-020": {
+      "prompt": "To avoid tax at the trust level, a real estate investment trust (REIT) generally must:",
+      "explanation": "A qualifying REIT that distributes at least 90% of its taxable income is not taxed on the distributed income. Shareholders pay tax on dividends, which are generally not qualified dividends.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Distribute at least 50% of its taxable income to shareholders",
+        "b": "Distribute at least 90% of its taxable income to shareholders",
+        "c": "Pass its operating losses through to shareholders like a partnership",
+        "d": "Invest only in residential mortgages"
+      },
+      "distractorExplanations": {
+        "a": "The REIT distribution requirement is 90%, not 50%.",
+        "c": "REITs cannot pass losses through to investors; that is a feature of DPPs.",
+        "d": "REITs can own or finance many property types, including commercial real estate."
+      }
+    },
+    "sie-full-mock-products-risks-021": {
+      "prompt": "A bond with a 6% coupon and $1,000 par value is trading at $1,200. What is its current yield?",
+      "explanation": "Current yield = annual interest ÷ market price = $60 ÷ $1,200 = 5.0%. Because the bond trades at a premium, current yield is below the coupon rate.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "4.0%",
+        "b": "5.0%",
+        "c": "6.0%",
+        "d": "7.2%"
+      },
+      "distractorExplanations": {
+        "a": "4% does not match any calculation here; current yield is the annual coupon divided by price.",
+        "c": "6% is the nominal (coupon) yield, based on par value rather than market price.",
+        "d": "7.2% comes from multiplying the coupon by the price ratio instead of dividing."
+      }
+    },
+    "sie-full-mock-products-risks-022": {
+      "prompt": "An investor buys 1 XYZ 60 call for a $4 premium. What are the breakeven and the maximum loss?",
+      "explanation": "Long call breakeven = strike + premium = $60 + $4 = $64. The maximum loss is the premium paid: $4 × 100 shares = $400.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Breakeven $56; maximum loss $400",
+        "b": "Breakeven $64; maximum loss unlimited",
+        "c": "Breakeven $64; maximum loss $400",
+        "d": "Breakeven $60; maximum loss $6,000"
+      },
+      "distractorExplanations": {
+        "a": "Strike minus premium is the breakeven for a put, not a call.",
+        "b": "Unlimited loss belongs to an uncovered call writer; a buyer can lose only the premium.",
+        "d": "The buyer must recover the premium, and the risk is limited to the premium paid."
+      }
+    },
+    "sie-full-mock-products-risks-023": {
+      "prompt": "Which mutual fund share class typically has a front-end sales charge and lower ongoing 12b-1 fees?",
+      "explanation": "Class A shares charge a front-end load, which is reduced at breakpoints, and generally have lower 12b-1 fees, which can suit larger or longer-term investors.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Class B shares",
+        "b": "Class A shares",
+        "c": "Class C shares",
+        "d": "No-load shares"
+      },
+      "distractorExplanations": {
+        "a": "Class B shares usually have a back-end CDSC and higher 12b-1 fees.",
+        "c": "Class C shares usually have a level (ongoing) load with higher 12b-1 fees.",
+        "d": "No-load funds do not charge a front-end sales load."
+      }
+    },
+    "sie-full-mock-products-risks-024": {
+      "prompt": "A 30-year-old customer is saving for retirement 35 years away and has a high risk tolerance. Which recommendation is most suitable?",
+      "explanation": "Suitability matches the recommendation to the customer's profile. A long time horizon and high risk tolerance support diversified equity exposure for growth.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A money market fund as the only holding",
+        "b": "A diversified growth equity fund",
+        "c": "Short-term Treasury bills only",
+        "d": "Writing uncovered calls on volatile stocks"
+      },
+      "distractorExplanations": {
+        "a": "A money market fund offers stability but little growth over a 35-year horizon.",
+        "c": "T-bills preserve capital but are unlikely to meet a long-term growth goal.",
+        "d": "Uncovered call writing carries unlimited risk and is not a retirement-savings core strategy."
+      }
+    },
+    "sie-full-mock-products-risks-025": {
+      "prompt": "A U.S. investor owns ADRs of a European company. The share price is unchanged in euros, but the euro weakens against the dollar. What happens to the ADR's value?",
+      "explanation": "ADRs carry currency risk. When the foreign currency weakens against the dollar, the dollar value of the underlying shares, and therefore of the ADR, declines.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "It tends to fall",
+        "b": "It tends to rise",
+        "c": "It is unaffected because ADRs trade in dollars",
+        "d": "It is protected by SIPC against the currency loss"
+      },
+      "distractorExplanations": {
+        "b": "A weaker euro means the same euro price converts into fewer dollars.",
+        "c": "ADRs are quoted in dollars, but their value still reflects the exchange rate of the underlying shares.",
+        "d": "SIPC protects against broker-dealer failure, not market or currency losses."
+      }
+    },
+    "sie-full-mock-products-risks-026": {
+      "prompt": "What is the main purpose of a rights offering to existing common shareholders?",
+      "explanation": "Preemptive rights let existing shareholders buy new shares, typically at a subscription price below market, before the public, so they can keep their percentage ownership.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "To let them keep proportionate ownership by buying new shares, usually below market",
+        "b": "To guarantee shareholders a fixed dividend on the newly issued common shares",
+        "c": "To let them sell their shares back to the company at a premium",
+        "d": "To let them convert existing common shares into preferred shares at a set ratio"
+      },
+      "distractorExplanations": {
+        "b": "Rights do not guarantee dividends; common dividends are never guaranteed.",
+        "c": "That describes a tender offer, not a rights offering.",
+        "d": "Rights let holders buy additional common shares; they do not convert common to preferred."
+      }
+    },
+    "sie-full-mock-products-risks-027": {
+      "prompt": "Which investment exposes an investor to the greatest inflation (purchasing-power) risk?",
+      "explanation": "Inflation erodes the value of fixed payments. A long-term fixed-rate bond locks in its payments for many years, so it carries the highest purchasing-power risk.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A long-term fixed-rate bond",
+        "b": "Treasury Inflation-Protected Securities",
+        "c": "Common stock of growing companies",
+        "d": "A 3-month Treasury bill"
+      },
+      "distractorExplanations": {
+        "b": "TIPS principal adjusts with CPI, which reduces inflation risk.",
+        "c": "Equities have historically outpaced inflation over long periods.",
+        "d": "Short maturities let the investor reinvest at new, higher rates as inflation rises."
+      }
+    },
+    "sie-full-mock-products-risks-028": {
+      "prompt": "An investor already holds $40,000 in an ABC family fund and invests another $15,000. The breakpoint is $50,000. Which feature lets the new purchase receive the reduced sales charge?",
+      "explanation": "Rights of accumulation count existing holdings in the fund family toward breakpoints, so the $15,000 purchase qualifies for the $50,000 breakpoint charge.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Conversion (exchange) privilege",
+        "b": "Rights of accumulation",
+        "c": "Dollar-cost averaging",
+        "d": "A breakpoint sale"
+      },
+      "distractorExplanations": {
+        "a": "An exchange privilege allows switching within a fund family at NAV; it does not combine holdings for breakpoints.",
+        "c": "Dollar-cost averaging is investing a fixed amount regularly; it does not create breakpoint credit.",
+        "d": "A breakpoint sale is a violation in which a rep keeps a customer just below a breakpoint."
+      }
+    },
+    "sie-full-mock-products-risks-029": {
+      "prompt": "A city issues bonds to build a toll bridge, and they will be repaid only from bridge tolls. These bonds are:",
+      "explanation": "Revenue bonds are repaid from income produced by a specific facility, such as tolls or user fees. General obligation bonds are backed by the issuer's full faith, credit, and taxing power.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Revenue bonds",
+        "b": "General obligation bonds",
+        "c": "Tax anticipation notes",
+        "d": "Treasury bonds"
+      },
+      "distractorExplanations": {
+        "b": "GO bonds are backed by the issuer's taxing power, not by a specific project's revenue.",
+        "c": "TANs are short-term notes repaid from expected tax collections.",
+        "d": "Treasury bonds are U.S. government debt, not municipal project financing."
+      }
+    },
+    "sie-full-mock-products-risks-030": {
+      "prompt": "A customer in the 32% federal tax bracket is considering a municipal bond yielding 3.4%. What is the tax-equivalent yield?",
+      "explanation": "Tax-equivalent yield = municipal yield ÷ (1 − tax rate) = 3.4% ÷ 0.68 = 5.0%. Municipal interest is generally exempt from federal income tax, so the benefit grows with the investor's bracket.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "2.3%",
+        "b": "3.4%",
+        "c": "4.5%",
+        "d": "5.0%"
+      },
+      "distractorExplanations": {
+        "a": "2.3% is 3.4% × (1 − 0.32), which reduces the yield instead of grossing it up.",
+        "b": "3.4% is the tax-free yield before conversion.",
+        "c": "4.5% is 3.4% × 1.32, which is not the correct formula."
+      }
+    },
+    "sie-full-mock-products-risks-031": {
+      "prompt": "If a corporation is liquidated, which group is paid last?",
+      "explanation": "Liquidation priority runs from secured creditors, to unsecured creditors (including debenture holders), to preferred stockholders, and finally to common stockholders, who hold the residual claim.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Secured bondholders",
+        "b": "Preferred stockholders",
+        "c": "Holders of unsecured debentures",
+        "d": "Common stockholders"
+      },
+      "distractorExplanations": {
+        "a": "Secured creditors have claims on specific collateral and are paid first.",
+        "b": "Preferred stockholders are paid before common stockholders.",
+        "c": "Debenture holders are general creditors and rank ahead of all stockholders."
+      }
+    },
+    "sie-full-mock-products-risks-032": {
+      "prompt": "When interest rates fall, holders of callable bonds face which risk?",
+      "explanation": "When rates fall, issuers tend to call high-coupon bonds and refinance, so investors must reinvest the proceeds at lower rates.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Call risk and reinvestment risk",
+        "b": "Extension risk",
+        "c": "Purchasing-power (inflation) risk",
+        "d": "Currency (exchange-rate) risk"
+      },
+      "distractorExplanations": {
+        "b": "Extension risk occurs when rates rise and expected repayments slow, as with mortgage-backed securities.",
+        "c": "Purchasing-power risk is about inflation, not the issuer redeeming bonds early.",
+        "d": "Currency risk comes from exchange-rate moves on foreign investments."
+      }
+    },
+    "sie-full-mock-products-risks-033": {
+      "prompt": "A customer signs a letter of intent (LOI) to invest $50,000 in a fund family. Which statement is accurate?",
+      "explanation": "An LOI lets a customer receive a breakpoint price now by stating an intent to invest a set amount within 13 months. It may be backdated up to 90 days, and shares are held in escrow in case the goal is missed.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The customer has 13 months to invest, and the LOI may be backdated up to 90 days",
+        "b": "The customer is legally obligated to complete all purchases within the LOI period",
+        "c": "The LOI period lasts 24 months from the signing date and cannot be backdated",
+        "d": "The reduced charge applies even if the $50,000 is never reached"
+      },
+      "distractorExplanations": {
+        "b": "An LOI is not binding; if the customer falls short, the higher sales charge applies, using escrowed shares.",
+        "c": "The standard LOI period is 13 months.",
+        "d": "If the amount is not reached, the customer pays the sales charge for the amount actually invested."
+      }
+    },
+    "sie-full-mock-trading-accounts-001": {
+      "prompt": "A customer bought stock at $50, and it now trades at $62. To protect the gain if the price falls, the customer should enter a:",
+      "explanation": "A sell stop is placed below the market. If the stock falls to $58, the order becomes a market order to sell, locking in most of the gain.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Buy stop order at $58",
+        "b": "Sell limit order at $58",
+        "c": "Sell stop order at $58",
+        "d": "Buy limit order at $65"
+      },
+      "distractorExplanations": {
+        "a": "Buy stops are placed above the market to protect short positions or to buy on a breakout.",
+        "b": "A sell limit below the current price would execute immediately at $62 or better; it does not wait for a decline.",
+        "d": "A buy limit adds to the position; it does not protect the existing gain."
+      }
+    },
+    "sie-full-mock-trading-accounts-002": {
+      "prompt": "In a cash account, a customer buys stock and sells it before paying for the purchase. What is the consequence?",
+      "explanation": "Selling securities before paying for them in a cash account is freeriding. Under Regulation T, the account is frozen for 90 days, and the customer must pay in full before any purchase.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The firm must automatically convert the purchase into a margin loan for the customer",
+        "b": "Nothing happens, as long as the sale was profitable and settled on time",
+        "c": "The account can be frozen for 90 days, requiring cash in advance for any purchase",
+        "d": "The trades are canceled, and the customer keeps any gain from the sale"
+      },
+      "distractorExplanations": {
+        "a": "Cash accounts do not extend credit; the trade is a freeriding violation.",
+        "b": "Freeriding is a violation regardless of profit.",
+        "d": "The trade stands; the penalty is a freeze on the account."
+      }
+    },
+    "sie-full-mock-trading-accounts-003": {
+      "prompt": "A customer enters a limit order without specifying how long it should remain active. Unless otherwise stated, the order is:",
+      "explanation": "Orders are day orders unless the customer specifies otherwise, such as good-till-canceled. An unfilled day order expires at the close of that trading day.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A day order that expires at the end of the trading day",
+        "b": "A good-till-canceled order that stays open until filled or canceled",
+        "c": "Open until the end of the calendar month",
+        "d": "Open for 90 days and then canceled"
+      },
+      "distractorExplanations": {
+        "b": "GTC status must be specifically requested.",
+        "c": "There is no default month-long time in force.",
+        "d": "A 90-day term is not a standard default for orders."
+      }
+    },
+    "sie-full-mock-trading-accounts-004": {
+      "prompt": "Which statement about a short sale of stock is accurate?",
+      "explanation": "A short seller sells borrowed shares, hoping to buy them back cheaper. Because there is no ceiling on the stock price, the potential loss is unlimited, and the trade must be done in a margin account.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "It can be done in a cash account as long as the customer has enough cash to cover it",
+        "b": "The maximum loss is limited to the sale proceeds, because the stock was borrowed",
+        "c": "It must be done in a margin account, and the potential loss is theoretically unlimited",
+        "d": "No borrowing or locate is needed as long as the stock is listed on a national exchange"
+      },
+      "distractorExplanations": {
+        "a": "Short sales require borrowing stock, so they must be done in a margin account.",
+        "b": "A stock's price can keep rising, so the short seller's loss has no upper limit.",
+        "d": "Reg SHO requires a locate, and the shares must be borrowed for delivery."
+      }
+    },
+    "sie-full-mock-trading-accounts-005": {
+      "prompt": "A customer enters a buy limit order at $40 while the stock trades at $42. Which statement is correct?",
+      "explanation": "A buy limit order sets a maximum price. It fills only at the limit or better (lower), and the customer may miss the trade if the stock never falls to $40.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "It becomes a market order once the stock trades at $40",
+        "b": "It can execute only at $40 or lower, and execution is not guaranteed",
+        "c": "It will execute immediately at the current market price of $42",
+        "d": "It can execute only at $40 or higher, and execution is guaranteed"
+      },
+      "distractorExplanations": {
+        "a": "Turning into a market order at a trigger price describes a stop order.",
+        "c": "A buy limit cannot execute above its limit price.",
+        "d": "A buy limit sets the maximum price the customer will pay."
+      }
+    },
+    "sie-full-mock-trading-accounts-006": {
+      "prompt": "A customer buys $20,000 of stock in a new margin account. Regulation T initial margin is 50%. What is the minimum deposit?",
+      "explanation": "Reg T initial margin is 50% of the purchase: $20,000 × 50% = $10,000. By signing the margin agreement, the customer allows the firm to hypothecate (pledge) the securities as collateral for the loan.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "$2,000",
+        "b": "$5,000",
+        "c": "$10,000",
+        "d": "$20,000"
+      },
+      "distractorExplanations": {
+        "a": "$2,000 is FINRA's minimum equity for a margin account, but Reg T requires 50% of $20,000 here.",
+        "b": "$5,000 is 25% of the purchase, which matches FINRA's maintenance percentage, not the initial requirement.",
+        "d": "Paying the full amount would be a cash purchase; margin lets the customer borrow the rest."
+      }
+    },
+    "sie-full-mock-trading-accounts-007": {
+      "prompt": "A rep learns that a large institutional buy order is about to be entered in a stock and buys shares for her own account first. This is:",
+      "explanation": "Front running is trading ahead of a known customer or block order to profit from the expected price move. It is a prohibited practice.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Churning",
+        "b": "Front running",
+        "c": "Marking the close",
+        "d": "Painting the tape"
+      },
+      "distractorExplanations": {
+        "a": "Churning is excessive trading in a customer account to generate commissions.",
+        "c": "Marking the close is placing trades near the close to manipulate the closing price.",
+        "d": "Painting the tape is trading among parties to create misleading activity."
+      }
+    },
+    "sie-full-mock-trading-accounts-008": {
+      "prompt": "A customer buys stock in a regular-way trade on a Monday with no holidays that week. On which day does the trade settle?",
+      "explanation": "Regular-way settlement for most U.S. securities is T+1, one business day after the trade date. A Monday trade settles Tuesday.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Monday",
+        "b": "Tuesday",
+        "c": "Wednesday",
+        "d": "Thursday"
+      },
+      "distractorExplanations": {
+        "a": "Same-day settlement is cash settlement, not regular way.",
+        "c": "T+2 was the old regular-way cycle before the move to T+1 in May 2024.",
+        "d": "T+3 settlement has not been the standard for years."
+      }
+    },
+    "sie-full-mock-trading-accounts-009": {
+      "prompt": "A customer is short a stock at $30 and wants protection if the price rises sharply. Which order should the customer enter?",
+      "explanation": "A short seller loses money as the price rises. A buy stop above the market becomes a market order to buy and cover the short if the price climbs to the stop.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A sell stop below the current market",
+        "b": "A buy stop above the current market",
+        "c": "A buy limit below the current market",
+        "d": "A sell limit above the current market"
+      },
+      "distractorExplanations": {
+        "a": "Sell stops protect long positions against a decline.",
+        "c": "A buy limit below the market does not trigger on a price rise.",
+        "d": "Selling more stock does not protect a short position from a rally."
+      }
+    },
+    "sie-full-mock-trading-accounts-010": {
+      "prompt": "Without speaking to the customer, a rep buys shares for a non-discretionary account because she is sure the customer would approve. This is:",
+      "explanation": "Executing a trade without the customer's prior approval or written discretionary authority is unauthorized trading, regardless of outcome.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "A permissible time-and-price discretion order",
+        "b": "Acceptable if the trade turns out to be profitable",
+        "c": "Unauthorized trading",
+        "d": "A private securities transaction"
+      },
+      "distractorExplanations": {
+        "a": "Time-and-price discretion still requires the customer to choose the security, the action, and the amount.",
+        "b": "Profit does not cure the lack of authorization.",
+        "d": "A private securities transaction is outside the firm's business; this trade went through the firm without authorization."
+      }
+    },
+    "sie-full-mock-trading-accounts-011": {
+      "prompt": "A customer tells a rep, “Buy 500 shares of XYZ today at whatever price you think is best.” Which statement is correct?",
+      "explanation": "When the customer specifies the security, the action, and the amount, the rep may choose time and price without written discretionary authority. That authority is limited to the day it is granted.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "No written discretionary authority is needed, and the authority lasts for that day only",
+        "b": "Written discretionary authority must be signed before the order is entered",
+        "c": "The rep may also switch to a different stock if XYZ looks weak during the day",
+        "d": "The authority remains open for future days until the customer revokes it in writing"
+      },
+      "distractorExplanations": {
+        "b": "Choosing only time and price is not considered discretion requiring written authorization.",
+        "c": "Choosing the security requires written discretionary authority.",
+        "d": "Time-and-price authority expires at the end of the day unless the customer gives written instructions for a GTC order."
+      }
+    },
+    "sie-full-mock-trading-accounts-012": {
+      "prompt": "Two siblings open a joint account. Each wants their share to pass to their own estate, not automatically to the surviving sibling. Which registration fits?",
+      "explanation": "In a tenants-in-common account, each owner's percentage interest passes to that owner's estate at death. With JTWROS, the survivor takes the whole account.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Joint tenants with rights of survivorship",
+        "b": "A UTMA custodial account",
+        "c": "An individual account with a trading authorization",
+        "d": "Tenants in common"
+      },
+      "distractorExplanations": {
+        "a": "JTWROS passes a deceased owner's interest to the surviving owner, not to the estate.",
+        "b": "A UTMA account is for a single minor beneficiary and is not a joint registration.",
+        "c": "An individual account has only one owner."
+      }
+    },
+    "sie-full-mock-trading-accounts-013": {
+      "prompt": "Which statement about a UTMA/UGMA custodial account is accurate?",
+      "explanation": "Custodial accounts hold irrevocable gifts for a single minor, managed by one custodian until the minor reaches the age set by state law. They are registered under the minor's Social Security number.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "It can name two minors as joint beneficial owners of the account's assets",
+        "b": "The custodian may buy stock on margin for the minor",
+        "c": "It has one custodian and one minor, and the assets belong to the minor",
+        "d": "The assets return to the donor when the minor reaches majority"
+      },
+      "distractorExplanations": {
+        "a": "A custodial account is for exactly one minor.",
+        "b": "Margin trading is not permitted in custodial accounts.",
+        "d": "Gifts to a custodial account are irrevocable and pass to the minor."
+      }
+    },
+    "sie-full-mock-trading-accounts-014": {
+      "prompt": "Under the Customer Identification Program, which information must a firm obtain from an individual before opening an account?",
+      "explanation": "CIP, required under the USA PATRIOT Act, requires firms to collect and verify at least the customer's name, date of birth, address, and an identification number, such as a Social Security number for U.S. persons.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Employer, occupation, annual income, and net worth",
+        "b": "A credit report and two bank references from the customer",
+        "c": "Only a signed new account agreement and a W-9 form",
+        "d": "Name, date of birth, address, and an identification number"
+      },
+      "distractorExplanations": {
+        "a": "These help with suitability and the customer profile but are not the CIP minimum.",
+        "b": "CIP does not require credit reports or bank references.",
+        "c": "A signature alone does not verify identity."
+      }
+    },
+    "sie-full-mock-trading-accounts-015": {
+      "prompt": "A rep wants to help a friend's startup sell shares to investors and will be paid for it. What must happen first?",
+      "explanation": "Participating in securities sales outside the firm is a private securities transaction (selling away). The rep must give prior written notice; if she is compensated, the firm must approve or disapprove it, and an approved transaction is recorded on the firm's books and supervised.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Nothing, because the startup is not a FINRA member",
+        "b": "A filing with the SEC instead of notice to her firm",
+        "c": "Prior written notice to her firm, which can approve or reject it",
+        "d": "Verbal notice to her branch manager after the sales are completed"
+      },
+      "distractorExplanations": {
+        "a": "Private securities transactions are regulated because of the rep's association with a member firm.",
+        "b": "The obligation runs to her employing firm, not to an SEC filing in place of notice.",
+        "d": "Notice must be written and given before participating."
+      }
+    },
+    "sie-full-mock-trading-accounts-016": {
+      "prompt": "A rep makes frequent trades in a customer's account, generating commissions that are excessive in light of the customer's objectives. This is:",
+      "explanation": "Churning is excessive trading for the rep's benefit. Regulators look at turnover and cost-to-equity ratios; it violates Reg BI's care obligation and FINRA's quantitative suitability standard.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Front running",
+        "b": "Freeriding",
+        "c": "Selling away",
+        "d": "Churning"
+      },
+      "distractorExplanations": {
+        "a": "Front running is trading ahead of a known customer or block order.",
+        "b": "Freeriding is selling securities in a cash account before paying for them.",
+        "c": "Selling away is participating in securities transactions outside the firm."
+      }
+    },
+    "sie-full-mock-trading-accounts-017": {
+      "prompt": "Under T+1 regular-way settlement, how does the ex-dividend date relate to the record date?",
+      "explanation": "With T+1 settlement, a buyer on the record date would not settle in time, so the ex-dividend date and record date generally coincide. Buyers on or after the ex-date do not receive the dividend.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The ex-date is one business day before the record date",
+        "b": "The ex-date is one business day after the payable date",
+        "c": "They are generally the same business day",
+        "d": "The issuer's board sets the ex-date after the dividend is paid"
+      },
+      "distractorExplanations": {
+        "a": "That was the relationship under T+2 settlement, before May 2024.",
+        "b": "The payable date comes after both the ex-date and the record date.",
+        "d": "The exchange or FINRA sets the ex-date based on settlement, before payment."
+      }
+    },
+    "sie-full-mock-trading-accounts-018": {
+      "prompt": "A rep tells a customer, “If this stock drops, I'll reimburse your loss.” Which statement is accurate?",
+      "explanation": "FINRA rules prohibit members and associated persons from guaranteeing customers against loss. Reps must describe risks honestly rather than promise outcomes.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "It is allowed if the rep pays from personal funds",
+        "b": "Guaranteeing a customer against loss is prohibited",
+        "c": "It is allowed if the promise is put in writing",
+        "d": "It is allowed for accounts with more than $100,000"
+      },
+      "distractorExplanations": {
+        "a": "Using personal funds does not make a loss guarantee permissible.",
+        "c": "A written guarantee is still a prohibited guarantee.",
+        "d": "No account size makes guarantees against loss permissible."
+      }
+    },
+    "sie-full-mock-trading-accounts-020": {
+      "prompt": "A customer's broker-dealer fails. The account holds $600,000 of securities and no cash. How much does SIPC protect?",
+      "explanation": "SIPC protects up to $500,000 per customer per separate capacity, including up to $250,000 in cash, when a member broker-dealer fails. It does not protect against market losses.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "All $600,000 of the securities",
+        "b": "Up to $500,000 of the securities",
+        "c": "Up to $250,000 of the securities",
+        "d": "Nothing, because SIPC covers only cash"
+      },
+      "distractorExplanations": {
+        "a": "SIPC coverage is limited to $500,000 per customer per separate capacity.",
+        "c": "$250,000 is SIPC's cash sublimit (and the FDIC deposit limit), not its total limit.",
+        "d": "SIPC covers both securities and cash, within limits."
+      }
+    },
+    "sie-full-mock-trading-accounts-021": {
+      "prompt": "Which order type guarantees execution in a normal market but does not guarantee the price?",
+      "explanation": "A market order is executed immediately at the best available price. It sacrifices price control for certainty of execution.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Limit order",
+        "b": "Stop-limit order",
+        "c": "All-or-none limit order",
+        "d": "Market order"
+      },
+      "distractorExplanations": {
+        "a": "A limit order guarantees the price or better but not execution.",
+        "b": "Once triggered, a stop-limit becomes a limit order, so execution is not guaranteed.",
+        "c": "An AON order must be filled completely at the limit or not at all, so execution is not guaranteed."
+      }
+    },
+    "sie-full-mock-trading-accounts-022": {
+      "prompt": "When opening an account, a firm asks the customer for a trusted contact person. How may the firm use this contact?",
+      "explanation": "Under FINRA Rule 4512, firms must make a reasonable effort to obtain a trusted contact. The firm may contact that person about possible financial exploitation or to confirm the customer's health, whereabouts, or legal representatives.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "To place trades in the account whenever the customer cannot be reached by the firm",
+        "b": "To discuss suspected financial exploitation or confirm the customer's whereabouts",
+        "c": "To approve withdrawals and transfers out of the account on the customer's behalf",
+        "d": "To act as a joint owner of the account"
+      },
+      "distractorExplanations": {
+        "a": "A trusted contact has no trading authority.",
+        "c": "A trusted contact cannot authorize transactions or withdrawals.",
+        "d": "Naming a trusted contact does not create any ownership interest."
+      }
+    },
+    "sie-full-mock-trading-accounts-023": {
+      "prompt": "A customer sells XYZ at a loss on June 10 and buys XYZ back on June 25. What is the tax consequence?",
+      "explanation": "A wash sale occurs when substantially identical securities are bought within 30 days before or after a sale at a loss. The loss is disallowed currently and added to the new shares' cost basis.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The loss is fully deductible in the current year because the shares were sold first",
+        "b": "The loss is converted into a short-term capital gain",
+        "c": "FINRA prohibits buying the same stock back within 30 days of the losing sale",
+        "d": "The loss is disallowed for now and added to the cost basis of the new shares"
+      },
+      "distractorExplanations": {
+        "a": "Buying substantially identical shares within 30 days triggers the wash-sale rule.",
+        "b": "A wash sale defers the loss; it does not create a gain.",
+        "c": "The wash-sale rule is an IRS tax rule; it does not prohibit the trade."
+      }
+    },
+    "sie-full-mock-regulatory-framework-001": {
+      "prompt": "Which statement about supervision at a FINRA member firm is accurate?",
+      "explanation": "FINRA Rule 3110 requires firms to establish a supervisory system and written supervisory procedures (WSPs), with registered principals responsible for supervising associated persons.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Supervision is required only for reps who handle discretionary customer accounts",
+        "b": "The firm may hand off all supervision to the SEC",
+        "c": "The firm must keep written supervisory procedures and assign principals to supervise",
+        "d": "Reps who have passed the SIE and a representative exam are exempt from supervision"
+      },
+      "distractorExplanations": {
+        "a": "All associated persons must be supervised.",
+        "b": "Member firms cannot shift their supervisory duties to regulators.",
+        "d": "Passing an exam does not remove the firm's supervisory obligation."
+      }
+    },
+    "sie-full-mock-regulatory-framework-002": {
+      "prompt": "Which event would subject a person to statutory disqualification?",
+      "explanation": "Statutory disqualification includes, among other events, any felony conviction or certain securities-related misdemeanors within the past 10 years, and expulsion or suspension by an SRO. A disqualified person needs relief to associate with a member firm.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A felony conviction within the past 10 years",
+        "b": "A speeding ticket last year",
+        "c": "A personal bankruptcy filed three years ago",
+        "d": "A customer complaint that was later withdrawn"
+      },
+      "distractorExplanations": {
+        "b": "Minor traffic offenses do not cause statutory disqualification.",
+        "c": "Bankruptcy must be reported on Form U4, but it is not a statutory disqualification.",
+        "d": "A withdrawn complaint is not a disqualifying event."
+      }
+    },
+    "sie-full-mock-regulatory-framework-003": {
+      "prompt": "A customer makes several cash deposits of $9,500 on consecutive days. What should the firm consider?",
+      "explanation": "Breaking cash deposits into amounts just under $10,000 to avoid a Currency Transaction Report is structuring. Firms should investigate and file a Suspicious Activity Report when required, and must keep the filing confidential.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Nothing, because each deposit is below the $10,000 currency reporting threshold",
+        "b": "Tell the customer that a SAR is being filed",
+        "c": "Possible structuring: file a SAR if warranted without telling the customer",
+        "d": "Close the account at once, return the cash, and make no report"
+      },
+      "distractorExplanations": {
+        "a": "Splitting deposits to stay under the reporting threshold is a red flag for structuring.",
+        "b": "Firms must not disclose a SAR filing to the customer.",
+        "d": "Closing the account does not replace the firm's reporting obligations."
+      }
+    },
+    "sie-full-mock-regulatory-framework-004": {
+      "prompt": "Which statement about the SIE exam is accurate?",
+      "explanation": "The SIE tests basic industry knowledge. It does not require sponsorship, the result is valid for four years, and passing it alone does not qualify a person to conduct securities business.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Passing it alone allows you to sell securities to the public through a firm",
+        "b": "It requires sponsorship by a FINRA member firm before you can schedule it",
+        "c": "A passing result never expires, even if you never join a firm",
+        "d": "It requires no firm sponsorship, and a passing result is valid for four years"
+      },
+      "distractorExplanations": {
+        "a": "Registration also requires firm association and the appropriate representative exam, such as the Series 7.",
+        "b": "Anyone 18 or older can take the SIE without firm sponsorship.",
+        "c": "A passing SIE result is valid for four years."
+      }
+    },
+    "sie-full-mock-regulatory-framework-005": {
+      "prompt": "A firm plans to send a market commentary piece to 40 retail investors within a 30-day period. How is it classified under FINRA communications rules?",
+      "explanation": "A written communication distributed to more than 25 retail investors within a 30-calendar-day period is a retail communication. Most retail communications need principal approval before use.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Correspondence",
+        "b": "Institutional communication",
+        "c": "Retail communication",
+        "d": "Independently prepared reprint"
+      },
+      "distractorExplanations": {
+        "a": "Correspondence goes to 25 or fewer retail investors within a 30-calendar-day period.",
+        "b": "Institutional communications go only to institutional investors.",
+        "d": "A reprint is an article from an independent publisher, not the firm's own commentary."
+      }
+    },
+    "sie-full-mock-regulatory-framework-006": {
+      "prompt": "Which statement about continuing education (CE) for registered persons is accurate?",
+      "explanation": "Registered persons must complete the Regulatory Element annually and take part in their firm's Firm Element training. Failing the Regulatory Element on time makes a registration CE-inactive.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "CE is required only in the first year after registration",
+        "b": "The Regulatory Element must be completed every year",
+        "c": "The SEC designs and delivers the Firm Element",
+        "d": "CE applies only to registered principals"
+      },
+      "distractorExplanations": {
+        "a": "CE obligations continue throughout registration.",
+        "c": "Each member firm designs its own Firm Element training.",
+        "d": "All registered persons must meet CE requirements."
+      }
+    },
+    "sie-full-mock-regulatory-framework-007": {
+      "prompt": "A registered representative leaves her firm. Which statement about Form U5 is accurate?",
+      "explanation": "When an associated person's registration ends, the firm must file Form U5 within 30 days and provide the individual with a copy. It discloses the reason for termination and certain reportable events.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "She must file it herself with FINRA within 90 days",
+        "b": "The firm must file it within 30 days and give her a copy",
+        "c": "It is filed only if she was discharged for cause by the firm",
+        "d": "It registers her with her new firm"
+      },
+      "distractorExplanations": {
+        "a": "The firm, not the individual, files Form U5.",
+        "c": "A U5 is filed for every termination, voluntary or not.",
+        "d": "Registration with a new firm uses Form U4."
+      }
+    },
+    "sie-full-mock-capital-markets-012": {
+      "options": {
+        "b": "A registered representative who only executes unsolicited agency trades and never gives any advice",
+        "c": "A transfer agent that maintains shareholder records and processes ownership changes for an issuer",
+        "d": "A bank that accepts FDIC-insured deposits and makes loans but gives no securities advice for a fee"
+      },
+      "distractorExplanations": {
+        "d": "Taking deposits and making loans does not make a bank an investment adviser; advising on securities for compensation does."
+      }
+    },
+    "sie-full-mock-products-risks-001": {
+      "prompt": "A customer may need cash for a home purchase in nine months. Why do the customer's liquidity needs matter when recommending products?",
+      "options": {
+        "b": "They eliminate market risk entirely, so any product becomes suitable for any holding period",
+        "c": "They require every customer with a cash need to hold only preferred stock until the purchase",
+        "d": "They apply only to institutional accounts, so retail customers' cash needs can be ignored"
+      }
+    },
+    "sie-full-mock-products-risks-011": {
+      "options": {
+        "b": "They never trade on exchanges during market hours, so investors cannot exit a position quickly",
+        "c": "They are FDIC-insured deposit products, so their long-term risk is too low to justify the fees",
+        "d": "They lock in a fixed multiple of the index's annual return, which caps the investor's upside"
+      },
+      "distractorExplanations": {
+        "c": "ETFs are securities, not FDIC-insured bank deposits.",
+        "d": "The leverage multiple applies to each day's return, not the annual return, so long-run results can differ widely from 2x or 3x."
+      }
+    },
+    "sie-full-mock-trading-accounts-019": {
+      "prompt": "When a corporation opens a brokerage account, which documentation is the firm most likely to require?",
+      "options": {
+        "b": "Only the CEO’s personal driver’s license and Social Security number, with no entity documents",
+        "c": "An options agreement signed by a third party who has no authority over the corporation",
+        "d": "Proof that the corporation is registered as an MSRB member before it can open the account"
+      }
+    }
+  },
+  "sie-quick-diagnostic": {
+    "sie-full-mock-capital-markets-001": {
+      "prompt": "An issuer is preparing an initial public offering. Which federal law primarily governs registration of the new issue and delivery of a prospectus?",
+      "explanation": "The Securities Act of 1933 (the 'paper act') governs new issues in the primary market: the issuer files a registration statement with the SEC and investors receive a prospectus.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Securities Act of 1933",
+        "b": "Securities Exchange Act of 1934",
+        "c": "Investment Company Act of 1940",
+        "d": "Trust Indenture Act of 1939"
+      },
+      "distractorExplanations": {
+        "b": "The 1934 Act regulates secondary-market trading, broker-dealers, and exchanges, and it created the SEC.",
+        "c": "The 1940 Act regulates investment companies such as mutual funds, not every new corporate issue.",
+        "d": "The Trust Indenture Act requires a trust indenture for certain corporate bond offerings; it is not the general registration law."
+      }
+    },
+    "sie-full-mock-capital-markets-002": {
+      "prompt": "Under Regulation D, which individual qualifies as an accredited investor?",
+      "explanation": "An individual is accredited with income over $200,000 ($300,000 jointly) in each of the last two years with the same expected this year, or net worth over $1 million excluding the primary residence.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A single person whose only major asset is a primary residence worth $1.2 million",
+        "b": "A single person who earned $210,000 in each of the last two years and expects the same this year",
+        "c": "A married couple with $250,000 of joint income in each of the last two years and the same expected this year",
+        "d": "Any investor who signs a written statement acknowledging that they understand the risks of private placements"
+      },
+      "distractorExplanations": {
+        "a": "The value of a primary residence is excluded from the $1 million net-worth test.",
+        "c": "The joint-income test is $300,000; $250,000 does not meet it.",
+        "d": "A risk acknowledgment does not make someone accredited; the investor must meet income, net-worth, or other specified criteria."
+      }
+    },
+    "sie-full-mock-capital-markets-003": {
+      "prompt": "Which statement about the Securities and Exchange Commission (SEC) is accurate?",
+      "explanation": "The SEC was created by the Securities Exchange Act of 1934. It enforces federal securities laws, oversees exchanges and SROs, and reviews registration statements without passing on investment merit.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "It is a self-regulatory organization funded by member firm fees",
+        "b": "It is a federal agency that enforces the federal securities laws",
+        "c": "It insures customer accounts when a broker-dealer fails",
+        "d": "It approves the investment merits of the securities it registers"
+      },
+      "distractorExplanations": {
+        "a": "That describes FINRA. The SEC is a government agency that oversees SROs such as FINRA.",
+        "c": "SIPC, not the SEC, protects customers of failed broker-dealers.",
+        "d": "The SEC does not approve or endorse securities; claiming it does is prohibited."
+      }
+    },
+    "sie-full-mock-capital-markets-004": {
+      "prompt": "Which economic indicator is generally classified as a lagging indicator?",
+      "explanation": "Lagging indicators change after the economy has already turned. Examples include average duration of unemployment, the prime rate, and outstanding commercial loans.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Building permits for new private housing",
+        "b": "Average duration of unemployment",
+        "c": "Industrial production",
+        "d": "Stock market prices"
+      },
+      "distractorExplanations": {
+        "a": "Building permits are a leading indicator; they change before the economy turns.",
+        "c": "Industrial production is a coincident indicator; it moves with the economy.",
+        "d": "Stock prices are a leading indicator because markets anticipate economic changes."
+      }
+    },
+    "sie-full-mock-capital-markets-005": {
+      "prompt": "A customer wants a U.S. Treasury security whose principal adjusts with inflation. Which security fits?",
+      "explanation": "TIPS principal is adjusted with the Consumer Price Index, and the fixed coupon rate is applied to the adjusted principal, which helps protect purchasing power.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Treasury bills bought at a discount at weekly auctions",
+        "b": "Treasury STRIPS created from Treasury notes and bonds",
+        "c": "GNMA pass-through certificates",
+        "d": "Treasury Inflation-Protected Securities (TIPS)"
+      },
+      "distractorExplanations": {
+        "a": "T-bills are short-term discount securities; their principal is not adjusted for inflation.",
+        "b": "STRIPS are zero-coupon Treasury securities with no inflation adjustment.",
+        "c": "GNMA certificates are mortgage-backed securities exposed to prepayment risk, not inflation-indexed Treasuries."
+      }
+    },
+    "sie-full-mock-capital-markets-006": {
+      "prompt": "A firm sells bonds to a customer out of its own inventory and adds a markup. In this trade, the firm acted as:",
+      "explanation": "A dealer acts as principal, buying for or selling from its own account and earning a markup or markdown. A broker acts as agent and earns a commission.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "A broker (agent)",
+        "b": "A transfer agent",
+        "c": "An underwriter in a best-efforts offering",
+        "d": "A dealer (principal)"
+      },
+      "distractorExplanations": {
+        "a": "An agent arranges a trade between buyer and seller for a commission and does not sell from its own inventory.",
+        "b": "Transfer agents maintain issuer ownership records; they do not sell bonds from inventory.",
+        "c": "In a best-efforts offering the underwriter acts as agent for the issuer and does not own the securities."
+      }
+    },
+    "sie-full-mock-capital-markets-007": {
+      "prompt": "To ease monetary policy and lower short-term rates, the Federal Reserve is most likely to:",
+      "explanation": "When the Fed buys securities in the open market, it adds reserves to the banking system, which increases the money supply and puts downward pressure on short-term rates.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Sell Treasury securities through open market operations",
+        "b": "Raise the discount rate",
+        "c": "Buy Treasury securities through open market operations",
+        "d": "Raise federal income tax rates"
+      },
+      "distractorExplanations": {
+        "a": "Selling securities drains reserves from banks and tightens monetary policy.",
+        "b": "A higher discount rate makes borrowing from the Fed more expensive, which tightens policy.",
+        "d": "Tax rates are fiscal policy, set by Congress and the President, not by the Fed."
+      }
+    },
+    "sie-full-mock-capital-markets-008": {
+      "prompt": "Which organization writes conduct rules for broker-dealers and their registered representatives and administers the SIE?",
+      "explanation": "FINRA is the self-regulatory organization for broker-dealers. It writes and enforces member rules, registers representatives, and administers qualification exams including the SIE.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The SEC",
+        "b": "The MSRB",
+        "c": "FINRA",
+        "d": "NASAA"
+      },
+      "distractorExplanations": {
+        "a": "The SEC is the federal regulator that oversees FINRA, but FINRA writes member conduct rules and administers the SIE.",
+        "b": "The MSRB writes rules for municipal securities dealers and advisors but does not enforce them or administer the SIE.",
+        "d": "NASAA is an association of state regulators; it writes the Series 63, 65, and 66 exams, not the SIE."
+      }
+    },
+    "sie-full-mock-capital-markets-009": {
+      "prompt": "Which sequence correctly lists the phases of the business cycle in order?",
+      "explanation": "The business cycle moves from expansion to a peak, then contraction to a trough, and back to expansion. A recession is a significant, broad decline in economic activity during the contraction phase.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Peak, expansion, trough, contraction",
+        "b": "Contraction, peak, expansion, trough",
+        "c": "Expansion, peak, contraction, trough",
+        "d": "Trough, peak, expansion, contraction"
+      },
+      "distractorExplanations": {
+        "a": "Expansion leads up to a peak, not away from it; this order is out of sequence.",
+        "b": "A contraction ends in a trough, not a peak.",
+        "d": "After a trough the economy expands before reaching a peak."
+      }
+    },
+    "sie-full-mock-products-risks-002": {
+      "prompt": "A customer owns a brokered CD and needs to sell it before maturity. Which risk is most relevant?",
+      "explanation": "Brokered CDs can be sold in the secondary market before maturity. If rates have risen, the CD's market price falls, so the customer may receive less than par.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Loss of FDIC coverage on the principal because it was sold early",
+        "b": "Interest-rate risk: it may sell below par if rates have risen",
+        "c": "Unlimited loss, because brokered CDs are leveraged products",
+        "d": "Default risk on the broker-dealer that sold the CD"
+      },
+      "distractorExplanations": {
+        "a": "FDIC insurance covers the issuing bank's failure; it does not guarantee a secondary-market sale price.",
+        "c": "CDs are not leveraged; any loss on an early sale comes from market price changes.",
+        "d": "The CD is an obligation of the issuing bank, not of the broker-dealer that sold it."
+      }
+    },
+    "sie-full-mock-products-risks-003": {
+      "prompt": "A mutual fund has a net asset value of $20.00 and a public offering price of $21.05. The $1.05 difference represents:",
+      "explanation": "Public offering price = NAV + sales charge. Here $21.05 − $20.00 = $1.05, which is about 5% of the POP.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "The fund's annual 12b-1 fee",
+        "b": "The front-end sales charge",
+        "c": "The fund's management fee",
+        "d": "A contingent deferred sales charge"
+      },
+      "distractorExplanations": {
+        "a": "12b-1 fees are deducted from fund assets each year; they are not added to the purchase price.",
+        "c": "The management fee is an ongoing expense paid from fund assets, not part of the offering price.",
+        "d": "A CDSC is charged when shares are redeemed, not added when they are bought."
+      }
+    },
+    "sie-full-mock-products-risks-004": {
+      "prompt": "XYZ stock trades at $57. What is the intrinsic value of an XYZ 50 call that was purchased for a $9 premium?",
+      "explanation": "Call intrinsic value = stock price − strike when positive: $57 − $50 = $7. The remaining $2 of the $9 premium is time value.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "$0",
+        "b": "$2",
+        "c": "$7",
+        "d": "$9"
+      },
+      "distractorExplanations": {
+        "a": "A call is in the money when the stock price is above the strike, so it has intrinsic value here.",
+        "b": "$2 is the time value ($9 premium − $7 intrinsic value).",
+        "d": "$9 is the premium, which equals intrinsic value plus time value."
+      }
+    },
+    "sie-full-mock-products-risks-005": {
+      "prompt": "An investor buys 1 ABC 40 put for a $3 premium. What are the breakeven and the maximum gain per share?",
+      "explanation": "Long put breakeven = strike − premium = $40 − $3 = $37. The maximum gain occurs if the stock falls to zero: $37 per share.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Breakeven $43; maximum gain unlimited",
+        "b": "Breakeven $37; maximum gain $37",
+        "c": "Breakeven $37; maximum gain $3",
+        "d": "Breakeven $43; maximum gain $40"
+      },
+      "distractorExplanations": {
+        "a": "Strike plus premium is the breakeven for a call; a put's gain is capped because the stock cannot fall below zero.",
+        "c": "A $3 maximum gain is the put writer's (seller's) maximum gain, not the buyer's.",
+        "d": "Put breakeven is strike minus premium, and the maximum gain is that breakeven amount."
+      }
+    },
+    "sie-full-mock-products-risks-006": {
+      "prompt": "How does an ETF differ from a traditional open-end mutual fund?",
+      "explanation": "ETFs are bought and sold on exchanges at market prices during the trading day and can be bought on margin or sold short. Mutual fund shares are bought from and redeemed by the fund at the next computed NAV.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "ETF shares are redeemed by the fund at the next computed NAV for retail investors",
+        "b": "ETFs are always actively managed and never track an index",
+        "c": "ETF purchases always include a front-end sales load",
+        "d": "ETF shares trade on an exchange throughout the day at market prices"
+      },
+      "distractorExplanations": {
+        "a": "Redemption at the next NAV describes an open-end mutual fund; retail ETF investors sell on an exchange.",
+        "b": "Many ETFs are passively managed index trackers.",
+        "c": "ETFs trade like stocks, usually with commissions or spreads, not mutual fund sales loads."
+      }
+    },
+    "sie-full-mock-products-risks-007": {
+      "prompt": "A customer places an order to buy open-end mutual fund shares at 2:30 p.m. Eastern time. At what price will the order be filled?",
+      "explanation": "Mutual funds use forward pricing: an order receives the next NAV (plus any sales charge) calculated after it is received, typically at the 4 p.m. Eastern close.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The NAV computed at the previous day's close, since the order came in midday",
+        "b": "The price of the last trade in the fund's shares on the exchange",
+        "c": "The NAV in effect at the exact moment the order was entered at 2:30 p.m.",
+        "d": "The next price computed after the order, normally at that day's close"
+      },
+      "distractorExplanations": {
+        "a": "Using the prior day's price would be backward pricing, which is not allowed.",
+        "b": "Open-end fund shares do not trade on an exchange; they are bought from the fund.",
+        "c": "Mutual funds do not price continuously; orders get the next calculated price."
+      }
+    },
+    "sie-full-mock-products-risks-008": {
+      "prompt": "Which statement about a preliminary prospectus (red herring) is accurate?",
+      "explanation": "During the cooling-off period, a red herring may be distributed so customers can give non-binding indications of interest. It lacks the final price, and sales cannot occur until the registration is effective.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "It lets the firm accept binding orders before the registration becomes effective",
+        "b": "It contains the final public offering price and the effective date of the registration",
+        "c": "It must be approved by the SEC as to the accuracy of its contents",
+        "d": "It may be used to gather indications of interest, but it omits the final offering price"
+      },
+      "distractorExplanations": {
+        "a": "No sales or binding orders are allowed during the cooling-off period.",
+        "b": "The final price and effective date appear in the final prospectus.",
+        "c": "The SEC does not approve the accuracy or adequacy of a prospectus."
+      }
+    },
+    "sie-full-mock-products-risks-009": {
+      "prompt": "Which preferred stock feature requires omitted past dividends to be paid before common stockholders receive any dividend?",
+      "explanation": "With cumulative preferred, missed dividends accumulate as arrears and must be paid before any common dividend.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Cumulative",
+        "b": "Callable",
+        "c": "Convertible",
+        "d": "Participating"
+      },
+      "distractorExplanations": {
+        "b": "A call feature lets the issuer redeem the shares; it says nothing about missed dividends.",
+        "c": "A conversion feature lets holders exchange preferred for common shares.",
+        "d": "Participating preferred may receive extra dividends above the stated rate; it does not cover arrears."
+      }
+    },
+    "sie-full-mock-products-risks-010": {
+      "prompt": "Which investment company has a fixed, unmanaged portfolio, issues redeemable units, and has a set termination date?",
+      "explanation": "A UIT buys a fixed portfolio, which is supervised but not actively managed. It issues redeemable units and terminates on a stated date.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Closed-end management company",
+        "b": "Open-end management company",
+        "c": "Exchange-traded fund",
+        "d": "Unit investment trust"
+      },
+      "distractorExplanations": {
+        "a": "Closed-end funds are actively managed and their shares trade in the market rather than being redeemed.",
+        "b": "Open-end funds are managed, continuously offer new shares, and have no set termination date.",
+        "c": "ETF shares trade on an exchange throughout the day, and most ETFs have no termination date."
+      }
+    },
+    "sie-full-mock-products-risks-012": {
+      "prompt": "A closed-end fund's shares trade at $18 while its NAV is $20. Which statement is correct?",
+      "explanation": "Closed-end funds issue a fixed number of shares that trade on exchanges. Their market price can be at a premium or a discount to NAV.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The fund must redeem shares at $20 whenever a shareholder asks",
+        "b": "The fund will keep issuing new shares at $20 to new investors until the gap closes",
+        "c": "The shares trade at a discount because the price is set by market supply and demand",
+        "d": "This cannot happen, because closed-end fund shares are required to trade at their NAV"
+      },
+      "distractorExplanations": {
+        "a": "Closed-end funds do not redeem shares; investors sell them in the secondary market.",
+        "b": "Closed-end funds have a fixed number of shares after the initial offering.",
+        "d": "Closed-end shares can trade above or below NAV."
+      }
+    },
+    "sie-full-mock-products-risks-013": {
+      "prompt": "If market interest rates rise, which bond's price would typically fall the most?",
+      "explanation": "Bond prices and yields move inversely. Longer maturities and lower coupons increase sensitivity (duration), so a long-term zero-coupon bond is the most affected.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "A 30-year bond with an 8% coupon",
+        "b": "A 2-year Treasury note",
+        "c": "A 6-month Treasury bill",
+        "d": "A 30-year zero-coupon bond"
+      },
+      "distractorExplanations": {
+        "a": "Higher coupons return cash sooner, so this bond is less price-sensitive than a zero of the same maturity.",
+        "b": "Short maturities have relatively little price sensitivity to rate changes.",
+        "c": "A T-bill matures quickly, so a rate change has little effect on its price."
+      }
+    },
+    "sie-full-mock-products-risks-014": {
+      "prompt": "During the accumulation phase of a variable annuity, who bears the investment risk of the separate account?",
+      "explanation": "Variable annuity values depend on the performance of separate-account subaccounts, so the contract owner bears market risk. Variable annuities are securities and require a securities registration to sell.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The contract owner",
+        "b": "The insurance company",
+        "c": "The FDIC",
+        "d": "The broker-dealer that sold the contract"
+      },
+      "distractorExplanations": {
+        "b": "The insurer bears investment risk in a fixed annuity, not in a variable annuity's separate account.",
+        "c": "Annuities are not bank deposits and are not FDIC-insured.",
+        "d": "The selling firm does not guarantee subaccount performance."
+      }
+    },
+    "sie-full-mock-products-risks-015": {
+      "prompt": "Which statement about commercial paper is accurate?",
+      "explanation": "Commercial paper is a money market instrument: short-term (maximum 270 days for the registration exemption), unsecured, and usually sold at a discount by highly rated corporations.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "It is long-term corporate debt secured by a first lien on the issuer's real estate",
+        "b": "It is a municipal note backed by anticipated tax collections",
+        "c": "It is short-term, unsecured corporate debt that is typically issued at a discount",
+        "d": "It is short-term debt backed by the full faith and credit of the U.S. government"
+      },
+      "distractorExplanations": {
+        "a": "That describes a mortgage bond, not commercial paper.",
+        "b": "That describes a tax anticipation note (TAN).",
+        "d": "Commercial paper is a corporate obligation, not a government guarantee."
+      }
+    },
+    "sie-full-mock-products-risks-016": {
+      "prompt": "A customer says, “My money market fund is basically a bank savings account.” Which response is accurate?",
+      "explanation": "Money market mutual funds invest in short-term debt and seek a stable value, but they are not bank deposits, are not FDIC-insured, and can lose money.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Yes — it is FDIC-insured up to $250,000 per depositor, the same as a savings account",
+        "b": "The fund sponsor guarantees its $1.00 share price, so the principal can never decline",
+        "c": "It is not FDIC-insured, and its value is not guaranteed even though it seeks a stable value",
+        "d": "It invests mainly in long-term corporate bonds, which is why it pays more than savings"
+      },
+      "distractorExplanations": {
+        "a": "Money market funds are securities, not bank deposits, so they are not FDIC-insured.",
+        "b": "Sponsors do not guarantee the share price; a fund can lose value.",
+        "d": "Money market funds hold short-term, high-quality debt instruments."
+      }
+    },
+    "sie-full-mock-products-risks-017": {
+      "prompt": "A callable bond is trading at a premium. Which of its yields will be the lowest?",
+      "explanation": "For a premium bond the order is nominal yield > current yield > yield to maturity > yield to call, because the premium is lost faster if the bond is called early.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Nominal (coupon) yield",
+        "b": "Current yield",
+        "c": "Yield to maturity",
+        "d": "Yield to call"
+      },
+      "distractorExplanations": {
+        "a": "For a premium bond, the nominal yield is the highest of the yields.",
+        "b": "Current yield falls below the coupon for a premium bond but stays above YTM and YTC.",
+        "c": "YTM is lower than current yield but higher than YTC for a premium callable bond."
+      }
+    },
+    "sie-full-mock-products-risks-018": {
+      "prompt": "A retired customer wants current income with moderate risk. Which recommendation fits best?",
+      "explanation": "An income objective prioritizes regular cash flow. Investment-grade bonds and dividend-paying stocks provide income with moderate risk.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Growth stocks that reinvest earnings and pay no dividends",
+        "b": "Investment-grade bonds and dividend-paying stocks",
+        "c": "Long-dated call options on technology stocks",
+        "d": "Zero-coupon STRIPS maturing in 20 years"
+      },
+      "distractorExplanations": {
+        "a": "Non-dividend growth stocks do not provide current income.",
+        "c": "Options are speculative and produce no income for the buyer.",
+        "d": "Zero-coupon bonds pay nothing until maturity, so they do not meet a current-income objective."
+      }
+    },
+    "sie-full-mock-products-risks-019": {
+      "prompt": "Which statement correctly compares warrants with stock rights?",
+      "explanation": "Warrants are long-term instruments, often attached to bonds or preferred stock to make them more attractive. Rights are short-term and let existing shareholders keep their proportionate ownership.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Warrants are typically long-term and often attached to bonds; rights are short-term",
+        "b": "Rights are long-term and are usually issued as a sweetener with bonds",
+        "c": "Warrants are normally issued with an exercise price set below the current market price",
+        "d": "Both are issued only to existing common shareholders, pro rata"
+      },
+      "distractorExplanations": {
+        "b": "This reverses the two: warrants are the long-term sweeteners, and rights expire quickly.",
+        "c": "Warrants are usually issued with an exercise price above the current market price.",
+        "d": "Rights go to existing shareholders pro rata; warrants are often attached to new bond or preferred issues."
+      }
+    },
+    "sie-full-mock-products-risks-020": {
+      "prompt": "To avoid tax at the trust level, a real estate investment trust (REIT) generally must:",
+      "explanation": "A qualifying REIT that distributes at least 90% of its taxable income is not taxed on the distributed income. Shareholders pay tax on dividends, which are generally not qualified dividends.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Distribute at least 50% of its taxable income to shareholders",
+        "b": "Distribute at least 90% of its taxable income to shareholders",
+        "c": "Pass its operating losses through to shareholders like a partnership",
+        "d": "Invest only in residential mortgages"
+      },
+      "distractorExplanations": {
+        "a": "The REIT distribution requirement is 90%, not 50%.",
+        "c": "REITs cannot pass losses through to investors; that is a feature of DPPs.",
+        "d": "REITs can own or finance many property types, including commercial real estate."
+      }
+    },
+    "sie-full-mock-products-risks-021": {
+      "prompt": "A bond with a 6% coupon and $1,000 par value is trading at $1,200. What is its current yield?",
+      "explanation": "Current yield = annual interest ÷ market price = $60 ÷ $1,200 = 5.0%. Because the bond trades at a premium, current yield is below the coupon rate.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "4.0%",
+        "b": "5.0%",
+        "c": "6.0%",
+        "d": "7.2%"
+      },
+      "distractorExplanations": {
+        "a": "4% does not match any calculation here; current yield is the annual coupon divided by price.",
+        "c": "6% is the nominal (coupon) yield, based on par value rather than market price.",
+        "d": "7.2% comes from multiplying the coupon by the price ratio instead of dividing."
+      }
+    },
+    "sie-full-mock-products-risks-022": {
+      "prompt": "An investor buys 1 XYZ 60 call for a $4 premium. What are the breakeven and the maximum loss?",
+      "explanation": "Long call breakeven = strike + premium = $60 + $4 = $64. The maximum loss is the premium paid: $4 × 100 shares = $400.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Breakeven $56; maximum loss $400",
+        "b": "Breakeven $64; maximum loss unlimited",
+        "c": "Breakeven $64; maximum loss $400",
+        "d": "Breakeven $60; maximum loss $6,000"
+      },
+      "distractorExplanations": {
+        "a": "Strike minus premium is the breakeven for a put, not a call.",
+        "b": "Unlimited loss belongs to an uncovered call writer; a buyer can lose only the premium.",
+        "d": "The buyer must recover the premium, and the risk is limited to the premium paid."
+      }
+    },
+    "sie-full-mock-products-risks-023": {
+      "prompt": "Which mutual fund share class typically has a front-end sales charge and lower ongoing 12b-1 fees?",
+      "explanation": "Class A shares charge a front-end load, which is reduced at breakpoints, and generally have lower 12b-1 fees, which can suit larger or longer-term investors.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Class B shares",
+        "b": "Class A shares",
+        "c": "Class C shares",
+        "d": "No-load shares"
+      },
+      "distractorExplanations": {
+        "a": "Class B shares usually have a back-end CDSC and higher 12b-1 fees.",
+        "c": "Class C shares usually have a level (ongoing) load with higher 12b-1 fees.",
+        "d": "No-load funds do not charge a front-end sales load."
+      }
+    },
+    "sie-full-mock-products-risks-024": {
+      "prompt": "A 30-year-old customer is saving for retirement 35 years away and has a high risk tolerance. Which recommendation is most suitable?",
+      "explanation": "Suitability matches the recommendation to the customer's profile. A long time horizon and high risk tolerance support diversified equity exposure for growth.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A money market fund as the only holding",
+        "b": "A diversified growth equity fund",
+        "c": "Short-term Treasury bills only",
+        "d": "Writing uncovered calls on volatile stocks"
+      },
+      "distractorExplanations": {
+        "a": "A money market fund offers stability but little growth over a 35-year horizon.",
+        "c": "T-bills preserve capital but are unlikely to meet a long-term growth goal.",
+        "d": "Uncovered call writing carries unlimited risk and is not a retirement-savings core strategy."
+      }
+    },
+    "sie-full-mock-products-risks-025": {
+      "prompt": "A U.S. investor owns ADRs of a European company. The share price is unchanged in euros, but the euro weakens against the dollar. What happens to the ADR's value?",
+      "explanation": "ADRs carry currency risk. When the foreign currency weakens against the dollar, the dollar value of the underlying shares, and therefore of the ADR, declines.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "It tends to fall",
+        "b": "It tends to rise",
+        "c": "It is unaffected because ADRs trade in dollars",
+        "d": "It is protected by SIPC against the currency loss"
+      },
+      "distractorExplanations": {
+        "b": "A weaker euro means the same euro price converts into fewer dollars.",
+        "c": "ADRs are quoted in dollars, but their value still reflects the exchange rate of the underlying shares.",
+        "d": "SIPC protects against broker-dealer failure, not market or currency losses."
+      }
+    },
+    "sie-full-mock-products-risks-026": {
+      "prompt": "What is the main purpose of a rights offering to existing common shareholders?",
+      "explanation": "Preemptive rights let existing shareholders buy new shares, typically at a subscription price below market, before the public, so they can keep their percentage ownership.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "To let them keep proportionate ownership by buying new shares, usually below market",
+        "b": "To guarantee shareholders a fixed dividend on the newly issued common shares",
+        "c": "To let them sell their shares back to the company at a premium",
+        "d": "To let them convert existing common shares into preferred shares at a set ratio"
+      },
+      "distractorExplanations": {
+        "b": "Rights do not guarantee dividends; common dividends are never guaranteed.",
+        "c": "That describes a tender offer, not a rights offering.",
+        "d": "Rights let holders buy additional common shares; they do not convert common to preferred."
+      }
+    },
+    "sie-full-mock-products-risks-027": {
+      "prompt": "Which investment exposes an investor to the greatest inflation (purchasing-power) risk?",
+      "explanation": "Inflation erodes the value of fixed payments. A long-term fixed-rate bond locks in its payments for many years, so it carries the highest purchasing-power risk.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A long-term fixed-rate bond",
+        "b": "Treasury Inflation-Protected Securities",
+        "c": "Common stock of growing companies",
+        "d": "A 3-month Treasury bill"
+      },
+      "distractorExplanations": {
+        "b": "TIPS principal adjusts with CPI, which reduces inflation risk.",
+        "c": "Equities have historically outpaced inflation over long periods.",
+        "d": "Short maturities let the investor reinvest at new, higher rates as inflation rises."
+      }
+    },
+    "sie-full-mock-products-risks-028": {
+      "prompt": "An investor already holds $40,000 in an ABC family fund and invests another $15,000. The breakpoint is $50,000. Which feature lets the new purchase receive the reduced sales charge?",
+      "explanation": "Rights of accumulation count existing holdings in the fund family toward breakpoints, so the $15,000 purchase qualifies for the $50,000 breakpoint charge.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Conversion (exchange) privilege",
+        "b": "Rights of accumulation",
+        "c": "Dollar-cost averaging",
+        "d": "A breakpoint sale"
+      },
+      "distractorExplanations": {
+        "a": "An exchange privilege allows switching within a fund family at NAV; it does not combine holdings for breakpoints.",
+        "c": "Dollar-cost averaging is investing a fixed amount regularly; it does not create breakpoint credit.",
+        "d": "A breakpoint sale is a violation in which a rep keeps a customer just below a breakpoint."
+      }
+    },
+    "sie-full-mock-products-risks-029": {
+      "prompt": "A city issues bonds to build a toll bridge, and they will be repaid only from bridge tolls. These bonds are:",
+      "explanation": "Revenue bonds are repaid from income produced by a specific facility, such as tolls or user fees. General obligation bonds are backed by the issuer's full faith, credit, and taxing power.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Revenue bonds",
+        "b": "General obligation bonds",
+        "c": "Tax anticipation notes",
+        "d": "Treasury bonds"
+      },
+      "distractorExplanations": {
+        "b": "GO bonds are backed by the issuer's taxing power, not by a specific project's revenue.",
+        "c": "TANs are short-term notes repaid from expected tax collections.",
+        "d": "Treasury bonds are U.S. government debt, not municipal project financing."
+      }
+    },
+    "sie-full-mock-products-risks-030": {
+      "prompt": "A customer in the 32% federal tax bracket is considering a municipal bond yielding 3.4%. What is the tax-equivalent yield?",
+      "explanation": "Tax-equivalent yield = municipal yield ÷ (1 − tax rate) = 3.4% ÷ 0.68 = 5.0%. Municipal interest is generally exempt from federal income tax, so the benefit grows with the investor's bracket.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "2.3%",
+        "b": "3.4%",
+        "c": "4.5%",
+        "d": "5.0%"
+      },
+      "distractorExplanations": {
+        "a": "2.3% is 3.4% × (1 − 0.32), which reduces the yield instead of grossing it up.",
+        "b": "3.4% is the tax-free yield before conversion.",
+        "c": "4.5% is 3.4% × 1.32, which is not the correct formula."
+      }
+    },
+    "sie-full-mock-products-risks-031": {
+      "prompt": "If a corporation is liquidated, which group is paid last?",
+      "explanation": "Liquidation priority runs from secured creditors, to unsecured creditors (including debenture holders), to preferred stockholders, and finally to common stockholders, who hold the residual claim.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Secured bondholders",
+        "b": "Preferred stockholders",
+        "c": "Holders of unsecured debentures",
+        "d": "Common stockholders"
+      },
+      "distractorExplanations": {
+        "a": "Secured creditors have claims on specific collateral and are paid first.",
+        "b": "Preferred stockholders are paid before common stockholders.",
+        "c": "Debenture holders are general creditors and rank ahead of all stockholders."
+      }
+    },
+    "sie-full-mock-products-risks-032": {
+      "prompt": "When interest rates fall, holders of callable bonds face which risk?",
+      "explanation": "When rates fall, issuers tend to call high-coupon bonds and refinance, so investors must reinvest the proceeds at lower rates.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Call risk and reinvestment risk",
+        "b": "Extension risk",
+        "c": "Purchasing-power (inflation) risk",
+        "d": "Currency (exchange-rate) risk"
+      },
+      "distractorExplanations": {
+        "b": "Extension risk occurs when rates rise and expected repayments slow, as with mortgage-backed securities.",
+        "c": "Purchasing-power risk is about inflation, not the issuer redeeming bonds early.",
+        "d": "Currency risk comes from exchange-rate moves on foreign investments."
+      }
+    },
+    "sie-full-mock-products-risks-033": {
+      "prompt": "A customer signs a letter of intent (LOI) to invest $50,000 in a fund family. Which statement is accurate?",
+      "explanation": "An LOI lets a customer receive a breakpoint price now by stating an intent to invest a set amount within 13 months. It may be backdated up to 90 days, and shares are held in escrow in case the goal is missed.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The customer has 13 months to invest, and the LOI may be backdated up to 90 days",
+        "b": "The customer is legally obligated to complete all purchases within the LOI period",
+        "c": "The LOI period lasts 24 months from the signing date and cannot be backdated",
+        "d": "The reduced charge applies even if the $50,000 is never reached"
+      },
+      "distractorExplanations": {
+        "b": "An LOI is not binding; if the customer falls short, the higher sales charge applies, using escrowed shares.",
+        "c": "The standard LOI period is 13 months.",
+        "d": "If the amount is not reached, the customer pays the sales charge for the amount actually invested."
+      }
+    },
+    "sie-full-mock-trading-accounts-001": {
+      "prompt": "A customer bought stock at $50, and it now trades at $62. To protect the gain if the price falls, the customer should enter a:",
+      "explanation": "A sell stop is placed below the market. If the stock falls to $58, the order becomes a market order to sell, locking in most of the gain.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Buy stop order at $58",
+        "b": "Sell limit order at $58",
+        "c": "Sell stop order at $58",
+        "d": "Buy limit order at $65"
+      },
+      "distractorExplanations": {
+        "a": "Buy stops are placed above the market to protect short positions or to buy on a breakout.",
+        "b": "A sell limit below the current price would execute immediately at $62 or better; it does not wait for a decline.",
+        "d": "A buy limit adds to the position; it does not protect the existing gain."
+      }
+    },
+    "sie-full-mock-trading-accounts-002": {
+      "prompt": "In a cash account, a customer buys stock and sells it before paying for the purchase. What is the consequence?",
+      "explanation": "Selling securities before paying for them in a cash account is freeriding. Under Regulation T, the account is frozen for 90 days, and the customer must pay in full before any purchase.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The firm must automatically convert the purchase into a margin loan for the customer",
+        "b": "Nothing happens, as long as the sale was profitable and settled on time",
+        "c": "The account can be frozen for 90 days, requiring cash in advance for any purchase",
+        "d": "The trades are canceled, and the customer keeps any gain from the sale"
+      },
+      "distractorExplanations": {
+        "a": "Cash accounts do not extend credit; the trade is a freeriding violation.",
+        "b": "Freeriding is a violation regardless of profit.",
+        "d": "The trade stands; the penalty is a freeze on the account."
+      }
+    },
+    "sie-full-mock-trading-accounts-003": {
+      "prompt": "A customer enters a limit order without specifying how long it should remain active. Unless otherwise stated, the order is:",
+      "explanation": "Orders are day orders unless the customer specifies otherwise, such as good-till-canceled. An unfilled day order expires at the close of that trading day.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A day order that expires at the end of the trading day",
+        "b": "A good-till-canceled order that stays open until filled or canceled",
+        "c": "Open until the end of the calendar month",
+        "d": "Open for 90 days and then canceled"
+      },
+      "distractorExplanations": {
+        "b": "GTC status must be specifically requested.",
+        "c": "There is no default month-long time in force.",
+        "d": "A 90-day term is not a standard default for orders."
+      }
+    },
+    "sie-full-mock-trading-accounts-004": {
+      "prompt": "Which statement about a short sale of stock is accurate?",
+      "explanation": "A short seller sells borrowed shares, hoping to buy them back cheaper. Because there is no ceiling on the stock price, the potential loss is unlimited, and the trade must be done in a margin account.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "It can be done in a cash account as long as the customer has enough cash to cover it",
+        "b": "The maximum loss is limited to the sale proceeds, because the stock was borrowed",
+        "c": "It must be done in a margin account, and the potential loss is theoretically unlimited",
+        "d": "No borrowing or locate is needed as long as the stock is listed on a national exchange"
+      },
+      "distractorExplanations": {
+        "a": "Short sales require borrowing stock, so they must be done in a margin account.",
+        "b": "A stock's price can keep rising, so the short seller's loss has no upper limit.",
+        "d": "Reg SHO requires a locate, and the shares must be borrowed for delivery."
+      }
+    },
+    "sie-full-mock-trading-accounts-005": {
+      "prompt": "A customer enters a buy limit order at $40 while the stock trades at $42. Which statement is correct?",
+      "explanation": "A buy limit order sets a maximum price. It fills only at the limit or better (lower), and the customer may miss the trade if the stock never falls to $40.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "It becomes a market order once the stock trades at $40",
+        "b": "It can execute only at $40 or lower, and execution is not guaranteed",
+        "c": "It will execute immediately at the current market price of $42",
+        "d": "It can execute only at $40 or higher, and execution is guaranteed"
+      },
+      "distractorExplanations": {
+        "a": "Turning into a market order at a trigger price describes a stop order.",
+        "c": "A buy limit cannot execute above its limit price.",
+        "d": "A buy limit sets the maximum price the customer will pay."
+      }
+    },
+    "sie-full-mock-trading-accounts-006": {
+      "prompt": "A customer buys $20,000 of stock in a new margin account. Regulation T initial margin is 50%. What is the minimum deposit?",
+      "explanation": "Reg T initial margin is 50% of the purchase: $20,000 × 50% = $10,000. By signing the margin agreement, the customer allows the firm to hypothecate (pledge) the securities as collateral for the loan.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "$2,000",
+        "b": "$5,000",
+        "c": "$10,000",
+        "d": "$20,000"
+      },
+      "distractorExplanations": {
+        "a": "$2,000 is FINRA's minimum equity for a margin account, but Reg T requires 50% of $20,000 here.",
+        "b": "$5,000 is 25% of the purchase, which matches FINRA's maintenance percentage, not the initial requirement.",
+        "d": "Paying the full amount would be a cash purchase; margin lets the customer borrow the rest."
+      }
+    },
+    "sie-full-mock-trading-accounts-007": {
+      "prompt": "A rep learns that a large institutional buy order is about to be entered in a stock and buys shares for her own account first. This is:",
+      "explanation": "Front running is trading ahead of a known customer or block order to profit from the expected price move. It is a prohibited practice.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Churning",
+        "b": "Front running",
+        "c": "Marking the close",
+        "d": "Painting the tape"
+      },
+      "distractorExplanations": {
+        "a": "Churning is excessive trading in a customer account to generate commissions.",
+        "c": "Marking the close is placing trades near the close to manipulate the closing price.",
+        "d": "Painting the tape is trading among parties to create misleading activity."
+      }
+    },
+    "sie-full-mock-trading-accounts-008": {
+      "prompt": "A customer buys stock in a regular-way trade on a Monday with no holidays that week. On which day does the trade settle?",
+      "explanation": "Regular-way settlement for most U.S. securities is T+1, one business day after the trade date. A Monday trade settles Tuesday.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Monday",
+        "b": "Tuesday",
+        "c": "Wednesday",
+        "d": "Thursday"
+      },
+      "distractorExplanations": {
+        "a": "Same-day settlement is cash settlement, not regular way.",
+        "c": "T+2 was the old regular-way cycle before the move to T+1 in May 2024.",
+        "d": "T+3 settlement has not been the standard for years."
+      }
+    },
+    "sie-full-mock-trading-accounts-009": {
+      "prompt": "A customer is short a stock at $30 and wants protection if the price rises sharply. Which order should the customer enter?",
+      "explanation": "A short seller loses money as the price rises. A buy stop above the market becomes a market order to buy and cover the short if the price climbs to the stop.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A sell stop below the current market",
+        "b": "A buy stop above the current market",
+        "c": "A buy limit below the current market",
+        "d": "A sell limit above the current market"
+      },
+      "distractorExplanations": {
+        "a": "Sell stops protect long positions against a decline.",
+        "c": "A buy limit below the market does not trigger on a price rise.",
+        "d": "Selling more stock does not protect a short position from a rally."
+      }
+    },
+    "sie-full-mock-trading-accounts-010": {
+      "prompt": "Without speaking to the customer, a rep buys shares for a non-discretionary account because she is sure the customer would approve. This is:",
+      "explanation": "Executing a trade without the customer's prior approval or written discretionary authority is unauthorized trading, regardless of outcome.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "A permissible time-and-price discretion order",
+        "b": "Acceptable if the trade turns out to be profitable",
+        "c": "Unauthorized trading",
+        "d": "A private securities transaction"
+      },
+      "distractorExplanations": {
+        "a": "Time-and-price discretion still requires the customer to choose the security, the action, and the amount.",
+        "b": "Profit does not cure the lack of authorization.",
+        "d": "A private securities transaction is outside the firm's business; this trade went through the firm without authorization."
+      }
+    },
+    "sie-full-mock-trading-accounts-011": {
+      "prompt": "A customer tells a rep, “Buy 500 shares of XYZ today at whatever price you think is best.” Which statement is correct?",
+      "explanation": "When the customer specifies the security, the action, and the amount, the rep may choose time and price without written discretionary authority. That authority is limited to the day it is granted.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "No written discretionary authority is needed, and the authority lasts for that day only",
+        "b": "Written discretionary authority must be signed before the order is entered",
+        "c": "The rep may also switch to a different stock if XYZ looks weak during the day",
+        "d": "The authority remains open for future days until the customer revokes it in writing"
+      },
+      "distractorExplanations": {
+        "b": "Choosing only time and price is not considered discretion requiring written authorization.",
+        "c": "Choosing the security requires written discretionary authority.",
+        "d": "Time-and-price authority expires at the end of the day unless the customer gives written instructions for a GTC order."
+      }
+    },
+    "sie-full-mock-trading-accounts-012": {
+      "prompt": "Two siblings open a joint account. Each wants their share to pass to their own estate, not automatically to the surviving sibling. Which registration fits?",
+      "explanation": "In a tenants-in-common account, each owner's percentage interest passes to that owner's estate at death. With JTWROS, the survivor takes the whole account.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Joint tenants with rights of survivorship",
+        "b": "A UTMA custodial account",
+        "c": "An individual account with a trading authorization",
+        "d": "Tenants in common"
+      },
+      "distractorExplanations": {
+        "a": "JTWROS passes a deceased owner's interest to the surviving owner, not to the estate.",
+        "b": "A UTMA account is for a single minor beneficiary and is not a joint registration.",
+        "c": "An individual account has only one owner."
+      }
+    },
+    "sie-full-mock-trading-accounts-013": {
+      "prompt": "Which statement about a UTMA/UGMA custodial account is accurate?",
+      "explanation": "Custodial accounts hold irrevocable gifts for a single minor, managed by one custodian until the minor reaches the age set by state law. They are registered under the minor's Social Security number.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "It can name two minors as joint beneficial owners of the account's assets",
+        "b": "The custodian may buy stock on margin for the minor",
+        "c": "It has one custodian and one minor, and the assets belong to the minor",
+        "d": "The assets return to the donor when the minor reaches majority"
+      },
+      "distractorExplanations": {
+        "a": "A custodial account is for exactly one minor.",
+        "b": "Margin trading is not permitted in custodial accounts.",
+        "d": "Gifts to a custodial account are irrevocable and pass to the minor."
+      }
+    },
+    "sie-full-mock-trading-accounts-014": {
+      "prompt": "Under the Customer Identification Program, which information must a firm obtain from an individual before opening an account?",
+      "explanation": "CIP, required under the USA PATRIOT Act, requires firms to collect and verify at least the customer's name, date of birth, address, and an identification number, such as a Social Security number for U.S. persons.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Employer, occupation, annual income, and net worth",
+        "b": "A credit report and two bank references from the customer",
+        "c": "Only a signed new account agreement and a W-9 form",
+        "d": "Name, date of birth, address, and an identification number"
+      },
+      "distractorExplanations": {
+        "a": "These help with suitability and the customer profile but are not the CIP minimum.",
+        "b": "CIP does not require credit reports or bank references.",
+        "c": "A signature alone does not verify identity."
+      }
+    },
+    "sie-full-mock-trading-accounts-015": {
+      "prompt": "A rep wants to help a friend's startup sell shares to investors and will be paid for it. What must happen first?",
+      "explanation": "Participating in securities sales outside the firm is a private securities transaction (selling away). The rep must give prior written notice; if she is compensated, the firm must approve or disapprove it, and an approved transaction is recorded on the firm's books and supervised.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Nothing, because the startup is not a FINRA member",
+        "b": "A filing with the SEC instead of notice to her firm",
+        "c": "Prior written notice to her firm, which can approve or reject it",
+        "d": "Verbal notice to her branch manager after the sales are completed"
+      },
+      "distractorExplanations": {
+        "a": "Private securities transactions are regulated because of the rep's association with a member firm.",
+        "b": "The obligation runs to her employing firm, not to an SEC filing in place of notice.",
+        "d": "Notice must be written and given before participating."
+      }
+    },
+    "sie-full-mock-trading-accounts-016": {
+      "prompt": "A rep makes frequent trades in a customer's account, generating commissions that are excessive in light of the customer's objectives. This is:",
+      "explanation": "Churning is excessive trading for the rep's benefit. Regulators look at turnover and cost-to-equity ratios; it violates Reg BI's care obligation and FINRA's quantitative suitability standard.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Front running",
+        "b": "Freeriding",
+        "c": "Selling away",
+        "d": "Churning"
+      },
+      "distractorExplanations": {
+        "a": "Front running is trading ahead of a known customer or block order.",
+        "b": "Freeriding is selling securities in a cash account before paying for them.",
+        "c": "Selling away is participating in securities transactions outside the firm."
+      }
+    },
+    "sie-full-mock-trading-accounts-017": {
+      "prompt": "Under T+1 regular-way settlement, how does the ex-dividend date relate to the record date?",
+      "explanation": "With T+1 settlement, a buyer on the record date would not settle in time, so the ex-dividend date and record date generally coincide. Buyers on or after the ex-date do not receive the dividend.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The ex-date is one business day before the record date",
+        "b": "The ex-date is one business day after the payable date",
+        "c": "They are generally the same business day",
+        "d": "The issuer's board sets the ex-date after the dividend is paid"
+      },
+      "distractorExplanations": {
+        "a": "That was the relationship under T+2 settlement, before May 2024.",
+        "b": "The payable date comes after both the ex-date and the record date.",
+        "d": "The exchange or FINRA sets the ex-date based on settlement, before payment."
+      }
+    },
+    "sie-full-mock-trading-accounts-018": {
+      "prompt": "A rep tells a customer, “If this stock drops, I'll reimburse your loss.” Which statement is accurate?",
+      "explanation": "FINRA rules prohibit members and associated persons from guaranteeing customers against loss. Reps must describe risks honestly rather than promise outcomes.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "It is allowed if the rep pays from personal funds",
+        "b": "Guaranteeing a customer against loss is prohibited",
+        "c": "It is allowed if the promise is put in writing",
+        "d": "It is allowed for accounts with more than $100,000"
+      },
+      "distractorExplanations": {
+        "a": "Using personal funds does not make a loss guarantee permissible.",
+        "c": "A written guarantee is still a prohibited guarantee.",
+        "d": "No account size makes guarantees against loss permissible."
+      }
+    },
+    "sie-full-mock-trading-accounts-020": {
+      "prompt": "A customer's broker-dealer fails. The account holds $600,000 of securities and no cash. How much does SIPC protect?",
+      "explanation": "SIPC protects up to $500,000 per customer per separate capacity, including up to $250,000 in cash, when a member broker-dealer fails. It does not protect against market losses.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "All $600,000 of the securities",
+        "b": "Up to $500,000 of the securities",
+        "c": "Up to $250,000 of the securities",
+        "d": "Nothing, because SIPC covers only cash"
+      },
+      "distractorExplanations": {
+        "a": "SIPC coverage is limited to $500,000 per customer per separate capacity.",
+        "c": "$250,000 is SIPC's cash sublimit (and the FDIC deposit limit), not its total limit.",
+        "d": "SIPC covers both securities and cash, within limits."
+      }
+    },
+    "sie-full-mock-trading-accounts-021": {
+      "prompt": "Which order type guarantees execution in a normal market but does not guarantee the price?",
+      "explanation": "A market order is executed immediately at the best available price. It sacrifices price control for certainty of execution.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Limit order",
+        "b": "Stop-limit order",
+        "c": "All-or-none limit order",
+        "d": "Market order"
+      },
+      "distractorExplanations": {
+        "a": "A limit order guarantees the price or better but not execution.",
+        "b": "Once triggered, a stop-limit becomes a limit order, so execution is not guaranteed.",
+        "c": "An AON order must be filled completely at the limit or not at all, so execution is not guaranteed."
+      }
+    },
+    "sie-full-mock-trading-accounts-022": {
+      "prompt": "When opening an account, a firm asks the customer for a trusted contact person. How may the firm use this contact?",
+      "explanation": "Under FINRA Rule 4512, firms must make a reasonable effort to obtain a trusted contact. The firm may contact that person about possible financial exploitation or to confirm the customer's health, whereabouts, or legal representatives.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "To place trades in the account whenever the customer cannot be reached by the firm",
+        "b": "To discuss suspected financial exploitation or confirm the customer's whereabouts",
+        "c": "To approve withdrawals and transfers out of the account on the customer's behalf",
+        "d": "To act as a joint owner of the account"
+      },
+      "distractorExplanations": {
+        "a": "A trusted contact has no trading authority.",
+        "c": "A trusted contact cannot authorize transactions or withdrawals.",
+        "d": "Naming a trusted contact does not create any ownership interest."
+      }
+    },
+    "sie-full-mock-trading-accounts-023": {
+      "prompt": "A customer sells XYZ at a loss on June 10 and buys XYZ back on June 25. What is the tax consequence?",
+      "explanation": "A wash sale occurs when substantially identical securities are bought within 30 days before or after a sale at a loss. The loss is disallowed currently and added to the new shares' cost basis.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The loss is fully deductible in the current year because the shares were sold first",
+        "b": "The loss is converted into a short-term capital gain",
+        "c": "FINRA prohibits buying the same stock back within 30 days of the losing sale",
+        "d": "The loss is disallowed for now and added to the cost basis of the new shares"
+      },
+      "distractorExplanations": {
+        "a": "Buying substantially identical shares within 30 days triggers the wash-sale rule.",
+        "b": "A wash sale defers the loss; it does not create a gain.",
+        "c": "The wash-sale rule is an IRS tax rule; it does not prohibit the trade."
+      }
+    },
+    "sie-full-mock-regulatory-framework-001": {
+      "prompt": "Which statement about supervision at a FINRA member firm is accurate?",
+      "explanation": "FINRA Rule 3110 requires firms to establish a supervisory system and written supervisory procedures (WSPs), with registered principals responsible for supervising associated persons.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Supervision is required only for reps who handle discretionary customer accounts",
+        "b": "The firm may hand off all supervision to the SEC",
+        "c": "The firm must keep written supervisory procedures and assign principals to supervise",
+        "d": "Reps who have passed the SIE and a representative exam are exempt from supervision"
+      },
+      "distractorExplanations": {
+        "a": "All associated persons must be supervised.",
+        "b": "Member firms cannot shift their supervisory duties to regulators.",
+        "d": "Passing an exam does not remove the firm's supervisory obligation."
+      }
+    },
+    "sie-full-mock-regulatory-framework-002": {
+      "prompt": "Which event would subject a person to statutory disqualification?",
+      "explanation": "Statutory disqualification includes, among other events, any felony conviction or certain securities-related misdemeanors within the past 10 years, and expulsion or suspension by an SRO. A disqualified person needs relief to associate with a member firm.",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A felony conviction within the past 10 years",
+        "b": "A speeding ticket last year",
+        "c": "A personal bankruptcy filed three years ago",
+        "d": "A customer complaint that was later withdrawn"
+      },
+      "distractorExplanations": {
+        "b": "Minor traffic offenses do not cause statutory disqualification.",
+        "c": "Bankruptcy must be reported on Form U4, but it is not a statutory disqualification.",
+        "d": "A withdrawn complaint is not a disqualifying event."
+      }
+    },
+    "sie-full-mock-regulatory-framework-003": {
+      "prompt": "A customer makes several cash deposits of $9,500 on consecutive days. What should the firm consider?",
+      "explanation": "Breaking cash deposits into amounts just under $10,000 to avoid a Currency Transaction Report is structuring. Firms should investigate and file a Suspicious Activity Report when required, and must keep the filing confidential.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Nothing, because each deposit is below the $10,000 currency reporting threshold",
+        "b": "Tell the customer that a SAR is being filed",
+        "c": "Possible structuring: file a SAR if warranted without telling the customer",
+        "d": "Close the account at once, return the cash, and make no report"
+      },
+      "distractorExplanations": {
+        "a": "Splitting deposits to stay under the reporting threshold is a red flag for structuring.",
+        "b": "Firms must not disclose a SAR filing to the customer.",
+        "d": "Closing the account does not replace the firm's reporting obligations."
+      }
+    },
+    "sie-full-mock-regulatory-framework-004": {
+      "prompt": "Which statement about the SIE exam is accurate?",
+      "explanation": "The SIE tests basic industry knowledge. It does not require sponsorship, the result is valid for four years, and passing it alone does not qualify a person to conduct securities business.",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Passing it alone allows you to sell securities to the public through a firm",
+        "b": "It requires sponsorship by a FINRA member firm before you can schedule it",
+        "c": "A passing result never expires, even if you never join a firm",
+        "d": "It requires no firm sponsorship, and a passing result is valid for four years"
+      },
+      "distractorExplanations": {
+        "a": "Registration also requires firm association and the appropriate representative exam, such as the Series 7.",
+        "b": "Anyone 18 or older can take the SIE without firm sponsorship.",
+        "c": "A passing SIE result is valid for four years."
+      }
+    },
+    "sie-full-mock-regulatory-framework-005": {
+      "prompt": "A firm plans to send a market commentary piece to 40 retail investors within a 30-day period. How is it classified under FINRA communications rules?",
+      "explanation": "A written communication distributed to more than 25 retail investors within a 30-calendar-day period is a retail communication. Most retail communications need principal approval before use.",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Correspondence",
+        "b": "Institutional communication",
+        "c": "Retail communication",
+        "d": "Independently prepared reprint"
+      },
+      "distractorExplanations": {
+        "a": "Correspondence goes to 25 or fewer retail investors within a 30-calendar-day period.",
+        "b": "Institutional communications go only to institutional investors.",
+        "d": "A reprint is an article from an independent publisher, not the firm's own commentary."
+      }
+    },
+    "sie-full-mock-regulatory-framework-006": {
+      "prompt": "Which statement about continuing education (CE) for registered persons is accurate?",
+      "explanation": "Registered persons must complete the Regulatory Element annually and take part in their firm's Firm Element training. Failing the Regulatory Element on time makes a registration CE-inactive.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "CE is required only in the first year after registration",
+        "b": "The Regulatory Element must be completed every year",
+        "c": "The SEC designs and delivers the Firm Element",
+        "d": "CE applies only to registered principals"
+      },
+      "distractorExplanations": {
+        "a": "CE obligations continue throughout registration.",
+        "c": "Each member firm designs its own Firm Element training.",
+        "d": "All registered persons must meet CE requirements."
+      }
+    },
+    "sie-full-mock-regulatory-framework-007": {
+      "prompt": "A registered representative leaves her firm. Which statement about Form U5 is accurate?",
+      "explanation": "When an associated person's registration ends, the firm must file Form U5 within 30 days and provide the individual with a copy. It discloses the reason for termination and certain reportable events.",
+      "correctOptionId": "b",
+      "options": {
+        "a": "She must file it herself with FINRA within 90 days",
+        "b": "The firm must file it within 30 days and give her a copy",
+        "c": "It is filed only if she was discharged for cause by the firm",
+        "d": "It registers her with her new firm"
+      },
+      "distractorExplanations": {
+        "a": "The firm, not the individual, files Form U5.",
+        "c": "A U5 is filed for every termination, voluntary or not.",
+        "d": "Registration with a new firm uses Form U4."
+      }
+    },
+    "sie-full-mock-capital-markets-012": {
+      "options": {
+        "b": "A registered representative who only executes unsolicited agency trades and never gives any advice",
+        "c": "A transfer agent that maintains shareholder records and processes ownership changes for an issuer",
+        "d": "A bank that accepts FDIC-insured deposits and makes loans but gives no securities advice for a fee"
+      },
+      "distractorExplanations": {
+        "d": "Taking deposits and making loans does not make a bank an investment adviser; advising on securities for compensation does."
+      }
+    },
+    "sie-full-mock-products-risks-001": {
+      "prompt": "A customer may need cash for a home purchase in nine months. Why do the customer's liquidity needs matter when recommending products?",
+      "options": {
+        "b": "They eliminate market risk entirely, so any product becomes suitable for any holding period",
+        "c": "They require every customer with a cash need to hold only preferred stock until the purchase",
+        "d": "They apply only to institutional accounts, so retail customers' cash needs can be ignored"
+      }
+    },
+    "sie-full-mock-products-risks-011": {
+      "options": {
+        "b": "They never trade on exchanges during market hours, so investors cannot exit a position quickly",
+        "c": "They are FDIC-insured deposit products, so their long-term risk is too low to justify the fees",
+        "d": "They lock in a fixed multiple of the index's annual return, which caps the investor's upside"
+      },
+      "distractorExplanations": {
+        "c": "ETFs are securities, not FDIC-insured bank deposits.",
+        "d": "The leverage multiple applies to each day's return, not the annual return, so long-run results can differ widely from 2x or 3x."
+      }
+    },
+    "sie-full-mock-trading-accounts-019": {
+      "prompt": "When a corporation opens a brokerage account, which documentation is the firm most likely to require?",
+      "options": {
+        "b": "Only the CEO’s personal driver’s license and Social Security number, with no entity documents",
+        "c": "An options agreement signed by a third party who has no authority over the corporation",
+        "d": "Proof that the corporation is registered as an MSRB member before it can open the account"
+      }
+    }
+  }
+}

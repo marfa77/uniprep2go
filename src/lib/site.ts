@@ -9,9 +9,9 @@ export const siteConfig = {
   primaryUseCases: [
     "FINRA SIE, Series 7, and Series 63 exam prep",
     "US insurance and California real estate licensing exam prep",
-    "CFA Level 1 / FRM Part 1 Anki + free timed mocks + formula sheets",
+    "CFA Level 1 / FRM Part 1 Anki + timed mocks (first free) + formula sheets",
     "Other US licensing and specialty exam practice tests (also on this site)",
-    "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps free mocks indexed",
+    "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps timed mocks indexed (first mock free)",
   ],
   contactEmail: "support@uniprep2go.study",
   customDeckInquiry: {

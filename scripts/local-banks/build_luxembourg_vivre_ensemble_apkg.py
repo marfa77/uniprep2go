@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -22,6 +23,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from luxembourg_vivre_ensemble_cards import MODULE_LABEL, main as write_csvs, rows  # noqa: E402
 
 VAULT = Path("/Users/pavelveselov/Projects/Anki Generator/out/prep2go_Luxembourg_Vivre_ensemble")
+# Note GUIDs hash the front buyers first received; a reworded front maps back to it so the card updates in place.
+LEGACY_FRONTS_PATH = Path(__file__).with_name("luxembourg_vivre_ensemble_legacy_fronts.json")
+LEGACY_FRONTS = json.loads(LEGACY_FRONTS_PATH.read_text(encoding="utf-8")) if LEGACY_FRONTS_PATH.exists() else {}
 BASE_NAMES = {"fr": "prep2go_Luxembourg_Vivre_ensemble_FULL", "en": "prep2go_Luxembourg_Vivre_ensemble_EN_FULL"}
 DECK_NAMES = {"fr": "prep2go · Luxembourg Vivre ensemble · FR", "en": "prep2go · Luxembourg Vivre ensemble · EN"}
 MODEL_IDS = {"fr": 1829400501, "en": 1829400502}
@@ -101,7 +105,7 @@ def build(lang: str, out_dir: Path, stamp: str) -> Path:
             model=model,
             fields=note_fields(lang, r),
             tags=["vivre_ensemble", *r["tags"].split()],
-            guid=genanki.guid_for("lux-vivre-ensemble", lang, r["front"]),
+            guid=genanki.guid_for("lux-vivre-ensemble", lang, LEGACY_FRONTS.get(lang, {}).get(r["front"], r["front"])),
         ))
     out = out_dir / f"{BASE_NAMES[lang]}_{stamp}.apkg"
     genanki.Package(list(decks.values())).write_to_file(str(out))

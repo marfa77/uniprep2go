@@ -7,6 +7,8 @@ import {
   toCheckoutClickMessage,
   toDeckWaitlistMessage,
   toMockInterestMessage,
+  toMockPassCheckoutClickMessage,
+  toMockPassRedeemMessage,
   toMockStartedMessage,
 } from "./telegram-notify";
 
@@ -147,5 +149,47 @@ describe("telegram waitlist and mock interest alerts", () => {
     expect(message).toContain("UniPrep2Go mock interest");
     expect(message).toContain("Mock slug: cdl-general-knowledge-readiness-check");
     expect(message).toContain("Email: learner@example.com");
+  });
+});
+
+describe("telegram mock pass alerts", () => {
+  it("formats the Mock Pass pay click with mock, placement and geo", () => {
+    const mock = getMockExamConfig("series-63-readiness-check");
+    const text = toMockPassCheckoutClickMessage(
+      createFunnelEvent({
+        name: "mock_pass_checkout_click",
+        deckSlug: "series-63-anki-deck",
+        source: "mock:series-63-readiness-check:pass:checkout:retake",
+        destinationUrl: "https://pixidstudio.gumroad.com/l/uniprep-mock-pass?wanted=true",
+        country: "US",
+      }),
+      mock,
+    );
+    expect(text).toContain("Mock Pass — pay click ($5 / 5 attempts)");
+    expect(text).toContain("Mock slug: series-63-readiness-check");
+    expect(text).toContain("Paywall: results → retake");
+    expect(text).toContain("Country: US");
+  });
+
+  it("formats unlocks and tags free vs paid starts", () => {
+    const text = toMockPassRedeemMessage(
+      createFunnelEvent({
+        name: "mock_pass_redeem_success",
+        deckSlug: "series-63-anki-deck",
+        source: "mock:series-63-readiness-check:pass:redeem:new:left:5",
+      }),
+    );
+    expect(text).toContain("Key: new key");
+    expect(text).toContain("Attempts left: 5");
+
+    const started = toMockStartedMessage(
+      createFunnelEvent({
+        name: "mock_started",
+        deckSlug: "series-63-anki-deck",
+        source: "mock:series-63-readiness-check:start:learn:free",
+      }),
+    );
+    expect(started).toContain("Mode: Learn");
+    expect(started).toContain("Access: free first mock");
   });
 });

@@ -533,8 +533,8 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     examBody:
       "Luxembourg — Vivre ensemble (40Q official or course; Sproochentest separate)",
     questionSourceNote:
-      "Original French MCQs written by UniPrep2Go for the three official modules, with a specific explanation for every wrong option. Facts checked against the Constitution of 1 July 2023, the 2017 regulation and guichet.lu. Not official Luxembourg government material.",
-    lastUpdated: "2026-09-27",
+      "Original French MCQs written by UniPrep2Go for the three official modules, with a specific explanation for every wrong option. Facts and article numbers checked against the Constitution of 1 July 2023, the 2017 nationality law and regulation, and guichet.lu. Not official Luxembourg government material.",
+    lastUpdated: "2026-10-02",
     searchAliases: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
   }),
   nicheReadinessConfig({

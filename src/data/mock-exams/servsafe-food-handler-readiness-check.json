@@ -2,32 +2,32 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-001",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "What is anaphylaxis?",
+    "topicId": "contamination",
+    "prompt": "Tuna sat on the receiving dock for several hours before it was cooked. Minutes after eating it, a guest has a flushed face, sweating, a headache and a peppery taste in the mouth. Which illness is most likely?",
     "options": [
       {
         "id": "a",
-        "text": "A mild skin rash that appears days after eating"
+        "text": "Ciguatera fish poisoning from a reef fish"
       },
       {
         "id": "b",
-        "text": "A food intolerance that causes bloating and gas"
+        "text": "Scombroid poisoning from histamine in the fish"
       },
       {
         "id": "c",
-        "text": "A severe allergic reaction that can restrict breathing"
+        "text": "Vibrio infection from undercooked shellfish"
       },
       {
         "id": "d",
-        "text": "A foodborne infection caused by raw shellfish"
+        "text": "Norovirus passed on by a sick food handler"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Anaphylaxis is a severe, potentially life-threatening allergic reaction that can restrict breathing and cause shock. Example: A guest has trouble breathing after exposure to peanuts.",
+    "correctOptionId": "b",
+    "explanation": "Scombroid poisoning happens when fish such as tuna, mackerel or mahi-mahi is time-temperature abused: bacteria produce histamine, which cooking and freezing do not destroy. Symptoms start within minutes (flushed face, sweating, headache, burning or peppery taste). Prevention is buying from approved suppliers and keeping fish cold from receiving on.",
     "distractorExplanations": {
-      "a": "Anaphylaxis is rapid and severe, not a mild delayed rash.",
-      "b": "Intolerances do not involve the immune system and are not anaphylaxis.",
-      "d": "Anaphylaxis is an allergic reaction, not an infection."
+      "a": "Ciguatoxin comes from reef fish such as barracuda that ate toxic algae; it is not caused by leaving tuna warm on the dock.",
+      "c": "Vibrio is linked to raw oysters from warm water and takes hours to a day to cause illness, not minutes after tuna.",
+      "d": "Norovirus causes vomiting and diarrhea 12 to 48 hours later and spreads from people, not from warm tuna."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -36,31 +36,31 @@
     "id": "servsafe-food-handler-readiness-check-contamination-002",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "What is the main food safety concern with norovirus?",
+    "prompt": "A large batch of cooked rice was left on the counter overnight and then reheated for lunch. Which pathogen is the main concern?",
     "options": [
       {
         "id": "a",
-        "text": "It spreads easily from sick workers to ready-to-eat food"
+        "text": "Hepatitis A"
       },
       {
         "id": "b",
-        "text": "It grows quickly in canned food kept at room temperature"
+        "text": "Shigella spp."
       },
       {
         "id": "c",
-        "text": "It is found mainly in undercooked ground beef"
+        "text": "Listeria monocytogenes"
       },
       {
         "id": "d",
-        "text": "It forms a toxin in cooked rice that is held warm"
+        "text": "Bacillus cereus"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Norovirus spreads easily from infected people and contaminated surfaces, especially through ready-to-eat food. Example: A sick food handler touches sandwich ingredients with bare hands.",
+    "correctOptionId": "d",
+    "explanation": "Bacillus cereus forms spores that survive cooking. When cooked rice sits in the temperature danger zone, the spores grow and produce a toxin that reheating does not destroy. Cooked rice must be cooled quickly or held hot at 135°F or higher.",
     "distractorExplanations": {
-      "b": "Viruses do not grow in food; growth in canned food describes bacteria such as C. botulinum.",
-      "c": "Undercooked ground beef is the classic source of Shiga toxin-producing E. coli.",
-      "d": "Toxin in held rice comes from Bacillus cereus."
+      "a": "Hepatitis A spreads from an infected worker's hands to ready-to-eat food; it does not grow in rice left out.",
+      "b": "Shigella spreads through feces and flies, often on salads and produce; rice left warm is not its typical source.",
+      "c": "Listeria grows in cold ready-to-eat food such as deli meat and soft cheese, not in rice left at room temperature."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -69,64 +69,64 @@
     "id": "servsafe-food-handler-readiness-check-contamination-003",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "What is the safest rule for wild mushrooms?",
+    "prompt": "A food handler cuts raw chicken on a cutting board, then uses the same unwashed board to slice tomatoes for a salad. What is this an example of?",
     "options": [
       {
         "id": "a",
-        "text": "Cook them to 165°F to destroy any toxins"
+        "text": "Cross-contamination"
       },
       {
         "id": "b",
-        "text": "Accept them if an experienced employee picked them"
+        "text": "Time-temperature abuse"
       },
       {
         "id": "c",
-        "text": "Use only mushrooms from approved, reputable suppliers"
+        "text": "Physical contamination"
       },
       {
         "id": "d",
-        "text": "Freeze them for 7 days before serving to guests"
+        "text": "Chemical contamination"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Only use mushrooms from approved, reputable suppliers; wild mushrooms can contain toxins that cooking may not destroy. Example: Do not accept mushrooms picked by an employee.",
+    "correctOptionId": "a",
+    "explanation": "Pathogens from the raw chicken were moved onto a ready-to-eat food that will not be cooked. Prevent it by washing, rinsing and sanitizing the board between tasks, or by using separate boards for raw meat and produce.",
     "distractorExplanations": {
-      "a": "Many mushroom toxins are not destroyed by cooking.",
-      "b": "Mushrooms picked by staff are not from an approved source.",
-      "d": "Freezing does not destroy mushroom toxins."
+      "b": "Time-temperature abuse means food stays too long between 41°F and 135°F; here the problem is transfer from raw chicken.",
+      "c": "Physical contamination means objects such as glass, metal or bandages, not pathogens carried on a board.",
+      "d": "Chemical contamination comes from cleaners, sanitizers or toxic metals; raw-chicken juice is a biological hazard."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-contamination-004",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "Which food is most often associated with Bacillus cereus?",
+    "prompt": "Which group contains only TCS (time/temperature control for safety) foods?",
     "options": [
       {
         "id": "a",
-        "text": "Raw oysters from warm coastal waters"
+        "text": "Bread, crackers, dry pasta, and flour"
       },
       {
         "id": "b",
-        "text": "Undercooked ground beef patties"
+        "text": "Whole raw apples, honey, and peanut butter"
       },
       {
         "id": "c",
-        "text": "Cooked rice held at room temperature"
+        "text": "Cooked rice, sliced melon, sprouts, and tofu"
       },
       {
         "id": "d",
-        "text": "Deli meats and unpasteurized cheese"
+        "text": "Cooked rice, bread, raw carrots, and jam"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Bacillus cereus is commonly associated with cooked rice and other starchy foods that are time-temperature abused. Example: Fried rice sits at room temperature for hours.",
+    "explanation": "TCS foods need time and temperature control because they are moist, high in protein or close to neutral pH, so pathogens grow in them. Cooked rice, cut melon, sprouts, tofu, milk, eggs, meat, cut tomatoes and cut leafy greens are all TCS.",
     "distractorExplanations": {
-      "a": "Raw oysters are linked to Vibrio and norovirus.",
-      "b": "Undercooked ground beef is linked to Shiga toxin-producing E. coli.",
-      "d": "Deli meats and soft unpasteurized cheese are linked to Listeria."
+      "a": "Dry baked goods, dry pasta and flour are too low in moisture for bacteria to grow, so they are not TCS.",
+      "b": "Whole uncut fruit, honey and peanut butter are protected or low in moisture, so they are not TCS.",
+      "d": "Cooked rice is TCS, but bread, whole raw carrots and jam are not, so the group is not all TCS."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -135,31 +135,31 @@
     "id": "servsafe-food-handler-readiness-check-contamination-005",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "What is a foodborne-illness outbreak?",
+    "prompt": "Which pathogen is spread mainly by infected food handlers, can be passed on before symptoms appear, and often causes yellowing of the skin and eyes?",
     "options": [
       {
         "id": "a",
-        "text": "Any single illness reported to the health department"
+        "text": "Norovirus"
       },
       {
         "id": "b",
-        "text": "A product recall issued by a food manufacturer"
+        "text": "Hepatitis A"
       },
       {
         "id": "c",
-        "text": "Two or more people ill from the same food, confirmed"
+        "text": "Salmonella Typhi"
       },
       {
         "id": "d",
-        "text": "Several guests who complain about the same dish"
+        "text": "Shigella spp."
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "An outbreak occurs when two or more people have the same symptoms after eating the same food and an investigation confirms the food as the source. Example: Two guests report vomiting after eating the same catered salad.",
+    "correctOptionId": "b",
+    "explanation": "Hepatitis A is a virus carried in feces. Infected workers can spread it for weeks, even before they feel sick, and jaundice (yellow skin or eyes) is its hallmark. A food handler with jaundice must be reported to the regulatory authority and excluded.",
     "distractorExplanations": {
-      "a": "A single reported illness does not meet the two-person definition.",
-      "b": "A recall can follow an outbreak but is not the definition.",
-      "d": "Complaints are not confirmed illnesses traced to the same food."
+      "a": "Norovirus causes vomiting and diarrhea, not jaundice; yellow skin and eyes point to the liver virus, Hepatitis A.",
+      "c": "Salmonella Typhi causes typhoid fever with a high fever; jaundice is the classic sign of Hepatitis A.",
+      "d": "Shigella causes diarrhea, often bloody, and spreads through feces and flies, but it does not cause jaundice."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -168,64 +168,64 @@
     "id": "servsafe-food-handler-readiness-check-contamination-006",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "Which group lists only TCS foods?",
+    "prompt": "A worn can-opener blade is leaving small metal slivers in each can it opens. What type of hazard is this?",
     "options": [
       {
         "id": "a",
-        "text": "Cooked rice, cut melon, sprouts, and tofu"
+        "text": "Biological contamination from the can"
       },
       {
         "id": "b",
-        "text": "Bread, crackers, dry pasta, and flour"
+        "text": "Chemical contamination from the coating"
       },
       {
         "id": "c",
-        "text": "Whole raw apples, honey, and peanut butter"
+        "text": "Cross-contact with a food allergen"
       },
       {
         "id": "d",
-        "text": "Cooked rice, bread, raw carrots, and jam"
+        "text": "Physical contamination from the metal"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "TCS foods need time and temperature control because they support bacterial growth. Examples include cooked rice, cut melon, sprouts, tofu, meat, poultry, fish, shell eggs, dairy, baked potatoes, cooked beans, cut tomatoes, and cut leafy greens.",
+    "correctOptionId": "d",
+    "explanation": "Physical contaminants are objects that get into food: metal shavings, glass, staples, bandages, jewelry, fruit pits or bone. Replace worn can openers and clean and inspect the blade regularly.",
     "distractorExplanations": {
-      "b": "Dry, low-moisture foods like bread and dry pasta are not TCS.",
-      "c": "Whole uncut fruit, honey, and peanut butter are not TCS foods.",
-      "d": "Cooked rice is TCS, but bread, whole raw carrots, and jam are not."
+      "a": "Biological hazards are pathogens or toxins from living things; metal slivers are objects, not organisms.",
+      "b": "Chemical contamination comes from cleaners or metals dissolving into acidic food, not from pieces of steel.",
+      "c": "Cross-contact moves an allergen protein into food; a metal sliver is not an allergen."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-contamination-007",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "What is special about Salmonella Typhi?",
+    "prompt": "Why should tomato sauce never be stored in a galvanized (zinc-coated) or copper container?",
     "options": [
       {
         "id": "a",
-        "text": "It is found mainly in raw poultry and eggs"
+        "text": "The acid can leach toxic metals into the sauce"
       },
       {
         "id": "b",
-        "text": "It lives only in humans; food handlers spread it"
+        "text": "The metal keeps the sauce above 41°F for too long"
       },
       {
         "id": "c",
-        "text": "It is destroyed by freezing food for 24 hours"
+        "text": "The container rusts and adds physical contaminants"
       },
       {
         "id": "d",
-        "text": "It comes mainly from dented or damaged cans"
+        "text": "The coating absorbs moisture and spoils the sauce"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Salmonella Typhi is carried only by humans and is often linked to ready-to-eat food and beverages contaminated by infected food handlers. Example: A food handler with typhoid fever contaminates food.",
+    "correctOptionId": "a",
+    "explanation": "Acidic foods such as tomato sauce, citrus juice and vinegar dressings can dissolve copper, zinc or lead from containers and equipment, causing toxic-metal poisoning. Store and cook acidic food only in food-grade containers.",
     "distractorExplanations": {
-      "a": "Poultry and eggs are linked to nontyphoidal Salmonella.",
-      "c": "Freezing does not reliably destroy Salmonella.",
-      "d": "Damaged or improperly canned food is linked to C. botulinum."
+      "b": "Metal containers usually cool food faster, not slower; the hazard is chemical leaching, not temperature.",
+      "c": "Rust can be a physical hazard, but the specific danger of acid in zinc or copper is toxic-metal poisoning.",
+      "d": "The coating does not absorb moisture; acid dissolving the metal into the food is the real risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -233,65 +233,65 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-008",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "Why are buffets risky for allergen control?",
+    "topicId": "contamination",
+    "prompt": "A coworker brings in wild mushrooms she picked herself and offers them for the daily special. What should the kitchen do?",
     "options": [
       {
         "id": "a",
-        "text": "Buffet food is held at higher temperatures"
+        "text": "Cook them to 165°F so any toxins are destroyed"
       },
       {
         "id": "b",
-        "text": "Buffets must serve only allergen-free food"
+        "text": "Accept them if an experienced forager checks them"
       },
       {
         "id": "c",
-        "text": "Allergens multiply in food left out too long"
+        "text": "Refuse them; use only approved-supplier mushrooms"
       },
       {
         "id": "d",
-        "text": "Guests can move utensils between dishes"
+        "text": "Freeze them for 7 days and then serve them cooked"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Guests may move utensils or foods, causing allergen cross-contact. Example: A spoon from a nut-containing dessert is placed in a nut-free dessert.",
+    "correctOptionId": "c",
+    "explanation": "Mushroom toxins are not destroyed by cooking, freezing or drying, and toxic species are hard to tell apart from safe ones. All food must come from approved, inspected sources, so wild mushrooms are used only when they come from an approved supplier.",
     "distractorExplanations": {
-      "a": "Holding temperature does not create or remove allergens.",
-      "b": "Buffets may serve allergens; the risk is cross-contact, not a ban.",
-      "c": "Allergens are proteins; they do not multiply like bacteria."
+      "a": "Cooking does not destroy mushroom toxins, so heating to 165°F does not make wild mushrooms safe.",
+      "b": "A coworker's or forager's experience is not an approved source; regulations require approved suppliers.",
+      "d": "Freezing is used to kill parasites in fish; it has no effect on mushroom toxins."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-contamination-009",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "Which symptoms may indicate a food-allergic reaction?",
+    "topicId": "contamination",
+    "prompt": "Most foodborne bacteria grow best under which conditions?",
     "options": [
       {
         "id": "a",
-        "text": "Fever and chills that begin 2–3 days later"
+        "text": "Dry food held below 41°F in a sealed container"
       },
       {
         "id": "b",
-        "text": "Hives, swelling, wheezing, or trouble breathing"
+        "text": "Moist, low-acid food held between 41°F and 135°F"
       },
       {
         "id": "c",
-        "text": "Jaundice with dark urine and yellowing eyes"
+        "text": "Highly acidic food held at 135°F or higher"
       },
       {
         "id": "d",
-        "text": "Sore throat and fever from a viral infection"
+        "text": "Salty, dry food stored at room temperature"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Food-allergy reactions can include hives, itching, swelling of the face or throat, wheezing, trouble breathing, vomiting, diarrhea, abdominal pain, and anaphylaxis. Symptoms often start within minutes of eating.",
+    "explanation": "FAT TOM lists what bacteria need: food (protein and carbohydrates), acidity near neutral, temperature in the danger zone (41°F to 135°F), time, oxygen (for most), and moisture. Moist, low-acid food in the danger zone gives them everything they need.",
     "distractorExplanations": {
-      "a": "Delayed fever and chills suggest a foodborne infection, not an allergy.",
-      "c": "Jaundice suggests hepatitis A, not an allergic reaction.",
-      "d": "Sore throat with fever suggests an infection, not an allergy."
+      "a": "Low moisture and cold temperatures both slow bacterial growth, so dry, cold food is a poor environment.",
+      "c": "High acidity and temperatures at or above 135°F both slow or stop bacterial growth.",
+      "d": "Salt and dryness take away the water bacteria need, even at room temperature."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -299,32 +299,32 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-010",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "Why must staff know the ingredients in menu items?",
+    "topicId": "contamination",
+    "prompt": "Why is Listeria monocytogenes a special concern in ready-to-eat deli meat?",
     "options": [
       {
         "id": "a",
-        "text": "So they can recommend the most popular dishes"
+        "text": "It is destroyed as soon as the meat is refrigerated"
       },
       {
         "id": "b",
-        "text": "So they can guarantee any dish is allergen-free"
+        "text": "It mainly comes from the hands of sick food handlers"
       },
       {
         "id": "c",
-        "text": "So they can tell guests about allergens accurately"
+        "text": "It forms a toxin when deli meat is reheated slowly"
       },
       {
         "id": "d",
-        "text": "So they can substitute ingredients without asking"
+        "text": "It can keep growing at refrigerator temperatures"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Staff must identify allergens and hidden ingredients so guests receive accurate information. Example: Worcestershire sauce may contain fish ingredients.",
+    "correctOptionId": "d",
+    "explanation": "Listeria survives and slowly grows in the cooler, so ready-to-eat foods such as deli meat, hot dogs and unpasteurized soft cheese become riskier over time. Pregnant women, older adults and people with weak immune systems are most at risk, which is why date marking and the 7-day discard rule matter.",
     "distractorExplanations": {
-      "a": "Popularity has nothing to do with allergen safety.",
-      "b": "Staff should not guarantee safety unless the risk is truly controlled.",
-      "d": "Unapproved substitutions can introduce new allergens."
+      "a": "Refrigeration slows most bacteria, but Listeria keeps growing at 41°F, which is exactly why it is a concern.",
+      "b": "Listeria comes from soil, water and processing environments, not mainly from sick workers.",
+      "c": "Listeria causes illness by growing in food; it is not a toxin formed by slow reheating."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -332,131 +332,131 @@
   {
     "id": "servsafe-food-handler-readiness-check-contamination-011",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "What should staff avoid when a guest reports a food allergy?",
+    "topicId": "contamination",
+    "prompt": "What is a foodborne-illness outbreak?",
     "options": [
       {
         "id": "a",
-        "text": "Guessing or promising a dish is completely safe"
+        "text": "Two or more people with the same illness from the same food"
       },
       {
         "id": "b",
-        "text": "Checking the recipe with the manager or chef"
+        "text": "A single guest reports an illness to the local health department"
       },
       {
         "id": "c",
-        "text": "Telling the kitchen about the allergy on the order"
+        "text": "A manufacturer issues a recall for one of its food products"
       },
       {
         "id": "d",
-        "text": "Using clean utensils and a sanitized prep area"
+        "text": "Several guests complain that the same dish tasted spoiled"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Staff should avoid guessing, minimizing the allergy, or guaranteeing safety unless the operation can truly control the risk. Example: Say you will check with the manager instead of guessing.",
+    "explanation": "An outbreak is when two or more people have the same symptoms after eating the same food, and health authorities confirm it through investigation and lab testing. One sick guest is a complaint to take seriously, not an outbreak.",
     "distractorExplanations": {
-      "b": "Checking with the manager or chef is the right step.",
-      "c": "The kitchen must be told so it can prevent cross-contact.",
-      "d": "Clean utensils and surfaces help prevent cross-contact."
+      "b": "One case is not an outbreak; the definition requires two or more people with the same illness from the same food.",
+      "c": "A recall removes a product from sale; it may follow an outbreak but is not what an outbreak is.",
+      "d": "Complaints about taste are not illnesses; an outbreak needs people who actually got sick from the same food."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-contamination-012",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "Which list shows major food allergens in the U.S.?",
+    "topicId": "contamination",
+    "prompt": "A daycare center orders lunch for a group of toddlers. Why does this order need extra food safety care?",
     "options": [
       {
         "id": "a",
-        "text": "Milk, eggs, corn, rice, garlic, and mustard"
+        "text": "Young children need their food served hotter than adults"
       },
       {
         "id": "b",
-        "text": "Chicken, beef, pork, lamb, turkey, and duck"
+        "text": "Daycare orders are inspected more often by health officials"
       },
       {
         "id": "c",
-        "text": "Strawberries, tomatoes, citrus, coffee, and cocoa"
+        "text": "Young children's immune systems are not fully developed"
       },
       {
         "id": "d",
-        "text": "Milk, eggs, fish, peanuts, wheat, soy, sesame"
+        "text": "Toddlers are more likely to have food allergies than adults"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Major allergens include milk, eggs, fish, shellfish, tree nuts, peanuts, wheat, soy, and sesame. Example: Sesame is included as a major allergen in the U.S.",
+    "correctOptionId": "c",
+    "explanation": "High-risk populations include infants and preschool-age children, pregnant women, older adults and people with weakened immune systems. Their bodies fight pathogens less well, so the same dose can cause more severe illness.",
     "distractorExplanations": {
-      "a": "Corn, rice, garlic, and mustard are not U.S. major allergens.",
-      "b": "Meats are not among the major allergens.",
-      "c": "These can cause reactions but are not on the major-allergen list."
+      "a": "Serving temperature depends on the food, not the guest's age; the issue is the children's immune response.",
+      "b": "Inspection frequency is not the reason; young children are a high-risk population for foodborne illness.",
+      "d": "Allergies matter for every guest, but children are high-risk because their immune systems are still developing."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-contamination-013",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "Shiga toxin-producing E. coli is most commonly linked to:",
+    "prompt": "A chef cooks a large barracuda thoroughly, yet a guest later develops ciguatera fish poisoning. Why did cooking not prevent it?",
     "options": [
       {
         "id": "a",
-        "text": "Cooked rice left at room temperature"
+        "text": "The fish was not cooked to 165°F for 15 seconds"
       },
       {
         "id": "b",
-        "text": "Undercooked ground beef and contaminated produce"
+        "text": "Ciguatoxin is not destroyed by cooking or freezing"
       },
       {
         "id": "c",
-        "text": "Large predatory reef fish such as barracuda"
+        "text": "Ciguatoxin forms when fish is stored above 41°F"
       },
       {
         "id": "d",
-        "text": "Home-canned vegetables with bulging lids"
+        "text": "The toxin came from cross-contamination at the station"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Shiga toxin-producing E. coli comes from cattle intestines. It is linked to undercooked ground beef (cook to 155°F) and to produce contaminated by animal feces.",
+    "explanation": "Ciguatoxin builds up in large predatory reef fish that eat smaller fish feeding on toxic algae. Cooking, freezing, smoking and curing do not destroy it, so the only control is buying fish from approved, reputable suppliers.",
     "distractorExplanations": {
-      "a": "Rice left at room temperature is associated with Bacillus cereus.",
-      "c": "Large reef fish are associated with ciguatera toxin.",
-      "d": "Bulging home-canned goods suggest Clostridium botulinum."
+      "a": "No cooking temperature destroys ciguatoxin, and fish only needs 145°F; a higher temperature would not have helped.",
+      "c": "That describes histamine (scombroid) in tuna or mackerel; ciguatoxin is already in the fish when it is caught.",
+      "d": "Ciguatoxin is in the fish's flesh from its diet; it is not transferred from another food at the station."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-contamination-014",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "Why should acidic foods such as tomato sauce not be stored in copper or galvanized containers?",
+    "prompt": "Shiga toxin-producing E. coli is most often linked to which foods?",
     "options": [
       {
         "id": "a",
-        "text": "The containers make the sauce spoil faster from mold"
+        "text": "Cooked rice held warm at room temperature"
       },
       {
         "id": "b",
-        "text": "The acid causes the food to reach unsafe temperatures"
+        "text": "Large predatory reef fish such as barracuda"
       },
       {
         "id": "c",
-        "text": "Metal can leach into the food and cause poisoning"
+        "text": "Home-canned vegetables with bulging lids"
       },
       {
         "id": "d",
-        "text": "These containers are too heavy to lift when full"
+        "text": "Undercooked ground beef and raw produce"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Acidic foods can dissolve copper, zinc, lead, and similar metals into the food and cause chemical (toxic-metal) poisoning. Use food-grade containers only.",
+    "correctOptionId": "d",
+    "explanation": "Shiga toxin-producing E. coli lives in cattle intestines. It gets into ground beef during processing and onto produce through contaminated water. Prevent it by cooking ground beef to 155°F for 17 seconds, buying from approved suppliers and excluding workers diagnosed with it.",
     "distractorExplanations": {
-      "a": "The main hazard is chemical leaching, not faster mold growth.",
-      "b": "Container material does not change the food's temperature.",
-      "d": "Weight is not the food safety issue."
+      "a": "Cooked rice left warm points to Bacillus cereus, not Shiga toxin-producing E. coli.",
+      "b": "Large reef fish are linked to ciguatoxin, a seafood toxin, not to E. coli.",
+      "c": "Bulging cans point to Clostridium botulinum, which grows without oxygen."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -465,31 +465,31 @@
     "id": "servsafe-food-handler-readiness-check-contamination-015",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "contamination",
-    "prompt": "A food handler cuts raw chicken, then slices bread for sandwiches without washing hands or changing the cutting board. This is an example of:",
+    "prompt": "A case of canned beans arrives with several cans bulging at both ends. What is the biggest risk if they are used?",
     "options": [
       {
         "id": "a",
-        "text": "Time-temperature abuse"
+        "text": "Botulism from Clostridium botulinum"
       },
       {
         "id": "b",
-        "text": "Physical contamination"
+        "text": "Listeriosis from Listeria monocytogenes"
       },
       {
         "id": "c",
-        "text": "Toxic-metal poisoning"
+        "text": "Scombroid poisoning from histamine"
       },
       {
         "id": "d",
-        "text": "Cross-contamination"
+        "text": "Hepatitis A from the outer packaging"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Cross-contamination moves pathogens from raw food to ready-to-eat food by hands, boards, or utensils. Wash hands, change gloves, and clean and sanitize (or switch) boards between tasks.",
+    "correctOptionId": "a",
+    "explanation": "Bulging, leaking or deeply dented cans may contain Clostridium botulinum, which grows without oxygen and produces a deadly toxin. Reject swollen cans at receiving or throw them out; never open or taste them to check.",
     "distractorExplanations": {
-      "a": "Time-temperature abuse is leaving food in the danger zone too long.",
-      "b": "Physical contamination involves foreign objects such as glass or metal.",
-      "c": "Toxic-metal poisoning comes from food reacting with metal containers."
+      "b": "Listeria grows in cold ready-to-eat food such as deli meat; it is not the classic hazard of swollen cans.",
+      "c": "Scombroid toxin comes from temperature-abused fish such as tuna, not from swollen canned goods.",
+      "d": "Hepatitis A spreads from infected people to food; damaged packaging does not cause it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -498,163 +498,163 @@
     "id": "servsafe-food-handler-readiness-check-hygiene-001",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "Why document employee illness reports?",
+    "prompt": "How long should the whole handwashing process take, from wetting the hands to drying them?",
     "options": [
       {
         "id": "a",
-        "text": "To decide which employees get paid sick leave"
+        "text": "At least 5 seconds"
       },
       {
         "id": "b",
-        "text": "To share the details with other staff members"
+        "text": "At least 10 seconds"
       },
       {
         "id": "c",
-        "text": "To replace the need to exclude sick workers"
+        "text": "At least 20 seconds"
       },
       {
         "id": "d",
-        "text": "To apply exclusion rules and meet regulations"
+        "text": "At least 60 seconds"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Documentation helps managers apply exclusion/restriction rules and comply with regulatory requirements. Example: Record vomiting report and action taken.",
+    "correctOptionId": "c",
+    "explanation": "Wet hands and arms with warm running water, apply soap, scrub for 10 to 15 seconds including between fingers and under nails, rinse, and dry with a single-use paper towel or hand dryer. The whole process takes at least 20 seconds.",
     "distractorExplanations": {
-      "a": "Sick-leave pay is an HR matter, not the food safety purpose.",
-      "b": "Employee health details must be kept confidential.",
-      "c": "Documentation supports exclusion; it does not replace it."
+      "a": "5 seconds is far too short to remove pathogens; the full process takes at least 20 seconds.",
+      "b": "10 to 15 seconds is the scrubbing step only; the whole handwashing process takes at least 20 seconds.",
+      "d": "60 seconds is more than required; the standard is at least 20 seconds for the full process."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-002",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "Why use approved foodservice equipment?",
+    "prompt": "After washing his hands, a cook dries them on his apron and goes back to making salads. What did he do wrong?",
     "options": [
       {
         "id": "a",
-        "text": "It is always cheaper than household equipment"
+        "text": "He recontaminated his hands by drying them on his apron"
       },
       {
         "id": "b",
-        "text": "It is designed to be cleanable, durable, and safe"
+        "text": "He should have used hand antiseptic instead of washing"
       },
       {
         "id": "c",
-        "text": "It never needs to be cleaned or sanitized"
+        "text": "He should have dried his hands on a reusable cloth towel"
       },
       {
         "id": "d",
-        "text": "It removes the need for regular maintenance"
+        "text": "He needed to rinse his hands again in the food-prep sink"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Approved equipment is designed to be cleanable, durable, and safe for foodservice conditions. Example: Use NSF/ANSI-style certified equipment where required.",
+    "correctOptionId": "a",
+    "explanation": "Aprons and clothing carry dirt and pathogens, so drying hands on them undoes the handwashing. Hands should be dried with a single-use paper towel or a hand dryer before going back to ready-to-eat food.",
     "distractorExplanations": {
-      "a": "Approved equipment is chosen for safety, not price.",
-      "c": "All food-contact equipment must be cleaned and sanitized.",
-      "d": "Approved equipment still needs regular maintenance."
+      "b": "Hand antiseptic may be used after washing, never instead of it; the real error was drying on the apron.",
+      "c": "Shared cloth towels can spread pathogens; the rule is single-use paper towels or a hand dryer.",
+      "d": "Hands are never washed in a food-prep sink, and rinsing again would not fix drying them on the apron."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-003",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "How should drink garnishes be handled?",
+    "prompt": "Which of these tasks requires a food handler to wash hands before going back to food prep?",
     "options": [
       {
         "id": "a",
-        "text": "With bare hands, since they are only garnishes"
+        "text": "Moving from slicing bread to plating the same order"
       },
       {
         "id": "b",
-        "text": "Kept at room temperature in an open bin all day"
+        "text": "Restocking sealed bottles of water in a reach-in"
       },
       {
         "id": "c",
-        "text": "Stored in the ice bin used for customer drinks"
+        "text": "Checking soup with a clean, sanitized thermometer"
       },
       {
         "id": "d",
-        "text": "With clean utensils or gloves, protected from contact"
+        "text": "Taking out the trash before plating sandwiches"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Use clean utensils or gloves and protect garnishes from contamination. Example: Use tongs for lemon wedges.",
+    "explanation": "Hands must be washed after handling garbage, using the restroom, touching hair or the body, handling raw meat, sneezing or coughing, eating or drinking, handling chemicals or dirty equipment, and before putting on gloves. Garbage carries pathogens straight to ready-to-eat food.",
     "distractorExplanations": {
-      "a": "Garnishes are ready-to-eat, so no bare-hand contact.",
-      "b": "Cut garnishes must be protected, and some need temperature control.",
-      "c": "Ice for drinks must not be used to store or chill food items."
+      "a": "Moving between ready-to-eat steps on the same order does not by itself contaminate hands.",
+      "b": "Stocking sealed bottles does not soil hands the way garbage does.",
+      "c": "Using a clean, sanitized probe is routine prep and does not contaminate hands like trash."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-004",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "What extra caution applies when serving high-risk populations?",
+    "prompt": "Where should food handlers wash their hands?",
     "options": [
       {
         "id": "a",
-        "text": "Use stricter controls, avoid certain risky foods, and follow rules for pasteurized products and restricted menu items"
+        "text": "In the three-compartment sink after the wash step"
       },
       {
         "id": "b",
-        "text": "They should include food/equipment checked, temperature, time/date, employee, and corrective action when needed."
+        "text": "Only in a sink designated for handwashing"
       },
       {
         "id": "c",
-        "text": "Training records show employees were trained on required procedures and help managers track retraining needs."
+        "text": "In the food-prep sink if it has been sanitized"
       },
       {
         "id": "d",
-        "text": "Look for broken seals, damaged packaging, unusual appearance, unexpected odors, or products out of place."
+        "text": "In the dish sink when a cart blocks the hand sink"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Use stricter controls, avoid certain risky foods, and follow rules for pasteurized products and restricted menu items. Example: Use pasteurized eggs in healthcare settings.",
+    "correctOptionId": "b",
+    "explanation": "Handwashing sinks are used only for washing hands, and prep, dish or utility sinks are never used for it. Hand sinks must have soap, warm water, paper towels or a hand dryer, a waste container and signage, and must never be blocked.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Use stricter controls, avoid certain risky foods, and follow rules for pasteurized products and restricted menu items”.",
-      "c": "Not the best answer here; the right answer is “Use stricter controls, avoid certain risky foods, and follow rules for pasteurized products and restricted menu items”.",
-      "d": "Not the best answer here; the right answer is “Use stricter controls, avoid certain risky foods, and follow rules for pasteurized products and restricted menu items”."
+      "a": "The three-compartment sink is for cleaning and sanitizing items; washing hands there can contaminate dishes.",
+      "c": "Washing hands in a prep sink can splash pathogens onto produce that will be prepared there.",
+      "d": "A hand sink must never be blocked; move the cart rather than using the dish sink."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-005",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "Why is unpasteurized juice a concern?",
+    "prompt": "When is it correct for a food handler to use hand antiseptic (hand sanitizer gel)?",
     "options": [
       {
         "id": "a",
-        "text": "It spoils faster, so it must be served warm"
+        "text": "Instead of washing hands after using the restroom"
       },
       {
         "id": "b",
-        "text": "It is safe for anyone once it is refrigerated"
+        "text": "Instead of washing hands when the hand sink is busy"
       },
       {
         "id": "c",
-        "text": "It must be boiled before being served to guests"
+        "text": "After washing hands, not in place of washing"
       },
       {
         "id": "d",
-        "text": "It may carry pathogens and needs warning labels"
+        "text": "Before touching ready-to-eat food so gloves are not needed"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Unpasteurized juice may contain pathogens and requires proper warning labels or processing controls. Example: Serve pasteurized juice to high-risk guests.",
+    "correctOptionId": "c",
+    "explanation": "Hand antiseptics lower the number of pathogens on skin, but they do not remove dirt and cannot replace handwashing. If used, apply them after washing and let them dry before touching food or putting on gloves.",
     "distractorExplanations": {
-      "a": "Serving it warm makes pathogen growth worse.",
-      "b": "Refrigeration does not kill pathogens; high-risk guests should get pasteurized juice.",
-      "c": "The rule is labeling or processing controls, not boiling every serving."
+      "a": "After the restroom, hands must be washed with soap and water; antiseptic cannot replace that.",
+      "b": "A busy sink is not a reason to skip washing; antiseptic is only an extra step after washing.",
+      "d": "Antiseptic does not replace the no-bare-hand-contact rule; ready-to-eat food still needs gloves or utensils."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -663,64 +663,64 @@
     "id": "servsafe-food-handler-readiness-check-hygiene-006",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "What is the purpose of sneeze guards?",
+    "prompt": "A server needs to place a lemon wedge on a guest's drink. How should she handle the lemon?",
     "options": [
       {
         "id": "a",
-        "text": "They keep hot food at 135°F or higher"
+        "text": "With tongs, a scoop, or single-use gloves"
       },
       {
         "id": "b",
-        "text": "They keep cold food at 41°F or lower"
+        "text": "With bare hands if she washed them earlier"
       },
       {
         "id": "c",
-        "text": "They replace the need to label buffet food"
+        "text": "With a napkin taken from a guest table"
       },
       {
         "id": "d",
-        "text": "They shield exposed food from guests' droplets"
+        "text": "With bare hands, because it only touches the rim"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Sneeze guards protect exposed food from droplets, hands, and other contamination from guests. Example: Install guards over salad bars.",
+    "correctOptionId": "a",
+    "explanation": "Ready-to-eat food, including garnishes, ice and bread, must not be touched with bare hands. Use tongs, deli sheets, scoops or single-use gloves so pathogens on hands cannot reach the guest.",
     "distractorExplanations": {
-      "a": "Sneeze guards do not control temperature.",
-      "b": "Sneeze guards do not keep food cold.",
-      "c": "Labeling rules still apply with sneeze guards."
+      "b": "Even washed hands carry pathogens; bare-hand contact with ready-to-eat food is not allowed.",
+      "c": "Table napkins are not food-safe utensils and may already be contaminated by guests.",
+      "d": "The garnish touches the drink and is often eaten, so it is ready-to-eat food."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-007",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "Which process requires a variance or HACCP plan?",
+    "prompt": "A cook wearing gloves forms raw burger patties and is then asked to slice cheese for sandwiches. What should he do first?",
     "options": [
       {
         "id": "a",
-        "text": "Cooling a pot of soup in an ice-water bath"
+        "text": "Rinse his gloved hands under hot running water"
       },
       {
         "id": "b",
-        "text": "Cooking chicken to 165°F for 15 seconds"
+        "text": "Wipe the gloves with a sanitizer-soaked towel"
       },
       {
         "id": "c",
-        "text": "Curing or smoking food for preservation"
+        "text": "Put a fresh pair of gloves over the old pair"
       },
       {
         "id": "d",
-        "text": "Thawing ground beef in the cooler overnight"
+        "text": "Remove gloves, wash hands, put on new gloves"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Examples include smoking food for preservation, curing, reduced-oxygen packaging, custom processing animals, sprouting seeds, and packaging unpasteurized juice. Example: ROP fish or cured meats need extra controls.",
+    "correctOptionId": "d",
+    "explanation": "Gloves are single-use. Change them when they are dirty or torn, before starting a different task, after handling raw meat and before handling ready-to-eat food, and at least every 4 hours of continuous use. Wash hands before putting on the new pair.",
     "distractorExplanations": {
-      "a": "Ice-water baths are an approved cooling method.",
-      "b": "Cooking to the required temperature is standard practice, not a special process.",
-      "d": "Refrigerator thawing is an approved thawing method."
+      "a": "Rinsing does not reliably remove raw-meat pathogens, and gloves are not meant to be reused.",
+      "b": "Sanitizing gloves does not make them safe to reuse after handling raw meat.",
+      "c": "Double-gloving over contaminated gloves can still transfer pathogens to the cheese."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -729,64 +729,64 @@
     "id": "servsafe-food-handler-readiness-check-hygiene-008",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "What happens if a HACCP critical limit is not met?",
+    "prompt": "A food handler has a small cut on her finger. What must she do before handling food?",
     "options": [
       {
         "id": "a",
-        "text": "The food is served, then the limit is reviewed"
+        "text": "Leave the cut uncovered so it can dry and heal"
       },
       {
         "id": "b",
-        "text": "The limit is changed to match the result"
+        "text": "Cover it with a bandage and a single-use glove"
       },
       {
         "id": "c",
-        "text": "The planned corrective action is taken"
+        "text": "Cover it with a bandage and skip handwashing"
       },
       {
         "id": "d",
-        "text": "Nothing, as long as the next check passes"
+        "text": "Wear a glove only on days she handles raw meat"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Take predetermined corrective action to bring the process under control and protect food safety. Example: Continue cooking chicken until it reaches the critical limit or discard if unsafe.",
+    "correctOptionId": "b",
+    "explanation": "Wounds on the hand or wrist must be covered with an impermeable cover, such as a bandage or finger cot, and then a single-use glove. A wound on the arm needs an impermeable cover. An infected, draining wound that cannot be covered means the worker is kept away from food.",
     "distractorExplanations": {
-      "a": "Food that failed a critical limit must not be served until corrected.",
-      "b": "Critical limits are not adjusted to fit failures.",
-      "d": "Each failure needs corrective action, not waiting for the next check."
+      "a": "An open cut can carry Staphylococcus aureus into food, so it must be covered.",
+      "c": "Hands must still be washed; the bandage plus glove protects the food, not the washing step.",
+      "d": "The cut must be gloved for all food handling, not just on raw-meat days."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-009",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "How can key control support food defense?",
+    "prompt": "Which piece of jewelry may a food handler wear on the hands or arms while prepping food?",
     "options": [
       {
         "id": "a",
-        "text": "It helps staff find supplies more quickly"
+        "text": "A plain band ring"
       },
       {
         "id": "b",
-        "text": "It lets vendors enter storage after hours"
+        "text": "A watch with a metal band"
       },
       {
         "id": "c",
-        "text": "It limits who can reach food and chemicals"
+        "text": "A medical-alert bracelet"
       },
       {
         "id": "d",
-        "text": "It removes the need for delivery inspections"
+        "text": "A ring with a small set stone"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Limiting and tracking keys or access codes helps prevent unauthorized access to food, chemicals, and storage areas. Example: Only managers have dry-storage keys.",
+    "correctOptionId": "a",
+    "explanation": "Before prepping food, food handlers remove rings except a plain band, bracelets (including medical bracelets) and watches. Jewelry holds pathogens, can fall into food and makes handwashing less effective.",
     "distractorExplanations": {
-      "a": "Finding supplies faster is not a food defense goal.",
-      "b": "After-hours vendor access weakens food defense.",
-      "d": "Deliveries still need inspection."
+      "b": "Watches trap dirt and moisture under the band and must be removed during food prep.",
+      "c": "Bracelets, including medical bracelets, are not allowed on the hands or arms during food prep.",
+      "d": "Rings with stones have crevices that hold pathogens and can lose stones in food; only a plain band is allowed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -795,31 +795,31 @@
     "id": "servsafe-food-handler-readiness-check-hygiene-010",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "How should single-use items be handled?",
+    "prompt": "A line cook tells the manager he has had diarrhea since this morning. What should the manager do?",
     "options": [
       {
         "id": "a",
-        "text": "Wash and reuse them if they look clean"
+        "text": "Restrict him to washing dishes for the shift"
       },
       {
         "id": "b",
-        "text": "Hold cups by the rim to avoid dropping them"
+        "text": "Let him work if he wears gloves the whole shift"
       },
       {
         "id": "c",
-        "text": "Touch only surfaces that won't contact food"
+        "text": "Exclude him from the operation"
       },
       {
         "id": "d",
-        "text": "Store them unwrapped near the dish sink"
+        "text": "Let him work as long as he has no fever"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Handle single-use items by surfaces that will not touch food or the guest’s mouth. Example: Hold cups by the base or outside, not the rim.",
+    "explanation": "Food handlers with vomiting or diarrhea must be excluded from the operation, because pathogens such as norovirus spread easily from them. They may return after at least 24 hours without symptoms or with a written release from a medical practitioner, depending on the cause.",
     "distractorExplanations": {
-      "a": "Single-use items must not be reused.",
-      "b": "Holding cups by the rim contaminates the surface that touches the guest's mouth.",
-      "d": "Single-use items must be stored protected, away from splash."
+      "a": "Restriction is used for problems such as a sore throat with fever; diarrhea requires exclusion from the operation.",
+      "b": "Gloves do not stop a worker with diarrhea from spreading pathogens to surfaces and food.",
+      "d": "Fever is not the test; diarrhea alone is enough to exclude the worker."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -828,235 +828,169 @@
     "id": "servsafe-food-handler-readiness-check-hygiene-011",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "How can visitor control protect food?",
+    "prompt": "A food handler has been diagnosed with Hepatitis A but says he feels fine today. What must happen?",
     "options": [
       {
         "id": "a",
-        "text": "Let visitors enter prep areas if they wash hands"
+        "text": "He can work if he does not touch ready-to-eat food"
       },
       {
         "id": "b",
-        "text": "Sign visitors in, escort them, and limit access"
+        "text": "He can work if he wears gloves and a hair restraint"
       },
       {
         "id": "c",
-        "text": "Allow delivery drivers to stock the walk-in alone"
+        "text": "He should be restricted to non-food tasks for a day"
       },
       {
         "id": "d",
-        "text": "Post the prep area door code for vendors"
+        "text": "Exclude him and report it to the health authority"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Use sign-in procedures, escort visitors, restrict access to food prep/storage, and identify authorized personnel. Example: Escort maintenance workers in prep areas.",
+    "correctOptionId": "d",
+    "explanation": "A diagnosis with any of the Big Six pathogens (norovirus, Hepatitis A, Shigella, Shiga toxin-producing E. coli, Salmonella Typhi, nontyphoidal Salmonella) must be reported to the regulatory authority. A Hepatitis A diagnosis means exclusion, even without symptoms, until the authority approves return.",
     "distractorExplanations": {
-      "a": "Handwashing does not authorize visitors to enter prep areas unescorted.",
-      "c": "Unescorted access to storage creates a tampering risk.",
-      "d": "Sharing door codes defeats access control."
+      "a": "Hepatitis A spreads before and without symptoms, so a diagnosed worker is excluded, not restricted.",
+      "b": "Gloves and hair restraints do not control a Big Six diagnosis; exclusion and reporting are required.",
+      "c": "A one-day restriction is not enough; the worker stays excluded until the regulatory authority approves return."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-012",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "Why document corrective actions?",
+    "prompt": "Where may a food handler eat a snack or smoke during a shift?",
     "options": [
       {
         "id": "a",
-        "text": "To assign blame to the employee involved"
+        "text": "At the prep station if all food is covered"
       },
       {
         "id": "b",
-        "text": "To replace the need for monitoring logs"
+        "text": "Only in designated areas away from food prep"
       },
       {
         "id": "c",
-        "text": "To keep information from health inspectors"
+        "text": "In the dish area if hands are washed afterward"
       },
       {
         "id": "d",
-        "text": "To record what failed and how it was fixed"
+        "text": "In the dry-storage room during a short break"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Documentation shows what went wrong, what was done, and how recurrence will be prevented. Example: Cooling log notes soup was discarded after missing the limit.",
+    "correctOptionId": "b",
+    "explanation": "Eating, smoking and chewing gum or tobacco can move saliva and pathogens to hands, food and surfaces. These activities are allowed only in designated areas away from food, utensils and prep surfaces, and hands are washed before returning to work.",
     "distractorExplanations": {
-      "a": "The goal is prevention, not blame.",
-      "b": "Monitoring logs are still needed.",
-      "c": "Records should be available to inspectors."
+      "a": "Covering the food does not stop saliva and pathogens from reaching hands, equipment and surfaces.",
+      "c": "Dish areas hold clean utensils; eating there risks contaminating them even if hands are washed later.",
+      "d": "Dry storage holds food and single-use items; snacking or smoking there can contaminate them."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-013",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "When should employees be retrained?",
+    "prompt": "What is the main reason food handlers must wear a hair restraint?",
     "options": [
       {
         "id": "a",
-        "text": "Only once, when they are first hired"
+        "text": "To keep hair out of food and hands off hair"
       },
       {
         "id": "b",
-        "text": "Only after a health inspection is failed"
+        "text": "To keep heads cool near hot kitchen equipment"
       },
       {
         "id": "c",
-        "text": "When procedures change or problems appear"
+        "text": "To show guests which staff members handle food"
       },
       {
         "id": "d",
-        "text": "Only when they ask for more training"
+        "text": "So hands need not be washed after touching hair"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Retrain when procedures change, performance problems appear, violations occur, or employees do not understand a task. Example: Retrain staff after repeated sanitizer concentration errors.",
+    "correctOptionId": "a",
+    "explanation": "Hair restraints such as hairnets, hats and beard restraints keep hair from falling into food and discourage workers from touching their hair. If a worker does touch their hair, hands must be washed before returning to food.",
     "distractorExplanations": {
-      "a": "One-time training is not enough when tasks or rules change.",
-      "b": "Waiting for a failed inspection is too late.",
-      "d": "Managers must retrain based on performance, not only on request."
+      "b": "Comfort is not the reason; hair restraints prevent physical and biological contamination.",
+      "c": "Hair restraints are a food safety control, not a way to identify staff.",
+      "d": "Touching hair still requires handwashing; restraints reduce contact, they do not excuse it."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-014",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "What food safety rule applies to takeout containers?",
+    "prompt": "A food handler at a nursing-home kitchen has a sore throat with a fever. What should happen?",
     "options": [
       {
         "id": "a",
-        "text": "Use clean, food-safe packaging that protects food"
+        "text": "She can work if she wears a face mask"
       },
       {
         "id": "b",
-        "text": "Reuse guest containers for any other customer"
+        "text": "She may work if she handles only trash and mopping"
       },
       {
         "id": "c",
-        "text": "Use any container that has a tight-fitting lid"
+        "text": "She must be excluded from the operation"
       },
       {
         "id": "d",
-        "text": "Pack hot and cold foods together to save space"
+        "text": "She should be restricted to working with raw food"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Use clean, food-safe single-use packaging and protect food from contamination and temperature abuse. Example: Package hot soup in food-grade containers.",
+    "correctOptionId": "c",
+    "explanation": "A sore throat with fever means the worker is restricted from working with or around food in a general operation, and excluded if the operation mainly serves a high-risk population such as a nursing home or hospital. She can return with written clearance from a medical practitioner.",
     "distractorExplanations": {
-      "b": "Containers from one guest must not be reused for others.",
-      "c": "A tight lid alone does not make a container food-safe.",
-      "d": "Packing hot and cold foods together causes time-temperature abuse."
+      "a": "A mask does not meet the rule; with a high-risk population the worker must be excluded.",
+      "b": "Keeping her to non-food tasks is a restriction, which is the rule for general operations, not for a nursing home.",
+      "d": "Raw food is still food; restriction keeps a worker away from all food, and here exclusion applies."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-hygiene-015",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "hygiene",
-    "prompt": "How can receiving procedures support food defense?",
+    "prompt": "Which of these must a food handler report to the manager before starting work?",
     "options": [
       {
         "id": "a",
-        "text": "Accept any delivery that arrives on schedule"
+        "text": "A roommate at home has a common cold"
       },
       {
         "id": "b",
-        "text": "Use approved suppliers and inspect all packaging"
+        "text": "Feeling tired after working a double shift"
       },
       {
         "id": "c",
-        "text": "Let drivers put deliveries away unsupervised"
+        "text": "A mild sunburn on both forearms"
       },
       {
         "id": "d",
-        "text": "Skip checks for trusted long-term suppliers"
+        "text": "Yellow skin or eyes (jaundice)"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Accept deliveries only from approved suppliers, inspect seals and packaging for tampering, and question unexpected deliveries. Supervise deliveries and store products promptly.",
+    "correctOptionId": "d",
+    "explanation": "Food handlers must report vomiting, diarrhea, jaundice, sore throat with fever, infected wounds, and any Big Six diagnosis or exposure. Jaundice can signal Hepatitis A, so the worker is excluded and the regulatory authority is notified.",
     "distractorExplanations": {
-      "a": "Arriving on time does not show a delivery is safe or expected.",
-      "c": "Unsupervised drivers create a tampering risk.",
-      "d": "Every delivery needs inspection, even from trusted suppliers."
+      "a": "A household member's common cold is not reportable; exposure to a Big Six illness would be.",
+      "b": "Fatigue is not one of the symptoms food handlers must report.",
+      "c": "A sunburn is not a food safety illness; an infected, draining wound would need to be reported."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-time-temp-001",
-    "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "time-temp",
-    "prompt": "Why are food safety records important?",
-    "options": [
-      {
-        "id": "a",
-        "text": "They prove controls like temperature checks were done"
-      },
-      {
-        "id": "b",
-        "text": "They replace the need for manager training"
-      },
-      {
-        "id": "c",
-        "text": "They let staff skip daily temperature checks"
-      },
-      {
-        "id": "d",
-        "text": "They are needed only during a health inspection"
-      }
-    ],
-    "correctOptionId": "a",
-    "explanation": "Records document that controls such as temperature checks, receiving, shellfish tags, and corrective actions were performed. Example: Cooling logs show food met cooling limits.",
-    "distractorExplanations": {
-      "b": "Records document work; they do not replace training.",
-      "c": "Records come from doing the checks, not in place of them.",
-      "d": "Records are kept continuously, not just for inspections."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
-  },
-  {
-    "id": "servsafe-food-handler-readiness-check-time-temp-002",
-    "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "time-temp",
-    "prompt": "What should employees do if they notice suspicious activity around food?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Operations should retain supplier parasite destruction documentation according to regulatory requirements, commonly 90 days."
-      },
-      {
-        "id": "b",
-        "text": "Retrain when procedures change, performance problems appear, violations occur, or employees do not understand a task."
-      },
-      {
-        "id": "c",
-        "text": "A critical limit is a measurable standard that must be met at a CCP to control a hazard."
-      },
-      {
-        "id": "d",
-        "text": "Report suspicious people, packages, tampering, or unusual behavior according to the operation’s plan"
-      }
-    ],
-    "correctOptionId": "d",
-    "explanation": "Report suspicious people, packages, tampering, or unusual behavior according to the operation’s plan. Example: Tell a manager about an unknown person in dry storage.",
-    "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Report suspicious people, packages, tampering, or unusual behavior according to the operation’s plan”.",
-      "b": "This is the answer to a different question (“When should employees be retrained?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Report suspicious people, packages, tampering, or unusual behavior according to the operation’s plan”."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
-  },
-  {
-    "id": "servsafe-food-handler-readiness-check-time-temp-003",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
     "prompt": "What is the temperature danger zone for TCS food?",
@@ -1067,23 +1001,89 @@
       },
       {
         "id": "b",
-        "text": "45°F to 140°F"
+        "text": "41°F to 135°F"
       },
       {
         "id": "c",
-        "text": "41°F to 135°F"
+        "text": "45°F to 140°F"
       },
       {
         "id": "d",
         "text": "50°F to 165°F"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "The danger zone is 41°F to 135°F, where many pathogens can grow rapidly. Example: Cold hold at 41°F or lower and hot hold at 135°F or higher.",
+    "correctOptionId": "b",
+    "explanation": "Pathogens grow fastest between 41°F and 135°F (5°C to 57°C), especially between 70°F and 125°F. Cold TCS food is held at 41°F or lower and hot TCS food at 135°F or higher to keep it out of this range.",
     "distractorExplanations": {
-      "a": "The danger zone runs from 41°F to 135°F.",
-      "b": "45°F and 140°F are outdated limits; the current range is 41°F to 135°F.",
-      "d": "165°F is a cooking and reheating temperature, not the danger zone limit."
+      "a": "32°F is freezing; the danger zone starts at 41°F, the cold-holding limit.",
+      "c": "45°F and 140°F are older or rounded figures; the current danger zone is 41°F to 135°F.",
+      "d": "165°F is the cooking temperature for poultry and the reheating temperature, not the top of the danger zone."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+  },
+  {
+    "id": "servsafe-food-handler-readiness-check-time-temp-002",
+    "examSlug": "servsafe-food-handler-readiness-check",
+    "topicId": "time-temp",
+    "prompt": "A pot of chili started cooling at 135°F at 1:00 p.m. At 3:00 p.m. it reads 90°F. What must happen now?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep cooling it; it has 4 more hours to reach 41°F"
+      },
+      {
+        "id": "b",
+        "text": "Move it to the cooler; it has until 7:00 p.m."
+      },
+      {
+        "id": "c",
+        "text": "Serve it right away while it is still warm"
+      },
+      {
+        "id": "d",
+        "text": "Reheat to 165°F and recool, or throw it out"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Cooked TCS food must cool from 135°F to 70°F within 2 hours, then from 70°F to 41°F or lower within the next 4 hours (6 hours total). If it misses 70°F in the first 2 hours, reheat it to 165°F for 15 seconds and start cooling again, or throw it out.",
+    "distractorExplanations": {
+      "a": "The 4-hour stage only starts after the food reaches 70°F; at 90°F the first stage has already failed.",
+      "b": "7:00 p.m. assumes the 6-hour total still applies, but missing 70°F at 2 hours means reheat or discard.",
+      "c": "Food that failed cooling spent too long in the danger zone and cannot simply be served."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "servsafe-food-handler-readiness-check-time-temp-003",
+    "examSlug": "servsafe-food-handler-readiness-check",
+    "topicId": "time-temp",
+    "prompt": "What is the minimum internal cooking temperature for poultry, such as whole or ground chicken and turkey?",
+    "options": [
+      {
+        "id": "a",
+        "text": "165°F (instantaneous)"
+      },
+      {
+        "id": "b",
+        "text": "155°F for 17 seconds"
+      },
+      {
+        "id": "c",
+        "text": "145°F for 15 seconds"
+      },
+      {
+        "id": "d",
+        "text": "135°F (no hold time)"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Poultry, whole or ground, must reach 165°F for less than 1 second (instantaneous). The same temperature applies to stuffing, stuffed meat, fish or pasta, and dishes made with previously cooked TCS ingredients.",
+    "distractorExplanations": {
+      "b": "155°F for 17 seconds is for ground beef, pork and other ground meat, not poultry.",
+      "c": "145°F for 15 seconds is for seafood, steaks and chops, and eggs cooked for immediate service.",
+      "d": "135°F is the hot-holding temperature and the reheat for commercially processed food, not raw poultry."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1092,31 +1092,31 @@
     "id": "servsafe-food-handler-readiness-check-time-temp-004",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What are key requirements for cooking TCS food in a microwave?",
+    "prompt": "A cook is grilling hamburger patties made from ground beef. What minimum internal temperature must they reach?",
     "options": [
       {
         "id": "a",
-        "text": "Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking"
+        "text": "135°F with no hold time"
       },
       {
         "id": "b",
-        "text": "Microwave-cooked TCS food must never reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking"
+        "text": "145°F for 15 seconds"
       },
       {
         "id": "c",
-        "text": "Commercially processed ready-to-eat TCS food must be heated to at least 135°F for hot holding."
+        "text": "155°F for 17 seconds"
       },
       {
         "id": "d",
-        "text": "An ice paddle cools hot liquid foods from the inside while stirring."
+        "text": "165°F for 15 seconds"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking. Example: Microwave chicken evenly and let it stand covered.",
+    "correctOptionId": "c",
+    "explanation": "Ground meat (beef, pork and lamb), injected or mechanically tenderized meat, and ground seafood must reach 155°F for 17 seconds. Grinding moves surface pathogens such as Shiga toxin-producing E. coli into the center of the patty.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking”.",
-      "c": "This is the answer to a different question (“What temperature is used for commercially processed ready-to-eat TCS food that will be hot held?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Microwave-cooked TCS food must reach 165°F, be rotated or stirred, be covered, and stand for 2 minutes after cooking”."
+      "a": "135°F is the hot-holding temperature, not a cooking temperature for raw ground beef.",
+      "b": "145°F for 15 seconds is for whole steaks and chops, where pathogens stay on the surface.",
+      "d": "165°F is the poultry and stuffed-food temperature; ground beef needs 155°F for 17 seconds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1125,31 +1125,31 @@
     "id": "servsafe-food-handler-readiness-check-time-temp-005",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "How does an ice-water bath help cool food?",
+    "prompt": "Which of these foods must reach a minimum internal temperature of 145°F for 15 seconds?",
     "options": [
       {
         "id": "a",
-        "text": "Ice and water pull heat out, faster when stirred"
+        "text": "Ground beef patties"
       },
       {
         "id": "b",
-        "text": "It keeps food above 135°F until it is served"
+        "text": "Salmon fillets"
       },
       {
         "id": "c",
-        "text": "It lets food cool slowly at room temperature"
+        "text": "Chicken breasts"
       },
       {
         "id": "d",
-        "text": "It freezes the outer layer to seal in the heat"
+        "text": "Stuffed pasta shells"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "An ice-water bath surrounds a container with cold water and ice, pulling heat out faster when food is stirred. Example: Cool soup in a metal pan set in ice water.",
+    "correctOptionId": "b",
+    "explanation": "145°F for 15 seconds applies to seafood (fish and shellfish), steaks and chops of beef, pork, veal and lamb, and shell eggs cooked for immediate service. Roasts use 145°F for 4 minutes.",
     "distractorExplanations": {
-      "b": "Holding above 135°F is hot holding, not cooling.",
-      "c": "Cooling slowly at room temperature is unsafe.",
-      "d": "The goal is to remove heat quickly, not trap it."
+      "a": "Ground beef needs 155°F for 17 seconds because grinding spreads surface pathogens inside.",
+      "c": "Chicken is poultry and must reach 165°F (instantaneous).",
+      "d": "Stuffed pasta must reach 165°F because the stuffing can hold pathogens from raw ingredients."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1158,64 +1158,64 @@
     "id": "servsafe-food-handler-readiness-check-time-temp-006",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What is a limitation of infrared thermometers?",
+    "prompt": "On a buffet, mashed potatoes read 136°F at the last check two hours ago. Now they read 128°F. What should the food handler do?",
     "options": [
       {
         "id": "a",
-        "text": "They cannot read temperatures above 100°F"
+        "text": "Reheat to 165°F for 15 seconds and hot-hold"
       },
       {
         "id": "b",
-        "text": "They must touch the food to get a reading"
+        "text": "Keep serving them; 128°F is still hot enough"
       },
       {
         "id": "c",
-        "text": "They need calibration after every single use"
+        "text": "Cover the pan and check again in 4 hours"
       },
       {
         "id": "d",
-        "text": "They measure surface, not internal, temperature"
+        "text": "Turn up the steam table and keep serving"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Infrared thermometers measure surface temperature only, not internal food temperature. Example: Use probe thermometer for internal chicken temperature.",
+    "correctOptionId": "a",
+    "explanation": "Hot TCS food must be held at 135°F or higher. Because the potatoes were last at a safe temperature less than 2 hours ago, they can be reheated to 165°F for 15 seconds and returned to hot holding. If the time below 135°F is unknown or longer, throw the food out.",
     "distractorExplanations": {
-      "a": "Infrared thermometers read a wide range, including hot food.",
-      "b": "Infrared thermometers read without touching the food.",
-      "c": "They are calibrated as the manufacturer recommends, not after every use."
+      "b": "128°F is inside the danger zone; hot holding requires 135°F or higher.",
+      "c": "Waiting another 4 hours would leave the food in the danger zone far too long.",
+      "d": "Hot-holding equipment is not designed to reheat food quickly through the danger zone."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-time-temp-007",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What is the maximum time for hot TCS food held without temperature control?",
+    "prompt": "Chili made and cooled in-house yesterday will be reheated for hot holding today. What is the reheating rule?",
     "options": [
       {
         "id": "a",
-        "text": "Hot TCS food may be held up to 4 hours if it starts at 135°F or higher, then must never be discarded, sold, or served"
+        "text": "135°F within 4 hours"
       },
       {
         "id": "b",
-        "text": "It must be rapidly reheated and cooled again correctly or discarded, per regulatory rules and product condition."
+        "text": "145°F for 15 seconds within 6 hours"
       },
       {
         "id": "c",
-        "text": "At sea level, boiling water is 212°F or 100°C; adjust for altitude as needed."
+        "text": "155°F for 17 seconds within 1 hour"
       },
       {
         "id": "d",
-        "text": "Hot TCS food may be held up to 4 hours if it starts at 135°F or higher, then must be discarded, sold, or served"
+        "text": "165°F for 15 seconds within 2 hours"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Hot TCS food may be held up to 4 hours if it starts at 135°F or higher, then must be discarded, sold, or served. Example: Discard hot-held wings after the marked 4-hour time.",
+    "explanation": "TCS food that was cooked and cooled in-house and is reheated for hot holding must reach 165°F for 15 seconds within 2 hours. Commercially processed, packaged ready-to-eat food can instead be reheated to at least 135°F.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Hot TCS food may be held up to 4 hours if it starts at 135°F or higher, then must be discarded, sold, or served”.",
-      "b": "Not the best answer here; the right answer is “Hot TCS food may be held up to 4 hours if it starts at 135°F or higher, then must be discarded, sold, or served”.",
-      "c": "Not the best answer here; the right answer is “Hot TCS food may be held up to 4 hours if it starts at 135°F or higher, then must be discarded, sold, or served”."
+      "a": "135°F is for reheating commercially processed ready-to-eat food, and 4 hours is too slow.",
+      "b": "145°F is a cooking temperature for seafood and steaks, not the reheating rule, and 6 hours is too long.",
+      "c": "155°F for 17 seconds is the ground-meat cooking temperature, not the rule for reheating leftovers."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1224,64 +1224,64 @@
     "id": "servsafe-food-handler-readiness-check-time-temp-008",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "Which is a safe method for cooling food quickly?",
+    "prompt": "Which is an acceptable way to thaw a frozen turkey?",
     "options": [
       {
         "id": "a",
-        "text": "Leaving a large stockpot on the counter to cool"
+        "text": "On the prep counter overnight at room temperature"
       },
       {
         "id": "b",
-        "text": "Placing a hot, covered pot directly in the walk-in"
+        "text": "In a sink of warm water changed every few hours"
       },
       {
         "id": "c",
-        "text": "Dividing food into shallow pans in an ice bath"
+        "text": "In a cooler at 41°F or lower"
       },
       {
         "id": "d",
-        "text": "Stacking hot containers tightly in the cooler"
+        "text": "Outside the back door on a cold day"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Use shallow pans, smaller portions, ice-water baths, ice paddles, blast chillers, loose covers, and containers that transfer heat well. Example: Divide chili into shallow metal pans.",
+    "explanation": "Approved thawing methods: in a cooler at 41°F or lower; submerged under running drinkable water at 70°F or lower; in a microwave if the food is cooked right away; or as part of the cooking process. Counter thawing lets the outside of the food sit in the danger zone.",
     "distractorExplanations": {
-      "a": "Large pots cool too slowly at room temperature.",
-      "b": "A large covered pot cools too slowly and warms nearby food.",
-      "d": "Tight stacking blocks airflow and slows cooling."
+      "a": "Room-temperature thawing lets the outer layer sit in the danger zone for hours.",
+      "b": "Water thawing must use running water at 70°F or lower, not standing warm water.",
+      "d": "Outdoor thawing has no temperature control and exposes food to pests and contamination."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-time-temp-009",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "How should a food's temperature be checked?",
+    "prompt": "A food handler cooks raw chicken thighs in a microwave. What must she do?",
     "options": [
       {
         "id": "a",
-        "text": "Probe the thickest part with a calibrated thermometer"
+        "text": "Cook it to 145°F and serve it right away"
       },
       {
         "id": "b",
-        "text": "Touch the food's surface with the back of the hand"
+        "text": "Reach 165°F, cover, rotate, and stand 2 minutes"
       },
       {
         "id": "c",
-        "text": "Use an infrared thermometer on the outside of meat"
+        "text": "Cook it to 135°F and finish it on a steam table"
       },
       {
         "id": "d",
-        "text": "Hold the probe against the side of the metal pan"
+        "text": "Cook it uncovered to 155°F so steam can escape"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Use a calibrated thermometer in the thickest part of the food or center, avoiding bone, fat, or pan surfaces when appropriate. Example: Check a roast in the thickest section.",
+    "correctOptionId": "b",
+    "explanation": "Raw meat, poultry, seafood and eggs cooked in a microwave must reach 165°F. Cover the food, rotate or stir it halfway through, let it stand for 2 minutes after cooking so heat spreads evenly, and check the temperature in at least two places.",
     "distractorExplanations": {
-      "b": "Touch cannot measure internal temperature.",
-      "c": "Infrared reads surface temperature only.",
-      "d": "The pan's temperature differs from the food's."
+      "a": "145°F is too low for microwave-cooked raw animal food; microwaves heat unevenly, so 165°F is required.",
+      "c": "Steam tables hold hot food; they cannot finish cooking raw chicken safely.",
+      "d": "The food should be covered so it heats evenly, and 155°F is below the 165°F microwave rule."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1290,31 +1290,31 @@
     "id": "servsafe-food-handler-readiness-check-time-temp-010",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What temperature is required for shell eggs cooked for immediate service?",
+    "prompt": "How is a bimetallic stemmed thermometer calibrated with the ice-point method?",
     "options": [
       {
         "id": "a",
-        "text": "Fish and shellfish must reach 145°F for 15 seconds."
+        "text": "Adjust it to read 32°F in a glass of ice water"
       },
       {
         "id": "b",
-        "text": "Commercially processed ready-to-eat TCS food must be heated to at least 135°F for hot holding."
+        "text": "Adjust it to read 41°F in a cooler for 5 minutes"
       },
       {
         "id": "c",
-        "text": "Shell eggs cooked for immediate service require 145°F for 15 seconds"
+        "text": "Adjust it to read 0°F inside the freezer"
       },
       {
         "id": "d",
-        "text": "Use shallow pans, smaller portions, ice-water baths, ice paddles, blast chillers, loose covers, and containers that transfer heat well."
+        "text": "Adjust it to read 70°F at room temperature"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Shell eggs cooked for immediate service require 145°F for 15 seconds. Example: Eggs cooked to order for one guest.",
+    "correctOptionId": "a",
+    "explanation": "Fill a container with crushed ice and water, hold the stem in it for about 30 seconds, and turn the calibration nut until it reads 32°F (0°C). Calibrate regularly, after the thermometer is dropped, and after big temperature changes.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Shell eggs cooked for immediate service require 145°F for 15 seconds”.",
-      "b": "This is the answer to a different question (“What temperature is used for commercially processed ready-to-eat TCS food that will be hot held?”), not to this one.",
-      "d": "This is the answer to a different question (“Which of the following best completes this item: Name safe methods for cooling food quickly.”), not to this one."
+      "b": "41°F is the cold-holding limit, and cooler air varies; it is not a fixed reference point.",
+      "c": "Freezer temperatures vary; the ice-point method uses ice water at exactly 32°F.",
+      "d": "Room temperature changes constantly, so it cannot be used as a reference point."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1323,31 +1323,31 @@
     "id": "servsafe-food-handler-readiness-check-time-temp-011",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What temperature is used for commercially processed ready-to-eat TCS food that will be hot held?",
+    "prompt": "A cook checks whether a roast is done by pointing an infrared thermometer at it. Why is this a problem?",
     "options": [
       {
         "id": "a",
-        "text": "Shell eggs cooked for immediate service require 145°F for 15 seconds."
+        "text": "Infrared thermometers cannot read above 100°F"
       },
       {
         "id": "b",
-        "text": "Shallow pans increase surface area and reduce food depth, allowing heat to escape faster."
+        "text": "Infrared thermometers must touch the food to work"
       },
       {
         "id": "c",
-        "text": "Calibration ensures temperature readings are accurate for food safety decisions."
+        "text": "They read surface temperature, not internal"
       },
       {
         "id": "d",
-        "text": "Commercially processed ready-to-eat TCS food must be heated to at least 135°F for hot holding."
+        "text": "They need an ice-water calibration before each read"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Commercially processed ready-to-eat TCS food must be heated to at least 135°F for hot holding. Example: Heat canned soup for hot holding to 135°F.",
+    "correctOptionId": "c",
+    "explanation": "Infrared thermometers measure surface temperature without touching the food, which is useful for checking deliveries or holding equipment. They cannot show internal temperature, so doneness must be checked with a probe in the thickest part of the food.",
     "distractorExplanations": {
-      "a": "Using batch-cooking rules for immediate service.",
-      "b": "Cooling rice in a deep bucket.",
-      "c": "Trusting a thermometer forever without checks."
+      "a": "Infrared thermometers read a wide range, including hot food; their range is not the issue.",
+      "b": "Infrared thermometers work without contact, which is their main advantage.",
+      "d": "They are not calibrated in ice water before every reading; the problem is that they only see the surface."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1356,196 +1356,196 @@
     "id": "servsafe-food-handler-readiness-check-time-temp-012",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What minimum internal temperature is required for ground meat?",
+    "prompt": "Where should the thermometer probe go when checking a chicken breast's temperature?",
     "options": [
       {
         "id": "a",
-        "text": "Food must be cooled immediately according to rules and held safely before final cooking."
+        "text": "On the surface of the meat"
       },
       {
         "id": "b",
-        "text": "Ground beef, pork, and lamb: 155°F for 17 seconds. Ground poultry: 165°F for 15 seconds."
+        "text": "Against the side of the hot pan"
       },
       {
         "id": "c",
-        "text": "It must be rapidly reheated and cooled again correctly or discarded, per regulatory rules and product condition."
+        "text": "In the thinnest part of the meat"
       },
       {
         "id": "d",
-        "text": "At sea level, boiling water is 212°F or 100°C; adjust for altitude as needed."
+        "text": "In the thickest part of the meat"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Ground beef, pork, and lamb: 155°F for 17 seconds. Ground poultry: 165°F for 15 seconds. Example: Ground beef patties must reach 155°F; ground turkey must reach 165°F.",
+    "correctOptionId": "d",
+    "explanation": "Insert the probe into the thickest part of the food, which heats last, and check in more than one spot. Wait for the reading to steady, and clean and sanitize the probe between foods.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Ground beef, pork, and lamb: 155°F for 17 seconds. Ground poultry: 165°F for 15 seconds”.",
-      "c": "Not the best answer here; the right answer is “Ground beef, pork, and lamb: 155°F for 17 seconds. Ground poultry: 165°F for 15 seconds”.",
-      "d": "Not the best answer here; the right answer is “Ground beef, pork, and lamb: 155°F for 17 seconds. Ground poultry: 165°F for 15 seconds”."
+      "a": "A surface reading shows the outside is hot, not that the center reached a safe temperature.",
+      "b": "The pan is hotter than the food and gives a falsely high reading.",
+      "c": "The thinnest part cooks first, so it overstates how done the center is."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-time-temp-013",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What temperature is required for stuffed meat, fish, poultry, or pasta?",
+    "prompt": "An operation uses time as the control for cold TCS sandwiches on a display with no refrigeration. What is the limit?",
     "options": [
       {
         "id": "a",
-        "text": "Calibration ensures temperature readings are accurate for food safety decisions."
+        "text": "Up to 2 hours, then it must be thrown out"
       },
       {
         "id": "b",
-        "text": "Stuffed foods and stuffing containing TCS ingredients must reach 165°F for 15 seconds."
+        "text": "Up to 6 hours from 41°F if it never exceeds 70°F"
       },
       {
         "id": "c",
-        "text": "Ground beef, pork, and lamb: 155°F for 17 seconds. Ground poultry: 165°F for 15 seconds."
+        "text": "Up to 8 hours if it is labeled with the time it was removed"
       },
       {
         "id": "d",
-        "text": "Steaks, chops, and similar whole-muscle beef, pork, veal, and lamb require 145°F for 15 seconds."
+        "text": "Up to 12 hours if covered and kept out of direct sunlight"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Stuffed foods and stuffing containing TCS ingredients must reach 165°F for 15 seconds. Example: Stuffed chicken breast must reach 165°F.",
+    "explanation": "Cold TCS food can be held without temperature control for up to 6 hours if it starts at 41°F or lower and never goes above 70°F. Label it with the time it was removed and the time it must be thrown out. Hot TCS food held this way gets 4 hours.",
     "distractorExplanations": {
-      "a": "Trusting a thermometer forever without checks.",
-      "c": "Treating all ground meat as 155°F or intact steak as 155°F.",
-      "d": "Applying ground meat rules to intact cuts."
+      "a": "2 hours is the home-kitchen rule of thumb; the Food Code gives cold TCS food up to 6 hours if it starts at 41°F and stays at or below 70°F.",
+      "c": "Labeling is required, but 8 hours is too long; the limit is 6 hours.",
+      "d": "Covering food does not extend the time limit, and 12 hours is double the 6-hour rule."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
   },
   {
     "id": "servsafe-food-handler-readiness-check-time-temp-014",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "What temperature is required for cold holding TCS food?",
+    "prompt": "What is the highest temperature at which cold TCS food, such as potato salad, may be held?",
     "options": [
       {
         "id": "a",
-        "text": "41°F or lower"
+        "text": "32°F"
       },
       {
         "id": "b",
-        "text": "45°F or lower"
+        "text": "41°F"
       },
       {
         "id": "c",
-        "text": "50°F or lower"
+        "text": "45°F"
       },
       {
         "id": "d",
-        "text": "32°F or lower"
+        "text": "50°F"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Cold TCS food must be held at 41°F or lower unless specific rules allow otherwise. Example: Hold tuna salad at 41°F or lower.",
+    "correctOptionId": "b",
+    "explanation": "Cold TCS food must be held at 41°F (5°C) or lower. Check holding temperatures at least every 4 hours; checking every 2 hours leaves time to fix a problem before food must be thrown out.",
     "distractorExplanations": {
-      "b": "45°F is above the 41°F limit.",
-      "c": "50°F is well inside the danger zone.",
-      "d": "Food does not have to be frozen; 41°F or lower is the requirement."
+      "a": "32°F is the freezing point; potato salad does not need to be frozen, and the maximum is 41°F.",
+      "c": "45°F is inside the danger zone; older codes used it, but the current maximum is 41°F.",
+      "d": "50°F is well inside the danger zone, where bacteria grow quickly."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-time-temp-015",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "time-temp",
-    "prompt": "Why must thermometers be calibrated?",
+    "prompt": "A cook must cool a large stockpot of soup. Which method works best?",
     "options": [
       {
         "id": "a",
-        "text": "So readings are accurate for food safety decisions"
+        "text": "Divide it into shallow pans and stir with an ice paddle"
       },
       {
         "id": "b",
-        "text": "So they can read both Fahrenheit and Celsius"
+        "text": "Put the covered stockpot straight into the walk-in cooler"
       },
       {
         "id": "c",
-        "text": "So they can be used without cleaning between foods"
+        "text": "Leave the pot on the counter until it reaches room temperature"
       },
       {
         "id": "d",
-        "text": "So they measure surface temperature more quickly"
+        "text": "Put it in the freezer in the same deep pot"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Calibration ensures temperature readings are accurate for food safety decisions. Example: Calibrate if dropped or after extreme temperature changes.",
+    "explanation": "Large, dense batches cool too slowly in a deep pot. Divide the food into shallow pans or smaller containers, use ice-water baths, ice paddles or blast chillers, stir often, and leave covers loose so heat can escape.",
     "distractorExplanations": {
-      "b": "Unit display is unrelated to calibration.",
-      "c": "Thermometers must be cleaned and sanitized between uses.",
-      "d": "Calibration is about accuracy, not speed or surface reading."
+      "b": "A covered stockpot traps heat and can warm other food in the walk-in; the center cools far too slowly.",
+      "c": "Cooling on the counter keeps the soup in the danger zone for hours.",
+      "d": "A freezer does not fix the deep-pot problem; the center still cools slowly, and freezers are not built for it."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-001",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "When must food-contact surfaces be cleaned and sanitized?",
+    "prompt": "What is the difference between cleaning and sanitizing a food-contact surface?",
     "options": [
       {
         "id": "a",
-        "text": "Only at the end of each work shift"
+        "text": "Cleaning kills pathogens; sanitizing removes visible dirt"
       },
       {
         "id": "b",
-        "text": "Every 8 hours during continuous use"
+        "text": "They mean the same thing, so either step can be skipped"
       },
       {
         "id": "c",
-        "text": "After each task and every 4 hours in use"
+        "text": "Sanitizing removes grease; cleaning is done once a week"
       },
       {
         "id": "d",
-        "text": "Only when the surface looks visibly dirty"
+        "text": "Cleaning removes dirt; sanitizing reduces pathogens"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Clean and sanitize after use, before working with different food types, after interruptions, after contamination, and at least every 4 hours during continuous use with TCS foods. Example: Sanitize a slicer after continuous deli meat use.",
+    "correctOptionId": "d",
+    "explanation": "Cleaning removes food and dirt from a surface. Sanitizing then reduces pathogens on the clean surface to safe levels, using heat or chemicals. A surface must be cleaned before it is sanitized, because dirt stops the sanitizer from working.",
     "distractorExplanations": {
-      "a": "Waiting until the end of the shift lets contamination build up.",
-      "b": "Continuous-use surfaces with TCS food need cleaning every 4 hours, not 8.",
-      "d": "Surfaces can carry pathogens without looking dirty."
+      "a": "This reverses the terms: cleaning removes dirt and sanitizing reduces pathogens.",
+      "b": "Both steps are needed; sanitizer cannot work on a surface that has not been cleaned.",
+      "c": "Removing grease is part of cleaning, and food-contact surfaces are cleaned far more often than weekly."
     },
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-002",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "How should chemicals be stored?",
+    "prompt": "A food handler has been slicing turkey on the same slicer for several hours. How often must it be cleaned and sanitized?",
     "options": [
       {
         "id": "a",
-        "text": "Labeled, away from food, utensils, and linens"
+        "text": "At least every 4 hours while it is in constant use"
       },
       {
         "id": "b",
-        "text": "On shelves above food prep areas to stay dry"
+        "text": "At the end of the shift when slicing is finished"
       },
       {
         "id": "c",
-        "text": "In clean, empty food containers for easy access"
+        "text": "Every 8 hours, as long as it is used just for turkey"
       },
       {
         "id": "d",
-        "text": "Next to single-use items in the dry storage area"
+        "text": "Whenever the blade starts to look visibly dirty"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Store chemicals in original or clearly labeled containers away from food, equipment, utensils, linens, and single-use items. Example: Keep degreaser in a labeled chemical cabinet.",
+    "explanation": "Food-contact surfaces are cleaned and sanitized after each use, before working with a different food, after interruptions, whenever they are contaminated, and at least every 4 hours if they are in constant use.",
     "distractorExplanations": {
-      "b": "Chemicals stored above food can drip or spill onto it.",
-      "c": "Food containers can be mistaken for food; use original or labeled chemical containers.",
-      "d": "Chemicals must be kept away from single-use items."
+      "b": "Waiting until the end of the shift lets pathogens build up; the limit is every 4 hours of constant use.",
+      "c": "8 hours is too long; even single-food use needs cleaning and sanitizing every 4 hours.",
+      "d": "Pathogens are invisible, so surfaces are cleaned on a schedule, not only when dirt appears."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1553,140 +1553,8 @@
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-003",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
-    "prompt": "Why are some seafood toxins hard to control in an operation?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Store allergen-containing ingredients to reduce spills or contact with other foods, and keep labels clear."
-      },
-      {
-        "id": "b",
-        "text": "Take the request seriously, communicate it clearly to the kitchen/manager, and follow the operation's allergen procedures."
-      },
-      {
-        "id": "c",
-        "text": "Staff must identify allergens and hidden ingredients so guests receive accurate information."
-      },
-      {
-        "id": "d",
-        "text": "Some seafood toxins are not destroyed by normal cooking, freezing, smoking, or curing"
-      }
-    ],
-    "correctOptionId": "d",
-    "explanation": "Some seafood toxins are not destroyed by normal cooking, freezing, smoking, or curing. Example: Ciguatera toxin in fish is not made safe by cooking.",
-    "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Some seafood toxins are not destroyed by normal cooking, freezing, smoking, or curing”.",
-      "b": "Not the best answer here; the right answer is “Some seafood toxins are not destroyed by normal cooking, freezing, smoking, or curing”.",
-      "c": "This is the answer to a different question (“Why must staff know ingredients in menu items?”), not to this one."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
-  },
-  {
-    "id": "servsafe-food-handler-readiness-check-cleaning-004",
-    "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
-    "prompt": "Which conditions help bacteria grow?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Food, moisture, warmth, time, and low acidity"
-      },
-      {
-        "id": "b",
-        "text": "Dry food stored at freezer temperatures"
-      },
-      {
-        "id": "c",
-        "text": "Highly acidic food held below 41°F"
-      },
-      {
-        "id": "d",
-        "text": "Salty, dry food kept in sealed containers"
-      }
-    ],
-    "correctOptionId": "a",
-    "explanation": "Bacteria grow best with food, acidity near neutral, time, proper temperature, oxygen conditions, and moisture. Example: Warm cooked rice held too long supports bacterial growth.",
-    "distractorExplanations": {
-      "b": "Dry, frozen conditions limit bacterial growth.",
-      "c": "High acidity and cold temperatures slow growth.",
-      "d": "Low moisture and high salt limit bacterial growth."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
-  },
-  {
-    "id": "servsafe-food-handler-readiness-check-cleaning-005",
-    "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
-    "prompt": "Why is Listeria monocytogenes a concern in refrigerated food?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Listeria can grow at refrigeration temperatures and is dangerous for pregnant people, older adults, and immunocompromised people"
-      },
-      {
-        "id": "b",
-        "text": "Only use mushrooms from approved, reputable suppliers; wild mushrooms can contain toxins that cooking may not destroy."
-      },
-      {
-        "id": "c",
-        "text": "TCS means Time/Temperature Control for Safety: food that needs time and temperature control to limit pathogen growth or toxin production."
-      },
-      {
-        "id": "d",
-        "text": "Ready-to-eat food can be eaten without further washing, cooking, or preparation."
-      }
-    ],
-    "correctOptionId": "a",
-    "explanation": "Listeria can grow at refrigeration temperatures and is dangerous for pregnant people, older adults, and immunocompromised people. Example: Deli meat held too long can become a Listeria risk.",
-    "distractorExplanations": {
-      "b": "This is the answer to a different question (“What is the safest rule for wild mushrooms?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Listeria can grow at refrigeration temperatures and is dangerous for pregnant people, older adults, and immunocompromised people”.",
-      "d": "Not the best answer here; the right answer is “Listeria can grow at refrigeration temperatures and is dangerous for pregnant people, older adults, and immunocompromised people”."
-    },
-    "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
-  },
-  {
-    "id": "servsafe-food-handler-readiness-check-cleaning-006",
-    "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "What is the difference between cleaning and sanitizing a food-contact surface?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Cleaning kills all germs; sanitizing only makes the surface look shiny"
-      },
-      {
-        "id": "b",
-        "text": "Cleaning removes food and dirt; sanitizing reduces pathogens to safe levels"
-      },
-      {
-        "id": "c",
-        "text": "They mean the same thing and either step can be skipped"
-      },
-      {
-        "id": "d",
-        "text": "Sanitizing removes grease; cleaning is only needed once a week"
-      }
-    ],
-    "correctOptionId": "b",
-    "explanation": "Cleaning removes food, dirt, and grease; sanitizing then reduces pathogens on the clean surface to safe levels. Sanitizer does not work well on a dirty surface, so clean first.",
-    "distractorExplanations": {
-      "a": "Cleaning does not reliably kill pathogens; that is the purpose of sanitizing.",
-      "c": "They are different steps and both are required for food-contact surfaces.",
-      "d": "Cleaning is what removes grease, and it is needed after every use and every 4 hours."
-    },
-    "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
-  },
-  {
-    "id": "servsafe-food-handler-readiness-check-cleaning-007",
-    "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "cleaning",
-    "prompt": "What is the correct order of steps when washing items in a three-compartment sink?",
+    "prompt": "What is the correct order of steps for washing items in a three-compartment sink?",
     "options": [
       {
         "id": "a",
@@ -1702,15 +1570,147 @@
       },
       {
         "id": "d",
-        "text": "Sanitize, scrape, wash, rinse, towel-dry"
+        "text": "Scrape, wash, sanitize, rinse, air-dry"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Scrape or pre-rinse, wash in detergent, rinse in clean water, sanitize for the required contact time, then air-dry. Rinsing before sanitizing removes detergent that would weaken the sanitizer.",
+    "explanation": "Scrape or rinse off food, wash in a detergent solution, rinse in clean water, sanitize by soaking for the required contact time, then air-dry on a clean rack. Rinsing before sanitizing keeps detergent from weakening the sanitizer, and towel-drying can recontaminate items.",
     "distractorExplanations": {
-      "a": "Rinsing after sanitizing removes the sanitizer, and towel-drying can recontaminate items.",
-      "c": "Sanitizing before washing puts sanitizer on a dirty surface, where it cannot work.",
-      "d": "Sanitizing must be the last wet step, after washing and rinsing."
+      "a": "Sanitizing before rinsing lets leftover detergent weaken the sanitizer, and towels can recontaminate items.",
+      "c": "Items must be washed before they are sanitized; sanitizer cannot work on dirty items.",
+      "d": "Rinsing after sanitizing washes the sanitizer off; the clean-water rinse goes between washing and sanitizing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "servsafe-food-handler-readiness-check-cleaning-004",
+    "examSlug": "servsafe-food-handler-readiness-check",
+    "topicId": "cleaning",
+    "prompt": "How should a food handler check that a chemical sanitizer solution is the right strength?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smell it to make sure it is strong enough"
+      },
+      {
+        "id": "b",
+        "text": "Look at the color of the water in the sink"
+      },
+      {
+        "id": "c",
+        "text": "Use a test kit made for that sanitizer"
+      },
+      {
+        "id": "d",
+        "text": "Add extra sanitizer just to be safe"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Sanitizer concentration is checked with a test kit made for that chemical, such as chlorine, iodine or quats. Too weak and it will not reduce pathogens; too strong and it can be unsafe and leave residue on food-contact surfaces.",
+    "distractorExplanations": {
+      "a": "Smell cannot measure concentration; only a test kit can.",
+      "b": "Water color does not show the strength of most sanitizers.",
+      "d": "Too much sanitizer can be toxic and leave residue, so the strength must still be tested."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "servsafe-food-handler-readiness-check-cleaning-005",
+    "examSlug": "servsafe-food-handler-readiness-check",
+    "topicId": "cleaning",
+    "prompt": "Between uses, where should a wet wiping cloth used on food-contact surfaces be kept?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In an apron pocket for quick access"
+      },
+      {
+        "id": "b",
+        "text": "On the prep counter next to the cutting board"
+      },
+      {
+        "id": "c",
+        "text": "Over the shoulder so it stays out of the way"
+      },
+      {
+        "id": "d",
+        "text": "In a sanitizer solution at the right strength"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Wet wiping cloths for food-contact surfaces are stored in a sanitizer solution between uses, and the solution is changed regularly. Cloths used for raw meat are kept separate, and dry cloths must stay dry and free of food.",
+    "distractorExplanations": {
+      "a": "A cloth in a pocket stays damp and dirty and can spread pathogens to hands.",
+      "b": "A wet cloth left on the counter lets pathogens grow and spread to the board.",
+      "c": "A cloth over the shoulder touches hair and clothing and does not stay sanitized."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "servsafe-food-handler-readiness-check-cleaning-006",
+    "examSlug": "servsafe-food-handler-readiness-check",
+    "topicId": "cleaning",
+    "prompt": "A new bottle of degreaser has been delivered. Where should it be stored?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In a separate area away from food and utensils"
+      },
+      {
+        "id": "b",
+        "text": "On the shelf above the prep table for easy reach"
+      },
+      {
+        "id": "c",
+        "text": "In an empty food container labeled with a marker"
+      },
+      {
+        "id": "d",
+        "text": "In dry storage next to the paper cups and napkins"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Chemicals are stored in their original labeled containers in a separate area, away from and never above food, utensils, linens and single-use items. If a chemical is moved into a working container, that container is labeled with the chemical's common name.",
+    "distractorExplanations": {
+      "b": "Chemicals stored above prep areas can drip or spill into food.",
+      "c": "Food containers must never hold chemicals, because someone could mistake the chemical for food.",
+      "d": "Single-use items touch food and mouths, so chemicals must not be stored beside them."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "servsafe-food-handler-readiness-check-cleaning-007",
+    "examSlug": "servsafe-food-handler-readiness-check",
+    "topicId": "cleaning",
+    "prompt": "An employee splashes a cleaning chemical on her arm. Where can she find first-aid and safe-handling information for that product?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On the latest health inspection report"
+      },
+      {
+        "id": "b",
+        "text": "On the product's Safety Data Sheet (SDS)"
+      },
+      {
+        "id": "c",
+        "text": "In the operation's HACCP plan binder"
+      },
+      {
+        "id": "d",
+        "text": "On the dish machine's temperature log"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A Safety Data Sheet lists a chemical's hazards, safe use and storage, protective equipment and first-aid steps. OSHA requires employers to keep SDS where staff can reach them and to train employees on chemical hazards.",
+    "distractorExplanations": {
+      "a": "Inspection reports list violations; they do not give chemical first-aid instructions.",
+      "c": "A HACCP plan controls food hazards at critical control points, not chemical first aid.",
+      "d": "Dish machine logs track temperatures and sanitizer levels, not chemical safety information."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1719,31 +1719,31 @@
     "id": "servsafe-food-handler-readiness-check-cleaning-008",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "How should a food handler check that a sanitizer solution is the right strength?",
+    "prompt": "Where should dirty mop water be dumped?",
     "options": [
       {
         "id": "a",
-        "text": "Smell it to make sure it is strong enough"
+        "text": "In a handwashing sink"
       },
       {
         "id": "b",
-        "text": "Use a test kit made for that sanitizer"
+        "text": "In a food-prep sink"
       },
       {
         "id": "c",
-        "text": "Add extra sanitizer so it is always strong enough"
+        "text": "In a utility (service) sink"
       },
       {
         "id": "d",
-        "text": "Look at the color of the water in the sink"
+        "text": "In a three-compartment sink"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Use the test kit or strips made for that sanitizer, and check concentration regularly because it drops with use. Too weak will not reduce pathogens; too strong can be unsafe.",
+    "correctOptionId": "c",
+    "explanation": "Dirty mop water and other liquid waste go into a utility (service) sink or a floor drain. Dumping it into sinks used for hands, food or dishes would contaminate them.",
     "distractorExplanations": {
-      "a": "Smell cannot measure concentration and exposes the handler to fumes.",
-      "c": "Too much sanitizer can be toxic and leave harmful residue.",
-      "d": "Water color does not show sanitizer strength."
+      "a": "Hand sinks are used only for washing hands; mop water would contaminate them.",
+      "b": "Prep sinks are used for food, so mop water could contaminate produce washed there.",
+      "d": "The three-compartment sink cleans dishes and utensils, so mop water there would spread contamination."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1752,64 +1752,64 @@
     "id": "servsafe-food-handler-readiness-check-cleaning-009",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "Between uses, wet wiping cloths used on food-contact surfaces should be:",
+    "prompt": "A food handler finds droppings and gnawed flour bags in dry storage. What should happen?",
     "options": [
       {
         "id": "a",
-        "text": "Kept in an apron pocket"
+        "text": "Set out store-bought rat poison next to the food shelves"
       },
       {
         "id": "b",
-        "text": "Stored in a sanitizer solution"
+        "text": "Throw away the bags and tell no one about it"
       },
       {
         "id": "c",
-        "text": "Left on the prep counter"
+        "text": "Spray insecticide on the shelves during service hours"
       },
       {
         "id": "d",
-        "text": "Hung over a hot pan to dry"
+        "text": "Report it to the manager for licensed pest control"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Wet wiping cloths are kept in a sanitizer solution of the correct strength, and the solution is changed on schedule. Cloths for raw meat areas are kept separate.",
+    "correctOptionId": "d",
+    "explanation": "Droppings, gnaw marks, nests and odors are signs of pests. Report them to the manager right away. Pest control is handled by a licensed pest control operator, and food damaged by pests is thrown out.",
     "distractorExplanations": {
-      "a": "A cloth in a pocket or apron spreads pathogens between surfaces.",
-      "c": "A cloth left on the counter grows bacteria and can contaminate food.",
-      "d": "Drying a cloth over cooking equipment is a fire and contamination risk."
+      "a": "Food handlers should not apply pesticides, and poison near food can contaminate it.",
+      "b": "Hiding the problem lets the infestation grow; it must be reported so it can be treated.",
+      "c": "Applying pesticides is a job for a licensed operator, and spraying near food during service contaminates it."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-010",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "After cleaning and sanitizing, how should dishes and utensils be dried?",
+    "prompt": "Which list contains only major food allergens recognized in the United States?",
     "options": [
       {
         "id": "a",
-        "text": "Wiped with a clean kitchen towel"
+        "text": "Milk, eggs, fish, shellfish, peanuts, sesame"
       },
       {
         "id": "b",
-        "text": "Air-dried on a clean, sanitized rack"
+        "text": "Milk, eggs, corn, rice, garlic, mustard"
       },
       {
         "id": "c",
-        "text": "Dried with paper towels right away"
+        "text": "Wheat, soy, chicken, beef, pork, lamb"
       },
       {
         "id": "d",
-        "text": "Dried with a cloth from the wiping bucket"
+        "text": "Peanuts, strawberries, tomatoes, citrus"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Items should air-dry on a clean rack or drainboard. Towel-drying can put pathogens back on sanitized surfaces.",
+    "correctOptionId": "a",
+    "explanation": "The nine major U.S. food allergens are milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy and sesame (added in 2023). They cause most serious allergic reactions, so staff must be able to identify them in menu items.",
     "distractorExplanations": {
-      "a": "Towels can recontaminate sanitized items.",
-      "c": "Paper towels are not the approved drying method for sanitized ware.",
-      "d": "Wiping cloths are for surfaces, not for drying sanitized dishes."
+      "b": "Milk and eggs are major allergens, but corn, rice, garlic and mustard are not on the U.S. list.",
+      "c": "Wheat and soy are major allergens, but chicken, beef, pork and lamb are not.",
+      "d": "Peanuts are a major allergen, but strawberries, tomatoes and citrus are not."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1818,31 +1818,31 @@
     "id": "servsafe-food-handler-readiness-check-cleaning-011",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "Before preparing an allergen-special order on shared equipment, the food handler should:",
+    "prompt": "Minutes after eating, a guest has hives, swollen lips and trouble breathing. What should staff do?",
     "options": [
       {
         "id": "a",
-        "text": "Wipe the equipment with a dry towel"
+        "text": "Give the guest water and wait to see if it passes"
       },
       {
         "id": "b",
-        "text": "Wash, rinse, and sanitize the equipment first"
+        "text": "Offer a free dessert and ask the guest to leave"
       },
       {
         "id": "c",
-        "text": "Rinse the equipment briefly under hot water"
+        "text": "Call 911 and follow the operation's emergency plan"
       },
       {
         "id": "d",
-        "text": "Use the same utensils as long as they look clean"
+        "text": "Have the guest drive to a clinic after the meal"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "To prevent allergen cross-contact, equipment, utensils, and surfaces must be washed, rinsed, and sanitized before use, or dedicated allergen-free equipment used. Handlers also wash hands and change gloves.",
+    "correctOptionId": "c",
+    "explanation": "Hives, swelling, wheezing or trouble breathing after eating can signal anaphylaxis, a severe allergic reaction that can be fatal within minutes. Call emergency services right away and follow the operation's emergency procedures.",
     "distractorExplanations": {
-      "a": "A dry towel spreads allergen residue instead of removing it.",
-      "c": "A quick rinse does not remove allergen proteins.",
-      "d": "Invisible allergen residue can still cause a severe reaction."
+      "a": "Waiting can be fatal; anaphylaxis needs emergency help immediately.",
+      "b": "This ignores a medical emergency and delays care.",
+      "d": "A guest who cannot breathe properly must not drive; call emergency services."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1851,31 +1851,31 @@
     "id": "servsafe-food-handler-readiness-check-cleaning-012",
     "examSlug": "servsafe-food-handler-readiness-check",
     "topicId": "cleaning",
-    "prompt": "Where should dirty mop water be dumped?",
+    "prompt": "A guest asks whether the pesto contains nuts. The server is not sure. What should the server do?",
     "options": [
       {
         "id": "a",
-        "text": "In the handwashing sink"
+        "text": "Say it is safe if the guest orders a small portion"
       },
       {
         "id": "b",
-        "text": "In the food-prep sink"
+        "text": "Check the recipe or ask the chef before answering"
       },
       {
         "id": "c",
-        "text": "In the three-compartment sink"
+        "text": "Tell the guest to pick out any nuts they can see"
       },
       {
         "id": "d",
-        "text": "In a utility (service) sink"
+        "text": "Suggest a different dish without checking it"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Dirty mop water goes into a utility or service sink or a floor drain meant for that use. It must never go into handwashing, prep, or dishwashing sinks.",
+    "correctOptionId": "b",
+    "explanation": "Servers must describe dishes accurately, including hidden allergens. If unsure, check the recipe or ingredient label or ask the manager or chef, then answer the guest and mark the allergy clearly on the order.",
     "distractorExplanations": {
-      "a": "Handwashing sinks are for handwashing only.",
-      "b": "Dumping dirty water where food is prepped contaminates the sink.",
-      "c": "The three-compartment sink is for cleaning dishes and utensils."
+      "a": "Portion size does not matter; even a tiny amount of an allergen can cause a reaction.",
+      "c": "Picking out visible nuts does not remove allergen proteins already in the sauce.",
+      "d": "Recommending another dish without checking it can still expose the guest to nuts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1883,100 +1883,100 @@
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-013",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
-    "prompt": "Which of these is an example of a physical contaminant?",
+    "topicId": "cleaning",
+    "prompt": "A guest with a shellfish allergy sends back a salad because it has shrimp on it. The cook removes the shrimp and sends the same salad back. What is wrong?",
     "options": [
       {
         "id": "a",
-        "text": "Norovirus on a food handler's hands"
+        "text": "Nothing, once the shrimp is fully removed"
       },
       {
         "id": "b",
-        "text": "Metal shavings from a worn can opener"
+        "text": "The salad should have been rinsed with water"
       },
       {
         "id": "c",
-        "text": "Sanitizer sprayed near an open salad"
+        "text": "The salad needed to be held at 41°F or lower"
       },
       {
         "id": "d",
-        "text": "Ciguatoxin in a large reef fish"
+        "text": "The allergen is still there; make a new salad"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Physical contaminants are objects such as metal shavings, glass, staples, hair, or bandages. Keep can openers in good repair and inspect food for foreign objects.",
+    "correctOptionId": "d",
+    "explanation": "Removing an allergen from a finished dish does not remove the proteins left behind; this is cross-contact. Make a new dish with clean and sanitized equipment, utensils and surfaces, after washing hands and changing gloves.",
     "distractorExplanations": {
-      "a": "Norovirus is a biological contaminant.",
-      "c": "Sanitizer is a chemical contaminant.",
-      "d": "Ciguatoxin is a biological toxin."
+      "a": "Removing the shrimp leaves shellfish proteins on the other ingredients, so the dish is unsafe.",
+      "b": "Rinsing with water does not reliably remove allergen proteins and adds a contamination risk.",
+      "c": "Temperature has no effect on allergens; the problem is cross-contact."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-014",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
-    "prompt": "Hepatitis A is most often spread in foodservice when:",
+    "topicId": "cleaning",
+    "prompt": "A kitchen fries breaded shrimp and French fries in the same oil. A guest with a shellfish allergy orders fries. What is the safest option?",
     "options": [
       {
         "id": "a",
-        "text": "Raw chicken is cooked to only 145°F"
+        "text": "Use separate oil that has never cooked shellfish"
       },
       {
         "id": "b",
-        "text": "Canned food is stored past its best-by date"
+        "text": "Fry them in the shared oil at a higher temperature"
       },
       {
         "id": "c",
-        "text": "Cooked rice cools too slowly at room temperature"
+        "text": "Strain the shared oil before frying the order"
       },
       {
         "id": "d",
-        "text": "An infected worker touches ready-to-eat food"
+        "text": "Serve the fries, since potatoes have no shellfish"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Hepatitis A spreads by the fecal-oral route, usually through ready-to-eat food handled by an infected worker with poor handwashing. Cooking does not help for food served raw, so handwashing, no bare-hand contact, and excluding ill staff are the controls.",
+    "correctOptionId": "a",
+    "explanation": "Shared fryer oil carries allergen proteins from one food to another. Use a dedicated fryer or fresh oil that has not cooked the allergen, with clean baskets and utensils. Heat and straining do not remove allergen proteins.",
     "distractorExplanations": {
-      "a": "Undercooked poultry is linked to Salmonella and Campylobacter, not hepatitis A.",
-      "b": "A best-by date is about quality, not hepatitis A transmission.",
-      "c": "Slow cooling of rice is linked to Bacillus cereus."
+      "b": "Higher frying temperatures do not destroy shellfish allergen proteins.",
+      "c": "Straining removes crumbs, not the allergen proteins dissolved in the oil.",
+      "d": "The fries pick up shellfish proteins from the shared oil even though potatoes contain none."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   },
   {
     "id": "servsafe-food-handler-readiness-check-cleaning-015",
     "examSlug": "servsafe-food-handler-readiness-check",
-    "topicId": "contamination",
-    "prompt": "In a walk-in cooler, how should raw poultry be stored relative to ready-to-eat food?",
+    "topicId": "cleaning",
+    "prompt": "A plastic cutting board has deep scratches and grooves that no longer come clean. What should be done?",
     "options": [
       {
         "id": "a",
-        "text": "On the bottom shelf, below ready-to-eat food"
+        "text": "Sanitize it for twice the normal contact time"
       },
       {
         "id": "b",
-        "text": "On the same shelf, as long as items are wrapped"
+        "text": "Keep using it, but for raw meat from now on"
       },
       {
         "id": "c",
-        "text": "Anywhere, because the cooler keeps food at 41°F"
+        "text": "Resurface it or replace it"
       },
       {
         "id": "d",
-        "text": "On the top shelf so it stays coldest"
+        "text": "Cover the scratches with plastic wrap"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Store ready-to-eat food on top and raw items below in order of cooking temperature, with raw poultry (165°F) on the bottom. This keeps drips from contaminating food that will not be cooked.",
+    "correctOptionId": "c",
+    "explanation": "Deep scratches and grooves trap food and bacteria where cleaning and sanitizing cannot reach. Cutting boards with deep grooves must be resurfaced or thrown out, because food equipment must be kept in good repair.",
     "distractorExplanations": {
-      "b": "Wrapping helps, but raw meat still goes below ready-to-eat food.",
-      "c": "Cold temperatures slow growth but do not prevent cross-contamination.",
-      "d": "Raw poultry on top can drip onto everything below it."
+      "a": "A longer contact time cannot reach pathogens trapped deep in the grooves.",
+      "b": "Raw-meat juices would collect in the grooves too; the damage makes the board unsafe for any food.",
+      "d": "Plastic wrap can tear and become a physical contaminant, and it does not repair the board."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
   }
 ]

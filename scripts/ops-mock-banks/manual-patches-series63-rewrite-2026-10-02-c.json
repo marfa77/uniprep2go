@@ -1,0 +1,327 @@
+{
+  "series-63-readiness-check": {
+    "series-63-readiness-check-s63-bd-001": {
+      "topicId": "s63-bd",
+      "prompt": "Four parties effect securities transactions in State X. Absent an exemption, which one meets the Uniform Securities Act definition of a broker-dealer and must register in State X as one?",
+      "options": {
+        "a": "A registered agent who solicits State X residents on behalf of her employing firm",
+        "b": "A manufacturing company that sells its own newly issued bonds directly to investors",
+        "c": "A firm with a State X branch that executes trades for its retail brokerage clients",
+        "d": "A state-chartered trust company that trades securities for the trust accounts it manages"
+      },
+      "correctOptionId": "c",
+      "explanation": "Under USA §401, a broker-dealer is any person engaged in the business of effecting securities transactions for the accounts of others or for its own account. The definition excludes agents, issuers, and banks, savings institutions and trust companies, so the brokerage firm with a State X branch is the one that must register there as a broker-dealer.",
+      "distractorExplanations": {
+        "a": "Agents are expressly excluded from the broker-dealer definition; this individual registers as an agent of her firm, not as a broker-dealer.",
+        "b": "Issuers selling their own securities are excluded from the broker-dealer definition; the bond sale raises securities-registration questions, not BD registration.",
+        "d": "Banks, savings institutions and trust companies are excluded from the broker-dealer definition, so trading for its trust accounts does not make it a BD."
+      }
+    },
+    "series-63-readiness-check-s63-bd-002": {
+      "topicId": "s63-bd",
+      "prompt": "Keystone Securities is registered with the SEC and in State A, where its sole office is located. It has no place of business in State B, and its State B business is limited to trades with insurance companies, banks and other broker-dealers located there. What does the Uniform Securities Act require of Keystone in State B?",
+      "options": {
+        "a": "No broker-dealer registration, because it has no State B office and deals only with institutions",
+        "b": "Broker-dealer registration, because it effects transactions with State B residents for profit",
+        "c": "A notice filing and fee, because federal registration replaces state broker-dealer registration",
+        "d": "Broker-dealer registration, unless each State B trade was unsolicited by Keystone's agents"
+      },
+      "correctOptionId": "a",
+      "explanation": "USA §401 excludes from the broker-dealer definition a firm that has no place of business in the state and effects transactions there exclusively with issuers, other broker-dealers, or institutional investors such as banks and insurance companies. Keystone is therefore not a broker-dealer in State B; taking on a single retail client there would change that.",
+      "distractorExplanations": {
+        "b": "Dealing with State B persons is not enough when the firm has no office there and its counterparties are all issuers, broker-dealers or institutions.",
+        "c": "Notice filing applies to federal covered advisers and federal covered securities; SEC registration does not replace state broker-dealer registration.",
+        "d": "Whether orders are solicited is not the test for this exclusion; the test is no in-state office plus institutional-only counterparties."
+      }
+    },
+    "series-63-readiness-check-s63-bd-003": {
+      "topicId": "s63-bd",
+      "prompt": "Harbor Brokerage has no office in Florida and is not registered there. A long-standing New Jersey client is spending three winter months at her Florida condo and phones Harbor to sell shares in her account. Under the Uniform Securities Act, what is Harbor's registration position in Florida?",
+      "options": {
+        "a": "Harbor must register in Florida before it may execute any order the client places from there",
+        "b": "Harbor may execute the order but must file for Florida registration within 30 days afterward",
+        "c": "Harbor needs Florida registration unless the shares are a federal covered security on an exchange",
+        "d": "Harbor need not register, because the client is an existing customer only temporarily in Florida"
+      },
+      "correctOptionId": "d",
+      "explanation": "Under the USA, a broker-dealer with no place of business in a state does not have to register there to deal with an existing customer who resides elsewhere and is only temporarily present in the state. The client's residence stays in New Jersey, so Harbor may handle her order without Florida registration; a client who moved to Florida permanently would require it.",
+      "distractorExplanations": {
+        "a": "This ignores the existing-customer exclusion; a firm with no in-state office may keep serving a client who is only temporarily present.",
+        "b": "There is no after-the-fact 30-day filing window; either the exclusion applies and no registration is needed, or registration is required first.",
+        "c": "Federal covered status exempts a security from state registration; it says nothing about whether the broker-dealer itself must register."
+      }
+    },
+    "series-63-readiness-check-s63-bd-004": {
+      "topicId": "s63-bd",
+      "prompt": "Cedar Point Securities files a complete Form BD through CRD to register in State X. No denial proceeding is started and the Administrator sets no earlier date. Two months after approval, the firm moves its main office. Which statement is accurate under the Uniform Securities Act?",
+      "options": {
+        "a": "Registration took effect at midnight on the 15th day after filing; the move is reported at renewal",
+        "b": "Registration took effect at noon on the 30th day after filing; the move requires a prompt Form BD amendment",
+        "c": "Registration took effect at noon on the 30th day after filing; the move is reported at year-end renewal",
+        "d": "Registration took effect when the Administrator signed a written approval order; the move requires a new Form BD"
+      },
+      "correctOptionId": "b",
+      "explanation": "Under the USA, a broker-dealer registration becomes effective at noon on the 30th day after a complete application is filed, unless a proceeding is pending or the Administrator sets an earlier date. A registrant must promptly amend Form BD when filed information, such as its main office address, becomes inaccurate; registrations then expire each December 31 unless renewed.",
+      "distractorExplanations": {
+        "a": "The effective time is noon on the 30th day, not midnight on the 15th, and material changes cannot wait for annual renewal.",
+        "c": "The effective date is right, but a material change such as a new main office must be reported by prompt amendment, not held until renewal.",
+        "d": "Registration becomes effective automatically by lapse of time; no signed approval order is needed, and a change is filed as an amendment, not a new Form BD."
+      }
+    },
+    "series-63-readiness-check-s63-bd-005": {
+      "topicId": "s63-bd",
+      "prompt": "State X's Administrator proposes a rule requiring every broker-dealer registered in the state, including SEC-registered firms, to keep net capital 25% above the SEC minimum and to post a surety bond. How does federal law affect the rule as applied to SEC-registered firms?",
+      "options": {
+        "a": "It is valid, because each state sets its own financial standards for firms registered there",
+        "b": "It is valid for firms with a State X office but preempted for firms with no office there",
+        "c": "It is preempted, because NSMIA bars state capital and bonding rules beyond SEC requirements",
+        "d": "It is preempted unless the Administrator first holds a public hearing and documents a local need"
+      },
+      "correctOptionId": "c",
+      "explanation": "The National Securities Markets Improvement Act of 1996 (Exchange Act §15(i)) bars states from imposing capital, custody, margin, financial responsibility, books-and-records, bonding or reporting requirements on SEC-registered broker-dealers that differ from or add to SEC rules. State X may still require registration, collect fees and enforce antifraud provisions, but this rule cannot apply to those firms.",
+      "distractorExplanations": {
+        "a": "Before NSMIA states set their own financial standards, but since 1996 they may not exceed SEC capital and bonding rules for SEC-registered firms.",
+        "b": "The NSMIA limit turns on SEC registration, not on whether the firm has an office in the state, so an in-state office does not revive the rule.",
+        "d": "No hearing or local-need finding lets a state override NSMIA; the preemption applies regardless of the state's rulemaking procedure."
+      }
+    },
+    "series-63-readiness-check-s63-bd-006": {
+      "topicId": "s63-bd",
+      "prompt": "An agent at Pinecrest Securities churned several elderly clients' accounts for a year. Pinecrest had no written supervisory procedures and never reviewed the agent's trading activity. Besides acting against the agent, what may the Administrator do?",
+      "options": {
+        "a": "Act against Pinecrest's registration for failing to reasonably supervise its agent",
+        "b": "Nothing against Pinecrest, because the firm did not know about the agent's churning",
+        "c": "Act against Pinecrest once FINRA has first found the firm liable for the churning",
+        "d": "Fine Pinecrest, but leave its registration intact because the agent acted alone"
+      },
+      "correctOptionId": "a",
+      "explanation": "USA §204 lets the Administrator deny, suspend or revoke a broker-dealer's registration if the firm failed reasonably to supervise its agents. FINRA Rule 3110 likewise requires written supervisory procedures and review of agent activity. Lack of knowledge is no defense when the firm had no system that would have detected a year of churning.",
+      "distractorExplanations": {
+        "b": "Ignorance is not a defense; failure to supervise is itself a ground for action, and having no procedures is why the firm did not know.",
+        "c": "The Administrator acts under state law independently of FINRA; a prior FINRA finding is not a precondition to a state order.",
+        "d": "Failure to supervise supports suspension or revocation of the firm's registration; an agent acting alone does not shield a firm with no supervisory system."
+      }
+    },
+    "series-63-readiness-check-s63-bd-007": {
+      "topicId": "s63-bd",
+      "prompt": "First County Bank leases lobby space to Meridian Brokerage, whose registered agents sell mutual funds and annuities to bank customers. Under NASAA's rules for sales of securities at financial institutions, which arrangement complies?",
+      "options": {
+        "a": "Meridian's agents work at the teller stations, provided their name badges show the Meridian name",
+        "b": "Agents work apart from the tellers and disclose that products are not FDIC insured and can lose value",
+        "c": "Tellers take fund orders from depositors and forward them to Meridian's agents for execution",
+        "d": "Tellers earn a commission on each fund sale that results from a depositor they referred to Meridian"
+      },
+      "correctOptionId": "b",
+      "explanation": "NASAA's 1998 Rules for Sales of Securities at Financial Institutions require broker-dealer services to be conducted in an area physically separate from routine deposit-taking. Customers must be told the products are not FDIC insured, are not deposits or obligations of the bank, are not bank-guaranteed, and are subject to investment risk, including possible loss of principal.",
+      "distractorExplanations": {
+        "a": "Selling at teller stations breaks the physical-separation requirement; a name badge does not cure customer confusion between deposits and securities.",
+        "c": "Accepting securities orders is agent activity; unregistered tellers may not take orders even if a registered agent later executes them.",
+        "d": "Unregistered bank employees may not receive transaction-based pay; a referral may earn at most a nominal fixed fee not tied to a sale."
+      }
+    },
+    "series-63-readiness-check-s63-remedies-001": {
+      "topicId": "s63-remedies",
+      "prompt": "While investigating an unregistered offering, the State X Administrator needs records kept at the promoter's office in another state and testimony from a reluctant former salesperson. Which step is within the Administrator's authority under the Uniform Securities Act?",
+      "options": {
+        "a": "Ordering the salesperson jailed for contempt by administrative order if he refuses to testify",
+        "b": "Limiting the inquiry to records and witnesses physically located inside State X",
+        "c": "Obtaining a court warrant before issuing any subpoena for records or testimony",
+        "d": "Issuing subpoenas and, if the witness refuses, asking a court to compel compliance"
+      },
+      "correctOptionId": "d",
+      "explanation": "Under USA §407, the Administrator may conduct public or private investigations within or outside the state, subpoena witnesses and records, take testimony, publish information about violations, and cooperate with other states' administrators and the SEC. If a person disobeys a subpoena, the Administrator applies to a court, which can order compliance and punish contempt.",
+      "distractorExplanations": {
+        "a": "Contempt and jail are judicial powers; the Administrator must ask a court to enforce the subpoena rather than jail anyone itself.",
+        "b": "The Act lets the Administrator investigate within or outside the state, and other regulators can help reach out-of-state evidence.",
+        "c": "The Administrator issues its own subpoenas without a warrant; a court becomes involved only when someone refuses to comply."
+      }
+    },
+    "series-63-readiness-check-s63-remedies-002": {
+      "topicId": "s63-remedies",
+      "prompt": "The Administrator learns that a firm is about to begin selling unregistered, nonexempt promissory notes to state residents next week. Under the Uniform Securities Act, how may the Administrator respond?",
+      "options": {
+        "a": "Issue a cease-and-desist order at once; the firm may then request a hearing on it",
+        "b": "Issue a cease-and-desist order once the firm has had notice and a prior hearing",
+        "c": "Issue a permanent injunction itself, after giving the firm 30 days' written notice",
+        "d": "Wait until a sale is completed, since an order cannot address planned violations"
+      },
+      "correctOptionId": "a",
+      "explanation": "When the Administrator believes a person has engaged or is about to engage in a violation, it may issue a cease-and-desist order without prior notice or hearing. The respondent may then request a hearing, which must be set within 15 days of the request. Injunctions, by contrast, are issued by a court on the Administrator's application.",
+      "distractorExplanations": {
+        "b": "A cease-and-desist order may be issued summarily; the hearing comes afterward on request, not as a precondition.",
+        "c": "The Administrator cannot issue injunctions; it must apply to a court, and no 30-day notice period applies to that remedy.",
+        "d": "Orders may target conduct a person is about to engage in; the Administrator need not wait for investors to be harmed."
+      }
+    },
+    "series-63-readiness-check-s63-remedies-003": {
+      "topicId": "s63-remedies",
+      "prompt": "The Administrator is reviewing an individual's Form U4 application to register as an agent. Which fact, standing alone, is NOT a ground for denying the registration under the Uniform Securities Act?",
+      "options": {
+        "a": "A felony conviction for tax fraud entered seven years ago",
+        "b": "A willful violation of the state securities act at a prior firm",
+        "c": "Lack of industry experience, though the Series 63 was passed",
+        "d": "A conviction for a securities-related misdemeanor four years ago"
+      },
+      "correctOptionId": "c",
+      "explanation": "USA §204 permits denial for, among other things, a willful violation of the Act, any felony conviction within the past 10 years, and a securities-related misdemeanor conviction within 10 years; insolvency is a further ground for firms. The Administrator may not deny registration solely for lack of experience when the applicant is qualified by training or knowledge, which passing the exam shows.",
+      "distractorExplanations": {
+        "a": "Any felony conviction within the past 10 years is a ground for denial, whether or not it involved securities.",
+        "b": "A willful violation of the Act or its rules is a core statutory ground for denial, suspension or revocation.",
+        "d": "A misdemeanor involving securities or the securities business within the past 10 years is a ground for denial."
+      }
+    },
+    "series-63-readiness-check-s63-remedies-004": {
+      "topicId": "s63-remedies",
+      "prompt": "During a pending revocation proceeding, the Administrator concludes that a broker-dealer's continued operation threatens investors before the case can be decided. What does the Uniform Securities Act allow?",
+      "options": {
+        "a": "A summary revocation that becomes final with no further opportunity for a hearing",
+        "b": "A summary suspension pending final determination, with a hearing on request",
+        "c": "A request that the SEC suspend the firm, since a state cannot act before a final order",
+        "d": "A suspension that takes effect once the firm consents in writing to the interim order"
+      },
+      "correctOptionId": "b",
+      "explanation": "USA §204 lets the Administrator summarily postpone or suspend a registration pending final determination of a proceeding. The registrant must be promptly notified of the order and its reasons, and the matter is set for hearing within 15 days after a written request. Summary action is interim; a final revocation still requires notice and an opportunity for hearing.",
+      "distractorExplanations": {
+        "a": "Summary action is limited to postponement or suspension pending the outcome; revocation is final and requires notice and a hearing opportunity.",
+        "c": "The Administrator has its own summary power under state law and does not need the SEC to act before a final order.",
+        "d": "A summary order takes effect when entered; the registrant's consent is not required, though it may request a hearing."
+      }
+    },
+    "series-63-readiness-check-s63-remedies-005": {
+      "topicId": "s63-remedies",
+      "prompt": "On May 1, 2025, an agent sold Ms. Lee $20,000 of unregistered, nonexempt stock. She received $600 in dividends, still holds the shares, learned of the violation in March 2026, and filed suit in September 2026. Under the Uniform Securities Act, what is the likely result?",
+      "options": {
+        "a": "Her claim is barred, because she did not file suit within one year of the sale date",
+        "b": "She recovers three times the $20,000 price as damages, less the $600 in dividends",
+        "c": "She recovers $20,000 plus interest and attorney's fees, with no offset for dividends",
+        "d": "She recovers $20,000 plus interest and attorney's fees, less the $600 in dividends"
+      },
+      "correctOptionId": "d",
+      "explanation": "Under USA §410, a buyer in an unlawful sale may sue to recover the consideration paid plus interest at the legal rate and reasonable attorney's fees, less any income received, upon tendering the security. The limitation period is commonly tested as 3 years from the sale or 2 years from discovery, whichever comes first, so a suit 16 months after the sale is timely.",
+      "distractorExplanations": {
+        "a": "The USA limitation period runs years from the sale and from discovery, not one year from the sale, so this suit is timely.",
+        "b": "Treble damages belong to other laws, such as federal insider-trading penalties; USA §410 restores the price plus interest and fees.",
+        "c": "Income received on the security, such as these dividends, is deducted from the recovery so the buyer is not paid twice."
+      }
+    },
+    "series-63-readiness-check-s63-remedies-006": {
+      "topicId": "s63-remedies",
+      "prompt": "After discovering it sold unregistered, nonexempt bonds to a client, a broker-dealer sends a written rescission offer refunding the purchase price plus interest, less income received. The client ignores the offer for 30 days after receiving it. What is the consequence under the Uniform Securities Act?",
+      "options": {
+        "a": "The client loses the right to sue the firm under the Act for that sale",
+        "b": "The client keeps the right to sue for 2 years after discovering the violation",
+        "c": "The client may still sue, but recovery is capped at the amount offered",
+        "d": "The client may still sue, because rescission offers must stay open 90 days"
+      },
+      "correctOptionId": "a",
+      "explanation": "Under USA §410, a buyer who receives a written offer, before suit and while owning the security, to refund the consideration paid plus interest less income received, and who fails to accept it within 30 days of receipt, loses the right to sue under the Act for that sale. The offer does not bar the Administrator from taking its own enforcement action.",
+      "distractorExplanations": {
+        "b": "The limitation period does not survive an ignored rescission offer; failing to accept within 30 days ends the civil claim.",
+        "c": "There is no capped claim; a properly made offer that is not accepted within 30 days bars the civil suit altogether.",
+        "d": "The acceptance window is 30 days from receipt, not 90, and once it passes the buyer can no longer sue under the Act."
+      }
+    },
+    "series-63-readiness-check-s63-remedies-007": {
+      "topicId": "s63-remedies",
+      "prompt": "An investigation shows an agent knowingly and willfully sold unregistered, nonexempt securities to state residents. Under the Uniform Securities Act of 1956, which criminal consequence applies?",
+      "options": {
+        "a": "The Administrator may impose a criminal fine of up to $5,000 by order after a hearing",
+        "b": "A court may impose up to $5,000 and 3 years in prison, whether or not the act was willful",
+        "c": "On referral for prosecution, a court may impose up to $5,000, 3 years in prison, or both",
+        "d": "The Administrator may order up to 3 years in prison, subject to appeal within 60 days"
+      },
+      "correctOptionId": "c",
+      "explanation": "USA §409 makes a willful violation a crime punishable by a fine of up to $5,000, imprisonment of up to 3 years, or both. The Administrator cannot impose criminal penalties; it refers evidence to the attorney general or a local prosecutor. Separately, a person aggrieved by an Administrator's final order may seek judicial review within 60 days.",
+      "distractorExplanations": {
+        "a": "Criminal fines are imposed by a court after prosecution; the Administrator's own orders are administrative, not criminal.",
+        "b": "Criminal liability under the USA requires a willful violation; a non-willful mistake leads to administrative or civil remedies.",
+        "d": "Prison terms come from a criminal court; the 60-day period applies to appealing an Administrator's final order, not to sentencing."
+      }
+    },
+    "series-63-readiness-check-s63-securities-001": {
+      "topicId": "s63-securities",
+      "prompt": "A promoter sells investors units in a vineyard it manages. Each buyer receives title to specific rows of vines, pays cash, and shares pro rata in profits from the grapes the promoter grows and markets. How are the units treated under the Howey test?",
+      "options": {
+        "a": "As real estate interests outside securities law, because buyers hold title to the rows",
+        "b": "As investment contracts, because buyers rely on the promoter's efforts for profits",
+        "c": "As agricultural commodities regulated by the CFTC rather than by state securities law",
+        "d": "As securities if the promoter guarantees a fixed return; otherwise as real property"
+      },
+      "correctOptionId": "b",
+      "explanation": "Under SEC v. W.J. Howey Co. (1946), an investment contract exists when there is an investment of money in a common enterprise with an expectation of profits derived from the efforts of others. Buyers here contribute cash, profits are pooled pro rata, and the promoter does the work, so the units are securities even though buyers hold title to land.",
+      "distractorExplanations": {
+        "a": "Howey itself involved deeded rows of citrus trees; title to land does not defeat security status when profits depend on the promoter.",
+        "c": "The buyers are not trading commodity futures; they are passive investors in a managed enterprise, which is a securities question.",
+        "d": "A guaranteed return is not required; the Howey test looks at expected profits from others' efforts, not at fixed payouts."
+      }
+    },
+    "series-63-readiness-check-s63-securities-002": {
+      "topicId": "s63-securities",
+      "prompt": "A two-year-old startup with no federal registration plans to raise $3 million solely from residents of its home state, relying on the federal intrastate exemption. Which state registration method fits the offering under the Uniform Securities Act?",
+      "options": {
+        "a": "Coordination, effective at the same moment the SEC declares the registration effective",
+        "b": "Notification, which becomes effective automatically on the second business day after filing",
+        "c": "No state registration, because the offering qualifies for a federal exemption",
+        "d": "Qualification, effective when the Administrator orders the registration effective"
+      },
+      "correctOptionId": "d",
+      "explanation": "Registration by coordination requires a pending federal registration, and notification (filing) is limited to established issuers with a multi-year operating and earnings history. An issuer with neither must register by qualification under USA §304, which requires full disclosure to the Administrator, and the registration becomes effective when the Administrator so orders.",
+      "distractorExplanations": {
+        "a": "Coordination piggybacks on a Securities Act registration statement; this issuer is not filing with the SEC at all.",
+        "b": "Notification is reserved for seasoned issuers with years of continuous operation and earnings, which a two-year-old startup lacks.",
+        "c": "A federal intrastate exemption removes SEC registration only; the offering still needs state registration or a state exemption."
+      }
+    },
+    "series-63-readiness-check-s63-securities-003": {
+      "topicId": "s63-securities",
+      "prompt": "An issuer is selling shares to accredited investors in State X under SEC Regulation D, Rule 506(b). What may the State X Administrator require for the offering?",
+      "options": {
+        "a": "A notice filing with a copy of Form D, a fee, and consent to service of process",
+        "b": "Registration by qualification, since the shares are not registered with the SEC",
+        "c": "Registration by coordination, effective once the issuer files Form D with the SEC",
+        "d": "Merit review of the terms before sale, since accredited investors buy unregistered stock"
+      },
+      "correctOptionId": "a",
+      "explanation": "Rule 506 offerings are federal covered securities under NSMIA, so states may not require registration or merit review. A state may still require a notice filing, generally a copy of Form D within 15 days after the first sale in the state, plus a filing fee and a consent to service of process, and it keeps its antifraud authority.",
+      "distractorExplanations": {
+        "b": "Lack of SEC registration does not trigger state qualification here; NSMIA preempts state registration of Rule 506 offerings.",
+        "c": "Coordination applies to offerings registered under the Securities Act; filing Form D is a federal notice, not a registration statement.",
+        "d": "NSMIA bars state merit review of federal covered securities, including Rule 506 offerings, regardless of who the buyers are."
+      }
+    },
+    "series-63-readiness-check-s63-securities-004": {
+      "topicId": "s63-securities",
+      "prompt": "Within 12 months, an issuer offers unregistered shares in State X to 8 individuals and 15 insurance companies. No commission is paid for soliciting the individuals, and the issuer reasonably believes all buyers are purchasing for investment. How does the Uniform Securities Act treat the offering?",
+      "options": {
+        "a": "It is not exempt, because the 23 offerees exceed the ten-offeree limit",
+        "b": "The shares become exempt securities, so later resales are also exempt",
+        "c": "It is an exempt private placement transaction; the shares are not exempt",
+        "d": "It is exempt if no more than 35 of the buyers are nonaccredited investors"
+      },
+      "correctOptionId": "c",
+      "explanation": "USA §402 exempts offers to no more than 10 persons in the state, excluding institutional investors, during 12 months if no commission is paid for soliciting noninstitutional buyers and the seller reasonably believes they buy for investment. Insurance companies are institutional, so only 8 offerees count. The exemption covers the transaction, not the security, so a later resale needs its own exemption or registration.",
+      "distractorExplanations": {
+        "a": "Institutional investors such as insurance companies are not counted toward the ten-offeree limit, so only 8 offerees count.",
+        "b": "A transactional exemption does not make the security itself exempt; each later resale must find its own exemption or be registered.",
+        "d": "The 35-purchaser figure is the federal Rule 506 cap on nonaccredited buyers; the USA private placement test counts noninstitutional offerees, not buyers."
+      }
+    },
+    "series-63-readiness-check-s63-securities-005": {
+      "topicId": "s63-securities",
+      "prompt": "An agent sells general obligation municipal bonds, which are exempt from state registration, and tells a client they carry a AAA rating when the actual rating is BBB. Under the Uniform Securities Act, what is the status of the agent's conduct?",
+      "options": {
+        "a": "It is outside the Act, because exempt securities are not covered by state law",
+        "b": "It violates the antifraud rule, which applies to exempt securities as well",
+        "c": "It becomes a violation once the client sells the bonds at a realized loss",
+        "d": "It is an MSRB matter alone, since municipal bonds fall outside state authority"
+      },
+      "correctOptionId": "b",
+      "explanation": "USA §101 makes it unlawful, in connection with the offer, sale or purchase of any security, to make an untrue statement of a material fact. Exemptions from registration do not exempt anyone from the antifraud provisions, so misstating the bonds' rating is fraud even though the bonds need no state registration.",
+      "distractorExplanations": {
+        "a": "Exempt securities are excused from registration, not from the Act; the antifraud provisions reach every security.",
+        "c": "The misstatement is a violation when made; a realized loss matters for a civil damages claim, not for whether fraud occurred.",
+        "d": "MSRB rules apply to municipal dealers, but state antifraud authority over misstatements in any security sale remains in force."
+      }
+    }
+  }
+}

@@ -106,6 +106,7 @@ export function toMockStartedMessage(event: FunnelEvent, mock?: MockExamConfig) 
     `Mock: ${mockTitle}`,
     `Mock slug: ${mockSlug}`,
     `Mode: ${modeLabel}`,
+    `Access: ${mockStartAccessLabel(event.source)}`,
     `Linked deck: ${linkedDeck}`,
     `Source: ${event.source ?? "unknown"}`,
     `Path: ${event.path ?? "n/a"}`,
@@ -216,26 +217,66 @@ export async function notifyMockInterest(event: FunnelEvent, mock?: MockExamConf
   return sendTelegramMessage(chatId, toMockInterestMessage(event, mock, email));
 }
 
-export function toLearnCheckoutClickMessage(event: FunnelEvent, mock?: MockExamConfig) {
+function mockSlugFromSource(source?: string) {
+  return source?.match(/^mock:([^:]+)/)?.[1];
+}
+
+export function mockStartAccessLabel(source?: string) {
+  if (!source) return "n/a";
+  if (/:start:(exam|learn):free\b/.test(source)) return "free first mock";
+  if (/:start:(exam|learn):paid\b/.test(source)) return "Mock Pass attempt";
+  return "open (paywall off)";
+}
+
+export function toMockPassCheckoutClickMessage(event: FunnelEvent, mock?: MockExamConfig) {
+  const placement = event.source?.match(/:pass:checkout:([a-z]+)/)?.[1] ?? "n/a";
   return [
-    "UniPrep2Go Learn Pass checkout click",
+    "💳 UniPrep2Go Mock Pass — pay click ($5 / 5 attempts)",
     "",
     `Mock: ${mock?.title ?? "n/a"}`,
-    `Mock slug: ${mock?.slug ?? event.source?.match(/^mock:([^:]+)/)?.[1] ?? "n/a"}`,
+    `Mock slug: ${mock?.slug ?? mockSlugFromSource(event.source) ?? "n/a"}`,
+    `Paywall: ${placement === "retake" ? "results → retake" : placement === "landing" ? "mock landing" : placement}`,
     `Linked deck: ${mock?.linkedDeckSlug ?? event.deckSlug}`,
-    `Source: ${event.source ?? "unknown"}`,
     `Destination: ${event.destinationUrl ?? "n/a"}`,
     `Country: ${event.country ?? "n/a"}`,
+    `Region: ${event.region ?? "n/a"}`,
+    `City: ${event.city ?? "n/a"}`,
+    `Browser language: ${event.browserLanguage ?? event.acceptLanguage ?? "n/a"}`,
     `Referrer: ${event.referrer ?? "direct"}`,
+    `Visitor: ${event.visitorId ?? "n/a"}`,
     `Time: ${event.occurredAt}`,
   ].join("\n");
 }
 
-export async function notifyLearnCheckoutClick(event: FunnelEvent, mock?: MockExamConfig) {
+export function toMockPassRedeemMessage(event: FunnelEvent, mock?: MockExamConfig) {
+  const kind = event.source?.includes(":redeem:new") ? "new key" : "existing key (another device)";
+  const left = event.source?.match(/:left:(\d+)/)?.[1] ?? "n/a";
+  return [
+    "✅ UniPrep2Go Mock Pass unlocked",
+    "",
+    `Key: ${kind}`,
+    `Attempts left: ${left}`,
+    `Mock: ${mock?.title ?? "n/a"}`,
+    `Mock slug: ${mock?.slug ?? mockSlugFromSource(event.source) ?? "n/a"}`,
+    `Country: ${event.country ?? "n/a"}`,
+    `Visitor: ${event.visitorId ?? "n/a"}`,
+    `Time: ${event.occurredAt}`,
+  ].join("\n");
+}
+
+async function notify(text: string) {
   const chatId = await getTelegramNotifyChatId();
   if (!chatId) {
     console.warn("[telegram_notify] no chat id configured; send /stats once or set TELEGRAM_CHAT_ID");
     return false;
   }
-  return sendTelegramMessage(chatId, toLearnCheckoutClickMessage(event, mock));
+  return sendTelegramMessage(chatId, text);
+}
+
+export async function notifyMockPassCheckoutClick(event: FunnelEvent, mock?: MockExamConfig) {
+  return notify(toMockPassCheckoutClickMessage(event, mock));
+}
+
+export async function notifyMockPassRedeem(event: FunnelEvent, mock?: MockExamConfig) {
+  return notify(toMockPassRedeemMessage(event, mock));
 }

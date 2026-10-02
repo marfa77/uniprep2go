@@ -42,13 +42,13 @@ describe("deck catalog", () => {
       "/samples/cfa-level-1-anki-deck-sample-3.webp",
     ]);
     expect(primaryDeck.sampleCards.map((card) => card.question)).toEqual([
-      "What is a forward contract?",
-      "What is the no-arbitrage forward price for an asset with no income?",
-      "What is the forward price for an asset that pays income?",
+      "How is portfolio duration calculated?",
+      "What is the variance of a two-asset portfolio?",
+      "What is a protective put?",
     ]);
-    expect(primaryDeck.sampleCards[0]?.answer).toContain("No money changes hands upfront");
-    expect(primaryDeck.sampleCards[1]?.answer).toContain("Forward price is the no-arbitrage price");
-    expect(primaryDeck.sampleCards[2]?.answer).toContain("Income reduces forward price");
+    expect(primaryDeck.sampleCards[0]?.answer).toContain("weights = market value proportions");
+    expect(primaryDeck.sampleCards[1]?.answer).toContain("covariance (correlation)");
+    expect(primaryDeck.sampleCards[2]?.answer).toContain("Long stock + long put");
   });
 
   it("includes the CFA Level 1 Formula Reference as a printable recall product", () => {
@@ -370,6 +370,10 @@ describe("deck catalog", () => {
       "/samples/frm-part-1-anki-deck-sample-2.webp",
       "/samples/frm-part-1-anki-deck-sample-3.webp",
     ]);
+    expect(frmDeck?.sampleCards[0]?.question).toContain("single monthly mortality rate");
+    expect(frmDeck?.sampleCards[1]?.question).toContain("default correlation");
+    expect(frmDeck?.sampleCards[2]?.question).toContain("OLS slope and intercept");
+    expect(frmDeck?.topicCoverage?.map((t) => t.cards)).toEqual(["89", "89", "133", "133"]);
   });
 
   it("includes the SIE exam deck with three Gumroad preview cards", () => {
@@ -384,14 +388,12 @@ describe("deck catalog", () => {
     });
     expect(sieDeck?.facts.cards).toBe("300");
     expect(sieDeck?.sampleCards).toHaveLength(3);
-    expect(sieDeck?.sampleCards.map((card) => card.question)).not.toEqual([
-      "What is the SEC?",
-      "What is FINRA?",
-      "What does the MSRB regulate?",
+    // Screenshot captures: text must stay the captured card.
+    expect(sieDeck?.sampleCards.map((card) => card.question)).toEqual([
+      "How do you find the conversion ratio and parity price of a convertible bond?",
+      "How does the Securities Exchange Act of 1934 differ from the 1933 Act?",
+      "When must a firm file a Currency Transaction Report?",
     ]);
-    expect(sieDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8)).toBe(
-      true,
-    );
   });
 
   it("includes the Series 7 deck with three Gumroad preview cards", () => {
@@ -407,9 +409,9 @@ describe("deck catalog", () => {
     expect(seriesSevenDeck?.facts.cards).toBe("300");
     expect(seriesSevenDeck?.sampleCards).toHaveLength(3);
     expect(seriesSevenDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "What must a registered representative remember when prospecting for new customers?",
-      "When does retail communication require heightened review?",
-      "Who is an institutional customer?",
+      "How do defined benefit and defined contribution plans differ?",
+      "When must retail communications about registered investment companies be filed with FINRA?",
+      "How do all-or-none, fill-or-kill, and immediate-or-cancel orders differ?",
     ]);
   });
 
@@ -431,9 +433,9 @@ describe("deck catalog", () => {
       "/samples/series-63-anki-deck-sample-3.webp",
     ]);
     expect(seriesSixtyThreeDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "What is a broker-dealer under state securities law?",
-      "Why is an issuer usually excluded from broker-dealer definition?",
-      "Are agents themselves broker-dealers?",
+      "When must Form CRS be updated and existing clients informed?",
+      "When can a person avoid imprisonment for violating a rule or order?",
+      "When does an investment adviser not need to register in a state?",
     ]);
   });
 
@@ -470,14 +472,12 @@ describe("deck catalog", () => {
       "/samples/california-real-estate-exam-anki-deck-sample-2.webp",
       "/samples/california-real-estate-exam-anki-deck-sample-3.webp",
     ]);
-    expect(californiaRealEstateDeck?.sampleCards.map((card) => card.question)).not.toEqual([
+    // Screenshot captures: text must stay the captured card.
+    expect(californiaRealEstateDeck?.sampleCards.map((card) => card.question)).toEqual([
       "What is real property?",
       "What is personal property?",
       "What is a fixture?",
     ]);
-    expect(
-      californiaRealEstateDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8),
-    ).toBe(true);
   });
 
   it("includes the Life & Health Insurance deck with three Gumroad preview cards", () => {
@@ -497,14 +497,12 @@ describe("deck catalog", () => {
       "/samples/life-and-health-insurance-exam-anki-deck-sample-2.webp",
       "/samples/life-and-health-insurance-exam-anki-deck-sample-3.webp",
     ]);
-    expect(lifeHealthDeck?.sampleCards.map((card) => card.question)).not.toEqual([
+    // Screenshot captures: text must stay the captured card.
+    expect(lifeHealthDeck?.sampleCards.map((card) => card.question)).toEqual([
       "What is risk in insurance?",
       "What is pure risk?",
       "What is speculative risk?",
     ]);
-    expect(
-      lifeHealthDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8),
-    ).toBe(true);
   });
 
   it("includes the Property & Casualty Insurance deck with three Gumroad preview cards", () => {
@@ -524,14 +522,12 @@ describe("deck catalog", () => {
       "/samples/property-casualty-insurance-exam-anki-deck-sample-2.webp",
       "/samples/property-casualty-insurance-exam-anki-deck-sample-3.webp",
     ]);
-    expect(propertyCasualtyDeck?.sampleCards.map((card) => card.question)).not.toEqual([
+    // Screenshot captures: text must stay the captured card.
+    expect(propertyCasualtyDeck?.sampleCards.map((card) => card.question)).toEqual([
       "What is risk in property and casualty insurance?",
       "What is pure risk?",
       "What is speculative risk?",
     ]);
-    expect(
-      propertyCasualtyDeck?.sampleCards.every((card) => card.question.length > 28 && card.answer.length > 8),
-    ).toBe(true);
   });
 
   it("includes the ServSafe Manager deck as a full food safety product", () => {
@@ -600,11 +596,14 @@ describe("deck catalog", () => {
       "/samples/ptcb-pharmacy-technician-anki-deck-sample-3.webp",
     ]);
     expect(ptcbDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "Prinivil — generic name, class, and primary use",
-      "Common brand names for Lisinopril",
-      'What does the sig code "bid" mean?',
+      "Lopressor vs Toprol XL — generic name, class, use, and the substitution trap?",
+      "How do you verify the check digit of DEA number BL6324817?",
+      "Why is concentrated oral morphine solution a classic dosing-error drug?",
     ]);
+    expect(ptcbDeck?.sampleCards[1].answer).toContain("BL6324817 fails");
     expect(ptcbDeck?.directAnswer).toContain("PTCE");
+    expect(ptcbDeck?.directAnswer).toContain("60 high-yield Top 200 drugs");
+    expect(ptcbDeck?.directAnswer).not.toMatch(/top 200 brand\/generic pairs/i);
     expect(ptcbDeck?.directAnswer).not.toContain("UniPrep2Go sells");
   });
 
@@ -768,7 +767,7 @@ describe("deck catalog", () => {
         "Dutch Inburgering NT2 A2 Anki Deck — 1897 Flashcards",
       "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2101 Flashcards",
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
-      "sat-anki-deck": "Digital SAT Anki Deck — 342+ Flashcards",
+      "sat-anki-deck": "Digital SAT Anki Deck — 160+ Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",
       "gre-anki-deck": "GRE Anki Deck — 350+ Flashcards",
       "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250+ Flashcards",

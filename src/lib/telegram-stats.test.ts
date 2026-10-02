@@ -45,9 +45,10 @@ const sampleStats: FunnelStats = {
     deck_waitlist_interest: 0,
     mock_deck_cta_click: 0,
     mock_checkout_placeholder_click: 0,
-    learn_checkout_click: 0,
-    learn_redeem_success: 0,
-    learn_credit_consumed: 0,
+    mock_paywall_view: 0,
+    mock_pass_checkout_click: 0,
+    mock_pass_redeem_success: 0,
+    mock_pass_attempt_used: 0,
   },
   byDeck: { "cfa-level-1-anki-deck": 7, "frm-part-1-anki-deck": 2 },
   bySource: {

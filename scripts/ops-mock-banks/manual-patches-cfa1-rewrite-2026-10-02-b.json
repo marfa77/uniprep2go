@@ -1,0 +1,631 @@
+{
+  "cfa-level-1-readiness-check": {
+    "cfa-level-1-readiness-check-corp-finance-001": {
+      "topicId": "corp-finance",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Projects X and Y are mutually exclusive. X has an NPV of $4.2 million and an IRR of 14%; Y has an NPV of $5.1 million and an IRR of 11%. The cost of capital is 9%. Which project should the firm choose?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Project Y, because NPV measures the value added for shareholders",
+        "b": "Project X, because its higher IRR means a better return on each dollar",
+        "c": "Project X, because IRR does not depend on the assumed discount rate",
+        "d": "Both projects, because each IRR exceeds the 9% cost of capital"
+      },
+      "explanation": "When NPV and IRR rank mutually exclusive projects differently (usually because of scale or cash-flow timing), choose the higher NPV. NPV measures the dollar value created at the firm's cost of capital and assumes reinvestment at that rate, whereas IRR assumes reinvestment at the IRR itself.",
+      "distractorExplanations": {
+        "b": "A higher percentage return on a smaller or differently timed project can still create less total value.",
+        "c": "IRR is independent of the discount rate, which is exactly why it can mis-rank projects; value depends on the cost of capital.",
+        "d": "Mutually exclusive means only one can be accepted, so the firm must rank them."
+      }
+    },
+    "cfa-level-1-readiness-check-corp-finance-002": {
+      "topicId": "corp-finance",
+      "difficulty": "medium",
+      "formula": "$$WACC = w_d r_d (1 - t) + w_e r_e$$",
+      "prompt": "A company's target capital structure is 40% debt and 60% equity. Its pretax cost of debt is 6%, its cost of equity is 11%, and its marginal tax rate is 25%. What is its weighted average cost of capital?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "7.10%",
+        "b": "8.40%",
+        "c": "9.00%",
+        "d": "11.00%"
+      },
+      "explanation": "WACC = w_d × r_d × (1 − t) + w_e × r_e = 0.40 × 6% × 0.75 + 0.60 × 11% = 1.80% + 6.60% = 8.40%. The cost of debt is tax-adjusted because interest is tax-deductible.",
+      "distractorExplanations": {
+        "a": "Swaps the weights (60% debt, 40% equity).",
+        "c": "Uses the pretax cost of debt and ignores the interest tax shield.",
+        "d": "Uses only the cost of equity and ignores the cheaper debt financing."
+      }
+    },
+    "cfa-level-1-readiness-check-corp-finance-003": {
+      "topicId": "corp-finance",
+      "difficulty": "easy",
+      "formula": "$$CCC = DSO + DOH - DPO$$",
+      "prompt": "A company has days of sales outstanding of 45, days of inventory on hand of 60, and days of payables of 30. What is its cash conversion cycle?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "135 days",
+        "b": "105 days",
+        "c": "75 days",
+        "d": "15 days"
+      },
+      "explanation": "Cash conversion cycle = DSO + DOH − days of payables = 45 + 60 − 30 = 75 days. It measures how long cash is tied up between paying suppliers and collecting from customers; a shorter cycle means less working capital to finance.",
+      "distractorExplanations": {
+        "a": "Adds payables days instead of subtracting them.",
+        "b": "105 days is the operating cycle (DSO + DOH), which ignores supplier credit.",
+        "d": "Subtracts inventory days instead of payables days (45 + 30 − 60)."
+      }
+    },
+    "cfa-level-1-readiness-check-corp-finance-004": {
+      "topicId": "corp-finance",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "According to the static trade-off theory of capital structure, a company reaches its optimal level of debt when:",
+      "correctOptionId": "d",
+      "options": {
+        "a": "It is financed entirely with debt so as to maximize the interest tax shield",
+        "b": "Its cost of equity has fallen to equal its pretax cost of debt",
+        "c": "Internal funds are used up and it must turn to external financing",
+        "d": "Its marginal tax benefit of debt equals the marginal cost of distress"
+      },
+      "explanation": "The static trade-off theory adds expected costs of financial distress to MM with taxes. Debt adds value through the interest tax shield until the marginal expected cost of distress equals the marginal tax benefit; that point is the optimal capital structure and minimizes WACC.",
+      "distractorExplanations": {
+        "a": "All-debt financing is the MM-with-taxes result, which ignores financial distress costs.",
+        "b": "The cost of equity rises with leverage and stays above the cost of debt; this is not an optimality condition.",
+        "c": "Using internal funds first, then debt, then equity is the pecking order theory, not the trade-off theory."
+      }
+    },
+    "cfa-level-1-readiness-check-equity-001": {
+      "topicId": "equity",
+      "difficulty": "medium",
+      "formula": "$$P = P_0 \\times \\frac{1 - IM}{1 - MM}$$",
+      "prompt": "An investor buys a stock at $50 per share with 50% initial margin. The maintenance margin requirement is 25%. Below what share price will she receive a margin call?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "$18.75",
+        "b": "$25.00",
+        "c": "$33.33",
+        "d": "$37.50"
+      },
+      "explanation": "She borrowed $25 per share. A margin call occurs when equity falls to 25% of the position's value: (P − 25) / P = 0.25, so P = 25 / 0.75 = $33.33. Equivalently, P = P0 × (1 − initial margin) / (1 − maintenance margin).",
+      "distractorExplanations": {
+        "a": "Multiplies the loan by (1 − maintenance margin) instead of dividing by it.",
+        "b": "$25.00 is the loan per share; at that price her equity is already zero.",
+        "d": "A 25% price drop is not the trigger; the trigger is equity falling to 25% of the position's value."
+      }
+    },
+    "cfa-level-1-readiness-check-equity-002": {
+      "topicId": "equity",
+      "difficulty": "medium",
+      "formula": "$$V_0 = \\frac{D_0(1+g)}{r - g}$$",
+      "prompt": "A company just paid an annual dividend of $2.00. Dividends are expected to grow at 4% a year indefinitely, and investors require a 9% return. What is the stock's intrinsic value under the Gordon growth model?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "$41.60",
+        "b": "$40.00",
+        "c": "$22.22",
+        "d": "$16.00"
+      },
+      "explanation": "The Gordon growth model uses next year's dividend: D1 = $2.00 × 1.04 = $2.08. Value = D1 / (r − g) = 2.08 / (0.09 − 0.04) = $41.60. The model requires the required return to exceed the growth rate.",
+      "distractorExplanations": {
+        "b": "Uses the dividend just paid (D0) instead of growing it to D1.",
+        "c": "Treats the dividend as a no-growth perpetuity: $2.00 / 9%.",
+        "d": "Adds the growth rate to the required return instead of subtracting it."
+      }
+    },
+    "cfa-level-1-readiness-check-equity-003": {
+      "topicId": "equity",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A price-weighted index contains three stocks priced at $20, $40, and $90, with a divisor of 3. The $90 stock rises 10% and the other two are unchanged. By what percentage does the index rise?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "3.0%",
+        "b": "3.3%",
+        "c": "6.0%",
+        "d": "10.0%"
+      },
+      "explanation": "The index value is (20 + 40 + 90) / 3 = 50. The $90 stock gains $9, so the index becomes 159 / 3 = 53, a 6.0% rise. In a price-weighted index, higher-priced stocks carry more weight regardless of company size.",
+      "distractorExplanations": {
+        "a": "Three is the index-point change (50 to 53), not the percentage change.",
+        "b": "3.3% is the equal-weighted result (10% / 3), not the price-weighted one.",
+        "d": "Only one of the three stocks rose, so the index moves less than 10%."
+      }
+    },
+    "cfa-level-1-readiness-check-equity-004": {
+      "topicId": "equity",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A fund consistently earns risk-adjusted abnormal returns, after costs, by trading on its analysis of companies' published financial statements. This evidence is most inconsistent with which form of market efficiency?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Weak form only, because the trading strategy relies on past price data",
+        "b": "Strong form only, because only private information should earn excess returns",
+        "c": "Semi-strong form, because the strategy uses only public information",
+        "d": "Weak and semi-strong forms equally, because both rule out technical analysis"
+      },
+      "explanation": "Semi-strong-form efficiency says prices reflect all public information, including financial statements, so fundamental analysis of public data should not earn consistent abnormal returns. Evidence that it does contradicts the semi-strong form (and therefore the strong form) but says nothing against the weak form, which concerns past prices and volume.",
+      "distractorExplanations": {
+        "a": "The strategy uses financial statements, not past prices, so it does not test the weak form.",
+        "b": "Strong-form efficiency also covers public information, so the evidence directly contradicts the semi-strong form, not the strong form alone.",
+        "d": "Only the weak form rules out profits from technical analysis; the semi-strong form rules out profits from public fundamental data."
+      }
+    },
+    "cfa-level-1-readiness-check-equity-005": {
+      "topicId": "equity",
+      "difficulty": "medium",
+      "formula": "$$\\frac{P_0}{E_1} = \\frac{D_1 / E_1}{r - g}$$",
+      "prompt": "A company pays out 40% of its earnings, its dividends are expected to grow at a constant 5%, and investors require a 10% return. What is its justified forward (leading) P/E?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "4.0",
+        "b": "8.0",
+        "c": "8.4",
+        "d": "12.0"
+      },
+      "explanation": "From the Gordon growth model, justified leading P/E = payout ratio / (r − g) = 0.40 / (0.10 − 0.05) = 8.0. The justified trailing P/E is higher by a factor of (1 + g): 8.0 × 1.05 = 8.4.",
+      "distractorExplanations": {
+        "a": "Divides the payout ratio by the required return and ignores growth.",
+        "c": "8.4 is the justified trailing P/E, which multiplies by (1 + g).",
+        "d": "Uses the 60% retention ratio instead of the 40% payout ratio."
+      }
+    },
+    "cfa-level-1-readiness-check-equity-006": {
+      "topicId": "equity",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Which feature makes a company's preference shares less risky for investors than its common shares?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Priority over common shares for dividends and in liquidation",
+        "b": "Dividends that are a legal obligation, enforceable like bond coupons",
+        "c": "Stronger voting rights in the election of the board of directors",
+        "d": "Full participation in earnings growth through rising dividends"
+      },
+      "explanation": "Preference shareholders receive dividends before common shareholders and rank ahead of them (but behind creditors) in liquidation. Their dividends are fixed but not a legal obligation, and they usually have limited voting rights and limited upside.",
+      "distractorExplanations": {
+        "b": "Preference dividends can be skipped without triggering default; cumulative shares only accrue the arrears.",
+        "c": "Preference shares typically carry limited or no voting rights.",
+        "d": "Fixed preference dividends do not grow with earnings; that upside belongs to common shareholders."
+      }
+    },
+    "cfa-level-1-readiness-check-derivatives-006": {
+      "topicId": "equity",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "An analyst compares two otherwise similar companies, one with no debt and one with high leverage. Why might she prefer EV/EBITDA to P/E for this comparison?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "EV/EBITDA is based on net income, so it captures each firm's interest costs",
+        "b": "EV/EBITDA excludes cash, so balance-sheet differences do not matter",
+        "c": "P/E cannot be calculated for a company that carries debt",
+        "d": "EV/EBITDA is capital-structure neutral: it covers debt and equity claims"
+      },
+      "explanation": "Enterprise value includes both debt and equity (net of cash), and EBITDA is earned before interest, so it accrues to all capital providers. That makes EV/EBITDA comparable across firms with different leverage, whereas P/E is distorted by interest expense and financial risk.",
+      "distractorExplanations": {
+        "a": "EBITDA is measured before interest, so it deliberately excludes interest costs.",
+        "b": "Enterprise value subtracts cash; balance-sheet structure is exactly what EV adjusts for.",
+        "c": "P/E can be calculated for leveraged firms, but leverage distorts the comparison."
+      }
+    },
+    "cfa-level-1-readiness-check-fixed-income-001": {
+      "topicId": "fixed-income",
+      "difficulty": "medium",
+      "formula": "$$P = \\sum_{t=1}^{N} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^N}$$",
+      "prompt": "A 3-year bond with $1,000 par pays a 5% annual coupon. Its yield to maturity is 6%. What is its price?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "$839.62",
+        "b": "$973.27",
+        "c": "$1,000.00",
+        "d": "$1,027.75"
+      },
+      "explanation": "Discount each cash flow at 6%: 50/1.06 + 50/1.06² + 1,050/1.06³ = 47.17 + 44.50 + 881.60 = $973.27. Because the coupon rate (5%) is below the yield (6%), the bond trades at a discount to par.",
+      "distractorExplanations": {
+        "a": "$839.62 discounts only the principal and ignores the coupons.",
+        "c": "A bond trades at par only when its coupon rate equals its yield.",
+        "d": "$1,027.75 is the price at a 4% yield; a yield above the coupon rate must put the price below par."
+      }
+    },
+    "cfa-level-1-readiness-check-fixed-income-002": {
+      "topicId": "fixed-income",
+      "difficulty": "hard",
+      "formula": "$$\\%\\Delta P \\approx -ModDur(\\Delta y) + \\tfrac{1}{2}\\,Convexity(\\Delta y)^2$$",
+      "prompt": "A bond has an annual modified duration of 7.2 and annual convexity of 80. Using both measures, what is the estimated percentage price change if its yield rises by 100 basis points?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "−7.6%",
+        "b": "−7.2%",
+        "c": "−6.8%",
+        "d": "−6.4%"
+      },
+      "explanation": "%ΔP ≈ −ModDur × Δy + ½ × Convexity × (Δy)² = −7.2 × 0.01 + 0.5 × 80 × 0.0001 = −7.2% + 0.4% = −6.8%. Positive convexity makes the price fall less than duration alone predicts.",
+      "distractorExplanations": {
+        "a": "Subtracts the convexity adjustment; positive convexity works in the bondholder's favor.",
+        "b": "Uses duration only and ignores the convexity adjustment.",
+        "d": "Omits the ½ in the convexity term, doubling the adjustment to +0.8%."
+      }
+    },
+    "cfa-level-1-readiness-check-fixed-income-003": {
+      "topicId": "fixed-income",
+      "difficulty": "easy",
+      "formula": "$$EL = PD \\times LGD = PD \\times (1 - RR)$$",
+      "prompt": "A corporate bond has a 2% annual probability of default and an expected recovery rate of 40%. What is its expected loss for the year as a percentage of exposure?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "0.8%",
+        "b": "1.2%",
+        "c": "2.0%",
+        "d": "3.3%"
+      },
+      "explanation": "Expected loss = probability of default × loss given default. Loss given default = 1 − recovery rate = 60%, so expected loss = 2% × 60% = 1.2% of exposure.",
+      "distractorExplanations": {
+        "a": "Multiplies by the recovery rate (40%) instead of the loss given default (60%).",
+        "c": "2% is the default probability; it ignores the 40% recovery.",
+        "d": "Divides the default probability by loss given default instead of multiplying."
+      }
+    },
+    "cfa-level-1-readiness-check-fixed-income-004": {
+      "topicId": "fixed-income",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "All else equal, how does adding a call provision affect a bond's price and yield compared with an otherwise identical option-free bond?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Lower price and higher yield, as the investor is short the issuer's call",
+        "b": "Higher price and lower yield, because the call adds flexibility for the investor",
+        "c": "Lower price and lower yield, because callable bonds have shorter expected lives",
+        "d": "Same price and yield, because the call is exercised only after rates fall"
+      },
+      "explanation": "A callable bond equals an option-free bond minus the value of the issuer's call option. The investor is effectively short that call, so the callable bond is priced lower and offers a higher yield as compensation for call and reinvestment risk.",
+      "distractorExplanations": {
+        "b": "The call belongs to the issuer, not the investor; a putable bond is the one priced higher.",
+        "c": "A lower price means a higher yield; price and yield cannot both fall.",
+        "d": "The option has value today even though exercise is uncertain, so it changes price and yield."
+      }
+    },
+    "cfa-level-1-readiness-check-fixed-income-005": {
+      "topicId": "fixed-income",
+      "difficulty": "medium",
+      "formula": "$$(1+S_2)^2 = (1+S_1)(1+f_{1,1})$$",
+      "prompt": "The 1-year spot rate is 3.0% and the 2-year spot rate is 4.0%, both with annual compounding. What is the implied 1-year forward rate one year from now (the 1y1y rate)?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "1.00%",
+        "b": "3.50%",
+        "c": "4.00%",
+        "d": "5.01%"
+      },
+      "explanation": "No arbitrage requires (1.04)² = (1.03)(1 + f), so f = 1.0816 / 1.03 − 1 = 5.01%. With an upward-sloping spot curve, the forward rate lies above the longer spot rate.",
+      "distractorExplanations": {
+        "a": "Subtracts the spot rates; forward rates come from compounding, not differences.",
+        "b": "Averages the two spot rates instead of solving the no-arbitrage relationship.",
+        "c": "4.00% is the 2-year spot rate, which is roughly the average of the 1-year rate and the forward rate."
+      }
+    },
+    "cfa-level-1-readiness-check-fixed-income-006": {
+      "topicId": "fixed-income",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Mortgage rates fall sharply. Which risk mainly affects investors in an agency mortgage pass-through security?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Extension risk, because prepayments slow and the security's life lengthens",
+        "b": "Default risk, because falling rates raise borrower delinquencies",
+        "c": "Inflation risk, because lower rates erode the real value of fixed coupons",
+        "d": "Contraction risk, because prepayments speed up as homeowners refinance"
+      },
+      "explanation": "When rates fall, homeowners refinance and prepay, so principal comes back sooner than expected and must be reinvested at lower rates. This contraction risk also caps price gains (negative convexity). Extension risk is the opposite problem, when rates rise and prepayments slow.",
+      "distractorExplanations": {
+        "a": "Extension risk arises when rates rise and prepayments slow.",
+        "b": "Agency pass-throughs carry a guarantee, and lower rates ease borrower stress rather than raise delinquencies.",
+        "c": "The main effect of falling rates on pass-throughs is faster prepayment, not inflation erosion."
+      }
+    },
+    "cfa-level-1-readiness-check-alternatives-006": {
+      "topicId": "fixed-income",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Which provision in a bond indenture is an affirmative covenant?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "The issuer may not pledge the same assets as collateral to other lenders",
+        "b": "The issuer may not pay dividends above a set percentage of its earnings",
+        "c": "The issuer must keep the assets securing the bond adequately insured",
+        "d": "The issuer may not sell key operating assets without bondholder approval"
+      },
+      "explanation": "Affirmative covenants require the issuer to do something, such as maintaining insurance, paying taxes, or providing financial reports. Negative covenants restrict actions, such as pledging assets to other lenders, paying excessive dividends, or selling key assets.",
+      "distractorExplanations": {
+        "a": "A negative pledge clause restricts the issuer, so it is a negative covenant.",
+        "b": "Limiting dividends restricts an action, which makes it a negative covenant.",
+        "d": "Restricting asset sales limits what the issuer may do, so it is a negative covenant."
+      }
+    },
+    "cfa-level-1-readiness-check-derivatives-001": {
+      "topicId": "derivatives",
+      "difficulty": "easy",
+      "formula": "$$F_0 = S_0 (1 + r)^T$$",
+      "prompt": "A non-dividend-paying stock trades at $100 and the annual risk-free rate is 5%. What is the no-arbitrage price of a one-year forward contract on the stock?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "$105.00",
+        "b": "$100.00",
+        "c": "$95.24",
+        "d": "$95.00"
+      },
+      "explanation": "The forward price is the spot price compounded at the risk-free rate: F0 = S0 × (1 + r)^T = 100 × 1.05 = $105.00. Any other price lets an arbitrageur profit by buying (or shorting) the stock and taking the opposite forward position.",
+      "distractorExplanations": {
+        "b": "Ignores the cost of carry; the forward price must compensate for financing the stock.",
+        "c": "Discounts the spot price instead of compounding it.",
+        "d": "Subtracts the interest instead of adding it."
+      }
+    },
+    "cfa-level-1-readiness-check-derivatives-002": {
+      "topicId": "derivatives",
+      "difficulty": "hard",
+      "formula": "$$c_0 + \\frac{X}{(1+r)^T} = p_0 + S_0$$",
+      "prompt": "A European call and a European put on a non-dividend-paying stock both have a $50 strike and one year to expiration. The stock trades at $52, the call costs $6, and the risk-free rate is 4%. What is the no-arbitrage put price?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "$2.08",
+        "b": "$4.00",
+        "c": "$6.00",
+        "d": "$9.92"
+      },
+      "explanation": "Put–call parity: c + X / (1 + r)^T = p + S0, so p = c − S0 + X / (1 + r)^T = 6 − 52 + 50 / 1.04 = 6 − 52 + 48.08 = $2.08.",
+      "distractorExplanations": {
+        "b": "Uses the undiscounted strike ($50) instead of its present value.",
+        "c": "A call and a put with the same strike are equal in price only if the stock trades at the present value of the strike.",
+        "d": "Adds the stock price and subtracts PV(X), reversing the parity signs."
+      }
+    },
+    "cfa-level-1-readiness-check-derivatives-003": {
+      "topicId": "derivatives",
+      "difficulty": "easy",
+      "formula": "$$\\Pi = \\max(0, S_T - X) - c_0$$",
+      "prompt": "An investor buys a call option with a $40 strike for a $3 premium. At expiration the stock trades at $45. What is her profit per share?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "−$3.00",
+        "b": "$2.00",
+        "c": "$5.00",
+        "d": "$8.00"
+      },
+      "explanation": "The call's payoff is max(0, S − X) = 45 − 40 = $5. Profit subtracts the premium paid: $5 − $3 = $2 per share. Her breakeven price is $43, the strike plus the premium.",
+      "distractorExplanations": {
+        "a": "Losing the full premium happens only if the stock ends at or below the $40 strike.",
+        "c": "$5 is the payoff before subtracting the $3 premium.",
+        "d": "Adds the premium to the payoff instead of subtracting it."
+      }
+    },
+    "cfa-level-1-readiness-check-derivatives-004": {
+      "topicId": "derivatives",
+      "difficulty": "easy",
+      "formula": "",
+      "prompt": "Which feature distinguishes futures contracts from forward contracts?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Futures are customized private contracts that settle only at expiration",
+        "b": "Futures are standardized and exchange-traded, with daily mark-to-market",
+        "c": "Futures carry more counterparty credit risk than comparable forwards",
+        "d": "Futures cannot be closed out before expiration without counterparty consent"
+      },
+      "explanation": "Futures are standardized, trade on exchanges, and are marked to market daily, with margin and a clearinghouse guaranteeing performance. Forwards are customized over-the-counter contracts that usually settle at expiration and expose each side to counterparty risk.",
+      "distractorExplanations": {
+        "a": "Customized private contracts settled at expiration describe forwards.",
+        "c": "The clearinghouse and daily margining make futures counterparty risk lower than for forwards.",
+        "d": "Futures can be closed out at any time with an offsetting trade on the exchange."
+      }
+    },
+    "cfa-level-1-readiness-check-alternatives-001": {
+      "topicId": "alternatives",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "A hedge fund charges a 2% management fee on year-end assets and a 20% incentive fee calculated net of the management fee, with no hurdle rate. Assets grow from $100 million to $120 million before fees. What is the total fee for the year?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "$4.00 million",
+        "b": "$5.92 million",
+        "c": "$6.00 million",
+        "d": "$6.40 million"
+      },
+      "explanation": "Management fee = 2% × $120M = $2.40M. Incentive fee = 20% × ($120M − $2.40M − $100M) = 20% × $17.6M = $3.52M. Total fees = $5.92M. Calculating the incentive fee net of the management fee makes it smaller than an incentive fee on the gross gain.",
+      "distractorExplanations": {
+        "a": "$4.00M is only the incentive fee on the gross $20M gain, with no management fee.",
+        "c": "Uses beginning assets for the management fee and a gross incentive fee ($2.00M + $4.00M).",
+        "d": "Calculates the incentive fee on the gross gain instead of net of the management fee ($2.40M + $4.00M)."
+      }
+    },
+    "cfa-level-1-readiness-check-alternatives-002": {
+      "topicId": "alternatives",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A commodity futures curve is in contango. An investor holding a long futures position who rolls expiring contracts into later-dated ones will most likely earn:",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Negative roll yield, from selling cheaper near contracts and buying pricier ones",
+        "b": "Positive roll yield, because later-dated contracts trade at a premium to near ones",
+        "c": "Zero roll yield, because futures prices converge to spot at expiration",
+        "d": "Positive roll yield, because contango signals tight current supply"
+      },
+      "explanation": "In contango, later-dated futures trade above near-dated futures. Rolling a long position means selling the expiring (cheaper) contract and buying a more expensive one, which produces negative roll yield. Backwardation, where near contracts are pricier, produces positive roll yield for long positions.",
+      "distractorExplanations": {
+        "b": "A premium on later contracts is a cost to a long investor who rolls, not a gain.",
+        "c": "Convergence at expiry does not cancel the price gap paid at each roll.",
+        "d": "Tight current supply is associated with backwardation, not contango."
+      }
+    },
+    "cfa-level-1-readiness-check-alternatives-003": {
+      "topicId": "alternatives",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Why do private equity funds typically report negative returns in their early years, producing the J-curve?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Limited partners redeem early, forcing the fund to sell holdings at a loss",
+        "b": "Funds must write all new investments down below cost when they buy them",
+        "c": "The general partner receives its carried interest during the first year",
+        "d": "Fees and deal costs are paid before investments are marked up or realized"
+      },
+      "explanation": "Early in a fund's life, management fees and transaction costs are charged while new investments are still held near cost. Gains appear later as portfolio companies are improved, revalued, and exited, so cumulative returns dip before rising.",
+      "distractorExplanations": {
+        "a": "Private equity funds are closed-end; limited partners generally cannot redeem early.",
+        "b": "New investments are typically held at cost initially, not written below it.",
+        "c": "Carried interest is paid from realized profits, which normally come later in the fund's life."
+      }
+    },
+    "cfa-level-1-readiness-check-alternatives-004": {
+      "topicId": "alternatives",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "Compared with owning commercial property directly, investing in publicly traded equity REITs most likely offers:",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Greater control over property management, leasing, and financing decisions",
+        "b": "Greater liquidity and a lower minimum investment, with less direct control",
+        "c": "Short-term returns that move independently of the broader stock market",
+        "d": "The ability to deduct property operating losses against other personal income"
+      },
+      "explanation": "Publicly traded REITs trade on exchanges, so investors gain liquidity, small minimum investments, and professional management, but give up direct control. Their short-term returns correlate meaningfully with equities, and tax benefits such as deducting property losses are generally features of direct ownership.",
+      "distractorExplanations": {
+        "a": "Control over management and leasing is a benefit of direct ownership, not of REIT shares.",
+        "c": "Listed REIT prices are influenced by the equity market and tend to correlate with stocks in the short run.",
+        "d": "Passing property losses through to personal income is a direct-ownership benefit; REIT shareholders cannot do this."
+      }
+    },
+    "cfa-level-1-readiness-check-alternatives-005": {
+      "topicId": "alternatives",
+      "difficulty": "hard",
+      "formula": "",
+      "prompt": "Why can return series from appraisal-based real estate or private equity indexes understate the true risk of those assets?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Survivorship bias inflates the measured volatility of the index",
+        "b": "Appraisals are updated daily, which adds random noise to returns",
+        "c": "Smoothed appraisals lag the market, lowering measured risk",
+        "d": "Fees are deducted twice, which lowers the index's average return"
+      },
+      "explanation": "Appraisals are infrequent and anchored to prior values, so reported values lag market changes. The smoothed series shows artificially low volatility and low correlation with public markets, which understates risk and overstates diversification benefits.",
+      "distractorExplanations": {
+        "a": "Survivorship bias inflates reported returns; it does not raise measured volatility.",
+        "b": "Appraisals are infrequent (often quarterly or annual), which is why the series looks smooth.",
+        "d": "Fee drag affects returns, not how risk is measured."
+      }
+    },
+    "cfa-level-1-readiness-check-portfolio-001": {
+      "topicId": "portfolio",
+      "difficulty": "medium",
+      "formula": "$$\\sigma_p = \\sqrt{w_1^2\\sigma_1^2 + w_2^2\\sigma_2^2 + 2w_1w_2\\rho\\sigma_1\\sigma_2}$$",
+      "prompt": "A portfolio holds 60% in Asset A (standard deviation 20%) and 40% in Asset B (standard deviation 10%). The correlation between them is 0.30. What is the portfolio's standard deviation?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "8.0%",
+        "b": "12.6%",
+        "c": "13.7%",
+        "d": "16.0%"
+      },
+      "explanation": "Portfolio variance = 0.6²(20%)² + 0.4²(10%)² + 2(0.6)(0.4)(0.30)(20%)(10%) = 144 + 16 + 28.8 = 188.8 (%²). The standard deviation is √188.8 ≈ 13.7%, below the 16% weighted average because the correlation is less than 1.",
+      "distractorExplanations": {
+        "a": "8.0% assumes perfect negative correlation (ρ = −1).",
+        "b": "12.6% drops the covariance term, which is correct only if ρ = 0.",
+        "d": "16.0% is the weighted average, which holds only if ρ = +1."
+      }
+    },
+    "cfa-level-1-readiness-check-portfolio-002": {
+      "topicId": "portfolio",
+      "difficulty": "medium",
+      "formula": "$$E(R_i) = R_f + \\beta_i[E(R_m) - R_f]$$",
+      "prompt": "A stock has a beta of 1.2. The risk-free rate is 3% and the expected market return is 8%. An analyst forecasts a 10% return for the stock. Based on the CAPM, the stock is:",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Undervalued, with an expected alpha of +1.0%",
+        "b": "Overvalued, with an expected alpha of −1.0%",
+        "c": "Fairly valued, because its forecast exceeds the 8% market return",
+        "d": "Undervalued, with an expected alpha of +2.0%"
+      },
+      "explanation": "CAPM required return = 3% + 1.2 × (8% − 3%) = 9%. The 10% forecast exceeds that, so the stock plots above the security market line: it is undervalued, with an expected alpha of +1.0%.",
+      "distractorExplanations": {
+        "b": "Reverses the sign; a forecast above the required return means the stock is undervalued.",
+        "c": "Fair value is judged against the stock's own beta-adjusted required return (9%), not the market return.",
+        "d": "+2.0% compares the forecast with the market's 8% instead of the stock's 9% required return."
+      }
+    },
+    "cfa-level-1-readiness-check-portfolio-003": {
+      "topicId": "portfolio",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "An investor will place her entire investable wealth in just one of two mutual funds. Which performance measure is most appropriate for ranking the funds?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Treynor ratio, because only systematic risk is priced in the market",
+        "b": "Jensen's alpha, because it measures return relative to the CAPM",
+        "c": "Information ratio, because it measures return per unit of total volatility",
+        "d": "Sharpe ratio, because total risk matters for an undiversified holding"
+      },
+      "explanation": "When one fund will be the investor's whole portfolio, its total risk (standard deviation) is what she bears, so the Sharpe ratio, excess return per unit of total risk, is the right measure. Treynor and Jensen's alpha use beta and suit well-diversified portfolios or funds held as part of a larger portfolio.",
+      "distractorExplanations": {
+        "a": "Treynor uses beta, which ignores the diversifiable risk she will actually bear.",
+        "b": "Jensen's alpha also relies on beta, so it suits funds held within a diversified portfolio.",
+        "c": "The information ratio uses active return over tracking error versus a benchmark, not total volatility."
+      }
+    },
+    "cfa-level-1-readiness-check-portfolio-004": {
+      "topicId": "portfolio",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "A 35-year-old physician with high, stable income, substantial savings, and a 30-year horizon tells her adviser she loses sleep whenever her portfolio drops 5%. How should her overall risk tolerance be assessed?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "High ability, low willingness; usually adopt the lower level and educate her",
+        "b": "High ability, high willingness, because her finances define her risk tolerance",
+        "c": "Low ability, low willingness, because her dollar losses could be large",
+        "d": "Low ability, high willingness, because her income depends on her health"
+      },
+      "explanation": "Her income, savings, and horizon give her above-average ability to bear risk, but her reaction to small losses shows below-average willingness. When the two conflict, CFA guidance is generally to adopt the more conservative level while educating the client about whether her willingness could reasonably be raised.",
+      "distractorExplanations": {
+        "b": "Willingness is a separate component; her stated discomfort cannot simply be overridden by her finances.",
+        "c": "Large dollar swings do not reduce ability; her income, savings, and horizon give her high ability.",
+        "d": "Her reaction to losses signals low willingness and her finances signal high ability, the reverse of this pairing."
+      }
+    },
+    "cfa-level-1-readiness-check-portfolio-005": {
+      "topicId": "portfolio",
+      "difficulty": "easy",
+      "formula": "$$\\beta_i = \\rho_{i,m}\\frac{\\sigma_i}{\\sigma_m}$$",
+      "prompt": "A stock's correlation with the market is 0.6, its standard deviation is 30%, and the market's standard deviation is 15%. What is the stock's beta?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "0.30",
+        "b": "0.60",
+        "c": "1.20",
+        "d": "2.00"
+      },
+      "explanation": "Beta = correlation × (σ stock / σ market) = 0.6 × (30% / 15%) = 1.20. Only the part of the stock's risk that moves with the market counts toward beta.",
+      "distractorExplanations": {
+        "a": "Inverts the volatility ratio (15% / 30%).",
+        "b": "0.60 is the correlation, not beta.",
+        "d": "2.00 is the volatility ratio alone, which assumes a correlation of 1."
+      }
+    },
+    "cfa-level-1-readiness-check-portfolio-006": {
+      "topicId": "portfolio",
+      "difficulty": "medium",
+      "formula": "",
+      "prompt": "An investor refuses to sell a stock that is 40% below her purchase price, hoping to 'get back to even', while quickly selling stocks that have gained. Which bias best explains this behavior?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Overconfidence bias, leading to excessive trading in winning stocks",
+        "b": "Confirmation bias, leading her to seek news that supports buying more",
+        "c": "Availability bias, leading her to overweight recent headlines on the stock",
+        "d": "Loss aversion, producing the disposition effect of holding losers"
+      },
+      "explanation": "Loss aversion means losses feel more painful than equal gains feel good. It produces the disposition effect: investors hold losing positions too long to avoid realizing a loss and sell winners too early to lock in gains.",
+      "distractorExplanations": {
+        "a": "Overconfidence leads to excessive trading and under-diversification, not specifically to avoiding realized losses.",
+        "b": "Confirmation bias is about filtering information, but the behavior here is avoiding realizing a loss.",
+        "c": "Availability bias is about easily recalled information, not reluctance to realize losses."
+      }
+    }
+  }
+}

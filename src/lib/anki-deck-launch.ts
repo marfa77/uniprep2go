@@ -1,3 +1,4 @@
+import deckSampleShots from "@/data/deck-sample-shots.json";
 import buildingCatalog from "@/data/gumroad/building-anki-decks.json";
 import waveCatalog from "@/data/gumroad/wave-anki-decks.json";
 import waveSpecs from "@/data/wave-deck-specs.json";
@@ -217,7 +218,7 @@ const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   {
     question: "Le vote est-il obligatoire au Luxembourg ? (Module 1)",
     answer:
-      "Oui, pour tous les électeurs inscrits ; dispense à partir de 75 ans. À retenir : l’abstention non justifiée est punie d’une amende, y compris pour les étrangers inscrits.",
+      "Oui, pour tous les électeurs inscrits ; dispense à partir de 75 ans. À retenir : article 63, « le vote est obligatoire et secret » ; l’abstention non justifiée est punie d’une amende, y compris pour les étrangers inscrits.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-2.webp",
   },
   {
@@ -235,7 +236,7 @@ const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   {
     question: "Is voting compulsory in Luxembourg? (Module 1)",
     answer:
-      "Yes, for all registered voters; exempt from age 75. Key point: unjustified abstention is punished by a fine, including for registered foreigners.",
+      "Yes, for all registered voters; exempt from age 75. Key point: Article 63, “voting is compulsory and secret”; unjustified abstention is punished by a fine, including for registered foreigners.",
     imageUrl: "/samples/luxembourg-vivre-ensemble-anki-deck-sample-2.webp",
   },
   {
@@ -275,7 +276,22 @@ function attachLaunchSampleImages(slug: string, cards: SampleCard[]): SampleCard
   }));
 }
 
+/** Written by `render:sample-shots --write`: text of the shipped cards in public/samples/{slug}-sample-{1,2,3}.webp. */
+function renderedSampleCards(slug: string): SampleCard[] | null {
+  const shots = (deckSampleShots as Record<string, { question: string; answer: string }[]>)[slug];
+  if (!shots || shots.length !== 3) return null;
+  return shots.map((card, index) => ({
+    question: card.question,
+    answer: card.answer,
+    imageUrl: `/samples/${slug}-sample-${index + 1}.webp`,
+  }));
+}
+
 function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
+  const rendered = renderedSampleCards(deck.slug);
+  if (rendered) {
+    return rendered;
+  }
   if (deck.slug === "ace-cpt-anki-deck") {
     return ACE_LAUNCH_SAMPLE_CARDS;
   }

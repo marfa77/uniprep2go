@@ -53,33 +53,3 @@ export function getMockAccessState(mockSlug: string): MockAccessState | null {
 export function isFullReportUnlocked(accessState: MockAccessState | null) {
   return accessState?.fullReportUnlocked === true;
 }
-
-/** @deprecated Prefer verifyGumroadLearnLicense for Learn Pass credits. */
-export type GumroadVerifyInput = {
-  productId: string;
-  licenseKey: string;
-};
-
-/** @deprecated Prefer GumroadLearnVerifyResult. */
-export type GumroadVerifyResult = {
-  valid: boolean;
-  uses: number;
-  purchaseEmail?: string;
-};
-
-/**
- * Legacy seam — timed Exam/report stay free (`free_demand_test`).
- * Learn Pass verification lives in `gumroad-learn-license.ts`.
- */
-export async function verifyGumroadLicense(input: GumroadVerifyInput): Promise<GumroadVerifyResult> {
-  const { verifyGumroadLearnLicense } = await import("@/lib/gumroad-learn-license");
-  const result = await verifyGumroadLearnLicense(input.licenseKey);
-  if (!result.ok) {
-    return { valid: false, uses: 0 };
-  }
-  return {
-    valid: true,
-    uses: result.gumroadUses,
-    purchaseEmail: result.email ?? undefined,
-  };
-}

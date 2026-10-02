@@ -1036,12 +1036,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     linkedDeckSlug: "servsafe-food-handler-anki-deck",
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
+    passPercent: 75,
+    lastUpdated: "2026-10-02",
     topics: fourNicheTopics([
       { id: "contamination", label: "Contamination" },
       { id: "hygiene", label: "Personal hygiene" },
       { id: "time-temp", label: "Time & temperature" },
       { id: "cleaning", label: "Cleaning & allergens" }
-    ]),
+    ], 75),
     officialSourceNote: "Mapped to National Restaurant Association themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ServSafe Food Handler readiness check with topic scoring.",
     examBody: "National Restaurant Association",
@@ -1186,7 +1188,9 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     description:
       "A free 60-question / 75-minute veterinary assistant readiness check with topic scoring across restraint, nursing assist, hospital procedures, and safety/zoonosis — for AVA-style prep. Official AVA is typically 100Q / 150 min / 75%; not VTNE.",
     examBody: "NAVTA / employer VA competencies",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "60 original clinic-scenario questions, 15 per area (restraint, nursing assist, hospital procedures, safety and zoonosis), with a specific note on every wrong option. Reviewed against low-stress handling (AAFP/ISFM, Fear Free), standard VA nursing and lab practice, and OSHA hazard-communication and zoonosis precautions.",
+    lastUpdated: "2026-10-02",
     searchAliases: ["veterinary assistant", "AVA"],
   }),
 ];

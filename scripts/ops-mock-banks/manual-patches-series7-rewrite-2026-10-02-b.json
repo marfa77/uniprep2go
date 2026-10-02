@@ -1,0 +1,340 @@
+{
+  "series-7-readiness-check": {
+    "series-7-readiness-check-s7-f3-001": {
+      "prompt": "ABC Corp. announces a rights offering in which 4 rights plus $34 buy one new share. The stock still trades cum rights at $40. A customer holding 400 shares asks what each right is theoretically worth today. What is the theoretical value of one right?",
+      "options": {
+        "a": "$1.20",
+        "b": "$1.50",
+        "c": "$6.00",
+        "d": "$10.00"
+      },
+      "correctOptionId": "a",
+      "explanation": "While the stock trades cum rights, its price still includes the right, so value = (market price - subscription price) ÷ (rights per new share + 1) = (40 - 34) ÷ (4 + 1) = 6 ÷ 5 = $1.20. After the ex-rights date the +1 drops out: (ex-rights price - subscription price) ÷ rights per share.",
+      "distractorExplanations": {
+        "b": "Uses the ex-rights formula, (40 - 34) ÷ 4, on a cum-rights price; while the stock trades with the right attached, divide by N + 1.",
+        "c": "That is the full $6 discount on one new share, but it takes 4 rights to buy that share, so the discount is spread across the rights.",
+        "d": "Divides the market price by the rights ratio (40 ÷ 4); a right is worth only the discount below market, not a slice of the share price."
+      }
+    },
+    "series-7-readiness-check-s7-f3-002": {
+      "prompt": "The same city has two new issues outstanding. One financed a parking garage and is payable solely from parking fees; the other financed an elementary school and is secured by the city's unlimited ad valorem taxing power. A customer asks how the two differ. Which comparison is accurate?",
+      "options": {
+        "a": "The school bond is a GO bond backed by taxes; the garage bond is a revenue bond paid from fees",
+        "b": "The garage bond is a GO bond backed by fees; the school bond is a revenue bond paid from taxes",
+        "c": "Both are GO bonds because the same city issued them and its taxing power backs each one",
+        "d": "The school bond needs a feasibility study to issue; the garage bond needs voter approval to issue"
+      },
+      "correctOptionId": "a",
+      "explanation": "A general obligation bond is backed by the issuer's full faith and credit, meaning its power to levy ad valorem (property) taxes, and usually needs voter approval. A revenue bond is paid only from the financed facility's revenues, such as parking fees, and is judged on a feasibility study and debt service coverage rather than voter approval.",
+      "distractorExplanations": {
+        "b": "Swaps the labels; a bond paid solely from user fees is a revenue bond, and a bond secured by unlimited taxing power is a GO bond.",
+        "c": "The bond type depends on the pledged source of payment, not the issuer; one city can sell both GO bonds and revenue bonds.",
+        "d": "Reverses the process: GO bonds usually need voter approval, while revenue bonds rely on a feasibility study of the facility's revenues."
+      }
+    },
+    "series-7-readiness-check-s7-f3-003": {
+      "prompt": "With XYZ at $50, a customer buys 1 XYZ Mar 50 call at 3 and 1 XYZ Mar 50 put at 2. At expiration, at which XYZ prices does the position break even?",
+      "options": {
+        "a": "$40 and $60",
+        "b": "$45 and $55",
+        "c": "$47.50 and $52.50",
+        "d": "$48 and $53"
+      },
+      "correctOptionId": "b",
+      "explanation": "A long straddle has two breakevens because either leg can pay off, but only one leg finishes in the money, so that leg must recover the total premium. Total premium = 3 + 2 = 5. Upside: 50 + 5 = 55. Downside: 50 - 5 = 45. Max loss is $500 if XYZ closes exactly at 50.",
+      "distractorExplanations": {
+        "a": "Doubles the combined premium; each breakeven is the strike plus or minus the total premium of 5 points, not 10.",
+        "c": "Splits the 5-point premium between the two sides; whichever leg finishes in the money must recover the full 5 points by itself.",
+        "d": "Uses each leg's own premium (50 + 3 and 50 - 2); only one leg can be in the money, so it must recover both premiums."
+      }
+    },
+    "series-7-readiness-check-s7-f3-004": {
+      "prompt": "A customer buys a 6% corporate bond at 108. It matures in 15 years and is callable at par in 5 years. Ranked from highest to lowest, how do its yields compare?",
+      "options": {
+        "a": "Yield to call, yield to maturity, current yield, nominal yield",
+        "b": "Nominal and current yield tie at 6%, then yield to maturity, then yield to call",
+        "c": "Nominal yield, current yield, yield to call, yield to maturity",
+        "d": "Nominal yield, current yield, yield to maturity, yield to call"
+      },
+      "correctOptionId": "d",
+      "explanation": "Buying above par means the 8-point premium is lost by redemption. Current yield = $60 ÷ $1,080 = 5.56%, below the 6% nominal. YTM spreads the premium loss over 15 years; YTC squeezes it into 5 years, so YTC is lowest. For a premium callable bond the rep must quote the lower yield to worst, here the yield to call.",
+      "distractorExplanations": {
+        "a": "That is the discount-bond order; when a bond is bought below par each yield beyond nominal rises, but this bond was bought above par.",
+        "b": "Current yield uses the market price: $60 ÷ $1,080 = 5.56%, so it falls below the 6% nominal yield whenever the price is above par.",
+        "c": "Swaps YTM and YTC; the premium is amortized over 5 years to the call versus 15 years to maturity, so YTC is the lower of the two."
+      }
+    },
+    "series-7-readiness-check-s7-f3-005": {
+      "prompt": "A customer must pay a fixed $50,000 obligation in exactly 10 years. She wants to lock in her return today with no reinvestment risk and will hold the position in her traditional IRA. Which Treasury security best fits?",
+      "options": {
+        "a": "Treasury Inflation-Protected Securities maturing in 10 years",
+        "b": "Treasury STRIPS maturing in 10 years",
+        "c": "10-year Treasury notes paying semiannual interest",
+        "d": "26-week Treasury bills rolled over at each maturity"
+      },
+      "correctOptionId": "b",
+      "explanation": "STRIPS are zero-coupon Treasury principal or interest components bought at a discount and paid at face value at maturity. With no coupons to reinvest, the yield is locked in at purchase. Holding them in an IRA also avoids the annual phantom-income tax on accreted discount that a taxable account would owe.",
+      "distractorExplanations": {
+        "a": "TIPS adjust principal for CPI and pay semiannual interest, so coupons must be reinvested and the final dollar amount is not known in advance.",
+        "c": "Semiannual coupons must be reinvested at future rates, which is exactly the reinvestment risk the customer wants to avoid.",
+        "d": "Rolling bills exposes every rollover to whatever rates prevail at that time; it maximizes reinvestment risk rather than removing it."
+      }
+    },
+    "series-7-readiness-check-s7-f3-006": {
+      "prompt": "With DEF at $42, a customer writes 1 uncovered DEF Jun 40 put at 3. What are her maximum potential gain and maximum potential loss on the position?",
+      "options": {
+        "a": "Max gain $300; max loss $3,700",
+        "b": "Max gain $300; max loss $4,000",
+        "c": "Max gain $3,700; max loss $300",
+        "d": "Max gain $300; max loss unlimited"
+      },
+      "correctOptionId": "a",
+      "explanation": "A put writer keeps the $300 premium if DEF stays at or above 40. The worst case is DEF going to zero: she must buy worthless stock at $40, losing $4,000, offset by the $300 premium. Max loss = (40 - 3) × 100 = $3,700, and breakeven is 37.",
+      "distractorExplanations": {
+        "b": "Ignores the $300 premium received; the premium reduces the loss if DEF falls to zero, so the loss is $4,000 - $300 = $3,700.",
+        "c": "Reverses the roles; $300 is the most the writer can gain, and $3,700 is the writer's worst-case loss, not a potential gain.",
+        "d": "Unlimited loss belongs to an uncovered call writer; a stock cannot fall below zero, so a short put's loss is capped at strike minus premium."
+      }
+    },
+    "series-7-readiness-check-s7-f3-007": {
+      "prompt": "A customer buys 100 shares of GHI at $52 and at the same time writes 1 GHI Sep 55 call at 2. At expiration GHI trades at $61 and the call is exercised against her. What is her overall result?",
+      "options": {
+        "a": "$200 gain",
+        "b": "$300 gain",
+        "c": "$500 gain",
+        "d": "$1,100 gain"
+      },
+      "correctOptionId": "c",
+      "explanation": "Once the call is exercised, the stock is sold at the $55 strike regardless of the $61 market price. Stock gain = 55 - 52 = 3 points, plus the 2-point premium = 5 points × 100 = $500. That is also the covered call's maximum gain: strike - cost + premium.",
+      "distractorExplanations": {
+        "a": "Counts only the premium; when the call is exercised she also earns the 3-point gain from her $52 cost up to the $55 strike.",
+        "b": "Counts the stock gain up to the strike but leaves out the $200 premium collected when the call was written.",
+        "d": "Uses the $61 market price; the short call caps her sale price at $55, so gains above the strike belong to the call buyer."
+      }
+    },
+    "series-7-readiness-check-s7-f3-008": {
+      "prompt": "Mortgage rates fall sharply and refinancings surge in a CMO's collateral pool. A customer's tranche, sold with an expected average life of 9 years, now projects an average life of 3 years. Which tranche did she most likely buy?",
+      "options": {
+        "a": "A planned amortization class (PAC) tranche",
+        "b": "A targeted amortization class (TAC) tranche",
+        "c": "An accrual (Z) tranche paid after the earlier classes retire",
+        "d": "A companion (support) tranche"
+      },
+      "correctOptionId": "d",
+      "explanation": "Companion tranches exist to absorb prepayment variability so PAC holders get a predictable schedule. When refinancings surge, excess principal is paid to the companion first, so its average life shortens sharply and the holder reinvests at lower rates. Companions carry the most prepayment and extension risk, which is why they offer the highest yields.",
+      "distractorExplanations": {
+        "a": "PACs carry the most protection; principal follows a set schedule within a prepayment band, and the excess is shifted to companion classes.",
+        "b": "TACs are protected against faster prepayments, with the excess shifted to companions; a sharp shortening points to the support class.",
+        "c": "The Z-tranche accrues interest and receives principal only after earlier classes retire, so faster prepayments reach it last, not first."
+      }
+    },
+    "series-7-readiness-check-s7-f3-009": {
+      "prompt": "A customer buys 1 JKL Oct 45 call at 5 and sells 1 JKL Oct 50 call at 2 in the same account. What are the position's maximum gain, maximum loss, and breakeven at expiration?",
+      "options": {
+        "a": "Max gain $200; max loss $300; breakeven $47",
+        "b": "Max gain $200; max loss $300; breakeven $48",
+        "c": "Max gain $300; max loss $200; breakeven $48",
+        "d": "Max gain unlimited; max loss $300; breakeven $48"
+      },
+      "correctOptionId": "b",
+      "explanation": "This is a debit call (bull) spread. Net debit = 5 - 2 = 3, which is the max loss ($300) if JKL ends at or below 45. Max gain = strike difference - debit = (50 - 45) - 3 = 2, or $200, at or above 50. Breakeven = lower strike + net debit = 45 + 3 = 48.",
+      "distractorExplanations": {
+        "a": "Subtracts the debit from the higher strike; call-spread breakeven is the lower strike plus the net premium, 45 + 3 = 48.",
+        "c": "Reverses gain and loss; the $300 net debit is what she can lose, and the 2 points left of the 5-point spread are what she can gain.",
+        "d": "Ignores the short 50 call, which caps the upside; above 50 any further gain on the long call is offset by the short call."
+      }
+    },
+    "series-7-readiness-check-s7-f3-010": {
+      "prompt": "A customer in the 32% federal tax bracket is offered an in-state municipal GO bond yielding 4.08%. Considering federal tax only, what yield would a fully taxable corporate bond need to match it?",
+      "options": {
+        "a": "2.77%",
+        "b": "5.39%",
+        "c": "6.00%",
+        "d": "12.75%"
+      },
+      "correctOptionId": "c",
+      "explanation": "Tax-equivalent yield = municipal yield ÷ (1 - tax bracket) = 4.08% ÷ (1 - 0.32) = 4.08% ÷ 0.68 = 6.00%. A taxable bond must yield 6.00% for the customer to keep the same 4.08% after federal income tax.",
+      "distractorExplanations": {
+        "a": "Multiplies by (1 - 0.32); that converts a taxable yield into its after-tax yield, which runs the formula backwards for a muni.",
+        "b": "Multiplies the muni yield by 1.32; grossing up requires dividing by 0.68, which gives a larger number than adding 32%.",
+        "d": "Divides by the tax rate (0.32) instead of by one minus the tax rate (0.68)."
+      }
+    },
+    "series-7-readiness-check-s7-f3-011": {
+      "prompt": "A customer buys a 4% corporate bond maturing in 10 years at a price of 80. She wants to know the income return on her purchase price right now. What is the bond's current yield?",
+      "options": {
+        "a": "3.2%",
+        "b": "4%",
+        "c": "5%",
+        "d": "6.67%"
+      },
+      "correctOptionId": "c",
+      "explanation": "Current yield = annual interest ÷ market price. The coupon is fixed on par: 4% × $1,000 = $40. A price of 80 means $800. $40 ÷ $800 = 5%. Because the bond trades at a discount, current yield sits above the 4% nominal yield and below the yield to maturity.",
+      "distractorExplanations": {
+        "a": "Multiplies the coupon rate by the price (4% × 0.80); the $40 coupon is fixed on par and must be divided by the $800 price.",
+        "b": "That is the nominal (coupon) yield, which is based on par; current yield uses the $800 market price.",
+        "d": "That is the approximate yield to maturity, ($40 + $20 yearly discount accretion) ÷ $900 average price; current yield ignores accretion."
+      }
+    },
+    "series-7-readiness-check-s7-f3-012": {
+      "prompt": "A municipal finance professional at a dealer contributes $500 to the reelection campaign of the state treasurer, whom he is entitled to vote for. The treasurer's office selects underwriters for the state's negotiated GO bond deals. Under MSRB Rule G-37, what is the consequence for the dealer?",
+      "options": {
+        "a": "No effect, since contributions up to $1,000 per election are exempt for voters",
+        "b": "The dealer keeps the business but must disclose the gift in the official statement",
+        "c": "The MFP alone is barred from working on the issuer's deals for one year",
+        "d": "The dealer is barred from negotiated business with that issuer for two years"
+      },
+      "correctOptionId": "d",
+      "explanation": "G-37 imposes a two-year ban on negotiated municipal securities business with an issuer after the dealer or one of its MFPs contributes to an official who can influence underwriter selection. The de minimis exemption is $250 per election, and only for an official the MFP can vote for; $500 exceeds it. Competitive-bid underwritings are outside the ban.",
+      "distractorExplanations": {
+        "a": "The G-37 de minimis exemption is $250 per election, and it applies to candidates the MFP can vote for; $500 exceeds it.",
+        "b": "Contributions are reported to the MSRB on Form G-37, but reporting does not cure the ban, and the official statement is not the remedy.",
+        "c": "The ban falls on the dealer firm, not just the individual, and it runs two years from the contribution, not one."
+      }
+    },
+    "series-7-readiness-check-s7-f3-013": {
+      "prompt": "A municipal underwriting syndicate is allocating bonds on an oversubscribed new issue using the customary priority stated under MSRB Rule G-11. It holds a member takedown order, a group net order, a designated order, and a pre-sale order. In what sequence are they filled?",
+      "options": {
+        "a": "Group net, pre-sale, designated, member",
+        "b": "Pre-sale, group net, designated, member",
+        "c": "Pre-sale, designated, group net, member",
+        "d": "Member, designated, group net, pre-sale"
+      },
+      "correctOptionId": "b",
+      "explanation": "G-11 requires the syndicate to publish its priority provisions, and the customary sequence is pre-sale, group net, designated, then member (takedown) orders. Pre-sale and group net orders credit the whole syndicate, designated orders credit named members, and a member order benefits only the dealer placing it, so it is filled last.",
+      "distractorExplanations": {
+        "a": "Group net orders rank high, but pre-sale orders, taken before the bonds are priced, come first because they commit buyers in advance.",
+        "c": "Swaps group net and designated; group net orders credit every member pro rata, so they fill before designated orders that credit named members.",
+        "d": "Reverses the sequence; a member takedown order benefits only that dealer, so it is filled last, not first."
+      }
+    },
+    "series-7-readiness-check-s7-f3-014": {
+      "prompt": "A customer buys $10,000 face of a 6% corporate bond that pays interest January 1 and July 1. The trade is executed on March 10 and settles regular way. How much accrued interest does the buyer pay the seller?",
+      "options": {
+        "a": "$114.36",
+        "b": "$115.00",
+        "c": "$116.67",
+        "d": "$118.33"
+      },
+      "correctOptionId": "c",
+      "explanation": "Corporate bonds accrue on a 30/360 basis from the last coupon date up to, but not including, settlement. Regular way is T+1, so settlement is March 11 and accrual runs through March 10: January 30 + February 30 + March 10 = 70 days. Annual interest $600 × 70/360 = $116.67, paid by the buyer to the seller.",
+      "distractorExplanations": {
+        "a": "Uses the Treasury actual/actual method (69 actual days ÷ 181 days in the coupon period × $300); corporate bonds accrue on 30/360.",
+        "b": "Stops accrual the day before the trade date (69 days); interest accrues up to the day before settlement, which is March 10.",
+        "d": "Counts the settlement day itself (71 days); the buyer earns interest from the settlement date, so accrual ends the day before."
+      }
+    },
+    "series-7-readiness-check-s7-f3-015": {
+      "prompt": "With MNO at $62, a customer buys 1 MNO Jul 60 put at 4. Shortly before expiration MNO trades at $53 and the put trades at its intrinsic value. If she sells the put to close, what is her result?",
+      "options": {
+        "a": "$300 gain",
+        "b": "$500 gain",
+        "c": "$700 gain",
+        "d": "$1,100 gain"
+      },
+      "correctOptionId": "a",
+      "explanation": "An in-the-money put's intrinsic value is strike minus market price: 60 - 53 = 7. Selling for 7 after paying 4 nets 3 points × 100 = $300. Equivalently, breakeven is strike - premium = 56, and MNO at 53 is 3 points below it.",
+      "distractorExplanations": {
+        "b": "Measures from the $62 stock price at purchase; a put's value comes from the 60 strike, not where the stock traded when the put was bought.",
+        "c": "Counts the 7 points of intrinsic value but forgets to subtract the 4-point premium paid to open the position.",
+        "d": "Adds the premium instead of subtracting it; the premium is a cost to the put buyer and reduces her gain."
+      }
+    },
+    "series-7-readiness-check-s7-f3-016": {
+      "prompt": "A city issues bonds to build a sewer system. Debt service will be paid first from sewer user fees, and if those fall short, the city pledges its full faith and credit and general taxing power to cover the gap. How are these bonds classified?",
+      "options": {
+        "a": "Double-barreled bonds backed by fees plus taxing power",
+        "b": "Moral obligation bonds backed by a nonbinding legislative pledge",
+        "c": "Special tax bonds backed by a dedicated excise tax",
+        "d": "Industrial development revenue bonds backed by a lease"
+      },
+      "correctOptionId": "a",
+      "explanation": "A double-barreled bond is a revenue bond with a second pledge: if the facility's revenues (here sewer fees) fall short, the issuer's full faith and credit and taxing power cover debt service. Because of that legal taxing-power backstop, rating agencies generally analyze it like a GO bond.",
+      "distractorExplanations": {
+        "b": "A moral obligation bond's backup is a state legislature's nonbinding promise to consider appropriating funds, not a legal pledge of taxing power.",
+        "c": "Special tax bonds are paid from one specific tax, such as a gasoline or hotel tax, not from user fees backed by general taxing power.",
+        "d": "IDRs are paid from lease payments by a private corporation; the municipality's taxing power does not back them."
+      }
+    },
+    "series-7-readiness-check-s7-f3-017": {
+      "prompt": "A customer sold short 100 shares of PQR at $70. She wants to cap her loss if PQR rallies while keeping her profit if it falls, and she pays a premium of 3 for the hedge. Which hedge fits, and what are her breakeven and maximum loss?",
+      "options": {
+        "a": "Long 70 put; breakeven $67; max loss $300",
+        "b": "Long 70 call; breakeven $73; max loss $300",
+        "c": "Long 70 call; breakeven $67; max loss unlimited",
+        "d": "Long 70 call; breakeven $67; max loss $300"
+      },
+      "correctOptionId": "d",
+      "explanation": "A short seller loses when the stock rises, so the hedge is a long call that lets her buy back shares at 70 however high PQR goes. Max loss = (strike - short sale price + premium) × 100 = (70 - 70 + 3) × 100 = $300. Breakeven = short sale price - premium = 70 - 3 = 67.",
+      "distractorExplanations": {
+        "a": "A long put profits when the stock falls, which adds to her bearish exposure; it does nothing to cap losses from a rising stock.",
+        "b": "Adds the premium; a short seller profits on declines, so the 3-point cost is recovered by a drop to 67, not a rise to 73.",
+        "c": "The long call caps the loss: above 70 she can exercise to buy shares at 70 and cover, so the most she can lose is $300."
+      }
+    },
+    "series-7-readiness-check-s7-f3-018": {
+      "prompt": "A customer owns a $100 par convertible preferred stock with a conversion price of $25. The company's common stock trades at $28. At what price is the preferred at parity with the common?",
+      "options": {
+        "a": "$89.29",
+        "b": "$103",
+        "c": "$112",
+        "d": "$700"
+      },
+      "correctOptionId": "c",
+      "explanation": "Conversion ratio = par ÷ conversion price = $100 ÷ $25 = 4 common shares. Parity is the preferred price equal to the value of the shares it converts into: 4 × $28 = $112. If the preferred traded below $112, buying it, converting, and selling the common would lock in a gain.",
+      "distractorExplanations": {
+        "a": "Divides the conversion price by the market price (25 ÷ 28 × 100); parity rises above par when the common trades above the conversion price.",
+        "b": "Adds the 3-point rise in the common to par; each preferred converts into 4 shares, so a 3-point rise adds 12 points.",
+        "d": "Multiplies the conversion price by the market price; the right multiplier is the 4-share conversion ratio, not the $25 conversion price."
+      }
+    },
+    "series-7-readiness-check-s7-f3-019": {
+      "prompt": "A customer bought 1 XYZ Index Dec 4,100 call at 25; the index option multiplier is $100. The index closes at 4,160 on expiration day and the call is exercised. What does she receive on exercise?",
+      "options": {
+        "a": "$3,500 in cash",
+        "b": "$6,000 in cash",
+        "c": "$8,500 in cash",
+        "d": "A basket of the index stocks worth $416,000"
+      },
+      "correctOptionId": "b",
+      "explanation": "Index options are cash-settled: the assigned writer pays the holder the intrinsic value times the multiplier. Intrinsic value = 4,160 - 4,100 = 60 points, so she receives 60 × $100 = $6,000 in cash. Her net profit is $6,000 - $2,500 premium = $3,500, but the exercise payment itself is the full intrinsic value.",
+      "distractorExplanations": {
+        "a": "That is her net profit after the $2,500 premium; the cash paid on exercise is the full intrinsic value, since the premium was paid at purchase.",
+        "c": "Adds the premium to the intrinsic value; the premium is the buyer's cost and is not refunded on exercise.",
+        "d": "Index options do not deliver the underlying stocks; settlement is in cash equal to intrinsic value times the multiplier."
+      }
+    },
+    "series-7-readiness-check-s7-f3-020": {
+      "prompt": "A customer buys 100 shares of STU at $45 and at the same time buys 1 STU Jan 40 put at 2 for protection. What are her breakeven and maximum loss at expiration?",
+      "options": {
+        "a": "Breakeven $43; max loss $700",
+        "b": "Breakeven $47; max loss $500",
+        "c": "Breakeven $38; max loss $4,700",
+        "d": "Breakeven $47; max loss $700"
+      },
+      "correctOptionId": "d",
+      "explanation": "Long stock plus a long put: the premium adds to her cost, so breakeven = stock price + premium = 45 + 2 = 47. The put sets a floor at 40, so max loss = (45 - 40) + 2 = 7 points × 100 = $700, however far STU falls. Upside above 47 is unlimited.",
+      "distractorExplanations": {
+        "a": "Subtracts the premium; for long stock the put premium is an added cost, so the stock must rise to 47 to break even.",
+        "b": "Counts the 5-point drop to the 40 floor but leaves out the 2-point premium paid for the protection.",
+        "c": "Uses the standalone put breakeven (40 - 2) and ignores the floor; the put lets her sell at 40, so the loss cannot reach $4,700."
+      }
+    },
+    "series-7-readiness-check-s7-f3-021": {
+      "prompt": "A customer owns 300 shares of VWX trading at $90. The company pays a 20% stock dividend. Ignoring any market movement, what does her position look like after the dividend?",
+      "options": {
+        "a": "300 shares at $72",
+        "b": "360 shares at $75",
+        "c": "360 shares at $90",
+        "d": "600 shares at $45"
+      },
+      "correctOptionId": "b",
+      "explanation": "A 20% stock dividend adds 1 share for every 5 held: 300 × 1.20 = 360 shares. The price adjusts so total value is unchanged: $27,000 ÷ 360 = $75 (or $90 ÷ 1.20). Like a split, a stock dividend changes the share count, price, and per-share cost basis, but not her wealth or proportional ownership, and it is not taxable when received.",
+      "distractorExplanations": {
+        "a": "Cuts the price by 20% without adding shares, which would shrink her position to $21,600; a stock dividend pays in new shares, not a price markdown.",
+        "c": "Adds the new shares but leaves the price at $90, raising her position to $32,400; the price falls so total value stays $27,000.",
+        "d": "Treats it as a 2-for-1 split; a 20% stock dividend adds one share for every five held, not one for every one."
+      }
+    }
+  }
+}

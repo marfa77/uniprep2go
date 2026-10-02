@@ -1,0 +1,412 @@
+{
+  "servsafe-manager-mock": {
+    "servsafe-manager-mock-067": {
+      "difficulty": "medium",
+      "prompt": "A manager is writing a HACCP plan for a new menu. Which principle comes first?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Identify critical control points",
+        "b": "Establish critical limits",
+        "c": "Conduct a hazard analysis",
+        "d": "Establish monitoring procedures"
+      },
+      "explanation": "The seven HACCP principles are: 1) conduct a hazard analysis, 2) determine critical control points, 3) establish critical limits, 4) establish monitoring procedures, 5) identify corrective actions, 6) verify that the system works, and 7) establish record keeping and documentation.",
+      "distractorExplanations": {
+        "a": "Critical control points (principle 2) can be chosen only after the hazards are identified.",
+        "b": "Critical limits (principle 3) are set for each CCP, which requires a hazard analysis first.",
+        "d": "Monitoring (principle 4) checks critical limits that have not been set yet."
+      }
+    },
+    "servsafe-manager-mock-068": {
+      "difficulty": "medium",
+      "prompt": "In a HACCP plan for roast chicken, which step is most likely a critical control point?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Writing the menu description",
+        "b": "Choosing the serving platter",
+        "c": "Ordering the spices for the dry rub",
+        "d": "Cooking the chicken to 165°F"
+      },
+      "explanation": "A critical control point is a step where a hazard can be prevented, eliminated or reduced to safe levels. For raw chicken, cooking to 165°F is the step that eliminates Salmonella; cooling and hot holding may also be CCPs.",
+      "distractorExplanations": {
+        "a": "Menu wording does not control a food-safety hazard.",
+        "b": "The platter choice does not prevent, eliminate or reduce a hazard.",
+        "c": "Ordering spices does not control the pathogen hazard in raw chicken."
+      }
+    },
+    "servsafe-manager-mock-069": {
+      "difficulty": "easy",
+      "prompt": "Which is an example of a critical limit in a HACCP plan?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Cook burgers until the juices look clear and done",
+        "b": "Cook burgers to 155°F for 17 seconds",
+        "c": "Check burger temperatures often",
+        "d": "Buy burgers from a good supplier"
+      },
+      "explanation": "A critical limit is a measurable minimum or maximum value that a CCP must meet to control a hazard, such as a time and temperature. Vague standards like 'until done' or 'often' cannot be monitored or verified.",
+      "distractorExplanations": {
+        "a": "Appearance is not measurable and does not show that pathogens were destroyed.",
+        "c": "This describes monitoring, and 'often' is not a measurable value.",
+        "d": "Approved suppliers are a prerequisite program, not a critical limit at a CCP."
+      }
+    },
+    "servsafe-manager-mock-070": {
+      "difficulty": "medium",
+      "prompt": "During monitoring, a cook finds that a batch of chicken has reached only 150°F. Under the HACCP plan, what happens next?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Keep cooking it to 165°F and record the action",
+        "b": "Serve it, since it is close to the limit",
+        "c": "Write 165°F in the log so it looks complete",
+        "d": "Cool it quickly and serve it cold as chicken salad"
+      },
+      "explanation": "When a critical limit is not met, staff take the predetermined corrective action (here, continue cooking to 165°F) and record both the deviation and the action. Falsifying a log or serving undercooked food defeats the HACCP system.",
+      "distractorExplanations": {
+        "b": "A critical limit is a minimum; 150°F does not meet the 165°F requirement for poultry.",
+        "c": "Falsifying records hides the problem and breaks the record-keeping principle.",
+        "d": "Cooling undercooked chicken does not eliminate the pathogens that cooking should have killed."
+      }
+    },
+    "servsafe-manager-mock-071": {
+      "difficulty": "medium",
+      "prompt": "A manager reviews temperature logs and checks that thermometers are calibrated to confirm the HACCP plan is working. Which principle is this?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Monitoring",
+        "b": "Hazard analysis",
+        "c": "Record keeping",
+        "d": "Verification"
+      },
+      "explanation": "Verification (principle 6) confirms that the HACCP plan works as intended: reviewing monitoring and corrective-action records, calibrating thermometers, and checking that critical limits really control the hazard. Monitoring is the routine check at the CCP itself.",
+      "distractorExplanations": {
+        "a": "Monitoring is the routine measurement at a CCP, such as taking a cooking temperature.",
+        "b": "Hazard analysis is the first step, identifying hazards, not checking that the plan works.",
+        "c": "Record keeping creates the logs; reviewing them to confirm the system works is verification."
+      }
+    },
+    "servsafe-manager-mock-072": {
+      "difficulty": "hard",
+      "prompt": "Which activity requires a variance from the regulatory authority?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Grilling burgers to order",
+        "b": "Baking bread from scratch",
+        "c": "Smoking food to preserve it",
+        "d": "Steaming vegetables for service"
+      },
+      "explanation": "A variance is required for specialized processes such as smoking food as a preservation method, curing, adding additives to make food non-TCS, reduced-oxygen packaging, sprouting seeds or beans, custom-processing animals, and displaying live shellfish in a tank. A HACCP plan is often required too.",
+      "distractorExplanations": {
+        "a": "Cooking burgers to order is a routine process covered by standard cooking temperatures.",
+        "b": "Baking bread is a routine process that does not need a variance.",
+        "d": "Steaming vegetables is routine cooking, not a specialized preservation process."
+      }
+    },
+    "servsafe-manager-mock-073": {
+      "difficulty": "medium",
+      "prompt": "A menu offers burgers cooked to order and raw oysters. What must the consumer advisory include?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "A list of every ingredient and the supplier for each",
+        "b": "A disclosure of raw items and a risk reminder",
+        "c": "The cook's food handler certificate number",
+        "d": "The calorie count and allergen icons"
+      },
+      "explanation": "When raw or undercooked TCS food (such as eggs, meat, seafood or shellfish) is offered, the menu must disclose which items are raw or undercooked, for example with an asterisk, and include a reminder that eating them increases the risk of foodborne illness.",
+      "distractorExplanations": {
+        "a": "Supplier lists are not part of the consumer advisory.",
+        "c": "Staff certificate numbers are not required on menus.",
+        "d": "Calorie and allergen labeling are separate rules; the advisory covers raw or undercooked food."
+      }
+    },
+    "servsafe-manager-mock-074": {
+      "difficulty": "medium",
+      "prompt": "A nursing home kitchen is planning its menu. Which item should NOT be served to its residents?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "An omelet made with pasteurized eggs",
+        "b": "Chicken soup cooked to 165°F",
+        "c": "Commercially canned peaches in light syrup",
+        "d": "A salad topped with raw seed sprouts"
+      },
+      "explanation": "Operations that mainly serve high-risk populations (preschool children, older adults, immunocompromised people) may not serve raw seed sprouts, raw or undercooked eggs, meat or seafood, or unpasteurized milk or juice. Pasteurized eggs are used in recipes that call for raw or lightly cooked eggs.",
+      "distractorExplanations": {
+        "a": "Pasteurized eggs are the safe choice for high-risk populations.",
+        "b": "Chicken cooked to 165°F is safe for high-risk residents.",
+        "c": "Commercially canned fruit is shelf-stable and safe for high-risk residents."
+      }
+    },
+    "servsafe-manager-mock-075": {
+      "difficulty": "medium",
+      "prompt": "A guest returns an unopened, individually wrapped cracker sleeve and a basket of bread. What may be served to another guest?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Only the unopened cracker sleeve",
+        "b": "Only the bread basket",
+        "c": "Both items, if they look untouched by the guest",
+        "d": "Neither of the two items"
+      },
+      "explanation": "Food returned by one guest may not be served to another, except unopened, prepackaged items in good condition, such as condiment packets or wrapped crackers. Uncovered or opened food, such as bread from a basket, must be thrown out.",
+      "distractorExplanations": {
+        "b": "Bread from a basket has been exposed at the table and cannot be re-served.",
+        "c": "Exposed food can be contaminated even if it looks untouched.",
+        "d": "Unopened, prepackaged items in good condition may be re-served."
+      }
+    },
+    "servsafe-manager-mock-076": {
+      "difficulty": "medium",
+      "prompt": "A sewage backup floods the kitchen floor during lunch. What must the manager do?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Mop it up, sanitize the floor and keep serving lunch",
+        "b": "Keep serving cold food only",
+        "c": "Stop service and notify the regulatory authority",
+        "d": "Put down towels and finish the lunch rush"
+      },
+      "explanation": "Sewage backups, water interruptions, long power outages, fires and floods are imminent health hazards. Service must stop in affected areas, the regulatory authority must be notified, and the area cleaned and sanitized before reopening. Food and items touched by sewage are thrown out.",
+      "distractorExplanations": {
+        "a": "Mopping and sanitizing the floor does not make a sewage-contaminated kitchen safe; service must stop and the regulatory authority be notified.",
+        "b": "Cold food is just as exposed to sewage contamination.",
+        "d": "Towels do not contain sewage, and continuing service puts guests at risk."
+      }
+    },
+    "servsafe-manager-mock-077": {
+      "difficulty": "medium",
+      "prompt": "Which FDA tool helps managers protect food from intentional contamination?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "HACCP",
+        "b": "ALERT",
+        "c": "FIFO",
+        "d": "IPM"
+      },
+      "explanation": "Food defense protects food from intentional contamination. The FDA's ALERT tool reminds managers to Assure supplies come from safe sources, Look after the security of food, know their Employees and visitors, keep Reports, and know what to do about a Threat.",
+      "distractorExplanations": {
+        "a": "HACCP controls food-safety hazards in processes, not deliberate tampering.",
+        "c": "FIFO (first in, first out) is a stock-rotation method.",
+        "d": "IPM (integrated pest management) controls pests, not intentional contamination."
+      }
+    },
+    "servsafe-manager-mock-078": {
+      "difficulty": "easy",
+      "prompt": "A man who says he is from the refrigeration company asks to go into the walk-in alone. What should staff do?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Let him in; repair staff need access",
+        "b": "Give him the key so he can work alone",
+        "c": "Ask him to come back after closing and work alone",
+        "d": "Verify his ID and escort him in food areas"
+      },
+      "explanation": "Food defense includes access control: verify the identity of visitors, contractors and inspectors, keep a sign-in record, restrict access to prep and storage areas, and escort non-employees. Employees should report anyone acting suspiciously.",
+      "distractorExplanations": {
+        "a": "Letting an unverified visitor into storage defeats food defense.",
+        "b": "Handing over a key gives an unverified person unsupervised access to food.",
+        "c": "Coming back after closing does not verify who he is and may leave him unsupervised."
+      }
+    },
+    "servsafe-manager-mock-079": {
+      "difficulty": "medium",
+      "prompt": "A supplier recalls a lot of bagged spinach that the operation has in storage. What should the manager do?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Pull it, label it 'Do not use,' follow the notice",
+        "b": "Use it up quickly before the recall takes effect",
+        "c": "Throw it out without recording anything",
+        "d": "Cook it thoroughly to 165°F so it is safe to serve"
+      },
+      "explanation": "Identify the recalled food by lot number, remove it from inventory, store it separately from other food, label it so staff do not use it, and follow the supplier's or regulator's instructions for return or disposal. Document the action, including quantities.",
+      "distractorExplanations": {
+        "b": "A recall takes effect immediately; serving the product puts guests at risk.",
+        "c": "Recalls require documentation and following the notice, which may call for returning the product.",
+        "d": "Cooking may not destroy every hazard behind a recall, such as toxins or foreign objects."
+      }
+    },
+    "servsafe-manager-mock-080": {
+      "difficulty": "medium",
+      "prompt": "Which is one of the five most common risk factors for foodborne illness identified by the CDC?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Serving hot food on plates that were not preheated",
+        "b": "Using printed paper menus",
+        "c": "Holding food at the wrong temperature",
+        "d": "Buying spices from other countries"
+      },
+      "explanation": "The CDC's five most common risk factors are buying food from unsafe sources, failing to cook food correctly, holding food at incorrect temperatures, using contaminated equipment, and practicing poor personal hygiene. Active managerial control means managers proactively control each one.",
+      "distractorExplanations": {
+        "a": "Plate temperature is not one of the CDC risk factors.",
+        "b": "Menus are not a food-safety risk factor.",
+        "d": "The risk factor is unsafe sources, not where a product comes from; approved foreign suppliers are acceptable."
+      }
+    },
+    "servsafe-manager-mock-081": {
+      "difficulty": "medium",
+      "prompt": "Under the FDA Food Code, how can the person in charge show knowledge of food safety?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Have at least five years of kitchen management work",
+        "b": "Hold an accredited food manager certification",
+        "c": "Hold a general business license",
+        "d": "Pass a quiz written by the owner"
+      },
+      "explanation": "The Food Code requires the person in charge to demonstrate knowledge, usually by holding a food protection manager certification from an accredited program (such as ServSafe Manager), by having no priority violations during an inspection, or by correctly answering the inspector's questions.",
+      "distractorExplanations": {
+        "a": "Experience alone is not one of the Food Code's ways to demonstrate knowledge.",
+        "c": "A business license shows the operation may trade, not that the manager knows food safety.",
+        "d": "An internal quiz is not an accredited certification program."
+      }
+    },
+    "servsafe-manager-mock-082": {
+      "difficulty": "easy",
+      "prompt": "A health inspector arrives during a busy lunch. What should the manager do?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Refuse entry until the owner arrives",
+        "b": "Ask the inspector to come back next week",
+        "c": "Leave the inspector to walk around alone",
+        "d": "Go along, take notes and fix violations"
+      },
+      "explanation": "A manager should ask for the inspector's identification, cooperate and accompany the inspector, take notes on any violations, keep records available, correct problems immediately or by the deadline, and use the report to retrain staff. Refusing entry can lead to legal action.",
+      "distractorExplanations": {
+        "a": "Inspectors have the right to enter during operating hours; refusing can lead to legal action.",
+        "b": "Inspections are not scheduled around convenience; asking for a delay is not appropriate.",
+        "c": "Going along with the inspector lets the manager learn about violations and fix them."
+      }
+    },
+    "servsafe-manager-mock-083": {
+      "difficulty": "medium",
+      "prompt": "Monitoring shows that dish staff keep skipping sanitizer concentration checks. What is the manager's best response?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Retrain them and monitor until it is done right",
+        "b": "Post a sign and assume the problem is solved",
+        "c": "Switch to a stronger sanitizer and skip testing",
+        "d": "Have the manager test the sanitizer once a week instead"
+      },
+      "explanation": "When monitoring shows employees are not following procedures, managers retrain them, watch them work and verify that the task is done correctly. Training records show who was trained and when retraining is due. Training is ongoing, not a one-time event.",
+      "distractorExplanations": {
+        "b": "A sign alone does not confirm that staff can and do perform the check.",
+        "c": "Too much sanitizer can be toxic, and concentration must still be tested.",
+        "d": "Weekly checks leave days of possibly ineffective sanitizer in use."
+      }
+    },
+    "servsafe-manager-mock-084": {
+      "difficulty": "easy",
+      "prompt": "Guests at a buffet are going back for seconds. What should happen?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Let guests reuse plates to save dishes",
+        "b": "Have servers refill used plates at the line",
+        "c": "Give guests clean plates for each trip",
+        "d": "Rinse plates at the table before reuse"
+      },
+      "explanation": "At self-service areas, guests should not refill dirty plates or use dirty utensils, which can contaminate the food on display. Provide clean plates and utensils for each trip (drink glasses may be refilled if contamination is prevented), label food, and use sneeze guards.",
+      "distractorExplanations": {
+        "a": "Used plates can carry pathogens from the guest to serving utensils and food.",
+        "b": "Refilling used plates at the line has the same contamination risk.",
+        "d": "A table rinse does not clean or sanitize a plate."
+      }
+    },
+    "servsafe-manager-mock-085": {
+      "difficulty": "medium",
+      "prompt": "Food is packaged in-house for grab-and-go retail sale. Which information is required on the label?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "The name of the cook who prepared and packed it",
+        "b": "Common name, ingredients and allergens",
+        "c": "The calorie count and nothing else",
+        "d": "The temperature it was cooked to"
+      },
+      "explanation": "Food packaged on-site for retail sale must be labeled with its common name, quantity, ingredients in descending order by weight, artificial colors and flavors, chemical preservatives, the operation's name and location, and the source of each major food allergen.",
+      "distractorExplanations": {
+        "a": "The cook's name is not a labeling requirement.",
+        "c": "Calorie information alone does not meet the labeling rules for packaged food.",
+        "d": "Cooking temperatures are recorded in logs, not printed on retail labels."
+      }
+    },
+    "servsafe-manager-mock-086": {
+      "difficulty": "medium",
+      "prompt": "A guest calls to say she got sick after eating at the restaurant. What should the manager record?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "The guest's name and nothing more",
+        "b": "Nothing until the health department calls",
+        "c": "The guest's payment method and table number",
+        "d": "Contact info, foods eaten, symptoms, onset"
+      },
+      "explanation": "When a guest reports illness, the manager records the guest's contact information, the foods eaten and when, the symptoms and when they started, and whether a doctor was seen. Set aside any suspect food, label it 'Do not use,' and contact the regulatory authority if required.",
+      "distractorExplanations": {
+        "a": "A name alone does not help identify the food or link the case to an outbreak.",
+        "b": "Waiting loses details the investigation needs.",
+        "c": "Payment details do not help trace the illness to a food."
+      }
+    },
+    "servsafe-manager-mock-087": {
+      "difficulty": "easy",
+      "prompt": "Which is an approved source of drinkable water for a food operation?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "A public water main or tested private well",
+        "b": "Untested water from a nearby creek",
+        "c": "Rainwater collected from the roof",
+        "d": "A garden hose run from the neighboring building"
+      },
+      "explanation": "Drinkable (potable) water must come from an approved public water main, a regularly tested private well, or approved bottled or transported water. During an interruption of safe water, such as a boil-water notice, the operation must stop or follow the regulatory authority's plan.",
+      "distractorExplanations": {
+        "b": "Surface water is not an approved source without treatment and testing.",
+        "c": "Rainwater is not an approved drinkable source unless treated and approved.",
+        "d": "A garden hose is not food-grade and may not be connected to an approved supply."
+      }
+    },
+    "servsafe-manager-mock-088": {
+      "difficulty": "easy",
+      "prompt": "Which supplies are required at every handwashing station?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "A sanitizer bucket and wiping cloths",
+        "b": "A shared cloth roll towel and a bar of soap",
+        "c": "Soap, a paper towel or dryer, a trash can",
+        "d": "A mirror, lotion and a nail brush"
+      },
+      "explanation": "Handwashing stations need hot and cold running water, soap, a way to dry hands (single-use paper towels or a hand dryer), a garbage container if paper towels are used, and signage reminding staff to wash hands. They are used only for handwashing and kept accessible.",
+      "distractorExplanations": {
+        "a": "Sanitizer buckets are for wiping cloths and surfaces, not handwashing.",
+        "b": "Shared cloth towels spread pathogens from one person to the next.",
+        "d": "Mirrors and lotion are not required; drying supplies and a trash can are."
+      }
+    },
+    "servsafe-manager-mock-089": {
+      "difficulty": "medium",
+      "prompt": "Why should an operation have written standard operating procedures (SOPs)?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "So staff training is no longer needed",
+        "b": "So tasks are done the same safe way every time",
+        "c": "Because inspectors grade SOP binders by their page count",
+        "d": "So managers no longer need to monitor staff"
+      },
+      "explanation": "SOPs describe how to perform tasks such as receiving, cooling or sanitizing consistently and safely. They support active managerial control: managers train staff on SOPs, monitor them, and update them when menus, equipment or regulations change.",
+      "distractorExplanations": {
+        "a": "SOPs are the basis for training; they do not replace it.",
+        "c": "Inspectors judge practices and results, not the length of documents.",
+        "d": "Managers still monitor staff to confirm the SOPs are followed."
+      }
+    },
+    "servsafe-manager-mock-090": {
+      "difficulty": "medium",
+      "prompt": "A case of canned tomatoes arrives with a broken seal, and nobody ordered it. What should the receiver do?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Refuse it and report it to the manager",
+        "b": "Accept it and use those cans first",
+        "c": "Accept it if the price and invoice look right",
+        "d": "Tape the seal and put it in storage"
+      },
+      "explanation": "Unexpected deliveries and broken seals can signal tampering. Under food defense practices, receivers check that deliveries match orders, inspect packaging, reject suspect product, and report the problem to the manager, who contacts the supplier or authorities as needed.",
+      "distractorExplanations": {
+        "b": "Using suspect cans first puts possibly tampered food into service.",
+        "c": "Price does not make an unordered, unsealed delivery safe.",
+        "d": "Taping the seal hides evidence of possible tampering."
+      }
+    }
+  }
+}

@@ -391,6 +391,12 @@ export function formatTodaySection(stats: FunnelStats, now = new Date(), pathLim
     `Actions: ${events.mock_started} start → ${events.mock_completed} done · ${events.checkout_click} checkout · ${events.mock_deck_cta_click} deck CTA`,
   ];
 
+  if (events.mock_paywall_view > 0 || events.mock_pass_checkout_click > 0) {
+    lines.push(
+      `Mock Pass: ${events.mock_paywall_view} paywall → ${events.mock_pass_checkout_click} pay click → ${events.mock_pass_redeem_success} unlocked`,
+    );
+  }
+
   if (snapshot && !detectBotBurstDay(snapshot).isBurst) {
     lines.push(
       `Sources: ${formatChannelLine(snapshot.byChannel)}`,
@@ -495,6 +501,9 @@ function countRecentDayEvents(recentEvents: FunnelEvent[], day: string) {
     mock_completed: 0,
     checkout_click: 0,
     mock_deck_cta_click: 0,
+    mock_paywall_view: 0,
+    mock_pass_checkout_click: 0,
+    mock_pass_redeem_success: 0,
   };
 
   for (const event of recentEvents) {

@@ -1,0 +1,293 @@
+{
+  "ptcb-pharmacy-technician-mock": {
+    "ptcb-pharmacy-technician-mock-033": {
+      "difficulty": "medium",
+      "prompt": "A customer asks to buy pseudoephedrine tablets kept behind the counter. Under the Combat Methamphetamine Epidemic Act, what is the federal limit per purchaser per day?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "1.8 g of base",
+        "b": "3.6 g of base",
+        "c": "7.5 g of base",
+        "d": "9 g of base"
+      },
+      "explanation": "The CMEA (2005) limits retail sales of pseudoephedrine, ephedrine and phenylpropanolamine to 3.6 g of base per purchaser per day and 9 g per 30 days (7.5 g per 30 days for mail order or mobile retail). Products stay behind the counter, the buyer shows photo ID, and the sale goes in a logbook kept for 2 years.",
+      "distractorExplanations": {
+        "a": "1.8 g is half the federal daily limit; some states are stricter, but federal law allows 3.6 g.",
+        "c": "7.5 g is the 30-day limit for mail-order or mobile retail sales, not the daily limit.",
+        "d": "9 g is the 30-day retail limit, not the amount allowed in one day."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-034": {
+      "difficulty": "easy",
+      "prompt": "A prescriber calls asking the pharmacy to add two refills to a patient's existing oxycodone 5 mg prescription. What is the correct response?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Add the refills after the pharmacist confirms the call",
+        "b": "Up to five refills may be added within six months",
+        "c": "Refills are valid if a signed fax follows in 72 hours",
+        "d": "A new prescription is needed; C-II cannot be refilled"
+      },
+      "explanation": "Federal law prohibits refills of Schedule II controlled substances. Each fill needs a new prescription, written or sent through a DEA-compliant electronic system. A prescriber may issue multiple C-II prescriptions totaling up to a 90-day supply with 'do not fill before' dates.",
+      "distractorExplanations": {
+        "a": "A phone call cannot create refills for a Schedule II drug, even with pharmacist confirmation.",
+        "b": "Five refills within six months is the Schedule III and IV rule.",
+        "c": "No fax follow-up rule creates C-II refills; the 7-day written follow-up applies only to emergency oral C-II orders."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-035": {
+      "difficulty": "medium",
+      "prompt": "A pharmacy that does not use CSOS needs to order oxycodone from its wholesaler. Which DEA form must be completed?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "DEA Form 41",
+        "b": "DEA Form 106",
+        "c": "DEA Form 222",
+        "d": "DEA Form 224"
+      },
+      "explanation": "Schedule I and II substances are ordered on DEA Form 222 (now a single-sheet form that replaced the old triplicate) or electronically through CSOS. The pharmacy records the quantity and date received for each item and keeps its copy for at least 2 years.",
+      "distractorExplanations": {
+        "a": "Form 41 records the destruction of controlled substances.",
+        "b": "Form 106 reports theft or significant loss of controlled substances.",
+        "d": "Form 224 is the application for a new pharmacy DEA registration."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-036": {
+      "difficulty": "medium",
+      "prompt": "During a routine count, a pharmacy discovers a significant loss of hydrocodone/acetaminophen tablets that it suspects is theft. What does federal law require?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Notify DEA within 1 business day; file Form 106",
+        "b": "Note it at the next biennial inventory",
+        "c": "File DEA Form 41 after the next monthly inventory",
+        "d": "Report the loss to the FDA through MedWatch"
+      },
+      "explanation": "Theft or significant loss of controlled substances must be reported in writing to the DEA field office within one business day of discovery, followed by a completed DEA Form 106 filed online. Local police are usually notified as well when theft is suspected.",
+      "distractorExplanations": {
+        "b": "Waiting for the biennial inventory violates the one-business-day notice requirement.",
+        "c": "Form 41 documents destruction of controlled substances, not loss or theft.",
+        "d": "MedWatch is for adverse events and product quality problems, not controlled-substance theft."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-037": {
+      "difficulty": "easy",
+      "prompt": "How often must a DEA-registered pharmacy take a complete inventory of all controlled substances on hand?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Every 6 months",
+        "b": "Every year",
+        "c": "Every 2 years",
+        "d": "Every 5 years"
+      },
+      "explanation": "The DEA requires an initial inventory and then a biennial inventory, at least every 2 years. Schedule II counts must be exact; Schedule III-V may be estimated unless a container holds more than 1,000 units. Inventory records are kept for at least 2 years, and some states require annual counts.",
+      "distractorExplanations": {
+        "a": "Six-month counts may be internal policy, but they are not the federal requirement.",
+        "b": "Annual inventories are required by some states, not by federal DEA rules.",
+        "d": "Five years is too long; the federal interval is two years."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-038": {
+      "difficulty": "easy",
+      "prompt": "Under federal law, how may a prescription for zolpidem (Ambien), a Schedule IV drug, be refilled if the prescriber authorizes refills?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "It cannot be refilled under any circumstances",
+        "b": "Up to 11 times within 12 months",
+        "c": "As many times as needed within one year",
+        "d": "Up to 5 times within 6 months"
+      },
+      "explanation": "Federal law allows Schedule III and IV prescriptions to be refilled up to 5 times within 6 months of the date written, if authorized; after that a new prescription is required. Schedule V refills are set by the prescriber, and state law may be stricter.",
+      "distractorExplanations": {
+        "a": "No refills is the Schedule II rule, not the Schedule IV rule.",
+        "b": "Refills over 12 months apply to non-controlled prescriptions in many states, not to C-IV drugs.",
+        "c": "No controlled-substance schedule allows open-ended refills for a year."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-039": {
+      "difficulty": "medium",
+      "prompt": "The FDA announces a recall because use of an affected drug lot may cause serious adverse health consequences or death. How is this recall classified?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "Class I recall",
+        "b": "Class II recall",
+        "c": "Class III recall",
+        "d": "Market withdrawal"
+      },
+      "explanation": "Class I is the most serious recall: a reasonable probability that use will cause serious adverse health consequences or death. Class II covers temporary or medically reversible effects, or a remote chance of serious harm; Class III covers products unlikely to cause harm, such as minor labeling defects.",
+      "distractorExplanations": {
+        "b": "Class II involves temporary or reversible effects, or only a remote chance of serious harm.",
+        "c": "Class III is for products unlikely to cause any adverse health effect.",
+        "d": "A market withdrawal covers a minor violation the FDA would not pursue, or no violation at all."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-040": {
+      "difficulty": "medium",
+      "prompt": "A Class II recall notice lists a lot number the pharmacy has on its shelf. What should the technician do first?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Dispense that stock first, then return the empties",
+        "b": "Discard the lot in the pharmacy's regular trash",
+        "c": "Keep it on the shelf with a warning sticker",
+        "d": "Pull and quarantine that lot per the recall notice"
+      },
+      "explanation": "When a recall names a lot the pharmacy holds, staff check stock by lot number, remove the affected units, label and quarantine them away from saleable inventory, and return or destroy them as the recall instructions direct. Whether patients are contacted depends on the recall class and notice.",
+      "distractorExplanations": {
+        "a": "Dispensing recalled product puts patients at risk and defeats the recall.",
+        "b": "Recalled drugs are returned or destroyed per the recall instructions, and the action is documented, not thrown in the trash.",
+        "c": "Recalled lots must leave saleable inventory; a sticker does not stop them from being dispensed."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-041": {
+      "difficulty": "medium",
+      "prompt": "A patient presents a prescription for isotretinoin capsules for severe acne. Which federal program controls whether the pharmacy may dispense it?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "The TIRF REMS Access program",
+        "b": "The iPLEDGE REMS program",
+        "c": "OBRA '90 Medicaid counseling rules",
+        "d": "The Combat Meth Act sales logbook"
+      },
+      "explanation": "Isotretinoin is dispensed only under the iPLEDGE REMS because it causes severe birth defects. Prescribers, patients and pharmacies must be registered, and the pharmacy must obtain authorization in the iPLEDGE system within the dispensing window before the prescription is filled.",
+      "distractorExplanations": {
+        "a": "TIRF REMS covers transmucosal immediate-release fentanyl products, not isotretinoin.",
+        "c": "OBRA '90 requires an offer to counsel Medicaid patients; it does not restrict isotretinoin dispensing.",
+        "d": "The CMEA logbook applies to pseudoephedrine and ephedrine sales."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-042": {
+      "difficulty": "hard",
+      "prompt": "In an outpatient pharmacy, which prescription must be dispensed with an FDA-approved Medication Guide?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Any generic drug filled for the first time",
+        "b": "A prescription for a prenatal vitamin",
+        "c": "Any drug packaged in unit-dose blisters",
+        "d": "Prescription-strength naproxen tablets"
+      },
+      "explanation": "The FDA requires Medication Guides for specific drugs with serious risks, including prescription NSAIDs such as naproxen, antidepressants and many others. In outpatient settings the guide is provided each time the drug is dispensed, including refills.",
+      "distractorExplanations": {
+        "a": "Being a generic does not trigger a Medication Guide; the specific drug does.",
+        "b": "Prenatal vitamins do not carry a Medication Guide requirement.",
+        "c": "Packaging type does not trigger the requirement; the drug's FDA labeling does."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-043": {
+      "difficulty": "medium",
+      "prompt": "A prescription for Lipitor has no 'dispense as written' notation, and state law allows substitution. Which reference shows whether a generic atorvastatin is therapeutically equivalent?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The FDA Orange Book",
+        "b": "The FDA Purple Book",
+        "c": "The USP-NF compendium",
+        "d": "The DEA schedules list"
+      },
+      "explanation": "The FDA Orange Book (Approved Drug Products with Therapeutic Equivalence Evaluations) lists therapeutic-equivalence codes. A-rated generics, such as AB, are considered substitutable; B-rated products are not. The Purple Book covers biologics, biosimilars and interchangeable products.",
+      "distractorExplanations": {
+        "b": "The Purple Book lists biological products and biosimilars, not small-molecule generics like atorvastatin.",
+        "c": "USP-NF sets quality and compounding standards; it does not rate therapeutic equivalence.",
+        "d": "DEA schedules classify controlled substances by abuse potential."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-044": {
+      "difficulty": "medium",
+      "prompt": "A technician needs to count methotrexate tablets, which appear on the NIOSH list of hazardous drugs. Which practice is appropriate?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Use the shared tray, then wipe it with a dry towel",
+        "b": "Count by hand so the tray stays clean",
+        "c": "Wear gloves and use a dedicated counting tray",
+        "d": "Split extra tablets before returning them to stock"
+      },
+      "explanation": "NIOSH-listed hazardous drugs such as methotrexate are handled under USP <800> precautions: gloves, a dedicated counting tray and spatula, and cleaning procedures so residue does not contaminate other patients' medications or expose staff.",
+      "distractorExplanations": {
+        "a": "A shared tray can carry hazardous residue to other prescriptions; a dry wipe does not decontaminate it.",
+        "b": "Bare-hand counting exposes the technician to a hazardous drug.",
+        "d": "Splitting hazardous tablets creates dust and staff exposure; leftover tablets go back to stock whole."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-045": {
+      "difficulty": "hard",
+      "prompt": "Under federal DEA rules, how may a retail pharmacy store its Schedule II controlled substances?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "In a refrigerator with a daily temperature log",
+        "b": "On open shelves with no extra safeguards",
+        "c": "Solely in a time-delay safe approved by the FDA",
+        "d": "In a locked cabinet or dispersed among other stock"
+      },
+      "explanation": "Federal rules let pharmacies store controlled substances in a securely locked, substantially constructed cabinet, or disperse them throughout the noncontrolled stock to deter theft. Many states and employers are stricter and require a locked safe for Schedule II drugs.",
+      "distractorExplanations": {
+        "a": "Refrigeration is a temperature requirement for certain products, not a DEA security rule.",
+        "b": "Open shelving without dispersal or locking does not meet DEA security requirements.",
+        "c": "The FDA does not approve pharmacy safes; time-delay safes are an employer or state choice."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-046": {
+      "difficulty": "medium",
+      "prompt": "Which of these drugs is a federal Schedule III controlled substance?",
+      "correctOptionId": "b",
+      "options": {
+        "a": "Oxycodone (Roxicodone)",
+        "b": "Testosterone cypionate",
+        "c": "Alprazolam (Xanax)",
+        "d": "Pregabalin (Lyrica)"
+      },
+      "explanation": "Anabolic steroids such as testosterone are Schedule III, along with ketamine, buprenorphine and products with up to 90 mg of codeine per dosage unit, such as Tylenol with Codeine. Schedule III prescriptions may be refilled up to 5 times within 6 months.",
+      "distractorExplanations": {
+        "a": "Oxycodone is Schedule II: high abuse potential and no refills.",
+        "c": "Alprazolam is Schedule IV, like other benzodiazepines.",
+        "d": "Pregabalin is Schedule V, the lowest controlled schedule."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-047": {
+      "difficulty": "medium",
+      "prompt": "Before an opioid prescription is filled, the pharmacist checks the state prescription drug monitoring program (PDMP). What information does the PDMP provide?",
+      "correctOptionId": "a",
+      "options": {
+        "a": "The patient's controlled fills at all pharmacies",
+        "b": "The wholesaler's controlled-drug purchase invoices",
+        "c": "The patient's insurance formulary tiers",
+        "d": "The manufacturer's recall list by lot"
+      },
+      "explanation": "A PDMP is a state database of dispensed controlled-substance prescriptions. It shows overlapping prescriptions, multiple prescribers or pharmacies, and early fills that may signal misuse; many states require a check before opioids are prescribed or dispensed.",
+      "distractorExplanations": {
+        "b": "Wholesaler invoices are the pharmacy's own purchasing records, not PDMP data.",
+        "c": "Formulary tiers come from the insurer's adjudication system, not the PDMP.",
+        "d": "Recall information comes from FDA and manufacturer notices."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-048": {
+      "difficulty": "medium",
+      "prompt": "A patient wants to return unused hydrocodone tablets left over after surgery. Which response complies with DEA rules?",
+      "correctOptionId": "d",
+      "options": {
+        "a": "Accept them back into stock after inspection",
+        "b": "Log them into the pharmacy's C-II safe",
+        "c": "Mail them back to the drug's manufacturer",
+        "d": "Use a DEA-authorized take-back kiosk or event"
+      },
+      "explanation": "Pharmacies may not take dispensed controlled substances back into inventory. Patients use DEA-authorized collection receptacles (which registered pharmacies may host), take-back events or mail-back envelopes; drugs on the FDA flush list may be flushed when take-back is not available.",
+      "distractorExplanations": {
+        "a": "Dispensed controlled substances can never be returned to pharmacy stock.",
+        "b": "The pharmacy cannot add patient-returned drugs to its controlled inventory.",
+        "c": "Patients do not return controlled drugs to manufacturers; authorized mail-back programs use special envelopes."
+      }
+    },
+    "ptcb-pharmacy-technician-mock-049": {
+      "difficulty": "medium",
+      "prompt": "Under the Poison Prevention Packaging Act, when may a pharmacy dispense an oral prescription in a non-child-resistant container?",
+      "correctOptionId": "c",
+      "options": {
+        "a": "Whenever the dispensed drug is a generic",
+        "b": "For Schedule II drugs and no others",
+        "c": "When the patient or prescriber requests it",
+        "d": "Whenever the prescription is a refill"
+      },
+      "explanation": "The PPPA (1970) requires child-resistant packaging for most oral prescription drugs. The patient may request a non-child-resistant container (a blanket request can be kept on file), or the prescriber may request it for that prescription only. Some products, such as sublingual nitroglycerin, are exempt.",
+      "distractorExplanations": {
+        "a": "Generic status does not exempt a drug from child-resistant packaging.",
+        "b": "Controlled substances follow the same PPPA rule; schedule does not create an exemption.",
+        "d": "Refills still need child-resistant packaging unless a valid request is on file."
+      }
+    }
+  }
+}

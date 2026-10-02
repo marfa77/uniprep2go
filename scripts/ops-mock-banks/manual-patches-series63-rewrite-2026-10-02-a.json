@@ -1,0 +1,361 @@
+{
+  "series-63-readiness-check": {
+    "series-63-readiness-check-s63-ethics-001": {
+      "topicId": "s63-ethics",
+      "prompt": "A customer phones her agent: \"Buy 300 shares of XYZ for me today, and use your judgment on the price.\" She has never signed a discretionary authorization. What may the agent do under the NASAA Statement of Policy on dishonest or unethical practices?",
+      "options": {
+        "a": "Decline the order until the customer signs and returns a written discretionary authorization form",
+        "b": "Enter the order today, choosing the time and price, without written discretionary authority",
+        "c": "Buy XYZ or a similar stock in the same industry if XYZ looks overpriced during the day",
+        "d": "Enter the order now and obtain her written authorization within 10 business days"
+      },
+      "correctOptionId": "b",
+      "explanation": "The Statement of Policy bars exercising discretion without prior written authority, but discretion that relates solely to the time and/or price of execution is excluded. The customer chose the security, the action and the quantity, so the agent may pick the timing and price. Under FINRA Rule 3260 that time-and-price authority lapses at the end of the business day it was given.",
+      "distractorExplanations": {
+        "a": "Over-applies the written-authority rule; time-and-price discretion is carved out, so no signed discretionary form is needed for this order.",
+        "c": "Choosing a different security is true discretion over the asset itself, which requires prior written authority the customer never gave.",
+        "d": "Borrows the IA model rule's 10-business-day window for oral discretion; it is not needed here and does not apply to a broker-dealer agent."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-002": {
+      "topicId": "s63-ethics",
+      "prompt": "Over six months, an agent turned over a retired customer's $150,000 conservative income account about eight times. Every trade was solicited and approved by the customer, and commissions equaled roughly 18% of the account. Which violation does this pattern most clearly indicate?",
+      "options": {
+        "a": "Unauthorized trading, because solicited trades need written discretionary authority",
+        "b": "Front-running, because the agent placed firm orders ahead of the customer's orders",
+        "c": "Market manipulation, because the volume of trades moved the prices of the securities",
+        "d": "Churning, because trading was excessive in size and frequency for this account"
+      },
+      "correctOptionId": "d",
+      "explanation": "Churning is inducing trading that is excessive in size or frequency in view of the customer's financial resources and the character of the account. High turnover and commissions consuming about 18% of a conservative retiree's account are classic signs, and customer approval of each solicited trade does not cure it.",
+      "distractorExplanations": {
+        "a": "Confuses churning with unauthorized trading; the customer approved each solicited trade, so no discretionary authority was exercised.",
+        "b": "Front-running means trading ahead of a customer's block order to profit from it; nothing in the facts shows firm orders placed first.",
+        "c": "Manipulation requires trading designed to create false price or volume signals; trades in one retail account are not shown to move prices."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-003": {
+      "topicId": "s63-ethics",
+      "prompt": "A 72-year-old widow tells an agent she lives on her $200,000 account, has no other savings and wants low risk. The agent recommends putting 60% of it into an illiquid non-traded REIT because it pays a 7% distribution. What is the agent's primary violation?",
+      "options": {
+        "a": "Recommending a security without reasonable grounds to believe it suits her profile",
+        "b": "Failing to obtain her written discretionary authority before recommending the REIT",
+        "c": "Quoting a distribution rate before the REIT's prospectus had been delivered to her",
+        "d": "Selling a security that is not listed on any national securities exchange to a retiree"
+      },
+      "correctOptionId": "a",
+      "explanation": "The NASAA Statement of Policy, FINRA Rule 2111 and Regulation Best Interest require reasonable grounds to believe a recommendation fits the customer's age, income needs, liquidity, risk tolerance and objectives. Concentrating a low-risk retiree's only savings in an illiquid, speculative product fails that test regardless of its yield.",
+      "distractorExplanations": {
+        "b": "Discretionary authority matters only when the agent trades without the customer's approval; a recommendation she accepts needs none.",
+        "c": "Prospectus timing is a disclosure issue; even with a prospectus in hand, the core problem is that the REIT does not fit her profile.",
+        "d": "Non-listed securities are lawful to sell; being unlisted is not a violation unless the product is unsuitable, as it is here."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-004": {
+      "topicId": "s63-ethics",
+      "prompt": "An agent needs a $40,000 loan for a home renovation. The agent's firm has written procedures on customer loans, and the agent's sole connection to each customer below is the brokerage account. From which customer may the agent borrow?",
+      "options": {
+        "a": "A wealthy retiree who signs a promissory note at a market interest rate",
+        "b": "A long-time client who volunteers the loan and confirms it in a signed letter",
+        "c": "A customer that is a bank, lending on its ordinary commercial loan terms",
+        "d": "A discretionary-account client, provided the loan is repaid within 30 days"
+      },
+      "correctOptionId": "c",
+      "explanation": "Borrowing from customers is an unethical practice except in narrow categories. A financial institution in the business of lending is a permitted lender under FINRA Rule 3240 (and under NASAA's adviser conduct model rule), provided the firm's written procedures allow it. Individual customers whose only tie to the agent is the account fall outside every permitted category.",
+      "distractorExplanations": {
+        "a": "A market rate and a promissory note do not change the category; an individual customer with no outside relationship is not a permitted lender.",
+        "b": "Customer willingness and a signed letter do not create an exception; the conflict of borrowing from an account-only customer remains.",
+        "d": "Discretionary authority makes the conflict worse, and a short repayment period is not one of the recognized lender exceptions."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-005": {
+      "topicId": "s63-ethics",
+      "prompt": "A customer invites her agent to share in the profits and losses of her trading account, and the agent will contribute 25% of the money in it. Which arrangement is permissible?",
+      "options": {
+        "a": "The agent shares 50% of gains and losses once the customer gives verbal approval by phone",
+        "b": "The agent takes 25% of gains while the customer absorbs every loss, with firm approval",
+        "c": "The agent shares 25% of gains and losses after telling the branch manager orally",
+        "d": "The agent shares 25% of gains and losses with prior written consent of customer and firm"
+      },
+      "correctOptionId": "d",
+      "explanation": "Sharing in a customer account requires prior written authorization from the customer and from the employing firm, and the agent's share of gains and losses must be in proportion to the agent's contribution (FINRA Rule 2150; NASAA treats unauthorized sharing as unethical). Accounts of immediate family are excepted from the proportionality limit.",
+      "distractorExplanations": {
+        "a": "Verbal approval is not enough, and a 50% share exceeds the agent's 25% contribution, breaking the proportionality requirement.",
+        "b": "Taking gains without bearing losses is not proportional sharing; it amounts to profiting from the account at the customer's sole risk.",
+        "c": "The share is proportional, but oral notice to a manager is not the prior written authorization required from both firm and customer."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-006": {
+      "topicId": "s63-ethics",
+      "prompt": "To calm a nervous customer, an agent writes: \"If ABC is below your purchase price in 12 months, I will personally reimburse your loss.\" ABC rises 30% and no payment is ever made. How is the agent's conduct treated under the NASAA Statement of Policy?",
+      "options": {
+        "a": "Permitted, because the promise was put in writing and its terms were made clear to the customer",
+        "b": "Unethical, because guaranteeing a customer against loss is prohibited even if nothing is paid",
+        "c": "Permitted, because the stock rose and the customer suffered no loss from the promise",
+        "d": "Unethical, but curable if the agent's firm countersigns the written promise in advance"
+      },
+      "correctOptionId": "b",
+      "explanation": "Guaranteeing a customer against loss in a securities account is a listed dishonest or unethical practice. The violation is the promise itself, so a later gain, written terms or a payment that never happens do not cure it. This differs from a security that carries an issuer or third-party guarantee, such as a guaranteed bond.",
+      "distractorExplanations": {
+        "a": "Writing the promise down documents the violation rather than curing it; the guarantee is prohibited however it is delivered.",
+        "c": "The outcome of the trade is irrelevant; the unethical act was making the guarantee, which was complete when it was given.",
+        "d": "Firm sign-off does not make a guarantee against loss acceptable; supervisors cannot authorize a prohibited practice."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-007": {
+      "topicId": "s63-ethics",
+      "prompt": "A friend asks an agent to sell interests in the friend's private real estate LLC to several of the agent's customers for a 6% fee. The agent's broker-dealer knows nothing about it. What must happen before the agent participates?",
+      "options": {
+        "a": "The agent gives the firm prior written notice, and the firm approves and records the sales",
+        "b": "The agent tells customers the firm is not involved and collects their signed acknowledgments",
+        "c": "The agent registers the LLC interests in the state, after which notice to the firm is unneeded",
+        "d": "The agent notifies the firm in writing within 30 days after the first sale has closed"
+      },
+      "correctOptionId": "a",
+      "explanation": "Effecting securities transactions not recorded on the firm's books without the firm's prior written authorization is unethical under the NASAA Statement of Policy (selling away). FINRA Rule 3280 requires prior written notice; for a paid transaction the firm must approve or disapprove in writing and, if approved, record and supervise it as its own.",
+      "distractorExplanations": {
+        "b": "Customer acknowledgments do not replace the firm's prior written authorization; disclaiming the firm is the essence of selling away.",
+        "c": "Registering the securities addresses the issuer's offering, not the agent's duty to obtain firm approval for outside sales.",
+        "d": "Notice must come before participation; telling the firm after sales close is still an unapproved private securities transaction."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-008": {
+      "topicId": "s63-ethics",
+      "prompt": "A state-registered investment adviser will begin an arrangement that gives it custody of client funds and securities. Under the NASAA custody model rule, which set of steps is required?",
+      "options": {
+        "a": "Keep client assets in the adviser's own account and send clients annual statements",
+        "b": "Notify the Administrator within 90 days and have each client sign a custody waiver",
+        "c": "Notify the Administrator on Form ADV, use a qualified custodian, ensure quarterly statements",
+        "d": "Use a qualified custodian and make sure each client receives an account statement once a year"
+      },
+      "correctOptionId": "c",
+      "explanation": "Model Rule 102(e)(1)-1 requires an adviser with custody to notify the Administrator promptly on Form ADV, keep client assets with a qualified custodian in segregated client accounts, tell clients where assets are held, and have a reasonable basis to believe the custodian sends account statements at least quarterly, with an annual surprise exam by an independent CPA.",
+      "distractorExplanations": {
+        "a": "Holding client assets in the adviser's own account is commingling, and annual statements fall short of the quarterly requirement.",
+        "b": "Clients cannot waive the custody safeguards, and the rule calls for prompt Form ADV notice rather than a 90-day window.",
+        "d": "Uses the right custodian but the wrong frequency; the rule requires account statements at least quarterly, not yearly."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-009": {
+      "topicId": "s63-ethics",
+      "prompt": "A customer plans to invest $48,000 in a fund family whose sales charge drops at $50,000. The agent instead recommends $24,000 in each of two different fund families and never mentions the discount level. Which prohibited practice does this describe?",
+      "options": {
+        "a": "Switching, because the customer redeems shares of one fund to buy another family",
+        "b": "Excessive 12b-1 fees, because two fund families charge more distribution expenses",
+        "c": "Unauthorized trading, because the customer did not sign a letter of intent form",
+        "d": "Breakpoint selling, because splitting the order avoids a reduced sales charge"
+      },
+      "correctOptionId": "d",
+      "explanation": "The NASAA Statement of Policy on investment company shares bars recommending purchases just below, or split around, a breakpoint so the customer pays a higher sales charge, and failing to disclose breakpoints, rights of accumulation and letters of intent. A letter of intent lets the customer reach the $50,000 level within 13 months.",
+      "distractorExplanations": {
+        "a": "Switching involves selling existing fund shares to buy another fund; this customer is making a new purchase with fresh money.",
+        "b": "The issue is the forgone breakpoint discount on the front-end load, not the size of ongoing 12b-1 distribution fees.",
+        "c": "A letter of intent is an optional discount tool the agent should have disclosed; its absence does not make the trades unauthorized."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-010": {
+      "topicId": "s63-ethics",
+      "prompt": "An agent pitches a regional bank's bonds, accurately citing their 6% coupon and the A rating assigned two years ago. The agent knows the issuer disclosed this week a regulatory investigation and a rating review for downgrade, but says nothing. How does USA Section 101 treat this pitch?",
+      "options": {
+        "a": "Fraudulent, because omitting a material fact made the true statements misleading",
+        "b": "Permissible, because each statement the agent actually made was factually accurate",
+        "c": "Permissible, because an agent has no duty to repeat news the issuer made public",
+        "d": "Fraudulent when the bonds later fall in price, and lawful if they hold their value"
+      },
+      "correctOptionId": "a",
+      "explanation": "Section 101 makes it unlawful, in connection with the offer or sale of a security, to omit a material fact necessary to make the statements made not misleading. A pending investigation and downgrade review would matter to a reasonable investor, so a pitch of accurate but stale positives is a misleading half-truth.",
+      "distractorExplanations": {
+        "b": "Literal accuracy is not a defense; selective true statements that leave out a material fact are a misleading omission.",
+        "c": "Public availability does not excuse leaving it out of a sales pitch that relies on an outdated rating to persuade the customer.",
+        "d": "Antifraud liability turns on the misleading pitch, not the later price; a fraud violation exists whether or not the bonds decline."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-011": {
+      "topicId": "s63-ethics",
+      "prompt": "A qualified individual at a broker-dealer reasonably believes an 80-year-old customer's new caregiver is trying to drain her account, and the firm delays a requested disbursement. Under the NASAA Model Act to Protect Vulnerable Adults from Financial Exploitation, how long may that delay last?",
+      "options": {
+        "a": "5 business days, after which the funds must be released unless a court orders more",
+        "b": "10 business days, extendable once by the firm's compliance department for 10 more",
+        "c": "15 business days, extendable to 25 in total if APS or the Administrator requests it",
+        "d": "30 calendar days, extendable for as long as the firm's internal review remains open"
+      },
+      "correctOptionId": "c",
+      "explanation": "Under the Model Act a delay expires at the earlier of the firm's determination that no exploitation will result or 15 business days, and APS or the securities Administrator may request an extension to 25 business days total; a court may extend further. The firm must notify APS and the Administrator and tell authorized account parties (not the suspect) in writing within 2 business days.",
+      "distractorExplanations": {
+        "a": "Understates the initial period; the Model Act allows up to 15 business days before any extension is needed.",
+        "b": "Wrong length and wrong party; extensions come at the request of APS or the Administrator, not the firm's own compliance staff.",
+        "d": "The Model Act counts business days, not calendar days, and an internal review alone cannot keep the hold open past the limit."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-012": {
+      "topicId": "s63-ethics",
+      "prompt": "A dealer sells a customer 1,000 shares of a heavily traded large-cap stock from inventory with a 4.5% markup. Its compliance officer argues the trade is fine because the markup is under 5%. How does FINRA Rule 2121 treat that argument?",
+      "options": {
+        "a": "Correct, because a markup at or below 5% is a safe harbor for any equity trade",
+        "b": "Incorrect, because the 5% policy is a guide and 4.5% on a liquid stock may be unfair",
+        "c": "Correct, because principal sales from inventory are exempt from the markup policy",
+        "d": "Incorrect, because FINRA caps each equity markup at 3% of the prevailing market price"
+      },
+      "correctOptionId": "b",
+      "explanation": "The 5% policy is a guideline, not a rule or a safe harbor. Fairness depends on factors such as the security's type and availability, price, trade size, total dollar amount and the firm's services. A markup near 5% on a routine trade in a liquid large-cap stock can be excessive, which NASAA also treats as charging an unreasonable profit.",
+      "distractorExplanations": {
+        "a": "Treats the 5% guideline as a safe harbor; FINRA says a markup under 5% can still be unfair given the trade's facts.",
+        "c": "Markups apply precisely to principal sales from inventory; that is the trade type the fair-price rule is aimed at.",
+        "d": "Invents a hard cap; FINRA sets no fixed percentage ceiling, and 3% is not a rule anywhere in the markup policy."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-013": {
+      "topicId": "s63-ethics",
+      "prompt": "A state-registered adviser wants to charge a fee equal to 20% of each client's capital gains. Applying the SEC qualified-client standard that states adopt, which prospective client may sign such a contract?",
+      "options": {
+        "a": "A client with $2 million net worth excluding her home who will place $800,000",
+        "b": "A client with $3 million net worth, half of it equity in her primary residence",
+        "c": "A client who earns $400,000 a year in salary and will place $900,000 with the firm",
+        "d": "A client who will have $1.5 million managed by the adviser right after signing"
+      },
+      "correctOptionId": "d",
+      "explanation": "Performance fees are allowed only for qualified clients under SEC Rule 205-3. Since June 29, 2026 that means at least $1.4 million under the adviser's management immediately after signing, or net worth above $2.7 million excluding the primary residence (previously $1.1 million and $2.2 million). A client with $1.5 million under management meets either version.",
+      "distractorExplanations": {
+        "a": "Fails both tests: $2 million net worth is below the threshold and $800,000 under management is below the assets test.",
+        "b": "The primary residence is excluded, leaving about $1.5 million of net worth, which is well short of the net worth test.",
+        "c": "Income is not a qualified-client test, and $900,000 under management falls below the assets-under-management threshold."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-014": {
+      "topicId": "s63-ethics",
+      "prompt": "A trustee's diversified trust portfolio includes a small allocation to emerging-market small-cap stocks, which the beneficiaries call too risky. Under the Uniform Prudent Investor Act, how is that holding judged?",
+      "options": {
+        "a": "In the context of the whole portfolio and its overall risk-and-return strategy",
+        "b": "On its own merits, so a speculative holding is imprudent regardless of the rest",
+        "c": "By whether that position produced a gain during the trustee's time in office",
+        "d": "By whether the beneficiaries approved the specific investment in writing first"
+      },
+      "correctOptionId": "a",
+      "explanation": "The Uniform Prudent Investor Act judges each investment as part of the overall portfolio and a strategy with risk and return objectives suited to the trust, not in isolation. No category of investment is imprudent per se, diversification is required absent special circumstances, and duties may be delegated with care in selecting and monitoring the agent.",
+      "distractorExplanations": {
+        "b": "Reflects the old prudent-man approach of judging assets one by one; the Act rejects per se imprudence for any category.",
+        "c": "Prudence is measured by the decision process at the time, not by hindsight results for a single position.",
+        "d": "Beneficiary pre-approval is not the prudence standard; the trustee must meet the Act's duties regardless of approval."
+      }
+    },
+    "series-63-readiness-check-s63-ethics-015": {
+      "topicId": "s63-ethics",
+      "prompt": "An investment adviser directs client trades to a broker-dealer that supplies soft-dollar benefits in return. Which benefit falls within the safe harbor of Section 28(e) of the Securities Exchange Act?",
+      "options": {
+        "a": "Rent on the adviser's new branch office located near the broker's headquarters",
+        "b": "Travel and hotel costs for the adviser's staff to attend an industry conference",
+        "c": "Third-party research reports the adviser uses in making client investment decisions",
+        "d": "Office furniture and the salaries of the adviser's administrative support staff"
+      },
+      "correctOptionId": "c",
+      "explanation": "Section 28(e) protects an adviser that pays higher commissions in good faith for brokerage and research services that assist its investment decision-making, such as research reports and analytical tools. Overhead that benefits the adviser rather than clients falls outside, and soft-dollar arrangements must be disclosed to clients.",
+      "distractorExplanations": {
+        "a": "Office rent is general overhead that benefits the adviser's business, not research or brokerage services under 28(e).",
+        "b": "Travel and lodging are excluded from the safe harbor even when the conference covers investment topics.",
+        "d": "Furniture and administrative salaries are overhead expenses the adviser must pay itself, outside the 28(e) safe harbor."
+      }
+    },
+    "series-63-readiness-check-s63-ia-001": {
+      "topicId": "s63-ia",
+      "prompt": "A state Administrator is reviewing four people who give investment-related advice. Which one meets the definition of an investment adviser under the Uniform Securities Act?",
+      "options": {
+        "a": "A professor who explains stock valuation methods in a university finance course",
+        "b": "A CPA who advertises a separate hourly fee for recommending specific mutual funds",
+        "c": "A broker-dealer that gives advice incidental to trades for no fee beyond commissions",
+        "d": "The publisher of a weekly financial newspaper of general and regular circulation"
+      },
+      "correctOptionId": "b",
+      "explanation": "The USA excludes lawyers, accountants, engineers and teachers whose advice is solely incidental to their profession. A CPA who holds out advisory services and charges a separate fee for specific fund recommendations is no longer giving incidental advice, so the CPA is in the business of advising others for compensation and is an investment adviser.",
+      "distractorExplanations": {
+        "a": "Teachers are excluded when investment content is incidental to teaching; a finance course is classic excluded instruction.",
+        "c": "A broker-dealer is excluded when its advice is incidental to brokerage and it receives no special compensation for it.",
+        "d": "Publishers of bona fide newspapers or magazines of general, regular circulation are excluded from the definition."
+      }
+    },
+    "series-63-readiness-check-s63-ia-002": {
+      "topicId": "s63-ia",
+      "prompt": "An adviser based in one state has grown to $104 million in regulatory assets under management. Under Section 203A of the Investment Advisers Act and SEC Rule 203A-1, which statement about its registration is correct?",
+      "options": {
+        "a": "It must register with the SEC because its assets now exceed $100 million",
+        "b": "It must stay with the state and may not apply to the SEC before $110 million",
+        "c": "It must register with both the SEC and its home state during the buffer range",
+        "d": "It may register with the SEC now but is not required to until $110 million"
+      },
+      "correctOptionId": "d",
+      "explanation": "Rule 203A-1 creates a buffer: an adviser with $100 million to $110 million of assets under management may register with the SEC but need not, and must register with the SEC at $110 million. An SEC-registered adviser need not withdraw until assets fall below $90 million. Once federal covered, it notice-files with the states instead of registering.",
+      "distractorExplanations": {
+        "a": "Treats $100 million as mandatory; SEC registration becomes required at $110 million, so $104 million is optional territory.",
+        "b": "Reverses the buffer; the rule permits, rather than prohibits, SEC registration once assets reach $100 million.",
+        "c": "Dual registration is not the rule; an SEC-registered adviser makes notice filings with states rather than registering there."
+      }
+    },
+    "series-63-readiness-check-s63-ia-003": {
+      "topicId": "s63-ia",
+      "prompt": "An adviser's advisory contracts follow the Uniform Securities Act. Which planned event requires the adviser to obtain each client's consent before it takes effect?",
+      "options": {
+        "a": "Admitting a new minority partner to the adviser, which is organized as a partnership",
+        "b": "Moving the adviser's principal office and amending Form ADV to report the new address",
+        "c": "Transferring its advisory contracts to another adviser as part of a sale of the business",
+        "d": "Assigning a newly hired IAR to take over servicing an existing client's account at the firm"
+      },
+      "correctOptionId": "c",
+      "explanation": "Under the USA an advisory contract must provide that it cannot be assigned without the client's consent, and a transfer of the contracts or of a controlling interest is an assignment. A partnership adviser must notify clients of a change in membership, but a minority partner's admission is not an assignment requiring consent.",
+      "distractorExplanations": {
+        "a": "A change in minority partners is not an assignment; the partnership need only notify clients of the change in membership.",
+        "b": "An address change is handled by amending Form ADV with the Administrator; it does not alter or assign the client's contract.",
+        "d": "Reassigning servicing staff within the same adviser leaves the contract with the same firm, so no assignment occurs."
+      }
+    },
+    "series-63-readiness-check-s63-iar-001": {
+      "topicId": "s63-iar",
+      "prompt": "An IAR works for an SEC-registered (federal covered) adviser out of its sole office in State A and has individual clients living in States A, B and C. Where must the IAR register?",
+      "options": {
+        "a": "In State A, where the IAR maintains a place of business",
+        "b": "In States A, B and C, where the IAR's clients each reside",
+        "c": "With the SEC, which preempts state IAR registration",
+        "d": "In every state where the adviser makes a notice filing"
+      },
+      "correctOptionId": "a",
+      "explanation": "Under Section 203A of the Investment Advisers Act and SEC Rule 203A-3, a state may require an IAR of a federal covered adviser to register only if the IAR has a place of business in that state. This IAR's office is in State A, so State A registration is required, while States B and C cannot require it.",
+      "distractorExplanations": {
+        "b": "Client residence drives registration for state-registered advisers' staff, not for IARs of federal covered advisers.",
+        "c": "The SEC does not register IARs; NSMIA preserved state registration of IARs who have a place of business in the state.",
+        "d": "Confuses the firm's notice filings with the IAR's duty; IAR registration follows the IAR's own place of business."
+      }
+    },
+    "series-63-readiness-check-s63-iar-002": {
+      "topicId": "s63-iar",
+      "prompt": "A state-registered adviser employs the four people described below. Which one falls outside the IAR definition and does not need to register as an IAR?",
+      "options": {
+        "a": "A staff member who phones prospects to solicit new advisory clients for the firm's IARs",
+        "b": "An assistant who schedules meetings and updates client records but gives no advice",
+        "c": "A manager who supervises the employees who make portfolio recommendations",
+        "d": "An analyst who determines which securities the firm's advisers will recommend"
+      },
+      "correctOptionId": "b",
+      "explanation": "Under USA Section 401 an IAR includes anyone who makes recommendations or gives advice, manages accounts, determines which recommendations to make, solicits or sells advisory services, or supervises employees who do. Staff performing only clerical or ministerial functions are excluded, so the scheduling assistant need not register.",
+      "distractorExplanations": {
+        "a": "Soliciting or offering the adviser's services is expressly within the IAR definition, so this person must register.",
+        "c": "Supervising employees who give advice or make recommendations brings a manager within the IAR definition.",
+        "d": "Determining which recommendations will be made to clients is an IAR function even without direct client contact."
+      }
+    },
+    "series-63-readiness-check-s63-securities-006": {
+      "topicId": "s63-iar",
+      "prompt": "Under the NASAA model rule on IAR registration requirements, which applicant satisfies the IAR qualification examination requirement without passing another exam?",
+      "options": {
+        "a": "An applicant who passed the Series 7 and Series 63 last year",
+        "b": "An applicant who passed the Series 66 but has not passed the Series 7",
+        "c": "An applicant who holds a CPA license and no other credential",
+        "d": "An applicant who currently holds the CFA charter in good standing"
+      },
+      "correctOptionId": "d",
+      "explanation": "The NASAA IAR registration model rule qualifies an IAR who has passed the Series 65, or the Series 66 together with the Series 7, within two years before applying. It waives the exam for holders of the CFP, ChFC, PFS, CFA or CIC designation in good standing, so a current CFA charterholder qualifies without testing.",
+      "distractorExplanations": {
+        "a": "The Series 7 and 63 qualify a broker-dealer agent; neither exam covers the advisory content needed for IAR registration.",
+        "b": "The Series 66 qualifies an IAR only when combined with the Series 7; without it the applicant still needs another exam.",
+        "c": "A CPA license alone is not on the model rule's waiver list; a CPA needs the PFS credential or must pass the qualifying exam."
+      }
+    }
+  }
+}

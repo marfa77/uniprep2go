@@ -3,31 +3,31 @@
     "id": "series-7-readiness-check-s7-f1-001",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f1",
-    "prompt": "In Series 7 seeking business, what must performance advertising avoid?",
+    "prompt": "At 6:30 p.m. Pacific time, a registered rep in Los Angeles starts cold-calling residential prospects in New York City. None of the prospects has an account with the firm or has given permission to be called. How should the branch manager view these calls?",
     "options": [
       {
         "id": "a",
-        "text": "It must avoid cherry-picking, misleading time periods, unsupported projections, and omission of risks, fees, and assumptions."
+        "text": "They violate FINRA's rule, because it is 9:30 p.m. where the prospects live"
       },
       {
         "id": "b",
-        "text": "It must never avoid cherry-picking, misleading time periods, unsupported projections, and omission of risks"
+        "text": "They are permitted, because it is before 9 p.m. where the rep is calling from"
       },
       {
         "id": "c",
-        "text": "Business social media posts are regulated communications subject to supervision, retention, and content standards."
+        "text": "They are permitted, provided each number was scrubbed against the national do-not-call list"
       },
       {
         "id": "d",
-        "text": "Firms must maintain and honor do-not-call requests and comply with national and firm-specific calling restrictions."
+        "text": "They become violations once a prospect asks to be put on the firm's do-not-call list"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "It must avoid cherry-picking, misleading time periods, unsupported projections, and omission of risks, fees, and assumptions. Example: Showing only the best year of returns is misleading.",
+    "explanation": "FINRA Rule 3230 bars outbound telemarketing calls to a residence before 8 a.m. or after 9 p.m., measured in the called party's local time. At 6:30 p.m. Pacific it is 9:30 p.m. Eastern, so these cold calls fall outside the window. With no existing relationship or prior permission, no exception applies, and do-not-call scrubbing does not cure a time-of-day violation.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “It must avoid cherry-picking, misleading time periods, unsupported projections, and omission of risks, fees, and assumptions”.",
-      "c": "Not the best answer here; the right answer is “It must avoid cherry-picking, misleading time periods, unsupported projections, and omission of risks, fees, and assumptions”.",
-      "d": "Not the best answer here; the right answer is “It must avoid cherry-picking, misleading time periods, unsupported projections, and omission of risks, fees, and assumptions”."
+      "b": "Uses the caller's time zone; the 8 a.m.–9 p.m. window is measured at the called party's location, where it is already 9:30 p.m.",
+      "c": "Confuses the do-not-call requirement with the time-of-day restriction; scrubbing the national registry does not make a 9:30 p.m. call permissible.",
+      "d": "Mixes up two separate rules: a firm-specific do-not-call request governs future calls, but these calls already break the calling-hours limit."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F1). · Local QA repair (stems/distractors)"
@@ -36,31 +36,31 @@
     "id": "series-7-readiness-check-s7-f1-002",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f1",
-    "prompt": "In Series 7 seeking business, how should reps treat business obtained at seminars or networking events?",
+    "prompt": "A rep at a long-established broker-dealer is hosting a free retirement-planning seminar at a public library. She wrote a slide deck on general income strategies that names no specific fund or product, and she will hand printed copies to about 60 retail attendees. What does FINRA Rule 2210 require before she uses the deck?",
     "options": [
       {
         "id": "a",
-        "text": "Seminar and event materials are communications with the public and must never be balanced, supervised"
+        "text": "No review, since seminar materials count as unscripted public appearances"
       },
       {
         "id": "b",
-        "text": "Seminar and event materials are communications with the public and must be balanced, supervised, and not misleading."
+        "text": "A principal's review within 30 days after use, as with correspondence"
       },
       {
         "id": "c",
-        "text": "A rep must understand enough about the customer and product before recommending or soliciting a transaction."
+        "text": "Approval by a qualified registered principal before first use"
       },
       {
         "id": "d",
-        "text": "New issue communications must fairly present risks, use proceeds, issuer information, and cannot condition the market improperly."
+        "text": "Filing with FINRA at least 10 business days before the seminar date"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Seminar and event materials are communications with the public and must be balanced, supervised, and not misleading. Example: A lunch seminar about retirement income must disclose risks and conflicts.",
+    "correctOptionId": "c",
+    "explanation": "Written material distributed or made available to more than 25 retail investors within 30 calendar days is a retail communication. Under Rule 2210, an appropriately qualified principal must approve a retail communication before the earlier of its use or filing. A general deck that promotes no investment company or other filing-trigger product does not need to be filed by an established firm, but pre-approval still applies. Her live, unscripted remarks are a public appearance, which is supervised but not pre-approved.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Seminar and event materials are communications with the public and must be balanced, supervised, and not misleading”.",
-      "c": "Not the best answer here; the right answer is “Seminar and event materials are communications with the public and must be balanced, supervised, and not misleading”.",
-      "d": "Not the best answer here; the right answer is “Seminar and event materials are communications with the public and must be balanced, supervised, and not misleading”."
+      "a": "Confuses the rep's live, unscripted remarks (a public appearance) with the written slides, which are a retail communication requiring pre-approval.",
+      "b": "Applies the correspondence standard; correspondence goes to 25 or fewer retail investors, and 60 attendees makes this a retail communication.",
+      "d": "Pre-filing 10 business days ahead applies to a new member's first year and certain products, not a general deck at an established firm."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F1). · Local QA repair (stems/distractors)"
@@ -69,31 +69,31 @@
     "id": "series-7-readiness-check-s7-f1-003",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f1",
-    "prompt": "Which statement correctly describes the risk in referral arrangements as tested in Series 7 seeking business?",
+    "prompt": "A rep wants the firm's public website to feature a short written quote from a long-time retail client praising the rep's portfolio reviews. The client was not paid anything for the quote. Which disclosure must the firm include with the testimonial?",
     "options": [
       {
         "id": "a",
-        "text": "Referral fees and solicitor arrangements can create conflicts and must never comply with firm, FINRA, SEC"
+        "text": "That the client received no compensation for providing the statement"
       },
       {
         "id": "b",
-        "text": "Retail communication often requires principal approval before use depending on content and product, especially recommendations, rankings, options, investment companies, and new issue materials."
+        "text": "That it may not reflect other clients' experience or future performance"
       },
       {
         "id": "c",
-        "text": "Referral fees and solicitor arrangements can create conflicts and must comply with firm, FINRA, SEC, and state rules."
+        "text": "That the client's account returns were verified by the firm's outside auditor"
       },
       {
         "id": "d",
-        "text": "Form CRS summarizes relationship and services, fees, costs, conflicts, standards of conduct, and disciplinary history for retail investors."
+        "text": "That FINRA reviewed the testimonial and found it fair and balanced"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Referral fees and solicitor arrangements can create conflicts and must comply with firm, FINRA, SEC, and state rules. Example: Paying a third party for referrals requires approval and proper disclosure.",
+    "correctOptionId": "b",
+    "explanation": "Rule 2210 lets a retail communication use a testimonial about the firm's investment advice or performance only with prominent disclosure that it may not be representative of other customers' experience and is no guarantee of future performance or success. A paid-testimonial statement is added when the client receives more than $100; an unpaid quote needs no compensation statement.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Referral fees and solicitor arrangements can create conflicts and must comply with firm, FINRA, SEC, and state rules”.",
-      "b": "Not the best answer here; the right answer is “Referral fees and solicitor arrangements can create conflicts and must comply with firm, FINRA, SEC, and state rules”.",
-      "d": "Not the best answer here; the right answer is “Referral fees and solicitor arrangements can create conflicts and must comply with firm, FINRA, SEC, and state rules”."
+      "a": "Reverses the paid-testimonial rule: a statement about compensation is required when the client is paid more than $100, not when unpaid.",
+      "c": "Invents a verification requirement; Rule 2210 requires disclosures about representativeness and future results, not an audit of returns.",
+      "d": "Implying FINRA approval is itself misleading; FINRA does not approve communications, and the firm's principal performs the review."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F1). · Local QA repair (stems/distractors)"
@@ -102,31 +102,31 @@
     "id": "series-7-readiness-check-s7-f1-004",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f1",
-    "prompt": "In Series 7 seeking business, what makes a prospecting claim misleading?",
+    "prompt": "During a call about a new bond offering, an existing customer who traded through the firm last month tells the rep, \"Stop calling me with sales pitches.\" How must the firm handle the customer's request?",
     "options": [
       {
         "id": "a",
-        "text": "New issue communications must fairly present risks, use proceeds, issuer information, and cannot condition the market improperly."
+        "text": "Keep calling, since an existing relationship overrides do-not-call requests"
       },
       {
         "id": "b",
-        "text": "Prospecting communications must be fair, balanced, not misleading, properly supervised, and consistent with firm communication rules."
+        "text": "Stop calling if the customer's number is also on the national registry"
       },
       {
         "id": "c",
-        "text": "Seminar and event materials are communications with the public and must be balanced, supervised, and not misleading."
+        "text": "Stop sales calls for 18 months, then resume under the business relationship"
       },
       {
         "id": "d",
-        "text": "Omitting material risks, exaggerating performance, cherry-picking data, or implying guarantees can make a claim misleading"
+        "text": "Add the number to its firm-specific do-not-call list and stop sales calls"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Omitting material risks, exaggerating performance, cherry-picking data, or implying guarantees can make a claim misleading. Example: Saying “safe 10% yield” for a high-yield bond is misleading.",
+    "explanation": "Under FINRA Rule 3230 and the federal telemarketing rules, a firm must keep its own do-not-call list and honor a request not to receive telemarketing calls within a reasonable time, no later than 30 days. An established business relationship exempts calls to numbers on the national registry, but it cannot override a request made directly to the firm. The firm may still contact the customer about servicing the account, just not to solicit.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Omitting material risks, exaggerating performance, cherry-picking data, or implying guarantees can make a claim misleading”.",
-      "b": "Not the best answer here; the right answer is “Omitting material risks, exaggerating performance, cherry-picking data, or implying guarantees can make a claim misleading”.",
-      "c": "This is the answer to a different question (“In Series 7 seeking business, how should reps treat business obtained at seminars or networking events?”), not to this one."
+      "a": "Confuses the exemption: an established business relationship permits calls to numbers on the national registry, not after a firm-specific request.",
+      "b": "Treats the national registry as the test; a direct request to the firm triggers the firm-specific list whether or not the number is registered nationally.",
+      "c": "Borrows the 18-month established-business-relationship window; a firm-specific do-not-call request does not lapse after 18 months."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F1). · Local QA repair (stems/distractors)"
@@ -135,31 +135,31 @@
     "id": "series-7-readiness-check-s7-f2-001",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f2",
-    "prompt": "In Series 7 customer accounts, how does risk capacity differ from risk tolerance?",
+    "prompt": "A U.S. citizen applying for a new individual brokerage account gives only a P.O. box as his address and says he prefers not to share where he lives. He supplies his name, date of birth, and Social Security number. Under the firm's Customer Identification Program, what should the rep do?",
     "options": [
       {
         "id": "a",
-        "text": "Risk tolerance is willingness; risk capacity is financial ability to absorb loss"
+        "text": "Accept the P.O. box, since any valid mailing address meets CIP standards"
       },
       {
         "id": "b",
-        "text": "The firm must gather options-specific profile information, approve the account for a level of trading, and deliver required disclosures."
+        "text": "Accept the P.O. box once his Social Security number has been verified"
       },
       {
         "id": "c",
-        "text": "Liquidity needs determine whether customer can tolerate lockups, penalties, or thin secondary markets."
+        "text": "Obtain a residential or business street address before opening the account"
       },
       {
         "id": "d",
-        "text": "Retirement accounts have contribution limits, tax rules, distribution rules, and prohibited transaction concerns."
+        "text": "Open the account and file a SAR, since withholding an address is suspicious"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Risk tolerance is willingness; risk capacity is financial ability to absorb loss. Both matter. Example: A wealthy but anxious investor may have high capacity but low tolerance.",
+    "correctOptionId": "c",
+    "explanation": "CIP rules under the USA PATRIOT Act require the firm to obtain, before opening an account, an individual's name, date of birth, address, and identification number. For an individual, the address must be a residential or business street address; a P.O. box works only as a mailing address. The firm then verifies identity within a reasonable time and should not open the account if required information is withheld.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Risk tolerance is willingness; risk capacity is financial ability to absorb loss”.",
-      "c": "This is the answer to a different question (“Which of the following best answers this item: In Series 7 customer accounts, why document liquidity needs?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Risk tolerance is willingness; risk capacity is financial ability to absorb loss”."
+      "a": "Ignores the street-address requirement; a P.O. box can be a mailing address, but CIP needs a residential or business street address.",
+      "b": "Verifying the SSN satisfies a different CIP data element; it does not replace the required residential or business street address.",
+      "d": "Jumps to a SAR; the first step is obtaining the missing CIP element, and a SAR depends on facts suggesting suspicious activity, not one gap."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F2). · Local QA repair (stems/distractors)"
@@ -168,31 +168,31 @@
     "id": "series-7-readiness-check-s7-f2-002",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f2",
-    "prompt": "For the Series 7, which of the following best answers this item: In Series 7 customer accounts, why is a corporate resolution needed?",
+    "prompt": "The treasurer of a small manufacturing corporation wants to open a margin account to invest the company's excess cash. The firm already has a corporate resolution naming the officers who may trade. Which additional document shows that the corporation is permitted to buy securities on margin?",
     "options": [
       {
         "id": "a",
-        "text": "CIP requires collecting and verifying identifying information before or shortly after opening an account."
+        "text": "The corporate charter or bylaws authorizing margin purchases"
       },
       {
         "id": "b",
-        "text": "It identifies who is authorized to act for a corporate account"
+        "text": "The company's most recent audited balance sheet and income statement"
       },
       {
         "id": "c",
-        "text": "It guides product and strategy selection with risk, liquidity, time horizon, and financial status."
+        "text": "A personal guarantee of the margin debt signed by the treasurer"
       },
       {
         "id": "d",
-        "text": "It permits borrowing against eligible securities and includes hypothecation and credit terms, subject to margin rules."
+        "text": "A trading authorization signed by each of the company's shareholders"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "It identifies who is authorized to act for a corporate account. Example: A treasurer may be authorized to trade corporate funds.",
+    "correctOptionId": "a",
+    "explanation": "A corporate resolution identifies who may act for the corporation, but a margin account also needs evidence that the corporation itself has the power to borrow to buy securities. That authority comes from the corporate charter (articles of incorporation) or bylaws, which the firm keeps on file with the margin agreement.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 7 customer accounts, what does a Customer Identification Program require?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “It identifies who is authorized to act for a corporate account”.",
-      "d": "Not the best answer here; the right answer is “It identifies who is authorized to act for a corporate account”."
+      "b": "Financial statements show creditworthiness, not legal authority; they cannot establish that the charter permits margin borrowing.",
+      "c": "A personal guarantee covers repayment risk; it does not show that the corporation is legally empowered to borrow on margin.",
+      "d": "Shareholders do not authorize trading; the board acts through the corporate resolution, and the charter or bylaws define corporate powers."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F2). · Local QA repair (stems/distractors)"
@@ -201,31 +201,31 @@
     "id": "series-7-readiness-check-s7-f2-003",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f2",
-    "prompt": "In Series 7 customer accounts, what does a Customer Identification Program require?",
+    "prompt": "An 81-year-old customer asks to wire $90,000 to an overseas \"friend\" she met online. Suspecting financial exploitation, the firm places a temporary hold on the disbursement under FINRA Rule 2165. What notice must the firm give after placing the hold?",
     "options": [
       {
         "id": "a",
-        "text": "Risk tolerance is willingness; risk capacity is financial ability to absorb loss"
+        "text": "Notify the state securities regulator within 15 business days of the hold"
       },
       {
         "id": "b",
-        "text": "It identifies who is authorized to act for a corporate account"
+        "text": "Notify the customer's adult children, whether or not they are on the account"
       },
       {
         "id": "c",
-        "text": "CIP requires collecting and verifying identifying information before or shortly after opening an account"
+        "text": "Notify the overseas recipient that the wire is under internal review"
       },
       {
         "id": "d",
-        "text": "Liquidity needs determine whether customer can tolerate lockups, penalties, or thin secondary markets"
+        "text": "Within 2 business days, notify authorized parties and the trusted contact"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "CIP requires collecting and verifying identifying information before or shortly after opening an account. Example: Name, DOB, address, and tax ID are typical for individuals.",
+    "correctOptionId": "d",
+    "explanation": "Rule 2165 lets a firm delay a disbursement or transaction for a specified adult (65 or older, or 18+ with a qualifying impairment) when it reasonably believes exploitation is occurring. Within two business days it must notify everyone authorized to transact on the account and the trusted contact person, unless that person is unavailable or suspected of the exploitation. The initial hold runs up to 15 business days and can be extended while the firm investigates.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 7 customer accounts, how does risk capacity differ from risk tolerance?”), not to this one.",
-      "b": "This is the answer to a different question (“Which of the following best answers this item: In Series 7 customer accounts, why is a corporate resolution…”), not to this one.",
-      "d": "This is the answer to a different question (“Which of the following best answers this item: In Series 7 customer accounts, why document liquidity needs?”), not to this one."
+      "a": "Confuses the 15-business-day length of the initial hold with a notice duty; a regulator referral can extend the hold but is not the required notice.",
+      "b": "Family members get notice only if they are authorized on the account or named as the trusted contact; relationship alone does not qualify.",
+      "c": "Tipping off the suspected recipient defeats the hold's purpose; notice goes to account parties and the trusted contact, not the payee."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F2). · Local QA repair (stems/distractors)"
@@ -234,31 +234,31 @@
     "id": "series-7-readiness-check-s7-f2-004",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f2",
-    "prompt": "For the Series 7, which of the following best answers this item: In Series 7 customer accounts, why document liquidity needs?",
+    "prompt": "Two unrelated business partners own a joint brokerage account as tenants in common, with a 60/40 ownership split. The partner who owns 60% dies. Which statement correctly describes what happens next?",
     "options": [
       {
         "id": "a",
-        "text": "Risk tolerance is willingness; risk capacity is financial ability to absorb loss"
+        "text": "Her 60% passes to the surviving partner under the right of survivorship"
       },
       {
         "id": "b",
-        "text": "It identifies who is authorized to act for a corporate account"
+        "text": "Her 60% goes to her estate, and the account is frozen pending estate papers"
       },
       {
         "id": "c",
-        "text": "CIP requires collecting and verifying identifying information before or shortly after opening an account"
+        "text": "Her interest resets to 50%, with the other half going to the surviving partner"
       },
       {
         "id": "d",
-        "text": "Liquidity needs determine whether customer can tolerate lockups, penalties, or thin secondary markets"
+        "text": "The surviving partner may keep trading the whole account until probate closes"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Liquidity needs determine whether customer can tolerate lockups, penalties, or thin secondary markets. Example: A near-term tuition need argues against illiquid DPPs.",
+    "correctOptionId": "b",
+    "explanation": "Tenants in common hold fractional interests, which may be unequal, with no right of survivorship. When one tenant dies, her share becomes part of her estate and passes under her will or state intestacy law. The firm freezes the account until it receives documents such as a death certificate and letters testamentary, so the survivor cannot trade the account in the meantime.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 7 customer accounts, how does risk capacity differ from risk tolerance?”), not to this one.",
-      "b": "This is the answer to a different question (“Which of the following best answers this item: In Series 7 customer accounts, why is a corporate resolution…”), not to this one.",
-      "c": "This is the answer to a different question (“In Series 7 customer accounts, what does a Customer Identification Program require?”), not to this one."
+      "a": "Describes JTWROS; tenants in common have no right of survivorship, so the deceased's share does not pass to the co-owner.",
+      "c": "Invents an equalization step; TIC interests may be unequal, and the deceased's 60% passes intact to her estate.",
+      "d": "Ignores the freeze on a deceased owner's account; the estate documents must be processed before the account trades again."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F2). · Local QA repair (stems/distractors)"
@@ -267,31 +267,31 @@
     "id": "series-7-readiness-check-s7-f2-005",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f2",
-    "prompt": "Why does a customer’s federal income tax bracket matter when evaluating suitability of municipal bonds and tax-deferred products on the Series 7?",
+    "prompt": "A new customer wants to start buying listed call options as soon as possible. Which sequence of steps complies with FINRA's options account rules?",
     "options": [
       {
         "id": "a",
-        "text": "It changes after-tax yield comparisons among munis, taxable bonds, and tax-deferred accounts"
+        "text": "Customer signs the options agreement, then receives the ODD, then may trade"
       },
       {
         "id": "b",
-        "text": "It sets the FINRA markup ceiling at a fixed 5% for every trade"
+        "text": "Customer trades, then receives the ODD and principal approval within 15 days"
       },
       {
         "id": "c",
-        "text": "It determines whether CIP identity verification is required"
+        "text": "Customer receives the ODD, a principal approves, then trading starts"
       },
       {
         "id": "d",
-        "text": "It eliminates interest-rate risk on all bond holdings"
+        "text": "Customer receives the ODD and trades, then a principal approves within 15 days"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Tax bracket drives the value of tax-exempt interest and the relative benefit of tax deferral versus taxable alternatives.",
+    "correctOptionId": "c",
+    "explanation": "Under FINRA Rule 2360, the customer must receive the Options Disclosure Document at or before the time the account is approved, and a registered options principal must approve the account before the first options trade. The signed options agreement is due within 15 days after approval; if it is not returned, the customer is limited to closing transactions.",
     "distractorExplanations": {
-      "b": "Markups are judged under fair pricing standards; tax bracket does not set a universal 5% cap.",
-      "c": "CIP is an identity requirement, not a tax-bracket function.",
-      "d": "Tax status does not remove interest-rate risk."
+      "a": "Puts the signed agreement first; the agreement may follow approval by up to 15 days, while the ODD is due at or before approval.",
+      "b": "Lets trading precede both the ODD and approval; a principal must approve the account before any opening options transaction.",
+      "d": "Misplaces the 15-day window; it applies to returning the signed agreement after approval, not to approving the account after trading."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F2). · Local QA repair (stems/distractors)"
@@ -300,31 +300,31 @@
     "id": "series-7-readiness-check-s7-f2-006",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f2",
-    "prompt": "REITs primarily provide exposure to:",
+    "prompt": "A customer calls her rep: \"Buy 500 shares of XYZ for me sometime today; you decide the exact time and price.\" The account has no written discretionary authorization. How may the rep handle the order?",
     "options": [
       {
         "id": "a",
-        "text": "Treasury-only portfolios"
+        "text": "Accept it; time-and-price discretion for the day needs no written authority"
       },
       {
         "id": "b",
-        "text": "Real estate cash flows via a pooled security"
+        "text": "Decline it until the customer signs a written discretionary authorization"
       },
       {
         "id": "c",
-        "text": "FDIC-insured CDs"
+        "text": "Accept it, and switch to a similar stock if XYZ looks weak later in the day"
       },
       {
         "id": "d",
-        "text": "Municipal general obligation taxes"
+        "text": "Accept it as a good-till-canceled order that stays open until she revokes it"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "REITs own/finance real estate and pass through income characteristics.",
+    "correctOptionId": "a",
+    "explanation": "When the customer specifies the action, the security, and the quantity, the rep is choosing only time and price, which is not discretion under FINRA Rule 3260. No written authorization is needed, but time-and-price discretion is limited to the day it is granted unless the customer gives a signed, dated written instruction otherwise. Choosing the security, quantity, or action would require written discretionary authority.",
     "distractorExplanations": {
-      "a": "Different asset.",
-      "c": "Bank products.",
-      "d": "Munis are different."
+      "b": "Treats time and price as full discretion; written authority is needed when the rep chooses the security, quantity, or buy/sell action.",
+      "c": "Choosing a different stock is discretion over the asset, which requires written authorization the account does not have.",
+      "d": "Time-and-price discretion expires at the end of the day granted unless the customer signs a dated written instruction extending it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -333,31 +333,31 @@
     "id": "series-7-readiness-check-s7-f3-001",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, how does a rights offering affect shareholders?",
+    "prompt": "ABC Corp. announces a rights offering in which 4 rights plus $34 buy one new share. The stock still trades cum rights at $40. A customer holding 400 shares asks what each right is theoretically worth today. What is the theoretical value of one right?",
     "options": [
       {
         "id": "a",
-        "text": "Correlation measures how two investments move relative to each other"
+        "text": "$1.20"
       },
       {
         "id": "b",
-        "text": "A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction."
+        "text": "$1.50"
       },
       {
         "id": "c",
-        "text": "It lets current shareholders buy additional shares, often below market, to maintain ownership percentage"
+        "text": "$6.00"
       },
       {
         "id": "d",
-        "text": "YTC is important for premium callable bonds likely to be redeemed before maturity"
+        "text": "$10.00"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "It lets current shareholders buy additional shares, often below market, to maintain ownership percentage. Example: Existing holders receive rights to subscribe.",
+    "correctOptionId": "a",
+    "explanation": "While the stock trades cum rights, its price still includes the right, so value = (market price - subscription price) ÷ (rights per new share + 1) = (40 - 34) ÷ (4 + 1) = 6 ÷ 5 = $1.20. After the ex-rights date the +1 drops out: (ex-rights price - subscription price) ÷ rights per share.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes correlation ? (workplace scenario 7) as tested in Series 7…”), not to this one.",
-      "b": "This is the answer to a different question (“Which statement correctly describes a long straddle as tested in Series 7 recommendations and products?”), not to this one.",
-      "d": "This is the answer to a different question (“In Series 7 recommendations and products, when is yield to call especially important?”), not to this one."
+      "b": "Uses the ex-rights formula, (40 - 34) ÷ 4, on a cum-rights price; while the stock trades with the right attached, divide by N + 1.",
+      "c": "That is the full $6 discount on one new share, but it takes 4 rights to buy that share, so the discount is spread across the rights.",
+      "d": "Divides the market price by the rights ratio (40 ÷ 4); a right is worth only the discount below market, not a slice of the share price."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -366,31 +366,31 @@
     "id": "series-7-readiness-check-s7-f3-002",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes correlation as tested in Series 7 recommendations and products?",
+    "prompt": "The same city has two new issues outstanding. One financed a parking garage and is payable solely from parking fees; the other financed an elementary school and is secured by the city's unlimited ad valorem taxing power. A customer asks how the two differ. Which comparison is accurate?",
     "options": [
       {
         "id": "a",
-        "text": "Use it to compare tax-exempt and taxable income for investors in taxable accounts."
+        "text": "The school bond is a GO bond backed by taxes; the garage bond is a revenue bond paid from fees"
       },
       {
         "id": "b",
-        "text": "A put bond lets the holder require issuer repurchase at stated times/prices, potentially reducing interest-rate risk."
+        "text": "The garage bond is a GO bond backed by fees; the school bond is a revenue bond paid from taxes"
       },
       {
         "id": "c",
-        "text": "Long put max gain is strike minus premium if the underlying falls to zero."
+        "text": "Both are GO bonds because the same city issued them and its taxing power backs each one"
       },
       {
         "id": "d",
-        "text": "Correlation measures how two investments move relative to each other"
+        "text": "The school bond needs a feasibility study to issue; the garage bond needs voter approval to issue"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Correlation measures how two investments move relative to each other. Low or negative correlation improves diversification. Example: Stocks and high-quality bonds may have imperfect correlation.",
+    "correctOptionId": "a",
+    "explanation": "A general obligation bond is backed by the issuer's full faith and credit, meaning its power to levy ad valorem (property) taxes, and usually needs voter approval. A revenue bond is paid only from the financed facility's revenues, such as parking fees, and is judged on a feasibility study and debt service coverage rather than voter approval.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Correlation measures how two investments move relative to each other”.",
-      "b": "Not the best answer here; the right answer is “Correlation measures how two investments move relative to each other”.",
-      "c": "Not the best answer here; the right answer is “Correlation measures how two investments move relative to each other”."
+      "b": "Swaps the labels; a bond paid solely from user fees is a revenue bond, and a bond secured by unlimited taxing power is a GO bond.",
+      "c": "The bond type depends on the pledged source of payment, not the issuer; one city can sell both GO bonds and revenue bonds.",
+      "d": "Reverses the process: GO bonds usually need voter approval, while revenue bonds rely on a feasibility study of the facility's revenues."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -399,31 +399,31 @@
     "id": "series-7-readiness-check-s7-f3-003",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a long straddle as tested in Series 7 recommendations and products?",
+    "prompt": "With XYZ at $50, a customer buys 1 XYZ Mar 50 call at 3 and 1 XYZ Mar 50 put at 2. At expiration, at which XYZ prices does the position break even?",
     "options": [
       {
         "id": "a",
-        "text": "A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction."
+        "text": "$40 and $60"
       },
       {
         "id": "b",
-        "text": "Annual interest divided by market price."
+        "text": "$45 and $55"
       },
       {
         "id": "c",
-        "text": "Parity links convertible value to the value of shares received upon conversion."
+        "text": "$47.50 and $52.50"
       },
       {
         "id": "d",
-        "text": "A 529 plan is tax-advantaged education savings plan, often state-sponsored, with state tax and qualified education expense considerations."
+        "text": "$48 and $53"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction. Example: Useful when volatility expected but direction uncertain.",
+    "correctOptionId": "b",
+    "explanation": "A long straddle has two breakevens because either leg can pay off, but only one leg finishes in the money, so that leg must recover the total premium. Total premium = 3 + 2 = 5. Upside: 50 + 5 = 55. Downside: 50 - 5 = 45. Max loss is $500 if XYZ closes exactly at 50.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes conversion parity as tested in Series 7 recommendations and products?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction”."
+      "a": "Doubles the combined premium; each breakeven is the strike plus or minus the total premium of 5 points, not 10.",
+      "c": "Splits the 5-point premium between the two sides; whichever leg finishes in the money must recover the full 5 points by itself.",
+      "d": "Uses each leg's own premium (50 + 3 and 50 - 2); only one leg can be in the money, so it must recover both premiums."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -432,31 +432,31 @@
     "id": "series-7-readiness-check-s7-f3-004",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, when is yield to call especially important?",
+    "prompt": "A customer buys a 6% corporate bond at 108. It matures in 15 years and is callable at par in 5 years. Ranked from highest to lowest, how do its yields compare?",
     "options": [
       {
         "id": "a",
-        "text": "A reverse split reduces share count and increases price proportionally, before market effects."
+        "text": "Yield to call, yield to maturity, current yield, nominal yield"
       },
       {
         "id": "b",
-        "text": "YTC is important for premium callable bonds likely to be redeemed before maturity"
+        "text": "Nominal and current yield tie at 6%, then yield to maturity, then yield to call"
       },
       {
         "id": "c",
-        "text": "A protective put is long stock plus long put, creating downside protection at cost of premium."
+        "text": "Nominal yield, current yield, yield to call, yield to maturity"
       },
       {
         "id": "d",
-        "text": "Class C shares often have level loads/higher ongoing expenses and may fit shorter holding periods compared with A shares."
+        "text": "Nominal yield, current yield, yield to maturity, yield to call"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "YTC is important for premium callable bonds likely to be redeemed before maturity. Example: A premium bond with near call date may have low YTC.",
+    "correctOptionId": "d",
+    "explanation": "Buying above par means the 8-point premium is lost by redemption. Current yield = $60 ÷ $1,080 = 5.56%, below the 6% nominal. YTM spreads the premium loss over 15 years; YTC squeezes it into 5 years, so YTC is lowest. For a premium callable bond the rep must quote the lower yield to worst, here the yield to call.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes a reverse split as tested in Series 7 recommendations and products?”), not to this one.",
-      "c": "This is the answer to a different question (“Which statement correctly describes a protective put as tested in Series 7 recommendations and products?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “YTC is important for premium callable bonds likely to be redeemed before maturity”."
+      "a": "That is the discount-bond order; when a bond is bought below par each yield beyond nominal rises, but this bond was bought above par.",
+      "b": "Current yield uses the market price: $60 ÷ $1,080 = 5.56%, so it falls below the 6% nominal yield whenever the price is above par.",
+      "c": "Swaps YTM and YTC; the premium is amortized over 5 years to the call versus 15 years to maturity, so YTC is the lower of the two."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -465,31 +465,31 @@
     "id": "series-7-readiness-check-s7-f3-005",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, how does a call feature affect suitability?",
+    "prompt": "A customer must pay a fixed $50,000 obligation in exactly 10 years. She wants to lock in her return today with no reinvestment risk and will hold the position in her traditional IRA. Which Treasury security best fits?",
     "options": [
       {
         "id": "a",
-        "text": "Long call max gain is theoretically unlimited because the stock can rise without fixed ceiling."
+        "text": "Treasury Inflation-Protected Securities maturing in 10 years"
       },
       {
         "id": "b",
-        "text": "A reverse split reduces share count and increases price proportionally, before market effects."
+        "text": "Treasury STRIPS maturing in 10 years"
       },
       {
         "id": "c",
-        "text": "Call features cap upside when rates fall and create reinvestment risk, especially for premium bonds"
+        "text": "10-year Treasury notes paying semiannual interest"
       },
       {
         "id": "d",
-        "text": "A high-yield bond is below investment grade and offers higher yield for higher credit/default risk."
+        "text": "26-week Treasury bills rolled over at each maturity"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Call features cap upside when rates fall and create reinvestment risk, especially for premium bonds. Example: High coupon callable bond may be redeemed early.",
+    "correctOptionId": "b",
+    "explanation": "STRIPS are zero-coupon Treasury principal or interest components bought at a discount and paid at face value at maturity. With no coupons to reinvest, the yield is locked in at purchase. Holding them in an IRA also avoids the annual phantom-income tax on accreted discount that a taxable account would owe.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Call features cap upside when rates fall and create reinvestment risk, especially for premium bonds”.",
-      "b": "This is the answer to a different question (“Which statement correctly describes a reverse split as tested in Series 7 recommendations and products?”), not to this one.",
-      "d": "This is the answer to a different question (“Which statement correctly describes a high-yield bond as tested in Series 7 recommendations and products?”), not to this one."
+      "a": "TIPS adjust principal for CPI and pay semiannual interest, so coupons must be reinvested and the final dollar amount is not known in advance.",
+      "c": "Semiannual coupons must be reinvested at future rates, which is exactly the reinvestment risk the customer wants to avoid.",
+      "d": "Rolling bills exposes every rollover to whatever rates prevail at that time; it maximizes reinvestment risk rather than removing it."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -498,31 +498,31 @@
     "id": "series-7-readiness-check-s7-f3-006",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, what risk does a short put have?",
+    "prompt": "With DEF at $42, a customer writes 1 uncovered DEF Jun 40 put at 3. What are her maximum potential gain and maximum potential loss on the position?",
     "options": [
       {
         "id": "a",
-        "text": "Annual interest divided by market price."
+        "text": "Max gain $300; max loss $3,700"
       },
       {
         "id": "b",
-        "text": "A put bond lets the holder require issuer repurchase at stated times/prices, potentially reducing interest-rate risk."
+        "text": "Max gain $300; max loss $4,000"
       },
       {
         "id": "c",
-        "text": "It requires reasonable diligence, care, and skill in understanding risks/rewards/costs and having a reasonable basis for recommendations."
+        "text": "Max gain $3,700; max loss $300"
       },
       {
         "id": "d",
-        "text": "Short put has substantial downside risk if stock falls, with max loss approximately strike minus premium if stock goes to zero"
+        "text": "Max gain $300; max loss unlimited"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Short put has substantial downside risk if stock falls, with max loss approximately strike minus premium if stock goes to zero. Example: Selling a 50 put for 3 can lose 47 per share.",
+    "correctOptionId": "a",
+    "explanation": "A put writer keeps the $300 premium if DEF stays at or above 40. The worst case is DEF going to zero: she must buy worthless stock at $40, losing $4,000, offset by the $300 premium. Max loss = (40 - 3) × 100 = $3,700, and breakeven is 37.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Short put has substantial downside risk if stock falls, with max loss approximately strike minus premium if stock goes to zero”.",
-      "b": "Not the best answer here; the right answer is “Short put has substantial downside risk if stock falls, with max loss approximately strike minus premium if stock goes to zero”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes Reg BI care obligation as tested in Series 7 recommendations and products?”), not to this one."
+      "b": "Ignores the $300 premium received; the premium reduces the loss if DEF falls to zero, so the loss is $4,000 - $300 = $3,700.",
+      "c": "Reverses the roles; $300 is the most the writer can gain, and $3,700 is the writer's worst-case loss, not a potential gain.",
+      "d": "Unlimited loss belongs to an uncovered call writer; a stock cannot fall below zero, so a short put's loss is capped at strike minus premium."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -531,31 +531,31 @@
     "id": "series-7-readiness-check-s7-f3-007",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a covered call as tested in Series 7 recommendations and products?",
+    "prompt": "A customer buys 100 shares of GHI at $52 and at the same time writes 1 GHI Sep 55 call at 2. At expiration GHI trades at $61 and the call is exercised against her. What is her overall result?",
     "options": [
       {
         "id": "a",
-        "text": "A covered call is long stock plus short call, generating premium but limiting upside"
+        "text": "$200 gain"
       },
       {
         "id": "b",
-        "text": "Reps must disclose and apply available sales charge discounts such as breakpoints, LOIs, and rights of accumulation."
+        "text": "$300 gain"
       },
       {
         "id": "c",
-        "text": "Convexity measures curvature in the bond price-yield relationship and improves duration-based price estimates for larger rate moves."
+        "text": "$500 gain"
       },
       {
         "id": "d",
-        "text": "Call features cap upside when rates fall and create reinvestment risk, especially for premium bonds."
+        "text": "$1,100 gain"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "A covered call is long stock plus short call, generating premium but limiting upside. Example: Own 100 shares and sell 1 call.",
+    "correctOptionId": "c",
+    "explanation": "Once the call is exercised, the stock is sold at the $55 strike regardless of the $61 market price. Stock gain = 55 - 52 = 3 points, plus the 2-point premium = 5 points × 100 = $500. That is also the covered call's maximum gain: strike - cost + premium.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“In Series 7 recommendations and products, what must reps do with breakpoints?”), not to this one.",
-      "c": "This is the answer to a different question (“Which statement correctly describes convexity as tested in Series 7 recommendations and products?”), not to this one.",
-      "d": "This is the answer to a different question (“In Series 7 recommendations and products, how does a call feature affect suitability?”), not to this one."
+      "a": "Counts only the premium; when the call is exercised she also earns the 3-point gain from her $52 cost up to the $55 strike.",
+      "b": "Counts the stock gain up to the strike but leaves out the $200 premium collected when the call was written.",
+      "d": "Uses the $61 market price; the short call caps her sale price at $55, so gains above the strike belong to the call buyer."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -564,31 +564,31 @@
     "id": "series-7-readiness-check-s7-f3-008",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes cost basis as tested in Series 7 recommendations and products?",
+    "prompt": "Mortgage rates fall sharply and refinancings surge in a CMO's collateral pool. A customer's tranche, sold with an expected average life of 9 years, now projects an average life of 3 years. Which tranche did she most likely buy?",
     "options": [
       {
         "id": "a",
-        "text": "Cost basis is never the tax basis used to calculate gain or loss, adjusted for events like splits"
+        "text": "A planned amortization class (PAC) tranche"
       },
       {
         "id": "b",
-        "text": "Cost basis is the tax basis used to calculate gain or loss, adjusted for events like splits, reinvestments, or return of capital."
+        "text": "A targeted amortization class (TAC) tranche"
       },
       {
         "id": "c",
-        "text": "YTC is important for premium callable bonds likely to be redeemed before maturity."
+        "text": "An accrual (Z) tranche paid after the earlier classes retire"
       },
       {
         "id": "d",
-        "text": "Asset allocation divides investments among asset classes based on goals, time horizon, risk tolerance, and constraints."
+        "text": "A companion (support) tranche"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Cost basis is the tax basis used to calculate gain or loss, adjusted for events like splits, reinvestments, or return of capital. Example: Dividend reinvestment increases basis.",
+    "correctOptionId": "d",
+    "explanation": "Companion tranches exist to absorb prepayment variability so PAC holders get a predictable schedule. When refinancings surge, excess principal is paid to the companion first, so its average life shortens sharply and the holder reinvests at lower rates. Companions carry the most prepayment and extension risk, which is why they offer the highest yields.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Cost basis is the tax basis used to calculate gain or loss, adjusted for events like splits, reinvestments, or return of capital”.",
-      "c": "This is the answer to a different question (“In Series 7 recommendations and products, when is yield to call especially important?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Cost basis is the tax basis used to calculate gain or loss, adjusted for events like splits, reinvestments, or return of capital”."
+      "a": "PACs carry the most protection; principal follows a set schedule within a prepayment band, and the excess is shifted to companion classes.",
+      "b": "TACs are protected against faster prepayments, with the excess shifted to companions; a sharp shortening points to the support class.",
+      "c": "The Z-tranche accrues interest and receives principal only after earlier classes retire, so faster prepayments reach it last, not first."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -597,31 +597,31 @@
     "id": "series-7-readiness-check-s7-f3-009",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a long strangle as tested in Series 7 recommendations and products?",
+    "prompt": "A customer buys 1 JKL Oct 45 call at 5 and sells 1 JKL Oct 50 call at 2 in the same account. What are the position's maximum gain, maximum loss, and breakeven at expiration?",
     "options": [
       {
         "id": "a",
-        "text": "Strike plus premium."
+        "text": "Max gain $200; max loss $300; breakeven $47"
       },
       {
         "id": "b",
-        "text": "Reg T generally requires 50% initial margin for eligible equity purchases."
+        "text": "Max gain $200; max loss $300; breakeven $48"
       },
       {
         "id": "c",
-        "text": "A long strangle buys out-of-the-money call and put with same expiration, usually cheaper than straddle but requiring larger move."
+        "text": "Max gain $300; max loss $200; breakeven $48"
       },
       {
         "id": "d",
-        "text": "Short put has substantial downside risk if stock falls, with max loss approximately strike minus premium if stock goes to zero."
+        "text": "Max gain unlimited; max loss $300; breakeven $48"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "A long strangle buys out-of-the-money call and put with same expiration, usually cheaper than straddle but requiring larger move. Example: Buy 55 call and 45 put when stock is 50.",
+    "correctOptionId": "b",
+    "explanation": "This is a debit call (bull) spread. Net debit = 5 - 2 = 3, which is the max loss ($300) if JKL ends at or below 45. Max gain = strike difference - debit = (50 - 45) - 3 = 2, or $200, at or above 50. Breakeven = lower strike + net debit = 45 + 3 = 48.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A long strangle buys out-of-the-money call and put with same expiration, usually cheaper than straddle but requiring larger move”.",
-      "b": "Not the best answer here; the right answer is “A long strangle buys out-of-the-money call and put with same expiration, usually cheaper than straddle but requiring larger move”.",
-      "d": "This is the answer to a different question (“In Series 7 recommendations and products, what risk does a short put have?”), not to this one."
+      "a": "Subtracts the debit from the higher strike; call-spread breakeven is the lower strike plus the net premium, 45 + 3 = 48.",
+      "c": "Reverses gain and loss; the $300 net debit is what she can lose, and the 2 points left of the 5-point spread are what she can gain.",
+      "d": "Ignores the short 50 call, which caps the upside; above 50 any further gain on the long call is offset by the short call."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -630,31 +630,31 @@
     "id": "series-7-readiness-check-s7-f3-010",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes Reg BI care obligation as tested in Series 7 recommendations and products?",
+    "prompt": "A customer in the 32% federal tax bracket is offered an in-state municipal GO bond yielding 4.08%. Considering federal tax only, what yield would a fully taxable corporate bond need to match it?",
     "options": [
       {
         "id": "a",
-        "text": "It forbids reasonable diligence, care, and skill in understanding risks/rewards/costs and having a"
+        "text": "2.77%"
       },
       {
         "id": "b",
-        "text": "Duration estimates bond price sensitivity to interest-rate changes."
+        "text": "5.39%"
       },
       {
         "id": "c",
-        "text": "Class A shares typically charge a front-end load and lower ongoing expenses than some other classes."
+        "text": "6.00%"
       },
       {
         "id": "d",
-        "text": "It requires reasonable diligence, care, and skill in understanding risks/rewards/costs and having a reasonable basis for recommendations."
+        "text": "12.75%"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "It requires reasonable diligence, care, and skill in understanding risks/rewards/costs and having a reasonable basis for recommendations. Example: Compare costs and risks before recommending rollover or fund share class.",
+    "correctOptionId": "c",
+    "explanation": "Tax-equivalent yield = municipal yield ÷ (1 - tax bracket) = 4.08% ÷ (1 - 0.32) = 4.08% ÷ 0.68 = 6.00%. A taxable bond must yield 6.00% for the customer to keep the same 4.08% after federal income tax.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “It requires reasonable diligence, care, and skill in understanding risks/rewards/costs and having a reasonable basis for recommendations”.",
-      "b": "Not the best answer here; the right answer is “It requires reasonable diligence, care, and skill in understanding risks/rewards/costs and having a reasonable basis for recommendations”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes Class A mutual fund shares as tested in Series 7 recommendations and…”), not to this one."
+      "a": "Multiplies by (1 - 0.32); that converts a taxable yield into its after-tax yield, which runs the formula backwards for a muni.",
+      "b": "Multiplies the muni yield by 1.32; grossing up requires dividing by 0.68, which gives a larger number than adding 32%.",
+      "d": "Divides by the tax rate (0.32) instead of by one minus the tax rate (0.68)."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -663,32 +663,32 @@
     "id": "series-7-readiness-check-s7-f3-011",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, how is current yield calculated?",
+    "prompt": "A customer buys a 4% corporate bond maturing in 10 years at a price of 80. She wants to know the income return on her purchase price right now. What is the bond's current yield?",
     "formula": "$$Current\\ Yield=\\frac{Annual\\ Interest}{Market\\ Price}$$",
     "options": [
       {
         "id": "a",
-        "text": "Annual interest divided by market price"
+        "text": "3.2%"
       },
       {
         "id": "b",
-        "text": "Clean price excludes accrued interest; dirty price includes accrued interest."
+        "text": "4%"
       },
       {
         "id": "c",
-        "text": "Call features cap upside when rates fall and create reinvestment risk, especially for premium bonds."
+        "text": "5%"
       },
       {
         "id": "d",
-        "text": "Equity in a short account reflects credit balance minus short market value."
+        "text": "6.67%"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Annual interest divided by market price. Formula: $$Current\\ Yield=\\frac{Annual\\ Interest}{Market\\ Price}$$ Example: A $60 coupon on $1,200 price yields 5%.",
+    "correctOptionId": "c",
+    "explanation": "Current yield = annual interest ÷ market price. The coupon is fixed on par: 4% × $1,000 = $40. A price of 80 means $800. $40 ÷ $800 = 5%. Because the bond trades at a discount, current yield sits above the 4% nominal yield and below the yield to maturity.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“In Series 7 recommendations and products, how do clean and dirty bond prices differ?”), not to this one.",
-      "c": "This is the answer to a different question (“In Series 7 recommendations and products, how does a call feature affect suitability?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Annual interest divided by market price”."
+      "a": "Multiplies the coupon rate by the price (4% × 0.80); the $40 coupon is fixed on par and must be divided by the $800 price.",
+      "b": "That is the nominal (coupon) yield, which is based on par; current yield uses the $800 market price.",
+      "d": "That is the approximate yield to maturity, ($40 + $20 yearly discount accretion) ÷ $900 average price; current yield ignores accretion."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -697,31 +697,31 @@
     "id": "series-7-readiness-check-s7-f3-012",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, how do ETFs differ from open-end mutual funds?",
+    "prompt": "A municipal finance professional at a dealer contributes $500 to the reelection campaign of the state treasurer, whom he is entitled to vote for. The treasurer's office selects underwriters for the state's negotiated GO bond deals. Under MSRB Rule G-37, what is the consequence for the dealer?",
     "options": [
       {
         "id": "a",
-        "text": "ABLE accounts provide tax-advantaged savings for eligible individuals with disabilities while preserving certain benefits."
+        "text": "No effect, since contributions up to $1,000 per election are exempt for voters"
       },
       {
         "id": "b",
-        "text": "ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close"
+        "text": "The dealer keeps the business but must disclose the gift in the official statement"
       },
       {
         "id": "c",
-        "text": "Variable products are securities; fixed insurance products may not be securities but still have insurance regulation and suitability concerns."
+        "text": "The MFP alone is barred from working on the issuer's deals for one year"
       },
       {
         "id": "d",
-        "text": "Class C shares often have level loads/higher ongoing expenses and may fit shorter holding periods compared with A shares."
+        "text": "The dealer is barred from negotiated business with that issuer for two years"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close. Example: ETF can be bought with limit orders intraday.",
+    "correctOptionId": "d",
+    "explanation": "G-37 imposes a two-year ban on negotiated municipal securities business with an issuer after the dealer or one of its MFPs contributes to an official who can influence underwriter selection. The de minimis exemption is $250 per election, and only for an official the MFP can vote for; $500 exceeds it. Competitive-bid underwritings are outside the ban.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close”.",
-      "c": "Not the best answer here; the right answer is “ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close”.",
-      "d": "Not the best answer here; the right answer is “ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close”."
+      "a": "The G-37 de minimis exemption is $250 per election, and it applies to candidates the MFP can vote for; $500 exceeds it.",
+      "b": "Contributions are reported to the MSRB on Form G-37, but reporting does not cure the ban, and the official statement is not the remedy.",
+      "c": "The ban falls on the dealer firm, not just the individual, and it runs two years from the contribution, not one."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -730,31 +730,31 @@
     "id": "series-7-readiness-check-s7-f3-013",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, what sequence matters for dividends?",
+    "prompt": "A municipal underwriting syndicate is allocating bonds on an oversubscribed new issue using the customary priority stated under MSRB Rule G-11. It holds a member takedown order, a group net order, a designated order, and a pre-sale order. In what sequence are they filled?",
     "options": [
       {
         "id": "a",
-        "text": "Treasuries may suit investors seeking high credit quality, liquidity, and predictable cash flows, while still facing rate and inflation risk."
+        "text": "Group net, pre-sale, designated, member"
       },
       {
         "id": "b",
-        "text": "Use it to compare tax-exempt and taxable income for investors in taxable accounts."
+        "text": "Pre-sale, group net, designated, member"
       },
       {
         "id": "c",
-        "text": "Declaration, ex-dividend, record, and payable dates determine dividend entitlement and payment"
+        "text": "Pre-sale, designated, group net, member"
       },
       {
         "id": "d",
-        "text": "Reg T generally requires 50% initial margin for eligible equity purchases."
+        "text": "Member, designated, group net, pre-sale"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Declaration, ex-dividend, record, and payable dates determine dividend entitlement and payment. Example: Buyer before ex-date gets dividend.",
+    "correctOptionId": "b",
+    "explanation": "G-11 requires the syndicate to publish its priority provisions, and the customary sequence is pre-sale, group net, designated, then member (takedown) orders. Pre-sale and group net orders credit the whole syndicate, designated orders credit named members, and a member order benefits only the dealer placing it, so it is filled last.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Declaration, ex-dividend, record, and payable dates determine dividend entitlement and payment”.",
-      "b": "Not the best answer here; the right answer is “Declaration, ex-dividend, record, and payable dates determine dividend entitlement and payment”.",
-      "d": "Not the best answer here; the right answer is “Declaration, ex-dividend, record, and payable dates determine dividend entitlement and payment”."
+      "a": "Group net orders rank high, but pre-sale orders, taken before the bonds are priced, come first because they commit buyers in advance.",
+      "c": "Swaps group net and designated; group net orders credit every member pro rata, so they fill before designated orders that credit named members.",
+      "d": "Reverses the sequence; a member takedown order benefits only that dealer, so it is filled last, not first."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -763,31 +763,31 @@
     "id": "series-7-readiness-check-s7-f3-014",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a high-yield bond as tested in Series 7 recommendations and products?",
+    "prompt": "A customer buys $10,000 face of a 6% corporate bond that pays interest January 1 and July 1. The trade is executed on March 10 and settles regular way. How much accrued interest does the buyer pay the seller?",
     "options": [
       {
         "id": "a",
-        "text": "UITs may suit investors seeking a fixed portfolio and defined termination, but they can carry sales charges and limited flexibility."
+        "text": "$114.36"
       },
       {
         "id": "b",
-        "text": "Corporate bonds may suit income investors depending on credit quality, maturity, call features, liquidity, and tax status."
+        "text": "$115.00"
       },
       {
         "id": "c",
-        "text": "YTC is important for premium callable bonds likely to be redeemed before maturity."
+        "text": "$116.67"
       },
       {
         "id": "d",
-        "text": "A high-yield bond is below investment grade and offers higher yield for higher credit/default risk"
+        "text": "$118.33"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "A high-yield bond is below investment grade and offers higher yield for higher credit/default risk. Example: High-yield debt can behave more like equity in stress.",
+    "correctOptionId": "c",
+    "explanation": "Corporate bonds accrue on a 30/360 basis from the last coupon date up to, but not including, settlement. Regular way is T+1, so settlement is March 11 and accrual runs through March 10: January 30 + February 30 + March 10 = 70 days. Annual interest $600 × 70/360 = $116.67, paid by the buyer to the seller.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A high-yield bond is below investment grade and offers higher yield for higher credit/default risk”.",
-      "b": "This is the answer to a different question (“In Series 7 recommendations and products, when are corporate bonds suitable?”), not to this one.",
-      "c": "This is the answer to a different question (“In Series 7 recommendations and products, when is yield to call especially important?”), not to this one."
+      "a": "Uses the Treasury actual/actual method (69 actual days ÷ 181 days in the coupon period × $300); corporate bonds accrue on 30/360.",
+      "b": "Stops accrual the day before the trade date (69 days); interest accrues up to the day before settlement, which is March 10.",
+      "d": "Counts the settlement day itself (71 days); the buyer earns interest from the settlement date, so accrual ends the day before."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -796,31 +796,31 @@
     "id": "series-7-readiness-check-s7-f3-015",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes max loss for a long call as tested in Series 7 recommendations and products?",
+    "prompt": "With MNO at $62, a customer buys 1 MNO Jul 60 put at 4. Shortly before expiration MNO trades at $53 and the put trades at its intrinsic value. If she sells the put to close, what is her result?",
     "options": [
       {
         "id": "a",
-        "text": "Long call max loss is the premium paid"
+        "text": "$300 gain"
       },
       {
         "id": "b",
-        "text": "Long call max loss is never the premium paid"
+        "text": "$500 gain"
       },
       {
         "id": "c",
-        "text": "A capital gain occurs when an asset is sold for more than cost basis."
+        "text": "$700 gain"
       },
       {
         "id": "d",
-        "text": "A convertible bond can be converted into issuer stock, combining debt features with equity upside."
+        "text": "$1,100 gain"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Long call max loss is the premium paid. Example: A $4 call costs $400 per contract maximum loss.",
+    "explanation": "An in-the-money put's intrinsic value is strike minus market price: 60 - 53 = 7. Selling for 7 after paying 4 nets 3 points × 100 = $300. Equivalently, breakeven is strike - premium = 56, and MNO at 53 is 3 points below it.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Long call max loss is the premium paid”.",
-      "c": "Not the best answer here; the right answer is “Long call max loss is the premium paid”.",
-      "d": "Not the best answer here; the right answer is “Long call max loss is the premium paid”."
+      "b": "Measures from the $62 stock price at purchase; a put's value comes from the 60 strike, not where the stock traded when the put was bought.",
+      "c": "Counts the 7 points of intrinsic value but forgets to subtract the 4-point premium paid to open the position.",
+      "d": "Adds the premium instead of subtracting it; the premium is a cost to the put buyer and reduces her gain."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -829,31 +829,31 @@
     "id": "series-7-readiness-check-s7-f3-016",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which factors most often make variable annuity recommendations suitability-sensitive for Series 7 candidates?",
+    "prompt": "A city issues bonds to build a sewer system. Debt service will be paid first from sewer user fees, and if those fall short, the city pledges its full faith and credit and general taxing power to cover the gap. How are these bonds classified?",
     "options": [
       {
         "id": "a",
-        "text": "Costs, surrender charges, tax deferral need, investment risk, liquidity, age, and existing tax-advantaged accounts"
+        "text": "Double-barreled bonds backed by fees plus taxing power"
       },
       {
         "id": "b",
-        "text": "Only the color of the prospectus cover"
+        "text": "Moral obligation bonds backed by a nonbinding legislative pledge"
       },
       {
         "id": "c",
-        "text": "Whether the annuity is cleared through the Options Clearing Corporation"
+        "text": "Special tax bonds backed by a dedicated excise tax"
       },
       {
         "id": "d",
-        "text": "Whether the customer has a margin debit balance at another firm"
+        "text": "Industrial development revenue bonds backed by a lease"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "VAs layer fees, surrender periods, market risk, and tax features; suitability must weigh those against age, liquidity, and existing retirement accounts.",
+    "explanation": "A double-barreled bond is a revenue bond with a second pledge: if the facility's revenues (here sewer fees) fall short, the issuer's full faith and credit and taxing power cover debt service. Because of that legal taxing-power backstop, rating agencies generally analyze it like a GO bond.",
     "distractorExplanations": {
-      "b": "Marketing presentation details are not the suitability core.",
-      "c": "OCC clearing is an options market utility, not the VA suitability framework.",
-      "d": "Margin at another firm may be relevant KYC, but VA suitability is broader than that single fact."
+      "b": "A moral obligation bond's backup is a state legislature's nonbinding promise to consider appropriating funds, not a legal pledge of taxing power.",
+      "c": "Special tax bonds are paid from one specific tax, such as a gasoline or hotel tax, not from user fees backed by general taxing power.",
+      "d": "IDRs are paid from lease payments by a private corporation; the municipality's taxing power does not back them."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -862,31 +862,31 @@
     "id": "series-7-readiness-check-s7-f3-017",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes product due diligence as tested in Series 7 recommendations and products?",
+    "prompt": "A customer sold short 100 shares of PQR at $70. She wants to cap her loss if PQR rallies while keeping her profit if it falls, and she pays a premium of 3 for the hedge. Which hedge fits, and what are her breakeven and maximum loss?",
     "options": [
       {
         "id": "a",
-        "text": "Firms and reps must never understand product structure, risks, costs, liquidity, tax issues"
+        "text": "Long 70 put; breakeven $67; max loss $300"
       },
       {
         "id": "b",
-        "text": "MPT focuses on combining assets to optimize expected return for a given level of risk through diversification and correlation."
+        "text": "Long 70 call; breakeven $73; max loss $300"
       },
       {
         "id": "c",
-        "text": "Firms and reps must understand product structure, risks, costs, liquidity, tax issues, and target investors before recommending."
+        "text": "Long 70 call; breakeven $67; max loss unlimited"
       },
       {
         "id": "d",
-        "text": "Long call max gain is theoretically unlimited because the stock can rise without fixed ceiling."
+        "text": "Long 70 call; breakeven $67; max loss $300"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Firms and reps must understand product structure, risks, costs, liquidity, tax issues, and target investors before recommending. Example: Alternative investments need extra review.",
+    "correctOptionId": "d",
+    "explanation": "A short seller loses when the stock rises, so the hedge is a long call that lets her buy back shares at 70 however high PQR goes. Max loss = (strike - short sale price + premium) × 100 = (70 - 70 + 3) × 100 = $300. Breakeven = short sale price - premium = 70 - 3 = 67.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Firms and reps must understand product structure, risks, costs, liquidity, tax issues, and target investors before recommending”.",
-      "b": "Not the best answer here; the right answer is “Firms and reps must understand product structure, risks, costs, liquidity, tax issues, and target investors before recommending”.",
-      "d": "Not the best answer here; the right answer is “Firms and reps must understand product structure, risks, costs, liquidity, tax issues, and target investors before recommending”."
+      "a": "A long put profits when the stock falls, which adds to her bearish exposure; it does nothing to cap losses from a rising stock.",
+      "b": "Adds the premium; a short seller profits on declines, so the 3-point cost is recovered by a drop to 67, not a rise to 73.",
+      "c": "The long call caps the loss: above 70 she can exercise to buy shares at 70 and cover, so the most she can lose is $300."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -895,32 +895,32 @@
     "id": "series-7-readiness-check-s7-f3-018",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes conversion parity as tested in Series 7 recommendations and products?",
+    "prompt": "A customer owns a $100 par convertible preferred stock with a conversion price of $25. The company's common stock trades at $28. At what price is the preferred at parity with the common?",
     "formula": "$$Parity=Conversion\\ Ratio\\times Stock\\ Price$$",
     "options": [
       {
         "id": "a",
-        "text": "A 529 plan is tax-advantaged education savings plan, often state-sponsored, with state tax and qualified education expense considerations."
+        "text": "$89.29"
       },
       {
         "id": "b",
-        "text": "Firms retain communications, account records, order tickets, confirmations, and supervisory reviews supporting business activity."
+        "text": "$103"
       },
       {
         "id": "c",
-        "text": "Long put max loss is the premium paid."
+        "text": "$112"
       },
       {
         "id": "d",
-        "text": "Parity links convertible value to the value of shares received upon conversion"
+        "text": "$700"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Parity links convertible value to the value of shares received upon conversion. Formula: $$Parity=Conversion\\ Ratio\\times Stock\\ Price$$ Example: 20 shares at $30 create $600 parity.",
+    "correctOptionId": "c",
+    "explanation": "Conversion ratio = par ÷ conversion price = $100 ÷ $25 = 4 common shares. Parity is the preferred price equal to the value of the shares it converts into: 4 × $28 = $112. If the preferred traded below $112, buying it, converting, and selling the common would lock in a gain.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Parity links convertible value to the value of shares received upon conversion”.",
-      "b": "Not the best answer here; the right answer is “Parity links convertible value to the value of shares received upon conversion”.",
-      "c": "Not the best answer here; the right answer is “Parity links convertible value to the value of shares received upon conversion”."
+      "a": "Divides the conversion price by the market price (25 ÷ 28 × 100); parity rises above par when the common trades above the conversion price.",
+      "b": "Adds the 3-point rise in the common to par; each preferred converts into 4 shares, so a 3-point rise adds 12 points.",
+      "d": "Multiplies the conversion price by the market price; the right multiplier is the 4-share conversion ratio, not the $25 conversion price."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -929,31 +929,31 @@
     "id": "series-7-readiness-check-s7-f3-019",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes maintenance margin as tested in Series 7 recommendations and products?",
+    "prompt": "A customer bought 1 XYZ Index Dec 4,100 call at 25; the index option multiplier is $100. The index closes at 4,160 on expiration day and the call is exercised. What does she receive on exercise?",
     "options": [
       {
         "id": "a",
-        "text": "Maintenance margin is the minimum equity required after a margin position is established"
+        "text": "$3,500 in cash"
       },
       {
         "id": "b",
-        "text": "Maintenance margin is never the minimum equity required after a margin position is established"
+        "text": "$6,000 in cash"
       },
       {
         "id": "c",
-        "text": "A debit spread costs net premium and generally has limited risk and limited reward."
+        "text": "$8,500 in cash"
       },
       {
         "id": "d",
-        "text": "UITs may suit investors seeking a fixed portfolio and defined termination, but they can carry sales charges and limited flexibility."
+        "text": "A basket of the index stocks worth $416,000"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Maintenance margin is the minimum equity required after a margin position is established. Example: If equity falls below maintenance, margin call occurs.",
+    "correctOptionId": "b",
+    "explanation": "Index options are cash-settled: the assigned writer pays the holder the intrinsic value times the multiplier. Intrinsic value = 4,160 - 4,100 = 60 points, so she receives 60 × $100 = $6,000 in cash. Her net profit is $6,000 - $2,500 premium = $3,500, but the exercise payment itself is the full intrinsic value.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Maintenance margin is the minimum equity required after a margin position is established”.",
-      "c": "Not the best answer here; the right answer is “Maintenance margin is the minimum equity required after a margin position is established”.",
-      "d": "Not the best answer here; the right answer is “Maintenance margin is the minimum equity required after a margin position is established”."
+      "a": "That is her net profit after the $2,500 premium; the cash paid on exercise is the full intrinsic value, since the premium was paid at purchase.",
+      "c": "Adds the premium to the intrinsic value; the premium is the buyer's cost and is not refunded on exercise.",
+      "d": "Index options do not deliver the underlying stocks; settlement is in cash equal to intrinsic value times the multiplier."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -962,31 +962,31 @@
     "id": "series-7-readiness-check-s7-f3-020",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a protective put as tested in Series 7 recommendations and products?",
+    "prompt": "A customer buys 100 shares of STU at $45 and at the same time buys 1 STU Jan 40 put at 2 for protection. What are her breakeven and maximum loss at expiration?",
     "options": [
       {
         "id": "a",
-        "text": "ABLE accounts provide tax-advantaged savings for eligible individuals with disabilities while preserving certain benefits."
+        "text": "Breakeven $43; max loss $700"
       },
       {
         "id": "b",
-        "text": "A protective put is long stock plus long put, creating downside protection at cost of premium"
+        "text": "Breakeven $47; max loss $500"
       },
       {
         "id": "c",
-        "text": "A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction."
+        "text": "Breakeven $38; max loss $4,700"
       },
       {
         "id": "d",
-        "text": "A capital gain occurs when an asset is sold for more than cost basis."
+        "text": "Breakeven $47; max loss $700"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "A protective put is long stock plus long put, creating downside protection at cost of premium. Example: Investor buys put as insurance on stock.",
+    "correctOptionId": "d",
+    "explanation": "Long stock plus a long put: the premium adds to her cost, so breakeven = stock price + premium = 45 + 2 = 47. The put sets a floor at 40, so max loss = (45 - 40) + 2 = 7 points × 100 = $700, however far STU falls. Upside above 47 is unlimited.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A protective put is long stock plus long put, creating downside protection at cost of premium”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes a long straddle as tested in Series 7 recommendations and products?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “A protective put is long stock plus long put, creating downside protection at cost of premium”."
+      "a": "Subtracts the premium; for long stock the put premium is an added cost, so the stock must rise to 47 to break even.",
+      "b": "Counts the 5-point drop to the 40 floor but leaves out the 2-point premium paid for the protection.",
+      "c": "Uses the standalone put breakeven (40 - 2) and ignores the floor; the put lets her sell at 40, so the loss cannot reach $4,700."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -995,31 +995,31 @@
     "id": "series-7-readiness-check-s7-f3-021",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, when are common stocks suitable?",
+    "prompt": "A customer owns 300 shares of VWX trading at $90. The company pays a 20% stock dividend. Ignoring any market movement, what does her position look like after the dividend?",
     "options": [
       {
         "id": "a",
-        "text": "Recommendations must consider product risks, costs, reasonably available alternatives, and the customer profile under applicable standards."
+        "text": "300 shares at $72"
       },
       {
         "id": "b",
-        "text": "Asset allocation divides investments among asset classes based on goals, time horizon, risk tolerance, and constraints."
+        "text": "360 shares at $75"
       },
       {
         "id": "c",
-        "text": "Common stocks may suit investors seeking growth who can tolerate price volatility and possible loss of principal."
+        "text": "360 shares at $90"
       },
       {
         "id": "d",
-        "text": "Use it to compare tax-exempt and taxable income for investors in taxable accounts."
+        "text": "600 shares at $45"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Common stocks may suit investors seeking growth who can tolerate price volatility and possible loss of principal. Example: A long-term growth investor may use diversified equities.",
+    "correctOptionId": "b",
+    "explanation": "A 20% stock dividend adds 1 share for every 5 held: 300 × 1.20 = 360 shares. The price adjusts so total value is unchanged: $27,000 ÷ 360 = $75 (or $90 ÷ 1.20). Like a split, a stock dividend changes the share count, price, and per-share cost basis, but not her wealth or proportional ownership, and it is not taxable when received.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Common stocks may suit investors seeking growth who can tolerate price volatility and possible loss of principal”.",
-      "b": "Not the best answer here; the right answer is “Common stocks may suit investors seeking growth who can tolerate price volatility and possible loss of principal”.",
-      "d": "Not the best answer here; the right answer is “Common stocks may suit investors seeking growth who can tolerate price volatility and possible loss of principal”."
+      "a": "Cuts the price by 20% without adding shares, which would shrink her position to $21,600; a stock dividend pays in new shares, not a price markdown.",
+      "c": "Adds the new shares but leaves the price at $90, raising her position to $32,400; the price falls so total value stays $27,000.",
+      "d": "Treats it as a 2-for-1 split; a 20% stock dividend adds one share for every five held, not one for every one."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1028,31 +1028,31 @@
     "id": "series-7-readiness-check-s7-f3-022",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes accrued interest as tested in Series 7 recommendations and products?",
+    "prompt": "A customer buys shares of an open-end growth fund whose NAV is $23.75. The fund's maximum sales charge is 5% of the public offering price, and the purchase is below the first breakpoint. What public offering price does the customer pay per share?",
     "options": [
       {
         "id": "a",
-        "text": "A long strangle buys out-of-the-money call and put with same expiration, usually cheaper than straddle but requiring larger move."
+        "text": "$22.56"
       },
       {
         "id": "b",
-        "text": "A high-yield bond is below investment grade and offers higher yield for higher credit/default risk."
+        "text": "$24.94"
       },
       {
         "id": "c",
-        "text": "Use tax-equivalent yield to compare tax-free muni yield with taxable alternatives."
+        "text": "$25.00"
       },
       {
         "id": "d",
-        "text": "Accrued interest is interest earned since the last coupon date; bond buyers usually pay it to sellers at settlement."
+        "text": "$26.25"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Accrued interest is interest earned since the last coupon date; bond buyers usually pay it to sellers at settlement. Example: Buyer pays seller accrued interest then receives next full coupon.",
+    "correctOptionId": "c",
+    "explanation": "Sales charges are quoted as a percentage of the public offering price, not of NAV, so POP = NAV ÷ (1 − sales charge %) = $23.75 ÷ 0.95 = $25.00. Check: 5% of $25.00 is $1.25, and $25.00 − $1.25 = $23.75 NAV. That $1.25 load equals about 5.26% of the amount actually invested at NAV.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes a long strangle as tested in Series 7 recommendations and products?”), not to this one.",
-      "b": "This is the answer to a different question (“Which statement correctly describes a high-yield bond as tested in Series 7 recommendations and products?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Accrued interest is interest earned since the last coupon date; bond buyers usually pay it to sellers at settlement”."
+      "a": "Subtracts 5% from NAV ($23.75 × 0.95); the sales charge is added on top of NAV to reach the offering price, not deducted from it.",
+      "b": "Adds 5% of NAV ($23.75 × 1.05 = $24.94); because the load is a percentage of POP, NAV must be divided by 0.95 instead.",
+      "d": "Adds another 5% on top of the correct $25.00 offering price ($25.00 × 1.05), double-counting the sales charge."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1061,31 +1061,31 @@
     "id": "series-7-readiness-check-s7-f3-023",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, when are corporate bonds suitable?",
+    "prompt": "A customer owns shares of a fund family's growth fund that cost $38,000 and are now worth $44,000. She plans to buy $7,000 of the same family's income fund. The family's first breakpoint is $50,000, and it computes rights of accumulation on current value. How is her $7,000 purchase priced?",
     "options": [
       {
         "id": "a",
-        "text": "Corporate bonds may suit income investors depending on credit quality, maturity, call features, liquidity, and tax status."
+        "text": "At the reduced breakpoint rate, since $44,000 of holdings plus $7,000 tops $50,000"
       },
       {
         "id": "b",
-        "text": "A convertible bond can be converted into issuer stock, combining debt features with equity upside."
+        "text": "At the full sales charge, because rights of accumulation count her $38,000 cost, not value"
       },
       {
         "id": "c",
-        "text": "MPT focuses on combining assets to optimize expected return for a given level of risk through diversification and correlation."
+        "text": "At the full sales charge unless she signs a letter of intent backdated up to 90 days"
       },
       {
         "id": "d",
-        "text": "It requires reasonable diligence, care, and skill in understanding risks/rewards/costs and having a reasonable basis for recommendations."
+        "text": "At the full sales charge, since holdings in a different fund of the family do not count"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Corporate bonds may suit income investors depending on credit quality, maturity, call features, liquidity, and tax status. Example: Investment-grade bonds suit conservative income better than high-yield bonds.",
+    "explanation": "Rights of accumulation let a customer combine existing holdings in the same fund family with a new purchase to reach a breakpoint. This family uses current value: $44,000 + $7,000 = $51,000, which exceeds the $50,000 breakpoint, so the new $7,000 purchase receives the reduced sales charge. No letter of intent is needed, and ROA does not expire.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Corporate bonds may suit income investors depending on credit quality, maturity, call features, liquidity, and tax status”.",
-      "c": "Not the best answer here; the right answer is “Corporate bonds may suit income investors depending on credit quality, maturity, call features, liquidity, and tax status”.",
-      "d": "This is the answer to a different question (“Which statement correctly describes Reg BI care obligation as tested in Series 7 recommendations and products?”), not to this one."
+      "b": "Uses her cost basis; this family computes ROA on current value. On cost, $38,000 + $7,000 = $45,000 would miss the breakpoint, which is the trap.",
+      "c": "A letter of intent is a 13-month promise to invest more, with backdating of up to 90 days; it is unnecessary when ROA already reaches the breakpoint.",
+      "d": "Breakpoint discounts generally aggregate purchases across funds within the same family; it is funds outside the family that cannot be combined."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1094,31 +1094,31 @@
     "id": "series-7-readiness-check-s7-f3-024",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a tender offer as tested in Series 7 recommendations and products?",
+    "prompt": "A 45-year-old customer will invest $250,000 in one fund family's large-cap fund and expects to hold it for at least 20 years. The family offers Class A, B and C shares, and $250,000 is past several A-share breakpoints. Which recommendation best serves the customer?",
     "options": [
       {
         "id": "a",
-        "text": "MPT focuses on combining assets to optimize expected return for a given level of risk through diversification and correlation."
+        "text": "Class C shares, since the absence of a front-end load makes them cheapest over any holding period"
       },
       {
         "id": "b",
-        "text": "A tender offer is an offer to purchase shares from shareholders, often at a premium, subject to specific rules."
+        "text": "Class A shares, because the breakpoint cuts the front load and the ongoing 12b-1 fee is lower"
       },
       {
         "id": "c",
-        "text": "Share count changes and price adjusts proportionally, leaving total value roughly unchanged before market reaction."
+        "text": "Class B shares, because the deferred sales charge declines to zero after several years of holding"
       },
       {
         "id": "d",
-        "text": "Duration estimates bond price sensitivity to interest-rate changes."
+        "text": "Split the money evenly between A shares of two fund families to diversify the managers"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "A tender offer is an offer to purchase shares from shareholders, often at a premium, subject to specific rules. Example: Company offers to buy shares at $30 when market is $25.",
+    "explanation": "For a large, long-term purchase, Class A shares usually cost least: $250,000 qualifies for a reduced front-end load, and A shares carry a low 12b-1 fee (commonly 0.25%) for the life of the holding. Class C's level 12b-1 fee (often about 1%) compounds against the customer for 20 years, and a large B-share purchase forfeits breakpoints. Splitting across families so each piece misses a breakpoint is breakpoint selling.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A tender offer is an offer to purchase shares from shareholders, often at a premium, subject to specific rules”.",
-      "c": "Not the best answer here; the right answer is “A tender offer is an offer to purchase shares from shareholders, often at a premium, subject to specific rules”.",
-      "d": "Not the best answer here; the right answer is “A tender offer is an offer to purchase shares from shareholders, often at a premium, subject to specific rules”."
+      "a": "C shares avoid a front load but charge a higher annual 12b-1 fee, so over a 20-year holding they usually cost more than discounted A shares.",
+      "c": "The CDSC does fade, but B shares carry higher 12b-1 fees until conversion and a $250,000 B purchase gives up the A-share breakpoint discount.",
+      "d": "Dividing the purchase between families leaves each $125,000 piece at a smaller breakpoint and a higher load, a breakpoint-selling concern."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1127,31 +1127,31 @@
     "id": "series-7-readiness-check-s7-f3-025",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, how do clean and dirty bond prices differ?",
+    "prompt": "At 11:00 a.m. a customer enters orders to sell 500 shares of an S&P 500 index mutual fund and 500 shares of an S&P 500 ETF. How will the two sales be priced?",
     "options": [
       {
         "id": "a",
-        "text": "MBS investors face prepayment, extension, interest-rate, and cash-flow uncertainty risks."
+        "text": "Both at the prior day's closing NAV, published before the market opened"
       },
       {
         "id": "b",
-        "text": "Use tax-equivalent yield to compare tax-free muni yield with taxable alternatives."
+        "text": "Both at the market price when executed, which can drift from the day's NAV"
       },
       {
         "id": "c",
-        "text": "Clean price excludes accrued interest; dirty price includes accrued interest"
+        "text": "The fund at its 11 a.m. market quote; the ETF at the NAV computed after the close"
       },
       {
         "id": "d",
-        "text": "Beta measures a security’s sensitivity to broad market movements."
+        "text": "The ETF at market when filled; the fund at the NAV computed after the close"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Clean price excludes accrued interest; dirty price includes accrued interest. Example: Quoted bond price is often clean, invoice price includes accrued.",
+    "correctOptionId": "d",
+    "explanation": "Open-end mutual funds use forward pricing: a redemption is priced at the next NAV computed after the order is received, normally at the 4:00 p.m. ET close. ETFs trade on an exchange, so the ETF sale fills at the market price when executed. Authorized participants create and redeem ETF shares in large creation units, and that arbitrage keeps the ETF's market price close to its NAV during the day.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Clean price excludes accrued interest; dirty price includes accrued interest”.",
-      "b": "Not the best answer here; the right answer is “Clean price excludes accrued interest; dirty price includes accrued interest”.",
-      "d": "Not the best answer here; the right answer is “Clean price excludes accrued interest; dirty price includes accrued interest”."
+      "a": "Pricing an order at a previously published NAV is backward pricing, which forward-pricing rules prohibit for open-end fund orders.",
+      "b": "Right for the ETF, but an open-end fund has no secondary market; the fund itself redeems shares at the next computed NAV.",
+      "c": "Reverses the two products: open-end fund shares are redeemed by the fund at NAV, while ETF shares trade on an exchange at market prices."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1160,32 +1160,32 @@
     "id": "series-7-readiness-check-s7-f3-026",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes long put breakeven as tested in Series 7 recommendations and products?",
+    "prompt": "A 78-year-old customer owns a variable annuity bought nine years ago whose surrender period has ended. A rep proposes a 1035 exchange into a new variable annuity with a living-benefit rider and a seven-year surrender schedule. What is the main suitability concern?",
     "formula": "$$Breakeven=Strike-Premium$$",
     "options": [
       {
         "id": "a",
-        "text": "Accumulation is investment/build-up phase; annuitization converts value into income payments."
+        "text": "A new surrender period would limit access to her money for seven more years"
       },
       {
         "id": "b",
-        "text": "Firms and reps must understand product structure, risks, costs, liquidity, tax issues, and target investors before recommending."
+        "text": "The exchange makes the gains in the old contract taxable as ordinary income"
       },
       {
         "id": "c",
-        "text": "A put bond lets the holder require issuer repurchase at stated times/prices, potentially reducing interest-rate risk."
+        "text": "Her purchase payments would buy annuity units, whose value is fixed until payout"
       },
       {
         "id": "d",
-        "text": "Strike minus premium"
+        "text": "FINRA rules bar a variable annuity exchange within 36 months of the last one"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Strike minus premium. Formula: $$Breakeven=Strike-Premium$$ Example: 50 put + 3 premium = 47 breakeven.",
+    "correctOptionId": "a",
+    "explanation": "A 1035 exchange moves value tax-free from one annuity to another, but it can restart surrender charges. For a 78-year-old, a new seven-year schedule ties up money into her mid-80s, when liquidity or care needs are likely. FINRA Rule 2330 requires the rep and a reviewing principal to weigh new surrender charges, rider costs and lost benefits; the rider must be worth that loss of liquidity.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Strike minus premium”.",
-      "b": "This is the answer to a different question (“Which statement correctly describes product due diligence as tested in Series 7 recommendations and products?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Strike minus premium”."
+      "b": "Section 1035 allows one annuity to be exchanged for another without current taxation; the gains stay tax-deferred in the new contract.",
+      "c": "Payments during the accumulation period buy accumulation units; annuity units arise at annuitization, and their value still varies with the separate account.",
+      "d": "Rule 2330 makes a prior exchange within 36 months a factor the firm must consider, not an outright prohibition on exchanging."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1194,31 +1194,31 @@
     "id": "series-7-readiness-check-s7-f3-027",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, how do ETFs differ from open-end mutual funds? (applied scenario 2)",
+    "prompt": "High-income grandparents want to put a large sum aside for a newborn grandchild's college costs, keep control of the account themselves, and have the growth come out free of federal tax if used for qualified expenses. Which account fits best?",
     "options": [
       {
         "id": "a",
-        "text": "ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close"
+        "text": "A Coverdell ESA, since its contributions are deductible on the grandparents' federal return"
       },
       {
         "id": "b",
-        "text": "A tender offer is an offer to purchase shares from shareholders, often at a premium, subject to specific rules."
+        "text": "A Coverdell ESA, since the grandchild can leave the money invested well past age 30"
       },
       {
         "id": "c",
-        "text": "Strike minus premium."
+        "text": "A 529 plan, since the grandparents can deduct contributions on their federal tax return"
       },
       {
         "id": "d",
-        "text": "Accrued interest is interest earned since the last coupon date; bond buyers usually pay it to sellers at settlement."
+        "text": "A 529 plan, since it has no contributor income limit and the owner keeps control"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close. Example: ETF can be bought with limit orders intraday.",
+    "correctOptionId": "d",
+    "explanation": "A 529 plan has no income limit on who may contribute, allows large balances, and leaves the account owner (here the grandparents) in control, including the right to change the beneficiary. Earnings withdrawn for qualified education expenses are free of federal tax. Coverdell ESAs bar contributions above income thresholds, allow only small annual contributions, and generally must be used by the beneficiary's age 30.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which statement correctly describes a tender offer as tested in Series 7 recommendations and products?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “ETFs trade intraday on exchanges; open-end mutual funds redeem at forward-priced NAV after market close”.",
-      "d": "This is the answer to a different question (“Which statement correctly describes accrued interest as tested in Series 7 recommendations and products?”), not to this one."
+      "a": "Coverdell contributions are after-tax with no federal deduction, and high-income donors may be barred from contributing to one at all.",
+      "b": "Coverdell balances generally must be distributed by the beneficiary's age 30 (special-needs beneficiaries excepted) or the earnings become taxable.",
+      "c": "529 contributions are not deductible on the federal return; some states offer a state income-tax deduction, which is a different benefit."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1227,31 +1227,31 @@
     "id": "series-7-readiness-check-s7-f3-028",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes the wash sale rule as tested in Series 7 recommendations and products?",
+    "prompt": "A wealthy client has substantial passive income from rental properties and wants an investment whose tax losses flow through to her return to offset that income. She is comparing an equity REIT with a real estate limited partnership. Which recommendation fits her goal?",
     "options": [
       {
         "id": "a",
-        "text": "Maintenance margin is the minimum equity required after a margin position is established."
+        "text": "The REIT, because its operating losses pass through to shareholders' returns"
       },
       {
         "id": "b",
-        "text": "A loss is disallowed currently if substantially identical securities are purchased within 30 days before or after the sale."
+        "text": "The partnership, because its losses pass through and can offset passive income"
       },
       {
         "id": "c",
-        "text": "Costs, surrender charges, tax deferral, investment risk, liquidity needs, age, and existing tax-advantaged accounts matter."
+        "text": "The REIT, because it must pay out at least 90% of taxable income as tax-free dividends"
       },
       {
         "id": "d",
-        "text": "Recommendations must consider product risks, costs, reasonably available alternatives, and the customer profile under applicable standards."
+        "text": "The partnership, because its losses can offset her wages and portfolio income"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "A loss is disallowed currently if substantially identical securities are purchased within 30 days before or after the sale. Example: Sell stock for loss and rebuy next week creates wash sale.",
+    "explanation": "A limited partnership (direct participation program) is a pass-through entity: income, losses and deductions such as depreciation flow to the limited partners. LP losses are passive, so they can offset passive income such as her rents. A REIT is a corporation that avoids entity-level tax by distributing at least 90% of its taxable income; its losses stay inside the REIT, and its dividends are taxable to shareholders.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes maintenance margin as tested in Series 7 recommendations and products?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “A loss is disallowed currently if substantially identical securities are purchased within 30 days before or after the sale”.",
-      "d": "Not the best answer here; the right answer is “A loss is disallowed currently if substantially identical securities are purchased within 30 days before or after the sale”."
+      "a": "A REIT is taxed as a corporation; it passes income out through dividends but cannot pass operating losses through to shareholders.",
+      "c": "The 90% distribution rule is real, but REIT dividends are taxable, mostly at ordinary rates, so they add income instead of offsetting it.",
+      "d": "Limited partnership losses are passive and generally offset passive income, not wages, interest or dividends."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1260,32 +1260,32 @@
     "id": "series-7-readiness-check-s7-f3-029",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes long put breakeven as tested in Series 7 recommendations and products? (applied scenario 2)?",
+    "prompt": "A customer opens a new margin account and buys 100 shares of a stock at $30 on margin, with no other assets in the account. Under Regulation T and FINRA's minimum equity rule, how much must the customer deposit?",
     "formula": "$$Breakeven=Strike-Premium$$",
     "options": [
       {
         "id": "a",
-        "text": "A convertible bond can be converted into issuer stock, combining debt features with equity upside."
+        "text": "$750"
       },
       {
         "id": "b",
-        "text": "A proxy authorizes another party to vote shares on behalf of the shareholder."
+        "text": "$1,500"
       },
       {
         "id": "c",
-        "text": "Strike minus premium"
+        "text": "$2,000"
       },
       {
         "id": "d",
-        "text": "It lets current shareholders buy additional shares, often below market, to maintain ownership percentage."
+        "text": "$3,000"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Strike minus premium. Formula: $$Breakeven=Strike-Premium$$ Example: 50 put + 3 premium = 47 breakeven.",
+    "explanation": "Reg T requires 50% of the $3,000 purchase, or $1,500, but FINRA requires at least $2,000 of equity in a margin account before credit is extended. The customer deposits the greater amount, $2,000, and borrows the remaining $1,000. Had the purchase cost less than $2,000, the customer would simply pay 100% of the cost.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Strike minus premium”.",
-      "b": "Not the best answer here; the right answer is “Strike minus premium”.",
-      "d": "This is the answer to a different question (“In Series 7 recommendations and products, how does a rights offering affect shareholders? (workplace scenario…”), not to this one."
+      "a": "Applies the 25% maintenance requirement to the purchase; maintenance governs an existing position, not the initial deposit.",
+      "b": "That is the Reg T 50% figure, but FINRA's $2,000 minimum equity requirement is higher here and controls the deposit.",
+      "d": "Full payment is required when a purchase costs less than $2,000; a $3,000 purchase can be financed above the $2,000 minimum."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1294,31 +1294,31 @@
     "id": "series-7-readiness-check-s7-f3-030",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, when might preferred stock fit?",
+    "prompt": "A customer buys 1,000 shares at $40 in a margin account, depositing the Reg T requirement. Ignoring interest, at what share price would the account reach FINRA's 25% minimum maintenance level, below which a maintenance call is issued?",
     "options": [
       {
         "id": "a",
-        "text": "Strike minus premium."
+        "text": "$15.00"
       },
       {
         "id": "b",
-        "text": "Cost basis is the tax basis used to calculate gain or loss, adjusted for events like splits, reinvestments, or return of capital."
+        "text": "$20.00"
       },
       {
         "id": "c",
-        "text": "It requires reasonable diligence, care, and skill in understanding risks/rewards/costs and having a reasonable basis for recommendations."
+        "text": "$26.67"
       },
       {
         "id": "d",
-        "text": "Preferred stock may fit income-oriented investors who can accept interest-rate sensitivity, issuer credit risk, limited voting rights, and call risk."
+        "text": "$28.57"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Preferred stock may fit income-oriented investors who can accept interest-rate sensitivity, issuer credit risk, limited voting rights, and call risk. Example: A preferred stock pays fixed dividends but can fall when rates rise.",
+    "correctOptionId": "c",
+    "explanation": "The debit balance is $20,000 (50% of the $40,000 purchase). For a long account, the maintenance call value is debit ÷ (1 − 0.25) = $20,000 ÷ 0.75 = $26,666.67, or $26.67 per share. Check: at a $26,667 market value, equity is $6,667, exactly 25% of market value; any further decline triggers a call.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Preferred stock may fit income-oriented investors who can accept interest-rate sensitivity, issuer credit risk, limited voting rights, and…”.",
-      "b": "This is the answer to a different question (“Which statement correctly describes cost basis as tested in Series 7 recommendations and products?”), not to this one.",
-      "c": "This is the answer to a different question (“Which statement correctly describes Reg BI care obligation as tested in Series 7 recommendations and products?”), not to this one."
+      "a": "Multiplies the debit by 0.75 ($15,000); the formula divides the debit by 0.75 to find the market value where equity equals 25%.",
+      "b": "That is debit ÷ shares, the price at which equity would be zero, well below the point where the 25% requirement is breached.",
+      "d": "Divides the debit by 0.70, applying the 30% short-account requirement to a long margin position."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1327,31 +1327,31 @@
     "id": "series-7-readiness-check-s7-f3-031",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, what do credit ratings indicate?",
+    "prompt": "A customer sells short 1,000 shares at $50 in a margin account and meets the Reg T requirement, creating a $75,000 credit balance. At what share price would the account hit FINRA's 30% minimum maintenance requirement for short positions?",
     "options": [
       {
         "id": "a",
-        "text": "Credit ratings estimate issuer creditworthiness and default risk, but they are opinions and can change"
+        "text": "$52.50"
       },
       {
         "id": "b",
-        "text": "Uncovered short call has theoretically unlimited loss as underlying rises."
+        "text": "$57.69"
       },
       {
         "id": "c",
-        "text": "Reps must disclose and apply available sales charge discounts such as breakpoints, LOIs, and rights of accumulation."
+        "text": "$60.00"
       },
       {
         "id": "d",
-        "text": "MBS investors face prepayment, extension, interest-rate, and cash-flow uncertainty risks."
+        "text": "$75.00"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Credit ratings estimate issuer creditworthiness and default risk, but they are opinions and can change. Example: A downgrade can lower bond price.",
+    "correctOptionId": "b",
+    "explanation": "In a short account, equity = credit balance − short market value, and maintenance is 30% of market value, so the call value is credit ÷ 1.30 = $75,000 ÷ 1.30 = $57,692, about $57.69 per share. Check: equity of $17,308 is 30% of $57,692. The $75,000 credit is $50,000 of sale proceeds plus the $25,000 Reg T deposit.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Credit ratings estimate issuer creditworthiness and default risk, but they are opinions and can change”.",
-      "c": "This is the answer to a different question (“In Series 7 recommendations and products, what must reps do with breakpoints?”), not to this one.",
-      "d": "Not the best answer here; the right answer is “Credit ratings estimate issuer creditworthiness and default risk, but they are opinions and can change”."
+      "a": "Multiplies the credit by 0.70 ($52,500); for a short account the credit balance is divided by 1.30, not reduced by 30%.",
+      "c": "Divides the credit by 1.25, using the 25% long-account requirement instead of the 30% short-account requirement.",
+      "d": "At $75 the short market value equals the credit balance, so equity is zero, well past the point where a maintenance call is issued."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1360,31 +1360,31 @@
     "id": "series-7-readiness-check-s7-f3-032",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes Class A mutual fund shares as tested in Series 7 recommendations and products?",
+    "prompt": "A customer bought 200 shares at $90. The company then executed a 3-for-2 stock split, and later the customer reinvested a $600 cash dividend in 10 more shares at $60. What is the customer's total cost basis in the position?",
     "options": [
       {
         "id": "a",
-        "text": "Reg T generally requires 50% initial margin for eligible equity purchases."
+        "text": "$18,000"
       },
       {
         "id": "b",
-        "text": "Class A shares typically charge a front-end load and lower ongoing expenses than some other classes"
+        "text": "$18,600"
       },
       {
         "id": "c",
-        "text": "Costs, surrender charges, tax deferral, investment risk, liquidity needs, age, and existing tax-advantaged accounts matter."
+        "text": "$27,000"
       },
       {
         "id": "d",
-        "text": "A reverse split reduces share count and increases price proportionally, before market effects."
+        "text": "$27,900"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Class A shares typically charge a front-end load and lower ongoing expenses than some other classes. Example: Large purchases may receive breakpoint discounts.",
+    "explanation": "A stock split changes the share count and per-share basis but not total basis: 200 × $90 = $18,000 becomes 300 shares at $60. A reinvested dividend is taxed in the year paid, so it adds to basis: $18,000 + $600 = $18,600 for 310 shares, about $60 per share.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Class A shares typically charge a front-end load and lower ongoing expenses than some other classes”.",
-      "c": "Not the best answer here; the right answer is “Class A shares typically charge a front-end load and lower ongoing expenses than some other classes”.",
-      "d": "This is the answer to a different question (“Which statement correctly describes a reverse split as tested in Series 7 recommendations and products?”), not to this one."
+      "a": "Ignores the reinvested dividend; because the $600 was taxed as income, it becomes cost basis in the 10 new shares.",
+      "c": "Multiplies the post-split 300 shares by the pre-split $90 price; a split does not increase total cost basis.",
+      "d": "Applies the pre-split $90 price to all 310 post-split shares, inflating basis by the 3-for-2 split ratio."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1393,31 +1393,31 @@
     "id": "series-7-readiness-check-s7-f3-033",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, what were Class B shares known for:",
+    "prompt": "On November 10 a customer sells 100 shares of XYZ at $42 that she bought two years ago at $50. On December 1 she buys 100 shares of XYZ at $44. How is the sale treated for tax purposes?",
     "options": [
       {
         "id": "a",
-        "text": "A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction."
+        "text": "The $800 loss is deductible, and the new shares carry a $4,400 basis"
       },
       {
         "id": "b",
-        "text": "Share count changes and price adjusts proportionally, leaving total value roughly unchanged before market reaction."
+        "text": "The $800 loss is disallowed, and the new shares carry a $4,400 basis"
       },
       {
         "id": "c",
-        "text": "Class B shares historically had deferred sales charges and higher expenses, often converting after a period"
+        "text": "The $800 loss is disallowed, and the new shares carry a $5,000 basis"
       },
       {
         "id": "d",
-        "text": "Short put has substantial downside risk if stock falls, with max loss approximately strike minus premium if stock goes to zero."
+        "text": "The $800 loss is disallowed; the new shares carry a $5,200 basis"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Class B shares historically had deferred sales charges and higher expenses, often converting after a period. Example: Selling early can trigger CDSC.",
+    "correctOptionId": "d",
+    "explanation": "A loss is disallowed when substantially identical securities are bought within 30 days before or after the sale. December 1 is 21 days after November 10, so the $800 loss ($5,000 cost − $4,200 proceeds) is a wash sale. The disallowed loss is added to the replacement shares' basis: $4,400 + $800 = $5,200 ($52 per share), and the original holding period carries over.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes a long straddle as tested in Series 7 recommendations and products?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Class B shares historically had deferred sales charges and higher expenses, often converting after a period”.",
-      "d": "This is the answer to a different question (“In Series 7 recommendations and products, what risk does a short put have?”), not to this one."
+      "a": "Treats a 21-day gap as outside the window; the wash-sale period runs 30 days before and 30 days after the sale date.",
+      "b": "Correctly disallows the loss but forgets to add the $800 to the replacement shares' basis, which is how the loss is preserved for later.",
+      "c": "Carries over the original $50 cost; the new basis is the $44 repurchase price plus the $800 disallowed loss."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1426,31 +1426,31 @@
     "id": "series-7-readiness-check-s7-f3-034",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes long market value as tested in Series 7 recommendations and products?",
+    "prompt": "A customer in a high federal bracket receives, in one year: dividends on common stock held for three years, distributions from an equity REIT, interest on a general obligation bond of her state, and a profit from selling a municipal bond she bought at par three years earlier. Which statement about her federal taxes is accurate?",
     "options": [
       {
         "id": "a",
-        "text": "LMV is never the current market value of long securities in a margin account"
+        "text": "The profit on the municipal bond sale is a taxable long-term capital gain"
       },
       {
         "id": "b",
-        "text": "Debit balance is the amount borrowed from the broker in a long margin account."
+        "text": "The REIT distributions qualify for the lower qualified-dividend tax rates"
       },
       {
         "id": "c",
-        "text": "Class B shares historically had deferred sales charges and higher expenses, often converting after a period."
+        "text": "The muni bond profit is tax-exempt, just like the bond's interest income"
       },
       {
         "id": "d",
-        "text": "LMV is the current market value of long securities in a margin account"
+        "text": "The common stock dividends are taxed at ordinary rates because they are cash"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "LMV is the current market value of long securities in a margin account. Example: 100 shares at $40 gives $4,000 LMV.",
+    "correctOptionId": "a",
+    "explanation": "Municipal bond interest is generally exempt from federal income tax, but gains from selling the bond are not: a bond bought at par and sold above cost after more than a year produces a taxable long-term capital gain. Dividends on common stock held well past the 60-day holding test are qualified and taxed at capital-gains rates, while ordinary REIT dividends are generally nonqualified and taxed as ordinary income.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “LMV is the current market value of long securities in a margin account”.",
-      "b": "This is the answer to a different question (“Which statement correctly describes debit balance as tested in Series 7 recommendations and products?”), not to this one.",
-      "c": "This is the answer to a different question (“In Series 7 recommendations and products, what were Class B shares known for:”), not to this one."
+      "b": "REIT dividends generally do not meet the qualified-dividend definition and are taxed mostly at ordinary income rates.",
+      "c": "The federal exemption covers municipal interest, not price gains; selling the bond above cost creates a capital gain.",
+      "d": "Cash dividends on common stock held well beyond the 60-day holding test are qualified and taxed at capital-gains rates."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1459,31 +1459,31 @@
     "id": "series-7-readiness-check-s7-f3-035",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a covered call as tested in Series 7 recommendations and products? (applied scenario 2)?",
+    "prompt": "A 61-year-old customer opened her first Roth IRA three years ago and has contributed $15,000; the account is now worth $19,000. She withdraws the full $19,000. How is the distribution taxed?",
     "options": [
       {
         "id": "a",
-        "text": "A covered call is long stock plus short call, generating premium but limiting upside"
+        "text": "The full $19,000 is tax-free because she is older than age 59½ at withdrawal"
       },
       {
         "id": "b",
-        "text": "Call features cap upside when rates fall and create reinvestment risk, especially for premium bonds."
+        "text": "The full $19,000 is taxable as income, but no 10% penalty applies after age 59½"
       },
       {
         "id": "c",
-        "text": "UITs may suit investors seeking a fixed portfolio and defined termination, but they can carry sales charges and limited flexibility."
+        "text": "The $4,000 of earnings is taxable and also subject to the 10% early-withdrawal penalty"
       },
       {
         "id": "d",
-        "text": "Firms retain communications, account records, order tickets, confirmations, and supervisory reviews supporting business activity."
+        "text": "$15,000 is tax-free; the $4,000 of earnings is taxable but not penalized"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "A covered call is long stock plus short call, generating premium but limiting upside. Example: Own 100 shares and sell 1 call.",
+    "correctOptionId": "d",
+    "explanation": "A Roth distribution is qualified (fully tax-free) only if the owner is 59½ or older and five years have passed since the year of her first Roth contribution. She meets the age test but not the 5-year rule. Ordering rules return contributions first, tax-free; the $4,000 of earnings is taxable income, but the 10% penalty does not apply because she is over 59½.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“In Series 7 recommendations and products, how does a call feature affect suitability?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “A covered call is long stock plus short call, generating premium but limiting upside”.",
-      "d": "Not the best answer here; the right answer is “A covered call is long stock plus short call, generating premium but limiting upside”."
+      "a": "Age 59½ alone is not enough; earnings are tax-free once the 5-year rule is also satisfied, and her account is three years old.",
+      "b": "Roth contributions were made with after-tax dollars, so the $15,000 of contributions comes back tax-free under the ordering rules.",
+      "c": "The earnings are taxable here, but the 10% early-withdrawal penalty does not apply to an owner who is over 59½."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1492,31 +1492,31 @@
     "id": "series-7-readiness-check-s7-f3-036",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes debit balance as tested in Series 7 recommendations and products?",
+    "prompt": "A customer born in March 1953 turns 73 in 2026. She owns a traditional IRA and a Roth IRA and has never taken a distribution. Which statement about her required minimum distributions is correct?",
     "options": [
       {
         "id": "a",
-        "text": "Debit balance is never the amount borrowed from the broker in a long margin account"
+        "text": "Her first RMD must be taken by December 31, 2026, with no extension available"
       },
       {
         "id": "b",
-        "text": "Debit balance is the amount borrowed from the broker in a long margin account"
+        "text": "Her first RMD may wait until April 1, 2027, but then two RMDs fall in 2027"
       },
       {
         "id": "c",
-        "text": "ABLE accounts provide tax-advantaged savings for eligible individuals with disabilities while preserving certain benefits."
+        "text": "She must take RMDs from both IRAs, starting with the 2026 calendar year's amount"
       },
       {
         "id": "d",
-        "text": "A debit spread costs net premium and generally has limited risk and limited reward."
+        "text": "Her RMDs do not begin until age 75 under the SECURE 2.0 Act schedule"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Debit balance is the amount borrowed from the broker in a long margin account. Example: Buy $10,000 stock with $5,000 equity creates $5,000 debit.",
+    "explanation": "Under SECURE 2.0, owners born 1951–1959 begin RMDs at 73. Her first RMD (for 2026) may be delayed to April 1 of the following year, 2027, but the 2027 RMD is still due by December 31, 2027, so delaying puts two taxable distributions in one tax year. Roth IRAs have no RMDs during the original owner's lifetime.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Debit balance is the amount borrowed from the broker in a long margin account”.",
-      "c": "Not the best answer here; the right answer is “Debit balance is the amount borrowed from the broker in a long margin account”.",
-      "d": "Not the best answer here; the right answer is “Debit balance is the amount borrowed from the broker in a long margin account”."
+      "a": "The first RMD can be deferred to April 1 of the year after she turns 73; later RMDs are the ones due by December 31.",
+      "c": "Original owners of Roth IRAs are not subject to lifetime RMDs; her traditional IRA is the account that requires distributions.",
+      "d": "Age 75 applies to owners born in 1960 or later; someone born in 1953 starts RMDs at age 73."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1525,31 +1525,31 @@
     "id": "series-7-readiness-check-s7-f3-037",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes convexity as tested in Series 7 recommendations and products?",
+    "prompt": "In March 2026 a customer took a check from IRA #1 and redeposited it into IRA #2 within 40 days. In October 2026 she wants to move money from IRA #3 to a new IRA at another firm. Which method avoids tax problems?",
     "options": [
       {
         "id": "a",
-        "text": "Rebalancing restores target asset allocation after market movements."
+        "text": "Take a check from IRA #3 and redeposit it within 60 days, since it is a different IRA"
       },
       {
         "id": "b",
-        "text": "They can involve costs, lost benefits, investment choices, services, and conflicts that must be evaluated."
+        "text": "Take a check from IRA #3 and redeposit it within 30 days to stay inside the limit"
       },
       {
         "id": "c",
-        "text": "Convexity measures curvature in the bond price-yield relationship and improves duration-based price estimates for larger rate moves"
+        "text": "Use a direct trustee-to-trustee transfer, which the once-a-year limit does not cover"
       },
       {
         "id": "d",
-        "text": "Recommendations must consider product risks, costs, reasonably available alternatives, and the customer profile under applicable standards."
+        "text": "Wait until January 2027, when a new calendar year resets the rollover limit"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Convexity measures curvature in the bond price-yield relationship and improves duration-based price estimates for larger rate moves. Example: Callable bonds can have negative convexity.",
+    "explanation": "An investor may make one 60-day indirect IRA-to-IRA rollover per 12-month period, counting all of her IRAs together. The March rollover uses that allowance until March 2027, so a second indirect rollover in October would be treated as a taxable distribution (plus a possible 10% penalty if under 59½). Direct trustee-to-trustee transfers are not rollovers and can be done any number of times.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Convexity measures curvature in the bond price-yield relationship and improves duration-based price estimates for larger rate moves”.",
-      "b": "Not the best answer here; the right answer is “Convexity measures curvature in the bond price-yield relationship and improves duration-based price estimates for larger rate moves”.",
-      "d": "Not the best answer here; the right answer is “Convexity measures curvature in the bond price-yield relationship and improves duration-based price estimates for larger rate moves”."
+      "a": "Since 2015 the once-per-12-months limit applies across all of a person's IRAs combined, not separately to each account.",
+      "b": "Shortening the redeposit period does not help; any second indirect IRA-to-IRA rollover within 12 months is disallowed.",
+      "d": "The limit runs 12 months from the prior distribution, not by calendar year, so January 2027 is still too early."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1558,31 +1558,31 @@
     "id": "series-7-readiness-check-s7-f3-038",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes SMA as tested in Series 7 recommendations and products?",
+    "prompt": "A 70-year-old retiree with moderate risk tolerance wants protection against a market decline over the next two years. A rep recommends she buy and hold a 2x inverse S&P 500 ETF for that period. Under Reg BI's care obligation, what is the main problem?",
     "options": [
       {
         "id": "a",
-        "text": "Use it to compare tax-exempt and taxable income for investors in taxable accounts."
+        "text": "It resets daily, so a two-year return can stray far from −2x the index's return"
       },
       {
         "id": "b",
-        "text": "DPPs can be illiquid, complex, tax-sensitive, high risk, and suitable only for investors who understand and can bear those risks."
+        "text": "Inverse ETFs must be held in a margin account because they are economically short"
       },
       {
         "id": "c",
-        "text": "Common stocks may suit investors seeking growth who can tolerate price volatility and possible loss of principal."
+        "text": "No problem exists if she signs a disclosure acknowledging the fund's leverage risks"
       },
       {
         "id": "d",
-        "text": "Special Memorandum Account tracks excess equity in a margin account that may support withdrawals or purchases under rules."
+        "text": "Exchange-listed ETFs are diversified, so the recommendation meets the care standard"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Special Memorandum Account tracks excess equity in a margin account that may support withdrawals or purchases under rules. Example: Market appreciation can create SMA.",
+    "correctOptionId": "a",
+    "explanation": "Leveraged and inverse ETFs seek their stated multiple for a single day. Daily resetting and compounding mean results over months or years can diverge widely from −2x the index, and in volatile markets the fund can lose money even when the index falls. A buy-and-hold recommendation to a moderate-risk retiree lacks a reasonable basis under Reg BI's care obligation; FINRA treats these funds as short-term trading tools.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Special Memorandum Account tracks excess equity in a margin account that may support withdrawals or purchases under rules”.",
-      "b": "Not the best answer here; the right answer is “Special Memorandum Account tracks excess equity in a margin account that may support withdrawals or purchases under rules”.",
-      "c": "This is the answer to a different question (“In Series 7 recommendations and products, when are common stocks suitable?”), not to this one."
+      "b": "Buying an inverse ETF is a long purchase of fund shares and can be done in a cash account, so margin is not the issue.",
+      "c": "Disclosure meets the disclosure obligation, but it does not cure a recommendation that fails the separate care obligation.",
+      "d": "Exchange listing and a basket of holdings do not address the daily-reset decay that makes a two-year hold unsuitable."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1591,31 +1591,31 @@
     "id": "series-7-readiness-check-s7-f3-039",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes a reverse split as tested in Series 7 recommendations and products?",
+    "prompt": "A broker-dealer announces a 60-day contest: the reps who sell the most of the firm's new proprietary bond fund win a resort trip. How does Regulation Best Interest treat this contest?",
     "options": [
       {
         "id": "a",
-        "text": "A reverse split reduces share count and increases price proportionally, before market effects"
+        "text": "It is allowed if the firm discloses the contest in its Form CRS relationship summary"
       },
       {
         "id": "b",
-        "text": "MBS investors face prepayment, extension, interest-rate, and cash-flow uncertainty risks."
+        "text": "It is allowed if each customer signs an acknowledgment of the rep's incentive"
       },
       {
         "id": "c",
-        "text": "Use tax-equivalent yield to compare tax-free muni yield with taxable alternatives."
+        "text": "It is restricted for retirement accounts but allowed in taxable brokerage accounts"
       },
       {
         "id": "d",
-        "text": "Preferred stock may fit income-oriented investors who can accept interest-rate sensitivity, issuer credit risk, limited voting rights, and call risk."
+        "text": "The firm must eliminate it, since it ties rewards to one product in a limited time"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "A reverse split reduces share count and increases price proportionally, before market effects. Example: 1-for-10 reverse split turns 100 shares at $2 into 10 shares at $20.",
+    "correctOptionId": "d",
+    "explanation": "Reg BI's conflict-of-interest obligation requires a broker-dealer to identify and eliminate sales contests, sales quotas, bonuses and non-cash compensation based on sales of specific securities or specific types of securities within a limited period. A 60-day trip contest on one proprietary fund is exactly that, so disclosing or mitigating it is not enough. Other conflicts may be handled through disclosure and mitigation.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “A reverse split reduces share count and increases price proportionally, before market effects”.",
-      "c": "Not the best answer here; the right answer is “A reverse split reduces share count and increases price proportionally, before market effects”.",
-      "d": "This is the answer to a different question (“In Series 7 recommendations and products, when might preferred stock fit?”), not to this one."
+      "a": "Form CRS disclosure does not cure this conflict; Reg BI requires eliminating contests tied to specific securities in a limited period.",
+      "b": "Customer consent cannot waive Reg BI; this category of incentive must be eliminated, not merely acknowledged by the customer.",
+      "c": "Reg BI applies to recommendations to retail customers in any account type, taxable or retirement, so the account type is irrelevant."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1624,31 +1624,31 @@
     "id": "series-7-readiness-check-s7-f3-040",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, what must reps do with breakpoints?",
+    "prompt": "A customer buys 25-year Treasury STRIPS but expects to sell them in three years to fund a home purchase. Which risk most threatens the amount she will receive at that sale?",
     "options": [
       {
         "id": "a",
-        "text": "Reps must never disclose and apply available sales charge discounts such as breakpoints, LOIs"
+        "text": "Reinvestment risk on the semiannual interest payments"
       },
       {
         "id": "b",
-        "text": "Reps must disclose and apply available sales charge discounts such as breakpoints, LOIs, and rights of accumulation."
+        "text": "Default risk on the U.S. Treasury's payment of principal"
       },
       {
         "id": "c",
-        "text": "Equity equals long market value minus debit balance."
+        "text": "Interest-rate risk from the zeros' long duration"
       },
       {
         "id": "d",
-        "text": "They can involve costs, lost benefits, investment choices, services, and conflicts that must be evaluated."
+        "text": "Call risk if the Treasury redeems the STRIPS before maturity"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Reps must disclose and apply available sales charge discounts such as breakpoints, LOIs, and rights of accumulation. Example: A customer near a breakpoint should be informed.",
+    "correctOptionId": "c",
+    "explanation": "STRIPS are zero-coupon bonds, so their duration equals their maturity, 25 years, making their prices the most sensitive to rate changes. Selling after three years means she receives market value, which falls sharply if rates rise. Interest-rate risk is systematic and cannot be diversified away. Zeros eliminate reinvestment risk, Treasuries carry minimal default risk, and STRIPS are not callable.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Reps must disclose and apply available sales charge discounts such as breakpoints, LOIs, and rights of accumulation”.",
-      "c": "Not the best answer here; the right answer is “Reps must disclose and apply available sales charge discounts such as breakpoints, LOIs, and rights of accumulation”.",
-      "d": "Not the best answer here; the right answer is “Reps must disclose and apply available sales charge discounts such as breakpoints, LOIs, and rights of accumulation”."
+      "a": "STRIPS make no periodic interest payments, so there is nothing to reinvest; zero-coupon bonds remove reinvestment risk.",
+      "b": "Treasury securities are backed by the full faith and credit of the U.S. government, so credit risk is minimal here.",
+      "d": "STRIPS are created from noncallable Treasury notes and bonds, so the Treasury cannot redeem them before maturity."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1657,31 +1657,31 @@
     "id": "series-7-readiness-check-s7-f3-041",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "In Series 7 recommendations and products, how does a rights offering affect shareholders? (workplace scenario 6)?",
+    "prompt": "On Monday, a customer's new firm submits a transfer instruction through ACATS to move her account from her old firm. Assuming no holidays and no exceptions, by when must the old firm validate the instruction and complete the transfer?",
     "options": [
       {
         "id": "a",
-        "text": "Correlation measures how two investments move relative to each other"
+        "text": "Validate by Wednesday; complete by the following Monday"
       },
       {
         "id": "b",
-        "text": "A long straddle buys a call and put with same strike/expiration, profiting from large movement either direction."
+        "text": "Validate by Monday; complete by the following Monday"
       },
       {
         "id": "c",
-        "text": "It lets current shareholders buy additional shares, often below market, to maintain ownership percentage"
+        "text": "Validate by Tuesday; complete by the following Tuesday"
       },
       {
         "id": "d",
-        "text": "YTC is important for premium callable bonds likely to be redeemed before maturity"
+        "text": "Validate by Tuesday; complete by that Friday"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "It lets current shareholders buy additional shares, often below market, to maintain ownership percentage. Example: Existing holders receive rights to subscribe.",
+    "correctOptionId": "d",
+    "explanation": "Under FINRA Rule 11870, the carrying (delivering) firm has one business day after receiving the transfer instruction to validate it or take exception, and it must complete the transfer within three business days after validation. An instruction received Monday is validated by Tuesday, and the assets must be delivered by Friday (Wednesday, Thursday and Friday).",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes correlation ? (workplace scenario 7) as tested in Series 7…”), not to this one.",
-      "b": "This is the answer to a different question (“Which statement correctly describes a long straddle as tested in Series 7 recommendations and products?”), not to this one.",
-      "d": "This is the answer to a different question (“In Series 7 recommendations and products, when is yield to call especially important?”), not to this one."
+      "a": "Allows two business days to validate; the rule gives one business day, then three business days after validation to complete.",
+      "b": "Validation is due within one business day, not the same day, and completion follows three business days after validation, not five.",
+      "c": "Counts five business days after validation; completion is due three business days after Tuesday's validation, which is Friday."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1690,31 +1690,31 @@
     "id": "series-7-readiness-check-s7-f3-042",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f3",
-    "prompt": "Which statement correctly describes correlation ? (workplace scenario 7) as tested in Series 7 recommendations and products?",
+    "prompt": "A customer emails her rep alleging that he bought shares in her account without her permission. The rep wants to call her, smooth things over, and delete the email. What must happen?",
     "options": [
       {
         "id": "a",
-        "text": "Use it to compare tax-exempt and taxable income for investors in taxable accounts."
+        "text": "It is a written complaint the firm must record and keep for four years"
       },
       {
         "id": "b",
-        "text": "A put bond lets the holder require issuer repurchase at stated times/prices, potentially reducing interest-rate risk."
+        "text": "Emails are not written complaints, so a phone resolution without a record suffices"
       },
       {
         "id": "c",
-        "text": "Long put max gain is strike minus premium if the underlying falls to zero."
+        "text": "The rep may resolve it privately by reimbursing her loss from his own funds"
       },
       {
         "id": "d",
-        "text": "Correlation measures how two investments move relative to each other"
+        "text": "The firm must record it but may discard the record once the matter is resolved"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Correlation measures how two investments move relative to each other. Low or negative correlation improves diversification. Example: Stocks and high-quality bonds may have imperfect correlation.",
+    "correctOptionId": "a",
+    "explanation": "Any written grievance about the handling of a customer's account, including an email, is a written complaint. The rep must forward it to his supervising principal instead of handling it alone, and deleting business email would also violate recordkeeping rules. Under FINRA Rule 4513 the firm keeps a record of each written complaint for at least four years, and Rule 4530 requires quarterly complaint statistics to FINRA.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Correlation measures how two investments move relative to each other”.",
-      "b": "Not the best answer here; the right answer is “Correlation measures how two investments move relative to each other”.",
-      "c": "Not the best answer here; the right answer is “Correlation measures how two investments move relative to each other”."
+      "b": "FINRA treats any written grievance, including an email or text, as a written complaint; the delivery format does not matter.",
+      "c": "Reps may not settle customer disputes privately without the firm's knowledge; settlements must run through the firm and its principals.",
+      "d": "Rule 4513 requires the complaint record to be kept for at least four years, regardless of whether the matter has been resolved."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F3). · Local QA repair (stems/distractors)"
@@ -1723,31 +1723,31 @@
     "id": "series-7-readiness-check-s7-f4-001",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "Which statement correctly describes an unsolicited order as tested in Series 7 customer instructions and ops?",
+    "prompt": "A customer holds XYZ, now trading at 47, and enters a sell stop order at 45 to protect her position. The next trades print at 46.10, 45.05, 44.90, and 45.20. When is the order triggered, and what does it become?",
     "options": [
       {
         "id": "a",
-        "text": "An unsolicited order is initiated by the customer without recommendation"
+        "text": "At 45.05, becoming a limit order to sell at 45"
       },
       {
         "id": "b",
-        "text": "Free riding is buying and selling securities without paying for the purchase, using sale proceeds to cover cost."
+        "text": "At 45.05, becoming a market order to sell"
       },
       {
         "id": "c",
-        "text": "An extension may allow more time to pay for a purchase when properly requested and justified."
+        "text": "At 44.90, becoming a limit order to sell at 45"
       },
       {
         "id": "d",
-        "text": "Buyer pays and seller delivers securities according to settlement cycle and clearing arrangements."
+        "text": "At 44.90, becoming a market order to sell"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "An unsolicited order is initiated by the customer without recommendation. Example: Customer independently asks to buy a stock.",
+    "correctOptionId": "d",
+    "explanation": "A sell stop sits below the market and is triggered when a trade occurs at or below the stop price. The 45.05 print is still above 45, so the first trigger is the 44.90 trade. Once triggered, a plain stop becomes a market order and executes at the next available price, which may be below 45; a stop-limit order is the type that becomes a limit order.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which statement correctly describes free riding as tested in Series 7 customer instructions and ops?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “An unsolicited order is initiated by the customer without recommendation”.",
-      "d": "Not the best answer here; the right answer is “An unsolicited order is initiated by the customer without recommendation”."
+      "a": "Two errors: 45.05 is above the stop price, and a plain stop becomes a market order, not a limit order.",
+      "b": "Triggers too early; a sell stop needs a trade at or below 45, and the 45.05 print has not reached the stop price.",
+      "c": "Right trigger but wrong result; becoming a limit order at 45 describes a sell stop-limit order, not a plain stop."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F4). · Local QA repair (stems/distractors)"
@@ -1756,31 +1756,31 @@
     "id": "series-7-readiness-check-s7-f4-002",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "Which statement correctly describes a principal trade as tested in Series 7 customer instructions and ops?",
+    "prompt": "A margin customer asks to sell short 2,000 shares of a thinly traded small-cap stock that he does not own. Before the firm accepts and executes the order, what does Regulation SHO require?",
     "options": [
       {
         "id": "a",
-        "text": "DVP/RVP coordinates securities delivery with payment through banks/custodians, common for institutional accounts."
+        "text": "Confirmation that the customer held the stock long within the past 30 days"
       },
       {
         "id": "b",
-        "text": "Firm buys from or sells to customer for its own account, acting as dealer"
+        "text": "Reasonable grounds to believe the shares can be borrowed, documented by the firm"
       },
       {
         "id": "c",
-        "text": "A “don’t know” notice disputes an unmatched trade detail between firms."
+        "text": "A trade at a price above the last sale, under the short-sale uptick rule"
       },
       {
         "id": "d",
-        "text": "TRACE is FINRA’s Trade Reporting and Compliance Engine for eligible fixed-income transactions."
+        "text": "Full cash payment of the sale value deposited before the order is entered"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Firm buys from or sells to customer for its own account, acting as dealer. Example: Firm sells municipal bond from inventory.",
+    "explanation": "Rule 203 of Regulation SHO is the locate requirement: before accepting or effecting a short sale in an equity security, a broker-dealer must borrow the shares, arrange to borrow them, or have reasonable grounds to believe they can be borrowed for delivery by settlement, and it must document the locate. Thinly traded names are where locates most often fail.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Firm buys from or sells to customer for its own account, acting as dealer”.",
-      "c": "Not the best answer here; the right answer is “Firm buys from or sells to customer for its own account, acting as dealer”.",
-      "d": "Not the best answer here; the right answer is “Firm buys from or sells to customer for its own account, acting as dealer”."
+      "a": "Invents a prior-ownership test; a short sale is by definition a sale of shares the customer does not own, and no holding period applies.",
+      "c": "Cites the tick test repealed in 2007; Rule 201 now restricts short-sale prices only after a 10% intraday decline triggers the circuit breaker.",
+      "d": "Misstates margin; Reg T requires a short sale to be backed by 150% of its value, with the proceeds counting and the customer depositing 50%."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F4). · Local QA repair (stems/distractors)"
@@ -1789,31 +1789,31 @@
     "id": "series-7-readiness-check-s7-f4-003",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "Which statement correctly describes free riding as tested in Series 7 customer instructions and ops?",
+    "prompt": "In a cash account, a customer buys 300 shares of ABC on Monday and sells them on Tuesday at a profit. He sends no payment for the purchase, planning to let the sale proceeds cover it. What is the consequence under Regulation T?",
     "options": [
       {
         "id": "a",
-        "text": "An unsolicited order is initiated by the customer without recommendation."
+        "text": "The purchase is canceled and rebilled at Tuesday's closing price"
       },
       {
         "id": "b",
-        "text": "A “don’t know” notice disputes an unmatched trade detail between firms."
+        "text": "The firm charges margin interest on the purchase from trade date to sale date"
       },
       {
         "id": "c",
-        "text": "Free riding is buying and selling securities without paying for the purchase, using sale proceeds to cover cost."
+        "text": "The account is frozen for 90 days, requiring cash on hand before any purchase"
       },
       {
         "id": "d",
-        "text": "A sell-out can occur when a buyer fails to pay, allowing firm to liquidate securities under rules."
+        "text": "No restriction applies, because sale proceeds arrive before the Reg T payment date"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Free riding is buying and selling securities without paying for the purchase, using sale proceeds to cover cost. Example: Buy Monday, sell Tuesday, never deposit funds.",
+    "explanation": "Selling a security in a cash account before paying for it, and using the sale proceeds as payment, is free riding. Regulation T's remedy is a 90-day freeze: for 90 calendar days the customer must have full payment in the account before the firm executes any purchase. The firm cannot simply wait for the sale proceeds, even though they settle before the payment deadline.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes an unsolicited order as tested in Series 7 customer instructions and ops?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Free riding is buying and selling securities without paying for the purchase, using sale proceeds to cover cost”.",
-      "d": "Not the best answer here; the right answer is “Free riding is buying and selling securities without paying for the purchase, using sale proceeds to cover cost”."
+      "a": "Cancel and rebill is the remedy for an operational trade error, not for a customer who sold before paying for the purchase.",
+      "b": "A cash account extends no margin credit to charge interest on; the Reg T consequence for free riding is the 90-day freeze.",
+      "d": "Describes the free-riding pattern itself: paying for a purchase with the proceeds of selling it is exactly what triggers the 90-day freeze."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F4). · Local QA repair (stems/distractors)"
@@ -1822,31 +1822,31 @@
     "id": "series-7-readiness-check-s7-f4-004",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "Which statement correctly describes markup/markdown as tested in Series 7 customer instructions and ops?",
+    "prompt": "A firm sells a retail customer 200 shares of a thinly traded OTC stock from its own inventory at a 6% markup over the prevailing market price. The confirmation discloses the firm's principal capacity. How should compliance evaluate the markup under FINRA's 5% policy?",
     "options": [
       {
         "id": "a",
-        "text": "Customers must meet payment obligations by settlement or margin deadlines to avoid liquidation, freezes, or violations."
+        "text": "It may be fair, since 5% is a guideline weighed with factors such as liquidity"
       },
       {
         "id": "b",
-        "text": "Orders may execute before cancellation is confirmed; customers should understand cancellation is not guaranteed until processed."
+        "text": "It violates FINRA's rule capping markups at 5% over the dealer's own cost"
       },
       {
         "id": "c",
-        "text": "It occurs when securities are sold to meet payment for a purchase before fully paid, depending on timing and rules."
+        "text": "It is fair because it was disclosed, whatever its size relative to the market"
       },
       {
         "id": "d",
-        "text": "Markup is dealer charge when selling from inventory; markdown is dealer charge when buying into inventory"
+        "text": "It falls outside the policy, which applies to commissions rather than markups"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Markup is dealer charge when selling from inventory; markdown is dealer charge when buying into inventory. Example: Dealer sells bond to customer above prevailing market price.",
+    "correctOptionId": "a",
+    "explanation": "FINRA's 5% markup policy is a guideline, not a hard limit. Fairness under Rule 2121 depends on factors such as the type of security, its availability and liquidity, price, dollar amount, services provided, and the firm's pattern of markups, measured from the prevailing market price rather than the firm's cost. A 6% markup on an illiquid stock can be fair, while 5% on a liquid stock may be excessive.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“In Series 7 customer instructions and ops, why does payment timing matter?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Markup is dealer charge when selling from inventory; markdown is dealer charge when buying into inventory”.",
-      "c": "Not the best answer here; the right answer is “Markup is dealer charge when selling from inventory; markdown is dealer charge when buying into inventory”."
+      "b": "Two errors: the 5% figure is a guideline rather than a cap, and markups are measured from the prevailing market price, not the dealer's cost.",
+      "c": "Disclosure is one factor, but it cannot make an excessive markup fair; the price still has to be reasonable in light of the market.",
+      "d": "The 5% policy covers commissions, markups, and markdowns, including riskless principal and proceeds transactions."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F4). · Local QA repair (stems/distractors)"
@@ -1855,31 +1855,31 @@
     "id": "series-7-readiness-check-s7-f4-005",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "In Series 7 customer instructions and ops, why does payment timing matter?",
+    "prompt": "A firm fills a customer's market order to buy 400 shares of a NYSE-listed stock, acting as agent and buying from another broker-dealer. Which confirmation requirement applies to this trade?",
     "options": [
       {
         "id": "a",
-        "text": "Customers must meet payment obligations by settlement or margin deadlines to avoid liquidation, freezes, or violations."
+        "text": "Send it within 15 days after settlement, showing the agency capacity"
       },
       {
         "id": "b",
-        "text": "An unsolicited order is initiated by the customer without recommendation"
+        "text": "Disclose the firm's markup over the prevailing market price"
       },
       {
         "id": "c",
-        "text": "Firm buys from or sells to customer for its own account, acting as dealer"
+        "text": "Omit the commission, because agency charges are itemized on the monthly account statement"
       },
       {
         "id": "d",
-        "text": "Free riding is buying and selling securities without paying for the purchase, using sale proceeds to cover cost."
+        "text": "Send it by settlement, showing the agency capacity and the commission charged"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Customers must meet payment obligations by settlement or margin deadlines to avoid liquidation, freezes, or violations. Example: Cash account purchase unpaid by settlement creates issue.",
+    "correctOptionId": "d",
+    "explanation": "SEC Rule 10b-10 and FINRA Rule 2232 require a written confirmation at or before completion of the transaction, which is settlement. When the firm acts as agent, the confirmation must disclose its agency capacity and the commission charged, along with the trade date, security, quantity, and price; the time of execution and the contra party are available on request.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which statement correctly describes an unsolicited order as tested in Series 7 customer instructions and ops?”), not to this one.",
-      "c": "This is the answer to a different question (“Which statement correctly describes a principal trade as tested in Series 7 customer instructions and ops?”), not to this one.",
-      "d": "This is the answer to a different question (“Which statement correctly describes free riding as tested in Series 7 customer instructions and ops?”), not to this one."
+      "a": "Pushes the deadline past settlement; a confirmation is due at or before completion of the transaction, not 15 days after.",
+      "b": "Markup disclosure fits a principal trade; an agency trade discloses the commission the customer pays, not a dealer markup.",
+      "c": "The commission must appear on the confirmation itself; the monthly statement does not substitute for trade-by-trade disclosure."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F4). · Local QA repair (stems/distractors)"
@@ -1888,31 +1888,31 @@
     "id": "series-7-readiness-check-s7-f4-006",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "In Series 7 customer instructions and ops, what must a confirmation communicate?",
+    "prompt": "A rep mistakenly books a customer's filled market order to buy 1,000 shares into a different customer's account. The error is caught the next morning, after the stock has fallen. How should the firm correct it?",
     "options": [
       {
         "id": "a",
-        "text": "An unsolicited order is initiated by the customer without recommendation"
+        "text": "Leave the shares in the wrong account and ask that customer to ratify the trade"
       },
       {
         "id": "b",
-        "text": "A confirmation discloses transaction details such as security, price, quantity, capacity, compensation, and settlement information."
+        "text": "Cancel and rebill to the ordering customer at the original price, with principal approval"
       },
       {
         "id": "c",
-        "text": "Firm buys from or sells to customer for its own account, acting as dealer"
+        "text": "Cancel it and rebill the ordering customer at today's lower price, since the stock dropped"
       },
       {
         "id": "d",
-        "text": "Free riding is buying and selling securities without paying for the purchase, using sale proceeds to cover cost."
+        "text": "Move the position to the rep's own account and settle the loss with the customers directly"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "A confirmation discloses transaction details such as security, price, quantity, capacity, compensation, and settlement information. Example: Customer sees markup/markdown or commission information as required.",
+    "explanation": "A trade booked to the wrong account is fixed by cancel and rebill: the erroneous entry is canceled, the trade is rebooked to the customer who actually placed the order at the original execution price, and a principal approves and documents the correction. The customer who never ordered the trade bears no cost, and any loss caused by the error itself is absorbed by the firm.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes an unsolicited order as tested in Series 7 customer instructions and ops?”), not to this one.",
-      "c": "This is the answer to a different question (“Which statement correctly describes a principal trade as tested in Series 7 customer instructions and ops?”), not to this one.",
-      "d": "This is the answer to a different question (“Which statement correctly describes free riding as tested in Series 7 customer instructions and ops?”), not to this one."
+      "a": "Asking an uninvolved customer to accept a trade he never ordered creates an unauthorized trade rather than correcting the error.",
+      "c": "Rebilling at a later price misstates the execution; the customer who placed the order receives the original fill price.",
+      "d": "Reps may not take errors into personal accounts or settle losses privately; corrections go through the firm with principal approval."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F4). · Local QA repair (stems/distractors)"
@@ -1921,31 +1921,31 @@
     "id": "series-7-readiness-check-s7-f4-007",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "In Series 7 customer instructions and ops, why is trade reporting important?",
+    "prompt": "A customer holds one long XYZ 60 call, an American-style equity option. On Wednesday, with XYZ trading at 68, he exercises it. When does the resulting stock purchase settle, and what does he pay?",
     "options": [
       {
         "id": "a",
-        "text": "Firms must never report trades accurately and promptly to appropriate systems for transparency and regulation"
+        "text": "Thursday, paying $68 per share"
       },
       {
         "id": "b",
-        "text": "Best execution requires reasonable diligence to obtain the most favorable terms reasonably available for customer orders."
+        "text": "Friday, paying $60 per share"
       },
       {
         "id": "c",
-        "text": "Firms must report trades accurately and promptly to appropriate systems for transparency and regulation"
+        "text": "Thursday, paying $60 per share"
       },
       {
         "id": "d",
-        "text": "Customer instruction specifies security/action/amount; discretion lets rep decide one or more of those elements with authorization."
+        "text": "Friday, receiving $800 in cash per contract"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Firms must report trades accurately and promptly to appropriate systems for transparency and regulation. Example: OTC trades may require TRACE or equity reporting.",
+    "explanation": "Exercising an equity call means buying 100 shares at the strike price, $60 per share or $6,000 per contract, regardless of the $68 market price. Since the industry moved to T+1 in May 2024, stock delivered on an equity option exercise settles one business day after exercise, so a Wednesday exercise settles Thursday.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Firms must report trades accurately and promptly to appropriate systems for transparency and regulation”.",
-      "b": "Not the best answer here; the right answer is “Firms must report trades accurately and promptly to appropriate systems for transparency and regulation”.",
-      "d": "Not the best answer here; the right answer is “Firms must report trades accurately and promptly to appropriate systems for transparency and regulation”."
+      "a": "Uses the market price; the exercising call holder pays the $60 strike, which is why the call has $8 of intrinsic value here.",
+      "b": "Applies the old T+2 cycle; equity option exercises now settle T+1, so a Wednesday exercise settles Thursday.",
+      "d": "Describes cash settlement, which applies to index options; an equity option exercise delivers 100 shares of stock at the strike."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series7_300_authored.csv, S7-F4). · Local QA repair (stems/distractors)"
@@ -1954,31 +1954,31 @@
     "id": "series-7-readiness-check-s7-f4-008",
     "examSlug": "series-7-readiness-check",
     "topicId": "s7-f4",
-    "prompt": "Regulatory HSR filing in the U.S. is primarily concerned with:",
+    "prompt": "A retail customer asks to start entering orders in her online broker's after-hours session, which runs until 8 p.m. Eastern. Under FINRA Rule 2265, what must the firm do before permitting her to trade in that session?",
     "options": [
       {
         "id": "a",
-        "text": "Securities registration of all bonds"
+        "text": "Furnish her a risk disclosure statement about extended hours trading"
       },
       {
         "id": "b",
-        "text": "Environmental permits"
+        "text": "Obtain a principal's written approval of each after-hours order she places"
       },
       {
         "id": "c",
-        "text": "Insider trading of target officers"
+        "text": "Convert her orders to market orders so each one is certain to execute"
       },
       {
         "id": "d",
-        "text": "Antitrust/competition review for qualifying transactions"
+        "text": "Have her sign a margin agreement, since late-session trades settle on credit"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Hart-Scott-Rodino governs premerger notification for large deals.",
+    "correctOptionId": "a",
+    "explanation": "FINRA Rule 2265 bars a firm from letting a customer trade in extended hours unless it has first furnished a risk disclosure statement. The statement covers risks such as lower liquidity, higher volatility, changing prices, unlinked markets, news announcements, and wider quote spreads. Because of those risks, most firms accept only limit orders in these sessions.",
     "distractorExplanations": {
-      "a": "SEC registration is separate.",
-      "b": "May be part of broader DD.",
-      "c": "Not HSR's core."
+      "b": "Order-by-order principal approval is not the requirement; the rule is a risk disclosure delivered before extended-hours trading begins.",
+      "c": "Gets it backward: thin liquidity makes market orders dangerous after hours, and firms typically accept limit orders in these sessions.",
+      "d": "Extended-hours trades settle T+1 like regular-session trades; a cash account can trade after hours without a margin agreement."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

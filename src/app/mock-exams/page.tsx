@@ -60,7 +60,7 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title: leafPageTitle("Free Mock Exams 2026 | SIE, CFA, FRM, ServSafe & More"),
       description:
-        "Free timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate. Topic scoring, answer review, no signup.",
+        "Timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate — first mock free, then $5 for 5 attempts. Topic scoring, answer review, no signup.",
       keywords: [
         "free practice test",
         "free sie practice test",
@@ -74,9 +74,9 @@ export async function generateMetadata(): Promise<Metadata> {
         canonical: "/mock-exams",
       },
       openGraph: {
-        title: "Free Timed Mock Exams | UniPrep2Go",
+        title: "Timed Mock Exams — First One Free | UniPrep2Go",
         description:
-          "Free online practice tests for US licensing and finance with topic scoring and answer review.",
+          "Online timed practice tests for US licensing and finance with topic scoring and answer review. First mock free; then $5 for 5 attempts.",
         url: "/mock-exams",
         type: "website",
         images: [
@@ -115,9 +115,9 @@ export default function MockExamsIndexPage() {
       {
         "@type": "WebPage",
         "@id": `${pageUrl}#webpage`,
-        name: "Free Timed Mock Exams for US Licensing & Finance",
+        name: "Timed Mock Exams for US Licensing & Finance — First One Free",
         description:
-          "Free online practice tests for SIE, ServSafe, CFA, FRM, insurance, and California real estate.",
+          "Timed practice tests for SIE, ServSafe, CFA, FRM, insurance, and California real estate. First mock free (any exam, either mode); then $5 for 5 attempts.",
         url: pageUrl,
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
@@ -152,7 +152,7 @@ export default function MockExamsIndexPage() {
       >
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Free practice tests</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Free timed mock exams for US licensing & finance
+          Timed mock exams for US licensing &amp; finance — first one free
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
           {indexedCount} live indexed mocks across {verticals.length} exam paths

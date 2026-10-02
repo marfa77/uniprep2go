@@ -71,7 +71,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
                 "Cold holding: 41°F (5°C) or below",
                 "Hot holding: 135°F (57°C) or above",
                 "Ground beef, pork, lamb: 155°F for 15 seconds",
-                "Poultry, stuffed meats, casseroles: 165°F for 15 seconds",
+                "Poultry, stuffed meats, casseroles: 165°F for less than 1 second (instantaneous)",
                 "Whole cuts of beef, pork, lamb, fish: 145°F for 15 seconds",
                 "Reheating for hot holding: 165°F within 2 hours",
                 "TCS foods in the Danger Zone: 41°F to 135°F (discard after 4 hours, or 6 hours with time as a control)",

@@ -480,7 +480,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is this an official Medical Scribe certification exam?",
         answer:
-          "No. This UniPrep2Go readiness check is an independent 60-question / 75-minute / 70% diagnostic with topic scoring, free and with no signup. It is not AHDPG, ACMSS, or employer exam material, and it is not a full-length MSCE form.",
+          "No. This UniPrep2Go readiness check is an independent 60-question / 75-minute / 70% diagnostic with topic scoring — your first mock is free, with no signup. It is not AHDPG, ACMSS, or employer exam material, and it is not a full-length MSCE form.",
       },
       {
         question: "Is a medical scribe exam the same as CCMA or CMA?",
@@ -1022,13 +1022,17 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "servsafe-food-handler-readiness-check": {
     practiceTestName: "ServSafe Food Handler Practice Test",
-    whatIsExam: "ServSafe Food Handler is an entry food safety assessment for food workers covering contamination, hygiene, and time/temperature control (distinct from ServSafe Manager).",
+    whatIsExam: "ServSafe Food Handler is an entry food safety assessment for food workers covering contamination, personal hygiene, time/temperature control, and cleaning and sanitizing (distinct from ServSafe Manager).",
     administeredBy: "National Restaurant Association",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with National Restaurant Association.",
+    officialFormat: "40-question multiple-choice assessment, non-proctored, with no time limit (most examinees finish within about 40 minutes); 75% (30 of 40) to pass, though some jurisdictions set a different score. Verify current rules at ServSafe.com.",
     examFaqs: [
       {
         question: "What is the ServSafe Food Handler exam?",
-        answer: "ServSafe Food Handler is an entry food safety assessment for food workers covering contamination, hygiene, and time/temperature control (distinct from ServSafe Manager).",
+        answer: "ServSafe Food Handler is an entry food safety assessment for food workers covering contamination, personal hygiene, time/temperature control, and cleaning and sanitizing (distinct from ServSafe Manager).",
+      },
+      {
+        question: "How many questions are on the ServSafe Food Handler assessment, and what score passes?",
+        answer: "The official assessment has 40 multiple-choice questions, no time limit, and a 75% passing score (30 of 40); some jurisdictions set a different score. This UniPrep2Go check uses 60 questions with a 75-minute pacing timer and the same 75% target, so a pass here means you cleared the real bar with margin.",
       },
       {
         question: "Is this an official ServSafe Food Handler exam?",
