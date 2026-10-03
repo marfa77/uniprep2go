@@ -187,9 +187,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "NHA ExCPT practice test",
   },
   "cfa-level-1-readiness-check": {
-    title: "Free CFA Level 1 Practice Test | 60-Question Readiness Check",
+    title: "CFA Level 1 Practice Test 2026: Free 60-Question Check",
     description:
-      "Free CFA Level 1 practice: 60 timed questions across all 10 topic weights, 90 minutes, UniPrep2Go readiness target 70% — then repair with the $29 / 342-card Anki + $19 formula PDF. Official L1 is 180 MCQ / 4h30; CFA Institute sets the MPS each administration. Independent — not CFA Institute material.",
+      "Free CFA Level 1 practice test for 2026: 60 questions, 90 minutes, topic scores, 70% readiness target. Independent study aid, not CFA Institute material.",
     keywords: [
       "cfa level 1 practice test",
       "cfa level 1 mock exam",
