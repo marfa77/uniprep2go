@@ -782,6 +782,24 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Personal trainer candidates preparing for the ACSM Certified Personal Trainer exam who want a timed baseline before paid Q-banks.",
     practiceTestLabel: "ACSM CPT practice test",
   },
+  "cda-childcare-readiness-check": {
+    title: "Free CDA Practice Test 2026 | Child Development Associate",
+    description:
+      "Free CDA practice test: 60 timed childcare scenario questions with topic scores and answer review — first mock free, no signup. Official CDA Exam: 65 questions, 1 hr 45 min, pass/fail. Not Council material.",
+    keywords: [
+      "cda practice test",
+      "cda exam practice test",
+      "child development associate practice test",
+      "free cda practice test",
+      "cda exam questions",
+    ],
+    headline: "Free Child Development Associate (CDA) Practice Test",
+    intro:
+      "A free 60-question / 75-minute CDA practice test built from classroom scenarios — safe sleep, positive guidance, family conferences, observation records — with a score for each of four CDA competency groups. The official Council for Professional Recognition CDA Exam is 65 questions (60 + 5 photo scenarios) in 1 hour 45 minutes at Pearson VUE, scored pass/fail.",
+    audience:
+      "Early childhood teachers, family child care providers, and home visitors preparing for the CDA Exam who want a timed check of the CDA Functional Areas before booking Pearson VUE.",
+    practiceTestLabel: "CDA practice test",
+  },
   "nebosh-readiness-check": {
     title: "Free NEBOSH Practice Test | 50-Question IGC Diagnostic",
     description:

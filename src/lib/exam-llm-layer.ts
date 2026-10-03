@@ -316,6 +316,12 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "CDR’s Registration Examination for Dietitians is computer-adaptive (125–145 items, scaled pass 25/50) — this 120-question / 120-minute readiness check is a diagnostic baseline across the four CDR domains, not a Pearson VUE form.",
   },
   {
+    query: "CDA practice test free (Child Development Associate)",
+    mockSlug: "cda-childcare-readiness-check",
+    disambiguation:
+      "Council for Professional Recognition CDA Exam is 65 multiple-choice questions (60 + 5 photo scenarios) in 1 hour 45 minutes at Pearson VUE, pass/fail — this 60-question / 75-minute readiness check scores the four CDA competency groups; not Council material and not the dental-assistant (DANB) CDA.",
+  },
+  {
     query: "CDCP data centre practice test",
     mockSlug: "cdcp-readiness-check",
     disambiguation:

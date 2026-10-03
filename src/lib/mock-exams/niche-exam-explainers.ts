@@ -1147,18 +1147,67 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     keywords: ["aswb masters practice test", "lmsw practice exam", "aswb practice questions"],
   }),
   "cda-childcare-readiness-check": explainer({
-    practiceTestName: "CDA Childcare Practice Test",
+    practiceTestName: "Child Development Associate (CDA) Practice Test",
     whatIsExam:
-      "The Child Development Associate (CDA) Credential™ from the Council for Professional Recognition is a widely recognized early childhood credential. Candidates complete coursework, a portfolio, observation, and the CDA Exam.",
-    administeredBy: "Council for Professional Recognition (CDA)",
+      "The Child Development Associate (CDA) Credential™ from the Council for Professional Recognition is the most widely recognized entry credential in early childhood education. Candidates complete 120 hours of training, a Professional Portfolio, the computer-based CDA Exam at Pearson VUE, and — unless a qualifying exam result waives it — a Verification Visit with a CDA Professional Development Specialist. Settings include Preschool, Infant-Toddler, Family Child Care, Home Visitor, and center-based Birth to Five. This is the childcare CDA, not the dental assistant (DANB) CDA.",
+    administeredBy: "Council for Professional Recognition (CDA Exam delivered by Pearson VUE)",
+    officialFormat:
+      "Official CDA Exam: 65 multiple-choice questions (60 standard + 5 scenario questions with a short narrative and photo), up to 1 hour 45 minutes inside a 2-hour appointment, English or Spanish. Unanswered questions count as wrong. Results are pass/fail; the Council does not publish a numeric cut score. This UniPrep2Go check is a free 60-question / 75-minute diagnostic with a 70% readiness target and topic scoring — not a Council exam form.",
+    whoFor:
+      "Early childhood teachers, assistant teachers, family child care providers, and home visitors working toward a first CDA or a new setting — especially candidates who received a Ready to Schedule notice and want a timed check of the CDA Functional Areas before booking Pearson VUE.",
+    howToPrepare:
+      "1) Re-read the CDA Competency Standards book for your setting — the exam tests the 13 Functional Areas through practical classroom choices. 2) Work through the Council's free sample exam questions for your setting. 3) Take this free 60-question timed check and note your weakest of the four topic groups. 4) Review those areas with real examples from your own classroom and portfolio. 5) Answer every question on exam day — blanks are scored as wrong.",
+    topicBlurbs: [
+      {
+        id: "safe-healthy",
+        label: "Safe & healthy learning",
+        blurb: "Competency Standard I: safe sleep, hand hygiene, medication and allergy plans, supervision, nutrition, and room arrangement.",
+      },
+      {
+        id: "physical-cog",
+        label: "Physical & cognitive development",
+        blurb: "Functional Areas 4, 5 and 7: motor milestones, problem solving, early math and science, process art, and inclusion.",
+      },
+      {
+        id: "social-communication",
+        label: "Social, emotional & communication",
+        blurb: "Functional Areas 6, 8, 9 and 10: language and literacy, dual language learners, self-concept, feelings, and positive guidance.",
+      },
+      {
+        id: "families-professional",
+        label: "Families & professional practice",
+        blurb: "Competency Standards IV–VI: family partnerships, observation records, program management, confidentiality, and mandated reporting.",
+      },
+    ],
     examFaqs: [
       {
         question: "What is the CDA credential?",
         answer:
-          "CDA is a national early childhood credential verifying competency to work with young children in center-based, family child care, or home visitor settings.",
+          "CDA is a national early childhood credential from the Council for Professional Recognition verifying competency to work with young children in center-based, family child care, or home visitor settings.",
+      },
+      {
+        question: "How many questions are on the CDA Exam and how long is it?",
+        answer:
+          "The CDA Exam has 65 multiple-choice questions — 60 standard questions and 5 scenario questions with a short story and photo. You have up to 1 hour 45 minutes; the Pearson VUE appointment is 2 hours including instructions.",
+      },
+      {
+        question: "What score do you need to pass the CDA Exam?",
+        answer:
+          "The CDA Exam is reported as pass/fail and the Council does not publish a numeric passing score. A strong exam result can also waive the Verification Visit, so aim well above a bare pass.",
+      },
+      {
+        question: "Is this UniPrep2Go check the official CDA Exam?",
+        answer:
+          "No. It is an independent 60-question timed diagnostic mapped to CDA Competency Standards themes. The Council publishes free official sample questions for each setting — use both.",
       },
     ],
-    keywords: ["cda practice test", "child development associate practice exam"],
+    keywords: [
+      "cda practice test",
+      "cda exam practice test",
+      "child development associate practice test",
+      "cda exam questions",
+      "free cda practice test",
+    ],
   }),
   "pest-control-applicator-readiness-check": explainer({
     practiceTestName: "Pest Control Applicator Practice Test",
