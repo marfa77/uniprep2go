@@ -1125,7 +1125,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "belgium-flanders-mo-readiness-check": {
     title: "Free Belgium Flanders MO Practice Test | 60 Questions",
     description:
-      "Free Flanders MO practice: 60 timed questions. Belgium has no single federal civics MCQ today — live path is Dutch + MO/integration; a national civic test is proposed. Live 120-card Anki on Gumroad. Independent prep.",
+      "Free Flanders MO practice: 60 timed questions. Belgium has no single federal civics MCQ today — live path is Dutch + MO/integration; a national civic test is proposed. Live 165-card Anki on Gumroad. Independent prep.",
     keywords: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
     headline: "Free Belgium Flanders MO Readiness Check",
     intro:
@@ -1137,7 +1137,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nl-BE": {
         title: "Gratis MO oefentest Vlaanderen | 60 vragen maatschappelijke oriëntatie",
         description:
-          "Gratis MO-oefentest Vlaanderen: 60 getimede vragen over maatschappelijke oriëntatie (instellingen, geschiedenis, rechten, dagelijks leven). Geen officiële AgII-standaardtest — onafhankelijke voorbereiding. Live 120-card Anki-deck op Gumroad.",
+          "Gratis MO-oefentest Vlaanderen: 60 getimede vragen over maatschappelijke oriëntatie (instellingen, geschiedenis, rechten, dagelijks leven). Geen officiële AgII-standaardtest — onafhankelijke voorbereiding. Live 165-card Anki-deck op Gumroad.",
         intro:
           "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen. Officieel traject = 60u MO-cursus + standaardtest (60/40) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
       },

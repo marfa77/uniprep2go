@@ -600,7 +600,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Newcomers in Flanders preparing maatschappelijke oriëntatie and Dutch; applicants who wrongly expect a federal MCQ like CCSE or Life in the UK; and learners future-proofing against a proposed national test. Not legal advice and not official inburgering material.",
     howToPrepare:
-      "1) Register your inburgering / MO pathway with the correct Flemish agency. 2) Prioritise Dutch evidence and MO course requirements that actually appear on your contract. 3) Build civic literacy on Belgian/Flemish institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Pair Dutch NT2 with the live Dutch A2 Inburgering Anki deck; drill MO civics with the 120-card Flanders MO Anki after this free check.",
+      "1) Register your inburgering / MO pathway with the correct Flemish agency. 2) Prioritise Dutch evidence and MO course requirements that actually appear on your contract. 3) Build civic literacy on Belgian/Flemish institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Pair Dutch NT2 with the live Dutch A2 Inburgering Anki deck; drill MO civics with the 165-card Flanders MO Anki after this free check.",
     topicBlurbs: [
       {
         id: "institutions-orientation",
