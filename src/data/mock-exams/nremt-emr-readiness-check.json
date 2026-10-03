@@ -1323,31 +1323,31 @@
     "id": "nremt-emr-readiness-check-medical-011",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "Chest pain patient with aspirin allergy and no contraindications otherwise: aspirin should be",
+    "prompt": "A patient with chest pain reports a true aspirin allergy (hives and wheezing the last time). What should the EMR do about aspirin?",
     "options": [
       {
         "id": "a",
-        "text": "Given if protocol allows after allergy assessment"
+        "text": "Give it if protocol allows after an allergy assessment"
       },
       {
         "id": "b",
-        "text": "Given at a reduced dose of 81 mg to lower the reaction risk"
+        "text": "Give a reduced 81 mg dose to lower the reaction risk"
       },
       {
         "id": "c",
-        "text": "Replaced by oral diphenhydramine before giving aspirin"
+        "text": "Give oral diphenhydramine first, then give the aspirin"
       },
       {
         "id": "d",
-        "text": "Withheld and patient left without transport"
+        "text": "Withhold it, monitor closely and arrange rapid transport"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "True aspirin allergy contraindicates; otherwise chewable aspirin may be given per protocol.",
+    "correctOptionId": "d",
+    "explanation": "A true aspirin allergy is a contraindication, so the EMR withholds aspirin, keeps the patient at rest, monitors breathing and vital signs, and arranges rapid transport with ALS notified. Chest pain still needs definitive care even when aspirin cannot be given.",
     "distractorExplanations": {
-      "b": "A lower dose does not prevent an allergic reaction; a true aspirin allergy is a contraindication to aspirin.",
-      "c": "Premedicating with an antihistamine does not make aspirin safe in a true allergy and is outside EMR scope.",
-      "d": "Transport still required."
+      "a": "A documented aspirin allergy is itself a contraindication; no protocol step or allergy assessment makes aspirin appropriate for this patient.",
+      "b": "A lower dose does not prevent an allergic reaction; a true aspirin allergy rules out aspirin at any dose.",
+      "c": "Premedicating with an antihistamine does not make aspirin safe in a true allergy and is outside EMR scope of practice."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

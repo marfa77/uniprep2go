@@ -931,11 +931,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Total time the ED physician spent on the date of the encounter"
+        "text": "Total time the ED physician personally spent on the date of the encounter"
       },
       {
         "id": "b",
-        "text": "The documented key components/MDM appropriate to ED E/M levels"
+        "text": "The level of medical decision making documented for the visit"
       },
       {
         "id": "c",
@@ -947,7 +947,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ED E/M leveling follows ED-specific CPT rules emphasizing history/exam/MDM as applicable. Office time rules do not apply to ED levels.",
+    "explanation": "Since the 2023 CPT E/M revision, emergency department codes 99281–99285 are selected by medical decision making alone. History and exam only need to be medically appropriate, and time is not used to level ED visits because emergency care is shift-based.",
     "distractorExplanations": {
       "a": "ED E/M codes are not selected by time because ED care is shift-based; the office total-time rule does not apply.",
       "c": "Nursing triage acuity (such as ESI) is a facility measure, not the basis for the physician's ED E/M level.",

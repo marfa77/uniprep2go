@@ -118,3 +118,7 @@ Prod check after 581f805 found "On the X Readiness, … Select the best answer."
 ## 2026-10-03 — sample refresh
 
 - 25 state RE decks re-rendered (18 Gumroad products polished); EPA 608 samples re-picked after fact pass (passive ≤15 lb, low-pressure 25 mm Hg abs, 8 lb R-410A → 10 inHg) and classic Gumroad page republished.
+
+## 2026-10-03 — wrong-key fixes from express writers' flags
+
+`manual-patches-zfix-zlen4-facts-2026-10-03.json` (10 items): CDL air brakes failures-007/008 keys were swapped (stuck cut-out → falling pressure; stuck cut-in → overpressure / safety valve ~150 psi); NREMT EMR medical-011 now withholds aspirin in true allergy; electrical wiring-008 (standard interlocked MC needs a separate EGC, NEC 250.118); first aid bleeding-025 (no occlusive seal for lay first aiders) and cpr-007 (AHA 2025: two thumbs encircling or heel of one hand); forklift operation-010 (cross tracks diagonally, 1910.178(n)); NATE tools-027 (low split = excess airflow / low charge); water regs-005 (RTCR: TC triggers assessments, MCL is E. coli); AAPC CPC E/M-014 (ED levels by MDM only since 2023); plumbing dwv-002 (IPC Table 704.1 slopes). Still open from writer flags: AAPC CCS bank is AHIMA content under an AAPC slug; Life & Health has P&C items (auto underwriting); NREMT EMR/EMT conflicts (suction 10 vs 15 s, amputated part wrap); several "This X mock is:" meta items (first aid, nail tech, PHR, PT aide, PN, med aide, unarmed, ASCP MLT); MLT / med aide / PHR template explanations.

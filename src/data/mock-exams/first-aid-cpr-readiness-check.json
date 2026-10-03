@@ -201,7 +201,7 @@
     "id": "first-aid-cpr-readiness-check-cpr-007",
     "examSlug": "first-aid-cpr-readiness-check",
     "topicId": "cpr",
-    "prompt": "Infant compressions use:",
+    "prompt": "Which hand technique does current AHA guidance recommend for infant chest compressions?",
     "options": [
       {
         "id": "a",
@@ -209,22 +209,22 @@
       },
       {
         "id": "b",
-        "text": "Two fingers placed just below the breastbone tip"
+        "text": "Two fingers placed just below the nipple line"
       },
       {
         "id": "c",
-        "text": "Two fingers or two thumbs encircling, as trained"
+        "text": "Two thumbs encircling the chest, or the heel of one hand"
       },
       {
         "id": "d",
-        "text": "One thumb pressing to a depth of about 2 inches"
+        "text": "One thumb pressing straight down to a depth of about 2 inches"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Infants are not small adults. This item asks: “Infant compressions use:”. The matching answer is: Two fingers or two thumbs encircling, as trained — not adult full palms on the gut. Independent UniPrep diagnostic — not an official first-aid / CPR paper. Do not use adult full palms on the gut.",
+    "explanation": "The 2025 AHA guidelines recommend two thumbs encircling the chest or the heel of one hand for infant compressions, about 1.5 inches (4 cm) deep, one-third of chest depth, at 100–120 per minute. The older two-finger method was removed because it often gave compressions that were too shallow.",
     "distractorExplanations": {
       "a": "The two-hand stacked adult technique is too forceful and too wide for an infant chest and risks injury to the ribs and organs.",
-      "b": "Fingers go on the sternum just below the nipple line; pressing below the breastbone tip lands on the xiphoid and abdomen.",
+      "b": "Two-finger compressions were dropped in the AHA 2025 guidelines because they often fail to reach the 1.5-inch depth.",
       "d": "Infant depth is about 1.5 inches (4 cm), one-third of chest depth; 2 inches is the adult and child target, and one thumb is not a taught method."
     },
     "difficulty": "medium",
@@ -795,31 +795,31 @@
     "id": "first-aid-cpr-readiness-check-bleeding-025",
     "examSlug": "first-aid-cpr-readiness-check",
     "topicId": "bleeding",
-    "prompt": "A puncture to the chest that bubbles:",
+    "prompt": "A bystander has a puncture wound to the chest that bubbles with each breath. What should a first aider do?",
     "options": [
       {
         "id": "a",
-        "text": "Seal as trained (occlusive) and get ALS"
+        "text": "Leave it open or loosely covered (non-occlusive); call EMS"
       },
       {
         "id": "b",
-        "text": "Pack the hole tightly with gauze and press"
+        "text": "Pack the hole tightly with gauze and hold firm pressure on it"
       },
       {
         "id": "c",
-        "text": "Give rescue breaths to reinflate the lung"
+        "text": "Give rescue breaths to help reinflate the collapsed lung"
       },
       {
         "id": "d",
-        "text": "Pour saline in the wound to clean it first"
+        "text": "Tape plastic over it on all four sides so it is sealed airtight"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Sucking chest wounds are ALS. This item asks: “A puncture to the chest that bubbles:”. The matching answer is: Seal as trained (occlusive) and get ALS — this is not a band-aid job. Independent UniPrep diagnostic — not an official first-aid / CPR paper. This is not a band-aid job.",
+    "explanation": "Current AHA and Red Cross first aid guidance tells lay first aiders not to apply an occlusive (airtight) seal to an open chest wound, because a seal can trap air and cause a tension pneumothorax. Leave the wound open or loosely covered, control visible bleeding with light pressure, and get EMS on the way.",
     "distractorExplanations": {
       "b": "Wound packing is for junctional or limb bleeding, not an open chest wound; packing the chest can worsen breathing.",
-      "c": "A breathing patient does not get rescue breaths; a collapsed lung from a chest wound needs advanced care, not ventilation by a bystander.",
-      "d": "Irrigating an open chest wound delays care and can introduce fluid into the chest cavity; cleaning is for minor wounds."
+      "c": "A breathing patient does not get rescue breaths; a collapsed lung from a chest wound needs advanced care, not bystander ventilation.",
+      "d": "An airtight four-sided seal is the outdated occlusive technique; it can trap air and lead to tension pneumothorax, so first aiders should not seal the wound."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."

@@ -1290,31 +1290,31 @@
     "id": "forklift-operator-readiness-check-operation-010",
     "examSlug": "forklift-operator-readiness-check",
     "topicId": "operation",
-    "prompt": "Railroad tracks",
+    "prompt": "How should a forklift operator cross railroad tracks?",
     "options": [
       {
         "id": "a",
-        "text": "Cross at speed"
+        "text": "Cross at speed to clear the rails quickly"
       },
       {
         "id": "b",
-        "text": "Stop on the rails"
+        "text": "Stop on the rails to look both ways for trains"
       },
       {
         "id": "c",
-        "text": "Cross with load raised"
+        "text": "Cross with the load raised for extra clearance"
       },
       {
         "id": "d",
-        "text": "Cross square/slow"
+        "text": "Cross diagonally and slowly where possible"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Cross square/slow.",
+    "explanation": "OSHA 1910.178(n) requires railroad tracks to be crossed diagonally whenever possible, at slow speed with the load low, so both wheels on one side do not drop into the flangeway together and the truck stays stable. Never park closer than 8 feet from the track center.",
     "distractorExplanations": {
-      "a": "Speed over rails bounces the truck and load and can cause loss of control; tracks are crossed slowly.",
-      "b": "Stopping on tracks risks a rail strike; OSHA also bars parking closer than 8 feet from the track center.",
-      "c": "A raised load makes the bump over rails a tip hazard; the load stays low and tilted back while crossing."
+      "a": "Speed over rails bounces the truck and load and can cause loss of control; tracks are crossed slowly and diagonally.",
+      "b": "Stopping on the tracks risks a rail strike; look for trains before reaching the rails, and never park within 8 feet of the track center.",
+      "c": "A raised load makes the bump over the rails a tip-over hazard; the load stays low and tilted back while crossing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

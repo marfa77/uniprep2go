@@ -1620,31 +1620,31 @@
     "id": "water-treatment-operator-1-readiness-check-regs-005",
     "examSlug": "water-treatment-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Coliform MCL under Total Coliform Rule reflects",
+    "prompt": "Under the Revised Total Coliform Rule (in effect since 2016), what is the regulatory role of total coliform results?",
     "options": [
       {
         "id": "a",
-        "text": "No more than 1% of monthly samples positive"
+        "text": "They carry an MCL of no more than 5% positive samples in a month"
       },
       {
         "id": "b",
-        "text": "No more than 5% monthly samples positive"
+        "text": "They trigger Level 1 or Level 2 assessments; the MCL applies to E. coli"
       },
       {
         "id": "c",
-        "text": "No more than 10% of monthly samples positive"
+        "text": "Any single positive requires an immediate boil-water notice to all users"
       },
       {
         "id": "d",
-        "text": "No more than 25% of quarterly samples positive"
+        "text": "They are reported each quarter with no follow-up action required by the rule"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Coliform MCL under Total Coliform Rule reflects”. The matching rule is: No more than 5% monthly samples positive (with conditions). Independent UniPrep diagnostic — not a state board exam paper. Conditions applied, such as one positive allowed for systems taking fewer than 40 samples a month.",
+    "explanation": "The 2016 Revised Total Coliform Rule removed the old total coliform MCL (no more than 5% positive samples a month). Total coliform is now an indicator: exceeding the trigger levels requires a Level 1 or Level 2 assessment and correction of sanitary defects. The MCL applies to E. coli, and an E. coli MCL violation needs Tier 1 public notice.",
     "distractorExplanations": {
-      "a": "The original TCR allowed up to 5% positives (or one for small systems), not 1%.",
-      "c": "10% is double the TCR threshold of 5% total coliform positives in a month.",
-      "d": "TCR compliance was evaluated monthly at 5% positives, not 25% over a quarter."
+      "a": "The 5% monthly limit was the original 1989 Total Coliform Rule; the RTCR replaced it with assessment triggers and an E. coli MCL.",
+      "c": "Immediate (Tier 1) notice applies to an E. coli MCL violation; a total coliform positive triggers repeat sampling and possibly an assessment, not an automatic boil notice.",
+      "d": "A positive routine sample requires repeat samples within 24 hours, and trigger exceedances require assessments, so follow-up is mandatory."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."

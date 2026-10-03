@@ -729,31 +729,31 @@
     "id": "electrical-journeyman-readiness-check-wiring-008",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "MC cable differs from AC cable because MC",
+    "prompt": "How does standard interlocked-armor Type MC cable differ from Type AC cable for equipment grounding?",
     "options": [
       {
         "id": "a",
-        "text": "Has an internal aluminum bonding strip in contact with the armor so the armor serves as the EGC"
+        "text": "MC has an internal aluminum bonding strip touching the armor, so the armor serves as the EGC"
       },
       {
         "id": "b",
-        "text": "Is limited to dry locations and cannot be installed in wet locations"
+        "text": "MC is limited to dry locations and cannot be installed in wet locations"
       },
       {
         "id": "c",
-        "text": "Uses full size aluminum interlocked armor as EGC (typical) without separate thin strip"
+        "text": "MC needs a separate EGC inside, because its interlocked armor alone is not an EGC"
       },
       {
         "id": "d",
-        "text": "Is permitted in exposed runs and not concealed in walls"
+        "text": "MC is permitted in exposed runs only and cannot be concealed in walls"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “MC cable differs from AC cable because MC”. The matching rule is: Uses full size aluminum interlocked armor as EGC (typical) without separate thin strip. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Under NEC 250.118, the armor of Type AC cable together with its internal bonding strip qualifies as an equipment grounding conductor. Standard interlocked Type MC does not: it carries a separate EGC among its conductors. MC-AP, with a bare aluminum grounding/bonding conductor in contact with the armor, is the listed exception.",
     "distractorExplanations": {
-      "a": "The internal bonding strip that lets the armor serve as the EGC is the defining feature of Type AC cable, not MC.",
-      "b": "MC cable with a listed jacket is permitted in wet locations; dry-location limits apply to other cable types such as NM.",
-      "d": "MC cable may be installed exposed or concealed under 330.10; there is no ban on concealed runs."
+      "a": "The internal bonding strip that lets the armor act as the EGC is the defining feature of Type AC cable, not standard Type MC.",
+      "b": "MC cable with a listed jacket is permitted in wet locations; the dry-location limit belongs to other cable types such as NM.",
+      "d": "MC cable may be installed exposed or concealed under NEC 330.10; there is no ban on concealed runs."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."

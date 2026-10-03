@@ -36,31 +36,31 @@
     "id": "plumbing-journeyman-readiness-check-dwv-002",
     "examSlug": "plumbing-journeyman-readiness-check",
     "topicId": "dwv",
-    "prompt": "Minimum slope for horizontal drainage pipe (typical IPC) is",
+    "prompt": "Under the IPC, what is the minimum slope for horizontal drainage piping?",
     "options": [
       {
         "id": "a",
-        "text": "1/8 inch per foot for 3 inch and smaller; 1/16 inch per foot for 4 inch and larger"
+        "text": "1/8 inch per foot for 2-1/2 inch and smaller; 1/16 inch per foot for 3 to 6 inch"
       },
       {
         "id": "b",
-        "text": "1/4 inch per foot for 3 inch and smaller; 1/8 inch per foot for 4 inch and larger"
+        "text": "1/4 inch per foot for 2-1/2 inch and smaller; 1/8 inch per foot for 3 to 6 inch"
       },
       {
         "id": "c",
-        "text": "1/2 inch per foot for 3 inch and smaller; 1/4 inch per foot for 4 inch and larger"
+        "text": "1/4 inch per foot for 3 inch and smaller; 1/8 inch per foot for 4 inch and larger"
       },
       {
         "id": "d",
-        "text": "1 inch per foot for 3 inch and smaller; 1/2 inch per foot for 4 inch and larger"
+        "text": "1/2 inch per foot for 2-1/2 inch and smaller; 1/4 inch per foot for 3 to 6 inch"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Minimum slope for horizontal drainage pipe (typical IPC) is”. The matching rule is: 1/4 inch per foot for 3 inch and smaller; 1/8 inch per foot for 4 inch and larger. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "IPC Table 704.1 sets the minimum horizontal drainage slope by pipe size: 1/4 inch per foot for 2-1/2 inch and smaller, 1/8 inch per foot for 3 to 6 inch, and 1/16 inch per foot for 8 inch and larger. The 3-inch / 4-inch split is a common mix-up with other codes.",
     "distractorExplanations": {
-      "a": "Halves both values; 1/16 in/ft applies only to 8-inch and larger drains, and small drains need more than 1/8 in/ft.",
-      "c": "Doubles both values; 1/2 in/ft is steeper than the tabulated minimum and is not the code requirement for small drains.",
-      "d": "Far steeper than the code minimum; excessive slope is not required and can let liquids outrun solids in the drain."
+      "a": "Halves both values; 1/16 inch per foot applies only to 8-inch and larger drains, and small drains need 1/4 inch per foot.",
+      "c": "That 3-inch / 4-inch split is the rule of thumb from other codes; IPC Table 704.1 drops to 1/8 inch per foot starting at 3 inches.",
+      "d": "Doubles both values; 1/2 inch per foot is steeper than the tabulated IPC minimum and is not required for small drains."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on plumbing-journeyman-readiness-check."

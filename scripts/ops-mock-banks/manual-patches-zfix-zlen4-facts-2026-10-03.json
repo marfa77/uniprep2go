@@ -1,0 +1,177 @@
+{
+ "cdl-air-brakes-readiness-check": {
+  "cdl-air-brakes-readiness-check-failures-007": {
+   "prompt": "A governor stuck in the cut-out (unloaded) position most likely causes which problem?",
+   "options": {
+    "a": "ABS warning lamp lighting and wheel modulators shutting off",
+    "b": "Steadily falling tank pressure and a low-air warning",
+    "c": "Air dryer heater failure and a frozen purge valve",
+    "d": "Safety valve venting as pressure climbs past 150 psi"
+   },
+   "correctOptionId": "b",
+   "explanation": "Cut-out is the governor signal that unloads the compressor (around 125 psi). If the governor sticks there, the compressor never reloads, so every brake application drains the tanks: pressure keeps falling and the low-air warning comes on before 60 psi. A governor stuck at cut-in is the opposite fault.",
+   "distractorExplanations": {
+    "a": "The governor only controls compressor loading; a governor fault does not switch off the ABS modulators or light the ABS lamp.",
+    "c": "The dryer heater is an electrical circuit separate from the governor; a stuck governor changes tank pressure, not dryer heating.",
+    "d": "Overpressure with the safety valve venting near 150 psi is the stuck cut-in fault, where the compressor never stops pumping."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-008": {
+   "prompt": "A governor stuck in the cut-in (loaded) position most likely causes which problem?",
+   "options": {
+    "a": "ABS warning lamp lighting and wheel modulators shutting off",
+    "b": "Low-air warning as tank pressure falls below 60 psi",
+    "c": "Brake fade from drums overheating on long downgrades",
+    "d": "Overpressure, with the safety valve venting near 150 psi"
+   },
+   "correctOptionId": "d",
+   "explanation": "Cut-in is the governor signal that loads the compressor (around 100 psi). If it sticks there, the compressor never unloads, so tank pressure keeps climbing until the safety valve vents at about 150 psi, stressing lines and the compressor. Falling pressure and a low-air warning come from the opposite fault, a governor stuck at cut-out.",
+   "distractorExplanations": {
+    "a": "A governor fault changes compressor loading and tank pressure; it does not shut down ABS modulators or light the ABS lamp.",
+    "b": "Falling pressure and a low-air warning come from a governor stuck at cut-out, where the compressor never reloads.",
+    "c": "Brake fade comes from heat built up during long or hard braking, not from how the governor loads the compressor."
+   }
+  }
+ },
+ "nremt-emr-readiness-check": {
+  "nremt-emr-readiness-check-medical-011": {
+   "prompt": "A patient with chest pain reports a true aspirin allergy (hives and wheezing the last time). What should the EMR do about aspirin?",
+   "options": {
+    "a": "Give it if protocol allows after an allergy assessment",
+    "b": "Give a reduced 81 mg dose to lower the reaction risk",
+    "c": "Give oral diphenhydramine first, then give the aspirin",
+    "d": "Withhold it, monitor closely and arrange rapid transport"
+   },
+   "correctOptionId": "d",
+   "explanation": "A true aspirin allergy is a contraindication, so the EMR withholds aspirin, keeps the patient at rest, monitors breathing and vital signs, and arranges rapid transport with ALS notified. Chest pain still needs definitive care even when aspirin cannot be given.",
+   "distractorExplanations": {
+    "a": "A documented aspirin allergy is itself a contraindication; no protocol step or allergy assessment makes aspirin appropriate for this patient.",
+    "b": "A lower dose does not prevent an allergic reaction; a true aspirin allergy rules out aspirin at any dose.",
+    "c": "Premedicating with an antihistamine does not make aspirin safe in a true allergy and is outside EMR scope of practice."
+   }
+  }
+ },
+ "electrical-journeyman-readiness-check": {
+  "electrical-journeyman-readiness-check-wiring-008": {
+   "prompt": "How does standard interlocked-armor Type MC cable differ from Type AC cable for equipment grounding?",
+   "options": {
+    "a": "MC has an internal aluminum bonding strip touching the armor, so the armor serves as the EGC",
+    "b": "MC is limited to dry locations and cannot be installed in wet locations",
+    "c": "MC needs a separate EGC inside, because its interlocked armor alone is not an EGC",
+    "d": "MC is permitted in exposed runs only and cannot be concealed in walls"
+   },
+   "correctOptionId": "c",
+   "explanation": "Under NEC 250.118, the armor of Type AC cable together with its internal bonding strip qualifies as an equipment grounding conductor. Standard interlocked Type MC does not: it carries a separate EGC among its conductors. MC-AP, with a bare aluminum grounding/bonding conductor in contact with the armor, is the listed exception.",
+   "distractorExplanations": {
+    "a": "The internal bonding strip that lets the armor act as the EGC is the defining feature of Type AC cable, not standard Type MC.",
+    "b": "MC cable with a listed jacket is permitted in wet locations; the dry-location limit belongs to other cable types such as NM.",
+    "d": "MC cable may be installed exposed or concealed under NEC 330.10; there is no ban on concealed runs."
+   }
+  }
+ },
+ "first-aid-cpr-readiness-check": {
+  "first-aid-cpr-readiness-check-bleeding-025": {
+   "prompt": "A bystander has a puncture wound to the chest that bubbles with each breath. What should a first aider do?",
+   "options": {
+    "a": "Leave it open or loosely covered (non-occlusive); call EMS",
+    "b": "Pack the hole tightly with gauze and hold firm pressure on it",
+    "c": "Give rescue breaths to help reinflate the collapsed lung",
+    "d": "Tape plastic over it on all four sides so it is sealed airtight"
+   },
+   "correctOptionId": "a",
+   "explanation": "Current AHA and Red Cross first aid guidance tells lay first aiders not to apply an occlusive (airtight) seal to an open chest wound, because a seal can trap air and cause a tension pneumothorax. Leave the wound open or loosely covered, control visible bleeding with light pressure, and get EMS on the way.",
+   "distractorExplanations": {
+    "b": "Wound packing is for junctional or limb bleeding, not an open chest wound; packing the chest can worsen breathing.",
+    "c": "A breathing patient does not get rescue breaths; a collapsed lung from a chest wound needs advanced care, not bystander ventilation.",
+    "d": "An airtight four-sided seal is the outdated occlusive technique; it can trap air and lead to tension pneumothorax, so first aiders should not seal the wound."
+   }
+  },
+  "first-aid-cpr-readiness-check-cpr-007": {
+   "prompt": "Which hand technique does current AHA guidance recommend for infant chest compressions?",
+   "options": {
+    "a": "The heel of both hands stacked, as for an adult",
+    "b": "Two fingers placed just below the nipple line",
+    "c": "Two thumbs encircling the chest, or the heel of one hand",
+    "d": "One thumb pressing straight down to a depth of about 2 inches"
+   },
+   "correctOptionId": "c",
+   "explanation": "The 2025 AHA guidelines recommend two thumbs encircling the chest or the heel of one hand for infant compressions, about 1.5 inches (4 cm) deep, one-third of chest depth, at 100–120 per minute. The older two-finger method was removed because it often gave compressions that were too shallow.",
+   "distractorExplanations": {
+    "a": "The two-hand stacked adult technique is too forceful and too wide for an infant chest and risks injury to the ribs and organs.",
+    "b": "Two-finger compressions were dropped in the AHA 2025 guidelines because they often fail to reach the 1.5-inch depth.",
+    "d": "Infant depth is about 1.5 inches (4 cm), one-third of chest depth; 2 inches is the adult and child target, and one thumb is not a taught method."
+   }
+  }
+ },
+ "forklift-operator-readiness-check": {
+  "forklift-operator-readiness-check-operation-010": {
+   "prompt": "How should a forklift operator cross railroad tracks?",
+   "options": {
+    "a": "Cross at speed to clear the rails quickly",
+    "b": "Stop on the rails to look both ways for trains",
+    "c": "Cross with the load raised for extra clearance",
+    "d": "Cross diagonally and slowly where possible"
+   },
+   "correctOptionId": "d",
+   "explanation": "OSHA 1910.178(n) requires railroad tracks to be crossed diagonally whenever possible, at slow speed with the load low, so both wheels on one side do not drop into the flangeway together and the truck stays stable. Never park closer than 8 feet from the track center.",
+   "distractorExplanations": {
+    "a": "Speed over rails bounces the truck and load and can cause loss of control; tracks are crossed slowly and diagonally.",
+    "b": "Stopping on the tracks risks a rail strike; look for trains before reaching the rails, and never park within 8 feet of the track center.",
+    "c": "A raised load makes the bump over the rails a tip-over hazard; the load stays low and tilted back while crossing."
+   }
+  }
+ },
+ "nate-core-readiness-check": {
+  "nate-core-readiness-check-tools-027": {
+   "options": {
+    "c": "Excess airflow or an undercharged/underperforming coil"
+   },
+   "explanation": "A cooling split far below the typical 16–22 °F means the coil is removing too little heat from the air: low refrigerant charge, a weak compressor or restricted metering device, or too much airflow across the coil. Low airflow does the opposite and raises the split. Measure airflow and charge before adding refrigerant."
+  }
+ },
+ "water-treatment-operator-1-readiness-check": {
+  "water-treatment-operator-1-readiness-check-regs-005": {
+   "prompt": "Under the Revised Total Coliform Rule (in effect since 2016), what is the regulatory role of total coliform results?",
+   "options": {
+    "a": "They carry an MCL of no more than 5% positive samples in a month",
+    "b": "They trigger Level 1 or Level 2 assessments; the MCL applies to E. coli",
+    "c": "Any single positive requires an immediate boil-water notice to all users",
+    "d": "They are reported each quarter with no follow-up action required by the rule"
+   },
+   "correctOptionId": "b",
+   "explanation": "The 2016 Revised Total Coliform Rule removed the old total coliform MCL (no more than 5% positive samples a month). Total coliform is now an indicator: exceeding the trigger levels requires a Level 1 or Level 2 assessment and correction of sanitary defects. The MCL applies to E. coli, and an E. coli MCL violation needs Tier 1 public notice.",
+   "distractorExplanations": {
+    "a": "The 5% monthly limit was the original 1989 Total Coliform Rule; the RTCR replaced it with assessment triggers and an E. coli MCL.",
+    "c": "Immediate (Tier 1) notice applies to an E. coli MCL violation; a total coliform positive triggers repeat sampling and possibly an assessment, not an automatic boil notice.",
+    "d": "A positive routine sample requires repeat samples within 24 hours, and trigger exceedances require assessments, so follow-up is mandatory."
+   }
+  }
+ },
+ "aapc-cpc-readiness-check": {
+  "aapc-cpc-readiness-check-evaluation-management-014": {
+   "options": {
+    "a": "Total time the ED physician personally spent on the date of the encounter",
+    "b": "The level of medical decision making documented for the visit"
+   },
+   "explanation": "Since the 2023 CPT E/M revision, emergency department codes 99281–99285 are selected by medical decision making alone. History and exam only need to be medically appropriate, and time is not used to level ED visits because emergency care is shift-based."
+  }
+ },
+ "plumbing-journeyman-readiness-check": {
+  "plumbing-journeyman-readiness-check-dwv-002": {
+   "prompt": "Under the IPC, what is the minimum slope for horizontal drainage piping?",
+   "options": {
+    "a": "1/8 inch per foot for 2-1/2 inch and smaller; 1/16 inch per foot for 3 to 6 inch",
+    "b": "1/4 inch per foot for 2-1/2 inch and smaller; 1/8 inch per foot for 3 to 6 inch",
+    "c": "1/4 inch per foot for 3 inch and smaller; 1/8 inch per foot for 4 inch and larger",
+    "d": "1/2 inch per foot for 2-1/2 inch and smaller; 1/4 inch per foot for 3 to 6 inch"
+   },
+   "correctOptionId": "b",
+   "explanation": "IPC Table 704.1 sets the minimum horizontal drainage slope by pipe size: 1/4 inch per foot for 2-1/2 inch and smaller, 1/8 inch per foot for 3 to 6 inch, and 1/16 inch per foot for 8 inch and larger. The 3-inch / 4-inch split is a common mix-up with other codes.",
+   "distractorExplanations": {
+    "a": "Halves both values; 1/16 inch per foot applies only to 8-inch and larger drains, and small drains need 1/4 inch per foot.",
+    "c": "That 3-inch / 4-inch split is the rule of thumb from other codes; IPC Table 704.1 drops to 1/8 inch per foot starting at 3 inches.",
+    "d": "Doubles both values; 1/2 inch per foot is steeper than the tabulated IPC minimum and is not required for small drains."
+   }
+  }
+ }
+}

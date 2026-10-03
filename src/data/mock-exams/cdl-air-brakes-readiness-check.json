@@ -1686,31 +1686,31 @@
     "id": "cdl-air-brakes-readiness-check-failures-007",
     "examSlug": "cdl-air-brakes-readiness-check",
     "topicId": "failures",
-    "prompt": "A failed governor stuck in cut-out can cause",
+    "prompt": "A governor stuck in the cut-out (unloaded) position most likely causes which problem?",
     "options": [
       {
         "id": "a",
-        "text": "ABS warning lamp lighting and modulators shutting off"
+        "text": "ABS warning lamp lighting and wheel modulators shutting off"
       },
       {
         "id": "b",
-        "text": "Spring brakes releasing because supply pressure spikes"
+        "text": "Steadily falling tank pressure and a low-air warning"
       },
       {
         "id": "c",
-        "text": "Air dryer heater failure and frozen purge valve"
+        "text": "Air dryer heater failure and a frozen purge valve"
       },
       {
         "id": "d",
-        "text": "Overpressure / pop-off valve discharge / possible damage"
+        "text": "Safety valve venting as pressure climbs past 150 psi"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Stuck cut-out overcharges.",
+    "correctOptionId": "b",
+    "explanation": "Cut-out is the governor signal that unloads the compressor (around 125 psi). If the governor sticks there, the compressor never reloads, so every brake application drains the tanks: pressure keeps falling and the low-air warning comes on before 60 psi. A governor stuck at cut-in is the opposite fault.",
     "distractorExplanations": {
-      "a": "The governor controls compressor loading; its failure does not shut down ABS modulators.",
-      "b": "Spring brakes are already released at normal pressure; governor faults do not change that.",
-      "c": "The dryer heater is electrical and separate; a governor fault affects pressure regulation."
+      "a": "The governor only controls compressor loading; a governor fault does not switch off the ABS modulators or light the ABS lamp.",
+      "c": "The dryer heater is an electrical circuit separate from the governor; a stuck governor changes tank pressure, not dryer heating.",
+      "d": "Overpressure with the safety valve venting near 150 psi is the stuck cut-in fault, where the compressor never stops pumping."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1719,31 +1719,31 @@
     "id": "cdl-air-brakes-readiness-check-failures-008",
     "examSlug": "cdl-air-brakes-readiness-check",
     "topicId": "failures",
-    "prompt": "A failed governor stuck cut-in can cause",
+    "prompt": "A governor stuck in the cut-in (loaded) position most likely causes which problem?",
     "options": [
       {
         "id": "a",
-        "text": "ABS lamp lighting with modulators shut off"
+        "text": "ABS warning lamp lighting and wheel modulators shutting off"
       },
       {
         "id": "b",
-        "text": "Tractor protection valve closing at speed"
+        "text": "Low-air warning as tank pressure falls below 60 psi"
       },
       {
         "id": "c",
-        "text": "Brake fade from overheated drums"
+        "text": "Brake fade from drums overheating on long downgrades"
       },
       {
         "id": "d",
-        "text": "Low air pressure / warning / spring risk"
+        "text": "Overpressure, with the safety valve venting near 150 psi"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Compressor may not charge properly.",
+    "explanation": "Cut-in is the governor signal that loads the compressor (around 100 psi). If it sticks there, the compressor never unloads, so tank pressure keeps climbing until the safety valve vents at about 150 psi, stressing lines and the compressor. Falling pressure and a low-air warning come from the opposite fault, a governor stuck at cut-out.",
     "distractorExplanations": {
-      "a": "A governor fault affects compressor loading and tank pressure, not the ABS electronics.",
-      "b": "The TP valve closes on trailer air loss; it is not triggered by a governor fault.",
-      "c": "Fade comes from heat during braking, not from a governor failure."
+      "a": "A governor fault changes compressor loading and tank pressure; it does not shut down ABS modulators or light the ABS lamp.",
+      "b": "Falling pressure and a low-air warning come from a governor stuck at cut-out, where the compressor never reloads.",
+      "c": "Brake fade comes from heat built up during long or hard braking, not from how the governor loads the compressor."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
