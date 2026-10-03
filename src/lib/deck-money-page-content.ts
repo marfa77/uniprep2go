@@ -287,7 +287,7 @@ export const positioningOverrides: Partial<
   },
   "bms-building-automation-anki-deck": {
     ourEdge: [
-      "200+ cards: BACnet networking, HVAC sequences, platform ops, commissioning",
+      "200 cards: BACnet networking, HVAC sequences, platform ops, commissioning",
       "Free 60-question / 75-minute timed BMS diagnostic with topic scoring",
       "Ownable $11 .apkg — not a 10-questions-per-day tease or Brainscape tag dump",
       "Honest: no single U.S. federal BMS license; Niagara 4 TCP is vendor training",
@@ -327,7 +327,7 @@ export const positioningOverrides: Partial<
   },
   "pmp-anki-deck": {
     ourEdge: [
-      "346+ cards across People 33% / Process 41% / Business Environment 26% (2026 ECO)",
+      "346 cards across People 33% / Process 41% / Business Environment 26% (2026 ECO)",
       "Free domain-weighted readiness check before you buy a 180Q simulator",
       "Ownable $11 .apkg — not AnkiWeb dumps or AI card generators",
       "Independent prep — not PMI exam material",
@@ -654,7 +654,7 @@ Candidates treat free MCQ banks as the real exam format, under-drill hierarchy o
 Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. This deck builds knowledge recall only — it does not replace GIC1 scenario writing, the closing interview, or the GIC2 workplace risk assessment; practise those formats with your Learning Partner. Independent prep — not NEBOSH material.`,
   "bms-building-automation-anki-deck": `### What is inside
 
-200+ MCQ cards across four BMS/BAS domains: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same bank themes as the free 60-question timed readiness check. Live Gumroad .apkg — **$11**.
+200 MCQ cards across four BMS/BAS domains: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same bank themes as the free 60-question timed readiness check. Live Gumroad .apkg — **$11**.
 
 ### Plan with the free BMS mock
 

@@ -3669,7 +3669,7 @@ const rawDecks: Deck[] = [
       "Data centre operators, facility engineers, and IT infrastructure professionals preparing for the EXIN EPI CDCP credential after accredited EPI training.",
     format: ".apkg",
     facts: {
-      cards: "250+",
+      cards: "250",
       topics: "Facilities (power, cooling, fire, security) and Operations per EXIN EPI CDCP blueprint",
       formulas: "PUE, cooling capacity, UPS sizing, and tier-classification facts",
       examYear: "Current EXIN EPI CDCP cycle",

@@ -969,7 +969,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "leed-green-associate-anki-deck": {
     title: "LEED GA Prep | 250+ Cards + Free Mock",
     description:
-      "LEED Green Associate exam prep: 250+ flashcards covering v4.1 concepts and process domains. Free 50-question practice test included. Instant download for USGBC credential candidates. Independent prep — not USGBC exam material.",
+      "LEED Green Associate exam prep: 250 flashcards covering v4.1 concepts and process domains. Free 50-question practice test included. Instant download for USGBC credential candidates. Independent prep — not USGBC exam material.",
     keywords: [
       "leed green associate exam prep",
       "leed ga exam prep free",
@@ -1001,10 +1001,10 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "mrics-anki-deck": {
     title: "Best MRICS APC Anki Deck | 250+ Cards + Free Mock",
-    headline: "MRICS / APC Prep — 250+ Anki Cards + Free Mock",
+    headline: "MRICS / APC Prep — 250 Anki Cards + Free Mock",
     studyLabel: "MRICS APC interview and competency prep",
     description:
-      "Best independent MRICS APC Anki: $11 / 250+ cards for mandatory competencies, ethics, Level 2/3 advice, and interview structure — plus a free 50-question timed diagnostic. Ownable .apkg vs Brainscape packs. Official APC is written evidence + 60-min interview, not MCQ. QS NRM/JCT depth is a separate SKU.",
+      "Best independent MRICS APC Anki: $11 / 250 cards for mandatory competencies, ethics, Level 2/3 advice, and interview structure — plus a free 50-question timed diagnostic. Ownable .apkg vs Brainscape packs. Official APC is written evidence + 60-min interview, not MCQ. QS NRM/JCT depth is a separate SKU.",
     keywords: [
       "best mrics anki deck",
       "rics apc anki",

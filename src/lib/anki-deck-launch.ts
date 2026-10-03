@@ -1,4 +1,5 @@
 import deckSampleShots from "@/data/deck-sample-shots.json";
+import buildingSpecs from "@/data/building-deck-specs.json";
 import buildingCatalog from "@/data/gumroad/building-anki-decks.json";
 import waveCatalog from "@/data/gumroad/wave-anki-decks.json";
 import waveSpecs from "@/data/wave-deck-specs.json";
@@ -429,10 +430,12 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
   const mock = getLinkedMockForDeck(deck.slug);
   const mockPath = mock ? `/mock-exams/${mock.slug}` : null;
   const cardCount = estimateAnkiDeckCardCount(deck.slug);
-  const waveExact = waveSpecBySlug[deck.slug]?.cardCount;
+  const exactCount =
+    waveSpecBySlug[deck.slug]?.cardCount ??
+    (buildingSpecs as Record<string, { cardCount?: number }>)[deck.slug]?.cardCount;
   const cardLabel =
-    typeof waveExact === "number" && waveExact > 0
-      ? String(waveExact)
+    typeof exactCount === "number" && exactCount > 0
+      ? String(exactCount)
       : formatAnkiDeckCardLabel(cardCount);
   const apkgReady = isApkgReadyOnGumroad(deck.slug);
 

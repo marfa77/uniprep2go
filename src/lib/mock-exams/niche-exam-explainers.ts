@@ -1287,7 +1287,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The LEED Green Associate (GA) exam from GBCI is the foundational LEED credential demonstrating green-building literacy across integrative process, location and transportation, sustainable sites, water efficiency, energy and atmosphere, materials and resources, indoor environmental quality, and project synergies. It is often the first step before specialty LEED AP exams such as BD+C. Confirm current candidate handbook details with GBCI/USGBC before registering.",
     administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
     officialFormat:
-      "Official GBCI LEED Green Associate: commonly 100 multiple-choice / 2 hours / scaled pass 170 (125–200). UniPrep2Go free check: 50 questions / 100 minutes / 70% diagnostic — then drill weak domains in the linked $11 / 250+ Anki deck. Confirm current handbook at usgbc.org.",
+      "Official GBCI LEED Green Associate: commonly 100 multiple-choice / 2 hours / scaled pass 170 (125–200). UniPrep2Go free check: 50 questions / 100 minutes / 70% diagnostic — then drill weak domains in the linked $11 / 250 Anki deck. Confirm current handbook at usgbc.org.",
     whoFor:
       "Architects, engineers, sustainability staff, students, and project team members who need a baseline LEED credential before project roles or LEED AP specialty exams.",
     howToPrepare:
@@ -1602,7 +1602,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "Surveyors and quantity-surveying candidates on RICS APC pathways who need timed practice on ethics, mandatory competencies, and technical application before final assessment.",
     howToPrepare:
-      "Map your pathway competencies, draft Level 2/3 examples, take this free UniPrep2Go timed MRICS readiness check for judgment gaps, then repair weak competency themes with the linked $11 / 250+ Anki deck while you refine written APC evidence. QS specialists should also use the separate MRICS QS mock/deck for NRM and contracts.",
+      "Map your pathway competencies, draft Level 2/3 examples, take this free UniPrep2Go timed MRICS readiness check for judgment gaps, then repair weak competency themes with the linked $11 / 250 Anki deck while you refine written APC evidence. QS specialists should also use the separate MRICS QS mock/deck for NRM and contracts.",
     topicBlurbs: [
       {
         id: "mandatory-competencies",

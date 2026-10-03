@@ -746,7 +746,7 @@ describe("deck catalog", () => {
       "cfa-level-2-anki-deck": "CFA Level 2 Anki Deck — 495 Flashcards",
       "cfa-level-2-formula-reference-2026":
         "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
-      "cfps-anki-deck": "CFPS Anki Deck — 400+ Flashcards",
+      "cfps-anki-deck": "CFPS Anki Deck — 400 Flashcards",
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",
       "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",
@@ -766,11 +766,11 @@ describe("deck catalog", () => {
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1897 Flashcards",
       "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2115 Flashcards",
-      "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
-      "sat-anki-deck": "Digital SAT Anki Deck — 160+ Flashcards",
-      "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",
-      "gre-anki-deck": "GRE Anki Deck — 350+ Flashcards",
-      "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250+ Flashcards",
+      "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400 Flashcards",
+      "sat-anki-deck": "Digital SAT Anki Deck — 160 Flashcards",
+      "pmp-anki-deck": "PMP Anki Deck — 346 Flashcards",
+      "gre-anki-deck": "GRE Anki Deck — 350 Flashcards",
+      "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250 Flashcards",
       "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 2171 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":
         "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
@@ -805,7 +805,7 @@ describe("deck catalog", () => {
       "ielts-toefl-english-for-turkish-speakers-anki-deck":
         "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
       "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 165 Flashcards",
-      "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
+      "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200 Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":
         "CAT4 Level D Anki Deck + Printable PDF — Grade 7 Verbal & Quantitative",
@@ -828,11 +828,11 @@ describe("deck catalog", () => {
       "bench-energy-coal-trader-anki-deck":
         "Coal Trader Anki Deck — 221 Commodity Flashcards",
       "bms-building-automation-anki-deck":
-        "BMS / BAS Anki Deck — 200+ Flashcards",
+        "BMS / BAS Anki Deck — 200 Flashcards",
       "cfp-certification-anki-deck": "CFP Certification Anki Deck — 120 Flashcards",
       "commodity-trader-pack-bundle": "Commodity Trader Pack — 634 Anki Flashcards",
-      "cdcp-anki-deck": "CDCP Anki Deck — 250+ Flashcards",
-      "cem-anki-deck": "CEM Anki Deck — 250+ Flashcards",
+      "cdcp-anki-deck": "CDCP Anki Deck — 250 Flashcards",
+      "cem-anki-deck": "CEM Anki Deck — 250 Flashcards",
       "enrolled-agent-anki-deck": "IRS Enrolled Agent Anki Deck — 120 Flashcards",
       "fl-real-estate-anki-deck": "Florida Real Estate Anki Deck — 60 Flashcards",
       "mortgage-loan-originator-anki-deck": "SAFE MLO Anki Deck — 120 Flashcards",
@@ -870,21 +870,21 @@ describe("deck catalog", () => {
       "south-africa-survival-guide-prep2go-app":
         "South Africa Survival Guide — Prep2Go Immigration App",
       "ashrae-certifications-anki-deck":
-        "ASHRAE Certs Anki Deck — 250+ Flashcards",
+        "ASHRAE Certs Anki Deck — 250 Flashcards",
       "australia-survival-guide-prep2go-app": "Australia Survival Guide — Prep2Go Immigration App",
       "canada-survival-guide-prep2go-app": "Canada Survival Guide — Prep2Go Immigration App",
       "germany-survival-guide-prep2go-app": "Germany Survival Guide — Prep2Go Immigration App",
       "japan-survival-guide-prep2go-app": "Japan Survival Guide — Prep2Go Immigration App",
       "netherlands-survival-guide-prep2go-app":
         "Netherlands Survival Guide — Prep2Go Immigration App",
-      "nebosh-anki-deck": "NEBOSH IGC Anki Deck — 250+ Flashcards",
+      "nebosh-anki-deck": "NEBOSH IGC Anki Deck — 250 Flashcards",
       "uk-survival-guide-prep2go-app": "UK Survival Guide — Prep2Go Immigration App",
       "portugal-survival-guide-prep2go-app": "Portugal Survival Guide — Prep2Go Immigration App",
-      "leed-ap-bd-c-anki-deck": "LEED AP BD+C Anki Deck — 250+ Flashcards",
-      "leed-green-associate-anki-deck": "LEED GA Anki Deck — 250+ Flashcards",
-      "mrics-anki-deck": "MRICS / APC Anki Deck — 250+ Flashcards",
+      "leed-ap-bd-c-anki-deck": "LEED AP BD+C Anki Deck — 250 Flashcards",
+      "leed-green-associate-anki-deck": "LEED GA Anki Deck — 250 Flashcards",
+      "mrics-anki-deck": "MRICS / APC Anki Deck — 250 Flashcards",
       "mrics-quantity-surveying-anki-deck":
-        "MRICS QS Anki Deck — 250+ Flashcards",
+        "MRICS QS Anki Deck — 250 Flashcards",
       "leben-in-deutschland-anki-deck": "Leben in Deutschland Anki Deck — 296 Cards",
       "denmark-indfoedsretsproeven-anki-deck": "Denmark Indfødsretsprøven Anki Deck — 191 Cards",
       "ccse-espana-anki-deck": "CCSE España Anki Deck — 343 Cards",
@@ -902,7 +902,7 @@ describe("deck catalog", () => {
       "naturalisation-suisse-anki-deck": "Naturalisation suisse Anki Deck — 207 Cards",
       "naturalizzazione-svizzera-anki-deck": "Naturalizzazione svizzera Anki Deck — 207 Cards",
       "us-citizenship-anki-deck": "U.S. Citizenship Anki Deck — 128 Cards",
-      "well-ap-anki-deck": "WELL AP Anki Deck — 250+ Flashcards",
+      "well-ap-anki-deck": "WELL AP Anki Deck — 250 Flashcards",
     };
 
     expect(Object.fromEntries(availableDecks.map((deck) => [deck.slug, deck.title]))).toEqual(

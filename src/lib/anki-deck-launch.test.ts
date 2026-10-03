@@ -169,7 +169,7 @@ describe("anki-deck-launch", () => {
       expect(launched.apkgStatus).toBe("ready");
       expect(launched.checkoutUrl).toContain("leed-green-associate-anki-deck");
       expect(launched.checkoutProvider).toBe("Gumroad");
-      expect(launched.facts.cards).toBe("250+");
+      expect(launched.facts.cards).toBe("250");
       expect(launched.facts.delivery).toContain("instant download");
       expect(launched.importSteps?.length).toBeGreaterThan(0);
     }
@@ -363,7 +363,7 @@ describe("anki-deck-launch", () => {
     expect(pmp).toBeDefined();
     expect(pmp?.status).toBe("available");
     expect(pmp?.apkgStatus).toBe("ready");
-    expect(pmp?.title).toBe("PMP Anki Deck — 346+ Flashcards");
+    expect(pmp?.title).toBe("PMP Anki Deck — 346 Flashcards");
     expect(pmp?.checkoutUrl).toContain("gumroad.com/l/pmp-anki-deck");
     expect(pmp?.sampleCards).toHaveLength(3);
     expect(pmp?.sampleCards.map((card) => card.imageUrl)).toEqual([

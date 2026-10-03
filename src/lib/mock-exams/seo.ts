@@ -433,7 +433,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free PMP Readiness Check",
     intro:
-      "A timed PMP readiness diagnostic scored on the three official PMI Exam Content Outline domains — People (33%), Process (41%), and Business Environment (26%). All three domains must clear the readiness bar for a pass. After the report, drill weak domains in the linked $11 / 346+ Anki deck before a full 180-question / 240-minute simulator.",
+      "A timed PMP readiness diagnostic scored on the three official PMI Exam Content Outline domains — People (33%), Process (41%), and Business Environment (26%). All three domains must clear the readiness bar for a pass. After the report, drill weak domains in the linked $11 / 346 Anki deck before a full 180-question / 240-minute simulator.",
     audience:
       "Project managers and aspirants preparing for the PMI PMP certification who want a domain-weighted baseline before a full-length mock or paid study course.",
     practiceTestLabel: "PMP practice test",
@@ -492,7 +492,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free BMS / BAS Building Automation Readiness Check",
     intro:
-      "A timed 60-question building automation diagnostic covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning — then drill weak domains in the linked $11 / 200+ Anki deck. There is no single U.S. federal BMS license — Niagara 4 TCP is a vendor course with a practical assessment, not this MCQ. Independent prep, not Tridium or BACnet International material.",
+      "A timed 60-question building automation diagnostic covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning — then drill weak domains in the linked $11 / 200 Anki deck. There is no single U.S. federal BMS license — Niagara 4 TCP is a vendor course with a practical assessment, not this MCQ. Independent prep, not Tridium or BACnet International material.",
     audience:
       "BMS engineers, controls technicians, facility automation staff, and integrator apprentices preparing for BAS roles or vendor certification training.",
     practiceTestLabel: "BMS practice test",
@@ -641,7 +641,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free LEED Green Associate Readiness Check",
     intro:
-      "A timed 50-question LEED GA diagnostic (100 minutes, 70% readiness target) modeled on GBCI credit categories — then drill weak domains in the linked $11 / 250+ Anki deck. Official LEED GA is 100 questions / 2 hours / scaled 170 (125–200). Not a free 700-question lead-gen bank.",
+      "A timed 50-question LEED GA diagnostic (100 minutes, 70% readiness target) modeled on GBCI credit categories — then drill weak domains in the linked $11 / 250 Anki deck. Official LEED GA is 100 questions / 2 hours / scaled 170 (125–200). Not a free 700-question lead-gen bank.",
     audience:
       "Architects, engineers, sustainability consultants, and students entering green building who want a baseline before USGBC exam registration.",
     practiceTestLabel: "LEED Green Associate practice test",
@@ -839,7 +839,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free MRICS (Chartered Member) APC Readiness Check",
     intro:
-      "A timed 50-question APC knowledge diagnostic (100 minutes, 70% target) for mandatory competencies, ethics/Rules of Conduct, technical pathway themes, and interview prep — then drill weak rows in the linked $11 / 250+ Anki deck. Official MRICS route: written submission plus a 60-minute final assessment interview (not a multiple-choice licensure exam). Cross-pathway prep — for QS-specific NRM/JCT/NEC use the separate MRICS QS mock and deck.",
+      "A timed 50-question APC knowledge diagnostic (100 minutes, 70% target) for mandatory competencies, ethics/Rules of Conduct, technical pathway themes, and interview prep — then drill weak rows in the linked $11 / 250 Anki deck. Official MRICS route: written submission plus a 60-minute final assessment interview (not a multiple-choice licensure exam). Cross-pathway prep — for QS-specific NRM/JCT/NEC use the separate MRICS QS mock and deck.",
     audience:
       "Quantity surveyors, building surveyors, commercial property professionals, project managers, and valuers preparing for RICS APC and MRICS chartered membership.",
     practiceTestLabel: "MRICS APC practice questions",

@@ -282,11 +282,11 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "Swiss Staatskunde — DE / FR / IT",
-        body: "Three federal Staatskunde decks (German, French, Italian) for ordinary naturalisation civics — $12 on Gumroad. Free DE / FR / IT readiness checks funnel into this bundle. For fide / Swiss residency language vocabulary, use the French or German language Anki decks instead.",
+        body: "Three separate federal Staatskunde decks for ordinary naturalisation civics — Einbürgerung Schweiz (German), Naturalisation suisse (French) and Naturalizzazione svizzera (Italian), 207 cards and $9 each on Gumroad. Each has its own free readiness check. For fide / Swiss residency language vocabulary, use the French or German language Anki decks instead.",
       },
       {
-        title: "Planned EU and Nordic civics decks",
-        body: "Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders MO, Belgium Wallonie, and Luxembourg Vivre ensemble each have a free readiness check plus a live Anki deck ($9; Luxembourg is a $16 French + English pair). They are not language decks and are not in the six-country or Swiss bundles yet.",
+        title: "EU and Nordic civics decks",
+        body: "Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders MO, Belgium Wallonie, and Luxembourg Vivre ensemble each have a free readiness check plus a live Anki deck ($9; Luxembourg is a $16 French + English pair). They are not language decks and are not in the six-country bundle.",
       },
     ],
     faqs: [
