@@ -296,7 +296,7 @@ async function renderNote({ note, models, mediaDir, work, index, frame }) {
     fit = await shoot(htmlPath, pngPath, profile, height).finally(() => rmSync(profile, { recursive: true, force: true }));
     if (fit === "ok") break;
   }
-  const back = values[1] ?? "";
+  const back = fields.Back ?? fields.Answer ?? values[1] ?? "";
   return {
     fit,
     question: stripHtml(stemOf(values[0])),

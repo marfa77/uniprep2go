@@ -9,6 +9,7 @@ describe("civicSoldDecks samples", () => {
       expect(deck.sampleCards, deck.slug).toHaveLength(3);
       deck.sampleCards.forEach((card, index) => {
         expect(card.imageUrl, deck.slug).toBe(`/samples/${deck.slug}-sample-${index + 1}.webp`);
+        expect(card.answer.trim(), `${deck.slug} sample ${index + 1} answer`).not.toBe("");
         expect(existsSync(join(process.cwd(), "public", card.imageUrl)), card.imageUrl).toBe(true);
       });
     }
@@ -17,5 +18,6 @@ describe("civicSoldDecks samples", () => {
   it("uses the US citizenship card text from the screenshot", () => {
     const us = civicSoldDecks.find((deck) => deck.slug === "us-citizenship-anki-deck");
     expect(us?.sampleCards[0]?.question).toBe("Why does each state have two senators?");
+    expect(us?.sampleCards[0]?.answer).toMatch(/^Equal representation/);
   });
 });

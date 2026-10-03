@@ -4611,22 +4611,22 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What is the LME carry trade in metals?",
+        question: "What are TC/RC in copper and why are they important?",
         answer:
-          "Buying physical metal (cash) and simultaneously selling 3-month futures to capture the contango. Profit = contango minus storage and financing costs.",
+          "Treatment Charge (TC): fee miners pay to smelters to process copper concentrate into blister copper ($/dry metric tonne of concentrate). Refining Charge (RC): fee for refining to final cathode (US cents/lb).",
         imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
       },
       {
-        question: "What is contango in metals markets?",
+        question: "What happened in the LME nickel short squeeze of March 2022?",
         answer:
-          "A forward curve where deferred prices are above nearby/cash. Contango can reward cash-and-carry if the curve premium exceeds storage and financing.",
-        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
+          "Chinese tycoon Xiang Guangda (Tsingshan) had massive short position in LME nickel. Russia-Ukraine supply fears caused nickel to spike from $25,000 to $100,000/tonne in 2 days. LME suspended trading and cancelled trades — unprecedented market intervention.",
+        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-2.webp",
       },
       {
-        question: "What is backwardation in metals markets?",
+        question: "What is the Midwest Premium in aluminium?",
         answer:
-          "A forward curve where nearby/cash trades above deferred prices. Often signals tight prompt supply; cash-and-carry is not profitable in deep backwardation.",
-        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
+          "Regional premium paid above LME aluminium price to receive physical aluminium in the US Midwest — covers freight, duty, financing, and regional supply/demand balance.",
+        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -4677,9 +4677,22 @@ const rawDecks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "What is Dated Brent and how does it differ from Brent futures?",
-        answer: "Physical spot price for actual BFOE cargoes loading in the North Sea within 10–25 days forward, published by Platts. The physical anchor for the entire Brent complex. Dated Brent = cash price.",
+        question: "What is the Nelson Complexity Index?",
+        answer:
+          "Measures refinery's ability to process heavier, lower-quality crude and convert it to higher-value products. Simple = 1–4. Complex = 8–12. Highly complex = 12+.",
         imageUrl: "/samples/bench-energy-oil-trader-anki-deck-sample-1.webp",
+      },
+      {
+        question: "What drives the Brent-WTI spread?",
+        answer:
+          "Logistics at Cushing Oklahoma — when US crude inventory builds at landlocked Cushing → WTI weakens vs Brent. When pipelines to Gulf Coast clear inventory → spread narrows.",
+        imageUrl: "/samples/bench-energy-oil-trader-anki-deck-sample-2.webp",
+      },
+      {
+        question: "What is the Saudi Official Selling Price (OSP)?",
+        answer:
+          "Saudi Aramco publishes monthly OSPs for different crude grades to different regions — Asia OSP, NWE OSP, US OSP. Prices are differentials to benchmark (Arab Light Asia = Oman/Dubai + premium/discount).",
+        imageUrl: "/samples/bench-energy-oil-trader-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -4723,9 +4736,22 @@ const rawDecks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "What is a netback calculation and why is it the most important number for a producer?",
-        answer: "Working backwards from market price at point of sale, subtracting all costs to arrive at value at point of production — the real revenue per tonne. Example: API2 $120/t CIF ARA → minus freight, port, rail → netback at mine.",
+        question: "What is the difference between NAR and GAR?",
+        answer:
+          "NAR (Net As Received): actual energy including moisture weight — the trading standard. GAR (Gross As Received): includes latent heat of water vapor — appears higher.",
         imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-1.webp",
+      },
+      {
+        question: "What is Hard Coking Coal and why does it trade at a premium?",
+        answer:
+          "Highest quality met coal — low ash, low sulfur, specific volatile matter range producing strong coke. Essential for blast furnace efficiency.",
+        imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-2.webp",
+      },
+      {
+        question: "What are the main global seaborne coal trade flows?",
+        answer:
+          "Indonesia→China/India, Australia→Japan/Korea/Taiwan, Russia→Asia (post-2022), Colombia/USA→Europe, South Africa→India/Europe",
+        imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-3.webp",
       },
     ],
     faqs: [
@@ -4769,9 +4795,22 @@ const rawDecks: Deck[] = [
     topicCoverage: [],
     sampleCards: [
       {
-        question: "What is included in the Commodity Trader Pack?",
-        answer: "Three complete Anki decks: Metal Trader's Lexicon (202 cards), Oil Trader's Lexicon (211 cards), and Coal Trader's Lexicon (221 cards). Covers universal trading foundations plus commodity-specific vocabulary for all three markets.",
-        imageUrl: "/samples/commodity-trader-pack-bundle-sample-1.webp",
+        question: "What are TC/RC in copper and why are they important?",
+        answer:
+          "Treatment Charge (TC): fee miners pay to smelters to process copper concentrate into blister copper ($/dry metric tonne of concentrate). Refining Charge (RC): fee for refining to final cathode (US cents/lb).",
+        imageUrl: "/samples/bench-energy-metal-trader-anki-deck-sample-1.webp",
+      },
+      {
+        question: "What drives the Brent-WTI spread?",
+        answer:
+          "Logistics at Cushing Oklahoma — when US crude inventory builds at landlocked Cushing → WTI weakens vs Brent. When pipelines to Gulf Coast clear inventory → spread narrows.",
+        imageUrl: "/samples/bench-energy-oil-trader-anki-deck-sample-2.webp",
+      },
+      {
+        question: "What is the difference between NAR and GAR?",
+        answer:
+          "NAR (Net As Received): actual energy including moisture weight — the trading standard. GAR (Gross As Received): includes latent heat of water vapor — appears higher.",
+        imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-1.webp",
       },
     ],
     faqs: [
