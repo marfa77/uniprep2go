@@ -298,7 +298,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Czech citizenship / reálie themes — not official MV ČR or NPI material. Official zkouška z reálií is 30 questions / 30 minutes / 60% from the NPI pool; this diagnostic is 60 questions / 45 minutes / 70%. Permanent residence usually needs language (often A2), not reálie.",
     description:
-      "Free 60-question Czech reálie readiness diagnostic (45 min, 70% pass) for citizenship civics themes — longer than the official 30/30/60% exam. Pairs with the planned Czech Citizenship Anki waitlist. Independent prep — not Interior Ministry / NPI material.",
+      "Free 60-question Czech reálie readiness diagnostic (45 min, 70% pass) for citizenship civics themes — longer than the official 30/30/60% exam. Pairs with the live Czech Citizenship Anki deck. Independent prep — not Interior Ministry / NPI material.",
     examBody: "Czech Republic — zkouška z českých reálií (citizenship); not the permanent-residence language exam",
     questionSourceNote:
       "Questions rewritten from Prep2Go Czech Citizenship civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent diagnostic — not the official NPI 300-item booklet.",
@@ -331,7 +331,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Poland has no official citizenship civics exam in force today — this is an independent readiness check on proposed / future “wiedza o Polsce” themes. Not MSWiA, UDSC, or NAWA material. Live naturalisation exam hurdle is usually PaF B1 language.",
     description:
-      "Free 60-question Polish-language civics diagnostic for a proposed knowledge-of-Poland / test obywatelski path — not an official exam (none is required for citizenship today). Pairs with the planned Polish Citizenship Anki waitlist. Independent prep.",
+      "Free 60-question Polish-language civics diagnostic for a proposed knowledge-of-Poland / test obywatelski path — not an official exam (none is required for citizenship today). Pairs with the live Polish Citizenship Anki deck. Independent prep.",
     examBody: "Poland — proposed citizenship civics (no official test yet); language via PaF B1",
     questionSourceNote:
       "Questions rewritten from Prep2Go Polish Citizenship civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent future-proofing diagnostic — not an official Polish government citizenship test.",

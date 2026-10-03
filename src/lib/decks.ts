@@ -1601,7 +1601,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the same as Belgium Flanders MO (inburgering Vlaanderen) civics?",
         answer:
-          "No. This deck is Dutch language vocabulary for Netherlands Inburgering / NT2 A2. Belgium Flanders maatschappelijke oriëntatie is a separate civic-orientation track — use the free Flanders MO readiness check and planned waitlist deck for that, not this Netherlands language bank.",
+          "No. This deck is Dutch language vocabulary for Netherlands Inburgering / NT2 A2. Belgium Flanders maatschappelijke oriëntatie is a separate civic-orientation track — use the free Flanders MO readiness check and the separate Flanders MO Anki deck for that, not this Netherlands language bank.",
       },
       {
         question: "What does each card include?",
@@ -1787,7 +1787,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Indfødsretsprøven civics test?",
         answer:
-          "No. This is Danish language vocabulary for Prøve i Dansk / residence language. The Indfødsretsprøven is a separate citizenship civics exam — take the free Indfødsretsprøven readiness check at /mock-exams/denmark-indfoedsretsproeven-readiness-check and join the planned civics Anki waitlist for that.",
+          "No. This is Danish language vocabulary for Prøve i Dansk / residence language. The Indfødsretsprøven is a separate citizenship civics exam — take the free Indfødsretsprøven readiness check at /mock-exams/denmark-indfoedsretsproeven-readiness-check and use the separate Indfødsretsprøven Anki deck for that.",
       },
       {
         question: "What does the deck include?",
@@ -1834,7 +1834,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Statsborgerprøven civics test?",
         answer:
-          "No. This is Norwegian language vocabulary for Norskprøve / residence language. The Statsborgerprøven is a separate citizenship civics exam — take the free Statsborgerprøven readiness check and join the planned civics Anki waitlist for that.",
+          "No. This is Norwegian language vocabulary for Norskprøve / residence language. The Statsborgerprøven is a separate citizenship civics exam — take the free Statsborgerprøven readiness check and use the separate Statsborgerprøven Anki deck for that.",
       },
       {
         question: "What does the deck include?",
@@ -1883,7 +1883,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Swedish Medborgarskapsprov civics test?",
         answer:
-          "No. This is Swedish language vocabulary for SFI / residence language. The Medborgarskapsprov is a separate citizenship civics exam — take the free Medborgarskapsprov readiness check and join the planned civics Anki waitlist for that.",
+          "No. This is Swedish language vocabulary for SFI / residence language. The Medborgarskapsprov is a separate citizenship civics exam — take the free Medborgarskapsprov readiness check and use the separate Medborgarskapsprov Anki deck for that.",
       },
       {
         question: "What does the deck include?",
@@ -2046,7 +2046,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Polish Citizenship civics Anki deck?",
         answer:
-          "No. This is Polish language vocabulary for Certyfikat / residence language. Poland has no official citizenship civics MCQ today; the planned Polish Citizenship listing + free readiness check cover proposed wiedza o Polsce themes for future-proofing.",
+          "No. This is Polish language vocabulary for Certyfikat / residence language. Poland has no official citizenship civics MCQ today; the Polish Citizenship Anki deck + free readiness check cover proposed wiedza o Polsce themes for future-proofing.",
       },
       {
         question: "What does the deck include?",

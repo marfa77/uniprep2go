@@ -617,14 +617,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "czech naturalisation deck",
     ],
     intro:
-      "Planned reálie Anki. Drill the free 60-question diagnostic + official NPI model test; join the waitlist until the .apkg ships.",
+      "Live reálie Anki deck ($9). Drill the free 60-question diagnostic + official NPI model test, then repair weak topics with spaced repetition.",
   },
   "polish-citizenship-anki-deck": {
     title: "Polish Citizenship Anki Deck | Proposed Wiedza o Polsce",
     headline: "Polish Citizenship Civics — 170 Cards · $9",
     studyLabel: "Proposed Polish civics / PaF-adjacent prep",
     description:
-      "Planned Anki deck for proposed Polish knowledge-of-Poland themes. No official citizenship civics exam is required today (PaF B1 is the live hurdle). Free readiness check + waitlist. Independent — not government material.",
+      "Live $9 Anki deck for proposed Polish knowledge-of-Poland themes. No official citizenship civics exam is required today (PaF B1 is the live hurdle). Free readiness check + deck. Independent — not government material.",
     keywords: [
       "polish citizenship anki",
       "obywatelstwo anki",
@@ -633,7 +633,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "polish naturalisation deck",
     ],
     intro:
-      "Planned civics Anki for a proposed test obywatelski path. Poland has no official citizenship knowledge MCQ yet — drill the free readiness check and join the waitlist until the .apkg ships.",
+      "Live civics Anki deck for a proposed test obywatelski path. Poland has no official citizenship knowledge MCQ yet — drill the free readiness check, then repair weak themes with the deck.",
   },
 
   "delf-b2-french-anki-deck": {
@@ -1035,10 +1035,10 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "gre-anki-deck": {
     title: "GRE Exam Prep | 350 Verbal & Quant Cards + Mock",
-    headline: "GRE General Prep — Planned 350 Cards + Free 30Q Mock",
+    headline: "GRE General Prep — 350 Cards + Free 30Q Mock",
     studyLabel: "GRE exam prep",
     description:
-      "Planned GRE General Anki: 350 Verbal + Quant flashcards plus a free 30-question timed readiness check (15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
+      "GRE General Anki: 350 Verbal + Quant flashcards plus a free 30-question timed readiness check (15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
     keywords: [
       "gre anki deck",
       "gre flashcards",
@@ -1048,7 +1048,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "free gre practice questions",
     ],
     intro:
-      "Graduate applicants who want a free timed Verbal+Quant baseline before PowerPrep — then a planned ownable 350-card .apkg for section repair. Free AnkiWeb vocab megas still win on word count; UniPrep is the diagnostic + planned V+Q deck path.",
+      "Graduate applicants who want a free timed Verbal+Quant baseline before PowerPrep — then an ownable 350-card .apkg for section repair. Free AnkiWeb vocab megas still win on word count; UniPrep is the diagnostic + V+Q deck path.",
   },
   "nha-cbcs-anki-deck": {
     title: "NHA CBCS Anki | Planned 60 Cards + Free Mock",

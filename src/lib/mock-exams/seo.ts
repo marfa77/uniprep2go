@@ -453,7 +453,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free GRE General Readiness Check",
     intro:
-      "A timed GRE General diagnostic scored on the two official ETS MCQ axes — Verbal Reasoning and Quantitative Reasoning (130–170 each). Both sections must clear the readiness bar for a pass. Official shorter GRE (~1 hour 58 minutes) is 27 Verbal + 27 Quant plus Analytical Writing; this free check is a 30-question baseline (Writing not included), not an adaptive PowerPrep form. Planned 350-card Anki (175V/175Q) for daily repair after the report.",
+      "A timed GRE General diagnostic scored on the two official ETS MCQ axes — Verbal Reasoning and Quantitative Reasoning (130–170 each). Both sections must clear the readiness bar for a pass. Official shorter GRE (~1 hour 58 minutes) is 27 Verbal + 27 Quant plus Analytical Writing; this free check is a 30-question baseline (Writing not included), not an adaptive PowerPrep form. Live 350-card Anki (175V/175Q) for daily repair after the report.",
     audience:
       "Graduate and business school applicants who want a baseline timed diagnostic before official ETS PowerPrep or tutoring.",
     practiceTestLabel: "GRE practice test",

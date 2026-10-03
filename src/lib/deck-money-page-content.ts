@@ -27,7 +27,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "servsafe-manager-anki-deck":
     "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a free 90-question ServSafe mock (official 80 scored + 10 pilot / 2h; official pass 70% (56/80) · 75% readiness target).",
   "gre-anki-deck":
-    "Planned 350 Verbal + Quant cards for the shorter GRE — free 30-question / 45-minute readiness check is live now (both axes required). Not a Magoosh/Manhattan vocab mega.",
+    "350 Verbal + Quant cards for the shorter GRE — free 30-question / 45-minute readiness check is live now (both axes required). Not a Magoosh/Manhattan vocab mega.",
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
@@ -373,7 +373,7 @@ export const positioningOverrides: Partial<
       "B1 language is separate; permanent residence usually needs A2 language, not reálie",
     ],
     summaryProse:
-      "Official NPI databank and model test own exam-day format. UniPrep wins when you want a free longer timed diagnostic plus a planned Anki waitlist for spaced reálie recall — not a third-party AI dump that skips the 30/30/60% honesty.",
+      "Official NPI databank and model test own exam-day format. UniPrep wins when you want a free longer timed diagnostic plus an ownable Anki deck for spaced reálie recall — not a third-party AI dump that skips the 30/30/60% honesty.",
   },
   "nha-cbcs-anki-deck": {
     ourEdge: [
@@ -467,13 +467,13 @@ export const positioningOverrides: Partial<
   },
   "gre-anki-deck": {
     ourEdge: [
-      "Planned 350 Verbal + Quant cards (175/175) from the same bank themes as the mock",
+      "350 Verbal + Quant cards (175/175) from the same bank themes as the mock",
       "Free 30-question / 45-minute timed diagnostic — both axes required",
       "Honest: shorter GRE is ~1h58 / 27V+27Q + Writing; Writing not in this MCQ check",
       "Not a free Magoosh/Manhattan AnkiWeb vocab mega — section diagnostic first",
     ],
     summaryProse:
-      "Free AnkiWeb vocab decks win on word count. UniPrep wins when you want a free timed Verbal+Quant diagnostic with both axes required, then a planned ownable V+Q .apkg — use PowerPrep for adaptive format and Writing.",
+      "Free AnkiWeb vocab decks win on word count. UniPrep wins when you want a free timed Verbal+Quant diagnostic with both axes required, then an ownable V+Q .apkg — use PowerPrep for adaptive format and Writing.",
   },
   "california-real-estate-exam-anki-deck": {
     ourEdge: [
@@ -797,7 +797,7 @@ PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one 
 
 **Inburgering** is the civic integration language track for many Dutch residency cases. Official Inburgering is **five modules** (KNM civics, ONA, plus speaking, writing, and listening/reading) — this deck is the **language lexicon**, not a single MCQ substitute for the whole path. **Staatsexamen NT2** (A2-range overlap) shares a large high-frequency Dutch core. The same lexicon supports everyday communication toward **naturalisatie** language expectations. Exam names and cut scores differ by municipality and year — confirm your required module officially.
 
-This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and planned waitlist deck.
+This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and the separate 165-card Flanders MO Anki deck.
 
 Cards emphasize practical Dutch for work, housing, government services, and daily interaction — the vocabulary integration exams and real life both reward.
 
@@ -1470,7 +1470,7 @@ Managers confuse cleaning vs sanitizing steps, cooling time limits, and when to 
 
   "gre-anki-deck": `### What is inside
 
-Planned **350** flashcards — **175 Verbal** (Text Completion, Sentence Equivalence, Reading Comprehension judgment) and **175 Quantitative** (arithmetic, algebra, geometry, data analysis) — built from the same bank themes as the free readiness check. This is section-skill recall, not a 1,000-word free AnkiWeb vocab mega (Magoosh/Manhattan shared decks still win on raw vocab volume).
+**350** flashcards — **175 Verbal** (Text Completion, Sentence Equivalence, Reading Comprehension judgment) and **175 Quantitative** (arithmetic, algebra, geometry, data analysis) — built from the same bank themes as the free readiness check. This is section-skill recall, not a 1,000-word free AnkiWeb vocab mega (Magoosh/Manhattan shared decks still win on raw vocab volume).
 
 ### Plan with the free GRE mock
 
@@ -1484,7 +1484,7 @@ Candidates treat a vocab mega as enough for Quant, skip Sentence Equivalence syn
 
 ### What this does not replace
 
-ETS PowerPrep, official practice books, or tutoring. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ETS material.`,
+ETS PowerPrep, official practice books, or tutoring. Independent prep — not ETS material.`,
 
   "ptcb-pharmacy-technician-anki-deck": `### What is inside
 
@@ -1634,7 +1634,7 @@ State SHIP training, OCCT scheduling, or your program’s certificate. Anki is p
 
   "czech-citizenship-anki-deck": `### What is inside
 
-Planned Czech citizenship reálie Anki for zkouška z českých reálií themes: state/constitution/rights, history–geography–EU, society & daily life, and education/health/public services. Same topic map as the free timed readiness check.
+Czech citizenship reálie Anki for zkouška z českých reálií themes: state/constitution/rights, history–geography–EU, society & daily life, and education/health/public services. Same topic map as the free timed readiness check.
 
 ### Plan with the free Czech reálie mock (live now)
 
@@ -1646,7 +1646,7 @@ Candidates treat a longer free diagnostic as the official 30/30/60% form, confus
 
 ### What this does not replace
 
-MV ČR / NPI registration, the official databank/model test, or the B1 language exam. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not MV ČR material.`,
+MV ČR / NPI registration, the official databank/model test, or the B1 language exam. Independent prep — not MV ČR material.`,
 
   "nha-cbcs-anki-deck": `### What is inside
 

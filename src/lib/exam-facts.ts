@@ -694,7 +694,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s Czech Citizenship check the official exam?",
-        a: "No. It is an independent 60-question / 45-minute diagnostic. Use the official interactive model test and NPI databank for format match. The linked Anki deck is planned, not a live Gumroad SKU yet.",
+        a: "No. It is an independent 60-question / 45-minute diagnostic. Use the official interactive model test and NPI databank for format match. The linked $9 Czech Citizenship Anki deck is separate spaced-repetition prep.",
       },
     ],
     trademark_note:
@@ -708,11 +708,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "Canadian Citizenship Test",
       administered_by: "Immigration, Refugees and Citizenship Canada (IRCC)",
-      question_count: "20 multiple-choice (typical published format)",
-      time_limit: "30 minutes (typical published format)",
-      passing_score: "15 of 20 correct (typical published threshold — verify current IRCC rules)",
+      question_count: "20 multiple-choice or true/false questions",
+      time_limit: "45 minutes",
+      passing_score: "15 of 20 correct (75%); up to 3 attempts",
       delivery: "In-person or online as scheduled by IRCC for your application",
-      verify_at_url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html",
+      verify_at_url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html",
     },
     official_sources: [
       {
