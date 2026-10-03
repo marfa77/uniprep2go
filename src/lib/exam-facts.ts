@@ -478,10 +478,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     exam_facts: {
       exam_name: "USCIS Naturalization Civics Test",
       administered_by: "U.S. Citizenship and Immigration Services (USCIS)",
-      question_count: "Up to 10 oral questions from a published civics pool (2025 update in use for many applicants)",
-      scored_count: "10 asked; 6 correct to pass",
+      question_count: "2025 test (N-400 filed on or after Oct 20, 2025): up to 20 oral questions from 128; 2008 test (filed earlier): up to 10 from 100",
+      scored_count: "2025 test: up to 20 asked, stops at 12 correct or 9 wrong; 2008 test: up to 10 asked",
       time_limit: "Oral interview portion — no fixed written timer for the civics Q&A",
-      passing_score: "6 of 10 correct answers",
+      passing_score: "12 of 20 correct (2025 test); 6 of 10 (2008 test); 60% either way",
       delivery: "In-person naturalization interview with a USCIS officer",
       verify_at_url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources",
     },
@@ -497,7 +497,8 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "Integrated Civics (geography, symbols, holidays)", weight: "Civics pool theme" },
     ],
     high_yield_facts: [
-      "Applicants must answer 6 of 10 civics questions correctly to pass the civics portion.",
+      "On the 2025 test (N-400 filed on or after Oct 20, 2025) applicants must answer 12 of up to 20 questions correctly; the 2008 test needs 6 of 10.",
+      "Applicants 65+ with 20+ years as permanent residents get 10 questions from a 20-question starred list and need 6 correct.",
       "Questions are drawn from a published USCIS civics test pool — study the official list for your filing date rules.",
       "The English speaking/reading/writing parts are separate from the civics Q&A.",
       "Officers ask orally; answers should be clear spoken English at the interview.",
@@ -505,7 +506,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many USCIS civics questions must I answer correctly?",
-        a: "You must correctly answer 6 out of 10 civics questions asked during the naturalization interview.",
+        a: "On the 2025 test you must answer 12 of up to 20 questions correctly; the officer stops at 12 right or 9 wrong. If you filed N-400 before Oct 20, 2025 you take the 2008 test and need 6 of 10.",
       },
       {
         q: "Is the civics test multiple choice?",
@@ -2898,7 +2899,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s Belgium Flanders MO readiness check the official test?",
-        a: "No. It is an independent 60-question Dutch diagnostic on MO-style themes. The live 120-card Flanders MO Anki deck on Gumroad is separate spaced-repetition prep — not AgII material.",
+        a: "No. It is an independent 60-question Dutch diagnostic on MO-style themes. The live 165-card Flanders MO Anki deck on Gumroad is separate spaced-repetition prep — not AgII material.",
       },
     ],
     trademark_note:

@@ -1460,7 +1460,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the same as Portugal nacionalidade civics?",
         answer:
-          "No. This deck is CIPLE / CAPLE A2 language vocabulary for residency and citizenship language evidence. Portugal nacionalidade civic knowledge is a separate track — take the free Portugal Nacionalidade readiness check and join the planned civics Anki waitlist for that.",
+          "No. This deck is CIPLE / CAPLE A2 language vocabulary for residency and citizenship language evidence. Portugal nacionalidade civic knowledge is a separate track — take the free Portugal Nacionalidade readiness check and use the separate Portugal Nacionalidade Anki deck for that.",
       },
       {
         question: "What does the deck include?",
@@ -1981,7 +1981,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Czech citizenship civics Anki deck?",
         answer:
-          "No. This is Czech language vocabulary for CCE / residence language. Czech citizenship civics is a separate planned listing — take the free Czech citizenship readiness check and join that waitlist for civics cards.",
+          "No. This is Czech language vocabulary for CCE / residence language. Czech citizenship civics is a separate deck — take the free Czech citizenship readiness check, then use the Czech Citizenship Anki deck for reálie cards.",
       },
       {
         question: "What does the deck include?",
@@ -2118,7 +2118,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the Polish Citizenship civics Anki deck?",
         answer:
-          "No. This is Polish language vocabulary for Certyfikat / residence language. For proposed Polish civics themes (no official citizenship knowledge exam yet), take the free readiness check and join the Polish Citizenship Anki waitlist.",
+          "No. This is Polish language vocabulary for Certyfikat / residence language. For proposed Polish civics themes (no official citizenship knowledge exam yet), take the free readiness check, then use the separate Polish Citizenship Anki deck.",
       },
       {
         question: "What does the deck include?",
@@ -2459,7 +2459,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does this cover the U.S. citizenship civics test?",
         answer:
-          "Yes. The U.S. Citizenship deck (128 cards) targets USCIS naturalization civics themes from the 100-question bank. Take the free U.S. citizenship practice test first, then import only the U.S. .apkg if that is the only country you need.",
+          "Yes. The U.S. Citizenship deck (128 cards) follows the USCIS 2025 naturalization civics list of 128 questions (N-400 filed on or after Oct 20, 2025). Take the free U.S. citizenship practice test first, then import only the U.S. .apkg if that is the only country you need.",
       },
       {
         question: "What is included in the $20 bundle?",

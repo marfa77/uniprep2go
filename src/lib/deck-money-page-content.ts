@@ -116,7 +116,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the free 90-question mock first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
-    "Planned 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. Free 30-question timed diagnostic (15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
+    "Live 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. Free 30-question timed diagnostic (15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
   "ptcb-pharmacy-technician-anki-deck":
     "Front-load high-yield drugs and interactions, high-alert safety, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
   "ace-cpt-anki-deck":
@@ -144,7 +144,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "medicare-counseling-anki-deck":
     "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The free 60-question diagnostic is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
   "czech-citizenship-anki-deck":
-    "Planned Anki for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. Free 60Q diagnostic live now; official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
+    "Live Anki deck for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. Free 60Q diagnostic live now; official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish vocabulary cards with audio for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2/PD1) plus residence and citizenship language themes. Ownable $26 .apkg — prefer over the free Prep2Go AnkiWeb LITE 100 when you need full pathway coverage; not a timed listening/writing substitute for official sample papers on danskogproever.dk.",
   "nha-cbcs-anki-deck":
@@ -367,7 +367,7 @@ export const positioningOverrides: Partial<
   },
   "czech-citizenship-anki-deck": {
     ourEdge: [
-      "Planned reálie Anki for Czech citizenship civics themes",
+      "Live reálie Anki deck for Czech citizenship civics themes",
       "Free 60Q / 45 min timed diagnostic live now",
       "Honest: official exam is 30Q / 30 min / 60% from the NPI ~300-item pool",
       "B1 language is separate; permanent residence usually needs A2 language, not reálie",
@@ -1044,7 +1044,7 @@ Russian-support German A2 framing (Goethe / telc / ÖSD / DTZ) on Gumroad — di
 
 **Certyfikat języka polskiego** (state certificate as a Foreign Language) at **A2**, plus everyday Polish used for **residence** and **citizenship language** requirements. Exact module names and score rules change — confirm with official sources before you book.
 
-This is **language** vocabulary — not Polish citizenship civics (wiedza o Polsce). For civics, take the free Polish Citizenship readiness check and join the planned waitlist.
+This is **language** vocabulary — not Polish citizenship civics (wiedza o Polsce). For civics, take the free Polish Citizenship readiness check, then use the separate Polish Citizenship Anki deck.
 
 ### Study plan
 
@@ -1638,7 +1638,7 @@ Planned Czech citizenship reálie Anki for zkouška z českých reálií themes:
 
 ### Plan with the free Czech reálie mock (live now)
 
-**Phase 1:** Confirm you need reálie (citizenship) vs language-only permanent residence (often A2). **Phase 2:** Sit the [free 60-question Czech Citizenship readiness check](/mock-exams/czech-citizenship-readiness-check) (45 min / 70% diagnostic). **Phase 3:** Drill the official NPI ~300-item databank and interactive 30-question model test on [cestina-pro-cizince.cz](https://cestina-pro-cizince.cz/obcanstvi/). **Phase 4:** Join this Anki waitlist for spaced recall when the .apkg ships; keep B1 language on a separate track (Czech CCE Anki).
+**Phase 1:** Confirm you need reálie (citizenship) vs language-only permanent residence (often A2). **Phase 2:** Sit the [free 60-question Czech Citizenship readiness check](/mock-exams/czech-citizenship-readiness-check) (45 min / 70% diagnostic). **Phase 3:** Drill the official NPI ~300-item databank and interactive 30-question model test on [cestina-pro-cizince.cz](https://cestina-pro-cizince.cz/obcanstvi/). **Phase 4:** Import this Anki deck for daily spaced recall of weak reálie topics; keep B1 language on a separate track (Czech CCE Anki).
 
 ### Pitfalls this deck targets
 

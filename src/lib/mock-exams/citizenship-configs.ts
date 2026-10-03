@@ -111,7 +111,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       75,
     ),
     officialSourceNote:
-      "Independent readiness check on Discover Canada themes. Official IRCC test: 20 questions / 30 minutes / 15/20 (75%). This diagnostic is 60 questions / 45 minutes / 75%. Not official IRCC material.",
+      "Independent readiness check on Discover Canada themes. Official IRCC test: 20 questions / 45 minutes / 15/20 (75%). This diagnostic is 60 questions / 45 minutes / 75%. Not official IRCC material.",
     description:
       "Free 60-question Canadian citizenship diagnostic — longer than the official 20-question IRCC test. Pairs with the $9 country Anki deck. Independent prep.",
     examBody:
@@ -476,7 +476,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Flanders has no single federal civics MCQ like BAMF/LITUK. Live path is typically Dutch language + Maatschappelijke Oriëntatie (MO) / integration proof. A national civic test has been proposed, not assumed live. This 60Q check is independent MO-theme practice — not AGII material.",
     description:
-      "Free 60-question Flanders MO / social-orientation diagnostic. Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 120-card Anki on Gumroad. Independent prep.",
+      "Free 60-question Flanders MO / social-orientation diagnostic. Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 165-card Anki on Gumroad. Independent prep.",
     examBody:
       "Belgium Flanders — Maatschappelijke oriëntatie (no single federal MCQ; proposed national test separate)",
     questionSourceNote:

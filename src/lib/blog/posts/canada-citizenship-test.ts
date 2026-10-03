@@ -5,7 +5,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
   title: "Canada Citizenship Test: The 20-Question Exam That Costs $630",
   titleTag: "Canada Citizenship Test 2026: 20 Questions, $630 & How to Pass",
   metaDescription:
-    "20 questions. 15 correct to pass. 30 minutes. Canada’s citizenship test is short but expensive. Topic split, fee breakdown, and why geography kills scores.",
+    "20 questions. 15 correct to pass. 45 minutes. Canada’s citizenship test is short but expensive. Topic split, fee breakdown, and why geography kills scores.",
   publishedAt: "2026-07-28",
   eyebrow: "Canada · Discover Canada / IRCC",
   clusterId: "canada-citizenship",
@@ -15,7 +15,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
     "life-in-the-uk-test-why-one-in-three-fail",
   ],
   intro:
-    "**Canada’s citizenship test is one of the shortest in the world — 20 questions in 30 minutes — and one of the most expensive per question.** Between application, right of citizenship, and related charges, you are near CAD $630 to sit those 20 items. Fail and you pay again in time, stress, and possibly a citizenship-officer interview. This guide covers format, five topic areas, the geography trap, and how to use the free official *Discover Canada* guide instead of error-prone apps.",
+    "**Canada’s citizenship test is one of the shortest in the world — 20 questions in 45 minutes — and one of the most expensive per question.** Between application, right of citizenship, and related charges, you are near CAD $630 to sit those 20 items. Fail and you pay again in time, stress, and possibly a citizenship-officer interview. This guide covers format, five topic areas, the geography trap, and how to use the free official *Discover Canada* guide instead of error-prone apps.",
   mockSlug: "canadian-citizenship-readiness-check",
   deckSlug: "canadian-citizenship-anki-deck",
   cta: {
@@ -40,7 +40,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
           headers: ["Detail", "Specification"],
           rows: [
             ["Questions", "20 multiple-choice and true/false"],
-            ["Time limit", "30 minutes"],
+            ["Time limit", "45 minutes"],
             ["Passing score", "15/20 (75%)"],
             ["Languages", "English or French"],
             ["Delivery", "Test centre computer; some applicants invited online"],
@@ -139,7 +139,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
   faqs: [
     {
       question: "How many questions are on the Canada citizenship test?",
-      answer: "20 multiple-choice and true/false questions in 30 minutes.",
+      answer: "20 multiple-choice and true/false questions in 45 minutes. You need 15 correct (75%) and get up to 3 attempts.",
     },
     {
       question: "What is the passing score for the Canadian citizenship test?",

@@ -20,9 +20,9 @@ export const denmarkIndfoedsretsproevenPost: BlogPostDraft = {
   deckSlug: "denmark-indfoedsretsproeven-anki-deck",
   cta: {
     mockLabel: "Take the free Denmark Indfødsretsprøven readiness check",
-    deckLabel: "Join the Indfødsretsprøven Anki waitlist",
+    deckLabel: "Get the Indfødsretsprøven Anki deck ($9)",
     summary:
-      "Preparing for November 2026? Take the free Denmark Indfødsretsprøven readiness check — official-material themes, society, and values-style practice with instant scoring. Then join the Anki waitlist and drill language with the Danish Prøve i Dansk deck before the October 21 registration deadline.",
+      "Preparing for November 2026? Take the free Denmark Indfødsretsprøven readiness check — official-material themes, society, and values-style practice with instant scoring. Then repair weak topics with the Indfødsretsprøven Anki deck and drill language with the Danish Prøve i Dansk deck before the October 21 registration deadline.",
     extraLinks: [
       {
         href: "/decks/danish-a2-prove-i-dansk-anki-deck",

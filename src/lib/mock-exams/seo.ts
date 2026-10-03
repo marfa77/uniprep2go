@@ -441,7 +441,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "gre-readiness-check": {
     title: "Free GRE Practice Test | 30-Question Mock",
     description:
-      "GRE General practice — first mock free, no signup: 30 timed questions (15 Verbal + 15 Quant), 45 minutes, both sections must clear 70% readiness — then waitlist for the planned 350-card Anki. Official shorter GRE is ~1h58 with 27V+27Q; this check is a diagnostic, not PowerPrep. Independent — not ETS material.",
+      "GRE General practice — first mock free, no signup: 30 timed questions (15 Verbal + 15 Quant), 45 minutes, both sections must clear 70% readiness — then drill weak rows with the live 350-card GRE Anki deck. Official shorter GRE is ~1h58 with 27V+27Q; this check is a diagnostic, not PowerPrep. Independent — not ETS material.",
     keywords: [
       "gre practice test",
       "gre mock exam",
@@ -886,7 +886,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "us-citizenship-readiness-check": {
     title: "Free U.S. Citizenship Practice Test 2026 | 30 Civics Questions",
     description:
-      "Free USCIS-style civics practice: 30 timed MCQs. Official naturalization civics is oral (up to 10 from 100, pass at 6) — this page is a timed MCQ diagnostic, not the interview format. Citizenship Anki Bundle. Independent prep.",
+      "Free USCIS-style civics practice: 30 timed MCQs. Official 2025 naturalization civics is oral (up to 20 from 128, pass at 12) — this page is a timed MCQ diagnostic, not the interview format. Citizenship Anki Bundle. Independent prep.",
     keywords: [
       "us citizenship practice test 2026",
       "uscis civics test free",
@@ -896,7 +896,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free U.S. Citizenship Practice Test (2026 Civics)",
     intro:
-      "Timed MCQ civics diagnostic for N-400 prep. Format note: USCIS asks up to 10 oral questions from the 100-item list (pass at 6); this check is 30 multiple-choice questions / 30 minutes / 80% for drilling — then practice aloud.",
+      "Timed MCQ civics diagnostic for N-400 prep. Format note: the USCIS 2025 test asks up to 20 oral questions from the 128-question list (pass at 12; 2008 test for N-400 filed before Oct 20, 2025: 6 of 10); this check is 30 multiple-choice questions / 30 minutes / 80% for drilling — then practice aloud.",
     audience:
       "Green card holders preparing U.S. naturalization civics (oral interview format differs from this MCQ drill).",
     practiceTestLabel: "U.S. citizenship practice test",
@@ -949,7 +949,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     keywords: ["Canadian citizenship practice test", "Discover Canada quiz", "IRCC citizenship test"],
     headline: "Free Canadian Citizenship Readiness Check",
     intro:
-      "Timed Discover Canada diagnostic. Format note: official IRCC test is 20 questions / 30 minutes / 15/20; this check is 60 / 45 / 75%.",
+      "Timed Discover Canada diagnostic. Format note: official IRCC test is 20 questions / 45 minutes / 15/20; this check is 60 / 45 / 75%.",
     audience:
       "Permanent residents preparing for the Canadian citizenship test.",
     practiceTestLabel: "Canadian citizenship practice test",
@@ -1039,7 +1039,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "czech-citizenship-readiness-check": {
     title: "Free Czech Reálie Practice Test | 60-Question Diagnostic",
     description:
-      "Free Czech citizenship / zkouška z reálií practice: 60 timed questions (45 min, 70% diagnostic), then join the planned Czech Citizenship Anki waitlist. Official exam is 30Q/30min/60% from the NPI ~300-item pool — drill that model test for format. Independent — not MV ČR material.",
+      "Free Czech citizenship / zkouška z reálií practice: 60 timed questions (45 min, 70% diagnostic), then drill weak topics with the live Czech Citizenship Anki deck. Official exam is 30Q/30min/60% from the NPI ~300-item pool — drill that model test for format. Independent — not MV ČR material.",
     keywords: [
       "Czech citizenship practice test",
       "občanství ČR test",
@@ -1051,7 +1051,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Czech Citizenship / Reálie Readiness Check",
     intro:
-      "Timed Czech-language diagnostic for citizenship reálie themes — then join the linked Anki waitlist for spaced recall when the .apkg ships. Format note: official zkouška z reálií is 30 questions / 30 minutes / 60% from the published NPI databank; this check is 60 / 45 / 70% to surface weak topics. Prefer this free timed diagnostic + official model test over third-party “100+ AI” banks that skip the NPI format. Permanent residence usually needs language (A2), not reálie.",
+      "Timed Czech-language diagnostic for citizenship reálie themes — then repair weak topics with the linked live Anki deck. Format note: official zkouška z reálií is 30 questions / 30 minutes / 60% from the published NPI databank; this check is 60 / 45 / 70% to surface weak topics. Prefer this free timed diagnostic + official model test over third-party “100+ AI” banks that skip the NPI format. Permanent residence usually needs language (A2), not reálie.",
     audience:
       "Citizenship applicants preparing zkouška z českých reálií (plus B1 language) — not a substitute for the official NPI 30-question sitting.",
     practiceTestLabel: "Czech reálie / citizenship practice test",
@@ -1077,7 +1077,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "denmark-indfoedsretsproeven-readiness-check": {
     title: "Free Denmark Indfødsretsprøven Practice Test | 60 Questions",
     description:
-      "Free Indfødsretsprøven practice: 60 timed questions. Official exam is 45Q/45min with 36/45 plus values dual-gate — this diagnostic is longer theme practice. Waitlist Anki. Independent prep.",
+      "Free Indfødsretsprøven practice: 60 timed questions. Official exam is 45Q/45min with 36/45 plus values dual-gate — this diagnostic is longer theme practice. Live Anki deck. Independent prep.",
     keywords: ["Indfødsretsprøven", "Danish citizenship test", "Denmark citizenship practice"],
     headline: "Free Denmark Indfødsretsprøven Readiness Check",
     intro:
@@ -1089,7 +1089,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "portugal-nacionalidade-readiness-check": {
     title: "Free Portugal Nacionalidade Practice Test | 60 Questions",
     description:
-      "Free Portugal nationality civic practice: 60 timed questions on the five legal themes. Official Q/time/pass still pending regulation — independent diagnostic, not IRN. Waitlist Anki.",
+      "Free Portugal nationality civic practice: 60 timed questions on the five legal themes. Official Q/time/pass still pending regulation — independent diagnostic, not IRN. Live Anki deck.",
     keywords: ["nacionalidade portuguesa", "conhecimento cívico", "Portugal citizenship test"],
     headline: "Free Portugal Nacionalidade Readiness Check",
     intro:
@@ -1101,7 +1101,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "norway-statsborgerproven-readiness-check": {
     title: "Free Norway Statsborgerprøven Practice Test | 60 Questions",
     description:
-      "Free Statsborgerprøven practice: 60 timed questions. Official HK-dir exam is 36Q (32 scored) / 60 min / 75% — this page is a different-length diagnostic. Waitlist Anki. Independent prep.",
+      "Free Statsborgerprøven practice: 60 timed questions. Official HK-dir exam is 36Q (32 scored) / 60 min / 75% — this page is a different-length diagnostic. Live Anki deck. Independent prep.",
     keywords: ["Statsborgerprøven", "Norwegian citizenship test", "statsborgerskap"],
     headline: "Free Norway Statsborgerprøven Readiness Check",
     intro:
@@ -1113,7 +1113,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "sweden-medborgarskapsprov-readiness-check": {
     title: "Free Sweden Medborgarskapsprov Practice Test | 60 Questions",
     description:
-      "Free Medborgarskapsprov society-knowledge practice: 60 timed questions. Official format may still be settling (new 2026 test) — independent Samhällskunskap diagnostic + waitlist Anki.",
+      "Free Medborgarskapsprov society-knowledge practice: 60 timed questions. Official format may still be settling (new 2026 test) — independent Samhällskunskap diagnostic + live Anki deck.",
     keywords: ["Medborgarskapsprov", "Swedish citizenship test", "medborgarskap"],
     headline: "Free Sweden Medborgarskapsprov Readiness Check",
     intro:
@@ -1146,7 +1146,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "belgium-wallonie-citoyennete-readiness-check": {
     title: "Free Belgium Wallonie Citoyenneté Practice Test | 60 Questions",
     description:
-      "Free Wallonie citoyenneté theme practice: 60 timed questions. No official Walloon civics QCM today — live hurdles are usually French A2 + integration proof. Waitlist Anki. Independent prep.",
+      "Free Wallonie citoyenneté theme practice: 60 timed questions. No official Walloon civics QCM today — live hurdles are usually French A2 + integration proof. Live Anki deck. Independent prep.",
     keywords: ["citoyenneté Wallonie", "parcours d'intégration", "Belgium Wallonia citizenship"],
     headline: "Free Belgium Wallonie Citoyenneté Readiness Check",
     intro:

@@ -16,7 +16,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Citizenship applicants who need B1 Czech plus reálie; learners who confuse permanent-residence A2 language with the citizenship realities exam; and anyone who wants a harder timed diagnostic before paying for an official sitting. Not legal advice and not the official NPI exam.",
     howToPrepare:
-      "1) Confirm whether you need reálie (citizenship) or only language (often A2 for permanent residence). 2) Study the official NPI 300-question pool — one live item per topic. 3) Drill institutions (Parliament 200/81, President, Czech POINT, Úřad práce, emergency numbers, Schengen, koruna not euro). 4) Take this free 60-question readiness check for topic scoring, then repair weak areas. 5) Sit an NPI-style 30-question timed set before booking. Join the Czech Citizenship Anki waitlist for spaced-repetition reálie cards; use Czech CCE Anki for language.",
+      "1) Confirm whether you need reálie (citizenship) or only language (often A2 for permanent residence). 2) Study the official NPI 300-question pool — one live item per topic. 3) Drill institutions (Parliament 200/81, President, Czech POINT, Úřad práce, emergency numbers, Schengen, koruna not euro). 4) Take this free 60-question readiness check for topic scoring, then repair weak areas. 5) Sit an NPI-style 30-question timed set before booking. Drill weak reálie topics with the live Czech Citizenship Anki deck; use Czech CCE Anki for language.",
     topicBlurbs: [
       {
         id: "state-rights",
@@ -101,7 +101,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Residency-route applicants who need PaF B1 now and want civic fluency if a test obywatelski appears; people comparing Poland’s language-first path with Czech reálie or other EU civics exams; and learners who confuse Karta Polaka interviews with naturalisation. Not a substitute for official legal advice or PaF registration.",
     howToPrepare:
-      "Scenario A (apply under current rules): prioritise PaF B1 — cases, aspect, formal writing, timed mocks, speaking. Scenario B (future-proof): raise language toward B2 argumentation, learn Constitution 1997 and key state institutions in simplified Polish, follow Sejm/presidential news, practice answering “Why Poland?” aloud, and use this free 60-question readiness check to find weak civics domains. Join the Polish Citizenship Anki waitlist for spaced-repetition cards when the .apkg ships; use the Polish Certyfikat Anki deck for language.",
+      "Scenario A (apply under current rules): prioritise PaF B1 — cases, aspect, formal writing, timed mocks, speaking. Scenario B (future-proof): raise language toward B2 argumentation, learn Constitution 1997 and key state institutions in simplified Polish, follow Sejm/presidential news, practice answering “Why Poland?” aloud, and use this free 60-question readiness check to find weak civics domains. Repair weak civics topics with the live Polish Citizenship Anki deck; use the Polish Certyfikat Anki deck for language.",
     topicBlurbs: [
       {
         id: "state-rights",
@@ -157,7 +157,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "How do I prepare for Polish citizenship under current 2026 rules?",
         answer:
-          "Confirm residence path with your voivodeship, book PaF B1 (not A2 if the passport is the goal), gather income/housing/security documents, and use language Anki plus speaking/writing drills. Use this readiness check for civic themes; join the civics Anki waitlist for flashcards when they ship.",
+          "Confirm residence path with your voivodeship, book PaF B1 (not A2 if the passport is the goal), gather income/housing/security documents, and use language Anki plus speaking/writing drills. Use this readiness check for civic themes; then repair weak civic topics with the live Polish Citizenship Anki deck.",
       },
       {
         question: "Who administers Polish naturalisation today?",
@@ -186,7 +186,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Naturalisation applicants who must sit Indfødsretsprøven; residents who confuse language proof with the citizenship knowledge test; and anyone who wants a harder timed diagnostic before paying the official fee. Not legal advice and not the official Danish exam.",
     howToPrepare:
-      "1) Confirm you need Indfødsretsprøven (not only Danish language evidence). 2) Study official sample sets and the dual values gate — passing overall is not enough if values fail. 3) Drill Folketing, monarchy vs government, welfare institutions, holidays, and geography/EU. 4) Take this free 60-question readiness check for topic scoring, then repair weak areas. 5) Sit a 45-question timed set matching official timing before booking. Join the Denmark Indfødsretsprøven Anki waitlist for spaced-repetition cards when the .apkg ships.",
+      "1) Confirm you need Indfødsretsprøven (not only Danish language evidence). 2) Study official sample sets and the dual values gate — passing overall is not enough if values fail. 3) Drill Folketing, monarchy vs government, welfare institutions, holidays, and geography/EU. 4) Take this free 60-question readiness check for topic scoring, then repair weak areas. 5) Sit a 45-question timed set matching official timing before booking. Repair weak topics with the live Denmark Indfødsretsprøven Anki deck.",
     topicBlurbs: [
       {
         id: "constitution-democracy",
@@ -270,7 +270,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Applicants watching Sweden’s proposed citizenship knowledge test; permanent residents who want civic literacy while language/residence remain the live bottlenecks; and learners comparing Nordic civics exams. Not legal advice and not an official exam sitting.",
     howToPrepare:
-      "1) Verify whether Medborgarskapsprov is actually required for your application date — proposed rules can change. 2) Keep language and residence documentation current under today’s pathway. 3) Build literacy on Riksdag, government, rights, history, EU/Nordic context, and public services in Swedish. 4) Use this free speculative 60-question check to find weak domains. 5) When an official sample bank appears, switch drills to that format. Join the Sweden Medborgarskapsprov Anki waitlist for cards when they ship.",
+      "1) Verify whether Medborgarskapsprov is actually required for your application date — proposed rules can change. 2) Keep language and residence documentation current under today’s pathway. 3) Build literacy on Riksdag, government, rights, history, EU/Nordic context, and public services in Swedish. 4) Use this free speculative 60-question check to find weak domains. 5) When an official sample bank appears, switch drills to that format. Repair weak topics with the live Sweden Medborgarskapsprov Anki deck.",
     topicBlurbs: [
       {
         id: "state-democracy",
@@ -354,7 +354,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Applicants who must sit Statsborgerprøven; residents who confuse Norwegian language tests with the citizenship knowledge exam; and anyone wanting a longer timed diagnostic before booking. Not legal advice and not the official HK-dir exam.",
     howToPrepare:
-      "1) Confirm you need Statsborgerprøven for your UDI pathway. 2) Study official sample items and the 32-scored / 75% rule. 3) Drill Storting, government, rights, history, EEA/Schengen context, and public services. 4) Take this free 60-question readiness check, then repair weak domains. 5) Sit a 36-question / 60-minute timed set before exam day. Join the Norway Statsborgerprøven Anki waitlist for spaced-repetition cards when they ship.",
+      "1) Confirm you need Statsborgerprøven for your UDI pathway. 2) Study official sample items and the 32-scored / 75% rule. 3) Drill Storting, government, rights, history, EEA/Schengen context, and public services. 4) Take this free 60-question readiness check, then repair weak domains. 5) Sit a 36-question / 60-minute timed set before exam day. Repair weak topics with the live Norway Statsborgerprøven Anki deck.",
     topicBlurbs: [
       {
         id: "state-democracy",
@@ -689,7 +689,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Newcomers in Wallonia preparing integration / citoyenneté and French A2-style requirements; applicants who wrongly expect a regional MCQ; and learners future-proofing against a proposed federal test. Not legal advice and not official Walloon material.",
     howToPrepare:
-      "1) Confirm your parcours d’intégration contract and French language proofs with the correct Walloon body. 2) Prioritise course attendance and language evidence that actually appear on your checklist. 3) Build civic literacy on Belgian/Walloon institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Join the Belgium Wallonie Citoyenneté Anki waitlist for cards when they ship.",
+      "1) Confirm your parcours d’intégration contract and French language proofs with the correct Walloon body. 2) Prioritise course attendance and language evidence that actually appear on your checklist. 3) Build civic literacy on Belgian/Walloon institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Repair weak topics with the live Belgium Wallonie Citoyenneté Anki deck.",
     topicBlurbs: [
       {
         id: "institutions-integration",
@@ -773,7 +773,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Nationality applicants watching Portugal’s new civic knowledge requirement; CIPLE A2 candidates who want parallel civics literacy; and learners comparing Portugal with Spain’s CCSE. Not legal advice and not an official exam sitting.",
     howToPrepare:
-      "1) Verify whether the civic test is required for your application date and which exemptions apply. 2) Keep CIPLE A2 (or qualifying Portuguese schooling) on track — language is still a live bottleneck for many. 3) Study the five civic themes: state/rights, nationality/participation, history/geography/EU, society/services. 4) Use this free speculative 60-question check to find weak domains. 5) Switch to the official bank the day Justiça publishes it. Join the Portugal Nacionalidade Anki waitlist for cards when they ship.",
+      "1) Verify whether the civic test is required for your application date and which exemptions apply. 2) Keep CIPLE A2 (or qualifying Portuguese schooling) on track — language is still a live bottleneck for many. 3) Study the five civic themes: state/rights, nationality/participation, history/geography/EU, society/services. 4) Use this free speculative 60-question check to find weak domains. 5) Switch to the official bank the day Justiça publishes it. Repair weak topics with the live Portugal Nacionalidade Anki deck.",
     topicBlurbs: [
       {
         id: "state-rights",
@@ -933,11 +933,11 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
   "canadian-citizenship-readiness-check": {
     practiceTestName: "Canadian Citizenship Readiness Check",
     whatIsExam:
-      "Canada’s citizenship test is the live IRCC knowledge exam for most adult applicants. Officially it is typically 20 questions in 30 minutes with a 75% pass mark, based on the Discover Canada study guide — history, government and politics, rights and responsibilities, and symbols/regions/geography. Language ability and the citizenship interview/hearing steps are separate parts of the process. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, 75% pass) on overlapping Discover Canada themes — not IRCC material and not a substitute for the official 20-question / 30-minute sitting.",
+      "Canada’s citizenship test is the live IRCC knowledge exam for most adult applicants. Officially it is 20 multiple-choice or true/false questions in 45 minutes with a 75% pass mark (15 of 20), based on the Discover Canada study guide — history, government and politics, rights and responsibilities, and symbols/regions/geography. Language ability and the citizenship interview/hearing steps are separate parts of the process. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, 75% pass) on overlapping Discover Canada themes — not IRCC material and not a substitute for the official 20-question / 45-minute sitting.",
     administeredBy:
       "Immigration, Refugees and Citizenship Canada (IRCC). Tests are scheduled as part of the citizenship application process; confirm current rules on canada.ca.",
     officialFormat:
-      "Official IRCC citizenship test: typically 20 questions, 30 minutes, 75% pass (Discover Canada). UniPrep2Go readiness check on this page: 60 timed questions, 45 minutes, 75% diagnostic pass — use for topic scoring, then drill official study-guide length sets before your IRCC sitting.",
+      "Official IRCC citizenship test: 20 questions, 45 minutes, 15 correct (75%) to pass (Discover Canada). UniPrep2Go readiness check on this page: 60 timed questions, 45 minutes, 75% diagnostic pass — use for topic scoring, then drill official study-guide length sets before your IRCC sitting.",
     whoFor:
       "Permanent residents preparing the Canadian citizenship test; applicants who want longer timed practice than the official 20 questions; and learners pairing mocks with the Citizenship & Naturalization Anki Bundle. Not legal advice and not IRCC material.",
     howToPrepare:
@@ -977,7 +977,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "What is the official Canadian citizenship test format?",
         answer:
-          "Typically 20 questions in 30 minutes with a 75% pass mark. Confirm current delivery mode and rules on canada.ca for your invitation letter.",
+          "20 multiple-choice or true/false questions in 45 minutes; you need 15 of 20 (75%) and get up to 3 attempts. Confirm current delivery mode and rules on canada.ca for your invitation letter.",
       },
       {
         question: "Is this UniPrep2Go test the official IRCC exam?",
@@ -1606,15 +1606,15 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
   "us-citizenship-readiness-check": {
     practiceTestName: "U.S. Citizenship Civics Readiness Check",
     whatIsExam:
-      "The U.S. naturalization civics test is a LIVE oral exam at the USCIS interview: an officer asks up to 10 questions from the official 100-question civics list (2020 or 2025 list depending on your filing rules), and you pass by answering 6 correctly. It is not a written multiple-choice sitting on exam day. English speaking/reading/writing is assessed separately in the same interview process. This UniPrep2Go page is an independent written MCQ diagnostic (30 questions, 30 minutes, 80% pass) covering American government, history, and geography/symbols — useful for drilling the 100-question bank under time pressure, but not a substitute for oral practice and not official USCIS material. Remediating weak topics with the Citizenship & Naturalization Anki Bundle is the intended next step.",
+      "The U.S. naturalization civics test is a LIVE oral exam at the USCIS interview: for Form N-400 filed on or after Oct 20, 2025, an officer asks up to 20 questions from the official 128-question 2025 list and you pass at 12 correct (the officer stops at 12 right or 9 wrong). Applicants who filed before Oct 20, 2025 take the 2008 test: up to 10 of 100 questions, pass at 6. It is not a written multiple-choice sitting on exam day. English speaking/reading/writing is assessed separately in the same interview process. This UniPrep2Go page is an independent written MCQ diagnostic (30 questions, 30 minutes, 80% pass) covering American government, history, and geography/symbols — useful for drilling the 128-question bank under time pressure, but not a substitute for oral practice and not official USCIS material. Remediating weak topics with the Citizenship & Naturalization Anki Bundle is the intended next step.",
     administeredBy:
-      "U.S. Citizenship and Immigration Services (USCIS) at the N-400 naturalization interview. Confirm whether you are on the 2020 or 2025 civics list for your application date on uscis.gov.",
+      "U.S. Citizenship and Immigration Services (USCIS) at the N-400 naturalization interview. Your N-400 filing date decides the version: on or after Oct 20, 2025 → 2025 test (128 questions); before → 2008 test (100 questions). Confirm on uscis.gov.",
     officialFormat:
-      "Official USCIS civics test: oral — up to 10 questions from the 100-item list; pass by answering 6 correctly (English tests separate). UniPrep2Go readiness check on this page: written MCQ — 30 questions, 30 minutes, 80% diagnostic pass across government/history/geography — practice aid only, then drill oral recall of all 100.",
+      "Official USCIS 2025 civics test: oral — up to 20 questions from the 128-item list; pass at 12 correct, stops at 12 right or 9 wrong (2008 test for N-400 filed before Oct 20, 2025: up to 10 of 100, pass at 6; English tests separate). UniPrep2Go readiness check on this page: written MCQ — 30 questions, 30 minutes, 80% diagnostic pass across government/history/geography — practice aid only, then drill oral recall of the full official list.",
     whoFor:
       "Green-card holders preparing the N-400 civics interview; applicants who want timed MCQ diagnostics before oral drills; and learners pairing mocks with the Citizenship & Naturalization Anki Bundle. Not legal advice and not a USCIS interview.",
     howToPrepare:
-      "1) Confirm your civics list (2020 vs 2025) on uscis.gov. 2) Memorise all 100 official Q&A with spoken answers, not only recognition. 3) Take this free 30-question / 30-minute / 80% MCQ check for topic scoring. 4) Practice oral sets of 10 until you clear 6+ cold. 5) Prep English read/write/speak in parallel. Use the Citizenship & Naturalization Anki Bundle for spaced repetition of the full bank.",
+      "1) Confirm your test version on uscis.gov (2025 test with 128 questions if you filed N-400 on or after Oct 20, 2025; 2008 test with 100 otherwise). 2) Memorise every official Q&A on your list with spoken answers, not only recognition. 3) Take this free 30-question / 30-minute / 80% MCQ check for topic scoring. 4) Practice oral sets of 20 until you clear 12+ cold (sets of 10 / 6+ on the 2008 test). 5) Prep English read/write/speak in parallel. Use the Citizenship & Naturalization Anki Bundle for spaced repetition of the full bank.",
     topicBlurbs: [
       {
         id: "government",
@@ -1632,14 +1632,14 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
         id: "geography",
         label: "Geography, Symbols & Holidays",
         blurb:
-          "States, capitals, geography, symbols, and national holidays from the USCIS 100-question bank.",
+          "Geography, symbols, and national holidays from the USCIS civics list (Symbols and Holidays is questions 119–128 on the 2025 list).",
       },
     ],
     examFaqs: [
       {
         question: "What is the U.S. citizenship civics test?",
         answer:
-          "It is the USCIS oral civics exam at your N-400 interview. An officer asks up to 10 questions from the official 100-question list; you pass by answering 6 correctly.",
+          "It is the USCIS oral civics exam at your N-400 interview. On the 2025 test (N-400 filed on or after Oct 20, 2025) an officer asks up to 20 questions from the official 128-question list; you pass at 12 correct. Earlier filers take the 2008 test: up to 10 of 100, pass at 6.",
       },
       {
         question: "Is the official test multiple choice?",
@@ -1657,19 +1657,19 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
           "Yes. USCIS also assesses speaking, reading, and writing in English during the naturalization interview (with age/time exemptions where published rules apply).",
       },
       {
-        question: "Which civics list should I study — 2020 or 2025?",
+        question: "Which civics list should I study — 2008 or 2025?",
         answer:
-          "It depends on your application filing date and USCIS transition rules. Confirm on uscis.gov which 100-question list applies to your case before you memorise.",
+          "It depends on your N-400 filing date. Filed on or after Oct 20, 2025: the 2025 list of 128 questions. Filed before: the 2008 list of 100. Applicants 65+ with 20+ years as permanent residents study only the 20 starred questions. Confirm on uscis.gov before you memorise.",
       },
       {
         question: "Is this UniPrep2Go test official USCIS material?",
         answer:
-          "No. It is an independent practice diagnostic using Prep2Go civics themes. Always study the official USCIS 100 questions for interview fidelity.",
+          "No. It is an independent practice diagnostic using Prep2Go civics themes. Always study the official USCIS list for your test version (128 questions in 2025, 100 in 2008) for interview fidelity.",
       },
       {
         question: "Is there a free U.S. citizenship practice test?",
         answer:
-          "Yes — take the free UniPrep2Go 30-question readiness check on this page, then drill all 100 official questions aloud until you can pass 6 of 10 cold.",
+          "Yes — take the free UniPrep2Go 30-question readiness check on this page, then drill the official list aloud until you can pass 12 of 20 cold (6 of 10 on the 2008 test).",
       },
     ],
     keywords: [

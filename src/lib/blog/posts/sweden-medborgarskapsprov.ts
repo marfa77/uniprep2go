@@ -22,7 +22,7 @@ export const swedenMedborgarskapsprovPost: BlogPostDraft = {
     mockLabel: "Take the free Sweden Medborgarskapsprov readiness check",
     deckLabel: "Get the Swedish SFI Anki deck",
     summary:
-      "Practice Samhällskunskap themes with the free Sweden Medborgarskapsprov readiness check (Prep2Go-sourced). Build Swedish with the SFI Anki deck, and join the civics Anki waitlist before the August 2026 launch.",
+      "Practice Samhällskunskap themes with the free Sweden Medborgarskapsprov readiness check (Prep2Go-sourced). Build Swedish with the SFI Anki deck, and drill civics with the Medborgarskapsprov Anki deck.",
     extraLinks: [
       {
         href: "/decks/sweden-medborgarskapsprov-anki-deck",

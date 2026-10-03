@@ -22,7 +22,7 @@ export const czechCceLanguageVsRealiePost: BlogPostDraft = {
     mockLabel: "Take the free Czech Citizenship readiness check",
     deckLabel: "Get the Czech CCE Residence Citizenship Anki deck",
     summary:
-      "Language first? Drill A2/B1 with the Czech CCE Anki deck. Civics next? Use the free Czech Citizenship readiness check and join the reálie Anki waitlist. Read the complete reálie guide for the 30-topic / 300-question strategy.",
+      "Language first? Drill A2/B1 with the Czech CCE Anki deck. Civics next? Use the free Czech Citizenship readiness check, then the Czech Citizenship Anki deck for reálie. Read the complete reálie guide for the 30-topic / 300-question strategy.",
     extraLinks: [
       {
         href: "/blog/czech-citizenship-exam-zkouska-z-realii-complete-guide",

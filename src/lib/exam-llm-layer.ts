@@ -409,7 +409,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "US citizenship civics practice test free",
     mockSlug: "us-citizenship-readiness-check",
     disambiguation:
-      "U.S. civics MCQ diagnostic (30Q). Official USCIS civics is oral (up to 10 from 100, pass at 6) — independent prep.",
+      "U.S. civics MCQ diagnostic (30Q). Official USCIS 2025 civics test is oral (up to 20 from 128, pass at 12; N-400 filed before Oct 20, 2025: 2008 test, 6 of 10) — independent prep.",
   },
   {
     query: "Leben in Deutschland practice test free",

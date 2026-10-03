@@ -280,7 +280,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "geography", label: "Geography, Symbols & Holidays", questionCount: 10, weightPercent: 33, targetPercent: 80 },
     ],
     officialSourceNote:
-      "Independent MCQ diagnostic on USCIS civics themes. Official naturalization civics is an oral interview: up to 10 questions from the 100-item list, pass at 6. This page is 30 timed MCQs / 30 minutes / 80% — not the oral USCIS interview format.",
+      "Independent MCQ diagnostic on USCIS civics themes. Official naturalization civics is an oral interview: the 2025 test (N-400 filed on or after Oct 20, 2025) asks up to 20 of 128 questions, pass at 12; earlier filers take the 2008 test (up to 10 of 100, pass at 6). This page is 30 timed MCQs / 30 minutes / 80% — not the oral USCIS interview format.",
     disclaimer: citizenshipDisclaimer,
     description:
       "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the $9 U.S. Citizenship Anki deck. Independent prep — not USCIS material.",

@@ -22,7 +22,7 @@ export const polishCitizenshipWiedzaOPolscePost: BlogPostDraft = {
     mockLabel: "Take the free Polish Citizenship readiness check",
     deckLabel: "Get the Polish A2 Certyfikat Anki deck",
     summary:
-      "Today’s bottleneck is PaF language — drill with the Polish Certyfikat Anki deck. Future-proof civic themes with the free Polish Citizenship readiness check, and join the Polish Citizenship Anki waitlist for wiedza / civics cards when they ship.",
+      "Today’s bottleneck is PaF language — drill with the Polish Certyfikat Anki deck. Future-proof civic themes with the free Polish Citizenship readiness check, and drill wiedza / civics themes with the Polish Citizenship Anki deck.",
     extraLinks: [
       {
         href: "/decks/polish-citizenship-anki-deck",
@@ -286,7 +286,7 @@ export const polishCitizenshipWiedzaOPolscePost: BlogPostDraft = {
     {
       question: "How should I prepare if a test obywatelski arrives?",
       answer:
-        "Keep language moving toward B2, study institutions/history dates, follow Polish current affairs, and practice open answers in Polish. UniPrep2Go’s free Polish Citizenship readiness check drills civic themes early; join the civics Anki waitlist for spaced-repetition cards when available.",
+        "Keep language moving toward B2, study institutions/history dates, follow Polish current affairs, and practice open answers in Polish. UniPrep2Go’s free Polish Citizenship readiness check drills civic themes early; the Polish Citizenship Anki deck adds spaced-repetition cards.",
     },
     {
       question: "What Anki products does UniPrep2Go offer for Poland?",
