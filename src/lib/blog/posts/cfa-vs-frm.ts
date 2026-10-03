@@ -3,7 +3,7 @@ import type { BlogPostDraft } from "../types";
 export const cfaVsFrmPost: BlogPostDraft = {
   slug: "cfa-level-1-vs-frm-part-1-which-to-choose",
   title: "CFA Level 1 vs FRM Part 1: If You Can Only Study for One",
-  titleTag: "CFA Level 1 vs FRM Part 1: Which to Choose If You Can Only Pick One",
+  titleTag: "CFA Level 1 vs FRM Part 1: If You Can Only Study for One",
   metaDescription:
     "CFA Level 1 costs $1,140 and takes 300 hours. FRM Part 1 costs $1,000 and takes 200 hours. Here is which one moves your resume, and which one is a half-finished credential.",
   publishedAt: "2026-07-28",
@@ -51,7 +51,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
             ["Pass rate", "~36–43%", "~45–50%"],
             [
               "Exam fee",
-              "$1,140–$1,590 (early vs standard registration)",
+              "$1,140 early / $1,490 standard. $1,590 is Level III standard, not Level I. Confirm on the CFA Institute fee tool before you register.",
               "$400 enrollment + $600–$800 exam fee",
             ],
             ["Study hours", "300+ hours", "200–250 hours"],
@@ -79,7 +79,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
         {
           type: "ul",
           items: [
-            "**CFA Level 1 first-year cost:** $1,140–$1,590 exam + $300–$500 materials ≈ **$1,440–$2,090**",
+            "**CFA Level 1 first-year cost:** $1,140 early / $1,490 standard exam + $300–$500 materials ≈ **$1,440–$1,990**",
             "**FRM Part 1 first-year cost:** $400 enrollment + $600–$800 exam + $200–$400 materials ≈ **$1,200–$1,600**",
           ],
         },
@@ -183,7 +183,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
     {
       question: "How much does CFA Level 1 cost vs. FRM Part 1?",
       answer:
-        "CFA Level 1: $1,140–$1,590 exam + $300–$500 materials ≈ $1,440–$2,090. FRM Part 1: $400 enrollment + $600–$800 exam + $200–$400 materials ≈ $1,200–$1,600.",
+        "CFA Level 1: $1,140 early / $1,490 standard exam + $300–$500 materials ≈ $1,440–$1,990. FRM Part 1: $400 enrollment + $600–$800 exam + $200–$400 materials ≈ $1,200–$1,600.",
     },
     {
       question: "How long does it take to study for CFA Level 1?",
