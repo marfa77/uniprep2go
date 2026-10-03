@@ -89,3 +89,14 @@ User call: "сделай такой экспресс по недвиге". Scope
 - Result: length FAILs 100 → 0; key-letter FAILs 5 → 0 (FL/IL/NC/PA/TX via `KEY_FILL_TOPICS`); 0 placeholders left. Remaining per bank: thin explanations + thin distractor notes (49/50), CA duplicate prompts, TX near-duplicate stems.
 - 49 wave RE decks rebuilt; 31 live on Gumroad replaced (18 not live on Gumroad). 25 RE decks had `{c}` / article bugs in their sample cards → samples re-picked, re-rendered and re-published.
 - Writer flags for a later state-law pass: ID/MD/IN items are generic license law with the state name swapped in; check MD/MI trust-interest keys ("approved housing-trust programs"), NV/CO/RI E&O "may be required" (mandatory in those states), AK "minimal services" statute.
+
+## 2026-10-03 — wrapper sweep across all banks (prod check follow-up)
+
+Prod check after 581f805 found "On the X Readiness, … Select the best answer." still in prompts of banks outside the express scope and quoted inside template explanations/notes (LEED BD+C 204 hits). Sweep `manual-patches-zfix-wrapper-sweep-2026-10-03.json` (42 banks, ~260 items; generator `tmp/lenfix/wrapper_sweep.py`) + 3 hand-written short stems (`manual-patches-zfix-wrapper-short-2026-10-03.json`). 0 wrappers left in any bank. Enrich output diffed against git before apply: only patched fields changed, except CFA L2 where the pipeline also restored 2 truncated ethics options and fixed a **live wrong key** (`equity-002` keyed "multiply dividend by growth, no discounting" instead of Gordon growth at end of high-growth stage).
+
+- 39 linked wave decks rebuilt in the vault (none has a Gumroad product yet — planned); LEED BD+C building deck rebuilt and Gumroad file replaced. Sample cards had no wrappers → no re-render.
+- Gaps seen while sweeping: CFA L2 (Tier A) duplicate prompts / ethics near-duplicates / ~150 template notes → full audit started same day; CDL General Knowledge correct = longest 93%, key letters 14/29/9/8; LEED BD+C key "a" 118/250, distractors copied from other items' keys. 111 banks still have correct = longest > 30% (mostly 60-item health/CDL/trade/HR wave banks, decks not on Gumroad yet).
+
+## 2026-10-03 — EPA 608 fact pass 2 applied
+
+`manual-patches-zfix-facts-2026-10-03-epa.json` now 113 items (pass 1: 28 + pass 2: 85), checked against 40 CFR 82 Subpart F: evacuation table (<200 lb R-22 0 psig / others 10 inHg; ≥200 lb 10 / 15 inHg; pre-11/15/1993 machines 4 inHg), small appliances 90 % / 80 % / 4 inHg, leak triggers 10/20/30 % (ODS ≥ 50 lb only), passive recovery ≤ 15 lb, AHRI 740-2016, per-day inflation-adjusted penalties; core-015 banking-template options replaced. Correct = longest 22 %. Gates: triage clean; audit leftover FAILs = thin notes on core-042 family + distractor copied from another key (core-002 ↔ type-1-039). Still open: R-123 near-duplicates (type-3-003/017/039).

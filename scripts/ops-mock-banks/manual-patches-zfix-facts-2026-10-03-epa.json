@@ -1,0 +1,1363 @@
+{
+ "epa-608-readiness-check": {
+  "epa-608-readiness-check-type-1-016": {
+   "correctOptionId": "a",
+   "explanation": "A 7-ounce factory-sealed dehumidifier is a small appliance (5 pounds or less). With recovery equipment made after November 15, 1993, it must give up 80% of its charge when the compressor does not run (90% when it runs) or be pulled to 4 inches of Hg vacuum; with a dead compressor, self-contained (active) equipment is the practical way to get there.",
+   "distractorExplanations": {
+    "b": "10 inches Hg vacuum comes from the high-pressure appliance table; the small-appliance vacuum option is 4 inches.",
+    "c": "7 ounces is far under the 5-pound limit, so the factory-sealed unit stays a small appliance under Type I, not Type II.",
+    "d": "Passive recovery is allowed on small appliances, but it must still reach 80% recovered or 4 inches Hg vacuum, not any achievable level."
+   }
+  },
+  "epa-608-readiness-check-type-1-018": {
+   "prompt": "A technician is servicing a small appliance that contains R-12 refrigerant. The recovery equipment has pulled the appliance down to 25 inches of mercury vacuum. What, if anything, must the technician still do to meet the EPA recovery requirement?",
+   "correctOptionId": "c",
+   "explanation": "For small appliances the vacuum option is 4 inches of mercury vacuum (the alternative is 80% or 90% of the charge recovered). A reading of 25 inches Hg vacuum is far deeper than 4 inches, so the requirement is already met and no further recovery step is needed.",
+   "distractorExplanations": {
+    "a": "The small-appliance level is 4 inches Hg vacuum, not 4 inches absolute; 25 inches of vacuum is already deeper, so no conversion check is needed.",
+    "b": "29.9 inches Hg vacuum is near a perfect vacuum and is not the small-appliance recovery level for any refrigerant.",
+    "d": "Small-appliance percentage options are 90% (compressor running) or 80% (not running), not 95%, and the 25-inch vacuum already meets the rule."
+   }
+  },
+  "epa-608-readiness-check-type-2-024": {
+   "options": {
+    "a": "No recovery required since the repair can be completed in under 30 minutes",
+    "b": "Recover refrigerant to 0 psig before opening the system",
+    "c": "Recover refrigerant to 10 inches of mercury vacuum before opening the system",
+    "d": "Only recover refrigerant from the condenser section being replaced"
+   },
+   "correctOptionId": "b",
+   "explanation": "An R-22 appliance holding less than 200 pounds must be evacuated to 0 psig before it is opened, whether the recovery machine was built before or after November 15, 1993. Replacing the condenser coil is a major repair, but 0 psig still applies; 10 inches is the level for R-22 units of 200 pounds or more.",
+   "distractorExplanations": {
+    "a": "Recovery before opening the circuit is required for any repair length; a 30-minute job gets no exemption under the Section 608 evacuation rules.",
+    "c": "10 inches Hg vacuum is the level for R-22 appliances of 200 pounds or more (or other high-pressure units under 200 lb), not an 8-pound R-22 split system.",
+    "d": "A split system's condenser coil cannot be valved off from the rest of the charge, so the circuit being opened must be recovered to 0 psig."
+   }
+  },
+  "epa-608-readiness-check-core-032": {
+   "prompt": "A technician is preparing to recover refrigerant from an industrial chiller and finds that the borrowed recovery machine, built in 2015, has no label showing certification by an EPA-approved equipment testing organization. What must the technician do before proceeding?",
+   "options": {
+    "a": "Use the machine anyway, since the technician's own certification covers any equipment used",
+    "b": "Use the equipment only if it passes a visual inspection for obvious defects",
+    "c": "Obtain properly certified recovery equipment before beginning any recovery operations",
+    "d": "Proceed if the system holds under 15 pounds, then have the machine tested afterward"
+   },
+   "explanation": "Recovery and recycling equipment made after November 15, 1993 must be certified by an EPA-approved testing organization (such as AHRI or UL) and labeled. That certification belongs to the equipment model and does not expire, but an unlabeled machine cannot be used, so certified equipment must be obtained first.",
+   "distractorExplanations": {
+    "a": "Technician certification and equipment certification are separate requirements; a certified technician still needs certified recovery equipment.",
+    "b": "Visual inspection cannot substitute for proper certification; EPA requires formal certification that includes performance testing and verification.",
+    "d": "There is no small-charge exemption to the certified-equipment rule, and testing the machine after the job does not make using it legal."
+   }
+  },
+  "epa-608-readiness-check-type-1-012": {
+   "prompt": "A technician is using passive recovery methods on a small appliance refrigerator with a burned-out compressor. After 30 minutes, the system pressure has stabilized at 2 inches of mercury vacuum. What should the technician do next?",
+   "options": {
+    "a": "Continue passive recovery for another 30 minutes to reach the required vacuum level",
+    "b": "Switch to active recovery to reach the required 4 inches of mercury vacuum",
+    "c": "Document that recovery is complete since passive methods have achieved maximum extraction",
+    "d": "Add nitrogen to pressurize the system and restart the passive recovery process"
+   },
+   "explanation": "With the compressor not running, a small appliance must have 80% of its charge recovered or be pulled to 4 inches of Hg vacuum. A stable 2-inch reading means passive recovery has stalled short of that level, so the technician switches to self-contained (active) equipment to finish.",
+   "distractorExplanations": {
+    "a": "Continuing passive recovery will not achieve a deeper vacuum since the system has already stabilized at 2 inches, which is insufficient for non-functioning compressor requirements.",
+    "c": "A passive method reaching its limit does not end the duty; recovery must still reach 80% or 4 inches Hg vacuum for a non-running compressor.",
+    "d": "Adding nitrogen would contaminate the refrigerant and is not an approved method for improving recovery efficiency in small appliances."
+   }
+  },
+  "epa-608-readiness-check-type-1-033": {
+   "prompt": "A technician has completed refrigerant recovery from a small appliance window air conditioner containing 3 ounces of R-22. Using self-contained recovery equipment, the final system pressure reads 2 inches of mercury vacuum. The customer wants to dispose of the unit immediately. What must the technician do?",
+   "options": {
+    "a": "Continue recovery until reaching 4 inches of mercury vacuum",
+    "b": "Release the unit for disposal, since 2 inches meets the small-appliance level",
+    "c": "Wait 5 minutes, and if the reading holds, release the unit for disposal",
+    "d": "Switch to system-dependent recovery and pull to 10 inches of mercury"
+   },
+   "explanation": "Small appliances must have 80% or 90% of the charge recovered (compressor off or on) or be pulled to 4 inches of Hg vacuum. A 2-inch vacuum reading is shallower than 4 inches, so recovery must continue before the unit goes for disposal.",
+   "distractorExplanations": {
+    "b": "2 inches of vacuum is shallower than the 4-inch small-appliance level, so the unit is not ready for disposal yet.",
+    "c": "A stable reading does not matter if the required level has not been reached; recovery must continue first.",
+    "d": "10 inches Hg vacuum is a high-pressure appliance level, and switching methods does not change the small-appliance target."
+   }
+  },
+  "epa-608-readiness-check-type-1-050": {
+   "prompt": "A technician is recovering refrigerant from a small appliance chest freezer containing 5.8 ounces of R-404A using system-dependent recovery methods. The compressor operates normally and the recovery gauge shows 1 inch of mercury vacuum. What must happen before the recovery process can be considered complete?",
+   "options": {
+    "a": "Recovery is complete, since any vacuum reading meets the small-appliance level",
+    "b": "Keep recovering until the gauge holds at 10 inches of mercury vacuum",
+    "c": "Recover 90% of the charge or pull the unit down to 4 inches Hg vacuum",
+    "d": "Stop once 80% of the charge is out, the level for a running compressor"
+   },
+   "explanation": "With recovery equipment made after November 15, 1993 and a running compressor, a small appliance must have 90% of its charge recovered or be evacuated to 4 inches of Hg vacuum. A 1-inch reading has not reached that level, so recovery continues.",
+   "distractorExplanations": {
+    "a": "A 1-inch vacuum is shallower than the 4-inch small-appliance level, and with no percentage check the job is not complete.",
+    "b": "10 inches Hg vacuum is a high-pressure appliance level from the evacuation table, not the small-appliance requirement.",
+    "d": "80% is the share for a compressor that does not run; with a working compressor the figure is 90% or a 4-inch vacuum."
+   }
+  },
+  "epa-608-readiness-check-type-1-027": {
+   "options": {
+    "a": "Recover 70% of the charge, the minimum when the compressor will not run",
+    "b": "Recover 80% of the charge or evacuate the unit to 4 inches Hg vacuum",
+    "c": "Cut the refrigerant lines and let the 4-ounce charge dissipate outdoors",
+    "d": "Notify EPA within 30 days, then recover the refrigerant at the scrap yard"
+   },
+   "explanation": "Before a small appliance is scrapped, its refrigerant must be recovered. With the compressor not running, recovery equipment made after November 15, 1993 must remove 80% of the charge or pull the unit to 4 inches of Hg vacuum; a 4-ounce charge is not exempt.",
+   "distractorExplanations": {
+    "a": "With a non-operating compressor the small-appliance requirement is 80% recovery, not 70%.",
+    "c": "Small charges are not exempt from the venting prohibition; refrigerant must be recovered before disposal.",
+    "d": "EPA does not require disposal notification; the refrigerant must be recovered (or recovery verified) before disposal."
+   }
+  },
+  "epa-608-readiness-check-type-1-047": {
+   "options": {
+    "a": "System-dependent recovery equipment certified to recover 70% of refrigerant",
+    "b": "Equipment certified to recover 90% of the charge or pull a 4-inch vacuum",
+    "c": "Any recovery equipment capable of achieving 15 inches mercury vacuum",
+    "d": "Self-contained recovery equipment certified to recover 95% of refrigerant"
+   },
+   "explanation": "An 11-ounce factory-sealed cooler is a small appliance. Recovery equipment made after November 15, 1993 must be certified to recover 90% of the charge when the compressor runs (80% when it does not) or to reach 4 inches of Hg vacuum; there is no special rule for charges over 10 ounces.",
+   "distractorExplanations": {
+    "a": "70% is not an EPA small-appliance recovery level; the options are 80% or 90% depending on compressor status.",
+    "c": "15 inches Hg vacuum is the level for high-pressure appliances of 200 pounds or more, not the small-appliance standard.",
+    "d": "95% is not a Section 608 figure; small-appliance equipment is certified to 90% (compressor on), 80% (off) or 4 inches of vacuum."
+   }
+  },
+  "epa-608-readiness-check-type-2-045": {
+   "prompt": "A technician must replace the evaporator coil in a packaged rooftop unit containing 28 pounds of R-410A. The recovery machine was manufactured in 2021, and the system is operating normally with standard pressures. What recovery action is required before opening the system?",
+   "options": {
+    "a": "No recovery, since a coil swap on a normally running unit counts as routine maintenance",
+    "b": "Recover to 0 psig, since the unit holds less than 200 pounds of refrigerant",
+    "c": "Recover refrigerant to 10 inches of mercury vacuum before opening the system",
+    "d": "Recover refrigerant to 15 inches of mercury vacuum throughout the entire system"
+   },
+   "correctOptionId": "c",
+   "explanation": "R-410A falls in the 'other high-pressure' row of the evacuation table. For a unit holding less than 200 pounds, recovery equipment made after November 15, 1993 must pull 10 inches of Hg vacuum before a major repair such as an evaporator coil swap (4 inches with older equipment); 15 inches applies at 200 pounds or more.",
+   "distractorExplanations": {
+    "a": "Replacing an evaporator coil is a major repair under Section 608, so the circuit must be recovered to the required level first.",
+    "b": "0 psig is the level for R-22 appliances under 200 pounds; R-410A falls in the other high-pressure row, which needs 10 inches.",
+    "d": "15 inches Hg vacuum applies to other high-pressure appliances holding 200 pounds or more, not a 28-pound rooftop unit."
+   }
+  },
+  "epa-608-readiness-check-type-3-044": {
+   "prompt": "Using recovery equipment manufactured after November 15, 1993, what evacuation level must a low-pressure appliance reach before it is opened for a major repair?",
+   "options": {
+    "a": "15 inches of mercury vacuum",
+    "b": "25 inches of mercury vacuum",
+    "c": "25 millimeters of mercury absolute",
+    "d": "500 microns (0.5 mm) of mercury absolute"
+   },
+   "correctOptionId": "c",
+   "explanation": "Section 608's evacuation table sets low-pressure appliances at 25 mm Hg absolute when the recovery equipment was made on or after November 15, 1993 (25 inches Hg vacuum for older machines). 25 mm absolute is roughly 29 inches of vacuum, so it is the deeper of the two levels.",
+   "distractorExplanations": {
+    "a": "15 inches Hg vacuum is the level for high- or medium-pressure appliances of 200 pounds or more, not for low-pressure chillers.",
+    "b": "25 inches Hg vacuum is the level for recovery equipment made before November 15, 1993; newer machines must reach 25 mm absolute.",
+    "d": "500 microns is a dehydration target used before charging, not the Section 608 recovery level for opening a low-pressure appliance."
+   }
+  },
+  "epa-608-readiness-check-type-2-007": {
+   "prompt": "Why do cylinders of flammable A2L refrigerants such as R-32 and R-454B have left-hand (reverse) threaded valves?",
+   "options": {
+    "a": "To keep hoses and gear built for nonflammable gases from being connected",
+    "b": "Because A2L blends must be charged as vapor, and the valve meters vapor flow",
+    "c": "To increase recovery speed on high-pressure systems",
+    "d": "Because left-hand threads hold the higher A2L cylinder pressure without leaking"
+   },
+   "explanation": "Cylinders of flammable refrigerants, including A2Ls like R-32 and R-454B, use left-hand threaded valves (and a red band) so hoses, recovery machines and gauges meant for nonflammable refrigerants such as R-410A cannot be connected by mistake. R-410A cylinders keep standard right-hand threads.",
+   "distractorExplanations": {
+    "b": "R-454B is a blend charged as liquid and R-32 is a single compound; thread direction has nothing to do with vapor metering.",
+    "c": "Thread orientation is a safety and compatibility measure, not a recovery-speed feature.",
+    "d": "Thread direction does not change pressure rating; cylinder pressure capacity comes from the DOT cylinder specification."
+   }
+  },
+  "epa-608-readiness-check-core-035": {
+   "prompt": "A commercial refrigeration system holds 18 pounds of R-502. A leak has let 3 pounds escape over 6 months, about 33% per year. What do the Section 608 leak repair requirements say about this system?",
+   "options": {
+    "a": "Repair within 30 days, because 33% is above the 20% commercial trigger rate",
+    "b": "Shut the system down at once, because R-502 is a phased-out CFC blend",
+    "c": "Repair within 12 months, the deadline for commercial refrigeration leaks",
+    "d": "No repair deadline applies; the charge is under the 50-pound threshold"
+   },
+   "correctOptionId": "d",
+   "explanation": "Section 608 leak repair duties apply to ODS appliances with a full charge of 50 pounds or more. At 18 pounds no repair deadline is triggered, even though 33% would exceed the 20% commercial refrigeration rate on a larger system; venting is still prohibited whenever the system is serviced.",
+   "distractorExplanations": {
+    "a": "The 20% commercial refrigeration trigger applies to appliances holding 50 pounds or more; this system has 18 pounds.",
+    "b": "R-502 production has ended, but Section 608 has no immediate-shutdown requirement for leaks in a small commercial system.",
+    "c": "There is no 12-month repair deadline; one year is the window to complete a retrofit or retirement plan on large appliances."
+   }
+  },
+  "epa-608-readiness-check-core-050": {
+   "prompt": "A technician discovers that a commercial refrigeration system containing 60 pounds of R-22 has been leaking. Maintenance records show that 18 pounds of refrigerant were added during the past 12 months to maintain proper operation. What is the required action under EPA Section 608 regulations?",
+   "explanation": "18 pounds added to a 60-pound full charge is a 30% annual leak rate, above the 20% trigger for commercial refrigeration appliances holding 50 pounds or more of an ODS refrigerant. The owner must repair the leak within 30 days or create a retrofit or retirement plan within 30 days and complete it within one year.",
+   "distractorExplanations": {
+    "a": "30% is above the 20% commercial refrigeration trigger rate, so continuing to run without repair or a plan is not allowed."
+   }
+  },
+  "epa-608-readiness-check-type-1-028": {
+   "prompt": "A technician is servicing a reach-in cooler, a factory-sealed unit holding 12 ounces of R-22. Electronic leak detection finds a significant leak at a brazed joint in the evaporator. The compressor runs normally, and the owner wants the joint re-brazed. What does EPA Section 608 require of the technician?",
+   "options": {
+    "a": "Recover the charge to the small-appliance level before opening the joint",
+    "b": "Repair the leak within 30 days, the deadline set for small appliances",
+    "c": "Replace the entire evaporator coil since brazing repairs are prohibited",
+    "d": "Log the leak and report it to EPA before scheduling the repair"
+   },
+   "correctOptionId": "a",
+   "explanation": "Section 608 sets no leak repair deadline for small appliances, but refrigerant may not be vented. Before the joint is opened for brazing, the charge must be recovered to the small-appliance level: 90% with the compressor running (equipment made after November 15, 1993) or 4 inches of Hg vacuum.",
+   "distractorExplanations": {
+    "b": "Leak repair deadlines apply to appliances of 50 pounds or more; Section 608 sets no 30-day repair clock for small appliances.",
+    "c": "Brazing repairs are acceptable and commonly used for refrigeration leak repairs when performed by qualified technicians.",
+    "d": "EPA has no leak-reporting requirement for small appliances; the duty is to recover the charge before opening the joint."
+   }
+  },
+  "epa-608-readiness-check-type-1-034": {
+   "prompt": "A technician services a small appliance ice machine holding 11 ounces of R-404A. The condenser coil needs cleaning, the compressor runs normally, and a small leak is found at a flare fitting. Which statement describes the EPA Section 608 rules for this leak?",
+   "options": {
+    "a": "A 30-day repair deadline applies, since any detected leak triggers repair",
+    "b": "The leak must be reported to EPA within 30 days, then fixed at the next visit",
+    "c": "Repair is due within 12 months, the deadline for appliances under 50 pounds",
+    "d": "No repair deadline applies, but venting is barred if the fitting is opened"
+   },
+   "correctOptionId": "d",
+   "explanation": "Section 608 leak repair requirements apply to appliances with 50 pounds or more of an ODS refrigerant, so this 11-ounce small appliance has no federal repair deadline. The venting prohibition still applies: if the flare fitting is opened, the refrigerant must be recovered first. Fixing the leak is still good practice.",
+   "distractorExplanations": {
+    "a": "Leak repair deadlines are tied to appliances holding 50 pounds or more; a small leak in an 11-ounce unit triggers no 30-day clock.",
+    "b": "EPA has no leak report for small appliances; reporting duties attach to large appliances that miss repair deadlines or leak chronically.",
+    "c": "There is no 12-month repair rule for small appliances; Section 608 sets no repair deadline below 50 pounds."
+   }
+  },
+  "epa-608-readiness-check-type-1-004": {
+   "prompt": "How does the evacuation level for small appliances compare with the levels set for larger high-pressure appliances under Section 608?",
+   "options": {
+    "a": "It is deeper: small appliances must reach 25 mm Hg absolute, like chillers",
+    "b": "It is the same: every appliance type is pulled to 10 inches of Hg vacuum",
+    "c": "No level is set; recovery from a small appliance stops when gauges read 0 psig",
+    "d": "It is shallower: 4 inches Hg vacuum versus up to 15 inches for larger units"
+   },
+   "correctOptionId": "d",
+   "explanation": "Small appliances meet Section 608 by recovering 80-90% of the charge or by reaching 4 inches of Hg vacuum. Larger high-pressure appliances need 0 psig (R-22 under 200 lb), 10 inches or 15 inches depending on refrigerant, charge size and equipment date, so the small-appliance vacuum is shallower.",
+   "distractorExplanations": {
+    "a": "25 mm Hg absolute is the low-pressure chiller level for newer recovery equipment, not the small-appliance requirement.",
+    "b": "Levels differ by appliance type; 10 inches applies to some high-pressure units, while small appliances use 4 inches or a percentage.",
+    "c": "Small appliances do have a level: 80% or 90% of the charge recovered, or 4 inches of Hg vacuum, not 0 psig."
+   }
+  },
+  "epa-608-readiness-check-type-1-031": {
+   "prompt": "A technician recovers the refrigerant from a 7-ounce R-22 dehumidifier with a burned-out compressor before the unit goes to a scrap recycler. What lets the recycler accept the unit without recovering the refrigerant itself?",
+   "options": {
+    "a": "Draining the compressor oil and shipping it with the refrigerant for reclaim",
+    "b": "Flushing the system with nitrogen and tagging it as free of refrigerant",
+    "c": "Installing locking caps on the service ports to deter refrigerant theft",
+    "d": "A signed statement with the recoverer's name, address and recovery date"
+   },
+   "correctOptionId": "d",
+   "explanation": "Under the safe disposal rule, the final processor (scrap recycler) must recover the refrigerant or verify it was already recovered, usually with a signed statement giving the name and address of the person who recovered it and the date, or a contract stating removal happens before delivery.",
+   "distractorExplanations": {
+    "a": "Reclaimers process refrigerant, not compressor oil; draining oil does not show the recycler that the charge was recovered.",
+    "b": "A nitrogen flush and a tag are not the verification the safe disposal rule calls for, and flushing is not a disposal requirement.",
+    "c": "Locking caps are a building-code anti-tamper measure for outdoor units, not disposal verification for a small appliance."
+   }
+  },
+  "epa-608-readiness-check-type-3-007": {
+   "prompt": "Which type of recovery equipment is appropriate for removing the charge from a low-pressure centrifugal chiller holding 900 pounds of R-123?",
+   "options": {
+    "a": "Self-contained machines built for low-pressure refrigerants",
+    "b": "System-dependent recovery that relies on the chiller's own compressor",
+    "c": "Passive recovery bags without active pumping or a condenser",
+    "d": "Standard high-pressure recovery machines rated for 400 psig cylinders"
+   },
+   "correctOptionId": "a",
+   "explanation": "System-dependent (passive) recovery may be used only on appliances holding 15 pounds or less, so a 900-pound chiller needs self-contained equipment. Machines for R-123 chillers recover liquid first and then pull vapor down to the low-pressure evacuation level (25 mm Hg absolute).",
+   "distractorExplanations": {
+    "b": "System-dependent recovery is limited to appliances with 15 pounds or less of refrigerant, so it cannot be used on a 900-pound chiller.",
+    "c": "Passive bags are a small-appliance technique and cannot reach the deep vacuum levels set for low-pressure chillers.",
+    "d": "High-pressure machines are not designed for the sub-atmospheric conditions and large liquid volumes of low-pressure chillers."
+   }
+  },
+  "epa-608-readiness-check-type-3-026": {
+   "prompt": "When recovering refrigerant from a low-pressure appliance, why must hose connections and recovery equipment be kept leak-tight?",
+   "explanation": "Much of a low-pressure appliance runs below atmospheric pressure, and recovery pulls it deeper into vacuum, so any loose fitting draws air inward rather than leaking refrigerant out. That air is a non-condensable that contaminates the recovered refrigerant and raises condensing pressure."
+  },
+  "epa-608-readiness-check-type-3-016": {
+   "options": {
+    "a": "Recover the liquid first, then recover the remaining vapor",
+    "b": "Run the purge unit to vent the refrigerant vapor before opening the shell",
+    "c": "Pressurize the shell with nitrogen to 50 psig to push out the liquid",
+    "d": "Drain the oil from the sump first, then recover the vapor from the condenser"
+   },
+   "explanation": "On a low-pressure chiller, recovery starts by removing liquid refrigerant, because most of the charge sits as liquid, and then vapor is recovered down to the required level (25 mm Hg absolute with newer equipment). Heating the vessel can speed up the vapor stage.",
+   "distractorExplanations": {
+    "b": "The purge unit removes non-condensables, not the charge; using it to vent refrigerant is prohibited.",
+    "c": "50 psig exceeds the roughly 15 psig rupture disc on a low-pressure chiller and mixes nitrogen into the refrigerant.",
+    "d": "Oil holds dissolved refrigerant and is removed after recovery; recovery starts with the refrigerant charge."
+   }
+  },
+  "epa-608-readiness-check-core-025": {
+   "options": {
+    "a": "The mixed refrigerant can be reused in any compatible system after proper filtration",
+    "b": "The mixture must be reclaimed to AHRI 700 standards or sent for destruction",
+    "c": "Only the R-22 portion needs to be reclaimed; the R-134a can be vented safely",
+    "d": "The mixture can be separated using standard recovery equipment and reused immediately"
+   },
+   "explanation": "Mixed refrigerants cannot be reused as-is. Recovered refrigerant sold to a new owner must be reclaimed to AHRI Standard 700 purity by an EPA-certified reclaimer; a mixed R-22/R-134a batch that cannot be separated is sent for destruction.",
+   "distractorExplanations": {
+    "a": "Mixed refrigerants have altered thermodynamic properties and cannot be safely reused even with filtration, as this doesn't address the fundamental contamination issue.",
+    "c": "All regulated refrigerants, including R-134a, are subject to EPA venting prohibitions and cannot be released to the atmosphere regardless of contamination status.",
+    "d": "Standard recovery equipment cannot effectively separate different refrigerant types, and even if separation were possible, the refrigerants would still require proper reclamation before reuse."
+   }
+  },
+  "epa-608-readiness-check-core-026": {
+   "prompt": "Which refrigerants are covered by the Section 608 venting prohibition and recovery requirements?",
+   "explanation": "Section 608 began with ozone-depleting CFCs and HCFCs, and its venting prohibition and recovery rules also cover their substitutes, including HFCs, even though HFCs have zero ODP and are regulated for their global warming impact."
+  },
+  "epa-608-readiness-check-core-027": {
+   "options": {
+    "a": "Use the equipment as-is, since the small R-22 residue is within AHRI 700 purity limits",
+    "b": "Flush the recovery equipment with nitrogen and vent it before switching refrigerant types",
+    "c": "Evacuate the machine into the R-22 cylinder, then use a separate cylinder for R-134a",
+    "d": "Change the filter-drier and hoses, then connect directly to the R-134a system without evacuating"
+   },
+   "explanation": "Before switching refrigerants, the recovery machine is pumped out (self-evacuated) so residual R-22 goes into the R-22 recovery cylinder, the filter is changed per the manufacturer, and a separate recovery cylinder is used for the R-134a so the two never mix.",
+   "distractorExplanations": {
+    "a": "AHRI 700 is a reclaim purity standard, not a tolerance for residue; leftover R-22 contaminates the R-134a.",
+    "b": "A nitrogen flush does not pull residual refrigerant and oil out of the machine and venting it releases refrigerant.",
+    "d": "New hoses and a filter-drier do not remove R-22 left in the machine's compressor and condenser; evacuation is still needed."
+   }
+  },
+  "epa-608-readiness-check-type-2-026": {
+   "options": {
+    "a": "The system has leaked its charge, so it can be opened after a 0 psig gauge check",
+    "b": "The gauges are reading falsely low, so the system should be pressurized with nitrogen first",
+    "c": "Vapor and oil-dissolved refrigerant may remain, so recovery should still be done",
+    "d": "The charge has migrated to the compressor crankcase, so only the oil needs recovery"
+   },
+   "explanation": "A 0 psig reading means the system is at atmospheric pressure, not empty: refrigerant vapor stays in the lines and coils and some is dissolved in the oil. The system must still be recovered to the required evacuation level (or as far as leaks allow) before it is opened.",
+   "distractorExplanations": {
+    "a": "A 0 psig reading does not prove the system is empty; refrigerant can remain and recovery must still be attempted.",
+    "b": "Adding nitrogen to a system that may still hold refrigerant creates a mixture that is later vented.",
+    "d": "Refrigerant vapor in the lines and coils must be recovered along with the refrigerant dissolved in the oil."
+   }
+  },
+  "epa-608-readiness-check-core-002": {
+   "prompt": "Using recovery equipment made after November 15, 1993, what share of the charge must be recovered from a small appliance whose compressor is operating, if the 4-inch vacuum option is not used?",
+   "explanation": "For small appliances, recovery equipment made after November 15, 1993 must recover 90% of the charge when the compressor is operating and 80% when it is not, or evacuate the appliance to 4 inches of Hg vacuum. Larger stationary equipment uses the vacuum table, not a percentage.",
+   "distractorExplanations": {
+    "a": "80% is the small-appliance figure when the compressor is not operating (or for pre-1993 equipment), not when it runs.",
+    "b": "85% is not a figure in the Section 608 small-appliance rule; the choices are 90% or 80% depending on compressor status.",
+    "d": "95% is not required in the small-appliance rule; 90% with a running compressor, or a 4-inch vacuum, satisfies it."
+   }
+  },
+  "epa-608-readiness-check-core-010": {
+   "options": {
+    "a": "High pressure rating above 200 psi",
+    "b": "Ozone depletion potential (ODP) greater than zero",
+    "c": "Flammability safety classification of A2 or A3",
+    "d": "Toxicity level exceeding OSHA exposure standards"
+   },
+   "explanation": "Section 608 was written around ozone-depleting substances, so ODP above zero is the classic trigger and the reason CFCs and HCFCs are covered. Since the 2016 rule, its venting prohibition and recovery requirements also extend to substitutes such as HFCs, which have zero ODP.",
+   "distractorExplanations": {
+    "a": "Pressure rating alone does not determine EPA 608 applicability; many high-pressure refrigerants are not ozone-depleting.",
+    "c": "Flammability classification affects safety codes and equipment standards but not EPA 608 coverage, which grew out of ozone protection.",
+    "d": "OSHA toxicity and exposure standards are workplace rules, separate from the EPA environmental regulations under Section 608."
+   }
+  },
+  "epa-608-readiness-check-type-1-011": {
+   "distractorExplanations": {
+    "a": "8 pounds is over the 5-pound small-appliance limit, and a commercial ice machine of that size is not a factory-sealed small appliance."
+   }
+  },
+  "epa-608-readiness-check-core-009": {
+   "prompt": "A technician will open an R-22 comfort cooling appliance holding 300 pounds of refrigerant for a major repair, using recovery equipment made in 2018. What must be done before refrigerant-containing connections are broken?",
+   "correctOptionId": "b",
+   "explanation": "R-22 appliances holding 200 pounds or more must be evacuated to 10 inches of Hg vacuum with recovery equipment made on or after November 15, 1993 (4 inches with older equipment). 0 psig is the level for R-22 units under 200 pounds, and 15 inches applies to other high-pressure refrigerants at 200 pounds or more.",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds; at 300 pounds the R-22 level is 10 inches Hg vacuum.",
+    "c": "15 inches applies to other high-pressure refrigerants such as R-410A at 200 pounds or more, not to R-22.",
+    "d": "Intentional venting of refrigerant is prohibited under the Clean Air Act and can result in significant EPA penalties."
+   }
+  },
+  "epa-608-readiness-check-core-016": {
+   "prompt": "Before an R-410A appliance holding 250 pounds is sent for disposal, what level must recovery equipment made after November 15, 1993 reach?",
+   "options": {
+    "a": "0 psig (atmospheric pressure)",
+    "b": "4 inches of mercury vacuum",
+    "c": "10 inches of mercury vacuum",
+    "d": "15 inches of mercury vacuum"
+   },
+   "explanation": "Disposal uses the same evacuation table as opening an appliance. R-410A is an 'other high-pressure' refrigerant, and at 200 pounds or more, equipment made after November 15, 1993 must reach 15 inches of Hg vacuum (4 inches for older equipment).",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds, not a 250-pound R-410A appliance.",
+    "b": "4 inches is the level for recovery equipment made before November 15, 1993, not newer machines.",
+    "c": "10 inches applies to other high-pressure appliances under 200 pounds; at 250 pounds the level is 15 inches."
+   }
+  },
+  "epa-608-readiness-check-core-031": {
+   "prompt": "A service technician must evacuate a residential split system holding 8 pounds of R-410A before opening it for repair, using a recovery machine made in 2019. What recovery requirement applies?",
+   "explanation": "R-410A falls in the 'other high-pressure' row. Under 200 pounds, recovery equipment made after November 15, 1993 must pull 10 inches of Hg vacuum before the system is opened. Percentage targets such as 80% or 90% apply only to small appliances.",
+   "distractorExplanations": {
+    "a": "80% is the small-appliance figure for a non-running compressor; split systems use the vacuum table instead.",
+    "b": "90% is the small-appliance figure for a running compressor; a split system must reach a vacuum level.",
+    "d": "15 inches applies to other high-pressure appliances of 200 pounds or more, not an 8-pound split system."
+   }
+  },
+  "epa-608-readiness-check-core-034": {
+   "prompt": "A technician is filling a refillable recovery cylinder with liquid refrigerant. To leave room for expansion, the cylinder should be filled to no more than what share of its rated capacity?",
+   "options": {
+    "a": "75 percent of the cylinder's rated capacity",
+    "b": "80 percent of the cylinder's rated capacity",
+    "c": "90 percent of the cylinder's rated capacity",
+    "d": "95 percent of the cylinder's rated capacity"
+   },
+   "explanation": "Recovery cylinders should be filled to no more than 80% of their capacity by weight so the liquid has room to expand as temperature rises. An overfilled cylinder can become liquid-full, and a small temperature rise can then burst it or open its relief device.",
+   "distractorExplanations": {
+    "a": "75% is a conservative choice some shops use, but the accepted maximum fill for recovery cylinders is 80%.",
+    "c": "90% leaves too little vapor space; liquid expansion on a warm day can make the cylinder liquid-full.",
+    "d": "95% is close to liquid-full; a modest temperature rise could open the relief valve or rupture the cylinder."
+   }
+  },
+  "epa-608-readiness-check-core-037": {
+   "prompt": "A technician's recovery machine, built in 2008, carries a label showing certification to ARI Standard 740-1995. Newer equipment is certified to AHRI Standard 740-2016. May the technician keep using the 2008 machine?",
+   "options": {
+    "a": "Yes; equipment certified under the older standard may still be used",
+    "b": "No; it must be replaced with equipment certified to AHRI Standard 740-2016",
+    "c": "Only after it is re-tested and re-certified to the current standard",
+    "d": "Yes, but limited to systems holding less than 5 pounds of refrigerant"
+   },
+   "correctOptionId": "a",
+   "explanation": "The 2016 rule requires newly manufactured recovery equipment to be certified to AHRI 740-2016, but equipment made earlier and properly certified under the older ARI 740 standard may continue to be used. It does not need to be replaced or re-certified.",
+   "distractorExplanations": {
+    "b": "Replacement is not required; the AHRI 740-2016 requirement applies to newly manufactured equipment, not existing certified machines.",
+    "c": "Existing certified equipment does not need re-testing; its original certification stays valid.",
+    "d": "There is no 5-pound limit on older certified equipment; it may be used on the appliances it was designed for."
+   }
+  },
+  "epa-608-readiness-check-core-047": {
+   "prompt": "An industrial process refrigeration system holds 120 pounds of R-22. Records show 30 pounds were added during the past 12 months. What does Section 608 require?",
+   "options": {
+    "a": "Repair within 30 days, because 25% exceeds the 20% commercial refrigeration rate",
+    "b": "Repair within 30 days, because a leak rate above 10% requires repair",
+    "c": "No repair deadline yet, since 25% is below the 30% industrial process trigger",
+    "d": "Retire or retrofit the system within one year, with no repair option offered"
+   },
+   "correctOptionId": "c",
+   "explanation": "30 pounds added to a 120-pound charge is a 25% annual leak rate. Industrial process refrigeration holding 50 pounds or more of an ODS refrigerant has a 30% trigger under the 2016 rule, so no repair deadline is triggered yet; service records must still be kept.",
+   "distractorExplanations": {
+    "a": "20% is the commercial refrigeration trigger; industrial process refrigeration uses 30%, which this system has not reached.",
+    "b": "10% is the comfort cooling trigger, not the rate for industrial process refrigeration.",
+    "d": "Retrofit or retirement is an alternative to repair once the trigger is exceeded, and 25% is below the 30% industrial rate."
+   }
+  },
+  "epa-608-readiness-check-core-048": {
+   "prompt": "Which standard is used to certify newly manufactured refrigerant recovery equipment under current Section 608 rules?",
+   "options": {
+    "a": "AHRI Standard 740-2016",
+    "b": "ASHRAE Standard 15-2019",
+    "c": "UL Standard 1963",
+    "d": "EPA Method 27"
+   },
+   "explanation": "The 2016 rule adopted AHRI Standard 740-2016 for certifying newly manufactured recovery and recycling equipment. Equipment made earlier and certified to the older ARI 740 standard may still be used.",
+   "distractorExplanations": {
+    "b": "ASHRAE Standard 15 addresses safety requirements for mechanical refrigeration systems, not recovery equipment certification standards.",
+    "c": "UL Standard 1963 covers safety requirements for refrigerant recovery equipment but is not the EPA-required performance certification standard.",
+    "d": "EPA Method 27 is a test method for determining vapor tightness, not a recovery equipment certification standard."
+   }
+  },
+  "epa-608-readiness-check-core-005": {
+   "distractorExplanations": {
+    "d": "35% was the commercial and industrial trigger before the 2016 rule; industrial process refrigeration now uses 30%."
+   }
+  },
+  "epa-608-readiness-check-core-014": {
+   "distractorExplanations": {
+    "d": "120 days is an extension industrial process systems can get in limited cases, such as a needed shutdown; the base deadline is 30 days."
+   }
+  },
+  "epa-608-readiness-check-core-023": {
+   "prompt": "A technician discovers a leak in a comfort cooling system containing R-22 refrigerant. The system holds 75 pounds of refrigerant and has a 12% annual leak rate. What is the required timeframe for completing the repair?",
+   "explanation": "Comfort cooling appliances holding 50 pounds or more of an ODS refrigerant such as R-22 must be repaired within 30 days once the annual leak rate exceeds 10%. This system qualifies (75 pounds and 12%).",
+   "distractorExplanations": {
+    "a": "Section 608 has no 14-day repair deadline; the standard deadline for appliances over the trigger rate is 30 days."
+   }
+  },
+  "epa-608-readiness-check-core-015": {
+   "options": {
+    "a": "Recover the next refrigerant anyway, since a small residue stays within AHRI 700 limits",
+    "b": "Vent the residue from the machine to atmosphere before connecting the next system",
+    "c": "Clean or evacuate it per the manufacturer's instructions before the next refrigerant",
+    "d": "Run a nitrogen purge through the machine, then recover the new refrigerant"
+   },
+   "explanation": "Before a recovery machine is used on a different refrigerant, the residue must be removed following the manufacturer's procedure, usually by self-evacuating into the old cylinder and changing the filter, so the next recovered refrigerant is not contaminated.",
+   "distractorExplanations": {
+    "a": "AHRI 700 is a reclaim purity standard, not a tolerance for residue; leftover refrigerant contaminates the next batch.",
+    "b": "Venting the residue releases regulated refrigerant, which the Section 608 venting prohibition forbids.",
+    "d": "A nitrogen purge does not pull residual refrigerant and oil from the machine, and the purge gas carries refrigerant out."
+   }
+  },
+  "epa-608-readiness-check-core-038": {
+   "prompt": "How is the maximum EPA civil penalty for a Section 608 violation, such as knowingly venting R-12, set?",
+   "options": {
+    "a": "A flat $10,000 fine per technician for each incident",
+    "b": "Per day per violation, with the cap adjusted each year for inflation",
+    "c": "Per pound of refrigerant released, at a fixed $27.50 per pound",
+    "d": "Per company per year, capped at $75,000 for all violations"
+   },
+   "explanation": "Clean Air Act civil penalties are assessed per day for each violation, and EPA raises the maximum every year for inflation; older study guides quote figures such as $44,539, but the cap has since risen. Knowingly venting refrigerant can also bring criminal penalties.",
+   "distractorExplanations": {
+    "a": "The penalty is not a flat per-technician fine; it is assessed per day for each violation.",
+    "c": "Penalties are not priced per pound of refrigerant; the Clean Air Act cap applies per day per violation.",
+    "d": "There is no annual company cap of $75,000; each violation can draw the per-day maximum."
+   }
+  },
+  "epa-608-readiness-check-core-044": {
+   "options": {
+    "a": "No penalty since the release was accidental and under 2 pounds",
+    "b": "Written warning for first offense with mandatory retraining",
+    "c": "A civil penalty assessed per day of violation",
+    "d": "Suspension of EPA certification for 30 days"
+   },
+   "explanation": "Releasing refrigerant beyond de minimis amounts can bring Clean Air Act civil penalties assessed per day of violation, with maximums EPA adjusts each year for inflation. There is no 2-pound exemption, and HFCs such as R-410A are covered by the venting prohibition.",
+   "distractorExplanations": {
+    "a": "Releases are not exempt by size; there is no 2-pound threshold under the Section 608 venting prohibition.",
+    "b": "Section 608 has no written-warning-plus-retraining tier; enforcement is through civil penalties.",
+    "d": "The rule sets no fixed 30-day certification suspension; the enforcement tool is a per-day civil penalty."
+   }
+  },
+  "epa-608-readiness-check-type-1-001": {
+   "prompt": "When recovering refrigerant from a small appliance with a non-functioning compressor, what vacuum level meets the EPA recovery requirement?",
+   "options": {
+    "a": "0 psig (atmospheric pressure)",
+    "b": "4 inches of mercury vacuum",
+    "c": "10 inches of mercury vacuum",
+    "d": "15 inches of mercury vacuum"
+   },
+   "explanation": "Small appliances must have 80% of the charge recovered when the compressor does not run (90% when it runs, with equipment made after November 15, 1993) or be evacuated to 4 inches of Hg vacuum. The 4-inch level is the same whether or not the compressor works.",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds, not small appliances, which need 4 inches or 80%/90%.",
+    "c": "10 inches is a high-pressure appliance level from the evacuation table, not a small-appliance level for any compressor state.",
+    "d": "15 inches of mercury vacuum exceeds EPA requirements and is not a standard recovery level for any small appliance category."
+   }
+  },
+  "epa-608-readiness-check-type-1-006": {
+   "options": {
+    "a": "4 inches of mercury vacuum",
+    "b": "10 inches of mercury vacuum",
+    "c": "15 inches of mercury vacuum",
+    "d": "25 inches of mercury vacuum"
+   },
+   "correctOptionId": "a",
+   "explanation": "Small appliances meet the rule with 90% of the charge recovered when the compressor runs (80% when it does not) or with 4 inches of Hg vacuum. The 4-inch level is the same whether or not the compressor works.",
+   "distractorExplanations": {
+    "b": "10 inches is a high-pressure appliance level from the evacuation table, not the small-appliance requirement.",
+    "c": "15 inches applies to high-pressure appliances of 200 pounds or more, not small appliances.",
+    "d": "25 inches Hg vacuum is the low-pressure appliance level for pre-1993 recovery equipment, not a small-appliance level."
+   }
+  },
+  "epa-608-readiness-check-type-1-007": {
+   "options": {
+    "a": "System-dependent recovery using the compressor",
+    "b": "Self-contained recovery equipment with its own compressor",
+    "c": "Venting to atmosphere since it's a small amount",
+    "d": "Passive recovery by opening the valves, without heating or tapping"
+   },
+   "explanation": "With the compressor seized, the appliance cannot pump its own charge out. Self-contained recovery equipment is the reliable choice; passive (system-dependent) recovery is allowed only if the technician heats and taps the compressor to free refrigerant trapped in the oil.",
+   "distractorExplanations": {
+    "a": "System-dependent recovery requires a functioning compressor to move refrigerant, which is not available when the compressor has seized.",
+    "c": "Venting refrigerant to atmosphere is illegal under EPA regulations regardless of the amount or appliance size.",
+    "d": "Passive recovery on a dead compressor needs heating and tapping to release refrigerant from the oil; opening valves alone falls short."
+   }
+  },
+  "epa-608-readiness-check-type-1-009": {
+   "prompt": "A technician recovered the refrigerant from a small appliance, replaced a leaking evaporator, and evacuated the system. The appliance will stay with the same owner. What may be charged back into it?",
+   "options": {
+    "a": "The recovered charge or new refrigerant, since the owner has not changed",
+    "b": "New refrigerant only, because recovered refrigerant must be reclaimed first",
+    "c": "Recovered refrigerant, once the technician has reclaimed it to AHRI 700 purity",
+    "d": "Any blend on hand, since small appliances are exempt from reuse rules"
+   },
+   "correctOptionId": "a",
+   "explanation": "Recovered refrigerant may go back into the same appliance, or another appliance owned by the same person, without being reclaimed. Reclamation to AHRI 700 by an EPA-certified reclaimer is required only when the refrigerant changes ownership.",
+   "distractorExplanations": {
+    "b": "Reclamation is required when refrigerant changes ownership, not when it returns to the same owner's appliance.",
+    "c": "Technicians cannot reclaim; AHRI 700 reclamation is done by EPA-certified reclaimers and is not needed for the same owner.",
+    "d": "Small appliances are not exempt, and charging a different blend would contaminate the system and mislabel its refrigerant."
+   }
+  },
+  "epa-608-readiness-check-type-1-013": {
+   "explanation": "Refrigerant may not be vented from a small appliance of any charge size. Before the circuit is opened, the charge must be recovered with certified equipment to the small-appliance level: 80% or 90% of the charge (compressor off or on) or 4 inches of Hg vacuum.",
+   "distractorExplanations": {
+    "c": "Small appliances must reach 80% or 90% recovered or 4 inches Hg vacuum before opening; 50% is not a level in the rule."
+   }
+  },
+  "epa-608-readiness-check-type-1-017": {
+   "explanation": "Adding refrigerant to an operating, leak-free small appliance does not open the circuit, so no recovery is required first. Recovery levels apply when the system is opened for repair or sent for disposal.",
+   "distractorExplanations": {
+    "b": "There is no 'make room' recovery step; adding refrigerant without opening the circuit needs no recovery.",
+    "d": "The 5-pound figure defines a small appliance; it does not create a recovery duty for adding charge to a sealed system."
+   }
+  },
+  "epa-608-readiness-check-type-1-020": {
+   "prompt": "A technician recovered the refrigerant from a small appliance holding 3 ounces of R-22 before the owner scrapped it. Under the Section 608 safe disposal rule, who is responsible for making sure the refrigerant was removed before the appliance is recycled?",
+   "options": {
+    "a": "The appliance manufacturer, under its take-back and product stewardship duty",
+    "b": "The final processor in the disposal chain, such as the scrap recycler",
+    "c": "The EPA regional office that logs appliance disposals",
+    "d": "The last owner, who must file a disposal notice with EPA"
+   },
+   "explanation": "The safe disposal rule puts responsibility on the final processor, the last person in the disposal chain such as a scrap metal recycler or landfill. That processor must recover the refrigerant itself or verify, usually with a signed statement, that it was already recovered.",
+   "distractorExplanations": {
+    "a": "Section 608 places no take-back or recovery duty on the manufacturer for appliances being scrapped.",
+    "c": "EPA does not log individual appliance disposals; the duty sits with the final processor in the chain.",
+    "d": "Owners file no disposal notice with EPA; the final processor must recover the refrigerant or verify its removal."
+   }
+  },
+  "epa-608-readiness-check-type-1-021": {
+   "options": {
+    "a": "0 psig (atmospheric pressure)",
+    "b": "4 inches of mercury vacuum",
+    "c": "10 inches of mercury vacuum",
+    "d": "15 inches of mercury vacuum"
+   },
+   "explanation": "Small appliances must be pulled to 4 inches of Hg vacuum, or have 90% of the charge recovered with the compressor running (80% if it does not run), using equipment made after November 15, 1993.",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds, not small appliances, which need 4 inches or a percentage.",
+    "c": "10 inches is a high-pressure appliance level from the evacuation table, not the small-appliance requirement.",
+    "d": "15 inches applies to high-pressure appliances of 200 pounds or more, not small appliances."
+   }
+  },
+  "epa-608-readiness-check-type-1-023": {
+   "prompt": "A technician is using system-dependent recovery on a small appliance refrigerator with a functioning compressor. After 15 minutes of operation, the low-side pressure reads 8 inches of mercury vacuum and has not changed for 5 minutes. What should the technician conclude?",
+   "options": {
+    "a": "Continue recovery for another 15 minutes to reach deeper vacuum",
+    "b": "Recovery is complete; 8 inches is past the 4-inch level",
+    "c": "Switch to passive recovery methods to achieve better results",
+    "d": "The compressor is malfunctioning and cannot achieve proper recovery"
+   },
+   "explanation": "For small appliances the vacuum option is 4 inches of Hg vacuum. A reading of 8 inches of vacuum is deeper than that, so recovery meets the requirement; the stable reading simply confirms the appliance is not still boiling off refrigerant.",
+   "distractorExplanations": {
+    "a": "Continuing recovery when pressure has stabilized will not improve results and wastes time since equilibrium has been reached.",
+    "c": "Passive recovery would be less effective than system-dependent recovery when the compressor is functional and has already achieved adequate vacuum levels.",
+    "d": "The compressor is functioning properly as evidenced by achieving 8 inches of mercury vacuum, which exceeds EPA requirements for small appliances."
+   }
+  },
+  "epa-608-readiness-check-type-1-024": {
+   "prompt": "A technician is servicing a residential water cooler that contains 4 ounces of R-134a. The compressor will not run, and the repair requires opening the circuit. Using recovery equipment made after November 15, 1993, what must recovery achieve?",
+   "options": {
+    "a": "70% of the charge or 2 inches Hg vacuum",
+    "b": "80% of the charge or 4 inches Hg vacuum",
+    "c": "90% of the charge or 10 inches Hg vacuum",
+    "d": "95% of the charge or 15 inches Hg vacuum"
+   },
+   "explanation": "With the compressor not running, a small appliance must have 80% of its charge recovered or be evacuated to 4 inches of Hg vacuum. The 90% figure applies when the compressor runs, and 10 or 15 inches are high-pressure appliance levels.",
+   "distractorExplanations": {
+    "a": "70% and 2 inches are not Section 608 figures; a non-running small appliance needs 80% or 4 inches Hg vacuum.",
+    "c": "90% applies when the compressor runs, and 10 inches is a high-pressure appliance level, not a small-appliance one.",
+    "d": "95% is not in the rule, and 15 inches is the level for high-pressure appliances of 200 pounds or more."
+   }
+  },
+  "epa-608-readiness-check-type-1-025": {
+   "prompt": "A vending machine refrigeration unit is a small appliance holding 9 ounces of R-404A. Its evaporator coil is leaking and must be replaced, but the compressor still runs. Using recovery equipment made after November 15, 1993, what must recovery achieve?",
+   "options": {
+    "a": "80% of the charge, the share set for every small appliance",
+    "b": "90% of the charge or a 4-inch Hg vacuum",
+    "c": "10 inches Hg vacuum, since the compressor still runs",
+    "d": "No recovery, since 9 ounces is below the de minimis level"
+   },
+   "explanation": "With equipment made after November 15, 1993 and a running compressor, a small appliance must have 90% of its charge recovered or be evacuated to 4 inches of Hg vacuum before it is opened. The 80% figure applies when the compressor does not run.",
+   "distractorExplanations": {
+    "a": "80% applies when the compressor does not run; with a running compressor the share is 90%, or a 4-inch vacuum.",
+    "c": "10 inches is a high-pressure appliance level from the evacuation table, not the small-appliance requirement.",
+    "d": "De minimis covers unavoidable releases during proper recovery, not skipping recovery on a small charge."
+   }
+  },
+  "epa-608-readiness-check-type-1-026": {
+   "prompt": "A technician is servicing a compact freezer, a small appliance holding 6.5 ounces of R-134a. The compressor operates normally, and refrigerant must be removed for the repair. Which statement about recovery equipment is correct for this job?",
+   "options": {
+    "a": "Self-contained equipment is required because the charge exceeds 5 ounces of refrigerant",
+    "b": "System-dependent recovery can be used since the compressor is functional",
+    "c": "Recovery equipment must be certified to ARI Standard 740",
+    "d": "Passive recovery is acceptable only if the charge is under 2 ounces"
+   },
+   "correctOptionId": "b",
+   "explanation": "System-dependent (passive) recovery may be used on small appliances and other appliances holding 15 pounds or less, and a running compressor helps it reach 90% or 4 inches of Hg vacuum. Self-contained equipment is also allowed but is not required.",
+   "distractorExplanations": {
+    "a": "There is no 5-ounce cutoff; system-dependent recovery is allowed on appliances holding 15 pounds or less.",
+    "c": "ARI 740 is the test standard for recovery equipment used on larger appliances; small-appliance devices are tested under EPA's separate Appendix C method.",
+    "d": "There is no 2-ounce rule; passive recovery is allowed on small appliances if it reaches the required level."
+   }
+  },
+  "epa-608-readiness-check-type-1-029": {
+   "options": {
+    "a": "Recovery is not required since the appliance contains less than 5 pounds of refrigerant",
+    "b": "Refrigerant must be recovered to 4 inches of mercury vacuum",
+    "c": "Refrigerant must be recovered to 10 inches of mercury vacuum",
+    "d": "Only leak repair is required; recovery is optional for small appliances"
+   },
+   "explanation": "A seized compressor does not change the small-appliance rule: the technician must recover 80% of the charge or pull the appliance to 4 inches of Hg vacuum, using self-contained equipment or passive recovery with the compressor heated and tapped.",
+   "distractorExplanations": {
+    "a": "Recovery is required for all appliances regardless of refrigerant charge amount when servicing or disposing of the unit.",
+    "c": "10 inches is a high-pressure appliance level from the evacuation table, not the small-appliance requirement.",
+    "d": "Recovery is mandatory before opening the refrigerant circuit for any repair work on small appliances."
+   }
+  },
+  "epa-608-readiness-check-type-1-030": {
+   "options": {
+    "a": "Continue recovery until the reading reaches 4 inches absolute",
+    "b": "Keep recovering until the gauge reaches 15 inches of mercury vacuum",
+    "c": "Switch to passive recovery methods to reach the final vacuum requirement",
+    "d": "Recovery is complete and the appliance can be opened for service"
+   },
+   "explanation": "The small-appliance vacuum option is 4 inches of Hg vacuum (or 90% recovered with a running compressor). A stable 12-inch vacuum is deeper than 4 inches, so recovery is complete and the appliance can be opened.",
+   "distractorExplanations": {
+    "a": "The standard is 4 inches of vacuum, not 4 inches absolute; 12 inches of vacuum already passes it.",
+    "b": "15 inches is a high-pressure appliance level for 200 pounds or more, not a small-appliance target.",
+    "c": "Switching methods is unnecessary because the 12-inch vacuum already meets the small-appliance level."
+   }
+  },
+  "epa-608-readiness-check-type-1-032": {
+   "explanation": "With a working compressor, system-dependent recovery is allowed on a small appliance, and the compressor helps move the remaining charge out even with leaks. Recovery must still reach 90% of the charge or 4 inches of Hg vacuum before the appliance is opened or scrapped."
+  },
+  "epa-608-readiness-check-type-1-036": {
+   "prompt": "A technician has just completed refrigerant recovery from a small appliance chest freezer using self-contained recovery equipment. The system contained 6 ounces of R-404A and the final reading is 8 inches of mercury vacuum. What does this reading mean for the EPA recovery requirement?",
+   "options": {
+    "a": "It meets the rule, since 8 inches is deeper than the 4-inch level",
+    "b": "It falls short, since small appliances must reach 10 inches of vacuum",
+    "c": "It falls short until 90% of the charge has also been weighed out",
+    "d": "It counts only once the recovery machine has shut itself off"
+   },
+   "explanation": "Small appliances meet the requirement with 4 inches of Hg vacuum or with 80%/90% of the charge recovered; either one is enough. An 8-inch vacuum is deeper than 4 inches, so the recovery is complete.",
+   "distractorExplanations": {
+    "b": "10 inches is a high-pressure appliance level; the small-appliance vacuum option is 4 inches.",
+    "c": "The percentage and the vacuum level are alternatives; meeting 4 inches of vacuum is enough without weighing.",
+    "d": "Machine shutoff is not part of the rule; the vacuum reading already shows the 4-inch level has been met."
+   }
+  },
+  "epa-608-readiness-check-type-1-037": {
+   "options": {
+    "a": "2 inches of mercury vacuum",
+    "b": "4 inches of mercury vacuum",
+    "c": "10 inches of mercury vacuum",
+    "d": "15 inches of mercury vacuum"
+   },
+   "correctOptionId": "b",
+   "explanation": "A seized compressor does not change the small-appliance level: recover 80% of the charge or reach 4 inches of Hg vacuum before disposal. Passive recovery is allowed if the compressor is heated and tapped; otherwise self-contained equipment is used.",
+   "distractorExplanations": {
+    "a": "2 inches is shallower than the 4-inch small-appliance level and would leave refrigerant in the unit.",
+    "c": "10 inches is a high-pressure appliance level from the evacuation table, not the small-appliance requirement.",
+    "d": "15 inches applies to high-pressure appliances of 200 pounds or more, not small appliances."
+   }
+  },
+  "epa-608-readiness-check-type-1-038": {
+   "options": {
+    "a": "Equipment certified to recover at least 80% of the refrigerant charge",
+    "b": "Self-contained recovery equipment or system-dependent equipment",
+    "c": "Equipment capable of achieving 15 inches of mercury vacuum",
+    "d": "Equipment capable of achieving 29 inches of mercury vacuum"
+   },
+   "distractorExplanations": {
+    "a": "80% is the small-appliance figure when the compressor is not running; with it running, equipment must reach 90% or 4 inches.",
+    "c": "15 inches is a high-pressure appliance level for 200 pounds or more, not a small-appliance specification.",
+    "d": "29 inches is close to a full vacuum and is not a Section 608 recovery level for small appliances."
+   }
+  },
+  "epa-608-readiness-check-type-1-039": {
+   "prompt": "A technician finds a small appliance mini-refrigerator containing 7.5 ounces of R-404A with a leaking capillary tube that cannot be repaired. The compressor does not run. If the vacuum option is not used, what share of the charge must recovery equipment made after November 15, 1993 remove before disposal?",
+   "options": {
+    "a": "70% of the refrigerant charge",
+    "b": "80% of the refrigerant charge",
+    "c": "90% of the refrigerant charge",
+    "d": "95% of the refrigerant charge"
+   },
+   "explanation": "With the compressor not running, recovery equipment made after November 15, 1993 must remove 80% of a small appliance's charge, or the appliance must be pulled to 4 inches of Hg vacuum. The 90% figure applies when the compressor runs.",
+   "distractorExplanations": {
+    "a": "70% is not a Section 608 figure; a non-running small appliance needs 80% recovered or 4 inches Hg vacuum.",
+    "c": "90% is the share for a running compressor; with the compressor dead, the figure is 80%.",
+    "d": "95% is not a figure in the small-appliance rule; a dead compressor needs 80% or a 4-inch vacuum."
+   }
+  },
+  "epa-608-readiness-check-type-1-040": {
+   "options": {
+    "a": "Wait 5 minutes and verify the vacuum level holds before opening the system",
+    "b": "Immediately proceed with repairs since the vacuum requirement is met",
+    "c": "Purge the system with nitrogen to remove any remaining refrigerant",
+    "d": "Weigh the recovered refrigerant to confirm 80% removal"
+   },
+   "correctOptionId": "b",
+   "explanation": "Section 608 sets no waiting period for small appliances. Once the required level is reached (4 inches of Hg vacuum, or 90% of the charge with a running compressor), the technician may open the system for the repair.",
+   "distractorExplanations": {
+    "a": "EPA sets no 5-minute hold for small appliances; once 4 inches Hg vacuum or 90% is reached, the circuit may be opened.",
+    "c": "Nitrogen purging is not a small-appliance recovery requirement and would add non-condensables to the system.",
+    "d": "Weighing is one way to show 90% with a running compressor, but the vacuum already meets the rule, and 80% is the off-compressor figure."
+   }
+  },
+  "epa-608-readiness-check-type-1-041": {
+   "explanation": "Small-appliance recovery equipment made after November 15, 1993 must be certified to recover 90% of the charge with the compressor running (80% when it does not) or to reach 4 inches of Hg vacuum. The same rule applies to R-410A as to other refrigerants.",
+   "distractorExplanations": {
+    "a": "10 inches is a high-pressure appliance level from the evacuation table, not the small-appliance certification level.",
+    "b": "15 inches applies to high-pressure appliances of 200 pounds or more, not small appliances."
+   }
+  },
+  "epa-608-readiness-check-type-1-042": {
+   "prompt": "A technician services a small appliance commercial ice maker holding 6.5 ounces of R-134a. The owner says R-134a does not harm the ozone layer, so the charge can simply be released before the repair. What is correct under Section 608?",
+   "options": {
+    "a": "R-134a may be vented, since its ozone depletion potential is zero",
+    "b": "It must be recovered; the venting ban covers HFC substitutes",
+    "c": "R-134a may be vented if the charge is under 1 pound",
+    "d": "R-134a must be recovered on units built after 2018, not older ones"
+   },
+   "explanation": "The Section 608 venting prohibition covers substitute refrigerants such as HFCs, so R-134a must be recovered even though its ODP is zero. Small appliances get no charge-size exemption; the charge is recovered to 90% (running compressor), 80% or 4 inches of Hg vacuum.",
+   "distractorExplanations": {
+    "a": "Zero ODP does not permit venting; HFC substitutes are covered by the Section 608 venting prohibition.",
+    "c": "There is no 1-pound venting allowance; small appliances of any charge must be recovered.",
+    "d": "The venting ban applies to HFCs in equipment of any age; it is not tied to the unit's manufacture date."
+   }
+  },
+  "epa-608-readiness-check-type-1-043": {
+   "prompt": "A technician has completed refrigerant recovery from a small appliance countertop ice machine using passive recovery methods. The system contained 2.8 ounces of R-404A and reached 12 inches of mercury vacuum. The customer plans to store the unit in their warehouse for potential future use. What must the technician do before leaving the job site?",
+   "options": {
+    "a": "Nothing further, since 12 inches is deeper than the 4-inch level",
+    "b": "Wait an additional 5 minutes and verify the vacuum level remains stable",
+    "c": "Purge the system with nitrogen and cap the open fittings",
+    "d": "Install locking refrigerant caps on the service ports"
+   },
+   "correctOptionId": "a",
+   "explanation": "The small-appliance vacuum level is 4 inches of Hg vacuum. A 12-inch vacuum already passes it, so recovery is complete; Section 608 sets no extra waiting period, purge or capping step for a unit going into storage.",
+   "distractorExplanations": {
+    "b": "EPA sets no 5-minute stability hold for small appliances; the 12-inch reading already meets the 4-inch level.",
+    "c": "Nitrogen purging and capping are not Section 608 recovery requirements for a small appliance going into storage.",
+    "d": "Locking caps are a building-code rule for outdoor units, not an EPA step after small-appliance recovery."
+   }
+  },
+  "epa-608-readiness-check-type-1-044": {
+   "options": {
+    "a": "System-dependent recovery equipment only",
+    "b": "Self-contained recovery equipment certified to recover 95% of refrigerant",
+    "c": "Either system-dependent or self-contained recovery equipment",
+    "d": "Push-pull liquid recovery using a second recovery cylinder"
+   },
+   "explanation": "With a running compressor, a small appliance may be recovered with either system-dependent equipment (allowed on appliances of 15 pounds or less) or self-contained equipment, as long as recovery reaches 90% of the charge or 4 inches of Hg vacuum.",
+   "distractorExplanations": {
+    "a": "System-dependent equipment is allowed but not required exclusively; self-contained equipment is also permitted for this scenario.",
+    "b": "95% is not a Section 608 figure, and self-contained equipment is allowed here but not required.",
+    "d": "Push-pull needs a large liquid charge with liquid access; a 12-ounce dehumidifier has neither."
+   }
+  },
+  "epa-608-readiness-check-type-1-045": {
+   "prompt": "A technician discovers a small appliance compact refrigerator containing 2.5 ounces of R-22 refrigerant with a completely failed compressor that will not start. The customer wants to dispose of the unit immediately due to space constraints. What is the minimum vacuum level required before the unit can be disposed of?",
+   "options": {
+    "a": "4 inches of mercury vacuum",
+    "b": "10 inches of mercury vacuum",
+    "c": "15 inches of mercury vacuum",
+    "d": "25 inches of mercury vacuum"
+   },
+   "explanation": "A small appliance being scrapped must have 80% of its charge recovered (compressor not running) or be evacuated to 4 inches of Hg vacuum. The charge size does not change the level.",
+   "distractorExplanations": {
+    "b": "10 inches is a high-pressure appliance level from the evacuation table, not the small-appliance requirement.",
+    "c": "15 inches applies to high-pressure appliances of 200 pounds or more, not small appliances.",
+    "d": "25 inches Hg vacuum is the low-pressure level for pre-1993 recovery equipment, not a small-appliance level."
+   }
+  },
+  "epa-608-readiness-check-type-1-046": {
+   "prompt": "A technician recovers refrigerant from a small appliance wine storage unit holding 8 ounces of R-404A. The compressor runs normally, and the recovery machine was made in 2020. The gauge only reaches 1 inch of mercury vacuum, but the cylinder scale shows 7.4 ounces recovered. What is the status of the recovery?",
+   "options": {
+    "a": "Incomplete, because the gauge must also reach 4 inches of mercury vacuum",
+    "b": "Incomplete, because about 92% falls short of a 95% small-appliance level",
+    "c": "Complete, because about 92% of the charge has been recovered",
+    "d": "Incomplete, because a running compressor requires 10 inches of vacuum"
+   },
+   "correctOptionId": "c",
+   "explanation": "7.4 of 8 ounces is about 92% of the charge. With a running compressor and equipment made after November 15, 1993, recovering 90% meets the small-appliance rule; the 4-inch vacuum is an alternative, not an extra requirement.",
+   "distractorExplanations": {
+    "a": "The percentage and the 4-inch vacuum are alternatives; reaching 90% recovered is enough on its own.",
+    "b": "95% is not in the small-appliance rule; with a running compressor the figure is 90%.",
+    "d": "10 inches is a high-pressure appliance level, not a small-appliance requirement for a running compressor."
+   }
+  },
+  "epa-608-readiness-check-type-2-001": {
+   "distractorExplanations": {
+    "b": "15% was the comfort cooling trigger before the 2016 rule took effect; the current comfort cooling rate is 10%.",
+    "d": "30% is the industrial process refrigeration trigger, not the comfort cooling rate."
+   }
+  },
+  "epa-608-readiness-check-type-2-010": {
+   "distractorExplanations": {
+    "b": "15% was the old comfort cooling trigger; today comfort cooling uses 10% and commercial refrigeration 20%.",
+    "d": "35% was the commercial and industrial trigger before the 2016 rule; industrial process refrigeration now uses 30%."
+   }
+  },
+  "epa-608-readiness-check-type-2-034": {
+   "distractorExplanations": {
+    "b": "5% is not a Section 608 trigger; comfort cooling uses 10%, commercial refrigeration 20% and industrial process 30%."
+   }
+  },
+  "epa-608-readiness-check-type-2-005": {
+   "prompt": "A technician will open an R-134a appliance holding 100 pounds for a major repair, using a recovery machine made in 1991. What evacuation level applies?",
+   "options": {
+    "a": "0 psig (atmospheric pressure)",
+    "b": "4 inches of mercury vacuum",
+    "c": "10 inches of mercury vacuum",
+    "d": "15 inches of mercury vacuum"
+   },
+   "correctOptionId": "b",
+   "explanation": "The evacuation table has two columns. For other high-pressure appliances such as R-134a units, recovery equipment made before November 15, 1993 must reach 4 inches of Hg vacuum; newer equipment must reach 10 inches (under 200 pounds) or 15 inches (200 pounds or more).",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds, not R-134a.",
+    "c": "10 inches is the level for equipment made after November 15, 1993; a 1991 machine uses the 4-inch column.",
+    "d": "15 inches applies to newer equipment on appliances of 200 pounds or more, not a 1991 machine on 100 pounds."
+   }
+  },
+  "epa-608-readiness-check-type-2-008": {
+   "prompt": "A technician will replace the leaking evaporator coil on an R-410A system holding 30 pounds, using recovery equipment made in 2020. What must be done before the refrigerant circuit is opened?",
+   "explanation": "R-410A is an 'other high-pressure' refrigerant. For a unit under 200 pounds, recovery equipment made after November 15, 1993 must reach 10 inches of Hg vacuum before a major repair such as an evaporator coil replacement.",
+   "distractorExplanations": {
+    "b": "15 inches applies to other high-pressure appliances holding 200 pounds or more; this 30-pound unit needs 10 inches."
+   }
+  },
+  "epa-608-readiness-check-type-2-011": {
+   "options": {
+    "a": "Recovery can only be performed when outdoor temperature exceeds 70°F",
+    "b": "The process relies on pressure differential and may not achieve complete removal",
+    "c": "Passive recovery is permitted on systems holding up to 50 pounds of refrigerant",
+    "d": "The recovery cylinder must be heated to at least 100°F throughout the process"
+   },
+   "distractorExplanations": {
+    "a": "Outdoor temperature requirements are not specified for passive recovery methods, though temperature affects pressure differentials.",
+    "c": "System-dependent (passive) recovery is limited to appliances holding 15 pounds or less, not 50 pounds.",
+    "d": "Heating the recovery cylinder is not a requirement for passive recovery and could be dangerous by increasing cylinder pressure."
+   }
+  },
+  "epa-608-readiness-check-type-2-012": {
+   "prompt": "Before opening an R-22 appliance holding 250 pounds for a major repair with recovery equipment made in 2015, what must a technician do regarding refrigerant recovery?",
+   "options": {
+    "a": "Recover refrigerant only if the repair will take more than one hour",
+    "b": "Recover refrigerant to atmospheric pressure (0 psig)",
+    "c": "Recover refrigerant to 10 inches of mercury vacuum or lower",
+    "d": "Recover refrigerant to 15 inches of mercury vacuum or lower"
+   },
+   "explanation": "R-22 appliances holding 200 pounds or more must be evacuated to 10 inches of Hg vacuum with recovery equipment made after November 15, 1993 (4 inches with older equipment). Smaller R-22 units need only 0 psig.",
+   "distractorExplanations": {
+    "a": "Recovery before opening is required for any repair length; Section 608 has no time-based exemption.",
+    "b": "0 psig is the level for R-22 appliances under 200 pounds; at 250 pounds the R-22 level is 10 inches.",
+    "d": "15 inches is for other high-pressure refrigerants at 200 pounds or more; R-22 at that size needs 10 inches."
+   }
+  },
+  "epa-608-readiness-check-type-2-014": {
+   "prompt": "A technician uses recovery equipment made in 2020 on an R-404A refrigeration system holding 300 pounds. What vacuum level must be reached before the system is opened for a major repair?",
+   "options": {
+    "a": "0 psig (atmospheric pressure)",
+    "b": "10 inches of mercury vacuum",
+    "c": "15 inches of mercury vacuum",
+    "d": "29 inches of mercury vacuum"
+   },
+   "correctOptionId": "c",
+   "explanation": "R-404A is an 'other high-pressure' refrigerant. At 200 pounds or more, recovery equipment made after November 15, 1993 must reach 15 inches of Hg vacuum before a major repair; units under 200 pounds need 10 inches.",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds, not a 300-pound R-404A system.",
+    "b": "10 inches applies to other high-pressure appliances under 200 pounds; at 300 pounds the level is 15 inches.",
+    "d": "29 inches is close to a full vacuum and is not a Section 608 recovery level for high-pressure appliances."
+   }
+  },
+  "epa-608-readiness-check-type-2-015": {
+   "prompt": "A technician is servicing a Type II appliance and discovers that the condenser fan motor has failed, causing high head pressure. The system contains 25 pounds of R-22, and refrigerant must be removed for the repair. What is the most appropriate recovery method for this situation?",
+   "explanation": "System-dependent recovery, including using the appliance's own compressor, may be used only on appliances holding 15 pounds or less. A 25-pound R-22 unit needs self-contained (active) recovery equipment, which then pulls the system to the required level (0 psig for R-22 under 200 pounds).",
+   "distractorExplanations": {
+    "a": "System-dependent (passive) recovery is limited to appliances with 15 pounds or less; this unit holds 25 pounds.",
+    "d": "Using the system's own compressor is system-dependent recovery, which is not allowed on appliances over 15 pounds."
+   }
+  },
+  "epa-608-readiness-check-type-2-016": {
+   "prompt": "A technician will replace the condenser coil on a packaged rooftop unit containing 12 pounds of R-410A, using a recovery machine made in 2022. What recovery level is required before opening the system?",
+   "options": {
+    "a": "0 psig (atmospheric pressure)",
+    "b": "4 inches of mercury vacuum",
+    "c": "10 inches of mercury vacuum",
+    "d": "15 inches of mercury vacuum"
+   },
+   "explanation": "R-410A falls in the 'other high-pressure' row. Under 200 pounds, recovery equipment made after November 15, 1993 must pull 10 inches of Hg vacuum before a major repair such as a condenser coil replacement.",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds; R-410A falls in the other high-pressure row.",
+    "b": "4 inches is the level for recovery equipment made before November 15, 1993, not a 2022 machine.",
+    "d": "15 inches applies to other high-pressure appliances of 200 pounds or more, not a 12-pound unit."
+   }
+  },
+  "epa-608-readiness-check-type-2-018": {
+   "prompt": "An owner chooses to retrofit or retire a leaking commercial refrigeration appliance instead of repairing it. How long does the owner have to complete the retrofit or retirement plan?",
+   "explanation": "Once the trigger rate is exceeded, the owner must repair within 30 days or create a retrofit or retirement plan within 30 days. That plan must then be completed within one year; longer timelines are limited to special industrial process cases.",
+   "distractorExplanations": {
+    "a": "30 days is the deadline to repair or to create the plan, not the deadline to complete it.",
+    "b": "90 days is not a Section 608 deadline for completing a retrofit or retirement plan.",
+    "d": "Two years exceeds the one-year window for commercial refrigeration; longer timelines are limited to special industrial process cases."
+   }
+  },
+  "epa-608-readiness-check-type-2-019": {
+   "prompt": "When recovering refrigerant from an R-410A appliance holding 40 pounds for disposal, with recovery equipment made after November 15, 1993, what requirement must be met?",
+   "explanation": "Disposal uses the evacuation table. An other high-pressure appliance under 200 pounds, such as this R-410A unit, must reach 10 inches of Hg vacuum with recovery equipment made after November 15, 1993; percentage targets apply only to small appliances."
+  },
+  "epa-608-readiness-check-type-2-021": {
+   "options": {
+    "a": "Recover to 0 psig, the level for R-22 units under 200 pounds",
+    "b": "Recover refrigerant to 10 inches of mercury vacuum",
+    "c": "Recover refrigerant to 15 inches of mercury vacuum",
+    "d": "No recovery required since R-22 can be vented during coil replacement"
+   },
+   "correctOptionId": "a",
+   "explanation": "R-22 appliances holding less than 200 pounds must be evacuated to 0 psig before they are opened, whatever the age of the recovery equipment. Replacing the evaporator coil on this 25-pound unit is a major repair, but the R-22 level is still 0 psig.",
+   "distractorExplanations": {
+    "b": "10 inches applies to R-22 appliances of 200 pounds or more, not a 25-pound unit.",
+    "c": "15 inches applies to other high-pressure refrigerants at 200 pounds or more, not R-22.",
+    "d": "Venting R-22 during a coil replacement is prohibited; the charge must be recovered to 0 psig first."
+   }
+  },
+  "epa-608-readiness-check-type-2-022": {
+   "prompt": "A rooftop comfort cooling unit holds 120 pounds of R-22. The leak rate calculation shows it is losing 9% of its charge per year. What action is required under Section 608?",
+   "options": {
+    "a": "No repair is due; 9% is below the 10% comfort cooling trigger",
+    "b": "The leak must be repaired within 30 days",
+    "c": "The system must be retrofitted to use a different refrigerant",
+    "d": "A written leak repair plan must be developed and filed with EPA"
+   },
+   "correctOptionId": "a",
+   "explanation": "Comfort cooling appliances holding 50 pounds or more of an ODS refrigerant must be repaired within 30 days once the annual leak rate exceeds 10%. At 9%, no repair deadline is triggered, though service records of refrigerant added must still be kept.",
+   "distractorExplanations": {
+    "b": "The 30-day repair deadline starts only when the comfort cooling leak rate exceeds 10%; 9% has not reached it.",
+    "c": "Retrofitting is an alternative once the trigger is exceeded, and this system is below the 10% rate.",
+    "d": "EPA has no leak repair plan filing for a system below the trigger rate; 9% has not reached 10%."
+   }
+  },
+  "epa-608-readiness-check-type-2-025": {
+   "explanation": "The annual leak rate is (4 pounds ÷ 22 pounds) × 100% = 18.2%, which rounds to 18%. Section 608 repair triggers apply to ODS appliances holding 50 pounds or more, so this 22-pound R-410A unit has no federal repair deadline.",
+   "distractorExplanations": {
+    "a": "15% understates the rate; 4 ÷ 22 works out to about 18%."
+   }
+  },
+  "epa-608-readiness-check-type-2-027": {
+   "prompt": "A rooftop comfort cooling unit holding 90 pounds of R-22 has a 25% annual leak rate from a liquid line service valve. The owner wants to keep it running while parts take two weeks to arrive. Is that allowed under Section 608?",
+   "options": {
+    "a": "Yes, as long as the leak is repaired within 30 days of discovery",
+    "b": "No, a system over the trigger rate must be shut down at once",
+    "c": "Yes, if the owner files a retrofit plan with EPA within 90 days",
+    "d": "No, an R-22 system over the trigger may not be recharged at all"
+   },
+   "correctOptionId": "a",
+   "explanation": "At 25%, the unit exceeds the 10% comfort cooling trigger, so the leak must be repaired within 30 days (or a retrofit or retirement plan created within 30 days). Section 608 does not require shutdown, so the system can keep running while parts arrive within that window.",
+   "distractorExplanations": {
+    "b": "Section 608 does not require immediate shutdown; the owner has 30 days to repair once the trigger is exceeded.",
+    "c": "A retrofit or retirement plan must be created within 30 days, not 90, and it replaces repair rather than delaying it.",
+    "d": "Topping off during the 30-day repair window is allowed; the rule sets a repair deadline, not a charging ban."
+   }
+  },
+  "epa-608-readiness-check-type-2-028": {
+   "explanation": "Passive recovery depends on the pressure difference between the system and the cylinder, so it stalls well above the required level. Self-contained (active) equipment is needed to reach the level for the appliance, such as 0 psig for small R-22 units or 10 inches of Hg vacuum for other high-pressure units under 200 pounds."
+  },
+  "epa-608-readiness-check-type-2-030": {
+   "prompt": "A commercial refrigeration system containing 85 pounds of R-22 has an annual leak rate of 24%. Under Section 608, what is the maximum time allowed to repair this leak once the rate is confirmed?",
+   "explanation": "Commercial refrigeration appliances holding 50 pounds or more of an ODS refrigerant must be repaired within 30 days once the annual leak rate exceeds 20%. At 24%, this R-22 system is over the trigger.",
+   "distractorExplanations": {
+    "c": "60 days is not a Section 608 repair deadline; the standard deadline is 30 days (industrial process systems can get extensions in limited cases)."
+   }
+  },
+  "epa-608-readiness-check-type-2-031": {
+   "prompt": "An R-22 appliance holding 300 pounds is being scrapped. Its compressor still works, and the recovery machine was made in 2015. What level must recovery reach before the appliance is considered properly evacuated for disposal?",
+   "options": {
+    "a": "0 psig (atmospheric pressure)",
+    "b": "4 inches of mercury vacuum",
+    "c": "10 inches of mercury vacuum",
+    "d": "15 inches of mercury vacuum"
+   },
+   "explanation": "Disposal uses the same evacuation table as service. R-22 appliances holding 200 pounds or more must reach 10 inches of Hg vacuum with equipment made after November 15, 1993; whether the compressor works does not change the level.",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds, not a 300-pound unit.",
+    "b": "4 inches is the level for recovery equipment made before November 15, 1993, not a 2015 machine.",
+    "d": "15 inches is for other high-pressure refrigerants at 200 pounds or more; R-22 at that size needs 10 inches."
+   }
+  },
+  "epa-608-readiness-check-type-2-032": {
+   "prompt": "A technician is preparing to service a Type II appliance containing 15 pounds of R-410A. The compressor is operational, but the condenser coil is corroded and must be replaced. The recovery machine was made in 2019. What recovery action is required?",
+   "explanation": "Replacing a condenser coil is a major repair. For an other high-pressure refrigerant such as R-410A under 200 pounds, recovery equipment made after November 15, 1993 must reach 10 inches of Hg vacuum first; a working compressor does not change that.",
+   "distractorExplanations": {
+    "a": "A working compressor does not exempt the job; opening the circuit for a coil swap requires recovery first.",
+    "b": "0 psig is the level for R-22 appliances under 200 pounds; R-410A needs 10 inches.",
+    "d": "15 inches applies to other high-pressure appliances of 200 pounds or more, not a 15-pound unit."
+   }
+  },
+  "epa-608-readiness-check-type-2-033": {
+   "explanation": "The leak rate is (6 pounds added ÷ 28 pounds full charge) × 100% = 21.4%. Because the unit holds less than 50 pounds, Section 608 sets no repair deadline, but the same rate on a 50-pound-plus comfort cooling unit would exceed the 10% trigger."
+  },
+  "epa-608-readiness-check-type-2-035": {
+   "explanation": "A slow rate at positive pressure means liquid is still boiling off, so heating the evaporator speeds recovery. For a 12-pound R-410A unit the target is 10 inches of Hg vacuum with recovery equipment made after November 15, 1993.",
+   "distractorExplanations": {
+    "a": "0 psig is not the target for R-410A under 200 pounds (it needs 10 inches), and the slow rate points to liquid that heat would boil off.",
+    "c": "15 psig is still positive pressure; this R-410A unit must reach 10 inches of Hg vacuum before recovery is complete."
+   }
+  },
+  "epa-608-readiness-check-type-2-036": {
+   "prompt": "A split-system heat pump used for comfort cooling holds 68 pounds of R-22. The system required 9 pounds of makeup refrigerant over the past 12 months. What action is required under Section 608?",
+   "explanation": "9 pounds added to a 68-pound charge is a 13.2% annual leak rate, above the 10% trigger for comfort cooling appliances holding 50 pounds or more of an ODS refrigerant. The leak must be repaired within 30 days (or a retrofit or retirement plan created).",
+   "distractorExplanations": {
+    "a": "13.2% is above the 10% comfort cooling trigger, so the leak must be repaired within 30 days."
+   }
+  },
+  "epa-608-readiness-check-type-2-038": {
+   "prompt": "A technician finds a leak in the evaporator coil of an R-22 comfort cooling appliance holding 60 pounds. The leak was first noticed 6 months ago, and the system has lost 8 pounds during that period. What does Section 608 require?",
+   "options": {
+    "a": "Repair the leak within 12 months, at the next scheduled shutdown",
+    "b": "Repair the leak within 30 days and maintain leak log records",
+    "c": "Continue operation since the leak rate is below the threshold",
+    "d": "Immediately shut down the system and recover all refrigerant"
+   },
+   "explanation": "8 pounds lost in 6 months annualizes to 16 pounds, a 26.7% leak rate for a 60-pound charge, above the 10% comfort cooling trigger. The owner must repair within 30 days and keep records of the leak rate calculation, repair and verification tests.",
+   "distractorExplanations": {
+    "a": "There is no 12-month repair window; once the comfort cooling trigger is exceeded, repair is due within 30 days.",
+    "c": "26.7% is well above the 10% comfort cooling trigger, so continuing without repair is not allowed.",
+    "d": "Immediate shutdown is not required; the system can continue operating during the 30-day repair period if properly monitored."
+   }
+  },
+  "epa-608-readiness-check-type-2-040": {
+   "prompt": "A technician needs to replace a compressor in a Type II appliance containing 16 pounds of R-134a, using recovery equipment made after November 15, 1993. The system has been operating normally with no leaks detected. Before beginning the compressor replacement, what recovery requirement must be satisfied?",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds; R-134a under 200 pounds needs 10 inches.",
+    "c": "15 inches applies to other high-pressure appliances of 200 pounds or more, not a 16-pound unit."
+   }
+  },
+  "epa-608-readiness-check-type-2-041": {
+   "prompt": "A technician is recovering refrigerant from a Type II appliance that has been out of service for 3 months. The system contains 30 pounds of R-22, the compressor is not operational, and a self-contained recovery machine is used. What level must be reached before the appliance can be disposed of?",
+   "correctOptionId": "a",
+   "explanation": "R-22 appliances holding less than 200 pounds must be evacuated to 0 psig, whatever the age of the recovery equipment. A dead compressor means self-contained equipment is used, because system-dependent recovery is limited to appliances of 15 pounds or less.",
+   "distractorExplanations": {
+    "b": "4 inches is the pre-1993 equipment level for other high-pressure appliances and R-22 units of 200 pounds or more.",
+    "c": "10 inches applies to R-22 appliances of 200 pounds or more, not a 30-pound unit.",
+    "d": "15 inches applies to other high-pressure refrigerants at 200 pounds or more, not R-22."
+   }
+  },
+  "epa-608-readiness-check-type-2-042": {
+   "prompt": "A rooftop comfort cooling unit holding 80 pounds of R-22 has developed a refrigerant leak. Over the past 12 months, the system has required 14 pounds of makeup refrigerant. The leak was confirmed through proper testing. What is the maximum time allowed to repair this leak under Section 608?",
+   "explanation": "14 pounds added to an 80-pound charge is a 17.5% annual leak rate, above the 10% comfort cooling trigger for ODS appliances holding 50 pounds or more. The leak must be repaired within 30 days.",
+   "distractorExplanations": {
+    "c": "60 days is not a Section 608 repair deadline; the standard deadline is 30 days (industrial process systems can get extensions in limited cases)."
+   }
+  },
+  "epa-608-readiness-check-type-2-043": {
+   "explanation": "The annual leak rate is 12 ÷ 35 × 100% = 34.3%. Section 608 repair deadlines apply to ODS appliances holding 50 pounds or more, so this 35-pound R-134a unit has no federal repair deadline, although the leak should still be fixed."
+  },
+  "epa-608-readiness-check-type-2-044": {
+   "prompt": "A technician wants to use system-dependent (passive) recovery on a Type II appliance. What is the largest charge on which Section 608 allows this method?",
+   "options": {
+    "a": "5 pounds of refrigerant",
+    "b": "15 pounds of refrigerant",
+    "c": "50 pounds of refrigerant",
+    "d": "200 pounds of refrigerant"
+   },
+   "correctOptionId": "b",
+   "explanation": "System-dependent recovery equipment, which relies on the appliance's own compressor or pressure, may be used only on appliances holding 15 pounds of refrigerant or less. Larger appliances need self-contained recovery equipment.",
+   "distractorExplanations": {
+    "a": "5 pounds is the small-appliance charge limit, not the system-dependent recovery limit.",
+    "c": "50 pounds is the leak-repair threshold for ODS appliances, not the passive recovery limit.",
+    "d": "200 pounds splits rows of the evacuation table; it is not the passive recovery limit."
+   }
+  },
+  "epa-608-readiness-check-type-2-046": {
+   "prompt": "A technician is working on a Type II commercial refrigeration system containing 45 pounds of R-404A. The evaporator coil must be replaced, the recovery machine was made in 2019, and the system is operating at normal pressures. What is the minimum recovery requirement before opening the system?",
+   "explanation": "Replacing an evaporator coil is a major repair. R-404A is an other high-pressure refrigerant, and under 200 pounds, recovery equipment made after November 15, 1993 must reach 10 inches of Hg vacuum before the system is opened.",
+   "distractorExplanations": {
+    "a": "0 psig is the level for R-22 appliances under 200 pounds, not a 45-pound R-404A system.",
+    "c": "15 inches applies to other high-pressure appliances of 200 pounds or more, not a 45-pound system."
+   }
+  },
+  "epa-608-readiness-check-type-2-047": {
+   "prompt": "A heat pump system was charged with 20 pounds of R-410A, and leak testing shows it loses 7 pounds a year. What is the calculated annual leak rate for this system?",
+   "options": {
+    "a": "25%",
+    "b": "30%",
+    "c": "35%",
+    "d": "40%"
+   },
+   "correctOptionId": "c",
+   "explanation": "The leak rate is (7 pounds lost ÷ 20 pounds full charge) × 100% = 35%. The same formula is used for appliances that do face repair deadlines, which under Section 608 means ODS appliances holding 50 pounds or more.",
+   "distractorExplanations": {
+    "a": "25% comes from using 5 pounds instead of 7 in the numerator of the leak rate formula.",
+    "b": "30% would come from using 6 pounds instead of 7; it is also the industrial process trigger, not this unit's rate.",
+    "d": "40% comes from using 8 pounds lost, or a denominator smaller than the 20-pound full charge."
+   }
+  },
+  "epa-608-readiness-check-type-2-048": {
+   "prompt": "During active recovery from an R-134a appliance holding 40 pounds, with equipment made after November 15, 1993, a technician observes that the recovery machine has been operating for 35 minutes and the system pressure has stabilized at 12 psig. The recovery rate has dropped to nearly zero, and no liquid refrigerant is visible in any sight glasses. What should the technician do next?"
+  },
+  "epa-608-readiness-check-type-2-050": {
+   "explanation": "Total refrigerant added is 4 + 6 + 5 = 15 pounds, and 15 ÷ 32 × 100% = 46.9%. Because the unit holds less than 50 pounds, Section 608 sets no repair deadline; on a 50-pound-plus comfort cooling unit this rate would far exceed the 10% trigger."
+  },
+  "epa-608-readiness-check-type-3-006": {
+   "prompt": "Why must water be circulated through (or drained from) a low-pressure chiller's tubes while refrigerant is being recovered?",
+   "options": {
+    "a": "To heat the refrigerant so the rupture disc does not open",
+    "b": "Removing vapor chills the tubes and can freeze and burst them",
+    "c": "To keep tube-side pressure above shell pressure for leak testing",
+    "d": "To dilute any oil the recovery machine pulls from the shell"
+   },
+   "correctOptionId": "b",
+   "explanation": "As vapor is pulled off, the remaining refrigerant boils at a lower pressure and temperature. In a deep vacuum that temperature can drop below 32°F, freezing standing water in the tubes and rupturing them, so water is kept circulating or the tubes are drained.",
+   "distractorExplanations": {
+    "a": "Recovery lowers shell pressure, so the rupture disc is not at risk; the water flow keeps the tubes from freezing.",
+    "c": "Leak testing is a separate step; during recovery the water flow prevents freezing as the refrigerant boils off.",
+    "d": "Tube water does not contact the oil; it flows inside the tubes and only exchanges heat with the shell."
+   }
+  },
+  "epa-608-readiness-check-type-3-008": {
+   "prompt": "A low-pressure appliance will be opened for a non-major repair that is not followed by evacuation to the environment. After recovery, what pressure must the appliance be brought to before it is opened?",
+   "correctOptionId": "a",
+   "explanation": "For a non-major repair not followed by evacuation to the environment, a low-pressure appliance is recovered and then pressurized to 0 psig before opening, so air is not drawn in. Heat such as controlled hot water is used, not nitrogen; major repairs need the full low-pressure evacuation level.",
+   "distractorExplanations": {
+    "b": "4 inches of vacuum would draw air into the opened machine; non-major repairs on low-pressure units use 0 psig.",
+    "c": "10 inches is a high-pressure appliance level, and a low-pressure unit opened under vacuum pulls air in.",
+    "d": "15 inches is a high-pressure appliance level for 200 pounds or more, not a low-pressure non-major repair level."
+   }
+  },
+  "epa-608-readiness-check-type-3-038": {
+   "prompt": "Before a non-major repair, a low-pressure chiller's pressure must be raised to 0 psig. Which method does Section 608 allow?",
+   "options": {
+    "a": "Add dry nitrogen until the gauge reads 0 psig, then open the machine",
+    "b": "Use controlled hot water or heater blankets, not nitrogen",
+    "c": "Run the purge unit until shell pressure rises to 0 psig",
+    "d": "Crack a valve and let room air bleed in up to 0 psig"
+   },
+   "correctOptionId": "b",
+   "explanation": "Low-pressure appliances must be raised to 0 psig before a non-major repair, and methods that need later purging, such as nitrogen, are not allowed (except for R-113 machines). Controlled hot water or heater blankets warm the refrigerant and raise pressure without adding gas.",
+   "distractorExplanations": {
+    "a": "Nitrogen would have to be purged later, carrying refrigerant out, so Section 608 does not allow it for this step.",
+    "c": "The purge unit removes non-condensables and cannot raise shell pressure; it would also vent some refrigerant.",
+    "d": "Letting room air in contaminates the refrigerant with air and moisture, which is what the 0 psig rule avoids."
+   }
+  },
+  "epa-608-readiness-check-type-3-015": {
+   "prompt": "A low-pressure R-123 chiller holding 500 pounds cools an industrial process. What annual leak rate triggers the 30-day repair requirement?",
+   "options": {
+    "a": "10%",
+    "b": "15%",
+    "c": "20%",
+    "d": "30%"
+   },
+   "explanation": "Leak triggers depend on the appliance's use, not its pressure class. Industrial process refrigeration holding 50 pounds or more of an ODS refrigerant such as R-123 has a 30% trigger under the 2016 rule; a chiller used for comfort cooling would use 10%.",
+   "distractorExplanations": {
+    "a": "10% is the comfort cooling trigger; an industrial process chiller uses 30%.",
+    "b": "15% was the comfort cooling trigger before the 2016 rule took effect; it does not apply to industrial process chillers.",
+    "c": "20% is the commercial refrigeration trigger, not the industrial process rate."
+   }
+  },
+  "epa-608-readiness-check-type-3-021": {
+   "prompt": "A low-pressure chiller used for building comfort cooling holds 75 pounds of R-123. What annual leak rate triggers the 30-day repair requirement?",
+   "explanation": "Low-pressure chillers follow the trigger for their use. A comfort cooling appliance holding 50 pounds or more of an ODS refrigerant such as R-123 must be repaired once its annual leak rate exceeds 10%.",
+   "distractorExplanations": {
+    "b": "15% was the comfort cooling trigger before the 2016 rule took effect; the current rate is 10%.",
+    "c": "20% is the commercial refrigeration trigger, not the rate for a comfort cooling chiller.",
+    "d": "35% was the old commercial and industrial trigger; industrial process refrigeration now uses 30%."
+   }
+  },
+  "epa-608-readiness-check-type-3-040": {
+   "prompt": "What sets the leak repair trigger rate for a low-pressure chiller holding 50 pounds or more of R-123?",
+   "options": {
+    "a": "Its use category, such as comfort cooling or industrial process",
+    "b": "Its pressure class, with low-pressure units allowed a 35% rate",
+    "c": "Its refrigerant's ODP, with R-123 allowed a 20% rate",
+    "d": "Its age, with chillers built before 1993 allowed a 15% rate"
+   },
+   "correctOptionId": "a",
+   "explanation": "Section 608 trigger rates follow how the appliance is used: 10% for comfort cooling, 20% for commercial refrigeration and 30% for industrial process refrigeration. A low-pressure chiller gets no special rate because of its pressure class or refrigerant.",
+   "distractorExplanations": {
+    "b": "There is no low-pressure category; 35% was the old commercial and industrial trigger and no longer applies.",
+    "c": "Trigger rates do not depend on ODP; 20% is the commercial refrigeration rate.",
+    "d": "Equipment age does not set the trigger; 15% was the comfort cooling rate before the 2016 rule."
+   }
+  },
+  "epa-608-readiness-check-type-3-023": {
+   "prompt": "A low-pressure chiller used for comfort cooling holds 600 pounds of R-123 and exceeded its leak trigger rate. After the repair, how often must it be inspected for leaks under the 2016 rule?",
+   "explanation": "Under the 2016 rule, a comfort cooling appliance holding 50 pounds or more that exceeded its trigger rate must be leak inspected once a year until it stays below the trigger for a year. Quarterly inspections apply to commercial and industrial systems of 500 pounds or more.",
+   "distractorExplanations": {
+    "a": "Monthly inspections are not a Section 608 requirement for comfort cooling chillers.",
+    "b": "Quarterly inspections apply to commercial refrigeration and industrial process systems of 500 pounds or more, not comfort cooling."
+   }
+  },
+  "epa-608-readiness-check-type-3-029": {
+   "prompt": "After a low-pressure chiller opened for major repairs is evacuated, why is refrigerant charged as vapor first before liquid?",
+   "options": {
+    "a": "Vapor sweeps out the air the vacuum pump left behind",
+    "b": "Liquid charging is limited by EPA to 25 pounds per hour",
+    "c": "Liquid flashing in a deep vacuum can freeze water in the tubes",
+    "d": "Vapor charging keeps oil from foaming out of the compressor"
+   },
+   "correctOptionId": "c",
+   "explanation": "In a deep vacuum, liquid refrigerant flashes and its temperature drops below freezing, which can freeze and burst water tubes. Charging vapor first raises the pressure above the saturation point for 32°F before liquid is added.",
+   "distractorExplanations": {
+    "a": "Sweeping air out with refrigerant vents refrigerant; air must be removed by evacuation before charging.",
+    "b": "EPA sets no charging rate limit; the vapor-first step protects the tubes from freezing.",
+    "d": "Oil foaming is not the reason; vapor first raises pressure so flashing liquid will not freeze the tube water."
+   }
+  },
+  "epa-608-readiness-check-type-3-030": {
+   "prompt": "Which condition is most likely to make a low-pressure chiller's evaporator run at a deeper vacuum than normal during the cooling season?",
+   "options": {
+    "a": "Heavily fouled condenser tubes",
+    "b": "Low refrigerant charge",
+    "c": "Compressor motor burnout",
+    "d": "Expansion valve stuck open"
+   },
+   "explanation": "With less refrigerant in the evaporator, its saturation pressure and temperature fall, so it runs at a deeper vacuum than normal. A failed purge unit acts on the high side instead: trapped non-condensables raise condenser pressure.",
+   "distractorExplanations": {
+    "a": "Fouled condenser tubes raise head pressure; they do not pull the evaporator into a deeper vacuum.",
+    "c": "A compressor motor burnout would prevent system operation entirely rather than cause deeper vacuum operation.",
+    "d": "An expansion valve stuck open floods the evaporator and raises its pressure rather than deepening the vacuum."
+   }
+  },
+  "epa-608-readiness-check-type-3-036": {
+   "prompt": "During refrigerant recovery from a low-pressure appliance, what vacuum level must recovery equipment manufactured before November 15, 1993 achieve?",
+   "explanation": "For low-pressure appliances, recovery equipment made before November 15, 1993 must reach 25 inches of Hg vacuum. Equipment made on or after that date must reach the deeper 25 mm Hg absolute, which is about 29 inches of vacuum.",
+   "distractorExplanations": {
+    "a": "10 inches is a high-pressure appliance level, far too shallow for a low-pressure chiller.",
+    "b": "15 inches is the level for high-pressure appliances of 200 pounds or more, not low-pressure chillers.",
+    "d": "About 29 inches (25 mm Hg absolute) is the level for newer equipment; pre-1993 machines must reach 25 inches."
+   }
+  },
+  "epa-608-readiness-check-type-3-045": {
+   "prompt": "Which job on a low-pressure chiller counts as a major repair under Section 608, requiring evacuation to the full low-pressure level first?",
+   "options": {
+    "a": "Replacing a gasket on the purge unit's pump-out line",
+    "b": "Removing the condenser for retubing",
+    "c": "Replacing the float valve's access cover gasket",
+    "d": "Changing the oil filter on the oil pump circuit"
+   },
+   "correctOptionId": "b",
+   "explanation": "Section 608 defines a major repair as one that removes the compressor, condenser, evaporator or an auxiliary heat exchanger coil. Removing the condenser for retubing qualifies, so the chiller must first be evacuated to 25 mm Hg absolute (with equipment made after November 15, 1993).",
+   "distractorExplanations": {
+    "a": "A purge-line gasket does not remove a major component, so replacing it is a non-major repair.",
+    "c": "Replacing a cover gasket does not remove the compressor, condenser, evaporator or a heat exchanger coil.",
+    "d": "An oil filter change is a non-major repair; major repairs remove a major component such as the condenser."
+   }
+  },
+  "epa-608-readiness-check-type-3-047": {
+   "prompt": "How does Section 608 define the refrigerant used in a low-pressure appliance?",
+   "options": {
+    "a": "Evaporator pressure below 10 psig at full load",
+    "b": "Saturation pressure below 45 psia at 104°F",
+    "c": "Saturation pressure of 45 to 170 psia at 104°F",
+    "d": "Saturation pressure of 170 to 355 psia at 104°F"
+   },
+   "correctOptionId": "b",
+   "explanation": "A low-pressure appliance uses a refrigerant whose liquid-phase saturation pressure is below 45 psia at 104°F, such as R-123 or R-11. Medium-pressure refrigerants fall between 45 and 170 psia, and high-pressure ones between 170 and 355 psia.",
+   "distractorExplanations": {
+    "a": "Section 608 defines pressure classes by saturation pressure at 104°F, not by evaporator gauge pressure.",
+    "c": "45 to 170 psia at 104°F is the medium-pressure range, which includes refrigerants such as R-134a.",
+    "d": "170 to 355 psia at 104°F is the high-pressure range, which includes refrigerants such as R-22 and R-404A."
+   }
+  },
+  "epa-608-readiness-check-type-3-049": {
+   "prompt": "What evacuation requirement applies when recovering refrigerant from a low-pressure chiller with recovery equipment made after November 15, 1993?",
+   "options": {
+    "a": "Recovery is not required if the appliance contains less than 15 pounds of refrigerant",
+    "b": "The appliance must be isolated and the refrigerant allowed to self-evacuate to atmospheric pressure",
+    "c": "Recovery must continue until the appliance pressure reaches 0 psig or below",
+    "d": "Recovery equipment must pull the appliance down to 25 millimeters of mercury absolute"
+   },
+   "explanation": "With recovery equipment made after November 15, 1993, low-pressure appliances must be evacuated to 25 mm Hg absolute (about 29 inches of vacuum); older equipment must reach 25 inches Hg vacuum. Low-pressure chillers hold far more than 15 pounds, so self-contained equipment is used.",
+   "distractorExplanations": {
+    "a": "Recovery is required regardless of refrigerant quantity in low-pressure appliances during service or disposal.",
+    "b": "Passive self-evacuation to atmospheric pressure is insufficient and violates EPA recovery requirements for low-pressure systems.",
+    "c": "Reaching 0 psig is insufficient for low-pressure appliances, which require evacuation to vacuum levels well below atmospheric pressure."
+   }
+  }
+ }
+}
