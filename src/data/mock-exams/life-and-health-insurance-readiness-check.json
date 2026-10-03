@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Health condition existing before policy effective date; treatment varies by law and policy type."
+        "text": "Individually owned, pre-tax account paired with an HDHP; unused funds roll over and stay with the employee."
       },
       {
         "id": "c",
-        "text": "Amount insured pays before plan pays covered benefits."
+        "text": "Employer-funded reimbursement account; only the employer contributes and unused balances may carry forward."
       },
       {
         "id": "d",
-        "text": "Prescription drug coverage offered by private plans approved by Medicare."
+        "text": "Archer-style medical savings account for self-employed or small-employer workers with a high-deductible plan."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Employer-sponsored account funded pre-tax for eligible expenses, often subject to use-it-or-lose-it rules with limited carryover/grace options. Example: Employee sets aside pre-tax dollars for copays.",
     "distractorExplanations": {
-      "b": "This is the answer to a different question (“Which of the following best describes preexisting condition as tested on this exam?”), not to this one.",
-      "c": "Not the best answer here; the right answer is “Employer-sponsored account funded pre-tax for eligible expenses, often subject to use-it-or-lose-it rules with limited carryover/grace…”.",
-      "d": "Not the best answer here; the right answer is “Employer-sponsored account funded pre-tax for eligible expenses, often subject to use-it-or-lose-it rules with limited carryover/grace…”."
+      "b": "Describes a health savings account (HSA): HSAs require an HDHP, are owned by the employee, and roll over; an FSA is employer-sponsored and largely use-it-or-lose-it.",
+      "c": "Describes a health reimbursement arrangement (HRA), which only the employer funds; an FSA is funded mainly by employee pre-tax salary reductions.",
+      "d": "Describes an Archer MSA, the older predecessor of the HSA for self-employed and small-employer workers; it is not the employer FSA."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-HEALTH). · Local QA repair (stems/distractors)"
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Coverage for eye exams, lenses, frames, or contacts subject to plan limits."
+        "text": "Coverage for routine cleanings and exams only; fillings, crowns, and oral surgery fall under the medical plan"
       },
       {
         "id": "b",
@@ -58,7 +58,7 @@
     "correctOptionId": "b",
     "explanation": "Coverage for preventive, basic, and major dental services subject to deductibles, coinsurance, and limits. Example: Cleanings, fillings, crowns.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Coverage for preventive, basic, and major dental services subject to deductibles, coinsurance, and limits”.",
+      "a": "Dental plans cover basic (fillings) and major (crowns) services too, not just preventive care; restorative dentistry is not shifted to the medical plan.",
       "c": "This is the answer to a different question (“Which of the following best describes Medicare as tested on this exam?”), not to this one.",
       "d": "This is the answer to a different question (“Which statement correctly describes individual health insurance as tested in health insurance?”), not to this one."
     },
@@ -151,7 +151,7 @@
       },
       {
         "id": "d",
-        "text": "Fixed dollar amount paid for covered service."
+        "text": "Exclusive provider organization with no out-of-network coverage except emergencies"
       }
     ],
     "correctOptionId": "a",
@@ -159,7 +159,7 @@
     "distractorExplanations": {
       "b": "This is the answer to a different question (“Which of the following best describes preexisting condition as tested on this exam?”), not to this one.",
       "c": "Not the best answer here; the right answer is “Preferred provider organization offering network discounts and greater provider flexibility than HMO”.",
-      "d": "Not the best answer here; the right answer is “Preferred provider organization offering network discounts and greater provider flexibility than HMO”."
+      "d": "Describes an EPO; a PPO is the plan that still pays (at a higher cost share) when members go out of network."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-HEALTH). · Local QA repair (stems/distractors)"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Coverage reimbursing or paying costs of medical care."
+        "text": "Plan with lower premiums and lower deductibles that is paired with an FSA rather than an HSA"
       },
       {
         "id": "b",
-        "text": "Fixed dollar amount paid for covered service."
+        "text": "Plan with a high deductible that is paired with an HRA the employee funds through pre-tax salary"
       },
       {
         "id": "c",
-        "text": "Employer-sponsored account funded pre-tax for eligible expenses, often subject to use-it-or-lose-it rules with limited carryover/grace options."
+        "text": "Plan whose high deductible is waived for all services once the member opens an HSA account"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Plan with higher deductible that may be paired with HSA if it meets federal requirements. Example: HDHP plus HSA for tax-advantaged medical savings.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Plan with higher deductible that may be paired with HSA if it meets federal requirements”.",
-      "b": "Not the best answer here; the right answer is “Plan with higher deductible that may be paired with HSA if it meets federal requirements”.",
-      "c": "This is the answer to a different question (“Which statement correctly describes flexible spending account as tested in health insurance?”), not to this one."
+      "a": "Reverses the design: an HDHP has a higher deductible (usually with lower premiums) and is the plan type that can be paired with an HSA.",
+      "b": "Confuses the HSA with an HRA, and HRAs are funded only by the employer, not by employee salary reductions.",
+      "c": "Opening an HSA does not waive the deductible; only preventive care may be covered before the HDHP deductible is met."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-HEALTH). · Local QA repair (stems/distractors)"
@@ -338,15 +338,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Coverage replacing part of income when insured cannot work due to covered disability."
+        "text": "Federal law requiring the group insurer to convert departing employees to individual policies without proof of insurability"
       },
       {
         "id": "b",
-        "text": "Pays fixed benefit for hospitalization regardless of actual expenses, subject to policy terms."
+        "text": "Federal law guaranteeing laid-off workers continued group coverage at the active-employee premium for up to 12 months"
       },
       {
         "id": "c",
-        "text": "Federal law allowing eligible employees/dependents to continue group health coverage after qualifying events, usually at their cost."
+        "text": "Federal law allowing eligible employees/dependents to continue group health coverage after qualifying events"
       },
       {
         "id": "d",
@@ -356,8 +356,8 @@
     "correctOptionId": "c",
     "explanation": "Federal law allowing eligible employees/dependents to continue group health coverage after qualifying events, usually at their cost. Example: Employee leaves job and elects COBRA.",
     "distractorExplanations": {
-      "a": "This is the answer to a different question (“Which statement correctly describes disability income insurance as tested in health insurance?”), not to this one.",
-      "b": "Not the best answer here; the right answer is “Federal law allowing eligible employees/dependents to continue group health coverage after qualifying events, usually at their cost”.",
+      "a": "Describes the group conversion privilege (a policy/state-law feature), not COBRA, which continues the same group coverage for a limited period.",
+      "b": "COBRA lets the former employee pay up to 102% of the full group premium, usually for 18-36 months, not the subsidized active rate for 12 months.",
       "d": "This is the answer to a different question (“Which statement correctly describes long-term care insurance as tested in health insurance?”), not to this one."
     },
     "difficulty": "medium",
@@ -701,7 +701,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only funeral costs with no income replacement"
+        "text": "Total of debts, final expenses, and education costs the family will need"
       },
       {
         "id": "b",
@@ -709,19 +709,19 @@
       },
       {
         "id": "c",
-        "text": "Market value of the insured's automobile"
+        "text": "Cash value the policy is projected to accumulate by the insured's retirement"
       },
       {
         "id": "d",
-        "text": "Social Security tax paid last year"
+        "text": "The insured's current annual salary multiplied by a fixed factor of ten"
       }
     ],
     "correctOptionId": "b",
     "explanation": "HLV quantifies economic loss from premature death.",
     "distractorExplanations": {
-      "a": "Needs approach is broader than funeral only.",
-      "c": "Unrelated asset.",
-      "d": "Too narrow."
+      "a": "That is the needs approach (DIME-style totals of obligations); human life value measures the insured's lost future earnings.",
+      "c": "Cash value accumulation is a policy feature, not a need estimate; HLV values the economic loss of the insured's future earnings.",
+      "d": "That is a rule-of-thumb income multiple, not HLV, which discounts future earnings (net of personal costs) to present value."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -775,19 +775,19 @@
       },
       {
         "id": "c",
-        "text": "Term always builds guaranteed cash value faster than whole life does"
+        "text": "Term builds cash value faster than whole life because its premiums are lower"
       },
       {
         "id": "d",
-        "text": "Whole life is available only as group coverage through an employer"
+        "text": "Whole life is sold as group coverage through employers; term is sold to individuals"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Whole life is permanent with cash value; term provides coverage for a period and typically has no cash value.",
     "distractorExplanations": {
       "b": "Whole life pays whenever death occurs while the policy is in force, typically to age 100 or 121.",
-      "c": "Term insurance builds no cash value.",
-      "d": "Whole life is commonly sold as individual coverage."
+      "c": "Level term is pure protection with no cash value; its lower premium is exactly because it builds no savings element.",
+      "d": "Product type does not depend on group vs individual sale; group life is usually term, and whole life is typically individual coverage."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -866,11 +866,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Voids all coverage immediately upon any illness"
+        "text": "Excludes suicide for the life of the policy, returning only premiums paid"
       },
       {
         "id": "b",
-        "text": "Doubles the death benefit for suicide"
+        "text": "Limits the death benefit if suicide occurs within the first 5-10 years"
       },
       {
         "id": "c",
@@ -878,15 +878,15 @@
       },
       {
         "id": "d",
-        "text": "Applies only to accidental death riders"
+        "text": "Pays double the face amount if suicide occurs after the contestable period"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Suicide exclusion period returns premiums or limited benefit early.",
     "distractorExplanations": {
-      "a": "Illness doesn't void like suicide clause.",
-      "b": "Opposite.",
-      "d": "Base policy provision."
+      "a": "The suicide exclusion is temporary (typically 1-2 years); after that period a suicide death is paid in full.",
+      "b": "Uses the wrong period; state law typically caps the suicide exclusion at 1-2 years from issue, mirroring the contestable period.",
+      "d": "Confuses the suicide clause with an accidental death (double indemnity) rider, which excludes suicide rather than doubling the benefit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -998,11 +998,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Life insurance pricing based on death rates at each age"
+        "text": "Life insurance pricing, predicting death rates at each attained age"
       },
       {
         "id": "b",
-        "text": "Auto collision frequency by driver age and vehicle type"
+        "text": "Annuity payout pricing, predicting how long annuitants will survive"
       },
       {
         "id": "c",
@@ -1010,15 +1010,15 @@
       },
       {
         "id": "d",
-        "text": "Asset allocation of the insurer's investment portfolio"
+        "text": "Property loss pricing, predicting fire and windstorm claims by region"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Morbidity measures illness/disability, not death alone.",
     "distractorExplanations": {
-      "a": "Death rates by age are mortality tables.",
-      "b": "Auto loss frequency is property and casualty rating data.",
-      "d": "Portfolio allocation is an investment decision, not a morbidity table use."
+      "a": "Death rates come from mortality tables; morbidity tables track sickness and injury for health and disability pricing.",
+      "b": "Annuity pricing relies on longevity/mortality tables (how long people live), not on morbidity (sickness and disability) rates.",
+      "d": "Fire and windstorm frequency is property-casualty loss data; morbidity is the rate of illness and injury among insureds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1068,23 +1068,23 @@
       },
       {
         "id": "b",
-        "text": "Only applicant's favorite color"
+        "text": "Health history, height, weight, and tobacco use"
       },
       {
         "id": "c",
-        "text": "Random assignment without actuarial basis"
+        "text": "Race, religion, and national origin of the driver"
       },
       {
         "id": "d",
-        "text": "Only life insurance mortality"
+        "text": "Vehicle purchase price alone, ignoring driver history"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Auto rates reflect measurable driving and vehicle factors.",
     "distractorExplanations": {
-      "b": "Not actuarially credible.",
-      "c": "Actuarial standards apply.",
-      "d": "P&C factors differ."
+      "b": "These are life and health underwriting factors; auto classification rests on driving record, territory, vehicle, and usage.",
+      "c": "These are prohibited rating factors under state unfair discrimination laws and cannot be used to classify auto risks.",
+      "d": "Vehicle value affects physical damage premium, but driver record, territory, and usage are core classification factors too."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1200,23 +1200,23 @@
       },
       {
         "id": "b",
-        "text": "Authority to act for insurer can be express, implied, or apparent, subject to law and appointment."
+        "text": "Speculative risk involves chance of gain or loss and is insurable when losses are predictable"
       },
       {
         "id": "c",
-        "text": "Voluntary giving up of a known right."
+        "text": "Speculative risk involves only chance of loss or no loss and is the type insurers cover"
       },
       {
         "id": "d",
-        "text": "A physical condition that increases likelihood or severity of loss."
+        "text": "Speculative risk is a condition that increases the likelihood or severity of a loss"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Speculative risk involves chance of gain, loss, or no change and is generally not insurable. Example: Starting a business or buying stock involves speculative risk.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Speculative risk involves chance of gain, loss, or no change and is generally not insurable”.",
-      "c": "Not the best answer here; the right answer is “Speculative risk involves chance of gain, loss, or no change and is generally not insurable”.",
-      "d": "Not the best answer here; the right answer is “Speculative risk involves chance of gain, loss, or no change and is generally not insurable”."
+      "b": "Predictability does not make speculative risk insurable; because it carries a chance of gain, insurers cover pure risk instead.",
+      "c": "That definition describes pure risk, the insurable kind; speculative risk adds the possibility of gain.",
+      "d": "That is the definition of a hazard (physical, moral, or morale), not of speculative risk."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-GENERAL). · Local QA repair (stems/distractors)"
@@ -1266,23 +1266,23 @@
       },
       {
         "id": "b",
-        "text": "Insurance purchased by insurers to transfer part of their risk to another insurer."
+        "text": "Only the insured makes a legally enforceable promise, while the insurer's promises are optional"
       },
       {
         "id": "c",
-        "text": "Pure risk involves only the chance of loss or no loss, not gain, and is generally insurable."
+        "text": "The insurer drafts the policy on a take-it-or-leave-it basis, so ambiguities favor the insured"
       },
       {
         "id": "d",
-        "text": "Insurer drafts policy; ambiguous terms are generally interpreted against insurer."
+        "text": "Each party must disclose material facts honestly because both rely on the other's statements"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Aleatory contracts feature unequal contingent exchange depending on whether a covered loss occurs.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “The values exchanged are unequal—a small premium may yield a large benefit or none if no loss occurs”.",
-      "c": "Not the best answer here; the right answer is “The values exchanged are unequal—a small premium may yield a large benefit or none if no loss occurs”.",
-      "d": "Not the best answer here; the right answer is “The values exchanged are unequal—a small premium may yield a large benefit or none if no loss occurs”."
+      "b": "Reverses the unilateral feature: only the insurer makes an enforceable promise; and unilateral is a different trait from aleatory.",
+      "c": "That describes a contract of adhesion, a separate characteristic; aleatory refers to the unequal exchange of values.",
+      "d": "That is utmost good faith (uberrimae fidei); aleatory means the premium and potential benefit are unequal and contingent."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-GENERAL). · Local QA repair (stems/distractors)"
@@ -1303,7 +1303,7 @@
       },
       {
         "id": "c",
-        "text": "Voluntary giving up of a known right."
+        "text": "Insurance relies on each party giving equal value, so premiums must match the expected claim amount"
       },
       {
         "id": "d",
@@ -1315,7 +1315,7 @@
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “Insurance relies on truthful disclosure by applicant and insurer because each depends on information from the other”.",
       "b": "Not the best answer here; the right answer is “Insurance relies on truthful disclosure by applicant and insurer because each depends on information from the other”.",
-      "c": "Not the best answer here; the right answer is “Insurance relies on truthful disclosure by applicant and insurer because each depends on information from the other”."
+      "c": "Describes a commutative exchange; insurance is aleatory (unequal values), and utmost good faith concerns honest disclosure."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-GENERAL). · Local QA repair (stems/distractors)"
@@ -1501,19 +1501,19 @@
       },
       {
         "id": "c",
-        "text": "Time during which accumulated value is paid out as income."
+        "text": "Payments continue for one annuitant's life and stop at death, with no refund to any beneficiary"
       },
       {
         "id": "d",
-        "text": "Time during which annuity owner pays premiums and values grow before payouts begin."
+        "text": "Payments continue for a set 10 or 20 years to the annuitant or a beneficiary, then stop"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Payments continue over lives of two annuitants, often reducing after first death depending on option. Example: Spouses receive income while either lives.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “Payments continue over lives of two annuitants, often reducing after first death depending on option”.",
-      "c": "Not the best answer here; the right answer is “Payments continue over lives of two annuitants, often reducing after first death depending on option”.",
-      "d": "Not the best answer here; the right answer is “Payments continue over lives of two annuitants, often reducing after first death depending on option”."
+      "c": "That is the straight life (life only) option; joint and survivor covers two lives and continues after the first death.",
+      "d": "Describes a period certain option, which guarantees a number of years rather than income over two annuitants' lives."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (life_health_400_authored.csv, INS-ANNUITIES). · Local QA repair (stems/distractors)"
@@ -1563,11 +1563,11 @@
       },
       {
         "id": "b",
-        "text": "Bailment of physical goods"
+        "text": "Equal exchange of values between the parties"
       },
       {
         "id": "c",
-        "text": "Indemnity for all lines without exception"
+        "text": "Indemnity limiting life benefits to proven loss"
       },
       {
         "id": "d",
@@ -1578,8 +1578,8 @@
     "explanation": "Both parties must disclose material facts honestly.",
     "distractorExplanations": {
       "a": "Both parties have obligations.",
-      "b": "Not bailment.",
-      "c": "Life insurance is not indemnity."
+      "b": "Describes a commutative contract; insurance is aleatory, and the doctrine requiring full disclosure is utmost good faith.",
+      "c": "Life insurance is a valued contract paying the face amount; indemnity (paying only the actual loss) applies to property and medical expense coverage."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1629,23 +1629,23 @@
       },
       {
         "id": "b",
-        "text": "The policy is a homeowners binder that permanently replaces underwriting"
+        "text": "Coverage begins only on policy delivery, once the first premium has been paid in full"
       },
       {
         "id": "c",
-        "text": "The insurer must pay a property claim from an auto policy"
+        "text": "Coverage starts on the receipt date even if the applicant is later declined by underwriting"
       },
       {
         "id": "d",
-        "text": "No coverage can ever start before policy delivery"
+        "text": "Coverage is bound for a set period during underwriting even if the applicant proves uninsurable"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Life producers use a conditional or binding receipt for the gap after application and premium. This is not a property-casualty homeowners or auto binder. Independent UniPrep diagnostic — not a state insurance exam paper.",
     "distractorExplanations": {
-      "b": "A homeowners binder is a P&C document, not this life-application receipt.",
-      "c": "Auto property claims are P&C, not life conditional receipts.",
-      "d": "Conditional receipts can start coverage earlier if underwriting later agrees."
+      "b": "That is the result with no receipt at all; a conditional receipt can start coverage earlier, on the application or exam date.",
+      "c": "A conditional receipt gives coverage only if the applicant is found insurable as applied; a declined applicant has no coverage.",
+      "d": "Describes a binding (temporary) receipt, a different receipt type that covers for a period whether or not the applicant qualifies."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 point-fix 2026-09-21: replaced P&C binder leftover with life conditional receipt."
@@ -1658,7 +1658,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No paperwork, as long as the client verbally agrees to the change"
+        "text": "Only a signed client statement that the old policy has already lapsed"
       },
       {
         "id": "b",
@@ -1676,7 +1676,7 @@
     "correctOptionId": "c",
     "explanation": "Replacement regulations protect consumers from unnecessary churn.",
     "distractorExplanations": {
-      "a": "Replacement rules require written disclosure and acknowledgment, not verbal agreement.",
+      "a": "Replacement rules require a notice/comparison form and notice to the existing insurer, not just a statement about the old policy.",
       "b": "The existing insurer is notified, but its approval is not required.",
       "d": "Letting the old policy lapse first could leave the client uninsured; rules require disclosure, not a lapse."
     },
@@ -1736,7 +1736,7 @@
       },
       {
         "id": "d",
-        "text": "At both issue and death for life, never for property"
+        "text": "At the insured's death for life insurance; at policy issue for property"
       }
     ],
     "correctOptionId": "a",
@@ -1744,7 +1744,7 @@
     "distractorExplanations": {
       "b": "Timing differs by line: life at issue, property at the time of loss.",
       "c": "Life insurable interest is required at issue, not at surrender or maturity.",
-      "d": "Life insurable interest need not exist at death, and property requires it at the time of loss."
+      "d": "Reverses the rule: life requires insurable interest at issue (not at death), while property requires it at the time of loss."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1794,23 +1794,23 @@
       },
       {
         "id": "b",
-        "text": "Use only out-of-network providers for the highest benefit level"
+        "text": "Use any provider in or out of network at the same cost without referrals"
       },
       {
         "id": "c",
-        "text": "Pay no premiums under any HMO contract"
+        "text": "Submit claim forms for each visit and wait for fee-for-service reimbursement"
       },
       {
         "id": "d",
-        "text": "Avoid choosing any physician for the entire year"
+        "text": "Obtain a referral from the insurer before receiving any emergency room care"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Classic HMO design uses PCP gatekeeping and referrals inside a network (plan specifics vary, but this is the exam stereotype).",
     "distractorExplanations": {
-      "b": "Out-of-network is usually limited or uncovered in HMOs, not preferred.",
-      "c": "HMOs charge premiums/prepaid contributions.",
-      "d": "Members choose a PCP rather than avoiding physicians."
+      "b": "That describes an indemnity-style or open plan; HMOs restrict benefits to network providers and use PCP referrals.",
+      "c": "Claim forms and fee-for-service reimbursement belong to traditional indemnity plans; HMOs pay network providers directly or by capitation.",
+      "d": "Emergency care does not require a referral under HMO rules; referrals apply to nonemergency specialist visits."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1827,7 +1827,7 @@
       },
       {
         "id": "b",
-        "text": "Automatic Medicare enrollment in place of employer group coverage"
+        "text": "Former employees to switch into Medicare in place of employer group coverage"
       },
       {
         "id": "c",
@@ -1842,7 +1842,7 @@
     "explanation": "COBRA extends group coverage 18-36 months typically at employee cost.",
     "distractorExplanations": {
       "a": "COBRA is temporary and the former employee pays the premium.",
-      "b": "COBRA continues the employer group plan; it is not Medicare enrollment.",
+      "b": "Job loss does not trigger Medicare eligibility; COBRA continues the employer group plan itself for a limited period.",
       "c": "COBRA is time-limited (typically 18–36 months) and the person pays up to 102% of the full premium."
     },
     "difficulty": "medium",
@@ -1955,15 +1955,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Identical to Medicare for all seniors automatically"
+        "text": "Federal health insurance program for people age 65 and over"
       },
       {
         "id": "b",
-        "text": "Private supplemental insurance sold by agents"
+        "text": "Private Medicare supplement coverage sold by licensed agents"
       },
       {
         "id": "c",
-        "text": "Workers compensation"
+        "text": "State workers' compensation benefit for job-related injuries and illness"
       },
       {
         "id": "d",
@@ -1973,9 +1973,9 @@
     "correctOptionId": "d",
     "explanation": "Medicaid serves qualifying low-income populations with state variation.",
     "distractorExplanations": {
-      "a": "Medicare is age/disability program.",
-      "b": "Government program.",
-      "c": "WC is injury at work."
+      "a": "That describes Medicare; Medicaid is the joint federal-state program based on financial need, not age alone.",
+      "b": "That describes Medigap; Medicaid is a government program administered by the states, not a privately sold product.",
+      "c": "Workers' compensation covers occupational injury; Medicaid is need-based health coverage funded jointly by federal and state government."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

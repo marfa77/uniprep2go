@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Only the patient's favorite color"
+        "text": "Demographics and insurance only, leaving the visit reason for the provider to ask"
       },
       {
         "id": "c",
-        "text": "No callback number"
+        "text": "Insurance info and a copay deposit, with demographics collected at the first visit"
       },
       {
         "id": "d",
-        "text": "Diagnosis codes invented without a provider"
+        "text": "Demographics, insurance info, and a diagnosis code to book the right visit type"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Complete intake reduces denials and no-shows; MAs/admins don't invent diagnoses.",
     "distractorExplanations": {
-      "b": "Color irrelevant.",
-      "c": "Need contact info.",
-      "d": "Coding needs clinical documentation."
+      "b": "The reason for visit is needed at scheduling to book the right appointment type and slot length; deferring it to the provider causes mis-booked visits.",
+      "c": "Demographics (legal name, DOB, contact) are needed at scheduling for eligibility checks and reminders; a deposit is not a standard scheduling requirement.",
+      "d": "A CMAA does not assign diagnosis codes at scheduling; ICD-10-CM codes come from provider documentation after the encounter, not from the booking call."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Bill insurance automatically without claims"
+        "text": "Record each patient's arrival and departure times for the daily flow report"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Replace the need for patient names"
+        "text": "List the day's booked patients with their chart numbers for chart pulling"
       },
       {
         "id": "d",
-        "text": "Store PHI on public social media"
+        "text": "Track no-shows and cancellations so they can be charged a missed-visit fee"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Templates improve flow (physicals vs acute slots, catch-up time)",
     "distractorExplanations": {
-      "a": "Billing is separate.",
-      "c": "Names still required.",
-      "d": "PHI not for social media."
+      "a": "That describes a patient-tracking or sign-in log; the matrix is set up in advance to block unavailable times and reserve slots by visit type.",
+      "c": "That is the daily appointment list printed from the schedule, not the matrix, which blocks provider availability before any patient is booked.",
+      "d": "No-show tracking belongs to the no-show policy and log; the scheduling matrix blocks times for visit types, meetings, and provider preferences."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -73,27 +73,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Used randomly without clinical judgment causing chronic backlog"
+        "text": "The schedule is full and a new patient wants the next routine physical"
       },
       {
         "id": "b",
-        "text": "Patients are never informed of delays"
+        "text": "Two patients each need a long procedure that requires the same exam room"
       },
       {
         "id": "c",
-        "text": "Two patients can be seen in overlapping slots planned for short visits/provider workflow"
+        "text": "Two patients can be seen in overlapping slots planned for short visits"
       },
       {
         "id": "d",
-        "text": "It replaces triage of urgent needs"
+        "text": "The provider is running late and the remaining slots need to be compressed"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Intentional overlap differs from chaotic overbooking; communicate wait times.",
+    "explanation": "Intentional overlap differs from chaotic overbooking; communicate wait times. Overlap works only when it fits the provider's workflow.",
     "distractorExplanations": {
-      "a": "Random overload harms care.",
-      "b": "Communication required.",
-      "d": "Urgency still triaged."
+      "a": "New-patient physicals need full-length slots; double-booking long visits creates backlog, so the patient should be offered the next real opening.",
+      "b": "Overlapping long procedures that need one room guarantees delays; double-booking suits brief visits that can share a provider's time.",
+      "d": "Compressing slots when the provider is behind worsens delays; the CMAA should update waiting patients and offer to reschedule instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Refuse all future care permanently without policy"
+        "text": "Move the late patient ahead of on-time patients so the delay stays short for them"
       },
       {
         "id": "b",
-        "text": "Argue at the front desk loudly with PHI details"
+        "text": "Reschedule every late arrival on the spot, whether 2 or 20 minutes late"
       },
       {
         "id": "c",
-        "text": "Skip checking them in entirely while they wait indefinitely without update"
+        "text": "Check them in without comment and let them wait for the next open gap in the day"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Policies balance fairness and access; maintain professionalism/privacy.",
     "distractorExplanations": {
-      "a": "Permanent bans need proper process.",
-      "b": "Loud PHI breaches privacy.",
-      "c": "Updates/customer service matter."
+      "a": "Bumping on-time patients rewards lateness and spreads the delay to others; office policy decides whether to fit in or reschedule a late arrival.",
+      "b": "Blanket rescheduling ignores the grace window most late-arrival policies set; many offices fit in patients who are only a few minutes late.",
+      "c": "Silent waiting is poor service; the CMAA should explain the expected wait or options under policy so the patient can decide to stay or rebook."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Only the referring doctor's hobbies"
+        "text": "The patient's copay amount and the specialist's office hours and location"
       },
       {
         "id": "c",
-        "text": "That no records are sent ever"
+        "text": "The referring provider's NPI and the patient's preferred appointment days"
       },
       {
         "id": "d",
-        "text": "Cash prices for the specialist without patient consent discussions when relevant finances apply—skip all verification"
+        "text": "The specialist's fee schedule and the amount of deductible met to date"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Missing auth causes denials; collect/send needed clinical records.",
     "distractorExplanations": {
-      "b": "Hobbies irrelevant.",
-      "c": "Records usually needed.",
-      "d": "Eligibility/auth verification is core."
+      "b": "Copay and logistics are useful but do not prevent denials; a referral visit needs the authorization/referral number and in-network status confirmed.",
+      "c": "The NPI goes on the claim and preferences help booking, but neither confirms the authorization or network status the payer requires.",
+      "d": "Cost estimates help with financial counseling, but without a valid referral/authorization and a network check the specialist claim can still be denied."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "One patient per day"
+        "text": "Patients booked at fixed, evenly spaced intervals, one per time slot"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "No appointments—walk-ins"
+        "text": "Similar visit types grouped together in one block, such as all physicals"
       },
       {
         "id": "d",
-        "text": "Random cancellation of all new patients"
+        "text": "Patients seen in order of arrival during set open hours without booked times"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Wave/modified wave are classic office scheduling methods taught in admin programs.",
     "distractorExplanations": {
-      "a": "Not one per day.",
-      "c": "Walk-in systems differ.",
-      "d": "Not cancellation schemes."
+      "a": "That is stream (time-specified) scheduling, where each patient gets an individual slot; wave books several patients at the top of the hour.",
+      "c": "Grouping similar visits (all physicals in one block) is cluster or categorization scheduling, not wave scheduling.",
+      "d": "Seeing patients as they arrive with no appointments is open-hours (walk-in) scheduling; wave scheduling still books patients to a set hour."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace the medical record entirely"
+        "text": "Serve as the legal record of the visit in place of the progress note"
       },
       {
         "id": "b",
-        "text": "Serve as a controlled substance Rx pad"
+        "text": "Request prior authorization from the payer before the visit takes place"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Check out library books"
+        "text": "Show the patient's itemized balance due after insurance has paid"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Superbills feed claim creation; documentation must still support codes.",
     "distractorExplanations": {
-      "a": "EHR/chart remains legal record.",
-      "b": "Not a DEA Rx form inherently.",
-      "d": "Not library."
+      "a": "The superbill is a billing document; the provider's documentation in the chart remains the legal record that must support every code billed.",
+      "b": "Prior authorization is a separate pre-visit request to the payer; the encounter form captures what was done and diagnosed at the visit.",
+      "d": "An itemized balance after insurance payment is the patient statement, which is produced later from posted payments, not the encounter form."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Used to publicly shame patients in the waiting room"
+        "text": "Applied at staff discretion, waiving fees for patients the staff know well"
       },
       {
         "id": "c",
-        "text": "Different for every staff mood"
+        "text": "Explained to patients only after their first missed appointment occurs"
       },
       {
         "id": "d",
-        "text": "Hidden from patients entirely"
+        "text": "Documented in the staff manual but kept off patient forms to avoid conflict"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Clear policies reduce conflict and support continuity.",
     "distractorExplanations": {
-      "b": "Public shame unethical/HIPAA risk.",
-      "c": "Consistency matters.",
-      "d": "Patients should know expectations."
+      "b": "Discretionary enforcement is inconsistent and can look discriminatory; a no-show policy must be applied the same way to every patient.",
+      "c": "Patients must learn the policy before it applies, at registration or scheduling; explaining it only after a miss makes enforcement unfair.",
+      "d": "A policy patients never see cannot fairly be enforced; it must be explained in patient communications as well as documented internally."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "All emergency surgeries in the lobby"
+        "text": "Several patients at the top of each hour, seen as they arrive"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "No like appointments ever"
+        "text": "Open walk-in hours together at the start and end of each clinic day"
       },
       {
         "id": "d",
-        "text": "Only billing calls at midnight without staffing"
+        "text": "Patients by insurance plan so their claims can be batched by payer"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Clustering improves efficiency for rooms/equipment/staffing.",
     "distractorExplanations": {
-      "a": "Emergencies need appropriate settings.",
-      "c": "Clustering is the definition.",
-      "d": "Staffing must match."
+      "a": "Booking several patients at the top of the hour and seeing them as they arrive is wave scheduling, not clustering by visit type.",
+      "c": "Reserving walk-in periods is open-hours scheduling; cluster scheduling groups like appointments (for example physicals) into a block.",
+      "d": "Batching claims by payer is a billing workflow; cluster scheduling groups similar visit types to use rooms, equipment, and staff efficiently."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Book only one patient per day"
+        "text": "Give each patient a fixed, evenly spaced slot so waiting stays minimal"
       },
       {
         "id": "b",
-        "text": "Schedule multiple patients at the same arrival time to improve flow, then space them"
+        "text": "Schedule multiple patients at the same arrival time to improve flow"
       },
       {
         "id": "c",
-        "text": "Eliminate check-in entirely"
+        "text": "Group similar visit types into blocks so rooms and equipment are ready"
       },
       {
         "id": "d",
-        "text": "Force all visits to be walk-in"
+        "text": "Let patients arrive any time during set hours without booked appointments"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Wave scheduling clusters arrivals to reduce idle provider time while managing wait.",
+    "explanation": "Wave scheduling clusters arrivals to reduce idle provider time while managing wait. Patients are then seen in arrival order within the hour.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Schedule multiple patients at the same arrival time to improve flow, then space them”.",
-      "c": "Not the best answer here; the right answer is “Schedule multiple patients at the same arrival time to improve flow, then space them”.",
-      "d": "Not the best answer here; the right answer is “Schedule multiple patients at the same arrival time to improve flow, then space them”."
+      "a": "Evenly spaced individual slots describe stream (time-specified) scheduling; wave scheduling deliberately books several patients at one time.",
+      "c": "Grouping like visits into blocks is cluster scheduling, which organizes by appointment type rather than by shared arrival times.",
+      "d": "Arrival without booked times is open-hours (walk-in) scheduling; wave scheduling still assigns patients to a specific hour."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the patient's favorite pharmacy"
+        "text": "The patient's card copy and photo ID, which together confirm active coverage"
       },
       {
         "id": "b",
-        "text": "Eligibility, coverage, and referral/authorization requirements as applicable"
+        "text": "Eligibility, coverage, and referral/authorization requirements"
       },
       {
         "id": "c",
-        "text": "The physician's personal NPI by guessing"
+        "text": "Eligibility only, since authorization is the specialist's responsibility"
       },
       {
         "id": "d",
-        "text": "Nothing if the patient has a card photo"
+        "text": "The copay amount and the provider's fee schedule for planned services"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Eligibility and auth checks reduce denials and surprise patient bills.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Eligibility, coverage, and referral/authorization requirements as applicable”.",
-      "c": "Not the best answer here; the right answer is “Eligibility, coverage, and referral/authorization requirements as applicable”.",
-      "d": "Not the best answer here; the right answer is “Eligibility, coverage, and referral/authorization requirements as applicable”."
+      "a": "A card copy and ID confirm identity, not current eligibility; coverage can lapse, so the plan must be verified with the payer before the visit.",
+      "c": "The ordering or referring office often must obtain the referral or authorization; skipping that check leads to denials and surprise bills.",
+      "d": "Copay is one benefit detail, but it does not confirm eligibility, covered services, or whether a referral or authorization is required."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -403,7 +403,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Secret and never told to patients"
+        "text": "Enforced case by case depending on each patient's history"
       },
       {
         "id": "b",
@@ -411,19 +411,19 @@
       },
       {
         "id": "c",
-        "text": "Changed randomly each hour"
+        "text": "Posted at the front desk but applied only to new patients"
       },
       {
         "id": "d",
-        "text": "Used to refuse emergencies illegally"
+        "text": "Strict enough to discharge a patient after the first missed visit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Transparent, consistent no-show policies support operations and fairness.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Clearly communicated, consistently applied, and documented”.",
-      "c": "Not the best answer here; the right answer is “Clearly communicated, consistently applied, and documented”.",
-      "d": "Not the best answer here; the right answer is “Clearly communicated, consistently applied, and documented”."
+      "a": "Case-by-case enforcement is inconsistent and invites discrimination complaints; an effective no-show policy is applied the same way to everyone.",
+      "c": "Applying the policy to new patients and not established ones is inconsistent; the policy must cover all patients and be documented.",
+      "d": "Discharge after a single no-show is excessive; most policies use progressive steps such as reminders, warnings, and written notice first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Only a nickname"
+        "text": "Preferred name, DOB, and emergency contact, with insurance added at billing"
       },
       {
         "id": "c",
-        "text": "The CMAA's home address"
+        "text": "Legal name, Social Security number, and employer as the main identifiers"
       },
       {
         "id": "d",
-        "text": "The patient's social media passwords"
+        "text": "Legal name, chief complaint, and allergies entered by the front desk"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct demographics underpin registration, billing, and clinical identification.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Accurate legal name, DOB, contact, and insurance identifiers”.",
-      "c": "Not the best answer here; the right answer is “Accurate legal name, DOB, contact, and insurance identifiers”.",
-      "d": "Not the best answer here; the right answer is “Accurate legal name, DOB, contact, and insurance identifiers”."
+      "b": "A preferred name does not replace the legal name, and insurance identifiers are needed at registration so eligibility can be verified before the visit.",
+      "c": "The SSN is not required for registration and should be minimized; DOB, contact details, and insurance identifiers are the essentials.",
+      "d": "Chief complaint and allergies are clinical intake documented by clinical staff, not core demographic registration data for the CMAA."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Argue loudly in the waiting room"
+        "text": "Seat whichever patient checked in first and ask the other to rebook"
       },
       {
         "id": "b",
-        "text": "Review the schedule/documentation calmly and escalate per office protocol to resolve the conflict"
+        "text": "Review the schedule/documentation and escalate per office protocol"
       },
       {
         "id": "c",
-        "text": "Delete both charts"
+        "text": "Have both patients wait while the provider decides who will be seen first"
       },
       {
         "id": "d",
-        "text": "Charge both patients double automatically"
+        "text": "Apologize and see both by shortening each visit to fit into the one slot"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "De-escalate, verify records, and follow protocol; protect privacy while resolving errors.",
+    "explanation": "De-escalate, verify records, and follow protocol; protect privacy while resolving errors. The goal is to resolve the conflict without blaming either patient.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Review the schedule/documentation calmly and escalate per office protocol to resolve the conflict”.",
-      "c": "Not the best answer here; the right answer is “Review the schedule/documentation calmly and escalate per office protocol to resolve the conflict”.",
-      "d": "Not the best answer here; the right answer is “Review the schedule/documentation calmly and escalate per office protocol to resolve the conflict”."
+      "a": "First to check in ignores the actual booking record; the CMAA should verify the schedule before deciding who keeps the slot.",
+      "c": "Schedule conflicts are an administrative task; the CMAA verifies the record and escalates to the office manager, not the treating provider.",
+      "d": "Halving two visits to fit one slot compromises care for both patients; the conflict should be resolved by reviewing the schedule."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -502,27 +502,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Documentation of care used for clinical, legal, and billing purposes under retention rules"
+        "text": "Documentation of care used for clinical, legal, and billing purposes"
       },
       {
         "id": "b",
-        "text": "Only sticky notes never entered"
+        "text": "All EHR data, including audit logs, drafts, and staff messages"
       },
       {
         "id": "c",
-        "text": "The waiting room sign-in clipboard as the full chart"
+        "text": "The provider's personal notes kept separately from the patient's chart"
       },
       {
         "id": "d",
-        "text": "Social media messages"
+        "text": "The billing record of charges and payments for each patient encounter"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Entries should be timely, accurate, authenticated, and complete.",
+    "explanation": "Entries should be timely, accurate, authenticated, and complete. It must be kept under state and facility retention rules.",
     "distractorExplanations": {
-      "b": "Sticky notes inadequate alone.",
-      "c": "Sign-in isn't the full record.",
-      "d": "Social media not the legal record."
+      "b": "The legal health record is the set the organization designates as the official chart; audit metadata, drafts, and internal messages are usually excluded.",
+      "c": "Personal working notes kept outside the chart are not part of the designated legal record; the legal record is the official documentation of care.",
+      "d": "The financial record supports billing but is not the clinical documentation of care that serves clinical, legal, and billing purposes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Marketing sale of PHI without limits"
+        "text": "Marketing communications sent by the practice about third-party products"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Public gossip"
+        "text": "Psychotherapy notes requested by the patient's health plan for payment"
       },
       {
         "id": "d",
-        "text": "Employer curiosity without involvement"
+        "text": "Employer requests for a worker's health status for a hiring decision"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Minimum necessary applies to many payment/operations uses; treatment has nuances.",
     "distractorExplanations": {
-      "a": "Marketing often needs auth.",
-      "c": "Gossip prohibited.",
-      "d": "Employers generally need authorization/other legal basis."
+      "a": "Under the HIPAA Privacy Rule, using PHI for marketing third-party products generally requires the patient's written authorization.",
+      "c": "Psychotherapy notes have special protection and need a specific authorization even when a health plan requests them for payment.",
+      "d": "Employers need the employee's authorization (or another legal basis such as workers' comp) to receive PHI; employment decisions are not TPO."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -568,11 +568,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only a verbal 'sure' from an unknown caller"
+        "text": "Patient signature and date, with recipient and purpose added later by staff"
       },
       {
         "id": "b",
-        "text": "Provider initials alone"
+        "text": "The requesting provider's signature with the patient's verbal consent noted"
       },
       {
         "id": "c",
@@ -580,15 +580,15 @@
       },
       {
         "id": "d",
-        "text": "Blank unsigned forms filled later by staff creatively"
+        "text": "Patient name, record type, and signature, with no expiration required"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Defective authorizations should be rejected/fixed before release.",
     "distractorExplanations": {
-      "a": "Caller verbal insufficient alone.",
-      "b": "Need proper patient/personal representative signature.",
-      "d": "No creative backdating."
+      "a": "Staff cannot complete core elements after the patient signs; recipient, purpose, and expiration must be on the form when it is signed.",
+      "b": "A HIPAA authorization must be signed by the patient or personal representative; a provider signature plus verbal consent is not valid.",
+      "d": "An expiration date or expiration event is a required core element; an authorization without one is defective and should be returned."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Deleting the encounter entirely to hide the mistake"
+        "text": "Overwriting the error once the provider approves so the record stays clean"
       },
       {
         "id": "b",
-        "text": "Altering another clinician's note silently"
+        "text": "Deleting the incorrect entry and re-entering it with the original date"
       },
       {
         "id": "c",
-        "text": "Inserting false times"
+        "text": "Fixing another clinician's note directly when the error is clerical"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "Audit trails track changes; honesty protects legal integrity.",
     "distractorExplanations": {
-      "a": "Deletion to hide is misconduct.",
-      "b": "Don't alter others' notes improperly.",
-      "c": "False times fraudulent."
+      "a": "Overwriting erases the original entry; even with approval, corrections must be addenda that keep the original visible in the audit trail.",
+      "b": "Deleting and backdating hides the error; a correction must be dated and timed when made, with the original entry preserved.",
+      "c": "Only the author (or per policy, a designee) corrects an entry; other staff notify the author instead of editing someone else's note."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Follow federal/state timelines and facility procedures with tracking logs"
+        "text": "Follow federal/state timelines and procedures with tracking logs"
       },
       {
         "id": "b",
-        "text": "Ignore urgent care continuum needs"
+        "text": "Allow up to 90 days for any request, since HIPAA sets no deadline at all"
       },
       {
         "id": "c",
-        "text": "Release entire charts to anyone paying cash without checks"
+        "text": "Be completed the same day for every request, before identity is verified"
       },
       {
         "id": "d",
-        "text": "Mail records to unverified addresses casually"
+        "text": "Be set by the requester, who may demand release within 24 hours"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Verify identity/authority; account for sensitive records (psych/HIV/substance) special rules.",
     "distractorExplanations": {
-      "b": "Urgent TPO pathways exist.",
-      "c": "Identity/authority required.",
-      "d": "Address verification matters."
+      "b": "HIPAA requires action on access requests within 30 days, with one 30-day extension; states may set shorter limits, never a 90-day default.",
+      "c": "Identity and authority must be verified before any release; HIPAA does not require same-day turnaround, it sets a 30-day limit.",
+      "d": "Requesters cannot set legal timelines; federal (30-day HIPAA) and state rules plus facility procedure govern turnaround."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only pharmaceutical sales reps"
+        "text": "Business associates so they know how to use and protect the practice's PHI"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "No one—it's optional wallpaper"
+        "text": "Patients only when they request a copy of their medical records"
       },
       {
         "id": "d",
-        "text": "Competitors for marketing lists"
+        "text": "Health plans and payers before the practice submits the first claim"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Covered entities must make NPP available and retain acknowledgments when required.",
     "distractorExplanations": {
-      "a": "Not for drug reps as the patient duty.",
-      "c": "Required, not optional.",
-      "d": "Not a marketing list tool."
+      "a": "Business associates are bound by a business associate agreement; the NPP is a patient-facing notice of uses, disclosures, and rights.",
+      "c": "The NPP is provided at the first service delivery with a good-faith effort to get acknowledgment, not only when records are requested.",
+      "d": "Payers do not receive the NPP; it is given to patients to explain how PHI is used and what rights they have."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Everyone in the building may read all charts"
+        "text": "Disclose only the diagnosis code, even when a provider requests it for treatment"
       },
       {
         "id": "b",
-        "text": "Reception must memorize full psychiatric notes"
+        "text": "Collect the fewest demographics possible at registration to limit risk"
       },
       {
         "id": "c",
-        "text": "Limit PHI access/use/disclosure to the least needed for the purpose (with treatment exceptions nuances)"
+        "text": "Limit PHI access/use/disclosure to the least needed for the purpose"
       },
       {
         "id": "d",
-        "text": "Billers need full psychotherapy process notes"
+        "text": "Give staff access to any chart once they sign a confidentiality form"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Role-based access implements minimum necessary.",
+    "explanation": "Role-based access implements minimum necessary. Disclosures to providers for treatment are exempt from the standard.",
     "distractorExplanations": {
-      "a": "Open access violates HIPAA.",
-      "b": "Reception needs scheduling-minimum.",
-      "d": "Specially protected notes have extra limits."
+      "a": "Disclosures to another provider for treatment are exempt from minimum necessary; withholding needed clinical detail can harm care.",
+      "b": "Minimum necessary limits use and disclosure of PHI, not the collection of required registration data such as legal name, DOB, and insurance.",
+      "d": "Signing a confidentiality form does not grant access; role-based limits still restrict each workforce member to the PHI their job requires."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "One week maximum always nationwide"
+        "text": "Set by HIPAA at a uniform 6 years from the last visit for all records"
       },
       {
         "id": "b",
-        "text": "Destroyed immediately after each visit"
+        "text": "Fixed at 7 years nationally by CMS for every patient's chart"
       },
       {
         "id": "c",
-        "text": "Kept forever in the front desk drawer unlocked with no policy"
+        "text": "Tied to the age of majority plus a set number of years"
       },
       {
         "id": "d",
-        "text": "Governed by state law and payer/accreditation policies (often years beyond last visit)"
+        "text": "Governed by state law and payer/accreditation policies"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Know that retention varies; follow the strictest applicable rule/policy.",
+    "explanation": "Know that retention varies; follow the strictest applicable rule/policy. Periods often run years beyond the last visit.",
     "distractorExplanations": {
-      "a": "One week too short generally.",
-      "b": "Immediate destruction improper.",
-      "c": "Secure storage required."
+      "a": "HIPAA's 6-year rule covers HIPAA documentation such as policies and authorizations, not medical record retention, which state law governs.",
+      "b": "There is no single national 7-year rule; CMS and other payer periods vary by program, and state law sets the baseline for records.",
+      "c": "Age-of-majority rules extend retention for minors' records; adult record retention is set by state law and payer/accreditation policy."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Someone with legal authority (eg, healthcare power of attorney) as defined by law"
+        "text": "Someone with legal authority (eg, healthcare power of attorney)"
       },
       {
         "id": "b",
-        "text": "Any coworker"
+        "text": "The adult patient's spouse, who may sign authorizations by default"
       },
       {
         "id": "c",
-        "text": "A journalist"
+        "text": "Any adult child listed as the emergency contact on registration"
       },
       {
         "id": "d",
-        "text": "Anyone who knows the patient's birthday"
+        "text": "A family member who brings the patient to visits and pays the bill"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Verify authority before discussing PHI or obtaining authorizations.",
+    "explanation": "Verify authority before discussing PHI or obtaining authorizations. Who qualifies is defined by state law.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Someone with legal authority (eg, healthcare power of attorney) as defined by law”.",
-      "c": "Not the best answer here; the right answer is “Someone with legal authority (eg, healthcare power of attorney) as defined by law”.",
-      "d": "Not the best answer here; the right answer is “Someone with legal authority (eg, healthcare power of attorney) as defined by law”."
+      "b": "Marriage alone does not make someone a HIPAA personal representative; legal authority such as a healthcare POA or guardianship is required.",
+      "c": "Being the emergency contact does not create legal authority to act for the patient or sign authorizations for release of PHI.",
+      "d": "Involvement in care or paying the bill may allow limited sharing, but it does not confer personal-representative authority."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Faxing to wrong numbers without verification routinely"
+        "text": "Using a cover sheet and sending the full chart so the recipient has context"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Posting faxes on public boards"
+        "text": "Faxing to the recipient's main office number, then calling afterward to confirm"
       },
       {
         "id": "d",
-        "text": "Disabling transmission audits"
+        "text": "Including the diagnosis on the cover sheet so staff route it correctly"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Misdirected faxes are common breaches—confirm before send.",
     "distractorExplanations": {
-      "a": "Verification prevents breaches.",
-      "c": "Public posting is disclosure.",
-      "d": "Audits help investigate."
+      "a": "A cover sheet helps, but faxing the full chart violates minimum necessary, and the number still must be verified before sending.",
+      "c": "Confirming after transmission does not prevent misdirection to a shared main line; the number must be verified or preprogrammed before PHI is sent.",
+      "d": "The cover sheet should carry a confidentiality notice and contacts, not PHI such as a diagnosis that anyone near the machine can read."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only hospital cafeteria menus"
+        "text": "Electronic health records only, not paper charts or spoken information"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "Weather reports"
+        "text": "Health information de-identified under the Safe Harbor method"
       },
       {
         "id": "d",
-        "text": "Publicly posted clinic hours with no patient data"
+        "text": "Employment records held by a covered entity in its role as employer"
       }
     ],
     "correctOptionId": "b",
     "explanation": "PHI is health information that can identify an individual.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Individually identifiable health information in any form”.",
-      "c": "Not the best answer here; the right answer is “Individually identifiable health information in any form”.",
-      "d": "Not the best answer here; the right answer is “Individually identifiable health information in any form”."
+      "a": "Electronic-only describes ePHI under the Security Rule; the Privacy Rule protects identifiable health information on paper, orally, and electronically.",
+      "c": "Information properly de-identified under Safe Harbor (18 identifiers removed) is no longer PHI and is outside the Privacy Rule.",
+      "d": "HIPAA expressly excludes employment records a covered entity holds as an employer from the definition of PHI."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A verbal request from any caller"
+        "text": "A written request from the third party on its letterhead with a purpose"
       },
       {
         "id": "b",
-        "text": "A valid patient authorization (or another permitted disclosure) covering the request"
+        "text": "A valid patient authorization (or another permitted disclosure)"
       },
       {
         "id": "c",
-        "text": "Only the requester's email address"
+        "text": "The patient's verbal permission by phone, noted in the chart by the CMAA"
       },
       {
         "id": "d",
-        "text": "Permission from a pharmaceutical sales rep"
+        "text": "A signed general consent to treat from the first visit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Most non-TPO disclosures require proper authorization or another HIPAA pathway.",
+    "explanation": "Most non-TPO disclosures require proper authorization or another HIPAA pathway. The authorization must cover the specific request.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A valid patient authorization (or another permitted disclosure) covering the request”.",
-      "c": "Not the best answer here; the right answer is “A valid patient authorization (or another permitted disclosure) covering the request”.",
-      "d": "Not the best answer here; the right answer is “A valid patient authorization (or another permitted disclosure) covering the request”."
+      "a": "A requester's letter is not the patient's authorization; non-TPO releases need the patient's signed authorization or another HIPAA pathway.",
+      "c": "A HIPAA authorization must be written and signed with required core elements; a charted verbal permission does not meet that standard.",
+      "d": "Consent to treatment is not a HIPAA authorization; releasing records to a third party needs a specific authorization covering the request."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Whatever is convenient that week"
+        "text": "The HIPAA six-year rule applied to every medical record"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Only social media trends"
+        "text": "Accreditation guidance, which overrides state statutes"
       },
       {
         "id": "d",
-        "text": "Immediate shredding after each visit"
+        "text": "The provider's preference, as long as records are kept secure"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Retention periods are legally and organizationally defined.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “State law, payer, and facility retention policies”.",
-      "c": "Not the best answer here; the right answer is “State law, payer, and facility retention policies”.",
-      "d": "Not the best answer here; the right answer is “State law, payer, and facility retention policies”."
+      "a": "HIPAA's 6-year retention applies to HIPAA compliance documentation, not to medical records, which follow state law and payer rules.",
+      "c": "Accreditation bodies can add requirements but do not override state law; retention follows state law, payer, and facility policy together.",
+      "d": "Retention periods are set by law and organizational policy, not by individual provider preference, even when storage is secure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Every employee can see all celebrity charts"
+        "text": "Every staff member can view any chart after signing a confidentiality pledge"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Passwords are shared at the front desk"
+        "text": "Patients can view their own records through the patient portal on request"
       },
       {
         "id": "d",
-        "text": "Audit logs are disabled"
+        "text": "Clinicians can edit any entry, while front desk staff may view all charts"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Minimum necessary access reduces privacy risk.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Workforce members access only the PHI needed for their job functions”.",
-      "c": "Not the best answer here; the right answer is “Workforce members access only the PHI needed for their job functions”.",
-      "d": "Not the best answer here; the right answer is “Workforce members access only the PHI needed for their job functions”."
+      "a": "A signed pledge does not grant access; role-based controls limit each user to the PHI their job requires under minimum necessary.",
+      "c": "Portal access implements the patient's right of access; role-based access controls govern what workforce members can see.",
+      "d": "Front desk staff need scheduling and demographic data, not every chart; role-based access restricts both viewing and editing by role."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1001,23 +1001,23 @@
       },
       {
         "id": "b",
-        "text": "Diagnoses"
+        "text": "Diagnoses and reasons for the visit"
       },
       {
         "id": "c",
-        "text": "Drug NDCs"
+        "text": "Supplies, drugs, and ambulance services"
       },
       {
         "id": "d",
-        "text": "Place of service"
+        "text": "Inpatient hospital procedures"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ICD-10-CM = diagnoses; CPT/HCPCS = services/supplies.",
     "distractorExplanations": {
-      "b": "Diagnoses are ICD.",
-      "c": "NDC identifies drugs.",
-      "d": "POS is a claim field."
+      "b": "Diagnoses and reasons for the visit are reported with ICD-10-CM codes; CPT describes the procedures and services performed.",
+      "c": "Supplies, drugs, and ambulance services are reported with HCPCS Level II codes, not with CPT (HCPCS Level I) codes.",
+      "d": "Inpatient facility procedures are coded with ICD-10-PCS; CPT is used for physician and outpatient procedures and services."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The patient was on time for the visit"
+        "text": "The service was not authorized by the payer before the visit date"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "The provider's license expired that day always as the only meaning"
+        "text": "The payer did not process the claim within its required timeframe"
       },
       {
         "id": "d",
-        "text": "CPT and ICD mismatched"
+        "text": "The claim was filed before the patient's eligibility was verified"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Track filing limits; appeal/correct within payer rules.",
     "distractorExplanations": {
-      "a": "Appointment punctuality unrelated.",
-      "c": "License issues different denial.",
-      "d": "Code mismatch is another denial reason."
+      "a": "A missing authorization produces a prior-authorization denial; timely filing means the claim reached the payer after its deadline.",
+      "c": "Payer delays fall under prompt-pay rules; a timely filing denial is about the provider submitting the claim too late.",
+      "d": "Unverified coverage leads to an eligibility denial if the patient was not covered; timely filing concerns the submission deadline."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Which exam room to use"
+        "text": "How much the patient owes after the deductible has been met"
       },
       {
         "id": "b",
-        "text": "The provider's lunch break"
+        "text": "Whether a service requires preauthorization before it is performed"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Whether SOAP notes are required"
+        "text": "Which provider is paid when two physicians bill the same service"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Primary vs secondary billing order prevents overpayment.",
     "distractorExplanations": {
-      "a": "Rooms unrelated.",
-      "b": "Lunch unrelated.",
-      "d": "Docs always required clinically."
+      "a": "What the patient owes after the deductible is coinsurance or copay cost-sharing under one plan, not coordination of benefits.",
+      "b": "Preauthorization rules are set by each plan's utilization management; COB decides which of several plans pays first.",
+      "d": "Two providers billing one service triggers duplicate-claim edits; COB applies when one patient has more than one insurance plan."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always guaranteeing Medicaid payment"
+        "text": "Medicaid services that need prior authorization from the state"
       },
       {
         "id": "b",
-        "text": "Workers' comp exclusive remedy"
+        "text": "Commercial plans' explanation of benefits sent after a claim is paid"
       },
       {
         "id": "c",
-        "text": "Dental cleanings exclusively worldwide"
+        "text": "Medicare patients' notice explaining how a processed claim was paid"
       },
       {
         "id": "d",
-        "text": "Medicare situations where a service may not be covered and patient may be financially liable"
+        "text": "Medicare situations where a service may not be covered"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Proper ABN issuance matters before the service when required.",
+    "explanation": "Proper ABN issuance matters before the service when required. The ABN warns the patient before the service that they may be financially liable.",
     "distractorExplanations": {
-      "a": "Not a Medicaid guarantee.",
-      "b": "Different systems.",
-      "c": "Not only dental."
+      "a": "The ABN is an Original Medicare form; Medicaid prior authorization is a separate state process, not an advance beneficiary notice.",
+      "b": "An EOB is sent by commercial payers after processing; the ABN is given to Medicare patients before a possibly noncovered service.",
+      "c": "That is the Medicare Summary Notice (MSN), sent after processing; the ABN is issued before the service is provided."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "Whichever code pays most regardless of documentation"
+        "text": "The diagnosis on the referral or order, even if the note differs"
       },
       {
         "id": "c",
-        "text": "Patient preference for scary-sounding diseases"
+        "text": "The superbill's preprinted code closest to the patient's complaint"
       },
       {
         "id": "d",
-        "text": "Random codebook pages"
+        "text": "Probable or rule-out diagnoses from the outpatient visit"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Codes must be supported; upcoding is fraud risk.",
     "distractorExplanations": {
-      "b": "Payment-driven coding noncompliant.",
-      "c": "Patients don't pick DX codes.",
-      "d": "Random improper."
+      "b": "Codes come from the encounter's provider documentation; when the order and the note differ, the documented diagnosis governs.",
+      "c": "The nearest preprinted code often lacks specificity; the code must match what the provider documented to the highest supported detail.",
+      "d": "Outpatient guidelines prohibit coding uncertain diagnoses (probable, rule out); code the documented signs and symptoms instead."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Is printed on green paper"
+        "text": "Has been paid in full by the primary payer with no patient balance"
       },
       {
         "id": "b",
-        "text": "Has complete/accurate data enabling payer processing without pending for missing info"
+        "text": "Has complete/accurate data enabling payer processing"
       },
       {
         "id": "c",
-        "text": "Contains no diagnosis"
+        "text": "Was submitted electronically rather than on a paper CMS-1500"
       },
       {
         "id": "d",
-        "text": "Uses nickname instead of legal name"
+        "text": "Passed the clearinghouse scrubber, even if the payer later pends it"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Front-desk data quality (subscriber ID, DOB, NPI, POS) drives clean claims.",
+    "explanation": "Front-desk data quality (subscriber ID, DOB, NPI, POS) drives clean claims. A clean claim does not pend for missing information.",
     "distractorExplanations": {
-      "a": "Paper color irrelevant.",
-      "c": "Diagnosis required generally.",
-      "d": "Legal names/IDs needed."
+      "a": "Clean describes an accurate, complete submission, not the payment outcome; a clean claim can still leave a patient balance.",
+      "c": "Submission format does not define a clean claim; a paper CMS-1500 can be clean, and an electronic claim can be missing data.",
+      "d": "Passing scrubber edits is not enough; a claim the payer pends for missing information is by definition not clean."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only clinical vitals"
+        "text": "Daily appointments, no-shows, and cancellations by provider"
       },
       {
         "id": "b",
-        "text": "Sterilizer BI results"
+        "text": "Payroll hours, overtime, and employee reimbursements"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "Employee blood titers"
+        "text": "Supply orders, invoices due, and vendor payments"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Posting accuracy prevents billing disputes.",
     "distractorExplanations": {
-      "a": "Vitals clinical.",
-      "b": "BI is SPD/dental.",
-      "d": "Titers occupational health."
+      "a": "Appointments, no-shows, and cancellations are tracked on the schedule and appointment log, not on the day sheet or A/R ledger.",
+      "b": "Payroll and employee reimbursements are expenses handled by payroll and accounts payable, not patient accounts receivable.",
+      "d": "Vendor invoices and payments are accounts payable (money the office owes); A/R tracks money owed to the office by patients and payers."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Bilateral surgery"
+        "text": "A bilateral procedure is performed during the same operative session"
       },
       {
         "id": "b",
-        "text": "Assistant surgeon"
+        "text": "A distinct procedural service is performed at a separate site that day"
       },
       {
         "id": "c",
-        "text": "Repeat lab test"
+        "text": "A clinical diagnostic lab test is repeated on the same day for new results"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Documentation must support separateness from the procedure's inherent E/M.",
     "distractorExplanations": {
-      "a": "50 bilateral.",
-      "b": "80 assistant.",
-      "c": "91 repeat clinical diagnostic lab."
+      "a": "Bilateral procedures in one session use modifier 50, not modifier 25, which is for a separate E/M on the day of a procedure.",
+      "b": "A distinct procedure at a separate site is reported with modifier 59 (or X{EPSU}); modifier 25 attaches to the E/M code.",
+      "c": "A repeated clinical diagnostic lab test on the same day uses modifier 91; modifier 25 is for a separately identifiable E/M."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Clearly show dates of service, charges, payments, and amount due with appeal/question contacts"
+        "text": "Clearly show dates of service, charges, payments, and amount due"
       },
       {
         "id": "b",
-        "text": "Include other patients' balances 'for comparison'"
+        "text": "Show the balance due only, so patients aren't confused by line items"
       },
       {
         "id": "c",
-        "text": "Hide the provider NPI forever when required on claims differently—confuse patients intentionally"
+        "text": "Show charges and balance due, with insurance payments left to the EOB"
       },
       {
         "id": "d",
-        "text": "Threaten violence"
+        "text": "Be mailed in envelopes showing the specialty, such as 'Oncology Billing'"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Transparent billing is ethical and often regulated by state rules.",
+    "explanation": "Transparent billing is ethical and often regulated by state rules. They should also list a contact for billing questions.",
     "distractorExplanations": {
-      "b": "Others' PHI forbidden.",
-      "c": "Don't intentionally confuse.",
-      "d": "Threats illegal."
+      "b": "Patients need itemized dates, charges, and payments to understand and verify a bill; a bare balance invites disputes.",
+      "c": "Insurance payments and adjustments belong on the statement so the patient sees how the balance was reached, not only on the EOB.",
+      "d": "A specialty name on the envelope discloses PHI to anyone handling the mail; statements should use a neutral return address."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A guarantee of payment in all cases without meeting terms"
+        "text": "A guarantee that the payer will pay once the service is approved"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "Only a clinical consent form"
+        "text": "The patient's signed consent agreeing to the procedure and its risks"
       },
       {
         "id": "d",
-        "text": "An OSHA requirement"
+        "text": "Payer review of medical necessity after the claim has been submitted"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Auth doesn't always guarantee final payment if eligibility/medical necessity fails.",
     "distractorExplanations": {
-      "a": "Not absolute guarantee.",
-      "c": "Consent is separate.",
-      "d": "OSHA is safety."
+      "a": "Authorization is not a payment guarantee; claims can still be denied for eligibility lapses, benefit limits, or medical necessity.",
+      "c": "Informed consent is a clinical agreement between patient and provider; preauthorization is an approval obtained from the payer.",
+      "d": "Review after submission is retrospective or post-payment review; preauthorization and precertification happen before the service."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The fixed amount paid at every visit regardless of plan design"
+        "text": "The fixed dollar amount the patient pays at each office visit for covered care"
       },
       {
         "id": "b",
-        "text": "The amount the patient must pay before the plan begins paying covered services (per plan rules)"
+        "text": "The amount the patient pays before the plan begins paying covered services"
       },
       {
         "id": "c",
-        "text": "The provider's tax ID"
+        "text": "The percentage of covered costs the patient pays after meeting the deductible"
       },
       {
         "id": "d",
-        "text": "A type of CPT modifier"
+        "text": "The monthly amount the patient pays to keep the insurance plan in force"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Deductibles are patient responsibility before insurance payment applies (subject to plan design)",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The amount the patient must pay before the plan begins paying covered services (per plan rules)”.",
-      "c": "Not the best answer here; the right answer is “The amount the patient must pay before the plan begins paying covered services (per plan rules)”.",
-      "d": "Not the best answer here; the right answer is “The amount the patient must pay before the plan begins paying covered services (per plan rules)”."
+      "a": "A fixed amount paid at each visit is a copayment; the deductible is the total the patient pays before the plan starts paying.",
+      "c": "A percentage paid after the deductible is coinsurance; the deductible itself is the amount paid before plan payments begin.",
+      "d": "The monthly payment to keep coverage active is the premium, which is separate from the deductible and other cost-sharing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A patient has no insurance"
+        "text": "A patient's plan requires a primary care referral before a specialist visit"
       },
       {
         "id": "b",
-        "text": "A patient has more than one insurance plan that may cover the same services"
+        "text": "A patient has more than one plan that may cover the same services"
       },
       {
         "id": "c",
-        "text": "Only cash-pay visits occur"
+        "text": "A patient's claim is split between the deductible and coinsurance"
       },
       {
         "id": "d",
-        "text": "The clinic buys new printers"
+        "text": "A patient changes plans mid-year and the old plan has already ended"
       }
     ],
     "correctOptionId": "b",
     "explanation": "COB determines primary vs secondary payment order.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A patient has more than one insurance plan that may cover the same services”.",
-      "c": "Not the best answer here; the right answer is “A patient has more than one insurance plan that may cover the same services”.",
-      "d": "Not the best answer here; the right answer is “A patient has more than one insurance plan that may cover the same services”."
+      "a": "Referral requirements are a gatekeeper rule of one plan (often an HMO); COB applies when two or more plans cover the patient.",
+      "c": "Splitting a claim between deductible and coinsurance is cost-sharing within one plan, not coordination between multiple plans.",
+      "d": "With no overlap in coverage there is nothing to coordinate; services after the change are simply billed to the new plan."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only employee vacation days"
+        "text": "Payments received and adjustments posted to accounts that day"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "Pharmacy inventory par levels"
+        "text": "The patient's itemized charges and balance due after insurance"
       },
       {
         "id": "d",
-        "text": "MRI images"
+        "text": "Payer-approved services and authorization numbers for the visit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Superbills help capture services/diagnoses for billing.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Common diagnoses and procedures to support charge capture for a visit”.",
-      "c": "Not the best answer here; the right answer is “Common diagnoses and procedures to support charge capture for a visit”.",
-      "d": "Not the best answer here; the right answer is “Common diagnoses and procedures to support charge capture for a visit”."
+      "a": "Daily payments and adjustments are recorded on the day sheet; the superbill captures the visit's diagnoses and procedures.",
+      "c": "Itemized charges and balance after insurance appear on the patient statement, produced after claims are processed.",
+      "d": "Authorization numbers are tracked in the authorization log or referral record, not preprinted on the encounter form."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Resubmit the identical claim without review"
+        "text": "File a formal appeal with the payer before reviewing the denial reason code"
       },
       {
         "id": "b",
-        "text": "Review the denial reason, correct the claim/documentation, and resubmit or appeal as appropriate"
+        "text": "Review the denial reason, correct the claim/documentation, and resubmit or appeal"
       },
       {
         "id": "c",
-        "text": "Bill the patient triple automatically"
+        "text": "Bill the patient for the full amount until the payer reprocesses the claim"
       },
       {
         "id": "d",
-        "text": "Delete the patient's chart"
+        "text": "Resubmit the same claim right away, since most missing-info denials clear"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Denial management requires root-cause correction and proper resubmission/appeal.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Review the denial reason, correct the claim/documentation, and resubmit or appeal as appropriate”.",
-      "c": "Not the best answer here; the right answer is “Review the denial reason, correct the claim/documentation, and resubmit or appeal as appropriate”.",
-      "d": "Not the best answer here; the right answer is “Review the denial reason, correct the claim/documentation, and resubmit or appeal as appropriate”."
+      "a": "Missing-information denials are fixed by correcting and resubmitting; appealing without reading the reason code wastes time.",
+      "c": "Shifting a payer-side billing error to the patient is improper; the office must correct the claim before billing any patient balance.",
+      "d": "Resubmitting an unchanged claim triggers a duplicate or repeat denial; the missing information must be added first."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "Interrupting with solutions immediately"
+        "text": "Preparing your reply while the patient finishes explaining the concern"
       },
       {
         "id": "c",
-        "text": "Looking only at the computer never the patient"
+        "text": "Typing the patient's words verbatim while keeping eyes on the screen"
       },
       {
         "id": "d",
-        "text": "Finishing every sentence for the patient"
+        "text": "Offering quick reassurance so the patient feels heard right away"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Builds rapport and reduces errors in intake.",
     "distractorExplanations": {
-      "b": "Interruptions block info.",
-      "c": "Eye contact/attention matters culturally appropriately.",
-      "d": "Don't overtake their narrative."
+      "b": "Planning a reply while the patient talks splits attention and misses details; active listening means attending, then paraphrasing.",
+      "c": "Verbatim typing with eyes on the screen ignores nonverbal cues such as tone and body language, which active listening requires.",
+      "d": "Premature reassurance is a recognized communication barrier; it cuts off the patient before the concern is understood and clarified."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Match their insults"
+        "text": "Ask the patient to leave and reschedule before hearing the complaint"
       },
       {
         "id": "b",
-        "text": "Stay calm, set boundaries, ensure safety, and involve supervisor/security as needed"
+        "text": "Stay calm, set boundaries, ensure safety, and involve supervisor/security"
       },
       {
         "id": "c",
-        "text": "Reveal another patient's information to distract them"
+        "text": "Explain the policy firmly and repeat it until the patient accepts it"
       },
       {
         "id": "d",
-        "text": "Lock them in a room alone without protocol"
+        "text": "Handle it alone at the desk so other staff aren't pulled from their work"
       }
     ],
     "correctOptionId": "b",
     "explanation": "De-escalation and safety first; document incidents.",
     "distractorExplanations": {
-      "a": "Insults escalate.",
-      "c": "PHI bait is illegal.",
-      "d": "Unsafe confinement risks."
+      "a": "Dismissing an upset patient without listening usually escalates the situation; de-escalation starts with calm acknowledgment.",
+      "c": "Repeating policy at an angry patient escalates conflict; acknowledge feelings, set boundaries, and bring in a supervisor if needed.",
+      "d": "Hostile encounters need supervisor or security involvement for safety; handling them alone puts the CMAA and other patients at risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Means diagnosing their disease"
+        "text": "Means feeling sorry for the patient and expressing pity for their difficult situation"
       },
       {
         "id": "b",
-        "text": "Requires sharing PHI of similar patients"
+        "text": "Involves sharing the same emotion as the patient to show that you truly care"
       },
       {
         "id": "c",
-        "text": "Seeks to understand the patient's feelings/perspective without necessarily sharing the same emotion"
+        "text": "Seeks to understand the patient's feelings without necessarily sharing the same emotion"
       },
       {
         "id": "d",
-        "text": "Is unprofessional"
+        "text": "Focuses on fixing the patient's problem quickly rather than on how they feel"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Empathic statements validate experience; remain professional boundaries.",
     "distractorExplanations": {
-      "a": "Not diagnosing.",
-      "b": "Don't share others' PHI.",
-      "d": "Empathy is professional."
+      "a": "Feeling sorry for and pitying the patient describes sympathy; empathy is understanding the patient's perspective without pity.",
+      "b": "Taking on the patient's emotion is sympathy or emotional contagion; empathy understands feelings while staying professionally steady.",
+      "d": "Jumping to fix the problem is problem-solving, not empathy; empathy first acknowledges and understands the patient's feelings."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Sharing charts with friends for learning without approval"
+        "text": "Sharing patient details with coworkers as long as they work in the clinic"
       },
       {
         "id": "b",
-        "text": "Posting de-identified funny cases that are actually identifiable"
+        "text": "Discussing cases freely once the patient's name has been left out"
       },
       {
         "id": "c",
-        "text": "Selling celebrity visit rumors"
+        "text": "Releasing information to family members who call asking about the patient"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "Even 'interesting cases' need authorization or proper de-identification standards.",
     "distractorExplanations": {
-      "a": "Friends unauthorized.",
-      "b": "Inadequate de-ID fails.",
-      "c": "Rumors unethical/illegal."
+      "a": "Working in the same clinic does not give a need to know; patient information is shared only with staff who need it for their role.",
+      "b": "Removing the name alone does not de-identify a case; age, condition, and visit details can still identify the patient.",
+      "c": "Family callers need the patient's agreement or personal-representative authority before PHI is shared with them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Becoming business partners with every patient casually"
+        "text": "Friending patients on social media to keep them engaged"
       },
       {
         "id": "b",
-        "text": "Avoiding dual relationships that exploit patients and keeping communications appropriate"
+        "text": "Avoiding dual relationships that exploit patients"
       },
       {
         "id": "c",
-        "text": "Dating patients while they are under active care as best practice"
+        "text": "Offering favored patients priority slots in return for small gifts"
       },
       {
         "id": "d",
-        "text": "Accepting lavish gifts that influence scheduling unfairly"
+        "text": "Sharing personal problems with patients to build rapport and trust"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Follow office policies on gifts/relationships.",
+    "explanation": "Follow office policies on gifts/relationships. Communications with patients should stay professional and appropriate.",
     "distractorExplanations": {
-      "a": "Dual relationships risky.",
-      "c": "Dating patients unethical generally.",
-      "d": "Gift policies prevent favoritism."
+      "a": "Personal social media connections with patients blur professional boundaries and create privacy risks; use official practice channels.",
+      "c": "Trading scheduling priority for gifts creates favoritism and a conflict of interest; gift policies exist to prevent exactly this.",
+      "d": "Personal self-disclosure reverses the professional relationship and shifts focus to the staff member; rapport comes from respectful service."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Join in with more details"
+        "text": "Wait until it happens again before raising it with anyone"
       },
       {
         "id": "b",
-        "text": "Post it anonymously online"
+        "text": "Report it straight to the patient so they can file a complaint"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore repeated systemic violations"
+        "text": "Leave it to the privacy officer to catch in the next audit"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Everyone is responsible for the privacy culture.",
     "distractorExplanations": {
-      "a": "Joining worsens breach.",
-      "b": "Online posting is a breach.",
-      "d": "Systemic issues need reporting."
+      "a": "A single overheard disclosure is already a privacy breach; it should be addressed promptly rather than waiting for a pattern.",
+      "b": "Breach assessment and patient notification are handled by the privacy officer under policy, not by an individual coworker.",
+      "d": "Audits of EHR access do not capture verbal gossip; workforce members are expected to speak up and report per policy."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The front desk diagnosing risks independently"
+        "text": "The CMAA who schedules the procedure and collects the signed form"
       },
       {
         "id": "b",
-        "text": "The billing company alone"
+        "text": "The nurse or MA who prepares the patient on the day of the procedure"
       },
       {
         "id": "c",
-        "text": "A pharmaceutical sales rep"
+        "text": "The facility's risk manager, who reviews consent forms for legal accuracy"
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Admin staff witness/organize consents but don't replace clinician disclosure.",
     "distractorExplanations": {
-      "a": "Front desk doesn't give clinical informed consent alone.",
-      "b": "Billing ≠ consent.",
-      "c": "Reps don't consent patients."
+      "a": "A CMAA may provide forms or witness a signature but cannot explain risks, benefits, and alternatives, which is the provider's duty.",
+      "b": "Clinical staff may reinforce teaching, but the legal duty to disclose risks and obtain informed consent rests with the performing provider.",
+      "c": "Risk management designs and audits consent forms; it does not conduct the informed consent discussion with the patient."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Apology, correction, and prevention steps without blaming the patient unfairly"
+        "text": "Apology, correction, and prevention steps without blaming the patient"
       },
       {
         "id": "b",
-        "text": "Hiding the error in claims"
+        "text": "A discount on the visit in place of correcting the registration record"
       },
       {
         "id": "c",
-        "text": "Charging an 'embarrassment fee'"
+        "text": "Correcting the record quietly without telling the patient about the error"
       },
       {
         "id": "d",
-        "text": "Yelling that the patient filled forms wrong"
+        "text": "An apology and an explanation of which staff member made the mistake"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Service recovery rebuilds trust and reduces complaints/reviews fallout.",
     "distractorExplanations": {
-      "b": "Hiding creates compliance risk.",
-      "c": "Fees punitive/unethical.",
-      "d": "Shared responsibility, professional tone."
+      "b": "Compensation does not fix the error; the registration record must be corrected or the mistake will cause claim and safety problems.",
+      "c": "Quiet correction skips the apology and transparency that rebuild trust; service recovery includes acknowledging the error.",
+      "d": "Naming a coworker shifts blame and looks unprofessional; service recovery focuses on fixing the error and preventing a repeat."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Accepted as 'just joking'"
+        "text": "Settled informally between the coworkers involved before any report to HR"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "Retaliated against reporters"
+        "text": "Reported only when a witness can confirm what happened"
       },
       {
         "id": "d",
-        "text": "Filmed and posted publicly with PHI"
+        "text": "Tolerated when the harasser is a patient, since patients aren't employees"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Follow zero-tolerance procedures; protect reporters from retaliation.",
     "distractorExplanations": {
-      "a": "Jokes can be harassment.",
-      "c": "Retaliation prohibited.",
-      "d": "Public posting worsens harm/privacy."
+      "a": "Requiring informal resolution first deters reporting and can expose victims; harassment should be reported through HR policy.",
+      "c": "A witness is not required to report harassment; employers must investigate complaints and protect reporters from retaliation.",
+      "d": "Employers must also protect staff from harassment by patients and other third parties; it is reported and addressed under policy."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Announce the full diagnosis and lab values on voicemail"
+        "text": "Leave the test name and result, since it is the patient's own voicemail"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "Discuss results with whoever answers the phone"
+        "text": "Give the results to the spouse who answers, since family can relay them"
       },
       {
         "id": "d",
-        "text": "Post the message on the clinic Facebook page"
+        "text": "Ask whoever answers to confirm the patient's DOB, then share results"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Messages should avoid unnecessary PHI disclosure.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Leave minimal necessary information per policy to protect privacy”.",
-      "c": "Not the best answer here; the right answer is “Leave minimal necessary information per policy to protect privacy”.",
-      "d": "Not the best answer here; the right answer is “Leave minimal necessary information per policy to protect privacy”."
+      "a": "Others may hear a home or shared voicemail; messages should give only minimum necessary details such as name and callback number.",
+      "c": "A spouse is not authorized by default; results go to the patient unless the patient has agreed to share them with that person.",
+      "d": "A third party who knows the DOB is still not the patient; confirming a DOB does not authorize disclosure to that person."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1855,7 +1855,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Agreeing that policies never apply"
+        "text": "Agreeing with the patient's complaint to calm them, even if it's inaccurate"
       },
       {
         "id": "b",
@@ -1863,19 +1863,19 @@
       },
       {
         "id": "c",
-        "text": "Sharing other patients' stories in detail"
+        "text": "Sharing a similar personal experience so the patient feels less alone"
       },
       {
         "id": "d",
-        "text": "Avoiding eye contact and walking away"
+        "text": "Waiving policies like late fees whenever the patient seems upset"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Empathy validates emotion without abandoning professional boundaries.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Acknowledging feelings while remaining professional and solution-focused”.",
-      "c": "Not the best answer here; the right answer is “Acknowledging feelings while remaining professional and solution-focused”.",
-      "d": "Not the best answer here; the right answer is “Acknowledging feelings while remaining professional and solution-focused”."
+      "a": "Agreeing with inaccurate claims misleads the patient; empathy acknowledges feelings without endorsing incorrect facts.",
+      "c": "Personal self-disclosure shifts the focus to the staff member; empathy keeps attention on the patient's feelings and needs.",
+      "d": "Empathy does not mean abandoning policy; it acknowledges feelings while applying office policies consistently."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Following the attendance policy"
+        "text": "Referring patients to the provider's chosen in-network lab"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Clocking out on time"
+        "text": "Declining a patient's small holiday gift per office gift policy"
       },
       {
         "id": "d",
-        "text": "Attending HIPAA training"
+        "text": "Scheduling a relative as a patient using the standard booking rules"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Kickbacks and biased referrals violate ethics and often law (e.g., anti-kickback rules)",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Accepting kickbacks to refer patients to a specific vendor”.",
-      "c": "Not the best answer here; the right answer is “Accepting kickbacks to refer patients to a specific vendor”.",
-      "d": "Not the best answer here; the right answer is “Accepting kickbacks to refer patients to a specific vendor”."
+      "a": "Using a provider-selected in-network lab is a normal referral practice with no personal gain to the CMAA, so it is not a conflict.",
+      "c": "Following the gift policy is how staff avoid conflicts of interest; declining a gift is not itself a conflict.",
+      "d": "A conflict arises when personal interest changes decisions; booking a relative under the same rules as everyone else does not."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Rely on a minor child to interpret complex medical information routinely"
+        "text": "Ask the patient's adult family member to interpret the consent forms"
       },
       {
         "id": "b",
@@ -1929,19 +1929,19 @@
       },
       {
         "id": "c",
-        "text": "Speak louder in English"
+        "text": "Use a bilingual coworker from billing who speaks the patient's language"
       },
       {
         "id": "d",
-        "text": "Skip informed forms entirely"
+        "text": "Give the patient English forms and a translation app to complete alone"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Qualified interpreters support accurate, ethical communication.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Use a qualified interpreter/service per facility policy”.",
-      "c": "Not the best answer here; the right answer is “Use a qualified interpreter/service per facility policy”.",
-      "d": "Not the best answer here; the right answer is “Use a qualified interpreter/service per facility policy”."
+      "a": "Family interpreters may omit or alter content and compromise privacy; Section 1557 favors qualified interpreters for medical communication.",
+      "c": "Speaking a language is not the same as being a qualified medical interpreter; untrained staff can mistranslate clinical terms.",
+      "d": "Machine translation is unreliable for medical and consent content; patients with limited English need a qualified interpreter."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1954,7 +1954,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Becoming financially entangled with patients for personal gain"
+        "text": "Giving patients your personal cell number for faster scheduling"
       },
       {
         "id": "b",
@@ -1962,19 +1962,19 @@
       },
       {
         "id": "c",
-        "text": "Asking patients for large personal loans"
+        "text": "Accepting a patient's offer of free services from their own business"
       },
       {
         "id": "d",
-        "text": "Dating patients while accessing their charts for curiosity"
+        "text": "Looking up a friend's chart to update them on their test results"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Administrative staff must maintain professional, non-exploitative boundaries.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Maintaining a therapeutic, respectful relationship without exploitation”.",
-      "c": "Not the best answer here; the right answer is “Maintaining a therapeutic, respectful relationship without exploitation”.",
-      "d": "Not the best answer here; the right answer is “Maintaining a therapeutic, respectful relationship without exploitation”."
+      "a": "Personal phone contact blurs professional boundaries and bypasses documented office channels; scheduling goes through the practice.",
+      "c": "Free services from a patient create a dual relationship and a sense of obligation, which crosses professional boundaries.",
+      "d": "Accessing a chart without a job need violates HIPAA, and giving results is outside the CMAA role even for a friend."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"

@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Instruct overnight fasting per protocol and confirm instructions"
+        "text": "Instruct overnight fasting per protocol"
       },
       {
         "id": "b",
-        "text": "Skip preparation instructions to save time"
+        "text": "Tell the patient to stop all medications that day"
       },
       {
         "id": "c",
-        "text": "Tell the patient to eat a large breakfast before the draw"
+        "text": "Allow coffee with cream before the morning draw"
       },
       {
         "id": "d",
-        "text": "Schedule immediately after a holiday meal"
+        "text": "Ask the patient to fast for 4 hours, with water"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Fasting labs require clear preparation instructions to avoid invalid results and repeat visits.",
+    "explanation": "Fasting labs require clear preparation instructions to avoid invalid results and repeat visits; confirm the patient understands the instructions.",
     "distractorExplanations": {
-      "b": "Omitting prep causes errors.",
-      "c": "Food can alter lipid results.",
-      "d": "Post-meal timing may invalidate fasting requirements."
+      "b": "Patients usually keep taking prescribed medications unless the provider says otherwise; fasting means no food or caloric drinks.",
+      "c": "Cream and sugar add fat and calories that break the fast; only water is allowed before a fasting lipid draw.",
+      "d": "A fasting lipid panel typically needs 9 to 12 hours without food; 4 hours is too short to count as fasting."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -44,7 +44,7 @@
       },
       {
         "id": "b",
-        "text": "Resubmit the same claim without any changes"
+        "text": "Resubmit the same claim unchanged and wait for payment"
       },
       {
         "id": "c",
@@ -58,7 +58,7 @@
     "correctOptionId": "a",
     "explanation": "Denials require review of documentation/medical necessity criteria and proper appeal or correction workflows.",
     "distractorExplanations": {
-      "b": "Resubmitting an unchanged claim usually gets the same denial.",
+      "b": "Resubmitting an unchanged claim usually triggers the same denial; the medical-necessity issue must be reviewed first.",
       "c": "Changing codes without documentation support is fraud.",
       "d": "Billing the patient before reviewing the denial and appeal rights is premature and may be prohibited."
     },
@@ -180,7 +180,7 @@
       },
       {
         "id": "c",
-        "text": "The patient's preferred appointment times"
+        "text": "The patient's preferred pharmacy and appointment times"
       },
       {
         "id": "d",
@@ -191,7 +191,7 @@
     "explanation": "Eligibility checks focus on active coverage, benefits, and authorization/referral requirements.",
     "distractorExplanations": {
       "b": "Employer details may be on file but do not confirm coverage.",
-      "c": "Scheduling preferences are not part of an eligibility check.",
+      "c": "Pharmacy and scheduling preferences are registration details; they do not confirm active coverage or referral rules.",
       "d": "Medical history is clinical intake, not insurance verification."
     },
     "difficulty": "easy",
@@ -205,7 +205,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Capture diagnoses and services for billing from the visit"
+        "text": "Capture diagnoses and services for billing"
       },
       {
         "id": "b",
@@ -213,19 +213,19 @@
       },
       {
         "id": "c",
-        "text": "Replace the entire EHR"
+        "text": "Record the patient's consent to treatment"
       },
       {
         "id": "d",
-        "text": "Document sterile technique steps"
+        "text": "Itemize the remittance advice sent by the payer"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Superbills list common diagnoses/procedures to support charge capture for the encounter.",
+    "explanation": "Superbills list common diagnoses/procedures to support charge capture for the encounter; they capture billing data from the visit.",
     "distractorExplanations": {
       "b": "It is not a controlled-substance prescription form.",
-      "c": "It supplements billing capture, not replaces the EHR.",
-      "d": "Sterile technique is clinical documentation."
+      "c": "Consent to treatment is a separate signed form; the superbill lists the codes and charges for the visit.",
+      "d": "The remittance advice comes from the payer after adjudication; the superbill is created at the visit, before the claim."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -312,7 +312,7 @@
       },
       {
         "id": "c",
-        "text": "Remove the page and rewrite the entry"
+        "text": "Remove the page and rewrite the entire entry"
       },
       {
         "id": "d",
@@ -323,7 +323,7 @@
     "explanation": "Legal medical records require transparent corrections: single line, initials/date, no obliteration.",
     "distractorExplanations": {
       "b": "Correction fluid hides the original entry, which is not allowed.",
-      "c": "Removing pages destroys part of the legal record.",
+      "c": "Removing or replacing a page destroys part of the legal record and looks like tampering, even if rewritten neatly.",
       "d": "Obliterating the original entry makes the record look altered."
     },
     "difficulty": "easy",
@@ -345,7 +345,7 @@
       },
       {
         "id": "c",
-        "text": "A patient schedules an annual wellness visit"
+        "text": "A patient schedules an annual Medicare wellness visit"
       },
       {
         "id": "d",
@@ -357,7 +357,7 @@
     "distractorExplanations": {
       "a": "Cash payment involves no payer, so no authorization is needed.",
       "b": "Records requests fall under HIPAA access rules, not payer approval.",
-      "c": "Routine preventive visits generally do not need prior authorization."
+      "c": "Medicare's annual wellness visit is a covered preventive service that generally needs no prior authorization."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Patients can always self-refer under every plan without review"
+        "text": "PPO plans require a PCP referral for every specialist visit"
       },
       {
         "id": "b",
-        "text": "Referrals are never needed in managed care"
+        "text": "A referral means the payer has approved payment in full"
       },
       {
         "id": "c",
-        "text": "Many HMO plans require referrals/authorizations before specialty care"
+        "text": "Many HMO plans require referrals before specialty care"
       },
       {
         "id": "d",
-        "text": "Referrals replace medical records"
+        "text": "Original Medicare requires a referral for each specialist"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Managed care plans often require referrals or authorizations for specialty services.",
+    "explanation": "Managed care plans often require referrals or authorizations for specialty services; HMO plans are the classic example.",
     "distractorExplanations": {
-      "a": "Plan rules vary; many restrict self-referral.",
-      "b": "Many plans do require them.",
-      "d": "Referrals authorize care pathways; they do not replace records."
+      "a": "PPOs typically let members see in-network specialists without a referral; that confuses PPO rules with HMO rules.",
+      "b": "A referral directs care but is not a payment guarantee or prior authorization; the claim can still be denied.",
+      "d": "Original Medicare has no referral requirement for specialists; many Medicare Advantage HMOs do require one."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -448,7 +448,7 @@
       },
       {
         "id": "d",
-        "text": "60°C (140°F) in a dishwasher cycle for an hour"
+        "text": "160°C (320°F) in dry heat for about 15 minutes"
       }
     ],
     "correctOptionId": "c",
@@ -456,7 +456,7 @@
     "distractorExplanations": {
       "a": "Boiling at normal pressure does not reliably kill bacterial spores.",
       "b": "Alcohol is a disinfectant, not a sterilizing method for instruments.",
-      "d": "Dishwasher temperatures only sanitize; they do not sterilize."
+      "d": "Dry-heat sterilization at 160°C needs about 2 hours; 15 minutes confuses dry heat with steam cycle times."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Toward the midline"
+        "text": "Toward the midline of the body"
       },
       {
         "id": "b",
@@ -543,7 +543,7 @@
       },
       {
         "id": "c",
-        "text": "Toward the feet"
+        "text": "Toward the front of the body"
       },
       {
         "id": "d",
@@ -553,8 +553,8 @@
     "correctOptionId": "b",
     "explanation": "Proximal means nearer to the trunk/origin; distal means farther.",
     "distractorExplanations": {
-      "a": "Toward midline is medial.",
-      "c": "Toward the feet is inferior/caudal.",
+      "a": "Moving toward the midline of the body is the definition of medial, not proximal.",
+      "c": "Toward the front of the body is anterior (ventral); proximal refers to nearness to the trunk or origin.",
       "d": "That defines distal."
     },
     "difficulty": "easy",
@@ -704,7 +704,7 @@
       },
       {
         "id": "b",
-        "text": "Subcutaneously into the abdomen"
+        "text": "Subcutaneously into the back of the upper arm"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "Orally as a chewable tablet"
+        "text": "Sublingually as a tablet dissolved under the tongue"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Epinephrine auto-injectors are designed for IM injection into the anterolateral thigh.",
     "distractorExplanations": {
-      "b": "IM thigh is preferred over SQ abdomen for auto-injectors.",
+      "b": "Auto-injectors are designed for IM delivery into the thigh; subcutaneous arm injection absorbs more slowly.",
       "c": "Patients do not self-administer IV epinephrine at home.",
-      "d": "Oral epinephrine is not used for anaphylaxis rescue."
+      "d": "No sublingual epinephrine tablet is the standard anaphylaxis rescue; auto-injectors deliver it intramuscularly."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -811,7 +811,7 @@
       },
       {
         "id": "d",
-        "text": "Where the service was performed"
+        "text": "The place where the service was performed"
       }
     ],
     "correctOptionId": "b",
@@ -819,7 +819,7 @@
     "distractorExplanations": {
       "a": "Procedures and services are reported with CPT.",
       "c": "Drugs, supplies, and equipment are HCPCS Level II.",
-      "d": "Location is reported with place-of-service codes."
+      "d": "Where the service took place is reported with place-of-service codes, not ICD-10-CM diagnosis codes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -832,11 +832,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Hospital room colors"
+        "text": "Diagnoses and reasons for the encounter"
       },
       {
         "id": "b",
-        "text": "Lab reference ranges"
+        "text": "Drugs, supplies, and durable equipment"
       },
       {
         "id": "c",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "Patient race and ethnicity"
+        "text": "The place-of-service location"
       }
     ],
     "correctOptionId": "c",
     "explanation": "CPT reports procedures/services for billing and documentation linkage.",
     "distractorExplanations": {
-      "a": "Facility aesthetics are unrelated.",
-      "b": "Reference ranges are lab data.",
-      "d": "Demographics are not CPT."
+      "a": "Diagnoses and encounter reasons are reported with ICD-10-CM codes, not CPT codes.",
+      "b": "Drugs, supplies and durable medical equipment are reported with HCPCS Level II codes, not CPT.",
+      "d": "The setting of care is reported with two-digit place-of-service codes on the claim, not with CPT."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -873,7 +873,7 @@
       },
       {
         "id": "c",
-        "text": "Before entering a clean supply room"
+        "text": "Before putting on sterile gloves for a dressing change"
       },
       {
         "id": "d",
@@ -885,7 +885,7 @@
     "distractorExplanations": {
       "a": "Alcohol rub is appropriate before routine patient contact when hands are not soiled.",
       "b": "Alcohol rub is acceptable after glove removal if hands are not visibly soiled.",
-      "c": "Alcohol rub is fine before entering a clean supply area."
+      "c": "Alcohol rub is acceptable before donning sterile gloves for a clinical procedure when hands are not soiled."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The center tip of the index finger"
+        "text": "The center tip of the index finger, along the prints"
       },
       {
         "id": "b",
@@ -949,7 +949,7 @@
     "correctOptionId": "d",
     "explanation": "Use the fleshy palmar surface of the middle or ring finger, off-center and perpendicular to the fingerprint lines, and wipe away the first drop.",
     "distractorExplanations": {
-      "a": "The index fingertip is more sensitive and callused; the center tip is near bone.",
+      "a": "The index fingertip is more sensitive and callused, the tip is near bone, and cutting along the prints lets blood run.",
       "b": "The thumb has a pulse and thicker tissue and is not recommended.",
       "c": "Heel sticks are used for infants, not adults."
     },
@@ -1261,7 +1261,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Stomach"
+        "text": "Gastric mucosa"
       },
       {
         "id": "b",
@@ -1279,7 +1279,7 @@
     "correctOptionId": "d",
     "explanation": "The small intestine, with its villi and microvilli, absorbs most nutrients. The large intestine mainly absorbs water and electrolytes.",
     "distractorExplanations": {
-      "a": "The stomach mixes and begins digesting food but absorbs little besides some water, alcohol, and certain drugs.",
+      "a": "The stomach lining mixes and starts digesting food but absorbs little besides some water, alcohol and certain drugs.",
       "b": "The esophagus only transports food to the stomach.",
       "c": "The large intestine absorbs mainly water and electrolytes."
     },
@@ -1331,7 +1331,7 @@
       },
       {
         "id": "b",
-        "text": "Gray-top (sodium fluoride) tube"
+        "text": "Gray-top (sodium fluoride/potassium oxalate) tube"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Green-top (heparin) tube"
+        "text": "Light-blue-top (sodium citrate) tube"
       }
     ],
     "correctOptionId": "c",
     "explanation": "CLSI order: blood cultures/sterile, light blue (citrate), red or gold (serum), green (heparin), lavender (EDTA), gray (fluoride/oxalate). Drawing sterile specimens first prevents contamination and additive carryover.",
     "distractorExplanations": {
       "a": "EDTA comes near the end; drawn early, its carryover can falsely raise potassium and lower calcium in later tubes.",
-      "b": "Gray-top fluoride tubes are drawn last.",
-      "d": "Heparin tubes are drawn after citrate and serum tubes, not first."
+      "b": "Gray-top fluoride/oxalate tubes are drawn last in the CLSI order, after lavender EDTA tubes.",
+      "d": "Citrate tubes come first only when no blood cultures are ordered; sterile culture bottles precede them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1500,7 +1500,7 @@
       },
       {
         "id": "c",
-        "text": "Offering a chaperone"
+        "text": "Threatening to restrain a patient who refuses care"
       },
       {
         "id": "d",
@@ -1512,7 +1512,7 @@
     "distractorExplanations": {
       "a": "Accurate documentation is appropriate.",
       "b": "Consented care is not battery.",
-      "c": "Chaperones support safety/comfort."
+      "c": "A threat that creates fear of contact is assault; battery requires actual unauthorized touching."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Gloves replace the need for hand hygiene"
+        "text": "Wearing gloves replaces the need for hand hygiene afterward"
       },
       {
         "id": "d",
-        "text": "Only visibly ill patients need precautions"
+        "text": "Patients without symptoms need no special precautions"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Standard Precautions treat all patients' blood/body fluids as potentially infectious.",
     "distractorExplanations": {
       "a": "Standard Precautions apply to every patient, not only known infections.",
-      "c": "Hand hygiene is still required after removing gloves.",
-      "d": "People without symptoms can still carry bloodborne pathogens."
+      "c": "Gloves can have defects and hands get contaminated during removal, so hand hygiene is still required afterward.",
+      "d": "People without symptoms can still carry bloodborne pathogens, so precautions apply to every patient."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1595,11 +1595,11 @@
       },
       {
         "id": "b",
-        "text": "Minors never need anyone's consent for care"
+        "text": "Minors age 16 and older may consent to any care"
       },
       {
         "id": "c",
-        "text": "School staff can consent for any student's care"
+        "text": "School nurses can consent for any student's routine care"
       },
       {
         "id": "d",
@@ -1609,8 +1609,8 @@
     "correctOptionId": "a",
     "explanation": "Parental/guardian consent is usual, but state laws create exceptions for emancipated minors and certain sensitive services.",
     "distractorExplanations": {
-      "b": "Minors generally need a parent's or guardian's consent.",
-      "c": "Teachers and school staff cannot give general medical consent.",
+      "b": "There is no general age-16 rule; minors consent alone only under specific state exceptions like emancipation.",
+      "c": "School staff, including nurses, cannot give general medical consent in place of a parent or guardian.",
       "d": "Minors consent alone only under specific state exceptions, such as emancipation."
     },
     "difficulty": "hard",
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Written only after the manager assigns blame"
+        "text": "Written after the manager decides who was at fault"
       },
       {
         "id": "b",
@@ -1642,7 +1642,7 @@
     "correctOptionId": "c",
     "explanation": "Incident reports document facts for risk management; they are handled per policy and are not public notices.",
     "distractorExplanations": {
-      "a": "Reports should be objective and timely, not blame-focused.",
+      "a": "Incident reports are written promptly and objectively; assigning fault is not part of the report or a precondition.",
       "b": "Incident reports are kept separate from the chart; the record notes only the facts of care.",
       "d": "Near misses and events without harm should also be reported."
     },
@@ -1657,15 +1657,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Hiding risks to improve compliance"
+        "text": "Withholding risks so the patient agrees to treatment"
       },
       {
         "id": "b",
-        "text": "Respecting a capacitated patient's informed decisions about care"
+        "text": "Respecting a capacitated patient's informed decisions"
       },
       {
         "id": "c",
-        "text": "Making decisions solely to maximize clinic revenue"
+        "text": "Doing what most benefits the patient, as the provider sees it"
       },
       {
         "id": "d",
@@ -1675,8 +1675,8 @@
     "correctOptionId": "b",
     "explanation": "Autonomy respects informed patients' rights to accept or refuse care.",
     "distractorExplanations": {
-      "a": "Withholding risks undermines informed consent.",
-      "c": "Revenue alone is not an ethical care principle.",
+      "a": "Withholding risks to gain agreement is paternalism and defeats informed consent, the opposite of autonomy.",
+      "c": "Acting on the provider's view of the patient's good describes beneficence (or paternalism), not autonomy.",
       "d": "Forcing care against capacitated refusal violates autonomy."
     },
     "difficulty": "easy",
@@ -1735,7 +1735,7 @@
       },
       {
         "id": "d",
-        "text": "Be told only the benefits of the procedure"
+        "text": "Be told the benefits and the provider's recommendation"
       }
     ],
     "correctOptionId": "a",
@@ -1743,7 +1743,7 @@
     "distractorExplanations": {
       "b": "Signing without explanation is not informed consent.",
       "c": "Consent must be the patient's voluntary decision.",
-      "d": "Risks and alternatives must also be disclosed."
+      "d": "Benefits and a recommendation are not enough; risks and alternatives must also be disclosed before consent."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1793,7 +1793,7 @@
       },
       {
         "id": "b",
-        "text": "Test all employees for HIV every year"
+        "text": "Test exposed employees for HIV and hepatitis every year"
       },
       {
         "id": "c",
@@ -1807,7 +1807,7 @@
     "correctOptionId": "a",
     "explanation": "OSHA BBP standards mandate exposure control plans, training, PPE, and post-exposure processes.",
     "distractorExplanations": {
-      "b": "The standard does not require routine HIV testing of employees.",
+      "b": "The standard requires post-exposure evaluation and follow-up, not routine yearly HIV or hepatitis testing of staff.",
       "c": "Employers must provide PPE at no cost to employees.",
       "d": "There is no hepatitis C vaccine; employers must offer the hepatitis B vaccine."
     },
@@ -1826,7 +1826,7 @@
       },
       {
         "id": "b",
-        "text": "Schedule appointments"
+        "text": "Give injections delegated by the supervising provider"
       },
       {
         "id": "c",
@@ -1840,7 +1840,7 @@
     "correctOptionId": "a",
     "explanation": "Diagnosis and prescribing are licensed-provider functions outside MA scope.",
     "distractorExplanations": {
-      "b": "Scheduling is administrative within role.",
+      "b": "Giving injections under provider delegation is within trained MA scope in most states, so it is permitted.",
       "c": "CLIA-waived testing is often within trained MA scope.",
       "d": "Vitals are common MA duties."
     },
@@ -1867,7 +1867,7 @@
       },
       {
         "id": "d",
-        "text": "Any patient dissatisfaction"
+        "text": "Intentional touching of a patient without consent"
       }
     ],
     "correctOptionId": "c",
@@ -1875,7 +1875,7 @@
     "distractorExplanations": {
       "a": "Good outcomes are not negligence.",
       "b": "Meeting standards helps prevent negligence claims.",
-      "d": "Dissatisfaction alone is not negligence."
+      "d": "Intentional unauthorized touching is battery, an intentional tort; negligence is an unintentional breach of duty."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Names a person to make health decisions"
+        "text": "Names a person to make health decisions for the patient"
       },
       {
         "id": "b",
@@ -1906,7 +1906,7 @@
     "correctOptionId": "c",
     "explanation": "Living wills document preferences for end-of-life/life-sustaining care when the patient lacks capacity.",
     "distractorExplanations": {
-      "a": "Naming a decision-maker is a health care proxy or durable power of attorney.",
+      "a": "Naming a decision-maker is done with a health care proxy or durable power of attorney for health care, not a living will.",
       "b": "Control over finances is a financial power of attorney.",
       "d": "Organ donation uses a separate registry or document."
     },
@@ -1933,7 +1933,7 @@
       },
       {
         "id": "d",
-        "text": "Filing records securely"
+        "text": "Faxing records to a specialist for treatment"
       }
     ],
     "correctOptionId": "a",
@@ -1941,7 +1941,7 @@
     "distractorExplanations": {
       "b": "Treatment-related sharing with the care team is permitted.",
       "c": "Identity verification protects against wrongful disclosure.",
-      "d": "Secure filing protects privacy."
+      "d": "HIPAA permits sharing PHI with another provider for treatment, so sending records to a specialist is allowed."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1966,7 +1966,7 @@
       },
       {
         "id": "d",
-        "text": "Performed only in a full reference lab"
+        "text": "Restricted to CLIA-certified reference laboratories"
       }
     ],
     "correctOptionId": "b",
@@ -1974,7 +1974,7 @@
     "distractorExplanations": {
       "a": "High-complexity tests need qualified lab personnel; waived tests are the simplest category.",
       "c": "Waived tests are commonly done in physician offices.",
-      "d": "Waived tests do not require a full reference laboratory."
+      "d": "Waived tests need only a Certificate of Waiver and are routinely run in physician office labs, not reference labs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"

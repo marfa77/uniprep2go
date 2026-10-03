@@ -57,6 +57,26 @@ function permalink(url) {
   return url?.match(/gumroad\.com\/l\/([^/?]+)/i)?.[1];
 }
 
+/** `gumroad products view <permalink>` 404s, so match the permalink against the paginated product list. */
+async function productIdByPermalink(permalink) {
+  const { token } = ensureGumroadAccessToken({ persist: false });
+  let key = "";
+  for (let page = 0; page < 40; page += 1) {
+    const response = await fetch(
+      `https://api.gumroad.com/v2/products${key ? `?page_key=${encodeURIComponent(key)}` : ""}`,
+      { headers: { Authorization: `Bearer ${token}` } },
+    );
+    const payload = await response.json();
+    const hit = (payload.products || []).find(
+      (p) => p.custom_permalink === permalink || (p.short_url || "").endsWith(`/l/${permalink}`),
+    );
+    if (hit) return hit.id;
+    key = payload.next_page_key || "";
+    if (!key) return null;
+  }
+  return null;
+}
+
 function gumroadJson(args) {
   const raw = execSync(`gumroad ${args.join(" ")} --json --non-interactive`, { encoding: "utf8" });
   return JSON.parse(raw);
@@ -170,7 +190,7 @@ function linkedMockSlug(deckSlug) {
   return null;
 }
 
-function main() {
+async function main() {
   const args = parseArgs(process.argv);
   loadLocalEnvFiles();
   ensureGumroadAccessToken({ persist: true });
@@ -195,9 +215,9 @@ function main() {
     }
 
     try {
-      const product = (gumroadJson(["products", "view", perm]).product ?? {});
-      const productId = product.id;
+      const productId = catalog.products?.[slug]?.gumroadProductId ?? (await productIdByPermalink(perm));
       if (!productId) throw new Error("no product id");
+      const product = gumroadJson(["products", "view", productId]).product ?? {};
 
       const staleUrls = args.refreshSamples ? (cdnCache[slug] ?? []) : [];
       if (args.refreshSamples && !args.dryRun) delete cdnCache[slug];
@@ -255,4 +275,4 @@ function main() {
   if (!args.dryRun) saveJson(FINANCE_CATALOG, catalog);
 }
 
-main();
+await main();

@@ -1,0 +1,729 @@
+{
+ "nha-excpt-readiness-check": {
+  "nha-excpt-readiness-check-pharmacology-001": {
+   "options": {
+    "a": "The official nonproprietary name (e.g., ibuprofen)",
+    "b": "The trademarked name chosen by the manufacturer (e.g., Advil)",
+    "c": "The chemical name describing the molecular structure",
+    "d": "The 10-digit NDC labeler and product identifier"
+   },
+   "distractorExplanations": {
+    "b": "Describes the brand (proprietary) name, not the generic name; Advil is a trade name for ibuprofen.",
+    "c": "Confuses the generic name with the chemical name, which spells out the molecule's structure rather than the official nonproprietary name.",
+    "d": "The NDC identifies labeler, product and package; it is a numeric code, not the drug's nonproprietary name."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-002": {
+   "options": {
+    "a": "Drug–receptor binding and the resulting dose–response effect",
+    "b": "ADME: absorption, distribution, metabolism, and excretion",
+    "c": "Drug formulation: tablet coating, dissolution, and release design",
+    "d": "Adverse drug reaction reporting to FDA through MedWatch"
+   },
+   "distractorExplanations": {
+    "a": "That describes pharmacodynamics (what the drug does to the body), not pharmacokinetics (what the body does to the drug).",
+    "c": "That is pharmaceutics (dosage-form design), a separate field from the ADME processes of pharmacokinetics.",
+    "d": "MedWatch reporting is pharmacovigilance (drug safety surveillance), not the study of drug movement through the body."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-003": {
+   "options": {
+    "a": "Binds a receptor and fully activates it, mimicking the natural ligand",
+    "b": "Speeds hepatic metabolism of other drugs, lowering their levels",
+    "c": "Blocks or diminishes agonist activity at a receptor",
+    "d": "Enhances the effect of another drug given at the same time"
+   },
+   "distractorExplanations": {
+    "a": "Describes a full agonist; an antagonist binds the receptor without activating it and blocks the agonist.",
+    "b": "That describes an enzyme inducer such as rifampin, a pharmacokinetic interaction rather than receptor antagonism.",
+    "d": "Describes synergism/potentiation, the opposite of an antagonist's blocking action at the receptor."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-005": {
+   "options": {
+    "a": "Dry cough (and risk of hyperkalemia/angioedema)",
+    "b": "Reflex tachycardia and ankle edema from vasodilation",
+    "c": "Hypokalemia from increased urinary potassium loss",
+    "d": "Bradycardia and masking of hypoglycemia symptoms"
+   },
+   "distractorExplanations": {
+    "b": "Ankle edema and reflex tachycardia are classic dihydropyridine calcium channel blocker (amlodipine) effects, not ACE inhibitor effects.",
+    "c": "Hypokalemia is a thiazide/loop diuretic effect; ACE inhibitors tend to raise potassium (hyperkalemia).",
+    "d": "Bradycardia and masked hypoglycemia are beta-blocker effects (e.g., metoprolol), a different antihypertensive class."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-006": {
+   "options": {
+    "a": "aPTT, as used for heparin",
+    "b": "INR (derived from PT)",
+    "c": "Anti-Xa activity level",
+    "d": "Platelet count (CBC)"
+   },
+   "distractorExplanations": {
+    "a": "aPTT monitors unfractionated heparin; warfarin is monitored by the PT expressed as the INR.",
+    "c": "Anti-factor Xa levels are used for low-molecular-weight heparin such as enoxaparin, not for warfarin.",
+    "d": "Platelet counts are watched for heparin-induced thrombocytopenia; they do not measure warfarin's anticoagulant effect."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-007": {
+   "options": {
+    "a": "Kills bacteria directly by rupturing the cell wall, like penicillins do",
+    "b": "Inhibits viral replication by blocking neuraminidase or polymerase enzymes",
+    "c": "Inhibits bacterial growth/reproduction without necessarily killing immediately",
+    "d": "Prevents infection when applied to skin before procedures as an antiseptic"
+   },
+   "distractorExplanations": {
+    "a": "Describes bactericidal action (beta-lactams lysing the cell wall), the opposite of a bacteriostatic effect.",
+    "b": "Describes antiviral agents such as oseltamivir or acyclovir; bacteriostatic refers to inhibiting bacterial growth.",
+    "d": "Antiseptics are topical skin agents; bacteriostatic describes how a systemic antibiotic affects bacterial growth."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-008": {
+   "options": {
+    "a": "Hyperglycemia and weight gain",
+    "b": "Hearing loss and vestibular toxicity",
+    "c": "Hypokalemia and dehydration",
+    "d": "GI bleeding and kidney injury"
+   },
+   "distractorExplanations": {
+    "a": "Hyperglycemia and weight gain are typical corticosteroid effects, not the key NSAID risks of GI bleeding and kidney injury.",
+    "b": "Ototoxicity is a hallmark of aminoglycosides such as gentamicin, not of NSAIDs.",
+    "c": "Hypokalemia and dehydration are loop/thiazide diuretic risks; NSAIDs are more likely to raise potassium."
+   },
+   "explanation": "NSAIDs inhibit COX; caution with ulcers, CKD, and anticoagulants. The risk is greatest in high-risk patients (older adults, anticoagulated, or with renal impairment)."
+  },
+  "nha-excpt-readiness-check-pharmacology-009": {
+   "options": {
+    "a": "Diabetes mellitus by promoting glucose uptake/storage",
+    "b": "Diabetes insipidus by reducing excess urine output",
+    "c": "Hypoglycemia by raising blood glucose levels quickly",
+    "d": "Hypothyroidism by replacing deficient thyroid hormone levels"
+   },
+   "distractorExplanations": {
+    "b": "Diabetes insipidus is an ADH (vasopressin) disorder treated with desmopressin, not insulin.",
+    "c": "Insulin lowers glucose; hypoglycemia is treated with glucose or glucagon, never with insulin.",
+    "d": "Thyroid hormone replacement is levothyroxine; insulin is a pancreatic hormone used for diabetes mellitus."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-010": {
+   "options": {
+    "a": "Routine generic substitution with no added verification",
+    "b": "Careful dosing and often therapeutic drug monitoring",
+    "c": "Double doses after any missed dose to keep levels steady",
+    "d": "Monitoring only during the first week of therapy"
+   },
+   "distractorExplanations": {
+    "a": "NTI drugs (warfarin, levothyroxine, digoxin) need extra review when products are switched; unverified substitution is the hazard.",
+    "c": "Doubling doses risks toxicity, which is exactly the danger with a narrow therapeutic index drug.",
+    "d": "NTI drugs need ongoing monitoring whenever doses, interacting drugs, or products change, not just at therapy start."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-012": {
+   "options": {
+    "a": "Dry cough and risk of angioedema with each dose",
+    "b": "Hypoglycemia and need for frequent fingerstick glucose checks",
+    "c": "Tendon rupture risk and need to avoid exercise",
+    "d": "Bleeding/bruising risk and need for INR monitoring"
+   },
+   "distractorExplanations": {
+    "a": "Dry cough and angioedema are ACE inhibitor (lisinopril) effects, not the main warfarin counseling point.",
+    "b": "Hypoglycemia and glucose checks apply to insulin and sulfonylureas, not to warfarin anticoagulation.",
+    "c": "Tendon rupture is a fluoroquinolone boxed warning; warfarin's key serious adverse effect is bleeding."
+   },
+   "explanation": "Warfarin anticoagulation requires bleeding vigilance and interaction awareness. Also counsel on drug–diet interactions (vitamin K foods, NSAIDs, antibiotics)."
+  },
+  "nha-excpt-readiness-check-pharmacology-014": {
+   "options": {
+    "a": "Orange-red discoloration of urine, sweat, and tears",
+    "b": "Dry cough (and risk of hyperkalemia/angioedema)",
+    "c": "Gingival hyperplasia with long-term use",
+    "d": "Persistent constipation and ankle edema"
+   },
+   "distractorExplanations": {
+    "a": "Orange body fluids are a rifampin (or phenazopyridine) effect, not an ACE inhibitor effect.",
+    "c": "Gingival hyperplasia is classically linked to phenytoin, not to lisinopril or other ACE inhibitors.",
+    "d": "Constipation and ankle edema point to calcium channel blockers such as verapamil or amlodipine."
+   }
+  },
+  "nha-excpt-readiness-check-pharmacology-015": {
+   "options": {
+    "a": "They have a wide margin between effective and toxic doses",
+    "b": "Their blood levels need checking once, at therapy start",
+    "c": "Small dose/level changes can cause toxicity or loss of efficacy",
+    "d": "Brand and generic versions can be swapped freely at each fill"
+   },
+   "distractorExplanations": {
+    "a": "That describes a wide therapeutic index; NTI drugs have a small gap between effective and toxic levels.",
+    "b": "NTI drug levels are rechecked after dose, product, or interacting-drug changes, not checked a single time.",
+    "d": "Switching manufacturers of NTI drugs (e.g., levothyroxine) can alter levels, so product swaps need extra review."
+   },
+   "explanation": "NTI drugs (e.g., digoxin, warfarin, levothyroxine nuances) need careful dosing accuracy. Extra verification is critical for these drugs."
+  },
+  "nha-excpt-readiness-check-federal-law-001": {
+   "options": {
+    "a": "Controlled Substances Act enforced by the DEA",
+    "b": "Food, Drug, and Cosmetic Act enforced by the FDA",
+    "c": "Durham-Humphrey Amendment enforced by the FDA",
+    "d": "Harrison Narcotic Act enforced by the Treasury"
+   },
+   "distractorExplanations": {
+    "b": "The FD&C Act governs drug safety, labeling and approval; the I–V schedules come from the Controlled Substances Act.",
+    "c": "Durham-Humphrey (1951) created the prescription vs OTC distinction, not controlled substance schedules.",
+    "d": "The 1914 Harrison Narcotic Act was an earlier narcotics tax law, replaced by the 1970 Controlled Substances Act."
+   }
+  },
+  "nha-excpt-readiness-check-federal-law-002": {
+   "options": {
+    "a": "Up to five refills within six months of the date written",
+    "b": "No refills; a new prescription is required for each fill",
+    "c": "Refills allowed for one year, as for non-controlled drugs",
+    "d": "Refills allowed if the prescriber marks them on the form"
+   },
+   "distractorExplanations": {
+    "a": "Five refills within six months is the Schedule III–IV rule, not the Schedule II rule.",
+    "c": "One-year refill windows apply to non-controlled prescriptions (state-dependent); C-II prescriptions cannot be refilled.",
+    "d": "Prescriber-authorized refills are void for C-II; multiple dated prescriptions (up to a 90-day supply) are the legal alternative."
+   },
+   "explanation": "C-II cannot be refilled; C-III/IV often up to 5 refills in 6 months. Limited emergency oral-order exceptions exist."
+  },
+  "nha-excpt-readiness-check-federal-law-003": {
+   "options": {
+    "a": "Poison Prevention Packaging Act rules requiring child-resistant caps on all OTC decongestants",
+    "b": "DEA Schedule II listing, so pseudoephedrine needs a written prescription in every state",
+    "c": "Combat Methamphetamine Epidemic Act (CMEA) daily/monthly limits and logbook/ID requirements",
+    "d": "Durham-Humphrey Amendment rules moving pseudoephedrine to legend (prescription) status"
+   },
+   "distractorExplanations": {
+    "a": "The PPPA concerns child-resistant packaging, not the purchase limits and logbook rules for pseudoephedrine.",
+    "b": "Pseudoephedrine is a List I chemical, not Schedule II; federally it is sold behind the counter without a prescription.",
+    "d": "Durham-Humphrey defines legend vs OTC drugs; pseudoephedrine sales limits come from the 2005 CMEA."
+   }
+  },
+  "nha-excpt-readiness-check-federal-law-004": {
+   "options": {
+    "a": "Child-resistant packaging on most oral prescription drugs for Medicaid patients",
+    "b": "Electronic prescribing of all controlled substances through certified systems",
+    "c": "Patient package inserts with every dispensed prescription for Medicare patients",
+    "d": "Prospective drug utilization review and offer to counsel Medicaid patients"
+   },
+   "distractorExplanations": {
+    "a": "Child-resistant packaging comes from the 1970 Poison Prevention Packaging Act, not OBRA '90.",
+    "b": "EPCS requirements come from DEA rules (2010) and the later SUPPORT Act, not from OBRA '90.",
+    "c": "Patient package inserts and Medication Guides are FDA labeling rules; OBRA '90 required DUR and counseling offers for Medicaid."
+   },
+   "explanation": "OBRA '90 drove DUR and counseling offer requirements especially for Medicaid. It also influenced state counseling standards beyond Medicaid."
+  },
+  "nha-excpt-readiness-check-federal-law-005": {
+   "options": {
+    "a": "Order Schedule I/II controlled substances",
+    "b": "Report theft or significant loss of controlled drugs",
+    "c": "Document destruction of expired controlled drugs",
+    "d": "Register a pharmacy to dispense controlled drugs"
+   },
+   "distractorExplanations": {
+    "b": "Theft or significant loss of controlled substances is reported on DEA Form 106, not Form 222.",
+    "c": "Surrender or destruction of controlled substances is documented on DEA Form 41, not Form 222.",
+    "d": "A new pharmacy registers with DEA Form 224; Form 222 is the Schedule I/II order form."
+   }
+  },
+  "nha-excpt-readiness-check-federal-law-006": {
+   "options": {
+    "a": "Food, Drug, and Cosmetic Act (FDCA)",
+    "b": "Poison Prevention Packaging Act (PPPA)",
+    "c": "Controlled Substances Act (CSA)",
+    "d": "Omnibus Budget Reconciliation Act (OBRA '90)"
+   },
+   "distractorExplanations": {
+    "a": "The FD&C Act covers drug safety, adulteration and misbranding; child-resistant closures come from the PPPA.",
+    "c": "The CSA sets drug schedules and DEA registration rules but does not mandate child-resistant packaging.",
+    "d": "OBRA '90 mandated prospective DUR and counseling offers for Medicaid patients, not packaging standards."
+   },
+   "explanation": "PPPA aims to reduce pediatric poisonings; easy-open may be requested with documentation. It covers many oral Rx/OTC products, with exceptions such as patient request or sublingual nitroglycerin."
+  },
+  "nha-excpt-readiness-check-federal-law-007": {
+   "options": {
+    "a": "Pharmacy drug pricing from competitors",
+    "b": "Employee records from release to outside parties",
+    "c": "Patient PHI from improper use/disclosure",
+    "d": "Controlled-drug inventory records from DEA review"
+   },
+   "distractorExplanations": {
+    "a": "Drug pricing is proprietary business information; HIPAA protects individually identifiable patient health information.",
+    "b": "Employment records held by an employer are excluded from HIPAA's definition of protected health information.",
+    "d": "HIPAA does not shield controlled-substance records from DEA inspection; those records must be available to the DEA."
+   }
+  },
+  "nha-excpt-readiness-check-federal-law-008": {
+   "options": {
+    "a": "Unlikely to cause any adverse health consequences, such as a label typo",
+    "b": "May cause temporary or medically reversible adverse health consequences",
+    "c": "A market withdrawal for a minor issue not subject to FDA legal action",
+    "d": "Reasonable probability of serious adverse health consequences or death"
+   },
+   "distractorExplanations": {
+    "a": "That defines a Class III recall, the lowest-risk category, not a Class I recall.",
+    "b": "That defines a Class II recall; Class I involves a reasonable probability of serious harm or death.",
+    "c": "A market withdrawal is a removal for a minor violation, not a recall class; Class I is the most serious recall."
+   }
+  },
+  "nha-excpt-readiness-check-federal-law-009": {
+   "options": {
+    "a": "DEA-registered practitioners acting within scope/state law",
+    "b": "Any licensed pharmacist who has a valid DEA pharmacy registration",
+    "c": "Any state-licensed physician, even without a DEA registration",
+    "d": "Certified pharmacy technicians under a pharmacist's supervision"
+   },
+   "distractorExplanations": {
+    "b": "A pharmacy DEA registration permits dispensing, not prescribing; it does not give the pharmacist prescriptive authority.",
+    "c": "A state license alone is not enough; the prescriber also needs an active DEA registration to prescribe controlled drugs.",
+    "d": "Technicians may take refill requests or process orders but have no legal prescribing authority."
+   }
+  },
+  "nha-excpt-readiness-check-federal-law-011": {
+   "options": {
+    "a": "Have no currently accepted medical use in the United States",
+    "b": "Have low abuse potential and may be sold OTC with a logbook",
+    "c": "Have high abuse potential and generally cannot be refilled",
+    "d": "Have moderate abuse potential and allow five refills in six months"
+   },
+   "distractorExplanations": {
+    "a": "No accepted medical use describes Schedule I drugs (e.g., heroin), not Schedule II.",
+    "b": "Logbook OTC sales describe certain Schedule V products in some states, not high-abuse Schedule II drugs.",
+    "d": "That describes Schedule III–IV drugs; Schedule II prescriptions cannot be refilled."
+   },
+   "explanation": "C-II drugs have strict ordering/refill rules distinct from III–V; Schedule I has no accepted medical use federally. They also require compliant prescriptions (written or EPCS)."
+  },
+  "nha-excpt-readiness-check-federal-law-012": {
+   "options": {
+    "a": "Dextromethorphan cough syrups sold to minors",
+    "b": "Codeine-containing Schedule V cough preparations",
+    "c": "Loperamide antidiarrheal tablets in large packages",
+    "d": "Pseudoephedrine/ephedrine/phenylpropanolamine products"
+   },
+   "distractorExplanations": {
+    "a": "Dextromethorphan age limits come from state laws, not from the federal Combat Methamphetamine Epidemic Act.",
+    "b": "OTC sales of C-V codeine cough syrup are governed by DEA/state Schedule V rules, not by the CMEA.",
+    "c": "Loperamide misuse led to FDA packaging changes, but loperamide is not a product restricted under the CMEA."
+   },
+   "explanation": "CMEA targets precursor chemicals used to make methamphetamine. Sales require ID, a logbook, and daily/monthly quantity limits."
+  },
+  "nha-excpt-readiness-check-federal-law-014": {
+   "options": {
+    "a": "Get written patient authorization before sharing PHI with another treating provider",
+    "b": "Use/disclose PHI only for permitted purposes and safeguard records/conversations",
+    "c": "Release a patient's records to any family member who asks at the counter",
+    "d": "Destroy all prescription records after one year to limit privacy exposure"
+   },
+   "distractorExplanations": {
+    "a": "HIPAA permits PHI disclosure for treatment without authorization; written authorization is for uses like marketing.",
+    "c": "Family members get PHI only with the patient's agreement or in permitted situations, not simply by asking.",
+    "d": "Record retention is set by federal/state law (often 2+ years); HIPAA requires safeguarding records, not early destruction."
+   }
+  },
+  "nha-excpt-readiness-check-federal-law-015": {
+   "options": {
+    "a": "Patient name, drug name/strength, and directions, with quantity optional for C-II drugs",
+    "b": "Drug name/strength, quantity, and prescriber NPI, with patient name optional if known to staff",
+    "c": "Patient name, drug name/strength, quantity, directions, date, and prescriber information/signature",
+    "d": "Patient name, drug, quantity, and directions, with the date optional if filled within a week"
+   },
+   "distractorExplanations": {
+    "a": "Quantity is a required element on every controlled substance prescription, including Schedule II.",
+    "b": "The patient's full name and address are required on controlled prescriptions; staff familiarity does not waive them.",
+    "d": "The date of issue is mandatory; it governs validity windows such as 6 months for C-III–V prescriptions."
+   },
+   "explanation": "Controlled Rx elements are tightly specified federally/state; incomplete Rxs cannot be filled as-is. Requirements are set by federal and state law, including patient address and the prescriber's DEA number."
+  },
+  "nha-excpt-readiness-check-order-entry-001": {
+   "options": {
+    "a": "Substitution not allowed by prescriber (dispense as written)",
+    "b": "Patient requests brand when substitution allowed (often DAW 2)",
+    "c": "Generic substitution allowed by prescriber (no product selection)",
+    "d": "Brand dispensed because no generic is available in the market"
+   },
+   "distractorExplanations": {
+    "c": "That is DAW 0 (no product selection indicated); DAW 1 means the prescriber forbids substitution.",
+    "d": "Generic not available in the marketplace is DAW 8, not DAW 1.",
+    "b": "DAW 2 often patient requested brand."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-002": {
+   "options": {
+    "a": "Take one by mouth at bedtime as needed for pain",
+    "b": "Take one by mouth twice daily as needed for pain",
+    "c": "Take one by mouth before meals as needed for pain",
+    "d": "Take one by mouth every other day for pain as needed"
+   },
+   "distractorExplanations": {
+    "a": "Bedtime is 'hs'; 'bid' means twice daily, so this misreads the frequency.",
+    "c": "Before meals is 'ac'; 'bid' means twice a day, so this misreads the frequency.",
+    "d": "Every other day is 'qod' (an error-prone abbreviation); 'bid' means twice daily."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-003": {
+   "options": {
+    "a": "Enter the lowest available strength as the safest choice",
+    "b": "Select the strength the patient says they took before",
+    "c": "Clarify with the pharmacist/prescriber before processing",
+    "d": "Fill the most common strength and note it for the pharmacist"
+   },
+   "distractorExplanations": {
+    "a": "Assuming the lowest strength is still guessing; a missing strength must be clarified, not chosen by the technician.",
+    "b": "Patient recollection does not complete a prescription; the prescriber must confirm the intended strength.",
+    "d": "Filling first and flagging later still dispenses a guessed strength; clarification must come before processing."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-004": {
+   "options": {
+    "a": "Flag high-alert drugs such as insulin and heparin for a second check",
+    "b": "Mark drugs on the Beers list as inappropriate for older adults",
+    "c": "Highlight controlled substance schedules on shelf labels and vials",
+    "d": "Distinguish look-alike drug names (e.g., hydrALAZINE vs hydrOXYzine)"
+   },
+   "distractorExplanations": {
+    "a": "High-alert drug lists (ISMP) prompt independent double checks; Tall Man lettering targets look-alike names.",
+    "b": "The Beers Criteria flag drugs needing geriatric caution; they are unrelated to Tall Man lettering.",
+    "c": "Schedules are shown with the C-symbol (e.g., C-II), not with mixed-case Tall Man lettering."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-005": {
+   "options": {
+    "a": "Identity-proofed prescribers and certified EPCS systems meeting DEA requirements",
+    "b": "A faxed copy of the signed paper prescription sent from the prescriber's office",
+    "c": "Prescriber use of the same standard e-Rx software used for non-controlled drugs",
+    "d": "A secure email from the prescriber's verified account with a scanned DEA certificate"
+   },
+   "distractorExplanations": {
+    "b": "A fax is not EPCS; faxed C-II prescriptions are allowed only in limited cases such as hospice or LTCF patients.",
+    "c": "Ordinary e-Rx software is not enough; the application must be audited/certified for EPCS under DEA rules.",
+    "d": "Email is not an EPCS transmission; EPCS requires two-factor authentication inside a certified system."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-006": {
+   "options": {
+    "a": "Quantity dispensed and the number of refills authorized",
+    "b": "Quantity dispensed and directions (dose × frequency)",
+    "c": "Package size and the drug's expiration date",
+    "d": "Patient weight and the strength of each tablet"
+   },
+   "distractorExplanations": {
+    "a": "Refills change the number of fills, not the days' supply of one fill, which depends on the directions.",
+    "c": "Expiration limits how long the drug can be used, but days' supply comes from quantity and daily dose.",
+    "d": "Weight and strength matter for dosing, but days' supply divides quantity by the amount used per day."
+   },
+   "explanation": "Insurance adjudication often rejects wrong days' supply. Days' supply = quantity ÷ (dose × doses per day)."
+  },
+  "nha-excpt-readiness-check-order-entry-007": {
+   "options": {
+    "a": "Two drugs may interact to raise or lower each other's blood levels",
+    "b": "The drug's dose exceeds the maximum recommended for the patient's age or weight",
+    "c": "Two drugs with the same therapeutic effect/class may be overlapping inappropriately",
+    "d": "The same prescription was already filled too recently to be refilled again"
+   },
+   "distractorExplanations": {
+    "a": "That describes a drug–drug interaction alert, not a duplication of the same therapeutic class.",
+    "b": "That is a high-dose (dose-range) alert; duplication means two drugs from the same class overlap.",
+    "d": "That is a refill-too-soon rejection; therapeutic duplication concerns two different drugs with the same effect."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-008": {
+   "options": {
+    "a": "Prescriber, practice location, and specialty taxonomy",
+    "b": "Manufacturer, lot number, and expiration date of a batch",
+    "c": "Drug class, DEA schedule, and therapeutic equivalence code",
+    "d": "Labeler, product, and package size (10–11 digit formats)"
+   },
+   "distractorExplanations": {
+    "a": "That describes the prescriber's NPI record; the NDC identifies a drug product and package.",
+    "b": "Lot number and expiration appear on the label or barcode but are not encoded in the NDC.",
+    "c": "Schedules and Orange Book TE codes are separate systems; NDC segments are labeler, product and package."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-009": {
+   "options": {
+    "a": "A payer requires approval before covering a medication under plan rules",
+    "b": "A prescriber must approve a refill before it can be dispensed again",
+    "c": "The pharmacist must approve generic substitution for a DAW 1 prescription",
+    "d": "A patient's claim is rejected because the refill is requested too soon"
+   },
+   "distractorExplanations": {
+    "b": "That is a refill authorization request to the prescriber, not a payer prior authorization.",
+    "c": "DAW 1 forbids substitution by the prescriber's choice; it has nothing to do with payer approval.",
+    "d": "Refill-too-soon rejections are resolved by timing or override codes, not by a prior authorization."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-010": {
+   "options": {
+    "a": "Replace pharmacist counseling for routine refill prescriptions",
+    "b": "Reinforce key warnings (e.g., take with food, may cause drowsiness)",
+    "c": "Repeat the prescription directions in larger print for clarity",
+    "d": "Show the drug's DEA schedule and the prescriber's DEA number"
+   },
+   "distractorExplanations": {
+    "a": "Auxiliary labels supplement counseling; they do not substitute for the pharmacist's counseling duty.",
+    "c": "Directions belong on the main prescription label; auxiliary labels add warnings rather than restating the sig.",
+    "d": "C-symbols and DEA numbers are not the job of auxiliary labels, which carry use and safety warnings."
+   },
+   "explanation": "Aux labels support safe use; pharmacist counseling remains important. They supplement, not replace, pharmacist counseling."
+  },
+  "nha-excpt-readiness-check-order-entry-011": {
+   "options": {
+    "a": "Take one tablet by mouth three times daily as needed for pain",
+    "b": "Take one tablet by mouth twice daily on a fixed schedule for pain",
+    "c": "Take one tablet by mouth twice daily as needed for pain",
+    "d": "Take one tablet under the tongue twice daily as needed for pain"
+   },
+   "distractorExplanations": {
+    "a": "Three times daily is 'tid'; 'bid' means twice daily.",
+    "b": "Ignores 'prn', which means as needed rather than on a fixed schedule.",
+    "d": "Under the tongue is 'SL' (sublingual); 'po' means by mouth."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-012": {
+   "options": {
+    "a": "Override the alert if the patient says it was mild",
+    "b": "Call the prescriber to change the drug yourself",
+    "c": "Fill it and attach an allergy warning label",
+    "d": "Alert the pharmacist before dispensing"
+   },
+   "distractorExplanations": {
+    "a": "Technicians cannot clinically override allergy alerts; the pharmacist must evaluate the reported reaction.",
+    "b": "Allergy clarification and therapy changes with prescribers are pharmacist duties, not technician decisions.",
+    "c": "A warning label does not resolve a serious allergy conflict; the pharmacist must review it before dispensing."
+   },
+   "explanation": "Allergy alerts require pharmacist clinical judgment. Never override an allergy alert silently."
+  },
+  "nha-excpt-readiness-check-order-entry-013": {
+   "options": {
+    "a": "Clarify with the pharmacist/prescriber before dispensing",
+    "b": "Use the most common directions for that drug and strength",
+    "c": "Ask the patient how they were told to take it and use that",
+    "d": "Copy the directions from the patient's last fill of a similar drug"
+   },
+   "distractorExplanations": {
+    "b": "Defaulting to typical directions is guessing; unclear directions must be clarified with the prescriber.",
+    "c": "Patient recall is not a valid source for label directions; the prescriber must clarify the order.",
+    "d": "Directions for a different drug may not match the new order; clarify instead of copying them."
+   }
+  },
+  "nha-excpt-readiness-check-order-entry-014": {
+   "options": {
+    "a": "Therapeutic equivalence ratings from the Orange Book",
+    "b": "Dispense-as-written / product selection intents",
+    "c": "Prior authorization status for brand-name products",
+    "d": "Beyond-use dating categories for compounded products"
+   },
+   "distractorExplanations": {
+    "a": "Orange Book TE codes (AB, BX) rate generic equivalence; DAW codes report who chose the product.",
+    "c": "PA status comes from the payer; DAW codes report product-selection intent on the claim.",
+    "d": "BUD categories come from USP <795>/<797>, not from DAW codes on a claim."
+   },
+   "explanation": "DAW indicates whether substitution is allowed/required for billing/product choice. These codes affect generic substitution and claim pricing."
+  },
+  "nha-excpt-readiness-check-order-entry-015": {
+   "options": {
+    "a": "Enter the volume in mL exactly as the mg dose is written",
+    "b": "Use the adult dose divided by two for all children",
+    "c": "Verify weight-based calculations and units (mg vs mL)",
+    "d": "Round the dose to the nearest whole milliliter"
+   },
+   "distractorExplanations": {
+    "a": "Treats mg and mL as interchangeable; the mg dose must be converted to mL using the concentration.",
+    "b": "Halving adult doses is not a valid pediatric method; pediatric doses are weight-based (mg/kg).",
+    "d": "Rounding small pediatric liquid doses can cause major over- or underdosing; decimal precision matters."
+   },
+   "explanation": "Unit mix-ups and decimal errors are major pediatric risks. Calculations are checked with the pharmacist as required."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-001": {
+   "options": {
+    "a": "Patient, drug, dose, route, and time",
+    "b": "Patient, drug, dose, refill, and price",
+    "c": "Patient, drug, dose, prescriber, and pharmacy",
+    "d": "Drug, dose, strength, quantity, and label"
+   },
+   "distractorExplanations": {
+    "b": "Refill and price are not rights; the list drops route and time.",
+    "c": "Prescriber and pharmacy are not among the five rights; route and time are.",
+    "d": "Lists dispensing check items but omits right patient, right route, and right time."
+   },
+   "explanation": "Verification prevents wrong-patient/wrong-drug errors. Documentation and education are often added as extra rights."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-002": {
+   "options": {
+    "a": "7 days at room temperature",
+    "b": "14 days refrigerated",
+    "c": "90 days at room temperature",
+    "d": "6 months at room temperature"
+   },
+   "distractorExplanations": {
+    "a": "Too short and at the wrong temperature; USP <795> gives unpreserved aqueous preparations 14 days refrigerated.",
+    "c": "90 days is the USP <795> default for nonaqueous dosage forms, not aqueous oral liquids.",
+    "d": "180 days is the USP <795> default for solid dosage forms such as capsules, not aqueous oral liquids."
+   },
+   "explanation": "USP <795> BUDs depend on water activity/type; know common exam defaults and that manufacturer/stability data can modify. That is the USP <795> default for unpreserved aqueous preparations without supporting stability data."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-003": {
+   "options": {
+    "a": "Hair cover, face mask, gown, nonsterile exam gloves",
+    "b": "Face mask, sterile gloves, and a lab coat only",
+    "c": "Hair cover, face mask, gown, sterile gloves",
+    "d": "Hair cover, gown, and sterile gloves, with no mask"
+   },
+   "distractorExplanations": {
+    "a": "Gloves used inside the PEC for sterile compounding must be sterile, not nonsterile exam gloves.",
+    "b": "Omits the hair cover and substitutes a lab coat for a low-lint gown.",
+    "d": "A face mask is required garb because talking and breathing near critical sites shed particles."
+   },
+   "explanation": "USP <797> garbing and aseptic technique protect CSPs from contamination. Eye cover is added as required, and garbing follows the dirtiest-to-cleanest order."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-004": {
+   "options": {
+    "a": "Compounding is done at the front edge of the hood for best airflow",
+    "b": "Hands should be placed between the HEPA filter and critical sites",
+    "c": "The hood is cleaned from the front edge back toward the HEPA filter",
+    "d": "First air (uninterrupted HEPA-filtered air) must contact critical sites"
+   },
+   "distractorExplanations": {
+    "a": "Work belongs at least 6 inches inside the hood; the front edge is where room air mixes in.",
+    "b": "Hands upstream of critical sites block first air and create turbulence and contamination.",
+    "c": "Cleaning goes from the HEPA filter outward (back to front), not from the front toward the filter."
+   }
+  },
+  "nha-excpt-readiness-check-dispensing-practice-005": {
+   "options": {
+    "a": "Reduce errors and track doses to administration time",
+    "b": "Lower drug costs by buying in bulk stock bottles",
+    "c": "Allow nurses to compound IV doses on the unit",
+    "d": "Replace bar-code scanning at the patient's bedside"
+   },
+   "distractorExplanations": {
+    "b": "Bulk stock bottles are the opposite of unit dose; unit dose targets safety and tracking, not bulk savings.",
+    "c": "Unit-dose packaging does not shift IV compounding to nurses; IV admixtures belong in the pharmacy.",
+    "d": "Unit doses carry bar codes that support bedside scanning (BCMA); they do not replace it."
+   }
+  },
+  "nha-excpt-readiness-check-dispensing-practice-006": {
+   "options": {
+    "a": "Counting by fives once and recording the total on the label",
+    "b": "Double-counting and documenting perpetual inventory per policy",
+    "c": "Recording counts at the next biennial inventory instead of daily",
+    "d": "Having the patient verify the count at pickup"
+   },
+   "distractorExplanations": {
+    "a": "A single count is not enough for controlled drugs; double counts and perpetual inventory records are expected.",
+    "c": "The biennial inventory is a separate DEA requirement; perpetual records are updated with each transaction.",
+    "d": "Patient verification does not replace staff double counts and documentation for controlled drugs."
+   }
+  },
+  "nha-excpt-readiness-check-dispensing-practice-007": {
+   "options": {
+    "a": "Follow which eye is meant, reading AD/AS/AU as right/left/both eyes",
+    "b": "Shake suspensions and touch the tip to the eyelid to steady the dose",
+    "c": "Avoid contamination of the dropper tip and follow which eye (OD/OS/OU)",
+    "d": "Store opened bottles frozen to extend their stability after opening"
+   },
+   "distractorExplanations": {
+    "a": "AD/AS/AU refer to the ears; eye abbreviations are OD/OS/OU (and both sets are error-prone).",
+    "b": "Touching the tip to the eye or lid contaminates the dropper; the tip should not touch any surface.",
+    "d": "Ophthalmic drops are kept at room temperature or refrigerated as labeled; freezing is not used to extend stability."
+   }
+  },
+  "nha-excpt-readiness-check-dispensing-practice-008": {
+   "options": {
+    "a": "Call the patient yourself to swap the medication",
+    "b": "Correct the record and log it at the end of the shift",
+    "c": "File an incident report before telling anyone else",
+    "d": "Notify the pharmacist immediately"
+   },
+   "distractorExplanations": {
+    "a": "Contacting the patient about an error is coordinated by the pharmacist, not handled alone by the technician.",
+    "b": "Delay risks patient harm; the pharmacist must know immediately, not at the end of the shift.",
+    "c": "Incident reporting follows, but the first step is notifying the pharmacist so the patient can be reached."
+   },
+   "explanation": "Rapid disclosure/mitigation protects patients and is an ethical/legal duty. The patient can then be contacted and the error corrected per policy."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-009": {
+   "options": {
+    "a": "2–8°C (36–46°F)",
+    "b": "8–15°C (46–59°F)",
+    "c": "20–25°C (68–77°F)",
+    "d": "30–40°C (86–104°F)"
+   },
+   "distractorExplanations": {
+    "b": "8–15°C is the USP 'cool' storage range, warmer than the 2–8°C refrigerator range.",
+    "c": "20–25°C is USP controlled room temperature, not refrigerated storage.",
+    "d": "30–40°C is the USP 'warm' range, which would degrade products labeled for refrigeration."
+   },
+   "explanation": "Monitor fridge logs; do not use food fridges improperly; vaccines have strict rules. Follow the label if it specifies a different range."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-011": {
+   "options": {
+    "a": "Right patient, drug, and quantity, with strength checked at intake",
+    "b": "Right drug, strength, and price, with the patient checked at pickup",
+    "c": "Right patient, drug, strength, quantity, and directions",
+    "d": "Right NDC barcode scan alone, without reviewing the label directions"
+   },
+   "distractorExplanations": {
+    "a": "Strength must be confirmed at the final check, not assumed from intake, and directions are omitted.",
+    "b": "Price is not a clinical check, and patient identity must be verified before dispensing, not left to pickup.",
+    "d": "A barcode scan confirms the product but not directions, patient or quantity; it supplements the check."
+   },
+   "explanation": "The five/seven rights style check prevents dispensing errors. Appropriate packaging and labels are also confirmed."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-012": {
+   "options": {
+    "a": "Wipe them weekly unless visible residue appears",
+    "b": "Use separate trays for brand and generic products",
+    "c": "Clean them only after counting controlled substances",
+    "d": "Clean them to prevent cross-contamination"
+   },
+   "distractorExplanations": {
+    "a": "Trays are cleaned after use, especially after allergens, not on a weekly schedule.",
+    "b": "Brand vs generic separation is not the hazard; residue from allergens and hazardous drugs is.",
+    "c": "Controlled status is not the cross-contamination risk; allergens like penicillin/sulfa and hazardous drugs are."
+   },
+   "explanation": "Tray contamination can cause allergic exposures and mix-ups. This matters especially after allergens like penicillin/sulfa, per policy."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-013": {
+   "options": {
+    "a": "Provide individually labeled doses to reduce errors and support tracking",
+    "b": "Supply each patient a week of bulk tablets in one labeled stock bottle per drug",
+    "c": "Allow nurses to return and reissue opened doses to other patients",
+    "d": "Replace bedside bar-code scanning with nurse visual checks of labels"
+   },
+   "distractorExplanations": {
+    "b": "Weekly bulk bottles describe a traditional vial/floor-stock system, the opposite of unit-dose packaging.",
+    "c": "Opened doses cannot be reissued; intact unit-dose packages may be returned to stock per policy.",
+    "d": "Unit-dose bar codes enable bedside scanning (BCMA); unit dose is not meant to replace it."
+   }
+  },
+  "nha-excpt-readiness-check-dispensing-practice-014": {
+   "options": {
+    "a": "Matched to the manufacturer's expiration of the main ingredient",
+    "b": "Assigned using USP guidance and formula documentation",
+    "c": "Set to 6 months for all creams and ointments",
+    "d": "Extended to one year if stored in a refrigerator"
+   },
+   "distractorExplanations": {
+    "a": "A bulk ingredient's expiration does not apply to the finished compound; BUD follows USP <795> limits.",
+    "c": "USP <795> defaults are 90 days for nonaqueous and 14–35 days for aqueous forms, not 6 months.",
+    "d": "Refrigeration does not justify a one-year BUD; limits follow USP <795> categories and stability data."
+   },
+   "explanation": "BUD depends on formulation/water content/storage per USP standards and policies. Arbitrary distant dates are not acceptable."
+  },
+  "nha-excpt-readiness-check-dispensing-practice-015": {
+   "options": {
+    "a": "Add the full diluent volume at once, then shake and label with the BUD",
+    "b": "Use the correct diluent and label with the original manufacturer's expiration date",
+    "c": "Use the correct diluent volume, mix thoroughly, and label with BUD/storage",
+    "d": "Use the correct diluent volume, mix well, and store every suspension at room temperature"
+   },
+   "distractorExplanations": {
+    "a": "Diluent is added in portions with shaking between for an even suspension; adding it all at once causes clumping.",
+    "b": "After reconstitution the shorter post-mix BUD (e.g., 10–14 days) applies, not the dry-powder expiration date.",
+    "d": "Storage is product-specific; amoxicillin-clavulanate and many others must be refrigerated after mixing."
+   },
+   "explanation": "Accurate reconstitution and labeling ensure dose accuracy and stability. Add the shake-well auxiliary label as required."
+  }
+ }
+}

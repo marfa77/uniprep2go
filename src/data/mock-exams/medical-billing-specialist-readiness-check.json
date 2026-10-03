@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Complete, accurate, timely submission with required identifiers and no missing info"
+        "text": "Complete, accurate, timely submission with no missing info"
       },
       {
         "id": "b",
-        "text": "Claim handwritten"
+        "text": "Accepted by the clearinghouse, even if payer edits flag errors"
       },
       {
         "id": "c",
-        "text": "Claim missing provider NPI"
+        "text": "Paid in full at the billed charge on first submission"
       },
       {
         "id": "d",
-        "text": "Claim submitted years after service"
+        "text": "Submitted within 12 months even if the NPI is missing"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clean claims contain all data needed for adjudication without additional information.",
+    "explanation": "Clean claims contain all data needed for adjudication without additional information. Required identifiers such as the NPI must be present.",
     "distractorExplanations": {
-      "b": "Electronic/paper both allowed if complete.",
-      "c": "NPI required.",
-      "d": "Timeliness limits apply."
+      "b": "Clearinghouse acceptance only passes format edits; a clean claim must also pass payer edits without needing more information.",
+      "c": "Clean means processable without extra information; payment is made at the allowed amount, not the billed charge.",
+      "d": "Meeting the 12-month filing limit does not make a claim clean when a required identifier like the NPI is missing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Inpatient hospital stays"
+        "text": "Institutional inpatient and outpatient hospital services"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Dental"
+        "text": "Dental procedures coded with CDT codes"
       },
       {
         "id": "d",
-        "text": "Property tax"
+        "text": "Retail pharmacy prescription claims"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CMS-1500 is the professional claim form; UB-04 is institutional.",
     "distractorExplanations": {
-      "a": "Institutional uses UB-04.",
-      "c": "Dental may use ADA form.",
-      "d": "Unrelated."
+      "a": "Institutional hospital services are billed on the UB-04 (CMS-1450), not the professional CMS-1500.",
+      "c": "Dental procedures with CDT codes are billed on the ADA dental claim form, not the CMS-1500.",
+      "d": "Retail pharmacy claims use the NCPDP standard, not the CMS-1500 professional claim form."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignored because payment automatic"
+        "text": "Appealed in writing to the payer with supporting records"
       },
       {
         "id": "b",
-        "text": "Billed to patient without verification always first"
+        "text": "Billed to the patient as self-pay until the payer confirms coverage"
       },
       {
         "id": "c",
-        "text": "Submitted repeatedly unchanged"
+        "text": "Resubmitted as a corrected claim with frequency code 7"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Rejections are pre-adjudication edits fixed by correcting data and resubmitting.",
     "distractorExplanations": {
-      "a": "Rejections stop processing.",
-      "b": "Verify coverage first.",
-      "c": "Duplicate rejections waste time."
+      "a": "Appeals are for adjudicated denials; a clearinghouse rejection never reached adjudication, so it is corrected and resubmitted.",
+      "b": "A rejected subscriber ID is a fixable data error; verify and correct it and resubmit rather than shifting the balance to the patient.",
+      "c": "Frequency code 7 replaces a claim the payer already adjudicated; a rejected claim was never accepted and goes as a new claim."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "No insurance ever"
+        "text": "One plan with a deductible and coinsurance split"
       },
       {
         "id": "c",
-        "text": "Only workers' comp for unrelated cold visit"
+        "text": "A liability claim where the payer recovers from a third party"
       },
       {
         "id": "d",
-        "text": "Cash pay"
+        "text": "Coverage that ended, requiring retroactive eligibility review"
       }
     ],
     "correctOptionId": "a",
     "explanation": "COB determines order of payment when multiple payers cover the patient.",
     "distractorExplanations": {
-      "b": "COB needs multiple plans.",
-      "c": "Unrelated injury may not be WC.",
-      "d": "No COB with cash."
+      "b": "Deductible and coinsurance are cost sharing within a single plan; COB requires two or more plans covering the patient.",
+      "c": "Recovering costs from a liable third party is subrogation, not coordination of benefits between two plans.",
+      "d": "A terminated policy is an eligibility issue; COB applies only when more than one active plan covers the patient."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Claim paid twice"
+        "text": "Claim lacked a prior authorization number for the service"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "Patient overpaid copay"
+        "text": "Claim matched one already processed for the same date of service"
       },
       {
         "id": "d",
-        "text": "Provider NPI valid"
+        "text": "Claim listed a diagnosis that does not support medical necessity"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Each payer sets filing limits; late claims deny unless appeal exception applies.",
     "distractorExplanations": {
-      "a": "Different issue.",
-      "c": "Copay separate.",
-      "d": "Valid NPI would not cause this denial."
+      "a": "A missing authorization number triggers a prior authorization denial, not a timely filing denial.",
+      "c": "Matching a previously processed claim triggers a duplicate claim denial, not a timely filing denial.",
+      "d": "A diagnosis that fails to support the service triggers a medical necessity denial, not a filing-deadline denial."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Commercial HMO always pays"
+        "text": "A commercial plan may deny a service the patient still wants"
       },
       {
         "id": "b",
-        "text": "Patient refuses all treatment ever"
+        "text": "Medicare statutorily excludes the service, so a notice is required"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Coding is always correct without discussion"
+        "text": "Medicare will deny a claim because the provider coded it incorrectly"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ABN documents patient liability when Medicare coverage unlikely.",
     "distractorExplanations": {
-      "a": "ABN is Medicare-specific tool.",
-      "b": "Not refusal of all care.",
-      "d": "Coverage uncertainty drives ABN."
+      "a": "The ABN is a Medicare fee-for-service form; commercial plans use their own patient waiver or financial agreement.",
+      "b": "An ABN is not required for statutorily excluded services such as routine dental; it may be issued only voluntarily.",
+      "d": "Coding errors are corrected by the provider; an ABN cannot shift liability for the provider's own billing mistakes."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Patient medical record"
+        "text": "Request for additional records to support a pending claim"
       },
       {
         "id": "b",
-        "text": "Prescription refill requests"
+        "text": "Status of a submitted claim in the payer's processing queue"
       },
       {
         "id": "c",
-        "text": "Operating room schedule"
+        "text": "Patient eligibility and benefit details for a date of service"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "835 ERA details paid amounts, adjustments (CARC/RARC), and claim status.",
     "distractorExplanations": {
-      "a": "Clinical chart separate.",
-      "b": "Pharmacy workflow.",
-      "c": "Scheduling separate."
+      "a": "Requests for supporting records are additional documentation requests or claim attachments, not the 835 remittance.",
+      "b": "Claim status inquiries and responses use the 276/277 transactions, not the 835 remittance advice.",
+      "c": "Eligibility and benefit details come from the 270/271 transactions, not the 835 remittance advice."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Same service billed twice with same date/provider without modifier/resubmission indicator"
+        "text": "Same service billed twice with same date/provider without modifier"
       },
       {
         "id": "b",
-        "text": "Corrected claim with appropriate frequency code"
+        "text": "Two related procedures billed together that NCCI bundles"
       },
       {
         "id": "c",
-        "text": "First submission ever"
+        "text": "A corrected claim sent with frequency code 7 to replace the original"
       },
       {
         "id": "d",
-        "text": "Valid appeal"
+        "text": "A repeat procedure billed with modifier 76 on the same day"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Payers detect duplicate service lines; use frequency/modifier for corrections/voids.",
+    "explanation": "Payers detect duplicate service lines; use frequency/modifier for corrections/voids. A resubmission indicator (claim frequency code) also prevents duplicate denials.",
     "distractorExplanations": {
-      "b": "Frequency 7/8 indicates replacement/void appropriately.",
-      "c": "First sub not duplicate.",
-      "d": "Appeal follows denial."
+      "b": "Billing two bundled procedures triggers an NCCI procedure-to-procedure edit, not a duplicate claim denial.",
+      "c": "Frequency code 7 tells the payer the claim replaces the original, which is how duplicate denials are avoided.",
+      "d": "Modifier 76 identifies a repeat procedure by the same physician, which prevents a duplicate denial rather than causing it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unrelated ER visit months later"
+        "text": "Pre-op visit a week before surgery, surgery, and all follow-up for one year"
       },
       {
         "id": "b",
-        "text": "Pre-op visit day before major surgery, surgery, and follow-up within global period per CPT"
+        "text": "Pre-op visit day before major surgery, surgery, and follow-up within global period"
       },
       {
         "id": "c",
-        "text": "New problem visit same day always separately paid without modifier"
+        "text": "Surgery and follow-up, plus treatment of a new unrelated problem afterward"
       },
       {
         "id": "d",
-        "text": "Anesthesia always in global for all payers without rules"
+        "text": "Surgery itself, with routine post-op visits billed separately with modifier 24"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Global periods bundle certain pre/post op services; separate billing rules apply.",
+    "explanation": "Global periods bundle certain pre/post op services; separate billing rules apply. Global package contents follow CPT and payer rules.",
     "distractorExplanations": {
-      "a": "Unrelated services bill separately.",
-      "c": "Same-day E/M may need modifier 25 if significant separate problem.",
-      "d": "Anesthesia often billed separately."
+      "a": "For major surgery the global includes pre-op visits from the day before and 90 days of follow-up, not a week before and a year after.",
+      "c": "An unrelated problem treated during the global period is billed separately with modifier 24, not included in the package.",
+      "d": "Routine post-op visits are included in the global package; modifier 24 is for unrelated E/M services."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Same claim number"
+        "text": "Frequency code 7 void then new claim or frequency 8 replacement"
       },
       {
         "id": "b",
-        "text": "Phone call only without resubmission ever"
+        "text": "Frequency code 1 resubmission of the same claim with the changes"
       },
       {
         "id": "c",
-        "text": "Cash refund without claim adjustment"
+        "text": "A written appeal asking the payer to edit the original claim"
       },
       {
         "id": "d",
-        "text": "Frequency code 8 void then new claim or frequency 7 replacement per payer rules"
+        "text": "Frequency code 8 void then new claim or frequency 7 replacement"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Electronic claims use frequency/type codes to void or replace prior submission.",
+    "explanation": "Electronic claims use frequency/type codes to void or replace prior submission. Which route to use follows each payer's rules.",
     "distractorExplanations": {
-      "a": "Corrections need proper indicators.",
-      "b": "Electronic correction usually required.",
-      "c": "Claim and payment systems must align."
+      "a": "This swaps the codes: frequency 8 voids a prior claim and frequency 7 replaces it.",
+      "b": "Frequency code 1 marks an original claim, so resending a paid claim with code 1 causes a duplicate denial.",
+      "c": "Appeals contest the payer's adjudication decision; the provider's own errors are fixed with a corrected or voided claim."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Service detail, insurance payments/adjustments, patient responsibility per EOB alignment"
+        "text": "Service detail, insurance payments/adjustments, patient responsibility"
       },
       {
         "id": "b",
-        "text": "Only greeting message"
+        "text": "Total billed charges as the balance due, before any insurance adjustments"
       },
       {
         "id": "c",
-        "text": "Other patients' balances"
+        "text": "Service detail and the full allowed amount owed by the patient"
       },
       {
         "id": "d",
-        "text": "Provider salary"
+        "text": "Diagnosis codes and clinical notes justifying each service billed"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Statements reflect allowed amounts, payments, adjustments, and remaining patient liability.",
+    "explanation": "Statements reflect allowed amounts, payments, adjustments, and remaining patient liability. The balance shown should align with the EOB.",
     "distractorExplanations": {
-      "b": "Detail required.",
-      "c": "HIPAA prohibits other patients' info.",
-      "d": "Irrelevant."
+      "b": "Contractual adjustments and insurance payments must be applied; billing the full charge overstates what the patient owes.",
+      "c": "The patient owes only the cost share left after the plan's payment, not the full allowed amount.",
+      "d": "Patient statements are financial documents; clinical notes are not included and would add needless PHI exposure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Medicare primary always for work injury"
+        "text": "Patient's group health plan as primary, with WC billed as secondary"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "No documentation of injury"
+        "text": "Medicare as primary payer with the employer listed as secondary"
       },
       {
         "id": "d",
-        "text": "Standard copay collection"
+        "text": "Patient copay collected at check-in, with the balance billed to the employer"
       }
     ],
     "correctOptionId": "b",
     "explanation": "WC claims need injury-related data and often treat authorization per state.",
     "distractorExplanations": {
-      "a": "WC usually primary for work injury.",
-      "c": "Documentation mandatory.",
-      "d": "Copay rules differ."
+      "a": "For a work injury the workers' compensation carrier is primary; the group health plan is not billed first.",
+      "c": "Under Medicare Secondary Payer rules, workers' compensation is primary for a work injury and Medicare is not.",
+      "d": "WC patients generally owe no copay, and the claim goes to the WC carrier, not directly to the employer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignored as patient favor"
+        "text": "Left as is, since underbilling causes no compliance exposure"
       },
       {
         "id": "b",
-        "text": "Hidden to avoid payer attention"
+        "text": "Offset by billing a higher-level code on future claims"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "Considered fraud if intentional overbilling only—underbilling never matters"
+        "text": "Reported to the OIG as a potential false claim violation"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Accurate billing reflects contract; patterns affect revenue and compliance audits.",
     "distractorExplanations": {
-      "a": "Accuracy required.",
-      "b": "Concealment prevents correction.",
-      "d": "Underbilling also reviewed in audits."
+      "a": "Inaccurate claims in either direction are a compliance issue; repeated underbilling signals a process error to correct.",
+      "b": "Billing a higher code than documented to make up lost revenue is upcoding, which is fraud.",
+      "d": "Accidental underbilling causes no overpayment to report; it is corrected internally through rebilling and audit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Procedure fees"
+        "text": "Procedures and services performed by physicians"
       },
       {
         "id": "b",
-        "text": "Provider tax ID"
+        "text": "Supplies, drugs, and durable medical equipment"
       },
       {
         "id": "c",
-        "text": "Patient address"
+        "text": "Inpatient hospital procedures performed"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "ICD-10-CM captures diagnosis and clinical status supporting medical necessity.",
     "distractorExplanations": {
-      "a": "Procedures use CPT/HCPCS.",
-      "b": "Billing identifier separate.",
-      "c": "Demographics not ICD purpose."
+      "a": "Physician procedures and services are reported with CPT codes, not ICD-10-CM diagnosis codes.",
+      "b": "Supplies, drugs, and DME are reported with HCPCS Level II codes, not ICD-10-CM.",
+      "c": "Inpatient hospital procedures are coded with ICD-10-PCS, a separate system from ICD-10-CM."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -539,23 +539,23 @@
       },
       {
         "id": "b",
-        "text": "Appendectomy"
+        "text": "New patient office visit level 3"
       },
       {
         "id": "c",
-        "text": "MRI brain"
+        "text": "Established patient office visit level 4"
       },
       {
         "id": "d",
-        "text": "Dental cleaning"
+        "text": "Office or outpatient consultation, level 3"
       }
     ],
     "correctOptionId": "a",
     "explanation": "99213 is common established patient E/M level based on MDM/time per rules.",
     "distractorExplanations": {
-      "b": "Surgery different codes.",
-      "c": "Radiology different section.",
-      "d": "Dental ADA codes."
+      "b": "A new patient level 3 office visit is CPT 99203; 99213 is the established patient code.",
+      "c": "An established patient level 4 office visit is CPT 99214, one level above 99213.",
+      "d": "Office or other outpatient consultations use the 99242-99245 range (level 3 is 99243), not established-visit code 99213."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -568,7 +568,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Bilateral procedure"
+        "text": "Distinct procedural service on the same day as another procedure"
       },
       {
         "id": "b",
@@ -576,19 +576,19 @@
       },
       {
         "id": "c",
-        "text": "Cancelled procedure"
+        "text": "Unrelated E/M by the same physician during a postoperative period"
       },
       {
         "id": "d",
-        "text": "Telehealth audio-only"
+        "text": "Decision for major surgery made at the E/M the day before or day of"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Modifier 25 supports separate E/M with procedure same day when criteria met.",
     "distractorExplanations": {
-      "a": "Bilateral often modifier 50.",
-      "c": "Cancelled different modifiers.",
-      "d": "Telehealth uses 95/other per payer."
+      "a": "A distinct procedure on the same day is reported with modifier 59 (or an X modifier), not modifier 25.",
+      "c": "An unrelated E/M during a postoperative global period uses modifier 24, not modifier 25.",
+      "d": "The decision for major surgery at an E/M the day before or day of surgery uses modifier 57."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -601,11 +601,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Billing correct level with full documentation"
+        "text": "Billing component codes separately instead of one bundled code"
       },
       {
         "id": "b",
-        "text": "Using valid ICD link"
+        "text": "Billing a lower level than documented to avoid an audit"
       },
       {
         "id": "c",
@@ -613,15 +613,15 @@
       },
       {
         "id": "d",
-        "text": "Timely filing"
+        "text": "Billing for a service that was not actually performed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Upcoding is fraudulent misrepresentation of service intensity.",
     "distractorExplanations": {
-      "a": "Appropriate coding.",
-      "b": "Proper practice.",
-      "d": "Operational requirement."
+      "a": "Billing components separately instead of the comprehensive code is unbundling, not upcoding.",
+      "b": "Billing below the documented level is downcoding (undercoding), the opposite of upcoding.",
+      "d": "Billing for services never rendered is phantom billing, a separate fraud from inflating the service level."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Patient preference alone without clinical indication"
+        "text": "Service ordered by a licensed provider and requested by the patient"
       },
       {
         "id": "b",
-        "text": "Marketing brochure statement"
+        "text": "Service listed as a covered benefit in the patient's insurance plan"
       },
       {
         "id": "c",
-        "text": "Higher reimbursement"
+        "text": "Service supported by a signed ABN from the patient before treatment"
       },
       {
         "id": "d",
-        "text": "Service reasonable and necessary for diagnosis/treatment supported in record"
+        "text": "Service reasonable and necessary for diagnosis/treatment"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Payers deny services not justified by diagnosis and clinical documentation.",
+    "explanation": "Payers deny services not justified by diagnosis and clinical documentation. Medical necessity must be supported in the medical record.",
     "distractorExplanations": {
-      "a": "Preference insufficient.",
-      "b": "Marketing not medical record.",
-      "c": "Revenue motive not necessity."
+      "a": "An order plus patient preference does not establish necessity; the diagnosis and record must justify the service.",
+      "b": "A covered benefit can still be denied as not medically necessary for this patient's diagnosis.",
+      "c": "An ABN shifts financial liability to the patient; it does not establish medical necessity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Only psychiatric diagnoses"
+        "text": "Physician procedures and E/M services in CPT"
       },
       {
         "id": "c",
-        "text": "Employee payroll"
+        "text": "Inpatient procedures in the ICD-10-PCS code set"
       },
       {
         "id": "d",
-        "text": "Facility mortgage"
+        "text": "Category III emerging technology codes"
       }
     ],
     "correctOptionId": "a",
     "explanation": "HCPCS includes J-codes for drugs, A-codes ambulance, etc.",
     "distractorExplanations": {
-      "b": "Diagnoses are ICD.",
-      "c": "Not HCPCS.",
-      "d": "Not HCPCS."
+      "b": "Physician procedures and E/M services are CPT codes, which are HCPCS Level I, not Level II.",
+      "c": "Inpatient procedures are coded in ICD-10-PCS, a separate system from HCPCS Level II.",
+      "d": "Category III codes for emerging technology are part of CPT, not HCPCS Level II."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Be guessed for speed"
+        "text": "Default to the right side when the note does not specify"
       },
       {
         "id": "b",
@@ -708,19 +708,19 @@
       },
       {
         "id": "c",
-        "text": "Always unspecified if unsure without query"
+        "text": "Be coded as bilateral whenever both sides were examined"
       },
       {
         "id": "d",
-        "text": "Omit because payers ignore"
+        "text": "Be taken from the order or referral rather than the provider's note"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Specificity including laterality improves accuracy; query provider if documentation unclear.",
     "distractorExplanations": {
-      "a": "Guessing causes denials/audit risk.",
-      "c": "Unspecified only if truly unknown after query.",
-      "d": "Payers require specificity."
+      "a": "Defaulting to a side is guessing; when laterality is undocumented, query the provider or use the unspecified code.",
+      "c": "Bilateral codes apply only when the condition affects both sides, not when both sides were merely examined.",
+      "d": "Code assignment follows the treating provider's documentation of the encounter, not the order or referral."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -733,11 +733,11 @@
     "options": [
       {
         "id": "a",
-        "text": "All billing ever"
+        "text": "Billing a higher E/M level than the provider's documentation supports"
       },
       {
         "id": "b",
-        "text": "Valid modifier use"
+        "text": "Claims for services lacking a covered diagnosis under a local coverage determination"
       },
       {
         "id": "c",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "Correct coding with modifiers when allowed"
+        "text": "Claims submitted after the payer's timely filing deadline"
       }
     ],
     "correctOptionId": "c",
     "explanation": "National Correct Coding Initiative pairs codes that should not bill together unless modifier appropriate.",
     "distractorExplanations": {
-      "a": "Billing continues with correct combos.",
-      "b": "Modifiers may override when clinically appropriate.",
-      "d": "Allowed combinations bill fine."
+      "a": "Upcoding E/M levels is found through documentation review, not NCCI procedure-to-procedure edits.",
+      "b": "Diagnosis coverage checks come from LCD/NCD medical necessity edits, not NCCI bundling edits.",
+      "d": "Late claims are stopped by timely filing rules, not by NCCI coding edits."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -766,15 +766,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Any comorbidity"
+        "text": "Condition that consumed the most resources during the hospital stay"
       },
       {
         "id": "b",
-        "text": "Billing clerk choice without coder review"
+        "text": "Condition listed first by the physician on the admission order"
       },
       {
         "id": "c",
-        "text": "Always Z code"
+        "text": "Most serious condition treated during the stay, even if not the reason"
       },
       {
         "id": "d",
@@ -784,9 +784,9 @@
     "correctOptionId": "d",
     "explanation": "Inpatient principal diagnosis drives DRG assignment after physician/coder validation.",
     "distractorExplanations": {
-      "a": "Secondary diagnoses additional.",
-      "b": "Coder uses documentation.",
-      "c": "Z codes are factors/status when applicable."
+      "a": "Resource use does not define the principal diagnosis; it is the condition found after study to cause the admission.",
+      "b": "The admitting diagnosis on the order may change after study; the principal diagnosis is set after study.",
+      "c": "Severity does not decide it; a serious condition that did not cause the admission is a secondary diagnosis."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -799,27 +799,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Medical decision making and/or total time on date of encounter per documentation"
+        "text": "Medical decision making and/or total time on date of encounter"
       },
       {
         "id": "b",
-        "text": "Room color"
+        "text": "History, exam, and medical decision making as the three key components"
       },
       {
         "id": "c",
-        "text": "Patient shoe size"
+        "text": "Total time including staff time spent on the days before the visit"
       },
       {
         "id": "d",
-        "text": "Number of staff in hallway"
+        "text": "Number of body systems examined and documented in the note"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "E/M levels based on MDM elements or time per current CMS/AMA guidelines.",
+    "explanation": "E/M levels based on MDM elements or time per current CMS/AMA guidelines. The level must be supported by documentation.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "b": "History, exam, and MDM as three key components were the 1995/1997 rules replaced for office visits in 2021.",
+      "c": "Time-based leveling counts only physician or QHP time on the date of the encounter, not staff time or other days.",
+      "d": "Since 2021 the exam is performed as medically appropriate and no longer drives the office E/M level."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Primary diabetes"
+        "text": "Nature of the injury, such as a fracture or open wound"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "Fee schedule"
+        "text": "Patient status factors such as a history of injury"
       },
       {
         "id": "d",
-        "text": "Provider specialty"
+        "text": "Sequelae of an injury, identified by the 7th character S"
       }
     ],
     "correctOptionId": "b",
     "explanation": "External cause codes supplement injury/poisoning coding when documented.",
     "distractorExplanations": {
-      "a": "Diabetes E codes different chapter.",
-      "c": "Not ICD purpose.",
-      "d": "Specialty on claim field not external cause."
+      "a": "The nature of the injury is coded with Chapter 19 S and T codes; external cause codes add how it happened.",
+      "c": "Status and history factors are captured with Z codes, not external cause codes.",
+      "d": "Sequelae are shown by the 7th character S on the injury code itself, not by an external cause code."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No documentation"
+        "text": "Modifier 22 to show the service was more complex than usual"
       },
       {
         "id": "b",
-        "text": "Automatic highest payment"
+        "text": "A Category III code reported alongside it for tracking"
       },
       {
         "id": "c",
-        "text": "Description and often comparable code with documentation supporting unique service"
+        "text": "Description and often comparable code with documentation"
       },
       {
         "id": "d",
-        "text": "Use for all routine visits"
+        "text": "The closest listed code billed with modifier 52 attached"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unlisted codes need report/comparison to establish value and medical necessity.",
+    "explanation": "Unlisted codes need report/comparison to establish value and medical necessity. The documentation must support the unique service.",
     "distractorExplanations": {
-      "a": "Documentation essential.",
-      "b": "Payment not automatic highest.",
-      "d": "Routine visits have specific E/M codes."
+      "a": "Modifier 22 reports increased work on an existing listed code; it does not apply to unlisted codes.",
+      "b": "When a Category III code exists it is reported instead of an unlisted code, not alongside it.",
+      "d": "Modifier 52 reports a reduced service; substituting a listed code for a different service misrepresents what was done."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Repeat procedure same session"
+        "text": "Repeat procedure by the same physician on the same day"
       },
       {
         "id": "b",
-        "text": "Global period"
+        "text": "Significant, separately identifiable E/M on a procedure day"
       },
       {
         "id": "c",
-        "text": "Telephone call"
+        "text": "Bilateral procedure performed on both sides at the same operative session"
       },
       {
         "id": "d",
@@ -916,9 +916,9 @@
     "correctOptionId": "d",
     "explanation": "59 breaks NCCI bundles when separate session/site/organ/encounter per criteria.",
     "distractorExplanations": {
-      "a": "Repeat may use 76/77.",
-      "b": "Global separate concept.",
-      "c": "Telephone E/M separate codes."
+      "a": "A repeat procedure by the same physician is reported with modifier 76, not modifier 59.",
+      "b": "A separate E/M on a procedure day is reported with modifier 25, not modifier 59.",
+      "c": "A bilateral procedure at the same session is reported with modifier 50, not modifier 59."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "Is complete and clear"
+        "text": "Supports a higher-paying code that the provider did not document anywhere"
       },
       {
         "id": "c",
-        "text": "Matches nursing note only without conflict"
+        "text": "Is complete but the coder prefers a more common code"
       },
       {
         "id": "d",
-        "text": "Never; guess instead"
+        "text": "Is signed by a resident rather than the attending physician"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Clinical documentation improvement queries resolve ambiguity before coding.",
     "distractorExplanations": {
-      "b": "No query needed.",
-      "c": "Agreement allows coding.",
-      "d": "Guessing violates compliance."
+      "b": "Queries must be non-leading; prompting for a higher-paying code the provider did not document is noncompliant.",
+      "c": "Complete, clear documentation needs no query; coder preference never justifies changing what is documented.",
+      "d": "Resident signatures raise attestation rules, not the clinical-clarity issue a coding query resolves."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "SNOMED replaces CPT on CMS-1500"
+        "text": "Claims require SNOMED CT codes; ICD-10-CM is used for clinical problem lists"
       },
       {
         "id": "b",
-        "text": "Claims require ICD-10-CM diagnosis codes; SNOMED supports clinical documentation mapping"
+        "text": "Claims require ICD-10-CM diagnosis codes; SNOMED supports clinical documentation"
       },
       {
         "id": "c",
-        "text": "ICD-10 only for dental"
+        "text": "SNOMED CT replaces CPT for procedures on the CMS-1500 claim form"
       },
       {
         "id": "d",
-        "text": "They are identical"
+        "text": "SNOMED CT codes map one-to-one to ICD-10-CM, so either can be billed"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "SNOMED CT is clinical terminology; billing uses ICD-10-CM mapped from documentation.",
+    "explanation": "SNOMED CT is clinical terminology; billing uses ICD-10-CM mapped from documentation. SNOMED CT terms are mapped to ICD-10-CM for billing.",
     "distractorExplanations": {
-      "a": "CPT still procedures.",
-      "c": "ICD-10 broad use.",
-      "d": "Different purposes."
+      "a": "This reverses the roles: claims require ICD-10-CM, while SNOMED CT supports clinical documentation in the EHR.",
+      "c": "Procedures on the CMS-1500 are still reported with CPT/HCPCS; SNOMED CT is not a billing code set.",
+      "d": "SNOMED-to-ICD mapping is not one-to-one, and payers accept only ICD-10-CM diagnosis codes on claims."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Retail prescriptions"
+        "text": "Physician services, outpatient care, DME, and preventive services"
       },
       {
         "id": "b",
-        "text": "Routine dental"
+        "text": "Inpatient hospital, long-term custodial nursing care, and routine dental"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Auto insurance"
+        "text": "Private plan bundling hospital, medical, and usually drug coverage"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Part A is hospital insurance for inpatient/SNF/hospice benefits when eligible.",
     "distractorExplanations": {
-      "a": "Part D drugs.",
-      "b": "Dental limited exceptions.",
-      "d": "Unrelated payer."
+      "a": "Physician services, outpatient care, DME, and preventive services are Medicare Part B, not Part A.",
+      "b": "Medicare does not cover long-term custodial care or routine dental under Part A.",
+      "d": "A private plan bundling hospital, medical, and drug coverage is Medicare Advantage (Part C)."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Inpatient room board"
+        "text": "Inpatient hospital, skilled nursing, hospice, and some home health"
       },
       {
         "id": "b",
-        "text": "Long-term custodial nursing"
+        "text": "Outpatient prescription drugs through private stand-alone plans"
       },
       {
         "id": "c",
-        "text": "Hearing aids always fully"
+        "text": "Long-term custodial nursing home care and routine hearing aids"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "Part B is medical insurance for outpatient professional/services and DME.",
     "distractorExplanations": {
-      "a": "Part A inpatient.",
-      "b": "Custodial care not covered.",
-      "c": "Hearing aids generally not covered."
+      "a": "Inpatient hospital, skilled nursing, and hospice are Medicare Part A benefits, not Part B.",
+      "b": "Outpatient prescription drugs through stand-alone private plans are Medicare Part D.",
+      "c": "Original Medicare does not cover custodial nursing home care or routine hearing aids under Part B."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1096,7 +1096,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Single national identical policy everywhere"
+        "text": "Federal CMS rules that apply identically in every state"
       },
       {
         "id": "b",
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "Patient hobby"
+        "text": "The patient's Medicare Part B enrollment status alone"
       },
       {
         "id": "d",
-        "text": "Moon phase"
+        "text": "The provider's commercial contract rates and network tier"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Medicaid is state-administered with federal guidelines; billing rules differ.",
     "distractorExplanations": {
-      "a": "State variation significant.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "a": "Medicaid is administered by each state within federal guidelines, so rules differ from state to state.",
+      "c": "Medicaid eligibility rests on state income and category rules; Medicare enrollment only matters for dual eligibles.",
+      "d": "Commercial contract rates do not set Medicaid billing; state fee schedules and Medicaid managed care plans do."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1129,11 +1129,11 @@
     "options": [
       {
         "id": "a",
-        "text": "All US tourists"
+        "text": "Veterans receiving care at VA medical centers"
       },
       {
         "id": "b",
-        "text": "Only veterans at VA exclusively always billed same"
+        "text": "Dependents of veterans with service-connected disability"
       },
       {
         "id": "c",
@@ -1141,15 +1141,15 @@
       },
       {
         "id": "d",
-        "text": "Medicare only population"
+        "text": "Federal civilian employees and their dependents"
       }
     ],
     "correctOptionId": "c",
     "explanation": "TRICARE serves military community; billing follows TRICARE rules distinct from VA direct care.",
     "distractorExplanations": {
-      "a": "Not general tourist.",
-      "b": "VA and TRICARE differ.",
-      "d": "Separate program."
+      "a": "Care at VA medical centers is VA health care, a separate system from TRICARE.",
+      "b": "Dependents of certain permanently disabled veterans are covered by CHAMPVA, not TRICARE.",
+      "d": "Federal civilian employees are covered through the FEHB program, not TRICARE."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Perform MRI without auth"
+        "text": "Perform the MRI and bill the patient's secondary plan instead"
       },
       {
         "id": "b",
-        "text": "Bill Medicare if patient has none"
+        "text": "Perform the MRI and appeal after the claim is denied for no auth"
       },
       {
         "id": "c",
-        "text": "Ignore patient communication"
+        "text": "Schedule the MRI once the patient signs a Medicare ABN"
       },
       {
         "id": "d",
-        "text": "Review denial reason, peer-to-peer if available, patient notification, alternative plan"
+        "text": "Review denial reason, peer-to-peer if available, patient notification"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Appeals and peer review may overturn; patient informed of options and liability.",
+    "explanation": "Appeals and peer review may overturn; patient informed of options and liability. An alternative plan of care may also be discussed.",
     "distractorExplanations": {
-      "a": "Unauthorized service may deny payment.",
-      "b": "Wrong payer.",
-      "c": "Patient communication required."
+      "a": "The secondary plan follows the primary's determination; billing it does not cure a missing primary authorization.",
+      "b": "Proceeding without authorization risks nonpayment; the denial reason and peer-to-peer review come before service.",
+      "c": "The ABN is a Medicare fee-for-service notice and does not apply to a commercial payer's denial."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Group health plan due to active employment over certain size/age rules or other insurance primary situations"
+        "text": "Group health plan due to active employment over certain size/age rules"
       },
       {
         "id": "b",
-        "text": "Patient has no other coverage ever"
+        "text": "Patient has a Medigap supplement policy purchased through a private insurer"
       },
       {
         "id": "c",
-        "text": "Patient pays cash"
+        "text": "Patient is 65+ and covered by a retiree group health plan"
       },
       {
         "id": "d",
-        "text": "Service is screening"
+        "text": "Patient is enrolled in Medicaid as well as Medicare Part B"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "MSP provisions determine when Medicare pays secondary to other insurance.",
+    "explanation": "MSP provisions determine when Medicare pays secondary to other insurance. Other situations where other insurance is primary, such as liability or WC, also apply.",
     "distractorExplanations": {
-      "b": "No other coverage means Medicare primary if eligible.",
-      "c": "Cash not other insurance.",
-      "d": "Screening has specific rules but MSP broader."
+      "b": "Medigap pays after Medicare; it is a supplement, not a primary payer under MSP rules.",
+      "c": "Retiree coverage is not based on current employment, so it pays secondary to Medicare.",
+      "d": "Medicaid is the payer of last resort, so Medicare stays primary for dual-eligible patients."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Billed fee-for-service only per visit"
+        "text": "Receives a discounted fee for each service billed to the plan"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "Paid only by patient tips"
+        "text": "Receives a fixed payment per admission based on the DRG"
       },
       {
         "id": "d",
-        "text": "Never sees patients"
+        "text": "Receives a bonus based on quality scores in addition to fees"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Capitation pays per enrolled member period regardless of visit volume.",
     "distractorExplanations": {
-      "a": "FFS different model.",
-      "c": "Not payment model.",
-      "d": "Still provides care."
+      "a": "A discounted fee per service is discounted fee-for-service, not capitation.",
+      "c": "A fixed payment per admission by DRG is a case rate, not a per-member capitated payment.",
+      "d": "Quality bonuses on top of fees describe pay-for-performance, not a fixed per-member capitation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Legal subpoena"
+        "text": "The provider's bill for the remaining balance after insurance"
       },
       {
         "id": "b",
-        "text": "Prescription with refills"
+        "text": "The payer's decision on a prior authorization request"
       },
       {
         "id": "c",
-        "text": "What provider billed, allowed amount, plan paid, patient owes—not a bill itself usually"
+        "text": "What provider billed, allowed amount, plan paid, patient owes"
       },
       {
         "id": "d",
-        "text": "Provider license renewal"
+        "text": "The provider's detailed payment remittance and CARC codes"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "EOB explains adjudication; provider statement may follow for patient balance.",
+    "explanation": "EOB explains adjudication; provider statement may follow for patient balance. It is usually not a bill itself.",
     "distractorExplanations": {
-      "a": "Not legal order.",
-      "b": "Pharmacy document.",
-      "d": "Unrelated."
+      "a": "The provider's bill for the remaining balance is the patient statement, which follows the EOB.",
+      "b": "Prior authorization decisions come in a separate determination letter, not the EOB.",
+      "d": "Remittance detail with CARC codes goes to the provider on the ERA/RA, not to the patient as an EOB."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Never covered"
+        "text": "Denied unless the member obtained prior authorization"
       },
       {
         "id": "b",
-        "text": "Requires pre-auth before car crash"
+        "text": "Covered only at the out-of-network benefit level and cost share"
       },
       {
         "id": "c",
-        "text": "Paid only if provider in Antarctica"
+        "text": "Paid by the home state's Medicaid program instead of Blue Cross"
       },
       {
         "id": "d",
-        "text": "Processed under emergency/urgent rules per member contract and federal protections"
+        "text": "Processed under emergency/urgent rules per member contract"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Emergency services have special network/payment rules under ACA and plan terms.",
+    "explanation": "Emergency services have special network/payment rules under ACA and plan terms. Federal protections such as the ACA and No Surprises Act also apply.",
     "distractorExplanations": {
-      "a": "Emergencies generally covered with cost share.",
-      "b": "Retro auth impossible pre-crash.",
-      "c": "Geography joke; real rules apply domestically."
+      "a": "The ACA bars plans from requiring prior authorization for emergency services.",
+      "b": "Federal rules require in-network cost sharing for emergency care, even out of network.",
+      "c": "Medicaid does not pick up claims for a commercially insured Blue Cross member's emergency care."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Hospital inpatient"
+        "text": "Inpatient hospital and hospice coverage"
       },
       {
         "id": "c",
-        "text": "Dental unlimited"
+        "text": "Private plans bundling Parts A and B into one product"
       },
       {
         "id": "d",
-        "text": "Provider malpractice insurance"
+        "text": "Physician and outpatient services coverage"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Part D plans cover outpatient drugs via PDP/MA-PD.",
     "distractorExplanations": {
-      "b": "Part A.",
-      "c": "Not Part D scope.",
-      "d": "Unrelated."
+      "b": "Inpatient hospital and hospice coverage is Medicare Part A, not Part D.",
+      "c": "Private plans bundling Parts A and B are Medicare Advantage (Part C), not Part D.",
+      "d": "Physician and outpatient services are Medicare Part B, not Part D."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Amtrak ticket office"
+        "text": "The Social Security Administration's regional Medicare office"
       },
       {
         "id": "b",
-        "text": "Palmetto GBA or designated MAC under special Medicare rules for railroad beneficiaries"
+        "text": "Palmetto GBA under special Medicare rules for railroad beneficiaries"
       },
       {
         "id": "c",
-        "text": "State Medicaid"
+        "text": "The local A/B MAC that handles other Medicare claims in the state"
       },
       {
         "id": "d",
-        "text": "Patient employer HR"
+        "text": "The Railroad Retirement Board claims unit in Chicago directly"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Railroad Retirement Board beneficiaries have Medicare processed through designated contractors.",
+    "explanation": "Railroad Retirement Board beneficiaries have Medicare processed through designated contractors. Palmetto GBA is the Railroad Retirement Board Specialty MAC.",
     "distractorExplanations": {
-      "a": "Not Amtrak.",
-      "c": "Medicare primary if eligible.",
-      "d": "MAC processes."
+      "a": "SSA handles enrollment for many beneficiaries but does not process Medicare claims.",
+      "c": "Railroad Medicare Part B claims go to the RRB Specialty MAC, not the local A/B MAC.",
+      "d": "The RRB handles enrollment and entitlement; claims are processed by its contracted Specialty MAC."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Medicare"
+        "text": "An insurance carrier that bears the claim risk"
       },
       {
         "id": "b",
-        "text": "Patient only with no administrator"
+        "text": "The state insurance department's claims fund"
       },
       {
         "id": "c",
-        "text": "Employer/plan administrator often using TPA; not fully insured carrier risk"
+        "text": "Employer/plan administrator often using TPA"
       },
       {
         "id": "d",
-        "text": "State lottery"
+        "text": "The stop-loss carrier on every claim submitted"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Self-funded ERISA plans use administrator; billing follows plan documents.",
+    "explanation": "Self-funded ERISA plans use administrator; billing follows plan documents. The employer, not a fully insured carrier, bears the claim risk.",
     "distractorExplanations": {
-      "a": "May coordinate but employer plan primary per rules.",
-      "b": "Administrator exists.",
-      "d": "Unrelated."
+      "a": "A carrier bearing the claim risk describes a fully insured plan, not a self-funded one.",
+      "b": "Self-funded ERISA plans are not state-insured; no state fund pays their claims.",
+      "d": "Stop-loss reimburses the employer only above set thresholds; it does not pay each claim."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Any provider nationwide always without ID"
+        "text": "Specialist visits covered at higher cost share without a referral"
       },
       {
         "id": "b",
-        "text": "No primary care role"
+        "text": "Referral needed only for out-of-network specialists"
       },
       {
         "id": "c",
-        "text": "Medicare replaces HMO rules"
+        "text": "Referral needed for every visit, including emergency department care"
       },
       {
         "id": "d",
-        "text": "PCP referral/authorization needed for specialist except emergencies per plan"
+        "text": "PCP referral/authorization needed for specialist except emergencies"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "HMOs gatekeep specialty care through PCP/referrals and network.",
+    "explanation": "HMOs gatekeep specialty care through PCP/referrals and network. Exact referral rules follow each plan.",
     "distractorExplanations": {
-      "a": "Network limits apply.",
-      "b": "PCP central to HMO.",
-      "c": "MA HMO follows plan."
+      "a": "Self-referral to specialists at higher cost sharing describes a PPO, not an HMO.",
+      "b": "Requiring referrals mainly for out-of-network care resembles a POS plan; HMOs need referrals in network too.",
+      "c": "Emergency care is exempt from referral requirements under HMO plans and federal rules."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "Never; assume active coverage"
+        "text": "At the first visit only, since coverage rarely changes during the year"
       },
       {
         "id": "c",
-        "text": "Only after collections lawsuit"
+        "text": "After claim denial, to confirm the reason for the payer's decision"
       },
       {
         "id": "d",
-        "text": "Once at birth"
+        "text": "At each annual plan renewal, unless the patient reports a change"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Real-time eligibility reduces denials for termed coverage or changed benefits.",
     "distractorExplanations": {
-      "b": "Coverage changes frequently.",
-      "c": "Too late.",
-      "d": "Ongoing verification needed."
+      "b": "Coverage can change at any time through job loss or plan changes, so one check at the first visit is not enough.",
+      "c": "Checking eligibility after a denial is too late; verification before service prevents the denial.",
+      "d": "Waiting for renewal or a patient report misses mid-year terminations; verify before each service when possible."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Posting all diagnoses publicly"
+        "text": "Administrative, physical, and technical safeguards for electronic PHI"
       },
       {
         "id": "b",
@@ -1500,19 +1500,19 @@
       },
       {
         "id": "c",
-        "text": "Sharing SSN in waiting room aloud"
+        "text": "Patient written consent before any PHI is used for treatment"
       },
       {
         "id": "d",
-        "text": "No workforce training ever"
+        "text": "Notification to patients within 60 days of any PHI breach"
       }
     ],
     "correctOptionId": "b",
     "explanation": "HIPAA mandates administrative, physical, technical safeguards and patient rights.",
     "distractorExplanations": {
-      "a": "Public posting prohibited.",
-      "c": "Verbal PHI disclosure improper.",
-      "d": "Training required."
+      "a": "Administrative, physical, and technical safeguards for ePHI are HIPAA Security Rule requirements, not the Privacy Rule.",
+      "c": "The Privacy Rule permits use of PHI for treatment, payment, and operations without written authorization.",
+      "d": "Breach notification is the separate Breach Notification Rule and applies to unsecured PHI breaches."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1525,11 +1525,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Billing correct documented services"
+        "text": "Billing errors caught and refunded within 60 days of identification"
       },
       {
         "id": "b",
-        "text": "Providing free charity care policy compliant"
+        "text": "Honest coding mistakes made without reckless disregard"
       },
       {
         "id": "c",
@@ -1537,15 +1537,15 @@
       },
       {
         "id": "d",
-        "text": "Credentialing staff"
+        "text": "Submitting false claims to a commercial insurer only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "FCA imposes liability for fraudulent government healthcare claims.",
     "distractorExplanations": {
-      "a": "Proper billing protected.",
-      "b": "Charity care lawful.",
-      "d": "Unrelated."
+      "a": "Returning an identified overpayment within 60 days is how providers avoid False Claims Act liability.",
+      "b": "FCA liability requires knowledge, including deliberate ignorance or reckless disregard; honest mistakes are not enough.",
+      "d": "The federal FCA covers claims paid with government funds; purely commercial fraud falls under other laws."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1558,15 +1558,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore regulations to maximize speed"
+        "text": "Written policies, a compliance officer, and annual external accreditation"
       },
       {
         "id": "b",
-        "text": "Single verbal rule"
+        "text": "Training, auditing, and mandatory self-disclosure of every error to CMS"
       },
       {
         "id": "c",
-        "text": "Marketing"
+        "text": "Written policies, training, and incentive pay tied to billing volume"
       },
       {
         "id": "d",
@@ -1576,9 +1576,9 @@
     "correctOptionId": "d",
     "explanation": "Federal guidance expects seven elements for effective compliance programs.",
     "distractorExplanations": {
-      "a": "Opposite of compliance.",
-      "b": "Insufficient.",
-      "c": "Marketing not core element."
+      "a": "External accreditation is not one of the seven OIG compliance program elements.",
+      "b": "Overpayments are reported and returned, but OIG does not require self-disclosing every billing error to CMS.",
+      "c": "Incentive pay tied to billing volume creates fraud risk; it is not an OIG compliance element."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Physician self-referral for designated health services to entities with financial relationship absent exception"
+        "text": "Physician self-referral for designated health services absent exception"
       },
       {
         "id": "b",
-        "text": "All employment of physicians ever"
+        "text": "Offering anything of value to induce referrals of federal program patients"
       },
       {
         "id": "c",
-        "text": "Billing Medicaid"
+        "text": "Referring patients for any service to an entity the physician owns"
       },
       {
         "id": "d",
-        "text": "Using computers"
+        "text": "Submitting claims the provider knows to be false to Medicare"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Stark restricts DHS referrals where physician has financial relationship unless exception met.",
+    "explanation": "Stark restricts DHS referrals where physician has financial relationship unless exception met. It applies when the physician or an immediate family member has a financial relationship with the entity.",
     "distractorExplanations": {
-      "b": "Employment allowed with exceptions.",
-      "c": "Medicaid billing lawful.",
-      "d": "Technology unrelated."
+      "b": "Remuneration to induce federal program referrals is the Anti-Kickback Statute, not the Stark Law.",
+      "c": "Stark covers only designated health services, and exceptions exist; it does not bar referrals for every service.",
+      "d": "Knowingly submitting false claims is the False Claims Act, not the Stark self-referral law."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Paying fair market value rent with safe harbor"
+        "text": "Physician referrals for DHS to entities with a financial relationship"
       },
       {
         "id": "b",
@@ -1632,19 +1632,19 @@
       },
       {
         "id": "c",
-        "text": "Normal salary to employed physician"
+        "text": "Knowingly submitting false claims to Medicare or Medicaid"
       },
       {
         "id": "d",
-        "text": "Discounts fully compliant with safe harbor when structured properly"
+        "text": "Billing for services furnished by an excluded individual"
       }
     ],
     "correctOptionId": "b",
     "explanation": "AKS criminalizes inducements for federal healthcare referrals; safe harbors protect lawful arrangements.",
     "distractorExplanations": {
-      "a": "FMV rent safe harbor may protect.",
-      "c": "Bona fide employment excepted.",
-      "d": "Compliant discounts allowed."
+      "a": "Physician referrals for designated health services to financially related entities fall under the Stark Law.",
+      "c": "Knowingly submitting false claims is governed by the False Claims Act, not the Anti-Kickback Statute.",
+      "d": "Billing for services by an excluded person triggers OIG exclusion penalties (CMPs), not the AKS itself."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Destroy all records day after payment"
+        "text": "Keeping records until the claim is paid and the patient balance closed"
       },
       {
         "id": "b",
-        "text": "Keep only verbal memory"
+        "text": "Keeping records for 1 year after the date of service under HIPAA"
       },
       {
         "id": "c",
-        "text": "Maintaining records supporting services billed per payer/regulatory periods (often 5–7+ years)"
+        "text": "Maintaining records supporting services billed per payer/regulatory periods"
       },
       {
         "id": "d",
-        "text": "Patient keeps only copy provider destroys immediately"
+        "text": "Transferring records to the patient so the practice need not retain any copies"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Retention policies follow CMS/state/false claims standards typically multi-year.",
+    "explanation": "Retention policies follow CMS/state/false claims standards typically multi-year. These periods are often 5-7 or more years, and longer for some programs.",
     "distractorExplanations": {
-      "a": "Destruction too soon violates audit ability.",
-      "b": "Insufficient.",
-      "d": "Provider must retain."
+      "a": "Payers and auditors can review claims for years after payment, so records must outlast the closed balance.",
+      "b": "No rule sets a one-year limit; HIPAA requires six years for compliance documentation and payers set multi-year periods.",
+      "d": "The provider must retain its own records to support billed services; giving the patient a copy does not satisfy this."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Patient parking tickets"
+        "text": "Provider fraud cases referred for criminal prosecution by the Department of Justice"
       },
       {
         "id": "b",
-        "text": "Employee lunch choices"
+        "text": "Medicaid eligibility errors in state enrollment determinations"
       },
       {
         "id": "c",
-        "text": "Vending machine inventory"
+        "text": "HIPAA privacy complaints filed by patients against providers"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "Recovery Audit Contractors identify overpayments/underpayments on Medicare claims.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "Unrelated.",
-      "c": "Unrelated."
+      "a": "RACs identify improper payments for recovery; fraud referrals go through UPICs and the OIG, not RAC audits.",
+      "b": "Medicaid eligibility error reviews fall under PERM and state programs, not Medicare RAC audits.",
+      "c": "HIPAA privacy complaints are investigated by HHS Office for Civil Rights, not Recovery Audit Contractors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1727,23 +1727,23 @@
       },
       {
         "id": "b",
-        "text": "Storing CVV in plain text spreadsheet shared"
+        "text": "HIPAA Security Rule standards that replace PCI-DSS for patients"
       },
       {
         "id": "c",
-        "text": "Charging random amounts without notice"
+        "text": "PCI-DSS rules permitting CVV storage when the file is encrypted"
       },
       {
         "id": "d",
-        "text": "Sharing card number with marketers"
+        "text": "Verbal patient consent recorded once at the first visit"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Payment card data requires secure processing and transparent patient consent.",
     "distractorExplanations": {
-      "b": "CVV storage prohibited generally.",
-      "c": "Unauthorized charges illegal.",
-      "d": "PCI/HIPAA violation."
+      "b": "HIPAA does not replace PCI-DSS; card data handled by a medical practice must still meet PCI-DSS.",
+      "c": "PCI-DSS prohibits storing the CVV after authorization, even in encrypted form.",
+      "d": "Card-on-file use needs written authorization with clear terms, not a one-time verbal consent."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Pay ransom silently without reporting always legal"
+        "text": "Pay the ransom promptly so systems come back before any patient data is accessed"
       },
       {
         "id": "b",
-        "text": "Isolate systems, notify leadership/IT, assess breach notification obligations, restore from backups"
+        "text": "Isolate systems, notify leadership/IT, assess breach notification obligations"
       },
       {
         "id": "c",
-        "text": "Ignore and continue billing on infected machines"
+        "text": "Restore from backups and resume billing without a breach assessment"
       },
       {
         "id": "d",
-        "text": "Post PHI online to prove hack"
+        "text": "Notify all patients within 24 hours before the scope is investigated"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Cyber incidents require containment, forensic analysis, and potential HIPAA breach notification.",
+    "explanation": "Cyber incidents require containment, forensic analysis, and potential HIPAA breach notification. Systems are then restored from clean backups.",
     "distractorExplanations": {
-      "a": "Reporting and legal review still needed.",
-      "c": "Continued use spreads encryption.",
-      "d": "Aggravates breach."
+      "a": "Paying does not guarantee recovery or remove breach duties, and may raise sanctions concerns; containment comes first.",
+      "c": "HHS presumes ransomware encryption of PHI is a breach unless a risk assessment shows low probability of compromise.",
+      "d": "HIPAA requires notice without unreasonable delay and within 60 days of discovery, after the scope is assessed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always required"
+        "text": "Acceptable if each test was medically necessary and performed"
       },
       {
         "id": "b",
-        "text": "Random choice"
+        "text": "A coding error only if the payer does not catch it"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "Patient preference"
+        "text": "Acceptable when the payer's system pays the claim as billed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Deliberate unbundling violating NCCI/payer rules is compliance violation.",
     "distractorExplanations": {
-      "a": "Panels bill as panel when appropriate.",
-      "b": "Must follow rules.",
-      "d": "Not patient choice."
+      "a": "Medical necessity of each test does not permit splitting a panel to get higher payment.",
+      "b": "Intentional unbundling is fraud or abuse whether or not the payer's edits catch it.",
+      "d": "Payment does not make an improper claim proper; overpayments from unbundling must be returned."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ordering lunch"
+        "text": "Reporting HIPAA breaches directly to the OCR on staff's behalf"
       },
       {
         "id": "b",
-        "text": "Marketing surveys"
+        "text": "Answering billing questions from patients about their bills"
       },
       {
         "id": "c",
-        "text": "Sharing passwords quickly"
+        "text": "Filing appeals of claim denials with payers"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "Hotlines support reporting without retaliation per policy.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "Not primary purpose.",
-      "c": "Security violation."
+      "a": "A compliance hotline is an internal reporting channel; it does not file reports with OCR for staff.",
+      "b": "Patient billing questions go to customer service, not the compliance hotline.",
+      "c": "Denial appeals are a revenue cycle task, not the purpose of a compliance hotline."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Cannot participate in federal healthcare programs; hiring/billing prohibited"
+        "text": "Cannot participate in federal healthcare programs"
       },
       {
         "id": "b",
-        "text": "Gets bonus payments"
+        "text": "Can work in billing roles that do not touch patient care"
       },
       {
         "id": "c",
-        "text": "Only excluded from dental"
+        "text": "Is barred from Medicare but may still bill Medicaid"
       },
       {
         "id": "d",
-        "text": "List is optional ignore"
+        "text": "Regains eligibility once the exclusion is listed for 5 years"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "LEIE lists individuals/entities excluded from Medicare/Medicaid participation.",
+    "explanation": "LEIE lists individuals/entities excluded from Medicare/Medicaid participation. Hiring them or billing for their services is prohibited.",
     "distractorExplanations": {
-      "b": "Opposite.",
-      "c": "Federal programs broadly.",
-      "d": "Must screen employees/vendors."
+      "b": "Exclusion covers administrative and management services paid by federal programs, not just patient care.",
+      "c": "OIG exclusion applies to all federal health care programs, including Medicaid.",
+      "d": "Reinstatement requires applying to OIG after the exclusion term; it does not happen at a set listing date."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "All medical care worldwide forever free"
+        "text": "In-network deductibles and copays at in-network hospitals"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "In-network copays only increase"
+        "text": "Out-of-network charges for all elective care chosen by the patient"
       },
       {
         "id": "d",
-        "text": "Medicare replacement entirely"
+        "text": "Ground ambulance charges from out-of-network providers"
       }
     ],
     "correctOptionId": "b",
     "explanation": "NSA restricts surprise OON bills in specified settings with IDR process.",
     "distractorExplanations": {
-      "a": "Overstates law.",
-      "c": "Not NSA focus.",
-      "d": "Medicare separate."
+      "a": "In-network cost sharing is set by the plan; the No Surprises Act targets out-of-network surprise bills.",
+      "c": "Patients can knowingly choose out-of-network elective care after notice and consent; the Act targets surprise bills.",
+      "d": "Ground ambulance is excluded from the No Surprises Act; only air ambulance is covered."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only birthday parties"
+        "text": "Attendance only, since topic content is set by CMS"
       },
       {
         "id": "b",
-        "text": "Nothing; training optional"
+        "text": "Topics covered, without tracking individual attendance"
       },
       {
         "id": "c",
-        "text": "Personal social media handles"
+        "text": "Test scores, used to set staff billing productivity pay"
       },
       {
         "id": "d",
-        "text": "Attendance, topics covered, and periodic updates on fraud/waste/abuse and HIPAA"
+        "text": "Attendance, topics covered, and periodic updates"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Documented training demonstrates compliance program effectiveness to auditors.",
+    "explanation": "Documented training demonstrates compliance program effectiveness to auditors. Topics include fraud, waste, abuse, and HIPAA.",
     "distractorExplanations": {
-      "a": "Irrelevant.",
-      "b": "Training expected.",
-      "c": "Irrelevant."
+      "a": "Topics must be documented too, and CMS does not dictate each practice's training content.",
+      "b": "Auditors expect proof of who attended; topics without attendance records do not show training was completed.",
+      "c": "Tying training to billing productivity pay creates a compliance risk; attendance and topics are what is documented."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"

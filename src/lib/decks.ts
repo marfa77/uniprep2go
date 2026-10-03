@@ -1242,21 +1242,21 @@ const rawDecks: Deck[] = [
     topicCoverage: cfaLevelTwoTopics,
     sampleCards: [
       {
-        question: "CFO is $120M after a $5M working-capital build and $8M interest paid. FCInv is $25M, new debt $15M, debt repaid $5M, tax rate 25%. What is FCFE?",
+        question: "How do you value a 2-year 3% annual-pay bond on a tree with r₀ = 2% and year-1 rates of 3.375% and 2.5%?",
         answer:
-          "FCFE = $105M: CFO − FCInv + net borrowing = 120 − 25 + 10. CFO already reflects the working-capital investment and interest paid (a cost borne before equity), so neither is adjusted again. The after-tax interest add-back belongs only in FCFF, here 120 + 6 − 25 = $101M.",
+          "Use backward induction: at each node, value = average of the two next-period values plus the coupon, discounted at that node's one-period rate. Start at maturity (100 + coupon) and step back one period at a time. Year-1 values are 99.64 (upper) and 100.49 (lower); today's value is about 101.04. Embedded options are handled by adjusting node values (min for calls, max for puts) in the same pass.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-1.webp",
       },
       {
-        question: "A callable bond is worth 100.00 on a binomial tree at a constant OAS. Shifting the benchmark curve down and up 25 bps gives 101.40 and 98.20. What is its effective duration?",
+        question: "How do you apply both a DLOC and a DLOM to value a minority stake in a private company?",
         answer:
-          "6.40. A callable bond's cash flows change when rates move (the issuer calls when rates fall), so yield-based modified duration is invalid. Effective duration reprices the bond off parallel curve shifts holding OAS constant. The gain (+1.40) is smaller than the loss (−1.80): negative convexity.",
+          "Apply them multiplicatively and in sequence: start from the controlling, marketable value, apply DLOC to get a minority marketable value, then DLOM to reflect that the shares cannot be sold quickly. Total discount = 1 − (1 − DLOC)(1 − DLOM). The discounts are not additive. Apply DLOC only if the base value is on a controlling basis.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-2.webp",
       },
       {
-        question: "A sub's functional currency is the parent's USD, so the temporal method applies. It holds LC 1,000 of inventory bought at $0.80/LC; today's rate is $0.70. What is inventory in USD?",
+        question: "How does standardized unexpected earnings work as a momentum indicator, and why scale the surprise?",
         answer:
-          "$800. Under the temporal method, non-monetary items carried at historical cost (inventory, PP&E) are remeasured at historical rates; only monetary items (cash, receivables, debt) use the current rate. The remeasurement gain or loss goes to net income, not OCI, so earnings get more volatile.",
+          "SUE = (reported EPS − expected EPS) / standard deviation of past forecast errors. Scaling makes surprises comparable across firms: a $0.10 surprise is large for a stable firm but noise for a volatile one. High positive SUE has been associated with continued positive drift. Related momentum indicators: earnings surprise vs consensus and relative strength (price vs index).",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-3.webp",
       },
     ],
@@ -4195,21 +4195,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A technician needs to determine the leak rate for a commercial refrigeration system. The system has a full charge of 45 pounds of R-404A refrigerant and loses 6 pounds over a 12-month period. What is the annual leak rate percentage for this system?",
+        question: "A technician wants to use system-dependent (passive) recovery on a Type II appliance. What is the largest charge on which Section 608 allows this method?",
         answer:
-          "Correct: (b) 13.3%",
+          "Correct: (b) 15 pounds of refrigerant System-dependent recovery equipment, which relies on the appliance's own compressor or pressure, may be used only on appliances holding 15 pounds of refrigerant or less. Larger appliances need self-contained recovery equipment.",
         imageUrl: "/samples/hvac-epa-608-anki-deck-sample-1.webp",
       },
       {
-        question: "A technician is servicing a Type II appliance containing 20 pounds of R-134a. The system has been running normally, but when checked with manifold gauges, both high and low side pressures read exactly the same at 70 psig. What does this condition most likely indicate?",
+        question: "Using recovery equipment manufactured after November 15, 1993, what evacuation level must a low-pressure appliance reach before it is opened for a major repair?",
         answer:
-          "Correct: (b) The compressor is not running or has failed When both high and low side pressures equalize at the same reading, it indicates the compressor is not running or has failed. During normal operation, there should be a significant pressure difference between the high and low sides of the system.",
+          "Correct: (d) 25 millimeters of mercury absolute Section 608's evacuation table sets low-pressure appliances at 25 mm Hg absolute when the recovery equipment was made on or after November 15, 1993 (25 inches Hg vacuum for older machines). 25 mm absolute is roughly 29 inches of vacuum, so it is the deeper of the two levels.",
         imageUrl: "/samples/hvac-epa-608-anki-deck-sample-2.webp",
       },
       {
-        question: "When leak testing a low-pressure appliance, what is the maximum test pressure that should be used to avoid damaging system components?",
+        question: "A service technician must evacuate a residential split system holding 8 pounds of R-410A before opening it for repair, using a recovery machine made in 2019. What recovery requirement applies?",
         answer:
-          "Correct: (b) 10 psig Low-pressure appliances should be leak tested at no more than 10 psig because these systems are designed to operate at or below atmospheric pressure. Higher test pressures could damage components not designed for elevated pressures and may not accurately represent actual operating conditions.",
+          "Correct: (d) The system must be evacuated to 10 inches of mercury vacuum R-410A falls in the 'other high-pressure' row. Under 200 pounds, recovery equipment made after November 15, 1993 must pull 10 inches of Hg vacuum before the system is opened. Percentage targets such as 80% or 90% apply only to small appliances.",
         imageUrl: "/samples/hvac-epa-608-anki-deck-sample-3.webp",
       },
     ],

@@ -1,0 +1,83 @@
+{
+ "vtne-readiness-check": {
+  "vtne-readiness-check-pharmacy-pharm-011": {
+   "options": {
+    "a": "SID",
+    "b": "BID",
+    "c": "QOD",
+    "d": "q24h"
+   },
+   "distractorExplanations": {
+    "d": "q24h means every 24 hours, which is once daily (SID); twice daily is BID, roughly every 12 hours.",
+    "a": "Not the best answer here; the right answer is “BID”.",
+    "c": "Not the best answer here; the right answer is “BID”."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-015": {
+   "options": {
+    "a": "Use sterile water for injection if the supplied diluent runs out",
+    "b": "Use the diluent supplied and follow label handling and timing",
+    "c": "Reconstitute all vials at the start of the day for faster appointments",
+    "d": "Store reconstituted modified-live vaccine for weeks at room temperature"
+   },
+   "distractorExplanations": {
+    "a": "Many vaccine diluents contain antigen or adjuvant; substituting sterile water is off-label and can leave the dose incomplete.",
+    "c": "Modified-live vaccines lose potency after reconstitution and should be given promptly, typically within about an hour.",
+    "d": "Not the best answer here; the right answer is “Use the diluent supplied/specified and follow label handling and timing”."
+   },
+   "explanation": "Vaccines require the supplied/specified diluent and handling per manufacturer label, including timing after reconstitution."
+  },
+  "vtne-readiness-check-surgical-nursing-003": {
+   "options": {
+    "a": "Arterial oxygen partial pressure (PaO2)",
+    "b": "Blood oxygen content including dissolved O2",
+    "c": "Hemoglobin oxygen saturation and pulse rate",
+    "d": "End-tidal carbon dioxide (EtCO2) and respiratory rate"
+   },
+   "distractorExplanations": {
+    "d": "End-tidal CO2 and respiratory rate are measured by capnography; pulse oximetry reports hemoglobin saturation (SpO2) and pulse.",
+    "a": "PaO2 requires arterial blood gas analysis; pulse oximetry estimates hemoglobin saturation, which is related but not the same.",
+    "b": "SpO2 reflects the percentage of hemoglobin saturated; it does not measure total oxygen content or dissolved oxygen."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-009": {
+   "options": {
+    "a": "Infection, tension, poor nutrition, and self-trauma",
+    "b": "Absorbable sutures placed in the subcutaneous tissue layer",
+    "c": "Cold compresses applied in the first 24 hours",
+    "d": "Strict cage rest with an Elizabethan collar"
+   },
+   "distractorExplanations": {
+    "b": "Absorbable subcutaneous sutures are standard and close dead space; they do not raise dehiscence risk the way infection or tension does.",
+    "c": "Early cold compresses reduce swelling and pain at the incision; they do not increase dehiscence risk.",
+    "d": "Cage rest and an E-collar protect the closure by limiting tension and self-trauma, lowering dehiscence risk."
+   }
+  },
+  "vtne-readiness-check-diagnostics-004": {
+   "options": {
+    "a": "Reading results at the next morning check so color can fully develop",
+    "b": "Running the kit straight from the refrigerator to preserve reagents",
+    "c": "Interpreting the result without first checking that the control spot develops",
+    "d": "Following timing/temperature instructions and reading within the window"
+   },
+   "distractorExplanations": {
+    "c": "An undeveloped positive control invalidates the run; the patient result must not be interpreted until the control spot appears.",
+    "a": "Late reading gives false positives as background color develops; results must be read within the stated window.",
+    "b": "Most kits must reach room temperature before use; cold reagents slow the reaction and can cause false negatives."
+   }
+  },
+  "vtne-readiness-check-diagnostics-014": {
+   "options": {
+    "a": "Staphylococci (catalase positive) from streptococci (catalase negative)",
+    "b": "Streptococci (catalase positive) from staphylococci (catalase negative)",
+    "c": "E. coli (catalase negative) from Pseudomonas (catalase positive) Gram-negative rods",
+    "d": "Gram-positive from Gram-negative organisms without staining"
+   },
+   "distractorExplanations": {
+    "c": "E. coli and Pseudomonas are both catalase positive; Gram-negative rods are separated by oxidase and lactose tests, not catalase.",
+    "b": "Reverses the reactions: Staphylococcus is catalase positive and Streptococcus is catalase negative.",
+    "d": "Gram reaction needs a Gram stain (or KOH string test); catalase separates staphylococci from streptococci."
+   }
+  }
+ }
+}

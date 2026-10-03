@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Begin high-quality CPR starting with chest compressions and use an AED as soon as available"
+        "text": "Begin high-quality CPR and use an AED as soon as available"
       },
       {
         "id": "b",
-        "text": "Wait for advanced providers before any compressions"
+        "text": "Call for help and wait for EMS before starting compressions"
       },
       {
         "id": "c",
-        "text": "Give only rescue breaths for 5 minutes first"
+        "text": "Start with 2 rescue breaths, then begin compressions at 30:2"
       },
       {
         "id": "d",
-        "text": "Check a pulse for at least 30 seconds every cycle without compressing"
+        "text": "Check a pulse for up to 30 seconds before starting compressions"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Adult cardiac arrest care prioritizes immediate compressions and early defibrillation.",
+    "explanation": "Adult cardiac arrest care prioritizes immediate compressions (starting CPR with chest compressions) and early defibrillation.",
     "distractorExplanations": {
-      "b": "Delay worsens outcomes.",
-      "c": "Compression-first (C-A-B) is current adult approach for sudden arrest.",
-      "d": "Pulse checks should be brief (≤10 seconds)."
+      "b": "Waiting for EMS delays compressions; every minute without CPR lowers the chance of survival.",
+      "c": "Breaths-first (A-B-C) is the old sequence; current AHA adult CPR starts with compressions (C-A-B).",
+      "d": "Pulse checks are limited to no more than 10 seconds before starting CPR, not up to 30 seconds."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "0.5 inch"
+        "text": "1 inch (2.5 cm), not exceeding about 1.5 inches (4 cm)"
       },
       {
         "id": "b",
-        "text": "4 inches routinely"
+        "text": "1.5 inches (4 cm), not exceeding about 2 inches (5 cm)"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "Depth does not matter if rate is correct"
+        "text": "3 inches (7.5 cm), not exceeding about 3.5 inches (9 cm)"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Adequate depth is a key high-quality CPR metric; excessive depth can cause injury.",
     "distractorExplanations": {
-      "a": "Too shallow is ineffective.",
-      "b": "Excessive depth risks trauma.",
-      "d": "Depth and rate both matter."
+      "a": "One inch is far too shallow; adult compressions need a depth of at least 2 inches (5 cm).",
+      "b": "About 1.5 inches (4 cm) is the infant depth target; adults need at least 2 inches (5 cm).",
+      "d": "Three inches exceeds the 2.4-inch (6 cm) upper limit for adults and raises the risk of injury."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Keeping continuous pressure on the sternum"
+        "text": "Keeping light pressure on the sternum between compressions"
       },
       {
         "id": "b",
-        "text": "Bouncing hands off the chest wildly"
+        "text": "Lifting the hands fully off the chest after each compression"
       },
       {
         "id": "c",
-        "text": "Compressing only the abdomen"
+        "text": "Pausing about 2 seconds after each compression so the chest refills"
       },
       {
         "id": "d",
-        "text": "Letting the chest return to normal position between compressions without leaning"
+        "text": "Letting the chest return to normal position between compressions"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Leaning reduces venous return; full recoil improves CPR quality.",
+    "explanation": "Leaning reduces venous return; full recoil without leaning between compressions improves CPR quality.",
     "distractorExplanations": {
-      "a": "Leaning impairs refill.",
-      "b": "Hands should stay in contact without bouncing off.",
-      "c": "Hand position is lower sternum, not abdomen."
+      "a": "Residual pressure (leaning) prevents full recoil and reduces venous return to the heart.",
+      "b": "Hands stay in contact with the chest; lifting off risks losing hand position and bouncing.",
+      "c": "Recoil happens within each compression cycle at 100-120/min; deliberate pauses drop the rate."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Finish a full 10-minute CPR cycle before attaching pads"
+        "text": "Complete 5 cycles of CPR before attaching the pads"
       },
       {
         "id": "b",
-        "text": "Power on the AED, apply pads, and follow prompts; resume CPR immediately after shock or no-shock advice"
+        "text": "Power on the AED, apply pads, and follow prompts"
       },
       {
         "id": "c",
-        "text": "Wet the chest thoroughly before pad placement for better stick"
+        "text": "Place both pads side by side on the left chest"
       },
       {
         "id": "d",
-        "text": "Place both pads on the abdomen"
+        "text": "Attach the pads and keep compressing while it analyzes"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Early defibrillation is critical for shockable rhythms; minimize pauses.",
+    "explanation": "Early defibrillation is critical for shockable rhythms; minimize pauses and resume CPR immediately after a shock or no-shock advice.",
     "distractorExplanations": {
-      "a": "Attach ASAP.",
-      "c": "Dry the chest; water conducts and may spark.",
-      "d": "Standard pad positions are anterolateral (or approved alternative)."
+      "a": "Current guidance is to use the AED as soon as it arrives, not after a fixed number of CPR cycles.",
+      "c": "Pads go in anterolateral (right upper chest, left side) or anteroposterior positions, not side by side.",
+      "d": "Everyone must stand clear while the AED analyzes; compressions resume after the shock or no-shock prompt."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop all care and wait"
+        "text": "Check for a pulse for 10 seconds before resuming CPR"
       },
       {
         "id": "b",
-        "text": "Shake the patient vigorously for a minute"
+        "text": "Give 2 rescue breaths, then reassess breathing"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Remove pads and leave"
+        "text": "Turn off the AED and continue rescue breathing only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "No-shock advice still requires high-quality CPR and reassessment per prompts.",
     "distractorExplanations": {
-      "a": "Care continues.",
-      "b": "Do not delay CPR with prolonged shaking.",
-      "d": "Pads stay for analysis cycles."
+      "a": "After a no-shock prompt, resume compressions at once; rhythm and pulse are rechecked after about 2 minutes.",
+      "b": "Breaths-first delays compressions; after the prompt, CPR resumes starting with compressions.",
+      "d": "Pads and AED stay on to reanalyze every 2 minutes; a pulseless patient needs compressions, not breaths alone."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Fingertips on the clavicles"
+        "text": "Heel of one hand on the upper half of the sternum, other on top"
       },
       {
         "id": "b",
-        "text": "Hands over the upper abdomen"
+        "text": "Heel of one hand on the xiphoid process, other hand on top"
       },
       {
         "id": "c",
-        "text": "One hand on each shoulder"
+        "text": "Two fingers on the sternum just below the nipple line"
       },
       {
         "id": "d",
-        "text": "Heel of one hand on the center of the chest (lower half of sternum), other hand on top"
+        "text": "Heel of one hand on the center of the chest, other hand on top"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Correct hand position maximizes effective compressions and reduces injury risk.",
+    "explanation": "Correct hand position (heel of one hand on the lower half of the sternum, other hand on top) maximizes effective compressions and reduces injury risk.",
     "distractorExplanations": {
-      "a": "Clavicles are wrong.",
-      "b": "Abdomen is not the compression site.",
-      "c": "Shoulders are wrong."
+      "a": "The upper sternum is too high; compress on the lower half of the sternum in the center of the chest.",
+      "b": "Pressing on the xiphoid can injure the liver; hands go on the lower half of the sternum above it.",
+      "c": "Fingertip compressions below the nipple line are an infant technique; adults need two hands."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Coordinate roles, limit pulse/rhythm checks, and switch compressors efficiently about every 2 minutes"
+        "text": "Coordinate roles and switch compressors about every 2 minutes"
       },
       {
         "id": "b",
-        "text": "Stop CPR for 1 minute after every 5 compressions"
+        "text": "Check a pulse after every cycle of 30 compressions and 2 breaths"
       },
       {
         "id": "c",
-        "text": "Discuss lunch plans during pauses"
+        "text": "Switch compressors only when the first rescuer feels tired"
       },
       {
         "id": "d",
-        "text": "Never use an AED because it pauses CPR"
+        "text": "Stop compressions while the AED pads are being applied"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "High chest compression fraction improves outcomes; brief planned switches beat long chaotic pauses.",
+    "explanation": "High chest compression fraction improves outcomes; limit pulse/rhythm checks, and brief planned switches beat long chaotic pauses.",
     "distractorExplanations": {
-      "b": "Frequent long stops are harmful.",
-      "c": "Unrelated talk during critical pauses is poor teamwork.",
-      "d": "AED use is essential despite brief analysis pauses."
+      "b": "Pulse checks every cycle create frequent pauses; checks happen about every 2 minutes at rhythm analysis.",
+      "c": "Fatigue lowers quality before rescuers notice it, so compressors switch about every 2 minutes.",
+      "d": "Compressions continue while pads are applied; pause when the AED analyzes or delivers a shock."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Be as forceful and fast as possible"
+        "text": "Be delivered over about 3 seconds each to fill the lungs"
       },
       {
         "id": "b",
-        "text": "Produce visible chest rise over about 1 second each, avoiding excessive ventilation"
+        "text": "Produce visible chest rise over about 1 second each"
       },
       {
         "id": "c",
-        "text": "Be withheld forever if a pocket mask is unavailable and no alternative exists for a trained willing rescuer—without considering compression-only"
+        "text": "Fill the lungs until the abdomen visibly rises"
       },
       {
         "id": "d",
-        "text": "Always include 10 breaths without compressions first"
+        "text": "Be given as 10 breaths before starting compressions"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Overventilation increases intrathoracic pressure and decreases venous return.",
+    "explanation": "Overventilation increases intrathoracic pressure and decreases venous return; avoid excessive ventilation.",
     "distractorExplanations": {
-      "a": "Forceful/fast breaths are harmful.",
-      "c": "Compression-only is preferred if unwilling/unable to ventilate; trained rescuers give breaths with barrier when possible.",
-      "d": "Do not delay compressions for prolonged breath-first sequences in sudden adult arrest."
+      "a": "Each breath should last about 1 second; longer breaths lengthen pauses in compressions.",
+      "c": "Abdominal rise signals gastric inflation; give just enough volume for visible chest rise.",
+      "d": "Prolonged breath-first sequences delay compressions; adult CPR uses 30:2 starting with compressions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave for 20 minutes to find a friend before calling"
+        "text": "Start CPR for 2 minutes before calling EMS or getting an AED"
       },
       {
         "id": "b",
-        "text": "Start by giving abdominal thrusts"
+        "text": "Check a pulse for 30 seconds, then call EMS and start CPR"
       },
       {
         "id": "c",
-        "text": "Ensure scene safety, check responsiveness/breathing, activate EMS/get AED, then start CPR"
+        "text": "Check responsiveness, activate EMS/get AED, then start CPR"
       },
       {
         "id": "d",
-        "text": "Assume the person is sleeping and walk away"
+        "text": "Check responsiveness, give 2 breaths, then activate EMS"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Rapid EMS activation and AED retrieval are core adult Chain of Survival links.",
+    "explanation": "Rapid EMS activation and AED retrieval are core adult Chain of Survival links; ensure scene safety and check responsiveness and breathing first.",
     "distractorExplanations": {
-      "a": "Delay is harmful.",
-      "b": "Abdominal thrusts are for choking, not primary for sudden collapse.",
-      "d": "Unresponsiveness needs assessment."
+      "a": "Two minutes of CPR before calling is for a lone rescuer with an unwitnessed child or infant arrest, not a witnessed adult collapse.",
+      "b": "Pulse checks are limited to 10 seconds; a 30-second check delays EMS activation and compressions.",
+      "d": "Breaths before activating EMS delay help and the AED; adult CPR then starts with compressions."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Place the pad directly over the patch"
+        "text": "Place the pad directly over the patch to save time"
       },
       {
         "id": "b",
-        "text": "Never use an AED if any patch exists anywhere on the body"
+        "text": "Delay the AED until EMS removes the patch safely"
       },
       {
         "id": "c",
-        "text": "Burn the patch off with the AED"
+        "text": "Wipe the patch with an alcohol pad and place the pad over it"
       },
       {
         "id": "d",
-        "text": "Remove the patch and wipe the area dry before applying the pad"
+        "text": "Remove the patch and wipe the area dry"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Patches can block energy and burn skin; remove and wipe residue.",
+    "explanation": "Patches can block energy and burn skin; remove the patch and wipe residue dry before applying the pad.",
     "distractorExplanations": {
-      "a": "Do not pad over patches.",
-      "b": "AEDs are still used—just clear the pad site.",
-      "c": "Do not burn patches."
+      "a": "A pad over a medication patch can block energy delivery and cause skin burns.",
+      "b": "Rescuers remove the patch themselves; waiting for EMS loses defibrillation time.",
+      "c": "Wiping the surface does not remove the patch; it can still block current and cause burns."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -436,27 +436,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Having effective normal breathing"
+        "text": "Breathing adequately—place in the recovery position and monitor"
       },
       {
         "id": "b",
-        "text": "Not breathing normally—start CPR if unresponsive and pulseless per assessment"
+        "text": "Not breathing normally—start CPR if unresponsive and pulseless"
       },
       {
         "id": "c",
-        "text": "Only needing a blanket"
+        "text": "Seizure activity—protect the head and wait for it to stop"
       },
       {
         "id": "d",
-        "text": "Ineligible for AED use ever"
+        "text": "An airway obstruction—begin abdominal thrusts at once"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Agonal gasps are not adequate breathing and often occur in cardiac arrest.",
     "distractorExplanations": {
-      "a": "Gasps ≠ effective ventilation.",
-      "c": "Warmth alone does not treat arrest.",
-      "d": "AED is indicated in arrest."
+      "a": "Agonal gasps are not normal breathing; the recovery position would delay needed CPR.",
+      "c": "Gasping and brief jerking can follow cardiac arrest; treat it as not breathing, not as a seizure.",
+      "d": "Agonal gasps signal cardiac arrest, not choking; abdominal thrusts are for responsive choking victims."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "20 minutes"
+        "text": "30 seconds (or at each pause for breaths)"
       },
       {
         "id": "b",
-        "text": "Every 2 compressions"
+        "text": "1 minute (or sooner if the compressor feels tired)"
       },
       {
         "id": "c",
-        "text": "2 minutes (or when prompted by AED/team leader) to reduce fatigue"
+        "text": "2 minutes (or when prompted by AED/team leader)"
       },
       {
         "id": "d",
-        "text": "Never switch once started"
+        "text": "5 minutes (or when the AED prompts a shock)"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Fatigue quickly degrades depth and rate; planned switches maintain quality.",
+    "explanation": "Fatigue quickly degrades depth and rate; planned switches about every 2 minutes reduce fatigue and maintain quality.",
     "distractorExplanations": {
-      "a": "Too long causes poor CPR.",
-      "b": "Too frequent increases interruptions.",
-      "d": "Switching is expected."
+      "a": "Switching every 30 seconds adds needless pauses; the standard interval is about 2 minutes.",
+      "b": "Fatigue degrades quality before rescuers notice it; switch about every 2 minutes, not by feel.",
+      "d": "Five minutes is too long; depth and rate fall off within about 2 minutes of compressing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "Less than 1 cm"
+        "text": "Shallow enough to avoid rib fractures, about one-quarter of the chest"
       },
       {
         "id": "c",
-        "text": "At least 3 inches routinely for all children"
+        "text": "The same 2.4-inch (6 cm) minimum used for adult compressions"
       },
       {
         "id": "d",
-        "text": "Depth is irrelevant in children"
+        "text": "About one-half the depth of the chest, approximately 3 inches (7.5 cm)"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Pediatric depth targets ~⅓ chest depth (~2 inches in children)",
     "distractorExplanations": {
-      "b": "Too shallow is ineffective.",
-      "c": "Excessive depth risks injury.",
-      "d": "Depth matters."
+      "b": "Fear of rib fractures leads to shallow compressions; children need about one-third of chest depth.",
+      "c": "2.4 inches (6 cm) is the adult upper limit, not a minimum; children need about 2 inches (5 cm).",
+      "d": "One-half of chest depth is too deep and risks injury; the pediatric target is about one-third."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A fist to the face"
+        "text": "The heel of both hands stacked, as for an adult victim"
       },
       {
         "id": "b",
-        "text": "Heel of both adult hands stacked as for large adults without adaptation"
+        "text": "Two thumbs pressing on the xiphoid with hands around the chest"
       },
       {
         "id": "c",
-        "text": "Two fingers (1 rescuer) or two-thumb–encircling hands technique (2 rescuers)"
+        "text": "Two fingers (1 rescuer) or two-thumb–encircling hands (2 rescuers)"
       },
       {
         "id": "d",
-        "text": "Only abdominal thrusts"
+        "text": "Two fingers placed on the upper third of the sternum"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Infant techniques protect the small thorax while generating adequate depth (~1½ inches / 4 cm)",
     "distractorExplanations": {
-      "a": "Face trauma is wrong.",
-      "b": "Adult two-hand technique is for larger victims.",
-      "d": "Abdominal thrusts are not infant CPR compressions."
+      "a": "Two stacked hands are an adult technique and would compress an infant chest far too deeply.",
+      "b": "Thumbs go just below the nipple line on the lower sternum, not on the xiphoid process.",
+      "d": "Infant compressions are on the lower half of the sternum, just below the nipple line, not the upper third."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "0.25 inch"
+        "text": "0.5 inch (1 cm)"
       },
       {
         "id": "b",
-        "text": "3 inches"
+        "text": "0.75 inch (2 cm)"
       },
       {
         "id": "c",
-        "text": "5 inches"
+        "text": "1 inch (2.5 cm)"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "Infants need about 1½ inches / ⅓ chest depth.",
     "distractorExplanations": {
-      "a": "Too shallow.",
-      "b": "Excessive for infants.",
-      "c": "Far too deep."
+      "a": "Half an inch is far too shallow to generate blood flow; infants need about 1.5 inches (4 cm).",
+      "b": "Three-quarters of an inch is too shallow; the infant target is about one-third chest depth, 1.5 inches.",
+      "c": "One inch underestimates the target; infant compressions should be about 1.5 inches (4 cm), one-third of chest depth."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "Never call EMS for infants"
+        "text": "Continue CPR without pausing until EMS arrives at the scene"
       },
       {
         "id": "c",
-        "text": "Stop CPR permanently"
+        "text": "Check a pulse for 30 seconds before deciding to call EMS"
       },
       {
         "id": "d",
-        "text": "Only give milk"
+        "text": "Give 5 back blows, then continue CPR before calling EMS"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Pediatric sequences emphasize brief CPR before leaving to call if alone and collapse unwitnessed; follow current AHA course details for phone/AED steps.",
     "distractorExplanations": {
-      "b": "EMS is essential.",
-      "c": "Do not stop.",
-      "d": "Milk is not resuscitation."
+      "b": "No one has called EMS yet; after about 2 minutes of CPR the lone rescuer must activate EMS.",
+      "c": "Pulse checks are limited to 10 seconds; a 30-second check delays EMS activation and CPR.",
+      "d": "Back blows are for a responsive choking infant, not an unwitnessed arrest; the next step is EMS."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only myocardial infarction identical to older adults"
+        "text": "Sudden ventricular fibrillation than respiratory failure or shock"
       },
       {
         "id": "b",
-        "text": "Respiratory problems / hypoxia than primary sudden cardiac causes (though both occur)"
+        "text": "Respiratory problems / hypoxia than primary sudden cardiac causes"
       },
       {
         "id": "c",
-        "text": "Hyperthermia treatment with ice baths as first CPR step"
+        "text": "Congenital heart rhythm disorders than airway problems"
       },
       {
         "id": "d",
-        "text": "Elective skipping of airway support"
+        "text": "Commotio cordis from chest impact than respiratory causes"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pediatric Chain of Survival emphasizes prevention and oxygenation; still provide compressions for pulseless arrest.",
+    "explanation": "Pediatric arrest is more often preceded by respiratory problems/hypoxia than primary sudden cardiac causes, though both occur; the Pediatric Chain of Survival emphasizes prevention and oxygenation, and compressions are still given for pulseless arrest.",
     "distractorExplanations": {
-      "a": "Primary cardiac events are less common but possible.",
-      "c": "Ice baths are not the CPR algorithm start.",
-      "d": "Airway/ventilation are critical in pediatrics."
+      "a": "VF is less common in children; most pediatric arrests follow respiratory failure or shock.",
+      "c": "Congenital rhythm disorders cause some arrests, but respiratory failure and hypoxia are more common.",
+      "d": "Commotio cordis is rare; pediatric arrest usually follows progressive respiratory failure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Be maximally forceful"
+        "text": "Be quick cheek puffs without watching for chest rise"
       },
       {
         "id": "b",
-        "text": "Be avoided for all infants in arrest even by trained rescuers with a barrier"
+        "text": "Fill the infant's lungs until the abdomen rises"
       },
       {
         "id": "c",
-        "text": "Be given at 40 breaths without compressions first for 10 minutes"
+        "text": "Be delivered over about 3 seconds each"
       },
       {
         "id": "d",
-        "text": "Be gentle enough to produce chest rise, covering mouth and nose with the rescuer’s mouth if using mouth-to-mouth-and-nose"
+        "text": "Be gentle enough to produce chest rise"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Overventilation is harmful; visible chest rise is the guide.",
+    "explanation": "Overventilation is harmful; visible chest rise is the guide. With mouth-to-mouth-and-nose, the rescuer's mouth covers the infant's mouth and nose.",
     "distractorExplanations": {
-      "a": "Force causes gastric inflation/barotrauma.",
-      "b": "Trained rescuers provide ventilations in pediatric BLS.",
-      "c": "Do not delay compressions with prolonged breath-only periods in arrest."
+      "a": "Breaths are judged by visible chest rise; puffs without watching risk giving too little or too much.",
+      "b": "Abdominal rise signals gastric inflation; give just enough volume for visible chest rise.",
+      "c": "Each breath takes about 1 second; longer breaths add pauses and risk overinflation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -799,27 +799,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No respiratory support ever"
+        "text": "Full CPR at 15:2 now, since the child is unresponsive and not breathing"
       },
       {
         "id": "b",
-        "text": "Rescue breathing with pulse checks, and start compressions if pulse remains <60 with poor perfusion per AHA pediatric guidance"
+        "text": "Rescue breathing, and start compressions if pulse remains <60 with poor perfusion"
       },
       {
         "id": "c",
-        "text": "Only abdominal thrusts continuously"
+        "text": "Rescue breathing at 1 breath every 6 seconds, starting compressions only if pulse is lost"
       },
       {
         "id": "d",
-        "text": "Walking the child immediately"
+        "text": "Recovery position and monitoring until EMS arrives, with no breaths given"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pediatric bradycardia with poor perfusion is a compression indication even if a pulse is present but too slow.",
+    "explanation": "Pediatric bradycardia with poor perfusion is a compression indication even if a pulse is present but too slow; give rescue breathing with pulse checks per AHA pediatric guidance.",
     "distractorExplanations": {
-      "a": "Ventilation is often critical.",
-      "c": "Choking algorithm differs.",
-      "d": "Unresponsive children are not ambulated."
+      "a": "With a pulse of 60 or more, give rescue breaths; compressions start if it falls below 60 with poor perfusion.",
+      "c": "Pediatric rescue breathing is 1 breath every 2-3 seconds, and compressions start below 60 with poor perfusion, not on pulse loss.",
+      "d": "A child who is not breathing normally needs rescue breaths; the recovery position is for adequate breathing."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -865,15 +865,15 @@
     "options": [
       {
         "id": "a",
-        "text": "60 per minute"
+        "text": "40 to 60 per minute"
       },
       {
         "id": "b",
-        "text": "30 per minute"
+        "text": "60 to 80 per minute"
       },
       {
         "id": "c",
-        "text": "200 per minute"
+        "text": "80 to 100 per minute"
       },
       {
         "id": "d",
@@ -883,9 +883,9 @@
     "correctOptionId": "d",
     "explanation": "Same target rate as adults: 100–120/min.",
     "distractorExplanations": {
-      "a": "Too slow.",
-      "b": "Far too slow.",
-      "c": "Too fast."
+      "a": "40-60/min sits near the bradycardia threshold for starting compressions; it is not a compression rate.",
+      "b": "60-80/min is too slow; infants and children get the same 100-120/min rate as adults.",
+      "c": "80-100/min is below target; the pediatric compression rate matches adults at 100-120/min."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Protect airway, place recovery position if appropriate, monitor, and activate EMS as indicated by condition/history"
+        "text": "Protect airway, place recovery position if appropriate, and monitor"
       },
       {
         "id": "b",
-        "text": "Start chest compressions immediately despite pulse and breathing"
+        "text": "Begin chest compressions because a seizure can stop the heart"
       },
       {
         "id": "c",
-        "text": "Give nothing and leave the child alone prone face-down in water"
+        "text": "Place a bite block in the mouth to protect the tongue"
       },
       {
         "id": "d",
-        "text": "Force oral fluids while still postictal and unsafe airway"
+        "text": "Give sips of water to prevent dehydration once the seizure has ended"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "CPR is for arrest/poor perfusion states; postictal care is supportive with EMS per situation.",
+    "explanation": "CPR is for arrest/poor perfusion states; postictal care is supportive: protect the airway, monitor, and activate EMS as indicated by condition and history.",
     "distractorExplanations": {
-      "b": "Do not compress if adequate pulse/breathing.",
-      "c": "Unsafe positioning risks aspiration.",
-      "d": "Airway risk precludes forced fluids."
+      "b": "Compressions are for pulseless arrest or poor perfusion; this child has a pulse and adequate breathing.",
+      "c": "Nothing goes in a postictal child's mouth; objects can break teeth or block the airway.",
+      "d": "Oral fluids after a seizure risk aspiration until the child is fully alert with a protected airway."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "On the xiphoid tip intentionally"
+        "text": "On the lower tip of the sternum (xiphoid)"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "On the forehead"
+        "text": "On the upper third of the sternum near the neck"
       },
       {
         "id": "d",
-        "text": "On the femur"
+        "text": "On the left chest over the heart"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct landmarking avoids abdominal organ injury.",
     "distractorExplanations": {
-      "a": "Avoid the xiphoid tip.",
-      "c": "Forehead is for airway positioning, not compressions.",
-      "d": "Femur is wrong."
+      "a": "Pressing on the xiphoid risks liver injury; compress just below the nipple line on the sternum.",
+      "c": "The upper sternum is too high; infant compressions use the lower half of the sternum.",
+      "d": "Compressions go on the sternum, not the left chest; the heart is compressed between sternum and spine."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Overlap pads completely for stronger shock"
+        "text": "Cut adult pads in half so both fit on the front of the chest"
       },
       {
         "id": "b",
-        "text": "Place pads on clothing without skin contact"
+        "text": "Overlap the pads slightly so both fit on the front of the chest"
       },
       {
         "id": "c",
-        "text": "Follow manufacturer guidance; ensure pads do not touch (use AP placement if needed on small chests)"
+        "text": "Ensure pads do not touch (use AP placement if needed on small chests)"
       },
       {
         "id": "d",
-        "text": "Be skipped if the child is wet without drying attempt"
+        "text": "Skip the AED for children under 8 years if pediatric pads are not available"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Pad contact and separation matter for effective, safe defibrillation.",
+    "explanation": "Pad contact and separation matter for effective, safe defibrillation; follow manufacturer guidance and use AP placement on small chests.",
     "distractorExplanations": {
-      "a": "Overlapping is incorrect.",
-      "b": "Skin contact required.",
-      "d": "Dry the chest; moisture is hazardous."
+      "a": "Pads must not be cut; use pediatric pads, or adult pads in anteroposterior position if needed.",
+      "b": "Touching or overlapping pads can arc current; use anteroposterior placement instead.",
+      "d": "If pediatric pads or an attenuator are unavailable, use adult pads; do not skip the AED."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Abdominal thrusts (Heimlich) until object expels or victim becomes unresponsive"
+        "text": "Abdominal thrusts until object expels or victim becomes unresponsive"
       },
       {
         "id": "b",
-        "text": "Encourage only weak coughing without intervention when severe"
+        "text": "Encouraging forceful coughing and waiting for the object to clear itself"
       },
       {
         "id": "c",
-        "text": "Blind finger sweeps routinely"
+        "text": "A blind finger sweep to find the object, then abdominal thrusts"
       },
       {
         "id": "d",
-        "text": "Immediate AED application while they are still speaking in full sentences"
+        "text": "Rescue breaths to push the object past the airway"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Severe FBAO requires thrusts; mild obstruction with effective cough—encourage coughing.",
     "distractorExplanations": {
-      "b": "Severe obstruction needs action.",
-      "c": "Blind sweeps can worsen obstruction.",
-      "d": "AED is for cardiac arrest, not talking victims."
+      "b": "Coughing is encouraged in mild obstruction; inability to speak or cough means severe obstruction needing thrusts.",
+      "c": "Blind finger sweeps can push the object deeper; remove an object only if you can see it.",
+      "d": "Rescue breaths are given to an unresponsive victim within CPR; a responsive choking adult needs thrusts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1030,27 +1030,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Continue abdominal thrusts on an unresponsive victim upright"
+        "text": "Continue abdominal thrusts with the victim lying on the back"
       },
       {
         "id": "b",
-        "text": "Lower to a firm surface, begin CPR, and look for an object in the mouth before breaths when visible"
+        "text": "Lower to a firm surface, begin CPR, and look for an object before breaths"
       },
       {
         "id": "c",
-        "text": "Leave to call without starting compressions if alone with a phone on speaker already activated—never start CPR"
+        "text": "Do a blind finger sweep, then give 2 breaths before compressions"
       },
       {
         "id": "d",
-        "text": "Pour water into the mouth"
+        "text": "Place in the recovery position and wait for EMS to clear the blocked airway"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Unresponsive choking transitions to CPR; remove visible objects only—no blind sweeps.",
+    "explanation": "Unresponsive choking transitions to CPR; look in the mouth before breaths and remove visible objects only, with no blind sweeps.",
     "distractorExplanations": {
-      "a": "Unresponsive victims get CPR on the ground.",
-      "c": "CPR is indicated; use speakerphone if alone.",
-      "d": "Water risks aspiration."
+      "a": "Supine abdominal thrusts are no longer taught; an unresponsive choking victim gets CPR.",
+      "c": "Blind sweeps can push the object deeper, and a breaths-first sequence delays compressions.",
+      "d": "An unresponsive choking victim is not breathing effectively; start CPR rather than recovery position."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1063,27 +1063,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Abdominal thrusts as first-line identical to adults"
+        "text": "5 back blows followed by 5 abdominal thrusts"
       },
       {
         "id": "b",
-        "text": "Blind finger sweeps every cycle"
+        "text": "5 chest thrusts followed by 5 abdominal thrusts"
       },
       {
         "id": "c",
-        "text": "5 back blows followed by 5 chest thrusts, repeating until relieved or unresponsive"
+        "text": "5 back blows followed by 5 chest thrusts"
       },
       {
         "id": "d",
-        "text": "Only watching for 10 minutes"
+        "text": "5 back blows followed by a blind finger sweep"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Infant FBAO uses back blows and chest thrusts—not abdominal thrusts.",
+    "explanation": "Infant FBAO uses back blows and chest thrusts, not abdominal thrusts; repeat until relieved or the infant becomes unresponsive.",
     "distractorExplanations": {
-      "a": "Abdominal thrusts are not for infants.",
-      "b": "No blind sweeps.",
-      "d": "Severe choking needs immediate action."
+      "a": "Abdominal thrusts can injure an infant's liver; infants get back blows and chest thrusts.",
+      "b": "Abdominal thrusts are not used in infants; the sequence starts with 5 back blows.",
+      "d": "Blind finger sweeps can push the object deeper in an infant; remove only visible objects."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Pregnant or markedly obese responsive adults (as trained)"
+        "text": "Pregnant or markedly obese responsive adults"
       },
       {
         "id": "b",
-        "text": "All toddlers as the only method ever"
+        "text": "Responsive children aged 1 year to puberty"
       },
       {
         "id": "c",
-        "text": "Anyone with a mild cough"
+        "text": "Adults with a mild cough who can still speak"
       },
       {
         "id": "d",
-        "text": "Infants using adult Heimlich belts"
+        "text": "Elderly adults with a history of heart disease"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Pregnancy/obesity alter landmarking; use chest thrusts per BLS training.",
     "distractorExplanations": {
-      "b": "Infants use back blows/chest thrusts sequences.",
-      "c": "Mild cough—observe/encourage.",
-      "d": "Infants do not use adult Heimlich belts."
+      "b": "Children from 1 year to puberty get abdominal thrusts like adults; chest thrusts are for infants and special cases.",
+      "c": "A mild obstruction with an effective cough needs encouragement to cough, not thrusts.",
+      "d": "Age and cardiac history do not change technique; chest thrusts are for pregnancy or marked obesity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Chest compressions only with no ventilation consideration"
+        "text": "Chest compressions at 30:2 because naloxone takes time to act"
       },
       {
         "id": "b",
-        "text": "Rescue breathing/ventilatory support and naloxone per local protocols, plus EMS activation"
+        "text": "Rescue breathing and naloxone per local protocols, plus EMS activation"
       },
       {
         "id": "c",
-        "text": "Waiting for the person to wake without calling EMS"
+        "text": "Naloxone alone, then the recovery position while waiting for EMS"
       },
       {
         "id": "d",
-        "text": "Giving syrup of ipecac"
+        "text": "Rescue breaths only after naloxone has failed to work within 5 minutes"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Opioid toxicity causes respiratory depression; support breathing and use naloxone when indicated/available.",
+    "explanation": "Opioid toxicity causes respiratory depression; support breathing (rescue breathing/ventilatory support) and use naloxone when indicated/available.",
     "distractorExplanations": {
-      "a": "Ventilation is critical if pulse present with apnea.",
-      "c": "EMS is required.",
-      "d": "Ipecac is obsolete/harmful here."
+      "a": "With a pulse present, the priority is ventilation; compressions start if the pulse is lost.",
+      "c": "Naloxone does not replace ventilation; an apneic patient with a pulse needs rescue breaths.",
+      "d": "Rescue breathing starts at once; waiting for naloxone to act leaves the patient hypoxic."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only give naloxone and never compress"
+        "text": "Give naloxone first and wait 2 minutes before starting CPR"
       },
       {
         "id": "b",
-        "text": "Avoid AED because opioids contraindicate shocks"
+        "text": "Give rescue breaths and naloxone, but skip the AED in an overdose arrest"
       },
       {
         "id": "c",
-        "text": "Start CPR and use AED; administer naloxone as soon as available without delaying compressions"
+        "text": "Start CPR and use AED; administer naloxone without delaying compressions"
       },
       {
         "id": "d",
-        "text": "Place in recovery position and leave"
+        "text": "Start CPR but withhold the AED until naloxone has been given"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Cardiac arrest care still follows CPR/AED; naloxone is adjunctive, not a reason to skip BLS.",
+    "explanation": "Cardiac arrest care still follows CPR/AED; naloxone is adjunctive, given as soon as available, and is not a reason to skip BLS.",
     "distractorExplanations": {
-      "a": "CPR is required if pulseless.",
-      "b": "AED is still used for shockable rhythms.",
-      "d": "Do not leave an arrest victim."
+      "a": "In pulseless arrest CPR starts at once; naloxone must not delay compressions.",
+      "b": "Opioid-associated arrests can have shockable rhythms; use the AED as in any arrest.",
+      "d": "The AED is applied as soon as it arrives; naloxone must not delay defibrillation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Treat hypoglycemia as first-line"
+        "text": "Reverse low blood sugar in a person found unresponsive"
       },
       {
         "id": "b",
-        "text": "Replace the need for EMS"
+        "text": "Permanently reverse an overdose so EMS is not needed"
       },
       {
         "id": "c",
-        "text": "Defibrillate the heart"
+        "text": "Reverse respiratory depression from any sedative drug"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Effects may wear off; monitor and be ready to redose per protocol; continue airway support.",
     "distractorExplanations": {
-      "a": "Not glucose.",
-      "b": "EMS still needed.",
-      "c": "Not a defibrillator."
+      "a": "Low blood sugar is treated with glucose; naloxone reverses opioid effects, not hypoglycemia.",
+      "b": "Naloxone wears off, often before the opioid does, so EMS care is still needed.",
+      "c": "Naloxone is opioid-specific; it does not reverse benzodiazepines, alcohol, or other sedatives."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Become agitated or re-sedate later as naloxone wears off—continue observation/EMS care"
+        "text": "Become agitated or re-sedate later as naloxone wears off"
       },
       {
         "id": "b",
-        "text": "Be safely left alone immediately every time"
+        "text": "Be released without EMS once awake for 15 minutes"
       },
       {
         "id": "c",
-        "text": "Never need airway monitoring again"
+        "text": "Stay alert, since naloxone lasts longer than most opioids do"
       },
       {
         "id": "d",
-        "text": "Be given more opioids to “balance” naloxone"
+        "text": "Safely drive home once breathing returns to normal"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Renarcotization is a known risk; observation is mandatory.",
+    "explanation": "Renarcotization is a known risk; observation is mandatory, so continue observation and EMS care.",
     "distractorExplanations": {
-      "b": "Do not leave alone.",
-      "c": "Monitoring continues.",
-      "d": "Do not give opioids to counter naloxone."
+      "b": "Re-sedation can occur after naloxone wears off; the person needs ongoing observation and EMS care.",
+      "c": "Naloxone's effect often ends before long-acting opioids do, so re-sedation is a real risk.",
+      "d": "Re-sedation can follow as naloxone wears off; the person should not drive and needs observation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Continued standing Heimlich"
+        "text": "Abdominal thrusts while kneeling astride the child"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "No compressions ever"
+        "text": "Back blows and chest thrusts while lying on the floor"
       },
       {
         "id": "d",
-        "text": "Blind deep finger sweeps every time"
+        "text": "Blind finger sweeps before each set of compressions"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Same transition to CPR as adults/children when unresponsive from FBAO.",
     "distractorExplanations": {
-      "a": "Ground CPR replaces upright thrusts.",
-      "c": "Compressions are part of care.",
-      "d": "Only remove visible objects."
+      "a": "Astride abdominal thrusts are not taught; an unresponsive choking child gets CPR.",
+      "c": "Back blows and chest thrusts are for responsive choking infants, not an unresponsive child.",
+      "d": "Blind sweeps can push the object deeper; remove only objects you can see."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Loud forceful coughing with ability to speak full sentences"
+        "text": "Loud forceful coughing with the ability to speak in full sentences"
       },
       {
         "id": "b",
-        "text": "Normal skin color and playful talking"
+        "text": "Noisy wheezing between strong, effective coughs"
       },
       {
         "id": "c",
-        "text": "Inability to speak, weak/silent cough, cyanosis, universal choking sign"
+        "text": "Inability to speak, weak/silent cough, universal choking sign"
       },
       {
         "id": "d",
-        "text": "Ability to sing loudly"
+        "text": "Hoarse voice, strong cough, and normal skin color"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Differentiate mild vs severe to choose observation vs thrusts.",
+    "explanation": "Differentiate mild vs severe to choose observation vs thrusts; severe signs also include cyanosis.",
     "distractorExplanations": {
-      "a": "Effective cough = mild.",
-      "b": "Normal talk ≠ severe.",
-      "d": "Singing implies airway patent enough for mild category."
+      "a": "Forceful coughing and full speech mean air is moving: mild obstruction, so encourage coughing.",
+      "b": "Wheezing between effective coughs indicates mild obstruction; keep encouraging the victim to cough.",
+      "d": "A strong cough with normal color and voice is mild obstruction; severe means no effective air movement."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Low on the fundus pushing toward the spine only as abdominal Heimlich"
+        "text": "Just above the navel, below the ribs"
       },
       {
         "id": "b",
-        "text": "On the lumbar spine from behind without chest contact"
+        "text": "On the xiphoid process"
       },
       {
         "id": "c",
-        "text": "On the forehead"
+        "text": "Upper third of the sternum"
       },
       {
         "id": "d",
-        "text": "Center of the sternum (same general area as CPR compressions)"
+        "text": "Center of the sternum"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Chest thrusts avoid gravid abdomen; follow BLS training details.",
+    "explanation": "Chest thrusts avoid the gravid abdomen; hands go in the same general area as CPR compressions, per BLS training details.",
     "distractorExplanations": {
-      "a": "Standard abdominal thrusts are problematic in late pregnancy.",
-      "b": "Spine pushes are incorrect.",
-      "c": "Forehead is wrong."
+      "a": "Just above the navel is the abdominal-thrust position, which compresses the gravid uterus.",
+      "b": "Pressing on the xiphoid risks liver injury; chest thrusts use the center of the sternum.",
+      "c": "The upper sternum is too high; hands go on the center of the sternum, like CPR compressions."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Awareness of fentanyl exposure myths vs real risks; use PPE as trained and avoid needle sticks"
+        "text": "Use PPE as trained and avoid needle sticks"
       },
       {
         "id": "b",
-        "text": "Tasting unknown powders to identify them"
+        "text": "Delaying care until hazmat clears skin-contact risk"
       },
       {
         "id": "c",
-        "text": "Sharing the victim’s pills to confirm opioid type"
+        "text": "Wearing an N95 respirator before touching the victim"
       },
       {
         "id": "d",
-        "text": "Ignoring sharps on the ground"
+        "text": "Recapping found needles before moving the victim"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Rescuers protect themselves while providing rapid care; incidental skin contact is not the main panic narrative—avoid mucous membrane/sharps exposure.",
+    "explanation": "Rescuers protect themselves while providing rapid care; know fentanyl exposure myths vs real risks. Incidental skin contact is not the main danger; avoid mucous membrane/sharps exposure.",
     "distractorExplanations": {
-      "b": "Never taste unknowns.",
-      "c": "Never take victim’s drugs.",
-      "d": "Sharps injure rescuers."
+      "b": "Incidental skin contact with fentanyl is very low risk; delaying care for hazmat costs critical time.",
+      "c": "Routine respirators are not needed for overdose response; standard PPE and sharps care suffice.",
+      "d": "Recapping needles is a leading cause of needle-stick injury; leave sharps alone or use a sharps container."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Performed by any bystander without training"
+        "text": "Done by any BLS rescuer with an airway kit"
       },
       {
         "id": "b",
-        "text": "Left to trained ALS providers; BLS focuses on basic ventilation and compressions"
+        "text": "Left to trained ALS providers"
       },
       {
         "id": "c",
-        "text": "A reason to delay CPR for 15 minutes"
+        "text": "Started before chest compressions begin"
       },
       {
         "id": "d",
-        "text": "Required before calling 911"
+        "text": "Given priority over early AED use"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Know your scope; high-quality BLS bridges to ALS.",
+    "explanation": "Know your scope; BLS focuses on basic ventilation and compressions, and high-quality BLS bridges to ALS.",
     "distractorExplanations": {
-      "a": "Training required for advanced skills.",
-      "c": "Do not delay CPR.",
-      "d": "Call EMS early."
+      "a": "Advanced airways need ALS training and credentials; BLS uses bag-mask or mouth-to-mask ventilation.",
+      "c": "Compressions come first; advanced airway placement must not delay CPR.",
+      "d": "Early defibrillation outranks advanced airway placement in the BLS sequence."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop trying after one thrust"
+        "text": "Switch to rescue breaths to force the object down"
       },
       {
         "id": "b",
-        "text": "Give the victim a large glass of water under pressure"
+        "text": "Stop thrusts and wait for EMS while the victim coughs"
       },
       {
         "id": "c",
-        "text": "Continue cycles of thrusts until the object is expelled or the victim becomes unresponsive"
+        "text": "Continue cycles of thrusts until the object is expelled"
       },
       {
         "id": "d",
-        "text": "Start AED analysis while they are conscious and upright with a pulse"
+        "text": "Try a blind finger sweep after each unsuccessful round of thrusts"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Persist with the choking algorithm; prepare to transition to CPR if unresponsiveness occurs.",
+    "explanation": "Persist with the choking algorithm until the object is expelled; prepare to transition to CPR if the victim becomes unresponsive.",
     "distractorExplanations": {
-      "a": "Multiple thrusts are often needed.",
-      "b": "Water is dangerous.",
-      "d": "AED is not for conscious choking with pulse."
+      "a": "Rescue breaths are for unresponsive victims during CPR; a responsive victim needs continued thrusts.",
+      "b": "A victim who cannot cough effectively needs ongoing thrusts, not waiting for EMS.",
+      "d": "Blind sweeps can push the object deeper; look for and remove only visible objects."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The receiver repeats back the order and the sender confirms correctness"
+        "text": "The receiver repeats back the order and the sender confirms"
       },
       {
         "id": "b",
-        "text": "Speaking only once without confirmation"
+        "text": "The sender repeats the order twice so everyone hears it"
       },
       {
         "id": "c",
-        "text": "Using vague pronouns for all tasks"
+        "text": "The receiver nods and starts the task without speaking"
       },
       {
         "id": "d",
-        "text": "Silence during resuscitation"
+        "text": "Each team member reports status to the leader at set intervals"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Closed-loop reduces errors in high-stress codes.",
     "distractorExplanations": {
-      "b": "Confirmation prevents mishearing.",
-      "c": "Clarity beats vagueness.",
-      "d": "Clear communication is required."
+      "b": "Repeating an order is one-way; closed loop needs the receiver to echo it and the sender to confirm.",
+      "c": "A nod gives no verbal check; closed loop requires a read-back and confirmation.",
+      "d": "Scheduled reports are status updates; closed loop confirms each order as it is given."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Performing every task alone without delegation"
+        "text": "Doing chest compressions personally while directing the team"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Discouraging AED use"
+        "text": "Managing the airway while directing the other roles"
       },
       {
         "id": "d",
-        "text": "Ignoring feedback from team members"
+        "text": "Waiting for team members to choose their own roles"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Leadership improves coordination and chest compression fraction.",
     "distractorExplanations": {
-      "a": "Delegation is essential.",
-      "c": "AED is encouraged.",
-      "d": "Constructive feedback improves care."
+      "a": "The leader stays hands-off to oversee the whole resuscitation and CPR quality.",
+      "c": "Airway management is a team member role; a hands-on leader loses oversight.",
+      "d": "The leader assigns roles; letting members self-select causes gaps and duplication."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Remain silent even if compressions are on the abdomen"
+        "text": "Report the error to the team leader at the debrief afterward"
       },
       {
         "id": "b",
-        "text": "Wait until after ROSC documentation"
+        "text": "Quietly correct the error without telling the leader"
       },
       {
         "id": "c",
-        "text": "Speak up clearly if a critical error or unsafe action is about to occur"
+        "text": "Speak up clearly if a critical error is about to occur"
       },
       {
         "id": "d",
-        "text": "Argue personally without stating the clinical issue"
+        "text": "Wait until the leader asks for team input"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Safety culture expects respectful challenge of dangerous actions.",
+    "explanation": "Safety culture expects respectful challenge of dangerous actions; speak up when a critical error or unsafe action is about to occur.",
     "distractorExplanations": {
-      "a": "Silence harms the patient.",
-      "b": "Intervene in real time for critical errors.",
-      "d": "Focus on the action, not personality."
+      "a": "Critical errors must be addressed in real time; the debrief is too late to protect the patient.",
+      "b": "Silent corrections bypass the leader and closed-loop communication; state the concern clearly.",
+      "d": "Waiting for permission lets an unsafe action happen; speak up immediately."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "30:2 forever without change"
+        "text": "2 breaths after every 15 compressions, pausing for each"
       },
       {
         "id": "b",
-        "text": "No ventilations at all"
+        "text": "2 breaths after every 30 compressions, as without an airway"
       },
       {
         "id": "c",
-        "text": "1 breath every 60 seconds only"
+        "text": "1 breath every 6 seconds, pausing compressions for each"
       },
       {
         "id": "d",
-        "text": "1 breath every 6 seconds (10/min) with continuous compressions without 30:2 pauses"
+        "text": "1 breath every 6 seconds with continuous compressions"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Advanced airway allows asynchronous continuous compressions with timed breaths.",
+    "explanation": "An advanced airway allows continuous compressions with timed breaths: 1 breath every 6 seconds (10/min) without 30:2 pauses.",
     "distractorExplanations": {
-      "a": "30:2 is for no advanced airway.",
-      "b": "Ventilations continue.",
-      "c": "Every 6 seconds is the adult target."
+      "a": "15:2 with pauses is two-rescuer child/infant CPR without an advanced airway.",
+      "b": "30:2 is for CPR without an advanced airway; with one in place, compressions are continuous.",
+      "c": "With an advanced airway, compressions do not pause for breaths; ventilation is asynchronous."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Perform manual left uterine displacement to relieve aortocaval compression when the uterus is clinically significant"
+        "text": "Perform manual left uterine displacement to relieve aortocaval compression"
       },
       {
         "id": "b",
-        "text": "Avoid AED use entirely in pregnancy"
+        "text": "Perform manual right uterine displacement to relieve vena cava pressure"
       },
       {
         "id": "c",
-        "text": "Place the patient fully flat supine without displacement consideration for a large gravid uterus"
+        "text": "Withhold AED shocks to protect the fetus until obstetric help arrives"
       },
       {
         "id": "d",
-        "text": "Delay compressions until obstetricians arrive if ETA is 30 minutes"
+        "text": "Move hand position 2 inches lower on the sternum for compressions"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "LUD improves venous return; defibrillation is still indicated when needed; maternal resuscitation prioritizes CPR.",
+    "explanation": "LUD improves venous return when the uterus is clinically significant; defibrillation is still indicated when needed; maternal resuscitation prioritizes CPR.",
     "distractorExplanations": {
-      "b": "AED/defibrillation is used in pregnancy.",
-      "c": "Gravid uterus can impair CPR without displacement.",
-      "d": "Do not delay maternal CPR."
+      "b": "Displacement is to the left, moving the uterus off the aorta and inferior vena cava.",
+      "c": "Defibrillation is safe and indicated in pregnancy; withholding shocks harms mother and fetus.",
+      "d": "Compression hand position is the same as for other adults, on the lower half of the sternum."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Continue ineffective compressions silently"
+        "text": "Keep going until the 2-minute rhythm check, then switch"
       },
       {
         "id": "b",
-        "text": "Announce the need to switch and rotate immediately with minimal pause"
+        "text": "Announce the need to switch and rotate immediately"
       },
       {
         "id": "c",
-        "text": "Stop the resuscitation permanently"
+        "text": "Slow the rate to 90 per minute to keep the depth"
       },
       {
         "id": "d",
-        "text": "Decrease rate to 40/min to rest"
+        "text": "Use one hand to rest the other while compressing"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Teamwork corrects fatigue; pride should not degrade CPR quality.",
+    "explanation": "Teamwork corrects fatigue; announce the switch and rotate with minimal pause, since pride should not degrade CPR quality.",
     "distractorExplanations": {
-      "a": "Ineffective CPR harms outcomes.",
-      "c": "Do not abandon care.",
-      "d": "Slow rates are incorrect."
+      "a": "A fatigued compressor delivers shallow compressions; switch now rather than waiting for the check.",
+      "c": "Rate must stay at 100-120/min; trading rate for depth still lowers CPR quality.",
+      "d": "Adult compressions need two hands to reach adequate depth; resting one hand reduces depth further."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Squeezing as hard and fast as possible"
+        "text": "Squeezing the bag fully and quickly for each breath"
       },
       {
         "id": "b",
-        "text": "No head-tilt/chin-lift or jaw thrust consideration"
+        "text": "One-rescuer use, which gives the best mask seal"
       },
       {
         "id": "c",
-        "text": "Proper seal and often two-person technique for better ventilation"
+        "text": "Proper seal and often two-person technique"
       },
       {
         "id": "d",
-        "text": "Placing the mask on the forehead"
+        "text": "A mask sized to cover the chin and the eyes"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Seal and airway position determine tidal delivery; avoid overventilation.",
+    "explanation": "Seal and airway position determine tidal delivery; two-person technique gives better ventilation. Avoid overventilation.",
     "distractorExplanations": {
-      "a": "Overventilation is harmful.",
-      "b": "Airway opening maneuvers matter.",
-      "d": "Mask covers nose and mouth."
+      "a": "Full, fast squeezes overinflate and cause gastric inflation; give just enough for chest rise over 1 second.",
+      "b": "Two-rescuer bag-mask ventilation gives a better seal than the one-rescuer technique.",
+      "d": "The mask covers the nose and mouth, from the bridge of the nose to the cleft of the chin, not the eyes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Move the victim to a firm surface or place a backboard if available"
+        "text": "Move the victim to a firm surface"
       },
       {
         "id": "b",
-        "text": "Compress deeply into a soft mattress without concern"
+        "text": "Compress harder to make up for the soft mattress"
       },
       {
         "id": "c",
-        "text": "Only do breaths on soft surfaces"
+        "text": "Switch to rescue breaths until a backboard arrives"
       },
       {
         "id": "d",
-        "text": "Avoid CPR because beds forbid it"
+        "text": "Compress at a faster rate to offset the mattress"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Soft surfaces dissipate force; firm support improves compression effectiveness.",
+    "explanation": "Soft surfaces dissipate force; move the victim to a firm surface or place a backboard if available to improve compression effectiveness.",
     "distractorExplanations": {
-      "b": "Soft surfaces reduce effective depth.",
-      "c": "Compressions remain essential.",
-      "d": "CPR is performed with surface correction."
+      "b": "Extra force on a soft surface is absorbed by the mattress; firm support is needed for effective depth.",
+      "c": "Compressions must continue; moving to a firm surface takes priority over breaths-only care.",
+      "d": "A faster rate does not fix lost depth on a mattress; 100-120/min stays the target rate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Place pads on top of thick hair without contact"
+        "text": "Press the pads firmly over the hair and analyze"
       },
       {
         "id": "b",
-        "text": "Quickly remove hair in the pad area (razor if in kit) so pads adhere, then analyze"
+        "text": "Quickly remove hair in the pad area so pads adhere"
       },
       {
         "id": "c",
-        "text": "Skip AED permanently"
+        "text": "Move both pads to the back where there is less hair"
       },
       {
         "id": "d",
-        "text": "Wet hair with oil"
+        "text": "Delay the AED and continue CPR until EMS arrives"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pad contact is required for AED function; kits often include razors.",
+    "explanation": "Pad contact is required for AED function; kits often include a razor, so remove hair in the pad area, then analyze.",
     "distractorExplanations": {
-      "a": "Poor contact fails analysis/shock.",
-      "c": "Do not skip AED.",
-      "d": "Oil worsens adhesion."
+      "a": "Pads over thick hair make poor contact, causing failed analysis or skin burns.",
+      "c": "Both pads on the back do not create a correct current path through the heart.",
+      "d": "Delaying defibrillation lowers survival; clear the hair and use the AED."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Apply AED while both rescuer and victim are in a puddle without drying"
+        "text": "Apply the pads to the wet chest, as AEDs are water-safe"
       },
       {
         "id": "b",
-        "text": "Never dry the chest"
+        "text": "Dry only the pad sites, leaving the victim in the water"
       },
       {
         "id": "c",
-        "text": "Move to a dry area if possible and dry the chest; avoid standing water around rescuers"
+        "text": "Move to a dry area if possible and dry the chest"
       },
       {
         "id": "d",
-        "text": "Submerge the AED to ground it"
+        "text": "Turn the victim onto the side to drain water first"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Reduce shock hazard to rescuers; AEDs are used after reasonable drying/movement.",
+    "explanation": "Reduce shock hazard to rescuers by avoiding standing water; AEDs are used after reasonable drying/movement.",
     "distractorExplanations": {
-      "a": "Standing water risks rescuer shock.",
-      "b": "Drying the pad sites matters.",
-      "d": "Do not submerge AEDs."
+      "a": "Water conducts current across the chest and toward rescuers, so the chest must be dried first.",
+      "b": "Leaving the victim in standing water risks shocking rescuers; move to a dry area first.",
+      "d": "Draining water from the lungs delays CPR and AED use and is not part of BLS."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All crowd the airway with no compressor"
+        "text": "Rotates freely between tasks as needs arise"
       },
       {
         "id": "b",
-        "text": "Everyone gives contradictory orders simultaneously"
+        "text": "Takes direction from whoever is closest to the patient"
       },
       {
         "id": "c",
-        "text": "Nobody watches the clock/AED prompts"
+        "text": "Chooses a task after first seeing which roles are already covered"
       },
       {
         "id": "d",
-        "text": "Knows their assignment (compressions, airway, AED, documentation) and stays in lane unless reassigned"
+        "text": "Knows their assignment and stays in lane unless reassigned"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Clear roles prevent task fixation and missing compressions.",
+    "explanation": "Clear roles (compressions, airway, AED, documentation) prevent task fixation and missed compressions.",
     "distractorExplanations": {
-      "a": "Someone must compress.",
-      "b": "One leader, closed-loop.",
-      "c": "Time/AED prompts guide switches."
+      "a": "Free rotation causes gaps; members take assigned roles and switch on the leader's call.",
+      "b": "Direction comes from one designated team leader, not from proximity to the patient.",
+      "c": "Self-selecting roles causes gaps and duplication; the leader assigns roles."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1892,23 +1892,23 @@
       },
       {
         "id": "b",
-        "text": "Replacing the need for an AED"
+        "text": "Analyzing the heart rhythm and advising a shock"
       },
       {
         "id": "c",
-        "text": "Diagnosing STEMI on their own as a 12-lead"
+        "text": "Reporting CPR quality only at the post-event debrief"
       },
       {
         "id": "d",
-        "text": "Eliminating EMS activation"
+        "text": "Setting the ventilation volume for the bag-mask"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Quality metrics improve with coaching and feedback tools when available.",
     "distractorExplanations": {
-      "b": "AED still required.",
-      "c": "Not a diagnostic ECG replacement.",
-      "d": "EMS still needed."
+      "b": "Rhythm analysis is the AED's job; feedback devices measure compression quality.",
+      "c": "Feedback devices coach in real time during CPR; debrief data is a secondary use.",
+      "d": "Feedback devices focus on compressions and pauses, not on setting bag-mask volume."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always seal the mouth only and ignore the stoma"
+        "text": "Ventilate through the mouth and nose as in other adults"
       },
       {
         "id": "b",
-        "text": "Ventilate via the tracheostomy using appropriate interface as trained / per local protocol"
+        "text": "Ventilate via the tracheostomy using appropriate interface as trained"
       },
       {
         "id": "c",
-        "text": "Never ventilate tracheostomy patients"
+        "text": "Remove the tracheostomy tube first, then ventilate by the mouth and nose"
       },
       {
         "id": "d",
-        "text": "Pour liquid into the stoma"
+        "text": "Skip ventilation and give compression-only CPR instead"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ventilate the airway the patient has; follow training for stoma ventilation.",
     "distractorExplanations": {
-      "a": "Stoma is the airway.",
-      "c": "They need ventilation in arrest/respiratory failure.",
-      "d": "Do not pour liquids into the airway."
+      "a": "Breathing occurs through the stoma; mouth breaths will not reach the lungs effectively.",
+      "c": "Removing the tube can close the airway; ventilate through the tracheostomy.",
+      "d": "Trained providers ventilate through the stoma; skipping breaths loses oxygenation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop all monitoring and leave"
+        "text": "Remove the AED pads and sit the patient upright to help them breathe"
       },
       {
         "id": "b",
-        "text": "Immediately give the patient a large meal"
+        "text": "Continue compressions for 2 more minutes to prevent re-arrest"
       },
       {
         "id": "c",
-        "text": "Support airway/breathing, monitor pulse and blood pressure as able, and prepare for transport/ALS care"
+        "text": "Support airway/breathing, monitor pulse, and prepare for ALS care"
       },
       {
         "id": "d",
-        "text": "Remove AED pads and turn off attention to re-arrest risk"
+        "text": "Give sips of water once the patient begins to respond to voice"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Re-arrest is common; continue close monitoring and supportive care.",
+    "explanation": "Re-arrest is common; continue close monitoring of pulse and blood pressure as able, with supportive care, and prepare for transport/ALS care.",
     "distractorExplanations": {
-      "a": "Do not abandon.",
-      "b": "NPO/airway risks early after ROSC.",
-      "d": "Keep defibrillation capability ready."
+      "a": "Pads stay on after ROSC because re-arrest is common and may need another shock.",
+      "b": "Compressions on a patient with a pulse are not indicated; monitor and support instead.",
+      "d": "Oral fluids risk aspiration after ROSC; nothing by mouth while consciousness is altered."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"

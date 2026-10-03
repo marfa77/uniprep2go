@@ -1,0 +1,740 @@
+{
+ "nate-core-readiness-check": {
+  "nate-core-readiness-check-safety-002": {
+   "options": {
+    "a": "Flow compressed shop air through the tubing while heating",
+    "b": "Flow dry nitrogen through the tubing while heating",
+    "c": "Pressurize the line with nitrogen to 150 psig while heating",
+    "d": "Purge with nitrogen first, then braze with the flow off"
+   },
+   "distractorExplanations": {
+    "a": "Shop air carries oxygen and moisture, so copper oxide scale still forms inside the tube; only an inert gas such as dry nitrogen prevents it.",
+    "c": "Brazing needs a low-flow nitrogen sweep of a few SCFH; a static 150 psig charge is pressure-test level and blows filler out of the open joint.",
+    "d": "A pre-purge alone lets air back in as the tube heats; nitrogen must keep flowing during heating to stop oxide scale from forming."
+   }
+  },
+  "nate-core-readiness-check-safety-003": {
+   "options": {
+    "a": "Venting is allowed for HFC blends but illegal for CFCs and HCFCs",
+    "b": "Recovery is required only when the system holds over 5 lb of charge",
+    "c": "Venting regulated refrigerants to atmosphere is illegal and unsafe",
+    "d": "Venting is legal once the system is pulled down to 0 psig first"
+   },
+   "distractorExplanations": {
+    "a": "The Section 608 venting prohibition covers HFC substitutes such as R-410A as well as CFCs and HCFCs; only de minimis releases are allowed.",
+    "b": "Confuses the 5 lb small-appliance size limit with a recovery threshold; recovery is required before opening any charged system.",
+    "d": "Bleeding a system to 0 psig is venting, not recovery; EPA requires certified recovery equipment to reach the required evacuation level."
+   }
+  },
+  "nate-core-readiness-check-safety-004": {
+   "options": {
+    "a": "Run the furnace a full cycle to see whether the smell clears up",
+    "b": "Switch on the furnace blower to air out the room, then find the leak",
+    "c": "Check the flue for a blockage, since that odor means flue-gas spillage",
+    "d": "Shut the gas, ventilate, and treat it as a leak until proved otherwise"
+   },
+   "distractorExplanations": {
+    "a": "Operating burners and controls in a gas-odor area risks ignition; the odor itself means shut off the gas and ventilate first.",
+    "b": "Operating switches or motors can spark and ignite gas; ventilate by opening doors and windows with the gas off and nothing switched.",
+    "c": "The rotten-egg mercaptan odor signals unburned natural gas or propane, not combustion-product spillage, which is largely odorless CO."
+   }
+  },
+  "nate-core-readiness-check-safety-005": {
+   "options": {
+    "a": "Combustion air, CO awareness, and an exit plan before starting",
+    "b": "A dust respirator, which also filters carbon monoxide safely",
+    "c": "Sealing combustion-air openings so the attic stays conditioned",
+    "d": "A spotter outside, with CO checks needed only for sealed boilers"
+   },
+   "distractorExplanations": {
+    "b": "Particulate respirators do not filter CO; CO risk is handled with ventilation, combustion air, and monitoring, not a dust mask.",
+    "c": "Blocking combustion air starves the appliance and raises CO production; adequate combustion air is a requirement, not an option.",
+    "d": "Any fuel-burning appliance in an enclosed attic or crawl can produce CO; CO awareness is not limited to boilers."
+   }
+  },
+  "nate-core-readiness-check-safety-006": {
+   "options": {
+    "a": "Replaced with the same MFD and any lower voltage rating that fits",
+    "b": "Replaced with the specified MFD and voltage rating after discharge",
+    "c": "Replaced with a higher MFD rating to give the motor more torque",
+    "d": "Left in service if it still tests within 6 percent of its MFD rating"
+   },
+   "distractorExplanations": {
+    "a": "A lower voltage rating than the original can fail early; the replacement voltage rating must equal or exceed the original.",
+    "c": "Oversizing run-capacitor MFD raises start-winding current and heat; the replacement must match the specified MFD within tolerance.",
+    "d": "A bulging or cracked case means the dielectric has failed or vented; a passing MFD reading does not make a damaged capacitor safe."
+   }
+  },
+  "nate-core-readiness-check-safety-007": {
+   "options": {
+    "a": "A standard R-22 recovery tank, since the fittings match",
+    "b": "A recovery machine discharging into a disposable cylinder",
+    "c": "A recovery machine and tank rated for R-410A pressures",
+    "d": "A vacuum pump that discharges into a recovery tank"
+   },
+   "distractorExplanations": {
+    "a": "Older R-22 recovery tanks may be rated below the 400 psig service pressure needed for R-410A; matching fittings say nothing about the rating.",
+    "b": "Disposable DOT-39 cylinders are non-refillable; recovered refrigerant must go into a refillable, DOT-rated recovery cylinder.",
+    "d": "A vacuum pump is an evacuation tool, not a recovery device; it exhausts to atmosphere and cannot push refrigerant into a pressurized tank."
+   }
+  },
+  "nate-core-readiness-check-safety-008": {
+   "options": {
+    "a": "An indoor-rated cord, since the condensing unit is already grounded",
+    "b": "A heavy-gauge outdoor cord on a standard receptacle, since GFCI is for indoor wet areas",
+    "c": "A cord with its ground pin removed so the GFCI does not nuisance-trip",
+    "d": "Avoided; use a GFCI-protected, outdoor-rated cord only if temporary power is required"
+   },
+   "distractorExplanations": {
+    "a": "Indoor cords are not rated for wet outdoor exposure, and the unit's equipment ground does not protect the person handling the cord.",
+    "b": "Temporary power in wet outdoor locations needs GFCI protection too; conductor gauge sizes current, it does not protect against ground faults.",
+    "c": "Removing the ground pin defeats the equipment grounding path; a tripping GFCI is reporting leakage that must be found and fixed."
+   }
+  },
+  "nate-core-readiness-check-safety-009": {
+   "options": {
+    "a": "Check defrost control, sensors, and airflow before adding charge",
+    "b": "Add refrigerant until the outdoor coil defrosts, since icing means low charge",
+    "c": "Switch to emergency heat and leave the outdoor unit iced until spring",
+    "d": "Replace the reversing valve, since it fails to shift into defrost"
+   },
+   "distractorExplanations": {
+    "b": "Icing has several causes (failed defrost, bad sensor, low airflow); charging to melt ice without diagnosis usually overcharges the system.",
+    "c": "Emergency heat is a temporary bridge; a solidly iced coil points to a defrost failure that needs repair, not seasonal abandonment.",
+    "d": "Jumps to a costly part; the defrost board, coil sensor, and airflow are checked before condemning the reversing valve."
+   }
+  },
+  "nate-core-readiness-check-safety-010": {
+   "options": {
+    "a": "Acceptable with R-410A, because A1 refrigerants are nonflammable",
+    "b": "An ignition hazard — remove fuels and ventilate before work",
+    "c": "A minor risk handled by keeping a fire extinguisher within reach",
+    "d": "Safe if the garage door is open, since vapors disperse quickly"
+   },
+   "distractorExplanations": {
+    "a": "The refrigerant's A1 safety class is irrelevant here; the gasoline vapor near a spark is the ignition hazard.",
+    "c": "An extinguisher is a backup, not a control; the hazard is removed by taking fuels out and ventilating before any spark-producing work.",
+    "d": "Gasoline vapor is heavier than air and pools near the floor; an open door does not reliably clear it from a spark source."
+   }
+  },
+  "nate-core-readiness-check-safety-011": {
+   "options": {
+    "a": "Safety glasses for brazing, with gloves skipped during recovery",
+    "b": "A face shield for brazing, but no eye protection for recovery work",
+    "c": "Eye protection, gloves, and burn protection as the task requires",
+    "d": "Hearing protection and a hard hat, which cover recovery and brazing"
+   },
+   "distractorExplanations": {
+    "a": "Liquid refrigerant released at a hose connection can cause frostbite; gloves are needed during recovery as well as brazing.",
+    "b": "Refrigerant spray from a hose or valve can injure the eyes; eye protection is needed when connecting hoses and recovering.",
+    "d": "These protect against noise and falling objects, not refrigerant frostbite, eye splash, or torch burns."
+   }
+  },
+  "nate-core-readiness-check-safety-012": {
+   "options": {
+    "a": "Protect the compressor from overcurrent in place of the branch breaker",
+    "b": "Cut 24 V control power to the unit while leaving line voltage live",
+    "c": "Reset the compressor's internal overload after a high-amp trip",
+    "d": "Isolate the equipment so it can be serviced without remote re-energizing"
+   },
+   "distractorExplanations": {
+    "a": "A non-fused disconnect gives no overcurrent protection; the branch breaker or fuses do that, and the disconnect's job is isolation.",
+    "b": "The disconnect opens line voltage to the condensing unit; killing only 24 V control power leaves lethal voltage at the contactor.",
+    "c": "Internal overloads reset on their own once the motor cools; the disconnect exists for lockable isolation during service."
+   }
+  },
+  "nate-core-readiness-check-safety-013": {
+   "options": {
+    "a": "Stop, find the blockage or heat-exchanger/vent problem, then reset only after repair",
+    "b": "Reset the rollout switch and watch two cycles; replace it if it trips again",
+    "c": "Raise manifold pressure so the flame pulls back into the heat exchanger",
+    "d": "Replace the rollout switch with a higher-temperature rating so it stops tripping"
+   },
+   "distractorExplanations": {
+    "b": "A tripping rollout switch is usually doing its job; replacing it ignores the blocked flue or cracked heat exchanger behind the trip.",
+    "c": "Higher gas pressure overfires the burner and worsens rollout; rollout comes from blocked venting or heat-exchanger problems.",
+    "d": "Upsizing the limit rating defeats a flame-safety device and hides the vent or heat-exchanger problem that caused the trip."
+   }
+  },
+  "nate-core-readiness-check-safety-014": {
+   "options": {
+    "a": "Uncapped with valves open so any leftover vapor can vent safely",
+    "b": "Capped, upright, and within their pressure rating, away from heat",
+    "c": "Lying on their side in the van near the torch kit for easy access",
+    "d": "Refilled with recovered refrigerant if they are disposable DOT-39 types"
+   },
+   "distractorExplanations": {
+    "a": "Open valves let moisture in and release residual refrigerant illegally; empty cylinders are stored with valves closed and caps on.",
+    "c": "Cylinders stored near heat sources can overpressurize; they belong upright, secured, and away from torches and heat.",
+    "d": "DOT-39 disposable cylinders are illegal to refill; empties are recovered to a vacuum, rendered unusable, and recycled."
+   }
+  },
+  "nate-core-readiness-check-safety-015": {
+   "options": {
+    "a": "Measuring superheat during the charge that follows evacuation",
+    "b": "Measuring how fast the recovery machine pulls the system to 0 psig",
+    "c": "Confirming the system is dry and leak-tight at a deep vacuum",
+    "d": "Showing the pump's blank-off reading so the decay test can be skipped"
+   },
+   "distractorExplanations": {
+    "a": "Superheat needs suction pressure and line temperature with the system running; a micron gauge reads only deep vacuum.",
+    "b": "The recovery endpoint is read on the manifold in psig or inches Hg; the micron gauge is for the evacuation and dehydration level.",
+    "d": "Blank-off proves only the pump; a system decay test is still needed to show the circuit is dry and leak-tight."
+   }
+  },
+  "nate-core-readiness-check-tools-017": {
+   "options": {
+    "a": "Suction-line temperature minus saturated suction temperature",
+    "b": "Saturated suction temperature minus suction-line temperature",
+    "c": "Saturated condensing temperature minus liquid-line temperature",
+    "d": "Return-air temperature minus supply-air temperature at the coil"
+   },
+   "distractorExplanations": {
+    "b": "Reverses the subtraction; superheat is how far the actual suction-line temperature sits above saturation, a positive value.",
+    "c": "That is subcooling, measured on the liquid line, not superheat measured on the suction line.",
+    "d": "That is the air-side temperature split (delta T) across the coil, not refrigerant superheat."
+   }
+  },
+  "nate-core-readiness-check-tools-018": {
+   "options": {
+    "a": "Suction-line temperature minus saturated suction temperature",
+    "b": "Saturated condensing temperature minus liquid-line temperature",
+    "c": "Liquid-line temperature minus saturated condensing temperature",
+    "d": "Discharge-line temperature minus saturated condensing temperature"
+   },
+   "distractorExplanations": {
+    "a": "That formula is superheat on the suction line; subcooling is taken on the liquid line against condensing saturation.",
+    "c": "Reverses the subtraction; a properly subcooled liquid line is colder than saturation, so this order gives a negative number.",
+    "d": "That is discharge superheat leaving the compressor, not subcooling of the liquid leaving the condenser."
+   }
+  },
+  "nate-core-readiness-check-tools-019": {
+   "options": {
+    "a": "Read deep vacuum in microns to confirm dehydration during evacuation",
+    "b": "Measure total external static pressure across the air handler",
+    "c": "Convert pressures to saturation and compute superheat or subcooling",
+    "d": "Weigh the refrigerant charge added to the system during charging"
+   },
+   "distractorExplanations": {
+    "a": "Manifold compound gauges cannot resolve microns; a dedicated micron gauge is used to confirm dehydration.",
+    "b": "TESP is measured with a manometer and static probes in the ductwork, not with a refrigerant manifold.",
+    "d": "Weighing in charge uses a refrigerant scale; the manifold reads pressures and line temperatures."
+   }
+  },
+  "nate-core-readiness-check-tools-020": {
+   "options": {
+    "a": "Manifold gas pressure in psig, about 3.5 psig for natural gas",
+    "b": "Deep-vacuum level in microns during line-set evacuation",
+    "c": "Flue-gas CO in parts per million at the draft hood",
+    "d": "Manifold or inlet gas pressure in inches of water column"
+   },
+   "distractorExplanations": {
+    "a": "Natural-gas manifold pressure is about 3.5 inches of water column, not 3.5 psig; psig gauges lack the needed resolution.",
+    "b": "Microns are read with a micron gauge during evacuation; a furnace manometer reads gas pressure in inches WC.",
+    "c": "CO in ppm is read with a combustion analyzer; a manometer measures pressure, not gas concentration."
+   }
+  },
+  "nate-core-readiness-check-tools-021": {
+   "options": {
+    "a": "Across the air handler, supply plus return, with the blower running",
+    "b": "At the supply plenum only, with the blower running on high speed",
+    "c": "Across the air handler with the blower off, to get a stable reading",
+    "d": "Across the air handler with the filter removed for a clean baseline"
+   },
+   "distractorExplanations": {
+    "b": "Supply static alone leaves out the return side; TESP is the sum of supply and return static magnitudes at the air handler.",
+    "c": "Static pressure exists only with airflow; with the blower off the reading is zero and tells you nothing about the duct system.",
+    "d": "TESP is measured as the system operates, filter included; pulling the filter gives a falsely low reading."
+   }
+  },
+  "nate-core-readiness-check-tools-022": {
+   "options": {
+    "a": "250 CFM per ton, the standard for humid-climate dehumidification",
+    "b": "400 CFM per ton, verified by temperature split or static",
+    "c": "550 CFM per ton, the usual target for heat pumps in heating mode",
+    "d": "800 CFM per ton, which keeps the coil from freezing in cooling"
+   },
+   "distractorExplanations": {
+    "a": "Humid-climate setups lower airflow to roughly 350 CFM per ton; 250 is far too low and risks a frozen evaporator coil.",
+    "c": "Heat pumps also target about 400 CFM per ton; 550 overshoots it and lowers delivered supply-air temperature in heating.",
+    "d": "Double the target airflow ruins dehumidification and raises static and noise; coil freezing is prevented at about 400, not 800."
+   },
+   "explanation": "400 CFM/ton is a starting point — confirm with instruments. This item asks: “A rule-of-thumb residential airflow target is about:”. The matching answer is: 400 CFM per ton, verified by temperature split or static, not guessed. Independent UniPrep diagnostic — not an official NATE or state operator paper. Verify the airflow by measurement; it should not be guessed."
+  },
+  "nate-core-readiness-check-tools-023": {
+   "options": {
+    "a": "Measure winding resistance to ground after a compressor burnout",
+    "b": "Compare running amps to the LRA rating to confirm normal operation",
+    "c": "Compare running amps to the RLA/FLA nameplate under load",
+    "d": "Measure compressor winding resistance between C, S, and R"
+   },
+   "distractorExplanations": {
+    "a": "Insulation resistance to ground is a megohmmeter test with power off, not a clamp-on ammeter reading.",
+    "b": "LRA is the locked-rotor inrush figure, several times running current; running amps are compared to RLA, not LRA.",
+    "d": "Winding resistance is an ohmmeter test with power off; a clamp-on ammeter measures current under load."
+   }
+  },
+  "nate-core-readiness-check-tools-024": {
+   "options": {
+    "a": "Dew point of the refrigerant to calculate system subcooling",
+    "b": "Duct static pressure to find a restricted return or dirty filter",
+    "c": "Flue-gas temperature and oxygen to set combustion efficiency",
+    "d": "Wet-bulb/dry-bulb or enthalpy to diagnose airflow and capacity"
+   },
+   "distractorExplanations": {
+    "a": "Subcooling uses refrigerant pressure and liquid-line temperature; a psychrometer measures moisture in the air stream.",
+    "b": "Duct static pressure is read with a manometer; a psychrometer reads air temperature and humidity.",
+    "c": "Flue-gas temperature and O2 are measured with a combustion analyzer, not a psychrometric probe."
+   }
+  },
+  "nate-core-readiness-check-tools-025": {
+   "options": {
+    "a": "Weight, staying under the cylinder’s rated fill limit",
+    "b": "Weight, filling to 100 percent of the rated water capacity",
+    "c": "Pressure, stopping when the tank reaches 80 percent of its rating",
+    "d": "Sight glass, stopping when liquid appears in the vapor valve"
+   },
+   "distractorExplanations": {
+    "b": "Recovery cylinders may be filled to only about 80 percent of capacity so liquid has room to expand; 100 percent risks rupture.",
+    "c": "Cylinder pressure follows temperature, not liquid level; the fill limit is set by weight, not by a pressure reading.",
+    "d": "Liquid at the vapor valve means the cylinder is already overfilled with no vapor space left for expansion."
+   }
+  },
+  "nate-core-readiness-check-tools-026": {
+   "options": {
+    "a": "Measure running amps against the nameplate RLA under load",
+    "b": "Check winding insulation resistance to ground after a burnout",
+    "c": "Measure winding-to-winding resistance between C, S, and R",
+    "d": "Check run capacitor microfarads before a compressor restart"
+   },
+   "distractorExplanations": {
+    "a": "Running amps versus RLA is a clamp-on ammeter check; a megohmmeter tests insulation with the motor de-energized.",
+    "c": "Winding-to-winding resistance is a low-ohm ohmmeter test; the megohmmeter applies high voltage to test insulation to ground.",
+    "d": "Microfarads are read with a capacitance meter; a megohmmeter measures insulation resistance in megohms."
+   }
+  },
+  "nate-core-readiness-check-tools-027": {
+   "options": {
+    "a": "A cracked heat exchanger mixing return air into the supply",
+    "b": "A clogged condensate drain pan backing water onto the coil",
+    "c": "Low airflow or an undercharged/underperforming coil",
+    "d": "A correctly working system, since low splits mean high efficiency"
+   },
+   "distractorExplanations": {
+    "a": "A cracked heat exchanger is a gas-furnace combustion hazard in heating; it is not what lowers a cooling temperature split.",
+    "b": "A clogged drain causes overflow or a float-switch trip, not a far-too-low air temperature split across the coil.",
+    "d": "A typical cooling split is roughly 16-22 °F; a very low split signals reduced capacity, not high efficiency."
+   },
+   "explanation": "A small split is an air-side or capacity problem, not an automatic gas-furnace fault. This item asks: “A temperature split (return vs supply) that is far too low on a cooling system often means:”. The matching answer is: Low airflow or an undercharged/underperforming coil — measure before adding gas. Independent UniPrep diagnostic — not an official NATE or state operator paper. Measure before adding gas."
+  },
+  "nate-core-readiness-check-tools-029": {
+   "options": {
+    "a": "Pressure drop that signals restriction or dirty media",
+    "b": "Airflow in CFM directly, without any fan or filter table",
+    "c": "Refrigerant-side pressure drop across the evaporator coil",
+    "d": "Total external static pressure for the whole duct system"
+   },
+   "distractorExplanations": {
+    "b": "A manometer reads pressure; converting it to CFM requires a manufacturer fan or coil table, or a flow hood.",
+    "c": "A water-column manometer reads the air side; refrigerant-side pressure drop needs refrigerant gauges.",
+    "d": "TESP is supply plus return static at the air handler; a drop across one coil or filter is only that component's share."
+   }
+  },
+  "nate-core-readiness-check-tools-030": {
+   "options": {
+    "a": "Standard white PTFE plumbing tape, applied to flare fittings too",
+    "b": "A listed gas-rated compound or tape, used on the correct threads",
+    "c": "Refrigerant POE oil, which lubricates and seals the threads",
+    "d": "Any pipe dope, applied to the female threads for best coverage"
+   },
+   "distractorExplanations": {
+    "a": "Flare fittings seal metal to metal and get no sealant, and gas threads need a gas-rated (yellow) tape, not plain PTFE.",
+    "c": "POE oil is used on refrigerant flare faces and O-rings; it is not a listed sealant for gas pipe threads.",
+    "d": "The compound must be gas-listed and goes on the male threads so excess is not pushed into the gas line."
+   }
+  },
+  "nate-core-readiness-check-electrical-031": {
+   "options": {
+    "a": "Specified microfarads and a 370 V rating, even when the original is 440 V",
+    "b": "The compressor RLA, adding about 10 MFD for each running amp",
+    "c": "The motor’s specified microfarads and a voltage rating at or above the circuit",
+    "d": "A higher microfarad value than specified, to boost starting torque"
+   },
+   "distractorExplanations": {
+    "a": "Moving from 370 V up to 440 V is acceptable, but not down; the voltage rating must equal or exceed the original.",
+    "b": "No amp-to-MFD sizing rule exists; run-capacitor MFD is set by the motor design and nameplate.",
+    "d": "An oversized run capacitor raises winding current and heat; extra starting torque comes from a start capacitor."
+   }
+  },
+  "nate-core-readiness-check-electrical-032": {
+   "options": {
+    "a": "A secondary voltage of 24 V, which runs hot under normal load",
+    "b": "An open high-pressure switch interrupting the Y circuit",
+    "c": "A transformer rated at 40 VA serving a 20 VA control load",
+    "d": "A shorted control circuit, stuck relay, or overloaded VA"
+   },
+   "distractorExplanations": {
+    "a": "24 V is the normal secondary voltage; a correctly loaded transformer runs warm, not overheated.",
+    "b": "An open switch removes load from the secondary, so the transformer runs cooler, not hotter.",
+    "c": "That is half load; an oversized VA rating runs cooler, while overheating points to excess load or a short."
+   }
+  },
+  "nate-core-readiness-check-electrical-033": {
+   "options": {
+    "a": "Before ignition to prove venting, then through the cycle as designed",
+    "b": "After ignition is proven, to pull flue gases once the burners are lit",
+    "c": "Only during the post-purge after the gas valve closes",
+    "d": "In place of the circulating blower to move air through the heat exchanger"
+   },
+   "distractorExplanations": {
+    "b": "The inducer starts first to pre-purge and close the pressure switch; ignition is not allowed until draft is proven.",
+    "c": "Post-purge is one part of its cycle, but the inducer also pre-purges and runs throughout the burn.",
+    "d": "The inducer moves combustion products through the heat exchanger; the circulating blower moves conditioned air over it."
+   }
+  },
+  "nate-core-readiness-check-electrical-034": {
+   "options": {
+    "a": "Filed smooth and returned to service as routine maintenance",
+    "b": "Replaced; pitted contacts add resistance and drop voltage",
+    "c": "Left in service unless the coil reads open on an ohmmeter",
+    "d": "Kept and paired with a hard-start kit to overcome the voltage drop"
+   },
+   "distractorExplanations": {
+    "a": "Filing strips the contact plating and is only a temporary fix; badly pitted contactors are replaced.",
+    "c": "Confuses coil failure with contact wear; coil continuity says nothing about resistance across pitted contacts.",
+    "d": "A hard-start kit masks the symptom by adding start torque while the pitted contacts keep degrading."
+   },
+   "explanation": "Pitted contacts are a replace item, not a permanent field repair. This item asks: “A contactor with badly pitted points should be:”. The matching answer is: Replaced; pitted contacts add resistance and drop voltage to the compressor. Independent UniPrep diagnostic — not an official NATE or state operator paper. That voltage drop reaches the compressor and stresses it."
+  },
+  "nate-core-readiness-check-electrical-035": {
+   "options": {
+    "a": "Continuously, in series with the start winding like a run capacitor",
+    "b": "During start and run, wired in parallel with the run capacitor",
+    "c": "Only during start, dropped out by a relay or PTC once the motor is up",
+    "d": "Only after the motor reaches speed, to correct its power factor"
+   },
+   "distractorExplanations": {
+    "a": "That describes a run capacitor; start capacitors are not rated for continuous duty and fail if left in circuit.",
+    "b": "Hard-start capacitors connect in parallel with the run capacitor but must drop out; left in during run they overheat.",
+    "d": "Running power-factor correction is the run capacitor's role; the start capacitor adds torque during start."
+   }
+  },
+  "nate-core-readiness-check-electrical-036": {
+   "options": {
+    "a": "In heating on every brand, because the valve fails safe to cooling",
+    "b": "By 240 V line voltage from the contactor whenever the compressor runs",
+    "c": "In both modes, with defrost switching the valve off to reverse flow",
+    "d": "In one mode (often cooling) depending on the OEM — check the wiring diagram"
+   },
+   "distractorExplanations": {
+    "a": "Some brands energize the valve in heating (B terminal) but most energize in cooling (O); it varies by OEM.",
+    "b": "The reversing-valve solenoid is a 24 V coil fed from the thermostat O/B circuit, not line voltage tied to the compressor.",
+    "c": "The valve is energized in only one mode; defrost puts it into the cooling position, which may be on or off by brand."
+   }
+  },
+  "nate-core-readiness-check-electrical-037": {
+   "options": {
+    "a": "Inducer, vent/intake, and the hose to the switch",
+    "b": "The flame sensor, since it proves the pressure switch",
+    "c": "The high limit switch and the blower wheel for dust",
+    "d": "The gas valve outlet pressure with a manometer"
+   },
+   "distractorExplanations": {
+    "b": "The flame sensor proves flame after ignition; a pressure-switch fault is about inducer draft before ignition.",
+    "c": "A high-limit trip is a different fault code; a pressure-switch fault points to the inducer and venting.",
+    "d": "The gas valve is not energized until the pressure switch closes, so testing it first skips the draft circuit."
+   },
+   "explanation": "Pressure-switch faults are venting/inducer problems until proved otherwise. This item asks: “If a furnace control flashes a pressure-switch fault, first check:”. The matching answer is: Inducer, vent/intake, and the hose to the switch — not the gas valve first. Independent UniPrep diagnostic — not an official NATE or state operator paper. Check those before suspecting the gas valve."
+  },
+  "nate-core-readiness-check-electrical-038": {
+   "options": {
+    "a": "Normal inrush that settles within a few minutes",
+    "b": "The compressor or fan motor is not starting",
+    "c": "A high-efficiency scroll running at full capacity",
+    "d": "A normal reading during the defrost cycle"
+   },
+   "distractorExplanations": {
+    "a": "Normal inrush lasts well under a second; LRA that does not drop means the rotor is locked.",
+    "c": "A motor at full load draws about RLA, far below locked-rotor amps.",
+    "d": "Defrost does not make the compressor draw locked-rotor amps; running current stays near RLA."
+   },
+   "explanation": "LRA that never falls is a failed start, not a running load. This item asks: “A clamp meter showing locked-rotor amps that do not drop means:”. The matching answer is: The compressor or fan motor is not starting — stop and diagnose mechanical/electrical start. Independent UniPrep diagnostic — not an official NATE or state operator paper. Stop and diagnose the mechanical or electrical start problem."
+  },
+  "nate-core-readiness-check-electrical-039": {
+   "options": {
+    "a": "24 V hot and the cooling call to the contactor",
+    "b": "120 V hot and neutral from the furnace transformer",
+    "c": "24 V hot and common for the control circuit",
+    "d": "24 V hot and the reversing-valve output"
+   },
+   "distractorExplanations": {
+    "a": "The cooling call to the contactor is Y; C is the common return of the 24 V transformer secondary.",
+    "b": "120 V feeds the transformer primary; R and C are the 24 V secondary leads.",
+    "d": "The reversing-valve output is O or B; C is the common side of the control circuit."
+   }
+  },
+  "nate-core-readiness-check-electrical-040": {
+   "options": {
+    "a": "Be bonded to the refrigerant suction line as its ground point",
+    "b": "Have its C terminal left disconnected to keep the secondary floating",
+    "c": "Be grounded on both secondary legs to keep the circuit balanced",
+    "d": "Follow the OEM grounding/C connection so safeties and Wi-Fi stats work"
+   },
+   "distractorExplanations": {
+    "a": "Refrigerant piping is not a control-circuit grounding point; the OEM grounding and C connection must be followed.",
+    "b": "C is still needed for powered thermostats and safeties; a floating secondary still uses its common lead.",
+    "c": "Grounding both secondary legs shorts the transformer through the ground path and blows the fuse."
+   }
+  },
+  "nate-core-readiness-check-electrical-042": {
+   "options": {
+    "a": "The indoor coil reaches the termination temperature or a time limit",
+    "b": "The outdoor coil reaches the termination temperature or a time limit",
+    "c": "The outdoor air temperature rises above the balance point setting",
+    "d": "The fixed 90-minute run-time interval set on the board has elapsed"
+   },
+   "distractorExplanations": {
+    "a": "Defrost terminates on the outdoor coil sensor; the indoor coil is not what is being defrosted.",
+    "c": "The balance point governs auxiliary-heat lockout and staging, not defrost termination.",
+    "d": "The 30/60/90-minute pins set the interval between defrost checks, not when an active defrost ends."
+   }
+  },
+  "nate-core-readiness-check-electrical-043": {
+   "options": {
+    "a": "A run capacitor plus speed taps wired on the motor's line-voltage side",
+    "b": "A variable-frequency drive mounted in the furnace's control panel",
+    "c": "A control signal (PWM, serial, or 24 V taps) plus a correct line-voltage feed",
+    "d": "Line voltage alone, with speed set by the motor's internal thermistor"
+   },
+   "distractorExplanations": {
+    "a": "That describes a PSC blower motor; ECMs have no run capacitor and are commanded by a control signal.",
+    "b": "ECM drive electronics are built into the motor module; no separate panel-mounted VFD is used.",
+    "d": "An ECM needs a command signal from the control; line power alone does not set its speed or torque."
+   }
+  },
+  "nate-core-readiness-check-electrical-044": {
+   "options": {
+    "a": "Jumper R to C at the thermostat so it can draw continuous power",
+    "b": "Power the thermostat with a plug-in 120 V adapter wired to the R and C terminals",
+    "c": "Swap in fresh batteries, since a C-wire is just a battery backup",
+    "d": "Add a common or an approved power extender per the furnace and stat docs"
+   },
+   "distractorExplanations": {
+    "a": "Jumping R to C shorts the 24 V transformer secondary and blows the control fuse or the transformer.",
+    "b": "R and C are 24 V control terminals; feeding it 120 V destroys the thermostat and the furnace control.",
+    "c": "A C-wire supplies continuous 24 V power; batteries do not stop a power-stealing Wi-Fi thermostat from dropping out."
+   }
+  },
+  "nate-core-readiness-check-electrical-045": {
+   "options": {
+    "a": "Per the unit nameplate maximum fuse/breaker",
+    "b": "At the minimum circuit ampacity printed on the nameplate",
+    "c": "At 125 percent of the compressor RLA, ignoring fan motor loads",
+    "d": "To the compressor's locked-rotor amps on the nameplate"
+   },
+   "distractorExplanations": {
+    "b": "Minimum circuit ampacity sizes the conductors; fuses are sized from the nameplate maximum overcurrent rating.",
+    "c": "125 percent of RLA is part of the MCA calculation for wire sizing, not the fuse rating.",
+    "d": "LRA is far above the maximum overcurrent rating; fusing at LRA gives the circuit no real protection."
+   },
+   "explanation": "Nameplate Max fuse / HACR breaker is the rule. This item asks: “A fused disconnect at the condensing unit should be sized:”. The matching answer is: Per the unit nameplate maximum fuse/breaker, not an arbitrary 60 A. Independent UniPrep diagnostic — not an official NATE or state operator paper. Do not pick an arbitrary size such as 60 A."
+  },
+  "nate-core-readiness-check-soft-skills-046": {
+   "options": {
+    "a": "Add the pound, since a top-off is acceptable on residential systems",
+    "b": "Diagnose with gauges, temperatures, and airflow before changing charge",
+    "c": "Check suction pressure alone and add charge if it reads below 100 psig",
+    "d": "Recover the full charge and weigh in nameplate charge before any testing"
+   },
+   "distractorExplanations": {
+    "a": "Adding charge without measurements can overcharge the system; the charge is set by superheat or subcooling and airflow.",
+    "c": "Pressure alone cannot show charge level; superheat or subcooling needs temperatures and correct airflow too.",
+    "d": "Jumping to recovery skips diagnosis; testing first shows whether charge is the problem at all."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-047": {
+   "options": {
+    "a": "EPA requires these records on every residential service call",
+    "b": "NATE audits each technician's service tickets to renew the credential",
+    "c": "The next tech and the warranty need a traceable service record",
+    "d": "The invoice total is the only item a warranty claim requires"
+   },
+   "distractorExplanations": {
+    "a": "EPA recordkeeping targets disposal and larger appliances, not a full service record on every residential call.",
+    "b": "NATE recertification uses continuing-education hours or retesting, not audits of service tickets.",
+    "d": "Warranty claims require model, serial, and failure details; an invoice total proves nothing about the failed part."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-048": {
+   "options": {
+    "a": "Jumper out the failed safety so the customer has cooling overnight, then return tomorrow",
+    "b": "Leave the system running as-is and return when the part arrives",
+    "c": "Recover the charge and leave gauges on the ports until you return",
+    "d": "Leave the system safe, explain options and price, and schedule the follow-up"
+   },
+   "distractorExplanations": {
+    "a": "Bypassing a safety control creates a hazard and liability; the system must be left in a safe state.",
+    "b": "Running a faulty system can cause further damage; it should be left safe with the customer told the options.",
+    "c": "Gauges left on ports invite leaks and tampering, and the customer still has no explanation, price, or schedule."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-049": {
+   "options": {
+    "a": "Buy and handle regulated refrigerants and perform recovery",
+    "b": "Install line-voltage wiring to a condensing unit disconnect",
+    "c": "Pull gas permits and install furnaces under the mechanical code",
+    "d": "Purchase sealed refrigerant appliances like window AC units"
+   },
+   "distractorExplanations": {
+    "b": "Electrical wiring is governed by state and local licensing; EPA 608 covers refrigerant handling.",
+    "c": "Gas permits and furnace installs fall under local mechanical licensing, not EPA 608 certification.",
+    "d": "Factory-sealed appliances can be sold to anyone; 608 certification governs buying refrigerant and recovery work."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-050": {
+   "options": {
+    "a": "The system is over 10 years old, even if the repair is a simple capacitor",
+    "b": "The existing equipment is unsafe or uneconomic and the facts are shown to the owner",
+    "c": "The repair quote tops 25 percent of a new system, before diagnosis is complete",
+    "d": "The unit uses R-22, since R-22 systems are now illegal to repair"
+   },
+   "distractorExplanations": {
+    "a": "Age alone does not justify replacement; a cheap repair on a sound unit should be offered first.",
+    "c": "Cost rules of thumb mean nothing before diagnosis; replacement advice must rest on documented findings.",
+    "d": "R-22 production ended in 2020, but servicing R-22 systems with reclaimed or stocked refrigerant is still legal."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-051": {
+   "options": {
+    "a": "Disregard them, since only a combustion analyzer can confirm a crack",
+    "b": "Red-tag the furnace from the photos alone without inspecting it",
+    "c": "Inspect, confirm, shut the furnace down if unsafe, and document in writing",
+    "d": "Replace the heat exchanger at once, as photos are proof of a crack"
+   },
+   "distractorExplanations": {
+    "a": "Photos are a lead worth checking; visual or camera inspection and combustion testing together confirm a crack.",
+    "b": "Condemning equipment needs the technician's own confirmation; photos alone may show a stain rather than a crack.",
+    "d": "Photos can mislead; the technician inspects and confirms before shutting down or quoting a heat exchanger."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-052": {
+   "options": {
+    "a": "Defer to the senior tech's reading and adjust the charge to match what that tech measured",
+    "b": "Split the difference and add half the charge each tech suggested",
+    "c": "Go with whichever reading uses the newer digital manifold set",
+    "d": "Re-measure SH/SC, airflow, and nameplate together before adding more gas"
+   },
+   "distractorExplanations": {
+    "a": "Seniority is not a measurement; the disagreement is settled by re-measuring superheat, subcooling, and airflow.",
+    "b": "A compromise amount is not a diagnosis and can still leave the system over- or undercharged.",
+    "c": "Tool age does not settle a charge dispute; both techs re-measure together against the nameplate."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-053": {
+   "options": {
+    "a": "Explain coil/blower damage and IAQ risk and leave a proper filter in place",
+    "b": "Remove it as requested, since the customer owns the equipment",
+    "c": "Install a MERV 16 filter so the system gets cleaner, freer airflow",
+    "d": "Remove it and clean the coil yearly to make up for the missing filter"
+   },
+   "distractorExplanations": {
+    "b": "Removing the filter exposes the coil and blower to dirt; the technician should explain the risk first.",
+    "c": "A high-MERV filter in a thin slot raises static pressure and reduces airflow rather than freeing it.",
+    "d": "Yearly coil cleaning does not stop debris loading the blower and coil between cleanings; filtration is still needed."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-054": {
+   "options": {
+    "a": "Repair it yourself after hours before mentioning it to anyone",
+    "b": "Tell the shop and the customer immediately and follow company claim policy",
+    "c": "Report it to the shop only and let the office contact the customer about the claim later",
+    "d": "Note it on the invoice and let the customer raise it if they notice"
+   },
+   "distractorExplanations": {
+    "a": "Concealing damage breaks trust and company claim procedures; the shop and customer are told right away.",
+    "c": "The customer should hear about the damage from the technician immediately, not later from the office.",
+    "d": "Passive disclosure on paperwork is not telling the customer; damage is reported directly and immediately."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-055": {
+   "options": {
+    "a": "Acceptable if the post leaves out the customer's last name",
+    "b": "Acceptable once the job is finished and the system is paid for",
+    "c": "A privacy failure — never post customer credentials or addresses",
+    "d": "Acceptable if the address is blurred out of the photo"
+   },
+   "distractorExplanations": {
+    "a": "The PIN is still an access credential; omitting a surname does not make posting it safe.",
+    "b": "Payment status does not change privacy duties; customer credentials are never posted.",
+    "d": "Blurring the address leaves the PIN exposed, and the PIN itself grants control of the system."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-056": {
+   "options": {
+    "a": "Upsizing the breaker one size so the furnace stops nuisance-tripping",
+    "b": "Resetting it and telling the customer to call if it trips again",
+    "c": "Replacing the breaker, since a breaker that trips has worn out",
+    "d": "Finding why it tripped before resetting forever and walking away"
+   },
+   "distractorExplanations": {
+    "a": "Breakers are sized to protect the wire; upsizing creates a fire risk and hides the fault causing the trip.",
+    "b": "A trip signals an overload or fault; the cause should be found before the visit ends.",
+    "c": "Breakers usually trip because of overload or short circuit; replacing one without diagnosis leaves the fault in place."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-057": {
+   "options": {
+    "a": "Include recovery, drier, evacuation, start components, and labor",
+    "b": "List the compressor and labor, with recovery and drier billed later",
+    "c": "Include the part and labor, since a new compressor ships with a drier",
+    "d": "Include the compressor, drier, and labor, reusing the old charge"
+   },
+   "distractorExplanations": {
+    "b": "Billing required steps later hides the true cost; the quote should include every required line up front.",
+    "c": "Replacement compressors do not ship with a filter-drier; a new drier is a separate required item.",
+    "d": "Omits recovery, evacuation, and start components; the charge still has to be recovered and handled."
+   },
+   "explanation": "A complete quote prevents callbacks and angry invoices. This item asks: “When quoting a compressor, the estimate should:”. The matching answer is: Include recovery, drier, evacuation, start components, and labor — not just the part. Independent UniPrep diagnostic — not an official NATE or state operator paper. Quoting just the part hides required work from the customer."
+  },
+  "nate-core-readiness-check-soft-skills-058": {
+   "options": {
+    "a": "Do the resize under your HVAC license if it is a short run",
+    "b": "Stop and bring in a licensed plumber or fitter",
+    "c": "Upsize the gas valve instead so the line can stay as installed",
+    "d": "Do the resize and skip the permit since it is a service call"
+   },
+   "distractorExplanations": {
+    "a": "Gas piping work needs the specific license the jurisdiction requires; run length does not change that.",
+    "c": "A larger gas valve cannot fix an undersized supply line; the piping itself must be resized.",
+    "d": "Calling it a service call does not remove licensing or permit rules for gas piping work."
+   }
+  },
+  "nate-core-readiness-check-soft-skills-059": {
+   "options": {
+    "a": "A state contractor license exam for HVAC installation and service work",
+    "b": "The federal refrigerant-handling exam that replaces the EPA 608 card",
+    "c": "An industry knowledge exam for HVAC installation and service fundamentals",
+    "d": "A manufacturer warranty course required to install specific brands"
+   },
+   "distractorExplanations": {
+    "a": "NATE is a voluntary industry certification; contractor licensing is issued by states or localities.",
+    "b": "EPA 608 is a separate federal requirement; NATE certification does not replace it.",
+    "d": "NATE is brand-neutral and run by an independent body, not a manufacturer warranty program."
+   },
+   "explanation": "NATE is a certification exam; licenses are still state-issued. This item asks: “NATE Core is best described as:”. The matching answer is: An industry knowledge exam for HVAC installation and service fundamentals — not a state license by itself. Independent UniPrep diagnostic — not an official NATE or state operator paper. It is not a state license by itself."
+  },
+  "nate-core-readiness-check-soft-skills-060": {
+   "options": {
+    "a": "Reinstalling panels and leaving gauges connected to verify the charge overnight",
+    "b": "Removing scraps and leaving the blower door off to cool the motor",
+    "c": "Confirming the system runs in the called mode and leaving the scraps for the homeowner to bin",
+    "d": "Reinstalling panels, removing scraps, and confirming the system runs in the called mode"
+   },
+   "distractorExplanations": {
+    "a": "Gauges left on the ports create a leak path and tampering risk; they come off before the tech leaves.",
+    "b": "The blower door must be reinstalled; leaving it off defeats the door switch and pulls unfiltered air.",
+    "c": "Cleanup is part of the job; leaving scraps and packaging behind is unprofessional and can be a hazard."
+   }
+  }
+ }
+}

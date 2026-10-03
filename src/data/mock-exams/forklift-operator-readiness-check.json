@@ -7,7 +7,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Three random points on the mast"
+        "text": "The two rear wheels and the center of the front axle"
       },
       {
         "id": "b",
@@ -15,19 +15,19 @@
       },
       {
         "id": "c",
-        "text": "Only the forks"
+        "text": "The two fork tips and the center of the counterweight"
       },
       {
         "id": "d",
-        "text": "Battery corners"
+        "text": "The four wheels, forming a stability rectangle"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The two front wheels and the pivot of the rear axle.",
     "distractorExplanations": {
-      "a": "Not the best answer: Three random points on the mast.",
-      "c": "Not the best answer: Only the forks.",
-      "d": "Not the best answer: Battery corners only."
+      "a": "Reverses the geometry: the base is the two front load wheels, and the apex is the rear steer-axle pivot, not the front axle.",
+      "c": "The forks and counterweight are not support points; stability is defined by the front wheels and the rear axle pivot.",
+      "d": "A counterbalanced truck has three-point suspension because the steer axle pivots, so the support area is a triangle, not a rectangle."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -44,23 +44,23 @@
       },
       {
         "id": "b",
-        "text": "Travel speed legally"
+        "text": "Rated capacity of the truck"
       },
       {
         "id": "c",
-        "text": "Mast strength magically"
+        "text": "Rear-wheel traction and stability"
       },
       {
         "id": "d",
-        "text": "Tire PSI automatically"
+        "text": "Load center distance on the forks"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Center of gravity and tip risk.",
     "distractorExplanations": {
-      "b": "Not the best answer: Travel speed legally.",
-      "c": "Not the best answer: Mast strength magically.",
-      "d": "Not the best answer: Tire PSI automatically."
+      "b": "Raising a load does not increase rated capacity; capacity is derated at greater lift heights, not raised.",
+      "c": "Lifting high shifts the combined CG up and forward, making the truck less stable and lightening the rear wheels.",
+      "d": "Load center is the horizontal distance from the fork face to the load's CG; lift height changes CG height, not load center."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -73,7 +73,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always causes tip"
+        "text": "Shifts the CG forward over the forks"
       },
       {
         "id": "b",
@@ -81,19 +81,19 @@
       },
       {
         "id": "c",
-        "text": "Is illegal"
+        "text": "Allows traveling with the load raised"
       },
       {
         "id": "d",
-        "text": "Removes need for seatbelt"
+        "text": "Increases rated capacity of the truck"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Helps keep CG within triangle.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always causes tip.",
-      "c": "Not the best answer: Is illegal always.",
-      "d": "Not the best answer: Removes need for seatbelt."
+      "a": "Tilting back moves the combined CG rearward toward the drive axle, not forward over the forks.",
+      "c": "Back tilt does not make raised travel safe; loads travel low with the mast tilted back.",
+      "d": "The capacity on the data plate is fixed by the manufacturer; tilting back does not raise it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -110,23 +110,23 @@
       },
       {
         "id": "b",
-        "text": "Is safest practice"
+        "text": "Is safe below walking speed"
       },
       {
         "id": "c",
-        "text": "Lowers CG"
+        "text": "Lowers the combined CG"
       },
       {
         "id": "d",
-        "text": "Is required"
+        "text": "Mostly risks a forward tip"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Greatly increases tip risk.",
     "distractorExplanations": {
-      "b": "Not the best answer: Is safest practice.",
-      "c": "Not the best answer: Lowers CG.",
-      "d": "Not the best answer: Is required."
+      "b": "An elevated load can cause a lateral tipover even at low speed because the CG is high and near the triangle edge.",
+      "c": "Turning does not lower the CG; centrifugal force pushes the high combined CG toward the side of the triangle.",
+      "d": "Turns produce lateral (sideways) tipovers; forward tips come from overloading, braking hard, or tilting forward when raised."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -172,11 +172,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited capacity"
+        "text": "Maximum load at any fork position"
       },
       {
         "id": "b",
-        "text": "Driver weight"
+        "text": "Annual inspection date and inspector"
       },
       {
         "id": "c",
@@ -184,15 +184,15 @@
       },
       {
         "id": "d",
-        "text": "Fuel brand"
+        "text": "Maximum travel speed for loaded trucks"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Rated capacity at stated load center.",
     "distractorExplanations": {
-      "a": "Not the best answer: Unlimited capacity.",
-      "b": "Not the best answer: Driver weight only.",
-      "d": "Not the best answer: Fuel brand."
+      "a": "Rated capacity applies only at the stated load center; a longer load center reduces the safe load.",
+      "b": "Inspection records are kept separately; the plate shows capacity, load center, lift height, and truck weight.",
+      "d": "Travel speed is not on the capacity plate; it is set by site rules and conditions, not the data plate."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -238,7 +238,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Has no effect"
+        "text": "Only affects the load, not truck CG"
       },
       {
         "id": "b",
@@ -246,19 +246,19 @@
       },
       {
         "id": "c",
-        "text": "Is required at speed"
+        "text": "Is best done while traveling"
       },
       {
         "id": "d",
-        "text": "Disables horn"
+        "text": "Lowers the load center distance"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Can move CG sideways—use care.",
     "distractorExplanations": {
-      "a": "Not the best answer: Has no effect.",
-      "c": "Not the best answer: Is required at speed.",
-      "d": "Not the best answer: Disables horn."
+      "a": "Shifting a heavy load sideways moves the combined truck-and-load CG toward the side of the stability triangle.",
+      "c": "Side-shifting is done with the truck stopped and the load positioned, not while traveling, to avoid lateral instability.",
+      "d": "Side-shift moves the load laterally; load center is the forward distance from the fork face and does not change."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -308,23 +308,23 @@
       },
       {
         "id": "b",
-        "text": "No counterweight concept"
+        "text": "Outriggers to straddle the load"
       },
       {
         "id": "c",
-        "text": "Only outriggers"
+        "text": "Front wheel ballast for balance"
       },
       {
         "id": "d",
-        "text": "Only tracks"
+        "text": "Tilt to balance load"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Rear weight to offset load.",
     "distractorExplanations": {
-      "b": "Not the best answer: No counterweight concept.",
-      "c": "Not the best answer: Only outriggers always.",
-      "d": "Not the best answer: Only tracks."
+      "b": "Outriggers that straddle the load belong to reach and straddle trucks; counterbalanced trucks use a rear counterweight.",
+      "c": "The counterweight sits at the rear behind the drive axle, opposite the load, not as ballast on the front wheels.",
+      "d": "Mast tilt helps cradle a load, but the counterbalance principle is the rear counterweight offsetting the load."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -341,23 +341,23 @@
       },
       {
         "id": "b",
-        "text": "Being identical"
+        "text": "Using a heavier rear counterweight than sit-down trucks"
       },
       {
         "id": "c",
-        "text": "Having no forks"
+        "text": "Being exempt from OSHA operator training rules"
       },
       {
         "id": "d",
-        "text": "No capacity plates"
+        "text": "Rating capacity by battery size, not load center"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Stability/outrigger design vs sit-down counterbalance.",
     "distractorExplanations": {
-      "b": "Not the best answer: Being identical always.",
-      "c": "Not the best answer: Having no forks.",
-      "d": "Not the best answer: No capacity plates."
+      "b": "Reach trucks rely on outriggers and battery mass, not a heavier rear counterweight, for stability.",
+      "c": "29 CFR 1910.178(l) training applies to every powered industrial truck class, including reach trucks.",
+      "d": "Reach trucks still carry a capacity plate rated at a stated load center and lift height."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Downhill when loaded always as only rule"
+        "text": "Downhill when loaded"
       },
       {
         "id": "b",
-        "text": "Sideways"
+        "text": "Uphill only when empty"
       },
       {
         "id": "c",
-        "text": "Uphill when loaded (common rule)"
+        "text": "Uphill when loaded"
       },
       {
         "id": "d",
-        "text": "Any direction randomly"
+        "text": "Across the slope to steady it"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Uphill when loaded (common rule)",
+    "explanation": "Uphill when loaded (common rule) This is the common rule for grades.",
     "distractorExplanations": {
-      "a": "Not the best answer: Downhill when loaded always as only rule.",
-      "b": "Not the best answer: Sideways.",
-      "d": "Not the best answer: Any direction randomly."
+      "a": "A loaded truck driven with the load downgrade can lose the load or tip forward; OSHA requires the load upgrade.",
+      "b": "Reverses the rule: an unloaded truck travels with forks pointed downgrade, while a loaded truck keeps the load upgrade.",
+      "d": "Turning on or traveling across a grade invites a lateral tipover; ramps are driven straight up and down."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Are always fine at speed"
+        "text": "Can be carried raised to clear racks"
       },
       {
         "id": "c",
-        "text": "Ignore capacity"
+        "text": "Allow full speed on wide aisles"
       },
       {
         "id": "d",
-        "text": "Need no mirrors"
+        "text": "Need only a mirror check"
       }
     ],
     "correctOptionId": "a",
     "explanation": "May need slower turns and spotters.",
     "distractorExplanations": {
-      "b": "Not the best answer: Are always fine at speed.",
-      "c": "Not the best answer: Ignore capacity.",
-      "d": "Not the best answer: Need no mirrors."
+      "b": "Raising a wide load moves the CG up and widens the swing; wide loads still travel low and slow.",
+      "c": "Aisle width does not offset a wide load's swing and visibility problems; speed stays reduced.",
+      "d": "Mirrors do not show a wide load's full swing; slower turns and a spotter are needed in tight areas."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Speed up"
+        "text": "Raise the load higher to shift weight back"
       },
       {
         "id": "b",
@@ -477,19 +477,19 @@
       },
       {
         "id": "c",
-        "text": "Raise higher"
+        "text": "Add a passenger on the counterweight for balance"
       },
       {
         "id": "d",
-        "text": "Turn sharper"
+        "text": "Tilt forward and drive slowly to the drop point"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Load may exceed capacity/CG issue—lower/reposition.",
     "distractorExplanations": {
-      "a": "Not the best answer: Speed up.",
-      "c": "Not the best answer: Raise higher.",
-      "d": "Not the best answer: Turn sharper."
+      "a": "Raising a load moves the CG up and forward, which lightens the rear axle further and moves toward a forward tip.",
+      "c": "Adding riders or extra counterweight is prohibited; the fix is to lower the load and reduce or reposition it.",
+      "d": "Forward tilt moves the CG further forward and increases the tip risk that a light rear end already signals."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore"
+        "text": "Use until the next PM"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Weld casually mid-shift"
+        "text": "Weld the crack and keep working"
       },
       {
         "id": "d",
-        "text": "Paint over"
+        "text": "Use it for lighter loads"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Remove from service.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore.",
-      "c": "Not the best answer: Weld casually mid-shift.",
-      "d": "Not the best answer: Paint over."
+      "a": "Cracked or bent forks are a defect found on the pre-shift exam; the truck is removed from service, not run until maintenance.",
+      "c": "Forks may be repaired only by the manufacturer or an equivalent expert; field welding destroys their heat treatment.",
+      "d": "A damaged fork is not derated; any crack or bent heel takes the truck out of service until replaced."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -572,23 +572,23 @@
       },
       {
         "id": "b",
-        "text": "OK if slow"
+        "text": "OK if fluid is topped up"
       },
       {
         "id": "c",
-        "text": "Wipe and ignore"
+        "text": "Log it later"
       },
       {
         "id": "d",
-        "text": "Normal"
+        "text": "Normal on older trucks"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Fix before use.",
     "distractorExplanations": {
-      "b": "Not the best answer: OK if slow.",
-      "c": "Not the best answer: Wipe and ignore.",
-      "d": "Not the best answer: Normal always."
+      "b": "Topping up hides the leak without fixing it; leaking hydraulics can drop the load and must be repaired first.",
+      "c": "Defects that affect safe operation are reported and fixed before the truck is used, not logged at a later time.",
+      "d": "Truck age does not make a hydraulic leak acceptable; any leak is a defect requiring repair before use."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -605,23 +605,23 @@
       },
       {
         "id": "b",
-        "text": "Never"
+        "text": "Check after a failure"
       },
       {
         "id": "c",
-        "text": "Only yearly if broken"
+        "text": "Lube only, no check"
       },
       {
         "id": "d",
-        "text": "Only after tipover"
+        "text": "Inspect yearly"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Inspect per OEM.",
     "distractorExplanations": {
-      "b": "Not the best answer: Never.",
-      "c": "Not the best answer: Only yearly if broken.",
-      "d": "Not the best answer: Only after tipover."
+      "b": "Lift chains and anchors are inspected proactively for wear and stretch; waiting for a failure risks a dropped load.",
+      "c": "Lubrication alone does not reveal elongation, cracked links, or worn anchors; chains are measured and inspected.",
+      "d": "A yearly-only check is too infrequent; chains are looked at on the pre-shift exam and measured on the OEM schedule."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -667,11 +667,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Remove"
+        "text": "Use outdoors only"
       },
       {
         "id": "b",
-        "text": "Tie back"
+        "text": "Optional at low speed"
       },
       {
         "id": "c",
@@ -679,15 +679,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore"
+        "text": "Skip on short trips"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Use as equipped.",
     "distractorExplanations": {
-      "a": "Not the best answer: Remove.",
-      "b": "Not the best answer: Tie back.",
-      "d": "Not the best answer: Ignore."
+      "a": "Restraint use is not limited to outdoor work; tipovers happen indoors too, so the belt is worn whenever equipped.",
+      "b": "Tipovers happen at low speed, especially in turns and on ramps; the restraint is worn whenever the truck has one.",
+      "d": "Trip length does not change the hazard; the operator wears the restraint whenever the truck is equipped with it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Operate without a capacity plate"
+        "text": "Operate at half the usual load"
       },
       {
         "id": "b",
-        "text": "Guess capacity"
+        "text": "Use the plate from a similar model"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "Use any plate"
+        "text": "Operate, but report it at shift end"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Do not operate until identified/rated.",
     "distractorExplanations": {
-      "a": "Not the best answer: Operate without a capacity plate.",
-      "b": "Not the best answer: Guess capacity.",
-      "d": "Not the best answer: Use any plate."
+      "a": "Guessing a reduced load does not replace the rated capacity; without a plate the truck stays out of service.",
+      "b": "Capacity is specific to the truck and its attachments; a plate from another model does not apply.",
+      "d": "OSHA requires legible capacity markings; a missing plate takes the truck out of service before use."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -733,15 +733,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore"
+        "text": "Is cosmetic until the tread is gone"
       },
       {
         "id": "b",
-        "text": "Fill with water"
+        "text": "Matters only on outdoor trucks"
       },
       {
         "id": "c",
-        "text": "Only aesthetics"
+        "text": "Can wait until the next PM"
       },
       {
         "id": "d",
@@ -751,9 +751,9 @@
     "correctOptionId": "d",
     "explanation": "Affects stability—correct/repair.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore.",
-      "b": "Not the best answer: Fill with water.",
-      "c": "Not the best answer: Only aesthetics."
+      "a": "Chunking and low pressure change the truck's footprint and lean, which reduces stability well before the tread is gone.",
+      "b": "Tire damage affects stability on any surface, indoor or outdoor; it is corrected before the truck is used.",
+      "c": "Tire defects found on the pre-shift exam are corrected before use, not deferred to scheduled maintenance."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -766,11 +766,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Spark near LP OK"
+        "text": "Checked only at monthly service"
       },
       {
         "id": "b",
-        "text": "Smoke near charge OK"
+        "text": "Tight enough if the truck starts"
       },
       {
         "id": "c",
@@ -778,15 +778,15 @@
       },
       {
         "id": "d",
-        "text": "Loose is fine"
+        "text": "Hissing is normal on LP tanks"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Secure, no damage, no odor issues.",
     "distractorExplanations": {
-      "a": "Not the best answer: Spark near LP OK.",
-      "b": "Not the best answer: Smoke near charge OK.",
-      "d": "Not the best answer: Loose is fine."
+      "a": "Battery cables and LP connections are part of the pre-shift exam, not a monthly-only maintenance item.",
+      "b": "A truck can start with damaged cables or a leaking LP fitting; connections are checked visually and by smell.",
+      "d": "Hissing at an LP fitting indicates a leak; close the valve, keep ignition away, and report it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional"
+        "text": "Can be removed for low-clearance areas"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Remove for height"
+        "text": "Is rated to stop any falling capacity load"
       },
       {
         "id": "d",
-        "text": "Weld decorations"
+        "text": "Is optional when using a load backrest"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Protects from falling objects—do not remove.",
     "distractorExplanations": {
-      "a": "Not the best answer: Optional.",
-      "c": "Not the best answer: Remove for height.",
-      "d": "Not the best answer: Weld decorations."
+      "a": "Removing the guard for clearance is prohibited; the guard is required and modifications need manufacturer approval.",
+      "c": "OSHA notes the overhead guard protects against small packages and boxes, not the impact of a falling capacity load.",
+      "d": "The load backrest is a separate device; it does not replace the overhead guard over the operator."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Empty OK"
+        "text": "Present, gauge not needed"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "Optional"
+        "text": "Kept in the break room"
       },
       {
         "id": "d",
-        "text": "Stored at home"
+        "text": "Checked once a year"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Present and charged.",
     "distractorExplanations": {
-      "a": "Not the best answer: Empty OK.",
-      "c": "Not the best answer: Optional always.",
-      "d": "Not the best answer: Stored at home."
+      "a": "A present extinguisher is useless if discharged; the gauge is checked to confirm it is charged.",
+      "c": "An extinguisher required on the truck must be mounted on the truck, accessible to the operator.",
+      "d": "Portable extinguishers get a monthly visual check plus annual maintenance; a yearly-only check is not enough."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,7 +865,7 @@
     "options": [
       {
         "id": "a",
-        "text": "After first tip"
+        "text": "After the first loaded lift of the shift"
       },
       {
         "id": "b",
@@ -873,19 +873,19 @@
       },
       {
         "id": "c",
-        "text": "Never"
+        "text": "At the end of each shift"
       },
       {
         "id": "d",
-        "text": "Only outdoors"
+        "text": "Weekly by maintenance"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Before moving into traffic aisles.",
     "distractorExplanations": {
-      "a": "Not the best answer: After first tip.",
-      "c": "Not the best answer: Never.",
-      "d": "Not the best answer: Only outdoors."
+      "a": "Steering and brakes are checked before the truck is put into service, not after it is already handling loads.",
+      "c": "The examination is done before the truck is placed in service each shift, not at the end.",
+      "d": "OSHA requires examination before each shift (daily); a weekly maintenance check does not meet that."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,7 +898,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Fully raised"
+        "text": "At eye level to see the racks"
       },
       {
         "id": "b",
@@ -906,19 +906,19 @@
       },
       {
         "id": "c",
-        "text": "Dragging"
+        "text": "About 12 to 18 inches"
       },
       {
         "id": "d",
-        "text": "At ceiling"
+        "text": "Resting on the floor"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Low, just enough clearance.",
     "distractorExplanations": {
-      "a": "Not the best answer: Fully raised.",
-      "c": "Not the best answer: Dragging.",
-      "d": "Not the best answer: At ceiling."
+      "a": "Raised forks move the CG up and invite tipping and overhead strikes; forks travel low with just enough clearance.",
+      "c": "Twelve to eighteen inches is too high; forks travel just high enough to clear the floor, typically a few inches.",
+      "d": "Dragging forks damages forks and floors and can catch on joints; forks travel with slight floor clearance."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,11 +931,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Disabled"
+        "text": "Muted on night shifts"
       },
       {
         "id": "b",
-        "text": "Optional to cut wires"
+        "text": "Optional indoors"
       },
       {
         "id": "c",
@@ -943,15 +943,15 @@
       },
       {
         "id": "d",
-        "text": "Only for cars"
+        "text": "Needed outdoors only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Function if equipped.",
     "distractorExplanations": {
-      "a": "Not the best answer: Disabled always.",
-      "b": "Not the best answer: Optional to cut wires.",
-      "d": "Not the best answer: Only for cars."
+      "a": "Night shifts often have less light and visibility; warning devices stay functional on every shift.",
+      "b": "Indoor areas are where pedestrians most often share aisles with trucks; equipped alarms must work there too.",
+      "d": "Travel alarms protect pedestrians in any setting; an equipped alarm must function indoors and outdoors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Hide"
+        "text": "Fix it yourself"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Operate anyway"
+        "text": "Report at shift end"
       },
       {
         "id": "d",
-        "text": "Reset by key cycle"
+        "text": "Restart to clear it"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Tag out unsafe truck.",
     "distractorExplanations": {
-      "a": "Not the best answer: Hide.",
-      "c": "Not the best answer: Operate anyway.",
-      "d": "Not the best answer: Reset by key cycle only."
+      "a": "Repairs are made only by authorized personnel; the operator's job is to report and tag the truck out of service.",
+      "c": "A truck found unsafe is taken out of service immediately, not run until the end of the shift.",
+      "d": "Cycling the key may clear a warning light, but it does not fix the defect; the truck is tagged out."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -997,7 +997,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No rights"
+        "text": "Yield to trucks"
       },
       {
         "id": "b",
@@ -1005,19 +1005,19 @@
       },
       {
         "id": "c",
-        "text": "Must jump"
+        "text": "Priority only in walkways"
       },
       {
         "id": "d",
-        "text": "Must run"
+        "text": "To clear for horns"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Right of way—yield.",
     "distractorExplanations": {
-      "a": "Not the best answer: No rights.",
-      "c": "Not the best answer: Must jump.",
-      "d": "Not the best answer: Must run."
+      "a": "Reverses the rule: the operator yields to pedestrians, who keep the right of way.",
+      "c": "Pedestrian right of way is not limited to marked walkways; operators yield to people anywhere in the facility.",
+      "d": "Sounding the horn warns people but does not transfer the right of way to the truck."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Never"
+        "text": "Only when backing up"
       },
       {
         "id": "b",
-        "text": "Only outdoors"
+        "text": "To ask pedestrians to clear the way"
       },
       {
         "id": "c",
-        "text": "Only if angry"
+        "text": "Long, open straight aisles"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "Blind corners/intersections.",
     "distractorExplanations": {
-      "a": "Not the best answer: Never.",
-      "b": "Not the best answer: Only outdoors.",
-      "c": "Not the best answer: Only if angry."
+      "a": "The horn is used at cross aisles, blind corners, and other places where vision is obstructed, not only in reverse.",
+      "b": "The horn is a warning, not a demand for right of way; pedestrians keep priority and the operator yields.",
+      "c": "Open aisles with clear sight lines are not where the horn rule targets; blind corners and intersections are."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,15 +1063,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Maximum"
+        "text": "The posted maximum"
       },
       {
         "id": "b",
-        "text": "Same as highway"
+        "text": "Fast when empty"
       },
       {
         "id": "c",
-        "text": "Uncontrolled"
+        "text": "Set by the governor"
       },
       {
         "id": "d",
@@ -1081,9 +1081,9 @@
     "correctOptionId": "d",
     "explanation": "Safe for conditions.",
     "distractorExplanations": {
-      "a": "Not the best answer: Maximum always.",
-      "b": "Not the best answer: Same as highway.",
-      "c": "Not the best answer: Uncontrolled."
+      "a": "The posted maximum is a ceiling; operators slow down further for floor, load, visibility, and traffic conditions.",
+      "b": "An empty truck is still unstable at speed and in turns; speed is set by conditions, not just load status.",
+      "c": "A speed governor caps top speed but does not make that speed safe for wet floors, turns, or crowded aisles."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "High for visibility of others behind load"
+        "text": "High for clearance"
       },
       {
         "id": "b",
-        "text": "Dragging"
+        "text": "Tilted forward"
       },
       {
         "id": "c",
-        "text": "Unsecured swinging"
+        "text": "Low, tilted forward"
       },
       {
         "id": "d",
-        "text": "Low and tilted back as appropriate"
+        "text": "Low and tilted back"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Low and tilted back as appropriate.",
+    "explanation": "Low and tilted back as appropriate. Adjust the tilt as appropriate for the load.",
     "distractorExplanations": {
-      "a": "Not the best answer: High for visibility of others behind load always.",
-      "b": "Not the best answer: Dragging.",
-      "c": "Not the best answer: Unsecured swinging."
+      "a": "Carrying a load high raises the CG and the tip risk; loads travel low with the mast tilted back.",
+      "b": "Forward tilt lets the load slide off and moves the CG forward; the mast is tilted back to cradle the load.",
+      "c": "Right height, wrong tilt: forward tilt lets the load slide and shifts CG forward; tilt back while traveling."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1129,15 +1129,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Guess"
+        "text": "Raise the load to see under it"
       },
       {
         "id": "b",
-        "text": "Raise higher"
+        "text": "Lean out to see past the load"
       },
       {
         "id": "c",
-        "text": "Speed through"
+        "text": "Drive forward slowly with horn"
       },
       {
         "id": "d",
@@ -1147,9 +1147,9 @@
     "correctOptionId": "d",
     "explanation": "Travel in reverse or use spotter.",
     "distractorExplanations": {
-      "a": "Not the best answer: Guess.",
-      "b": "Not the best answer: Raise higher.",
-      "c": "Not the best answer: Speed through."
+      "a": "Raising the load increases tip risk; OSHA requires traveling with the load trailing (in reverse) when it blocks the view.",
+      "b": "Leaning outside the running lines exposes the operator to crush injuries; travel in reverse or use a spotter.",
+      "c": "Slow speed and a horn do not restore vision; OSHA requires reversing with the load trailing or using a spotter."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1166,23 +1166,23 @@
       },
       {
         "id": "b",
-        "text": "Forks OK as seats"
+        "text": "Rider holds onto the overhead guard"
       },
       {
         "id": "c",
-        "text": "On mast"
+        "text": "Rider is on a pallet on forks"
       },
       {
         "id": "d",
-        "text": "On counterweight"
+        "text": "Supervisor approves the ride"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Truck designed with passenger seat.",
     "distractorExplanations": {
-      "b": "Not the best answer: Forks OK as seats.",
-      "c": "Not the best answer: On mast.",
-      "d": "Not the best answer: On counterweight."
+      "b": "Holding onto the guard is not a safe riding position; riders need a seat provided by the truck's design.",
+      "c": "Riding on forks or a pallet is prohibited; only a designed passenger position is a safe place to ride.",
+      "d": "Approval does not create a safe place to ride; OSHA requires a designed riding position, not permission."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1195,15 +1195,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave raised in aisle"
+        "text": "Lower forks, neutralize, leave key in for next user"
       },
       {
         "id": "b",
-        "text": "Block exit"
+        "text": "Forks raised slightly, brake set, engine idling"
       },
       {
         "id": "c",
-        "text": "Leave running unattended"
+        "text": "Neutralize, set brake, leave forks at travel height"
       },
       {
         "id": "d",
@@ -1213,9 +1213,9 @@
     "correctOptionId": "d",
     "explanation": "Lower forks, neutralize, set brake, chock if needed.",
     "distractorExplanations": {
-      "a": "Not the best answer: Leave raised in aisle.",
-      "b": "Not the best answer: Block exit.",
-      "c": "Not the best answer: Leave running unattended always."
+      "a": "An unattended truck has power shut off, and the key is removed so unauthorized people cannot start it.",
+      "b": "Forks are fully lowered and power shut off when a truck is left unattended; raised forks and idling engines are hazards.",
+      "c": "Forks are lowered fully to the floor when parking; travel height leaves a trip and strike hazard."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Nothing"
+        "text": "Only the lift height"
       },
       {
         "id": "b",
-        "text": "Only color"
+        "text": "Nothing if under 500 lb"
       },
       {
         "id": "c",
-        "text": "Only speedometers"
+        "text": "Speed limits, not rated capacity"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Capacity—use attachment ratings.",
     "distractorExplanations": {
-      "a": "Not the best answer: Nothing.",
-      "b": "Not the best answer: Only color.",
-      "c": "Not the best answer: Only speedometers."
+      "a": "An attachment adds weight and moves the load center forward, which reduces rated capacity, not just lift height.",
+      "b": "Any attachment changes capacity; the plate must be updated with the attachment rating regardless of its weight.",
+      "c": "Attachments change rated capacity and load center; the truck must be marked with the combined attachment rating."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1261,7 +1261,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore"
+        "text": "Cross at speed"
       },
       {
         "id": "b",
@@ -1269,19 +1269,19 @@
       },
       {
         "id": "c",
-        "text": "Speed over"
+        "text": "Cross at an angle"
       },
       {
         "id": "d",
-        "text": "Useful for training tips"
+        "text": "Mark later"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Avoid/clear.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore.",
-      "c": "Not the best answer: Speed over.",
-      "d": "Not the best answer: Useful for training tips."
+      "a": "Hitting holes or debris at speed can bounce the load off or tip the truck; avoid or clear them first.",
+      "c": "Angling across a hole drops one wheel at a time and tilts the truck sideways; holes are avoided or cleared.",
+      "d": "A floor hazard is avoided or cleared now; leaving it to mark later exposes other trucks to the same tip risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1294,15 +1294,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Angle fast"
+        "text": "Cross at speed"
       },
       {
         "id": "b",
-        "text": "Bounce"
+        "text": "Stop on the rails"
       },
       {
         "id": "c",
-        "text": "Ignore"
+        "text": "Cross with load raised"
       },
       {
         "id": "d",
@@ -1312,9 +1312,9 @@
     "correctOptionId": "d",
     "explanation": "Cross square/slow.",
     "distractorExplanations": {
-      "a": "Not the best answer: Angle fast.",
-      "b": "Not the best answer: Bounce.",
-      "c": "Not the best answer: Ignore."
+      "a": "Speed over rails bounces the truck and load and can cause loss of control; tracks are crossed slowly.",
+      "b": "Stopping on tracks risks a rail strike; OSHA also bars parking closer than 8 feet from the track center.",
+      "c": "A raised load makes the bump over rails a tip hazard; the load stays low and tilted back while crossing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1327,7 +1327,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Rush in"
+        "text": "Enter at an angle before the car is leveled"
       },
       {
         "id": "b",
@@ -1335,19 +1335,19 @@
       },
       {
         "id": "c",
-        "text": "Jump curb into cab"
+        "text": "Leave the power on so you can exit fast"
       },
       {
         "id": "d",
-        "text": "Block doors open with forks"
+        "text": "Use it if the truck fits, without checking capacity"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Verify capacity; center truck; controls neutralized.",
     "distractorExplanations": {
-      "a": "Not the best answer: Rush in.",
-      "c": "Not the best answer: Jump curb into cab.",
-      "d": "Not the best answer: Block doors open with forks."
+      "a": "Elevators are approached slowly and entered squarely only after the car is properly leveled.",
+      "c": "Once on the elevator, controls are neutralized, power is shut off, and brakes are set.",
+      "d": "Fitting inside does not mean the elevator can carry the truck, load, and operator; verify rated capacity first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Loose OK"
+        "text": "Any steel plate"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Any plywood"
+        "text": "Held by a coworker"
       },
       {
         "id": "d",
-        "text": "Optional"
+        "text": "Rated, not secured"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Secured and rated.",
     "distractorExplanations": {
-      "a": "Not the best answer: Loose OK.",
-      "c": "Not the best answer: Any plywood.",
-      "d": "Not the best answer: Optional."
+      "a": "Dock boards must be rated for the truck and load weight; an unrated steel plate can buckle under a loaded truck.",
+      "c": "A person cannot hold a dock plate in place; it must be secured by anchoring or devices that prevent slipping.",
+      "d": "A rated plate can still slide under a truck; dock boards must be both properly rated and secured."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Exit signs"
+        "text": "Dock door openings"
       },
       {
         "id": "b",
-        "text": "Mirrors"
+        "text": "Sprinkler lines"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Horn"
+        "text": "Rack crossbeams"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Elevated loads.",
     "distractorExplanations": {
-      "a": "Not the best answer: Exit signs.",
-      "b": "Not the best answer: Mirrors.",
-      "d": "Not the best answer: Horn."
+      "a": "Operators drive through dock door openings routinely after checking clearance; the rule bars passing under elevated loads.",
+      "b": "Overhead sprinkler lines are cleared by checking overhead clearance; OSHA's rule is no one under the elevated part of a truck.",
+      "d": "Rack beams are fixed structures cleared with proper mast height; the prohibition is passing under raised forks or loads."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,15 +1426,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Outside for visibility"
+        "text": "Cab, arm out to signal"
       },
       {
         "id": "b",
-        "text": "On forks"
+        "text": "Cab, leaning out to look back"
       },
       {
         "id": "c",
-        "text": "Standing on tires"
+        "text": "Seat, legs out for a quick exit"
       },
       {
         "id": "d",
@@ -1444,9 +1444,9 @@
     "correctOptionId": "d",
     "explanation": "Overhead guard envelope.",
     "distractorExplanations": {
-      "a": "Not the best answer: Outside for visibility.",
-      "b": "Not the best answer: On forks.",
-      "c": "Not the best answer: Standing on tires."
+      "a": "Arms and legs stay inside the running lines of the truck; an arm outside can be crushed against racks.",
+      "b": "Leaning outside the guard envelope exposes the head to crush hazards; turn your head inside the cab or use mirrors.",
+      "c": "Legs outside the running lines are crush-injury exposures, and in a tipover the operator stays in the seat."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1459,15 +1459,15 @@
     "options": [
       {
         "id": "a",
-        "text": "While eating on tank"
+        "text": "With the engine running to save time"
       },
       {
         "id": "b",
-        "text": "Near sparks OK"
+        "text": "Smoking OK if outdoors"
       },
       {
         "id": "c",
-        "text": "With jewelry dangling in cells carelessly"
+        "text": "With metal tools resting on cells"
       },
       {
         "id": "d",
@@ -1477,9 +1477,9 @@
     "correctOptionId": "d",
     "explanation": "Per procedure; no smoking; PPE.",
     "distractorExplanations": {
-      "a": "Not the best answer: While eating on tank.",
-      "b": "Not the best answer: Near sparks OK.",
-      "c": "Not the best answer: With jewelry dangling in cells carelessly."
+      "a": "Engines are shut off during refueling; a running engine is an ignition source near fuel vapor.",
+      "b": "Smoking is prohibited in refueling and battery-charging areas indoors or outdoors because of fuel vapor and hydrogen gas.",
+      "c": "Metal tools on battery tops can short the cells and cause arcing or explosion; keep them off the battery."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1492,15 +1492,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Hope"
+        "text": "Horns alone, without marked aisles"
       },
       {
         "id": "b",
-        "text": "Speed"
+        "text": "Hi-vis vests in place of marked lanes"
       },
       {
         "id": "c",
-        "text": "Darkness"
+        "text": "Shared lanes with no markings"
       },
       {
         "id": "d",
@@ -1510,9 +1510,9 @@
     "correctOptionId": "d",
     "explanation": "Aisles, mirrors, rules, horns.",
     "distractorExplanations": {
-      "a": "Not the best answer: Hope.",
-      "b": "Not the best answer: Speed.",
-      "c": "Not the best answer: Darkness only."
+      "a": "A horn warns but does not separate traffic; separation relies on layout, marked aisles, mirrors, and rules together.",
+      "b": "Hi-vis improves visibility but does not separate people from trucks; marked aisles and rules do that.",
+      "c": "Unmarked shared lanes mix people and trucks; marked aisles and traffic rules are the separating controls."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1591,11 +1591,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Behind blind spots silently"
+        "text": "Walking behind the truck to guide it"
       },
       {
         "id": "b",
-        "text": "On the load"
+        "text": "Riding on the truck to guide"
       },
       {
         "id": "c",
@@ -1603,15 +1603,15 @@
       },
       {
         "id": "d",
-        "text": "On the mast"
+        "text": "Calling out by voice only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Visible and using agreed signals.",
     "distractorExplanations": {
-      "a": "Not the best answer: Behind blind spots silently.",
-      "b": "Not the best answer: On the load.",
-      "d": "Not the best answer: On the mast."
+      "a": "A spotter behind the truck is in the blind spot and the path of travel; spotters stay where the operator can see them.",
+      "b": "Riding on the truck is prohibited unless a designed seat exists; spotters work on foot, in view.",
+      "d": "Voice can be lost in warehouse noise; spotters use agreed hand signals and stay visible to the operator."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1624,11 +1624,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Required"
+        "text": "Fine at low speed"
       },
       {
         "id": "b",
-        "text": "Safer"
+        "text": "Allowed for texts only"
       },
       {
         "id": "c",
@@ -1636,15 +1636,15 @@
       },
       {
         "id": "d",
-        "text": "OSHA preferred"
+        "text": "Allowed with a spotter"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Prohibited/distracting.",
     "distractorExplanations": {
-      "a": "Not the best answer: Required.",
-      "b": "Not the best answer: Safer.",
-      "d": "Not the best answer: OSHA preferred."
+      "a": "Distraction causes collisions at any speed; phone use while driving a forklift is prohibited by site policy.",
+      "b": "Texting is the most distracting phone use, taking eyes off the path; it is not a permitted exception.",
+      "d": "A spotter does not cancel operator distraction; the operator still must not use a phone while driving."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal"
+        "text": "Fine if they hurry"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Required training"
+        "text": "OK with hard hats"
       },
       {
         "id": "d",
-        "text": "Efficient"
+        "text": "OK if forks are empty"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Forbidden hazard.",
     "distractorExplanations": {
-      "a": "Not the best answer: Normal.",
-      "c": "Not the best answer: Required training.",
-      "d": "Not the best answer: Efficient."
+      "a": "Speed does not make passing under elevated forks safe; OSHA bars anyone from standing or passing beneath them.",
+      "c": "Hard hats do not protect against a falling load or forks; no one passes under the elevated portion of a truck.",
+      "d": "The OSHA prohibition covers the elevated portion of the truck whether loaded or empty; forks can drop."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace all awareness"
+        "text": "Replace a shoulder check"
       },
       {
         "id": "b",
-        "text": "Are illegal"
+        "text": "Remove the need to slow at blind spots"
       },
       {
         "id": "c",
-        "text": "Are optional"
+        "text": "Replace the horn at corners"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "Do not replace looking/horn/slowing.",
     "distractorExplanations": {
-      "a": "Not the best answer: Replace all awareness.",
-      "b": "Not the best answer: Are illegal.",
-      "c": "Not the best answer: Are optional always."
+      "a": "Convex mirrors distort distance and have blind zones; operators still look directly before moving.",
+      "b": "Mirrors give a partial view at corners; operators still slow down and sound the horn at blind spots.",
+      "c": "A mirror shows the operator traffic but does not warn pedestrians; the horn is still used at blind corners."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Higher speed"
+        "text": "Faster work to clear the area"
       },
       {
         "id": "b",
-        "text": "No horn"
+        "text": "Horn use in place of slowing"
       },
       {
         "id": "c",
-        "text": "Closed eyes"
+        "text": "Fewer spotters to cut clutter"
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Extra caution and communication.",
     "distractorExplanations": {
-      "a": "Not the best answer: Higher speed.",
-      "b": "Not the best answer: No horn.",
-      "c": "Not the best answer: Closed eyes."
+      "a": "Speeding up in a congested dock increases collision risk; congestion calls for slower travel and communication.",
+      "b": "The horn warns but does not reduce stopping distance; congested docks need both slowing and communication.",
+      "c": "Congested docks are where spotters help most; removing them reduces communication between trucks and people."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1756,11 +1756,11 @@
     "options": [
       {
         "id": "a",
-        "text": "OK unescorted"
+        "text": "A safety briefing, then free access"
       },
       {
         "id": "b",
-        "text": "Should ride forks"
+        "text": "Hi-vis vests, no escort"
       },
       {
         "id": "c",
@@ -1768,15 +1768,15 @@
       },
       {
         "id": "d",
-        "text": "Should direct traffic"
+        "text": "Access while trucks slow down"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Strict control/escorts.",
     "distractorExplanations": {
-      "a": "Not the best answer: OK unescorted.",
-      "b": "Not the best answer: Should ride forks.",
-      "d": "Not the best answer: Should direct traffic."
+      "a": "A briefing alone does not protect untrained visitors near moving trucks; access is controlled and escorted.",
+      "b": "Vests make visitors visible but do not keep them out of truck paths; escorts and strict control are required.",
+      "d": "Slowing trucks does not make unescorted visitor access safe; visitors are controlled and escorted."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,15 +1855,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Park on them"
+        "text": "Use as temporary pallet staging"
       },
       {
         "id": "b",
-        "text": "Store pallets on them"
+        "text": "Drive along them whenever the aisles are full"
       },
       {
         "id": "c",
-        "text": "Ignore"
+        "text": "Park on them for short stops"
       },
       {
         "id": "d",
@@ -1873,9 +1873,9 @@
     "correctOptionId": "d",
     "explanation": "Keep clear of storage/trucks when required.",
     "distractorExplanations": {
-      "a": "Not the best answer: Park on them.",
-      "b": "Not the best answer: Store pallets on them.",
-      "c": "Not the best answer: Ignore."
+      "a": "Staging pallets on walkways forces pedestrians into truck aisles; marked walkways are kept clear.",
+      "b": "Full aisles do not open walkways to truck travel; marked pedestrian routes stay clear of trucks.",
+      "c": "Even a short stop on a walkway blocks pedestrians and pushes them into traffic; park in designated areas."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1888,11 +1888,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Lights off for stealth"
+        "text": "Dim the lights to reduce glare"
       },
       {
         "id": "b",
-        "text": "Faster OK"
+        "text": "Drive faster since aisles are quieter"
       },
       {
         "id": "c",
@@ -1900,15 +1900,15 @@
       },
       {
         "id": "d",
-        "text": "No rules"
+        "text": "Skip pre-shift checks if done by day crew"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Ensure lighting and high-vis as required.",
     "distractorExplanations": {
-      "a": "Not the best answer: Lights off for stealth.",
-      "b": "Not the best answer: Faster OK.",
-      "d": "Not the best answer: No rules."
+      "a": "Reduced lighting increases collision risk; OSHA requires auxiliary lighting where general light is too low.",
+      "b": "Quieter aisles do not offset reduced visibility and fatigue at night; speed stays matched to conditions.",
+      "d": "The truck is examined before each shift it is placed in service; a day-crew check does not cover the night shift."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1921,15 +1921,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Hide"
+        "text": "Report only if someone was hurt"
       },
       {
         "id": "b",
-        "text": "Blame"
+        "text": "Fix it yourself without reporting"
       },
       {
         "id": "c",
-        "text": "Speed more"
+        "text": "Blame the pedestrian and move on"
       },
       {
         "id": "d",
@@ -1939,9 +1939,9 @@
     "correctOptionId": "d",
     "explanation": "Report and fix layout/behavior.",
     "distractorExplanations": {
-      "a": "Not the best answer: Hide.",
-      "b": "Not the best answer: Blame only.",
-      "c": "Not the best answer: Speed more."
+      "a": "Near misses are reported so the hazard is fixed before an injury; waiting for an injury defeats the purpose.",
+      "b": "Unreported near misses hide layout and training problems from the employer; report so the root cause is fixed.",
+      "c": "Blame does not fix layout or behavior; a near miss is reported and investigated for root causes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1954,7 +1954,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Trucks always dominate"
+        "text": "Pedestrians bear responsibility because they can stop faster"
       },
       {
         "id": "b",
@@ -1962,19 +1962,19 @@
       },
       {
         "id": "c",
-        "text": "Pedestrians always wrong"
+        "text": "Operators bear the duty, so walkers need no training"
       },
       {
         "id": "d",
-        "text": "No training"
+        "text": "Supervisors bear responsibility, not operators or walkers"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Trucks and people share responsibility for awareness.",
     "distractorExplanations": {
-      "a": "Not the best answer: Trucks always dominate.",
-      "c": "Not the best answer: Pedestrians always wrong.",
-      "d": "Not the best answer: No training."
+      "a": "Operators must yield to pedestrians; safety culture puts awareness duties on both, not on walkers alone.",
+      "c": "Pedestrians also need training on truck blind spots and walkways; awareness is a shared responsibility.",
+      "d": "Supervisors set rules, but operators and pedestrians each keep a duty of awareness on the floor."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

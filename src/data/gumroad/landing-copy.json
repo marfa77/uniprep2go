@@ -3962,21 +3962,21 @@
     "whoFor": "Level II candidates who passed Level I and need valuation, FSA and fixed income formulas on instant recall for vignettes, plus retakers who knew the concepts but ran out of time. Best used daily alongside the curriculum, not instead of it.",
     "whyThis": [
       "Vignette-depth worked cases: FCFE = CFO − FCInv + net borrowing, with the note that the after-tax interest add-back belongs only in FCFF.",
-      "220 typeset formulas: residual income, justified P/E, Treynor and information ratios, binomial trees, Greeks, CET1 and other bank capital ratios, regression diagnostics.",
+      "359 typeset formulas: residual income, justified P/E, information ratio, binomial trees, Greeks, CET1 and other bank capital ratios, regression diagnostics.",
       "Level II-only readings, not a Level I copy: mosaic theory and soft dollars, M&A accretion/dilution, REIT NAV and AFFO, private company discounts, LASSO and k-means, Basel bank metrics.",
       "Traps on the worked notes, e.g. serial correlation understates standard errors and inflates t-stats; a Durbin-Watson near 2 means none.",
       "$39 once for an .apkg you keep. Works offline in Anki desktop, AnkiMobile and AnkiDroid; no subscription, no login."
     ],
     "inside": [
-      "495 front/back Anki notes in one deck. 185 are full notes (answer, typeset formula, worked example, common mistake) on core quant, FSA, fixed income, derivatives and valuation tools.",
-      "310 notes target Level II-specific readings. Most are compact one-line recall prompts; 35 add a formula and 64 a worked case (all 3 gallery samples come from these).",
-      "Topic split: Quant 63 · Economics 22 · FSA 66 · Corporate Issuers 40 · Equity Valuation 66 · Fixed Income 62 · Derivatives 38 · Alternatives 36 · Portfolio Management 62 · Ethics 40.",
-      "About half the deck (249 notes) has a worked numeric example; formulas render in MathJax on desktop and mobile.",
+      "495 front/back Anki notes in one deck, each a scenario-style question with an answer, a worked example and the common mistake candidates make.",
+      "359 notes also carry a typeset formula; the rest are concept and judgment cards (ethics cases, accounting choices, model selection) where a formula would not help.",
+      "Topic split, mapped to the 2026 Level II learning modules: Quant 48 · Economics 25 · FSA 66 · Corporate Issuers 40 · Equity Valuation 66 · Fixed Income 62 · Derivatives 38 · Alternatives 36 · Portfolio Management 62 · Ethics 52.",
+      "Every note has a worked example (numeric where the reading is quantitative); formulas render in MathJax on desktop and mobile, and wide formulas scroll sideways on a phone.",
       "Not included: no item sets or vignette questions, no video, no curriculum text. Practice vignettes with the CFA Institute question bank and our free mock."
     ],
-    "samplesNote": "Swipe the gallery above for 3 real cards from this deck: FCFE from CFO with net borrowing, effective duration of a callable bond off a binomial tree, and inventory remeasurement under the temporal method.",
+    "samplesNote": "Swipe the gallery above for 3 real cards from this deck: valuing a bond on a binomial interest-rate tree, stacking DLOC and DLOM for a private-company minority stake, and standardized unexpected earnings (SUE) as a momentum signal.",
     "studyPlan": [
-      "Take the free CFA Level 2 readiness check (60 vignette-style questions, 90 minutes) and rank your topics by score.",
+      "Take the free CFA Level 2 readiness check (60 mini-vignette questions, 120 minutes) and rank your topics by score.",
       "Start with FSA, Equity Valuation and Fixed Income, each 10-15% of the exam; 30 new cards a day covers the deck in under three weeks.",
       "On each formula note, write the formula from memory first, then check the worked example on your calculator.",
       "Drill a reading's short-answer notes right after you finish it in the curriculum, while the context is fresh.",
@@ -3985,7 +3985,7 @@
     "faqs": [
       {
         "q": "What does the CFA Level 2 deck cover, and what does it not?",
-        "a": "495 cards across all 10 Level II topics: 185 full formula-and-example notes and 310 shorter notes on Level II-specific readings. About half have a worked example. It is not a vignette bank or a curriculum replacement: use it with the curriculum and CFA Institute practice item sets."
+        "a": "495 cards across all 10 Level II topics, each with a worked example and a common mistake; 359 also carry a typeset formula. It is not a vignette bank or a curriculum replacement: use it with the curriculum and CFA Institute practice item sets."
       },
       {
         "q": "What is the CFA Level 2 exam format?",
@@ -3997,11 +3997,11 @@
       },
       {
         "q": "Is there a free CFA Level 2 practice test?",
-        "a": "Yes. The UniPrep2Go CFA Level 2 readiness check is free and timed: 60 vignette-style questions in 90 minutes across the Level II topic weights, with a score per topic. Its questions are separate from these cards: uniprep2go.study/mock-exams/cfa-level-2-readiness-check"
+        "a": "Yes. The UniPrep2Go CFA Level 2 readiness check is free and timed: 60 mini-vignette questions in 120 minutes, six per topic across all ten Level II topics, with a score per topic. Its questions are separate from these cards: uniprep2go.study/mock-exams/cfa-level-2-readiness-check"
       },
       {
         "q": "How is this different from the CFA Level 1 deck?",
-        "a": "The 185 full notes rebuild core tools (regression, duration, options, CAPM, ratios) at Level II depth; the 310 others cover Level II readings such as FCFF/FCFE and residual income, intercorporate and multinational FSA, pensions, bank capital, M&A, REITs and ethics cases."
+        "a": "Level I cards ask you to recall a definition or formula; these ask you to apply one inside a short case, as a vignette does. They cover Level II readings such as FCFF/FCFE and residual income, intercorporate and multinational FSA, pensions, bank capital, M&A, REITs, machine learning and ethics cases."
       },
       {
         "q": "How do I import the deck into Anki?",

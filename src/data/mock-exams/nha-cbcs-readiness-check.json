@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Always use three-character category codes"
+        "text": "Use the three-character category code whenever the diagnosis is confirmed"
       },
       {
         "id": "c",
-        "text": "Round all diagnoses to the nearest body system"
+        "text": "Use the unspecified code so later documentation changes need no claim edits"
       },
       {
         "id": "d",
-        "text": "Code symptoms instead of confirmed diagnoses whenever possible"
+        "text": "Code the integral symptoms along with the confirmed diagnosis"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ICD-10-CM guidelines require coding to the highest specificity supported by the record; truncating without reason can cause denials.",
     "distractorExplanations": {
-      "b": "Three-character codes are used only when no further subdivision exists.",
-      "c": "Body-system rounding is not a coding rule.",
-      "d": "When a definitive diagnosis is documented, code it rather than symptoms alone."
+      "b": "Confuses categories with billable codes: a three-character category is reported only when it has no further subdivision.",
+      "c": "Unspecified codes are for when documentation lacks detail, not a convenience default when specific detail is documented.",
+      "d": "Signs and symptoms routinely associated with a confirmed diagnosis are integral to it and are not coded separately."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always assign the pneumonia code as primary"
+        "text": "Code pneumonia as if confirmed, applying the inpatient uncertain-diagnosis rule to the outpatient visit"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Assign Z00.00 for every rule-out visit"
+        "text": "Assign R69 (illness, unspecified) for the rule-out and hold the claim until the provider confirms"
       },
       {
         "id": "d",
-        "text": "Omit all diagnosis codes until culture returns"
+        "text": "Code pneumonia with Z03.89 to show the condition was suspected and then ruled out at the visit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Outpatient guidelines: do not code uncertain diagnoses as if established; code the documented symptoms/findings instead.",
     "distractorExplanations": {
-      "a": "Coding unconfirmed conditions as established is incorrect outpatient practice.",
-      "c": "Z00.00 is for general adult exams without abnormal findings, not every rule-out.",
-      "d": "Claims still need reportable diagnoses based on available documentation."
+      "a": "Applies the inpatient rule that allows coding uncertain diagnoses as confirmed; outpatient guidelines prohibit coding 'rule out' as established.",
+      "c": "R69 is for an unspecified illness with no documented findings; the documented signs/symptoms should be coded instead.",
+      "d": "Z03.89 is for observation when a suspected condition is ruled out; pneumonia itself still cannot be coded while it is only a 'rule out'."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the number of bullets historically used in 1995 exam checklists"
+        "text": "The count of history and exam elements documented under the 1995 and 1997 documentation guidelines"
       },
       {
         "id": "b",
-        "text": "The patient’s preference for a higher level"
+        "text": "The total time including clinical staff time and separately billed tests done on other dates"
       },
       {
         "id": "c",
-        "text": "The charge master price alone"
+        "text": "The number of chronic conditions on the problem list, even those not addressed at the visit"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Office/outpatient E/M levels are selected by MDM or total time; outdated bullet counting is not the current standard.",
     "distractorExplanations": {
-      "a": "1995/1997 bullet systems are no longer the primary office E/M method.",
-      "b": "Patient preference does not set CPT level.",
-      "c": "Price is not a coding criterion."
+      "a": "History/exam element counting was retired for office/outpatient E/M in 2021; levels now use MDM or total time.",
+      "b": "Total time counts only the physician/QHP's own time on the encounter date and excludes clinical staff time and separately reported services.",
+      "c": "MDM counts the problems addressed at the encounter, not every entry on the problem list."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -143,15 +143,15 @@
       },
       {
         "id": "b",
-        "text": "modifier 59"
+        "text": "Modifier 59"
       },
       {
         "id": "c",
-        "text": "modifier 26"
+        "text": "Modifier 26"
       },
       {
         "id": "d",
-        "text": "modifier 51"
+        "text": "Modifier 51"
       }
     ],
     "correctOptionId": "a",
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "They replace ICD-10-CM for all diagnoses"
+        "text": "They report diagnoses on durable medical equipment claims instead of ICD-10-CM"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "They are only used for inpatient DRG grouping"
+        "text": "They are used mainly to report inpatient hospital procedures for DRG assignment"
       },
       {
         "id": "d",
-        "text": "They are identical to CPT Category III codes"
+        "text": "They are the CPT Category III codes for emerging technology"
       }
     ],
     "correctOptionId": "b",
     "explanation": "HCPCS Level II covers many non-CPT items (DME, drugs, some services) for billing. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference.",
     "distractorExplanations": {
-      "a": "Diagnoses remain ICD-10-CM/PCS as applicable.",
-      "c": "DRGs use ICD diagnosis/procedure grouping, not HCPCS alone.",
-      "d": "Category III CPT codes are temporary CPT tracking codes, not HCPCS II."
+      "a": "HCPCS Level II codes describe items and services; diagnoses on DME claims are still reported with ICD-10-CM.",
+      "c": "Inpatient hospital procedures are coded in ICD-10-PCS for DRG grouping, not with HCPCS Level II.",
+      "d": "Category III codes are temporary CPT codes maintained by the AMA; HCPCS Level II is a separate CMS alphanumeric code set."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Sequence whichever diagnosis has the highest reimbursement"
+        "text": "The highest-paying diagnosis on the claim"
       },
       {
         "id": "b",
-        "text": "List every symptom before the confirmed condition regardless of guidelines"
+        "text": "The first condition the patient mentions at check-in"
       },
       {
         "id": "c",
-        "text": "The main reason for the encounter/admission as defined by official guidelines"
+        "text": "The main reason for the encounter/admission"
       },
       {
         "id": "d",
-        "text": "Choose the diagnosis alphabetically from the code book"
+        "text": "The most serious chronic condition on the problem list"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Official sequencing rules prioritize the condition chiefly responsible for the visit/admission, not payment maximization.",
+    "explanation": "Official sequencing rules prioritize the condition chiefly responsible for the visit/admission, not payment maximization. Sequencing follows the definitions in the official guidelines.",
     "distractorExplanations": {
-      "a": "“Sequence whichever diagnosis has the highest reimbursement” is incorrect because official sequencing rules prioritize the condition chiefly responsible for the visit/admission, not payment maximization.",
-      "b": "“List every symptom before the confirmed condition regardless of guidelines” is incorrect because official sequencing rules prioritize the condition chiefly responsible for the visit/admission, not payment maximization.",
-      "d": "“Choose the diagnosis alphabetically from the code book” is incorrect because official sequencing rules prioritize the condition chiefly responsible for the visit/admission, not payment maximization."
+      "a": "Reimbursement never determines sequencing; official guidelines define the first-listed diagnosis by the reason for the encounter.",
+      "b": "The order of complaints at check-in is not determinative; the condition chiefly responsible for the visit is sequenced first.",
+      "d": "Chronic conditions are coded as secondary when they affect care; severity alone does not make one the first-listed diagnosis."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always default to bilateral for any paired organ"
+        "text": "Assign bilateral codes for any paired organ when the side is not documented"
       },
       {
         "id": "b",
-        "text": "Ignore side because payers do not care"
+        "text": "Report separate right and left codes even when a bilateral code is available"
       },
       {
         "id": "c",
-        "text": "Use only unspecified laterality to avoid audits"
+        "text": "Take the side from the patient’s intake questionnaire when the provider leaves it out"
       },
       {
         "id": "d",
-        "text": "Select right, left, bilateral, or unspecified codes when the classification provides them and documentation supports them"
+        "text": "Select right, left, bilateral, or unspecified codes when documentation supports them"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "When laterality is available and documented, use the specific side; unspecified is used only when documentation lacks detail.",
+    "explanation": "When laterality is available and documented, use the specific side; unspecified is used only when documentation lacks detail. Laterality codes are used when the classification provides them.",
     "distractorExplanations": {
-      "a": "Bilateral is not a default without documentation.",
-      "b": "Payers and guidelines expect accurate laterality.",
-      "c": "Defaulting to unspecified when detail exists is incorrect."
+      "a": "When the side is not documented the unspecified-side code applies; bilateral is used only when both sides are documented.",
+      "b": "When the classification provides a bilateral code it is used; separate right and left codes are only for categories without one.",
+      "c": "Laterality may come from clinician documentation, but a patient-completed intake form is not provider documentation for code assignment."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Automatic upgrade to a higher paying code"
+        "text": "Payment at a reduced rate until the missing diagnosis is added on the next claim cycle"
       },
       {
         "id": "c",
-        "text": "Conversion of CPT to ICD-10-PCS by the payer"
+        "text": "Rejection by the payer as a duplicate claim for the same date of service"
       },
       {
         "id": "d",
-        "text": "Immediate fraud conviction without review"
+        "text": "Immediate referral of the claim to the OIG for a fraud investigation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Procedure–diagnosis linkage and medical necessity are core claim requirements; mismatches commonly cause denials.",
     "distractorExplanations": {
-      "b": "Payers do not upgrade codes for missing necessity.",
-      "c": "Code set conversion is not how necessity denials work.",
-      "d": "Denial/review precedes any legal action; do not overstate."
+      "b": "Payers do not partially pay pending a diagnosis; an unsupported procedure line is denied or pended for records.",
+      "c": "Duplicate denials apply when an identical claim was already processed, not when the diagnosis linkage is missing.",
+      "d": "A single unsupported line triggers a payer edit or records request, not an immediate OIG fraud referral."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Replacing all Evaluation and Management codes"
+        "text": "Temporary codes for emerging technology"
       },
       {
         "id": "b",
-        "text": "Performance measurement / quality tracking, not typically for payment of the service itself"
+        "text": "Performance measurement / quality tracking"
       },
       {
         "id": "c",
-        "text": "Reporting inpatient operating room procedures"
+        "text": "Reporting add-on surgical procedures"
       },
       {
         "id": "d",
-        "text": "Identifying ambulance mileage"
+        "text": "Reporting vaccine and immune globulin products"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Category II codes support quality/performance reporting and are supplemental. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference.",
+    "explanation": "Category II codes support quality/performance reporting and are supplemental. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference. They are supplemental and not typically paid for the service itself.",
     "distractorExplanations": {
-      "a": "E/M remains Category I.",
-      "c": "OR procedures use Category I / ICD-10-PCS as applicable.",
-      "d": "Ambulance mileage uses HCPCS, not Category II broadly."
+      "a": "Temporary codes for emerging technology and procedures are CPT Category III, not Category II.",
+      "c": "Add-on procedures are Category I codes marked with the + symbol and are reported with a primary procedure.",
+      "d": "Vaccine and immune globulin products are reported with Category I codes in the 90281–90759 range."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "It must always be billed twice"
+        "text": "It must be reported with modifier 51 whenever any other procedure is performed that day"
       },
       {
         "id": "b",
-        "text": "It can never be reported under any circumstance"
+        "text": "It must be billed as an add-on code to the primary procedure in the same session"
       },
       {
         "id": "c",
-        "text": "It is usually not reported when performed with a related, more comprehensive procedure in the same area"
+        "text": "It is usually not reported when performed with a related, more comprehensive procedure"
       },
       {
         "id": "d",
-        "text": "It is only for Medicare Advantage plans"
+        "text": "It is a standalone code that is paid in addition to any related procedure"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "“Separate procedure” designation signals limited separate reporting when a larger related service is performed.",
+    "explanation": "“Separate procedure” designation signals limited separate reporting when a larger related service is performed. This applies to related procedures in the same anatomic area.",
     "distractorExplanations": {
-      "a": "Double billing is not appropriate.",
-      "b": "It may be reportable when truly independent/unrelated per rules.",
-      "d": "The concept is CPT-wide, not plan-specific."
+      "a": "Modifier 51 marks multiple procedures; the 'separate procedure' label means it is usually bundled into a related comprehensive procedure.",
+      "b": "Add-on (+) codes are reported with a primary procedure; a separate procedure is usually not reported with its related comprehensive procedure.",
+      "d": "Misreads 'separate' as separately payable; the code is usually bundled when a related, more comprehensive procedure is performed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The codes must always be billed as a pair"
+        "text": "The excluded condition is not part of this code, but both may be coded if present"
       },
       {
         "id": "b",
-        "text": "The note can be ignored if the charge is high"
+        "text": "The excluded condition must be coded first, followed by the manifestation code"
       },
       {
         "id": "c",
-        "text": "Only HCPCS is affected"
+        "text": "The two conditions require an additional code to show the full picture"
       },
       {
         "id": "d",
-        "text": "The two conditions should not be coded together (mutually exclusive) when the note applies"
+        "text": "The two conditions should not be coded together (mutually exclusive)"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Excludes1 means not coded together (with limited exceptions noted in guidelines); Excludes2 means not included here but both may be coded if present.",
     "distractorExplanations": {
-      "a": "Excludes1 is not a pairing requirement.",
-      "b": "Guidelines cannot be ignored for payment.",
-      "c": "Excludes notes are ICD-10-CM concepts."
+      "a": "That is the definition of an Excludes2 note, which allows both codes when both conditions are present.",
+      "b": "Confuses Excludes1 with the 'code first' etiology/manifestation convention, which governs sequencing.",
+      "c": "That describes a 'use additional code' instructional note, not the mutually exclusive Excludes1 note."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The procedure and typical related preoperative/postoperative care within the global period, as defined by payer rules"
+        "text": "The procedure and typical related preoperative/postoperative care within the global period"
       },
       {
         "id": "b",
-        "text": "All unrelated E/M visits"
+        "text": "The procedure plus any E/M visits during the global period, including visits for unrelated problems"
       },
       {
         "id": "c",
-        "text": "Only the anesthesia professional fee"
+        "text": "The procedure and the anesthesiologist’s separate professional anesthesia service"
       },
       {
         "id": "d",
-        "text": "Hospital room and board charges coded as CPT"
+        "text": "The procedure plus treatment of complications requiring a return to the OR"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Global periods bundle routine related pre/post care with the surgery; unrelated services may be separately reportable with modifiers when rules allow.",
+    "explanation": "Global periods bundle routine related pre/post care with the surgery; unrelated services may be separately reportable with modifiers when rules allow. Global package contents follow payer rules.",
     "distractorExplanations": {
-      "b": "Unrelated care is not endlessly bundled.",
-      "c": "Anesthesia is often billed separately by anesthesia providers.",
-      "d": "Facility charges are not the same as CPT surgeon global package."
+      "b": "Unrelated E/M services during the global period are separately reportable with modifier 24 (or 25 on the same day).",
+      "c": "Anesthesia by a separate anesthesia provider is billed separately; only local or topical anesthesia by the surgeon is in the package.",
+      "d": "Under Medicare rules a return to the OR for complications is reported separately with modifier 78, not included in the package."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -436,27 +436,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always pick the code that reimburses more"
+        "text": "Code from the progress note because it was written most recently"
       },
       {
         "id": "b",
-        "text": "Query the provider for clarification before final coding when the conflict affects code selection"
+        "text": "Query the provider for clarification before final coding"
       },
       {
         "id": "c",
-        "text": "Delete the operative report from the record"
+        "text": "Ask the attending nurse to amend the progress note to match"
       },
       {
         "id": "d",
-        "text": "Code both conflicting diagnoses as primary"
+        "text": "Assign unspecified codes for both conflicting diagnoses"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Compliant coding requires resolving conflicts via query/clarification rather than guessing for revenue. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference.",
+    "explanation": "Compliant coding requires resolving conflicts via query/clarification rather than guessing for revenue. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference. A query is needed when the conflict affects code selection.",
     "distractorExplanations": {
-      "a": "Payment-driven selection is abusive.",
-      "c": "Altering records improperly is prohibited.",
-      "d": "Two primaries from a conflict is not the fix."
+      "a": "Recency of a note does not resolve a documentation conflict; the coder queries the provider when the conflict affects code selection.",
+      "c": "Only the documenting provider can clarify or amend their own entry; asking a nurse to alter it is improper.",
+      "d": "Unspecified codes are for missing detail, not for resolving conflicting documentation that a provider query should clarify."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "They are never allowed on any claim"
+        "text": "They may be reported as secondary codes but not as the first-listed diagnosis"
       },
       {
         "id": "b",
-        "text": "They replace CPT for procedures"
+        "text": "They describe external causes of injury such as falls and transport accidents"
       },
       {
         "id": "c",
-        "text": "They may be used as primary or secondary per guideline when they describe the reason for the encounter"
+        "text": "They may be used as primary or secondary when they describe the reason for the encounter"
       },
       {
         "id": "d",
-        "text": "They are only for dental claims"
+        "text": "They report patient status codes only on inpatient claims and are not used on office claims"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Z codes report encounters for circumstances other than disease/injury and can be first-listed when appropriate (e.g., aftercare, screening).",
     "distractorExplanations": {
-      "a": "Z codes are widely used when guidelines support them.",
-      "b": "Procedures remain CPT/HCPCS/PCS.",
-      "d": "Z codes are not dental-only."
+      "a": "Many Z codes (aftercare, screening, routine exams) may be first-listed when they are the reason for the encounter.",
+      "b": "External causes such as falls and transport accidents are coded with V00–Y99, not Z codes.",
+      "d": "Z codes are used in all settings and are especially common on outpatient and office claims."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Any claim submitted twice in one day"
+        "text": "A claim that has been paid in full on first submission with no patient balance"
       },
       {
         "id": "b",
-        "text": "A complete, accurate claim that can be processed without needing additional information for basic adjudication"
+        "text": "A complete, accurate claim that can be processed without needing additional information"
       },
       {
         "id": "c",
-        "text": "A claim missing diagnosis codes on purpose"
+        "text": "A claim submitted electronically within the timely filing limit for that payer"
       },
       {
         "id": "d",
-        "text": "A claim sent only by fax"
+        "text": "A claim that lists every diagnosis in the medical record, whether or not it was treated"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Clean claims reduce delays; they include required data elements and pass initial edits. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
-      "a": "Duplicate submission is not “clean.”.",
-      "c": "Missing required data creates unclean claims.",
-      "d": "Submission method alone does not define cleanliness."
+      "a": "'Clean' describes processing readiness, not the payment outcome; a clean claim can still leave a patient balance.",
+      "c": "Electronic and timely submission does not make a claim clean if required data elements are missing or invalid.",
+      "d": "Only diagnoses relevant to the encounter are coded; a clean claim is defined by complete, accurate required data."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The patient has no insurance"
+        "text": "A claim is denied for missing prior authorization"
       },
       {
         "id": "b",
-        "text": "Only cash-pay encounters occur"
+        "text": "A patient’s single plan has a deductible and copay"
       },
       {
         "id": "c",
-        "text": "A patient has more than one active payer and primary/secondary order must be determined"
+        "text": "A patient has more than one active payer"
       },
       {
         "id": "d",
-        "text": "The provider changes office paint colors"
+        "text": "A provider bills both the facility and professional fee"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "COB establishes which plan pays first so secondary billing is correct. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "COB establishes which plan pays first so secondary billing is correct. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. COB determines the primary/secondary payer order.",
     "distractorExplanations": {
-      "a": "Uninsured patients have no COB.",
-      "b": "Cash-pay skips insurance COB.",
-      "d": "Irrelevant to benefits."
+      "a": "Authorization denials are a front-end authorization problem, not a question of which payer is primary.",
+      "b": "Cost-sharing within one plan is not COB; COB requires two or more active payers.",
+      "d": "Split facility and professional billing involves two claim types, often to the same payer, not multiple payers."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The provider’s personal credit score"
+        "text": "The provider’s contracted fee schedule for the year"
       },
       {
         "id": "b",
-        "text": "Only the patient’s appointment preferences"
+        "text": "Why the claim was rejected at the clearinghouse"
       },
       {
         "id": "c",
-        "text": "A new CPT manual for the year"
+        "text": "The patient’s eligibility and benefits before a visit"
       },
       {
         "id": "d",
-        "text": "How the payer adjudicated the claim, including payment, adjustments, and patient responsibility"
+        "text": "How the payer adjudicated the claim"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "EOBs/ERAs communicate payer decisions and amounts; billers use them for posting and appeals. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "EOBs/ERAs communicate payer decisions and amounts; billers use them for posting and appeals. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. It includes payment, adjustments, and patient responsibility.",
     "distractorExplanations": {
-      "a": "Credit scores are unrelated.",
-      "b": "Scheduling prefs are not remittance data.",
-      "c": "Code books are separate publications."
+      "a": "An EOB/ERA shows allowed amounts for the claim it covers, not the provider's full annual fee schedule.",
+      "b": "Clearinghouse rejections come back on rejection/acknowledgment reports before the payer adjudicates; the ERA follows adjudication.",
+      "c": "Pre-visit eligibility and benefits come from the 270/271 eligibility inquiry and response, not the EOB."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "A clinically appropriate service was documented clearly"
+        "text": "Lack of medical necessity for the procedure billed with that diagnosis"
       },
       {
         "id": "c",
-        "text": "The claim passed every required format and eligibility edit"
+        "text": "Submission after the payer’s timely filing deadline for the service date"
       },
       {
         "id": "d",
-        "text": "The payer has already issued a final remittance decision"
+        "text": "Frequency limits exceeded for the service under the patient’s benefit plan year"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Front-end edits catch format/validity errors before payer adjudication. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
-      "b": "“A clinically appropriate service was documented clearly” is incorrect because front-end edits catch format/validity errors before payer adjudication.",
-      "c": "“The claim passed every required format and eligibility edit” is incorrect because front-end edits catch format/validity errors before payer adjudication.",
-      "d": "“The payer has already issued a final remittance decision” is incorrect because front-end edits catch format/validity errors before payer adjudication."
+      "b": "Medical necessity is judged by the payer during adjudication and results in a denial, not a clearinghouse rejection.",
+      "c": "Timely filing is enforced by the payer as a denial; clearinghouse edits check data format and validity.",
+      "d": "Frequency limits are payer benefit edits applied after the claim is accepted, producing a denial."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "How long a patient may wait in the lobby"
+        "text": "The deadline by which a patient must pay the remaining balance after a statement is mailed"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "The shelf life of paper superbills"
+        "text": "The time a payer has to pay a clean claim under prompt-pay laws"
       },
       {
         "id": "d",
-        "text": "The number of modifiers allowed"
+        "text": "The deadline after a denial by which a first-level appeal must be filed"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Missing timely filing often causes non-appealable denials; billers track payer-specific deadlines. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
-      "a": "Lobby wait is unrelated.",
-      "c": "Not limited to paper superbills.",
-      "d": "Modifier count is a coding/edit issue."
+      "a": "That is the practice's patient payment terms, not the payer deadline for submitting the claim.",
+      "c": "Prompt-pay laws limit how long the payer may take to pay, not when the provider must submit.",
+      "d": "Appeal deadlines are separate limits counted from the denial or remittance date, not from the date of service."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The provider’s Medicare participation status"
+        "text": "The fixed dollar amount a patient pays at each office visit"
       },
       {
         "id": "b",
-        "text": "A type of CPT Category III code"
+        "text": "The percentage of the allowed amount the patient pays after plan benefits begin"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "The clearinghouse enrollment fee"
+        "text": "The most a patient pays in a plan year before the plan pays 100%"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Deductibles are patient cost-sharing features that affect balances after adjudication. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
-      "a": "Participation is a provider-payer contract status.",
-      "b": "Not a CPT category.",
-      "d": "Enrollment fees are administrative, not patient deductibles."
+      "a": "A fixed amount per visit is a copayment, not a deductible.",
+      "b": "A percentage of the allowed amount paid after the deductible is coinsurance.",
+      "d": "The annual cap on patient cost-sharing is the out-of-pocket maximum, not the deductible."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Where the service was rendered (eg, office, outpatient hospital, telehealth setting as applicable)"
+        "text": "Where the service was rendered (eg, office, outpatient hospital)"
       },
       {
         "id": "b",
-        "text": "Which clinician signed the medical record"
+        "text": "The type of provider specialty that performed and billed the service"
       },
       {
         "id": "c",
-        "text": "Why the patient scheduled the appointment"
+        "text": "The patient’s home address that the payer uses for locality pricing"
       },
       {
         "id": "d",
-        "text": "Whether the claim was submitted on paper or electronically"
+        "text": "The type of bill for an institutional facility claim"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "POS affects pricing and coverage; it must match the actual setting. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "POS affects pricing and coverage; it must match the actual setting. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. Telehealth has its own POS codes where applicable.",
     "distractorExplanations": {
-      "b": "“Which clinician signed the medical record” is incorrect because pOS affects pricing and coverage; it must match the actual setting.",
-      "c": "“Why the patient scheduled the appointment” is incorrect because pOS affects pricing and coverage; it must match the actual setting.",
-      "d": "“Whether the claim was submitted on paper or electronically” is incorrect because pOS affects pricing and coverage; it must match the actual setting."
+      "b": "Provider specialty is reported through the taxonomy code, not the place of service code.",
+      "c": "The patient's address is demographic data; POS describes the setting where the service was furnished.",
+      "d": "Type of bill is reported on the UB-04 institutional claim; POS codes go on professional CMS-1500/837P claims."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Routine office visit E/M without medications"
+        "text": "Durable medical equipment items that require a CMN on file"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "ICD-10-CM Z-code screenings"
+        "text": "Laboratory tests performed under a CLIA waiver certificate"
       },
       {
         "id": "d",
-        "text": "Ambulance mileage"
+        "text": "Vaccine administration codes billed without reporting the vaccine product"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Many payers require NDC detail for injectable/drug claims alongside HCPCS. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
-      "a": "Pure E/M without drugs typically needs no NDC.",
-      "c": "Z codes are diagnoses, not NDCs.",
-      "d": "Mileage uses other HCPCS units."
+      "a": "DME is billed with HCPCS E/K codes and a certificate of medical necessity when required, not an NDC.",
+      "c": "CLIA-waived tests need the CLIA number and the QW modifier, not an NDC.",
+      "d": "Administration codes alone involve no drug; the NDC accompanies the drug or vaccine product code."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Every claim automatically needs an ABN"
+        "text": "A patient has Medicare Advantage and needs prior authorization"
       },
       {
         "id": "b",
-        "text": "It replaces the CMS-1500 form"
+        "text": "A provider bills a statutorily excluded service, for which an ABN is mandatory"
       },
       {
         "id": "c",
-        "text": "It is only for workers’ compensation"
+        "text": "A patient is admitted inpatient and the stay may be non-covered"
       },
       {
         "id": "d",
-        "text": "A provider expects Medicare may deny a service as not reasonable/necessary and must inform the beneficiary before furnishing it"
+        "text": "A provider expects Medicare may deny a service as not reasonable/necessary"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "ABNs shift financial liability appropriately when Medicare denial is expected for certain reasons; improper use can be invalid.",
+    "explanation": "ABNs shift financial liability appropriately when Medicare denial is expected for certain reasons; improper use can be invalid. The beneficiary must be informed before the service is furnished.",
     "distractorExplanations": {
-      "a": "Not required for all services.",
-      "b": "ABN is a notice, not a claim form.",
-      "c": "It is a Medicare (and similar) concept, not WC-only."
+      "a": "The ABN is an Original Medicare notice; Medicare Advantage plans use their own pre-service determination process.",
+      "b": "An ABN is voluntary for statutorily excluded services; it is mandatory when a medical-necessity denial is expected.",
+      "c": "Hospital inpatient non-coverage uses the HINN, not the ABN used for outpatient and Part B services."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -902,23 +902,23 @@
       },
       {
         "id": "b",
-        "text": "Every CPT line is paid fee-for-service at full charge"
+        "text": "The plan pays a fixed amount per inpatient admission based on the patient’s assigned DRG"
       },
       {
         "id": "c",
-        "text": "Patients pay the entire billed amount"
+        "text": "The plan pays a percentage of billed charges after the deductible is met"
       },
       {
         "id": "d",
-        "text": "ICD codes are no longer reported"
+        "text": "The plan pays one lump sum for all services in a single episode of care"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Capitation is prospective PMPM-style payment; claims/encounter data may still be required for tracking. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
-      "b": "That describes fee-for-service.",
-      "c": "Patients still have cost-shares per plan, not always full charges.",
-      "d": "Diagnoses remain important."
+      "b": "A fixed amount per admission by DRG is a case-rate/prospective inpatient payment, not per-member capitation.",
+      "c": "Paying a percentage of billed charges is a fee-for-service variant, not a per-member periodic payment.",
+      "d": "One payment per episode of care is a bundled (episode) payment, not a per-member periodic amount."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The provider’s NPI checksum failed"
+        "text": "The service was billed before prior authorization was obtained"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "The patient never had insurance"
+        "text": "The claim duplicates one already processed for the same date"
       },
       {
         "id": "d",
-        "text": "The claim had no date of service"
+        "text": "The diagnosis does not support the medical necessity of the service"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Payers set unit/frequency edits (e.g., preventive visits, certain therapies). A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
-      "a": "NPI issues are different edits.",
-      "c": "Uninsured is eligibility, not frequency.",
-      "d": "Missing DOS is a separate reject."
+      "a": "Missing prior authorization produces an authorization denial, not a frequency limit denial.",
+      "c": "A repeat of an already processed claim produces a duplicate claim denial, not a frequency denial.",
+      "d": "A diagnosis that does not support the service produces a medical necessity denial, not a frequency denial."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -968,7 +968,7 @@
       },
       {
         "id": "b",
-        "text": "They replace the patient explanation of benefits"
+        "text": "They give the patient-friendly summary that replaces the mailed EOB"
       },
       {
         "id": "c",
@@ -983,7 +983,7 @@
     "explanation": "Claim adjustment reason codes communicate adjudication logic for posting and appeals. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
     "distractorExplanations": {
       "a": "“They identify the provider taxonomy used for enrollment” is incorrect because claim adjustment reason codes communicate adjudication logic for posting and appeals.",
-      "b": "“They replace the patient explanation of benefits” is incorrect because claim adjustment reason codes communicate adjudication logic for posting and appeals.",
+      "b": "CARCs are codes on the 835 remittance used for posting and appeals; the patient EOB or MSN is still issued separately.",
       "d": "“They establish the diagnosis code reported on every claim” is incorrect because claim adjustment reason codes communicate adjudication logic for posting and appeals."
     },
     "difficulty": "easy",
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Individually identifiable health information held or transmitted by a covered entity/business associate in any form"
+        "text": "Individually identifiable health information held or transmitted by a covered entity in any form"
       },
       {
         "id": "b",
-        "text": "Only paper charts stored on-site"
+        "text": "Health information stored electronically, since paper and oral records fall under state law"
       },
       {
         "id": "c",
-        "text": "De-identified data with no identifiers remaining"
+        "text": "Employment records a covered entity keeps about its own workforce members"
       },
       {
         "id": "d",
-        "text": "Publicly posted clinic hours"
+        "text": "Data de-identified under the Safe Harbor method by removing the 18 identifiers"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PHI covers identifiable health info in electronic, paper, or oral forms when held by covered entities/BAs. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "PHI covers identifiable health info in electronic, paper, or oral forms when held by covered entities/BAs. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. This includes business associates.",
     "distractorExplanations": {
-      "b": "Electronic and oral PHI are also covered.",
-      "c": "Properly de-identified data is not PHI.",
-      "d": "Hours alone are not PHI."
+      "b": "PHI covers electronic, paper, and oral forms; only ePHI under the Security Rule is limited to electronic data.",
+      "c": "Employment records held by a covered entity in its role as employer are excluded from the PHI definition.",
+      "d": "Properly de-identified data is no longer PHI and is not subject to the Privacy Rule."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Share full charts with any caller who asks"
+        "text": "Limit disclosures to the minimum amount even when sharing with treating providers"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Post diagnoses on social media for education"
+        "text": "Release the complete record whenever a payer requests information for a claim"
       },
       {
         "id": "d",
-        "text": "Email PHI to personal accounts for convenience"
+        "text": "Obtain patient authorization before using PHI for routine billing tasks"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Minimum necessary limits unnecessary PHI exposure; treatment-related access has specific nuances but curiosity viewing is prohibited.",
     "distractorExplanations": {
-      "a": "Verify identity and authority before disclosures.",
-      "c": "Social media PHI sharing is a breach risk.",
-      "d": "Personal email is typically prohibited."
+      "a": "Minimum necessary does not apply to disclosures to a health care provider for treatment purposes.",
+      "c": "Disclosures to payers for payment are subject to minimum necessary; the whole record is rarely needed.",
+      "d": "Uses for payment and operations need no authorization; that confuses authorization with the minimum necessary standard."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore it if the coworker is a friend"
+        "text": "Confront the coworker privately and handle it informally"
       },
       {
         "id": "b",
-        "text": "Access the same record to compare notes"
+        "text": "Notify the celebrity patient directly about the access"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Print the record for home review"
+        "text": "Report it only if the coworker shared the information"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Unauthorized access is a privacy incident; reporting protects patients and the organization. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
     "distractorExplanations": {
-      "a": "Friendship does not authorize access.",
-      "b": "Additional snooping worsens the violation.",
-      "d": "Removing PHI is improper."
+      "a": "Snooping is a reportable privacy incident; informal handling bypasses the privacy officer's investigation and breach assessment.",
+      "b": "Patient notification is the covered entity's decision after a breach risk assessment, not an individual employee's.",
+      "d": "Unauthorized access is itself a violation even if the information was never shared further."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1096,15 +1096,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Using the correct code that matches documentation"
+        "text": "Billing separately for components included in a comprehensive code"
       },
       {
         "id": "b",
-        "text": "Adding a diagnosis pointer on a claim form"
+        "text": "Billing the payer for services that were not actually provided to the patient"
       },
       {
         "id": "c",
-        "text": "Verifying insurance eligibility"
+        "text": "Assigning a lower-level code than documentation supports"
       },
       {
         "id": "d",
@@ -1114,9 +1114,9 @@
     "correctOptionId": "d",
     "explanation": "Upcoding is a common fraud/abuse risk when levels or procedures are inflated. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
     "distractorExplanations": {
-      "a": "Accurate coding is compliant.",
-      "b": "Pointers are normal claim mechanics.",
-      "c": "Eligibility checks are appropriate."
+      "a": "Billing components separately when a comprehensive code applies is unbundling, not upcoding.",
+      "b": "Billing for services not rendered is phantom billing, a different fraud scheme from upcoding.",
+      "c": "Assigning a lower level than documented is downcoding (undercoding), the opposite of upcoding."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Billing component codes separately when a comprehensive code includes them, contrary to rules"
+        "text": "Billing component codes separately when a comprehensive code includes them"
       },
       {
         "id": "b",
-        "text": "Combining unrelated patients onto one claim"
+        "text": "Reporting a higher-level service than the documentation supports"
       },
       {
         "id": "c",
-        "text": "Using one diagnosis for multiple encounters correctly"
+        "text": "Billing an E/M service on the same day as a minor procedure with modifier 25"
       },
       {
         "id": "d",
-        "text": "Encrypting email attachments"
+        "text": "Splitting one date of service across two claims to meet filing limits"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Unbundling to increase payment violates NCCI/coding rules when components are not separately reportable. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "Unbundling to increase payment violates NCCI/coding rules when components are not separately reportable. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. Unbundling is contrary to NCCI and coding rules.",
     "distractorExplanations": {
-      "b": "Each patient needs proper claims.",
-      "c": "Diagnosis reuse across encounters can be legitimate.",
-      "d": "Encryption is a security control."
+      "b": "Reporting a higher level than documented is upcoding, not unbundling.",
+      "c": "A significant, separately identifiable E/M with modifier 25 is legitimate reporting, not unbundling.",
+      "d": "Claim splitting is a separate billing issue; unbundling concerns component codes of a comprehensive service."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Appeals a denial with supporting records"
+        "text": "Submits a claim with an honest clerical error it later corrects"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "Documents medical necessity thoroughly"
+        "text": "Writes off a patient balance under a documented financial hardship policy"
       },
       {
         "id": "d",
-        "text": "Uses certified EHR audit logs"
+        "text": "Appeals a denial and includes supporting medical records"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Knowingly false claims (including reckless disregard) create FCA exposure; good-faith appeals differ. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
     "distractorExplanations": {
-      "a": "Proper appeals are appropriate.",
-      "c": "Strong documentation supports compliance.",
-      "d": "Audit logs support security/compliance."
+      "a": "FCA liability requires knowing conduct (actual knowledge, deliberate ignorance, or reckless disregard); honest corrected errors do not qualify.",
+      "c": "A documented, case-by-case financial hardship waiver is a permitted practice, not a false claim.",
+      "d": "A good-faith appeal supported by records is proper claim follow-up, not a false claim."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the patient’s nickname"
+        "text": "The patient’s signature and date, with purpose and recipient optional"
       },
       {
         "id": "b",
-        "text": "A blank form with no purpose stated"
+        "text": "A notarized signature and a witness for every disclosure request"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "The coder’s personal cell number as the recipient"
+        "text": "The provider’s signature confirming the disclosure is medically necessary and approved"
       }
     ],
     "correctOptionId": "c",
     "explanation": "HIPAA authorization core elements ensure the patient understands and limits the disclosure. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
     "distractorExplanations": {
-      "a": "Identity must be clear.",
-      "b": "Purpose and specifics are required.",
-      "d": "Recipients must be appropriate/identified."
+      "a": "Purpose and recipient are required core elements of a valid HIPAA authorization, not optional.",
+      "b": "HIPAA does not require notarization or a witness for an authorization to be valid.",
+      "d": "The authorization is signed by the patient or personal representative, not by the provider."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Physician referrals for certain designated health services to entities with which they have financial relationships, subject to exceptions"
+        "text": "Physician referrals for designated health services to entities with which they have financial relationships"
       },
       {
         "id": "b",
-        "text": "Only overtime pay for billers"
+        "text": "Offering or receiving anything of value to induce referrals of patients covered by federal healthcare programs"
       },
       {
         "id": "c",
-        "text": "FDA drug manufacturing"
+        "text": "Knowingly submitting false or fraudulent claims to federal healthcare programs for payment"
       },
       {
         "id": "d",
-        "text": "State board cosmetology licenses"
+        "text": "Exclusion of individuals convicted of healthcare-related offenses from participation in federal programs"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Stark is a strict-liability self-referral statute for DHS; billing/coding staff should escalate suspect arrangements.",
+    "explanation": "Stark is a strict-liability self-referral statute for DHS; billing/coding staff should escalate suspect arrangements. Stark applies subject to its listed exceptions.",
     "distractorExplanations": {
-      "b": "Wage issues are labor law.",
-      "c": "FDA is separate.",
-      "d": "Cosmetology is unrelated."
+      "b": "Remuneration to induce referrals is the Anti-Kickback Statute, which is intent-based, unlike strict-liability Stark.",
+      "c": "Knowingly false claims for payment fall under the False Claims Act, not the Stark self-referral law.",
+      "d": "Excluding convicted individuals is the OIG exclusion authority, not the Stark Law."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal salary for employed clinicians within fair market value without referral inducement analysis needs never"
+        "text": "Physician referrals of designated health services to entities in which they hold an ownership stake"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "Patient copay collection as required by plan"
+        "text": "Using PHI for marketing without first obtaining a signed patient authorization"
       },
       {
         "id": "d",
-        "text": "Publishing a clinic’s phone number"
+        "text": "Billing for a higher level of service than the medical record documentation supports"
       }
     ],
     "correctOptionId": "b",
     "explanation": "AKS is intent-based; improper gifts, sham consulting, or volume-based incentives tied to referrals are high risk.",
     "distractorExplanations": {
-      "a": "Bona fide employment can fit safe harbors when structured properly—still not “never analyze.”.",
-      "c": "Collecting allowed cost-shares is normal.",
-      "d": "Public contact info is fine."
+      "a": "Ownership-based referrals for designated health services are the Stark Law (strict liability), not the Anti-Kickback Statute.",
+      "c": "Marketing without authorization is a HIPAA Privacy Rule issue, not a kickback concern.",
+      "d": "Billing above the documented level is upcoding under false-claims rules, not remuneration for referrals."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Are always the patient’s family members"
+        "text": "Are health plans and providers that transmit health information electronically"
       },
       {
         "id": "b",
-        "text": "Never touch PHI by definition"
+        "text": "Are workforce members such as employees and volunteers under the entity’s control"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Only include the IRS"
+        "text": "Receive PHI from a provider for treatment of the same patient"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Billing companies, clearinghouses, and many vendors are BAs and require agreements and safeguards. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
     "distractorExplanations": {
-      "a": "Family members are not BAs by default.",
-      "b": "BAs do handle PHI.",
-      "d": "IRS is not the BA definition."
+      "a": "Health plans, clearinghouses, and providers who transmit electronically are covered entities, not business associates.",
+      "b": "Workforce members are part of the covered entity and do not need a business associate agreement.",
+      "d": "Provider-to-provider disclosures for treatment do not create a business associate relationship."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1360,15 +1360,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Copays are illegal in the United States"
+        "text": "It violates the HIPAA Privacy Rule because it reveals the patient’s insurance coverage status"
       },
       {
         "id": "b",
-        "text": "HIPAA forbids collecting any money"
+        "text": "It requires the practice to file an ABN with Medicare before each visit"
       },
       {
         "id": "c",
-        "text": "CPT guidelines ban patient responsibility"
+        "text": "It counts as upcoding because the billed charge exceeds the amount collected"
       },
       {
         "id": "d",
@@ -1378,9 +1378,9 @@
     "correctOptionId": "d",
     "explanation": "Routine waiver of cost-sharing can be problematic; financial hardship policies should be documented and applied carefully.",
     "distractorExplanations": {
-      "a": "Cost-sharing is legal and common.",
-      "b": "HIPAA does not ban billing.",
-      "c": "CPT does not eliminate patient responsibility."
+      "a": "Copay waivers are not a privacy issue; the concern is inducement and misstating the actual charge to payers.",
+      "b": "ABNs relate to expected Medicare medical-necessity denials and have nothing to do with cost-sharing waivers.",
+      "c": "Upcoding means reporting a higher code than documented; routine waivers raise inducement and misstated-charge concerns instead."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1397,23 +1397,23 @@
       },
       {
         "id": "b",
-        "text": "Send the claim details through a personal email account for convenience"
+        "text": "Send unencrypted email if the PHI is limited to account numbers and dates"
       },
       {
         "id": "c",
-        "text": "Put the beneficiary information in the email subject line"
+        "text": "Password-protect the attachment and include the password in the body of the same email"
       },
       {
         "id": "d",
-        "text": "Reuse an unverified address because it worked for another patient"
+        "text": "Use the fax line instead, since faxed PHI falls outside HIPAA safeguards"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Security Rule expectations and policies require reasonable safeguards for ePHI in transit. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
     "distractorExplanations": {
-      "b": "“Send the claim details through a personal email account for convenience” is incorrect because security Rule expectations and policies require reasonable safeguards for ePHI in transit.",
-      "c": "“Put the beneficiary information in the email subject line” is incorrect because security Rule expectations and policies require reasonable safeguards for ePHI in transit.",
-      "d": "“Reuse an unverified address because it worked for another patient” is incorrect because security Rule expectations and policies require reasonable safeguards for ePHI in transit."
+      "b": "Account numbers and dates of service are identifiers, so the message still contains ePHI needing safeguards.",
+      "c": "Sending the password with the file defeats the protection if the message is intercepted or misdirected.",
+      "d": "Faxed PHI is still covered by Privacy Rule safeguards, including verifying the recipient number."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Patients to prescribe controlled substances"
+        "text": "Payers to recover overpayments from providers through offsets against future claim payments"
       },
       {
         "id": "b",
-        "text": "Private persons (whistleblowers) to bring certain False Claims Act cases on behalf of the government"
+        "text": "Private persons (whistleblowers) to bring False Claims Act cases on behalf of the government"
       },
       {
         "id": "c",
-        "text": "Coders to change medical records freely"
+        "text": "The OIG to exclude providers from federal health programs after a healthcare fraud conviction"
       },
       {
         "id": "d",
-        "text": "Payers to skip remittance advice"
+        "text": "Patients to sue a covered entity directly for damages under HIPAA"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Whistleblower provisions are a major FCA enforcement pathway; compliance programs encourage internal reporting first.",
     "distractorExplanations": {
-      "a": "Prescribing authority is clinical/legal licensure.",
-      "c": "Record falsification is prohibited.",
-      "d": "Remits remain standard."
+      "a": "Offsetting overpayments against future payments is payer recoupment, not a qui tam action.",
+      "c": "Exclusion after conviction is an OIG administrative authority, not a whistleblower lawsuit.",
+      "d": "HIPAA has no private right of action; qui tam suits are brought under the False Claims Act."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Refuse all patient rights requests automatically"
+        "text": "Provide a list of every disclosure, including those for treatment and payment"
       },
       {
         "id": "b",
-        "text": "Only give accounting to marketers"
+        "text": "Provide an accounting covering the past ten years of disclosures"
       },
       {
         "id": "c",
-        "text": "Provide an accounting of certain disclosures as required by the Privacy Rule, with allowed exceptions"
+        "text": "Provide an accounting of certain disclosures as required by the Privacy Rule"
       },
       {
         "id": "d",
-        "text": "Post the accounting on Facebook"
+        "text": "Refer the patient to the payer, which holds the accounting obligation"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Patients have rights to access, amendments (with process), and accounting of certain disclosures. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "Patients have rights to access, amendments (with process), and accounting of certain disclosures. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. Allowed exceptions (such as TPO disclosures) apply.",
     "distractorExplanations": {
-      "a": "Patient rights must be honored per HIPAA.",
-      "b": "Accounting is for the individual, not marketers.",
-      "d": "Public posting would be a violation."
+      "a": "Disclosures for treatment, payment, and operations are excepted from the accounting requirement.",
+      "b": "The accounting covers up to six years before the request, not ten.",
+      "d": "The covered entity receiving the request must provide the accounting, including disclosures by its business associates."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "Only writing off bad debt after years"
+        "text": "Charge entry, claim scrubbing, and electronic claim submission to the clearinghouse"
       },
       {
         "id": "c",
-        "text": "Appeals after final denial"
+        "text": "Payment posting, denial follow-up, and patient statement mailing"
       },
       {
         "id": "d",
-        "text": "Coding the operative report before the patient arrives for a new problem"
+        "text": "Code assignment, charge capture, and clinical documentation improvement review after the visit"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Clean data at registration prevents many denials downstream. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "b": "Write-offs are back-end.",
-      "c": "Appeals are mid/back-end.",
-      "d": "You cannot code future undocumented surgeries."
+      "b": "Charge entry, scrubbing, and submission are mid-cycle/back-end claim steps, not front-end activities.",
+      "c": "Payment posting, denial follow-up, and statements are back-end revenue cycle activities.",
+      "d": "Coding, charge capture, and documentation review happen mid-cycle after the encounter, not at the front end."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee the claim will never deny for any reason"
+        "text": "Establish the final patient balance before the claim is adjudicated"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Replace the need for diagnosis coding"
+        "text": "Satisfy prior authorization requirements for scheduled procedures"
       },
       {
         "id": "d",
-        "text": "Determine the patient’s blood type"
+        "text": "Confirm the CPT codes the payer will reimburse at the practice’s contracted rate"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Eligibility reduces surprises but does not eliminate all denial risks (medical necessity, coding, etc.). Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Denials can still occur.",
-      "c": "Diagnoses remain required.",
-      "d": "Blood type is clinical."
+      "a": "The final patient balance is set only when the payer adjudicates the claim; eligibility gives an estimate at best.",
+      "c": "Eligibility checks reveal whether authorization is needed but do not obtain or satisfy the authorization.",
+      "d": "Eligibility does not validate coding or guarantee payment; codes follow the documentation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The patient’s thank-you card"
+        "text": "Payer approval obtained before a high-cost service based on medical necessity"
       },
       {
         "id": "b",
-        "text": "A CPT modifier for bilateral procedures"
+        "text": "A PCP order for a lab test that the lab uses to bill the payer"
       },
       {
         "id": "c",
-        "text": "Authorization from a PCP/plan allowing the patient to see a specialist or obtain certain services"
+        "text": "Authorization from a PCP/plan allowing the patient to see a specialist"
       },
       {
         "id": "d",
-        "text": "The hospital’s charge description master"
+        "text": "A notice telling the patient that a service may not be covered by Medicare"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Missing referrals/authorizations are common preventable denials in HMO-style plans. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Missing referrals/authorizations are common preventable denials in HMO-style plans. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. Referrals can also cover certain services.",
     "distractorExplanations": {
-      "a": "Not a greeting card.",
-      "b": "Modifiers are coding tools.",
-      "d": "CDM is a pricing/charge list."
+      "a": "Payer approval of a high-cost service for medical necessity is prior authorization/precertification, not a referral.",
+      "b": "A lab order or requisition authorizes testing; a managed-care referral permits a specialist visit.",
+      "d": "A notice of likely Medicare non-coverage is an ABN, not a managed-care referral."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Deleting charges to hide productivity"
+        "text": "Collecting copays and known balances from patients at the time of service"
       },
       {
         "id": "b",
-        "text": "Only collecting copays in cash"
+        "text": "Posting payer payments and contractual adjustments from the electronic remittance advice"
       },
       {
         "id": "c",
-        "text": "Turning off the practice management system"
+        "text": "Entering charges for services scheduled, before they are performed"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "Missed charges lose revenue; phantom charges create compliance risk—accuracy matters both ways. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Deleting legitimate charges improperly harms revenue integrity.",
-      "b": "Copays are only one collection step.",
-      "c": "Systems must remain operational for RCM."
+      "a": "Collecting copays and balances at the visit is point-of-service collection, not charge capture.",
+      "b": "Posting payments and adjustments from the ERA is payment posting, a back-end step after adjudication.",
+      "c": "Charges must reflect services actually provided; entering scheduled services in advance risks billing for services not rendered."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Patient satisfaction stars"
+        "text": "The percentage of claims paid on first submission"
       },
       {
         "id": "c",
-        "text": "The number of exam rooms"
+        "text": "The total dollars written off as bad debt each month"
       },
       {
         "id": "d",
-        "text": "Vaccine refrigerator temperature"
+        "text": "How many claims are denied out of all claims submitted"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A/R days is a core RCM KPI; high days may signal denial, follow-up, or posting problems. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "b": "Satisfaction is separate.",
-      "c": "Room count is operations.",
-      "d": "Cold-chain is clinical ops."
+      "b": "The share of claims paid on first submission is the first-pass (clean claim) rate, not A/R days.",
+      "c": "Monthly write-offs measure bad debt, not how long balances stay unpaid.",
+      "d": "The proportion of denied claims is the denial rate, a different KPI from days in A/R."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed final bills with zero variance"
+        "text": "A binding final bill that cannot differ from the adjudicated claim"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Elimination of EOBs"
+        "text": "Replacing the need for an EOB once the payer processes the claim"
       },
       {
         "id": "d",
-        "text": "Skipping insurance filing"
+        "text": "Obtaining prior authorization from the payer for scheduled services"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Estimates improve collections and compliance with price transparency expectations; final adjudication may differ.",
     "distractorExplanations": {
-      "a": "Estimates can change with clinical reality.",
-      "c": "EOBs still issue after claims.",
-      "d": "Insured claims are still filed."
+      "a": "Estimates are not binding final bills; the final amount depends on payer adjudication.",
+      "c": "The EOB still reports the payer's adjudication; an estimate is issued before service and does not replace it.",
+      "d": "Estimating costs does not obtain prior authorization, which is a separate payer approval process."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Resubmitting the identical unclean claim daily forever without review"
+        "text": "Resubmitting each denied claim unchanged until the payer reverses its decision"
       },
       {
         "id": "b",
-        "text": "Writing off every denial immediately without analysis"
+        "text": "Writing off low-dollar denials first so staff can focus their time on high-dollar appeals"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Ignoring payer policies"
+        "text": "Appealing every denial at the external review level before correcting claims"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Effective denial management fixes causes and meets appeal deadlines. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Blind resubmits worsen edits.",
-      "b": "Blanket write-offs destroy recoverable revenue.",
-      "d": "Policies drive successful appeals."
+      "a": "Resubmitting an uncorrected claim triggers duplicate denials; the cause must be found and fixed first.",
+      "b": "Writing off denials without analysis lets recurring root causes keep generating losses.",
+      "d": "Many denials are fixed by correction and rebilling; external review is the last appeal level, not the first step."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Kept indefinitely as clinic profit without review"
+        "text": "Held on the account to offset the patient’s future visit charges"
       },
       {
         "id": "b",
-        "text": "Moved to the physician’s personal account"
+        "text": "Transferred to bad debt to balance the accounts receivable report"
       },
       {
         "id": "c",
-        "text": "Ignored if under $10,000 without policy"
+        "text": "Reported to the payer once a year at annual cost report filing"
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Credit balance compliance (including Medicare) requires timely resolution; retaining overpayments is risky. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Keeping overpayments can be improper.",
-      "b": "Personal diversion is theft.",
-      "c": "Thresholds must follow law/policy—not casual ignore."
+      "a": "Holding credits for future charges without patient agreement or policy can violate refund and unclaimed-property rules.",
+      "b": "Bad debt is for uncollectible patient balances, not overpayments the practice owes back.",
+      "c": "Identified Medicare overpayments must be reported and returned within 60 days, not held until an annual report."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Verifying benefits and collecting known copays/outstanding balances per policy before or at visit"
+        "text": "Verifying benefits and collecting known copays/outstanding balances per policy"
       },
       {
         "id": "b",
-        "text": "Wait until several statements age before discussing known patient responsibility"
+        "text": "Billing every copay on the statement after the claim adjudicates"
       },
       {
         "id": "c",
-        "text": "Skip eligibility verification and estimate the copay from memory"
+        "text": "Collecting estimated coinsurance for each visit before verifying the patient’s eligibility"
       },
       {
         "id": "d",
-        "text": "Tell every patient that the estimate is a guaranteed final balance"
+        "text": "Quoting the estimate to patients as the binding final balance owed"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clear communication and accurate benefit knowledge improve POS collections without misrepresentation. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Clear communication and accurate benefit knowledge improve POS collections without misrepresentation. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. Collect before or at the visit.",
     "distractorExplanations": {
-      "b": "“Wait until several statements age before discussing known patient responsibility” is incorrect because clear communication and accurate benefit knowledge improve POS collections without misrepresentation.",
-      "c": "“Skip eligibility verification and estimate the copay from memory” is incorrect because clear communication and accurate benefit knowledge improve POS collections without misrepresentation.",
-      "d": "“Tell every patient that the estimate is a guaranteed final balance” is incorrect because clear communication and accurate benefit knowledge improve POS collections without misrepresentation."
+      "b": "Waiting for adjudication delays collection of copays that are already known at the visit.",
+      "c": "Collecting before verifying eligibility risks charging the wrong amount and later refunds.",
+      "d": "Estimates can change after adjudication; presenting them as binding misleads the patient."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved ICD-10 laterality automatically"
+        "text": "Incorrect patient demographics carried onto every claim from the registration screen"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "HIPAA authorization signatures"
+        "text": "Missing authorization numbers on claims for scheduled procedures"
       },
       {
         "id": "d",
-        "text": "Vaccine potency increases"
+        "text": "Diagnosis codes that fail to match the documented clinical condition"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CDM maintenance is critical so charges map to correct codes and prices. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Laterality is diagnosis coding.",
-      "c": "Authorizations are privacy forms.",
-      "d": "Not a clinical vaccine effect."
+      "a": "Demographics come from registration, not the CDM, which maps charges to procedure codes and prices.",
+      "c": "Authorization numbers come from front-end authorization work, not the charge description master.",
+      "d": "The CDM maps charges to CPT/HCPCS codes and prices; diagnosis codes come from coding the documentation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic increase in E/M level"
+        "text": "Rejection at the clearinghouse front end"
       },
       {
         "id": "b",
-        "text": "Conversion to inpatient DRG for all office visits"
+        "text": "Recoding the visit to a lower E/M level"
       },
       {
         "id": "c",
-        "text": "Denial of payment for the service when the plan required auth and it was not obtained"
+        "text": "Denial of payment for the service"
       },
       {
         "id": "d",
-        "text": "Deletion of the patient’s demographics"
+        "text": "A request to resubmit with modifier 59"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Many high-cost services need auth; staff should verify before scheduling/performing when required. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Many high-cost services need auth; staff should verify before scheduling/performing when required. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. This happens when the plan required auth and it was not obtained.",
     "distractorExplanations": {
-      "a": "Auth issues do not raise E/M.",
-      "b": "Office visits are not DRGs.",
-      "d": "Demographics remain."
+      "a": "Clearinghouse edits check format and data validity; a missing authorization is denied by the payer.",
+      "b": "Payers do not recode the E/M level for missing authorization; the service requiring auth is denied.",
+      "d": "Modifier 59 identifies a distinct procedural service and does not cure a missing authorization."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1855,15 +1855,15 @@
     "options": [
       {
         "id": "a",
-        "text": "List only the highest paying codes regardless of services"
+        "text": "List every code in the current CPT manual so providers can select any possible service"
       },
       {
         "id": "b",
-        "text": "Omit diagnoses to save time"
+        "text": "Are reviewed every few years when the practice changes its fee schedule"
       },
       {
         "id": "c",
-        "text": "Are never reviewed after CPT updates"
+        "text": "Preprint diagnosis codes at the category level for faster selection"
       },
       {
         "id": "d",
@@ -1873,9 +1873,9 @@
     "correctOptionId": "d",
     "explanation": "Outdated superbills drive wrong coding; they are tools, not substitutes for documentation. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Listing codes for inducement is abusive.",
-      "b": "Diagnoses are required.",
-      "c": "Annual code updates must be maintained."
+      "a": "A form listing every code invites selection errors; superbills should reflect the practice's commonly used, accurate codes.",
+      "b": "CPT updates every January and ICD-10-CM every October, so superbills need review at least annually.",
+      "c": "Category-level codes often lack the required specificity and lead to invalid or denied claims."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1892,23 +1892,23 @@
       },
       {
         "id": "b",
-        "text": "They always require a formal external appeal before correction"
+        "text": "Are final payer decisions that can be overturned only through formal appeal"
       },
       {
         "id": "c",
-        "text": "They can never be resolved by supplying missing claim information"
+        "text": "Are issued at the clearinghouse before the payer ever receives the claim"
       },
       {
         "id": "d",
-        "text": "They must be written off immediately without root-cause review"
+        "text": "Result from noncovered benefits and shift the balance to the patient"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Understanding denial type guides whether to rebill, appeal, or write off. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "b": "“They always require a formal external appeal before correction” is incorrect because understanding denial type guides whether to rebill, appeal, or write off.",
-      "c": "“They can never be resolved by supplying missing claim information” is incorrect because understanding denial type guides whether to rebill, appeal, or write off.",
-      "d": "“They must be written off immediately without root-cause review” is incorrect because understanding denial type guides whether to rebill, appeal, or write off."
+      "b": "That describes hard denials, which require a formal appeal; soft denials can be fixed and resubmitted.",
+      "c": "Issues caught before the payer receives the claim are clearinghouse rejections, not denials.",
+      "d": "Noncovered benefit denials are hard denials, not correctable soft denials."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Include other patients’ names for comparison"
+        "text": "Show the full billed charge as due before the insurance payment posts"
       },
       {
         "id": "b",
@@ -1929,19 +1929,19 @@
       },
       {
         "id": "c",
-        "text": "Hide the dates of service"
+        "text": "List the CPT and ICD-10 codes in place of plain-language descriptions of each service provided"
       },
       {
         "id": "d",
-        "text": "List staff Social Security numbers"
+        "text": "Be sent only after the account is referred to a collection agency"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Clear statements aid collections and reduce call volume; privacy must be maintained. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Other patients’ PHI is a violation.",
-      "c": "DOS helps patients recognize services.",
-      "d": "Staff SSNs must never appear."
+      "a": "Balances pending insurance should not be presented as due from the patient until the payer adjudicates.",
+      "c": "Statements should be understandable; bare codes without plain-language descriptions confuse patients.",
+      "d": "Statements come before any collection referral and are the main tool for collecting patient balances."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1954,11 +1954,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminate the need for coding staff"
+        "text": "Set the annual fee schedule based on which payers deny the most claims each year"
       },
       {
         "id": "b",
-        "text": "Stop verifying eligibility"
+        "text": "Replace front-end eligibility checks with larger back-end appeal and claim rework teams"
       },
       {
         "id": "c",
@@ -1966,15 +1966,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore medical necessity documentation"
+        "text": "Prove compliance with HIPAA transaction standards for audits"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Data-driven denial prevention is a hallmark of mature RCM programs. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
     "distractorExplanations": {
-      "a": "Coders remain essential.",
-      "b": "Eligibility remains critical.",
-      "d": "Necessity documentation remains essential."
+      "a": "Fee schedules reflect costs and contracts; denial data guides process fixes and payer negotiations, not price setting.",
+      "b": "Denial analytics usually show prevention at the front end beats rework, so eligibility checks are strengthened, not replaced.",
+      "d": "Transaction-standard compliance concerns EDI formats; denial analytics target where revenue is lost."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."

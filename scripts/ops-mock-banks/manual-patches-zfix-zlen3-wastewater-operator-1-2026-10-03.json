@@ -1,0 +1,30 @@
+{
+ "wastewater-operator-1-readiness-check": {
+  "wastewater-operator-1-readiness-check-safety-018": {
+   "options": {
+    "a": "Measure oxygen levels before entry",
+    "b": "Warn of methane before a spark or entry",
+    "c": "Detect hydrogen sulfide toxicity levels in ppm",
+    "d": "Measure digester gas production rate"
+   },
+   "distractorExplanations": {
+    "c": "H2S toxicity needs a dedicated toxic H2S sensor reading in ppm; a combustible-gas sensor reads %LEL of gases such as methane.",
+    "a": "Oxygen is read on a separate O2 sensor; the combustible sensor reads %LEL of gases such as methane.",
+    "d": "Gas production is measured with a gas flow meter, not a portable combustible-gas meter."
+   }
+  },
+  "wastewater-operator-1-readiness-check-safety-025": {
+   "options": {
+    "a": "Blowers, pumps, and generators that exceed the plant’s noise policy",
+    "b": "The lab fume hood and autoclave during routine tests",
+    "c": "Blowers only when noise exceeds 115 dBA at any point during the work shift",
+    "d": "Outdoor clarifiers and aeration tanks, mainly during windy weather"
+   },
+   "distractorExplanations": {
+    "c": "The OSHA action level is 85 dBA as an 8-hour TWA; 115 dBA is the old ceiling limit, not the hearing-protection trigger, and pumps count too.",
+    "b": "Lab equipment is usually below 85 dBA; blowers, pumps, and generators drive hearing-protection needs.",
+    "d": "Clarifiers and basins are not high-noise sources; enclosed blower and pump rooms are."
+   }
+  }
+ }
+}

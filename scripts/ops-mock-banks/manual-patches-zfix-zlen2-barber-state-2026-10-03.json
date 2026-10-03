@@ -1,0 +1,707 @@
+{
+ "barber-state-readiness-check": {
+  "barber-state-readiness-check-infection-001": {
+   "options": {
+    "a": "Clean and disinfect tools that contacted skin or blood",
+    "b": "Spray tools with disinfectant without first removing the hair",
+    "c": "Place tools in a UV cabinet as the disinfection step",
+    "d": "Disinfect only tools that drew blood, and brush off the rest"
+   },
+   "distractorExplanations": {
+    "b": "Disinfectant cannot work through hair and debris; tools must be cleaned first, then disinfected for the full contact time.",
+    "c": "UV cabinets are for storing already-disinfected tools; they do not replace an EPA-registered disinfectant.",
+    "d": "Every multi-use tool that touched a client's skin or hair is cleaned and disinfected, not only tools that drew blood."
+   }
+  },
+  "barber-state-readiness-check-infection-002": {
+   "options": {
+    "a": "Finish the shave first, then apply antiseptic to the nick",
+    "b": "Stop, glove, use antiseptic, and discard contaminated disposables",
+    "c": "Apply a styptic pencil directly and keep it for later clients",
+    "d": "Wipe the blood with the client's towel and continue gloveless"
+   },
+   "distractorExplanations": {
+    "a": "A blood exposure means stopping the service right away; finishing the shave first spreads exposure and contamination.",
+    "c": "Styptic pencils cannot be shared between clients; boards require single-use powder, liquid, or spray styptic.",
+    "d": "Blood exposure protocol requires gloves and discarding contaminated items, not wiping and continuing bare-handed."
+   }
+  },
+  "barber-state-readiness-check-infection-003": {
+   "options": {
+    "a": "Porous items like buffers and neck strips between clients",
+    "b": "Implements with hair still on them, to save cleaning time",
+    "c": "Nonporous implements after cleaning debris off",
+    "d": "The client's skin before a straight-razor shave"
+   },
+   "distractorExplanations": {
+    "a": "Porous single-use items like buffers and neck strips are discarded after one client; they cannot be disinfected.",
+    "b": "Disinfectant only works on pre-cleaned surfaces; hair and debris block contact, so cleaning must come first.",
+    "d": "Skin is prepped with an antiseptic, not an EPA disinfectant; disinfectants are for hard, nonporous surfaces."
+   }
+  },
+  "barber-state-readiness-check-infection-005": {
+   "options": {
+    "a": "Brushed, then disinfected per the label contact time",
+    "b": "Sprayed with clipper disinfectant and used once the mist dries",
+    "c": "Oiled and stored, since blade oil prevents bacterial growth",
+    "d": "Placed in a UV sanitizer, which replaces the disinfectant step"
+   },
+   "distractorExplanations": {
+    "b": "Using the blade as soon as the mist dries skips the full wet contact time the label requires.",
+    "c": "Blade oil lubricates; it does not disinfect, so the blade still needs cleaning and EPA disinfection.",
+    "d": "UV sanitizers are storage units; they do not meet board requirements for disinfecting implements."
+   }
+  },
+  "barber-state-readiness-check-infection-006": {
+   "options": {
+    "a": "Serviced with gloves so the open sores are not a concern",
+    "b": "Referred out; do not cut over broken skin",
+    "c": "Serviced after applying antiseptic over the sores",
+    "d": "Serviced if the client signs a liability waiver"
+   },
+   "distractorExplanations": {
+    "a": "Gloves protect the barber but do not make cutting over open sores safe; the client should be referred to a physician.",
+    "c": "Antiseptic does not make broken skin safe to service; open sores are a reason to decline and refer.",
+    "d": "A waiver does not override board sanitation rules; barbers may not service over open lesions."
+   }
+  },
+  "barber-state-readiness-check-infection-007": {
+   "options": {
+    "a": "Only after a service that involved visible blood",
+    "b": "At the start and end of each shift, not between clients",
+    "c": "Before service and after any blood or chemical contact",
+    "d": "Before service, with hand sanitizer replacing it after chemicals"
+   },
+   "distractorExplanations": {
+    "a": "Hands are washed before every service too, not only after visible blood exposure.",
+    "b": "Boards require handwashing before each client, not just at the start and end of the shift.",
+    "d": "Hand sanitizer does not remove chemical residue; hands are washed with soap and water after chemical contact."
+   }
+  },
+  "barber-state-readiness-check-infection-009": {
+   "options": {
+    "a": "For the full listed contact time on a pre-cleaned tool",
+    "b": "For a standard one minute, even if hair is still on the tool",
+    "c": "Until the solution air-dries on the tool's surface",
+    "d": "For half the listed time when the solution is freshly mixed"
+   },
+   "distractorExplanations": {
+    "b": "Contact times vary by product (often 10 minutes) and need a pre-cleaned tool; a fixed one minute is not the rule.",
+    "c": "Air-drying may happen before the label contact time is reached; the surface must stay wet for the full time.",
+    "d": "Fresh solution still needs the full label contact time; mixing date does not shorten it."
+   }
+  },
+  "barber-state-readiness-check-infection-010": {
+   "options": {
+    "a": "A way to disinfect the blade, since stropping removes bacteria",
+    "b": "Kept clean and not a substitute for disinfection of a soiled blade",
+    "c": "Soaked in disinfectant between clients like a metal implement",
+    "d": "Discarded after each client, like a single-use neck strip"
+   },
+   "distractorExplanations": {
+    "a": "Stropping only aligns the edge; it does not disinfect, so a soiled blade still needs EPA disinfection.",
+    "c": "A leather strop is porous and is not soaked like a metal implement; it is kept clean and used only on a clean razor.",
+    "d": "A strop is a reusable, non-contact tool kept clean, not a single-use item discarded after each client."
+   }
+  },
+  "barber-state-readiness-check-infection-011": {
+   "options": {
+    "a": "Swept once in the morning before the first client arrives",
+    "b": "Disinfected with spray before the loose hair is swept up",
+    "c": "Swept so hair is not tracked into the next service",
+    "d": "Swept into a corner pile and cleared at closing time"
+   },
+   "distractorExplanations": {
+    "a": "Hair is swept after each service; a single morning sweep leaves hair from every later client on the floor.",
+    "b": "Cleaning comes before disinfecting; spraying over loose hair does not work and the hair must be removed first.",
+    "d": "Piling hair in a corner until closing still leaves loose hair in the shop; it is removed after each client."
+   }
+  },
+  "barber-state-readiness-check-infection-012": {
+   "options": {
+    "a": "Sterilizing implements so that pre-cleaning can be skipped",
+    "b": "Disinfecting combs, brushes, and other plastic tools",
+    "c": "Sanitizing towels and capes between clients",
+    "d": "Sterilizing approved metal implements after cleaning"
+   },
+   "distractorExplanations": {
+    "a": "Sterilization still requires cleaning first; debris shields microbes from steam.",
+    "b": "Most plastic combs and brushes cannot withstand autoclave heat; they are cleaned and disinfected in solution.",
+    "c": "Towels and capes are laundered; an autoclave is for heat-safe metal implements."
+   }
+  },
+  "barber-state-readiness-check-infection-013": {
+   "options": {
+    "a": "Replace it; do not guess the concentration",
+    "b": "Top it up with fresh concentrate to restore its strength",
+    "c": "Keep using it until the end of the day, then change it",
+    "d": "Use it for pre-cleaning only, not for disinfecting"
+   },
+   "distractorExplanations": {
+    "b": "Adding concentrate to spent solution gives an unknown dilution; contaminated solution is discarded and remixed.",
+    "c": "Cloudy or contaminated disinfectant must be changed right away, not at the end of the day.",
+    "d": "Spent disinfectant is discarded; pre-cleaning uses soap and water, not old disinfectant."
+   }
+  },
+  "barber-state-readiness-check-infection-015": {
+   "options": {
+    "a": "The official NIC barber written exam in practice form",
+    "b": "A licensed copy of a state board's retired exam paper",
+    "c": "An independent diagnostic — not a state board written exam",
+    "d": "The state's required practical exam, offered online"
+   },
+   "distractorExplanations": {
+    "a": "NIC exams are confidential and administered by testing vendors; UniPrep's mock is independent, not an NIC form.",
+    "b": "UniPrep has no license to state board exam papers; this is an independent diagnostic written from public outlines.",
+    "d": "Practical exams are hands-on and given in person; this is an independent written-style diagnostic."
+   }
+  },
+  "barber-state-readiness-check-cutting-016": {
+   "options": {
+    "a": "Using one guard length all around for an even finish",
+    "b": "Cutting a hard line at one level, then shaving below it",
+    "c": "Removing weight with thinning shears from the crown down",
+    "d": "Blending clipper lengths from short to long with no shelf"
+   },
+   "distractorExplanations": {
+    "a": "One guard length all around is a buzz cut; a taper fade graduates several lengths.",
+    "b": "A hard line with shaved hair below is an undercut or disconnection; a fade blends with no line.",
+    "c": "Thinning shears remove bulk; a taper fade is built with graduated clipper lengths."
+   }
+  },
+  "barber-state-readiness-check-cutting-017": {
+   "options": {
+    "a": "Remove bulk and blend without a hard line",
+    "b": "Create a sharp outline at the hairline and nape",
+    "c": "Cut a disconnected undercut with a visible line",
+    "d": "Add texture to the ends by point cutting"
+   },
+   "distractorExplanations": {
+    "b": "Sharp outlines are made with a trimmer or razor; clipper-over-comb removes bulk and blends.",
+    "c": "A disconnected undercut leaves a visible line, the opposite of the blend clipper-over-comb creates.",
+    "d": "Point cutting with shears adds texture; clipper-over-comb removes bulk and blends."
+   }
+  },
+  "barber-state-readiness-check-cutting-018": {
+   "options": {
+    "a": "Remove all the hair in one pass",
+    "b": "Reduce irritation before a closer pass",
+    "c": "Lift the hair so the razor can cut against it",
+    "d": "Replace the need for a pre-shave hot towel"
+   },
+   "distractorExplanations": {
+    "a": "The first pass with the grain is not meant to finish the shave; a closer second pass may follow.",
+    "c": "Cutting against the grain is the later, closer pass; the first pass goes with the grain to limit irritation.",
+    "d": "The hot towel softens the beard before any razor pass; the first-pass direction does not replace it."
+   }
+  },
+  "barber-state-readiness-check-cutting-019": {
+   "options": {
+    "a": "Cut straight across at the natural hairline in every style",
+    "b": "Set high above the natural hairline so it grows out slower",
+    "c": "Crisp, even, and appropriate to the agreed style",
+    "d": "Blocked square on every client for a sharper look"
+   },
+   "distractorExplanations": {
+    "a": "Neckline shape (blocked, rounded, tapered) depends on the agreed style, not one straight line for all.",
+    "b": "Setting the line too high above the natural hairline makes regrowth show sooner, not slower.",
+    "d": "A blocked neckline suits some styles, but the shape should match the client's agreed style."
+   }
+  },
+  "barber-state-readiness-check-cutting-020": {
+   "options": {
+    "a": "Creating a skin-tight fade line at the sides",
+    "b": "Edging a sharp outline around the ears",
+    "c": "Blending the nape to the skin with a foil shaver",
+    "d": "Soft texture and length control"
+   },
+   "distractorExplanations": {
+    "a": "Skin fades on the sides are clipper and shaver work; shear-over-comb shapes longer hair on top.",
+    "b": "Edging around the ears is trimmer or razor work, not shear-over-comb.",
+    "c": "Foil shavers finish skin fades at the nape; shear-over-comb controls length and texture on top."
+   }
+  },
+  "barber-state-readiness-check-cutting-021": {
+   "options": {
+    "a": "Looking at the cut from another angle or section to catch holes",
+    "b": "Recutting each section a second time at the same elevation and angle",
+    "c": "Checking that guard numbers match the client's last visit",
+    "d": "Comparing the finished cut to the client's reference photo"
+   },
+   "distractorExplanations": {
+    "b": "Cross-checking uses the opposite sectioning direction to find holes; recutting the same way repeats errors.",
+    "c": "Matching guard numbers to the last visit is consultation, not cross-checking the finished cut.",
+    "d": "Comparing to a photo checks style agreement; cross-checking inspects the cut from another angle to catch holes."
+   }
+  },
+  "barber-state-readiness-check-cutting-022": {
+   "options": {
+    "a": "Using a guard that is too long for the fade",
+    "b": "A blade too aggressive or a dry, rushed pass",
+    "c": "Lathering the skin before using the foil shaver",
+    "d": "Cutting with the grain on the first pass"
+   },
+   "distractorExplanations": {
+    "a": "A guard that is too long leaves hair longer; nicks come from bare blades used aggressively.",
+    "c": "Lubricated or prepped skin reduces nicks; a dry, rushed pass causes them.",
+    "d": "Cutting with the grain first lowers irritation; nicks come from aggressive or rushed passes."
+   }
+  },
+  "barber-state-readiness-check-cutting-023": {
+   "options": {
+    "a": "Sit as high on the cheek as the hair grows for fullness",
+    "b": "Follow the same line on every client for consistency",
+    "c": "Follow bone structure and the client's requested line",
+    "d": "Be set by the barber's taste rather than the client's"
+   },
+   "distractorExplanations": {
+    "a": "Leaving the natural high cheek growth ignores the agreed design and the client's bone structure.",
+    "b": "One standard line ignores each client's face shape and requested design.",
+    "d": "The client decides the beard line; the barber advises but does not impose a design."
+   }
+  },
+  "barber-state-readiness-check-cutting-024": {
+   "options": {
+    "a": "Cutting a blunt perimeter line on the nape",
+    "b": "Shortening overall length in one quick pass",
+    "c": "Blending a skin fade at the temple",
+    "d": "Removing bulk without losing the outline"
+   },
+   "distractorExplanations": {
+    "a": "Blunt perimeter lines are cut with regular shears or clippers; thinning shears remove bulk inside the shape.",
+    "b": "Thinning shears remove a fraction of hair per cut; they do not shorten overall length quickly.",
+    "c": "Skin fades are blended with clippers and shavers; thinning shears remove bulk in longer hair."
+   }
+  },
+  "barber-state-readiness-check-cutting-025": {
+   "options": {
+    "a": "Softening hair and skin before the razor",
+    "b": "Closing the pores before lather goes on",
+    "c": "Disinfecting the skin so antiseptic can be skipped",
+    "d": "Reusing the towel for the next client once rewarmed"
+   },
+   "distractorExplanations": {
+    "b": "A hot towel opens and softens; a cool towel after the shave is the closing step.",
+    "c": "Heat does not disinfect skin; a hot towel only softens the beard before shaving.",
+    "d": "Towels are single-use per client and must be laundered; rewarming does not clean them."
+   }
+  },
+  "barber-state-readiness-check-cutting-027": {
+   "options": {
+    "a": "Combing a natural part with styling product to hold it",
+    "b": "Blending the part area with a #1 guard to soften it",
+    "c": "Cutting or shaving a clean part line the client asked for",
+    "d": "Shaving the part line to match the barber's preference"
+   },
+   "distractorExplanations": {
+    "a": "A combed part with product is a soft part; a hard part is a cut or shaved line.",
+    "b": "Blending with a guard softens the area, the opposite of the clean line that makes a hard part.",
+    "d": "A hard part's placement is agreed with the client; it is not set by the barber's preference."
+   }
+  },
+  "barber-state-readiness-check-cutting-028": {
+   "options": {
+    "a": "Blending the beard with clipper-over-comb technique",
+    "b": "Checking with the client how low to take the fade",
+    "c": "Using guards in gradual steps up into the beard",
+    "d": "A dark shelf where the beard meets the cheek fade"
+   },
+   "distractorExplanations": {
+    "a": "Clipper-over-comb is a standard blending method; the thing to avoid is a dark shelf at the join.",
+    "b": "Confirming fade height with the client is good consultation practice, not something to avoid.",
+    "c": "Gradual guard steps create the blend; skipping them causes the shelf you want to avoid."
+   }
+  },
+  "barber-state-readiness-check-cutting-029": {
+   "options": {
+    "a": "Cutting with the growth pattern, not against it blindly",
+    "b": "Cutting the crown extra short so the cowlick lies flat",
+    "c": "Cutting against the growth to train the hair down",
+    "d": "Thinning the crown heavily to remove the swirl"
+   },
+   "distractorExplanations": {
+    "b": "Cutting a cowlick very short often makes it stand up more; leaving weight helps it lie down.",
+    "c": "Hair cannot be trained by cutting against the growth; it springs up and leaves holes.",
+    "d": "Heavy thinning removes the weight that holds the cowlick down, making it stick up more."
+   }
+  },
+  "barber-state-readiness-check-cutting-030": {
+   "options": {
+    "a": "Follow each side's natural hairline even if uneven",
+    "b": "Match both sides and the agreed tightness",
+    "c": "Push the line back on every client to look sharper",
+    "d": "Be cut freehand without checking in the mirror"
+   },
+   "distractorExplanations": {
+    "a": "Temple outlines are balanced on both sides; following an uneven hairline leaves the cut lopsided.",
+    "c": "Pushing the line back is a common error that recedes the hairline; follow the agreed tightness.",
+    "d": "Outlines are checked in the mirror for symmetry; freehand without checking risks uneven sides."
+   }
+  },
+  "barber-state-readiness-check-chemistry-032": {
+   "options": {
+    "a": "Left on until the timer ends, then neutralized as usual",
+    "b": "Covered with base cream and processed a few more minutes",
+    "c": "Neutralized on the spot without rinsing the cream out",
+    "d": "Rinsed immediately per the manufacturer's emergency steps"
+   },
+   "distractorExplanations": {
+    "a": "Burning means a chemical injury is starting; waiting for the timer worsens it, so rinse at once.",
+    "b": "Base cream is applied before the relaxer; it cannot stop a burn, and more processing worsens it.",
+    "c": "Neutralizing before rinsing traps relaxer on the scalp; a thorough rinse comes first."
+   }
+  },
+  "barber-state-readiness-check-chemistry-033": {
+   "options": {
+    "a": "Oxidative color or bleach systems as labeled",
+    "b": "Disinfecting implements between clients",
+    "c": "Cleaning a nick before applying a styptic",
+    "d": "Pre-softening coarse beard hair before a shave"
+   },
+   "distractorExplanations": {
+    "b": "Developer is not an EPA-registered disinfectant; implements need a registered disinfectant.",
+    "c": "Developer is far stronger than first-aid peroxide and is not for wounds; use an antiseptic.",
+    "d": "Beards are softened with hot towels and lather; developer is a color oxidizer."
+   }
+  },
+  "barber-state-readiness-check-chemistry-034": {
+   "options": {
+    "a": "Scalp haircolor works the same on beard hair and skin",
+    "b": "Skin staining and allergy risk — follow the beard-color directions",
+    "c": "Higher-volume developer gives better gray coverage on beards",
+    "d": "A patch test is unnecessary for products made for beards"
+   },
+   "distractorExplanations": {
+    "a": "Facial skin is more sensitive and stains easily; use products labeled for beards.",
+    "c": "Higher-volume developer raises irritation risk on facial skin; follow the beard product's directions.",
+    "d": "Beard dyes can contain the same allergens as scalp color; follow the label's patch-test directions."
+   }
+  },
+  "barber-state-readiness-check-chemistry-035": {
+   "options": {
+    "a": "Restore the hair's pH by rinsing with plain water",
+    "b": "Soften the hair further before the final smoothing",
+    "c": "Stop the straightening process and rebuild bonds as directed",
+    "d": "Break the remaining disulfide bonds for a straighter result"
+   },
+   "distractorExplanations": {
+    "a": "Rinsing removes relaxer, but bonds re-form only with the oxidizing neutralizer.",
+    "b": "Neutralizer stops processing; further softening is what the relaxer did, not the neutralizer.",
+    "d": "Breaking disulfide bonds is the thio relaxer's job; the neutralizer re-forms them."
+   }
+  },
+  "barber-state-readiness-check-chemistry-036": {
+   "options": {
+    "a": "Allowed after a negative patch test 24 hours earlier",
+    "b": "Safe when applied with a protective petroleum barrier",
+    "c": "Permitted on brows since they sit farther from the eye",
+    "d": "Prohibited in most shops — not a barber brow service"
+   },
+   "distractorExplanations": {
+    "a": "A patch test does not make aniline tint legal near the eyes; the FDA bans it on lashes and brows.",
+    "b": "A petroleum barrier does not make aniline tint safe near the eye; blindness risk remains.",
+    "c": "The FDA restriction covers brows as well as lashes; distance from the eye does not make it permitted."
+   }
+  },
+  "barber-state-readiness-check-chemistry-037": {
+   "options": {
+    "a": "After the time the manufacturer specifies, often 24–48 hours",
+    "b": "After 15 minutes, before the client leaves the chair",
+    "c": "After one week, to catch delayed reactions",
+    "d": "Right before applying color, about an hour after placement"
+   },
+   "distractorExplanations": {
+    "b": "Allergic contact reactions take hours to appear; a 15-minute read is too early to show them.",
+    "c": "Labels set 24–48 hours; waiting a week is not the manufacturer's read time.",
+    "d": "One hour is too soon for a delayed reaction; most labels call for 24–48 hours."
+   },
+   "explanation": "Allergy tests need time. This item asks: “A patch test is typically read:”. The matching answer is: After the time the manufacturer and board specify, often 24–48 hours. Independent UniPrep diagnostic — not an official state barber board paper. Some state boards set their own read time as well."
+  },
+  "barber-state-readiness-check-chemistry-038": {
+   "options": {
+    "a": "Acceptable if both relaxers are the same base type",
+    "b": "Outside the label — a chemical injury risk",
+    "c": "Acceptable for coarse, resistant hair after a strand test",
+    "d": "Acceptable if the mixture is timed for half as long"
+   },
+   "distractorExplanations": {
+    "a": "Same base type does not make mixing safe; formulas differ and the result is untested.",
+    "c": "Resistant hair needs a stronger single product as labeled, not a homemade mixture.",
+    "d": "Shorter timing does not make an untested caustic mixture safe for the scalp."
+   }
+  },
+  "barber-state-readiness-check-chemistry-040": {
+   "options": {
+    "a": "Shaved closely as usual, since minoxidil affects only hair",
+    "b": "Shaved against the grain to remove the extra growth",
+    "c": "Refused service until the client stops the medication",
+    "d": "Asked about skin sensitivity; shave gently or defer if inflamed"
+   },
+   "distractorExplanations": {
+    "a": "Topical minoxidil can irritate and dry skin; ask about sensitivity before a close shave.",
+    "b": "Against-the-grain shaving raises irritation risk on sensitive, medicated skin.",
+    "c": "Minoxidil alone is no reason to refuse; adjust the shave or defer if the skin is inflamed."
+   }
+  },
+  "barber-state-readiness-check-chemistry-041": {
+   "options": {
+    "a": "Sting and delay clotting — treat the nick first",
+    "b": "Disinfect the nick in place of a proper antiseptic",
+    "c": "Close the cut faster than a styptic powder",
+    "d": "Seal the skin so gloves are not needed"
+   },
+   "distractorExplanations": {
+    "b": "Aftershave is a cosmetic, not an approved antiseptic for wound care.",
+    "c": "Styptic is the product that stops bleeding; aftershave on a fresh nick mainly stings.",
+    "d": "Gloves are required when handling a blood exposure; aftershave seals nothing."
+   }
+  },
+  "barber-state-readiness-check-chemistry-042": {
+   "options": {
+    "a": "A same-day corrective relaxer to even out the texture",
+    "b": "A gentle reconstructive plan, not more chemical",
+    "c": "A thermal straightening set to smooth the damaged ends",
+    "d": "A bleach bath to remove buildup before conditioning"
+   },
+   "distractorExplanations": {
+    "a": "Another chemical on overprocessed hair causes breakage; correction waits for recovery.",
+    "c": "High heat on overprocessed hair causes more breakage; it needs gentle reconditioning first.",
+    "d": "Bleach is a harsh chemical that worsens overprocessed hair; reconditioning comes first."
+   }
+  },
+  "barber-state-readiness-check-chemistry-043": {
+   "options": {
+    "a": "Showing clients the product's retail ingredient list",
+    "b": "Recording the date each disinfectant jar is changed",
+    "c": "Looking up first aid and handling for a product",
+    "d": "Documenting client allergies before chemical services"
+   },
+   "distractorExplanations": {
+    "a": "SDS are for safety data such as hazards, first aid, and handling, not retail ingredient lists.",
+    "b": "Jar-change dates go in a disinfection log; SDS give hazard and first-aid data.",
+    "d": "Client allergies go on the client record card; SDS describe product hazards."
+   }
+  },
+  "barber-state-readiness-check-chemistry-044": {
+   "options": {
+    "a": "The client from bacteria on the barber's hands",
+    "b": "The product from contamination by skin oils",
+    "c": "The barber's hands from cuts by sharp implements",
+    "d": "The barber's skin from repeated chemical exposure"
+   },
+   "distractorExplanations": {
+    "a": "During chemical services gloves mainly protect the barber from the chemical, not the client from bacteria.",
+    "b": "Gloves are PPE for the barber; preventing product contamination is not their purpose here.",
+    "c": "Disposable gloves do not stop cuts; they guard against chemical contact dermatitis."
+   }
+  },
+  "barber-state-readiness-check-chemistry-045": {
+   "options": {
+    "a": "Stain skin and trigger allergy — treat it as a chemical",
+    "b": "Be applied safely without a patch test since it is plant-based",
+    "c": "Wash out fully after a few shampoos like a color rinse",
+    "d": "Be layered over oxidative tint without any reaction"
+   },
+   "distractorExplanations": {
+    "b": "'Natural' does not mean allergy-free; follow the label's patch-test directions for henna too.",
+    "c": "Henna is long-lasting and does not wash out like a temporary color rinse.",
+    "d": "Compound hennas with metallic salts can react with oxidative products and damage hair."
+   }
+  },
+  "barber-state-readiness-check-laws-046": {
+   "options": {
+    "a": "Kept at home and shown to inspectors on request",
+    "b": "Current and displayed as the board requires",
+    "c": "Renewed only when the shop changes owners",
+    "d": "Valid in any state once issued by one board"
+   },
+   "distractorExplanations": {
+    "a": "Most boards require the license to be posted at the work station, not kept at home.",
+    "c": "Licenses are renewed on the board's cycle, not when the shop changes owners.",
+    "d": "Licenses are state-specific; working elsewhere needs reciprocity or endorsement."
+   }
+  },
+  "barber-state-readiness-check-laws-047": {
+   "options": {
+    "a": "Sweep hair and clean the shop floor",
+    "b": "Book appointments and handle payments",
+    "c": "Perform paid haircuts or shaves",
+    "d": "Launder towels and restock retail shelves"
+   },
+   "distractorExplanations": {
+    "a": "Sweeping and cleaning are not barbering services, so unlicensed staff may do them.",
+    "b": "Reception and payment tasks are not licensed services; unlicensed staff may do them.",
+    "d": "Laundry and stocking are support tasks that do not require a barber license."
+   }
+  },
+  "barber-state-readiness-check-laws-048": {
+   "options": {
+    "a": "Only the service price and the client's phone number",
+    "b": "The client's medical diagnoses as reported by their physician",
+    "c": "The product brand, with timing and results left to memory",
+    "d": "Date, service, and any test or incident notes the board expects"
+   },
+   "distractorExplanations": {
+    "a": "Price and phone are not enough; records note the service, tests, and any incident.",
+    "b": "Barbers do not collect physician diagnoses; records note service, tests, and incidents.",
+    "c": "Timing and results must be written down; memory is not a record the board accepts."
+   }
+  },
+  "barber-state-readiness-check-laws-049": {
+   "options": {
+    "a": "A parent/guardian as state law requires for services or photos",
+    "b": "Written consent from the minor alone once they are over the age of 12",
+    "c": "A licensed cosmetologist rather than a barber",
+    "d": "No consent for a haircut, only for chemical services"
+   },
+   "distractorExplanations": {
+    "b": "Minors generally cannot give legal consent on their own; a parent or guardian consents.",
+    "c": "Barbers may serve minors; the issue is guardian consent, not license type.",
+    "d": "Guardian consent rules can apply to services and photos, not only chemicals."
+   }
+  },
+  "barber-state-readiness-check-laws-050": {
+   "options": {
+    "a": "Allowed if the barber completed a trichology course",
+    "b": "Prohibited misleading advertising",
+    "c": "Allowed if a physician works in the same building",
+    "d": "A sanitation violation handled by the health department"
+   },
+   "distractorExplanations": {
+    "a": "A trichology course does not make someone an MD; the claim is still misleading.",
+    "c": "A nearby physician does not let a barber claim to be one; it is still false advertising.",
+    "d": "It is a false-advertising and scope violation, not a sanitation matter."
+   }
+  },
+  "barber-state-readiness-check-laws-051": {
+   "options": {
+    "a": "A warning only, since boards cannot fine a shop",
+    "b": "Penalties for the owner but not for licensed staff",
+    "c": "Fines or closure for sanitation or licensing failures",
+    "d": "Citations for sanitation issues, not for license status"
+   },
+   "distractorExplanations": {
+    "a": "Boards can fine, suspend, or close shops; inspections are not warning-only.",
+    "b": "Individual licensees can be cited for their own violations, not just owners.",
+    "d": "Inspectors check licenses too; expired or missing licenses lead to citations."
+   }
+  },
+  "barber-state-readiness-check-laws-052": {
+   "options": {
+    "a": "Optional for experienced barbers",
+    "b": "Required only for instructors",
+    "c": "Needed to reinstate a lapsed license",
+    "d": "Needed to renew on time"
+   },
+   "distractorExplanations": {
+    "a": "Where CE is required, experience does not exempt a barber; it is a renewal condition.",
+    "b": "Where states require CE, it applies to licensed barbers, not just instructors.",
+    "c": "CE is a routine renewal requirement, not only a reinstatement step after a lapse."
+   }
+  },
+  "barber-state-readiness-check-laws-053": {
+   "options": {
+    "a": "Unlawful discrimination",
+    "b": "Allowed if the shop posts a refusal policy",
+    "c": "A matter for the shop owner's discretion",
+    "d": "Allowed in a private booth-rental space"
+   },
+   "distractorExplanations": {
+    "b": "A posted policy does not override public-accommodation law banning race discrimination.",
+    "c": "Race discrimination is illegal; owner discretion does not extend to protected classes.",
+    "d": "Booth renters serve the public and are bound by the same anti-discrimination law."
+   }
+  },
+  "barber-state-readiness-check-laws-054": {
+   "options": {
+    "a": "Covered by the shop owner's license for sanitation",
+    "b": "Responsible for their license and station sanitation",
+    "c": "Exempt from inspections at their rented chair",
+    "d": "Free to set sanitation rules apart from the board's"
+   },
+   "distractorExplanations": {
+    "a": "Booth renters are responsible for their own station; the owner's license does not cover them.",
+    "c": "Rented stations are inspected like any other; renting does not exempt them.",
+    "d": "Board sanitation rules apply to every licensee; renters cannot set their own."
+   }
+  },
+  "barber-state-readiness-check-laws-055": {
+   "options": {
+    "a": "Offer the shave under a supervising barber's endorsement",
+    "b": "Offer the shave if the client signs a consent form",
+    "c": "Get the endorsement or do not offer that shave",
+    "d": "Offer the shave using a disposable-blade razor instead"
+   },
+   "distractorExplanations": {
+    "a": "Endorsements are personal; working under someone else's does not authorize you.",
+    "b": "Client consent does not replace a required state endorsement.",
+    "d": "A disposable-blade straight razor is still a straight razor under the endorsement rule."
+   }
+  },
+  "barber-state-readiness-check-laws-056": {
+   "options": {
+    "a": "A voluntary gratuity line on the client's receipt",
+    "b": "Part of the cash wage where a tip credit legally applies",
+    "c": "The optional extra a client hands a booth renter",
+    "d": "Sales tax or shop policies on reporting, where they apply"
+   },
+   "distractorExplanations": {
+    "a": "A gratuity line is where a tip is recorded, so tips do fill it; tax and reporting duties remain.",
+    "b": "Under federal tip-credit rules tips can count toward part of a tipped worker's wage.",
+    "c": "That extra cash is itself a tip; it still has to be reported as income."
+   }
+  },
+  "barber-state-readiness-check-laws-057": {
+   "options": {
+    "a": "Consent — especially for faces of minors",
+    "b": "Consent only if the face shows",
+    "c": "No consent if the photo is posted on the shop's page",
+    "d": "Consent from the shop owner, not the client"
+   },
+   "distractorExplanations": {
+    "b": "Identifiable features such as tattoos can identify a client too; ask consent for any client photo.",
+    "c": "Posting on the shop's own page is still public use of a likeness and needs consent.",
+    "d": "The likeness belongs to the client; the owner cannot consent for them."
+   }
+  },
+  "barber-state-readiness-check-laws-058": {
+   "options": {
+    "a": "Only the unlicensed coworker can face a board penalty for the violation",
+    "b": "You can be pulled into a shop violation — report per board rules",
+    "c": "It is allowed if they cut under your supervision",
+    "d": "It is the shop owner's problem to handle, not yours to report to the board"
+   },
+   "distractorExplanations": {
+    "a": "Licensees and owners who aid unlicensed practice can also be disciplined.",
+    "c": "Supervision does not license a coworker unless they are a registered apprentice in a program.",
+    "d": "Licensees can share liability; the board expects violations to be reported."
+   }
+  },
+  "barber-state-readiness-check-laws-059": {
+   "options": {
+    "a": "A license, with sanitation rules waived off-site",
+    "b": "Only the event host's permit to cover the barber",
+    "c": "A license and sanitation you can prove",
+    "d": "Sanitation, with the license kept back at the shop"
+   },
+   "distractorExplanations": {
+    "a": "Sanitation rules apply wherever the service is performed, including events.",
+    "b": "The host's permit does not replace the barber's own license.",
+    "d": "Boards generally require the license to be available where services are provided."
+   }
+  },
+  "barber-state-readiness-check-laws-060": {
+   "options": {
+    "a": "Leaving implements soaking in the disinfectant jar overnight to save time",
+    "b": "Storing used and disinfected implements in one drawer",
+    "c": "Leaving open chemical containers at the stations, ready for the morning",
+    "d": "Securing chemicals and leaving implements not sitting in dirty water"
+   },
+   "distractorExplanations": {
+    "a": "Leaving implements in solution overnight exceeds the contact time and damages tools; remove, dry, and store.",
+    "b": "Used and disinfected implements must be kept apart to prevent cross-contamination.",
+    "c": "Chemicals must be closed and stored at closing to prevent spills and exposure."
+   }
+  }
+ }
+}

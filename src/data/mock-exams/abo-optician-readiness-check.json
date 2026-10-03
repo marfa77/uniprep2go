@@ -7,7 +7,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only frame color"
+        "text": "How much a material spreads light into colors"
       },
       {
         "id": "b",
@@ -15,19 +15,19 @@
       },
       {
         "id": "c",
-        "text": "Only temple length"
+        "text": "How much UV light a material absorbs"
       },
       {
         "id": "d",
-        "text": "Only nose pad size"
+        "text": "How hard a material's surface is to scratch"
       }
     ],
     "correctOptionId": "b",
     "explanation": "How much a material slows/bends light.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only frame color.",
-      "c": "Not the best answer: Only temple length.",
-      "d": "Not the best answer: Only nose pad size."
+      "a": "Spreading light into colors is dispersion, which the Abbe value describes; index describes how much light slows and bends.",
+      "c": "UV absorption depends on the material's UV cutoff and any absorber, not on its index of refraction.",
+      "d": "Scratch resistance is a hardness/hard-coat property; index of refraction concerns the speed of light in the material."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Speeds up"
+        "text": "Speeds up and bends away from the normal"
       },
       {
         "id": "b",
-        "text": "Stops"
+        "text": "Keeps its speed but changes wavelength"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "Ignores Snell’s law"
+        "text": "Changes color as its frequency drops"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Slows and may refract.",
     "distractorExplanations": {
-      "a": "Not the best answer: Speeds up always.",
-      "b": "Not the best answer: Stops.",
-      "d": "Not the best answer: Ignores Snell’s law."
+      "a": "Glass has a higher index than air, so light slows and bends toward the normal; it does not speed up and bend away.",
+      "b": "Speed and wavelength drop together in glass (v = f x wavelength); frequency is what stays constant at the boundary.",
+      "d": "Frequency, and so perceived color, stays the same when light enters a new medium; speed and wavelength change instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -110,23 +110,23 @@
       },
       {
         "id": "b",
-        "text": "Lens edging RPM"
+        "text": "Brightness (intensity) of the light"
       },
       {
         "id": "c",
-        "text": "Hinge torque"
+        "text": "Lens power in diopters"
       },
       {
         "id": "d",
-        "text": "Case size"
+        "text": "Degree of polarization of light"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Perceived color of light.",
     "distractorExplanations": {
-      "b": "Not the best answer: Lens edging RPM only.",
-      "c": "Not the best answer: Hinge torque only.",
-      "d": "Not the best answer: Case size."
+      "b": "Brightness relates to the amplitude/intensity of the light wave, not its wavelength, which sets the perceived hue.",
+      "c": "Lens power depends on surface curves and index; wavelength is a property of the light itself, not of the lens.",
+      "d": "Polarization describes the plane in which the light wave vibrates, which is independent of its wavelength."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -139,11 +139,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Index decreases always with no power change"
+        "text": "Power in diopters decreases"
       },
       {
         "id": "b",
-        "text": "PD increases"
+        "text": "Lens diameter increases"
       },
       {
         "id": "c",
@@ -151,15 +151,15 @@
       },
       {
         "id": "d",
-        "text": "A shrinks"
+        "text": "Abbe value increases"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Power in diopters increases.",
     "distractorExplanations": {
-      "a": "Not the best answer: Index decreases always with no power change.",
-      "b": "Not the best answer: PD increases.",
-      "d": "Not the best answer: A shrinks."
+      "a": "Focal length is the reciprocal of power (f = 1/D), so lower power gives a longer focal length, not a shorter one.",
+      "b": "Lens diameter affects field of view and edge thickness; it does not change the focal length of the lens.",
+      "d": "Abbe value describes dispersion (chromatic aberration); it does not determine focal length or lens power."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Random corners"
+        "text": "The optical center"
       },
       {
         "id": "b",
-        "text": "Only the temple tip"
+        "text": "The cylinder axis"
       },
       {
         "id": "c",
-        "text": "Only the scratch coat"
+        "text": "The 90° meridian"
       },
       {
         "id": "d",
-        "text": "The base (image toward base convention in ophthalmic optics teaching contexts)"
+        "text": "The base"
       }
     ],
     "correctOptionId": "d",
     "explanation": "The base (image toward base convention in ophthalmic optics teaching contexts)",
     "distractorExplanations": {
-      "a": "Not the best answer: Random corners.",
-      "b": "Not the best answer: Only the temple tip.",
-      "c": "Not the best answer: Only the scratch coat."
+      "a": "The optical center is the point of zero prism; prismatic displacement is described by base and apex, not the OC.",
+      "b": "The cylinder axis is the meridian of no cylinder power; it does not set the direction of prismatic image shift.",
+      "c": "The 90-degree meridian is a vertical reference line; prism direction is named by base (up, down, in, out), not a meridian."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -209,23 +209,23 @@
       },
       {
         "id": "b",
-        "text": "Only frame wrap"
+        "text": "The bending of light at a single surface"
       },
       {
         "id": "c",
-        "text": "Only tint %"
+        "text": "The splitting of white light into colors"
       },
       {
         "id": "d",
-        "text": "Only drill mount type"
+        "text": "The reflection of rays off the front lens surface"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Convergence/divergence of a pencil of rays.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only frame wrap.",
-      "c": "Not the best answer: Only tint %.",
-      "d": "Not the best answer: Only drill mount type."
+      "b": "Bending at a surface is refraction; vergence is the degree to which a pencil of rays converges or diverges.",
+      "c": "Splitting white light into colors is dispersion, described by the Abbe value, not vergence.",
+      "d": "Reflection off a lens surface is what AR coating manages; vergence describes rays spreading apart or converging."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only virtual"
+        "text": "Seen only by looking back through the lens"
       },
       {
         "id": "b",
-        "text": "Impossible with lenses"
+        "text": "Formed by a plane mirror"
       },
       {
         "id": "c",
-        "text": "Projected/focused onto a screen in appropriate optical setups"
+        "text": "Projected/focused onto a screen"
       },
       {
         "id": "d",
-        "text": "Only for prisms"
+        "text": "Formed by a minus lens from a real object"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Projected/focused onto a screen in appropriate optical setups.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only virtual always.",
-      "b": "Not the best answer: Impossible with lenses.",
-      "d": "Not the best answer: Only for prisms."
+      "a": "Images seen by looking back through the optics are virtual; real images form where rays actually converge.",
+      "b": "A plane mirror forms a virtual, upright image behind the mirror, which cannot be caught on a screen.",
+      "d": "A minus lens diverges light from a real object, so it forms a virtual image, not a real one."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Frame ovality"
+        "text": "Off-axis blur from oblique astigmatism"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "Screw torque"
+        "text": "Light loss from surface reflections"
       },
       {
         "id": "d",
-        "text": "Case humidity"
+        "text": "Image size change from lens power"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Dispersion by wavelength.",
     "distractorExplanations": {
-      "a": "Not the best answer: Frame ovality.",
-      "c": "Not the best answer: Screw torque.",
-      "d": "Not the best answer: Case humidity."
+      "a": "Oblique astigmatism is a monochromatic aberration from viewing off-axis, not a wavelength-dependent effect.",
+      "c": "Reflection losses are handled by AR coating; chromatic aberration comes from wavelengths bending by different amounts.",
+      "d": "Image size change is spectacle magnification, driven by power and vertex distance, not by dispersion of wavelengths."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -341,23 +341,23 @@
       },
       {
         "id": "b",
-        "text": "Temple flexibility"
+        "text": "The refractive index of a lens material"
       },
       {
         "id": "c",
-        "text": "Pad arm length"
+        "text": "The UV cutoff wavelength of a material"
       },
       {
         "id": "d",
-        "text": "Hinge type"
+        "text": "The impact resistance of a lens material"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Dispersion characteristics of a material.",
     "distractorExplanations": {
-      "b": "Not the best answer: Temple flexibility only.",
-      "c": "Not the best answer: Pad arm length.",
-      "d": "Not the best answer: Hinge type."
+      "b": "Refractive index describes how much a material bends light; the Abbe value describes how much it disperses colors.",
+      "c": "UV cutoff is a separate material property; the Abbe value measures dispersion, with lower numbers meaning more fringing.",
+      "d": "Impact resistance is tested with drop-ball standards; the Abbe value relates to chromatic dispersion, not toughness."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Virtual upright images (simple case)"
+        "text": "Virtual upright images"
       },
       {
         "id": "b",
-        "text": "Always real inverted images"
+        "text": "Real inverted images"
       },
       {
         "id": "c",
-        "text": "No images"
+        "text": "Virtual inverted images"
       },
       {
         "id": "d",
-        "text": "Only colored fringes"
+        "text": "Real upright images"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Virtual upright images (simple case)",
     "distractorExplanations": {
-      "b": "Not the best answer: Always real inverted images.",
-      "c": "Not the best answer: No images.",
-      "d": "Not the best answer: Only colored fringes."
+      "b": "Real inverted images come from concave mirrors with the object beyond F; a plane mirror forms virtual images.",
+      "c": "Plane-mirror images are upright, though laterally reversed; they are not inverted top to bottom.",
+      "d": "A plane-mirror image lies behind the mirror and cannot be projected, so it is virtual, not real."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -403,11 +403,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always virtual upright"
+        "text": "Forms a virtual upright image"
       },
       {
         "id": "b",
-        "text": "Never focuses"
+        "text": "Forms a real upright image"
       },
       {
         "id": "c",
@@ -415,15 +415,15 @@
       },
       {
         "id": "d",
-        "text": "Only prismatic blur"
+        "text": "Forms a real, inverted, enlarged image"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Can form a real inverted image. The other choices are incorrect statements about the concept.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always virtual upright only.",
-      "b": "Not the best answer: Never focuses.",
-      "d": "Not the best answer: Only prismatic blur."
+      "a": "A virtual upright image forms when the object is inside F of a plus lens, not when it is beyond 2F.",
+      "b": "Real images from a single plus lens are inverted; an upright image from a plus lens is a virtual one.",
+      "d": "An object beyond 2F gives a diminished real image; an enlarged real image needs the object between F and 2F."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Thicker at edges than center (for typical spherical minus)"
+        "text": "Thicker at edges than center"
       },
       {
         "id": "c",
-        "text": "Plano"
+        "text": "Equal in thickness at center and edge"
       },
       {
         "id": "d",
-        "text": "Only Fresnel stickers"
+        "text": "Thicker at the top edge than the bottom"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Thicker at edges than center (for typical spherical minus)",
     "distractorExplanations": {
       "a": "Not the best answer: Thicker at center than edges.",
-      "c": "Not the best answer: Plano always.",
-      "d": "Not the best answer: Only Fresnel stickers."
+      "c": "Equal center and edge thickness describes a plano lens with no power, not a minus lens.",
+      "d": "A thicker top edge describes base-up prism, not the center-to-edge thickness profile of a minus lens."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Thicker at edges"
+        "text": "Thicker at edges than center"
       },
       {
         "id": "b",
-        "text": "Only executive bifocals"
+        "text": "Thicker at the nasal edge than temporal"
       },
       {
         "id": "c",
-        "text": "Only polarized film"
+        "text": "Equal in thickness across the lens"
       },
       {
         "id": "d",
-        "text": "Thicker at center than edges (typical spherical plus)"
+        "text": "Thicker at center than edges"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Thicker at center than edges (typical spherical plus)",
     "distractorExplanations": {
-      "a": "Not the best answer: Thicker at edges always.",
-      "b": "Not the best answer: Only executive bifocals.",
-      "c": "Not the best answer: Only polarized film."
+      "a": "A thin center with thick edges describes a minus lens; plus lenses are thickest at the center.",
+      "b": "A thicker nasal edge describes base-in prism, not the center-to-edge thickness profile of a plus lens.",
+      "c": "Uniform thickness describes a plano lens with no power; plus power requires a thicker center."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -502,7 +502,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Glass only brand"
+        "text": "Polycarbonate lens material"
       },
       {
         "id": "b",
@@ -510,19 +510,19 @@
       },
       {
         "id": "c",
-        "text": "Metal frame alloy"
+        "text": "High-index glass lens material"
       },
       {
         "id": "d",
-        "text": "Nose pad silicone"
+        "text": "Thermoplastic frame material"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Plastic lens material.",
     "distractorExplanations": {
-      "a": "Not the best answer: Glass only brand.",
-      "c": "Not the best answer: Metal frame alloy.",
-      "d": "Not the best answer: Nose pad silicone only."
+      "a": "CR-39 is a thermoset allyl resin; polycarbonate is a different thermoplastic with higher impact resistance and index.",
+      "c": "CR-39 is a plastic with an index of about 1.498; it is neither a glass nor a high-index material.",
+      "d": "CR-39 is a lens material; frame thermoplastics include materials such as nylon and TR-90, not CR-39."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,11 +535,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always highest Abbe"
+        "text": "High Abbe value and minimal color fringing"
       },
       {
         "id": "b",
-        "text": "Never needs coatings"
+        "text": "Scratch resistance without needing a hard coat"
       },
       {
         "id": "c",
@@ -547,15 +547,15 @@
       },
       {
         "id": "d",
-        "text": "Heaviest option"
+        "text": "Lighter weight and a higher Abbe value than CR-39 lenses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Impact resistance and thinner profile vs some plastics.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always highest Abbe.",
-      "b": "Not the best answer: Never needs coatings.",
-      "d": "Not the best answer: Heaviest option always."
+      "a": "Polycarbonate has a low Abbe value (about 30), so it shows more chromatic aberration, not less.",
+      "b": "Polycarbonate is a soft material that scratches easily, so it is supplied with a factory hard coat.",
+      "d": "Polycarbonate is lighter than CR-39, but its Abbe value (about 30) is far lower than CR-39's (about 58)."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -568,7 +568,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase thickness"
+        "text": "Raise the Abbe value for clearer peripheral vision"
       },
       {
         "id": "b",
@@ -576,19 +576,19 @@
       },
       {
         "id": "c",
-        "text": "Remove need for PD"
+        "text": "Reduce reflections without needing AR coating"
       },
       {
         "id": "d",
-        "text": "Eliminate refraction"
+        "text": "Lower the lens power needed for the same Rx"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Reduce thickness/weight for stronger powers.",
     "distractorExplanations": {
-      "a": "Not the best answer: Increase thickness always.",
-      "c": "Not the best answer: Remove need for PD.",
-      "d": "Not the best answer: Eliminate refraction."
+      "a": "Higher-index materials usually have lower Abbe values, so they increase color fringing rather than reduce it.",
+      "c": "Higher index increases surface reflections, so high-index lenses need AR coating more, not less.",
+      "d": "The prescribed power stays the same; high index reaches that power with flatter, thinner surfaces."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,7 +601,7 @@
     "options": [
       {
         "id": "a",
-        "text": "UV always exclusively without design"
+        "text": "UV transmission through the lens"
       },
       {
         "id": "b",
@@ -609,19 +609,19 @@
       },
       {
         "id": "c",
-        "text": "Impact resistance need"
+        "text": "Surface scratches"
       },
       {
         "id": "d",
-        "text": "Pupil size"
+        "text": "Light transmission"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Surface reflections.",
     "distractorExplanations": {
-      "a": "Not the best answer: UV always exclusively without design.",
-      "c": "Not the best answer: Impact resistance need.",
-      "d": "Not the best answer: Pupil size."
+      "a": "AR coatings cut reflected light; UV transmission is blocked by the lens material or a UV absorber.",
+      "c": "Scratch resistance comes from a hard coat; AR layers reduce reflections and can even make scratches more visible.",
+      "d": "AR coating increases light transmission by cutting reflections; it does not reduce the light passing through."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stay dark indoors"
+        "text": "Darken most behind car windshields"
       },
       {
         "id": "b",
-        "text": "Are only glass"
+        "text": "Darken more in hot weather"
       },
       {
         "id": "c",
-        "text": "Never fade"
+        "text": "Darken in response to bright indoor light"
       },
       {
         "id": "d",
-        "text": "Darken with UV exposure (typical)"
+        "text": "Darken with UV exposure"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Darken with UV exposure (typical)",
     "distractorExplanations": {
-      "a": "Not the best answer: Stay dark indoors always.",
-      "b": "Not the best answer: Are only glass.",
-      "c": "Not the best answer: Never fade."
+      "a": "Most windshields block UV, so standard photochromic lenses darken very little inside a car.",
+      "b": "Photochromics darken less in heat, because warmth speeds the reaction that fades them back to clear.",
+      "c": "Indoor light contains little UV, so standard photochromic lenses stay mostly clear indoors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "All blue light medically guaranteed"
+        "text": "Blue light from digital screens"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Need for Rx"
+        "text": "Glare from vertically polarized light"
       },
       {
         "id": "d",
-        "text": "Frame wrap"
+        "text": "Image blur from high astigmatism"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Glare from horizontal reflections.",
     "distractorExplanations": {
-      "a": "Not the best answer: All blue light medically guaranteed.",
-      "c": "Not the best answer: Need for Rx.",
-      "d": "Not the best answer: Frame wrap."
+      "a": "Blue-light filtering is a separate coating or absorber; polarizing film blocks horizontally polarized glare.",
+      "c": "Polarized lenses have a vertical transmission axis, so vertically polarized light passes; horizontal glare is blocked.",
+      "d": "Polarization does not correct optical blur; astigmatism needs cylinder power in the prescription."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -704,23 +704,23 @@
       },
       {
         "id": "b",
-        "text": "Only change color"
+        "text": "Add base-in prism to ease convergence at near"
       },
       {
         "id": "c",
-        "text": "Only add prism randomly"
+        "text": "Correct astigmatism without cylinder power"
       },
       {
         "id": "d",
-        "text": "Eliminate PD needs"
+        "text": "Raise the Abbe value of the lens material"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Improve cosmetics and optics for certain powers.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only change color.",
-      "c": "Not the best answer: Only add prism randomly.",
-      "d": "Not the best answer: Eliminate PD needs."
+      "b": "Prism is ordered in the Rx; aspheric surfaces flatten the lens and reduce peripheral aberrations instead.",
+      "c": "Astigmatism still needs cylinder power; aspheric curves reduce off-axis aberrations, not ocular astigmatism.",
+      "d": "Abbe value is a fixed property of the material; aspheric surfaces change lens shape, not material dispersion."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -766,15 +766,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A hard lined trifocal"
+        "text": "A lined segment with intermediate power"
       },
       {
         "id": "b",
-        "text": "No distance zone"
+        "text": "A corridor of increasing minus power"
       },
       {
         "id": "c",
-        "text": "Only prism slabs"
+        "text": "A single power across the whole lens"
       },
       {
         "id": "d",
@@ -784,9 +784,9 @@
     "correctOptionId": "d",
     "explanation": "A corridor of increasing plus power.",
     "distractorExplanations": {
-      "a": "Not the best answer: A hard lined trifocal only.",
-      "b": "Not the best answer: No distance zone.",
-      "c": "Not the best answer: Only prism slabs."
+      "a": "A visible line with an intermediate zone describes a trifocal; progressive lenses blend power with no lines.",
+      "b": "Power in a progressive corridor increases in plus toward the near zone, not in minus.",
+      "c": "One power across the lens describes a single-vision lens; a progressive changes power along the corridor."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Color the lens"
+        "text": "Manage horizontal prism imbalance at distance"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Shorten temples"
+        "text": "Thin the edges of high minus lenses"
       },
       {
         "id": "d",
-        "text": "Increase wrap"
+        "text": "Reduce image size difference in aniseikonia"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Manage vertical imbalance in anisometropia.",
     "distractorExplanations": {
-      "a": "Not the best answer: Color the lens.",
-      "c": "Not the best answer: Shorten temples.",
-      "d": "Not the best answer: Increase wrap only."
+      "a": "Slab-off (bicentric grinding) adds vertical base-up prism at near; it does not address horizontal imbalance.",
+      "c": "Edge thinning in high minus is done with lenticular designs or high index, not with slab-off.",
+      "d": "Image size differences call for iseikonic design (base curve, thickness); slab-off corrects vertical prism at near."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -836,23 +836,23 @@
       },
       {
         "id": "b",
-        "text": "PD"
+        "text": "Back vertex power of the finished lens"
       },
       {
         "id": "c",
-        "text": "Temple length"
+        "text": "Center thickness of the lens"
       },
       {
         "id": "d",
-        "text": "Bridge size"
+        "text": "Prism and its base direction"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Surface curves/power relationships.",
     "distractorExplanations": {
-      "b": "Not the best answer: PD.",
-      "c": "Not the best answer: Temple length.",
-      "d": "Not the best answer: Bridge size."
+      "b": "Back vertex power is read on a lensometer; a lens clock measures surface curvature (sag) only.",
+      "c": "Center thickness is measured with thickness calipers; a lens clock reads surface curvature.",
+      "d": "Prism and base direction are found with a lensometer, not with a lens clock."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Make lenses unbreakable"
+        "text": "Raise the impact resistance of the lens"
       },
       {
         "id": "b",
-        "text": "Replace polycarbonate"
+        "text": "Reduce surface reflections"
       },
       {
         "id": "c",
-        "text": "Improve abrasion resistance but are not indestructible"
+        "text": "Improve abrasion resistance"
       },
       {
         "id": "d",
-        "text": "Remove reflections alone"
+        "text": "Block UV transmission"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Improve abrasion resistance but are not indestructible.",
     "distractorExplanations": {
-      "a": "Not the best answer: Make lenses unbreakable.",
-      "b": "Not the best answer: Replace polycarbonate.",
-      "d": "Not the best answer: Remove reflections alone."
+      "a": "Hard coats resist surface abrasion; impact resistance depends on lens material and thickness, not the coating.",
+      "b": "Reducing reflections is the job of AR coating, not of the scratch-resistant hard coat.",
+      "d": "UV is blocked by the lens material or a UV absorber; hard coats target surface abrasion."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "Only darkness of tint"
+        "text": "The darkness of the tint applied to the lens"
       },
       {
         "id": "c",
-        "text": "Only polarization"
+        "text": "Whether a polarizing film is in the lens"
       },
       {
         "id": "d",
-        "text": "Only AR"
+        "text": "The color of the AR coating's residual reflex"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Material/coatings designed for UV attenuation.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only darkness of tint.",
-      "c": "Not the best answer: Only polarization.",
-      "d": "Not the best answer: Only AR."
+      "b": "A dark tint without a UV absorber can dilate pupils and admit more UV; tint darkness is not UV protection.",
+      "c": "Polarizing film cuts horizontal glare; UV blocking comes from the lens material or a UV absorber.",
+      "d": "The residual AR reflex color is cosmetic and says nothing about how much UV the lens attenuates."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,15 +964,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Guessing axis"
+        "text": "Adding the cylinder to the sphere and keeping the axis"
       },
       {
         "id": "b",
-        "text": "Ignoring cyl"
+        "text": "Changing the cylinder sign and keeping the axis"
       },
       {
         "id": "c",
-        "text": "Changing PD"
+        "text": "Adding 90° to the axis and keeping the sphere"
       },
       {
         "id": "d",
@@ -982,9 +982,9 @@
     "correctOptionId": "d",
     "explanation": "Correct sphere/cyl/axis conversion rules.",
     "distractorExplanations": {
-      "a": "Not the best answer: Guessing axis.",
-      "b": "Not the best answer: Ignoring cyl.",
-      "c": "Not the best answer: Changing PD only."
+      "a": "Transposition adds the cylinder to the sphere and also changes the axis by 90 degrees; the axis cannot stay the same.",
+      "b": "Flipping the cylinder sign alone is incomplete; you must also add cylinder to sphere and change the axis by 90.",
+      "c": "Rotating the axis 90 degrees is one step; the new sphere is sphere plus cylinder, with the cylinder sign reversed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -997,7 +997,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Temple length"
+        "text": "Distance between frame box centers"
       },
       {
         "id": "b",
@@ -1005,19 +1005,19 @@
       },
       {
         "id": "c",
-        "text": "Bridge width"
+        "text": "Bridge width of the frame"
       },
       {
         "id": "d",
-        "text": "Lens diameter"
+        "text": "Distance from pupil to lens back"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Distance between pupils. The other choices are incorrect statements about the concept.",
     "distractorExplanations": {
-      "a": "Not the best answer: Temple length.",
-      "c": "Not the best answer: Bridge width only.",
-      "d": "Not the best answer: Lens diameter only."
+      "a": "Distance between box centers is the frame PD (DBC), a frame measurement, not the patient's pupillary distance.",
+      "c": "Bridge width (DBL) is the distance between the lenses at the bridge, a frame measurement.",
+      "d": "The distance from the eye to the back lens surface is vertex distance, not pupillary distance."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1034,23 +1034,23 @@
       },
       {
         "id": "b",
-        "text": "Set screw torque"
+        "text": "Locate the point where add power is read"
       },
       {
         "id": "c",
-        "text": "Choose color"
+        "text": "Locate the prism reference point for checking"
       },
       {
         "id": "d",
-        "text": "Measure case size"
+        "text": "Mark where distance power is verified"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Position the lens design relative to pupil.",
     "distractorExplanations": {
-      "b": "Not the best answer: Set screw torque.",
-      "c": "Not the best answer: Choose color.",
-      "d": "Not the best answer: Measure case size."
+      "b": "Add power is verified in the near circle lower on the lens, not at the fitting cross.",
+      "c": "The prism reference point sits below the fitting cross; prism is checked there, not at the cross.",
+      "d": "Distance power is verified in the distance reference circle above the fitting cross."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,7 +1063,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only packaging"
+        "text": "The patient's horizontal PD measurement"
       },
       {
         "id": "b",
@@ -1071,19 +1071,19 @@
       },
       {
         "id": "c",
-        "text": "Only warranty cards"
+        "text": "The index of refraction of the chosen lens material"
       },
       {
         "id": "d",
-        "text": "Only UV stamp"
+        "text": "The temple length needed behind the ear"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Effective optics and fitting height perception.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only packaging.",
-      "c": "Not the best answer: Only warranty cards.",
-      "d": "Not the best answer: Only UV stamp."
+      "a": "Pantoscopic tilt is a vertical angle; it does not alter the horizontal PD measurement.",
+      "c": "Index is a fixed material property; tilt changes effective power and induced astigmatism, not index.",
+      "d": "Temple length is a separate frame measurement; tilt alters effective power and fitting height."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1096,15 +1096,15 @@
     "options": [
       {
         "id": "a",
-        "text": "PD automatically"
+        "text": "The patient's monocular PD values"
       },
       {
         "id": "b",
-        "text": "Frame color"
+        "text": "The cylinder axis of the prescription"
       },
       {
         "id": "c",
-        "text": "Scratch coat hardness"
+        "text": "The Abbe value of the lens material"
       },
       {
         "id": "d",
@@ -1114,9 +1114,9 @@
     "correctOptionId": "d",
     "explanation": "Effective power especially in higher Rx.",
     "distractorExplanations": {
-      "a": "Not the best answer: PD automatically.",
-      "b": "Not the best answer: Frame color.",
-      "c": "Not the best answer: Scratch coat hardness."
+      "a": "Monocular PD is anatomical; moving the lens nearer or farther changes effective power, not the PD.",
+      "b": "Vertex changes effective sphere and cylinder power, not the orientation of the cylinder axis.",
+      "c": "Abbe value is a material constant; vertex distance changes the effective power at the eye."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "Only giant aviators"
+        "text": "Tall frames with a deep B measurement"
       },
       {
         "id": "c",
-        "text": "Children"
+        "text": "Wearers who need wide intermediate zones"
       },
       {
         "id": "d",
-        "text": "No near needs"
+        "text": "Patients with no near-vision add"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Smaller frames / fitting constraints.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only giant aviators always.",
-      "c": "Not the best answer: Children only always.",
-      "d": "Not the best answer: No near needs."
+      "b": "Tall frames with a deep B can fit a standard corridor; short corridors are designed for shallow frames.",
+      "c": "Short corridors compress the intermediate zone, so heavy intermediate users suit longer corridors.",
+      "d": "Without an add there is no corridor at all; a single-vision lens is used instead of a progressive."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1166,23 +1166,23 @@
       },
       {
         "id": "b",
-        "text": "Better acuity"
+        "text": "A shift in the cylinder axis"
       },
       {
         "id": "c",
-        "text": "No optical effect"
+        "text": "A change in the sphere power"
       },
       {
         "id": "d",
-        "text": "Automatic adaptation"
+        "text": "A longer vertex distance"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Unwanted prismatic effect.",
     "distractorExplanations": {
-      "b": "Not the best answer: Better acuity always.",
-      "c": "Not the best answer: No optical effect.",
-      "d": "Not the best answer: Automatic adaptation always."
+      "b": "Horizontal decentration does not rotate the cylinder axis; it induces prism per Prentice's rule.",
+      "c": "Decentration leaves the ordered sphere power unchanged; the error is induced prism (Prentice's rule).",
+      "d": "Vertex distance is the lens-to-eye distance set by frame fit, not by a PD mismatch."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Lens index"
+        "text": "Temple length behind the ear"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "Abbe value"
+        "text": "Monocular PD of the patient"
       },
       {
         "id": "d",
-        "text": "Polarization axis permanently"
+        "text": "Lens power of the Rx"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fit, vertex, and comfort.",
     "distractorExplanations": {
-      "a": "Not the best answer: Lens index.",
-      "c": "Not the best answer: Abbe value.",
-      "d": "Not the best answer: Polarization axis permanently."
+      "a": "Temple length is set at the temple bend; nose pads adjust frame height, vertex and comfort.",
+      "c": "Monocular PD is an anatomical measurement; adjusting the pads does not change it.",
+      "d": "Lens power is fixed by the Rx and the finished lens; pads alter fit and position only."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1261,7 +1261,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Lens power"
+        "text": "The power ground into the lenses"
       },
       {
         "id": "b",
@@ -1269,19 +1269,19 @@
       },
       {
         "id": "c",
-        "text": "Cylinder axis etched in glass"
+        "text": "The bridge width of the frame"
       },
       {
         "id": "d",
-        "text": "AR stack"
+        "text": "The patient's pupillary distance"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Stability and comfort on the ear.",
     "distractorExplanations": {
-      "a": "Not the best answer: Lens power.",
-      "c": "Not the best answer: Cylinder axis etched in glass.",
-      "d": "Not the best answer: AR stack."
+      "a": "Lens power is set by the surfacing lab; temple bends change fit and stability, not power.",
+      "c": "Bridge width (DBL) is a fixed frame dimension; temples adjust grip and comfort at the ear.",
+      "d": "PD is anatomical; temple adjustments change fit at the ear, not the distance between pupils."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1294,15 +1294,15 @@
     "options": [
       {
         "id": "a",
-        "text": "No PD"
+        "text": "Standard Rx with no tilt compensation"
       },
       {
         "id": "b",
-        "text": "No vertex concern"
+        "text": "Glass lenses for higher impact safety"
       },
       {
         "id": "c",
-        "text": "Only stock plano"
+        "text": "Plano lenses with no prescription"
       },
       {
         "id": "d",
@@ -1312,9 +1312,9 @@
     "correctOptionId": "d",
     "explanation": "Compensated Rx / fitting considerations.",
     "distractorExplanations": {
-      "a": "Not the best answer: No PD.",
-      "b": "Not the best answer: No vertex concern.",
-      "c": "Not the best answer: Only stock plano always."
+      "a": "Face-form wrap induces power and prism changes, so the Rx is often compensated rather than left as written.",
+      "b": "Glass is less impact resistant than polycarbonate or Trivex and is a poor choice for wrap sport frames.",
+      "c": "Many wrap frames can take prescription lenses with compensated designs; they are not limited to plano."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,11 +1360,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only sunglasses fashion"
+        "text": "Plano sunglasses with no Rx"
       },
       {
         "id": "b",
-        "text": "Only cases"
+        "text": "Single-vision readers with low power"
       },
       {
         "id": "c",
@@ -1372,15 +1372,15 @@
       },
       {
         "id": "d",
-        "text": "Only hinged drills"
+        "text": "Choosing the frame's bridge size"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Progressives and precise optics.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only sunglasses fashion.",
-      "b": "Not the best answer: Only cases.",
-      "d": "Not the best answer: Only hinged drills."
+      "a": "Plano sunglasses have no power, so PD placement has no optical effect on them.",
+      "b": "Low-power single-vision readers tolerate small decentration; monocular PDs matter most for progressives.",
+      "d": "Bridge size is chosen by nose fit; monocular PDs set lens centration for each eye."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1397,23 +1397,23 @@
       },
       {
         "id": "b",
-        "text": "Only brand logo"
+        "text": "Where the near segment top sits on the lens"
       },
       {
         "id": "c",
-        "text": "Only serial number"
+        "text": "How far the lens sits from the eye"
       },
       {
         "id": "d",
-        "text": "Only cleaning"
+        "text": "How far apart the two optical centers sit"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Where the optical center sits before the eye.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only brand logo.",
-      "c": "Not the best answer: Only serial number.",
-      "d": "Not the best answer: Only cleaning."
+      "b": "Segment top placement is seg height, a separate multifocal measurement from OC height.",
+      "c": "Lens-to-eye distance is vertex distance; OC height sets the vertical position of the optical center.",
+      "d": "Horizontal spacing of the optical centers is set by PD; OC height is the vertical position."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1430,23 +1430,23 @@
       },
       {
         "id": "b",
-        "text": "Adult progressive corridors"
+        "text": "Adult-style progressive lenses by default"
       },
       {
         "id": "c",
-        "text": "No PD measure"
+        "text": "Frames one size larger to allow growth"
       },
       {
         "id": "d",
-        "text": "Metal"
+        "text": "CR-39 lenses as the default for impact"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Secure fit and appropriate size/materials.",
     "distractorExplanations": {
-      "b": "Not the best answer: Adult progressive corridors always.",
-      "c": "Not the best answer: No PD measure.",
-      "d": "Not the best answer: Metal only always."
+      "b": "Children rarely need progressives; most get single vision unless a bifocal is prescribed for a specific reason.",
+      "c": "Oversized frames slip and misplace the optical centers; children need a properly sized current fit.",
+      "d": "CR-39 is less impact resistant; polycarbonate or Trivex is preferred for children's lenses."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1459,15 +1459,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the case color"
+        "text": "Frame color and case match the order"
       },
       {
         "id": "b",
-        "text": "Only the cloth"
+        "text": "Power and axis, then file the job"
       },
       {
         "id": "c",
-        "text": "Only the barcode"
+        "text": "Fit on face, with power checked next visit"
       },
       {
         "id": "d",
@@ -1477,9 +1477,9 @@
     "correctOptionId": "d",
     "explanation": "Power, axis, PD/OC, and fit on face.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only the case color.",
-      "b": "Not the best answer: Only the cloth.",
-      "c": "Not the best answer: Only the barcode."
+      "a": "Cosmetic items matter, but dispensing verification centers on power, axis, PD/OC and fit.",
+      "b": "Power and axis alone skip PD/OC centration and fit, which also cause wearer complaints.",
+      "c": "Lens power must be verified before release; deferring it means dispensing an unverified Rx."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "Blood pressure"
+        "text": "Curvature of the corneal surface"
       },
       {
         "id": "c",
-        "text": "IOP"
+        "text": "Intraocular pressure of the eye"
       },
       {
         "id": "d",
-        "text": "Corneal thickness"
+        "text": "Base curve of the front surface"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Power, axis, and prism of a lens.",
     "distractorExplanations": {
-      "b": "Not the best answer: Blood pressure.",
-      "c": "Not the best answer: IOP only.",
-      "d": "Not the best answer: Corneal thickness only."
+      "b": "Corneal curvature is measured with a keratometer, not a lensometer.",
+      "c": "Intraocular pressure is measured with a tonometer; a lensometer reads lens power.",
+      "d": "Front-surface base curve is read with a lens clock; a lensometer reads vertex power, axis and prism."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1595,23 +1595,23 @@
       },
       {
         "id": "b",
-        "text": "Food safety"
+        "text": "Impact standards for safety eyewear"
       },
       {
         "id": "c",
-        "text": "Electrical code"
+        "text": "Contact lens prescription standards"
       },
       {
         "id": "d",
-        "text": "Pharmacy law"
+        "text": "Nonprescription sunglass and fashion eyewear standards"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Ophthalmic lens standards tolerances/themes.",
     "distractorExplanations": {
-      "b": "Not the best answer: Food safety.",
-      "c": "Not the best answer: Electrical code.",
-      "d": "Not the best answer: Pharmacy law."
+      "b": "Occupational safety eyewear is covered by ANSI Z87.1, not Z80.1.",
+      "c": "Contact lenses fall under ANSI Z80.20; Z80.1 covers prescription spectacle lenses.",
+      "d": "Nonprescription sunglasses fall under ANSI Z80.3; Z80.1 covers prescription spectacle lenses."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "A lensometer"
+        "text": "A tool for measuring vertex distance"
       },
       {
         "id": "c",
-        "text": "An edger"
+        "text": "A tool for reading lens power"
       },
       {
         "id": "d",
-        "text": "A tracer"
+        "text": "A gauge for lens center thickness"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A basic PD measuring tool.",
     "distractorExplanations": {
-      "b": "Not the best answer: A lensometer.",
-      "c": "Not the best answer: An edger.",
-      "d": "Not the best answer: A tracer only."
+      "b": "Vertex distance is measured with a distometer; a PD ruler measures pupil distance.",
+      "c": "Lens power is read on a lensometer; the PD ruler measures distances on the face.",
+      "d": "Center thickness is measured with calipers; a PD ruler cannot measure lens thickness."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1657,15 +1657,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Measures IOP"
+        "text": "Surfaces the Rx curves onto the lens back"
       },
       {
         "id": "b",
-        "text": "Refracts sphere"
+        "text": "Applies the AR and hard coatings"
       },
       {
         "id": "c",
-        "text": "Prints AR stacks"
+        "text": "Measures the patient's PD and heights"
       },
       {
         "id": "d",
@@ -1675,9 +1675,9 @@
     "correctOptionId": "d",
     "explanation": "Captures shape and cuts lens to fit.",
     "distractorExplanations": {
-      "a": "Not the best answer: Measures IOP.",
-      "b": "Not the best answer: Refracts sphere only.",
-      "c": "Not the best answer: Prints AR stacks."
+      "a": "Rx curves are generated in surfacing; the tracer/edger works on finished lens blanks.",
+      "b": "Coatings are applied in coating chambers; tracing and edging handle frame shape and cutting.",
+      "c": "PD and heights come from patient measurement; the tracer captures frame shape."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Finished lens matches the ordered Rx within tolerances"
+        "text": "Finished lens matches the ordered Rx"
       },
       {
         "id": "b",
-        "text": "Frame fashion season"
+        "text": "Frame fits the patient's face and ears"
       },
       {
         "id": "c",
-        "text": "Case SKU"
+        "text": "The patient's subjective refraction"
       },
       {
         "id": "d",
-        "text": "Cleaning solution pH"
+        "text": "Lens material matches the stated index"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Finished lens matches the ordered Rx within tolerances.",
     "distractorExplanations": {
-      "b": "Not the best answer: Frame fashion season.",
-      "c": "Not the best answer: Case SKU only.",
-      "d": "Not the best answer: Cleaning solution pH."
+      "b": "Facial fit is checked in the dispensing adjustment, not by lensometer neutralization.",
+      "c": "Subjective refraction is done by the eye doctor; neutralization checks the finished lens against the order.",
+      "d": "Material index is not read by neutralization, which measures power, axis and prism against the Rx."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1723,7 +1723,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Guesswork"
+        "text": "Lensometer dots at the optical center"
       },
       {
         "id": "b",
@@ -1731,19 +1731,19 @@
       },
       {
         "id": "c",
-        "text": "Temple heating"
+        "text": "A ruler from the lens geometric center"
       },
       {
         "id": "d",
-        "text": "Random Sharpie without chart"
+        "text": "Marks copied from the patient's old pair"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Layout/marking tools per manufacturer charts.",
     "distractorExplanations": {
-      "a": "Not the best answer: Guesswork only.",
-      "c": "Not the best answer: Temple heating only.",
-      "d": "Not the best answer: Random Sharpie without chart."
+      "a": "Lensometer dots mark the optical center; on a progressive the fitting cross is relocated from engravings and the chart.",
+      "c": "The geometric center is not the fitting cross; progressive layout uses the hidden engravings and the chart.",
+      "d": "Old-pair marks may reflect a different design or fit; recreate the crosses from the manufacturer chart."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1756,7 +1756,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Change lens index"
+        "text": "Soften titanium frames for bending"
       },
       {
         "id": "b",
@@ -1764,19 +1764,19 @@
       },
       {
         "id": "c",
-        "text": "Remove cyl"
+        "text": "Cure the hard coat on new lenses"
       },
       {
         "id": "d",
-        "text": "Increase Abbe"
+        "text": "Soften polycarbonate lenses for edging"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Adjust zyl frames safely.",
     "distractorExplanations": {
-      "a": "Not the best answer: Change lens index.",
-      "c": "Not the best answer: Remove cyl.",
-      "d": "Not the best answer: Increase Abbe."
+      "a": "Titanium is adjusted cold with pliers; heat is for cellulose acetate (zyl) frames.",
+      "c": "Hard coats are cured in the lab; frame warmers soften plastic frames for adjustment.",
+      "d": "Polycarbonate lenses are edged dry without heat; heating them can damage the coatings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore and hope"
+        "text": "Dispense if the patient reads 20/20 at pickup"
       },
       {
         "id": "b",
-        "text": "Polish until numbers match visually"
+        "text": "Dispense and note the variance in the chart"
       },
       {
         "id": "c",
-        "text": "Change the Rx silently"
+        "text": "Re-mark the lens and recheck it next visit"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "Do not dispense until resolved.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore and hope.",
-      "b": "Not the best answer: Polish until numbers match visually.",
-      "c": "Not the best answer: Change the Rx silently."
+      "a": "Acuity at pickup does not prove the lens matches the Rx; out-of-tolerance lenses go back for remake.",
+      "b": "Documenting a variance does not make an out-of-tolerance lens acceptable to dispense.",
+      "c": "Deferring the recheck means dispensing a lens that has not passed verification."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,11 +1855,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only fashion tints"
+        "text": "Rx tolerance limits for dress lenses"
       },
       {
         "id": "b",
-        "text": "Only progressive corridors"
+        "text": "Corridor length for progressive lenses"
       },
       {
         "id": "c",
@@ -1867,15 +1867,15 @@
       },
       {
         "id": "d",
-        "text": "Only AR color"
+        "text": "AR coating durability requirements"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Impact and coverage requirements.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only fashion tints.",
-      "b": "Not the best answer: Only progressive corridors.",
-      "d": "Not the best answer: Only AR color."
+      "a": "Dress-lens Rx tolerances come from ANSI Z80.1; safety standards like Z87.1 cover impact and coverage.",
+      "b": "Corridor length is a lens design choice; safety standards govern impact resistance and coverage.",
+      "d": "AR durability is a quality specification; safety standards address impact resistance and coverage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1888,15 +1888,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Post Rx on Instagram"
+        "text": "Share Rx details with family who ask"
       },
       {
         "id": "b",
-        "text": "Discuss patients in waiting room loudly"
+        "text": "Email full Rx records to any requester"
       },
       {
         "id": "c",
-        "text": "Share files casually"
+        "text": "Protect records but discuss cases openly"
       },
       {
         "id": "d",
@@ -1906,9 +1906,9 @@
     "correctOptionId": "d",
     "explanation": "Protect PHI in records and conversations.",
     "distractorExplanations": {
-      "a": "Not the best answer: Post Rx on Instagram.",
-      "b": "Not the best answer: Discuss patients in waiting room loudly.",
-      "c": "Not the best answer: Share files casually."
+      "a": "Family members need patient authorization (or a recognized role) before receiving protected health information.",
+      "b": "PHI may be released to authorized requesters; sending records to anyone who asks violates HIPAA.",
+      "c": "Spoken information is PHI too; HIPAA protection covers conversations as well as written records."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Reuse unclean pads"
+        "text": "Clean tools once at the end of each day"
       },
       {
         "id": "b",
-        "text": "Skip hand hygiene"
+        "text": "Clean frames only when visibly soiled"
       },
       {
         "id": "c",
-        "text": "Lick nose pads to shape"
+        "text": "Wipe pads with water before the next fitting"
       },
       {
         "id": "d",
-        "text": "Clean frames/tools between patients as policy requires"
+        "text": "Clean frames/tools between patients"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Clean frames/tools between patients as policy requires.",
+    "explanation": "Clean frames/tools between patients as policy requires; visible cleanliness or end-of-day cleaning is not enough.",
     "distractorExplanations": {
-      "a": "Not the best answer: Reuse unclean pads always.",
-      "b": "Not the best answer: Skip hand hygiene.",
-      "c": "Not the best answer: Lick nose pads to shape."
+      "a": "End-of-day cleaning leaves tools contaminated from one patient to the next during the day.",
+      "b": "Contamination is often invisible, so every frame and tool is cleaned between patients.",
+      "c": "Plain water does not disinfect; use an approved disinfectant between patients."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1958,23 +1958,23 @@
       },
       {
         "id": "b",
-        "text": "Only anger notes"
+        "text": "The patient's complaint and new order date"
       },
       {
         "id": "c",
-        "text": "Only fashion complaints"
+        "text": "Lab invoice number and remake charges"
       },
       {
         "id": "d",
-        "text": "No data"
+        "text": "The staff member's name and lab used"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Measurements, verification, and reason codes.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only anger notes.",
-      "c": "Not the best answer: Only fashion complaints.",
-      "d": "Not the best answer: No data."
+      "b": "Complaint and date alone miss the measurements and verification needed to find the cause of the remake.",
+      "c": "Billing details track cost but do not show what was measured or why the job failed.",
+      "d": "Staff and lab names omit the measurements and reason codes needed for remake analysis."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

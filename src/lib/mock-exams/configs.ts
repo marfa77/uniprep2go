@@ -223,7 +223,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     linkedDeckSlug: "cfa-level-2-anki-deck",
     status: "live",
     accessMode: "free_demand_test",
-    durationMinutes: 90,
+    durationMinutes: 120,
     questionCount: 60,
     passRule: {
       type: "readiness_check",
@@ -248,12 +248,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "portfolio", label: "Portfolio Management", questionCount: 6, weightPercent: 10, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check sampled across 2026 CFA Level II topic weights with vignette-style application prompts. Official exam: 88 item-set questions across two sessions; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
+      "Readiness check with six mini-vignette questions in each of the ten 2026 CFA Level II topics (2 minutes per question). Official exam: 88 item-set questions in 22 vignettes across two 132-minute sessions (4h24 total); topic weights run 5-15%; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A 60-question CFA Level 2 readiness diagnostic with weighted topic scoring across all ten curriculum areas. Independent prep — not CFA Institute material.",
+      "A 60-question, 120-minute CFA Level 2 readiness diagnostic: short case vignettes with calculations and judgment calls, scored per topic across all ten curriculum areas. Independent prep — not CFA Institute material.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-09-30",
+    lastUpdated: "2026-10-03",
   },
   {
     slug: "us-citizenship-readiness-check",

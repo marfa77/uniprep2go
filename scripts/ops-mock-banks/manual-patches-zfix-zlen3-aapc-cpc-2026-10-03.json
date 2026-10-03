@@ -1,0 +1,56 @@
+{
+ "aapc-cpc-readiness-check": {
+  "aapc-cpc-readiness-check-evaluation-management-001": {
+   "options": {
+    "a": "Medical decision making or total time on the date of the encounter",
+    "b": "History, exam, and MDM, with all three key components required",
+    "c": "Face-to-face time, when counseling exceeds 50 percent of the total visit",
+    "d": "Number of exam bullets documented under the 1997 guidelines"
+   },
+   "distractorExplanations": {
+    "c": "The 50 percent counseling rule is the pre-2021 time rule; current office E/M uses total time on the date, including non-face-to-face work.",
+    "b": "The three-key-component model was retired for office/outpatient E/M in 2021; history and exam are now only 'medically appropriate'.",
+    "d": "Counting 1997 exam bullets no longer selects office E/M levels; the exam does not drive the level at all since 2021."
+   }
+  },
+  "aapc-cpc-readiness-check-evaluation-management-002": {
+   "options": {
+    "a": "The past eighteen months",
+    "b": "The past three years",
+    "c": "The past five years",
+    "d": "The past seven years"
+   },
+   "distractorExplanations": {
+    "a": "Eighteen months is shorter than the CPT window; a patient seen by the same specialty/group within the past three years is established.",
+    "c": "Five years is not the CPT rule; after three years without a face-to-face service the patient is new again.",
+    "d": "Seven years is a common records-retention figure, not the CPT new-versus-established patient window of three years."
+   }
+  },
+  "aapc-cpc-readiness-check-evaluation-management-007": {
+   "options": {
+    "a": "At least 15 minutes of care for a patient admitted to an intensive care unit",
+    "b": "Moderate-complexity decision making for any patient seen in the ED",
+    "c": "High-complexity decision making for critically ill/injured patients",
+    "d": "High-complexity decision making for a stable patient in an ICU bed"
+   },
+   "distractorExplanations": {
+    "a": "Location does not define critical care, and 99291 needs at least 30 minutes of critical care time on the date, not 15 minutes.",
+    "b": "Moderate MDM in the ED is an ED E/M service; critical care needs high-complexity care of a critically ill patient.",
+    "d": "A stable patient in an ICU bed is coded with hospital care codes; the ICU location alone is not critical care."
+   }
+  },
+  "aapc-cpc-readiness-check-evaluation-management-013": {
+   "options": {
+    "a": "A patient's own request for a specialist opinion and a written report",
+    "b": "A request for opinion/advice, rendering of services, and a written report",
+    "c": "A request for opinion/advice and the consultant assuming ongoing care",
+    "d": "A provider's request for advice, with a verbal update instead of a written report"
+   },
+   "distractorExplanations": {
+    "d": "The consultant must send a written report back to the requesting source; a verbal update alone fails the report requirement.",
+    "a": "A patient-initiated request does not qualify; consultations require a request from a physician or other appropriate source.",
+    "c": "Assuming ongoing care is a transfer of care, which is not reported with consultation codes."
+   }
+  }
+ }
+}

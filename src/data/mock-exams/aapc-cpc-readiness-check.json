@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Only CPT surgical procedures"
+        "text": "Procedures and services performed by physicians"
       },
       {
         "id": "c",
-        "text": "Only anesthesia time units"
+        "text": "Supplies, drugs, and durable medical equipment"
       },
       {
         "id": "d",
-        "text": "Place of service"
+        "text": "Inpatient hospital procedures and devices"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ICD-10-CM classifies diseases/symptoms; CPT/HCPCS report services/procedures/supplies.",
     "distractorExplanations": {
-      "b": "CPT is procedures/services.",
-      "c": "Anesthesia uses CPT + time/modifiers concepts.",
-      "d": "POS is a claim field, not diagnosis coding."
+      "b": "Physician procedures and services are reported with CPT (HCPCS Level I), not with ICD-10-CM diagnosis codes.",
+      "c": "Supplies, drugs and DME are reported with HCPCS Level II codes, not with ICD-10-CM.",
+      "d": "Inpatient hospital procedures and devices are coded with ICD-10-PCS, the procedure system, not ICD-10-CM."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Emerging technologies only as Category III"
+        "text": "Emerging technologies tracked for data collection and assessment"
       },
       {
         "id": "b",
-        "text": "Temporary national codes only as HCPCS G/Q"
+        "text": "Performance measures that support quality reporting programs"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "Dental CDT"
+        "text": "Supplies, drugs, and services not included in the CPT book"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Category I are main CPT services; Category III are emerging; HCPCS Level II covers many supplies/drugs/services.",
     "distractorExplanations": {
-      "a": "Cat III are temporary emerging.",
-      "b": "HCPCS II is separate system.",
-      "d": "CDT is dental."
+      "a": "Emerging technologies tracked for data collection are CPT Category III codes (temporary, ending in T).",
+      "b": "Performance measurement and quality reporting codes are CPT Category II codes (ending in F), not Category I.",
+      "d": "Supplies, drugs and services outside CPT are reported with HCPCS Level II, a separate code set."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Not enough caffeine"
+        "text": "Not otherwise specified — the unspecified code"
       },
       {
         "id": "b",
-        "text": "Never ever code"
+        "text": "Newly established code — added this fiscal year"
       },
       {
         "id": "c",
-        "text": "Non-exempt condition"
+        "text": "Non-essential condition — not required on claims"
       },
       {
         "id": "d",
-        "text": "Not elsewhere classified — other specified when a more precise code is unavailable"
+        "text": "Not elsewhere classified — other specified"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "NEC/NOS conventions guide residual code selection when documentation specificity is limited or classification lacks detail.",
+    "explanation": "NEC/NOS conventions guide residual code selection when documentation specificity is limited or classification lacks detail. NEC is used when the documented condition is specific but no more precise code is available.",
     "distractorExplanations": {
-      "a": "Silly expansion.",
-      "b": "Codes are assigned when supported.",
-      "c": "NEC is a classification convention."
+      "a": "That is NOS: the documentation lacks detail, so the unspecified code is used; NEC means detail exists but no specific code.",
+      "b": "New codes are identified in the annual code update tables; NEC is a residual-category convention, not a new-code flag.",
+      "c": "NEC does not mark optional conditions; it directs the coder to the 'other specified' code when no precise code exists."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A single code captures a condition and its manifestation/associated condition as directed"
+        "text": "A single code captures a condition and its manifestation"
       },
       {
         "id": "b",
-        "text": "Two unrelated visits are merged illegally"
+        "text": "Two codes are needed to capture the etiology and its manifestation"
       },
       {
         "id": "c",
-        "text": "Modifiers replace all diagnosis coding"
+        "text": "A diagnosis is reported with a separate code for each symptom"
       },
       {
         "id": "d",
-        "text": "Place of service is 22"
+        "text": "One code is reported for multiple unrelated conditions seen that day"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Guidelines instruct use of combination codes when available rather than multiple codes unnecessarily.",
+    "explanation": "Guidelines instruct use of combination codes when available rather than multiple codes unnecessarily. The combination code may also capture an associated condition or complication, as directed by the classification.",
     "distractorExplanations": {
-      "b": "Visits aren't combined via DX combo rules that way.",
-      "c": "Modifiers adjust services.",
-      "d": "POS 22 is outpatient hospital."
+      "b": "Two codes (etiology then manifestation) is the dual-coding convention used when no combination code exists.",
+      "c": "Coding each symptom separately is the opposite of a combination code, which absorbs associated symptoms or complications.",
+      "d": "Combination codes join related conditions or a condition with its complication, not unrelated conditions from one visit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional suggestions"
+        "text": "Advisory only, unlike the parenthetical notes beneath codes"
       },
       {
         "id": "b",
-        "text": "Relevant only to ICD-10-PCS"
+        "text": "Applicable to the first code listed under that heading"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Used solely for dental claims"
+        "text": "Reference material for auditors, not for the coder assigning codes"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Parenthetical notes, includes/excludes-type instructions, and section guidelines control code use.",
     "distractorExplanations": {
-      "a": "They are not optional.",
-      "b": "PCS is inpatient procedures.",
-      "d": "Dental uses CDT primarily."
+      "a": "Section guidelines are just as binding as parenthetical notes; both are instructional and govern code selection.",
+      "b": "Section and heading guidelines apply to every code in that section or heading, not just the first code listed.",
+      "d": "The guidelines direct the coder at the point of code assignment; they are not merely audit reference material."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace all diagnosis codes on every claim"
+        "text": "Replace the injury code as the first-listed diagnosis"
       },
       {
         "id": "b",
-        "text": "Report only E/M services"
+        "text": "Report the nature of the injury, such as fracture or laceration"
       },
       {
         "id": "c",
-        "text": "Indicate POS"
+        "text": "Identify the place of service where the injury was treated"
       },
       {
         "id": "d",
-        "text": "Provide information about how an injury/poisoning occurred, when required/assigned"
+        "text": "Provide information about how an injury/poisoning occurred"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "External causes supplement injury coding; they do not replace the injury diagnosis.",
+    "explanation": "External causes supplement injury coding; they do not replace the injury diagnosis. Report them when required or assigned.",
     "distractorExplanations": {
-      "a": "They supplement, not replace.",
-      "b": "E/M is CPT.",
-      "c": "POS is separate."
+      "a": "External cause codes are never first-listed; they supplement the injury code, which stays sequenced first.",
+      "b": "The nature of the injury (fracture, laceration) is coded in Chapter 19 S/T codes; external causes describe cause and intent.",
+      "c": "Treatment setting is the claim POS field; Y92 place-of-occurrence codes describe where the injury happened."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Left, right, or bilateral when the classification provides those options and documentation supports them"
+        "text": "Left, right, or bilateral when the classification provides those options"
       },
       {
         "id": "b",
-        "text": "Only unspecified always if paid better"
+        "text": "Left or right only, with bilateral reported using two codes"
       },
       {
         "id": "c",
-        "text": "No side information ever"
+        "text": "The side most often affected by the condition when the note does not state one"
       },
       {
         "id": "d",
-        "text": "Provider specialty"
+        "text": "Side information through modifiers RT/LT instead of the code"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Choose the most specific laterality code supported; unspecified if not documented.",
+    "explanation": "Choose the most specific laterality code supported; unspecified if not documented. Laterality must also be supported by documentation.",
     "distractorExplanations": {
-      "b": "Don't pick unspecified to manipulate payment.",
-      "c": "Laterality exists in many codes.",
-      "d": "Specialty isn't laterality."
+      "b": "When a bilateral code exists it is used; separate left and right codes are only for conditions without a bilateral option.",
+      "c": "If laterality is not documented the unspecified side code is assigned (or the provider queried); the side is never assumed.",
+      "d": "RT/LT are HCPCS modifiers for procedure codes; ICD-10-CM laterality is built into the diagnosis code characters."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Use only the Index and never the Tabular"
+        "text": "Locate a candidate code in the Tabular List, then confirm it in the Alphabetic Index"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "Use only Google without books/guidelines"
+        "text": "Assign the code shown in the Index when it is complete to all characters"
       },
       {
         "id": "d",
-        "text": "Assign CPT from the ICD Index"
+        "text": "Locate a code in the Index, then verify it against the payer's LCD list"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Never code from the Index alone; Tabular instructions control final assignment.",
     "distractorExplanations": {
-      "a": "Tabular verification is mandatory.",
-      "c": "Official classification required.",
-      "d": "ICD Index is not for CPT."
+      "a": "The order is reversed: the Alphabetic Index is searched first, and the Tabular List is where the code is verified.",
+      "c": "Even a code that looks complete in the Index must be verified in the Tabular for notes, excludes and 7th characters.",
+      "d": "LCDs decide coverage, not code assignment; verification of the code itself happens in the Tabular List."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always use a Z00 code"
+        "text": "Code the suspected condition as if confirmed"
       },
       {
         "id": "b",
-        "text": "Code signs, symptoms, or abnormal findings that are documented as the reason for the encounter"
+        "text": "Code signs, symptoms, or abnormal findings"
       },
       {
         "id": "c",
-        "text": "Omit diagnosis codes entirely"
+        "text": "Code a Z03 observation code for the possible condition"
       },
       {
         "id": "d",
-        "text": "Use inpatient principal diagnosis rules"
+        "text": "Code R69 illness unspecified until tests return"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Outpatient guidelines allow coding of documented signs/symptoms when no confirmed diagnosis exists.",
+    "explanation": "Outpatient guidelines allow coding of documented signs/symptoms when no confirmed diagnosis exists. Code those documented as the reason for the encounter.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Code signs, symptoms, or abnormal findings that are documented as the reason for the encounter”.",
-      "c": "Not the best answer here; the right answer is “Code signs, symptoms, or abnormal findings that are documented as the reason for the encounter”.",
-      "d": "Not the best answer here; the right answer is “Code signs, symptoms, or abnormal findings that are documented as the reason for the encounter”."
+      "a": "Coding uncertain diagnoses as confirmed is the inpatient rule; outpatient coding goes to the highest degree of certainty.",
+      "c": "Z03 observation codes apply when a suspected condition is ruled out and no signs or symptoms are present.",
+      "d": "R69 is a nonspecific code; documented signs and symptoms are more specific and are coded instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -370,7 +370,7 @@
     "options": [
       {
         "id": "a",
-        "text": "ICD-10-CM"
+        "text": "ICD-10-PCS (inpatient)"
       },
       {
         "id": "b",
@@ -378,19 +378,19 @@
       },
       {
         "id": "c",
-        "text": "DSM-5"
+        "text": "HCPCS Level II"
       },
       {
         "id": "d",
-        "text": "NDC drug package codes"
+        "text": "ICD-10-CM (diagnoses)"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CPT codes describe procedures/services; ICD-10-CM describes diagnoses.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “CPT (HCPCS Level I)”.",
-      "c": "Not the best answer here; the right answer is “CPT (HCPCS Level I)”.",
-      "d": "Not the best answer here; the right answer is “CPT (HCPCS Level I)”."
+      "a": "ICD-10-PCS reports inpatient facility procedures on hospital claims, not physician services on professional claims.",
+      "c": "HCPCS Level II mainly reports supplies, drugs, DME and some services not in CPT, not core physician procedures.",
+      "d": "ICD-10-CM reports diagnoses and reasons for the encounter; procedures and services are reported with CPT."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -403,7 +403,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The codes may always be reported together"
+        "text": "The excluded condition may be coded additionally when it is present"
       },
       {
         "id": "b",
@@ -411,19 +411,19 @@
       },
       {
         "id": "c",
-        "text": "The note can be ignored if the coder prefers"
+        "text": "The excluded condition must be sequenced first when both are present"
       },
       {
         "id": "d",
-        "text": "Only inpatient coders read Excludes notes"
+        "text": "The code requires an additional code to identify the manifestation present"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Excludes1 indicates the excluded condition should not be coded with the code (true exclude)",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The conditions are mutually exclusive and should not be coded together”.",
-      "c": "Not the best answer here; the right answer is “The conditions are mutually exclusive and should not be coded together”.",
-      "d": "Not the best answer here; the right answer is “The conditions are mutually exclusive and should not be coded together”."
+      "a": "'May be coded additionally when present' describes Excludes2 (not included here), not the pure Excludes1 exclusion.",
+      "c": "Sequencing directions come from 'code first' notes; Excludes1 says the two codes are not reported together.",
+      "d": "Requiring a manifestation code is a 'use additional code' instruction, unrelated to an Excludes1 note."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Inpatient DRG assignment"
+        "text": "Inpatient facility procedures reported on the hospital UB-04 claim"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Replacing all ICD-10-PCS codes"
+        "text": "Emerging technology services tracked with temporary Category III codes"
       },
       {
         "id": "d",
-        "text": "Dental tooth numbering"
+        "text": "Physician office visits, surgeries, and diagnostic tests"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Level II HCPCS covers products/services outside CPT (e.g., DME, injectables)",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Supplies, drugs, durable medical equipment, and certain services not in CPT”.",
-      "c": "Not the best answer here; the right answer is “Supplies, drugs, durable medical equipment, and certain services not in CPT”.",
-      "d": "Not the best answer here; the right answer is “Supplies, drugs, durable medical equipment, and certain services not in CPT”."
+      "a": "Inpatient facility procedures on the UB-04 are coded with ICD-10-PCS, not HCPCS Level II.",
+      "c": "Category III codes for emerging technology are part of CPT (HCPCS Level I), not HCPCS Level II.",
+      "d": "Office visits, surgeries and diagnostic tests are CPT (HCPCS Level I) codes, not Level II."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The patient's home ZIP"
+        "text": "The patient's home address region for payment locality"
       },
       {
         "id": "b",
@@ -477,19 +477,19 @@
       },
       {
         "id": "c",
-        "text": "The diagnosis related group"
+        "text": "The type of provider, such as a physician or nurse practitioner"
       },
       {
         "id": "d",
-        "text": "The anesthesia base units"
+        "text": "The facility's NPI and billing address"
       }
     ],
     "correctOptionId": "b",
     "explanation": "POS codes identify the service location (office, inpatient hospital, etc.)",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The setting where the service was rendered”.",
-      "c": "Not the best answer here; the right answer is “The setting where the service was rendered”.",
-      "d": "Not the best answer here; the right answer is “The setting where the service was rendered”."
+      "a": "POS is not the patient's address; payment locality follows where the service was furnished, not where the patient lives.",
+      "c": "Provider type and specialty are shown by the taxonomy code, not the two-digit place-of-service code.",
+      "d": "Facility NPI and address go in the service facility and billing provider fields (boxes 32-33), not the POS code."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -502,27 +502,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Medical decision making or total time on the date of the encounter, per guidelines"
+        "text": "Medical decision making or total time on the date of the encounter"
       },
       {
         "id": "b",
-        "text": "Only the number of bullet exam elements from 1995 forever"
+        "text": "History, exam, and MDM, with all three key components required"
       },
       {
         "id": "c",
-        "text": "Patient age"
+        "text": "Face-to-face time, when counseling exceeds 50 percent of the total visit"
       },
       {
         "id": "d",
-        "text": "Whether the patient brought cookies"
+        "text": "Number of exam bullets documented under the 1997 guidelines"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Since 2021 office E/M revisions, MDM or time drives levels; older exam-bullet counting is not the current office paradigm.",
+    "explanation": "Since 2021 office E/M revisions, MDM or time drives levels; older exam-bullet counting is not the current office paradigm. Apply the CPT guidelines for whichever basis is used.",
     "distractorExplanations": {
-      "b": "1995/97 exam scoring is largely superseded for office/outpatient.",
-      "c": "Age alone doesn't set level.",
-      "d": "Cookies irrelevant."
+      "b": "The three-key-component model was retired for office/outpatient E/M in 2021; history and exam are now only 'medically appropriate'.",
+      "c": "The 50 percent counseling rule is the pre-2021 time rule; current office E/M uses total time on the date, including non-face-to-face work.",
+      "d": "Counting 1997 exam bullets no longer selects office E/M levels; the exam does not drive the level at all since 2021."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The past three days"
+        "text": "The past eighteen months"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Ten years"
+        "text": "The past five years"
       },
       {
         "id": "d",
-        "text": "Never—everyone is always new"
+        "text": "The past seven years"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CPT defines established as seen by same specialty/group within 3 years (with nuances)",
     "distractorExplanations": {
-      "a": "Three days is wrong.",
-      "c": "Ten years is wrong.",
-      "d": "Distinction exists."
+      "a": "Eighteen months is shorter than the CPT window; a patient seen by the same specialty/group within the past three years is established.",
+      "c": "Five years is not the CPT rule; after three years without a face-to-face service the patient is new again.",
+      "d": "Seven years is a common records-retention figure, not the CPT new-versus-established patient window of three years."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the font size of the note"
+        "text": "History, examination, and the number of diagnoses documented"
       },
       {
         "id": "b",
-        "text": "Only how long the patient waited"
+        "text": "Problems addressed, total time spent, and number of orders placed"
       },
       {
         "id": "c",
-        "text": "Number/complexity of problems, data reviewed/analyzed, and risk of management"
+        "text": "Number/complexity of problems, data reviewed/analyzed, and risk"
       },
       {
         "id": "d",
-        "text": "Whether the waiting room was full"
+        "text": "Number of problems, the exam level, and risk of complications"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "MDM elements are problems, data, and risk under AMA E/M methodology.",
+    "explanation": "MDM elements are problems, data, and risk under AMA E/M methodology. Risk refers to the risk of patient management.",
     "distractorExplanations": {
-      "a": "Formatting irrelevant.",
-      "b": "Wait time isn't MDM.",
-      "d": "Census isn't MDM."
+      "a": "History and exam are not MDM elements; MDM is problems, data reviewed/analyzed, and risk of patient management.",
+      "b": "Total time is an alternative basis for leveling, not an element of MDM; orders count only within the data element.",
+      "d": "The exam level is not part of MDM, and this omits the data reviewed/analyzed element."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the minute the provider entered the room"
+        "text": "Face-to-face time only, counted from when the provider enters the room"
       },
       {
         "id": "b",
-        "text": "Staff coffee breaks"
+        "text": "Time spent by clinical staff rooming the patient and taking vitals"
       },
       {
         "id": "c",
-        "text": "Time spent by the patient driving"
+        "text": "Provider time on the patient's care across the entire week of the visit"
       },
       {
         "id": "d",
-        "text": "Total time on the date of the encounter spent on the patient's care (including non-face-to-face), per CPT rules"
+        "text": "Total time on the date of the encounter spent on the patient's care"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Counseling/coordination and other activities on that date may count when using time, per definitions.",
+    "explanation": "Counseling/coordination and other activities on that date may count when using time, per definitions. This includes non-face-to-face activities on that date, per CPT rules.",
     "distractorExplanations": {
-      "a": "Door-entry instant is incomplete.",
-      "b": "Breaks aren't patient care time.",
-      "c": "Patient drive time doesn't count."
+      "a": "Since 2021 office E/M time is total provider time on the date, including non-face-to-face work, not just room time.",
+      "b": "Clinical staff time is excluded; only physician or other qualified health professional time counts toward the level.",
+      "c": "Only time on the date of the encounter counts; work on other days of the week is not added to the visit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Focuses on routine preventive evaluation appropriate to age/risk rather than a chief complaint problem management primarily"
+        "text": "Focuses on routine preventive evaluation appropriate to age/risk"
       },
       {
         "id": "b",
-        "text": "Always uses critical care codes"
+        "text": "Is selected by MDM level, the same way as other office E/M visits"
       },
       {
         "id": "c",
-        "text": "Is reported with only anesthesia codes"
+        "text": "Requires a chief complaint to support medical necessity"
       },
       {
         "id": "d",
-        "text": "Never requires a diagnosis code"
+        "text": "Is coded by total time spent on the date of service"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Preventive visits use preventive CPT codes; significant separately identifiable problem E/M may be reported with modifier 25 when supported.",
     "distractorExplanations": {
-      "b": "Critical care is different.",
-      "c": "Anesthesia is separate.",
-      "d": "Diagnosis/Z codes still used."
+      "b": "Preventive medicine codes are chosen by new versus established status and patient age, not by MDM level.",
+      "c": "Preventive visits are not complaint-driven; they are reported with Z00-type encounter codes rather than a problem.",
+      "d": "Preventive medicine codes are not time-based; time leveling applies to problem-oriented office E/M codes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bilateral procedure"
+        "text": "Decision for surgery made at an E/M visit the day before a major procedure"
       },
       {
         "id": "b",
-        "text": "Significant, separately identifiable E/M service by the same physician on the same day as a procedure"
+        "text": "Significant, separately identifiable E/M service on the same day as a procedure"
       },
       {
         "id": "c",
-        "text": "Reduced services"
+        "text": "Unrelated E/M service by the same physician during a postoperative period"
       },
       {
         "id": "d",
-        "text": "Repeat procedure by another physician"
+        "text": "Distinct procedural service that is normally bundled with another procedure"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Modifier 25 appends to the E/M, not the procedure, when documentation supports separateness.",
+    "explanation": "Modifier 25 appends to the E/M, not the procedure, when documentation supports separateness. It is reported by the same physician on the E/M code.",
     "distractorExplanations": {
-      "a": "50 is bilateral.",
-      "c": "52 is reduced.",
-      "d": "77 is repeat by another."
+      "a": "A decision for major surgery at the visit the day before or day of surgery is reported with modifier 57, not 25.",
+      "c": "An unrelated E/M during the postoperative period by the same physician is reported with modifier 24.",
+      "d": "Distinct procedural services that are normally bundled use modifier 59 or the X{EPSU} modifiers, not 25."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Any brief hallway chat"
+        "text": "At least 15 minutes of care for a patient admitted to an intensive care unit"
       },
       {
         "id": "b",
-        "text": "Only suture removal"
+        "text": "Moderate-complexity decision making for any patient seen in the ED"
       },
       {
         "id": "c",
-        "text": "High-complexity decision making for critically ill/injured patients with specific time thresholds and organ system failure risk"
+        "text": "High-complexity decision making for critically ill/injured patients"
       },
       {
         "id": "d",
-        "text": "Well-child care"
+        "text": "High-complexity decision making for a stable patient in an ICU bed"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Critical care is a defined CPT service with time and clinical criteria—not ordinary E/M.",
+    "explanation": "Critical care is a defined CPT service with time and clinical criteria—not ordinary E/M. Specific time thresholds apply (99291 covers the first 30-74 minutes).",
     "distractorExplanations": {
-      "a": "Hallway chat isn't critical care.",
-      "b": "Suture removal is minor.",
-      "d": "Well-child is preventive."
+      "a": "Location does not define critical care, and 99291 needs at least 30 minutes of critical care time on the date, not 15 minutes.",
+      "b": "Moderate MDM in the ED is an ED E/M service; critical care needs high-complexity care of a critically ill patient.",
+      "d": "A stable patient in an ICU bed is coded with hospital care codes; the ICU location alone is not critical care."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always taking over complete care without request"
+        "text": "Assuming ongoing management of the patient at another provider's request"
       },
       {
         "id": "b",
-        "text": "Only emergency intubation"
+        "text": "Advice/opinion offered when the patient self-refers to a specialist"
       },
       {
         "id": "c",
-        "text": "Only nursing facility discharge"
+        "text": "A request from another provider with no written report required"
       },
       {
         "id": "d",
-        "text": "Advice/opinion requested by another provider, with report back (payer policies vary widely on consult codes)"
+        "text": "Advice/opinion requested by another provider, with report back"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Many payers (notably Medicare historically) limit consult coding; understand request/render/report concepts and current payer rules.",
     "distractorExplanations": {
-      "a": "Transfer of care differs from consult.",
-      "b": "Intubation is procedure.",
-      "c": "NF discharge has its own E/M."
+      "a": "Taking over ongoing management is a transfer of care, which is reported with regular E/M codes, not a consultation.",
+      "b": "A patient-initiated specialist visit is not a consultation; the request must come from a physician or other provider.",
+      "c": "A consultation requires a written report back to the requesting provider; omitting it fails the request-render-report test."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Where the service was rendered (e.g., office, outpatient hospital, ED)"
+        "text": "Where the service was rendered"
       },
       {
         "id": "b",
-        "text": "The diagnosis family"
+        "text": "The billing provider's office address"
       },
       {
         "id": "c",
-        "text": "The modifier list"
+        "text": "Where the patient lives for locality pricing"
       },
       {
         "id": "d",
-        "text": "NPI taxonomy"
+        "text": "The type of provider who rendered the service"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "POS affects payment and must match the service setting.",
+    "explanation": "POS affects payment and must match the service setting. Examples include office, outpatient hospital, and ED.",
     "distractorExplanations": {
-      "b": "DX are separate fields.",
-      "c": "Modifiers are separate.",
-      "d": "Taxonomy is provider classification."
+      "b": "The billing address goes in box 33; the POS code describes the setting where the service took place.",
+      "c": "Locality pricing follows where the service was furnished; the patient's residence is not what POS reports.",
+      "d": "Provider type and specialty are shown by the taxonomy code, not by the two-digit place-of-service code."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No request from another clinician"
+        "text": "A patient's own request for a specialist opinion and a written report"
       },
       {
         "id": "b",
-        "text": "A request for opinion/advice, rendering of services, and a written report back to the requesting source"
+        "text": "A request for opinion/advice, rendering of services, and a written report"
       },
       {
         "id": "c",
-        "text": "Only a nursing phone triage note"
+        "text": "A request for opinion/advice and the consultant assuming ongoing care"
       },
       {
         "id": "d",
-        "text": "That the consultant become the primary care physician automatically"
+        "text": "A provider's request for advice, with a verbal update instead of a written report"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Classic consult requirements: request, render, report (payer policies vary)",
+    "explanation": "Classic consult requirements: request, render, report (payer policies vary) The report goes back to the requesting source.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A request for opinion/advice, rendering of services, and a written report back to the requesting source”.",
-      "c": "Not the best answer here; the right answer is “A request for opinion/advice, rendering of services, and a written report back to the requesting source”.",
-      "d": "Not the best answer here; the right answer is “A request for opinion/advice, rendering of services, and a written report back to the requesting source”."
+      "a": "A patient-initiated request does not qualify; consultations require a request from a physician or other appropriate source.",
+      "c": "Assuming ongoing care is a transfer of care, which is not reported with consultation codes.",
+      "d": "The consultant must send a written report back to the requesting source; a verbal update alone fails the report requirement."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Whether the patient has insurance"
+        "text": "Total time the ED physician spent on the date of the encounter"
       },
       {
         "id": "b",
-        "text": "The documented key components/MDM appropriate to ED E/M levels (not typical office time rules)"
+        "text": "The documented key components/MDM appropriate to ED E/M levels"
       },
       {
         "id": "c",
-        "text": "Only the length of the waiting room delay"
+        "text": "The triage acuity level assigned by the ED nurse at arrival"
       },
       {
         "id": "d",
-        "text": "The ambulance company name"
+        "text": "The number of diagnostic tests ordered during the ED visit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ED E/M leveling follows ED-specific CPT rules emphasizing history/exam/MDM as applicable.",
+    "explanation": "ED E/M leveling follows ED-specific CPT rules emphasizing history/exam/MDM as applicable. Office time rules do not apply to ED levels.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The documented key components/MDM appropriate to ED E/M levels (not typical office time rules)”.",
-      "c": "Not the best answer here; the right answer is “The documented key components/MDM appropriate to ED E/M levels (not typical office time rules)”.",
-      "d": "Not the best answer here; the right answer is “The documented key components/MDM appropriate to ED E/M levels (not typical office time rules)”."
+      "a": "ED E/M codes are not selected by time because ED care is shift-based; the office total-time rule does not apply.",
+      "c": "Nursing triage acuity (such as ESI) is a facility measure, not the basis for the physician's ED E/M level.",
+      "d": "Tests ordered feed only the data element of MDM; they do not alone determine the ED E/M level."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Billing only the problem visit and never the preventive"
+        "text": "Reporting both services, with modifier 25 on the preventive E/M"
       },
       {
         "id": "b",
-        "text": "Reporting both services when significant and separately identifiable, with modifier 25 on the problem E/M when appropriate"
+        "text": "Reporting both services, with modifier 25 on the problem E/M"
       },
       {
         "id": "c",
-        "text": "Using two identical preventive codes"
+        "text": "Reporting only the preventive code and adding the problem's diagnosis"
       },
       {
         "id": "d",
-        "text": "Omitting diagnoses for the problem"
+        "text": "Reporting both services, with modifier 59 on the problem E/M"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Significant separately identifiable problem E/M may be reported with preventive care using modifier 25.",
+    "explanation": "Significant separately identifiable problem E/M may be reported with preventive care using modifier 25. Both are reported when the problem is significant and separately identifiable.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Reporting both services when significant and separately identifiable, with modifier 25 on the problem E/M when appropriate”.",
-      "c": "Not the best answer here; the right answer is “Reporting both services when significant and separately identifiable, with modifier 25 on the problem E/M when appropriate”.",
-      "d": "Not the best answer here; the right answer is “Reporting both services when significant and separately identifiable, with modifier 25 on the problem E/M when appropriate”."
+      "a": "Modifier 25 goes on the problem-oriented office E/M code, not on the preventive medicine code.",
+      "c": "When the problem work is significant and separately identifiable, the problem E/M is also reportable, not just a diagnosis.",
+      "d": "Modifier 59 is for distinct procedures, not E/M services; a separate E/M on the same day uses modifier 25."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Local infiltration, certain related E/M, and routine postoperative care within the global period as defined"
+        "text": "Local infiltration, certain related E/M, and routine postoperative care"
       },
       {
         "id": "b",
-        "text": "All unrelated surgeries for 10 years"
+        "text": "Treatment of postoperative complications that require a return to the OR"
       },
       {
         "id": "c",
-        "text": "Only the anesthesia code"
+        "text": "General anesthesia provided by a separate anesthesia professional"
       },
       {
         "id": "d",
-        "text": "Never any follow-up visits"
+        "text": "Unrelated E/M visits by the surgeon during the postoperative period"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "CPT surgical package and payer global periods define what is bundled vs separately reportable.",
+    "explanation": "CPT surgical package and payer global periods define what is bundled vs separately reportable. Coverage applies within the global period as defined.",
     "distractorExplanations": {
-      "b": "Unrelated services may be separate.",
-      "c": "Anesthesia often separate.",
-      "d": "Post-op visits in global are often bundled."
+      "b": "A return to the OR for complications is separately reportable with modifier 78; it is not part of the package.",
+      "c": "Anesthesia by a separate anesthesia provider is billed separately; only local, metacarpal/digital block or topical is included.",
+      "d": "Unrelated E/M visits during the global period are separately reportable with modifier 24."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Staged/related procedure by same physician (58)"
+        "text": "Staged or planned related procedure by the same physician during the postoperative period"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Unrelated procedure in postop (79)"
+        "text": "Unrelated procedure by the same physician during the postoperative period"
       },
       {
         "id": "d",
-        "text": "Bilateral (50)"
+        "text": "Repeat procedure by the same physician after the original procedure"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Know 58/78/79 distinctions for returns during global periods.",
     "distractorExplanations": {
-      "a": "58 is staged/planned more extensive etc.",
-      "c": "79 is unrelated.",
-      "d": "50 is bilateral."
+      "a": "A staged, planned or more extensive related procedure in the global period is modifier 58, not the unplanned 78.",
+      "c": "An unrelated procedure by the same physician during the postoperative period is reported with modifier 79.",
+      "d": "A repeat procedure by the same physician is modifier 76; 78 is an unplanned return to the OR for a related procedure."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase RVUs automatically"
+        "text": "Determine whether a service is medically necessary for the diagnosis coded"
       },
       {
         "id": "b",
-        "text": "Replace ICD-10 guidelines"
+        "text": "Assign the relative value units used to price each CPT code"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Assign anesthesia ASAs"
+        "text": "Identify procedures that require prior authorization by Medicare"
       }
     ],
     "correctOptionId": "c",
     "explanation": "NCCI PTP edits and MUEs control unbundling; modifiers may bypass when clinically appropriate (e.g., 59/X{EPSU}).",
     "distractorExplanations": {
-      "a": "Edits limit improper payment.",
-      "b": "ICD guidelines remain.",
-      "d": "Anesthesia has separate concepts."
+      "a": "Medical necessity for a diagnosis is set by NCDs and LCDs, not by NCCI procedure-to-procedure edits.",
+      "b": "RVUs come from the Medicare Physician Fee Schedule (RBRVS), not from NCCI edits.",
+      "d": "Prior authorization lists are separate Medicare programs; NCCI edits address code pairs and units, not PA."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only E/M office codes"
+        "text": "CPT surgical codes with modifier 47 and anesthesia time in minutes"
       },
       {
         "id": "b",
-        "text": "Only ICD procedure codes on professional claims"
+        "text": "CPT anesthesia codes with base units plus RVUs taken from the surgery code"
       },
       {
         "id": "c",
-        "text": "Dental prophy codes"
+        "text": "ICD-10-PCS anesthesia section codes on the professional claim"
       },
       {
         "id": "d",
-        "text": "CPT anesthesia codes with base units + time units + modifying units (payer rules)"
+        "text": "CPT anesthesia codes with base units + time units + modifying units"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Anesthesia payment formulas combine base and time; physical status/qualifying circumstances may apply.",
+    "explanation": "Anesthesia payment formulas combine base and time; physical status/qualifying circumstances may apply. Payer rules govern the modifying units.",
     "distractorExplanations": {
-      "a": "E/M isn't anesthesia billing.",
-      "b": "PCS is inpatient hospital procedures.",
-      "c": "Dental prophy is dental."
+      "a": "Modifier 47 is for anesthesia by the surgeon; anesthesia providers report CPT anesthesia codes 00100-01999 with time.",
+      "b": "Anesthesia payment uses base units plus time units times the anesthesia conversion factor, not surgical RVUs.",
+      "c": "ICD-10-PCS is for inpatient facility procedures and has no professional anesthesia codes; professionals use CPT."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Multiple procedures performed at the same session by the same provider (when applicable)"
+        "text": "Multiple procedures performed at the same session by the same provider"
       },
       {
         "id": "b",
-        "text": "Assistant surgeon"
+        "text": "Bilateral procedures performed at the same session by the same provider"
       },
       {
         "id": "c",
-        "text": "Bilateral"
+        "text": "A distinct procedure performed at a separate session on the same day"
       },
       {
         "id": "d",
-        "text": "Decision for surgery"
+        "text": "Two surgeons performing distinct parts of the same procedure"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Multiple procedure reductions often apply; some codes are modifier 51 exempt.",
     "distractorExplanations": {
-      "b": "80/82 assistant surgery.",
-      "c": "50 bilateral.",
-      "d": "57 decision for surgery on E/M."
+      "b": "Bilateral procedures at the same session are reported with modifier 50, not modifier 51.",
+      "c": "A distinct procedure at a separate session is reported with modifier 59 or XE, not modifier 51.",
+      "d": "Two surgeons performing distinct parts of one procedure is co-surgery, reported with modifier 62."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "It must always be billed with every surgery"
+        "text": "The code is reported with modifier 51 whenever it is billed"
       },
       {
         "id": "b",
-        "text": "The code is usually component of a larger service and not reported in addition when integral"
+        "text": "The code is not reported in addition when integral"
       },
       {
         "id": "c",
-        "text": "It replaces anesthesia"
+        "text": "The code may be billed only when performed on a separate day"
       },
       {
         "id": "d",
-        "text": "It is never payable under any circumstance"
+        "text": "The code is an add-on reported in addition to the larger service"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "If performed alone for a distinct reason, a 'separate procedure' may be reportable; otherwise bundled.",
+    "explanation": "If performed alone for a distinct reason, a 'separate procedure' may be reportable; otherwise bundled. The code is usually a component of a larger service.",
     "distractorExplanations": {
-      "a": "Not always add-on.",
-      "c": "Anesthesia separate.",
-      "d": "Payable when truly separate/sole."
+      "a": "Modifier 51 marks multiple procedures; the separate procedure designation does not require modifier 51.",
+      "c": "A separate procedure can be reported on the same day when done alone or at a distinct site/session (with 59/X modifiers).",
+      "d": "Add-on codes are marked with '+'; separate procedures are bundled when integral, not added on."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only patient insurance plan name"
+        "text": "Complexity, number of sutures placed, and the patient's age"
       },
       {
         "id": "b",
-        "text": "Only the suture brand"
+        "text": "Length of each wound reported separately, with location ignored"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "Time of day"
+        "text": "Wound depth, anesthetic used, and time spent on the repair"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Add lengths of same classification/anatomic grouping per CPT rules; intermediate includes layered closure etc.",
     "distractorExplanations": {
-      "a": "Payer name doesn't choose complexity.",
-      "b": "Brand irrelevant.",
-      "d": "Time of day irrelevant."
+      "a": "Suture count and patient age are not CPT repair criteria; complexity, summed length and anatomic location are.",
+      "b": "Lengths of same-complexity repairs in the same anatomic grouping are summed, and location changes the code range.",
+      "d": "Local anesthesia is included and time is not a criterion; depth matters only through the complexity classification."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only 365-day globals for every code"
+        "text": "0-day, 30-day, and 60-day globals depending on the procedure"
       },
       {
         "id": "b",
-        "text": "No postoperative period ever"
+        "text": "10-day globals for minor and 30-day globals for major procedures"
       },
       {
         "id": "c",
-        "text": "Globals apply only to pathology"
+        "text": "90-day globals for every surgery, counted from the date of admission"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Minor procedures often 0/10; major often 90—verify each code.",
     "distractorExplanations": {
-      "a": "Not universally 365.",
-      "b": "Globals exist for many surgeries.",
-      "c": "Pathology has different concepts."
+      "a": "Medicare global periods are 0, 10 and 90 days; 30-day and 60-day globals are not Medicare global indicators.",
+      "b": "Major procedures carry a 90-day global (plus the day before surgery), not 30 days.",
+      "c": "Minor procedures have 0- or 10-day globals, and the 90-day period runs from the day after surgery, not admission."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Another surgeon assists the primary surgeon when medically necessary and allowed"
+        "text": "Another surgeon assists the primary surgeon"
       },
       {
         "id": "b",
-        "text": "The patient assisted scrub tech"
+        "text": "Two surgeons perform distinct parts of one procedure"
       },
       {
         "id": "c",
-        "text": "Bilateral surgery"
+        "text": "A nonphysician practitioner assists at surgery"
       },
       {
         "id": "d",
-        "text": "Reduced anesthesia time"
+        "text": "A team of surgeons performs a complex procedure together"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Documentation must support necessity; payer assistant policies vary (including PA/NP assisting modifiers).",
+    "explanation": "Documentation must support necessity; payer assistant policies vary (including PA/NP assisting modifiers). Assistance must be medically necessary and allowed by the payer.",
     "distractorExplanations": {
-      "b": "Patient isn't assistant surgeon.",
-      "c": "50 is bilateral.",
-      "d": "Anesthesia time differs."
+      "b": "Two surgeons performing distinct parts of one procedure is co-surgery, reported with modifier 62.",
+      "c": "PA, NP or CNS assistants at surgery are reported with modifier AS for Medicare, not modifier 80.",
+      "d": "Team surgery for a complex procedure is reported with modifier 66, not an assistant surgeon modifier."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Being listed only in ICD-10-CM"
+        "text": "A bullet (●) symbol and are reported after the primary procedure"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "Always requiring modifier 51"
+        "text": "A lightning bolt and are reported with modifier 51 attached"
       },
       {
         "id": "d",
-        "text": "Only applying to DME"
+        "text": "A null symbol (⊘) and are exempt from multiple procedure rules"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Add-on codes are reported in addition to a primary code; modifier 51 is typically not used on add-ons.",
     "distractorExplanations": {
-      "a": "They're CPT convention.",
-      "c": "51 usually not appended to add-ons.",
-      "d": "Not only DME."
+      "a": "The bullet (●) marks new codes in the current CPT edition; add-on codes are marked with a plus sign.",
+      "c": "The lightning bolt marks vaccine codes pending FDA approval, and add-on codes are exempt from modifier 51.",
+      "d": "The null symbol (⊘) marks modifier 51 exempt codes, which are primary codes, not add-on codes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All unrelated E/M visits for one year"
+        "text": "The procedure plus any E/M visit during the global period, related or not"
       },
       {
         "id": "b",
-        "text": "The procedure and related typical pre-/intra-/postoperative care for the global period"
+        "text": "The procedure and related typical pre-/intra-/postoperative care"
       },
       {
         "id": "c",
-        "text": "Only the anesthesia professional's time"
+        "text": "The procedure plus anesthesia provided by a separate anesthesiologist"
       },
       {
         "id": "d",
-        "text": "Never any postoperative visits"
+        "text": "The procedure only, with each postoperative visit billed separately"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Global surgical package covers the operation and routine related care in the global period.",
+    "explanation": "Global surgical package covers the operation and routine related care in the global period. The package covers this care for the global period.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The procedure and related typical pre-/intra-/postoperative care for the global period”.",
-      "c": "Not the best answer here; the right answer is “The procedure and related typical pre-/intra-/postoperative care for the global period”.",
-      "d": "Not the best answer here; the right answer is “The procedure and related typical pre-/intra-/postoperative care for the global period”."
+      "a": "Unrelated E/M visits in the global period are separately reportable with modifier 24; only related care is bundled.",
+      "c": "Anesthesia by a separate anesthesiologist is billed by that provider; only local or topical anesthesia is in the package.",
+      "d": "Routine related postoperative visits are included in the package and are not billed separately."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Bilateral procedure"
+        "text": "Bilateral procedures performed at the same session by the same provider"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Assistant surgeon"
+        "text": "Two surgeons performing distinct parts of one procedure"
       },
       {
         "id": "d",
-        "text": "Discontinued procedure"
+        "text": "A procedure discontinued after anesthesia was administered"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Modifier 51 reports multiple procedures; payer edits may affect its use.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”.",
-      "c": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”.",
-      "d": "Not the best answer here; the right answer is “Multiple procedures performed at the same session by the same provider”."
+      "a": "Bilateral procedures at the same session are reported with modifier 50, not modifier 51.",
+      "c": "Two surgeons performing distinct parts of one procedure is co-surgery, reported with modifier 62.",
+      "d": "A discontinued procedure is reported by the physician with modifier 53, not the multiple-procedure modifier 51."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The surgeon makes the incision"
+        "text": "The surgeon makes the first incision after induction is complete"
       },
       {
         "id": "b",
-        "text": "The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area"
+        "text": "The anesthesiologist begins to prepare the patient for anesthesia"
       },
       {
         "id": "c",
-        "text": "The patient schedules the surgery online"
+        "text": "The anesthesiologist completes the preoperative assessment in holding"
       },
       {
         "id": "d",
-        "text": "The recovery room nurse discharges the patient"
+        "text": "The patient is intubated and induction is complete"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Anesthesia time starts with preparation for anesthesia induction and ends when the anesthesiologist is no longer in personal attendance.",
+    "explanation": "Anesthesia time starts with preparation for anesthesia induction and ends when the anesthesiologist is no longer in personal attendance. Preparation takes place in the OR or procedure area.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area”.",
-      "c": "Not the best answer here; the right answer is “The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area”.",
-      "d": "Not the best answer here; the right answer is “The anesthesiologist begins to prepare the patient for anesthesia in the OR/procedure area”."
+      "a": "Incision comes well after anesthesia time starts; time begins when the anesthesiologist starts preparing the patient.",
+      "c": "The preanesthesia evaluation is included in the base units, so it is not counted as anesthesia time.",
+      "d": "Time starts with preparation for induction, before intubation, not after induction is complete."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always billed in addition to a more extensive related procedure"
+        "text": "Reported in addition to a larger related procedure, with modifier 51 appended"
       },
       {
         "id": "b",
-        "text": "Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service"
+        "text": "Usually considered integral to a larger procedure and not separately reported"
       },
       {
         "id": "c",
-        "text": "Only for radiology"
+        "text": "Reportable only with modifier 59 even when performed alone"
       },
       {
         "id": "d",
-        "text": "Never payable under any circumstance"
+        "text": "An add-on code reported with the primary procedure it supports"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "“Separate procedure” codes are typically not unbundled from a more comprehensive related procedure.",
+    "explanation": "“Separate procedure” codes are typically not unbundled from a more comprehensive related procedure. This applies when it is performed as part of that larger service.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”.",
-      "c": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”.",
-      "d": "Not the best answer here; the right answer is “Usually considered integral to a larger procedure and not separately reported when performed as part of that larger service”."
+      "a": "When integral to the larger related procedure it is bundled; modifier 51 does not make it separately payable.",
+      "c": "When performed alone it is reported without any modifier; 59/X modifiers apply only with another procedure.",
+      "d": "Add-on codes carry a '+' and are always secondary; separate procedures are standalone codes bundled when integral."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "The hospital's trauma level"
+        "text": "The anesthesia provider's level of medical direction"
       },
       {
         "id": "c",
-        "text": "Whether the case was elective marketing"
+        "text": "Qualifying circumstances such as extreme age or emergency"
       },
       {
         "id": "d",
-        "text": "The CPT surgical global days"
+        "text": "The base unit value assigned to the anesthesia code"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Anesthesia physical status modifiers communicate ASA classification for risk/payment policies.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “The patient's ASA physical status classification”.",
-      "c": "Not the best answer here; the right answer is “The patient's ASA physical status classification”.",
-      "d": "Not the best answer here; the right answer is “The patient's ASA physical status classification”."
+      "b": "Medical direction or supervision level is shown with modifiers AA, QK, QX, QY and QZ, not P1-P6.",
+      "c": "Extreme age, emergency and similar factors are reported with qualifying circumstance codes 99100-99140.",
+      "d": "Base units come from the anesthesia code itself; P modifiers report the patient's ASA physical status."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "Reporting a lower level than performed intentionally always as the definition"
+        "text": "Reporting a lower level than documented to avoid payer audits"
       },
       {
         "id": "c",
-        "text": "Using the correct code"
+        "text": "Billing component codes separately instead of one bundled code"
       },
       {
         "id": "d",
-        "text": "Appending a correct modifier"
+        "text": "Billing for a service that the provider did not perform"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Upcoding is a compliance/fraud risk; downcoding underreports services.",
     "distractorExplanations": {
-      "b": "That's downcoding/under coding concepts.",
-      "c": "Correct coding is compliant.",
-      "d": "Proper modifiers are fine."
+      "b": "Reporting a lower level than documented is downcoding (undercoding), also noncompliant but the opposite of upcoding.",
+      "c": "Billing components instead of the bundled code is unbundling, a different improper coding practice.",
+      "d": "Billing for services not rendered is phantom billing, a separate fraud type from inflating a real service's level."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Patient thank-you cards"
+        "text": "Accepting gifts from vendors in exchange for patient referrals"
       },
       {
         "id": "d",
-        "text": "Scheduling reminders"
+        "text": "Physician referrals to a lab the physician has a financial interest in"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Knowledge includes deliberate ignorance/reckless disregard in FCA jurisprudence—compliance programs matter.",
     "distractorExplanations": {
       "a": "Good-faith corrections differ.",
-      "c": "Courtesy cards fine.",
-      "d": "Reminders fine."
+      "c": "Paying or accepting remuneration for referrals is addressed by the Anti-Kickback Statute, not the False Claims Act itself.",
+      "d": "Self-referral to an entity with a financial relationship is governed by the Stark Law, not the False Claims Act itself."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1558,11 +1558,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only CPT relative value units"
+        "text": "Workplace safety rules and sharps injury logs"
       },
       {
         "id": "b",
-        "text": "Only OSHA sharps logs"
+        "text": "Electronic transaction formats and code set standards"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "Federal highway speed limits"
+        "text": "Technical safeguards such as encryption and access logs"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Covered entities must safeguard PHI; minimum necessary and patient rights apply.",
     "distractorExplanations": {
-      "a": "RVUs are payment.",
-      "b": "OSHA is safety.",
-      "d": "Speed limits are traffic."
+      "a": "Workplace safety and sharps injury logs are OSHA requirements, not part of the HIPAA Privacy Rule.",
+      "b": "Transaction formats and code sets fall under the HIPAA Transactions and Code Sets rule, not the Privacy Rule.",
+      "d": "Technical safeguards for electronic PHI are required by the HIPAA Security Rule, separate from the Privacy Rule."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "ICD diagnoses"
+        "text": "Diagnoses, symptoms, and reasons for the patient encounter"
       },
       {
         "id": "b",
-        "text": "Only inpatient ICD-10-PCS"
+        "text": "Inpatient facility procedures on the UB-04"
       },
       {
         "id": "c",
-        "text": "Only anesthesia base units"
+        "text": "Emerging technology services tracked with Category III codes"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "A-codes, J-codes, etc., are Level II examples used on claims with CPT as applicable.",
     "distractorExplanations": {
-      "a": "Diagnoses are ICD.",
-      "b": "PCS is hospital inpatient procedures.",
-      "c": "Anesthesia base is CPT anesthesia methodology."
+      "a": "Diagnoses, symptoms and encounter reasons are reported with ICD-10-CM, not HCPCS Level II.",
+      "b": "Inpatient facility procedures on the UB-04 are coded with ICD-10-PCS, not HCPCS Level II.",
+      "c": "Category III codes for emerging technology belong to CPT (HCPCS Level I), not HCPCS Level II."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A provider believes Medicare may deny a service as not reasonable/necessary and the beneficiary may be liable"
+        "text": "A provider believes Medicare may deny a service as not reasonable/necessary"
       },
       {
         "id": "b",
-        "text": "Medicaid always pays 100%"
+        "text": "A Medicare Advantage enrollee may owe for a service the plan will not cover"
       },
       {
         "id": "c",
-        "text": "A service is always covered without issue"
+        "text": "A hospital inpatient is told about the right to appeal a discharge decision"
       },
       {
         "id": "d",
-        "text": "The patient is under age 1"
+        "text": "A patient is notified that Medicaid will be billed as the secondary payer"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "ABN shifts financial liability for expected denials when properly executed for Medicare Part B situations.",
+    "explanation": "ABN shifts financial liability for expected denials when properly executed for Medicare Part B situations. The beneficiary may then be financially liable.",
     "distractorExplanations": {
-      "b": "Not a Medicaid payment guarantee.",
-      "c": "Covered services don't need ABN for that reason.",
-      "d": "Age unrelated generally."
+      "b": "The ABN is not used for Medicare Advantage enrollees; MA plans handle this through organization determinations.",
+      "c": "Inpatient discharge appeal rights are given on the Important Message from Medicare (IM), not the ABN.",
+      "d": "Secondary-payer billing is coordination of benefits; the ABN addresses expected Medicare denial and patient liability."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A diagnosis code"
+        "text": "A patient's unique Medicare Beneficiary Identifier shown on claims"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "A place of service code"
+        "text": "A taxonomy code describing the provider's type and specialty"
       },
       {
         "id": "d",
-        "text": "A patient's SSN replacement on all public posts"
+        "text": "A federal tax ID used to report the practice's income"
       }
     ],
     "correctOptionId": "b",
     "explanation": "NPIs identify providers on claims; do not confuse with taxonomy or PIN legacy systems.",
     "distractorExplanations": {
-      "a": "DX are ICD.",
-      "c": "POS is two-digit setting.",
-      "d": "SSNs must not be publicly posted."
+      "a": "The Medicare Beneficiary Identifier identifies the patient; the NPI identifies the health care provider.",
+      "c": "The taxonomy code is a separate 10-character code describing provider type and specialty, not the NPI itself.",
+      "d": "The federal tax ID (EIN/TIN) is used for tax reporting; the NPI is a 10-digit provider identifier for HIPAA transactions."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Using a panel code correctly"
+        "text": "Reporting a higher E/M level than the documentation supports"
       },
       {
         "id": "b",
-        "text": "Following NCCI"
+        "text": "Reporting the comprehensive panel code when all component tests were done"
       },
       {
         "id": "c",
-        "text": "Billing component codes separately when a comprehensive code includes them, contrary to rules"
+        "text": "Billing component codes separately when a comprehensive code includes them"
       },
       {
         "id": "d",
-        "text": "Reporting one inclusive code properly"
+        "text": "Appending modifier 59 when services are distinct and documented"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unbundling to increase payment violates NCCI/CPT inclusive coding principles.",
+    "explanation": "Unbundling to increase payment violates NCCI/CPT inclusive coding principles. Billing the components this way is contrary to CPT and NCCI rules.",
     "distractorExplanations": {
-      "a": "Correct panel use is fine.",
-      "b": "Following NCCI is compliant.",
-      "d": "Inclusive coding is proper."
+      "a": "Reporting a higher level than documented is upcoding, a different compliance violation from unbundling.",
+      "b": "Using the panel code when every component test was performed is correct coding, the opposite of unbundling.",
+      "d": "Modifier 59 on truly distinct, documented services is appropriate use, not unbundling."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Any service a patient requests for convenience only always payable"
+        "text": "Services the patient requests and agrees to pay for out of pocket"
       },
       {
         "id": "b",
-        "text": "The most expensive option"
+        "text": "Services that are covered benefits under the patient's plan"
       },
       {
         "id": "c",
-        "text": "Services without documentation"
+        "text": "Services ordered by a physician, which makes them necessary"
       },
       {
         "id": "d",
-        "text": "Services are reasonable and necessary for diagnosis/treatment per payer coverage criteria"
+        "text": "Services are reasonable and necessary for diagnosis/treatment"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Coverage policies/LCDs/NCDs define necessity; documentation must support it.",
+    "explanation": "Coverage policies/LCDs/NCDs define necessity; documentation must support it. Necessity is judged against payer coverage criteria.",
     "distractorExplanations": {
-      "a": "Convenience isn't automatic necessity.",
-      "b": "Cost ≠ necessity.",
-      "c": "No documentation fails audits."
+      "a": "Patient willingness to pay does not establish medical necessity; the clinical need must be documented.",
+      "b": "Being a covered benefit is a coverage question; a covered service can still be denied as not medically necessary.",
+      "c": "A physician order alone does not make a service necessary; the documentation must support the clinical need."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1760,23 +1760,23 @@
       },
       {
         "id": "b",
-        "text": "Encouraging silent upcoding goals"
+        "text": "Policies and training, with audits done only after a payer complaint"
       },
       {
         "id": "c",
-        "text": "Destroying records after one week"
+        "text": "Policies, training, and audits, with no anonymous reporting line"
       },
       {
         "id": "d",
-        "text": "Sharing passwords among all staff"
+        "text": "Auditing and training, with discipline left out of written standards"
       }
     ],
     "correctOptionId": "a",
     "explanation": "OIG seven-element concepts emphasize prevention and detection of fraud/abuse.",
     "distractorExplanations": {
-      "b": "Upcoding goals are illegal.",
-      "c": "Retention schedules are longer.",
-      "d": "Password sharing breaks security."
+      "b": "OIG guidance calls for ongoing internal auditing and monitoring, not audits triggered after a payer complaint.",
+      "c": "Open lines of communication, including an anonymous reporting option, are one of the OIG's seven core elements.",
+      "d": "Enforcing standards through well-publicized disciplinary guidelines is one of the OIG's seven core elements."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bilateral surgery"
+        "text": "A significant, separately identifiable E/M service on the day of a procedure"
       },
       {
         "id": "b",
-        "text": "A distinct procedural service not normally reported together, when criteria are met"
+        "text": "A distinct procedural service not normally reported together"
       },
       {
         "id": "c",
-        "text": "Assistant surgeon"
+        "text": "A bilateral procedure performed at the same operative session"
       },
       {
         "id": "d",
-        "text": "Increased E/M complexity automatically"
+        "text": "A repeat procedure by the same physician on the same day"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Use distinct-service modifiers only with documentation; overuse is an audit target.",
+    "explanation": "Use distinct-service modifiers only with documentation; overuse is an audit target. Use it only when the criteria are met.",
     "distractorExplanations": {
-      "a": "50 bilateral.",
-      "c": "80 assistant.",
-      "d": "E/M complexity isn't 59."
+      "a": "A significant, separately identifiable E/M on the day of a procedure is reported with modifier 25, not 59.",
+      "c": "Bilateral procedures at the same session are reported with modifier 50, not 59 or the X modifiers.",
+      "d": "A repeat procedure by the same physician is reported with modifier 76, not the distinct-service modifier 59."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Late employee time cards"
+        "text": "Billing errors made in good faith and refunded within 60 days"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "Patient no-shows"
+        "text": "Kickbacks paid to induce referrals of federal health program patients"
       },
       {
         "id": "d",
-        "text": "HIPAA training attendance"
+        "text": "Disclosure of patient information without authorization"
       }
     ],
     "correctOptionId": "b",
     "explanation": "FCA liability attaches to knowing false claims to federal healthcare programs.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "c": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”.",
-      "d": "Not the best answer here; the right answer is “Knowingly submitting false or fraudulent claims for government payment”."
+      "a": "Good-faith errors refunded promptly lack the knowing intent the False Claims Act requires for liability.",
+      "c": "Kickbacks for referrals are addressed by the Anti-Kickback Statute, a separate law from the False Claims Act.",
+      "d": "Unauthorized disclosure of PHI is a HIPAA Privacy Rule violation, not a False Claims Act matter."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Selecting a code that accurately reflects documentation"
+        "text": "Reporting a lower-level service than documented to limit audit risk"
       },
       {
         "id": "b",
-        "text": "Reporting a higher-level service than supported by documentation to increase payment"
+        "text": "Reporting a higher-level service than supported by documentation"
       },
       {
         "id": "c",
-        "text": "Using ICD-10-CM seventh characters correctly"
+        "text": "Billing separately for components included in a comprehensive code"
       },
       {
         "id": "d",
-        "text": "Appending modifier 59 appropriately"
+        "text": "Billing a service that was not performed, using a valid code"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Upcoding is a compliance risk and potential fraud when unsupported.",
+    "explanation": "Upcoding is a compliance risk and potential fraud when unsupported. It is typically done to increase payment.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”.",
-      "c": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”.",
-      "d": "Not the best answer here; the right answer is “Reporting a higher-level service than supported by documentation to increase payment”."
+      "a": "Reporting a lower level than documented is downcoding, which is also inaccurate but the opposite of upcoding.",
+      "c": "Billing components of a comprehensive code separately is unbundling, a distinct improper coding practice.",
+      "d": "Billing for a service not performed is billing for services not rendered, a separate fraud type from upcoding."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase unrelated diagnosis codes"
+        "text": "Set coverage rules that define medical necessity for each service"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Replace medical necessity policies"
+        "text": "Assign relative value units used to price each CPT code"
       },
       {
         "id": "d",
-        "text": "Assign DRGs for physician claims"
+        "text": "Identify the global surgical period assigned to each procedure code"
       }
     ],
     "correctOptionId": "b",
     "explanation": "National Correct Coding Initiative edits promote correct coding and avoid unbundling.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Prevent improper payment of services that should not be billed together”.",
-      "c": "Not the best answer here; the right answer is “Prevent improper payment of services that should not be billed together”.",
-      "d": "Not the best answer here; the right answer is “Prevent improper payment of services that should not be billed together”."
+      "a": "Coverage and medical necessity rules come from NCDs and LCDs, not from NCCI edits.",
+      "c": "Relative value units come from the Medicare Physician Fee Schedule (RBRVS), not from NCCI edits.",
+      "d": "Global surgical days are indicators in the Medicare Physician Fee Schedule database, not NCCI edits."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee payment from Medicaid"
+        "text": "Notify a beneficiary that Medicaid will cover the balance"
       },
       {
         "id": "b",
-        "text": "Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility"
+        "text": "Notify a beneficiary that Medicare may deny a service"
       },
       {
         "id": "c",
-        "text": "Replace the CMS-1500 form"
+        "text": "Notify an inpatient of the right to appeal a hospital discharge"
       },
       {
         "id": "d",
-        "text": "Authorize a research study without consent"
+        "text": "Document the patient's consent to the procedure being performed"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ABNs shift potential financial liability for anticipated Medicare noncoverage when properly used.",
+    "explanation": "ABNs shift potential financial liability for anticipated Medicare noncoverage when properly used. This lets the beneficiary decide whether to accept financial responsibility.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility”.",
-      "c": "Not the best answer here; the right answer is “Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility”.",
-      "d": "Not the best answer here; the right answer is “Notify a beneficiary that Medicare may deny a service so they can accept financial responsibility”."
+      "a": "The ABN shifts potential liability to the beneficiary; it does not promise Medicaid will pay the balance.",
+      "c": "Inpatient discharge appeal rights are given on the Important Message from Medicare (IM), not the ABN.",
+      "d": "The ABN is a financial liability notice; consent to the procedure is a separate clinical document."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The service is convenient for the clinic schedule"
+        "text": "The service is a covered benefit under the patient's plan"
       },
       {
         "id": "b",
-        "text": "The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation"
+        "text": "The service is reasonable and necessary for diagnosis or treatment"
       },
       {
         "id": "c",
-        "text": "Any requested service must be paid"
+        "text": "The service was ordered by a licensed physician for the patient"
       },
       {
         "id": "d",
-        "text": "Only cosmetic procedures qualify"
+        "text": "The service is requested by the patient after informed consent"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Coverage depends on documented medical necessity aligned with payer policies.",
+    "explanation": "Coverage depends on documented medical necessity aligned with payer policies. It must meet payer/coverage rules and be supported by documentation.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation”.",
-      "c": "Not the best answer here; the right answer is “The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation”.",
-      "d": "Not the best answer here; the right answer is “The service is reasonable and necessary for diagnosis or treatment per payer/coverage rules and documentation”."
+      "a": "Being a covered benefit is a coverage question; a covered service can still be denied as not medically necessary.",
+      "c": "A physician order alone does not establish necessity; documentation must show the clinical need for the service.",
+      "d": "A patient request, even with informed consent, does not make a service medically necessary."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"

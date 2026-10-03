@@ -1,0 +1,709 @@
+{
+ "rbt-behavior-technician-readiness-check": {
+  "rbt-behavior-technician-readiness-check-measurement-001": {
+   "options": {
+    "a": "Whether behavior occurred at any point in each interval",
+    "b": "Every instance of the target behavior during observation",
+    "c": "Whether behavior is occurring at the end of each interval",
+    "d": "Behavior that lasts the entire interval being scored"
+   },
+   "distractorExplanations": {
+    "a": "Recording any occurrence within an interval is partial-interval recording, a discontinuous method, not continuous.",
+    "c": "Checking at the end of each interval is momentary time sampling, a discontinuous method.",
+    "d": "Scoring behavior that fills the whole interval is whole-interval recording, a discontinuous method."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-002": {
+   "options": {
+    "a": "Time from the instruction to the first response",
+    "b": "Total time the behavior lasts",
+    "c": "Time elapsed between two consecutive responses",
+    "d": "Count of responses per observation period"
+   },
+   "distractorExplanations": {
+    "a": "Time from the instruction to response onset is latency, not frequency.",
+    "b": "Total time engaged in the behavior is duration, not a count of responses.",
+    "c": "Time between consecutive responses is interresponse time (IRT), not frequency."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-003": {
+   "options": {
+    "a": "How long a behavior lasts",
+    "b": "How often a behavior occurs",
+    "c": "How soon a behavior starts",
+    "d": "Time between responses"
+   },
+   "distractorExplanations": {
+    "b": "How often a behavior occurs is frequency (a count), not duration.",
+    "c": "How soon behavior starts after an SD is latency, not duration.",
+    "d": "Time between consecutive responses is IRT, not how long each instance lasts."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-004": {
+   "options": {
+    "a": "Time from response onset to its offset",
+    "b": "Time from SD/prompt to response onset",
+    "c": "Time between two consecutive responses",
+    "d": "Responses per minute of session"
+   },
+   "distractorExplanations": {
+    "a": "Onset to offset of a response is duration, not latency.",
+    "c": "The time between consecutive responses is interresponse time (IRT), not latency.",
+    "d": "Responses per minute is rate (frequency over time), not latency."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-005": {
+   "options": {
+    "a": "Time from the SD to the first response",
+    "b": "Time from response onset to offset",
+    "c": "Time between consecutive responses",
+    "d": "Responses per unit of time"
+   },
+   "distractorExplanations": {
+    "a": "Time from the SD to the first response is latency, not interresponse time.",
+    "b": "Onset to offset is the duration of one response, not the time between responses.",
+    "d": "Responses per unit of time is rate, not interresponse time."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-006": {
+   "options": {
+    "a": "Behavior has clear onset and offset",
+    "b": "Continuous recording is impractical",
+    "c": "Exact counts of each response are needed",
+    "d": "The behavior occurs only a few times daily"
+   },
+   "distractorExplanations": {
+    "a": "Discrete behaviors with clear onsets are good candidates for continuous recording, not a reason to switch methods.",
+    "c": "Exact counts require continuous (event) recording; discontinuous methods only estimate occurrence.",
+    "d": "Low-rate behaviors are easy to count continuously; discontinuous methods suit high-rate or long-lasting behaviors."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-007": {
+   "options": {
+    "a": "Overestimate occurrence for some behaviors",
+    "b": "Underestimate occurrence for most behaviors",
+    "c": "Match continuous duration data closely",
+    "d": "Measure latency from the SD to response"
+   },
+   "distractorExplanations": {
+    "b": "Underestimation is the typical bias of whole-interval recording, not partial-interval recording.",
+    "c": "Partial-interval scores any occurrence in an interval, so it inflates duration rather than matching it.",
+    "d": "Partial-interval estimates occurrence; latency requires timing from the SD to response onset."
+   },
+   "explanation": "Overestimate occurrence relative to continuous for some behaviors. The overestimate is relative to continuous measurement, because any occurrence scores the whole interval."
+  },
+  "rbt-behavior-technician-readiness-check-measurement-008": {
+   "options": {
+    "a": "Underestimate occurrence for some behaviors",
+    "b": "Overestimate occurrence for some behaviors",
+    "c": "Match frequency counts for brief behaviors",
+    "d": "Record behavior only at the interval's end"
+   },
+   "distractorExplanations": {
+    "b": "Overestimation is the known bias of partial-interval recording, not whole-interval recording.",
+    "c": "Whole-interval misses brief behaviors that do not fill an interval, so it does not match frequency counts.",
+    "d": "Checking at the interval's end is momentary time sampling, not whole-interval recording."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-009": {
+   "options": {
+    "a": "Whether behavior occurred at any time during intervals",
+    "b": "Whether behavior is occurring at the end of intervals",
+    "c": "Whether behavior lasted throughout entire intervals",
+    "d": "How many times behavior occurred in each interval"
+   },
+   "distractorExplanations": {
+    "a": "Any occurrence during the interval is partial-interval recording, not momentary time sampling.",
+    "c": "Behavior lasting the whole interval is whole-interval recording, not momentary time sampling.",
+    "d": "Counting occurrences within intervals is frequency (event) recording, not momentary time sampling."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-010": {
+   "options": {
+    "a": "Direct observation of each response as it occurs",
+    "b": "Caregiver ratings of behavior after the session",
+    "c": "Enduring environmental effects of behavior",
+    "d": "Timing how long each response lasts"
+   },
+   "distractorExplanations": {
+    "a": "Watching each response live is continuous event recording; permanent product measures the outcome left behind.",
+    "b": "Caregiver ratings are indirect assessment, not a tangible product of the behavior.",
+    "d": "Timing each response is duration recording, not measuring a lasting product of behavior."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-011": {
+   "options": {
+    "a": "Based on the learner's diagnosis and inner feelings",
+    "b": "Clear, objective, and complete enough for reliable measurement",
+    "c": "Brief labels such as 'aggression' or 'tantrum'",
+    "d": "Written by each RBT in their own words at the start of every session"
+   },
+   "distractorExplanations": {
+    "a": "Diagnoses and inner states are not observable; operational definitions describe observable, measurable behavior.",
+    "c": "One-word labels are not operational; a definition must state observable examples and non-examples.",
+    "d": "Definitions are set in the plan so all observers measure the same thing; personal rewording undermines IOA."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-012": {
+   "options": {
+    "a": "How well the intervention changes behavior",
+    "b": "Whether the definition matches the diagnosis",
+    "c": "Measurement agreement between observers",
+    "d": "Consistency of the client's responding over time"
+   },
+   "distractorExplanations": {
+    "a": "Treatment effectiveness is judged by visual analysis of the data, not by IOA.",
+    "b": "IOA checks agreement between observers' data, not alignment with a diagnosis.",
+    "d": "Stability of the client's responding is variability in the data, not agreement between observers."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-014": {
+   "options": {
+    "a": "Components of interobserver agreement scores",
+    "b": "Visual analysis features of graphed data",
+    "c": "Steps of a task analysis for chaining",
+    "d": "Dimensions of an operational definition"
+   },
+   "distractorExplanations": {
+    "a": "IOA is calculated with formulas such as total count or interval-by-interval; trend, level, and variability are graph features.",
+    "c": "Task analysis steps are units of a skill, not properties of graphed data.",
+    "d": "Operational definitions describe the behavior; trend, level, and variability describe data paths on a graph."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-measurement-015": {
+   "options": {
+    "a": "They show proportional change on a logarithmic multiply-divide scale",
+    "b": "They support standard visual analysis of behavior change",
+    "c": "They let the RBT skip operational definitions",
+    "d": "They display cumulative totals that cannot go down"
+   },
+   "distractorExplanations": {
+    "a": "Logarithmic scaling describes standard celeration charts, not equal-interval line graphs.",
+    "c": "No graph type replaces operational definitions; measurement depends on clear definitions.",
+    "d": "Non-decreasing cumulative totals describe cumulative records, not equal-interval line graphs."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-001": {
+   "options": {
+    "a": "Supervisor direction within their scope",
+    "b": "Their own clinical judgment once trained",
+    "c": "Direction from the caregiver who hired them",
+    "d": "Direction from a senior RBT on the team"
+   },
+   "distractorExplanations": {
+    "b": "Training does not grant independent clinical authority; RBTs assist under supervisor direction.",
+    "c": "Caregivers can give input, but RBT assessment duties are directed by the BCBA/BCaBA supervisor.",
+    "d": "A senior RBT is not a qualified supervisor; RBTs work under a BCBA, BCaBA, or other qualified supervisor."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-002": {
+   "options": {
+    "a": "Potential reinforcers",
+    "b": "Behavior functions",
+    "c": "Effective prompt levels",
+    "d": "Mastery criteria"
+   },
+   "distractorExplanations": {
+    "b": "Behavior function is identified by a functional behavior assessment, not a preference assessment.",
+    "c": "Prompt levels are chosen through prompting procedures and data, not preference assessments.",
+    "d": "Mastery criteria are set in the skill program by the supervisor, not found through preference assessment."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-003": {
+   "options": {
+    "a": "Choices made between two items at a time",
+    "b": "Engagement when multiple items are available",
+    "c": "Selections from an array with items removed",
+    "d": "Caregiver rankings of the learner's favorites"
+   },
+   "distractorExplanations": {
+    "a": "Choosing between two items at a time is a paired-stimulus preference assessment, not free-operant.",
+    "c": "Removing chosen items from an array is the MSWO procedure, not free-operant observation.",
+    "d": "Caregiver rankings are an indirect preference assessment, not direct free-operant observation."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-004": {
+   "options": {
+    "a": "Antecedent, behavior, correction",
+    "b": "Activity, baseline, compliance",
+    "c": "Antecedent, behavior, consequence",
+    "d": "Attention, behavior, communication"
+   },
+   "distractorExplanations": {
+    "a": "The C in ABC is consequence (what follows the behavior), not correction.",
+    "b": "ABC stands for antecedent-behavior-consequence; activity, baseline, and compliance are unrelated terms.",
+    "d": "Attention is one possible function, but the ABC acronym is antecedent, behavior, consequence."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-005": {
+   "options": {
+    "a": "Direct ABC observation during sessions",
+    "b": "Interviews/checklists with caregivers",
+    "c": "Functional analysis with test conditions",
+    "d": "Scatterplot data recorded by the RBT"
+   },
+   "distractorExplanations": {
+    "a": "ABC observation in session is direct (descriptive) assessment, not indirect assessment.",
+    "c": "Manipulating test conditions is a functional analysis, an experimental method, not indirect assessment.",
+    "d": "Scatterplots are direct observational data, not indirect interview or checklist methods."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-006": {
+   "options": {
+    "a": "Variables maintaining problem behavior",
+    "b": "The topography of problem behavior",
+    "c": "A diagnosis that explains the behavior",
+    "d": "Punishers that will stop the behavior"
+   },
+   "distractorExplanations": {
+    "b": "Topography describes what the behavior looks like; an FBA seeks why it continues (its maintaining variables).",
+    "c": "Diagnosis is not the goal of an FBA; it identifies environmental variables maintaining the behavior.",
+    "d": "An FBA identifies function to build function-based interventions, not punishers to suppress behavior."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-007": {
+   "options": {
+    "a": "Collect ABC data when assigned by a supervisor",
+    "b": "Run preference assessments after training",
+    "c": "Design comprehensive FBAs or behavior plans",
+    "d": "Graph session data as directed by the plan"
+   },
+   "distractorExplanations": {
+    "a": "Collecting ABC data as assigned is a core RBT task; the prompt asks what RBTs do not do independently.",
+    "b": "Conducting trained preference assessments is on the RBT Task List, so RBTs can do it.",
+    "d": "Graphing data as directed is an RBT task; designing FBAs and behavior plans is the supervisor's job."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-008": {
+   "options": {
+    "a": "Caregiver satisfaction with services",
+    "b": "The function of problem behavior",
+    "c": "Current performance on targets",
+    "d": "Learner item preferences"
+   },
+   "distractorExplanations": {
+    "a": "Satisfaction surveys measure social validity, not current performance on skill targets.",
+    "b": "Function is identified by an FBA; skill probes check performance on acquisition targets.",
+    "d": "Item preference is found through preference assessments, not skill probes."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-009": {
+   "options": {
+    "a": "After mastery to confirm the skill is maintained",
+    "b": "Before intervention to describe current performance",
+    "c": "During intervention to track response to treatment",
+    "d": "After a reversal to show behavior returning"
+   },
+   "distractorExplanations": {
+    "a": "Post-mastery checks are maintenance probes, not baseline data.",
+    "c": "Data collected during treatment is progress monitoring; baseline comes before intervention starts.",
+    "d": "Return-to-baseline phases in a reversal design come later; initial baseline precedes any intervention."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-012": {
+   "options": {
+    "a": "The learner's diagnosis and IQ score",
+    "b": "Topography and duration of the behavior",
+    "c": "The reinforcement schedule in the plan",
+    "d": "Setting, people, materials, time of day"
+   },
+   "distractorExplanations": {
+    "a": "Diagnosis and IQ are client characteristics, not ecological variables in the environment.",
+    "b": "Topography and duration describe the behavior itself, not the surrounding ecological context.",
+    "c": "Reinforcement schedules are programmed contingencies, not the ecological setting variables an RBT notes."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-013": {
+   "options": {
+    "a": "Shared with any staff member who asks",
+    "b": "Discussed with family friends who help",
+    "c": "Stored on a personal phone for easy access",
+    "d": "Protected per ethics and employer policy"
+   },
+   "distractorExplanations": {
+    "a": "Client information goes to those who need it to deliver services, not to any staff member who asks.",
+    "b": "Family friends are not authorized recipients unless the guardian consents in writing.",
+    "c": "Storing client information on personal devices violates employer privacy policy unless approved and secured."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-014": {
+   "options": {
+    "a": "Flag for supervisor review; do not silently alter",
+    "b": "Correct the numbers to match what you observed",
+    "c": "Discard the session data and note it as missed",
+    "d": "Ask the caregiver which record is accurate"
+   },
+   "distractorExplanations": {
+    "b": "Altering recorded data, even to match memory, falsifies records; report the discrepancy to the supervisor.",
+    "c": "Deleting data hides the problem; inconsistencies go to the supervisor for review.",
+    "d": "Caregivers do not resolve data integrity issues; the supervisor reviews inconsistent data."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-assessment-015": {
+   "options": {
+    "a": "RBT-written behavior plans",
+    "b": "Supervised intervention planning",
+    "c": "Diagnosis of the client's disorder",
+    "d": "Caregiver-led treatment design"
+   },
+   "distractorExplanations": {
+    "a": "RBTs do not write behavior plans; the supervisor uses assessment results to plan intervention.",
+    "c": "ABA assessment informs intervention, not a medical or psychological diagnosis.",
+    "d": "Caregivers give input, but intervention design is the supervisor's responsibility."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-001": {
+   "options": {
+    "a": "Teaching within play using the learner's motivation and interests",
+    "b": "Clear SD, response, consequence, and short intertrial intervals",
+    "c": "Linking each step of a routine from the first step forward",
+    "d": "Reinforcement delivered on a fixed-time schedule without a response"
+   },
+   "distractorExplanations": {
+    "a": "Embedding teaching in play around motivation is naturalistic teaching (NET), not DTT.",
+    "c": "Teaching a routine step by step from the first is forward chaining, not discrete trial training.",
+    "d": "Response-independent fixed-time delivery is noncontingent reinforcement, not DTT."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-002": {
+   "options": {
+    "a": "Increase reliance on the prompt",
+    "b": "Thin the reinforcement schedule",
+    "c": "Transfer stimulus control to the SD",
+    "d": "Transfer stimulus control to the prompt"
+   },
+   "distractorExplanations": {
+    "a": "Prompt fading aims to reduce prompt dependence, not increase it.",
+    "b": "Schedule thinning reduces reinforcement frequency; prompt fading reduces prompts.",
+    "d": "Fading moves stimulus control away from the prompt and onto the natural SD."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-003": {
+   "options": {
+    "a": "An independent opportunity first",
+    "b": "More intrusive prompts then fades",
+    "c": "A gestural prompt, then adds help",
+    "d": "A fixed time delay of 4 seconds"
+   },
+   "distractorExplanations": {
+    "a": "Starting with an independent opportunity is least-to-most prompting, the opposite order.",
+    "c": "Adding help after a gesture is least-to-most; most-to-least starts with the most intrusive prompt.",
+    "d": "Time delay is a separate prompting procedure; most-to-least starts with full assistance and fades."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-004": {
+   "options": {
+    "a": "Full physical guidance, then fades to less intrusive prompts",
+    "b": "A 0-second delay prompt, then gradually lengthens the delay",
+    "c": "Opportunity for independent response then increases assistance",
+    "d": "Modeling the response, then fading to a gestural prompt"
+   },
+   "distractorExplanations": {
+    "a": "Starting with full physical guidance is most-to-least prompting, the opposite order.",
+    "b": "Starting at 0 seconds and lengthening the delay is progressive time delay, not least-to-most.",
+    "d": "Model-to-gesture fading moves from more to less help, which is most-to-least logic."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-005": {
+   "options": {
+    "a": "Future probability of the behavior it follows",
+    "b": "Future probability of the behavior it precedes",
+    "c": "The immediate intensity of the current behavior",
+    "d": "Satiation for the stimulus delivered"
+   },
+   "distractorExplanations": {
+    "b": "Reinforcement acts on the behavior it follows; a stimulus that precedes behavior is an antecedent.",
+    "c": "Reinforcement changes future likelihood, not the intensity of the response already occurring.",
+    "d": "Satiation reduces a reinforcer's effectiveness; it is not what reinforcement increases."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-006": {
+   "options": {
+    "a": "After a skill is mastered",
+    "b": "To promote resistance to extinction",
+    "c": "During maintenance",
+    "d": "When teaching new skills"
+   },
+   "distractorExplanations": {
+    "a": "Once a skill is mastered, schedules are thinned to intermittent reinforcement for maintenance.",
+    "b": "Intermittent, not continuous, reinforcement builds resistance to extinction.",
+    "c": "Maintenance uses thinned, intermittent schedules, not continuous reinforcement."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-007": {
+   "options": {
+    "a": "Maintain skills and resist extinction",
+    "b": "Speed up acquisition of new skills",
+    "c": "Make behavior extinguish faster",
+    "d": "Replace the need for prompting"
+   },
+   "distractorExplanations": {
+    "b": "Continuous reinforcement speeds new learning; intermittent schedules support maintenance.",
+    "c": "Intermittent schedules make behavior more resistant to extinction, not quicker to extinguish.",
+    "d": "Reinforcement schedules do not replace prompting; prompts and fading address stimulus control."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-008": {
+   "options": {
+    "a": "Antecedent-behavior links",
+    "b": "Discrete trials with SDs",
+    "c": "Teachable component steps",
+    "d": "Prompt hierarchy levels"
+   },
+   "distractorExplanations": {
+    "a": "Antecedent-behavior links come from ABC analysis, not from a task analysis.",
+    "b": "Discrete trials are a teaching format; task analysis breaks a complex skill into steps.",
+    "d": "A prompt hierarchy orders prompt intrusiveness; task analysis divides the skill itself into steps."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-009": {
+   "options": {
+    "a": "First step first, then adds subsequent steps",
+    "b": "Last step first, then adds earlier steps",
+    "c": "Every step in each trial until mastered",
+    "d": "Steps in random order to build flexibility"
+   },
+   "distractorExplanations": {
+    "b": "Starting with the last step and working backward is backward chaining.",
+    "c": "Teaching every step in each trial is total-task chaining, not forward chaining.",
+    "d": "Chaining teaches steps in a set sequence; random order is not forward chaining."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-010": {
+   "options": {
+    "a": "Last step first with therapist completing earlier steps initially",
+    "b": "First step first with therapist completing later steps initially",
+    "c": "Every step in every trial with prompts as needed for each",
+    "d": "The middle steps first because they are often the hardest"
+   },
+   "distractorExplanations": {
+    "b": "Teaching the first step and having the therapist finish the rest is forward chaining.",
+    "c": "Prompting through every step in each trial is total-task chaining, not backward chaining.",
+    "d": "Chaining starts at one end of the sequence; backward chaining begins with the last step."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-011": {
+   "options": {
+    "a": "Performance after teaching has stopped for weeks",
+    "b": "Reduced prompts within the same teaching setting",
+    "c": "Performance across people, settings, and stimuli",
+    "d": "Faster responding to one specific SD in the clinic"
+   },
+   "distractorExplanations": {
+    "a": "Continued performance after teaching ends is maintenance, not generalization.",
+    "b": "Prompt fading in one setting builds stimulus control, not generalization across people and settings.",
+    "d": "Fluency with one SD in one setting is the opposite of generalization across stimuli."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-012": {
+   "options": {
+    "a": "Skills occur across new people and settings",
+    "b": "Skills are acquired with as few errors as possible",
+    "c": "Skills reach mastery criteria during teaching",
+    "d": "Skills continue after teaching intensity reduces"
+   },
+   "distractorExplanations": {
+    "a": "Responding across new people and settings is generalization, not maintenance.",
+    "b": "Minimizing errors during acquisition is errorless teaching, not maintenance.",
+    "c": "Reaching mastery is acquisition; maintenance is what happens after teaching is reduced."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-013": {
+   "options": {
+    "a": "Let errors occur so correction can follow each one",
+    "b": "Start with independent trials before any prompting",
+    "c": "Increase speed of responding before accuracy",
+    "d": "Minimize errors while establishing correct responding"
+   },
+   "distractorExplanations": {
+    "a": "Allowing errors and then correcting is an error-correction approach, not errorless teaching.",
+    "b": "Starting with independent trials is least-to-most prompting, which allows errors.",
+    "c": "Building speed before accuracy is a fluency goal, not errorless teaching's aim of preventing errors."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-014": {
+   "options": {
+    "a": "Rapid table-based trials with set SDs",
+    "b": "Structured drills before free play time",
+    "c": "Group lessons led by a classroom teacher",
+    "d": "Ongoing activities and learner interests"
+   },
+   "distractorExplanations": {
+    "a": "Rapid structured table trials describe DTT, not naturalistic teaching.",
+    "b": "Drills before play keep teaching separate from activities; NET embeds it within them.",
+    "c": "Group instruction is a format, not naturalistic embedding in the learner's own activities and interests."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-skill-acq-015": {
+   "options": {
+    "a": "Follow the verbal instruction since it is more recent",
+    "b": "Clarify with supervisor; follow the authorized plan",
+    "c": "Ask the caregiver which version to follow",
+    "d": "Blend both versions until the next supervision"
+   },
+   "distractorExplanations": {
+    "a": "Recency does not authorize a change; the RBT clarifies with the supervisor and follows the written plan.",
+    "c": "Caregivers do not authorize program changes; the supervisor resolves conflicts in the plan.",
+    "d": "Mixing versions risks inconsistent treatment; clarify with the supervisor and follow the authorized plan."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-001": {
+   "options": {
+    "a": "Their own independent RBT certification authority",
+    "b": "A caregiver's direction in place of BACB supervision",
+    "c": "Supervision only during their first year",
+    "d": "Supervision requirements and BACB ethics standards"
+   },
+   "distractorExplanations": {
+    "a": "The RBT credential does not allow independent practice; RBTs must be supervised.",
+    "b": "Caregivers cannot replace required supervision by a qualified BCBA, BCaBA, or other qualified supervisor.",
+    "c": "RBT supervision is ongoing (at least 5% of service hours monthly), not limited to the first year."
+   },
+   "explanation": "Supervision requirements and BACB ethics standards applicable to their role. The standards are those applicable to the RBT role, including ongoing supervision of at least 5% of service hours each month."
+  },
+  "rbt-behavior-technician-readiness-check-ethics-003": {
+   "options": {
+    "a": "Impair objectivity — avoid/manage per ethics",
+    "b": "Strengthen rapport and should be encouraged",
+    "c": "Be accepted if the family requests them",
+    "d": "Be resolved by the RBT without telling anyone"
+   },
+   "distractorExplanations": {
+    "b": "Multiple relationships risk exploitation and lost objectivity; the code says avoid or manage them, not encourage them.",
+    "c": "Family requests do not remove the conflict-of-interest risk of a multiple relationship.",
+    "d": "Potential multiple relationships should be raised with the supervisor, not handled alone."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-004": {
+   "options": {
+    "a": "Required for billing but not ethics",
+    "b": "An ethical and clinical requirement",
+    "c": "Optional when the supervisor attends",
+    "d": "Acceptable if completed days later"
+   },
+   "distractorExplanations": {
+    "a": "Accurate documentation is an ethics requirement too, not just a billing need.",
+    "c": "Data and notes are still required when the supervisor is present.",
+    "d": "Late notes risk inaccuracy; documentation should be timely as well as accurate."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-005": {
+   "options": {
+    "a": "Approved skill programs",
+    "b": "Preference assessments you were trained on",
+    "c": "Unauthorized restrictive procedures",
+    "d": "Data collection procedures listed in the plan"
+   },
+   "distractorExplanations": {
+    "a": "Implementing supervisor-approved programs as written is exactly what RBTs should do.",
+    "b": "Trained preference assessments are within the RBT scope, not something to avoid.",
+    "d": "Collecting data per the plan is a core RBT duty, not a prohibited activity."
+   },
+   "explanation": "Unauthorized restrictive procedures outside the plan and law. Restrictive procedures outside the behavior plan and applicable law are off-limits."
+  },
+  "rbt-behavior-technician-readiness-check-ethics-006": {
+   "options": {
+    "a": "Wait until you collect enough proof before reporting",
+    "b": "Tell the caregiver first so they can explain",
+    "c": "Report to your supervisor and let them decide",
+    "d": "Follow mandated reporting and employer procedures"
+   },
+   "distractorExplanations": {
+    "a": "Mandated reporters report reasonable suspicion; they do not wait to gather proof.",
+    "b": "Alerting the caregiver may endanger the child or compromise evidence; follow mandated reporting steps.",
+    "c": "Telling a supervisor may be policy, but the mandated reporting duty is personal and cannot be delegated."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-007": {
+   "options": {
+    "a": "Create ethical issues — follow code/employer policy",
+    "b": "Be accepted if declining would offend the family",
+    "c": "Be fine if disclosed after the case ends",
+    "d": "Be kept if valued under one hundred dollars"
+   },
+   "distractorExplanations": {
+    "b": "Fear of offending does not justify large gifts; follow the RBT Ethics Code and employer policy.",
+    "c": "Gifts during services are the issue; later disclosure does not resolve the conflict.",
+    "d": "Ethics guidance allows at most gifts of minimal value (the BACB code cites about $10), far below $100."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-008": {
+   "options": {
+    "a": "Using client first names in the waiting room",
+    "b": "Sharing session wins in a private staff group chat",
+    "c": "Posting de-identified session photos online",
+    "d": "Not discussing client details in public spaces"
+   },
+   "distractorExplanations": {
+    "a": "Names discussed in shared spaces can identify clients; confidentiality means not discussing details publicly.",
+    "b": "Even private chats with uninvolved staff can breach confidentiality; share on a need-to-know basis.",
+    "c": "Photos can identify clients even without names; posting them breaches confidentiality."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-009": {
+   "options": {
+    "a": "Report data errors",
+    "b": "Ask supervisors for clarification",
+    "c": "Maintain their RBT certification",
+    "d": "Misrepresent credentials"
+   },
+   "distractorExplanations": {
+    "a": "Reporting data errors promptly is required, not something RBTs avoid.",
+    "b": "Seeking clarification from supervisors is expected professional behavior.",
+    "c": "Maintaining certification (renewal, competency assessment) is required of RBTs, not prohibited."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-011": {
+   "options": {
+    "a": "Applying the same family goals to every client for fairness",
+    "b": "Respecting family values while following ethical/clinical standards",
+    "c": "Adopting any family practice even when it conflicts with ethics",
+    "d": "Assuming a family's needs from their cultural background"
+   },
+   "distractorExplanations": {
+    "a": "Uniform goals ignore each family's values; cultural humility individualizes within ethical standards.",
+    "c": "Respect for culture does not override ethical and clinical standards or client safety.",
+    "d": "Stereotyping by background is the opposite of humility, which asks and learns from each family."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-012": {
+   "options": {
+    "a": "Are fine once services have ended",
+    "b": "Are allowed if accounts are private",
+    "c": "Need caution per ethics/employer rules",
+    "d": "Should be accepted to build family rapport"
+   },
+   "distractorExplanations": {
+    "a": "Post-service contact can still create multiple-relationship risks; follow ethics and employer rules.",
+    "b": "Private settings do not remove the dual-relationship and confidentiality risks of online connections.",
+    "d": "Rapport is built in session; online friend requests from clients create dual-relationship risk."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-013": {
+   "options": {
+    "a": "Request training/supervision before implementing",
+    "b": "Implement it while watching a training video",
+    "c": "Implement it and ask for feedback afterward",
+    "d": "Have a caregiver demonstrate it first"
+   },
+   "distractorExplanations": {
+    "b": "Videos do not replace competency-based training and supervision before implementing a procedure.",
+    "c": "Training must come before implementation, not after, to protect the client.",
+    "d": "Caregivers are not qualified trainers for clinical procedures; request training from the supervisor."
+   }
+  },
+  "rbt-behavior-technician-readiness-check-ethics-015": {
+   "options": {
+    "a": "Arriving early but skipping notes on short sessions",
+    "b": "Correcting caregivers in front of the client to model",
+    "c": "Prepared materials but frequent last-minute cancellations",
+    "d": "Punctuality, prepared materials, and respectful collaboration"
+   },
+   "distractorExplanations": {
+    "a": "Session notes are required for every session; professionalism includes complete documentation.",
+    "b": "Public correction damages collaboration; feedback to caregivers should be respectful and private.",
+    "c": "Reliable attendance is part of professionalism; frequent last-minute cancellations undermine it."
+   }
+  }
+ }
+}

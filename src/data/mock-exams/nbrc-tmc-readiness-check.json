@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved lung recruitment"
+        "text": "Possible right mainstem intubation—pull the tube back 2 cm"
       },
       {
         "id": "b",
-        "text": "Normal finding after all line placements"
+        "text": "Possible pleural effusion—schedule a chest X-ray for the morning"
       },
       {
         "id": "c",
-        "text": "Need to increase tidal volume blindly without assessment"
+        "text": "Possible pulmonary embolism—start a heparin drip right away"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Iatrogenic pneumothorax can follow subclavian/internal jugular attempts; asymmetric exam is a red flag.",
     "distractorExplanations": {
-      "a": "Recruitment would not silence one side suddenly.",
-      "b": "This is not a normal expected finding.",
-      "c": "Blind VT increases can worsen pneumothorax."
+      "a": "Mainstem intubation follows tube placement; a sudden unilateral loss after a central line points to an iatrogenic pneumothorax.",
+      "b": "Effusion develops gradually with dull, diminished sounds; a sudden post-line desaturation needs urgent action, not a morning film.",
+      "c": "PE usually leaves breath sounds present; unilateral absent sounds right after line placement point to pneumothorax."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Improved compliance"
+        "text": "Increased compliance from improving lung recruitment"
       },
       {
         "id": "c",
-        "text": "Disconnected ventilator circuit"
+        "text": "A leak in the circuit or around the ETT cuff"
       },
       {
         "id": "d",
-        "text": "Guaranteed resolution of bronchospasm"
+        "text": "Auto-triggering from an overly sensitive trigger setting"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Higher pressure for the same volume means the respiratory system is stiffer or more resistive.",
     "distractorExplanations": {
-      "b": "Improved compliance lowers pressures.",
-      "c": "Disconnection typically drops pressures/volumes.",
-      "d": "Bronchospasm raises resistive pressures."
+      "b": "Higher compliance lowers the pressure needed for the same tidal volume, so PIP would fall, not rise.",
+      "c": "Leaks lower circuit pressures and trigger low-pressure or low-volume alarms rather than a rising PIP.",
+      "d": "Auto-triggering raises the breath rate; it does not raise the peak pressure of each breath at the same tidal volume."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only airway resistance during peak flow"
+        "text": "Airway resistance, measured as the pressure at peak inspiratory flow"
       },
       {
         "id": "b",
-        "text": "Alveolar pressure related to tidal volume and respiratory system compliance (no flow)"
+        "text": "Alveolar pressure related to tidal volume and respiratory system compliance"
       },
       {
         "id": "c",
-        "text": "Atmospheric pressure at the mouth"
+        "text": "Intrinsic PEEP, measured with an end-expiratory hold maneuver"
       },
       {
         "id": "d",
-        "text": "FiO2 setting"
+        "text": "Transpulmonary pressure, measured with an esophageal balloon catheter"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Inspiratory hold (zero flow) yields Pplat used for compliance and lung-protective limits.",
+    "explanation": "Inspiratory hold (zero flow) yields Pplat used for compliance and lung-protective limits. It is measured during an inspiratory hold with no flow.",
     "distractorExplanations": {
-      "a": "PIP includes resistive pressure; Pplat does not.",
-      "c": "Mouth pressure during hold approximates alveolar pressure, not always Patm.",
-      "d": "FiO2 is independent of Pplat."
+      "a": "Resistance is reflected by PIP minus Pplat; Pplat is taken during a no-flow inspiratory hold and reflects alveolar pressure.",
+      "c": "Auto-PEEP is measured with an expiratory hold; plateau pressure uses an end-inspiratory hold.",
+      "d": "Pplat reflects the whole respiratory system; transpulmonary pressure needs esophageal pressure to subtract the chest wall."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Pulse oximetry that always detects CO accurately"
+        "text": "A low PaO2 on the ABG that confirms the degree of CO poisoning"
       },
       {
         "id": "b",
-        "text": "No need for ABG/CO-oximetry ever"
+        "text": "A low SpO2 reading, because pulse oximeters detect COHb as deoxyhemoglobin"
       },
       {
         "id": "c",
-        "text": "Normal or high SpO2 readings that do not reflect true oxygen content—use CO-oximetry"
+        "text": "Normal or high SpO2 readings that do not reflect true oxygen content"
       },
       {
         "id": "d",
-        "text": "Cyanosis that pulse oximeters quantify as COHb%"
+        "text": "Cyanosis that worsens in proportion to the measured COHb level"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Standard SpO2 cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin; CO-oximetry measures COHb.",
+    "explanation": "Standard SpO2 cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin; CO-oximetry measures COHb. Use CO-oximetry to measure COHb.",
     "distractorExplanations": {
-      "a": "Pulse ox is misleading in CO poisoning.",
-      "b": "CO-oximetry is indicated.",
-      "d": "SpO2 does not report COHb%."
+      "a": "PaO2 reflects dissolved oxygen and is often normal in CO poisoning; it does not measure COHb.",
+      "b": "Standard two-wavelength oximeters read COHb as oxyhemoglobin, giving a falsely normal or high SpO2, not a low one.",
+      "d": "COHb does not cause cyanosis in proportion to its level; cyanosis is an unreliable sign in CO poisoning."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Large pneumothorax with hyperresonance"
+        "text": "Pneumothorax, which causes dull percussion over the area"
       },
       {
         "id": "b",
-        "text": "Normal aerated lung in all cases"
+        "text": "Pleural effusion, which causes bronchial breath sounds"
       },
       {
         "id": "c",
-        "text": "Pleural effusion with hyperresonance"
+        "text": "Emphysema, which causes dull percussion and bronchial sounds"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Consolidation increases transmission of bronchial sounds and dulls percussion; pneumothorax is hyperresonant with decreased sounds.",
     "distractorExplanations": {
-      "a": "Pneumothorax is hyperresonant with ↓ sounds.",
-      "b": "These findings are abnormal.",
-      "c": "Effusions are dull but breath sounds are usually diminished, not bronchial."
+      "a": "Pneumothorax gives hyperresonance with absent or diminished breath sounds, not dullness with bronchial sounds.",
+      "b": "Effusion is dull to percussion but breath sounds are diminished or absent over the fluid, not bronchial.",
+      "c": "Emphysema causes hyperresonance and diminished breath sounds from air trapping, not consolidation findings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Adequate oxygenation, hemodynamic stability, and resolution of the indication for ventilation (conceptually)"
+        "text": "Adequate oxygenation, hemodynamic stability, and resolution of the indication for ventilation"
       },
       {
         "id": "b",
-        "text": "FiO2 1.0 and PEEP 20 as ideal readiness"
+        "text": "Adequate oxygenation on FiO2 0.60 with PEEP 12 cm H2O, plus a stable heart rate and blood pressure"
       },
       {
         "id": "c",
-        "text": "Uncontrolled shock as a green light"
+        "text": "A rapid shallow breathing index above 105 with stable blood pressure"
       },
       {
         "id": "d",
-        "text": "pH 7.10 with rising PaCO2 as ideal"
+        "text": "Stable hemodynamics on escalating vasopressors and an improving chest X-ray"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Liberation readiness requires gas exchange and clinical stability sufficient to trial spontaneous breathing.",
+    "explanation": "Liberation readiness requires gas exchange and clinical stability sufficient to trial spontaneous breathing. These are screened conceptually before the trial.",
     "distractorExplanations": {
-      "b": "High FiO2/PEEP suggest ongoing failure.",
-      "c": "Shock precludes readiness.",
-      "d": "Severe acidosis/hypoventilation are contraindications."
+      "b": "Readiness screens usually require FiO2 of about 0.40-0.50 or less and PEEP of about 5-8 cm H2O, not 0.60 and 12.",
+      "c": "An RSBI below 105 predicts weaning success; a value above 105 predicts failure.",
+      "d": "Escalating vasopressor doses mean the patient is not hemodynamically stable enough for a breathing trial."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -337,11 +337,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Simple dehydration"
+        "text": "Left ventricular failure with acute cardiogenic pulmonary edema"
       },
       {
         "id": "b",
-        "text": "Guaranteed normal right heart pressures"
+        "text": "Tension pneumothorax compressing the great veins"
       },
       {
         "id": "c",
@@ -349,15 +349,15 @@
       },
       {
         "id": "d",
-        "text": "Left-lower-lobe pneumonia"
+        "text": "Superior vena cava syndrome from a lung tumor"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Chronic lung disease can cause pulmonary hypertension and right-heart strain with systemic congestion signs.",
     "distractorExplanations": {
-      "a": "Edema/JVP elevation are not pure dehydration signs here.",
-      "b": "Findings suggest elevated right-sided pressures.",
-      "d": "Pneumonia alone does not explain this constellation."
+      "a": "LV failure presents with crackles and orthopnea; JVD, pedal edema, and a loud P2 in COPD point to right heart strain.",
+      "b": "Tension pneumothorax is acute with absent breath sounds and tracheal shift, not chronic edema with a loud P2.",
+      "d": "SVC syndrome causes facial and arm swelling with upper-body vein distension, not pedal edema with a loud P2."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -370,15 +370,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved alveolar ventilation"
+        "text": "Gradual hypoventilation from oversedation, a lower set rate, or progressive respiratory muscle fatigue"
       },
       {
         "id": "b",
-        "text": "Normal steady-state ventilation"
+        "text": "Hyperventilation from pain, anxiety, or an increased set rate on the ventilator"
       },
       {
         "id": "c",
-        "text": "Sensor working with rising CO2 production"
+        "text": "Rebreathing from an exhausted CO2 absorber or a faulty expiratory valve in the circuit"
       },
       {
         "id": "d",
@@ -388,9 +388,9 @@
     "correctOptionId": "d",
     "explanation": "Abrupt ETCO2 loss is an emergency signal for airway/circuit failure or circulatory collapse.",
     "distractorExplanations": {
-      "a": "Improved ventilation lowers ETCO2 gradually, not to zero suddenly from airway loss patterns.",
-      "b": "Steady state has a waveform.",
-      "c": "Rising production increases ETCO2."
+      "a": "Hypoventilation raises ETCO2 gradually; a sudden drop to near zero means exhaled CO2 is no longer reaching the sensor.",
+      "b": "Hyperventilation lowers ETCO2 gradually over minutes; it does not drop it abruptly to near zero.",
+      "c": "Rebreathing raises the inspired CO2 baseline above zero; it does not cause a sudden fall to near zero."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "These tests measure only kidney function"
+        "text": "Rising VC/NIF values signal the onset of respiratory muscle weakness"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Guillain-Barré never affects respiration"
+        "text": "These tests detect hypoxemia earlier than pulse oximetry does"
       },
       {
         "id": "d",
-        "text": "Spirometry replaces all neurologic exams"
+        "text": "Intubation is indicated once VC falls below 40 mL/kg"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Neuromuscular weakness progresses to hypoventilation; serial respiratory muscle metrics guide ICU timing.",
     "distractorExplanations": {
-      "a": "VC/NIF are respiratory muscle tests.",
-      "c": "GBS commonly threatens respiration.",
-      "d": "Neuro exam remains essential."
+      "a": "Weakness lowers VC and makes NIF less negative; rising values mean improving strength.",
+      "c": "VC and NIF measure respiratory muscle strength; hypoxemia is a late sign in neuromuscular failure.",
+      "d": "The usual warning threshold is a VC of about 15-20 mL/kg; 40 mL/kg is still well above the danger zone."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bright cherry-red skin pathognomonic for methemoglobin"
+        "text": "Cherry-red skin with a falsely normal SpO2 near 100 percent"
       },
       {
         "id": "b",
-        "text": "No effect on oxygen carrying"
+        "text": "Low PaO2 on the ABG that rises once supplemental O2 is added"
       },
       {
         "id": "c",
-        "text": "Cyanosis and chocolate-brown blood with SpO2/PaO2 discrepancies—confirm with CO-oximetry"
+        "text": "Cyanosis and chocolate-brown blood with SpO2/PaO2 discrepancies"
       },
       {
         "id": "d",
-        "text": "Automatic resolution by increasing room-air"
+        "text": "Pink skin and normal SpO2, since MetHb carries oxygen normally"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "MetHb impairs oxygen delivery; methylene blue may be used clinically—diagnosis needs CO-oximetry.",
+    "explanation": "MetHb impairs oxygen delivery; methylene blue may be used clinically—diagnosis needs CO-oximetry. Confirm with CO-oximetry.",
     "distractorExplanations": {
-      "a": "Cherry-red is classically associated with CO, not MetHb.",
-      "b": "MetHb reduces functional oxygen carrying.",
-      "d": "Significant MetHb needs specific therapy, not just room air."
+      "a": "That classic (if unreliable) picture belongs to CO poisoning; methemoglobinemia gives cyanosis and SpO2 near 85 percent.",
+      "b": "PaO2 is usually normal in methemoglobinemia; the defect is hemoglobin's inability to carry oxygen.",
+      "d": "Methemoglobin's ferric iron cannot bind oxygen and shifts the curve left, so content and delivery fall."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "Increasing patient anxiety as the fix"
+        "text": "Increasing the flow to 15 L/min to force out more aerosol"
       },
       {
         "id": "c",
-        "text": "Removing the mouthpiece permanently"
+        "text": "Adding more saline diluent until the treatment lasts 30 minutes"
       },
       {
         "id": "d",
-        "text": "Setting flow to zero"
+        "text": "Replacing the medication with an MDI because the drug has degraded"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Aerosol output depends on adequate volume, intact circuitry, and proper driving flow.",
     "distractorExplanations": {
-      "b": "Anxiety does not fix devices.",
-      "c": "Interface is needed for delivery.",
-      "d": "Zero flow stops aerosol."
+      "b": "Running far above the specified 6-8 L/min increases aerosol loss and does not fix a clog, leak, or empty cup.",
+      "c": "Sputtering often means the cup is near empty or faulty; stretching the treatment with diluent does not fix it.",
+      "d": "Drug degradation does not make a nebulizer sputter; the cause is volume, connections, gas flow, or a clog."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Assuming the dial is always accurate without checks"
+        "text": "Recalibrating the pulse oximeter, since the SpO2 reading is drifting"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Ignoring patient SpO2 changes"
+        "text": "Raising the set FiO2 dial until the patient's SpO2 returns to the ordered target range"
       },
       {
         "id": "d",
-        "text": "Replacing ABG machines"
+        "text": "Replacing the flowmeter, since blenders cannot fail once calibrated"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Analyzers confirm delivered FiO2; air/O2 supply pressures affect blender output.",
     "distractorExplanations": {
-      "a": "Dials can be wrong if blender/supply fails.",
-      "c": "SpO2 changes are clinical clues.",
-      "d": "ABG machines do not fix blenders."
+      "a": "A pulse oximeter measures patient saturation, not delivered FiO2; the blender output needs an oxygen analyzer.",
+      "c": "Compensating with the dial masks a failing blender; delivered FiO2 must be verified with an analyzer.",
+      "d": "Blenders can fail, for example from unequal source-gas pressures; the flowmeter is not the usual culprit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -568,11 +568,11 @@
     "options": [
       {
         "id": "a",
-        "text": "It is calibrated to 21% and 100% appropriately always forever without aging"
+        "text": "It is calibrated to 21% and 100% oxygen before each use as directed"
       },
       {
         "id": "b",
-        "text": "Batteries are irrelevant in all analyzer types"
+        "text": "The battery is low, since galvanic cells need battery power to sense"
       },
       {
         "id": "c",
@@ -580,15 +580,15 @@
       },
       {
         "id": "d",
-        "text": "Room air is 100% oxygen"
+        "text": "It is used on dry gas rather than in a humidified circuit"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Fuel cells age; calibration to known O2 concentrations maintains accuracy.",
     "distractorExplanations": {
-      "a": "Cells deplete and need replacement/calibration.",
-      "b": "Power/electronics matter for many devices.",
-      "d": "Room air is ~21% O2."
+      "a": "Two-point calibration against known gases is what keeps the analyzer accurate; it is not a cause of error.",
+      "b": "Galvanic fuel cells generate their own current; batteries are needed by polarographic analyzers, not galvanic ones.",
+      "d": "Dry gas does not cause error; condensed water on the sensor membrane is what degrades accuracy."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminate the need for any humidification system"
+        "text": "Warm gas enough to replace the heated humidifier"
       },
       {
         "id": "b",
-        "text": "Cool inspired gas to freezing"
+        "text": "Filter bacteria from the expiratory gas"
       },
       {
         "id": "c",
-        "text": "Replace HEPA filtration"
+        "text": "Cool the gas so more water condenses in the trap"
       },
       {
         "id": "d",
-        "text": "Reduce condensate in the inspiratory limb and maintain humidified gas temperature"
+        "text": "Reduce condensate in the inspiratory limb"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Heated wires limit rainout while delivering warm humidified gas to artificial airways.",
+    "explanation": "Heated wires limit rainout while delivering warm humidified gas to artificial airways. They also keep the humidified gas at the set temperature.",
     "distractorExplanations": {
-      "a": "Humidifiers are still required.",
-      "b": "Goal is warm, not freezing, gas.",
-      "c": "Filters serve infection-control roles separately."
+      "a": "Heated wires only prevent rainout in the tubing; humidity still has to come from the humidifier chamber.",
+      "b": "Expiratory filters capture bacteria; heated wires manage gas temperature and condensation.",
+      "c": "Heated wires do the opposite: they keep the gas warm so less water condenses in the circuit."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Circuit disconnection"
+        "text": "Circuit disconnection, a cuff leak, or a loose humidifier chamber"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Expiratory valve removal only as low pressure"
+        "text": "Increased compliance after diuresis or successful recruitment"
       },
       {
         "id": "d",
-        "text": "FiO2 set to 0.21"
+        "text": "A low set tidal volume combined with a low inspiratory flow"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Anything raising impedance to inflation can trigger high-pressure limits.",
     "distractorExplanations": {
-      "a": "Disconnection → low pressure.",
-      "c": "Major leaks → low pressure.",
-      "d": "FiO2 alone does not set PIP alarms."
+      "a": "Disconnections and leaks drop circuit pressure and trigger low-pressure or low-volume alarms instead.",
+      "c": "Higher compliance lowers the pressure needed per breath, which makes high-pressure alarms less likely.",
+      "d": "Lower tidal volume and flow reduce peak pressure; they do not trigger a high-pressure alarm."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Never needing any verification"
+        "text": "Sensor drift that requires recalibration against pulse oximetry readings"
       },
       {
         "id": "b",
-        "text": "Using it underwater routinely"
+        "text": "Colorimetric detectors turning yellow when exposed to room air"
       },
       {
         "id": "c",
-        "text": "Sensor contamination, loose connections, and need for periodic zero/span checks per device"
+        "text": "Sensor contamination, loose connections, and need for periodic zero/span checks"
       },
       {
         "id": "d",
-        "text": "Ignoring flatline waveforms during intubation checks"
+        "text": "Reading higher than PaCO2 in healthy lungs, which signals a fault"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "ETCO2 devices require maintenance; waveform interpretation depends on valid sensors.",
+    "explanation": "ETCO2 devices require maintenance; waveform interpretation depends on valid sensors. Follow the device's instructions.",
     "distractorExplanations": {
-      "a": "Verification is part of QC.",
-      "b": "Sensors are not for underwater use.",
-      "d": "Flatline during intubation is a critical clue—not ignored."
+      "a": "Capnographs are zeroed to room air and span-checked with known CO2 gas; pulse oximetry measures oxygenation.",
+      "b": "Colorimetric detectors stay purple in room air and turn yellow when exhaled CO2 is present.",
+      "d": "In healthy lungs ETCO2 normally runs a few mm Hg below PaCO2, so a reading above PaCO2 is not the expected norm."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "Always improve calibration automatically"
+        "text": "Sterilize the device, so precleaning of soil can be skipped"
       },
       {
         "id": "c",
-        "text": "Be ignored because all plastics tolerate any sterilant"
+        "text": "Be offset by doubling the exposure time for heat-sensitive plastics"
       },
       {
         "id": "d",
-        "text": "Replace the need for cleaning soil first"
+        "text": "Only affect metal parts, since plastics tolerate any autoclave cycle"
       }
     ],
     "correctOptionId": "a",
     "explanation": "IFUs specify compatible disinfection/sterilization; soil must be cleaned before sterilization.",
     "distractorExplanations": {
-      "b": "Damage can ruin calibration/function.",
-      "c": "Material compatibility varies.",
-      "d": "Cleaning precedes sterilization."
+      "b": "Cleaning must come before sterilization; residual soil shields microbes and damages surfaces.",
+      "c": "Longer heat or chemical exposure worsens damage to heat-sensitive materials; follow the manufacturer's IFU.",
+      "d": "Many plastics, seals, and electronics are heat- or chemical-sensitive; metal is not the only material at risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Left in use for COPD patients indefinitely"
+        "text": "Kept in use with the flow raised to make up for the lower purity"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Used as a toy for children"
+        "text": "Kept in use if the purity alarm resets after a restart"
       },
       {
         "id": "d",
-        "text": "Assumed fine if the compressor is loud"
+        "text": "Kept in use if purity stays above 70 percent at the prescribed flow"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Substandard purity endangers patients relying on home/long-term O2 systems.",
     "distractorExplanations": {
-      "a": "Continued use risks hypoxemia.",
-      "c": "Not a toy.",
-      "d": "Noise ≠ purity."
+      "a": "Raising concentrator flow lowers oxygen purity further; the unit must come out of service.",
+      "c": "A reset alarm does not prove purity; output must be verified with an analyzer and the unit repaired.",
+      "d": "Concentrators should deliver roughly 87-95 percent oxygen at the set flow; 70 percent is far below specification."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -832,11 +832,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Blocking the exhalation path completely as standard"
+        "text": "Placing it on the inspiratory side of the circuit so it measures the delivered volume"
       },
       {
         "id": "b",
-        "text": "No zero reference or observation of needle/digital output"
+        "text": "Connecting it to a high-flow oxygen source to drive the vane properly"
       },
       {
         "id": "c",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "Measuring during cough only for resting VT"
+        "text": "Calibration against a peak flowmeter before each patient measurement"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Volume devices need intact circuitry and coached efforts for valid spirometric bedside measures.",
     "distractorExplanations": {
-      "a": "Complete blockage prevents measurement/harms patient.",
-      "b": "Output must be observed/recorded.",
-      "d": "Cough volumes are not resting VT."
+      "a": "Wright-type respirometers measure exhaled volume; placement on the expiratory side is standard.",
+      "b": "The patient's exhaled gas drives the vane; no external gas source is connected.",
+      "d": "Volume accuracy is checked with a calibrated syringe, not by comparison with a peak flowmeter."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Using air-calibrated flowmeters without correction factors when required"
+        "text": "Using air flowmeters, which read high, so delivered flow is lower"
       },
       {
         "id": "b",
-        "text": "Ignoring mixture labels"
+        "text": "Choosing heliox mainly for its higher density to slow airflow"
       },
       {
         "id": "c",
-        "text": "Delivering heliox through devices never approved/assessed for low-density gas"
+        "text": "Using a 70/30 mix for hypoxemic patients who need FiO2 above 0.50"
       },
       {
         "id": "d",
-        "text": "Correct gas mixture, appropriately calibrated flow devices, and airway/device compatibility"
+        "text": "Correct gas mixture and appropriately calibrated flow devices"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Low-density heliox alters flowmeter behavior and may affect some nebulizers/ventilators.",
+    "explanation": "Low-density heliox alters flowmeter behavior and may affect some nebulizers/ventilators. Airway and device compatibility also matter.",
     "distractorExplanations": {
-      "a": "Corrections/special meters are often needed.",
-      "b": "Labels identify mixture (e.g., 80/20).",
-      "c": "Device compatibility matters."
+      "a": "Oxygen and air flowmeters read low with heliox; actual flow is higher (about 1.8 times for 80/20).",
+      "b": "Helium's benefit is its low density, which reduces turbulent flow resistance, not a higher density.",
+      "c": "A 70/30 mix supplies FiO2 0.30; patients needing much more oxygen lose most of the helium benefit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -902,23 +902,23 @@
       },
       {
         "id": "b",
-        "text": "Color of the carrying case"
+        "text": "Charge status only, since vacuum level is fixed by the factory"
       },
       {
         "id": "c",
-        "text": "Whether they play music"
+        "text": "Canister size and the date of the last biomedical inspection"
       },
       {
         "id": "d",
-        "text": "Skipping checks because transport is short"
+        "text": "Wall vacuum connection, since portable units run on wall suction"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Transport emergencies need functioning suction regardless of trip length.",
     "distractorExplanations": {
-      "b": "Case color is irrelevant.",
-      "c": "Music is not a clinical function.",
-      "d": "Short trips still need readiness."
+      "b": "Vacuum capability must be checked by occluding the tubing; it is not guaranteed by the factory setting.",
+      "c": "An inspection sticker is not a function check; charge and vacuum must be verified before transport.",
+      "d": "Battery-powered units exist for transport away from wall vacuum; their own charge and pump are what matter."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Never running controls"
+        "text": "Running controls only when patient results look clinically odd"
       },
       {
         "id": "b",
-        "text": "Reporting patient results when controls fail without investigation"
+        "text": "Calibrating the analyzer after each sample instead of running controls"
       },
       {
         "id": "c",
-        "text": "Running control materials, documenting results, and corrective action when out of range"
+        "text": "Running control materials, documenting results, and corrective action"
       },
       {
         "id": "d",
-        "text": "Using expired reagents routinely"
+        "text": "Comparing results against a pulse oximeter reading for each sample"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "CLIA-style QC principles apply: controls, documentation, and troubleshooting before reporting.",
+    "explanation": "CLIA-style QC principles apply: controls, documentation, and troubleshooting before reporting. Corrective action is taken when controls are out of range.",
     "distractorExplanations": {
-      "a": "Controls are mandatory.",
-      "b": "Failed QC blocks patient reporting.",
-      "d": "Expired reagents threaten accuracy."
+      "a": "Controls are run on a set schedule (for example each shift or day), not only when results seem odd.",
+      "b": "Calibration and quality control are separate steps; frequent calibration does not replace running controls.",
+      "d": "SpO2 correlation is a clinical check, not analyzer quality control with assayed control materials."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1001,23 +1001,23 @@
       },
       {
         "id": "b",
-        "text": "Routine use to treat anxiety without assessment"
+        "text": "Dyspnea in any patient, even when SpO2 and PaO2 are normal on room air at rest"
       },
       {
         "id": "c",
-        "text": "Treating hyperoxia intentionally in all neonates without limits"
+        "text": "SpO2 below 96 percent in adults with no other risk factors"
       },
       {
         "id": "d",
-        "text": "Replacing ventilation in apnea"
+        "text": "Hypercapnia, since oxygen lowers PaCO2 in ventilatory failure"
       }
     ],
     "correctOptionId": "a",
     "explanation": "O2 treats hypoxemia; it does not ventilate and excess O2 has risks (e.g., neonates, COPD drive debates—titrate).",
     "distractorExplanations": {
-      "b": "Anxiety needs appropriate assessment/therapy.",
-      "c": "Neonates need careful O2 targeting.",
-      "d": "Apnea needs ventilation/airway support."
+      "b": "Dyspnea alone with normal oxygenation is not an AARC indication; therapy targets documented or likely hypoxemia.",
+      "c": "Hypoxemia indications are about PaO2 below 60 mm Hg or SaO2 below 90 percent, not 96 percent.",
+      "d": "Oxygen does not lower PaCO2; hypercapnia is treated by improving ventilation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1030,27 +1030,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Exact FiO2 1.0 like a tight nonrebreather"
+        "text": "A precise, fixed FiO2 like an air-entrainment mask"
       },
       {
         "id": "b",
-        "text": "Moderate FiO2 that varies with fit and flow—often roughly 0.35–0.50 range conceptually"
+        "text": "Moderate FiO2 that varies with fit and flow"
       },
       {
         "id": "c",
-        "text": "Room air only at 15 L/min"
+        "text": "FiO2 near 0.90 when run at 10–15 L/min"
       },
       {
         "id": "d",
-        "text": "Heliox 80/20"
+        "text": "Room-air FiO2 when the flow is set at 5 L/min"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Simple masks provide variable moderate FiO2; NRBs approach higher FiO2 with good fit/flow.",
+    "explanation": "Simple masks provide variable moderate FiO2; NRBs approach higher FiO2 with good fit/flow. Often roughly 0.35–0.50.",
     "distractorExplanations": {
-      "a": "NRB/high-flow systems differ.",
-      "c": "Adequate flow raises FiO2 above room air.",
-      "d": "Heliox needs specific setups."
+      "a": "A simple mask is a low-flow, variable-performance device; fixed FiO2 comes from air-entrainment devices.",
+      "c": "FiO2 that high belongs to reservoir or high-flow systems; a simple mask tops out around 0.50-0.60.",
+      "d": "5 L/min is the minimum flow to flush exhaled CO2 and gives roughly 0.35-0.40, not room air."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Deliver aerosolized antibiotics automatically"
+        "text": "Encourage forced maximal exhalation to measure peak expiratory flow"
       },
       {
         "id": "b",
-        "text": "Measure ABGs"
+        "text": "Provide positive expiratory pressure to mobilize airway secretions"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Replace CPAP for OSA at home"
+        "text": "Strengthen expiratory muscles through repeated resisted exhalations"
       }
     ],
     "correctOptionId": "c",
     "explanation": "IS coaches lung expansion after surgery/immobility; technique and frequency matter.",
     "distractorExplanations": {
-      "a": "IS is not a nebulizer.",
-      "b": "ABGs need blood sampling/analyzers.",
-      "d": "OSA therapy is typically CPAP/BiPAP ordered clinically."
+      "a": "Forced exhalation for peak flow is asthma monitoring; incentive spirometry trains sustained inspiration.",
+      "b": "Positive expiratory pressure is PEP therapy for secretion clearance, not incentive spirometry.",
+      "d": "Resisted exhalation is expiratory muscle training; incentive spirometry targets deep inspiration."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminating the need to cough ever"
+        "text": "Providing inspiratory resistance to strengthen the diaphragm and accessory muscles"
       },
       {
         "id": "b",
-        "text": "Causing mandatory pneumothorax in all users"
+        "text": "Providing high-frequency oscillation through a vest to loosen secretions"
       },
       {
         "id": "c",
-        "text": "Replacing inhaled bronchodilators for all asthma"
+        "text": "Delivering positive pressure on inspiration like intermittent positive pressure breathing"
       },
       {
         "id": "d",
-        "text": "Providing expiratory resistance to stent airways and improve secretion clearance/recruitment"
+        "text": "Providing expiratory resistance to stent airways and improve secretion clearance"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "PEP/OPEP devices aid airway clearance adjunctively with coughing and hydration as appropriate.",
+    "explanation": "PEP/OPEP devices aid airway clearance adjunctively with coughing and hydration as appropriate. It can also aid recruitment.",
     "distractorExplanations": {
-      "a": "Cough remains important.",
-      "b": "Pneumothorax is a risk in select patients—not a goal.",
-      "c": "Bronchodilators remain key in bronchospasm."
+      "a": "Inspiratory resistance is inspiratory muscle training; PEP applies resistance during exhalation.",
+      "b": "Vest oscillation is high-frequency chest wall compression, a different airway clearance device.",
+      "c": "Positive pressure on inspiration describes IPPB; PEP works by resisting exhalation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "VT 12–15 mL/kg"
+        "text": "Tidal volumes of 10–12 mL/kg actual body weight to recruit alveoli"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "Pplat unrestricted above 40 cm H2O as a goal"
+        "text": "Normal PaCO2 at all times, even if plateau pressure must exceed 30"
       },
       {
         "id": "d",
-        "text": "Zero PEEP in all severe shunts"
+        "text": "Low tidal volumes with PEEP kept at zero to limit barotrauma"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ARDSnet-style strategies reduce volutrauma with low VT and Pplat limits plus appropriate PEEP.",
     "distractorExplanations": {
-      "a": "High VT increases mortality risk in ARDS.",
-      "c": "High Pplat risks overdistension.",
-      "d": "PEEP is used to support oxygenation/recruitment."
+      "a": "ARDSNet uses 4-8 mL/kg of predicted body weight; actual weight and 10-12 mL/kg overdistend the lung.",
+      "c": "Permissive hypercapnia is accepted to keep plateau pressure at or below about 30 cm H2O.",
+      "d": "PEEP is part of lung-protective ventilation to prevent derecruitment; zero PEEP worsens shunt."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Loop diuretic"
+        "text": "Long-acting β2-agonist bronchodilator"
       },
       {
         "id": "b",
-        "text": "Anticholinergic"
+        "text": "Short-acting anticholinergic bronchodilator"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "Systemic corticosteroid"
+        "text": "Inhaled corticosteroid controller agent"
       }
     ],
     "correctOptionId": "c",
     "explanation": "SABA therapy relaxes bronchial smooth muscle for bronchospasm relief.",
     "distractorExplanations": {
-      "a": "Diuretics are different class.",
-      "b": "Ipratropium is anticholinergic.",
-      "d": "Steroids are anti-inflammatory, not SABA."
+      "a": "Albuterol is short-acting; salmeterol and formoterol are the long-acting β2-agonists.",
+      "b": "The short-acting anticholinergic is ipratropium; albuterol acts on β2 receptors.",
+      "d": "Inhaled corticosteroids such as fluticasone are controllers; albuterol is a rescue bronchodilator."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1228,27 +1228,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Treat hypernatremia as an IV fluid"
+        "text": "Thin mucus by breaking DNA strands in purulent sputum"
       },
       {
         "id": "b",
-        "text": "Replace all antibiotics"
+        "text": "Break disulfide bonds in mucus as a mucolytic agent"
       },
       {
         "id": "c",
-        "text": "Cure pulmonary embolism"
+        "text": "Reduce airway inflammation as a steroid substitute"
       },
       {
         "id": "d",
-        "text": "Hydrate airway mucus and facilitate clearance (e.g., select CF care pathways)"
+        "text": "Hydrate airway mucus and facilitate clearance"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Hypertonic saline is an airway clearance adjunct in appropriate protocols—not systemic sodium repair via nebulizer intent.",
+    "explanation": "Hypertonic saline is an airway clearance adjunct in appropriate protocols—not systemic sodium repair via nebulizer intent. It is used in select CF care pathways.",
     "distractorExplanations": {
-      "a": "IV saline treats systemic sodium/volume issues.",
-      "b": "Antibiotics treat infection.",
-      "c": "PE needs anticoagulation/reperfusion strategies."
+      "a": "Breaking extracellular DNA in purulent sputum is how dornase alfa works, not hypertonic saline.",
+      "b": "Breaking disulfide bonds is acetylcysteine's mechanism; hypertonic saline works osmotically.",
+      "c": "Hypertonic saline has no corticosteroid action and can cause bronchospasm; it hydrates the airway surface."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1265,23 +1265,23 @@
       },
       {
         "id": "b",
-        "text": "Guaranteed improvement without risks"
+        "text": "Hypertension from increased venous return to the heart"
       },
       {
         "id": "c",
-        "text": "Lower pleural pressures only with no hemodynamics effect"
+        "text": "Bradycardia and pulmonary edema from lowered pleural pressure"
       },
       {
         "id": "d",
-        "text": "Automatic weaning success"
+        "text": "Increased cardiac output from improved oxygenation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Increased intrathoracic pressure can reduce venous return; overdistension risks pneumothorax.",
     "distractorExplanations": {
-      "b": "Risks are real and monitored.",
-      "c": "Hemodynamics often change.",
-      "d": "Recruitment ≠ automatic weaning."
+      "b": "Raised intrathoracic pressure decreases venous return, which causes hypotension rather than hypertension.",
+      "c": "Recruitment and high PEEP raise pleural pressure; the main risks are hypotension and barotrauma.",
+      "d": "High intrathoracic pressure usually lowers cardiac output by reducing preload."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Treat only ankle edema"
+        "text": "Lower plateau pressure enough to allow higher tidal volumes"
       },
       {
         "id": "b",
-        "text": "Improve oxygenation by redistributing perfusion/ventilation in many patients"
+        "text": "Improve oxygenation by redistributing perfusion/ventilation"
       },
       {
         "id": "c",
-        "text": "Replace antibiotics for pneumonia"
+        "text": "Improve secretion drainage as the primary goal of the therapy"
       },
       {
         "id": "d",
-        "text": "Guarantee zero facial pressure injuries without skin care"
+        "text": "Reduce the need for sedation during mechanical ventilation"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Proning can improve V/Q in severe ARDS; teams manage lines, airway, and pressure points.",
+    "explanation": "Proning can improve V/Q in severe ARDS; teams manage lines, airway, and pressure points. This works in many patients.",
     "distractorExplanations": {
-      "a": "Proning is a lung strategy, not ankle therapy.",
-      "c": "Antibiotics still treat infection.",
-      "d": "Pressure-injury prevention remains essential."
+      "a": "Proning is used with low tidal volumes; it is not a way to justify larger tidal volumes.",
+      "c": "Secretion drainage is a side benefit; prone positioning is used mainly to improve oxygenation.",
+      "d": "Prone positioning often requires deep sedation and sometimes paralysis, not less sedation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Placing the nebulizer distal to a heated humidifier rainout swamp without thought"
+        "text": "Placing the nebulizer at the Y-piece with bias flow running at its highest setting"
       },
       {
         "id": "b",
-        "text": "Turning off all gas flow"
+        "text": "Leaving the HME in place between the nebulizer and the patient"
       },
       {
         "id": "c",
-        "text": "Optimal nebulizer/MDI adapter placement, synchronizing when appropriate, and minimizing circuit dead-stock losses per best practice"
+        "text": "Optimal nebulizer/MDI adapter placement, synchronizing when appropriate"
       },
       {
         "id": "d",
-        "text": "Never considering bias flow or continuous vs breath-actuated devices"
+        "text": "Increasing humidification to maximum, since humid gas boosts particle delivery"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Device position and ventilator interactions affect inhaled dose; follow evidence-based aerosol practices.",
+    "explanation": "Device position and ventilator interactions affect inhaled dose; follow evidence-based aerosol practices. Minimizing circuit losses per best practice also helps.",
     "distractorExplanations": {
-      "a": "Humidifiers/condensates can reduce delivery.",
-      "b": "Flow is needed for jet nebs.",
-      "d": "Device type/flow matters."
+      "a": "High bias flow washes aerosol into the expiratory limb; bias flow is reduced during nebulization.",
+      "b": "An HME traps aerosol particles; it must be removed or bypassed during in-line aerosol delivery.",
+      "d": "Humidified gas enlarges particles and lowers deposition; humidity reduces, not boosts, delivery."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stable patients with retained secretions who benefit"
+        "text": "Cystic fibrosis with thick secretions and frequent exacerbations"
       },
       {
         "id": "b",
-        "text": "CF patients on approved airway clearance regimens"
+        "text": "Lobar atelectasis caused by mucus plugging after surgery"
       },
       {
         "id": "c",
-        "text": "Patients who tolerate Trendelenburg alternatives when ordered"
+        "text": "Bronchiectasis with daily sputum production over 30 mL"
       },
       {
         "id": "d",
-        "text": "Active hemoptysis, unstable spinal injury, or untreated pneumothorax (classic cautions)"
+        "text": "Active hemoptysis, unstable spinal injury, or untreated pneumothorax"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "External maneuvers can worsen bleeding, fractures, or air leaks—screen contraindications.",
+    "explanation": "External maneuvers can worsen bleeding, fractures, or air leaks—screen contraindications. These are classic cautions.",
     "distractorExplanations": {
-      "a": "Appropriately selected patients benefit.",
-      "b": "CF commonly uses airway clearance.",
-      "c": "Modified positions may be used when appropriate."
+      "a": "Cystic fibrosis with retained secretions is a core indication for chest physiotherapy, not a contraindication.",
+      "b": "Atelectasis from mucus plugging is an indication for postural drainage and percussion.",
+      "c": "Sputum production over about 25-30 mL per day is an indication for chest physiotherapy."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Assist removal of retained secretions and improve ventilation/perfusion where secretions impair gas exchange"
+        "text": "Assist removal of retained secretions and improve ventilation/perfusion"
       },
       {
         "id": "b",
-        "text": "Raise ICP intentionally in all neuro patients"
+        "text": "Reverse bronchospasm by relaxing airway smooth muscle directly with each treatment"
       },
       {
         "id": "c",
-        "text": "Replace intubation for complete airway obstruction by foreign body without ALS"
+        "text": "Prevent atelectasis by sustained maximal inspiration alone"
       },
       {
         "id": "d",
-        "text": "Cure interstitial fibrosis permanently"
+        "text": "Reduce airway inflammation and mucus production over time"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clearance therapies target mucus plugging/retention—not structural fibrosis cure or unsafe ICP rises.",
+    "explanation": "Clearance therapies target mucus plugging/retention—not structural fibrosis cure or unsafe ICP rises. This matters where secretions impair gas exchange.",
     "distractorExplanations": {
-      "b": "Some techniques can raise ICP—caution in neuro injury.",
-      "c": "Foreign-body obstruction needs airway algorithms.",
-      "d": "Fibrosis is not cured by CPT."
+      "b": "Relaxing airway smooth muscle is the goal of bronchodilators, not bronchial hygiene therapy.",
+      "c": "Sustained maximal inspiration is lung expansion therapy such as incentive spirometry.",
+      "d": "Reducing inflammation is the role of inhaled corticosteroids; bronchial hygiene removes secretions."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always give FiO2 1.0 without monitoring"
+        "text": "Target SpO2 of 94–98 percent, as for most other adult patients"
       },
       {
         "id": "b",
-        "text": "Target appropriate SpO2 goals and monitor ventilation/ABG as clinically indicated"
+        "text": "Target appropriate SpO2 goals and monitor ventilation/ABG"
       },
       {
         "id": "c",
-        "text": "Withhold all oxygen despite SpO2 70%"
+        "text": "Avoid oxygen until an ABG confirms the PaCO2 level"
       },
       {
         "id": "d",
-        "text": "Ignore rising PaCO2 and somnolence"
+        "text": "Use a nonrebreather to keep SpO2 at 100 percent"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Titrate to goals (often ~88–92% in at-risk COPD per many protocols) while watching for CO2 retention/clinical decline.",
+    "explanation": "Titrate to goals (often ~88–92% in at-risk COPD per many protocols) while watching for CO2 retention/clinical decline. Monitor as clinically indicated.",
     "distractorExplanations": {
-      "a": "Unmonitored pure O2 can be harmful in some patients.",
-      "c": "Severe hypoxemia still needs oxygen.",
-      "d": "Rising CO2/somnolence need action."
+      "a": "The 94-98 percent target applies to most adults; patients at risk of hypercapnic failure usually get a lower 88-92 percent target.",
+      "c": "Oxygen should not be withheld from a hypoxemic patient while waiting for an ABG.",
+      "d": "Hyperoxia in these patients can worsen hypercapnia; oxygen is titrated to a target range."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1459,11 +1459,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure DLCO"
+        "text": "Measure airway resistance before and after bronchodilator use"
       },
       {
         "id": "b",
-        "text": "Provide definitive PE thrombolysis"
+        "text": "Strengthen inspiratory muscles before ventilator weaning"
       },
       {
         "id": "c",
@@ -1471,15 +1471,15 @@
       },
       {
         "id": "d",
-        "text": "Replace renal dialysis"
+        "text": "Replace the need for patient coughing to clear secretions"
       }
     ],
     "correctOptionId": "c",
     "explanation": "High-frequency devices are clearance adjuncts selected by clinical protocol and tolerance.",
     "distractorExplanations": {
-      "a": "DLCO is a PF lab test.",
-      "b": "PE therapy is pharmacologic/procedural.",
-      "d": "Dialysis is renal support."
+      "a": "Bronchodilator response is measured with pulmonary function testing, not airway clearance devices.",
+      "b": "Building inspiratory strength is inspiratory muscle training, not IPV or chest wall oscillation.",
+      "d": "These devices loosen secretions, but coughing or suctioning is still needed to remove them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Activate emergency response and begin CAB/ABCs with airway opening and ventilation/CPR as indicated"
+        "text": "Activate emergency response and begin CAB/ABCs"
       },
       {
         "id": "b",
-        "text": "Obtain a full history before any airway action"
+        "text": "Check a carotid pulse for a full 30 seconds"
       },
       {
         "id": "c",
-        "text": "Start with arterial line placement"
+        "text": "Give two rescue breaths before calling for help"
       },
       {
         "id": "d",
-        "text": "Wait for a chest X-ray before opening the airway"
+        "text": "Apply oxygen by nonrebreather and recheck in 1 minute"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Basic life support priorities precede advanced diagnostics in arrest/near-arrest.",
+    "explanation": "Basic life support priorities precede advanced diagnostics in arrest/near-arrest. Open the airway and provide ventilation or CPR as indicated.",
     "distractorExplanations": {
-      "b": "History can wait seconds that save the brain.",
-      "c": "Lines are not first.",
-      "d": "Imaging follows stabilization."
+      "b": "Pulse checks are limited to 10 seconds or less so compressions are not delayed.",
+      "c": "For an unresponsive adult, help is activated first and adult CPR follows the CAB sequence.",
+      "d": "An apneic patient needs ventilation and CPR as indicated; passive oxygen does nothing without breathing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Incentive spirometry as first-line"
+        "text": "A chest X-ray to confirm before any intervention"
       },
       {
         "id": "b",
-        "text": "Immediate decompression per emergency protocol and supportive oxygen/ventilation"
+        "text": "Immediate decompression per emergency protocol"
       },
       {
         "id": "c",
-        "text": "Delay until a scheduled clinic visit next week"
+        "text": "Increasing PEEP to re-expand the collapsed lung"
       },
       {
         "id": "d",
-        "text": "Only increasing PEEP further without assessment"
+        "text": "A 12-lead ECG to rule out cardiac tamponade"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Tension physiology is immediately life-threatening; decompression is the priority.",
+    "explanation": "Tension physiology is immediately life-threatening; decompression is the priority. Support oxygenation and ventilation.",
     "distractorExplanations": {
-      "a": "IS is irrelevant in tension PTX.",
-      "c": "Delay is deadly.",
-      "d": "More PEEP can worsen PTX."
+      "a": "Tension pneumothorax with hypotension is a clinical diagnosis; waiting for imaging delays lifesaving decompression.",
+      "c": "Added positive pressure enlarges a tension pneumothorax and worsens hypotension.",
+      "d": "Tracheal deviation with hypotension points to tension pneumothorax; an ECG delays decompression."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Offering water and leaving the patient alone"
+        "text": "Back blows only, since thrusts injure adult patients"
       },
       {
         "id": "b",
-        "text": "Blind finger sweeps in all conscious adults routinely"
+        "text": "Encouraging forceful coughing until the object clears"
       },
       {
         "id": "c",
-        "text": "Abdominal thrusts (Heimlich) or approved protocol until expulsion/unresponsiveness pathways"
+        "text": "Abdominal thrusts (Heimlich) or approved protocol"
       },
       {
         "id": "d",
-        "text": "Peak flow measurement first"
+        "text": "A blind finger sweep followed by rescue breaths"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Severe FBAO needs immediate dislodgement maneuvers per BLS guidelines.",
+    "explanation": "Severe FBAO needs immediate dislodgement maneuvers per BLS guidelines. Continue until expulsion or the patient becomes unresponsive.",
     "distractorExplanations": {
-      "a": "Leaving is dangerous.",
-      "b": "Blind sweeps can worsen obstruction.",
-      "d": "Peak flow wastes time."
+      "a": "Abdominal thrusts are the recommended adult response for severe obstruction despite injury risk.",
+      "b": "Coughing is encouraged in mild obstruction; severe signs (cannot speak or cough) need thrusts.",
+      "d": "Blind finger sweeps can push the object deeper and are not recommended."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The analyzer always fails at ROSC"
+        "text": "Ventilation rate increases, washing more CO2 out of the lungs"
       },
       {
         "id": "b",
-        "text": "Oxygen tanks empty at ROSC"
+        "text": "Epinephrine raises CO2 production in the tissues"
       },
       {
         "id": "c",
-        "text": "PEEP automatically doubles"
+        "text": "The ETT has moved from the esophagus into the trachea"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "ETCO2 is a surrogate of pulmonary perfusion during CPR; rise suggests ROSC.",
     "distractorExplanations": {
-      "a": "Analyzers can be valid markers.",
-      "b": "O2 supply is separate.",
-      "c": "PEEP is set, not auto-doubled by ROSC."
+      "a": "Faster ventilation lowers ETCO2; the abrupt rise at ROSC reflects restored pulmonary perfusion.",
+      "b": "Epinephrine can transiently lower ETCO2; the sudden rise at ROSC comes from restored blood flow.",
+      "c": "An esophageal tube reads near zero throughout; the ROSC rise occurs with a correctly placed tube."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Ignoring desaturation"
+        "text": "Immediate reintubation without first oxygenating the patient"
       },
       {
         "id": "c",
-        "text": "Oral feeding immediately"
+        "text": "High-flow nasal cannula at 60 L/min and reassess in an hour"
       },
       {
         "id": "d",
-        "text": "Removing oxygen to stimulate breathing"
+        "text": "A nonrebreather mask and an ABG before any airway decision"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Re-establish oxygenation/ventilation first; then secure a definitive airway.",
     "distractorExplanations": {
-      "b": "Desaturation is an emergency.",
-      "c": "Feeding risks aspiration.",
-      "d": "Removing O2 is harmful."
+      "b": "The patient is oxygenated and ventilated with a BVM first; rushing reintubation risks hypoxemia.",
+      "c": "Inadequate breathing needs assisted ventilation; high-flow cannula does not ventilate the patient.",
+      "d": "Waiting for an ABG delays needed ventilation; inadequate breathing calls for BVM support now."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Giving more succinylcholine to finish the case"
+        "text": "Switching from sevoflurane to desflurane and continuing the case"
       },
       {
         "id": "b",
-        "text": "Stopping triggering agents, hyperventilating with 100% O2, and supporting dantrolene/protocol care"
+        "text": "Stopping triggering agents and hyperventilating with 100% O2"
       },
       {
         "id": "c",
-        "text": "Covering with heavy blankets to raise temperature further"
+        "text": "Reducing minute ventilation to let PaCO2 rise and stimulate breathing"
       },
       {
         "id": "d",
-        "text": "Ignoring rising ETCO2 and rigidity"
+        "text": "Giving succinylcholine to relieve the muscle rigidity quickly"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "MH is a hypermetabolic emergency; anesthesia teams lead dantrolene protocols while RTs support ventilation/cooling logistics.",
+    "explanation": "MH is a hypermetabolic emergency; anesthesia teams lead dantrolene protocols while RTs support ventilation/cooling logistics. Support dantrolene and protocol care.",
     "distractorExplanations": {
-      "a": "Succinylcholine is a trigger.",
-      "c": "Cooling, not heating, is needed.",
-      "d": "Rising ETCO2/rigidity are classic signs."
+      "a": "All volatile anesthetics trigger malignant hyperthermia; switching agents does not remove the trigger.",
+      "c": "MH drives CO2 production up; minute ventilation is increased to clear CO2, not reduced.",
+      "d": "Succinylcholine is itself an MH trigger; dantrolene is the treatment for rigidity."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stopping all bronchodilators"
+        "text": "Increasing EPAP to 15 to keep NPPV going"
       },
       {
         "id": "b",
-        "text": "Mandatory high respiratory rates with zero expiratory time"
+        "text": "Switching to high-flow nasal cannula"
       },
       {
         "id": "c",
-        "text": "Need for intubation/mechanical ventilation with strategy to avoid air trapping"
+        "text": "Need for intubation/mechanical ventilation"
       },
       {
         "id": "d",
-        "text": "Discharge home"
+        "text": "Adding heliox and continuing NPPV overnight"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Fatigue/hypercapnia despite maximal therapy indicates invasive support; vent strategies allow exhalation.",
+    "explanation": "Fatigue/hypercapnia despite maximal therapy indicates invasive support; vent strategies allow exhalation. Use a ventilator strategy that avoids air trapping.",
     "distractorExplanations": {
-      "a": "Bronchodilators remain central.",
-      "b": "High rates worsen auto-PEEP.",
-      "d": "Discharge is inappropriate."
+      "a": "Exhaustion on NPPV signals failure; raising settings and continuing delays needed intubation.",
+      "b": "High-flow cannula gives less ventilatory support than NPPV and cannot rescue an exhausted patient.",
+      "d": "Heliox can bridge some patients, but exhaustion means intubation now rather than continuing overnight."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Chest PT percussion on the bleeding lung aggressively as first step"
+        "text": "Positioning the bleeding side up to drain blood out of it"
       },
       {
         "id": "b",
-        "text": "Anticoagulation bolus"
+        "text": "Chest physiotherapy to clear clots from the bleeding lung"
       },
       {
         "id": "c",
-        "text": "Incentive spirometry in the hallway alone"
+        "text": "Incentive spirometry to keep the bleeding lung expanded"
       },
       {
         "id": "d",
-        "text": "Airway protection (often bleeding side down), oxygenation, and urgent team/bronchoscopy pathways"
+        "text": "Airway protection (often bleeding side down) and oxygenation"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Protect the airway and non-bleeding lung; control bleeding with specialist care.",
+    "explanation": "Protect the airway and non-bleeding lung; control bleeding with specialist care. Then activate urgent team and bronchoscopy pathways.",
     "distractorExplanations": {
-      "a": "Percussion can worsen bleeding.",
-      "b": "Anticoagulation worsens bleeding.",
-      "c": "IS is not the priority."
+      "a": "Bleeding side up lets blood spill into the good lung; the bleeding side goes down.",
+      "b": "Percussion and drainage are contraindicated in active hemoptysis and can worsen bleeding.",
+      "c": "Lung expansion therapy is not a priority; the airway and oxygenation come first in massive hemoptysis."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop ventilation/gases as protocol directs, remove burning tube, extinguish, and re-establish airway/oxygenation"
+        "text": "Stop ventilation/gases as protocol directs, remove burning tube, extinguish"
       },
       {
         "id": "b",
-        "text": "Increase FiO2 to 1.0 into the fire"
+        "text": "Increase FiO2 to 1.0 and keep ventilating through the tube"
       },
       {
         "id": "c",
-        "text": "Continue laser use"
+        "text": "Leave the tube in place and flush it with saline while continuing to ventilate with oxygen"
       },
       {
         "id": "d",
-        "text": "Ignore smoke in the airway"
+        "text": "Stop the laser and continue ventilation with nitrous oxide"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Airway fire algorithms prioritize removing the fuel/oxidizer source and protecting the patient.",
+    "explanation": "Airway fire algorithms prioritize removing the fuel/oxidizer source and protecting the patient. Then re-establish the airway and oxygenation.",
     "distractorExplanations": {
-      "b": "High O2 feeds fire.",
-      "c": "Energy devices must stop.",
-      "d": "Smoke/thermal injury needs management."
+      "b": "Oxygen feeds an airway fire; gas flow is stopped and the burning tube removed.",
+      "c": "The burning tube is removed and ventilation stopped; ventilating through it keeps feeding the fire.",
+      "d": "Nitrous oxide supports combustion as strongly as oxygen; all gas flow is stopped."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Increasing rate further without assessing auto-PEEP"
+        "text": "Increasing the set rate to shorten each breath and reduce trapping"
       },
       {
         "id": "b",
-        "text": "Temporarily disconnecting to allow exhalation / lowering rate and I:E adjustments per protocol"
+        "text": "Temporarily disconnecting to allow exhalation / lowering rate and I:E adjustments"
       },
       {
         "id": "c",
-        "text": "Ignoring plateau and intrinsic PEEP measurements"
+        "text": "Adding applied PEEP well above the measured auto-PEEP level to splint the airways open"
       },
       {
         "id": "d",
-        "text": "Adding more tidal volume immediately"
+        "text": "Increasing tidal volume and inspiratory time to improve CO2 removal and oxygenation"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Severe air trapping impairs venous return; allow exhalation and adjust settings.",
+    "explanation": "Severe air trapping impairs venous return; allow exhalation and adjust settings. Follow protocol.",
     "distractorExplanations": {
-      "a": "Higher rates worsen trapping.",
-      "c": "Measurement guides therapy.",
-      "d": "Larger VT can worsen hyperinflation."
+      "a": "A higher rate shortens expiratory time and increases auto-PEEP; the rate is lowered instead.",
+      "c": "Applied PEEP above the intrinsic level adds to hyperinflation and worsens hypotension.",
+      "d": "Larger volumes and longer inspiration leave less time to exhale and increase air trapping."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Delayed observation only for stridor"
+        "text": "Diphenhydramine IV as the first-line drug, then reassess"
       },
       {
         "id": "b",
-        "text": "Oral antihistamine as the only drug for anaphylactic shock"
+        "text": "Methylprednisolone IV to stop the reaction within minutes"
       },
       {
         "id": "c",
-        "text": "Epinephrine IM (per protocol), airway/oxygen support, and emergency activation"
+        "text": "Epinephrine IM (per protocol) and airway/oxygen support"
       },
       {
         "id": "d",
-        "text": "Removing IV access permanently first"
+        "text": "Epinephrine IV push of 1 mg (1:1,000) as the first dose"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "IM epinephrine is first-line for anaphylaxis; airway support is concurrent.",
+    "explanation": "IM epinephrine is first-line for anaphylaxis; airway support is concurrent. Activate the emergency response.",
     "distractorExplanations": {
-      "a": "Stridor needs immediate action.",
-      "b": "Antihistamines are adjuncts, not sole shock therapy.",
-      "d": "IV access is needed for resuscitation."
+      "a": "Antihistamines are adjuncts; IM epinephrine is the first-line drug in anaphylaxis.",
+      "b": "Corticosteroids take hours to act and are not first-line; epinephrine is.",
+      "d": "A 1 mg IV bolus is cardiac-arrest dosing; first-line anaphylaxis dosing is about 0.3-0.5 mg IM."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal equal ventilation"
+        "text": "Bronchospasm, treated first with a bronchodilator nebulizer"
       },
       {
         "id": "b",
-        "text": "Need to add a bite block"
+        "text": "Cuff leak, treated by adding air to the ETT pilot balloon"
       },
       {
         "id": "c",
-        "text": "Immediate oral diet"
+        "text": "Pulmonary edema from the line's fluid bolus, treated with diuretics"
       },
       {
         "id": "d",
-        "text": "Mainstem intubation or pneumothorax—assess, auscultate, adjust tube depth, image/decompress as indicated"
+        "text": "Mainstem intubation or pneumothorax—assess, auscultate, adjust tube depth"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Acute asymmetry after intubation/central lines demands rapid differentiation of tube malposition vs PTX.",
+    "explanation": "Acute asymmetry after intubation/central lines demands rapid differentiation of tube malposition vs PTX. Image or decompress as indicated.",
     "distractorExplanations": {
-      "a": "Asymmetry is abnormal.",
-      "b": "Bite blocks do not fix PTX/mainstem.",
-      "c": "Diet is irrelevant."
+      "a": "Bronchospasm causes bilateral wheeze and high pressures, not asymmetric chest rise.",
+      "b": "A cuff leak causes audible leak and low volumes, not one-sided chest rise.",
+      "c": "Pulmonary edema gives bilateral crackles; asymmetric chest rise points to tube position or pneumothorax."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ventilatory support if arrest/respiratory failure occurs while medical therapy (calcium, shifts) proceeds"
+        "text": "Ventilatory support if arrest/respiratory failure occurs"
       },
       {
         "id": "b",
-        "text": "Routine incentive spirometry as definitive K+ removal"
+        "text": "Albuterol by nebulizer as the definitive way to remove potassium"
       },
       {
         "id": "c",
-        "text": "Heliox as first-line for hyperkalemia"
+        "text": "Hypoventilation to raise PaCO2 and drive potassium into cells"
       },
       {
         "id": "d",
-        "text": "Stopping all cardiac monitors"
+        "text": "Sodium bicarbonate nebulization to lower serum potassium"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "RTs manage airway/ventilation emergencies while medical teams shift/remove potassium.",
+    "explanation": "RTs manage airway/ventilation emergencies while medical teams shift/remove potassium. Medical therapy (calcium, shifts) proceeds alongside.",
     "distractorExplanations": {
-      "b": "IS does not lower K+.",
-      "c": "Heliox is for airway obstruction contexts.",
-      "d": "Monitoring is essential."
+      "b": "Albuterol shifts potassium into cells temporarily; it does not remove potassium from the body.",
+      "c": "Respiratory acidosis moves potassium out of cells; alkalosis is what shifts it in.",
+      "d": "Bicarbonate is given IV when used; it is not a nebulized respiratory therapy for hyperkalemia."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Giving every victim FiO2 1.0 indefinitely without assessment"
+        "text": "Giving every patient 15 L/min by nonrebreather until supplies run out"
       },
       {
         "id": "b",
-        "text": "Titrating O2 to clinically appropriate targets and conserving resources with triage frameworks"
+        "text": "Titrating O2 to clinically appropriate targets and conserving resources"
       },
       {
         "id": "c",
-        "text": "Hoarding all cylinders unused while patients desaturate"
+        "text": "Allocating oxygen first-come, first-served as patients arrive"
       },
       {
         "id": "d",
-        "text": "Disabling pulse oximeters to save batteries"
+        "text": "Reserving cylinders for ventilated patients and stopping all others"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Crisis standards still aim for best outcomes with limited O2—assessment and titration matter.",
+    "explanation": "Crisis standards still aim for best outcomes with limited O2—assessment and titration matter. Use triage frameworks.",
     "distractorExplanations": {
-      "a": "Blind 100% wastes supply and may harm.",
-      "c": "Unused stockpiles while patients suffer is unethical.",
-      "d": "SpO2 guides titration."
+      "a": "Untitrated maximal flow exhausts supply quickly; oxygen is titrated to targets in a mass-casualty event.",
+      "c": "Allocation follows triage by need and likely benefit, not arrival order.",
+      "d": "Non-ventilated hypoxemic patients still need titrated oxygen; triage frameworks guide allocation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Repeated failed attempts without oxygenation strategy"
+        "text": "Repeated direct laryngoscopy attempts until the tube passes, then oxygenating"
       },
       {
         "id": "b",
-        "text": "Sending the only skilled operator away"
+        "text": "Proceeding straight to a surgical airway after the first failed laryngoscopy attempt by anyone"
       },
       {
         "id": "c",
-        "text": "Oxygenation first, calling for help, and progressing through established failed-airway pathways (including surgical airway when needed)"
+        "text": "Oxygenation first, calling for help, and progressing through established failed-airway pathways"
       },
       {
         "id": "d",
-        "text": "Avoiding BVM/extraglottic rescue devices on principle"
+        "text": "Paralyzing again and trying blind nasal intubation before calling for help"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Cannot-intubate/cannot-oxygenate pathways emphasize oxygen, help, and rescue devices/cricothyrotomy.",
+    "explanation": "Cannot-intubate/cannot-oxygenate pathways emphasize oxygen, help, and rescue devices/cricothyrotomy. This includes a surgical airway when needed.",
     "distractorExplanations": {
-      "a": "Repetition without oxygen kills.",
-      "b": "Help improves success.",
-      "d": "Rescue devices are integral."
+      "a": "Attempts are limited and oxygenation is maintained between them; repeated attempts cause airway trauma.",
+      "b": "A surgical airway is for a cannot-intubate, cannot-oxygenate situation after BVM or supraglottic rescue fails.",
+      "d": "Help is called early; blind nasal attempts are not part of standard failed-airway pathways."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"

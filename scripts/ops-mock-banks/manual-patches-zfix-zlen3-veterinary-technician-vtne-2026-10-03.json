@@ -1,0 +1,30 @@
+{
+ "veterinary-technician-vtne-readiness-check": {
+  "veterinary-technician-vtne-readiness-check-pharm-002": {
+   "options": {
+    "a": "Drug name and total amount used per month, reconciled yearly",
+    "b": "Date, client/patient, drug, amount, balance, and responsible personnel",
+    "c": "Date, drug, and dose only, with the running balance tracked by the distributor",
+    "d": "Client name and drug, signed later by the DVM at month end"
+   },
+   "distractorExplanations": {
+    "c": "The clinic keeps its own running balance, not the distributor, and each entry must also record the client/patient and who handled the drug.",
+    "a": "Monthly totals do not meet DEA rules; each dispensing/administration entry must be logged with a running balance.",
+    "d": "Entries are made at the time of use by the person handling the drug, not batch-signed by the DVM at month end."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-002": {
+   "options": {
+    "a": "Adequate perfusion/hydration baseline",
+    "b": "Hypovolemic shock with poor perfusion",
+    "c": "Moderate dehydration of about 8%",
+    "d": "Hyperdynamic septic shock with brick-red membranes"
+   },
+   "distractorExplanations": {
+    "d": "Hyperdynamic septic shock shows brick-red membranes and a CRT under 1 second, not the normal pink membranes described here.",
+    "b": "Hypovolemic shock gives pale membranes and a CRT longer than 2 seconds, not pink with a quick CRT.",
+    "c": "About 8% dehydration shows tacky membranes and slowed CRT; moist membranes argue against it."
+   }
+  }
+ }
+}

@@ -1,0 +1,706 @@
+{
+ "veterinary-technician-vtne-readiness-check": {
+  "veterinary-technician-vtne-readiness-check-pharm-002": {
+   "options": {
+    "a": "Drug name and total amount used per month, reconciled yearly",
+    "b": "Date, client/patient, drug, amount, balance, and responsible personnel",
+    "c": "Date, drug, and dose only, with the balance tracked by the distributor",
+    "d": "Client name and drug, signed later by the DVM at month end"
+   },
+   "distractorExplanations": {
+    "a": "Monthly totals do not meet DEA rules; each dispensing/administration entry must be logged with a running balance.",
+    "c": "The clinic, not the distributor, keeps its own running balance and must record client/patient and who handled it.",
+    "d": "Entries are made at the time of use by the person handling the drug, not batch-signed by the DVM at month end."
+   },
+   "explanation": "DEA/state rules require perpetual inventory and documentation for controlled drugs. Record whether the amount was dispensed or administered."
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-003": {
+   "options": {
+    "a": "Using a human OTC drug at owner request with no VCPR in place",
+    "b": "Adding a drug to feed off-label, which AMDUCA allows in food animals",
+    "c": "Using drug in manner not on label (species, dose, route) under valid VCPR",
+    "d": "Using a drug at labeled dose and route for its labeled species"
+   },
+   "distractorExplanations": {
+    "a": "AMDUCA allows ELDU only by or on the order of a veterinarian within a valid VCPR, not at owner request.",
+    "b": "AMDUCA specifically prohibits extra-label use of drugs in animal feed; feed ELDU is not permitted.",
+    "d": "Labeled dose, route and species is on-label use; ELDU means departing from the label directions."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-005": {
+   "options": {
+    "a": "U-100 insulin syringe with correct unit marking",
+    "b": "U-40 insulin syringe, reading 10 units on its scale",
+    "c": "1 mL tuberculin syringe drawn to the 0.01 mL mark",
+    "d": "3 mL syringe drawn to the 1.0 mL line"
+   },
+   "distractorExplanations": {
+    "b": "A U-40 syringe with U-100 insulin gives 2.5 times the intended dose; syringe and insulin units must match.",
+    "c": "10 units of U-100 insulin is 0.1 mL, not 0.01 mL; this conversion error gives one-tenth of the dose.",
+    "d": "1.0 mL of U-100 insulin is 100 units, ten times the order; a 3 mL syringe also lacks unit markings."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-006": {
+   "options": {
+    "a": "A propylene glycol base and the manufacturer's expiration date",
+    "b": "Flavor/formulation suitable for species and beyond-use dating",
+    "c": "Human alcohol-based elixir diluted with tap water",
+    "d": "Fish flavoring and the expiration date of the bulk powder"
+   },
+   "distractorExplanations": {
+    "a": "Propylene glycol can cause Heinz body anemia in cats, and compounded products get a BUD, not a manufacturer expiry.",
+    "c": "Alcohol-based human elixirs are poorly tolerated by cats and tap-water dilution changes stability and dose.",
+    "d": "Flavor may suit cats, but a compounded suspension needs its own beyond-use date, not the bulk powder's expiry."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-007": {
+   "options": {
+    "a": "Kept at room temperature until the vial is empty",
+    "b": "Frozen after mixing to extend stability for months",
+    "c": "Refrigerated with labeled beyond-use date per manufacturer",
+    "d": "Refrigerated and used until the original vial's printed expiry date"
+   },
+   "distractorExplanations": {
+    "a": "Most reconstituted antibiotics lose potency within days; storage and BUD follow the manufacturer insert.",
+    "b": "Freezing can inactivate or precipitate many reconstituted drugs unless the label specifically allows it.",
+    "d": "Confuses the unopened expiry date with the beyond-use date, which starts at reconstitution."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-008": {
+   "options": {
+    "a": "Client's verbal request, logged later",
+    "b": "Unlimited refills within one year",
+    "c": "A new written Rx since it is CII",
+    "d": "Valid prescription within refill limits"
+   },
+   "distractorExplanations": {
+    "a": "A client cannot authorize a controlled refill; the DVM's valid Rx is required and logging is done at dispensing.",
+    "b": "Schedule III-IV prescriptions allow at most 5 refills within 6 months, not unlimited refills for a year.",
+    "c": "Phenobarbital is Schedule IV, not II; refills are allowed within the CIII-IV limits."
+   },
+   "explanation": "Schedule IV controlled anticonvulsant requires prescription compliance and logs. Each dispensing also goes in the controlled substance log."
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-009": {
+   "options": {
+    "a": "Permethrin/pyrethrin toxicity in cats",
+    "b": "Fipronil toxicity, the main risk in cats",
+    "c": "Ivermectin toxicity, like MDR1 collies",
+    "d": "Contact dermatitis only, no systemic signs"
+   },
+   "distractorExplanations": {
+    "b": "Fipronil is labeled safe for cats; the classic dog-only spot-on danger for cats is concentrated permethrin.",
+    "c": "Ivermectin sensitivity (MDR1) is a herding-breed dog issue, not the toxin in canine flea spot-ons.",
+    "d": "Permethrin causes systemic signs in cats such as tremors, seizures and hyperthermia, not just skin irritation."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-010": {
+   "options": {
+    "a": "Give a reversal agent first, then notify the DVM later",
+    "b": "Notify DVM immediately, monitor patient, document",
+    "c": "Document it and inform the DVM at shift change",
+    "d": "Monitor the patient and tell the client only if signs appear"
+   },
+   "distractorExplanations": {
+    "a": "Technicians do not choose and give antidotes on their own; the DVM must be told first to direct treatment.",
+    "c": "Waiting for shift change delays treatment; medication errors are reported to the DVM immediately.",
+    "d": "Watching for signs before disclosing hides the error; the DVM decides treatment and client communication now."
+   },
+   "explanation": "Rapid notification and supportive care reduce harm; full documentation required. Then follow the clinic's adverse event protocol."
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-011": {
+   "options": {
+    "a": "Scruff skin fold between the shoulders",
+    "b": "Cephalic vein in the forelimb",
+    "c": "Quadriceps or lumbar epaxial muscles",
+    "d": "Subcutaneous tissue over the flank"
+   },
+   "distractorExplanations": {
+    "a": "The scruff is a classic subcutaneous injection site, not an intramuscular one.",
+    "b": "The cephalic vein is used for IV injection and catheters, not IM administration.",
+    "d": "Flank subcutaneous tissue is for SQ fluids and injections; IM needs a large muscle mass."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-012": {
+   "options": {
+    "a": "Stop once the pet looks better to limit side effects",
+    "b": "Double the next dose if one dose is missed",
+    "c": "Save leftover pills for the next flare-up",
+    "d": "Complete full course even if pet looks better"
+   },
+   "distractorExplanations": {
+    "a": "Stopping when signs improve can leave surviving bacteria, causing relapse and resistance.",
+    "b": "Doubling a missed dose risks toxicity; clients should give it when remembered or call the clinic.",
+    "c": "Leftover pills mean an incomplete course, and self-treating a later flare-up skips diagnosis."
+   },
+   "explanation": "Incomplete courses promote resistance; consult DVM if dose missed. Stop early only if the DVM directs it."
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-013": {
+   "options": {
+    "a": "Segregation, PPE, and disposal per hazardous drug protocol",
+    "b": "Red biohazard bag disposal like other medical waste",
+    "c": "Flushing small amounts down the drain with water",
+    "d": "Autoclaving the waste first, then placing it in the regular trash"
+   },
+   "distractorExplanations": {
+    "b": "Chemo waste goes into designated hazardous drug (often yellow or black) containers, not general biohazard bags.",
+    "c": "Drain disposal of hazardous drugs is prohibited because it contaminates water systems.",
+    "d": "Autoclaving does not destroy cytotoxic drugs and can aerosolize them; HD waste needs incineration."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-014": {
+   "options": {
+    "a": "Gentle manual restraint during the brief chip implant",
+    "b": "Proper anesthetic protocol when surgery/dental performed",
+    "c": "Low-stress handling for the quick needle stick itself",
+    "d": "Towel restraint of a fractious cat for the implant"
+   },
+   "distractorExplanations": {
+    "a": "Light sedation can replace or reduce manual restraint for a brief chip implant; that is a valid use.",
+    "c": "Pre-medication can stand in for extra handling during a quick needle stick; surgery anesthesia is the gap.",
+    "d": "Sedating a fractious cat can replace towel restraint for the implant; it cannot replace surgical anesthesia."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-pharm-015": {
+   "options": {
+    "a": "Hepatic lipidosis and jaundice",
+    "b": "Hypoglycemia and seizures",
+    "c": "GI ulceration and renal injury",
+    "d": "Lower bleeding and clotting risk"
+   },
+   "distractorExplanations": {
+    "a": "Hepatic lipidosis is a feline anorexia syndrome, not the main NSAID-steroid interaction risk.",
+    "b": "Corticosteroids tend to raise blood glucose; hypoglycemic seizures are not the expected interaction.",
+    "d": "NSAIDs impair platelet function, so combined use raises bleeding risk rather than lowering it."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-001": {
+   "options": {
+    "a": "10–30 bpm depending on size",
+    "b": "28–44 bpm depending on size",
+    "c": "40–60 bpm depending on size",
+    "d": "60–140 bpm depending on size"
+   },
+   "distractorExplanations": {
+    "a": "10–30 per minute is the resting canine respiratory rate, not the heart rate.",
+    "b": "28–44 bpm is the resting adult horse heart rate; dogs are considerably faster.",
+    "c": "40–60 bpm would be bradycardia in most dogs; the resting canine range is about 60–140 bpm."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-002": {
+   "options": {
+    "a": "Adequate perfusion/hydration baseline",
+    "b": "Hypovolemic shock with poor perfusion",
+    "c": "Moderate dehydration of about 8%",
+    "d": "Septic shock with brick-red membranes"
+   },
+   "distractorExplanations": {
+    "b": "Hypovolemic shock gives pale membranes and a CRT longer than 2 seconds, not pink with a quick CRT.",
+    "c": "About 8% dehydration shows tacky membranes and slowed CRT; moist membranes argue against it.",
+    "d": "Hyperdynamic septic shock shows brick-red membranes and CRT under 1 second, not normal pink."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-003": {
+   "options": {
+    "a": "Firm scruffing and stretching as the default hold",
+    "b": "Towel wrap (burrito) with minimal stress handling",
+    "c": "Full-body pinning by two people on its back",
+    "d": "Heavy sedation for every cat before any blood draw"
+   },
+   "distractorExplanations": {
+    "a": "Current feline-friendly guidelines discourage scruffing as a default because it raises fear and stress.",
+    "c": "Pinning a cat on its back maximizes fear and fighting; jugular draws use sternal or sitting towel holds.",
+    "d": "Sedation is used case by case for fractious cats; most jugular draws succeed with low-stress towel holds."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-005": {
+   "options": {
+    "a": "Tightening the wrap whenever toe swelling increases",
+    "b": "Toe spreading as a sign of a well-fitted wrap",
+    "c": "A recheck only on the scheduled removal date",
+    "d": "Swelling, odor, moisture, and distal perfusion"
+   },
+   "distractorExplanations": {
+    "a": "Increasing toe swelling means the wrap is too tight; it should be loosened or replaced, not tightened.",
+    "b": "Spreading toes signals swelling under a tight bandage, a warning sign rather than a good fit.",
+    "c": "Bandages need at least daily checks; waiting until removal day misses slippage, soiling and ischemia."
+   },
+   "explanation": "Bandage complications cause ischemia/infection; monitor CMS and cleanliness. Also check that the bandage has not slipped out of position."
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-007": {
+   "options": {
+    "a": "Ward housing with alcohol hand gel used for cleanup",
+    "b": "Separate housing, PPE, disinfection with virucidal agents",
+    "c": "Quaternary ammonium wipe-down as the sole disinfectant",
+    "d": "Isolation until diarrhea stops, then the general ward"
+   },
+   "distractorExplanations": {
+    "a": "Alcohol does not inactivate non-enveloped parvovirus; patients need isolation and bleach or AHP disinfection.",
+    "c": "Standard quats are unreliable against parvovirus; use diluted bleach, AHP or peroxymonosulfate.",
+    "d": "Puppies shed parvovirus after diarrhea resolves; isolation continues until discharge."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-008": {
+   "options": {
+    "a": "Heart rate and blood pressure readings as objective proof of pain",
+    "b": "Sleeping or quiet behavior as a sign of comfort",
+    "c": "Behavior, posture, appetite, vocalization, palpation response",
+    "d": "Vocalization, since quiet animals are not in pain"
+   },
+   "distractorExplanations": {
+    "a": "Heart rate and BP change with stress, drugs and fluids; they support but do not prove pain.",
+    "b": "Painful animals often hide, stay still or sleep poorly; quiet behavior does not equal comfort.",
+    "d": "Many painful animals, especially cats, are silent; pain scales use posture and behavior too."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-009": {
+   "options": {
+    "a": "A normal value for a resting adult dog",
+    "b": "Mild hypothermia needing warming",
+    "c": "A thermometer error, so no recheck is needed",
+    "d": "Fever/hyperthermia warranting evaluation"
+   },
+   "distractorExplanations": {
+    "a": "Normal canine rectal temperature is about 99.5–102.5°F; 103.8°F at rest is elevated.",
+    "b": "Hypothermia is below the normal range; 103.8°F is above it, so warming would be harmful.",
+    "c": "An unexpected value is rechecked, not dismissed; a confirmed 103.8°F needs DVM evaluation."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-010": {
+   "options": {
+    "a": "Prevent self-trauma to wounds/incisions",
+    "b": "Reduce patient anxiety during hospitalization",
+    "c": "Keep bandages dry during bathing",
+    "d": "Replace sedation during exams"
+   },
+   "distractorExplanations": {
+    "b": "E-collars often increase stress; their purpose is to block licking and chewing, not calm the patient.",
+    "c": "Keeping bandages dry needs a bandage cover or bag; the collar blocks access to the wound.",
+    "d": "An E-collar is a barrier to self-trauma; it is not a restraint substitute for sedation."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-011": {
+   "options": {
+    "a": "Open drainage into a floor bucket for easy emptying",
+    "b": "Closed system, clean prep, monitor output and kinking",
+    "c": "Routine prophylactic antibiotics while catheterized",
+    "d": "Collection bag kept above bladder level to help urine flow"
+   },
+   "distractorExplanations": {
+    "a": "Open drainage raises catheter-associated UTI risk; a closed sterile collection system is standard.",
+    "c": "Guidelines advise against routine prophylactic antibiotics during catheterization; they breed resistance.",
+    "d": "The bag must hang below bladder level so urine does not flow back into the bladder."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-012": {
+   "options": {
+    "a": "Parvovirus transmission from puppy to people, requiring N95 masks",
+    "b": "Canine distemper spread to unvaccinated children",
+    "c": "Salmonella/Campylobacter transmission with PPE and hygiene",
+    "d": "Coronavirus diarrhea spreading to the owners"
+   },
+   "distractorExplanations": {
+    "a": "Canine parvovirus is not zoonotic; human parvovirus B19 is a different virus.",
+    "b": "Canine distemper does not infect humans; it is a risk to unvaccinated dogs and wildlife.",
+    "d": "Canine enteric coronavirus is not zoonotic; Salmonella and Campylobacter are the real human risks."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-013": {
+   "options": {
+    "a": "Be monitored until suture removal at day 10–14",
+    "b": "Be cleaned with peroxide by the tech, no DVM needed",
+    "c": "Be treated with leftover antibiotics from the client",
+    "d": "Be documented and reported to DVM promptly"
+   },
+   "distractorExplanations": {
+    "a": "Purulent discharge suggests infection or dehiscence; waiting until suture removal delays treatment.",
+    "b": "Peroxide damages healing tissue, and assessing infection is a DVM decision, not a tech-only fix.",
+    "c": "Leftover antibiotics may be the wrong drug or dose and need a DVM prescription and culture decision."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-014": {
+   "options": {
+    "a": "Abdominal distention, unproductive retching, restlessness",
+    "b": "Watery diarrhea, polyuria, and increased thirst",
+    "c": "Productive vomiting of food with a normal abdomen",
+    "d": "Lethargy and reduced appetite on the first day after surgery"
+   },
+   "distractorExplanations": {
+    "b": "Diarrhea, polyuria and polydipsia are not GDV signs; bloat shows distention and unproductive retching.",
+    "c": "GDV causes non-productive retching because the twisted stomach cannot empty; productive vomiting differs.",
+    "d": "Mild lethargy and low appetite are expected post-op; GDV shows distention, retching and restlessness."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-nursing-015": {
+   "options": {
+    "a": "Reusing one needle for a week if it stays capped",
+    "b": "Sterile needle/site rotation, rate/volume per DVM",
+    "c": "Giving extra volume whenever the pet seems thirsty",
+    "d": "Injecting into the same site daily to build tolerance"
+   },
+   "distractorExplanations": {
+    "a": "Needles dull and contaminate after one use; a new sterile needle is used for each administration.",
+    "c": "Volume is prescribed by the DVM; extra fluid risks overload, especially in cats with heart disease.",
+    "d": "Sites are rotated to prevent irritation and poor absorption; one site does not build tolerance."
+   },
+   "explanation": "Home SQ fluids require aseptic technique and clear stop signs. Clients also need clear signs for when to call the clinic."
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-001": {
+   "options": {
+    "a": "Vigorous shaking to fully dissolve the EDTA",
+    "b": "Underfilling the tube to save blood volume",
+    "c": "Gentle mix after draw; run within stability window",
+    "d": "Centrifuging to harvest serum before running the CBC"
+   },
+   "distractorExplanations": {
+    "a": "Vigorous shaking causes hemolysis; EDTA tubes are inverted gently 8-10 times.",
+    "b": "Underfilling leaves excess EDTA, which shrinks cells and falsely lowers PCV.",
+    "d": "A CBC is run on EDTA whole blood; EDTA yields plasma, and serum comes from a clot tube."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-002": {
+   "options": {
+    "a": "Motile protozoal trophozoites",
+    "b": "Occult blood in the feces",
+    "c": "Lungworm larvae, best of all",
+    "d": "Many intestinal parasite ova"
+   },
+   "distractorExplanations": {
+    "a": "Fragile trophozoites are seen on a direct saline smear; flotation concentrates eggs and cysts.",
+    "b": "Occult blood needs a fecal occult blood test, not flotation for parasite stages.",
+    "c": "Lungworm and other larvae are best recovered with the Baermann technique, not flotation."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-003": {
+   "options": {
+    "a": "ALARA principles, collimation, PPE, and distance/time limits",
+    "b": "Holding patients without PPE if digital radiography is used",
+    "c": "Lead gloves placed in the primary beam for protection",
+    "d": "Dosimeter badges worn under the lead apron for accuracy"
+   },
+   "distractorExplanations": {
+    "b": "Digital systems still use X-rays; anyone in the room needs PPE and distance regardless of detector type.",
+    "c": "Lead gloves only block scatter; hands must stay out of the primary beam even when gloved.",
+    "d": "Dosimeters are worn outside the apron at the collar to record exposure to the unshielded thyroid and head."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-004": {
+   "options": {
+    "a": "Ship smears in the same box as formalin-fixed biopsies",
+    "b": "Prepare slides immediately or place in appropriate transport medium",
+    "c": "Freeze the aspirate in the syringe until the lab can process it",
+    "d": "Refrigerate the loaded syringe overnight and make slides later"
+   },
+   "distractorExplanations": {
+    "a": "Formalin fumes alter unfixed cytology smears; ship slides separately from formalin jars.",
+    "c": "Freezing ruptures cells and ruins cytology; smears are made fresh and air-dried.",
+    "d": "Cells degrade and clot in the syringe overnight; slides should be made immediately."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-006": {
+   "options": {
+    "a": "A normal value showing good concentrating ability",
+    "b": "Dehydration with appropriate urine concentration",
+    "c": "Hypersthenuria from normal renal function",
+    "d": "Poor concentrating ability/isosthenuria range"
+   },
+   "distractorExplanations": {
+    "a": "A dog with good concentrating ability produces USG above about 1.030; 1.010 is isosthenuric.",
+    "b": "A dehydrated dog with normal kidneys should concentrate urine well above 1.030, not 1.010.",
+    "c": "Hypersthenuria is USG above about 1.030 in dogs; 1.008–1.012 is the isosthenuric range."
+   },
+   "explanation": "Persistently low USG may indicate renal disease or other pathology. A persistently low USG warrants evaluation."
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-007": {
+   "options": {
+    "a": "Repeated with new device; invalid not interpreted",
+    "b": "Read as positive if the sample spot changed color",
+    "c": "Read as negative since no result spot appeared",
+    "d": "Read after 30 extra minutes to let the line form"
+   },
+   "distractorExplanations": {
+    "b": "Without a control line the test is invalid; no color on the sample spot can be read as positive.",
+    "c": "An invalid test can hide a true positive; no result may be reported until a valid test is run.",
+    "d": "SNAP tests are read at the labeled time; late reads are unreliable and a missing control means invalid."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-008": {
+   "options": {
+    "a": "Drop of immersion oil placed on the 40x dry objective lens",
+    "b": "Drop of immersion oil between slide and 100x objective",
+    "c": "Water between the slide and the 100x objective",
+    "d": "Drop of oil on the condenser with the 10x lens"
+   },
+   "distractorExplanations": {
+    "a": "The 40x is a dry objective; oil on it smears and can damage the lens seal.",
+    "c": "The 100x objective is designed for immersion oil; water's refractive index does not match the glass.",
+    "d": "Oil goes between the slide and the 100x objective, not on the condenser with a low-power lens."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-009": {
+   "options": {
+    "a": "Unlabeled tube with the form in the envelope",
+    "b": "Hemolyzed sample sent without a note",
+    "c": "Correct tube, fasting status noted, patient ID",
+    "d": "Serum left on the clot over the weekend"
+   },
+   "distractorExplanations": {
+    "a": "The tube itself must carry patient ID; a form in the envelope can be separated from the sample.",
+    "b": "Hemolysis alters many analytes; note it on the form or recollect, rather than sending it silently.",
+    "d": "Serum left on the clot shifts glucose, potassium and phosphorus; separate and ship promptly."
+   },
+   "explanation": "Lab rejection occurs with wrong tube, hemolysis, or improper transport. Also follow the lab's shipping temperature requirements."
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-010": {
+   "options": {
+    "a": "Validated once at purchase and then used as is",
+    "b": "Any human meter, since values read identically across species",
+    "c": "Checked against a reference lab only when results seem odd",
+    "d": "Calibrated/quality controlled per manufacturer"
+   },
+   "distractorExplanations": {
+    "a": "Meters need ongoing QC with control solutions and new strip lots, not a single check at purchase.",
+    "b": "Human meters can misread animal blood because of hematocrit and plasma distribution differences.",
+    "c": "Routine QC runs on a schedule; waiting for odd results lets inaccurate readings go unnoticed."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-011": {
+   "options": {
+    "a": "Coupling transducer to skin eliminating air artifacts",
+    "b": "Disinfecting the skin before a cystocentesis",
+    "c": "Cooling the transducer crystals during long abdominal scans",
+    "d": "Enhancing contrast like an iodinated agent"
+   },
+   "distractorExplanations": {
+    "b": "Gel is not an antiseptic; skin prep for cystocentesis uses alcohol or chlorhexidine.",
+    "c": "Gel removes air between probe and skin; it is not used to cool the transducer.",
+    "d": "Iodinated contrast is for radiography/CT; ultrasound gel only couples sound to the skin."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-012": {
+   "options": {
+    "a": "Sheets of mast cells with granules",
+    "b": "Clusters of sebaceous cells",
+    "c": "Spindle cells with wispy cytoplasm",
+    "d": "Neutrophils with phagocytized bacteria"
+   },
+   "distractorExplanations": {
+    "a": "Granulated round cells in sheets describe a mast cell tumor, not a sebaceous adenoma.",
+    "c": "Spindle cells with wispy cytoplasm indicate a mesenchymal lesion, not a sebaceous gland tumor.",
+    "d": "Neutrophils with intracellular bacteria indicate septic inflammation, not a sebaceous tumor."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-013": {
+   "options": {
+    "a": "Same-day melarsomine injections before any staging or workup",
+    "b": "Monthly preventive alone, which clears adult worms safely",
+    "c": "DVM interpretation, confirmatory testing if indicated, and staging",
+    "d": "Retesting in one year if the dog shows no clinical signs"
+   },
+   "distractorExplanations": {
+    "a": "AHS protocol stages disease and gives doxycycline and preventive before melarsomine, not same-day dosing.",
+    "b": "Preventive-only slow kill is not recommended by AHS; it takes years and allows resistance and damage.",
+    "d": "Asymptomatic positive dogs still have adult worms damaging vessels; they need workup and treatment now."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-014": {
+   "options": {
+    "a": "Sample a single site, since one scrape suffices",
+    "b": "Stop at the epidermis to avoid any bleeding",
+    "c": "Use a dry slide with no mineral oil added",
+    "d": "Cause capillary ooze sampled from several sites"
+   },
+   "distractorExplanations": {
+    "a": "Demodex can be patchy; several sites are scraped to avoid false negatives.",
+    "b": "Demodex lives in hair follicles; deep scrapings continue until capillary ooze appears.",
+    "c": "Mineral oil on the blade and slide helps collect and see mites; dry scrapings lose material."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-diagnostics-015": {
+   "options": {
+    "a": "Control runs, maintenance logs, and proficiency testing",
+    "b": "Calibration once at installation, then only after a failure",
+    "c": "Running controls when a result looks abnormal",
+    "d": "Logging QC failures without corrective action"
+   },
+   "distractorExplanations": {
+    "b": "Analyzers need scheduled calibration and controls; waiting for failure lets errors reach patients.",
+    "c": "Controls run on a fixed schedule, not just when a patient result looks unusual.",
+    "d": "QC failures require corrective action and documented resolution before patient samples are run."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-001": {
+   "options": {
+    "a": "Reduce the dose of induction drugs needed",
+    "b": "Reduce aspiration risk under anesthesia",
+    "c": "Prevent hypoglycemia during recovery",
+    "d": "Shorten the overall recovery time"
+   },
+   "distractorExplanations": {
+    "a": "Fasting does not lower induction drug doses; doses are set by weight, health and drug protocol.",
+    "c": "Fasting raises hypoglycemia risk, especially in pediatric and toy patients; it does not prevent it.",
+    "d": "Recovery time depends on drugs, temperature and patient status; fasting aims to cut aspiration."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-003": {
+   "options": {
+    "a": "Pulse oximetry alone once the patient is intubated",
+    "b": "Vital signs at induction and again at extubation",
+    "c": "Vaporizer setting as the guide to anesthetic depth",
+    "d": "Heart rate, respiratory rate, BP/perfusion, temperature"
+   },
+   "distractorExplanations": {
+    "a": "SpO2 alone misses hypotension, hypothermia and depth changes; multimodal monitoring is standard.",
+    "b": "Vitals are recorded every 5 minutes throughout anesthesia, not just at induction and extubation.",
+    "c": "The vaporizer setting is not depth; depth is judged from reflexes, jaw tone, eye position and vitals."
+   },
+   "explanation": "Multimodal monitoring detects hypotension, hypothermia, and hypoventilation early. Depth of anesthesia is also assessed throughout."
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-004": {
+   "options": {
+    "a": "Water flow, proper tip, and post-op radiographs policy",
+    "b": "Holding the tip on one tooth for 30 seconds or more",
+    "c": "Using the tip's point perpendicular to the enamel",
+    "d": "Dry scaling with suction instead of coolant"
+   },
+   "distractorExplanations": {
+    "b": "Ultrasonic tips overheat the pulp if held more than about 10-15 seconds per tooth.",
+    "c": "The side of the tip is used nearly parallel to the tooth; the point gouges enamel.",
+    "d": "Ultrasonic scalers need water coolant to prevent thermal pulp damage; suction does not replace it."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-005": {
+   "options": {
+    "a": "Scrubbing from elbows down toward the fingertips",
+    "b": "Mechanical cleaning of nails, hands, forearms per protocol time",
+    "c": "A quick rinse and an alcohol spray on the fingertips",
+    "d": "Drying hands with a nonsterile paper towel from the sink dispenser"
+   },
+   "distractorExplanations": {
+    "a": "The scrub moves from fingertips to elbows with hands held up, so water drains away from clean hands.",
+    "c": "A quick rinse skips the timed mechanical scrub of nails, hands and forearms that the protocol requires.",
+    "d": "Scrubbed hands are dried with a sterile towel; a nonsterile paper towel recontaminates them."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-006": {
+   "options": {
+    "a": "Acetaminophen for cats, plus an NSAID for dogs",
+    "b": "Two NSAIDs together for stronger anti-inflammation",
+    "c": "Local blocks, NSAIDs (if safe), opioids as DVM orders",
+    "d": "A single opioid dose at extubation, with nothing given afterward"
+   },
+   "distractorExplanations": {
+    "a": "Acetaminophen is toxic to cats (methemoglobinemia, liver injury) and must not be used in them.",
+    "b": "Combining NSAIDs, or NSAIDs with steroids, sharply raises GI ulcer and kidney injury risk.",
+    "d": "One opioid dose wears off within hours; multimodal plans cover the post-op period with ongoing analgesia."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-007": {
+   "options": {
+    "a": "Pack usable if the outer tape changed color",
+    "b": "Pack usable if it stays sealed and dry",
+    "c": "Indicator faulty—use pack, log the strip",
+    "d": "Pack not sterile—do not use; reprocess"
+   },
+   "distractorExplanations": {
+    "a": "Outer tape only shows exposure to heat; a failed internal indicator means the pack did not sterilize.",
+    "b": "A sealed, dry pack can still be nonsterile; a failed indicator overrides how the pack looks.",
+    "c": "A failed indicator is treated as a failed cycle; the pack is reprocessed, not used with a note."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-008": {
+   "options": {
+    "a": "Enough to seal without excessive pressure",
+    "b": "Inflated until the pilot balloon is very firm",
+    "c": "About 50–60 cm H2O on the cuff manometer",
+    "d": "Left deflated in cats to avoid all injury"
+   },
+   "distractorExplanations": {
+    "b": "A rock-hard pilot balloon signals overinflation that can cause tracheal necrosis or rupture.",
+    "c": "Recommended cuff pressure is about 20-30 cm H2O; 50-60 cm H2O risks mucosal ischemia.",
+    "d": "Cats still need a seal to prevent aspiration and gas leaks; the cuff is inflated gently, not left empty."
+   },
+   "explanation": "Cuff manometry or minimal occlusive volume prevents airway leak and pressure injury. Overinflation can cause tracheal necrosis or rupture."
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-009": {
+   "options": {
+    "a": "A final count only for long procedures",
+    "b": "Initial and final counts documented",
+    "c": "Counts done by the surgeon from memory",
+    "d": "A count at closure if sponges look short"
+   },
+   "distractorExplanations": {
+    "a": "Counts are done for every procedure, starting before the first incision, not just long surgeries.",
+    "c": "Counts are done aloud by two people and recorded; memory is unreliable for retained sponges.",
+    "d": "Counts are routine at the start and close, not triggered only when sponges appear missing."
+   },
+   "explanation": "Retained foreign bodies prevented by systematic counts. Any discrepancy is resolved before closure."
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-011": {
+   "options": {
+    "a": "Hyperthermia from residual opioid effects",
+    "b": "Post-op pain, so analgesics can be reduced",
+    "c": "Hypertension caused by the inhalant anesthetic agents",
+    "d": "Hypothermia prolonging recovery and coagulopathy"
+   },
+   "distractorExplanations": {
+    "a": "Opioid-related hyperthermia (mainly in cats) is a reason to monitor temperature, not to add heat.",
+    "b": "Warming improves comfort but does not replace analgesia; pain plans continue as ordered.",
+    "c": "Inhalant anesthetics cause dose-dependent hypotension and vasodilation, not hypertension."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-012": {
+   "options": {
+    "a": "Contamination from hair and droplet spread",
+    "b": "Anesthetic gas exposure for the surgeon",
+    "c": "The need for a surgical hand scrub",
+    "d": "Radiation exposure during fluoroscopy"
+   },
+   "distractorExplanations": {
+    "b": "Waste gas exposure is controlled by scavenging and leak checks; surgical masks do not filter it.",
+    "c": "Caps and masks add to, not replace, the surgical hand scrub before gloving.",
+    "d": "Radiation exposure is reduced with lead PPE and distance, not by caps and surgical masks."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-013": {
+   "options": {
+    "a": "Waiting until age two for the tooth to fall out",
+    "b": "DVM extraction to prevent malocclusion/disease",
+    "c": "Client wiggling it loose at home over weeks",
+    "d": "Tech extraction during the vaccine visit"
+   },
+   "distractorExplanations": {
+    "a": "A deciduous tooth still present with its adult tooth erupted is extracted promptly to prevent malocclusion.",
+    "c": "Home removal risks root fracture and infection; retained deciduous teeth need surgical extraction.",
+    "d": "Extractions are a surgical procedure for the veterinarian in most states and need anesthesia."
+   }
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-014": {
+   "options": {
+    "a": "Laser plume is sterile, so masks are optional",
+    "b": "Room fans can safely disperse the plume instead",
+    "c": "Plume contains harmful particulates/bacteria",
+    "d": "Plume mainly affects the laser lens accuracy"
+   },
+   "distractorExplanations": {
+    "a": "Laser plume can carry viable bacteria and viral DNA; local evacuation and masks protect staff.",
+    "b": "Fans spread plume through the room; a smoke evacuator captures it at the source.",
+    "d": "The main concern is staff inhalation of particulates and microbes, not the laser lens."
+   },
+   "explanation": "Surgical plume hazardous; evacuation and masks protect staff. Use smoke evacuation and appropriate masks."
+  },
+  "veterinary-technician-vtne-readiness-check-surgery-dentistry-015": {
+   "options": {
+    "a": "Extubation as soon as the vaporizer is turned off",
+    "b": "Checks every few hours once the patient is back in its kennel",
+    "c": "Brachycephalics extubated early to avoid gagging",
+    "d": "Airway patency, temperature, pain, and extubation timing"
+   },
+   "distractorExplanations": {
+    "a": "The tube stays in until the swallow reflex returns; pulling it at vaporizer off risks aspiration.",
+    "b": "Early recovery needs continuous observation until the patient is extubated, sternal and warm.",
+    "c": "Brachycephalic patients are extubated as late as tolerated because of airway obstruction risk."
+   },
+   "explanation": "Recovery is critical phase for airway obstruction and hypothermia. Extubate when the swallow reflex returns."
+  }
+ }
+}

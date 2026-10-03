@@ -1,0 +1,736 @@
+{
+ "nha-cbcs-readiness-check": {
+  "nha-cbcs-readiness-check-coding-guidelines-001": {
+   "options": {
+    "a": "Use the most detailed valid code that matches the documented diagnosis",
+    "b": "Use the three-character category code whenever the diagnosis is confirmed",
+    "c": "Use the unspecified code so later documentation changes need no claim edits",
+    "d": "Code the integral symptoms along with the confirmed diagnosis"
+   },
+   "distractorExplanations": {
+    "b": "Confuses categories with billable codes: a three-character category is reported only when it has no further subdivision.",
+    "c": "Unspecified codes are for when documentation lacks detail, not a convenience default when specific detail is documented.",
+    "d": "Signs and symptoms routinely associated with a confirmed diagnosis are integral to it and are not coded separately."
+   }
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-002": {
+   "options": {
+    "a": "Code pneumonia as if confirmed, applying the inpatient uncertain-diagnosis rule to the outpatient visit",
+    "b": "Code the signs/symptoms or confirmed conditions documented; do not code “rule out” as if confirmed",
+    "c": "Assign R69 (illness, unspecified) for the rule-out and hold the claim until the provider confirms",
+    "d": "Code pneumonia with Z03.89 to show the condition was suspected and then ruled out at the visit"
+   },
+   "distractorExplanations": {
+    "a": "Applies the inpatient rule that allows coding uncertain diagnoses as confirmed; outpatient guidelines prohibit coding 'rule out' as established.",
+    "c": "R69 is for an unspecified illness with no documented findings; the documented signs/symptoms should be coded instead.",
+    "d": "Z03.89 is for observation when a suspected condition is ruled out; pneumonia itself still cannot be coded while it is only a 'rule out'."
+   }
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-004": {
+   "options": {
+    "a": "The count of history and exam elements documented under the 1995 and 1997 documentation guidelines",
+    "b": "The total time including clinical staff time and separately billed tests done on other dates",
+    "c": "The number of chronic conditions on the problem list, even those not addressed at the visit",
+    "d": "The provider’s documented medical decision making or total time on the date of the encounter"
+   },
+   "distractorExplanations": {
+    "a": "History/exam element counting was retired for office/outpatient E/M in 2021; levels now use MDM or total time.",
+    "b": "Total time counts only the physician/QHP's own time on the encounter date and excludes clinical staff time and separately reported services.",
+    "c": "MDM counts the problems addressed at the encounter, not every entry on the problem list."
+   }
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-005": {
+   "options": {
+    "a": "Modifier 25",
+    "b": "Modifier 59",
+    "c": "Modifier 26",
+    "d": "Modifier 51"
+   },
+   "distractorExplanations": {
+    "b": "59 is for distinct procedural services, not E/M with procedure.",
+    "c": "26 indicates professional component.",
+    "d": "51 indicates multiple procedures."
+   }
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-006": {
+   "options": {
+    "a": "They report diagnoses on durable medical equipment claims instead of ICD-10-CM",
+    "b": "They commonly identify supplies, drugs, and certain services not in CPT",
+    "c": "They are used mainly to report inpatient hospital procedures for DRG assignment",
+    "d": "They are the CPT Category III codes for emerging technology"
+   },
+   "distractorExplanations": {
+    "a": "HCPCS Level II codes describe items and services; diagnoses on DME claims are still reported with ICD-10-CM.",
+    "c": "Inpatient hospital procedures are coded in ICD-10-PCS for DRG grouping, not with HCPCS Level II.",
+    "d": "Category III codes are temporary CPT codes maintained by the AMA; HCPCS Level II is a separate CMS alphanumeric code set."
+   }
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-007": {
+   "options": {
+    "a": "The highest-paying diagnosis on the claim",
+    "b": "The first condition the patient mentions at check-in",
+    "c": "The main reason for the encounter/admission",
+    "d": "The most serious chronic condition on the problem list"
+   },
+   "distractorExplanations": {
+    "a": "Reimbursement never determines sequencing; official guidelines define the first-listed diagnosis by the reason for the encounter.",
+    "b": "The order of complaints at check-in is not determinative; the condition chiefly responsible for the visit is sequenced first.",
+    "d": "Chronic conditions are coded as secondary when they affect care; severity alone does not make one the first-listed diagnosis."
+   },
+   "explanation": "Official sequencing rules prioritize the condition chiefly responsible for the visit/admission, not payment maximization. Sequencing follows the definitions in the official guidelines."
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-008": {
+   "options": {
+    "a": "Assign bilateral codes for any paired organ when the side is not documented",
+    "b": "Report separate right and left codes even when a bilateral code is available",
+    "c": "Take the side from the patient’s intake questionnaire when the provider leaves it out",
+    "d": "Select right, left, bilateral, or unspecified codes when documentation supports them"
+   },
+   "distractorExplanations": {
+    "a": "When the side is not documented the unspecified-side code applies; bilateral is used only when both sides are documented.",
+    "b": "When the classification provides a bilateral code it is used; separate right and left codes are only for categories without one.",
+    "c": "Laterality may come from clinician documentation, but a patient-completed intake form is not provider documentation for code assignment."
+   },
+   "explanation": "When laterality is available and documented, use the specific side; unspecified is used only when documentation lacks detail. Laterality codes are used when the classification provides them."
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-009": {
+   "options": {
+    "a": "Denial or request for additional documentation for lack of medical necessity link",
+    "b": "Payment at a reduced rate until the missing diagnosis is added on the next claim cycle",
+    "c": "Rejection by the payer as a duplicate claim for the same date of service",
+    "d": "Immediate referral of the claim to the OIG for a fraud investigation"
+   },
+   "distractorExplanations": {
+    "b": "Payers do not partially pay pending a diagnosis; an unsupported procedure line is denied or pended for records.",
+    "c": "Duplicate denials apply when an identical claim was already processed, not when the diagnosis linkage is missing.",
+    "d": "A single unsupported line triggers a payer edit or records request, not an immediate OIG fraud referral."
+   }
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-010": {
+   "options": {
+    "a": "Temporary codes for emerging technology",
+    "b": "Performance measurement / quality tracking",
+    "c": "Reporting add-on surgical procedures",
+    "d": "Reporting vaccine and immune globulin products"
+   },
+   "distractorExplanations": {
+    "a": "Temporary codes for emerging technology and procedures are CPT Category III, not Category II.",
+    "c": "Add-on procedures are Category I codes marked with the + symbol and are reported with a primary procedure.",
+    "d": "Vaccine and immune globulin products are reported with Category I codes in the 90281–90759 range."
+   },
+   "explanation": "Category II codes support quality/performance reporting and are supplemental. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference. They are supplemental and not typically paid for the service itself."
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-011": {
+   "options": {
+    "a": "It must be reported with modifier 51 whenever any other procedure is performed that day",
+    "b": "It must be billed as an add-on code to the primary procedure in the same session",
+    "c": "It is usually not reported when performed with a related, more comprehensive procedure",
+    "d": "It is a standalone code that is paid in addition to any related procedure"
+   },
+   "distractorExplanations": {
+    "a": "Modifier 51 marks multiple procedures; the 'separate procedure' label means it is usually bundled into a related comprehensive procedure.",
+    "b": "Add-on (+) codes are reported with a primary procedure; a separate procedure is usually not reported with its related comprehensive procedure.",
+    "d": "Misreads 'separate' as separately payable; the code is usually bundled when a related, more comprehensive procedure is performed."
+   },
+   "explanation": "“Separate procedure” designation signals limited separate reporting when a larger related service is performed. This applies to related procedures in the same anatomic area."
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-012": {
+   "options": {
+    "a": "The excluded condition is not part of this code, but both may be coded if present",
+    "b": "The excluded condition must be coded first, followed by the manifestation code",
+    "c": "The two conditions require an additional code to show the full picture",
+    "d": "The two conditions should not be coded together (mutually exclusive)"
+   },
+   "distractorExplanations": {
+    "a": "That is the definition of an Excludes2 note, which allows both codes when both conditions are present.",
+    "b": "Confuses Excludes1 with the 'code first' etiology/manifestation convention, which governs sequencing.",
+    "c": "That describes a 'use additional code' instructional note, not the mutually exclusive Excludes1 note."
+   }
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-013": {
+   "options": {
+    "a": "The procedure and typical related preoperative/postoperative care within the global period",
+    "b": "The procedure plus any E/M visits during the global period, including visits for unrelated problems",
+    "c": "The procedure and the anesthesiologist’s separate professional anesthesia service",
+    "d": "The procedure plus treatment of complications requiring a return to the OR"
+   },
+   "distractorExplanations": {
+    "b": "Unrelated E/M services during the global period are separately reportable with modifier 24 (or 25 on the same day).",
+    "c": "Anesthesia by a separate anesthesia provider is billed separately; only local or topical anesthesia by the surgeon is in the package.",
+    "d": "Under Medicare rules a return to the OR for complications is reported separately with modifier 78, not included in the package."
+   },
+   "explanation": "Global periods bundle routine related pre/post care with the surgery; unrelated services may be separately reportable with modifiers when rules allow. Global package contents follow payer rules."
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-014": {
+   "options": {
+    "a": "Code from the progress note because it was written most recently",
+    "b": "Query the provider for clarification before final coding",
+    "c": "Ask the attending nurse to amend the progress note to match",
+    "d": "Assign unspecified codes for both conflicting diagnoses"
+   },
+   "distractorExplanations": {
+    "a": "Recency of a note does not resolve a documentation conflict; the coder queries the provider when the conflict affects code selection.",
+    "c": "Only the documenting provider can clarify or amend their own entry; asking a nurse to alter it is improper.",
+    "d": "Unspecified codes are for missing detail, not for resolving conflicting documentation that a provider query should clarify."
+   },
+   "explanation": "Compliant coding requires resolving conflicts via query/clarification rather than guessing for revenue. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference. A query is needed when the conflict affects code selection."
+  },
+  "nha-cbcs-readiness-check-coding-guidelines-015": {
+   "options": {
+    "a": "They may be reported as secondary codes but not as the first-listed diagnosis",
+    "b": "They describe external causes of injury such as falls and transport accidents",
+    "c": "They may be used as primary or secondary when they describe the reason for the encounter",
+    "d": "They report patient status codes only on inpatient claims and are not used on office claims"
+   },
+   "distractorExplanations": {
+    "a": "Many Z codes (aftercare, screening, routine exams) may be first-listed when they are the reason for the encounter.",
+    "b": "External causes such as falls and transport accidents are coded with V00–Y99, not Z codes.",
+    "d": "Z codes are used in all settings and are especially common on outpatient and office claims."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-002": {
+   "options": {
+    "a": "A claim that has been paid in full on first submission with no patient balance",
+    "b": "A complete, accurate claim that can be processed without needing additional information",
+    "c": "A claim submitted electronically within the timely filing limit for that payer",
+    "d": "A claim that lists every diagnosis in the medical record, whether or not it was treated"
+   },
+   "distractorExplanations": {
+    "a": "'Clean' describes processing readiness, not the payment outcome; a clean claim can still leave a patient balance.",
+    "c": "Electronic and timely submission does not make a claim clean if required data elements are missing or invalid.",
+    "d": "Only diagnoses relevant to the encounter are coded; a clean claim is defined by complete, accurate required data."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-003": {
+   "options": {
+    "a": "A claim is denied for missing prior authorization",
+    "b": "A patient’s single plan has a deductible and copay",
+    "c": "A patient has more than one active payer",
+    "d": "A provider bills both the facility and professional fee"
+   },
+   "distractorExplanations": {
+    "a": "Authorization denials are a front-end authorization problem, not a question of which payer is primary.",
+    "b": "Cost-sharing within one plan is not COB; COB requires two or more active payers.",
+    "d": "Split facility and professional billing involves two claim types, often to the same payer, not multiple payers."
+   },
+   "explanation": "COB establishes which plan pays first so secondary billing is correct. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. COB determines the primary/secondary payer order."
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-004": {
+   "options": {
+    "a": "The provider’s contracted fee schedule for the year",
+    "b": "Why the claim was rejected at the clearinghouse",
+    "c": "The patient’s eligibility and benefits before a visit",
+    "d": "How the payer adjudicated the claim"
+   },
+   "distractorExplanations": {
+    "a": "An EOB/ERA shows allowed amounts for the claim it covers, not the provider's full annual fee schedule.",
+    "b": "Clearinghouse rejections come back on rejection/acknowledgment reports before the payer adjudicates; the ERA follows adjudication.",
+    "c": "Pre-visit eligibility and benefits come from the 270/271 eligibility inquiry and response, not the EOB."
+   },
+   "explanation": "EOBs/ERAs communicate payer decisions and amounts; billers use them for posting and appeals. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. It includes payment, adjustments, and patient responsibility."
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-005": {
+   "options": {
+    "a": "Missing or invalid required data elements (eg, NPI, DOB, diagnosis pointer)",
+    "b": "Lack of medical necessity for the procedure billed with that diagnosis",
+    "c": "Submission after the payer’s timely filing deadline for the service date",
+    "d": "Frequency limits exceeded for the service under the patient’s benefit plan year"
+   },
+   "distractorExplanations": {
+    "b": "Medical necessity is judged by the payer during adjudication and results in a denial, not a clearinghouse rejection.",
+    "c": "Timely filing is enforced by the payer as a denial; clearinghouse edits check data format and validity.",
+    "d": "Frequency limits are payer benefit edits applied after the claim is accepted, producing a denial."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-006": {
+   "options": {
+    "a": "The deadline by which a patient must pay the remaining balance after a statement is mailed",
+    "b": "The deadline after the date of service by which a claim must be submitted to the payer",
+    "c": "The time a payer has to pay a clean claim under prompt-pay laws",
+    "d": "The deadline after a denial by which a first-level appeal must be filed"
+   },
+   "distractorExplanations": {
+    "a": "That is the practice's patient payment terms, not the payer deadline for submitting the claim.",
+    "c": "Prompt-pay laws limit how long the payer may take to pay, not when the provider must submit.",
+    "d": "Appeal deadlines are separate limits counted from the denial or remittance date, not from the date of service."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-007": {
+   "options": {
+    "a": "The fixed dollar amount a patient pays at each office visit",
+    "b": "The percentage of the allowed amount the patient pays after plan benefits begin",
+    "c": "The amount a patient must pay out of pocket before certain plan benefits pay",
+    "d": "The most a patient pays in a plan year before the plan pays 100%"
+   },
+   "distractorExplanations": {
+    "a": "A fixed amount per visit is a copayment, not a deductible.",
+    "b": "A percentage of the allowed amount paid after the deductible is coinsurance.",
+    "d": "The annual cap on patient cost-sharing is the out-of-pocket maximum, not the deductible."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-009": {
+   "options": {
+    "a": "Where the service was rendered (eg, office, outpatient hospital)",
+    "b": "The type of provider specialty that performed and billed the service",
+    "c": "The patient’s home address that the payer uses for locality pricing",
+    "d": "The type of bill for an institutional facility claim"
+   },
+   "distractorExplanations": {
+    "b": "Provider specialty is reported through the taxonomy code, not the place of service code.",
+    "c": "The patient's address is demographic data; POS describes the setting where the service was furnished.",
+    "d": "Type of bill is reported on the UB-04 institutional claim; POS codes go on professional CMS-1500/837P claims."
+   },
+   "explanation": "POS affects pricing and coverage; it must match the actual setting. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. Telehealth has its own POS codes where applicable."
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-010": {
+   "options": {
+    "a": "Durable medical equipment items that require a CMN on file",
+    "b": "Certain drugs/biologicals that payers require with HCPCS drug codes",
+    "c": "Laboratory tests performed under a CLIA waiver certificate",
+    "d": "Vaccine administration codes billed without reporting the vaccine product"
+   },
+   "distractorExplanations": {
+    "a": "DME is billed with HCPCS E/K codes and a certificate of medical necessity when required, not an NDC.",
+    "c": "CLIA-waived tests need the CLIA number and the QW modifier, not an NDC.",
+    "d": "Administration codes alone involve no drug; the NDC accompanies the drug or vaccine product code."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-012": {
+   "options": {
+    "a": "A patient has Medicare Advantage and needs prior authorization",
+    "b": "A provider bills a statutorily excluded service, for which an ABN is mandatory",
+    "c": "A patient is admitted inpatient and the stay may be non-covered",
+    "d": "A provider expects Medicare may deny a service as not reasonable/necessary"
+   },
+   "distractorExplanations": {
+    "a": "The ABN is an Original Medicare notice; Medicare Advantage plans use their own pre-service determination process.",
+    "b": "An ABN is voluntary for statutorily excluded services; it is mandatory when a medical-necessity denial is expected.",
+    "c": "Hospital inpatient non-coverage uses the HINN, not the ABN used for outpatient and Part B services."
+   },
+   "explanation": "ABNs shift financial liability appropriately when Medicare denial is expected for certain reasons; improper use can be invalid. The beneficiary must be informed before the service is furnished."
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-013": {
+   "options": {
+    "a": "The plan pays a per-member periodic amount; providers manage care within that budget",
+    "b": "The plan pays a fixed amount per inpatient admission based on the patient’s assigned DRG",
+    "c": "The plan pays a percentage of billed charges after the deductible is met",
+    "d": "The plan pays one lump sum for all services in a single episode of care"
+   },
+   "distractorExplanations": {
+    "b": "A fixed amount per admission by DRG is a case-rate/prospective inpatient payment, not per-member capitation.",
+    "c": "Paying a percentage of billed charges is a fee-for-service variant, not a per-member periodic payment.",
+    "d": "One payment per episode of care is a bundled (episode) payment, not a per-member periodic amount."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-014": {
+   "options": {
+    "a": "The service was billed before prior authorization was obtained",
+    "b": "The service exceeds how often the payer covers it in a time period",
+    "c": "The claim duplicates one already processed for the same date",
+    "d": "The diagnosis does not support the medical necessity of the service"
+   },
+   "distractorExplanations": {
+    "a": "Missing prior authorization produces an authorization denial, not a frequency limit denial.",
+    "c": "A repeat of an already processed claim produces a duplicate claim denial, not a frequency denial.",
+    "d": "A diagnosis that does not support the service produces a medical necessity denial, not a frequency denial."
+   }
+  },
+  "nha-cbcs-readiness-check-claims-reimbursement-015": {
+   "options": {
+    "a": "They identify the provider taxonomy used for enrollment",
+    "b": "They give the patient-friendly summary that replaces the mailed EOB",
+    "c": "They explain why payment differs from the charge (denial, CO, PR, etc.)",
+    "d": "They establish the diagnosis code reported on every claim"
+   },
+   "distractorExplanations": {
+    "b": "CARCs are codes on the 835 remittance used for posting and appeals; the patient EOB or MSN is still issued separately.",
+    "a": "“They identify the provider taxonomy used for enrollment” is incorrect because claim adjustment reason codes communicate adjudication logic for posting and appeals.",
+    "d": "“They establish the diagnosis code reported on every claim” is incorrect because claim adjustment reason codes communicate adjudication logic for posting and appeals."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-001": {
+   "options": {
+    "a": "Individually identifiable health information held or transmitted by a covered entity in any form",
+    "b": "Health information stored electronically, since paper and oral records fall under state law",
+    "c": "Employment records a covered entity keeps about its own workforce members",
+    "d": "Data de-identified under the Safe Harbor method by removing the 18 identifiers"
+   },
+   "distractorExplanations": {
+    "b": "PHI covers electronic, paper, and oral forms; only ePHI under the Security Rule is limited to electronic data.",
+    "c": "Employment records held by a covered entity in its role as employer are excluded from the PHI definition.",
+    "d": "Properly de-identified data is no longer PHI and is not subject to the Privacy Rule."
+   },
+   "explanation": "PHI covers identifiable health info in electronic, paper, or oral forms when held by covered entities/BAs. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. This includes business associates."
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-002": {
+   "options": {
+    "a": "Limit disclosures to the minimum amount even when sharing with treating providers",
+    "b": "Access/use/disclose only the PHI needed to perform their job duties",
+    "c": "Release the complete record whenever a payer requests information for a claim",
+    "d": "Obtain patient authorization before using PHI for routine billing tasks"
+   },
+   "distractorExplanations": {
+    "a": "Minimum necessary does not apply to disclosures to a health care provider for treatment purposes.",
+    "c": "Disclosures to payers for payment are subject to minimum necessary; the whole record is rarely needed.",
+    "d": "Uses for payment and operations need no authorization; that confuses authorization with the minimum necessary standard."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-003": {
+   "options": {
+    "a": "Confront the coworker privately and handle it informally",
+    "b": "Notify the celebrity patient directly about the access",
+    "c": "Report the incident per organizational privacy policy",
+    "d": "Report it only if the coworker shared the information"
+   },
+   "distractorExplanations": {
+    "a": "Snooping is a reportable privacy incident; informal handling bypasses the privacy officer's investigation and breach assessment.",
+    "b": "Patient notification is the covered entity's decision after a breach risk assessment, not an individual employee's.",
+    "d": "Unauthorized access is itself a violation even if the information was never shared further."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-004": {
+   "options": {
+    "a": "Billing separately for components included in a comprehensive code",
+    "b": "Billing the payer for services that were not actually provided to the patient",
+    "c": "Assigning a lower-level code than documentation supports",
+    "d": "Reporting a higher-level or more complex service than documentation supports"
+   },
+   "distractorExplanations": {
+    "a": "Billing components separately when a comprehensive code applies is unbundling, not upcoding.",
+    "b": "Billing for services not rendered is phantom billing, a different fraud scheme from upcoding.",
+    "c": "Assigning a lower level than documented is downcoding (undercoding), the opposite of upcoding."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-005": {
+   "options": {
+    "a": "Billing component codes separately when a comprehensive code includes them",
+    "b": "Reporting a higher-level service than the documentation supports",
+    "c": "Billing an E/M service on the same day as a minor procedure with modifier 25",
+    "d": "Splitting one date of service across two claims to meet filing limits"
+   },
+   "distractorExplanations": {
+    "b": "Reporting a higher level than documented is upcoding, not unbundling.",
+    "c": "A significant, separately identifiable E/M with modifier 25 is legitimate reporting, not unbundling.",
+    "d": "Claim splitting is a separate billing issue; unbundling concerns component codes of a comprehensive service."
+   },
+   "explanation": "Unbundling to increase payment violates NCCI/coding rules when components are not separately reportable. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. Unbundling is contrary to NCCI and coding rules."
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-006": {
+   "options": {
+    "a": "Submits a claim with an honest clerical error it later corrects",
+    "b": "Knowingly submits claims that are false or fraudulent for payment",
+    "c": "Writes off a patient balance under a documented financial hardship policy",
+    "d": "Appeals a denial and includes supporting medical records"
+   },
+   "distractorExplanations": {
+    "a": "FCA liability requires knowing conduct (actual knowledge, deliberate ignorance, or reckless disregard); honest corrected errors do not qualify.",
+    "c": "A documented, case-by-case financial hardship waiver is a permitted practice, not a false claim.",
+    "d": "A good-faith appeal supported by records is proper claim follow-up, not a false claim."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-007": {
+   "options": {
+    "a": "The patient’s signature and date, with purpose and recipient optional",
+    "b": "A notarized signature and a witness for every disclosure request",
+    "c": "A description of information, purpose, who may disclose/receive, expiration, and signature",
+    "d": "The provider’s signature confirming the disclosure is medically necessary and approved"
+   },
+   "distractorExplanations": {
+    "a": "Purpose and recipient are required core elements of a valid HIPAA authorization, not optional.",
+    "b": "HIPAA does not require notarization or a witness for an authorization to be valid.",
+    "d": "The authorization is signed by the patient or personal representative, not by the provider."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-009": {
+   "options": {
+    "a": "Physician referrals for designated health services to entities with which they have financial relationships",
+    "b": "Offering or receiving anything of value to induce referrals of patients covered by federal healthcare programs",
+    "c": "Knowingly submitting false or fraudulent claims to federal healthcare programs for payment",
+    "d": "Exclusion of individuals convicted of healthcare-related offenses from participation in federal programs"
+   },
+   "distractorExplanations": {
+    "b": "Remuneration to induce referrals is the Anti-Kickback Statute, which is intent-based, unlike strict-liability Stark.",
+    "c": "Knowingly false claims for payment fall under the False Claims Act, not the Stark self-referral law.",
+    "d": "Excluding convicted individuals is the OIG exclusion authority, not the Stark Law."
+   },
+   "explanation": "Stark is a strict-liability self-referral statute for DHS; billing/coding staff should escalate suspect arrangements. Stark applies subject to its listed exceptions."
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-010": {
+   "options": {
+    "a": "Physician referrals of designated health services to entities in which they hold an ownership stake",
+    "b": "Offering or receiving remuneration to induce referrals for federal healthcare program business",
+    "c": "Using PHI for marketing without first obtaining a signed patient authorization",
+    "d": "Billing for a higher level of service than the medical record documentation supports"
+   },
+   "distractorExplanations": {
+    "a": "Ownership-based referrals for designated health services are the Stark Law (strict liability), not the Anti-Kickback Statute.",
+    "c": "Marketing without authorization is a HIPAA Privacy Rule issue, not a kickback concern.",
+    "d": "Billing above the documented level is upcoding under false-claims rules, not remuneration for referrals."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-011": {
+   "options": {
+    "a": "Are health plans and providers that transmit health information electronically",
+    "b": "Are workforce members such as employees and volunteers under the entity’s control",
+    "c": "Perform functions involving PHI for a covered entity and generally need a BAA",
+    "d": "Receive PHI from a provider for treatment of the same patient"
+   },
+   "distractorExplanations": {
+    "a": "Health plans, clearinghouses, and providers who transmit electronically are covered entities, not business associates.",
+    "b": "Workforce members are part of the covered entity and do not need a business associate agreement.",
+    "d": "Provider-to-provider disclosures for treatment do not create a business associate relationship."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-012": {
+   "options": {
+    "a": "It violates the HIPAA Privacy Rule because it reveals the patient’s insurance coverage status",
+    "b": "It requires the practice to file an ABN with Medicare before each visit",
+    "c": "It counts as upcoding because the billed charge exceeds the amount collected",
+    "d": "It can implicate inducement/beneficiary incentive and payer contract/fraud concerns"
+   },
+   "distractorExplanations": {
+    "a": "Copay waivers are not a privacy issue; the concern is inducement and misstating the actual charge to payers.",
+    "b": "ABNs relate to expected Medicare medical-necessity denials and have nothing to do with cost-sharing waivers.",
+    "c": "Upcoding means reporting a higher code than documented; routine waivers raise inducement and misstated-charge concerns instead."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-013": {
+   "options": {
+    "a": "Use approved secure methods per policy (encryption/portal) and verify recipients",
+    "b": "Send unencrypted email if the PHI is limited to account numbers and dates",
+    "c": "Password-protect the attachment and include the password in the body of the same email",
+    "d": "Use the fax line instead, since faxed PHI falls outside HIPAA safeguards"
+   },
+   "distractorExplanations": {
+    "b": "Account numbers and dates of service are identifiers, so the message still contains ePHI needing safeguards.",
+    "c": "Sending the password with the file defeats the protection if the message is intercepted or misdirected.",
+    "d": "Faxed PHI is still covered by Privacy Rule safeguards, including verifying the recipient number."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-014": {
+   "options": {
+    "a": "Payers to recover overpayments from providers through offsets against future claim payments",
+    "b": "Private persons (whistleblowers) to bring False Claims Act cases on behalf of the government",
+    "c": "The OIG to exclude providers from federal health programs after a healthcare fraud conviction",
+    "d": "Patients to sue a covered entity directly for damages under HIPAA"
+   },
+   "distractorExplanations": {
+    "a": "Offsetting overpayments against future payments is payer recoupment, not a qui tam action.",
+    "c": "Exclusion after conviction is an OIG administrative authority, not a whistleblower lawsuit.",
+    "d": "HIPAA has no private right of action; qui tam suits are brought under the False Claims Act."
+   }
+  },
+  "nha-cbcs-readiness-check-compliance-privacy-015": {
+   "options": {
+    "a": "Provide a list of every disclosure, including those for treatment and payment",
+    "b": "Provide an accounting covering the past ten years of disclosures",
+    "c": "Provide an accounting of certain disclosures as required by the Privacy Rule",
+    "d": "Refer the patient to the payer, which holds the accounting obligation"
+   },
+   "distractorExplanations": {
+    "a": "Disclosures for treatment, payment, and operations are excepted from the accounting requirement.",
+    "b": "The accounting covers up to six years before the request, not ten.",
+    "d": "The covered entity receiving the request must provide the accounting, including disclosures by its business associates."
+   },
+   "explanation": "Patients have rights to access, amendments (with process), and accounting of certain disclosures. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. Allowed exceptions (such as TPO disclosures) apply."
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-001": {
+   "options": {
+    "a": "Scheduling, registration, insurance verification, and collecting accurate demographics",
+    "b": "Charge entry, claim scrubbing, and electronic claim submission to the clearinghouse",
+    "c": "Payment posting, denial follow-up, and patient statement mailing",
+    "d": "Code assignment, charge capture, and clinical documentation improvement review after the visit"
+   },
+   "distractorExplanations": {
+    "b": "Charge entry, scrubbing, and submission are mid-cycle/back-end claim steps, not front-end activities.",
+    "c": "Payment posting, denial follow-up, and statements are back-end revenue cycle activities.",
+    "d": "Coding, charge capture, and documentation review happen mid-cycle after the encounter, not at the front end."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-002": {
+   "options": {
+    "a": "Establish the final patient balance before the claim is adjudicated",
+    "b": "Confirm active coverage, plan rules, and often referral/authorization needs",
+    "c": "Satisfy prior authorization requirements for scheduled procedures",
+    "d": "Confirm the CPT codes the payer will reimburse at the practice’s contracted rate"
+   },
+   "distractorExplanations": {
+    "a": "The final patient balance is set only when the payer adjudicates the claim; eligibility gives an estimate at best.",
+    "c": "Eligibility checks reveal whether authorization is needed but do not obtain or satisfy the authorization.",
+    "d": "Eligibility does not validate coding or guarantee payment; codes follow the documentation."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-003": {
+   "options": {
+    "a": "Payer approval obtained before a high-cost service based on medical necessity",
+    "b": "A PCP order for a lab test that the lab uses to bill the payer",
+    "c": "Authorization from a PCP/plan allowing the patient to see a specialist",
+    "d": "A notice telling the patient that a service may not be covered by Medicare"
+   },
+   "distractorExplanations": {
+    "a": "Payer approval of a high-cost service for medical necessity is prior authorization/precertification, not a referral.",
+    "b": "A lab order or requisition authorizes testing; a managed-care referral permits a specialist visit.",
+    "d": "A notice of likely Medicare non-coverage is an ABN, not a managed-care referral."
+   },
+   "explanation": "Missing referrals/authorizations are common preventable denials in HMO-style plans. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. Referrals can also cover certain services."
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-004": {
+   "options": {
+    "a": "Collecting copays and known balances from patients at the time of service",
+    "b": "Posting payer payments and contractual adjustments from the electronic remittance advice",
+    "c": "Entering charges for services scheduled, before they are performed",
+    "d": "Recording all billable services/supplies provided so they can be coded and billed"
+   },
+   "distractorExplanations": {
+    "a": "Collecting copays and balances at the visit is point-of-service collection, not charge capture.",
+    "b": "Posting payments and adjustments from the ERA is payment posting, a back-end step after adjudication.",
+    "c": "Charges must reflect services actually provided; entering scheduled services in advance risks billing for services not rendered."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-005": {
+   "options": {
+    "a": "How long, on average, claims/balances remain unpaid",
+    "b": "The percentage of claims paid on first submission",
+    "c": "The total dollars written off as bad debt each month",
+    "d": "How many claims are denied out of all claims submitted"
+   },
+   "distractorExplanations": {
+    "b": "The share of claims paid on first submission is the first-pass (clean claim) rate, not A/R days.",
+    "c": "Monthly write-offs measure bad debt, not how long balances stay unpaid.",
+    "d": "The proportion of denied claims is the denial rate, a different KPI from days in A/R."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-006": {
+   "options": {
+    "a": "A binding final bill that cannot differ from the adjudicated claim",
+    "b": "Transparency about expected out-of-pocket costs before or at service",
+    "c": "Replacing the need for an EOB once the payer processes the claim",
+    "d": "Obtaining prior authorization from the payer for scheduled services"
+   },
+   "distractorExplanations": {
+    "a": "Estimates are not binding final bills; the final amount depends on payer adjudication.",
+    "c": "The EOB still reports the payer's adjudication; an estimate is issued before service and does not replace it.",
+    "d": "Estimating costs does not obtain prior authorization, which is a separate payer approval process."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-007": {
+   "options": {
+    "a": "Resubmitting each denied claim unchanged until the payer reverses its decision",
+    "b": "Writing off low-dollar denials first so staff can focus their time on high-dollar appeals",
+    "c": "Root-cause analysis, correction, timely appeal/rebill, and prevention at the front end",
+    "d": "Appealing every denial at the external review level before correcting claims"
+   },
+   "distractorExplanations": {
+    "a": "Resubmitting an uncorrected claim triggers duplicate denials; the cause must be found and fixed first.",
+    "b": "Writing off denials without analysis lets recurring root causes keep generating losses.",
+    "d": "Many denials are fixed by correction and rebilling; external review is the last appeal level, not the first step."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-008": {
+   "options": {
+    "a": "Held on the account to offset the patient’s future visit charges",
+    "b": "Transferred to bad debt to balance the accounts receivable report",
+    "c": "Reported to the payer once a year at annual cost report filing",
+    "d": "Investigated and refunded or corrected per payer/patient rules and law"
+   },
+   "distractorExplanations": {
+    "a": "Holding credits for future charges without patient agreement or policy can violate refund and unclaimed-property rules.",
+    "b": "Bad debt is for uncollectible patient balances, not overpayments the practice owes back.",
+    "c": "Identified Medicare overpayments must be reported and returned within 60 days, not held until an annual report."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-009": {
+   "options": {
+    "a": "Verifying benefits and collecting known copays/outstanding balances per policy",
+    "b": "Billing every copay on the statement after the claim adjudicates",
+    "c": "Collecting estimated coinsurance for each visit before verifying the patient’s eligibility",
+    "d": "Quoting the estimate to patients as the binding final balance owed"
+   },
+   "distractorExplanations": {
+    "b": "Waiting for adjudication delays collection of copays that are already known at the visit.",
+    "c": "Collecting before verifying eligibility risks charging the wrong amount and later refunds.",
+    "d": "Estimates can change after adjudication; presenting them as binding misleads the patient."
+   },
+   "explanation": "Clear communication and accurate benefit knowledge improve POS collections without misrepresentation. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. Collect before or at the visit."
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-010": {
+   "options": {
+    "a": "Incorrect patient demographics carried onto every claim from the registration screen",
+    "b": "Wrong CPT/HCPCS mapped to charges, leading to billing errors or compliance risk",
+    "c": "Missing authorization numbers on claims for scheduled procedures",
+    "d": "Diagnosis codes that fail to match the documented clinical condition"
+   },
+   "distractorExplanations": {
+    "a": "Demographics come from registration, not the CDM, which maps charges to procedure codes and prices.",
+    "c": "Authorization numbers come from front-end authorization work, not the charge description master.",
+    "d": "The CDM maps charges to CPT/HCPCS codes and prices; diagnosis codes come from coding the documentation."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-011": {
+   "options": {
+    "a": "Rejection at the clearinghouse front end",
+    "b": "Recoding the visit to a lower E/M level",
+    "c": "Denial of payment for the service",
+    "d": "A request to resubmit with modifier 59"
+   },
+   "distractorExplanations": {
+    "a": "Clearinghouse edits check format and data validity; a missing authorization is denied by the payer.",
+    "b": "Payers do not recode the E/M level for missing authorization; the service requiring auth is denied.",
+    "d": "Modifier 59 identifies a distinct procedural service and does not cure a missing authorization."
+   },
+   "explanation": "Many high-cost services need auth; staff should verify before scheduling/performing when required. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. This happens when the plan required auth and it was not obtained."
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-012": {
+   "options": {
+    "a": "List every code in the current CPT manual so providers can select any possible service",
+    "b": "Are reviewed every few years when the practice changes its fee schedule",
+    "c": "Preprint diagnosis codes at the category level for faster selection",
+    "d": "Reflect commonly used accurate diagnoses and procedures and are updated with coding changes"
+   },
+   "distractorExplanations": {
+    "a": "A form listing every code invites selection errors; superbills should reflect the practice's commonly used, accurate codes.",
+    "b": "CPT updates every January and ICD-10-CM every October, so superbills need review at least annually.",
+    "c": "Category-level codes often lack the required specificity and lead to invalid or denied claims."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-013": {
+   "options": {
+    "a": "Can be corrected and resubmitted (eg, missing info) without a formal appeal",
+    "b": "Are final payer decisions that can be overturned only through formal appeal",
+    "c": "Are issued at the clearinghouse before the payer ever receives the claim",
+    "d": "Result from noncovered benefits and shift the balance to the patient"
+   },
+   "distractorExplanations": {
+    "b": "That describes hard denials, which require a formal appeal; soft denials can be fixed and resubmitted.",
+    "c": "Issues caught before the payer receives the claim are clearinghouse rejections, not denials.",
+    "d": "Noncovered benefit denials are hard denials, not correctable soft denials."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-014": {
+   "options": {
+    "a": "Show the full billed charge as due before the insurance payment posts",
+    "b": "Clearly show balances, insurance pending vs patient responsibility, and payment options",
+    "c": "List the CPT and ICD-10 codes in place of plain-language descriptions of each service provided",
+    "d": "Be sent only after the account is referred to a collection agency"
+   },
+   "distractorExplanations": {
+    "a": "Balances pending insurance should not be presented as due from the patient until the payer adjudicates.",
+    "c": "Statements should be understandable; bare codes without plain-language descriptions confuse patients.",
+    "d": "Statements come before any collection referral and are the main tool for collecting patient balances."
+   }
+  },
+  "nha-cbcs-readiness-check-revenue-cycle-015": {
+   "options": {
+    "a": "Set the annual fee schedule based on which payers deny the most claims each year",
+    "b": "Replace front-end eligibility checks with larger back-end appeal and claim rework teams",
+    "c": "Target training, payer contract issues, and process fixes where losses concentrate",
+    "d": "Prove compliance with HIPAA transaction standards for audits"
+   },
+   "distractorExplanations": {
+    "a": "Fee schedules reflect costs and contracts; denial data guides process fixes and payer negotiations, not price setting.",
+    "b": "Denial analytics usually show prevention at the front end beats rework, so eligibility checks are strengthened, not replaced.",
+    "d": "Transaction-standard compliance concerns EDI formats; denial analytics target where revenue is lost."
+   }
+  }
+ }
+}

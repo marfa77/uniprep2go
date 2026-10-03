@@ -1,0 +1,742 @@
+{
+ "cdl-air-brakes-readiness-check": {
+  "cdl-air-brakes-readiness-check-systems-001": {
+   "options": {
+    "a": "60–70 psi",
+    "b": "80–90 psi",
+    "c": "100–110 psi",
+    "d": "125–135 psi"
+   },
+   "distractorExplanations": {
+    "a": "That is roughly where the low-air warning must activate, far below the governor cut-out point.",
+    "b": "This is below even the cut-in point; the compressor would never stop pumping at a normal level.",
+    "c": "About 100 psi is the governor cut-in point, where the compressor resumes pumping, not cut-out."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-002": {
+   "options": {
+    "a": "60–65 psi",
+    "b": "100–105 psi",
+    "c": "110–115 psi",
+    "d": "125–135 psi"
+   },
+   "distractorExplanations": {
+    "a": "Around 60 psi is the low-air warning point; cut-in happens well above it, near 100 psi.",
+    "c": "Too high; per the CDL manual the compressor resumes pumping at about 100 psi.",
+    "d": "That is the governor cut-out range where the compressor stops pumping, not where it resumes."
+   },
+   "explanation": "Cut-in is typically ~100 psi so the compressor resumes charging. Use the manufacturer specification if it differs."
+  },
+  "cdl-air-brakes-readiness-check-systems-003": {
+   "options": {
+    "a": "Receives compressed air first and helps remove moisture/oil",
+    "b": "Stores air for the secondary circuit that feeds the front axle",
+    "c": "Supplies air directly to the trailer through the red gladhand",
+    "d": "Collects air last, after the primary and secondary tanks fill"
+   },
+   "distractorExplanations": {
+    "b": "That is the secondary (dry) reservoir; the supply tank receives air first and collects moisture and oil.",
+    "c": "Trailer supply air passes through the tractor protection valve from the service reservoirs, not straight from the wet tank.",
+    "d": "Reverses the order: the supply (wet) tank is the first reservoir after the compressor and dryer."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-004": {
+   "options": {
+    "a": "Two compressors, one for the tractor and one for the trailer",
+    "b": "Separate service and parking brake systems on the same axle",
+    "c": "Two independent service air circuits (primary/secondary)",
+    "d": "Air-over-hydraulic brakes, with air boosting a hydraulic system"
+   },
+   "distractorExplanations": {
+    "a": "A dual system has one compressor feeding two separate service circuits; the trailer is supplied by the tractor.",
+    "b": "Every air-brake vehicle has service and spring (parking) brakes; dual refers to two service circuits.",
+    "d": "Air-over-hydraulic is a different brake type; a dual air system has primary and secondary air circuits."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-005": {
+   "options": {
+    "a": "A separate electric motor",
+    "b": "The transmission output shaft",
+    "c": "The engine (gear/belt/drive)",
+    "d": "The power steering pump shaft"
+   },
+   "distractorExplanations": {
+    "a": "Truck air compressors are driven by the engine through gears or a belt, not a separate electric motor.",
+    "b": "The compressor turns whenever the engine runs, even when parked, so it is not driven off the driveline.",
+    "d": "The power steering pump is a separate accessory; the compressor is driven directly by the engine."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-006": {
+   "options": {
+    "a": "Cool compressed air so the governor can cut out sooner",
+    "b": "Store reserve air for the parking brake if tanks leak down",
+    "c": "Remove moisture (and much oil/contaminants) before tanks",
+    "d": "Release built-up pressure if the governor fails to cut out"
+   },
+   "distractorExplanations": {
+    "a": "Cut-out timing is set by the governor; the dryer's job is removing moisture and oil from the air.",
+    "b": "The dryer stores no reserve air; spring brakes apply mechanically when air pressure is lost.",
+    "d": "That is the safety relief valve's job (opens around 150 psi), not the air dryer's."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-007": {
+   "options": {
+    "a": "20 psi",
+    "b": "30 psi",
+    "c": "45 psi",
+    "d": "60 psi"
+   },
+   "distractorExplanations": {
+    "a": "About 20 psi is near the bottom of the spring-brake application range; the warning comes much earlier.",
+    "b": "At 30 psi the spring brakes may already be applying; the warning must sound before pressure falls below 60.",
+    "c": "45 psi is the upper end of the spring-brake application range, too late for the low-air warning."
+   },
+   "explanation": "FMVSS/CDL texts: warn by ~60 psi. Some manufacturers set it slightly lower (about 55–60 psi)."
+  },
+  "cdl-air-brakes-readiness-check-systems-009": {
+   "options": {
+    "a": "Spring force into air pressure for the parking brakes",
+    "b": "Air pressure into mechanical force at the slack/pushrod",
+    "c": "Pedal force into air pressure for the brake lines",
+    "d": "Mechanical force into air pressure for the reservoirs"
+   },
+   "distractorExplanations": {
+    "a": "Reversed: spring brakes apply mechanically when air is released; chambers turn air into force.",
+    "c": "That is the foot (treadle) valve, which meters reservoir air when the pedal is pressed.",
+    "d": "That describes the compressor; brake chambers turn air pressure into pushrod force."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-010": {
+   "options": {
+    "a": "Faster build-up time because the governor stays cut in",
+    "b": "Higher tank pressure as the safety valve compensates",
+    "c": "Spring brakes releasing once pressure drops below 60 psi",
+    "d": "Longer build-up time and possible spring-brake application"
+   },
+   "distractorExplanations": {
+    "a": "A leak wastes compressed air, so build-up takes longer, not shorter.",
+    "b": "The safety valve only vents overpressure; a leak lowers pressure and lengthens build-up time.",
+    "c": "Spring brakes apply, not release, as pressure falls (typically about 20–45 psi)."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-011": {
+   "options": {
+    "a": "Increase front braking force on slippery surfaces to aid steering",
+    "b": "Can reduce front application on slippery surfaces",
+    "c": "Limit trailer brake pressure so the trailer does not push the tractor",
+    "d": "Hold front brakes released until rear brakes have fully applied"
+   },
+   "distractorExplanations": {
+    "a": "Opposite effect: the limiting valve cuts front brake pressure on slick roads to reduce front lockup.",
+    "c": "These valves act on the tractor's front (steer) axle, not on trailer brake pressure.",
+    "d": "They reduce front application pressure; they do not delay front brakes until the rear applies."
+   },
+   "explanation": "Some systems proportion front braking; modern ABS changes practice. The exact behavior is design-dependent, and modern ABS has changed practice."
+  },
+  "cdl-air-brakes-readiness-check-systems-012": {
+   "options": {
+    "a": "Applies tractor spring brakes when trailer air pressure drops",
+    "b": "Protects tractor air if trailer breaks away / supply is lost",
+    "c": "Prevents service and spring brake forces from compounding",
+    "d": "Releases the trailer brakes after a breakaway so it can be towed"
+   },
+   "distractorExplanations": {
+    "a": "The TP valve closes to keep tractor air; tractor springs apply only if tractor air itself is lost.",
+    "c": "That is the anti-compounding valve's job, not the tractor protection valve's.",
+    "d": "After a breakaway the trailer emergency brakes apply; the TP valve protects tractor air instead."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-013": {
+   "options": {
+    "a": "Helps prevent wheel lockup during hard braking",
+    "b": "Shortens stopping distance on every road surface",
+    "c": "Lets the driver keep pumping brakes during a stop",
+    "d": "Takes over braking if the service brakes fail"
+   },
+   "distractorExplanations": {
+    "b": "ABS keeps steering control; it may not shorten stops and can lengthen them on loose gravel or snow.",
+    "c": "With ABS the driver applies steady firm pressure; pumping interferes with ABS modulation.",
+    "d": "ABS only modulates normal service brakes; it adds no braking power if the brakes fail."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-014": {
+   "options": {
+    "a": "Store emergency air for applying the spring brakes",
+    "b": "Connect the chamber pushrod to the S-cam/foundation brake",
+    "c": "Meter air from the foot valve to each brake chamber",
+    "d": "Control air pressure in the tanks between cut-in and cut-out"
+   },
+   "distractorExplanations": {
+    "a": "Slack adjusters store no air; spring brakes apply mechanically when chamber air is released.",
+    "c": "Metering air is done by the foot valve and relay valves; slack adjusters link pushrod to S-cam.",
+    "d": "That is the governor's role; slack adjusters are mechanical levers at each wheel end."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-015": {
+   "options": {
+    "a": "Reduced braking capability; stop safely and treat as emergency",
+    "b": "Full braking, since the other circuit doubles its pressure",
+    "c": "Spring brakes applying at once on all axles to stop the truck",
+    "d": "Normal braking until the next scheduled stop or inspection"
+   },
+   "distractorExplanations": {
+    "b": "The remaining circuit does not compensate; losing one circuit reduces total braking capability.",
+    "c": "Springs apply only when pressure falls low; losing one circuit leaves the other circuit's service brakes.",
+    "d": "Braking is reduced immediately; the CDL manual says stop safely and get the system repaired."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-002": {
+   "options": {
+    "a": "2 psi/min single or 3 psi/min combination",
+    "b": "3 psi/min single or 4 psi/min combination",
+    "c": "4 psi/min single or 5 psi/min combination",
+    "d": "5 psi/min single or 6 psi/min combination"
+   },
+   "distractorExplanations": {
+    "a": "Those are the released-brake leakage limits; with brakes applied the limits are 3 and 4 psi/min.",
+    "c": "Too lenient by 1 psi/min; the applied-brake limit is 3 psi/min single and 4 psi/min combination.",
+    "d": "Far above the handbook limits; that much loss with brakes applied means the vehicle needs repair."
+   },
+   "explanation": "Applied leakage limits are slightly higher than released. These are the CDL handbook figures."
+  },
+  "cdl-air-brakes-readiness-check-inspection-003": {
+   "options": {
+    "a": "Governor cut-in pressure, about 100 psi",
+    "b": "The low-air warning point, about 60 psi",
+    "c": "Just above spring-brake pop-out, about 45 psi",
+    "d": "Governor cut-out / normal operating pressure"
+   },
+   "distractorExplanations": {
+    "a": "The leakage test starts from a fully charged system at cut-out, not from the cut-in point.",
+    "b": "Starting at 60 psi could trigger the warning and springs; the test begins at full operating pressure.",
+    "c": "That is the spring-brake application range; leakage is checked from full charge at governor cut-out."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-005": {
+   "options": {
+    "a": "~20–45 psi range depending on system",
+    "b": "~55–60 psi, as the low-air warning sounds",
+    "c": "~90–100 psi, near governor cut-in pressure",
+    "d": "~120–125 psi, near governor cut-out pressure"
+   },
+   "distractorExplanations": {
+    "b": "The low-air warning comes first at about 60 psi; springs apply later, as pressure falls to about 20–45.",
+    "c": "Around 100 psi is governor cut-in; springs stay released until pressure drops far lower.",
+    "d": "125 psi is normal full charge at cut-out; spring brakes apply only after major air loss."
+   },
+   "explanation": "As service air falls, springs take over. Know your own vehicle's figure."
+  },
+  "cdl-air-brakes-readiness-check-inspection-006": {
+   "options": {
+    "a": "Brake linings are new and still bedding in; recheck later",
+    "b": "The slack adjuster is set too tight; back it off a turn",
+    "c": "Air pressure is too high; lower the governor cut-out setting",
+    "d": "Brakes may be weak/unsafe; adjust or repair per procedure"
+   },
+   "distractorExplanations": {
+    "a": "Excessive pushrod stroke is an adjustment or mechanical defect, not a lining break-in condition.",
+    "b": "Out-of-adjustment brakes usually overstroke because they are too loose; backing off makes it worse.",
+    "c": "Stroke is measured at a set application pressure; changing governor settings does not fix adjustment."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-007": {
+   "options": {
+    "a": "Gladhands only, since lines are sealed",
+    "b": "Tank drain valves and the governor alone",
+    "c": "Hoses, fittings, chambers, valves, tanks",
+    "d": "The dash gauges, buzzer, and warning light"
+   },
+   "distractorExplanations": {
+    "a": "Leaks occur anywhere in the system: hoses, fittings, chambers, valves and tanks, not just gladhands.",
+    "b": "Drain valves and the governor are only two of many leak points; hoses, fittings and chambers also leak.",
+    "d": "Gauges and warnings show pressure loss; the leak survey checks physical air components."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-008": {
+   "options": {
+    "a": "Within about 10 seconds under test conditions",
+    "b": "Within about 20 seconds under test conditions",
+    "c": "Within about 30 seconds under test conditions",
+    "d": "Within about 45 seconds under test conditions"
+   },
+   "distractorExplanations": {
+    "a": "The handbook standard for dual systems is 85 to 100 psi within 45 seconds; 10 seconds is not the benchmark.",
+    "b": "20 seconds is not the CDL handbook benchmark; dual systems should build 85 to 100 psi within 45 seconds.",
+    "c": "The handbook build-up standard is 45 seconds for 85 to 100 psi; 30 seconds understates the allowed time."
+   },
+   "explanation": "Slow build-up suggests compressor/drive/leak issues. Use the OEM figure if it differs from the handbook."
+  },
+  "cdl-air-brakes-readiness-check-inspection-009": {
+   "options": {
+    "a": "Weekly, once the air dryer purge stops",
+    "b": "Monthly, during scheduled PM service",
+    "c": "Daily/as required to remove water and oil",
+    "d": "Only when the air dryer is not working"
+   },
+   "distractorExplanations": {
+    "a": "Water and oil collect daily; tanks without automatic drains are drained at least daily or as required.",
+    "b": "Waiting a month lets water and oil build up, causing freezing and valve failure.",
+    "d": "Even with a working dryer, tanks still need daily/as-required draining to remove moisture and oil."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-010": {
+   "options": {
+    "a": "Indicate a foundation brake problem needing repair, not endless readjustment",
+    "b": "Are working normally, since automatic adjusters need manual tweaks every week",
+    "c": "Should be backed off so pushrod stroke stays at its maximum limit",
+    "d": "Should be replaced by manual slack adjusters on that axle for good"
+   },
+   "distractorExplanations": {
+    "b": "Automatic slack adjusters should not need routine manual adjustment; repeated overstroke signals a defect.",
+    "c": "Running at maximum stroke leaves no reserve and risks out-of-service brakes; the root cause needs repair.",
+    "d": "Automatic slack adjusters have been required on new air-braked vehicles since 1994; repair, do not downgrade."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-011": {
+   "options": {
+    "a": "Drive to the next terminal if ABS still works",
+    "b": "Acceptable if braking feels normal on a test stop",
+    "c": "Remove from service / repair before dispatch",
+    "d": "Cool it with water, then recheck before driving"
+   },
+   "distractorExplanations": {
+    "a": "ABS cannot compensate for a cracked friction surface; the drum or rotor must be repaired first.",
+    "b": "A normal-feeling stop does not prove a cracked drum is safe; cracks can fail suddenly under heat and load.",
+    "d": "Water on a hot drum can widen cracks; a cracked drum or rotor is a repair item, not a cooling issue."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-012": {
+   "options": {
+    "a": "Normal lubrication carried over from the brake chamber diaphragms",
+    "b": "Engine coolant leaking into the governor line",
+    "c": "Compressor passing oil / dryer issues / maintenance needed",
+    "d": "Spring-brake grease migrating back up the lines into the tank"
+   },
+   "distractorExplanations": {
+    "a": "Chamber diaphragms are rubber and produce no oil; oil in the tank comes from the compressor.",
+    "b": "Coolant would show as a sweet-smelling, colored fluid; oil carryover points to the compressor or dryer.",
+    "d": "Grease in brake components cannot travel upstream into reservoirs; oil comes from compressor carryover."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-013": {
+   "options": {
+    "a": "Coupled with seals removed for a tighter metal fit",
+    "b": "Hooked to dummy couplers while pulling a trailer",
+    "c": "Clean, sealed, correctly coupled, undamaged",
+    "d": "Crossed service-to-supply if the colors are faded"
+   },
+   "distractorExplanations": {
+    "a": "Gladhands seal through rubber grommets; removing seals causes leaks rather than a tighter fit.",
+    "b": "Dummy couplers are for bobtailing; with a trailer the gladhands must be coupled to the trailer.",
+    "d": "Supply goes to supply and service to service; crossed lines can leave the trailer without brakes."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-014": {
+   "options": {
+    "a": "Lamp should stay off at start-up, since lighting at all means a fault",
+    "b": "Lamp should flash until the air pressure reaches governor cut-out",
+    "c": "Lamp should illuminate then go out if system passes self-check",
+    "d": "Lamp should stay on whenever the parking brake is set"
+   },
+   "distractorExplanations": {
+    "a": "The lamp lighting briefly at start-up is the normal bulb check; staying on is what signals a fault.",
+    "b": "The ABS lamp is not tied to air pressure; it does a bulb check and goes out if ABS passes self-test.",
+    "d": "The ABS lamp reports ABS faults, not parking brake status, which has its own indicator."
+   },
+   "explanation": "Bulb/self-check is part of pre-trip. Timing of the lamp check is vehicle-specific."
+  },
+  "cdl-air-brakes-readiness-check-inspection-015": {
+   "options": {
+    "a": "Drain the tanks and keep driving if pressure stays above 60",
+    "b": "Raise the governor cut-out setting to compensate for leaks",
+    "c": "Check belts/drive, leaks, governor, dryer, filter restrictions",
+    "d": "Pump the brake pedal to help the compressor build pressure"
+   },
+   "distractorExplanations": {
+    "a": "Slow build-up signals a charging fault that needs diagnosis; draining tanks does not fix it.",
+    "b": "Raising cut-out does not speed charging and can overpressure the system; find the cause first.",
+    "d": "Pumping the pedal uses air and slows build-up; the compressor charges the tanks on its own."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-001": {
+   "options": {
+    "a": "Apply lightly and steadily without lockup",
+    "b": "Pump rapidly on and off before wheels lock",
+    "c": "Apply fully, release as wheels lock, reapply",
+    "d": "Apply fully and hold until the vehicle stops"
+   },
+   "distractorExplanations": {
+    "a": "That is controlled braking; stab braking means full application, release on lockup, reapply.",
+    "b": "Rapid pumping wastes air and is not the stab method; the brakes are applied fully until wheels lock.",
+    "d": "Holding locked wheels removes steering control; stab braking releases when the wheels lock."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-002": {
+   "options": {
+    "a": "Pump the pedal so ABS can reset between pulses",
+    "b": "Use stab braking: apply, release, and reapply",
+    "c": "Apply the trailer hand valve before the pedal",
+    "d": "Apply firm steady pressure and let ABS modulate"
+   },
+   "distractorExplanations": {
+    "a": "Pumping interrupts ABS; it already pulses the brakes, so the driver holds steady firm pressure.",
+    "b": "Stab braking is for vehicles without ABS; with ABS, apply firm steady pressure.",
+    "c": "The hand valve can cause trailer skids and is not used for stopping; use the service pedal with ABS."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-003": {
+   "options": {
+    "a": "Increased brake grab",
+    "b": "Higher air pressure use",
+    "c": "Reduced braking power",
+    "d": "Tighter brake adjustment"
+   },
+   "distractorExplanations": {
+    "a": "Heat makes linings less effective and drums expand away from them, so braking weakens, not grabs.",
+    "b": "Fade is a friction loss from heat, not a change in air pressure consumption.",
+    "d": "Hot drums expand, effectively loosening adjustment and lengthening stroke, which reduces braking."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-004": {
+   "options": {
+    "a": "Start in a higher gear and downshift as the speed builds on the grade",
+    "b": "Select a safe speed/gear early; use braking without overheating",
+    "c": "Hold light, steady brake pressure the whole way down",
+    "d": "Use the trailer hand valve to hold the speed down on the grade"
+   },
+   "distractorExplanations": {
+    "a": "Downshifting on a downgrade may be impossible once speed builds; select the low gear before the grade.",
+    "c": "Constant light braking overheats the brakes and causes fade; use the right gear and snub braking.",
+    "d": "Using the hand valve to brake can overheat trailer brakes and cause skids; use gear and service brakes."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-005": {
+   "options": {
+    "a": "Hold light, steady pressure to keep speed constant",
+    "b": "Apply firmly to reduce speed, release to cool, repeat",
+    "c": "Pump the brakes rapidly to keep the linings cool",
+    "d": "Apply the trailer brakes only and let the tractor coast"
+   },
+   "distractorExplanations": {
+    "a": "Continuous light pressure builds heat and causes fade; snub braking applies firmly and then releases.",
+    "c": "Rapid pumping wastes air and does not cool brakes; snub braking uses firm applications with release intervals.",
+    "d": "Braking with only the trailer overheats its brakes and risks a skid; snub braking uses the service brakes."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-006": {
+   "options": {
+    "a": "Hold the lockup and steer gently toward the shoulder",
+    "b": "Release to regain steering, then reapply as needed",
+    "c": "Pump the trailer hand valve until the wheels unlock",
+    "d": "Set the parking brake to stop in the shortest distance"
+   },
+   "distractorExplanations": {
+    "a": "Locked front wheels cannot steer; release the brakes to regain steering before reapplying.",
+    "c": "The hand valve controls only trailer brakes and can cause a trailer skid; release the pedal instead.",
+    "d": "Spring brakes give no lockup control and can cause a skid; release and reapply the service brakes."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-007": {
+   "options": {
+    "a": "Fade until the engine retarder dries the drums",
+    "b": "Lock up until air pressure is rebuilt to cut-out",
+    "c": "Pull or grab until dried by light application",
+    "d": "Work normally once the ABS lamp goes out"
+   },
+   "distractorExplanations": {
+    "a": "Wet brakes are weak or uneven because of water, and the retarder does not dry them; light braking does.",
+    "b": "Water affects friction, not air pressure; brakes may pull or grab until dried by light application.",
+    "d": "The ABS lamp does not indicate wet brakes; dry them with light application while driving slowly."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-008": {
+   "options": {
+    "a": "Set the trailer hand valve and leave the transmission in gear",
+    "b": "Apply the service brakes with the hand valve and turn off the engine",
+    "c": "Apply parking brake; consider wheel chocks/curb technique as trained",
+    "d": "Rely on the transmission in low gear, with chocks used only on ice"
+   },
+   "distractorExplanations": {
+    "a": "The hand valve uses service air that can leak away; it is never a parking brake.",
+    "b": "Service brakes held by air will release as pressure leaks; use the spring parking brake and chocks.",
+    "d": "The transmission is not a parking brake; set the parking brake and chock as trained on any grade."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-009": {
+   "options": {
+    "a": "Holding the trailer parked during short stops",
+    "b": "Releasing the trailer spring brakes",
+    "c": "Applying trailer brakes independently",
+    "d": "Supplying air to charge the trailer tanks"
+   },
+   "distractorExplanations": {
+    "a": "The hand valve uses service air that can leak off; it must not be used as a parking brake.",
+    "b": "Trailer spring brakes are released with the red trailer air supply valve, not the hand valve.",
+    "d": "Charging trailer tanks is done by the trailer air supply (red) valve; the hand valve applies trailer brakes."
+   },
+   "explanation": "Limited trailer control; not a parking brake. It is for testing and control, not for parking."
+  },
+  "cdl-air-brakes-readiness-check-operation-010": {
+   "options": {
+    "a": "Pump the brakes to rebuild air pressure",
+    "b": "Continue to a shop if pressure stays above 40",
+    "c": "Push in the red knob to restore trailer air",
+    "d": "Safe stop ASAP; do not continue normally"
+   },
+   "distractorExplanations": {
+    "a": "Pumping uses more air and speeds up spring-brake application; stop safely as soon as possible.",
+    "b": "At 40 psi the springs may be close to applying; low air means stop safely right away.",
+    "c": "Pushing the red knob sends more tractor air to the trailer; it does not fix the loss of pressure."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-011": {
+   "options": {
+    "a": "Pulling, wheel lock, or trailer swing",
+    "b": "Faster build-up time after each stop",
+    "c": "Low-air warning at normal pressure",
+    "d": "Spring brakes failing to release"
+   },
+   "distractorExplanations": {
+    "b": "Brake imbalance is about uneven braking force at wheel ends, not air build-up time.",
+    "c": "The low-air warning reflects reservoir pressure, not uneven force between foundation brakes.",
+    "d": "Spring brake release depends on supply air and the chambers, not on foundation brake balance."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-012": {
+   "options": {
+    "a": "Release the tractor parking brakes while still coupled",
+    "b": "Cut out the compressor and stop air buildup",
+    "c": "Dump trailer air / apply trailer springs unexpectedly",
+    "d": "Apply the tractor service brakes along with the trailer"
+   },
+   "distractorExplanations": {
+    "a": "Tractor parking brakes use the yellow valve; the red valve controls trailer air supply.",
+    "b": "The governor controls compressor cut-out; the red valve does not affect air buildup.",
+    "d": "Pulling the red valve affects the trailer supply and trailer springs, not the tractor service brakes."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-013": {
+   "options": {
+    "a": "Service + spring brake force stacking that can damage components",
+    "b": "Trailer air loss draining the tractor's own air supply after a breakaway",
+    "c": "Overpressure in the tanks when the governor fails to cut the compressor out",
+    "d": "Wheel lockup on slippery roads during a hard stop"
+   },
+   "distractorExplanations": {
+    "b": "Isolating tractor air from a trailer leak is the tractor protection valve's job.",
+    "c": "Overpressure is handled by the safety relief valve, which opens around 150 psi.",
+    "d": "Preventing lockup is the ABS function; anti-compounding prevents stacked service and spring force."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-014": {
+   "options": {
+    "a": "As long as the brakes hold on a tug test",
+    "b": "Set by feel, with 2 inches of free play at the pedal",
+    "c": "Within manufacturer/FMVSS limits at applied pressure",
+    "d": "Within limits when checked with air released only"
+   },
+   "distractorExplanations": {
+    "a": "A tug test checks coupling or parking brake holding, not whether pushrod stroke is within limits.",
+    "b": "Stroke is measured at the chamber pushrod against chamber-size limits, not by pedal free play.",
+    "d": "Applied stroke is measured with about 90–100 psi applied; released position alone shows nothing."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-015": {
+   "options": {
+    "a": "Replace service brakes in emergency stops",
+    "b": "Help control speed and reduce service-brake heat",
+    "c": "Prevent wheel lockup on slippery road surfaces",
+    "d": "Hold the vehicle stationary when parked on grades"
+   },
+   "distractorExplanations": {
+    "a": "Retarders are supplemental; they cannot stop the vehicle and are not used in place of service brakes.",
+    "c": "Retarders can actually cause drive-wheel skids on slippery roads; ABS prevents lockup.",
+    "d": "Retarders only work when the driveline is turning; they cannot hold a parked vehicle."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-001": {
+   "options": {
+    "a": "Apply spring brakes; vehicle will stop hard—steer to safe area if possible",
+    "b": "Leave the vehicle without brakes until the driver sets the parking valve",
+    "c": "Trigger the tractor protection valve, keeping tractor brakes normal",
+    "d": "Release the spring brakes so the vehicle coasts to a gradual stop"
+   },
+   "distractorExplanations": {
+    "b": "Spring brakes apply by themselves as air drops; they do not wait for the driver to set them.",
+    "c": "The TP valve protects tractor air from trailer leaks; with total air loss the springs apply.",
+    "d": "Spring brakes are held off by air, so losing air applies them rather than releasing them."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-002": {
+   "options": {
+    "a": "Release the trailer brakes to avoid a skid",
+    "b": "Apply the tractor spring brakes immediately",
+    "c": "Protect tractor air supply from total loss",
+    "d": "Raise governor cut-out to make up the loss"
+   },
+   "distractorExplanations": {
+    "a": "In a breakaway the trailer's emergency brakes apply; the TP valve closes to protect tractor air.",
+    "b": "The TP valve keeps tractor air; tractor springs apply only if the tractor's own air is lost.",
+    "d": "The governor setting does not change in a breakaway; the TP valve seals off the open lines."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-003": {
+   "options": {
+    "a": "Spring brakes applying on all axles at once",
+    "b": "Faster stops due to air sent to other wheels",
+    "c": "Pulling/reduced braking on that wheel end",
+    "d": "Normal braking until the tanks drop to 60 psi"
+   },
+   "distractorExplanations": {
+    "a": "A ruptured service line affects that one chamber; springs apply only after major reservoir loss.",
+    "b": "Air escaping from one line reduces force at that wheel; it does not boost the others.",
+    "d": "Braking at that wheel is lost immediately when the line ruptures, before any tank warning."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-004": {
+   "options": {
+    "a": "Faster governor cut-out and higher tank pressure",
+    "b": "Overheated drums from excess lining friction",
+    "c": "Valve freezing, sticking, leaks, poor braking",
+    "d": "ABS lamp staying lit with no effect on braking"
+   },
+   "distractorExplanations": {
+    "a": "Contamination clogs and freezes valves; it does not change governor settings or raise tank pressure.",
+    "b": "Drum overheating comes from braking practice; air contamination affects valves, seals and lines.",
+    "d": "Water and oil can freeze or stick valves and weaken braking; they are not just a warning-lamp issue."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-005": {
+   "options": {
+    "a": "Grab; pump brakes to cool them",
+    "b": "Lock; spray water on drums",
+    "c": "Fade; keep braking harder",
+    "d": "Fade; stop to cool when safe"
+   },
+   "distractorExplanations": {
+    "a": "Overheated brakes lose friction (fade); pumping keeps adding heat and wastes air.",
+    "b": "Hot brakes fade rather than lock, and water on hot drums can crack them.",
+    "c": "Braking harder on faded brakes adds heat and worsens fade; stop safely and let them cool."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-006": {
+   "options": {
+    "a": "Normal braking is lost; stop at once and wait for a tow",
+    "b": "Spring brakes will apply soon; pull over before they lock",
+    "c": "System may not prevent lockup; drive more carefully and get service",
+    "d": "Traction control is off, but ABS still works at highway speed"
+   },
+   "distractorExplanations": {
+    "a": "ABS failure leaves normal service braking; you lose anti-lock function, not the brakes.",
+    "b": "The ABS lamp is unrelated to air pressure or spring brakes; it reports an ABS fault.",
+    "d": "A lit ABS lamp means anti-lock may not function at any speed; get it serviced soon."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-007": {
+   "options": {
+    "a": "ABS warning lamp lighting and modulators shutting off",
+    "b": "Spring brakes releasing because supply pressure spikes",
+    "c": "Air dryer heater failure and frozen purge valve",
+    "d": "Overpressure / pop-off valve discharge / possible damage"
+   },
+   "distractorExplanations": {
+    "a": "The governor controls compressor loading; its failure does not shut down ABS modulators.",
+    "b": "Spring brakes are already released at normal pressure; governor faults do not change that.",
+    "c": "The dryer heater is electrical and separate; a governor fault affects pressure regulation."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-008": {
+   "options": {
+    "a": "ABS lamp lighting with modulators shut off",
+    "b": "Tractor protection valve closing at speed",
+    "c": "Brake fade from overheated drums",
+    "d": "Low air pressure / warning / spring risk"
+   },
+   "distractorExplanations": {
+    "a": "A governor fault affects compressor loading and tank pressure, not the ABS electronics.",
+    "b": "The TP valve closes on trailer air loss; it is not triggered by a governor fault.",
+    "c": "Fade comes from heat during braking, not from a governor failure."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-009": {
+   "options": {
+    "a": "Raising governor cut-out to push ice out",
+    "b": "Running the tanks at low pressure overnight",
+    "c": "Warming valves with an open flame torch",
+    "d": "Proper dryer maintenance and tank draining"
+   },
+   "distractorExplanations": {
+    "a": "Higher pressure does not clear ice and risks overpressure; keeping air dry prevents freezing.",
+    "b": "Pressure level does not stop moisture freezing; dryer maintenance and draining remove the water.",
+    "c": "Open flame can damage valves and hoses and is a fire hazard; prevent ice by keeping the air dry."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-010": {
+   "options": {
+    "a": "Build pressure to cut-out, then drive slowly so friction frees them",
+    "b": "Cage the spring brakes on the roadside without training",
+    "c": "Check air supply, parking control, valves, freezing, mechanical bind",
+    "d": "Pump the service brake pedal repeatedly until the springs release"
+   },
+   "distractorExplanations": {
+    "a": "Driving against applied brakes overheats and damages them; find the cause first.",
+    "b": "Caging without training is dangerous and leaves the axle without parking brakes; diagnose first.",
+    "d": "Pumping uses air and cannot release spring brakes, which need supply air pressure."
+   },
+   "explanation": "Diagnose safely. Do not force-drive against brakes that will not release."
+  },
+  "cdl-air-brakes-readiness-check-failures-012": {
+   "options": {
+    "a": "Normal feel once pressure passes 100",
+    "b": "Low pressure, leaks, or slow build-up",
+    "c": "Air in the hydraulic master cylinder",
+    "d": "Brakes adjusted too tight at the slack"
+   },
+   "distractorExplanations": {
+    "a": "A soft feel is not normal at any pressure; it suggests low air, leaks or slow build-up.",
+    "c": "Pure air-brake systems have no hydraulic master cylinder; that applies to hydraulic brakes.",
+    "d": "Overly tight brakes drag; a soft, weak feel points to low pressure or long stroke."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-013": {
+   "options": {
+    "a": "ABS on the tractor, which adds wheel slip on dry roads",
+    "b": "Lower speed, which reduces engine braking",
+    "c": "Speed, weight, poor brakes, and downhill grades",
+    "d": "Cold drums, which lose friction until they warm up"
+   },
+   "distractorExplanations": {
+    "a": "ABS reduces lockup and does not add slip; stopping distance grows with speed, weight and bad brakes.",
+    "b": "Lower speed shortens stopping distance; higher speed is what increases it.",
+    "d": "Hot drums lose friction (fade); cold drums do not lengthen emergency stops."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-014": {
+   "options": {
+    "a": "Trust the gauge, since the warning buzzer is set too high on most trucks",
+    "b": "Trust the buzzer and continue if the gauge reads above 60 psi",
+    "c": "Believe the more conservative indication and stop safely; get inspected",
+    "d": "Recalibrate the gauge at the next stop and keep driving normally"
+   },
+   "distractorExplanations": {
+    "a": "When indicators disagree, treat the worse reading as true; one may have failed.",
+    "b": "Continuing with a possible air problem risks sudden spring-brake application; stop and get inspected.",
+    "d": "A conflicting warning may mean real air loss; stop safely now rather than driving on."
+   }
+  },
+  "cdl-air-brakes-readiness-check-failures-015": {
+   "options": {
+    "a": "Build air to 60 psi, push the knob in, and resume the trip",
+    "b": "Cage the spring brakes and drive to the next shop",
+    "c": "Secure vehicle, diagnose air loss, arrange repair",
+    "d": "Drain the tanks, recharge to cut-out, and continue"
+   },
+   "distractorExplanations": {
+    "a": "Resetting the springs without finding the air loss lets it happen again at speed.",
+    "b": "Caging removes the emergency/parking brakes; the vehicle should be repaired or towed.",
+    "d": "Draining and recharging does not fix the leak that caused the emergency application."
+   },
+   "explanation": "Fix the air problem first. Do not keep driving normally after an emergency spring application."
+  }
+ }
+}

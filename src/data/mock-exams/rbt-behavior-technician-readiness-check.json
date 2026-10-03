@@ -7,7 +7,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only end-of-day estimates"
+        "text": "Whether behavior occurred at any point in each interval"
       },
       {
         "id": "b",
@@ -15,19 +15,19 @@
       },
       {
         "id": "c",
-        "text": "Only caregiver opinions"
+        "text": "Whether behavior is occurring at the end of each interval"
       },
       {
         "id": "d",
-        "text": "Only monthly averages"
+        "text": "Behavior that lasts the entire interval being scored"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Every instance of the target behavior during observation.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only end-of-day estimates.",
-      "c": "Not the best answer: Only caregiver opinions.",
-      "d": "Not the best answer: Only monthly averages."
+      "a": "Recording any occurrence within an interval is partial-interval recording, a discontinuous method, not continuous.",
+      "c": "Checking at the end of each interval is momentary time sampling, a discontinuous method.",
+      "d": "Scoring behavior that fills the whole interval is whole-interval recording, a discontinuous method."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -40,15 +40,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Latency to first response"
+        "text": "Time from the instruction to the first response"
       },
       {
         "id": "b",
-        "text": "Duration of sessions"
+        "text": "Total time the behavior lasts"
       },
       {
         "id": "c",
-        "text": "Intensity ratings"
+        "text": "Time elapsed between two consecutive responses"
       },
       {
         "id": "d",
@@ -58,9 +58,9 @@
     "correctOptionId": "d",
     "explanation": "Count of responses per observation period.",
     "distractorExplanations": {
-      "a": "Not the best answer: Latency to first response only.",
-      "b": "Not the best answer: Duration of sessions only.",
-      "c": "Not the best answer: Intensity ratings only."
+      "a": "Time from the instruction to response onset is latency, not frequency.",
+      "b": "Total time engaged in the behavior is duration, not a count of responses.",
+      "c": "Time between consecutive responses is interresponse time (IRT), not frequency."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -77,23 +77,23 @@
       },
       {
         "id": "b",
-        "text": "Only how often it occurs"
+        "text": "How often a behavior occurs"
       },
       {
         "id": "c",
-        "text": "Only where it occurs"
+        "text": "How soon a behavior starts"
       },
       {
         "id": "d",
-        "text": "Only who is present"
+        "text": "Time between responses"
       }
     ],
     "correctOptionId": "a",
     "explanation": "How long a behavior lasts.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only how often it occurs.",
-      "c": "Not the best answer: Only where it occurs.",
-      "d": "Not the best answer: Only who is present."
+      "b": "How often a behavior occurs is frequency (a count), not duration.",
+      "c": "How soon behavior starts after an SD is latency, not duration.",
+      "d": "Time between consecutive responses is IRT, not how long each instance lasts."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -106,7 +106,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Total session length"
+        "text": "Time from response onset to its offset"
       },
       {
         "id": "b",
@@ -114,19 +114,19 @@
       },
       {
         "id": "c",
-        "text": "Interobserver agreement"
+        "text": "Time between two consecutive responses"
       },
       {
         "id": "d",
-        "text": "Reinforcer magnitude"
+        "text": "Responses per minute of session"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Time from SD/prompt to response onset. The other choices are incorrect statements about the concept.",
     "distractorExplanations": {
-      "a": "Not the best answer: Total session length.",
-      "c": "Not the best answer: Interobserver agreement.",
-      "d": "Not the best answer: Reinforcer magnitude."
+      "a": "Onset to offset of a response is duration, not latency.",
+      "c": "The time between consecutive responses is interresponse time (IRT), not latency.",
+      "d": "Responses per minute is rate (frequency over time), not latency."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -139,11 +139,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Time to first response"
+        "text": "Time from the SD to the first response"
       },
       {
         "id": "b",
-        "text": "Session duration"
+        "text": "Time from response onset to offset"
       },
       {
         "id": "c",
@@ -151,15 +151,15 @@
       },
       {
         "id": "d",
-        "text": "Prompt delay"
+        "text": "Responses per unit of time"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Time between consecutive responses.",
     "distractorExplanations": {
-      "a": "Not the best answer: Time to first response.",
-      "b": "Not the best answer: Session duration.",
-      "d": "Not the best answer: Prompt delay only."
+      "a": "Time from the SD to the first response is latency, not interresponse time.",
+      "b": "Onset to offset is the duration of one response, not the time between responses.",
+      "d": "Responses per unit of time is rate, not interresponse time."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Continuous data is always required by BACB for every skill"
+        "text": "Behavior has clear onset and offset"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "IOA is impossible"
+        "text": "Exact counts of each response are needed"
       },
       {
         "id": "d",
-        "text": "Graphs are banned"
+        "text": "The behavior occurs only a few times daily"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Continuous recording is impractical. The other choices are incorrect statements about the concept.",
     "distractorExplanations": {
-      "a": "Not the best answer: Continuous data is always required by BACB for every skill.",
-      "c": "Not the best answer: IOA is impossible.",
-      "d": "Not the best answer: Graphs are banned."
+      "a": "Discrete behaviors with clear onsets are good candidates for continuous recording, not a reason to switch methods.",
+      "c": "Exact counts require continuous (event) recording; discontinuous methods only estimate occurrence.",
+      "d": "Low-rate behaviors are easy to count continuously; discontinuous methods suit high-rate or long-lasting behaviors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Overestimate occurrence relative to continuous for some behaviors"
+        "text": "Overestimate occurrence for some behaviors"
       },
       {
         "id": "b",
-        "text": "Always underestimate"
+        "text": "Underestimate occurrence for most behaviors"
       },
       {
         "id": "c",
-        "text": "Match duration exactly"
+        "text": "Match continuous duration data closely"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for definitions"
+        "text": "Measure latency from the SD to response"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Overestimate occurrence relative to continuous for some behaviors.",
+    "explanation": "Overestimate occurrence relative to continuous for some behaviors. The overestimate is relative to continuous measurement, because any occurrence scores the whole interval.",
     "distractorExplanations": {
-      "b": "Not the best answer: Always underestimate.",
-      "c": "Not the best answer: Match duration exactly.",
-      "d": "Not the best answer: Eliminate the need for definitions."
+      "b": "Underestimation is the typical bias of whole-interval recording, not partial-interval recording.",
+      "c": "Partial-interval scores any occurrence in an interval, so it inflates duration rather than matching it.",
+      "d": "Partial-interval estimates occurrence; latency requires timing from the SD to response onset."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -242,23 +242,23 @@
       },
       {
         "id": "b",
-        "text": "Always overestimate"
+        "text": "Overestimate occurrence for some behaviors"
       },
       {
         "id": "c",
-        "text": "Measure latency"
+        "text": "Match frequency counts for brief behaviors"
       },
       {
         "id": "d",
-        "text": "Replace ABC data"
+        "text": "Record behavior only at the interval's end"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Underestimate occurrence for some behaviors.",
     "distractorExplanations": {
-      "b": "Not the best answer: Always overestimate.",
-      "c": "Not the best answer: Measure latency only.",
-      "d": "Not the best answer: Replace ABC data."
+      "b": "Overestimation is the known bias of partial-interval recording, not whole-interval recording.",
+      "c": "Whole-interval misses brief behaviors that do not fill an interval, so it does not match frequency counts.",
+      "d": "Checking at the interval's end is momentary time sampling, not whole-interval recording."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -271,7 +271,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Every instance continuously"
+        "text": "Whether behavior occurred at any time during intervals"
       },
       {
         "id": "b",
@@ -279,19 +279,19 @@
       },
       {
         "id": "c",
-        "text": "Only overnight sleep"
+        "text": "Whether behavior lasted throughout entire intervals"
       },
       {
         "id": "d",
-        "text": "Only caregiver checklists"
+        "text": "How many times behavior occurred in each interval"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Whether behavior is occurring at the end of intervals.",
     "distractorExplanations": {
-      "a": "Not the best answer: Every instance continuously.",
-      "c": "Not the best answer: Only overnight sleep.",
-      "d": "Not the best answer: Only caregiver checklists."
+      "a": "Any occurrence during the interval is partial-interval recording, not momentary time sampling.",
+      "c": "Behavior lasting the whole interval is whole-interval recording, not momentary time sampling.",
+      "d": "Counting occurrences within intervals is frequency (event) recording, not momentary time sampling."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,11 +304,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only verbal reports"
+        "text": "Direct observation of each response as it occurs"
       },
       {
         "id": "b",
-        "text": "Only heart rate"
+        "text": "Caregiver ratings of behavior after the session"
       },
       {
         "id": "c",
@@ -316,15 +316,15 @@
       },
       {
         "id": "d",
-        "text": "Only attendance"
+        "text": "Timing how long each response lasts"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Enduring environmental effects of behavior.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only verbal reports.",
-      "b": "Not the best answer: Only heart rate.",
-      "d": "Not the best answer: Only attendance."
+      "a": "Watching each response live is continuous event recording; permanent product measures the outcome left behind.",
+      "b": "Caregiver ratings are indirect assessment, not a tangible product of the behavior.",
+      "d": "Timing each response is duration recording, not measuring a lasting product of behavior."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -337,7 +337,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Vague motivational phrases"
+        "text": "Based on the learner's diagnosis and inner feelings"
       },
       {
         "id": "b",
@@ -345,19 +345,19 @@
       },
       {
         "id": "c",
-        "text": "Secret to the RBT"
+        "text": "Brief labels such as 'aggression' or 'tantrum'"
       },
       {
         "id": "d",
-        "text": "Changed mid-session without note"
+        "text": "Written by each RBT in their own words at the start of every session"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Clear, objective, and complete enough for reliable measurement.",
     "distractorExplanations": {
-      "a": "Not the best answer: Vague motivational phrases.",
-      "c": "Not the best answer: Secret to the RBT.",
-      "d": "Not the best answer: Changed mid-session without note."
+      "a": "Diagnoses and inner states are not observable; operational definitions describe observable, measurable behavior.",
+      "c": "One-word labels are not operational; a definition must state observable examples and non-examples.",
+      "d": "Definitions are set in the plan so all observers measure the same thing; personal rewording undermines IOA."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,11 +370,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Client preference"
+        "text": "How well the intervention changes behavior"
       },
       {
         "id": "b",
-        "text": "Pay rates"
+        "text": "Whether the definition matches the diagnosis"
       },
       {
         "id": "c",
@@ -382,15 +382,15 @@
       },
       {
         "id": "d",
-        "text": "Session entertainment"
+        "text": "Consistency of the client's responding over time"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Measurement agreement between observers.",
     "distractorExplanations": {
-      "a": "Not the best answer: Client preference only.",
-      "b": "Not the best answer: Pay rates.",
-      "d": "Not the best answer: Session entertainment."
+      "a": "Treatment effectiveness is judged by visual analysis of the data, not by IOA.",
+      "b": "IOA checks agreement between observers' data, not alignment with a diagnosis.",
+      "d": "Stability of the client's responding is variability in the data, not agreement between observers."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only medication side effects"
+        "text": "Components of interobserver agreement scores"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Only IOA formulas"
+        "text": "Steps of a task analysis for chaining"
       },
       {
         "id": "d",
-        "text": "Only preference assessment toys"
+        "text": "Dimensions of an operational definition"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Visual analysis features of graphed data.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only medication side effects.",
-      "c": "Not the best answer: Only IOA formulas.",
-      "d": "Not the best answer: Only preference assessment toys."
+      "a": "IOA is calculated with formulas such as total count or interval-by-interval; trend, level, and variability are graph features.",
+      "c": "Task analysis steps are units of a skill, not properties of graphed data.",
+      "d": "Operational definitions describe the behavior; trend, level, and variability describe data paths on a graph."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "a",
-        "text": "They hide variability"
+        "text": "They show proportional change on a logarithmic multiply-divide scale"
       },
       {
         "id": "b",
@@ -477,19 +477,19 @@
       },
       {
         "id": "c",
-        "text": "They replace definitions"
+        "text": "They let the RBT skip operational definitions"
       },
       {
         "id": "d",
-        "text": "They are required to be 3D"
+        "text": "They display cumulative totals that cannot go down"
       }
     ],
     "correctOptionId": "b",
     "explanation": "They support standard visual analysis of behavior change.",
     "distractorExplanations": {
-      "a": "Not the best answer: They hide variability.",
-      "c": "Not the best answer: They replace definitions.",
-      "d": "Not the best answer: They are required to be 3D."
+      "a": "Logarithmic scaling describes standard celeration charts, not equal-interval line graphs.",
+      "c": "No graph type replaces operational definitions; measurement depends on clear definitions.",
+      "d": "Non-decreasing cumulative totals describe cumulative records, not equal-interval line graphs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "Independent diagnosis authority"
+        "text": "Their own clinical judgment once trained"
       },
       {
         "id": "c",
-        "text": "Prescribing privileges"
+        "text": "Direction from the caregiver who hired them"
       },
       {
         "id": "d",
-        "text": "Unsupervised functional analyses"
+        "text": "Direction from a senior RBT on the team"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Supervisor direction within their scope.",
     "distractorExplanations": {
-      "b": "Not the best answer: Independent diagnosis authority.",
-      "c": "Not the best answer: Prescribing privileges.",
-      "d": "Not the best answer: Unsupervised functional analyses always."
+      "b": "Training does not grant independent clinical authority; RBTs assist under supervisor direction.",
+      "c": "Caregivers can give input, but RBT assessment duties are directed by the BCBA/BCaBA supervisor.",
+      "d": "A senior RBT is not a qualified supervisor; RBTs work under a BCBA, BCaBA, or other qualified supervisor."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -539,23 +539,23 @@
       },
       {
         "id": "b",
-        "text": "Diagnoses"
+        "text": "Behavior functions"
       },
       {
         "id": "c",
-        "text": "Medication doses"
+        "text": "Effective prompt levels"
       },
       {
         "id": "d",
-        "text": "IEP legal placements"
+        "text": "Mastery criteria"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Potential reinforcers.",
     "distractorExplanations": {
-      "b": "Not the best answer: Diagnoses.",
-      "c": "Not the best answer: Medication doses.",
-      "d": "Not the best answer: IEP legal placements."
+      "b": "Behavior function is identified by a functional behavior assessment, not a preference assessment.",
+      "c": "Prompt levels are chosen through prompting procedures and data, not preference assessments.",
+      "d": "Mastery criteria are set in the skill program by the supervisor, not found through preference assessment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -568,7 +568,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only forced single-item trials"
+        "text": "Choices made between two items at a time"
       },
       {
         "id": "b",
@@ -576,19 +576,19 @@
       },
       {
         "id": "c",
-        "text": "Only interview data"
+        "text": "Selections from an array with items removed"
       },
       {
         "id": "d",
-        "text": "Only medical labs"
+        "text": "Caregiver rankings of the learner's favorites"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Engagement when multiple items are available.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only forced single-item trials always.",
-      "c": "Not the best answer: Only interview data.",
-      "d": "Not the best answer: Only medical labs."
+      "a": "Choosing between two items at a time is a paired-stimulus preference assessment, not free-operant.",
+      "c": "Removing chosen items from an array is the MSWO procedure, not free-operant observation.",
+      "d": "Caregiver rankings are an indirect preference assessment, not direct free-operant observation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,11 +601,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only grades"
+        "text": "Antecedent, behavior, correction"
       },
       {
         "id": "b",
-        "text": "Only attendance"
+        "text": "Activity, baseline, compliance"
       },
       {
         "id": "c",
@@ -613,15 +613,15 @@
       },
       {
         "id": "d",
-        "text": "Only medication times"
+        "text": "Attention, behavior, communication"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Antecedent, behavior, consequence.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only grades.",
-      "b": "Not the best answer: Only attendance.",
-      "d": "Not the best answer: Only medication times."
+      "a": "The C in ABC is consequence (what follows the behavior), not correction.",
+      "b": "ABC stands for antecedent-behavior-consequence; activity, baseline, and compliance are unrelated terms.",
+      "d": "Attention is one possible function, but the ABC acronym is antecedent, behavior, consequence."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -634,7 +634,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only bloodwork"
+        "text": "Direct ABC observation during sessions"
       },
       {
         "id": "b",
@@ -642,19 +642,19 @@
       },
       {
         "id": "c",
-        "text": "Only IQ tests administered by RBTs independently"
+        "text": "Functional analysis with test conditions"
       },
       {
         "id": "d",
-        "text": "Only court testimony"
+        "text": "Scatterplot data recorded by the RBT"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Interviews/checklists with caregivers.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only bloodwork.",
-      "c": "Not the best answer: Only IQ tests administered by RBTs independently.",
-      "d": "Not the best answer: Only court testimony."
+      "a": "ABC observation in session is direct (descriptive) assessment, not indirect assessment.",
+      "c": "Manipulating test conditions is a functional analysis, an experimental method, not indirect assessment.",
+      "d": "Scatterplots are direct observational data, not indirect interview or checklist methods."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "A medical cure guarantee"
+        "text": "The topography and intensity of problem behavior"
       },
       {
         "id": "c",
-        "text": "A school expulsion"
+        "text": "A diagnosis that explains the behavior"
       },
       {
         "id": "d",
-        "text": "A billing code"
+        "text": "Punishers that will stop the behavior"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Variables maintaining problem behavior.",
     "distractorExplanations": {
-      "b": "Not the best answer: A medical cure guarantee.",
-      "c": "Not the best answer: A school expulsion.",
-      "d": "Not the best answer: A billing code only."
+      "b": "Topography and intensity describe what the behavior looks like and how strong it is; an FBA seeks why it continues (maintaining variables).",
+      "c": "Diagnosis is not the goal of an FBA; it identifies environmental variables maintaining the behavior.",
+      "d": "An FBA identifies function to build function-based interventions, not punishers to suppress behavior."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Collect ABC data when assigned"
+        "text": "Collect ABC data when assigned by a supervisor"
       },
       {
         "id": "b",
-        "text": "Run preference assessments when trained"
+        "text": "Run preference assessments after training"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "Graph session data"
+        "text": "Graph session data as directed by the plan"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Design comprehensive FBAs or behavior plans.",
     "distractorExplanations": {
-      "a": "Not the best answer: Collect ABC data when assigned.",
-      "b": "Not the best answer: Run preference assessments when trained.",
-      "d": "Not the best answer: Graph session data."
+      "a": "Collecting ABC data as assigned is a core RBT task; the prompt asks what RBTs do not do independently.",
+      "b": "Conducting trained preference assessments is on the RBT Task List, so RBTs can do it.",
+      "d": "Graphing data as directed is an RBT task; designing FBAs and behavior plans is the supervisor's job."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -733,11 +733,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only caregiver satisfaction"
+        "text": "Caregiver satisfaction with services"
       },
       {
         "id": "b",
-        "text": "Only session length"
+        "text": "The function of problem behavior"
       },
       {
         "id": "c",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "Only reinforcer cost"
+        "text": "Learner item preferences"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Current performance on targets.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only caregiver satisfaction.",
-      "b": "Not the best answer: Only session length.",
-      "d": "Not the best answer: Only reinforcer cost."
+      "a": "Satisfaction surveys measure social validity, not current performance on skill targets.",
+      "b": "Function is identified by an FBA; skill probes check performance on acquisition targets.",
+      "d": "Item preference is found through preference assessments, not skill probes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -766,7 +766,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only after mastery"
+        "text": "After mastery to confirm the skill is maintained"
       },
       {
         "id": "b",
@@ -774,19 +774,19 @@
       },
       {
         "id": "c",
-        "text": "Only once ever"
+        "text": "During intervention to track response to treatment"
       },
       {
         "id": "d",
-        "text": "Only by caregivers at home unsupervised"
+        "text": "After a reversal to show behavior returning"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Before intervention to describe current performance.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only after mastery.",
-      "c": "Not the best answer: Only once ever.",
-      "d": "Not the best answer: Only by caregivers at home unsupervised always."
+      "a": "Post-mastery checks are maintenance probes, not baseline data.",
+      "c": "Data collected during treatment is progress monitoring; baseline comes before intervention starts.",
+      "d": "Return-to-baseline phases in a reversal design come later; initial baseline precedes any intervention."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,15 +865,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the RBT’s mood"
+        "text": "The learner's diagnosis and IQ score"
       },
       {
         "id": "b",
-        "text": "Only the weather app icon"
+        "text": "Topography and duration of the behavior"
       },
       {
         "id": "c",
-        "text": "Only the logo on toys"
+        "text": "The reinforcement schedule written into the behavior plan"
       },
       {
         "id": "d",
@@ -883,9 +883,9 @@
     "correctOptionId": "d",
     "explanation": "Setting, people, materials, time of day.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only the RBT’s mood.",
-      "b": "Not the best answer: Only the weather app icon.",
-      "c": "Not the best answer: Only the logo on toys."
+      "a": "Diagnosis and IQ are client characteristics, not ecological variables in the environment.",
+      "b": "Topography and duration describe the behavior itself, not the surrounding ecological context.",
+      "c": "A reinforcement schedule is a programmed contingency in the plan, not an ecological variable such as setting, people, or time of day."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Posted to social media"
+        "text": "Shared with any staff member who asks"
       },
       {
         "id": "b",
-        "text": "Shared with neighbors"
+        "text": "Discussed with family friends who help"
       },
       {
         "id": "c",
-        "text": "Left in the car openly"
+        "text": "Stored on a personal phone for easy access"
       },
       {
         "id": "d",
@@ -916,9 +916,9 @@
     "correctOptionId": "d",
     "explanation": "Protected per ethics and employer policy.",
     "distractorExplanations": {
-      "a": "Not the best answer: Posted to social media.",
-      "b": "Not the best answer: Shared with neighbors.",
-      "c": "Not the best answer: Left in the car openly."
+      "a": "Client information goes to those who need it to deliver services, not to any staff member who asks.",
+      "b": "Family friends are not authorized recipients unless the guardian consents in writing.",
+      "c": "Storing client information on personal devices violates employer privacy policy unless approved and secured."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "Silently change numbers to look good"
+        "text": "Correct the numbers to match what you observed"
       },
       {
         "id": "c",
-        "text": "Delete the session"
+        "text": "Discard the session data and note it as missed"
       },
       {
         "id": "d",
-        "text": "Invent IOA"
+        "text": "Ask the caregiver which record is accurate"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Flag for supervisor review; do not silently alter.",
     "distractorExplanations": {
-      "b": "Not the best answer: Silently change numbers to look good.",
-      "c": "Not the best answer: Delete the session.",
-      "d": "Not the best answer: Invent IOA."
+      "b": "Altering recorded data, even to match memory, falsifies records; report the discrepancy to the supervisor.",
+      "c": "Deleting data hides the problem; inconsistencies go to the supervisor for review.",
+      "d": "Caregivers do not resolve data integrity issues; the supervisor reviews inconsistent data."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "RBT-authored diagnoses"
+        "text": "RBT-written behavior plans"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Independent medication changes"
+        "text": "Diagnosis of the client's disorder"
       },
       {
         "id": "d",
-        "text": "Ending all data collection"
+        "text": "Caregiver-led treatment design"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Supervised intervention planning.",
     "distractorExplanations": {
-      "a": "Not the best answer: RBT-authored diagnoses.",
-      "c": "Not the best answer: Independent medication changes.",
-      "d": "Not the best answer: Ending all data collection."
+      "a": "RBTs do not write behavior plans; the supervisor uses assessment results to plan intervention.",
+      "c": "ABA assessment informs intervention, not a medical or psychological diagnosis.",
+      "d": "Caregivers give input, but intervention design is the supervisor's responsibility."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -997,7 +997,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only naturalistic long play without data"
+        "text": "Teaching within play using the learner's motivation and interests"
       },
       {
         "id": "b",
@@ -1005,19 +1005,19 @@
       },
       {
         "id": "c",
-        "text": "Only punishment"
+        "text": "Linking each step of a routine from the first step forward"
       },
       {
         "id": "d",
-        "text": "Only group lectures"
+        "text": "Reinforcement delivered on a fixed-time schedule without a response"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Clear SD, response, consequence, and short intertrial intervals.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only naturalistic long play without data.",
-      "c": "Not the best answer: Only punishment.",
-      "d": "Not the best answer: Only group lectures."
+      "a": "Embedding teaching in play around motivation is naturalistic teaching (NET), not DTT.",
+      "c": "Teaching a routine step by step from the first is forward chaining, not discrete trial training.",
+      "d": "Response-independent fixed-time delivery is noncontingent reinforcement, not DTT."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,11 +1030,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase prompt dependency"
+        "text": "Increase reliance on the prompt"
       },
       {
         "id": "b",
-        "text": "Eliminate reinforcement"
+        "text": "Thin the reinforcement schedule"
       },
       {
         "id": "c",
@@ -1042,15 +1042,15 @@
       },
       {
         "id": "d",
-        "text": "Skip error correction"
+        "text": "Transfer stimulus control to the prompt"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Transfer stimulus control to the SD.",
     "distractorExplanations": {
-      "a": "Not the best answer: Increase prompt dependency.",
-      "b": "Not the best answer: Eliminate reinforcement.",
-      "d": "Not the best answer: Skip error correction."
+      "a": "Prompt fading aims to reduce prompt dependence, not increase it.",
+      "b": "Schedule thinning reduces reinforcement frequency; prompt fading reduces prompts.",
+      "d": "Fading moves stimulus control away from the prompt and onto the natural SD."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,7 +1063,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No prompts ever"
+        "text": "An independent opportunity first, then a prompt"
       },
       {
         "id": "b",
@@ -1071,19 +1071,19 @@
       },
       {
         "id": "c",
-        "text": "Punishment first"
+        "text": "A gestural prompt, then adds help"
       },
       {
         "id": "d",
-        "text": "Only vocal lectures"
+        "text": "A fixed time delay of 4 seconds"
       }
     ],
     "correctOptionId": "b",
     "explanation": "More intrusive prompts then fades.",
     "distractorExplanations": {
-      "a": "Not the best answer: No prompts ever.",
-      "c": "Not the best answer: Punishment first.",
-      "d": "Not the best answer: Only vocal lectures."
+      "a": "Giving an independent opportunity first and then prompting is least-to-most prompting, the opposite order of most-to-least.",
+      "c": "Adding help after a gesture is least-to-most; most-to-least starts with the most intrusive prompt.",
+      "d": "Time delay is a separate prompting procedure; most-to-least starts with full assistance and fades."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1096,11 +1096,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Maximum physical guidance first"
+        "text": "Full physical guidance, then fades to less intrusive prompts"
       },
       {
         "id": "b",
-        "text": "No data"
+        "text": "A 0-second delay prompt, then gradually lengthens the delay"
       },
       {
         "id": "c",
@@ -1108,15 +1108,15 @@
       },
       {
         "id": "d",
-        "text": "Only peer models without plan"
+        "text": "Modeling the response, then fading to a gestural prompt"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Opportunity for independent response then increases assistance.",
     "distractorExplanations": {
-      "a": "Not the best answer: Maximum physical guidance first always.",
-      "b": "Not the best answer: No data.",
-      "d": "Not the best answer: Only peer models without plan."
+      "a": "Starting with full physical guidance is most-to-least prompting, the opposite order.",
+      "b": "Starting at 0 seconds and lengthening the delay is progressive time delay, not least-to-most.",
+      "d": "Model-to-gesture fading moves from more to less help, which is most-to-least logic."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "Past behavior retroactively"
+        "text": "Future probability of the behavior it precedes"
       },
       {
         "id": "c",
-        "text": "Only staff morale"
+        "text": "The immediate intensity of the current behavior"
       },
       {
         "id": "d",
-        "text": "Only session length"
+        "text": "Satiation for the stimulus delivered"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Future probability of the behavior it follows.",
     "distractorExplanations": {
-      "b": "Not the best answer: Past behavior retroactively.",
-      "c": "Not the best answer: Only staff morale.",
-      "d": "Not the best answer: Only session length."
+      "b": "Reinforcement acts on the behavior it follows; a stimulus that precedes behavior is an antecedent.",
+      "c": "Reinforcement changes future likelihood, not the intensity of the response already occurring.",
+      "d": "Satiation reduces a reinforcer's effectiveness; it is not what reinforcement increases."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only after mastery"
+        "text": "After a skill is mastered"
       },
       {
         "id": "b",
-        "text": "Never in ABA"
+        "text": "To promote resistance to extinction"
       },
       {
         "id": "c",
-        "text": "Only for problem behavior"
+        "text": "During maintenance"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "When teaching new skills.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only after mastery forever.",
-      "b": "Not the best answer: Never in ABA.",
-      "c": "Not the best answer: Only for problem behavior."
+      "a": "Once a skill is mastered, schedules are thinned to intermittent reinforcement for maintenance.",
+      "b": "Intermittent, not continuous, reinforcement builds resistance to extinction.",
+      "c": "Maintenance uses thinned, intermittent schedules, not continuous reinforcement."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1199,23 +1199,23 @@
       },
       {
         "id": "b",
-        "text": "Erase all learning"
+        "text": "Speed up acquisition of new skills"
       },
       {
         "id": "c",
-        "text": "Replace preferential items"
+        "text": "Make behavior extinguish faster"
       },
       {
         "id": "d",
-        "text": "Eliminate data"
+        "text": "Replace the need for prompting"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Maintain skills and resist extinction.",
     "distractorExplanations": {
-      "b": "Not the best answer: Erase all learning.",
-      "c": "Not the best answer: Replace preferential items.",
-      "d": "Not the best answer: Eliminate data."
+      "b": "Continuous reinforcement speeds new learning; intermittent schedules support maintenance.",
+      "c": "Intermittent schedules make behavior more resistant to extinction, not quicker to extinguish.",
+      "d": "Reinforcement schedules do not replace prompting; prompts and fading address stimulus control."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1228,11 +1228,11 @@
     "options": [
       {
         "id": "a",
-        "text": "One vague goal"
+        "text": "Antecedent-behavior links"
       },
       {
         "id": "b",
-        "text": "Only verbal rules"
+        "text": "Discrete trials with SDs"
       },
       {
         "id": "c",
@@ -1240,15 +1240,15 @@
       },
       {
         "id": "d",
-        "text": "Only group grades"
+        "text": "Prompt hierarchy levels"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Teachable component steps.",
     "distractorExplanations": {
-      "a": "Not the best answer: One vague goal.",
-      "b": "Not the best answer: Only verbal rules.",
-      "d": "Not the best answer: Only group grades."
+      "a": "Antecedent-behavior links come from ABC analysis, not from a task analysis.",
+      "b": "Discrete trials are a teaching format; task analysis breaks a complex skill into steps.",
+      "d": "A prompt hierarchy orders prompt intrusiveness; task analysis divides the skill itself into steps."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1265,23 +1265,23 @@
       },
       {
         "id": "b",
-        "text": "Last step"
+        "text": "Last step first, then adds earlier steps"
       },
       {
         "id": "c",
-        "text": "All steps simultaneously without plan"
+        "text": "Every step in each trial until mastered"
       },
       {
         "id": "d",
-        "text": "Only verbal rehearsal"
+        "text": "Steps in random order to build flexibility"
       }
     ],
     "correctOptionId": "a",
     "explanation": "First step first, then adds subsequent steps.",
     "distractorExplanations": {
-      "b": "Not the best answer: Last step only forever.",
-      "c": "Not the best answer: All steps simultaneously without plan.",
-      "d": "Not the best answer: Only verbal rehearsal."
+      "b": "Starting with the last step and working backward is backward chaining.",
+      "c": "Teaching every step in each trial is total-task chaining, not forward chaining.",
+      "d": "Chaining teaches steps in a set sequence; random order is not forward chaining."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1298,23 +1298,23 @@
       },
       {
         "id": "b",
-        "text": "Only the first step"
+        "text": "First step first with therapist completing later steps initially"
       },
       {
         "id": "c",
-        "text": "Random steps"
+        "text": "Every step in every trial with prompts as needed for each"
       },
       {
         "id": "d",
-        "text": "No reinforcement"
+        "text": "The middle steps first because they are often the hardest"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Last step first with therapist completing earlier steps initially.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only the first step.",
-      "c": "Not the best answer: Random steps.",
-      "d": "Not the best answer: No reinforcement."
+      "b": "Teaching the first step and having the therapist finish the rest is forward chaining.",
+      "c": "Prompting through every step in each trial is total-task chaining, not backward chaining.",
+      "d": "Chaining starts at one end of the sequence; backward chaining begins with the last step."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only clinic table success"
+        "text": "Performance after teaching has stopped for weeks"
       },
       {
         "id": "b",
-        "text": "Only one SD"
+        "text": "Reduced prompts within the same teaching setting"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Only extinction"
+        "text": "Faster responding to one specific SD in the clinic"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Performance across people, settings, and stimuli.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only clinic table success.",
-      "b": "Not the best answer: Only one SD forever.",
-      "d": "Not the best answer: Only extinction."
+      "a": "Continued performance after teaching ends is maintenance, not generalization.",
+      "b": "Prompt fading in one setting builds stimulus control, not generalization across people and settings.",
+      "d": "Fluency with one SD in one setting is the opposite of generalization across stimuli."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,15 +1360,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate forgetting"
+        "text": "Skills occur across new people and settings"
       },
       {
         "id": "b",
-        "text": "Prompt dependency"
+        "text": "Skills are acquired with as few errors as possible"
       },
       {
         "id": "c",
-        "text": "No probes"
+        "text": "Skills reach mastery criteria during teaching"
       },
       {
         "id": "d",
@@ -1378,9 +1378,9 @@
     "correctOptionId": "d",
     "explanation": "Skills continue after teaching intensity reduces.",
     "distractorExplanations": {
-      "a": "Not the best answer: Immediate forgetting.",
-      "b": "Not the best answer: Prompt dependency.",
-      "c": "Not the best answer: No probes."
+      "a": "Responding across new people and settings is generalization, not maintenance.",
+      "b": "Minimizing errors during acquisition is errorless teaching, not maintenance.",
+      "c": "Reaching mastery is acquisition; maintenance is what happens after teaching is reduced."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,15 +1393,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Maximize mistakes for learning myths"
+        "text": "Let errors occur so correction can follow each one"
       },
       {
         "id": "b",
-        "text": "Remove all prompts forever day one"
+        "text": "Start with independent trials before any prompting"
       },
       {
         "id": "c",
-        "text": "Skip reinforcement"
+        "text": "Increase speed of responding before accuracy"
       },
       {
         "id": "d",
@@ -1411,9 +1411,9 @@
     "correctOptionId": "d",
     "explanation": "Minimize errors while establishing correct responding.",
     "distractorExplanations": {
-      "a": "Not the best answer: Maximize mistakes for learning myths.",
-      "b": "Not the best answer: Remove all prompts forever day one.",
-      "c": "Not the best answer: Skip reinforcement."
+      "a": "Allowing errors and then correcting is an error-correction approach, not errorless teaching.",
+      "b": "Starting with independent trials is least-to-most prompting, which allows errors.",
+      "c": "Building speed before accuracy is a fluency goal, not errorless teaching's aim of preventing errors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,15 +1426,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only massed flashcards"
+        "text": "Rapid table-based trials with set SDs"
       },
       {
         "id": "b",
-        "text": "Only restraint"
+        "text": "Structured drills before free play time"
       },
       {
         "id": "c",
-        "text": "Only written quizzes"
+        "text": "Group lessons led by a classroom teacher"
       },
       {
         "id": "d",
@@ -1444,9 +1444,9 @@
     "correctOptionId": "d",
     "explanation": "Ongoing activities and learner interests.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only massed flashcards always.",
-      "b": "Not the best answer: Only restraint.",
-      "c": "Not the best answer: Only written quizzes."
+      "a": "Rapid structured table trials describe DTT, not naturalistic teaching.",
+      "b": "Drills before play keep teaching separate from activities; NET embeds it within them.",
+      "c": "Group instruction is a format, not naturalistic embedding in the learner's own activities and interests."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1459,7 +1459,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Improvise your favorite method"
+        "text": "Follow the verbal instruction since it is more recent"
       },
       {
         "id": "b",
@@ -1467,19 +1467,19 @@
       },
       {
         "id": "c",
-        "text": "Ask the client’s sibling to decide"
+        "text": "Ask the caregiver which version to follow"
       },
       {
         "id": "d",
-        "text": "Skip data"
+        "text": "Blend both versions until the next supervision"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Clarify with supervisor; follow the authorized plan.",
     "distractorExplanations": {
-      "a": "Not the best answer: Improvise your favorite method.",
-      "c": "Not the best answer: Ask the client’s sibling to decide.",
-      "d": "Not the best answer: Skip data."
+      "a": "Recency does not authorize a change; the RBT clarifies with the supervisor and follows the written plan.",
+      "c": "Caregivers do not authorize program changes; the supervisor resolves conflicts in the plan.",
+      "d": "Mixing versions risks inconsistent treatment; clarify with the supervisor and follow the authorized plan."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Independent psychologist licenses"
+        "text": "Their own independent RBT certification authority"
       },
       {
         "id": "b",
-        "text": "Prescriptive authority"
+        "text": "A caregiver's direction in place of BACB supervision"
       },
       {
         "id": "c",
-        "text": "Unsupervised dual relationships freely"
+        "text": "Supervision only during their first year"
       },
       {
         "id": "d",
-        "text": "Supervision requirements and BACB ethics standards applicable to their role"
+        "text": "Supervision requirements and BACB ethics standards"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Supervision requirements and BACB ethics standards applicable to their role.",
+    "explanation": "Supervision requirements and BACB ethics standards applicable to their role. The standards are those applicable to the RBT role, including ongoing supervision of at least 5% of service hours each month.",
     "distractorExplanations": {
-      "a": "Not the best answer: Independent psychologist licenses.",
-      "b": "Not the best answer: Prescriptive authority.",
-      "c": "Not the best answer: Unsupervised dual relationships freely."
+      "a": "The RBT credential does not allow independent practice; RBTs must be supervised.",
+      "b": "Caregivers cannot replace required supervision by a qualified BCBA, BCaBA, or other qualified supervisor.",
+      "c": "RBT supervision is ongoing (at least 5% of service hours monthly), not limited to the first year."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1562,23 +1562,23 @@
       },
       {
         "id": "b",
-        "text": "Always improve therapy"
+        "text": "Strengthen rapport and should be encouraged"
       },
       {
         "id": "c",
-        "text": "Be required weekly"
+        "text": "Be accepted if the family requests them"
       },
       {
         "id": "d",
-        "text": "Replace supervision"
+        "text": "Be resolved by the RBT without telling anyone"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Impair objectivity — avoid/manage per ethics.",
     "distractorExplanations": {
-      "b": "Not the best answer: Always improve therapy.",
-      "c": "Not the best answer: Be required weekly.",
-      "d": "Not the best answer: Replace supervision."
+      "b": "Multiple relationships risk exploitation and lost objectivity; the code says avoid or manage them, not encourage them.",
+      "c": "Family requests do not remove the conflict-of-interest risk of a multiple relationship.",
+      "d": "Potential multiple relationships should be raised with the supervisor, not handled alone."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1591,7 +1591,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional if busy"
+        "text": "Required for billing but not ethics"
       },
       {
         "id": "b",
@@ -1599,19 +1599,19 @@
       },
       {
         "id": "c",
-        "text": "Faked to match goals"
+        "text": "Optional when the supervisor attends"
       },
       {
         "id": "d",
-        "text": "Shared as memes"
+        "text": "Acceptable if completed days later"
       }
     ],
     "correctOptionId": "b",
     "explanation": "An ethical and clinical requirement.",
     "distractorExplanations": {
-      "a": "Not the best answer: Optional if busy.",
-      "c": "Not the best answer: Faked to match goals.",
-      "d": "Not the best answer: Shared as memes."
+      "a": "Accurate documentation is an ethics requirement too, not just a billing need.",
+      "c": "Data and notes are still required when the supervisor is present.",
+      "d": "Late notes risk inaccuracy; documentation should be timely as well as accurate."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Supervisor-approved skill programs"
+        "text": "Approved skill programs"
       },
       {
         "id": "b",
-        "text": "Preference assessments"
+        "text": "Preference assessments you were trained on"
       },
       {
         "id": "c",
-        "text": "Unauthorized restrictive procedures outside the plan and law"
+        "text": "Unauthorized restrictive procedures"
       },
       {
         "id": "d",
-        "text": "Data collection"
+        "text": "Data collection procedures listed in the plan"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unauthorized restrictive procedures outside the plan and law.",
+    "explanation": "Unauthorized restrictive procedures outside the plan and law. Restrictive procedures outside the behavior plan and applicable law are off-limits.",
     "distractorExplanations": {
-      "a": "Not the best answer: Supervisor-approved skill programs.",
-      "b": "Not the best answer: Preference assessments.",
-      "d": "Not the best answer: Data collection."
+      "a": "Implementing supervisor-approved programs as written is exactly what RBTs should do.",
+      "b": "Trained preference assessments are within the RBT scope, not something to avoid.",
+      "d": "Collecting data per the plan is a core RBT duty, not a prohibited activity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1657,15 +1657,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore to protect rapport"
+        "text": "Wait until you collect enough proof before reporting"
       },
       {
         "id": "b",
-        "text": "Post online"
+        "text": "Tell the caregiver first so they can explain"
       },
       {
         "id": "c",
-        "text": "Confront alone unsafely as only step"
+        "text": "Report to your supervisor and let them decide"
       },
       {
         "id": "d",
@@ -1675,9 +1675,9 @@
     "correctOptionId": "d",
     "explanation": "Follow mandated reporting and employer procedures.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore to protect rapport.",
-      "b": "Not the best answer: Post online.",
-      "c": "Not the best answer: Confront alone unsafely as only step."
+      "a": "Mandated reporters report reasonable suspicion; they do not wait to gather proof.",
+      "b": "Alerting the caregiver may endanger the child or compromise evidence; follow mandated reporting steps.",
+      "c": "Telling a supervisor may be policy, but the mandated reporting duty is personal and cannot be delegated."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1694,23 +1694,23 @@
       },
       {
         "id": "b",
-        "text": "Always be required"
+        "text": "Be accepted if declining would offend the family"
       },
       {
         "id": "c",
-        "text": "Replace pay"
+        "text": "Be fine if disclosed after the case ends"
       },
       {
         "id": "d",
-        "text": "Be hidden from supervisor"
+        "text": "Be kept if valued under one hundred dollars"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Create ethical issues — follow code/employer policy.",
     "distractorExplanations": {
-      "b": "Not the best answer: Always be required.",
-      "c": "Not the best answer: Replace pay.",
-      "d": "Not the best answer: Be hidden from supervisor."
+      "b": "Fear of offending does not justify large gifts; follow the RBT Ethics Code and employer policy.",
+      "c": "Gifts during services are the issue; later disclosure does not resolve the conflict.",
+      "d": "Ethics guidance allows at most gifts of minimal value (the BACB code cites about $10), far below $100."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Lobby conversations with names"
+        "text": "Using client first names in the waiting room"
       },
       {
         "id": "b",
-        "text": "Carpool gossip"
+        "text": "Sharing session wins in a private staff group chat"
       },
       {
         "id": "c",
-        "text": "Social media stories"
+        "text": "Posting de-identified session photos online"
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Not discussing client details in public spaces.",
     "distractorExplanations": {
-      "a": "Not the best answer: Lobby conversations with names.",
-      "b": "Not the best answer: Carpool gossip.",
-      "c": "Not the best answer: Social media stories."
+      "a": "Names discussed in shared spaces can identify clients; confidentiality means not discussing details publicly.",
+      "b": "Even private chats with uninvolved staff can breach confidentiality; share on a need-to-know basis.",
+      "c": "Photos can identify clients even without names; posting them breaches confidentiality."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1756,15 +1756,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Collect session data"
+        "text": "Report data errors"
       },
       {
         "id": "b",
-        "text": "Ask clarifying questions"
+        "text": "Ask supervisors for clarification"
       },
       {
         "id": "c",
-        "text": "Arrive on time"
+        "text": "Maintain their RBT certification"
       },
       {
         "id": "d",
@@ -1774,9 +1774,9 @@
     "correctOptionId": "d",
     "explanation": "Misrepresent credentials. The other choices are incorrect statements about the concept.",
     "distractorExplanations": {
-      "a": "Not the best answer: Collect session data.",
-      "b": "Not the best answer: Ask clarifying questions.",
-      "c": "Not the best answer: Arrive on time."
+      "a": "Reporting data errors promptly is required, not something RBTs avoid.",
+      "b": "Seeking clarification from supervisors is expected professional behavior.",
+      "c": "Maintaining certification (renewal, competency assessment) is required of RBTs, not prohibited."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignoring language needs"
+        "text": "Applying the same family goals to every client for fairness"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "Forcing one teaching style"
+        "text": "Adopting any family practice even when it conflicts with ethics"
       },
       {
         "id": "d",
-        "text": "Mocking routines"
+        "text": "Assuming a family's needs from their cultural background"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Respecting family values while following ethical/clinical standards.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignoring language needs.",
-      "c": "Not the best answer: Forcing one teaching style.",
-      "d": "Not the best answer: Mocking routines."
+      "a": "Uniform goals ignore each family's values; cultural humility individualizes within ethical standards.",
+      "c": "Respect for culture does not override ethical and clinical standards or client safety.",
+      "d": "Stereotyping by background is the opposite of humility, which asks and learns from each family."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,11 +1855,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Are always mandatory"
+        "text": "Are fine once services have ended"
       },
       {
         "id": "b",
-        "text": "Replace supervision notes"
+        "text": "Are allowed if accounts are private"
       },
       {
         "id": "c",
@@ -1867,15 +1867,15 @@
       },
       {
         "id": "d",
-        "text": "Are required marketing"
+        "text": "Should be accepted to build family rapport"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Need caution per ethics/employer rules.",
     "distractorExplanations": {
-      "a": "Not the best answer: Are always mandatory.",
-      "b": "Not the best answer: Replace supervision notes.",
-      "d": "Not the best answer: Are required marketing."
+      "a": "Post-service contact can still create multiple-relationship risks; follow ethics and employer rules.",
+      "b": "Private settings do not remove the dual-relationship and confidentiality risks of online connections.",
+      "d": "Rapport is built in session; online friend requests from clients create dual-relationship risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1892,23 +1892,23 @@
       },
       {
         "id": "b",
-        "text": "Guess"
+        "text": "Implement it while watching a training video"
       },
       {
         "id": "c",
-        "text": "Watch one TikTok"
+        "text": "Implement it and ask for feedback afterward"
       },
       {
         "id": "d",
-        "text": "Have the client teach you unsafely"
+        "text": "Have a caregiver demonstrate it first"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Request training/supervision before implementing.",
     "distractorExplanations": {
-      "b": "Not the best answer: Guess.",
-      "c": "Not the best answer: Watch one TikTok.",
-      "d": "Not the best answer: Have the client teach you unsafely."
+      "b": "Videos do not replace competency-based training and supervision before implementing a procedure.",
+      "c": "Training must come before implementation, not after, to protect the client.",
+      "d": "Caregivers are not qualified trainers for clinical procedures; request training from the supervisor."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1954,15 +1954,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Chronic no-shows"
+        "text": "Arriving early but skipping notes on short sessions"
       },
       {
         "id": "b",
-        "text": "Arguing with caregivers publicly"
+        "text": "Correcting caregivers in front of the client to model"
       },
       {
         "id": "c",
-        "text": "Skipping session notes"
+        "text": "Prepared materials but frequent last-minute cancellations"
       },
       {
         "id": "d",
@@ -1972,9 +1972,9 @@
     "correctOptionId": "d",
     "explanation": "Punctuality, prepared materials, and respectful collaboration.",
     "distractorExplanations": {
-      "a": "Not the best answer: Chronic no-shows.",
-      "b": "Not the best answer: Arguing with caregivers publicly.",
-      "c": "Not the best answer: Skipping session notes."
+      "a": "Session notes are required for every session; professionalism includes complete documentation.",
+      "b": "Public correction damages collaboration; feedback to caregivers should be respectful and private.",
+      "c": "Reliable attendance is part of professionalism; frequent last-minute cancellations undermine it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

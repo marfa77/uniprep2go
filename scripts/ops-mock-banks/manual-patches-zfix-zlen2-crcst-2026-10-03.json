@@ -1,0 +1,733 @@
+{
+ "crcst-readiness-check": {
+  "crcst-readiness-check-decontamination-001": {
+   "options": {
+    "a": "Cleaning to remove soil/bioburden before disinfection or sterilization",
+    "b": "Sterilizing first to kill pathogens, then cleaning the instruments afterward",
+    "c": "Soaking in high-level disinfectant to make the instruments safe to handle",
+    "d": "Inspecting instruments under magnification for damage and missing parts"
+   },
+   "distractorExplanations": {
+    "b": "Reverses the sequence: sterilant cannot penetrate soil, so cleaning must come before sterilization, not after it.",
+    "c": "HLD soaking is not the first step; organic soil inactivates disinfectants, so manual or mechanical cleaning comes first.",
+    "d": "Magnified inspection happens in prep and pack after cleaning; it is a quality check, not the first decontamination step."
+   }
+  },
+  "crcst-readiness-check-decontamination-002": {
+   "options": {
+    "a": "Cloth scrub top, latex exam gloves, and a surgical mask without eye protection",
+    "b": "Fluid-resistant gown, gloves, mask/eye protection, and appropriate footwear controls",
+    "c": "Sterile surgical gloves, a bouffant cap, and a sterile gown as worn in the OR",
+    "d": "Lab coat, nitrile exam gloves, and safety glasses as used in the prep and pack area"
+   },
+   "distractorExplanations": {
+    "a": "Omits eye/face protection and uses a non-fluid-resistant cloth top; decontam splash risk requires fluid-resistant attire and eye protection.",
+    "c": "Sterile OR attire protects the patient, not the worker; decontam needs fluid-resistant, heavy-duty PPE, not sterile gloves and gowns.",
+    "d": "Prep-and-pack attire does not cover splash and sharps hazards; decontam requires fluid-resistant gowns, utility gloves and face protection."
+   }
+  },
+  "crcst-readiness-check-decontamination-003": {
+   "options": {
+    "a": "Above the water line under running tap water so soil is visible",
+    "b": "Using steel wool or abrasive pads on stainless instruments to remove stains",
+    "c": "Below the water line to reduce aerosols, using appropriate brushes",
+    "d": "Before soaking, using a high-pressure air gun to blow off visible soil"
+   },
+   "distractorExplanations": {
+    "a": "Brushing above the water line or under running water creates aerosols; scrubbing is done submerged to contain splash.",
+    "b": "Abrasive pads and steel wool scratch the passivation layer and promote corrosion; use soft brushes as the IFU directs.",
+    "d": "Air or water pressure guns blowing off dry soil create aerosols; manual scrubbing is done submerged first, with guns used per IFU."
+   }
+  },
+  "crcst-readiness-check-decontamination-004": {
+   "options": {
+    "a": "Flushing with tap water only, since brushes can scratch the inner channel",
+    "b": "Brushing with the largest brush available to maximize contact with the walls",
+    "c": "Soaking in enzymatic solution with the ends capped to keep solution inside",
+    "d": "Brushing and flushing according to IFU, including correct brush diameter"
+   },
+   "distractorExplanations": {
+    "a": "Flushing alone does not remove adherent biofilm; the IFU requires brushing with the correct-diameter brush plus flushing.",
+    "b": "An oversized brush cannot pass or contact the lumen properly; brush diameter must match the channel as the IFU specifies.",
+    "c": "Capping ends stops solution flow, and soaking replaces neither brushing nor flushing; lumens must be brushed and irrigated."
+   }
+  },
+  "crcst-readiness-check-decontamination-005": {
+   "options": {
+    "a": "Break down organic soils (protein, fat, carbs)",
+    "b": "Disinfect instruments so they are safe to handle",
+    "c": "Dissolve rust and mineral scale on stainless steel",
+    "d": "Work fastest in very hot water above 140 °F (60 °C)"
+   },
+   "distractorExplanations": {
+    "b": "Enzymes digest organic soil but are not disinfectants; instruments remain contaminated until cleaned and disinfected or sterilized.",
+    "c": "Rust and scale removal needs acid or descaling products; enzymes target organic soil such as blood and protein.",
+    "d": "High heat denatures the enzymes and coagulates protein; enzymatics are used in warm water at the labeled temperature."
+   },
+   "explanation": "Follow concentration, temp, and time; rinse thoroughly to remove residues. They work only at the correct temperature and contact time."
+  },
+  "crcst-readiness-check-decontamination-006": {
+   "options": {
+    "a": "After arrival in decontam, once the instruments are dry and easier to handle",
+    "b": "As soon as possible at point of use, keeping instruments moist per protocol",
+    "c": "At point of use by soaking the instruments in saline until transport",
+    "d": "At the sterilizer, during the cycle's prevacuum conditioning phase"
+   },
+   "distractorExplanations": {
+    "a": "Waiting until soil dries makes it harder to remove and promotes corrosion; gross soil is removed at point of use.",
+    "c": "Prolonged saline exposure causes pitting and corrosion; keep instruments moist with water-moistened towels or enzymatic spray.",
+    "d": "Sterilizers do not remove soil; heat bakes on bioburden, so gross soil must be removed long before the sterilization cycle."
+   }
+  },
+  "crcst-readiness-check-decontamination-007": {
+   "options": {
+    "a": "Sterile storage relative to the decontamination area",
+    "b": "The prep-and-pack area relative to the corridor",
+    "c": "The decontamination area relative to clean areas",
+    "d": "The OR suite relative to sterile processing"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the relationship: sterile storage is kept positive so clean air flows out, while decontam is the negative room.",
+    "b": "Prep and pack is a clean area kept at positive pressure; negative pressure is used to contain contaminants in decontam.",
+    "d": "Operating rooms are positive-pressure spaces that protect the sterile field; in SPD the decontam area is the negative room."
+   }
+  },
+  "crcst-readiness-check-decontamination-008": {
+   "options": {
+    "a": "Sterilize them as received, since the vendor cleaned them",
+    "b": "Run them through IUSS just before the case to save time",
+    "c": "Inventory them and release to the OR if the vendor seal is intact",
+    "d": "Inspect, clean, and sterilize according to IFU before use"
+   },
+   "distractorExplanations": {
+    "a": "Vendor or prior-facility cleaning cannot be verified; loaners must be fully decontaminated and inspected before sterilization.",
+    "b": "Immediate-use sterilization is not a substitute for complete processing of loaners, which should arrive in time for full reprocessing.",
+    "c": "An intact vendor seal does not prove sterility; loaner sets are received as contaminated and processed per IFU before use."
+   },
+   "explanation": "Loaners are high risk for inadequate processing history. Never assume loaners arrive ready for use."
+  },
+  "crcst-readiness-check-decontamination-009": {
+   "options": {
+    "a": "Degassing, proper dilution, basket loading without overstacking, and rinsing after",
+    "b": "Filling the tank fresh and starting immediately without degassing, then rinsing",
+    "c": "Running hinged and dissimilar metals together closed to keep sets intact",
+    "d": "Placing instruments on the tank floor so they get the strongest cavitation"
+   },
+   "distractorExplanations": {
+    "b": "Fresh solution contains dissolved gas that dampens cavitation; the tank must be degassed per the manufacturer before use.",
+    "c": "Instruments must be open and dissimilar metals separated; closed boxlocks block cavitation and mixed metals cause galvanic etching.",
+    "d": "Instruments must sit in a basket, not on the tank floor, which can damage both the transducer and the instruments."
+   }
+  },
+  "crcst-readiness-check-decontamination-010": {
+   "options": {
+    "a": "Critical items that enter sterile tissue or the vascular system",
+    "b": "Semicritical items that contact mucous membranes",
+    "c": "Noncritical items that touch only intact skin",
+    "d": "Implants placed during surgery when steam is unavailable"
+   },
+   "distractorExplanations": {
+    "a": "Critical items require sterilization under Spaulding; HLD is reserved for semicritical items such as flexible endoscopes.",
+    "c": "Noncritical items such as BP cuffs need low- or intermediate-level disinfection, not high-level disinfection.",
+    "d": "Implants are critical items that must be sterilized, ideally with quarantine until BI results; HLD is not acceptable."
+   },
+   "explanation": "Critical items require sterilization; HLD is not a sterilant unless a sterilant cycle/claim applies. Per Spaulding and IFU, HLD is used when sterilization isn't feasible."
+  },
+  "crcst-readiness-check-decontamination-011": {
+   "options": {
+    "a": "Sterilization in a short-cycle IUSS to make the set safe to handle before cleaning",
+    "b": "Thorough cleaning/decontamination to remove soil before disinfection or sterilization",
+    "c": "Inspection and assembly in prep and pack before the set goes through the washer",
+    "d": "Lubricating hinged instruments with water-soluble lubricant before any rinsing"
+   },
+   "distractorExplanations": {
+    "a": "Sterilizing before cleaning bakes soil on and fails; IUSS still requires full cleaning first.",
+    "c": "Inspection and assembly follow cleaning; sending dirty sets to prep and pack reverses the workflow and contaminates the clean area.",
+    "d": "Lubrication is applied after cleaning, typically in the final rinse or at inspection, not before soil removal."
+   }
+  },
+  "crcst-readiness-check-decontamination-012": {
+   "options": {
+    "a": "A cloth cover gown, exam gloves, and a surgical mask without goggles or face shield",
+    "b": "Fluid-resistant attire, eye protection, and gloves appropriate to splash/sharps risk",
+    "c": "Sterile surgical gloves and gown, since contact with contaminated instruments is brief",
+    "d": "Hair cover, shoe covers and a lab coat, with gloves added just for sharps"
+   },
+   "distractorExplanations": {
+    "a": "Cloth gowns are not fluid-resistant and a mask alone leaves the eyes exposed to splash; decontam requires eye protection.",
+    "c": "Sterile attire protects the patient, not the worker; decontam needs heavy-duty utility gloves and a fluid-resistant gown.",
+    "d": "Gloves are required for any handling of contaminated items, not just sharps, and a lab coat is not fluid-resistant."
+   }
+  },
+  "crcst-readiness-check-decontamination-014": {
+   "options": {
+    "a": "Flushing cools the lumen so it is not damaged by the hot washer cycle",
+    "b": "Bioburden and debris can remain inside channels if not properly irrigated",
+    "c": "Flushing with detergent disinfects the channel so sterilization can be shortened",
+    "d": "Water left in the lumen helps steam penetrate during the sterilization cycle"
+   },
+   "distractorExplanations": {
+    "a": "Flushing is done to remove soil from channels, not to protect the device from washer temperatures.",
+    "c": "Detergent flushing cleans but does not disinfect, and sterilization parameters are set by the IFU, not shortened after flushing.",
+    "d": "Residual water in lumens causes wet packs and can impede sterilant contact; lumens must be dried after irrigation."
+   }
+  },
+  "crcst-readiness-check-decontamination-015": {
+   "options": {
+    "a": "Reduce the weight of trays so they can be transported in closed carts",
+    "b": "Prevent drying of soil that makes later cleaning more difficult and less effective",
+    "c": "Allow the instruments to be sent directly to prep and pack, bypassing decontamination",
+    "d": "Remove the need for enzymatic cleaning once instruments arrive in decontam"
+   },
+   "distractorExplanations": {
+    "a": "Transport weight is not the reason; point-of-use treatment keeps soil moist so it does not dry and harden on instruments.",
+    "c": "Point-of-use treatment does not replace decontamination; every used instrument still goes through full cleaning in decontam.",
+    "d": "Enzymatic or detergent cleaning is still required in decontam; point-of-use wiping removes gross soil only."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-001": {
+   "options": {
+    "a": "Cleanliness, function, alignment, corrosion, and completeness before packaging",
+    "b": "Cleanliness and count only, since function is tested by the surgeon at point of use",
+    "c": "Package integrity and chemical indicator color after the sterilization cycle",
+    "d": "Corrosion and staining, with function checks reserved for loaner sets"
+   },
+   "distractorExplanations": {
+    "b": "Functional testing (scissor sharpness, jaw alignment, ratchets) is SPD's job at assembly, not the surgeon's at point of use.",
+    "c": "Package and CI checks occur after sterilization; instrument inspection for soil and function must happen before packaging.",
+    "d": "Function checks apply to every instrument at assembly, not just loaners; defective items are repaired or replaced."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-002": {
+   "options": {
+    "a": "Annual filter replacement with gasket checks done by the vendor",
+    "b": "Intact filters/valves/gaskets and correct locking per IFU",
+    "c": "An external CI on the lid with no internal indicator needed",
+    "d": "Wrapping in a single layer of nonwoven wrap for extra protection"
+   },
+   "distractorExplanations": {
+    "a": "Disposable filters are replaced each cycle and gaskets are checked at every assembly per IFU, not annually by a vendor.",
+    "c": "Containers still need an internal CI where policy or IFU requires; an external indicator shows exposure, not internal conditions.",
+    "d": "Rigid containers are validated as the sterile barrier themselves; added wrapping is not required and can impair drying."
+   },
+   "explanation": "Containers fail if seals/filters compromised; follow load weight limits. Place internal chemical indicators as required."
+  },
+  "crcst-readiness-check-assembly-packaging-003": {
+   "options": {
+    "a": "Applied tightly so tape compresses the pack into a firm bundle",
+    "b": "Oversized so extra wrap material can be tucked in several layers",
+    "c": "Sized appropriately using sequential wrapping techniques",
+    "d": "Folded with the final flap left loose so steam can enter"
+   },
+   "distractorExplanations": {
+    "a": "Over-tight wrapping strangles the pack and impedes sterilant penetration; wrap snugly without compressing contents.",
+    "b": "Oversized wraps create excess layers that hinder steam penetration and drying; wrap size should match the tray.",
+    "d": "A loose final flap breaks the barrier; steam penetrates through the wrap material, so every flap is secured with indicator tape."
+   },
+   "explanation": "Wrap integrity and technique maintain sterility barrier. Avoid tenting or strangulation of the pack."
+  },
+  "crcst-readiness-check-assembly-packaging-004": {
+   "options": {
+    "a": "On the outside of each package, where they replace the internal CI",
+    "b": "At the top center of the tray, where the steam reaches the items first",
+    "c": "On the bottom shelf over the drain, near the coolest point of the sterilizer chamber",
+    "d": "In areas of each pack/tray challenging to sterilant penetration per policy/IFU"
+   },
+   "distractorExplanations": {
+    "a": "External indicators show exposure; an internal CI is still placed inside where sterilant penetration is hardest.",
+    "b": "The top surface is the easiest place to reach; internal CIs go in the most challenging spot, such as the center or densest area.",
+    "c": "That is where a BI process challenge device sits in the load; internal CIs go inside each pack at its hardest-to-reach point."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-005": {
+   "options": {
+    "a": "Ensure complete sets and document contents for OR accountability",
+    "b": "Record the sterilizer cycle number and load contents for recall tracing",
+    "c": "Show the technician which instruments need lubrication before packing",
+    "d": "Replace the internal chemical indicator in trays that are counted"
+   },
+   "distractorExplanations": {
+    "b": "Cycle and load data go on the load sticker and sterilizer record; the count sheet lists tray contents for completeness.",
+    "c": "Lubrication follows IFU and inspection checks, not the count sheet, which lists instruments to confirm completeness.",
+    "d": "Count sheets are documentation, not process indicators; every tray still needs its internal chemical indicator."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-006": {
+   "options": {
+    "a": "Lumens capped at both ends to keep sterilant inside the channel",
+    "b": "Moisture/residual water controls and lumen accessories per sterilizer IFU",
+    "c": "Lumens left filled with water so steam can form inside them during the cycle",
+    "d": "Lubricant instilled into the channel to protect it from heat damage"
+   },
+   "distractorExplanations": {
+    "a": "Caps or plugs block sterilant contact in lumens; channels must be open so steam or gas can enter per IFU.",
+    "c": "Water left in lumens causes wet packs and blocks low-temperature sterilants; lumens are dried before packaging.",
+    "d": "Oil-based lubricants inside lumens block sterilant contact; water-soluble instrument lubricant is used on hinges per IFU."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-007": {
+   "options": {
+    "a": "Seal instrument tips so the sterilant cannot corrode the cutting edges",
+    "b": "Serve as a substitute for a peel pouch when sterilizing single delicate instruments",
+    "c": "Protect sharp/delicate tips and may aid sterilant contact if designed permeable",
+    "d": "Hold hinged instruments locked closed to prevent jaw misalignment"
+   },
+   "distractorExplanations": {
+    "a": "Tip protectors must allow sterilant contact; airtight sealing would prevent sterilization of the protected tip.",
+    "b": "A tip guard is not a sterile barrier; the instrument still needs a validated package such as a pouch or wrap.",
+    "d": "Hinged instruments are sterilized open or unlocked; stringers and racks hold them, not tip protectors."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-008": {
+   "options": {
+    "a": "Chemical indicators that change color before the cycle ends",
+    "b": "Shorter exposure times because metal holds more heat",
+    "c": "Overpressure alarms that abort the sterilization cycle",
+    "d": "Wet packs, poor drying, and sterilization failures"
+   },
+   "distractorExplanations": {
+    "a": "CIs respond to process conditions, not tray weight; overweight trays condense more steam and cause wet packs.",
+    "b": "Heavy metal mass acts as a heat sink and slows heat-up; it does not shorten the required exposure time.",
+    "c": "Tray mass does not raise chamber pressure; the real risk is excess condensate leading to wet packs and failures."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-009": {
+   "options": {
+    "a": "Cleaner/positive relative to decontamination, controlled for lint/dust",
+    "b": "Negative relative to decontamination so dust is pulled out of the room",
+    "c": "Kept at the same pressure as decontam, with doors left open for flow",
+    "d": "Kept above 75% relative humidity to keep lint from floating"
+   },
+   "distractorExplanations": {
+    "b": "A negative clean area would draw contaminated air in from decontam; prep and pack must be positive to dirty areas.",
+    "c": "Neutral pressure with open doors lets contaminated air migrate; clean areas are positive and doors stay closed.",
+    "d": "AAMI ST79 limits relative humidity in prep and pack to 60% or less; high humidity promotes microbial growth."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-010": {
+   "options": {
+    "a": "Noted on the tray tag and sent to the OR, where staff can substitute",
+    "b": "Documented and resolved before sterilization/OR delivery per policy",
+    "c": "Replaced with a matching instrument pulled from another assembled set",
+    "d": "Reported only if the missing item is a sharp or a count item"
+   },
+   "distractorExplanations": {
+    "a": "Sending an incomplete set shifts the problem to the OR; missing items are resolved in SPD before sterilization per policy.",
+    "c": "Robbing another set creates a second incomplete tray; replacements come from processed stock and are documented.",
+    "d": "Every missing instrument is documented and resolved, not just counted sharps; incomplete sets delay surgery."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-011": {
+   "options": {
+    "a": "In decontamination, before items enter the washer-disinfector",
+    "b": "During assembly, before packaging for sterilization",
+    "c": "After sterilization, when the set is opened in the OR",
+    "d": "At the sterilizer, while the load is cooling on the cart"
+   },
+   "distractorExplanations": {
+    "a": "Pre-cleaning checks in decontam cannot confirm cleanliness; final cleanliness and function inspection happens at assembly.",
+    "c": "OR inspection is a final check; finding soil or defects there means the SPD inspection at assembly failed.",
+    "d": "Inspection after sterilization would require reopening packs; function and cleanliness checks happen before packaging."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-013": {
+   "options": {
+    "a": "Closed on the first ratchet to protect the jaws from damage",
+    "b": "In the open or unlocked position to allow sterilant contact",
+    "c": "Fully locked on stringers so they do not shift during transport",
+    "d": "Closed inside a peel pouch so the tips do not puncture it"
+   },
+   "distractorExplanations": {
+    "a": "Even one ratchet click blocks sterilant at the box lock and stresses the joint; hinges stay open or unlocked.",
+    "c": "Stringers hold instruments open, not locked; locked boxlocks prevent sterilant contact with mating surfaces.",
+    "d": "Hinged instruments in pouches are still placed open or unlocked; tip protectors are what prevent punctures."
+   }
+  },
+  "crcst-readiness-check-assembly-packaging-014": {
+   "options": {
+    "a": "That the load passed the biological spore challenge",
+    "b": "That sterilant conditions were met at the indicator location",
+    "c": "That the pack was exposed to the sterilizer, from the outside",
+    "d": "That the sterilizer passed its daily air removal test"
+   },
+   "distractorExplanations": {
+    "a": "Spore lethality is verified by a biological indicator; a CI shows that process conditions reached its location.",
+    "c": "That describes an external process indicator (Type 1); internal CIs show conditions met inside the pack.",
+    "d": "Air removal is checked with a Bowie-Dick test in an empty chamber, not by chemical indicators inside packs."
+   },
+   "explanation": "CIs monitor critical process parameters; BIs are needed for lethality verification. A CI shows process conditions, not sterility by itself."
+  },
+  "crcst-readiness-check-assembly-packaging-015": {
+   "options": {
+    "a": "Record the sterilizer load number for recall and traceability",
+    "b": "Verify completeness of instrument sets during assembly and at point of use",
+    "c": "Replace the internal chemical indicator when trays are counted twice at assembly",
+    "d": "Document instrument repair history for preventive maintenance"
+   },
+   "distractorExplanations": {
+    "a": "Load numbers are on the load label and sterilizer log; count sheets list set contents for completeness checks.",
+    "c": "Count sheets do not monitor sterilization; trays still require internal chemical indicators.",
+    "d": "Repair history lives in instrument tracking records; the count sheet confirms what belongs in the tray."
+   }
+  },
+  "crcst-readiness-check-sterilization-002": {
+   "options": {
+    "a": "Spore kill at the coldest point of a fully loaded chamber",
+    "b": "Air removal effectiveness / air leaks in dynamic-air-removal systems",
+    "c": "Whether exposure time and temperature were met in each pack",
+    "d": "Residual moisture and wet packs at the end of gravity-displacement cycles"
+   },
+   "distractorExplanations": {
+    "a": "Spore kill is measured with a BI in a process challenge device; Bowie-Dick tests air removal in an empty chamber.",
+    "c": "Internal CIs show pack-level parameters; the Bowie-Dick test runs in an empty chamber to detect residual air.",
+    "d": "Bowie-Dick is used in prevacuum sterilizers, not gravity cycles, and it detects air removal failure, not wet packs."
+   }
+  },
+  "crcst-readiness-check-sterilization-003": {
+   "options": {
+    "a": "Ethylene oxide sterilization cycles",
+    "b": "Dry heat sterilization cycles",
+    "c": "Steam sterilization biological indicators",
+    "d": "Ionizing radiation used by device manufacturers"
+   },
+   "distractorExplanations": {
+    "a": "EO cycles are monitored with Bacillus atrophaeus spores, not Geobacillus stearothermophilus.",
+    "b": "Dry heat is also monitored with Bacillus atrophaeus spores; G. stearothermophilus is the steam indicator organism.",
+    "d": "Industrial radiation historically used Bacillus pumilus as its indicator organism, not G. stearothermophilus."
+   }
+  },
+  "crcst-readiness-check-sterilization-004": {
+   "options": {
+    "a": "Sterile once it has cooled for 30 minutes on the cart",
+    "b": "Sterile if the internal chemical indicator inside the pack changed fully",
+    "c": "Usable once it is dried in a warming cabinet before issue to the OR",
+    "d": "Contaminated / not sterile for use; reprocess after investigating cause"
+   },
+   "distractorExplanations": {
+    "a": "Cooling does not restore the barrier; moisture wicks microbes through the wrap, so the pack is not sterile.",
+    "b": "A passing CI shows conditions were met but does not cancel the contamination risk from a wet barrier.",
+    "c": "Drying a wet pack afterward does not make it sterile; it must be reprocessed and the cause investigated."
+   }
+  },
+  "crcst-readiness-check-sterilization-005": {
+   "options": {
+    "a": "Devices are heat/moisture sensitive and IFU specifies EO, with aeration afterward",
+    "b": "Heat-sensitive items are needed right away, so the aeration phase can safely be skipped",
+    "c": "Stainless steel sets need a faster turnaround than steam provides",
+    "d": "Items are packaged in linen wraps that cannot tolerate steam heat"
+   },
+   "distractorExplanations": {
+    "b": "EO residuals are toxic to patients and staff; aeration per IFU is required before use, even for urgent cases.",
+    "c": "EO cycles plus aeration take many hours; heat-stable stainless steel should be steam sterilized.",
+    "d": "Linen and cellulose wraps tolerate steam; EO is selected based on device heat/moisture sensitivity and IFU."
+   }
+  },
+  "crcst-readiness-check-sterilization-006": {
+   "options": {
+    "a": "Linen-wrapped packs and other cellulose-containing items",
+    "b": "Heat-sensitive devices compatible with the sterilizer IFU",
+    "c": "Liquids, powders, and oils that cannot be steam sterilized",
+    "d": "Long narrow-lumen devices of any length or diameter"
+   },
+   "distractorExplanations": {
+    "a": "Cellulose (linen, paper) absorbs hydrogen peroxide and aborts or fails the cycle; use polypropylene wraps or Tyvek pouches.",
+    "c": "Liquids, powders and oils are incompatible with hydrogen peroxide systems; they block or absorb the sterilant.",
+    "d": "Hydrogen peroxide systems have validated lumen length and diameter limits; devices outside them cannot be processed."
+   }
+  },
+  "crcst-readiness-check-sterilization-007": {
+   "options": {
+    "a": "Patient name and medical record number printed on every load label",
+    "b": "Sterilizer printout of time and temperature, discarded once the BI result is read",
+    "c": "Cycle parameters, CI/BI results, load contents, and operator identification",
+    "d": "Monthly summaries of BI results instead of individual load records"
+   },
+   "distractorExplanations": {
+    "a": "Load records use lot and load numbers linked to patients through the case record; printing PHI on labels breaches privacy.",
+    "b": "Printouts are part of the permanent load record and are retained per policy, not discarded after the BI result.",
+    "d": "Each load needs its own record (contents, parameters, CI/BI, operator); monthly summaries cannot support a recall."
+   },
+   "explanation": "Traceability supports recalls and accreditation. Keep records per facility policy."
+  },
+  "crcst-readiness-check-sterilization-008": {
+   "options": {
+    "a": "Released once the Type 5 integrator passes",
+    "b": "Sterilized using an IUSS cycle for speed",
+    "c": "Released when the Bowie-Dick test passes",
+    "d": "Quarantined until BI results are known"
+   },
+   "distractorExplanations": {
+    "a": "AAMI permits early release on a Type 5 integrator only in documented emergencies; routine implant loads await the BI.",
+    "b": "IUSS is not recommended for implants; implant loads are processed in a full cycle with BI monitoring and quarantine.",
+    "c": "Bowie-Dick tests air removal in an empty chamber; it does not verify spore kill in an implant load."
+   },
+   "explanation": "Implants are high risk—await BI before release when feasible. CDC and AAMI recommend quarantine when possible."
+  },
+  "crcst-readiness-check-sterilization-010": {
+   "options": {
+    "a": "Mechanical vacuum pulses that pull air out of the chamber before steam enters",
+    "b": "Steam entering and forcing cooler air out through a drain passively",
+    "c": "Steam flush and pressure pulses above atmospheric pressure",
+    "d": "Heating the chamber dry first so air expands and vents out"
+   },
+   "distractorExplanations": {
+    "a": "Vacuum pulses describe dynamic-air-removal (prevacuum) sterilizers, not gravity displacement.",
+    "c": "Steam-flush pressure-pulse is a separate dynamic air-removal design, not passive gravity displacement.",
+    "d": "Gravity sterilizers do not preheat dry; heavier, cooler air is pushed down and out the drain by incoming steam."
+   }
+  },
+  "crcst-readiness-check-sterilization-011": {
+   "options": {
+    "a": "Chamber pressure alone, since pressure kills microbes",
+    "b": "Time, temperature, and saturated steam contact",
+    "c": "Superheated dry steam at the highest possible temperature",
+    "d": "Cycle length and the number of chemical indicators used"
+   },
+   "distractorExplanations": {
+    "a": "Pressure is a means to raise steam temperature; microbial kill comes from time at temperature with steam contact.",
+    "c": "Superheated steam behaves like dry heat and sterilizes poorly; saturated steam with proper moisture is required.",
+    "d": "Indicators monitor the process but do not make it effective; efficacy depends on time, temperature and steam contact."
+   },
+   "explanation": "Steam sterilization requires adequate sterilant contact under validated parameters. Proper air removal and drying are also part of the designed cycle."
+  },
+  "crcst-readiness-check-sterilization-012": {
+   "options": {
+    "a": "Confirm adequate air removal in a prevacuum sterilizer each morning",
+    "b": "Challenge the sterilization process with resistant spores to verify lethality",
+    "c": "Show that a package was exposed to the sterilization process",
+    "d": "Verify that the cleaning process removed protein residue before instruments are packaged"
+   },
+   "distractorExplanations": {
+    "a": "Daily air-removal testing is the Bowie-Dick test; BIs use resistant spores to verify the process killed microbes.",
+    "c": "Exposure is shown by an external chemical indicator; a BI challenges lethality with live spores.",
+    "d": "Cleaning verification uses protein or ATP tests; BIs challenge the sterilization process, not cleaning."
+   }
+  },
+  "crcst-readiness-check-sterilization-013": {
+   "options": {
+    "a": "Used for routine loaner sets that arrive too late for full processing",
+    "b": "Limited to urgent situations with documented justification and proper cleaning",
+    "c": "Used for implants when a Class 5 integrator is placed with the load",
+    "d": "Performed with an abbreviated cleaning step because the instrument is needed now"
+   },
+   "distractorExplanations": {
+    "a": "Late loaners are a scheduling problem; IUSS should not be used routinely to compensate for late arrivals or low inventory.",
+    "c": "Implants should not be IUSS-processed except in a documented emergency, and an integrator does not replace BI monitoring.",
+    "d": "Urgency does not shorten cleaning; IUSS items need the same thorough cleaning as any other instrument."
+   },
+   "explanation": "IUSS is for immediate need after proper cleaning—not a substitute for routine processing. Cleaning must be completed first."
+  },
+  "crcst-readiness-check-sterilization-014": {
+   "options": {
+    "a": "Items that are heat- and moisture-sensitive when validated for EO",
+    "b": "Stainless steel bowls and basins that need a faster turnaround than steam",
+    "c": "Liquids and gels that cannot be placed in a steam cycle",
+    "d": "Linen packs that must be ready for the OR within one hour"
+   },
+   "distractorExplanations": {
+    "b": "Heat-stable stainless items should be steam sterilized; EO plus aeration is far slower than steam.",
+    "c": "EO cannot sterilize liquids; it is a gas that must contact dry, accessible surfaces.",
+    "d": "EO requires long cycles plus hours of aeration, so it cannot meet a one-hour turnaround and suits heat-sensitive devices."
+   }
+  },
+  "crcst-readiness-check-sterilization-015": {
+   "options": {
+    "a": "Moisture can create a pathway for contamination",
+    "b": "Moisture shows the steam was superheated during exposure",
+    "c": "Water dissolves the chemical indicator ink inside the pack",
+    "d": "The pack must cool for an extra hour before it can be used"
+   },
+   "distractorExplanations": {
+    "b": "Superheated steam is too dry; wet packs result from excess condensate, wet steam, or poor loading and drying.",
+    "c": "CI inks are designed for steam exposure; the concern is microbial wicking through the wet barrier.",
+    "d": "Extra cooling does not fix a wet pack; it is considered contaminated and must be reprocessed."
+   },
+   "explanation": "Wet packs compromise sterility assurance and require investigation per policy. It also indicates a process or packaging problem."
+  },
+  "crcst-readiness-check-storage-distribution-001": {
+   "options": {
+    "a": "Clean, dry, well-ventilated, above the floor, away from sinks/windows moisture",
+    "b": "Closed cabinets or open wire shelving with the bottom shelf resting on the floor",
+    "c": "Kept above 75% relative humidity to prevent packages from drying out",
+    "d": "Next to the sterilizer unload area so warm packs can finish drying"
+   },
+   "distractorExplanations": {
+    "b": "The bottom shelf must be solid and raised 8–10 inches off the floor to protect packs from floor-cleaning splash.",
+    "c": "Sterile storage humidity should not exceed 60%; high humidity can compromise packaging and promote growth.",
+    "d": "Packs must be cool and dry before storage; storage is separate from unloading and packs are not dried on shelves."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-002": {
+   "options": {
+    "a": "LIFO (last in, first out) so the freshest packs reach the OR",
+    "b": "FIFO (first in, first out) so older sterile packs are used first",
+    "c": "Rotation by tray weight so heavier sets are used before lighter ones",
+    "d": "Rotation by surgeon preference so frequently used sets stay in front"
+   },
+   "distractorExplanations": {
+    "a": "LIFO leaves older packs at the back to outdate or be damaged; sterile stock rotates first in, first out.",
+    "c": "Weight has no bearing on stock rotation; date or lot order (FIFO) determines which packs are used first.",
+    "d": "Preference-based placement ignores dating; FIFO ensures older sterile items are used before newer ones."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-003": {
+   "options": {
+    "a": "The load sticker and expiration date, with the wrap checked at opening",
+    "b": "The internal chemical indicator, by opening a corner of the wrap",
+    "c": "Integrity of packaging, dryness, indicator response, and expiration/event status",
+    "d": "The BI result for the load, which must be read before any pack is issued to the OR"
+   },
+   "distractorExplanations": {
+    "a": "Package integrity and dryness are checked before issue, not deferred to opening; the load label alone is insufficient.",
+    "b": "Opening a pack to see the internal CI breaks sterility; the internal CI is read by the scrub person at point of use.",
+    "d": "Routine non-implant loads are released without waiting for the BI; staff check integrity, dryness, CI and dating."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-005": {
+   "options": {
+    "a": "Aseptically transferred and used immediately—not stored",
+    "b": "Placed in sterile storage until the end of the surgeon's day",
+    "c": "Wrapped in a sterile towel and stored for the next case",
+    "d": "Held on the cart until the biological indicator reads negative"
+   },
+   "distractorExplanations": {
+    "b": "IUSS items are not stored for later use; they are transported aseptically and used for the case at hand.",
+    "c": "Wrapping after IUSS does not create a validated sterile package; IUSS items are used immediately.",
+    "d": "IUSS items are needed immediately and are not held for BI results; that quarantine practice applies to implant loads."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-006": {
+   "options": {
+    "a": "Recording load numbers only for loaner sets, since they carry the highest infection risk",
+    "b": "Tracking loaners, implants, and sterilization lot information for traceability",
+    "c": "Keeping BI logs until the next accreditation survey, then shredding them",
+    "d": "Matching sterile packs to patients through the surgeon's preference card"
+   },
+   "distractorExplanations": {
+    "a": "Every load needs lot/load tracking so any item can be recalled; limiting it to loaners leaves other sets untraceable.",
+    "c": "Sterilization records are retained per facility policy and regulation, often several years, not until the next survey.",
+    "d": "Preference cards list items a surgeon wants; patient traceability comes from load numbers recorded in the case record."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-007": {
+   "options": {
+    "a": "The sterilization method, with steam packs expiring after 30 days",
+    "b": "The type of chemical indicator used inside the package",
+    "c": "Storage conditions and package integrity or facility dating policy",
+    "d": "The sterilizer cycle length, since longer cycles last longer"
+   },
+   "distractorExplanations": {
+    "a": "No fixed 30-day steam expiry applies; shelf life depends on events and storage conditions per facility policy.",
+    "b": "The CI class shows how conditions were monitored; it does not determine how long the pack stays sterile.",
+    "d": "Cycle length is set for lethality; once sterile, shelf life is governed by events and storage conditions."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-008": {
+   "options": {
+    "a": "Use it if the outer wrap shows no tears",
+    "b": "Remove the outer wrap and use the inner pack",
+    "c": "Wipe it down and return it to sterile storage",
+    "d": "Consider it contaminated and reprocess"
+   },
+   "distractorExplanations": {
+    "a": "Floor impact can force contaminated air through the wrap and cause unseen damage; an intact look does not clear it.",
+    "b": "Both wrap layers of a sequentially wrapped pack form one barrier; a dropped pack is contaminated, not unwrapped and used.",
+    "c": "Wiping the exterior cannot reverse contamination from floor contact; the item is reprocessed."
+   },
+   "explanation": "Floor contact contaminates wraps; rigid containers have specific IFU exceptions sometimes. A validated rigid container IFU may specify exceptions."
+  },
+  "crcst-readiness-check-storage-distribution-009": {
+   "options": {
+    "a": "Enough stock for procedures without overstocking",
+    "b": "Minimum stock with IUSS used to cover any shortages during the day",
+    "c": "Maximum stock to cover a full month of cases without reorders",
+    "d": "Stock levels set by sterilizer capacity rather than case volume"
+   },
+   "distractorExplanations": {
+    "b": "Relying on IUSS to cover understock is discouraged; PAR levels should meet demand without routine IUSS.",
+    "c": "Overstocking crowds shelves and increases handling damage and outdates; PAR levels balance demand and space.",
+    "d": "Inventory is based on procedure demand (PAR levels), not on how many loads the sterilizers can run."
+   },
+   "explanation": "PAR levels and case cart systems improve OR support. Overstocking leads to damage and outdates."
+  },
+  "crcst-readiness-check-storage-distribution-010": {
+   "options": {
+    "a": "A package in sterile storage reaches its event-related expiration date",
+    "b": "BI failure or other sterilizer malfunction potentially affects released items",
+    "c": "A surgeon reports a dull scissor in a tray opened in the OR",
+    "d": "The weekly BI from the same sterilizer reads negative as expected"
+   },
+   "distractorExplanations": {
+    "a": "An expired or compromised package is pulled and reprocessed individually; a recall addresses a load-wide process failure.",
+    "c": "A dull instrument is a repair and inspection issue, not evidence of sterilization failure needing a load recall.",
+    "d": "A negative BI means no spore growth (a pass); recalls are triggered by positive BIs or other sterilizer malfunction."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-011": {
+   "options": {
+    "a": "Kept at high humidity so packages do not become brittle and tear",
+    "b": "Clean, dry, well-ventilated, and protected from traffic contamination",
+    "c": "Located beside the decontam pass-through for quick restocking",
+    "d": "Open-access to all staff so the OR can pick its own supplies"
+   },
+   "distractorExplanations": {
+    "a": "Humidity in sterile storage should stay at or below 60%; high humidity wets packaging and supports growth.",
+    "c": "Sterile storage is separated from decontam and kept positive; proximity to soiled areas risks contamination.",
+    "d": "Sterile storage has limited access for trained staff to reduce traffic and handling damage to packages."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-012": {
+   "options": {
+    "a": "The fixed expiration date printed on the label is reached",
+    "b": "An event compromises the package (eg, moisture, tears, improper handling)",
+    "c": "The sterilizer that processed the load is next taken out of service for repair",
+    "d": "Thirty days pass for wrapped packs and six months for pouches"
+   },
+   "distractorExplanations": {
+    "a": "Fixed calendar dating is time-related sterility; event-related sterility depends on package condition, not a date.",
+    "c": "Equipment service does not outdate stored packages; a compromising event or facility policy does.",
+    "d": "These are arbitrary time limits; event-related practice holds sterility until an event such as moisture or tearing."
+   },
+   "explanation": "Many facilities use event-related dating; integrity events outdate the item. Facility policy governs the details."
+  },
+  "crcst-readiness-check-storage-distribution-013": {
+   "options": {
+    "a": "Use open carts so OR staff can see and check the contents quickly",
+    "b": "Use clean covered carts/containers and handle packages to protect integrity",
+    "c": "Stack trays and peel packs together tightly to prevent shifting",
+    "d": "Use the same cart that returns soiled instruments, wiped down between the trips"
+   },
+   "distractorExplanations": {
+    "a": "Open carts expose packs to dust and contact; sterile items move in covered or enclosed carts.",
+    "c": "Heavy trays crush peel packs and stacking compresses wrap; packages are placed to avoid compression and punctures.",
+    "d": "A cart used for soiled items must be fully cleaned (e.g., in a cart washer) before sterile use, not just wiped."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-014": {
+   "options": {
+    "a": "Ensure older stock is used before newer stock within dating/policy rules",
+    "b": "Ensure newer stock is used first because it was sterilized more recently",
+    "c": "Keep implants in date order so BI results can be skipped",
+    "d": "Remove the need to check expiration dates when items are issued"
+   },
+   "distractorExplanations": {
+    "b": "That describes LIFO; FIFO rotates older stock forward so it is used before it expires or is damaged.",
+    "c": "FIFO is about rotation; implant loads still require BI monitoring and quarantine whatever their shelf order.",
+    "d": "FIFO reduces outdates, but staff still check dating and package integrity before issue."
+   }
+  },
+  "crcst-readiness-check-storage-distribution-015": {
+   "options": {
+    "a": "Wipe it with disinfectant and return it to sterile storage",
+    "b": "Consider it contaminated and reprocess according to facility policy",
+    "c": "Use it if the outer wrap is dry and has no visible tears",
+    "d": "Relabel it with a new load sticker and return it to the shelf"
+   },
+   "distractorExplanations": {
+    "a": "Disinfectant wiping cannot reverse contamination from floor contact; the pack must be reprocessed.",
+    "c": "A dropped pack can have unseen damage, and impact can force contaminants through wrap; appearance does not clear it.",
+    "d": "A new label does not reprocess the item; the contaminated pack must be unwrapped, inspected and resterilized."
+   }
+  }
+ }
+}

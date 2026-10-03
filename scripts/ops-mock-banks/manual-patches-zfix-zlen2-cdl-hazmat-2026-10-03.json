@@ -1,0 +1,660 @@
+{
+ "cdl-hazmat-readiness-check": {
+  "cdl-hazmat-readiness-check-classes-placards-002": {
+   "options": {
+    "a": "Replace shipping papers for loads under 1,001 pounds",
+    "b": "Communicate the hazard of materials on a vehicle",
+    "c": "Identify the shipper and receiver for the load",
+    "d": "Mark the packing group of each package on board"
+   },
+   "distractorExplanations": {
+    "a": "Shipping papers are required for hazmat shipments either way; 1,001 lb is the Table 2 placarding threshold, not a paper exemption.",
+    "c": "Shipper and consignee details appear on the shipping papers; placards show the hazard class of what is aboard.",
+    "d": "Packing group is shown on shipping papers; placards communicate hazard class on the vehicle exterior."
+   },
+   "explanation": "Placards provide hazard communication; shipping papers remain required documentation. Placards inform emergency responders and the public."
+  },
+  "cdl-hazmat-readiness-check-classes-placards-004": {
+   "options": {
+    "a": "One-digit hazard class number",
+    "b": "Three-digit ERG guide number",
+    "c": "Four-digit packing group code",
+    "d": "Four-digit UN/NA number"
+   },
+   "distractorExplanations": {
+    "a": "The hazard class (1–9) appears in the placard's bottom corner, but the ID number is a separate four-digit UN/NA code.",
+    "b": "ERG guide numbers are three digits; the ID number on papers and placards is the four-digit UN/NA number.",
+    "c": "Packing groups are Roman numerals I, II or III; the four-digit number is the UN/NA identification number."
+   }
+  },
+  "cdl-hazmat-readiness-check-classes-placards-007": {
+   "options": {
+    "a": "Set the placarding thresholds for each hazard class",
+    "b": "List the segregation table rules for loading incompatible classes",
+    "c": "Provide initial isolation/evacuation and fire/spill guidance",
+    "d": "Record the shipper's 24-hour emergency phone contact"
+   },
+   "distractorExplanations": {
+    "a": "Placarding tables are in 49 CFR 172.504; the ERG gives first-response actions, not placarding rules.",
+    "b": "Segregation rules are in 49 CFR 177.848; the ERG guides initial emergency response to incidents.",
+    "d": "The 24-hour emergency response number appears on shipping papers; the ERG provides generic initial response guidance."
+   }
+  },
+  "cdl-hazmat-readiness-check-classes-placards-008": {
+   "options": {
+    "a": "A load includes any Table 1 material such as explosives",
+    "b": "A single bulk package of one hazard class is aboard",
+    "c": "2,205 pounds or more of one Table 2 category is loaded at one facility",
+    "d": "Non-bulk packages of two or more hazard categories require placarding"
+   },
+   "distractorExplanations": {
+    "a": "Table 1 materials (Divisions 1.1–1.3, poison gas, etc.) need their own placards; the Dangerous placard cannot replace them.",
+    "b": "The Dangerous placard option covers non-bulk packages of two or more Table 2 categories, not a single bulk package.",
+    "c": "At 2,205 lb (1,000 kg) or more of one category loaded at one facility, that class's own placard is required instead."
+   },
+   "explanation": "Dangerous placard rules are specific aggregation/placarding table exceptions—not a universal substitute. It may then replace separate Table 2 placards."
+  },
+  "cdl-hazmat-readiness-check-classes-placards-010": {
+   "options": {
+    "a": "Proper shipping name, ERG guide number, net weight, and the shipper's address",
+    "b": "Identification number, proper shipping name, hazard class/division, and packing group",
+    "c": "Identification number, trade name, hazard class, and the 24-hour emergency phone number",
+    "d": "Packing group, hazard class, quantity, and number of packages in that order"
+   },
+   "distractorExplanations": {
+    "a": "ERG guide numbers and addresses are not part of the basic description, which is ID number, name, class and packing group.",
+    "c": "The basic description uses the proper shipping name, not a trade name; the emergency phone is a separate required entry.",
+    "d": "Quantity and package count are additional entries; the basic description sequence starts with the ID number and proper shipping name."
+   },
+   "explanation": "The basic description sequence is standardized for clarity in emergencies. Packing group is shown when one is assigned."
+  },
+  "cdl-hazmat-readiness-check-classes-placards-011": {
+   "options": {
+    "a": "Least danger",
+    "b": "Medium danger",
+    "c": "Great danger",
+    "d": "Explosive risk"
+   },
+   "distractorExplanations": {
+    "b": "Medium danger is Packing Group II; Packing Group I indicates great danger, the highest of the three groups.",
+    "d": "Explosives are Class 1 and use compatibility groups rather than packing groups; PG I means the greatest degree of danger.",
+    "a": "PG III is lesser danger."
+   }
+  },
+  "cdl-hazmat-readiness-check-classes-placards-012": {
+   "options": {
+    "a": "Class 2 (e.g., 2.1 flammable gases)",
+    "b": "Class 3 (e.g., flammable liquids)",
+    "c": "Class 5 (e.g., 5.1 oxidizers)",
+    "d": "Class 4 (e.g., 4.1 flammable solids)"
+   },
+   "distractorExplanations": {
+    "a": "Division 2.1 covers flammable gases; flammable solids are classed in Division 4.1.",
+    "b": "Class 3 is flammable liquids; flammable solids are Division 4.1 within Class 4.",
+    "c": "Division 5.1 is oxidizers, which support combustion but are not flammable solids; those are Division 4.1."
+   }
+  },
+  "cdl-hazmat-readiness-check-classes-placards-013": {
+   "options": {
+    "a": "A hazard warning label for the packaged hazmat",
+    "b": "A placard required on the vehicle carrying it",
+    "c": "A handling mark showing which side goes up",
+    "d": "An ERG guide number for responders"
+   },
+   "distractorExplanations": {
+    "b": "Placards go on vehicles and bulk packages; the smaller diamond on a non-bulk package is a hazard label.",
+    "c": "Orientation is shown by arrow marks, not a diamond; the square-on-point symbol is a hazard warning label.",
+    "d": "ERG guide numbers appear in the guidebook, not on packages; the diamond on a package is the hazard label for its class."
+   }
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-001": {
+   "options": {
+    "a": "Segregated according to segregation tables",
+    "b": "Loaded together if each package is undamaged",
+    "c": "Kept 12 inches apart in the cargo area",
+    "d": "Placed in the order listed on the shipping papers"
+   },
+   "distractorExplanations": {
+    "b": "Intact packaging does not override segregation; the table forbids or restricts certain classes on one vehicle.",
+    "c": "Segregation follows the 49 CFR 177.848 table codes (X, O, *); a fixed 12-inch gap is not the rule.",
+    "d": "Shipping-paper order has no bearing on compatibility; the segregation table decides which classes may share a vehicle."
+   },
+   "explanation": "Segregation prevents dangerous interactions (e.g., acids with cyanides) This keeps them from reacting dangerously if released."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-002": {
+   "options": {
+    "a": "Use hooks on drums to speed handling of heavy packages",
+    "b": "Protect packages from damage and secure them against movement",
+    "c": "Lay liquid packages on their side to lower the stack",
+    "d": "Secure them after the trip begins, once the load has settled in place"
+   },
+   "distractorExplanations": {
+    "a": "Hooks and similar tools can puncture packages; loading rules bar tools that may damage hazmat containers.",
+    "c": "Orientation arrows must be followed; laying liquid packages on their side can stress closures and cause leaks.",
+    "d": "Packages must be secured against movement before the vehicle moves; loads that shift in transit can be damaged and leak."
+   },
+   "explanation": "Package integrity and securement prevent leaks and incidents. Follow orientation marks as well."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-003": {
+   "options": {
+    "a": "Heaters drain the air system needed for the trailer brakes",
+    "b": "Heated cargo areas require a separate placard",
+    "c": "Heat/ignition sources can trigger fire or explosion",
+    "d": "Heat raises the packing group of every material"
+   },
+   "distractorExplanations": {
+    "a": "Cargo heater limits are about ignition, not air supply; restrictions apply when hauling explosives and flammable liquids or gases.",
+    "b": "No extra placard exists for heated cargo areas; heaters are restricted because they can ignite flammables or explosives.",
+    "d": "Packing group is assigned at classification and does not change with temperature; heaters are restricted for ignition risk."
+   },
+   "explanation": "Ignition control is critical near flammables and explosives. This matters most with flammables and explosives."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-004": {
+   "options": {
+    "a": "Whether the package is placarded",
+    "b": "The hazard class and packing group of the contents",
+    "c": "Whether the shipment needs an emergency phone number",
+    "d": "Capacity thresholds defined in the HMR"
+   },
+   "distractorExplanations": {
+    "a": "Placarding follows from what is shipped, but bulk vs non-bulk is defined by capacity (e.g., over 119 gallons for liquids).",
+    "b": "Class and packing group describe the hazard; bulk status depends on the package's capacity thresholds.",
+    "c": "An emergency response phone is needed for most hazmat shipments either way; bulk vs non-bulk depends on capacity."
+   },
+   "explanation": "HMR define bulk vs non-bulk by volume/weight capacity criteria. Bulk packages generally have the larger capacities."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-005": {
+   "options": {
+    "a": "The vehicle is appropriate, free of ignition hazards",
+    "b": "The cargo floor has exposed metal to ground static charges",
+    "c": "The cargo heater is running to keep detonators dry",
+    "d": "Blasting caps are loaded with Division 1.1 explosives"
+   },
+   "distractorExplanations": {
+    "b": "For Class 1, the cargo floor must be tight and lined with non-metallic or non-ferrous material, not bare metal that can spark.",
+    "c": "Cargo heaters are restricted with explosives because they are ignition sources; they must be off or made inoperable.",
+    "d": "Detonators may not ride with Division 1.1 explosives unless packed in approved containers under the segregation rules."
+   },
+   "explanation": "Explosives demand strict fire control and compliance. Loading must follow quantity and segregation rules."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-006": {
+   "options": {
+    "a": "Coated with oil so heavy drums slide into their position easily",
+    "b": "Clean and free of nails/screws that could puncture packages",
+    "c": "Lined with loose straw to cushion every package",
+    "d": "Free of leaks, with nails left for tying off straps"
+   },
+   "distractorExplanations": {
+    "a": "A slick or contaminated floor lets packages shift and can react with cargo; it must be clean and dry.",
+    "c": "Loose combustible dunnage adds fire load; the requirement is a clean floor free of projections, plus proper securement.",
+    "d": "Protruding nails and screws can puncture packages; they must be removed or made flush, not used as tie points."
+   },
+   "explanation": "Puncture and contamination risks must be controlled before loading. The floor must also be in good condition."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-008": {
+   "options": {
+    "a": "Left slightly open to vent vapor pressure during transit",
+    "b": "Closed once the tank is emptied at delivery",
+    "c": "Closed by the loader, with no driver check needed",
+    "d": "Closed and secured per procedures; check for leaks"
+   },
+   "distractorExplanations": {
+    "a": "Manholes and valves must be closed during transit; venting is handled by the tank's pressure-relief devices, not open covers.",
+    "b": "Covers and valves are closed before the loaded tank moves, not just after unloading; open covers spill product en route.",
+    "c": "The driver must verify that manholes and valves are closed and leak-free before moving a loaded cargo tank."
+   }
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-009": {
+   "options": {
+    "a": "Away from foodstuffs and per segregation/separation rules",
+    "b": "With foodstuffs if each package is sealed and fully intact",
+    "c": "In the cab where the driver can watch for leaks",
+    "d": "Near the rear doors so fumes vent while driving"
+   },
+   "distractorExplanations": {
+    "b": "Division 6.1 materials may not ride with foodstuffs unless separated as 49 CFR 177.841 requires, however intact the packages look.",
+    "c": "Toxic materials must not ride in the driver's compartment; they belong in the cargo area away from food and people.",
+    "d": "Packages stay closed and secured; placing them to vent implies leakage, and leaking toxic packages must not be transported."
+   }
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-010": {
+   "options": {
+    "a": "Loaded if the leak is wiped and taped shut",
+    "b": "Not loaded; protect people and notify appropriate parties",
+    "c": "Loaded upright with absorbent material packed around its base",
+    "d": "Loaded, then reported to the shipper on arrival"
+   },
+   "distractorExplanations": {
+    "a": "Leaking packages may not be accepted for transport; a temporary patch does not make them fit to ship.",
+    "c": "Absorbent helps clean up but does not make a leaking package acceptable; it must be refused and reported.",
+    "d": "The package must not be loaded at all; notification happens at the dock before any transport."
+   },
+   "explanation": "Do not accept damaged/leaking packages; follow emergency and carrier procedures. Contain the leak only if trained and safe."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-011": {
+   "options": {
+    "a": "Slowing to 15 mph and looking both ways without stopping",
+    "b": "Stopping within 10 feet of the nearest rail, then crossing in the highest gear",
+    "c": "Stopping (with exceptions) before crossing, listening, and proceeding only when safe",
+    "d": "Stopping 15 to 50 feet before, then shifting gears while on the tracks"
+   },
+   "distractorExplanations": {
+    "a": "Placarded vehicles must stop 15 to 50 feet before the nearest rail; slowing without stopping does not meet the rule.",
+    "b": "The stop is 15 to 50 feet from the nearest rail, and the driver uses a gear that avoids shifting; 10 feet is too close.",
+    "d": "The stop distance is right, but shifting gears while crossing is prohibited; select a gear that lets you cross without shifting."
+   }
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-012": {
+   "options": {
+    "a": "Loose cylinders only matter when they are full of flammable gas",
+    "b": "Loose cylinders are acceptable if their valve caps are in place",
+    "c": "Segregation applies to gas cylinders in cargo tanks but not inside dry vans",
+    "d": "Damaged valves/releases can create fire, asphyxiation, or toxic exposure"
+   },
+   "distractorExplanations": {
+    "a": "Nonflammable gases can still asphyxiate, and oxidizers or toxics create other hazards; every cylinder must be secured.",
+    "b": "Valve caps protect valves, but cylinders must still be secured upright or braced and segregated; caps alone are not enough.",
+    "c": "The segregation table applies to packages on any transport vehicle, including cylinders loaded in vans and flatbeds."
+   }
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-013": {
+   "options": {
+    "a": "Keep package upright as marked",
+    "b": "Stack two high at most",
+    "c": "Load this end toward the trailer front",
+    "d": "Handle with care; contents are fragile"
+   },
+   "distractorExplanations": {
+    "b": "Stacking limits are shown by a separate stacking mark; orientation arrows show which way up the package travels.",
+    "c": "Arrows point up, not toward the front; they show the vertical orientation needed to keep closures from leaking.",
+    "d": "Fragile handling uses a different mark; orientation arrows show the package must stay upright as marked."
+   },
+   "explanation": "Liquid closures and vents may depend on upright orientation. Exceptions apply only where rules allow otherwise."
+  },
+  "cdl-hazmat-readiness-check-loading-segregation-015": {
+   "options": {
+    "a": "Shift weight enough to change the placards required",
+    "b": "Void the shipping papers until the load is restacked",
+    "c": "Damage packages, open closures, and cause spills",
+    "d": "Raise the packing group of the materials on board"
+   },
+   "distractorExplanations": {
+    "a": "Placarding depends on what is aboard, not where it sits; movement matters because it can damage packages and cause leaks.",
+    "b": "Shipping papers remain valid after shifting; the danger is package damage, open closures and releases.",
+    "d": "Packing groups are fixed by the material's hazard; shifting cargo causes damage and spills, not reclassification."
+   },
+   "explanation": "Load securement is a core prevention control. Released materials can also react dangerously."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-001": {
+   "options": {
+    "a": "Park away from people/ignition sources and notify emergency/carrier contacts",
+    "b": "Drive on to the next truck stop to find help and absorbent",
+    "c": "Locate the leak by smell to identify the material first",
+    "d": "Park near a building so responders can find you quickly, and wait in the cab"
+   },
+   "distractorExplanations": {
+    "b": "Driving a leaking hazmat vehicle spreads contamination and can be illegal; park safely as soon as possible instead.",
+    "c": "Smell or touch must not be used to identify hazmat; check the shipping papers and ERG from a safe distance.",
+    "d": "Park away from people and buildings, and do not stay where vapors can reach you; then notify responders."
+   },
+   "explanation": "Protect life and limit ignition/exposure; use ERG/carrier emergency procedures. Secure the scene and keep people away."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-002": {
+   "options": {
+    "a": "Water on a tire fire reacts with every class of hazmat",
+    "b": "Heat can involve the cargo and cause a larger fire",
+    "c": "Tire fires require evacuation only for Class 1 loads",
+    "d": "Tires on placarded vehicles are made of flammable compounds"
+   },
+   "distractorExplanations": {
+    "a": "Water is often used to cool tire fires; the danger is heat reaching the cargo, not a universal water reaction.",
+    "c": "Heat from a tire fire can ignite or rupture many classes, including flammable liquids and gases, not just explosives.",
+    "d": "Tires are the same on any truck; the extra danger is the hazardous cargo the fire can reach."
+   },
+   "explanation": "Stop/address tire issues early; cargo involvement escalates incidents. Cargo involvement can mean explosion or toxic release."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-003": {
+   "options": {
+    "a": "Decide whether the load still needs placards after a spill",
+    "b": "Find the carrier's insurance and claims contact details",
+    "c": "Identify material hazards and initial protective distances/actions",
+    "d": "Choose the cleanup method and neutralizing chemicals to apply"
+   },
+   "distractorExplanations": {
+    "a": "Placarding is set before transport; in an emergency, papers and the ERG identify the material and initial protective actions.",
+    "b": "Insurance details are not the purpose; papers and the ERG identify the material, its hazards and initial isolation distances.",
+    "d": "Cleanup is for trained responders; the ERG gives initial isolation and protective actions, not driver cleanup procedures."
+   }
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-005": {
+   "options": {
+    "a": "Warn others, set out emergency triangles as required, and call for assistance",
+    "b": "Set out burning flares around the vehicle to warn traffic",
+    "c": "Walk to the nearest exit for help, leaving the shipping papers on the driver's seat",
+    "d": "Use four-way flashers in place of triangles until help arrives"
+   },
+   "distractorExplanations": {
+    "b": "Flame-producing flares may not be used near vehicles carrying explosives or flammable cargo; use reflective triangles.",
+    "c": "The vehicle must not be left unprotected; call for help from the scene and keep it attended and warned.",
+    "d": "Flashers are used while placing warning devices, but triangles are still required within 10 minutes of stopping."
+   },
+   "explanation": "Traffic control and notification reduce secondary crashes and exposures. Do not leave the scene unprotected."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-007": {
+   "options": {
+    "a": "Your carrier's name and USDOT number before any other details",
+    "b": "The product's trade name and the shipper's billing address",
+    "c": "Location, material identity/UN number, and injuries/hazards observed",
+    "d": "The hazard class read off the placard, without checking the shipping papers"
+   },
+   "distractorExplanations": {
+    "a": "Carrier details help later, but responders first need location, material identity and injuries to plan the response.",
+    "b": "Trade names and billing details do not tell responders the hazard; give the proper shipping name or UN number.",
+    "d": "Placards show only the class; shipping papers give the exact material and UN number and should be checked when safe."
+   },
+   "explanation": "Accurate identity and location enable correct response. Quantity and conditions also help responders."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-008": {
+   "options": {
+    "a": "Rely on standard fire gear without breathing apparatus",
+    "b": "Use the general orange-page isolation instead of the green table",
+    "c": "Approach from downwind to see the vapor cloud",
+    "d": "Emphasize respiratory protection and isolation downwind"
+   },
+   "distractorExplanations": {
+    "a": "TIH materials injure through inhalation; turnout gear alone is not enough, so respiratory protection is emphasized.",
+    "b": "TIH materials are listed in the ERG green table for isolation and protective-action distances beyond the orange-page guidance.",
+    "c": "Responders approach from upwind; approaching from downwind puts them in the vapor path of an inhalation hazard."
+   },
+   "explanation": "TIH materials demand atmospheric precautions; follow ERG/specialist advice. Follow ERG guidance."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-009": {
+   "options": {
+    "a": "Apply water inappropriately, generating flammable/toxic gases",
+    "b": "Smother the fire with dry sand or a Class D agent",
+    "c": "Let the fire burn while keeping people at a distance",
+    "d": "Cover the spill with a dry plastic sheet to keep rain off"
+   },
+   "distractorExplanations": {
+    "b": "Dry sand or special dry agents are typical recommended methods for water-reactive materials; they do not worsen the fire.",
+    "c": "Isolating the area and letting responders choose the method is a protective action; it does not generate reactive gases.",
+    "d": "Keeping water away from a Division 4.3 material is a recommended ERG step; keeping it dry helps rather than worsens."
+   }
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-010": {
+   "options": {
+    "a": "Wipe the skin with gasoline to dissolve the diesel",
+    "b": "Remove contaminated clothing and wash skin with soap/water",
+    "c": "Leave the clothing on and rinse it later at the hotel",
+    "d": "Rinse only with water; soap spreads the fuel"
+   },
+   "distractorExplanations": {
+    "a": "Solvents like gasoline irritate skin and increase absorption; soap and water is the standard first wash.",
+    "c": "Diesel-soaked clothing keeps fuel against the skin; contaminated clothing is removed promptly and the skin washed.",
+    "d": "Soap and water remove oily fuel more effectively; soap does not spread diesel on the skin."
+   },
+   "explanation": "Decontaminate skin; avoid absurd harmful 'remedies' Seek care if irritation persists."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-011": {
+   "options": {
+    "a": "Steer hazmat trucks onto the shortest available route to cut their exposure time",
+    "b": "Keep hazmat trucks off interstates and on local roads",
+    "c": "Keep high-risk loads away from tunnels, bridges, or densely populated routes",
+    "d": "Spread hazmat traffic evenly so no single route carries too much"
+   },
+   "distractorExplanations": {
+    "a": "Routing rules can require a longer designated route; the shortest path may pass through restricted tunnels or cities.",
+    "b": "Preferred routes usually favor interstates and bypasses; local roads through towns are what routing rules try to avoid.",
+    "d": "Routing restrictions keep high-risk materials away from tunnels, bridges and populated areas; they do not spread traffic."
+   },
+   "explanation": "Follow designated/preferred routes and prohibitions for the material and jurisdiction. Follow designated or preferred routes as required."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-012": {
+   "options": {
+    "a": "Go by the placards, since they are checked at loading",
+    "b": "Correct the shipping papers yourself to match the placards",
+    "c": "Deliver the load and report the mismatch on arrival",
+    "d": "Not move the shipment until discrepancies are resolved"
+   },
+   "distractorExplanations": {
+    "a": "Shipping papers and placards must agree; neither is assumed correct, so the load waits until the discrepancy is resolved.",
+    "b": "The shipper certifies the papers; the driver does not rewrite them but contacts the shipper/carrier to resolve the mismatch.",
+    "c": "Transport should not continue with conflicting hazard information; resolve the discrepancy before moving."
+   },
+   "explanation": "Identification must be accurate before transport continues. Use shipper/carrier procedures to resolve it."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-013": {
+   "options": {
+    "a": "Available for the materials transported",
+    "b": "Kept at the carrier's dispatch office",
+    "c": "Provided only for Class 1 and Class 7 loads",
+    "d": "Posted on the vehicle beside the placards"
+   },
+   "distractorExplanations": {
+    "b": "Emergency response information must travel with the shipment and be immediately accessible to the driver and responders.",
+    "c": "Emergency response information is required for most hazmat shipments that need shipping papers, not just explosives and radioactives.",
+    "d": "Emergency information stays with the shipping papers in the cab; the vehicle exterior carries placards, not response guidance."
+   },
+   "explanation": "Emergency response information is required to accompany hazmat shipments. ERG pages or equivalent emergency information qualify."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-014": {
+   "options": {
+    "a": "Move people downwind where the air is clearer",
+    "b": "Move people upwind and keep them away from vapors",
+    "c": "Move people downhill, away from the spill site",
+    "d": "Gather everyone close to the vehicle to keep a headcount"
+   },
+   "distractorExplanations": {
+    "a": "Downwind is the direction vapors travel; evacuate people upwind and uphill of the release.",
+    "c": "Heavier-than-air vapors flow downhill; move people upwind and uphill, not downhill.",
+    "d": "Staying near the vehicle keeps people in the hazard zone; move them to a safe distance upwind before counting."
+   },
+   "explanation": "Protect by distance, wind direction, and denying entry. Use guidance distances to decide how far."
+  },
+  "cdl-hazmat-readiness-check-driving-emergencies-015": {
+   "options": {
+    "a": "Move the package to the cab to keep it under watch",
+    "b": "Wrap it in plastic and reload it away from people",
+    "c": "Minimize time near the package, maximize distance/shielding",
+    "d": "Continue the trip because the package label shows Radioactive White-I"
+   },
+   "distractorExplanations": {
+    "a": "Bringing it closer increases exposure; time, distance and shielding mean staying away and isolating the area.",
+    "b": "Handling a damaged radioactive package adds exposure and spreads contamination; isolate it and wait for qualified help.",
+    "d": "White-I means low surface radiation for an intact package; a damaged package needs isolation and notification."
+   },
+   "explanation": "Time-distance-shielding and expert response apply to radiological concerns. Isolate the area and notify authorities and the carrier."
+  },
+  "cdl-hazmat-readiness-check-security-rules-001": {
+   "options": {
+    "a": "Recognize and reduce security risks",
+    "b": "Classify materials and select placards",
+    "c": "Respond to spills using the ERG",
+    "d": "Pass the TSA background check"
+   },
+   "distractorExplanations": {
+    "b": "Classification and placarding are covered by function-specific training; security awareness targets threats like theft and tampering.",
+    "c": "Emergency response training covers spills; security awareness training is about recognizing and responding to security threats.",
+    "d": "The TSA threat assessment is for the HME driver; security awareness training is required for every hazmat employee."
+   },
+   "explanation": "Security plans/awareness reduce intentional misuse of hazardous materials. Risks include theft, tampering, or terrorism targeting hazmat."
+  },
+  "cdl-hazmat-readiness-check-security-rules-002": {
+   "options": {
+    "a": "Asking them to leave and taking no further action",
+    "b": "Reporting to security/law enforcement per site procedures",
+    "c": "Confronting them and seizing the camera yourself",
+    "d": "Waiting to see whether they come back a second or third time"
+   },
+   "distractorExplanations": {
+    "a": "Unusual surveillance of a hazmat site should be reported; just sending the person away loses information security needs.",
+    "c": "Employees should avoid confrontation; the correct step is to note details and report to security or police.",
+    "d": "Suspicious activity is reported promptly; waiting for repeat visits gives a possible attacker more time."
+   }
+  },
+  "cdl-hazmat-readiness-check-security-rules-003": {
+   "options": {
+    "a": "A placard showing the high-risk status on the vehicle",
+    "b": "Sharing route details with any caller who asks for them",
+    "c": "Enhanced security plans and route/communication practices",
+    "d": "Using any route as long as the shipment is placarded"
+   },
+   "distractorExplanations": {
+    "a": "Placards are hazard communication for every placarded load; they are not an added security measure for high-risk materials.",
+    "b": "Route and schedule information is protected under a security plan and shared on a need-to-know basis.",
+    "d": "High-risk materials may require designated routes and route planning; placarding does not permit any route."
+   },
+   "explanation": "Higher-risk materials trigger stronger security plan requirements. Attendance and securement rules also apply as required."
+  },
+  "cdl-hazmat-readiness-check-security-rules-004": {
+   "options": {
+    "a": "Parking at isolated rest areas overnight to stay out of public sight",
+    "b": "Leaving the engine running when stepping out briefly",
+    "c": "Sharing route plans on the CB to get traffic updates",
+    "d": "Minimizing stops, locking vehicles, and being aware of tailing"
+   },
+   "distractorExplanations": {
+    "a": "Isolated spots invite theft or hijacking; secure, well-lit, attended locations are preferred.",
+    "b": "A running, unlocked truck is an easy theft target; lock the vehicle and take the keys at every stop.",
+    "c": "Broadcasting routes and load details gives would-be attackers information; keep route details need-to-know."
+   },
+   "explanation": "Reduce opportunities for theft/hijack of hazmat. Watch for tampering as well."
+  },
+  "cdl-hazmat-readiness-check-security-rules-005": {
+   "options": {
+    "a": "Possible tampering—follow company procedures and report",
+    "b": "A routine seal failure from road vibration",
+    "c": "A shipper error to fix by resealing and going on",
+    "d": "Nothing to report if the placards are still in place"
+   },
+   "distractorExplanations": {
+    "b": "Seals rarely break from vibration; an unexpected broken seal is treated as possible tampering until checked.",
+    "c": "Resealing without reporting hides possible tampering; follow company procedures and report before continuing.",
+    "d": "Placards say nothing about cargo access; a broken seal signals possible tampering that must be reported."
+   },
+   "explanation": "Seal integrity is a security control; anomalies need response. Document it before proceeding."
+  },
+  "cdl-hazmat-readiness-check-security-rules-006": {
+   "options": {
+    "a": "A knowledge test and a clean driving record for 3 years",
+    "b": "TSA security threat assessment plus knowledge testing",
+    "c": "A skills test in a placarded vehicle plus a medical card",
+    "d": "Carrier hazmat training records instead of a CDL test"
+   },
+   "distractorExplanations": {
+    "a": "A clean record is not the requirement; the HME needs a TSA security threat assessment with fingerprints plus the knowledge test.",
+    "c": "There is no hazmat skills test; the endorsement requires the hazmat knowledge test and the TSA threat assessment.",
+    "d": "Employer training is required separately but does not replace the hazmat knowledge test and TSA assessment."
+   },
+   "explanation": "Federal security threat assessment is part of hazmat endorsement issuance. The TSA process includes fingerprint-based background checks."
+  },
+  "cdl-hazmat-readiness-check-security-rules-007": {
+   "options": {
+    "a": "Police have already opened an investigation",
+    "b": "Only after a second suspicious visit by the same person at the counter",
+    "c": "Behavior suggests planning to misuse hazardous materials",
+    "d": "A manager confirms the buyer is not a regular customer"
+   },
+   "distractorExplanations": {
+    "a": "Reporting should not wait for an official investigation; employees report when behavior suggests planned misuse.",
+    "b": "Waiting for repeat visits delays a report that could prevent an attack; report as soon as behavior seems suspicious.",
+    "d": "Reporting depends on suspicious behavior, not customer status; regular customers can also show signs of planned misuse."
+   }
+  },
+  "cdl-hazmat-readiness-check-security-rules-008": {
+   "options": {
+    "a": "Open to any employee of the facility during work hours",
+    "b": "Unlocked during the day when staff are on site",
+    "c": "Granted to drivers who show a valid CDL",
+    "d": "Limited to authorized personnel with controls"
+   },
+   "distractorExplanations": {
+    "a": "Access is limited to authorized personnel with a need to enter, not every employee on shift.",
+    "b": "Being staffed does not control access; storage areas stay locked or badge-controlled during working hours too.",
+    "c": "A CDL does not authorize entry to storage areas; access depends on authorization and site controls."
+   },
+   "explanation": "Physical access control is a core security measure. Controls include locks, badges, and escorts as required."
+  },
+  "cdl-hazmat-readiness-check-security-rules-010": {
+   "options": {
+    "a": "The driver must stay inside the cab at all times",
+    "b": "Someone qualified may need to attend the vehicle",
+    "c": "A locked vehicle counts as attended for Class 1",
+    "d": "The driver may watch it from a sleeper berth"
+   },
+   "distractorExplanations": {
+    "a": "Attendance means being awake, not in the sleeper berth, within 100 feet and with a clear view of the vehicle; staying in the cab is not required.",
+    "c": "Division 1.1–1.3 vehicles must be attended by a qualified person; locking the vehicle does not meet the rule unless it is on a safe haven.",
+    "d": "A person in the sleeper berth is not attending; the attendant must be awake and within 100 feet with the vehicle in view."
+   },
+   "explanation": "Attendance/surveillance rules reduce theft and unauthorized access—know the material-specific requirements. The specific rule set may require keeping it within view."
+  },
+  "cdl-hazmat-readiness-check-security-rules-011": {
+   "options": {
+    "a": "Pull over on the shoulder and let the vehicle pass",
+    "b": "Speed up and take back roads to lose the follower",
+    "c": "Avoid confrontation, note details, and contact law enforcement",
+    "d": "Drive straight on to the receiver and report it once the delivery is done"
+   },
+   "distractorExplanations": {
+    "a": "Stopping on a shoulder makes the truck an easy target; keep moving toward a safe, populated area while reporting.",
+    "b": "Evasive driving with hazmat raises crash risk and can lead into isolated areas; stay on route and contact police.",
+    "d": "Hostile surveillance is reported right away to police or carrier security, not after the delivery is complete."
+   },
+   "explanation": "Personal safety and reporting beat vigilantism. Carrier security should also be contacted per procedure."
+  },
+  "cdl-hazmat-readiness-check-security-rules-012": {
+   "options": {
+    "a": "Physically stopping entry to the cargo area",
+    "b": "Replacing the need for padlocks on high-risk hazmat loads",
+    "c": "Recording who opened the trailer and when it happened",
+    "d": "Showing whether unauthorized access to cargo may have occurred"
+   },
+   "distractorExplanations": {
+    "a": "Seals are not barriers; they show evidence of access, while locks are what physically resist entry.",
+    "b": "Tamper-evident seals complement locks rather than replace them; they reveal intrusion but do not prevent it.",
+    "c": "A basic seal shows only that access may have occurred; it does not log identities or times like an electronic lock."
+   }
+  },
+  "cdl-hazmat-readiness-check-security-rules-013": {
+   "options": {
+    "a": "Personnel security, unauthorized access, and en-route security measures",
+    "b": "Spill response steps, ERG isolation distances, and first-aid procedures",
+    "c": "Placarding, package labeling, and shipping paper accuracy checks",
+    "d": "Driver hours of service, logbook audits, and required rest breaks"
+   },
+   "distractorExplanations": {
+    "b": "Spill response belongs to emergency response planning; a security plan covers personnel, access and en-route security.",
+    "c": "Hazard communication rules cover papers and placards; the security plan addresses theft and misuse risks.",
+    "d": "HOS rules are separate FMCSA requirements; security plans focus on personnel checks, access control and en-route security."
+   }
+  },
+  "cdl-hazmat-readiness-check-security-rules-014": {
+   "options": {
+    "a": "Acceptable if the person rides in the cab only",
+    "b": "A serious security and safety violation",
+    "c": "A minor issue unless the load is Class 1",
+    "d": "Permitted if the passenger has a CDL"
+   },
+   "distractorExplanations": {
+    "a": "Unauthorized passengers are not allowed in a CMV even in the cab; carrier authorization is required under 49 CFR 392.60.",
+    "c": "Unauthorized access is a serious violation for any hazmat load, not just explosives.",
+    "d": "Holding a CDL does not authorize someone to ride along or enter the cargo area; carrier authorization is required."
+   }
+  },
+  "cdl-hazmat-readiness-check-security-rules-015": {
+   "options": {
+    "a": "Drop the trailer at the gate if the receiver is closed",
+    "b": "Hand over the load to anyone signing the bill of lading",
+    "c": "Verify receiver authorization and document exceptions",
+    "d": "Remove placards before arrival to stay inconspicuous"
+   },
+   "distractorExplanations": {
+    "a": "Leaving a loaded hazmat trailer unattended at a closed site invites theft; follow carrier instructions for secure parking.",
+    "b": "A signature alone does not prove authorization; verify the receiver's identity and authorization before handing over.",
+    "d": "Placards must stay on while hazmat is aboard; removing them breaks hazard communication rules and does not improve security."
+   },
+   "explanation": "Identity verification and documentation prevent diversion. Check seals and IDs per procedure."
+  }
+ }
+}

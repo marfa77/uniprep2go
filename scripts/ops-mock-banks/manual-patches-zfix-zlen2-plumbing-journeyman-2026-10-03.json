@@ -1,0 +1,732 @@
+{
+ "plumbing-journeyman-readiness-check": {
+  "plumbing-journeyman-readiness-check-dwv-001": {
+   "options": {
+    "a": "Drain, waste, and vent",
+    "b": "Drain, water, and valve",
+    "c": "Domestic water and vent",
+    "d": "Direct waste ventilation"
+   },
+   "distractorExplanations": {
+    "b": "Swaps waste and vent for water and valve; DWV is the sanitary drainage side, not supply valves.",
+    "c": "Mixes in domestic water, which is the supply side; DWV is the drainage system kept separate from potable piping.",
+    "d": "Not a code term; in DWV the D stands for drain and the V for the vent piping that protects trap seals."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-002": {
+   "options": {
+    "a": "1/8 inch per foot for 3 inch and smaller; 1/16 inch per foot for 4 inch and larger",
+    "b": "1/4 inch per foot for 3 inch and smaller; 1/8 inch per foot for 4 inch and larger",
+    "c": "1/2 inch per foot for 3 inch and smaller; 1/4 inch per foot for 4 inch and larger",
+    "d": "1 inch per foot for 3 inch and smaller; 1/2 inch per foot for 4 inch and larger"
+   },
+   "distractorExplanations": {
+    "a": "Halves both values; 1/16 in/ft applies only to 8-inch and larger drains, and small drains need more than 1/8 in/ft.",
+    "c": "Doubles both values; 1/2 in/ft is steeper than the tabulated minimum and is not the code requirement for small drains.",
+    "d": "Far steeper than the code minimum; excessive slope is not required and can let liquids outrun solids in the drain."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-003": {
+   "options": {
+    "a": "Pressurize drain lines to speed up flow",
+    "b": "Provide an overflow path for wastewater during a stoppage",
+    "c": "Protect trap seals and allow air into drainage system",
+    "d": "Prevent cross-connections between potable supply and drain lines"
+   },
+   "distractorExplanations": {
+    "a": "Vents equalize drains to atmospheric pressure; positive pressure in drains would blow out trap seals rather than help flow.",
+    "b": "Dry vents carry air, not wastewater; using a vent as a backup drain path during a clog is a code violation.",
+    "d": "Cross-connection protection is the job of air gaps and backflow preventers on the supply side, not DWV vents."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-004": {
+   "options": {
+    "a": "1/2 inch minimum, 1 inch maximum",
+    "b": "1 inch minimum (varies by code)",
+    "c": "1-1/2 inches minimum per fixture type",
+    "d": "2 inches minimum (varies by code)"
+   },
+   "distractorExplanations": {
+    "a": "Far too shallow; a 1/2-inch seal is lost quickly to evaporation or siphonage. Codes require 2 in minimum and 4 in maximum.",
+    "b": "1 inch is half the code minimum; trap seal depth must be at least 2 inches and not more than 4 inches.",
+    "c": "Confuses the common 1-1/2 inch trap pipe size with seal depth; the required seal depth is 2 inches minimum."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-005": {
+   "options": {
+    "a": "One pipe to serve as drain and vent for multiple fixtures",
+    "b": "One vent to serve two fixture drains joined at the same level",
+    "c": "A storm drain to double as the vent for a sanitary branch",
+    "d": "An air admittance valve to serve in place of every vent stack"
+   },
+   "distractorExplanations": {
+    "b": "That describes a common (dual) vent, which carries no waste; a wet vent also receives drainage from other fixtures.",
+    "c": "Storm and sanitary systems must stay separate; a storm conductor cannot serve as the vent for sanitary fixtures.",
+    "d": "Confuses wet venting with AAVs; AAVs are mechanical devices and codes still require at least one open vent to outdoors."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-006": {
+   "options": {
+    "a": "Access for pressure testing at each fixture trap before final inspection",
+    "b": "Access for rodding drainage system at changes of direction and intervals",
+    "c": "Access to vent piping at each roof penetration for clearing frost closure",
+    "d": "Access to water supply shutoffs at each fixture group for maintenance"
+   },
+   "distractorExplanations": {
+    "a": "Test tees and plugs serve testing; code cleanouts exist for rodding stoppages at direction changes and set spacing.",
+    "c": "Vent terminals are not cleanout locations; cleanouts go on the drainage system at direction changes and intervals.",
+    "d": "Confuses cleanouts with supply shutoff access; cleanouts are DWV fittings for rodding, not potable valve access."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-007": {
+   "options": {
+    "a": "Allows the building to omit the vent stack through the roof",
+    "b": "Releases sewer gas when positive pressure builds in the drain",
+    "c": "Admits air when drainage draws vacuum; seals when not needed",
+    "d": "Lets air out of the water supply to prevent water hammer"
+   },
+   "distractorExplanations": {
+    "a": "Codes still require at least one vent extending to open air for each building drain; AAVs supplement, not replace, the stack.",
+    "b": "AAVs are one-way: they open only on negative pressure and seal against positive pressure, so they do not relieve it.",
+    "d": "Confuses an AAV with an air chamber or water hammer arrestor on the supply side; AAVs are DWV vent devices."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-008": {
+   "options": {
+    "a": "Building sewer to the public main at the property line",
+    "b": "Vent stacks to the roof terminal above the top floor",
+    "c": "Fixture traps directly to the stack on each floor",
+    "d": "Branch drains to building sewer outside foundation"
+   },
+   "distractorExplanations": {
+    "a": "That is the building sewer's run; the building drain is the lowest piping inside the structure that feeds the sewer.",
+    "b": "Vent stacks carry air to the roof; the building drain is the horizontal drainage collector at the lowest level.",
+    "c": "Fixture arms and branches tie fixtures to stacks; the building drain collects the stacks and branches at the base."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-009": {
+   "options": {
+    "a": "They can lose seal by siphonage without venting",
+    "b": "They trap debris and cause frequent stoppages",
+    "c": "Their seal is too deep to drain quickly",
+    "d": "They exceed the maximum trap arm length"
+   },
+   "distractorExplanations": {
+    "b": "S-traps are banned because they siphon their own seal, not because they clog more often than a P-trap.",
+    "c": "Seal depth is not the defect; S-traps lose their seal by self-siphonage because the outlet drops without a vent.",
+    "d": "Trap arm length is a separate vent-distance rule; the S-trap's problem is the vertical drop that siphons the seal."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-010": {
+   "options": {
+    "a": "Based on IPC/UPC drain sizing tables (~10 FU for 3\" at 1/4\"/ft slope)",
+    "b": "Based on IPC/UPC drain sizing tables (~42 FU for 3\" at 1/4\"/ft slope)",
+    "c": "Based on IPC/UPC drain sizing tables (~84 FU for 3\" at 1/4\"/ft slope)",
+    "d": "Based on IPC/UPC drain sizing tables (~216 FU for 3\" at 1/4\"/ft slope)"
+   },
+   "distractorExplanations": {
+    "a": "Far too low; a 3-inch drain at 1/4 in/ft carries roughly 42 dfu in the IPC building-drain table, not about 10.",
+    "c": "Doubles the tabulated value; about 84 dfu would overload a 3-inch drain, so higher loads call for a 4-inch drain.",
+    "d": "About 216 dfu is the IPC value for a 4-inch building drain at 1/4 in/ft; it does not apply to a 3-inch pipe."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-011": {
+   "options": {
+    "a": "Inside a ventilated attic space above the ceiling insulation line",
+    "b": "Under a roof overhang next to soffit intake vents",
+    "c": "Open to outdoor air, typically through roof with proper clearance",
+    "d": "Through a sidewall directly below an operable window"
+   },
+   "distractorExplanations": {
+    "a": "Vents must extend to open air outside; ending in an attic, even a ventilated one, releases sewer gas into the building.",
+    "b": "Codes prohibit vent terminals beneath overhangs with soffit vents because sewer gas is drawn back into the attic.",
+    "d": "Vent terminals may not sit directly beneath an openable window; IPC requires 10 ft horizontal or 3 ft above it."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-012": {
+   "options": {
+    "a": "Back-siphonage of potable water into the street main",
+    "b": "Trap seal loss from induced siphonage",
+    "c": "Normal flow of wastewater from fixtures to the sewer",
+    "d": "Reverse flow of wastewater into fixtures"
+   },
+   "distractorExplanations": {
+    "a": "That is backflow in the potable supply context; in DWV, backflow means wastewater moving back into fixtures.",
+    "b": "That is induced siphonage, a venting problem that empties traps, not wastewater flowing backward into fixtures.",
+    "c": "That is ordinary forward drainage; backflow is flow in the reverse direction, toward and out of the fixtures."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-013": {
+   "options": {
+    "a": "CI is durable/quiet; PVC is lightweight with solvent weld joints",
+    "b": "PVC is quieter; CI is lighter and joined with solvent cement",
+    "c": "PVC is rated for higher heat; CI is limited to vent piping",
+    "d": "CI is joined with solvent cement; PVC uses lead and oakum"
+   },
+   "distractorExplanations": {
+    "b": "Swaps the properties: cast iron is heavy and quieter, while PVC is light, noisier, and solvent-welded.",
+    "c": "Cast iron tolerates heat better and is used for drains, not just vents; PVC has the lower temperature rating.",
+    "d": "Reverses the joining methods: lead-and-oakum or no-hub couplings join CI, while PVC uses primer and solvent cement."
+   }
+  },
+  "plumbing-journeyman-readiness-check-dwv-015": {
+   "options": {
+    "a": "Left in the cleanout permanently to block sewer gas",
+    "b": "Used to pressure-test the water supply before meter set",
+    "c": "Used to air or water test system before concealment",
+    "d": "Installed at the vent terminal to keep rain out of the stack"
+   },
+   "distractorExplanations": {
+    "a": "Test plugs are removed after testing; cleanouts are sealed with listed threaded plugs, not test balls left in place.",
+    "b": "DWV test plugs seal drain openings; supply piping is tested with caps at working pressure, which is a different test.",
+    "d": "Vent terminals must stay open after testing; a plug at the roof would block venting and siphon trap seals."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-001": {
+   "options": {
+    "a": "Air trapped in the vent stack after heavy drainage flow",
+    "b": "Oversized supply piping that lowers water velocity",
+    "c": "Thermal expansion from the water heater in a closed system",
+    "d": "Sudden valve closure creating pressure surge in piping"
+   },
+   "distractorExplanations": {
+    "a": "Vent air affects DWV traps, not supply piping; water hammer is a supply-side pressure surge from rapid shutoff.",
+    "b": "Larger pipe lowers velocity and reduces hammer; high velocity in undersized pipe plus quick closure causes it.",
+    "c": "Thermal expansion raises static pressure gradually and is handled by an expansion tank; hammer is a sudden shock wave."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-002": {
+   "options": {
+    "a": "Potable supply from contamination due to cross-connection",
+    "b": "Building drains from sewage backing up from the public sewer",
+    "c": "Water heater from excess pressure due to thermal expansion",
+    "d": "Fixtures from water hammer caused by quick-closing valves"
+   },
+   "distractorExplanations": {
+    "b": "Sewer backup into drains is addressed by backwater valves, not by backflow preventers on the domestic water service.",
+    "c": "That is the role of the thermal expansion tank and T&P relief valve, not a backflow preventer on the service.",
+    "d": "Water hammer arrestors handle pressure surges; a backflow preventer stops contaminated water reversing into potable."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-003": {
+   "options": {
+    "a": "Type M has thicker wall than Type L",
+    "b": "Type L has thicker wall than Type M",
+    "c": "Type L is red-coded; Type M is blue-coded",
+    "d": "Type L has a larger outside diameter than M"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the order: wall thickness runs K (thickest), then L, then M (thinnest), so M is thinner than L.",
+    "c": "Color codes are swapped: Type L is printed in blue and Type M in red, while Type K is marked in green.",
+    "d": "Copper tube types share the same OD for each nominal size; only the wall thickness, and thus the ID, differs."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-004": {
+   "options": {
+    "a": "UV resistance for exposed outdoor runs in direct sunlight on roofs",
+    "b": "Approval for DWV piping and solvent-welded drain fittings",
+    "c": "Flexibility, corrosion resistance, and fewer fittings in some layouts",
+    "d": "Higher rigidity, sweat-soldered joints, and wider support spacing"
+   },
+   "distractorExplanations": {
+    "a": "PEX degrades under UV exposure and must be shielded from sunlight; UV resistance is a weakness, not an advantage.",
+    "b": "PEX is a pressure water distribution material; DWV uses PVC/ABS/cast iron, and PEX cannot be solvent-welded.",
+    "d": "PEX is flexible, uses crimp or expansion fittings rather than solder, and needs closer support spacing than copper."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-006": {
+   "options": {
+    "a": "Excessive pressure from heated water with closed system",
+    "b": "Water hammer when quick-closing fixture valves shut suddenly",
+    "c": "Scalding at fixtures from stored water above 120°F",
+    "d": "Sediment buildup at the bottom of the tank"
+   },
+   "distractorExplanations": {
+    "b": "Water hammer is a shock wave handled by arrestors; an expansion tank absorbs the slow volume growth from heating.",
+    "c": "Scald protection comes from mixing valves or thermostat settings; expansion tanks do not limit water temperature.",
+    "d": "Sediment is controlled by flushing the tank through its drain valve; an expansion tank has no effect on scale."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-007": {
+   "options": {
+    "a": "Bond copper to steel to improve electrical grounding continuity",
+    "b": "Separate dissimilar metals to reduce galvanic corrosion",
+    "c": "Join PEX to copper without a crimp or expansion fitting",
+    "d": "Absorb vibration where piping connects to a pump"
+   },
+   "distractorExplanations": {
+    "a": "Opposite purpose: a dielectric union breaks the electrical path between metals; grounding continuity uses bonding jumpers.",
+    "c": "PEX-to-copper transitions use listed adapters; dielectric unions isolate dissimilar metals such as copper and steel.",
+    "d": "Vibration isolation uses flexible connectors; a dielectric union's purpose is electrical isolation against corrosion."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-008": {
+   "options": {
+    "a": "At the footing depth of the foundation",
+    "b": "12 inches deep in all cold-climate areas",
+    "c": "Below frost line per local code",
+    "d": "Above frost line with pipe insulation"
+   },
+   "distractorExplanations": {
+    "a": "Footing depth often relates to frost but is not the water-service rule; the pipe must sit below the local frost line.",
+    "b": "12 inches is a common minimum cover for building sewers, not a frost-protection depth for water service in cold climates.",
+    "d": "Insulation alone does not stop buried service pipe from freezing; code requires burial below the frost line."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-009": {
+   "options": {
+    "a": "Water hammer from rapid valve closure in the shower",
+    "b": "Backflow of shower water into the potable supply",
+    "c": "Legionella growth in the storage water heater",
+    "d": "Scalding from pressure/temperature fluctuations"
+   },
+   "distractorExplanations": {
+    "a": "Hammer arrestors address surges; pressure-balancing valves keep outlet temperature steady when supply pressure changes.",
+    "b": "Backflow is stopped by check valves or vacuum breakers; mixing valves address the temperature swings that scald.",
+    "c": "Legionella is controlled by storing hot water hot; the mixing valve's job is to prevent scalding at the outlet."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-010": {
+   "options": {
+    "a": "At service entrance to measure usage",
+    "b": "At the water heater outlet to measure hot usage",
+    "c": "After the pressure-reducing valve inside",
+    "d": "At each fixture branch to bill per fixture"
+   },
+   "distractorExplanations": {
+    "b": "Some buildings submeter hot water, but the utility meter goes on the service line where water enters the property.",
+    "c": "The meter sits at the service connection upstream of the building; a PRV is installed downstream of the meter.",
+    "d": "Utility billing uses one service meter at the entrance; branch-level metering is not the typical meter location."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-011": {
+   "options": {
+    "a": "Raises water heater recovery rate on high demand",
+    "b": "Reduces wait time by circulating hot water loop",
+    "c": "Increases cold water pressure at distant fixtures",
+    "d": "Mixes cold into the hot loop to prevent scalding"
+   },
+   "distractorExplanations": {
+    "a": "Recovery rate depends on burner or element input; a recirculation pump only moves already-heated water around the loop.",
+    "c": "Recirculation pumps serve the hot water loop to cut wait time; they do not boost cold supply pressure.",
+    "d": "Anti-scald protection comes from mixing valves; the pump circulates hot water so it reaches fixtures faster."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-012": {
+   "options": {
+    "a": "Flux applied after heating so it does not burn off",
+    "b": "Solder melted by the flame onto an unheated, unfluxed joint",
+    "c": "Clean, fluxed fittings heated until solder wicks into joint",
+    "d": "Lead-bearing 50/50 solder for potable water lines"
+   },
+   "distractorExplanations": {
+    "a": "Flux goes on cleaned surfaces before heating; applying it after heating defeats its cleaning and wetting role.",
+    "b": "The fitting must be cleaned, fluxed, and heated so solder melts on contact and wicks in; cold metal will not bond.",
+    "d": "Since 1986, solder for potable lines must be lead-free (0.2% lead max); 50/50 tin-lead is prohibited there."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-013": {
+   "options": {
+    "a": "Add calcium to buffer acidic well water",
+    "b": "Disinfect water with chlorine from the brine tank",
+    "c": "Filter sediment through an activated carbon bed",
+    "d": "Replace hardness ions with sodium/potassium"
+   },
+   "distractorExplanations": {
+    "a": "Calcite neutralizers add calcium to raise pH; softeners remove calcium and magnesium by ion exchange.",
+    "b": "The brine tank holds salt to regenerate the resin; softeners do not disinfect, which is a separate chlorination step.",
+    "c": "Carbon filters remove taste, odor, and chlorine; ion-exchange softening swaps calcium and magnesium for sodium."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-014": {
+   "options": {
+    "a": "Equipment drains that must not connect directly to sanitary",
+    "b": "Fixtures that discharge directly through a trap to the stack",
+    "c": "Storm water from roof drains and area drains",
+    "d": "Sewage ejector pits that pump to the building drain"
+   },
+   "distractorExplanations": {
+    "b": "That is a direct connection; indirect waste receptors receive drains that must discharge through an air gap or air break.",
+    "c": "Storm drainage goes to the storm system; indirect waste receptors take equipment drains such as ice machines.",
+    "d": "Ejectors lift sewage from below sewer level and connect directly; indirect receptors take equipment and appliance drains."
+   }
+  },
+  "plumbing-journeyman-readiness-check-water-015": {
+   "options": {
+    "a": "1.6 gpm at 60 psi",
+    "b": "2.5 gpm at 80 psi",
+    "c": "3.5 gpm at 80 psi",
+    "d": "4.0 gpm at 100 psi"
+   },
+   "distractorExplanations": {
+    "a": "1.6 is the federal gallons-per-flush limit for toilets, not the showerhead flow cap of 2.5 gpm at 80 psi.",
+    "c": "3.5 gpm reflects older pre-1992 showerheads; EPAct 1992 capped showerhead flow at 2.5 gpm at 80 psi.",
+    "d": "Far above the federal cap; 2.5 gpm at 80 psi has been the showerhead limit since the Energy Policy Act of 1992."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-001": {
+   "options": {
+    "a": "12 inches from the stud face to the front edge of the closet flange",
+    "b": "12 inches from the stud wall to the flange's back edge",
+    "c": "12 inches from finished wall to center of closet flange",
+    "d": "15 inches from finished wall to center of the closet flange"
+   },
+   "distractorExplanations": {
+    "a": "Rough-in is measured from the finished wall surface to the flange center, not from the studs to the flange edge.",
+    "b": "Uses the wrong reference points; the standard rough-in runs from the finished wall to the center of the flange.",
+    "d": "15 inches is the minimum side clearance from a toilet's centerline to a wall, not the rear-wall rough-in."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-002": {
+   "options": {
+    "a": "Accessible shutoff valves and S-trap with proper height",
+    "b": "Concealed shutoff valves inside the wall with a drum trap",
+    "c": "A single shutoff at the water heater and a crown-vented trap",
+    "d": "Accessible shutoff valves and P-trap with proper height"
+   },
+   "distractorExplanations": {
+    "a": "S-traps are prohibited in new work because they self-siphon; lavatories require a vented P-trap.",
+    "b": "Stops must stay accessible, and drum traps are generally prohibited for lavatories; a P-trap is required.",
+    "c": "Each fixture needs its own accessible stops, and crown venting (a vent at the trap weir) is prohibited."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-003": {
+   "options": {
+    "a": "High loop or air gap before connection to drain/garbage disposal",
+    "b": "A direct connection to the tailpiece below the trap weir",
+    "c": "A check valve on the supply line at the dishwasher water inlet",
+    "d": "A vacuum breaker on the drain hose at the disposal inlet"
+   },
+   "distractorExplanations": {
+    "b": "Connecting downstream of the trap bypasses the seal and admits sewer gas; the hose joins above the trap with a loop or air gap.",
+    "c": "A supply check valve does not protect the drain hose; the drain needs a high loop or air gap to stop waste backflow.",
+    "d": "Vacuum breakers protect potable supply lines; dishwasher drain hoses rely on an air gap or high loop instead."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-004": {
+   "options": {
+    "a": "Vents the floor drain trap to prevent siphonage",
+    "b": "Maintains trap seal in seldom-used drains by adding water",
+    "c": "Prevents sewer backup into the floor with a backwater flap",
+    "d": "Removes debris from the trap by flushing on a timer"
+   },
+   "distractorExplanations": {
+    "a": "A primer adds water to replace evaporation; venting addresses siphonage, not evaporation in rarely used drains.",
+    "c": "That is a backwater valve; a trap primer feeds small amounts of water to keep the trap seal from evaporating.",
+    "d": "Primers deliver small makeup-water amounts to offset evaporation; they are not designed to flush debris out."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-005": {
+   "options": {
+    "a": "May rely on cement backer board as the waterproof layer",
+    "b": "Is applied over the tile as a sealer coat",
+    "c": "Must be waterproof before tile installation",
+    "d": "Must be flood-tested only after grouting the tile"
+   },
+   "distractorExplanations": {
+    "a": "Cement board is not waterproof; a liner or membrane must be installed beneath or on it before tile is set.",
+    "b": "The pan or liner goes under the mortar bed and tile; a topical sealer over finished tile is not a code shower pan.",
+    "d": "The pan is flood-tested before tile so leaks can be fixed; testing after grouting means tearing out finished tile."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-006": {
+   "options": {
+    "a": "A dedicated vent separate from the sink's trap and vent",
+    "b": "A hot-water supply connection to soften food waste",
+    "c": "A direct connection to the building drain without a trap",
+    "d": "Electrical connection and drain tie-in with proper trap/vent"
+   },
+   "distractorExplanations": {
+    "a": "A disposal discharges through the sink's own trap and vent; it does not need a separate dedicated vent.",
+    "b": "Disposals take no water supply connection; manufacturers advise running cold water so fats solidify and flush.",
+    "c": "Every fixture drain needs a trap; a disposal connects to the sink trap and cannot bypass it to the building drain."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-007": {
+   "options": {
+    "a": "Hot/cold supply and GFCI-protected electrical outlet nearby",
+    "b": "A dedicated vent stack and its own 3-inch trap",
+    "c": "A tee off the toilet supply with no vacuum breaker",
+    "d": "A hardwired 240-volt circuit installed without GFCI protection"
+   },
+   "distractorExplanations": {
+    "b": "A bidet uses a small 1-1/4 inch trap tied into normal venting; it does not need its own stack or a 3-inch trap.",
+    "c": "Bidet sprays create back-siphonage risk; codes require backflow protection such as an air gap or vacuum breaker.",
+    "d": "Electric bidet seats plug into a 120 V receptacle that needs GFCI protection in a bathroom, not a 240 V circuit."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-008": {
+   "options": {
+    "a": "Floor-mounted water closets on a cast iron closet bend",
+    "b": "Wall-hung fixtures like lavatories and water closets",
+    "c": "Horizontal drain piping hung from the floor joists above",
+    "d": "Water heaters mounted on a platform above the floor"
+   },
+   "distractorExplanations": {
+    "a": "Floor-mount toilets bolt to the closet flange; carriers hold wall-hung fixtures off the floor from inside the wall.",
+    "c": "Pipe hangers and straps support horizontal drains; a carrier is a frame that anchors wall-hung fixtures.",
+    "d": "Water heater stands are not carriers; carriers anchor wall-hung lavatories, urinals, and water closets."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-009": {
+   "options": {
+    "a": "Minimum handle rotation to keep water above 120°F",
+    "b": "Maximum flow rate to keep showers under 2.5 gpm",
+    "c": "Maximum handle rotation to cap hot water temperature",
+    "d": "Water heater thermostat setting for the whole house"
+   },
+   "distractorExplanations": {
+    "a": "Limit stops cap the maximum hot rotation to prevent scalding; they do not set a minimum outlet temperature.",
+    "b": "Flow is limited by the showerhead's restrictor; the limit stop restricts how far the handle turns toward hot.",
+    "d": "The heater thermostat sets storage temperature; a limit stop caps outlet temperature at one valve only."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-010": {
+   "options": {
+    "a": "Adhesive anchors set in drywall without blocking",
+    "b": "Rough-in set after tile so the spout height can be adjusted",
+    "c": "A deck-mount valve body installed in the sink's back ledge",
+    "d": "Correct rough-in dimensions and solid backing/blocking in wall"
+   },
+   "distractorExplanations": {
+    "a": "Drywall cannot carry faucet loads; wall-mount faucets need solid blocking behind and the correct rough-in.",
+    "b": "Wall-mount rough-in must be set before tile and wall close; it cannot be adjusted after finishes are installed.",
+    "c": "A deck-mount body is a different faucet type; wall-mount faucets need an in-wall valve body with backing."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-011": {
+   "options": {
+    "a": "High-pressure water from flush valve to cleanse fixture",
+    "b": "A gravity tank that refills by float valve after each flush",
+    "c": "Waterless cartridges that seal with a liquid barrier",
+    "d": "Compressed air from the building system to scour the bowl"
+   },
+   "distractorExplanations": {
+    "b": "Gravity tanks are residential water closet systems; flushometers use line pressure delivered through a flush valve.",
+    "c": "Waterless urinals use cartridges and no water; flushometer urinals deliver a pressurized water flush.",
+    "d": "Pressure-assist toilets use air in a tank; flushometer urinals rely on supply water pressure through the valve."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-012": {
+   "options": {
+    "a": "A floor drain with trap primer under the washer",
+    "b": "Recessed supply boxes with shutoffs and drain connection",
+    "c": "A surface-mounted air gap fitting for the washer discharge hose",
+    "d": "A dryer vent connection fitted with a backdraft damper"
+   },
+   "distractorExplanations": {
+    "a": "A floor pan or drain is optional protection; the washer box recesses the hot/cold valves and the standpipe drain.",
+    "c": "Washers discharge into a standpipe via an air break; the box is a recess for shutoffs and the drain opening.",
+    "d": "Dryer vent boxes are a separate item; the washing machine box houses supply valves and the standpipe drain."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-013": {
+   "options": {
+    "a": "Pedestal sinks with the rim at 36 inches maximum",
+    "b": "Twist-knob faucets and a rim height of 38 inches",
+    "c": "Clear knee space, height limits, and lever handles",
+    "d": "Exposed drain pipes left uninsulated for inspection"
+   },
+   "distractorExplanations": {
+    "a": "ADA limits lavatory rim height to 34 inches and requires knee clearance, which pedestal bases block.",
+    "b": "ADA requires controls operable without tight grasping or twisting and a rim no higher than 34 inches.",
+    "d": "ADA requires hot water and drain pipes under accessible lavatories to be insulated or shielded to protect knees."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-014": {
+   "options": {
+    "a": "Uses a heat-trace cable to keep the valve warm",
+    "b": "Contains an antifreeze reservoir in the valve body",
+    "c": "Keeps water pressurized in the barrel to resist ice",
+    "d": "Shuts water inside heated space to prevent freezing"
+   },
+   "distractorExplanations": {
+    "a": "Frost-free sillcocks need no heat trace; the long stem places the valve seat inside the heated wall cavity.",
+    "b": "There is no antifreeze; the valve seat sits inside the building and the barrel drains when the valve is shut.",
+    "c": "Pressurized water in the barrel would freeze; frost-free designs drain the barrel so no water stays outside."
+   }
+  },
+  "plumbing-journeyman-readiness-check-fixtures-015": {
+   "options": {
+    "a": "Before walls close to verify layout, slope, and connections",
+    "b": "After fixtures are set to verify flow and drainage",
+    "c": "After drywall but before tile to check pipe supports",
+    "d": "Before underground piping is installed to verify trench depth"
+   },
+   "distractorExplanations": {
+    "b": "That is the final inspection; rough-in inspection happens before walls close while the piping is exposed.",
+    "c": "Supports and joints must be visible; once drywall is up the piping is concealed and rough-in cannot be verified.",
+    "d": "Underground inspection is a separate, earlier step on installed buried pipe; rough-in covers above-ground piping."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-002": {
+   "options": {
+    "a": "ICC (International Code Council), which also publishes the IPC",
+    "b": "NFPA (National Fire Protection Association), publisher of NFPA 54",
+    "c": "IAPMO (International Association of Plumbing and Mechanical Officials)",
+    "d": "ASME (American Society of Mechanical Engineers) via A112 standards"
+   },
+   "distractorExplanations": {
+    "a": "ICC publishes the International Plumbing Code (IPC); the Uniform Plumbing Code is IAPMO's model code.",
+    "b": "NFPA publishes fire and fuel-gas codes such as NFPA 54 and NFPA 13; it does not publish the Uniform Plumbing Code.",
+    "d": "ASME A112 covers plumbing fixture and fitting standards; ASME does not publish the UPC model code."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-003": {
+   "options": {
+    "a": "The model code publisher that writes the code text",
+    "b": "The general contractor responsible for the whole project",
+    "c": "The product listing agency that certifies fixtures",
+    "d": "Local official/office enforcing code and issuing permits"
+   },
+   "distractorExplanations": {
+    "a": "ICC and IAPMO write model codes but have no enforcement power; the AHJ is the local enforcing official or office.",
+    "b": "Contractors must comply with the code; the AHJ is the government official or office that enforces it.",
+    "c": "Listing agencies such as UL or IAPMO R&T certify products; the AHJ decides approval and enforces the code."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-004": {
+   "options": {
+    "a": "Ensures code compliance and inspection for public health/safety",
+    "b": "Transfers liability for any defects from the plumber to the city",
+    "c": "Registers the installed fixtures for manufacturer warranty",
+    "d": "Records the job for property tax reassessment purposes"
+   },
+   "distractorExplanations": {
+    "b": "A permit does not shift liability to the jurisdiction; it triggers inspections that verify code compliance.",
+    "c": "Warranties are registered with manufacturers; permits exist so the AHJ can inspect work for health and safety.",
+    "d": "Assessors may see permit data, but the code purpose of a plumbing permit is inspection for public health."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-005": {
+   "options": {
+    "a": "Prevent sewer gas from entering occupied spaces",
+    "b": "Prevent potable water contamination",
+    "c": "Keep stormwater out of sanitary sewers",
+    "d": "Reduce water main pressure surges"
+   },
+   "distractorExplanations": {
+    "a": "Sewer gas is controlled by traps and vents; cross-connection control protects the potable supply from backflow.",
+    "c": "Inflow and infiltration programs address stormwater in sewers; cross-connection control protects drinking water.",
+    "d": "Surge control is a hydraulics issue; cross-connection programs require backflow assemblies to stop contamination."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-006": {
+   "options": {
+    "a": "Labeled by the manufacturer as suitable for plumbing",
+    "b": "Accepted by the contractor based on past field experience",
+    "c": "Listed/accepted for specific use by code or testing standard",
+    "d": "Approved for any plumbing use once listed for one use"
+   },
+   "distractorExplanations": {
+    "a": "A manufacturer's own label is not approval; materials must be listed to a recognized standard and accepted by the AHJ.",
+    "b": "Contractor preference is not code approval; the AHJ accepts materials listed to the referenced standards.",
+    "d": "Listing is use-specific; a pipe listed for DWV service is not thereby approved for potable pressure service."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-007": {
+   "options": {
+    "a": "1/2 inch (check local code table)",
+    "b": "3/4 inch (check local code table)",
+    "c": "1 inch nominal (check local code table)",
+    "d": "1-1/2 inches (check local code table)"
+   },
+   "distractorExplanations": {
+    "a": "1/2 inch is a supply size; the code minimum vent is 1-1/4 in, and a bathroom group vent typically starts at 1-1/2 in.",
+    "b": "3/4 inch is below the code minimum vent diameter of 1-1/4 inches; vents that small choke and let trap seals siphon.",
+    "c": "1 inch is still under the 1-1/4 inch minimum vent size, so it cannot vent a bathroom group."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-008": {
+   "options": {
+    "a": "Fixture unit method and developed length/pressure available",
+    "b": "Drainage fixture units and the slope of the building drain",
+    "c": "Pipe velocity alone, ignoring friction loss over length",
+    "d": "The meter size alone, matched to the main shutoff"
+   },
+   "distractorExplanations": {
+    "b": "DFUs and slope size the drainage system; supply piping uses water supply fixture units, length, and pressure.",
+    "c": "Velocity limits matter, but sizing also accounts for friction loss over developed length and available pressure.",
+    "d": "The meter is one input; branches are sized from fixture units, developed length, and the pressure available."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-009": {
+   "options": {
+    "a": "Connect to potable supply lines through a single check valve",
+    "b": "Meet code for separation, filtration, and approved uses",
+    "c": "Store untreated gray water for at least 72 hours",
+    "d": "Include kitchen sink and toilet waste in the system"
+   },
+   "distractorExplanations": {
+    "a": "Gray water may not be cross-connected to potable piping; a single check valve is not acceptable protection.",
+    "c": "Codes limit how long untreated gray water may be held (often 24 hours) to prevent odor and bacterial growth.",
+    "d": "Toilet waste is blackwater and many codes exclude kitchen sinks; gray water comes from lavatories, showers, laundry."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-010": {
+   "options": {
+    "a": "Plan view of pipe routing drawn to scale from above",
+    "b": "Elevation view of fixture heights on one wall only",
+    "c": "3D-like view of pipe routing for layout understanding",
+    "d": "Cross-section of the building showing structural loads"
+   },
+   "distractorExplanations": {
+    "a": "Plan views show piping from above in two dimensions; isometrics draw runs at 30-degree angles to convey 3D routing.",
+    "b": "Elevations show one face in 2D; an isometric shows the whole piping system in a single 3D-style view.",
+    "d": "Structural sections are architectural or engineering sheets; isometric plumbing drawings depict pipe routing."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-011": {
+   "options": {
+    "a": "Electrical wiring for water heaters, pumps, and disposals",
+    "b": "Structural framing and notching around plumbing penetrations",
+    "c": "Utility rates charged for municipal water service",
+    "d": "Plumbing in food establishments and public health facilities"
+   },
+   "distractorExplanations": {
+    "a": "Electrical wiring is enforced by the electrical inspector; health departments regulate sanitary plumbing in food sites.",
+    "b": "Notching and boring limits are building-code structural issues; health departments oversee public health plumbing.",
+    "c": "Rates are set by the utility or public service commission; health departments regulate sanitation and safe water."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-012": {
+   "options": {
+    "a": "Backflow preventers and plumbing devices",
+    "b": "Fitting dimensions published in the B16 series",
+    "c": "Model plumbing code text adopted by states",
+    "d": "Fire sprinkler system installation rules"
+   },
+   "distractorExplanations": {
+    "b": "B16 fitting standards are published by ASME; ASSE standards focus on plumbing devices such as backflow preventers.",
+    "c": "Model codes come from ICC (IPC) and IAPMO (UPC); ASSE writes performance standards for plumbing devices.",
+    "d": "Sprinkler installation is covered by NFPA 13; ASSE covers backflow preventers and other plumbing device standards."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-013": {
+   "options": {
+    "a": "Apply to a single permit rather than the jurisdiction",
+    "b": "Modify model code for regional conditions",
+    "c": "Take effect without formal adoption by ordinance",
+    "d": "Replace the model code with manufacturer instructions"
+   },
+   "distractorExplanations": {
+    "a": "Amendments are adopted by ordinance and apply jurisdiction-wide; a one-job deviation is a variance or modification.",
+    "c": "Amendments must be formally adopted by the governing body; informal inspector preferences are not code amendments.",
+    "d": "Manufacturer instructions apply through listings; amendments are jurisdiction-adopted edits to the model code."
+   }
+  },
+  "plumbing-journeyman-readiness-check-code-014": {
+   "options": {
+    "a": "5 ft head of water or 3 psi air for 15 minutes with no drop",
+    "b": "10 ft head of water or 5 psi air for 5 minutes with no drop",
+    "c": "10 ft head of water or 5 psi air for 15 minutes with no drop",
+    "d": "100 psi water or 50 psi air for 15 minutes with no pressure drop"
+   },
+   "distractorExplanations": {
+    "a": "Values are too low; the DWV test is a 10 ft water head or 5 psi air held for 15 minutes without loss.",
+    "b": "Duration is wrong: the head or air pressure must hold for 15 minutes, not 5, for the DWV test to pass.",
+    "d": "Those are water-supply test pressures (IPC 312.5); DWV piping is tested with a 10 ft head or 5 psi air."
+   }
+  }
+ }
+}

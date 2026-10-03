@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Only water color"
+        "text": "Contact time alone, since concentration matters little"
       },
       {
         "id": "c",
-        "text": "Ambient air pressure without water chemistry"
+        "text": "Chlorine feed rate in lb/day, not residual in the water"
       },
       {
         "id": "d",
-        "text": "Filter media depth as sole factor"
+        "text": "Filter media depth and filter loading rate"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Chlorine disinfection effectiveness depends strongly on”. The matching rule is: Contact time and residual concentration (CT concept). Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“Only water color” does not answer “Chlorine disinfection effectiveness depends strongly on”. The matching answer is: Contact time and residual concentration (CT concept).",
-      "c": "“Ambient air pressure without water chemistry” does not answer “Chlorine disinfection effectiveness depends strongly on”. The matching answer is: Contact time and residual concentration (CT concept).",
-      "d": "“Filter media depth as sole factor” does not answer “Chlorine disinfection effectiveness depends strongly on”. The matching answer is: Contact time and residual concentration (CT concept)."
+      "b": "CT is the product of residual concentration and contact time; both drive inactivation, not time alone.",
+      "c": "Feed rate ignores chlorine demand; inactivation depends on the residual that remains over the contact time.",
+      "d": "Filtration is a separate barrier; chlorine effectiveness depends on CT along with pH and temperature."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Instant free chlorine from first drop always without demand"
+        "text": "Free residual rising in step with every dose from the start"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "Only fluoride addition effects"
+        "text": "The dose at which chloramines begin to form from ammonia"
       },
       {
         "id": "d",
-        "text": "Sludge volume"
+        "text": "The point where the total residual reaches its maximum"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “A breakpoint chlorination curve shows”. The matching rule is: Chlorine demand consumed until free residual appears. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Instant free chlorine from first drop always without demand” does not answer “A breakpoint chlorination curve shows”. The matching answer is: Chlorine demand consumed until free residual appears.",
-      "c": "“Only fluoride addition effects” does not answer “A breakpoint chlorination curve shows”. The matching answer is: Chlorine demand consumed until free residual appears.",
-      "d": "“Sludge volume” does not answer “A breakpoint chlorination curve shows”. The matching answer is: Chlorine demand consumed until free residual appears."
+      "a": "Before breakpoint, chlorine is consumed by demand and forms chloramines; free residual appears only after breakpoint.",
+      "c": "Chloramines form early on the curve; breakpoint is where they are destroyed and free residual starts to build.",
+      "d": "The combined-residual hump comes before breakpoint; breakpoint is the dip after chloramines are destroyed."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Iron filings permanently"
+        "text": "Calcium ions released from the resin"
       },
       {
         "id": "b",
-        "text": "Chlorine gas in resin"
+        "text": "Hydrogen ions from a weak-base resin"
       },
       {
         "id": "c",
-        "text": "Silica sand without resin"
+        "text": "Chloride ions from the brine solution"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Ion exchange softening replaces hardness ions with:”. The matching rule is: Sodium (or potassium) on resin beads. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Iron filings permanently always” does not answer “Ion exchange softening replaces hardness ions with:”. The matching answer is: Sodium (or potassium) on resin beads.",
-      "b": "“Chlorine gas in resin” does not answer “Ion exchange softening replaces hardness ions with:”. The matching answer is: Sodium (or potassium) on resin beads.",
-      "c": "“Silica sand without resin always” does not answer “Ion exchange softening replaces hardness ions with:”. The matching answer is: Sodium (or potassium) on resin beads."
+      "a": "Calcium is a hardness ion being removed; softening resin releases sodium or potassium in exchange.",
+      "b": "Weak-base resins are anion exchangers; softening uses a cation resin in the sodium (or potassium) form.",
+      "c": "Chloride is an anion and stays with the brine; cation exchange swaps calcium and magnesium for sodium."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Lowering pH to dissolve all minerals as softening method"
+        "text": "Lowering pH so calcium and magnesium stay dissolved as bicarbonate"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "Filtering through paper"
+        "text": "Raising pH to form calcium hydroxide and magnesium carbonate precipitates"
       },
       {
         "id": "d",
-        "text": "Boiling in all municipal plants as only method"
+        "text": "Adding soda ash to oxidize hardness into a filterable floc"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “Lime-soda ash softening precipitates hardness by:”. The matching rule is: Raising pH to form calcium carbonate and magnesium hydroxide precipitates. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Lowering pH to dissolve all minerals as softening method” does not answer “Lime-soda ash softening precipitates hardness by:”. The matching answer is: Raising pH to form calcium carbonate and magnesium hydroxide precipitates.",
-      "c": "“Filtering through paper” does not answer “Lime-soda ash softening precipitates hardness by:”. The matching answer is: Raising pH to form calcium carbonate and magnesium hydroxide precipitates.",
-      "d": "“Boiling in all municipal plants as only method” does not answer “Lime-soda ash softening precipitates hardness by:”. The matching answer is: Raising pH to form calcium carbonate and magnesium hydroxide precipitates."
+      "a": "Lowering pH keeps hardness in solution; lime raises pH so hardness precipitates and can be removed.",
+      "c": "Swaps the precipitates: calcium leaves as calcium carbonate and magnesium as magnesium hydroxide.",
+      "d": "Soda ash supplies carbonate for noncarbonate hardness; softening is precipitation, not oxidation."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Disinfect water as primary purpose always replacing chlorine"
+        "text": "Reduce dental caries by dosing to the primary MCL level"
       },
       {
         "id": "b",
-        "text": "Increase water hardness always as fluoride goal"
+        "text": "Prevent skeletal fluorosis in children who drink tap water"
       },
       {
         "id": "c",
-        "text": "Remove all minerals"
+        "text": "Provide secondary disinfection in the distribution system"
       },
       {
         "id": "d",
-        "text": "Reduce dental caries at optimal concentration (~0.7 mg/L target historically adjusted)"
+        "text": "Reduce dental caries at optimal concentration (~0.7 mg/L)"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “Fluoridation in public water supplies aims to:”. The matching rule is: Reduce dental caries at optimal concentration (~0.7 mg/L target historically adjusted). Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "This item asks: “Fluoridation in public water supplies aims to:”. The matching rule is: Reduce dental caries at optimal concentration (~0.7 mg/L target historically adjusted). Independent UniPrep diagnostic — not a state board exam paper. The 0.7 mg/L target was set by the U.S. Public Health Service in 2015.",
     "distractorExplanations": {
-      "a": "“Disinfect water as primary purpose always replacing chlorine” does not answer “Fluoridation in public water supplies aims to:”. The matching answer is: Reduce dental caries at optimal concentration (~0.7 mg/L target historically adjusted).",
-      "b": "“Increase water hardness always as fluoride goal” does not answer “Fluoridation in public water supplies aims to:”. The matching answer is: Reduce dental caries at optimal concentration (~0.7 mg/L target historically adjusted).",
-      "c": "“Remove all minerals” does not answer “Fluoridation in public water supplies aims to:”. The matching answer is: Reduce dental caries at optimal concentration (~0.7 mg/L target historically adjusted)."
+      "a": "The fluoride MCL (4.0 mg/L) is a health ceiling, not a dosing target; optimal fluoridation is 0.7 mg/L.",
+      "b": "Skeletal fluorosis is a harm of excess fluoride; community fluoridation targets dental caries reduction.",
+      "c": "Fluoride has no disinfecting role; chlorine or chloramine provides the distribution system residual."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -407,23 +407,23 @@
       },
       {
         "id": "b",
-        "text": "Maximize pipe corrosion always as goal"
+        "text": "Lower pH so chlorine residual stays more effective in the pipes"
       },
       {
         "id": "c",
-        "text": "Eliminate all chlorine residual"
+        "text": "Dissolve existing scale so pipes return to bare metal"
       },
       {
         "id": "d",
-        "text": "Increase turbidity"
+        "text": "Raise turbidity so particles coat the pipe interior"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Corrosion control often adjusts pH and alkalinity to:”. The matching rule is: Form protective scale and minimize lead/copper leaching from pipes. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“Maximize pipe corrosion always as goal” does not answer “Corrosion control often adjusts pH and alkalinity to:”. The matching answer is: Form protective scale and minimize lead/copper leaching from pipes.",
-      "c": "“Eliminate all chlorine residual” does not answer “Corrosion control often adjusts pH and alkalinity to:”. The matching answer is: Form protective scale and minimize lead/copper leaching from pipes.",
-      "d": "“Increase turbidity” does not answer “Corrosion control often adjusts pH and alkalinity to:”. The matching answer is: Form protective scale and minimize lead/copper leaching from pipes."
+      "b": "Lowering pH increases corrosivity and lead release; corrosion control usually raises pH and alkalinity.",
+      "c": "Corrosion control aims to build and keep a protective scale, not strip pipes to bare metal.",
+      "d": "Turbidity is minimized in treatment; protective layers come from carbonate scale or orthophosphate films."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer billing cycles"
+        "text": "Filter run length and backwash timing for filters"
       },
       {
         "id": "b",
-        "text": "Fire pump flow"
+        "text": "Chlorine demand and the dose needed for breakpoint"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "Employee scheduling"
+        "text": "Corrosion rate of pipe coupons in finished water"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Jar tests in a treatment plant laboratory simulate”. The matching rule is: Optimal coagulant dose and pH for floc formation. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Customer billing cycles” does not answer “Jar tests in a treatment plant laboratory simulate”. The matching answer is: Optimal coagulant dose and pH for floc formation.",
-      "b": "“Fire pump flow” does not answer “Jar tests in a treatment plant laboratory simulate”. The matching answer is: Optimal coagulant dose and pH for floc formation.",
-      "d": "“Employee scheduling” does not answer “Jar tests in a treatment plant laboratory simulate”. The matching answer is: Optimal coagulant dose and pH for floc formation."
+      "a": "Filter performance is tracked with headloss and turbidity; jar tests simulate coagulation and flocculation.",
+      "b": "Chlorine demand is measured with a demand test; jar tests optimize coagulant dose and pH.",
+      "d": "Corrosion is studied with coupons or pipe loops; jar tests simulate coagulation and settling."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -539,23 +539,23 @@
       },
       {
         "id": "b",
-        "text": "Exact count of viruses always precisely always from coliform alone"
+        "text": "The exact number of pathogenic viruses in the sample"
       },
       {
         "id": "c",
-        "text": "Water hardness"
+        "text": "Chlorine residual adequacy at the sampling tap"
       },
       {
         "id": "d",
-        "text": "Fluoride concentration"
+        "text": "Presence of Giardia cysts in the finished water specifically"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Coliform bacteria testing indicates”. The matching rule is: Potential pathway for pathogens; sanitary quality indicator. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“Exact count of viruses always precisely always from coliform alone” does not answer “Coliform bacteria testing indicates”. The matching answer is: Potential pathway for pathogens; sanitary quality indicator.",
-      "c": "“Water hardness” does not answer “Coliform bacteria testing indicates”. The matching answer is: Potential pathway for pathogens; sanitary quality indicator.",
-      "d": "“Fluoride concentration” does not answer “Coliform bacteria testing indicates”. The matching answer is: Potential pathway for pathogens; sanitary quality indicator."
+      "b": "Coliforms are indicator organisms; their presence suggests a contamination pathway but does not count viruses.",
+      "c": "Residual is measured with DPD or amperometric methods; coliform tests indicate sanitary quality.",
+      "d": "Coliform tests do not identify protozoa; Giardia requires specific methods such as EPA Method 1623."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -601,11 +601,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only fluoride"
+        "text": "Free chlorine minus the chlorine demand of water"
       },
       {
         "id": "b",
-        "text": "Only dissolved iron"
+        "text": "Combined chlorine only, mainly monochloramine"
       },
       {
         "id": "c",
@@ -613,15 +613,15 @@
       },
       {
         "id": "d",
-        "text": "Only turbidity"
+        "text": "Free chlorine plus chlorine dioxide residual"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Total chlorine residual includes:”. The matching rule is: Free available chlorine plus combined chlorine. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Only fluoride” does not answer “Total chlorine residual includes:”. The matching answer is: Free available chlorine plus combined chlorine.",
-      "b": "“Only dissolved iron” does not answer “Total chlorine residual includes:”. The matching answer is: Free available chlorine plus combined chlorine.",
-      "d": "“Only turbidity” does not answer “Total chlorine residual includes:”. The matching answer is: Free available chlorine plus combined chlorine."
+      "a": "Dose minus demand equals the residual; total residual is free chlorine plus combined chlorine.",
+      "b": "Combined chlorine is only part of the total; total residual also includes free available chlorine.",
+      "d": "Chlorine dioxide is a separate disinfectant; total chlorine is free plus combined chlorine (chloramines)."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -634,15 +634,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Grab always averages a week automatically without collector"
+        "text": "Grab combines samples over time; composite is a single point"
       },
       {
         "id": "b",
-        "text": "Composite is always one second"
+        "text": "Grab is collected by autosampler; composite is collected by hand"
       },
       {
         "id": "c",
-        "text": "Both identical"
+        "text": "Grab is used for BOD; composite is used for chlorine residual"
       },
       {
         "id": "d",
@@ -652,9 +652,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Grab sample vs composite sample”. The matching rule is: Grab is single point in time; composite combines over time/flow. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Grab always averages a week automatically without collector” does not answer “Grab sample vs composite sample”. The matching answer is: Grab is single point in time; composite combines over time/flow.",
-      "b": "“Composite is always one second only” does not answer “Grab sample vs composite sample”. The matching answer is: Grab is single point in time; composite combines over time/flow.",
-      "c": "“Both identical” does not answer “Grab sample vs composite sample”. The matching answer is: Grab is single point in time; composite combines over time/flow."
+      "a": "Reverses the definitions: a grab is one moment in time, a composite blends portions over time or flow.",
+      "b": "Collection method does not define the type; either sample can be taken manually or automatically.",
+      "c": "Chlorine residual needs an immediate grab analysis, while BOD is often a composite sample."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Samples can be altered without record"
+        "text": "Samples are analyzed within holding time by the lab"
       },
       {
         "id": "c",
-        "text": "No identification of sampler required"
+        "text": "The lab result is checked against the MCL before it is formally reported"
       },
       {
         "id": "d",
-        "text": "Results need not be reported"
+        "text": "Sampling sites are chosen according to the site plan"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Chain of custody documentation ensures”. The matching rule is: Sample integrity and traceability from collection to lab analysis. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“Samples can be altered without record” does not answer “Chain of custody documentation ensures”. The matching answer is: Sample integrity and traceability from collection to lab analysis.",
-      "c": "“No identification of sampler required always” does not answer “Chain of custody documentation ensures”. The matching answer is: Sample integrity and traceability from collection to lab analysis.",
-      "d": "“Results need not be reported” does not answer “Chain of custody documentation ensures”. The matching answer is: Sample integrity and traceability from collection to lab analysis."
+      "b": "Holding time is a method requirement; chain of custody documents possession and handling of the sample.",
+      "c": "Chain of custody does not evaluate results; it documents who handled the sample and when.",
+      "d": "Site selection comes from the sampling plan; chain of custody tracks the sample after collection."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Conduct electricity defining alkalinity"
+        "text": "Neutralize base (acidity capacity)"
       },
       {
         "id": "b",
@@ -708,19 +708,19 @@
       },
       {
         "id": "c",
-        "text": "Float oil"
+        "text": "Cause hardness scaling (calcium ions)"
       },
       {
         "id": "d",
-        "text": "Measure chlorine"
+        "text": "Conduct current (dissolved ion total)"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “Alkalinity in water measures capacity to:”. The matching rule is: Neutralize acid (buffering capacity). Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Conduct electricity defining alkalinity” does not answer “Alkalinity in water measures capacity to:”. The matching answer is: Neutralize acid (buffering capacity).",
-      "c": "“Float oil” does not answer “Alkalinity in water measures capacity to:”. The matching answer is: Neutralize acid (buffering capacity).",
-      "d": "“Measure chlorine” does not answer “Alkalinity in water measures capacity to:”. The matching answer is: Neutralize acid (buffering capacity)."
+      "a": "The capacity to neutralize base is acidity; alkalinity is the capacity to neutralize acid.",
+      "c": "Hardness is calcium and magnesium; alkalinity is bicarbonate, carbonate, and hydroxide buffering.",
+      "d": "That describes conductivity or TDS; alkalinity specifically measures acid-neutralizing capacity."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -733,11 +733,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Total dissolved solids"
+        "text": "Total oxygen demand from chemical oxidation in two hours"
       },
       {
         "id": "b",
-        "text": "Free chlorine"
+        "text": "Dissolved oxygen present at the time of sampling"
       },
       {
         "id": "c",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "Radioactivity"
+        "text": "Inorganic chemicals reacting with chlorine in the water"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “BOD (Biochemical Oxygen Demand) indicates”. The matching rule is: Organic pollution consuming oxygen over incubation period. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Total dissolved solids” does not answer “BOD (Biochemical Oxygen Demand) indicates”. The matching answer is: Organic pollution consuming oxygen over incubation period.",
-      "b": "“Free chlorine” does not answer “BOD (Biochemical Oxygen Demand) indicates”. The matching answer is: Organic pollution consuming oxygen over incubation period.",
-      "d": "“Radioactivity” does not answer “BOD (Biochemical Oxygen Demand) indicates”. The matching answer is: Organic pollution consuming oxygen over incubation period."
+      "a": "That describes COD (chemical oxidation); BOD is biological oxygen uptake over a five-day incubation.",
+      "b": "DO is a single reading; BOD measures the oxygen consumed during incubation.",
+      "d": "That describes chlorine demand; BOD reflects biodegradable organic matter."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -766,15 +766,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Boiling sample until all bacteria explode visibly"
+        "text": "Adding a reagent to the sample bottle and reading color after 24 hours"
       },
       {
         "id": "b",
-        "text": "Weighing sludge on truck scale"
+        "text": "Inoculating serial dilutions into tubes and counting positive tubes"
       },
       {
         "id": "c",
-        "text": "Tasting sample for sweetness"
+        "text": "Filtering sample through membrane then reading turbidity on the filter"
       },
       {
         "id": "d",
@@ -784,9 +784,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Membrane filter technique for coliforms uses”. The matching rule is: Filtering sample through membrane then incubating on selective media. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Boiling sample until all bacteria explode visibly” does not answer “Membrane filter technique for coliforms uses”. The matching answer is: Filtering sample through membrane then incubating on selective media.",
-      "b": "“Weighing sludge on truck scale” does not answer “Membrane filter technique for coliforms uses”. The matching answer is: Filtering sample through membrane then incubating on selective media.",
-      "c": "“Tasting sample for sweetness” does not answer “Membrane filter technique for coliforms uses”. The matching answer is: Filtering sample through membrane then incubating on selective media."
+      "a": "That is the enzyme-substrate (presence/absence) method such as Colilert, not membrane filtration.",
+      "b": "That is the multiple-tube fermentation (MPN) method, not the membrane filter technique.",
+      "c": "Colonies are grown on selective media and counted; turbidity is not read on the membrane."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Novel fiction"
+        "text": "EPA regulation that sets MCLs for drinking water"
       },
       {
         "id": "c",
-        "text": "Employee handbook for vacation"
+        "text": "AWWA standard for pipe, valves, and treatment chemicals in water systems"
       },
       {
         "id": "d",
-        "text": "Pipe fitting catalog"
+        "text": "OSHA guide to laboratory chemical safety practices"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Standard Methods for Examination of Water and Wastewater is”. The matching rule is: Authoritative reference for approved analytical procedures. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "Technical reference.",
-      "c": "Analytical manual.",
-      "d": "Equipment may be referenced."
+      "b": "MCLs are set in 40 CFR Part 141; Standard Methods is an analytical reference published by APHA, AWWA, and WEF.",
+      "c": "AWWA product standards (such as the C-series) are separate; Standard Methods covers laboratory analyses.",
+      "d": "Lab safety falls under the OSHA Laboratory Standard; Standard Methods covers analytical procedures."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Hardness with DPD"
+        "text": "Free or total chlorine by electrode potential compared to buffers"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "Turbidity with DPD"
+        "text": "Combined chlorine only, by titration with sodium thiosulfate"
       },
       {
         "id": "d",
-        "text": "Bacteria count directly always with DPD"
+        "text": "Turbidity by light scattered at 90 degrees from the sample"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “Colorimetric chlorine test (DPD method) measures”. The matching rule is: Free or total chlorine by color intensity compared to standards. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Hardness with DPD” does not answer “Colorimetric chlorine test (DPD method) measures”. The matching answer is: Free or total chlorine by color intensity compared to standards.",
-      "c": "“Turbidity with DPD” does not answer “Colorimetric chlorine test (DPD method) measures”. The matching answer is: Free or total chlorine by color intensity compared to standards.",
-      "d": "“Bacteria count directly always with DPD” does not answer “Colorimetric chlorine test (DPD method) measures”. The matching answer is: Free or total chlorine by color intensity compared to standards."
+      "a": "Electrode or amperometric methods are different techniques; DPD is colorimetric.",
+      "c": "DPD measures free (and total with iodide) chlorine by color; thiosulfate titration is an iodometric method.",
+      "d": "Light scattered at 90 degrees is nephelometric turbidity; DPD measures chlorine by color development."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -865,11 +865,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Adding sugar to feed bacteria"
+        "text": "Raising pH above 12 with sodium hydroxide before shipping"
       },
       {
         "id": "b",
-        "text": "Heating to boiling before shipping"
+        "text": "Adding sodium thiosulfate to neutralize residual chlorine"
       },
       {
         "id": "c",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "Leaving uncapped in sunlight as preservation"
+        "text": "Cooling to 4 °C without acid for up to six months"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Preservation of samples for metals analysis often requires:”. The matching rule is: Acidification to pH <2 to prevent precipitation/adsorption. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Adding sugar to feed bacteria” does not answer “Preservation of samples for metals analysis often requires:”. The matching answer is: Acidification to pH <2 to prevent precipitation/adsorption.",
-      "b": "“Heating to boiling before shipping” does not answer “Preservation of samples for metals analysis often requires:”. The matching answer is: Acidification to pH <2 to prevent precipitation/adsorption.",
-      "d": "“Leaving uncapped in sunlight as preservation” does not answer “Preservation of samples for metals analysis often requires:”. The matching answer is: Acidification to pH <2 to prevent precipitation/adsorption."
+      "a": "Sodium hydroxide to pH >12 is cyanide preservation; metals are acidified with nitric acid to pH <2.",
+      "b": "Thiosulfate dechlorinates bacteriological samples; metals need nitric acid to pH <2.",
+      "d": "Cooling alone does not stop metals adsorbing to bottle walls; acidification is what allows the six-month hold."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only random guessing"
+        "text": "Rerunning samples until results match the prior month"
       },
       {
         "id": "b",
-        "text": "Deleting outlier data without documentation as policy"
+        "text": "Annual instrument calibration with no daily checks"
       },
       {
         "id": "c",
-        "text": "Avoiding calibration"
+        "text": "Discarding outliers to keep control charts clean"
       },
       {
         "id": "d",
@@ -916,9 +916,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “QA/QC in the laboratory includes:”. The matching rule is: Blanks, duplicates, spikes, and control charts. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Only random guessing” does not answer “QA/QC in the laboratory includes:”. The matching answer is: Blanks, duplicates, spikes, and control charts.",
-      "b": "“Deleting outlier data without documentation as policy” does not answer “QA/QC in the laboratory includes:”. The matching answer is: Blanks, duplicates, spikes, and control charts.",
-      "c": "“Avoiding calibration” does not answer “QA/QC in the laboratory includes:”. The matching answer is: Blanks, duplicates, spikes, and control charts."
+      "a": "Rerunning until results agree is data manipulation; QC relies on blanks, duplicates, and spikes.",
+      "b": "QC requires routine calibration verification, not annual calibration alone.",
+      "c": "Outliers must be investigated and documented, not discarded to make control charts look clean."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No action hiding results"
+        "text": "Notification to the state only, with public notice optional"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Only verbal notice to one employee sufficient federally"
+        "text": "Public notice in the next annual CCR, without state contact"
       },
       {
         "id": "d",
-        "text": "Destroying records"
+        "text": "Notification to EPA headquarters within 30 days"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “Reporting MCL violations requires:”. The matching rule is: Notification to state agency and public per regulations. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“No action hiding results” does not answer “Reporting MCL violations requires:”. The matching answer is: Notification to state agency and public per regulations.",
-      "c": "“Only verbal notice to one employee sufficient federally” does not answer “Reporting MCL violations requires:”. The matching answer is: Notification to state agency and public per regulations.",
-      "d": "“Destroying records” does not answer “Reporting MCL violations requires:”. The matching answer is: Notification to state agency and public per regulations."
+      "a": "The Public Notification Rule requires notice to consumers as well as reporting to the state.",
+      "c": "Violations need state reporting (usually within 48 hours) and tiered public notice, not a CCR mention alone.",
+      "d": "Violations are reported to the primacy agency, usually the state, typically within 48 hours."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Enter immediately without respiratory protection"
+        "text": "Evacuate downwind, notify emergency response, use SCBA for entry"
       },
       {
         "id": "b",
-        "text": "Hide leak from supervisors"
+        "text": "Evacuate upwind, then re-enter with an air-purifying respirator"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Use only dust mask for chlorine as adequate"
+        "text": "Spray water directly on the leaking chlorine cylinder to cool it"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Chlorine gas leaks require operators to:”. The matching rule is: Evacuate upwind, notify emergency response, use SCBA for entry. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Enter immediately without respiratory protection” does not answer “Chlorine gas leaks require operators to:”. The matching answer is: Evacuate upwind, notify emergency response, use SCBA for entry.",
-      "b": "“Hide leak from supervisors” does not answer “Chlorine gas leaks require operators to:”. The matching answer is: Evacuate upwind, notify emergency response, use SCBA for entry.",
-      "d": "“Use only dust mask for chlorine as adequate” does not answer “Chlorine gas leaks require operators to:”. The matching answer is: Evacuate upwind, notify emergency response, use SCBA for entry."
+      "a": "Evacuation should be upwind and uphill; chlorine gas is heavier than air and drifts downwind.",
+      "b": "High or unknown chlorine concentrations require SCBA; air-purifying cartridges are inadequate.",
+      "d": "Water on a leaking container forms corrosive acid and enlarges the leak; use water fog only on the vapor cloud."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Solo entry without testing"
+        "text": "Permit and ventilation, with gas testing after entry"
       },
       {
         "id": "b",
-        "text": "Only flashlight without gas monitor"
+        "text": "Atmospheric testing and ventilation, with entry alone"
       },
       {
         "id": "c",
-        "text": "Opening hatch and jumping in sufficient"
+        "text": "Permit, testing for oxygen only, and an attendant"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Confined space entry at tanks requires:”. The matching rule is: Permit, atmospheric testing, ventilation, and attendant. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Solo entry without testing” does not answer “Confined space entry at tanks requires:”. The matching answer is: Permit, atmospheric testing, ventilation, and attendant.",
-      "b": "“Only flashlight without gas monitor” does not answer “Confined space entry at tanks requires:”. The matching answer is: Permit, atmospheric testing, ventilation, and attendant.",
-      "c": "“Opening hatch and jumping in sufficient” does not answer “Confined space entry at tanks requires:”. The matching answer is: Permit, atmospheric testing, ventilation, and attendant."
+      "a": "The atmosphere must be tested before entry and then monitored, not first tested after entry.",
+      "b": "Permit-required entry needs an attendant stationed outside; solo entry is not allowed.",
+      "c": "Testing must cover oxygen, flammable gases, and toxic gases, in that order, not oxygen alone."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignored because harmless"
+        "text": "Flushed straight to the floor drain with water"
       },
       {
         "id": "b",
-        "text": "Neutralized and cleaned with appropriate PPE avoiding skin/eye contact"
+        "text": "Neutralized and cleaned with appropriate PPE"
       },
       {
         "id": "c",
-        "text": "Mixed with acid without ventilation casually"
+        "text": "Neutralized with concentrated acid poured on quickly"
       },
       {
         "id": "d",
-        "text": "Tasted to confirm identity"
+        "text": "Absorbed with sawdust and left for the next shift"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Sodium hydroxide (caustic soda) spills should be”. The matching rule is: Neutralized and cleaned with appropriate PPE avoiding skin/eye contact. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "This item asks: “Sodium hydroxide (caustic soda) spills should be”. The matching rule is: Neutralized and cleaned with appropriate PPE avoiding skin/eye contact. Independent UniPrep diagnostic — not a state board exam paper. Avoid skin and eye contact during cleanup.",
     "distractorExplanations": {
-      "a": "“Ignored because harmless” does not answer “Sodium hydroxide (caustic soda) spills should be”. The matching answer is: Neutralized and cleaned with appropriate PPE avoiding skin/eye contact.",
-      "c": "“Mixed with acid without ventilation casually” does not answer “Sodium hydroxide (caustic soda) spills should be”. The matching answer is: Neutralized and cleaned with appropriate PPE avoiding skin/eye contact.",
-      "d": "“Tasted to confirm identity” does not answer “Sodium hydroxide (caustic soda) spills should be”. The matching answer is: Neutralized and cleaned with appropriate PPE avoiding skin/eye contact."
+      "a": "Caustic spills are contained and neutralized, not flushed to drains where they can harm the process or sewer.",
+      "c": "Concentrated acid reacts violently with caustic; a weak neutralizer or spill kit is used.",
+      "d": "Spills must be cleaned up promptly with compatible absorbents, not left for later."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1129,11 +1129,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Is safe to breathe in any concentration"
+        "text": "Is toxic, but not flammable, and smells strongest at high levels"
       },
       {
         "id": "b",
-        "text": "Only occurs in finished drinking water"
+        "text": "Is lighter than air and collects near the ceiling of wet wells"
       },
       {
         "id": "c",
@@ -1141,15 +1141,15 @@
       },
       {
         "id": "d",
-        "text": "Has no odor making detection impossible"
+        "text": "Is odorless and detected only by oxygen-deficiency meters"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Hydrogen sulfide (H₂S) at wastewater facilities”. The matching rule is: Is toxic, flammable, and detected by rotten egg odor at low levels. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Is safe to breathe in any concentration” does not answer “Hydrogen sulfide (H₂S) at wastewater facilities”. The matching answer is: Is toxic, flammable, and detected by rotten egg odor at low levels.",
-      "b": "“Only occurs in finished drinking water” does not answer “Hydrogen sulfide (H₂S) at wastewater facilities”. The matching answer is: Is toxic, flammable, and detected by rotten egg odor at low levels.",
-      "d": "“Has no odor making detection impossible” does not answer “Hydrogen sulfide (H₂S) at wastewater facilities”. The matching answer is: Is toxic, flammable, and detected by rotten egg odor at low levels."
+      "a": "H2S is flammable, and olfactory fatigue dulls the smell at high concentrations.",
+      "b": "H2S is heavier than air and collects in low spots such as wet well bottoms.",
+      "d": "H2S has a rotten-egg odor at low levels and needs a dedicated toxic H2S sensor."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Open-toed sandals"
+        "text": "Safety glasses, latex gloves, and a cotton lab coat"
       },
       {
         "id": "b",
-        "text": "No gloves to improve grip on acid"
+        "text": "Face shield alone, with chemical gloves and apron"
       },
       {
         "id": "c",
-        "text": "Only hearing protection"
+        "text": "Chemical goggles, leather gloves, and a dust mask"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Personal protective equipment for acid handling includes:”. The matching rule is: Face shield, chemical goggles, gloves, and apron. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Open-toed sandals” does not answer “Personal protective equipment for acid handling includes:”. The matching answer is: Face shield, chemical goggles, gloves, and apron.",
-      "b": "“No gloves to improve grip on acid” does not answer “Personal protective equipment for acid handling includes:”. The matching answer is: Face shield, chemical goggles, gloves, and apron.",
-      "c": "“Only hearing protection” does not answer “Personal protective equipment for acid handling includes:”. The matching answer is: Face shield, chemical goggles, gloves, and apron."
+      "a": "Safety glasses, latex, and cotton do not resist acid splash; goggles, shield, and chemical-resistant gear are needed.",
+      "b": "A face shield must be worn over chemical goggles; it is not adequate eye protection by itself.",
+      "c": "Leather is not acid resistant, and a dust mask provides no splash protection."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1199,23 +1199,23 @@
       },
       {
         "id": "b",
-        "text": "Customer water bills"
+        "text": "Dosing rates and feed calculations for the plant's treatment chemicals"
       },
       {
         "id": "c",
-        "text": "Only stock prices"
+        "text": "Purchase prices and supplier contracts for chemicals"
       },
       {
         "id": "d",
-        "text": "Pipe diameter"
+        "text": "Regulatory limits (MCLs) for chemicals in finished water"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Material Safety Data Sheet / Safety Data Sheet (SDS) provides”. The matching rule is: Hazards, handling, PPE, and emergency measures for chemicals. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "Billing document.",
-      "c": "Financial.",
-      "d": "Engineering spec maybe separate."
+      "b": "Dosing is an operations calculation; the SDS covers hazards and safe handling.",
+      "c": "Commercial terms are not SDS content; the SDS covers hazards, handling, PPE, and emergency measures.",
+      "d": "MCLs are in drinking-water regulations; the SDS covers worker hazard information."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Be removed for normal operation"
+        "text": "Be removed for lubrication while the equipment runs"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "Only protect equipment not people"
+        "text": "Be installed after startup once vibration is checked"
       },
       {
         "id": "d",
-        "text": "Be optional if operator is experienced per OSHA"
+        "text": "Be optional for operators with OSHA 10 training"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “Rotating equipment guards must”. The matching rule is: Remain in place during operation to prevent entanglement. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Be removed for normal operation” does not answer “Rotating equipment guards must”. The matching answer is: Remain in place during operation to prevent entanglement.",
-      "c": "“Only protect equipment not people” does not answer “Rotating equipment guards must”. The matching answer is: Remain in place during operation to prevent entanglement.",
-      "d": "“Be optional if operator is experienced per OSHA” does not answer “Rotating equipment guards must”. The matching answer is: Remain in place during operation to prevent entanglement."
+      "a": "Guards stay on during operation; removing them requires lockout/tagout first.",
+      "c": "Guards must be in place whenever the equipment operates, including startup.",
+      "d": "Training does not replace guarding; OSHA machine-guarding rules require guards in place."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1261,11 +1261,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Open panels for cooling"
+        "text": "NEMA 1 indoor enclosures and standard breakers"
       },
       {
         "id": "b",
-        "text": "Standing water contact encouraged"
+        "text": "Open panels with extra ventilation to dry them"
       },
       {
         "id": "c",
@@ -1273,15 +1273,15 @@
       },
       {
         "id": "d",
-        "text": "No grounding"
+        "text": "Grounding alone without GFCI or rated enclosures"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Electrical panels in wet areas require”. The matching rule is: GFCI protection and appropriate NEMA enclosures. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Open panels for cooling” does not answer “Electrical panels in wet areas require”. The matching answer is: GFCI protection and appropriate NEMA enclosures.",
-      "b": "“Standing water contact encouraged” does not answer “Electrical panels in wet areas require”. The matching answer is: GFCI protection and appropriate NEMA enclosures.",
-      "d": "“No grounding” does not answer “Electrical panels in wet areas require”. The matching answer is: GFCI protection and appropriate NEMA enclosures."
+      "a": "NEMA 1 is for dry indoor locations; wet areas need NEMA 4/4X enclosures and GFCI protection.",
+      "b": "Open panels expose live parts to water; enclosures must stay closed and rated for wet locations.",
+      "d": "Grounding is required, but wet areas also need GFCI protection and rated enclosures."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1294,15 +1294,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only fire hydrant paint"
+        "text": "Pumps from water hammer during sudden valve closure"
       },
       {
         "id": "b",
-        "text": "Filter media from chlorine"
+        "text": "Distribution mains from external corrosion in soil"
       },
       {
         "id": "c",
-        "text": "Employee parking"
+        "text": "Treatment chemicals from contamination by raw water"
       },
       {
         "id": "d",
@@ -1312,9 +1312,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Backflow prevention protects”. The matching rule is: Potable water from contamination via cross-connections. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Only fire hydrant paint” does not answer “Backflow prevention protects”. The matching answer is: Potable water from contamination via cross-connections.",
-      "b": "“Filter media from chlorine” does not answer “Backflow prevention protects”. The matching answer is: Potable water from contamination via cross-connections.",
-      "c": "“Employee parking” does not answer “Backflow prevention protects”. The matching answer is: Potable water from contamination via cross-connections."
+      "a": "Water hammer is handled by surge control; backflow prevention protects potable water.",
+      "b": "External corrosion is controlled with coatings and cathodic protection, not backflow devices.",
+      "c": "Backflow prevention protects the potable supply from non-potable sources, not chemical stocks."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Avoiding all water intake"
+        "text": "Salt tablets in place of water during long shifts"
       },
       {
         "id": "c",
-        "text": "Maximum exertion at noon"
+        "text": "Scheduling the heaviest work at midday heat peaks"
       },
       {
         "id": "d",
-        "text": "Heavy chemical suits without breaks in heat"
+        "text": "Full acclimatization on day one with heavy work"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Heat stress prevention on outdoor jobs includes:”. The matching rule is: Hydration, shade/rest breaks, and acclimatization. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“Avoiding all water intake” does not answer “Heat stress prevention on outdoor jobs includes:”. The matching answer is: Hydration, shade/rest breaks, and acclimatization.",
-      "c": "“Maximum exertion at noon” does not answer “Heat stress prevention on outdoor jobs includes:”. The matching answer is: Hydration, shade/rest breaks, and acclimatization.",
-      "d": "“Heavy chemical suits without breaks in heat” does not answer “Heat stress prevention on outdoor jobs includes:”. The matching answer is: Hydration, shade/rest breaks, and acclimatization."
+      "b": "Salt tablets are not a substitute for water; hydration and rest breaks prevent heat illness.",
+      "c": "Heavy work should be scheduled for cooler hours, not at the midday heat peak.",
+      "d": "Acclimatization takes about 7–14 days of gradually increasing exposure, not one day."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Be ignored because no injury occurred"
+        "text": "Be reported only if property was damaged"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Punish reporter as policy"
+        "text": "Be filed as an OSHA 300 recordable injury"
       },
       {
         "id": "d",
-        "text": "Never be shared with safety committee"
+        "text": "Be handled verbally to avoid paperwork"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “A near-miss report should”. The matching rule is: Be documented to prevent future incidents. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Be ignored because no injury occurred” does not answer “A near-miss report should”. The matching answer is: Be documented to prevent future incidents.",
-      "c": "“Punish reporter as policy” does not answer “A near-miss report should”. The matching answer is: Be documented to prevent future incidents.",
-      "d": "“Never be shared with safety committee” does not answer “A near-miss report should”. The matching answer is: Be documented to prevent future incidents."
+      "a": "Near misses are reported even with no damage or injury; that is the point of near-miss reporting.",
+      "c": "The OSHA 300 log records injuries and illnesses; near misses are not recordables.",
+      "d": "Verbal handling loses the lesson; documentation drives corrective action."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Located only in administrative office far from chemicals"
+        "text": "Located in a break room near the chemical storage area"
       },
       {
         "id": "b",
-        "text": "Used monthly as drinking fountain"
+        "text": "Activated weekly by staff only when an inspection is due"
       },
       {
         "id": "c",
-        "text": "Accessible within 10 seconds of chemical splash areas (general industry guidance)"
+        "text": "Accessible within 10 seconds of chemical splash areas"
       },
       {
         "id": "d",
-        "text": "Frozen shut in winter acceptable"
+        "text": "Supplied with cold water near freezing to stop burns faster"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Emergency eyewash stations must be”. The matching rule is: Accessible within 10 seconds of chemical splash areas (general industry guidance). Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "This item asks: “Emergency eyewash stations must be”. The matching rule is: Accessible within 10 seconds of chemical splash areas (general industry guidance). Independent UniPrep diagnostic — not a state board exam paper. This follows ANSI Z358.1 general industry guidance.",
     "distractorExplanations": {
-      "a": "“Located only in administrative office far from chemicals” does not answer “Emergency eyewash stations must be”. The matching answer is: Accessible within 10 seconds of chemical splash areas (general industry guidance).",
-      "b": "“Used monthly as drinking fountain” does not answer “Emergency eyewash stations must be”. The matching answer is: Accessible within 10 seconds of chemical splash areas (general industry guidance).",
-      "d": "“Frozen shut in winter acceptable” does not answer “Emergency eyewash stations must be”. The matching answer is: Accessible within 10 seconds of chemical splash areas (general industry guidance)."
+      "a": "Eyewashes must be reachable within 10 seconds of the hazard on the same level, not in a separate room.",
+      "b": "ANSI calls for weekly activation on a set schedule to flush the lines, not only before inspections.",
+      "d": "ANSI requires tepid water (about 60–100 °F); cold water discourages the full 15-minute flush."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1426,15 +1426,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Vertical walls always without protection at any depth"
+        "text": "Sloping, shoring, or trench box per OSHA when depth exceeds 4 feet"
       },
       {
         "id": "b",
-        "text": "Workers inside during cave-in"
+        "text": "Spoil piles placed at the trench edge to brace the walls"
       },
       {
         "id": "c",
-        "text": "No atmospheric testing in deep trenches"
+        "text": "Shoring per OSHA, with atmosphere tests skipped in deep trenches"
       },
       {
         "id": "d",
@@ -1444,9 +1444,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Excavation trench safety requires:”. The matching rule is: Sloping, shoring, or trench box per OSHA when depth exceeds 5 feet. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Vertical walls always without protection at any depth” does not answer “Excavation trench safety requires:”. The matching answer is: Sloping, shoring, or trench box per OSHA when depth exceeds 5 feet.",
-      "b": "“Workers inside during cave-in” does not answer “Excavation trench safety requires:”. The matching answer is: Sloping, shoring, or trench box per OSHA when depth exceeds 5 feet.",
-      "c": "“No atmospheric testing in deep trenches always” does not answer “Excavation trench safety requires:”. The matching answer is: Sloping, shoring, or trench box per OSHA when depth exceeds 5 feet."
+      "a": "4 feet triggers ladder egress and atmosphere testing; protective systems are required at 5 feet.",
+      "b": "Spoil must be kept at least 2 feet back from the edge; piles at the edge add load and cause cave-ins.",
+      "c": "Trenches over 4 feet where hazardous atmospheres may exist must be tested before entry."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "20 dBA for all workplaces"
+        "text": "OSHA action level 90 dBA TWA with monitoring and PPE"
       },
       {
         "id": "c",
-        "text": "Only jet engine levels without measurement"
+        "text": "OSHA action level 100 dBA TWA with engineering controls"
       },
       {
         "id": "d",
-        "text": "Never in water plants regardless of equipment"
+        "text": "OSHA ceiling of 115 dBA for any continuous exposure"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Hearing conservation program triggers when noise exceeds”. The matching rule is: OSHA action level 85 dBA TWA with monitoring and PPE. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“20 dBA for all workplaces” does not answer “Hearing conservation program triggers when noise exceeds”. The matching answer is: OSHA action level 85 dBA TWA with monitoring and PPE.",
-      "c": "“Only jet engine levels without measurement always” does not answer “Hearing conservation program triggers when noise exceeds”. The matching answer is: OSHA action level 85 dBA TWA with monitoring and PPE.",
-      "d": "“Never in water plants regardless of equipment” does not answer “Hearing conservation program triggers when noise exceeds”. The matching answer is: OSHA action level 85 dBA TWA with monitoring and PPE."
+      "b": "90 dBA is the permissible exposure limit; the hearing conservation program starts at the 85 dBA action level.",
+      "c": "100 dBA is far above the trigger; the program starts at an 85 dBA 8-hour TWA.",
+      "d": "115 dBA is the maximum continuous level; the hearing conservation program starts at 85 dBA TWA."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Local grocery stores"
+        "text": "FDA setting standards for all public water"
       },
       {
         "id": "b",
@@ -1500,19 +1500,19 @@
       },
       {
         "id": "c",
-        "text": "Federal Reserve"
+        "text": "Each state writing its own federal MCLs"
       },
       {
         "id": "d",
-        "text": "Private bottled water companies exclusively always as regulators"
+        "text": "The Army Corps of Engineers via water permits"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “Safe Drinking Water Act (SDWA) is administered primarily by:”. The matching rule is: EPA setting standards and overseeing states. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "Not regulatory role.",
-      "c": "Financial regulator.",
-      "d": "FDA regulates bottled water differently."
+      "a": "FDA regulates bottled water; EPA administers the SDWA for public water systems.",
+      "c": "EPA sets national MCLs; primacy states enforce rules at least as stringent as the federal ones.",
+      "d": "The Corps handles Clean Water Act Section 404 dredge-and-fill permits, not the SDWA."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1525,11 +1525,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Suggested goal with no enforcement for all parameters"
+        "text": "Non-enforceable health goal set at a level of no known risk"
       },
       {
         "id": "b",
-        "text": "Operator salary cap"
+        "text": "Non-enforceable guideline for taste, odor, and color in public water systems"
       },
       {
         "id": "c",
@@ -1537,15 +1537,15 @@
       },
       {
         "id": "d",
-        "text": "Pipe pressure"
+        "text": "Required treatment method used when a limit cannot be measured"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Maximum Contaminant Level (MCL) is”. The matching rule is: Legally enforceable limit on contaminant concentration in public water. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Suggested goal with no enforcement for all parameters” does not answer “Maximum Contaminant Level (MCL) is”. The matching answer is: Legally enforceable limit on contaminant concentration in public water.",
-      "b": "“Operator salary cap” does not answer “Maximum Contaminant Level (MCL) is”. The matching answer is: Legally enforceable limit on contaminant concentration in public water.",
-      "d": "“Pipe pressure” does not answer “Maximum Contaminant Level (MCL) is”. The matching answer is: Legally enforceable limit on contaminant concentration in public water."
+      "a": "That is the MCLG (goal); the MCL is the enforceable limit set as close to the goal as feasible.",
+      "b": "Those are secondary MCLs (SMCLs), which are not federally enforceable.",
+      "d": "That is a treatment technique (TT), used in place of an MCL when a level is not practical to measure."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1558,15 +1558,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Is secret from public"
+        "text": "Reports monthly sample results to the state primacy agency"
       },
       {
         "id": "b",
-        "text": "Only lists employee names"
+        "text": "Gives 24-hour notice of acute violations to the public"
       },
       {
         "id": "c",
-        "text": "Replaces all monitoring"
+        "text": "Lists the utility's budget and planned rate increases"
       },
       {
         "id": "d",
@@ -1576,9 +1576,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Public water system annual Consumer Confidence Report (CCR)”. The matching rule is: Informs customers of water sources and detected contaminants. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "Public document.",
-      "b": "Water quality data.",
-      "c": "Monitoring continues."
+      "a": "Monthly results go to the state in compliance reports; the CCR goes to customers once a year.",
+      "b": "That is Tier 1 public notice; the CCR is an annual water quality report.",
+      "c": "CCR content is set by 40 CFR 141 Subpart O (sources, detections, violations), not utility finances."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "100% samples must be positive"
+        "text": "No more than 1% of monthly samples positive"
       },
       {
         "id": "b",
-        "text": "No more than 5% monthly samples positive (with conditions)"
+        "text": "No more than 5% monthly samples positive"
       },
       {
         "id": "c",
-        "text": "Zero monitoring required"
+        "text": "No more than 10% of monthly samples positive"
       },
       {
         "id": "d",
-        "text": "Only taste criteria"
+        "text": "No more than 25% of quarterly samples positive"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Coliform MCL under Total Coliform Rule reflects”. The matching rule is: No more than 5% monthly samples positive (with conditions). Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "This item asks: “Coliform MCL under Total Coliform Rule reflects”. The matching rule is: No more than 5% monthly samples positive (with conditions). Independent UniPrep diagnostic — not a state board exam paper. Conditions applied, such as one positive allowed for systems taking fewer than 40 samples a month.",
     "distractorExplanations": {
-      "a": "“100% samples must be positive” does not answer “Coliform MCL under Total Coliform Rule reflects”. The matching answer is: No more than 5% monthly samples positive (with conditions).",
-      "c": "“Zero monitoring required” does not answer “Coliform MCL under Total Coliform Rule reflects”. The matching answer is: No more than 5% monthly samples positive (with conditions).",
-      "d": "“Only taste criteria” does not answer “Coliform MCL under Total Coliform Rule reflects”. The matching answer is: No more than 5% monthly samples positive (with conditions)."
+      "a": "The original TCR allowed up to 5% positives (or one for small systems), not 1%.",
+      "c": "10% is double the TCR threshold of 5% total coliform positives in a month.",
+      "d": "TCR compliance was evaluated monthly at 5% positives, not 25% over a quarter."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1657,11 +1657,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No sampling"
+        "text": "Corrosion control treatment and sampling at the plant entry point"
       },
       {
         "id": "b",
-        "text": "Only source water sampling without tap monitoring"
+        "text": "Tap sampling at customer sites, with action at the 50 ppb lead level"
       },
       {
         "id": "c",
@@ -1669,15 +1669,15 @@
       },
       {
         "id": "d",
-        "text": "Replacing all pipes overnight as only option"
+        "text": "Source water sampling only, with treatment set by the MCL"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Lead and Copper Rule requires:”. The matching rule is: Corrosion control treatment and tap sampling at customer sites. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“No sampling always” does not answer “Lead and Copper Rule requires:”. The matching answer is: Corrosion control treatment and tap sampling at customer sites.",
-      "b": "“Only source water sampling without tap monitoring always” does not answer “Lead and Copper Rule requires:”. The matching answer is: Corrosion control treatment and tap sampling at customer sites.",
-      "d": "“Replacing all pipes overnight as only option” does not answer “Lead and Copper Rule requires:”. The matching answer is: Corrosion control treatment and tap sampling at customer sites."
+      "a": "LCR compliance rests on first-draw tap samples at high-risk homes, not entry-point samples.",
+      "b": "The lead action level is 15 ppb (lowering to 10 ppb under the LCR Improvements), not 50 ppb.",
+      "d": "Lead has a treatment technique with an action level, not an MCL, and tap sampling drives compliance."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only fluoride as DBP"
+        "text": "TTHM and HAA5 based on a system-wide running annual average"
       },
       {
         "id": "b",
-        "text": "Only turbidity as DBP"
+        "text": "Bromate and chlorite based on single monthly samples"
       },
       {
         "id": "c",
-        "text": "Employee hours"
+        "text": "TTHM and HAA5 based on the highest single sample result"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Stage 2 Disinfection Byproducts Rule limits”. The matching rule is: TTHM and HAA5 based on locational running annual averages. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Only fluoride as DBP” does not answer “Stage 2 Disinfection Byproducts Rule limits”. The matching answer is: TTHM and HAA5 based on locational running annual averages.",
-      "b": "“Only turbidity as DBP” does not answer “Stage 2 Disinfection Byproducts Rule limits”. The matching answer is: TTHM and HAA5 based on locational running annual averages.",
-      "c": "“Employee hours” does not answer “Stage 2 Disinfection Byproducts Rule limits”. The matching answer is: TTHM and HAA5 based on locational running annual averages."
+      "a": "A system-wide running annual average was the Stage 1 basis; Stage 2 uses locational running annual averages.",
+      "b": "Bromate and chlorite limits come from Stage 1 for ozone and chlorine dioxide systems; Stage 2 targets TTHM/HAA5.",
+      "c": "Compliance is by the locational running annual average at each site, not a single maximum sample."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1727,23 +1727,23 @@
       },
       {
         "id": "b",
-        "text": "Only one mobile home regardless of connections"
+        "text": "At least 25 of the same people for more than six months a year"
       },
       {
         "id": "c",
-        "text": "Only industries with zero residents as community"
+        "text": "At least 100 year-round residents or 25 connections"
       },
       {
         "id": "d",
-        "text": "Only bottled water"
+        "text": "At least 500 residents and 100 service connections"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “Under EPA definition, a community water system serves”. The matching rule is: At least 25 year-round residents or 15 service connections. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“Only one mobile home regardless of connections” does not answer “Under EPA definition, a community water system serves”. The matching answer is: At least 25 year-round residents or 15 service connections.",
-      "c": "“Only industries with zero residents as community” does not answer “Under EPA definition, a community water system serves”. The matching answer is: At least 25 year-round residents or 15 service connections.",
-      "d": "“Only bottled water” does not answer “Under EPA definition, a community water system serves”. The matching answer is: At least 25 year-round residents or 15 service connections."
+      "b": "That is the non-transient non-community definition (schools, factories), not a community system.",
+      "c": "Confuses the thresholds; community systems start at 25 year-round residents or 15 connections.",
+      "d": "500 is a size-category boundary, not the definition; 15 connections or 25 residents qualifies."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1756,7 +1756,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only office décor"
+        "text": "Customer billing accuracy and meter reading routes"
       },
       {
         "id": "b",
@@ -1764,19 +1764,19 @@
       },
       {
         "id": "c",
-        "text": "Stock market"
+        "text": "Only the source water intake and watershed hazards"
       },
       {
         "id": "d",
-        "text": "Operator uniform color"
+        "text": "Lab accuracy through blind proficiency test samples"
       }
     ],
     "correctOptionId": "b",
     "explanation": "This item asks: “Sanitary survey evaluates”. The matching rule is: Source, treatment, distribution, and compliance of PWS. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Only office décor” does not answer “Sanitary survey evaluates”. The matching answer is: Source, treatment, distribution, and compliance of PWS.",
-      "c": "“Stock market” does not answer “Sanitary survey evaluates”. The matching answer is: Source, treatment, distribution, and compliance of PWS.",
-      "d": "“Operator uniform color” does not answer “Sanitary survey evaluates”. The matching answer is: Source, treatment, distribution, and compliance of PWS."
+      "a": "Billing is a utility business matter; sanitary surveys review the technical elements of the system.",
+      "c": "Surveys cover the source plus treatment, distribution, storage, pumps, monitoring, management, and operators.",
+      "d": "Blind proficiency samples are part of lab certification; sanitary surveys inspect the whole water system."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic for any utility requesting"
+        "text": "Granted on request whenever compliance costs exceed the utility budget"
       },
       {
         "id": "b",
-        "text": "Available for all contaminants without limits"
+        "text": "Available for microbial MCLs such as E. coli as well"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "Granted by social media vote"
+        "text": "Granted permanently with no compliance schedule"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Variance or exemption from MCL”. The matching rule is: May be granted under strict SDWA conditions with public notice. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Automatic for any utility requesting” does not answer “Variance or exemption from MCL”. The matching answer is: May be granted under strict SDWA conditions with public notice.",
-      "b": "“Available for all contaminants without limits” does not answer “Variance or exemption from MCL”. The matching answer is: May be granted under strict SDWA conditions with public notice.",
-      "d": "“Granted by social media vote” does not answer “Variance or exemption from MCL”. The matching answer is: May be granted under strict SDWA conditions with public notice."
+      "a": "Variances require best available technology and no unreasonable health risk; cost alone is not enough.",
+      "b": "The SDWA does not allow variances for microbial contaminants such as E. coli.",
+      "d": "Exemptions are time-limited and require a compliance schedule; they are not permanent."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase cross-connections"
+        "text": "Prevent water hammer surges in distribution mains"
       },
       {
         "id": "b",
-        "text": "Eliminate all backflow preventers"
+        "text": "Limit customer water use during drought restrictions"
       },
       {
         "id": "c",
-        "text": "Only protect wastewater plant not drinking"
+        "text": "Locate and repair leaks in service connections"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Cross-connection control program is required to:”. The matching rule is: Prevent backflow contamination in distribution system. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Increase cross-connections” does not answer “Cross-connection control program is required to:”. The matching answer is: Prevent backflow contamination in distribution system.",
-      "b": "“Eliminate all backflow preventers” does not answer “Cross-connection control program is required to:”. The matching answer is: Prevent backflow contamination in distribution system.",
-      "c": "“Only protect wastewater plant not drinking” does not answer “Cross-connection control program is required to:”. The matching answer is: Prevent backflow contamination in distribution system."
+      "a": "Surge control is a hydraulic design issue; cross-connection programs prevent backflow.",
+      "b": "That is a conservation program; cross-connection control prevents contamination by backflow.",
+      "c": "Leak detection is water-loss control, not backflow prevention at cross-connections."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1859,23 +1859,23 @@
       },
       {
         "id": "b",
-        "text": "Aviation safety"
+        "text": "Federal drinking-water MCLs and monitoring rules"
       },
       {
         "id": "c",
-        "text": "Medical licensing"
+        "text": "Wastewater discharge permits under the Clean Water Act"
       },
       {
         "id": "d",
-        "text": "Securities trading"
+        "text": "Certification requirements for drinking-water operators"
       }
     ],
     "correctOptionId": "a",
     "explanation": "This item asks: “AWWA standards primarily address”. The matching rule is: Water industry materials, design, and practice. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "b": "“Aviation safety” does not answer “AWWA standards primarily address”. The matching answer is: Water industry materials, design, and practice.",
-      "c": "“Medical licensing” does not answer “AWWA standards primarily address”. The matching answer is: Water industry materials, design, and practice.",
-      "d": "“Securities trading” does not answer “AWWA standards primarily address”. The matching answer is: Water industry materials, design, and practice."
+      "b": "MCLs are EPA regulations; AWWA standards are voluntary consensus standards for products and practice.",
+      "c": "Discharge permits are NPDES under EPA and the states; AWWA standards cover water-industry products and practice.",
+      "d": "Operator certification is set by states under EPA guidelines, not by AWWA standards."
     },
     "difficulty": "easy",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Minor paperwork delays only as tier 1"
+        "text": "Monitoring and reporting violations"
       },
       {
         "id": "b",
-        "text": "Immediate acute health risk violations (e.g., certain microbial)"
+        "text": "Immediate acute health risk violations"
       },
       {
         "id": "c",
-        "text": "No violations"
+        "text": "Long-term MCL violations without acute risk"
       },
       {
         "id": "d",
-        "text": "Annual picnic announcement as tier 1"
+        "text": "Failure to deliver the annual CCR on time"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Tier 1 public notice is required for:”. The matching rule is: Immediate acute health risk violations (e.g., certain microbial). Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "This item asks: “Tier 1 public notice is required for:”. The matching rule is: Immediate acute health risk violations (e.g., certain microbial). Independent UniPrep diagnostic — not a state board exam paper. Examples include certain microbial violations.",
     "distractorExplanations": {
-      "a": "“Minor paperwork delays only as tier 1” does not answer “Tier 1 public notice is required for:”. The matching answer is: Immediate acute health risk violations (e.g., certain microbial).",
-      "c": "“No violations always” does not answer “Tier 1 public notice is required for:”. The matching answer is: Immediate acute health risk violations (e.g., certain microbial).",
-      "d": "“Annual picnic announcement as tier 1” does not answer “Tier 1 public notice is required for:”. The matching answer is: Immediate acute health risk violations (e.g., certain microbial)."
+      "a": "Monitoring and reporting violations are typically Tier 3 (annual) notices, not Tier 1.",
+      "c": "Non-acute MCL violations are Tier 2, with notice within 30 days rather than 24 hours.",
+      "d": "CCR delivery failures are Tier 3 notices, not Tier 1 (24-hour) notices."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1921,11 +1921,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Paper log book pages"
+        "text": "Log₁₀ reduction of pathogens (1 log = 10% reduction)"
       },
       {
         "id": "b",
-        "text": "Employee login password"
+        "text": "Natural log reduction of pathogens (1 log = 63% reduction)"
       },
       {
         "id": "c",
@@ -1933,15 +1933,15 @@
       },
       {
         "id": "d",
-        "text": "Wood logging"
+        "text": "Log₁₀ reduction of pathogens (1 log = 99% reduction)"
       }
     ],
     "correctOptionId": "c",
     "explanation": "This item asks: “Log inactivation in disinfection credit refers to:”. The matching rule is: Log₁₀ reduction of pathogens (1 log = 90% reduction). Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Paper log book pages” does not answer “Log inactivation in disinfection credit refers to:”. The matching answer is: Log₁₀ reduction of pathogens (1 log = 90% reduction).",
-      "b": "“Employee login password” does not answer “Log inactivation in disinfection credit refers to:”. The matching answer is: Log₁₀ reduction of pathogens (1 log = 90% reduction).",
-      "d": "“Wood logging” does not answer “Log inactivation in disinfection credit refers to:”. The matching answer is: Log₁₀ reduction of pathogens (1 log = 90% reduction)."
+      "a": "1 log is a tenfold reduction: 90% removed and 10% remaining, not a 10% reduction.",
+      "b": "Disinfection credits use base-10 logs; 1 log10 equals 90% reduction, not a natural-log value.",
+      "d": "99% reduction is 2-log inactivation; 1 log equals 90%."
     },
     "difficulty": "hard",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."
@@ -1954,15 +1954,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Private bottled water vendor"
+        "text": "EPA headquarters acting as the sole enforcer in every state"
       },
       {
         "id": "b",
-        "text": "Local restaurant"
+        "text": "The local health department for each water system"
       },
       {
         "id": "c",
-        "text": "Fire department for all SDWA"
+        "text": "State environmental agency that issues Clean Water Act discharge permits"
       },
       {
         "id": "d",
@@ -1972,9 +1972,9 @@
     "correctOptionId": "d",
     "explanation": "This item asks: “Primacy agency in SDWA context is”. The matching rule is: State (or EPA region) authorized to enforce drinking water rules. Independent UniPrep diagnostic — not a state board exam paper.",
     "distractorExplanations": {
-      "a": "“Private bottled water vendor” does not answer “Primacy agency in SDWA context is”. The matching answer is: State (or EPA region) authorized to enforce drinking water rules.",
-      "b": "“Local restaurant” does not answer “Primacy agency in SDWA context is”. The matching answer is: State (or EPA region) authorized to enforce drinking water rules.",
-      "c": "“Fire department for all SDWA” does not answer “Primacy agency in SDWA context is”. The matching answer is: State (or EPA region) authorized to enforce drinking water rules."
+      "a": "Most states hold primacy; EPA regions enforce directly only where a state does not.",
+      "b": "Local agencies may assist, but primacy is granted to states (or tribes) by EPA.",
+      "c": "That is NPDES authorization under the Clean Water Act, not SDWA primacy."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on water-treatment-operator-1-readiness-check."

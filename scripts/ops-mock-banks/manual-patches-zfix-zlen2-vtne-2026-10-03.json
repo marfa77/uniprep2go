@@ -1,0 +1,670 @@
+{
+ "vtne-readiness-check": {
+  "vtne-readiness-check-pharmacy-pharm-002": {
+   "options": {
+    "a": "The drug has a wide margin between effective and toxic doses",
+    "b": "Toxic dose is close to effective dose—dose carefully and monitor",
+    "c": "The drug works only in a narrow range of species or tissues",
+    "d": "Absorption is slow, so plasma levels take days to reach effect"
+   },
+   "distractorExplanations": {
+    "a": "This describes a wide (high) therapeutic index, the opposite of a narrow index where toxic and effective doses are close.",
+    "c": "Confuses therapeutic index with spectrum or species range; the index compares the toxic dose with the effective dose.",
+    "d": "Describes slow absorption or onset kinetics, not the small ratio between toxic and therapeutic doses that defines a narrow index."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-003": {
+   "options": {
+    "a": "Ruminants lack hepatic first-pass metabolism",
+    "b": "Saliva enzymes fully inactivate drugs in the mouth",
+    "c": "Rumen microbes/pH can degrade or bind drugs",
+    "d": "The abomasum absorbs drugs faster than the small intestine"
+   },
+   "distractorExplanations": {
+    "a": "Ruminants do have hepatic first-pass metabolism; the oral problem is rumen dilution and microbial degradation before absorption.",
+    "b": "Ruminant saliva is mainly a bicarbonate buffer without meaningful drug-inactivating enzymes; drug loss happens in the rumen.",
+    "d": "Faster absorption would raise, not lower, bioavailability, and the abomasum is not the main site of oral drug absorption."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-004": {
+   "options": {
+    "a": "Locked storage, with logs kept only for take-home doses",
+    "b": "Pharmacy storage with monthly usage totals",
+    "c": "Logged use and disposal of expired stock in sharps bins",
+    "d": "Secure storage, logged use, and DEA compliance"
+   },
+   "distractorExplanations": {
+    "a": "DEA rules require records for every controlled-substance administration, including in-hospital use, not just dispensed doses.",
+    "b": "Controlled drugs need a securely locked cabinet and a per-use log with running balance; monthly totals do not meet DEA recordkeeping.",
+    "c": "Expired controlled drugs need DEA-compliant disposal (reverse distributor or DEA Form 41 witnessed destruction), not routine sharps bins."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-007": {
+   "options": {
+    "a": "Milliliters, so doses are drawn by volume (0.1 mL steps)",
+    "b": "Milligrams of insulin per kilogram of body weight",
+    "c": "Units matching insulin concentration (U-100 common)",
+    "d": "Units, with any U-40 or U-100 syringe interchangeable"
+   },
+   "distractorExplanations": {
+    "a": "Insulin syringes are graduated in units, not mL; drawing insulin by volume invites tenfold dosing errors.",
+    "b": "Insulin is dosed in international units, not mg/kg, and syringe barrels are not marked in milligrams.",
+    "d": "U-40 and U-100 syringes are not interchangeable; using the wrong one with a given insulin causes a 2.5-fold dosing error."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-008": {
+   "options": {
+    "a": "Sufficient hepatic glycogen reserves",
+    "b": "Renal tubular secretion of drugs",
+    "c": "Sufficient plasma albumin binding",
+    "d": "Adequate glucuronidation pathways"
+   },
+   "distractorExplanations": {
+    "a": "Glycogen stores are not the issue; cats are deficient in the UDP-glucuronosyltransferase needed to conjugate acetaminophen.",
+    "b": "Renal secretion is not the limiting step; the feline defect is hepatic glucuronide conjugation, which leaves toxic metabolites.",
+    "c": "Albumin binding is not deficient in cats; toxicity comes from poor glucuronidation shunting the drug to oxidative metabolites."
+   },
+   "explanation": "Acetaminophen causes methemoglobinemia/hepatotoxicity in cats—emergency. Without adequate glucuronidation, acetaminophen toxicity can be fatal in cats."
+  },
+  "vtne-readiness-check-pharmacy-pharm-009": {
+   "options": {
+    "a": "Drugs have narrow indices or variable kinetics",
+    "b": "Drugs have wide safety margins and predictable kinetics",
+    "c": "Drugs are given topically or by single injection",
+    "d": "A drug's effect is easy to measure clinically"
+   },
+   "distractorExplanations": {
+    "b": "Wide-margin drugs with predictable kinetics rarely need serum levels; TDM targets narrow-index or variable-kinetics drugs.",
+    "c": "Topical and single-dose drugs seldom reach a steady state worth measuring; TDM is for chronic systemic narrow-index drugs.",
+    "d": "When the effect is easy to measure, dose is titrated to that effect; TDM helps most when the effect is hard to observe."
+   },
+   "explanation": "Serum levels guide dose adjustments with clinical signs. Examples include phenobarbital and digoxin."
+  },
+  "vtne-readiness-check-pharmacy-pharm-010": {
+   "options": {
+    "a": "A cheaper compounded copy of an approved drug is preferred by the owner",
+    "b": "No suitable approved formulation exists and a veterinarian directs compounding",
+    "c": "Any pharmacy may supply it to owners online without a VCPR or prescription",
+    "d": "Food-animal producers want to make bulk medicated feed from raw drug powder"
+   },
+   "distractorExplanations": {
+    "a": "Compounding a copy of a commercially available approved drug for cost is not permitted under FDA policy (GFI #256).",
+    "c": "Compounded veterinary drugs need a valid VCPR and a veterinarian's prescription; online OTC sale is not legal.",
+    "d": "Compounding from bulk drug substances for food animals is tightly restricted for residue reasons; medicated feed falls under feed/VFD rules."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-011": {
+   "options": {
+    "a": "SID",
+    "b": "BID",
+    "c": "QOD",
+    "d": "PRN"
+   },
+   "distractorExplanations": {
+    "a": "Not the best answer here; the right answer is “BID”.",
+    "c": "Not the best answer here; the right answer is “BID”.",
+    "d": "Not the best answer here; the right answer is “BID”."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-013": {
+   "options": {
+    "a": "It is mainly used for aerobic Gram-negative urinary tract infections",
+    "b": "It is commonly used for anaerobic bacterial and some protozoal infections",
+    "c": "It is a first-line treatment for canine dermatophytosis (ringworm)",
+    "d": "It is a tetracycline used mainly for tick-borne rickettsial disease"
+   },
+   "distractorExplanations": {
+    "a": "Metronidazole lacks useful aerobic activity and is not a UTI drug; its niche is anaerobes and protozoa such as Giardia.",
+    "c": "Ringworm is fungal and treated with itraconazole, terbinafine, or lime sulfur; metronidazole has no antifungal role.",
+    "d": "That describes doxycycline; metronidazole is a nitroimidazole, not a tetracycline, and is not the rickettsial drug of choice."
+   },
+   "explanation": "Metronidazole is used for anaerobes and certain protozoa (e.g., Giardia protocols vary). It is given under veterinary direction."
+  },
+  "vtne-readiness-check-pharmacy-pharm-014": {
+   "options": {
+    "a": "Phenothiazine tranquilizer/sedative",
+    "b": "Alpha-2 adrenergic agonist sedative",
+    "c": "Benzodiazepine anxiolytic/anticonvulsant",
+    "d": "Opioid agonist analgesic"
+   },
+   "distractorExplanations": {
+    "b": "That class is dexmedetomidine or xylazine; acepromazine is a phenothiazine with alpha-1 blocking effects.",
+    "c": "That describes diazepam or midazolam; acepromazine is a phenothiazine and has no anticonvulsant use.",
+    "d": "Acepromazine provides no analgesia; opioids such as hydromorphone or methadone are the analgesic class."
+   }
+  },
+  "vtne-readiness-check-pharmacy-pharm-015": {
+   "options": {
+    "a": "Use sterile water for injection if the supplied diluent runs out",
+    "b": "Use the diluent supplied/specified and follow label handling and timing",
+    "c": "Reconstitute all vials at the start of the day for faster appointments",
+    "d": "Store reconstituted modified-live vaccine for weeks at room temperature"
+   },
+   "distractorExplanations": {
+    "a": "Many vaccine diluents contain antigen or adjuvant; substituting sterile water is off-label and can leave the dose incomplete.",
+    "c": "Modified-live vaccines lose potency after reconstitution and should be given promptly, typically within about an hour.",
+    "d": "Not the best answer here; the right answer is “Use the diluent supplied/specified and follow label handling and timing”."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-002": {
+   "options": {
+    "a": "Surgical risk based on the complexity of the procedure",
+    "b": "Anesthetic risk based on systemic disease severity",
+    "c": "Anesthetic risk based on patient age and breed alone",
+    "d": "Postoperative pain level expected after surgery"
+   },
+   "distractorExplanations": {
+    "a": "ASA status rates the patient's systemic health before anesthesia, not the difficulty or complexity of the surgery.",
+    "c": "Age and breed are not ASA criteria; the classification is based on the severity of systemic disease.",
+    "d": "Pain is assessed with pain scales such as the Glasgow scale, not with the ASA physical status system."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-003": {
+   "options": {
+    "a": "Arterial oxygen partial pressure (PaO2)",
+    "b": "Blood oxygen content including dissolved O2",
+    "c": "Hemoglobin oxygen saturation and pulse rate",
+    "d": "End-tidal CO2 and respiratory rate"
+   },
+   "distractorExplanations": {
+    "a": "PaO2 requires arterial blood gas analysis; pulse oximetry estimates hemoglobin saturation, which is related but not the same.",
+    "b": "SpO2 reflects the percentage of hemoglobin saturated; it does not measure total oxygen content or dissolved oxygen.",
+    "d": "That is capnography; pulse oximetry measures oxygen saturation of hemoglobin, not exhaled carbon dioxide."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-004": {
+   "options": {
+    "a": "Oxygenation and hemoglobin saturation",
+    "b": "Anesthetic depth via vaporizer output",
+    "c": "Blood pressure and peripheral perfusion",
+    "d": "Ventilation adequacy and circuit integrity"
+   },
+   "distractorExplanations": {
+    "a": "That is pulse oximetry; capnography measures exhaled CO2, which reflects ventilation rather than oxygenation.",
+    "b": "Depth is judged by reflexes, jaw tone, and vaporizer setting; ETCO2 reflects ventilation, not inhalant concentration.",
+    "c": "Blood pressure is measured with Doppler or oscillometric monitors; capnography reflects ventilation and circuit function."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-005": {
+   "options": {
+    "a": "Cleaning then autoclave/appropriate sterilization with monitoring",
+    "b": "Soaking in cold chemical disinfectant between back-to-back surgeries",
+    "c": "Autoclaving straight from surgery, with cleaning afterward",
+    "d": "Flash sterilizing implants as routine to keep the schedule"
+   },
+   "distractorExplanations": {
+    "b": "Cold soaks give high-level disinfection at best; critical items entering sterile tissue need monitored sterilization such as autoclaving.",
+    "c": "Bioburden must be removed before sterilization; organic debris shields organisms from steam, so cleaning comes first.",
+    "d": "Immediate-use (flash) sterilization is for emergencies, not routine work, and is discouraged for implants."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-006": {
+   "options": {
+    "a": "Chlorhexidine scrub moving from the periphery inward to the incision",
+    "b": "Chlorhexidine or iodophor scrub patterns outward from incision site",
+    "c": "Hydrogen peroxide as the residual antiseptic of choice",
+    "d": "Shaving with a razor the night before, then a single alcohol wipe"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the direction: prep moves from the incision outward so contaminants are not dragged onto the surgical site.",
+    "c": "Hydrogen peroxide has no residual activity and damages tissue; chlorhexidine or iodophor are the standard skin antiseptics.",
+    "d": "Razor shaving hours before surgery raises infection risk from skin nicks; clip just before surgery and do a full scrub."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-007": {
+   "options": {
+    "a": "Performed once at discharge, since pain peaks after leaving the clinic",
+    "b": "Based on heart rate alone, since vital signs reliably track pain",
+    "c": "Performed with validated scales and treated per veterinarian orders",
+    "d": "Withheld while the patient is sedated, since sedation masks pain"
+   },
+   "distractorExplanations": {
+    "a": "Pain should be scored repeatedly after surgery and after each analgesic dose, not once at discharge.",
+    "b": "Heart rate is nonspecific (stress, drugs, hypovolemia); validated multi-factor pain scales are needed.",
+    "d": "Sedated patients still feel pain; scoring continues and analgesia must not be withheld because of sedation."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-008": {
+   "options": {
+    "a": "Return of the palpebral reflex",
+    "b": "Loss of jaw tone to ease tube removal",
+    "c": "SpO2 above 90% on room air",
+    "d": "Return of swallowing reflex"
+   },
+   "distractorExplanations": {
+    "a": "The palpebral reflex returns early but does not show airway protection; dogs are extubated once they swallow.",
+    "b": "Jaw tone increases as patients lighten; loss of jaw tone indicates deeper anesthesia, not extubation readiness.",
+    "c": "Oxygen saturation alone does not show the patient can protect its airway; return of swallowing is the cue in dogs."
+   },
+   "explanation": "Know species differences and brachycephalic risks (delay extubation carefully). Species differences apply: cats are often extubated earlier."
+  },
+  "vtne-readiness-check-surgical-nursing-009": {
+   "options": {
+    "a": "Infection, tension, poor nutrition, and self-trauma",
+    "b": "Absorbable sutures placed in the subcutaneous layer",
+    "c": "Cold compresses applied in the first 24 hours",
+    "d": "Strict cage rest with an Elizabethan collar"
+   },
+   "distractorExplanations": {
+    "b": "Absorbable subcutaneous sutures are standard and reduce dead space; they do not raise dehiscence risk.",
+    "c": "Early cold compresses reduce swelling and pain at the incision; they do not increase dehiscence risk.",
+    "d": "Cage rest and an E-collar protect the closure by limiting tension and self-trauma, lowering dehiscence risk."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-010": {
+   "options": {
+    "a": "Increase the inhalant concentration to deepen anesthesia and relieve the rigidity",
+    "b": "Discontinue triggers, hyperventilate with O2, cool, and DVM-directed emergency drugs",
+    "c": "Switch to a different halogenated agent, then actively warm and bundle the patient",
+    "d": "Reduce ventilation so CO2 can normalize, then give succinylcholine for the rigidity"
+   },
+   "distractorExplanations": {
+    "a": "Volatile inhalants are malignant hyperthermia triggers; increasing them worsens the crisis instead of relieving rigidity.",
+    "c": "All halogenated inhalants can trigger the crisis, and the hyperthermic patient needs cooling, not warming.",
+    "d": "Rising CO2 needs hyperventilation with oxygen, and succinylcholine is itself a malignant hyperthermia trigger."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-011": {
+   "options": {
+    "a": "Hemoglobin oxygen saturation as an oxygenation indicator",
+    "b": "End-tidal carbon dioxide as a ventilation indicator",
+    "c": "Inspired oxygen concentration delivered by the machine",
+    "d": "Arterial blood pressure as a perfusion indicator"
+   },
+   "distractorExplanations": {
+    "a": "That is pulse oximetry (SpO2); capnography measures exhaled carbon dioxide as a ventilation indicator.",
+    "c": "Inspired oxygen is measured with an oxygen analyzer, not a capnograph, which reads end-tidal CO2.",
+    "d": "Blood pressure is measured by Doppler, oscillometric, or arterial-line monitors, not by capnography."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-012": {
+   "options": {
+    "a": "From the dirty periphery inward toward the incision site",
+    "b": "From the proposed incision site outward in concentric fashion",
+    "c": "In a back-and-forth pattern across the full clipped area",
+    "d": "From the incision outward, after the sterile drapes are placed"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the direction: moving inward drags contaminants from the periphery onto the incision site.",
+    "c": "Back-and-forth scrubbing re-contaminates the incision; scrub in concentric circles from the center outward.",
+    "d": "Skin prep is completed before draping; sterile drapes are placed on an already prepped, dry site."
+   }
+  },
+  "vtne-readiness-check-surgical-nursing-014": {
+   "options": {
+    "a": "Increase cardiac afterload and myocardial oxygen demand",
+    "b": "Reduce organ perfusion and increase anesthetic risk",
+    "c": "Cause hypercapnia by directly depressing ventilation",
+    "d": "Increase surgical bleeding at the incision site"
+   },
+   "distractorExplanations": {
+    "a": "That describes hypertension; hypotension lowers the perfusion pressure delivered to organs.",
+    "c": "Hypercapnia comes from hypoventilation; hypotension threatens organ perfusion, not CO2 elimination directly.",
+    "d": "Low pressure tends to reduce bleeding; the danger is reduced renal, cerebral, and myocardial perfusion."
+   }
+  },
+  "vtne-readiness-check-diagnostics-001": {
+   "options": {
+    "a": "Red cell mass and plasma protein/hydration status",
+    "b": "White cell count and degree of inflammation",
+    "c": "Platelet count and clotting ability",
+    "d": "Kidney function and urine concentrating ability"
+   },
+   "distractorExplanations": {
+    "b": "Leukocyte numbers need a CBC with differential; PCV/TS assess red cell mass and plasma protein/hydration.",
+    "c": "Platelets and coagulation need a smear estimate or coagulation panel, not PCV and total solids.",
+    "d": "Renal function needs BUN/creatinine with USG; total solids reflect plasma protein, not kidney function."
+   }
+  },
+  "vtne-readiness-check-diagnostics-002": {
+   "options": {
+    "a": "Increased reticulocytes indicating a regenerative response to anemia",
+    "b": "Increased immature neutrophils (bands) suggesting inflammation/infection",
+    "c": "Increased hypersegmented neutrophils from prolonged corticosteroid effect",
+    "d": "Increased lymphocytes relative to neutrophils during viral infection"
+   },
+   "distractorExplanations": {
+    "a": "Reticulocytosis indicates regenerative anemia; a left shift refers to immature neutrophils such as bands.",
+    "c": "Hypersegmentation of aged neutrophils is a right shift, the opposite of a left shift.",
+    "d": "Lymphocytosis is a separate finding; a left shift is specifically an increase in band neutrophils."
+   }
+  },
+  "vtne-readiness-check-diagnostics-003": {
+   "options": {
+    "a": "Prerenal azotemia from dehydration with intact kidneys",
+    "b": "Post-renal obstruction as the most likely cause",
+    "c": "Renal azotemia more likely than simple prerenal",
+    "d": "Liver failure causing reduced urea production"
+   },
+   "distractorExplanations": {
+    "a": "Prerenal azotemia with working kidneys produces concentrated urine (dog USG >1.030), not isosthenuria.",
+    "b": "Obstruction is identified by history, palpation, and imaging; isosthenuria points to loss of renal concentrating ability.",
+    "d": "Liver failure lowers BUN; it does not explain azotemia with a fixed urine specific gravity."
+   },
+   "explanation": "Interpret BUN/crea with USG; prerenal often hypersthenuric if kidneys work. Isosthenuria (USG about 1.008–1.012) shows renal inability to concentrate urine."
+  },
+  "vtne-readiness-check-diagnostics-004": {
+   "options": {
+    "a": "Reading results at the next morning check so color can fully develop",
+    "b": "Running the kit straight from the refrigerator to preserve reagents",
+    "c": "Interpreting the result without checking that the control spot develops",
+    "d": "Following timing/temperature instructions and reading within the window"
+   },
+   "distractorExplanations": {
+    "a": "Late reading gives false positives as background color develops; results must be read within the stated window.",
+    "b": "Most kits must reach room temperature before use; cold reagents slow the reaction and can cause false negatives.",
+    "c": "An undeveloped positive control invalidates the test; results must not be read until the control appears."
+   }
+  },
+  "vtne-readiness-check-diagnostics-005": {
+   "options": {
+    "a": "Budding yeast (peanut/footprint shapes)",
+    "b": "Rod-shaped bacteria in chains",
+    "c": "Branching septate fungal hyphae",
+    "d": "Oval mites with stubby legs and eggs"
+   },
+   "distractorExplanations": {
+    "b": "Rods suggest Pseudomonas or other bacteria; Malassezia is a yeast with a peanut or footprint shape.",
+    "c": "Hyphae suggest dermatophytes or molds; Malassezia appears as oval budding yeast, not hyphae.",
+    "d": "That describes Otodectes ear mites seen on a mineral-oil prep, not Malassezia yeast on cytology."
+   },
+   "explanation": "Common in canine otitis; treat underlying allergies too. Inflammatory debris is often present too."
+  },
+  "vtne-readiness-check-diagnostics-006": {
+   "options": {
+    "a": "Increases the number of photons without changing their energy",
+    "b": "Increases beam penetrability (more penetration)",
+    "c": "Shortens exposure time to reduce motion blur",
+    "d": "Produces higher contrast with fewer gray shades"
+   },
+   "distractorExplanations": {
+    "a": "That describes mAs; kVp raises photon energy and therefore the penetrating power of the beam.",
+    "c": "Exposure time is part of mAs (mA x seconds); kVp changes photon energy, not exposure time.",
+    "d": "Higher kVp produces long-scale (lower) contrast with more grays; low kVp gives high, short-scale contrast."
+   },
+   "explanation": "mAs ≈ quantity; kVp ≈ quality/penetration; ALARA still applies. Higher kVp also lengthens the contrast scale."
+  },
+  "vtne-readiness-check-diagnostics-007": {
+   "options": {
+    "a": "Show falsely increased glucose from hemoconcentration",
+    "b": "Show unchanged glucose because the clot seals the cells",
+    "c": "Show falsely decreased glucose due to cell metabolism",
+    "d": "Show falsely decreased glucose only if the tube is heparinized"
+   },
+   "distractorExplanations": {
+    "a": "Cells keep consuming glucose, lowering it roughly 5–10% per hour; prolonged clot contact does not raise it.",
+    "b": "Clotting does not stop glycolysis; red and white cells consume glucose until serum is separated.",
+    "d": "Glycolysis lowers glucose in any tube without fluoride, not only heparin tubes; the anticoagulant is not the cause."
+   }
+  },
+  "vtne-readiness-check-diagnostics-008": {
+   "options": {
+    "a": "Urine dipstick specific gravity pad",
+    "b": "Hydrometer (urinometer) calibrated with saline",
+    "c": "Refractometer calibrated with normal saline",
+    "d": "Refractometer calibrated with distilled water"
+   },
+   "distractorExplanations": {
+    "a": "Dipstick SG pads are unreliable in animal urine; a refractometer is the standard USG method.",
+    "b": "Hydrometers are inaccurate with small volumes; refractometers are the clinical standard and are zeroed with distilled water.",
+    "c": "Saline has its own specific gravity (about 1.006); a refractometer is zeroed with distilled water."
+   },
+   "explanation": "Interpret hydration/renal concentrating ability with chemistries. A refractometer is the ideal tool for USG."
+  },
+  "vtne-readiness-check-diagnostics-009": {
+   "options": {
+    "a": "Detect serological incompatibility before transfusion",
+    "b": "Determine the recipient's blood type before transfusion",
+    "c": "Measure donor PCV to calculate the transfusion volume",
+    "d": "Screen donor blood for infectious diseases"
+   },
+   "distractorExplanations": {
+    "b": "Blood typing identifies red cell antigens; crossmatching tests donor-recipient serologic compatibility.",
+    "c": "PCV is used in volume calculations, but a crossmatch tests compatibility between donor and recipient blood.",
+    "d": "Infectious disease screening is separate donor testing by PCR or serology, not a crossmatch."
+   }
+  },
+  "vtne-readiness-check-diagnostics-010": {
+   "options": {
+    "a": "Adequate insulin dosing with normal fat metabolism",
+    "b": "Possible DKA risk—needs prompt veterinary assessment",
+    "c": "Contamination from glucose in the urine sample",
+    "d": "Insulin overdose causing a Somogyi rebound"
+   },
+   "distractorExplanations": {
+    "a": "Ketonuria means insulin deficiency driving lipolysis; it indicates poor control, not adequate dosing.",
+    "c": "Glucose and ketones are read on separate pads; glucosuria does not create a false ketone result.",
+    "d": "Somogyi effect causes rebound hyperglycemia; ketonuria signals insulin deficiency and DKA risk."
+   }
+  },
+  "vtne-readiness-check-diagnostics-011": {
+   "options": {
+    "a": "Increased numbers of immature neutrophils (bands) in circulation",
+    "b": "Increased mature segmented neutrophils from a stress response",
+    "c": "A shift toward smaller red cells on the RBC histogram",
+    "d": "Increased eosinophils in parasitic or allergic disease"
+   },
+   "distractorExplanations": {
+    "b": "A stress leukogram increases mature neutrophils; a left shift means increased immature bands.",
+    "c": "Red cell size is evaluated by MCV and histograms; a left shift refers to neutrophil maturity.",
+    "d": "Eosinophilia is a separate finding; a left shift is about immature band neutrophils."
+   }
+  },
+  "vtne-readiness-check-diagnostics-014": {
+   "options": {
+    "a": "Staphylococci (catalase positive) from streptococci (catalase negative)",
+    "b": "Streptococci (catalase positive) from staphylococci (catalase negative)",
+    "c": "E. coli (catalase negative) from Pseudomonas (catalase positive) rods",
+    "d": "Gram-positive from Gram-negative organisms without staining"
+   },
+   "distractorExplanations": {
+    "b": "Reverses the reactions: Staphylococcus is catalase positive and Streptococcus is catalase negative.",
+    "c": "Both are catalase positive; Gram-negative rods are separated by oxidase and lactose tests, not catalase.",
+    "d": "Gram reaction needs a Gram stain (or KOH string test); catalase separates staphylococci from streptococci."
+   }
+  },
+  "vtne-readiness-check-diagnostics-015": {
+   "options": {
+    "a": "Increasing mAs increases radiographic density (blackness)",
+    "b": "Increasing kVp produces shorter-scale, higher-contrast images",
+    "c": "Grids are used to increase scatter reaching the film/detector",
+    "d": "Collimation should extend beyond the patient on all sides"
+   },
+   "distractorExplanations": {
+    "b": "Higher kVp gives long-scale (lower) contrast; low kVp is what produces short-scale, high contrast.",
+    "d": "Collimate to the area of interest; wide collimation increases scatter and staff exposure.",
+    "c": "Not the best answer here; the right answer is “Increasing mAs increases radiographic density (blackness) roughly proportionally”."
+   },
+   "explanation": "mAs controls quantity of x-rays/density; collimate tightly; grids reduce scatter. The relationship is roughly proportional."
+  },
+  "vtne-readiness-check-animal-care-001": {
+   "options": {
+    "a": "Support chest and hindquarters close to your body",
+    "b": "Lift under the abdomen only, keeping the dog at arm's length",
+    "c": "Grasp the front limbs and let the hind end follow",
+    "d": "Support the chest, bending at the waist with legs straight"
+   },
+   "distractorExplanations": {
+    "b": "Abdomen-only support at arm's length strains the lifter's back and the patient; hold chest and hindquarters close.",
+    "c": "Lifting by the forelimbs risks shoulder and elbow injury; the chest and rear must both be supported.",
+    "d": "Bending at the waist injures the lifter's back; bend the knees and keep the dog close to the body."
+   },
+   "explanation": "Protect staff backs and animal joints; use muzzles/sedation when indicated by DVM for fractious pets. Get team help for heavier or painful patients."
+  },
+  "vtne-readiness-check-animal-care-002": {
+   "options": {
+    "a": "Replace sedation for painful procedures like abscess lancing",
+    "b": "Limit limb movement while reducing stress for procedures",
+    "c": "Allow scruffing to be held longer without causing stress",
+    "d": "Prevent bites so a muzzle is not needed for oral exams"
+   },
+   "distractorExplanations": {
+    "a": "Towel wraps reduce stress but do not substitute for analgesia or sedation during painful procedures.",
+    "c": "Towel wraps are a low-stress alternative to scruffing, not a way to prolong scruff restraint.",
+    "d": "A towel controls the limbs but does not stop the head from biting during oral exams."
+   }
+  },
+  "vtne-readiness-check-animal-care-003": {
+   "options": {
+    "a": "Distemper, parvovirus, Bordetella, and Lyme disease",
+    "b": "Rabies and canine influenza, with parvovirus as non-core",
+    "c": "DA2PP (distemper, adenovirus, parvovirus) and rabies",
+    "d": "Distemper, adenovirus, and Bordetella intranasal"
+   },
+   "distractorExplanations": {
+    "a": "Bordetella and Lyme are lifestyle (non-core) vaccines chosen by exposure risk; adenovirus-2 and rabies are core.",
+    "b": "Parvovirus is a core antigen; canine influenza is a lifestyle vaccine for dogs at boarding or show risk.",
+    "d": "Bordetella is non-core; the core set is distemper, adenovirus-2, parvovirus, plus rabies."
+   },
+   "explanation": "Lifestyle non-core (Lepto, Bordetella, etc.) based on risk; AAHA guidelines evolve. Core status follows current guidelines and local rabies law."
+  },
+  "vtne-readiness-check-animal-care-004": {
+   "options": {
+    "a": "Remove subgingival calculus left after hand scaling",
+    "b": "Apply fluoride to reverse existing periodontal pockets",
+    "c": "Whiten enamel by removing a thin layer of tooth surface",
+    "d": "Smooth enamel micro-etching and slow plaque reattachment"
+   },
+   "distractorExplanations": {
+    "a": "Calculus removal is done by scaling and root planing; polishing smooths the enamel scratches scaling leaves.",
+    "b": "Periodontal pockets reflect attachment loss that neither polishing nor fluoride can reverse.",
+    "c": "Polishing smooths scaler scratches; heat and excessive abrasion damage enamel and should be avoided."
+   }
+  },
+  "vtne-readiness-check-animal-care-005": {
+   "options": {
+    "a": "Take exposure at peak inspiration for lung detail",
+    "b": "Take exposure at end-expiration for lung detail",
+    "c": "Take exposure mid-breath to average lung volume",
+    "d": "Take exposure during panting to fill the lungs fully"
+   },
+   "distractorExplanations": {
+    "b": "End-expiration suits abdominal films; thoracic films use peak inspiration to inflate the lungs for detail.",
+    "c": "Mid-breath exposure risks motion and incomplete inflation; thoracic films are taken at peak inspiration.",
+    "d": "Panting causes motion blur; wait for a pause at peak inspiration before exposing."
+   }
+  },
+  "vtne-readiness-check-animal-care-006": {
+   "options": {
+    "a": "Warmth, cow's milk, and feeding every 8–12 hours",
+    "b": "Warmth, appropriate milk replacer, and frequent feeding",
+    "c": "Feeding milk replacer before warming hypothermic pups",
+    "d": "Milk replacer every 2–4 hours with no elimination stimulation"
+   },
+   "distractorExplanations": {
+    "a": "Cow's milk is too low in fat and protein for puppies, and neonates need feeding every 2–4 hours.",
+    "c": "Hypothermic neonates must be warmed before feeding; cold gut motility leads to ileus and aspiration.",
+    "d": "Orphaned neonates need anogenital stimulation after feeding to urinate and defecate."
+   },
+   "explanation": "Stimulate urination/defecation; monitor weight gain; aseptic bottle hygiene. Cow's milk is not an adequate substitute."
+  },
+  "vtne-readiness-check-animal-care-007": {
+   "options": {
+    "a": "Toxocara cati eggs in cat feces",
+    "b": "Bartonella henselae in cat litter dust",
+    "c": "Toxoplasma gondii oocysts in cat feces",
+    "d": "Giardia cysts causing fetal infection"
+   },
+   "distractorExplanations": {
+    "a": "Toxocara causes larva migrans; it is not the congenital pregnancy risk that toxoplasmosis poses.",
+    "b": "Bartonella spreads by fleas and scratches, not litter dust; the pregnancy concern is Toxoplasma.",
+    "d": "Giardia causes GI disease but is not a congenital fetal pathogen the way Toxoplasma is."
+   },
+   "explanation": "Toxoplasmosis education and hygiene matter; many infections foodborne too. Delegate litter duty when possible."
+  },
+  "vtne-readiness-check-animal-care-008": {
+   "options": {
+    "a": "Eustachian tube then the middle ear",
+    "b": "Tympanic membrane, then horizontal canal",
+    "c": "Pinna, then the inner ear cochlea",
+    "d": "Horizontal canal then tympanic membrane"
+   },
+   "distractorExplanations": {
+    "a": "The Eustachian tube links the middle ear to the pharynx; the vertical canal leads to the horizontal canal.",
+    "b": "Reverses the order: the vertical canal leads to the horizontal canal and only then to the eardrum.",
+    "c": "The pinna is outside the vertical canal, and the cochlea lies deep beyond the middle ear."
+   }
+  },
+  "vtne-readiness-check-animal-care-009": {
+   "options": {
+    "a": "About 40–60 mL/kg/day",
+    "b": "About 80–100 mL/kg/day",
+    "c": "About 10 mL/kg/hour",
+    "d": "About 90 mL/kg/hour"
+   },
+   "distractorExplanations": {
+    "b": "That is closer to neonatal needs or maintenance plus a deficit; adult canine maintenance is about 40–60 mL/kg/day.",
+    "c": "10 mL/kg/hour is a traditional surgical fluid rate, far above daily maintenance once multiplied over 24 hours.",
+    "d": "90 mL/kg is the classic total canine shock dose (given in fractions), not a maintenance rate."
+   },
+   "explanation": "Shock boluses are larger/aliased differently; calculate carefully by weight/species. Formula variations exist; follow DVM orders."
+  },
+  "vtne-readiness-check-animal-care-010": {
+   "options": {
+    "a": "Housing in the general ward with a sign on the cage and shared PPE",
+    "b": "Dedicated PPE, disinfection with appropriate parvocidal agents, and traffic control",
+    "c": "Dedicated PPE and routine quaternary ammonium disinfection as the parvocidal step",
+    "d": "Dedicated PPE, with isolation cleaned first each day before the general wards"
+   },
+   "distractorExplanations": {
+    "a": "Parvovirus suspects need a separate isolation area with dedicated PPE, not general-ward housing with shared gear.",
+    "c": "Many quats are not reliably parvocidal; use accelerated hydrogen peroxide, potassium peroxymonosulfate, or bleach per label.",
+    "d": "Isolation should be cleaned last so staff and equipment do not carry parvovirus into the general wards."
+   }
+  },
+  "vtne-readiness-check-animal-care-011": {
+   "options": {
+    "a": "97.0–99.0°F (about 36.1–37.2°C)",
+    "b": "100–102.5°F (about 37.8–39.2°C)",
+    "c": "103–104.5°F (about 39.4–40.3°C)",
+    "d": "105–107°F (about 40.6–41.7°C)"
+   },
+   "distractorExplanations": {
+    "a": "That is roughly the human range and would be hypothermic for a dog; normal canine rectal temperature is 100–102.5°F.",
+    "c": "103–104.5°F in a resting dog is fever or hyperthermia, above the normal 100–102.5°F range.",
+    "d": "105°F and above indicates severe hyperthermia with heatstroke risk, not a normal temperature."
+   }
+  },
+  "vtne-readiness-check-animal-care-013": {
+   "options": {
+    "a": "Scruff firmly and stretch the cat until it stops struggling",
+    "b": "Use low-stress methods, towels/muzzles, and chemical restraint when needed",
+    "c": "Use leather gloves and full-body pinning so that no sedation is needed",
+    "d": "Repeat restraint attempts until the procedure is finished in one visit"
+   },
+   "distractorExplanations": {
+    "a": "Forceful scruff-and-stretch restraint increases fear and injury risk; low-stress handling is preferred.",
+    "c": "Heavy gloves and pinning escalate fear and reduce dexterity; sedation is appropriate when the cat cannot be handled safely.",
+    "d": "Repeated struggling escalates fear; stop and use chemical restraint or reschedule instead."
+   },
+   "explanation": "Low-stress handling and appropriate restraint/chemical help reduce injury and fear. Fear Free methods and DVM-directed sedation reduce injury."
+  },
+  "vtne-readiness-check-animal-care-014": {
+   "options": {
+    "a": "Distemper, parvovirus, Bordetella (and rabies per law)",
+    "b": "Distemper, adenovirus, parvovirus (and rabies per law/epidemiology)",
+    "c": "Lyme disease, Bordetella, and canine influenza in all regions",
+    "d": "Distemper and parvovirus, with rabies left optional by law"
+   },
+   "distractorExplanations": {
+    "a": "Bordetella is a non-core lifestyle vaccine, and adenovirus-2 is the core antigen missing from this list.",
+    "c": "These are risk-based lifestyle vaccines, not core antigens recommended for every dog.",
+    "d": "Rabies vaccination is legally required in most US jurisdictions, and adenovirus-2 is also core."
+   }
+  },
+  "vtne-readiness-check-animal-care-015": {
+   "options": {
+    "a": "Muscle of the caudal thigh (semimembranosus)",
+    "b": "Loose skin over the scruff/shoulder area",
+    "c": "Peritoneal cavity in the lower right quadrant",
+    "d": "Cephalic vein via a butterfly catheter"
+   },
+   "distractorExplanations": {
+    "a": "That is an intramuscular site; SQ fluids go into loose subcutaneous tissue such as the scruff.",
+    "c": "Intraperitoneal administration is a different route; SQ fluids are deposited under the skin.",
+    "d": "That is intravenous access; subcutaneous fluids are given into tissue under loose skin."
+   },
+   "explanation": "SQ fluids are given into subcutaneous tissue, commonly dorsal shoulder/scruff region. Other approved SQ sites may also be used."
+  }
+ }
+}

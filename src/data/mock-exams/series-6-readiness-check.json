@@ -118,7 +118,7 @@
       },
       {
         "id": "d",
-        "text": "Has priority over bonds in a corporate liquidation"
+        "text": "Ranks ahead of bondholders when a corporation is liquidated"
       }
     ],
     "correctOptionId": "b",
@@ -126,7 +126,7 @@
     "distractorExplanations": {
       "a": "Preferred holders are paid before common and usually cannot vote.",
       "c": "Preferred dividends are usually fixed; common dividends vary with earnings.",
-      "d": "Bondholders are paid before preferred holders in liquidation."
+      "d": "Reverses the liquidation order: bondholders and other creditors are paid before preferred stockholders."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -250,7 +250,7 @@
       },
       {
         "id": "d",
-        "text": "Credit risk of a bond's issuer"
+        "text": "Default risk reflected in a bond's credit spread"
       }
     ],
     "correctOptionId": "a",
@@ -258,7 +258,7 @@
     "distractorExplanations": {
       "b": "Maturity is a date; duration weights the timing of all cash flows.",
       "c": "Sensitivity of a stock to the market is beta.",
-      "d": "Credit risk is measured by ratings and spreads, not duration."
+      "d": "Credit spread and default risk measure issuer quality; duration measures price sensitivity to interest-rate changes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -737,7 +737,7 @@
       },
       {
         "id": "b",
-        "text": "Buying the same number of shares each month"
+        "text": "Buying the same number of shares at regular intervals"
       },
       {
         "id": "c",
@@ -752,7 +752,7 @@
     "explanation": "DCA invests steadily regardless of short-term price moves.",
     "distractorExplanations": {
       "a": "Buying on perceived lows is market timing.",
-      "b": "A fixed share count is not dollar-cost averaging; the dollar amount is fixed.",
+      "b": "A fixed share count is not DCA; DCA invests a fixed dollar amount, so more shares are bought when prices are low.",
       "c": "Fixed withdrawals are a systematic withdrawal plan."
     },
     "difficulty": "easy",
@@ -803,7 +803,7 @@
       },
       {
         "id": "b",
-        "text": "Remove market risk by holding many securities"
+        "text": "Eliminate systematic market risk by holding many securities"
       },
       {
         "id": "c",
@@ -817,7 +817,7 @@
     "correctOptionId": "a",
     "explanation": "Diversification reduces idiosyncratic risk; market risk remains.",
     "distractorExplanations": {
-      "b": "Market (systematic) risk cannot be diversified away.",
+      "b": "Diversification cannot remove systematic (market) risk; it reduces only unsystematic, company-specific risk.",
       "c": "Diversification improves risk-adjusted return but does not raise return for free.",
       "d": "Diversification works within an allocation; it does not replace one."
     },
@@ -1096,7 +1096,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only after the customer's first trade settles"
+        "text": "After the first trade, along with the trade confirmation"
       },
       {
         "id": "b",
@@ -1114,7 +1114,7 @@
     "correctOptionId": "c",
     "explanation": "Form CRS must be delivered before or at the earliest of a recommendation, placing an order, or opening an account for a retail investor.",
     "distractorExplanations": {
-      "a": "Form CRS must be delivered before or at the first key event, not after settlement.",
+      "a": "Form CRS must be delivered at or before the earliest of a recommendation, order, or account opening, not with the first confirmation.",
       "b": "Delivery after account opening is too late.",
       "d": "Delivery is required to all retail investors, not only on request."
     },
@@ -1628,7 +1628,7 @@
       },
       {
         "id": "b",
-        "text": "Retirement plans for state employees"
+        "text": "Retirement plans for state and local government employees"
       },
       {
         "id": "c",
@@ -1642,7 +1642,7 @@
     "correctOptionId": "a",
     "explanation": "Real GDP removes price-level changes to show volume of output.",
     "distractorExplanations": {
-      "b": "Government plans are exempt from ERISA.",
+      "b": "Governmental plans for state and local employees are exempt from ERISA; ERISA covers private-sector employer plans.",
       "c": "IRAs are not ERISA employer plans.",
       "d": "Federal plans are governed by separate statutes, not ERISA."
     },
@@ -1694,7 +1694,7 @@
       },
       {
         "id": "b",
-        "text": "Available on the same terms to all workers"
+        "text": "Offered to all employees under nondiscrimination rules"
       },
       {
         "id": "c",
@@ -1709,7 +1709,7 @@
     "explanation": "Permits and new orders often turn before the broad economy.",
     "distractorExplanations": {
       "a": "Assets set aside for NQDC remain subject to the employer's creditors.",
-      "b": "Nonqualified plans may favor selected executives.",
+      "b": "Nonqualified plans are not subject to qualified-plan nondiscrimination rules and are usually offered only to select executives.",
       "d": "The employer deducts the cost when benefits are paid, not when promised."
     },
     "difficulty": "medium",
@@ -1921,11 +1921,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only if the spouse has some earned income"
+        "text": "If the non-working spouse has some earned income of their own"
       },
       {
         "id": "b",
-        "text": "Only if both spouses file separate returns"
+        "text": "If the couple files separate federal tax returns"
       },
       {
         "id": "c",
@@ -1939,8 +1939,8 @@
     "correctOptionId": "c",
     "explanation": "Inversion has historically preceded many U.S. recessions (not a guarantee)",
     "distractorExplanations": {
-      "a": "The spousal IRA exists for a spouse without earned income.",
-      "b": "Spousal IRAs require a joint return.",
+      "a": "The spousal IRA exists because the non-working spouse lacks earned income; it relies on the working spouse's compensation.",
+      "b": "A spousal IRA requires a married-filing-jointly return; filing separately disqualifies the contribution.",
       "d": "Age affects catch-up amounts, not eligibility."
     },
     "difficulty": "medium",
@@ -1962,7 +1962,7 @@
       },
       {
         "id": "c",
-        "text": "Taxed at capital gains rates for all heirs"
+        "text": "Taxed at long-term capital gains rates to the heir"
       },
       {
         "id": "d",
@@ -1973,7 +1973,7 @@
     "explanation": "Economics defines opportunity cost as the forgone alternative.",
     "distractorExplanations": {
       "a": "Pre-tax traditional IRA money is taxed when heirs withdraw it.",
-      "c": "IRA distributions are taxed as ordinary income, not capital gains.",
+      "c": "Traditional IRA distributions are ordinary income to the beneficiary; capital gains rates do not apply inside IRAs.",
       "d": "Beneficiaries are exempt from the 10% early withdrawal penalty."
     },
     "difficulty": "easy",
@@ -2065,7 +2065,7 @@
       },
       {
         "id": "d",
-        "text": "Guaranteed investment contracts from the insurer"
+        "text": "Stable value contracts issued by the insurance company"
       }
     ],
     "correctOptionId": "b",
@@ -2073,7 +2073,7 @@
     "distractorExplanations": {
       "a": "The general account backs fixed products, not variable subaccounts.",
       "c": "Separate accounts are not bank accounts and are not FDIC insured.",
-      "d": "GICs are fixed-return contracts, not variable subaccounts."
+      "d": "Stable value and GIC-type contracts are fixed products backed by the insurer's general account, not the separate account."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2164,7 +2164,7 @@
       },
       {
         "id": "d",
-        "text": "Waive the sales charge on all reinvestments"
+        "text": "Set the load by how long the shares are held"
       }
     ],
     "correctOptionId": "a",
@@ -2172,7 +2172,7 @@
     "distractorExplanations": {
       "b": "Breakpoints reduce, not increase, the charge on larger purchases.",
       "c": "Family accounts can often be combined to reach breakpoints.",
-      "d": "Reinvestment at NAV is a separate feature, not a breakpoint."
+      "d": "A charge that depends on holding period is a contingent deferred sales charge (B shares), not a front-end breakpoint."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2787,7 +2787,7 @@
       },
       {
         "id": "c",
-        "text": "Actively traded sector funds"
+        "text": "High-turnover actively managed sector funds"
       },
       {
         "id": "d",
@@ -2798,7 +2798,7 @@
     "explanation": "After-tax returns matter in taxable accounts.",
     "distractorExplanations": {
       "b": "High-yield bond interest is fully taxable.",
-      "c": "Active trading creates taxable distributions.",
+      "c": "High turnover realizes frequent short-term gains taxed as ordinary income, which hurts tax-sensitive taxable accounts.",
       "d": "REIT dividends are mostly taxed as ordinary income."
     },
     "difficulty": "medium",
@@ -2981,7 +2981,7 @@
       },
       {
         "id": "b",
-        "text": "Public offerings of new corporate securities"
+        "text": "Registration and prospectus rules for new corporate issues"
       },
       {
         "id": "c",
@@ -2996,7 +2996,7 @@
     "explanation": "The 1940 Act governs fund structure, disclosure, and fiduciary duties of funds.",
     "distractorExplanations": {
       "a": "Broker-dealer registration falls under the Securities Exchange Act of 1934.",
-      "b": "Public offerings are governed by the Securities Act of 1933.",
+      "b": "Registration and prospectus rules for new issues come from the Securities Act of 1933, not the Investment Company Act of 1940.",
       "c": "Exchange trading is regulated under the 1934 Act."
     },
     "difficulty": "easy",
@@ -3018,7 +3018,7 @@
       },
       {
         "id": "c",
-        "text": "Delivered only if the customer asks for a copy"
+        "text": "Delivered once a year with the fund's annual report"
       },
       {
         "id": "d",
@@ -3029,7 +3029,7 @@
     "explanation": "Prospectus delivery ensures investors receive material fund information.",
     "distractorExplanations": {
       "b": "Delivery after 90 days is too late.",
-      "c": "Delivery is required, not only on request.",
+      "c": "The annual report is a separate shareholder report; the prospectus must be delivered or available at or before the sale.",
       "d": "Every purchaser must receive a prospectus."
     },
     "difficulty": "easy",
@@ -3439,7 +3439,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Allowed with no special rules"
+        "text": "Allowed on margin the same day, like listed stocks"
       },
       {
         "id": "b",
@@ -3457,7 +3457,7 @@
     "correctOptionId": "b",
     "explanation": "Margin increases risk; firms must approve and disclose accordingly.",
     "distractorExplanations": {
-      "a": "Margin rules and suitability still apply.",
+      "a": "Mutual fund shares are a continuous new issue and cannot be bought on margin at purchase; they can serve as collateral after 30 days.",
       "c": "Margin is not allowed in retirement accounts.",
       "d": "Holding period does not govern margin use."
     },
@@ -3513,7 +3513,7 @@
       },
       {
         "id": "c",
-        "text": "Taxed at capital gains rates on earnings"
+        "text": "Taxed at long-term capital gains rates on the earnings"
       },
       {
         "id": "d",
@@ -3524,7 +3524,7 @@
     "explanation": "Qualified Roth distributions avoid federal income tax on earnings.",
     "distractorExplanations": {
       "b": "Qualified Roth withdrawals are tax-free.",
-      "c": "Roth earnings are not taxed as gains when qualified.",
+      "c": "Qualified Roth distributions are fully tax-free; capital gains treatment applies to taxable accounts, not Roth IRAs.",
       "d": "Qualified withdrawals generally require age 59½ or another qualifying event."
     },
     "difficulty": "easy",
@@ -3546,7 +3546,7 @@
       },
       {
         "id": "c",
-        "text": "Only after ten years of service"
+        "text": "After a ten-year cliff vesting period"
       },
       {
         "id": "d",
@@ -3557,7 +3557,7 @@
     "explanation": "Vesting schedules determine when employer contributions become the employee's.",
     "distractorExplanations": {
       "a": "Some plans vest immediately, but many use schedules.",
-      "c": "Vesting schedules cannot exceed ERISA maximums, which are shorter.",
+      "c": "Ten-year cliff vesting is not permitted; employer 401(k) contributions must vest under a 3-year cliff or 2-to-6-year graded schedule.",
       "d": "Vesting is based on service, not retirement."
     },
     "difficulty": "easy",
@@ -3571,7 +3571,7 @@
     "options": [
       {
         "id": "a",
-        "text": "At age 59½ for all IRA owners"
+        "text": "At age 59½, when penalties end"
       },
       {
         "id": "b",
@@ -3583,15 +3583,15 @@
       },
       {
         "id": "d",
-        "text": "At age 70½ for all IRA owners"
+        "text": "At age 70½ under current law"
       }
     ],
     "correctOptionId": "c",
     "explanation": "RMD rules force taxable distributions from tax-deferred accounts after the starting age.",
     "distractorExplanations": {
-      "a": "Age 59½ ends the early withdrawal penalty; it does not start RMDs.",
+      "a": "Age 59½ is when the 10% early-withdrawal penalty generally ends; RMDs start later, at the SECURE 2.0 starting age.",
       "b": "RMD age is not tied to Medicare eligibility.",
-      "d": "70½ was the old rule; the SECURE Acts raised the age."
+      "d": "Age 70½ was the pre-2020 RMD age; SECURE and SECURE 2.0 raised it (currently 73)."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

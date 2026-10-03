@@ -344,13 +344,13 @@ describe("deck catalog", () => {
       "/samples/cfa-level-2-anki-deck-sample-3.webp",
     ]);
     expect(l2Deck?.sampleCards.map((card) => card.question)).toEqual([
-      "CFO is $120M after a $5M working-capital build and $8M interest paid. FCInv is $25M, new debt $15M, debt repaid $5M, tax rate 25%. What is FCFE?",
-      "A callable bond is worth 100.00 on a binomial tree at a constant OAS. Shifting the benchmark curve down and up 25 bps gives 101.40 and 98.20. What is its effective duration?",
-      "A sub's functional currency is the parent's USD, so the temporal method applies. It holds LC 1,000 of inventory bought at $0.80/LC; today's rate is $0.70. What is inventory in USD?",
+      "How do you value a 2-year 3% annual-pay bond on a tree with r₀ = 2% and year-1 rates of 3.375% and 2.5%?",
+      "How do you apply both a DLOC and a DLOM to value a minority stake in a private company?",
+      "How does standardized unexpected earnings work as a momentum indicator, and why scale the surprise?",
     ]);
-    expect(l2Deck?.sampleCards[0]?.answer).toContain("FCFE = $105M: CFO − FCIn");
-    expect(l2Deck?.sampleCards[1]?.answer).toContain("6.40. A callable bond's ");
-    expect(l2Deck?.sampleCards[2]?.answer).toContain("$800. Under the temporal");
+    expect(l2Deck?.sampleCards[0]?.answer).toContain("today's value is about 101.04");
+    expect(l2Deck?.sampleCards[1]?.answer).toContain("Total discount = 1 − (1 − DLOC)(1 − DLOM)");
+    expect(l2Deck?.sampleCards[2]?.answer).toContain("SUE = (reported EPS − expected EPS)");
   });
 
   it("includes the FRM Part 1 deck with three Gumroad preview cards", () => {

@@ -1,0 +1,30 @@
+{
+ "nail-technician-state-readiness-check": {
+  "nail-technician-state-readiness-check-infection-004": {
+   "options": {
+    "a": "Sprayed with disinfectant, then wiped dry",
+    "b": "Disinfected first, then scrubbed clean",
+    "c": "Wiped with a 70% alcohol pad between clients",
+    "d": "Cleaned of debris, then fully disinfected"
+   },
+   "distractorExplanations": {
+    "c": "A quick alcohol wipe is not full immersion in an EPA-registered disinfectant for the label contact time and skips cleaning off debris.",
+    "a": "Skips the cleaning step and the label contact time; debris blocks disinfectant and wiping ends contact early.",
+    "b": "Reverses the order: debris must be removed first or the disinfectant cannot reach the metal surface."
+   }
+  },
+  "nail-technician-state-readiness-check-services-031": {
+   "options": {
+    "a": "Polish, shape, cuticle work, sanitize, then nourish",
+    "b": "Shape, sanitize, polish, then cuticle work",
+    "c": "Sanitize, shape, cuticle work, nourish, polish",
+    "d": "Cuticle work, sanitize, shape, polish, nourish"
+   },
+   "distractorExplanations": {
+    "a": "Puts polish first and sanitizing fourth; hands are sanitized at the start, and polish goes last after shaping, cuticle work, and oil.",
+    "b": "Sanitizing must come before shaping, and cuticle work is done before polish, not after it.",
+    "d": "Starting with cuticle work before sanitizing skips infection control, and nourishing oil goes before polish."
+   }
+  }
+ }
+}

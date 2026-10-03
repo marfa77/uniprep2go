@@ -886,7 +886,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cfa-level-2-readiness-check": {
     title: "Free CFA Level 2 Mock Exam 2026 | 60-Question Diagnostic",
     description:
-      "Free CFA Level 2 practice: 60 timed questions / 90 minutes across all 10 topics, then repair with the $39 / 495-card Level 2 Anki + formula PDF. Official L2 is 88 vignette-linked items / ~4h24 — this page is a shorter diagnostic. Independent — not CFA Institute material.",
+      "Free CFA Level 2 practice: 60 timed mini-vignette questions / 120 minutes across all 10 topics, then repair with the $39 / 495-card Level 2 Anki + formula PDF. Official L2 is 88 vignette-linked items / ~4h24 — this page is a shorter diagnostic. Independent — not CFA Institute material.",
     keywords: [
       "cfa level 2 practice test",
       "cfa level 2 mock exam",
@@ -897,7 +897,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free CFA Level 2 Readiness Check",
     intro:
-      "A timed 60-question / 90-minute CFA Level 2 readiness diagnostic with vignette-style application prompts across ethics, FSA, equity, fixed income, derivatives, and portfolio management — then drill weak topics in the linked 495-card Anki deck and Level 2 formula PDF. Official Level 2 is 88 vignette-linked multiple-choice items across two sessions (~4 hours 24 minutes total); this check is not a full-length item-set mock.",
+      "A timed 60-question / 120-minute CFA Level 2 readiness diagnostic with vignette-style application prompts across ethics, FSA, equity, fixed income, derivatives, and portfolio management — then drill weak topics in the linked 495-card Anki deck and Level 2 formula PDF. Official Level 2 is 88 vignette-linked multiple-choice items across two sessions (~4 hours 24 minutes total); this check is not a full-length item-set mock.",
     audience: "CFA Level 2 candidates who passed Level 1 and want a baseline before item-set practice blocks.",
     practiceTestLabel: "CFA Level 2 practice test",
   },

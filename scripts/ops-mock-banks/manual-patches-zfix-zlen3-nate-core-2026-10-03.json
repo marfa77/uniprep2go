@@ -1,0 +1,56 @@
+{
+ "nate-core-readiness-check": {
+  "nate-core-readiness-check-safety-004": {
+   "options": {
+    "a": "Run the furnace a full cycle to see whether the smell clears up",
+    "b": "Switch on the furnace blower to air out the room, then find the leak",
+    "c": "Check the flue for a blockage, since that odor points to flue-gas spillage",
+    "d": "Shut the gas, ventilate, and treat it as a leak until proved otherwise"
+   },
+   "distractorExplanations": {
+    "c": "Mercaptan's rotten-egg smell signals unburned gas, not flue-gas spillage; combustion products such as CO are largely odorless.",
+    "a": "Operating burners and controls in a gas-odor area risks ignition; the odor itself means shut off the gas and ventilate first.",
+    "b": "Operating switches or motors can spark and ignite gas; ventilate by opening doors and windows with the gas off and nothing switched."
+   }
+  },
+  "nate-core-readiness-check-tools-021": {
+   "options": {
+    "a": "Across the air handler, supply plus return, with the blower running",
+    "b": "At the supply plenum only, with the blower running on high speed",
+    "c": "Across the air handler with the blower off, to get a stable reading",
+    "d": "Across the air handler with the filter removed, for a clean baseline reading"
+   },
+   "distractorExplanations": {
+    "d": "TESP is read with the system as it operates, filter in place; pulling the filter lowers the reading and hides the real restriction.",
+    "b": "Supply static alone leaves out the return side; TESP is the sum of supply and return static magnitudes at the air handler.",
+    "c": "Static pressure exists only with airflow; with the blower off the reading is zero and tells you nothing about the duct system."
+   }
+  },
+  "nate-core-readiness-check-tools-030": {
+   "options": {
+    "a": "Standard white PTFE plumbing tape, applied to flare fittings too",
+    "b": "A listed gas-rated compound or tape, used on the correct threads",
+    "c": "Refrigerant POE oil, which lubricates and seals the threads",
+    "d": "Any general-purpose pipe dope, applied to the female threads for best coverage"
+   },
+   "distractorExplanations": {
+    "d": "Gas joints need a gas-listed compound on the male threads; dope on female threads gets pushed into the line and general dope may not be rated.",
+    "a": "Flare fittings seal metal to metal and get no sealant, and gas threads need a gas-rated (yellow) tape, not plain PTFE.",
+    "c": "POE oil is used on refrigerant flare faces and O-rings; it is not a listed sealant for gas pipe threads."
+   }
+  },
+  "nate-core-readiness-check-electrical-042": {
+   "options": {
+    "a": "The indoor coil reaches the termination temperature or a time limit",
+    "b": "The outdoor coil reaches termination temperature or a time limit",
+    "c": "The outdoor air temperature rises above the balance point setting",
+    "d": "The fixed 90-minute run-time interval set on the board has elapsed"
+   },
+   "distractorExplanations": {
+    "a": "Defrost terminates on the outdoor coil sensor; the indoor coil is not what is being defrosted.",
+    "c": "The balance point governs auxiliary-heat lockout and staging, not defrost termination.",
+    "d": "The 30/60/90-minute pins set the interval between defrost checks, not when an active defrost ends."
+   }
+  }
+ }
+}

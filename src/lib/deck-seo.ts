@@ -691,7 +691,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 2 mock exam",
     ],
     intro:
-      "CFA Level 2 candidates use spaced-repetition flashcards to retain vignette-depth formulas and application logic across all ten equally weighted curriculum topics — run the free readiness check before item-set practice blocks.",
+      "CFA Level 2 candidates use spaced-repetition flashcards to retain vignette-depth formulas and application logic across all ten curriculum topics (weighted 5–15% each) — run the free readiness check before item-set practice blocks.",
   },
   "cfa-level-2-formula-reference-2026": {
     title: "CFA L2 Formula Sheet 2026 | Free 60Q Mock + PDF",

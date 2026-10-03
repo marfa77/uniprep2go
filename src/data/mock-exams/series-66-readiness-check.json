@@ -106,7 +106,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Credit risk of a bond's issuer"
+        "text": "Default risk reflected in a bond's credit spread"
       },
       {
         "id": "b",
@@ -124,7 +124,7 @@
     "correctOptionId": "d",
     "explanation": "Duration approximates interest-rate price sensitivity of bonds.",
     "distractorExplanations": {
-      "a": "Credit risk is measured by ratings and spreads, not duration.",
+      "a": "Credit spread and default risk measure issuer quality; duration measures price sensitivity to interest-rate changes.",
       "b": "Maturity is a date; duration weights the timing of all cash flows.",
       "c": "Sensitivity of a stock to the market is beta."
     },
@@ -139,7 +139,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A foreign share traded on its home exchange"
+        "text": "A foreign ordinary share listed on its home-country exchange"
       },
       {
         "id": "b",
@@ -157,7 +157,7 @@
     "correctOptionId": "d",
     "explanation": "ADRs facilitate U.S. trading of foreign equities.",
     "distractorExplanations": {
-      "a": "An ADR trades in the U.S., not on the foreign home exchange.",
+      "a": "That describes the underlying ordinary share; the ADR is a U.S.-traded receipt issued by a depositary bank against it.",
       "b": "ADRs represent foreign issuers' shares, not U.S. companies'.",
       "c": "A basket of foreign stocks is a fund, while an ADR represents one issuer."
     },
@@ -481,7 +481,7 @@
       },
       {
         "id": "d",
-        "text": "Has priority over bonds in a corporate liquidation"
+        "text": "Ranks ahead of bondholders when a corporation is liquidated"
       }
     ],
     "correctOptionId": "a",
@@ -489,7 +489,7 @@
     "distractorExplanations": {
       "b": "Preferred holders are paid before common and usually cannot vote.",
       "c": "Preferred dividends are usually fixed; common dividends vary with earnings.",
-      "d": "Bondholders are paid before preferred holders in liquidation."
+      "d": "Reverses the liquidation order: bondholders and other creditors are paid before preferred stockholders."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -642,19 +642,19 @@
       },
       {
         "id": "c",
-        "text": "Disclose conflicts only when clients ask"
+        "text": "Disclose conflicts when the client asks about them"
       },
       {
         "id": "d",
-        "text": "Seek the lowest-cost product in all cases"
+        "text": "Choose the lowest-cost product for each client"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Fiduciary duty includes loyalty and care for the client.",
     "distractorExplanations": {
       "b": "Suitability is a lower standard than the fiduciary duty of loyalty.",
-      "c": "Fiduciaries must disclose material conflicts proactively.",
-      "d": "Cost matters, but fiduciary duty weighs all factors, not only price."
+      "c": "Fiduciaries must proactively disclose material conflicts; waiting for the client to ask does not satisfy the duty of loyalty.",
+      "d": "The duty of care weighs cost among many factors; it does not require picking the cheapest product for every client."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -811,7 +811,7 @@
       },
       {
         "id": "d",
-        "text": "The adviser's fee schedule and billing"
+        "text": "The adviser's fee schedule and billing method"
       }
     ],
     "correctOptionId": "b",
@@ -819,7 +819,7 @@
     "distractorExplanations": {
       "a": "An IPS sets policy and ranges, not a list of trades.",
       "c": "An IPS may state a required return, but not a promised annual target.",
-      "d": "Fees belong in the advisory agreement and Form ADV."
+      "d": "Fees and billing belong in the advisory contract and Form ADV Part 2A; the IPS sets objectives, constraints, and allocation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -836,7 +836,7 @@
       },
       {
         "id": "b",
-        "text": "Buying the same number of shares each month"
+        "text": "Buying the same number of shares at regular intervals"
       },
       {
         "id": "c",
@@ -851,7 +851,7 @@
     "explanation": "DCA invests steadily regardless of short-term price moves.",
     "distractorExplanations": {
       "a": "Buying on perceived lows is market timing.",
-      "b": "A fixed share count is not dollar-cost averaging; the dollar amount is fixed.",
+      "b": "A fixed share count is not DCA; DCA invests a fixed dollar amount, so more shares are bought when prices are low.",
       "d": "Fixed withdrawals are a systematic withdrawal plan."
     },
     "difficulty": "easy",
@@ -902,7 +902,7 @@
       },
       {
         "id": "b",
-        "text": "Remove market risk by holding many securities"
+        "text": "Eliminate systematic market risk by holding many securities"
       },
       {
         "id": "c",
@@ -916,7 +916,7 @@
     "correctOptionId": "a",
     "explanation": "Diversification reduces idiosyncratic risk; market risk remains.",
     "distractorExplanations": {
-      "b": "Market (systematic) risk cannot be diversified away.",
+      "b": "Diversification cannot remove systematic (market) risk; it reduces only unsystematic, company-specific risk.",
       "c": "Diversification improves risk-adjusted return but does not raise return for free.",
       "d": "Diversification works within an allocation; it does not replace one."
     },
@@ -939,7 +939,7 @@
       },
       {
         "id": "c",
-        "text": "The risk level of the adviser's model portfolio"
+        "text": "The risk level of the firm's recommended model portfolio"
       },
       {
         "id": "d",
@@ -951,7 +951,7 @@
     "distractorExplanations": {
       "a": "Age matters, but it is only one input.",
       "b": "Past returns do not show willingness or capacity to bear losses.",
-      "c": "The model's risk describes the product, not the client."
+      "c": "Risk tolerance is a client attribute; the firm's model portfolio is chosen after assessing it, not used to define it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Analyst research reports sent to clients"
+        "text": "Published analyst research reports sent to clients"
       },
       {
         "id": "b",
@@ -1378,7 +1378,7 @@
     "correctOptionId": "c",
     "explanation": "Classic illegal insider trading: MNPI + duty breach.",
     "distractorExplanations": {
-      "a": "Research reports sent to clients are not inside information.",
+      "a": "Research that has been published and distributed to clients is public information, so trading on it is not insider trading.",
       "b": "Public information, even if obscure, is not insider information.",
       "d": "Public rumors are not material nonpublic information from an insider."
     },
@@ -1393,7 +1393,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The lowest commission, regardless of execution quality"
+        "text": "The lowest commission rate, even if execution quality suffers"
       },
       {
         "id": "b",
@@ -1401,7 +1401,7 @@
       },
       {
         "id": "c",
-        "text": "The fastest execution venue available that day"
+        "text": "The fastest available venue, even at a worse fill price"
       },
       {
         "id": "d",
@@ -1411,9 +1411,9 @@
     "correctOptionId": "d",
     "explanation": "Best execution is about overall quality, not solely sticker commission.",
     "distractorExplanations": {
-      "a": "Commission is one factor; best execution weighs total quality.",
+      "a": "Best execution weighs price, speed, likelihood of execution, and service; the lowest commission alone does not satisfy it.",
       "b": "An affiliated broker may be used only if it delivers best execution.",
-      "c": "Speed is one factor, not the whole standard."
+      "c": "Speed is only one factor; a fast fill at an inferior price can violate the duty to seek the most favorable overall terms."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1434,7 +1434,7 @@
       },
       {
         "id": "c",
-        "text": "A note in the client's annual account review"
+        "text": "Disclosure in the client's year-end account statement"
       },
       {
         "id": "d",
@@ -1446,7 +1446,7 @@
     "distractorExplanations": {
       "a": "Consent must be obtained before completion of the trade and in writing.",
       "b": "Internal approval does not replace client consent.",
-      "c": "Annual review is too late; consent is needed for each trade."
+      "c": "After-the-fact disclosure in a statement is too late; Advisers Act Section 206(3) requires written disclosure and consent before completion."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1496,7 +1496,7 @@
       },
       {
         "id": "b",
-        "text": "The total cost paid to carry out a decision"
+        "text": "The total out-of-pocket cost paid to carry out a decision"
       },
       {
         "id": "c",
@@ -1510,7 +1510,7 @@
     "correctOptionId": "a",
     "explanation": "Economics defines opportunity cost as the forgone alternative.",
     "distractorExplanations": {
-      "b": "Out-of-pocket cost is explicit cost, not opportunity cost.",
+      "b": "Out-of-pocket cost is the explicit cost; opportunity cost is the value of the best alternative given up.",
       "c": "Sunk costs are already spent and should not affect decisions.",
       "d": "Return above a benchmark is alpha."
     },
@@ -1702,7 +1702,7 @@
       },
       {
         "id": "d",
-        "text": "Set by the Federal Reserve"
+        "text": "Set directly by the Federal Reserve"
       }
     ],
     "correctOptionId": "b",
@@ -1710,7 +1710,7 @@
     "distractorExplanations": {
       "a": "Long yields below short yields describe an inverted curve.",
       "c": "Equal yields across maturities describe a flat curve.",
-      "d": "The Fed sets the short-term policy rate; the market sets long yields."
+      "d": "The Fed targets the short-term federal funds rate; long-term Treasury yields are set by market supply and demand."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1900,7 +1900,7 @@
       },
       {
         "id": "d",
-        "text": "Changes to reserve requirements"
+        "text": "Changes to bank reserve requirements"
       }
     ],
     "correctOptionId": "c",
@@ -1908,7 +1908,7 @@
     "distractorExplanations": {
       "a": "Open-market operations are monetary policy run by the Fed.",
       "b": "The discount rate is a Federal Reserve tool.",
-      "d": "Reserve requirements are set by the Fed."
+      "d": "Reserve requirements are a Federal Reserve monetary policy tool; fiscal policy is government spending and taxation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -2127,7 +2127,7 @@
       },
       {
         "id": "c",
-        "text": "Changes each holder's percentage ownership"
+        "text": "Dilutes each holder's percentage ownership in the company"
       },
       {
         "id": "d",
@@ -2139,7 +2139,7 @@
     "distractorExplanations": {
       "a": "A split does not change the company's total value.",
       "b": "Fewer shares at a higher price describe a reverse split.",
-      "c": "Every holder gets proportional shares, so ownership percentages stay the same."
+      "c": "A split gives every holder proportionally more shares, so each holder's percentage ownership stays the same."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2164,7 +2164,7 @@
       },
       {
         "id": "d",
-        "text": "Rights to sell stock at a set price"
+        "text": "Rights to sell the issuer's stock at a set price"
       }
     ],
     "correctOptionId": "a",
@@ -2172,7 +2172,7 @@
     "distractorExplanations": {
       "b": "OCC-cleared standardized contracts are listed options.",
       "c": "Options are written by investors; warrants come from the issuer.",
-      "d": "Warrants are rights to buy, not sell."
+      "d": "A right to sell at a set price is a put; warrants are long-term rights to buy stock from the issuing company."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2288,7 +2288,7 @@
       },
       {
         "id": "b",
-        "text": "Day traders who monitor positions during the day"
+        "text": "Day traders who monitor and close positions each day"
       },
       {
         "id": "c",
@@ -2302,7 +2302,7 @@
     "correctOptionId": "a",
     "explanation": "Daily reset causes long-horizon performance to diverge from simple multiples of the index.",
     "distractorExplanations": {
-      "b": "Active intraday users are the intended audience.",
+      "b": "Leveraged ETFs are designed for one-day horizons, so actively monitored day trading is the use they are built for.",
       "c": "Short-term tactical use with understanding fits the design.",
       "d": "Short-term institutional hedging matches the daily reset."
     },
@@ -2519,7 +2519,7 @@
       },
       {
         "id": "b",
-        "text": "Growth stocks for long-term appreciation"
+        "text": "Growth stocks for long-term capital appreciation"
       },
       {
         "id": "c",
@@ -2533,7 +2533,7 @@
     "correctOptionId": "a",
     "explanation": "Retirees drawing accounts need stable cash flow and controlled risk.",
     "distractorExplanations": {
-      "b": "Growth stocks add volatility and pay little income.",
+      "b": "Growth stocks pay little income and are volatile, which conflicts with a conservative retiree's need for income and preservation.",
       "c": "Zeros pay no current income and are volatile.",
       "d": "Emerging markets add risk and are not income-focused."
     },
@@ -2787,7 +2787,7 @@
       },
       {
         "id": "c",
-        "text": "Use the more conservative spouse's tolerance"
+        "text": "Use the more conservative spouse's tolerance for all assets"
       },
       {
         "id": "d",
@@ -2798,7 +2798,7 @@
     "explanation": "Household planning should reconcile objectives and document both perspectives.",
     "distractorExplanations": {
       "b": "Ignoring one spouse's comfort risks unsuitable recommendations.",
-      "c": "Defaulting to one spouse ignores the other's goals.",
+      "c": "Defaulting to one spouse's profile ignores the other's goals; each profile should be documented and reconciled for joint goals.",
       "d": "Averaging hides real differences that should be discussed."
     },
     "difficulty": "medium",
@@ -2824,7 +2824,7 @@
       },
       {
         "id": "d",
-        "text": "They are guaranteed by the U.S. government"
+        "text": "They are backed by the full faith of the U.S. Treasury"
       }
     ],
     "correctOptionId": "b",
@@ -2832,7 +2832,7 @@
     "distractorExplanations": {
       "a": "Muni bond funds lose value when rates rise.",
       "c": "Munis usually pay lower nominal yields than corporates.",
-      "d": "Munis are not federally guaranteed."
+      "d": "Municipal bonds are backed by state or local issuers' taxing power or project revenue, not by the U.S. Treasury."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2919,7 +2919,7 @@
       },
       {
         "id": "c",
-        "text": "Tax deductions available on margin interest"
+        "text": "Tax deductions available for the margin interest paid"
       },
       {
         "id": "d",
@@ -2930,7 +2930,7 @@
     "explanation": "Margin magnifies gains and losses; costs and call risk must be clear.",
     "distractorExplanations": {
       "b": "Rate comparisons are not the required risk disclosure.",
-      "c": "Tax deductibility is not the key risk disclosure.",
+      "c": "Interest deductibility is a tax planning point; the required margin disclosures are interest cost, maintenance calls, and amplified losses.",
       "d": "Past returns do not disclose margin risks."
     },
     "difficulty": "hard",
@@ -2985,7 +2985,7 @@
       },
       {
         "id": "c",
-        "text": "Delaying a client order to get a better price"
+        "text": "Delaying a client order to seek a better fill for the client"
       },
       {
         "id": "d",
@@ -2997,7 +2997,7 @@
     "distractorExplanations": {
       "a": "Putting clients first is the correct priority, not front-running.",
       "b": "Block trading is legitimate when allocations are fair.",
-      "c": "Working an order for a better fill is not front-running."
+      "c": "Working an order for the client's benefit is order handling, not front-running, which is trading ahead for personal gain."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3088,7 +3088,7 @@
       },
       {
         "id": "d",
-        "text": "Reporting to the state administrator"
+        "text": "Reporting to the state administrator within 30 days"
       }
     ],
     "correctOptionId": "c",
@@ -3096,7 +3096,7 @@
     "distractorExplanations": {
       "a": "Firm policy and supervision govern gifts, not only client disclosure.",
       "b": "Firms apply limits and approval, not a one-year return rule.",
-      "d": "Gifts are handled by firm policy, not reported to the state."
+      "d": "Gifts are governed by firm policy and supervisory review; there is no 30-day gift report to the state administrator."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3146,7 +3146,7 @@
       },
       {
         "id": "b",
-        "text": "Verbal notice to the branch manager only"
+        "text": "Verbal notice to the branch manager before the sale"
       },
       {
         "id": "c",
@@ -3160,7 +3160,7 @@
     "correctOptionId": "a",
     "explanation": "Selling away bypasses firm supervision and generally needs approval.",
     "distractorExplanations": {
-      "b": "Notice must be written, and paid transactions need approval.",
+      "b": "FINRA Rule 3280 requires prior written notice to the member firm, and written approval when the person is compensated.",
       "c": "Client consent does not replace firm notice and approval.",
       "d": "Disclosure must come before the transaction, not afterward."
     },
@@ -3208,7 +3208,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Show illustrations as guaranteed values"
+        "text": "Present projected values as contractual values"
       },
       {
         "id": "b",
@@ -3226,7 +3226,7 @@
     "correctOptionId": "c",
     "explanation": "Insurance illustrations are projections, not promises.",
     "distractorExplanations": {
-      "a": "Illustrations are projections and must not be presented as guarantees.",
+      "a": "Illustrations show projections based on assumed rates; presenting them as contractual values misrepresents non-guaranteed elements.",
       "b": "Using the top rate without labeling it misleads clients.",
       "d": "Omitting fees overstates results."
     },
@@ -3414,7 +3414,7 @@
       },
       {
         "id": "c",
-        "text": "Allocating IPO shares by written policy"
+        "text": "Allocating IPO shares under a written, fair allocation policy"
       },
       {
         "id": "d",
@@ -3425,7 +3425,7 @@
     "explanation": "Personal trading ahead of aggregated client orders is prohibited front-running.",
     "distractorExplanations": {
       "b": "Pre-clearance is a required control, not a violation.",
-      "c": "Written allocation policies are good practice.",
+      "c": "Allocating IPO shares by a written, fair policy is expected practice; it prevents favoritism rather than being prohibited.",
       "d": "Disclosing soft dollars is required."
     },
     "difficulty": "hard",
@@ -3678,7 +3678,7 @@
       },
       {
         "id": "c",
-        "text": "Sales by agents who are not registered"
+        "text": "Sales by agents who are not registered in the state"
       },
       {
         "id": "d",
@@ -3689,7 +3689,7 @@
     "explanation": "Statutory exemptions exist but do not bless fraudulent conduct.",
     "distractorExplanations": {
       "a": "Public issuer offerings generally require registration.",
-      "c": "Agent registration still applies; exempt transactions do not cover unregistered agents.",
+      "c": "Exempt transactions excuse the security from registration; they do not let unregistered agents sell in the state.",
       "d": "Public advertising usually defeats private exemptions."
     },
     "difficulty": "medium",
@@ -3872,7 +3872,7 @@
       },
       {
         "id": "b",
-        "text": "Set commission rates for all broker-dealers"
+        "text": "Set uniform commission rates for broker-dealers"
       },
       {
         "id": "c",
@@ -3887,7 +3887,7 @@
     "explanation": "NASAA coordinates state regulators for consistent policy and exams like Series 63/65/66.",
     "distractorExplanations": {
       "a": "NASAA coordinates states; it does not replace state law.",
-      "b": "Commissions are not set by regulators.",
+      "b": "Neither NASAA nor the states set commission rates; compensation is subject only to fairness and disclosure rules.",
       "c": "Many offerings are federal covered and exempt from state review."
     },
     "difficulty": "hard",

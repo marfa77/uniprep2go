@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Dissolved nitrate to zero"
+        "text": "Dissolved BOD and ammonia so secondary treatment is not overloaded"
       },
       {
         "id": "c",
-        "text": "Cryptosporidium cysts only, like a drinking-water filter"
+        "text": "Colloidal solids and pathogens ahead of disinfection"
       },
       {
         "id": "d",
-        "text": "All BOD in one pass"
+        "text": "Grit and sand that settle faster than organic solids"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Primary tanks take settleable solids and scum; soluble BOD goes to secondary. This item asks: “Primary clarification mainly removes:”. The matching answer is: Settleable solids and floating scum before biological treatment. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Dissolved nitrate to zero” does not answer “Primary clarification mainly removes:”. The matching answer is: Settleable solids and floating scum before biological treatment.",
-      "c": "“Cryptosporidium cysts only, like a drinking-water filter” does not answer “Primary clarification mainly removes:”. The matching answer is: Settleable solids and floating scum before biological treatment.",
-      "d": "“All BOD in one pass” does not answer “Primary clarification mainly removes:”. The matching answer is: Settleable solids and floating scum before biological treatment."
+      "b": "Soluble BOD and ammonia pass through primary clarifiers; they are removed biologically in secondary treatment.",
+      "c": "Colloids and pathogens are not removed by plain settling; that takes secondary treatment, filtration, and disinfection.",
+      "d": "Grit is removed upstream in grit chambers; primary clarifiers capture lighter settleable organic solids and scum."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The grit in the headworks channel"
+        "text": "The solids settled and wasted from the primary clarifier"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Finished drinking-water turbidity"
+        "text": "The suspended solids remaining in the final effluent"
       },
       {
         "id": "d",
-        "text": "The chlorine residual in the clearwell"
+        "text": "The solids concentration pumped back as return sludge"
       }
     ],
     "correctOptionId": "b",
     "explanation": "MLSS is the aeration-tank inventory, not a potable-water clearwell number. This item asks: “In activated sludge, mixed liquor suspended solids (MLSS) are:”. The matching answer is: The biomass and solids circulating in the aeration tank. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“The grit in the headworks channel only” does not answer “In activated sludge, mixed liquor suspended solids (MLSS) are:”. The matching answer is: The biomass and solids circulating in the aeration tank.",
-      "c": "“Finished drinking-water turbidity” does not answer “In activated sludge, mixed liquor suspended solids (MLSS) are:”. The matching answer is: The biomass and solids circulating in the aeration tank.",
-      "d": "“The chlorine residual in the clearwell” does not answer “In activated sludge, mixed liquor suspended solids (MLSS) are:”. The matching answer is: The biomass and solids circulating in the aeration tank."
+      "a": "That is primary sludge (raw settled solids); MLSS is the biomass and solids in the aeration tank.",
+      "c": "That is effluent TSS, a permit parameter, not the solids inventory circulating in the aeration tank.",
+      "d": "That is RAS concentration, which is thicker than MLSS; MLSS is the mixed liquor in the aeration tank itself."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The plant is producing bottled water"
+        "text": "The mixed liquor settles very quickly, leaving a turbid supernatant"
       },
       {
         "id": "b",
-        "text": "Grit removal is optional"
+        "text": "The aeration tank is overloaded with dissolved oxygen above 4 mg/L"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "The NPDES permit is automatically met"
+        "text": "The sludge compacts well and the clarifier blanket stays very low"
       }
     ],
     "correctOptionId": "c",
     "explanation": "High SVI is a settling/bulking problem, not a drinking-water win. This item asks: “A high sludge volume index (SVI) usually means:”. The matching answer is: The mixed liquor settles poorly and may not compact in the clarifier. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“The plant is producing bottled water” does not answer “A high sludge volume index (SVI) usually means:”. The matching answer is: The mixed liquor settles poorly and may not compact in the clarifier.",
-      "b": "“Grit removal is optional” does not answer “A high sludge volume index (SVI) usually means:”. The matching answer is: The mixed liquor settles poorly and may not compact in the clarifier.",
-      "d": "“The NPDES permit is automatically met” does not answer “A high sludge volume index (SVI) usually means:”. The matching answer is: The mixed liquor settles poorly and may not compact in the clarifier."
+      "a": "Fast settling with a turbid supernatant points to pin floc or old sludge, which typically gives a low SVI.",
+      "b": "SVI measures sludge settleability in mL per gram of solids; it says nothing directly about dissolved oxygen.",
+      "d": "Good compaction and a low blanket correspond to a low-to-normal SVI (roughly 80–150 mL/g), not a high one."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The potable distribution system"
+        "text": "Return settled biomass from the clarifier to the digester"
       },
       {
         "id": "b",
-        "text": "The raw-water intake of a drinking-water plant"
+        "text": "Return thickened sludge from the primary clarifier to the headworks"
       },
       {
         "id": "c",
-        "text": "The storm-sewer overflow"
+        "text": "Return clarifier effluent to the head of the aeration tank"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "RAS keeps the aeration tank seeded; it is not sent to drinking water. This item asks: “Return activated sludge (RAS) is pumped to:”. The matching answer is: Return settled biomass from the clarifier to the aeration tank. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“The potable distribution system” does not answer “Return activated sludge (RAS) is pumped to:”. The matching answer is: Return settled biomass from the clarifier to the aeration tank.",
-      "b": "“The raw-water intake of a drinking-water plant” does not answer “Return activated sludge (RAS) is pumped to:”. The matching answer is: Return settled biomass from the clarifier to the aeration tank.",
-      "c": "“The storm-sewer overflow only” does not answer “Return activated sludge (RAS) is pumped to:”. The matching answer is: Return settled biomass from the clarifier to the aeration tank."
+      "a": "Biomass sent to solids handling is waste sludge (WAS); return sludge goes back to the aeration tank.",
+      "b": "RAS comes from the secondary clarifier and returns to aeration, not from the primaries to the headworks.",
+      "c": "Recycling clarified effluent is effluent or internal recycle; RAS is settled biomass, not clear effluent."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Increase drinking-water fluoride"
+        "text": "Seed the aeration tank by returning biomass from the clarifier"
       },
       {
         "id": "c",
-        "text": "Bypass the headworks"
+        "text": "Increase MLSS when the clarifier blanket is too low"
       },
       {
         "id": "d",
-        "text": "Replace the need for aeration"
+        "text": "Lower the F/M ratio by removing influent organic load"
       }
     ],
     "correctOptionId": "a",
     "explanation": "WAS is how operators hold SRT; it is not a fluoride feed. This item asks: “Waste activated sludge (WAS) is used to:”. The matching answer is: Control solids retention time by removing excess biomass. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Increase drinking-water fluoride” does not answer “Waste activated sludge (WAS) is used to:”. The matching answer is: Control solids retention time by removing excess biomass.",
-      "c": "“Bypass the headworks” does not answer “Waste activated sludge (WAS) is used to:”. The matching answer is: Control solids retention time by removing excess biomass.",
-      "d": "“Replace the need for aeration” does not answer “Waste activated sludge (WAS) is used to:”. The matching answer is: Control solids retention time by removing excess biomass."
+      "b": "Returning biomass to seed the aeration tank is the job of RAS; WAS removes excess biomass from the system.",
+      "c": "Wasting lowers MLSS; to raise MLSS the operator reduces the wasting rate.",
+      "d": "Wasting removes biomass, which raises F/M; it does not remove influent BOD."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The ratio of fecal coliform to turbidity in a clearwell"
+        "text": "The biomass under aeration relative to the organic load fed"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "Gas manifold pressure divided by WC"
+        "text": "The influent flow relative to the aeration tank volume"
       },
       {
         "id": "d",
-        "text": "The NEC fill calculation for a box"
+        "text": "The sludge wasted per day relative to total sludge inventory"
       }
     ],
     "correctOptionId": "b",
     "explanation": "F/M is an activated-sludge loading ratio. This item asks: “A typical food-to-microorganism (F/M) ratio is:”. The matching answer is: The organic load fed relative to the biomass under aeration. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“The ratio of fecal coliform to turbidity in a clearwell” does not answer “A typical food-to-microorganism (F/M) ratio is:”. The matching answer is: The organic load fed relative to the biomass under aeration.",
-      "c": "“Gas manifold pressure divided by WC” does not answer “A typical food-to-microorganism (F/M) ratio is:”. The matching answer is: The organic load fed relative to the biomass under aeration.",
-      "d": "“The NEC fill calculation for a box” does not answer “A typical food-to-microorganism (F/M) ratio is:”. The matching answer is: The organic load fed relative to the biomass under aeration."
+      "a": "That is the inverse ratio; F/M divides the BOD load (food) by the MLVSS mass (microorganisms).",
+      "c": "Flow divided by volume gives the hydraulic loading (inverse of detention time), not the F/M ratio.",
+      "d": "Wasting rate relative to inventory is the inverse of solids retention time, not the food-to-microorganism ratio."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Membrane filtration to drinking-water RO standards"
+        "text": "Straining solids through fine media in the same way as a sand filter"
       },
       {
         "id": "b",
-        "text": "Only chlorinating raw sewage"
+        "text": "Keeping suspended biomass mixed with diffused air in an open basin"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Settling grit with no biology"
+        "text": "Holding flow in a pond where algae supply oxygen"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Trickling filters are attached-growth secondary treatment. This item asks: “A trickling filter treats wastewater by:”. The matching answer is: Passing flow over media so attached biofilm oxidizes organics. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Membrane filtration to drinking-water RO standards” does not answer “A trickling filter treats wastewater by:”. The matching answer is: Passing flow over media so attached biofilm oxidizes organics.",
-      "b": "“Only chlorinating raw sewage” does not answer “A trickling filter treats wastewater by:”. The matching answer is: Passing flow over media so attached biofilm oxidizes organics.",
-      "d": "“Settling grit with no biology” does not answer “A trickling filter treats wastewater by:”. The matching answer is: Passing flow over media so attached biofilm oxidizes organics."
+      "a": "Trickling filters do not strain solids; treatment is biological oxidation by the biofilm growing on the media.",
+      "b": "That is activated sludge (suspended growth); trickling filters use attached growth on fixed media.",
+      "d": "That describes a stabilization pond or lagoon, not a trickling filter with biofilm-covered media."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Potable water meeting the TCR"
+        "text": "Oxygen-rich off-gas plus a thickened sludge"
       },
       {
         "id": "b",
-        "text": "R-410A refrigerant"
+        "text": "Nitrogen gas from denitrifying the sludge"
       },
       {
         "id": "c",
-        "text": "Finished sand-filter effluent for the clearwell"
+        "text": "Carbon dioxide only, with the sludge mass unchanged"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Digesters stabilize sludge and make biogas, not drinking water. This item asks: “Anaerobic digesters commonly produce:”. The matching answer is: Methane-rich biogas plus a more stable sludge. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Potable water meeting the TCR” does not answer “Anaerobic digesters commonly produce:”. The matching answer is: Methane-rich biogas plus a more stable sludge.",
-      "b": "“R-410A refrigerant” does not answer “Anaerobic digesters commonly produce:”. The matching answer is: Methane-rich biogas plus a more stable sludge.",
-      "c": "“Finished sand-filter effluent for the clearwell” does not answer “Anaerobic digesters commonly produce:”. The matching answer is: Methane-rich biogas plus a more stable sludge."
+      "a": "Anaerobic digesters produce methane and carbon dioxide; no oxygen is generated in an anaerobic process.",
+      "b": "Nitrogen gas comes from anoxic denitrification of nitrate; digesters produce methane-rich biogas.",
+      "c": "Digester gas is roughly 60–70% methane, and digestion destroys volatile solids rather than leaving mass unchanged."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Nitrate to fluoride"
+        "text": "Nitrate to nitrogen gas in an anoxic zone"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "BOD to chlorine residual"
+        "text": "Organic nitrogen to ammonia during digestion"
       },
       {
         "id": "d",
-        "text": "MLSS to drinking-water alkalinity"
+        "text": "Ammonia directly to nitrogen gas in the secondary clarifier"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Nitrification is aerobic ammonia oxidation — a wastewater process goal. This item asks: “Nitrification in a wastewater plant converts:”. The matching answer is: Ammonia to nitrite and then nitrate under aeration. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Nitrate to fluoride” does not answer “Nitrification in a wastewater plant converts:”. The matching answer is: Ammonia to nitrite and then nitrate under aeration.",
-      "c": "“BOD to chlorine residual” does not answer “Nitrification in a wastewater plant converts:”. The matching answer is: Ammonia to nitrite and then nitrate under aeration.",
-      "d": "“MLSS to drinking-water alkalinity only” does not answer “Nitrification in a wastewater plant converts:”. The matching answer is: Ammonia to nitrite and then nitrate under aeration."
+      "a": "That is denitrification; nitrification is the aerobic oxidation of ammonia to nitrite and nitrate.",
+      "c": "That is ammonification (hydrolysis of organic nitrogen); nitrification starts from ammonia.",
+      "d": "Conventional nitrification yields nitrate, not nitrogen gas, and occurs in the aerated basin, not the clarifier."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -337,11 +337,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Free chlorine"
+        "text": "Ammonia, which is then removed by aeration"
       },
       {
         "id": "b",
-        "text": "Potable hardness"
+        "text": "Nitrite, which then exits as the final effluent form"
       },
       {
         "id": "c",
@@ -349,15 +349,15 @@
       },
       {
         "id": "d",
-        "text": "Grit"
+        "text": "Organic nitrogen, removed with the waste sludge"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Anoxic denitrification is a BNR step, not chlorination. This item asks: “Denitrification in an anoxic zone converts nitrate to:”. The matching answer is: Nitrogen gas, reducing total nitrogen in the effluent. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Free chlorine” does not answer “Denitrification in an anoxic zone converts nitrate to:”. The matching answer is: Nitrogen gas, reducing total nitrogen in the effluent.",
-      "b": "“Potable hardness” does not answer “Denitrification in an anoxic zone converts nitrate to:”. The matching answer is: Nitrogen gas, reducing total nitrogen in the effluent.",
-      "d": "“Grit” does not answer “Denitrification in an anoxic zone converts nitrate to:”. The matching answer is: Nitrogen gas, reducing total nitrogen in the effluent."
+      "a": "Reducing nitrate back to ammonia is not denitrification; denitrifiers reduce nitrate to nitrogen gas.",
+      "b": "Nitrite is only a transient intermediate; complete denitrification carries nitrate all the way to nitrogen gas.",
+      "d": "Nitrate is not converted to organic nitrogen; heterotrophs use it as an electron acceptor and release N2 gas."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -370,15 +370,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Dissolved phosphate"
+        "text": "Sand and grit that would abrade pumps"
       },
       {
         "id": "b",
-        "text": "Finished-water THMs"
+        "text": "Floating grease and scum ahead of the clarifier"
       },
       {
         "id": "c",
-        "text": "Compressor oil"
+        "text": "Settleable organic solids before aeration"
       },
       {
         "id": "d",
@@ -388,9 +388,9 @@
     "correctOptionId": "d",
     "explanation": "Preliminary treatment is mechanical debris removal. This item asks: “A bar screen at the headworks removes:”. The matching answer is: Rags and large debris that would damage pumps. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Dissolved phosphate” does not answer “A bar screen at the headworks removes:”. The matching answer is: Rags and large debris that would damage pumps.",
-      "b": "“Finished-water THMs” does not answer “A bar screen at the headworks removes:”. The matching answer is: Rags and large debris that would damage pumps.",
-      "c": "“Compressor oil” does not answer “A bar screen at the headworks removes:”. The matching answer is: Rags and large debris that would damage pumps."
+      "a": "Grit is removed in grit chambers after screening; bar screens catch rags and large debris.",
+      "b": "Scum is skimmed in clarifiers or grease traps; bar screens remove rags and coarse solids.",
+      "c": "Settleable organics are removed in primary clarifiers, not by bar screens at the headworks."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Heavy inorganic grit (sand, eggshells) while keeping organics in suspension"
+        "text": "Heavy inorganic grit while keeping organics in suspension"
       },
       {
         "id": "b",
-        "text": "MLSS from the aeration tank"
+        "text": "Light organic solids while letting heavy grit pass to the primaries"
       },
       {
         "id": "c",
-        "text": "Only oil and grease as scum"
+        "text": "Heavy inorganic grit along with most settleable organics"
       },
       {
         "id": "d",
-        "text": "Cryptosporidium to drinking-water log credits"
+        "text": "Fine colloids by slowing velocity to under 0.1 ft/s"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Grit is inorganic; organics should stay in process flow. This item asks: “Grit chambers are designed to settle:”. The matching answer is: Heavy inorganic grit (sand, eggshells) while keeping organics in suspension. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Grit is inorganic; organics should stay in process flow. This item asks: “Grit chambers are designed to settle:”. The matching answer is: Heavy inorganic grit (sand, eggshells) while keeping organics in suspension. Independent UniPrep diagnostic — not an official NATE or state operator paper. Grit includes sand and eggshells.",
     "distractorExplanations": {
-      "b": "“MLSS from the aeration tank” does not answer “Grit chambers are designed to settle:”. The matching answer is: Heavy inorganic grit (sand, eggshells) while keeping organics in suspension.",
-      "c": "“Only oil and grease as scum” does not answer “Grit chambers are designed to settle:”. The matching answer is: Heavy inorganic grit (sand, eggshells) while keeping organics in suspension.",
-      "d": "“Cryptosporidium to drinking-water log credits” does not answer “Grit chambers are designed to settle:”. The matching answer is: Heavy inorganic grit (sand, eggshells) while keeping organics in suspension."
+      "b": "Reverses the design: grit chambers settle heavy inorganics and keep lighter organics moving downstream.",
+      "c": "Settling organics in a grit chamber produces odorous, putrescible grit; organics should stay in suspension.",
+      "d": "Grit chambers hold about 1 ft/s so organics stay suspended; colloids do not settle in a grit chamber."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A drinking-water flocculator paddle"
+        "text": "A suspended-growth basin mixed by rotating paddles"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "A gas furnace inducer"
+        "text": "A rotating clarifier rake that scrapes settled sludge"
       },
       {
         "id": "d",
-        "text": "A recovery machine"
+        "text": "Rotating drum screens that remove fine solids at the plant headworks"
       }
     ],
     "correctOptionId": "b",
     "explanation": "RBCs are a secondary attached-growth process. This item asks: “A rotating biological contactor (RBC) is:”. The matching answer is: Attached-growth media shafts that rotate through wastewater. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“A drinking-water flocculator paddle” does not answer “A rotating biological contactor (RBC) is:”. The matching answer is: Attached-growth media shafts that rotate through wastewater.",
-      "c": "“A gas furnace inducer” does not answer “A rotating biological contactor (RBC) is:”. The matching answer is: Attached-growth media shafts that rotate through wastewater.",
-      "d": "“A recovery machine” does not answer “A rotating biological contactor (RBC) is:”. The matching answer is: Attached-growth media shafts that rotate through wastewater."
+      "a": "RBCs are attached-growth units; suspended growth with mixing describes activated sludge.",
+      "c": "That is a clarifier sludge collector mechanism, not a biological treatment unit.",
+      "d": "Drum screens are preliminary treatment; RBC discs carry biofilm that oxidizes organics in secondary treatment."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "High-rate sand filtration to a clearwell"
+        "text": "Short detention with mechanical aeration and sludge return"
       },
       {
         "id": "b",
-        "text": "NEC box fill"
+        "text": "Chemical coagulation and settling of suspended solids"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "TXV superheat"
+        "text": "Anaerobic digestion of thickened sludge in heated tanks"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Lagoons are long-HRT biological systems, not potable filters. This item asks: “Pond/lagoon treatment relies mainly on:”. The matching answer is: Long detention, algae, and bacteria to stabilize organics. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“High-rate sand filtration to a clearwell” does not answer “Pond/lagoon treatment relies mainly on:”. The matching answer is: Long detention, algae, and bacteria to stabilize organics.",
-      "b": "“NEC box fill” does not answer “Pond/lagoon treatment relies mainly on:”. The matching answer is: Long detention, algae, and bacteria to stabilize organics.",
-      "d": "“TXV superheat” does not answer “Pond/lagoon treatment relies mainly on:”. The matching answer is: Long detention, algae, and bacteria to stabilize organics."
+      "a": "That describes activated sludge; lagoons rely on long detention without sludge return.",
+      "b": "Lagoons are biological systems; coagulation and settling is a physical-chemical process.",
+      "d": "Heated digesters treat sludge; ponds treat wastewater through algae-bacteria activity over long detention."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A required drinking-water residual"
+        "text": "Toxic only at levels above 1,000 ppm, well beyond sewer readings"
       },
       {
         "id": "b",
-        "text": "Harmless if the flame is blue"
+        "text": "Heavier than air but not flammable at sewer concentrations"
       },
       {
         "id": "c",
-        "text": "The same as oxygen"
+        "text": "Detectable by its rotten-egg smell at every dangerous level"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "H2S kills and explodes; do not trust a faded odor. This item asks: “Hydrogen sulfide in a wet well is dangerous because it is:”. The matching answer is: Toxic, flammable, and can deaden smell at high concentration. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“A required drinking-water residual” does not answer “Hydrogen sulfide in a wet well is dangerous because it is:”. The matching answer is: Toxic, flammable, and can deaden smell at high concentration.",
-      "b": "“Harmless if the flame is blue” does not answer “Hydrogen sulfide in a wet well is dangerous because it is:”. The matching answer is: Toxic, flammable, and can deaden smell at high concentration.",
-      "c": "“The same as oxygen” does not answer “Hydrogen sulfide in a wet well is dangerous because it is:”. The matching answer is: Toxic, flammable, and can deaden smell at high concentration."
+      "a": "H2S is immediately dangerous to life at 100 ppm and sewers can exceed that; harm starts far below 1,000 ppm.",
+      "b": "H2S is heavier than air but also flammable (LEL about 4%), so it is an explosion hazard as well as toxic.",
+      "c": "Olfactory fatigue deadens the sense of smell around 100 ppm, so odor cannot be trusted at dangerous levels."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A confined-space entry with atmosphere testing, ventilation, and a rescue plan"
+        "text": "A confined-space entry with atmosphere testing and a rescue plan"
       },
       {
         "id": "b",
-        "text": "A casual walk-in if the hatch is open"
+        "text": "A routine entry once the hatch has been open and vented for 10 minutes"
       },
       {
         "id": "c",
-        "text": "Allowed without a meter if you hold your breath"
+        "text": "A confined-space entry with a single pre-entry test and no attendant"
       },
       {
         "id": "d",
-        "text": "The same as walking a filter gallery at a WTP"
+        "text": "A hot-work permit task with a fire watch and an extinguisher"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Wet wells are permit-required confined spaces. This item asks: “Entering a pump station wet well is usually:”. The matching answer is: A confined-space entry with atmosphere testing, ventilation, and a rescue plan. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Wet wells are permit-required confined spaces. This item asks: “Entering a pump station wet well is usually:”. The matching answer is: A confined-space entry with atmosphere testing, ventilation, and a rescue plan. Independent UniPrep diagnostic — not an official NATE or state operator paper. Ventilation is part of the entry plan.",
     "distractorExplanations": {
-      "b": "“A casual walk-in if the hatch is open” does not answer “Entering a pump station wet well is usually:”. The matching answer is: A confined-space entry with atmosphere testing, ventilation, and a rescue plan.",
-      "c": "“Allowed without a meter if you hold your breath” does not answer “Entering a pump station wet well is usually:”. The matching answer is: A confined-space entry with atmosphere testing, ventilation, and a rescue plan.",
-      "d": "“The same as walking a filter gallery at a WTP” does not answer “Entering a pump station wet well is usually:”. The matching answer is: A confined-space entry with atmosphere testing, ventilation, and a rescue plan."
+      "b": "Natural venting does not reliably clear H2S or oxygen deficiency; testing, a permit, and continuous monitoring are required.",
+      "c": "Permit spaces need continuous or periodic monitoring and an attendant stationed outside, not one test.",
+      "d": "Hot work is a separate permit; a wet well needs confined-space atmosphere testing, ventilation, and rescue."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -568,7 +568,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure effluent BOD"
+        "text": "Measure oxygen levels before entry"
       },
       {
         "id": "b",
@@ -576,19 +576,19 @@
       },
       {
         "id": "c",
-        "text": "Set a furnace manifold"
+        "text": "Detect hydrogen sulfide toxicity levels in ppm"
       },
       {
         "id": "d",
-        "text": "Read MLSS"
+        "text": "Measure digester gas production rate"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Methane plus ignition is an explosion hazard. This item asks: “A combustible-gas meter in a digester gallery is used to:”. The matching answer is: Warn of methane before a spark or entry. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Measure effluent BOD” does not answer “A combustible-gas meter in a digester gallery is used to:”. The matching answer is: Warn of methane before a spark or entry.",
-      "c": "“Set a furnace manifold” does not answer “A combustible-gas meter in a digester gallery is used to:”. The matching answer is: Warn of methane before a spark or entry.",
-      "d": "“Read MLSS” does not answer “A combustible-gas meter in a digester gallery is used to:”. The matching answer is: Warn of methane before a spark or entry."
+      "a": "Oxygen is read on a separate O2 sensor; the combustible sensor reads %LEL of gases such as methane.",
+      "c": "H2S toxicity needs a dedicated toxic H2S sensor reading in ppm; a combustible-gas sensor reads %LEL of gases such as methane.",
+      "d": "Gas production is measured with a gas flow meter, not a portable combustible-gas meter."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Bridges are never slippery"
+        "text": "OSHA requires it only above 10 feet of height"
       },
       {
         "id": "c",
-        "text": "OSHA stops at the headworks"
+        "text": "Bridge railings exist mainly to protect the drive"
       },
       {
         "id": "d",
-        "text": "Operators jump in to sample"
+        "text": "Clarifier water is shallow enough to stand in"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Bridges need rails/PFAS discipline — do not treat them as sidewalks. This item asks: “Fall protection on a clarifier bridge is required because:”. The matching answer is: Open water and moving equipment can kill a slip. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Bridges are never slippery” does not answer “Fall protection on a clarifier bridge is required because:”. The matching answer is: Open water and moving equipment can kill a slip.",
-      "c": "“OSHA stops at the headworks” does not answer “Fall protection on a clarifier bridge is required because:”. The matching answer is: Open water and moving equipment can kill a slip.",
-      "d": "“Operators jump in to sample” does not answer “Fall protection on a clarifier bridge is required because:”. The matching answer is: Open water and moving equipment can kill a slip."
+      "b": "OSHA general industry triggers fall protection at 4 feet, and drowning risk over open tanks exists at any height.",
+      "c": "Railings and fall protection protect people from falling into tanks and moving mechanisms, not the drive unit.",
+      "d": "Clarifiers are often 10–16 feet deep with sludge and moving collectors; a fall can drown or entangle."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Too much potable chlorine residual"
+        "text": "Chlorine residual from upstream disinfection reacting with the oxygen"
       },
       {
         "id": "b",
@@ -708,19 +708,19 @@
       },
       {
         "id": "c",
-        "text": "A good aeration basin"
+        "text": "Air pressure drop caused by the depth of the manhole below grade"
       },
       {
         "id": "d",
-        "text": "Outdoor wind"
+        "text": "Oxygen escaping because the cover was left off overnight"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Sewers consume and displace oxygen — test before entry. This item asks: “An oxygen-deficient atmosphere in a manhole is often from:”. The matching answer is: Displacement by other gases or biological oxygen demand in the sewer. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Too much potable chlorine residual” does not answer “An oxygen-deficient atmosphere in a manhole is often from:”. The matching answer is: Displacement by other gases or biological oxygen demand in the sewer.",
-      "c": "“A good aeration basin” does not answer “An oxygen-deficient atmosphere in a manhole is often from:”. The matching answer is: Displacement by other gases or biological oxygen demand in the sewer.",
-      "d": "“Outdoor wind” does not answer “An oxygen-deficient atmosphere in a manhole is often from:”. The matching answer is: Displacement by other gases or biological oxygen demand in the sewer."
+      "a": "Sewers carry little chlorine; oxygen loss comes from microbial consumption and displacement by sewer gases.",
+      "c": "Manhole depth does not meaningfully change oxygen percentage; displacement and microbial demand do.",
+      "d": "An open cover increases air exchange; deficiency comes from consumption and displacement inside the sewer."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -733,11 +733,11 @@
     "options": [
       {
         "id": "a",
-        "text": "While looking into an energized lamp to check blue light"
+        "text": "Energized, so lamp output can be checked by eye during cleaning"
       },
       {
         "id": "b",
-        "text": "With wet hands on 480 V"
+        "text": "De-energized at the panel switch, with standard safety glasses only"
       },
       {
         "id": "c",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "By pouring bleach on the lamps"
+        "text": "After draining the channel, with lamps left on to dry the sleeves"
       }
     ],
     "correctOptionId": "c",
     "explanation": "UV and line voltage both injure — isolate first. This item asks: “UV disinfection modules should be serviced:”. The matching answer is: De-energized, with eye/skin protection against UV and electrical lockout. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“While looking into an energized lamp to check blue light” does not answer “UV disinfection modules should be serviced:”. The matching answer is: De-energized, with eye/skin protection against UV and electrical lockout.",
-      "b": "“With wet hands on 480 V” does not answer “UV disinfection modules should be serviced:”. The matching answer is: De-energized, with eye/skin protection against UV and electrical lockout.",
-      "d": "“By pouring bleach on the lamps” does not answer “UV disinfection modules should be serviced:”. The matching answer is: De-energized, with eye/skin protection against UV and electrical lockout."
+      "a": "UV-C burns eyes and skin and live voltage is a shock hazard; lockout and UV-rated protection are required.",
+      "b": "A switch is not lockout/tagout, and ordinary glasses may not block UV-C; full LOTO and UV-rated PPE are needed.",
+      "d": "Lamps must be de-energized for service; running lamps out of water overheats them and exposes staff to UV."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -766,15 +766,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A good time to walk the cover without gas checks"
+        "text": "Normal mixing — continue routine walks on the cover"
       },
       {
         "id": "b",
-        "text": "That methane is gone"
+        "text": "Gas production has stopped, so the cover is safe to open"
       },
       {
         "id": "c",
-        "text": "That the plant is now a WTP"
+        "text": "Overheating — shut off the mixers and add cold water to the digester"
       },
       {
         "id": "d",
@@ -784,9 +784,9 @@
     "correctOptionId": "d",
     "explanation": "Digester covers and foam are gas and fall hazards. This item asks: “A sudden floating blanket on an anaerobic digester may signal:”. The matching answer is: Foaming or a process upset — stay off the cover and follow the SOP. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“A good time to walk the cover without gas checks” does not answer “A sudden floating blanket on an anaerobic digester may signal:”. The matching answer is: Foaming or a process upset — stay off the cover and follow the SOP.",
-      "b": "“That methane is gone” does not answer “A sudden floating blanket on an anaerobic digester may signal:”. The matching answer is: Foaming or a process upset — stay off the cover and follow the SOP.",
-      "c": "“That the plant is now a WTP” does not answer “A sudden floating blanket on an anaerobic digester may signal:”. The matching answer is: Foaming or a process upset — stay off the cover and follow the SOP."
+      "a": "A sudden blanket signals foaming or upset; walking a floating cover risks gas exposure and falls.",
+      "b": "Gas may still be present; opening a digester cover can create an explosive air-methane mixture.",
+      "c": "Shutting off mixing worsens stratification and scum; the operator should stay off the cover and follow the SOP."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Only the lab autoclave"
+        "text": "The lab fume hood and autoclave during routine tests"
       },
       {
         "id": "c",
-        "text": "Never, because plants are quiet"
+        "text": "Blowers only when noise exceeds 115 dBA at any point during the work shift"
       },
       {
         "id": "d",
-        "text": "Only if the public is touring"
+        "text": "Outdoor clarifiers and aeration tanks, mainly during windy weather"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Blower rooms routinely exceed 85 dBA. This item asks: “Hearing protection is needed around:”. The matching answer is: Blowers, pumps, and generators that exceed the plant’s noise policy. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Only the lab autoclave” does not answer “Hearing protection is needed around:”. The matching answer is: Blowers, pumps, and generators that exceed the plant’s noise policy.",
-      "c": "“Never, because plants are quiet” does not answer “Hearing protection is needed around:”. The matching answer is: Blowers, pumps, and generators that exceed the plant’s noise policy.",
-      "d": "“Only if the public is touring” does not answer “Hearing protection is needed around:”. The matching answer is: Blowers, pumps, and generators that exceed the plant’s noise policy."
+      "b": "Lab equipment is usually below 85 dBA; blowers, pumps, and generators drive hearing-protection needs.",
+      "c": "The OSHA action level is 85 dBA as an 8-hour TWA; 115 dBA is the old ceiling limit, not the hearing-protection trigger, and pumps count too.",
+      "d": "Clarifiers and basins are not high-noise sources; enclosed blower and pump rooms are."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Neutralizing with the opposite chemical in your eyes"
+        "text": "Neutralizing hypochlorite with an acid rinse"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "Waiting to see if it burns tomorrow"
+        "text": "A brief 2-minute rinse, then return to work"
       },
       {
         "id": "d",
-        "text": "A coffee rinse"
+        "text": "Wiping the area dry before rinsing with water"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SDS plus eyewash — do not home-brew chemistry in a face. This item asks: “A chemical splash of polymer or hypochlorite requires:”. The matching answer is: Eyewash/shower and the SDS-directed first aid. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Neutralizing with the opposite chemical in your eyes” does not answer “A chemical splash of polymer or hypochlorite requires:”. The matching answer is: Eyewash/shower and the SDS-directed first aid.",
-      "c": "“Waiting to see if it burns tomorrow” does not answer “A chemical splash of polymer or hypochlorite requires:”. The matching answer is: Eyewash/shower and the SDS-directed first aid.",
-      "d": "“A coffee rinse” does not answer “A chemical splash of polymer or hypochlorite requires:”. The matching answer is: Eyewash/shower and the SDS-directed first aid."
+      "a": "Splashes are flushed, not neutralized on tissue, and acid on hypochlorite releases chlorine gas.",
+      "c": "Chemical splashes need at least 15 minutes of flushing plus SDS-directed follow-up, not a brief rinse.",
+      "d": "Delay and wiping spread the chemical; flush immediately with the eyewash or safety shower."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -865,11 +865,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional if the work is under 10 minutes"
+        "text": "Optional if the job takes under 15 minutes"
       },
       {
         "id": "b",
-        "text": "Handled by leaving the truck in drive"
+        "text": "Covered by parking the truck with hazard lights on"
       },
       {
         "id": "c",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "Only for drinking-water main breaks"
+        "text": "Required on highways but not on residential streets"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Collection-system work is still a work zone. This item asks: “Traffic control around an open manhole in the street is:”. The matching answer is: Required so the public and the crew are not hit. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Optional if the work is under 10 minutes” does not answer “Traffic control around an open manhole in the street is:”. The matching answer is: Required so the public and the crew are not hit.",
-      "b": "“Handled by leaving the truck in drive” does not answer “Traffic control around an open manhole in the street is:”. The matching answer is: Required so the public and the crew are not hit.",
-      "d": "“Only for drinking-water main breaks” does not answer “Traffic control around an open manhole in the street is:”. The matching answer is: Required so the public and the crew are not hit."
+      "a": "Short-duration work still needs traffic control per the MUTCD; struck-by incidents happen quickly.",
+      "b": "A truck with flashers is not a work-zone setup; cones, signs, and flaggers per the MUTCD are needed.",
+      "d": "Traffic control applies on any public roadway where traffic passes the work area, including residential streets."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Climb down to 'get used to it'"
+        "text": "Put on a dust mask and finish the task quickly"
       },
       {
         "id": "b",
-        "text": "Light a cigarette to test for methane"
+        "text": "Sit down at the hatch until the dizziness passes"
       },
       {
         "id": "c",
-        "text": "Close the hatch from inside"
+        "text": "Recheck the gas meter, then continue the task if it reads normal"
       },
       {
         "id": "d",
@@ -916,9 +916,9 @@
     "correctOptionId": "d",
     "explanation": "Dizziness is leave-now, not climb-down. This item asks: “If an operator feels dizzy over a wet well, they should:”. The matching answer is: Leave immediately and treat it as an atmosphere emergency. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Climb down to 'get used to it'” does not answer “If an operator feels dizzy over a wet well, they should:”. The matching answer is: Leave immediately and treat it as an atmosphere emergency.",
-      "b": "“Light a cigarette to test for methane” does not answer “If an operator feels dizzy over a wet well, they should:”. The matching answer is: Leave immediately and treat it as an atmosphere emergency.",
-      "c": "“Close the hatch from inside” does not answer “If an operator feels dizzy over a wet well, they should:”. The matching answer is: Leave immediately and treat it as an atmosphere emergency."
+      "a": "Dust masks do not protect against H2S or oxygen deficiency; the operator should leave and treat it as an emergency.",
+      "b": "Staying at the opening continues the exposure; move to fresh air and alert others.",
+      "c": "Symptoms override a reading; the meter may be faulty or the atmosphere uneven, so leave first."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "Mixed with fuel oil for winter"
+        "text": "In compatible tanks, stored next to acids for spill neutralization"
       },
       {
         "id": "c",
-        "text": "Kept in a food fridge"
+        "text": "In unvented steel drums in a warm room to slow decomposition"
       },
       {
         "id": "d",
-        "text": "Poured into the storm drain to 'disinfect the creek'"
+        "text": "In compatible tanks, next to ammonia for combined dosing"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Hypo plus acid makes Cl2 gas. This item asks: “Stored sodium hypochlorite should be:”. The matching answer is: In compatible tanks, away from acids that would release chlorine gas. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Mixed with fuel oil for winter” does not answer “Stored sodium hypochlorite should be:”. The matching answer is: In compatible tanks, away from acids that would release chlorine gas.",
-      "c": "“Kept in a food fridge” does not answer “Stored sodium hypochlorite should be:”. The matching answer is: In compatible tanks, away from acids that would release chlorine gas.",
-      "d": "“Poured into the storm drain to 'disinfect the creek'” does not answer “Stored sodium hypochlorite should be:”. The matching answer is: In compatible tanks, away from acids that would release chlorine gas."
+      "b": "Acid mixed with hypochlorite releases chlorine gas, so the two must be segregated, not stored together.",
+      "c": "Hypochlorite corrodes steel and decomposes faster with heat; store it cool in vented compatible tanks.",
+      "d": "Ammonia mixed with hypochlorite forms toxic chloramine gases; the chemicals must be kept apart."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "100 °C to sterilize the bottle"
+        "text": "20 °C for five days, measuring carbon dioxide produced"
       },
       {
         "id": "b",
-        "text": "4 °C in the dark only, with no incubation"
+        "text": "20 °C for five days, with the bottles exposed to light"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Room temperature for 20 minutes"
+        "text": "35 °C for 48 hours, measuring oxygen used by microbes"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Standard BOD5 is 20 °C / 5 days. This item asks: “A 5-day BOD test is incubated at:”. The matching answer is: 20 °C for five days, measuring oxygen used by microbes. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“100 °C to sterilize the bottle” does not answer “A 5-day BOD test is incubated at:”. The matching answer is: 20 °C for five days, measuring oxygen used by microbes.",
-      "b": "“4 °C in the dark only, with no incubation” does not answer “A 5-day BOD test is incubated at:”. The matching answer is: 20 °C for five days, measuring oxygen used by microbes.",
-      "d": "“Room temperature for 20 minutes” does not answer “A 5-day BOD test is incubated at:”. The matching answer is: 20 °C for five days, measuring oxygen used by microbes."
+      "a": "BOD measures dissolved oxygen depletion over five days, not carbon dioxide production.",
+      "b": "BOD bottles are incubated in the dark so algae cannot produce oxygen and mask the demand.",
+      "d": "35 °C for 48 hours is a coliform incubation condition; BOD5 runs at 20 °C for five days."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A pocket conductivity pen"
+        "text": "Evaporating a known volume and weighing the total residue"
       },
       {
         "id": "b",
-        "text": "Taste"
+        "text": "Reading turbidity with a nephelometer and converting it"
       },
       {
         "id": "c",
-        "text": "A micron gauge"
+        "text": "Settling a liter in an Imhoff cone for one hour"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "TSS is a gravimetric filter test. This item asks: “TSS is measured by:”. The matching answer is: Filtering a known volume and drying/weighing the residue. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“A pocket conductivity pen only” does not answer “TSS is measured by:”. The matching answer is: Filtering a known volume and drying/weighing the residue.",
-      "b": "“Taste” does not answer “TSS is measured by:”. The matching answer is: Filtering a known volume and drying/weighing the residue.",
-      "c": "“A micron gauge” does not answer “TSS is measured by:”. The matching answer is: Filtering a known volume and drying/weighing the residue."
+      "a": "Evaporating the whole sample gives total solids; TSS uses a glass-fiber filter dried at 103–105 °C.",
+      "b": "Turbidity correlates with but does not measure TSS; TSS is a gravimetric filter test.",
+      "c": "The Imhoff cone measures settleable solids in mL/L, not suspended solids by weight."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1063,27 +1063,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The parameter changes fast or the permit specifies a grab (for example, pH or residual)"
+        "text": "The parameter changes fast or the permit specifies a grab"
       },
       {
         "id": "b",
-        "text": "You want a 24-hour flow-weighted composite for BOD but grab anyway"
+        "text": "The permit asks for a 24-hour composite but staff are short"
       },
       {
         "id": "c",
-        "text": "The analyst is on vacation"
+        "text": "The parameter is BOD or TSS that represents the daily load"
       },
       {
         "id": "d",
-        "text": "You are sampling a drinking-water TCR routine site"
+        "text": "Flow is steady, so one sample stands in for the composite"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Match sample type to the parameter and the permit. This item asks: “A grab sample is appropriate when:”. The matching answer is: The parameter changes fast or the permit specifies a grab (for example, pH or residual). Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Match sample type to the parameter and the permit. This item asks: “A grab sample is appropriate when:”. The matching answer is: The parameter changes fast or the permit specifies a grab (for example, pH or residual). Independent UniPrep diagnostic — not an official NATE or state operator paper. Examples include pH and chlorine residual.",
     "distractorExplanations": {
-      "b": "“You want a 24-hour flow-weighted composite for BOD but grab anyway” does not answer “A grab sample is appropriate when:”. The matching answer is: The parameter changes fast or the permit specifies a grab (for example, pH or residual).",
-      "c": "“The analyst is on vacation” does not answer “A grab sample is appropriate when:”. The matching answer is: The parameter changes fast or the permit specifies a grab (for example, pH or residual).",
-      "d": "“You are sampling a drinking-water TCR routine site” does not answer “A grab sample is appropriate when:”. The matching answer is: The parameter changes fast or the permit specifies a grab (for example, pH or residual)."
+      "b": "Substituting a grab for a required composite is a permit violation, not a staffing option.",
+      "c": "BOD and TSS usually require composite samples so the result represents the day's load.",
+      "d": "The permit specifies the sample type; steady flow does not authorize replacing a required composite."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1096,7 +1096,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Instant pH"
+        "text": "Parameters like pH or chlorine residual that change quickly"
       },
       {
         "id": "b",
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "A single wet-well sniff"
+        "text": "Parameters like fecal coliform that need sterile grab bottles"
       },
       {
         "id": "d",
-        "text": "Refrigerant type"
+        "text": "Parameters like dissolved oxygen read directly in the tank"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Composites represent load over time. This item asks: “A flow-weighted composite is used for:”. The matching answer is: Parameters like BOD or TSS that should represent the day’s load. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Instant pH only” does not answer “A flow-weighted composite is used for:”. The matching answer is: Parameters like BOD or TSS that should represent the day’s load.",
-      "c": "“A single wet-well sniff” does not answer “A flow-weighted composite is used for:”. The matching answer is: Parameters like BOD or TSS that should represent the day’s load.",
-      "d": "“Refrigerant type” does not answer “A flow-weighted composite is used for:”. The matching answer is: Parameters like BOD or TSS that should represent the day’s load."
+      "a": "Fast-changing parameters such as pH and residual require grab samples analyzed immediately.",
+      "c": "Bacteriological samples are grabs in sterile bottles; compositing would break the holding time.",
+      "d": "Dissolved oxygen is measured in place or as a grab; it cannot be composited."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1129,11 +1129,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure drinking-water Langelier index"
+        "text": "Measure the volatile fraction of the mixed liquor"
       },
       {
         "id": "b",
-        "text": "Set a TXV"
+        "text": "Determine the chlorine demand of the final effluent"
       },
       {
         "id": "c",
@@ -1141,15 +1141,15 @@
       },
       {
         "id": "d",
-        "text": "Read NEC table 310.16"
+        "text": "Calculate grit removal efficiency at the headworks"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Settleometers are an activated-sludge tool. This item asks: “Settleometer / 30-minute settleability helps operators:”. The matching answer is: See how the mixed liquor will behave in the clarifier. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Measure drinking-water Langelier index” does not answer “Settleometer / 30-minute settleability helps operators:”. The matching answer is: See how the mixed liquor will behave in the clarifier.",
-      "b": "“Set a TXV” does not answer “Settleometer / 30-minute settleability helps operators:”. The matching answer is: See how the mixed liquor will behave in the clarifier.",
-      "d": "“Read NEC table 310.16” does not answer “Settleometer / 30-minute settleability helps operators:”. The matching answer is: See how the mixed liquor will behave in the clarifier."
+      "a": "The volatile fraction is MLVSS by ignition at 550 °C; the settleometer shows settling behavior.",
+      "b": "Chlorine demand is a disinfection test; settleometers assess mixed liquor settling.",
+      "d": "Grit removal is checked at the headworks; the 30-minute settleometer tests mixed liquor."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure chlorine gas in a ton container"
+        "text": "Hold DO near zero so the aeration tank can nitrify more fully"
       },
       {
         "id": "b",
-        "text": "Read static pressure"
+        "text": "Measure the BOD of the mixed liquor in real time"
       },
       {
         "id": "c",
-        "text": "Prove a heat-exchanger crack"
+        "text": "Drive DO as high as the blowers allow to prevent filament growth"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "Process DO is an aeration setpoint, not a refrigerant test. This item asks: “A dissolved-oxygen probe in the aeration tank is used to:”. The matching answer is: Keep enough oxygen for the biomass without wasting blower kWh. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Measure chlorine gas in a ton container” does not answer “A dissolved-oxygen probe in the aeration tank is used to:”. The matching answer is: Keep enough oxygen for the biomass without wasting blower kWh.",
-      "b": "“Read static pressure” does not answer “A dissolved-oxygen probe in the aeration tank is used to:”. The matching answer is: Keep enough oxygen for the biomass without wasting blower kWh.",
-      "c": "“Prove a heat-exchanger crack” does not answer “A dissolved-oxygen probe in the aeration tank is used to:”. The matching answer is: Keep enough oxygen for the biomass without wasting blower kWh."
+      "a": "Nitrification needs roughly 2 mg/L dissolved oxygen; near-zero DO stalls it.",
+      "b": "A DO probe reads dissolved oxygen; BOD is a five-day laboratory test.",
+      "c": "Excess DO wastes blower energy and can cause pin floc; most plants target about 1–3 mg/L."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1199,23 +1199,23 @@
       },
       {
         "id": "b",
-        "text": "Total Coliform Rule monthly 5% drinking-water distribution test"
+        "text": "Revised Total Coliform Rule test for a drinking-water distribution system"
       },
       {
         "id": "c",
-        "text": "MLSS measurement"
+        "text": "Process-control test for activated-sludge settleability and bulking"
       },
       {
         "id": "d",
-        "text": "Gas WC reading"
+        "text": "Measure of organic loading on the aeration tank"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Effluent bacteria limits are NPDES, not the drinking-water TCR. This item asks: “Fecal coliform or E. coli on final effluent is a:”. The matching answer is: Disinfection-performance and permit-limit test for wastewater discharge. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Total Coliform Rule monthly 5% drinking-water distribution test” does not answer “Fecal coliform or E. coli on final effluent is a:”. The matching answer is: Disinfection-performance and permit-limit test for wastewater discharge.",
-      "c": "“MLSS measurement” does not answer “Fecal coliform or E. coli on final effluent is a:”. The matching answer is: Disinfection-performance and permit-limit test for wastewater discharge.",
-      "d": "“Gas WC reading” does not answer “Fecal coliform or E. coli on final effluent is a:”. The matching answer is: Disinfection-performance and permit-limit test for wastewater discharge."
+      "b": "The RTCR applies to drinking-water distribution systems, not to wastewater effluent discharge.",
+      "c": "Settleability is measured with a settleometer or SVI; indicator bacteria test disinfection.",
+      "d": "Organic load is measured by BOD or COD, not by indicator bacteria counts."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "You rinse a probe in the sink"
+        "text": "A process-control sample is read on site by the collector"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "You change a blower oil"
+        "text": "A result exceeds the permit limit and needs a re-sample"
       },
       {
         "id": "d",
-        "text": "You reset a PLC"
+        "text": "An online analyzer records a reading to SCADA"
       }
     ],
     "correctOptionId": "b",
     "explanation": "COC is legal/traceability, not optional paperwork. This item asks: “A chain-of-custody form is needed when:”. The matching answer is: Samples leave the collector for a lab or enforcement use. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“You rinse a probe in the sink” does not answer “A chain-of-custody form is needed when:”. The matching answer is: Samples leave the collector for a lab or enforcement use.",
-      "c": "“You change a blower oil” does not answer “A chain-of-custody form is needed when:”. The matching answer is: Samples leave the collector for a lab or enforcement use.",
-      "d": "“You reset a PLC” does not answer “A chain-of-custody form is needed when:”. The matching answer is: Samples leave the collector for a lab or enforcement use."
+      "a": "On-site process samples that never change hands do not need chain-of-custody documentation.",
+      "c": "Custody is documented whenever samples change hands, not only after an exceedance.",
+      "d": "Continuous analyzer data involve no physical sample transfer; COC tracks handling of sample containers."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1261,11 +1261,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The bottle looks official"
+        "text": "Samples can be held up to 30 days if kept on ice"
       },
       {
         "id": "b",
-        "text": "Operators can skip ice"
+        "text": "The lab can batch all samples into one weekly run"
       },
       {
         "id": "c",
@@ -1273,15 +1273,15 @@
       },
       {
         "id": "d",
-        "text": "Permits can be ignored"
+        "text": "Acid preservation lets the same sample double as the BOD sample"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Wrong preservation voids the result. This item asks: “Holding time and preservation (for example, H2SO4 on some nutrients) exist so:”. The matching answer is: The result still represents the process when the lab runs it. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“The bottle looks official” does not answer “Holding time and preservation (for example, H2SO4 on some nutrients) exist so:”. The matching answer is: The result still represents the process when the lab runs it.",
-      "b": "“Operators can skip ice” does not answer “Holding time and preservation (for example, H2SO4 on some nutrients) exist so:”. The matching answer is: The result still represents the process when the lab runs it.",
-      "d": "“Permits can be ignored” does not answer “Holding time and preservation (for example, H2SO4 on some nutrients) exist so:”. The matching answer is: The result still represents the process when the lab runs it."
+      "a": "Holding times are parameter specific; BOD allows 48 hours and many tests are shorter, not 30 days.",
+      "b": "Preservation does not extend holding times to suit weekly batching; each test has its own limit.",
+      "d": "Acid kills the microbes, so an acidified sample cannot be used for a BOD test."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1294,15 +1294,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Tap water once a year"
+        "text": "One pH 7 buffer, checked weekly against tap water"
       },
       {
         "id": "b",
-        "text": "The last BOD bottle"
+        "text": "Two buffers that are both below the expected sample pH"
       },
       {
         "id": "c",
-        "text": "A refrigerant temperature-pressure chart"
+        "text": "Distilled water as the pH 7 reference point"
       },
       {
         "id": "d",
@@ -1312,9 +1312,9 @@
     "correctOptionId": "d",
     "explanation": "Bracketed buffers are the standard. This item asks: “A calibration of a pH meter uses:”. The matching answer is: At least two buffers that bracket the expected sample. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Tap water once a year” does not answer “A calibration of a pH meter uses:”. The matching answer is: At least two buffers that bracket the expected sample.",
-      "b": "“The last BOD bottle” does not answer “A calibration of a pH meter uses:”. The matching answer is: At least two buffers that bracket the expected sample.",
-      "c": "“A refrigerant temperature-pressure chart” does not answer “A calibration of a pH meter uses:”. The matching answer is: At least two buffers that bracket the expected sample."
+      "a": "Single-point calibration sets only the offset; slope needs two or more buffers bracketing the sample.",
+      "b": "Buffers must bracket the sample so the reading is interpolated, not extrapolated beyond the calibration.",
+      "c": "Distilled water is unbuffered and drifts as it absorbs CO2; it is not a calibration standard."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Grit mass"
+        "text": "The inorganic fraction left after ignition at 550 °C"
       },
       {
         "id": "c",
-        "text": "Finished-water hardness"
+        "text": "The solids settled after 30 minutes in a settleometer"
       },
       {
         "id": "d",
-        "text": "Screenings volume"
+        "text": "Total solids in the aeration tank including dissolved"
       }
     ],
     "correctOptionId": "a",
     "explanation": "MLVSS is the volatile (mostly biomass) part of MLSS. This item asks: “Mixed-liquor volatile suspended solids (MLVSS) estimate:”. The matching answer is: The organic/active fraction of the aeration solids. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Grit mass only” does not answer “Mixed-liquor volatile suspended solids (MLVSS) estimate:”. The matching answer is: The organic/active fraction of the aeration solids.",
-      "c": "“Finished-water hardness” does not answer “Mixed-liquor volatile suspended solids (MLVSS) estimate:”. The matching answer is: The organic/active fraction of the aeration solids.",
-      "d": "“Screenings volume” does not answer “Mixed-liquor volatile suspended solids (MLVSS) estimate:”. The matching answer is: The organic/active fraction of the aeration solids."
+      "b": "The residue after ignition is fixed (inorganic) solids; MLVSS is the weight lost on ignition.",
+      "c": "That is settleability (SSV30), a volume reading, not the volatile fraction of the solids.",
+      "d": "That is total solids; MLVSS excludes dissolved matter and the inorganic ash fraction."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The BOD incubator failed high"
+        "text": "Heavy rain diluting the influent strength"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "A good trickling-filter sloughing"
+        "text": "Normal diurnal variation in residential flow"
       },
       {
         "id": "d",
-        "text": "That RAS should be turned off"
+        "text": "Nitrification in the collection system raising the influent COD"
       }
     ],
     "correctOptionId": "b",
     "explanation": "COD spikes are often collection-system dumps. This item asks: “A sudden jump in influent COD with no flow change can mean:”. The matching answer is: A slug of industrial or septage load — hunt the source. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“The BOD incubator failed high” does not answer “A sudden jump in influent COD with no flow change can mean:”. The matching answer is: A slug of industrial or septage load — hunt the source.",
-      "c": "“A good trickling-filter sloughing only” does not answer “A sudden jump in influent COD with no flow change can mean:”. The matching answer is: A slug of industrial or septage load — hunt the source.",
-      "d": "“That RAS should be turned off forever” does not answer “A sudden jump in influent COD with no flow change can mean:”. The matching answer is: A slug of industrial or septage load — hunt the source."
+      "a": "Rain would raise flow and lower COD concentration, not cause a spike with no flow change.",
+      "c": "Diurnal swings track flow changes; a COD jump at steady flow points to a slug discharge.",
+      "d": "Nitrification consumes ammonia and does not raise COD; a slug of high-strength waste does."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Count Cryptosporidium for a SWTR bin"
+        "text": "Count fecal coliforms to confirm that disinfection is working well"
       },
       {
         "id": "b",
-        "text": "Grade sand for a rapid sand filter"
+        "text": "Measure MLSS concentration directly by counting cells"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Identify refrigerant oil"
+        "text": "Identify the nitrifying bacteria species by their shape and color alone"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Microscopy is an activated-sludge diagnostic. This item asks: “Microscopic exam of mixed liquor is used to:”. The matching answer is: Spot filaments, protozoa, and floc quality that explain SVI problems. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Count Cryptosporidium for a SWTR bin” does not answer “Microscopic exam of mixed liquor is used to:”. The matching answer is: Spot filaments, protozoa, and floc quality that explain SVI problems.",
-      "b": "“Grade sand for a rapid sand filter” does not answer “Microscopic exam of mixed liquor is used to:”. The matching answer is: Spot filaments, protozoa, and floc quality that explain SVI problems.",
-      "d": "“Identify refrigerant oil” does not answer “Microscopic exam of mixed liquor is used to:”. The matching answer is: Spot filaments, protozoa, and floc quality that explain SVI problems."
+      "a": "Coliforms are counted by culture methods (MPN or membrane filter), not by routine mixed-liquor microscopy.",
+      "b": "MLSS is measured gravimetrically; microscopy assesses organisms and floc structure.",
+      "d": "Nitrifiers cannot be identified by shape under routine microscopy; nitrification is tracked by ammonia and nitrate tests."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "Have no effect"
+        "text": "Bias the BOD low because oxygen solubility rises"
       },
       {
         "id": "c",
-        "text": "Turn the test into a TSS"
+        "text": "Have no effect as long as the seed is fresh"
       },
       {
         "id": "d",
-        "text": "Satisfy a vacuum decay"
+        "text": "Bias the BOD low because nitrifiers are inhibited"
       }
     ],
     "correctOptionId": "a",
     "explanation": "BOD is temperature-sensitive — 20 °C is the method. This item asks: “Temperature of a BOD incubator that drifts to 25 °C will:”. The matching answer is: Bias the BOD high because microbes work faster. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Have no effect” does not answer “Temperature of a BOD incubator that drifts to 25 °C will:”. The matching answer is: Bias the BOD high because microbes work faster.",
-      "c": "“Turn the test into a TSS” does not answer “Temperature of a BOD incubator that drifts to 25 °C will:”. The matching answer is: Bias the BOD high because microbes work faster.",
-      "d": "“Satisfy a vacuum decay” does not answer “Temperature of a BOD incubator that drifts to 25 °C will:”. The matching answer is: Bias the BOD high because microbes work faster."
+      "b": "Oxygen solubility falls as temperature rises, and faster microbial uptake biases the result high.",
+      "c": "BOD5 is defined at 20 ±1 °C; a fresh seed does not offset faster microbial rates at 25 °C.",
+      "d": "Warmer temperatures speed nitrification, adding oxygen demand rather than lowering the result."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The Total Coliform Rule for a distribution system"
+        "text": "Drinking-water MCLs and monitoring for the receiving stream"
       },
       {
         "id": "b",
-        "text": "Discharge limits, monitoring, and reporting for the effluent to waters of the U.S."
+        "text": "Discharge limits, monitoring, and reporting for the effluent"
       },
       {
         "id": "c",
-        "text": "NEC dwelling receptacle spacing"
+        "text": "Operator staffing levels and shift schedules for the plant"
       },
       {
         "id": "d",
-        "text": "NATE Core passing scores"
+        "text": "Construction standards for sewer pipe and manholes"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "NPDES is the wastewater discharge permit, not drinking-water TCR. This item asks: “An NPDES permit for a wastewater plant sets:”. The matching answer is: Discharge limits, monitoring, and reporting for the effluent to waters of the U.S. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "NPDES is the wastewater discharge permit, not drinking-water TCR. This item asks: “An NPDES permit for a wastewater plant sets:”. The matching answer is: Discharge limits, monitoring, and reporting for the effluent to waters of the U.S. Independent UniPrep diagnostic — not an official NATE or state operator paper. The effluent discharges to waters of the U.S.",
     "distractorExplanations": {
-      "a": "“The Total Coliform Rule for a distribution system” does not answer “An NPDES permit for a wastewater plant sets:”. The matching answer is: Discharge limits, monitoring, and reporting for the effluent to waters of the U.S.",
-      "c": "“NEC dwelling receptacle spacing” does not answer “An NPDES permit for a wastewater plant sets:”. The matching answer is: Discharge limits, monitoring, and reporting for the effluent to waters of the U.S.",
-      "d": "“NATE Core passing scores” does not answer “An NPDES permit for a wastewater plant sets:”. The matching answer is: Discharge limits, monitoring, and reporting for the effluent to waters of the U.S."
+      "a": "MCLs come from the Safe Drinking Water Act; NPDES under the Clean Water Act sets effluent discharge limits.",
+      "c": "Staffing and operator certification come from state operator rules, not the NPDES discharge limits.",
+      "d": "Sewer design standards come from state design criteria such as Ten States Standards, not the NPDES permit."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignored if it rains"
+        "text": "Reported only if it reaches a storm drain or creek"
       },
       {
         "id": "b",
-        "text": "Pumped into a storm drain with no record"
+        "text": "Stopped and cleaned up, with a report at the annual DMR"
       },
       {
         "id": "c",
-        "text": "Stopped, contained if possible, and reported per the permit and state rules"
+        "text": "Stopped, contained if possible, and reported per the permit"
       },
       {
         "id": "d",
-        "text": "Called a drinking-water main break"
+        "text": "Contained, with reporting delayed until the volume is known"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "SSOs are reportable sewage releases. This item asks: “A sanitary-sewer overflow (SSO) typically must be:”. The matching answer is: Stopped, contained if possible, and reported per the permit and state rules. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "SSOs are reportable sewage releases. This item asks: “A sanitary-sewer overflow (SSO) typically must be:”. The matching answer is: Stopped, contained if possible, and reported per the permit and state rules. Independent UniPrep diagnostic — not an official NATE or state operator paper. State rules also set reporting deadlines.",
     "distractorExplanations": {
-      "a": "“Ignored if it rains” does not answer “A sanitary-sewer overflow (SSO) typically must be:”. The matching answer is: Stopped, contained if possible, and reported per the permit and state rules.",
-      "b": "“Pumped into a storm drain with no record” does not answer “A sanitary-sewer overflow (SSO) typically must be:”. The matching answer is: Stopped, contained if possible, and reported per the permit and state rules.",
-      "d": "“Called a drinking-water main break” does not answer “A sanitary-sewer overflow (SSO) typically must be:”. The matching answer is: Stopped, contained if possible, and reported per the permit and state rules."
+      "a": "SSOs are reportable under permit and state rules even when they do not reach surface water.",
+      "b": "SSOs typically require notice within 24 hours and a written report within 5 days, not an annual entry.",
+      "d": "Reporting deadlines run from discovery; volume estimates can follow but do not delay the notice."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Standard weekend practice"
+        "text": "Allowed whenever influent flow exceeds the plant design capacity"
       },
       {
         "id": "b",
-        "text": "Required during every storm"
+        "text": "Acceptable if it is reported later in the annual plant report"
       },
       {
         "id": "c",
-        "text": "The same as a filter backwash at a WTP"
+        "text": "A violation only if the bypass lasts longer than 24 hours"
       },
       {
         "id": "d",
-        "text": "A permit violation unless the permit explicitly allows a documented bypass"
+        "text": "A permit violation unless the permit allows a documented bypass"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Unauthorized bypasses are enforcement bait. This item asks: “Bypassing secondary treatment without authorization is:”. The matching answer is: A permit violation unless the permit explicitly allows a documented bypass. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Unauthorized bypasses are enforcement bait. This item asks: “Bypassing secondary treatment without authorization is:”. The matching answer is: A permit violation unless the permit explicitly allows a documented bypass. Independent UniPrep diagnostic — not an official NATE or state operator paper. The permit must explicitly allow the bypass.",
     "distractorExplanations": {
-      "a": "“Standard weekend practice” does not answer “Bypassing secondary treatment without authorization is:”. The matching answer is: A permit violation unless the permit explicitly allows a documented bypass.",
-      "b": "“Required during every storm” does not answer “Bypassing secondary treatment without authorization is:”. The matching answer is: A permit violation unless the permit explicitly allows a documented bypass.",
-      "c": "“The same as a filter backwash at a WTP” does not answer “Bypassing secondary treatment without authorization is:”. The matching answer is: A permit violation unless the permit explicitly allows a documented bypass."
+      "a": "High flow alone does not authorize bypass; it is prohibited unless unavoidable to prevent loss of life or severe damage, with notice.",
+      "b": "Anticipated bypasses need prior notice and unanticipated ones need 24-hour reporting, not an annual report.",
+      "c": "Any unauthorized bypass is a violation; duration does not create a 24-hour grace period."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1595,23 +1595,23 @@
       },
       {
         "id": "b",
-        "text": "Dumping wet sludge in a creek"
+        "text": "Meeting Class A pathogen limits, with vector attraction optional"
       },
       {
         "id": "c",
-        "text": "Mixing with potable water and serving it"
+        "text": "Meeting metal limits only, since pathogens die off quickly in the soil"
       },
       {
         "id": "d",
-        "text": "No records if the field is rural"
+        "text": "Meeting Class B pathogen limits, with no site access or harvest restrictions"
       }
     ],
     "correctOptionId": "a",
     "explanation": "40 CFR 503-style rules still apply at the state level. This item asks: “Land-applying biosolids requires:”. The matching answer is: Meeting pathogen, vector-attraction, and metal limits for the chosen class. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Dumping wet sludge in a creek” does not answer “Land-applying biosolids requires:”. The matching answer is: Meeting pathogen, vector-attraction, and metal limits for the chosen class.",
-      "c": "“Mixing with potable water and serving it” does not answer “Land-applying biosolids requires:”. The matching answer is: Meeting pathogen, vector-attraction, and metal limits for the chosen class.",
-      "d": "“No records if the field is rural” does not answer “Land-applying biosolids requires:”. The matching answer is: Meeting pathogen, vector-attraction, and metal limits for the chosen class."
+      "b": "Part 503 requires vector-attraction reduction and metal limits in addition to pathogen reduction.",
+      "c": "Pathogen reduction (Class A, or Class B with site restrictions) is required in addition to metal limits.",
+      "d": "Class B biosolids carry site restrictions on public access, grazing, and crop harvest."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "An HVAC invoice"
+        "text": "The annual drinking-water quality report sent to consumers"
       },
       {
         "id": "b",
@@ -1632,19 +1632,19 @@
       },
       {
         "id": "c",
-        "text": "A NATE score report"
+        "text": "The internal daily log of process-control readings"
       },
       {
         "id": "d",
-        "text": "A drinking-water CCR consumer confidence report"
+        "text": "The permit application filed every five years for renewal"
       }
     ],
     "correctOptionId": "b",
     "explanation": "DMRs are wastewater permit reports; CCRs are drinking water. This item asks: “A discharge monitoring report (DMR) is:”. The matching answer is: The periodic report of permit sample results to the regulator. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“An HVAC invoice” does not answer “A discharge monitoring report (DMR) is:”. The matching answer is: The periodic report of permit sample results to the regulator.",
-      "c": "“A NATE score report” does not answer “A discharge monitoring report (DMR) is:”. The matching answer is: The periodic report of permit sample results to the regulator.",
-      "d": "“A drinking-water CCR consumer confidence report” does not answer “A discharge monitoring report (DMR) is:”. The matching answer is: The periodic report of permit sample results to the regulator."
+      "a": "That is the Consumer Confidence Report under the SDWA; a DMR reports NPDES sample results.",
+      "c": "Process-control logs stay at the plant; a DMR reports permit compliance results to the regulator.",
+      "d": "Renewal applications are separate; DMRs are submitted monthly or quarterly with sample results."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Drinking-water storage tanks"
+        "text": "Overflows from separate sanitary sewers during pipe blockages"
       },
       {
         "id": "b",
-        "text": "Primary clarifiers"
+        "text": "Stormwater-only outfalls from separate storm sewer systems"
       },
       {
         "id": "c",
-        "text": "Permitted or being eliminated wet-weather discharges of mixed sewage and stormwater"
+        "text": "Wet-weather discharges of mixed sewage and stormwater"
       },
       {
         "id": "d",
-        "text": "Anaerobic gas flares"
+        "text": "Planned plant bypasses around secondary treatment in dry weather"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "CSOs are a wet-weather collection issue, not a WTP process. This item asks: “Combined sewer overflows (CSOs), where they still exist, are:”. The matching answer is: Permitted or being eliminated wet-weather discharges of mixed sewage and stormwater. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "CSOs are a wet-weather collection issue, not a WTP process. This item asks: “Combined sewer overflows (CSOs), where they still exist, are:”. The matching answer is: Permitted or being eliminated wet-weather discharges of mixed sewage and stormwater. Independent UniPrep diagnostic — not an official NATE or state operator paper. They are permitted under long-term control plans or being eliminated.",
     "distractorExplanations": {
-      "a": "“Drinking-water storage tanks” does not answer “Combined sewer overflows (CSOs), where they still exist, are:”. The matching answer is: Permitted or being eliminated wet-weather discharges of mixed sewage and stormwater.",
-      "b": "“Primary clarifiers” does not answer “Combined sewer overflows (CSOs), where they still exist, are:”. The matching answer is: Permitted or being eliminated wet-weather discharges of mixed sewage and stormwater.",
-      "d": "“Anaerobic gas flares” does not answer “Combined sewer overflows (CSOs), where they still exist, are:”. The matching answer is: Permitted or being eliminated wet-weather discharges of mixed sewage and stormwater."
+      "a": "That describes SSOs from separate sanitary systems; CSOs come from combined sewers in wet weather.",
+      "b": "MS4 outfalls carry stormwater only; CSOs carry a mix of sewage and stormwater.",
+      "d": "That describes a treatment-plant bypass, not a collection-system combined sewer overflow."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The same document as NATE Core"
+        "text": "Issued by the EPA and recognized for responsible charge in every state"
       },
       {
         "id": "b",
-        "text": "An EPA 608 card"
+        "text": "Required only for plants serving over 10,000 people"
       },
       {
         "id": "c",
-        "text": "Optional if the plant is under 1 MGD everywhere"
+        "text": "Optional once an operator has five years of documented plant experience"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "State boards license operators; NATE does not. This item asks: “An operator’s certificate is typically:”. The matching answer is: Required by the state to be in responsible charge of a classified plant. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“The same document as NATE Core” does not answer “An operator’s certificate is typically:”. The matching answer is: Required by the state to be in responsible charge of a classified plant.",
-      "b": "“An EPA 608 card” does not answer “An operator’s certificate is typically:”. The matching answer is: Required by the state to be in responsible charge of a classified plant.",
-      "c": "“Optional if the plant is under 1 MGD everywhere” does not answer “An operator’s certificate is typically:”. The matching answer is: Required by the state to be in responsible charge of a classified plant."
+      "a": "Operator certification is run by each state; EPA does not issue certificates and reciprocity varies.",
+      "b": "States classify plants by process and size; small classified plants also need a certified operator in charge.",
+      "c": "Experience is a prerequisite for higher grades, not a substitute for holding the certificate."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1727,23 +1727,23 @@
       },
       {
         "id": "b",
-        "text": "Flavor effluent"
+        "text": "Recover grease for resale to fund collection-system repairs and upgrades"
       },
       {
         "id": "c",
-        "text": "Meet a fluoride MCL"
+        "text": "Raise influent BOD so activated sludge has more food"
       },
       {
         "id": "d",
-        "text": "Lubricate a compressor"
+        "text": "Control industrial toxics that pass through the plant to the river"
       }
     ],
     "correctOptionId": "a",
     "explanation": "FOG is a pretreatment/collection control. This item asks: “Fats, oils, and grease (FOG) programs exist to:”. The matching answer is: Keep collection systems and plants from clogging and overflowing. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "b": "“Flavor effluent” does not answer “Fats, oils, and grease (FOG) programs exist to:”. The matching answer is: Keep collection systems and plants from clogging and overflowing.",
-      "c": "“Meet a fluoride MCL” does not answer “Fats, oils, and grease (FOG) programs exist to:”. The matching answer is: Keep collection systems and plants from clogging and overflowing.",
-      "d": "“Lubricate a compressor” does not answer “Fats, oils, and grease (FOG) programs exist to:”. The matching answer is: Keep collection systems and plants from clogging and overflowing."
+      "b": "Grease may be recycled, but FOG programs exist to prevent sewer blockages and overflows.",
+      "c": "FOG is a nuisance load causing blockages and scum, not a desired food source for the biomass.",
+      "d": "Toxic pass-through is the focus of industrial pretreatment; FOG programs target grease blockages."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1756,7 +1756,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Add extra BOD on purpose"
+        "text": "Charge industries for BOD so the plant can expand capacity"
       },
       {
         "id": "b",
@@ -1764,19 +1764,19 @@
       },
       {
         "id": "c",
-        "text": "Replace the need for a headworks"
+        "text": "Let industries discharge directly to the river under the POTW permit"
       },
       {
         "id": "d",
-        "text": "Treat the river with chlorine at the outfall"
+        "text": "Require homes to pretreat sewage with septic tanks before discharge"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Pretreatment protects the POTW and the permit. This item asks: “Industrial pretreatment programs are meant to:”. The matching answer is: Keep toxic slugs from killing the biology or passing through to the river. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Add extra BOD on purpose” does not answer “Industrial pretreatment programs are meant to:”. The matching answer is: Keep toxic slugs from killing the biology or passing through to the river.",
-      "c": "“Replace the need for a headworks” does not answer “Industrial pretreatment programs are meant to:”. The matching answer is: Keep toxic slugs from killing the biology or passing through to the river.",
-      "d": "“Treat the river with chlorine at the outfall only” does not answer “Industrial pretreatment programs are meant to:”. The matching answer is: Keep toxic slugs from killing the biology or passing through to the river."
+      "a": "Surcharges may exist, but pretreatment exists to prevent interference and pass-through of toxics.",
+      "c": "Direct dischargers need their own NPDES permits; pretreatment covers indirect dischargers to the POTW.",
+      "d": "Pretreatment programs regulate industrial users, not residential sewer connections."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Dilute the bottle with distilled water"
+        "text": "Re-sample until a passing result replaces the high one"
       },
       {
         "id": "b",
-        "text": "Throw the result away"
+        "text": "Report it at the next annual review if the monthly average passes"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "Call it a TCR distribution hit"
+        "text": "Increase chlorine dose and leave the result off the DMR"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Fix the process and report — do not cook the sample. This item asks: “If a fecal coliform result is over the weekly permit limit, the operator should:”. The matching answer is: Verify disinfection, re-sample as required, and report honestly. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Dilute the bottle with distilled water” does not answer “If a fecal coliform result is over the weekly permit limit, the operator should:”. The matching answer is: Verify disinfection, re-sample as required, and report honestly.",
-      "b": "“Throw the result away” does not answer “If a fecal coliform result is over the weekly permit limit, the operator should:”. The matching answer is: Verify disinfection, re-sample as required, and report honestly.",
-      "d": "“Call it a TCR distribution hit” does not answer “If a fecal coliform result is over the weekly permit limit, the operator should:”. The matching answer is: Verify disinfection, re-sample as required, and report honestly."
+      "a": "Every valid result must be reported; selective re-sampling to replace an exceedance is falsification.",
+      "b": "Weekly limits stand on their own; the exceedance goes on the DMR and some permits require prompt notice.",
+      "d": "Process fixes do not remove the reporting duty; omitting a result from the DMR is falsification."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Be piped into the aeration tank on purpose every rain"
+        "text": "Be routed into the sanitary sewer so it receives full treatment"
       },
       {
         "id": "b",
-        "text": "Replace RAS"
+        "text": "Enter the sanitary sewer only during dry weather"
       },
       {
         "id": "c",
-        "text": "Be used as potable water"
+        "text": "Be diverted to the aeration tank to dilute a high-BOD influent"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "I&I and illegal storm connections blow plants out. This item asks: “Stormwater that is not part of a combined system should:”. The matching answer is: Stay out of the sanitary sewer to avoid hydraulic overload. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
     "distractorExplanations": {
-      "a": "“Be piped into the aeration tank on purpose every rain” does not answer “Stormwater that is not part of a combined system should:”. The matching answer is: Stay out of the sanitary sewer to avoid hydraulic overload.",
-      "b": "“Replace RAS” does not answer “Stormwater that is not part of a combined system should:”. The matching answer is: Stay out of the sanitary sewer to avoid hydraulic overload.",
-      "c": "“Be used as potable water” does not answer “Stormwater that is not part of a combined system should:”. The matching answer is: Stay out of the sanitary sewer to avoid hydraulic overload."
+      "a": "In separate systems, storm connections to the sanitary sewer cause inflow overloads and SSOs.",
+      "b": "Storm flow occurs in wet weather; illicit storm connections overload sanitary sewers during rain.",
+      "c": "Dilution with stormwater washes out biomass and overloads clarifiers; it is not treatment."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Whether the effluent is toxic to test organisms, not just conventional pollutants"
+        "text": "Whether the effluent is toxic to test organisms"
       },
       {
         "id": "b",
-        "text": "Only pH in the aeration tank"
+        "text": "Effluent BOD and TSS against conventional limits"
       },
       {
         "id": "c",
-        "text": "Only MLSS color"
+        "text": "Pathogen levels using indicator bacteria counts"
       },
       {
         "id": "d",
-        "text": "Only drinking-water lead"
+        "text": "Toxic metals measured individually by ICP analysis"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "WET is a biological permit test. This item asks: “A whole-effluent toxicity (WET) test looks at:”. The matching answer is: Whether the effluent is toxic to test organisms, not just conventional pollutants. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "WET is a biological permit test. This item asks: “A whole-effluent toxicity (WET) test looks at:”. The matching answer is: Whether the effluent is toxic to test organisms, not just conventional pollutants. Independent UniPrep diagnostic — not an official NATE or state operator paper. It goes beyond conventional pollutants.",
     "distractorExplanations": {
-      "b": "“Only pH in the aeration tank” does not answer “A whole-effluent toxicity (WET) test looks at:”. The matching answer is: Whether the effluent is toxic to test organisms, not just conventional pollutants.",
-      "c": "“Only MLSS color” does not answer “A whole-effluent toxicity (WET) test looks at:”. The matching answer is: Whether the effluent is toxic to test organisms, not just conventional pollutants.",
-      "d": "“Only drinking-water lead” does not answer “A whole-effluent toxicity (WET) test looks at:”. The matching answer is: Whether the effluent is toxic to test organisms, not just conventional pollutants."
+      "b": "BOD and TSS are conventional pollutant tests; WET exposes live test organisms to the effluent.",
+      "c": "Indicator bacteria test disinfection; WET measures toxicity to organisms such as Ceriodaphnia.",
+      "d": "Chemical-specific analysis is separate; WET measures the combined toxic effect biologically."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Until the shift ends"
+        "text": "Until the next DMR is accepted by the regulator"
       },
       {
         "id": "b",
-        "text": "For the period the permit and state require — often three years or more"
+        "text": "For the period the permit and state require"
       },
       {
         "id": "c",
-        "text": "Only if the result passed"
+        "text": "For one year unless an exceedance occurred"
       },
       {
         "id": "d",
-        "text": "On a personal phone with no backup"
+        "text": "Until the lab invoice is paid and filed"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Retention is a permit condition. This item asks: “Records for permit samples are usually kept:”. The matching answer is: For the period the permit and state require — often three years or more. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Retention is a permit condition. This item asks: “Records for permit samples are usually kept:”. The matching answer is: For the period the permit and state require — often three years or more. Independent UniPrep diagnostic — not an official NATE or state operator paper. Federal NPDES rules require at least three years.",
     "distractorExplanations": {
-      "a": "“Until the shift ends” does not answer “Records for permit samples are usually kept:”. The matching answer is: For the period the permit and state require — often three years or more.",
-      "c": "“Only if the result passed” does not answer “Records for permit samples are usually kept:”. The matching answer is: For the period the permit and state require — often three years or more.",
-      "d": "“On a personal phone with no backup” does not answer “Records for permit samples are usually kept:”. The matching answer is: For the period the permit and state require — often three years or more."
+      "a": "NPDES rules require monitoring records for at least three years, not just until the next DMR.",
+      "c": "The federal minimum is three years for all monitoring records, whether results passed or failed.",
+      "d": "Retention is a permit condition tied to compliance records, not to lab billing."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "You can invent numbers if the lab is late"
+        "text": "You confirm the lab, not you, is responsible for accuracy"
       },
       {
         "id": "b",
-        "text": "The plant met every goal"
+        "text": "You are certifying the plant met every permit limit"
       },
       {
         "id": "c",
-        "text": "You are stating the data are true and complete to the best of your knowledge"
+        "text": "You are stating the data are true and complete"
       },
       {
         "id": "d",
-        "text": "NPDES no longer applies"
+        "text": "You may estimate missing data without noting it"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "False statements on DMRs are a federal offense. This item asks: “Signing a DMR as the responsible operator means:”. The matching answer is: You are stating the data are true and complete to the best of your knowledge. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "False statements on DMRs are a federal offense. This item asks: “Signing a DMR as the responsible operator means:”. The matching answer is: You are stating the data are true and complete to the best of your knowledge. Independent UniPrep diagnostic — not an official NATE or state operator paper. The certification is to the best of your knowledge.",
     "distractorExplanations": {
-      "a": "“You can invent numbers if the lab is late” does not answer “Signing a DMR as the responsible operator means:”. The matching answer is: You are stating the data are true and complete to the best of your knowledge.",
-      "b": "“The plant met every goal forever” does not answer “Signing a DMR as the responsible operator means:”. The matching answer is: You are stating the data are true and complete to the best of your knowledge.",
-      "d": "“NPDES no longer applies” does not answer “Signing a DMR as the responsible operator means:”. The matching answer is: You are stating the data are true and complete to the best of your knowledge."
+      "a": "The signer certifies the report; responsibility is not shifted to a contract lab.",
+      "b": "Signing certifies accuracy, not compliance; exceedances must still be reported truthfully.",
+      "d": "Missing or estimated data must be identified; unmarked estimates misrepresent the record."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The official ABC standardized exam"
+        "text": "The official ABC standardized exam form"
       },
       {
         "id": "b",
-        "text": "A drinking-water Grade 1 paper"
+        "text": "A state-licensed operator certification test"
       },
       {
         "id": "c",
-        "text": "A NATE Core HVAC test"
+        "text": "A retired state Grade 1 exam released publicly"
       },
       {
         "id": "d",
-        "text": "An independent 60-question diagnostic — not a state operator exam form"
+        "text": "An independent 60-question diagnostic"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Honesty: we are not the licensing board. This item asks: “This UniPrep wastewater mock is:”. The matching answer is: An independent 60-question diagnostic — not a state operator exam form. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Honesty: we are not the licensing board. This item asks: “This UniPrep wastewater mock is:”. The matching answer is: An independent 60-question diagnostic — not a state operator exam form. Independent UniPrep diagnostic — not an official NATE or state operator paper. It is not a state operator exam form.",
     "distractorExplanations": {
-      "a": "“The official ABC standardized exam” does not answer “This UniPrep wastewater mock is:”. The matching answer is: An independent 60-question diagnostic — not a state operator exam form.",
-      "b": "“A drinking-water Grade 1 paper” does not answer “This UniPrep wastewater mock is:”. The matching answer is: An independent 60-question diagnostic — not a state operator exam form.",
-      "c": "“A NATE Core HVAC test” does not answer “This UniPrep wastewater mock is:”. The matching answer is: An independent 60-question diagnostic — not a state operator exam form."
+      "a": "ABC exams are administered through state programs; this mock is an independent practice diagnostic.",
+      "b": "No licensing board issued this mock, and passing it confers no operator certification.",
+      "c": "It is an independent practice set, not released state exam questions."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."

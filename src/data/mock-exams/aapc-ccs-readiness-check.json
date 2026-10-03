@@ -19,7 +19,7 @@
       },
       {
         "id": "d",
-        "text": "R69, illness, unspecified, until tests return"
+        "text": "R69, illness, unspecified, until the test results return"
       }
     ],
     "correctOptionId": "c",
@@ -27,7 +27,7 @@
     "distractorExplanations": {
       "a": "Coding an uncertain diagnosis as confirmed is the inpatient rule, not the outpatient rule.",
       "b": "Z03 observation codes are for a suspected condition that is ruled out with no signs or symptoms present.",
-      "d": "R69 is a nonspecific code; documented symptoms are more specific and required."
+      "d": "R69 is a nonspecific unspecified-illness code; the documented cough and fever are more specific and are coded instead."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -73,7 +73,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always makes notes too short to support coding"
+        "text": "Makes notes too short to support the level of service billed"
       },
       {
         "id": "b",
@@ -91,7 +91,7 @@
     "correctOptionId": "d",
     "explanation": "Cloned notes can carry forward findings that were not present or services that were not performed. Medical necessity and service levels must be supported by documentation specific to each encounter.",
     "distractorExplanations": {
-      "a": "Cloned notes are usually long, not short; the issue is accuracy.",
+      "a": "Cloned notes tend to be long and repetitive; the compliance risk is inaccurate carried-forward content, not brevity.",
       "b": "Cloning does not force unspecified codes; it undermines the integrity of the record.",
       "c": "Copy-paste is not banned outright; it must be used responsibly and audited."
     },
@@ -143,7 +143,7 @@
       },
       {
         "id": "b",
-        "text": "To confirm that providers hold a valid NPI number"
+        "text": "To confirm that each provider holds a valid, active NPI number"
       },
       {
         "id": "c",
@@ -158,7 +158,7 @@
     "explanation": "Federal health programs do not pay for items or services furnished, ordered, or directed by excluded individuals. Billing for them can lead to civil monetary penalties, so organizations screen at hire and periodically.",
     "distractorExplanations": {
       "a": "Training records are tracked separately from exclusion screening.",
-      "b": "NPI verification uses NPPES, not the OIG exclusion list.",
+      "b": "NPI status is checked in NPPES; an active NPI says nothing about whether the person is excluded by the OIG.",
       "d": "Exam credentialing is verified with AHIMA or AAPC, not the LEIE."
     },
     "difficulty": "medium",
@@ -242,7 +242,7 @@
       },
       {
         "id": "b",
-        "text": "Approach"
+        "text": "Surgical approach"
       },
       {
         "id": "c",
@@ -250,15 +250,15 @@
       },
       {
         "id": "d",
-        "text": "Device"
+        "text": "Body system"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Medical and Surgical character order: 1 section, 2 body system, 3 root operation, 4 body part, 5 approach, 6 device, 7 qualifier.",
     "distractorExplanations": {
       "a": "Body part is the 4th character.",
-      "b": "Approach is the 5th character.",
-      "d": "Device is the 6th character."
+      "b": "The approach (how the operative site is reached) is the 5th character, not the 3rd character of the code.",
+      "d": "The body system is the 2nd character; the 3rd character identifies the root operation (objective of the procedure)."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -378,7 +378,7 @@
       },
       {
         "id": "c",
-        "text": "Drainage"
+        "text": "Shock Wave Therapy"
       },
       {
         "id": "d",
@@ -390,7 +390,7 @@
     "distractorExplanations": {
       "a": "Extirpation requires the solid matter to be taken out.",
       "b": "Destruction eradicates a body part itself, not solid matter within it.",
-      "c": "Drainage applies to fluids or gases."
+      "c": "Shock Wave Therapy is a root operation in the Extracorporeal or Systemic Therapies section for musculoskeletal treatment; breaking up a stone is Fragmentation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -502,7 +502,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The two conditions are never coded together (mutually exclusive)"
+        "text": "The two conditions are never coded together"
       },
       {
         "id": "b",
@@ -518,7 +518,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Excludes1 is a pure exclusion: the two codes cannot be reported together because the conditions cannot occur together, such as congenital and acquired forms of the same condition. Guidelines allow limited exceptions when the conditions are unrelated.",
+    "explanation": "Excludes1 is a pure exclusion: the two codes cannot be reported together because the conditions cannot occur together, such as congenital and acquired forms of the same condition. Guidelines allow limited exceptions when the conditions are unrelated. The conditions are mutually exclusive.",
     "distractorExplanations": {
       "b": "\"May also be coded if present\" describes Excludes2.",
       "c": "Sequencing instructions come from \"code first\" and \"use additional code\" notes.",
@@ -535,11 +535,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The two conditions can never appear on the same claim"
+        "text": "The two conditions cannot be reported on the same claim"
       },
       {
         "id": "b",
-        "text": "The excluded condition is always a manifestation code"
+        "text": "The excluded condition is reported as a manifestation code after it"
       },
       {
         "id": "c",
@@ -553,8 +553,8 @@
     "correctOptionId": "c",
     "explanation": "Excludes2 means \"not included here.\" The excluded condition is not part of the code, but a patient can have both, so both codes may be reported when documented.",
     "distractorExplanations": {
-      "a": "Never coding together describes Excludes1.",
-      "b": "Excludes2 is not related to etiology/manifestation convention.",
+      "a": "Not reporting the two conditions together describes Excludes1 (pure exclusion), not Excludes2.",
+      "b": "Excludes2 is unrelated to the etiology/manifestation convention; that sequencing comes from code first/use additional code notes.",
       "d": "Excludes notes apply in every setting."
     },
     "difficulty": "medium",
@@ -609,19 +609,19 @@
       },
       {
         "id": "c",
-        "text": "Add zeros to the end of the code"
+        "text": "Add zeros in the empty positions before the 7th character"
       },
       {
         "id": "d",
-        "text": "Choose an unspecified code instead"
+        "text": "Assign the 7th character in the next open position"
       }
     ],
     "correctOptionId": "a",
     "explanation": "The placeholder X fills empty positions so the 7th character lands in the 7th position, for example T50.905A or S93.401A. Without it the code is invalid.",
     "distractorExplanations": {
       "b": "Omitting a required 7th character makes the code invalid.",
-      "c": "Zeros are not placeholders in ICD-10-CM.",
-      "d": "Specificity rules still require a valid, complete code."
+      "c": "Zero is a meaningful code character, not a placeholder; ICD-10-CM uses the letter X to fill empty positions.",
+      "d": "The 7th character must sit in position 7; placing it in the 5th or 6th position creates an invalid or different code."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -646,7 +646,7 @@
       },
       {
         "id": "d",
-        "text": "Reported only on outpatient claims"
+        "text": "Sequenced first on outpatient claims, second on inpatient claims"
       }
     ],
     "correctOptionId": "b",
@@ -654,7 +654,7 @@
     "distractorExplanations": {
       "a": "These manifestation codes may never be principal or first-listed.",
       "c": "The etiology code must always be reported with the manifestation.",
-      "d": "The convention applies in all settings."
+      "d": "The etiology/manifestation convention applies in every setting; these codes are never first-listed on outpatient claims either."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -737,7 +737,7 @@
       },
       {
         "id": "b",
-        "text": "UTI (N39.0) first, then the sepsis code"
+        "text": "UTI (N39.0) first as the reason for admission, then A41.9"
       },
       {
         "id": "c",
@@ -751,7 +751,7 @@
     "correctOptionId": "a",
     "explanation": "When sepsis and a localized infection are both present on admission, the systemic infection code is sequenced first, followed by the localized infection. R65.2- is never principal; it is added for severe sepsis.",
     "distractorExplanations": {
-      "b": "The localized infection is secondary to the systemic infection code.",
+      "b": "When sepsis and a localized infection are both POA, the systemic infection is principal and the localized infection is secondary.",
       "c": "R65.2- codes cannot be sequenced first.",
       "d": "Guidelines give explicit sequencing for sepsis with a localized infection."
     },
@@ -803,7 +803,7 @@
       },
       {
         "id": "b",
-        "text": "Listed first in the emergency department's records"
+        "text": "Listed first in the emergency department's records on arrival"
       },
       {
         "id": "c",
@@ -818,7 +818,7 @@
     "explanation": "UHDDS defines principal diagnosis as \"that condition established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.\"",
     "distractorExplanations": {
       "a": "Cost does not determine the principal diagnosis.",
-      "b": "The ED's first-listed diagnosis may change after study.",
+      "b": "The ED working diagnosis at arrival may change after study; UHDDS uses the condition established after study.",
       "d": "Choosing by DRG weight rather than the definition is noncompliant."
     },
     "difficulty": "medium",
@@ -869,7 +869,7 @@
       },
       {
         "id": "b",
-        "text": "Coded first, followed by the appendicitis code"
+        "text": "Coded first as the reason for the visit, then the appendicitis"
       },
       {
         "id": "c",
@@ -883,7 +883,7 @@
     "correctOptionId": "a",
     "explanation": "Signs and symptoms routinely associated with a confirmed disease are not coded separately. Symptoms are coded only if they are not routinely part of the condition or no definitive diagnosis is established.",
     "distractorExplanations": {
-      "b": "Integral symptoms are never sequenced ahead of the confirmed diagnosis.",
+      "b": "Symptoms integral to a confirmed diagnosis are not coded at all, so they cannot be sequenced ahead of the appendicitis.",
       "c": "Where they are documented does not matter; integral symptoms are not coded.",
       "d": "Coding integral symptoms adds redundant codes and is not allowed."
     },
@@ -1137,7 +1137,7 @@
       },
       {
         "id": "c",
-        "text": "It is always paid in addition to the main procedure"
+        "text": "It is paid in addition to the main procedure at full value"
       },
       {
         "id": "d",
@@ -1148,7 +1148,7 @@
     "explanation": "If performed alone for a distinct reason, a 'separate procedure' may be reportable; otherwise bundled.",
     "distractorExplanations": {
       "a": "A separate procedure is not billed with related surgery when it is integral to it.",
-      "c": "When integral to a larger service it is bundled, not paid in addition.",
+      "c": "When a separate procedure is integral to a larger service it is bundled, not paid in addition at full value.",
       "d": "Modifier 51 marks multiple procedures; it does not make a separate procedure reportable."
     },
     "difficulty": "hard",
@@ -1166,7 +1166,7 @@
       },
       {
         "id": "b",
-        "text": "The anesthetic used during the repair"
+        "text": "The anesthetic used and the time spent on the repair"
       },
       {
         "id": "c",
@@ -1181,7 +1181,7 @@
     "explanation": "Add lengths of same classification/anatomic grouping per CPT rules; intermediate includes layered closure etc.",
     "distractorExplanations": {
       "a": "Suture material does not change the repair code.",
-      "b": "Local anesthesia is included in the repair and does not drive code choice.",
+      "b": "Local anesthesia is included in the repair code, and time spent is not a CPT repair criterion; length and complexity are.",
       "d": "Suture count is not a CPT criterion; length and complexity are."
     },
     "difficulty": "easy",
@@ -1335,19 +1335,19 @@
       },
       {
         "id": "c",
-        "text": "Report a single \"multiple sites\" code"
+        "text": "Report the code once and note the extra sites in the 7th character"
       },
       {
         "id": "d",
-        "text": "Append a modifier to show multiple sites"
+        "text": "Append a modifier to the code to show the multiple sites"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Guideline B3.2a: code multiple procedures separately when the same root operation is performed on different body parts defined by distinct values of the body-part character.",
     "distractorExplanations": {
       "b": "Coding one site under-reports distinct procedures.",
-      "c": "Distinct body-part values require separate codes.",
-      "d": "ICD-10-PCS does not use modifiers."
+      "c": "The 7th character is the qualifier; it does not capture additional sites, so each distinct body-part value needs its own code.",
+      "d": "ICD-10-PCS has no modifiers; site modifiers such as XS belong to CPT/HCPCS outpatient coding."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1368,7 +1368,7 @@
       },
       {
         "id": "c",
-        "text": "The open procedure only"
+        "text": "The open procedure, with the conversion noted by a qualifier"
       },
       {
         "id": "d",
@@ -1379,7 +1379,7 @@
     "explanation": "Guideline B3.2d: when the intended root operation is attempted by one approach and converted to another, code the completed procedure with its approach plus an Inspection for the abandoned approach.",
     "distractorExplanations": {
       "a": "The procedure was completed open, so coding only the laparoscopic approach is wrong.",
-      "c": "The laparoscopic attempt is captured as an Inspection, which is required.",
+      "c": "No qualifier captures a conversion; guideline B3.2d requires a separate percutaneous endoscopic Inspection code.",
       "d": "The procedure was performed once; the laparoscopic part is an Inspection only."
     },
     "difficulty": "hard",
@@ -1426,11 +1426,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Open"
+        "text": "Via Natural or Artificial Opening With Percutaneous Endoscopic Assistance"
       },
       {
         "id": "b",
-        "text": "Percutaneous"
+        "text": "Via Natural or Artificial Opening Endoscopic"
       },
       {
         "id": "c",
@@ -1444,8 +1444,8 @@
     "correctOptionId": "d",
     "explanation": "Percutaneous Endoscopic (value 4) means entry through the skin or mucous membrane by puncture or minor incision, with instrumentation that allows visualization, as in laparoscopy.",
     "distractorExplanations": {
-      "a": "Open means cutting through tissue to expose the site.",
-      "b": "Percutaneous without an endoscope has no visualization instrument.",
+      "a": "Value F is for procedures through a natural opening assisted laparoscopically (e.g. LAVH), not a laparoscope through a skin puncture.",
+      "b": "Value 8 is an endoscope passed through a natural or artificial opening (e.g. colonoscopy), not through a skin puncture.",
       "c": "That approach enters through a natural orifice, such as the mouth or urethra."
     },
     "difficulty": "medium",
@@ -1471,7 +1471,7 @@
       },
       {
         "id": "d",
-        "text": "Inpatient hospital procedures and devices"
+        "text": "Inpatient hospital procedures, devices, and approaches"
       }
     ],
     "correctOptionId": "a",
@@ -1479,7 +1479,7 @@
     "distractorExplanations": {
       "b": "Physician services and procedures are reported with CPT.",
       "c": "Supplies, drugs, and DME are reported with HCPCS Level II.",
-      "d": "Inpatient procedures use ICD-10-PCS, not ICD-10-CM."
+      "d": "Inpatient procedures, devices and approaches are coded with ICD-10-PCS, not the ICD-10-CM diagnosis classification."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The service fits the clinic's schedule"
+        "text": "The service is covered under the patient's benefit plan"
       },
       {
         "id": "b",
@@ -1543,7 +1543,7 @@
     "correctOptionId": "b",
     "explanation": "Coverage depends on documented medical necessity aligned with payer policies.",
     "distractorExplanations": {
-      "a": "Scheduling convenience has no bearing on medical necessity.",
+      "a": "Coverage is a benefit question; a covered service can still be denied when documentation does not show clinical need.",
       "c": "A patient request does not make a service medically necessary.",
       "d": "Necessity is about clinical need, not price."
     },
@@ -1562,23 +1562,23 @@
       },
       {
         "id": "b",
-        "text": "Reporting a lower level than performed intentionally always as the definition"
+        "text": "Reporting a lower level than documented to avoid an audit"
       },
       {
         "id": "c",
-        "text": "Using the correct code"
+        "text": "Billing separate codes for components of a bundled service"
       },
       {
         "id": "d",
-        "text": "Appending a correct modifier"
+        "text": "Billing for a service that the provider did not perform"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Upcoding is a compliance/fraud risk; downcoding underreports services.",
     "distractorExplanations": {
-      "b": "That's downcoding/under coding concepts.",
-      "c": "Correct coding is compliant.",
-      "d": "Proper modifiers are fine."
+      "b": "Reporting a lower level than documented is downcoding (undercoding), also noncompliant but the opposite of upcoding.",
+      "c": "Billing components of a bundled service separately is unbundling, a different improper coding practice.",
+      "d": "Billing for services not rendered is phantom billing, a separate fraud type from inflating the level of a real service."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1603,7 +1603,7 @@
       },
       {
         "id": "d",
-        "text": "Claims filed after a payer's timely filing limit"
+        "text": "Claims filed after the payer's timely filing limit has passed"
       }
     ],
     "correctOptionId": "b",
@@ -1611,7 +1611,7 @@
     "distractorExplanations": {
       "a": "Honest mistakes corrected promptly lack the knowing intent the Act requires.",
       "c": "Private insurance disputes are not federal false claims.",
-      "d": "Late filing leads to denial, not False Claims Act liability."
+      "d": "Missing the timely filing limit leads to a denial, not False Claims Act liability, which requires a knowingly false claim."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1628,7 +1628,7 @@
       },
       {
         "id": "b",
-        "text": "Billing fraud and false claims penalties"
+        "text": "Billing fraud and the penalties for submitting false claims"
       },
       {
         "id": "c",
@@ -1643,7 +1643,7 @@
     "explanation": "Covered entities must safeguard PHI; minimum necessary and patient rights apply.",
     "distractorExplanations": {
       "a": "Workplace safety and sharps logs fall under OSHA.",
-      "b": "False claims are covered by the False Claims Act, not the Privacy Rule.",
+      "b": "False claims penalties come from the False Claims Act and related fraud statutes, not the HIPAA Privacy Rule.",
       "d": "Kickbacks are covered by the Anti-Kickback Statute."
     },
     "difficulty": "easy",
@@ -1661,7 +1661,7 @@
       },
       {
         "id": "b",
-        "text": "Inpatient hospital procedures"
+        "text": "Inpatient hospital procedures and devices"
       },
       {
         "id": "c",
@@ -1676,7 +1676,7 @@
     "explanation": "A-codes, J-codes, etc., are Level II examples used on claims with CPT as applicable.",
     "distractorExplanations": {
       "a": "Diagnoses are reported with ICD-10-CM.",
-      "b": "Inpatient procedures are coded in ICD-10-PCS.",
+      "b": "Inpatient procedures and devices are coded in ICD-10-PCS; HCPCS Level II covers drugs, supplies and DME.",
       "c": "Office visits and surgeries are CPT (HCPCS Level I) codes."
     },
     "difficulty": "easy",
@@ -1723,7 +1723,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A patient's Medicare beneficiary number"
+        "text": "A patient's 11-character Medicare Beneficiary Identifier"
       },
       {
         "id": "b",
@@ -1741,7 +1741,7 @@
     "correctOptionId": "b",
     "explanation": "NPIs identify providers on claims; do not confuse with taxonomy or PIN legacy systems.",
     "distractorExplanations": {
-      "a": "Patients have Medicare Beneficiary Identifiers, not NPIs.",
+      "a": "The 11-character MBI identifies the Medicare patient; the NPI is a 10-digit number identifying the provider.",
       "c": "Where a service happened is the place-of-service code.",
       "d": "Payers assign claim numbers; the NPI identifies the provider."
     },
@@ -1768,7 +1768,7 @@
       },
       {
         "id": "d",
-        "text": "Reporting one comprehensive code for the service"
+        "text": "Reporting one comprehensive code that covers the whole service"
       }
     ],
     "correctOptionId": "c",
@@ -1776,7 +1776,7 @@
     "distractorExplanations": {
       "a": "Using the panel code when every component test was done is correct coding.",
       "b": "Billing a higher level than documented is upcoding, not unbundling.",
-      "d": "Reporting the comprehensive code is the correct alternative to unbundling."
+      "d": "Reporting the comprehensive code is correct coding, the opposite of unbundling the components separately."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1855,7 +1855,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Bilateral procedure at the same session"
+        "text": "A bilateral procedure performed at the same operative session"
       },
       {
         "id": "b",
@@ -1873,7 +1873,7 @@
     "correctOptionId": "b",
     "explanation": "Use distinct-service modifiers only with documentation; overuse is an audit target.",
     "distractorExplanations": {
-      "a": "Bilateral procedures use modifier 50.",
+      "a": "Bilateral procedures at the same session are reported with modifier 50, not the distinct-service modifier 59/X{EPSU}.",
       "c": "Assistant surgeons use modifier 80.",
       "d": "A significant, separately identifiable E/M service uses modifier 25."
     },
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always move the case into a higher MS-DRG"
+        "text": "Move the case into a higher-weighted MS-DRG as an MCC"
       },
       {
         "id": "b",
@@ -1939,7 +1939,7 @@
     "correctOptionId": "d",
     "explanation": "When a selected HAC (for example a stage 3 or 4 pressure ulcer or a catheter-associated UTI) has POA = N, it cannot act as a CC/MCC to raise the MS-DRG. The condition is still coded.",
     "distractorExplanations": {
-      "a": "The policy prevents higher payment for these conditions when acquired in the hospital.",
+      "a": "The HAC-POA policy does the opposite: a selected condition with POA = N cannot act as a CC/MCC to raise the MS-DRG.",
       "b": "The condition keeps its own diagnosis code; it is not replaced by a Z code.",
       "c": "The condition must still be coded and reported accurately."
     },

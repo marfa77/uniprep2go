@@ -100,3 +100,21 @@ Prod check after 581f805 found "On the X Readiness, … Select the best answer."
 ## 2026-10-03 — EPA 608 fact pass 2 applied
 
 `manual-patches-zfix-facts-2026-10-03-epa.json` now 113 items (pass 1: 28 + pass 2: 85), checked against 40 CFR 82 Subpart F: evacuation table (<200 lb R-22 0 psig / others 10 inHg; ≥200 lb 10 / 15 inHg; pre-11/15/1993 machines 4 inHg), small appliances 90 % / 80 % / 4 inHg, leak triggers 10/20/30 % (ODS ≥ 50 lb only), passive recovery ≤ 15 lb, AHRI 740-2016, per-day inflation-adjusted penalties; core-015 banking-template options replaced. Correct = longest 22 %. Gates: triage clean; audit leftover FAILs = thin notes on core-042 family + distractor copied from another key (core-002 ↔ type-1-039). Still open: R-123 near-duplicates (type-3-003/017/039).
+
+## 2026-10-03 — CFA Level 2 full audit (mock `cfa-level-2-readiness-check` + deck `cfa-level-2-anki-deck`)
+
+- **Bank:** all 60 items rewritten as mini-vignettes (named case, numbers, one best answer), 6 per topic, keys 15/15/15/15, every distractor note names the specific error. Old duplicates (5 prompts), ethics-003…006 near-duplicates and ~150 template notes gone. Patch `manual-patches-zfix-zcfa2-rewrite-2026-10-03.json`. Gates: audit 0 FAIL / 0 WARN, triage clean, exported bank = patch 60/60.
+- **Mock config:** 90 → 120 min (2 min per mini-vignette); officialSourceNote/description now say 6 per topic and real weights 5–15% (no more "equally weighted"); L2 ethics blurb no longer claims GIPS.
+- **Deck:** 495 cards kept (480 GUIDs preserved for buyers' progress, 12+3 new, 15 retired) — every card a scenario question with answer, worked example and common mistake; 359 with a typeset formula; topic split mapped to 2026 LMs (EV 66 · FSA 66 · FI 62 · PM 62 · Ethics 52 · Quant 48 · CI 40 · Deriv 38 · Alts 36 · Econ 25). 0 duplicate fronts/backs. Gumroad file replaced, classic page republished (cover + 3 new samples, new description), CDN OK.
+- **Samples:** now real deck cards (picker reads the two authored CSVs): binomial-tree bond value, DLOC × DLOM, SUE. DLOC formula shortened so it fits the screenshot; wide formulas scroll in Anki (`overflow-x: auto`).
+
+## 2026-10-03 — express length balance wave 2 (89 banks, health / CDL / trade / HR)
+
+- Correct = longest option: avg ~88 % → **23 %**, 0 banks above 30 % (pass 2: chunks per bank; pass 3: 122 items in 36 banks where the key still tied/led). Patches `manual-patches-zfix-zlen2-*` and `zfix-zlen3-*`. 123 ops banks runnable.
+- Live Gumroad decks among them rebuilt + file replaced + samples re-rendered: ACSM CPT, Series 66, Series 6, Real Estate Appraiser. Other 82 linked wave decks are planned (no Gumroad file) — rebuild at launch.
+- Leftover FAILs (pre-existing, not length): thin/template distractor notes in ~60 banks, thin explanations ~55, near-duplicate stems 10, duplicate prompts 6, key-letter skew ~13 (e.g. vtne a16/b28/c8/d8).
+- Content flags from writers (not fixed in the express pass): SHRM-CP and SHRM-SCP banks identical (CP stems say "SCP level"); meta "This X mock is:" items in aswb-clinical / barber / nsca; Series 6 explanations mismatched to items and Series 6/66 share items; Series 66 "state law" items are economics, some stems truncated ("must manage"); AHA BLS keys vs 2025 guidelines; ABO prism key; CDL school-bus mirror / danger-zone keys; CRCST organism name.
+
+## 2026-10-03 — sample refresh
+
+- 25 state RE decks re-rendered (18 Gumroad products polished); EPA 608 samples re-picked after fact pass (passive ≤15 lb, low-pressure 25 mm Hg abs, 8 lb R-410A → 10 inHg) and classic Gumroad page republished.

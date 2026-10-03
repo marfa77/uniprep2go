@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Draft complex wills as attorney"
+        "text": "Advise signers on which legal document best fits their situation"
       },
       {
         "id": "b",
-        "text": "Deter fraud by verifying identity and witnessing signatures/oaths as authorized"
+        "text": "Deter fraud by verifying identity and witnessing signatures/oaths"
       },
       {
         "id": "c",
-        "text": "Give immigration legal advice"
+        "text": "Certify that the document's contents are true and legally valid"
       },
       {
         "id": "d",
-        "text": "Guarantee contract fairness"
+        "text": "Act as an impartial witness who also explains the document's effects"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Deter fraud by verifying identity and witnessing signatures/oaths as authorized.",
+    "explanation": "Deter fraud by verifying identity and witnessing signatures/oaths as authorized. Notaries act only as authorized by their commissioning state.",
     "distractorExplanations": {
-      "a": "Not the best answer: Draft complex wills as attorney always.",
-      "c": "Not the best answer: Give immigration legal advice.",
-      "d": "Not the best answer: Guarantee contract fairness."
+      "a": "Choosing documents for signers is legal advice, which is unauthorized practice of law for a non-attorney notary.",
+      "c": "A notary verifies the signer's identity and signature, not the truth or legality of the document's contents.",
+      "d": "Impartial witnessing is right, but explaining a document's legal effects is unauthorized practice of law."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -40,11 +40,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only personal preference"
+        "text": "Federal notary law issued by the U.S. Secretary of State"
       },
       {
         "id": "b",
-        "text": "Only employer shortcuts"
+        "text": "Their employer's written notarization policy above state law"
       },
       {
         "id": "c",
@@ -52,15 +52,15 @@
       },
       {
         "id": "d",
-        "text": "Federal tax code"
+        "text": "The notary rules of whichever state the signer lives in"
       }
     ],
     "correctOptionId": "c",
     "explanation": "State notary law and commissioning rules.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only personal preference.",
-      "b": "Not the best answer: Only employer shortcuts.",
-      "d": "Not the best answer: Federal tax code only."
+      "a": "There is no general federal notary statute; notaries are commissioned and regulated by their state.",
+      "b": "Employer policy cannot override state notary law; the notary's duties come from the commissioning state.",
+      "d": "Notaries follow their own commissioning state's law, not the law of the signer's state of residence."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "That the document is true in all facts"
+        "text": "Signer swore under oath that the document's contents are true"
       },
       {
         "id": "b",
-        "text": "That fees were unpaid"
+        "text": "Signer's document was found legally sufficient"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "That the notary drafted the contract"
+        "text": "Signer signed in front of the notary on the date of the act"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Signer appeared, was identified, and acknowledged signing.",
     "distractorExplanations": {
-      "a": "Not the best answer: That the document is true in all facts.",
-      "b": "Not the best answer: That fees were unpaid.",
-      "d": "Not the best answer: That the notary drafted the contract."
+      "a": "Swearing to the truth of the contents describes a jurat, not an acknowledgment.",
+      "b": "Notaries do not judge legal sufficiency; an acknowledgment certifies appearance, identity and acknowledged signing.",
+      "d": "An acknowledgment does not require signing in the notary's presence; the signer acknowledges a signature already made."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -110,23 +110,23 @@
       },
       {
         "id": "b",
-        "text": "Mail-away unsigned docs"
+        "text": "Signer acknowledging an earlier signature without taking an oath"
       },
       {
         "id": "c",
-        "text": "Notary signing for the principal"
+        "text": "Notary certifying a photocopy matches the original"
       },
       {
         "id": "d",
-        "text": "Skipping ID"
+        "text": "Signer swearing to the truth and mailing the signed document later"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Signer swearing/affirming truth and signing in notary presence.",
     "distractorExplanations": {
-      "b": "Not the best answer: Mail-away unsigned docs.",
-      "c": "Not the best answer: Notary signing for the principal.",
-      "d": "Not the best answer: Skipping ID."
+      "b": "That describes an acknowledgment; a jurat requires an oath or affirmation and signing in the notary's presence.",
+      "c": "That is copy certification, a separate notarial act where authorized, not a jurat.",
+      "d": "A jurat requires the signer to sign in the notary's presence, not to sign elsewhere and mail it in."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -139,11 +139,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Refuse illegal requests"
+        "text": "Notarize for a stranger"
       },
       {
         "id": "b",
-        "text": "Require ID"
+        "text": "Notarize for a coworker or neighbor"
       },
       {
         "id": "c",
@@ -151,15 +151,15 @@
       },
       {
         "id": "d",
-        "text": "Keep a journal where required"
+        "text": "Charge a fee within the state limit"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Notarize their own signature.",
     "distractorExplanations": {
-      "a": "Not the best answer: Refuse illegal requests.",
-      "b": "Not the best answer: Require ID.",
-      "d": "Not the best answer: Keep a journal where required."
+      "a": "Notaries serve the public, including strangers, once identity is properly verified.",
+      "b": "Notarizing for a coworker or neighbor is generally allowed when the notary has no interest in the transaction.",
+      "d": "Charging fees up to the state maximum is generally permitted; overcharging is the violation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -209,23 +209,23 @@
       },
       {
         "id": "b",
-        "text": "Is optional art"
+        "text": "May be used by the employer"
       },
       {
         "id": "c",
-        "text": "Can be shared casually"
+        "text": "Follows one federal design"
       },
       {
         "id": "d",
-        "text": "Is the signer’s"
+        "text": "Belongs to the signer's file"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Must meet state requirements.",
     "distractorExplanations": {
-      "b": "Not the best answer: Is optional art.",
-      "c": "Not the best answer: Can be shared casually.",
-      "d": "Not the best answer: Is the signer’s."
+      "b": "The seal belongs to the notary and stays under the notary's exclusive control, even if the employer paid for it.",
+      "c": "There is no federal seal standard; design, ink and content requirements are set by each state.",
+      "d": "The seal is the notary's official tool, not part of the signer's record or file."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Notary always picks randomly"
+        "text": "Notary selects the act that best protects the signer's interests"
       },
       {
         "id": "c",
-        "text": "Employer always overrides law"
+        "text": "Employer selects the act to keep the office workflow consistent"
       },
       {
         "id": "d",
-        "text": "Customer never decides"
+        "text": "Notary picks a jurat whenever the signer seems unsure"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Signer/document determines; notary doesn’t give UPL advice.",
     "distractorExplanations": {
-      "b": "Not the best answer: Notary always picks randomly.",
-      "c": "Not the best answer: Employer always overrides law.",
-      "d": "Not the best answer: Customer never decides."
+      "b": "Choosing the act for a signer is legal advice (UPL); the signer or the document's drafter decides.",
+      "c": "Employer preference does not determine the notarial act; the signer or the document's instructions do.",
+      "d": "Defaulting to a jurat still has the notary choosing; an unsure signer should ask the drafter or an attorney."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Certifies truth of contents"
+        "text": "Certifies the original's contents are true"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "Replaces apostille"
+        "text": "Authenticates the document for use in a foreign country"
       },
       {
         "id": "d",
-        "text": "Is unlimited for vital records everywhere"
+        "text": "Certifies copies of birth and death certificates on request"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Certifies copy of certain documents per state law.",
     "distractorExplanations": {
-      "a": "Not the best answer: Certifies truth of contents always.",
-      "c": "Not the best answer: Replaces apostille always.",
-      "d": "Not the best answer: Is unlimited for vital records everywhere."
+      "a": "Copy certification attests that the copy matches the original, not that the original's statements are true.",
+      "c": "Foreign-use authentication is an apostille issued by a state official, not a notarial copy certification.",
+      "d": "Vital records are usually excluded; certified copies come from the issuing vital records office."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -337,11 +337,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic attorney license"
+        "text": "Penalties only if a fee was charged"
       },
       {
         "id": "b",
-        "text": "IRS refund"
+        "text": "No liability if bonded by the state"
       },
       {
         "id": "c",
@@ -349,15 +349,15 @@
       },
       {
         "id": "d",
-        "text": "CDL upgrade"
+        "text": "A warning letter with no further action"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Liability/commission problems.",
     "distractorExplanations": {
-      "a": "Not the best answer: Automatic attorney license.",
-      "b": "Not the best answer: IRS refund.",
-      "d": "Not the best answer: CDL upgrade."
+      "a": "Negligence liability and commission discipline do not depend on whether the notary charged a fee.",
+      "b": "A surety bond protects the public up to its amount; the notary can still be personally liable and disciplined.",
+      "d": "Negligence can bring civil liability and commission suspension or revocation, not just a warning letter."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Require notary to translate legally as attorney"
+        "text": "Must be translated into English by the notary first"
       },
       {
         "id": "b",
-        "text": "May need caution; follow state rules; don’t explain legal meaning if UPL"
+        "text": "May need caution; follow state rules"
       },
       {
         "id": "c",
-        "text": "Are always refused nationwide"
+        "text": "Are refused under federal notary law"
       },
       {
         "id": "d",
-        "text": "Need no ID"
+        "text": "Need a certified translator to sign as witness"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "May need caution; follow state rules; don’t explain legal meaning if UPL.",
+    "explanation": "May need caution; follow state rules; don’t explain legal meaning if UPL. Do not explain the document's legal meaning, which would be unauthorized practice of law.",
     "distractorExplanations": {
-      "a": "Not the best answer: Require notary to translate legally as attorney.",
-      "c": "Not the best answer: Are always refused nationwide.",
-      "d": "Not the best answer: Need no ID."
+      "a": "Notaries are not required to translate, and translating legal text can itself be unauthorized practice of law.",
+      "c": "There is no federal ban; state rules govern whether and how foreign-language documents are notarized.",
+      "d": "A translator witness is not a general requirement; follow the commissioning state's specific rules."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -403,7 +403,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always identical to paper everywhere"
+        "text": "Allowed anywhere once the signer consents"
       },
       {
         "id": "b",
@@ -411,19 +411,19 @@
       },
       {
         "id": "c",
-        "text": "Banned everywhere"
+        "text": "Allowed for any notary using common video-call software"
       },
       {
         "id": "d",
-        "text": "Needs no ID"
+        "text": "Allowed if the notary holds a federal e-notary permit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Only if state-authorized and technology compliant.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always identical to paper everywhere.",
-      "c": "Not the best answer: Banned everywhere.",
-      "d": "Not the best answer: Needs no ID."
+      "a": "Signer consent is not enough; the notary's own state must authorize e-notarization and approved technology.",
+      "c": "E-notarization requires state authorization and compliant technology, not just any video software.",
+      "d": "There is no federal e-notary permit; authorization comes from the notary's commissioning state."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Unlimited"
+        "text": "Set by the employer's price list"
       },
       {
         "id": "c",
-        "text": "Always free federally mandated"
+        "text": "Set by a federal fee schedule"
       },
       {
         "id": "d",
-        "text": "Paid in crypto"
+        "text": "Set freely by each notary"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Set/limited by state rules.",
     "distractorExplanations": {
-      "b": "Not the best answer: Unlimited always.",
-      "c": "Not the best answer: Always free federally mandated.",
-      "d": "Not the best answer: Paid in crypto only."
+      "b": "Employers cannot set fees above the state maximum; fee limits come from state law.",
+      "c": "There is no federal notary fee schedule; each state sets its own maximum fees.",
+      "d": "Most states cap notary fees; notaries cannot charge any amount they choose."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Continue 1 year grace"
+        "text": "Continue during a 30-day grace period"
       },
       {
         "id": "b",
-        "text": "Use old seal"
+        "text": "Continue using the old seal until it wears out"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "Switch to another state seal casually"
+        "text": "Continue if the renewal application is pending"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Stop notarizing until renewed.",
     "distractorExplanations": {
-      "a": "Not the best answer: Continue 1 year grace always.",
-      "b": "Not the best answer: Use old seal forever.",
-      "d": "Not the best answer: Switch to another state seal casually."
+      "a": "There is generally no grace period; notarizing after expiration is an unauthorized act.",
+      "b": "The seal is tied to the commission term; once the commission expires, it may not be used.",
+      "d": "A pending application does not authorize acts; wait until the new commission takes effect."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A library card alone"
+        "text": "A signed credit or debit card"
       },
       {
         "id": "b",
-        "text": "Verbal name"
+        "text": "A student ID with a photo and signature"
       },
       {
         "id": "c",
-        "text": "Social media profile"
+        "text": "A utility bill showing the signer's name"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "Government photo ID per state list.",
     "distractorExplanations": {
-      "a": "Not the best answer: A library card alone always.",
-      "b": "Not the best answer: Verbal name only.",
-      "c": "Not the best answer: Social media profile."
+      "a": "Credit cards lack the government-issued photo and physical description most states require.",
+      "b": "Most state lists require government-issued ID; private student IDs usually do not qualify.",
+      "c": "A utility bill shows a name and address, not photo identity; it is not satisfactory evidence of identity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always OK"
+        "text": "Acceptable if the photo still resembles the signer"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Always required expired"
+        "text": "OK if a second expired ID matches"
       },
       {
         "id": "d",
-        "text": "Better than current"
+        "text": "Acceptable once the signer also signs the journal"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Follow state rule—often unacceptable.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always OK.",
-      "c": "Not the best answer: Always required expired.",
-      "d": "Not the best answer: Better than current."
+      "a": "Resemblance does not cure expiration; whether expired ID is accepted depends on the state's rule.",
+      "c": "Two expired IDs do not equal one current ID; use state-approved alternatives such as credible witnesses.",
+      "d": "A journal signature does not prove identity; acceptability of expired ID is set by state rule."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -568,15 +568,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the fee"
+        "text": "Date, signer's name, and fee, with ID details left optional"
       },
       {
         "id": "b",
-        "text": "Only weather"
+        "text": "Signer's name, document contents summary, and legal advice given"
       },
       {
         "id": "c",
-        "text": "Only employer name"
+        "text": "Date, document type, and signer's Social Security number"
       },
       {
         "id": "d",
@@ -586,9 +586,9 @@
     "correctOptionId": "d",
     "explanation": "Date, type of act, document, ID, fees, signature/thumb as required.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only the fee.",
-      "b": "Not the best answer: Only weather.",
-      "c": "Not the best answer: Only employer name."
+      "a": "The method and details of identification are core journal entries wherever journals are required.",
+      "b": "Journals record the act and ID, not a summary of contents or legal advice, which notaries may not give.",
+      "c": "SSNs are not standard journal entries and create privacy risk; the ID type and number are recorded instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Public scrapbook"
+        "text": "Property of the employer who paid"
       },
       {
         "id": "b",
-        "text": "Optional sticky notes"
+        "text": "A public file anyone can browse"
       },
       {
         "id": "c",
-        "text": "Employer’s to alter freely illegally"
+        "text": "A personal diary of daily tasks"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "Notary’s official record—protect it.",
     "distractorExplanations": {
-      "a": "Not the best answer: Public scrapbook.",
-      "b": "Not the best answer: Optional sticky notes.",
-      "c": "Not the best answer: Employer’s to alter freely illegally."
+      "a": "In most states the journal belongs to the notary even if the employer paid for it.",
+      "b": "Some states allow inspection of specific entries on request, but the journal is protected, not open for browsing.",
+      "c": "The journal is an official record of notarial acts, not a personal diary of the notary's work."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "Ignore"
+        "text": "Recreate the missing entries from memory"
       },
       {
         "id": "c",
-        "text": "Invent entries later casually"
+        "text": "Report it at commission renewal"
       },
       {
         "id": "d",
-        "text": "Post online"
+        "text": "Tell only the employer's manager"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Notify authorities/state as required.",
     "distractorExplanations": {
-      "b": "Not the best answer: Ignore.",
-      "c": "Not the best answer: Invent entries later casually.",
-      "d": "Not the best answer: Post online."
+      "b": "Recreating entries falsifies the record; report the loss as state law requires.",
+      "c": "Loss or theft must be reported promptly (often within days), not saved until renewal.",
+      "d": "The employer is not the regulator; notify the commissioning authority and police as required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Appear in person (unless remote online notary rules apply)"
+        "text": "Appear in person"
       },
       {
         "id": "b",
-        "text": "Appear by rumor"
+        "text": "Appear by phone call"
       },
       {
         "id": "c",
-        "text": "Send friend unsigned"
+        "text": "Send a signed copy"
       },
       {
         "id": "d",
-        "text": "Email a scan only without RON rules"
+        "text": "Send a trusted relative"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Appear in person (unless remote online notary rules apply)",
+    "explanation": "Appear in person (unless remote online notary rules apply) Remote online notarization is the exception where state rules allow it.",
     "distractorExplanations": {
-      "b": "Not the best answer: Appear by rumor.",
-      "c": "Not the best answer: Send friend unsigned.",
-      "d": "Not the best answer: Email a scan only without RON rules."
+      "b": "A phone call is not personal appearance; authorized RON uses audio-video and identity proofing.",
+      "c": "Mailing a signed copy skips personal appearance and identity verification.",
+      "d": "A relative cannot appear in the signer's place; the signer must personally appear."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,15 +700,15 @@
     "options": [
       {
         "id": "a",
-        "text": "ID one for all"
+        "text": "ID the first signer; vouch for others"
       },
       {
         "id": "b",
-        "text": "Skip quieter ones"
+        "text": "ID each; use one journal line for all"
       },
       {
         "id": "c",
-        "text": "Use one signature block for all without rules"
+        "text": "ID each; skip the journal for spouses"
       },
       {
         "id": "d",
@@ -718,9 +718,9 @@
     "correctOptionId": "d",
     "explanation": "ID each; complete proper certificates.",
     "distractorExplanations": {
-      "a": "Not the best answer: ID one for all.",
-      "b": "Not the best answer: Skip quieter ones.",
-      "c": "Not the best answer: Use one signature block for all without rules."
+      "a": "Each signer must be identified; one person's ID does not cover the other signers.",
+      "b": "Journal rules generally require a separate entry and signature for each signer.",
+      "c": "Spouses are separate signers and each needs a journal entry where journals are required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -733,11 +733,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Be anonymous"
+        "text": "Be a party named in the document"
       },
       {
         "id": "b",
-        "text": "Be the named party beneficiary"
+        "text": "Be a relative who lives with the signer"
       },
       {
         "id": "c",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "Be under 10"
+        "text": "Be the notary's coworker on duty"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Be identified and meet state criteria.",
     "distractorExplanations": {
-      "a": "Not the best answer: Be anonymous.",
-      "b": "Not the best answer: Be the named party beneficiary always.",
-      "d": "Not the best answer: Be under 10."
+      "a": "Credible witnesses must generally have no interest in the transaction; a named party is disqualified.",
+      "b": "Relationship is not the test; the witness must meet state criteria, usually including personally knowing the signer.",
+      "d": "Convenience is not a qualification; a credible witness must know the signer and meet state rules."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -766,11 +766,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Federal always identical"
+        "text": "Required federally for every act"
       },
       {
         "id": "b",
-        "text": "Never anywhere"
+        "text": "Required for every jurat signer"
       },
       {
         "id": "c",
@@ -778,15 +778,15 @@
       },
       {
         "id": "d",
-        "text": "Only for minors"
+        "text": "Required for signers without ID"
       }
     ],
     "correctOptionId": "c",
     "explanation": "State-specific (e.g., some deeds)",
     "distractorExplanations": {
-      "a": "Not the best answer: Federal always identical.",
-      "b": "Not the best answer: Never anywhere.",
-      "d": "Not the best answer: Only for minors."
+      "a": "There is no federal thumbprint rule; a few states (e.g., California for certain deeds) require it.",
+      "b": "Thumbprints are tied to specific documents in certain states, not to jurats in general.",
+      "d": "Missing ID is handled through credible witnesses, not thumbprints; requirements are state-specific."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -799,11 +799,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Signer is polite"
+        "text": "Signer has not read the full document before signing it"
       },
       {
         "id": "b",
-        "text": "Document is long"
+        "text": "Signer brings a document that was drafted by an out-of-state lawyer"
       },
       {
         "id": "c",
@@ -811,15 +811,15 @@
       },
       {
         "id": "d",
-        "text": "Fee is low"
+        "text": "Signer is a non-customer of the notary's employer bank"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Signer cannot be identified / appears coerced / act unauthorized.",
     "distractorExplanations": {
-      "a": "Not the best answer: Signer is polite.",
-      "b": "Not the best answer: Document is long.",
-      "d": "Not the best answer: Fee is low."
+      "a": "Notaries do not require signers to read documents; refusal grounds are identity, willingness, or authority problems.",
+      "b": "Out-of-state drafting is no reason to refuse; documents for use in other states are routinely notarized.",
+      "d": "Non-customer status is not a legal ground for refusal; refusal centers on identity, willingness, and authority."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,11 +865,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Comply"
+        "text": "Comply if signed"
       },
       {
         "id": "b",
-        "text": "Pre-sign certificates"
+        "text": "Stamp, date later"
       },
       {
         "id": "c",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "Share seal"
+        "text": "Comply for staff"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Refuse—illegal.",
     "distractorExplanations": {
-      "a": "Not the best answer: Comply.",
-      "b": "Not the best answer: Pre-sign certificates.",
-      "d": "Not the best answer: Share seal."
+      "a": "A later signature does not fix a blank notarization; the signer must appear and be identified at the time.",
+      "b": "Dating a certificate later is backdating or blank certification, both forms of misconduct.",
+      "d": "Employees get no exception; notarizing blank certificates is illegal for anyone."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,11 +898,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Skip ID"
+        "text": "Hold the ID up to any video camera for viewing"
       },
       {
         "id": "b",
-        "text": "Use any Zoom without rules"
+        "text": "Use knowledge questions only, without credential checks"
       },
       {
         "id": "c",
@@ -910,15 +910,15 @@
       },
       {
         "id": "d",
-        "text": "Guess"
+        "text": "Follow RON methods even without a RON commission"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Follow approved methods if commissioned for RON.",
     "distractorExplanations": {
-      "a": "Not the best answer: Skip ID.",
-      "b": "Not the best answer: Use any Zoom without rules.",
-      "d": "Not the best answer: Guess."
+      "a": "Viewing an ID on camera alone is not enough; RON requires approved credential analysis and identity proofing.",
+      "b": "Knowledge-based questions are usually paired with credential analysis; one method alone generally fails RON rules.",
+      "d": "Notaries must be authorized or registered for RON in their state before performing remote acts."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,11 +931,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore"
+        "text": "Notarize if the last names match, ignoring first-name spelling"
       },
       {
         "id": "b",
-        "text": "Notarize anyway"
+        "text": "Notarize under the ID name and cross out the document name"
       },
       {
         "id": "c",
@@ -943,15 +943,15 @@
       },
       {
         "id": "d",
-        "text": "Cross out ID"
+        "text": "Have the signer sign both names to cover the mismatch"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Resolve carefully per law; may require corrected docs.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore always.",
-      "b": "Not the best answer: Notarize anyway always.",
-      "d": "Not the best answer: Cross out ID."
+      "a": "Name variances must satisfy state rules; matching only part of a name is not enough.",
+      "b": "Notaries may not alter the document; corrected documents or state-permitted variance rules apply.",
+      "d": "Signing two names does not resolve identity; follow state name-variance rules or obtain corrected documents."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -968,23 +968,23 @@
       },
       {
         "id": "b",
-        "text": "Fill next month"
+        "text": "Complete the journal at day's end"
       },
       {
         "id": "c",
-        "text": "Let signer fill journal alone"
+        "text": "Let the signer fill in the journal"
       },
       {
         "id": "d",
-        "text": "Skip dates"
+        "text": "Complete it only for paid acts"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Complete journal contemporaneously.",
     "distractorExplanations": {
-      "b": "Not the best answer: Fill next month.",
-      "c": "Not the best answer: Let signer fill journal alone.",
-      "d": "Not the best answer: Skip dates."
+      "b": "End-of-day entries rely on memory; entries are made at the time of each notarization.",
+      "c": "The notary is responsible for entries; the signer typically just signs where required.",
+      "d": "Journal entries are needed for every notarial act where journals are required, not just paid ones."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -997,15 +997,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Be random"
+        "text": "Match the signer's request"
       },
       {
         "id": "b",
-        "text": "Omit venue"
+        "text": "Use the employer's template"
       },
       {
         "id": "c",
-        "text": "Omit date"
+        "text": "Follow federal standard text"
       },
       {
         "id": "d",
@@ -1015,9 +1015,9 @@
     "correctOptionId": "d",
     "explanation": "Match the act performed.",
     "distractorExplanations": {
-      "a": "Not the best answer: Be random.",
-      "b": "Not the best answer: Omit venue always.",
-      "c": "Not the best answer: Omit date always."
+      "a": "The signer may choose the act, but the wording must match the act actually performed.",
+      "b": "Templates must still carry state-required wording for the act actually performed.",
+      "c": "There is no federal certificate form; wording follows state law for the specific act."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Invent facts without signer"
+        "text": "Stamp the page and sign without certificate wording"
       },
       {
         "id": "b",
-        "text": "Skip"
+        "text": "Choose and attach the act you think the signer needs"
       },
       {
         "id": "c",
-        "text": "Have signer write “notarized”"
+        "text": "Write a short note that the document was notarized"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "Attach/complete a proper loose certificate if allowed.",
     "distractorExplanations": {
-      "a": "Not the best answer: Invent facts without signer.",
-      "b": "Not the best answer: Skip.",
-      "c": "Not the best answer: Have signer write “notarized”."
+      "a": "A seal and signature without certificate wording is not a complete notarial certificate.",
+      "b": "Choosing the act for the signer is legal advice; the signer must say which certificate is needed.",
+      "c": "Informal notes are not valid certificates; state-compliant certificate wording is required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Use white-out freely on seals"
+        "text": "Use correction fluid neatly and re-stamp the seal"
       },
       {
         "id": "b",
-        "text": "Backdate"
+        "text": "Change the date to match when the signer wanted it"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Let signer alter after seal unsupervised"
+        "text": "Let the signer fix errors after the seal is applied"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Follow lawful correction practices; never falsify.",
     "distractorExplanations": {
-      "a": "Not the best answer: Use white-out freely on seals.",
-      "b": "Not the best answer: Backdate.",
-      "d": "Not the best answer: Let signer alter after seal unsupervised."
+      "a": "Correction fluid on certificates is generally prohibited; corrections follow state-approved practices.",
+      "b": "Changing the date to anything other than the actual act date is backdating, which is falsification.",
+      "d": "The notary corrects the certificate under state rules; signers may not alter it after sealing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1100,23 +1100,23 @@
       },
       {
         "id": "b",
-        "text": "Signer’s birthday"
+        "text": "The date the document was signed"
       },
       {
         "id": "c",
-        "text": "Document’s draft date"
+        "text": "The date on the document heading"
       },
       {
         "id": "d",
-        "text": "Random"
+        "text": "The date the journal was reviewed"
       }
     ],
     "correctOptionId": "a",
     "explanation": "The date the act occurred.",
     "distractorExplanations": {
-      "b": "Not the best answer: Signer’s birthday.",
-      "c": "Not the best answer: Document’s draft date always.",
-      "d": "Not the best answer: Random."
+      "b": "For acknowledgments the signature may predate the act; the certificate date is the notarization date.",
+      "c": "The document's own date may differ; the certificate records when the notarial act occurred.",
+      "d": "Journal review dates are irrelevant; the certificate states the actual date of the notarial act."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1133,11 +1133,11 @@
       },
       {
         "id": "b",
-        "text": "Smeared OK"
+        "text": "Placed over signatures"
       },
       {
         "id": "c",
-        "text": "Optional"
+        "text": "Embossed only, no ink"
       },
       {
         "id": "d",
@@ -1147,8 +1147,8 @@
     "correctOptionId": "a",
     "explanation": "Clear and legible.",
     "distractorExplanations": {
-      "b": "Not the best answer: Smeared OK.",
-      "c": "Not the best answer: Optional.",
+      "b": "Seals should not cover signatures or text, which can make the document unreadable.",
+      "c": "Many states require an inked seal that photocopies clearly; embossing alone often does not comply.",
       "d": "Not the best answer: On a separate blank page only always."
     },
     "difficulty": "medium",
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Notary picks whichever is shorter"
+        "text": "Depends on the notary's preference"
       },
       {
         "id": "b",
-        "text": "Always jurat"
+        "text": "Jurat whenever the document is a deed"
       },
       {
         "id": "c",
-        "text": "Depends on document/instructions—notary doesn’t choose to change meaning casually"
+        "text": "Depends on document/instructions"
       },
       {
         "id": "d",
-        "text": "Always acknowledgment"
+        "text": "Acknowledgment for every signer"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Depends on document/instructions—notary doesn’t choose to change meaning casually.",
+    "explanation": "Depends on document/instructions—notary doesn’t choose to change meaning casually. The notary does not choose the act or change the document's meaning.",
     "distractorExplanations": {
-      "a": "Not the best answer: Notary picks whichever is shorter.",
-      "b": "Not the best answer: Always jurat.",
-      "d": "Not the best answer: Always acknowledgment."
+      "a": "The notary may not choose the act; doing so would be unauthorized legal advice.",
+      "b": "Deeds usually call for acknowledgments, not jurats; the document or signer determines the act.",
+      "d": "There is no default act; the document's wording or the signer's instructions determine it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1232,23 +1232,23 @@
       },
       {
         "id": "b",
-        "text": "Identical"
+        "text": "Same role, same legal effect"
       },
       {
         "id": "c",
-        "text": "Notary is always a witness"
+        "text": "Notary also signs as a witness"
       },
       {
         "id": "d",
-        "text": "Witness replaces notary"
+        "text": "Two witnesses replace a notary"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Different roles—don’t confuse.",
     "distractorExplanations": {
-      "b": "Not the best answer: Identical.",
-      "c": "Not the best answer: Notary is always a witness only.",
-      "d": "Not the best answer: Witness replaces notary."
+      "b": "A subscribing witness and a notary perform distinct roles with different legal effects.",
+      "c": "A notary does not automatically act as a subscribing witness; that is a separate role with its own rules.",
+      "d": "Witness requirements and notarization are separate; witnesses do not substitute for a required notarization."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The notary seal name"
+        "text": "A notarial act for use in another U.S. state"
       },
       {
         "id": "b",
-        "text": "Authentication for international use—usually not the notary’s act itself"
+        "text": "Authentication for international use"
       },
       {
         "id": "c",
-        "text": "A jurat synonym"
+        "text": "A certificate the notary attaches for foreign use"
       },
       {
         "id": "d",
-        "text": "A fee waiver"
+        "text": "A translation certificate for foreign documents"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Authentication for international use—usually not the notary’s act itself.",
+    "explanation": "Authentication for international use—usually not the notary’s act itself. It is usually issued by a state official, not the notary's own act.",
     "distractorExplanations": {
-      "a": "Not the best answer: The notary seal name.",
-      "c": "Not the best answer: A jurat synonym.",
-      "d": "Not the best answer: A fee waiver."
+      "a": "Interstate documents generally need no apostille; apostilles authenticate documents for Hague Convention countries.",
+      "c": "The notary does not issue apostilles; the Secretary of State (or U.S. Department of State) does.",
+      "d": "An apostille authenticates a public official's signature or seal; it is not a translation certificate."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always OK for jurat"
+        "text": "May complete a jurat if the signer re-swears"
       },
       {
         "id": "b",
-        "text": "Require no ID"
+        "text": "Can complete an acknowledgment without appearance"
       },
       {
         "id": "c",
-        "text": "Are preferred"
+        "text": "Need a witness in place of the jurat oath"
       },
       {
         "id": "d",
-        "text": "Generally cannot complete jurat; follow acknowledgment rules carefully"
+        "text": "Generally cannot complete jurat"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Generally cannot complete jurat; follow acknowledgment rules carefully.",
+    "explanation": "Generally cannot complete jurat; follow acknowledgment rules carefully. Follow acknowledgment rules carefully for documents already signed.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always OK for jurat.",
-      "b": "Not the best answer: Require no ID.",
-      "c": "Not the best answer: Are preferred."
+      "a": "A jurat requires signing in the notary's presence; re-swearing does not cure an out-of-presence signature.",
+      "b": "Acknowledgments allow prior signing but still require the signer to appear before the notary.",
+      "c": "Witnesses do not replace the oath or the in-presence signing that a jurat requires."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Any JPEG"
+        "text": "Can be any scanned seal image"
       },
       {
         "id": "c",
-        "text": "Shared password OK"
+        "text": "Can be shared with the employer"
       },
       {
         "id": "d",
-        "text": "Public domain"
+        "text": "Follow one federal e-seal format"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Must meet state e-notary standards.",
     "distractorExplanations": {
-      "b": "Not the best answer: Any JPEG.",
-      "c": "Not the best answer: Shared password OK.",
-      "d": "Not the best answer: Public domain."
+      "b": "Scanned images without security controls fail state e-notary standards for tamper-evidence.",
+      "c": "Electronic seals and signatures must stay under the notary's sole control.",
+      "d": "There is no federal e-seal format; electronic seal standards come from the commissioning state."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Loose in envelope unmarked"
+        "text": "Stapled to a separate copy of the document"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Mailed separately without link"
+        "text": "Kept in the notary's journal for safety"
       },
       {
         "id": "d",
-        "text": "Not allowed to describe document"
+        "text": "Left for the recipient to attach"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Securely associated with the document.",
     "distractorExplanations": {
-      "a": "Not the best answer: Loose in envelope unmarked.",
-      "c": "Not the best answer: Mailed separately without link.",
-      "d": "Not the best answer: Not allowed to describe document."
+      "a": "The loose certificate is attached to the original signed document, not to a separate copy.",
+      "c": "The certificate must accompany the document; the journal records the act, not loose certificates.",
+      "d": "Blank or unattached certificates invite fraud; the notary completes and attaches them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,7 +1393,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Force"
+        "text": "Complete it if they sign"
       },
       {
         "id": "b",
@@ -1401,19 +1401,19 @@
       },
       {
         "id": "c",
-        "text": "Skip oath but seal anyway"
+        "text": "Seal it and note refusal"
       },
       {
         "id": "d",
-        "text": "Change to acknowledgment without authority carelessly"
+        "text": "Switch to acknowledgment"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Do not complete jurat.",
     "distractorExplanations": {
-      "a": "Not the best answer: Force.",
-      "c": "Not the best answer: Skip oath but seal anyway.",
-      "d": "Not the best answer: Change to acknowledgment without authority carelessly."
+      "a": "A signature without an oath or affirmation does not satisfy a jurat.",
+      "c": "Noting the refusal does not make the jurat valid; it cannot be completed without the oath.",
+      "d": "The notary may not swap the act on their own; the signer or document determines which act applies."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore capacity"
+        "text": "Means the notary certifies the agent's authority"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "Notary drafts POA"
+        "text": "Requires the notary to draft the POA document"
       },
       {
         "id": "d",
-        "text": "No ID needed"
+        "text": "Allows the agent to sign without showing ID"
       }
     ],
     "correctOptionId": "b",
     "explanation": "May require extra care/ID of capacity docs per rules.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore capacity.",
-      "c": "Not the best answer: Notary drafts POA.",
-      "d": "Not the best answer: No ID needed."
+      "a": "Most notaries do not certify representative capacity; they identify the signer and follow state rules.",
+      "c": "Drafting a power of attorney is legal work; the notary only notarizes the agent's signature.",
+      "d": "The agent must still be identified like any signer; representative capacity does not waive ID."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1459,7 +1459,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A shortcut"
+        "text": "A civil issue only"
       },
       {
         "id": "b",
@@ -1467,19 +1467,19 @@
       },
       {
         "id": "c",
-        "text": "Encouraged"
+        "text": "A minor rule breach"
       },
       {
         "id": "d",
-        "text": "Unregulated"
+        "text": "Legal if signer OKs"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A serious offense.",
     "distractorExplanations": {
-      "a": "Not the best answer: A shortcut.",
-      "c": "Not the best answer: Encouraged.",
-      "d": "Not the best answer: Unregulated."
+      "a": "Fraudulent certificates can bring criminal charges, not just civil liability.",
+      "c": "False certificates are typically crimes and grounds for revocation, not minor rule breaches.",
+      "d": "Signer consent does not legalize a fraudulent certificate; it is still a false official statement."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "They are commissioned"
+        "text": "The signer is a long-time customer of the notary's employer"
       },
       {
         "id": "b",
-        "text": "They are a party to the transaction or have disqualifying interest (state rules)"
+        "text": "They are a party to the transaction or have disqualifying interest"
       },
       {
         "id": "c",
-        "text": "They have a seal"
+        "text": "They notarized a different document for the signer last week"
       },
       {
         "id": "d",
-        "text": "They charged a fee"
+        "text": "The document will be recorded in a different county"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "They are a party to the transaction or have disqualifying interest (state rules)",
+    "explanation": "They are a party to the transaction or have disqualifying interest (state rules) Disqualification rules vary by state.",
     "distractorExplanations": {
-      "a": "Not the best answer: They are commissioned.",
-      "c": "Not the best answer: They have a seal.",
-      "d": "Not the best answer: They charged a fee."
+      "a": "A customer relationship is not a disqualifying interest; a financial or beneficial interest is.",
+      "c": "Prior notarizations for the same person create no conflict of interest.",
+      "d": "Where a document is recorded does not affect the notary's authority to notarize it within the state."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Helpful"
+        "text": "Allowed if minor"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Required"
+        "text": "OK if requested"
       },
       {
         "id": "d",
-        "text": "Standard"
+        "text": "A clerical issue"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Misconduct.",
     "distractorExplanations": {
-      "a": "Not the best answer: Helpful.",
-      "c": "Not the best answer: Required.",
-      "d": "Not the best answer: Standard."
+      "a": "Backdating is falsification of an official certificate no matter how few days are involved.",
+      "c": "A signer's request does not authorize a false date on a notarial certificate.",
+      "d": "Backdating is a false statement on an official certificate, not a clerical issue."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1591,11 +1591,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Required duty"
+        "text": "Allowed for notarios publicos"
       },
       {
         "id": "b",
-        "text": "Optional service"
+        "text": "Allowed if the notary only fills forms"
       },
       {
         "id": "c",
@@ -1603,15 +1603,15 @@
       },
       {
         "id": "d",
-        "text": "Federal notary power"
+        "text": "Allowed with a bilingual notary seal"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Unauthorized practice / unlawful.",
     "distractorExplanations": {
-      "a": "Not the best answer: Required duty.",
-      "b": "Not the best answer: Optional service.",
-      "d": "Not the best answer: Federal notary power."
+      "a": "U.S. notaries are not Latin American 'notarios'; that title confusion is exactly what UPL laws target.",
+      "b": "Filling out immigration forms for others is regulated immigration consulting, not a notary power.",
+      "d": "Language ability or a seal does not authorize immigration advice; it remains unauthorized practice."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always OK"
+        "text": "Allowed if the signer phones in to confirm identity"
       },
       {
         "id": "b",
-        "text": "Preferred"
+        "text": "Allowed if the signature looks genuine"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Standard mail practice"
+        "text": "Allowed if a relative brings the ID"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Generally prohibited (except authorized RON)",
     "distractorExplanations": {
-      "a": "Not the best answer: Always OK.",
-      "b": "Not the best answer: Preferred.",
-      "d": "Not the best answer: Standard mail practice."
+      "a": "Phone confirmation is not personal appearance; authorized RON is the exception to physical presence.",
+      "b": "Signature appearance cannot replace personal appearance and identity verification.",
+      "d": "A relative presenting ID does not make the signer present; the signer must appear."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,7 +1855,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always required day-of"
+        "text": "Allowed once the commission ends"
       },
       {
         "id": "b",
@@ -1863,19 +1863,19 @@
       },
       {
         "id": "c",
-        "text": "Optional"
+        "text": "Allowed after one calendar year"
       },
       {
         "id": "d",
-        "text": "Best for privacy always without rules"
+        "text": "Protects signer privacy best"
       }
     ],
     "correctOptionId": "b",
     "explanation": "May violate retention rules.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always required day-of.",
-      "c": "Not the best answer: Optional.",
-      "d": "Not the best answer: Best for privacy always without rules."
+      "a": "Many states require retention or surrender of journals after the commission ends, not destruction.",
+      "c": "Retention periods are set by state law and often run many years, not one year.",
+      "d": "Privacy is protected by securing the journal, not by destroying it before required retention ends."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore"
+        "text": "Keep notarizing with a backup stamp"
       },
       {
         "id": "b",
@@ -1929,19 +1929,19 @@
       },
       {
         "id": "c",
-        "text": "Let anyone use spare"
+        "text": "Report it only at commission renewal"
       },
       {
         "id": "d",
-        "text": "Post online for help finding"
+        "text": "Order a new seal without notifying the state"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Notify state as required; obtain replacement.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore.",
-      "c": "Not the best answer: Let anyone use spare.",
-      "d": "Not the best answer: Post online for help finding."
+      "a": "A lost seal must be reported first; using a duplicate without notice invites fraud.",
+      "c": "Lost seals must be reported promptly as state rules require, not saved until renewal.",
+      "d": "Replacement alone leaves the lost seal open to misuse; the state (and often police) must be notified."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1954,11 +1954,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No records"
+        "text": "Detailed personal memory of each signer and document"
       },
       {
         "id": "b",
-        "text": "Vague memory"
+        "text": "A large surety bond and liability waiver"
       },
       {
         "id": "c",
@@ -1966,15 +1966,15 @@
       },
       {
         "id": "d",
-        "text": "Shared seal"
+        "text": "Signer-signed statements after each act"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Proper ID, complete journal, correct certificates.",
     "distractorExplanations": {
-      "a": "Not the best answer: No records.",
-      "b": "Not the best answer: Vague memory.",
-      "d": "Not the best answer: Shared seal."
+      "a": "Memory fades; contemporaneous journal records and correct certificates are the real defense.",
+      "b": "A bond protects the public and a waiver does not excuse misconduct; documented procedure is the defense.",
+      "d": "Signer statements do not replace proper ID checks, journal entries and correct certificates."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

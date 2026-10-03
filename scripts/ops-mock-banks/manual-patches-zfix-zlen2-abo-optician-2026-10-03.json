@@ -1,0 +1,668 @@
+{
+ "abo-optician-readiness-check": {
+  "abo-optician-readiness-check-optics-001": {
+   "options": {
+    "a": "How much a material spreads light into colors",
+    "b": "How much a material slows/bends light",
+    "c": "How much UV light a material absorbs",
+    "d": "How hard a material's surface is to scratch"
+   },
+   "distractorExplanations": {
+    "a": "Spreading light into colors is dispersion, which the Abbe value describes; index describes how much light slows and bends.",
+    "c": "UV absorption depends on the material's UV cutoff and any absorber, not on its index of refraction.",
+    "d": "Scratch resistance is a hardness/hard-coat property; index of refraction concerns the speed of light in the material."
+   }
+  },
+  "abo-optician-readiness-check-optics-003": {
+   "options": {
+    "a": "Speeds up and bends away from the normal",
+    "b": "Keeps its speed but changes wavelength",
+    "c": "Slows and may refract",
+    "d": "Changes color as its frequency drops"
+   },
+   "distractorExplanations": {
+    "a": "Glass has a higher index than air, so light slows and bends toward the normal; it does not speed up and bend away.",
+    "b": "Speed and wavelength drop together in glass (v = f x wavelength); frequency is what stays constant at the boundary.",
+    "d": "Frequency, and so perceived color, stays the same when light enters a new medium; speed and wavelength change instead."
+   }
+  },
+  "abo-optician-readiness-check-optics-004": {
+   "options": {
+    "a": "Perceived color of light",
+    "b": "Brightness (intensity) of the light",
+    "c": "Lens power in diopters",
+    "d": "Degree of polarization of light"
+   },
+   "distractorExplanations": {
+    "b": "Brightness relates to the amplitude/intensity of the light wave, not its wavelength, which sets the perceived hue.",
+    "c": "Lens power depends on surface curves and index; wavelength is a property of the light itself, not of the lens.",
+    "d": "Polarization describes the plane in which the light wave vibrates, which is independent of its wavelength."
+   }
+  },
+  "abo-optician-readiness-check-optics-005": {
+   "options": {
+    "a": "Power in diopters decreases",
+    "b": "Lens diameter increases",
+    "c": "Power in diopters increases",
+    "d": "Abbe value increases"
+   },
+   "distractorExplanations": {
+    "a": "Focal length is the reciprocal of power (f = 1/D), so lower power gives a longer focal length, not a shorter one.",
+    "b": "Lens diameter affects field of view and edge thickness; it does not change the focal length of the lens.",
+    "d": "Abbe value describes dispersion (chromatic aberration); it does not determine focal length or lens power."
+   }
+  },
+  "abo-optician-readiness-check-optics-006": {
+   "options": {
+    "a": "The optical center",
+    "b": "The cylinder axis",
+    "c": "The 90° meridian",
+    "d": "The base"
+   },
+   "distractorExplanations": {
+    "a": "The optical center is the point of zero prism; prismatic displacement is described by base and apex, not the OC.",
+    "b": "The cylinder axis is the meridian of no cylinder power; it does not set the direction of prismatic image shift.",
+    "c": "The 90-degree meridian is a vertical reference line; prism direction is named by base (up, down, in, out), not a meridian."
+   }
+  },
+  "abo-optician-readiness-check-optics-007": {
+   "options": {
+    "a": "Convergence/divergence of a pencil of rays",
+    "b": "The bending of light at a single surface",
+    "c": "The splitting of white light into colors",
+    "d": "The reflection of rays off the front lens surface"
+   },
+   "distractorExplanations": {
+    "b": "Bending at a surface is refraction; vergence is the degree to which a pencil of rays converges or diverges.",
+    "c": "Splitting white light into colors is dispersion, described by the Abbe value, not vergence.",
+    "d": "Reflection off a lens surface is what AR coating manages; vergence describes rays spreading apart or converging."
+   }
+  },
+  "abo-optician-readiness-check-optics-009": {
+   "options": {
+    "a": "Seen only by looking back through the lens",
+    "b": "Formed by a plane mirror",
+    "c": "Projected/focused onto a screen",
+    "d": "Formed by a minus lens from a real object"
+   },
+   "distractorExplanations": {
+    "a": "Images seen by looking back through the optics are virtual; real images form where rays actually converge.",
+    "b": "A plane mirror forms a virtual, upright image behind the mirror, which cannot be caught on a screen.",
+    "d": "A minus lens diverges light from a real object, so it forms a virtual image, not a real one."
+   }
+  },
+  "abo-optician-readiness-check-optics-010": {
+   "options": {
+    "a": "Off-axis blur from oblique astigmatism",
+    "b": "Dispersion by wavelength",
+    "c": "Light loss from surface reflections",
+    "d": "Image size change from lens power"
+   },
+   "distractorExplanations": {
+    "a": "Oblique astigmatism is a monochromatic aberration from viewing off-axis, not a wavelength-dependent effect.",
+    "c": "Reflection losses are handled by AR coating; chromatic aberration comes from wavelengths bending by different amounts.",
+    "d": "Image size change is spectacle magnification, driven by power and vertex distance, not by dispersion of wavelengths."
+   }
+  },
+  "abo-optician-readiness-check-optics-011": {
+   "options": {
+    "a": "Dispersion characteristics of a material",
+    "b": "The refractive index of a lens material",
+    "c": "The UV cutoff wavelength of a material",
+    "d": "The impact resistance of a lens material"
+   },
+   "distractorExplanations": {
+    "b": "Refractive index describes how much a material bends light; the Abbe value describes how much it disperses colors.",
+    "c": "UV cutoff is a separate material property; the Abbe value measures dispersion, with lower numbers meaning more fringing.",
+    "d": "Impact resistance is tested with drop-ball standards; the Abbe value relates to chromatic dispersion, not toughness."
+   }
+  },
+  "abo-optician-readiness-check-optics-012": {
+   "options": {
+    "a": "Virtual upright images",
+    "b": "Real inverted images",
+    "c": "Virtual inverted images",
+    "d": "Real upright images"
+   },
+   "distractorExplanations": {
+    "b": "Real inverted images come from concave mirrors with the object beyond F; a plane mirror forms virtual images.",
+    "c": "Plane-mirror images are upright, though laterally reversed; they are not inverted top to bottom.",
+    "d": "A plane-mirror image lies behind the mirror and cannot be projected, so it is virtual, not real."
+   }
+  },
+  "abo-optician-readiness-check-optics-013": {
+   "options": {
+    "a": "Forms a virtual upright image",
+    "b": "Forms a real upright image",
+    "c": "Can form a real inverted image",
+    "d": "Forms a real, inverted, enlarged image"
+   },
+   "distractorExplanations": {
+    "a": "A virtual upright image forms when the object is inside F of a plus lens, not when it is beyond 2F.",
+    "b": "Real images from a single plus lens are inverted; an upright image from a plus lens is a virtual one.",
+    "d": "An object beyond 2F gives a diminished real image; an enlarged real image needs the object between F and 2F."
+   }
+  },
+  "abo-optician-readiness-check-optics-014": {
+   "options": {
+    "a": "Thicker at center than edges",
+    "b": "Thicker at edges than center",
+    "c": "Equal in thickness at center and edge",
+    "d": "Thicker at the top edge than the bottom"
+   },
+   "distractorExplanations": {
+    "c": "Equal center and edge thickness describes a plano lens with no power, not a minus lens.",
+    "d": "A thicker top edge describes base-up prism, not the center-to-edge thickness profile of a minus lens.",
+    "a": "Not the best answer: Thicker at center than edges."
+   }
+  },
+  "abo-optician-readiness-check-optics-015": {
+   "options": {
+    "a": "Thicker at edges than center",
+    "b": "Thicker at the nasal edge than temporal",
+    "c": "Equal in thickness across the lens",
+    "d": "Thicker at center than edges"
+   },
+   "distractorExplanations": {
+    "a": "A thin center with thick edges describes a minus lens; plus lenses are thickest at the center.",
+    "b": "A thicker nasal edge describes base-in prism, not the center-to-edge thickness profile of a plus lens.",
+    "c": "Uniform thickness describes a plano lens with no power; plus power requires a thicker center."
+   }
+  },
+  "abo-optician-readiness-check-lenses-001": {
+   "options": {
+    "a": "Polycarbonate lens material",
+    "b": "Plastic lens material",
+    "c": "High-index glass lens material",
+    "d": "Thermoplastic frame material"
+   },
+   "distractorExplanations": {
+    "a": "CR-39 is a thermoset allyl resin; polycarbonate is a different thermoplastic with higher impact resistance and index.",
+    "c": "CR-39 is a plastic with an index of about 1.498; it is neither a glass nor a high-index material.",
+    "d": "CR-39 is a lens material; frame thermoplastics include materials such as nylon and TR-90, not CR-39."
+   }
+  },
+  "abo-optician-readiness-check-lenses-002": {
+   "options": {
+    "a": "High Abbe value and minimal color fringing",
+    "b": "Scratch resistance without needing a hard coat",
+    "c": "Impact resistance and thinner profile vs some plastics",
+    "d": "Lighter weight and a higher Abbe value than CR-39 lenses"
+   },
+   "distractorExplanations": {
+    "a": "Polycarbonate has a low Abbe value (about 30), so it shows more chromatic aberration, not less.",
+    "b": "Polycarbonate is a soft material that scratches easily, so it is supplied with a factory hard coat.",
+    "d": "Polycarbonate is lighter than CR-39, but its Abbe value (about 30) is far lower than CR-39's (about 58)."
+   }
+  },
+  "abo-optician-readiness-check-lenses-003": {
+   "options": {
+    "a": "Raise the Abbe value for clearer peripheral vision",
+    "b": "Reduce thickness/weight for stronger powers",
+    "c": "Reduce reflections without needing AR coating",
+    "d": "Lower the lens power needed for the same Rx"
+   },
+   "distractorExplanations": {
+    "a": "Higher-index materials usually have lower Abbe values, so they increase color fringing rather than reduce it.",
+    "c": "Higher index increases surface reflections, so high-index lenses need AR coating more, not less.",
+    "d": "The prescribed power stays the same; high index reaches that power with flatter, thinner surfaces."
+   }
+  },
+  "abo-optician-readiness-check-lenses-004": {
+   "options": {
+    "a": "UV transmission through the lens",
+    "b": "Surface reflections",
+    "c": "Surface scratches",
+    "d": "Light transmission"
+   },
+   "distractorExplanations": {
+    "a": "AR coatings cut reflected light; UV transmission is blocked by the lens material or a UV absorber.",
+    "c": "Scratch resistance comes from a hard coat; AR layers reduce reflections and can even make scratches more visible.",
+    "d": "AR coating increases light transmission by cutting reflections; it does not reduce the light passing through."
+   }
+  },
+  "abo-optician-readiness-check-lenses-005": {
+   "options": {
+    "a": "Darken most behind car windshields",
+    "b": "Darken more in hot weather",
+    "c": "Darken in response to bright indoor light",
+    "d": "Darken with UV exposure"
+   },
+   "distractorExplanations": {
+    "a": "Most windshields block UV, so standard photochromic lenses darken very little inside a car.",
+    "b": "Photochromics darken less in heat, because warmth speeds the reaction that fades them back to clear.",
+    "c": "Indoor light contains little UV, so standard photochromic lenses stay mostly clear indoors."
+   }
+  },
+  "abo-optician-readiness-check-lenses-006": {
+   "options": {
+    "a": "Blue light from digital screens",
+    "b": "Glare from horizontal reflections",
+    "c": "Glare from vertically polarized light",
+    "d": "Image blur from high astigmatism"
+   },
+   "distractorExplanations": {
+    "a": "Blue-light filtering is a separate coating or absorber; polarizing film blocks horizontally polarized glare.",
+    "c": "Polarized lenses have a vertical transmission axis, so vertically polarized light passes; horizontal glare is blocked.",
+    "d": "Polarization does not correct optical blur; astigmatism needs cylinder power in the prescription."
+   }
+  },
+  "abo-optician-readiness-check-lenses-007": {
+   "options": {
+    "a": "Improve cosmetics and optics for certain powers",
+    "b": "Add base-in prism to ease convergence at near",
+    "c": "Correct astigmatism without cylinder power",
+    "d": "Raise the Abbe value of the lens material"
+   },
+   "distractorExplanations": {
+    "b": "Prism is ordered in the Rx; aspheric surfaces flatten the lens and reduce peripheral aberrations instead.",
+    "c": "Astigmatism still needs cylinder power; aspheric curves reduce off-axis aberrations, not ocular astigmatism.",
+    "d": "Abbe value is a fixed property of the material; aspheric surfaces change lens shape, not material dispersion."
+   }
+  },
+  "abo-optician-readiness-check-lenses-009": {
+   "options": {
+    "a": "A lined segment with intermediate power",
+    "b": "A corridor of increasing minus power",
+    "c": "A single power across the whole lens",
+    "d": "A corridor of increasing plus power"
+   },
+   "distractorExplanations": {
+    "a": "A visible line with an intermediate zone describes a trifocal; progressive lenses blend power with no lines.",
+    "b": "Power in a progressive corridor increases in plus toward the near zone, not in minus.",
+    "c": "One power across the lens describes a single-vision lens; a progressive changes power along the corridor."
+   }
+  },
+  "abo-optician-readiness-check-lenses-010": {
+   "options": {
+    "a": "Manage horizontal prism imbalance at distance",
+    "b": "Manage vertical imbalance in anisometropia",
+    "c": "Thin the edges of high minus lenses",
+    "d": "Reduce image size difference in aniseikonia"
+   },
+   "distractorExplanations": {
+    "a": "Slab-off (bicentric grinding) adds vertical base-up prism at near; it does not address horizontal imbalance.",
+    "c": "Edge thinning in high minus is done with lenticular designs or high index, not with slab-off.",
+    "d": "Image size differences call for iseikonic design (base curve, thickness); slab-off corrects vertical prism at near."
+   }
+  },
+  "abo-optician-readiness-check-lenses-011": {
+   "options": {
+    "a": "Surface curves/power relationships",
+    "b": "Back vertex power of the finished lens",
+    "c": "Center thickness of the lens",
+    "d": "Prism and its base direction"
+   },
+   "distractorExplanations": {
+    "b": "Back vertex power is read on a lensometer; a lens clock measures surface curvature (sag) only.",
+    "c": "Center thickness is measured with thickness calipers; a lens clock reads surface curvature.",
+    "d": "Prism and base direction are found with a lensometer, not with a lens clock."
+   }
+  },
+  "abo-optician-readiness-check-lenses-013": {
+   "options": {
+    "a": "Raise the impact resistance of the lens",
+    "b": "Reduce surface reflections",
+    "c": "Improve abrasion resistance",
+    "d": "Block UV transmission"
+   },
+   "distractorExplanations": {
+    "a": "Hard coats resist surface abrasion; impact resistance depends on lens material and thickness, not the coating.",
+    "b": "Reducing reflections is the job of AR coating, not of the scratch-resistant hard coat.",
+    "d": "UV is blocked by the lens material or a UV absorber; hard coats target surface abrasion."
+   }
+  },
+  "abo-optician-readiness-check-lenses-014": {
+   "options": {
+    "a": "Material/coatings designed for UV attenuation",
+    "b": "The darkness of the tint applied to the lens",
+    "c": "Whether a polarizing film is in the lens",
+    "d": "The color of the AR coating's residual reflex"
+   },
+   "distractorExplanations": {
+    "b": "A dark tint without a UV absorber can dilate pupils and admit more UV; tint darkness is not UV protection.",
+    "c": "Polarizing film cuts horizontal glare; UV blocking comes from the lens material or a UV absorber.",
+    "d": "The residual AR reflex color is cosmetic and says nothing about how much UV the lens attenuates."
+   }
+  },
+  "abo-optician-readiness-check-lenses-015": {
+   "options": {
+    "a": "Adding the cylinder to the sphere and keeping the axis",
+    "b": "Changing the cylinder sign and keeping the axis",
+    "c": "Adding 90° to the axis and keeping the sphere",
+    "d": "Correct sphere/cyl/axis conversion rules"
+   },
+   "distractorExplanations": {
+    "a": "Transposition adds the cylinder to the sphere and also changes the axis by 90 degrees; the axis cannot stay the same.",
+    "b": "Flipping the cylinder sign alone is incomplete; you must also add cylinder to sphere and change the axis by 90.",
+    "c": "Rotating the axis 90 degrees is one step; the new sphere is sphere plus cylinder, with the cylinder sign reversed."
+   }
+  },
+  "abo-optician-readiness-check-fitting-001": {
+   "options": {
+    "a": "Distance between frame box centers",
+    "b": "Distance between pupils",
+    "c": "Bridge width of the frame",
+    "d": "Distance from pupil to lens back"
+   },
+   "distractorExplanations": {
+    "a": "Distance between box centers is the frame PD (DBC), a frame measurement, not the patient's pupillary distance.",
+    "c": "Bridge width (DBL) is the distance between the lenses at the bridge, a frame measurement.",
+    "d": "The distance from the eye to the back lens surface is vertex distance, not pupillary distance."
+   }
+  },
+  "abo-optician-readiness-check-fitting-002": {
+   "options": {
+    "a": "Position the lens design relative to pupil",
+    "b": "Locate the point where add power is read",
+    "c": "Locate the prism reference point for checking",
+    "d": "Mark where distance power is verified"
+   },
+   "distractorExplanations": {
+    "b": "Add power is verified in the near circle lower on the lens, not at the fitting cross.",
+    "c": "The prism reference point sits below the fitting cross; prism is checked there, not at the cross.",
+    "d": "Distance power is verified in the distance reference circle above the fitting cross."
+   }
+  },
+  "abo-optician-readiness-check-fitting-003": {
+   "options": {
+    "a": "The patient's horizontal PD measurement",
+    "b": "Effective optics and fitting height perception",
+    "c": "The index of refraction of the chosen lens material",
+    "d": "The temple length needed behind the ear"
+   },
+   "distractorExplanations": {
+    "a": "Pantoscopic tilt is a vertical angle; it does not alter the horizontal PD measurement.",
+    "c": "Index is a fixed material property; tilt changes effective power and induced astigmatism, not index.",
+    "d": "Temple length is a separate frame measurement; tilt alters effective power and fitting height."
+   }
+  },
+  "abo-optician-readiness-check-fitting-004": {
+   "options": {
+    "a": "The patient's monocular PD values",
+    "b": "The cylinder axis of the prescription",
+    "c": "The Abbe value of the lens material",
+    "d": "Effective power especially in higher Rx"
+   },
+   "distractorExplanations": {
+    "a": "Monocular PD is anatomical; moving the lens nearer or farther changes effective power, not the PD.",
+    "b": "Vertex changes effective sphere and cylinder power, not the orientation of the cylinder axis.",
+    "c": "Abbe value is a material constant; vertex distance changes the effective power at the eye."
+   }
+  },
+  "abo-optician-readiness-check-fitting-005": {
+   "options": {
+    "a": "Smaller frames / fitting constraints",
+    "b": "Tall frames with a deep B measurement",
+    "c": "Wearers who need wide intermediate zones",
+    "d": "Patients with no near-vision add"
+   },
+   "distractorExplanations": {
+    "b": "Tall frames with a deep B can fit a standard corridor; short corridors are designed for shallow frames.",
+    "c": "Short corridors compress the intermediate zone, so heavy intermediate users suit longer corridors.",
+    "d": "Without an add there is no corridor at all; a single-vision lens is used instead of a progressive."
+   }
+  },
+  "abo-optician-readiness-check-fitting-006": {
+   "options": {
+    "a": "Unwanted prismatic effect",
+    "b": "A shift in the cylinder axis",
+    "c": "A change in the sphere power",
+    "d": "A longer vertex distance"
+   },
+   "distractorExplanations": {
+    "b": "Horizontal decentration does not rotate the cylinder axis; it induces prism per Prentice's rule.",
+    "c": "Decentration leaves the ordered sphere power unchanged; the error is induced prism (Prentice's rule).",
+    "d": "Vertex distance is the lens-to-eye distance set by frame fit, not by a PD mismatch."
+   }
+  },
+  "abo-optician-readiness-check-fitting-008": {
+   "options": {
+    "a": "Temple length behind the ear",
+    "b": "Fit, vertex, and comfort",
+    "c": "Monocular PD of the patient",
+    "d": "Lens power of the Rx"
+   },
+   "distractorExplanations": {
+    "a": "Temple length is set at the temple bend; nose pads adjust frame height, vertex and comfort.",
+    "c": "Monocular PD is an anatomical measurement; adjusting the pads does not change it.",
+    "d": "Lens power is fixed by the Rx and the finished lens; pads alter fit and position only."
+   }
+  },
+  "abo-optician-readiness-check-fitting-009": {
+   "options": {
+    "a": "The power ground into the lenses",
+    "b": "Stability and comfort on the ear",
+    "c": "The bridge width of the frame",
+    "d": "The patient's pupillary distance"
+   },
+   "distractorExplanations": {
+    "a": "Lens power is set by the surfacing lab; temple bends change fit and stability, not power.",
+    "c": "Bridge width (DBL) is a fixed frame dimension; temples adjust grip and comfort at the ear.",
+    "d": "PD is anatomical; temple adjustments change fit at the ear, not the distance between pupils."
+   }
+  },
+  "abo-optician-readiness-check-fitting-010": {
+   "options": {
+    "a": "Standard Rx with no tilt compensation",
+    "b": "Glass lenses for higher impact safety",
+    "c": "Plano lenses with no prescription",
+    "d": "Compensated Rx / fitting considerations"
+   },
+   "distractorExplanations": {
+    "a": "Face-form wrap induces power and prism changes, so the Rx is often compensated rather than left as written.",
+    "b": "Glass is less impact resistant than polycarbonate or Trivex and is a poor choice for wrap sport frames.",
+    "c": "Many wrap frames can take prescription lenses with compensated designs; they are not limited to plano."
+   }
+  },
+  "abo-optician-readiness-check-fitting-012": {
+   "options": {
+    "a": "Plano sunglasses with no Rx",
+    "b": "Single-vision readers with low power",
+    "c": "Progressives and precise optics",
+    "d": "Choosing the frame's bridge size"
+   },
+   "distractorExplanations": {
+    "a": "Plano sunglasses have no power, so PD placement has no optical effect on them.",
+    "b": "Low-power single-vision readers tolerate small decentration; monocular PDs matter most for progressives.",
+    "d": "Bridge size is chosen by nose fit; monocular PDs set lens centration for each eye."
+   }
+  },
+  "abo-optician-readiness-check-fitting-013": {
+   "options": {
+    "a": "Where the optical center sits before the eye",
+    "b": "Where the near segment top sits on the lens",
+    "c": "How far the lens sits from the eye",
+    "d": "How far apart the two optical centers sit"
+   },
+   "distractorExplanations": {
+    "b": "Segment top placement is seg height, a separate multifocal measurement from OC height.",
+    "c": "Lens-to-eye distance is vertex distance; OC height sets the vertical position of the optical center.",
+    "d": "Horizontal spacing of the optical centers is set by PD; OC height is the vertical position."
+   }
+  },
+  "abo-optician-readiness-check-fitting-014": {
+   "options": {
+    "a": "Secure fit and appropriate size/materials",
+    "b": "Adult-style progressive lenses by default",
+    "c": "Frames one size larger to allow growth",
+    "d": "CR-39 lenses as the default for impact"
+   },
+   "distractorExplanations": {
+    "b": "Children rarely need progressives; most get single vision unless a bifocal is prescribed for a specific reason.",
+    "c": "Oversized frames slip and misplace the optical centers; children need a properly sized current fit.",
+    "d": "CR-39 is less impact resistant; polycarbonate or Trivex is preferred for children's lenses."
+   }
+  },
+  "abo-optician-readiness-check-fitting-015": {
+   "options": {
+    "a": "Frame color and case match the order",
+    "b": "Power and axis, then file the job",
+    "c": "Fit on face, with power checked next visit",
+    "d": "Power, axis, PD/OC, and fit on face"
+   },
+   "distractorExplanations": {
+    "a": "Cosmetic items matter, but dispensing verification centers on power, axis, PD/OC and fit.",
+    "b": "Power and axis alone skip PD/OC centration and fit, which also cause wearer complaints.",
+    "c": "Lens power must be verified before release; deferring it means dispensing an unverified Rx."
+   }
+  },
+  "abo-optician-readiness-check-instruments-001": {
+   "options": {
+    "a": "Power, axis, and prism of a lens",
+    "b": "Curvature of the corneal surface",
+    "c": "Intraocular pressure of the eye",
+    "d": "Base curve of the front surface"
+   },
+   "distractorExplanations": {
+    "b": "Corneal curvature is measured with a keratometer, not a lensometer.",
+    "c": "Intraocular pressure is measured with a tonometer; a lensometer reads lens power.",
+    "d": "Front-surface base curve is read with a lens clock; a lensometer reads vertex power, axis and prism."
+   }
+  },
+  "abo-optician-readiness-check-instruments-004": {
+   "options": {
+    "a": "Ophthalmic lens standards tolerances/themes",
+    "b": "Impact standards for safety eyewear",
+    "c": "Contact lens prescription standards",
+    "d": "Nonprescription sunglass and fashion eyewear standards"
+   },
+   "distractorExplanations": {
+    "b": "Occupational safety eyewear is covered by ANSI Z87.1, not Z80.1.",
+    "c": "Contact lenses fall under ANSI Z80.20; Z80.1 covers prescription spectacle lenses.",
+    "d": "Nonprescription sunglasses fall under ANSI Z80.3; Z80.1 covers prescription spectacle lenses."
+   }
+  },
+  "abo-optician-readiness-check-instruments-005": {
+   "options": {
+    "a": "A basic PD measuring tool",
+    "b": "A tool for measuring vertex distance",
+    "c": "A tool for reading lens power",
+    "d": "A gauge for lens center thickness"
+   },
+   "distractorExplanations": {
+    "b": "Vertex distance is measured with a distometer; a PD ruler measures pupil distance.",
+    "c": "Lens power is read on a lensometer; the PD ruler measures distances on the face.",
+    "d": "Center thickness is measured with calipers; a PD ruler cannot measure lens thickness."
+   }
+  },
+  "abo-optician-readiness-check-instruments-006": {
+   "options": {
+    "a": "Surfaces the Rx curves onto the lens back",
+    "b": "Applies the AR and hard coatings",
+    "c": "Measures the patient's PD and heights",
+    "d": "Captures shape and cuts lens to fit"
+   },
+   "distractorExplanations": {
+    "a": "Rx curves are generated in surfacing; the tracer/edger works on finished lens blanks.",
+    "b": "Coatings are applied in coating chambers; tracing and edging handle frame shape and cutting.",
+    "c": "PD and heights come from patient measurement; the tracer captures frame shape."
+   }
+  },
+  "abo-optician-readiness-check-instruments-007": {
+   "options": {
+    "a": "Finished lens matches the ordered Rx",
+    "b": "Frame fits the patient's face and ears",
+    "c": "The patient's subjective refraction",
+    "d": "Lens material matches the stated index"
+   },
+   "distractorExplanations": {
+    "b": "Facial fit is checked in the dispensing adjustment, not by lensometer neutralization.",
+    "c": "Subjective refraction is done by the eye doctor; neutralization checks the finished lens against the order.",
+    "d": "Material index is not read by neutralization, which measures power, axis and prism against the Rx."
+   }
+  },
+  "abo-optician-readiness-check-instruments-008": {
+   "options": {
+    "a": "Lensometer dots at the optical center",
+    "b": "Layout/marking tools per manufacturer charts",
+    "c": "A ruler from the lens geometric center",
+    "d": "Marks copied from the patient's old pair"
+   },
+   "distractorExplanations": {
+    "a": "Lensometer dots mark the optical center; on a progressive the fitting cross is relocated from engravings and the chart.",
+    "c": "The geometric center is not the fitting cross; progressive layout uses the hidden engravings and the chart.",
+    "d": "Old-pair marks may reflect a different design or fit; recreate the crosses from the manufacturer chart."
+   }
+  },
+  "abo-optician-readiness-check-instruments-009": {
+   "options": {
+    "a": "Soften titanium frames for bending",
+    "b": "Adjust zyl frames safely",
+    "c": "Cure the hard coat on new lenses",
+    "d": "Soften polycarbonate lenses for edging"
+   },
+   "distractorExplanations": {
+    "a": "Titanium is adjusted cold with pliers; heat is for cellulose acetate (zyl) frames.",
+    "c": "Hard coats are cured in the lab; frame warmers soften plastic frames for adjustment.",
+    "d": "Polycarbonate lenses are edged dry without heat; heating them can damage the coatings."
+   }
+  },
+  "abo-optician-readiness-check-instruments-011": {
+   "options": {
+    "a": "Dispense if the patient reads 20/20 at pickup",
+    "b": "Dispense and note the variance in the chart",
+    "c": "Re-mark the lens and recheck it next visit",
+    "d": "Do not dispense until resolved"
+   },
+   "distractorExplanations": {
+    "a": "Acuity at pickup does not prove the lens matches the Rx; out-of-tolerance lenses go back for remake.",
+    "b": "Documenting a variance does not make an out-of-tolerance lens acceptable to dispense.",
+    "c": "Deferring the recheck means dispensing a lens that has not passed verification."
+   }
+  },
+  "abo-optician-readiness-check-instruments-012": {
+   "options": {
+    "a": "Rx tolerance limits for dress lenses",
+    "b": "Corridor length for progressive lenses",
+    "c": "Impact and coverage requirements",
+    "d": "AR coating durability requirements"
+   },
+   "distractorExplanations": {
+    "a": "Dress-lens Rx tolerances come from ANSI Z80.1; safety standards like Z87.1 cover impact and coverage.",
+    "b": "Corridor length is a lens design choice; safety standards govern impact resistance and coverage.",
+    "d": "AR durability is a quality specification; safety standards address impact resistance and coverage."
+   }
+  },
+  "abo-optician-readiness-check-instruments-013": {
+   "options": {
+    "a": "Share Rx details with family who ask",
+    "b": "Email full Rx records to any requester",
+    "c": "Protect records but discuss cases openly",
+    "d": "Protect PHI in records and conversations"
+   },
+   "distractorExplanations": {
+    "a": "Family members need patient authorization (or a recognized role) before receiving protected health information.",
+    "b": "PHI may be released to authorized requesters; sending records to anyone who asks violates HIPAA.",
+    "c": "Spoken information is PHI too; HIPAA protection covers conversations as well as written records."
+   }
+  },
+  "abo-optician-readiness-check-instruments-014": {
+   "options": {
+    "a": "Clean tools once at the end of each day",
+    "b": "Clean frames only when visibly soiled",
+    "c": "Wipe pads with water before the next fitting",
+    "d": "Clean frames/tools between patients"
+   },
+   "distractorExplanations": {
+    "a": "End-of-day cleaning leaves tools contaminated from one patient to the next during the day.",
+    "b": "Contamination is often invisible, so every frame and tool is cleaned between patients.",
+    "c": "Plain water does not disinfect; use an approved disinfectant between patients."
+   },
+   "explanation": "Clean frames/tools between patients as policy requires; visible cleanliness or end-of-day cleaning is not enough."
+  },
+  "abo-optician-readiness-check-instruments-015": {
+   "options": {
+    "a": "Measurements, verification, and reason codes",
+    "b": "The patient's complaint and new order date",
+    "c": "Lab invoice number and remake charges",
+    "d": "The staff member's name and lab used"
+   },
+   "distractorExplanations": {
+    "b": "Complaint and date alone miss the measurements and verification needed to find the cause of the remake.",
+    "c": "Billing details track cost but do not show what was measured or why the job failed.",
+    "d": "Staff and lab names omit the measurements and reason codes needed for remake analysis."
+   }
+  }
+ }
+}

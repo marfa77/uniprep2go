@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Right client, drug, dose, route, time, and documentation (plus allergies/assessment as indicated)"
+        "text": "Right client, drug, dose, route, time, and documentation"
       },
       {
         "id": "b",
-        "text": "Only the room number without identifiers"
+        "text": "Right client by room number and bed, then drug and dose"
       },
       {
         "id": "c",
-        "text": "That a coworker said it was fine without checking the MAR"
+        "text": "Right drug, dose, and route as stated by the off-going nurse"
       },
       {
         "id": "d",
-        "text": "Color of the pill alone as the sole check"
+        "text": "Right drug and dose by matching the pill color to the last dose"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Rights of medication administration reduce errors; use two identifiers.",
+    "explanation": "Rights of medication administration reduce errors; use two identifiers. Also check allergies and any required assessment as indicated.",
     "distractorExplanations": {
-      "b": "Room number is not a unique ID.",
-      "c": "Always verify yourself.",
-      "d": "Appearance alone is insufficient."
+      "b": "Room and bed numbers are not acceptable identifiers; two client identifiers (name, DOB) must be checked against the MAR.",
+      "c": "A verbal report from another nurse does not replace checking the MAR/order, and it skips client, time, and documentation checks.",
+      "d": "Pill color varies by manufacturer and is not a verification method; the label is checked against the MAR."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All four side rails up as soft restraints without an order for convenience"
+        "text": "All four side rails up, call light in reach, and bed in high position"
       },
       {
         "id": "b",
-        "text": "Call light in reach, nonskid footwear, bed in low position, and clutter-free path as appropriate"
+        "text": "Call light in reach, nonskid footwear, bed in low position, and clutter-free path"
       },
       {
         "id": "c",
-        "text": "Socks with slick soles encouraged for speed"
+        "text": "Call light within reach, bed locked in the high position, and regular cotton socks"
       },
       {
         "id": "d",
-        "text": "Call light placed across the room to encourage walking alone at night"
+        "text": "Bed in low position, call light across the room to promote walking"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fall prevention is multifactorial; restraints require orders and least-restrictive approach.",
     "distractorExplanations": {
-      "a": "Four side rails can be restraint.",
-      "c": "Nonskid footwear needed.",
-      "d": "Call light must be reachable."
+      "a": "Four raised rails count as a restraint and increase climb-over falls, and a high bed raises injury risk; the bed stays low.",
+      "c": "The bed should be in the low (not high) position, and ordinary socks are slippery; nonskid footwear is required.",
+      "d": "The call light must be within reach so the client asks for help instead of walking alone, which is a fall risk."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Applying snugly around the waist over clothing and holding underhand while ambulating as appropriate"
+        "text": "Applying snugly around the waist over clothing and holding underhand while ambulating"
       },
       {
         "id": "b",
-        "text": "Using it to lift a client vertically alone from the floor after an unwitnessed fall without assessment"
+        "text": "Applying loosely around the chest under the arms and lifting the client by the belt"
       },
       {
         "id": "c",
-        "text": "Applying over bare skin tightly enough to bruise intentionally"
+        "text": "Applying snugly over bare skin at the waist and holding it overhand from the front"
       },
       {
         "id": "d",
-        "text": "Attaching it to a wheelchair to drag the client"
+        "text": "Applying around the waist and using it to lift a fallen client back to the bed alone"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Gait belts assist balance; post-fall assessment precedes moving.",
     "distractorExplanations": {
-      "b": "Assess injuries first; get help.",
-      "c": "Avoid skin injury.",
-      "d": "Do not drag."
+      "b": "The belt goes snugly around the waist, not loosely at the chest, and it is used to steady balance rather than lift.",
+      "c": "The belt is placed over clothing to protect skin, and the nurse grips it underhand from behind or the side for control.",
+      "d": "A gait belt is not a lifting device for fallen clients; assess first, then use a mechanical lift or team as policy directs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Taking an oral temperature with a clean probe cover"
+        "text": "Inserting a nasogastric tube for feeding"
       },
       {
         "id": "b",
-        "text": "Inserting an indwelling urinary catheter (as typically taught)"
+        "text": "Inserting an indwelling urinary catheter"
       },
       {
         "id": "c",
-        "text": "Feeding a client a meal"
+        "text": "Changing a colostomy appliance"
       },
       {
         "id": "d",
-        "text": "Making an unoccupied bed with clean linen"
+        "text": "Collecting a clean-catch midstream urine specimen"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Invasive procedures that enter sterile body cavities require aseptic/sterile technique.",
+    "explanation": "Invasive procedures that enter sterile body cavities require aseptic/sterile technique. Catheter insertion is taught as a sterile procedure.",
     "distractorExplanations": {
-      "a": "Clean technique for oral temp.",
-      "c": "Feeding uses clean technique.",
-      "d": "Bedmaking is clean."
+      "a": "The GI tract is not sterile, so NG tube insertion uses clean technique, unlike urinary catheter insertion.",
+      "c": "A colostomy pouch change involves the GI tract and uses clean technique, not sterile technique.",
+      "d": "A clean-catch midstream specimen uses cleansing and a sterile cup but is a clean, not sterile, procedure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Increased latex exposure to desensitize in the hospital without order"
+        "text": "Powder-free latex gloves and allergy communication on the chart and band"
       },
       {
         "id": "b",
-        "text": "No allergy documentation"
+        "text": "Latex-free gloves, while other equipment such as tourniquets may contain latex"
       },
       {
         "id": "c",
-        "text": "Latex-free gloves/equipment and allergy communication on the chart/band per policy"
+        "text": "Latex-free gloves/equipment and allergy communication on the chart/band"
       },
       {
         "id": "d",
-        "text": "Powdered latex gloves preferentially"
+        "text": "Premedication with diphenhydramine so standard latex gloves can be used"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Allergy prevention is a safety priority.",
+    "explanation": "Allergy prevention is a safety priority. Follow facility policy for allergy alerts.",
     "distractorExplanations": {
-      "a": "Do not challenge latex casually.",
-      "b": "Document clearly.",
-      "d": "Avoid latex products."
+      "a": "Powder-free latex gloves still contain latex proteins; a latex-allergic client needs latex-free products.",
+      "b": "Latex exposure from tourniquets, catheters, or BP cuffs can still trigger a reaction; all equipment must be latex-free.",
+      "d": "Premedication does not make latex exposure safe; avoidance of latex is the prevention strategy."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A client requesting a snack refill"
+        "text": "A client with a pain level of 6/10 due for PRN analgesia now"
       },
       {
         "id": "b",
-        "text": "A client needing routine linen change"
+        "text": "A client with a blood glucose of 180 mg/dL before lunch"
       },
       {
         "id": "c",
-        "text": "A client asking what time discharge teaching will occur later today"
+        "text": "A client with a temperature of 100.2°F (37.9°C) one day after surgery"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Airway/breathing threats outrank comfort and routine tasks.",
     "distractorExplanations": {
-      "a": "Snack is low priority.",
-      "b": "Linen is routine.",
-      "c": "Teaching scheduling is lower acuity."
+      "a": "Pain matters but is not an airway threat; stridor and breathing difficulty come first under ABCs.",
+      "b": "Mild hyperglycemia before a meal is not immediately life-threatening compared with a compromised airway.",
+      "c": "A low-grade fever on postoperative day 1 needs follow-up but ranks below new stridor, an airway emergency."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Objective, factual, and completed per policy without blaming language in the medical record narrative improperly"
+        "text": "Objective, factual, and completed per policy without blaming language"
       },
       {
         "id": "b",
-        "text": "Copied into the chart as a punitive essay naming coworkers with speculation"
+        "text": "Objective and factual, with a copy placed in the client's medical record"
       },
       {
         "id": "c",
-        "text": "Hidden if no one noticed"
+        "text": "Completed only when the client was harmed by the error"
       },
       {
         "id": "d",
-        "text": "Used to threaten clients"
+        "text": "Referenced in the nurse's note as 'incident report filed'"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Incident reports improve systems; follow facility documentation rules carefully.",
+    "explanation": "Incident reports improve systems; follow facility documentation rules carefully. The report is not part of the medical record narrative.",
     "distractorExplanations": {
-      "b": "Keep charting factual; follow policy on referencing reports.",
-      "c": "Reporting is required.",
-      "d": "Not a threat tool."
+      "b": "Incident reports are confidential risk-management documents; they are not filed in or copied into the medical record.",
+      "c": "Reports are completed for near misses and no-harm events too, so system problems are caught before harm occurs.",
+      "d": "The chart documents the event and care given, but it does not mention that an incident report was filed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "One person discarding leftovers without witness when policy requires witness"
+        "text": "One nurse counting and signing, with a second nurse signing later in the shift"
       },
       {
         "id": "b",
-        "text": "Two authorized nurses verifying discrepancies per policy before end of shift when required"
+        "text": "Two authorized nurses verifying discrepancies per policy before end of shift"
       },
       {
         "id": "c",
-        "text": "Borrowing meds from another client’s drawer"
+        "text": "An authorized nurse and a UAP counting together at every shift change"
       },
       {
         "id": "d",
-        "text": "Documenting waste after leaving the unit"
+        "text": "Two nurses verifying, with discrepancies reported at the next weekly audit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Controlled substance accountability is a legal safety requirement.",
+    "explanation": "Controlled substance accountability is a legal safety requirement. This applies when policy requires it.",
     "distractorExplanations": {
-      "a": "Witnessed waste often required.",
-      "c": "Never borrow client meds.",
-      "d": "Document at time of waste."
+      "a": "A second signature without witnessing the count is not verification; both nurses count together.",
+      "c": "UAP are not authorized to verify controlled substance counts; two licensed nurses must count.",
+      "d": "Discrepancies are reported and resolved before the end of the shift, not held for a weekly audit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Skip hand hygiene because gloves were worn"
+        "text": "Wear an N95 respirator and gloves, and keep the door closed at all times"
       },
       {
         "id": "b",
-        "text": "Take the isolation gown to the cafeteria"
+        "text": "Wear gloves, and skip hand hygiene after removal since gloves were worn"
       },
       {
         "id": "c",
-        "text": "Wear gown and gloves for contact with the client/environment as indicated and dedicate equipment when possible"
+        "text": "Wear gown and gloves for contact with the client/environment and dedicate equipment"
       },
       {
         "id": "d",
-        "text": "Share BP cuffs without cleaning when dedicated gear is required"
+        "text": "Wear gown and gloves, and share the BP cuff with the roommate without cleaning"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Transmission-based precautions prevent MDRO spread; hand hygiene after PPE removal.",
+    "explanation": "Transmission-based precautions prevent MDRO spread; hand hygiene after PPE removal. Dedicate equipment when possible.",
     "distractorExplanations": {
-      "a": "Hygiene still required.",
-      "b": "PPE stays in care area.",
-      "d": "Clean/dedicated equipment rules apply."
+      "a": "An N95 and closed door are airborne precautions (e.g., TB); contact precautions require a gown and gloves.",
+      "b": "Gloves can have defects and hands become contaminated on removal; hand hygiene is done after taking gloves off.",
+      "d": "Equipment is dedicated to the client or disinfected between clients; sharing an uncleaned cuff spreads MDROs."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Crush and hide it in food without consent"
+        "text": "Give it crushed in pudding to ease swallowing, then document the dose as given"
       },
       {
         "id": "b",
-        "text": "Force the client’s mouth open"
+        "text": "Withhold the dose and document refusal, informing the provider at the next rounds"
       },
       {
         "id": "c",
-        "text": "Document as given when it was not"
+        "text": "Notify the RN, then administer the dose since the provider ordered it"
       },
       {
         "id": "d",
-        "text": "Explore concerns, educate, withhold as refused, notify the provider/RN per policy, and document"
+        "text": "Explore concerns, educate, withhold as refused, notify the provider/RN, and document"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Informed refusal is a client right; covert meds without consent are unethical/illegal.",
+    "explanation": "Informed refusal is a client right; covert meds without consent are unethical/illegal. Follow facility policy.",
     "distractorExplanations": {
-      "a": "Covert administration is improper.",
-      "b": "Forcing is assault.",
-      "c": "False documentation is fraud."
+      "a": "Hiding medication in food without consent is covert administration and violates the client's right to refuse.",
+      "b": "Waiting until the next rounds delays notification; the RN/provider is informed promptly per policy.",
+      "c": "An order does not override a competent client's refusal; the medication cannot be given against their wishes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -407,23 +407,23 @@
       },
       {
         "id": "b",
-        "text": "Routine daily irrigation with tap water for all clients"
+        "text": "Irrigate the catheter daily with sterile saline to prevent blockage"
       },
       {
         "id": "c",
-        "text": "Disconnect tubing frequently to “rinse”"
+        "text": "Disconnect the tubing to empty and rinse the bag each shift"
       },
       {
         "id": "d",
-        "text": "Place the bag on the abdomen during transport for convenience"
+        "text": "Hang the bag on the bed rail at bladder level during transport"
       }
     ],
     "correctOptionId": "a",
     "explanation": "CAUTI prevention bundles emphasize closed systems and dependent drainage.",
     "distractorExplanations": {
-      "b": "Avoid unnecessary irrigation.",
-      "c": "Don’t break the closed system.",
-      "d": "Bag below bladder."
+      "b": "Routine irrigation opens the closed system and is not recommended for CAUTI prevention unless ordered for obstruction.",
+      "c": "Breaking the connection between catheter and tubing introduces bacteria; the bag is emptied through its drain spout.",
+      "d": "The bag must stay below bladder level, including during transport, to prevent backflow into the bladder."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Initial teaching of a complex insulin regimen"
+        "text": "Initial teaching of a new insulin regimen to a stable client"
       },
       {
         "id": "b",
-        "text": "Assessment of a new onset chest pain"
+        "text": "Reassessing a client's pain 30 minutes after an opioid dose"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "Titration of IV vasoactive drips"
+        "text": "Routine vital signs on a client with a new oxygen requirement"
       }
     ],
     "correctOptionId": "c",
     "explanation": "LPNs/RNs retain assessment, teaching, and unstable client judgment tasks per state NPA.",
     "distractorExplanations": {
-      "a": "Teaching is nursing role.",
-      "b": "New chest pain needs licensed assessment.",
-      "d": "IV vasoactive titration is beyond UAP/typically RN."
+      "a": "Teaching, even for a stable client, requires nursing judgment and cannot be delegated to UAP.",
+      "b": "Reassessing pain response after an opioid is an evaluation task that stays with licensed nurses.",
+      "d": "A new oxygen need suggests instability; vital signs on unstable clients are not delegated to UAP."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -502,27 +502,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Prevent disease before it occurs (e.g., immunizations, safety education)"
+        "text": "Prevent disease before it occurs"
       },
       {
         "id": "b",
-        "text": "Only provide hospice care"
+        "text": "Detect disease early through screening"
       },
       {
         "id": "c",
-        "text": "Treat end-stage complications"
+        "text": "Limit disability from an existing disease"
       },
       {
         "id": "d",
-        "text": "Ignore screening recommendations"
+        "text": "Treat disease once symptoms appear"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Primary = prevention; secondary = screening; tertiary = limit disability.",
+    "explanation": "Primary = prevention; secondary = screening; tertiary = limit disability. Examples include immunizations and safety education.",
     "distractorExplanations": {
-      "b": "Hospice is tertiary/supportive.",
-      "c": "Treatment of advanced disease is tertiary.",
-      "d": "Screening is secondary prevention."
+      "b": "Early detection through screening (e.g., mammograms) is secondary prevention, not primary.",
+      "c": "Limiting disability and complications from established disease is tertiary prevention.",
+      "d": "Treating symptomatic disease is treatment or secondary care; primary prevention acts before disease starts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Never receiving any vaccines after age 30"
+        "text": "Influenza vaccine every five years and a tetanus booster yearly"
       },
       {
         "id": "b",
-        "text": "Age-appropriate immunizations such as influenza annually and others per CDC adult schedule"
+        "text": "Age-appropriate immunizations such as influenza annually"
       },
       {
         "id": "c",
-        "text": "Only childhood vaccines repeated yearly without guidance"
+        "text": "Live zoster vaccine annually, plus influenza every other year"
       },
       {
         "id": "d",
-        "text": "Avoiding all preventive care visits"
+        "text": "Childhood MMR series repeated, since immunity fades after 60"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "LPNs reinforce vaccine education; schedules update—refer to current CDC guidance/provider.",
+    "explanation": "LPNs reinforce vaccine education; schedules update—refer to current CDC guidance/provider. Others follow the CDC adult schedule.",
     "distractorExplanations": {
-      "a": "Older adults still need vaccines.",
-      "c": "Follow adult schedules.",
-      "d": "Preventive visits matter."
+      "a": "Swaps the intervals: influenza vaccine is yearly and Td/Tdap boosters are every 10 years.",
+      "c": "Current zoster vaccine is the two-dose recombinant series, not yearly live vaccine, and influenza is annual.",
+      "d": "Adults born before 1957 are presumed MMR-immune; the childhood series is not routinely repeated at 65."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Sunburn is required for vitamin D and is harmless"
+        "text": "Use SPF 8 or higher, applied once in the morning to last through the day"
       },
       {
         "id": "b",
-        "text": "Tanning beds are risk-free"
+        "text": "Use SPF 30 only on cloudy days, since clouds block most UV rays"
       },
       {
         "id": "c",
-        "text": "Use broad-spectrum SPF as directed, reapply, and seek shade—especially peak UV hours"
+        "text": "Use broad-spectrum SPF as directed, reapply, and seek shade"
       },
       {
         "id": "d",
-        "text": "Sunscreen makes skin cancer more likely"
+        "text": "Use broad-spectrum sunscreen and seek sun between 10 a.m. and 4 p.m."
       }
     ],
     "correctOptionId": "c",
-    "explanation": "UV protection is skin cancer primary prevention.",
+    "explanation": "UV protection is skin cancer primary prevention. Seek shade especially during peak UV hours.",
     "distractorExplanations": {
-      "a": "Sunburn damages DNA.",
-      "b": "Tanning beds increase risk.",
-      "d": "Sunscreen reduces risk when used properly."
+      "a": "SPF 30 or higher is recommended and must be reapplied about every 2 hours and after swimming or sweating.",
+      "b": "Clouds let most UV through, so sunscreen is needed on clear and cloudy days alike.",
+      "d": "10 a.m. to 4 p.m. is peak UV time, when shade should be sought rather than sun exposure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Stomach sleeping with pillows in the crib"
+        "text": "Place infant prone on a firm crib mattress to reduce reflux and choking"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Co-sleeping on soft couches as preferred teaching"
+        "text": "Place infant side-lying, propped with a wedge and a light blanket"
       },
       {
         "id": "d",
-        "text": "Bumper pads and stuffed toys filling the crib"
+        "text": "Place infant supine on a firm surface with bumper pads for safety"
       }
     ],
     "correctOptionId": "b",
     "explanation": "AAP safe sleep: alone, back, crib—reduces SIDS risk.",
     "distractorExplanations": {
-      "a": "Prone with soft items increases risk.",
-      "c": "Unsafe sleep surfaces are hazardous.",
-      "d": "Soft objects increase suffocation risk."
+      "a": "Prone sleeping raises SIDS risk; healthy infants sleep supine, and back sleeping does not increase choking.",
+      "c": "Side-lying is unstable and lets the infant roll prone; wedges and blankets are suffocation hazards.",
+      "d": "Bumper pads are soft bedding that the AAP advises against because of suffocation and entrapment risk."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "Has no health effects"
+        "text": "Mainly harms the lungs, with little effect on heart or stroke risk"
       },
       {
         "id": "c",
-        "text": "Protects against COPD"
+        "text": "Raises lung cancer risk but lowers blood pressure and stroke risk over time"
       },
       {
         "id": "d",
-        "text": "Is recommended in pregnancy"
+        "text": "Is harmful mainly at more than one pack daily, not light smoking"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Ask-Advise-Refer style brief interventions are part of health promotion.",
     "distractorExplanations": {
-      "b": "Strong causal harms exist.",
-      "c": "Tobacco causes COPD risk.",
-      "d": "Contraindicated in pregnancy."
+      "b": "Smoking is a major cause of coronary disease and stroke, not just lung disease.",
+      "c": "Nicotine raises blood pressure and smoking increases stroke risk; there is no cardiovascular benefit.",
+      "d": "Even light or intermittent smoking raises cardiovascular and cancer risk; there is no safe level."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Diagnose all genetic diseases alone"
+        "text": "Diagnose growth disorders from a single plotted measurement"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Replace immunizations"
+        "text": "Compare a child's weight to siblings at the same age"
       },
       {
         "id": "d",
-        "text": "Determine adult career aptitude"
+        "text": "Set target weights a child should reach by each birthday"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Trends matter more than single points; report crossing major percentiles per protocol.",
     "distractorExplanations": {
-      "a": "Not sole genetic diagnosis.",
-      "c": "Vaccines remain essential.",
-      "d": "Unrelated to careers."
+      "a": "A single point cannot show a pattern; growth charts are interpreted by trends across visits.",
+      "c": "Growth charts compare a child to population reference data and to their own trend, not to siblings.",
+      "d": "Percentile curves describe growth patterns; they are not fixed target weights for each birthday."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -832,27 +832,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Begin with maximal heavy lifting daily without assessment"
+        "text": "Start at high intensity to build fitness, and push through chest tightness"
       },
       {
         "id": "b",
-        "text": "Ignore chest pain as normal"
+        "text": "Start gradually, and treat chest pain during exercise as normal muscle strain"
       },
       {
         "id": "c",
-        "text": "Start gradually, get provider clearance if high risk, and stop for chest pain/severe dyspnea"
+        "text": "Start gradually, get provider clearance if high risk, and stop for chest pain"
       },
       {
         "id": "d",
-        "text": "Avoid hydration intentionally"
+        "text": "Start with daily maximal lifting after clearance, limiting fluids to avoid cramps"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Progressive activity with warning-sign education is safer.",
+    "explanation": "Progressive activity with warning-sign education is safer. Also stop for severe dyspnea.",
     "distractorExplanations": {
-      "a": "Gradual progression safer.",
-      "b": "Chest pain needs evaluation.",
-      "d": "Hydrate appropriately."
+      "a": "Sedentary clients should start at low-moderate intensity, and chest tightness is a stop-and-report warning sign.",
+      "b": "Chest pain during exertion may signal ischemia and must stop activity, not be dismissed as strain.",
+      "d": "Programs progress gradually rather than maximal lifting, and adequate hydration is encouraged, not restricted."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Putting the child to bed with a bottle of juice routinely"
+        "text": "Unsupervised brushing with toothpaste, plus diluted juice at bedtime"
       },
       {
         "id": "b",
-        "text": "Never cleaning teeth until age 10"
+        "text": "Fluoride-free toothpaste until age 6 to avoid fluorosis, and juice daily"
       },
       {
         "id": "c",
-        "text": "Sharing toothbrushes among siblings"
+        "text": "Supervised brushing once weekly, with the first dental visit at age 6"
       },
       {
         "id": "d",
-        "text": "Supervised brushing with a rice-grain/smear of fluoride toothpaste as age-appropriate and limiting sugary drinks"
+        "text": "Supervised brushing with fluoride toothpaste and limiting sugary drinks"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Early dental habits prevent caries; avoid juice bottles at bedtime.",
+    "explanation": "Early dental habits prevent caries; avoid juice bottles at bedtime. Use an age-appropriate amount of fluoride toothpaste.",
     "distractorExplanations": {
-      "a": "Bottle juice promotes caries.",
-      "b": "Start oral care early.",
-      "c": "No sharing brushes."
+      "a": "Preschoolers need supervised brushing, and bedtime juice (even diluted) bathes teeth in sugar and causes caries.",
+      "b": "Fluoride toothpaste is recommended from the first tooth in age-appropriate amounts; daily juice raises caries risk.",
+      "c": "Brushing is twice daily, not weekly, and the first dental visit is recommended by age 1."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Weight-bearing exercise as tolerated, calcium/vitamin D per provider, and fall prevention"
+        "text": "Weight-bearing exercise, calcium/vitamin D per provider, and fall prevention"
       },
       {
         "id": "b",
-        "text": "Complete bedrest to protect bones"
+        "text": "Swimming as the main bone-building exercise, plus calcium and vitamin D per provider"
       },
       {
         "id": "c",
-        "text": "Avoiding all dairy/alternatives without plan when deficient"
+        "text": "Bedrest when bones ache, high-dose vitamin A, and avoiding dairy"
       },
       {
         "id": "d",
-        "text": "Removing grab bars to encourage independence via risk"
+        "text": "Weight-bearing exercise, calcium per provider, and removing grab bars"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Bone health + fall risk reduction prevents fractures.",
+    "explanation": "Bone health + fall risk reduction prevents fractures. Exercise as tolerated.",
     "distractorExplanations": {
-      "b": "Immobility worsens bone loss.",
-      "c": "Address deficiencies properly.",
-      "d": "Grab bars prevent falls."
+      "b": "Swimming is not weight-bearing, so it does little to build bone; walking and resistance exercise are preferred.",
+      "c": "Immobility accelerates bone loss, excess vitamin A may weaken bone, and dairy is a key calcium source.",
+      "d": "Grab bars prevent falls and fractures; removing them increases fracture risk in osteoporosis."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only after age 90"
+        "text": "Around age 40 for average-risk adults"
       },
       {
         "id": "b",
-        "text": "Around age 45 for average-risk adults per updated USPSTF-aligned counseling—confirm with provider"
+        "text": "Around age 45 for average-risk adults"
       },
       {
         "id": "c",
-        "text": "Never if asymptomatic, ever"
+        "text": "Around age 50 for average-risk adults"
       },
       {
         "id": "d",
-        "text": "At age 15 for everyone as colonoscopy mandatory yearly"
+        "text": "Around age 65 for average-risk adults on Medicare"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Screening ages evolve; nurses teach to follow current guidelines/provider advice (commonly starting mid-40s now).",
+    "explanation": "Screening ages evolve; nurses teach to follow current guidelines/provider advice (commonly starting mid-40s now). This follows updated USPSTF guidance; confirm with the provider.",
     "distractorExplanations": {
-      "a": "Far too late as a general rule.",
-      "c": "Screening targets asymptomatic average-risk adults.",
-      "d": "Yearly colonoscopy from 15 is not standard average-risk guidance."
+      "a": "Age 40 is the USPSTF start for biennial mammography, not colorectal screening.",
+      "c": "Age 50 was the older USPSTF start; the 2021 update lowered it to 45 for average-risk adults.",
+      "d": "Age 65 is Medicare eligibility, not a screening start; USPSTF average-risk colorectal screening begins at 45."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only medical jargon to sound professional"
+        "text": "Medical terms with definitions, and asking 'Do you understand?'"
       },
       {
         "id": "b",
-        "text": "Long uninterrupted lectures without checking understanding"
+        "text": "Detailed handouts at a 12th-grade level and one long session"
       },
       {
         "id": "c",
-        "text": "Plain language, teach-back, and limited key points with written materials at appropriate level"
+        "text": "Plain language, teach-back, and limited key points"
       },
       {
         "id": "d",
-        "text": "Assuming all clients read at college level"
+        "text": "Plain language with many key points covered in one visit"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Teach-back confirms understanding and improves adherence.",
+    "explanation": "Teach-back confirms understanding and improves adherence. Provide written materials at an appropriate reading level.",
     "distractorExplanations": {
-      "a": "Jargon blocks understanding.",
-      "b": "Check understanding.",
-      "d": "Assess literacy needs."
+      "a": "Yes/no questions like 'Do you understand?' do not confirm learning; teach-back has the client explain in their own words.",
+      "b": "Materials should be written at about a 5th–6th grade level, delivered in short sessions with checks for understanding.",
+      "d": "Covering many points at once overloads clients; limit teaching to a few key points per session."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ask directly about suicidal ideation and plans and ensure safety/notify the RN-provider per protocol"
+        "text": "Ask directly about suicidal ideation and plans and ensure safety"
       },
       {
         "id": "b",
-        "text": "Change the subject to the weather permanently"
+        "text": "Offer reassurance that the feeling will pass and redirect to activities"
       },
       {
         "id": "c",
-        "text": "Leave the client alone for privacy for several hours without assessment"
+        "text": "Avoid the word suicide so the idea is not planted, and observe"
       },
       {
         "id": "d",
-        "text": "Promise total confidentiality even if there is an imminent plan"
+        "text": "Promise to keep it confidential to build trust, then ask about plans"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Direct screening and safety trump avoidance; duty to protect limits confidentiality when harm is imminent.",
+    "explanation": "Direct screening and safety trump avoidance; duty to protect limits confidentiality when harm is imminent. Notify the RN/provider per protocol.",
     "distractorExplanations": {
-      "b": "Do not avoid.",
-      "c": "Do not isolate without safety plan.",
-      "d": "Safety exceptions to confidentiality apply."
+      "b": "False reassurance and redirection close down the conversation and miss suicide risk assessment.",
+      "c": "Asking directly about suicide does not plant the idea; avoiding the word is a myth that delays assessment.",
+      "d": "Suicide risk cannot be kept secret; the nurse must share it with the team to keep the client safe."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Giving false reassurance “everything will be fine”"
+        "text": "Putting the client's unstated feelings into words to check understanding"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Asking “why would you do that?” judgmentally"
+        "text": "Summarizing the main points discussed at the end of the session"
       },
       {
         "id": "d",
-        "text": "Talking about your own divorce details extensively"
+        "text": "Asking the client to explain further what they meant by a statement"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Restating/reflecting facilitate expression; avoid “why” and false reassurance.",
     "distractorExplanations": {
-      "a": "False reassurance blocks feelings.",
-      "c": "“Why” feels accusatory.",
-      "d": "Keep focus on client."
+      "a": "That describes verbalizing the implied, which names feelings the client has not stated, not restating the main idea.",
+      "c": "Summarizing pulls together the key points of a whole conversation, usually at the end, not repeating one statement.",
+      "d": "Asking for more explanation of an unclear statement is clarifying, a different technique from restating."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1063,27 +1063,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Scheduling career counseling as the first hour priority over medical monitoring"
+        "text": "Confronting denial about drinking during the first day"
       },
       {
         "id": "b",
-        "text": "Allowing unlimited visitors bringing alcohol"
+        "text": "Referral to a 12-step group before discharge planning"
       },
       {
         "id": "c",
-        "text": "Safety monitoring for withdrawal complications (e.g., seizures, DT risk) per protocol"
+        "text": "Safety monitoring for withdrawal complications"
       },
       {
         "id": "d",
-        "text": "Ignoring CIWA/assessment tools ordered"
+        "text": "Nutrition teaching about thiamine-rich foods"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Physiologic withdrawal can be life-threatening; medical stabilization first.",
+    "explanation": "Physiologic withdrawal can be life-threatening; medical stabilization first. Monitor for seizures and DT risk per protocol.",
     "distractorExplanations": {
-      "a": "Psychosocial later once stable.",
-      "b": "No alcohol access.",
-      "d": "Use ordered withdrawal assessments."
+      "a": "Confronting denial is not helpful in early detox; physiologic stability comes before psychosocial work.",
+      "b": "12-step referral is part of later recovery planning; early detox priority is preventing seizures and DTs.",
+      "d": "Thiamine is given early to prevent Wernicke's, but diet teaching waits until withdrawal is medically managed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Calm environment, consistent caregivers, toileting/pain check, and simple reassurance"
+        "text": "Calm environment, consistent caregivers, and toileting/pain check"
       },
       {
         "id": "b",
-        "text": "Arguing about the exact year repeatedly for long periods"
+        "text": "Reorienting firmly to the date and correcting false beliefs each time"
       },
       {
         "id": "c",
-        "text": "Overstimulating with multiple loud activities at once"
+        "text": "Group activities with music and TV to keep the client busy at dusk"
       },
       {
         "id": "d",
-        "text": "Using restraints as first-line without assessment"
+        "text": "PRN sedation and a lap belt as first-line measures at dusk"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Address unmet needs; least restrictive measures first.",
+    "explanation": "Address unmet needs; least restrictive measures first. Offer simple reassurance.",
     "distractorExplanations": {
-      "b": "Arguments escalate.",
-      "c": "Overstimulation worsens agitation.",
-      "d": "Restraints last resort."
+      "b": "Repeated correction and arguing increase agitation in dementia; validation and redirection work better.",
+      "c": "Multiple stimuli at dusk overstimulate clients with sundowning; a calm, low-stimulus setting is preferred.",
+      "d": "Chemical and physical restraints are last resorts after unmet needs and nonpharmacologic measures are addressed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only joyful celebration without any loss context ever"
+        "text": "Intense sadness that eases gradually over the first several months"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "A vital sign value"
+        "text": "Persistent yearning lasting more than 12 months with impairment"
       },
       {
         "id": "d",
-        "text": "A type of microorganism"
+        "text": "Exaggerated grief with self-destructive behavior soon after the loss"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Recognize complicated grief patterns and support/refer.",
     "distractorExplanations": {
-      "a": "Grief varies culturally—but delayed grief is a recognized pattern.",
-      "c": "Not a vital sign.",
-      "d": "Not a microbe."
+      "a": "Intense sadness that gradually eases describes normal (uncomplicated) grief, not delayed grief.",
+      "c": "Persistent yearning beyond 12 months with impairment is prolonged grief disorder, not delayed or inhibited grief.",
+      "d": "Excessive, self-destructive reactions soon after the loss describe exaggerated grief, not delayed grief."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Agree that the TV is a reliable commander"
+        "text": "Distract the client with an activity and recheck at the end of the shift"
       },
       {
         "id": "b",
-        "text": "Leave without assessing intent"
+        "text": "Explain that the voices are not real and turn off the television"
       },
       {
         "id": "c",
-        "text": "Take the command hallucination seriously, assess safety, and report promptly for evaluation"
+        "text": "Take the command hallucination seriously, assess safety, and report promptly"
       },
       {
         "id": "d",
-        "text": "Whisper about the client in the hallway within earshot"
+        "text": "Agree to keep the TV off and document the statement in the chart"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Command hallucinations require urgent safety assessment.",
+    "explanation": "Command hallucinations require urgent safety assessment. Report for evaluation.",
     "distractorExplanations": {
-      "a": "Don’t reinforce delusions/commands.",
-      "b": "Assess immediately.",
-      "d": "Maintain privacy/dignity."
+      "a": "Distraction without a safety assessment delays response to a command to self-harm; it needs immediate evaluation.",
+      "b": "Arguing about reality and removing the TV does not assess the command's content or the client's intent to act.",
+      "d": "Documenting without assessing intent or reporting leaves a self-harm command hallucination unaddressed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Withholding all information to prevent worry"
+        "text": "Avoiding detailed information so the client does not worry more"
       },
       {
         "id": "b",
-        "text": "Making jokes about death in the OR"
+        "text": "Giving reassurance that nothing will go wrong during surgery"
       },
       {
         "id": "c",
-        "text": "Skipping consent discussion"
+        "text": "Sedating the client before the consent is discussed"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Information reduces fear of the unknown; informed consent remains essential.",
     "distractorExplanations": {
-      "a": "Information helps.",
-      "b": "Inappropriate humor harms trust.",
-      "c": "Consent is required."
+      "a": "Withholding information increases fear of the unknown; clear explanations reduce preoperative anxiety.",
+      "b": "Promising nothing will go wrong is false reassurance and can undermine trust and informed consent.",
+      "c": "Consent must be obtained before sedation; sedated clients cannot give valid informed consent."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Privately, with sensitivity, and with knowledge of resources/reporting laws"
+        "text": "Privately, with sensitivity, and with knowledge of resources"
       },
       {
         "id": "b",
-        "text": "Only with the partner present translating"
+        "text": "With the partner present so the client feels supported"
       },
       {
         "id": "c",
-        "text": "As accusations in front of visitors"
+        "text": "Only when injuries are visible during the physical exam"
       },
       {
         "id": "d",
-        "text": "Never in healthcare settings"
+        "text": "Privately, using a family member as interpreter to ease trust"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Screen alone; follow mandatory reporting rules for vulnerable populations/state laws.",
+    "explanation": "Screen alone; follow mandatory reporting rules for vulnerable populations/state laws. Know the reporting laws.",
     "distractorExplanations": {
-      "b": "Partner presence may silence disclosure.",
-      "c": "Privacy required.",
-      "d": "Healthcare screens routinely."
+      "b": "Screening is done without the partner present; the partner may be the abuser and silence the client.",
+      "c": "Abuse often leaves no visible injury; routine screening is recommended regardless of physical findings.",
+      "d": "Family members should not interpret abuse screening; use a qualified medical interpreter."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only high hemoglobin as the sole issue"
+        "text": "Hyperkalemia and metabolic acidosis from repeated vomiting"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "Improved enamel strength"
+        "text": "Weight loss below 85% of ideal as the main risk"
       },
       {
         "id": "d",
-        "text": "Hyperkalemia"
+        "text": "Lanugo and amenorrhea from severe starvation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Purging risks hypokalemia, alkalosis, enamel erosion—safety priority.",
     "distractorExplanations": {
-      "a": "Electrolytes more critical than Hgb alone.",
-      "c": "Enamel erodes.",
-      "d": "Hypokalemia is the classic concern."
+      "a": "Vomiting causes hypokalemia and metabolic alkalosis from loss of potassium and stomach acid, not the reverse.",
+      "c": "Very low body weight is typical of anorexia; clients with bulimia are often at normal weight.",
+      "d": "Lanugo and amenorrhea are classic anorexia nervosa findings, not the main purging risks."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Assuming all members of a group share identical beliefs"
+        "text": "Applying a cultural guide's beliefs to every client of that group"
       },
       {
         "id": "b",
-        "text": "Refusing interpreters to save time"
+        "text": "Using a bilingual family member as the interpreter to build trust"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Mocking ritual practices"
+        "text": "Treating every client identically so no one is singled out"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Assess individuals; use qualified interpreters.",
     "distractorExplanations": {
-      "a": "Avoid stereotypes.",
-      "b": "Interpreters improve safety.",
-      "d": "Respect practices within safety/law."
+      "a": "Assuming everyone in a group holds the same beliefs is stereotyping; each client is assessed individually.",
+      "b": "Family interpreters compromise accuracy and confidentiality; qualified medical interpreters are used.",
+      "d": "Identical care ignores individual beliefs and preferences; cultural competence adapts care to the person."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only intramuscular medications"
+        "text": "Using rewards and tokens to reinforce desired behaviors on the unit"
       },
       {
         "id": "b",
-        "text": "Surgical debridement"
+        "text": "Individual sessions exploring unconscious conflicts"
       },
       {
         "id": "c",
-        "text": "Dietary tray color coding alone"
+        "text": "Gradual exposure to feared situations in a safe setting"
       },
       {
         "id": "d",
-        "text": "Using the therapeutic environment and structured interactions to support recovery"
+        "text": "Using the therapeutic environment and structured interactions"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Psychiatric nursing uses milieu as a treatment tool.",
+    "explanation": "Psychiatric nursing uses milieu as a treatment tool. The aim is to support recovery.",
     "distractorExplanations": {
-      "a": "Meds may be part of care but aren’t the definition.",
-      "b": "Not surgical.",
-      "c": "Not just tray colors."
+      "a": "Rewards and tokens describe behavior modification (token economy), not milieu therapy.",
+      "b": "Exploring unconscious conflicts is psychodynamic psychotherapy, not use of the therapeutic environment.",
+      "c": "Graduated exposure to feared situations is systematic desensitization used for phobias."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Say “at least you’re alive” as the only response and leave"
+        "text": "Reassure the client that a prosthesis will make life the same as before"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "Forbid looking at the site"
+        "text": "Delay viewing the site until the client is discharged home"
       },
       {
         "id": "d",
-        "text": "Ignore the topic as unimportant"
+        "text": "Focus teaching on stump care and defer feelings to the psychologist"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Body image work is legitimate psychosocial care.",
     "distractorExplanations": {
-      "a": "Toxic positivity blocks processing.",
-      "c": "Gradual viewing may be therapeutic with support.",
-      "d": "Address psychosocial needs."
+      "a": "Promising life will be the same is false reassurance that brushes aside the client's grief over body change.",
+      "c": "Gradual viewing of the site with support helps adjustment; delaying it until discharge worsens body image issues.",
+      "d": "Body image concerns are part of nursing care; the nurse encourages expression rather than deferring it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1459,11 +1459,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Sharing details in the elevator for teaching without need"
+        "text": "Protect PHI, with no exceptions even when harm to others is threatened"
       },
       {
         "id": "b",
-        "text": "Posting client stories online anonymized poorly with identifiers"
+        "text": "Share PHI freely with the client's family since they are caregivers"
       },
       {
         "id": "c",
@@ -1471,15 +1471,15 @@
       },
       {
         "id": "d",
-        "text": "Promising never to report child abuse disclosures"
+        "text": "Protect PHI, but disclose any details the client's employer requests"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Tarasoff-type duties and mandated reporting create limits to confidentiality.",
     "distractorExplanations": {
-      "a": "No elevator PHI.",
-      "b": "No social media PHI.",
-      "d": "Abuse reporting is mandatory."
+      "a": "Duty-to-warn/protect and mandated abuse reporting are legal exceptions to confidentiality.",
+      "b": "Family members need the client's authorization to receive PHI, even when they are caregivers.",
+      "d": "Employers have no right to PHI without the client's authorization."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Elevate HOB, monitor SpO2/respiratory status, and report changes; administer ordered diuretics/O2 per plan"
+        "text": "Elevate HOB, monitor SpO2/respiratory status, and report changes"
       },
       {
         "id": "b",
-        "text": "Encourage large free-water boluses immediately"
+        "text": "Place flat with legs elevated to reduce edema, and recheck in 4 hours"
       },
       {
         "id": "c",
-        "text": "Place flat supine for comfort only without assessment"
+        "text": "Encourage oral fluids to thin secretions and monitor lung sounds"
       },
       {
         "id": "d",
-        "text": "Stop all ordered weights and I&O"
+        "text": "Hold daily weights and I&O until the crackles resolve"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Fluid overload threatens gas exchange; follow ABC and orders.",
+    "explanation": "Fluid overload threatens gas exchange; follow ABC and orders. Administer ordered diuretics/O2 per plan.",
     "distractorExplanations": {
-      "b": "Excess fluid worsens HF.",
-      "c": "Upright often helps breathing.",
-      "d": "Weights/I&O are essential monitoring."
+      "b": "Lying flat with legs up increases venous return and worsens pulmonary congestion; the HOB is raised.",
+      "c": "Extra fluid worsens overload in heart failure; fluids are usually restricted, not encouraged.",
+      "d": "Daily weights and I&O are key to tracking fluid status and continue during overload."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "IV insulin bolus by the LPN without order"
+        "text": "Glucagon 1 mg IM, then a complex-carbohydrate snack"
       },
       {
         "id": "b",
-        "text": "15 g rapid-acting carbohydrate, recheck per protocol (15-15 rule variants)"
+        "text": "15 g rapid-acting carbohydrate, recheck per protocol"
       },
       {
         "id": "c",
-        "text": "Ignoring diaphoresis and confusion"
+        "text": "Protein snack such as peanut butter, then recheck in 1 hour"
       },
       {
         "id": "d",
-        "text": "Exercise immediately without treating glucose"
+        "text": "A full meal with protein, then recheck at the next scheduled time"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Treat low glucose first; unresponsive clients need emergency glucagon/IV dextrose per protocol/RN-provider.",
+    "explanation": "Treat low glucose first; unresponsive clients need emergency glucagon/IV dextrose per protocol/RN-provider. This is the 15-15 rule.",
     "distractorExplanations": {
-      "a": "Insulin lowers glucose further.",
-      "c": "Symptoms need action.",
-      "d": "Exercise can worsen hypoglycemia."
+      "a": "Glucagon is for clients who cannot swallow or are unresponsive; a conscious client takes oral fast carbohydrate.",
+      "c": "Protein and fat slow glucose absorption; fast carbohydrate is given first, with a recheck in 15 minutes.",
+      "d": "A full meal acts too slowly and the recheck is needed in about 15 minutes, not at the next scheduled check."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Double doses if a meal is missed without guidance"
+        "text": "Avoid all vitamin K foods and report bleeding; keep INR appointments"
       },
       {
         "id": "b",
-        "text": "Start high-dose NSAIDs freely for pain without checking interactions"
+        "text": "Keep vitamin K consistent and use ibuprofen rather than acetaminophen"
       },
       {
         "id": "c",
-        "text": "Keep vitamin K intake consistent and report bleeding/bruising; keep INR appointments"
+        "text": "Keep vitamin K intake consistent and report bleeding/bruising"
       },
       {
         "id": "d",
-        "text": "Stop warfarin the day before dental cleaning without telling providers"
+        "text": "Keep vitamin K consistent and double the next dose if one is missed"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Anticoagulation teaching focuses on consistency, bleeding signs, and interaction awareness.",
+    "explanation": "Anticoagulation teaching focuses on consistency, bleeding signs, and interaction awareness. Keep INR appointments.",
     "distractorExplanations": {
-      "a": "Don’t self-adjust doses.",
-      "b": "NSAIDs increase bleed risk.",
-      "d": "Coordinate holds with providers."
+      "a": "Vitamin K intake should be consistent, not eliminated; avoiding it makes INR unstable.",
+      "b": "NSAIDs such as ibuprofen raise bleeding risk with warfarin; acetaminophen is preferred for minor pain.",
+      "d": "Missed warfarin doses are not doubled; clients take the missed dose the same day or follow provider instructions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Give another opioid dose for sleep"
+        "text": "Lower the PCA basal rate, recheck vital signs in 30 minutes, and report at shift end"
       },
       {
         "id": "b",
-        "text": "Leave to finish charting first"
+        "text": "Let the client sleep since pain is controlled, and recheck RR in 1 hour"
       },
       {
         "id": "c",
-        "text": "Encourage family to press the PCA button repeatedly"
+        "text": "Teach the family to press the PCA button when the client grimaces"
       },
       {
         "id": "d",
-        "text": "Stop the PCA/opioids per protocol, support airway/breathing, stimulate, and notify RN/provider; prepare naloxone as ordered"
+        "text": "Stop the PCA/opioids, support airway/breathing, stimulate, and notify RN/provider"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Opioid-induced respiratory depression is an emergency.",
+    "explanation": "Opioid-induced respiratory depression is an emergency. Prepare naloxone as ordered.",
     "distractorExplanations": {
-      "a": "More opioid worsens depression.",
-      "b": "Stay and intervene.",
-      "c": "Only the client presses PCA."
+      "a": "RR 6 with poor arousal is an emergency; the opioid is stopped and help called now, not reported at shift end.",
+      "b": "Difficulty arousing with RR 6 is opioid-induced respiratory depression, not restful sleep, and needs action now.",
+      "c": "PCA by proxy is unsafe; only the client presses the button, so sedation limits further dosing."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Breathe as rapidly as possible at all times"
+        "text": "Increase inspiratory volume and strengthen the diaphragm"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Hold breath for 2 minutes repeatedly"
+        "text": "Raise CO2 levels to stimulate the respiratory drive"
       },
       {
         "id": "d",
-        "text": "Avoid any controlled breathing techniques"
+        "text": "Shorten exhalation so more oxygen is inhaled per minute"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Pursed-lip breathing improves ventilation patterns in COPD.",
     "distractorExplanations": {
-      "a": "Tachypnea worsens trapping.",
-      "c": "Long breath holds unsafe.",
-      "d": "Techniques are helpful."
+      "a": "Strengthening the diaphragm is the goal of diaphragmatic breathing; pursed-lip breathing prolongs exhalation.",
+      "c": "Pursed-lip breathing helps empty trapped air and lower CO2 retention; it does not aim to raise CO2.",
+      "d": "Pursed-lip breathing lengthens exhalation to prevent air trapping; shortening it worsens hyperinflation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1727,23 +1727,23 @@
       },
       {
         "id": "b",
-        "text": "Ability to wiggle toes with warm pink color"
+        "text": "Warm, pink toes with brisk capillary refill and mild swelling"
       },
       {
         "id": "c",
-        "text": "Normal capillary refill <2–3 seconds"
+        "text": "Dull ache relieved by elevation and the ordered analgesic"
       },
       {
         "id": "d",
-        "text": "Increasing pain, pallor, paresthesia, pulselessness, paralysis (compartment syndrome signs)"
+        "text": "Increasing pain, pallor, paresthesia, pulselessness, paralysis"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Compartment syndrome is limb-threatening—escalate ASAP.",
+    "explanation": "Compartment syndrome is limb-threatening—escalate ASAP. These are compartment syndrome signs.",
     "distractorExplanations": {
       "a": "Mild itch can occur.",
-      "b": "Good NV status is reassuring.",
-      "c": "Normal CRT is expected."
+      "b": "Warm, pink toes with brisk refill show adequate perfusion; mild swelling is managed with elevation.",
+      "c": "Pain relieved by elevation and analgesics is expected; compartment syndrome pain is unrelieved and increasing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Facility-required method (often x-ray initially; pH/markings per policy)—never by air auscultation alone as sole method"
+        "text": "Facility-required method (often x-ray initially; pH/markings per policy)"
       },
       {
         "id": "b",
-        "text": "Instilling a large feeding immediately after blind insertion without verification"
+        "text": "Air bolus auscultation over the epigastrium as the sole check"
       },
       {
         "id": "c",
-        "text": "Asking the roommate if it looks right"
+        "text": "Observing for bubbling when the tube end is placed in a cup of water"
       },
       {
         "id": "d",
-        "text": "Checking only that tape is present"
+        "text": "Confirming the client can talk clearly and is not coughing after insertion"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Misplacement risks aspiration; follow current verification standards.",
+    "explanation": "Misplacement risks aspiration; follow current verification standards. Air auscultation alone is not acceptable.",
     "distractorExplanations": {
-      "b": "Verify first.",
-      "c": "Roommate opinion invalid.",
-      "d": "Tape ≠ correct placement."
+      "b": "Auscultating an air bolus is unreliable and cannot tell gastric from respiratory placement.",
+      "c": "Bubbling in water is an outdated, unreliable test that can mislead in either direction.",
+      "d": "Small-bore tubes can enter the airway with no coughing or voice change, so absence of symptoms proves nothing."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Bounding pulses and wet crackles as the only dehydration signs"
+        "text": "Bradycardia, moist mucous membranes, and pale dilute urine output"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "Jugular venous distention as classic dehydration"
+        "text": "Jugular venous distention, weight gain, and peripheral edema"
       },
       {
         "id": "d",
-        "text": "Polyuria with dilute urine as dehydration hallmark"
+        "text": "Tachycardia, dry mucous membranes, and dilute high-volume urine"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Volume depletion signs guide fluid resuscitation orders and monitoring.",
     "distractorExplanations": {
-      "a": "Those suggest fluid overload.",
-      "c": "JVD suggests overload/right heart issues.",
-      "d": "Oliguria/concentrated urine more typical."
+      "a": "Dehydration causes tachycardia, dry membranes, and concentrated urine; these findings suggest normal or excess volume.",
+      "c": "JVD, weight gain, and edema are signs of fluid overload, the opposite of dehydration.",
+      "d": "In dehydration the kidneys conserve water, so urine is concentrated and low in volume, not dilute."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Once weekly only regardless of meals"
+        "text": "Thirty to sixty minutes before meals like regular insulin"
       },
       {
         "id": "b",
-        "text": "Without regard to food, then leaving the client NPO for hours intentionally"
+        "text": "At bedtime with a snack to cover overnight glucose levels"
       },
       {
         "id": "c",
-        "text": "At mealtime / when the tray is present per timing rules (onset ~15 min)"
+        "text": "At mealtime / when the tray is present per timing rules"
       },
       {
         "id": "d",
-        "text": "Mixed freely into IV TPN bags by LPN without protocol"
+        "text": "Once daily at the same time each morning like insulin glargine"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Match rapid insulin to carbohydrate intake to prevent hypoglycemia.",
+    "explanation": "Match rapid insulin to carbohydrate intake to prevent hypoglycemia. Onset is about 15 minutes.",
     "distractorExplanations": {
-      "a": "Meal-related dosing.",
-      "b": "Food timing critical.",
-      "d": "IV insulin is RN/protocol territory typically."
+      "a": "Giving lispro 30–60 minutes early follows regular insulin timing and risks hypoglycemia before the meal.",
+      "b": "Overnight coverage comes from basal insulin; rapid-acting lispro at bedtime risks nocturnal hypoglycemia.",
+      "d": "Once-daily dosing describes basal insulin such as glargine, not rapid-acting mealtime lispro."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1855,15 +1855,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Cyanosis as the earliest reliable sign"
+        "text": "Cyanosis of the lips and nail beds"
       },
       {
         "id": "b",
-        "text": "Bradypnea as the first change in all clients"
+        "text": "Bradycardia and hypotension"
       },
       {
         "id": "c",
-        "text": "Warm dry skin"
+        "text": "Decreased LOC and bradypnea"
       },
       {
         "id": "d",
@@ -1873,9 +1873,9 @@
     "correctOptionId": "d",
     "explanation": "Late signs include cyanosis; act on early mental status/VS changes.",
     "distractorExplanations": {
-      "a": "Cyanosis is late.",
-      "b": "Often tachypnea first.",
-      "c": "Cool/clammy or diaphoresis may occur—not warm dry as classic early hypoxia."
+      "a": "Cyanosis is a late sign of hypoxia; earlier signs are restlessness and tachycardia.",
+      "b": "Bradycardia and hypotension appear late as hypoxia worsens; early on the heart rate rises.",
+      "c": "Decreasing LOC and slowed breathing are late, ominous signs; early hypoxia causes restlessness and tachypnea."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop the transfusion, keep IV line open with NS per protocol, notify provider, and follow transfusion reaction steps"
+        "text": "Stop the transfusion, keep IV line open with NS, and notify provider"
       },
       {
         "id": "b",
-        "text": "Speed up the transfusion to finish faster"
+        "text": "Slow the transfusion rate, give acetaminophen, and recheck in 15 minutes"
       },
       {
         "id": "c",
-        "text": "Ignore symptoms for 30 minutes"
+        "text": "Stop the transfusion, flush the blood tubing with D5W, and notify provider"
       },
       {
         "id": "d",
-        "text": "Give a second unit immediately through the same tubing without evaluation"
+        "text": "Finish the unit quickly, then report the symptoms to the provider"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Suspect acute hemolytic/febrile reaction—stop blood, maintain access, escalate.",
+    "explanation": "Suspect acute hemolytic/febrile reaction—stop blood, maintain access, escalate. Follow transfusion reaction steps per protocol.",
     "distractorExplanations": {
-      "b": "Do not speed up.",
-      "c": "Immediate action required.",
-      "d": "Don’t add more blood."
+      "b": "Chills, fever, and back pain may be a hemolytic reaction; the transfusion is stopped, not slowed.",
+      "c": "D5W hemolyzes red cells; the line is kept open with normal saline through new tubing.",
+      "d": "Continuing the transfusion gives more incompatible blood; the reaction requires stopping it immediately."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Pulling by the weak arm to reposition"
+        "text": "Reposition the client by pulling on the weak arm, which has less pain sensation"
       },
       {
         "id": "b",
-        "text": "Approach from the intact side as appropriate, protect the weak side, and use assistive devices per PT plan"
+        "text": "Approach from the intact side and protect the weak side"
       },
       {
         "id": "c",
-        "text": "Ignoring aspiration risk at meals"
+        "text": "Place food on the left side of the mouth and offer thin liquids"
       },
       {
         "id": "d",
-        "text": "Placing food on the weak side of the mouth intentionally without assessment"
+        "text": "Hold the cane in the hand on the weak side and advance the strong leg first"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Safety and rehab principles guide hemiparesis care; dysphagia screens matter.",
+    "explanation": "Safety and rehab principles guide hemiparesis care; dysphagia screens matter. Use assistive devices per the PT plan.",
     "distractorExplanations": {
-      "a": "Never pull weak/flaccid shoulders.",
-      "c": "Aspiration is major risk.",
-      "d": "Food placement follows swallow evaluation."
+      "a": "Pulling on a weak arm can cause shoulder subluxation; reduced sensation increases injury risk.",
+      "c": "Food goes on the unaffected (right) side, and thin liquids raise aspiration risk with dysphagia.",
+      "d": "The cane is held on the strong side and advanced with the weak leg for support."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1954,11 +1954,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved appetite only as toxicity"
+        "text": "Fine hand tremor, polyuria, and a persistent metallic taste in the mouth"
       },
       {
         "id": "b",
-        "text": "Isolated happiness without physical signs"
+        "text": "Tinnitus, hearing loss, and rising serum creatinine"
       },
       {
         "id": "c",
@@ -1966,15 +1966,15 @@
       },
       {
         "id": "d",
-        "text": "Hyperactivity with tachycardia exclusively as the classic dig toxicity pattern"
+        "text": "Hyperactivity with tachycardia and flushing as the classic toxicity pattern"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Narrow therapeutic index—monitor apical pulse and labs (K+, dig level) per orders.",
     "distractorExplanations": {
-      "a": "GI/visual/cardiac signs are classic.",
-      "b": "Not a mood diagnosis.",
-      "d": "Bradycardia more classic than isolated tachycardia."
+      "a": "Fine tremor, polyuria, and metallic taste are typical lithium side effects, not digoxin toxicity.",
+      "b": "Tinnitus and rising creatinine suggest ototoxic/nephrotoxic drugs like aminoglycosides or vancomycin.",
+      "d": "Digoxin toxicity typically causes bradycardia and dysrhythmias with GI and visual symptoms, not hyperactivity."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"

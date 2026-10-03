@@ -7,7 +7,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Wind to AC"
+        "text": "Sunlight to AC electricity"
       },
       {
         "id": "b",
@@ -15,19 +15,19 @@
       },
       {
         "id": "c",
-        "text": "Heat only to gas"
+        "text": "Solar heat to DC electricity"
       },
       {
         "id": "d",
-        "text": "Water to hydrogen"
+        "text": "Sunlight to stored chemical energy"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Sunlight to DC electricity.",
     "distractorExplanations": {
-      "a": "Not the best answer: Wind to AC only.",
-      "c": "Not the best answer: Heat only to gas.",
-      "d": "Not the best answer: Water to hydrogen always."
+      "a": "PV cells produce direct current; AC appears only after an inverter converts the module's DC output.",
+      "c": "Confuses PV with thermal conversion; PV cells use the photovoltaic effect on photons, and heat actually lowers cell output.",
+      "d": "Storing chemical energy is what a battery does; a PV cell generates electricity and stores nothing itself."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -40,15 +40,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Insulation R-value"
+        "text": "Insulation thermal R-value"
       },
       {
         "id": "b",
-        "text": "Inverter efficiency"
+        "text": "Module conversion efficiency"
       },
       {
         "id": "c",
-        "text": "Wire ampacity"
+        "text": "Inverter rated AC output"
       },
       {
         "id": "d",
@@ -58,9 +58,9 @@
     "correctOptionId": "d",
     "explanation": "Solar radiation received.",
     "distractorExplanations": {
-      "a": "Not the best answer: Insulation R-value only.",
-      "b": "Not the best answer: Inverter efficiency only.",
-      "c": "Not the best answer: Wire ampacity only."
+      "a": "Confuses insolation (solar energy received) with insulation, the building-envelope thermal resistance rated by R-value.",
+      "b": "Efficiency is the share of incoming light a module converts; insolation is the solar resource itself, before any conversion.",
+      "c": "Inverter AC rating describes equipment capacity, not the solar radiation that reaches the site or array surface."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -77,23 +77,23 @@
       },
       {
         "id": "b",
-        "text": "Measure wind speed"
+        "text": "Predict real rooftop output on a hot summer day"
       },
       {
         "id": "c",
-        "text": "Set utility rates"
+        "text": "Set the coldest-day Voc limit for string sizing"
       },
       {
         "id": "d",
-        "text": "Size diesel gensets"
+        "text": "Rate inverter efficiency under CEC weighted conditions"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Rate module power under standard test conditions.",
     "distractorExplanations": {
-      "b": "Not the best answer: Measure wind speed.",
-      "c": "Not the best answer: Set utility rates.",
-      "d": "Not the best answer: Size diesel gensets only."
+      "b": "STC (1000 W/m², 25 °C cell, AM1.5) is a lab reference; hot field conditions give lower output than the STC rating.",
+      "c": "Cold-day Voc comes from applying temperature coefficients to the STC value; STC itself is only the rating reference point.",
+      "d": "Confuses STC module ratings with the CEC weighted efficiency method used to rate inverters."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -172,11 +172,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Minimum wire size"
+        "text": "Open-circuit voltage of the string"
       },
       {
         "id": "b",
-        "text": "Maximum utility fee"
+        "text": "Grid voltage and frequency"
       },
       {
         "id": "c",
@@ -184,15 +184,15 @@
       },
       {
         "id": "d",
-        "text": "Module color"
+        "text": "Short-circuit current of the array"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Maximum power point of the array.",
     "distractorExplanations": {
-      "a": "Not the best answer: Minimum wire size.",
-      "b": "Not the best answer: Maximum utility fee.",
-      "d": "Not the best answer: Module color."
+      "a": "Voc occurs at zero current, so zero power; MPPT operates near Vmp, well below Voc.",
+      "b": "Tracking grid voltage and frequency is the inverter's synchronization and anti-islanding function, not MPPT.",
+      "d": "Isc occurs at zero voltage, so zero power; the maximum power point sits at Imp and Vmp on the IV curve knee."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -238,11 +238,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always increases power"
+        "text": "Raises output by cooling the shaded cells"
       },
       {
         "id": "b",
-        "text": "Only cools modules helpfully"
+        "text": "Lowers string voltage but leaves current unchanged"
       },
       {
         "id": "c",
@@ -250,15 +250,15 @@
       },
       {
         "id": "d",
-        "text": "Is required for MPPT"
+        "text": "Reduces power in proportion to shaded area"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Can disproportionately cut string current.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always increases power.",
-      "b": "Not the best answer: Only cools modules helpfully.",
-      "d": "Not the best answer: Is required for MPPT."
+      "a": "Cooler cells do gain voltage, but losing irradiance cuts current far more, so shading lowers string output overall.",
+      "b": "In a series string the weakest cell limits the current, so shading mainly cuts current (or forces bypass diodes on).",
+      "d": "Series wiring makes losses out of proportion: shading a small part of one module can drag down the whole string."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -271,15 +271,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase grid frequency"
+        "text": "Block reverse current from the grid at night"
       },
       {
         "id": "b",
-        "text": "Replace fuses"
+        "text": "Protect string conductors from overcurrent"
       },
       {
         "id": "c",
-        "text": "Charge batteries directly"
+        "text": "Raise module voltage when cells are shaded"
       },
       {
         "id": "d",
@@ -289,9 +289,9 @@
     "correctOptionId": "d",
     "explanation": "Mitigate shading hotspot effects in modules.",
     "distractorExplanations": {
-      "a": "Not the best answer: Increase grid frequency.",
-      "b": "Not the best answer: Replace fuses always.",
-      "c": "Not the best answer: Charge batteries directly always."
+      "a": "Confuses bypass diodes with blocking diodes, which prevent reverse current flow; bypass diodes route current around shaded cells.",
+      "b": "Overcurrent protection is the job of fuses or breakers (OCPD); bypass diodes do not interrupt fault current.",
+      "c": "A conducting bypass diode removes its cell substring from the circuit, which lowers module voltage rather than raising it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,15 +304,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Identical terms"
+        "text": "Energy over time vs power density"
       },
       {
         "id": "b",
-        "text": "Only wind metrics"
+        "text": "Direct beam vs diffuse sky light"
       },
       {
         "id": "c",
-        "text": "Only inverter settings"
+        "text": "Light at STC vs light at NOCT"
       },
       {
         "id": "d",
@@ -322,9 +322,9 @@
     "correctOptionId": "d",
     "explanation": "Power density vs energy over time.",
     "distractorExplanations": {
-      "a": "Not the best answer: Identical terms always.",
-      "b": "Not the best answer: Only wind metrics.",
-      "c": "Not the best answer: Only inverter settings."
+      "a": "Reverses the terms: irradiance is instantaneous power per area (W/m²), irradiation is energy accumulated over time (kWh/m²).",
+      "b": "Direct vs diffuse describes components of sunlight (DNI vs DHI); both can be expressed as irradiance or irradiation.",
+      "c": "STC and NOCT are module test conditions, not the distinction between a power rate and accumulated energy."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -337,15 +337,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Identical"
+        "text": "Thin-film has the higher efficiency per area"
       },
       {
         "id": "b",
-        "text": "Only differ in frame color"
+        "text": "c-Si loses less power per degree of heat"
       },
       {
         "id": "c",
-        "text": "Thin-film always higher Voc identically"
+        "text": "Same temp coefficient, differ only in cost"
       },
       {
         "id": "d",
@@ -355,9 +355,9 @@
     "correctOptionId": "d",
     "explanation": "Different technologies/temp/shade behaviors.",
     "distractorExplanations": {
-      "a": "Not the best answer: Identical always.",
-      "b": "Not the best answer: Only differ in frame color.",
-      "c": "Not the best answer: Thin-film always higher Voc identically."
+      "a": "Crystalline silicon modules typically have higher efficiency per area; thin-film usually needs more area per watt.",
+      "b": "Thin-film (for example CdTe) usually has a smaller temperature coefficient than c-Si, so c-Si loses more in heat.",
+      "c": "The technologies differ in temperature coefficient, efficiency, and shade response, not just in price."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,15 +370,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Reduce all irradiance"
+        "text": "Increase output only for monofacial modules"
       },
       {
         "id": "b",
-        "text": "Replace tilt"
+        "text": "Measure the diffuse share of sky light"
       },
       {
         "id": "c",
-        "text": "Eliminate soiling"
+        "text": "Block direct beam light at low sun angles"
       },
       {
         "id": "d",
@@ -388,9 +388,9 @@
     "correctOptionId": "d",
     "explanation": "Reflect extra light onto modules.",
     "distractorExplanations": {
-      "a": "Not the best answer: Reduce all irradiance always.",
-      "b": "Not the best answer: Replace tilt.",
-      "c": "Not the best answer: Eliminate soiling."
+      "a": "Bifacial modules gain most from ground-reflected light because their rear side captures it; monofacial gain is small.",
+      "b": "Albedo is surface reflectance; the diffuse fraction of sky irradiance is a separate measurement (DHI vs GHI).",
+      "c": "Blocking beam light describes shading from objects; albedo adds reflected light rather than removing it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -403,15 +403,15 @@
     "options": [
       {
         "id": "a",
-        "text": "National electrical code article"
+        "text": "Module power rating at 25 °C cell temperature"
       },
       {
         "id": "b",
-        "text": "Inverter warranty"
+        "text": "Maximum cell temperature before warranty voids"
       },
       {
         "id": "c",
-        "text": "Battery chemistry"
+        "text": "Inverter derating point at high ambient heat"
       },
       {
         "id": "d",
@@ -421,9 +421,9 @@
     "correctOptionId": "d",
     "explanation": "Module operating temperature characterization.",
     "distractorExplanations": {
-      "a": "Not the best answer: National electrical code article only.",
-      "b": "Not the best answer: Inverter warranty only.",
-      "c": "Not the best answer: Battery chemistry."
+      "a": "A 25 °C cell temperature is the STC rating condition; NOCT describes the warmer cell temperature reached in operation.",
+      "b": "NOCT is a characterization test value (about 800 W/m², 20 °C ambient), not a warranty temperature limit.",
+      "c": "Inverter thermal derating is an inverter specification; NOCT is a module temperature characterization."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "At night"
+        "text": "At NOCT typically"
       },
       {
         "id": "b",
@@ -444,7 +444,7 @@
       },
       {
         "id": "c",
-        "text": "Random"
+        "text": "At open circuit"
       },
       {
         "id": "d",
@@ -454,9 +454,9 @@
     "correctOptionId": "d",
     "explanation": "At STC typically.",
     "distractorExplanations": {
-      "a": "Not the best answer: At night.",
+      "a": "Datasheets list NOCT values separately; the nameplate Imp/Vmp ratings are given at standard test conditions.",
       "b": "Not the best answer: At short circuit only.",
-      "c": "Not the best answer: Random."
+      "c": "Open circuit gives Voc at zero current; Imp and Vmp are the current and voltage at the maximum power point."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -502,7 +502,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Safe to touch"
+        "text": "Energized only while the inverter runs"
       },
       {
         "id": "b",
@@ -510,19 +510,19 @@
       },
       {
         "id": "c",
-        "text": "De-energized at night only as sole hazard"
+        "text": "De-energized once the AC disconnect opens"
       },
       {
         "id": "d",
-        "text": "Low voltage always harmless"
+        "text": "Below shock hazard at low irradiance"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Energized whenever illuminated.",
     "distractorExplanations": {
-      "a": "Not the best answer: Safe to touch always.",
-      "c": "Not the best answer: De-energized at night only as sole hazard.",
-      "d": "Not the best answer: Low voltage always harmless."
+      "a": "Modules produce voltage whenever light hits them, even if the inverter is off or faulted.",
+      "c": "Opening the AC disconnect isolates the inverter output; array DC conductors stay energized in daylight.",
+      "d": "Module voltage rises close to full Voc even at low light, so dim conditions can still deliver dangerous DC voltage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase production"
+        "text": "Protect modules from arc-fault damage"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Remove grounding"
+        "text": "Isolate the inverter from utility outages"
       },
       {
         "id": "d",
-        "text": "Eliminate permits"
+        "text": "Limit backfeed current at the main panel"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Reduce shock hazard for first responders.",
     "distractorExplanations": {
-      "a": "Not the best answer: Increase production.",
-      "c": "Not the best answer: Remove grounding.",
-      "d": "Not the best answer: Eliminate permits."
+      "a": "Arc-fault detection (AFCI) addresses arcing; rapid shutdown limits voltage in the array for firefighter safety.",
+      "c": "Disconnecting on loss of grid is anti-islanding protection, a separate inverter function from rapid shutdown.",
+      "d": "Backfeed limits come from busbar/breaker sizing rules (such as the 120% rule), not from rapid shutdown."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -572,23 +572,23 @@
       },
       {
         "id": "b",
-        "text": "Only neutral to hot"
+        "text": "The neutral conductor to module frames"
       },
       {
         "id": "c",
-        "text": "Only frames to each other without GEC path"
+        "text": "The system's grounded conductor to earth"
       },
       {
         "id": "d",
-        "text": "Only inverters to Wi-Fi"
+        "text": "Lightning protection rods to module frames"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Non-current-carrying metal parts to ground.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only neutral to hot.",
-      "c": "Not the best answer: Only frames to each other without GEC path.",
-      "d": "Not the best answer: Only inverters to Wi-Fi."
+      "b": "Bonding neutral to equipment frames downstream of the main bonding jumper creates objectionable neutral current on metal parts.",
+      "c": "Connecting a system conductor to earth is system grounding; equipment grounding bonds the exposed metal enclosures and frames.",
+      "d": "Lightning protection is a separate system; equipment grounding provides a fault-current path for exposed metal parts."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,7 +601,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Modules from clouds"
+        "text": "Personnel from ground-fault shock"
       },
       {
         "id": "b",
@@ -609,19 +609,19 @@
       },
       {
         "id": "c",
-        "text": "Inverters from firmware"
+        "text": "Equipment from lightning voltage surges"
       },
       {
         "id": "d",
-        "text": "Batteries from chemistry"
+        "text": "Conductors from series arcing faults"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Conductors/equipment from overcurrent.",
     "distractorExplanations": {
-      "a": "Not the best answer: Modules from clouds.",
-      "c": "Not the best answer: Inverters from firmware.",
-      "d": "Not the best answer: Batteries from chemistry."
+      "a": "Protecting people from ground-fault shock is the role of GFCI/GFP devices, not of fuses or breakers sized for overcurrent.",
+      "c": "Voltage surges are handled by surge protective devices (SPDs); OCPDs respond to excess current, not transient voltage.",
+      "d": "Series arcs draw little extra current, so arc-fault circuit interrupters, not OCPDs, are required to detect them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "Hidden in attic"
+        "text": "Installed only on the roof near the array"
       },
       {
         "id": "c",
-        "text": "Omitted if microinverters"
+        "text": "Omitted when microinverters are used"
       },
       {
         "id": "d",
-        "text": "Only outdoors unlocked always without rules"
+        "text": "Locked closed to prevent tampering"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Readily accessible as required.",
     "distractorExplanations": {
-      "b": "Not the best answer: Hidden in attic always.",
-      "c": "Not the best answer: Omitted if microinverters.",
-      "d": "Not the best answer: Only outdoors unlocked always without rules."
+      "b": "Code locates disconnects where readily accessible; it does not restrict them to the rooftop beside the array.",
+      "c": "Microinverter systems still need a means of disconnect; the AC side requires one per code.",
+      "d": "Lockout is applied in the open (off) position for safe work; locking a disconnect closed defeats its purpose."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Increases shade tolerance"
+        "text": "Detects ground faults on array conductors"
       },
       {
         "id": "c",
-        "text": "Replaces grounding"
+        "text": "De-energizes conductors for firefighters"
       },
       {
         "id": "d",
-        "text": "Is optional decoration"
+        "text": "Limits current to the conductor ampacity"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Detects/mitigates certain arcing faults.",
     "distractorExplanations": {
-      "b": "Not the best answer: Increases shade tolerance.",
-      "c": "Not the best answer: Replaces grounding.",
-      "d": "Not the best answer: Is optional decoration."
+      "b": "Ground-fault detection is a separate protective function (GFDI/GFP); arc-fault protection targets arcing faults.",
+      "c": "Lowering array voltage for first responders is rapid shutdown, a different NEC requirement from arc-fault protection.",
+      "d": "Holding current within conductor ampacity is the job of overcurrent protective devices, not arc-fault detection."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional"
+        "text": "Required only for AC panels, not DC gear"
       },
       {
         "id": "b",
@@ -708,19 +708,19 @@
       },
       {
         "id": "c",
-        "text": "Only for AC not DC"
+        "text": "Waived for equipment rated 600 V or less"
       },
       {
         "id": "d",
-        "text": "Only if inspector asks verbally"
+        "text": "Set by the inspector at final inspection"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Required around electrical equipment.",
     "distractorExplanations": {
-      "a": "Not the best answer: Optional.",
-      "c": "Not the best answer: Only for AC not DC.",
-      "d": "Not the best answer: Only if inspector asks verbally."
+      "a": "Working-space rules apply to electrical equipment likely to need examination or servicing while energized, AC or DC.",
+      "c": "NEC working-space clearances specifically cover equipment of 1000 V or less; low voltage does not waive them.",
+      "d": "Clearance distances are defined in the electrical code, not chosen case by case by the inspector."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Never for solar"
+        "text": "Required only on roofs steeper than 6:12"
       },
       {
         "id": "c",
-        "text": "Only below 4 feet"
+        "text": "Required starting at 10 feet in construction"
       },
       {
         "id": "d",
-        "text": "Replaced by sneakers"
+        "text": "Satisfied by a ladder tied off at the eave"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Required when fall hazards exist.",
     "distractorExplanations": {
-      "b": "Not the best answer: Never for solar.",
-      "c": "Not the best answer: Only below 4 feet always.",
-      "d": "Not the best answer: Replaced by sneakers."
+      "b": "Low-slope roofs still need fall protection at unprotected edges; roof pitch changes the method, not the need.",
+      "c": "OSHA construction fall-protection trigger is 6 feet; 10 feet is the old scaffold threshold, not the general rule.",
+      "d": "A secured ladder is for access only; work on the roof surface still needs guardrails, nets, or a personal fall arrest system."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No extra hazards"
+        "text": "Shock hazards only while the grid is up"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "Only weight"
+        "text": "Hazards limited to their added roof weight"
       },
       {
         "id": "d",
-        "text": "Only noise"
+        "text": "No new hazards once the DC disconnect opens"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Chemical, arc, and stored energy hazards.",
     "distractorExplanations": {
-      "a": "Not the best answer: No extra hazards.",
-      "c": "Not the best answer: Only weight.",
-      "d": "Not the best answer: Only noise."
+      "a": "Batteries hold stored energy with or without utility power and can deliver dangerous fault current at any time.",
+      "c": "Weight is a structural concern, but batteries also bring chemical, arc-flash, thermal, and stored-energy hazards.",
+      "d": "Opening a disconnect does not discharge the battery; its terminals and internal cells remain energized."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,15 +865,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional stickers"
+        "text": "Are limited to the module nameplate label"
       },
       {
         "id": "b",
-        "text": "Only manufacturer logos"
+        "text": "Apply only to the utility meter location"
       },
       {
         "id": "c",
-        "text": "Only in Spanish"
+        "text": "Are set by the installer's own preference"
       },
       {
         "id": "d",
@@ -883,9 +883,9 @@
     "correctOptionId": "d",
     "explanation": "Identify PV systems/hazards per code.",
     "distractorExplanations": {
-      "a": "Not the best answer: Optional stickers.",
-      "b": "Not the best answer: Only manufacturer logos.",
-      "c": "Not the best answer: Only in Spanish always."
+      "a": "Code requires system labels (disconnects, rapid shutdown, sources, voltages) beyond the factory module nameplate.",
+      "b": "PV labels are required at disconnects, conduit runs, combiners, and service equipment, not just at the meter.",
+      "c": "Label wording, placement, and durability are code-defined, not left to installer preference."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,11 +898,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Color"
+        "text": "Conductor length and voltage drop only"
       },
       {
         "id": "b",
-        "text": "Length only always ignoring temp"
+        "text": "Module wattage and inverter efficiency"
       },
       {
         "id": "c",
@@ -910,15 +910,15 @@
       },
       {
         "id": "d",
-        "text": "Brand"
+        "text": "Breaker rating alone, not ambient heat"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Temperature, bundling, conditions of use.",
     "distractorExplanations": {
-      "a": "Not the best answer: Color only.",
-      "b": "Not the best answer: Length only always ignoring temp.",
-      "d": "Not the best answer: Brand only."
+      "a": "Confuses voltage-drop sizing (driven by length) with ampacity, which depends on temperature, bundling, and conditions of use.",
+      "b": "Wattage and efficiency affect the current calculation inputs but are not the ampacity adjustment factors.",
+      "d": "OCPD rating protects the conductor, but ampacity must still be corrected for ambient temperature and fill."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Addresses certain DC/AC ground faults per design"
+        "text": "Addresses certain DC/AC ground faults"
       },
       {
         "id": "b",
-        "text": "Removes need for EGC"
+        "text": "Removes the need for equipment grounding"
       },
       {
         "id": "c",
-        "text": "Is only for wind"
+        "text": "Detects series arcing in DC conductors"
       },
       {
         "id": "d",
-        "text": "Replaces disconnects"
+        "text": "Trips on overcurrent in string conductors"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Addresses certain DC/AC ground faults per design.",
+    "explanation": "Addresses certain DC/AC ground faults per design. Ground-fault protection detects unintended current to ground in PV and AC circuits as the system design requires.",
     "distractorExplanations": {
-      "b": "Not the best answer: Removes need for EGC.",
-      "c": "Not the best answer: Is only for wind.",
-      "d": "Not the best answer: Replaces disconnects."
+      "b": "Ground-fault protection relies on the equipment grounding path; it does not replace the EGC.",
+      "c": "Series arcing is detected by arc-fault protection (AFCI), a separate function from ground-fault protection.",
+      "d": "Tripping on excess current is the job of fuses or breakers (OCPD), not ground-fault detection."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,11 +964,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Anyone with a ladder"
+        "text": "Anyone holding a contractor license"
       },
       {
         "id": "b",
-        "text": "Homeowners"
+        "text": "Anyone with an OSHA 10 card"
       },
       {
         "id": "c",
@@ -976,15 +976,15 @@
       },
       {
         "id": "d",
-        "text": "Sales reps"
+        "text": "Supervisors, not field crews"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Train/skills for the work.",
     "distractorExplanations": {
-      "a": "Not the best answer: Anyone with a ladder.",
-      "b": "Not the best answer: Homeowners always.",
-      "d": "Not the best answer: Sales reps always."
+      "a": "A business license does not establish the training and skills for specific electrical work and its hazards.",
+      "b": "OSHA 10 is general safety awareness; a qualified person needs training specific to the equipment and hazards.",
+      "d": "Qualification is about training and demonstrated skills for the task, not job title or seniority."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only charge EVs"
+        "text": "Convert combined string DC to AC centrally"
       },
       {
         "id": "b",
-        "text": "Replace racking"
+        "text": "Optimize module DC before a string inverter"
       },
       {
         "id": "c",
-        "text": "Eliminate all wiring"
+        "text": "Charge batteries directly from module DC"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "Convert per-module/panel level DC to AC.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only charge EVs.",
-      "b": "Not the best answer: Replace racking.",
-      "c": "Not the best answer: Eliminate all wiring."
+      "a": "Central conversion of combined strings describes a string or central inverter, not module-level microinverters.",
+      "b": "DC conditioning ahead of a string inverter is what DC optimizers do; microinverters output AC at each module.",
+      "c": "Regulating battery charging from PV is the charge controller's role, not a microinverter's."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,7 +1063,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace utility meters"
+        "text": "Module-level DC to AC conversion at each panel"
       },
       {
         "id": "b",
@@ -1071,19 +1071,19 @@
       },
       {
         "id": "c",
-        "text": "Generate wind"
+        "text": "Central array MPPT inside the string inverter"
       },
       {
         "id": "d",
-        "text": "Store rainwater"
+        "text": "Battery charge regulation from the PV array"
       }
     ],
     "correctOptionId": "b",
     "explanation": "DC module-level power electronics / monitoring.",
     "distractorExplanations": {
-      "a": "Not the best answer: Replace utility meters.",
-      "c": "Not the best answer: Generate wind.",
-      "d": "Not the best answer: Store rainwater."
+      "a": "Converting to AC at each module describes microinverters; optimizers keep the output DC and feed a string inverter.",
+      "c": "Optimizers move MPPT to each module; central MPPT in the string inverter is the setup they are added to improve.",
+      "d": "Battery charge regulation is done by a charge controller, not by module-level optimizers."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1100,23 +1100,23 @@
       },
       {
         "id": "b",
-        "text": "Invert to AC"
+        "text": "Convert combined string DC into grid AC"
       },
       {
         "id": "c",
-        "text": "Store modules"
+        "text": "Regulate battery charging from the array"
       },
       {
         "id": "d",
-        "text": "Replace grounding"
+        "text": "Bond module frames to the grounding electrode"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Combine strings with OCPD/monitoring as designed.",
     "distractorExplanations": {
-      "b": "Not the best answer: Invert to AC.",
-      "c": "Not the best answer: Store modules.",
-      "d": "Not the best answer: Replace grounding."
+      "b": "DC-to-AC conversion is the inverter's job; a combiner only parallels strings and houses their protection.",
+      "c": "Charge regulation is done by a charge controller; combiners join strings and hold string fuses.",
+      "d": "Frame bonding is done by the equipment grounding conductor system, not by the combiner's function."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1129,15 +1129,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only AC loads"
+        "text": "Inverter AC output to loads"
       },
       {
         "id": "b",
-        "text": "Only shading"
+        "text": "Grid export under net metering"
       },
       {
         "id": "c",
-        "text": "Only permits"
+        "text": "Module-level rapid shutdown"
       },
       {
         "id": "d",
@@ -1147,9 +1147,9 @@
     "correctOptionId": "d",
     "explanation": "Battery charging from PV.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only AC loads.",
-      "b": "Not the best answer: Only shading.",
-      "c": "Not the best answer: Only permits."
+      "a": "Delivering AC to loads is the inverter's function; charge controllers regulate DC charging of batteries.",
+      "b": "Net metering export is handled by the inverter and utility meter, not by a battery charge controller.",
+      "c": "Rapid shutdown is provided by module-level devices or initiators, not by battery charge controllers."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only sunlight heat"
+        "text": "AC energy directly from the grid"
       },
       {
         "id": "b",
-        "text": "Only AC directly without conversion concepts"
+        "text": "Excess heat from the PV modules"
       },
       {
         "id": "c",
-        "text": "Only rain"
+        "text": "Static charge from modules"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "Chemical energy for later use.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only sunlight heat.",
-      "b": "Not the best answer: Only AC directly without conversion concepts.",
-      "c": "Not the best answer: Only rain."
+      "a": "Batteries store energy chemically as DC; grid AC must be rectified before it can charge them.",
+      "b": "Storing heat is thermal storage; electrochemical batteries store chemical energy, not module waste heat.",
+      "c": "Batteries store energy through electrochemical reactions, not as static charge like a capacitor."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Modules from sun"
+        "text": "DC array conductors from the inverter input"
       },
       {
         "id": "b",
-        "text": "Racking from roof"
+        "text": "The service drop from the main panel bus"
       },
       {
         "id": "c",
-        "text": "Wi-Fi"
+        "text": "Battery bank from the charge controller"
       },
       {
         "id": "d",
-        "text": "Inverter output from premises/utility as required"
+        "text": "Inverter output from premises/utility"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Inverter output from premises/utility as required.",
+    "explanation": "Inverter output from premises/utility as required. The AC disconnect isolates the inverter's AC output from premises wiring and the utility where code requires it.",
     "distractorExplanations": {
-      "a": "Not the best answer: Modules from sun.",
-      "b": "Not the best answer: Racking from roof.",
-      "c": "Not the best answer: Wi-Fi."
+      "a": "Isolating array conductors from the inverter input is the DC disconnect's job, not the AC disconnect's.",
+      "b": "Separating the utility service from the building is the main service disconnect, not the PV AC disconnect.",
+      "c": "Battery isolation uses a DC battery disconnect; the AC disconnect sits on the inverter output."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1228,11 +1228,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only weather apps"
+        "text": "Utility tariff and billing"
       },
       {
         "id": "b",
-        "text": "Only invoices"
+        "text": "Roof structural loading"
       },
       {
         "id": "c",
@@ -1240,15 +1240,15 @@
       },
       {
         "id": "d",
-        "text": "Only bird nests"
+        "text": "Customer usage only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Production and faults.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only weather apps.",
-      "b": "Not the best answer: Only invoices.",
-      "d": "Not the best answer: Only bird nests."
+      "a": "Billing data comes from the utility; PV monitoring tracks system production and fault alerts.",
+      "b": "Structural loading is assessed by engineering review, not by PV production monitoring.",
+      "d": "Consumption monitoring can be added, but PV monitoring's core job is production and fault tracking."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1261,11 +1261,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Be wood scraps"
+        "text": "Be sized by module weight alone, not wind"
       },
       {
         "id": "b",
-        "text": "Float freely"
+        "text": "Bond to the neutral conductor at the array"
       },
       {
         "id": "c",
@@ -1273,15 +1273,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore wind"
+        "text": "Follow the roof pitch with no wind or snow load review"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Support loads and meet structural/attachment design.",
     "distractorExplanations": {
-      "a": "Not the best answer: Be wood scraps always.",
-      "b": "Not the best answer: Float freely.",
-      "d": "Not the best answer: Ignore wind."
+      "a": "Racking design must cover wind uplift and snow loads, not just the dead weight of the modules.",
+      "b": "Racking is bonded to the equipment grounding system; bonding to neutral at the array is a code violation.",
+      "d": "Flush-mount racking still needs wind and snow load calculations for attachments and spans."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always illegal"
+        "text": "Prohibited above 1.0 by the electrical code"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "Always 1:1"
+        "text": "Required to stay at exactly 1.0 for warranty"
       },
       {
         "id": "d",
-        "text": "Only for batteries"
+        "text": "Used to size the battery bank capacity"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Common design choice within inverter limits.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always illegal.",
-      "c": "Not the best answer: Always 1:1 only.",
-      "d": "Not the best answer: Only for batteries."
+      "a": "The NEC sets no DC/AC ratio cap; oversizing is a design choice limited by inverter input specifications.",
+      "c": "Inverter makers publish allowable DC input ranges; ratios above 1.0 are common and within warranty.",
+      "d": "Battery capacity is sized from load and autonomy needs; DC/AC ratio compares array DC to inverter AC rating."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1327,7 +1327,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Never"
+        "text": "Matter only for off-grid battery systems"
       },
       {
         "id": "b",
@@ -1335,19 +1335,19 @@
       },
       {
         "id": "c",
-        "text": "Only cosmetic"
+        "text": "Set module STC ratings"
       },
       {
         "id": "d",
-        "text": "Only for marketing"
+        "text": "Determine conductor color coding"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Matter for grounding/topology.",
     "distractorExplanations": {
-      "a": "Not the best answer: Never.",
-      "c": "Not the best answer: Only cosmetic.",
-      "d": "Not the best answer: Only for marketing."
+      "a": "Transformer vs transformerless topology affects grounding on grid-tied inverters too, not just off-grid systems.",
+      "c": "Module STC ratings come from factory testing; inverter isolation affects system grounding and topology.",
+      "d": "Color coding follows code rules for grounded/ungrounded conductors; it is not set by the inverter's transformer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only color codes"
+        "text": "Voc hot and Vmp cold inverter windows"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Only cable length aesthetics"
+        "text": "Module wattage and roof area limits"
       },
       {
         "id": "d",
-        "text": "Only roof color"
+        "text": "Nameplate Voc at STC, not temperature"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Voc cold and Vmp hot inverter windows.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only color codes.",
-      "c": "Not the best answer: Only cable length aesthetics.",
-      "d": "Not the best answer: Only roof color."
+      "a": "Reverses the temperature cases: maximum Voc occurs at the coldest temperature, minimum Vmp at the hottest.",
+      "c": "Wattage and roof area set array size, but string length is limited by voltage at temperature extremes.",
+      "d": "Voc rises in cold weather, so string sizing must correct STC Voc for the site's record low temperature."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase Imp"
+        "text": "Raise output by cooling modules"
       },
       {
         "id": "b",
-        "text": "Are impossible"
+        "text": "Affect only frameless modules"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Only affect frames"
+        "text": "Lower voltage but not current"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Reduce energy from dirt/snow.",
     "distractorExplanations": {
-      "a": "Not the best answer: Increase Imp always.",
-      "b": "Not the best answer: Are impossible.",
-      "d": "Not the best answer: Only affect frames."
+      "a": "Dirt and snow block light; any cooling effect is far smaller than the irradiance lost.",
+      "b": "Soiling reduces light reaching any module type; frames can even trap dirt at the lower edge.",
+      "d": "Blocking light mainly reduces cell current; soiling therefore lowers current more than voltage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,11 +1426,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Production increases from mess"
+        "text": "Voltage drop on long conductor home runs"
       },
       {
         "id": "b",
-        "text": "Better shade"
+        "text": "Module mismatch losses in strings"
       },
       {
         "id": "c",
@@ -1438,15 +1438,15 @@
       },
       {
         "id": "d",
-        "text": "Faster installs via dangling"
+        "text": "Inverter clipping on sunny days"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Abrasion, pinch, water intrusion issues.",
     "distractorExplanations": {
-      "a": "Not the best answer: Production increases from mess.",
-      "b": "Not the best answer: Better shade.",
-      "d": "Not the best answer: Faster installs via dangling."
+      "a": "Voltage drop is set by conductor size and length; wire management protects conductors from physical damage.",
+      "b": "Mismatch comes from unequal module performance, not from how conductors are secured.",
+      "d": "Clipping comes from the DC/AC ratio and inverter AC limit; wire management does not affect it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1492,15 +1492,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Price to watts"
+        "text": "Module efficiency to the datasheet STC nameplate rating"
       },
       {
         "id": "b",
-        "text": "Roof pitch to fashion"
+        "text": "Energy produced to the nameplate times hours"
       },
       {
         "id": "c",
-        "text": "Wire brand to cost"
+        "text": "AC output to DC input at the inverter"
       },
       {
         "id": "d",
@@ -1510,9 +1510,9 @@
     "correctOptionId": "d",
     "explanation": "Actual to expected yield accounting for irradiance.",
     "distractorExplanations": {
-      "a": "Not the best answer: Price to watts only.",
-      "b": "Not the best answer: Roof pitch to fashion.",
-      "c": "Not the best answer: Wire brand to cost only."
+      "a": "Efficiency vs nameplate is a module spec comparison; PR compares actual system yield with irradiance-based expected yield.",
+      "b": "Energy over nameplate times total hours is the capacity factor, which ignores how much sun was available.",
+      "c": "AC out over DC in is inverter efficiency, one loss component inside the performance ratio."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1525,15 +1525,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Perfect health"
+        "text": "Cooler module temperatures than expected"
       },
       {
         "id": "b",
-        "text": "Only inverter Wi-Fi password"
+        "text": "Normal seasonal changes in sunshine hours"
       },
       {
         "id": "c",
-        "text": "Only module aesthetics"
+        "text": "Lower utility rates under net metering"
       },
       {
         "id": "d",
@@ -1543,9 +1543,9 @@
     "correctOptionId": "d",
     "explanation": "Shading, soiling, faults, clipping, outages.",
     "distractorExplanations": {
-      "a": "Not the best answer: Perfect health always.",
-      "b": "Not the best answer: Only inverter Wi-Fi password.",
-      "c": "Not the best answer: Only module aesthetics."
+      "a": "Cooler cells raise voltage and output, which pushes the performance ratio up, not down.",
+      "b": "PR is normalized to measured irradiance, so fewer sunshine hours alone do not lower it.",
+      "c": "Tariffs change savings, not the ratio of actual to irradiance-expected energy."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1562,23 +1562,23 @@
       },
       {
         "id": "b",
-        "text": "Only AC waveforms"
+        "text": "Inverter AC output waveform and harmonics"
       },
       {
         "id": "c",
-        "text": "Only battery SOC"
+        "text": "Battery state of charge over time"
       },
       {
         "id": "d",
-        "text": "Only wind speed"
+        "text": "Insulation resistance to ground"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Module/string electrical characteristics.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only AC waveforms.",
-      "c": "Not the best answer: Only battery SOC always.",
-      "d": "Not the best answer: Only wind speed."
+      "b": "AC waveform and harmonics are measured with a power quality analyzer, not an IV curve tracer.",
+      "c": "State of charge comes from battery management data, not from tracing a PV current-voltage curve.",
+      "d": "Insulation resistance is checked with a megohmmeter test, a separate commissioning test from IV tracing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1595,23 +1595,23 @@
       },
       {
         "id": "b",
-        "text": "Clouds appear"
+        "text": "Clouds suddenly reduce module irradiance"
       },
       {
         "id": "c",
-        "text": "Night falls"
+        "text": "Module voltage falls below the MPPT window"
       },
       {
         "id": "d",
-        "text": "Breakers open"
+        "text": "Overcurrent devices open on string faults"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Inverter AC limit reached while DC available.",
     "distractorExplanations": {
-      "b": "Not the best answer: Clouds appear.",
-      "c": "Not the best answer: Night falls.",
-      "d": "Not the best answer: Breakers open only."
+      "b": "Cloud cover lowers DC input; clipping happens when DC power exceeds what the inverter can output.",
+      "c": "Low array voltage below the MPPT range causes dropout or derate, not clipping at the AC power limit.",
+      "d": "An opened fuse removes a string from service; clipping caps output while all DC is still available."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1624,15 +1624,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Perfect identical strings"
+        "text": "Undersized conductors on long runs"
       },
       {
         "id": "b",
-        "text": "Only thick wire"
+        "text": "Inverter output exceeding its rating"
       },
       {
         "id": "c",
-        "text": "Only short wire"
+        "text": "Dirt spread evenly across all modules"
       },
       {
         "id": "d",
@@ -1642,9 +1642,9 @@
     "correctOptionId": "d",
     "explanation": "Unequal module/string performance.",
     "distractorExplanations": {
-      "a": "Not the best answer: Perfect identical strings only.",
-      "b": "Not the best answer: Only thick wire.",
-      "c": "Not the best answer: Only short wire."
+      "a": "Undersized long conductors cause resistive voltage-drop losses, not mismatch between modules.",
+      "b": "Hitting the inverter's AC limit is clipping, a different loss mechanism from mismatch.",
+      "c": "Uniform soiling lowers every module equally; mismatch needs unequal performance between modules or strings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increases power yearly"
+        "text": "Raises voltage as modules age"
       },
       {
         "id": "b",
-        "text": "Is instantaneous failure"
+        "text": "Means sudden failure of a module"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Is only cosmetic"
+        "text": "Affects only the inverter, not modules"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Slowly reduces output over years.",
     "distractorExplanations": {
-      "a": "Not the best answer: Increases power yearly always.",
-      "b": "Not the best answer: Is instantaneous failure only.",
-      "d": "Not the best answer: Is only cosmetic."
+      "a": "Aging lowers module power, mainly through falling current and fill factor, not through rising voltage.",
+      "b": "Sudden failure is a fault; degradation is the gradual output loss of roughly 0.5% per year.",
+      "d": "Degradation ratings describe module output loss over time; warranties guarantee module output for 25+ years."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always 100%"
+        "text": "Actual to expected yield given irradiance"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "Only winter"
+        "text": "AC output divided by DC nameplate rating"
       },
       {
         "id": "d",
-        "text": "Only nameplate watts"
+        "text": "Peak watts measured at solar noon"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Actual energy over nameplate potential time.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always 100%.",
-      "c": "Not the best answer: Only winter.",
-      "d": "Not the best answer: Only nameplate watts."
+      "a": "Actual vs irradiance-expected yield is the performance ratio, not the capacity factor.",
+      "c": "AC output over DC nameplate resembles the inverter loading or DC/AC ratio, not energy over time.",
+      "d": "Peak noon watts is instantaneous power; capacity factor compares energy over a period with full-nameplate output."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Inverter brand"
+        "text": "Module wattage and Voc"
       },
       {
         "id": "b",
-        "text": "Wire gauge"
+        "text": "Inverter MPPT range"
       },
       {
         "id": "c",
-        "text": "Permit number"
+        "text": "Azimuth alone, not tilt"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "Tilt, weather, friction.",
     "distractorExplanations": {
-      "a": "Not the best answer: Inverter brand only.",
-      "b": "Not the best answer: Wire gauge only.",
-      "c": "Not the best answer: Permit number."
+      "a": "Electrical ratings do not change how snow slides; tilt, surface friction, and weather do.",
+      "b": "The inverter's voltage window does not change how snow sheds from the module glass.",
+      "c": "Tilt angle is the main driver of shedding; azimuth affects melt timing but cannot replace tilt."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,15 +1855,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Identical"
+        "text": "Identical daily production curves"
       },
       {
         "id": "b",
-        "text": "East always best everywhere"
+        "text": "East-west yields more energy per kW"
       },
       {
         "id": "c",
-        "text": "West illegal"
+        "text": "Same peak time, lower output"
       },
       {
         "id": "d",
@@ -1873,9 +1873,9 @@
     "correctOptionId": "d",
     "explanation": "Different production profiles.",
     "distractorExplanations": {
-      "a": "Not the best answer: Identical always.",
-      "b": "Not the best answer: East always best everywhere.",
-      "c": "Not the best answer: West illegal."
+      "a": "East-west arrays produce a flatter, wider curve peaking morning and afternoon; south peaks at midday.",
+      "b": "At US latitudes south-facing arrays usually yield more annual energy per kW; east-west trades yield for a broader profile.",
+      "c": "East and west faces peak in morning and afternoon respectively, not at the same solar-noon peak as south."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only aesthetics"
+        "text": "Final AHJ inspection sign-off and permit closure"
       },
       {
         "id": "b",
-        "text": "Only sales photos"
+        "text": "Annual cleaning and inspection after handover"
       },
       {
         "id": "c",
-        "text": "Safe correct operation and expected performance checks"
+        "text": "Safe correct operation and expected performance"
       },
       {
         "id": "d",
-        "text": "Only Wi-Fi SSID"
+        "text": "Module flash test data at the factory"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Safe correct operation and expected performance checks.",
+    "explanation": "Safe correct operation and expected performance checks. Commissioning verifies that the installed system operates safely and correctly and performs as expected at startup.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only aesthetics.",
-      "b": "Not the best answer: Only sales photos.",
-      "d": "Not the best answer: Only Wi-Fi SSID."
+      "a": "AHJ sign-off is a code compliance step; commissioning is the installer's test of operation and performance.",
+      "b": "Recurring cleaning and inspection is O&M after handover, not commissioning at startup.",
+      "d": "Factory flash tests rate modules before shipping; commissioning verifies the installed system on site."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1954,7 +1954,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore alarms"
+        "text": "Initial commissioning and utility interconnection"
       },
       {
         "id": "b",
@@ -1962,19 +1962,19 @@
       },
       {
         "id": "c",
-        "text": "Never wash"
+        "text": "Permit filing and structural design review"
       },
       {
         "id": "d",
-        "text": "Only annual party"
+        "text": "Warranty claims only after module failure"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Inspection, cleaning as needed, fault response.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore alarms.",
-      "c": "Not the best answer: Never wash.",
-      "d": "Not the best answer: Only annual party."
+      "a": "Commissioning and interconnection happen at startup, before the operations and maintenance period begins.",
+      "c": "Permitting and structural review are pre-installation design tasks, not ongoing O&M.",
+      "d": "O&M is proactive inspection and fault response; it is not limited to warranty claims after failure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

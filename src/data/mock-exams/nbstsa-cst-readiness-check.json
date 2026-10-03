@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the preference card vendor"
+        "text": "Instrument, sponge, and sharps counts before skin closure"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Lunch orders"
+        "text": "Sterilization indicator results for every tray before opening"
       },
       {
         "id": "d",
-        "text": "Staff parking assignments"
+        "text": "Correct patient and procedure after the incision is made"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Joint Commission Universal Protocol prevents wrong-site surgery.",
     "distractorExplanations": {
-      "a": "Cards help setup but aren't timeout.",
-      "c": "Lunch irrelevant.",
-      "d": "Parking irrelevant."
+      "a": "Confuses the time-out with the closing count; counts prevent retained items, while the time-out confirms patient, site, and procedure.",
+      "c": "Indicator checks are part of tray setup by the scrub and circulator, not the Universal Protocol time-out before incision.",
+      "d": "Wrong timing: the time-out is done immediately before the incision, and it must also confirm site/side, not just patient and procedure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Sitting fully upright"
+        "text": "Head up, feet lowered"
       },
       {
         "id": "b",
-        "text": "Prone jackknife"
+        "text": "Supine with legs in stirrups"
       },
       {
         "id": "c",
-        "text": "Lateral kidney"
+        "text": "Seated upright at 45–90°"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Know common positions: supine, prone, lithotomy, lateral, Fowler, Trendelenburg/reverse.",
     "distractorExplanations": {
-      "a": "Upright is Fowler/sitting.",
-      "b": "Jackknife is Kraske variant.",
-      "c": "Kidney is lateral flexed."
+      "a": "That is reverse Trendelenburg (head up, feet down), used for upper-abdominal and head/neck cases, not Trendelenburg.",
+      "b": "Supine with legs raised in stirrups is the lithotomy position used for perineal and gynecologic procedures.",
+      "c": "Sitting upright at 45–90° describes Fowler's/semi-Fowler's position, the opposite of the head-down Trendelenburg."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Proximal to the knees on supine patients (policy-dependent) securing without tourniquet effect"
+        "text": "Proximal to the knees on supine patients"
       },
       {
         "id": "b",
-        "text": "Across the chest tightly restricting ventilation always as best"
+        "text": "Directly over the patellae on supine patients"
       },
       {
         "id": "c",
-        "text": "Only on the uninvolved arm loosely dangling off the bed"
+        "text": "Across the lower chest of supine patients"
       },
       {
         "id": "d",
-        "text": "Not used if the patient is NPO"
+        "text": "Distal to the knees over the calves"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Prevent falls while protecting nerves/skin/ventilation.",
+    "explanation": "Prevent falls while protecting nerves/skin/ventilation. Place the strap about 2 inches above the knees, secure but not tight enough to cause a tourniquet effect.",
     "distractorExplanations": {
-      "b": "Chest constriction harms breathing.",
-      "c": "Secure all extremities properly.",
-      "d": "NPO unrelated to straps."
+      "b": "Placing the strap directly over the kneecaps puts pressure on a bony prominence; the strap goes about 2 inches above the knees.",
+      "c": "A strap across the chest restricts chest expansion and ventilation; the supine safety strap is placed over the thighs above the knees.",
+      "d": "A strap over the calves risks peroneal nerve and venous compression; standard placement is proximal to the knees on the thighs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The patient enters the hospital lobby"
+        "text": "The patient is transferred to the OR table and positioned"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "Anesthesia starts the IV"
+        "text": "The surgical time-out is completed before the skin incision"
       },
       {
         "id": "d",
-        "text": "Housekeeping mopped last night"
+        "text": "The surgeon completes the hand scrub and enters the room gowned"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Once created, protect continuously until procedure end.",
     "distractorExplanations": {
-      "a": "Lobby not sterile field.",
-      "c": "IV start unsterile area typically.",
-      "d": "Environmental cleaning ≠ sterile field."
+      "a": "Transfer and positioning are patient-care steps; the sterile field exists only once sterile packs/drapes are opened aseptically.",
+      "c": "The time-out happens after the field is already set up and the patient draped; it does not create the sterile field.",
+      "d": "The surgeon's scrub and gowning come after the scrub person has opened and arranged the sterile field."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Hiding contamination to avoid conflict"
+        "text": "Reporting a break only when the surgeon or circulator saw it happen"
       },
       {
         "id": "b",
-        "text": "Only following technique when observed"
+        "text": "Correcting breaks quietly without telling the team, to avoid delays"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Blaming circulators for all breaks without self-check"
+        "text": "Reporting others' breaks in technique to the charge nurse after the case"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Patient safety requires reporting contamination even if personally responsible.",
     "distractorExplanations": {
-      "a": "Hiding endangers patients.",
-      "b": "Technique always required.",
-      "d": "Accountability is shared/honest."
+      "a": "Surgical conscience applies whether or not anyone witnessed the break; self-reporting unseen breaks is the core of the concept.",
+      "b": "Silent correction hides the break from the team, who may need to replace items or re-drape; surgical conscience requires speaking up.",
+      "d": "Delayed reporting after the case does not protect this patient; breaks are acknowledged and corrected immediately at the field."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Incorrect CPT coding primarily"
+        "text": "Wrong-site surgery"
       },
       {
         "id": "b",
-        "text": "Hypothermia"
+        "text": "Surgical site infections"
       },
       {
         "id": "c",
-        "text": "Wrong blood type"
+        "text": "Instrument loss in reprocessing"
       },
       {
         "id": "d",
-        "text": "Retained surgical items (sponges, sharps, instruments)"
+        "text": "Retained surgical items"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Initial, additional item, closure, and final counts per policy; document discrepancies.",
+    "explanation": "Initial, additional item, closure, and final counts per policy; document discrepancies. Counts cover sponges, sharps, and instruments.",
     "distractorExplanations": {
-      "a": "Coding separate.",
-      "b": "Warming prevents hypothermia.",
-      "c": "Blood bank verifies type."
+      "a": "Wrong-site surgery is prevented by site marking and the Universal Protocol time-out, not by surgical counts.",
+      "b": "SSIs are reduced by asepsis, skin prep, and prophylactic antibiotics; counts target items left inside the patient.",
+      "c": "Instrument tracking in sterile processing is an inventory issue; OR counts exist to prevent items being retained in the patient."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Certain anesthetics/succinylcholine—CST should know emergency MH cart/roles"
+        "text": "Certain anesthetics/succinylcholine"
       },
       {
         "id": "b",
-        "text": "Local lidocaine infiltration only always as classic trigger"
+        "text": "Local anesthetics such as lidocaine"
       },
       {
         "id": "c",
-        "text": "Alcohol skin prep alone"
+        "text": "Nondepolarizing agents such as rocuronium"
       },
       {
         "id": "d",
-        "text": "Cotton drapes"
+        "text": "Nitrous oxide and IV opioids"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "MH crisis needs dantrolene and team response; scrub may help with sterile needs/cooling support per role.",
+    "explanation": "MH crisis needs dantrolene and team response; scrub may help with sterile needs/cooling support per role. Triggers are volatile anesthetic gases and succinylcholine; the CST should know the MH cart and team roles.",
     "distractorExplanations": {
-      "b": "Volatile agents/succ are classic.",
-      "c": "Prep not MH trigger.",
-      "d": "Drapes unrelated."
+      "b": "Amide local anesthetics like lidocaine are an outdated myth as MH triggers; they are considered safe in MH-susceptible patients.",
+      "c": "Confuses depolarizing with nondepolarizing relaxants: succinylcholine triggers MH, rocuronium/vecuronium do not.",
+      "d": "Nitrous oxide and opioids are non-triggering agents used in MH-safe anesthetics; volatile gases and succinylcholine are the triggers."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -370,7 +370,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Make loud unnecessary noise and move the patient vigorously"
+        "text": "Begin the initial count aloud so it is finished before the incision is made"
       },
       {
         "id": "b",
@@ -378,19 +378,19 @@
       },
       {
         "id": "c",
-        "text": "Begin skin prep before airway is secured if rushing"
+        "text": "Start the skin prep so the incision can begin once intubated"
       },
       {
         "id": "d",
-        "text": "Leave the room entirely without communication"
+        "text": "Turn the patient to the surgical position as induction drugs are given"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Induction is a critical phase; minimize distraction and support airway readiness.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Maintain a calm environment and be ready to assist with airway emergencies”.",
-      "c": "Not the best answer here; the right answer is “Maintain a calm environment and be ready to assist with airway emergencies”.",
-      "d": "Not the best answer here; the right answer is “Maintain a calm environment and be ready to assist with airway emergencies”."
+      "a": "Counting aloud during induction adds noise and distraction; the room should be quiet so anesthesia can manage the airway.",
+      "c": "Prep and draping wait until the airway is secured and anesthesia approves positioning; starting early distracts and risks the patient.",
+      "d": "Positioning is done after induction and airway control with anesthesia's approval, not while induction drugs are being given."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Accept unlabeled solutions without verification"
+        "text": "Verify the drug name with the circulator and label the container after the case ends"
       },
       {
         "id": "b",
-        "text": "Verify drug name, strength, and expiration with the circulator and label the container on the field"
+        "text": "Verify drug name, strength, and expiration with the circulator and label the container"
       },
       {
         "id": "c",
-        "text": "Pour antibiotics into an unlabeled cup for later guessing"
+        "text": "Accept the drug when the vial is shown, then label containers once every med is on the field"
       },
       {
         "id": "d",
-        "text": "Dilute all drugs by eye without orders"
+        "text": "Verify drug name and dose against the surgeon's preference card, labeling syringes only"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Medication safety requires read-back verification and immediate labeling.",
+    "explanation": "Medication safety requires read-back verification and immediate labeling. Label every container on the field immediately.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Verify drug name, strength, and expiration with the circulator and label the container on the field”.",
-      "c": "Not the best answer here; the right answer is “Verify drug name, strength, and expiration with the circulator and label the container on the field”.",
-      "d": "Not the best answer here; the right answer is “Verify drug name, strength, and expiration with the circulator and label the container on the field”."
+      "a": "Labels must be applied immediately when the drug is received; labeling after the case leaves unlabeled meds on the field.",
+      "c": "Seeing the vial is not verification, and batch labeling later is unsafe; each drug is read back and labeled as it is received.",
+      "d": "The preference card lists what the surgeon prefers, not the drug in hand; every container (cups, basins, syringes) must be labeled."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The entire back including neck ties area"
+        "text": "Neckline to waist in front and back, with sleeves to the shoulder"
       },
       {
         "id": "b",
-        "text": "Chest to sterile field level / gloved hands to elbows anteriorly (classic teaching), not the back"
+        "text": "Chest to sterile field level / gloved hands to elbows anteriorly"
       },
       {
         "id": "c",
-        "text": "Below the waist including gown hem dragging"
+        "text": "Chest to the hem in front, with sleeves from shoulder to cuff"
       },
       {
         "id": "d",
-        "text": "Under the arms in the axilla as most sterile zone"
+        "text": "Shoulders to waist anteriorly, including the axillary area"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Backs, below waist, and axillae are not considered sterile.",
+    "explanation": "Backs, below waist, and axillae are not considered sterile. The back of the gown is not considered sterile.",
     "distractorExplanations": {
-      "a": "Back unsterile.",
-      "c": "Below waist unsterile.",
-      "d": "Axilla unsterile."
+      "a": "The back of the gown is never in view and is considered unsterile; the neckline and shoulders are also excluded.",
+      "c": "The gown below sterile field (table) level is unsterile, and the shoulders/axillae are excluded from the sterile sleeve area.",
+      "d": "Shoulders and axillae are friction areas that are considered unsterile; the sterile front starts at the chest."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Moisture always improves sterility"
+        "text": "The field stays sterile because the saline is sterile, so no action is needed"
       },
       {
         "id": "b",
-        "text": "Ignore because saline is sterile so the field stays sterile"
+        "text": "The wet area becomes safe again once it dries, so let it air-dry before use"
       },
       {
         "id": "c",
-        "text": "The wet area is contaminated by strike-through risk and must be handled per protocol (cover/replace)"
+        "text": "The wet area is contaminated by strike-through risk and must be handled per protocol"
       },
       {
         "id": "d",
-        "text": "Blot with a nonsterile towel from the circulator directly onto implants"
+        "text": "The surgeon decides at closure whether the wet spot needs further attention"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Wicking through drapes contaminates; manage wet spots appropriately.",
+    "explanation": "Wicking through drapes contaminates; manage wet spots appropriately. Typical handling is to cover the wet area with an impervious drape or replace the item.",
     "distractorExplanations": {
-      "a": "Moisture risks contamination.",
-      "b": "Sterile liquid can still wick microbes from below.",
-      "d": "Nonsterile blotting contaminates."
+      "a": "Sterile fluid still wicks through the drape and carries organisms from below (strike-through); the fluid's sterility does not protect the field.",
+      "b": "Drying does not reverse contamination; once strike-through has occurred, the area stays contaminated until covered or replaced.",
+      "d": "Contamination is managed immediately by the scrub team (cover or replace), not deferred to the surgeon at closure."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Touch the inside of the pack freely"
+        "text": "Peel the pack and let the item slide across the unsterile edges"
       },
       {
         "id": "b",
-        "text": "Toss instruments onto the field from across the room"
+        "text": "Tear the pack through the center and present it to the scrub"
       },
       {
         "id": "c",
-        "text": "Open onto a wet contaminated surface"
+        "text": "Peel the pack toward the body and lean over the field to present"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "Present items aseptically; scrub takes without contamination.",
     "distractorExplanations": {
-      "a": "Inside is sterile.",
-      "b": "Tossing risks contamination/damage.",
-      "c": "Wet contaminated surfaces ruin packs."
+      "a": "The outer edges of a peel pack are unsterile; letting the item slide across them contaminates it.",
+      "b": "Tearing through the middle contaminates the contents; peel packs are opened by rolling the edges back along the seal.",
+      "c": "Peel packs are opened away from the body, and the circulator must not reach or lean over the sterile field."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Assisted gloving; closed gloving is done with hands inside gown cuffs"
+        "text": "Assisted gloving"
       },
       {
         "id": "b",
-        "text": "Open gloving only used for urinary catheters never for other tasks"
+        "text": "Open gloving"
       },
       {
         "id": "c",
-        "text": "No-glove technique"
+        "text": "Closed gloving"
       },
       {
         "id": "d",
-        "text": "Double-gloving is illegal"
+        "text": "Indicator double-gloving"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Know open, closed, and assisted gloving; double-gloving reduces puncture risk.",
+    "explanation": "Know open, closed, and assisted gloving; double-gloving reduces puncture risk. Closed gloving is done with hands inside the gown cuffs; open gloving is done with hands outside.",
     "distractorExplanations": {
-      "b": "Open gloving used for procedures without full gown sometimes.",
-      "c": "Gloves required.",
-      "d": "Double-gloving recommended often."
+      "b": "Open gloving is self-gloving with hands out of the cuffs (e.g., re-gloving or catheter insertion), with no team member assisting.",
+      "c": "Closed gloving is self-gloving with the hands kept inside the gown cuffs; no other person holds the glove.",
+      "d": "Indicator double-gloving describes wearing two pairs to reveal punctures, not who helps put the gloves on."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Routinely preferred for all instruments every case"
+        "text": "Used whenever a tray is short, as long as a chemical indicator is included"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Used to build inventory for tomorrow"
+        "text": "Performed on the dropped item without cleaning, since the cycle sterilizes it"
       },
       {
         "id": "d",
-        "text": "Performed without cleaning the dropped item"
+        "text": "Used, then the item stored on the shelf for later cases if the indicator passes"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Dropped items need cleaning then sterilization; IUSS not for convenience storage.",
     "distractorExplanations": {
-      "a": "Not routine preferred.",
-      "c": "Not for storage.",
-      "d": "Cleaning required."
+      "a": "IUSS is not a fix for inventory shortages; it is reserved for urgent need when no packaged replacement exists.",
+      "c": "Sterilization fails on soiled items; a dropped instrument must be cleaned before any sterilization cycle.",
+      "d": "IUSS items are for immediate use only and must not be stored for later cases, even if indicators pass."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only fingertips for two seconds"
+        "text": "Hands only to the wrists using the timed method before gloving"
       },
       {
         "id": "b",
-        "text": "The patient's abdomen as the scrub tech scrub"
+        "text": "Hands and forearms after gowning, before closed gloving"
       },
       {
         "id": "c",
-        "text": "Hands and forearms for the timed/counted method per product IFU before gowning"
+        "text": "Hands and forearms for the timed/counted method per product IFU"
       },
       {
         "id": "d",
-        "text": "Hair"
+        "text": "The patient's skin at the incision site before draping"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Waterless surgical hand rubs also used per IFU after washing when indicated.",
+    "explanation": "Waterless surgical hand rubs also used per IFU after washing when indicated. The scrub is done before gowning.",
     "distractorExplanations": {
-      "a": "Full scrub contact needed.",
-      "b": "Patient prep is separate.",
-      "d": "Hair covers separate."
+      "a": "The surgical scrub covers the hands and forearms to about 2 inches above the elbows, not just to the wrists.",
+      "b": "Wrong sequence: the surgical scrub is done before entering the OR and gowning, not after the gown is on.",
+      "d": "Confuses the surgical hand scrub with the patient skin prep done by the circulator or scrub before draping."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -733,15 +733,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Exactly 48 hours in all hospitals always by national law"
+        "text": "A fixed expiration date printed on the package label passes"
       },
       {
         "id": "b",
-        "text": "They change color"
+        "text": "The external chemical indicator tape changes color"
       },
       {
         "id": "c",
-        "text": "The surgeon arrives"
+        "text": "Thirty days pass on the shelf for wrapped trays"
       },
       {
         "id": "d",
@@ -751,9 +751,9 @@
     "correctOptionId": "d",
     "explanation": "Inspect before opening; facility policies may still use dating.",
     "distractorExplanations": {
-      "a": "Not universally fixed 48h law.",
-      "b": "Color may be indicators not event definition.",
-      "c": "Arrival irrelevant."
+      "a": "That describes time-related sterility; event-related sterility depends on what happens to the package, not a printed date.",
+      "b": "The indicator tape changes color during processing to show exposure to the sterilant; it does not mark loss of sterility.",
+      "c": "A fixed 30-day shelf life is a time-related policy; event-related sterility has no set day count."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "Negative pressure like decontam as the OR standard"
+        "text": "Negative pressure, HEPA filtration, and keeping doors open for airflow"
       },
       {
         "id": "c",
-        "text": "Prop doors open to the hallway"
+        "text": "Positive pressure, with doors propped open to increase air exchanges"
       },
       {
         "id": "d",
-        "text": "Shaking linen over the field"
+        "text": "Low air exchange rates and humidity under 10% to limit microbial growth on surfaces"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Laminar/conventional systems reduce SSI risk with discipline.",
     "distractorExplanations": {
-      "b": "OR positive vs corridor.",
-      "c": "Closed doors maintain pressure.",
-      "d": "Linen shaking sheds particles."
+      "b": "Negative pressure is for decontamination and airborne isolation rooms; ORs are positive pressure with doors kept closed.",
+      "c": "Open doors disrupt positive pressure and let corridor air in; OR doors stay closed to maintain air exchanges.",
+      "d": "ORs need high air exchange rates (about 20 per hour) and humidity of roughly 20–60%, not low exchanges and very dry air."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -799,27 +799,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Continue and mention it after closing"
+        "text": "Pull a new glove over the punctured one and continue the case"
       },
       {
         "id": "b",
-        "text": "Step away from the field and re-glove (and change gown if indicated) using sterile technique"
+        "text": "Step away from the field and re-glove using sterile technique"
       },
       {
         "id": "c",
-        "text": "Remove both gloves and continue barehanded briefly"
+        "text": "Finish the current step, then re-glove at the next count"
       },
       {
         "id": "d",
-        "text": "Ask anesthesia to suture the glove"
+        "text": "Rinse the glove with sterile saline and continue if no blood is seen"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Immediate correction protects patient and self; double-glove helps detect punctures.",
+    "explanation": "Immediate correction protects patient and self; double-glove helps detect punctures. Change the gown too if indicated.",
     "distractorExplanations": {
-      "a": "Delay increases exposure.",
-      "c": "Barehanded forbidden.",
-      "d": "Anesthesia isn't glove repair."
+      "a": "Layering a new glove over a punctured one leaves the contaminated glove in place; the punctured glove must be removed and replaced.",
+      "c": "A punctured glove is contaminated immediately; delaying the change to the next count exposes the patient and the scrub.",
+      "d": "Rinsing does not restore a breached barrier, and absence of visible blood does not mean the glove is intact."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -836,7 +836,7 @@
       },
       {
         "id": "b",
-        "text": "The surgeon asks a question"
+        "text": "The circulator walks around the field while facing it at a safe distance"
       },
       {
         "id": "c",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "Music plays in the OR"
+        "text": "Sterile team members pass each other back-to-back at a distance during the case"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Contact with nonsterile items or strike-through compromises the field.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “A nonsterile item touches it or sterility is broken by moisture strike-through”.",
+      "b": "Facing the field while keeping a safe distance is the correct way for nonsterile staff to move around it; it does not contaminate.",
       "c": "Not the best answer here; the right answer is “A nonsterile item touches it or sterility is broken by moisture strike-through”.",
-      "d": "Not the best answer here; the right answer is “A nonsterile item touches it or sterility is broken by moisture strike-through”."
+      "d": "Passing back-to-back (or front-to-front) is the accepted technique for sterile team members and keeps the field sterile."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "In the entire back including below the waist"
+        "text": "In front from neckline to hem and sleeves from shoulder to cuffs"
       },
       {
         "id": "b",
-        "text": "In front from chest to sterile field level and sleeves to cuffs, per standard practice"
+        "text": "In front from chest to sterile field level and sleeves to cuffs"
       },
       {
         "id": "c",
-        "text": "Only at the neckline"
+        "text": "In front and back from chest to waist, with sleeves to the elbow"
       },
       {
         "id": "d",
-        "text": "Everywhere including after falling on the floor"
+        "text": "In front from chest to sterile field level, excluding the sleeves"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Standard sterile gown areas are limited; backs and below-waist are unsterile.",
+    "explanation": "Standard sterile gown areas are limited; backs and below-waist are unsterile. Sterile practice standards define these limits.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “In front from chest to sterile field level and sleeves to cuffs, per standard practice”.",
-      "c": "Not the best answer here; the right answer is “In front from chest to sterile field level and sleeves to cuffs, per standard practice”.",
-      "d": "Not the best answer here; the right answer is “In front from chest to sterile field level and sleeves to cuffs, per standard practice”."
+      "a": "The neckline, the area below field level, and the shoulders are not considered sterile on a gown.",
+      "c": "The back is never considered sterile, and the sleeves are sterile down to the cuffs, not just to the elbow.",
+      "d": "The sleeves (from about 2 inches above the elbow to the cuff) are part of the sterile gown area."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Brush backs together carelessly"
+        "text": "Pass front-to-back, facing the other's back"
       },
       {
         "id": "b",
-        "text": "Pass front-to-front or back-to-back while maintaining distance from nonsterile areas"
+        "text": "Pass front-to-front or back-to-back"
       },
       {
         "id": "c",
-        "text": "Reach behind one another across the field"
+        "text": "Pass back-to-front with hands at the sides"
       },
       {
         "id": "d",
-        "text": "Remove one glove to shake hands"
+        "text": "Pass side-to-side with arms folded at the axillae"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Passing technique protects gown fronts and the sterile field.",
+    "explanation": "Passing technique protects gown fronts and the sterile field. Keep distance from nonsterile areas while passing.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Pass front-to-front or back-to-back while maintaining distance from nonsterile areas”.",
-      "c": "Not the best answer here; the right answer is “Pass front-to-front or back-to-back while maintaining distance from nonsterile areas”.",
-      "d": "Not the best answer here; the right answer is “Pass front-to-front or back-to-back while maintaining distance from nonsterile areas”."
+      "a": "Front-to-back puts one sterile front against an unsterile back; only front-to-front or back-to-back is acceptable.",
+      "c": "Back-to-front still pairs a sterile front with an unsterile back, and hands at the sides drop below the sterile zone.",
+      "d": "Side-to-side brings sterile fronts near unsterile backs, and the axillae are unsterile, so arms are not folded there."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The drape is more sterile"
+        "text": "The drape's adhesive strip has failed and needs re-taping"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Electrosurgery is complete"
+        "text": "Electrosurgical current has passed through the drape material"
       },
       {
         "id": "d",
-        "text": "The count is finished"
+        "text": "A sharp instrument has punctured the drape without any fluid"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fluid strike-through is a contamination pathway.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Moisture has penetrated, potentially contaminating the field”.",
-      "c": "Not the best answer here; the right answer is “Moisture has penetrated, potentially contaminating the field”.",
-      "d": "Not the best answer here; the right answer is “Moisture has penetrated, potentially contaminating the field”."
+      "a": "Adhesive failure is a draping problem but not strike-through, which specifically means fluid soaking through the material.",
+      "c": "Strike-through refers to moisture penetration, not electrical current; it is unrelated to electrosurgery.",
+      "d": "A dry puncture is a separate breach; strike-through is defined by moisture wicking through the drape."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Peeling so the contents are projected uncontrolled onto the field"
+        "text": "Sliding the item over the peeled edges and onto the back table drape"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Touching the inside of the pack with bare hands"
+        "text": "Having the scrub reach into the pack and pull the item past the edges"
       },
       {
         "id": "d",
-        "text": "Tearing through the middle of the package randomly"
+        "text": "Peeling the pack back toward the body while reaching over the sterile field"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Edges are unsterile; transfer technique must protect sterility.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Presenting the item so the sterile person can take it without contaminating edges”.",
-      "c": "Not the best answer here; the right answer is “Presenting the item so the sterile person can take it without contaminating edges”.",
-      "d": "Not the best answer here; the right answer is “Presenting the item so the sterile person can take it without contaminating edges”."
+      "a": "The peeled edges are unsterile; sliding the item over them contaminates it before it reaches the field.",
+      "c": "Pulling the item past the edges lets it brush unsterile surfaces; the item is presented so it lifts cleanly out.",
+      "d": "Peel packs are opened away from the body, and the circulator must never reach over the sterile field."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Right upper quadrant, undersurface of the liver"
+        "text": "Right upper quadrant"
       },
       {
         "id": "b",
-        "text": "Left lower quadrant"
+        "text": "Left upper quadrant"
       },
       {
         "id": "c",
-        "text": "Mediastinum"
+        "text": "Right lower quadrant"
       },
       {
         "id": "d",
-        "text": "Popliteal fossa"
+        "text": "Epigastric region"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Cholecystectomy addresses RUQ anatomy; know triangle of Calot concepts at high level.",
+    "explanation": "Cholecystectomy addresses RUQ anatomy; know triangle of Calot concepts at high level. It lies on the undersurface of the liver.",
     "distractorExplanations": {
-      "b": "LLQ different organs.",
-      "c": "Mediastinum thoracic.",
-      "d": "Popliteal behind knee."
+      "b": "The left upper quadrant holds the spleen and stomach body; the gallbladder lies on the right under the liver.",
+      "c": "The right lower quadrant holds the appendix and cecum, not the gallbladder.",
+      "d": "The epigastric region contains the stomach and pancreas; the gallbladder sits in the RUQ on the liver's undersurface."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only bone fractures"
+        "text": "Separation of the wound edges after primary closure of the incision"
       },
       {
         "id": "b",
-        "text": "Only skin rashes"
+        "text": "Abnormal passage connecting two epithelial surfaces"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Kidney stones"
+        "text": "Collection of pus walled off within the abdominal wall"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Know inguinal, femoral, umbilical, incisional types and mesh repair concepts.",
     "distractorExplanations": {
-      "a": "Ortho fractures differ.",
-      "b": "Derm rashes differ.",
-      "d": "Urolithiasis differs."
+      "a": "That describes wound dehiscence; a hernia is tissue protruding through a defect in the cavity wall.",
+      "b": "An abnormal passage between two epithelialized surfaces is a fistula, not a hernia.",
+      "d": "A walled-off pus collection is an abscess; hernias involve protrusion of tissue or organ through a wall defect."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ileum directly"
+        "text": "Jejunum"
       },
       {
         "id": "b",
-        "text": "Bladder"
+        "text": "Stomach"
       },
       {
         "id": "c",
-        "text": "Left atrium"
+        "text": "Gallbladder"
       },
       {
         "id": "d",
-        "text": "Duodenum (via ampulla of Vater typically)"
+        "text": "Duodenum"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "CBDE/ERCP anatomy relevant to biliary surgery complications.",
+    "explanation": "CBDE/ERCP anatomy relevant to biliary surgery complications. Drainage is via the ampulla of Vater.",
     "distractorExplanations": {
-      "a": "Ileum distal bowel.",
-      "b": "Urinary bladder.",
-      "c": "Heart chamber."
+      "a": "The jejunum follows the duodenum; the common bile duct empties at the ampulla of Vater in the second part of the duodenum.",
+      "b": "Bile does not enter the stomach normally; the CBD drains into the duodenum distal to the pylorus.",
+      "c": "The gallbladder stores bile via the cystic duct; the common bile duct carries bile away from it to the duodenum."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Inside the cranial vault"
+        "text": "Posterior to the trachea in the neck"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "Posterior to the kidneys"
+        "text": "Lateral to the carotid sheath in the neck"
       },
       {
         "id": "d",
-        "text": "Within the scrotum"
+        "text": "Anterior to the larynx above the hyoid"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Recurrent laryngeal nerve and parathyroids are critical structures in thyroidectomy.",
     "distractorExplanations": {
-      "a": "Brain location wrong.",
-      "c": "Adrenals/kidneys different.",
-      "d": "Gonads different."
+      "a": "The esophagus lies posterior to the trachea; the thyroid wraps the anterior and lateral trachea.",
+      "c": "The carotid sheath lies lateral to the thyroid lobes, so the gland is medial to it, not lateral.",
+      "d": "The thyroid sits below the larynx at about the 2nd–4th tracheal rings, not above the hyoid bone."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Clean elective under ideal conditions (Class I)"
+        "text": "Clean (no entry into respiratory, GI, or GU tracts)"
       },
       {
         "id": "b",
-        "text": "Clean-contaminated (Class II)"
+        "text": "Clean-contaminated (controlled entry into GI or GU tract)"
       },
       {
         "id": "c",
-        "text": "Contaminated (open/fresh accidental or major break in sterile technique/spillage)"
+        "text": "Contaminated (major break in sterile technique/spillage)"
       },
       {
         "id": "d",
-        "text": "Dirty/infected with old trauma/pus (Class IV)"
+        "text": "Dirty-infected (old traumatic wound or existing pus)"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Classification guides antibiotic expectations and SSI risk counseling.",
+    "explanation": "Classification guides antibiotic expectations and SSI risk counseling. Class III also includes open, fresh accidental wounds.",
     "distractorExplanations": {
-      "a": "I = clean. ).",
-      "b": "II = clean-contaminated.",
-      "d": "IV = dirty/infected."
+      "a": "That defines Class I (clean); Class III involves spillage, a major break in technique, or a fresh traumatic wound.",
+      "b": "Controlled entry into a hollow tract without spillage is Class II (clean-contaminated), not Class III.",
+      "d": "Old traumatic wounds and existing infection define Class IV (dirty-infected), one class above Class III."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only antibiotics"
+        "text": "Retractors, drains, antibiotic irrigation, and wound closure strips"
       },
       {
         "id": "b",
-        "text": "Only Trendelenburg"
+        "text": "Heparinized saline, vasodilators, and topical antibiotic powder"
       },
       {
         "id": "c",
-        "text": "Only counting sponges without vessel control"
+        "text": "Sponge counts, mesh placement, and prophylactic antibiotics"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "CST anticipates suture ties, energy devices, and clip appliers.",
     "distractorExplanations": {
-      "a": "Antibiotics ≠ hemostasis.",
-      "b": "Positioning adjunct.",
-      "c": "Counts prevent retention not bleeding control alone."
+      "a": "Retractors expose the field and drains remove fluid; none of these items stop bleeding from vessels.",
+      "b": "Heparinized saline and vasodilators promote flow rather than control bleeding; antibiotic powder targets infection.",
+      "c": "Counts prevent retained items, mesh repairs defects, and antibiotics prevent SSI; none achieve hemostasis."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Left gastric artery as the only vessel"
+        "text": "Ileocolic artery trunk"
       },
       {
         "id": "b",
-        "text": "Appendiceal artery within the mesoappendix"
+        "text": "Appendiceal artery"
       },
       {
         "id": "c",
-        "text": "Aorta at the iliac bifurcation"
+        "text": "Right colic artery"
       },
       {
         "id": "d",
-        "text": "Pulmonary vein"
+        "text": "Inferior mesenteric artery"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The appendiceal artery supplies the appendix via the mesoappendix.",
+    "explanation": "The appendiceal artery supplies the appendix via the mesoappendix. It runs within the mesoappendix.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Appendiceal artery within the mesoappendix”.",
-      "c": "Not the best answer here; the right answer is “Appendiceal artery within the mesoappendix”.",
-      "d": "Not the best answer here; the right answer is “Appendiceal artery within the mesoappendix”."
+      "a": "The appendiceal artery branches from the ileocolic artery; ligating the ileocolic trunk would devascularize the cecum and ileum.",
+      "c": "The right colic artery supplies the ascending colon and is not within the mesoappendix.",
+      "d": "The IMA supplies the left colon and rectum; the appendix is a midgut structure supplied via the SMA branches."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1397,23 +1397,23 @@
       },
       {
         "id": "b",
-        "text": "Inside the gallbladder fossa"
+        "text": "On the anterior surface of the testis"
       },
       {
         "id": "c",
-        "text": "Within the mediastinum"
+        "text": "Within the spermatic cord above the testis"
       },
       {
         "id": "d",
-        "text": "Only in the female pelvis"
+        "text": "Posterior to the bladder base, near the prostate"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Epididymis sits along the testis and connects to the vas deferens.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “On the superior/posterior aspect of the testis”.",
-      "c": "Not the best answer here; the right answer is “On the superior/posterior aspect of the testis”.",
-      "d": "Not the best answer here; the right answer is “On the superior/posterior aspect of the testis”."
+      "b": "The epididymis lies on the posterior (and superior) aspect of the testis; the anterior surface is covered by tunica vaginalis.",
+      "c": "The structure running in the spermatic cord is the vas deferens, which continues from the epididymis.",
+      "d": "Posterior to the bladder base near the prostate are the seminal vesicles, not the epididymis."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Optic nerve"
+        "text": "Spinal accessory nerve"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "Phrenic nerve in the leg"
+        "text": "Hypoglossal nerve"
       },
       {
         "id": "d",
-        "text": "Sciatic nerve"
+        "text": "External branch of the superior laryngeal nerve"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Recurrent laryngeal nerves are critical structures in thyroidectomy.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Recurrent laryngeal nerve”.",
-      "c": "Not the best answer here; the right answer is “Recurrent laryngeal nerve”.",
-      "d": "Not the best answer here; the right answer is “Recurrent laryngeal nerve”."
+      "a": "The spinal accessory nerve is at risk in posterior triangle (neck dissection) surgery, not near the inferior thyroid artery.",
+      "c": "The hypoglossal nerve runs above the hyoid near the submandibular region, far from the inferior thyroid artery.",
+      "d": "The external branch of the superior laryngeal nerve runs with the superior thyroid artery, not the inferior thyroid artery."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A double layer of peritoneum hanging from the stomach that can wall off infection"
+        "text": "A double layer of peritoneum hanging from the stomach"
       },
       {
         "id": "b",
-        "text": "A bone in the wrist"
+        "text": "A peritoneal fold connecting the liver to the lesser curvature"
       },
       {
         "id": "c",
-        "text": "The lining of the ventricle"
+        "text": "A fan-shaped fold attaching the small bowel to the posterior wall"
       },
       {
         "id": "d",
-        "text": "A type of suture material"
+        "text": "The serous membrane lining the inner abdominal wall"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Greater omentum is a peritoneal apron from the greater curvature of the stomach.",
+    "explanation": "Greater omentum is a peritoneal apron from the greater curvature of the stomach. It can wall off infection.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “A double layer of peritoneum hanging from the stomach that can wall off infection”.",
-      "c": "Not the best answer here; the right answer is “A double layer of peritoneum hanging from the stomach that can wall off infection”.",
-      "d": "Not the best answer here; the right answer is “A double layer of peritoneum hanging from the stomach that can wall off infection”."
+      "b": "The fold from the liver to the lesser curvature is the lesser omentum, not the greater omentum.",
+      "c": "The fan-shaped fold suspending the small bowel is the mesentery proper.",
+      "d": "The lining of the abdominal wall is the parietal peritoneum, not the omentum."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "No return pad ever"
+        "text": "An active electrode with two tines and no separate return pad"
       },
       {
         "id": "c",
-        "text": "Alcohol pooling under the pad intentionally"
+        "text": "An active electrode and a return pad placed over a bony prominence"
       },
       {
         "id": "d",
-        "text": "Activation while touching the OR table metal with the active tip casually"
+        "text": "An active electrode and a return pad over the nearest metal implant"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Pad placement on well-vascularized muscle, avoid scars/implants/bony prominences per policy; prevent alternate site burns.",
     "distractorExplanations": {
-      "b": "Return path needed for monopolar.",
-      "c": "Flammable prep hazards.",
-      "d": "Table contact risks burns."
+      "b": "Two tines and no return pad describes bipolar electrosurgery; monopolar needs a dispersive pad.",
+      "c": "Bony prominences give poor contact and concentrate current, risking pad-site burns; use well-vascularized muscle.",
+      "d": "Metal implants can concentrate current; the pad is placed away from implants on well-vascularized tissue."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Through the dispersive pad always like monopolar"
+        "text": "Through the patient to a dispersive pad"
       },
       {
         "id": "b",
-        "text": "Between the two tines of the forceps—no dispersive pad required"
+        "text": "Between the two tines of the forceps"
       },
       {
         "id": "c",
-        "text": "Only through the anesthesia machine"
+        "text": "From the active tip to the grounded table"
       },
       {
         "id": "d",
-        "text": "Unable to coagulate vessels"
+        "text": "Along a vibrating ultrasonic blade"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Bipolar useful near nerves/wet fields with localized current.",
+    "explanation": "Bipolar useful near nerves/wet fields with localized current. No dispersive pad is required.",
     "distractorExplanations": {
-      "a": "No pad for bipolar.",
-      "c": "Anesthesia machine not the path.",
-      "d": "It does coagulate."
+      "a": "Current through the patient to a dispersive pad is the monopolar circuit, not bipolar.",
+      "c": "Current to a grounded table is an alternate-site burn hazard with older grounded systems, not the bipolar path.",
+      "d": "A vibrating blade describes ultrasonic (harmonic) devices, which use mechanical energy, not bipolar current."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1558,11 +1558,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Staring into the beam to aim better"
+        "text": "Any tinted safety glasses, a door sign, and shiny instruments to aim the beam"
       },
       {
         "id": "b",
-        "text": "Alcohol prep puddles left during activation"
+        "text": "Wavelength-specific eyewear and dry towels around the site to absorb the beam"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "Paper drapes ignited as a teaching tool"
+        "text": "Prescription glasses as eye protection and the laser kept in ready mode between uses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Fire/eye/plume hazards; use wet drapes/smoke evacuation as indicated.",
     "distractorExplanations": {
-      "a": "Never stare into beam.",
-      "b": "Fire risk with alcohol.",
-      "d": "Don't ignite drapes."
+      "a": "Eyewear must match the laser's wavelength and OD; shiny instruments reflect the beam instead of being nonreflective.",
+      "b": "Dry towels can ignite; wet towels/sponges are placed around the site to absorb stray laser energy.",
+      "d": "Prescription glasses do not filter laser wavelengths, and the laser goes to standby between uses."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved sensation"
+        "text": "Hypothermia from loss of limb blood flow"
       },
       {
         "id": "b",
-        "text": "Mandatory hypothermia"
+        "text": "Fluid overload when the cuff is deflated"
       },
       {
         "id": "c",
-        "text": "Sterile field contamination automatically"
+        "text": "Sterile field contamination from cuff leaks"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "Document times; exsanguinate appropriately; notify team of duration.",
     "distractorExplanations": {
-      "a": "Injures nerves.",
-      "b": "Warming separate issue.",
-      "c": "Not automatic contamination."
+      "a": "Tourniquet time limits protect nerves and muscle; hypothermia is not the classic over-time complication.",
+      "b": "Deflation causes reperfusion and possible hypotension, not fluid overload; excess pressure/time causes nerve and tissue injury.",
+      "c": "The cuff sits outside the field; overinflation and excess time injure nerves and tissue rather than contaminating the field."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Used if the case is already booked"
+        "text": "Used for the current case, then reported at the end of the day"
       },
       {
         "id": "b",
-        "text": "Reported and removed from service until repaired—not used 'carefully'"
+        "text": "Reported and removed from service until repaired"
       },
       {
         "id": "c",
-        "text": "Kicked to make it work"
+        "text": "Repaired on the spot by the scrub tech using spare parts"
       },
       {
         "id": "d",
-        "text": "Covered with extra sheets to hide faults"
+        "text": "Tagged with a note but kept in use until biomed arrives"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Equipment failure can cause crush/fall/positioning injuries.",
+    "explanation": "Equipment failure can cause crush/fall/positioning injuries. Do not keep using it carefully.",
     "distractorExplanations": {
-      "a": "Safety > schedule.",
-      "c": "Force damages more.",
-      "d": "Hiding faults dangerous."
+      "a": "Using known faulty equipment risks crush or fall injuries; it must be removed from service before use, not reported later.",
+      "c": "Repairs are done by biomedical engineering, not by the scrub tech improvising during the case.",
+      "d": "Tagging alone is not enough; a defective table is taken out of service until biomed repairs and clears it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Inhaled freely as harmless steam"
+        "text": "Filtered by a standard surgical mask worn by the team"
       },
       {
         "id": "b",
-        "text": "Directed toward the sterile corridor for ventilation"
+        "text": "Cleared by the room's general HVAC air exchanges"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Ignored per outdated myths"
+        "text": "Vented out by opening the OR doors during activation"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Plume can contain toxins/particles; PPE and evacuation protect staff.",
     "distractorExplanations": {
-      "a": "Not harmless.",
-      "b": "Don't spread to hall.",
-      "d": "Modern standards require control."
+      "a": "Standard surgical masks do not filter the fine particles in plume; local smoke evacuation is required.",
+      "b": "General room ventilation does not capture plume at the source; a smoke evacuator near the tip is needed.",
+      "d": "Opening OR doors disrupts positive pressure and spreads plume to corridors; doors stay closed and plume is evacuated."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bipolar only ever banned in all cases worldwide"
+        "text": "Bipolar electrosurgery"
       },
       {
         "id": "b",
-        "text": "No energy devices ever for any surgery"
+        "text": "Harmonic ultrasonic shears"
       },
       {
         "id": "c",
-        "text": "MRI in the OR routinely midcase"
+        "text": "Pulse oximetry probes"
       },
       {
         "id": "d",
-        "text": "Monopolar electrosurgery—coordinate with anesthesia/cardiology protocols"
+        "text": "Monopolar electrosurgery"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Use bipolar when possible, short bursts, pad placement strategies per protocol.",
+    "explanation": "Use bipolar when possible, short bursts, pad placement strategies per protocol. Coordinate monopolar use with anesthesia/cardiology protocols.",
     "distractorExplanations": {
-      "a": "Bipolar often preferred/safer relative.",
-      "b": "Energy often still needed with precautions.",
-      "c": "MRI not midcase OR routine."
+      "a": "Bipolar is the preferred safer option with implanted devices because current stays between the tines.",
+      "b": "Ultrasonic shears use mechanical vibration, not electrical current, so they do not interfere with pacemakers.",
+      "c": "Pulse oximetry uses light sensing and does not interfere with pacemakers or ICDs."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1760,23 +1760,23 @@
       },
       {
         "id": "b",
-        "text": "Recapping suture needles with two hands toward the body"
+        "text": "Hand-to-hand passing of scalpels with the blade pointed down"
       },
       {
         "id": "c",
-        "text": "Hiding sharps in sponges"
+        "text": "Two-handed recapping of hypodermic needles before returning them to the field"
       },
       {
         "id": "d",
-        "text": "Leaving loaded needle holders facing up toward eyes casually"
+        "text": "Leaving loaded needle holders on the Mayo stand with points up"
       }
     ],
     "correctOptionId": "a",
     "explanation": "OSHA and AORN-aligned practices reduce sticks.",
     "distractorExplanations": {
-      "b": "Two-handed recapping risky.",
-      "c": "Sharps in sponges cause RSI/counts errors.",
-      "d": "Point away/safe park."
+      "b": "Hand-to-hand passing of sharps is what neutral-zone technique replaces, regardless of blade direction.",
+      "c": "Two-handed recapping is a major needlestick cause; use one-handed scoop or a recapping device if needed.",
+      "d": "Exposed needle points left upright cause sticks; needles are secured or placed in a needle counter."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Close quickly to finish on time"
+        "text": "Recount once, and if still off, document the discrepancy and close the wound"
       },
       {
         "id": "b",
-        "text": "Notify surgeon, recount, search wound/field/trash per policy, and obtain imaging if unresolved"
+        "text": "Notify surgeon, recount, search wound/field/trash, and obtain imaging if unresolved"
       },
       {
         "id": "c",
-        "text": "Assume it fell on the floor and ignore"
+        "text": "Search the floor and trash first, then tell the surgeon after the final count is done"
       },
       {
         "id": "d",
-        "text": "Alter count sheet to match without search"
+        "text": "Obtain imaging right away and skip the recount since the film is definitive"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Never falsify counts; retained items are never events.",
+    "explanation": "Never falsify counts; retained items are never events. Follow facility policy for the search.",
     "distractorExplanations": {
-      "a": "Time pressure ≠ close over discrepancy.",
-      "c": "Must reconcile.",
-      "d": "Falsifying is misconduct."
+      "a": "Documenting and closing without searching or imaging leaves a possible retained item; an unresolved count requires imaging.",
+      "c": "The surgeon is notified immediately so the wound can be explored before closure, not after the final count.",
+      "d": "The recount and search come first; imaging is used when the count stays unresolved and can miss some items."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Placed over a bony prominence with poor contact"
+        "text": "Applied over a bony prominence close to the operative site"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "Cut in half to fit small patients routinely without approved pads"
+        "text": "Applied to clean, dry skin over the metal hip implant nearest the incision"
       },
       {
         "id": "d",
-        "text": "Omitted if the surgeon uses high power"
+        "text": "Applied to hairy skin after wetting with alcohol for better contact"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Proper dispersive electrode placement prevents alternate-site burns.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Applied to clean, dry, well-vascularized skin with full contact per IFU”.",
-      "c": "Not the best answer here; the right answer is “Applied to clean, dry, well-vascularized skin with full contact per IFU”.",
-      "d": "Not the best answer here; the right answer is “Applied to clean, dry, well-vascularized skin with full contact per IFU”."
+      "a": "Bony prominences have poor contact and concentrate current, risking burns; place the pad over well-vascularized muscle.",
+      "c": "Metal implants can concentrate current; the dispersive pad goes away from implants on well-vascularized tissue.",
+      "d": "Hair reduces contact, and alcohol is flammable and should never pool under a pad; clip hair and keep skin dry."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Close the wound immediately without notifying the team"
+        "text": "Recount at the end of closure and note the discrepancy on the count sheet"
       },
       {
         "id": "b",
-        "text": "Notify the surgeon, search systematically, and use imaging as directed by protocol"
+        "text": "Notify the surgeon, search systematically, and use imaging"
       },
       {
         "id": "c",
-        "text": "Hide the discrepancy from the record"
+        "text": "Complete closure, then obtain an X-ray in PACU if the sponge is still missing"
       },
       {
         "id": "d",
-        "text": "Assume the missing sponge dissolved"
+        "text": "Report the discrepancy only in an incident report after the patient leaves"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Count discrepancies require immediate communication and resolution steps.",
+    "explanation": "Count discrepancies require immediate communication and resolution steps. Imaging is used as directed by protocol.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Notify the surgeon, search systematically, and use imaging as directed by protocol”.",
-      "c": "Not the best answer here; the right answer is “Notify the surgeon, search systematically, and use imaging as directed by protocol”.",
-      "d": "Not the best answer here; the right answer is “Notify the surgeon, search systematically, and use imaging as directed by protocol”."
+      "a": "Waiting until closure ends removes the chance to search the wound; the surgeon is notified immediately.",
+      "c": "Imaging is done before the patient leaves the OR when a count is unresolved, not after closure in PACU.",
+      "d": "An incident report may follow, but the discrepancy must be resolved with the surgeon and team during the case."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ionizing radiation"
+        "text": "High-frequency alternating current passing through the tissue"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Only cold steel without energy"
+        "text": "Focused light energy absorbed by tissue water"
       },
       {
         "id": "d",
-        "text": "Compressed nitrogen alone"
+        "text": "Extreme cold delivered through a probe to freeze tissue"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ultrasonic devices use vibrating blades for cutting/coagulation.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “High-frequency mechanical vibration that denatures protein”.",
-      "c": "Not the best answer here; the right answer is “High-frequency mechanical vibration that denatures protein”.",
-      "d": "Not the best answer here; the right answer is “High-frequency mechanical vibration that denatures protein”."
+      "a": "Alternating current through tissue is electrosurgery; harmonic devices use mechanical vibration instead.",
+      "c": "Focused light energy absorbed by tissue describes a laser, not ultrasonic shears.",
+      "d": "Freezing tissue with a probe is cryosurgery; ultrasonic shears generate heat from vibration and friction."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore inflation time"
+        "text": "Inflate to the highest cuff pressure available and report time at closure"
       },
       {
         "id": "b",
@@ -1929,19 +1929,19 @@
       },
       {
         "id": "c",
-        "text": "Place it over the incision site"
+        "text": "Place the cuff over the bony joint nearest the incision site"
       },
       {
         "id": "d",
-        "text": "Inflate without monitoring duration"
+        "text": "Deflate and reinflate the cuff every 10 minutes to restore flow"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Tourniquet pressure and duration are patient-safety critical parameters.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Document tourniquet time and follow safe pressure/time limits”.",
-      "c": "Not the best answer here; the right answer is “Document tourniquet time and follow safe pressure/time limits”.",
-      "d": "Not the best answer here; the right answer is “Document tourniquet time and follow safe pressure/time limits”."
+      "a": "Pressure is set to the lowest effective level per limb and patient, and time is tracked and announced during the case.",
+      "c": "The cuff goes on the proximal limb over muscle, not over a joint or close to the incision.",
+      "d": "Reperfusion intervals are in hours (about 2 hours for a leg per policy), not every 10 minutes."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignored because it is sterile air"
+        "text": "Filtered with standard surgical masks"
       },
       {
         "id": "b",
-        "text": "Evacuated with appropriate smoke evacuation to reduce inhalation exposure"
+        "text": "Evacuated with appropriate smoke evacuation"
       },
       {
         "id": "c",
-        "text": "Directed toward the scrub team's faces"
+        "text": "Cleared by routine OR air exchanges"
       },
       {
         "id": "d",
-        "text": "Used to inflate the abdomen"
+        "text": "Suctioned through the fluid suction line without a filter"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Surgical smoke contains hazardous particulates; evacuation protects the team.",
+    "explanation": "Surgical smoke contains hazardous particulates; evacuation protects the team. This reduces inhalation exposure.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Evacuated with appropriate smoke evacuation to reduce inhalation exposure”.",
-      "c": "Not the best answer here; the right answer is “Evacuated with appropriate smoke evacuation to reduce inhalation exposure”.",
-      "d": "Not the best answer here; the right answer is “Evacuated with appropriate smoke evacuation to reduce inhalation exposure”."
+      "a": "Standard surgical masks do not filter the small particles in plume; source evacuation is required.",
+      "c": "General OR ventilation does not capture plume at the source, so staff still inhale it.",
+      "d": "An unfiltered fluid suction line can be damaged and does not remove plume safely; use a filtered evacuator."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"

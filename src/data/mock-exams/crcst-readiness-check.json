@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Sterilizing heavily soiled instruments without cleaning"
+        "text": "Sterilizing first to kill pathogens, then cleaning the instruments afterward"
       },
       {
         "id": "c",
-        "text": "Skipping enzymatic detergents always when soil is present"
+        "text": "Soaking in high-level disinfectant to make the instruments safe to handle"
       },
       {
         "id": "d",
-        "text": "Using sterile storage wraps as cleaning cloths"
+        "text": "Inspecting instruments under magnification for damage and missing parts"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Soil shields microbes from sterilants; cleaning is prerequisite to sterilization.",
     "distractorExplanations": {
-      "b": "Sterilization fails on dirty devices.",
-      "c": "Enzymatics often help protein soil.",
-      "d": "Wraps aren't cleaning tools."
+      "b": "Reverses the sequence: sterilant cannot penetrate soil, so cleaning must come before sterilization, not after it.",
+      "c": "HLD soaking is not the first step; organic soil inactivates disinfectants, so manual or mechanical cleaning comes first.",
+      "d": "Magnified inspection happens in prep and pack after cleaning; it is a quality check, not the first decontamination step."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Street clothes"
+        "text": "Cloth scrub top, latex exam gloves, and a surgical mask without eye protection"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Sterile surgical gloves as the only PPE with bare arms"
+        "text": "Sterile surgical gloves, a bouffant cap, and a sterile gown as worn in the OR"
       },
       {
         "id": "d",
-        "text": "No eye protection when splashing"
+        "text": "Lab coat, nitrile exam gloves, and safety glasses as used in the prep and pack area"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Decontam is the dirtiest area—dress for splash/sharps hazards.",
     "distractorExplanations": {
-      "a": "Street clothes contaminate.",
-      "c": "Arms need coverage.",
-      "d": "Eyes need protection."
+      "a": "Omits eye/face protection and uses a non-fluid-resistant cloth top; decontam splash risk requires fluid-resistant attire and eye protection.",
+      "c": "Sterile OR attire protects the patient, not the worker; decontam needs fluid-resistant, heavy-duty PPE, not sterile gloves and gowns.",
+      "d": "Prep-and-pack attire does not cover splash and sharps hazards; decontam requires fluid-resistant gowns, utility gloves and face protection."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "With vigorous spraying upward toward the face"
+        "text": "Above the water line under running tap water so soil is visible"
       },
       {
         "id": "b",
-        "text": "Using abrasive pads that scratch all surfaces indiscriminately against IFU"
+        "text": "Using steel wool or abrasive pads on stainless instruments to remove stains"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "Without following device IFU"
+        "text": "Before soaking, using a high-pressure air gun to blow off visible soil"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Minimize aerosols; select brushes that contact lumens/crevices without damaging devices.",
     "distractorExplanations": {
-      "a": "Upward spray aerosols pathogens.",
-      "b": "Scratches create infection niches.",
-      "d": "IFU governs cleaning."
+      "a": "Brushing above the water line or under running water creates aerosols; scrubbing is done submerged to contain splash.",
+      "b": "Abrasive pads and steel wool scratch the passivation layer and promote corrosion; use soft brushes as the IFU directs.",
+      "d": "Air or water pressure guns blowing off dry soil create aerosols; manual scrubbing is done submerged first, with guns used per IFU."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only wiping the outside"
+        "text": "Flushing with tap water only, since brushes can scratch the inner channel"
       },
       {
         "id": "b",
-        "text": "No attention to inner channels"
+        "text": "Brushing with the largest brush available to maximize contact with the walls"
       },
       {
         "id": "c",
-        "text": "Sterilization without cleaning if lumen is short"
+        "text": "Soaking in enzymatic solution with the ends capped to keep solution inside"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Biofilm in lumens is a major failure point (e.g., endoscopes/complex instruments)",
     "distractorExplanations": {
-      "a": "Exterior wipe insufficient.",
-      "b": "Channels are critical.",
-      "c": "Length doesn't remove cleaning need."
+      "a": "Flushing alone does not remove adherent biofilm; the IFU requires brushing with the correct-diameter brush plus flushing.",
+      "b": "An oversized brush cannot pass or contact the lumen properly; brush diameter must match the channel as the IFU specifies.",
+      "c": "Capping ends stops solution flow, and soaking replaces neither brushing nor flushing; lumens must be brushed and irrigated."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Break down organic soils (protein, fat, carbs) when used at correct temperature/contact time"
+        "text": "Break down organic soils (protein, fat, carbs)"
       },
       {
         "id": "b",
-        "text": "Sterilize instruments alone"
+        "text": "Disinfect instruments so they are safe to handle"
       },
       {
         "id": "c",
-        "text": "Replace rinsing"
+        "text": "Dissolve rust and mineral scale on stainless steel"
       },
       {
         "id": "d",
-        "text": "Work better if mixed to random strengths"
+        "text": "Work fastest in very hot water above 140 °F (60 °C)"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Follow concentration, temp, and time; rinse thoroughly to remove residues.",
+    "explanation": "Follow concentration, temp, and time; rinse thoroughly to remove residues. They work only at the correct temperature and contact time.",
     "distractorExplanations": {
-      "b": "Not sterilants alone.",
-      "c": "Rinsing required.",
-      "d": "Dosing matters."
+      "b": "Enzymes digest organic soil but are not disinfectants; instruments remain contaminated until cleaned and disinfected or sterilized.",
+      "c": "Rust and scale removal needs acid or descaling products; enzymes target organic soil such as blood and protein.",
+      "d": "High heat denatures the enzymes and coagulates protein; enzymatics are used in warm water at the labeled temperature."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Allowed to dry for days to 'set' soil"
+        "text": "After arrival in decontam, once the instruments are dry and easier to handle"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "By tossing instruments into sharps containers"
+        "text": "At point of use by soaking the instruments in saline until transport"
       },
       {
         "id": "d",
-        "text": "Using sterile saline bags as hammers"
+        "text": "At the sterilizer, during the cycle's prevacuum conditioning phase"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Point-of-use pretreatment prevents hardened soil and corrosion.",
     "distractorExplanations": {
-      "a": "Drying hardens soil.",
-      "c": "Instruments ≠ sharps disposal route for reusable sets.",
-      "d": "Don't damage devices."
+      "a": "Waiting until soil dries makes it harder to remove and promotes corrosion; gross soil is removed at point of use.",
+      "c": "Prolonged saline exposure causes pitting and corrosion; keep instruments moist with water-moistened towels or enzymatic spray.",
+      "d": "Sterilizers do not remove soil; heat bakes on bioburden, so gross soil must be removed long before the sterilization cycle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The sterile storage as more negative than decontam"
+        "text": "Sterile storage relative to the decontamination area"
       },
       {
         "id": "b",
-        "text": "Office break rooms vs OR always as the SPD rule"
+        "text": "The prep-and-pack area relative to the corridor"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "The parking lot"
+        "text": "The OR suite relative to sterile processing"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Air flows into decontam so contaminants don't blow into clean prep/sterile areas.",
     "distractorExplanations": {
-      "a": "Sterile storage should be positive/clean.",
-      "b": "Break rooms not the SPD air design focus.",
-      "d": "Parking irrelevant."
+      "a": "Reverses the relationship: sterile storage is kept positive so clean air flows out, while decontam is the negative room.",
+      "b": "Prep and pack is a clean area kept at positive pressure; negative pressure is used to contain contaminants in decontam.",
+      "d": "Operating rooms are positive-pressure spaces that protect the sterile field; in SPD the decontam area is the negative room."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Send straight to OR without processing because they look shiny"
+        "text": "Sterilize them as received, since the vendor cleaned them"
       },
       {
         "id": "b",
-        "text": "Skip BI monitoring forever for loaners"
+        "text": "Run them through IUSS just before the case to save time"
       },
       {
         "id": "c",
-        "text": "Store in decontam uncovered indefinitely"
+        "text": "Inventory them and release to the OR if the vendor seal is intact"
       },
       {
         "id": "d",
-        "text": "Inspect, clean, and sterilize according to IFU before use—never assume they are ready"
+        "text": "Inspect, clean, and sterilize according to IFU before use"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Loaners are high risk for inadequate processing history.",
+    "explanation": "Loaners are high risk for inadequate processing history. Never assume loaners arrive ready for use.",
     "distractorExplanations": {
-      "a": "Shiny ≠ sterile.",
-      "b": "Monitoring still applies.",
-      "c": "Process promptly."
+      "a": "Vendor or prior-facility cleaning cannot be verified; loaners must be fully decontaminated and inspected before sterilization.",
+      "b": "Immediate-use sterilization is not a substitute for complete processing of loaners, which should arrive in time for full reprocessing.",
+      "c": "An intact vendor seal does not prove sterility; loaner sets are received as contaminated and processed per IFU before use."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Overloading trays tightly with no solution contact"
+        "text": "Filling the tank fresh and starting immediately without degassing, then rinsing"
       },
       {
         "id": "c",
-        "text": "Mixing dissimilar metals carelessly causing damage always as best practice"
+        "text": "Running hinged and dissimilar metals together closed to keep sets intact"
       },
       {
         "id": "d",
-        "text": "No manufacturer instructions"
+        "text": "Placing instruments on the tank floor so they get the strongest cavitation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Follow ultrasonic IFU; some devices cannot be ultrasonicated.",
     "distractorExplanations": {
-      "b": "Overloading reduces energy delivery.",
-      "c": "Galvanic issues possible—follow IFU.",
-      "d": "IFU mandatory."
+      "b": "Fresh solution contains dissolved gas that dampens cavitation; the tank must be degassed per the manufacturer before use.",
+      "c": "Instruments must be open and dissimilar metals separated; closed boxlocks block cavitation and mixed metals cause galvanic etching.",
+      "d": "Instruments must sit in a basket, not on the tank floor, which can damage both the transducer and the instruments."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Critical implants as the preferred permanent substitute for sterilization"
+        "text": "Critical items that enter sterile tissue or the vascular system"
       },
       {
         "id": "b",
-        "text": "Semicritical items that contact mucous membranes when sterilization isn't feasible per Spaulding/IFU"
+        "text": "Semicritical items that contact mucous membranes"
       },
       {
         "id": "c",
-        "text": "Environmental floors as sterilant"
+        "text": "Noncritical items that touch only intact skin"
       },
       {
         "id": "d",
-        "text": "Skin antisepsis as surgical sterilant"
+        "text": "Implants placed during surgery when steam is unavailable"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Critical items require sterilization; HLD is not a sterilant unless a sterilant cycle/claim applies.",
+    "explanation": "Critical items require sterilization; HLD is not a sterilant unless a sterilant cycle/claim applies. Per Spaulding and IFU, HLD is used when sterilization isn't feasible.",
     "distractorExplanations": {
-      "a": "Implants need sterilization.",
-      "c": "Floors aren't HLD targets typically.",
-      "d": "Skin antisepsis differs."
+      "a": "Critical items require sterilization under Spaulding; HLD is reserved for semicritical items such as flexible endoscopes.",
+      "c": "Noncritical items such as BP cuffs need low- or intermediate-level disinfection, not high-level disinfection.",
+      "d": "Implants are critical items that must be sterilized, ideally with quarantine until BI results; HLD is not acceptable."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -337,7 +337,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate sterilization without cleaning"
+        "text": "Sterilization in a short-cycle IUSS to make the set safe to handle before cleaning"
       },
       {
         "id": "b",
@@ -345,19 +345,19 @@
       },
       {
         "id": "c",
-        "text": "Skipping detergent if instruments look clean"
+        "text": "Inspection and assembly in prep and pack before the set goes through the washer"
       },
       {
         "id": "d",
-        "text": "Lubricating hinged instruments before any rinse"
+        "text": "Lubricating hinged instruments with water-soluble lubricant before any rinsing"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Soil must be removed; sterilization cannot compensate for inadequate cleaning.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Thorough cleaning/decontamination to remove soil before disinfection or sterilization”.",
-      "c": "Not the best answer here; the right answer is “Thorough cleaning/decontamination to remove soil before disinfection or sterilization”.",
-      "d": "Not the best answer here; the right answer is “Thorough cleaning/decontamination to remove soil before disinfection or sterilization”."
+      "a": "Sterilizing before cleaning bakes soil on and fails; IUSS still requires full cleaning first.",
+      "c": "Inspection and assembly follow cleaning; sending dirty sets to prep and pack reverses the workflow and contaminates the clean area.",
+      "d": "Lubrication is applied after cleaning, typically in the final rinse or at inspection, not before soil removal."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -370,7 +370,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Street clothes"
+        "text": "A cloth cover gown, exam gloves, and a surgical mask without goggles or face shield"
       },
       {
         "id": "b",
@@ -378,19 +378,19 @@
       },
       {
         "id": "c",
-        "text": "No eye protection if sinks have faucets"
+        "text": "Sterile surgical gloves and gown, since contact with contaminated instruments is brief"
       },
       {
         "id": "d",
-        "text": "Open-toed shoes for comfort"
+        "text": "Hair cover, shoe covers and a lab coat, with gloves added just for sharps"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Decontam PPE protects against bloodborne pathogens and chemical splash.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Fluid-resistant attire, eye protection, and gloves appropriate to splash/sharps risk”.",
-      "c": "Not the best answer here; the right answer is “Fluid-resistant attire, eye protection, and gloves appropriate to splash/sharps risk”.",
-      "d": "Not the best answer here; the right answer is “Fluid-resistant attire, eye protection, and gloves appropriate to splash/sharps risk”."
+      "a": "Cloth gowns are not fluid-resistant and a mask alone leaves the eyes exposed to splash; decontam requires eye protection.",
+      "c": "Sterile attire protects the patient, not the worker; decontam needs heavy-duty utility gloves and a fluid-resistant gown.",
+      "d": "Gloves are required for any handling of contaminated items, not just sharps, and a lab coat is not fluid-resistant."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Flushing is never necessary for any lumen"
+        "text": "Flushing cools the lumen so it is not damaged by the hot washer cycle"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Flushing replaces the need for sterilization"
+        "text": "Flushing with detergent disinfects the channel so sterilization can be shortened"
       },
       {
         "id": "d",
-        "text": "It only matters for wooden instruments"
+        "text": "Water left in the lumen helps steam penetrate during the sterilization cycle"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Lumens trap soil; IFU-directed flushing/brushing is critical.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Bioburden and debris can remain inside channels if not properly irrigated”.",
-      "c": "Not the best answer here; the right answer is “Bioburden and debris can remain inside channels if not properly irrigated”.",
-      "d": "Not the best answer here; the right answer is “Bioburden and debris can remain inside channels if not properly irrigated”."
+      "a": "Flushing is done to remove soil from channels, not to protect the device from washer temperatures.",
+      "c": "Detergent flushing cleans but does not disinfect, and sterilization parameters are set by the IFU, not shortened after flushing.",
+      "d": "Residual water in lumens causes wet packs and can impede sterilant contact; lumens must be dried after irrigation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Decorate the OR back table"
+        "text": "Reduce the weight of trays so they can be transported in closed carts"
       },
       {
         "id": "b",
@@ -477,19 +477,19 @@
       },
       {
         "id": "c",
-        "text": "Activate the sterilizer cycle early"
+        "text": "Allow the instruments to be sent directly to prep and pack, bypassing decontamination"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for PPE in SPD"
+        "text": "Remove the need for enzymatic cleaning once instruments arrive in decontam"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Point-of-use removal/keeping instruments moist improves subsequent decontamination.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Prevent drying of soil that makes later cleaning more difficult and less effective”.",
-      "c": "Not the best answer here; the right answer is “Prevent drying of soil that makes later cleaning more difficult and less effective”.",
-      "d": "Not the best answer here; the right answer is “Prevent drying of soil that makes later cleaning more difficult and less effective”."
+      "a": "Transport weight is not the reason; point-of-use treatment keeps soil moist so it does not dry and harden on instruments.",
+      "c": "Point-of-use treatment does not replace decontamination; every used instrument still goes through full cleaning in decontam.",
+      "d": "Enzymatic or detergent cleaning is still required in decontam; point-of-use wiping removes gross soil only."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "Only the count sheet color"
+        "text": "Cleanliness and count only, since function is tested by the surgeon at point of use"
       },
       {
         "id": "c",
-        "text": "Nothing if they came from washers"
+        "text": "Package integrity and chemical indicator color after the sterilization cycle"
       },
       {
         "id": "d",
-        "text": "Rust as acceptable for sterile use"
+        "text": "Corrosion and staining, with function checks reserved for loaner sets"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Assembly is a quality checkpoint; repair/replace defective instruments.",
     "distractorExplanations": {
-      "b": "Count sheets help but inspection needed.",
-      "c": "Washers can fail.",
-      "d": "Rusty instruments rejected."
+      "b": "Functional testing (scissor sharpness, jaw alignment, ratchets) is SPD's job at assembly, not the surgeon's at point of use.",
+      "c": "Package and CI checks occur after sterilization; instrument inspection for soil and function must happen before packaging.",
+      "d": "Function checks apply to every instrument at assembly, not just loaners; defective items are repaired or replaced."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Cracked lids accepted if taped heavily"
+        "text": "Annual filter replacement with gasket checks done by the vendor"
       },
       {
         "id": "b",
-        "text": "Intact filters/valves/gaskets and correct locking per IFU, with internal CI as required"
+        "text": "Intact filters/valves/gaskets and correct locking per IFU"
       },
       {
         "id": "c",
-        "text": "No filter checks"
+        "text": "An external CI on the lid with no internal indicator needed"
       },
       {
         "id": "d",
-        "text": "Overfilling above rated weight"
+        "text": "Wrapping in a single layer of nonwoven wrap for extra protection"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Containers fail if seals/filters compromised; follow load weight limits.",
+    "explanation": "Containers fail if seals/filters compromised; follow load weight limits. Place internal chemical indicators as required.",
     "distractorExplanations": {
-      "a": "Cracks invalidate.",
-      "c": "Filters critical.",
-      "d": "Overfilling risks wet packs/failures."
+      "a": "Disposable filters are replaced each cycle and gaskets are checked at every assembly per IFU, not annually by a vendor.",
+      "c": "Containers still need an internal CI where policy or IFU requires; an external indicator shows exposure, not internal conditions.",
+      "d": "Rigid containers are validated as the sterile barrier themselves; added wrapping is not required and can impair drying."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Used when soaking wet"
+        "text": "Applied tightly so tape compresses the pack into a firm bundle"
       },
       {
         "id": "b",
-        "text": "Closed with safety pins through the wrap freely"
+        "text": "Oversized so extra wrap material can be tucked in several layers"
       },
       {
         "id": "c",
-        "text": "Sized appropriately using sequential wrapping techniques without tenting/strangulation of pack"
+        "text": "Sized appropriately using sequential wrapping techniques"
       },
       {
         "id": "d",
-        "text": "Reusable forever without inspection"
+        "text": "Folded with the final flap left loose so steam can enter"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Wrap integrity and technique maintain sterility barrier.",
+    "explanation": "Wrap integrity and technique maintain sterility barrier. Avoid tenting or strangulation of the pack.",
     "distractorExplanations": {
-      "a": "Wet wraps fail.",
-      "b": "Pins create holes—use appropriate indicators/tape.",
-      "d": "Inspect reusable textiles."
+      "a": "Over-tight wrapping strangles the pack and impedes sterilant penetration; wrap snugly without compressing contents.",
+      "b": "Oversized wraps create excess layers that hinder steam penetration and drying; wrap size should match the tray.",
+      "d": "A loose final flap breaks the barrier; steam penetrates through the wrap material, so every flap is secured with indicator tape."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only on the sterilizer wall outside"
+        "text": "On the outside of each package, where they replace the internal CI"
       },
       {
         "id": "b",
-        "text": "Never inside sets"
+        "text": "At the top center of the tray, where the steam reaches the items first"
       },
       {
         "id": "c",
-        "text": "In the OR after opening only as the sole placement"
+        "text": "On the bottom shelf over the drain, near the coolest point of the sterilizer chamber"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "Internal CI helps detect sterilant penetration problems inside packs.",
     "distractorExplanations": {
-      "a": "External indicators alone insufficient.",
-      "b": "Internal placement required typically.",
-      "c": "OR check is additional."
+      "a": "External indicators show exposure; an internal CI is still placed inside where sterilant penetration is hardest.",
+      "b": "The top surface is the easiest place to reach; internal CIs go in the most challenging spot, such as the center or densest area.",
+      "c": "That is where a BI process challenge device sits in the load; internal CIs go inside each pack at its hardest-to-reach point."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "Replace cleaning"
+        "text": "Record the sterilizer cycle number and load contents for recall tracing"
       },
       {
         "id": "c",
-        "text": "Sterilize devices"
+        "text": "Show the technician which instruments need lubrication before packing"
       },
       {
         "id": "d",
-        "text": "Serve as biological indicators"
+        "text": "Replace the internal chemical indicator in trays that are counted"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Incomplete trays delay surgery and risk counts.",
     "distractorExplanations": {
-      "b": "Cleaning still needed.",
-      "c": "Not sterilants.",
-      "d": "BI are spore tests."
+      "b": "Cycle and load data go on the load sticker and sterilizer record; the count sheet lists tray contents for completeness.",
+      "c": "Lubrication follows IFU and inspection checks, not the count sheet, which lists instruments to confirm completeness.",
+      "d": "Count sheets are documentation, not process indicators; every tray still needs its internal chemical indicator."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Grease packing inside lumens before sterilizing"
+        "text": "Lumens capped at both ends to keep sterilant inside the channel"
       },
       {
         "id": "b",
-        "text": "Moisture/residual water controls and lumen accessories per sterilizer IFU (e.g., wetness management)"
+        "text": "Moisture/residual water controls and lumen accessories per sterilizer IFU"
       },
       {
         "id": "c",
-        "text": "Tape sealing lumen ends closed"
+        "text": "Lumens left filled with water so steam can form inside them during the cycle"
       },
       {
         "id": "d",
-        "text": "No special attention"
+        "text": "Lubricant instilled into the channel to protect it from heat damage"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Steam must contact surfaces; excess water can cause wet packs; some systems use lumen devices.",
     "distractorExplanations": {
-      "a": "Grease impedes sterilization.",
-      "c": "Sealed ends block steam.",
-      "d": "Lumens need attention."
+      "a": "Caps or plugs block sterilant contact in lumens; channels must be open so steam or gas can enter per IFU.",
+      "c": "Water left in lumens causes wet packs and blocks low-temperature sterilants; lumens are dried before packaging.",
+      "d": "Oil-based lubricants inside lumens block sterilant contact; water-soluble instrument lubricant is used on hinges per IFU."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Block steam intentionally as their purpose"
+        "text": "Seal instrument tips so the sterilant cannot corrode the cutting edges"
       },
       {
         "id": "b",
-        "text": "Replace wrap"
+        "text": "Serve as a substitute for a peel pouch when sterilizing single delicate instruments"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "Indicate BI results"
+        "text": "Hold hinged instruments locked closed to prevent jaw misalignment"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Use protectors validated for sterilization compatibility.",
     "distractorExplanations": {
-      "a": "Must not block sterilant improperly.",
-      "b": "Wrap still needed.",
-      "d": "Not BIs."
+      "a": "Tip protectors must allow sterilant contact; airtight sealing would prevent sterilization of the protected tip.",
+      "b": "A tip guard is not a sterile barrier; the instrument still needs a validated package such as a pouch or wrap.",
+      "d": "Hinged instruments are sterilized open or unlocked; stringers and racks hold them, not tip protectors."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -733,15 +733,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Faster cycles always with better kill"
+        "text": "Chemical indicators that change color before the cycle ends"
       },
       {
         "id": "b",
-        "text": "Automatic BI passes"
+        "text": "Shorter exposure times because metal holds more heat"
       },
       {
         "id": "c",
-        "text": "Sharper scissors"
+        "text": "Overpressure alarms that abort the sterilization cycle"
       },
       {
         "id": "d",
@@ -751,9 +751,9 @@
     "correctOptionId": "d",
     "explanation": "Follow sterilizer and container IFU for maximum weights.",
     "distractorExplanations": {
-      "a": "Overweight harms cycles.",
-      "b": "BI unrelated directly.",
-      "c": "Function unrelated."
+      "a": "CIs respond to process conditions, not tray weight; overweight trays condense more steam and cause wet packs.",
+      "b": "Heavy metal mass acts as a heat sink and slows heat-up; it does not shorten the required exposure time.",
+      "c": "Tray mass does not raise chamber pressure; the real risk is excess condensate leading to wet packs and failures."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "More contaminated than decontam"
+        "text": "Negative relative to decontamination so dust is pulled out of the room"
       },
       {
         "id": "c",
-        "text": "Open to outside dust winds ideally"
+        "text": "Kept at the same pressure as decontam, with doors left open for flow"
       },
       {
         "id": "d",
-        "text": "Identical to soiled utility without controls"
+        "text": "Kept above 75% relative humidity to keep lint from floating"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Protect clean instruments during assembly/packaging.",
     "distractorExplanations": {
-      "b": "Clean > decontam contamination.",
-      "c": "Dust harms.",
-      "d": "Controls required."
+      "b": "A negative clean area would draw contaminated air in from decontam; prep and pack must be positive to dirty areas.",
+      "c": "Neutral pressure with open doors lets contaminated air migrate; clean areas are positive and doors stay closed.",
+      "d": "AAMI ST79 limits relative humidity in prep and pack to 60% or less; high humidity promotes microbial growth."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignored if only one scissor missing in a major set"
+        "text": "Noted on the tray tag and sent to the OR, where staff can substitute"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Replaced with random unprocessed instruments from decontam floor"
+        "text": "Replaced with a matching instrument pulled from another assembled set"
       },
       {
         "id": "d",
-        "text": "Hidden from OR"
+        "text": "Reported only if the missing item is a sharp or a count item"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Incomplete sets are patient safety issues.",
     "distractorExplanations": {
-      "a": "Major sets need completeness.",
-      "c": "Unprocessed replacements unsafe.",
-      "d": "Transparency required."
+      "a": "Sending an incomplete set shifts the problem to the OR; missing items are resolved in SPD before sterilization per policy.",
+      "c": "Robbing another set creates a second incomplete tray; replacements come from processed stock and are documented.",
+      "d": "Every missing instrument is documented and resolved, not just counted sharps; incomplete sets delay surgery."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only after the patient leaves the hospital"
+        "text": "In decontamination, before items enter the washer-disinfector"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "Never, if the washer completed a cycle"
+        "text": "After sterilization, when the set is opened in the OR"
       },
       {
         "id": "d",
-        "text": "Only when a surgeon complains"
+        "text": "At the sterilizer, while the load is cooling on the cart"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Visual/functional inspection at assembly catches residual soil and defects.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “During assembly, before packaging for sterilization”.",
-      "c": "Not the best answer here; the right answer is “During assembly, before packaging for sterilization”.",
-      "d": "Not the best answer here; the right answer is “During assembly, before packaging for sterilization”."
+      "a": "Pre-cleaning checks in decontam cannot confirm cleanliness; final cleanliness and function inspection happens at assembly.",
+      "c": "OR inspection is a final check; finding soil or defects there means the SPD inspection at assembly failed.",
+      "d": "Inspection after sterilization would require reopening packs; function and cleanliness checks happen before packaging."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -898,7 +898,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Fully closed and locked tightly every time"
+        "text": "Closed on the first ratchet to protect the jaws from damage"
       },
       {
         "id": "b",
@@ -906,19 +906,19 @@
       },
       {
         "id": "c",
-        "text": "Wrapped while soaking wet with blood"
+        "text": "Fully locked on stringers so they do not shift during transport"
       },
       {
         "id": "d",
-        "text": "Without stringers or racks even if IFU requires them"
+        "text": "Closed inside a peel pouch so the tips do not puncture it"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Open position allows steam/sterilant to contact box locks and jaws.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “In the open or unlocked position to allow sterilant contact”.",
-      "c": "Not the best answer here; the right answer is “In the open or unlocked position to allow sterilant contact”.",
-      "d": "Not the best answer here; the right answer is “In the open or unlocked position to allow sterilant contact”."
+      "a": "Even one ratchet click blocks sterilant at the box lock and stresses the joint; hinges stay open or unlocked.",
+      "c": "Stringers hold instruments open, not locked; locked boxlocks prevent sterilant contact with mating surfaces.",
+      "d": "Hinged instruments in pouches are still placed open or unlocked; tip protectors are what prevent punctures."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "That sterility is guaranteed for 10 years"
+        "text": "That the load passed the biological spore challenge"
       },
       {
         "id": "b",
-        "text": "That sterilant conditions were met at the indicator location (process conditions), not sterility by themselves"
+        "text": "That sterilant conditions were met at the indicator location"
       },
       {
         "id": "c",
-        "text": "The exact CFU count of remaining organisms"
+        "text": "That the pack was exposed to the sterilizer, from the outside"
       },
       {
         "id": "d",
-        "text": "That the washer-disinfector was skipped"
+        "text": "That the sterilizer passed its daily air removal test"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "CIs monitor critical process parameters; BIs are needed for lethality verification.",
+    "explanation": "CIs monitor critical process parameters; BIs are needed for lethality verification. A CI shows process conditions, not sterility by itself.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “That sterilant conditions were met at the indicator location (process conditions), not sterility by themselves”.",
-      "c": "Not the best answer here; the right answer is “That sterilant conditions were met at the indicator location (process conditions), not sterility by themselves”.",
-      "d": "Not the best answer here; the right answer is “That sterilant conditions were met at the indicator location (process conditions), not sterility by themselves”."
+      "a": "Spore lethality is verified by a biological indicator; a CI shows that process conditions reached its location.",
+      "c": "That describes an external process indicator (Type 1); internal CIs show conditions met inside the pack.",
+      "d": "Air removal is checked with a Bowie-Dick test in an empty chamber, not by chemical indicators inside packs."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace biological monitoring"
+        "text": "Record the sterilizer load number for recall and traceability"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Document employee lunch breaks"
+        "text": "Replace the internal chemical indicator when trays are counted twice at assembly"
       },
       {
         "id": "d",
-        "text": "Increase sterilizer temperature"
+        "text": "Document instrument repair history for preventive maintenance"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Count sheets support accurate assembly and OR counts.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Verify completeness of instrument sets during assembly and at point of use”.",
-      "c": "Not the best answer here; the right answer is “Verify completeness of instrument sets during assembly and at point of use”.",
-      "d": "Not the best answer here; the right answer is “Verify completeness of instrument sets during assembly and at point of use”."
+      "a": "Load numbers are on the load label and sterilizer log; count sheets list set contents for completeness checks.",
+      "c": "Count sheets do not monitor sterilization; trays still require internal chemical indicators.",
+      "d": "Repair history lives in instrument tracking records; the count sheet confirms what belongs in the tray."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Exact BI spore species"
+        "text": "Spore kill at the coldest point of a fully loaded chamber"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Detergent concentration"
+        "text": "Whether exposure time and temperature were met in each pack"
       },
       {
         "id": "d",
-        "text": "Package aesthetics"
+        "text": "Residual moisture and wet packs at the end of gravity-displacement cycles"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Bowie-Dick is a daily diagnostic for prevac air removal—not a BI.",
     "distractorExplanations": {
-      "a": "BI is separate.",
-      "c": "Detergent is washers.",
-      "d": "Aesthetics irrelevant."
+      "a": "Spore kill is measured with a BI in a process challenge device; Bowie-Dick tests air removal in an empty chamber.",
+      "c": "Internal CIs show pack-level parameters; the Bowie-Dick test runs in an empty chamber to detect residual air.",
+      "d": "Bowie-Dick is used in prevacuum sterilizers, not gravity cycles, and it detects air removal failure, not wet packs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ethylene oxide"
+        "text": "Ethylene oxide sterilization cycles"
       },
       {
         "id": "b",
-        "text": "Dry heat"
+        "text": "Dry heat sterilization cycles"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Radiation"
+        "text": "Ionizing radiation used by device manufacturers"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Match BI organism to sterilant: stearothermophilus for steam; subtilis/niger historically for EO/dry heat variants—know current IFU.",
     "distractorExplanations": {
-      "a": "EO uses different spore historically/currently per product.",
-      "b": "Dry heat different.",
-      "d": "Radiation industrial."
+      "a": "EO cycles are monitored with Bacillus atrophaeus spores, not Geobacillus stearothermophilus.",
+      "b": "Dry heat is also monitored with Bacillus atrophaeus spores; G. stearothermophilus is the steam indicator organism.",
+      "d": "Industrial radiation historically used Bacillus pumilus as its indicator organism, not G. stearothermophilus."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1096,15 +1096,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Sterile if cool to touch"
+        "text": "Sterile once it has cooled for 30 minutes on the cart"
       },
       {
         "id": "b",
-        "text": "OK if used within 5 minutes"
+        "text": "Sterile if the internal chemical indicator inside the pack changed fully"
       },
       {
         "id": "c",
-        "text": "Fixed by wiping with a towel and issuing"
+        "text": "Usable once it is dried in a warming cabinet before issue to the OR"
       },
       {
         "id": "d",
@@ -1114,9 +1114,9 @@
     "correctOptionId": "d",
     "explanation": "Moisture wicks microbes through wraps; find loading/drying/weight causes.",
     "distractorExplanations": {
-      "a": "Cool ≠ dry/sterile barrier intact.",
-      "b": "Time doesn't fix wicking risk.",
-      "c": "Wiping insufficient."
+      "a": "Cooling does not restore the barrier; moisture wicks microbes through the wrap, so the pack is not sterile.",
+      "b": "A passing CI shows conditions were met but does not cancel the contamination risk from a wet barrier.",
+      "c": "Drying a wet pack afterward does not make it sterile; it must be reprocessed and the cause investigated."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "Immediate use without aeration is always safe"
+        "text": "Heat-sensitive items are needed right away, so the aeration phase can safely be skipped"
       },
       {
         "id": "c",
-        "text": "It is faster than steam for all stainless sets routinely"
+        "text": "Stainless steel sets need a faster turnaround than steam provides"
       },
       {
         "id": "d",
-        "text": "No monitoring is needed"
+        "text": "Items are packaged in linen wraps that cannot tolerate steam heat"
       }
     ],
     "correctOptionId": "a",
     "explanation": "EO is toxic/flammable concerns historically; aeration removes residuals; BI monitoring required.",
     "distractorExplanations": {
-      "b": "Aeration mandatory.",
-      "c": "Steam preferred for heat-stable.",
-      "d": "Monitoring required."
+      "b": "EO residuals are toxic to patients and staff; aeration per IFU is required before use, even for urgent cases.",
+      "c": "EO cycles plus aeration take many hours; heat-stable stainless steel should be steam sterilized.",
+      "d": "Linen and cellulose wraps tolerate steam; EO is selected based on device heat/moisture sensitivity and IFU."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Linen packs soaked with liquids"
+        "text": "Linen-wrapped packs and other cellulose-containing items"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "Powders and oils as ideal loads"
+        "text": "Liquids, powders, and oils that cannot be steam sterilized"
       },
       {
         "id": "d",
-        "text": "Any device with long dead-end lumens against IFU"
+        "text": "Long narrow-lumen devices of any length or diameter"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Compatibility lists matter; cellulose/liquids often contraindicated in some systems.",
     "distractorExplanations": {
-      "a": "Liquids/cellulose issues common.",
-      "c": "Oils/powders incompatible often.",
-      "d": "Lumen limits per IFU."
+      "a": "Cellulose (linen, paper) absorbs hydrogen peroxide and aborts or fails the cycle; use polypropylene wraps or Tyvek pouches.",
+      "c": "Liquids, powders and oils are incompatible with hydrogen peroxide systems; they block or absorb the sterilant.",
+      "d": "Hydrogen peroxide systems have validated lumen length and diameter limits; devices outside them cannot be processed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the operator's favorite music"
+        "text": "Patient name and medical record number printed on every load label"
       },
       {
         "id": "b",
-        "text": "No records to save paper"
+        "text": "Sterilizer printout of time and temperature, discarded once the BI result is read"
       },
       {
         "id": "c",
-        "text": "Cycle parameters, CI/BI results, load contents, and operator identification per policy"
+        "text": "Cycle parameters, CI/BI results, load contents, and operator identification"
       },
       {
         "id": "d",
-        "text": "Patient SSN on every sterilizer strip publicly"
+        "text": "Monthly summaries of BI results instead of individual load records"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Traceability supports recalls and accreditation.",
+    "explanation": "Traceability supports recalls and accreditation. Keep records per facility policy.",
     "distractorExplanations": {
-      "a": "Music irrelevant.",
-      "b": "Records required.",
-      "d": "Protect privacy—use lot/load IDs appropriately."
+      "a": "Load records use lot and load numbers linked to patients through the case record; printing PHI on labels breaches privacy.",
+      "b": "Printouts are part of the permanent load record and are retained per policy, not discarded after the BI result.",
+      "d": "Each load needs its own record (contents, parameters, CI/BI, operator); monthly summaries cannot support a recall."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1228,27 +1228,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Released early without BI always as best practice"
+        "text": "Released once the Type 5 integrator passes"
       },
       {
         "id": "b",
-        "text": "Never monitored"
+        "text": "Sterilized using an IUSS cycle for speed"
       },
       {
         "id": "c",
-        "text": "Washed"
+        "text": "Released when the Bowie-Dick test passes"
       },
       {
         "id": "d",
-        "text": "Quarantined until BI results are known (CDC recommendation concept), when possible"
+        "text": "Quarantined until BI results are known"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Implants are high risk—await BI before release when feasible.",
+    "explanation": "Implants are high risk—await BI before release when feasible. CDC and AAMI recommend quarantine when possible.",
     "distractorExplanations": {
-      "a": "Early release discouraged for implants.",
-      "b": "Monitoring essential.",
-      "c": "Cleaning alone insufficient."
+      "a": "AAMI permits early release on a Type 5 integrator only in documented emergencies; routine implant loads await the BI.",
+      "b": "IUSS is not recommended for implants; implant loads are processed in a full cycle with BI monitoring and quarantine.",
+      "c": "Bowie-Dick tests air removal in an empty chamber; it does not verify spore kill in an implant load."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "High-speed vacuum pulses always like prevac"
+        "text": "Mechanical vacuum pulses that pull air out of the chamber before steam enters"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "Ultrasonic cavitation"
+        "text": "Steam flush and pressure pulses above atmospheric pressure"
       },
       {
         "id": "d",
-        "text": "EO gas"
+        "text": "Heating the chamber dry first so air expands and vents out"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Gravity cycles need proper loading to avoid air trapping; longer times often than prevac.",
     "distractorExplanations": {
-      "a": "Prevac uses vacuum pulses.",
-      "c": "Ultrasonic is cleaning.",
-      "d": "EO separate modality."
+      "a": "Vacuum pulses describe dynamic-air-removal (prevacuum) sterilizers, not gravity displacement.",
+      "c": "Steam-flush pressure-pulse is a separate dynamic air-removal design, not passive gravity displacement.",
+      "d": "Gravity sterilizers do not preheat dry; heavier, cooler air is pushed down and out the drain by incoming steam."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Color of the sterilizer paint"
+        "text": "Chamber pressure alone, since pressure kills microbes"
       },
       {
         "id": "b",
-        "text": "Time, temperature, and saturated steam contact (and proper drying/air removal as designed)"
+        "text": "Time, temperature, and saturated steam contact"
       },
       {
         "id": "c",
-        "text": "Leaving packages soaking wet with detergent"
+        "text": "Superheated dry steam at the highest possible temperature"
       },
       {
         "id": "d",
-        "text": "Skipping Bowie-Dick tests on dynamic-air-removal sterilizers"
+        "text": "Cycle length and the number of chemical indicators used"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Steam sterilization requires adequate sterilant contact under validated parameters.",
+    "explanation": "Steam sterilization requires adequate sterilant contact under validated parameters. Proper air removal and drying are also part of the designed cycle.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Time, temperature, and saturated steam contact (and proper drying/air removal as designed)”.",
-      "c": "Not the best answer here; the right answer is “Time, temperature, and saturated steam contact (and proper drying/air removal as designed)”.",
-      "d": "Not the best answer here; the right answer is “Time, temperature, and saturated steam contact (and proper drying/air removal as designed)”."
+      "a": "Pressure is a means to raise steam temperature; microbial kill comes from time at temperature with steam contact.",
+      "c": "Superheated steam behaves like dry heat and sterilizes poorly; saturated steam with proper moisture is required.",
+      "d": "Indicators monitor the process but do not make it effective; efficacy depends on time, temperature and steam contact."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Decorate the sterilizer door"
+        "text": "Confirm adequate air removal in a prevacuum sterilizer each morning"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Measure water hardness"
+        "text": "Show that a package was exposed to the sterilization process"
       },
       {
         "id": "d",
-        "text": "Replace cleaning verification"
+        "text": "Verify that the cleaning process removed protein residue before instruments are packaged"
       }
     ],
     "correctOptionId": "b",
     "explanation": "BIs provide the highest level of sterilization process challenge.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Challenge the sterilization process with resistant spores to verify lethality”.",
-      "c": "Not the best answer here; the right answer is “Challenge the sterilization process with resistant spores to verify lethality”.",
-      "d": "Not the best answer here; the right answer is “Challenge the sterilization process with resistant spores to verify lethality”."
+      "a": "Daily air-removal testing is the Bowie-Dick test; BIs use resistant spores to verify the process killed microbes.",
+      "c": "Exposure is shown by an external chemical indicator; a BI challenges lethality with live spores.",
+      "d": "Cleaning verification uses protein or ATP tests; BIs challenge the sterilization process, not cleaning."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Used as the routine method for all loaner sets"
+        "text": "Used for routine loaner sets that arrive too late for full processing"
       },
       {
         "id": "b",
-        "text": "Limited to urgent situations with documented justification and proper cleaning first"
+        "text": "Limited to urgent situations with documented justification and proper cleaning"
       },
       {
         "id": "c",
-        "text": "Performed on packaged implants without monitoring"
+        "text": "Used for implants when a Class 5 integrator is placed with the load"
       },
       {
         "id": "d",
-        "text": "Done without following IFU"
+        "text": "Performed with an abbreviated cleaning step because the instrument is needed now"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "IUSS is for immediate need after proper cleaning—not a substitute for routine processing.",
+    "explanation": "IUSS is for immediate need after proper cleaning—not a substitute for routine processing. Cleaning must be completed first.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Limited to urgent situations with documented justification and proper cleaning first”.",
-      "c": "Not the best answer here; the right answer is “Limited to urgent situations with documented justification and proper cleaning first”.",
-      "d": "Not the best answer here; the right answer is “Limited to urgent situations with documented justification and proper cleaning first”."
+      "a": "Late loaners are a scheduling problem; IUSS should not be used routinely to compensate for late arrivals or low inventory.",
+      "c": "Implants should not be IUSS-processed except in a documented emergency, and an integrator does not replace BI monitoring.",
+      "d": "Urgency does not shorten cleaning; IUSS items need the same thorough cleaning as any other instrument."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1430,23 +1430,23 @@
       },
       {
         "id": "b",
-        "text": "All stainless bowls"
+        "text": "Stainless steel bowls and basins that need a faster turnaround than steam"
       },
       {
         "id": "c",
-        "text": "Only cardboard shipping boxes"
+        "text": "Liquids and gels that cannot be placed in a steam cycle"
       },
       {
         "id": "d",
-        "text": "Items that were never cleaned"
+        "text": "Linen packs that must be ready for the OR within one hour"
       }
     ],
     "correctOptionId": "a",
     "explanation": "EO can sterilize many heat/moisture-sensitive devices when compatible and aerated properly.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Items that are heat- and moisture-sensitive when validated for EO”.",
-      "c": "Not the best answer here; the right answer is “Items that are heat- and moisture-sensitive when validated for EO”.",
-      "d": "Not the best answer here; the right answer is “Items that are heat- and moisture-sensitive when validated for EO”."
+      "b": "Heat-stable stainless items should be steam sterilized; EO plus aeration is far slower than steam.",
+      "c": "EO cannot sterilize liquids; it is a gas that must contact dry, accessible surfaces.",
+      "d": "EO requires long cycles plus hours of aeration, so it cannot meet a one-hour turnaround and suits heat-sensitive devices."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Moisture can create a pathway for contamination and indicates a process/packaging problem"
+        "text": "Moisture can create a pathway for contamination"
       },
       {
         "id": "b",
-        "text": "Wet packs are always more sterile"
+        "text": "Moisture shows the steam was superheated during exposure"
       },
       {
         "id": "c",
-        "text": "Moisture proves the BI passed"
+        "text": "Water dissolves the chemical indicator ink inside the pack"
       },
       {
         "id": "d",
-        "text": "Wetness means the load can skip cooling"
+        "text": "The pack must cool for an extra hour before it can be used"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Wet packs compromise sterility assurance and require investigation per policy.",
+    "explanation": "Wet packs compromise sterility assurance and require investigation per policy. It also indicates a process or packaging problem.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Moisture can create a pathway for contamination and indicates a process/packaging problem”.",
-      "c": "Not the best answer here; the right answer is “Moisture can create a pathway for contamination and indicates a process/packaging problem”.",
-      "d": "Not the best answer here; the right answer is “Moisture can create a pathway for contamination and indicates a process/packaging problem”."
+      "b": "Superheated steam is too dry; wet packs result from excess condensate, wet steam, or poor loading and drying.",
+      "c": "CI inks are designed for steam exposure; the concern is microbial wicking through the wet barrier.",
+      "d": "Extra cooling does not fix a wet pack; it is considered contaminated and must be reprocessed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "Under a leaking sink"
+        "text": "Closed cabinets or open wire shelving with the bottom shelf resting on the floor"
       },
       {
         "id": "c",
-        "text": "On the floor against traffic dirt"
+        "text": "Kept above 75% relative humidity to prevent packages from drying out"
       },
       {
         "id": "d",
-        "text": "In decontam next to soak sinks"
+        "text": "Next to the sterilizer unload area so warm packs can finish drying"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Maintain package integrity; positive pressure clean areas preferred.",
     "distractorExplanations": {
-      "b": "Moisture contaminates.",
-      "c": "Floor storage forbidden typically.",
-      "d": "Decontam is dirty."
+      "b": "The bottom shelf must be solid and raised 8–10 inches off the floor to protect packs from floor-cleaning splash.",
+      "c": "Sterile storage humidity should not exceed 60%; high humidity can compromise packaging and promote growth.",
+      "d": "Packs must be cool and dry before storage; storage is separate from unloading and packs are not dried on shelves."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "LIFO always as the only sterile storage rule"
+        "text": "LIFO (last in, first out) so the freshest packs reach the OR"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Random grab without dates/lot awareness"
+        "text": "Rotation by tray weight so heavier sets are used before lighter ones"
       },
       {
         "id": "d",
-        "text": "Keeping expired event-compromised packs 'just in case'"
+        "text": "Rotation by surgeon preference so frequently used sets stay in front"
       }
     ],
     "correctOptionId": "b",
     "explanation": "FIFO reduces outdates and aging damage.",
     "distractorExplanations": {
-      "a": "LIFO risks outdates.",
-      "c": "Random risks expired use.",
-      "d": "Compromised packs reprocessed/discarded."
+      "a": "LIFO leaves older packs at the back to outdate or be damaged; sterile stock rotates first in, first out.",
+      "c": "Weight has no bearing on stock rotation; date or lot order (FIFO) determines which packs are used first.",
+      "d": "Preference-based placement ignores dating; FIFO ensures older sterile items are used before newer ones."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1558,11 +1558,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only whether the tape is pretty"
+        "text": "The load sticker and expiration date, with the wrap checked at opening"
       },
       {
         "id": "b",
-        "text": "Nothing if the cart arrived"
+        "text": "The internal chemical indicator, by opening a corner of the wrap"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "Whether the surgeon likes the color"
+        "text": "The BI result for the load, which must be read before any pack is issued to the OR"
       }
     ],
     "correctOptionId": "c",
     "explanation": "At-point inspection is the last safety net.",
     "distractorExplanations": {
-      "a": "Aesthetics insufficient.",
-      "b": "Arrival ≠ inspection.",
-      "d": "Color irrelevant."
+      "a": "Package integrity and dryness are checked before issue, not deferred to opening; the load label alone is insufficient.",
+      "b": "Opening a pack to see the internal CI breaks sterility; the internal CI is read by the scrub person at point of use.",
+      "d": "Routine non-implant loads are released without waiting for the BI; staff check integrity, dryness, CI and dating."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Put on shelves for later cases that week"
+        "text": "Placed in sterile storage until the end of the surgeon's day"
       },
       {
         "id": "c",
-        "text": "Cooled uncovered in a hallway traffic stream"
+        "text": "Wrapped in a sterile towel and stored for the next case"
       },
       {
         "id": "d",
-        "text": "Placed under sinks"
+        "text": "Held on the cart until the biological indicator reads negative"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Immediate-use items aren't inventory stock.",
     "distractorExplanations": {
-      "b": "No shelf storage.",
-      "c": "Hallway contamination risk.",
-      "d": "Sinks moisture risk."
+      "b": "IUSS items are not stored for later use; they are transported aseptically and used for the case at hand.",
+      "c": "Wrapping after IUSS does not create a validated sterile package; IUSS items are used immediately.",
+      "d": "IUSS items are needed immediately and are not held for BI results; that quarantine practice applies to implant loads."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Avoiding all documentation"
+        "text": "Recording load numbers only for loaner sets, since they carry the highest infection risk"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Discarding BI logs monthly without retention policy"
+        "text": "Keeping BI logs until the next accreditation survey, then shredding them"
       },
       {
         "id": "d",
-        "text": "Handwriting patient secrets on tape publicly"
+        "text": "Matching sterile packs to patients through the surgeon's preference card"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Traceability enables recalls if BI failures/product issues arise.",
     "distractorExplanations": {
-      "a": "Docs required.",
-      "c": "Retain per policy/regulation.",
-      "d": "Privacy matters."
+      "a": "Every load needs lot/load tracking so any item can be recalled; limiting it to loaners leaves other sets untraceable.",
+      "c": "Sterilization records are retained per facility policy and regulation, often several years, not until the next survey.",
+      "d": "Preference cards list items a surgeon wants; patient traceability comes from load numbers recorded in the case record."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The color of the wrap dye alone"
+        "text": "The sterilization method, with steam packs expiring after 30 days"
       },
       {
         "id": "b",
-        "text": "How loudly the sterilizer beeped"
+        "text": "The type of chemical indicator used inside the package"
       },
       {
         "id": "c",
-        "text": "Storage conditions and package integrity (event-related) or facility dating policy"
+        "text": "Storage conditions and package integrity or facility dating policy"
       },
       {
         "id": "d",
-        "text": "OR temperature preferences"
+        "text": "The sterilizer cycle length, since longer cycles last longer"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Even with dates, inspect for compromise events.",
     "distractorExplanations": {
-      "a": "Dye irrelevant.",
-      "b": "Beeps irrelevant.",
-      "d": "Storage more than OR preference."
+      "a": "No fixed 30-day steam expiry applies; shelf life depends on events and storage conditions per facility policy.",
+      "b": "The CI class shows how conditions were monitored; it does not determine how long the pack stays sterile.",
+      "d": "Cycle length is set for lethality; once sterile, shelf life is governed by events and storage conditions."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Wipe with sleeve and use"
+        "text": "Use it if the outer wrap shows no tears"
       },
       {
         "id": "b",
-        "text": "Use if dropped 'only once'"
+        "text": "Remove the outer wrap and use the inner pack"
       },
       {
         "id": "c",
-        "text": "Spray with room air freshener"
+        "text": "Wipe it down and return it to sterile storage"
       },
       {
         "id": "d",
-        "text": "Consider it contaminated and reprocess (unless a validated rigid container IFU says otherwise for specific cases)"
+        "text": "Consider it contaminated and reprocess"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Floor contact contaminates wraps; rigid containers have specific IFU exceptions sometimes.",
+    "explanation": "Floor contact contaminates wraps; rigid containers have specific IFU exceptions sometimes. A validated rigid container IFU may specify exceptions.",
     "distractorExplanations": {
-      "a": "Sleeve wipe insufficient.",
-      "b": "Once is enough to contaminate.",
-      "c": "Air freshener not sterilant."
+      "a": "Floor impact can force contaminated air through the wrap and cause unseen damage; an intact look does not clear it.",
+      "b": "Both wrap layers of a sequentially wrapped pack form one barrier; a dropped pack is contaminated, not unwrapped and used.",
+      "c": "Wiping the exterior cannot reverse contamination from floor contact; the item is reprocessed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Enough stock for procedures without overstocking that leads to damage/outdates"
+        "text": "Enough stock for procedures without overstocking"
       },
       {
         "id": "b",
-        "text": "Zero extras always causing constant IUSS"
+        "text": "Minimum stock with IUSS used to cover any shortages during the day"
       },
       {
         "id": "c",
-        "text": "Infinite piles blocking sprinklers/air vents"
+        "text": "Maximum stock to cover a full month of cases without reorders"
       },
       {
         "id": "d",
-        "text": "Storing sterile with soiled"
+        "text": "Stock levels set by sterilizer capacity rather than case volume"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PAR levels and case cart systems improve OR support.",
+    "explanation": "PAR levels and case cart systems improve OR support. Overstocking leads to damage and outdates.",
     "distractorExplanations": {
-      "b": "Chronic IUSS from understock bad.",
-      "c": "Overstock damages/fire code issues.",
-      "d": "Separation required."
+      "b": "Relying on IUSS to cover understock is discouraged; PAR levels should meet demand without routine IUSS.",
+      "c": "Overstocking crowds shelves and increases handling damage and outdates; PAR levels balance demand and space.",
+      "d": "Inventory is based on procedure demand (PAR levels), not on how many loads the sterilizers can run."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A staff member changes haircut"
+        "text": "A package in sterile storage reaches its event-related expiration date"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "The coffee pot breaks"
+        "text": "A surgeon reports a dull scissor in a tray opened in the OR"
       },
       {
         "id": "d",
-        "text": "All packages look intact with perfect records and passing BI"
+        "text": "The weekly BI from the same sterilizer reads negative as expected"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Have a written recall procedure with risk assessment and OR notification.",
     "distractorExplanations": {
-      "a": "Haircuts irrelevant.",
-      "c": "Coffee irrelevant.",
-      "d": "No recall if truly no failure indication."
+      "a": "An expired or compromised package is pulled and reprocessed individually; a recall addresses a load-wide process failure.",
+      "c": "A dull instrument is a repair and inspection issue, not evidence of sterilization failure needing a load recall.",
+      "d": "A negative BI means no spore growth (a pass); recalls are triggered by positive BIs or other sterilizer malfunction."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Damp, dirty, and near decontamination splash zones"
+        "text": "Kept at high humidity so packages do not become brittle and tear"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "Open to outdoor weather"
+        "text": "Located beside the decontam pass-through for quick restocking"
       },
       {
         "id": "d",
-        "text": "Used for eating lunch"
+        "text": "Open-access to all staff so the OR can pick its own supplies"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Environmental controls protect package integrity until use.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Clean, dry, well-ventilated, and protected from traffic contamination”.",
-      "c": "Not the best answer here; the right answer is “Clean, dry, well-ventilated, and protected from traffic contamination”.",
-      "d": "Not the best answer here; the right answer is “Clean, dry, well-ventilated, and protected from traffic contamination”."
+      "a": "Humidity in sterile storage should stay at or below 60%; high humidity wets packaging and supports growth.",
+      "c": "Sterile storage is separated from decontam and kept positive; proximity to soiled areas risks contamination.",
+      "d": "Sterile storage has limited access for trained staff to reduce traffic and handling damage to packages."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A fixed calendar date only, regardless of package condition"
+        "text": "The fixed expiration date printed on the label is reached"
       },
       {
         "id": "b",
-        "text": "An event compromises the package (eg, moisture, tears, improper handling), subject to facility policy"
+        "text": "An event compromises the package (eg, moisture, tears, improper handling)"
       },
       {
         "id": "c",
-        "text": "The manufacturer recalls all indicators"
+        "text": "The sterilizer that processed the load is next taken out of service for repair"
       },
       {
         "id": "d",
-        "text": "The item leaves the sterilizer cart for 5 minutes"
+        "text": "Thirty days pass for wrapped packs and six months for pouches"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Many facilities use event-related dating; integrity events outdate the item.",
+    "explanation": "Many facilities use event-related dating; integrity events outdate the item. Facility policy governs the details.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “An event compromises the package (eg, moisture, tears, improper handling), subject to facility policy”.",
-      "c": "Not the best answer here; the right answer is “An event compromises the package (eg, moisture, tears, improper handling), subject to facility policy”.",
-      "d": "Not the best answer here; the right answer is “An event compromises the package (eg, moisture, tears, improper handling), subject to facility policy”."
+      "a": "Fixed calendar dating is time-related sterility; event-related sterility depends on package condition, not a date.",
+      "c": "Equipment service does not outdate stored packages; a compromising event or facility policy does.",
+      "d": "These are arbitrary time limits; event-related practice holds sterility until an event such as moisture or tearing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Carry uncovered trays against scrub uniforms through rain"
+        "text": "Use open carts so OR staff can see and check the contents quickly"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Stack heavy items on delicate peel packs without support"
+        "text": "Stack trays and peel packs together tightly to prevent shifting"
       },
       {
         "id": "d",
-        "text": "Open packs in the elevator to cool them"
+        "text": "Use the same cart that returns soiled instruments, wiped down between the trips"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Covered transport and careful handling prevent contamination and damage.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Use clean covered carts/containers and handle packages to protect integrity”.",
-      "c": "Not the best answer here; the right answer is “Use clean covered carts/containers and handle packages to protect integrity”.",
-      "d": "Not the best answer here; the right answer is “Use clean covered carts/containers and handle packages to protect integrity”."
+      "a": "Open carts expose packs to dust and contact; sterile items move in covered or enclosed carts.",
+      "c": "Heavy trays crush peel packs and stacking compresses wrap; packages are placed to avoid compression and punctures.",
+      "d": "A cart used for soiled items must be fully cleaned (e.g., in a cart washer) before sterile use, not just wiped."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1925,23 +1925,23 @@
       },
       {
         "id": "b",
-        "text": "Hide expired implants at the back"
+        "text": "Ensure newer stock is used first because it was sterilized more recently"
       },
       {
         "id": "c",
-        "text": "Increase wet pack rates"
+        "text": "Keep implants in date order so BI results can be skipped"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for inventory counts"
+        "text": "Remove the need to check expiration dates when items are issued"
       }
     ],
     "correctOptionId": "a",
     "explanation": "FIFO reduces outdates and supports inventory control.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Ensure older stock is used before newer stock within dating/policy rules”.",
-      "c": "Not the best answer here; the right answer is “Ensure older stock is used before newer stock within dating/policy rules”.",
-      "d": "Not the best answer here; the right answer is “Ensure older stock is used before newer stock within dating/policy rules”."
+      "b": "That describes LIFO; FIFO rotates older stock forward so it is used before it expires or is damaged.",
+      "c": "FIFO is about rotation; implant loads still require BI monitoring and quarantine whatever their shelf order.",
+      "d": "FIFO reduces outdates, but staff still check dating and package integrity before issue."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1954,7 +1954,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Wipe it with a sleeve and return it to sterile storage"
+        "text": "Wipe it with disinfectant and return it to sterile storage"
       },
       {
         "id": "b",
@@ -1962,19 +1962,19 @@
       },
       {
         "id": "c",
-        "text": "Use it only for the next emergency IUSS without cleaning"
+        "text": "Use it if the outer wrap is dry and has no visible tears"
       },
       {
         "id": "d",
-        "text": "Relabel it with a new sterilization load sticker"
+        "text": "Relabel it with a new load sticker and return it to the shelf"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Dropped packages are treated as contaminated unless policy allows a validated exception.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Consider it contaminated and reprocess according to facility policy”.",
-      "c": "Not the best answer here; the right answer is “Consider it contaminated and reprocess according to facility policy”.",
-      "d": "Not the best answer here; the right answer is “Consider it contaminated and reprocess according to facility policy”."
+      "a": "Disinfectant wiping cannot reverse contamination from floor contact; the pack must be reprocessed.",
+      "c": "A dropped pack can have unseen damage, and impact can force contaminants through wrap; appearance does not clear it.",
+      "d": "A new label does not reprocess the item; the contaminated pack must be unwrapped, inspected and resterilized."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."

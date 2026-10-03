@@ -1,0 +1,1024 @@
+{
+ "cfa-level-2-readiness-check": {
+  "cfa-level-2-readiness-check-ethics-001": {
+   "prompt": "Mara Lindqvist, CFA, covers Hollis Retail. She combines Hollis's public 10-Q, purchased satellite counts of its store parking lots, interviews with three suppliers who discuss only general order trends, and her own survey of 400 shoppers. She concludes holiday sales will miss consensus by about 8% and issues a sell rating before Hollis reports. How is Lindqvist's sell rating best evaluated under the Code and Standards?",
+   "options": {
+    "a": "A violation of Standard II(A), because her conclusion is itself material and nonpublic",
+    "b": "A violation of Standard V(A), because satellite and survey data are unverified sources",
+    "c": "Premature; she should wait until Hollis publicly confirms the sales shortfall",
+    "d": "Permissible under the mosaic theory, since no input is material nonpublic information"
+   },
+   "correctOptionId": "d",
+   "explanation": "Standard II(A) Material Nonpublic Information prohibits acting on information that is both material and nonpublic. Under the mosaic theory, an analyst may reach a material conclusion by combining public information with nonmaterial nonpublic information. Lindqvist's inputs are public filings, commercially available satellite data, her own survey, and supplier comments on general trends (nonmaterial). The conclusion being price-moving does not turn it into MNPI, so the rating is permissible; she should keep records of the inputs (Standard V(C)).",
+   "distractorExplanations": {
+    "a": "Confuses a material conclusion with material nonpublic information; the mosaic theory protects conclusions built from public and nonmaterial nonpublic inputs.",
+    "b": "Purchased satellite counts and a 400-person proprietary survey are legitimate research; V(A) requires a reasonable basis, which diverse independent data support.",
+    "c": "Analysts are not required to wait for company confirmation; delaying a well-founded recommendation would deprive clients of the analysis they pay for."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-ethics-002": {
+   "prompt": "Dev Anand, CFA, a buy-side analyst at Corvane Capital, is invited by Pellucid Mining to tour its remote mine in northern Chile. Pellucid offers seats on its corporate jet from Santiago to the site (no commercial flights serve it), plus business-class flights to Santiago, three nights at a luxury resort, and a guided wine tour for each analyst's spouse. Which response is most consistent with Standard I(B) Independence and Objectivity?",
+   "options": {
+    "a": "Accept the jet ride to the mine, but have Corvane pay his commercial airfare and hotel",
+    "b": "Accept the whole package, provided Anand discloses it in his next research report on Pellucid",
+    "c": "Decline the visit, because accepting issuer-provided transport impairs his objectivity",
+    "d": "Accept the whole package, provided his supervisor approves the trip in writing beforehand"
+   },
+   "correctOptionId": "a",
+   "explanation": "Standard I(B) requires members to avoid gifts, benefits, or consideration that could reasonably be expected to compromise their independence and objectivity. Guidance: analysts should pay for their own commercial travel and lodging where possible; issuer-arranged transport is acceptable when commercial transportation to a remote site is unavailable. Business-class flights, luxury lodging, and spouse entertainment are lavish benefits, so Anand accepts only the necessary jet leg and has Corvane pay the rest.",
+   "distractorExplanations": {
+    "b": "Disclosure does not cure a lavish issuer-paid benefit under I(B); the resort stay and spouse tour still threaten Anand's objectivity.",
+    "c": "Too restrictive: the Standards allow issuer-provided transport when no commercial option reaches the site, and the visit itself is valid research.",
+    "d": "Supervisor approval is the IV(B) remedy for additional compensation; it does not make lavish issuer hospitality acceptable under I(B)."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-ethics-003": {
+   "prompt": "Teodora Ilic, CFA, manages separate accounts at Verity Advisors. She routes client trades to Halvard Securities at commissions 2 cents per share above competing brokers. The soft-dollar credits pay for (1) an independent earnings-revision database she uses to select securities for those accounts and (2) Verity's new client-onboarding CRM software. Which Standard is most directly violated by using the credits for item (2)?",
+   "options": {
+    "a": "III(B) Fair Dealing, because the credits come from some client accounts but not others",
+    "b": "IV(A) Loyalty, because the CRM software benefits Verity instead of Ilic's own practice",
+    "c": "III(A) Loyalty, Prudence, and Care, because client brokerage belongs to the clients",
+    "d": "VI(A) Disclosure of Conflicts, which is satisfied once clients are told of the arrangement"
+   },
+   "correctOptionId": "c",
+   "explanation": "Under Standard III(A) Loyalty, Prudence, and Care, client brokerage commissions are an asset of the client and may be used only for goods and services that directly assist the manager's investment decision-making for those clients (best execution and the soft-dollar guidance). The earnings-revision database qualifies as research. Onboarding CRM software is a firm operating expense, so paying it with client commissions benefits Verity at the clients' expense, a III(A) violation.",
+   "distractorExplanations": {
+    "a": "Fair dealing concerns how recommendations and trades are allocated across clients; the problem here is spending client assets on firm overhead.",
+    "b": "IV(A) is loyalty to the employer; benefiting the employer does not breach it. The duty breached is owed to the clients whose commissions pay.",
+    "d": "Disclosure does not cure the misuse; even if clients were informed, commissions cannot pay for non-research firm expenses under III(A)."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-ethics-004": {
+   "prompt": "Rafael Sousa, CFA, manages the Northgate US Large-Cap Value Fund, whose prospectus limits holdings to US companies with market caps above $10 billion. Convinced that frontier markets are about to rally, he invests 12% of fund assets in small Vietnamese and Kenyan growth stocks, and the fund beats its benchmark that quarter. Which Standard has Sousa most clearly violated?",
+   "options": {
+    "a": "I(C) Misrepresentation, because the fund's name no longer describes its holdings",
+    "b": "V(B) Communication with Clients, because he did not explain frontier-market risk",
+    "c": "III(A) Loyalty, Prudence, and Care, because the frontier trade was speculative",
+    "d": "III(C) Suitability, because the holdings breach the fund's stated mandate"
+   },
+   "correctOptionId": "d",
+   "explanation": "For a pooled fund, Standard III(C) Suitability requires the manager to invest only in a manner consistent with the stated mandate, strategy, and constraints in the prospectus, because the fund's investors chose it for that mandate. Small frontier-market growth stocks breach a US large-cap value mandate. Outperformance does not cure the violation; to change strategy, the fund must first amend and disclose the mandate to investors.",
+   "distractorExplanations": {
+    "a": "The violation is the style drift itself, which the Standards treat under suitability; I(C) targets false statements, not portfolio decisions.",
+    "b": "Explaining the risk would not make the trades acceptable; the holdings fall outside the mandate regardless of what is communicated.",
+    "c": "Speculation within a mandate can be prudent; the specific breach is investing outside the fund's stated constraints, which is III(C)."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-ethics-005": {
+   "prompt": "Hana Kobayashi, CFA, manages a $40 million account for the Ostrander family office at Kestrel Wealth. The family's patriarch offers her a personal bonus of $25,000 plus two season tickets for every year the account beats the MSCI ACWI by more than 2 percentage points. Kestrel's policies say nothing about client incentives. What is Kobayashi required to do before accepting the arrangement?",
+   "options": {
+    "a": "Obtain Kestrel's written consent after disclosing the terms of the bonus",
+    "b": "Notify Kestrel of each bonus after it is received, as is done for client gifts",
+    "c": "Decline, because Standard I(B) bars clients from rewarding a manager's performance",
+    "d": "Disclose the arrangement to her other clients under Standard III(B) Fair Dealing"
+   },
+   "correctOptionId": "a",
+   "explanation": "Standard IV(B) Additional Compensation Arrangements: members must not accept compensation that competes with or might reasonably create a conflict with the employer's interest without written consent from all parties involved. A bonus tied to future performance could tempt Kobayashi to favor the Ostrander account over other Kestrel clients, so she needs Kestrel's written consent, after describing the nature, amount, and duration of the arrangement. Gifts for past performance require only disclosure.",
+   "distractorExplanations": {
+    "b": "After-the-fact notice is the guidance for client gifts rewarding past service; an incentive tied to future results needs prior written consent.",
+    "c": "I(B) does not ban client-paid incentives; IV(B) permits them once the employer consents in writing, so declining is not required.",
+    "d": "III(B) governs fair allocation of trades and recommendations; the required step is employer consent under IV(B), not notice to other clients."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-ethics-006": {
+   "prompt": "Owen Price, CFA, a sell-side analyst at Ridley & Co., finishes an upgrade of Calder Pharma from hold to buy at 7:00 a.m.; the report is scheduled for simultaneous release to every client at 9:30 a.m. At 8:15 a.m., Price buys 2,000 Calder shares for a trust in which he is the sole beneficiary. Which Standard is most directly violated?",
+   "options": {
+    "a": "III(B) Fair Dealing, because some clients receive the upgrade before others",
+    "b": "VI(B) Priority of Transactions, because he traded ahead of his clients",
+    "c": "II(B) Market Manipulation, because the purchase could move Calder's price",
+    "d": "I(D) Misconduct, because analysts may not hold shares in companies they cover"
+   },
+   "correctOptionId": "b",
+   "explanation": "Standard VI(B) Priority of Transactions requires client and employer transactions to take priority over transactions in which the member is a beneficial owner. As sole beneficiary of the trust, Price is the beneficial owner, and he bought before clients could act on his own upgrade. Clients must have adequate opportunity to act first. Separately, VI(A) would require disclosure of the holding in the report.",
+   "distractorExplanations": {
+    "a": "The report goes to every client at the same time, so dissemination is fair; the problem is Price trading for himself before the release.",
+    "c": "A 2,000-share purchase is not an attempt to distort prices or volume to mislead the market, which is what II(B) prohibits.",
+    "d": "Analysts may own covered stocks if they disclose and give clients priority; there is no dishonesty or fraud here that I(D) targets."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-quant-001": {
+   "prompt": "Priya Nair regresses a small-cap fund's monthly excess returns on five factors using 60 monthly observations and obtains R² = 0.40. She then adds momentum and liquidity factors (seven independent variables in total), and R² rises to 0.42 over the same 60 months. What is the adjusted R² of the seven-factor model, and what does it imply?",
+   "options": {
+    "a": "0.342; below the five-factor 0.344, so the added factors do not improve the model",
+    "b": "0.400; higher than the five-factor 0.344, so the two added factors improve the model",
+    "c": "0.420; higher than the five-factor 0.400, so the two added factors improve the model",
+    "d": "0.489; higher than the five-factor 0.344, so the two added factors improve the model"
+   },
+   "correctOptionId": "a",
+   "explanation": "Adjusted R² penalizes extra regressors: adj R² = 1 − [(n − 1)/(n − k − 1)] × (1 − R²). Five factors: 1 − (59/54)(0.60) = 0.344. Seven factors: 1 − (59/52)(0.58) = 1 − 0.658 = 0.342. Adjusted R² falls, so momentum and liquidity add less explanatory power than the degrees of freedom they cost (adjusted R² rises only when an added variable's |t| exceeds 1). Nair should prefer the five-factor model, and can confirm with AIC/BIC.",
+   "distractorExplanations": {
+    "b": "Uses k = 2 (only the new factors) instead of k = 7: 1 − (59/57)(0.58) = 0.400. k counts every independent variable in the model.",
+    "c": "Reports the unadjusted R² of 0.42, which mechanically rises whenever variables are added and cannot judge whether they belong.",
+    "d": "Inverts the degrees-of-freedom ratio, 1 − (52/59)(0.58) = 0.489; the penalty multiplies (1 − R²) by (n − 1)/(n − k − 1) > 1."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-quant-002": {
+   "prompt": "A regression of quarterly REIT index returns on the 10-year Treasury yield, the 10-year swap rate, the BBB credit spread, and a CPI surprise over 80 quarters has R² = 0.71 and an F-statistic significant at the 1% level, yet none of the four slope t-statistics is significant at 5%. The Treasury yield and swap rate have a correlation of 0.97 and VIFs above 15. What is the most likely problem, and the most appropriate response?",
+   "options": {
+    "a": "Conditional heteroskedasticity; re-estimate using robust (White-corrected) standard errors",
+    "b": "Serial correlation; re-estimate using Newey–West serial-correlation-consistent standard errors",
+    "c": "Omitted variable bias; add a lagged REIT return to the model as a further independent variable",
+    "d": "Multicollinearity; drop the swap rate or combine the two rate series into a single variable"
+   },
+   "correctOptionId": "d",
+   "explanation": "The classic multicollinearity signature is a high R² and significant F-test while individual slopes are insignificant, because highly correlated regressors inflate the slope standard errors. A VIF above 10 indicates serious multicollinearity, and the yield and swap rate (r = 0.97) carry almost the same information. The coefficients stay unbiased but imprecise; the fix is to drop one of the correlated variables or combine them, not to change the standard-error estimator.",
+   "distractorExplanations": {
+    "a": "Heteroskedasticity is diagnosed with a Breusch–Pagan test, not with a 0.97 regressor correlation and VIFs above 15.",
+    "b": "Serial correlation (Breusch–Godfrey test) concerns correlated residuals over time; nothing here points to it, while VIFs point to collinearity.",
+    "c": "Omitted variables bias the slopes; this vignette shows redundant variables, and adding another regressor would worsen the problem."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-quant-003": {
+   "prompt": "A credit analyst fits a logistic regression of bond default (1 = default, 0 = no default) on firm characteristics. For Firm K the fitted log-odds of default equal −1.20. The coefficient on debt-to-EBITDA is 0.80, and Firm K's debt-to-EBITDA is expected to rise by 1.0 turn with all other variables unchanged. What is Firm K's new predicted probability of default?",
+   "options": {
+    "a": "23.1%",
+    "b": "40.1%",
+    "c": "51.5%",
+    "d": "67.0%"
+   },
+   "correctOptionId": "b",
+   "explanation": "In a logit model, coefficients act on the log-odds: ln[p/(1 − p)] = b0 + b1X1 + … . A 1.0-turn rise adds 0.80, so the new log-odds are −1.20 + 0.80 = −0.40. Convert back: p = 1/(1 + e^0.40) = 1/(1 + 1.4918) = 40.1%. Equivalently, odds rise from e^−1.20 = 0.301 to 0.301 × e^0.80 = 0.670, and p = 0.670/1.670 = 40.1%. The odds ratio of 2.23 multiplies odds, not probability.",
+   "distractorExplanations": {
+    "a": "That is the starting probability, 1/(1 + e^1.20) = 23.1%; it ignores the 0.80 increase in log-odds from higher leverage.",
+    "c": "Multiplies the probability (23.1%) by the odds ratio e^0.80 = 2.23; the odds ratio scales odds, which must then be converted to p.",
+    "d": "Reports the new odds e^−0.40 = 0.670 as a probability; probability = odds/(1 + odds) = 0.670/1.670 = 40.1%."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-quant-004": {
+   "prompt": "Lucas Moreau models an emerging economy's annualized monthly inflation rate (in %) as an AR(1): x(t) = 1.20 + 0.70 x(t−1). The residuals show no significant autocorrelation, and a Dickey–Fuller test rejects a unit root. The latest observation is 5.00%. What are the series' mean-reverting level and its two-month-ahead forecast?",
+   "options": {
+    "a": "Mean-reverting level 4.00%; two-month-ahead forecast 4.00%",
+    "b": "Mean-reverting level 4.00%; two-month-ahead forecast 4.70%",
+    "c": "No mean-reverting level (random walk); two-month-ahead forecast 5.00%",
+    "d": "Mean-reverting level 4.00%; two-month-ahead forecast 4.49%"
+   },
+   "correctOptionId": "d",
+   "explanation": "A covariance-stationary AR(1) with |b1| < 1 has mean-reverting level b0/(1 − b1) = 1.20/0.30 = 4.00%. Multi-period forecasts use the chain rule: x̂(t+1) = 1.20 + 0.70 × 5.00 = 4.70%; x̂(t+2) = 1.20 + 0.70 × 4.70 = 4.49%. Because 5.00% is above the mean-reverting level, forecasts decline toward 4.00% gradually, not in one step.",
+   "distractorExplanations": {
+    "a": "Assumes the series jumps straight to its mean; with b1 = 0.70 only 30% of the gap closes each period, so x̂(t+2) = 4.49%.",
+    "b": "4.70% is the one-month-ahead forecast; the two-month forecast feeds 4.70% back in: 1.20 + 0.70 × 4.70 = 4.49%.",
+    "c": "A random walk needs b1 = 1 (a unit root); here b1 = 0.70 and the Dickey–Fuller test rejects a unit root, so the series mean-reverts."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-quant-005": {
+   "prompt": "Ana Ruiz trains an unpruned decision tree on 140 candidate features to predict which stocks will beat their sector next quarter. Classification accuracy is 97% on the training sample but 54% on the validation sample, against a 50% base rate. Which diagnosis and remedy are most appropriate?",
+   "options": {
+    "a": "High bias (underfitting); add more features and let the tree grow deeper",
+    "b": "High bias (underfitting); switch to k-means clustering, which needs no labels",
+    "c": "High variance (overfitting); prune the tree or use a random forest",
+    "d": "Low total error; the 97% training accuracy shows the tree generalizes well"
+   },
+   "correctOptionId": "c",
+   "explanation": "A large gap between in-sample accuracy (97%) and out-of-sample accuracy (54%, barely above the 50% base rate) is the signature of overfitting: high variance error, with the tree memorizing noise. Remedies reduce complexity: pruning or limiting depth, a random forest (bagged trees on random feature subsets, which averages away variance), fewer features (e.g., LASSO in a regression setting), and k-fold cross-validation to tune complexity.",
+   "distractorExplanations": {
+    "a": "High bias shows up as poor accuracy on both training and validation data; adding features and depth would worsen this overfit.",
+    "b": "The problem is overfitting, not bias, and k-means is unsupervised clustering that cannot predict a labeled outcome like sector beating.",
+    "d": "Generalization is judged on validation data; 54% versus a 50% base rate shows almost no out-of-sample skill."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-quant-006": {
+   "prompt": "A big-data project screens 200 corporate loans for default with a text-based classifier. On the test set the model flags 50 loans as defaults, of which 40 actually default; it misses 20 other loans that also default, and the remaining 130 loans are correctly classified as non-defaults. What is the model's F1 score?",
+   "options": {
+    "a": "0.533",
+    "b": "0.667",
+    "c": "0.727",
+    "d": "0.733"
+   },
+   "correctOptionId": "c",
+   "explanation": "From the confusion matrix: TP = 40, FP = 10, FN = 20, TN = 130. Precision = TP/(TP + FP) = 40/50 = 0.800; recall = TP/(TP + FN) = 40/60 = 0.667. F1 is the harmonic mean: 2 × P × R/(P + R) = 2 × 0.800 × 0.667/1.467 = 0.727. F1 is preferred to accuracy (0.85 here) when classes are unequal, because accuracy is inflated by the many easy true negatives.",
+   "distractorExplanations": {
+    "a": "Multiplies precision by recall (0.800 × 0.667 = 0.533) without the 2/(P + R) scaling of the harmonic-mean formula.",
+    "b": "0.667 is recall, TP/(TP + FN) = 40/60; F1 combines recall with precision (0.800) in a harmonic mean.",
+    "d": "Uses the arithmetic mean (0.800 + 0.667)/2 = 0.733; F1 is the harmonic mean, which is pulled toward the lower metric."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-economics-001": {
+   "prompt": "A dealer quotes USD 1.0848–1.0852 per EUR (USD/EUR) and JPY 149.18–149.22 per USD (JPY/USD). A Frankfurt corporate treasurer needs to sell EUR 5 million for yen through these two quotes. What JPY/EUR rate does the treasurer effectively receive?",
+   "options": {
+    "a": "161.83",
+    "b": "161.87",
+    "c": "161.89",
+    "d": "161.93"
+   },
+   "correctOptionId": "a",
+   "explanation": "Selling EUR means hitting the dealer's bids at each step. Sell EUR for USD at the USD/EUR bid of 1.0848, then sell USD for JPY at the JPY/USD bid of 149.18. The JPY/EUR bid cross rate = 1.0848 × 149.18 = 161.83. The dealer's JPY/EUR offer would be 1.0852 × 149.22 = 161.93; each leg uses the side that favors the dealer, so the client pays the spread on both legs.",
+   "distractorExplanations": {
+    "b": "Mixes sides (USD/EUR bid 1.0848 × JPY/USD offer 149.22 = 161.87); selling EUR then USD means receiving the bid on both legs.",
+    "c": "Mixes sides (USD/EUR offer 1.0852 × JPY/USD bid 149.18 = 161.89); a client selling EUR cannot get the dealer's EUR offer price.",
+    "d": "161.93 is the JPY/EUR offer (1.0852 × 149.22), the rate a client pays to buy EUR with yen, not the rate for selling EUR."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-economics-002": {
+   "prompt": "Spot is USD 1.2650 per GBP (USD/GBP). The 180-day USD interest rate is 4.30% and the 180-day GBP rate is 4.80%, both annualized on an actual/360 basis. Assuming covered interest rate parity holds, what is the 180-day forward rate expressed in forward points (1 point = 0.0001)?",
+   "options": {
+    "a": "−60.4 points",
+    "b": "−30.9 points",
+    "c": "+30.9 points",
+    "d": "+60.4 points"
+   },
+   "correctOptionId": "b",
+   "explanation": "Covered interest parity with price currency USD and base currency GBP: F = S × (1 + i_USD × 180/360)/(1 + i_GBP × 180/360) = 1.2650 × 1.02150/1.02400 = 1.26191. Forward points = (1.26191 − 1.26500) × 10,000 = −30.9. The base currency (GBP) has the higher interest rate, so it trades at a forward discount and the points are negative.",
+   "distractorExplanations": {
+    "a": "Applies the full annual rates without the 180/360 day-count adjustment: 1.2650 × 1.043/1.048 gives −60.4 points.",
+    "c": "Inverts the interest-rate ratio; with GBP as the base currency the higher GBP rate creates a forward discount, so points are negative.",
+    "d": "Double error: ignores the 180/360 day count and inverts the rate ratio, giving a premium where covered parity implies a discount."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-economics-003": {
+   "prompt": "A macro fund borrows JPY 1 billion for one year at 0.50%, converts it to Mexican pesos at spot, and invests in one-year MXN deposits yielding 10.00%. Over the year the peso depreciates 6.0% against the yen. Ignoring transaction costs, what is the carry trade's profit as a percentage of the yen amount borrowed?",
+   "options": {
+    "a": "2.9%",
+    "b": "3.5%",
+    "c": "9.5%",
+    "d": "16.1%"
+   },
+   "correctOptionId": "a",
+   "explanation": "Each yen borrowed grows to 1.10 in MXN terms, and converting back at a peso worth 6% less gives 1.10 × 0.94 = 1.034 yen. Repaying 1.005 leaves a profit of 0.029, or 2.9%. Uncovered interest parity predicted a peso depreciation of roughly the 9.5-point rate differential; the carry trade earns money because the actual 6% depreciation was smaller. It remains exposed to crash risk (negatively skewed returns).",
+   "distractorExplanations": {
+    "b": "Uses the linear approximation 10.0 − 0.5 − 6.0 = 3.5% and drops the cross term (10% × −6% = −0.6%) that compounding requires.",
+    "c": "Ignores the currency loss and reports the raw interest differential (10.00% − 0.50%); the 6% peso depreciation must be included.",
+    "d": "Treats the 6% move as peso appreciation: 1.10 × 1.06 − 1.005 = 16.1%. A depreciating investment currency reduces the yen proceeds."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-economics-004": {
+   "prompt": "Valdoria, an emerging economy with a floating exchange rate and fully open capital markets, announces a large debt-financed infrastructure program. At the same time its central bank raises the policy rate by 150 bps to keep inflation expectations anchored. According to the Mundell–Fleming model, what is the most likely effect on Valdoria's currency?",
+   "options": {
+    "a": "It appreciates, because both policies push domestic interest rates higher",
+    "b": "It depreciates, because fiscal expansion widens the current account deficit",
+    "c": "The effect is ambiguous, because fiscal expansion and monetary tightening offset",
+    "d": "It depreciates, because heavier government borrowing raises sovereign credit risk"
+   },
+   "correctOptionId": "a",
+   "explanation": "In Mundell–Fleming with high capital mobility, interest-rate effects on capital flows dominate trade-flow effects. Expansionary fiscal policy raises domestic rates and attracts capital inflows; restrictive monetary policy also raises rates. Both push the currency up, so the expansionary fiscal / restrictive monetary mix produces an unambiguous appreciation. The result is ambiguous only when capital mobility is low.",
+   "distractorExplanations": {
+    "b": "That trade-flow channel dominates only with low capital mobility; with fully open capital markets the rate-driven inflows win.",
+    "c": "The two policies do not offset here: under high capital mobility each raises interest rates, so both lead to appreciation.",
+    "d": "Sovereign credit risk is outside the Mundell–Fleming framework, which predicts appreciation from higher rates and capital inflows."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-economics-005": {
+   "prompt": "Over the past decade, Talmor's real GDP grew 3.2% per year, its capital stock grew 4.0% per year, and its labor input grew 0.8% per year. Capital's share of national income is 0.40. Using the Cobb–Douglas growth accounting equation, what was Talmor's annual growth in total factor productivity?",
+   "options": {
+    "a": "0.48%",
+    "b": "1.12%",
+    "c": "1.60%",
+    "d": "2.40%"
+   },
+   "correctOptionId": "b",
+   "explanation": "Growth accounting: ΔY/Y = ΔA/A + α(ΔK/K) + (1 − α)(ΔL/L), so TFP growth is the residual. ΔA/A = 3.2% − 0.40 × 4.0% − 0.60 × 0.8% = 3.2% − 1.6% − 0.48% = 1.12%. Capital deepening contributed 1.6 points and labor 0.48 points; the remaining 1.12 points come from technology and efficiency gains.",
+   "distractorExplanations": {
+    "a": "Swaps the factor shares (0.60 on capital, 0.40 on labor): 3.2 − 2.4 − 0.32 = 0.48%. Capital's share α = 0.40 weights capital growth.",
+    "c": "Subtracts only capital's contribution (3.2 − 1.6) and forgets labor's 0.60 × 0.8% = 0.48-point contribution to output growth.",
+    "d": "3.2% − 0.8% = 2.4% is labor productivity growth (output per worker), which includes capital deepening as well as TFP."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-economics-006": {
+   "prompt": "In the neoclassical (Solow) model, Ferrin has a capital share of 0.40, total factor productivity growth of 1.0% per year, and labor force growth of 0.5% per year. A pension reform permanently raises its saving rate from 20% to 25% of GDP. Once the economy reaches its new steady state, what is Ferrin's sustainable growth rate of total real GDP?",
+   "options": {
+    "a": "1.50%",
+    "b": "1.67%",
+    "c": "2.17%",
+    "d": "3.00%"
+   },
+   "correctOptionId": "c",
+   "explanation": "In the Solow steady state, output per worker grows at θ/(1 − α) and total output at θ/(1 − α) + n. Here 1.0%/0.60 + 0.5% = 1.67% + 0.5% = 2.17%. A higher saving rate raises the level of capital and output per worker and boosts growth temporarily during the transition, but diminishing marginal returns to capital mean it does not change the steady-state growth rate.",
+   "distractorExplanations": {
+    "a": "Adds TFP growth and labor growth (1.0% + 0.5%) without scaling TFP by 1/(1 − α); induced capital deepening amplifies TFP growth.",
+    "b": "1.67% is steady-state growth of output per worker, θ/(1 − α); total GDP growth also adds labor force growth of 0.5%.",
+    "d": "Divides TFP growth by capital's share (1.0%/0.40 + 0.5%); the steady-state formula divides by labor's share, 1 − α = 0.60."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-fra-001": {
+   "prompt": "On 1 January, Arlen Corp. pays $90 million for 30% of Birch Inc. and gains significant influence. Birch's net assets have a book value of $250 million; its equipment is undervalued by $30 million with a 10-year remaining life (straight line), and any remaining excess is goodwill. Birch earns $40 million and pays $15 million of dividends. What is Arlen's year-end carrying amount for Birch?",
+   "options": {
+    "a": "$94.5 million",
+    "b": "$96.6 million",
+    "c": "$97.5 million",
+    "d": "$101.1 million"
+   },
+   "correctOptionId": "b",
+   "explanation": "Under the equity method, the investment rises by the investor's share of earnings, falls by dividends received, and is reduced by amortization of the investor's share of fair value step-ups. Share of NI = 30% × 40 = 12.0; excess depreciation = 30% × 30/10 = 0.9; dividends = 30% × 15 = 4.5. Carrying amount = 90 + 12.0 − 0.9 − 4.5 = $96.6 million. Goodwill of 90 − 75 − 9 = 6 is embedded in the investment and not amortized.",
+   "distractorExplanations": {
+    "a": "Amortizes the entire $30 million step-up (3.0 per year) instead of Arlen's 30% share (0.9 per year): 90 + 12 − 3.0 − 4.5 = 94.5.",
+    "c": "Omits the extra depreciation on Arlen's share of the equipment write-up: 90 + 12 − 4.5 = 97.5. Equity income is 12.0 − 0.9 = 11.1.",
+    "d": "Fails to deduct dividends received (90 + 11.1); under the equity method dividends are a return of investment, not income."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-fra-002": {
+   "prompt": "Corvel SA reports under IFRS. For its defined benefit plan, the opening defined benefit obligation is €400 million and opening plan assets are €360 million. Current service cost is €6 million, the discount rate is 5.0%, management's expected return on assets is 7.0%, and the actual return on assets is €22 million; there are no past service costs. What pension expense does Corvel report in profit or loss?",
+   "options": {
+    "a": "€0.8 million",
+    "b": "€4.0 million",
+    "c": "€8.0 million",
+    "d": "€26.0 million"
+   },
+   "correctOptionId": "c",
+   "explanation": "Under IAS 19, profit or loss includes service cost plus net interest on the net defined benefit liability at the discount rate: 6 + 5.0% × (400 − 360) = 6 + 2 = €8.0 million. Remeasurements go to OCI and are never recycled: here the return on assets above interest income (22 − 18 = €4 million gain) plus any actuarial gains or losses. The expected return of 7% plays no role under IFRS.",
+   "distractorExplanations": {
+    "a": "That is the US GAAP figure: 6 + 20 interest cost − 25.2 expected return (7% × 360) = 0.8; IFRS uses the discount rate on net assets.",
+    "b": "Deducts the actual return (6 + 20 − 22 = 4.0); under IFRS the excess of actual return over interest income goes to OCI.",
+    "d": "Includes service cost and interest on the obligation (6 + 20) but ignores interest income on plan assets of 5% × 360 = 18."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-fra-003": {
+   "prompt": "On 1 January 2025, Quill Systems grants executives 300,000 equity-settled stock options with a grant-date fair value of $8.00 per option and three-year cliff vesting; no forfeitures are expected. By 31 December 2026 the share price has fallen and the options' fair value is only $5.00. What compensation expense does Quill recognize for 2026?",
+   "options": {
+    "a": "$200,000",
+    "b": "$800,000",
+    "c": "$1,600,000",
+    "d": "$2,400,000"
+   },
+   "correctOptionId": "b",
+   "explanation": "Under both IFRS 2 and ASC 718, equity-settled awards are measured at grant-date fair value and are not remeasured for later price changes. Total cost = 300,000 × $8.00 = $2.4 million, recognized evenly over the three-year service (vesting) period: $800,000 per year in 2025, 2026, and 2027. The fall in fair value to $5.00 has no effect on the expense.",
+   "distractorExplanations": {
+    "a": "Applies cash-settled liability logic: remeasures at $5.00 (cumulative $1.0 million after two years) minus $800,000 already booked.",
+    "c": "$1.6 million is the cumulative expense through 2026 (two years × $800,000), not the expense recognized for 2026 alone.",
+    "d": "Expenses the full grant-date value at once; with three-year cliff vesting the cost is spread over the service period."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-fra-004": {
+   "prompt": "Tasman Holdings (presentation currency USD) owns Sonora Ltd., a Mexican sales office that invoices in USD, sources inventory from the parent, and is financed by the parent; management concludes Sonora's functional currency is the USD. Sonora keeps its books in MXN and holds more monetary liabilities than monetary assets. If the MXN depreciates against the USD, what is the effect in Tasman's consolidated statements?",
+   "options": {
+    "a": "Current rate method; a translation loss in OCI on Sonora's net asset exposure",
+    "b": "Current rate method; a translation gain in OCI on Sonora's net liability exposure",
+    "c": "Temporal method; a remeasurement loss in net income on the net monetary exposure",
+    "d": "Temporal method; a remeasurement gain in net income on net monetary liabilities"
+   },
+   "correctOptionId": "d",
+   "explanation": "When a subsidiary's functional currency equals the parent's presentation currency but its books are in a local currency, the accounts are remeasured with the temporal method and gains or losses go to net income. The exposure is the net monetary position: Sonora is net monetary liability. When the MXN depreciates, those MXN liabilities are worth fewer USD, so Tasman reports a remeasurement gain in net income.",
+   "distractorExplanations": {
+    "a": "The current rate method applies when the local currency is functional; here the USD is functional, so the temporal method applies.",
+    "b": "Wrong method: with a USD functional currency, results are remeasured (temporal) and flow to net income, not translated into OCI.",
+    "c": "Right method, wrong sign: a net monetary liability position gains when the local currency depreciates, because the debts shrink in USD."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-fra-005": {
+   "prompt": "Harbor Union Bank reports Common Equity Tier 1 capital of $8.0 billion, Additional Tier 1 capital of $1.5 billion, Tier 2 capital of $2.0 billion, risk-weighted assets of $100 billion, and total on-balance-sheet assets of $180 billion. What is the bank's Basel III Tier 1 capital ratio?",
+   "options": {
+    "a": "5.3%",
+    "b": "8.0%",
+    "c": "9.5%",
+    "d": "11.5%"
+   },
+   "correctOptionId": "c",
+   "explanation": "Basel III Tier 1 capital = CET1 + Additional Tier 1 = 8.0 + 1.5 = $9.5 billion, divided by risk-weighted assets: 9.5/100 = 9.5%. Minimums are 4.5% CET1, 6.0% Tier 1, and 8.0% total capital, plus a 2.5% CET1 capital conservation buffer, so Harbor Union clears the 8.5% Tier 1 requirement including the buffer. In CAMELS this sits under Capital adequacy.",
+   "distractorExplanations": {
+    "a": "Divides Tier 1 by total assets (9.5/180); that resembles the leverage ratio, which uses total exposure rather than risk-weighted assets.",
+    "b": "8.0% is the CET1 ratio; the Tier 1 ratio adds Additional Tier 1 capital such as qualifying perpetual instruments.",
+    "d": "11.5% is the total capital ratio, which adds Tier 2 capital (8.0 + 1.5 + 2.0); Tier 1 excludes Tier 2 instruments."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-fra-006": {
+   "prompt": "Nadia Brandt reviews Coreline Software's annual report: revenue rose 18%, accounts receivable rose 45%, net income rose 22%, and cash flow from operations fell 9%. Coreline also extended equipment useful lives from 8 to 12 years, spent 40% more on capital expenditures than its depreciation charge to build a data center, and saw its effective tax rate fall from 24% to 21% after a statutory rate cut. Which observation most directly signals aggressive revenue recognition?",
+   "options": {
+    "a": "Extending equipment useful lives from 8 to 12 years, which lowers depreciation expense",
+    "b": "Capital expenditures running 40% above depreciation while the data center is built",
+    "c": "An effective tax rate that fell from 24% to 21% after the statutory rate cut",
+    "d": "Receivables rising 45% against 18% revenue growth while operating cash flow falls"
+   },
+   "correctOptionId": "d",
+   "explanation": "Receivables growing much faster than revenue (rising DSO), combined with net income rising while cash flow from operations falls, means reported revenue is not converting to cash: the classic accrual red flag for premature or fictitious revenue (channel stuffing, bill-and-hold, aggressive multiple-element allocation). Analysts check DSO trends, the CFO/NI ratio, and accrual ratios.",
+   "distractorExplanations": {
+    "a": "Longer useful lives are an earnings-quality red flag, but on the expense side (lower depreciation), not revenue recognition.",
+    "b": "Capex above depreciation is normal during a capacity build; it signals aggressive accounting only if operating costs are capitalized.",
+    "c": "A lower effective tax rate following a statutory cut is a legitimate, explainable change, not evidence about how revenue is recognized."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-corp-finance-001": {
+   "prompt": "Halden Logistics has no debt, an unlevered cost of capital of 9%, and a 25% marginal tax rate. The CFO plans to issue $400 million of 5% perpetual debt and use the proceeds to repurchase shares, taking the debt-to-equity ratio from 0 to 0.6. An analyst assumes Modigliani–Miller with corporate taxes and no costs of financial distress. How will the recapitalization affect Halden's cost of equity and WACC?",
+   "options": {
+    "a": "Cost of equity rises and WACC falls",
+    "b": "Cost of equity rises and WACC is unchanged",
+    "c": "Cost of equity is unchanged and WACC falls",
+    "d": "Both the cost of equity and WACC rise"
+   },
+   "correctOptionId": "a",
+   "explanation": "MM Proposition II with taxes: r_e = r_0 + (r_0 − r_d)(1 − t)(D/E) = 9% + (9% − 5%)(0.75)(0.6) = 10.8%, so shareholders demand more for the added financial risk. Because interest is tax-deductible, WACC falls: D/V = 0.6/1.6 = 0.375, WACC = 0.625 × 10.8% + 0.375 × 5% × 0.75 = 8.16% (= 9% × (1 − 0.25 × 0.375)). Firm value rises by the tax shield t × D = $100 million.",
+   "distractorExplanations": {
+    "b": "That is MM Proposition II without taxes, where r_e rises just enough to keep WACC at r_0; with a deductible interest expense the after-tax cost of debt pulls WACC down to about 8.16%.",
+    "c": "The cost of equity cannot stay flat: shareholders bear more financial risk as D/E rises, so r_e increases from 9% to 10.8% even with the tax shield.",
+    "d": "WACC rises with leverage only in a static trade-off world once expected distress costs exceed the tax shield; the vignette assumes no distress costs."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-corp-finance-002": {
+   "prompt": "Moravia Tools has net income of $50 million, 20 million shares outstanding, book value of equity of $300 million, and a share price of $40. The board approves borrowing $80 million at a 7% pre-tax rate to repurchase shares at $40; the tax rate is 25% and operating income is unaffected. What are Moravia's pro forma EPS and book value per share immediately after the buyback?",
+   "options": {
+    "a": "EPS $2.47; BVPS $16.67",
+    "b": "EPS $2.54; BVPS unchanged at $15.00",
+    "c": "EPS $2.78; BVPS $12.22",
+    "d": "EPS $2.54; BVPS $12.22"
+   },
+   "correctOptionId": "d",
+   "explanation": "Shares repurchased = $80M / $40 = 2M, leaving 18M. After-tax interest = $80M × 7% × (1 − 0.25) = $4.2M, so net income = $45.8M and EPS = $45.8M / 18M = $2.54 (up from $2.50, because the 5.25% after-tax cost of debt is below the 6.25% earnings yield of $2.50/$40). Equity falls by the $80M paid: $220M / 18M = $12.22 BVPS — buying back above the $15 book value per share always dilutes BVPS.",
+   "distractorExplanations": {
+    "a": "Deducts the full $5.6 million pre-tax interest (no tax shield) and divides the original $300 million of equity by 18 million shares, as if no cash had left the company.",
+    "b": "EPS is right, but BVPS cannot stay at $15: paying $40 per share, above the $15 book value, removes $80 million of equity for 2 million shares and dilutes BVPS to $12.22.",
+    "c": "BVPS is right, but $2.78 divides the old $50 million of net income by 18 million shares and ignores the $4.2 million of after-tax interest on the new debt."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-corp-finance-003": {
+   "prompt": "Analyst Lena Ortiz is estimating the cost of equity for a cement producer in an emerging market. The country's US-dollar sovereign bond yields 6.5% versus 4.0% on a comparable US Treasury, the local equity index has annualized volatility of 30% versus 20% for the sovereign bond, the mature-market equity risk premium is 5.0%, the US risk-free rate is 4.0%, and the company's beta is 1.2. If Ortiz adds the country risk premium to the equity risk premium, what cost of equity should she use?",
+   "options": {
+    "a": "12.0%",
+    "b": "13.0%",
+    "c": "13.75%",
+    "d": "14.5%"
+   },
+   "correctOptionId": "d",
+   "explanation": "Sovereign yield spread method: CRP = (6.5% − 4.0%) × (σ_equity / σ_sovereign bond) = 2.5% × 30/20 = 3.75%. The spread is scaled up because equity in that market is more volatile than its sovereign debt. Adding the CRP to the mature-market ERP: r_e = 4.0% + 1.2 × (5.0% + 3.75%) = 4.0% + 10.5% = 14.5%.",
+   "distractorExplanations": {
+    "a": "Inverts the volatility ratio (20/30), giving a CRP of 1.67% and r_e = 4.0% + 1.2 × 6.67% = 12.0%; the spread should be scaled up by σ_equity/σ_bond, not down.",
+    "b": "Uses the raw 2.5% sovereign spread as the CRP without scaling it by relative volatility: 4.0% + 1.2 × (5.0% + 2.5%) = 13.0%.",
+    "c": "Adds the 3.75% CRP outside the beta term (4.0% + 1.2 × 5.0% + 3.75%); the stated method adds CRP to the ERP, so it is multiplied by the 1.2 beta."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-corp-finance-004": {
+   "prompt": "Northfield Corp. is launching a medical-device division that it will finance at a target debt-to-equity ratio of 0.75; Northfield's marginal tax rate is 20%. A publicly traded pure-play device maker has an equity beta of 1.30, a debt-to-equity ratio of 0.40, and a 25% tax rate. Assuming zero debt betas and the tax-adjusted relationship between asset and equity beta, what equity beta should Northfield use for the division?",
+   "options": {
+    "a": "1.00",
+    "b": "1.30",
+    "c": "1.60",
+    "d": "1.625"
+   },
+   "correctOptionId": "c",
+   "explanation": "Pure-play method: unlever the comparable with its own leverage and tax rate, then relever with the project's. β_asset = 1.30 / [1 + (1 − 0.25)(0.40)] = 1.30 / 1.30 = 1.00. β_equity = 1.00 × [1 + (1 − 0.20)(0.75)] = 1.00 × 1.60 = 1.60. This beta then feeds the division's CAPM cost of equity and project WACC.",
+   "distractorExplanations": {
+    "a": "1.00 is the pure-play's asset (unlevered) beta; it must be relevered at Northfield's 0.75 D/E and 20% tax rate before it can price the division's equity.",
+    "b": "Uses the comparable's equity beta as-is, which embeds the comparable's 0.40 leverage rather than Northfield's 0.75 target leverage.",
+    "d": "Ignores taxes in both steps: 1.30/1.40 × 1.75 = 1.625; the vignette specifies the tax-adjusted formula, which uses (1 − t) × D/E when unlevering and relevering."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-corp-finance-005": {
+   "prompt": "Analyst Ravi Menon covers Solent Media, whose founder holds Class B shares with 10 votes each, giving him 62% of the votes but 14% of the economic interest. Solent has agreed to buy a production studio owned by the founder's family for 18× EBITDA, while recent arm's-length studio deals closed near 10× EBITDA, and the approving board lacks an independent majority. How should Menon most appropriately reflect this in valuing Solent's listed Class A shares?",
+   "options": {
+    "a": "Make no adjustment, because related-party deals disclosed in the notes are value-neutral",
+    "b": "Raise the value, because concentrated founder control aligns management with shareholders",
+    "c": "Lower the value to reflect expected overpayment and weak minority-holder protection",
+    "d": "Exclude the purchase from forecasts, because it is a one-off non-operating transaction"
+   },
+   "correctOptionId": "c",
+   "explanation": "Corporate governance is a material ESG factor for every issuer. A dual-class wedge (62% of votes vs 14% of cash-flow rights), a non-independent board, and a related-party purchase at roughly 80% above arm's-length multiples signal expropriation risk for minority holders. The analyst should capture it in the valuation — e.g., deduct the estimated overpayment (about 8× EBITDA) and/or apply a higher risk premium or governance discount to the Class A shares.",
+   "distractorExplanations": {
+    "a": "Disclosure under related-party rules makes the deal visible, not fair; paying 18× vs about 10× transfers value from Class A holders to the founder's family.",
+    "b": "Control without matching ownership weakens alignment: the founder's family receives the full overpayment while the founder bears only 14% of its cost through his equity stake.",
+    "d": "The cash paid and the studio's future cash flows belong in the forecast; excluding them hides exactly the overpayment the analyst needs to price."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-corp-finance-006": {
+   "prompt": "Calder Industries owns 100% of its specialty-chemicals unit, Brightwater. Calder announces that its shareholders may tender Calder shares in exchange for Brightwater shares at a 7% premium to market value; Calder receives no cash, and the tendered Calder shares will be retired. Which type of restructuring is this, and what is its immediate effect on Calder's share count?",
+   "options": {
+    "a": "A split-off; Calder's share count decreases",
+    "b": "A spin-off; Calder's share count is unchanged",
+    "c": "An equity carve-out; Calder's share count is unchanged",
+    "d": "An outright sale of the unit; Calder's share count decreases"
+   },
+   "correctOptionId": "a",
+   "explanation": "In a split-off, parent shareholders choose to exchange parent shares for subsidiary shares, usually at a premium to encourage participation. The parent raises no cash, and the shares it takes back are retired, so Calder's share count falls. A spin-off instead distributes subsidiary shares pro rata to all holders, who keep their parent shares; a carve-out and a sale bring cash to the parent.",
+   "distractorExplanations": {
+    "b": "A spin-off distributes Brightwater shares pro rata to all Calder holders with nothing tendered back; here holders must give up Calder shares, which are retired.",
+    "c": "An equity carve-out sells a minority stake of the subsidiary to new investors in an IPO for cash; Calder receives no cash and existing holders exchange shares instead.",
+    "d": "A sale to an outside buyer brings Calder cash or securities and does not retire Calder shares; here the consideration is Calder's own stock tendered by its shareholders."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-equity-001": {
+   "prompt": "Arden Retail reports under US GAAP. Last year its cash flow from operations was $400 million after $50 million of interest paid, fixed capital investment was $180 million, it issued $60 million of new bonds and repaid $35 million of maturing notes, and its tax rate is 25%. What was Arden's free cash flow to equity?",
+   "options": {
+    "a": "$185 million",
+    "b": "$207.5 million",
+    "c": "$220 million",
+    "d": "$245 million"
+   },
+   "correctOptionId": "d",
+   "explanation": "Under US GAAP interest paid is already deducted in CFO, so FCFE = CFO − FCInv + net borrowing, with no interest adjustment. Net borrowing = $60M − $35M = $25M. FCFE = $400M − $180M + $25M = $245M. Cross-check via FCFF: FCFF = $400M + $50M × (1 − 0.25) − $180M = $257.5M; FCFE = FCFF − after-tax interest $37.5M + net borrowing $25M = $245M.",
+   "distractorExplanations": {
+    "a": "Subtracts the $35 million repayment but ignores the $60 million issuance; net borrowing is issuance minus repayment, a +$25 million inflow to equity holders.",
+    "b": "Deducts after-tax interest of $37.5 million again; under US GAAP the interest is already inside CFO, so FCFE needs no further interest adjustment.",
+    "c": "Stops at CFO − FCInv and leaves out net borrowing of $25 million, which is cash that becomes available to shareholders."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-equity-002": {
+   "prompt": "Kestrel Biologics just paid an annual dividend of $3.50 per share. An analyst expects dividend growth of 12% now, declining linearly over the next 8 years to a stable 5% that persists thereafter, and she estimates Kestrel's required return on equity at 10%. Using the H-model, what is the value of a Kestrel share today?",
+   "options": {
+    "a": "$73.50",
+    "b": "$93.10",
+    "c": "$98.00",
+    "d": "$112.70"
+   },
+   "correctOptionId": "b",
+   "explanation": "H-model: V_0 = D_0(1 + g_L)/(r − g_L) + D_0 × H × (g_S − g_L)/(r − g_L), where H is half the length of the decline period (8/2 = 4). Stable part = 3.50 × 1.05 / 0.05 = $73.50; extra-growth part = 3.50 × 4 × (0.12 − 0.05) / 0.05 = $19.60. V_0 = 73.50 + 19.60 = $93.10.",
+   "distractorExplanations": {
+    "a": "Values only the stable-growth Gordon component (3.50 × 1.05 / 0.05) and drops the premium for the above-normal growth during the 8-year fade.",
+    "c": "Grows the dividend at the 12% short-term rate in the Gordon term (3.50 × 1.12 / 0.05 = $78.40); the H-model grows D_0 at the long-run rate g_L in that term.",
+    "d": "Uses the full 8-year decline period instead of H = 4, doubling the extra-growth term to $39.20; H is half the length of the linear decline."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-equity-003": {
+   "prompt": "Analyst Priya Nair values Brenton Insurance with a residual income model. Book value per share is $80.00 today, ROE on beginning book value is 15% in each of the next two years, the payout ratio is 40%, and clean-surplus accounting holds. The cost of equity is 10%. After year 2, residual income is expected to fade with a persistence factor of 0.60. What is the value of a Brenton share today?",
+   "options": {
+    "a": "$90.84",
+    "b": "$91.56",
+    "c": "$92.87",
+    "d": "$123.27"
+   },
+   "correctOptionId": "b",
+   "explanation": "Year 1: EPS = 15% × 80 = $12.00, RI_1 = 12.00 − 10% × 80 = $4.00; clean surplus B_1 = 80 + 12 × 0.60 = $87.20. Year 2: EPS = 15% × 87.20 = $13.08, RI_2 = 13.08 − 8.72 = $4.36. With persistence ω: V_0 = B_0 + RI_1/(1 + r) + RI_2/[(1 + r − ω)(1 + r)] = 80 + 4.00/1.10 + 4.36/(0.50 × 1.10) = 80 + 3.64 + 7.93 = $91.56.",
+   "distractorExplanations": {
+    "a": "Discounts the year-2 terminal term one period too many (4.36/(0.50 × 1.10²) = $7.21); the fading RI from year 2 onward is divided by (1 + r − ω) and only (1 + r)^1.",
+    "c": "Charges year-2 equity at the opening $80 book value (RI_2 = 13.08 − 8.00); under clean surplus the capital charge uses B_1 = $87.20 after retained earnings.",
+    "d": "Treats year-2 RI as a no-fade perpetuity (4.36/0.10 discounted one year), ignoring the 0.60 persistence factor that makes RI decay toward zero."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-equity-004": {
+   "prompt": "Analyst Chen Wei covers Tolland Brands, a mature consumer-products company with a sustainable ROE of 15% and a long-run dividend payout ratio of 60%. Its required return on equity is 13%, and EPS for the year just ended was $3.00. Assuming the Gordon growth model holds, what is Tolland's justified trailing P/E?",
+   "options": {
+    "a": "6.06×",
+    "b": "8.57×",
+    "c": "9.09×",
+    "d": "10.90×"
+   },
+   "correctOptionId": "c",
+   "explanation": "Sustainable growth g = retention × ROE = 0.40 × 15% = 6%. Justified trailing P/E = (1 − b)(1 + g)/(r − g) = 0.60 × 1.06 / (0.13 − 0.06) = 0.636 / 0.07 = 9.09×. The trailing multiple uses E_0, so dividends must be grown one year; the leading multiple would be 0.60/0.07 = 8.57×.",
+   "distractorExplanations": {
+    "a": "Uses the 40% retention ratio as the payout in the numerator (0.40 × 1.06 / 0.07); the payout ratio of 60% belongs in the numerator and retention drives g.",
+    "b": "8.57× is the justified leading P/E (payout / (r − g)) based on next year's EPS; a trailing P/E needs the extra (1 + g) factor.",
+    "d": "Swaps payout and retention: g = 0.60 × 15% = 9% and payout 40% give 0.40 × 1.09 / 0.04 = 10.90×; growth comes from the retained 40%."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-equity-005": {
+   "prompt": "Valuation analyst Hugo Lambert must value a 15% minority stake in Pellow Foods, a family-owned company. Using the guideline transactions method on acquisitions of whole companies, he estimates Pellow's equity value on a controlling basis at $40 million. He infers the discount for lack of control from a 25% control premium seen in comparable deals and applies a 30% discount for lack of marketability. What is the value of the stake?",
+   "options": {
+    "a": "$3.36 million",
+    "b": "$4.20 million",
+    "c": "$5.25 million",
+    "d": "$22.40 million"
+   },
+   "correctOptionId": "a",
+   "explanation": "Guideline transactions reflect control prices, so a minority, non-marketable stake needs both discounts. DLOC = 1 − 1/(1 + control premium) = 1 − 1/1.25 = 20%. Discounts are applied multiplicatively: pro rata value = 15% × $40M = $6.00M; × (1 − 0.20) = $4.80M marketable minority; × (1 − 0.30) = $3.36M. Total discount = 1 − 0.80 × 0.70 = 44%, not the 50% sum.",
+   "distractorExplanations": {
+    "b": "Applies only the 30% DLOM ($6.00M × 0.70) and skips the DLOC, although transaction multiples embed a control premium that a 15% holder cannot capture.",
+    "c": "Adds the 25% control premium instead of removing it ($6.00M × 1.25 × 0.70); the stake is a minority interest, so control value must be discounted.",
+    "d": "Applies both discounts to the whole $40 million company (40 × 0.80 × 0.70) and forgets to take the 15% pro rata share of equity."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-equity-006": {
+   "prompt": "Analyst Sofia Reyes must value Quillon Robotics, a fast-growing manufacturer that has never paid a dividend. Heavy capacity expansion should keep FCFE negative for at least the next five years, but Quillon's IFRS book values are reliable, earnings are positive, and almost no items bypass the income statement through OCI. Which approach is most appropriate as Reyes's primary valuation model?",
+   "options": {
+    "a": "A dividend discount model with dividends assumed to start in year 6",
+    "b": "An FCFE model, because it captures cash actually available to shareholders",
+    "c": "A Gordon-based justified P/E, because Quillon's earnings are positive",
+    "d": "A residual income model, anchored on book value and expected earnings"
+   },
+   "correctOptionId": "d",
+   "explanation": "Residual income suits companies that pay no dividends, have negative free cash flow for the foreseeable future, and report reliable book values under (near) clean-surplus accounting. Much of the value sits in current book value plus near-term RI, so it relies less on a distant terminal value than DDM or FCFE would for Quillon.",
+   "distractorExplanations": {
+    "a": "With no dividend history, the timing and size of a first dividend in year 6 are guesses, and almost all value would come from the distant terminal value.",
+    "b": "FCFE is negative for at least five years, so the model would push all of the value into a highly uncertain terminal value — a classic case where FCFE is a poor primary model.",
+    "c": "A justified P/E from the Gordon model is driven by the payout ratio; Quillon's payout is zero, so the formula gives no meaningful multiple for a non-payer in rapid growth."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-fixed-income-001": {
+   "prompt": "Fixed-income strategist Erik Lindqvist observes annual-compounding government spot rates of 3.0% for one year, 4.0% for two years, and 4.5% for three years. He believes the liquidity preference theory holds, with positive term premiums that increase with maturity. What does the curve imply about the market's expected one-year rate two years from now?",
+   "options": {
+    "a": "It is below 5.51%, because the forward rate includes a term premium",
+    "b": "It equals 5.51%, because forward rates are unbiased forecasts of future spot rates",
+    "c": "It is above 5.51%, because short-term investors demand a liquidity premium",
+    "d": "It is below 5.01%, because the one-year rate one year ahead is the relevant forward"
+   },
+   "correctOptionId": "a",
+   "explanation": "The one-year rate two years forward is f(2,1) = (1.045)³/(1.04)² − 1 = 1.141166/1.0816 − 1 = 5.51%. Under liquidity preference, forward rates equal expected future spot rates plus a positive liquidity (term) premium that grows with maturity, so the forward is an upward-biased estimate: the expected one-year rate in two years is below 5.51%. Only under pure expectations would it equal 5.51%.",
+   "distractorExplanations": {
+    "b": "That is the pure expectations theory, which assumes no term premium; under liquidity preference the 5.51% forward overstates the expected future one-year rate.",
+    "c": "Gets the direction wrong: investors demand a premium to hold longer maturities, which pushes forwards above expected spot rates, so the expectation is below 5.51%.",
+    "d": "5.01% is the one-year rate one year forward (1.0816/1.03 − 1); the question asks about the rate starting two years from now, which is the 5.51% forward."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-fixed-income-002": {
+   "prompt": "Analyst Tomas Reiner values a two-year, 5% annual-coupon bond (par 100) issued by Westmoor Utilities that is callable at par at the end of year 1, right after that year's coupon is paid. His calibrated binomial tree has a one-year rate of 3.00% today and year-1 one-year rates of 5.00% (up) and 3.50% (down), each with probability 0.5; spreads are ignored. What is the value of the callable bond today?",
+   "options": {
+    "a": "97.09",
+    "b": "101.94",
+    "c": "102.65",
+    "d": "103.35"
+   },
+   "correctOptionId": "b",
+   "explanation": "Year-1 node values (ex coupon): up = 105/1.05 = 100.00; down = 105/1.035 = 101.45. The issuer calls whenever the node value exceeds the 100 call price, so the down node is capped at 100. V_0 = [0.5 × (100.00 + 5) + 0.5 × (100.00 + 5)] / 1.03 = 105 / 1.03 = 101.94. The option-free value is [0.5 × 105 + 0.5 × 106.45] / 1.03 = 102.65, so the call is worth about 0.70.",
+   "distractorExplanations": {
+    "a": "Caps the node values at 100 but drops the 5 coupon received at each year-1 node (0.5 × 100 + 0.5 × 100) / 1.03; the coupon is paid whether or not the bond is called.",
+    "c": "102.65 is the straight (option-free) bond value; it ignores the issuer's right to call the bond at 100 in the down-rate state.",
+    "d": "Adds the 0.70 call value to the straight bond; the call belongs to the issuer, so V_callable = V_straight − V_call = 102.65 − 0.70."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-fixed-income-003": {
+   "prompt": "Analyst Grace Owusu prices a callable corporate bond at 101.50 per 100 of par using a binomial tree calibrated to the benchmark curve with a constant OAS. Shifting the benchmark curve down by 25 bp while holding the OAS constant gives a value of 102.20, and shifting it up by 25 bp gives a value of 100.40. What is the bond's effective duration?",
+   "options": {
+    "a": "1.77",
+    "b": "2.76",
+    "c": "3.55",
+    "d": "7.09"
+   },
+   "correctOptionId": "c",
+   "explanation": "Effective duration = (PV₋ − PV₊)/(2 × PV₀ × ΔCurve) = (102.20 − 100.40)/(2 × 101.50 × 0.0025) = 1.80/0.5075 = 3.55. Effective (not modified) duration is required because the call makes cash flows rate-dependent. The one-sided durations differ — down 0.70/0.25375 = 2.76 vs up 1.10/0.25375 = 4.33 — because the call caps price gains when rates fall.",
+   "distractorExplanations": {
+    "a": "Uses 50 bp (0.005) as ΔCurve; ΔCurve is the size of each one-way shift, 25 bp, while the 2 in the denominator already accounts for the two shifts.",
+    "b": "2.76 is the one-sided down-duration (102.20 − 101.50)/(101.50 × 0.0025), which is muted by the call cap; effective duration averages both shifts.",
+    "d": "Omits the 2 in the denominator, dividing the full up-to-down price range by a single 25 bp shift and doubling the duration."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-fixed-income-004": {
+   "prompt": "Portfolio manager Aiko Tanaka runs a binomial-tree model on a BBB-rated callable bond trading at 98.40. With an interest rate volatility assumption of 15%, the model produces an OAS of 135 bp versus a Z-spread of 190 bp. Her risk team asks her to rerun the model at 20% volatility, holding the bond's market price constant. How will the recalculated OAS most likely compare with 135 bp, and why?",
+   "options": {
+    "a": "Higher, because more volatility makes the call less valuable to the issuer",
+    "b": "Unchanged, because the OAS already strips out the embedded option's effect",
+    "c": "Lower, because a more valuable call absorbs more of the Z-spread",
+    "d": "Higher, because the Z-spread rises with volatility and option cost is fixed"
+   },
+   "correctOptionId": "c",
+   "explanation": "Higher volatility raises the value of the issuer's call, which lowers the model value of the callable bond at any given spread (V_callable = V_straight − V_call). To match the unchanged 98.40 price, the model needs a smaller constant spread over the tree, so the OAS falls below 135 bp and the option cost (Z-spread − OAS) rises above 55 bp. The Z-spread itself does not depend on volatility.",
+   "distractorExplanations": {
+    "a": "Gets the option effect backwards: higher volatility always makes an option more valuable, including the issuer's call, so the callable bond's model value falls.",
+    "b": "OAS removes the option only as valued under the assumed volatility; it is model-dependent, so changing the volatility input changes the OAS.",
+    "d": "The Z-spread is a constant spread over spot rates that ignores rate paths and volatility; it stays at 190 bp, while the option cost (Z − OAS) changes."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-fixed-income-005": {
+   "prompt": "Credit analyst Noor Haddad evaluates a two-year zero-coupon bond (face 100) issued by Ferrin Chemicals. She assumes a flat 3.0% risk-free rate with annual compounding, a constant 4% annual hazard rate (conditional probability of default), a 40% recovery rate, and that default can occur only at year-end. What is the credit valuation adjustment (CVA) for the bond?",
+   "options": {
+    "a": "2.96",
+    "b": "4.43",
+    "c": "4.52",
+    "d": "4.63"
+   },
+   "correctOptionId": "b",
+   "explanation": "Year 1: exposure = 100/1.03 = 97.09; LGD = 60% × 97.09 = 58.25; POD = 4%; EL = 2.330; PV = 2.330/1.03 = 2.262. Year 2: exposure = 100; LGD = 60; POD = 0.96 × 4% = 3.84% (survive year 1, then default); EL = 2.304; PV = 2.304/1.03² = 2.172. CVA = 2.262 + 2.172 = 4.43, so fair value = 94.26 − 4.43 = 89.83.",
+   "distractorExplanations": {
+    "a": "Multiplies exposure by the 40% recovery rate instead of the 60% loss given default, which understates expected loss in both years.",
+    "c": "Uses 4% as the year-2 probability of default; the unconditional POD is the hazard rate times the 96% probability of surviving year 1, i.e., 3.84%.",
+    "d": "Sums the expected losses (2.330 + 2.304) without discounting them to today at the risk-free rate; CVA is the present value of expected losses."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-fixed-income-006": {
+   "prompt": "Hedge fund analyst Marta Silva buys five-year CDS protection on $20 million notional of Calloway Energy debt. The contract carries the standard 1% (100 bp) annual coupon, Calloway's current five-year credit spread is 250 bp, and the CDS has an effective spread duration of 4.2. Which party pays the upfront premium at initiation, and approximately how much is it?",
+   "options": {
+    "a": "Silva pays the protection seller about $1.26 million",
+    "b": "The protection seller pays Silva about $1.26 million",
+    "c": "Silva pays the protection seller roughly $2.10 million",
+    "d": "The protection seller pays Silva about $0.84 million"
+   },
+   "correctOptionId": "a",
+   "explanation": "Upfront premium ≈ (credit spread − fixed coupon) × effective spread duration × notional = (2.50% − 1.00%) × 4.2 × $20M = 6.3% × $20M = $1.26M. Because the 250 bp spread exceeds the 100 bp coupon, the buyer's running payments under-compensate the seller, so the protection buyer (Silva) pays upfront; the CDS price is about 100 − 6.3 = 93.7 per 100 of notional.",
+   "distractorExplanations": {
+    "b": "Reverses the direction: the seller pays upfront only when the credit spread is below the fixed coupon; here the spread (250 bp) is above the 100 bp coupon.",
+    "c": "Multiplies the whole 250 bp spread by duration (10.5% × $20M); the running 100 bp coupon already covers part of the spread, so only the 150 bp difference is paid upfront.",
+    "d": "Multiplies the 100 bp coupon rather than the 150 bp spread difference by duration and also gets the payment direction backwards."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-derivatives-001": {
+   "prompt": "Six months ago, Harbor Capital entered a long 12-month forward on Delmar Industries stock when the share price was $60.00. Delmar paid a $1.50 dividend three months after initiation, and the risk-free rate has stayed at 4.0% (annual compounding). The stock now trades ex-dividend at $62.00. What is the value of Harbor's forward position per share today?",
+   "options": {
+    "a": "$0.81",
+    "b": "$1.14",
+    "c": "$2.33",
+    "d": "$3.49"
+   },
+   "correctOptionId": "c",
+   "explanation": "Price the forward at initiation net of the PV of the dividend, then value it as today's spot minus the PV of the locked-in forward price. The dividend has already been paid, so no PV(D) is subtracted at the valuation date. F0 = (60.00 − 1.50/1.04^0.25) × 1.04 = (60.00 − 1.4854) × 1.04 = $60.855. Vt = 62.00 − 60.855/1.04^0.5 = 62.00 − 59.673 = $2.33 for the long. It is positive because the stock rose more than the carry implied.",
+   "distractorExplanations": {
+    "a": "Ignores the dividend when setting F0 (60.00 × 1.04 = $62.40), which overstates the locked-in price and understates the long's value.",
+    "b": "Subtracts F0 from spot without discounting it over the remaining six months; the forward price is paid at expiry, so discount it to today.",
+    "d": "Discounts F0 over the full 12-month term (60.855 / 1.04); only six months remain to expiry, so the discount period is 0.5 years."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-derivatives-002": {
+   "prompt": "Norvik AS bought (went long) a 3×9 FRA on a $5 million notional at a fixed rate of 3.90% to hedge a six-month loan starting in three months. At FRA expiration the 180-day market reference rate (MRR) sets at 4.30%. Rates are simple, actual/360, and the FRA settles at expiration. What settlement amount does Norvik receive?",
+   "options": {
+    "a": "$9,790",
+    "b": "$9,809",
+    "c": "$10,000",
+    "d": "$19,175"
+   },
+   "correctOptionId": "a",
+   "explanation": "An FRA settled at expiration pays the interest difference for the loan period, discounted back from the end of that period at the realized MRR. Interest difference = (4.30% − 3.90%) × 180/360 × $5,000,000 = $10,000, which would be paid at month 9. Discount six months at the new MRR: 10,000 / (1 + 0.0430 × 180/360) = 10,000 / 1.0215 = $9,790. Norvik is long (effectively pays fixed) and the rate rose above 3.90%, so it receives the payment.",
+   "distractorExplanations": {
+    "b": "Discounts the $10,000 at the FRA fixed rate (1.0195) instead of the realized 4.30% MRR, which sets the settlement discount factor.",
+    "c": "Leaves the $10,000 undiscounted; settled at FRA expiration (month 3), the month-9 interest difference is discounted six months.",
+    "d": "Drops the 180/360 accrual factor, treating the six-month rate difference as a full year ($20,000 discounted at 4.30%)."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-derivatives-003": {
+   "prompt": "One year ago, Calder Foods entered a 3-year, annual-pay interest rate swap on $100 million notional, paying fixed at 2.40% and receiving SOFR-based floating. The first settlement has just been made. Current discount factors are 0.9709 (1 year) and 0.9381 (2 years). What is the swap's current value to Calder?",
+   "options": {
+    "a": "$0.82 million",
+    "b": "$1.14 million",
+    "c": "$1.61 million",
+    "d": "$1.69 million"
+   },
+   "correctOptionId": "c",
+   "explanation": "A swap's value to the fixed payer = (current par swap rate − original fixed rate) × sum of remaining discount factors × notional. New 2-year par swap rate = (1 − 0.9381) / (0.9709 + 0.9381) = 0.0619 / 1.9090 = 3.2425%. Value = (3.2425% − 2.40%) × 1.9090 × $100m = 0.8425% × 1.9090 × $100m ≈ $1.61 million. Calder pays the old, lower fixed rate while market swap rates have risen, so the swap is an asset to it.",
+   "distractorExplanations": {
+    "a": "Discounts the 0.8425% rate advantage for one year only; two annual settlements remain, so both discount factors (sum 1.9090) apply.",
+    "b": "Uses the 1-year spot rate (1/0.9709 − 1 = 3.00%) as the new swap rate; a 2-year swap is repriced at the 2-year par rate of 3.24%.",
+    "d": "Multiplies the rate difference by two years without discounting (0.8425% × 2 × $100m); each remaining settlement must be discounted."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-derivatives-004": {
+   "prompt": "Mira Patel values a two-year European call on Ostrava Mining with a strike of $48. The stock is at $50; each year it moves up by a factor of 1.20 or down by a factor of 0.85, and the risk-free rate is 3% per year. A colleague estimates a 60% real-world probability of an up move. What is the call's value using a two-period binomial model?",
+   "options": {
+    "a": "$6.69",
+    "b": "$7.40",
+    "c": "$7.85",
+    "d": "$9.50"
+   },
+   "correctOptionId": "b",
+   "explanation": "Risk-neutral probability π = (1.03 − 0.85) / (1.20 − 0.85) = 0.18 / 0.35 = 0.5143. Terminal prices: uu = $72.00 (payoff 24), ud = du = $51.00 (payoff 3), dd = $36.13 (payoff 0). Expected payoff = 0.5143² × 24 + 2 × 0.5143 × 0.4857 × 3 = 6.348 + 1.499 = 7.847. Discount two periods: 7.847 / 1.03² = $7.40. The real-world probability plays no role in arbitrage-free pricing.",
+   "distractorExplanations": {
+    "a": "Counts the up-down path once; two paths (up-down and down-up) end at $51, so the middle payoff is weighted 2π(1 − π).",
+    "c": "Correct expected payoff of 7.85 but not discounted back two periods at the 3% risk-free rate (divide by 1.03²).",
+    "d": "Uses the 60% real-world probability; binomial option pricing uses the risk-neutral probability built from u, d and the risk-free rate."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-derivatives-005": {
+   "prompt": "A dealer sold European calls on 2,000 shares of Lakeside Retail and delta-hedged the position with stock when the call delta was 0.40. After a rally the call delta is now 0.52. The dealer wants to restore a delta-neutral position using the stock. What trade should the dealer make?",
+   "options": {
+    "a": "Sell 240 shares",
+    "b": "Buy 1,040 shares",
+    "c": "Sell 800 shares",
+    "d": "Buy 240 shares"
+   },
+   "correctOptionId": "d",
+   "explanation": "A short call has negative delta, so the hedge is long stock: shares held = call delta × shares under option. Initial hedge = 0.40 × 2,000 = 800 shares long. Required now = 0.52 × 2,000 = 1,040 shares, so the dealer buys 1,040 − 800 = 240 shares. Having to buy after rises and sell after falls is the cost of being short gamma; the larger gamma is, the more often the hedge must be rebalanced.",
+   "distractorExplanations": {
+    "a": "Gets the direction backwards: the short calls' delta exposure became more negative, so the dealer needs more long stock, not less.",
+    "b": "Buys the full new hedge of 1,040 shares and ignores the 800 shares already held from the initial hedge.",
+    "c": "Unwinds the existing hedge entirely, which leaves the dealer with an unhedged short delta of −1,040 shares."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-derivatives-006": {
+   "prompt": "Tomas Reyes uses the BSM model with a continuous dividend yield to value a one-year European put on an equity index. The index's expected dividend yield rises from 2% to 3% after several constituents raise payouts; spot, strike, volatility and the risk-free rate are unchanged. What happens to the put's BSM value, and why?",
+   "options": {
+    "a": "It rises, because a higher yield lowers the index's forward price",
+    "b": "It falls, because higher dividends raise the index's total return to holders",
+    "c": "It is unchanged, because BSM prices the put from the spot index level",
+    "d": "It falls, because a higher yield works like a higher risk-free rate"
+   },
+   "correctOptionId": "a",
+   "explanation": "In BSM with a dividend yield δ, the underlying enters as S·e^(−δT): dividends paid during the option's life reduce the index level the option is written on, so the forward price F = S·e^((r − δ)T) falls as δ rises. A lower forward raises put value and lowers call value. Raising δ from 2% to 3% therefore increases the put, the opposite of a higher risk-free rate, which raises the forward and lowers put value.",
+   "distractorExplanations": {
+    "b": "Option holders do not receive the dividends; payouts lower the index path the put is written on, which helps the put.",
+    "c": "BSM with a dividend yield uses S·e^(−δT), so a change in δ changes d1, d2 and the put value even with spot unchanged.",
+    "d": "Reverses the two inputs: a higher risk-free rate raises the forward and lowers put value, while a higher yield lowers the forward."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-alternatives-001": {
+   "prompt": "Kestrel Partners is valuing a stabilized office building by direct capitalization. Gross potential rent is $7.0 million, vacancy and collection loss is 8%, operating expenses are $1.9 million, annual debt service is $2.6 million, and tax depreciation is $1.1 million. The market cap rate is 5.0%. What is the property's value?",
+   "options": {
+    "a": "$38.8 million",
+    "b": "$68.8 million",
+    "c": "$90.8 million",
+    "d": "$102.0 million"
+   },
+   "correctOptionId": "c",
+   "explanation": "Direct capitalization: value = NOI / cap rate, where NOI is effective gross income minus operating expenses, before financing and depreciation. EGI = 7.0 × (1 − 0.08) = $6.44m; NOI = 6.44 − 1.90 = $4.54m; value = 4.54 / 0.05 = $90.8 million. Debt service and depreciation are excluded because the cap rate values the property's unlevered operating income.",
+   "distractorExplanations": {
+    "a": "Deducts the $2.6 million debt service; NOI is measured before financing costs, which belong to the equity investor's cash flow.",
+    "b": "Deducts $1.1 million of tax depreciation, a non-cash accounting charge that is not an operating expense in NOI.",
+    "d": "Capitalizes gross potential rent less expenses and ignores the 8% vacancy and collection loss ($5.1m / 0.05)."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-alternatives-002": {
+   "prompt": "Ellery REIT reported trailing-12-month NOI of $48 million, which an analyst expects to grow 2% next year; comparable properties trade at a 6.0% cap rate. The REIT also holds $25 million of cash and receivables and $40 million of land held for development, against $380 million of debt and $20 million of other liabilities. It has 50 million shares outstanding. What is its NAV per share?",
+   "options": {
+    "a": "$8.32",
+    "b": "$9.30",
+    "c": "$9.62",
+    "d": "$10.02"
+   },
+   "correctOptionId": "c",
+   "explanation": "NAVPS capitalizes next year's NOI at the market cap rate, adds non-operating assets and subtracts total liabilities. Forward NOI = 48 × 1.02 = $48.96m; operating real estate = 48.96 / 0.06 = $816m. Gross assets = 816 + 25 + 40 = $881m. NAV = 881 − 380 − 20 = $481m, so NAVPS = 481 / 50 = $9.62. Compare it with the share price to judge a premium or discount to NAV.",
+   "distractorExplanations": {
+    "a": "Omits the $25m of cash and receivables and the $40m of land; non-operating assets are added to the capitalized NOI.",
+    "b": "Capitalizes trailing NOI of $48m instead of next year's expected $48.96m; the cap rate is applied to forward NOI.",
+    "d": "Subtracts the $380m of debt but forgets the $20m of other liabilities; NAV deducts total liabilities."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-alternatives-003": {
+   "prompt": "Arbor Residential REIT reported net income of $120 million, real estate depreciation and amortization of $85 million, a $15 million gain on property sales, $30 million of recurring maintenance capex and $5 million of straight-line rent adjustments. It has 250 million shares, and peers trade at 14× AFFO. What is Arbor's value per share on a P/AFFO basis?",
+   "options": {
+    "a": "$8.68",
+    "b": "$9.52",
+    "c": "$10.36",
+    "d": "$10.64"
+   },
+   "correctOptionId": "a",
+   "explanation": "FFO = net income + real estate D&A − gains on property sales = 120 + 85 − 15 = $190m. AFFO adjusts FFO for non-cash (straight-line) rent and recurring capex: 190 − 5 − 30 = $155m, or $0.62 per share (155 / 250). Value = 14 × $0.62 = $8.68. AFFO is the better proxy for distributable cash flow because maintenance capex is a real, recurring cost.",
+   "distractorExplanations": {
+    "b": "Leaves the $15 million gain on sale in AFFO; property gains are non-recurring and are removed when computing FFO.",
+    "c": "Adds the $15 million gain back instead of subtracting it, inflating FFO to $220m and AFFO to $185m.",
+    "d": "Applies the 14× multiple to FFO ($0.76 per share) instead of AFFO; it skips the capex and straight-line rent deductions."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-alternatives-004": {
+   "prompt": "A fund held a fully collateralized long position in WTI crude oil futures for one year. The front contract it held rose from $80.00 to $84.80. At the roll date the fund sold the expiring contract at $84.80 and bought the next contract at $86.40, rolling the whole position. Collateral earned 4.0%. What was the fund's approximate total return?",
+   "options": {
+    "a": "4.11%",
+    "b": "8.11%",
+    "c": "10.00%",
+    "d": "11.89%"
+   },
+   "correctOptionId": "b",
+   "explanation": "Total return on a collateralized commodity futures position = price return + roll return + collateral return. Price return = 84.80 / 80.00 − 1 = 6.00%. Roll return = (expiring − new) / expiring = (84.80 − 86.40) / 84.80 = −1.89%, negative because the curve is in contango. Collateral return = 4.00%. Total ≈ 6.00 − 1.89 + 4.00 = 8.11%.",
+   "distractorExplanations": {
+    "a": "Leaves out the 4.0% collateral return; a fully collateralized futures position earns interest on the cash backing it.",
+    "c": "Ignores the roll; selling the expiring contract and buying a pricier deferred contract creates a −1.89% roll return.",
+    "d": "Treats the roll as a gain; in contango the new contract costs more than the expiring one, so roll return is negative."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-alternatives-005": {
+   "prompt": "Copper inventories in exchange warehouses have fallen to multi-year lows, and fabricators are paying up for prompt metal to avoid production stoppages. The copper futures curve has moved into steep backwardation even though storage costs are unchanged. Which theory of commodity futures pricing best explains this curve shape?",
+   "options": {
+    "a": "Insurance theory: producers pay speculators a premium to take on price risk",
+    "b": "Hedging pressure theory: consumers' long hedging outweighs producers' short hedges",
+    "c": "Expectations theory: futures equal the expected spot price at each maturity",
+    "d": "Theory of storage: the convenience yield of scarce stock exceeds storage costs"
+   },
+   "correctOptionId": "d",
+   "explanation": "Under the theory of storage, futures price ≈ spot + storage costs − convenience yield. When inventories are scarce, holding physical metal has a high convenience yield (it keeps production running), which can exceed storage costs and push deferred futures below spot — backwardation. The vignette ties the curve to low inventories with storage costs flat, which is the storage-theory signal.",
+   "distractorExplanations": {
+    "a": "Insurance (normal backwardation) theory explains a persistent risk premium from producer hedging, not a shift driven by low inventories.",
+    "b": "Under hedging pressure, net long hedging by consumers bids up deferred futures and points toward contango, not backwardation.",
+    "c": "Expectations alone ignore inventories and convenience yield; the vignette links the curve to scarce physical stock, not to forecasts."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-alternatives-006": {
+   "prompt": "After a stock-for-stock offer of 0.5 Acquirer Inc shares per Target Co share, event-driven fund Bexley Capital buys Target at $37 and shorts 0.5 Acquirer shares (trading at $80) per Target share. The deal needs antitrust approval; if it fails, Target is expected to fall to about $28. Which statement best describes the position's risk-return profile?",
+   "options": {
+    "a": "Roughly symmetric: about +$3 if the deal closes and about −$3 if it fails",
+    "b": "Like a long call: a small loss if the deal fails, a large gain if it closes",
+    "c": "Its profit rises or falls with Acquirer's share price when the deal closes",
+    "d": "Like a short put: about +$3 if the deal closes, about −$9 if it fails"
+   },
+   "correctOptionId": "d",
+   "explanation": "In stock-for-stock merger arbitrage the fund buys the target and shorts the exchange ratio of acquirer shares, locking in the spread: 0.5 × $80 − $37 = $3 per Target share if the deal closes, wherever Acquirer then trades. If the deal fails, Target drops toward $28 (about −$9). A small, likely gain against a large, less likely loss is a concave payoff similar to writing a put on deal completion — the left-tail risk of event-driven strategies.",
+   "distractorExplanations": {
+    "a": "The payoff is asymmetric: the spread caps the gain at about $3, while a failed deal costs roughly $9 as Target falls to $28.",
+    "b": "Reverses the profile: the arbitrageur collects a small spread and bears deal-failure risk, which is like selling insurance, not buying an option.",
+    "c": "The short of 0.5 Acquirer shares per Target share hedges the exchange ratio, so the closing gain does not depend on Acquirer's price."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-portfolio-001": {
+   "prompt": "A strategist at Halden Asset Management expects the economy to slip into recession next year. She forecasts that the central bank will cut its policy rate by 150 bps, while long-run inflation expectations stay anchored near target and trend growth is unchanged. What change in the default-free government yield curve is most consistent with this view?",
+   "options": {
+    "a": "Long yields fall more than short yields, so the curve flattens",
+    "b": "Short and long yields rise together, so the curve shifts upward",
+    "c": "Short yields rise relative to long yields, so the curve inverts",
+    "d": "Short yields fall more than long yields, so the curve steepens"
+   },
+   "correctOptionId": "d",
+   "explanation": "Short-term default-free yields track the expected policy rate, so a 150 bp easing cycle pulls the front end down sharply. Long yields reflect expected average short rates, real growth, inflation expectations and a term premium; with inflation expectations anchored and trend growth unchanged, they fall much less. The curve therefore steepens — the typical early-recession pattern, after the flat or inverted curve seen near a cyclical peak.",
+   "distractorExplanations": {
+    "a": "A bull flattening needs long-run growth or inflation expectations to drop; the vignette holds both steady while the policy rate falls.",
+    "b": "Rising yields fit a tightening cycle or an inflation scare; cutting the policy rate by 150 bps pushes short yields down.",
+    "c": "Short yields rising above long yields describes late-expansion tightening, the opposite of a recession easing cycle."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-portfolio-002": {
+   "prompt": "Wren Capital runs a long-only US equity strategy. Its research shows an information coefficient of 0.06, it makes 400 independent active bets per year, and the long-only constraint gives a transfer coefficient of 0.60. Using the fundamental law of active management, what is the strategy's expected information ratio?",
+   "options": {
+    "a": "0.43",
+    "b": "0.72",
+    "c": "1.20",
+    "d": "14.40"
+   },
+   "correctOptionId": "b",
+   "explanation": "Fundamental law: IR ≈ TC × IC × √BR. Here IR ≈ 0.60 × 0.06 × √400 = 0.60 × 0.06 × 20 = 0.72. Without constraints (TC = 1) the IR would be 1.20; the long-only constraint keeps 60% of it. Expected active return = IR × active risk, so at 5% active risk Wren would expect about 3.6% a year.",
+   "distractorExplanations": {
+    "a": "Squares the transfer coefficient (0.36 × 0.06 × 20); TC enters the expected information ratio linearly, not squared.",
+    "c": "Ignores the transfer coefficient; this is the unconstrained IR (0.06 × 20), which the long-only constraint cuts by 40%.",
+    "d": "Multiplies by breadth itself (400) instead of its square root; IR grows with √BR because independent bets diversify."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-portfolio-003": {
+   "prompt": "An analyst uses a two-factor APT model in which the GDP growth surprise factor has a risk premium of 4.5% and the inflation surprise factor has a risk premium of 1.8%. The risk-free rate is 4.0%. Halvard Steel has a sensitivity of 1.3 to GDP surprises and −0.4 to inflation surprises. What is Halvard's expected return under the APT?",
+   "options": {
+    "a": "5.13%",
+    "b": "9.13%",
+    "c": "9.85%",
+    "d": "10.57%"
+   },
+   "correctOptionId": "b",
+   "explanation": "APT: E(R) = RF + β1λ1 + β2λ2. E(R) = 4.0% + 1.3 × 4.5% + (−0.4) × 1.8% = 4.0 + 5.85 − 0.72 = 9.13%. The negative inflation sensitivity times a positive premium lowers the required return by 0.72 points. If the analyst's own return forecast for Halvard were above 9.13%, the stock would screen as undervalued relative to its factor exposures.",
+   "distractorExplanations": {
+    "a": "Leaves out the 4.0% risk-free rate; APT expected return equals RF plus the sum of sensitivity × factor risk premium.",
+    "c": "Drops the inflation factor; with a −0.4 sensitivity and a 1.8% premium it reduces expected return by 0.72 points.",
+    "d": "Adds the inflation term with the wrong sign (+0.72); a negative sensitivity times a positive premium reduces expected return."
+   },
+   "difficulty": "easy"
+  },
+  "cfa-level-2-readiness-check-portfolio-004": {
+   "prompt": "Corvo Asset Management runs a $200 million equity portfolio with an expected annual return of 7% and an annual standard deviation of 16%. The risk team assumes normally distributed returns, 250 trading days per year, z = 1.65 at 5% and z = 2.33 at 1%. What is the portfolio's 1-day 5% parametric VaR?",
+   "options": {
+    "a": "$0.16 million",
+    "b": "$3.28 million",
+    "c": "$4.66 million",
+    "d": "$38.80 million"
+   },
+   "correctOptionId": "b",
+   "explanation": "Parametric VaR = [z × σ(daily) − E(R daily)] × portfolio value. Daily mean = 7% / 250 = 0.028%; daily σ = 16% / √250 = 1.012%. 5% VaR = (1.65 × 1.012% − 0.028%) × $200m = 1.642% × $200m ≈ $3.28 million. Under normality there is a 5% chance of losing at least this much in a day; VaR says nothing about the size of losses beyond that point, which is what CVaR measures.",
+   "distractorExplanations": {
+    "a": "Scales σ by 250 instead of √250; volatility grows with the square root of time, so daily σ = 16% / √250 ≈ 1.01%.",
+    "c": "Uses z = 2.33, which gives the 1% VaR; the question asks for the 5% threshold, where z = 1.65.",
+    "d": "Computes an annual VaR [(1.65 × 16% − 7%) × $200m]; a 1-day horizon needs the mean and σ converted to daily."
+   },
+   "difficulty": "hard"
+  },
+  "cfa-level-2-readiness-check-portfolio-005": {
+   "prompt": "A quant at Brightwater backtests a value strategy from 2006 to 2025. Each December 31 she ranks today's S&P 500 constituents on book-to-price using fiscal-year data dated December 31, although companies file those 10-Ks 60–90 days later. The backtest shows a 4% annual alpha. Which biases most likely inflate the result?",
+   "options": {
+    "a": "Survivorship bias from current constituents and look-ahead bias from unfiled data",
+    "b": "Data-snooping bias from many trials and look-ahead bias from unfiled data",
+    "c": "Survivorship bias from current constituents and data-snooping bias from many trials",
+    "d": "Look-ahead bias from current constituents and survivorship bias from unfiled data"
+   },
+   "correctOptionId": "a",
+   "explanation": "Using today's index members back to 2006 drops firms that were delisted, acquired or removed for poor performance — survivorship bias, which flatters returns. Using fiscal-year accounting values on December 31, before the 10-Ks were filed, feeds the model data investors could not have had — look-ahead bias. The fix is a point-in-time constituent list and point-in-time data lagged to the actual filing date.",
+   "distractorExplanations": {
+    "b": "Nothing in the vignette says she tried many strategy variants; the current-constituent universe points to survivorship bias instead.",
+    "c": "Misses the look-ahead problem: fiscal data dated December 31 was not public until the 10-Ks were filed 60–90 days later.",
+    "d": "Swaps the labels: current constituents create survivorship bias, and using not-yet-filed data creates look-ahead bias."
+   },
+   "difficulty": "medium"
+  },
+  "cfa-level-2-readiness-check-portfolio-006": {
+   "prompt": "The Northgate Global Infrastructure ETF closes at $50.40 while its intraday NAV is $50.10, a 0.6% premium well above the round-trip cost of trading the underlying basket. Authorized participants can create and redeem in kind in units of 50,000 shares. Which action by an authorized participant would arbitrage away the premium?",
+   "options": {
+    "a": "Buy ETF shares on the exchange and redeem them for the basket",
+    "b": "Short the underlying basket and buy ETF shares on the exchange",
+    "c": "Buy the underlying basket and hold it until the premium disappears",
+    "d": "Buy the basket, exchange it for new ETF shares, and sell them"
+   },
+   "correctOptionId": "d",
+   "explanation": "When an ETF trades at a premium to NAV, an authorized participant buys the underlying securities, delivers them to the fund for a creation unit (50,000 new shares) and sells those shares on the exchange, capturing roughly the $0.30 gap less trading costs. The added supply pushes the ETF price back toward NAV. At a discount the AP does the reverse: it buys ETF shares and redeems them for the basket.",
+   "distractorExplanations": {
+    "a": "That is the discount trade; buying ETF shares at a premium and redeeming them for the cheaper basket locks in a loss.",
+    "b": "Also a discount trade: it buys the overpriced ETF and shorts the relatively cheap basket, losing the 0.6% gap.",
+    "c": "Holding the basket unhedged is a directional bet, not an arbitrage; the gap is captured by creating and selling new ETF shares."
+   },
+   "difficulty": "easy"
+  }
+ }
+}

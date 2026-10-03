@@ -192,10 +192,15 @@ function pickCivicFromCsv(slug, folder, hint) {
 }
 
 /** Authored FINRA deck CSVs: real deck cards, "(Drill N)" padding copies excluded. */
-function pickFromAuthoredDeckCsv(slug, file) {
-  const path = join(FINANCE_CSV, file);
-  if (!existsSync(path)) return [];
-  const [header, ...rows] = parseCsv(readFileSync(path, "utf8"));
+function pickFromAuthoredDeckCsv(slug, files, maxBack = 220) {
+  const tables = [files]
+    .flat()
+    .map((file) => join(FINANCE_CSV, file))
+    .filter((path) => existsSync(path))
+    .map((path) => parseCsv(readFileSync(path, "utf8")));
+  if (!tables.length) return [];
+  const header = tables[0][0];
+  const rows = tables.flatMap((table) => table.slice(1));
   const col = (name) => header.indexOf(name);
   const [iSection, iFront, iBack, iFormula, iExample, iMistake] = [
     "Section",
@@ -210,7 +215,7 @@ function pickFromAuthoredDeckCsv(slug, file) {
     .map((cells) => {
       const q = clean(cells[iFront]);
       const a = clean(cells[iBack]);
-      if (q.length < 20 || a.length < 30 || a.length > 220) return { q, a, score: 0 };
+      if (q.length < 20 || a.length < 30 || a.length > maxBack) return { q, a, score: 0 };
       let score = 10;
       if (/^(what is|what are|what does)\b/i.test(q)) score -= 6;
       if (/\b(how|why|when|differ|breakeven|compare|versus|vs\.?)\b/i.test(q)) score += 6;
@@ -279,9 +284,10 @@ const authoredDeckCsv = [
   ["series-7-anki-deck", "series7_300_authored.csv"],
   ["series-63-anki-deck", "series63_250_authored.csv"],
   ["frm-part-1-anki-deck", "frm_part1_v2_authored.csv"],
+  ["cfa-level-2-anki-deck", ["cfa_level2_complete.csv", "cfa_level2_p1_authored.csv"], 420],
 ];
-for (const [slug, file] of authoredDeckCsv) {
-  if (wanted(slug)) keep(slug, pickFromAuthoredDeckCsv(slug, file));
+for (const [slug, files, maxBack] of authoredDeckCsv) {
+  if (wanted(slug)) keep(slug, pickFromAuthoredDeckCsv(slug, files, maxBack));
 }
 
 for (const spec of [...Object.values(wave), ...Object.values(building)]) {

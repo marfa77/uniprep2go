@@ -1,0 +1,620 @@
+{
+ "water-treatment-operator-1-readiness-check": {
+  "water-treatment-operator-1-readiness-check-treatment-005": {
+   "options": {
+    "a": "Contact time and residual concentration (CT concept)",
+    "b": "Contact time alone, since concentration matters little",
+    "c": "Chlorine feed rate in lb/day, not residual in the water",
+    "d": "Filter media depth and filter loading rate"
+   },
+   "distractorExplanations": {
+    "b": "CT is the product of residual concentration and contact time; both drive inactivation, not time alone.",
+    "c": "Feed rate ignores chlorine demand; inactivation depends on the residual that remains over the contact time.",
+    "d": "Filtration is a separate barrier; chlorine effectiveness depends on CT along with pH and temperature."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-treatment-006": {
+   "options": {
+    "a": "Free residual rising in step with every dose from the start",
+    "b": "Chlorine demand consumed until free residual appears",
+    "c": "The dose at which chloramines begin to form from ammonia",
+    "d": "The point where the total residual reaches its maximum"
+   },
+   "distractorExplanations": {
+    "a": "Before breakpoint, chlorine is consumed by demand and forms chloramines; free residual appears only after breakpoint.",
+    "c": "Chloramines form early on the curve; breakpoint is where they are destroyed and free residual starts to build.",
+    "d": "The combined-residual hump comes before breakpoint; breakpoint is the dip after chloramines are destroyed."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-treatment-008": {
+   "options": {
+    "a": "Calcium ions released from the resin",
+    "b": "Hydrogen ions from a weak-base resin",
+    "c": "Chloride ions from the brine solution",
+    "d": "Sodium (or potassium) on resin beads"
+   },
+   "distractorExplanations": {
+    "a": "Calcium is a hardness ion being removed; softening resin releases sodium or potassium in exchange.",
+    "b": "Weak-base resins are anion exchangers; softening uses a cation resin in the sodium (or potassium) form.",
+    "c": "Chloride is an anion and stays with the brine; cation exchange swaps calcium and magnesium for sodium."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-treatment-010": {
+   "options": {
+    "a": "Lowering pH so calcium and magnesium stay dissolved as bicarbonate",
+    "b": "Raising pH to form calcium carbonate and magnesium hydroxide precipitates",
+    "c": "Raising pH to form calcium hydroxide and magnesium carbonate precipitates",
+    "d": "Adding soda ash to oxidize hardness into a filterable floc"
+   },
+   "distractorExplanations": {
+    "a": "Lowering pH keeps hardness in solution; lime raises pH so hardness precipitates and can be removed.",
+    "c": "Swaps the precipitates: calcium leaves as calcium carbonate and magnesium as magnesium hydroxide.",
+    "d": "Soda ash supplies carbonate for noncarbonate hardness; softening is precipitation, not oxidation."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-treatment-012": {
+   "options": {
+    "a": "Reduce dental caries by dosing to the primary MCL level",
+    "b": "Prevent skeletal fluorosis in children who drink tap water",
+    "c": "Provide secondary disinfection in the distribution system",
+    "d": "Reduce dental caries at optimal concentration (~0.7 mg/L)"
+   },
+   "distractorExplanations": {
+    "a": "The fluoride MCL (4.0 mg/L) is a health ceiling, not a dosing target; optimal fluoridation is 0.7 mg/L.",
+    "b": "Skeletal fluorosis is a harm of excess fluoride; community fluoridation targets dental caries reduction.",
+    "c": "Fluoride has no disinfecting role; chlorine or chloramine provides the distribution system residual."
+   },
+   "explanation": "This item asks: “Fluoridation in public water supplies aims to:”. The matching rule is: Reduce dental caries at optimal concentration (~0.7 mg/L target historically adjusted). Independent UniPrep diagnostic — not a state board exam paper. The 0.7 mg/L target was set by the U.S. Public Health Service in 2015."
+  },
+  "water-treatment-operator-1-readiness-check-treatment-013": {
+   "options": {
+    "a": "Form protective scale and minimize lead/copper leaching from pipes",
+    "b": "Lower pH so chlorine residual stays more effective in the pipes",
+    "c": "Dissolve existing scale so pipes return to bare metal",
+    "d": "Raise turbidity so particles coat the pipe interior"
+   },
+   "distractorExplanations": {
+    "b": "Lowering pH increases corrosivity and lead release; corrosion control usually raises pH and alkalinity.",
+    "c": "Corrosion control aims to build and keep a protective scale, not strip pipes to bare metal.",
+    "d": "Turbidity is minimized in treatment; protective layers come from carbonate scale or orthophosphate films."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-treatment-015": {
+   "options": {
+    "a": "Filter run length and backwash timing for filters",
+    "b": "Chlorine demand and the dose needed for breakpoint",
+    "c": "Optimal coagulant dose and pH for floc formation",
+    "d": "Corrosion rate of pipe coupons in finished water"
+   },
+   "distractorExplanations": {
+    "a": "Filter performance is tracked with headloss and turbidity; jar tests simulate coagulation and flocculation.",
+    "b": "Chlorine demand is measured with a demand test; jar tests optimize coagulant dose and pH.",
+    "d": "Corrosion is studied with coupons or pipe loops; jar tests simulate coagulation and settling."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-002": {
+   "options": {
+    "a": "Potential pathway for pathogens; sanitary quality indicator",
+    "b": "The exact number of pathogenic viruses in the sample",
+    "c": "Chlorine residual adequacy at the sampling tap",
+    "d": "Presence of Giardia cysts in the finished water specifically"
+   },
+   "distractorExplanations": {
+    "b": "Coliforms are indicator organisms; their presence suggests a contamination pathway but does not count viruses.",
+    "c": "Residual is measured with DPD or amperometric methods; coliform tests indicate sanitary quality.",
+    "d": "Coliform tests do not identify protozoa; Giardia requires specific methods such as EPA Method 1623."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-004": {
+   "options": {
+    "a": "Free chlorine minus the chlorine demand of water",
+    "b": "Combined chlorine only, mainly monochloramine",
+    "c": "Free available chlorine plus combined chlorine",
+    "d": "Free chlorine plus chlorine dioxide residual"
+   },
+   "distractorExplanations": {
+    "a": "Dose minus demand equals the residual; total residual is free chlorine plus combined chlorine.",
+    "b": "Combined chlorine is only part of the total; total residual also includes free available chlorine.",
+    "d": "Chlorine dioxide is a separate disinfectant; total chlorine is free plus combined chlorine (chloramines)."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-005": {
+   "options": {
+    "a": "Grab combines samples over time; composite is a single point",
+    "b": "Grab is collected by autosampler; composite is collected by hand",
+    "c": "Grab is used for BOD; composite is used for chlorine residual",
+    "d": "Grab is single point in time; composite combines over time/flow"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the definitions: a grab is one moment in time, a composite blends portions over time or flow.",
+    "b": "Collection method does not define the type; either sample can be taken manually or automatically.",
+    "c": "Chlorine residual needs an immediate grab analysis, while BOD is often a composite sample."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-006": {
+   "options": {
+    "a": "Sample integrity and traceability from collection to lab analysis",
+    "b": "Samples are analyzed within holding time by the lab",
+    "c": "The lab result is checked against the MCL before it is formally reported",
+    "d": "Sampling sites are chosen according to the site plan"
+   },
+   "distractorExplanations": {
+    "b": "Holding time is a method requirement; chain of custody documents possession and handling of the sample.",
+    "c": "Chain of custody does not evaluate results; it documents who handled the sample and when.",
+    "d": "Site selection comes from the sampling plan; chain of custody tracks the sample after collection."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-007": {
+   "options": {
+    "a": "Neutralize base (acidity capacity)",
+    "b": "Neutralize acid (buffering capacity)",
+    "c": "Cause hardness scaling (calcium ions)",
+    "d": "Conduct current (dissolved ion total)"
+   },
+   "distractorExplanations": {
+    "a": "The capacity to neutralize base is acidity; alkalinity is the capacity to neutralize acid.",
+    "c": "Hardness is calcium and magnesium; alkalinity is bicarbonate, carbonate, and hydroxide buffering.",
+    "d": "That describes conductivity or TDS; alkalinity specifically measures acid-neutralizing capacity."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-008": {
+   "options": {
+    "a": "Total oxygen demand from chemical oxidation in two hours",
+    "b": "Dissolved oxygen present at the time of sampling",
+    "c": "Organic pollution consuming oxygen over incubation period",
+    "d": "Inorganic chemicals reacting with chlorine in the water"
+   },
+   "distractorExplanations": {
+    "a": "That describes COD (chemical oxidation); BOD is biological oxygen uptake over a five-day incubation.",
+    "b": "DO is a single reading; BOD measures the oxygen consumed during incubation.",
+    "d": "That describes chlorine demand; BOD reflects biodegradable organic matter."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-009": {
+   "options": {
+    "a": "Adding a reagent to the sample bottle and reading color after 24 hours",
+    "b": "Inoculating serial dilutions into tubes and counting positive tubes",
+    "c": "Filtering sample through membrane then reading turbidity on the filter",
+    "d": "Filtering sample through membrane then incubating on selective media"
+   },
+   "distractorExplanations": {
+    "a": "That is the enzyme-substrate (presence/absence) method such as Colilert, not membrane filtration.",
+    "b": "That is the multiple-tube fermentation (MPN) method, not the membrane filter technique.",
+    "c": "Colonies are grown on selective media and counted; turbidity is not read on the membrane."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-010": {
+   "options": {
+    "a": "Authoritative reference for approved analytical procedures",
+    "b": "EPA regulation that sets MCLs for drinking water",
+    "c": "AWWA standard for pipe, valves, and treatment chemicals in water systems",
+    "d": "OSHA guide to laboratory chemical safety practices"
+   },
+   "distractorExplanations": {
+    "b": "MCLs are set in 40 CFR Part 141; Standard Methods is an analytical reference published by APHA, AWWA, and WEF.",
+    "c": "AWWA product standards (such as the C-series) are separate; Standard Methods covers laboratory analyses.",
+    "d": "Lab safety falls under the OSHA Laboratory Standard; Standard Methods covers analytical procedures."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-011": {
+   "options": {
+    "a": "Free or total chlorine by electrode potential compared to buffers",
+    "b": "Free or total chlorine by color intensity compared to standards",
+    "c": "Combined chlorine only, by titration with sodium thiosulfate",
+    "d": "Turbidity by light scattered at 90 degrees from the sample"
+   },
+   "distractorExplanations": {
+    "a": "Electrode or amperometric methods are different techniques; DPD is colorimetric.",
+    "c": "DPD measures free (and total with iodide) chlorine by color; thiosulfate titration is an iodometric method.",
+    "d": "Light scattered at 90 degrees is nephelometric turbidity; DPD measures chlorine by color development."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-012": {
+   "options": {
+    "a": "Raising pH above 12 with sodium hydroxide before shipping",
+    "b": "Adding sodium thiosulfate to neutralize residual chlorine",
+    "c": "Acidification to pH <2 to prevent precipitation/adsorption",
+    "d": "Cooling to 4 °C without acid for up to six months"
+   },
+   "distractorExplanations": {
+    "a": "Sodium hydroxide to pH >12 is cyanide preservation; metals are acidified with nitric acid to pH <2.",
+    "b": "Thiosulfate dechlorinates bacteriological samples; metals need nitric acid to pH <2.",
+    "d": "Cooling alone does not stop metals adsorbing to bottle walls; acidification is what allows the six-month hold."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-013": {
+   "options": {
+    "a": "Rerunning samples until results match the prior month",
+    "b": "Annual instrument calibration with no daily checks",
+    "c": "Discarding outliers to keep control charts clean",
+    "d": "Blanks, duplicates, spikes, and control charts"
+   },
+   "distractorExplanations": {
+    "a": "Rerunning until results agree is data manipulation; QC relies on blanks, duplicates, and spikes.",
+    "b": "QC requires routine calibration verification, not annual calibration alone.",
+    "c": "Outliers must be investigated and documented, not discarded to make control charts look clean."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-labs-015": {
+   "options": {
+    "a": "Notification to the state only, with public notice optional",
+    "b": "Notification to state agency and public per regulations",
+    "c": "Public notice in the next annual CCR, without state contact",
+    "d": "Notification to EPA headquarters within 30 days"
+   },
+   "distractorExplanations": {
+    "a": "The Public Notification Rule requires notice to consumers as well as reporting to the state.",
+    "c": "Violations need state reporting (usually within 48 hours) and tiered public notice, not a CCR mention alone.",
+    "d": "Violations are reported to the primacy agency, usually the state, typically within 48 hours."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-001": {
+   "options": {
+    "a": "Evacuate downwind, notify emergency response, use SCBA for entry",
+    "b": "Evacuate upwind, then re-enter with an air-purifying respirator",
+    "c": "Evacuate upwind, notify emergency response, use SCBA for entry",
+    "d": "Spray water directly on the leaking chlorine cylinder to cool it"
+   },
+   "distractorExplanations": {
+    "a": "Evacuation should be upwind and uphill; chlorine gas is heavier than air and drifts downwind.",
+    "b": "High or unknown chlorine concentrations require SCBA; air-purifying cartridges are inadequate.",
+    "d": "Water on a leaking container forms corrosive acid and enlarges the leak; use water fog only on the vapor cloud."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-002": {
+   "options": {
+    "a": "Permit and ventilation, with gas testing after entry",
+    "b": "Atmospheric testing and ventilation, with entry alone",
+    "c": "Permit, testing for oxygen only, and an attendant",
+    "d": "Permit, atmospheric testing, ventilation, and attendant"
+   },
+   "distractorExplanations": {
+    "a": "The atmosphere must be tested before entry and then monitored, not first tested after entry.",
+    "b": "Permit-required entry needs an attendant stationed outside; solo entry is not allowed.",
+    "c": "Testing must cover oxygen, flammable gases, and toxic gases, in that order, not oxygen alone."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-004": {
+   "options": {
+    "a": "Flushed straight to the floor drain with water",
+    "b": "Neutralized and cleaned with appropriate PPE",
+    "c": "Neutralized with concentrated acid poured on quickly",
+    "d": "Absorbed with sawdust and left for the next shift"
+   },
+   "distractorExplanations": {
+    "a": "Caustic spills are contained and neutralized, not flushed to drains where they can harm the process or sewer.",
+    "c": "Concentrated acid reacts violently with caustic; a weak neutralizer or spill kit is used.",
+    "d": "Spills must be cleaned up promptly with compatible absorbents, not left for later."
+   },
+   "explanation": "This item asks: “Sodium hydroxide (caustic soda) spills should be”. The matching rule is: Neutralized and cleaned with appropriate PPE avoiding skin/eye contact. Independent UniPrep diagnostic — not a state board exam paper. Avoid skin and eye contact during cleanup."
+  },
+  "water-treatment-operator-1-readiness-check-safety-005": {
+   "options": {
+    "a": "Is toxic, but not flammable, and smells strongest at high levels",
+    "b": "Is lighter than air and collects near the ceiling of wet wells",
+    "c": "Is toxic, flammable, and detected by rotten egg odor at low levels",
+    "d": "Is odorless and detected only by oxygen-deficiency meters"
+   },
+   "distractorExplanations": {
+    "a": "H2S is flammable, and olfactory fatigue dulls the smell at high concentrations.",
+    "b": "H2S is heavier than air and collects in low spots such as wet well bottoms.",
+    "d": "H2S has a rotten-egg odor at low levels and needs a dedicated toxic H2S sensor."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-006": {
+   "options": {
+    "a": "Safety glasses, latex gloves, and a cotton lab coat",
+    "b": "Face shield alone, with chemical gloves and apron",
+    "c": "Chemical goggles, leather gloves, and a dust mask",
+    "d": "Face shield, chemical goggles, gloves, and apron"
+   },
+   "distractorExplanations": {
+    "a": "Safety glasses, latex, and cotton do not resist acid splash; goggles, shield, and chemical-resistant gear are needed.",
+    "b": "A face shield must be worn over chemical goggles; it is not adequate eye protection by itself.",
+    "c": "Leather is not acid resistant, and a dust mask provides no splash protection."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-007": {
+   "options": {
+    "a": "Hazards, handling, PPE, and emergency measures for chemicals",
+    "b": "Dosing rates and feed calculations for the plant's treatment chemicals",
+    "c": "Purchase prices and supplier contracts for chemicals",
+    "d": "Regulatory limits (MCLs) for chemicals in finished water"
+   },
+   "distractorExplanations": {
+    "b": "Dosing is an operations calculation; the SDS covers hazards and safe handling.",
+    "c": "Commercial terms are not SDS content; the SDS covers hazards, handling, PPE, and emergency measures.",
+    "d": "MCLs are in drinking-water regulations; the SDS covers worker hazard information."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-008": {
+   "options": {
+    "a": "Be removed for lubrication while the equipment runs",
+    "b": "Remain in place during operation to prevent entanglement",
+    "c": "Be installed after startup once vibration is checked",
+    "d": "Be optional for operators with OSHA 10 training"
+   },
+   "distractorExplanations": {
+    "a": "Guards stay on during operation; removing them requires lockout/tagout first.",
+    "c": "Guards must be in place whenever the equipment operates, including startup.",
+    "d": "Training does not replace guarding; OSHA machine-guarding rules require guards in place."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-009": {
+   "options": {
+    "a": "NEMA 1 indoor enclosures and standard breakers",
+    "b": "Open panels with extra ventilation to dry them",
+    "c": "GFCI protection and appropriate NEMA enclosures",
+    "d": "Grounding alone without GFCI or rated enclosures"
+   },
+   "distractorExplanations": {
+    "a": "NEMA 1 is for dry indoor locations; wet areas need NEMA 4/4X enclosures and GFCI protection.",
+    "b": "Open panels expose live parts to water; enclosures must stay closed and rated for wet locations.",
+    "d": "Grounding is required, but wet areas also need GFCI protection and rated enclosures."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-010": {
+   "options": {
+    "a": "Pumps from water hammer during sudden valve closure",
+    "b": "Distribution mains from external corrosion in soil",
+    "c": "Treatment chemicals from contamination by raw water",
+    "d": "Potable water from contamination via cross-connections"
+   },
+   "distractorExplanations": {
+    "a": "Water hammer is handled by surge control; backflow prevention protects potable water.",
+    "b": "External corrosion is controlled with coatings and cathodic protection, not backflow devices.",
+    "c": "Backflow prevention protects the potable supply from non-potable sources, not chemical stocks."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-011": {
+   "options": {
+    "a": "Hydration, shade/rest breaks, and acclimatization",
+    "b": "Salt tablets in place of water during long shifts",
+    "c": "Scheduling the heaviest work at midday heat peaks",
+    "d": "Full acclimatization on day one with heavy work"
+   },
+   "distractorExplanations": {
+    "b": "Salt tablets are not a substitute for water; hydration and rest breaks prevent heat illness.",
+    "c": "Heavy work should be scheduled for cooler hours, not at the midday heat peak.",
+    "d": "Acclimatization takes about 7–14 days of gradually increasing exposure, not one day."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-012": {
+   "options": {
+    "a": "Be reported only if property was damaged",
+    "b": "Be documented to prevent future incidents",
+    "c": "Be filed as an OSHA 300 recordable injury",
+    "d": "Be handled verbally to avoid paperwork"
+   },
+   "distractorExplanations": {
+    "a": "Near misses are reported even with no damage or injury; that is the point of near-miss reporting.",
+    "c": "The OSHA 300 log records injuries and illnesses; near misses are not recordables.",
+    "d": "Verbal handling loses the lesson; documentation drives corrective action."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-013": {
+   "options": {
+    "a": "Located in a break room near the chemical storage area",
+    "b": "Activated weekly by staff only when an inspection is due",
+    "c": "Accessible within 10 seconds of chemical splash areas",
+    "d": "Supplied with cold water near freezing to stop burns faster"
+   },
+   "distractorExplanations": {
+    "a": "Eyewashes must be reachable within 10 seconds of the hazard on the same level, not in a separate room.",
+    "b": "ANSI calls for weekly activation on a set schedule to flush the lines, not only before inspections.",
+    "d": "ANSI requires tepid water (about 60–100 °F); cold water discourages the full 15-minute flush."
+   },
+   "explanation": "This item asks: “Emergency eyewash stations must be”. The matching rule is: Accessible within 10 seconds of chemical splash areas (general industry guidance). Independent UniPrep diagnostic — not a state board exam paper. This follows ANSI Z358.1 general industry guidance."
+  },
+  "water-treatment-operator-1-readiness-check-safety-014": {
+   "options": {
+    "a": "Sloping, shoring, or trench box per OSHA when depth exceeds 4 feet",
+    "b": "Spoil piles placed at the trench edge to brace the walls",
+    "c": "Shoring per OSHA, with atmosphere tests skipped in deep trenches",
+    "d": "Sloping, shoring, or trench box per OSHA when depth exceeds 5 feet"
+   },
+   "distractorExplanations": {
+    "a": "4 feet triggers ladder egress and atmosphere testing; protective systems are required at 5 feet.",
+    "b": "Spoil must be kept at least 2 feet back from the edge; piles at the edge add load and cause cave-ins.",
+    "c": "Trenches over 4 feet where hazardous atmospheres may exist must be tested before entry."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-safety-015": {
+   "options": {
+    "a": "OSHA action level 85 dBA TWA with monitoring and PPE",
+    "b": "OSHA action level 90 dBA TWA with monitoring and PPE",
+    "c": "OSHA action level 100 dBA TWA with engineering controls",
+    "d": "OSHA ceiling of 115 dBA for any continuous exposure"
+   },
+   "distractorExplanations": {
+    "b": "90 dBA is the permissible exposure limit; the hearing conservation program starts at the 85 dBA action level.",
+    "c": "100 dBA is far above the trigger; the program starts at an 85 dBA 8-hour TWA.",
+    "d": "115 dBA is the maximum continuous level; the hearing conservation program starts at 85 dBA TWA."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-001": {
+   "options": {
+    "a": "FDA setting standards for all public water",
+    "b": "EPA setting standards and overseeing states",
+    "c": "Each state writing its own federal MCLs",
+    "d": "The Army Corps of Engineers via water permits"
+   },
+   "distractorExplanations": {
+    "a": "FDA regulates bottled water; EPA administers the SDWA for public water systems.",
+    "c": "EPA sets national MCLs; primacy states enforce rules at least as stringent as the federal ones.",
+    "d": "The Corps handles Clean Water Act Section 404 dredge-and-fill permits, not the SDWA."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-002": {
+   "options": {
+    "a": "Non-enforceable health goal set at a level of no known risk",
+    "b": "Non-enforceable guideline for taste, odor, and color in public water systems",
+    "c": "Legally enforceable limit on contaminant concentration in public water",
+    "d": "Required treatment method used when a limit cannot be measured"
+   },
+   "distractorExplanations": {
+    "a": "That is the MCLG (goal); the MCL is the enforceable limit set as close to the goal as feasible.",
+    "b": "Those are secondary MCLs (SMCLs), which are not federally enforceable.",
+    "d": "That is a treatment technique (TT), used in place of an MCL when a level is not practical to measure."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-003": {
+   "options": {
+    "a": "Reports monthly sample results to the state primacy agency",
+    "b": "Gives 24-hour notice of acute violations to the public",
+    "c": "Lists the utility's budget and planned rate increases",
+    "d": "Informs customers of water sources and detected contaminants"
+   },
+   "distractorExplanations": {
+    "a": "Monthly results go to the state in compliance reports; the CCR goes to customers once a year.",
+    "b": "That is Tier 1 public notice; the CCR is an annual water quality report.",
+    "c": "CCR content is set by 40 CFR 141 Subpart O (sources, detections, violations), not utility finances."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-005": {
+   "options": {
+    "a": "No more than 1% of monthly samples positive",
+    "b": "No more than 5% monthly samples positive",
+    "c": "No more than 10% of monthly samples positive",
+    "d": "No more than 25% of quarterly samples positive"
+   },
+   "distractorExplanations": {
+    "a": "The original TCR allowed up to 5% positives (or one for small systems), not 1%.",
+    "c": "10% is double the TCR threshold of 5% total coliform positives in a month.",
+    "d": "TCR compliance was evaluated monthly at 5% positives, not 25% over a quarter."
+   },
+   "explanation": "This item asks: “Coliform MCL under Total Coliform Rule reflects”. The matching rule is: No more than 5% monthly samples positive (with conditions). Independent UniPrep diagnostic — not a state board exam paper. Conditions applied, such as one positive allowed for systems taking fewer than 40 samples a month."
+  },
+  "water-treatment-operator-1-readiness-check-regs-006": {
+   "options": {
+    "a": "Corrosion control treatment and sampling at the plant entry point",
+    "b": "Tap sampling at customer sites, with action at the 50 ppb lead level",
+    "c": "Corrosion control treatment and tap sampling at customer sites",
+    "d": "Source water sampling only, with treatment set by the MCL"
+   },
+   "distractorExplanations": {
+    "a": "LCR compliance rests on first-draw tap samples at high-risk homes, not entry-point samples.",
+    "b": "The lead action level is 15 ppb (lowering to 10 ppb under the LCR Improvements), not 50 ppb.",
+    "d": "Lead has a treatment technique with an action level, not an MCL, and tap sampling drives compliance."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-007": {
+   "options": {
+    "a": "TTHM and HAA5 based on a system-wide running annual average",
+    "b": "Bromate and chlorite based on single monthly samples",
+    "c": "TTHM and HAA5 based on the highest single sample result",
+    "d": "TTHM and HAA5 based on locational running annual averages"
+   },
+   "distractorExplanations": {
+    "a": "A system-wide running annual average was the Stage 1 basis; Stage 2 uses locational running annual averages.",
+    "b": "Bromate and chlorite limits come from Stage 1 for ozone and chlorine dioxide systems; Stage 2 targets TTHM/HAA5.",
+    "c": "Compliance is by the locational running annual average at each site, not a single maximum sample."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-008": {
+   "options": {
+    "a": "At least 25 year-round residents or 15 service connections",
+    "b": "At least 25 of the same people for more than six months a year",
+    "c": "At least 100 year-round residents or 25 connections",
+    "d": "At least 500 residents and 100 service connections"
+   },
+   "distractorExplanations": {
+    "b": "That is the non-transient non-community definition (schools, factories), not a community system.",
+    "c": "Confuses the thresholds; community systems start at 25 year-round residents or 15 connections.",
+    "d": "500 is a size-category boundary, not the definition; 15 connections or 25 residents qualifies."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-009": {
+   "options": {
+    "a": "Customer billing accuracy and meter reading routes",
+    "b": "Source, treatment, distribution, and compliance of PWS",
+    "c": "Only the source water intake and watershed hazards",
+    "d": "Lab accuracy through blind proficiency test samples"
+   },
+   "distractorExplanations": {
+    "a": "Billing is a utility business matter; sanitary surveys review the technical elements of the system.",
+    "c": "Surveys cover the source plus treatment, distribution, storage, pumps, monitoring, management, and operators.",
+    "d": "Blind proficiency samples are part of lab certification; sanitary surveys inspect the whole water system."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-010": {
+   "options": {
+    "a": "Granted on request whenever compliance costs exceed the utility budget",
+    "b": "Available for microbial MCLs such as E. coli as well",
+    "c": "May be granted under strict SDWA conditions with public notice",
+    "d": "Granted permanently with no compliance schedule"
+   },
+   "distractorExplanations": {
+    "a": "Variances require best available technology and no unreasonable health risk; cost alone is not enough.",
+    "b": "The SDWA does not allow variances for microbial contaminants such as E. coli.",
+    "d": "Exemptions are time-limited and require a compliance schedule; they are not permanent."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-011": {
+   "options": {
+    "a": "Prevent water hammer surges in distribution mains",
+    "b": "Limit customer water use during drought restrictions",
+    "c": "Locate and repair leaks in service connections",
+    "d": "Prevent backflow contamination in distribution system"
+   },
+   "distractorExplanations": {
+    "a": "Surge control is a hydraulic design issue; cross-connection programs prevent backflow.",
+    "b": "That is a conservation program; cross-connection control prevents contamination by backflow.",
+    "c": "Leak detection is water-loss control, not backflow prevention at cross-connections."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-012": {
+   "options": {
+    "a": "Water industry materials, design, and practice",
+    "b": "Federal drinking-water MCLs and monitoring rules",
+    "c": "Wastewater discharge permits under the Clean Water Act",
+    "d": "Certification requirements for drinking-water operators"
+   },
+   "distractorExplanations": {
+    "b": "MCLs are EPA regulations; AWWA standards are voluntary consensus standards for products and practice.",
+    "c": "Discharge permits are NPDES under EPA and the states; AWWA standards cover water-industry products and practice.",
+    "d": "Operator certification is set by states under EPA guidelines, not by AWWA standards."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-013": {
+   "options": {
+    "a": "Monitoring and reporting violations",
+    "b": "Immediate acute health risk violations",
+    "c": "Long-term MCL violations without acute risk",
+    "d": "Failure to deliver the annual CCR on time"
+   },
+   "distractorExplanations": {
+    "a": "Monitoring and reporting violations are typically Tier 3 (annual) notices, not Tier 1.",
+    "c": "Non-acute MCL violations are Tier 2, with notice within 30 days rather than 24 hours.",
+    "d": "CCR delivery failures are Tier 3 notices, not Tier 1 (24-hour) notices."
+   },
+   "explanation": "This item asks: “Tier 1 public notice is required for:”. The matching rule is: Immediate acute health risk violations (e.g., certain microbial). Independent UniPrep diagnostic — not a state board exam paper. Examples include certain microbial violations."
+  },
+  "water-treatment-operator-1-readiness-check-regs-014": {
+   "options": {
+    "a": "Log₁₀ reduction of pathogens (1 log = 10% reduction)",
+    "b": "Natural log reduction of pathogens (1 log = 63% reduction)",
+    "c": "Log₁₀ reduction of pathogens (1 log = 90% reduction)",
+    "d": "Log₁₀ reduction of pathogens (1 log = 99% reduction)"
+   },
+   "distractorExplanations": {
+    "a": "1 log is a tenfold reduction: 90% removed and 10% remaining, not a 10% reduction.",
+    "b": "Disinfection credits use base-10 logs; 1 log10 equals 90% reduction, not a natural-log value.",
+    "d": "99% reduction is 2-log inactivation; 1 log equals 90%."
+   }
+  },
+  "water-treatment-operator-1-readiness-check-regs-015": {
+   "options": {
+    "a": "EPA headquarters acting as the sole enforcer in every state",
+    "b": "The local health department for each water system",
+    "c": "State environmental agency that issues Clean Water Act discharge permits",
+    "d": "State (or EPA region) authorized to enforce drinking water rules"
+   },
+   "distractorExplanations": {
+    "a": "Most states hold primacy; EPA regions enforce directly only where a state does not.",
+    "b": "Local agencies may assist, but primacy is granted to states (or tribes) by EPA.",
+    "c": "That is NPDES authorization under the Clean Water Act, not SDWA primacy."
+   }
+  }
+ }
+}

@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Always the brand name like Advil"
+        "text": "The trademarked name chosen by the manufacturer (e.g., Advil)"
       },
       {
         "id": "c",
-        "text": "The NDC package code"
+        "text": "The chemical name describing the molecular structure"
       },
       {
         "id": "d",
-        "text": "The DEA schedule number"
+        "text": "The 10-digit NDC labeler and product identifier"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Generic names identify the active ingredient; brands are proprietary.",
     "distractorExplanations": {
-      "b": "Brand ≠ generic.",
-      "c": "NDC identifies package/labeler/product.",
-      "d": "Schedules are controlled substance classes."
+      "b": "Describes the brand (proprietary) name, not the generic name; Advil is a trade name for ibuprofen.",
+      "c": "Confuses the generic name with the chemical name, which spells out the molecule's structure rather than the official nonproprietary name.",
+      "d": "The NDC identifies labeler, product and package; it is a numeric code, not the drug's nonproprietary name."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only drug pricing"
+        "text": "Drug–receptor binding and the resulting dose–response effect"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Only tablet colors"
+        "text": "Drug formulation: tablet coating, dissolution, and release design"
       },
       {
         "id": "d",
-        "text": "Only pharmacy floor plans"
+        "text": "Adverse drug reaction reporting to FDA through MedWatch"
       }
     ],
     "correctOptionId": "b",
     "explanation": "PK describes what the body does to the drug; PD is what the drug does to the body.",
     "distractorExplanations": {
-      "a": "Pricing is business.",
-      "c": "Color is imprint ID aid.",
-      "d": "Layout is operations."
+      "a": "That describes pharmacodynamics (what the drug does to the body), not pharmacokinetics (what the body does to the drug).",
+      "c": "That is pharmaceutics (dosage-form design), a separate field from the ADME processes of pharmacokinetics.",
+      "d": "MedWatch reporting is pharmacovigilance (drug safety surveillance), not the study of drug movement through the body."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always increases receptor activation maximally"
+        "text": "Binds a receptor and fully activates it, mimicking the natural ligand"
       },
       {
         "id": "b",
-        "text": "Is only a vitamin"
+        "text": "Speeds hepatic metabolism of other drugs, lowering their levels"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "Cannot bind any receptor"
+        "text": "Enhances the effect of another drug given at the same time"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Antagonists occupy receptors without activating them (or block activation pathways)",
     "distractorExplanations": {
-      "a": "That describes agonists.",
-      "b": "Vitamins vary.",
-      "d": "Antagonists do bind/block."
+      "a": "Describes a full agonist; an antagonist binds the receptor without activating it and blocks the agonist.",
+      "b": "That describes an enzyme inducer such as rifampin, a pharmacokinetic interaction rather than receptor antagonism.",
+      "d": "Describes synergism/potentiation, the opposite of an antagonist's blocking action at the receptor."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Orange urine only as the hallmark"
+        "text": "Reflex tachycardia and ankle edema from vasodilation"
       },
       {
         "id": "c",
-        "text": "Tendon rupture as the primary class effect like fluoroquinolones"
+        "text": "Hypokalemia from increased urinary potassium loss"
       },
       {
         "id": "d",
-        "text": "Serotonin syndrome"
+        "text": "Bradycardia and masking of hypoglycemia symptoms"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ACEI cough from bradykinin; monitor K+ and angioedema warning.",
     "distractorExplanations": {
-      "b": "Orange urine more rifampin-type teaching.",
-      "c": "Tendon risk: FQs.",
-      "d": "Serotonin syndrome: MAOI/SSRI combos."
+      "b": "Ankle edema and reflex tachycardia are classic dihydropyridine calcium channel blocker (amlodipine) effects, not ACE inhibitor effects.",
+      "c": "Hypokalemia is a thiazide/loop diuretic effect; ACE inhibitors tend to raise potassium (hyperkalemia).",
+      "d": "Bradycardia and masked hypoglycemia are beta-blocker effects (e.g., metoprolol), a different antihypertensive class."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only aPTT always as the sole warfarin test"
+        "text": "aPTT, as used for heparin"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "HbA1c"
+        "text": "Anti-Xa activity level"
       },
       {
         "id": "d",
-        "text": "TSH"
+        "text": "Platelet count (CBC)"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Warfarin affects vitamin K–dependent factors monitored by PT/INR; heparin often aPTT/anti-Xa.",
     "distractorExplanations": {
-      "a": "APTT more heparin pathway classic.",
-      "c": "A1c is diabetes.",
-      "d": "TSH is thyroid."
+      "a": "aPTT monitors unfractionated heparin; warfarin is monitored by the PT expressed as the INR.",
+      "c": "Anti-factor Xa levels are used for low-molecular-weight heparin such as enoxaparin, not for warfarin.",
+      "d": "Platelet counts are watched for heparin-induced thrombocytopenia; they do not measure warfarin's anticoagulant effect."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always sterilizes blood instantly"
+        "text": "Kills bacteria directly by rupturing the cell wall, like penicillins do"
       },
       {
         "id": "b",
-        "text": "Is an antiviral"
+        "text": "Inhibits viral replication by blocking neuraminidase or polymerase enzymes"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Raises blood glucose as its antimicrobial mechanism"
+        "text": "Prevents infection when applied to skin before procedures as an antiseptic"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Bactericidal kills; bacteriostatic inhibits—host immunity helps clear infection.",
     "distractorExplanations": {
-      "a": "Not instant sterilization definition.",
-      "b": "Antibiotics target bacteria.",
-      "d": "Glucose unrelated to mechanism."
+      "a": "Describes bactericidal action (beta-lactams lysing the cell wall), the opposite of a bacteriostatic effect.",
+      "b": "Describes antiviral agents such as oseltamivir or acyclovir; bacteriostatic refers to inhibiting bacterial growth.",
+      "d": "Antiseptics are topical skin agents; bacteriostatic describes how a systemic antibiotic affects bacterial growth."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved platelet function"
+        "text": "Hyperglycemia and weight gain"
       },
       {
         "id": "b",
-        "text": "Cure of all infections"
+        "text": "Hearing loss and vestibular toxicity"
       },
       {
         "id": "c",
-        "text": "Lowering INR when combined with warfarin always safely"
+        "text": "Hypokalemia and dehydration"
       },
       {
         "id": "d",
-        "text": "GI bleeding and kidney injury, especially in high-risk patients"
+        "text": "GI bleeding and kidney injury"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "NSAIDs inhibit COX; caution with ulcers, CKD, and anticoagulants.",
+    "explanation": "NSAIDs inhibit COX; caution with ulcers, CKD, and anticoagulants. The risk is greatest in high-risk patients (older adults, anticoagulated, or with renal impairment).",
     "distractorExplanations": {
-      "a": "They impair platelets ( esp. aspirin irreversible).",
-      "b": "Not antibiotics.",
-      "c": "Often increase bleeding risk with warfarin."
+      "a": "Hyperglycemia and weight gain are typical corticosteroid effects, not the key NSAID risks of GI bleeding and kidney injury.",
+      "b": "Ototoxicity is a hallmark of aminoglycosides such as gentamicin, not of NSAIDs.",
+      "c": "Hypokalemia and dehydration are loop/thiazide diuretic risks; NSAIDs are more likely to raise potassium."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Hypothyroidism as first-line"
+        "text": "Diabetes insipidus by reducing excess urine output"
       },
       {
         "id": "c",
-        "text": "Bacterial pneumonia as monotherapy"
+        "text": "Hypoglycemia by raising blood glucose levels quickly"
       },
       {
         "id": "d",
-        "text": "Vitamin B12 deficiency primarily"
+        "text": "Hypothyroidism by replacing deficient thyroid hormone levels"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Insulin lowers blood glucose; different types have different onsets/peaks.",
     "distractorExplanations": {
-      "b": "Hypothyroid: levothyroxine.",
-      "c": "Pneumonia: antibiotics.",
-      "d": "B12: replacement."
+      "b": "Diabetes insipidus is an ADH (vasopressin) disorder treated with desmopressin, not insulin.",
+      "c": "Insulin lowers glucose; hypoglycemia is treated with glucose or glucagon, never with insulin.",
+      "d": "Thyroid hormone replacement is levothyroxine; insulin is a pancreatic hormone used for diabetes mellitus."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No monitoring ever"
+        "text": "Routine generic substitution with no added verification"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "OTC self-titration freely for all ages"
+        "text": "Double doses after any missed dose to keep levels steady"
       },
       {
         "id": "d",
-        "text": "Mixing all doses into one weekly megadose"
+        "text": "Monitoring only during the first week of therapy"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Examples often include warfarin, digoxin, lithium, phenytoin—small level changes matter.",
     "distractorExplanations": {
-      "a": "Monitoring common.",
-      "c": "Not casual OTC titration.",
-      "d": "Megadoses dangerous."
+      "a": "NTI drugs (warfarin, levothyroxine, digoxin) need extra review when products are switched; unverified substitution is the hazard.",
+      "c": "Doubling doses risks toxicity, which is exactly the danger with a narrow therapeutic index drug.",
+      "d": "NTI drugs need ongoing monitoring whenever doses, interacting drugs, or products change, not just at therapy start."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bright orange urine as the therapeutic goal"
+        "text": "Dry cough and risk of angioedema with each dose"
       },
       {
         "id": "b",
-        "text": "Complete absence of any interaction potential"
+        "text": "Hypoglycemia and need for frequent fingerstick glucose checks"
       },
       {
         "id": "c",
-        "text": "Immediate cure of infections"
+        "text": "Tendon rupture risk and need to avoid exercise"
       },
       {
         "id": "d",
-        "text": "Bleeding/bruising risk and need for INR monitoring/drug-diet interactions"
+        "text": "Bleeding/bruising risk and need for INR monitoring"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Warfarin anticoagulation requires bleeding vigilance and interaction awareness.",
+    "explanation": "Warfarin anticoagulation requires bleeding vigilance and interaction awareness. Also counsel on drug–diet interactions (vitamin K foods, NSAIDs, antibiotics).",
     "distractorExplanations": {
-      "a": "Orange urine is not the goal (phenazopyridine colors urine).",
-      "b": "Many interactions exist.",
-      "c": "Warfarin is not an antibiotic."
+      "a": "Dry cough and angioedema are ACE inhibitor (lisinopril) effects, not the main warfarin counseling point.",
+      "b": "Hypoglycemia and glucose checks apply to insulin and sulfonylureas, not to warfarin anticoagulation.",
+      "c": "Tendon rupture is a fluoroquinolone boxed warning; warfarin's key serious adverse effect is bleeding."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Orange skin discoloration as intended therapy"
+        "text": "Orange-red discoloration of urine, sweat, and tears"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Opioid withdrawal syndrome"
+        "text": "Gingival hyperplasia with long-term use"
       },
       {
         "id": "d",
-        "text": "Immediate hypoglycemia in all non-diabetics"
+        "text": "Persistent constipation and ankle edema"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ACEI cough and angioedema/hyperkalemia are key counseling/monitoring points.",
     "distractorExplanations": {
-      "a": "Not an intended pigment effect.",
-      "c": "Not opioid-related.",
-      "d": "Hypoglycemia is not the classic ACEI effect."
+      "a": "Orange body fluids are a rifampin (or phenazopyridine) effect, not an ACE inhibitor effect.",
+      "c": "Gingival hyperplasia is classically linked to phenytoin, not to lisinopril or other ACE inhibitors.",
+      "d": "Constipation and ankle edema point to calcium channel blockers such as verapamil or amlodipine."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "They never require refills counseling"
+        "text": "They have a wide margin between effective and toxic doses"
       },
       {
         "id": "b",
-        "text": "They are always OTC"
+        "text": "Their blood levels need checking once, at therapy start"
       },
       {
         "id": "c",
-        "text": "Small dose/level changes can cause toxicity or loss of efficacy—extra verification is critical"
+        "text": "Small dose/level changes can cause toxicity or loss of efficacy"
       },
       {
         "id": "d",
-        "text": "Counting is unnecessary because errors cannot harm"
+        "text": "Brand and generic versions can be swapped freely at each fill"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "NTI drugs (e.g., digoxin, warfarin, levothyroxine nuances) need careful dosing accuracy.",
+    "explanation": "NTI drugs (e.g., digoxin, warfarin, levothyroxine nuances) need careful dosing accuracy. Extra verification is critical for these drugs.",
     "distractorExplanations": {
-      "a": "Counseling still matters.",
-      "b": "Many NTI drugs are Rx-only.",
-      "d": "Errors can be severe."
+      "a": "That describes a wide therapeutic index; NTI drugs have a small gap between effective and toxic levels.",
+      "b": "NTI drug levels are rechecked after dose, product, or interacting-drug changes, not checked a single time.",
+      "d": "Switching manufacturers of NTI drugs (e.g., levothyroxine) can alter levels, so product swaps need extra review."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "FDA food menu labeling"
+        "text": "Food, Drug, and Cosmetic Act enforced by the FDA"
       },
       {
         "id": "c",
-        "text": "USP compounding chapters"
+        "text": "Durham-Humphrey Amendment enforced by the FDA"
       },
       {
         "id": "d",
-        "text": "OSHA bloodborne pathogen standard"
+        "text": "Harrison Narcotic Act enforced by the Treasury"
       }
     ],
     "correctOptionId": "a",
     "explanation": "DEA schedules reflect abuse potential/accepted medical use; C-I has no accepted medical use in US.",
     "distractorExplanations": {
-      "b": "FDA regulates drugs/devices/food differently.",
-      "c": "USP standards for quality/compounding.",
-      "d": "OSHA is workplace safety."
+      "b": "The FD&C Act governs drug safety, labeling and approval; the I–V schedules come from the Controlled Substances Act.",
+      "c": "Durham-Humphrey (1951) created the prescription vs OTC distinction, not controlled substance schedules.",
+      "d": "The 1914 Harrison Narcotic Act was an earlier narcotics tax law, replaced by the 1970 Controlled Substances Act."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited refills for 3 years"
+        "text": "Up to five refills within six months of the date written"
       },
       {
         "id": "b",
-        "text": "No refills; a new prescription is required for each fill (with limited emergency exceptions)"
+        "text": "No refills; a new prescription is required for each fill"
       },
       {
         "id": "c",
-        "text": "Five refills in 6 months like some C-III/IV rules"
+        "text": "Refills allowed for one year, as for non-controlled drugs"
       },
       {
         "id": "d",
-        "text": "Refills without any prescription"
+        "text": "Refills allowed if the prescriber marks them on the form"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "C-II cannot be refilled; C-III/IV often up to 5 refills in 6 months.",
+    "explanation": "C-II cannot be refilled; C-III/IV often up to 5 refills in 6 months. Limited emergency oral-order exceptions exist.",
     "distractorExplanations": {
-      "a": "No multi-year unlimited.",
-      "c": "That's III/IV pattern.",
-      "d": "Rx required."
+      "a": "Five refills within six months is the Schedule III–IV rule, not the Schedule II rule.",
+      "c": "One-year refill windows apply to non-controlled prescriptions (state-dependent); C-II prescriptions cannot be refilled.",
+      "d": "Prescriber-authorized refills are void for C-II; multiple dated prescriptions (up to a 90-day supply) are the legal alternative."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -568,11 +568,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only child-resistant caps on all OTC vitamins forever as the sole rule"
+        "text": "Poison Prevention Packaging Act rules requiring child-resistant caps on all OTC decongestants"
       },
       {
         "id": "b",
-        "text": "DEA Schedule I listing of pseudoephedrine"
+        "text": "DEA Schedule II listing, so pseudoephedrine needs a written prescription in every state"
       },
       {
         "id": "c",
@@ -580,15 +580,15 @@
       },
       {
         "id": "d",
-        "text": "Ban on all cold medicines nationwide"
+        "text": "Durham-Humphrey Amendment rules moving pseudoephedrine to legend (prescription) status"
       }
     ],
     "correctOptionId": "c",
     "explanation": "CMEA regulates ephedrine/pseudoephedrine/PPA sales behind counter with limits.",
     "distractorExplanations": {
-      "a": "CRC is PPPA separate topic.",
-      "b": "PSE is not CI.",
-      "d": "Cold meds still sold with limits."
+      "a": "The PPPA concerns child-resistant packaging, not the purchase limits and logbook rules for pseudoephedrine.",
+      "b": "Pseudoephedrine is a List I chemical, not Schedule II; federally it is sold behind the counter without a prescription.",
+      "d": "Durham-Humphrey defines legend vs OTC drugs; pseudoephedrine sales limits come from the 2005 CMEA."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only DEA form 222 for all OTCs"
+        "text": "Child-resistant packaging on most oral prescription drugs for Medicaid patients"
       },
       {
         "id": "b",
-        "text": "Elimination of patient profiles"
+        "text": "Electronic prescribing of all controlled substances through certified systems"
       },
       {
         "id": "c",
-        "text": "Mandatory mail-order"
+        "text": "Patient package inserts with every dispensed prescription for Medicare patients"
       },
       {
         "id": "d",
-        "text": "Prospective drug utilization review and offer to counsel Medicaid patients (and influenced counseling standards)"
+        "text": "Prospective drug utilization review and offer to counsel Medicaid patients"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "OBRA '90 drove DUR and counseling offer requirements especially for Medicaid.",
+    "explanation": "OBRA '90 drove DUR and counseling offer requirements especially for Medicaid. It also influenced state counseling standards beyond Medicaid.",
     "distractorExplanations": {
-      "a": "222 is C-II ordering.",
-      "b": "Profiles are kept.",
-      "c": "Mail-order not mandated by OBRA alone."
+      "a": "Child-resistant packaging comes from the 1970 Poison Prevention Packaging Act, not OBRA '90.",
+      "b": "EPCS requirements come from DEA rules (2010) and the later SUPPORT Act, not from OBRA '90.",
+      "c": "Patient package inserts and Medication Guides are FDA labeling rules; OBRA '90 required DUR and counseling offers for Medicaid."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "Report all HIPAA breaches"
+        "text": "Report theft or significant loss of controlled drugs"
       },
       {
         "id": "c",
-        "text": "File state board renewals"
+        "text": "Document destruction of expired controlled drugs"
       },
       {
         "id": "d",
-        "text": "Document immunization administration"
+        "text": "Register a pharmacy to dispense controlled drugs"
       }
     ],
     "correctOptionId": "a",
     "explanation": "222 (or CSOS electronic) orders C-I/II; Form 106 reports theft/loss; 41 for destruction.",
     "distractorExplanations": {
-      "b": "HIPAA is HHS/OCR.",
-      "c": "Board renewals differ.",
-      "d": "Immunizations documented elsewhere."
+      "b": "Theft or significant loss of controlled substances is reported on DEA Form 106, not Form 222.",
+      "c": "Surrender or destruction of controlled substances is documented on DEA Form 41, not Form 222.",
+      "d": "A new pharmacy registers with DEA Form 224; Form 222 is the Schedule I/II order form."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -667,27 +667,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Sherman Antitrust Act"
+        "text": "Food, Drug, and Cosmetic Act (FDCA)"
       },
       {
         "id": "b",
-        "text": "Poison Prevention Packaging Act (PPPA) for many oral Rx/OTC products with exceptions"
+        "text": "Poison Prevention Packaging Act (PPPA)"
       },
       {
         "id": "c",
-        "text": "Fair Labor Standards Act"
+        "text": "Controlled Substances Act (CSA)"
       },
       {
         "id": "d",
-        "text": "Americans with Disabilities Act only as packaging law"
+        "text": "Omnibus Budget Reconciliation Act (OBRA '90)"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "PPPA aims to reduce pediatric poisonings; easy-open may be requested with documentation.",
+    "explanation": "PPPA aims to reduce pediatric poisonings; easy-open may be requested with documentation. It covers many oral Rx/OTC products, with exceptions such as patient request or sublingual nitroglycerin.",
     "distractorExplanations": {
-      "a": "Antitrust is competition.",
-      "c": "FLSA is wages/hours.",
-      "d": "ADA is disability rights."
+      "a": "The FD&C Act covers drug safety, adulteration and misbranding; child-resistant closures come from the PPPA.",
+      "c": "The CSA sets drug schedules and DEA registration rules but does not mandate child-resistant packaging.",
+      "d": "OBRA '90 mandated prospective DUR and counseling offers for Medicaid patients, not packaging standards."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Drug acquisition costs"
+        "text": "Pharmacy drug pricing from competitors"
       },
       {
         "id": "b",
-        "text": "Technician lunch breaks"
+        "text": "Employee records from release to outside parties"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "DEA schedule decisions"
+        "text": "Controlled-drug inventory records from DEA review"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Minimum necessary and secure handling of prescriptions/profiles apply.",
     "distractorExplanations": {
-      "a": "Costs are business.",
-      "b": "Breaks are labor.",
-      "d": "DEA schedules controlled substances."
+      "a": "Drug pricing is proprietary business information; HIPAA protects individually identifiable patient health information.",
+      "b": "Employment records held by an employer are excluded from HIPAA's definition of protected health information.",
+      "d": "HIPAA does not shield controlled-substance records from DEA inspection; those records must be available to the DEA."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -733,15 +733,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlikely to cause adverse health consequences (Class III concept)"
+        "text": "Unlikely to cause any adverse health consequences, such as a label typo"
       },
       {
         "id": "b",
-        "text": "Only labeling misspelling with no risk ever"
+        "text": "May cause temporary or medically reversible adverse health consequences"
       },
       {
         "id": "c",
-        "text": "A DEA diversion audit"
+        "text": "A market withdrawal for a minor issue not subject to FDA legal action"
       },
       {
         "id": "d",
@@ -751,9 +751,9 @@
     "correctOptionId": "d",
     "explanation": "Class I most serious; Class II temporary/reversible remote probability; Class III unlikely.",
     "distractorExplanations": {
-      "a": "That is Class III.",
-      "b": "Minor labeling may be III.",
-      "c": "Recall ≠ DEA audit."
+      "a": "That defines a Class III recall, the lowest-risk category, not a Class I recall.",
+      "b": "That defines a Class II recall; Class I involves a reasonable probability of serious harm or death.",
+      "c": "A market withdrawal is a removal for a minor violation, not a recall class; Class I is the most serious recall."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "Any pharmacy cashier"
+        "text": "Any licensed pharmacist who has a valid DEA pharmacy registration"
       },
       {
         "id": "c",
-        "text": "Unlicensed friends with pads"
+        "text": "Any state-licensed physician, even without a DEA registration"
       },
       {
         "id": "d",
-        "text": "Manufacturers' sales reps for patients directly"
+        "text": "Certified pharmacy technicians under a pharmacist's supervision"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Prescribers need authority and DEA registration for controlled Rx.",
     "distractorExplanations": {
-      "b": "Cashiers don't prescribe.",
-      "c": "Unlicensed prescribing illegal.",
-      "d": "Reps don't prescribe for patients."
+      "b": "A pharmacy DEA registration permits dispensing, not prescribing; it does not give the pharmacist prescriptive authority.",
+      "c": "A state license alone is not enough; the prescriber also needs an active DEA registration to prescribe controlled drugs.",
+      "d": "Technicians may take refill requests or process orders but have no legal prescribing authority."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -832,27 +832,27 @@
     "options": [
       {
         "id": "a",
-        "text": "May be sold OTC without limits"
+        "text": "Have no currently accepted medical use in the United States"
       },
       {
         "id": "b",
-        "text": "Have no medical use in the U.S. (like Schedule I)"
+        "text": "Have low abuse potential and may be sold OTC with a logbook"
       },
       {
         "id": "c",
-        "text": "Have high abuse potential and generally cannot be refilled; require compliant prescriptions"
+        "text": "Have high abuse potential and generally cannot be refilled"
       },
       {
         "id": "d",
-        "text": "Can be refilled five times in six months like many Schedule IV examples without restriction differences"
+        "text": "Have moderate abuse potential and allow five refills in six months"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "C-II drugs have strict ordering/refill rules distinct from III–V; Schedule I has no accepted medical use federally.",
+    "explanation": "C-II drugs have strict ordering/refill rules distinct from III–V; Schedule I has no accepted medical use federally. They also require compliant prescriptions (written or EPCS).",
     "distractorExplanations": {
-      "a": "C-II are not OTC.",
-      "b": "C-II have accepted use under strict control.",
-      "d": "Refill rules differ from III–V."
+      "a": "No accepted medical use describes Schedule I drugs (e.g., heroin), not Schedule II.",
+      "b": "Logbook OTC sales describe certain Schedule V products in some states, not high-abuse Schedule II drugs.",
+      "d": "That describes Schedule III–IV drugs; Schedule II prescriptions cannot be refilled."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All topical hydrocortisone 0.5%"
+        "text": "Dextromethorphan cough syrups sold to minors"
       },
       {
         "id": "b",
-        "text": "Insulin vials"
+        "text": "Codeine-containing Schedule V cough preparations"
       },
       {
         "id": "c",
-        "text": "Normal saline flushes"
+        "text": "Loperamide antidiarrheal tablets in large packages"
       },
       {
         "id": "d",
-        "text": "Pseudoephedrine/ephedrine/phenylpropanolamine products with ID/log and quantity limits"
+        "text": "Pseudoephedrine/ephedrine/phenylpropanolamine products"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "CMEA targets precursor chemicals used to make methamphetamine.",
+    "explanation": "CMEA targets precursor chemicals used to make methamphetamine. Sales require ID, a logbook, and daily/monthly quantity limits.",
     "distractorExplanations": {
-      "a": "Hydrocortisone is not the CMEA focus.",
-      "b": "Insulin has other rules.",
-      "c": "Saline is not a CMEA precursor control."
+      "a": "Dextromethorphan age limits come from state laws, not from the federal Combat Methamphetamine Epidemic Act.",
+      "b": "OTC sales of C-V codeine cough syrup are governed by DEA/state Schedule V rules, not by the CMEA.",
+      "c": "Loperamide misuse led to FDA packaging changes, but loperamide is not a product restricted under the CMEA."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Discuss therapies loudly using full names in the waiting area for convenience"
+        "text": "Get written patient authorization before sharing PHI with another treating provider"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Sell patient medication lists to marketers freely"
+        "text": "Release a patient's records to any family member who asks at the counter"
       },
       {
         "id": "d",
-        "text": "Post prescription details on personal social media for education"
+        "text": "Destroy all prescription records after one year to limit privacy exposure"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Minimum necessary and privacy safeguards apply in pharmacies.",
     "distractorExplanations": {
-      "a": "Public discussion is improper.",
-      "c": "Sale of PHI is illegal.",
-      "d": "Social posts are breaches."
+      "a": "HIPAA permits PHI disclosure for treatment without authorization; written authorization is for uses like marketing.",
+      "c": "Family members get PHI only with the patient's agreement or in permitted situations, not simply by asking.",
+      "d": "Record retention is set by federal/state law (often 2+ years); HIPAA requires safeguarding records, not early destruction."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the drug name with no patient identity"
+        "text": "Patient name, drug name/strength, and directions, with quantity optional for C-II drugs"
       },
       {
         "id": "b",
-        "text": "A nickname for the prescriber without NPI/DEA when required"
+        "text": "Drug name/strength, quantity, and prescriber NPI, with patient name optional if known to staff"
       },
       {
         "id": "c",
-        "text": "Patient name, drug name/strength, quantity, directions, date, and prescriber information/signature as required by law"
+        "text": "Patient name, drug name/strength, quantity, directions, date, and prescriber information/signature"
       },
       {
         "id": "d",
-        "text": "Quantity written as 'as much as you want' without a numeric amount when a quantity is required"
+        "text": "Patient name, drug, quantity, and directions, with the date optional if filled within a week"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Controlled Rx elements are tightly specified federally/state; incomplete Rxs cannot be filled as-is.",
+    "explanation": "Controlled Rx elements are tightly specified federally/state; incomplete Rxs cannot be filled as-is. Requirements are set by federal and state law, including patient address and the prescriber's DEA number.",
     "distractorExplanations": {
-      "a": "Patient identity is required.",
-      "b": "Prescriber identifiers matter for controlled Rx.",
-      "d": "Quantities must be clear."
+      "a": "Quantity is a required element on every controlled substance prescription, including Schedule II.",
+      "b": "The patient's full name and address are required on controlled prescriptions; staff familiarity does not waive them.",
+      "d": "The date of issue is mandatory; it governs validity windows such as 6 months for C-III–V prescriptions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1005,19 +1005,19 @@
       },
       {
         "id": "c",
-        "text": "Pharmacist selects brand arbitrarily without codes"
+        "text": "Generic substitution allowed by prescriber (no product selection)"
       },
       {
         "id": "d",
-        "text": "OTC status"
+        "text": "Brand dispensed because no generic is available in the market"
       }
     ],
     "correctOptionId": "a",
     "explanation": "DAW codes communicate product selection intent for claims.",
     "distractorExplanations": {
       "b": "DAW 2 often patient requested brand.",
-      "c": "Codes are standardized.",
-      "d": "OTC ≠ DAW."
+      "c": "That is DAW 0 (no product selection indicated); DAW 1 means the prescriber forbids substitution.",
+      "d": "Generic not available in the marketplace is DAW 8, not DAW 1."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Inject two intramuscularly weekly"
+        "text": "Take one by mouth at bedtime as needed for pain"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Instill in both eyes at bedtime"
+        "text": "Take one by mouth before meals as needed for pain"
       },
       {
         "id": "d",
-        "text": "Apply topically once monthly"
+        "text": "Take one by mouth every other day for pain as needed"
       }
     ],
     "correctOptionId": "b",
     "explanation": "i=1, po=by mouth, bid=twice daily, prn=as needed.",
     "distractorExplanations": {
-      "a": "Not IM weekly.",
-      "c": "Eyes would be ou/od/os gtt.",
-      "d": "Topical monthly wrong."
+      "a": "Bedtime is 'hs'; 'bid' means twice daily, so this misreads the frequency.",
+      "c": "Before meals is 'ac'; 'bid' means twice a day, so this misreads the frequency.",
+      "d": "Every other day is 'qod' (an error-prone abbreviation); 'bid' means twice daily."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Guess the most common strength"
+        "text": "Enter the lowest available strength as the safest choice"
       },
       {
         "id": "b",
-        "text": "Pick the highest strength for faster effect"
+        "text": "Select the strength the patient says they took before"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Omit strength on the label"
+        "text": "Fill the most common strength and note it for the pharmacist"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Ambiguities require clarification to prevent errors.",
     "distractorExplanations": {
-      "a": "Guessing is dangerous.",
-      "b": "Highest strength risky.",
-      "d": "Labels need correct strength."
+      "a": "Assuming the lowest strength is still guessing; a missing strength must be clarified, not chosen by the technician.",
+      "b": "Patient recollection does not complete a prescription; the prescriber must confirm the intended strength.",
+      "d": "Filling first and flagging later still dispenses a guessed strength; clarification must come before processing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1096,15 +1096,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Indicate controlled schedules"
+        "text": "Flag high-alert drugs such as insulin and heparin for a second check"
       },
       {
         "id": "b",
-        "text": "Show AWP pricing"
+        "text": "Mark drugs on the Beers list as inappropriate for older adults"
       },
       {
         "id": "c",
-        "text": "Mark refrigeration"
+        "text": "Highlight controlled substance schedules on shelf labels and vials"
       },
       {
         "id": "d",
@@ -1114,9 +1114,9 @@
     "correctOptionId": "d",
     "explanation": "ISMP/FDA tall man lettering reduces selection errors.",
     "distractorExplanations": {
-      "a": "Schedules are C-II etc.",
-      "b": "Pricing separate.",
-      "c": "Fridge stickers differ."
+      "a": "High-alert drug lists (ISMP) prompt independent double checks; Tall Man lettering targets look-alike names.",
+      "b": "The Beers Criteria flag drugs needing geriatric caution; they are unrelated to Tall Man lettering.",
+      "c": "Schedules are shown with the C-symbol (e.g., C-II), not with mixed-case Tall Man lettering."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "Any email from an unknown address"
+        "text": "A faxed copy of the signed paper prescription sent from the prescriber's office"
       },
       {
         "id": "c",
-        "text": "Text messages without security"
+        "text": "Prescriber use of the same standard e-Rx software used for non-controlled drugs"
       },
       {
         "id": "d",
-        "text": "Verbal only forever for all C-II"
+        "text": "A secure email from the prescriber's verified account with a scanned DEA certificate"
       }
     ],
     "correctOptionId": "a",
     "explanation": "EPCS has specific security controls; verbal C-II limited to emergencies with follow-up.",
     "distractorExplanations": {
-      "b": "Insecure email insufficient.",
-      "c": "Unsecured texts insufficient.",
-      "d": "Emergency verbal has strict limits."
+      "b": "A fax is not EPCS; faxed C-II prescriptions are allowed only in limited cases such as hospice or LTCF patients.",
+      "c": "Ordinary e-Rx software is not enough; the application must be audited/certified for EPCS under DEA rules.",
+      "d": "Email is not an EPCS transmission; EPCS requires two-factor authentication inside a certified system."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the patient's age"
+        "text": "Quantity dispensed and the number of refills authorized"
       },
       {
         "id": "b",
-        "text": "Quantity dispensed and directions (dose × frequency) to compute duration"
+        "text": "Quantity dispensed and directions (dose × frequency)"
       },
       {
         "id": "c",
-        "text": "Only the color of tablets"
+        "text": "Package size and the drug's expiration date"
       },
       {
         "id": "d",
-        "text": "Only the NPI"
+        "text": "Patient weight and the strength of each tablet"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Insurance adjudication often rejects wrong days' supply.",
+    "explanation": "Insurance adjudication often rejects wrong days' supply. Days' supply = quantity ÷ (dose × doses per day).",
     "distractorExplanations": {
-      "a": "Age alone insufficient.",
-      "c": "Color irrelevant.",
-      "d": "NPI is provider ID."
+      "a": "Refills change the number of fills, not the days' supply of one fill, which depends on the directions.",
+      "c": "Expiration limits how long the drug can be used, but days' supply comes from quantity and daily dose.",
+      "d": "Weight and strength matter for dosing, but days' supply divides quantity by the amount used per day."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The patient is allergic to inactive dye"
+        "text": "Two drugs may interact to raise or lower each other's blood levels"
       },
       {
         "id": "b",
-        "text": "The drug is OTC"
+        "text": "The drug's dose exceeds the maximum recommended for the patient's age or weight"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "The SIG is perfect"
+        "text": "The same prescription was already filled too recently to be refilled again"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Pharmacists evaluate duplication alerts (e.g., two NSAIDs)",
     "distractorExplanations": {
-      "a": "Allergy is different DUR message.",
-      "b": "OTC status separate.",
-      "d": "SIG issues differ."
+      "a": "That describes a drug–drug interaction alert, not a duplication of the same therapeutic class.",
+      "b": "That is a high-dose (dose-range) alert; duplication means two drugs from the same class overlap.",
+      "d": "That is a refill-too-soon rejection; therapeutic duplication concerns two different drugs with the same effect."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Patient MRN"
+        "text": "Prescriber, practice location, and specialty taxonomy"
       },
       {
         "id": "b",
-        "text": "DEA registrant"
+        "text": "Manufacturer, lot number, and expiration date of a batch"
       },
       {
         "id": "c",
-        "text": "ICD-10 diagnosis"
+        "text": "Drug class, DEA schedule, and therapeutic equivalence code"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "NDCs are central to product selection and billing.",
     "distractorExplanations": {
-      "a": "MRN is patient.",
-      "b": "DEA is registrant.",
-      "c": "ICD is diagnosis."
+      "a": "That describes the prescriber's NPI record; the NDC identifies a drug product and package.",
+      "b": "Lot number and expiration appear on the label or barcode but are not encoded in the NDC.",
+      "c": "Schedules and Orange Book TE codes are separate systems; NDC segments are labeler, product and package."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1265,23 +1265,23 @@
       },
       {
         "id": "b",
-        "text": "The drug is always OTC candy"
+        "text": "A prescriber must approve a refill before it can be dispensed again"
       },
       {
         "id": "c",
-        "text": "The pharmacist wants a lunch break"
+        "text": "The pharmacist must approve generic substitution for a DAW 1 prescription"
       },
       {
         "id": "d",
-        "text": "NDC is valid and preferred with open coverage"
+        "text": "A patient's claim is rejected because the refill is requested too soon"
       }
     ],
     "correctOptionId": "a",
     "explanation": "PA workflows involve clinical criteria submissions; technicians assist with process under pharmacist oversight.",
     "distractorExplanations": {
-      "b": "OTC candy not PA drugs.",
-      "c": "Breaks unrelated.",
-      "d": "Preferred covered drugs may not need PA."
+      "b": "That is a refill authorization request to the prescriber, not a payer prior authorization.",
+      "c": "DAW 1 forbids substitution by the prescriber's choice; it has nothing to do with payer approval.",
+      "d": "Refill-too-soon rejections are resolved by timing or override codes, not by a prior authorization."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Contradict the prescription directions intentionally"
+        "text": "Replace pharmacist counseling for routine refill prescriptions"
       },
       {
         "id": "b",
-        "text": "Reinforce key warnings (e.g., take with food, may cause drowsiness) without replacing counseling"
+        "text": "Reinforce key warnings (e.g., take with food, may cause drowsiness)"
       },
       {
         "id": "c",
-        "text": "Replace the need for a prescription label"
+        "text": "Repeat the prescription directions in larger print for clarity"
       },
       {
         "id": "d",
-        "text": "List unrelated diagnoses"
+        "text": "Show the drug's DEA schedule and the prescriber's DEA number"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Aux labels support safe use; pharmacist counseling remains important.",
+    "explanation": "Aux labels support safe use; pharmacist counseling remains important. They supplement, not replace, pharmacist counseling.",
     "distractorExplanations": {
-      "a": "Never contradict Rx.",
-      "c": "Primary label still required.",
-      "d": "Diagnoses on aux labels inappropriate."
+      "a": "Auxiliary labels supplement counseling; they do not substitute for the pharmacist's counseling duty.",
+      "c": "Directions belong on the main prescription label; auxiliary labels add warnings rather than restating the sig.",
+      "d": "C-symbols and DEA numbers are not the job of auxiliary labels, which carry use and safety warnings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Inject two tablets weekly"
+        "text": "Take one tablet by mouth three times daily as needed for pain"
       },
       {
         "id": "b",
-        "text": "Take one tablet in each eye at bedtime"
+        "text": "Take one tablet by mouth twice daily on a fixed schedule for pain"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Apply topically four times daily"
+        "text": "Take one tablet under the tongue twice daily as needed for pain"
       }
     ],
     "correctOptionId": "c",
     "explanation": "po=by mouth, bid=twice daily, prn=as needed.",
     "distractorExplanations": {
-      "a": "Not an injection sig.",
-      "b": "Eye sigs use ou/od/os language.",
-      "d": "Topical would specify application site."
+      "a": "Three times daily is 'tid'; 'bid' means twice daily.",
+      "b": "Ignores 'prn', which means as needed rather than on a fixed schedule.",
+      "d": "Under the tongue is 'SL' (sublingual); 'po' means by mouth."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Delete the allergy to clear the alert"
+        "text": "Override the alert if the patient says it was mild"
       },
       {
         "id": "b",
-        "text": "Dispense a full course anyway to avoid delay without notice"
+        "text": "Call the prescriber to change the drug yourself"
       },
       {
         "id": "c",
-        "text": "Tell the patient allergies do not matter for oral drugs"
+        "text": "Fill it and attach an allergy warning label"
       },
       {
         "id": "d",
-        "text": "Alert the pharmacist before dispensing—do not override silently"
+        "text": "Alert the pharmacist before dispensing"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Allergy alerts require pharmacist clinical judgment.",
+    "explanation": "Allergy alerts require pharmacist clinical judgment. Never override an allergy alert silently.",
     "distractorExplanations": {
-      "a": "Deleting allergies falsifies the record.",
-      "b": "Silent overrides risk harm.",
-      "c": "Oral drugs can cause allergies."
+      "a": "Technicians cannot clinically override allergy alerts; the pharmacist must evaluate the reported reaction.",
+      "b": "Allergy clarification and therapy changes with prescribers are pharmacist duties, not technician decisions.",
+      "c": "A warning label does not resolve a serious allergy conflict; the pharmacist must review it before dispensing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1397,23 +1397,23 @@
       },
       {
         "id": "b",
-        "text": "Guess the most common directions for that drug"
+        "text": "Use the most common directions for that drug and strength"
       },
       {
         "id": "c",
-        "text": "Leave the label blank"
+        "text": "Ask the patient how they were told to take it and use that"
       },
       {
         "id": "d",
-        "text": "Use another patient's directions"
+        "text": "Copy the directions from the patient's last fill of a similar drug"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Ambiguous sigs are a top error source—clarify.",
     "distractorExplanations": {
-      "b": "Guessing causes wrong use.",
-      "c": "Blank labels are unacceptable.",
-      "d": "Wrong-patient directions are dangerous."
+      "b": "Defaulting to typical directions is guessing; unclear directions must be clarified with the prescriber.",
+      "c": "Patient recall is not a valid source for label directions; the prescriber must clarify the order.",
+      "d": "Directions for a different drug may not match the new order; clarify instead of copying them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the patient's favorite color"
+        "text": "Therapeutic equivalence ratings from the Orange Book"
       },
       {
         "id": "b",
-        "text": "Dispense-as-written / product selection intents affecting generic substitution"
+        "text": "Dispense-as-written / product selection intents"
       },
       {
         "id": "c",
-        "text": "DEA schedule automatically"
+        "text": "Prior authorization status for brand-name products"
       },
       {
         "id": "d",
-        "text": "Beyond-use dating for compounds"
+        "text": "Beyond-use dating categories for compounded products"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "DAW indicates whether substitution is allowed/required for billing/product choice.",
+    "explanation": "DAW indicates whether substitution is allowed/required for billing/product choice. These codes affect generic substitution and claim pricing.",
     "distractorExplanations": {
-      "a": "Color is irrelevant.",
-      "c": "Schedules are separate.",
-      "d": "BUD is compounding stability."
+      "a": "Orange Book TE codes (AB, BX) rate generic equivalence; DAW codes report who chose the product.",
+      "c": "PA status comes from the payer; DAW codes report product-selection intent on the claim.",
+      "d": "BUD categories come from USP <795>/<797>, not from DAW codes on a claim."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Assume mg and mL are always identical numbers"
+        "text": "Enter the volume in mL exactly as the mg dose is written"
       },
       {
         "id": "b",
-        "text": "Round up aggressively to the next bottle size without checking dose"
+        "text": "Use the adult dose divided by two for all children"
       },
       {
         "id": "c",
-        "text": "Verify weight-based calculations and units (mg vs mL) with the pharmacist as required"
+        "text": "Verify weight-based calculations and units (mg vs mL)"
       },
       {
         "id": "d",
-        "text": "Ignore decimal points because children tolerate errors"
+        "text": "Round the dose to the nearest whole milliliter"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unit mix-ups and decimal errors are major pediatric risks.",
+    "explanation": "Unit mix-ups and decimal errors are major pediatric risks. Calculations are checked with the pharmacist as required.",
     "distractorExplanations": {
-      "a": "mg ≠ mL.",
-      "b": "Rounding without clinical check is unsafe.",
-      "d": "Children are more vulnerable to dosing errors."
+      "a": "Treats mg and mL as interchangeable; the mg dose must be converted to mL using the concentration.",
+      "b": "Halving adult doses is not a valid pediatric method; pediatric doses are weight-based (mg/kg).",
+      "d": "Rounding small pediatric liquid doses can cause major over- or underdosing; decimal precision matters."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Patient, drug, dose, route, and time (plus documentation/education concepts)"
+        "text": "Patient, drug, dose, route, and time"
       },
       {
         "id": "b",
-        "text": "Price, parking, posters, pens, and phones"
+        "text": "Patient, drug, dose, refill, and price"
       },
       {
         "id": "c",
-        "text": "Color, shape, taste, smell, and sound"
+        "text": "Patient, drug, dose, prescriber, and pharmacy"
       },
       {
         "id": "d",
-        "text": "Only the right shelf"
+        "text": "Drug, dose, strength, quantity, and label"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Verification prevents wrong-patient/wrong-drug errors.",
+    "explanation": "Verification prevents wrong-patient/wrong-drug errors. Documentation and education are often added as extra rights.",
     "distractorExplanations": {
-      "b": "Business items irrelevant.",
-      "c": "Physical descriptors aid checks but aren't the five rights.",
-      "d": "Shelf location insufficient."
+      "b": "Refill and price are not rights; the list drops route and time.",
+      "c": "Prescriber and pharmacy are not among the five rights; route and time are.",
+      "d": "Lists dispensing check items but omits right patient, right route, and right time."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "3 years"
+        "text": "7 days at room temperature"
       },
       {
         "id": "b",
-        "text": "14 days refrigerated when otherwise stable/appropriate (classic teaching default unless literature differs)"
+        "text": "14 days refrigerated"
       },
       {
         "id": "c",
-        "text": "Indefinite at room temp"
+        "text": "90 days at room temperature"
       },
       {
         "id": "d",
-        "text": "1 hour always like sterile immediate use"
+        "text": "6 months at room temperature"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "USP <795> BUDs depend on water activity/type; know common exam defaults and that manufacturer/stability data can modify.",
+    "explanation": "USP <795> BUDs depend on water activity/type; know common exam defaults and that manufacturer/stability data can modify. That is the USP <795> default for unpreserved aqueous preparations without supporting stability data.",
     "distractorExplanations": {
-      "a": "3 years is commercial packaged often.",
-      "c": "Not indefinite.",
-      "d": "1 hour is different sterile concept."
+      "a": "Too short and at the wrong temperature; USP <795> gives unpreserved aqueous preparations 14 days refrigerated.",
+      "c": "90 days is the USP <795> default for nonaqueous dosage forms, not aqueous oral liquids.",
+      "d": "180 days is the USP <795> default for solid dosage forms such as capsules, not aqueous oral liquids."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Street clothes only inside the PEC"
+        "text": "Hair cover, face mask, gown, nonsterile exam gloves"
       },
       {
         "id": "b",
-        "text": "Jewelry encouraged on hands"
+        "text": "Face mask, sterile gloves, and a lab coat only"
       },
       {
         "id": "c",
-        "text": "Hair cover, face mask, gown, sterile gloves (and eye cover as required) with proper garbing order"
+        "text": "Hair cover, face mask, gown, sterile gloves"
       },
       {
         "id": "d",
-        "text": "No hand hygiene before gloves"
+        "text": "Hair cover, gown, and sterile gloves, with no mask"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "USP <797> garbing and aseptic technique protect CSPs from contamination.",
+    "explanation": "USP <797> garbing and aseptic technique protect CSPs from contamination. Eye cover is added as required, and garbing follows the dirtiest-to-cleanest order.",
     "distractorExplanations": {
-      "a": "Street clothes shed particles.",
-      "b": "Jewelry sheds/tears gloves.",
-      "d": "Hand hygiene required."
+      "a": "Gloves used inside the PEC for sterile compounding must be sterile, not nonsterile exam gloves.",
+      "b": "Omits the hair cover and substitutes a lab coat for a low-lint gown.",
+      "d": "A face mask is required garb because talking and breathing near critical sites shed particles."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Blocking HEPA airflow with large objects permanently is ideal"
+        "text": "Compounding is done at the front edge of the hood for best airflow"
       },
       {
         "id": "b",
-        "text": "Talking across open sterile vials is encouraged"
+        "text": "Hands should be placed between the HEPA filter and critical sites"
       },
       {
         "id": "c",
-        "text": "Cleaning is optional weekly"
+        "text": "The hood is cleaned from the front edge back toward the HEPA filter"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "Don't obstruct first air; clean with appropriate agents (often sterile IPA) frequently.",
     "distractorExplanations": {
-      "a": "Obstruction contaminates.",
-      "b": "Talking sheds particles.",
-      "c": "Cleaning is frequent/required."
+      "a": "Work belongs at least 6 inches inside the hood; the front edge is where room air mixes in.",
+      "b": "Hands upstream of critical sites block first air and create turbulence and contamination.",
+      "c": "Cleaning goes from the HEPA filter outward (back to front), not from the front toward the filter."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Eliminate the need for pharmacist checks"
+        "text": "Lower drug costs by buying in bulk stock bottles"
       },
       {
         "id": "c",
-        "text": "Allow unlabeled meds"
+        "text": "Allow nurses to compound IV doses on the unit"
       },
       {
         "id": "d",
-        "text": "Mix all patients' meds in one cup routinely"
+        "text": "Replace bar-code scanning at the patient's bedside"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Unit dose supports safety; verification still required.",
     "distractorExplanations": {
-      "b": "Checks still needed.",
-      "c": "Labels required.",
-      "d": "Multi-patient mixing dangerous."
+      "b": "Bulk stock bottles are the opposite of unit dose; unit dose targets safety and tracking, not bulk savings.",
+      "c": "Unit-dose packaging does not shift IV compounding to nurses; IV admixtures belong in the pharmacy.",
+      "d": "Unit doses carry bar codes that support bedside scanning (BCMA); they do not replace it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Estimating quantities visually only for C-II"
+        "text": "Counting by fives once and recording the total on the label"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Leaving stock bottles unlocked in public waiting areas"
+        "text": "Recording counts at the next biennial inventory instead of daily"
       },
       {
         "id": "d",
-        "text": "Sharing biometric safe access casually"
+        "text": "Having the patient verify the count at pickup"
       }
     ],
     "correctOptionId": "b",
     "explanation": "C-II perpetual inventory and secure storage are critical.",
     "distractorExplanations": {
-      "a": "Estimates invite diversion errors.",
-      "c": "Public access improper.",
-      "d": "Access control required."
+      "a": "A single count is not enough for controlled drugs; double counts and perpetual inventory records are expected.",
+      "c": "The biennial inventory is a separate DEA requirement; perpetual records are updated with each transaction.",
+      "d": "Patient verification does not replace staff double counts and documentation for controlled drugs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Touch the tip firmly to the cornea each time as required"
+        "text": "Follow which eye is meant, reading AD/AS/AU as right/left/both eyes"
       },
       {
         "id": "b",
-        "text": "Share bottles between unrelated patients routinely"
+        "text": "Shake suspensions and touch the tip to the eyelid to steady the dose"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Store frozen solid"
+        "text": "Store opened bottles frozen to extend their stability after opening"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Aseptic handling and correct laterality matter.",
     "distractorExplanations": {
-      "a": "Tip contact contaminates/injures.",
-      "b": "Sharing risks infection.",
-      "d": "Freezing often damages."
+      "a": "AD/AS/AU refer to the ears; eye abbreviations are OD/OS/OU (and both sets are error-prone).",
+      "b": "Touching the tip to the eye or lid contaminates the dropper; the tip should not touch any surface.",
+      "d": "Ophthalmic drops are kept at room temperature or refrigerated as labeled; freezing is not used to extend stability."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hide the error"
+        "text": "Call the patient yourself to swap the medication"
       },
       {
         "id": "b",
-        "text": "Blame the patient"
+        "text": "Correct the record and log it at the end of the shift"
       },
       {
         "id": "c",
-        "text": "Wait until annual inventory"
+        "text": "File an incident report before telling anyone else"
       },
       {
         "id": "d",
-        "text": "Notify the pharmacist immediately so patient can be contacted and error corrected per policy"
+        "text": "Notify the pharmacist immediately"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Rapid disclosure/mitigation protects patients and is an ethical/legal duty.",
+    "explanation": "Rapid disclosure/mitigation protects patients and is an ethical/legal duty. The patient can then be contacted and the error corrected per policy.",
     "distractorExplanations": {
-      "a": "Hiding worsens harm/liability.",
-      "b": "Patient blame inappropriate.",
-      "c": "Delay dangerous."
+      "a": "Contacting the patient about an error is coordinated by the pharmacist, not handled alone by the technician.",
+      "b": "Delay risks patient harm; the pharmacist must know immediately, not at the end of the shift.",
+      "c": "Incident reporting follows, but the first step is notifying the pharmacist so the patient can be reached."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "2–8°C (36–46°F) unless the label specifies otherwise"
+        "text": "2–8°C (36–46°F)"
       },
       {
         "id": "b",
-        "text": "−20°C freezer for all refrigerated labels"
+        "text": "8–15°C (46–59°F)"
       },
       {
         "id": "c",
-        "text": "37°C incubator"
+        "text": "20–25°C (68–77°F)"
       },
       {
         "id": "d",
-        "text": "Room temperature always if fridge is full"
+        "text": "30–40°C (86–104°F)"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Monitor fridge logs; do not use food fridges improperly; vaccines have strict rules.",
+    "explanation": "Monitor fridge logs; do not use food fridges improperly; vaccines have strict rules. Follow the label if it specifies a different range.",
     "distractorExplanations": {
-      "b": "Freezer is colder than refrigerated.",
-      "c": "Body temp too warm.",
-      "d": "Don't leave fridge items at room temp contrary to label."
+      "b": "8–15°C is the USP 'cool' storage range, warmer than the 2–8°C refrigerator range.",
+      "c": "20–25°C is USP controlled room temperature, not refrigerated storage.",
+      "d": "30–40°C is the USP 'warm' range, which would degrade products labeled for refrigeration."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the bag color"
+        "text": "Right patient, drug, and quantity, with strength checked at intake"
       },
       {
         "id": "b",
-        "text": "That the cheapest drug was substituted without reviewing alerts"
+        "text": "Right drug, strength, and price, with the patient checked at pickup"
       },
       {
         "id": "c",
-        "text": "Right patient, drug, strength, quantity, directions, and appropriate packaging/labels"
+        "text": "Right patient, drug, strength, quantity, and directions"
       },
       {
         "id": "d",
-        "text": "That pills were touched with bare hands after floor contact"
+        "text": "Right NDC barcode scan alone, without reviewing the label directions"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "The five/seven rights style check prevents dispensing errors.",
+    "explanation": "The five/seven rights style check prevents dispensing errors. Appropriate packaging and labels are also confirmed.",
     "distractorExplanations": {
-      "a": "Bag color is irrelevant.",
-      "b": "Alert review matters.",
-      "d": "Contaminated pills must not be dispensed."
+      "a": "Strength must be confirmed at the final check, not assumed from intake, and directions are omitted.",
+      "b": "Price is not a clinical check, and patient identity must be verified before dispensing, not left to pickup.",
+      "d": "A barcode scan confirms the product but not directions, patient or quantity; it supplements the check."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Never clean trays because residue improves adherence"
+        "text": "Wipe them weekly unless visible residue appears"
       },
       {
         "id": "b",
-        "text": "Use the same tray immediately after hazardous powders without decontamination"
+        "text": "Use separate trays for brand and generic products"
       },
       {
         "id": "c",
-        "text": "Lick the spatula to remove powder"
+        "text": "Clean them only after counting controlled substances"
       },
       {
         "id": "d",
-        "text": "Clean them to prevent cross-contamination, especially after allergens like penicillin/sulfa per policy"
+        "text": "Clean them to prevent cross-contamination"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Tray contamination can cause allergic exposures and mix-ups.",
+    "explanation": "Tray contamination can cause allergic exposures and mix-ups. This matters especially after allergens like penicillin/sulfa, per policy.",
     "distractorExplanations": {
-      "a": "Residue is a contamination risk.",
-      "b": "Hazardous residue needs proper cleaning.",
-      "c": "Licking is unsanitary."
+      "a": "Trays are cleaned after use, especially after allergens, not on a weekly schedule.",
+      "b": "Brand vs generic separation is not the hazard; residue from allergens and hazardous drugs is.",
+      "c": "Controlled status is not the cross-contamination risk; allergens like penicillin/sulfa and hazardous drugs are."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1892,23 +1892,23 @@
       },
       {
         "id": "b",
-        "text": "Remove all labeling to speed nurses"
+        "text": "Supply each patient a week of bulk tablets in one labeled stock bottle per drug"
       },
       {
         "id": "c",
-        "text": "Allow sharing leftover doses between patients freely"
+        "text": "Allow nurses to return and reissue opened doses to other patients"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for pharmacist oversight"
+        "text": "Replace bedside bar-code scanning with nurse visual checks of labels"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Unit dose improves safety and accountability.",
     "distractorExplanations": {
-      "b": "Labels are essential.",
-      "c": "Sharing doses is improper.",
-      "d": "Pharmacy oversight remains."
+      "b": "Weekly bulk bottles describe a traditional vial/floor-stock system, the opposite of unit-dose packaging.",
+      "c": "Opened doses cannot be reissued; intact unit-dose packages may be returned to stock per policy.",
+      "d": "Unit-dose bar codes enable bedside scanning (BCMA); unit dose is not meant to replace it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always set to 10 years for creams"
+        "text": "Matched to the manufacturer's expiration of the main ingredient"
       },
       {
         "id": "b",
-        "text": "Assigned using USP guidance and formula documentation—not arbitrary distant dates"
+        "text": "Assigned using USP guidance and formula documentation"
       },
       {
         "id": "c",
-        "text": "Ignored if the product looks fine"
+        "text": "Set to 6 months for all creams and ointments"
       },
       {
         "id": "d",
-        "text": "Copied from an unrelated manufacturer's bottle without assessment"
+        "text": "Extended to one year if stored in a refrigerator"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "BUD depends on formulation/water content/storage per USP standards and policies.",
+    "explanation": "BUD depends on formulation/water content/storage per USP standards and policies. Arbitrary distant dates are not acceptable.",
     "distractorExplanations": {
-      "a": "Decade-long BUD is inappropriate.",
-      "c": "Appearance alone is insufficient.",
-      "d": "Wrong BUD sources cause instability risks."
+      "a": "A bulk ingredient's expiration does not apply to the finished compound; BUD follows USP <795> limits.",
+      "c": "USP <795> defaults are 90 days for nonaqueous and 14–35 days for aqueous forms, not 6 months.",
+      "d": "Refrigeration does not justify a one-year BUD; limits follow USP <795> categories and stability data."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Add tap water estimated by eye without measuring"
+        "text": "Add the full diluent volume at once, then shake and label with the BUD"
       },
       {
         "id": "b",
-        "text": "Omit the shake-well auxiliary label"
+        "text": "Use the correct diluent and label with the original manufacturer's expiration date"
       },
       {
         "id": "c",
-        "text": "Use the correct diluent volume, mix thoroughly, and label with BUD/storage/shake well as required"
+        "text": "Use the correct diluent volume, mix thoroughly, and label with BUD/storage"
       },
       {
         "id": "d",
-        "text": "Store all reconstitutions in the freezer unless told otherwise"
+        "text": "Use the correct diluent volume, mix well, and store every suspension at room temperature"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Accurate reconstitution and labeling ensure dose accuracy and stability.",
+    "explanation": "Accurate reconstitution and labeling ensure dose accuracy and stability. Add the shake-well auxiliary label as required.",
     "distractorExplanations": {
-      "a": "Unmeasured diluent causes wrong concentration.",
-      "b": "Shake-well is often required.",
-      "d": "Freezing can destroy suspensions."
+      "a": "Diluent is added in portions with shaking between for an even suspension; adding it all at once causes clumping.",
+      "b": "After reconstitution the shorter post-mix BUD (e.g., 10–14 days) applies, not the dry-powder expiration date.",
+      "d": "Storage is product-specific; amoxicillin-clavulanate and many others must be refrigerated after mixing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"

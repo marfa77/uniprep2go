@@ -1,0 +1,82 @@
+{
+ "cdl-air-brakes-readiness-check": {
+  "cdl-air-brakes-readiness-check-systems-001": {
+   "options": {
+    "a": "60–70 psi",
+    "b": "80–90 psi",
+    "c": "100 to 110 psi",
+    "d": "125–135 psi"
+   },
+   "distractorExplanations": {
+    "c": "Around 100 to 110 psi is where the governor cuts the compressor back in; cut-out happens higher, at about 125 to 135 psi.",
+    "a": "That is roughly where the low-air warning must activate, far below the governor cut-out point.",
+    "b": "This is below even the cut-in point; the compressor would never stop pumping at a normal level."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-002": {
+   "options": {
+    "a": "60–65 psi",
+    "b": "100–105 psi",
+    "c": "110 to 115 psi",
+    "d": "125–135 psi"
+   },
+   "distractorExplanations": {
+    "c": "110 to 115 psi overstates the cut-in point; the CDL manual puts compressor cut-in at about 100 psi, well below cut-out.",
+    "a": "Around 60 psi is the low-air warning point; cut-in happens well above it, near 100 psi.",
+    "d": "That is the governor cut-out range where the compressor stops pumping, not where it resumes."
+   }
+  },
+  "cdl-air-brakes-readiness-check-systems-007": {
+   "options": {
+    "a": "20 psi",
+    "b": "30 psi",
+    "c": "40–45 psi",
+    "d": "60 psi"
+   },
+   "distractorExplanations": {
+    "c": "40 to 45 psi is where spring brakes may begin to apply; the low-air warning must come on earlier, before pressure drops below 60 psi.",
+    "a": "About 20 psi is near the bottom of the spring-brake application range; the warning comes much earlier.",
+    "b": "At 30 psi the spring brakes may already be applying; the warning must sound before pressure falls below 60."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-002": {
+   "options": {
+    "a": "2 psi/min single or 3 psi/min combination",
+    "b": "3 psi/min single or 4 psi/min combination",
+    "c": "4 psi/min single or 5 psi/min combination",
+    "d": "5 psi/min single or 10 psi/min combination"
+   },
+   "distractorExplanations": {
+    "d": "Doubling the allowance for combinations is a common error; with brakes applied the limits are 3 psi/min single and 4 psi/min combination.",
+    "a": "Those are the released-brake leakage limits; with brakes applied the limits are 3 and 4 psi/min.",
+    "c": "Too lenient by 1 psi/min; the applied-brake limit is 3 psi/min single and 4 psi/min combination."
+   }
+  },
+  "cdl-air-brakes-readiness-check-inspection-008": {
+   "options": {
+    "a": "Within about 10 seconds under test conditions",
+    "b": "Within about 20 seconds under test conditions",
+    "c": "Within about 30 seconds at fast idle under test conditions",
+    "d": "Within about 45 seconds under test conditions"
+   },
+   "distractorExplanations": {
+    "c": "The test is run at fast idle, but the handbook benchmark for dual systems is 85 to 100 psi within 45 seconds, not 30 seconds.",
+    "a": "The handbook standard for dual systems is 85 to 100 psi within 45 seconds; 10 seconds is not the benchmark.",
+    "b": "20 seconds is not the CDL handbook benchmark; dual systems should build 85 to 100 psi within 45 seconds."
+   }
+  },
+  "cdl-air-brakes-readiness-check-operation-001": {
+   "options": {
+    "a": "Apply lightly and steadily without lockup",
+    "b": "Pump rapidly on and off before wheels lock",
+    "c": "Apply fully, release as wheels lock, reapply",
+    "d": "Apply fully and hold the pedal down until the vehicle stops"
+   },
+   "distractorExplanations": {
+    "d": "Holding full pressure locks the wheels and removes steering control; stab braking releases when the wheels lock, then reapplies.",
+    "a": "That is controlled braking; stab braking means full application, release on lockup, reapply.",
+    "b": "Rapid pumping wastes air and is not the stab method; the brakes are applied fully until wheels lock."
+   }
+  }
+ }
+}

@@ -1,0 +1,680 @@
+{
+ "medication-aide-readiness-check": {
+  "medication-aide-readiness-check-rights-001": {
+   "options": {
+    "a": "Right person, drug, dose, route, time, and documentation",
+    "b": "Right person, drug, dose, route, time, and pill color",
+    "c": "Right person, drug, dose, room, time, and documentation",
+    "d": "Right drug, dose, route, time, family consent, and documentation"
+   },
+   "distractorExplanations": {
+    "b": "Tablet appearance can change between generic manufacturers, so color is not one of the rights; the sixth right is documentation.",
+    "c": "Room number is a location, not one of the rights and not a valid identifier; the missing right here is route.",
+    "d": "Family consent is not one of the rights, and this list drops the right person, which is confirmed with two resident identifiers."
+   }
+  },
+  "medication-aide-readiness-check-rights-004": {
+   "options": {
+    "a": "The resident has trouble swallowing the tablet",
+    "b": "The resident prefers taking it in applesauce",
+    "c": "The tablet is scored down the middle",
+    "d": "The order and the drug form allow crush"
+   },
+   "distractorExplanations": {
+    "a": "Swallowing trouble is a reason to ask the nurse or pharmacist for another form; it does not make an extended-release or enteric tablet safe to crush.",
+    "b": "A preference for applesauce does not change whether the drug form can be crushed; the order and the product must allow it.",
+    "c": "A score line means the tablet may be split if the label allows, not that it may be crushed; some scored tablets are extended-release."
+   },
+   "explanation": "Some forms must stay intact. This item asks: “Crushing a medication is allowed only when:”. The matching answer is: The order and the drug form allow crush — never crush XL/enteric without authority. Independent UniPrep diagnostic — not an official medication aide paper. Never crush extended-release (XL) or enteric-coated forms without authority from the nurse or pharmacist."
+  },
+  "medication-aide-readiness-check-rights-005": {
+   "options": {
+    "a": "The reason and the response documented per the order",
+    "b": "A set schedule so the dose is given every four hours",
+    "c": "Documentation of the dose time alone, since PRN reasons are verbal",
+    "d": "The resident’s request alone, with no check of the last dose time"
+   },
+   "distractorExplanations": {
+    "b": "PRN means as needed within the ordered minimum interval; giving it on a fixed schedule turns it into a routine dose that was not ordered.",
+    "c": "PRN documentation must record the reason given and the resident’s response, not only the time of the dose.",
+    "d": "Before a PRN dose the aide checks the order’s minimum interval and maximum daily dose on the MAR, not just the request."
+   }
+  },
+  "medication-aide-readiness-check-rights-006": {
+   "options": {
+    "a": "Room number and bed letter",
+    "b": "The facility's two identifiers",
+    "c": "The resident answering to their name",
+    "d": "Name and room number on the door"
+   },
+   "distractorExplanations": {
+    "a": "Room and bed describe a location, not the person; residents move rooms and can sit in the wrong bed or chair.",
+    "c": "Confused or hard-of-hearing residents may answer to any name; two identifiers such as name plus photo or birth date are required.",
+    "d": "A door sign shows who should be in the room, not who is in front of you; room number is not an accepted identifier."
+   },
+   "explanation": "Two IDs. This item asks: “Identifying the resident uses:”. The matching answer is: The facility's two identifiers, not 'the lady in 12'. Independent UniPrep diagnostic — not an official medication aide paper. Location descriptions such as “the lady in 12” are never identifiers."
+  },
+  "medication-aide-readiness-check-rights-007": {
+   "options": {
+    "a": "Give a scheduled oral med already transcribed on the MAR",
+    "b": "Document a refusal and notify the nurse as facility policy requires",
+    "c": "Take a new phone order for a controlled drug if the state forbids it",
+    "d": "Report a resident’s new dizziness to the charge nurse before the next dose"
+   },
+   "distractorExplanations": {
+    "a": "Passing scheduled oral medications already on the MAR is the core task a trained medication aide performs.",
+    "b": "Documenting refusals and notifying the nurse is part of the aide’s role, not something outside scope.",
+    "d": "Observing and reporting changes in condition to the nurse is expected of a medication aide."
+   }
+  },
+  "medication-aide-readiness-check-rights-008": {
+   "options": {
+    "a": "Acceptable if given within the shift",
+    "b": "A wrong-dose error — report per policy",
+    "c": "Not an error if charted on time",
+    "d": "A timing error — report per policy"
+   },
+   "distractorExplanations": {
+    "a": "The allowed window is set by facility policy (commonly about an hour around the scheduled time), not the whole shift.",
+    "b": "The amount given was correct; giving a drug outside its time window is a timing error, not a wrong-dose error.",
+    "c": "Charting a late dose as on time falsifies the record; the late administration is still a timing error to report."
+   }
+  },
+  "medication-aide-readiness-check-rights-009": {
+   "options": {
+    "a": "Separated and double-checked, not grabbed by memory",
+    "b": "Stored side by side on the cart so they are easy to compare",
+    "c": "Stored alphabetically so each one is quick to find",
+    "d": "Relabeled by the aide in marker to tell them apart"
+   },
+   "distractorExplanations": {
+    "b": "Side-by-side storage is how look-alike pairs get swapped; they should be separated and flagged, not placed together.",
+    "c": "Alphabetical storage often puts sound-alike names next to each other, which is exactly what LASA precautions try to prevent.",
+    "d": "Aides do not alter pharmacy labels or write on tablets; LASA risk is managed with separation, alerts, and double-checks."
+   }
+  },
+  "medication-aide-readiness-check-rights-010": {
+   "options": {
+    "a": "Whenever the resident is alert and asks to take it",
+    "b": "If the care plan and law allow, with the checks required",
+    "c": "If a family member stays to watch the resident take it",
+    "d": "If the aide leaves the pills at the bedside for later"
+   },
+   "distractorExplanations": {
+    "a": "A request does not authorize self-administration; the resident must be assessed and the practice approved in the care plan.",
+    "c": "Family supervision does not replace the care-plan assessment and facility checks required for self-administration.",
+    "d": "Leaving medications unattended at the bedside is not self-administration and breaks storage and observation rules."
+   }
+  },
+  "medication-aide-readiness-check-rights-012": {
+   "options": {
+    "a": "The nostril, as ordered",
+    "b": "The eye, if the bottle says sterile",
+    "c": "The ear canal of both ears",
+    "d": "The ear, as ordered"
+   },
+   "distractorExplanations": {
+    "a": "Otic means ear; a nasal route is a different product and order, so this is a wrong-route error.",
+    "b": "Otic preparations are not made for the eye even when sterile; giving an ear drop in the eye is a serious wrong-route error.",
+    "c": "Drops go only in the ear(s) named in the order; treating both ears when one is ordered is a wrong-site error."
+   },
+   "explanation": "Route errors blind people. This item asks: “The right route for an ear drop is:”. The matching answer is: The ear, as ordered — not the eye because the bottles look alike. Independent UniPrep diagnostic — not an official medication aide paper. Do not put ear drops in the eye just because the bottles look alike."
+  },
+  "medication-aide-readiness-check-rights-013": {
+   "options": {
+    "a": "Do not double-dose — check the MAR and the nurse",
+    "b": "Give it again, since a missed dose is worse than an extra",
+    "c": "Skip it and give the next scheduled dose as a double",
+    "d": "Ask the resident whether they already took it"
+   },
+   "distractorExplanations": {
+    "b": "An unconfirmed second dose risks a double dose and overdose; uncertainty means hold and check, not repeat.",
+    "c": "Doubling the next dose is a dose change the aide cannot make; check the MAR and ask the nurse instead.",
+    "d": "Residents may not remember accurately; the MAR and the nurse are the reliable sources for whether a dose was given."
+   }
+  },
+  "medication-aide-readiness-check-rights-014": {
+   "options": {
+    "a": "You give it and recheck the pressure in an hour",
+    "b": "You follow the parameter and notify as written",
+    "c": "You give half the dose when the pressure is low",
+    "d": "You hold it and document only at shift end"
+   },
+   "distractorExplanations": {
+    "a": "A hold parameter means the dose is not given when the reading is below the limit; rechecking later does not override the order.",
+    "c": "Changing the dose is outside the aide’s scope; the order says hold, and the nurse is notified as written.",
+    "d": "The hold must be documented when it happens and the nurse notified as the order states, not batched at shift end."
+   }
+  },
+  "medication-aide-readiness-check-rights-015": {
+   "options": {
+    "a": "The official state medication aide certification exam",
+    "b": "A CNA skills checklist with gait-belt and transfer tasks",
+    "c": "Independent practice — not a CNA skills or nursing-board exam form",
+    "d": "An NCLEX-PN style nursing-board practice form for practical nurses"
+   },
+   "distractorExplanations": {
+    "a": "This is an independent practice mock, not the official state certification exam or one of its forms.",
+    "b": "Medication aide content covers medication administration, not CNA mobility skills such as gait-belt transfers.",
+    "d": "The NCLEX-PN is the practical nurse licensing exam; this mock is independent medication aide practice."
+   }
+  },
+  "medication-aide-readiness-check-routes-016": {
+   "options": {
+    "a": "Between the cheek and gum until dissolved",
+    "b": "Swallowed whole with a full glass of water",
+    "c": "Absorbed through the skin from a patch",
+    "d": "Under the tongue until dissolved"
+   },
+   "distractorExplanations": {
+    "a": "Between the cheek and gum is the buccal route; sublingual means under the tongue.",
+    "b": "Swallowing with water is the oral (PO) route; a sublingual tablet must dissolve under the tongue.",
+    "c": "Absorption through the skin from a patch is the transdermal route, not sublingual."
+   },
+   "explanation": "SL is not PO. This item asks: “Sublingual means:”. The matching answer is: Under the tongue until dissolved — not swallowed whole. Independent UniPrep diagnostic — not an official medication aide paper. A sublingual tablet is not swallowed whole."
+  },
+  "medication-aide-readiness-check-routes-018": {
+   "options": {
+    "a": "Clean skin directly over the old patch so the dose overlaps",
+    "b": "Clean, dry, intact skin, dated, old patch removed",
+    "c": "The same site each time so absorption stays consistent",
+    "d": "Skin freshly coated with lotion so the patch sticks better"
+   },
+   "distractorExplanations": {
+    "a": "Applying over or beside an old patch stacks the dose; the old patch must be removed before the new one goes on.",
+    "c": "Sites are rotated to prevent skin irritation; reusing one site is not how consistent absorption is achieved.",
+    "d": "Lotions and oils reduce adhesion and can change absorption; patches go on clean, dry, intact skin."
+   }
+  },
+  "medication-aide-readiness-check-routes-019": {
+   "options": {
+    "a": "Place the drop directly onto the center of the cornea for best absorption",
+    "b": "Give two different eye drops back to back so neither washes the other out",
+    "c": "Avoid touching the dropper to the eye and wait between different drops",
+    "d": "Use one bottle for roommates if both have the same order"
+   },
+   "distractorExplanations": {
+    "a": "Drops go into the lower conjunctival sac, not onto the cornea, which is sensitive and triggers blinking.",
+    "b": "Giving drops back to back washes out the first; wait about five minutes between different eye drops.",
+    "d": "Eye drop bottles are single-resident items; sharing spreads infection even when the orders match."
+   }
+  },
+  "medication-aide-readiness-check-routes-020": {
+   "options": {
+    "a": "Puffs taken back to back with no wait between them",
+    "b": "No mouth rinse after a steroid inhaler unless the resident asks for one",
+    "c": "A shared spacer between residents if it is wiped after use",
+    "d": "A shake/prime if the product requires it and a slow breath as taught"
+   },
+   "distractorExplanations": {
+    "a": "Most metered-dose inhaler instructions call for a short wait (often about a minute) between puffs.",
+    "b": "Rinsing after an inhaled steroid helps prevent oral thrush and is part of correct technique, not optional.",
+    "c": "Spacers are single-resident devices; wiping does not make sharing acceptable."
+   }
+  },
+  "medication-aide-readiness-check-routes-021": {
+   "options": {
+    "a": "Unwrapped and inserted as trained, with privacy",
+    "b": "Inserted with the foil wrapper left on for easier handling",
+    "c": "Softened in warm water, then given by mouth",
+    "d": "Inserted while the resident lies on the right side"
+   },
+   "distractorExplanations": {
+    "b": "The wrapper must be removed; a suppository left in foil cannot melt or be absorbed.",
+    "c": "A rectal suppository is never given orally; if too soft it is briefly chilled, not dissolved in water.",
+    "d": "The usual position is the left side-lying (Sims’) position, which follows the anatomy of the colon."
+   }
+  },
+  "medication-aide-readiness-check-routes-022": {
+   "options": {
+    "a": "Under the tongue",
+    "b": "Between cheek and gum",
+    "c": "Swallowed with a sip of water",
+    "d": "Inside the nostril"
+   },
+   "distractorExplanations": {
+    "a": "Under the tongue is the sublingual route; buccal means between the cheek and the gum.",
+    "c": "Swallowing is the oral route; a buccal tablet stays between cheek and gum until it dissolves.",
+    "d": "Inside the nostril is the intranasal route, not buccal, which refers to the cheek."
+   }
+  },
+  "medication-aide-readiness-check-routes-023": {
+   "options": {
+    "a": "A household kitchen teaspoon",
+    "b": "An unmarked bottle cap",
+    "c": "An oral syringe or marked cup",
+    "d": "An injection syringe with the needle removed"
+   },
+   "distractorExplanations": {
+    "a": "Household spoons vary widely in volume, so they are not accurate for measuring liquid medication doses.",
+    "b": "A cap without calibrated markings cannot measure a dose accurately; use an oral syringe or marked cup.",
+    "d": "Injection syringes invite wrong-route errors; ISMP recommends dedicated oral syringes for liquid oral doses."
+   },
+   "explanation": "Oral syringes stay oral. This item asks: “A liquid oral med is measured with:”. The matching answer is: An oral syringe or marked cup, not a kitchen spoon. Independent UniPrep diagnostic — not an official medication aide paper. Kitchen spoons are not accurate measuring devices."
+  },
+  "medication-aide-readiness-check-routes-024": {
+   "options": {
+    "a": "A thick layer so it lasts until the next shift",
+    "b": "Applied with a bare finger straight from the jar",
+    "c": "Rubbed into any open wound nearby as well",
+    "d": "A thin layer on intact skin as ordered"
+   },
+   "distractorExplanations": {
+    "a": "Topicals are applied thinly as ordered; a thick layer does not extend action and wastes or overdoses the drug.",
+    "b": "Use gloves or an applicator and never double-dip into a shared jar; bare-finger use contaminates the product.",
+    "c": "Topical medication goes only on the ordered site; open wounds need their own wound-care order."
+   }
+  },
+  "medication-aide-readiness-check-routes-026": {
+   "options": {
+    "a": "Straight toward the septum so the spray stays inside",
+    "b": "As the product says, usually not straight up the septum",
+    "c": "Toward the back of the throat so it is swallowed",
+    "d": "Into both nostrils from one bottle shared on the unit"
+   },
+   "distractorExplanations": {
+    "a": "Aiming at the septum irritates it and can cause nosebleeds; the tip is usually aimed toward the outer wall.",
+    "c": "Nasal sprays act on the nasal lining; spraying toward the throat means the dose is swallowed instead.",
+    "d": "Nasal spray bottles are single-resident items; sharing spreads infection between residents."
+   }
+  },
+  "medication-aide-readiness-check-routes-027": {
+   "options": {
+    "a": "Within scope once the aide has watched a nurse give one",
+    "b": "Within scope if the resident asks and consents",
+    "c": "Usually outside medication-aide scope — do not improvise",
+    "d": "Allowed if the nurse draws it up and hands it over"
+   },
+   "distractorExplanations": {
+    "a": "Observing a nurse does not expand legal scope; injections are generally outside medication aide practice.",
+    "b": "Resident consent does not change the aide’s legal scope of practice, which is set by state rules.",
+    "d": "A nurse preparing the syringe does not transfer authority to inject; the aide still may not give an IM injection."
+   }
+  },
+  "medication-aide-readiness-check-routes-028": {
+   "options": {
+    "a": "Given whole with water as the order directs",
+    "b": "Held when the resident is NPO and the nurse is told",
+    "c": "Documented on the MAR right after the resident swallows",
+    "d": "Opened and sprinkled unless the label says they may"
+   },
+   "distractorExplanations": {
+    "a": "Giving a time-release capsule whole as ordered is the correct practice, not something to avoid.",
+    "b": "Holding per an NPO order and notifying the nurse is appropriate; the danger is opening the capsule.",
+    "c": "Documenting right after administration is correct practice; opening and sprinkling is what should not happen."
+   }
+  },
+  "medication-aide-readiness-check-routes-029": {
+   "options": {
+    "a": "The pinna pulled as trained for that age",
+    "b": "The pinna pulled down and back, as for a toddler",
+    "c": "The dropper tip inserted deep into the ear canal",
+    "d": "The resident sitting up straight with the head level"
+   },
+   "distractorExplanations": {
+    "b": "Down and back straightens the ear canal in young children; in adults the pinna is pulled up and back.",
+    "c": "The dropper should not enter the canal; inserting it can injure the canal and contaminate the bottle.",
+    "d": "The head is tilted with the affected ear up and kept there a few minutes so the drops stay in the canal."
+   }
+  },
+  "medication-aide-readiness-check-routes-030": {
+   "options": {
+    "a": "Meds with a full glass of juice and a light snack",
+    "b": "Follow the exact order — not a full breakfast",
+    "c": "Hold all scheduled meds until the resident can eat",
+    "d": "Nothing by mouth, including meds, until the nurse says"
+   },
+   "distractorExplanations": {
+    "a": "NPO except meds allows meds with minimal water as ordered, not juice or food.",
+    "c": "The order specifically exempts medications, so scheduled meds are still given with minimal fluid.",
+    "d": "That describes strict NPO; “except meds” means ordered medications are still given by mouth."
+   }
+  },
+  "medication-aide-readiness-check-safety-031": {
+   "options": {
+    "a": "Allowed to sleep it off alone",
+    "b": "Given the next dose anyway",
+    "c": "Monitored and the nurse told",
+    "d": "Given coffee to stay awake"
+   },
+   "distractorExplanations": {
+    "a": "New-opioid drowsiness can precede respiratory depression; the resident needs monitoring and the nurse must be told.",
+    "b": "Giving more opioid to a sedated resident adds to the risk; the nurse assesses before any further dose.",
+    "d": "Caffeine does not reverse opioid sedation and hides the problem; the change must be reported to the nurse."
+   },
+   "explanation": "Sedation stacks. This item asks: “A resident drowsy after a new opioid should be:”. The matching answer is: Monitored and the nurse told — do not give another sedative on your own. Independent UniPrep diagnostic — not an official medication aide paper. Do not give another sedative on your own."
+  },
+  "medication-aide-readiness-check-safety-034": {
+   "options": {
+    "a": "Given with an antihistamine already on the MAR",
+    "b": "Held and reported as a possible allergy",
+    "c": "Recorded as a normal side effect and given again",
+    "d": "Given, then reported at the end of the shift"
+   },
+   "distractorExplanations": {
+    "a": "An antihistamine can mask an evolving allergic reaction; the antibiotic is held until the nurse assesses.",
+    "c": "A new rash after a new antibiotic may be an allergy, which can escalate to anaphylaxis if the drug is repeated.",
+    "d": "Possible allergic reactions are reported right away, before another dose, not at shift end."
+   }
+  },
+  "medication-aide-readiness-check-safety-035": {
+   "options": {
+    "a": "Borrow a tablet from another cart to balance the count",
+    "b": "Recount at the next shift change before reporting",
+    "c": "Stop and report — do not 'fix' the book later",
+    "d": "Correct the count sheet and explain it in a note"
+   },
+   "distractorExplanations": {
+    "a": "Borrowing controlled drugs hides the discrepancy and creates a second count error; stop and report.",
+    "b": "Discrepancies are reported immediately so they can be investigated; waiting a shift delays the investigation.",
+    "d": "Altering the count record to match is falsification; the discrepancy must be reported as found."
+   }
+  },
+  "medication-aide-readiness-check-safety-036": {
+   "options": {
+    "a": "Giving the drug earlier in the day on your own",
+    "b": "Raising all four bed rails so the resident stays in bed",
+    "c": "Holding the dose whenever the resident seems sleepy",
+    "d": "Safety measures and reporting dizziness"
+   },
+   "distractorExplanations": {
+    "a": "Changing administration time is a prescriber or nurse decision; the aide reports dizziness instead.",
+    "b": "Full rails can act as a restraint and increase injury from climbing over them; use ordered fall precautions.",
+    "c": "An aide holds a dose only per the order’s parameters; drowsiness or dizziness is reported to the nurse."
+   },
+   "explanation": "Meds change fall risk. This item asks: “Fall risk after a night blood-pressure drug means:”. The matching answer is: Safety measures and reporting dizziness, not a secret extra pill. Independent UniPrep diagnostic — not an official medication aide paper. Never give an extra or unordered pill to manage it."
+  },
+  "medication-aide-readiness-check-safety-037": {
+   "options": {
+    "a": "A hazardous-drug problem — follow the special procedure",
+    "b": "Acceptable if the aide wears a pair of exam gloves",
+    "c": "Acceptable if the crushed powder is wiped up afterward",
+    "d": "Acceptable because oral tablets are not hazardous drugs"
+   },
+   "distractorExplanations": {
+    "b": "Gloves alone do not control airborne powder; hazardous drugs are manipulated only under the special procedure.",
+    "c": "Cleanup afterward does not prevent inhalation or spread of hazardous dust during crushing.",
+    "d": "Many oral antineoplastics are on the NIOSH hazardous drug list and need special handling."
+   }
+  },
+  "medication-aide-readiness-check-safety-038": {
+   "options": {
+    "a": "Is allowed if the roommate agrees to share",
+    "b": "Is a no — only their ordered drug",
+    "c": "Is allowed if the nurse is told afterward",
+    "d": "Is allowed once if doses match"
+   },
+   "distractorExplanations": {
+    "a": "A drug dispensed for one resident cannot be given to another, even with consent; this is also diversion of a controlled drug.",
+    "c": "Telling the nurse later does not make giving another resident’s opioid legal or safe; ask the nurse about the resident’s own orders.",
+    "d": "Matching strength does not change ownership; each resident receives only drugs dispensed for them."
+   }
+  },
+  "medication-aide-readiness-check-safety-039": {
+   "options": {
+    "a": "Optional if gloves are worn",
+    "b": "Needed at shift start only",
+    "c": "Required",
+    "d": "Optional for oral meds"
+   },
+   "distractorExplanations": {
+    "a": "Gloves do not replace hand hygiene; hands are cleaned before putting gloves on and after taking them off.",
+    "b": "Hand hygiene is repeated before and after each resident contact, not done once at the start of the shift.",
+    "d": "Oral meds are handled and taken by mouth, so hand hygiene matters as much as for any other route."
+   }
+  },
+  "medication-aide-readiness-check-safety-040": {
+   "options": {
+    "a": "Mixed ahead of time for the whole hallway",
+    "b": "Mixed with all of that resident’s meds in one spoonful",
+    "c": "Saved in the cart for the next scheduled dose",
+    "d": "Given to that one resident, not a shared cup"
+   },
+   "distractorExplanations": {
+    "a": "Premixing for several residents breaks identification and timing; each dose is prepared for one resident at a time.",
+    "b": "Crushed medications are generally given separately unless the pharmacist approves mixing, because of interaction and dosing concerns.",
+    "c": "Crushed doses are given right away; saved mixtures lose identity and stability and must be discarded per policy."
+   }
+  },
+  "medication-aide-readiness-check-safety-041": {
+   "options": {
+    "a": "Discard per policy and get a replacement",
+    "b": "Wipe it off and give it if it landed on a clean floor",
+    "c": "Return it to the blister pack for the pharmacy",
+    "d": "Give it, then report the contamination"
+   },
+   "distractorExplanations": {
+    "b": "A dropped tablet is contaminated regardless of how clean the floor looks; it is discarded per policy.",
+    "c": "Returning a contaminated tablet to packaging risks another resident receiving it; discard and document instead.",
+    "d": "Reporting does not make giving a contaminated tablet acceptable; get a replacement first."
+   },
+   "explanation": "Floor pills are dirty. This item asks: “If you drop a tablet on the floor:”. The matching answer is: Discard per policy and get a replacement — do not blow it off and give it. Independent UniPrep diagnostic — not an official medication aide paper. Do not blow off a dropped tablet and give it."
+  },
+  "medication-aide-readiness-check-safety-042": {
+   "options": {
+    "a": "Drugs the aide should hold for any resident over age 65 until reviewed",
+    "b": "A reason the nurse/pharmacist watches — you give only as ordered",
+    "c": "Banned in nursing homes under federal regulations",
+    "d": "A reason to cut the dose in half for residents over age 75"
+   },
+   "distractorExplanations": {
+    "a": "Beers criteria flag drugs for prescriber and pharmacist review; an aide may not hold an ordered drug because of age.",
+    "c": "The Beers criteria are expert guidance on potentially inappropriate drugs, not a federal ban.",
+    "d": "Dose changes are a prescriber decision; the aide gives the dose as ordered and reports side effects."
+   }
+  },
+  "medication-aide-readiness-check-safety-043": {
+   "options": {
+    "a": "Water to help wash the pill down",
+    "b": "Time alone to cough it up in private",
+    "c": "Emergency response — do not leave them",
+    "d": "A finger sweep to find the pill blindly"
+   },
+   "distractorExplanations": {
+    "a": "Fluids poured into a blocked airway can worsen choking or cause aspiration; call for emergency help.",
+    "b": "A choking resident must not be left alone; stay, call for help, and start the emergency response.",
+    "d": "Blind finger sweeps can push the object deeper; follow the trained choking emergency response instead."
+   }
+  },
+  "medication-aide-readiness-check-safety-044": {
+   "options": {
+    "a": "Locked at the end of each med pass",
+    "b": "Keys left in the lock during the pass",
+    "c": "Unlocked in the dining room at meals",
+    "d": "Locked when out of your sight"
+   },
+   "distractorExplanations": {
+    "a": "The cart must be locked whenever it leaves the aide’s sight, including during the pass, not just when it ends.",
+    "b": "Keys left in the lock make the cart effectively unlocked; keys stay on the aide’s person.",
+    "c": "A cart left unlocked in a common area invites diversion and accidental ingestion by residents."
+   }
+  },
+  "medication-aide-readiness-check-safety-045": {
+   "options": {
+    "a": "When in doubt, report — do not wait for 'bad enough'",
+    "b": "Report only effects that are not listed on the label",
+    "c": "Report once the effect lasts longer than a day",
+    "d": "Report at the next care-plan meeting"
+   },
+   "distractorExplanations": {
+    "b": "Listed side effects can still be severe or new for that resident; if in doubt, report it.",
+    "c": "Waiting a day can let a serious reaction progress; possible adverse effects are reported when noticed.",
+    "d": "Care-plan meetings are too late for a possible adverse reaction; the nurse is told right away."
+   }
+  },
+  "medication-aide-readiness-check-docs-046": {
+   "options": {
+    "a": "Before the pass, to save time later",
+    "b": "After the drug is taken",
+    "c": "At the end of the shift for all meds",
+    "d": "When it is poured"
+   },
+   "distractorExplanations": {
+    "a": "Pre-charting records doses that may be refused, held, or dropped, which falsifies the MAR.",
+    "c": "Batch charting at shift end risks errors and leaves the MAR inaccurate for others during the shift.",
+    "d": "Pouring is not administration; the dose is documented after the resident actually takes it."
+   },
+   "explanation": "Chart what occurred. This item asks: “Documentation happens:”. The matching answer is: After the drug is taken, not before you walk in the room. Independent UniPrep diagnostic — not an official medication aide paper. Never document before you walk into the room."
+  },
+  "medication-aide-readiness-check-docs-047": {
+   "options": {
+    "a": "Held, since the dose was not given",
+    "b": "Omitted, and retried at the next scheduled time",
+    "c": "Refused, with the nurse notified as required",
+    "d": "Refused, with crushing in food tried next"
+   },
+   "distractorExplanations": {
+    "a": "“Held” is for doses withheld under a parameter or nurse decision; a refusal has its own code and notification.",
+    "b": "Retrying at the next scheduled time can double-dose; the refusal is charted and the nurse decides what follows.",
+    "d": "Hiding a refused drug in food is covert administration, which violates resident rights without a specific order and plan."
+   },
+   "explanation": "Refusals are data. This item asks: “A refusal is charted as:”. The matching answer is: Refused, with the nurse notified as required — not a secret skip. Independent UniPrep diagnostic — not an official medication aide paper. A refusal is never a secret skip."
+  },
+  "medication-aide-readiness-check-docs-048": {
+   "options": {
+    "a": "Timed at the scheduled hour to match the MAR",
+    "b": "Corrected with correction fluid over the old time",
+    "c": "Left blank so the next shift can complete it",
+    "d": "Honest and timed as a late entry"
+   },
+   "distractorExplanations": {
+    "a": "Recording the scheduled time instead of the actual time backdates the entry and falsifies the record.",
+    "b": "Correction fluid obscures the original entry; errors get a single line, initials, and the correct information.",
+    "c": "Only the person who gave the dose documents it; another shift cannot chart care it did not provide."
+   },
+   "explanation": "Falsifying time is a legal issue. This item asks: “Late entry on the MAR must be:”. The matching answer is: Honest and timed as a late entry, not backdated as on-time. Independent UniPrep diagnostic — not an official medication aide paper. It is never backdated to look on time."
+  },
+  "medication-aide-readiness-check-docs-049": {
+   "options": {
+    "a": "A new medical diagnosis they invented",
+    "b": "A refusal they witnessed during the pass",
+    "c": "A pulse they took before digoxin",
+    "d": "A dose they held per the written parameter"
+   },
+   "distractorExplanations": {
+    "b": "Documenting a refusal the aide witnessed is required, not prohibited.",
+    "c": "Recording a pulse the aide is permitted to take before a drug like digoxin is part of the task.",
+    "d": "A dose held under the written parameter must be documented by the aide who held it."
+   }
+  },
+  "medication-aide-readiness-check-docs-050": {
+   "options": {
+    "a": "A note in the MAR without a second person",
+    "b": "A witness and the form your facility uses",
+    "c": "Flushing right away, with the count fixed later",
+    "d": "Return to the cart drawer for the next dose"
+   },
+   "distractorExplanations": {
+    "a": "Controlled-drug waste requires a second witness who co-signs; a solo MAR note does not meet that standard.",
+    "c": "Waste is documented with a witness at the time it happens; fixing the count later hides discrepancies.",
+    "d": "A dose that has been prepared or contaminated is wasted with a witness, not returned to stock."
+   }
+  },
+  "medication-aide-readiness-check-docs-051": {
+   "options": {
+    "a": "Hold all meds until the system is restored",
+    "b": "Give from memory and chart everything later",
+    "c": "Use the downtime paper process",
+    "d": "Use yesterday’s printout as today’s MAR"
+   },
+   "distractorExplanations": {
+    "a": "Downtime does not justify missing doses; the paper downtime MAR lets the pass continue safely.",
+    "b": "Memory-based passes cause omissions and wrong doses; downtime forms are used during the pass.",
+    "d": "An old printout may miss new, changed, or stopped orders; use the facility’s current downtime record."
+   },
+   "explanation": "Downtime procedures exist. This item asks: “If the eMAR is down, you:”. The matching answer is: Use the downtime paper process — you do not skip the pass. Independent UniPrep diagnostic — not an official medication aide paper. The medication pass is not skipped."
+  },
+  "medication-aide-readiness-check-docs-052": {
+   "options": {
+    "a": "Morphine can be given without checking, since it differs",
+    "b": "The allergy can be ignored if the rash was years ago",
+    "c": "Codeine cough syrups are fine, since the allergy was to tablets",
+    "d": "You still check every pass and report a new reaction"
+   },
+   "distractorExplanations": {
+    "a": "Opioids can cross-react; any related drug is checked against the allergy with the nurse before giving it.",
+    "b": "Allergies stay on the record and are checked every pass regardless of when the reaction happened.",
+    "c": "The allergy is to the drug, not the dosage form; codeine in a syrup carries the same risk."
+   }
+  },
+  "medication-aide-readiness-check-docs-053": {
+   "options": {
+    "a": "Reported at once so the resident can be checked",
+    "b": "Reported at the end of the shift on the form",
+    "c": "Corrected by skipping the next scheduled dose",
+    "d": "Reported only if the resident shows symptoms"
+   },
+   "distractorExplanations": {
+    "b": "Medication errors are reported at once so the resident can be assessed; the incident form follows, it does not replace reporting.",
+    "c": "Adjusting later doses is a nurse or prescriber decision; the error is reported so they can decide.",
+    "d": "Effects may be delayed, so every error is reported whether or not symptoms appear."
+   }
+  },
+  "medication-aide-readiness-check-docs-055": {
+   "options": {
+    "a": "Fine if it is closed after the pass",
+    "b": "A privacy risk only if names show",
+    "c": "A privacy and diversion risk",
+    "d": "Fine while the aide is in a nearby room"
+   },
+   "distractorExplanations": {
+    "a": "An open MAR in a public lobby exposes resident information while it sits there, even if closed later.",
+    "b": "The MAR shows drug and resident details that identify people and reveal controlled drugs, beyond names alone.",
+    "d": "Leaving the MAR out of sight in a public area is exactly when privacy and diversion risks occur."
+   }
+  },
+  "medication-aide-readiness-check-docs-056": {
+   "options": {
+    "a": "Read the list to any relative who visits often",
+    "b": "Hand them a printed copy of the MAR",
+    "c": "Tell them the list if they say they are family",
+    "d": "Follow facility privacy rules"
+   },
+   "distractorExplanations": {
+    "a": "Frequent visits do not make a relative authorized; disclosure follows the resident’s wishes and facility privacy rules.",
+    "b": "Releasing a copy of the MAR is a records disclosure that goes through the nurse and facility process, not the aide.",
+    "c": "Claiming to be family is not verification of authority; follow privacy rules and involve the nurse."
+   },
+   "explanation": "Privacy + the nurse. This item asks: “A family asks 'what pills is dad on?'”. The matching answer is: Follow facility privacy rules — do not recite the MAR in the hall. Independent UniPrep diagnostic — not an official medication aide paper. Never recite the MAR in the hall; refer the family to the nurse."
+  },
+  "medication-aide-readiness-check-docs-057": {
+   "options": {
+    "a": "Residents and your license",
+    "b": "The pharmacy’s billing records",
+    "c": "The outgoing shift alone",
+    "d": "Only the facility’s inventory"
+   },
+   "distractorExplanations": {
+    "b": "Shift counts exist to detect loss or diversion that harms residents, not to support pharmacy billing.",
+    "c": "Counts protect both shifts and, above all, residents; they are not just a release for the outgoing staff.",
+    "d": "Inventory matters, but the main purpose is resident safety and accountability for each staff member’s license."
+   }
+  },
+  "medication-aide-readiness-check-docs-058": {
+   "options": {
+    "a": "Use it after reading the package insert",
+    "b": "Do not use it — get training or the nurse",
+    "c": "Let the resident guide you through the dose",
+    "d": "Use it after watching a video on your phone"
+   },
+   "distractorExplanations": {
+    "a": "Reading an insert is not competency validation; the aide needs facility training or the nurse.",
+    "c": "Relying on the resident mid-dose shifts responsibility and risks a dosing error; get training or the nurse.",
+    "d": "A video is not a validated competency check; devices like insulin pens require documented training."
+   }
+  },
+  "medication-aide-readiness-check-docs-060": {
+   "options": {
+    "a": "A reminder list the aide may discard after the shift",
+    "b": "The pharmacy’s order form for refills",
+    "c": "The prescriber’s original order for each drug",
+    "d": "The legal record of what was given"
+   },
+   "distractorExplanations": {
+    "a": "The MAR is a permanent part of the medical record and is retained, not a personal reminder to discard.",
+    "b": "Refill requests use pharmacy processes; the MAR documents what was actually administered.",
+    "c": "The original order lives in the chart; the MAR is the transcribed administration record of what was given."
+   }
+  }
+ }
+}

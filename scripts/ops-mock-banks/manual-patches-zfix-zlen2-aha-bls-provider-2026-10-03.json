@@ -1,0 +1,701 @@
+{
+ "aha-bls-provider-readiness-check": {
+  "aha-bls-provider-readiness-check-adult-cpr-001": {
+   "options": {
+    "a": "Begin high-quality CPR and use an AED as soon as available",
+    "b": "Call for help and wait for EMS before starting compressions",
+    "c": "Start with 2 rescue breaths, then begin compressions at 30:2",
+    "d": "Check a pulse for up to 30 seconds before starting compressions"
+   },
+   "distractorExplanations": {
+    "b": "Waiting for EMS delays compressions; every minute without CPR lowers the chance of survival.",
+    "c": "Breaths-first (A-B-C) is the old sequence; current AHA adult CPR starts with compressions (C-A-B).",
+    "d": "Pulse checks are limited to no more than 10 seconds before starting CPR, not up to 30 seconds."
+   },
+   "explanation": "Adult cardiac arrest care prioritizes immediate compressions (starting CPR with chest compressions) and early defibrillation."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-003": {
+   "options": {
+    "a": "1 inch (2.5 cm), not exceeding about 1.5 inches (4 cm)",
+    "b": "1.5 inches (4 cm), not exceeding about 2 inches (5 cm)",
+    "c": "2 inches (5 cm), not exceeding about 2.4 inches (6 cm)",
+    "d": "3 inches (7.5 cm), not exceeding about 3.5 inches (9 cm)"
+   },
+   "distractorExplanations": {
+    "a": "One inch is far too shallow; adult compressions need a depth of at least 2 inches (5 cm).",
+    "b": "About 1.5 inches (4 cm) is the infant depth target; adults need at least 2 inches (5 cm).",
+    "d": "Three inches exceeds the 2.4-inch (6 cm) upper limit for adults and raises the risk of injury."
+   }
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-004": {
+   "options": {
+    "a": "Keeping light pressure on the sternum between compressions",
+    "b": "Lifting the hands fully off the chest after each compression",
+    "c": "Pausing about 2 seconds after each compression so the chest refills",
+    "d": "Letting the chest return to normal position between compressions"
+   },
+   "distractorExplanations": {
+    "a": "Residual pressure (leaning) prevents full recoil and reduces venous return to the heart.",
+    "b": "Hands stay in contact with the chest; lifting off risks losing hand position and bouncing.",
+    "c": "Recoil happens within each compression cycle at 100-120/min; deliberate pauses drop the rate."
+   },
+   "explanation": "Leaning reduces venous return; full recoil without leaning between compressions improves CPR quality."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-006": {
+   "options": {
+    "a": "Complete 5 cycles of CPR before attaching the pads",
+    "b": "Power on the AED, apply pads, and follow prompts",
+    "c": "Place both pads side by side on the left chest",
+    "d": "Attach the pads and keep compressing while it analyzes"
+   },
+   "distractorExplanations": {
+    "a": "Current guidance is to use the AED as soon as it arrives, not after a fixed number of CPR cycles.",
+    "c": "Pads go in anterolateral (right upper chest, left side) or anteroposterior positions, not side by side.",
+    "d": "Everyone must stand clear while the AED analyzes; compressions resume after the shock or no-shock prompt."
+   },
+   "explanation": "Early defibrillation is critical for shockable rhythms; minimize pauses and resume CPR immediately after a shock or no-shock advice."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-007": {
+   "options": {
+    "a": "Check for a pulse for 10 seconds before resuming CPR",
+    "b": "Give 2 rescue breaths, then reassess breathing",
+    "c": "Resume CPR immediately starting with compressions",
+    "d": "Turn off the AED and continue rescue breathing only"
+   },
+   "distractorExplanations": {
+    "a": "After a no-shock prompt, resume compressions at once; rhythm and pulse are rechecked after about 2 minutes.",
+    "b": "Breaths-first delays compressions; after the prompt, CPR resumes starting with compressions.",
+    "d": "Pads and AED stay on to reanalyze every 2 minutes; a pulseless patient needs compressions, not breaths alone."
+   }
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-008": {
+   "options": {
+    "a": "Heel of one hand on the upper half of the sternum, other on top",
+    "b": "Heel of one hand on the xiphoid process, other hand on top",
+    "c": "Two fingers on the sternum just below the nipple line",
+    "d": "Heel of one hand on the center of the chest, other hand on top"
+   },
+   "distractorExplanations": {
+    "a": "The upper sternum is too high; compress on the lower half of the sternum in the center of the chest.",
+    "b": "Pressing on the xiphoid can injure the liver; hands go on the lower half of the sternum above it.",
+    "c": "Fingertip compressions below the nipple line are an infant technique; adults need two hands."
+   },
+   "explanation": "Correct hand position (heel of one hand on the lower half of the sternum, other hand on top) maximizes effective compressions and reduces injury risk."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-009": {
+   "options": {
+    "a": "Coordinate roles and switch compressors about every 2 minutes",
+    "b": "Check a pulse after every cycle of 30 compressions and 2 breaths",
+    "c": "Switch compressors only when the first rescuer feels tired",
+    "d": "Stop compressions while the AED pads are being applied"
+   },
+   "distractorExplanations": {
+    "b": "Pulse checks every cycle create frequent pauses; checks happen about every 2 minutes at rhythm analysis.",
+    "c": "Fatigue lowers quality before rescuers notice it, so compressors switch about every 2 minutes.",
+    "d": "Compressions continue while pads are applied; pause when the AED analyzes or delivers a shock."
+   },
+   "explanation": "High chest compression fraction improves outcomes; limit pulse/rhythm checks, and brief planned switches beat long chaotic pauses."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-010": {
+   "options": {
+    "a": "Be delivered over about 3 seconds each to fill the lungs",
+    "b": "Produce visible chest rise over about 1 second each",
+    "c": "Fill the lungs until the abdomen visibly rises",
+    "d": "Be given as 10 breaths before starting compressions"
+   },
+   "distractorExplanations": {
+    "a": "Each breath should last about 1 second; longer breaths lengthen pauses in compressions.",
+    "c": "Abdominal rise signals gastric inflation; give just enough volume for visible chest rise.",
+    "d": "Prolonged breath-first sequences delay compressions; adult CPR uses 30:2 starting with compressions."
+   },
+   "explanation": "Overventilation increases intrathoracic pressure and decreases venous return; avoid excessive ventilation."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-011": {
+   "options": {
+    "a": "Start CPR for 2 minutes before calling EMS or getting an AED",
+    "b": "Check a pulse for 30 seconds, then call EMS and start CPR",
+    "c": "Check responsiveness, activate EMS/get AED, then start CPR",
+    "d": "Check responsiveness, give 2 breaths, then activate EMS"
+   },
+   "distractorExplanations": {
+    "a": "Two minutes of CPR before calling is for a lone rescuer with an unwitnessed child or infant arrest, not a witnessed adult collapse.",
+    "b": "Pulse checks are limited to 10 seconds; a 30-second check delays EMS activation and compressions.",
+    "d": "Breaths before activating EMS delay help and the AED; adult CPR then starts with compressions."
+   },
+   "explanation": "Rapid EMS activation and AED retrieval are core adult Chain of Survival links; ensure scene safety and check responsiveness and breathing first."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-012": {
+   "options": {
+    "a": "Place the pad directly over the patch to save time",
+    "b": "Delay the AED until EMS removes the patch safely",
+    "c": "Wipe the patch with an alcohol pad and place the pad over it",
+    "d": "Remove the patch and wipe the area dry"
+   },
+   "distractorExplanations": {
+    "a": "A pad over a medication patch can block energy delivery and cause skin burns.",
+    "b": "Rescuers remove the patch themselves; waiting for EMS loses defibrillation time.",
+    "c": "Wiping the surface does not remove the patch; it can still block current and cause burns."
+   },
+   "explanation": "Patches can block energy and burn skin; remove the patch and wipe residue dry before applying the pad."
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-014": {
+   "options": {
+    "a": "Breathing adequately—place in the recovery position and monitor",
+    "b": "Not breathing normally—start CPR if unresponsive and pulseless",
+    "c": "Seizure activity—protect the head and wait for it to stop",
+    "d": "An airway obstruction—begin abdominal thrusts at once"
+   },
+   "distractorExplanations": {
+    "a": "Agonal gasps are not normal breathing; the recovery position would delay needed CPR.",
+    "c": "Gasping and brief jerking can follow cardiac arrest; treat it as not breathing, not as a seizure.",
+    "d": "Agonal gasps signal cardiac arrest, not choking; abdominal thrusts are for responsive choking victims."
+   }
+  },
+  "aha-bls-provider-readiness-check-adult-cpr-015": {
+   "options": {
+    "a": "30 seconds (or at each pause for breaths)",
+    "b": "1 minute (or sooner if the compressor feels tired)",
+    "c": "2 minutes (or when prompted by AED/team leader)",
+    "d": "5 minutes (or when the AED prompts a shock)"
+   },
+   "distractorExplanations": {
+    "a": "Switching every 30 seconds adds needless pauses; the standard interval is about 2 minutes.",
+    "b": "Fatigue degrades quality before rescuers notice it; switch about every 2 minutes, not by feel.",
+    "d": "Five minutes is too long; depth and rate fall off within about 2 minutes of compressing."
+   },
+   "explanation": "Fatigue quickly degrades depth and rate; planned switches about every 2 minutes reduce fatigue and maintain quality."
+  },
+  "aha-bls-provider-readiness-check-child-infant-001": {
+   "options": {
+    "a": "About one-third the depth of the chest, approximately 2 inches (5 cm)",
+    "b": "Shallow enough to avoid rib fractures, about one-quarter of the chest",
+    "c": "The same 2.4-inch (6 cm) minimum used for adult compressions",
+    "d": "About one-half the depth of the chest, approximately 3 inches (7.5 cm)"
+   },
+   "distractorExplanations": {
+    "b": "Fear of rib fractures leads to shallow compressions; children need about one-third of chest depth.",
+    "c": "2.4 inches (6 cm) is the adult upper limit, not a minimum; children need about 2 inches (5 cm).",
+    "d": "One-half of chest depth is too deep and risks injury; the pediatric target is about one-third."
+   }
+  },
+  "aha-bls-provider-readiness-check-child-infant-003": {
+   "options": {
+    "a": "The heel of both hands stacked, as for an adult victim",
+    "b": "Two thumbs pressing on the xiphoid with hands around the chest",
+    "c": "Two fingers (1 rescuer) or two-thumb–encircling hands (2 rescuers)",
+    "d": "Two fingers placed on the upper third of the sternum"
+   },
+   "distractorExplanations": {
+    "a": "Two stacked hands are an adult technique and would compress an infant chest far too deeply.",
+    "b": "Thumbs go just below the nipple line on the lower sternum, not on the xiphoid process.",
+    "d": "Infant compressions are on the lower half of the sternum, just below the nipple line, not the upper third."
+   }
+  },
+  "aha-bls-provider-readiness-check-child-infant-004": {
+   "options": {
+    "a": "0.5 inch (1 cm)",
+    "b": "0.75 inch (2 cm)",
+    "c": "1 inch (2.5 cm)",
+    "d": "1.5 inches (4 cm)"
+   },
+   "distractorExplanations": {
+    "a": "Half an inch is far too shallow to generate blood flow; infants need about 1.5 inches (4 cm).",
+    "b": "Three-quarters of an inch is too shallow; the infant target is about one-third chest depth, 1.5 inches.",
+    "c": "One inch underestimates the target; infant compressions should be about 1.5 inches (4 cm), one-third of chest depth."
+   }
+  },
+  "aha-bls-provider-readiness-check-child-infant-005": {
+   "options": {
+    "a": "Activate EMS/get AED if not already done, then continue CPR",
+    "b": "Continue CPR without pausing until EMS arrives at the scene",
+    "c": "Check a pulse for 30 seconds before deciding to call EMS",
+    "d": "Give 5 back blows, then continue CPR before calling EMS"
+   },
+   "distractorExplanations": {
+    "b": "No one has called EMS yet; after about 2 minutes of CPR the lone rescuer must activate EMS.",
+    "c": "Pulse checks are limited to 10 seconds; a 30-second check delays EMS activation and CPR.",
+    "d": "Back blows are for a responsive choking infant, not an unwitnessed arrest; the next step is EMS."
+   }
+  },
+  "aha-bls-provider-readiness-check-child-infant-006": {
+   "options": {
+    "a": "Sudden ventricular fibrillation than respiratory failure or shock",
+    "b": "Respiratory problems / hypoxia than primary sudden cardiac causes",
+    "c": "Congenital heart rhythm disorders than airway problems",
+    "d": "Commotio cordis from chest impact than respiratory causes"
+   },
+   "distractorExplanations": {
+    "a": "VF is less common in children; most pediatric arrests follow respiratory failure or shock.",
+    "c": "Congenital rhythm disorders cause some arrests, but respiratory failure and hypoxia are more common.",
+    "d": "Commotio cordis is rare; pediatric arrest usually follows progressive respiratory failure."
+   },
+   "explanation": "Pediatric arrest is more often preceded by respiratory problems/hypoxia than primary sudden cardiac causes, though both occur; the Pediatric Chain of Survival emphasizes prevention and oxygenation, and compressions are still given for pulseless arrest."
+  },
+  "aha-bls-provider-readiness-check-child-infant-008": {
+   "options": {
+    "a": "Be quick cheek puffs without watching for chest rise",
+    "b": "Fill the infant's lungs until the abdomen rises",
+    "c": "Be delivered over about 3 seconds each",
+    "d": "Be gentle enough to produce chest rise"
+   },
+   "distractorExplanations": {
+    "a": "Breaths are judged by visible chest rise; puffs without watching risk giving too little or too much.",
+    "b": "Abdominal rise signals gastric inflation; give just enough volume for visible chest rise.",
+    "c": "Each breath takes about 1 second; longer breaths add pauses and risk overinflation."
+   },
+   "explanation": "Overventilation is harmful; visible chest rise is the guide. With mouth-to-mouth-and-nose, the rescuer's mouth covers the infant's mouth and nose."
+  },
+  "aha-bls-provider-readiness-check-child-infant-010": {
+   "options": {
+    "a": "Full CPR at 15:2 now, since the child is unresponsive and not breathing",
+    "b": "Rescue breathing, and start compressions if pulse remains <60 with poor perfusion",
+    "c": "Rescue breathing at 1 breath every 6 seconds, starting compressions only if pulse is lost",
+    "d": "Recovery position and monitoring until EMS arrives, with no breaths given"
+   },
+   "distractorExplanations": {
+    "a": "With a pulse of 60 or more, give rescue breaths; compressions start if it falls below 60 with poor perfusion.",
+    "c": "Pediatric rescue breathing is 1 breath every 2-3 seconds, and compressions start below 60 with poor perfusion, not on pulse loss.",
+    "d": "A child who is not breathing normally needs rescue breaths; the recovery position is for adequate breathing."
+   },
+   "explanation": "Pediatric bradycardia with poor perfusion is a compression indication even if a pulse is present but too slow; give rescue breathing with pulse checks per AHA pediatric guidance."
+  },
+  "aha-bls-provider-readiness-check-child-infant-012": {
+   "options": {
+    "a": "40 to 60 per minute",
+    "b": "60 to 80 per minute",
+    "c": "80 to 100 per minute",
+    "d": "100 to 120 per minute"
+   },
+   "distractorExplanations": {
+    "a": "40-60/min sits near the bradycardia threshold for starting compressions; it is not a compression rate.",
+    "b": "60-80/min is too slow; infants and children get the same 100-120/min rate as adults.",
+    "c": "80-100/min is below target; the pediatric compression rate matches adults at 100-120/min."
+   }
+  },
+  "aha-bls-provider-readiness-check-child-infant-013": {
+   "options": {
+    "a": "Protect airway, place recovery position if appropriate, and monitor",
+    "b": "Begin chest compressions because a seizure can stop the heart",
+    "c": "Place a bite block in the mouth to protect the tongue",
+    "d": "Give sips of water to prevent dehydration once the seizure has ended"
+   },
+   "distractorExplanations": {
+    "b": "Compressions are for pulseless arrest or poor perfusion; this child has a pulse and adequate breathing.",
+    "c": "Nothing goes in a postictal child's mouth; objects can break teeth or block the airway.",
+    "d": "Oral fluids after a seizure risk aspiration until the child is fully alert with a protected airway."
+   },
+   "explanation": "CPR is for arrest/poor perfusion states; postictal care is supportive: protect the airway, monitor, and activate EMS as indicated by condition and history."
+  },
+  "aha-bls-provider-readiness-check-child-infant-014": {
+   "options": {
+    "a": "On the lower tip of the sternum (xiphoid)",
+    "b": "Just below the nipple line on the sternum",
+    "c": "On the upper third of the sternum near the neck",
+    "d": "On the left chest over the heart"
+   },
+   "distractorExplanations": {
+    "a": "Pressing on the xiphoid risks liver injury; compress just below the nipple line on the sternum.",
+    "c": "The upper sternum is too high; infant compressions use the lower half of the sternum.",
+    "d": "Compressions go on the sternum, not the left chest; the heart is compressed between sternum and spine."
+   }
+  },
+  "aha-bls-provider-readiness-check-child-infant-015": {
+   "options": {
+    "a": "Cut adult pads in half so both fit on the front of the chest",
+    "b": "Overlap the pads slightly so both fit on the front of the chest",
+    "c": "Ensure pads do not touch (use AP placement if needed on small chests)",
+    "d": "Skip the AED for children under 8 years if pediatric pads are not available"
+   },
+   "distractorExplanations": {
+    "a": "Pads must not be cut; use pediatric pads, or adult pads in anteroposterior position if needed.",
+    "b": "Touching or overlapping pads can arc current; use anteroposterior placement instead.",
+    "d": "If pediatric pads or an attenuator are unavailable, use adult pads; do not skip the AED."
+   },
+   "explanation": "Pad contact and separation matter for effective, safe defibrillation; follow manufacturer guidance and use AP placement on small chests."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-001": {
+   "options": {
+    "a": "Abdominal thrusts until object expels or victim becomes unresponsive",
+    "b": "Encouraging forceful coughing and waiting for the object to clear itself",
+    "c": "A blind finger sweep to find the object, then abdominal thrusts",
+    "d": "Rescue breaths to push the object past the airway"
+   },
+   "distractorExplanations": {
+    "b": "Coughing is encouraged in mild obstruction; inability to speak or cough means severe obstruction needing thrusts.",
+    "c": "Blind finger sweeps can push the object deeper; remove an object only if you can see it.",
+    "d": "Rescue breaths are given to an unresponsive victim within CPR; a responsive choking adult needs thrusts."
+   }
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-002": {
+   "options": {
+    "a": "Continue abdominal thrusts with the victim lying on the back",
+    "b": "Lower to a firm surface, begin CPR, and look for an object before breaths",
+    "c": "Do a blind finger sweep, then give 2 breaths before compressions",
+    "d": "Place in the recovery position and wait for EMS to clear the blocked airway"
+   },
+   "distractorExplanations": {
+    "a": "Supine abdominal thrusts are no longer taught; an unresponsive choking victim gets CPR.",
+    "c": "Blind sweeps can push the object deeper, and a breaths-first sequence delays compressions.",
+    "d": "An unresponsive choking victim is not breathing effectively; start CPR rather than recovery position."
+   },
+   "explanation": "Unresponsive choking transitions to CPR; look in the mouth before breaths and remove visible objects only, with no blind sweeps."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-003": {
+   "options": {
+    "a": "5 back blows followed by 5 abdominal thrusts",
+    "b": "5 chest thrusts followed by 5 abdominal thrusts",
+    "c": "5 back blows followed by 5 chest thrusts",
+    "d": "5 back blows followed by a blind finger sweep"
+   },
+   "distractorExplanations": {
+    "a": "Abdominal thrusts can injure an infant's liver; infants get back blows and chest thrusts.",
+    "b": "Abdominal thrusts are not used in infants; the sequence starts with 5 back blows.",
+    "d": "Blind finger sweeps can push the object deeper in an infant; remove only visible objects."
+   },
+   "explanation": "Infant FBAO uses back blows and chest thrusts, not abdominal thrusts; repeat until relieved or the infant becomes unresponsive."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-005": {
+   "options": {
+    "a": "Pregnant or markedly obese responsive adults",
+    "b": "Responsive children aged 1 year to puberty",
+    "c": "Adults with a mild cough who can still speak",
+    "d": "Elderly adults with a history of heart disease"
+   },
+   "distractorExplanations": {
+    "b": "Children from 1 year to puberty get abdominal thrusts like adults; chest thrusts are for infants and special cases.",
+    "c": "A mild obstruction with an effective cough needs encouragement to cough, not thrusts.",
+    "d": "Age and cardiac history do not change technique; chest thrusts are for pregnancy or marked obesity."
+   }
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-006": {
+   "options": {
+    "a": "Chest compressions at 30:2 because naloxone takes time to act",
+    "b": "Rescue breathing and naloxone per local protocols, plus EMS activation",
+    "c": "Naloxone alone, then the recovery position while waiting for EMS",
+    "d": "Rescue breaths only after naloxone has failed to work within 5 minutes"
+   },
+   "distractorExplanations": {
+    "a": "With a pulse present, the priority is ventilation; compressions start if the pulse is lost.",
+    "c": "Naloxone does not replace ventilation; an apneic patient with a pulse needs rescue breaths.",
+    "d": "Rescue breathing starts at once; waiting for naloxone to act leaves the patient hypoxic."
+   },
+   "explanation": "Opioid toxicity causes respiratory depression; support breathing (rescue breathing/ventilatory support) and use naloxone when indicated/available."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-007": {
+   "options": {
+    "a": "Give naloxone first and wait 2 minutes before starting CPR",
+    "b": "Give rescue breaths and naloxone, but skip the AED in an overdose arrest",
+    "c": "Start CPR and use AED; administer naloxone without delaying compressions",
+    "d": "Start CPR but withhold the AED until naloxone has been given"
+   },
+   "distractorExplanations": {
+    "a": "In pulseless arrest CPR starts at once; naloxone must not delay compressions.",
+    "b": "Opioid-associated arrests can have shockable rhythms; use the AED as in any arrest.",
+    "d": "The AED is applied as soon as it arrives; naloxone must not delay defibrillation."
+   },
+   "explanation": "Cardiac arrest care still follows CPR/AED; naloxone is adjunctive, given as soon as available, and is not a reason to skip BLS."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-008": {
+   "options": {
+    "a": "Reverse low blood sugar in a person found unresponsive",
+    "b": "Permanently reverse an overdose so EMS is not needed",
+    "c": "Reverse respiratory depression from any sedative drug",
+    "d": "Temporarily reverse opioid-induced respiratory depression"
+   },
+   "distractorExplanations": {
+    "a": "Low blood sugar is treated with glucose; naloxone reverses opioid effects, not hypoglycemia.",
+    "b": "Naloxone wears off, often before the opioid does, so EMS care is still needed.",
+    "c": "Naloxone is opioid-specific; it does not reverse benzodiazepines, alcohol, or other sedatives."
+   }
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-009": {
+   "options": {
+    "a": "Become agitated or re-sedate later as naloxone wears off",
+    "b": "Be released without EMS once awake for 15 minutes",
+    "c": "Stay alert, since naloxone lasts longer than most opioids do",
+    "d": "Safely drive home once breathing returns to normal"
+   },
+   "distractorExplanations": {
+    "b": "Re-sedation can occur after naloxone wears off; the person needs ongoing observation and EMS care.",
+    "c": "Naloxone's effect often ends before long-acting opioids do, so re-sedation is a real risk.",
+    "d": "Re-sedation can follow as naloxone wears off; the person should not drive and needs observation."
+   },
+   "explanation": "Renarcotization is a known risk; observation is mandatory, so continue observation and EMS care."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-010": {
+   "options": {
+    "a": "Abdominal thrusts while kneeling astride the child",
+    "b": "CPR with checks for visible objects before breaths",
+    "c": "Back blows and chest thrusts while lying on the floor",
+    "d": "Blind finger sweeps before each set of compressions"
+   },
+   "distractorExplanations": {
+    "a": "Astride abdominal thrusts are not taught; an unresponsive choking child gets CPR.",
+    "c": "Back blows and chest thrusts are for responsive choking infants, not an unresponsive child.",
+    "d": "Blind sweeps can push the object deeper; remove only objects you can see."
+   }
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-011": {
+   "options": {
+    "a": "Loud forceful coughing with the ability to speak in full sentences",
+    "b": "Noisy wheezing between strong, effective coughs",
+    "c": "Inability to speak, weak/silent cough, universal choking sign",
+    "d": "Hoarse voice, strong cough, and normal skin color"
+   },
+   "distractorExplanations": {
+    "a": "Forceful coughing and full speech mean air is moving: mild obstruction, so encourage coughing.",
+    "b": "Wheezing between effective coughs indicates mild obstruction; keep encouraging the victim to cough.",
+    "d": "A strong cough with normal color and voice is mild obstruction; severe means no effective air movement."
+   },
+   "explanation": "Differentiate mild vs severe to choose observation vs thrusts; severe signs also include cyanosis."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-012": {
+   "options": {
+    "a": "Just above the navel, below the ribs",
+    "b": "On the xiphoid process",
+    "c": "Upper third of the sternum",
+    "d": "Center of the sternum"
+   },
+   "distractorExplanations": {
+    "a": "Just above the navel is the abdominal-thrust position, which compresses the gravid uterus.",
+    "b": "Pressing on the xiphoid risks liver injury; chest thrusts use the center of the sternum.",
+    "c": "The upper sternum is too high; hands go on the center of the sternum, like CPR compressions."
+   },
+   "explanation": "Chest thrusts avoid the gravid abdomen; hands go in the same general area as CPR compressions, per BLS training details."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-013": {
+   "options": {
+    "a": "Use PPE as trained and avoid needle sticks",
+    "b": "Delaying care until hazmat clears skin-contact risk",
+    "c": "Wearing an N95 respirator before touching the victim",
+    "d": "Recapping found needles before moving the victim"
+   },
+   "distractorExplanations": {
+    "b": "Incidental skin contact with fentanyl is very low risk; delaying care for hazmat costs critical time.",
+    "c": "Routine respirators are not needed for overdose response; standard PPE and sharps care suffice.",
+    "d": "Recapping needles is a leading cause of needle-stick injury; leave sharps alone or use a sharps container."
+   },
+   "explanation": "Rescuers protect themselves while providing rapid care; know fentanyl exposure myths vs real risks. Incidental skin contact is not the main danger; avoid mucous membrane/sharps exposure."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-014": {
+   "options": {
+    "a": "Done by any BLS rescuer with an airway kit",
+    "b": "Left to trained ALS providers",
+    "c": "Started before chest compressions begin",
+    "d": "Given priority over early AED use"
+   },
+   "distractorExplanations": {
+    "a": "Advanced airways need ALS training and credentials; BLS uses bag-mask or mouth-to-mask ventilation.",
+    "c": "Compressions come first; advanced airway placement must not delay CPR.",
+    "d": "Early defibrillation outranks advanced airway placement in the BLS sequence."
+   },
+   "explanation": "Know your scope; BLS focuses on basic ventilation and compressions, and high-quality BLS bridges to ALS."
+  },
+  "aha-bls-provider-readiness-check-choking-opioid-015": {
+   "options": {
+    "a": "Switch to rescue breaths to force the object down",
+    "b": "Stop thrusts and wait for EMS while the victim coughs",
+    "c": "Continue cycles of thrusts until the object is expelled",
+    "d": "Try a blind finger sweep after each unsuccessful round of thrusts"
+   },
+   "distractorExplanations": {
+    "a": "Rescue breaths are for unresponsive victims during CPR; a responsive victim needs continued thrusts.",
+    "b": "A victim who cannot cough effectively needs ongoing thrusts, not waiting for EMS.",
+    "d": "Blind sweeps can push the object deeper; look for and remove only visible objects."
+   },
+   "explanation": "Persist with the choking algorithm until the object is expelled; prepare to transition to CPR if the victim becomes unresponsive."
+  },
+  "aha-bls-provider-readiness-check-team-special-001": {
+   "options": {
+    "a": "The receiver repeats back the order and the sender confirms",
+    "b": "The sender repeats the order twice so everyone hears it",
+    "c": "The receiver nods and starts the task without speaking",
+    "d": "Each team member reports status to the leader at set intervals"
+   },
+   "distractorExplanations": {
+    "b": "Repeating an order is one-way; closed loop needs the receiver to echo it and the sender to confirm.",
+    "c": "A nod gives no verbal check; closed loop requires a read-back and confirmation.",
+    "d": "Scheduled reports are status updates; closed loop confirms each order as it is given."
+   }
+  },
+  "aha-bls-provider-readiness-check-team-special-002": {
+   "options": {
+    "a": "Doing chest compressions personally while directing the team",
+    "b": "Assigning roles, monitoring CPR quality, and summarizing the plan",
+    "c": "Managing the airway while directing the other roles",
+    "d": "Waiting for team members to choose their own roles"
+   },
+   "distractorExplanations": {
+    "a": "The leader stays hands-off to oversee the whole resuscitation and CPR quality.",
+    "c": "Airway management is a team member role; a hands-on leader loses oversight.",
+    "d": "The leader assigns roles; letting members self-select causes gaps and duplication."
+   }
+  },
+  "aha-bls-provider-readiness-check-team-special-003": {
+   "options": {
+    "a": "Report the error to the team leader at the debrief afterward",
+    "b": "Quietly correct the error without telling the leader",
+    "c": "Speak up clearly if a critical error is about to occur",
+    "d": "Wait until the leader asks for team input"
+   },
+   "distractorExplanations": {
+    "a": "Critical errors must be addressed in real time; the debrief is too late to protect the patient.",
+    "b": "Silent corrections bypass the leader and closed-loop communication; state the concern clearly.",
+    "d": "Waiting for permission lets an unsafe action happen; speak up immediately."
+   },
+   "explanation": "Safety culture expects respectful challenge of dangerous actions; speak up when a critical error or unsafe action is about to occur."
+  },
+  "aha-bls-provider-readiness-check-team-special-004": {
+   "options": {
+    "a": "2 breaths after every 15 compressions, pausing for each",
+    "b": "2 breaths after every 30 compressions, as without an airway",
+    "c": "1 breath every 6 seconds, pausing compressions for each",
+    "d": "1 breath every 6 seconds with continuous compressions"
+   },
+   "distractorExplanations": {
+    "a": "15:2 with pauses is two-rescuer child/infant CPR without an advanced airway.",
+    "b": "30:2 is for CPR without an advanced airway; with one in place, compressions are continuous.",
+    "c": "With an advanced airway, compressions do not pause for breaths; ventilation is asynchronous."
+   },
+   "explanation": "An advanced airway allows continuous compressions with timed breaths: 1 breath every 6 seconds (10/min) without 30:2 pauses."
+  },
+  "aha-bls-provider-readiness-check-team-special-005": {
+   "options": {
+    "a": "Perform manual left uterine displacement to relieve aortocaval compression",
+    "b": "Perform manual right uterine displacement to relieve vena cava pressure",
+    "c": "Withhold AED shocks to protect the fetus until obstetric help arrives",
+    "d": "Move hand position 2 inches lower on the sternum for compressions"
+   },
+   "distractorExplanations": {
+    "b": "Displacement is to the left, moving the uterus off the aorta and inferior vena cava.",
+    "c": "Defibrillation is safe and indicated in pregnancy; withholding shocks harms mother and fetus.",
+    "d": "Compression hand position is the same as for other adults, on the lower half of the sternum."
+   },
+   "explanation": "LUD improves venous return when the uterus is clinically significant; defibrillation is still indicated when needed; maternal resuscitation prioritizes CPR."
+  },
+  "aha-bls-provider-readiness-check-team-special-006": {
+   "options": {
+    "a": "Keep going until the 2-minute rhythm check, then switch",
+    "b": "Announce the need to switch and rotate immediately",
+    "c": "Slow the rate to 90 per minute to keep the depth",
+    "d": "Use one hand to rest the other while compressing"
+   },
+   "distractorExplanations": {
+    "a": "A fatigued compressor delivers shallow compressions; switch now rather than waiting for the check.",
+    "c": "Rate must stay at 100-120/min; trading rate for depth still lowers CPR quality.",
+    "d": "Adult compressions need two hands to reach adequate depth; resting one hand reduces depth further."
+   },
+   "explanation": "Teamwork corrects fatigue; announce the switch and rotate with minimal pause, since pride should not degrade CPR quality."
+  },
+  "aha-bls-provider-readiness-check-team-special-007": {
+   "options": {
+    "a": "Squeezing the bag fully and quickly for each breath",
+    "b": "One-rescuer use, which gives the best mask seal",
+    "c": "Proper seal and often two-person technique",
+    "d": "A mask sized to cover the chin and the eyes"
+   },
+   "distractorExplanations": {
+    "a": "Full, fast squeezes overinflate and cause gastric inflation; give just enough for chest rise over 1 second.",
+    "b": "Two-rescuer bag-mask ventilation gives a better seal than the one-rescuer technique.",
+    "d": "The mask covers the nose and mouth, from the bridge of the nose to the cleft of the chin, not the eyes."
+   },
+   "explanation": "Seal and airway position determine tidal delivery; two-person technique gives better ventilation. Avoid overventilation."
+  },
+  "aha-bls-provider-readiness-check-team-special-009": {
+   "options": {
+    "a": "Move the victim to a firm surface",
+    "b": "Compress harder to make up for the soft mattress",
+    "c": "Switch to rescue breaths until a backboard arrives",
+    "d": "Compress at a faster rate to offset the mattress"
+   },
+   "distractorExplanations": {
+    "b": "Extra force on a soft surface is absorbed by the mattress; firm support is needed for effective depth.",
+    "c": "Compressions must continue; moving to a firm surface takes priority over breaths-only care.",
+    "d": "A faster rate does not fix lost depth on a mattress; 100-120/min stays the target rate."
+   },
+   "explanation": "Soft surfaces dissipate force; move the victim to a firm surface or place a backboard if available to improve compression effectiveness."
+  },
+  "aha-bls-provider-readiness-check-team-special-010": {
+   "options": {
+    "a": "Press the pads firmly over the hair and analyze",
+    "b": "Quickly remove hair in the pad area so pads adhere",
+    "c": "Move both pads to the back where there is less hair",
+    "d": "Delay the AED and continue CPR until EMS arrives"
+   },
+   "distractorExplanations": {
+    "a": "Pads over thick hair make poor contact, causing failed analysis or skin burns.",
+    "c": "Both pads on the back do not create a correct current path through the heart.",
+    "d": "Delaying defibrillation lowers survival; clear the hair and use the AED."
+   },
+   "explanation": "Pad contact is required for AED function; kits often include a razor, so remove hair in the pad area, then analyze."
+  },
+  "aha-bls-provider-readiness-check-team-special-011": {
+   "options": {
+    "a": "Apply the pads to the wet chest, as AEDs are water-safe",
+    "b": "Dry only the pad sites, leaving the victim in the water",
+    "c": "Move to a dry area if possible and dry the chest",
+    "d": "Turn the victim onto the side to drain water first"
+   },
+   "distractorExplanations": {
+    "a": "Water conducts current across the chest and toward rescuers, so the chest must be dried first.",
+    "b": "Leaving the victim in standing water risks shocking rescuers; move to a dry area first.",
+    "d": "Draining water from the lungs delays CPR and AED use and is not part of BLS."
+   },
+   "explanation": "Reduce shock hazard to rescuers by avoiding standing water; AEDs are used after reasonable drying/movement."
+  },
+  "aha-bls-provider-readiness-check-team-special-012": {
+   "options": {
+    "a": "Rotates freely between tasks as needs arise",
+    "b": "Takes direction from whoever is closest to the patient",
+    "c": "Chooses a task after first seeing which roles are already covered",
+    "d": "Knows their assignment and stays in lane unless reassigned"
+   },
+   "distractorExplanations": {
+    "a": "Free rotation causes gaps; members take assigned roles and switch on the leader's call.",
+    "b": "Direction comes from one designated team leader, not from proximity to the patient.",
+    "c": "Self-selecting roles causes gaps and duplication; the leader assigns roles."
+   },
+   "explanation": "Clear roles (compressions, airway, AED, documentation) prevent task fixation and missed compressions."
+  },
+  "aha-bls-provider-readiness-check-team-special-013": {
+   "options": {
+    "a": "Prompting rate, depth, recoil, and pauses in real time",
+    "b": "Analyzing the heart rhythm and advising a shock",
+    "c": "Reporting CPR quality only at the post-event debrief",
+    "d": "Setting the ventilation volume for the bag-mask"
+   },
+   "distractorExplanations": {
+    "b": "Rhythm analysis is the AED's job; feedback devices measure compression quality.",
+    "c": "Feedback devices coach in real time during CPR; debrief data is a secondary use.",
+    "d": "Feedback devices focus on compressions and pauses, not on setting bag-mask volume."
+   }
+  },
+  "aha-bls-provider-readiness-check-team-special-014": {
+   "options": {
+    "a": "Ventilate through the mouth and nose as in other adults",
+    "b": "Ventilate via the tracheostomy using appropriate interface as trained",
+    "c": "Remove the tracheostomy tube first, then ventilate by the mouth and nose",
+    "d": "Skip ventilation and give compression-only CPR instead"
+   },
+   "distractorExplanations": {
+    "a": "Breathing occurs through the stoma; mouth breaths will not reach the lungs effectively.",
+    "c": "Removing the tube can close the airway; ventilate through the tracheostomy.",
+    "d": "Trained providers ventilate through the stoma; skipping breaths loses oxygenation."
+   }
+  },
+  "aha-bls-provider-readiness-check-team-special-015": {
+   "options": {
+    "a": "Remove the AED pads and sit the patient upright to help them breathe",
+    "b": "Continue compressions for 2 more minutes to prevent re-arrest",
+    "c": "Support airway/breathing, monitor pulse, and prepare for ALS care",
+    "d": "Give sips of water once the patient begins to respond to voice"
+   },
+   "distractorExplanations": {
+    "a": "Pads stay on after ROSC because re-arrest is common and may need another shock.",
+    "b": "Compressions on a patient with a pulse are not indicated; monitor and support instead.",
+    "d": "Oral fluids risk aspiration after ROSC; nothing by mouth while consciousness is altered."
+   },
+   "explanation": "Re-arrest is common; continue close monitoring of pulse and blood pressure as able, with supportive care, and prepare for transport/ALS care."
+  }
+ }
+}

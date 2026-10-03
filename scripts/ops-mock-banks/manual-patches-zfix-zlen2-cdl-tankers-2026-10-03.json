@@ -1,0 +1,693 @@
+{
+ "cdl-tankers-readiness-check": {
+  "cdl-tankers-readiness-check-liquid-surge-001": {
+   "options": {
+    "a": "Side-to-side sloshing that occurs only in fully loaded tanks",
+    "b": "Pressure buildup in the tank as the product heats and expands",
+    "c": "Vapor movement through the vents during loading and unloading",
+    "d": "Forward and back movement of liquid that can push the vehicle"
+   },
+   "distractorExplanations": {
+    "a": "Surge is mainly forward-and-back wave motion and is worst in partially filled tanks; a full tank leaves little room for liquid to move.",
+    "b": "Heat-driven expansion is the reason outage is left in the tank; it is a volume issue, not the wave motion that pushes the truck.",
+    "c": "Vapor flow through vents is a loading and vapor-control issue; surge is the liquid itself moving and shoving the vehicle."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-002": {
+   "options": {
+    "a": "Filled to capacity with no free surface",
+    "b": "Partially filled so liquid can move freely",
+    "c": "Divided by baffles into smaller compartments",
+    "d": "Nearly empty with only vapor left inside"
+   },
+   "distractorExplanations": {
+    "a": "A tank filled to capacity has almost no free surface, so liquid cannot build momentum; partial loads surge far more.",
+    "c": "Baffles slow forward-and-back flow, so a baffled tank surges less than a partially filled smooth-bore tank.",
+    "d": "With only vapor inside there is no liquid mass to surge; the danger comes from a partial liquid load moving freely."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-003": {
+   "options": {
+    "a": "Stop side-to-side surge as well as forward surge",
+    "b": "Separate different products into sealed compartments",
+    "c": "Allow liquid to expand without overfilling the tank",
+    "d": "Slow liquid surge through bulkheads with openings"
+   },
+   "distractorExplanations": {
+    "a": "Baffles slow forward-and-back surge, but the CDL manual warns that side-to-side surge still occurs and can cause rollover.",
+    "b": "Solid bulkheads divide a tank into sealed compartments; baffles have openings and exist to slow surge, not separate products.",
+    "c": "Room for expansion is provided by outage (leaving empty space), not by baffles inside the tank."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-004": {
+   "options": {
+    "a": "Less care because smooth bores haul lighter food loads",
+    "b": "Faster cornering since surge settles quickly",
+    "c": "Smoother control because surge can be greater",
+    "d": "The same following distance as a baffled tank of equal size"
+   },
+   "distractorExplanations": {
+    "a": "Smooth-bore tanks often carry food products such as milk, but with nothing to slow the liquid the forward-and-back surge is stronger, so more care is needed.",
+    "b": "With no baffles, surge in a smooth-bore tank is stronger and lasts longer; cornering speed should be lower, not higher.",
+    "d": "An unbaffled tank has stronger surge than a baffled one, so it needs more space and smoother braking, not the same distance."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-005": {
+   "options": {
+    "a": "Surge forward, then surge back as the vehicle settles",
+    "b": "Move mostly side to side rather than forward and back",
+    "c": "Stay in place if the tank has baffles installed",
+    "d": "Shorten stopping distance by adding weight to the drive axles"
+   },
+   "distractorExplanations": {
+    "b": "In a hard stop the liquid surges forward and then back along the length of the tank; side-to-side surge is the curve hazard.",
+    "c": "Baffles slow surge but do not stop the liquid from moving; a baffled tank still surges in a hard stop.",
+    "d": "Forward surge pushes the truck ahead after braking starts, which lengthens the stop rather than shortening it."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-006": {
+   "options": {
+    "a": "Lower rollover risk since liquid keeps the center of gravity low",
+    "b": "Be safe at the posted advisory curve speed",
+    "c": "Raise rollover risk as liquid surges sideways",
+    "d": "Push the trailer forward rather than toward the outside"
+   },
+   "distractorExplanations": {
+    "a": "A tank vehicle has a high center of gravity, and liquid shifting sideways in a curve raises rollover risk rather than lowering it.",
+    "b": "The CDL manual warns that tankers can roll over at the posted curve speed; take curves well below the advisory speed.",
+    "d": "In a curve the liquid surges toward the outside of the turn, adding sideways force; forward push is the braking hazard."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-007": {
+   "options": {
+    "a": "Reduce surge forces on the vehicle",
+    "b": "Eliminate side-to-side surge in curves",
+    "c": "Reduce tire wear on drive axles",
+    "d": "Prevent product expansion in the tank"
+   },
+   "distractorExplanations": {
+    "b": "Smooth starts and stops lessen forward-and-back surge; side-to-side surge in curves is controlled by lower speed, and it is not eliminated.",
+    "c": "Tire wear is a side benefit at most; the reason the manual stresses smooth control is to limit surge forces on the vehicle.",
+    "d": "Product expansion depends on temperature and is managed by outage, not by how smoothly the driver starts and stops."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-008": {
+   "options": {
+    "a": "Control surge and add tank structure",
+    "b": "Let liquid flow freely end to end",
+    "c": "Provide the outage space the product needs",
+    "d": "Replace the need to check weight distribution"
+   },
+   "distractorExplanations": {
+    "b": "Solid bulkheads stop liquid from flowing between compartments; letting it flow freely end to end is what a smooth-bore tank does.",
+    "c": "Outage is the empty space left in each compartment for expansion; bulkheads are dividing walls, not expansion room.",
+    "d": "The CDL manual says to check weight distribution when loading or unloading bulkhead compartments so front or rear axles are not overloaded."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-009": {
+   "options": {
+    "a": "The amount of product unloaded at delivery",
+    "b": "Liquid remaining after the tank is unloaded",
+    "c": "Empty space left for product expansion",
+    "d": "Vapor pressure inside the tank"
+   },
+   "distractorExplanations": {
+    "a": "Outage is the space deliberately left unfilled for expansion, not the volume delivered to the customer.",
+    "b": "Liquid left in the tank after unloading is the residue or heel; outage is the empty space left when loading.",
+    "d": "Vapor pressure is a property of the product; outage is the physical empty space allowed so the liquid can expand."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-010": {
+   "options": {
+    "a": "Shorten stopping distance by loading the axles",
+    "b": "Affect empty tanks more than partial loads",
+    "c": "Extend stopping distance and upset control",
+    "d": "Be cancelled by ABS on dry pavement"
+   },
+   "distractorExplanations": {
+    "a": "Forward surge pushes the truck ahead after the brakes are applied, so the stop gets longer, not shorter.",
+    "b": "An empty tank has no liquid to surge; surge is a partial-load problem, even though empty trucks need more distance for traction reasons.",
+    "d": "ABS prevents wheel lockup but cannot stop the liquid's momentum; surge still pushes the truck and upsets control."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-011": {
+   "options": {
+    "a": "Only the volume of outage required",
+    "b": "Handling, braking demand, and stability",
+    "c": "The placard color required on the tank",
+    "d": "Fuel economy but not braking or rollover risk"
+   },
+   "distractorExplanations": {
+    "a": "Outage depends on how much the product expands with heat; density mainly limits how much can be loaded before hitting weight limits.",
+    "c": "Placards are set by the hazard class of the material, not by its density or weight.",
+    "d": "Heavier, denser loads raise braking demand and change stability, so density matters for braking and rollover, not just fuel use."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-013": {
+   "options": {
+    "a": "Fill level affects weight but not surge behavior",
+    "b": "Empty tanks surge the most of any fill level",
+    "c": "Partial loads often surge more than full loads",
+    "d": "Baffled tanks can be filled to any level safely"
+   },
+   "distractorExplanations": {
+    "a": "Fill level directly controls surge: a partially filled tank leaves room for the liquid to build momentum and push the truck.",
+    "b": "An empty tank has no liquid to surge; partially filled tanks surge the most.",
+    "d": "Baffles slow surge but do not remove outage limits or side-to-side surge, so fill level still has to be managed."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-014": {
+   "options": {
+    "a": "End as soon as the wheels stop, so brakes can be released",
+    "b": "Rock the vehicle — stay braked and secured until settled",
+    "c": "Signal a baffle failure that needs immediate unloading",
+    "d": "Push the truck forward only if the tank is full"
+   },
+   "distractorExplanations": {
+    "a": "Liquid keeps moving after the wheels stop and can push the truck; releasing the brakes too soon lets it roll.",
+    "c": "Some residual surge is normal after a hard stop, even with intact baffles; it does not by itself mean the baffles failed.",
+    "d": "A full tank has little room for surge; residual push is strongest with a partial load."
+   }
+  },
+  "cdl-tankers-readiness-check-liquid-surge-015": {
+   "options": {
+    "a": "Firm braking early so the surge hits before the stop",
+    "b": "Smooth control and appropriate speed for conditions",
+    "c": "Posted ramp speeds, since they are set for loaded trucks",
+    "d": "Coasting in neutral downhill to avoid brake surges"
+   },
+   "distractorExplanations": {
+    "a": "Hard or early braking creates surge rather than managing it; steady, smooth brake pressure keeps surge forces low.",
+    "c": "Posted ramp and curve speeds are set for cars; the CDL manual says tankers can roll over at those speeds.",
+    "d": "Coasting in neutral removes engine braking and is unsafe and illegal in many states; gear selection plus smooth braking controls downhill speed."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-001": {
+   "options": {
+    "a": "The tank's full liquid volume capacity",
+    "b": "The gross limit alone, ignoring axle weights",
+    "c": "The tank's volume minus a fixed 1% outage",
+    "d": "Legal and manufacturer weight ratings"
+   },
+   "distractorExplanations": {
+    "a": "Dense liquids can reach legal weight limits long before the tank is full, so volume capacity is not the overload limit.",
+    "b": "Legal limits include individual axle weights as well as gross weight; meeting gross weight alone can still overload an axle.",
+    "c": "Outage varies with how much the product expands, and weight ratings still apply; there is no fixed 1% rule that sets the limit."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-002": {
+   "options": {
+    "a": "Tire wear but no handling change",
+    "b": "Lean and higher rollover risk",
+    "c": "Forward-and-back surge",
+    "d": "Problems only on unbaffled tanks"
+   },
+   "distractorExplanations": {
+    "a": "Weight shifted to one side makes the tanker lean and lowers the speed at which it can roll over, so handling does change.",
+    "c": "Forward-and-back surge comes from braking and acceleration; uneven side-to-side loading causes lean and rollover risk.",
+    "d": "Side-to-side imbalance raises rollover risk on any tank; baffles only slow forward-and-back surge."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-003": {
+   "options": {
+    "a": "Product contamination but not leaks",
+    "b": "Leaks, spills, and pressure problems",
+    "c": "Loss of outage space during loading",
+    "d": "Baffle damage from vapor surge"
+   },
+   "distractorExplanations": {
+    "a": "Loose hatches and domes let product leak or spill and allow pressure to escape; contamination is not the main hazard.",
+    "c": "Outage is set by how full the tank is filled, not by whether the dome cover is secured.",
+    "d": "Baffles are internal walls that slow liquid surge; an unsecured dome causes leaks and pressure loss, not baffle damage."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-004": {
+   "options": {
+    "a": "The tank specification plate alone",
+    "b": "Shipping papers, placards, and SDS as applicable",
+    "c": "The previous load listed in the logbook",
+    "d": "The terminal operator's verbal description at loading"
+   },
+   "distractorExplanations": {
+    "a": "The specification plate describes the tank's design and test data, not the hazards of the product currently loaded.",
+    "c": "The previous load tells you nothing reliable about the current product; its hazards come from current papers and placards.",
+    "d": "A verbal description is not a hazard communication document; drivers rely on shipping papers, placards, and SDS."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-005": {
+   "options": {
+    "a": "Keeping the engine in gear instead of setting brakes",
+    "b": "Controlling the vehicle and preventing rollaway",
+    "c": "Setting only the trailer hand valve as a parking brake",
+    "d": "Relying on transmission park alone"
+   },
+   "distractorExplanations": {
+    "a": "Leaving the truck in gear does not replace the parking brakes; on a grade the brakes must be set to prevent rollaway.",
+    "c": "The trailer hand valve must not be used for parking because air can leak off and release the trailer brakes.",
+    "d": "Not the best answer: Relying on transmission park alone always."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-006": {
+   "options": {
+    "a": "Expansion spills and pressure problems",
+    "b": "More surge than a partially filled tank",
+    "c": "Problems only when the product is cold",
+    "d": "Vapor loss, but no liquid spills"
+   },
+   "distractorExplanations": {
+    "b": "An overfilled tank has little free surface, so surge is not the risk; the risk is the product expanding with no outage.",
+    "c": "A cold product overfilled at loading will expand as it warms in transit, which is exactly when spills and pressure problems occur.",
+    "d": "Without outage, expanding liquid can push out through vents and fittings, so liquid spills are a real risk."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-007": {
+   "options": {
+    "a": "Left until the next annual tank test if there is no leak",
+    "b": "Inspected and reported because it affects surge control",
+    "c": "Repaired by the driver at the next fuel stop",
+    "d": "Noted only if the tank is hauling hazmat"
+   },
+   "distractorExplanations": {
+    "a": "Damaged baffles change surge control right away, so the defect must be reported now, not left for a periodic test.",
+    "c": "Internal baffle repairs need a qualified repair facility; the driver's job is to inspect and report the defect.",
+    "d": "Baffles control surge for any liquid load, so damage must be reported whether or not the cargo is hazardous."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-008": {
+   "options": {
+    "a": "Rated for pressure even if not product-compatible",
+    "b": "Hand-tightened and checked after unloading begins",
+    "c": "Connected after the valves are opened",
+    "d": "Correct, tight, and compatible with the product"
+   },
+   "distractorExplanations": {
+    "a": "A hose rated for pressure but not compatible with the product can degrade or fail; it must match the product too.",
+    "b": "Connections must be checked tight before product starts flowing; checking after unloading begins risks a spill.",
+    "c": "Hoses are connected and checked before valves are opened; opening valves first would release product."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-009": {
+   "options": {
+    "a": "Bonding and grounding procedures as required",
+    "b": "Grounding after product transfer is complete",
+    "c": "A drag chain in place of bonding cables",
+    "d": "Splash filling from the top to speed loading"
+   },
+   "distractorExplanations": {
+    "b": "Bonding and grounding must be connected before transfer starts and stay connected until it ends, not added afterward.",
+    "c": "A drag chain is not a substitute for the bonding and grounding connections required during flammable transfers.",
+    "d": "Splash filling increases static charge buildup; it raises the ignition risk instead of controlling it."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-010": {
+   "options": {
+    "a": "Only the tire pressures and lights",
+    "b": "Papers and placards, leaving leak and valve checks for later",
+    "c": "Securements, leaks, papers, placards, and weights",
+    "d": "Leaks at the next scheduled stop instead"
+   },
+   "distractorExplanations": {
+    "a": "Tires and lights matter, but after loading the driver must also recheck securements, leaks, papers, placards, and weights.",
+    "b": "Leaks, valves, and closures must be checked before departure, not just the paperwork and placards.",
+    "d": "Leaks must be found before leaving the loading site; waiting until the next stop risks a release on the road."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-011": {
+   "options": {
+    "a": "The same handling as ambient fuel loads",
+    "b": "Venting to atmosphere to cool the load faster",
+    "c": "Water cooling of the shell before unloading",
+    "d": "Special temperature and handling procedures"
+   },
+   "distractorExplanations": {
+    "a": "Heated products such as asphalt carry burn and pressure hazards that ambient fuel loads do not, so handling differs.",
+    "b": "Venting product to atmosphere to cool it is a release, not an approved handling step for heated cargo.",
+    "c": "Cooling the shell with water is not an approved step; heated cargo follows the shipper's temperature and handling procedures."
+   }
+  },
+  "cdl-tankers-readiness-check-loading-014": {
+   "options": {
+    "a": "Only the gross weight, not axle limits",
+    "b": "Fuel economy but not steering or braking",
+    "c": "Steering, braking, and axle limit compliance",
+    "d": "Tire wear, with no effect on axle limits"
+   },
+   "distractorExplanations": {
+    "a": "Weight distribution decides how much each axle carries, so it governs axle-limit compliance as well as gross weight.",
+    "b": "Too much weight on the front or rear changes steering response and braking, not just fuel economy.",
+    "d": "Poor distribution can overload one axle beyond its legal limit even when the gross weight is legal."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-001": {
+   "options": {
+    "a": "At the posted advisory speed, since it is set for tank vehicles",
+    "b": "With hard braking in the curve to settle the surge",
+    "c": "At normal speed when the tank is baffled",
+    "d": "Slower than with dry freight because of surge and high CG"
+   },
+   "distractorExplanations": {
+    "a": "Posted curve speeds are set for cars; the CDL manual says tankers can roll over at the posted speed.",
+    "b": "Braking hard inside the curve adds surge and shifts weight while the tanker is already leaning; slow down before the curve.",
+    "c": "Baffles slow only forward-and-back surge; side-to-side surge and the high center of gravity still demand lower curve speed."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-002": {
+   "options": {
+    "a": "Reduced, since a loaded tank stops shorter",
+    "b": "The same as for a dry van of equal weight",
+    "c": "Increased for longer stopping dynamics",
+    "d": "Unchanged when the truck has ABS"
+   },
+   "distractorExplanations": {
+    "a": "A loaded tank does not stop shorter; surge can push the truck after braking starts, so more space is needed.",
+    "b": "Liquid surge makes a tanker's stop less predictable than a dry van of the same weight, so it needs extra space.",
+    "d": "ABS prevents wheel lockup but does not cancel surge or shorten stopping distance, so following distance still increases."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-003": {
+   "options": {
+    "a": "Neutral coasting with light braking",
+    "b": "Proper gearing and controlled braking",
+    "c": "Steady light braking from top to bottom",
+    "d": "Downshifting once speed starts to build"
+   },
+   "distractorExplanations": {
+    "a": "Coasting in neutral removes engine braking and makes brakes overheat; the right gear must be engaged before the grade.",
+    "c": "Constant light pressure is riding the brakes, which overheats them and causes fade on long grades.",
+    "d": "The gear must be chosen before starting down; downshifting after speed builds may be impossible or overheat the brakes."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-004": {
+   "options": {
+    "a": "Better traction from more weight pressing on the tires",
+    "b": "Greater rollover risk in turns and lane changes",
+    "c": "Lower rollover risk than a loaded dry van",
+    "d": "Rollover risk only on unbaffled tanks"
+   },
+   "distractorExplanations": {
+    "a": "A high center of gravity relates to rollover, not traction; most of the weight is carried high above the road.",
+    "c": "Tankers usually carry their weight higher than dry vans, so rollover risk is greater, not lower.",
+    "d": "High center of gravity raises rollover risk on any tank vehicle; baffles only slow forward-and-back surge."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-005": {
+   "options": {
+    "a": "Quick, to limit time spent straddling lanes",
+    "b": "Signaled only after starting the move",
+    "c": "Made while braking to settle the load",
+    "d": "Gradual with mirror checks and space"
+   },
+   "distractorExplanations": {
+    "a": "Quick lane changes swing a high-CG tanker and start side surge; lane changes should be gradual.",
+    "b": "Signal before moving so traffic can react; signaling after the move starts gives others no warning.",
+    "c": "Braking during a lane change combines forward and side surge; brake before or after the move, not during it."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-006": {
+   "options": {
+    "a": "Even more speed reduction and smoothness",
+    "b": "The same speed, relying on ABS for control",
+    "c": "Higher speed to keep momentum on grades",
+    "d": "Hard braking to settle the liquid load"
+   },
+   "distractorExplanations": {
+    "b": "ABS helps keep steering control but does not shorten stops or stop surge, so speed must still come down on slick roads.",
+    "c": "Higher speed on slippery roads raises skid and surge risk; liquid cargo calls for lower speed and smooth control.",
+    "d": "Hard braking on a slick surface invites skids and starts surge; smooth, gentle braking is required."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-007": {
+   "options": {
+    "a": "Pick a lower gear only after speed builds on the grade",
+    "b": "Check brakes and choose a safe speed/gear early",
+    "c": "Set cruise control to hold a steady speed",
+    "d": "Switch off the retarder on dry pavement"
+   },
+   "distractorExplanations": {
+    "a": "The right gear must be selected before starting downhill; trying to downshift after speed builds can fail.",
+    "c": "Cruise control does not provide braking on a downgrade; the driver must choose a low gear and control speed.",
+    "d": "A retarder helps control speed on dry downgrades; it is turned off on slippery roads, not on dry pavement."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-008": {
+   "options": {
+    "a": "Shorten stops by loading the drive axles",
+    "b": "Pull the truck backward as you brake",
+    "c": "Add push after you start braking",
+    "d": "Matter mainly when the tank is empty"
+   },
+   "distractorExplanations": {
+    "a": "Forward surge pushes the truck ahead after braking begins, which lengthens the stop rather than shortening it.",
+    "b": "When you brake, the liquid first surges forward and pushes the truck ahead; the backward surge comes after the stop.",
+    "d": "An empty tank has no liquid to surge; surge is a partial-load hazard."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-009": {
+   "options": {
+    "a": "Demand extra caution and smooth control",
+    "b": "Are best crossed with a gear change on the tracks",
+    "c": "Can be crossed quickly to limit time on tracks",
+    "d": "Are exempt from stopping rules"
+   },
+   "distractorExplanations": {
+    "b": "Drivers must not shift gears while crossing tracks; choose a gear that will carry the truck all the way across before starting.",
+    "c": "Speeding across tracks starts surge and risks loss of control; tankers need caution and smooth, steady speed.",
+    "d": "Not the best answer: Are exempt from stopping rules always."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-010": {
+   "options": {
+    "a": "Release the brakes at once to ride out the push",
+    "b": "Keep control; do not release chaotically",
+    "c": "Pump the brakes hard until the surge stops",
+    "d": "Shift to neutral so the drivetrain absorbs it"
+   },
+   "distractorExplanations": {
+    "a": "Releasing the brakes when surge pushes lets the truck roll forward; the manual says keep steady brake pressure.",
+    "c": "Hard pumping creates repeated surges; steady controlled pressure is what keeps the truck stable.",
+    "d": "Shifting to neutral removes engine braking and control; it does not absorb surge forces."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-011": {
+   "options": {
+    "a": "Posted advisory speeds plus tanker dynamics",
+    "b": "Posted advisory speeds, which suit any truck",
+    "c": "The same speed used with dry freight",
+    "d": "The speed of surrounding truck traffic"
+   },
+   "distractorExplanations": {
+    "b": "Advisory ramp speeds are set for cars; tankers can roll over at those speeds and must go slower.",
+    "c": "Liquid surge and a high center of gravity mean a tanker needs lower ramp speeds than dry freight.",
+    "d": "Other trucks may be empty or carrying dry freight; a tanker's ramp speed must reflect its own load dynamics."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-012": {
+   "options": {
+    "a": "Greater surge because liquid cools at night",
+    "b": "Stricter hours-of-service rules that apply only at night",
+    "c": "Reduced visibility of hazards and soft shoulders",
+    "d": "Glare from placards reflecting headlights"
+   },
+   "distractorExplanations": {
+    "a": "Night temperature does not meaningfully change surge; the night risk is reduced visibility of hazards and road edges.",
+    "b": "Hours-of-service limits are not stricter at night; the added risk is seeing hazards and soft shoulders in the dark.",
+    "d": "Reflective placards are not a recognized night hazard; the risk is not seeing hazards and soft shoulders in time."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-013": {
+   "options": {
+    "a": "Combined with high CG and liquid movement",
+    "b": "The tank is filled with no outage left",
+    "c": "You reduce speed below the posted limit",
+    "d": "The tank has baffles installed"
+   },
+   "distractorExplanations": {
+    "b": "A tank with no outage is an expansion and spill problem; wind raises rollover risk mainly through high CG and sideways liquid movement.",
+    "c": "Slowing down lowers wind-related rollover risk; it does not make the tanker less stable.",
+    "d": "Baffles reduce forward-and-back surge; they do not make a tank more vulnerable to crosswinds."
+   }
+  },
+  "cdl-tankers-readiness-check-driving-014": {
+   "options": {
+    "a": "Phone use only at speeds under 20 mph",
+    "b": "Hands-free calling, which removes the distraction risk",
+    "c": "Attention mainly in curves and on ramps",
+    "d": "Continuous attention to space and feel of the load"
+   },
+   "distractorExplanations": {
+    "a": "CMV drivers may not use a hand-held phone while driving at any speed; there is no low-speed exception.",
+    "b": "Hands-free calls still take mental attention; they are legal but do not remove distraction risk.",
+    "c": "Surge and stopping hazards occur on straight roads too; tankers need continuous attention, not only in curves."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-001": {
+   "options": {
+    "a": "Keep driving to the terminal to unload",
+    "b": "Stop at the nearest fuel stop for help",
+    "c": "Stop and open the dome to check the level",
+    "d": "Move to a safe location, secure the scene"
+   },
+   "distractorExplanations": {
+    "a": "Driving on with a leak spreads product along the road; the driver must stop in a safe location right away.",
+    "b": "A fuel stop has people and ignition sources; a leaking tanker should stop away from people and buildings.",
+    "c": "Opening the dome can release vapors and expose the driver; follow emergency procedures instead of inspecting the tank top."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-002": {
+   "options": {
+    "a": "Fight the fire with nearby water first, then call for help",
+    "b": "Stay beside the tank to guide responders in",
+    "c": "Drive to a service shop so mechanics can check it",
+    "d": "Evacuate to a safe distance and call emergency services"
+   },
+   "distractorExplanations": {
+    "a": "Water can spread some flammable liquid fires, and drivers should call for help first instead of fighting a cargo fire.",
+    "b": "Staying beside a tank with flammable cargo exposes the driver to fire or explosion; move to a safe distance.",
+    "c": "Driving a tanker at fire risk to a shop carries the hazard into populated areas; stop, evacuate, and call."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-005": {
+   "options": {
+    "a": "Level secure parking with brakes set",
+    "b": "A soft shoulder clear of traffic lanes",
+    "c": "Trailer hand valve set as the parking brake",
+    "d": "Leaving it in gear on a grade without brakes"
+   },
+   "distractorExplanations": {
+    "b": "A soft shoulder may not support a loaded tanker and can lead to a rollover; park on firm, level ground.",
+    "c": "The trailer hand valve must not be used for parking; air can bleed off and release the brakes.",
+    "d": "Being in gear does not replace the parking brakes, especially on a grade with a heavy liquid load."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-006": {
+   "options": {
+    "a": "Speed up slightly to restore steering feel",
+    "b": "Brake hard at once to settle the load",
+    "c": "Reduce speed smoothly and seek a safe stop to inspect",
+    "d": "Continue to the terminal and report the problem to the shop there"
+   },
+   "distractorExplanations": {
+    "a": "Speeding up with unstable steering makes control worse; slow down smoothly and stop to inspect.",
+    "b": "Hard braking with unstable steering can start surge or a skid; reduce speed smoothly.",
+    "d": "A sudden steering change can mean a tire or suspension failure; stop safely and inspect instead of driving on."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-007": {
+   "options": {
+    "a": "Shipping papers and required emergency documents",
+    "b": "The tank specification plate on the shell",
+    "c": "The placard alone, without the papers",
+    "d": "The driver's annual vehicle inspection report in the cab"
+   },
+   "distractorExplanations": {
+    "b": "The specification plate describes the tank's construction and tests, not emergency response details for the product.",
+    "c": "Placards show hazard class but not the full emergency response details; those come with the shipping papers.",
+    "d": "The annual inspection report covers the vehicle's condition, not emergency response for the cargo."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-008": {
+   "options": {
+    "a": "Call trained responders and give them the product details",
+    "b": "Secure ignition sources from a safe position",
+    "c": "Follow the emergency plan on the shipping papers",
+    "d": "Walk into vapors without proper protection and training"
+   },
+   "distractorExplanations": {
+    "a": "Calling responders with the product details is a required step after a release, so it is not something to avoid.",
+    "c": "Following the emergency response information that travels with the papers is the correct action, not a prohibited one.",
+    "b": "Not the best answer: Secure ignition sources from a safe position."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-009": {
+   "options": {
+    "a": "They burn out quickly with no reignition",
+    "b": "They mainly risk damage to the brake lines",
+    "c": "They are unrelated to cargo risk",
+    "d": "Heat can threaten the cargo and tank integrity"
+   },
+   "distractorExplanations": {
+    "a": "Tire fires can reignite after they seem out, and their heat can reach the tank; they are not quick, harmless fires.",
+    "b": "Brake-line damage is possible, but the serious danger is heat reaching the tank and the cargo.",
+    "c": "Not the best answer: They are unrelated to cargo risk."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-010": {
+   "options": {
+    "a": "Leave papers in the cab and move downhill",
+    "b": "Shelter in a low ditch close to the vehicle until help comes",
+    "c": "Take shipping papers if safe and move upwind/uphill",
+    "d": "Stay with the vehicle to keep others away"
+   },
+   "distractorExplanations": {
+    "a": "Responders need the shipping papers, and vapors and liquids flow downhill; take papers if safe and go uphill.",
+    "b": "Low ground near the vehicle collects heavier-than-air vapors and spilled liquid; move upwind and uphill instead.",
+    "d": "Staying with a vehicle that must be abandoned exposes the driver; warn others from a safe distance."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-011": {
+   "options": {
+    "a": "Righting the tank quickly to stop the leak",
+    "b": "Offloading product into nearby containers",
+    "c": "Life safety, scene control, and proper notifications",
+    "d": "Photographing the damage for insurance before calling for help"
+   },
+   "distractorExplanations": {
+    "a": "Righting a rolled tanker needs trained crews and equipment; the driver's priorities are life safety and notifications.",
+    "b": "Transferring product needs trained responders and proper equipment; improvised containers can worsen the release.",
+    "d": "Photos come after life safety; delaying the call slows emergency response to the rollover."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-012": {
+   "options": {
+    "a": "Keep driving and check it at the next stop",
+    "b": "Close the vents and run recirculated air",
+    "c": "Treat as hazardous — ventilate, stop safely",
+    "d": "Assume it is engine exhaust and continue"
+   },
+   "distractorExplanations": {
+    "a": "An unknown product odor in the cab may mean a leak; stop safely now rather than waiting until the next stop.",
+    "b": "Closing vents traps vapors in the cab; the driver should ventilate and stop safely.",
+    "d": "Assuming the odor is exhaust ignores a possible cargo leak; treat unknown odors as hazardous."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-013": {
+   "options": {
+    "a": "Tape it and continue slowly",
+    "b": "Continue if it is not leaking yet",
+    "c": "Reseat it with a hammer and go on",
+    "d": "Do not continue as if normal"
+   },
+   "distractorExplanations": {
+    "a": "Tape is not an approved valve repair; a damaged valve must be handled under out-of-service and repair rules.",
+    "b": "A damaged valve can fail without warning; no visible leak does not make it safe to continue.",
+    "c": "Striking a valve can cause sparks or further damage; valve repairs need a qualified repair facility."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-014": {
+   "options": {
+    "a": "The carrier name, your truck number, and your expected ETA",
+    "b": "The placard color as seen from the cab",
+    "c": "Product identity, quantity, and hazards from papers",
+    "d": "Your estimate of the cause of the leak"
+   },
+   "distractorExplanations": {
+    "a": "Carrier, truck, and ETA details help, but responders first need the product identity, quantity, and hazards from the papers.",
+    "b": "Placard color alone does not identify the product or quantity; give responders the details on the shipping papers.",
+    "d": "A guess about the cause does not tell responders what they face; product identity, quantity, and hazards do."
+   }
+  },
+  "cdl-tankers-readiness-check-emergency-015": {
+   "options": {
+    "a": "Proper loading, inspection, speed management",
+    "b": "Baffles and ABS doing the surge control work",
+    "c": "Posted speeds plus a post-trip check only",
+    "d": "Full loads so there is no room for surge"
+   },
+   "distractorExplanations": {
+    "b": "Baffles and ABS help but do not replace driver speed management and smooth control in preventing emergencies.",
+    "c": "Posted speeds can be too fast for tankers, and a pre-trip inspection is needed before driving, not just a post-trip check.",
+    "d": "Tanks must leave outage for expansion, so filling to the top to avoid surge creates spill and pressure problems."
+   }
+  }
+ }
+}

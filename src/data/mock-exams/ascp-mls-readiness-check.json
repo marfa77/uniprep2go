@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Platelet count"
+        "text": "ABO antibodies in plasma using A1 and B reagent red cells"
       },
       {
         "id": "c",
-        "text": "Rh genotype by DNA"
+        "text": "Rh(D) antigen on red cells using anti-D reagent alone"
       },
       {
         "id": "d",
-        "text": "Antibodies in serum"
+        "text": "Unexpected red cell antibodies using group O screening cells"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Forward (cell) typing detects A/B antigens on patient RBCs.",
     "distractorExplanations": {
-      "b": "Hematology test.",
-      "c": "Serology types phenotype primarily.",
-      "d": "That is reverse typing."
+      "b": "That describes reverse (serum) typing, which detects isoagglutinins in plasma, not antigens on the patient's red cells.",
+      "c": "Anti-D detects the D antigen in Rh typing; forward ABO typing uses anti-A and anti-B, not anti-D.",
+      "d": "That describes the antibody screen, which detects non-ABO alloantibodies with O cells, not forward ABO typing."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Anti-D"
+        "text": "Patient plasma + group O screening cells I and II"
       },
       {
         "id": "b",
@@ -48,7 +48,7 @@
       },
       {
         "id": "c",
-        "text": "Only saline without cells"
+        "text": "Patient serum + anti-human globulin and check cells"
       },
       {
         "id": "d",
@@ -58,8 +58,8 @@
     "correctOptionId": "b",
     "explanation": "Reverse typing confirms ABO by detecting expected isoagglutinins.",
     "distractorExplanations": {
-      "a": "Rh typing uses anti-D.",
-      "c": "Needs reagent cells.",
+      "a": "O screening cells are used in the antibody screen to detect unexpected antibodies, not in reverse ABO typing.",
+      "c": "AHG and check cells belong to the indirect antiglobulin phase; reverse typing is read at immediate spin with A1/B cells.",
       "d": "Forward typing."
     },
     "difficulty": "easy",
@@ -77,23 +77,23 @@
       },
       {
         "id": "b",
-        "text": "ABO identical results"
+        "text": "ABO forward and reverse results that agree on repeat testing"
       },
       {
         "id": "c",
-        "text": "Clear-cut D-positive"
+        "text": "Strong 3+ D-positive reaction at immediate spin with a negative control"
       },
       {
         "id": "d",
-        "text": "Weak D / discrepant D that may require further testing per policy"
+        "text": "Weak D / discrepant D that may require further testing"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Weak D interpretation affects RhIG and transfusion decisions; follow current AABB/lab policy.",
+    "explanation": "Weak D interpretation affects RhIG and transfusion decisions; follow current AABB/lab policy. Further testing follows laboratory policy.",
     "distractorExplanations": {
       "a": "Less urgent than D discrepancy.",
-      "b": "Expected consistency.",
-      "c": "Straightforward."
+      "b": "Concordant forward and reverse ABO results are the expected finding and raise no D-typing concern.",
+      "c": "A clear-cut D-positive reaction with a valid control is an unambiguous result that needs no further D workup."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -106,7 +106,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Serum glucose"
+        "text": "Expected ABO isoagglutinins using A1 and B cells"
       },
       {
         "id": "b",
@@ -114,19 +114,19 @@
       },
       {
         "id": "c",
-        "text": "Only ABO antibodies"
+        "text": "IgG or complement already bound to the patient's red cells"
       },
       {
         "id": "d",
-        "text": "HIV antigen"
+        "text": "Donor red cell antigens using commercial antisera"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Antibody screens use O screening cells to detect alloantibodies clinically significant for transfusion.",
     "distractorExplanations": {
-      "a": "Chemistry.",
-      "c": "ABO is typed separately.",
-      "d": "Infectious disease testing differs."
+      "a": "Detecting anti-A and anti-B with A1 and B cells is reverse typing; the screen looks for unexpected non-ABO antibodies.",
+      "c": "Antibody bound in vivo to patient RBCs is detected by the DAT; the screen detects free antibody in plasma by IAT.",
+      "d": "Typing donor cells with antisera is antigen typing; the antibody screen tests patient plasma against reagent O cells."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "It replaces forward typing"
+        "text": "It detects IgM antibodies that agglutinate best at room temperature"
       },
       {
         "id": "c",
-        "text": "It measures hemoglobin directly"
+        "text": "It enhances agglutination by reducing the zeta potential of red cells"
       },
       {
         "id": "d",
-        "text": "It sterilizes blood units"
+        "text": "It confirms ABO grouping when forward and reverse types disagree"
       }
     ],
     "correctOptionId": "a",
     "explanation": "AHG bridges IgG-sensitized RBCs for visible agglutination (IAT)",
     "distractorExplanations": {
-      "b": "ABO typing separate.",
-      "c": "Hematology.",
-      "d": "Not sterilization."
+      "b": "IgM antibodies agglutinate directly at immediate spin or room temperature; AHG is needed to detect IgG coating.",
+      "c": "Reducing zeta potential is the role of enhancement media such as LISS or PEG, not the antiglobulin reagent.",
+      "d": "ABO discrepancies are resolved with repeat testing, A1 lectin and other workups; AHG targets IgG alloantibodies."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -176,7 +176,7 @@
       },
       {
         "id": "b",
-        "text": "Platelet compatibility"
+        "text": "Patient plasma vs reagent O screening cells"
       },
       {
         "id": "c",
@@ -190,7 +190,7 @@
     "correctOptionId": "a",
     "explanation": "Major XM: recipient antibodies against donor RBCs.",
     "distractorExplanations": {
-      "b": "Platelets different.",
+      "b": "Testing plasma against reagent O cells is the antibody screen; the crossmatch uses the actual donor unit's red cells.",
       "c": "Autocontrol.",
       "d": "Minor XM (less used routinely now)."
     },
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Stored at 37°C"
+        "text": "Irradiated to inactivate CMV in donor lymphocytes"
       },
       {
         "id": "c",
-        "text": "Never irradiated"
+        "text": "Washed to remove plasma containing CMV antibodies"
       },
       {
         "id": "d",
-        "text": "Always whole blood"
+        "text": "Selected from donors with a positive CMV IgG antibody"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Leukoreduction/CMV-seronegative strategies reduce CMV transmission risk.",
     "distractorExplanations": {
-      "b": "RBCs stored refrigerated.",
-      "c": "Irradiation prevents TA-GVHD in selected patients.",
-      "d": "Components vary."
+      "b": "Irradiation prevents TA-GVHD by disabling donor lymphocytes; it does not reduce CMV transmission risk.",
+      "c": "Washing removes plasma proteins to prevent allergic reactions; donor CMV antibodies are not the transmission risk.",
+      "d": "CMV-IgG-positive donors carry latent virus in leukocytes; CMV-safe units come from seronegative donors or leukoreduction."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -304,15 +304,15 @@
     "options": [
       {
         "id": "a",
-        "text": "That reverse typing is never needed"
+        "text": "An acquired B antigen from bacterial deacetylation"
       },
       {
         "id": "b",
-        "text": "Ignoring all discrepancies"
+        "text": "A cold-reactive autoantibody causing extra reactions"
       },
       {
         "id": "c",
-        "text": "Automatic group AB without testing"
+        "text": "A subgroup of A such as A2 with anti-A1 present"
       },
       {
         "id": "d",
@@ -322,9 +322,9 @@
     "correctOptionId": "d",
     "explanation": "Weak reverse reactions can reflect low antibody titers; resolve before transfusion.",
     "distractorExplanations": {
-      "a": "Reverse typing is standard for confirmation.",
-      "b": "Must resolve.",
-      "c": "Unsafe assumption."
+      "a": "Acquired B causes an extra forward-type reaction, not weak reverse reactions; it is a red cell antigen problem.",
+      "b": "Cold autoantibodies cause unexpected extra reverse reactions, not weaker-than-expected ones.",
+      "c": "A2 with anti-A1 adds an unexpected reverse reaction with A1 cells; it does not weaken the expected reactions."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -345,19 +345,19 @@
       },
       {
         "id": "c",
-        "text": "Convert Rh-negative RBCs to Rh-positive"
+        "text": "Prevent ABO hemolytic disease when mother and baby are ABO-incompatible"
       },
       {
         "id": "d",
-        "text": "Replace FFP"
+        "text": "Prevent formation of anti-c and anti-K after fetal red cell exposure"
       }
     ],
     "correctOptionId": "a",
     "explanation": "RhIG suppresses anti-D alloimmunization when indicated (antenatal/postpartum/etc.)",
     "distractorExplanations": {
       "b": "Does not erase established alloimmunization as sole concept.",
-      "c": "Cannot change phenotype.",
-      "d": "Different product."
+      "c": "RhIG contains anti-D only; it has no role in preventing ABO hemolytic disease of the fetus and newborn.",
+      "d": "RhIG targets the D antigen; it does not prevent alloimmunization to other antigens such as c or Kell."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -370,7 +370,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Elevated serum sodium"
+        "text": "Free antibody in plasma reacting with reagent red cells in vitro"
       },
       {
         "id": "b",
@@ -378,19 +378,19 @@
       },
       {
         "id": "c",
-        "text": "Always a laboratory labeling error"
+        "text": "A clerical or labeling error until proven otherwise by recollection"
       },
       {
         "id": "d",
-        "text": "Normal finding in all healthy donors"
+        "text": "Reduced red cell survival from intrinsic membrane defects such as spherocytosis"
       }
     ],
     "correctOptionId": "b",
     "explanation": "DAT detects immunoglobulin/complement already bound to patient RBCs.",
     "distractorExplanations": {
-      "a": "Chemistry.",
-      "c": "May be true immune hemolysis.",
-      "d": "Usually negative in healthy people."
+      "a": "That describes the indirect antiglobulin test; the DAT detects antibody already bound to red cells in vivo.",
+      "c": "A positive DAT usually reflects real in vivo sensitization (HDFN, AIHA, transfusion reaction), not a labeling error.",
+      "d": "Hereditary spherocytosis causes hemolysis with a negative DAT; a positive DAT points to immune-mediated coating."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Any random unit without documentation"
+        "text": "Group-specific RBCs based on the patient's prior records"
       },
       {
         "id": "b",
-        "text": "Platelets"
+        "text": "Group O-positive RBCs preferred for every female patient of childbearing age"
       },
       {
         "id": "c",
-        "text": "Group AB plasma and AB RBCs always first"
+        "text": "Group AB RBCs, since AB is the universal red cell donor"
       },
       {
         "id": "d",
-        "text": "Group O RBCs (often O-negative for women of childbearing potential per policy)"
+        "text": "Group O RBCs (often O-negative for women of childbearing potential)"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "O RBCs are universal donor red cells in emergencies; Rh choice follows policy/risk.",
+    "explanation": "O RBCs are universal donor red cells in emergencies; Rh choice follows policy/risk. Rh selection follows the institution's emergency-release policy.",
     "distractorExplanations": {
-      "a": "Traceability required.",
-      "b": "Not for RBC oxygen delivery.",
-      "c": "AB plasma is universal plasma; RBCs differ."
+      "a": "Old records cannot confirm an unknown patient's identity; uncrossmatched RBCs are group O until a current type is done.",
+      "b": "Reverses the policy; O-negative is preferred for females of childbearing potential to avoid anti-D formation.",
+      "c": "AB is the universal plasma donor group; group O red cells are the universal red cell choice."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Ignoring dosage and phase reactions"
+        "text": "Ruling out antibodies using positive reactions with heterozygous cells, ignoring phase of reactivity"
       },
       {
         "id": "c",
-        "text": "Selecting the first antibody listed alphabetically"
+        "text": "Matching the reaction pattern to one antigen column and stopping without rule-outs or a rule of three"
       },
       {
         "id": "d",
-        "text": "Never performing an autocontrol"
+        "text": "Ruling out antibodies on heterozygous cells, then confirming the specificity with a single positive cell"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Systematic rule-outs and clinical correlation identify alloantibodies.",
     "distractorExplanations": {
-      "b": "Dosage/phase matter.",
-      "c": "Not a method.",
-      "d": "Autocontrol helps detect autoantibodies."
+      "b": "Rule-outs use non-reacting cells, ideally homozygous ones; reacting heterozygous cells cannot exclude an antibody.",
+      "c": "Skipping rule-outs misses additional antibodies; identification needs exclusion plus the rule of three for probability.",
+      "d": "Heterozygous cells can miss dosage antibodies such as Kidd, and one positive cell does not meet the rule of three."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Febrile nonhemolytic transfusion reactions and CMV transmission (and HLA alloimmunization)"
+        "text": "Febrile nonhemolytic transfusion reactions and CMV transmission"
       },
       {
         "id": "b",
-        "text": "ABO mismatches"
+        "text": "Transfusion-associated graft-versus-host disease and bacterial contamination"
       },
       {
         "id": "c",
-        "text": "Iron overload completely"
+        "text": "Allergic urticarial reactions and anaphylaxis in IgA-deficient patients"
       },
       {
         "id": "d",
-        "text": "All allergic reactions"
+        "text": "Transfusion-related acute lung injury and circulatory overload"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Removing WBCs decreases FNHTR, CMV risk, and alloimmunization risk.",
+    "explanation": "Removing WBCs decreases FNHTR, CMV risk, and alloimmunization risk. It also reduces HLA alloimmunization.",
     "distractorExplanations": {
-      "b": "ABO compatibility still required.",
-      "c": "Iron overload still possible with chronic transfusion.",
-      "d": "Allergic reactions often plasma protein related."
+      "b": "TA-GVHD is prevented by irradiation, not leukoreduction, and bacterial contamination is not addressed by WBC removal.",
+      "c": "Allergic and anaphylactic reactions come from plasma proteins; washed or IgA-deficient products address those.",
+      "d": "TRALI is linked to donor antibodies in plasma and TACO to volume; removing leukocytes prevents neither."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved GFR"
+        "text": "Increased GFR from hyperfiltration in early diabetes"
       },
       {
         "id": "b",
-        "text": "Acute hepatitis specifically"
+        "text": "Hepatocellular injury with impaired protein synthesis"
       },
       {
         "id": "c",
-        "text": "Hyperthyroidism"
+        "text": "Increased tubular reabsorption of creatinine by the kidney"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "Creatinine rises when GFR falls (with caveats of muscle mass/assay)",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "b": "Liver enzymes more specific for hepatitis.",
-      "c": "Thyroid tests differ."
+      "a": "Hyperfiltration raises GFR, which lowers serum creatinine; an elevated creatinine reflects reduced filtration.",
+      "b": "Liver injury shows in ALT/AST and synthetic markers; creatinine is cleared by the kidney, not the liver.",
+      "c": "Creatinine is filtered and slightly secreted, not reabsorbed; a rising level reflects falling GFR."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -568,11 +568,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Amylase exclusively for liver"
+        "text": "GGT (and ALP)"
       },
       {
         "id": "b",
-        "text": "Troponin I for hepatocytes"
+        "text": "CK (and LD)"
       },
       {
         "id": "c",
@@ -580,15 +580,15 @@
       },
       {
         "id": "d",
-        "text": "PSA"
+        "text": "Lipase (and amylase)"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ALT/AST rise with hepatocyte damage; ALT more liver-specific.",
     "distractorExplanations": {
-      "a": "Amylase more pancreas/salivary.",
-      "b": "Troponin is cardiac.",
-      "d": "Prostate marker."
+      "a": "GGT and ALP are cholestatic or biliary markers; ALT and AST are the ones that track hepatocellular injury.",
+      "b": "CK and LD rise with muscle injury and hemolysis; they are not sensitive or specific markers of hepatocyte damage.",
+      "d": "Lipase and amylase mark pancreatic injury, not hepatocellular damage; ALT is the liver-specific enzyme."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "1 hour postprandial"
+        "text": "1–2 days"
       },
       {
         "id": "b",
-        "text": "1 day"
+        "text": "2–3 weeks"
       },
       {
         "id": "c",
-        "text": "10 years"
+        "text": "about 6 weeks"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "A1c correlates with RBC lifespan ~120 days; clinically ~2–3 months average glucose.",
     "distractorExplanations": {
-      "a": "OGTT/postprandial differ.",
-      "b": "Too short.",
-      "c": "Too long."
+      "a": "A day-to-day window reflects meter or plasma glucose readings; HbA1c integrates glycemia over the red cell lifespan.",
+      "b": "Two to three weeks is the window of fructosamine (glycated albumin), which reflects albumin's shorter half-life.",
+      "c": "Six weeks underestimates the window; HbA1c reflects the roughly 120-day red cell lifespan, about 2–3 months."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate reporting after checking for hemolysis/sample integrity and clinical correlation per protocol"
+        "text": "Immediate reporting after checking for hemolysis/sample integrity"
       },
       {
         "id": "b",
-        "text": "Waiting a week"
+        "text": "Repeating on a new draw before any notification, even if that takes hours"
       },
       {
         "id": "c",
-        "text": "Averaging with yesterday's result silently"
+        "text": "Reporting through the LIS only, without a direct call to the caregiver"
       },
       {
         "id": "d",
-        "text": "Discarding without notification"
+        "text": "Immediate reporting without checking for hemolysis or EDTA contamination"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Critical values require rapid verification for preanalytics (hemolysis falsely ↑K+) and clinician notification.",
+    "explanation": "Critical values require rapid verification for preanalytics (hemolysis falsely ↑K+) and clinician notification. Clinical correlation follows the critical-value protocol.",
     "distractorExplanations": {
-      "b": "Delay harms patients.",
-      "c": "Silent averaging is improper.",
-      "d": "Must communicate criticals — discarding without notification is unsafe."
+      "b": "Waiting hours for a recollection delays a possibly lethal result; criticals are called promptly once integrity is checked.",
+      "c": "Critical values require direct, documented verbal notification with read-back, not passive electronic reporting.",
+      "d": "Hemolysis and K2EDTA carryover falsely raise potassium, so specimen integrity is checked quickly before the call."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Increasing sodium by flame photometry always beneficially"
+        "text": "Releasing intracellular potassium from lysed platelets during clotting"
       },
       {
         "id": "c",
-        "text": "Improving all spectrophotometric accuracy"
+        "text": "Binding bilirubin and falsely lowering its measured concentration"
       },
       {
         "id": "d",
-        "text": "Eliminating the need for QC"
+        "text": "Producing pseudohypernatremia on direct ion-selective electrodes"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Lipemia causes optical and sometimes electrolyte artifacts; ultracentrifugation/clearing may help.",
     "distractorExplanations": {
-      "b": "Interference is problematic.",
-      "c": "Worsens many optical assays.",
-      "d": "QC still required."
+      "b": "That describes pseudohyperkalemia from thrombocytosis, not lipemia; lipemia interferes optically and by volume.",
+      "c": "Lipemia interferes through light scatter and volume displacement, not by binding analytes such as bilirubin.",
+      "d": "Lipemia causes pseudohyponatremia on indirect ISE or flame methods; direct ISE is the method that avoids it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal neonatal physiologic jaundice exclusively always conjugated"
+        "text": "Physiologic jaundice of the newborn"
       },
       {
         "id": "b",
-        "text": "Only hemolysis with purely unconjugated rise"
+        "text": "Hemolysis with increased bilirubin load"
       },
       {
         "id": "c",
-        "text": "Laboratory impossibility"
+        "text": "Gilbert syndrome with reduced UGT1A1 activity"
       },
       {
         "id": "d",
-        "text": "Hepatic excretion defect / cholestasis or hepatocellular conjugated hyperbilirubinemia"
+        "text": "Hepatic excretion defect / cholestasis"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Conjugated hyperbilirubinemia points to hepatic/cholestatic pathways; hemolysis raises unconjugated.",
+    "explanation": "Conjugated hyperbilirubinemia points to hepatic/cholestatic pathways; hemolysis raises unconjugated. Hepatocellular disease can also cause conjugated hyperbilirubinemia.",
     "distractorExplanations": {
-      "a": "Physiologic neonatal often unconjugated.",
-      "b": "Hemolysis → unconjugated.",
-      "c": "Common pattern."
+      "a": "Physiologic neonatal jaundice is unconjugated; a conjugated rise in a newborn needs a cholestasis workup.",
+      "b": "Hemolysis overloads conjugation and raises unconjugated bilirubin, not the direct fraction.",
+      "c": "Gilbert syndrome lowers conjugating enzyme activity, so the rise is unconjugated, not direct."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -832,15 +832,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Calcium"
+        "text": "Albumin, globulins, and fibrinogen"
       },
       {
         "id": "b",
-        "text": "Iron"
+        "text": "Potassium, calcium, and magnesium"
       },
       {
         "id": "c",
-        "text": "Albumin"
+        "text": "Ethanol, mannitol, and ketones"
       },
       {
         "id": "d",
@@ -850,9 +850,9 @@
     "correctOptionId": "d",
     "explanation": "Calculated osm ≈ 2Na + glucose/18 + BUN/2.8 (conventional units)",
     "distractorExplanations": {
-      "a": "Minor osmoles.",
-      "b": "Trace.",
-      "c": "Colloid oncotic pressure more than osmoles count."
+      "a": "Plasma proteins drive colloid oncotic pressure but add few osmoles because the molecules are large and few in number.",
+      "b": "These cations are present at low concentrations and add little to osmolality compared with sodium.",
+      "c": "These are added osmoles that create an osmolal gap; they are not the normal main contributors to osmolality."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -873,19 +873,19 @@
       },
       {
         "id": "c",
-        "text": "Conversion to sodium"
+        "text": "Falsely increased glucose from red cell glucose release"
       },
       {
         "id": "d",
-        "text": "No change ever"
+        "text": "Unchanged glucose if the tube is kept tightly capped"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Cellular glycolysis consumes glucose unless fluoride tubes/prompt separation used.",
     "distractorExplanations": {
       "a": "Opposite direction.",
-      "c": "Nonsense.",
-      "d": "Changes occur."
+      "c": "Red cells consume glucose rather than release it; prolonged cell contact lowers the result by roughly 5–7% per hour.",
+      "d": "Capping prevents evaporation but not glycolysis; prompt separation or a fluoride tube is what preserves glucose."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -898,11 +898,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Pure bone source certainty"
+        "text": "Bone source, as in Paget disease or healing fractures"
       },
       {
         "id": "b",
-        "text": "Always normal pregnancy"
+        "text": "Placental source during the third trimester of pregnancy"
       },
       {
         "id": "c",
@@ -910,15 +910,15 @@
       },
       {
         "id": "d",
-        "text": "Cardiac troponin elevation"
+        "text": "Intestinal ALP release after a fatty meal in group O"
       }
     ],
     "correctOptionId": "c",
     "explanation": "GGT supports hepatic origin of ALP elevation; bone ALP lacks GGT rise.",
     "distractorExplanations": {
-      "a": "Bone ALP usually normal GGT.",
-      "b": "Pregnancy ALP can rise (placental) with context.",
-      "d": "Different markers."
+      "a": "Bone ALP rises without GGT; a concurrent GGT increase points to a hepatobiliary source instead.",
+      "b": "Placental ALP rises in late pregnancy with a normal GGT; GGT co-elevation indicates the liver or biliary tree.",
+      "d": "Intestinal ALP can rise after meals in group O or B secretors, but it does not raise GGT."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1001,23 +1001,23 @@
       },
       {
         "id": "b",
-        "text": "Only hypochromic"
+        "text": "Hypochromic, normochromic, or hyperchromic"
       },
       {
         "id": "c",
-        "text": "Platelet size"
+        "text": "Regenerative or nonregenerative by marrow output"
       },
       {
         "id": "d",
-        "text": "Clotting factor levels"
+        "text": "Anisocytosis grades from 1+ to 4+ on the smear"
       }
     ],
     "correctOptionId": "a",
     "explanation": "MCV is the RBC size index used in anemia workups.",
     "distractorExplanations": {
-      "b": "MCHC relates to chromia.",
-      "c": "MPV is platelets.",
-      "d": "Coag assays."
+      "b": "Chromia categories come from MCH/MCHC, not MCV; MCV classifies anemias by red cell size.",
+      "c": "Marrow response is judged by the reticulocyte count, not by the mean cell volume.",
+      "d": "Size variation is measured by RDW or smear grading; MCV is the mean cell volume used to classify anemia."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1067,23 +1067,23 @@
       },
       {
         "id": "b",
-        "text": "Normal newborn smear"
+        "text": "Hereditary membrane defect such as spherocytosis"
       },
       {
         "id": "c",
-        "text": "Vitamin C toxicity"
+        "text": "Megaloblastic anemia from B12 deficiency"
       },
       {
         "id": "d",
-        "text": "Iron overload"
+        "text": "Oxidant injury with Heinz body formation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Fragmented RBCs occur in MAHA (DIC, TTP, HUS, mechanical valves, etc.)",
     "distractorExplanations": {
-      "b": "Not normal.",
-      "c": "Unrelated.",
-      "d": "Different findings."
+      "b": "Spherocytosis produces spherocytes without central pallor; schistocytes are fragments from shear injury.",
+      "c": "B12 deficiency shows macro-ovalocytes and hypersegmented neutrophils; fragments point to microangiopathy.",
+      "d": "Oxidant injury produces bite and blister cells with Heinz bodies, not the helmet and triangle fragments of MAHA."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1096,7 +1096,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Eosinopenia"
+        "text": "Increased hypersegmented neutrophils in circulation"
       },
       {
         "id": "b",
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "Increased lymphocytes"
+        "text": "Increased reactive lymphocytes with abundant cytoplasm"
       },
       {
         "id": "d",
-        "text": "Decreased WBC count definitionally"
+        "text": "Toxic granulation and Döhle bodies without immature forms"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Left shift indicates myeloid immaturity often with infection/inflammation.",
     "distractorExplanations": {
-      "a": "Different lineage.",
-      "c": "Lymphocytosis different.",
-      "d": "Count may be high or low."
+      "a": "Hypersegmentation is a 'right shift' seen in megaloblastic anemia, the opposite of circulating immature forms.",
+      "c": "Reactive lymphocytes suggest viral infection; a left shift refers to immature neutrophil precursors.",
+      "d": "Toxic changes often accompany infection but are not a left shift unless immature neutrophils increase."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1166,23 +1166,23 @@
       },
       {
         "id": "b",
-        "text": "Factor VIII/IX deficiency or heparin effect (among other intrinsic pathway issues)"
+        "text": "Factor VIII/IX deficiency or heparin effect"
       },
       {
         "id": "c",
-        "text": "Always vitamin K deficiency alone"
+        "text": "Early vitamin K deficiency or warfarin effect"
       },
       {
         "id": "d",
-        "text": "Normal hemostasis certainty"
+        "text": "Factor XIII deficiency or fibrinogen deficiency"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Intrinsic pathway defects and unfractionated heparin prolong aPTT more than PT.",
+    "explanation": "Intrinsic pathway defects and unfractionated heparin prolong aPTT more than PT. Other intrinsic pathway problems can produce the same pattern.",
     "distractorExplanations": {
       "a": "VII prolongs PT.",
-      "c": "Vit K affects II, VII, IX, X — both PT/aPTT can rise.",
-      "d": "Abnormal result."
+      "c": "Warfarin and early vitamin K deficiency prolong the PT first because factor VII has the shortest half-life.",
+      "d": "Factor XIII deficiency leaves PT and aPTT normal, and low fibrinogen prolongs both tests rather than aPTT alone."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1195,15 +1195,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only liver synthetic failure specifically"
+        "text": "Fibrinogen breakdown by plasmin without clot formation"
       },
       {
         "id": "b",
-        "text": "Certain absence of thrombosis"
+        "text": "A confirmed deep vein thrombosis or pulmonary embolism"
       },
       {
         "id": "c",
-        "text": "Iron deficiency"
+        "text": "Reduced fibrinolysis from high plasminogen activator inhibitor"
       },
       {
         "id": "d",
@@ -1213,9 +1213,9 @@
     "correctOptionId": "d",
     "explanation": "D-dimer is sensitive but not specific; used to help exclude VTE when pretest probability low.",
     "distractorExplanations": {
-      "a": "Not specific.",
-      "b": "Elevation has many causes.",
-      "c": "Unrelated."
+      "a": "D-dimer arises from cross-linked fibrin, so a clot must have formed; fibrinogen lysis alone yields other FDPs.",
+      "b": "D-dimer is sensitive but nonspecific; elevation needs imaging to confirm VTE, while a normal level helps exclude it.",
+      "c": "Impaired fibrinolysis would lower D-dimer generation; elevation means plasmin has degraded cross-linked fibrin."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Myocardial infarction"
+        "text": "Iron deficiency anemia by measuring stored iron"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "Hypothyroidism"
+        "text": "Hereditary spherocytosis by red cell membrane analysis"
       },
       {
         "id": "d",
-        "text": "Acute bacterial meningitis"
+        "text": "G6PD deficiency by red cell enzyme activity"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Separates Hb variants (S, C, A2, F, etc.)",
     "distractorExplanations": {
-      "a": "Troponin.",
-      "c": "TSH/FT4.",
-      "d": "CSF studies."
+      "a": "Iron status is assessed with ferritin and iron studies; electrophoresis separates hemoglobin variants.",
+      "c": "Spherocytosis is diagnosed with osmotic fragility or EMA binding, not hemoglobin electrophoresis.",
+      "d": "G6PD deficiency is an enzyme defect detected by enzyme assays; hemoglobin structure itself is normal."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Bone marrow increases RBC production (e.g., response to hemolysis/blood loss after iron available)"
+        "text": "Bone marrow increases RBC production"
       },
       {
         "id": "b",
-        "text": "Platelets clump"
+        "text": "Erythropoietin production falls in renal disease"
       },
       {
         "id": "c",
-        "text": "Marrow fails completely with no stress"
+        "text": "Marrow is replaced in aplastic anemia"
       },
       {
         "id": "d",
-        "text": "Only in iron deficiency without treatment ever"
+        "text": "Untreated iron deficiency limits hemoglobin synthesis"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Reticulocytosis marks marrow response to anemia.",
+    "explanation": "Reticulocytosis marks marrow response to anemia. Examples include hemolysis or blood loss once iron is available.",
     "distractorExplanations": {
-      "b": "Platelet artifact.",
-      "c": "Aplastic processes have low retics.",
-      "d": "IDA retics low until iron repleted."
+      "b": "Low erythropoietin in kidney disease reduces marrow output, so the reticulocyte count falls.",
+      "c": "Aplastic anemia leaves too few precursors, so reticulocytes are low despite the anemia.",
+      "d": "Untreated iron deficiency gives a low reticulocyte count; it rises after iron is replaced."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1397,11 +1397,11 @@
       },
       {
         "id": "b",
-        "text": "Fibrinolysis"
+        "text": "Plasmin-mediated breakdown of the fibrin clot"
       },
       {
         "id": "c",
-        "text": "Complement cascade"
+        "text": "Fibrin stabilization by factor XIII cross-linking"
       },
       {
         "id": "d",
@@ -1411,8 +1411,8 @@
     "correctOptionId": "a",
     "explanation": "Primary hemostasis = platelets + endothelium; secondary = coagulation factors → fibrin.",
     "distractorExplanations": {
-      "b": "Clot breakdown.",
-      "c": "Innate immunity.",
+      "b": "Plasmin breakdown of fibrin is fibrinolysis, the final phase after clot formation, not primary hemostasis.",
+      "c": "Factor XIII cross-linking stabilizes fibrin at the end of secondary hemostasis, not the platelet plug phase.",
       "d": "Secondary hemostasis."
     },
     "difficulty": "easy",
@@ -1430,23 +1430,23 @@
       },
       {
         "id": "b",
-        "text": "Normal finding in all adults"
+        "text": "Leukemoid reaction to infection needing follow-up in a few weeks"
       },
       {
         "id": "c",
-        "text": "Only viral URI"
+        "text": "Chronic lymphocytic leukemia needing routine outpatient follow-up"
       },
       {
         "id": "d",
-        "text": "Iron deficiency certainty"
+        "text": "Iron deficiency with marrow stress needing an iron trial first"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Circulating blasts warrant urgent evaluation for acute leukemia.",
     "distractorExplanations": {
-      "b": "Abnormal.",
-      "c": "Not explained by simple URI.",
-      "d": "Different smear."
+      "b": "Leukemoid reactions show a left shift with few or no blasts; blasts with cytopenias need urgent workup.",
+      "c": "CLL shows mature small lymphocytes and smudge cells, not blasts; blasts with cytopenias suggest acute leukemia.",
+      "d": "Iron deficiency shows microcytic hypochromic cells, not blasts; delaying workup for an iron trial is unsafe."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1459,7 +1459,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only myocardial infarction specifically"
+        "text": "Polycythemia from increased red cell mass"
       },
       {
         "id": "b",
@@ -1467,19 +1467,19 @@
       },
       {
         "id": "c",
-        "text": "Dehydration causing polycythemia"
+        "text": "Sickle cells and spherocytes on the smear"
       },
       {
         "id": "d",
-        "text": "Decreased fibrinogen"
+        "text": "Low fibrinogen and hypogammaglobulinemia"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ESR increases with acute-phase proteins/rouleaux; nonspecific.",
     "distractorExplanations": {
-      "a": "Troponin for MI.",
-      "c": "Polycythemia may lower ESR.",
-      "d": "Low fibrinogen can lower ESR."
+      "a": "A high hematocrit slows rouleaux formation and lowers the ESR; anemia, not polycythemia, raises it.",
+      "c": "Abnormally shaped red cells cannot form rouleaux, so they lower the ESR rather than raise it.",
+      "d": "Fibrinogen and immunoglobulins promote rouleaux; low levels lower the ESR rather than raising it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1492,11 +1492,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Green with acid-fast"
+        "text": "Red due to mycolic acid retaining carbolfuchsin after acid-alcohol"
       },
       {
         "id": "b",
-        "text": "Colorless"
+        "text": "Purple due to lipopolysaccharide binding the iodine mordant"
       },
       {
         "id": "c",
@@ -1504,15 +1504,15 @@
       },
       {
         "id": "d",
-        "text": "Pink/red because of outer membrane"
+        "text": "Pink/red because the alcohol decolorizer removes crystal violet"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Crystal violet–iodine complex is retained in Gram-positive walls.",
     "distractorExplanations": {
-      "a": "AFB use different stains.",
-      "b": "They take stain.",
-      "d": "Gram-negatives take safranin counterstain."
+      "a": "That describes acid-fast staining of mycobacteria, not the Gram reaction of Gram-positive organisms.",
+      "b": "LPS is in Gram-negative outer membranes; Gram-positives retain crystal violet in thick peptidoglycan.",
+      "d": "Losing crystal violet and taking up safranin is the Gram-negative result; Gram-positives resist decolorization."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1525,15 +1525,15 @@
     "options": [
       {
         "id": "a",
-        "text": "All Gram-negatives from each other"
+        "text": "Staphylococcus aureus (positive) from other staphylococci"
       },
       {
         "id": "b",
-        "text": "Viruses from fungi"
+        "text": "Enterococcus (positive) from Streptococcus (negative)"
       },
       {
         "id": "c",
-        "text": "Mycobacteria species definitively alone"
+        "text": "Streptococcus (positive) from Staphylococcus (negative)"
       },
       {
         "id": "d",
@@ -1543,9 +1543,9 @@
     "correctOptionId": "d",
     "explanation": "Staphylococci are catalase-positive; streptococci/enterococci catalase-negative.",
     "distractorExplanations": {
-      "a": "Need other tests.",
-      "b": "Different methods.",
-      "c": "Needs more ID methods."
+      "a": "That is the coagulase test; all staphylococci are catalase-positive, so catalase cannot separate them.",
+      "b": "Enterococci are catalase-negative like streptococci; they are separated by bile esculin and 6.5% NaCl.",
+      "c": "Reverses the reactions; staphylococci produce catalase and bubble with peroxide, streptococci do not."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Westergren pipettes"
+        "text": "Fluorescent-labeled antibodies viewed under a UV microscope"
       },
       {
         "id": "c",
-        "text": "Only Gram stain"
+        "text": "Visible agglutination of antibody-coated latex particles"
       },
       {
         "id": "d",
-        "text": "Flame photometry of sodium"
+        "text": "Radioactive isotope-labeled antigens measured by a gamma counter"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ELISA uses enzyme-substrate systems for sensitive Ag/Ab detection.",
     "distractorExplanations": {
-      "b": "ESR method.",
-      "c": "Microscopy.",
-      "d": "Electrolytes."
+      "b": "That is immunofluorescence (DFA/IFA); ELISA uses an enzyme label with a chromogenic or chemiluminescent substrate.",
+      "c": "Latex agglutination is a direct visible lattice reaction with no enzyme-substrate signal.",
+      "d": "Isotope labels define radioimmunoassay (RIA); ELISA replaced the isotopes with enzyme labels."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1657,11 +1657,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Viral load"
+        "text": "The organism's minimum bactericidal concentration for the drug"
       },
       {
         "id": "b",
-        "text": "Exact MIC in µg/mL without charts"
+        "text": "The exact MIC in µg/mL, read directly from the zone diameter"
       },
       {
         "id": "c",
@@ -1669,15 +1669,15 @@
       },
       {
         "id": "d",
-        "text": "That the drug is toxic to humans"
+        "text": "That the antibiotic diffused poorly through the Mueller-Hinton agar"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Disk diffusion zones are interpreted with CLSI breakpoints; MIC needs dilution methods.",
     "distractorExplanations": {
-      "a": "Molecular/viral assays.",
-      "b": "Zones correlate but aren't MIC numbers.",
-      "d": "In vitro activity ≠ host toxicity."
+      "a": "MBC requires subculturing dilution tubes to show killing; disk zones reflect inhibition of growth.",
+      "b": "Zone sizes are interpreted as S/I/R with CLSI breakpoints; an MIC number needs a dilution or gradient method.",
+      "d": "Poor diffusion would shrink the zone; a zone of inhibition reflects the drug inhibiting the organism's growth."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1723,11 +1723,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No immune response"
+        "text": "Long-term immunity after vaccination"
       },
       {
         "id": "b",
-        "text": "Complement protein C3 level"
+        "text": "Mucosal immunity in secretions"
       },
       {
         "id": "c",
@@ -1735,15 +1735,15 @@
       },
       {
         "id": "d",
-        "text": "Only remote immunity years later"
+        "text": "An allergic type I hypersensitivity"
       }
     ],
     "correctOptionId": "c",
     "explanation": "IgM rises early; IgG indicates later/past exposure (context-dependent)",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "b": "Different analyte.",
-      "d": "IgG more for remote."
+      "a": "Durable post-vaccination immunity is reflected by IgG; IgM marks the early primary response.",
+      "b": "Mucosal secretions are dominated by secretory IgA, not IgM, so this describes a different class.",
+      "d": "Type I hypersensitivity is mediated by IgE bound to mast cells, not by IgM."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1760,11 +1760,11 @@
       },
       {
         "id": "b",
-        "text": "S. aureus in multiple sets with endocarditis signs"
+        "text": "S. aureus in a single bottle from a patient with a central line"
       },
       {
         "id": "c",
-        "text": "Growth of E. coli in all bottles with pyelonephritis"
+        "text": "CoNS in two sets drawn from separate sites in a patient with a prosthetic valve"
       },
       {
         "id": "d",
@@ -1775,8 +1775,8 @@
     "explanation": "Common contaminants appear in single sets; true pathogens often repeatedly isolated with compatible clinic.",
     "distractorExplanations": {
       "a": "Likely true bacteremia.",
-      "b": "True infection pattern.",
-      "c": "True infection pattern."
+      "b": "S. aureus is rarely a contaminant; even one positive bottle is treated as true bacteremia and worked up.",
+      "c": "CoNS in multiple separately drawn sets with a prosthetic device suggests true infection, not contamination."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure antibody titers"
+        "text": "Inhibit Gram-negatives and differentiate mannitol fermentation among staphylococci"
       },
       {
         "id": "b",
-        "text": "Kill all Gram-negatives"
+        "text": "Inhibit Gram-positives and differentiate H2S production among Gram-negatives"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "Grow only viruses"
+        "text": "Support all bacteria and differentiate hemolysis patterns on sheep blood"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Bile salts/crystal violet select for GNB; lactose fermentation shows pink colonies.",
     "distractorExplanations": {
-      "a": "Serology.",
-      "b": "GNB grow.",
-      "d": "Cell culture/molecular for viruses."
+      "a": "That describes mannitol salt agar, which selects for staphylococci with high salt, not MacConkey.",
+      "b": "H2S differentiation is a feature of HE or XLD agar; MacConkey differentiates by lactose fermentation.",
+      "d": "Blood agar is an enriched nonselective medium for hemolysis; MacConkey is selective for Gram-negatives."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Specific antibodies to separated protein antigens (e.g., older HIV algorithms)"
+        "text": "Specific antibodies to separated protein antigens"
       },
       {
         "id": "b",
-        "text": "ESR"
+        "text": "Specific DNA sequences transferred to a membrane"
       },
       {
         "id": "c",
-        "text": "Serum sodium"
+        "text": "Specific RNA transcripts separated by gel electrophoresis"
       },
       {
         "id": "d",
-        "text": "Gram stain morphology"
+        "text": "Viral RNA load by amplification and real-time detection"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Immunoblots detect Ab reactivity to specific proteins after separation.",
+    "explanation": "Immunoblots detect Ab reactivity to specific proteins after separation. Older HIV testing algorithms used it as the confirmatory step.",
     "distractorExplanations": {
-      "b": "Inflammation marker.",
-      "c": "Chemistry.",
-      "d": "Microscopy."
+      "b": "DNA transferred to a membrane and probed is a Southern blot; the Western blot detects protein-antibody binding.",
+      "c": "RNA detection on a membrane is the Northern blot; immunoblots probe separated proteins with patient antibody.",
+      "d": "Quantitative viral load uses NAAT such as RT-PCR, not antibody reactivity to separated proteins."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1888,15 +1888,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Blood smear for parasites"
+        "text": "Anaerobic stool culture alone, without any toxin confirmation step"
       },
       {
         "id": "b",
-        "text": "Throat culture on blood agar"
+        "text": "Testing of formed stool to screen for colonization"
       },
       {
         "id": "c",
-        "text": "Urine dipstick nitrite"
+        "text": "Stool ova and parasite exam with modified acid-fast stain"
       },
       {
         "id": "d",
@@ -1906,9 +1906,9 @@
     "correctOptionId": "d",
     "explanation": "Labs use GDH/toxin EIA ± NAAT algorithms on unformed stool.",
     "distractorExplanations": {
-      "a": "Different.",
-      "b": "Wrong specimen/pathogen approach.",
-      "c": "UTI screen."
+      "a": "Culture also grows nontoxigenic strains and is slow; diagnosis requires toxin or toxin-gene detection.",
+      "b": "Formed stool is rejected; testing is limited to unformed stool to avoid detecting mere colonization.",
+      "c": "O&P and acid-fast stains target parasites such as Cryptosporidium, not toxigenic C. difficile."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1921,11 +1921,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Skipping controls if busy"
+        "text": "Testing patient isolates in duplicate on the same day"
       },
       {
         "id": "b",
-        "text": "Using expired disks routinely"
+        "text": "Testing ATCC strains once at installation of a new disk lot"
       },
       {
         "id": "c",
@@ -1933,15 +1933,15 @@
       },
       {
         "id": "d",
-        "text": "Interpreting zones without standards"
+        "text": "Testing ATCC control strains and reading zones against patient breakpoints"
       }
     ],
     "correctOptionId": "c",
     "explanation": "CLSI QC with reference strains validates method performance.",
     "distractorExplanations": {
-      "a": "QC is mandatory.",
-      "b": "Expired reagents invalid.",
-      "d": "Breakpoints required."
+      "a": "Duplicate patient testing checks reproducibility but cannot verify accuracy; QC uses reference strains with known ranges.",
+      "b": "QC is run at a defined frequency (daily, or weekly under a validated plan), not just when a new lot is installed.",
+      "d": "QC zones are compared with the CLSI QC range for the reference strain, not with clinical S/I/R breakpoints."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1958,23 +1958,23 @@
       },
       {
         "id": "b",
-        "text": "Malaria thick smears"
+        "text": "Histoplasma capsulatum in bone marrow or urine"
       },
       {
         "id": "c",
-        "text": "Group A strep pharyngitis"
+        "text": "Candida albicans in CSF with germ tube testing"
       },
       {
         "id": "d",
-        "text": "TB PCR"
+        "text": "Pneumocystis jirovecii in bronchoalveolar lavage"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Capsule visualization/antigen assays support cryptococcal meningitis diagnosis.",
     "distractorExplanations": {
-      "b": "Giemsa smears.",
-      "c": "Rapid strep/culture.",
-      "d": "Different pathogens."
+      "b": "Histoplasma is detected by urine antigen and culture; India ink highlights the cryptococcal capsule.",
+      "c": "Germ tube testing identifies Candida albicans; India ink and CrAg target encapsulated Cryptococcus.",
+      "d": "Pneumocystis is shown with GMS, calcofluor, or DFA staining, not India ink or cryptococcal antigen."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"

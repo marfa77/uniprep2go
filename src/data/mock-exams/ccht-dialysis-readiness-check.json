@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Replace the need for any dietary restrictions permanently"
+        "text": "Restore the kidney's hormone functions, such as erythropoietin and vitamin D activation"
       },
       {
         "id": "c",
-        "text": "Cure chronic kidney disease in one session"
+        "text": "Remove protein-bound drugs and large proteins such as albumin from the blood"
       },
       {
         "id": "d",
-        "text": "Deliver intravenous antibiotics"
+        "text": "Lower blood pressure by delivering antihypertensive medication via dialysate"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Hemodialysis partially replaces filtration/fluid balance functions of failed kidneys; it is not a cure.",
     "distractorExplanations": {
-      "b": "Diet/fluid limits usually continue.",
-      "c": "CKD/ESKD is managed, not cured by a single HD run.",
-      "d": "Antibiotics may be given but are not the primary purpose."
+      "b": "Dialysis does not replace endocrine kidney functions; ESAs and active vitamin D are given as separate medications.",
+      "c": "The membrane is designed to retain albumin and most proteins; protein loss is a side effect, not the purpose.",
+      "d": "BP improves through fluid removal; antihypertensives are not delivered through the dialysate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Fluid removal driven only by hydrostatic pressure"
+        "text": "Movement of water across the membrane driven by a hydrostatic pressure gradient"
       },
       {
         "id": "b",
-        "text": "Movement of solutes from higher to lower concentration across a semipermeable membrane"
+        "text": "Movement of solutes from higher to lower concentration across a membrane"
       },
       {
         "id": "c",
-        "text": "Clotting of the extracorporeal circuit"
+        "text": "Movement of solutes carried along with water as it crosses the membrane (solvent drag)"
       },
       {
         "id": "d",
-        "text": "Air entering the venous chamber"
+        "text": "Binding of solutes to the membrane surface so they are removed from the blood"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Diffusion clears small solutes; ultrafiltration removes fluid via pressure gradients.",
     "distractorExplanations": {
-      "a": "That describes ultrafiltration more than diffusion.",
-      "c": "Clotting is a complication, not diffusion.",
-      "d": "Air entry is a safety hazard, not diffusion."
+      "a": "That describes ultrafiltration (fluid removal by pressure), not diffusion of solutes down a concentration gradient.",
+      "c": "That is convection, the main mechanism in hemofiltration; diffusion depends on a concentration gradient.",
+      "d": "That is adsorption, a minor removal mechanism for some proteins, not diffusion."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Free mixing of blood and dialysate into one open pool"
+        "text": "Passage of blood cells and proteins into the dialysate while retaining water and urea"
       },
       {
         "id": "b",
-        "text": "Bacteria to freely enter the blood path by design"
+        "text": "Passage of water only, while all solutes including urea and potassium are retained"
       },
       {
         "id": "c",
-        "text": "Complete impermeability to all solutes"
+        "text": "Passage of large proteins such as albumin while small molecules such as urea are retained"
       },
       {
         "id": "d",
-        "text": "Passage of water and small/middle molecules while retaining blood cells and most proteins (depending on membrane)"
+        "text": "Passage of water and small/middle molecules while retaining cells and most proteins"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Membrane selectivity is fundamental; blood and dialysate remain in separate compartments.",
+    "explanation": "Membrane selectivity is fundamental; blood and dialysate remain in separate compartments. The exact molecular cutoff depends on the membrane.",
     "distractorExplanations": {
-      "a": "Compartments stay separate.",
-      "b": "Intact systems aim to prevent contamination.",
-      "c": "Solute clearance requires controlled permeability."
+      "a": "Reverses selectivity: cells and proteins stay in the blood while water and urea cross the membrane.",
+      "b": "Describes reverse osmosis behavior; urea, potassium and other small solutes must cross the dialyzer membrane.",
+      "c": "Inverts size selectivity: small molecules like urea pass easily, while albumin is largely retained."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Patient hemoglobin"
+        "text": "Bacterial and endotoxin levels in the dialysate"
       },
       {
         "id": "c",
-        "text": "Room humidity"
+        "text": "Temperature of the dialysate delivered to the dialyzer"
       },
       {
         "id": "d",
-        "text": "Needle gauge size"
+        "text": "Blood flow rate through the extracorporeal circuit"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Out-of-range conductivity can indicate improper concentrate mixing—unsafe for treatment.",
     "distractorExplanations": {
-      "b": "Hgb is a patient lab value.",
-      "c": "Humidity is environmental.",
-      "d": "Needle size is access equipment."
+      "b": "Microbial quality is measured by cultures and LAL endotoxin testing; conductivity reflects ionic concentration.",
+      "c": "Temperature has its own sensor; conductivity is temperature-compensated but reflects electrolyte concentration.",
+      "d": "Blood flow is set by the blood pump and seen on the pump display; conductivity is a dialysate measurement."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only blood pressure cuff size"
+        "text": "Fluid removal accuracy (ultrafiltration relative to dry weight)"
       },
       {
         "id": "b",
-        "text": "Water softener salt level alone"
+        "text": "Access recirculation (venous blood re-entering the arterial needle)"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Fistula thrill strength"
+        "text": "Anemia management (hemoglobin response to erythropoietin dosing)"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Adequacy metrics help the care team evaluate whether the prescription is meeting urea clearance goals.",
     "distractorExplanations": {
-      "a": "Cuff size is measurement technique.",
-      "b": "Softener is water treatment.",
-      "d": "Thrill assesses access function, not urea kinetic adequacy alone."
+      "a": "UF accuracy is judged by pre/post weights against target weight; Kt/V and URR measure urea clearance.",
+      "b": "Recirculation lowers adequacy but is measured with a separate recirculation study, not by Kt/V or URR.",
+      "d": "Anemia is tracked with hemoglobin and iron studies; Kt/V and URR are urea-clearance adequacy measures."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Perfect access function"
+        "text": "Venous outflow obstruction from a kinked return line or infiltrated venous needle"
       },
       {
         "id": "b",
-        "text": "That UF is turned off"
+        "text": "A blood flow rate set too low for the size of the arterial needle in use"
       },
       {
         "id": "c",
-        "text": "That dialysate is bicarbonate-free by design"
+        "text": "A dialyzer clotting downstream of the blood pump, which increases transmembrane pressure"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Very negative arterial pressures warrant assessment of needles/access/lines before continuing blindly.",
     "distractorExplanations": {
-      "a": "Alarms indicate a problem to evaluate.",
-      "b": "UF setting is separate.",
-      "c": "Bicarbonate dialysate is standard when prescribed."
+      "a": "Outflow obstruction raises venous (post-dialyzer) pressure; very negative arterial pressure points to inflow.",
+      "b": "A low blood flow makes arterial pressure less negative; high flow through a small needle makes it more negative.",
+      "c": "Dialyzer clotting shows as rising pre-dialyzer pressure/TMP after the pump, not excessive pre-pump negativity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Outflow obstruction such as clotting, kinked line, or infiltrated/poor venous return"
+        "text": "Outflow obstruction such as clotting, kinked line, or infiltrated venous return"
       },
       {
         "id": "b",
-        "text": "That the blood pump is off and everything is fine"
+        "text": "Arterial needle inflow problems such as stenosis or a needle against the vessel wall"
       },
       {
         "id": "c",
-        "text": "Mandatory increase of heparin without assessment"
+        "text": "A disconnected or dislodged venous needle allowing blood to leak at the site"
       },
       {
         "id": "d",
-        "text": "That conductivity is irrelevant"
+        "text": "A blood pump speed reduced after the patient complained of cramping"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Rising venous pressure is a classic sign to check the venous needle/path for problems.",
     "distractorExplanations": {
-      "b": "Pump-off is not a solution interpretation.",
-      "c": "Anticoagulation changes need RN/protocol—not blind increases.",
-      "d": "Conductivity remains critical."
+      "b": "Inflow problems drive arterial pressure more negative and can lower venous pressure rather than raise it.",
+      "c": "Venous needle dislodgement drops venous pressure, which is why it may not trigger an alarm; it does not rise.",
+      "d": "Lowering blood flow reduces venous pressure; a sharp rise suggests obstruction of the return path."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure residual renal function"
+        "text": "Detect blood leaks across the dialyzer membrane into the dialysate path"
       },
       {
         "id": "b",
-        "text": "Reduce risk of air embolism by alarming and clamping if air is detected"
+        "text": "Reduce air embolism risk by alarming and clamping if air is detected"
       },
       {
         "id": "c",
-        "text": "Warm the dialysate"
+        "text": "Remove microbubbles from the dialysate before it enters the dialyzer"
       },
       {
         "id": "d",
-        "text": "Calculate target weight automatically from BMI"
+        "text": "Monitor the arterial line for clots forming before the blood pump"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Air-in-blood is a life-threatening emergency; detectors are critical safety systems.",
     "distractorExplanations": {
-      "a": "RRF is clinical/lab assessment.",
-      "c": "Warming is a separate control.",
-      "d": "TW is a clinical prescription."
+      "a": "Membrane leaks are caught by the blood leak detector on the dialysate outflow, not the venous air detector.",
+      "c": "Dialysate degassing is done by the machine's deaeration system; the venous detector guards the blood path.",
+      "d": "Clotting is watched through pressures and visual checks; the air detector/clamp sits on the venous return line."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -337,11 +337,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase serum potassium intentionally to high levels"
+        "text": "Help correct metabolic alkalosis caused by uremic toxin buildup"
       },
       {
         "id": "b",
-        "text": "Eliminate the need for infection control"
+        "text": "Help remove excess calcium that accumulates in kidney failure"
       },
       {
         "id": "c",
@@ -349,15 +349,15 @@
       },
       {
         "id": "d",
-        "text": "Replace heparin in all patients universally"
+        "text": "Help prevent clotting of the dialyzer during the treatment"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Buffer base in dialysate supports acid-base correction during HD.",
     "distractorExplanations": {
-      "a": "Hyperkalemia is harmful; dialysate K is prescribed carefully.",
-      "b": "Infection control remains mandatory.",
-      "d": "Anticoagulation is separate and individualized."
+      "a": "Kidney failure causes metabolic acidosis, not alkalosis; bicarbonate is a base used to correct acidosis.",
+      "b": "Calcium balance is managed with the dialysate calcium concentration; bicarbonate serves as the buffer.",
+      "d": "Circuit clotting is prevented with heparin or saline flushes per order; bicarbonate has no anticoagulant role."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -370,15 +370,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the patient’s oral temperature"
+        "text": "Pressure in the arterial line between the access and the blood pump"
       },
       {
         "id": "b",
-        "text": "The clinic’s Wi-Fi password"
+        "text": "Pressure in the venous drip chamber reflecting resistance to blood return"
       },
       {
         "id": "c",
-        "text": "Needle bevel orientation"
+        "text": "Osmotic pressure difference that drives solute diffusion from blood to dialysate"
       },
       {
         "id": "d",
@@ -388,9 +388,9 @@
     "correctOptionId": "d",
     "explanation": "TMP connects to UF control; unexpected TMP changes need troubleshooting.",
     "distractorExplanations": {
-      "a": "Temperature is separate.",
-      "b": "Unrelated IT.",
-      "c": "Bevel matters for cannulation, not TMP definition."
+      "a": "That is arterial (pre-pump) pressure, which reflects access inflow rather than the membrane gradient.",
+      "b": "That is venous pressure; TMP is the blood-to-dialysate pressure difference across the membrane.",
+      "c": "Diffusion is driven by concentration gradients; TMP is a hydrostatic gradient that drives ultrafiltration."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Greater permeability allowing more middle-molecule clearance (and careful UF control)"
+        "text": "Greater permeability allowing more middle-molecule clearance"
       },
       {
         "id": "b",
-        "text": "Zero ultrafiltration capability"
+        "text": "Larger surface area allowing faster small-solute clearance like urea"
       },
       {
         "id": "c",
-        "text": "No need for water quality standards"
+        "text": "Lower permeability that retains middle molecules such as beta-2 microglobulin"
       },
       {
         "id": "d",
-        "text": "Exclusive use without a blood pump"
+        "text": "Greater blood flow capacity allowing pump speeds above 500 mL/min"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Flux refers to water/solute permeability characteristics; prescriptions and monitoring still apply.",
+    "explanation": "Flux refers to water/solute permeability characteristics; prescriptions and monitoring still apply. High-flux dialyzers also require careful (volumetric) UF control.",
     "distractorExplanations": {
-      "b": "UF still occurs as prescribed.",
-      "c": "Water quality remains essential, especially with high-flux.",
-      "d": "Extracorporeal HD uses a blood pump."
+      "b": "Surface area and urea clearance define a high-efficiency dialyzer; flux describes membrane water permeability.",
+      "c": "Describes a low-flux membrane; high-flux membranes clear more beta-2 microglobulin and other middle molecules.",
+      "d": "Flux is a membrane permeability property; blood flow rate is set by the access and prescription."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "In the same direction only, which maximizes clearance best"
+        "text": "In the same direction (cocurrent) to keep the pressure gradient stable"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Without any controlled flow rates"
+        "text": "In opposite directions, with dialysate flow kept below the blood flow rate"
       },
       {
         "id": "d",
-        "text": "Only by gravity without machine control in standard in-center HD"
+        "text": "In the same direction, with dialysate recirculated to conserve concentrate"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Countercurrent flow is standard to optimize solute removal efficiency.",
     "distractorExplanations": {
-      "a": "Cocurrent is less efficient for diffusion.",
-      "c": "Flows are prescribed/controlled.",
-      "d": "Machines control extracorporeal flow."
+      "a": "Cocurrent flow lets the concentration gradient fall along the fiber and lowers clearance; countercurrent is standard.",
+      "c": "Dialysate flow is normally set higher than blood flow (often 500-800 mL/min) to maintain the gradient.",
+      "d": "Standard in-center machines use single-pass, countercurrent dialysate; recirculating it erodes the gradient."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Bypass all alarms and start anyway"
+        "text": "Start treatment with the machine in bypass and recheck conductivity after an hour"
       },
       {
         "id": "b",
-        "text": "Add table salt to the drain"
+        "text": "Silence the alarm and rely on the machine's internal conductivity reading alone"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore because conductivity is cosmetic"
+        "text": "Adjust the patient's prescribed sodium profile until the conductivity alarm finally clears"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Unsafe dialysate composition risks severe electrolyte injury; alarms are not optional.",
     "distractorExplanations": {
-      "a": "Bypassing safety is dangerous/noncompliant.",
-      "b": "Drain additives do not fix dialysate mix.",
-      "d": "Conductivity is a critical safety parameter."
+      "a": "Treatment cannot start until dialysate composition is verified; bypass is a protective mode, not a workaround.",
+      "b": "An out-of-range reading needs independent verification and correction, not silencing and trusting one sensor.",
+      "d": "Changing the prescription masks a mixing/concentrate error and is outside the technician's scope."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "Needle gauge"
+        "text": "The dialysate sodium level to order"
       },
       {
         "id": "c",
-        "text": "Whether gloves are needed"
+        "text": "The blood flow rate for the session"
       },
       {
         "id": "d",
-        "text": "The patient’s favorite snack"
+        "text": "Whether the dialyzer size is right"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Interdialytic weight gain drives UF prescription; assess for errors and symptoms.",
     "distractorExplanations": {
-      "b": "Gauge is access technique.",
-      "c": "PPE is always indicated as required.",
-      "d": "Snacks are not UF determinants."
+      "b": "Dialysate sodium is set by the prescription and labs, not by comparing pre-weight with target weight.",
+      "c": "Blood flow is set by the prescription and access performance; weight gain determines the UF goal.",
+      "d": "Dialyzer choice is part of the adequacy prescription; weight versus dry weight sets fluid removal."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -568,11 +568,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always too little UF"
+        "text": "A dialysate temperature set cooler than the patient's body temperature"
       },
       {
         "id": "b",
-        "text": "Wearing compression sleeves"
+        "text": "Interdialytic weight gain too small to require much fluid removal"
       },
       {
         "id": "c",
@@ -580,15 +580,15 @@
       },
       {
         "id": "d",
-        "text": "Using bicarbonate dialysate as prescribed"
+        "text": "High dialysate sodium drawing fluid out of the vascular space"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Rapid UF is a common contributor; notify RN, follow protocols (Trendelenburg if used per policy, saline, UF adjust).",
     "distractorExplanations": {
-      "a": "Too little UF causes fluid overload, not typical hypotension from UF.",
-      "b": "Sleeves unrelated as primary cause.",
-      "d": "Bicarb dialysate is standard therapy, not the usual cause."
+      "a": "Cool dialysate causes vasoconstriction and is used to prevent hypotension; warm dialysate contributes to it.",
+      "b": "Small gains mean a low UF rate and less hypotension risk; large gains with rapid UF are the usual cause.",
+      "d": "Higher dialysate sodium supports plasma osmolality and vascular refill; low sodium contributes to hypotension."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "That the access is clotted for sure"
+        "text": "A stenosis narrowing the access that needs urgent referral"
       },
       {
         "id": "b",
-        "text": "That needles are unnecessary"
+        "text": "Arterial steal reducing blood flow to the hand"
       },
       {
         "id": "c",
-        "text": "Infection is always present"
+        "text": "A clotted access that should not be cannulated"
       },
       {
         "id": "d",
-        "text": "Expected blood flow through a patent access (assess quality/changes)"
+        "text": "Expected blood flow through a patent access"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Absence or marked change in thrill/bruit can signal thrombosis/stenosis—report promptly.",
+    "explanation": "Absence or marked change in thrill/bruit can signal thrombosis/stenosis—report promptly. Assess the quality of the thrill and bruit and report any change.",
     "distractorExplanations": {
-      "a": "Clotting usually diminishes/absents thrill.",
-      "b": "Cannulation still needed for HD.",
-      "c": "Infection has other signs (redness, drainage, fever)."
+      "a": "A normal thrill and bruit indicate patency; stenosis shows as a high-pitched, discontinuous bruit or pulsatile thrill.",
+      "b": "Steal is identified by distal hand coolness, pain or pallor, not by the presence of a thrill and bruit.",
+      "c": "A clotted access has an absent thrill and bruit; their presence indicates flow through a patent access."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Adequate depth, diameter, and flow characteristics for successful cannulation (facility protocols vary)"
+        "text": "Adequate depth, diameter, and flow characteristics for successful cannulation"
       },
       {
         "id": "b",
-        "text": "Six heparin vials per treatment mandatory"
+        "text": "Waiting six months before the first cannulation and using 6-gauge fistula needles"
       },
       {
         "id": "c",
-        "text": "Six-hour minimum for all treatments regardless of prescription"
+        "text": "Six hours of treatment per week with a minimum blood pump speed of 600 mL/min"
       },
       {
         "id": "d",
-        "text": "Six needles in one access simultaneously"
+        "text": "Rotating sites six centimeters apart over six treatments per week"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Maturation criteria guide when an access is ready; follow nephrology/facility standards.",
+    "explanation": "Maturation criteria guide when an access is ready; follow nephrology/facility standards. Classic figures: flow about 600 mL/min, diameter about 6 mm, depth under 6 mm, about 6 weeks after creation; facility protocols vary.",
     "distractorExplanations": {
-      "b": "Heparin is individualized.",
-      "c": "Time is prescription-based.",
-      "d": "Standard is typically two needles (or buttonhole variants), not six."
+      "b": "The rule uses about 6 weeks, not months; fistula needles are typically 14-17 gauge, not 6 gauge.",
+      "c": "The 600 mL/min figure is access flow for maturation, not a treatment blood flow, and time is not part of it.",
+      "d": "Site rotation (rope ladder) is a cannulation technique; the rule of 6s describes fistula maturation criteria."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved grip strength only as a benefit"
+        "text": "Arm swelling and prominent chest veins due to central vein stenosis"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Isolated hiccups without vascular signs"
+        "text": "Redness, warmth, and drainage at the cannulation sites due to infection"
       },
       {
         "id": "d",
-        "text": "Elevated dialysate temperature alone"
+        "text": "A pulsatile, high-pitched bruit due to outflow stenosis"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ischemic symptoms distal to access need prompt clinical evaluation.",
     "distractorExplanations": {
-      "a": "Ischemia is harmful.",
-      "c": "Hiccups are not classic steal.",
-      "d": "Dialysate temp is machine/patient safety separate issue."
+      "a": "Swelling with collateral veins signals central venous stenosis/venous hypertension, not arterial steal.",
+      "c": "Those are signs of access infection; steal causes ischemic symptoms distal to the access.",
+      "d": "A high-pitched bruit and pulsatile access indicate outflow stenosis, not distal ischemia from steal."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase pump speed to clear the infiltrate"
+        "text": "Lower the blood flow rate, reposition the needle deeper into the vessel, and continue treatment"
       },
       {
         "id": "b",
-        "text": "Ignore swelling if the patient says it is fine"
+        "text": "Apply heat to the site immediately and continue at the same blood flow rate"
       },
       {
         "id": "c",
-        "text": "Stop the blood pump, discontinue that needle per protocol, apply pressure, and notify the nurse"
+        "text": "Stop the blood pump, discontinue that needle, apply pressure, and notify the nurse"
       },
       {
         "id": "d",
-        "text": "Flip the arterial and venous lines randomly"
+        "text": "Swap the arterial and venous bloodlines so blood returns through the arterial needle instead"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Infiltration risks hematoma and further injury; do not increase flow through a bad needle.",
+    "explanation": "Infiltration risks hematoma and further injury; do not increase flow through a bad needle. Remove the infiltrated needle per facility protocol.",
     "distractorExplanations": {
-      "a": "Higher speed worsens infiltration.",
-      "b": "Swelling must be addressed.",
-      "d": "Random line swaps are unsafe."
+      "a": "Repositioning an infiltrated needle worsens the hematoma; stop the pump, remove it, hold pressure and notify.",
+      "b": "Continuing flow through an infiltrated needle extends the injury; cold is usually applied first, per protocol.",
+      "d": "Reversing lines does not fix an infiltrated site and increases recirculation; stop and remove the needle."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -733,15 +733,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Perfect fluid balance"
+        "text": "High dialysate sodium raising plasma osmolality"
       },
       {
         "id": "b",
-        "text": "Wearing two gowns"
+        "text": "Hyperkalemia from a high-potassium dialysate bath"
       },
       {
         "id": "c",
-        "text": "Documenting vital signs correctly"
+        "text": "Heparin dosing that is too high for the patient"
       },
       {
         "id": "d",
@@ -751,9 +751,9 @@
     "correctOptionId": "d",
     "explanation": "Cramps trigger assessment and RN-directed interventions; prevention includes appropriate UF profiling per order.",
     "distractorExplanations": {
-      "a": "Cramps suggest imbalance, not perfection.",
-      "b": "Gowns are PPE.",
-      "c": "Documentation is required but not the cause."
+      "a": "Higher sodium is used to relieve cramps; low dialysate sodium and rapid UF are associated with cramping.",
+      "b": "Hyperkalemia causes weakness and arrhythmias; intradialytic cramps are linked to volume and electrolyte shifts.",
+      "c": "Excess heparin causes prolonged bleeding at needle sites, not muscle cramps."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "Improved appetite as the only sign"
+        "text": "Fever and chills appearing an hour in, from endotoxin in the water supply"
       },
       {
         "id": "c",
-        "text": "Mandatory hyperkalemia"
+        "text": "Headache, nausea, and confusion from rapid urea removal in new patients"
       },
       {
         "id": "d",
-        "text": "Normal uneventful treatment by definition"
+        "text": "Hypotension and cramping late in treatment from excessive ultrafiltration"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Suspect dialyzer reaction with new membrane/sterilant issues; emergency response and reporting apply.",
     "distractorExplanations": {
-      "b": "Reactions are adverse, not appetite benefits.",
-      "c": "K+ changes are separate.",
-      "d": "It is a complication, not normal."
+      "b": "That is a pyrogenic reaction from contaminated water; first-use reactions occur within minutes of starting.",
+      "c": "Those neurologic symptoms describe disequilibrium syndrome, not a dialyzer (first-use) reaction.",
+      "d": "Late hypotension and cramps reflect fluid removal; first-use syndrome is an early reaction to the dialyzer."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only whether they liked the TV show"
+        "text": "Vital signs and post weight only, with access checked at the next session"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Skipping blood pressure if they feel well"
+        "text": "Access hemostasis and post weight, with blood pressure taken if symptomatic"
       },
       {
         "id": "d",
-        "text": "Immediate heavy weightlifting on the access arm"
+        "text": "Post-treatment labs and Kt/V before the patient may leave the chair"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Safe discharge/transfer includes hemostasis and hemodynamic stability.",
     "distractorExplanations": {
-      "a": "Comfort is nice but not the clinical endpoint.",
-      "c": "Vitals are required per protocol.",
-      "d": "Access arm precautions matter."
+      "a": "Access hemostasis must be confirmed before the patient leaves; deferring it risks bleeding after discharge.",
+      "c": "Post-treatment vital signs and orthostatic checks are required for every patient, not just symptomatic ones.",
+      "d": "Labs are drawn on a schedule per policy; discharge criteria are vitals, hemostasis and safe ambulation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -832,11 +832,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal expected findings requiring no action"
+        "text": "Possible air embolism from the venous line; clamp lines and continue"
       },
       {
         "id": "b",
-        "text": "Need to increase UF by 2 liters immediately without orders"
+        "text": "Possible hyperkalemia from the dialysate bath; raise the potassium bath"
       },
       {
         "id": "c",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "That conductivity alarms should be silenced permanently"
+        "text": "Possible first-use reaction to the dialyzer; slow the blood pump down"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Neuromuscular symptoms can signal dangerous electrolyte shifts; escalate promptly.",
     "distractorExplanations": {
-      "a": "Not normal—needs assessment.",
-      "b": "UF changes need orders/protocol.",
-      "d": "Never permanently silence safety alarms."
+      "a": "Air embolism presents with dyspnea, chest pain and cyanosis and requires stopping treatment, not continuing.",
+      "b": "Perioral tingling with twitching suggests hypocalcemia; changing the potassium bath is outside tech scope.",
+      "d": "First-use reactions occur in the first minutes with chest/back pain, not tetany-like signs near the end."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -902,23 +902,23 @@
       },
       {
         "id": "b",
-        "text": "UF is zero and BUN is already normal"
+        "text": "Fluid is removed too rapidly in patients with large interdialytic gains"
       },
       {
         "id": "c",
-        "text": "The patient skips one snack"
+        "text": "Urea is lowered too slowly in long-term patients on short treatments"
       },
       {
         "id": "d",
-        "text": "Gloves are powdered"
+        "text": "Dialysate sodium is set higher than the patient's serum sodium level"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Neurologic symptoms from osmotic shifts require prevention strategies (shorter/slower initial Rx)",
     "distractorExplanations": {
-      "b": "Risk relates to rapid solute shifts.",
-      "c": "Snacks unrelated as primary cause.",
-      "d": "Glove powder is a separate allergy issue."
+      "b": "Rapid fluid removal causes hypotension and cramps; disequilibrium comes from rapid urea (osmotic) shifts.",
+      "c": "Slow urea removal means inadequate dialysis; disequilibrium results from removing urea too fast.",
+      "d": "Higher dialysate sodium is a strategy to reduce disequilibrium risk, not a cause of it."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Preferred every treatment for speed"
+        "text": "Preferred, because the wider segment is easier to hit"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Required to strengthen the wall"
+        "text": "Acceptable if a smaller 17-gauge needle is used there"
       },
       {
         "id": "d",
-        "text": "Done without skin prep"
+        "text": "Recommended as a buttonhole site to limit new punctures"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Repeated cannulation of aneurysms risks rupture/bleeding; follow buttonhole or rope-ladder plans as ordered.",
     "distractorExplanations": {
-      "a": "Aneurysms are high risk, not preferred.",
-      "c": "It does not strengthen safely.",
-      "d": "Skin prep is mandatory."
+      "a": "Aneurysmal skin and wall are thin; cannulating them risks bleeding and rupture, so they are avoided.",
+      "c": "Needle size does not make an aneurysm safe to puncture; the thin wall still risks rupture and bleeding.",
+      "d": "Buttonhole tracks are created in healthy, straight segments, never in aneurysms."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -964,11 +964,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Secretly increase UF to “make up for it”"
+        "text": "Shorten the session as requested and document it at the end of the shift"
       },
       {
         "id": "b",
-        "text": "Discharge AMA documentation without notifying anyone"
+        "text": "Have the patient sign an AMA form and end treatment without involving the nurse"
       },
       {
         "id": "c",
@@ -976,15 +976,15 @@
       },
       {
         "id": "d",
-        "text": "Argue until the patient complies regardless of capacity assessment"
+        "text": "Increase the UF rate for the remaining time so the fluid goal is still met"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Informed refusal is handled by licensed clinicians; technicians escalate and document.",
     "distractorExplanations": {
-      "a": "Secret UF changes are unsafe/unauthorized.",
-      "b": "Team notification is required.",
-      "d": "Capacity/consent issues need proper clinical handling."
+      "a": "A refusal must be reported to the nurse promptly so a licensed clinician can address risks and consent.",
+      "b": "Informed refusal and AMA discussions are handled by licensed staff; the technician escalates first.",
+      "d": "Raising UF to compensate without an order risks hypotension and is outside the technician's scope."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1001,23 +1001,23 @@
       },
       {
         "id": "b",
-        "text": "Water never contacts the extracorporeal circuit"
+        "text": "Patients drink large volumes of treated water to replace removed fluid"
       },
       {
         "id": "c",
-        "text": "Municipal water is always sterile and endotoxin-free"
+        "text": "Municipal water already meets AAMI dialysis standards once chlorine is removed"
       },
       {
         "id": "d",
-        "text": "Softener salt replaces carbon tanks completely"
+        "text": "Softened water can be used directly without carbon or reverse osmosis"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Contaminants (chloramine, bacteria, endotoxin, metals) can harm patients if water systems fail.",
     "distractorExplanations": {
-      "b": "Dialysate is water-based—exposure is real.",
-      "c": "Municipal water is not dialysis-grade without treatment.",
-      "d": "Each component has a distinct role."
+      "b": "Patients are fluid-restricted; the exposure is the 100+ liters of dialysate water contacting blood per treatment.",
+      "c": "Drinking-water standards are not dialysis standards; chloramine, metals, bacteria and endotoxin must be treated.",
+      "d": "Softening only removes hardness; carbon and RO are still needed for chloramine and other contaminants."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Bacteria to sterile zero"
+        "text": "Chlorine and chloramine levels"
       },
       {
         "id": "b",
-        "text": "Endotoxin by definition alone"
+        "text": "Bacteria and endotoxin counts"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Patient potassium directly"
+        "text": "Aluminum and other trace metals"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Hardness protection helps protect RO membranes; softeners are not sterilizers.",
     "distractorExplanations": {
-      "a": "Softening ≠ sterilization.",
-      "b": "Endotoxin needs RO/UF/disinfection strategies.",
-      "d": "Patient K is managed via dialysate/diet/meds."
+      "a": "Chlorine and chloramine are removed by carbon tanks; softeners exchange hardness ions.",
+      "b": "Bacteria and endotoxin are controlled by RO, ultrafilters and disinfection, not by softeners.",
+      "d": "Trace metals like aluminum are removed mainly by reverse osmosis; softeners target calcium and magnesium."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Adds chloramine intentionally"
+        "text": "Removes chloramine so carbon tanks can be omitted from the system"
       },
       {
         "id": "b",
-        "text": "Replaces the need for any monitoring"
+        "text": "Adds bicarbonate buffer to product water before concentrate mixing"
       },
       {
         "id": "c",
-        "text": "Is optional decoration plumbing"
+        "text": "Softens feed water by exchanging calcium for sodium ions"
       },
       {
         "id": "d",
-        "text": "Removes a broad range of chemical and microbial contaminants when functioning properly"
+        "text": "Removes a broad range of chemical and microbial contaminants"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "RO is a cornerstone; reject rates, pressures, and product water quality are monitored.",
+    "explanation": "RO is a cornerstone; reject rates, pressures, and product water quality are monitored. It does so only when functioning properly, so rejection and product water quality are monitored.",
     "distractorExplanations": {
-      "a": "Carbon removes chloramine upstream.",
-      "b": "Monitoring is mandatory.",
-      "c": "RO is essential infrastructure."
+      "a": "RO does not reliably remove chloramine, and chloramine damages some membranes; carbon must stay upstream.",
+      "b": "RO purifies water; bicarbonate is added later from concentrate in the dialysis machine.",
+      "c": "Ion exchange for hardness is the softener's job, placed upstream to protect the RO membrane."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "Improved Kt/V automatically"
+        "text": "Hemolysis (dark blood, chest pain, back pain)"
       },
       {
         "id": "c",
-        "text": "Faster fistula maturation"
+        "text": "Disequilibrium (headache, nausea, confusion)"
       },
       {
         "id": "d",
-        "text": "Lower venous pressures only as a benefit"
+        "text": "Hypocalcemia (perioral tingling, muscle twitching)"
       }
     ],
     "correctOptionId": "a",
     "explanation": "AAMI/facility standards set microbial and endotoxin limits; breaches require action.",
     "distractorExplanations": {
-      "b": "Endotoxin harms, not helps adequacy.",
-      "c": "Unrelated to maturation.",
-      "d": "Not a beneficial pressure effect."
+      "b": "Hemolysis is linked to chloramine, overheated or hypotonic dialysate, not endotoxin.",
+      "c": "Disequilibrium comes from rapid urea removal; endotoxin causes pyrogenic reactions.",
+      "d": "Hypocalcemia relates to dialysate calcium/electrolyte shifts, not endotoxin exposure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase chloramine levels"
+        "text": "Remove chloramine that passes through the carbon tanks into the loop"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "Eliminate the need for hand hygiene"
+        "text": "Restore RO membrane rejection after scale buildup from hard water"
       },
       {
         "id": "d",
-        "text": "Sterilize the patient’s GI tract"
+        "text": "Sterilize the distribution loop so water cultures are no longer needed"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Biofilm is persistent; scheduled disinfection and cultures are part of quality programs.",
     "distractorExplanations": {
-      "a": "Chloramine is removed, not increased.",
-      "c": "Hand hygiene remains required.",
-      "d": "Patient GI sterilization is not the goal."
+      "a": "Chloramine breakthrough is handled by carbon tank testing and replacement; disinfection targets microbes.",
+      "c": "Scale is handled by softening and membrane cleaning; disinfection controls biofilm and bacteria.",
+      "d": "Disinfection controls biofilm but does not sterilize; routine cultures and endotoxin tests are still required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No need for gloves with any blood"
+        "text": "Isolating HBsAg+ patients in a negative-pressure room, as is done for airborne spread"
       },
       {
         "id": "b",
-        "text": "Sharing multidose vials freely across patients without asepsis"
+        "text": "Reusing dialyzers for HBsAg+ patients only after an extra bleach disinfection step"
       },
       {
         "id": "c",
-        "text": "Vaccination, screening, dedicated equipment/separation practices per CDC recommendations for HBsAg+ patients"
+        "text": "Vaccination, screening, dedicated equipment/separation practices for HBsAg+ patients"
       },
       {
         "id": "d",
-        "text": "Ignoring vaccination status"
+        "text": "Monthly HBsAg testing of immune patients with treatment at any station"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Dialysis populations have historically elevated HBV risk; infection control is specialized and strict.",
+    "explanation": "Dialysis populations have historically elevated HBV risk; infection control is specialized and strict. These practices follow CDC recommendations for dialysis units.",
     "distractorExplanations": {
-      "a": "Standard precautions always apply.",
-      "b": "Medication safety prevents outbreaks.",
-      "d": "Vaccination programs are key."
+      "a": "HBV is bloodborne; CDC calls for a dedicated room/area, machine and staff, not airborne isolation.",
+      "b": "CDC advises that HBsAg+ patients not participate in dialyzer reuse programs at all.",
+      "d": "Immune (anti-HBs positive) patients are tested annually; HBsAg+ patients need a dedicated station."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1228,27 +1228,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only at the start of the work week"
+        "text": "Before gloving at the start of each shift, with glove changes replacing it between each patient"
       },
       {
         "id": "b",
-        "text": "Never when wearing gloves"
+        "text": "After patient contact and blood exposure, but skipped before contact when wearing gloves"
       },
       {
         "id": "c",
-        "text": "Only after lunch"
+        "text": "Before each cannulation and after each disconnection, with alcohol pads in between"
       },
       {
         "id": "d",
-        "text": "Before and after patient contact and after contact with blood, fluids, or contaminated surfaces"
+        "text": "Before and after patient contact and after contact with blood or contaminated surfaces"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Gloves do not replace hand hygiene; dialysis is a high blood-exposure environment.",
+    "explanation": "Gloves do not replace hand hygiene; dialysis is a high blood-exposure environment. Contact with body fluids also triggers hand hygiene.",
     "distractorExplanations": {
-      "a": "Frequency must match WHO/CDC moments.",
-      "b": "Hygiene before donning and after doffing gloves.",
-      "c": "Not meal-limited."
+      "a": "Glove changes do not replace hand hygiene; it is needed before and after each patient contact.",
+      "b": "Hand hygiene is required before donning gloves for patient contact, not only afterward.",
+      "c": "Limits hygiene to two procedures; it is required at every patient/station contact and after contamination."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Promptly with EPA-registered disinfectant appropriate for bloodborne pathogens per policy, using PPE"
+        "text": "Promptly with EPA-registered disinfectant appropriate for bloodborne pathogens, using PPE"
       },
       {
         "id": "b",
-        "text": "With plain water only, no disinfectant"
+        "text": "Promptly with soap and water, then left to air dry before the next patient sits"
       },
       {
         "id": "c",
-        "text": "By wiping with a dry paper towel and leaving residue"
+        "text": "At the end of the shift with full-strength bleach, since cleaning it earlier only spreads it"
       },
       {
         "id": "d",
-        "text": "The next day during monthly cleaning"
+        "text": "Promptly by spraying disinfectant directly onto the blood without wiping it up first"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Immediate spill response protects patients and staff.",
+    "explanation": "Immediate spill response protects patients and staff. Follow facility policy for the product and contact time.",
     "distractorExplanations": {
-      "b": "Disinfection is required.",
-      "c": "Dry wiping is inadequate.",
-      "d": "Delay is unacceptable."
+      "b": "Soap and water removes soil but does not disinfect; an EPA-registered disinfectant is required.",
+      "c": "Blood spills are cleaned immediately; waiting exposes patients and staff to bloodborne pathogens.",
+      "d": "Visible blood must be absorbed and removed first; organic material blocks the disinfectant."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No documentation"
+        "text": "Repeat the culture next month and act if the limit is exceeded a second time"
       },
       {
         "id": "b",
-        "text": "Investigation, disinfection/corrective action, and possible treatment adjustments per medical director/policy"
+        "text": "Investigation, disinfection/corrective action, and treatment adjustments"
       },
       {
         "id": "c",
-        "text": "Celebrating improved biofilm"
+        "text": "Documentation only, since action levels are set above the maximum allowable limit"
       },
       {
         "id": "d",
-        "text": "Turning off all carbon tanks permanently"
+        "text": "Replacing the RO membrane before any investigation of the source of contamination"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Quality results drive corrective actions; technicians escalate abnormal findings.",
+    "explanation": "Quality results drive corrective actions; technicians escalate abnormal findings. Actions are directed by the medical director and facility policy.",
     "distractorExplanations": {
-      "a": "Documentation is mandatory.",
-      "c": "Exceedances are failures, not successes.",
-      "d": "Carbon remains needed for chloramine."
+      "a": "Exceeding the action level requires prompt corrective action, not waiting for a second failed culture.",
+      "c": "Action levels are set below the maximum allowable limit so problems are corrected before limits are breached.",
+      "d": "The source must be investigated first; contamination often comes from loop biofilm, not the membrane."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Use the same glove pair all day for every patient"
+        "text": "Change gloves between patients but keep the same pair for clean and dirty tasks at one station"
       },
       {
         "id": "b",
-        "text": "Place used needles on the clean supply cart"
+        "text": "Return unused supplies from a patient station to the clean cart if the packaging looks intact"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Store lunch in the biohazard bin for cooling"
+        "text": "Carry medication vials and supplies in pockets between stations to cut down on trips back to the clean area"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Clean/dirty workflow separation is foundational in dialysis infection control.",
     "distractorExplanations": {
-      "a": "Gloves are per task/patient.",
-      "b": "Sharps go in sharps containers.",
-      "d": "Food and biohazard do not mix."
+      "a": "Gloves must also be changed when moving from dirty to clean tasks at the same station.",
+      "b": "CDC advises items taken to a station not be returned to common clean areas, even if unopened.",
+      "d": "Pockets carry contamination between stations; supplies should come from the clean area as needed."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1397,23 +1397,23 @@
       },
       {
         "id": "b",
-        "text": "PPE is never needed with dialysis patients"
+        "text": "Treat blood as infectious only for patients with a known positive test"
       },
       {
         "id": "c",
-        "text": "Only airborne pathogens matter in dialysis"
+        "text": "Use airborne precautions for every patient during dialysis treatment"
       },
       {
         "id": "d",
-        "text": "Hand hygiene is optional if busy"
+        "text": "Use PPE for cannulation, with gloves optional for routine machine checks"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Dialysis care assumes blood exposure risk every treatment.",
     "distractorExplanations": {
-      "b": "PPE is routinely indicated.",
-      "c": "Bloodborne pathogens are central.",
-      "d": "Hygiene is never optional."
+      "b": "Standard precautions apply to every patient because infection status is often unknown.",
+      "c": "Airborne precautions are transmission-based for specific infections; standard precautions cover blood and fluids.",
+      "d": "Machine surfaces and lines can be blood-contaminated; gloves are needed whenever exposure is possible."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Entered with a used needle from a patient"
+        "text": "Kept at the patient station and shared between neighboring patients' doses"
       },
       {
         "id": "b",
-        "text": "Handled with aseptic technique; ideally dedicated per patient when required by policy/outbreak guidance"
+        "text": "Handled with aseptic technique; ideally dedicated per patient"
       },
       {
         "id": "c",
-        "text": "Stored in the sink"
+        "text": "Entered with a new needle but the same syringe for consecutive patients"
       },
       {
         "id": "d",
-        "text": "Shared without wiping septa ever"
+        "text": "Wiped with alcohol once daily, after which the septum can be punctured freely"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "CDC outbreak lessons emphasize medication preparation safety in dialysis units.",
+    "explanation": "CDC outbreak lessons emphasize medication preparation safety in dialysis units. Dedicated single-patient use is required when policy or outbreak guidance calls for it.",
     "distractorExplanations": {
-      "a": "Never re-enter vials with contaminated needles.",
-      "c": "Sinks are contaminated areas.",
-      "d": "Septum disinfection is standard."
+      "a": "CDC: medications are prepared in a clean area away from stations; shared vials at stations spread HBV/HCV.",
+      "c": "A new needle on a used syringe still contaminates the vial; needle and syringe must both be new.",
+      "d": "The septum is disinfected with alcohol before every entry, not once a day."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase chloramine concentration"
+        "text": "Remove chloramine that passes through the carbon tanks"
       },
       {
         "id": "b",
-        "text": "Replace RO membranes permanently without water treatment"
+        "text": "Remove excess sodium so conductivity stays within range"
       },
       {
         "id": "c",
-        "text": "Further reduce bacteria/endotoxin in dialysate delivery"
+        "text": "Reduce bacteria/endotoxin in dialysate delivery"
       },
       {
         "id": "d",
-        "text": "Measure patient temperature"
+        "text": "Remove air bubbles from dialysate before the dialyzer"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Additional filtration supports ultrapure dialysate goals in some systems.",
     "distractorExplanations": {
-      "a": "They do not add chloramine.",
-      "b": "RO/pretreatment remain required.",
-      "d": "Not a thermometer."
+      "a": "Chloramine is removed by carbon tanks upstream; ultrafilters remove bacteria and endotoxin.",
+      "b": "Sodium and conductivity depend on concentrate proportioning; ultrafilters do not adjust electrolytes.",
+      "d": "Air is removed by the machine's deaeration system; ultrafilters provide extra microbial filtration."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Alarms, conductivity/temperature in range, and extracorporeal circuit integrity per checklist"
+        "text": "Alarms, conductivity/temperature in range, and extracorporeal circuit integrity"
       },
       {
         "id": "b",
-        "text": "That all alarms are permanently disabled"
+        "text": "Conductivity and temperature only, since alarm tests run during treatment"
       },
       {
         "id": "c",
-        "text": "Skipping prime because the chair is ready"
+        "text": "Alarm tests and patient weight, with conductivity checked after cannulation"
       },
       {
         "id": "d",
-        "text": "Patient social media passwords"
+        "text": "Dialyzer size and heparin dose, with alarm tests done weekly by biomed staff"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pre-treatment checks prevent many adverse events.",
+    "explanation": "Pre-treatment checks prevent many adverse events. Follow the facility checklist each time.",
     "distractorExplanations": {
-      "b": "Alarms must function.",
-      "c": "Priming/air removal is essential.",
-      "d": "Irrelevant and privacy-violating."
+      "b": "Alarm tests are part of the pre-treatment checks and must pass before the patient is connected.",
+      "c": "Conductivity must be verified before treatment starts, not after the patient is cannulated.",
+      "d": "Alarm testing is done before every treatment by the operator; biomed handles scheduled maintenance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the patient’s nickname"
+        "text": "Pre and post vital signs and weights, with machine settings recorded only when an alarm has occurred"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "No blood pressures if stable"
+        "text": "Machine parameters and UF totals, with access condition charted by the nurse once weekly"
       },
       {
         "id": "d",
-        "text": "Guessed weights without scale use"
+        "text": "Vital signs every two hours and significant events, with medications charted by pharmacy"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Accurate records support continuity, billing where applicable, and legal/quality review.",
     "distractorExplanations": {
-      "a": "Identity must be clear.",
-      "c": "Vitals are core documentation.",
-      "d": "Weights must be measured."
+      "a": "Machine parameters are recorded routinely during treatment, not only when alarms occur.",
+      "c": "Access condition is assessed and documented every treatment, not weekly.",
+      "d": "Vitals are typically recorded at least every 30 minutes, and medications are charted by whoever gives them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1558,11 +1558,11 @@
     "options": [
       {
         "id": "a",
-        "text": "At the annual review"
+        "text": "By the end of the shift, after the treatment schedule is completed"
       },
       {
         "id": "b",
-        "text": "Never, to avoid paperwork"
+        "text": "Within 7 days, once the source patient's test results are available"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "Only if the patient requests it"
+        "text": "Immediately, but only if the source patient is known to be HBV positive"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Timely reporting enables prophylaxis and compliance with OSHA bloodborne pathogen standards.",
     "distractorExplanations": {
-      "a": "Delay harms prevention options.",
-      "b": "Reporting is required.",
-      "d": "Patient request is irrelevant to staff exposure protocol."
+      "a": "Post-exposure prophylaxis is time-sensitive; reporting is immediate under the exposure control plan.",
+      "b": "Reporting cannot wait for source results; evaluation and prophylaxis decisions start right away.",
+      "d": "Every needlestick is reported regardless of known source status; HCV/HIV risk also applies."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Mute and ignore for the rest of the shift"
+        "text": "Reset the alarm first, then check the patient and machine if it sounds again within minutes"
       },
       {
         "id": "c",
-        "text": "Leave the unit without telling anyone"
+        "text": "Widen the alarm limits so the treatment can continue and recheck at the next vital signs"
       },
       {
         "id": "d",
-        "text": "Increase UF to silence pressure alarms"
+        "text": "Call biomedical staff first and wait for them before checking the patient or the lines"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Alarms communicate unsafe conditions; systematic response is required.",
     "distractorExplanations": {
-      "b": "Ignoring alarms is dangerous.",
-      "c": "Abandonment is unacceptable.",
-      "d": "Blind UF changes are unsafe."
+      "b": "Resetting before assessing ignores the cause; check the patient and circuit before clearing the alarm.",
+      "c": "Widening limits to stop alarms defeats the safety system and can hide a dangerous condition.",
+      "d": "The technician assesses the patient and circuit immediately; biomed is called for unresolved machine faults."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only decorating the lobby"
+        "text": "Annual state survey preparation focused on correcting deficiencies cited"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Eliminating all patient education"
+        "text": "Individual staff performance reviews and disciplinary tracking for errors"
       },
       {
         "id": "d",
-        "text": "Disabling water quality testing"
+        "text": "Quarterly infection audits conducted by an outside accrediting agency"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Technicians contribute data and participate in improvement activities under the interdisciplinary team.",
     "distractorExplanations": {
-      "a": "QAPI is clinical/operational quality.",
-      "c": "Education is part of care.",
-      "d": "Water testing is mandatory quality."
+      "a": "Survey readiness is a result of QAPI, but QAPI is a continuous program, not annual survey prep.",
+      "c": "QAPI is a system-level improvement program; staff evaluations are a separate HR process.",
+      "d": "QAPI is run internally by the interdisciplinary team, not by an outside agency's audits."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Share interesting cases on TikTok with identifiers"
+        "text": "Discuss patient information freely within the clinic, including with other patients"
       },
       {
         "id": "b",
-        "text": "Leave charts open in the waiting room"
+        "text": "Share patient details with family members who call, as long as they know the birth date"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Text PHI to friends for advice"
+        "text": "Discuss cases in hallways or the break room if the patient's full name is not used"
       }
     ],
     "correctOptionId": "c",
     "explanation": "HIPAA and professional ethics apply in dialysis clinics.",
     "distractorExplanations": {
-      "a": "Social media PHI is a breach.",
-      "b": "Waiting-room exposure is improper.",
-      "d": "Unauthorized texting is improper."
+      "a": "HIPAA limits PHI to those involved in care; other patients and uninvolved staff have no right to it.",
+      "b": "Knowing a birth date is not authorization; disclosure to family requires patient permission per policy.",
+      "d": "Other identifiers still reveal identity, and conversations outside care needs violate minimum-necessary use."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Blocking exits with supply boxes"
+        "text": "Propping fire doors open during treatment so patients can be evacuated faster"
       },
       {
         "id": "b",
-        "text": "Using frayed power cords until they fail"
+        "text": "Using extension cords and power strips for machines when outlets are limited"
       },
       {
         "id": "c",
-        "text": "Storing oxygen next to open flames intentionally"
+        "text": "Evacuating all patients first, before disconnecting them from their dialysis machines"
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Environment of care standards protect patients who cannot easily evacuate.",
     "distractorExplanations": {
-      "a": "Exits must remain clear.",
-      "b": "Damaged cords are hazards.",
-      "c": "O2/fire separation is critical."
+      "a": "Fire doors must stay closed or on approved release devices to contain smoke and fire.",
+      "b": "Extension cords and power strips for medical equipment are a fire and electrical hazard and not permitted.",
+      "c": "Patients must be clamped and disconnected (emergency takeoff) before they can be evacuated."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Independently prescribe antibiotics"
+        "text": "Adjust dry weight and UF goals independently once they hold national certification"
       },
       {
         "id": "b",
-        "text": "Perform delegated technical tasks per state law/facility policy and escalate clinical decisions to licensed nurses/providers"
+        "text": "Perform delegated technical tasks and escalate clinical decisions to licensed nurses/providers"
       },
       {
         "id": "c",
-        "text": "Change dry weight without any order or RN involvement"
+        "text": "Administer any IV medication on the order sheet, including drugs restricted to licensed nurses"
       },
       {
         "id": "d",
-        "text": "Interpret complex ECGs as the sole diagnostician"
+        "text": "Assess patients and change the dialysis prescription whenever the nurse is unavailable"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Technicians are vital but practice within defined limits.",
+    "explanation": "Technicians are vital but practice within defined limits. Delegation follows state law and facility policy.",
     "distractorExplanations": {
-      "a": "Prescribing is licensed provider role.",
-      "c": "Dry weight is a physician/NP order typically.",
-      "d": "Advanced diagnosis is not tech scope."
+      "a": "Certification does not expand scope; dry weight and UF goal changes need an order or RN involvement.",
+      "c": "Medication administration is limited by state law and policy; restricted drugs stay with licensed nurses.",
+      "d": "Assessment and prescription changes are licensed functions; the technician escalates instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1822,11 +1822,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Coding ICD-10 for ESRD"
+        "text": "Staff need the manufacturer's operating instructions for a dialysis machine"
       },
       {
         "id": "b",
-        "text": "Calculating Kt/V by hand"
+        "text": "Staff need the patient's allergy and medication history before treatment"
       },
       {
         "id": "c",
@@ -1834,15 +1834,15 @@
       },
       {
         "id": "d",
-        "text": "Ordering patient meals"
+        "text": "Staff need results of monthly water cultures and endotoxin testing"
       }
     ],
     "correctOptionId": "c",
     "explanation": "OSHA Hazard Communication requires SDS access for chemicals (acid concentrates, disinfectants, etc.).",
     "distractorExplanations": {
-      "a": "SDS is chemical safety, not coding.",
-      "b": "Adequacy math is separate.",
-      "d": "Nutrition ordering is clinical/dietary."
+      "a": "Operating instructions come from the operator's manual; SDSs cover chemical hazards and first aid.",
+      "b": "Allergy and medication history is in the medical record, not on a chemical Safety Data Sheet.",
+      "d": "Water culture results are in the water quality logs; SDSs describe chemical hazards."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1855,15 +1855,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Replaces water cultures"
+        "text": "Allows the monthly water culture to be skipped when the cycles have been recorded"
       },
       {
         "id": "b",
-        "text": "Is optional if the machine looks clean"
+        "text": "Records the conductivity and pH readings taken before each treatment"
       },
       {
         "id": "c",
-        "text": "Allows skipping concentrate labeling"
+        "text": "Shows the machine's preventive maintenance and alarm calibration status"
       },
       {
         "id": "d",
@@ -1873,9 +1873,9 @@
     "correctOptionId": "d",
     "explanation": "Regulatory surveys review logs; incomplete logs are findings.",
     "distractorExplanations": {
-      "a": "Cultures remain required.",
-      "b": "Appearance ≠ documented disinfection.",
-      "c": "Labeling remains required."
+      "a": "Disinfection logs do not replace microbial cultures; both are required.",
+      "b": "Pre-treatment conductivity and pH are recorded on the treatment flowsheet, not the disinfection log.",
+      "c": "Preventive maintenance and calibration are tracked in biomedical service records, not disinfection logs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1892,23 +1892,23 @@
       },
       {
         "id": "b",
-        "text": "Try it once secretly"
+        "text": "Perform it if a coworker with more experience says it is allowed"
       },
       {
         "id": "c",
-        "text": "Ask a patient to teach the invasive step"
+        "text": "Perform it if the patient consents and it was covered in training"
       },
       {
         "id": "d",
-        "text": "Post the question with patient identifiers online"
+        "text": "Check online forums for what other technicians do in that case"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Escalation protects patients and your license/certification pathway.",
     "distractorExplanations": {
-      "b": "Secret practice is unsafe.",
-      "c": "Patients are not trainers for invasive skills.",
-      "d": "Online PHI is prohibited."
+      "b": "Peer opinion does not define scope; the nurse/supervisor and written policy do.",
+      "c": "Patient consent and training do not authorize a task outside the technician's defined role.",
+      "d": "Practices vary by state and facility; online forums are not an authority on your scope."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Decorate the crash cart"
+        "text": "Replace the nurse in leading codes when a technician is present"
       },
       {
         "id": "b",
@@ -1929,19 +1929,19 @@
       },
       {
         "id": "c",
-        "text": "Use oxygen to dust equipment"
+        "text": "Use the AED only after the physician arrives at the bedside"
       },
       {
         "id": "d",
-        "text": "Store personal bags on the defibrillator"
+        "text": "Pass the annual survey checklist of required emergency items"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Dialysis patients have high cardiovascular risk; drills and equipment readiness matter.",
     "distractorExplanations": {
-      "a": "Readiness beats decoration.",
-      "c": "Misuse of O2 is hazardous.",
-      "d": "Keep emergency equipment accessible."
+      "a": "Technicians assist in emergencies per role; leading resuscitation stays with licensed staff.",
+      "c": "AEDs are designed for immediate use by trained staff; waiting for a physician delays defibrillation.",
+      "d": "Survey compliance is secondary; the purpose of readiness is a rapid response to real emergencies."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1954,11 +1954,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Estimating weight by appearance"
+        "text": "Weighing pre-treatment and estimating the post weight from the UF total removed"
       },
       {
         "id": "b",
-        "text": "Using a different random scale without noting it when values conflict without investigation"
+        "text": "Using whichever scale is free and averaging the two values when the readings conflict"
       },
       {
         "id": "c",
@@ -1966,15 +1966,15 @@
       },
       {
         "id": "d",
-        "text": "Weighing after UF is completed only for pre-weight"
+        "text": "Weighing with the patient's coat and shoes on pre and off post for comfort"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Weight errors directly cause UF errors and patient harm.",
     "distractorExplanations": {
-      "a": "Estimates are unsafe.",
-      "b": "Inconsistencies need investigation.",
-      "d": "Pre-weight is before treatment fluid removal."
+      "a": "Post weight must be measured; estimating from UF totals hides machine or fluid-intake discrepancies.",
+      "b": "Scales should be consistent, and conflicting values need investigation rather than averaging.",
+      "d": "Inconsistent clothing between weights creates false fluid-removal figures and UF errors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"

@@ -1,0 +1,691 @@
+{
+ "pharmacy-technician-excpt-readiness-check": {
+  "pharmacy-technician-excpt-readiness-check-orders-002": {
+   "options": {
+    "a": "Fill it at once, since a fax from a known prescriber needs no further validity check",
+    "b": "Verify prescriber authenticity per state law and pharmacy policy before filling",
+    "c": "Ask the patient to bring the original paper copy before dispensing any of the drug",
+    "d": "Accept it only for hospice or long-term care patients, as with Schedule II faxes"
+   },
+   "distractorExplanations": {
+    "a": "Assumes a known prescriber removes the need to validate a faxed order; state rules still require confirming it is authentic.",
+    "c": "Faxed non-controlled prescriptions are valid in most states; demanding the paper original confuses faxes with Schedule II rules.",
+    "d": "Borrows the Schedule II fax exceptions (hospice, LTCF, home infusion); a non-controlled faxed order is not limited that way."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-003": {
+   "options": {
+    "a": "Fill it now, since Schedule III refills may be dispensed any time within six months",
+    "b": "Refuse it, because Schedule III prescriptions cannot carry refills under federal law",
+    "c": "Review refill date, check early refill rules, and consult pharmacist if outside allowed window",
+    "d": "Fill it early if the patient pays cash, since early-refill limits apply to insurance claims"
+   },
+   "distractorExplanations": {
+    "a": "Confuses the six-month validity window for C-III refills with permission to refill at any time; early fills still need review.",
+    "b": "Applies the Schedule II no-refill rule to Schedule III; C-III to C-V allow up to five refills within six months.",
+    "d": "Paying cash does not lift controlled-substance refill rules; early-refill limits are legal and clinical, not only payer edits."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-004": {
+   "options": {
+    "a": "Patient name, drug name, diagnosis code, insurance group number, and technician initials",
+    "b": "Drug name/strength, directions, NDC barcode, and lot number, with patient name optional",
+    "c": "Patient name, directions, manufacturer address, wholesale price, and the DEA schedule symbol",
+    "d": "Patient name, drug name/strength, directions, prescriber, pharmacy contact, and Rx number"
+   },
+   "distractorExplanations": {
+    "a": "Diagnosis codes and insurance group numbers are billing data, not required label elements; it also omits strength and prescriber.",
+    "b": "Patient name is a mandatory label element; NDC barcodes and lot numbers are inventory data, not required on the patient label.",
+    "c": "Manufacturer address and wholesale price are not label requirements; the label must show strength, prescriber, and pharmacy details."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-007": {
+   "options": {
+    "a": "Dispense both, since duplicate ACE inhibitor alerts are informational only",
+    "b": "Call the prescriber yourself to choose which ACE inhibitor to discontinue",
+    "c": "Notify the pharmacist for clinical review before dispensing",
+    "d": "Override the alert after confirming both drugs came from different prescribers"
+   },
+   "distractorExplanations": {
+    "a": "Therapeutic duplication alerts are clinical safety flags, not informational notices; two ACE inhibitors need pharmacist review.",
+    "b": "Wrong party: resolving therapeutic duplication with the prescriber is a pharmacist's clinical task, not a technician's.",
+    "d": "Different prescribers make duplication more likely, not acceptable; technicians do not override clinical alerts."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-008": {
+   "options": {
+    "a": "10 days",
+    "b": "15 days",
+    "c": "28 days",
+    "d": "30 days"
+   },
+   "distractorExplanations": {
+    "a": "10 days would follow from three tablets daily (TID); the sig is one tablet once daily.",
+    "b": "15 days would follow from two tablets daily (BID); the sig is one tablet once daily.",
+    "c": "28 days treats the fill as a four-week calendar pack; 30 tablets at one daily is a 30-day supply."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-009": {
+   "options": {
+    "a": "Substitute generic if state law permits and profile allows; otherwise contact prescriber",
+    "b": "Dispense brand Coumadin, because warfarin is a narrow-index drug barred from substitution",
+    "c": "Substitute generic warfarin and adjust the strength to the closest tablet currently stocked",
+    "d": "Hold the prescription until the prescriber sends a new order written for generic warfarin"
+   },
+   "distractorExplanations": {
+    "b": "Narrow-therapeutic-index status may add state conditions, but AB-rated generic warfarin is not federally barred from substitution.",
+    "c": "Substitution changes the manufacturer, never the strength; altering the 5 mg dose needs prescriber authorization.",
+    "d": "A brand-name order without DAW already permits generic substitution where state law allows; a new order is not required."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-010": {
+   "options": {
+    "a": "Submit the claim anyway, since a pending PA lets the plan pay once it is approved",
+    "b": "Inform patient/pharmacist, explore covered alternatives, and follow PA workflow",
+    "c": "Switch the patient to a generic equivalent on your own while the PA is still pending",
+    "d": "Tell the patient to request the PA directly from the insurer before you take action"
+   },
+   "distractorExplanations": {
+    "a": "A claim submitted before PA approval rejects; plans do not hold and pay a claim retroactively just because a PA is pending.",
+    "c": "The drug is brand-only, and technicians cannot change therapy; alternatives go through the pharmacist and prescriber.",
+    "d": "Wrong party: prior authorization is submitted by the prescriber's office, not requested by the patient."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-011": {
+   "options": {
+    "a": "The patient requested the brand product, so generic substitution is not allowed",
+    "b": "Brand is dispensed because a generic is not available in the marketplace",
+    "c": "Dispense the brand product as written; generic substitution not permitted",
+    "d": "Substitution permitted; the pharmacist chose to dispense the brand product instead"
+   },
+   "distractorExplanations": {
+    "a": "That describes DAW 2 (patient requested brand), not DAW 1, where the prescriber requires the brand.",
+    "b": "That describes DAW 8 (generic not available in the marketplace), not the prescriber-required brand of DAW 1.",
+    "d": "That describes DAW 3 (pharmacist selected brand); DAW 1 means the prescriber prohibited substitution."
+   },
+   "explanation": "DAW 1 indicates prescriber requires brand as written. Without a prescriber change, the brand must be dispensed."
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-012": {
+   "options": {
+    "a": "Enter it as 'Take 2 tablespoonfuls by mouth four times daily as needed for pain'",
+    "b": "Enter it as 'Take 2 teaspoonfuls by mouth every four hours as needed for pain'",
+    "c": "Enter it as 'Take 2 teaspoonfuls by mouth four times daily' and leave out PRN",
+    "d": "Translate accurately using standard sigs and verify with pharmacist if unclear"
+   },
+   "distractorExplanations": {
+    "a": "Confuses tsp (teaspoon, 5 mL) with tbsp (tablespoon, 15 mL), tripling the dose.",
+    "b": "Confuses QID (four times daily) with q4h (every four hours), which allows up to six doses a day.",
+    "c": "Dropping PRN turns an as-needed order into scheduled dosing; every element of the sig must be translated."
+   },
+   "explanation": "Accurate sig translation ensures safe use; unclear orders need pharmacist clarification. Use standard abbreviations/sigs per pharmacy policy."
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-013": {
+   "options": {
+    "a": "State law and time from issue date (often 6–12 months)",
+    "b": "The DEA, which limits all prescriptions to six months and five refills",
+    "c": "The manufacturer expiration date printed on the stock bottle",
+    "d": "Federal FDA rules setting a uniform 90-day validity window"
+   },
+   "distractorExplanations": {
+    "b": "The six-month / five-refill limit is the DEA rule for Schedule III–IV; non-controlled prescription validity is set by state law.",
+    "c": "The stock bottle's expiry governs the drug product, not how long the prescription itself remains valid.",
+    "d": "No federal FDA rule sets a 90-day validity window; non-controlled prescription expiration is a state-law matter."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-014": {
+   "options": {
+    "a": "Submit using the pharmacy's own NPI in the prescriber field",
+    "b": "Obtain valid prescriber NPI/ID required by payer before billing",
+    "c": "Submit using the prescriber's DEA number in place of the NPI",
+    "d": "Bill the claim now and add the NPI later if the payer rejects it"
+   },
+   "distractorExplanations": {
+    "a": "The pharmacy NPI identifies the dispenser, not the prescriber; putting it in the prescriber field misrepresents the claim.",
+    "c": "Payers such as Medicare Part D require the prescriber NPI; a DEA number is a controlled-substance registration, not a billing ID.",
+    "d": "Knowingly submitting an incomplete claim invites rejection or audit recoupment; the valid NPI must be obtained before billing."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-orders-015": {
+   "options": {
+    "a": "Refuse it, since Schedule II partial fills are allowed only when stock runs short",
+    "b": "Partial fill it, with the balance dispensable any time within six months of issue",
+    "c": "Partial fill per federal/state rules with pharmacist approval and documentation",
+    "d": "Partial fill it and issue the remainder as a refill under the same prescription"
+   },
+   "distractorExplanations": {
+    "a": "Outdated rule: since CARA 2016, a patient or prescriber may request a C-II partial fill, not only when stock is short.",
+    "b": "Confuses the six-month C-III–V window with Schedule II, where a requested partial balance must be filled within 30 days.",
+    "d": "The remaining quantity is a partial fill of the same order, not a refill; Schedule II prescriptions cannot have refills."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-001": {
+   "options": {
+    "a": "Sign the carrier's receipt and shelve the totes, reconciling the invoice at month-end",
+    "b": "Log each item into perpetual inventory using the quantities printed on the invoice",
+    "c": "Count totes against the carrier manifest and sign for them, then stock the shelves",
+    "d": "Verify shipment against purchase order/invoice, check for damage, and confirm lot/expiry"
+   },
+   "distractorExplanations": {
+    "a": "Delaying reconciliation to month-end means shortages, damage, and wrong items are found after the claim window closes.",
+    "b": "Posting invoice quantities without a physical count records what was billed, not what actually arrived.",
+    "c": "Counting totes checks the carrier delivery, not the contents; items, damage, and lot/expiry still need verification."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-002": {
+   "options": {
+    "a": "Use oldest acceptable stock with nearest expiration first",
+    "b": "Place newly received stock in front so it is dispensed first",
+    "c": "Dispense the lot with the latest expiration to lower waste risk",
+    "d": "Use stock in the order it appears on the wholesaler invoice"
+   },
+   "distractorExplanations": {
+    "b": "This reverses FIFO: new stock goes behind older stock so the older units are used first.",
+    "c": "Dispensing the latest-dated lot first leaves older lots to expire, which increases waste instead of reducing it.",
+    "d": "Invoice line order has no relation to expiration dates; FIFO is based on what was received and expires first."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-003": {
+   "options": {
+    "a": "Return unopened bottles of the lot but keep opened bottles in use until they run out",
+    "b": "Quarantine affected lot, notify pharmacist, check stock/patient records per recall class",
+    "c": "Pull the lot only if the recall is Class I; Class II and III lots may stay in use",
+    "d": "Wait for the FDA to call patients, since pharmacies do not contact recall recipients"
+   },
+   "distractorExplanations": {
+    "a": "A recall covers the whole lot, opened or not; opened bottles of lot ABC123 must also be quarantined.",
+    "c": "Recall class sets urgency and depth (e.g., patient level), but Class II and III recalled lots are still removed from stock.",
+    "d": "The FDA does not notify individual patients; pharmacies check dispensing records and contact patients when the recall depth requires it."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-004": {
+   "options": {
+    "a": "Set the reorder point at the maximum level so orders go out early",
+    "b": "Track controlled substance balances for DEA biennial inventories",
+    "c": "Maintain adequate stock without excessive carrying cost or outages",
+    "d": "Calculate the day supply for third-party prescription claims"
+   },
+   "distractorExplanations": {
+    "a": "Confuses the two settings: the minimum is the reorder point; the maximum caps how much is ordered.",
+    "b": "Controlled-substance balances belong to perpetual and biennial inventory records, not to min/max ordering levels.",
+    "d": "Day supply is a claim calculation from quantity and sig, unrelated to setting stock reorder levels."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-005": {
+   "options": {
+    "a": "Placed in the refrigerator right away and dispensed once they return to 2–8 °C",
+    "b": "Frozen immediately to stop further degradation, then thawed when needed",
+    "c": "Returned to the carrier unopened without recording the temperature excursion",
+    "d": "Segregated, documented, and referred to pharmacist/manufacturer guidance"
+   },
+   "distractorExplanations": {
+    "a": "Returning to 2–8 °C does not undo a cold-chain break; vaccines are held and labeled 'do not use' until the manufacturer assesses them.",
+    "b": "Freezing damages many refrigerated vaccines; storage must match the label, and the excursion still needs assessment.",
+    "c": "The excursion must be documented (temperature, duration) for manufacturer guidance; skipping the record loses that data."
+   },
+   "explanation": "Cold chain breaks require quarantine and assessment; compromised vaccines may need discard. Compromised vaccines are likely not dispensed."
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-006": {
+   "options": {
+    "a": "Reconcile physical inventory with computer records on a scheduled basis",
+    "b": "Replace the DEA biennial controlled substance inventory with rolling counts",
+    "c": "Count every item in the pharmacy on one day at fiscal year-end",
+    "d": "Set min/max reorder points based on monthly dispensing volume"
+   },
+   "distractorExplanations": {
+    "b": "Cycle counts supplement but do not replace the DEA-required biennial inventory of controlled substances.",
+    "c": "That describes a full annual physical inventory; cycle counting checks a portion of items on a rotating schedule.",
+    "d": "Setting min/max levels uses usage data; cycle counts verify on-hand quantities against records."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-007": {
+   "options": {
+    "a": "BX rating in the Orange Book",
+    "b": "AB rating for generic substitution",
+    "c": "An interchangeable code in the Purple Book",
+    "d": "BC rating for extended-release forms"
+   },
+   "distractorExplanations": {
+    "a": "BX means FDA has insufficient data to establish equivalence; only A-rated (e.g., AB) products are substitutable.",
+    "c": "The Purple Book lists biologics and interchangeable biosimilars; small-molecule generic equivalence is coded in the Orange Book.",
+    "d": "B codes, including BC for extended-release products, mean FDA does not consider them therapeutically equivalent."
+   },
+   "explanation": "FDA therapeutic equivalence codes (e.g., AB) guide generic substitution eligibility. An AB code applies to generic substitution in many cases."
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-008": {
+   "options": {
+    "a": "Refused at delivery, since product under 90 days to expiry cannot be sold",
+    "b": "Accepted and shelved behind current stock so older lots go out first",
+    "c": "Evaluated against turnover; return or use quickly per policy",
+    "d": "Accepted and labeled with a beyond-use date one year from receipt"
+   },
+   "distractorExplanations": {
+    "a": "No rule bars selling product within 90 days of expiry; acceptance depends on turnover and policy.",
+    "b": "Shelving the shortest-dated product behind current stock means it expires unused; it should be used first.",
+    "d": "A beyond-use date cannot extend past the manufacturer expiration; a 30-day product cannot get a one-year date."
+   },
+   "explanation": "Short dating increases expiration risk; policy may require return or prioritized dispensing. Prompt return or use avoids waste."
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-009": {
+   "options": {
+    "a": "A physical count of every schedule once a year for the DEA",
+    "b": "Balances updated weekly from the wholesaler purchase history",
+    "c": "Exact counts of all schedules, logged once at month-end",
+    "d": "Running balance updated with each receipt and dispense"
+   },
+   "distractorExplanations": {
+    "a": "Confuses perpetual inventory with the DEA biennial inventory, which is a count every two years, not a running balance.",
+    "b": "Weekly updates from purchase history miss dispensing in between; a perpetual record changes with every transaction.",
+    "c": "A month-end count is a periodic inventory; perpetual inventory is updated at each receipt and dispense."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-010": {
+   "options": {
+    "a": "Documented and disposed/returned per policy and DEA/state rules if controlled",
+    "b": "Returned to the wholesaler for credit, with controlled drugs logged on a DEA 222",
+    "c": "Placed in the hazardous-waste bin, with controlled drugs reported on a DEA 106",
+    "d": "Repackaged into a labeled vial and used first if the tablets are still potent"
+   },
+   "distractorExplanations": {
+    "b": "DEA Form 222 is for ordering or transferring C-I/C-II; destruction of controlled stock is documented on DEA Form 41 or via a reverse distributor.",
+    "c": "DEA Form 106 reports theft or significant loss, not destruction of damaged controlled stock.",
+    "d": "Crushed tablets are adulterated stock; repackaging and dispensing them is not permitted."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-011": {
+   "options": {
+    "a": "Buying from another pharmacy's surplus without a transaction record",
+    "b": "Secondary vendor ordering per contract and pharmacist approval",
+    "c": "Compounding the commercial product in-house until supply returns",
+    "d": "Holding all orders until the primary wholesaler is restored"
+   },
+   "distractorExplanations": {
+    "a": "DSCSA requires transaction information and licensed trading partners; undocumented surplus purchases break traceability.",
+    "c": "Compounding copies of commercially available products is restricted and is not a substitute for licensed purchasing.",
+    "d": "Holding every order causes avoidable stockouts; contracts include licensed secondary vendors for outages."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-012": {
+   "options": {
+    "a": "Record the loss on DEA Form 222 and adjust the balance to match the count",
+    "b": "Recount at the next scheduled biennial inventory before reporting anything",
+    "c": "Notify pharmacist immediately and begin discrepancy investigation per policy",
+    "d": "File DEA Form 106 yourself today and correct the perpetual log to match"
+   },
+   "distractorExplanations": {
+    "a": "DEA Form 222 is an order form, not a loss report; balances are never adjusted before an investigation.",
+    "b": "Waiting up to two years for the biennial count delays a required investigation; C-II discrepancies go to the pharmacist now.",
+    "d": "Wrong party and sequence: the pharmacist-in-charge decides whether a Form 106 is needed after investigating the discrepancy."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-013": {
+   "options": {
+    "a": "Storage under USP <797> sterile compounding area rules",
+    "b": "Locked storage in the C-II safe with the opioid inventory",
+    "c": "Refrigeration in a shared drug fridge to slow degradation",
+    "d": "Segregation and labeling per USP <800> pharmacy practices"
+   },
+   "distractorExplanations": {
+    "a": "USP <797> covers sterile compounding; hazardous-drug handling and storage are set by USP <800>.",
+    "b": "Cyclophosphamide is not a controlled substance; hazardous drugs are segregated from other stock, not stored with opioids.",
+    "c": "Storage temperature follows the label; shared refrigerators mix hazardous drugs with other stock, which USP <800> seeks to avoid."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-015": {
+   "options": {
+    "a": "Matching the bottle to the pocket by drug name, skipping the barcode scan",
+    "b": "Verification of drug, strength, lot, expiry, and location scan per policy",
+    "c": "Loading new stock in front of older units so the newest is dispensed",
+    "d": "Restocking by the nurse who removes the drug, without a pharmacy check"
+   },
+   "distractorExplanations": {
+    "a": "Name matching alone misses wrong strength or form; the barcode scan is the key ADC restock check.",
+    "c": "Placing new stock in front reverses FIFO and leaves older units to expire in the pocket.",
+    "d": "ADC restocking is a pharmacy function with verification; the nurse who removes doses does not restock unchecked."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-001": {
+   "options": {
+    "a": "Shelving LASA pairs side by side so staff can compare them directly",
+    "b": "Using brand names only on labels so similar generics are not confused",
+    "c": "Tall-man lettering, separate storage, and independent double-checks",
+    "d": "Color-coding by manufacturer so look-alike packages are recognized"
+   },
+   "distractorExplanations": {
+    "a": "Adjacent storage is a classic cause of LASA picking errors; ISMP recommends separating look-alike pairs.",
+    "b": "Brand names also look and sound alike (e.g., Celebrex/Celexa); dropping generic names removes a safety check.",
+    "d": "Manufacturer colors vary and change; packages from one maker often look more alike, not less."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-002": {
+   "options": {
+    "a": "Follow the master formula and assign the manufacturer's expiry date as the BUD",
+    "b": "Follow the formula but substitute an available excipient without documenting it",
+    "c": "Compound in the sterile cleanroom hood and assign a USP <797> beyond-use date",
+    "d": "Follow master formula, use calibrated equipment, label beyond-use date, and document"
+   },
+   "distractorExplanations": {
+    "a": "A compounded preparation gets a USP <795> beyond-use date, not the ingredient manufacturer's expiration date.",
+    "b": "Any ingredient change must follow the formula and be documented on the compounding record.",
+    "c": "Non-sterile compounding follows USP <795>; USP <797> sterile rules and BUDs do not apply to an oral suspension."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-003": {
+   "options": {
+    "a": "Alert pharmacist immediately, document, and initiate adverse event workflow",
+    "b": "Tell the patient to stop the drug and take diphenhydramine before calling back",
+    "c": "Add a penicillin allergy to the profile and process a refund for the drug",
+    "d": "Submit a MedWatch report yourself and wait for the FDA to respond"
+   },
+   "distractorExplanations": {
+    "b": "Recommending treatment is clinical counseling outside technician scope; the pharmacist assesses the reaction.",
+    "c": "Recording an allergy before pharmacist assessment skips evaluation of the reaction and next steps for the patient.",
+    "d": "MedWatch reporting may follow, but the immediate step is pharmacist assessment; the FDA does not manage the patient."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-004": {
+   "options": {
+    "a": "Storage in a locked C-II safe, the same as Schedule II opioids",
+    "b": "Independent double-check of drug, dose, and patient before dispensing",
+    "c": "Dispensing with tall-man lettering on the label in place of a second check",
+    "d": "A second check only when the dose exceeds the usual adult range"
+   },
+   "distractorExplanations": {
+    "a": "Insulin is high-alert but not controlled; the ISMP safeguard is extra verification, not C-II storage.",
+    "c": "Tall-man lettering is a LASA tool that supports, but does not replace, an independent double-check.",
+    "d": "High-alert drugs are double-checked at every dose; harm can occur at usual doses with the wrong product or patient."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-005": {
+   "options": {
+    "a": "Wiping the surface from front to back toward the HEPA filter with a dry cloth",
+    "b": "Spraying alcohol directly onto the HEPA filter to disinfect it before the session",
+    "c": "Disinfecting work surface with appropriate agent per USP <797> schedule before session",
+    "d": "Turning on the hood and starting to compound as soon as the blower is running"
+   },
+   "distractorExplanations": {
+    "a": "Wiping runs back to front, away from the HEPA filter, with a wetted disinfectant; a dry cloth toward the filter spreads particles.",
+    "b": "The HEPA filter must not be sprayed or touched; liquid damages the filter media.",
+    "d": "The hood should run for the manufacturer-specified time and be cleaned before compounding, not used as soon as it starts."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-006": {
+   "options": {
+    "a": "Left undocumented, since only errors that reach the patient are reported",
+    "b": "Reported to the state board as a dispensing error within 24 hours",
+    "c": "Written up as a disciplinary action in the technician's personnel file",
+    "d": "Documented in internal quality system to prevent recurrence"
+   },
+   "distractorExplanations": {
+    "a": "Near misses are recorded precisely because they reveal process gaps before harm occurs.",
+    "b": "A near miss did not reach the patient; it is an internal quality event, not a mandatory board-reported dispensing error.",
+    "c": "Just-culture quality systems treat near misses as system data; punitive write-ups discourage reporting."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-007": {
+   "options": {
+    "a": "Oral syringe calibrated in mL",
+    "b": "A household measuring teaspoon",
+    "c": "A dosing cup marked in drams",
+    "d": "A dropper from another product"
+   },
+   "distractorExplanations": {
+    "b": "Household spoons vary widely in volume and cause pediatric dosing errors; ISMP recommends mL oral syringes.",
+    "c": "Drams are an apothecary unit ISMP advises against; dosing devices should be marked in mL only.",
+    "d": "Droppers are calibrated for their own product and concentration; reusing one for another liquid gives wrong doses."
+   },
+   "explanation": "Oral syringes in milliliters provide accurate pediatric dosing per best practice. Household teaspoons alone are not accurate enough."
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-008": {
+   "options": {
+    "a": "Absorbent towels and a bleach wipe, with gloves needed only for large spills",
+    "b": "Spill kit, PPE, ventilation considerations, and trained personnel per HD protocol",
+    "c": "Diluting the spill with water first, then mopping it into the regular trash",
+    "d": "Evacuating the pharmacy and waiting for the local fire department to clean up"
+   },
+   "distractorExplanations": {
+    "a": "Hazardous-drug spills of any size need full PPE (double chemo gloves, gown) from a spill kit, not gloves for large spills.",
+    "c": "Diluting spreads the hazardous drug, and HD waste goes in designated hazardous containers, not regular trash.",
+    "d": "Trained pharmacy staff manage HD spills with a spill kit; fire department response is not the standard protocol."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-010": {
+   "options": {
+    "a": "Drug-drug interactions without pharmacist review",
+    "b": "Insurance rejections for non-formulary products",
+    "c": "Dosing errors from incorrect sig translation",
+    "d": "Wrong drug/strength/form dispensed to wrong patient"
+   },
+   "distractorExplanations": {
+    "a": "Interaction screening is a DUR software and pharmacist function; barcode scanning matches product to prescription.",
+    "b": "Formulary rejections come from claim adjudication, which barcode scanning of the product does not affect.",
+    "c": "Barcodes confirm the product, not the typed directions; sig errors are caught at pharmacist verification."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-011": {
+   "options": {
+    "a": "Stability data, USP standards, and pharmacy policy",
+    "b": "The source container's manufacturer expiry date",
+    "c": "A fixed one-year date for all repackaged solids",
+    "d": "Six months from repackaging, as for compounded solids"
+   },
+   "distractorExplanations": {
+    "b": "Manufacturer expiry applies to the sealed original container; once repackaged, a BUD must be assigned and may be shorter.",
+    "c": "One year is a ceiling under USP repackaging guidance, not a fixed date; it must also not exceed the source expiry.",
+    "d": "Confuses repackaging with compounding; six-month BUDs come from USP <795> for certain compounded preparations."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-014": {
+   "options": {
+    "a": "Pharmacist notification and correction of the record, with no patient contact if unharmed",
+    "b": "An internal report only, since patients are told about errors when harm results",
+    "c": "Reporting to the state board within 24 hours and suspending the technician involved",
+    "d": "Internal report, pharmacist notification, patient communication, and possible external reporting"
+   },
+   "distractorExplanations": {
+    "a": "Disclosure to the patient is expected even without apparent harm; delayed effects may still need monitoring.",
+    "b": "Patient communication is required for errors that reach the patient, not only when harm results.",
+    "c": "Board reporting depends on state rules and severity, and suspension is a punitive step outside a quality-improvement process."
+   },
+   "explanation": "Errors require disclosure per policy, documentation, and quality improvement even without harm. External reporting follows pharmacy policy."
+  },
+  "pharmacy-technician-excpt-readiness-check-safety-015": {
+   "options": {
+    "a": "Washing/sanitizing before compounding, after gloves, and after contamination",
+    "b": "Washing at the start of each shift, with gloves covering any later contact",
+    "c": "Sanitizing after handling cash, with gloves replacing washing before compounding",
+    "d": "Washing only after visible soiling, using alcohol rub at all other times"
+   },
+   "distractorExplanations": {
+    "b": "Gloves do not replace hand hygiene; hands are cleaned before compounding and after glove removal throughout the shift.",
+    "c": "Gloves are worn after hand hygiene, not instead of it; compounding requires washing first.",
+    "d": "Hand hygiene is tied to tasks (compounding, glove removal, contamination), not only to visibly soiled hands."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-001": {
+   "options": {
+    "a": "Allow up to five refills within six months of the date of issue",
+    "b": "Require original prescription (with e-Rx exceptions) and have no refills",
+    "c": "May be phoned in for any patient if a written copy follows in 30 days",
+    "d": "Allow refills once the 90-day multiple-prescription supply runs out"
+   },
+   "distractorExplanations": {
+    "a": "Five refills within six months is the Schedule III–IV rule; Schedule II prescriptions cannot be refilled.",
+    "c": "Oral C-II orders are allowed only in emergencies, for a limited quantity, with the written prescription due within 7 days.",
+    "d": "Multiple C-II prescriptions (up to a 90-day supply) are separate prescriptions, not refills; C-II still has no refills."
+   },
+   "explanation": "Federal rules limit Schedule II: no refills, strict prescription requirements. Partial-fill rules are separate from refills."
+  },
+  "pharmacy-technician-excpt-readiness-check-law-002": {
+   "options": {
+    "a": "Any family member who can state the patient's date of birth and address at pickup",
+    "b": "The patient's employer when the drug affects fitness for work",
+    "c": "Patient's authorized caregiver/designee when documented and necessary for care",
+    "d": "Another pharmacy's staff calling for marketing or loyalty enrollment"
+   },
+   "distractorExplanations": {
+    "a": "A date of birth verifies identity, not authorization; family members get PHI only when involved in care or authorized.",
+    "b": "Employers are not covered recipients for treatment; disclosure needs the patient's written authorization.",
+    "d": "Marketing use of PHI needs patient authorization; treatment-related pharmacy-to-pharmacy sharing is a different purpose."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-003": {
+   "options": {
+    "a": "Confront the patient and keep the forged prescription until police arrive",
+    "b": "Fill a three-day supply and let the pharmacist sort it out on the next shift",
+    "c": "Call the prescriber's number printed on the prescription to verify it",
+    "d": "Notify pharmacist, refuse fill, document, and contact authorities per policy"
+   },
+   "distractorExplanations": {
+    "a": "Confronting the patient risks safety and skips the pharmacist; escalation follows pharmacy policy.",
+    "b": "Dispensing any amount of a suspected forgery is unlawful; the pharmacist must assess it now.",
+    "c": "A forged prescription may list a fake phone number; verification uses an independently sourced prescriber number."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-004": {
+   "options": {
+    "a": "Offer to counsel Medicaid patients on new prescriptions",
+    "b": "Counsel every patient on every refill, including cash-paying patients",
+    "c": "Keep pseudoephedrine sales logs for every Medicaid patient",
+    "d": "Dispense generics to all Medicaid patients unless DAW is written"
+   },
+   "distractorExplanations": {
+    "b": "OBRA '90 requires an offer to counsel Medicaid patients; mandatory counseling on every refill for all patients is not the federal rule.",
+    "c": "Pseudoephedrine logbooks come from the Combat Methamphetamine Epidemic Act of 2005, not OBRA '90.",
+    "d": "Generic substitution is governed by state law and payer rules; OBRA '90 addresses DUR, patient profiles, and counseling."
+   },
+   "explanation": "OBRA mandates Medicaid counseling offers and patient profile reviews by pharmacists. Technicians support this workflow."
+  },
+  "pharmacy-technician-excpt-readiness-check-law-005": {
+   "options": {
+    "a": "The DEA, which licenses technicians to handle controlled drugs",
+    "b": "State board of pharmacy regulations and supervising pharmacist",
+    "c": "The PTCB or NHA certification body that issued the credential",
+    "d": "Federal FDA rules that apply uniformly in every state"
+   },
+   "distractorExplanations": {
+    "a": "The DEA registers pharmacies and prescribers, not technicians; technician duties are set by state boards.",
+    "c": "Certification bodies test competence but do not set legal scope; state boards of pharmacy do.",
+    "d": "The FDA regulates drugs, not pharmacy practice; technician scope varies by state."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-006": {
+   "options": {
+    "a": "A prescription in every state under the Combat Methamphetamine Act",
+    "b": "ID and a logbook, with a daily limit of 9 grams per purchaser",
+    "c": "Compliance with federal/state log limits, ID, and quantity restrictions",
+    "d": "Logbook entry, with ID checked for purchases over 3.6 grams"
+   },
+   "distractorExplanations": {
+    "a": "The federal CMEA sets behind-the-counter limits and logs; only some states require a prescription.",
+    "b": "Swaps the federal limits: 3.6 g per day and 9 g per 30 days.",
+    "d": "ID is checked for every pseudoephedrine sale; 3.6 g is the daily purchase limit, not an ID threshold."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-007": {
+   "options": {
+    "a": "Enter new prescriptions into the pharmacy computer system",
+    "b": "Take refill requests for non-controlled drugs by phone",
+    "c": "Count and pour controlled substances for pharmacist review",
+    "d": "Perform final clinical verification independently"
+   },
+   "distractorExplanations": {
+    "a": "Data entry of new prescriptions is a core technician task, subject to pharmacist verification.",
+    "b": "Refill requests are routine technician work; new verbal orders are what states reserve for pharmacists.",
+    "c": "Technicians may count controlled substances; the pharmacist verifies the final product."
+   },
+   "explanation": "Final verification/clinical check is pharmacist responsibility in most jurisdictions. Tech-check-tech exceptions exist only where state law allows them."
+  },
+  "pharmacy-technician-excpt-readiness-check-law-008": {
+   "options": {
+    "a": "Ordering Schedule I and II controlled substances from suppliers",
+    "b": "Reporting theft or significant loss of controlled substances",
+    "c": "Documenting destruction of expired controlled substances",
+    "d": "Ordering Schedule III–V controlled substances from suppliers"
+   },
+   "distractorExplanations": {
+    "b": "Theft or significant loss is reported on DEA Form 106, not Form 222.",
+    "c": "Destruction is documented on DEA Form 41 (or by a reverse distributor), not Form 222.",
+    "d": "Schedule III–V are ordered with an invoice or standard purchase order; Form 222/CSOS is for C-I and C-II."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-009": {
+   "options": {
+    "a": "Answering at the counter, since HIPAA allows incidental disclosures of any PHI",
+    "b": "Moving to private counseling area and lowering voice/minimum necessary disclosure",
+    "c": "Asking the patient to sign a HIPAA authorization before any discussion",
+    "d": "Referring the question to the prescriber, since pharmacies cannot discuss PHI"
+   },
+   "distractorExplanations": {
+    "a": "Incidental disclosures are permitted only when reasonable safeguards are used; a loud counter conversation is not safeguarded.",
+    "c": "Discussing a patient's own care with them is a treatment disclosure that needs no signed authorization.",
+    "d": "Pharmacies may discuss a patient's PHI with the patient; the issue is privacy, not referral."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-010": {
+   "options": {
+    "a": "Placed in the pharmacy's patient take-back collection receptacle",
+    "b": "Destroyed on site by the technician and logged on DEA Form 106",
+    "c": "Disposed through authorized reverse distributor per regulations",
+    "d": "Flushed down the sink with a witness, as with expired liquids"
+   },
+   "distractorExplanations": {
+    "a": "Collection receptacles are for patients' drugs only; registrants may not put their own inventory in them.",
+    "b": "Form 106 reports theft or loss; destruction is a DEA Form 41 process with authorized witnesses, not a technician task.",
+    "d": "Sewering pharmaceuticals is generally prohibited, and the EPA hazardous waste rule bans sewering hazardous pharmaceuticals."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-011": {
+   "options": {
+    "a": "Required only after you have personal proof of theft on camera",
+    "b": "Handled by confronting the coworker privately before telling anyone",
+    "c": "A matter for the DEA alone, reported directly without telling the pharmacist",
+    "d": "Ethical/legal obligation to notify pharmacist/owner and possibly board/DEA"
+   },
+   "distractorExplanations": {
+    "a": "Reporting is based on reasonable suspicion; investigation, not the reporting employee, establishes proof.",
+    "b": "Confronting the coworker can tip off diversion and compromise the investigation; report through proper channels.",
+    "c": "Wrong order: the pharmacist or owner is notified first and handles DEA and board reporting."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-012": {
+   "options": {
+    "a": "Valid veterinarian prescription meeting state/federal requirements",
+    "b": "A veterinary prescription, with controlled drugs exempt from DEA rules",
+    "c": "A prescription from any licensed prescriber, including a nurse practitioner",
+    "d": "An order from a veterinary technician working under a veterinarian"
+   },
+   "distractorExplanations": {
+    "b": "Veterinarians prescribing controlled substances need DEA registration; the usual controlled-substance rules still apply.",
+    "c": "Human-health prescribers such as nurse practitioners are not licensed to prescribe for animals.",
+    "d": "Veterinary technicians cannot prescribe; the order must come from the licensed veterinarian."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-014": {
+   "options": {
+    "a": "OSHA hazard communication standards",
+    "b": "The Poison Prevention Packaging Act",
+    "c": "Anti-kickback and state unfair trade/ethics rules",
+    "d": "The Durham-Humphrey Amendment on legend drugs"
+   },
+   "distractorExplanations": {
+    "a": "OSHA hazard communication covers workplace chemical hazards, not patient inducements.",
+    "b": "The PPPA requires child-resistant packaging; it does not address inducements to switch prescriptions.",
+    "d": "Durham-Humphrey created the legend/OTC distinction and refill authorization, not rules on gifts to patients."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-015": {
+   "options": {
+    "a": "Release records only after the prescriber signs off on the request",
+    "b": "Provide records within 90 days, charging the patient's usual copay",
+    "c": "Mail records to the address on file, with no identity check needed",
+    "d": "Provide access per HIPAA/state law with identity verification"
+   },
+   "distractorExplanations": {
+    "a": "The HIPAA right of access belongs to the patient; prescriber approval is not required.",
+    "b": "HIPAA requires action within 30 days (one 30-day extension) and a reasonable cost-based fee, not a copay.",
+    "c": "Identity verification is required before releasing PHI, whatever the delivery method."
+   },
+   "explanation": "HIPAA grants patients access rights with verification and permitted fees/process. The process must be reasonable."
+  }
+ }
+}

@@ -39,17 +39,17 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     administeredBy:
       "CFA Institute (computer-based testing at Prometric). Confirm current topic weights and session windows on cfainstitute.org — this UniPrep2Go page is independent practice, not CFA Institute material.",
     officialFormat:
-      "Official Level 2 uses item-set / vignette-style questions across two sessions. This UniPrep2Go readiness check is a free 60-question / 90-minute / 70% diagnostic with topic scoring — a baseline before full item-set blocks, not a substitute for CFA Institute mocks.",
+      "Official Level 2 uses item-set / vignette-style questions across two sessions. This UniPrep2Go readiness check is a free 60-question / 120-minute / 70% mini-vignette diagnostic with topic scoring — a baseline before full item-set blocks, not a substitute for CFA Institute mocks.",
     whoFor:
       "Candidates who passed Level 1 and need a timed Level 2 topic baseline; career switchers reviewing FSA/equity/fixed income under pressure; and learners pairing mocks with the CFA Level 2 Anki deck for spaced repetition of formulas and judgment frames.",
     howToPrepare:
-      "1) Re-read Ethics and FSA early — they still swing band scores. 2) Drill equity and fixed-income valuation until you can apply a vignette without hunting formulas. 3) Take this free 60-question / 90-minute check for topic diagnosis. 4) Repair weak domains with the linked CFA Level 2 Anki deck daily. 5) Move to full item-set mocks only after your readiness check clears weak pillars.",
+      "1) Re-read Ethics and FSA early — they still swing band scores. 2) Drill equity and fixed-income valuation until you can apply a vignette without hunting formulas. 3) Take this free 60-question / 120-minute check for topic diagnosis. 4) Repair weak domains with the linked CFA Level 2 Anki deck daily. 5) Move to full item-set mocks only after your readiness check clears weak pillars.",
     topicBlurbs: [
       {
         id: "ethics",
         label: "Ethical and Professional Standards",
         blurb:
-          "Level 2 Ethics still tests GIPS and Standards application inside case facts — not memorising handbook titles alone.",
+          "Level 2 Ethics tests the Code and Standards inside case facts (GIPS is not a Level II reading) — not memorising handbook titles alone.",
       },
       {
         id: "fra",

@@ -1,0 +1,753 @@
+{
+ "medical-billing-specialist-readiness-check": {
+  "medical-billing-specialist-readiness-check-claims-001": {
+   "options": {
+    "a": "Complete, accurate, timely submission with no missing info",
+    "b": "Accepted by the clearinghouse, even if payer edits flag errors",
+    "c": "Paid in full at the billed charge on first submission",
+    "d": "Submitted within 12 months even if the NPI is missing"
+   },
+   "distractorExplanations": {
+    "b": "Clearinghouse acceptance only passes format edits; a clean claim must also pass payer edits without needing more information.",
+    "c": "Clean means processable without extra information; payment is made at the allowed amount, not the billed charge.",
+    "d": "Meeting the 12-month filing limit does not make a claim clean when a required identifier like the NPI is missing."
+   },
+   "explanation": "Clean claims contain all data needed for adjudication without additional information. Required identifiers such as the NPI must be present."
+  },
+  "medical-billing-specialist-readiness-check-claims-002": {
+   "options": {
+    "a": "Institutional inpatient and outpatient hospital services",
+    "b": "Professional physician/outpatient services",
+    "c": "Dental procedures coded with CDT codes",
+    "d": "Retail pharmacy prescription claims"
+   },
+   "distractorExplanations": {
+    "a": "Institutional hospital services are billed on the UB-04 (CMS-1450), not the professional CMS-1500.",
+    "c": "Dental procedures with CDT codes are billed on the ADA dental claim form, not the CMS-1500.",
+    "d": "Retail pharmacy claims use the NCPDP standard, not the CMS-1500 professional claim form."
+   }
+  },
+  "medical-billing-specialist-readiness-check-claims-004": {
+   "options": {
+    "a": "Appealed in writing to the payer with supporting records",
+    "b": "Billed to the patient as self-pay until coverage is confirmed",
+    "c": "Resubmitted as a corrected claim with frequency code 7",
+    "d": "Corrected with verified insurance information and resubmitted"
+   },
+   "distractorExplanations": {
+    "a": "Appeals are for adjudicated denials; a clearinghouse rejection never reached adjudication, so it is corrected and resubmitted.",
+    "b": "The subscriber ID should be verified and corrected first; shifting the bill to the patient skips a fixable data error.",
+    "c": "Frequency code 7 replaces a claim the payer already adjudicated; a rejected claim was never accepted and goes as a new claim."
+   }
+  },
+  "medical-billing-specialist-readiness-check-claims-005": {
+   "options": {
+    "a": "Primary and secondary coverage; primary pays first per rules",
+    "b": "One plan with a deductible and coinsurance split",
+    "c": "A liability claim where the payer recovers from a third party",
+    "d": "Coverage that ended, requiring retroactive eligibility review"
+   },
+   "distractorExplanations": {
+    "b": "Deductible and coinsurance are cost sharing within a single plan; COB requires two or more plans covering the patient.",
+    "c": "Recovering costs from a liable third party is subrogation, not coordination of benefits between two plans.",
+    "d": "A terminated policy is an eligibility issue; COB applies only when more than one active plan covers the patient."
+   }
+  },
+  "medical-billing-specialist-readiness-check-claims-006": {
+   "options": {
+    "a": "Claim lacked a prior authorization number for the service",
+    "b": "Claim submitted after payer deadline without valid exception",
+    "c": "Claim matched one already processed for the same date of service",
+    "d": "Claim listed a diagnosis that does not support medical necessity"
+   },
+   "distractorExplanations": {
+    "a": "A missing authorization number triggers a prior authorization denial, not a timely filing denial.",
+    "c": "Matching a previously processed claim triggers a duplicate claim denial, not a timely filing denial.",
+    "d": "A diagnosis that fails to support the service triggers a medical necessity denial, not a filing-deadline denial."
+   }
+  },
+  "medical-billing-specialist-readiness-check-claims-007": {
+   "options": {
+    "a": "A commercial plan may deny a service the patient still wants",
+    "b": "Medicare statutorily excludes the service, so a notice is required",
+    "c": "Medicare may not pay for service and patient chooses to proceed",
+    "d": "Medicare will deny a claim because the provider coded it incorrectly"
+   },
+   "distractorExplanations": {
+    "a": "The ABN is a Medicare fee-for-service form; commercial plans use their own patient waiver or financial agreement.",
+    "b": "An ABN is not required for statutorily excluded services such as routine dental; it may be issued only voluntarily.",
+    "d": "Coding errors are corrected by the provider; an ABN cannot shift liability for the provider's own billing mistakes."
+   }
+  },
+  "medical-billing-specialist-readiness-check-claims-008": {
+   "options": {
+    "a": "Request for additional records to support a pending claim",
+    "b": "Status of a submitted claim in the payer's processing queue",
+    "c": "Patient eligibility and benefit details for a date of service",
+    "d": "Explanation of payment, adjustments, and reason codes"
+   },
+   "distractorExplanations": {
+    "a": "Requests for supporting records are additional documentation requests or claim attachments, not the 835 remittance.",
+    "b": "Claim status inquiries and responses use the 276/277 transactions, not the 835 remittance advice.",
+    "c": "Eligibility and benefit details come from the 270/271 transactions, not the 835 remittance advice."
+   }
+  },
+  "medical-billing-specialist-readiness-check-claims-009": {
+   "options": {
+    "a": "Same service billed twice with same date/provider without modifier",
+    "b": "Two related procedures billed together that NCCI bundles",
+    "c": "A corrected claim sent with frequency code 7 to replace the original",
+    "d": "A repeat procedure billed with modifier 76 on the same day"
+   },
+   "distractorExplanations": {
+    "b": "Billing two bundled procedures triggers an NCCI procedure-to-procedure edit, not a duplicate claim denial.",
+    "c": "Frequency code 7 tells the payer the claim replaces the original, which is how duplicate denials are avoided.",
+    "d": "Modifier 76 identifies a repeat procedure by the same physician, which prevents a duplicate denial rather than causing it."
+   },
+   "explanation": "Payers detect duplicate service lines; use frequency/modifier for corrections/voids. A resubmission indicator (claim frequency code) also prevents duplicate denials."
+  },
+  "medical-billing-specialist-readiness-check-claims-010": {
+   "options": {
+    "a": "Pre-op visit a week before surgery, surgery, and all follow-up for one year",
+    "b": "Pre-op visit day before major surgery, surgery, and follow-up within global period",
+    "c": "Surgery and follow-up, plus treatment of a new unrelated problem afterward",
+    "d": "Surgery itself, with routine post-op visits billed separately with modifier 24"
+   },
+   "distractorExplanations": {
+    "a": "For major surgery the global includes pre-op visits from the day before and 90 days of follow-up, not a week before and a year after.",
+    "c": "An unrelated problem treated during the global period is billed separately with modifier 24, not included in the package.",
+    "d": "Routine post-op visits are included in the global package; modifier 24 is for unrelated E/M services."
+   },
+   "explanation": "Global periods bundle certain pre/post op services; separate billing rules apply. Global package contents follow CPT and payer rules."
+  },
+  "medical-billing-specialist-readiness-check-claims-012": {
+   "options": {
+    "a": "Frequency code 7 void then new claim or frequency 8 replacement",
+    "b": "Frequency code 1 resubmission of the same claim with the changes",
+    "c": "A written appeal asking the payer to edit the original claim",
+    "d": "Frequency code 8 void then new claim or frequency 7 replacement"
+   },
+   "distractorExplanations": {
+    "a": "This swaps the codes: frequency 8 voids a prior claim and frequency 7 replaces it.",
+    "b": "Frequency code 1 marks an original claim, so resending a paid claim with code 1 causes a duplicate denial.",
+    "c": "Appeals contest the payer's adjudication decision; the provider's own errors are fixed with a corrected or voided claim."
+   },
+   "explanation": "Electronic claims use frequency/type codes to void or replace prior submission. Which route to use follows each payer's rules."
+  },
+  "medical-billing-specialist-readiness-check-claims-013": {
+   "options": {
+    "a": "Service detail, insurance payments/adjustments, patient responsibility",
+    "b": "Total billed charges as the balance due, before any insurance adjustments",
+    "c": "Service detail and the full allowed amount owed by the patient",
+    "d": "Diagnosis codes and clinical notes justifying each service billed"
+   },
+   "distractorExplanations": {
+    "b": "Contractual adjustments and insurance payments must be applied; billing the full charge overstates what the patient owes.",
+    "c": "The patient owes only the cost share left after the plan's payment, not the full allowed amount.",
+    "d": "Patient statements are financial documents; clinical notes are not included and would add needless PHI exposure."
+   },
+   "explanation": "Statements reflect allowed amounts, payments, adjustments, and remaining patient liability. The balance shown should align with the EOB."
+  },
+  "medical-billing-specialist-readiness-check-claims-014": {
+   "options": {
+    "a": "Patient's group health plan as primary, with WC billed as secondary",
+    "b": "WC payer info, injury date, employer, and diagnosis linked to work injury",
+    "c": "Medicare as primary payer with the employer listed as secondary",
+    "d": "Patient copay collected at check-in, with the balance billed to the employer"
+   },
+   "distractorExplanations": {
+    "a": "For a work injury the workers' compensation carrier is primary; the group health plan is not billed first.",
+    "c": "Under Medicare Secondary Payer rules, workers' compensation is primary for a work injury and Medicare is not.",
+    "d": "WC patients generally owe no copay, and the claim goes to the WC carrier, not directly to the employer."
+   }
+  },
+  "medical-billing-specialist-readiness-check-claims-015": {
+   "options": {
+    "a": "Left as is, since underbilling causes no compliance exposure",
+    "b": "Offset by billing a higher-level code on future claims",
+    "c": "Corrected through rebilling/contract review and internal audit",
+    "d": "Reported to the OIG as a potential false claim violation"
+   },
+   "distractorExplanations": {
+    "a": "Inaccurate claims in either direction are a compliance issue; repeated underbilling signals a process error to correct.",
+    "b": "Billing a higher code than documented to make up lost revenue is upcoding, which is fraud.",
+    "d": "Accidental underbilling causes no overpayment to report; it is corrected internally through rebilling and audit."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-001": {
+   "options": {
+    "a": "Procedures and services performed by physicians",
+    "b": "Supplies, drugs, and durable medical equipment",
+    "c": "Inpatient hospital procedures performed",
+    "d": "Diagnoses, symptoms, and reasons for encounter"
+   },
+   "distractorExplanations": {
+    "a": "Physician procedures and services are reported with CPT codes, not ICD-10-CM diagnosis codes.",
+    "b": "Supplies, drugs, and DME are reported with HCPCS Level II codes, not ICD-10-CM.",
+    "c": "Inpatient hospital procedures are coded with ICD-10-PCS, a separate system from ICD-10-CM."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-002": {
+   "options": {
+    "a": "Established patient office visit level 3",
+    "b": "New patient office visit level 3",
+    "c": "Established patient office visit level 4",
+    "d": "Office consultation, level 3"
+   },
+   "distractorExplanations": {
+    "b": "A new patient level 3 office visit is CPT 99203; 99213 is the established patient code.",
+    "c": "An established patient level 4 office visit is CPT 99214, one level above 99213.",
+    "d": "Office consultations use the 99242-99245 range (such as 99243), not 99213."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-003": {
+   "options": {
+    "a": "Distinct procedural service on the same day as another procedure",
+    "b": "Significant, separately identifiable E/M on same day as procedure",
+    "c": "Unrelated E/M by the same physician during a postoperative period",
+    "d": "Decision for major surgery made at the E/M the day before or day of"
+   },
+   "distractorExplanations": {
+    "a": "A distinct procedure on the same day is reported with modifier 59 (or an X modifier), not modifier 25.",
+    "c": "An unrelated E/M during a postoperative global period uses modifier 24, not modifier 25.",
+    "d": "The decision for major surgery at an E/M the day before or day of surgery uses modifier 57."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-004": {
+   "options": {
+    "a": "Billing component codes separately instead of one bundled code",
+    "b": "Billing a lower level than documented to avoid an audit",
+    "c": "Billing higher level service than documented/supported",
+    "d": "Billing for a service that was not actually performed"
+   },
+   "distractorExplanations": {
+    "a": "Billing components separately instead of the comprehensive code is unbundling, not upcoding.",
+    "b": "Billing below the documented level is downcoding (undercoding), the opposite of upcoding.",
+    "d": "Billing for services never rendered is phantom billing, a separate fraud from inflating the service level."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-005": {
+   "options": {
+    "a": "Service ordered by a licensed provider and requested by the patient",
+    "b": "Service listed as a covered benefit in the patient's insurance plan",
+    "c": "Service supported by a signed ABN from the patient before treatment",
+    "d": "Service reasonable and necessary for diagnosis/treatment"
+   },
+   "distractorExplanations": {
+    "a": "An order plus patient preference does not establish necessity; the diagnosis and record must justify the service.",
+    "b": "A covered benefit can still be denied as not medically necessary for this patient's diagnosis.",
+    "c": "An ABN shifts financial liability to the patient; it does not establish medical necessity."
+   },
+   "explanation": "Payers deny services not justified by diagnosis and clinical documentation. Medical necessity must be supported in the medical record."
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-006": {
+   "options": {
+    "a": "Supplies, drugs, ambulance, and DME not in CPT",
+    "b": "Physician procedures and E/M services in CPT",
+    "c": "Inpatient procedures in the ICD-10-PCS code set",
+    "d": "Category III emerging technology codes"
+   },
+   "distractorExplanations": {
+    "b": "Physician procedures and E/M services are CPT codes, which are HCPCS Level I, not Level II.",
+    "c": "Inpatient procedures are coded in ICD-10-PCS, a separate system from HCPCS Level II.",
+    "d": "Category III codes for emerging technology are part of CPT, not HCPCS Level II."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-007": {
+   "options": {
+    "a": "Default to the right side when the note does not specify",
+    "b": "Match clinical documentation specifying side when applicable",
+    "c": "Be coded as bilateral whenever both sides were examined",
+    "d": "Be taken from the order or referral rather than the provider's note"
+   },
+   "distractorExplanations": {
+    "a": "Defaulting to a side is guessing; when laterality is undocumented, query the provider or use the unspecified code.",
+    "c": "Bilateral codes apply only when the condition affects both sides, not when both sides were merely examined.",
+    "d": "Code assignment follows the treating provider's documentation of the encounter, not the order or referral."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-008": {
+   "options": {
+    "a": "Billing a higher E/M level than the provider's documentation supports",
+    "b": "Claims for services lacking a covered diagnosis under a local coverage determination",
+    "c": "Improper unbundling of component codes billed separately when bundled",
+    "d": "Claims submitted after the payer's timely filing deadline"
+   },
+   "distractorExplanations": {
+    "a": "Upcoding E/M levels is found through documentation review, not NCCI procedure-to-procedure edits.",
+    "b": "Diagnosis coverage checks come from LCD/NCD medical necessity edits, not NCCI bundling edits.",
+    "d": "Late claims are stopped by timely filing rules, not by NCCI coding edits."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-009": {
+   "options": {
+    "a": "Condition that consumed the most resources during the hospital stay",
+    "b": "Condition listed first by the physician on the admission order",
+    "c": "Most serious condition treated during the stay, even if not the reason",
+    "d": "Condition established after study to be chiefly responsible for admission"
+   },
+   "distractorExplanations": {
+    "a": "Resource use does not define the principal diagnosis; it is the condition found after study to cause the admission.",
+    "b": "The admitting diagnosis on the order may change after study; the principal diagnosis is set after study.",
+    "c": "Severity does not decide it; a serious condition that did not cause the admission is a secondary diagnosis."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-010": {
+   "options": {
+    "a": "Medical decision making and/or total time on date of encounter",
+    "b": "History, exam, and medical decision making as the three key components",
+    "c": "Total time including staff time spent on the days before the visit",
+    "d": "Number of body systems examined and documented in the note"
+   },
+   "distractorExplanations": {
+    "b": "History, exam, and MDM as three key components were the 1995/1997 rules replaced for office visits in 2021.",
+    "c": "Time-based leveling counts only physician or QHP time on the date of the encounter, not staff time or other days.",
+    "d": "Since 2021 the exam is performed as medically appropriate and no longer drives the office E/M level."
+   },
+   "explanation": "E/M levels based on MDM elements or time per current CMS/AMA guidelines. The level must be supported by documentation."
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-011": {
+   "options": {
+    "a": "Nature of the injury, such as a fracture or open wound",
+    "b": "Mechanism/circumstance of injury or poisoning when documented",
+    "c": "Patient status factors such as a history of injury",
+    "d": "Sequelae of an injury, identified by the 7th character S"
+   },
+   "distractorExplanations": {
+    "a": "The nature of the injury is coded with Chapter 19 S and T codes; external cause codes add how it happened.",
+    "c": "Status and history factors are captured with Z codes, not external cause codes.",
+    "d": "Sequelae are shown by the 7th character S on the injury code itself, not by an external cause code."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-012": {
+   "options": {
+    "a": "Modifier 22 to show the service was more complex than usual",
+    "b": "A Category III code reported alongside it for tracking",
+    "c": "Description and often comparable code with documentation",
+    "d": "The closest listed code billed with modifier 52 attached"
+   },
+   "distractorExplanations": {
+    "a": "Modifier 22 reports increased work on an existing listed code; it does not apply to unlisted codes.",
+    "b": "When a Category III code exists it is reported instead of an unlisted code, not alongside it.",
+    "d": "Modifier 52 reports a reduced service; substituting a listed code for a different service misrepresents what was done."
+   },
+   "explanation": "Unlisted codes need report/comparison to establish value and medical necessity. The documentation must support the unique service."
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-013": {
+   "options": {
+    "a": "Repeat procedure by the same physician on the same day",
+    "b": "Significant, separately identifiable E/M on a procedure day",
+    "c": "Bilateral procedure performed on both sides at the same operative session",
+    "d": "Distinct procedural service when no more specific modifier applies"
+   },
+   "distractorExplanations": {
+    "a": "A repeat procedure by the same physician is reported with modifier 76, not modifier 59.",
+    "b": "A separate E/M on a procedure day is reported with modifier 25, not modifier 59.",
+    "c": "A bilateral procedure at the same session is reported with modifier 50, not modifier 59."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-014": {
+   "options": {
+    "a": "Conflicts or lacks specificity needed for accurate code assignment",
+    "b": "Supports a higher-paying code that the provider did not document anywhere",
+    "c": "Is complete but the coder prefers a more common code",
+    "d": "Is signed by a resident rather than the attending physician"
+   },
+   "distractorExplanations": {
+    "b": "Queries must be non-leading; prompting for a higher-paying code the provider did not document is noncompliant.",
+    "c": "Complete, clear documentation needs no query; coder preference never justifies changing what is documented.",
+    "d": "Resident signatures raise attestation rules, not the clinical-clarity issue a coding query resolves."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-015": {
+   "options": {
+    "a": "Claims require SNOMED CT codes; ICD-10-CM is used for clinical problem lists",
+    "b": "Claims require ICD-10-CM diagnosis codes; SNOMED supports clinical documentation",
+    "c": "SNOMED CT replaces CPT for procedures on the CMS-1500 claim form",
+    "d": "SNOMED CT codes map one-to-one to ICD-10-CM, so either can be billed"
+   },
+   "distractorExplanations": {
+    "a": "This reverses the roles: claims require ICD-10-CM, while SNOMED CT supports clinical documentation in the EHR.",
+    "c": "Procedures on the CMS-1500 are still reported with CPT/HCPCS; SNOMED CT is not a billing code set.",
+    "d": "SNOMED-to-ICD mapping is not one-to-one, and payers accept only ICD-10-CM diagnosis codes on claims."
+   },
+   "explanation": "SNOMED CT is clinical terminology; billing uses ICD-10-CM mapped from documentation. SNOMED CT terms are mapped to ICD-10-CM for billing."
+  },
+  "medical-billing-specialist-readiness-check-payers-001": {
+   "options": {
+    "a": "Physician services, outpatient care, DME, and preventive services",
+    "b": "Inpatient hospital, long-term custodial nursing care, and routine dental",
+    "c": "Inpatient hospital, skilled nursing (limited), hospice, some home health",
+    "d": "Private plan bundling hospital, medical, and usually drug coverage"
+   },
+   "distractorExplanations": {
+    "a": "Physician services, outpatient care, DME, and preventive services are Medicare Part B, not Part A.",
+    "b": "Medicare does not cover long-term custodial care or routine dental under Part A.",
+    "d": "A private plan bundling hospital, medical, and drug coverage is Medicare Advantage (Part C)."
+   }
+  },
+  "medical-billing-specialist-readiness-check-payers-002": {
+   "options": {
+    "a": "Inpatient hospital, skilled nursing, hospice, and some home health",
+    "b": "Outpatient prescription drugs through private stand-alone plans",
+    "c": "Long-term custodial nursing home care and routine hearing aids",
+    "d": "Physician services, outpatient care, DME, preventive services"
+   },
+   "distractorExplanations": {
+    "a": "Inpatient hospital, skilled nursing, and hospice are Medicare Part A benefits, not Part B.",
+    "b": "Outpatient prescription drugs through stand-alone private plans are Medicare Part D.",
+    "c": "Original Medicare does not cover custodial nursing home care or routine hearing aids under Part B."
+   }
+  },
+  "medical-billing-specialist-readiness-check-payers-004": {
+   "options": {
+    "a": "Federal CMS rules that apply identically in every state",
+    "b": "State rules, managed care plans, and fee schedules",
+    "c": "The patient's Medicare Part B enrollment status alone",
+    "d": "The provider's commercial contract rates and network tier"
+   },
+   "distractorExplanations": {
+    "a": "Medicaid is administered by each state within federal guidelines, so rules differ from state to state.",
+    "c": "Medicaid eligibility rests on state income and category rules; Medicare enrollment only matters for dual eligibles.",
+    "d": "Commercial contract rates do not set Medicaid billing; state fee schedules and Medicaid managed care plans do."
+   }
+  },
+  "medical-billing-specialist-readiness-check-payers-005": {
+   "options": {
+    "a": "Veterans receiving care at VA medical centers",
+    "b": "Dependents of veterans with service-connected disability",
+    "c": "Uniformed service members, retirees, and families",
+    "d": "Federal civilian employees and their dependents"
+   },
+   "distractorExplanations": {
+    "a": "Care at VA medical centers is VA health care, a separate system from TRICARE.",
+    "b": "Dependents of certain permanently disabled veterans are covered by CHAMPVA, not TRICARE.",
+    "d": "Federal civilian employees are covered through the FEHB program, not TRICARE."
+   }
+  },
+  "medical-billing-specialist-readiness-check-payers-006": {
+   "options": {
+    "a": "Perform the MRI and bill the patient's secondary plan instead",
+    "b": "Perform the MRI and appeal after the claim is denied for no auth",
+    "c": "Schedule the MRI once the patient signs a Medicare ABN",
+    "d": "Review denial reason, peer-to-peer if available, patient notification"
+   },
+   "distractorExplanations": {
+    "a": "The secondary plan follows the primary's determination; billing it does not cure a missing primary authorization.",
+    "b": "Proceeding without authorization risks nonpayment; the denial reason and peer-to-peer review come before service.",
+    "c": "The ABN is a Medicare fee-for-service notice and does not apply to a commercial payer's denial."
+   },
+   "explanation": "Appeals and peer review may overturn; patient informed of options and liability. An alternative plan of care may also be discussed."
+  },
+  "medical-billing-specialist-readiness-check-payers-007": {
+   "options": {
+    "a": "Group health plan due to active employment over certain size/age rules",
+    "b": "Patient has a Medigap supplement policy purchased through a private insurer",
+    "c": "Patient is 65+ and covered by a retiree group health plan",
+    "d": "Patient is enrolled in Medicaid as well as Medicare Part B"
+   },
+   "distractorExplanations": {
+    "b": "Medigap pays after Medicare; it is a supplement, not a primary payer under MSP rules.",
+    "c": "Retiree coverage is not based on current employment, so it pays secondary to Medicare.",
+    "d": "Medicaid is the payer of last resort, so Medicare stays primary for dual-eligible patients."
+   },
+   "explanation": "MSP provisions determine when Medicare pays secondary to other insurance. Other situations where other insurance is primary, such as liability or WC, also apply."
+  },
+  "medical-billing-specialist-readiness-check-payers-008": {
+   "options": {
+    "a": "Receives a discounted fee for each service billed to the plan",
+    "b": "Receives fixed per-member payment and manages care within budget",
+    "c": "Receives a fixed payment per admission based on the DRG",
+    "d": "Receives a bonus based on quality scores in addition to fees"
+   },
+   "distractorExplanations": {
+    "a": "A discounted fee per service is discounted fee-for-service, not capitation.",
+    "c": "A fixed payment per admission by DRG is a case rate, not a per-member capitated payment.",
+    "d": "Quality bonuses on top of fees describe pay-for-performance, not a fixed per-member capitation."
+   }
+  },
+  "medical-billing-specialist-readiness-check-payers-009": {
+   "options": {
+    "a": "The provider's bill for the remaining balance after insurance",
+    "b": "The payer's decision on a prior authorization request",
+    "c": "What provider billed, allowed amount, plan paid, patient owes",
+    "d": "The provider's detailed payment remittance and CARC codes"
+   },
+   "distractorExplanations": {
+    "a": "The provider's bill for the remaining balance is the patient statement, which follows the EOB.",
+    "b": "Prior authorization decisions come in a separate determination letter, not the EOB.",
+    "d": "Remittance detail with CARC codes goes to the provider on the ERA/RA, not to the patient as an EOB."
+   },
+   "explanation": "EOB explains adjudication; provider statement may follow for patient balance. It is usually not a bill itself."
+  },
+  "medical-billing-specialist-readiness-check-payers-010": {
+   "options": {
+    "a": "Denied unless the member obtained prior authorization",
+    "b": "Covered only at the out-of-network benefit level and cost share",
+    "c": "Paid by the home state's Medicaid program instead of Blue Cross",
+    "d": "Processed under emergency/urgent rules per member contract"
+   },
+   "distractorExplanations": {
+    "a": "The ACA bars plans from requiring prior authorization for emergency services.",
+    "b": "Federal rules require in-network cost sharing for emergency care, even out of network.",
+    "c": "Medicaid does not pick up claims for a commercially insured Blue Cross member's emergency care."
+   },
+   "explanation": "Emergency services have special network/payment rules under ACA and plan terms. Federal protections such as the ACA and No Surprises Act also apply."
+  },
+  "medical-billing-specialist-readiness-check-payers-011": {
+   "options": {
+    "a": "Prescription drug coverage through private plans",
+    "b": "Inpatient hospital and hospice coverage",
+    "c": "Private plans bundling Parts A and B into one product",
+    "d": "Physician and outpatient services coverage"
+   },
+   "distractorExplanations": {
+    "b": "Inpatient hospital and hospice coverage is Medicare Part A, not Part D.",
+    "c": "Private plans bundling Parts A and B are Medicare Advantage (Part C), not Part D.",
+    "d": "Physician and outpatient services are Medicare Part B, not Part D."
+   }
+  },
+  "medical-billing-specialist-readiness-check-payers-012": {
+   "options": {
+    "a": "The Social Security Administration's regional Medicare office",
+    "b": "Palmetto GBA under special Medicare rules for railroad beneficiaries",
+    "c": "The local A/B MAC that handles other Medicare claims in the state",
+    "d": "The Railroad Retirement Board claims unit in Chicago directly"
+   },
+   "distractorExplanations": {
+    "a": "SSA handles enrollment for many beneficiaries but does not process Medicare claims.",
+    "c": "Railroad Medicare Part B claims go to the RRB Specialty MAC, not the local A/B MAC.",
+    "d": "The RRB handles enrollment and entitlement; claims are processed by its contracted Specialty MAC."
+   },
+   "explanation": "Railroad Retirement Board beneficiaries have Medicare processed through designated contractors. Palmetto GBA is the Railroad Retirement Board Specialty MAC."
+  },
+  "medical-billing-specialist-readiness-check-payers-013": {
+   "options": {
+    "a": "An insurance carrier that bears the claim risk",
+    "b": "The state insurance department's claims fund",
+    "c": "Employer/plan administrator often using TPA",
+    "d": "The stop-loss carrier on every claim submitted"
+   },
+   "distractorExplanations": {
+    "a": "A carrier bearing the claim risk describes a fully insured plan, not a self-funded one.",
+    "b": "Self-funded ERISA plans are not state-insured; no state fund pays their claims.",
+    "d": "Stop-loss reimburses the employer only above set thresholds; it does not pay each claim."
+   },
+   "explanation": "Self-funded ERISA plans use administrator; billing follows plan documents. The employer, not a fully insured carrier, bears the claim risk."
+  },
+  "medical-billing-specialist-readiness-check-payers-014": {
+   "options": {
+    "a": "Specialist visits covered at higher cost share without a referral",
+    "b": "Referral needed only for out-of-network specialists",
+    "c": "Referral needed for every visit, including emergency department care",
+    "d": "PCP referral/authorization needed for specialist except emergencies"
+   },
+   "distractorExplanations": {
+    "a": "Self-referral to specialists at higher cost sharing describes a PPO, not an HMO.",
+    "b": "Requiring referrals mainly for out-of-network care resembles a POS plan; HMOs need referrals in network too.",
+    "c": "Emergency care is exempt from referral requirements under HMO plans and federal rules."
+   },
+   "explanation": "HMOs gatekeep specialty care through PCP/referrals and network. Exact referral rules follow each plan."
+  },
+  "medical-billing-specialist-readiness-check-payers-015": {
+   "options": {
+    "a": "Before service when possible and at intervals for ongoing treatment",
+    "b": "At the first visit only, since coverage rarely changes during the year",
+    "c": "After claim denial, to confirm the reason for the payer's decision",
+    "d": "At each annual plan renewal, unless the patient reports a change"
+   },
+   "distractorExplanations": {
+    "b": "Coverage can change at any time through job loss or plan changes, so one check at the first visit is not enough.",
+    "c": "Checking eligibility after a denial is too late; verification before service prevents the denial.",
+    "d": "Waiting for renewal or a patient report misses mid-year terminations; verify before each service when possible."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-001": {
+   "options": {
+    "a": "Administrative, physical, and technical safeguards for electronic PHI",
+    "b": "Safeguarding PHI, minimum necessary use/disclosure, patient rights",
+    "c": "Patient written consent before any PHI is used for treatment",
+    "d": "Notification to patients within 60 days of any PHI breach"
+   },
+   "distractorExplanations": {
+    "a": "Administrative, physical, and technical safeguards for ePHI are HIPAA Security Rule requirements, not the Privacy Rule.",
+    "c": "The Privacy Rule permits use of PHI for treatment, payment, and operations without written authorization.",
+    "d": "Breach notification is the separate Breach Notification Rule and applies to unsecured PHI breaches."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-002": {
+   "options": {
+    "a": "Billing errors caught and refunded within 60 days of identification",
+    "b": "Honest coding mistakes made without reckless disregard",
+    "c": "Knowingly submitting false claims for government payment",
+    "d": "Submitting false claims to a commercial insurer only"
+   },
+   "distractorExplanations": {
+    "a": "Returning an identified overpayment within 60 days is how providers avoid False Claims Act liability.",
+    "b": "FCA liability requires knowledge, including deliberate ignorance or reckless disregard; honest mistakes are not enough.",
+    "d": "The federal FCA covers claims paid with government funds; purely commercial fraud falls under other laws."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-003": {
+   "options": {
+    "a": "Written policies, a compliance officer, and annual external accreditation",
+    "b": "Training, auditing, and mandatory self-disclosure of every error to CMS",
+    "c": "Written policies, training, and incentive pay tied to billing volume",
+    "d": "Written policies, training, auditing, enforcement, and response procedures"
+   },
+   "distractorExplanations": {
+    "a": "External accreditation is not one of the seven OIG compliance program elements.",
+    "b": "Overpayments are reported and returned, but OIG does not require self-disclosing every billing error to CMS.",
+    "c": "Incentive pay tied to billing volume creates fraud risk; it is not an OIG compliance element."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-004": {
+   "options": {
+    "a": "Physician self-referral for designated health services absent exception",
+    "b": "Offering anything of value to induce referrals of federal program patients",
+    "c": "Referring patients for any service to an entity the physician owns",
+    "d": "Submitting claims the provider knows to be false to Medicare"
+   },
+   "distractorExplanations": {
+    "b": "Remuneration to induce federal program referrals is the Anti-Kickback Statute, not the Stark Law.",
+    "c": "Stark covers only designated health services, and exceptions exist; it does not bar referrals for every service.",
+    "d": "Knowingly submitting false claims is the False Claims Act, not the Stark self-referral law."
+   },
+   "explanation": "Stark restricts DHS referrals where physician has financial relationship unless exception met. It applies when the physician or an immediate family member has a financial relationship with the entity."
+  },
+  "medical-billing-specialist-readiness-check-compliance-005": {
+   "options": {
+    "a": "Physician referrals for DHS to entities with a financial relationship",
+    "b": "Remuneration to induce referrals for services paid by federal programs",
+    "c": "Knowingly submitting false claims to Medicare or Medicaid",
+    "d": "Billing for services furnished by an excluded individual"
+   },
+   "distractorExplanations": {
+    "a": "Physician referrals for designated health services to financially related entities fall under the Stark Law.",
+    "c": "Knowingly submitting false claims is governed by the False Claims Act, not the Anti-Kickback Statute.",
+    "d": "Billing for services by an excluded person triggers OIG exclusion penalties (CMPs), not the AKS itself."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-006": {
+   "options": {
+    "a": "Keeping records until the claim is paid and the patient balance closed",
+    "b": "Keeping records for 1 year after the date of service under HIPAA",
+    "c": "Maintaining records supporting services billed per payer/regulatory periods",
+    "d": "Transferring records to the patient so the practice need not retain any copies"
+   },
+   "distractorExplanations": {
+    "a": "Payers and auditors can review claims for years after payment, so records must outlast the closed balance.",
+    "b": "No rule sets a one-year limit; HIPAA requires six years for compliance documentation and payers set multi-year periods.",
+    "d": "The provider must retain its own records to support billed services; giving the patient a copy does not satisfy this."
+   },
+   "explanation": "Retention policies follow CMS/state/false claims standards typically multi-year. These periods are often 5-7 or more years, and longer for some programs."
+  },
+  "medical-billing-specialist-readiness-check-compliance-007": {
+   "options": {
+    "a": "Provider fraud cases referred for criminal prosecution by the Department of Justice",
+    "b": "Medicaid eligibility errors in state enrollment determinations",
+    "c": "HIPAA privacy complaints filed by patients against providers",
+    "d": "Medicare improper payments through review of claims and medical necessity"
+   },
+   "distractorExplanations": {
+    "a": "RACs identify improper payments for recovery; fraud referrals go through UPICs and the OIG, not RAC audits.",
+    "b": "Medicaid eligibility error reviews fall under PERM and state programs, not Medicare RAC audits.",
+    "c": "HIPAA privacy complaints are investigated by HHS Office for Civil Rights, not Recovery Audit Contractors."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-008": {
+   "options": {
+    "a": "PCI-DSS security and patient authorization/disclosure policies",
+    "b": "HIPAA Security Rule standards that replace PCI-DSS for patients",
+    "c": "PCI-DSS rules permitting CVV storage when the file is encrypted",
+    "d": "Verbal patient consent recorded once at the first visit"
+   },
+   "distractorExplanations": {
+    "b": "HIPAA does not replace PCI-DSS; card data handled by a medical practice must still meet PCI-DSS.",
+    "c": "PCI-DSS prohibits storing the CVV after authorization, even in encrypted form.",
+    "d": "Card-on-file use needs written authorization with clear terms, not a one-time verbal consent."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-009": {
+   "options": {
+    "a": "Pay the ransom promptly so systems come back before any patient data is accessed",
+    "b": "Isolate systems, notify leadership/IT, assess breach notification obligations",
+    "c": "Restore from backups and resume billing without a breach assessment",
+    "d": "Notify all patients within 24 hours before the scope is investigated"
+   },
+   "distractorExplanations": {
+    "a": "Paying does not guarantee recovery or remove breach duties, and may raise sanctions concerns; containment comes first.",
+    "c": "HHS presumes ransomware encryption of PHI is a breach unless a risk assessment shows low probability of compromise.",
+    "d": "HIPAA requires notice without unreasonable delay and within 60 days of discovery, after the scope is assessed."
+   },
+   "explanation": "Cyber incidents require containment, forensic analysis, and potential HIPAA breach notification. Systems are then restored from clean backups."
+  },
+  "medical-billing-specialist-readiness-check-compliance-010": {
+   "options": {
+    "a": "Acceptable if each test was medically necessary and performed",
+    "b": "A coding error only if the payer does not catch it",
+    "c": "Fraud/abuse if panels should be billed as panel per policy",
+    "d": "Acceptable when the payer's system pays the claim as billed"
+   },
+   "distractorExplanations": {
+    "a": "Medical necessity of each test does not permit splitting a panel to get higher payment.",
+    "b": "Intentional unbundling is fraud or abuse whether or not the payer's edits catch it.",
+    "d": "Payment does not make an improper claim proper; overpayments from unbundling must be returned."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-011": {
+   "options": {
+    "a": "Reporting HIPAA breaches directly to the OCR on staff's behalf",
+    "b": "Answering billing questions from patients about their bills",
+    "c": "Filing appeals of claim denials with payers",
+    "d": "Anonymous/good-faith reporting of suspected violations"
+   },
+   "distractorExplanations": {
+    "a": "A compliance hotline is an internal reporting channel; it does not file reports with OCR for staff.",
+    "b": "Patient billing questions go to customer service, not the compliance hotline.",
+    "c": "Denial appeals are a revenue cycle task, not the purpose of a compliance hotline."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-012": {
+   "options": {
+    "a": "Cannot participate in federal healthcare programs",
+    "b": "Can work in billing roles that do not touch patient care",
+    "c": "Is barred from Medicare but may still bill Medicaid",
+    "d": "Regains eligibility once the exclusion is listed for 5 years"
+   },
+   "distractorExplanations": {
+    "b": "Exclusion covers administrative and management services paid by federal programs, not just patient care.",
+    "c": "OIG exclusion applies to all federal health care programs, including Medicaid.",
+    "d": "Reinstatement requires applying to OIG after the exclusion term; it does not happen at a set listing date."
+   },
+   "explanation": "LEIE lists individuals/entities excluded from Medicare/Medicaid participation. Hiring them or billing for their services is prohibited."
+  },
+  "medical-billing-specialist-readiness-check-compliance-013": {
+   "options": {
+    "a": "In-network deductibles and copays at in-network hospitals",
+    "b": "Out-of-network cost sharing in certain emergency and facility settings",
+    "c": "Out-of-network charges for all elective care chosen by the patient",
+    "d": "Ground ambulance charges from out-of-network providers"
+   },
+   "distractorExplanations": {
+    "a": "In-network cost sharing is set by the plan; the No Surprises Act targets out-of-network surprise bills.",
+    "c": "Patients can knowingly choose out-of-network elective care after notice and consent; the Act targets surprise bills.",
+    "d": "Ground ambulance is excluded from the No Surprises Act; only air ambulance is covered."
+   }
+  },
+  "medical-billing-specialist-readiness-check-compliance-015": {
+   "options": {
+    "a": "Attendance only, since topic content is set by CMS",
+    "b": "Topics covered, without tracking individual attendance",
+    "c": "Test scores, used to set staff billing productivity pay",
+    "d": "Attendance, topics covered, and periodic updates"
+   },
+   "distractorExplanations": {
+    "a": "Topics must be documented too, and CMS does not dictate each practice's training content.",
+    "b": "Auditors expect proof of who attended; topics without attendance records do not show training was completed.",
+    "c": "Tying training to billing productivity pay creates a compliance risk; attendance and topics are what is documented."
+   },
+   "explanation": "Documented training demonstrates compliance program effectiveness to auditors. Topics include fraud, waste, abuse, and HIPAA."
+  }
+ }
+}

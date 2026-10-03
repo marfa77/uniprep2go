@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Tunica intima"
+        "text": "Tunica intima (endothelium)"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Myocardium"
+        "text": "Tunica media (smooth muscle)"
       },
       {
         "id": "d",
-        "text": "Endocardium"
+        "text": "Epicardium (visceral layer)"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Vessels have intima, media, and externa; myocardium/endocardium are heart layers.",
     "distractorExplanations": {
-      "a": "Intima is the inner lining.",
-      "c": "Myocardium is heart muscle.",
-      "d": "Endocardium lines heart chambers."
+      "a": "The tunica intima is the innermost endothelial lining in contact with blood, not the outermost layer of the vessel wall.",
+      "c": "The tunica media is the middle smooth-muscle layer that changes vessel diameter; the externa (adventitia) lies outside it.",
+      "d": "The epicardium is the outer layer of the heart wall, not of veins and arteries, whose outer layer is the tunica externa."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Always contains fibrinogen like plasma"
+        "text": "Contains fibrinogen because no anticoagulant is added"
       },
       {
         "id": "b",
-        "text": "Is only obtained from arterial blood"
+        "text": "Is collected in EDTA tubes and spun right away"
       },
       {
         "id": "c",
-        "text": "Cannot be used for any chemistry tests"
+        "text": "Contains the anticoagulant used during collection"
       },
       {
         "id": "d",
-        "text": "Lacks clotting factors consumed when blood clots (no anticoagulant used)"
+        "text": "Lacks clotting factors consumed when blood clots"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Plasma is from anticoagulated blood; serum is from clotted blood after factors are consumed.",
+    "explanation": "Plasma is from anticoagulated blood; serum is from clotted blood after factors are consumed. No anticoagulant is used when collecting serum.",
     "distractorExplanations": {
-      "a": "Fibrinogen is in plasma, not serum.",
-      "b": "Serum can be venous.",
-      "c": "Many chemistry tests use serum."
+      "a": "Fibrinogen is converted to fibrin and consumed in the clot, so serum lacks it; plasma from anticoagulated blood retains fibrinogen.",
+      "b": "EDTA is an anticoagulant, so an EDTA tube yields whole blood or plasma; serum requires a clotted specimen in a tube without anticoagulant.",
+      "c": "Plasma contains the tube's anticoagulant; serum comes from blood allowed to clot with no anticoagulant added."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Aorta, carotid, and femoral arteries"
+        "text": "Cephalic, basilic, and great saphenous veins"
       },
       {
         "id": "c",
-        "text": "Portal vein"
+        "text": "Brachial artery, median nerve, and basilic vein"
       },
       {
         "id": "d",
-        "text": "Pulmonary trunk"
+        "text": "Dorsal metacarpal veins on the back of the hand"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Standard AC veins are median cubital, cephalic, and basilic; arteries are avoided for routine venipuncture.",
     "distractorExplanations": {
-      "b": "Those are arteries/major vessels not for routine draws.",
-      "c": "Portal vein is abdominal.",
-      "d": "Pulmonary trunk is central thoracic."
+      "b": "The great saphenous vein runs in the leg, not the antecubital fossa; the third AC vein used for venipuncture is the median cubital.",
+      "c": "The brachial artery and median nerve lie in the AC fossa as structures to avoid; they are never targets for routine venipuncture.",
+      "d": "Dorsal hand veins are an alternate site when AC veins are unsuitable; they are outside the antecubital fossa."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Destruction of all leukocytes"
+        "text": "The breakdown of a clot after healing"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "Measurement of hemoglobin"
+        "text": "The rupture of red cells in a specimen"
       },
       {
         "id": "d",
-        "text": "Forced hemolysis in the tube"
+        "text": "The formation of blood cells in marrow"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Hemostasis includes vascular spasm, platelet plug, and coagulation.",
     "distractorExplanations": {
-      "a": "Leukocyte destruction is not hemostasis.",
-      "c": "Hb measurement is hematology analytics.",
-      "d": "Hemolysis is RBC rupture."
+      "a": "Breaking down a clot after the vessel heals is fibrinolysis, the step that follows hemostasis rather than hemostasis itself.",
+      "c": "Rupture of red blood cells is hemolysis, a specimen-quality problem, not the body's process of stopping bleeding.",
+      "d": "Formation of blood cells in the bone marrow is hematopoiesis; hemostasis is vascular spasm, platelet plug, and coagulation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "High-pressure elastic storage only like the aorta"
+        "text": "Storing elastic energy to maintain arterial pressure"
       },
       {
         "id": "b",
-        "text": "Preventing all fluid exchange"
+        "text": "Returning blood to the heart through one-way valves"
       },
       {
         "id": "c",
-        "text": "Generating electrical impulses like the SA node"
+        "text": "Regulating blood flow by constricting their muscular walls"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Thin capillary walls enable exchange; arteries are conduit/pressure vessels.",
     "distractorExplanations": {
-      "a": "Aorta is a large elastic artery.",
-      "b": "Exchange is their function.",
-      "c": "SA node is cardiac conduction."
+      "a": "Storing elastic energy to keep pressure up between beats is the role of large elastic arteries such as the aorta, not capillaries.",
+      "b": "Returning blood through one-way valves describes veins; capillaries are single-cell-thick vessels without valves.",
+      "c": "Capillaries lack smooth muscle; arterioles and precapillary sphincters regulate flow into capillary beds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Oxygen transport"
+        "text": "Oxygen and carbon dioxide transport"
       },
       {
         "id": "c",
-        "text": "Clot retraction"
+        "text": "Platelet plug formation at injury"
       },
       {
         "id": "d",
-        "text": "Producing bile"
+        "text": "Maintaining plasma oncotic pressure"
       }
     ],
     "correctOptionId": "a",
     "explanation": "WBCs defend against pathogens; oxygen is RBC/hemoglobin role.",
     "distractorExplanations": {
-      "b": "O2 transport is RBC function.",
-      "c": "Clotting is platelets/factors.",
-      "d": "Bile is hepatic."
+      "b": "Gas transport is the job of erythrocytes (red cells) and their hemoglobin, not leukocytes, which defend against infection.",
+      "c": "Forming a platelet plug is the role of thrombocytes (platelets) in hemostasis, not of white blood cells.",
+      "d": "Plasma oncotic pressure is maintained mainly by albumin, a plasma protein, not by leukocytes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Veins always carry oxygenated blood"
+        "text": "Venous blood has higher oxygen content, which most tests require"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "Arteries have no pulse risk if punctured"
+        "text": "Veins have thicker muscular walls that seal quickly after the needle is removed"
       },
       {
         "id": "d",
-        "text": "Veins never bruise"
+        "text": "Arteries lie superficially but carry a higher risk of hemolysis"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Venipuncture targets veins for safety and accessibility; arterial puncture is specialized.",
     "distractorExplanations": {
-      "a": "Systemic veins carry deoxygenated blood.",
-      "c": "Arterial puncture is higher risk/pressure.",
-      "d": "Veins can bruise."
+      "a": "Systemic venous blood is deoxygenated; veins are chosen for safety and access, and reference ranges are set for venous samples.",
+      "c": "Arteries, not veins, have the thick muscular walls; veins are preferred because their walls are thinner and pressure is low.",
+      "d": "Arteries generally lie deeper than veins; the arterial risk is high pressure, bleeding, and nerve injury, not hemolysis."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Pulmonary vein from the lungs to the left atrium as a systemic vein from the arm"
+        "text": "Inferior vena cava"
       },
       {
         "id": "b",
-        "text": "Aorta as a vein"
+        "text": "Pulmonary veins"
       },
       {
         "id": "c",
-        "text": "Superior vena cava (via venous pathways from upper body)"
+        "text": "Superior vena cava"
       },
       {
         "id": "d",
-        "text": "Coronary sinus as the antecubital draw site"
+        "text": "Brachiocephalic artery"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Upper-body systemic venous return reaches the right atrium via the SVC; pulmonary veins carry oxygenated blood.",
     "distractorExplanations": {
-      "a": "Pulmonary veins are not arm venipuncture anatomy.",
-      "b": "Aorta is arterial.",
-      "d": "Coronary sinus is cardiac venous drainage, not AC draw."
+      "a": "The inferior vena cava returns blood from the lower body; upper-body venous blood reaches the right atrium via the SVC.",
+      "b": "Pulmonary veins carry oxygenated blood from the lungs to the left atrium, not deoxygenated blood from the head and arms.",
+      "d": "The brachiocephalic artery carries oxygenated blood away from the heart to the head and arm; it does not return venous blood."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only arteries and no veins"
+        "text": "Median cubital, saphenous, and femoral veins"
       },
       {
         "id": "b",
-        "text": "Only lymphatic ducts suitable for vacuum tubes"
+        "text": "Radial, ulnar, and brachial arteries only"
       },
       {
         "id": "c",
-        "text": "The spinal cord"
+        "text": "Jugular, subclavian, and cephalic veins"
       },
       {
         "id": "d",
-        "text": "Median cubital, cephalic, and basilic veins as common options"
+        "text": "Median cubital, cephalic, and basilic veins"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Phlebotomists select among AC veins based on accessibility and safety (basilic near nerves/brachial artery).",
     "distractorExplanations": {
-      "a": "Veins are the target.",
-      "b": "Lymphatics are not routine blood draw sites.",
-      "c": "Spinal cord is not in the AC fossa."
+      "a": "The saphenous and femoral veins are leg vessels; the AC fossa contains the median cubital, cephalic, and basilic veins.",
+      "b": "Arteries are avoided for routine venipuncture; the AC fossa is used because of its superficial median cubital, cephalic, and basilic veins.",
+      "c": "The jugular and subclavian veins are central neck and chest veins used for central lines, not antecubital venipuncture sites."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "They are microscopic vessels where exchange of gases/nutrients occurs and are the source of dermal puncture blood mixtures"
+        "text": "They are microscopic vessels where exchange of gases/nutrients occurs"
       },
       {
         "id": "b",
-        "text": "They are the largest arteries in the body"
+        "text": "They carry blood away from the heart under the highest pressure"
       },
       {
         "id": "c",
-        "text": "They contain only valves like large veins"
+        "text": "They contain one-way valves that prevent backflow in the limbs"
       },
       {
         "id": "d",
-        "text": "They are never involved in heel-stick specimens"
+        "text": "They yield skin-puncture blood that matches venous blood exactly"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Capillary beds enable exchange; skin punctures collect capillary blood (with interstitial/arterial mix).",
+    "explanation": "Capillary beds enable exchange; skin punctures collect capillary blood (with interstitial/arterial mix). Skin punctures collect capillary blood mixed with tissue fluid.",
     "distractorExplanations": {
-      "b": "Aorta is a large artery.",
-      "c": "Capillaries lack the valve anatomy of veins.",
-      "d": "Heel sticks are capillary collections."
+      "b": "Carrying blood away from the heart at the highest pressure describes arteries; capillary pressure is far lower.",
+      "c": "One-way valves are a feature of medium and large veins in the limbs; capillaries have no valves.",
+      "d": "Dermal puncture blood is a mix of arterial, venous, and tissue fluid, closer to arterial; values such as glucose differ from venous."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Veins of the foot"
+        "text": "Veins (especially the venae cavae)"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Capillaries of the skin"
+        "text": "Capillaries (especially in the skin)"
       },
       {
         "id": "d",
-        "text": "Lymphatic capillaries"
+        "text": "Arterioles (especially in the kidney cortex)"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Arterial pressure is highest; veins are low-pressure capacitance vessels.",
     "distractorExplanations": {
-      "a": "Venous pressure is much lower.",
-      "c": "Capillary pressure is lower than arterial.",
-      "d": "Lymphatics are not systemic arterial pressure."
+      "a": "Pressure is lowest in the large veins near the right atrium; veins are low-pressure capacitance vessels.",
+      "c": "Capillary pressure is much lower than arterial pressure because most of the drop occurs across the arterioles upstream.",
+      "d": "Arterioles are where pressure falls most steeply, so their pressure is lower than in the aorta and large arteries."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the Achilles tendon"
+        "text": "The radial artery and radial nerve"
       },
       {
         "id": "b",
-        "text": "The trachea"
+        "text": "The cephalic vein and lateral cutaneous nerve"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "The femoral head"
+        "text": "The axillary artery and brachial plexus"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Medial AC anatomy places basilic near artery/nerve—use caution or choose safer veins first.",
     "distractorExplanations": {
-      "a": "Achilles is ankle.",
-      "b": "Trachea is neck.",
-      "d": "Femoral head is hip."
+      "a": "The radial artery and nerve lie on the lateral (thumb) side of the forearm; the basilic vein is medial, near the brachial artery.",
+      "b": "The lateral antebrachial cutaneous nerve runs with the cephalic vein on the lateral side, which makes the cephalic a safer choice.",
+      "d": "The axillary artery and brachial plexus lie in the armpit, far proximal to the antecubital fossa and the basilic draw site."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Lavender first"
+        "text": "Light-blue citrate tube, since coagulation tests come first"
       },
       {
         "id": "b",
-        "text": "Blood culture bottles/SPS when cultures are ordered, then other tubes per sequence"
+        "text": "Blood culture bottles/SPS when cultures are ordered"
       },
       {
         "id": "c",
-        "text": "Gray first"
+        "text": "Red or gold serum tube to clear air from the tubing"
       },
       {
         "id": "d",
-        "text": "Any random order"
+        "text": "Lavender EDTA tube, since CBCs are the most ordered test"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Cultures first reduce contamination; then follow citrate, serum, heparin, EDTA, glycolytic inhibitor sequences.",
+    "explanation": "Cultures first reduce contamination; then follow citrate, serum, heparin, EDTA, glycolytic inhibitor sequences. Other tubes then follow the standard sequence.",
     "distractorExplanations": {
-      "a": "EDTA first can contaminate other tests.",
-      "c": "Gray is typically last among common tubes.",
-      "d": "Order of draw is standardized."
+      "a": "Citrate follows blood cultures in the CLSI order; it is first only when no cultures are ordered (with a discard tube for butterflies).",
+      "c": "A discard tube to clear butterfly tubing air is a no-additive or citrate tube; serum tubes come after citrate in the order of draw.",
+      "d": "EDTA comes late in the order of draw because carryover raises potassium and lowers calcium in tubes drawn after it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Higher gauge = larger diameter"
+        "text": "Higher gauge = larger diameter lumen"
       },
       {
         "id": "b",
-        "text": "Gauge unrelated to diameter"
+        "text": "Gauge = needle length, not diameter"
       },
       {
         "id": "c",
-        "text": "25G is larger than 18G"
+        "text": "Gauge = wall thickness, not lumen size"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "21–23G are common for venipuncture; higher gauge means thinner needle.",
     "distractorExplanations": {
-      "a": "Opposite is true.",
-      "b": "Gauge defines diameter.",
-      "c": "25G is smaller than 18G."
+      "a": "Gauge runs inversely to diameter: a 23G needle is thinner than a 21G, so a higher gauge means a smaller lumen.",
+      "b": "Needle length is measured separately in inches; gauge describes the diameter of the needle lumen.",
+      "c": "Gauge refers to the needle's diameter (lumen size), not its wall thickness; higher gauge means a thinner needle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "STAT electrolytes only as first choice"
+        "text": "Potassium testing on delayed specimens to prevent leakage"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Blood bank crossmatch"
+        "text": "Coagulation testing when platelet activation must be blocked"
       },
       {
         "id": "d",
-        "text": "ESR testing"
+        "text": "Ammonia testing when the sample cannot be put on ice"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fluoride inhibits glycolysis preserving glucose; oxalate/EDTA variants exist by manufacturer.",
     "distractorExplanations": {
-      "a": "Electrolytes often use green/SST.",
-      "c": "BB uses pink/lavender EDTA typically.",
-      "d": "ESR often lavender."
+      "a": "Gray tops often contain potassium oxalate, which contaminates potassium results; fluoride does not stop potassium leaking from cells.",
+      "c": "Coagulation tests use the light-blue sodium citrate tube at a 9:1 ratio, not sodium fluoride, which is used for glucose.",
+      "d": "Ammonia is drawn in heparin or EDTA and placed on ice; a fluoride tube does not replace chilling for ammonia."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ten minutes routinely"
+        "text": "About 30 seconds before the draw"
       },
       {
         "id": "b",
-        "text": "Thirty minutes"
+        "text": "About 45 seconds before the draw"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "No time limit"
+        "text": "About three minutes before the draw"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Prolonged tourniquet time causes hemoconcentration and analyte changes.",
     "distractorExplanations": {
-      "a": "Ten minutes is excessive.",
-      "b": "Thirty minutes is harmful.",
-      "d": "Time limits exist for quality."
+      "a": "The CLSI limit is one minute; 30 seconds is a common misbelief, and the tourniquet may stay on up to a minute while the vein is located.",
+      "b": "The accepted maximum is one minute, not 45 seconds; beyond one minute hemoconcentration begins to alter results.",
+      "d": "Three minutes far exceeds the one-minute limit and causes hemoconcentration that falsely raises proteins and protein-bound analytes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Recapping with two hands"
+        "text": "Recapping with the one-handed scoop method before disposal"
       },
       {
         "id": "b",
-        "text": "Leaving the needle on the bed for later"
+        "text": "Removing the needle from the holder to reuse the holder"
       },
       {
         "id": "c",
-        "text": "Bending the needle before trash disposal"
+        "text": "Activating the safety feature once the tubes are labeled"
       },
       {
         "id": "d",
-        "text": "Activating the engineered safety feature immediately into a sharps container"
+        "text": "Activating the engineered safety feature immediately"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "OSHA-aligned practice forbids two-handed recapping and improper disposal.",
+    "explanation": "OSHA-aligned practice forbids two-handed recapping and improper disposal. The whole assembly then goes straight into a sharps container.",
     "distractorExplanations": {
-      "a": "Two-handed recapping is high risk.",
-      "b": "Unattended sharps injure others.",
-      "c": "Bending/trash is prohibited."
+      "a": "OSHA allows recapping only when no alternative exists; after venipuncture the safety feature is activated instead of recapping.",
+      "b": "OSHA requires the tube holder to be discarded with the needle attached; unscrewing the needle for holder reuse causes sticks.",
+      "c": "Delaying activation until after labeling leaves a contaminated needle exposed; it must be activated immediately after withdrawal."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "EDTA"
+        "text": "EDTA and gel separator"
       },
       {
         "id": "c",
-        "text": "Sodium citrate"
+        "text": "Lithium heparin and gel separator"
       },
       {
         "id": "d",
-        "text": "Heparin and citrate together"
+        "text": "Clot activator without a gel barrier"
       }
     ],
     "correctOptionId": "a",
     "explanation": "SST allows clotting then gel barrier separation of serum after centrifugation.",
     "distractorExplanations": {
-      "b": "EDTA prevents clotting.",
-      "c": "Citrate is coag tube.",
-      "d": "Mixed anticoagulants are not SST design."
+      "b": "EDTA with gel is the plasma preparation tube (PPT, pearl/white top) used for molecular tests, not the serum separator tube.",
+      "c": "Lithium heparin with gel is the plasma separator tube (PST, light green); the SST has clot activator for serum.",
+      "d": "Clot activator without gel describes the plastic red-top serum tube; the SST adds a gel barrier that separates serum after spinning."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Force blood through a needle into tubes under high pressure"
+        "text": "Use a transfer device and push the plunger to speed filling"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Remove stoppers and pour quickly while shaking"
+        "text": "Puncture stoppers with the syringe needle and let vacuum draw it in"
       },
       {
         "id": "d",
-        "text": "Stick the needle through the finger to vent air"
+        "text": "Use a transfer device and fill tubes in any order since draw is done"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Forcing causes hemolysis; transfer devices improve safety.",
     "distractorExplanations": {
-      "a": "High pressure hemolyzes.",
-      "c": "Open pouring risks contamination/aerosols.",
-      "d": "Never stick yourself to vent."
+      "a": "Pushing the plunger forces blood through the needle, causing hemolysis and wrong additive ratios; the tube vacuum should do the filling.",
+      "c": "Using the syringe needle to pierce stoppers risks needlesticks; OSHA-aligned practice requires a safety transfer device.",
+      "d": "The order of draw still applies when filling tubes from a syringe, to prevent additive carryover between tubes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -832,11 +832,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Replacing the need for patient identification"
+        "text": "Drawing large volumes quickly for blood donor units"
       },
       {
         "id": "b",
-        "text": "Drawing arterial blood gases without training"
+        "text": "Drawing from large, easy antecubital veins in healthy adults"
       },
       {
         "id": "c",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "Avoiding order of draw rules"
+        "text": "Drawing citrate tubes first, since no discard tube is needed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Butterflies aid difficult veins; ID and order of draw still apply; ABGs need specialized training.",
     "distractorExplanations": {
-      "a": "ID is always required.",
-      "b": "ABG is arterial skillset.",
-      "d": "Order of draw still matters."
+      "a": "Donor units are collected with 16–17G needles; butterflies are small-gauge sets suited to fragile or hand veins, not large volumes.",
+      "b": "Large, easy AC veins are best drawn with a standard evacuated-tube needle; the butterfly's advantage is control in small or fragile veins.",
+      "d": "Butterfly tubing holds air, so a discard tube is needed before a first light-blue citrate tube to keep the 9:1 ratio."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -865,15 +865,15 @@
     "options": [
       {
         "id": "a",
-        "text": "25-gauge compared with 18-gauge"
+        "text": "25-gauge (higher gauge number = larger diameter)"
       },
       {
         "id": "b",
-        "text": "Gauge number equal to lumen size directly"
+        "text": "23-gauge (the standard size for routine draws)"
       },
       {
         "id": "c",
-        "text": "30-gauge is always preferred for blood bank units"
+        "text": "21-gauge (the largest lumen used for venipuncture)"
       },
       {
         "id": "d",
@@ -883,9 +883,9 @@
     "correctOptionId": "d",
     "explanation": "Lower gauge numbers are larger bores; very small gauges increase hemolysis risk for some tests.",
     "distractorExplanations": {
-      "a": "25G is smaller lumen than 18G.",
-      "b": "Gauge is inverse to diameter.",
-      "c": "Blood bank often uses larger-bore needles."
+      "a": "Gauge is inverse to diameter; a 25G needle has a much smaller lumen than an 18G needle.",
+      "b": "21G is the usual routine size, and 23G is used for smaller veins; either way, 23G has a smaller lumen than 18G.",
+      "c": "21G is the most common venipuncture size, but it is not the largest lumen; a lower number such as 18G is wider."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Contain clot activator and gel for serum chemistry after clotting/centrifugation"
+        "text": "Contain clot activator and gel for serum chemistry"
       },
       {
         "id": "b",
-        "text": "Contain EDTA for CBC"
+        "text": "Contain lithium heparin and gel for plasma chemistry"
       },
       {
         "id": "c",
-        "text": "Contain sodium citrate for PT/INR"
+        "text": "Contain clot activator only, for blood bank testing"
       },
       {
         "id": "d",
-        "text": "Must never be inverted after draw"
+        "text": "Contain sodium citrate and gel for coagulation tests"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "SST yields serum for many chemistry tests; invert gently to mix clot activator.",
+    "explanation": "SST yields serum for many chemistry tests; invert gently to mix clot activator. Serum is ready after clotting and centrifugation.",
     "distractorExplanations": {
-      "b": "EDTA is lavender.",
-      "c": "Citrate is light blue.",
-      "d": "Inversion mixes additives properly."
+      "b": "Lithium heparin with gel is the light-green plasma separator tube (PST); the SST contains clot activator and yields serum.",
+      "c": "Clot activator without gel describes the red-top tube; the SST adds a gel barrier and is used mainly for chemistry, not blood bank.",
+      "d": "Coagulation tests use the light-blue sodium citrate tube, which has no gel; the SST contains clot activator and gel."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "CBC"
+        "text": "CBC testing when cell morphology must be preserved"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Coagulation PT/INR"
+        "text": "PT/INR testing when calcium must be bound by citrate"
       },
       {
         "id": "d",
-        "text": "Blood cultures"
+        "text": "Lipid testing when the patient could not fast"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fluoride inhibits glycolysis; gray tops are classic glucose/alcohol (policy) tubes—not CBC/coag/cultures.",
     "distractorExplanations": {
-      "a": "CBC is EDTA.",
-      "c": "Coag is citrate.",
-      "d": "Cultures use dedicated bottles."
+      "a": "CBCs are drawn in the lavender EDTA tube, which preserves cell morphology; fluoride/oxalate tubes are used for glucose.",
+      "c": "PT/INR uses the light-blue sodium citrate tube at a 9:1 ratio; gray-top fluoride/oxalate is not acceptable for coagulation testing.",
+      "d": "Lipid panels are drawn in serum (red/gold) tubes, and fluoride does nothing to offset a non-fasting state."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Squirt blood forcefully into tubes with the needle uncapped toward coworkers"
+        "text": "Puncture the stoppers with the syringe needle while holding the tube in your hand"
       },
       {
         "id": "b",
-        "text": "Recap the needle with two hands then puncture stoppers blindly"
+        "text": "Remove the stoppers and pour blood in slowly to avoid hemolysis"
       },
       {
         "id": "c",
-        "text": "Transfer using a transfer device—never force blood into tubes by removing stoppers with the needle tip in an unsafe way"
+        "text": "Transfer using a transfer device—never force blood into tubes"
       },
       {
         "id": "d",
-        "text": "Discard the order of draw because syringe draws are exempt"
+        "text": "Use a transfer device and fill tubes in reverse order of draw"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Safety transfer devices prevent needlesticks; order of draw still applies when filling tubes.",
     "distractorExplanations": {
-      "a": "Unsafe spraying risks exposure.",
-      "b": "Two-handed recapping is hazardous.",
-      "d": "Order of draw still matters."
+      "a": "Holding a tube while piercing it with the syringe needle is a classic needlestick mechanism; a safety transfer device is required.",
+      "b": "Removing stoppers exposes the worker to blood, breaks the vacuum-controlled fill, and distorts the blood-to-additive ratio.",
+      "d": "Syringe transfers follow the same order of draw as evacuated-tube draws; reversing it causes additive carryover."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1001,23 +1001,23 @@
       },
       {
         "id": "b",
-        "text": "In the lab break room hours later from memory"
+        "text": "At the bedside just before collection so tubes are ready to fill"
       },
       {
         "id": "c",
-        "text": "Before calling the patient into the room using charts"
+        "text": "At the nursing station after collection, using the requisition labels"
       },
       {
         "id": "d",
-        "text": "With room number as the only identifier"
+        "text": "In the lab on receipt, matching tubes to the requisition by order time"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Bedside labeling prevents wrong-patient errors.",
     "distractorExplanations": {
-      "b": "Delayed memory labeling is error-prone.",
-      "c": "Pre-labeling unused tubes risks mix-ups.",
-      "d": "Room number alone is insufficient."
+      "b": "Labeling tubes before collection risks using a prelabeled tube for the wrong patient; labeling happens right after the draw.",
+      "c": "Leaving the bedside before labeling breaks the identification link with the patient and invites mix-ups.",
+      "d": "The lab cannot verify identity from order times; tubes must be labeled in the patient's presence immediately after collection."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Freezing immediately in a household freezer"
+        "text": "Chilling in an ice slurry and delivery within 15 minutes"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Leaving at outdoor winter temperatures"
+        "text": "Protection from light with foil or an amber tube"
       },
       {
         "id": "d",
-        "text": "No special handling ever"
+        "text": "Holding at room temperature for 30 minutes before spinning"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Some analytes require temperature control (warm, chilled, protected from light)",
     "distractorExplanations": {
-      "a": "Freezing can destroy samples.",
-      "c": "Extreme cold may be wrong for that test.",
-      "d": "Special handling is common."
+      "a": "Ice slurry is for ammonia and lactate; chilling makes cold agglutinins bind red cells and gives falsely low results.",
+      "c": "Light protection is needed for bilirubin and similar photosensitive analytes, not for cold agglutinin specimens.",
+      "d": "Room temperature lets cold agglutinins start binding red cells; the specimen must be kept at 37 °C until the serum is separated."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Left under bright windows intentionally"
+        "text": "Chilled in an ice slurry during transport"
       },
       {
         "id": "b",
-        "text": "Heated on a radiator"
+        "text": "Kept at 37 °C during transport"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Shaken continuously for 30 minutes"
+        "text": "Spun within 15 minutes of collection"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Light degrades certain analytes; amber tubes or wrapping are used.",
     "distractorExplanations": {
-      "a": "Light exposure lowers bilirubin.",
-      "b": "Heat can degrade samples.",
-      "d": "Excess shaking hemolyzes."
+      "a": "Ice slurry transport is for ammonia, lactate, and similar unstable analytes; bilirubin's problem is degradation by light.",
+      "b": "Body-temperature transport is for cold agglutinins and cryoglobulins; bilirubin needs protection from light.",
+      "d": "Rapid separation does not protect bilirubin from light; the tube must be wrapped in foil or collected in an amber tube."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Nothing; values never change"
+        "text": "Glucose and other small, freely diffusing molecules"
       },
       {
         "id": "b",
-        "text": "Only urine specific gravity"
+        "text": "Sodium and chloride from plasma water loss"
       },
       {
         "id": "c",
-        "text": "Oxygen saturation on pulse ox"
+        "text": "Urea from reduced kidney filtration"
       },
       {
         "id": "d",
-        "text": "Proteins and protein-bound substances (and contribute to potassium issues)"
+        "text": "Proteins and protein-bound substances"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Plasma water leaves the vein, concentrating cells/proteins.",
+    "explanation": "Plasma water leaves the vein, concentrating cells/proteins. It can also contribute to potassium changes.",
     "distractorExplanations": {
-      "a": "Values can change significantly.",
-      "b": "Urine SG is urinary.",
-      "c": "Pulse ox is not a tube analyte."
+      "a": "Small, freely diffusing analytes move out with plasma water, so they change little; large proteins and bound substances concentrate.",
+      "b": "Electrolytes like sodium and chloride diffuse freely with water, so hemoconcentration changes them minimally.",
+      "c": "A tourniquet does not change kidney filtration; urea is small and freely diffusible, so stasis barely affects it."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "The sample is sterile surgical fluid"
+        "text": "Red or pink serum/plasma from red cells ruptured during the collection process"
       },
       {
         "id": "c",
-        "text": "It contains only water"
+        "text": "Dark yellow or brown serum/plasma from high bilirubin levels"
       },
       {
         "id": "d",
-        "text": "It was drawn from an artery"
+        "text": "Serum/plasma that contains small fibrin clots after spinning"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Lipemia can interfere with optical assays; fasting may be required.",
     "distractorExplanations": {
-      "b": "Lipemia is not sterility.",
-      "c": "It is lipid turbidity.",
-      "d": "Route is not defined by lipemia."
+      "b": "Red or pink serum indicates hemolysis from ruptured red cells; lipemia is milky turbidity caused by lipids.",
+      "c": "Dark yellow or brown serum is icteric, caused by high bilirubin; lipemic serum is cloudy or milky from fats.",
+      "d": "Fibrin strands come from incomplete clotting before centrifugation; lipemia refers to milky turbidity from lipids."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Routine cholesterol screens"
+        "text": "STAT specimens where turnaround time must be documented"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "Discarded empty tubes"
+        "text": "Blood bank specimens where the patient armband must match"
       },
       {
         "id": "d",
-        "text": "Patient magazines in waiting rooms"
+        "text": "Send-out reference lab specimens where courier pickup times must be logged"
       }
     ],
     "correctOptionId": "b",
     "explanation": "COC documents handling for legal acceptability of results.",
     "distractorExplanations": {
-      "a": "Routine chemistry rarely needs full COC.",
-      "c": "Empty tubes aren't specimens.",
-      "d": "Magazines irrelevant."
+      "a": "STAT tracking documents speed of testing, not the legal handling record; chain of custody is for forensic and drug-testing specimens.",
+      "c": "Blood bank identification bands ensure transfusion safety, but they are not a legal chain-of-custody record.",
+      "d": "Courier logs track shipping; chain of custody is the signed, unbroken handling record required for legally defensible results."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediately while still liquid without clotting time"
+        "text": "Immediately after collection to prevent glycolysis in the tube"
       },
       {
         "id": "b",
-        "text": "After freezing solid"
+        "text": "Within 5 minutes, since clot activator works instantly"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "Only if the patient requests it"
+        "text": "After 4 hours at room temperature so the clot can retract"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Premature spin of serum tubes can trap fibrin and harm quality.",
     "distractorExplanations": {
-      "a": "Spinning too early causes fibrin issues.",
-      "b": "Freezing before processing is usually wrong.",
-      "d": "Lab protocol decides, not patient request."
+      "a": "Serum tubes must clot first (about 30–60 minutes); spinning immediately leaves fibrin in the serum and degrades specimen quality.",
+      "b": "Clot activator shortens clotting to about 30 minutes; it does not work instantly, so a 5-minute spin is premature.",
+      "d": "Serum should be separated from cells within 2 hours; a 4-hour delay lets glucose fall and potassium leak from cells."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Report hemolyzed potassium as accurate without comment"
+        "text": "Recollect using a smaller 25-gauge needle to slow the blood flow"
       },
       {
         "id": "b",
-        "text": "Pour the hemolyzed blood into a new tube to 'fix' it"
+        "text": "Recollect and shake the tubes well to mix the additive"
       },
       {
         "id": "c",
-        "text": "Shake harder next time"
+        "text": "Ask the lab to run it with a hemolysis comment"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Hemolysis invalidates many tests; recollect and improve technique.",
     "distractorExplanations": {
-      "a": "Hemolyzed K+ is falsely high.",
-      "b": "Pouring does not remove hemolysis.",
-      "c": "Harder shaking worsens hemolysis."
+      "a": "Very small needles increase hemolysis by shearing red cells; a 21–23G needle is appropriate for most adult recollections.",
+      "b": "Vigorous shaking ruptures red cells; additive tubes are mixed by gentle inversion, which is one of the technique fixes.",
+      "c": "A rejected hemolyzed specimen is not run with a comment; hemolysis falsely raises potassium and other analytes, so recollect."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1265,23 +1265,23 @@
       },
       {
         "id": "b",
-        "text": "Multi-hour delays at room temperature without issue"
+        "text": "Warming to body temperature until the lab receives them"
       },
       {
         "id": "c",
-        "text": "Exposure to direct sunlight"
+        "text": "Wrapping in foil to protect the specimen from light"
       },
       {
         "id": "d",
-        "text": "Mixing with food residue"
+        "text": "Letting the tube clot 30 minutes at room temperature first"
       }
     ],
     "correctOptionId": "a",
     "explanation": "These analytes are unstable; ice slurry and rapid analysis are common requirements.",
     "distractorExplanations": {
-      "b": "Delays alter results.",
-      "c": "Light/heat harm many analytes.",
-      "d": "Contamination ruins specimens."
+      "b": "Warming to 37 °C is for cold agglutinins and cryoglobulins; ammonia and lactate rise unless chilled and processed quickly.",
+      "c": "Foil wrapping protects light-sensitive analytes such as bilirubin; ammonia and lactate need chilling and fast processing.",
+      "d": "A 30-minute room-temperature wait lets ammonia and lactate rise from cell metabolism; these are plasma tests sent on ice."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Drawing arterial blood"
+        "text": "Pouring blood from one additive tube into another to top it up"
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "Discarding the accession label"
+        "text": "Spinning the specimen to separate cells from serum or plasma"
       },
       {
         "id": "d",
-        "text": "Heating until boiling"
+        "text": "Labeling the primary tube with the accession number in the lab"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Aliquots allow multiple tests while preserving primary tube integrity rules.",
     "distractorExplanations": {
-      "a": "Aliquot is post-processing division.",
-      "c": "Labels must remain accurate.",
-      "d": "Boiling destroys samples."
+      "a": "Pouring between additive tubes contaminates additives and changes ratios; aliquoting divides separated serum or plasma.",
+      "c": "Spinning to separate cells is centrifugation, the step before aliquoting, not aliquoting itself.",
+      "d": "Assigning and labeling an accession number is accessioning; aliquoting splits serum or plasma into secondary tubes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Freezing immediately at −70°C at the bedside"
+        "text": "Placing the specimen in an ice slurry right away to stabilize the antibodies"
       },
       {
         "id": "b",
-        "text": "Leaving on ice for 24 hours without order"
+        "text": "Holding the specimen at room temperature, like most routine chemistry tubes"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Shaking until frothy"
+        "text": "Wrapping the specimen in foil to shield it from light until processing"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Cold agglutinins can precipitate in the cold—follow warm-handling instructions.",
     "distractorExplanations": {
-      "a": "Not a routine deep-freeze bedside step.",
-      "b": "Ice may be wrong for this test.",
-      "d": "Frothing damages specimen."
+      "a": "Ice slurry is for ammonia and lactate; chilling makes cold agglutinins attach to red cells and lowers the measured titer.",
+      "b": "Room temperature is cool enough for cold agglutinins to bind red cells; the specimen must stay at body temperature.",
+      "d": "Foil protects photosensitive analytes such as bilirubin; cold agglutinin specimens need warmth, not light protection."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1360,15 +1360,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only urine specific gravity"
+        "text": "Sodium, from sweat produced while pumping"
       },
       {
         "id": "b",
-        "text": "Only CSF glucose"
+        "text": "Glucose, from muscle release of stored sugar"
       },
       {
         "id": "c",
-        "text": "Room air oxygen percent"
+        "text": "Bilirubin, from red cells crushed by the fist"
       },
       {
         "id": "d",
@@ -1378,9 +1378,9 @@
     "correctOptionId": "d",
     "explanation": "Muscle activity can raise potassium and affect other results—avoid pumping.",
     "distractorExplanations": {
-      "a": "Not a urine test effect.",
-      "b": "Not CSF.",
-      "c": "Not atmospheric O2."
+      "a": "Fist pumping does not raise serum sodium; muscle contraction releases potassium from muscle cells into the blood.",
+      "b": "Working muscle consumes glucose rather than releasing it into the vein; the classic pumping artifact is a falsely high potassium.",
+      "c": "Clenching does not crush red cells into bilirubin; bilirubin is unaffected, while potassium rises from muscle activity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1397,23 +1397,23 @@
       },
       {
         "id": "b",
-        "text": "Increase WBC count mechanically"
+        "text": "Oxidize bilirubin and falsely raise results"
       },
       {
         "id": "c",
-        "text": "Sterilize the specimen completely"
+        "text": "Hemolyze red cells and falsely raise results"
       },
       {
         "id": "d",
-        "text": "Convert serum to plasma"
+        "text": "Activate platelets and form clots in serum"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Light-sensitive analytes need amber tubes/wraps as specified.",
     "distractorExplanations": {
-      "b": "Light does not raise WBC via that mechanism.",
-      "c": "Light does not sterilize blood tubes.",
-      "d": "Serum/plasma depends on clotting/anticoagulant."
+      "b": "Light breaks down bilirubin, so results fall rather than rise; the error direction is falsely low, not high.",
+      "c": "Light exposure does not rupture red cells; the concern is photodegradation of bilirubin, which lowers results.",
+      "d": "Light does not activate platelets or cause clotting; bilirubin specimens are shielded because light degrades bilirubin."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Relabeled in the lab based on guesswork"
+        "text": "Relabeled by the collector after confirming the patient's name"
       },
       {
         "id": "b",
-        "text": "Recollected with correct bedside labeling per policy—do not relabel another patient's tube casually"
+        "text": "Recollected with correct bedside labeling per policy"
       },
       {
         "id": "c",
-        "text": "Poured into a correctly labeled empty tube from a different patient"
+        "text": "Tested and reported with a comment noting the label error"
       },
       {
         "id": "d",
-        "text": "Reported as normal without testing"
+        "text": "Held until the nurse verifies which patient it came from"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Mislabeled specimens are patient-safety events; recollect rather than guess.",
+    "explanation": "Mislabeled specimens are patient-safety events; recollect rather than guess. Never relabel a tube after it leaves the bedside.",
     "distractorExplanations": {
-      "a": "Guessing causes wrong-patient results.",
-      "c": "Transfer between patients is dangerous.",
-      "d": "Do not invent results."
+      "a": "Once a tube leaves the bedside, its identity cannot be confirmed; relabeling a mislabeled specimen risks a wrong-patient result.",
+      "c": "A comment does not make a mislabeled result safe; rejected specimens are recollected, not reported with a disclaimer.",
+      "d": "After-the-fact verification cannot prove which patient a tube came from; policy requires recollection with bedside labeling."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Palpate the site heavily with a nonsterile finger after final prep without reprepping"
+        "text": "Cleanse the site with alcohol and fill the anaerobic bottle first when using a butterfly"
       },
       {
         "id": "b",
-        "text": "Collect through a contaminated IV line always as first choice"
+        "text": "Draw the cultures after the antibiotic dose so the bottles capture peak levels"
       },
       {
         "id": "c",
-        "text": "Cleanse the site thoroughly with appropriate antiseptic and fill bottles to correct volumes without touching sterile bottle tops with nonsterile items"
+        "text": "Cleanse the site thoroughly with appropriate antiseptic and fill bottles to correct volumes"
       },
       {
         "id": "d",
-        "text": "Shake bottles with the butterfly needle still attached in midair"
+        "text": "Cleanse the site, then repalpate with a gloved finger to confirm the vein before puncture"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Aseptic prep and correct volume maximize pathogen recovery and minimize contamination.",
+    "explanation": "Aseptic prep and correct volume maximize pathogen recovery and minimize contamination. Do not touch the sterile bottle tops with nonsterile items.",
     "distractorExplanations": {
-      "a": "Repalpating contaminates the site.",
-      "b": "Peripheral draws are preferred when possible.",
-      "d": "Unsafe handling risks sticks/contamination."
+      "a": "With a butterfly, the aerobic bottle is filled first because tubing air would enter the anaerobic bottle; the order here is reversed.",
+      "b": "Blood cultures are drawn before antibiotics start; antibiotics in the sample suppress growth and cause false-negative cultures.",
+      "d": "Repalpating after antiseptic prep recontaminates the site unless a sterile glove is used or the site is prepped again."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "Ask only 'are you the diabetic?'"
+        "text": "Identify the patient by name and room number from the requisition"
       },
       {
         "id": "c",
-        "text": "Proceed if the wristband is missing and the bed card matches a common name"
+        "text": "Confirm the patient's fasting status before checking the wristband"
       },
       {
         "id": "d",
-        "text": "Skip ID for unconscious patients without using alternative policy"
+        "text": "Ask 'Are you Mr. Smith?' and proceed if the patient says yes"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Wrong-patient draws are critical errors; follow facility ID policy including unconscious patients.",
     "distractorExplanations": {
-      "b": "Disease labels are not identifiers.",
-      "c": "Missing wristbands need resolution.",
-      "d": "Unconscious patients still require ID protocol."
+      "b": "A room number is not an acceptable identifier because patients move; two identifiers such as full name and DOB are required.",
+      "c": "Fasting status matters for some tests, but identity is confirmed first; a perfect specimen from the wrong patient is a critical error.",
+      "d": "A leading yes/no question lets confused patients agree; the patient should state their full name and DOB to match the requisition."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Have them stand and walk quickly"
+        "text": "Finish filling the current tube, then lower the head between the knees"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Continue filling all tubes while they are syncope"
+        "text": "Stop the draw and have them walk to the waiting area for fresh air"
       },
       {
         "id": "d",
-        "text": "Give ammonia spirits into both eyes"
+        "text": "Stop the draw and offer ammonia inhalants to revive the patient"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Vasovagal syncope needs immediate safety measures and discontinuation as needed.",
     "distractorExplanations": {
-      "a": "Walking worsens syncope risk.",
-      "c": "Continuing during syncope is unsafe.",
-      "d": "Eye chemical exposure is wrong."
+      "a": "The draw must stop at once; finishing the tube risks injury, and head-between-knees positioning can lead to a fall.",
+      "c": "Walking a faint patient risks a fall; they should stay seated or lie supine under observation until recovered.",
+      "d": "CLSI advises against ammonia inhalants because they can trigger respiratory problems; positioning and observation come first."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1558,11 +1558,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No gloves if the patient looks healthy"
+        "text": "Gloves only when the patient has a known bloodborne infection"
       },
       {
         "id": "b",
-        "text": "Washing gloves between patients for reuse"
+        "text": "Gloves for draws, changed between patients when visibly soiled"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "Recapping all needles carefully with two hands"
+        "text": "Gown, mask, and gloves for every routine venipuncture"
       }
     ],
     "correctOptionId": "c",
     "explanation": "All blood is potentially infectious; gloves are single-use.",
     "distractorExplanations": {
-      "a": "Appearance does not exclude infection.",
-      "b": "Glove reuse is improper.",
-      "d": "Two-handed recapping is unsafe."
+      "a": "Standard Precautions treat all blood as potentially infectious; gloves are worn for every draw, not only for known infections.",
+      "b": "Gloves are single-use and changed between every patient, soiled or not, with hand hygiene after removal.",
+      "d": "Routine venipuncture requires gloves and hand hygiene; gowns and masks are added for splash risk or transmission-based precautions."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Hold the patient down and draw anyway"
+        "text": "Explain the doctor's order again and draw once the patient stops objecting"
       },
       {
         "id": "b",
-        "text": "Bribe them without documenting"
+        "text": "Draw anyway since the provider's order implies the patient's consent"
       },
       {
         "id": "c",
-        "text": "Draw from a roommate instead"
+        "text": "Leave the requisition at the bedside and try again on the next round"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "Competent refusal must be respected; coercion and wrong-patient draws are unethical/illegal.",
     "distractorExplanations": {
-      "a": "Force is assault.",
-      "b": "Bribery is improper.",
-      "c": "Roommate substitution is a critical ID error."
+      "a": "A patient who stops objecting has not consented; a competent refusal is respected, documented, and reported to the clinician.",
+      "b": "A provider's order does not override a competent patient's refusal; drawing anyway can constitute assault and battery.",
+      "c": "Quietly retrying later skips the required steps; the refusal must be documented and the nurse or provider notified."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1628,23 +1628,23 @@
       },
       {
         "id": "b",
-        "text": "Prefer the surgical-side arm for better access"
+        "text": "Use the left arm if the mastectomy was more than five years ago"
       },
       {
         "id": "c",
-        "text": "Use only arteries on that side"
+        "text": "Use the left hand veins, since only the antecubital area is affected"
       },
       {
         "id": "d",
-        "text": "Ignore the history"
+        "text": "Use the left arm with a lighter tourniquet to protect the lymph nodes"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Same-side draws risk lymphedema/infection concerns; choose alternate site per policy.",
     "distractorExplanations": {
-      "b": "Same side is usually avoided.",
-      "c": "Arterial puncture is not the default alternative.",
-      "d": "History matters."
+      "b": "Lymphedema risk from node removal is lifelong; time since surgery does not lift the same-side restriction without approval.",
+      "c": "The whole same-side arm, including hand veins, is affected by impaired lymphatic drainage, not just the antecubital area.",
+      "d": "A lighter tourniquet does not remove the lymphedema and infection risk; the same-side arm is avoided unless a physician approves."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only one lavender tube is ever drawn in adults"
+        "text": "Tubes are underfilled, causing improper additive ratios"
       },
       {
         "id": "b",
-        "text": "Excessive cumulative blood volumes are drawn, especially in infants/critically ill"
+        "text": "Excessive cumulative blood volumes are drawn"
       },
       {
         "id": "c",
-        "text": "Patients drink water"
+        "text": "Tourniquets stay on longer than one minute"
       },
       {
         "id": "d",
-        "text": "Tourniquets are used for 30 seconds"
+        "text": "Small-gauge needles hemolyze red cells in the vein"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Frequent large draws can cause anemia; pediatric volumes are carefully limited.",
+    "explanation": "Frequent large draws can cause anemia; pediatric volumes are carefully limited. Infants and critically ill patients are most at risk.",
     "distractorExplanations": {
-      "a": "Single adult tubes rarely cause anemia alone.",
-      "c": "Water intake is good.",
-      "d": "Brief tourniquet is standard."
+      "a": "Underfilled tubes distort additive ratios and test results but reduce, not increase, the blood removed from the patient.",
+      "c": "Prolonged tourniquet time causes hemoconcentration in the specimen; it does not remove blood volume from the patient.",
+      "d": "Hemolysis from small needles occurs in the specimen, not the circulation, and is a quality problem rather than a cause of anemia."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Say nothing and grab the arm suddenly"
+        "text": "Tell the patient it won't hurt at all so they stay relaxed"
       },
       {
         "id": "b",
-        "text": "Promise there will be absolutely no discomfort ever"
+        "text": "Explain what each test will diagnose so the patient understands"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Tell them the test diagnoses cancer for sure"
+        "text": "Skip the explanation if the order is signed, to save the patient time"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Brief honest explanation builds trust; do not guarantee zero pain or over-interpret tests.",
     "distractorExplanations": {
-      "a": "Surprise sticks increase anxiety/movement.",
-      "b": "Some discomfort is possible.",
-      "d": "Phlebotomists do not diagnose."
+      "a": "Promising no pain is dishonest and erodes trust when the stick hurts; explain briefly that there may be a quick pinch.",
+      "b": "Interpreting tests and their diagnostic meaning is the provider's role; the phlebotomist explains the procedure itself.",
+      "d": "A signed order does not replace the patient's informed cooperation; a brief explanation is still needed before every draw."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Probe deeper blindly while the tourniquet stays tight"
+        "text": "Redirect the needle deeper to find the vein, then apply pressure"
       },
       {
         "id": "b",
-        "text": "Ignore growing swelling"
+        "text": "Loosen the tourniquet and keep drawing to finish the tubes"
       },
       {
         "id": "c",
-        "text": "Apply heat immediately and continue drawing"
+        "text": "Remove the needle first, then release tourniquet and apply pressure"
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Expanding hematoma means stop and hold pressure to limit bleeding into tissue.",
     "distractorExplanations": {
-      "a": "Blind probing worsens injury.",
-      "b": "Ignoring increases bruise/nerve risk.",
-      "c": "Heat early can worsen bleeding."
+      "a": "Probing deeper while a hematoma forms worsens bleeding and risks nerve or artery injury; the draw should be stopped.",
+      "b": "Continuing the draw lets blood keep leaking into tissue; the needle should be removed and pressure applied.",
+      "c": "Removing the needle before releasing the tourniquet forces blood out of the puncture into tissue; release the tourniquet first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1760,23 +1760,23 @@
       },
       {
         "id": "b",
-        "text": "Only at the start of the shift"
+        "text": "Before each patient contact, since gloves cover the hands afterward"
       },
       {
         "id": "c",
-        "text": "Only if visible dirt is present"
+        "text": "After glove removal, since gloves protect the hands before contact"
       },
       {
         "id": "d",
-        "text": "Never if gloves were worn"
+        "text": "Before and after each patient, unless gloves were worn throughout"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Hand hygiene is required even with glove use because gloves are not perfect.",
     "distractorExplanations": {
-      "b": "Once per shift is inadequate.",
-      "c": "Invisible microbes matter.",
-      "d": "Gloves do not replace hand hygiene."
+      "b": "Gloves can have tiny defects and hands get contaminated during removal, so hand hygiene is also required after gloves come off.",
+      "c": "Hand hygiene before patient contact protects the patient from organisms on the worker's hands; gloves do not replace it.",
+      "d": "Wearing gloves does not remove the need for hand hygiene; it is performed after glove removal as well."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Continue working without reporting"
+        "text": "Squeeze the wound to bleed it, then report at the end of the shift"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "Suck the wound vigorously"
+        "text": "Wash with soap and water and report it only if the source patient is HIV-positive"
       },
       {
         "id": "d",
-        "text": "Apply hydrofluoric acid"
+        "text": "Apply bleach to the site and report within 72 hours of the exposure"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Prompt reporting enables timely evaluation/prophylaxis.",
     "distractorExplanations": {
-      "a": "Non-reporting endangers the worker.",
-      "c": "Sucking is ineffective/harmful.",
-      "d": "Corrosives worsen injury."
+      "a": "Squeezing is not recommended, and waiting until shift end delays post-exposure prophylaxis, which works best within hours.",
+      "c": "Every needlestick is reported regardless of known status, because hepatitis B and C and undiagnosed HIV are also risks.",
+      "d": "Caustic agents such as bleach damage tissue, and PEP should start within hours; exposures are reported immediately."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1822,11 +1822,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Any patient who ate breakfast"
+        "text": "A patient with a healed fracture of that wrist and no lymph node surgery"
       },
       {
         "id": "b",
-        "text": "Any patient under age 50 automatically"
+        "text": "A patient on anticoagulants who needs longer pressure after the draw"
       },
       {
         "id": "c",
@@ -1834,15 +1834,15 @@
       },
       {
         "id": "d",
-        "text": "Only patients with green eyes"
+        "text": "A patient who fasted overnight for a lipid panel and glucose test"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Avoid compromised lymphatic drainage arms unless cleared—reduces infection/lymphedema risk.",
     "distractorExplanations": {
-      "a": "Food intake is a fasting issue, not mastectomy side rule.",
-      "b": "Age alone is not the rule.",
-      "d": "Eye color is irrelevant."
+      "a": "A healed fracture without lymph node removal does not restrict the arm; the rule targets impaired lymphatic drainage.",
+      "b": "Anticoagulant therapy calls for longer pressure after the draw, not avoidance of an arm; it is unrelated to the mastectomy rule.",
+      "d": "Fasting status affects test preparation, not site selection; it has nothing to do with lymphedema risk after node dissection."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The center of the heel pad deeply"
+        "text": "The center of the plantar heel pad, where tissue is thickest"
       },
       {
         "id": "b",
-        "text": "The fingers of a newborn exclusively for all tests"
+        "text": "The posterior curvature of the heel, away from the arch"
       },
       {
         "id": "c",
-        "text": "The antecubital fossa with a 15G needle routinely"
+        "text": "The fleshy pad of the great toe on the plantar surface"
       },
       {
         "id": "d",
-        "text": "The lateral or medial plantar surface of the heel—avoid the center/back of the heel"
+        "text": "The lateral or medial plantar surface of the heel"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Approved heel regions reduce calcaneal injury risk; deep central punctures can injure bone.",
+    "explanation": "Approved heel regions reduce calcaneal injury risk; deep central punctures can injure bone. Avoid the center and back of the heel.",
     "distractorExplanations": {
-      "a": "Central heel risks osteomyelitis/calcaneus injury.",
-      "b": "Fingers may be used later but heel is common in neonates.",
-      "c": "Large AC needles are inappropriate for infants."
+      "a": "The central heel lies close to the calcaneus; puncturing there risks osteomyelitis, so CLSI limits sticks to the medial or lateral edges.",
+      "b": "The posterior curvature has little tissue over the calcaneus; puncture there can reach bone and is prohibited.",
+      "c": "Toes are not standard infant puncture sites; the medial or lateral plantar heel is used for newborn capillary collection."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Airborne precautions with appropriate respirator and room controls per facility policy"
+        "text": "Airborne precautions with appropriate respirator and room controls"
       },
       {
         "id": "b",
-        "text": "No PPE if the patient is coughing into a tissue sometimes"
+        "text": "Droplet precautions with a surgical mask within 3 feet of the patient"
       },
       {
         "id": "c",
-        "text": "Contact gown only without respiratory protection"
+        "text": "Contact precautions with gown and gloves for each room entry"
       },
       {
         "id": "d",
-        "text": "Shoe covers as the sole control"
+        "text": "Standard precautions only, with a surgical mask placed on the patient"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "TB requires airborne precautions beyond Standard Precautions alone.",
+    "explanation": "TB requires airborne precautions beyond Standard Precautions alone. Follow facility policy for N95 fit testing and negative-pressure rooms.",
     "distractorExplanations": {
-      "b": "Tissues alone are insufficient for staff protection.",
-      "c": "Gowns do not replace respirators for airborne TB.",
-      "d": "Shoe covers are not the key control."
+      "b": "TB spreads by airborne droplet nuclei, not large droplets; staff need a fit-tested N95 respirator, not a surgical mask.",
+      "c": "Gown and gloves are contact precautions for organisms like MRSA; TB requires airborne precautions with respiratory protection.",
+      "d": "Masking the patient helps during transport, but staff entering the room still need airborne precautions and an N95 respirator."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hold the patient down to obtain the sample"
+        "text": "Ask a coworker to help hold the arm still and complete the draw"
       },
       {
         "id": "b",
-        "text": "Respect the refusal, notify the appropriate clinician/nurse, and document per policy"
+        "text": "Respect the refusal, notify the appropriate clinician/nurse, and document"
       },
       {
         "id": "c",
-        "text": "Draw anyway because the doctor ordered it"
+        "text": "Draw anyway, because a physician's order overrides the patient's refusal"
       },
       {
         "id": "d",
-        "text": "Fabricate results"
+        "text": "Document the refusal and leave without telling the nurse or provider"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Competent refusal must be honored; coercion is assault and unethical.",
     "distractorExplanations": {
-      "a": "Forcing care is illegal/unethical.",
-      "c": "Orders do not override refusal capacity rules.",
-      "d": "Falsifying results is fraud."
+      "a": "Restraining a competent patient who refuses is assault; holding the arm is only for cooperative patients who request help.",
+      "c": "A physician's order does not override a competent patient's right to refuse; the refusal must be respected and reported.",
+      "d": "Documentation alone is not enough; the nurse or ordering provider must be told so care decisions can be made."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Passing uncapped needles hand-to-hand routinely"
+        "text": "Recapping needles carefully with two hands before carrying them to the container"
       },
       {
         "id": "b",
-        "text": "Leaving sharps on the bed for housekeeping"
+        "text": "Wearing double gloves so a needle cannot penetrate to the skin"
       },
       {
         "id": "c",
-        "text": "Using engineered sharps safety devices and disposing immediately in sharps containers without two-handed recapping"
+        "text": "Using engineered sharps safety devices and disposing immediately in sharps containers"
       },
       {
         "id": "d",
-        "text": "Bending needles before disposal"
+        "text": "Using sharps containers and replacing them once filled to the very top"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Safety devices + immediate disposal are core OSHA-aligned practices.",
+    "explanation": "Safety devices + immediate disposal are core OSHA-aligned practices. Two-handed recapping is prohibited.",
     "distractorExplanations": {
-      "a": "Hand-to-hand passing causes injuries.",
-      "b": "Loose sharps injure others.",
-      "d": "Bending is prohibited."
+      "a": "Two-handed recapping is a leading cause of needlesticks and is prohibited by OSHA; activate the safety device and discard immediately.",
+      "b": "Gloves, even doubled, do not stop a needle from penetrating; they reduce splash exposure but do not prevent sticks.",
+      "d": "Overfilled containers cause sticks when sharps protrude; containers are replaced at the fill line, about three-quarters full."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"

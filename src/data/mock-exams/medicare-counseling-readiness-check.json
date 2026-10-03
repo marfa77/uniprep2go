@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Inpatient hospital stays and skilled nursing facility care (limited)"
+        "text": "Inpatient hospital stays and skilled nursing facility care"
       },
       {
         "id": "b",
-        "text": "Retail outpatient prescriptions"
+        "text": "Doctor visits and outpatient services received in a hospital"
       },
       {
         "id": "c",
-        "text": "Routine dental cleanings"
+        "text": "Long-term custodial care in a nursing home after a hospital stay"
       },
       {
         "id": "d",
-        "text": "Auto insurance premiums"
+        "text": "Outpatient prescription drugs dispensed at retail pharmacies"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Part A is hospital insurance covering inpatient hospital, SNF, hospice, some home health. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "b": "Part D covers most retail drugs.",
-      "c": "Dental generally not covered.",
-      "d": "Unrelated."
+      "b": "Physician visits and hospital outpatient services are Part B, even inside a hospital building; Part A covers inpatient care.",
+      "c": "Medicare does not cover custodial care; Part A covers only limited skilled nursing facility care after a qualifying three-day inpatient stay.",
+      "d": "Retail outpatient prescriptions are covered by Part D plans, not by Part A hospital insurance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Long-term custodial nursing home care"
+        "text": "Long-term custodial care in a nursing home or assisted living facility"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Hearing aids in all cases fully"
+        "text": "Routine hearing exams and hearing aids under Original Medicare"
       },
       {
         "id": "d",
-        "text": "Veterinary services"
+        "text": "Inpatient hospital stays and skilled nursing facility care"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Part B is medical insurance for outpatient professional services and equipment. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "a": "Custodial care not covered.",
-      "c": "Hearing aids limited coverage historically.",
-      "d": "Human health program."
+      "a": "No part of Medicare covers custodial care; it is paid privately, by long-term care insurance, or by Medicaid for those who qualify.",
+      "c": "Original Medicare does not cover routine hearing exams or hearing aids; some Medicare Advantage plans offer them as an extra benefit.",
+      "d": "Inpatient hospital and skilled nursing facility care are Part A benefits; Part B is the outpatient medical insurance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Inpatient surgery room"
+        "text": "Drugs given during an inpatient hospital stay"
       },
       {
         "id": "b",
-        "text": "Medigap premiums automatically"
+        "text": "Medigap premiums and Original Medicare cost-sharing"
       },
       {
         "id": "c",
-        "text": "Part A deductibles"
+        "text": "Drugs a doctor administers by injection or infusion in the office"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Part D provides drug coverage via stand-alone PDP or MA-PD plans. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "a": "Part A/B scope.",
-      "b": "Medigap separate product.",
-      "c": "Deductibles plan-specific."
+      "a": "Drugs administered during a covered inpatient stay are part of the Part A hospital payment, not billed to a Part D plan.",
+      "b": "Part D plans pay only for covered outpatient drugs; Medigap premiums and Part A/B cost-sharing are outside Part D.",
+      "c": "Physician-administered injectables and infusions in the office are generally covered under Part B, not Part D."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Alternative way to receive Part A and B benefits through approved private plans"
+        "text": "Alternative way to receive Part A and B benefits through private plans"
       },
       {
         "id": "b",
-        "text": "Replacement of all Medicare rights permanently by law"
+        "text": "A supplement that pays the cost-sharing left over by Original Medicare"
       },
       {
         "id": "c",
-        "text": "Only for under age 65 disabled never"
+        "text": "A government-run plan that replaces Part D drug coverage alone"
       },
       {
         "id": "d",
-        "text": "Identical to Medigap"
+        "text": "A plan open only to people under 65 who qualify through disability"
       }
     ],
     "correctOptionId": "a",
     "explanation": "MA plans must cover Part A/B benefits, often with Part D and extra benefits. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "b": "Beneficiary retains Medicare rights/appeals pathways.",
-      "c": "Disabled under 65 may enroll.",
-      "d": "Medigap supplements Original Medicare, not MA same way."
+      "b": "That describes Medigap, which works alongside Original Medicare; Medicare Advantage replaces how A and B benefits are delivered.",
+      "c": "Medicare Advantage plans are run by Medicare-approved private companies and must cover all Part A and Part B benefits, often with drug coverage.",
+      "d": "Anyone with Part A and Part B who lives in the plan’s service area can join, including people 65+ and, since 2021, people with ESRD."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Include Part D drug coverage in all plans since 2006"
+        "text": "Include outpatient drug coverage, so no separate Part D plan is needed"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "Are sold by Medicare directly"
+        "text": "Are sold by Medicare and work alongside a Medicare Advantage plan"
       },
       {
         "id": "d",
-        "text": "Replace Part A hospital entirely"
+        "text": "Replace Original Medicare, with the insurer paying claims instead of Medicare"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Medigap fills gaps like coinsurance/deductibles; separate Part D needed. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "a": "Part D separate since 2006.",
-      "c": "Private insurers sell Medigap.",
-      "d": "Supplements not replaces Part A."
+      "a": "Medigap policies sold since January 1, 2006 cannot include drug coverage, so a separate Part D plan is needed for prescriptions.",
+      "c": "Private insurers sell Medigap, and it cannot be sold to someone enrolled in Medicare Advantage because it only pays Original Medicare cost-sharing.",
+      "d": "That describes Medicare Advantage; with Medigap, Original Medicare pays first and the policy pays its share of the remaining cost-sharing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Any discount card without actuarial value"
+        "text": "Any drug discount program that lowers the beneficiary’s pharmacy prices"
       },
       {
         "id": "b",
-        "text": "No drug coverage ever creditable"
+        "text": "Coverage with benefits identical in design to a standard Part D plan"
       },
       {
         "id": "c",
-        "text": "Only VA coverage never creditable"
+        "text": "Coverage that pays at least 50% of each prescription the beneficiary fills"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Employer/plan must certify creditable coverage to avoid Part D late penalty. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "a": "Must meet actuarial standard.",
-      "b": "Employer coverage may be creditable.",
-      "c": "VA may be creditable in some cases."
+      "a": "Discount cards are not insurance and have no actuarial value; creditable coverage must be expected to pay at least as much as standard Part D.",
+      "b": "Creditable status is an actuarial-value test; the plan’s deductible and copay design can differ from Part D as long as the expected value is equal or greater.",
+      "c": "There is no fixed coinsurance threshold; creditable coverage is judged by expected value compared with standard Part D."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -337,11 +337,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Medigap Plan F sales"
+        "text": "Medigap premiums and Part A deductibles for limited-income beneficiaries"
       },
       {
         "id": "b",
-        "text": "Long-term care insurance"
+        "text": "Part B premiums and coinsurance paid through a state Medicare Savings Program"
       },
       {
         "id": "c",
@@ -349,15 +349,15 @@
       },
       {
         "id": "d",
-        "text": "Auto loan payments"
+        "text": "Long-term care costs for beneficiaries who have used up their savings"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Low-Income Subsidy reduces Part D costs for qualifying beneficiaries. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "a": "Medigap not LIS.",
-      "b": "LTC insurance separate.",
-      "d": "Unrelated."
+      "a": "Extra Help lowers Part D costs only; Medigap premiums are not covered, and Part A/B cost-sharing help comes from Medicare Savings Programs or Medicaid.",
+      "b": "Paying Part B premiums and cost-sharing is a Medicare Savings Program (QMB/SLMB/QI) benefit, not the Part D Low-Income Subsidy.",
+      "d": "Long-term care for people with very limited assets is a Medicaid benefit; Extra Help applies to Part D drug costs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Curative chemotherapy always covered same as active treatment without election"
+        "text": "Curative treatment for the terminal illness alongside comfort care at no cost"
       },
       {
         "id": "b",
-        "text": "Only inpatient hospital unlimited years"
+        "text": "Care for patients with a prognosis of twelve months or less, mainly in hospital"
       },
       {
         "id": "c",
-        "text": "Dental implants fully covered"
+        "text": "Custodial room and board in a nursing home for terminally ill patients"
       },
       {
         "id": "d",
-        "text": "Comfort care for terminal illness with prognosis six months or less if disease runs normal course"
+        "text": "Comfort care for terminal illness with prognosis six months or less"
       }
     ],
     "correctOptionId": "d",
     "explanation": "The Medicare hospice benefit focuses on comfort and support for a terminal illness when the prognosis is six months or less if the illness follows its normal course. The election changes coverage of treatment directed at that terminal illness, not unrelated care.",
     "distractorExplanations": {
-      "a": "Curative intent shifts with hospice election.",
-      "b": "Hospice includes home and other settings.",
-      "c": "Dental not hospice focus."
+      "a": "After electing hospice, Medicare stops paying for treatment intended to cure the terminal illness; conditions unrelated to it remain covered.",
+      "b": "Hospice eligibility requires a prognosis of six months or less, and care is usually delivered at home rather than in a hospital.",
+      "c": "The hospice benefit does not pay room and board when a patient lives in a nursing home; it pays for hospice services delivered there."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -407,23 +407,23 @@
       },
       {
         "id": "b",
-        "text": "Never applies if patient has Medigap"
+        "text": "Applies once per calendar year, like the Part B deductible"
       },
       {
         "id": "c",
-        "text": "Paid by Medicare always with no beneficiary share"
+        "text": "Applies once per lifetime, like the 60 lifetime reserve days"
       },
       {
         "id": "d",
-        "text": "Only for outpatient visits"
+        "text": "Applies per admission, even if readmitted within 60 days"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Benefit period starts when admitted and ends after 60 days without inpatient care. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "b": "Medigap may cover deductible depending on plan.",
-      "c": "Beneficiary pays deductible unless covered.",
-      "d": "Part A inpatient deductible."
+      "b": "The Part B deductible is annual, but the Part A inpatient deductible applies per benefit period and can be owed more than once a year.",
+      "c": "Lifetime reserve days are a one-time pool of 60 days; the inpatient deductible recurs with each new benefit period.",
+      "d": "A readmission within 60 days of discharge falls in the same benefit period, so no new Part A deductible is owed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "One option always best for everyone"
+        "text": "That Medicare Advantage costs less for most people, so it is the usual default"
       },
       {
         "id": "b",
-        "text": "Counselor receives commission from plan chosen"
+        "text": "Which plan the counselor would personally choose given the beneficiary’s age"
       },
       {
         "id": "c",
-        "text": "Network, cost-sharing, drug coverage, travel, and provider access differences neutrally"
+        "text": "Network, cost-sharing, drug coverage, travel, and provider access differences"
       },
       {
         "id": "d",
-        "text": "Beneficiary must decide in 5 minutes without materials"
+        "text": "That Medigap can be bought later at any time without medical underwriting"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Neutral counseling compares options using unbiased materials without sales pressure. A SHIP counselor should confirm current Medicare rules and the beneficiary’s circumstances before describing enrollment or coverage.",
     "distractorExplanations": {
-      "a": "Individualized choice.",
-      "b": "SHIP counselors do not sell or commission.",
-      "d": "Take time to decide."
+      "a": "Neutral counseling does not steer; a low premium can come with higher cost-sharing and network limits, so cost depends on the person’s use of care.",
+      "b": "SHIP counselors give unbiased comparisons tied to the beneficiary’s needs, not personal recommendations based on age.",
+      "d": "Medigap guaranteed-issue rights are limited to the open enrollment period and specific situations; in most states later applications can be underwritten."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Part D drug formulary"
+        "text": "Part D drug claims, plan payments, and the beneficiary’s copays"
       },
       {
         "id": "b",
-        "text": "Medigap commission rates"
+        "text": "The amount the beneficiary owes Medicare, payable within 30 days"
       },
       {
         "id": "c",
-        "text": "Counselor salary"
+        "text": "Medigap claims paid, remaining premium balance, and renewal dates"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "MSN is quarterly statement of Part A/B claims processed, not a bill itself usually. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "a": "Part D uses EOB from plan.",
-      "b": "Irrelevant.",
-      "c": "Irrelevant."
+      "a": "Part D claims appear on the drug plan’s Explanation of Benefits; the MSN covers Original Medicare Part A and Part B claims.",
+      "b": "The MSN is not a bill; it shows what may be owed to the provider, who bills the beneficiary separately.",
+      "c": "Medigap insurers send their own statements; the MSN reports Original Medicare claims, approved amounts, and possible beneficiary liability."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -539,23 +539,23 @@
       },
       {
         "id": "b",
-        "text": "No appeal ever for any denial"
+        "text": "Reconsideration, redetermination, ALJ hearing, and federal court"
       },
       {
         "id": "c",
-        "text": "Only social media complaint"
+        "text": "Redetermination, then binding arbitration, with no hearing available"
       },
       {
         "id": "d",
-        "text": "Single phone call final"
+        "text": "A single Medicare Appeals Council review that is final"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Medicare appeals process has defined escalating levels with time limits. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "b": "Appeals exist.",
-      "c": "Formal process required.",
-      "d": "Multiple levels available."
+      "b": "This swaps the first two levels: redetermination by the contractor comes first, then reconsideration by a Qualified Independent Contractor.",
+      "c": "Medicare has no arbitration step; the third level is a hearing before an Administrative Law Judge, followed by Council and court review.",
+      "d": "The Medicare Appeals Council is level four, after redetermination, reconsideration, and an ALJ hearing, and judicial review can follow it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -568,15 +568,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee that Medicare will pay for the service"
+        "text": "Request prior authorization from Medicare before the service is furnished"
       },
       {
         "id": "b",
-        "text": "Inform beneficiary Medicare may not pay and obtain choice to receive service with potential liability"
+        "text": "Inform beneficiary Medicare may not pay and obtain choice to receive service"
       },
       {
         "id": "c",
-        "text": "Replace the beneficiary’s right to appeal a denial"
+        "text": "Waive the beneficiary’s right to appeal if Medicare later denies the claim"
       },
       {
         "id": "d",
@@ -586,9 +586,9 @@
     "correctOptionId": "b",
     "explanation": "ABN documents informed consent when provider believes service may not be covered. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "a": "“Guarantee that Medicare will pay for the service” is incorrect because aBN documents informed consent when provider believes service may not be covered.",
-      "c": "“Replace the beneficiary’s right to appeal a denial” is incorrect because aBN documents informed consent when provider believes service may not be covered.",
-      "d": "“Authorize a provider to change the diagnosis solely to obtain payment” is incorrect because aBN documents informed consent when provider believes service may not be covered."
+      "a": "An ABN is not a prior authorization request; it notifies the beneficiary of possible non-payment and records the choice to proceed and accept liability.",
+      "c": "Signing an ABN does not waive appeal rights; the beneficiary can ask that the claim be submitted and appeal a denial.",
+      "d": "Changing a diagnosis to get paid would be false billing; the ABN shifts financial liability only after honest notice of likely non-coverage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -601,11 +601,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Public posting of all diagnoses online by counselor"
+        "text": "Approval rights over every disclosure made for treatment or payment"
       },
       {
         "id": "b",
-        "text": "Mandatory sharing of SSN with marketers"
+        "text": "Deletion of any record entry the beneficiary disagrees with"
       },
       {
         "id": "c",
@@ -613,15 +613,15 @@
       },
       {
         "id": "d",
-        "text": "No restrictions on counselor note storage ever"
+        "text": "A copy of the full record free of charge within 24 hours"
       }
     ],
     "correctOptionId": "c",
     "explanation": "HIPAA gives individuals rights involving access to protected health information, certain disclosure accountings, and complaints. A counselor must follow the privacy rules and agency safeguards that apply to the counseling program.",
     "distractorExplanations": {
-      "a": "Prohibited.",
-      "b": "Marketing restrictions apply.",
-      "d": "Safeguards required."
+      "a": "HIPAA permits disclosures for treatment, payment, and operations without authorization; individuals may request restrictions but do not approve each one.",
+      "b": "HIPAA gives a right to request amendment, not deletion, and the covered entity may deny the request with a written explanation.",
+      "d": "Covered entities have 30 days (with one 30-day extension) to provide access and may charge a reasonable, cost-based fee."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -634,15 +634,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only Part A deductible amounts"
+        "text": "A denied request for a service or payment the plan refused to cover"
       },
       {
         "id": "b",
-        "text": "Criminal prosecution"
+        "text": "A dispute over the Part B premium amount set by Social Security"
       },
       {
         "id": "c",
-        "text": "Changing Social Security number"
+        "text": "Disagreement with a drug formulary exception that was turned down"
       },
       {
         "id": "d",
@@ -652,9 +652,9 @@
     "correctOptionId": "d",
     "explanation": "Grievances address complaints; appeals address organization determinations/coverage. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "a": "Appeals can address payment too.",
-      "b": "Grievance administrative process.",
-      "c": "Unrelated."
+      "a": "A refusal to cover a service or payment is an organization determination, which is challenged through an appeal, not a grievance.",
+      "b": "Part B premium and IRMAA disputes go to Social Security, not to the Medicare Advantage plan’s grievance process.",
+      "c": "A denied exception request is a coverage determination, so the remedy is a redetermination appeal, not a grievance."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Sell beneficiary Medicare number online"
+        "text": "Act for the beneficiary in appeals after a verbal request by phone"
       },
       {
         "id": "c",
-        "text": "Enroll beneficiary in any plan without consent"
+        "text": "Make health care treatment decisions under the appeals form alone"
       },
       {
         "id": "d",
-        "text": "Override beneficiary decision with no paperwork ever"
+        "text": "Act as representative payee for the beneficiary’s Social Security checks"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Representative form allows helper/family member to assist with Medicare processes. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "b": "Illegal.",
-      "c": "Consent required.",
-      "d": "Authorization required."
+      "b": "Appointing a representative requires a signed written appointment (form CMS-1696 or equivalent), not just a verbal request.",
+      "c": "A CMS-1696 appointment covers claims and appeals; medical treatment decisions require a health care proxy or other legal authority under state law.",
+      "d": "A representative payee is appointed separately by Social Security; a Medicare appointed representative does not manage benefit payments."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always allowed unlimited"
+        "text": "Allowed to charge up to 15% above the Medicare allowed amount"
       },
       {
         "id": "b",
@@ -708,19 +708,19 @@
       },
       {
         "id": "c",
-        "text": "Required by law"
+        "text": "Allowed to bill the beneficiary any amount Medigap does not pay"
       },
       {
         "id": "d",
-        "text": "Only applies to Part D drugs at pharmacy"
+        "text": "Prohibited from collecting the 20% Part B coinsurance from the patient"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Participating providers accept assignment; balance billing limited with exceptions (non-participating, some services).",
     "distractorExplanations": {
-      "a": "Assignment limits balance billing.",
-      "c": "Not required.",
-      "d": "Part D cost-sharing different framework."
+      "a": "The 15% limiting charge applies to non-participating providers who do not accept assignment, not to participating providers.",
+      "c": "Participating providers accept assignment, so the beneficiary owes only the Medicare deductible and coinsurance, not any remaining charge.",
+      "d": "Participating providers do collect the Part B deductible and 20% coinsurance; what they cannot do is bill above the approved amount."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -733,11 +733,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate eviction without notice"
+        "text": "An appeal to the hospital’s own billing office within 30 days of discharge"
       },
       {
         "id": "b",
-        "text": "No right to receive medical record copy"
+        "text": "Staying in the hospital free for 30 days while any appeal is pending"
       },
       {
         "id": "c",
@@ -745,15 +745,15 @@
       },
       {
         "id": "d",
-        "text": "Forbidden from calling SHIP counselor"
+        "text": "A written discharge notice only if the stay lasted longer than 30 days"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Important Message from Medicare and Detailed Notice of Discharge support appeal rights. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "a": "Notice required.",
-      "b": "Record access right exists.",
-      "d": "Counselor access allowed."
+      "a": "An expedited discharge appeal goes to the Beneficiary and Family Centered Care QIO, requested no later than the planned day of discharge.",
+      "b": "Liability protection applies only while a timely QIO review is pending, which typically takes a day or two, not a fixed 30 days.",
+      "d": "The Important Message from Medicare must be given to every Medicare inpatient within two days of admission and again before discharge."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -766,15 +766,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Post number on social media for convenience"
+        "text": "Share the number with any caller who already knows your name and address"
       },
       {
         "id": "b",
-        "text": "Give to telemarketer promising free brace"
+        "text": "Give the number to callers offering free equipment if the doctor’s name is correct"
       },
       {
         "id": "c",
-        "text": "Share with stranger at door for 'verification'"
+        "text": "Share the number with anyone who says they are calling from Medicare"
       },
       {
         "id": "d",
@@ -784,9 +784,9 @@
     "correctOptionId": "d",
     "explanation": "Medicare identity theft common; guard number and review MSN for fraud. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "a": "Identity theft risk.",
-      "b": "Common scam.",
-      "c": "Scam tactic."
+      "a": "Scammers often already hold personal details; knowing a name and address does not prove a caller is a legitimate provider or plan.",
+      "b": "Equipment scams use real doctors’ names harvested from records; a correct doctor name does not make an unsolicited offer legitimate.",
+      "c": "Medicare does not call to ask for a Medicare number unless the beneficiary called first; caller ID and claims can be faked."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -799,27 +799,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Meaningful language access such as interpreters and translated materials when available"
+        "text": "Meaningful language access such as interpreters and translated materials"
       },
       {
         "id": "b",
-        "text": "English-only information without assistance always acceptable federally"
+        "text": "English materials, with a family member interpreting as the default"
       },
       {
         "id": "c",
-        "text": "Denied counseling"
+        "text": "Counseling postponed until a bilingual counselor happens to be available"
       },
       {
         "id": "d",
-        "text": "Higher Medicare premiums as penalty"
+        "text": "Translated materials only if the beneficiary pays the translation cost"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Title VI and CMS guidance support language services for meaningful access. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "b": "Language access required reasonably.",
-      "c": "Cannot deny based on language.",
-      "d": "No such penalty."
+      "b": "Relying on family members as default interpreters is discouraged under Title VI and Section 1557 guidance; qualified interpreters should be offered.",
+      "c": "Delaying service because of language can deny meaningful access; telephone or video interpreter services should be used instead.",
+      "d": "Language assistance services must be provided free of charge to people with limited English proficiency."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -832,27 +832,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Advance directive automatically enrolls in Part C"
+        "text": "Advance directives are a Medicare form filed with Social Security"
       },
       {
         "id": "b",
-        "text": "Documents express care preferences; POLST/MOLST vary by state; not same as Medicare enrollment form"
+        "text": "Documents express care preferences; POLST/MOLST vary by state"
       },
       {
         "id": "c",
-        "text": "Provider must ignore"
+        "text": "A POLST replaces the health care proxy and applies in every state"
       },
       {
         "id": "d",
-        "text": "Only attorney can have preferences"
+        "text": "Medicare requires an advance directive before a plan enrollment"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Counselors distinguish advance care planning documents from Medicare plan forms. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
+    "explanation": "Counselors distinguish advance care planning documents from Medicare plan forms. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome. Advance directives are not the same as a Medicare enrollment form.",
     "distractorExplanations": {
-      "a": "Separate legal documents.",
-      "c": "Providers follow valid directives.",
-      "d": "Individuals can create directives per state law."
+      "a": "Advance directives are state-law documents kept with the person, family, and providers; they are not Medicare or Social Security forms.",
+      "c": "A POLST is a medical order for seriously ill patients that complements a proxy; its name, form, and recognition vary by state.",
+      "d": "Under the Patient Self-Determination Act providers must inform patients about directives, but having one cannot be a condition of coverage or care."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop all care immediately without notice"
+        "text": "Deliver notice after services end, since appeals can only be filed afterward"
       },
       {
         "id": "b",
-        "text": "Charge double during appeal automatically"
+        "text": "Continue services until a federal ALJ hearing decides the appeal"
       },
       {
         "id": "c",
-        "text": "Deliver standardized notice and continue services during appeal in qualifying situations"
+        "text": "Deliver standardized notice and continue services during appeal"
       },
       {
         "id": "d",
-        "text": "Ignore beneficiary request"
+        "text": "Send the request to the plan’s grievance department for a 30-day review"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Expedited appeals have short timeframes; continuation of services may apply. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
+    "explanation": "Expedited appeals have short timeframes; continuation of services may apply. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome. Continuation applies in qualifying situations when the fast-track appeal is filed on time.",
     "distractorExplanations": {
-      "a": "Notice rights exist.",
-      "b": "Not automatic double charge.",
-      "d": "Must respond to appeal."
+      "a": "The Notice of Medicare Non-Coverage must be delivered at least two days before services end so a fast-track appeal can be filed beforehand.",
+      "b": "An ALJ hearing is the third appeal level; continuation applies during the fast-track QIO review, which is decided within days.",
+      "d": "A termination-of-services appeal goes to the BFCC-QIO on a fast track; grievances handle service and quality complaints, not coverage termination."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Choice among lawful plan options"
+        "text": "Charging higher Part B premiums to higher-income beneficiaries"
       },
       {
         "id": "b",
-        "text": "Neutral educational counseling"
+        "text": "MA plans limiting enrollment to people living in the plan’s service area"
       },
       {
         "id": "c",
-        "text": "Explaining appeal deadlines factually"
+        "text": "Special Needs Plans enrolling only people with specific chronic conditions"
       },
       {
         "id": "d",
@@ -916,9 +916,9 @@
     "correctOptionId": "d",
     "explanation": "Federal civil rights laws protect beneficiaries from discrimination in healthcare programs. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "a": "Lawful choice.",
-      "b": "Permitted counseling.",
-      "c": "Factual education."
+      "a": "IRMAA is a lawful income-related premium adjustment set by statute; income is not a protected class under civil rights laws.",
+      "b": "Service-area residence is a lawful Medicare Advantage eligibility requirement, not discrimination based on a protected characteristic.",
+      "c": "Chronic-condition SNPs are designed by law to limit enrollment to qualifying conditions; that targeting is permitted, not prohibited discrimination."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Involve authorized representative/legal guardian per state law and document scope"
+        "text": "Involve authorized representative/legal guardian per state law"
       },
       {
         "id": "b",
-        "text": "Make all plan decisions alone without authority"
+        "text": "Let the adult child who brought the beneficiary make the plan choice"
       },
       {
         "id": "c",
-        "text": "Refuse all assistance permanently"
+        "text": "Decide on the plan the counselor judges best, since no one else is present"
       },
       {
         "id": "d",
-        "text": "Share PHI with unauthorized neighbor"
+        "text": "Use the health care proxy to make insurance and financial decisions"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Counseling respects legal decision-making authority and privacy rules. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
+    "explanation": "Counseling respects legal decision-making authority and privacy rules. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome. Document the scope of the representative’s authority.",
     "distractorExplanations": {
-      "b": "Needs legal authority.",
-      "c": "Assist within bounds.",
-      "d": "Unauthorized disclosure prohibited."
+      "b": "Being a relative does not by itself confer legal authority; the person needs a power of attorney, guardianship, or authority under state surrogate law.",
+      "c": "A counselor has no decision-making authority for a beneficiary; without a legal representative the counselor cannot choose for them.",
+      "d": "A health care proxy covers medical decisions; insurance and financial choices generally need a financial power of attorney or guardian."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Must recommend highest commission plan"
+        "text": "Recommends the plan with the highest star rating to every beneficiary"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Works for single MA plan exclusively as marketer"
+        "text": "May sell Medigap if the beneficiary declines Medicare Advantage options"
       },
       {
         "id": "d",
-        "text": "Hides Original Medicare option intentionally"
+        "text": "Presents only the plans with no monthly premium to save the beneficiary money"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SHIP and similar programs provide free neutral counseling without sales conflict. Counseling should explain the applicable notice, deadline, privacy safeguard, and appeal or complaint pathway without promising an outcome.",
     "distractorExplanations": {
-      "a": "Conflict of interest prohibited.",
-      "c": "SHIP not plan marketing.",
-      "d": "Must present options fairly."
+      "a": "Star ratings are one input; unbiased counseling compares plans against each person’s drugs, doctors, and costs rather than steering to one plan.",
+      "c": "SHIP counselors do not sell any insurance product, including Medigap, and receive no commissions from plans.",
+      "d": "A $0-premium plan can carry higher cost-sharing; unbiased counseling covers all relevant options, including Original Medicare with Medigap."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Beneficiary reviewing MSN for accuracy"
+        "text": "A provider billing a claim with an honest coding mistake later corrected"
       },
       {
         "id": "b",
-        "text": "Counselor using CMS-approved materials"
+        "text": "A beneficiary receiving a free preventive visit covered at 100%"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Provider documenting care appropriately"
+        "text": "A provider requiring a signed ABN before a non-covered service"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Fraud includes false claims, kickbacks, and identity theft for improper payment. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "Beneficiary review prevents fraud.",
-      "b": "Proper counseling.",
-      "d": "Appropriate practice."
+      "a": "An honest error that is corrected is an improper payment issue, not fraud, which requires knowingly false billing.",
+      "b": "Many preventive services have no cost-sharing under Part B, so a $0 preventive visit is a normal covered benefit, not a scheme.",
+      "d": "Obtaining an ABN before a likely non-covered service is the required, lawful practice, not a fraud scheme."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Give the caller the Medicare number to verify eligibility"
+        "text": "Give the caller the Medicare number only after the caller confirms the doctor’s name"
       },
       {
         "id": "b",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "Durable medical equipment telemarketing scams steal identity and bill Medicare fraudulently. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "“Give the caller the Medicare number to verify eligibility” is incorrect because durable medical equipment telemarketing scams steal identity and bill Medicare fraudulently.",
-      "b": "“Accept shipment first and ask whether it was ordered later” is incorrect because durable medical equipment telemarketing scams steal identity and bill Medicare fraudulently.",
-      "c": "“Pay a processing fee because Medicare never covers braces” is incorrect because durable medical equipment telemarketing scams steal identity and bill Medicare fraudulently."
+      "a": "Equipment scammers obtain doctors’ names easily; confirming a name does not make an unsolicited caller legitimate or the order valid.",
+      "b": "Accepting unordered equipment lets the supplier claim delivery and bill Medicare; the beneficiary should refuse it and check with the doctor.",
+      "c": "Medicare can cover medically necessary braces ordered by a doctor; a fee demanded by an unsolicited caller is a scam tactic."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1067,23 +1067,23 @@
       },
       {
         "id": "b",
-        "text": "Ignore because free supplies nice"
+        "text": "Wait for the next MSN before acting, since supplies may have been ordered by the doctor"
       },
       {
         "id": "c",
-        "text": "Encourage sharing number with more strangers"
+        "text": "Tell the beneficiary to pay for the supplies so Medicare is not billed"
       },
       {
         "id": "d",
-        "text": "Tell beneficiary fraud impossible on Medicare"
+        "text": "Report only to the local police, since Medicare does not handle fraud complaints"
       }
     ],
     "correctOptionId": "a",
     "explanation": "SMP (Senior Medicare Patrol) helps report fraud; unauthorized orders harm beneficiary and program. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "b": "Fraud harms program and beneficiary liability possible.",
-      "c": "Increases fraud.",
-      "d": "Fraud occurs frequently."
+      "b": "Waiting lets more fraudulent claims accrue; the counselor should help report now and review existing claims online or on prior MSNs.",
+      "c": "Paying the supplier does not stop misuse of a compromised number; the contact should be reported and claims reviewed.",
+      "d": "Medicare, the Senior Medicare Patrol, and the HHS OIG hotline all accept fraud reports; police alone will not stop Medicare billing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "Counselor unpaid volunteer time"
+        "text": "A billing error that overstates the units of a service on a claim"
       },
       {
         "id": "d",
-        "text": "Beneficiary paying Medigap premium to insurer"
+        "text": "A plan offering a $0 premium to attract new members during enrollment"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Anti-Kickback Statute prohibits inducements for Medicare/Medicaid referrals. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
       "a": "Compliant arrangements differ from inducements.",
-      "c": "Volunteer counseling not kickback.",
-      "d": "Premium payment lawful."
+      "c": "Overstated units are an improper or false claim issue; a kickback specifically involves remuneration to induce referrals or purchases.",
+      "d": "A CMS-approved premium design is lawful plan pricing, not remuneration paid to induce referrals of federally funded services."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1129,11 +1129,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Documents and codes accurately"
+        "text": "Bills separately for services that should be billed together as one code"
       },
       {
         "id": "b",
-        "text": "Counselor explains benefits"
+        "text": "Bills for services that were not actually provided to the patient"
       },
       {
         "id": "c",
@@ -1141,15 +1141,15 @@
       },
       {
         "id": "d",
-        "text": "Beneficiary files legitimate appeal"
+        "text": "Bills Medicare and a second payer for the same service"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Upcoding inflates reimbursement through false severity reporting. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "Proper coding lawful.",
-      "b": "Counseling not coding.",
-      "d": "Appeals lawful."
+      "a": "Splitting a bundled service into separate codes is unbundling, a related but different scheme from upcoding.",
+      "b": "Billing for services not rendered is phantom billing; upcoding involves a real service billed at a higher level than documented.",
+      "d": "Billing two payers for one service is duplicate or double billing, not upcoding to a higher-level code."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Expected primary care visit locally"
+        "text": "A claim showing a Medicare-approved amount lower than the billed amount"
       },
       {
         "id": "b",
-        "text": "Correct hospitalization beneficiary recalls"
+        "text": "Separate claims from the hospital and the doctor for one surgery"
       },
       {
         "id": "c",
-        "text": "Zero claims all year with no services received"
+        "text": "A Part B deductible charge on the first claim of the year"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "Unknown services/locations on MSN suggest stolen Medicare number use. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "Expected if received care.",
-      "b": "Consistent memory confirms.",
-      "c": "No flag if truly no services."
+      "a": "Providers routinely bill more than Medicare approves; a lower approved amount is normal pricing, not a sign of identity theft.",
+      "b": "Facility and professional services are billed separately, so two claims for one surgery are expected rather than suspicious.",
+      "c": "The annual Part B deductible is normally applied to the first claims of the year, so this charge is expected."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1199,23 +1199,23 @@
       },
       {
         "id": "b",
-        "text": "Random email from unknown sender"
+        "text": "The Social Security Administration’s retirement benefits office"
       },
       {
         "id": "c",
-        "text": "Social media influencer"
+        "text": "The provider’s office manager, who forwards it to Medicare"
       },
       {
         "id": "d",
-        "text": "Never report; keep secret always best"
+        "text": "The state Medicaid agency, since Medicare has no fraud hotline"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Multiple official channels investigate fraud; SMP provides local assistance. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "b": "Use official channels.",
-      "c": "Not official.",
-      "d": "Reporting protects beneficiary/program."
+      "b": "Social Security handles enrollment and premiums; Medicare fraud is reported to 1-800-MEDICARE, the SMP, the OIG hotline, or the plan.",
+      "c": "Reporting to the suspected provider alerts the subject and is not an official channel; reports go to Medicare, SMP, or OIG.",
+      "d": "Medicare accepts fraud reports through 1-800-MEDICARE and the HHS OIG hotline; state Medicaid fraud units handle Medicaid matters."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1228,27 +1228,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Scheduled appointment after beneficiary request"
+        "text": "Calling a beneficiary back after the beneficiary requested information"
       },
       {
         "id": "b",
-        "text": "Door-to-door unsolicited contact prohibited in many MA/Part D marketing rules"
+        "text": "Door-to-door unsolicited contact prohibited in MA/Part D marketing rules"
       },
       {
         "id": "c",
-        "text": "Providing required plan materials at requested meeting"
+        "text": "Hosting an educational event with neutral CMS content and no enrollment forms"
       },
       {
         "id": "d",
-        "text": "Compliant educational event with neutral CMS content"
+        "text": "Offering a promotional item of nominal value, worth under $15, at an event"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CMS marketing rules restrict unsolicited door-to-door and certain incentives. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "Permitted with consent.",
-      "c": "Required disclosures.",
-      "d": "Educational events allowed if compliant."
+      "a": "Returning a call the beneficiary requested is permitted contact; the prohibition covers unsolicited door-to-door and similar outreach.",
+      "c": "Educational events are allowed when they stay neutral and do not collect enrollment forms or sales information.",
+      "d": "CMS allows promotional items of nominal value (currently up to $15 retail) offered to everyone regardless of enrollment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1261,11 +1261,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Sign to be polite always accepting liability"
+        "text": "Sign the receipt, then return the device to stop any Medicare charge"
       },
       {
         "id": "b",
-        "text": "Give Medicare card copy as tip"
+        "text": "Accept it if the box lists the beneficiary’s own doctor as prescriber"
       },
       {
         "id": "c",
@@ -1273,15 +1273,15 @@
       },
       {
         "id": "d",
-        "text": "Install device without doctor order always covered"
+        "text": "Sign only after checking that the Medicare number on the label is correct"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Unsolicited DME is common fraud; acceptance may imply consent to bill. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "Signature may be used fraudulently.",
-      "b": "Card misuse.",
-      "d": "Medical necessity required."
+      "a": "A signed delivery receipt can be used as proof of delivery to bill Medicare; returning the box later does not stop a fraudulent claim.",
+      "b": "Fraudulent suppliers put real doctors’ names on orders; the beneficiary should confirm with the doctor before accepting anything.",
+      "d": "A correct number means the supplier already has it; signing confirms delivery for billing instead of protecting the beneficiary."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Gets bonus payments"
+        "text": "Can still bill Medicare Advantage plans but not Original Medicare"
       },
       {
         "id": "b",
-        "text": "Only excluded from dental"
+        "text": "Is barred from Medicaid in one state but may still bill Medicare"
       },
       {
         "id": "c",
-        "text": "List optional for counselors to ignore"
+        "text": "Can keep treating existing Medicare patients for up to two years"
       },
       {
         "id": "d",
-        "text": "Cannot participate in federal healthcare programs; billing excluded provider prohibited"
+        "text": "Cannot participate in federal healthcare programs"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "LEIE providers/entities cannot furnish services paid by Medicare/Medicaid. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
+    "explanation": "LEIE providers/entities cannot furnish services paid by Medicare/Medicaid. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels. Billing federal programs for an excluded provider’s services is prohibited.",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "b": "Broad federal exclusion.",
-      "c": "Counselors should warn beneficiaries."
+      "a": "OIG exclusion covers every federal health care program, including Medicare Advantage plans and Medicaid, not just Original Medicare.",
+      "b": "That describes a state Medicaid termination; an OIG exclusion is federal and bars Medicare, Medicaid, and other federal programs.",
+      "c": "There is no grace period; federal programs will not pay for items or services furnished by an excluded provider from the effective date."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Enter Medicare number and bank info on link"
+        "text": "Click the link but log in only if the page shows the Medicare logo"
       },
       {
         "id": "c",
-        "text": "Forward password to sender"
+        "text": "Reply to the email asking the sender to confirm it is really Medicare"
       },
       {
         "id": "d",
-        "text": "Pay bitcoin to unlock account"
+        "text": "Call the phone number listed in the email to verify the account"
       }
     ],
     "correctOptionId": "a",
     "explanation": "CMS does not threaten loss via email links; phishing steals identity. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "b": "Phishing tactic.",
-      "c": "Never share passwords.",
-      "d": "Scam."
+      "b": "Phishing pages copy official logos; a familiar logo does not verify the site, so the link should not be used at all.",
+      "c": "Replying confirms an active address to scammers; verification should go through the number on the Medicare card or Medicare.gov.",
+      "d": "A number inside a phishing email reaches the scammer; use 1-800-MEDICARE or the number on the card instead."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Accuse provider publicly without evidence"
+        "text": "Contact the provider directly to demand an explanation of the charges"
       },
       {
         "id": "b",
-        "text": "Record facts objectively and refer to SMP without investigating criminally themselves"
+        "text": "Record facts objectively and refer to SMP without investigating"
       },
       {
         "id": "c",
-        "text": "Share beneficiary gossip widely"
+        "text": "Wait until the beneficiary has three suspicious claims before referring"
       },
       {
         "id": "d",
-        "text": "Destroy MSN evidence"
+        "text": "Collect the provider’s records to build the case before any referral"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Counselors support reporting with documentation; law enforcement investigates. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "Avoid defamation; use official channels.",
-      "c": "Privacy required.",
-      "d": "Preserve evidence."
+      "a": "Confronting the provider can tip off a suspected fraudster and is outside the counselor’s role; the facts are referred to SMP.",
+      "c": "There is no minimum number of suspicious claims; one questionable claim is enough to document and refer to SMP.",
+      "d": "Gathering evidence from the provider is investigation, which belongs to SMP, the OIG, and law enforcement rather than the counselor."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Lawful coordination by ethical provider"
+        "text": "Medicaid paying the Medicare cost-sharing for a QMB enrollee"
       },
       {
         "id": "b",
-        "text": "Counselor explaining QMB benefits"
+        "text": "Medicare paying first and Medicaid paying second on one claim"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Beneficiary using MSP help correctly"
+        "text": "A provider declining to bill a QMB enrollee for coinsurance"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Double billing across programs is fraud; proper billing follows COB rules. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "a": "Proper coordination lawful.",
-      "b": "Education not fraud.",
-      "d": "Assistance appropriate."
+      "a": "For Qualified Medicare Beneficiaries, Medicaid lawfully covers Medicare premiums and cost-sharing; that is proper coordination.",
+      "b": "For dual eligibles Medicare is primary and Medicaid is payer of last resort, so this sequence is normal coordination of benefits.",
+      "d": "Federal law prohibits billing QMB enrollees for Medicare cost-sharing, so declining to bill is required, not fraudulent."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Disputing charges, changing Medicare number if compromised, and plan/provider investigation"
+        "text": "Disputing charges and changing Medicare number if compromised"
       },
       {
         "id": "b",
-        "text": "Automatic full cash refund from counselor personally"
+        "text": "A refund from the SMP program for any fraudulent charges paid"
       },
       {
         "id": "c",
-        "text": "Ignoring unauthorized bills"
+        "text": "Canceling Medicare enrollment and re-enrolling under a new SSN"
       },
       {
         "id": "d",
-        "text": "Paying fraudulent charges to avoid trouble"
+        "text": "Paying the charges now and requesting reimbursement from Medicare"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Beneficiary should report, dispute, and protect identity; SMP/Medicare guide steps. The safe response is to protect the Medicare number, preserve records, review claims, and use official reporting channels.",
     "distractorExplanations": {
-      "b": "Counselor not liable for fraud restitution personally.",
-      "c": "Dispute required.",
-      "d": "Paying validates fraud."
+      "b": "The Senior Medicare Patrol helps beneficiaries report and resolve fraud but does not pay restitution for charges.",
+      "c": "CMS can issue a new Medicare Beneficiary Identifier; enrollment is not cancelled and the Social Security number does not change.",
+      "d": "Paying fraudulent charges validates them; the beneficiary should dispute the charges and report them instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1525,11 +1525,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Interrupting beneficiary constantly"
+        "text": "Closed yes/no questions to quickly narrow the beneficiary’s options"
       },
       {
         "id": "b",
-        "text": "Telling beneficiary they are wrong about all concerns"
+        "text": "Giving expert advice first, then confirming the beneficiary agrees"
       },
       {
         "id": "c",
@@ -1537,15 +1537,15 @@
       },
       {
         "id": "d",
-        "text": "Refusing to listen to preferences"
+        "text": "Pointing out the risks of each choice until the beneficiary decides"
       }
     ],
     "correctOptionId": "c",
     "explanation": "MI supports behavior change and informed decision-making without pressure. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "Harmful to rapport.",
-      "b": "Dismissive.",
-      "d": "Preferences central."
+      "a": "Motivational interviewing relies on open questions that invite the person to explain priorities; closed questions limit that exploration.",
+      "b": "Leading with advice is the “righting reflex” that MI avoids; it elicits the person’s own reasons before offering information.",
+      "d": "Pressing risks to push a decision is persuasion, which tends to raise resistance; MI uses reflective listening and summaries instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1558,15 +1558,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Dump all 100 pages at once without pause"
+        "text": "Cover every plan option in one session so nothing is left unexplained"
       },
       {
         "id": "b",
-        "text": "End session abruptly without resources"
+        "text": "Hand over the Medicare & You handbook and end the session"
       },
       {
         "id": "c",
-        "text": "Insist immediate decision on all programs today"
+        "text": "Recommend a single plan so the beneficiary does not have to choose"
       },
       {
         "id": "d",
@@ -1576,9 +1576,9 @@
     "correctOptionId": "d",
     "explanation": "Effective counseling paces information and confirms understanding (teach-back). SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "Cognitive overload reduces understanding.",
-      "b": "Provide written resources/referrals.",
-      "c": "Decisions can take time within enrollment windows."
+      "a": "Covering everything at once causes cognitive overload; an overwhelmed beneficiary retains more when information is prioritized and chunked.",
+      "b": "A handbook alone shifts the work to an overwhelmed person; pacing, priorities, and a follow-up plan are what help.",
+      "c": "Choosing for the beneficiary breaks neutral counseling; the decision stays theirs, made at a manageable pace."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1595,23 +1595,23 @@
       },
       {
         "id": "b",
-        "text": "Repeat counselor word-for-word only without understanding"
+        "text": "Answer yes or no when asked whether they understood the information"
       },
       {
         "id": "c",
-        "text": "Sign without reading"
+        "text": "Read the plan’s Summary of Benefits aloud back to the counselor"
       },
       {
         "id": "d",
-        "text": "Skip questions to save time"
+        "text": "Repeat the counselor’s explanation word for word"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Teach-back verifies comprehension of coverage choices and deadlines. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "b": "Understanding matters not rote repeat.",
-      "c": "Informed consent needs comprehension.",
-      "d": "Questions encouraged."
+      "b": "Asking “Do you understand?” invites a polite yes; teach-back has the person explain in their own words so gaps become visible.",
+      "c": "Reading a document aloud shows reading ability, not understanding of what the person must do next.",
+      "d": "Rote repetition can happen without comprehension; teach-back asks for the person’s own words to check real understanding."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Beneficiary wants illegal fraud tips"
+        "text": "Beneficiary needs a Social Security retirement benefit estimate"
       },
       {
         "id": "b",
@@ -1632,19 +1632,19 @@
       },
       {
         "id": "c",
-        "text": "Counselor sells Medigap and wants commission"
+        "text": "Beneficiary wants a licensed agent to recommend and sell a Medigap policy"
       },
       {
         "id": "d",
-        "text": "Beneficiary needs veterinary advice"
+        "text": "Beneficiary needs Medicaid long-term care eligibility decided"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SHIP provides local Medicare counseling consistent with federal/state funding. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "Counselors discourage fraud.",
-      "c": "Sales conflict; refer SHIP for neutral help.",
-      "d": "Out of scope."
+      "a": "Retirement benefit estimates come from Social Security; SHIP counsels on Medicare coverage choices.",
+      "c": "SHIP does not sell insurance or act as an agent; a beneficiary wanting a sales agent is not seeking SHIP’s neutral help.",
+      "d": "The state Medicaid agency decides eligibility; SHIP can explain programs and help apply but does not make that determination."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1657,11 +1657,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Include gossip about beneficiary family for entertainment"
+        "text": "Include the counselor’s opinions on the beneficiary’s family situation"
       },
       {
         "id": "b",
-        "text": "Posted on public blog"
+        "text": "Be kept on the counselor’s personal device for quick follow-up"
       },
       {
         "id": "c",
@@ -1669,15 +1669,15 @@
       },
       {
         "id": "d",
-        "text": "Omit all record of advice given"
+        "text": "Record only the plan chosen, leaving out advice and options discussed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Confidential documentation supports continuity and grant compliance with privacy safeguards. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "Unprofessional/privacy violation.",
-      "b": "HIPAA violation.",
-      "d": "Records often required for programs."
+      "a": "Personal opinions about family are not factual case information and add unnecessary sensitive detail to the record.",
+      "b": "Storing notes on a personal device moves PHI outside agency safeguards; records must be kept in approved, secure systems.",
+      "d": "Notes should capture the options and advice given so follow-up is consistent and program reporting is accurate."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1694,7 +1694,7 @@
       },
       {
         "id": "b",
-        "text": "Delay every part of Medicare automatically because employment continues"
+        "text": "Delay every part of Medicare, including premium-free Part A, because employment continues"
       },
       {
         "id": "c",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "Active employment group coverage may allow Part B delay without penalty; individualized analysis needed. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "“Drop employer coverage immediately without comparing coordination rules” is incorrect because active employment group coverage may allow Part B delay without penalty; individualized analysis needed.",
-      "b": "“Delay every part of Medicare automatically because employment continues” is incorrect because active employment group coverage may allow Part B delay without penalty; individualized analysis needed.",
-      "c": "“Assume a spouse can remain on the employer plan without checking” is incorrect because active employment group coverage may allow Part B delay without penalty; individualized analysis needed."
+      "a": "Dropping active-employment coverage first can create gaps and lose benefits; Medicare coordination and employer size must be checked.",
+      "b": "Premium-free Part A is usually worth taking at 65 (unless HSA contributions continue), and Part B delay depends on group coverage from current employment.",
+      "c": "Spouse coverage depends on the employer plan’s rules once the worker becomes Medicare-eligible and must be confirmed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1756,7 +1756,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Accept the gift privately and omit it from agency records"
+        "text": "Accept the gift if it is reported to the supervisor within 30 days"
       },
       {
         "id": "b",
@@ -1764,7 +1764,7 @@
       },
       {
         "id": "c",
-        "text": "Exchange the gift for a recommendation of a particular plan"
+        "text": "Accept it, since gifts are allowed once the counseling case is closed"
       },
       {
         "id": "d",
@@ -1774,9 +1774,9 @@
     "correctOptionId": "b",
     "explanation": "Professional boundaries maintain trust and program integrity. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "“Accept the gift privately and omit it from agency records” is incorrect because professional boundaries maintain trust and program integrity.",
-      "c": "“Exchange the gift for a recommendation of a particular plan” is incorrect because professional boundaries maintain trust and program integrity.",
-      "d": "“Ask the beneficiary to give cash instead of the offered item” is incorrect because professional boundaries maintain trust and program integrity."
+      "a": "Reporting does not make an expensive gift acceptable; agency policy typically limits counselors to declining or nominal items only.",
+      "c": "Closing a case does not remove the appearance of undue influence; agency gift rules still apply after counseling ends.",
+      "d": "Cash creates the same conflict of interest as the gift and is typically prohibited by agency policy."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stereotyping groups uniformly"
+        "text": "Learning standard facts about each culture to predict preferences"
       },
       {
         "id": "b",
-        "text": "Ignoring beneficiary values"
+        "text": "Treating every beneficiary identically to avoid any appearance of bias"
       },
       {
         "id": "c",
-        "text": "Recognizing counselor does not know all cultural contexts and asking respectful questions"
+        "text": "Recognizing counselor does not know all cultural contexts"
       },
       {
         "id": "d",
-        "text": "Assuming Medicare rules differ by ethnicity illegally"
+        "text": "Matching each beneficiary with a counselor of the same background"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Humility supports respectful individualized counseling within same Medicare rules. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
+    "explanation": "Humility supports respectful individualized counseling within same Medicare rules. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures. It also means asking respectful questions about the beneficiary’s values.",
     "distractorExplanations": {
-      "a": "Stereotyping harmful.",
-      "b": "Values matter in decisions.",
-      "d": "Rules uniform; preferences differ."
+      "a": "Predicting preferences from cultural facts is a checklist approach that can stereotype; humility means asking the individual.",
+      "b": "Identical treatment ignores individual values and context; Medicare rules stay the same, but how options are weighed differs by person.",
+      "d": "Background matching is not humility and is often impossible; any counselor can practice humility by asking respectful questions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "No written summary ever"
+        "text": "A verbal recap of next steps, since written summaries can expose PHI"
       },
       {
         "id": "b",
-        "text": "Promise guaranteed approval"
+        "text": "Assurance that Extra Help approval follows once the form is submitted"
       },
       {
         "id": "c",
-        "text": "Tell beneficiary never call SSA/Medicaid offices"
+        "text": "Instructions to wait for Social Security or Medicaid to call before taking any step"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "Action plans with contacts reduce missed deadlines for assistance programs. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "Written summary helps.",
-      "b": "Cannot guarantee approval.",
-      "c": "Official agencies process applications."
+      "a": "A written action plan with minimal necessary information can be kept securely; verbal recaps alone lead to missed deadlines.",
+      "b": "Social Security decides Extra Help eligibility; a counselor cannot assure approval and should plan for follow-up.",
+      "c": "Applicants may need to respond to requests or check status; a proactive follow-up plan reduces missed deadlines."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1867,15 +1867,15 @@
       },
       {
         "id": "d",
-        "text": "Refer the beneficiary to a plan salesperson for complaint handling"
+        "text": "Advise filing a grievance with the plan, since that is how coverage denials are reversed"
       }
     ],
     "correctOptionId": "a",
     "explanation": "De-escalation with accurate appeal information supports beneficiary empowerment. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "b": "“Interrupt and tell the beneficiary that denials cannot be appealed” is incorrect because de-escalation with accurate appeal information supports beneficiary empowerment.",
-      "c": "“Promise the denial will be reversed before reviewing the notice” is incorrect because de-escalation with accurate appeal information supports beneficiary empowerment.",
-      "d": "“Refer the beneficiary to a plan salesperson for complaint handling” is incorrect because de-escalation with accurate appeal information supports beneficiary empowerment."
+      "b": "Interrupting escalates anger, and Medicare denials can be appealed through defined levels with deadlines on the notice.",
+      "c": "A counselor cannot predict an appeal outcome; promising a reversal before reading the notice misleads the beneficiary.",
+      "d": "Grievances address service and quality complaints; a coverage denial is challenged through the appeal process."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Group must enroll all in same plan"
+        "text": "Group sessions may enroll attendees, while individual sessions only educate"
       },
       {
         "id": "b",
-        "text": "Individual sessions may ignore beneficiary questions"
+        "text": "Individual sessions follow a fixed script, while groups allow open questions"
       },
       {
         "id": "c",
-        "text": "Group educates generally; individual addresses personal eligibility and choices confidentially"
+        "text": "Group educates generally; individual addresses personal eligibility and choices"
       },
       {
         "id": "d",
-        "text": "Group allows sharing PHI of attendees publicly"
+        "text": "Group sessions may discuss attendees’ cases openly once they sign in"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Education events complement but do not replace personalized counseling. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
     "distractorExplanations": {
-      "a": "Individual choice remains.",
-      "b": "Questions central.",
-      "d": "PHI privacy in groups."
+      "a": "This reverses the roles: groups give general education, while personal eligibility and choices are handled one-on-one.",
+      "b": "Individual counseling is tailored to the person’s questions and situation; scripted content fits general group education.",
+      "d": "Signing an attendance sheet is not consent to share PHI; personal situations belong in confidential individual sessions."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave beneficiary confused intentionally"
+        "text": "Ask the beneficiary to enroll before leaving so the deadline is not missed"
       },
       {
         "id": "b",
-        "text": "Pressure signature on unknown form"
+        "text": "Close with the counselor’s recommended plan written on a card"
       },
       {
         "id": "c",
-        "text": "Delete beneficiary phone number"
+        "text": "End once questions stop, since summaries repeat what was already said"
       },
       {
         "id": "d",
-        "text": "Summarize decisions/next steps, provide written resources, and confirm contact for questions"
+        "text": "Summarize decisions/next steps and provide written resources"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Closure reinforces understanding and accessible follow-up within program rules. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures.",
+    "explanation": "Closure reinforces understanding and accessible follow-up within program rules. SHIP-style counseling is free, neutral, beneficiary-centered, and documented according to the program’s privacy procedures. Confirm how the beneficiary can reach the counselor with questions.",
     "distractorExplanations": {
-      "a": "Opposite goal.",
-      "b": "Coercion prohibited.",
-      "c": "Contact info needed for follow-up if permitted."
+      "a": "Pushing enrollment at closing is pressure; neutral counseling leaves the decision and timing to the beneficiary.",
+      "b": "A personal plan recommendation breaks neutrality; closing summarizes the person’s own decisions and next steps.",
+      "c": "A closing summary and teach-back reinforce understanding; silence does not mean the beneficiary has understood."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."

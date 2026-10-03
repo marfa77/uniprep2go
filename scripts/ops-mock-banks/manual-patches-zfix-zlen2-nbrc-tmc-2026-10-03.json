@@ -1,0 +1,696 @@
+{
+ "nbrc-tmc-readiness-check": {
+  "nbrc-tmc-readiness-check-patient-data-004": {
+   "options": {
+    "a": "Possible right mainstem intubation—pull the tube back 2 cm",
+    "b": "Possible pleural effusion—schedule a chest X-ray for the morning",
+    "c": "Possible pulmonary embolism—start a heparin drip right away",
+    "d": "Possible pneumothorax—assess and notify the team urgently"
+   },
+   "distractorExplanations": {
+    "a": "Mainstem intubation follows tube placement; a sudden unilateral loss after a central line points to an iatrogenic pneumothorax.",
+    "b": "Effusion develops gradually with dull, diminished sounds; a sudden post-line desaturation needs urgent action, not a morning film.",
+    "c": "PE usually leaves breath sounds present; unilateral absent sounds right after line placement point to pneumothorax."
+   }
+  },
+  "nbrc-tmc-readiness-check-patient-data-005": {
+   "options": {
+    "a": "Decreased compliance or increased airway resistance",
+    "b": "Increased compliance from improving lung recruitment",
+    "c": "A leak in the circuit or around the ETT cuff",
+    "d": "Auto-triggering from an overly sensitive trigger setting"
+   },
+   "distractorExplanations": {
+    "b": "Higher compliance lowers the pressure needed for the same tidal volume, so PIP would fall, not rise.",
+    "c": "Leaks lower circuit pressures and trigger low-pressure or low-volume alarms rather than a rising PIP.",
+    "d": "Auto-triggering raises the breath rate; it does not raise the peak pressure of each breath at the same tidal volume."
+   }
+  },
+  "nbrc-tmc-readiness-check-patient-data-006": {
+   "options": {
+    "a": "Airway resistance, measured as the pressure at peak inspiratory flow",
+    "b": "Alveolar pressure related to tidal volume and respiratory system compliance",
+    "c": "Intrinsic PEEP, measured with an end-expiratory hold maneuver",
+    "d": "Transpulmonary pressure, measured with an esophageal balloon catheter"
+   },
+   "distractorExplanations": {
+    "a": "Resistance is reflected by PIP minus Pplat; Pplat is taken during a no-flow inspiratory hold and reflects alveolar pressure.",
+    "c": "Auto-PEEP is measured with an expiratory hold; plateau pressure uses an end-inspiratory hold.",
+    "d": "Pplat reflects the whole respiratory system; transpulmonary pressure needs esophageal pressure to subtract the chest wall."
+   },
+   "explanation": "Inspiratory hold (zero flow) yields Pplat used for compliance and lung-protective limits. It is measured during an inspiratory hold with no flow."
+  },
+  "nbrc-tmc-readiness-check-patient-data-007": {
+   "options": {
+    "a": "A low PaO2 on the ABG that confirms the degree of CO poisoning",
+    "b": "A low SpO2 reading, because pulse oximeters detect COHb as deoxyhemoglobin",
+    "c": "Normal or high SpO2 readings that do not reflect true oxygen content",
+    "d": "Cyanosis that worsens in proportion to the measured COHb level"
+   },
+   "distractorExplanations": {
+    "a": "PaO2 reflects dissolved oxygen and is often normal in CO poisoning; it does not measure COHb.",
+    "b": "Standard two-wavelength oximeters read COHb as oxyhemoglobin, giving a falsely normal or high SpO2, not a low one.",
+    "d": "COHb does not cause cyanosis in proportion to its level; cyanosis is an unreliable sign in CO poisoning."
+   },
+   "explanation": "Standard SpO2 cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin; CO-oximetry measures COHb. Use CO-oximetry to measure COHb."
+  },
+  "nbrc-tmc-readiness-check-patient-data-008": {
+   "options": {
+    "a": "Pneumothorax, which causes dull percussion over the area",
+    "b": "Pleural effusion, which causes bronchial breath sounds",
+    "c": "Emphysema, which causes dull percussion and bronchial sounds",
+    "d": "Consolidation (e.g., pneumonia) more than pneumothorax"
+   },
+   "distractorExplanations": {
+    "a": "Pneumothorax gives hyperresonance with absent or diminished breath sounds, not dullness with bronchial sounds.",
+    "b": "Effusion is dull to percussion but breath sounds are diminished or absent over the fluid, not bronchial.",
+    "c": "Emphysema causes hyperresonance and diminished breath sounds from air trapping, not consolidation findings."
+   }
+  },
+  "nbrc-tmc-readiness-check-patient-data-009": {
+   "options": {
+    "a": "Adequate oxygenation, hemodynamic stability, and resolution of the indication for ventilation",
+    "b": "Adequate oxygenation on FiO2 0.60 with PEEP 12 cm H2O, plus a stable heart rate and blood pressure",
+    "c": "A rapid shallow breathing index above 105 with stable blood pressure",
+    "d": "Stable hemodynamics on escalating vasopressors and an improving chest X-ray"
+   },
+   "distractorExplanations": {
+    "b": "Readiness screens usually require FiO2 of about 0.40-0.50 or less and PEEP of about 5-8 cm H2O, not 0.60 and 12.",
+    "c": "An RSBI below 105 predicts weaning success; a value above 105 predicts failure.",
+    "d": "Escalating vasopressor doses mean the patient is not hemodynamically stable enough for a breathing trial."
+   },
+   "explanation": "Liberation readiness requires gas exchange and clinical stability sufficient to trial spontaneous breathing. These are screened conceptually before the trial."
+  },
+  "nbrc-tmc-readiness-check-patient-data-011": {
+   "options": {
+    "a": "Left ventricular failure with acute pulmonary edema",
+    "b": "Tension pneumothorax compressing the great veins",
+    "c": "Cor pulmonale / pulmonary hypertension complications",
+    "d": "Superior vena cava syndrome from a lung tumor"
+   },
+   "distractorExplanations": {
+    "a": "LV failure presents with crackles and orthopnea; JVD, pedal edema, and a loud P2 in COPD point to right heart strain.",
+    "b": "Tension pneumothorax is acute with absent breath sounds and tracheal shift, not chronic edema with a loud P2.",
+    "d": "SVC syndrome causes facial and arm swelling with upper-body vein distension, not pedal edema with a loud P2."
+   }
+  },
+  "nbrc-tmc-readiness-check-patient-data-012": {
+   "options": {
+    "a": "Gradual hypoventilation from oversedation, a lower set rate, or respiratory muscle fatigue",
+    "b": "Hyperventilation from pain, anxiety, or an increased set rate on the ventilator",
+    "c": "Rebreathing from an exhausted CO2 absorber or a faulty expiratory valve in the circuit",
+    "d": "Circuit disconnection, esophageal intubation, or catastrophic drop in pulmonary blood flow"
+   },
+   "distractorExplanations": {
+    "a": "Hypoventilation raises ETCO2 gradually; a sudden drop to near zero means CO2 is no longer reaching the sensor.",
+    "b": "Hyperventilation lowers ETCO2 gradually over minutes; it does not drop it abruptly to near zero.",
+    "c": "Rebreathing raises the inspired CO2 baseline above zero; it does not cause a sudden fall to near zero."
+   }
+  },
+  "nbrc-tmc-readiness-check-patient-data-014": {
+   "options": {
+    "a": "Rising VC/NIF values signal the onset of respiratory muscle weakness",
+    "b": "Declining VC/NIF can signal impending ventilatory failure",
+    "c": "These tests detect hypoxemia earlier than pulse oximetry does",
+    "d": "Intubation is indicated once VC falls below 40 mL/kg"
+   },
+   "distractorExplanations": {
+    "a": "Weakness lowers VC and makes NIF less negative; rising values mean improving strength.",
+    "c": "VC and NIF measure respiratory muscle strength; hypoxemia is a late sign in neuromuscular failure.",
+    "d": "The usual warning threshold is a VC of about 15-20 mL/kg; 40 mL/kg is still well above the danger zone."
+   }
+  },
+  "nbrc-tmc-readiness-check-patient-data-015": {
+   "options": {
+    "a": "Cherry-red skin with a falsely normal SpO2 near 100 percent",
+    "b": "Low PaO2 on the ABG that rises once supplemental O2 is added",
+    "c": "Cyanosis and chocolate-brown blood with SpO2/PaO2 discrepancies",
+    "d": "Pink skin and normal SpO2, since MetHb carries oxygen normally"
+   },
+   "distractorExplanations": {
+    "a": "That classic (if unreliable) picture belongs to CO poisoning; methemoglobinemia gives cyanosis and SpO2 near 85 percent.",
+    "b": "PaO2 is usually normal in methemoglobinemia; the defect is hemoglobin's inability to carry oxygen.",
+    "d": "Methemoglobin's ferric iron cannot bind oxygen and shifts the curve left, so content and delivery fall."
+   },
+   "explanation": "MetHb impairs oxygen delivery; methylene blue may be used clinically—diagnosis needs CO-oximetry. Confirm with CO-oximetry."
+  },
+  "nbrc-tmc-readiness-check-equipment-001": {
+   "options": {
+    "a": "Checking solution volume, connections, gas flow, and for clogs",
+    "b": "Increasing the flow to 15 L/min to force out more aerosol",
+    "c": "Adding more saline diluent until the treatment lasts 30 minutes",
+    "d": "Replacing the medication with an MDI because the drug has degraded"
+   },
+   "distractorExplanations": {
+    "b": "Running far above the specified 6-8 L/min increases aerosol loss and does not fix a clog, leak, or empty cup.",
+    "c": "Sputtering often means the cup is near empty or faulty; stretching the treatment with diluent does not fix it.",
+    "d": "Drug degradation does not make a nebulizer sputter; the cause is volume, connections, gas flow, or a clog."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-002": {
+   "options": {
+    "a": "Recalibrating the pulse oximeter, since the SpO2 reading is drifting",
+    "b": "Verification with an oxygen analyzer and troubleshooting gas supplies/blender",
+    "c": "Raising the set FiO2 dial until the patient's SpO2 returns to the ordered target range",
+    "d": "Replacing the flowmeter, since blenders cannot fail once calibrated"
+   },
+   "distractorExplanations": {
+    "a": "A pulse oximeter measures patient saturation, not delivered FiO2; the blender output needs an oxygen analyzer.",
+    "c": "Compensating with the dial masks a failing blender; delivered FiO2 must be verified with an analyzer.",
+    "d": "Blenders can fail, for example from unequal source-gas pressures; the flowmeter is not the usual culprit."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-003": {
+   "options": {
+    "a": "It is calibrated to 21% and 100% oxygen before each use as directed",
+    "b": "The battery is low, since galvanic cells need battery power to sense",
+    "c": "The fuel cell is depleted or the device is not calibrated to known gases",
+    "d": "It is used on dry gas rather than in a humidified circuit"
+   },
+   "distractorExplanations": {
+    "a": "Two-point calibration against known gases is what keeps the analyzer accurate; it is not a cause of error.",
+    "b": "Galvanic fuel cells generate their own current; batteries are needed by polarographic analyzers, not galvanic ones.",
+    "d": "Dry gas does not cause error; condensed water on the sensor membrane is what degrades accuracy."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-004": {
+   "options": {
+    "a": "Warm gas enough to replace the heated humidifier",
+    "b": "Filter bacteria from the expiratory gas",
+    "c": "Cool the gas so more water condenses in the trap",
+    "d": "Reduce condensate in the inspiratory limb"
+   },
+   "distractorExplanations": {
+    "a": "Heated wires only prevent rainout in the tubing; humidity still has to come from the humidifier chamber.",
+    "b": "Expiratory filters capture bacteria; heated wires manage gas temperature and condensation.",
+    "c": "Heated wires do the opposite: they keep the gas warm so less water condenses in the circuit."
+   },
+   "explanation": "Heated wires limit rainout while delivering warm humidified gas to artificial airways. They also keep the humidified gas at the set temperature."
+  },
+  "nbrc-tmc-readiness-check-equipment-006": {
+   "options": {
+    "a": "Circuit disconnection, a cuff leak, or a loose humidifier chamber",
+    "b": "Coughing, secretions, biting, bronchospasm, or decreased compliance",
+    "c": "Increased compliance after diuresis or successful recruitment",
+    "d": "A low set tidal volume combined with a low inspiratory flow"
+   },
+   "distractorExplanations": {
+    "a": "Disconnections and leaks drop circuit pressure and trigger low-pressure or low-volume alarms instead.",
+    "c": "Higher compliance lowers the pressure needed per breath, which makes high-pressure alarms less likely.",
+    "d": "Lower tidal volume and flow reduce peak pressure; they do not trigger a high-pressure alarm."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-007": {
+   "options": {
+    "a": "Sensor drift that requires recalibration against pulse oximetry readings",
+    "b": "Colorimetric detectors turning yellow when exposed to room air",
+    "c": "Sensor contamination, loose connections, and need for periodic zero/span checks",
+    "d": "Reading higher than PaCO2 in healthy lungs, which signals a fault"
+   },
+   "distractorExplanations": {
+    "a": "Capnographs are zeroed to room air and span-checked with known CO2 gas; pulse oximetry measures oxygenation.",
+    "b": "Colorimetric detectors stay purple in room air and turn yellow when exhaled CO2 is present.",
+    "d": "In healthy lungs ETCO2 normally runs a few mm Hg below PaCO2, so a reading above PaCO2 is not the expected norm."
+   },
+   "explanation": "ETCO2 devices require maintenance; waveform interpretation depends on valid sensors. Follow the device's instructions."
+  },
+  "nbrc-tmc-readiness-check-equipment-009": {
+   "options": {
+    "a": "Damage equipment—follow manufacturer sterilization IFUs",
+    "b": "Sterilize the device, so precleaning of soil can be skipped",
+    "c": "Be offset by doubling the exposure time for heat-sensitive plastics",
+    "d": "Only affect metal parts, since plastics tolerate any autoclave cycle"
+   },
+   "distractorExplanations": {
+    "b": "Cleaning must come before sterilization; residual soil shields microbes and damages surfaces.",
+    "c": "Longer heat or chemical exposure worsens damage to heat-sensitive materials; follow the manufacturer's IFU.",
+    "d": "Many plastics, seals, and electronics are heat- or chemical-sensitive; metal is not the only material at risk."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-010": {
+   "options": {
+    "a": "Kept in use with the flow raised to make up for the lower purity",
+    "b": "Removed from service and repaired/replaced; verify with analyzer",
+    "c": "Kept in use if the purity alarm resets after a restart",
+    "d": "Kept in use if purity stays above 70 percent at the set flow"
+   },
+   "distractorExplanations": {
+    "a": "Raising concentrator flow lowers oxygen purity further; the unit must come out of service.",
+    "c": "A reset alarm does not prove purity; output must be verified with an analyzer and the unit repaired.",
+    "d": "Concentrators should deliver roughly 87-95 percent oxygen; 70 percent is far below specification."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-011": {
+   "options": {
+    "a": "Placing it on the inspiratory side of the circuit so it measures the delivered volume",
+    "b": "Connecting it to a high-flow oxygen source to drive the vane properly",
+    "c": "Proper assembly, leak-free connections, and correct patient technique coaching",
+    "d": "Calibration against a peak flowmeter before each patient measurement"
+   },
+   "distractorExplanations": {
+    "a": "Wright-type respirometers measure exhaled volume; placement on the expiratory side is standard.",
+    "b": "The patient's exhaled gas drives the vane; no external gas source is connected.",
+    "d": "Volume accuracy is checked with a calibrated syringe, not by comparison with a peak flowmeter."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-012": {
+   "options": {
+    "a": "Using air flowmeters, which read high, so delivered flow is lower",
+    "b": "Choosing heliox mainly for its higher density to slow airflow",
+    "c": "Using a 70/30 mix for hypoxemic patients who need FiO2 above 0.50",
+    "d": "Correct gas mixture and appropriately calibrated flow devices"
+   },
+   "distractorExplanations": {
+    "a": "Oxygen and air flowmeters read low with heliox; actual flow is higher (about 1.8 times for 80/20).",
+    "b": "Helium's benefit is its low density, which reduces turbulent flow resistance, not a higher density.",
+    "c": "A 70/30 mix supplies FiO2 0.30; patients needing much more oxygen lose most of the helium benefit."
+   },
+   "explanation": "Low-density heliox alters flowmeter behavior and may affect some nebulizers/ventilators. Airway and device compatibility also matter."
+  },
+  "nbrc-tmc-readiness-check-equipment-013": {
+   "options": {
+    "a": "Charge status, vacuum capability, and canister/tubing readiness",
+    "b": "Charge status only, since vacuum level is fixed by the factory",
+    "c": "Canister size and the date of the last biomedical inspection",
+    "d": "Wall vacuum connection, since portable units run on wall suction"
+   },
+   "distractorExplanations": {
+    "b": "Vacuum capability must be checked by occluding the tubing; it is not guaranteed by the factory setting.",
+    "c": "An inspection sticker is not a function check; charge and vacuum must be verified before transport.",
+    "d": "Battery-powered units exist for transport away from wall vacuum; their own charge and pump are what matter."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-015": {
+   "options": {
+    "a": "Running controls only when patient results look clinically odd",
+    "b": "Calibrating the analyzer after each sample instead of running controls",
+    "c": "Running control materials, documenting results, and corrective action",
+    "d": "Comparing results against a pulse oximeter reading for each sample"
+   },
+   "distractorExplanations": {
+    "a": "Controls are run on a set schedule (for example each shift or day), not only when results seem odd.",
+    "b": "Calibration and quality control are separate steps; frequent calibration does not replace running controls.",
+    "d": "SpO2 correlation is a clinical check, not analyzer quality control with assayed control materials."
+   },
+   "explanation": "CLIA-style QC principles apply: controls, documentation, and troubleshooting before reporting. Corrective action is taken when controls are out of range."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-001": {
+   "options": {
+    "a": "Documented hypoxemia or clinical conditions with high risk of hypoxemia",
+    "b": "Dyspnea in any patient, even when SpO2 and PaO2 are normal on room air at rest",
+    "c": "SpO2 below 96 percent in adults with no other risk factors",
+    "d": "Hypercapnia, since oxygen lowers PaCO2 in ventilatory failure"
+   },
+   "distractorExplanations": {
+    "b": "Dyspnea alone with normal oxygenation is not an AARC indication; therapy targets documented or likely hypoxemia.",
+    "c": "Hypoxemia indications are about PaO2 below 60 mm Hg or SaO2 below 90 percent, not 96 percent.",
+    "d": "Oxygen does not lower PaCO2; hypercapnia is treated by improving ventilation."
+   }
+  },
+  "nbrc-tmc-readiness-check-therapeutics-002": {
+   "options": {
+    "a": "A precise, fixed FiO2 like an air-entrainment mask",
+    "b": "Moderate FiO2 that varies with fit and flow",
+    "c": "FiO2 near 0.90 when run at 10–15 L/min",
+    "d": "Room-air FiO2 when the flow is set at 5 L/min"
+   },
+   "distractorExplanations": {
+    "a": "A simple mask is a low-flow, variable-performance device; fixed FiO2 comes from air-entrainment devices.",
+    "c": "FiO2 that high belongs to reservoir or high-flow systems; a simple mask tops out around 0.50-0.60.",
+    "d": "5 L/min is the minimum flow to flush exhaled CO2 and gives roughly 0.35-0.40, not room air."
+   },
+   "explanation": "Simple masks provide variable moderate FiO2; NRBs approach higher FiO2 with good fit/flow. Often roughly 0.35–0.50."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-003": {
+   "options": {
+    "a": "Encourage forced maximal exhalation to measure peak expiratory flow",
+    "b": "Provide positive expiratory pressure to mobilize airway secretions",
+    "c": "Encourage sustained maximal inspiration to prevent/treat atelectasis",
+    "d": "Strengthen expiratory muscles through repeated resisted exhalations"
+   },
+   "distractorExplanations": {
+    "a": "Forced exhalation for peak flow is asthma monitoring; incentive spirometry trains sustained inspiration.",
+    "b": "Positive expiratory pressure is PEP therapy for secretion clearance, not incentive spirometry.",
+    "d": "Resisted exhalation is expiratory muscle training; incentive spirometry targets deep inspiration."
+   }
+  },
+  "nbrc-tmc-readiness-check-therapeutics-004": {
+   "options": {
+    "a": "Providing inspiratory resistance to strengthen the diaphragm and accessory muscles",
+    "b": "Providing high-frequency oscillation through a vest to loosen secretions",
+    "c": "Delivering positive pressure on inspiration like intermittent positive pressure breathing",
+    "d": "Providing expiratory resistance to stent airways and improve secretion clearance"
+   },
+   "distractorExplanations": {
+    "a": "Inspiratory resistance is inspiratory muscle training; PEP applies resistance during exhalation.",
+    "b": "Vest oscillation is high-frequency chest wall compression, a different airway clearance device.",
+    "c": "Positive pressure on inspiration describes IPPB; PEP works by resisting exhalation."
+   },
+   "explanation": "PEP/OPEP devices aid airway clearance adjunctively with coughing and hydration as appropriate. It can also aid recruitment."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-006": {
+   "options": {
+    "a": "Tidal volumes of 10–12 mL/kg actual body weight to recruit alveoli",
+    "b": "Lower tidal volumes (e.g., ~6 mL/kg PBW) and limited plateau pressures",
+    "c": "Normal PaCO2 at all times, even if plateau pressure must exceed 30",
+    "d": "Low tidal volumes with PEEP kept at zero to limit barotrauma"
+   },
+   "distractorExplanations": {
+    "a": "ARDSNet uses 4-8 mL/kg of predicted body weight; actual weight and 10-12 mL/kg overdistend the lung.",
+    "c": "Permissive hypercapnia is accepted to keep plateau pressure at or below about 30 cm H2O.",
+    "d": "PEEP is part of lung-protective ventilation to prevent derecruitment; zero PEEP worsens shunt."
+   }
+  },
+  "nbrc-tmc-readiness-check-therapeutics-007": {
+   "options": {
+    "a": "Long-acting β2-agonist bronchodilator",
+    "b": "Short-acting anticholinergic bronchodilator",
+    "c": "Short-acting β2-agonist bronchodilator",
+    "d": "Inhaled corticosteroid controller agent"
+   },
+   "distractorExplanations": {
+    "a": "Albuterol is short-acting; salmeterol and formoterol are the long-acting β2-agonists.",
+    "b": "The short-acting anticholinergic is ipratropium; albuterol acts on β2 receptors.",
+    "d": "Inhaled corticosteroids such as fluticasone are controllers; albuterol is a rescue bronchodilator."
+   }
+  },
+  "nbrc-tmc-readiness-check-therapeutics-008": {
+   "options": {
+    "a": "Thin mucus by breaking DNA strands in purulent sputum",
+    "b": "Break disulfide bonds in mucus as a mucolytic agent",
+    "c": "Reduce airway inflammation as a steroid substitute",
+    "d": "Hydrate airway mucus and facilitate clearance"
+   },
+   "distractorExplanations": {
+    "a": "Breaking extracellular DNA in purulent sputum is how dornase alfa works, not hypertonic saline.",
+    "b": "Breaking disulfide bonds is acetylcysteine's mechanism; hypertonic saline works osmotically.",
+    "c": "Hypertonic saline has no corticosteroid action and can cause bronchospasm; it hydrates the airway surface."
+   },
+   "explanation": "Hypertonic saline is an airway clearance adjunct in appropriate protocols—not systemic sodium repair via nebulizer intent. It is used in select CF care pathways."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-009": {
+   "options": {
+    "a": "Hypotension and barotrauma in susceptible patients",
+    "b": "Hypertension from increased venous return to the heart",
+    "c": "Bradycardia and pulmonary edema from lowered pleural pressure",
+    "d": "Increased cardiac output from improved oxygenation"
+   },
+   "distractorExplanations": {
+    "b": "Raised intrathoracic pressure decreases venous return, which causes hypotension rather than hypertension.",
+    "c": "Recruitment and high PEEP raise pleural pressure; the main risks are hypotension and barotrauma.",
+    "d": "High intrathoracic pressure usually lowers cardiac output by reducing preload."
+   }
+  },
+  "nbrc-tmc-readiness-check-therapeutics-010": {
+   "options": {
+    "a": "Lower plateau pressure enough to allow higher tidal volumes",
+    "b": "Improve oxygenation by redistributing perfusion/ventilation",
+    "c": "Improve secretion drainage as the primary goal of the therapy",
+    "d": "Reduce the need for sedation during mechanical ventilation"
+   },
+   "distractorExplanations": {
+    "a": "Proning is used with low tidal volumes; it is not a way to justify larger tidal volumes.",
+    "c": "Secretion drainage is a side benefit; prone positioning is used mainly to improve oxygenation.",
+    "d": "Prone positioning often requires deep sedation and sometimes paralysis, not less sedation."
+   },
+   "explanation": "Proning can improve V/Q in severe ARDS; teams manage lines, airway, and pressure points. This works in many patients."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-011": {
+   "options": {
+    "a": "Placing the nebulizer at the Y-piece with bias flow running at its highest setting",
+    "b": "Leaving the HME in place between the nebulizer and the patient",
+    "c": "Optimal nebulizer/MDI adapter placement, synchronizing when appropriate",
+    "d": "Increasing humidification to maximum, since humid gas boosts particle delivery"
+   },
+   "distractorExplanations": {
+    "a": "High bias flow washes aerosol into the expiratory limb; bias flow is reduced during nebulization.",
+    "b": "An HME traps aerosol particles; it must be removed or bypassed during in-line aerosol delivery.",
+    "d": "Humidified gas enlarges particles and lowers deposition; humidity reduces, not boosts, delivery."
+   },
+   "explanation": "Device position and ventilator interactions affect inhaled dose; follow evidence-based aerosol practices. Minimizing circuit losses per best practice also helps."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-012": {
+   "options": {
+    "a": "Cystic fibrosis with thick secretions and frequent exacerbations",
+    "b": "Lobar atelectasis caused by mucus plugging after surgery",
+    "c": "Bronchiectasis with daily sputum production over 30 mL",
+    "d": "Active hemoptysis, unstable spinal injury, or untreated pneumothorax"
+   },
+   "distractorExplanations": {
+    "a": "Cystic fibrosis with retained secretions is a core indication for chest physiotherapy, not a contraindication.",
+    "b": "Atelectasis from mucus plugging is an indication for postural drainage and percussion.",
+    "c": "Sputum production over about 25-30 mL per day is an indication for chest physiotherapy."
+   },
+   "explanation": "External maneuvers can worsen bleeding, fractures, or air leaks—screen contraindications. These are classic cautions."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-013": {
+   "options": {
+    "a": "Assist removal of retained secretions and improve ventilation/perfusion",
+    "b": "Reverse bronchospasm by relaxing airway smooth muscle directly with each treatment",
+    "c": "Prevent atelectasis by sustained maximal inspiration alone",
+    "d": "Reduce airway inflammation and mucus production over time"
+   },
+   "distractorExplanations": {
+    "b": "Relaxing airway smooth muscle is the goal of bronchodilators, not bronchial hygiene therapy.",
+    "c": "Sustained maximal inspiration is lung expansion therapy such as incentive spirometry.",
+    "d": "Reducing inflammation is the role of inhaled corticosteroids; bronchial hygiene removes secretions."
+   },
+   "explanation": "Clearance therapies target mucus plugging/retention—not structural fibrosis cure or unsafe ICP rises. This matters where secretions impair gas exchange."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-014": {
+   "options": {
+    "a": "Target SpO2 of 94–98 percent, as for other adult patients",
+    "b": "Target appropriate SpO2 goals and monitor ventilation/ABG",
+    "c": "Avoid oxygen until an ABG confirms the PaCO2 level",
+    "d": "Use a nonrebreather to keep SpO2 at 100 percent"
+   },
+   "distractorExplanations": {
+    "a": "Patients at risk of hypercapnic failure usually get a lower target of about 88-92 percent.",
+    "c": "Oxygen should not be withheld from a hypoxemic patient while waiting for an ABG.",
+    "d": "Hyperoxia in these patients can worsen hypercapnia; oxygen is titrated to a target range."
+   },
+   "explanation": "Titrate to goals (often ~88–92% in at-risk COPD per many protocols) while watching for CO2 retention/clinical decline. Monitor as clinically indicated."
+  },
+  "nbrc-tmc-readiness-check-therapeutics-015": {
+   "options": {
+    "a": "Measure airway resistance before and after bronchodilator use",
+    "b": "Strengthen inspiratory muscles before ventilator weaning",
+    "c": "Mobilize secretions as part of an airway clearance program",
+    "d": "Replace the need for patient coughing to clear secretions"
+   },
+   "distractorExplanations": {
+    "a": "Bronchodilator response is measured with pulmonary function testing, not airway clearance devices.",
+    "b": "Building inspiratory strength is inspiratory muscle training, not IPV or chest wall oscillation.",
+    "d": "These devices loosen secretions, but coughing or suctioning is still needed to remove them."
+   }
+  },
+  "nbrc-tmc-readiness-check-emergency-001": {
+   "options": {
+    "a": "Activate emergency response and begin CAB/ABCs",
+    "b": "Check a carotid pulse for a full 30 seconds",
+    "c": "Give two rescue breaths before calling for help",
+    "d": "Apply oxygen by nonrebreather and recheck in 1 minute"
+   },
+   "distractorExplanations": {
+    "b": "Pulse checks are limited to 10 seconds or less so compressions are not delayed.",
+    "c": "For an unresponsive adult, help is activated first and adult CPR follows the CAB sequence.",
+    "d": "An apneic patient needs ventilation and CPR as indicated; passive oxygen does nothing without breathing."
+   },
+   "explanation": "Basic life support priorities precede advanced diagnostics in arrest/near-arrest. Open the airway and provide ventilation or CPR as indicated."
+  },
+  "nbrc-tmc-readiness-check-emergency-002": {
+   "options": {
+    "a": "A chest X-ray to confirm before any intervention",
+    "b": "Immediate decompression per emergency protocol",
+    "c": "Increasing PEEP to re-expand the collapsed lung",
+    "d": "A 12-lead ECG to rule out cardiac tamponade"
+   },
+   "distractorExplanations": {
+    "a": "Tension pneumothorax with hypotension is a clinical diagnosis; waiting for imaging delays lifesaving decompression.",
+    "c": "Added positive pressure enlarges a tension pneumothorax and worsens hypotension.",
+    "d": "Tracheal deviation with hypotension points to tension pneumothorax; an ECG delays decompression."
+   },
+   "explanation": "Tension physiology is immediately life-threatening; decompression is the priority. Support oxygenation and ventilation."
+  },
+  "nbrc-tmc-readiness-check-emergency-003": {
+   "options": {
+    "a": "Back blows only, since thrusts injure adult patients",
+    "b": "Encouraging forceful coughing until the object clears",
+    "c": "Abdominal thrusts (Heimlich) or approved protocol",
+    "d": "A blind finger sweep followed by rescue breaths"
+   },
+   "distractorExplanations": {
+    "a": "Abdominal thrusts are the recommended adult response for severe obstruction despite injury risk.",
+    "b": "Coughing is encouraged in mild obstruction; severe signs (cannot speak or cough) need thrusts.",
+    "d": "Blind finger sweeps can push the object deeper and are not recommended."
+   },
+   "explanation": "Severe FBAO needs immediate dislodgement maneuvers per BLS guidelines. Continue until expulsion or the patient becomes unresponsive."
+  },
+  "nbrc-tmc-readiness-check-emergency-004": {
+   "options": {
+    "a": "Ventilation rate increases, washing more CO2 out of the lungs",
+    "b": "Epinephrine raises CO2 production in the tissues",
+    "c": "The ETT has moved from the esophagus into the trachea",
+    "d": "Pulmonary blood flow resumes and delivers CO2 to the lungs"
+   },
+   "distractorExplanations": {
+    "a": "Faster ventilation lowers ETCO2; the abrupt rise at ROSC reflects restored pulmonary perfusion.",
+    "b": "Epinephrine can transiently lower ETCO2; the sudden rise at ROSC comes from restored blood flow.",
+    "c": "An esophageal tube reads near zero throughout; the ROSC rise occurs with a correctly placed tube."
+   }
+  },
+  "nbrc-tmc-readiness-check-emergency-005": {
+   "options": {
+    "a": "Airway support with BVM and preparation for reintubation as needed",
+    "b": "Immediate reintubation without first oxygenating the patient",
+    "c": "High-flow nasal cannula at 60 L/min and reassess in an hour",
+    "d": "A nonrebreather mask and an ABG before any airway decision"
+   },
+   "distractorExplanations": {
+    "b": "The patient is oxygenated and ventilated with a BVM first; rushing reintubation risks hypoxemia.",
+    "c": "Inadequate breathing needs assisted ventilation; high-flow cannula does not ventilate the patient.",
+    "d": "Waiting for an ABG delays needed ventilation; inadequate breathing calls for BVM support now."
+   }
+  },
+  "nbrc-tmc-readiness-check-emergency-006": {
+   "options": {
+    "a": "Switching from sevoflurane to desflurane and continuing the case",
+    "b": "Stopping triggering agents and hyperventilating with 100% O2",
+    "c": "Reducing minute ventilation to let PaCO2 rise and stimulate breathing",
+    "d": "Giving succinylcholine to relieve the muscle rigidity quickly"
+   },
+   "distractorExplanations": {
+    "a": "All volatile anesthetics trigger malignant hyperthermia; switching agents does not remove the trigger.",
+    "c": "MH drives CO2 production up; minute ventilation is increased to clear CO2, not reduced.",
+    "d": "Succinylcholine is itself an MH trigger; dantrolene is the treatment for rigidity."
+   },
+   "explanation": "MH is a hypermetabolic emergency; anesthesia teams lead dantrolene protocols while RTs support ventilation/cooling logistics. Support dantrolene and protocol care."
+  },
+  "nbrc-tmc-readiness-check-emergency-007": {
+   "options": {
+    "a": "Increasing EPAP to 15 to keep NPPV going",
+    "b": "Switching to high-flow nasal cannula",
+    "c": "Need for intubation/mechanical ventilation",
+    "d": "Adding heliox and continuing NPPV overnight"
+   },
+   "distractorExplanations": {
+    "a": "Exhaustion on NPPV signals failure; raising settings and continuing delays needed intubation.",
+    "b": "High-flow cannula gives less ventilatory support than NPPV and cannot rescue an exhausted patient.",
+    "d": "Heliox can bridge some patients, but exhaustion means intubation now rather than continuing overnight."
+   },
+   "explanation": "Fatigue/hypercapnia despite maximal therapy indicates invasive support; vent strategies allow exhalation. Use a ventilator strategy that avoids air trapping."
+  },
+  "nbrc-tmc-readiness-check-emergency-008": {
+   "options": {
+    "a": "Positioning the bleeding side up to drain blood out of it",
+    "b": "Chest physiotherapy to clear clots from the bleeding lung",
+    "c": "Incentive spirometry to keep the bleeding lung expanded",
+    "d": "Airway protection (often bleeding side down) and oxygenation"
+   },
+   "distractorExplanations": {
+    "a": "Bleeding side up lets blood spill into the good lung; the bleeding side goes down.",
+    "b": "Percussion and drainage are contraindicated in active hemoptysis and can worsen bleeding.",
+    "c": "Lung expansion therapy is not a priority; the airway and oxygenation come first in massive hemoptysis."
+   },
+   "explanation": "Protect the airway and non-bleeding lung; control bleeding with specialist care. Then activate urgent team and bronchoscopy pathways."
+  },
+  "nbrc-tmc-readiness-check-emergency-009": {
+   "options": {
+    "a": "Stop ventilation/gases as protocol directs, remove burning tube, extinguish",
+    "b": "Increase FiO2 to 1.0 and keep ventilating through the tube",
+    "c": "Leave the tube in place and flush it with saline while continuing to ventilate with oxygen",
+    "d": "Stop the laser and continue ventilation with nitrous oxide"
+   },
+   "distractorExplanations": {
+    "b": "Oxygen feeds an airway fire; gas flow is stopped and the burning tube removed.",
+    "c": "The burning tube is removed and ventilation stopped; ventilating through it keeps feeding the fire.",
+    "d": "Nitrous oxide supports combustion as strongly as oxygen; all gas flow is stopped."
+   },
+   "explanation": "Airway fire algorithms prioritize removing the fuel/oxidizer source and protecting the patient. Then re-establish the airway and oxygenation."
+  },
+  "nbrc-tmc-readiness-check-emergency-010": {
+   "options": {
+    "a": "Increasing the set rate to shorten each breath and reduce trapping",
+    "b": "Temporarily disconnecting to allow exhalation / lowering rate and I:E adjustments",
+    "c": "Adding applied PEEP well above the measured auto-PEEP level to splint the airways open",
+    "d": "Increasing tidal volume and inspiratory time to improve CO2 removal and oxygenation"
+   },
+   "distractorExplanations": {
+    "a": "A higher rate shortens expiratory time and increases auto-PEEP; the rate is lowered instead.",
+    "c": "Applied PEEP above the intrinsic level adds to hyperinflation and worsens hypotension.",
+    "d": "Larger volumes and longer inspiration leave less time to exhale and increase air trapping."
+   },
+   "explanation": "Severe air trapping impairs venous return; allow exhalation and adjust settings. Follow protocol."
+  },
+  "nbrc-tmc-readiness-check-emergency-011": {
+   "options": {
+    "a": "Diphenhydramine IV as the first-line drug, then reassess",
+    "b": "Methylprednisolone IV to stop the reaction within minutes",
+    "c": "Epinephrine IM (per protocol) and airway/oxygen support",
+    "d": "Epinephrine IV push of 1 mg (1:1,000) as the first dose"
+   },
+   "distractorExplanations": {
+    "a": "Antihistamines are adjuncts; IM epinephrine is the first-line drug in anaphylaxis.",
+    "b": "Corticosteroids take hours to act and are not first-line; epinephrine is.",
+    "d": "A 1 mg IV bolus is cardiac-arrest dosing; first-line anaphylaxis dosing is about 0.3-0.5 mg IM."
+   },
+   "explanation": "IM epinephrine is first-line for anaphylaxis; airway support is concurrent. Activate the emergency response."
+  },
+  "nbrc-tmc-readiness-check-emergency-012": {
+   "options": {
+    "a": "Bronchospasm, treated first with a bronchodilator nebulizer",
+    "b": "Cuff leak, treated by adding air to the ETT pilot balloon",
+    "c": "Pulmonary edema from the line's fluid bolus, treated with diuretics",
+    "d": "Mainstem intubation or pneumothorax—assess, auscultate, adjust tube depth"
+   },
+   "distractorExplanations": {
+    "a": "Bronchospasm causes bilateral wheeze and high pressures, not asymmetric chest rise.",
+    "b": "A cuff leak causes audible leak and low volumes, not one-sided chest rise.",
+    "c": "Pulmonary edema gives bilateral crackles; asymmetric chest rise points to tube position or pneumothorax."
+   },
+   "explanation": "Acute asymmetry after intubation/central lines demands rapid differentiation of tube malposition vs PTX. Image or decompress as indicated."
+  },
+  "nbrc-tmc-readiness-check-emergency-013": {
+   "options": {
+    "a": "Ventilatory support if arrest/respiratory failure occurs",
+    "b": "Albuterol by nebulizer as the definitive way to remove potassium",
+    "c": "Hypoventilation to raise PaCO2 and drive potassium into cells",
+    "d": "Sodium bicarbonate nebulization to lower serum potassium"
+   },
+   "distractorExplanations": {
+    "b": "Albuterol shifts potassium into cells temporarily; it does not remove potassium from the body.",
+    "c": "Respiratory acidosis moves potassium out of cells; alkalosis is what shifts it in.",
+    "d": "Bicarbonate is given IV when used; it is not a nebulized respiratory therapy for hyperkalemia."
+   },
+   "explanation": "RTs manage airway/ventilation emergencies while medical teams shift/remove potassium. Medical therapy (calcium, shifts) proceeds alongside."
+  },
+  "nbrc-tmc-readiness-check-emergency-014": {
+   "options": {
+    "a": "Giving every patient 15 L/min by nonrebreather until supplies run out",
+    "b": "Titrating O2 to clinically appropriate targets and conserving resources",
+    "c": "Allocating oxygen first-come, first-served as patients arrive",
+    "d": "Reserving cylinders for ventilated patients and stopping all others"
+   },
+   "distractorExplanations": {
+    "a": "Untitrated maximal flow exhausts supply quickly; oxygen is titrated to targets in a mass-casualty event.",
+    "c": "Allocation follows triage by need and likely benefit, not arrival order.",
+    "d": "Non-ventilated hypoxemic patients still need titrated oxygen; triage frameworks guide allocation."
+   },
+   "explanation": "Crisis standards still aim for best outcomes with limited O2—assessment and titration matter. Use triage frameworks."
+  },
+  "nbrc-tmc-readiness-check-emergency-015": {
+   "options": {
+    "a": "Repeated direct laryngoscopy attempts until the tube passes, then oxygenating",
+    "b": "Proceeding straight to a surgical airway after the first failed laryngoscopy attempt by anyone",
+    "c": "Oxygenation first, calling for help, and progressing through established failed-airway pathways",
+    "d": "Paralyzing again and trying blind nasal intubation before calling for help"
+   },
+   "distractorExplanations": {
+    "a": "Attempts are limited and oxygenation is maintained between them; repeated attempts cause airway trauma.",
+    "b": "A surgical airway is for a cannot-intubate, cannot-oxygenate situation after BVM or supraglottic rescue fails.",
+    "d": "Help is called early; blind nasal attempts are not part of standard failed-airway pathways."
+   },
+   "explanation": "Cannot-intubate/cannot-oxygenate pathways emphasize oxygen, help, and rescue devices/cricothyrotomy. This includes a surgical airway when needed."
+  }
+ }
+}

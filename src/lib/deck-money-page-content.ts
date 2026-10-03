@@ -188,7 +188,7 @@ export const positioningOverrides: Partial<
   },
   "cfa-level-2-anki-deck": {
     ourEdge: [
-      "495 cards across all 10 equally weighted CFA Level 2 topics",
+      "495 scenario cards across all 10 CFA Level 2 topics, each with a worked example and common mistake",
       "Vignette-depth FSA, equity/FI valuation, derivatives, PM, and ethics application",
       "Pairs with the Level 2 formula reference PDF and a free 60-question mock",
       "Ownable .apkg — not a 3,000-card Level 1 leftover or monthly Q-bank",
@@ -729,13 +729,13 @@ Candidates lose points confusing forward vs futures margin flows, mis-stating in
 
   "cfa-level-2-anki-deck": `### What is inside
 
-495 cards across all ten equally weighted CFA Level 2 topics — vignette-depth FSA, equity and fixed income valuation models, derivatives strategies, portfolio management, and ethics application. Prompts emphasize item-set logic: given a short case, which adjustment or valuation method applies?
+495 cards across all ten CFA Level 2 topics (2026 weights 5–15%) — vignette-depth FSA, equity and fixed income valuation models, derivatives strategies, portfolio management, and ethics application. Prompts emphasize item-set logic: given a short case, which adjustment or valuation method applies?
 
 ### Study plan with the free mock and formula reference
 
 **Weeks 1–2:** 20 new cards/day across ethics and FSA. **Week 3:** Run the [free 60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check). **Week 4+:** Drill only weak topics from the report; pair with the [Level 2 formula reference PDF](/decks/cfa-level-2-formula-reference-2026) for printable recall tables.
 
-Official CFA Level 2 is vignette / item-set across 10 equally weighted topics — this 60-question mock is a shorter diagnostic, not a CFA Institute mock.
+Official CFA Level 2 is 88 item-set questions across 10 topics weighted 5–15% — this 60-question, 120-minute mock is a shorter diagnostic, not a CFA Institute mock.
 
 ### Pitfalls this deck targets
 
@@ -749,7 +749,7 @@ Level 2 failures often come from mis-applying inventory and lease adjustments in
 
 **Week 1:** Print weak-topic tables (Fixed Income, Equity, FSA first). **Week 2:** Run the 80-question recall drill timed; review every explanation. **Week 3:** Take the [60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check) — first mock free, no signup — and map topic gaps back to the PDF tables. **Week 4+:** Drill missed formulas in the [495-card Level 2 Anki deck](/decks/cfa-level-2-anki-deck) between mock retakes.
 
-Official CFA Level 2 is vignette / item-set across 10 equally weighted topics — this PDF is a recall companion, not CFA Institute curriculum.
+Official CFA Level 2 is 88 item-set questions across 10 topics weighted 5–15% — this PDF is a recall companion, not CFA Institute curriculum.
 
 ### Pitfalls this reference targets
 

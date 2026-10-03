@@ -1,0 +1,421 @@
+{
+ "aapc-ccs-readiness-check": {
+  "aapc-ccs-readiness-check-guidelines-001": {
+   "options": {
+    "a": "Pneumonia, as if the diagnosis were confirmed",
+    "b": "An observation Z code for suspected pneumonia",
+    "c": "The documented signs and symptoms (cough, fever)",
+    "d": "R69, illness, unspecified, until the test results return"
+   },
+   "distractorExplanations": {
+    "d": "R69 is a nonspecific unspecified-illness code; the documented cough and fever are more specific and are coded instead.",
+    "a": "Coding an uncertain diagnosis as confirmed is the inpatient rule, not the outpatient rule.",
+    "b": "Z03 observation codes are for a suspected condition that is ruled out with no signs or symptoms present."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-003": {
+   "options": {
+    "a": "Makes notes too short to support the level of service billed",
+    "b": "Forces coders to assign unspecified diagnosis codes",
+    "c": "Is prohibited in every EHR by federal software rules",
+    "d": "May carry forward findings or services that did not occur"
+   },
+   "distractorExplanations": {
+    "a": "Cloned notes tend to be long and repetitive; the compliance risk is inaccurate carried-forward content, not brevity.",
+    "b": "Cloning does not force unspecified codes; it undermines the integrity of the record.",
+    "c": "Copy-paste is not banned outright; it must be used responsibly and audited."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-004": {
+   "options": {
+    "a": "The patient's ASA physical status classification",
+    "b": "The anesthesia provider's level of supervision",
+    "c": "The emergency status of the surgical procedure",
+    "d": "The base unit value of the anesthesia code"
+   },
+   "distractorExplanations": {
+    "b": "Supervision level is shown with modifiers such as AA, QK, QX, and QZ.",
+    "c": "Emergency conditions are reported with qualifying circumstance code 99140.",
+    "d": "Base units come from the anesthesia code itself, not the P modifier."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-005": {
+   "options": {
+    "a": "To verify that staff completed annual HIPAA training",
+    "b": "To confirm that each provider holds a valid, active NPI number",
+    "c": "To avoid billing federal programs for excluded parties",
+    "d": "To check that coders passed a credentialing exam"
+   },
+   "distractorExplanations": {
+    "b": "NPI status is checked in NPPES; an active NPI says nothing about whether the person is excluded by the OIG.",
+    "a": "Training records are tracked separately from exclusion screening.",
+    "d": "Exam credentialing is verified with AHIMA or AAPC, not the LEIE."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-007": {
+   "options": {
+    "a": "0",
+    "b": "1",
+    "c": "B",
+    "d": "X"
+   },
+   "distractorExplanations": {
+    "b": "1 is the Obstetrics section.",
+    "c": "B is the Imaging section.",
+    "d": "X is the New Technology section."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-008": {
+   "options": {
+    "a": "Body part",
+    "b": "Surgical approach",
+    "c": "Root operation",
+    "d": "Body system"
+   },
+   "distractorExplanations": {
+    "b": "The approach (how the operative site is reached) is the 5th character, not the 3rd character of the code.",
+    "d": "The body system is the 2nd character; the 3rd character identifies the root operation (objective of the procedure).",
+    "a": "Body part is the 4th character."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-012": {
+   "options": {
+    "a": "Extirpation",
+    "b": "Destruction",
+    "c": "Shock Wave Therapy",
+    "d": "Fragmentation"
+   },
+   "distractorExplanations": {
+    "c": "Shock Wave Therapy is a root operation in the Extracorporeal or Systemic Therapies section for musculoskeletal treatment; breaking up a stone is Fragmentation.",
+    "a": "Extirpation requires the solid matter to be taken out.",
+    "b": "Destruction eradicates a body part itself, not solid matter within it."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-014": {
+   "options": {
+    "a": "Supplement",
+    "b": "Reposition",
+    "c": "Replacement",
+    "d": "Insertion"
+   },
+   "distractorExplanations": {
+    "a": "Supplement reinforces a body part that remains in place.",
+    "b": "Reposition moves a body part to its normal location.",
+    "d": "Insertion places a nonbiological device that does not replace a body part."
+   }
+  },
+  "aapc-ccs-readiness-check-guidelines-015": {
+   "options": {
+    "a": "0",
+    "b": "X",
+    "c": "Y",
+    "d": "Z"
+   },
+   "distractorExplanations": {
+    "a": "0 is a specific value in many tables, not \"no device.\"",
+    "b": "X as a 7th-character qualifier means Diagnostic.",
+    "c": "Y is used for \"other device\" in some tables, not for no device."
+   }
+  },
+  "aapc-ccs-readiness-check-icd-001": {
+   "options": {
+    "a": "The two conditions are never coded together",
+    "b": "The excluded condition may be coded additionally if present",
+    "c": "The excluded code must always be sequenced first",
+    "d": "The code requires an additional 7th character"
+   },
+   "distractorExplanations": {
+    "b": "\"May also be coded if present\" describes Excludes2.",
+    "c": "Sequencing instructions come from \"code first\" and \"use additional code\" notes.",
+    "d": "7th-character requirements are separate tabular instructions."
+   },
+   "explanation": "Excludes1 is a pure exclusion: the two codes cannot be reported together because the conditions cannot occur together, such as congenital and acquired forms of the same condition. Guidelines allow limited exceptions when the conditions are unrelated. The conditions are mutually exclusive."
+  },
+  "aapc-ccs-readiness-check-icd-002": {
+   "options": {
+    "a": "The two conditions cannot be reported on the same claim",
+    "b": "The excluded condition is reported as a manifestation code after it",
+    "c": "Both codes may be reported if both conditions are present",
+    "d": "The code is valid only for inpatient encounters"
+   },
+   "distractorExplanations": {
+    "a": "Not reporting the two conditions together describes Excludes1 (pure exclusion), not Excludes2.",
+    "b": "Excludes2 is unrelated to the etiology/manifestation convention; that sequencing comes from code first/use additional code notes.",
+    "d": "Excludes notes apply in every setting."
+   }
+  },
+  "aapc-ccs-readiness-check-icd-004": {
+   "options": {
+    "a": "Add the placeholder \"X\" to fill the empty positions",
+    "b": "Report the code without adding the 7th character",
+    "c": "Add zeros in the empty positions before the 7th character",
+    "d": "Assign the 7th character in the next open position"
+   },
+   "distractorExplanations": {
+    "c": "Zero is a meaningful code character, not a placeholder; ICD-10-CM uses the letter X to fill empty positions.",
+    "d": "The 7th character must sit in position 7; placing it in the 5th or 6th position creates an invalid or different code.",
+    "b": "Omitting a required 7th character makes the code invalid."
+   }
+  },
+  "aapc-ccs-readiness-check-icd-005": {
+   "options": {
+    "a": "Sequenced first as the principal diagnosis",
+    "b": "Sequenced after the code for the underlying etiology",
+    "c": "Reported alone, without the underlying condition",
+    "d": "Sequenced first on outpatient claims, second on inpatient claims"
+   },
+   "distractorExplanations": {
+    "d": "The etiology/manifestation convention applies in every setting; these codes are never first-listed on outpatient claims either.",
+    "a": "These manifestation codes may never be principal or first-listed.",
+    "c": "The etiology code must always be reported with the manifestation."
+   }
+  },
+  "aapc-ccs-readiness-check-icd-008": {
+   "options": {
+    "a": "Systemic infection code (e.g., A41.9) first, then N39.0",
+    "b": "UTI (N39.0) first as the reason for admission, then A41.9",
+    "c": "R65.20 severe sepsis first, then the organism",
+    "d": "Either may be principal at the coder's discretion"
+   },
+   "distractorExplanations": {
+    "b": "When sepsis and a localized infection are both POA, the systemic infection is principal and the localized infection is secondary.",
+    "c": "R65.2- codes cannot be sequenced first.",
+    "d": "Guidelines give explicit sequencing for sepsis with a localized infection."
+   }
+  },
+  "aapc-ccs-readiness-check-icd-009": {
+   "options": {
+    "a": "Other specified; no separate code exists for the detail",
+    "b": "Not otherwise specified; the documentation lacks detail",
+    "c": "Not on schedule; the code is new this fiscal year",
+    "d": "Non-operative status; no procedure was performed"
+   },
+   "distractorExplanations": {
+    "a": "That definition describes NEC (other specified).",
+    "c": "NOS has nothing to do with code update schedules.",
+    "d": "NOS does not describe procedure status."
+   }
+  },
+  "aapc-ccs-readiness-check-icd-010": {
+   "options": {
+    "a": "That was most expensive to treat during the stay",
+    "b": "Listed first in the emergency department's records on arrival",
+    "c": "Found after study to be chiefly responsible for admission",
+    "d": "With the highest relative weight among all diagnoses"
+   },
+   "distractorExplanations": {
+    "b": "The ED working diagnosis at arrival may change after study; UHDDS uses the condition established after study.",
+    "a": "Cost does not determine the principal diagnosis.",
+    "d": "Choosing by DRG weight rather than the definition is noncompliant."
+   }
+  },
+  "aapc-ccs-readiness-check-icd-012": {
+   "options": {
+    "a": "Not coded separately; they are routine for appendicitis",
+    "b": "Coded first as the reason for the visit, then the appendicitis",
+    "c": "Coded only when they appear on the discharge summary",
+    "d": "Coded as secondary diagnoses to support severity"
+   },
+   "distractorExplanations": {
+    "b": "Symptoms integral to a confirmed diagnosis are not coded at all, so they cannot be sequenced ahead of the appendicitis.",
+    "c": "Where they are documented does not matter; integral symptoms are not coded.",
+    "d": "Coding integral symptoms adds redundant codes and is not allowed."
+   }
+  },
+  "aapc-ccs-readiness-check-pcs-005": {
+   "options": {
+    "a": "It must be billed with every related surgery",
+    "b": "It is not reported when integral to a larger service",
+    "c": "It is paid in addition to the main procedure at full value",
+    "d": "It is reportable only with modifier 51 attached"
+   },
+   "distractorExplanations": {
+    "c": "When a separate procedure is integral to a larger service it is bundled, not paid in addition at full value.",
+    "a": "A separate procedure is not billed with related surgery when it is integral to it.",
+    "d": "Modifier 51 marks multiple procedures; it does not make a separate procedure reportable."
+   }
+  },
+  "aapc-ccs-readiness-check-pcs-006": {
+   "options": {
+    "a": "The suture material and needle type used",
+    "b": "The anesthetic used and the time spent on the repair",
+    "c": "Repair complexity, total length, and location",
+    "d": "The total number of sutures that were placed"
+   },
+   "distractorExplanations": {
+    "b": "Local anesthesia is included in the repair code, and time spent is not a CPT repair criterion; length and complexity are.",
+    "a": "Suture material does not change the repair code.",
+    "d": "Suture count is not a CPT criterion; length and complexity are."
+   }
+  },
+  "aapc-ccs-readiness-check-pcs-011": {
+   "options": {
+    "a": "Report a separate code for each distinct body-part value",
+    "b": "Report one code for the most significant site only",
+    "c": "Report the code once and note the extra sites in the 7th character",
+    "d": "Append a modifier to the code to show the multiple sites"
+   },
+   "distractorExplanations": {
+    "c": "The 7th character is the qualifier; it does not capture additional sites, so each distinct body-part value needs its own code.",
+    "d": "ICD-10-PCS has no modifiers; site modifiers such as XS belong to CPT/HCPCS outpatient coding.",
+    "b": "Coding one site under-reports distinct procedures."
+   }
+  },
+  "aapc-ccs-readiness-check-pcs-012": {
+   "options": {
+    "a": "Only the laparoscopic (percutaneous endoscopic) procedure",
+    "b": "The open procedure plus a percutaneous endoscopic Inspection",
+    "c": "The open procedure, with the conversion noted by a qualifier",
+    "d": "Both the full laparoscopic and full open procedures"
+   },
+   "distractorExplanations": {
+    "c": "No qualifier captures a conversion; guideline B3.2d requires a separate percutaneous endoscopic Inspection code.",
+    "a": "The procedure was completed open, so coding only the laparoscopic approach is wrong.",
+    "d": "The procedure was performed once; the laparoscopic part is an Inspection only."
+   }
+  },
+  "aapc-ccs-readiness-check-pcs-014": {
+   "options": {
+    "a": "Via Natural or Artificial Opening With Percutaneous Endoscopic Assistance",
+    "b": "Via Natural or Artificial Opening Endoscopic",
+    "c": "Via Natural or Artificial Opening",
+    "d": "Percutaneous Endoscopic"
+   },
+   "distractorExplanations": {
+    "a": "Value F is for procedures through a natural opening assisted laparoscopically (e.g. LAVH), not a laparoscope through a skin puncture.",
+    "b": "Value 8 is an endoscope passed through a natural or artificial opening (e.g. colonoscopy), not through a skin puncture.",
+    "c": "That approach enters through a natural orifice, such as the mouth or urethra."
+   }
+  },
+  "aapc-ccs-readiness-check-pcs-015": {
+   "options": {
+    "a": "Diagnoses, symptoms, and reasons for encounters",
+    "b": "Physician services and surgical procedures",
+    "c": "Supplies, drugs, and durable medical equipment",
+    "d": "Inpatient hospital procedures, devices, and approaches"
+   },
+   "distractorExplanations": {
+    "d": "Inpatient procedures, devices and approaches are coded with ICD-10-PCS, not the ICD-10-CM diagnosis classification.",
+    "b": "Physician services and procedures are reported with CPT.",
+    "c": "Supplies, drugs, and DME are reported with HCPCS Level II."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-002": {
+   "options": {
+    "a": "The service is covered under the patient's benefit plan",
+    "b": "The service is needed to diagnose or treat the patient",
+    "c": "The patient requested the service in writing",
+    "d": "The service is the least expensive option available"
+   },
+   "distractorExplanations": {
+    "a": "Coverage is a benefit question; a covered service can still be denied when documentation does not show clinical need.",
+    "c": "A patient request does not make a service medically necessary.",
+    "d": "Necessity is about clinical need, not price."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-003": {
+   "options": {
+    "a": "Reporting a higher-level service than documented/supported",
+    "b": "Reporting a lower level than documented to avoid an audit",
+    "c": "Billing separate codes for components of a bundled service",
+    "d": "Billing for a service that the provider did not perform"
+   },
+   "distractorExplanations": {
+    "b": "Reporting a lower level than documented is downcoding (undercoding), also noncompliant but the opposite of upcoding.",
+    "c": "Billing components of a bundled service separately is unbundling, a different improper coding practice.",
+    "d": "Billing for services not rendered is phantom billing, a separate fraud type from inflating the level of a real service."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-004": {
+   "options": {
+    "a": "Honest billing errors corrected in a timely way",
+    "b": "Knowingly submitting false claims to the government",
+    "c": "Disputes between patients and private insurers",
+    "d": "Claims filed after the payer's timely filing limit has passed"
+   },
+   "distractorExplanations": {
+    "d": "Missing the timely filing limit leads to a denial, not False Claims Act liability, which requires a knowingly false claim.",
+    "a": "Honest mistakes corrected promptly lack the knowing intent the Act requires.",
+    "c": "Private insurance disputes are not federal false claims."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-005": {
+   "options": {
+    "a": "Workplace safety rules and sharps injury logs",
+    "b": "Billing fraud and the penalties for submitting false claims",
+    "c": "Use and disclosure of protected health information",
+    "d": "Referral fees and kickback payments by providers"
+   },
+   "distractorExplanations": {
+    "b": "False claims penalties come from the False Claims Act and related fraud statutes, not the HIPAA Privacy Rule.",
+    "a": "Workplace safety and sharps logs fall under OSHA.",
+    "d": "Kickbacks are covered by the Anti-Kickback Statute."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-006": {
+   "options": {
+    "a": "Diagnoses and reasons for visits",
+    "b": "Inpatient hospital procedures and devices",
+    "c": "Physician office visits and surgeries",
+    "d": "Drugs, supplies, DME, and some services"
+   },
+   "distractorExplanations": {
+    "b": "Inpatient procedures and devices are coded in ICD-10-PCS; HCPCS Level II covers drugs, supplies and DME.",
+    "a": "Diagnoses are reported with ICD-10-CM.",
+    "c": "Office visits and surgeries are CPT (HCPCS Level I) codes."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-008": {
+   "options": {
+    "a": "A patient's 11-character Medicare Beneficiary Identifier",
+    "b": "A unique 10-digit number for health care providers",
+    "c": "A code for where a service was performed",
+    "d": "A payer-assigned number for each claim filed"
+   },
+   "distractorExplanations": {
+    "a": "The 11-character MBI identifies the Medicare patient; the NPI is a 10-digit number identifying the provider.",
+    "c": "Where a service happened is the place-of-service code.",
+    "d": "Payers assign claim numbers; the NPI identifies the provider."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-009": {
+   "options": {
+    "a": "Reporting a panel code when all tests were done",
+    "b": "Assigning a higher E/M level than documented",
+    "c": "Billing parts separately when one code covers all",
+    "d": "Reporting one comprehensive code that covers the whole service"
+   },
+   "distractorExplanations": {
+    "d": "Reporting the comprehensive code is correct coding, the opposite of unbundling the components separately.",
+    "a": "Using the panel code when every component test was done is correct coding.",
+    "b": "Billing a higher level than documented is upcoding, not unbundling."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-012": {
+   "options": {
+    "a": "A bilateral procedure performed at the same operative session",
+    "b": "A distinct service not normally reported together",
+    "c": "An assistant surgeon's participation",
+    "d": "A significant, separate E/M service that day"
+   },
+   "distractorExplanations": {
+    "a": "Bilateral procedures at the same session are reported with modifier 50, not the distinct-service modifier 59/X{EPSU}.",
+    "c": "Assistant surgeons use modifier 80.",
+    "d": "A significant, separately identifiable E/M service uses modifier 25."
+   }
+  },
+  "aapc-ccs-readiness-check-compliance-014": {
+   "options": {
+    "a": "Move the case into a higher-weighted MS-DRG as an MCC",
+    "b": "Be reported only as a Z code for tracking",
+    "c": "Be deleted from the claim before submission",
+    "d": "Not count as a CC/MCC to raise MS-DRG payment"
+   },
+   "distractorExplanations": {
+    "a": "The HAC-POA policy does the opposite: a selected condition with POA = N cannot act as a CC/MCC to raise the MS-DRG.",
+    "b": "The condition keeps its own diagnosis code; it is not replaced by a Z code.",
+    "c": "The condition must still be coded and reported accurately."
+   }
+  }
+ }
+}

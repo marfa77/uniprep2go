@@ -1,0 +1,631 @@
+{
+ "nabcep-associate-readiness-check": {
+  "nabcep-associate-readiness-check-pv-basics-001": {
+   "options": {
+    "a": "Sunlight to AC electricity",
+    "b": "Sunlight to DC electricity",
+    "c": "Solar heat to DC electricity",
+    "d": "Sunlight to stored chemical energy"
+   },
+   "distractorExplanations": {
+    "a": "PV cells produce direct current; AC appears only after an inverter converts the module's DC output.",
+    "c": "Confuses PV with thermal conversion; PV cells use the photovoltaic effect on photons, and heat actually lowers cell output.",
+    "d": "Storing chemical energy is what a battery does; a PV cell generates electricity and stores nothing itself."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-002": {
+   "options": {
+    "a": "Insulation thermal R-value",
+    "b": "Module conversion efficiency",
+    "c": "Inverter rated AC output",
+    "d": "Solar radiation received"
+   },
+   "distractorExplanations": {
+    "a": "Confuses insolation (solar energy received) with insulation, the building-envelope thermal resistance rated by R-value.",
+    "b": "Efficiency is the share of incoming light a module converts; insolation is the solar resource itself, before any conversion.",
+    "c": "Inverter AC rating describes equipment capacity, not the solar radiation that reaches the site or array surface."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-003": {
+   "options": {
+    "a": "Rate module power under standard test conditions",
+    "b": "Predict real rooftop output on a hot summer day",
+    "c": "Set the coldest-day Voc limit for string sizing",
+    "d": "Rate inverter efficiency under CEC weighted conditions"
+   },
+   "distractorExplanations": {
+    "b": "STC (1000 W/m², 25 °C cell, AM1.5) is a lab reference; hot field conditions give lower output than the STC rating.",
+    "c": "Cold-day Voc comes from applying temperature coefficients to the STC value; STC itself is only the rating reference point.",
+    "d": "Confuses STC module ratings with the CEC weighted efficiency method used to rate inverters."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-006": {
+   "options": {
+    "a": "Open-circuit voltage of the string",
+    "b": "Grid voltage and frequency",
+    "c": "Maximum power point of the array",
+    "d": "Short-circuit current of the array"
+   },
+   "distractorExplanations": {
+    "a": "Voc occurs at zero current, so zero power; MPPT operates near Vmp, well below Voc.",
+    "b": "Tracking grid voltage and frequency is the inverter's synchronization and anti-islanding function, not MPPT.",
+    "d": "Isc occurs at zero voltage, so zero power; the maximum power point sits at Imp and Vmp on the IV curve knee."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-008": {
+   "options": {
+    "a": "Raises output by cooling the shaded cells",
+    "b": "Lowers string voltage but leaves current unchanged",
+    "c": "Can disproportionately cut string current",
+    "d": "Reduces power in proportion to shaded area"
+   },
+   "distractorExplanations": {
+    "a": "Cooler cells do gain voltage, but losing irradiance cuts current far more, so shading lowers string output overall.",
+    "b": "In a series string the weakest cell limits the current, so shading mainly cuts current (or forces bypass diodes on).",
+    "d": "Series wiring makes losses out of proportion: shading a small part of one module can drag down the whole string."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-009": {
+   "options": {
+    "a": "Block reverse current from the grid at night",
+    "b": "Protect string conductors from overcurrent",
+    "c": "Raise module voltage when cells are shaded",
+    "d": "Mitigate shading hotspot effects in modules"
+   },
+   "distractorExplanations": {
+    "a": "Confuses bypass diodes with blocking diodes, which prevent reverse current flow; bypass diodes route current around shaded cells.",
+    "b": "Overcurrent protection is the job of fuses or breakers (OCPD); bypass diodes do not interrupt fault current.",
+    "c": "A conducting bypass diode removes its cell substring from the circuit, which lowers module voltage rather than raising it."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-010": {
+   "options": {
+    "a": "Energy over time vs power density",
+    "b": "Direct beam vs diffuse sky light",
+    "c": "Light at STC vs light at NOCT",
+    "d": "Power density vs energy over time"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the terms: irradiance is instantaneous power per area (W/m²), irradiation is energy accumulated over time (kWh/m²).",
+    "b": "Direct vs diffuse describes components of sunlight (DNI vs DHI); both can be expressed as irradiance or irradiation.",
+    "c": "STC and NOCT are module test conditions, not the distinction between a power rate and accumulated energy."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-011": {
+   "options": {
+    "a": "Thin-film has the higher efficiency per area",
+    "b": "c-Si loses less power per degree of heat",
+    "c": "Same temp coefficient, differ only in cost",
+    "d": "Different technologies/temp/shade behaviors"
+   },
+   "distractorExplanations": {
+    "a": "Crystalline silicon modules typically have higher efficiency per area; thin-film usually needs more area per watt.",
+    "b": "Thin-film (for example CdTe) usually has a smaller temperature coefficient than c-Si, so c-Si loses more in heat.",
+    "c": "The technologies differ in temperature coefficient, efficiency, and shade response, not just in price."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-012": {
+   "options": {
+    "a": "Increase output only for monofacial modules",
+    "b": "Measure the diffuse share of sky light",
+    "c": "Block direct beam light at low sun angles",
+    "d": "Reflect extra light onto modules"
+   },
+   "distractorExplanations": {
+    "a": "Bifacial modules gain most from ground-reflected light because their rear side captures it; monofacial gain is small.",
+    "b": "Albedo is surface reflectance; the diffuse fraction of sky irradiance is a separate measurement (DHI vs GHI).",
+    "c": "Blocking beam light describes shading from objects; albedo adds reflected light rather than removing it."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-013": {
+   "options": {
+    "a": "Module power rating at 25 °C cell temperature",
+    "b": "Maximum cell temperature before warranty voids",
+    "c": "Inverter derating point at high ambient heat",
+    "d": "Module operating temperature characterization"
+   },
+   "distractorExplanations": {
+    "a": "A 25 °C cell temperature is the STC rating condition; NOCT describes the warmer cell temperature reached in operation.",
+    "b": "NOCT is a characterization test value (about 800 W/m², 20 °C ambient), not a warranty temperature limit.",
+    "c": "Inverter thermal derating is an inverter specification; NOCT is a module temperature characterization."
+   }
+  },
+  "nabcep-associate-readiness-check-pv-basics-014": {
+   "options": {
+    "a": "At NOCT typically",
+    "b": "At short circuit",
+    "c": "At open circuit",
+    "d": "At STC typically"
+   },
+   "distractorExplanations": {
+    "a": "Datasheets list NOCT values separately; the nameplate Imp/Vmp ratings are given at standard test conditions.",
+    "c": "Open circuit gives Voc at zero current; Imp and Vmp are the current and voltage at the maximum power point.",
+    "b": "Not the best answer: At short circuit only."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-001": {
+   "options": {
+    "a": "Energized only while the inverter runs",
+    "b": "Energized whenever illuminated",
+    "c": "De-energized once the AC disconnect opens",
+    "d": "Below shock hazard at low irradiance"
+   },
+   "distractorExplanations": {
+    "a": "Modules produce voltage whenever light hits them, even if the inverter is off or faulted.",
+    "c": "Opening the AC disconnect isolates the inverter output; array DC conductors stay energized in daylight.",
+    "d": "Module voltage rises close to full Voc even at low light, so dim conditions can still deliver dangerous DC voltage."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-002": {
+   "options": {
+    "a": "Protect modules from arc-fault damage",
+    "b": "Reduce shock hazard for first responders",
+    "c": "Isolate the inverter from utility outages",
+    "d": "Limit backfeed current at the main panel"
+   },
+   "distractorExplanations": {
+    "a": "Arc-fault detection (AFCI) addresses arcing; rapid shutdown limits voltage in the array for firefighter safety.",
+    "c": "Disconnecting on loss of grid is anti-islanding protection, a separate inverter function from rapid shutdown.",
+    "d": "Backfeed limits come from busbar/breaker sizing rules (such as the 120% rule), not from rapid shutdown."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-003": {
+   "options": {
+    "a": "Non-current-carrying metal parts to ground",
+    "b": "The neutral conductor to module frames",
+    "c": "The system's grounded conductor to earth",
+    "d": "Lightning protection rods to module frames"
+   },
+   "distractorExplanations": {
+    "b": "Bonding neutral to equipment frames downstream of the main bonding jumper creates objectionable neutral current on metal parts.",
+    "c": "Connecting a system conductor to earth is system grounding; equipment grounding bonds the exposed metal enclosures and frames.",
+    "d": "Lightning protection is a separate system; equipment grounding provides a fault-current path for exposed metal parts."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-004": {
+   "options": {
+    "a": "Personnel from ground-fault shock",
+    "b": "Conductors/equipment from overcurrent",
+    "c": "Equipment from lightning voltage surges",
+    "d": "Conductors from series arcing faults"
+   },
+   "distractorExplanations": {
+    "a": "Protecting people from ground-fault shock is the role of GFCI/GFP devices, not of fuses or breakers sized for overcurrent.",
+    "c": "Voltage surges are handled by surge protective devices (SPDs); OCPDs respond to excess current, not transient voltage.",
+    "d": "Series arcs draw little extra current, so arc-fault circuit interrupters, not OCPDs, are required to detect them."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-005": {
+   "options": {
+    "a": "Readily accessible as required",
+    "b": "Installed only on the roof near the array",
+    "c": "Omitted when microinverters are used",
+    "d": "Locked closed to prevent tampering"
+   },
+   "distractorExplanations": {
+    "b": "Code locates disconnects where readily accessible; it does not restrict them to the rooftop beside the array.",
+    "c": "Microinverter systems still need a means of disconnect; the AC side requires one per code.",
+    "d": "Lockout is applied in the open (off) position for safe work; locking a disconnect closed defeats its purpose."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-006": {
+   "options": {
+    "a": "Detects/mitigates certain arcing faults",
+    "b": "Detects ground faults on array conductors",
+    "c": "De-energizes conductors for firefighters",
+    "d": "Limits current to the conductor ampacity"
+   },
+   "distractorExplanations": {
+    "b": "Ground-fault detection is a separate protective function (GFDI/GFP); arc-fault protection targets arcing faults.",
+    "c": "Lowering array voltage for first responders is rapid shutdown, a different NEC requirement from arc-fault protection.",
+    "d": "Holding current within conductor ampacity is the job of overcurrent protective devices, not arc-fault detection."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-007": {
+   "options": {
+    "a": "Required only for AC panels, not DC gear",
+    "b": "Required around electrical equipment",
+    "c": "Waived for equipment rated 600 V or less",
+    "d": "Set by the inspector at final inspection"
+   },
+   "distractorExplanations": {
+    "a": "Working-space rules apply to electrical equipment likely to need examination or servicing while energized, AC or DC.",
+    "c": "NEC working-space clearances specifically cover equipment of 1000 V or less; low voltage does not waive them.",
+    "d": "Clearance distances are defined in the electrical code, not chosen case by case by the inspector."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-010": {
+   "options": {
+    "a": "Required when fall hazards exist",
+    "b": "Required only on roofs steeper than 6:12",
+    "c": "Required starting at 10 feet in construction",
+    "d": "Satisfied by a ladder tied off at the eave"
+   },
+   "distractorExplanations": {
+    "b": "Low-slope roofs still need fall protection at unprotected edges; roof pitch changes the method, not the need.",
+    "c": "OSHA construction fall-protection trigger is 6 feet; 10 feet is the old scaffold threshold, not the general rule.",
+    "d": "A secured ladder is for access only; work on the roof surface still needs guardrails, nets, or a personal fall arrest system."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-011": {
+   "options": {
+    "a": "Shock hazards only while the grid is up",
+    "b": "Chemical, arc, and stored energy hazards",
+    "c": "Hazards limited to their added roof weight",
+    "d": "No new hazards once the DC disconnect opens"
+   },
+   "distractorExplanations": {
+    "a": "Batteries hold stored energy with or without utility power and can deliver dangerous fault current at any time.",
+    "c": "Weight is a structural concern, but batteries also bring chemical, arc-flash, thermal, and stored-energy hazards.",
+    "d": "Opening a disconnect does not discharge the battery; its terminals and internal cells remain energized."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-012": {
+   "options": {
+    "a": "Are limited to the module nameplate label",
+    "b": "Apply only to the utility meter location",
+    "c": "Are set by the installer's own preference",
+    "d": "Identify PV systems/hazards per code"
+   },
+   "distractorExplanations": {
+    "a": "Code requires system labels (disconnects, rapid shutdown, sources, voltages) beyond the factory module nameplate.",
+    "b": "PV labels are required at disconnects, conduit runs, combiners, and service equipment, not just at the meter.",
+    "c": "Label wording, placement, and durability are code-defined, not left to installer preference."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-013": {
+   "options": {
+    "a": "Conductor length and voltage drop only",
+    "b": "Module wattage and inverter efficiency",
+    "c": "Temperature, bundling, conditions of use",
+    "d": "Breaker rating alone, not ambient heat"
+   },
+   "distractorExplanations": {
+    "a": "Confuses voltage-drop sizing (driven by length) with ampacity, which depends on temperature, bundling, and conditions of use.",
+    "b": "Wattage and efficiency affect the current calculation inputs but are not the ampacity adjustment factors.",
+    "d": "OCPD rating protects the conductor, but ampacity must still be corrected for ambient temperature and fill."
+   }
+  },
+  "nabcep-associate-readiness-check-safety-014": {
+   "options": {
+    "a": "Addresses certain DC/AC ground faults",
+    "b": "Removes the need for equipment grounding",
+    "c": "Detects series arcing in DC conductors",
+    "d": "Trips on overcurrent in string conductors"
+   },
+   "distractorExplanations": {
+    "b": "Ground-fault protection relies on the equipment grounding path; it does not replace the EGC.",
+    "c": "Series arcing is detected by arc-fault protection (AFCI), a separate function from ground-fault protection.",
+    "d": "Tripping on excess current is the job of fuses or breakers (OCPD), not ground-fault detection."
+   },
+   "explanation": "Addresses certain DC/AC ground faults per design. Ground-fault protection detects unintended current to ground in PV and AC circuits as the system design requires."
+  },
+  "nabcep-associate-readiness-check-safety-015": {
+   "options": {
+    "a": "Anyone holding a contractor license",
+    "b": "Anyone with an OSHA 10 card",
+    "c": "Train/skills for the work",
+    "d": "Supervisors, not field crews"
+   },
+   "distractorExplanations": {
+    "a": "A business license does not establish the training and skills for specific electrical work and its hazards.",
+    "b": "OSHA 10 is general safety awareness; a qualified person needs training specific to the equipment and hazards.",
+    "d": "Qualification is about training and demonstrated skills for the task, not job title or seniority."
+   }
+  },
+  "nabcep-associate-readiness-check-design-002": {
+   "options": {
+    "a": "Convert combined string DC to AC centrally",
+    "b": "Optimize module DC before a string inverter",
+    "c": "Charge batteries directly from module DC",
+    "d": "Convert per-module/panel level DC to AC"
+   },
+   "distractorExplanations": {
+    "a": "Central conversion of combined strings describes a string or central inverter, not module-level microinverters.",
+    "b": "DC conditioning ahead of a string inverter is what DC optimizers do; microinverters output AC at each module.",
+    "c": "Regulating battery charging from PV is the charge controller's role, not a microinverter's."
+   }
+  },
+  "nabcep-associate-readiness-check-design-003": {
+   "options": {
+    "a": "Module-level DC to AC conversion at each panel",
+    "b": "DC module-level power electronics / monitoring",
+    "c": "Central array MPPT inside the string inverter",
+    "d": "Battery charge regulation from the PV array"
+   },
+   "distractorExplanations": {
+    "a": "Converting to AC at each module describes microinverters; optimizers keep the output DC and feed a string inverter.",
+    "c": "Optimizers move MPPT to each module; central MPPT in the string inverter is the setup they are added to improve.",
+    "d": "Battery charge regulation is done by a charge controller, not by module-level optimizers."
+   }
+  },
+  "nabcep-associate-readiness-check-design-004": {
+   "options": {
+    "a": "Combine strings with OCPD/monitoring as designed",
+    "b": "Convert combined string DC into grid AC",
+    "c": "Regulate battery charging from the array",
+    "d": "Bond module frames to the grounding electrode"
+   },
+   "distractorExplanations": {
+    "b": "DC-to-AC conversion is the inverter's job; a combiner only parallels strings and houses their protection.",
+    "c": "Charge regulation is done by a charge controller; combiners join strings and hold string fuses.",
+    "d": "Frame bonding is done by the equipment grounding conductor system, not by the combiner's function."
+   }
+  },
+  "nabcep-associate-readiness-check-design-005": {
+   "options": {
+    "a": "Inverter AC output to loads",
+    "b": "Grid export under net metering",
+    "c": "Module-level rapid shutdown",
+    "d": "Battery charging from PV"
+   },
+   "distractorExplanations": {
+    "a": "Delivering AC to loads is the inverter's function; charge controllers regulate DC charging of batteries.",
+    "b": "Net metering export is handled by the inverter and utility meter, not by a battery charge controller.",
+    "c": "Rapid shutdown is provided by module-level devices or initiators, not by battery charge controllers."
+   }
+  },
+  "nabcep-associate-readiness-check-design-006": {
+   "options": {
+    "a": "AC energy directly from the grid",
+    "b": "Excess heat from the PV modules",
+    "c": "Static charge from modules",
+    "d": "Chemical energy for later use"
+   },
+   "distractorExplanations": {
+    "a": "Batteries store energy chemically as DC; grid AC must be rectified before it can charge them.",
+    "b": "Storing heat is thermal storage; electrochemical batteries store chemical energy, not module waste heat.",
+    "c": "Batteries store energy through electrochemical reactions, not as static charge like a capacitor."
+   }
+  },
+  "nabcep-associate-readiness-check-design-007": {
+   "options": {
+    "a": "DC array conductors from the inverter input",
+    "b": "The service drop from the main panel bus",
+    "c": "Battery bank from the charge controller",
+    "d": "Inverter output from premises/utility"
+   },
+   "distractorExplanations": {
+    "a": "Isolating array conductors from the inverter input is the DC disconnect's job, not the AC disconnect's.",
+    "b": "Separating the utility service from the building is the main service disconnect, not the PV AC disconnect.",
+    "c": "Battery isolation uses a DC battery disconnect; the AC disconnect sits on the inverter output."
+   },
+   "explanation": "Inverter output from premises/utility as required. The AC disconnect isolates the inverter's AC output from premises wiring and the utility where code requires it."
+  },
+  "nabcep-associate-readiness-check-design-008": {
+   "options": {
+    "a": "Utility tariff and billing",
+    "b": "Roof structural loading",
+    "c": "Production and faults",
+    "d": "Customer usage only"
+   },
+   "distractorExplanations": {
+    "a": "Billing data comes from the utility; PV monitoring tracks system production and fault alerts.",
+    "b": "Structural loading is assessed by engineering review, not by PV production monitoring.",
+    "d": "Consumption monitoring can be added, but PV monitoring's core job is production and fault tracking."
+   }
+  },
+  "nabcep-associate-readiness-check-design-009": {
+   "options": {
+    "a": "Be sized by module weight alone, not wind",
+    "b": "Bond to the neutral conductor at the array",
+    "c": "Support loads and meet structural/attachment design",
+    "d": "Follow the roof pitch with no wind or snow load review"
+   },
+   "distractorExplanations": {
+    "a": "Racking design must cover wind uplift and snow loads, not just the dead weight of the modules.",
+    "b": "Racking is bonded to the equipment grounding system; bonding to neutral at the array is a code violation.",
+    "d": "Flush-mount racking still needs wind and snow load calculations for attachments and spans."
+   }
+  },
+  "nabcep-associate-readiness-check-design-010": {
+   "options": {
+    "a": "Prohibited above 1.0 by the electrical code",
+    "b": "Common design choice within inverter limits",
+    "c": "Required to stay at exactly 1.0 for warranty",
+    "d": "Used to size the battery bank capacity"
+   },
+   "distractorExplanations": {
+    "a": "The NEC sets no DC/AC ratio cap; oversizing is a design choice limited by inverter input specifications.",
+    "c": "Inverter makers publish allowable DC input ranges; ratios above 1.0 are common and within warranty.",
+    "d": "Battery capacity is sized from load and autonomy needs; DC/AC ratio compares array DC to inverter AC rating."
+   }
+  },
+  "nabcep-associate-readiness-check-design-011": {
+   "options": {
+    "a": "Matter only for off-grid battery systems",
+    "b": "Matter for grounding/topology",
+    "c": "Set module STC ratings",
+    "d": "Determine conductor color coding"
+   },
+   "distractorExplanations": {
+    "a": "Transformer vs transformerless topology affects grounding on grid-tied inverters too, not just off-grid systems.",
+    "c": "Module STC ratings come from factory testing; inverter isolation affects system grounding and topology.",
+    "d": "Color coding follows code rules for grounded/ungrounded conductors; it is not set by the inverter's transformer."
+   }
+  },
+  "nabcep-associate-readiness-check-design-012": {
+   "options": {
+    "a": "Voc hot and Vmp cold inverter windows",
+    "b": "Voc cold and Vmp hot inverter windows",
+    "c": "Module wattage and roof area limits",
+    "d": "Nameplate Voc at STC, not temperature"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the temperature cases: maximum Voc occurs at the coldest temperature, minimum Vmp at the hottest.",
+    "c": "Wattage and roof area set array size, but string length is limited by voltage at temperature extremes.",
+    "d": "Voc rises in cold weather, so string sizing must correct STC Voc for the site's record low temperature."
+   }
+  },
+  "nabcep-associate-readiness-check-design-013": {
+   "options": {
+    "a": "Raise output by cooling modules",
+    "b": "Affect only frameless modules",
+    "c": "Reduce energy from dirt/snow",
+    "d": "Lower voltage but not current"
+   },
+   "distractorExplanations": {
+    "a": "Dirt and snow block light; any cooling effect is far smaller than the irradiance lost.",
+    "b": "Soiling reduces light reaching any module type; frames can even trap dirt at the lower edge.",
+    "d": "Blocking light mainly reduces cell current; soiling therefore lowers current more than voltage."
+   }
+  },
+  "nabcep-associate-readiness-check-design-014": {
+   "options": {
+    "a": "Voltage drop on long conductor home runs",
+    "b": "Module mismatch losses in strings",
+    "c": "Abrasion, pinch, water intrusion issues",
+    "d": "Inverter clipping on sunny days"
+   },
+   "distractorExplanations": {
+    "a": "Voltage drop is set by conductor size and length; wire management protects conductors from physical damage.",
+    "b": "Mismatch comes from unequal module performance, not from how conductors are secured.",
+    "d": "Clipping comes from the DC/AC ratio and inverter AC limit; wire management does not affect it."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-001": {
+   "options": {
+    "a": "Module efficiency to the datasheet STC nameplate rating",
+    "b": "Energy produced to the nameplate times hours",
+    "c": "AC output to DC input at the inverter",
+    "d": "Actual to expected yield accounting for irradiance"
+   },
+   "distractorExplanations": {
+    "a": "Efficiency vs nameplate is a module spec comparison; PR compares actual system yield with irradiance-based expected yield.",
+    "b": "Energy over nameplate times total hours is the capacity factor, which ignores how much sun was available.",
+    "c": "AC out over DC in is inverter efficiency, one loss component inside the performance ratio."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-002": {
+   "options": {
+    "a": "Cooler module temperatures than expected",
+    "b": "Normal seasonal changes in sunshine hours",
+    "c": "Lower utility rates under net metering",
+    "d": "Shading, soiling, faults, clipping, outages"
+   },
+   "distractorExplanations": {
+    "a": "Cooler cells raise voltage and output, which pushes the performance ratio up, not down.",
+    "b": "PR is normalized to measured irradiance, so fewer sunshine hours alone do not lower it.",
+    "c": "Tariffs change savings, not the ratio of actual to irradiance-expected energy."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-003": {
+   "options": {
+    "a": "Module/string electrical characteristics",
+    "b": "Inverter AC output waveform and harmonics",
+    "c": "Battery state of charge over time",
+    "d": "Insulation resistance to ground"
+   },
+   "distractorExplanations": {
+    "b": "AC waveform and harmonics are measured with a power quality analyzer, not an IV curve tracer.",
+    "c": "State of charge comes from battery management data, not from tracing a PV current-voltage curve.",
+    "d": "Insulation resistance is checked with a megohmmeter test, a separate commissioning test from IV tracing."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-004": {
+   "options": {
+    "a": "Inverter AC limit reached while DC available",
+    "b": "Clouds suddenly reduce module irradiance",
+    "c": "Module voltage falls below the MPPT window",
+    "d": "Overcurrent devices open on string faults"
+   },
+   "distractorExplanations": {
+    "b": "Cloud cover lowers DC input; clipping happens when DC power exceeds what the inverter can output.",
+    "c": "Low array voltage below the MPPT range causes dropout or derate, not clipping at the AC power limit.",
+    "d": "An opened fuse removes a string from service; clipping caps output while all DC is still available."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-005": {
+   "options": {
+    "a": "Undersized conductors on long runs",
+    "b": "Inverter output exceeding its rating",
+    "c": "Dirt spread evenly across all modules",
+    "d": "Unequal module/string performance"
+   },
+   "distractorExplanations": {
+    "a": "Undersized long conductors cause resistive voltage-drop losses, not mismatch between modules.",
+    "b": "Hitting the inverter's AC limit is clipping, a different loss mechanism from mismatch.",
+    "c": "Uniform soiling lowers every module equally; mismatch needs unequal performance between modules or strings."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-007": {
+   "options": {
+    "a": "Raises voltage as modules age",
+    "b": "Means sudden failure of a module",
+    "c": "Slowly reduces output over years",
+    "d": "Affects only the inverter, not modules"
+   },
+   "distractorExplanations": {
+    "a": "Aging lowers module power, mainly through falling current and fill factor, not through rising voltage.",
+    "b": "Sudden failure is a fault; degradation is the gradual output loss of roughly 0.5% per year.",
+    "d": "Degradation ratings describe module output loss over time; warranties guarantee module output for 25+ years."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-010": {
+   "options": {
+    "a": "Actual to expected yield given irradiance",
+    "b": "Actual energy over nameplate potential time",
+    "c": "AC output divided by DC nameplate rating",
+    "d": "Peak watts measured at solar noon"
+   },
+   "distractorExplanations": {
+    "a": "Actual vs irradiance-expected yield is the performance ratio, not the capacity factor.",
+    "c": "AC output over DC nameplate resembles the inverter loading or DC/AC ratio, not energy over time.",
+    "d": "Peak noon watts is instantaneous power; capacity factor compares energy over a period with full-nameplate output."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-011": {
+   "options": {
+    "a": "Module wattage and Voc",
+    "b": "Inverter MPPT range",
+    "c": "Azimuth alone, not tilt",
+    "d": "Tilt, weather, friction"
+   },
+   "distractorExplanations": {
+    "a": "Electrical ratings do not change how snow slides; tilt, surface friction, and weather do.",
+    "b": "The inverter's voltage window does not change how snow sheds from the module glass.",
+    "c": "Tilt angle is the main driver of shedding; azimuth affects melt timing but cannot replace tilt."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-012": {
+   "options": {
+    "a": "Identical daily production curves",
+    "b": "East-west yields more energy per kW",
+    "c": "Same peak time, lower output",
+    "d": "Different production profiles"
+   },
+   "distractorExplanations": {
+    "a": "East-west arrays produce a flatter, wider curve peaking morning and afternoon; south peaks at midday.",
+    "b": "At US latitudes south-facing arrays usually yield more annual energy per kW; east-west trades yield for a broader profile.",
+    "c": "East and west faces peak in morning and afternoon respectively, not at the same solar-noon peak as south."
+   }
+  },
+  "nabcep-associate-readiness-check-codes-014": {
+   "options": {
+    "a": "Final AHJ inspection sign-off and permit closure",
+    "b": "Annual cleaning and inspection after handover",
+    "c": "Safe correct operation and expected performance",
+    "d": "Module flash test data at the factory"
+   },
+   "distractorExplanations": {
+    "a": "AHJ sign-off is a code compliance step; commissioning is the installer's test of operation and performance.",
+    "b": "Recurring cleaning and inspection is O&M after handover, not commissioning at startup.",
+    "d": "Factory flash tests rate modules before shipping; commissioning verifies the installed system on site."
+   },
+   "explanation": "Safe correct operation and expected performance checks. Commissioning verifies that the installed system operates safely and correctly and performs as expected at startup."
+  },
+  "nabcep-associate-readiness-check-codes-015": {
+   "options": {
+    "a": "Initial commissioning and utility interconnection",
+    "b": "Inspection, cleaning as needed, fault response",
+    "c": "Permit filing and structural design review",
+    "d": "Warranty claims only after module failure"
+   },
+   "distractorExplanations": {
+    "a": "Commissioning and interconnection happen at startup, before the operations and maintenance period begins.",
+    "c": "Permitting and structural review are pre-installation design tasks, not ongoing O&M.",
+    "d": "O&M is proactive inspection and fault response; it is not limited to warranty claims after failure."
+   }
+  }
+ }
+}

@@ -1,0 +1,747 @@
+{
+ "aapc-cpc-readiness-check": {
+  "aapc-cpc-readiness-check-coding-guidelines-001": {
+   "options": {
+    "a": "Diagnoses and symptoms/reasons for the encounter",
+    "b": "Procedures and services performed by physicians",
+    "c": "Supplies, drugs, and durable medical equipment",
+    "d": "Inpatient hospital procedures and devices"
+   },
+   "distractorExplanations": {
+    "b": "Physician procedures and services are reported with CPT (HCPCS Level I), not with ICD-10-CM diagnosis codes.",
+    "c": "Supplies, drugs and DME are reported with HCPCS Level II codes, not with ICD-10-CM.",
+    "d": "Inpatient hospital procedures and devices are coded with ICD-10-PCS, the procedure system, not ICD-10-CM."
+   }
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-003": {
+   "options": {
+    "a": "Emerging technologies tracked for data collection and assessment",
+    "b": "Performance measures that support quality reporting programs",
+    "c": "Established medical services and procedures widely performed",
+    "d": "Supplies, drugs, and services not included in the CPT book"
+   },
+   "distractorExplanations": {
+    "a": "Emerging technologies tracked for data collection are CPT Category III codes (temporary, ending in T).",
+    "b": "Performance measurement and quality reporting codes are CPT Category II codes (ending in F), not Category I.",
+    "d": "Supplies, drugs and services outside CPT are reported with HCPCS Level II, a separate code set."
+   }
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-004": {
+   "options": {
+    "a": "Not otherwise specified — the unspecified code",
+    "b": "Newly established code — added this fiscal year",
+    "c": "Non-essential condition — not required on claims",
+    "d": "Not elsewhere classified — other specified"
+   },
+   "distractorExplanations": {
+    "a": "That is NOS: the documentation lacks detail, so the unspecified code is used; NEC means detail exists but no specific code.",
+    "b": "New codes are identified in the annual code update tables; NEC is a residual-category convention, not a new-code flag.",
+    "c": "NEC does not mark optional conditions; it directs the coder to the 'other specified' code when no precise code exists."
+   },
+   "explanation": "NEC/NOS conventions guide residual code selection when documentation specificity is limited or classification lacks detail. NEC is used when the documented condition is specific but no more precise code is available."
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-005": {
+   "options": {
+    "a": "A single code captures a condition and its manifestation",
+    "b": "Two codes are needed to capture the etiology and its manifestation",
+    "c": "A diagnosis is reported with a separate code for each symptom",
+    "d": "One code is reported for multiple unrelated conditions seen that day"
+   },
+   "distractorExplanations": {
+    "b": "Two codes (etiology then manifestation) is the dual-coding convention used when no combination code exists.",
+    "c": "Coding each symptom separately is the opposite of a combination code, which absorbs associated symptoms or complications.",
+    "d": "Combination codes join related conditions or a condition with its complication, not unrelated conditions from one visit."
+   },
+   "explanation": "Guidelines instruct use of combination codes when available rather than multiple codes unnecessarily. The combination code may also capture an associated condition or complication, as directed by the classification."
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-007": {
+   "options": {
+    "a": "Advisory only, unlike the parenthetical notes beneath codes",
+    "b": "Applicable to the first code listed under that heading",
+    "c": "Instructional and must be followed for correct coding",
+    "d": "Reference material for auditors, not for the coder assigning codes"
+   },
+   "distractorExplanations": {
+    "a": "Section guidelines are just as binding as parenthetical notes; both are instructional and govern code selection.",
+    "b": "Section and heading guidelines apply to every code in that section or heading, not just the first code listed.",
+    "d": "The guidelines direct the coder at the point of code assignment; they are not merely audit reference material."
+   }
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-008": {
+   "options": {
+    "a": "Replace the injury code as the first-listed diagnosis",
+    "b": "Report the nature of the injury, such as fracture or laceration",
+    "c": "Identify the place of service where the injury was treated",
+    "d": "Provide information about how an injury/poisoning occurred"
+   },
+   "distractorExplanations": {
+    "a": "External cause codes are never first-listed; they supplement the injury code, which stays sequenced first.",
+    "b": "The nature of the injury (fracture, laceration) is coded in Chapter 19 S/T codes; external causes describe cause and intent.",
+    "c": "Treatment setting is the claim POS field; Y92 place-of-occurrence codes describe where the injury happened."
+   },
+   "explanation": "External causes supplement injury coding; they do not replace the injury diagnosis. Report them when required or assigned."
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-009": {
+   "options": {
+    "a": "Left, right, or bilateral when the classification provides those options",
+    "b": "Left or right only, with bilateral reported using two codes",
+    "c": "The side most often affected by the condition when the note does not state one",
+    "d": "Side information through modifiers RT/LT instead of the code"
+   },
+   "distractorExplanations": {
+    "b": "When a bilateral code exists it is used; separate left and right codes are only for conditions without a bilateral option.",
+    "c": "If laterality is not documented the unspecified side code is assigned (or the provider queried); the side is never assumed.",
+    "d": "RT/LT are HCPCS modifiers for procedure codes; ICD-10-CM laterality is built into the diagnosis code characters."
+   },
+   "explanation": "Choose the most specific laterality code supported; unspecified if not documented. Laterality must also be supported by documentation."
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-010": {
+   "options": {
+    "a": "Locate a candidate code in the Tabular List, then confirm it in the Alphabetic Index",
+    "b": "Locate a candidate code in the Index, then verify and complete coding in the Tabular List",
+    "c": "Assign the code shown in the Index when it is complete to all characters",
+    "d": "Locate a code in the Index, then verify it against the payer's LCD list"
+   },
+   "distractorExplanations": {
+    "a": "The order is reversed: the Alphabetic Index is searched first, and the Tabular List is where the code is verified.",
+    "c": "Even a code that looks complete in the Index must be verified in the Tabular for notes, excludes and 7th characters.",
+    "d": "LCDs decide coverage, not code assignment; verification of the code itself happens in the Tabular List."
+   }
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-011": {
+   "options": {
+    "a": "Code the suspected condition as if confirmed",
+    "b": "Code signs, symptoms, or abnormal findings",
+    "c": "Code a Z03 observation code for the possible condition",
+    "d": "Code R69 illness unspecified until tests return"
+   },
+   "distractorExplanations": {
+    "a": "Coding uncertain diagnoses as confirmed is the inpatient rule; outpatient coding goes to the highest degree of certainty.",
+    "c": "Z03 observation codes apply when a suspected condition is ruled out and no signs or symptoms are present.",
+    "d": "R69 is a nonspecific code; documented signs and symptoms are more specific and are coded instead."
+   },
+   "explanation": "Outpatient guidelines allow coding of documented signs/symptoms when no confirmed diagnosis exists. Code those documented as the reason for the encounter."
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-012": {
+   "options": {
+    "a": "ICD-10-PCS (inpatient)",
+    "b": "CPT (HCPCS Level I)",
+    "c": "HCPCS Level II",
+    "d": "ICD-10-CM (diagnoses)"
+   },
+   "distractorExplanations": {
+    "a": "ICD-10-PCS reports inpatient facility procedures on hospital claims, not physician services on professional claims.",
+    "c": "HCPCS Level II mainly reports supplies, drugs, DME and some services not in CPT, not core physician procedures.",
+    "d": "ICD-10-CM reports diagnoses and reasons for the encounter; procedures and services are reported with CPT."
+   }
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-013": {
+   "options": {
+    "a": "The excluded condition may be coded additionally when it is present",
+    "b": "The conditions are mutually exclusive and should not be coded together",
+    "c": "The excluded condition must be sequenced first when both are present",
+    "d": "The code requires an additional code to identify the manifestation present"
+   },
+   "distractorExplanations": {
+    "a": "'May be coded additionally when present' describes Excludes2 (not included here), not the pure Excludes1 exclusion.",
+    "c": "Sequencing directions come from 'code first' notes; Excludes1 says the two codes are not reported together.",
+    "d": "Requiring a manifestation code is a 'use additional code' instruction, unrelated to an Excludes1 note."
+   }
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-014": {
+   "options": {
+    "a": "Inpatient facility procedures reported on the hospital UB-04 claim",
+    "b": "Supplies, drugs, durable medical equipment, and certain services not in CPT",
+    "c": "Emerging technology services tracked with temporary Category III codes",
+    "d": "Physician office visits, surgeries, and diagnostic tests"
+   },
+   "distractorExplanations": {
+    "a": "Inpatient facility procedures on the UB-04 are coded with ICD-10-PCS, not HCPCS Level II.",
+    "c": "Category III codes for emerging technology are part of CPT (HCPCS Level I), not HCPCS Level II.",
+    "d": "Office visits, surgeries and diagnostic tests are CPT (HCPCS Level I) codes, not Level II."
+   }
+  },
+  "aapc-cpc-readiness-check-coding-guidelines-015": {
+   "options": {
+    "a": "The patient's home address region for payment locality",
+    "b": "The setting where the service was rendered",
+    "c": "The type of provider, such as a physician or nurse practitioner",
+    "d": "The facility's NPI and billing address"
+   },
+   "distractorExplanations": {
+    "a": "POS is not the patient's address; payment locality follows where the service was furnished, not where the patient lives.",
+    "c": "Provider type and specialty are shown by the taxonomy code, not the two-digit place-of-service code.",
+    "d": "Facility NPI and address go in the service facility and billing provider fields (boxes 32-33), not the POS code."
+   }
+  },
+  "aapc-cpc-readiness-check-evaluation-management-001": {
+   "options": {
+    "a": "Medical decision making or total time on the date of the encounter",
+    "b": "History, exam, and MDM, with all three key components required",
+    "c": "Face-to-face time, when counseling exceeds 50 percent of the visit",
+    "d": "Number of exam bullets documented under the 1997 guidelines"
+   },
+   "distractorExplanations": {
+    "b": "The three-key-component model was retired for office/outpatient E/M in 2021; history and exam are now only 'medically appropriate'.",
+    "c": "The 50 percent counseling rule is the pre-2021 time rule; current office E/M uses total time on the date, including non-face-to-face.",
+    "d": "Counting 1997 exam bullets no longer selects office E/M levels; the exam does not drive the level at all since 2021."
+   },
+   "explanation": "Since 2021 office E/M revisions, MDM or time drives levels; older exam-bullet counting is not the current office paradigm. Apply the CPT guidelines for whichever basis is used."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-002": {
+   "options": {
+    "a": "The past two years",
+    "b": "The past three years",
+    "c": "The past five years",
+    "d": "The past seven years"
+   },
+   "distractorExplanations": {
+    "a": "Two years is too short; CPT treats a patient as established if seen by the same specialty/group within the past three years.",
+    "c": "Five years is not the CPT rule; after three years without a face-to-face service the patient is new again.",
+    "d": "Seven years is a common records-retention figure, not the CPT new-versus-established patient window of three years."
+   }
+  },
+  "aapc-cpc-readiness-check-evaluation-management-003": {
+   "options": {
+    "a": "History, examination, and the number of diagnoses documented",
+    "b": "Problems addressed, total time spent, and number of orders placed",
+    "c": "Number/complexity of problems, data reviewed/analyzed, and risk",
+    "d": "Number of problems, the exam level, and risk of complications"
+   },
+   "distractorExplanations": {
+    "a": "History and exam are not MDM elements; MDM is problems, data reviewed/analyzed, and risk of patient management.",
+    "b": "Total time is an alternative basis for leveling, not an element of MDM; orders count only within the data element.",
+    "d": "The exam level is not part of MDM, and this omits the data reviewed/analyzed element."
+   },
+   "explanation": "MDM elements are problems, data, and risk under AMA E/M methodology. Risk refers to the risk of patient management."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-004": {
+   "options": {
+    "a": "Face-to-face time only, counted from when the provider enters the room",
+    "b": "Time spent by clinical staff rooming the patient and taking vitals",
+    "c": "Provider time on the patient's care across the entire week of the visit",
+    "d": "Total time on the date of the encounter spent on the patient's care"
+   },
+   "distractorExplanations": {
+    "a": "Since 2021 office E/M time is total provider time on the date, including non-face-to-face work, not just room time.",
+    "b": "Clinical staff time is excluded; only physician or other qualified health professional time counts toward the level.",
+    "c": "Only time on the date of the encounter counts; work on other days of the week is not added to the visit."
+   },
+   "explanation": "Counseling/coordination and other activities on that date may count when using time, per definitions. This includes non-face-to-face activities on that date, per CPT rules."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-005": {
+   "options": {
+    "a": "Focuses on routine preventive evaluation appropriate to age/risk",
+    "b": "Is selected by MDM level, the same way as other office E/M visits",
+    "c": "Requires a chief complaint to support medical necessity",
+    "d": "Is coded by total time spent on the date of service"
+   },
+   "distractorExplanations": {
+    "b": "Preventive medicine codes are chosen by new versus established status and patient age, not by MDM level.",
+    "c": "Preventive visits are not complaint-driven; they are reported with Z00-type encounter codes rather than a problem.",
+    "d": "Preventive medicine codes are not time-based; time leveling applies to problem-oriented office E/M codes."
+   }
+  },
+  "aapc-cpc-readiness-check-evaluation-management-006": {
+   "options": {
+    "a": "Decision for surgery made at an E/M visit the day before a major procedure",
+    "b": "Significant, separately identifiable E/M service on the same day as a procedure",
+    "c": "Unrelated E/M service by the same physician during a postoperative period",
+    "d": "Distinct procedural service that is normally bundled with another procedure"
+   },
+   "distractorExplanations": {
+    "a": "A decision for major surgery at the visit the day before or day of surgery is reported with modifier 57, not 25.",
+    "c": "An unrelated E/M during the postoperative period by the same physician is reported with modifier 24.",
+    "d": "Distinct procedural services that are normally bundled use modifier 59 or the X{EPSU} modifiers, not 25."
+   },
+   "explanation": "Modifier 25 appends to the E/M, not the procedure, when documentation supports separateness. It is reported by the same physician on the E/M code."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-007": {
+   "options": {
+    "a": "At least 15 minutes of care for a patient in an intensive care unit",
+    "b": "Moderate-complexity decision making for any patient seen in the ED",
+    "c": "High-complexity decision making for critically ill/injured patients",
+    "d": "High-complexity decision making for a stable patient in an ICU bed"
+   },
+   "distractorExplanations": {
+    "a": "Location does not define critical care, and 99291 needs at least 30 minutes of critical care time, not 15.",
+    "b": "Moderate MDM in the ED is an ED E/M service; critical care needs high-complexity care of a critically ill patient.",
+    "d": "A stable patient in an ICU bed is coded with hospital care codes; the ICU location alone is not critical care."
+   },
+   "explanation": "Critical care is a defined CPT service with time and clinical criteria—not ordinary E/M. Specific time thresholds apply (99291 covers the first 30-74 minutes)."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-008": {
+   "options": {
+    "a": "Assuming ongoing management of the patient at another provider's request",
+    "b": "Advice/opinion offered when the patient self-refers to a specialist",
+    "c": "A request from another provider with no written report required",
+    "d": "Advice/opinion requested by another provider, with report back"
+   },
+   "distractorExplanations": {
+    "a": "Taking over ongoing management is a transfer of care, which is reported with regular E/M codes, not a consultation.",
+    "b": "A patient-initiated specialist visit is not a consultation; the request must come from a physician or other provider.",
+    "c": "A consultation requires a written report back to the requesting provider; omitting it fails the request-render-report test."
+   }
+  },
+  "aapc-cpc-readiness-check-evaluation-management-009": {
+   "options": {
+    "a": "Where the service was rendered",
+    "b": "The billing provider's office address",
+    "c": "Where the patient lives for locality pricing",
+    "d": "The type of provider who rendered the service"
+   },
+   "distractorExplanations": {
+    "b": "The billing address goes in box 33; the POS code describes the setting where the service took place.",
+    "c": "Locality pricing follows where the service was furnished; the patient's residence is not what POS reports.",
+    "d": "Provider type and specialty are shown by the taxonomy code, not by the two-digit place-of-service code."
+   },
+   "explanation": "POS affects payment and must match the service setting. Examples include office, outpatient hospital, and ED."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-013": {
+   "options": {
+    "a": "A patient's own request for a specialist opinion and a written report",
+    "b": "A request for opinion/advice, rendering of services, and a written report",
+    "c": "A request for opinion/advice and the consultant assuming ongoing care",
+    "d": "A provider's request for advice, with a verbal update instead of a report"
+   },
+   "distractorExplanations": {
+    "a": "A patient-initiated request does not qualify; consultations require a request from a physician or other appropriate source.",
+    "c": "Assuming ongoing care is a transfer of care, which is not reported with consultation codes.",
+    "d": "The consultant must send a written report back; a verbal update alone fails the report requirement."
+   },
+   "explanation": "Classic consult requirements: request, render, report (payer policies vary) The report goes back to the requesting source."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-014": {
+   "options": {
+    "a": "Total time the ED physician spent on the date of the encounter",
+    "b": "The documented key components/MDM appropriate to ED E/M levels",
+    "c": "The triage acuity level assigned by the ED nurse at arrival",
+    "d": "The number of diagnostic tests ordered during the ED visit"
+   },
+   "distractorExplanations": {
+    "a": "ED E/M codes are not selected by time because ED care is shift-based; the office total-time rule does not apply.",
+    "c": "Nursing triage acuity (such as ESI) is a facility measure, not the basis for the physician's ED E/M level.",
+    "d": "Tests ordered feed only the data element of MDM; they do not alone determine the ED E/M level."
+   },
+   "explanation": "ED E/M leveling follows ED-specific CPT rules emphasizing history/exam/MDM as applicable. Office time rules do not apply to ED levels."
+  },
+  "aapc-cpc-readiness-check-evaluation-management-015": {
+   "options": {
+    "a": "Reporting both services, with modifier 25 on the preventive E/M",
+    "b": "Reporting both services, with modifier 25 on the problem E/M",
+    "c": "Reporting only the preventive code and adding the problem's diagnosis",
+    "d": "Reporting both services, with modifier 59 on the problem E/M"
+   },
+   "distractorExplanations": {
+    "a": "Modifier 25 goes on the problem-oriented office E/M code, not on the preventive medicine code.",
+    "c": "When the problem work is significant and separately identifiable, the problem E/M is also reportable, not just a diagnosis.",
+    "d": "Modifier 59 is for distinct procedures, not E/M services; a separate E/M on the same day uses modifier 25."
+   },
+   "explanation": "Significant separately identifiable problem E/M may be reported with preventive care using modifier 25. Both are reported when the problem is significant and separately identifiable."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-001": {
+   "options": {
+    "a": "Local infiltration, certain related E/M, and routine postoperative care",
+    "b": "Treatment of postoperative complications that require a return to the OR",
+    "c": "General anesthesia provided by a separate anesthesia professional",
+    "d": "Unrelated E/M visits by the surgeon during the postoperative period"
+   },
+   "distractorExplanations": {
+    "b": "A return to the OR for complications is separately reportable with modifier 78; it is not part of the package.",
+    "c": "Anesthesia by a separate anesthesia provider is billed separately; only local, metacarpal/digital block or topical is included.",
+    "d": "Unrelated E/M visits during the global period are separately reportable with modifier 24."
+   },
+   "explanation": "CPT surgical package and payer global periods define what is bundled vs separately reportable. Coverage applies within the global period as defined."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-002": {
+   "options": {
+    "a": "Staged or planned related procedure by the same physician during the postoperative period",
+    "b": "Unplanned return to the OR for a related procedure during the postoperative period",
+    "c": "Unrelated procedure by the same physician during the postoperative period",
+    "d": "Repeat procedure by the same physician after the original procedure"
+   },
+   "distractorExplanations": {
+    "a": "A staged, planned or more extensive related procedure in the global period is modifier 58, not the unplanned 78.",
+    "c": "An unrelated procedure by the same physician during the postoperative period is reported with modifier 79.",
+    "d": "A repeat procedure by the same physician is modifier 76; 78 is an unplanned return to the OR for a related procedure."
+   }
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-003": {
+   "options": {
+    "a": "Determine whether a service is medically necessary for the diagnosis coded",
+    "b": "Assign the relative value units used to price each CPT code",
+    "c": "Prevent improper reporting of services that should not be billed together",
+    "d": "Identify procedures that require prior authorization by Medicare"
+   },
+   "distractorExplanations": {
+    "a": "Medical necessity for a diagnosis is set by NCDs and LCDs, not by NCCI procedure-to-procedure edits.",
+    "b": "RVUs come from the Medicare Physician Fee Schedule (RBRVS), not from NCCI edits.",
+    "d": "Prior authorization lists are separate Medicare programs; NCCI edits address code pairs and units, not PA."
+   }
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-004": {
+   "options": {
+    "a": "CPT surgical codes with modifier 47 and anesthesia time in minutes",
+    "b": "CPT anesthesia codes with base units plus RVUs taken from the surgery code",
+    "c": "ICD-10-PCS anesthesia section codes on the professional claim",
+    "d": "CPT anesthesia codes with base units + time units + modifying units"
+   },
+   "distractorExplanations": {
+    "a": "Modifier 47 is for anesthesia by the surgeon; anesthesia providers report CPT anesthesia codes 00100-01999 with time.",
+    "b": "Anesthesia payment uses base units plus time units times the anesthesia conversion factor, not surgical RVUs.",
+    "c": "ICD-10-PCS is for inpatient facility procedures and has no professional anesthesia codes; professionals use CPT."
+   },
+   "explanation": "Anesthesia payment formulas combine base and time; physical status/qualifying circumstances may apply. Payer rules govern the modifying units."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-005": {
+   "options": {
+    "a": "Multiple procedures performed at the same session by the same provider",
+    "b": "Bilateral procedures performed at the same session by the same provider",
+    "c": "A distinct procedure performed at a separate session on the same day",
+    "d": "Two surgeons performing distinct parts of the same procedure"
+   },
+   "distractorExplanations": {
+    "b": "Bilateral procedures at the same session are reported with modifier 50, not modifier 51.",
+    "c": "A distinct procedure at a separate session is reported with modifier 59 or XE, not modifier 51.",
+    "d": "Two surgeons performing distinct parts of one procedure is co-surgery, reported with modifier 62."
+   }
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-006": {
+   "options": {
+    "a": "The code is reported with modifier 51 whenever it is billed",
+    "b": "The code is not reported in addition when integral",
+    "c": "The code may be billed only when performed on a separate day",
+    "d": "The code is an add-on reported in addition to the larger service"
+   },
+   "distractorExplanations": {
+    "a": "Modifier 51 marks multiple procedures; the separate procedure designation does not require modifier 51.",
+    "c": "A separate procedure can be reported on the same day when done alone or at a distinct site/session (with 59/X modifiers).",
+    "d": "Add-on codes are marked with '+'; separate procedures are bundled when integral, not added on."
+   },
+   "explanation": "If performed alone for a distinct reason, a 'separate procedure' may be reportable; otherwise bundled. The code is usually a component of a larger service."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-007": {
+   "options": {
+    "a": "Complexity, number of sutures placed, and the patient's age",
+    "b": "Length of each wound reported separately, with location ignored",
+    "c": "Complexity (simple/intermediate/complex), length, and location",
+    "d": "Wound depth, anesthetic used, and time spent on the repair"
+   },
+   "distractorExplanations": {
+    "a": "Suture count and patient age are not CPT repair criteria; complexity, summed length and anatomic location are.",
+    "b": "Lengths of same-complexity repairs in the same anatomic grouping are summed, and location changes the code range.",
+    "d": "Local anesthesia is included and time is not a criterion; depth matters only through the complexity classification."
+   }
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-008": {
+   "options": {
+    "a": "0-day, 30-day, and 60-day globals depending on the procedure",
+    "b": "10-day globals for minor and 30-day globals for major procedures",
+    "c": "90-day globals for every surgery, counted from the date of admission",
+    "d": "0-day, 10-day, and 90-day globals depending on the procedure"
+   },
+   "distractorExplanations": {
+    "a": "Medicare global periods are 0, 10 and 90 days; 30-day and 60-day globals are not Medicare global indicators.",
+    "b": "Major procedures carry a 90-day global (plus the day before surgery), not 30 days.",
+    "c": "Minor procedures have 0- or 10-day globals, and the 90-day period runs from the day after surgery, not admission."
+   }
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-009": {
+   "options": {
+    "a": "Another surgeon assists the primary surgeon",
+    "b": "Two surgeons perform distinct parts of one procedure",
+    "c": "A nonphysician practitioner assists at surgery",
+    "d": "A team of surgeons performs a complex procedure together"
+   },
+   "distractorExplanations": {
+    "b": "Two surgeons performing distinct parts of one procedure is co-surgery, reported with modifier 62.",
+    "c": "PA, NP or CNS assistants at surgery are reported with modifier AS for Medicare, not modifier 80.",
+    "d": "Team surgery for a complex procedure is reported with modifier 66, not an assistant surgeon modifier."
+   },
+   "explanation": "Documentation must support necessity; payer assistant policies vary (including PA/NP assisting modifiers). Assistance must be medically necessary and allowed by the payer."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-010": {
+   "options": {
+    "a": "A bullet (●) symbol and are reported after the primary procedure",
+    "b": "A '+' symbol and are never reported as stand-alone primary codes",
+    "c": "A lightning bolt and are reported with modifier 51 attached",
+    "d": "A null symbol (⊘) and are exempt from multiple procedure rules"
+   },
+   "distractorExplanations": {
+    "a": "The bullet (●) marks new codes in the current CPT edition; add-on codes are marked with a plus sign.",
+    "c": "The lightning bolt marks vaccine codes pending FDA approval, and add-on codes are exempt from modifier 51.",
+    "d": "The null symbol (⊘) marks modifier 51 exempt codes, which are primary codes, not add-on codes."
+   }
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-011": {
+   "options": {
+    "a": "The procedure plus any E/M visit during the global period, related or not",
+    "b": "The procedure and related typical pre-/intra-/postoperative care",
+    "c": "The procedure plus anesthesia provided by a separate anesthesiologist",
+    "d": "The procedure only, with each postoperative visit billed separately"
+   },
+   "distractorExplanations": {
+    "a": "Unrelated E/M visits in the global period are separately reportable with modifier 24; only related care is bundled.",
+    "c": "Anesthesia by a separate anesthesiologist is billed by that provider; only local or topical anesthesia is in the package.",
+    "d": "Routine related postoperative visits are included in the package and are not billed separately."
+   },
+   "explanation": "Global surgical package covers the operation and routine related care in the global period. The package covers this care for the global period."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-012": {
+   "options": {
+    "a": "Bilateral procedures performed at the same session by the same provider",
+    "b": "Multiple procedures performed at the same session by the same provider",
+    "c": "Two surgeons performing distinct parts of one procedure",
+    "d": "A procedure discontinued after anesthesia was administered"
+   },
+   "distractorExplanations": {
+    "a": "Bilateral procedures at the same session are reported with modifier 50, not modifier 51.",
+    "c": "Two surgeons performing distinct parts of one procedure is co-surgery, reported with modifier 62.",
+    "d": "A discontinued procedure is reported by the physician with modifier 53, not the multiple-procedure modifier 51."
+   }
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-013": {
+   "options": {
+    "a": "The surgeon makes the first incision after induction is complete",
+    "b": "The anesthesiologist begins to prepare the patient for anesthesia",
+    "c": "The anesthesiologist completes the preoperative assessment in holding",
+    "d": "The patient is intubated and induction is complete"
+   },
+   "distractorExplanations": {
+    "a": "Incision comes well after anesthesia time starts; time begins when the anesthesiologist starts preparing the patient.",
+    "c": "The preanesthesia evaluation is included in the base units, so it is not counted as anesthesia time.",
+    "d": "Time starts with preparation for induction, before intubation, not after induction is complete."
+   },
+   "explanation": "Anesthesia time starts with preparation for anesthesia induction and ends when the anesthesiologist is no longer in personal attendance. Preparation takes place in the OR or procedure area."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-014": {
+   "options": {
+    "a": "Reported in addition to a larger related procedure, with modifier 51 appended",
+    "b": "Usually considered integral to a larger procedure and not separately reported",
+    "c": "Reportable only with modifier 59 even when performed alone",
+    "d": "An add-on code reported with the primary procedure it supports"
+   },
+   "distractorExplanations": {
+    "a": "When integral to the larger related procedure it is bundled; modifier 51 does not make it separately payable.",
+    "c": "When performed alone it is reported without any modifier; 59/X modifiers apply only with another procedure.",
+    "d": "Add-on codes carry a '+' and are always secondary; separate procedures are standalone codes bundled when integral."
+   },
+   "explanation": "“Separate procedure” codes are typically not unbundled from a more comprehensive related procedure. This applies when it is performed as part of that larger service."
+  },
+  "aapc-cpc-readiness-check-surgery-anesthesia-015": {
+   "options": {
+    "a": "The patient's ASA physical status classification",
+    "b": "The anesthesia provider's level of medical direction",
+    "c": "Qualifying circumstances such as extreme age or emergency",
+    "d": "The base unit value assigned to the anesthesia code"
+   },
+   "distractorExplanations": {
+    "b": "Medical direction or supervision level is shown with modifiers AA, QK, QX, QY and QZ, not P1-P6.",
+    "c": "Extreme age, emergency and similar factors are reported with qualifying circumstance codes 99100-99140.",
+    "d": "Base units come from the anesthesia code itself; P modifiers report the patient's ASA physical status."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-001": {
+   "options": {
+    "a": "Reporting a higher-level service than documented/supported",
+    "b": "Reporting a lower level than documented to avoid payer audits",
+    "c": "Billing component codes separately instead of one bundled code",
+    "d": "Billing for a service that the provider did not perform"
+   },
+   "distractorExplanations": {
+    "b": "Reporting a lower level than documented is downcoding (undercoding), also noncompliant but the opposite of upcoding.",
+    "c": "Billing components instead of the bundled code is unbundling, a different improper coding practice.",
+    "d": "Billing for services not rendered is phantom billing, a separate fraud type from inflating a real service's level."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-002": {
+   "options": {
+    "a": "Honest clerical corrections via timely voids/replacements",
+    "b": "Knowingly submitting false or fraudulent claims to the government",
+    "c": "Accepting gifts from vendors in exchange for patient referrals",
+    "d": "Physician referrals to a lab the physician has a financial interest in"
+   },
+   "distractorExplanations": {
+    "c": "Paying or accepting remuneration for referrals is addressed by the Anti-Kickback Statute, not the False Claims Act itself.",
+    "d": "Self-referral to an entity with a financial relationship is governed by the Stark Law, not the False Claims Act itself.",
+    "a": "Good-faith corrections differ."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-003": {
+   "options": {
+    "a": "Workplace safety rules and sharps injury logs",
+    "b": "Electronic transaction formats and code set standards",
+    "c": "Protected health information use and disclosure",
+    "d": "Technical safeguards such as encryption and access logs"
+   },
+   "distractorExplanations": {
+    "a": "Workplace safety and sharps injury logs are OSHA requirements, not part of the HIPAA Privacy Rule.",
+    "b": "Transaction formats and code sets fall under the HIPAA Transactions and Code Sets rule, not the Privacy Rule.",
+    "d": "Technical safeguards for electronic PHI are required by the HIPAA Security Rule, separate from the Privacy Rule."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-004": {
+   "options": {
+    "a": "Diagnoses, symptoms, and reasons for the patient encounter",
+    "b": "Inpatient facility procedures on the UB-04",
+    "c": "Emerging technology services tracked with Category III codes",
+    "d": "Drugs, supplies, DME, and certain services not in CPT"
+   },
+   "distractorExplanations": {
+    "a": "Diagnoses, symptoms and encounter reasons are reported with ICD-10-CM, not HCPCS Level II.",
+    "b": "Inpatient facility procedures on the UB-04 are coded with ICD-10-PCS, not HCPCS Level II.",
+    "c": "Category III codes for emerging technology belong to CPT (HCPCS Level I), not HCPCS Level II."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-005": {
+   "options": {
+    "a": "A provider believes Medicare may deny a service as not reasonable/necessary",
+    "b": "A Medicare Advantage enrollee may owe for a service the plan will not cover",
+    "c": "A hospital inpatient is told about the right to appeal a discharge decision",
+    "d": "A patient is notified that Medicaid will be billed as the secondary payer"
+   },
+   "distractorExplanations": {
+    "b": "The ABN is not used for Medicare Advantage enrollees; MA plans handle this through organization determinations.",
+    "c": "Inpatient discharge appeal rights are given on the Important Message from Medicare (IM), not the ABN.",
+    "d": "Secondary-payer billing is coordination of benefits; the ABN addresses expected Medicare denial and patient liability."
+   },
+   "explanation": "ABN shifts financial liability for expected denials when properly executed for Medicare Part B situations. The beneficiary may then be financially liable."
+  },
+  "aapc-cpc-readiness-check-compliance-billing-006": {
+   "options": {
+    "a": "A patient's unique Medicare Beneficiary Identifier shown on claims",
+    "b": "A unique identification number for covered health care providers",
+    "c": "A taxonomy code describing the provider's type and specialty",
+    "d": "A federal tax ID used to report the practice's income"
+   },
+   "distractorExplanations": {
+    "a": "The Medicare Beneficiary Identifier identifies the patient; the NPI identifies the health care provider.",
+    "c": "The taxonomy code is a separate 10-character code describing provider type and specialty, not the NPI itself.",
+    "d": "The federal tax ID (EIN/TIN) is used for tax reporting; the NPI is a 10-digit provider identifier for HIPAA transactions."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-007": {
+   "options": {
+    "a": "Reporting a higher E/M level than the documentation supports",
+    "b": "Reporting the comprehensive panel code when all component tests were done",
+    "c": "Billing component codes separately when a comprehensive code includes them",
+    "d": "Appending modifier 59 when services are distinct and documented"
+   },
+   "distractorExplanations": {
+    "a": "Reporting a higher level than documented is upcoding, a different compliance violation from unbundling.",
+    "b": "Using the panel code when every component test was performed is correct coding, the opposite of unbundling.",
+    "d": "Modifier 59 on truly distinct, documented services is appropriate use, not unbundling."
+   },
+   "explanation": "Unbundling to increase payment violates NCCI/CPT inclusive coding principles. Billing the components this way is contrary to CPT and NCCI rules."
+  },
+  "aapc-cpc-readiness-check-compliance-billing-008": {
+   "options": {
+    "a": "Services the patient requests and agrees to pay for out of pocket",
+    "b": "Services that are covered benefits under the patient's plan",
+    "c": "Services ordered by a physician, which makes them necessary",
+    "d": "Services are reasonable and necessary for diagnosis/treatment"
+   },
+   "distractorExplanations": {
+    "a": "Patient willingness to pay does not establish medical necessity; the clinical need must be documented.",
+    "b": "Being a covered benefit is a coverage question; a covered service can still be denied as not medically necessary.",
+    "c": "A physician order alone does not make a service necessary; the documentation must support the clinical need."
+   },
+   "explanation": "Coverage policies/LCDs/NCDs define necessity; documentation must support it. Necessity is judged against payer coverage criteria."
+  },
+  "aapc-cpc-readiness-check-compliance-billing-009": {
+   "options": {
+    "a": "Policies, training, auditing, and a process to report/respond to issues",
+    "b": "Policies and training, with audits done only after a payer complaint",
+    "c": "Policies, training, and audits, with no anonymous reporting line",
+    "d": "Auditing and training, with discipline left out of written standards"
+   },
+   "distractorExplanations": {
+    "b": "OIG guidance calls for ongoing internal auditing and monitoring, not audits triggered after a payer complaint.",
+    "c": "Open lines of communication, including an anonymous reporting option, are one of the OIG's seven core elements.",
+    "d": "Enforcing standards through well-publicized disciplinary guidelines is one of the OIG's seven core elements."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-010": {
+   "options": {
+    "a": "A significant, separately identifiable E/M service on the day of a procedure",
+    "b": "A distinct procedural service not normally reported together",
+    "c": "A bilateral procedure performed at the same operative session",
+    "d": "A repeat procedure by the same physician on the same day"
+   },
+   "distractorExplanations": {
+    "a": "A significant, separately identifiable E/M on the day of a procedure is reported with modifier 25, not 59.",
+    "c": "Bilateral procedures at the same session are reported with modifier 50, not 59 or the X modifiers.",
+    "d": "A repeat procedure by the same physician is reported with modifier 76, not the distinct-service modifier 59."
+   },
+   "explanation": "Use distinct-service modifiers only with documentation; overuse is an audit target. Use it only when the criteria are met."
+  },
+  "aapc-cpc-readiness-check-compliance-billing-011": {
+   "options": {
+    "a": "Billing errors made in good faith and refunded within 60 days",
+    "b": "Knowingly submitting false or fraudulent claims for government payment",
+    "c": "Kickbacks paid to induce referrals of federal health program patients",
+    "d": "Disclosure of patient information without authorization"
+   },
+   "distractorExplanations": {
+    "a": "Good-faith errors refunded promptly lack the knowing intent the False Claims Act requires for liability.",
+    "c": "Kickbacks for referrals are addressed by the Anti-Kickback Statute, a separate law from the False Claims Act.",
+    "d": "Unauthorized disclosure of PHI is a HIPAA Privacy Rule violation, not a False Claims Act matter."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-012": {
+   "options": {
+    "a": "Reporting a lower-level service than documented to limit audit risk",
+    "b": "Reporting a higher-level service than supported by documentation",
+    "c": "Billing separately for components included in a comprehensive code",
+    "d": "Billing a service that was not performed, using a valid code"
+   },
+   "distractorExplanations": {
+    "a": "Reporting a lower level than documented is downcoding, which is also inaccurate but the opposite of upcoding.",
+    "c": "Billing components of a comprehensive code separately is unbundling, a distinct improper coding practice.",
+    "d": "Billing for a service not performed is billing for services not rendered, a separate fraud type from upcoding."
+   },
+   "explanation": "Upcoding is a compliance risk and potential fraud when unsupported. It is typically done to increase payment."
+  },
+  "aapc-cpc-readiness-check-compliance-billing-013": {
+   "options": {
+    "a": "Set coverage rules that define medical necessity for each service",
+    "b": "Prevent improper payment of services that should not be billed together",
+    "c": "Assign relative value units used to price each CPT code",
+    "d": "Identify the global surgical period assigned to each procedure code"
+   },
+   "distractorExplanations": {
+    "a": "Coverage and medical necessity rules come from NCDs and LCDs, not from NCCI edits.",
+    "c": "Relative value units come from the Medicare Physician Fee Schedule (RBRVS), not from NCCI edits.",
+    "d": "Global surgical days are indicators in the Medicare Physician Fee Schedule database, not NCCI edits."
+   }
+  },
+  "aapc-cpc-readiness-check-compliance-billing-014": {
+   "options": {
+    "a": "Notify a beneficiary that Medicaid will cover the balance",
+    "b": "Notify a beneficiary that Medicare may deny a service",
+    "c": "Notify an inpatient of the right to appeal a hospital discharge",
+    "d": "Document the patient's consent to the procedure being performed"
+   },
+   "distractorExplanations": {
+    "a": "The ABN shifts potential liability to the beneficiary; it does not promise Medicaid will pay the balance.",
+    "c": "Inpatient discharge appeal rights are given on the Important Message from Medicare (IM), not the ABN.",
+    "d": "The ABN is a financial liability notice; consent to the procedure is a separate clinical document."
+   },
+   "explanation": "ABNs shift potential financial liability for anticipated Medicare noncoverage when properly used. This lets the beneficiary decide whether to accept financial responsibility."
+  },
+  "aapc-cpc-readiness-check-compliance-billing-015": {
+   "options": {
+    "a": "The service is a covered benefit under the patient's plan",
+    "b": "The service is reasonable and necessary for diagnosis or treatment",
+    "c": "The service was ordered by a licensed physician for the patient",
+    "d": "The service is requested by the patient after informed consent"
+   },
+   "distractorExplanations": {
+    "a": "Being a covered benefit is a coverage question; a covered service can still be denied as not medically necessary.",
+    "c": "A physician order alone does not establish necessity; documentation must show the clinical need for the service.",
+    "d": "A patient request, even with informed consent, does not make a service medically necessary."
+   },
+   "explanation": "Coverage depends on documented medical necessity aligned with payer policies. It must meet payer/coverage rules and be supported by documentation."
+  }
+ }
+}

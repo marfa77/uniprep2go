@@ -1,0 +1,669 @@
+{
+ "cdl-combination-readiness-check": {
+  "cdl-combination-readiness-check-coupling-002": {
+   "options": {
+    "a": "Trailer kingpin area squarely",
+    "b": "Trailer landing gear pads first",
+    "c": "Kingpin at an angle, off center",
+    "d": "Kingpin with jaws already closed"
+   },
+   "distractorExplanations": {
+    "b": "The landing gear supports the trailer on the ground; the fifth wheel meets the trailer at the kingpin and apron.",
+    "c": "Backing under at an angle can damage the landing gear and miss the jaws; back straight under the kingpin.",
+    "d": "The fifth-wheel jaws must be open to accept the kingpin; closed jaws cannot lock around it."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-005": {
+   "options": {
+    "a": "Properly connected to matching gladhands",
+    "b": "Crossed if the trailer has spring brakes",
+    "c": "Connected service first, supply optional",
+    "d": "Stored on the dummy couplers while towing"
+   },
+   "distractorExplanations": {
+    "b": "Lines are never crossed; supply goes to supply and service to service, or trailer brakes will not work correctly.",
+    "c": "Both lines are required: the supply line charges the trailer and releases its springs, service applies brakes.",
+    "d": "Dummy couplers are used when bobtailing; with a trailer both lines must be coupled to its gladhands."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-006": {
+   "options": {
+    "a": "Kingpin is captured—still verify visually/tug",
+    "b": "Trailer is coupled; no visual check is needed",
+    "c": "Jaws are open and ready to accept the kingpin",
+    "d": "Trailer brakes are set and lines are connected"
+   },
+   "distractorExplanations": {
+    "b": "A locked indicator can be wrong (for example a high hook); the CDL manual requires a visual check and tug test.",
+    "c": "That is the unlocked position before coupling; a locked indication means the jaws have closed.",
+    "d": "The jaw lock indication concerns the kingpin only; air line connection and brakes are checked separately."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-007": {
+   "options": {
+    "a": "No effect, since both lines carry the same pressure",
+    "b": "Trailer brakes apply incorrectly / unsafe response",
+    "c": "Tractor brakes failing while trailer brakes work normally",
+    "d": "Faster trailer brake release when the knob is pushed"
+   },
+   "distractorExplanations": {
+    "a": "Supply and service lines do different jobs; crossing them can leave the trailer without brakes or unable to release.",
+    "c": "Crossed lines affect the trailer's brakes, not the tractor's own service brakes.",
+    "d": "Crossed lines send air to the wrong circuit; the trailer brakes may not release or may not apply."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-008": {
+   "options": {
+    "a": "Weight distribution and off-tracking",
+    "b": "Trailer brake timing and air pressure",
+    "c": "Kingpin height and coupling strength",
+    "d": "Tractor protection valve operation"
+   },
+   "distractorExplanations": {
+    "b": "Brake timing depends on valves and lines; sliding the fifth wheel changes axle weights and off-tracking.",
+    "c": "Fifth-wheel height is a separate adjustment; sliding moves the coupling point forward or back.",
+    "d": "The tractor protection valve is an air-system component unaffected by fifth-wheel position."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-009": {
+   "options": {
+    "a": "Disconnect the air lines first, then lower the landing gear fully",
+    "b": "Lower landing gear, secure trailer, disconnect lines carefully",
+    "c": "Unlock the fifth wheel first, then lower the landing gear",
+    "d": "Release trailer brakes, then lower landing gear on the grade"
+   },
+   "distractorExplanations": {
+    "a": "The trailer is secured and the landing gear lowered before lines and electrical are disconnected.",
+    "c": "Unlocking before the landing gear is down risks the trailer dropping when the tractor moves.",
+    "d": "Trailer brakes stay set (and chocks used) during uncoupling so the trailer cannot roll."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-013": {
+   "options": {
+    "a": "Be connected, with lights checked only at night",
+    "b": "Be plugged in before air lines to power the brakes",
+    "c": "Rest on the catwalk unsecured to avoid strain",
+    "d": "Be connected and secure with working lights/ABS"
+   },
+   "distractorExplanations": {
+    "a": "Trailer lights and ABS power are required at all times, so the cord is checked on every coupling.",
+    "b": "Trailer brakes are air-operated; the pigtail powers lights and ABS, not brake application.",
+    "c": "An unsecured cord can snag, chafe or pull out; it should be connected and properly supported."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-014": {
+   "options": {
+    "a": "A small gap is fine if the locking lever is in the locked position",
+    "b": "Jaws closed around the kingpin head, not the shank",
+    "c": "Landing gear down and supporting the trailer weight",
+    "d": "No gap between upper/lower fifth wheel; locked; lines secure"
+   },
+   "distractorExplanations": {
+    "a": "Any gap between upper and lower fifth wheel can mean a high hook; there must be no space.",
+    "b": "The jaws must close around the kingpin shank; closing on the head is a failed coupling.",
+    "c": "After coupling the landing gear is raised fully; the fifth wheel carries the trailer."
+   }
+  },
+  "cdl-combination-readiness-check-coupling-015": {
+   "options": {
+    "a": "Drive slowly to a shop nearby",
+    "b": "Set the trailer brakes and go",
+    "c": "Raise fifth wheel height and go",
+    "d": "Do not go—recouple/inspect lock"
+   },
+   "distractorExplanations": {
+    "a": "An unlocked trailer can separate at any speed; the coupling must be fixed before moving.",
+    "b": "Trailer brakes do not secure the kingpin; a failed pull test means the jaws are not locked.",
+    "c": "Changing height without recoupling and checking the lock leaves an unsafe coupling."
+   }
+  },
+  "cdl-combination-readiness-check-handling-002": {
+   "options": {
+    "a": "Rear of trailer swings opposite the turn",
+    "b": "Trailer wheels track inside the tractor",
+    "c": "Tractor drive wheels lose grip in a turn",
+    "d": "Trailer rear swaying side to side at speed"
+   },
+   "distractorExplanations": {
+    "b": "That is off-tracking, where trailer wheels follow a shorter path than the tractor in a turn.",
+    "c": "Losing drive-wheel traction is a skid or jackknife risk, not tail swing.",
+    "d": "Side-to-side sway at speed is trailer sway or rearward amplification, not tail swing in a turn."
+   }
+  },
+  "cdl-combination-readiness-check-handling-003": {
+   "options": {
+    "a": "Brake firmly at the curve's apex",
+    "b": "Slow before the curve; steady gently",
+    "c": "Enter at the posted speed limit",
+    "d": "Coast through in neutral to let it settle"
+   },
+   "distractorExplanations": {
+    "a": "Braking in the curve shifts weight and can cause rollover or skids; slow down before entering.",
+    "c": "Posted curve speeds are set for cars; a loaded truck can roll over at or below the posted speed.",
+    "d": "Coasting in neutral removes engine braking and control; keep in gear with steady speed."
+   }
+  },
+  "cdl-combination-readiness-check-handling-004": {
+   "options": {
+    "a": "Single units / sudden steering inputs at speed",
+    "b": "Multiple units / gradual lane changes",
+    "c": "Lower speeds with long single trailers",
+    "d": "Multiple units / sudden steer inputs at speed"
+   },
+   "distractorExplanations": {
+    "a": "Rearward amplification grows with each added unit; a single trailer whips less than doubles or triples.",
+    "b": "Gradual steering limits amplification; sudden steer inputs at speed are what crack the whip.",
+    "c": "Amplification grows with speed and number of units, not with low-speed single-trailer driving."
+   }
+  },
+  "cdl-combination-readiness-check-handling-005": {
+   "options": {
+    "a": "Back toward the passenger side for a better view",
+    "b": "Use mirrors only and back up at a steady speed",
+    "c": "Turn the wheel the same way you want the trailer",
+    "d": "Get out and look; use a helper when available"
+   },
+   "distractorExplanations": {
+    "a": "The CDL manual says back toward the driver's side, where you can see more directly.",
+    "b": "Mirrors have blind spots; get out and look, and back slowly in the lowest reverse gear.",
+    "c": "When backing a trailer you turn the steering wheel opposite the direction you want the trailer to go."
+   }
+  },
+  "cdl-combination-readiness-check-handling-006": {
+   "options": {
+    "a": "Drive wheels lock while trailer pushes",
+    "b": "Trailer brakes apply slightly ahead",
+    "c": "Speed is reduced before a curve",
+    "d": "The trailer is fully loaded and sitting level"
+   },
+   "distractorExplanations": {
+    "b": "Trailer brakes leading the tractor tends to keep the rig straight; drive-wheel lockup causes jackknife.",
+    "c": "Slowing before curves reduces risk; hard braking that locks drive wheels raises it.",
+    "d": "Empty or lightly loaded trailers are more prone to skids and jackknife than loaded ones."
+   }
+  },
+  "cdl-combination-readiness-check-handling-007": {
+   "options": {
+    "a": "Same following distance as on dry pavement",
+    "b": "More following distance and smoother inputs",
+    "c": "Quick steering corrections to stop any sliding",
+    "d": "Engine brake set to high for more control"
+   },
+   "distractorExplanations": {
+    "a": "Stopping distance grows on slippery surfaces, so following distance must increase.",
+    "c": "Sudden steering on slick roads can start a skid or jackknife; inputs should be smooth.",
+    "d": "The CDL manual says turn off the engine brake on slippery roads, as it can cause drive-wheel skids."
+   }
+  },
+  "cdl-combination-readiness-check-handling-009": {
+   "options": {
+    "a": "Swing wide to the left before starting the turn",
+    "b": "Turn sharply and early so the trailer clears the curb",
+    "c": "Start the turn sooner, as you would in a car",
+    "d": "May need to go wider / set up earlier to avoid curb"
+   },
+   "distractorExplanations": {
+    "a": "Swinging left first invites drivers to pass on the right; turn wide as you complete the turn instead.",
+    "b": "Off-tracking makes the trailer cut inside; turning early drags its wheels over the curb.",
+    "c": "A long trailer off-tracks, so the turn starts later and wider than in a car."
+   }
+  },
+  "cdl-combination-readiness-check-handling-010": {
+   "options": {
+    "a": "Stops shorter than loaded since it is lighter",
+    "b": "Is more stable, so harder braking is safe",
+    "c": "Can be skid-prone on drive axle—adjust technique",
+    "d": "Needs the trailer air supply knob pushed in"
+   },
+   "distractorExplanations": {
+    "a": "The CDL manual notes bobtail tractors can take longer to stop because there is less traction.",
+    "b": "With little weight on the drive axle, hard braking can lock the drive wheels and skid.",
+    "d": "When bobtailing the trailer supply (red) knob stays out so tractor air is not lost through open lines."
+   }
+  },
+  "cdl-combination-readiness-check-handling-011": {
+   "options": {
+    "a": "Can load the tractor and unload trailer axles",
+    "b": "Moves weight rearward onto the trailer tandem axles",
+    "c": "Shifts weight off the steer axle onto the drive axles",
+    "d": "Does not occur when the fifth wheel is set forward"
+   },
+   "distractorExplanations": {
+    "b": "Braking shifts weight forward, not rearward onto the trailer axles.",
+    "c": "Braking transfers weight forward onto the steer axle, not off it.",
+    "d": "Weight transfer happens under any braking; fifth-wheel position only changes how it is shared."
+   },
+   "explanation": "Handling: Can load the tractor and unload trailer axles depending on setup. The exact effect depends on the setup."
+  },
+  "cdl-combination-readiness-check-handling-012": {
+   "options": {
+    "a": "Smooth brake/steer; proper speed; functioning trailer brakes",
+    "b": "Using the trailer hand valve alone for stops on slick roads",
+    "c": "Placing the heaviest part of the load at the rear of the trailer",
+    "d": "Braking hard in curves so the trailer stays in line"
+   },
+   "distractorExplanations": {
+    "b": "Using the hand valve to stop can lock trailer wheels and start a trailer skid.",
+    "c": "Poor load placement upsets balance; cargo should be spread with weight forward and low.",
+    "d": "Hard braking in curves is a classic cause of trailer skids and jackknife."
+   }
+  },
+  "cdl-combination-readiness-check-handling-013": {
+   "options": {
+    "a": "Trailer swing to the outside at high speed",
+    "b": "Jackknifing when drive wheels lock up",
+    "c": "Striking curbs/vehicles on inside of turns",
+    "d": "Rollover from a high center of gravity"
+   },
+   "distractorExplanations": {
+    "a": "Outside swing at speed is rearward amplification; off-tracking is the trailer cutting inside a turn.",
+    "b": "Jackknife comes from drive-wheel lockup under braking, not from turn path.",
+    "d": "Rollover depends on center of gravity and speed; off-tracking concerns the inside path of the trailer."
+   }
+  },
+  "cdl-combination-readiness-check-handling-014": {
+   "options": {
+    "a": "Trailer swing/rollover risk",
+    "b": "Fifth-wheel jaws unlocking",
+    "c": "Tractor protection valve trip",
+    "d": "Drive-axle brake fade"
+   },
+   "distractorExplanations": {
+    "b": "A properly locked fifth wheel does not unlock from steering; the danger is trailer swing and rollover.",
+    "c": "The TP valve responds to trailer air loss, not steering maneuvers.",
+    "d": "Fade comes from heat during long braking, not from a quick lane change."
+   }
+  },
+  "cdl-combination-readiness-check-handling-015": {
+   "options": {
+    "a": "Light, steady brake pressure all the way down the hill",
+    "b": "Downshifting partway down once the speed picks up",
+    "c": "Highest gear with the trailer hand valve for braking",
+    "d": "Proper gear and controlled braking plan before the hill"
+   },
+   "distractorExplanations": {
+    "a": "Constant light braking overheats the brakes and causes fade; use the right gear and snub braking.",
+    "b": "Downshifting after speed builds may be impossible; select the low gear before the downgrade.",
+    "c": "A high gear gives little engine braking, and the hand valve should not be used to slow the rig."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-001": {
+   "options": {
+    "a": "Tractor items only, since the trailer has its own inspection",
+    "b": "Lights and tires, with coupling checked at the first stop",
+    "c": "Fifth wheel, lines, lights, tires, brakes, coupling integrity",
+    "d": "Fifth wheel and kingpin, with air lines checked weekly"
+   },
+   "distractorExplanations": {
+    "a": "The driver's pre-trip covers the whole combination, including trailer and coupling.",
+    "b": "The coupling is checked before driving; a faulty coupling can separate on the first turn.",
+    "d": "Air lines are inspected on every pre-trip; leaks or crossed lines affect trailer brakes."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-002": {
+   "options": {
+    "a": "Correct paint color coding",
+    "b": "Lubrication with engine grease",
+    "c": "Matching part numbers on both",
+    "d": "Cracks, missing seals, leaks"
+   },
+   "distractorExplanations": {
+    "a": "Color coding helps match lines, but the seal check looks for cracks, missing seals and leaks.",
+    "b": "Gladhand seals are not greased; the check is for cracked or missing seals and air leaks.",
+    "c": "Part numbers do not show seal condition; inspect for cracks, missing seals and leaks."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-003": {
+   "options": {
+    "a": "Whether it is fully lowered when driving",
+    "b": "Crank handle stowed loosely for quick use",
+    "c": "Paint and rust on the outer legs only",
+    "d": "Cracks, missing pins, poor engagement"
+   },
+   "distractorExplanations": {
+    "a": "Landing gear must be fully raised when driving; the inspection looks for damage and engagement.",
+    "b": "The crank handle must be secured; a loose handle can swing and cause injury or damage.",
+    "c": "Cosmetic rust is not the concern; look for cracks, missing pins and poor engagement."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-004": {
+   "options": {
+    "a": "Tail, stop, turn, clearance, plate as required",
+    "b": "Stop and turn lights, with clearance lamps optional",
+    "c": "Tail and clearance lights, checked only at night",
+    "d": "Turn signals and the trailer ABS lamp alone"
+   },
+   "distractorExplanations": {
+    "b": "Clearance and marker lamps are required on trailers; they are not optional.",
+    "c": "Lights are checked on every pre-trip, and stop and turn signals are required at all times.",
+    "d": "Turn signals alone are not enough; tail, stop, clearance and plate lights must also work."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-005": {
+   "options": {
+    "a": "Expected where lines cross the frame",
+    "b": "A leak/failure risk—secure/repair",
+    "c": "Fine if wrapped with duct tape",
+    "d": "A problem only when it leaks air"
+   },
+   "distractorExplanations": {
+    "a": "Chafing is never expected; lines must be supported so they do not rub through.",
+    "c": "Tape hides damage and does not restore the line; chafed lines are secured or replaced.",
+    "d": "Chafed lines can fail suddenly; they are repaired before they start leaking."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-006": {
+   "options": {
+    "a": "Check only that it is greased evenly",
+    "b": "Measure the kingpin for fifth-wheel height",
+    "c": "Look for cracks, bends, improper locking",
+    "d": "Check it once a year at annual inspection"
+   },
+   "distractorExplanations": {
+    "a": "Grease does not reveal cracks or bends; inspect the kingpin itself for damage and locking.",
+    "b": "Fifth-wheel height is set separately; kingpin inspection looks for cracks, bends and locking.",
+    "d": "The kingpin and coupling are checked on every pre-trip, not only at the annual inspection."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-007": {
+   "options": {
+    "a": "Tread of 4/32 inch minimum on trailer tires",
+    "b": "Matching brands and duals touching",
+    "c": "Valve stems and hub caps only",
+    "d": "Inflation, tread, cuts, dual mating"
+   },
+   "distractorExplanations": {
+    "a": "The 4/32-inch minimum applies to steer tires; other tires, including trailer tires, need 2/32 inch.",
+    "b": "Duals must not touch each other; brand matching is not an inspection requirement.",
+    "c": "Valve stems are part of it, but inflation, tread, cuts and dual spacing must be checked."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-008": {
+   "options": {
+    "a": "Latches, seals, straps/chains per cargo type",
+    "b": "Door latches only, since cargo is the shipper's job",
+    "c": "Straps checked once at loading, not en route",
+    "d": "Seals and tarps, with tiedowns checked weekly"
+   },
+   "distractorExplanations": {
+    "b": "FMCSA rules make the driver responsible for checking cargo securement, not only the shipper.",
+    "c": "Securement is rechecked within the first 50 miles and periodically during the trip.",
+    "d": "Tiedowns are checked before every trip and en route, not on a weekly schedule."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-009": {
+   "options": {
+    "a": "Are normal as long as the trailer still rides level",
+    "b": "Matter only when the trailer is running empty",
+    "c": "Can cause lean/poor brake geometry—OOS risk",
+    "d": "Are fixed by raising tire pressure"
+   },
+   "distractorExplanations": {
+    "a": "Any air bag leak is a defect; a trailer can look level while losing support pressure.",
+    "b": "Leaking air bags affect ride height and brake geometry loaded or empty.",
+    "d": "Tire pressure does not compensate for suspension air loss; the leak must be repaired."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-010": {
+   "options": {
+    "a": "Is checked only on the tractor axles",
+    "b": "Must be within limits like tractor",
+    "c": "Can exceed limits with auto slacks",
+    "d": "Is not checked on spring brake axles"
+   },
+   "distractorExplanations": {
+    "a": "Trailer axle brakes have the same stroke limits and are part of the inspection.",
+    "c": "Automatic slack adjusters do not excuse overstroke; out-of-limit stroke is a defect.",
+    "d": "Spring brake chambers still have service pushrod stroke limits that must be met."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-011": {
+   "options": {
+    "a": "Stay lit while the trailer moves",
+    "b": "Light only when air pressure is low",
+    "c": "Behave per design—note faults",
+    "d": "Stay off during the start-up check"
+   },
+   "distractorExplanations": {
+    "a": "A lamp that stays lit while moving signals an ABS fault, not normal operation.",
+    "b": "The trailer ABS lamp reports ABS faults, not air pressure; it has nothing to do with low air.",
+    "d": "The lamp should come on briefly as a bulb check; staying dark can mean a failed bulb or system."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-012": {
+   "options": {
+    "a": "Not fully coupled / unsafe",
+    "b": "Normal fifth-wheel tilt",
+    "c": "Proper coupling height",
+    "d": "Need for more fifth-wheel grease"
+   },
+   "distractorExplanations": {
+    "b": "A visible gap is not normal tilt; it can mean a high hook with the kingpin not in the jaws.",
+    "c": "A gap shows the trailer is not seated on the fifth wheel; it is not a sign of correct height.",
+    "d": "Grease does not close a gap; the trailer must be recoupled and checked."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-013": {
+   "options": {
+    "a": "Stowed in the cab",
+    "b": "Present and secured",
+    "c": "Attached when loaded",
+    "d": "Left slack to drag"
+   },
+   "distractorExplanations": {
+    "a": "Safety chains must be attached between the units where required, not stored in the cab.",
+    "c": "Safety devices are required whenever towing, loaded or empty.",
+    "d": "Chains must have only enough slack for turns; dragging chains wear and can fail."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-014": {
+   "options": {
+    "a": "Lines and locks, with landing gear left partly down for support",
+    "b": "Electrical and locks, with air lines rechecked at the first fuel stop",
+    "c": "Lines, electrical, locks, landing gear up, chocks removed appropriately",
+    "d": "Landing gear up and chocks removed, with the jaws checked by the yard"
+   },
+   "distractorExplanations": {
+    "a": "Landing gear must be fully raised before driving; partly down gear can catch on rail crossings.",
+    "b": "Air lines are checked before moving; crossed or loose lines affect trailer brakes immediately.",
+    "d": "The driver personally verifies the jaws are locked; it cannot be left to yard staff."
+   }
+  },
+  "cdl-combination-readiness-check-inspection-015": {
+   "options": {
+    "a": "Optional on rear trailers",
+    "b": "A violation/inspection item",
+    "c": "Allowed if under 26,000 lb",
+    "d": "A defect only for hazmat"
+   },
+   "distractorExplanations": {
+    "a": "Where splash guards are required, they are required on every applicable unit, not optional.",
+    "c": "Weight does not exempt a vehicle where mud flaps are required; missing ones are a violation.",
+    "d": "Mud flap requirements apply to all vehicles covered by the rule, not just hazmat loads."
+   }
+  },
+  "cdl-combination-readiness-check-safety-001": {
+   "options": {
+    "a": "Proper speed, smooth control, functioning brakes/ABS technique",
+    "b": "Hard braking in curves to keep the trailer behind the tractor",
+    "c": "Running empty trailers, which are less likely to jackknife",
+    "d": "Using the trailer hand valve to stop on slippery roads"
+   },
+   "distractorExplanations": {
+    "b": "Hard braking in curves is a leading cause of jackknife; brake before the curve.",
+    "c": "Empty trailers are more prone to jackknife because their wheels lock more easily.",
+    "d": "Using the hand valve can lock trailer wheels and start a trailer jackknife."
+   }
+  },
+  "cdl-combination-readiness-check-safety-002": {
+   "options": {
+    "a": "Cargo is loaded low and spread evenly",
+    "b": "Speed is cut before entering curves",
+    "c": "Tires are all inflated to the correct pressure",
+    "d": "CG is high and speed in curves is excessive"
+   },
+   "distractorExplanations": {
+    "a": "Low, evenly spread cargo raises the rollover threshold; a high center of gravity lowers it.",
+    "b": "Slowing before curves reduces rollover risk; excessive curve speed increases it.",
+    "c": "Correct inflation helps stability; rollover risk comes from high CG and curve speed."
+   }
+  },
+  "cdl-combination-readiness-check-safety-003": {
+   "options": {
+    "a": "Ease off throttle/brake appropriately; steer gently to recover",
+    "b": "Brake hard to lock the tractor wheels and stop the swing quickly",
+    "c": "Accelerate firmly to pull the trailer back in line behind you",
+    "d": "Steer sharply toward the swing and hold it until it stops"
+   },
+   "distractorExplanations": {
+    "b": "Locking the tractor wheels can cause a tractor jackknife; release the brakes to regain traction.",
+    "c": "Hard acceleration can break drive-wheel traction and worsen the swing; ease off smoothly.",
+    "d": "Sharp, held steering can overcorrect and roll the trailer; steering inputs should be gentle."
+   },
+   "explanation": "Safety: Ease off throttle/brake appropriately; steer gently to recover if trained. Use recovery steering only as trained."
+  },
+  "cdl-combination-readiness-check-safety-004": {
+   "options": {
+    "a": "The same gaps as passenger cars",
+    "b": "Smaller gaps due to air brakes",
+    "c": "Larger gaps than passenger cars",
+    "d": "A two-second following gap"
+   },
+   "distractorExplanations": {
+    "a": "Combinations are longer and heavier and need more stopping distance than cars.",
+    "b": "Air brakes add lag time, so combinations need larger following gaps, not smaller ones.",
+    "d": "The CDL rule is one second per 10 feet of length (plus one over 40 mph), far more than two seconds."
+   }
+  },
+  "cdl-combination-readiness-check-safety-005": {
+   "options": {
+    "a": "Light steady braking all the way down",
+    "b": "Downshift once speed builds on the hill",
+    "c": "Use the same gear used going uphill",
+    "d": "Plan gear early; control heat in brakes"
+   },
+   "distractorExplanations": {
+    "a": "Continuous light braking builds heat and causes fade; select the gear early and snub brake.",
+    "b": "Downshifting after speed builds may be impossible; choose the low gear before the grade.",
+    "c": "The CDL manual says the proper downhill gear is usually lower than the gear used to climb."
+   }
+  },
+  "cdl-combination-readiness-check-safety-006": {
+   "options": {
+    "a": "Only a cargo damage claim later",
+    "b": "Handling/rollover/brake issues",
+    "c": "Improved traction in tight curves",
+    "d": "Air leaks at the gladhands"
+   },
+   "distractorExplanations": {
+    "a": "Shifting cargo changes the center of gravity and can cause loss of control, not just damage claims.",
+    "c": "Shifting weight upsets balance in curves and raises rollover risk, not traction.",
+    "d": "Gladhand leaks come from seals and coupling; cargo shifts affect handling and braking."
+   }
+  },
+  "cdl-combination-readiness-check-safety-007": {
+   "options": {
+    "a": "Only when the trailer is fully loaded",
+    "b": "Off course, so speed up to stay more stable",
+    "c": "Into other lanes—reduce speed, both hands",
+    "d": "Mainly at low speed, so drive faster"
+   },
+   "distractorExplanations": {
+    "a": "Empty or light trailers are the most affected by wind because they weigh less.",
+    "b": "Higher speed makes wind gusts more dangerous; slow down and keep both hands on the wheel.",
+    "d": "Wind effects worsen with speed; slowing down is the correct response."
+   }
+  },
+  "cdl-combination-readiness-check-safety-008": {
+   "options": {
+    "a": "Allows closer following using taillights",
+    "b": "Calls for high beams near other traffic",
+    "c": "Reduces off-tracking as traffic is lighter",
+    "d": "Increases judgment error risk—slow and scan"
+   },
+   "distractorExplanations": {
+    "a": "Reduced visibility at night calls for more following distance, not less.",
+    "b": "High beams are dimmed for oncoming and followed vehicles to avoid blinding drivers.",
+    "c": "Off-tracking depends on trailer length and turn radius, not traffic or time of day."
+   }
+  },
+  "cdl-combination-readiness-check-safety-009": {
+   "options": {
+    "a": "Hold light, steady pressure on brakes",
+    "b": "Pump the brakes rapidly to cool them",
+    "c": "Use proper gear/retarders/snub method",
+    "d": "Use the trailer hand valve to brake"
+   },
+   "distractorExplanations": {
+    "a": "Steady light braking keeps heating the brakes and causes fade on long hills.",
+    "b": "Pumping wastes air and does not cool brakes; use proper gear and snub braking.",
+    "d": "The hand valve is not used for slowing on grades; it overheats trailer brakes and risks skids."
+   }
+  },
+  "cdl-combination-readiness-check-safety-010": {
+   "options": {
+    "a": "Easier than braking, so steer first and brake during the turn",
+    "b": "Harder with trailer, so steer sharply, then brake hard in the turn",
+    "c": "Harder with trailer—brake first if possible, then steer smoothly",
+    "d": "Safe at any speed if the trailer has working ABS"
+   },
+   "distractorExplanations": {
+    "a": "Braking while turning can lock wheels and cause a skid or jackknife; brake before steering.",
+    "b": "Sharp steering with hard braking in the turn invites rollover or jackknife.",
+    "d": "ABS helps prevent lockup but cannot prevent rollover from sudden maneuvers at speed."
+   }
+  },
+  "cdl-combination-readiness-check-safety-012": {
+   "options": {
+    "a": "Keep speed and brake on the deck",
+    "b": "Brake firmly once on the span",
+    "c": "Use cruise control for steadiness",
+    "d": "Slow early; avoid sudden inputs"
+   },
+   "distractorExplanations": {
+    "a": "Bridges freeze first; braking on an icy deck can cause a skid. Slow before reaching it.",
+    "b": "Firm braking on a slippery deck risks lockup; slow down early, before the bridge.",
+    "c": "The CDL manual says do not use cruise control on slippery roads."
+   }
+  },
+  "cdl-combination-readiness-check-safety-013": {
+   "options": {
+    "a": "Get out and look / use a spotter",
+    "b": "Back slowly using the mirrors",
+    "c": "Sound the horn and keep backing",
+    "d": "Rely on the backup alarm alone"
+   },
+   "distractorExplanations": {
+    "b": "Mirrors leave blind spots behind the trailer; get out and look or use a spotter.",
+    "c": "The horn warns others but does not show you what is behind; check before backing.",
+    "d": "A backup alarm warns people but does not let you see obstacles behind the trailer."
+   }
+  },
+  "cdl-combination-readiness-check-safety-014": {
+   "options": {
+    "a": "Brake fade from overheated drums on long downgrades",
+    "b": "Air line separation at the gladhand couplers",
+    "c": "Shock loads that can upset combination stability",
+    "d": "Tractor protection valve trips on downgrades"
+   },
+   "distractorExplanations": {
+    "a": "Fade is a braking heat problem; smooth shifting prevents drivetrain shock loads.",
+    "b": "Air line separation is a coupling issue, not something proper shifting prevents.",
+    "d": "The TP valve responds to trailer air loss, not to gear changes."
+   }
+  },
+  "cdl-combination-readiness-check-safety-015": {
+   "options": {
+    "a": "Check for smell/smoke/pull; inspect when safe",
+    "b": "Drain the tanks and rebuild the air before going",
+    "c": "Cool the brakes with water at the next stop",
+    "d": "Push the trailer knob in to reset the brakes"
+   },
+   "distractorExplanations": {
+    "b": "Draining tanks does not reveal brake damage; check for smell, smoke and pulling, then inspect.",
+    "c": "Water on hot drums can crack them; let brakes cool naturally and inspect when safe.",
+    "d": "A hard stop does not require resetting the supply knob; check the brakes for heat damage."
+   }
+  }
+ }
+}

@@ -1,0 +1,656 @@
+{
+ "forklift-operator-readiness-check": {
+  "forklift-operator-readiness-check-stability-001": {
+   "options": {
+    "a": "The two rear wheels and the center of the front axle",
+    "b": "The two front wheels and the pivot of the rear axle",
+    "c": "The two fork tips and the center of the counterweight",
+    "d": "The four wheels, forming a stability rectangle"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the geometry: the base is the two front load wheels, and the apex is the rear steer-axle pivot, not the front axle.",
+    "c": "The forks and counterweight are not support points; stability is defined by the front wheels and the rear axle pivot.",
+    "d": "A counterbalanced truck has three-point suspension because the steer axle pivots, so the support area is a triangle, not a rectangle."
+   }
+  },
+  "forklift-operator-readiness-check-stability-002": {
+   "options": {
+    "a": "Center of gravity and tip risk",
+    "b": "Rated capacity of the truck",
+    "c": "Rear-wheel traction and stability",
+    "d": "Load center distance on the forks"
+   },
+   "distractorExplanations": {
+    "b": "Raising a load does not increase rated capacity; capacity is derated at greater lift heights, not raised.",
+    "c": "Lifting high shifts the combined CG up and forward, making the truck less stable and lightening the rear wheels.",
+    "d": "Load center is the horizontal distance from the fork face to the load's CG; lift height changes CG height, not load center."
+   }
+  },
+  "forklift-operator-readiness-check-stability-003": {
+   "options": {
+    "a": "Shifts the CG forward over the forks",
+    "b": "Helps keep CG within triangle",
+    "c": "Allows traveling with the load raised",
+    "d": "Increases rated capacity of the truck"
+   },
+   "distractorExplanations": {
+    "a": "Tilting back moves the combined CG rearward toward the drive axle, not forward over the forks.",
+    "c": "Back tilt does not make raised travel safe; loads travel low with the mast tilted back.",
+    "d": "The capacity on the data plate is fixed by the manufacturer; tilting back does not raise it."
+   }
+  },
+  "forklift-operator-readiness-check-stability-004": {
+   "options": {
+    "a": "Greatly increases tip risk",
+    "b": "Is safe below walking speed",
+    "c": "Lowers the combined CG",
+    "d": "Mostly risks a forward tip"
+   },
+   "distractorExplanations": {
+    "b": "An elevated load can cause a lateral tipover even at low speed because the CG is high and near the triangle edge.",
+    "c": "Turning does not lower the CG; centrifugal force pushes the high combined CG toward the side of the triangle.",
+    "d": "Turns produce lateral (sideways) tipovers; forward tips come from overloading, braking hard, or tilting forward when raised."
+   }
+  },
+  "forklift-operator-readiness-check-stability-006": {
+   "options": {
+    "a": "Maximum load at any fork position",
+    "b": "Annual inspection date and inspector",
+    "c": "Rated capacity at stated load center",
+    "d": "Maximum travel speed for loaded trucks"
+   },
+   "distractorExplanations": {
+    "a": "Rated capacity applies only at the stated load center; a longer load center reduces the safe load.",
+    "b": "Inspection records are kept separately; the plate shows capacity, load center, lift height, and truck weight.",
+    "d": "Travel speed is not on the capacity plate; it is set by site rules and conditions, not the data plate."
+   }
+  },
+  "forklift-operator-readiness-check-stability-008": {
+   "options": {
+    "a": "Only affects the load, not truck CG",
+    "b": "Can move CG sideways—use care",
+    "c": "Is best done while traveling",
+    "d": "Lowers the load center distance"
+   },
+   "distractorExplanations": {
+    "a": "Shifting a heavy load sideways moves the combined truck-and-load CG toward the side of the stability triangle.",
+    "c": "Side-shifting is done with the truck stopped and the load positioned, not while traveling, to avoid lateral instability.",
+    "d": "Side-shift moves the load laterally; load center is the forward distance from the fork face and does not change."
+   }
+  },
+  "forklift-operator-readiness-check-stability-010": {
+   "options": {
+    "a": "Rear weight to offset load",
+    "b": "Outriggers to straddle the load",
+    "c": "Front wheel ballast for balance",
+    "d": "Tilt to balance load"
+   },
+   "distractorExplanations": {
+    "b": "Outriggers that straddle the load belong to reach and straddle trucks; counterbalanced trucks use a rear counterweight.",
+    "c": "The counterweight sits at the rear behind the drive axle, opposite the load, not as ballast on the front wheels.",
+    "d": "Mast tilt helps cradle a load, but the counterbalance principle is the rear counterweight offsetting the load."
+   }
+  },
+  "forklift-operator-readiness-check-stability-011": {
+   "options": {
+    "a": "Stability/outrigger design vs sit-down counterbalance",
+    "b": "Using a heavier rear counterweight than sit-down trucks",
+    "c": "Being exempt from OSHA operator training rules",
+    "d": "Rating capacity by battery size, not load center"
+   },
+   "distractorExplanations": {
+    "b": "Reach trucks rely on outriggers and battery mass, not a heavier rear counterweight, for stability.",
+    "c": "29 CFR 1910.178(l) training applies to every powered industrial truck class, including reach trucks.",
+    "d": "Reach trucks still carry a capacity plate rated at a stated load center and lift height."
+   }
+  },
+  "forklift-operator-readiness-check-stability-012": {
+   "options": {
+    "a": "Downhill when loaded",
+    "b": "Uphill only when empty",
+    "c": "Uphill when loaded",
+    "d": "Across the slope to steady it"
+   },
+   "distractorExplanations": {
+    "a": "A loaded truck driven with the load downgrade can lose the load or tip forward; OSHA requires the load upgrade.",
+    "b": "Reverses the rule: an unloaded truck travels with forks pointed downgrade, while a loaded truck keeps the load upgrade.",
+    "d": "Turning on or traveling across a grade invites a lateral tipover; ramps are driven straight up and down."
+   },
+   "explanation": "Uphill when loaded (common rule) This is the common rule for grades."
+  },
+  "forklift-operator-readiness-check-stability-014": {
+   "options": {
+    "a": "May need slower turns and spotters",
+    "b": "Can be carried raised to clear racks",
+    "c": "Allow full speed on wide aisles",
+    "d": "Need only a mirror check"
+   },
+   "distractorExplanations": {
+    "b": "Raising a wide load moves the CG up and widens the swing; wide loads still travel low and slow.",
+    "c": "Aisle width does not offset a wide load's swing and visibility problems; speed stays reduced.",
+    "d": "Mirrors do not show a wide load's full swing; slower turns and a spotter are needed in tight areas."
+   }
+  },
+  "forklift-operator-readiness-check-stability-015": {
+   "options": {
+    "a": "Raise the load higher to shift weight back",
+    "b": "Load may exceed capacity/CG issue—lower/reposition",
+    "c": "Add a passenger on the counterweight for balance",
+    "d": "Tilt forward and drive slowly to the drop point"
+   },
+   "distractorExplanations": {
+    "a": "Raising a load moves the CG up and forward, which lightens the rear axle further and moves toward a forward tip.",
+    "c": "Adding riders or extra counterweight is prohibited; the fix is to lower the load and reduce or reposition it.",
+    "d": "Forward tilt moves the CG further forward and increases the tip risk that a light rear end already signals."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-002": {
+   "options": {
+    "a": "Use until the next PM",
+    "b": "Remove from service",
+    "c": "Weld the crack and keep working",
+    "d": "Use it for lighter loads"
+   },
+   "distractorExplanations": {
+    "a": "Cracked or bent forks are a defect found on the pre-shift exam; the truck is removed from service, not run until maintenance.",
+    "c": "Forks may be repaired only by the manufacturer or an equivalent expert; field welding destroys their heat treatment.",
+    "d": "A damaged fork is not derated; any crack or bent heel takes the truck out of service until replaced."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-003": {
+   "options": {
+    "a": "Fix before use",
+    "b": "OK if fluid is topped up",
+    "c": "Log it later",
+    "d": "Normal on older trucks"
+   },
+   "distractorExplanations": {
+    "b": "Topping up hides the leak without fixing it; leaking hydraulics can drop the load and must be repaired first.",
+    "c": "Defects that affect safe operation are reported and fixed before the truck is used, not logged at a later time.",
+    "d": "Truck age does not make a hydraulic leak acceptable; any leak is a defect requiring repair before use."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-004": {
+   "options": {
+    "a": "Inspect per OEM",
+    "b": "Check after a failure",
+    "c": "Lube only, no check",
+    "d": "Inspect yearly"
+   },
+   "distractorExplanations": {
+    "b": "Lift chains and anchors are inspected proactively for wear and stretch; waiting for a failure risks a dropped load.",
+    "c": "Lubrication alone does not reveal elongation, cracked links, or worn anchors; chains are measured and inspected.",
+    "d": "A yearly-only check is too infrequent; chains are looked at on the pre-shift exam and measured on the OEM schedule."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-006": {
+   "options": {
+    "a": "Use outdoors only",
+    "b": "Optional at low speed",
+    "c": "Use as equipped",
+    "d": "Skip on short trips"
+   },
+   "distractorExplanations": {
+    "a": "Restraint use is not limited to outdoor work; tipovers happen indoors too, so the belt is worn whenever equipped.",
+    "b": "Tipovers happen at low speed, especially in turns and on ramps; the restraint is worn whenever the truck has one.",
+    "d": "Trip length does not change the hazard; the operator wears the restraint whenever the truck is equipped with it."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-007": {
+   "options": {
+    "a": "Operate at half the usual load",
+    "b": "Use the plate from a similar model",
+    "c": "Do not operate until identified/rated",
+    "d": "Operate, but report it at shift end"
+   },
+   "distractorExplanations": {
+    "a": "Guessing a reduced load does not replace the rated capacity; without a plate the truck stays out of service.",
+    "b": "Capacity is specific to the truck and its attachments; a plate from another model does not apply.",
+    "d": "OSHA requires legible capacity markings; a missing plate takes the truck out of service before use."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-008": {
+   "options": {
+    "a": "Is cosmetic until the tread is gone",
+    "b": "Matters only on outdoor trucks",
+    "c": "Can wait until the next PM",
+    "d": "Affects stability—correct/repair"
+   },
+   "distractorExplanations": {
+    "a": "Chunking and low pressure change the truck's footprint and lean, which reduces stability well before the tread is gone.",
+    "b": "Tire damage affects stability on any surface, indoor or outdoor; it is corrected before the truck is used.",
+    "c": "Tire defects found on the pre-shift exam are corrected before use, not deferred to scheduled maintenance."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-009": {
+   "options": {
+    "a": "Checked only at monthly service",
+    "b": "Tight enough if the truck starts",
+    "c": "Secure, no damage, no odor issues",
+    "d": "Hissing is normal on LP tanks"
+   },
+   "distractorExplanations": {
+    "a": "Battery cables and LP connections are part of the pre-shift exam, not a monthly-only maintenance item.",
+    "b": "A truck can start with damaged cables or a leaking LP fitting; connections are checked visually and by smell.",
+    "d": "Hissing at an LP fitting indicates a leak; close the valve, keep ignition away, and report it."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-010": {
+   "options": {
+    "a": "Can be removed for low-clearance areas",
+    "b": "Protects from falling objects—do not remove",
+    "c": "Is rated to stop any falling capacity load",
+    "d": "Is optional when using a load backrest"
+   },
+   "distractorExplanations": {
+    "a": "Removing the guard for clearance is prohibited; the guard is required and modifications need manufacturer approval.",
+    "c": "OSHA notes the overhead guard protects against small packages and boxes, not the impact of a falling capacity load.",
+    "d": "The load backrest is a separate device; it does not replace the overhead guard over the operator."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-011": {
+   "options": {
+    "a": "Present, gauge not needed",
+    "b": "Present and charged",
+    "c": "Kept in the break room",
+    "d": "Checked once a year"
+   },
+   "distractorExplanations": {
+    "a": "A present extinguisher is useless if discharged; the gauge is checked to confirm it is charged.",
+    "c": "An extinguisher required on the truck must be mounted on the truck, accessible to the operator.",
+    "d": "Portable extinguishers get a monthly visual check plus annual maintenance; a yearly-only check is not enough."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-012": {
+   "options": {
+    "a": "After the first loaded lift of the shift",
+    "b": "Before moving into traffic aisles",
+    "c": "At the end of each shift",
+    "d": "Weekly by maintenance"
+   },
+   "distractorExplanations": {
+    "a": "Steering and brakes are checked before the truck is put into service, not after it is already handling loads.",
+    "c": "The examination is done before the truck is placed in service each shift, not at the end.",
+    "d": "OSHA requires examination before each shift (daily); a weekly maintenance check does not meet that."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-013": {
+   "options": {
+    "a": "At eye level to see the racks",
+    "b": "Low, just enough clearance",
+    "c": "About 12 to 18 inches",
+    "d": "Resting on the floor"
+   },
+   "distractorExplanations": {
+    "a": "Raised forks move the CG up and invite tipping and overhead strikes; forks travel low with just enough clearance.",
+    "c": "Twelve to eighteen inches is too high; forks travel just high enough to clear the floor, typically a few inches.",
+    "d": "Dragging forks damages forks and floors and can catch on joints; forks travel with slight floor clearance."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-014": {
+   "options": {
+    "a": "Muted on night shifts",
+    "b": "Optional indoors",
+    "c": "Function if equipped",
+    "d": "Needed outdoors only"
+   },
+   "distractorExplanations": {
+    "a": "Night shifts often have less light and visibility; warning devices stay functional on every shift.",
+    "b": "Indoor areas are where pedestrians most often share aisles with trucks; equipped alarms must work there too.",
+    "d": "Travel alarms protect pedestrians in any setting; an equipped alarm must function indoors and outdoors."
+   }
+  },
+  "forklift-operator-readiness-check-inspection-015": {
+   "options": {
+    "a": "Fix it yourself",
+    "b": "Tag out unsafe truck",
+    "c": "Report at shift end",
+    "d": "Restart to clear it"
+   },
+   "distractorExplanations": {
+    "a": "Repairs are made only by authorized personnel; the operator's job is to report and tag the truck out of service.",
+    "c": "A truck found unsafe is taken out of service immediately, not run until the end of the shift.",
+    "d": "Cycling the key may clear a warning light, but it does not fix the defect; the truck is tagged out."
+   }
+  },
+  "forklift-operator-readiness-check-operation-001": {
+   "options": {
+    "a": "Yield to trucks",
+    "b": "Right of way—yield",
+    "c": "Priority only in walkways",
+    "d": "To clear for horns"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the rule: the operator yields to pedestrians, who keep the right of way.",
+    "c": "Pedestrian right of way is not limited to marked walkways; operators yield to people anywhere in the facility.",
+    "d": "Sounding the horn warns people but does not transfer the right of way to the truck."
+   }
+  },
+  "forklift-operator-readiness-check-operation-002": {
+   "options": {
+    "a": "Only when backing up",
+    "b": "To ask pedestrians to clear the way",
+    "c": "Long, open straight aisles",
+    "d": "Blind corners/intersections"
+   },
+   "distractorExplanations": {
+    "a": "The horn is used at cross aisles, blind corners, and other places where vision is obstructed, not only in reverse.",
+    "b": "The horn is a warning, not a demand for right of way; pedestrians keep priority and the operator yields.",
+    "c": "Open aisles with clear sight lines are not where the horn rule targets; blind corners and intersections are."
+   }
+  },
+  "forklift-operator-readiness-check-operation-003": {
+   "options": {
+    "a": "The posted maximum",
+    "b": "Fast when empty",
+    "c": "Set by the governor",
+    "d": "Safe for conditions"
+   },
+   "distractorExplanations": {
+    "a": "The posted maximum is a ceiling; operators slow down further for floor, load, visibility, and traffic conditions.",
+    "b": "An empty truck is still unstable at speed and in turns; speed is set by conditions, not just load status.",
+    "c": "A speed governor caps top speed but does not make that speed safe for wet floors, turns, or crowded aisles."
+   }
+  },
+  "forklift-operator-readiness-check-operation-004": {
+   "options": {
+    "a": "High for clearance",
+    "b": "Tilted forward",
+    "c": "Low, tilted forward",
+    "d": "Low and tilted back"
+   },
+   "distractorExplanations": {
+    "a": "Carrying a load high raises the CG and the tip risk; loads travel low with the mast tilted back.",
+    "b": "Forward tilt lets the load slide off and moves the CG forward; the mast is tilted back to cradle the load.",
+    "c": "Right height, wrong tilt: forward tilt lets the load slide and shifts CG forward; tilt back while traveling."
+   },
+   "explanation": "Low and tilted back as appropriate. Adjust the tilt as appropriate for the load."
+  },
+  "forklift-operator-readiness-check-operation-005": {
+   "options": {
+    "a": "Raise the load to see under it",
+    "b": "Lean out to see past the load",
+    "c": "Drive forward slowly with horn",
+    "d": "Travel in reverse or use spotter"
+   },
+   "distractorExplanations": {
+    "a": "Raising the load increases tip risk; OSHA requires traveling with the load trailing (in reverse) when it blocks the view.",
+    "b": "Leaning outside the running lines exposes the operator to crush injuries; travel in reverse or use a spotter.",
+    "c": "Slow speed and a horn do not restore vision; OSHA requires reversing with the load trailing or using a spotter."
+   }
+  },
+  "forklift-operator-readiness-check-operation-006": {
+   "options": {
+    "a": "Truck designed with passenger seat",
+    "b": "Rider holds onto the overhead guard",
+    "c": "Rider is on a pallet on forks",
+    "d": "Supervisor approves the ride"
+   },
+   "distractorExplanations": {
+    "b": "Holding onto the guard is not a safe riding position; riders need a seat provided by the truck's design.",
+    "c": "Riding on forks or a pallet is prohibited; only a designed passenger position is a safe place to ride.",
+    "d": "Approval does not create a safe place to ride; OSHA requires a designed riding position, not permission."
+   }
+  },
+  "forklift-operator-readiness-check-operation-007": {
+   "options": {
+    "a": "Lower forks, neutralize, leave key in for next user",
+    "b": "Forks raised slightly, brake set, engine idling",
+    "c": "Neutralize, set brake, leave forks at travel height",
+    "d": "Lower forks, neutralize, set brake, chock if needed"
+   },
+   "distractorExplanations": {
+    "a": "An unattended truck has power shut off, and the key is removed so unauthorized people cannot start it.",
+    "b": "Forks are fully lowered and power shut off when a truck is left unattended; raised forks and idling engines are hazards.",
+    "c": "Forks are lowered fully to the floor when parking; travel height leaves a trip and strike hazard."
+   }
+  },
+  "forklift-operator-readiness-check-operation-008": {
+   "options": {
+    "a": "Only the lift height",
+    "b": "Nothing if under 500 lb",
+    "c": "Speed limits, not rated capacity",
+    "d": "Capacity—use attachment ratings"
+   },
+   "distractorExplanations": {
+    "a": "An attachment adds weight and moves the load center forward, which reduces rated capacity, not just lift height.",
+    "b": "Any attachment changes capacity; the plate must be updated with the attachment rating regardless of its weight.",
+    "c": "Attachments change rated capacity and load center; the truck must be marked with the combined attachment rating."
+   }
+  },
+  "forklift-operator-readiness-check-operation-009": {
+   "options": {
+    "a": "Cross at speed",
+    "b": "Avoid/clear",
+    "c": "Cross at an angle",
+    "d": "Mark later"
+   },
+   "distractorExplanations": {
+    "a": "Hitting holes or debris at speed can bounce the load off or tip the truck; avoid or clear them first.",
+    "c": "Angling across a hole drops one wheel at a time and tilts the truck sideways; holes are avoided or cleared.",
+    "d": "A floor hazard is avoided or cleared now; leaving it to mark later exposes other trucks to the same tip risk."
+   }
+  },
+  "forklift-operator-readiness-check-operation-010": {
+   "options": {
+    "a": "Cross at speed",
+    "b": "Stop on the rails",
+    "c": "Cross with load raised",
+    "d": "Cross square/slow"
+   },
+   "distractorExplanations": {
+    "a": "Speed over rails bounces the truck and load and can cause loss of control; tracks are crossed slowly.",
+    "b": "Stopping on tracks risks a rail strike; OSHA also bars parking closer than 8 feet from the track center.",
+    "c": "A raised load makes the bump over rails a tip hazard; the load stays low and tilted back while crossing."
+   }
+  },
+  "forklift-operator-readiness-check-operation-011": {
+   "options": {
+    "a": "Enter at an angle before the car is leveled",
+    "b": "Verify capacity; center truck; controls neutralized",
+    "c": "Leave the power on so you can exit fast",
+    "d": "Use it if the truck fits, without checking capacity"
+   },
+   "distractorExplanations": {
+    "a": "Elevators are approached slowly and entered squarely only after the car is properly leveled.",
+    "c": "Once on the elevator, controls are neutralized, power is shut off, and brakes are set.",
+    "d": "Fitting inside does not mean the elevator can carry the truck, load, and operator; verify rated capacity first."
+   }
+  },
+  "forklift-operator-readiness-check-operation-012": {
+   "options": {
+    "a": "Any steel plate",
+    "b": "Secured and rated",
+    "c": "Held by a coworker",
+    "d": "Rated, not secured"
+   },
+   "distractorExplanations": {
+    "a": "Dock boards must be rated for the truck and load weight; an unrated steel plate can buckle under a loaded truck.",
+    "c": "A person cannot hold a dock plate in place; it must be secured by anchoring or devices that prevent slipping.",
+    "d": "A rated plate can still slide under a truck; dock boards must be both properly rated and secured."
+   }
+  },
+  "forklift-operator-readiness-check-operation-013": {
+   "options": {
+    "a": "Dock door openings",
+    "b": "Sprinkler lines",
+    "c": "Elevated loads",
+    "d": "Rack crossbeams"
+   },
+   "distractorExplanations": {
+    "a": "Operators drive through dock door openings routinely after checking clearance; the rule bars passing under elevated loads.",
+    "b": "Overhead sprinkler lines are cleared by checking overhead clearance; OSHA's rule is no one under the elevated part of a truck.",
+    "d": "Rack beams are fixed structures cleared with proper mast height; the prohibition is passing under raised forks or loads."
+   }
+  },
+  "forklift-operator-readiness-check-operation-014": {
+   "options": {
+    "a": "Cab, arm out to signal",
+    "b": "Cab, leaning out to look back",
+    "c": "Seat, legs out for a quick exit",
+    "d": "Overhead guard envelope"
+   },
+   "distractorExplanations": {
+    "a": "Arms and legs stay inside the running lines of the truck; an arm outside can be crushed against racks.",
+    "b": "Leaning outside the guard envelope exposes the head to crush hazards; turn your head inside the cab or use mirrors.",
+    "c": "Legs outside the running lines are crush-injury exposures, and in a tipover the operator stays in the seat."
+   }
+  },
+  "forklift-operator-readiness-check-operation-015": {
+   "options": {
+    "a": "With the engine running to save time",
+    "b": "Smoking OK if outdoors",
+    "c": "With metal tools resting on cells",
+    "d": "Per procedure; no smoking; PPE"
+   },
+   "distractorExplanations": {
+    "a": "Engines are shut off during refueling; a running engine is an ignition source near fuel vapor.",
+    "b": "Smoking is prohibited in refueling and battery-charging areas indoors or outdoors because of fuel vapor and hydrogen gas.",
+    "c": "Metal tools on battery tops can short the cells and cause arcing or explosion; keep them off the battery."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-001": {
+   "options": {
+    "a": "Horns alone, without marked aisles",
+    "b": "Hi-vis vests in place of marked lanes",
+    "c": "Shared lanes with no markings",
+    "d": "Aisles, mirrors, rules, horns"
+   },
+   "distractorExplanations": {
+    "a": "A horn warns but does not separate traffic; separation relies on layout, marked aisles, mirrors, and rules together.",
+    "b": "Hi-vis improves visibility but does not separate people from trucks; marked aisles and rules do that.",
+    "c": "Unmarked shared lanes mix people and trucks; marked aisles and traffic rules are the separating controls."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-004": {
+   "options": {
+    "a": "Walking behind the truck to guide it",
+    "b": "Riding on the truck to guide",
+    "c": "Visible and using agreed signals",
+    "d": "Calling out by voice only"
+   },
+   "distractorExplanations": {
+    "a": "A spotter behind the truck is in the blind spot and the path of travel; spotters stay where the operator can see them.",
+    "b": "Riding on the truck is prohibited unless a designed seat exists; spotters work on foot, in view.",
+    "d": "Voice can be lost in warehouse noise; spotters use agreed hand signals and stay visible to the operator."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-005": {
+   "options": {
+    "a": "Fine at low speed",
+    "b": "Allowed for texts only",
+    "c": "Prohibited/distracting",
+    "d": "Allowed with a spotter"
+   },
+   "distractorExplanations": {
+    "a": "Distraction causes collisions at any speed; phone use while driving a forklift is prohibited by site policy.",
+    "b": "Texting is the most distracting phone use, taking eyes off the path; it is not a permitted exception.",
+    "d": "A spotter does not cancel operator distraction; the operator still must not use a phone while driving."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-006": {
+   "options": {
+    "a": "Fine if they hurry",
+    "b": "Forbidden hazard",
+    "c": "OK with hard hats",
+    "d": "OK if forks are empty"
+   },
+   "distractorExplanations": {
+    "a": "Speed does not make passing under elevated forks safe; OSHA bars anyone from standing or passing beneath them.",
+    "c": "Hard hats do not protect against a falling load or forks; no one passes under the elevated portion of a truck.",
+    "d": "The OSHA prohibition covers the elevated portion of the truck whether loaded or empty; forks can drop."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-007": {
+   "options": {
+    "a": "Replace a shoulder check",
+    "b": "Remove the need to slow at blind spots",
+    "c": "Replace the horn at corners",
+    "d": "Do not replace looking/horn/slowing"
+   },
+   "distractorExplanations": {
+    "a": "Convex mirrors distort distance and have blind zones; operators still look directly before moving.",
+    "b": "Mirrors give a partial view at corners; operators still slow down and sound the horn at blind spots.",
+    "c": "A mirror shows the operator traffic but does not warn pedestrians; the horn is still used at blind corners."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-008": {
+   "options": {
+    "a": "Faster work to clear the area",
+    "b": "Horn use in place of slowing",
+    "c": "Fewer spotters to cut clutter",
+    "d": "Extra caution and communication"
+   },
+   "distractorExplanations": {
+    "a": "Speeding up in a congested dock increases collision risk; congestion calls for slower travel and communication.",
+    "b": "The horn warns but does not reduce stopping distance; congested docks need both slowing and communication.",
+    "c": "Congested docks are where spotters help most; removing them reduces communication between trucks and people."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-009": {
+   "options": {
+    "a": "A safety briefing, then free access",
+    "b": "Hi-vis vests, no escort",
+    "c": "Strict control/escorts",
+    "d": "Access while trucks slow down"
+   },
+   "distractorExplanations": {
+    "a": "A briefing alone does not protect untrained visitors near moving trucks; access is controlled and escorted.",
+    "b": "Vests make visitors visible but do not keep them out of truck paths; escorts and strict control are required.",
+    "d": "Slowing trucks does not make unescorted visitor access safe; visitors are controlled and escorted."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-012": {
+   "options": {
+    "a": "Use as temporary pallet staging",
+    "b": "Drive along them whenever the aisles are full",
+    "c": "Park on them for short stops",
+    "d": "Keep clear of storage/trucks when required"
+   },
+   "distractorExplanations": {
+    "a": "Staging pallets on walkways forces pedestrians into truck aisles; marked walkways are kept clear.",
+    "b": "Full aisles do not open walkways to truck travel; marked pedestrian routes stay clear of trucks.",
+    "c": "Even a short stop on a walkway blocks pedestrians and pushes them into traffic; park in designated areas."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-013": {
+   "options": {
+    "a": "Dim the lights to reduce glare",
+    "b": "Drive faster since aisles are quieter",
+    "c": "Ensure lighting and high-vis as required",
+    "d": "Skip pre-shift checks if done by day crew"
+   },
+   "distractorExplanations": {
+    "a": "Reduced lighting increases collision risk; OSHA requires auxiliary lighting where general light is too low.",
+    "b": "Quieter aisles do not offset reduced visibility and fatigue at night; speed stays matched to conditions.",
+    "d": "The truck is examined before each shift it is placed in service; a day-crew check does not cover the night shift."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-014": {
+   "options": {
+    "a": "Report only if someone was hurt",
+    "b": "Fix it yourself without reporting",
+    "c": "Blame the pedestrian and move on",
+    "d": "Report and fix layout/behavior"
+   },
+   "distractorExplanations": {
+    "a": "Near misses are reported so the hazard is fixed before an injury; waiting for an injury defeats the purpose.",
+    "b": "Unreported near misses hide layout and training problems from the employer; report so the root cause is fixed.",
+    "c": "Blame does not fix layout or behavior; a near miss is reported and investigated for root causes."
+   }
+  },
+  "forklift-operator-readiness-check-pedestrians-015": {
+   "options": {
+    "a": "Pedestrians bear responsibility because they can stop faster",
+    "b": "Trucks and people share responsibility for awareness",
+    "c": "Operators bear the duty, so walkers need no training",
+    "d": "Supervisors bear responsibility, not operators or walkers"
+   },
+   "distractorExplanations": {
+    "a": "Operators must yield to pedestrians; safety culture puts awareness duties on both, not on walkers alone.",
+    "c": "Pedestrians also need training on truck blind spots and walkways; awareness is a shared responsibility.",
+    "d": "Supervisors set rules, but operators and pedestrians each keep a duty of awareness on the floor."
+   }
+  }
+ }
+}

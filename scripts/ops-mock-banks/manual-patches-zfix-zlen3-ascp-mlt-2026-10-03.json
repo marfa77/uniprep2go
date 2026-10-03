@@ -1,0 +1,69 @@
+{
+ "ascp-mlt-readiness-check": {
+  "ascp-mlt-readiness-check-blood-bank-004": {
+   "options": {
+    "a": "4+ with A1 cells, negative with B cells",
+    "b": "Negative with both A1 and B cells",
+    "c": "4+ with both A1 and B cells, negative with O cells",
+    "d": "4+ with B cells, negative with A1 cells"
+   },
+   "distractorExplanations": {
+    "c": "Reactions with both A1 and B cells (O cells negative) is the group O reverse pattern, since group O plasma has anti-A and anti-B.",
+    "a": "That is the reverse pattern of a group B person, whose plasma contains anti-A that agglutinates A1 cells.",
+    "b": "No reaction with A1 or B cells is the group AB reverse pattern, since AB plasma lacks both anti-A and anti-B."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-013": {
+   "options": {
+    "a": "A physician-released emergency — still document",
+    "b": "A routine release once the type is known",
+    "c": "An MLT decision made without a physician order",
+    "d": "Exempt from documentation until crossmatch testing is done"
+   },
+   "distractorExplanations": {
+    "d": "Emergency release is documented at issue with the physician's signed request; the crossmatch is completed afterward, not used to delay records.",
+    "b": "Uncrossmatched release is an emergency exception, not routine; it needs a physician's signed request.",
+    "c": "The MLT cannot authorize uncrossmatched blood; the ordering physician signs for the risk of emergency release."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-029": {
+   "options": {
+    "a": "Repeated and correlated — do not treat a strip error",
+    "b": "Treated immediately, as POC meters are calibrated",
+    "c": "Reported with a comment and not repeated",
+    "d": "Confirmed on a repeat capillary sample from the same finger"
+   },
+   "distractorExplanations": {
+    "d": "Repeating from the same capillary site can reproduce the same sampling error; confirmation uses a venous laboratory glucose.",
+    "b": "Calibration does not prevent strip, hematocrit, or sampling errors; a discordant result is repeated and correlated.",
+    "c": "A comment does not resolve a discordant value; it is repeated and confirmed with a laboratory method."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-033": {
+   "options": {
+    "a": "Falsely lower the count — citrate recollect as SOP",
+    "b": "Falsely raise the platelet count from large clumps",
+    "c": "Falsely lower the count — heparin tube recollect as SOP",
+    "d": "Lower the hemoglobin by trapping red cells"
+   },
+   "distractorExplanations": {
+    "c": "Heparin tubes also promote platelet clumping; sodium citrate is the usual recollection tube for EDTA-induced pseudothrombocytopenia.",
+    "b": "Clumps are not counted as many single platelets; they lower the platelet count instead of raising it.",
+    "d": "Platelet clumps do not affect hemoglobin; they may falsely raise the WBC count when counted as leukocytes."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-036": {
+   "options": {
+    "a": "Monitor unfractionated heparin infusion therapy",
+    "b": "Screen for von Willebrand disease",
+    "c": "Monitor low-molecular-weight heparin",
+    "d": "Monitor warfarin-style anticoagulation"
+   },
+   "distractorExplanations": {
+    "a": "Unfractionated heparin infusions are monitored with the aPTT or anti-Xa level; the INR standardizes the PT for warfarin.",
+    "b": "von Willebrand disease is evaluated with VWF antigen, activity and factor VIII; the INR is usually normal.",
+    "c": "Low-molecular-weight heparin is monitored, when needed, with anti-Xa levels, not the INR."
+   }
+  }
+ }
+}

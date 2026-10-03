@@ -1,0 +1,751 @@
+{
+ "ascp-mlt-readiness-check": {
+  "ascp-mlt-readiness-check-blood-bank-002": {
+   "options": {
+    "a": "Antibodies in the plasma with known reagent red cells",
+    "b": "Antigens on the red cells with known antibodies",
+    "c": "Antibodies already bound to the red cells with AHG reagent",
+    "d": "Fetal red cells in maternal blood by acid elution staining"
+   },
+   "distractorExplanations": {
+    "a": "That describes reverse typing, which uses known A1 and B cells to detect antibodies in the patient's plasma.",
+    "c": "Detecting antibody coating the patient's red cells with AHG is the direct antiglobulin test, not forward typing.",
+    "d": "Acid elution (Kleihauer-Betke) quantifies fetomaternal hemorrhage; forward typing detects ABO antigens on red cells."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-003": {
+   "options": {
+    "a": "Patient red cells plus anti-A and anti-B reagents",
+    "b": "Patient plasma plus group O screening cells",
+    "c": "Patient serum/plasma plus A1 and B cells",
+    "d": "Patient serum plus A2 and O cells at AHG phase"
+   },
+   "distractorExplanations": {
+    "a": "Testing patient red cells with anti-A and anti-B is forward typing; reverse typing tests the patient's plasma.",
+    "b": "O screening cells are used for the antibody screen, which detects unexpected non-ABO antibodies.",
+    "d": "Reverse typing uses A1 and B cells read at immediate spin; A2 cells and the AHG phase belong to other workups."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-004": {
+   "options": {
+    "a": "4+ with A1 cells, negative with B cells",
+    "b": "Negative with both A1 and B cells",
+    "c": "4+ with both A1 and B cells",
+    "d": "4+ with B cells, negative with A1 cells"
+   },
+   "distractorExplanations": {
+    "a": "That is the reverse pattern of a group B person, whose plasma contains anti-A that agglutinates A1 cells.",
+    "b": "No reaction with A1 or B cells is the group AB reverse pattern, since AB plasma lacks both anti-A and anti-B.",
+    "c": "Reactions with both A1 and B cells is the group O reverse pattern, because group O plasma has anti-A and anti-B."
+   },
+   "explanation": "Landsteiner. This item asks: “A type A patient should reverse as:”. The matching answer is: 4+ with B cells, negative with A1 cells (typical). Independent UniPrep diagnostic — not an official ASCP MLT paper. This is the typical pattern; weak or missing reactions need a discrepancy workup."
+  },
+  "ascp-mlt-readiness-check-blood-bank-005": {
+   "options": {
+    "a": "It detects IgG that does not agglutinate in saline",
+    "b": "It detects IgM that agglutinates at room temperature",
+    "c": "It lowers the zeta potential so red cells come closer",
+    "d": "It removes bound antibody from red cells for identification"
+   },
+   "distractorExplanations": {
+    "b": "IgM antibodies agglutinate directly at immediate spin or room temperature; AHG is needed to detect IgG coating.",
+    "c": "Reducing zeta potential is the job of enhancement media such as LISS or PEG, not the antiglobulin reagent.",
+    "d": "Removing bound antibody from red cells is an elution; AHG bridges IgG-coated cells to make agglutination visible."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-006": {
+   "options": {
+    "a": "Expected anti-A and anti-B in the patient's plasma",
+    "b": "Unexpected red-cell antibodies in the patient",
+    "c": "Antibody already coating the patient's red cells",
+    "d": "Unexpected antigens on the donor unit's red cells"
+   },
+   "distractorExplanations": {
+    "a": "Detecting expected anti-A and anti-B is the reverse ABO type; the screen looks for unexpected non-ABO antibodies.",
+    "c": "Antibody bound in vivo to the patient's red cells is detected by the DAT; the screen tests plasma for free antibody.",
+    "d": "The screen tests patient plasma for antibodies, not donor cells for antigens; antigen typing is a separate test."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-007": {
+   "options": {
+    "a": "Maternal IgM anti-A crossing the placenta",
+    "b": "Physiologic jaundice from immature liver conjugation",
+    "c": "Maternal IgG on baby cells — HDFN workup",
+    "d": "Hereditary spherocytosis inherited from a parent"
+   },
+   "distractorExplanations": {
+    "a": "IgM does not cross the placenta; HDFN results from maternal IgG antibodies coating the baby's red cells.",
+    "b": "Physiologic jaundice is a liver conjugation issue with a negative DAT; a positive DAT shows antibody coating.",
+    "d": "Hereditary spherocytosis causes neonatal hemolysis with a negative DAT; a positive DAT points to maternal antibody."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-008": {
+   "options": {
+    "a": "A D-positive mother delivers a D-negative baby",
+    "b": "An Rh-negative mother already has anti-D from a prior pregnancy",
+    "c": "An Rh-positive patient receives Rh-negative red cells",
+    "d": "An Rh-negative mother is at risk of forming anti-D"
+   },
+   "distractorExplanations": {
+    "a": "A D-positive mother cannot form anti-D, so RhIG is not indicated whatever the baby's type.",
+    "b": "RhIG cannot help once anti-D has actively formed; it prevents sensitization rather than treating it.",
+    "c": "A D-positive recipient cannot form anti-D; RhIG protects D-negative people exposed to D-positive cells."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-009": {
+   "options": {
+    "a": "Clerically identical at the bedside",
+    "b": "Issued once the crossmatch passes, without a label check",
+    "c": "Matched by patient name alone at the bedside",
+    "d": "Warmed in an unmonitored water bath before every issue"
+   },
+   "distractorExplanations": {
+    "b": "A compatible crossmatch does not replace the clerical check of unit, tag, and patient identifiers at issue.",
+    "c": "Name alone is insufficient; two identifiers plus unit number and ABO/Rh must match the tag and record.",
+    "d": "Routine warming is not required, and blood warmers must be cleared, monitored devices, not open water baths."
+   },
+   "explanation": "Clerical error kills. This item asks: “A unit for transfusion must be:”. The matching answer is: Clerically identical at the bedside — the MLT's issue check is not optional. Independent UniPrep diagnostic — not an official ASCP MLT paper. The MLT's issue check is not optional."
+  },
+  "ascp-mlt-readiness-check-blood-bank-010": {
+   "options": {
+    "a": "At 1–6 °C, like red blood cells",
+    "b": "Frozen, then thawed per procedure",
+    "c": "At 20–24 °C with gentle agitation",
+    "d": "Frozen at −18 °C, then refrozen if unused"
+   },
+   "distractorExplanations": {
+    "a": "1–6 °C is red cell storage; FFP is stored frozen at −18 °C or colder and refrigerated only after thawing.",
+    "c": "Room temperature with agitation is platelet storage; FFP stays frozen until it is thawed for use.",
+    "d": "Thawed plasma cannot be refrozen; once thawed it is kept at 1–6 °C and relabeled with its new dating."
+   },
+   "explanation": "Product, temperature, time. This item asks: “FFP is stored:”. The matching answer is: Frozen, then thawed per procedure — not as a fridge RBC. Independent UniPrep diagnostic — not an official ASCP MLT paper. It is not stored refrigerated like red cells until after thawing."
+  },
+  "ascp-mlt-readiness-check-blood-bank-011": {
+   "options": {
+    "a": "Issue the unit if the antibody screen was negative",
+    "b": "Issue the unit with a slower infusion rate",
+    "c": "Do not issue that unit — investigate",
+    "d": "Repeat at immediate spin and issue if negative"
+   },
+   "distractorExplanations": {
+    "a": "An incompatible AHG crossmatch overrides a negative screen; it may reveal an antibody to a low-incidence antigen.",
+    "b": "Slowing the infusion does not make an incompatible unit safe; it can still cause a hemolytic reaction.",
+    "d": "An immediate-spin crossmatch misses IgG antibodies, so a negative IS result does not cancel AHG incompatibility."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-012": {
+   "options": {
+    "a": "Frozen at −18 °C or colder, like FFP",
+    "b": "At 1–6 °C without agitation, like RBCs",
+    "c": "At room temp without agitation for 30 days",
+    "d": "With agitation at room temp for their dating"
+   },
+   "distractorExplanations": {
+    "a": "Platelets are not frozen in routine practice; freezing is the storage condition for FFP and cryoprecipitate.",
+    "b": "Refrigeration at 1–6 °C is red cell storage; routine platelets are kept at 20–24 °C with continuous agitation.",
+    "c": "Without agitation platelets lose gas exchange, and room-temperature dating is about 5–7 days, not 30 days."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-013": {
+   "options": {
+    "a": "A physician-released emergency — still document",
+    "b": "A routine release once the type is known",
+    "c": "An MLT decision made without a physician order",
+    "d": "Exempt from documentation until testing is done"
+   },
+   "distractorExplanations": {
+    "b": "Uncrossmatched release is an emergency exception, not routine; it needs a physician's signed request.",
+    "c": "The MLT cannot authorize uncrossmatched blood; the ordering physician signs for the risk of emergency release.",
+    "d": "Emergency release still requires documentation, the signed request, and completion of compatibility testing afterward."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-014": {
+   "options": {
+    "a": "Repeat crossmatch on the original sample before any clerical check",
+    "b": "Clerical check and a DAT / visual hemolysis per SOP — stop the unit",
+    "c": "Slowing the transfusion and giving an antipyretic, then resuming the unit",
+    "d": "Antibody identification panel on the donor unit's plasma first"
+   },
+   "distractorExplanations": {
+    "a": "The clerical check comes first because misidentification is the most common cause; repeating the old crossmatch can miss it.",
+    "c": "Fever can signal acute hemolysis; the transfusion is stopped, not slowed and resumed, until the workup is done.",
+    "d": "A panel on donor plasma is not the first step; the post-transfusion sample gets a clerical check, hemolysis check, and DAT."
+   }
+  },
+  "ascp-mlt-readiness-check-blood-bank-015": {
+   "options": {
+    "a": "An official ASCP MLT practice form released by the Board of Certification",
+    "b": "MLS-level practice that mirrors the generalist scientist exam form",
+    "c": "Independent technician-level lab practice — not the MLS exam form",
+    "d": "A state licensure exam for clinical laboratory personnel"
+   },
+   "distractorExplanations": {
+    "a": "UniPrep is an independent diagnostic; the ASCP Board of Certification does not release its exam forms for this mock.",
+    "b": "MLS is the scientist-level exam; this mock targets the technician-level MLT scope instead.",
+    "d": "State licensure (for example California or New York) is separate from ASCP certification and from this independent mock."
+   },
+   "explanation": "Same benches, technician items. This item asks: “This MLT mock is:”. The matching answer is: Independent technician-level lab practice — not the MLS exam form and not ASCP's test. Independent UniPrep diagnostic — not an official ASCP MLT paper. It is not ASCP's test."
+  },
+  "ascp-mlt-readiness-check-chemistry-016": {
+   "options": {
+    "a": "Sodium and chloride from dilution",
+    "b": "Glucose and albumin from cell release",
+    "c": "Haptoglobin from free hemoglobin binding",
+    "d": "Potassium and LD among others"
+   },
+   "distractorExplanations": {
+    "a": "Hemolysis releases intracellular contents; sodium and chloride are higher in plasma and are minimally affected.",
+    "b": "Red cells do not release glucose or albumin; hemolysis raises analytes concentrated inside cells such as K, LD and AST.",
+    "c": "Haptoglobin falls in in-vivo hemolysis as it binds free hemoglobin; in-vitro hemolysis does not raise it."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-018": {
+   "options": {
+    "a": "Skeletal muscle injury such as rhabdomyolysis",
+    "b": "Myocardial injury workup — timing matters",
+    "c": "Heart failure staging by ventricular stretch",
+    "d": "Liver injury workup alongside ALT and AST"
+   },
+   "distractorExplanations": {
+    "a": "Skeletal muscle injury is assessed with CK and myoglobin; cardiac troponin I and T are specific to heart muscle.",
+    "c": "Ventricular stretch is measured by BNP or NT-proBNP, not troponin, which reflects myocyte injury.",
+    "d": "Troponin is cardiac-specific; liver injury is assessed with ALT, AST and synthetic markers, not troponin."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-019": {
+   "options": {
+    "a": "Falsely high from photo-oxidation",
+    "b": "Unchanged if tested within 24 hours",
+    "c": "Falsely low — protect from light",
+    "d": "Falsely low only if the tube is refrigerated"
+   },
+   "distractorExplanations": {
+    "a": "Light breaks bilirubin down by photo-oxidation, which lowers rather than raises the measured value.",
+    "b": "Light degrades bilirubin within about an hour; prompt testing does not rescue a tube left exposed.",
+    "d": "Refrigeration slows degradation; the error comes from light exposure, not from storage temperature."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-020": {
+   "options": {
+    "a": "BUN and the urine creatinine concentration",
+    "b": "Serum creatinine, age, sex, and race",
+    "c": "Serum albumin and the urine protein ratio",
+    "d": "Creatinine (and age/sex as the equation uses)"
+   },
+   "distractorExplanations": {
+    "a": "Urine creatinine is used in a measured creatinine clearance; eGFR equations use serum creatinine with age and sex.",
+    "b": "The current CKD-EPI 2021 equation removed the race coefficient; it uses creatinine, age, and sex.",
+    "c": "Albumin and urine protein assess kidney damage (albuminuria), not an estimate of filtration rate."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-021": {
+   "options": {
+    "a": "Interfere with spectrophotometric assays",
+    "b": "Falsely raise potassium by releasing it from cells",
+    "c": "Be cleared by saline dilution for every analyte",
+    "d": "Falsely lower bilirubin by light degradation"
+   },
+   "distractorExplanations": {
+    "b": "Releasing potassium from cells is hemolysis interference; lipemia acts through light scatter and volume displacement.",
+    "c": "Dilution can lower lipemia but distorts some results; ultracentrifugation is the usual clearing step.",
+    "d": "Light degradation lowers bilirubin in exposed tubes; lipemia interferes through turbidity, not photo-oxidation."
+   },
+   "explanation": "Lipemia is preanalytical. This item asks: “A lipemic sample can:”. The matching answer is: Interfere with spectrophotometric assays — ultracentrifuge or comment per SOP. Independent UniPrep diagnostic — not an official ASCP MLT paper. Ultracentrifuge or add a comment per SOP."
+  },
+  "ascp-mlt-readiness-check-chemistry-022": {
+   "options": {
+    "a": "The last 2–3 days of glucose",
+    "b": "Weeks of glucose exposure",
+    "c": "Glycated albumin as a fructosamine level",
+    "d": "Fasting glucose on the draw day"
+   },
+   "distractorExplanations": {
+    "a": "HbA1c integrates glycemia over the red cell lifespan, about 2–3 months, not the last few days.",
+    "c": "Fructosamine measures glycated serum proteins, mainly albumin, over 2–3 weeks; HbA1c is glycated hemoglobin.",
+    "d": "A fasting glucose is a single-point value; HbA1c reflects average exposure over weeks to months."
+   },
+   "explanation": "Glycation window. This item asks: “HbA1c reflects:”. The matching answer is: Weeks of glucose exposure, not this morning's donut alone. Independent UniPrep diagnostic — not an official ASCP MLT paper. Clinically it reflects about 2–3 months of average glucose."
+  },
+  "ascp-mlt-readiness-check-chemistry-023": {
+   "options": {
+    "a": "(Cl + HCO3) − Na as measured",
+    "b": "Na − Cl, ignoring bicarbonate",
+    "c": "Na − (Cl + HCO3) as your lab calculates",
+    "d": "Measured minus calculated osmolality"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the subtraction; the gap is sodium minus the measured anions, which gives a positive value.",
+    "b": "Omitting bicarbonate gives a different value; the standard anion gap subtracts both chloride and bicarbonate.",
+    "d": "That is the osmolal gap, used for unmeasured osmoles such as toxic alcohols, not the anion gap."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-024": {
+   "options": {
+    "a": "Report the result with a hemolysis comment",
+    "b": "Dilute the sample with saline and rerun",
+    "c": "Report if the result is within reference range",
+    "d": "Do not report — recast or recollect"
+   },
+   "distractorExplanations": {
+    "a": "A clot flag concerns sampling, not hemolysis; results from a clot-flagged aspiration are not reportable.",
+    "b": "Dilution does not remove a fibrin clot; the specimen must be inspected, respun, or recollected.",
+    "c": "A short sample from a clot can give normal-looking but false values; reference-range results are not exempt."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-026": {
+   "options": {
+    "a": "Kept at room temperature to prevent hemolysis",
+    "b": "On ice and assayed fast",
+    "c": "Collected in a serum tube and allowed to clot",
+    "d": "Refrigerated overnight and run in batch"
+   },
+   "distractorExplanations": {
+    "a": "Room temperature lets red cell metabolism and deamination raise ammonia, so samples go on ice.",
+    "c": "Clotting time lets ammonia rise; ammonia uses EDTA or heparin plasma placed on ice and separated quickly.",
+    "d": "Delay raises ammonia even when refrigerated; it is analyzed within about 30 minutes or separated and frozen."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-027": {
+   "options": {
+    "a": "Expected daily variation to be released as is",
+    "b": "Instrument drift that QC will correct later",
+    "c": "Wrong patient or IV fluid mix-up — investigate",
+    "d": "A dilution error to fix by applying a factor"
+   },
+   "distractorExplanations": {
+    "a": "A large overnight jump exceeds expected biological variation; delta failures are investigated before release.",
+    "b": "Drift is caught by QC before patient release; a single-patient delta failure points to identity or collection.",
+    "d": "Applying a factor without investigation can hide a wrong-patient sample; the cause must be found first."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-028": {
+   "options": {
+    "a": "A random draw with the dose time added later",
+    "b": "A trough drawn just after the dose ends",
+    "c": "A serum gel-separator tube for every drug",
+    "d": "The draw time relative to the dose"
+   },
+   "distractorExplanations": {
+    "a": "Peak and trough interpretation needs exact draw and dose times documented at collection, not reconstructed.",
+    "b": "A trough is drawn just before the next dose; just after the dose is the peak window.",
+    "c": "Gel separators can absorb some drugs, so many therapeutic drug assays require plain red-top tubes."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-029": {
+   "options": {
+    "a": "Repeated and correlated — do not treat a strip error",
+    "b": "Treated immediately, as POC meters are calibrated",
+    "c": "Reported with a comment and not repeated",
+    "d": "Confirmed on a capillary sample from the same finger"
+   },
+   "distractorExplanations": {
+    "b": "Calibration does not prevent strip, hematocrit, or sampling errors; a discordant result is repeated and correlated.",
+    "c": "A comment does not resolve a discordant value; it is repeated and confirmed with a laboratory method.",
+    "d": "Repeating from the same site can repeat the error; confirmation uses a venous laboratory glucose."
+   }
+  },
+  "ascp-mlt-readiness-check-chemistry-030": {
+   "options": {
+    "a": "The unit clerk, who passes it to the nurse",
+    "b": "The licensed caregiver on the list — read back",
+    "c": "A voicemail for the ordering physician",
+    "d": "The licensed caregiver, without read-back"
+   },
+   "distractorExplanations": {
+    "a": "Critical values go directly to a licensed caregiver who can act, not through clerical staff.",
+    "c": "Voicemail is not acceptable for criticals; the result must reach a person with documented read-back.",
+    "d": "Read-back verification is required to confirm that the critical value was heard and recorded correctly."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-031": {
+   "options": {
+    "a": "Released if the WBC count is within range",
+    "b": "Rerun on the analyzer until the flag clears",
+    "c": "A smear review — do not auto-release if SOP says hold",
+    "d": "Resolved by a manual WBC count on a hemocytometer"
+   },
+   "distractorExplanations": {
+    "a": "Blasts can occur with a normal WBC count; a blast flag triggers smear review whatever the count.",
+    "b": "Rerunning does not verify morphology; the flag requires a smear review rather than repeat counts.",
+    "d": "A manual count verifies the number of cells, not their identity; blasts need smear morphology review."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-032": {
+   "options": {
+    "a": "Iron deficiency or thalassemia trait",
+    "b": "Anemia of chronic disease or acute blood loss",
+    "c": "Sideroblastic anemia from lead poisoning",
+    "d": "A macrocytic picture (B12/folate/liver/marrow)"
+   },
+   "distractorExplanations": {
+    "a": "Iron deficiency and thalassemia trait produce a low MCV (microcytic), not a high MCV.",
+    "b": "Chronic disease and acute blood loss usually give normocytic indices, not a raised MCV.",
+    "c": "Lead poisoning and sideroblastic anemia typically give microcytic or dimorphic indices, not macrocytosis."
+   },
+   "explanation": "Use the indices. This item asks: “MCV high with anemia suggests:”. The matching answer is: A macrocytic picture (B12/folate/liver/marrow) — not a micro iron story. Independent UniPrep diagnostic — not an official ASCP MLT paper. It does not point to microcytic iron deficiency."
+  },
+  "ascp-mlt-readiness-check-hematology-033": {
+   "options": {
+    "a": "Falsely lower the count — citrate recollect as SOP",
+    "b": "Falsely raise the platelet count from large clumps",
+    "c": "Falsely lower the count — heparin recollect as SOP",
+    "d": "Lower the hemoglobin by trapping red cells"
+   },
+   "distractorExplanations": {
+    "b": "Clumps are not counted as many single platelets; they lower the platelet count instead of raising it.",
+    "c": "Heparin tubes promote platelet clumping too; sodium citrate is the usual recollection tube for EDTA clumping.",
+    "d": "Platelet clumps do not affect hemoglobin; they may falsely raise the WBC count when counted as leukocytes."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-034": {
+   "options": {
+    "a": "A specific marker of bacterial infection",
+    "b": "A nonspecific inflammation marker, not a diagnosis",
+    "c": "A test that falls with inflammation and anemia",
+    "d": "A diagnostic test for multiple myeloma alone"
+   },
+   "distractorExplanations": {
+    "a": "ESR rises in many conditions; procalcitonin is closer to a bacterial-specific marker.",
+    "c": "ESR rises, not falls, with inflammation and anemia because rouleaux form faster.",
+    "d": "Myeloma can raise ESR, but ESR is nonspecific; myeloma is diagnosed with SPEP, immunofixation and marrow."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-035": {
+   "options": {
+    "a": "Thin film only, once",
+    "b": "Thick and thin, once",
+    "c": "Thick and thin, timed",
+    "d": "Buffy coat stain, once"
+   },
+   "distractorExplanations": {
+    "a": "Thin films alone miss low parasitemia; thick films for detection plus serial collections are needed.",
+    "b": "A single negative set does not exclude malaria; smears are repeated every 12–24 hours for three sets.",
+    "d": "A buffy coat preparation is not the standard method; thick and thin Giemsa films repeated over time are."
+   },
+   "explanation": "Look at the film. This item asks: “A malaria smear is:”. The matching answer is: Thick and thin, timed — not a casual Wright glance as 'negative' without looking. Independent UniPrep diagnostic — not an official ASCP MLT paper. A casual Wright-stain glance does not make a smear negative."
+  },
+  "ascp-mlt-readiness-check-hematology-036": {
+   "options": {
+    "a": "Monitor unfractionated heparin therapy",
+    "b": "Screen for von Willebrand disease",
+    "c": "Monitor low-molecular-weight heparin",
+    "d": "Monitor warfarin-style anticoagulation"
+   },
+   "distractorExplanations": {
+    "a": "Unfractionated heparin is monitored with the aPTT or anti-Xa level, not the INR.",
+    "b": "von Willebrand disease is evaluated with VWF antigen, activity and factor VIII; the INR is usually normal.",
+    "c": "Low-molecular-weight heparin is monitored, when needed, with anti-Xa levels, not the INR."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-038": {
+   "options": {
+    "a": "Whether the anemia is microcytic or macrocytic",
+    "b": "Whether the marrow is answering an anemia",
+    "c": "Whether iron stores are depleted",
+    "d": "Whether hemolysis is immune-mediated"
+   },
+   "distractorExplanations": {
+    "a": "Cell size classification comes from the MCV; the reticulocyte count measures marrow output.",
+    "c": "Iron stores are measured by ferritin; reticulocytes reflect red cell production, not iron reserve.",
+    "d": "Immune-mediated hemolysis is identified by the DAT; reticulocytes rise in many hemolytic causes alike."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-039": {
+   "options": {
+    "a": "A repeat CBC in one week",
+    "b": "An allergy panel and IgE alone",
+    "c": "A path review / parasite thought",
+    "d": "A bacterial culture workup"
+   },
+   "distractorExplanations": {
+    "a": "Marked eosinophilia in a traveler suggests parasitic infection; waiting a week delays the needed review.",
+    "b": "Allergy can raise eosinophils, but 40% in a traveler needs pathology review and parasite consideration first.",
+    "d": "Bacterial infection typically causes neutrophilia, not marked eosinophilia; parasites are the key concern."
+   },
+   "explanation": "Uncommon diffs get eyes. This item asks: “A differential with 40% eos in a traveler may need:”. The matching answer is: A path review / parasite thought — not auto-file. Independent UniPrep diagnostic — not an official ASCP MLT paper. It should not be auto-filed."
+  },
+  "ascp-mlt-readiness-check-hematology-040": {
+   "options": {
+    "a": "A fibrinogen-degradation marker specific for DIC",
+    "b": "A fibrin-degradation marker that confirms PE when positive",
+    "c": "A clotting factor assay that measures factor XIII",
+    "d": "A fibrin-degradation marker with huge negative-predictive use"
+   },
+   "distractorExplanations": {
+    "a": "D-dimer comes from cross-linked fibrin, not fibrinogen, and it is not specific for DIC.",
+    "b": "D-dimer is sensitive but not specific; a positive result needs imaging and does not confirm PE.",
+    "c": "Factor XIII cross-links fibrin, but D-dimer is a breakdown product, not a factor activity assay."
+   },
+   "explanation": "Pretest probability. This item asks: “D-dimer is:”. The matching answer is: A fibrin-degradation marker with huge negative-predictive use in the right pretest. Independent UniPrep diagnostic — not an official ASCP MLT paper. Its value depends on the right pretest probability."
+  },
+  "ascp-mlt-readiness-check-hematology-041": {
+   "options": {
+    "a": "Done as a sterile, timed, labeled procedure",
+    "b": "Done after refrigerating the fluid overnight",
+    "c": "Done on a clotted sample after mixing it well",
+    "d": "Done by automated analyzer on every fluid type"
+   },
+   "distractorExplanations": {
+    "b": "Cells degrade with delay; body fluid counts are done promptly, not after overnight storage.",
+    "c": "A clotted fluid traps cells and gives an invalid count; EDTA-anticoagulated tubes are used for cell counts.",
+    "d": "Analyzers need validation for each fluid; low counts or some fluids require a manual hemocytometer count."
+   },
+   "explanation": "Fluids are STAT-ish. This item asks: “A body-fluid count should be:”. The matching answer is: Done as a sterile, timed, labeled procedure — not a leftover syringe in a pocket. Independent UniPrep diagnostic — not an official ASCP MLT paper. A leftover syringe carried in a pocket is not acceptable."
+  },
+  "ascp-mlt-readiness-check-hematology-042": {
+   "options": {
+    "a": "Distinguish sickle cell disease from sickle trait by reaction strength",
+    "b": "Screen — they do not replace electrophoresis when you need a type",
+    "c": "Detect Hb C and other non-sickling variants",
+    "d": "Confirm HbS reliably in newborns with high HbF"
+   },
+   "distractorExplanations": {
+    "a": "Solubility is positive in both disease and trait; electrophoresis or HPLC is needed to separate them.",
+    "c": "Solubility tests detect HbS; Hb C and other variants need electrophoresis or HPLC.",
+    "d": "High HbF in newborns can give false negatives, so solubility tests are not used for newborn screening."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-043": {
+   "options": {
+    "a": "Called at the end of the shift along with the other results",
+    "b": "Reported in the LIS with a critical flag only",
+    "c": "Called — neutropenia is an emergency for the clinician",
+    "d": "Repeated on a new specimen before any call"
+   },
+   "distractorExplanations": {
+    "a": "Critical values are called promptly; batching them delays treatment of febrile neutropenia.",
+    "b": "An electronic flag does not meet critical-call requirements; a direct call with read-back is needed.",
+    "d": "A plausible critical value is called without waiting for a recollection that delays urgent care."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-044": {
+   "options": {
+    "a": "Report morphology with a stain-quality comment",
+    "b": "Adjust the microscope light to correct the color",
+    "c": "Too blue means the buffer pH is too acidic",
+    "d": "Fix the stain, do not invent morphology"
+   },
+   "distractorExplanations": {
+    "a": "Poor staining makes morphology unreliable; the smear is restained rather than reported with a caveat.",
+    "b": "Lighting changes do not fix stain pH or timing errors; buffer pH and staining times must be corrected.",
+    "c": "An overly blue stain usually reflects alkaline buffer or thick films; an acidic buffer makes smears too pink."
+   }
+  },
+  "ascp-mlt-readiness-check-hematology-045": {
+   "options": {
+    "a": "Validating flags and knowing when a smear/path review is required",
+    "b": "Diagnosing leukemia subtypes from the peripheral smear",
+    "c": "Releasing every flagged result promptly to reduce turnaround time",
+    "d": "Recommending treatment based on CBC trends"
+   },
+   "distractorExplanations": {
+    "b": "Diagnosing leukemia subtypes is the pathologist's role; the MLT flags and refers abnormal findings.",
+    "c": "Flags are resolved, not bypassed; turnaround pressure does not justify releasing unverified results.",
+    "d": "Treatment decisions belong to the clinician; the MLT provides validated results and alerts."
+   }
+  },
+  "ascp-mlt-readiness-check-micro-046": {
+   "options": {
+    "a": "Acceptable if the port was flushed with saline",
+    "b": "A contaminant risk — redo the draw right",
+    "c": "Acceptable if only the aerobic bottle is filled",
+    "d": "Reliable as long as both sets were drawn from it"
+   },
+   "distractorExplanations": {
+    "a": "Flushing does not disinfect the hub; lines must be scrubbed, and venipuncture is preferred to reduce contamination.",
+    "c": "Skipping the anaerobic bottle does not prevent contamination and reduces recovery of anaerobes.",
+    "d": "Drawing both sets through a dirty port can grow the same contaminant twice, mimicking true bacteremia."
+   }
+  },
+  "ascp-mlt-readiness-check-micro-047": {
+   "options": {
+    "a": "Streptococci until proven otherwise",
+    "b": "Enterococci from the wound flora",
+    "c": "Staph-like until identified",
+    "d": "Micrococcus as a reportable pathogen"
+   },
+   "distractorExplanations": {
+    "a": "Streptococci form pairs and chains; clusters suggest staphylococci, confirmed with the catalase test.",
+    "b": "Enterococci appear as pairs and short chains, not grape-like clusters.",
+    "d": "Micrococcus can cluster but is usually a skin contaminant; identification, not assumption, comes first."
+   },
+   "explanation": "Morphology first. This item asks: “Gram-positive cocci in clusters from a wound are:”. The matching answer is: Staph-like until identified — not a 'strep throat' story. Independent UniPrep diagnostic — not an official ASCP MLT paper. Do not treat them as a streptococcal finding."
+  },
+  "ascp-mlt-readiness-check-micro-048": {
+   "options": {
+    "a": "Formed stool sent to screen for asymptomatic carriage",
+    "b": "Rectal swab after diarrhea resolves",
+    "c": "Stool in formalin for the O&P exam",
+    "d": "Loose stool, not a formed 'just in case'"
+   },
+   "distractorExplanations": {
+    "a": "Formed stool is rejected because detecting carriage leads to overdiagnosis; unformed stool is tested.",
+    "b": "Testing after resolution or as a test of cure is not recommended because toxin and DNA can persist.",
+    "c": "Formalin preserves parasites but destroys toxin and inhibits NAAT; C. difficile needs unpreserved stool."
+   },
+   "explanation": "Right specimen. This item asks: “C. difficile testing is on:”. The matching answer is: Loose stool, not a formed 'just in case' as many algorithms say. Independent UniPrep diagnostic — not an official ASCP MLT paper. Many testing algorithms reject formed stool."
+  },
+  "ascp-mlt-readiness-check-micro-049": {
+   "options": {
+    "a": "Mycobacteria suspicions",
+    "b": "Gram-negative rods in urine",
+    "c": "Yeast capsules in CSF",
+    "d": "Spirochetes such as Treponema"
+   },
+   "distractorExplanations": {
+    "b": "Gram-negative rods are seen on Gram stain; acid-fast stains target organisms with mycolic acid walls.",
+    "c": "The capsule of Cryptococcus is shown with India ink, not with acid-fast staining.",
+    "d": "Spirochetes need darkfield or silver stains; they are not acid-fast organisms."
+   },
+   "explanation": "AFB has a reason. This item asks: “Acid-fast stain is for:”. The matching answer is: Mycobacteria suspicions — not a routine throat. Independent UniPrep diagnostic — not an official ASCP MLT paper. It is not ordered on a routine throat swab."
+  },
+  "ascp-mlt-readiness-check-micro-050": {
+   "options": {
+    "a": "Called once the organism is fully identified on culture",
+    "b": "A critical call — do not wait for the full ID to notify",
+    "c": "Reported in the LIS with a routine priority",
+    "d": "Repeated on a second CSF tube before calling"
+   },
+   "distractorExplanations": {
+    "a": "Waiting for identification delays meningitis treatment; the Gram stain finding itself is the critical result.",
+    "c": "Organisms in CSF are a critical result requiring immediate verbal notification, not routine reporting.",
+    "d": "Repeating delays care; the observed organisms are called as found and confirmed on culture later."
+   }
+  },
+  "ascp-mlt-readiness-check-micro-051": {
+   "options": {
+    "a": "Report results but flag the failed antibiotic",
+    "b": "Report if the patient zones are very large",
+    "c": "Do not report patient AST from that run",
+    "d": "Report results and repeat QC on the next day"
+   },
+   "distractorExplanations": {
+    "a": "Patient results for the affected drug cannot be reported until the QC failure is corrected.",
+    "b": "Large zones are not exempt; failed QC means the accuracy of that run is unverified.",
+    "d": "Results from a run with failed QC are withheld; deferring QC to the next day releases unverified results."
+   }
+  },
+  "ascp-mlt-readiness-check-micro-052": {
+   "options": {
+    "a": "A routine stool culture for Salmonella and Shigella",
+    "b": "An ova and parasite exam as the first test",
+    "c": "A stool culture for Campylobacter and E. coli O157",
+    "d": "Not a community Salmonella hunt — think C. diff"
+   },
+   "distractorExplanations": {
+    "a": "The 3-day rule rejects routine enteric cultures after 3 days of hospitalization; C. difficile testing fits instead.",
+    "b": "O&P has low yield in hospital-onset diarrhea and is also restricted by the 3-day rule.",
+    "c": "Community pathogens such as Campylobacter rarely cause diarrhea that starts after day 3 in hospital."
+   },
+   "explanation": "Healthcare vs community. This item asks: “A stool culture in a patient hospitalized 5 days with new diarrhea is often:”. The matching answer is: Not a community Salmonella hunt — think C. diff per protocol. Independent UniPrep diagnostic — not an official ASCP MLT paper. Testing follows the lab's 3-day rule protocol."
+  },
+  "ascp-mlt-readiness-check-micro-053": {
+   "options": {
+    "a": "The right swab and media",
+    "b": "A calcium alginate swab",
+    "c": "A dry cotton swab in a tube",
+    "d": "Bacterial transport gel media"
+   },
+   "distractorExplanations": {
+    "b": "Calcium alginate and wooden swabs can inhibit PCR; flocked synthetic swabs in viral media are used.",
+    "c": "Cotton and dry transport degrade the sample and can inhibit amplification; viral transport media is used.",
+    "d": "Amies or Stuart gel is for bacterial culture; viral PCR uses VTM/UTM or approved molecular media."
+   },
+   "explanation": "Collection is the test. This item asks: “Viral transport for a PCR must be:”. The matching answer is: The right swab and media — a dry wood swab can kill the test. Independent UniPrep diagnostic — not an official ASCP MLT paper. A dry wooden swab can inhibit or ruin the PCR."
+  },
+  "ascp-mlt-readiness-check-micro-054": {
+   "options": {
+    "a": "The caregiver once susceptibility results are ready",
+    "b": "The caregiver with organism morphology — read back",
+    "c": "The infection prevention office instead of the nurse",
+    "d": "The caregiver, reporting only positive or negative"
+   },
+   "distractorExplanations": {
+    "a": "Waiting for susceptibilities delays therapy by a day or more; the Gram stain result is called immediately.",
+    "c": "Infection prevention may be notified, but the result must reach the caregiver who can treat the patient.",
+    "d": "Morphology such as GPC in clusters guides empiric therapy; a bare 'positive' omits key information."
+   }
+  },
+  "ascp-mlt-readiness-check-micro-055": {
+   "options": {
+    "a": "Candida in a CSF sample",
+    "b": "Histoplasma in urine antigen",
+    "c": "Cryptococcus in the right host",
+    "d": "Pneumocystis in a BAL sample"
+   },
+   "distractorExplanations": {
+    "a": "Candida is identified by culture and germ tube; India ink highlights the cryptococcal capsule.",
+    "b": "Histoplasma is detected by its own urine antigen test; CrAg is specific to Cryptococcus.",
+    "d": "Pneumocystis is shown with GMS or DFA staining, not with India ink or cryptococcal antigen."
+   },
+   "explanation": "Yeast in CSF. This item asks: “India ink / CrAg is in the thought process for:”. The matching answer is: Cryptococcus in the right host — not a strep screen. Independent UniPrep diagnostic — not an official ASCP MLT paper. It is not a streptococcal screen."
+  },
+  "ascp-mlt-readiness-check-micro-056": {
+   "options": {
+    "a": "A dry swab",
+    "b": "Refrigerated transport",
+    "c": "A sterile cup",
+    "d": "Proper transport"
+   },
+   "distractorExplanations": {
+    "a": "Dry swabs expose anaerobes to oxygen and drying; tissue or aspirate in anaerobic transport is preferred.",
+    "b": "Refrigeration lets oxygen diffuse in and harms some anaerobes; anaerobic transport is held at room temperature.",
+    "c": "A plain sterile cup admits oxygen; anaerobes need an oxygen-free transport container."
+   },
+   "explanation": "Oxygen kills anaerobes. This item asks: “Anaerobic culture needs:”. The matching answer is: Proper transport — a dry swab sitting 6 hours is a waste. Independent UniPrep diagnostic — not an official ASCP MLT paper. A dry swab sitting for hours is useless for anaerobes."
+  },
+  "ascp-mlt-readiness-check-micro-057": {
+   "options": {
+    "a": "A colonization/infection-control tool, not a blood culture",
+    "b": "A diagnostic test for MRSA pneumonia that stands on its own",
+    "c": "A susceptibility test that replaces culture AST",
+    "d": "A screen that detects MRSA bacteremia directly"
+   },
+   "distractorExplanations": {
+    "b": "Nares PCR has a high negative predictive value for MRSA pneumonia, but a positive result shows colonization.",
+    "c": "PCR detects MRSA markers such as mecA but does not give full susceptibility results for treatment.",
+    "d": "Nares swabs sample a colonization site; bloodstream infection is detected by blood culture."
+   }
+  },
+  "ascp-mlt-readiness-check-micro-058": {
+   "options": {
+    "a": "Full ID and AST on every colony type",
+    "b": "Likely contamination — comment",
+    "c": "A pure culture of the leading organism",
+    "d": "Reported as no growth"
+   },
+   "distractorExplanations": {
+    "a": "Working up all mixed skin flora wastes resources and produces misleading reports from a poor specimen.",
+    "c": "Subculturing one organism from mixed skin flora implies a pathogen without clinical support.",
+    "d": "Growth was present, so 'no growth' is inaccurate; mixed flora is reported with a specimen-quality comment."
+   },
+   "explanation": "Specimen quality. This item asks: “A plate with mixed skin flora on a poorly collected wound is:”. The matching answer is: Likely contamination — comment, do not over-work garbage. Independent UniPrep diagnostic — not an official ASCP MLT paper. Do not overwork a poorly collected specimen."
+  },
+  "ascp-mlt-readiness-check-micro-059": {
+   "options": {
+    "a": "Sniff plates to check for a characteristic odor",
+    "b": "Open bench work with gloves and a surgical mask",
+    "c": "Do not sniff plates; work in the right cabinet",
+    "d": "Work in a laminar-flow clean bench"
+   },
+   "distractorExplanations": {
+    "a": "Sniffing plates risks aerosol exposure; Brucella is a leading cause of laboratory-acquired infection.",
+    "b": "Brucella needs a biosafety cabinet with BSL-3 practices; a surgical mask does not protect against aerosols.",
+    "d": "A clean bench protects the product, not the worker, and blows air toward the user; a Class II BSC is needed."
+   }
+  },
+  "ascp-mlt-readiness-check-micro-060": {
+   "options": {
+    "a": "Perform and read Gram stains on clinical specimens",
+    "b": "Call critical results to the licensed caregiver",
+    "c": "Reject specimens that fail acceptance criteria",
+    "d": "Choose the patient's antibiotic as the attending"
+   },
+   "distractorExplanations": {
+    "a": "Performing and reading Gram stains are core MLT tasks, so this is within the MLT's scope.",
+    "b": "Calling criticals with read-back is an MLT responsibility, so this is within the MLT's scope.",
+    "c": "Rejecting improperly collected specimens per SOP is part of the MLT role, so this is within scope."
+   }
+  }
+ }
+}

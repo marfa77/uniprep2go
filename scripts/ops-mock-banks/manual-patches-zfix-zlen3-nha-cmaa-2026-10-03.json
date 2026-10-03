@@ -1,0 +1,69 @@
+{
+ "nha-cmaa-readiness-check": {
+  "nha-cmaa-readiness-check-scheduling-front-015": {
+   "options": {
+    "a": "Seat whichever patient checked in first and ask the other to rebook",
+    "b": "Review the schedule/documentation and escalate per office protocol",
+    "c": "Have both patients wait while the provider decides who will be seen first",
+    "d": "Apologize and see both by shortening each visit to fit into the one slot"
+   },
+   "distractorExplanations": {
+    "a": "First to check in ignores the actual booking record; the CMAA should verify the schedule before deciding who keeps the slot.",
+    "c": "Schedule conflicts are an administrative task; the CMAA verifies the record and escalates to the office manager, not the treating provider.",
+    "d": "Halving two visits to fit one slot compromises care for both patients; the conflict should be resolved by reviewing the schedule."
+   }
+  },
+  "nha-cmaa-readiness-check-medical-records-010": {
+   "options": {
+    "a": "Using a cover sheet and sending the full chart so the recipient has context",
+    "b": "Verifying numbers, using cover sheets, and placing machines in secure areas",
+    "c": "Faxing to the recipient's main office number, then calling afterward to confirm",
+    "d": "Including the diagnosis on the cover sheet so staff route it correctly"
+   },
+   "distractorExplanations": {
+    "c": "Confirming after transmission does not prevent misdirection to a shared main line; the number must be verified or preprogrammed before PHI is sent.",
+    "a": "A cover sheet helps, but faxing the full chart violates minimum necessary, and the number still must be verified before sending.",
+    "d": "The cover sheet should carry a confidentiality notice and contacts, not PHI such as a diagnosis that anyone near the machine can read."
+   }
+  },
+  "nha-cmaa-readiness-check-billing-coding-basics-011": {
+   "options": {
+    "a": "The fixed dollar amount the patient pays at each office visit for covered care",
+    "b": "The amount the patient pays before the plan begins paying covered services",
+    "c": "The percentage of covered costs the patient pays after meeting the deductible",
+    "d": "The monthly amount the patient pays to keep the insurance plan in force"
+   },
+   "distractorExplanations": {
+    "a": "A fixed amount paid at each visit is a copayment; the deductible is the total the patient pays before the plan starts paying.",
+    "c": "A percentage paid after the deductible is coinsurance; the deductible itself is the amount paid before plan payments begin.",
+    "d": "The monthly payment to keep coverage active is the premium, which is separate from the deductible and other cost-sharing."
+   }
+  },
+  "nha-cmaa-readiness-check-billing-coding-basics-013": {
+   "options": {
+    "a": "A patient's plan requires a primary care referral before a specialist visit",
+    "b": "A patient has more than one plan that may cover the same services",
+    "c": "A patient's claim is split between the deductible and coinsurance",
+    "d": "A patient changes plans mid-year and the old plan has already ended"
+   },
+   "distractorExplanations": {
+    "a": "Referral requirements are a gatekeeper rule of one plan (often an HMO); COB applies when two or more plans cover the patient.",
+    "c": "Splitting a claim between deductible and coinsurance is cost-sharing within one plan, not coordination between multiple plans.",
+    "d": "With no overlap in coverage there is nothing to coordinate; services after the change are simply billed to the new plan."
+   }
+  },
+  "nha-cmaa-readiness-check-medical-records-005": {
+   "options": {
+    "a": "Follow federal/state timelines and procedures with tracking logs",
+    "b": "Allow up to 90 days for any request, since HIPAA sets no deadline at all",
+    "c": "Be completed the same day for every request, before identity is verified",
+    "d": "Be set by the requester, who may demand release within 24 hours"
+   },
+   "distractorExplanations": {
+    "b": "HIPAA requires action on access requests within 30 days, with one 30-day extension; states may set shorter limits, never a 90-day default.",
+    "c": "Identity and authority must be verified before any release; HIPAA does not require same-day turnaround, it sets a 30-day limit.",
+    "d": "Requesters cannot set legal timelines; federal (30-day HIPAA) and state rules plus facility procedure govern turnaround."
+   }
+  }
+ }
+}

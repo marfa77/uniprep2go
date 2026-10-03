@@ -1,0 +1,701 @@
+{
+ "ardms-spi-readiness-check": {
+  "ardms-spi-readiness-check-physics-basics-001": {
+   "options": {
+    "a": "Greater than 20 kHz (above human hearing)",
+    "b": "Less than 20 Hz (below human hearing)",
+    "c": "Between 20 Hz and 20 kHz (audible range)",
+    "d": "Greater than 2 MHz (the diagnostic range)"
+   },
+   "distractorExplanations": {
+    "b": "Sound below 20 Hz is infrasound; ultrasound is the opposite end, above the upper limit of hearing.",
+    "c": "20 Hz to 20 kHz is audible sound; ultrasound begins above 20 kHz.",
+    "d": "About 2 MHz is the low end of typical diagnostic imaging; the definition of ultrasound starts at 20 kHz."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-002": {
+   "options": {
+    "a": "Propagation speed times frequency (c × f)",
+    "b": "Propagation speed divided by frequency (c/f)",
+    "c": "Frequency divided by propagation speed (f/c)",
+    "d": "Spatial pulse length times number of cycles"
+   },
+   "distractorExplanations": {
+    "a": "Multiplying speed by frequency gives the wrong units; wavelength is speed divided by frequency (λ = c/f).",
+    "c": "That inverts the ratio; f/c equals 1/λ, so higher frequency would wrongly give a longer wavelength.",
+    "d": "SPL equals cycles × wavelength, so wavelength is SPL divided by the number of cycles, not multiplied by it."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-003": {
+   "options": {
+    "a": "The transducer's operating frequency",
+    "b": "The amplitude and intensity of the pulse",
+    "c": "Medium stiffness (elasticity) and density",
+    "d": "Pulse repetition frequency and depth setting"
+   },
+   "distractorExplanations": {
+    "a": "Frequency is set by the source; speed is a property of the medium and is the same for all frequencies in soft tissue.",
+    "b": "Amplitude and intensity describe the strength of the wave; they do not change how fast sound travels in a medium.",
+    "d": "PRF and depth control pulse timing on the machine; the medium's stiffness and density set propagation speed."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-004": {
+   "options": {
+    "a": "Frequency × wavelength",
+    "b": "Density divided by propagation speed",
+    "c": "Stiffness × propagation speed",
+    "d": "Density × propagation speed"
+   },
+   "distractorExplanations": {
+    "b": "Dividing inverts the relationship; impedance is density multiplied by propagation speed (Z = ρc, in rayls).",
+    "c": "Stiffness and density together set propagation speed; impedance uses density times speed, not stiffness.",
+    "a": "Fλ = c."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-005": {
+   "options": {
+    "a": "Reciprocals (T = 1/f)",
+    "b": "Directly proportional (T ∝ f)",
+    "c": "Set by the medium",
+    "d": "Related by the speed (T = c/f)"
+   },
+   "distractorExplanations": {
+    "b": "As frequency rises the period gets shorter, so the two are inversely related, not directly proportional.",
+    "c": "The sound source (transducer) sets both period and frequency; the medium sets propagation speed.",
+    "d": "Speed divided by frequency gives wavelength (λ = c/f); period is simply the reciprocal of frequency."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-008": {
+   "options": {
+    "a": "Linear: 3 dB ≈ factor of 3; 10 dB ≈ factor of 10",
+    "b": "Logarithmic: 3 dB ≈ factor of 2; 10 dB ≈ factor of 100",
+    "c": "An absolute unit of intensity in W/cm²",
+    "d": "Logarithmic: 3 dB ≈ factor of 2; 10 dB ≈ factor of 10"
+   },
+   "distractorExplanations": {
+    "a": "The dB scale is logarithmic, not linear; +3 dB doubles intensity rather than tripling it.",
+    "b": "3 dB does double intensity, but 10 dB is a factor of 10; a factor of 100 is 20 dB.",
+    "c": "Decibels express a relative ratio; W/cm² is the absolute unit of intensity, not the dB scale."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-009": {
+   "options": {
+    "a": "The interface is large and smooth relative to wavelength",
+    "b": "Scatterers are much smaller than wavelength only (Rayleigh)",
+    "c": "The interface is rough and irregular relative to wavelength",
+    "d": "Impedances on both sides of the boundary are equal"
+   },
+   "distractorExplanations": {
+    "c": "Rough, irregular interfaces cause diffuse scattering (backscatter) in many directions, not specular reflection.",
+    "d": "With equal impedances there is no mismatch, so no reflection of any kind occurs at the boundary.",
+    "b": "Rayleigh is small scatterers."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-010": {
+   "options": {
+    "a": "Reflection—the angle of reflection equals incidence",
+    "b": "Refraction—bending of the beam across an oblique interface",
+    "c": "Attenuation—loss of beam intensity with depth and frequency",
+    "d": "Scattering—redirection of sound by small reflectors"
+   },
+   "distractorExplanations": {
+    "a": "Equal angles of incidence and reflection is the law of reflection; Snell's law governs the transmitted (refracted) beam.",
+    "c": "Attenuation describes energy loss with depth and frequency; Snell's law describes the change in beam direction.",
+    "d": "Scattering from small or rough reflectors is not described by Snell's law, which relates angles to speed ratios."
+   },
+   "explanation": "Refraction can laterally displace structures (e.g., edge artifacts/duodenum-type teaching cases); it bends the beam when speed changes across an oblique interface."
+  },
+  "ardms-spi-readiness-check-physics-basics-011": {
+   "options": {
+    "a": "Amplitude squared",
+    "b": "Amplitude cubed",
+    "c": "Wavelength squared",
+    "d": "Square root of power"
+   },
+   "distractorExplanations": {
+    "b": "Intensity scales with the square of amplitude, so doubling amplitude quadruples intensity, not an eightfold rise.",
+    "c": "Wavelength affects resolution and attenuation; intensity depends on amplitude squared, not wavelength.",
+    "d": "Intensity is power divided by beam area, so it is directly proportional to power, not to its square root."
+   },
+   "explanation": "Acoustic intensity relates to amplitude squared (power/area considerations) for a given medium relationship."
+  },
+  "ardms-spi-readiness-check-physics-basics-012": {
+   "options": {
+    "a": "Hits a boundary at 90° between media with different speeds",
+    "b": "Obliquely encounters media with different propagation speeds",
+    "c": "Obliquely meets media with different impedances but equal speeds",
+    "d": "Passes through a single uniform medium at a steady speed"
+   },
+   "distractorExplanations": {
+    "a": "At normal (90°) incidence there is no refraction even when speeds differ; obliquity is required.",
+    "c": "An impedance mismatch alone causes reflection; refraction requires a difference in propagation speeds.",
+    "d": "With no boundary and no speed change there is nothing to bend the beam, so refraction cannot occur."
+   }
+  },
+  "ardms-spi-readiness-check-physics-basics-015": {
+   "options": {
+    "a": "Absolute beam intensity measured in watts per square centimeter",
+    "b": "Relative changes in intensity or amplitude on a logarithmic scale",
+    "c": "Changes in pulse frequency expressed on a linear kilohertz scale",
+    "d": "The depth of a reflector calculated from echo return time"
+   },
+   "distractorExplanations": {
+    "a": "W/cm² is the absolute unit of intensity; decibels express relative ratios, not absolute values.",
+    "c": "Frequency is measured in hertz; decibels are logarithmic ratios of intensity or amplitude, not frequency.",
+    "d": "Reflector depth comes from the range equation (13 µs per cm round trip), not from decibel measurements."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-001": {
+   "options": {
+    "a": "Certain materials convert pressure to electricity and vice versa",
+    "b": "Electric current heats a crystal, which then emits sound",
+    "c": "Magnetic fields make the crystal change shape to emit sound",
+    "d": "Materials convert electricity to pressure but not the reverse"
+   },
+   "distractorExplanations": {
+    "b": "Heating does not produce the ultrasound pulse; voltage deforms the crystal directly, and heat can destroy it above the Curie point.",
+    "c": "Shape change driven by a magnetic field is magnetostriction, not the piezoelectric effect, which uses voltage.",
+    "d": "The effect is reciprocal: the same element converts voltage to pressure on transmit and pressure to voltage on receive."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-002": {
+   "options": {
+    "a": "Shorten the pulse by absorbing the crystal's ringing",
+    "b": "Improve transmission between PZT and tissue",
+    "c": "Focus the beam in the elevation plane",
+    "d": "Raise the impedance above that of PZT"
+   },
+   "distractorExplanations": {
+    "a": "Absorbing ringing to shorten the pulse is the job of the backing (damping) material behind the crystal.",
+    "c": "Elevational focusing is done by the acoustic lens, not by the matching layer.",
+    "d": "The matching layer impedance sits between PZT and skin; raising it above PZT would increase reflection."
+   },
+   "explanation": "The matching layer has an impedance between PZT and tissue, improving transmission; its thickness is about 1/4 wavelength."
+  },
+  "ardms-spi-readiness-check-transducers-beam-003": {
+   "options": {
+    "a": "Increases ringing to raise the quality factor (Q)",
+    "b": "Improves lateral resolution by narrowing the beam width",
+    "c": "Shortens spatial pulse length improving axial resolution",
+    "d": "Increases sensitivity by lengthening the transmitted pulse"
+   },
+   "distractorExplanations": {
+    "a": "Damping reduces ringing and lowers Q (wider bandwidth); higher Q belongs to lightly damped CW transducers.",
+    "b": "Beam width and lateral resolution are improved by focusing, not by the backing material.",
+    "d": "Damping shortens the pulse and actually reduces sensitivity; it does not lengthen the pulse."
+   },
+   "explanation": "Low-Q damped transducers are used for imaging; continuous wave Doppler is lightly damped. Damping shortens SPL at the cost of sensitivity."
+  },
+  "ardms-spi-readiness-check-transducers-beam-004": {
+   "options": {
+    "a": "Narrower beam width at the focus",
+    "b": "Lower transducer frequency",
+    "c": "More cycles in the pulse",
+    "d": "Shorter spatial pulse length"
+   },
+   "distractorExplanations": {
+    "a": "Beam width governs lateral resolution; axial resolution depends on spatial pulse length.",
+    "b": "Lower frequency means longer wavelength and longer SPL, which worsens axial resolution.",
+    "c": "More cycles lengthen SPL."
+   },
+   "explanation": "AR ≈ SPL/2; fewer cycles and shorter λ help, so higher frequency and more damping improve axial resolution."
+  },
+  "ardms-spi-readiness-check-transducers-beam-005": {
+   "options": {
+    "a": "Focus (narrowest beam width)",
+    "b": "Far (Fraunhofer) zone",
+    "c": "Transducer face, near the crystal",
+    "d": "Deepest part of the image"
+   },
+   "distractorExplanations": {
+    "b": "The beam diverges in the far zone, so lateral resolution degrades beyond the focus.",
+    "c": "At the face the beam is as wide as the crystal, about twice its width at the focus.",
+    "d": "The deepest region is in the diverging far field, where beam width and lateral resolution are worst."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-006": {
+   "options": {
+    "a": "Steering one beam with phased delays from all elements",
+    "b": "Firing groups of elements in sequence across the face",
+    "c": "Rotating a single element with a motor inside the probe",
+    "d": "Firing every element together as one large crystal"
+   },
+   "distractorExplanations": {
+    "a": "Steering with phased time delays from a small footprint produces a sector image, which is a phased array.",
+    "c": "A motor-driven single element is an older mechanical sector transducer, not a linear sequenced array.",
+    "d": "Firing all elements at once makes one wide unsteered beam; linear arrays build lines by firing small groups in turn."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-007": {
+   "options": {
+    "a": "A motor that rotates a single crystal",
+    "b": "Firing element groups in sequence along the face",
+    "c": "Minute time delays (phasing) across elements",
+    "d": "A curved face that spreads the scan lines"
+   },
+   "distractorExplanations": {
+    "a": "A rotating crystal describes a mechanical sector transducer; phased arrays steer electronically.",
+    "b": "Sequential firing of element groups is how linear sequenced arrays make rectangular images.",
+    "d": "A curved face produces the blunted sector of a convex array; phased arrays steer with timing delays."
+   },
+   "explanation": "Electronic beam forming with minute time delays steers/focuses the beam, enabling sector imaging from small probes (cardiac)."
+  },
+  "ardms-spi-readiness-check-transducers-beam-008": {
+   "options": {
+    "a": "Increasing output power and overall receiver gain",
+    "b": "Wider element spacing across a larger total aperture",
+    "c": "Lowering the frame rate with more transmit foci",
+    "d": "Apodization, subdicing, and tight element spacing"
+   },
+   "distractorExplanations": {
+    "a": "More power and gain raise lobe energy along with the main beam; they do not suppress grating lobes.",
+    "b": "Wider element spacing makes grating lobes worse; elements should be spaced closely (about half a wavelength).",
+    "c": "More transmit foci improve lateral resolution across depth but do not address grating lobes."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-009": {
+   "options": {
+    "a": "Pulse duration divided by pulse repetition period",
+    "b": "Pulse repetition period divided by the pulse duration",
+    "c": "Pulse duration multiplied by the frame rate",
+    "d": "Pulse duration divided by the wave period"
+   },
+   "distractorExplanations": {
+    "b": "That inverts the ratio and would give values above 1; duty factor is PD/PRP, a fraction of time transmitting.",
+    "c": "Frame rate is not the pulse repetition frequency; duty factor uses PD × PRF (equivalently PD/PRP).",
+    "d": "Pulse duration divided by the wave period gives the number of cycles in the pulse, not duty factor."
+   },
+   "explanation": "DF is unitless (the fraction of time transmitting); CW Doppler DF = 1; imaging DF is very small."
+  },
+  "ardms-spi-readiness-check-transducers-beam-010": {
+   "options": {
+    "a": "Number of cycles × period",
+    "b": "Number of cycles × wavelength",
+    "c": "Wavelength ÷ number of cycles",
+    "d": "Propagation speed ÷ frequency (c/f)"
+   },
+   "distractorExplanations": {
+    "a": "Cycles multiplied by period gives pulse duration (a time), not spatial pulse length (a distance).",
+    "c": "SPL grows with more cycles, so it is wavelength multiplied by cycles, not divided.",
+    "d": "c/f equals one wavelength; SPL is that wavelength multiplied by the number of cycles in the pulse."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-011": {
+   "options": {
+    "a": "Conversion between electrical energy and mechanical energy",
+    "b": "Conversion of electrical energy into heat within the crystal",
+    "c": "Conversion between light and sound energy in crystals",
+    "d": "Conversion of magnetic energy into sound in the probe"
+   },
+   "distractorExplanations": {
+    "b": "Heat is an unwanted by-product; the piezoelectric effect converts voltage into mechanical vibration and back.",
+    "c": "Light-to-sound conversion is the photoacoustic effect, not piezoelectricity.",
+    "d": "Magnetic-to-mechanical conversion is magnetostriction; piezoelectric crystals respond to voltage."
+   },
+   "explanation": "Piezoelectric materials expand/contract with voltage and generate voltage from pressure, converting between electrical and mechanical (sound) energy in crystals."
+  },
+  "ardms-spi-readiness-check-transducers-beam-012": {
+   "options": {
+    "a": "Improves lateral resolution at multiple depths but can reduce frame rate",
+    "b": "Improves lateral resolution at multiple depths and raises frame rate",
+    "c": "Improves axial resolution at multiple depths but reduces frame rate",
+    "d": "Reduces frame rate without changing lateral resolution"
+   },
+   "distractorExplanations": {
+    "b": "Each extra focus needs another transmit pulse per line, so frame rate falls rather than rises.",
+    "c": "Focusing narrows beam width, which affects lateral resolution; axial resolution depends on SPL.",
+    "d": "Frame rate does fall, but the purpose and effect of extra foci is better lateral resolution over depth."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-013": {
+   "options": {
+    "a": "Number of cycles in the pulse × wavelength",
+    "b": "Number of cycles in the pulse × period",
+    "c": "Pulse duration × pulse repetition frequency",
+    "d": "One half of the axial resolution value"
+   },
+   "distractorExplanations": {
+    "b": "Cycles times period is pulse duration, the time version; SPL uses wavelength to give a distance.",
+    "c": "Pulse duration times PRF equals duty factor, not spatial pulse length.",
+    "d": "Axial resolution is SPL/2, so SPL is twice the axial resolution, not half of it."
+   }
+  },
+  "ardms-spi-readiness-check-transducers-beam-014": {
+   "options": {
+    "a": "A pie-shaped sector that converges to a tiny footprint",
+    "b": "Blunted-sector shaped with a wider field at depth",
+    "c": "Rectangular with a constant width at depth",
+    "d": "Trapezoidal from steering a flat linear face"
+   },
+   "distractorExplanations": {
+    "a": "A pointed sector from a small footprint is the phased-array format; convex arrays have a broad curved top.",
+    "c": "A rectangle of constant width is produced by a linear sequenced array, not a curved array.",
+    "d": "A trapezoid comes from steering the outer lines of a flat linear array (virtual convex), not a curved face."
+   },
+   "explanation": "Curved arrays create blunted sector formats common in abdominal imaging, from sequential firing along a curved face."
+  },
+  "ardms-spi-readiness-check-transducers-beam-015": {
+   "options": {
+    "a": "The range of frequencies in the pulse",
+    "b": "The main (resonant) frequency of the crystal",
+    "c": "The number of pulses sent per second",
+    "d": "The width of the beam at the focus"
+   },
+   "distractorExplanations": {
+    "b": "The resonant frequency is the center or operating frequency; bandwidth is the spread of frequencies around it.",
+    "c": "Pulses per second is the pulse repetition frequency, a timing setting unrelated to bandwidth.",
+    "d": "Beam width at the focus governs lateral resolution; bandwidth is a frequency range, not a dimension."
+   },
+   "explanation": "Bandwidth is the range of frequencies in the transmitted/received pulse; broader bandwidth (more damping) shortens pulses and improves axial resolution."
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-001": {
+   "options": {
+    "a": "Reflector speed, the cosine of the Doppler angle, and operating frequency",
+    "b": "Reflector speed, the sine of the Doppler angle, and operating frequency",
+    "c": "Reflector speed and operating frequency, but not the Doppler angle",
+    "d": "The pulse repetition frequency and the depth of the sample gate"
+   },
+   "distractorExplanations": {
+    "b": "The Doppler equation uses cosine, which is maximal at 0°; sine would wrongly make the shift maximal at 90°.",
+    "c": "The shift depends on cos θ, so the angle matters and must be corrected for velocity estimates.",
+    "d": "PRF and gate depth set the Nyquist limit and range, not the magnitude of the Doppler shift itself."
+   }
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-002": {
+   "options": {
+    "a": "Cosine is 1 so the Doppler shift is maximal",
+    "b": "Cosine is 0 so no Doppler shift is detected",
+    "c": "Cosine is 0.5 so the shift is halved",
+    "d": "Velocity estimates are at their most accurate"
+   },
+   "distractorExplanations": {
+    "a": "Cos θ equals 1 at 0°, where the shift is maximal; at 90° cosine is 0.",
+    "c": "Cos θ equals 0.5 at 60°; at 90° it is 0 and no shift is detected.",
+    "d": "Angles near 90° give the largest velocity errors; keep the angle at or below 60° for velocity estimates."
+   }
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-003": {
+   "options": {
+    "a": "The wall filter is set too high for slow flow",
+    "b": "CW Doppler is used (CW aliases the same way)",
+    "c": "Nyquist limit is exceeded (shift > PRF/2)",
+    "d": "The Doppler shift is below PRF/2"
+   },
+   "distractorExplanations": {
+    "a": "A high wall filter removes low-velocity signals near the baseline; it does not cause wraparound aliasing.",
+    "d": "A shift below PRF/2 is under the Nyquist limit and is displayed correctly; aliasing needs a shift above it.",
+    "b": "CW does not alias the same (no PRF sampling limit)."
+   }
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-005": {
+   "options": {
+    "a": "4v^2 (modified Bernoulli)",
+    "b": "4v (peak velocity × 4)",
+    "c": "v^2/4 (velocity squared over 4)",
+    "d": "8v^2 (doubled for valves)"
+   },
+   "distractorExplanations": {
+    "b": "The velocity must be squared; ΔP = 4v², so 4 m/s gives 64 mmHg, not 16 mmHg.",
+    "c": "The factor 4 multiplies v², it does not divide it; ΔP = 4v² in mmHg with v in m/s.",
+    "d": "The simplified constant is 4, not 8; there is no doubling for valves in the modified Bernoulli equation."
+   }
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-006": {
+   "options": {
+    "a": "Pressure drop across a stenotic valve",
+    "b": "Tendency for laminar vs turbulent flow",
+    "c": "Volume flow rate through a vessel",
+    "d": "Maximum velocity before aliasing occurs"
+   },
+   "distractorExplanations": {
+    "a": "Pressure drop across a stenosis is estimated with the Bernoulli equation, not the Reynolds number.",
+    "c": "Volume flow is described by Poiseuille's law (Q = ΔP/R), not by the Reynolds number.",
+    "d": "The maximum unaliased velocity is set by the Nyquist limit (PRF/2), not by the Reynolds number."
+   }
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-007": {
+   "options": {
+    "a": "Larger packets improve velocity estimates and raise frame rate",
+    "b": "Smaller packets improve sensitivity but reduce frame rate",
+    "c": "Larger packets improve velocity estimates but reduce frame rate",
+    "d": "Larger packets reduce aliasing by raising the color Nyquist limit"
+   },
+   "distractorExplanations": {
+    "a": "Each extra pulse per line takes time, so larger packets lower the frame rate.",
+    "b": "Smaller packets raise frame rate but reduce sensitivity and velocity accuracy; the tradeoff is reversed.",
+    "d": "The Nyquist limit depends on PRF, not packet size; larger packets do not reduce aliasing."
+   }
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-009": {
+   "options": {
+    "a": "Strength/amplitude of Doppler shifts",
+    "b": "Mean velocity and direction of flow",
+    "c": "Peak velocity over time as a spectrum",
+    "d": "Tissue motion rather than blood flow"
+   },
+   "distractorExplanations": {
+    "b": "Mean velocity and direction are what color (velocity) Doppler maps; power Doppler shows signal strength.",
+    "c": "A velocity-time spectrum is the spectral Doppler display, not power Doppler.",
+    "d": "Low-velocity, high-amplitude tissue motion is displayed by tissue Doppler imaging, not power Doppler."
+   },
+   "explanation": "Power Doppler displays signal strength rather than mean velocity/direction; it is more sensitive to flow presence and less angle dependent than color."
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-010": {
+   "options": {
+    "a": "Plug flow sampled with a small gate volume",
+    "b": "Turbulent flow or large sample volume",
+    "c": "A Doppler angle of exactly 0°",
+    "d": "Aliasing from too low a PRF"
+   },
+   "distractorExplanations": {
+    "a": "Plug flow with a small gate has a narrow velocity range and a clear spectral window, the opposite of broadening.",
+    "c": "A 0° angle maximizes the shift and minimizes geometric broadening; it does not cause spectral fill-in.",
+    "d": "Aliasing wraps the peak velocities around the baseline; it does not fill in the spectral window."
+   },
+   "explanation": "Fill-in of the spectral window suggests turbulence or technical factors, such as a large sample volume encompassing varied velocities."
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-012": {
+   "options": {
+    "a": "Shows flow direction and mean velocity more accurately than color Doppler",
+    "b": "Is more sensitive to low flow and less angle-dependent than velocity color Doppler",
+    "c": "Is less prone to flash artifact and has a higher frame rate than color Doppler",
+    "d": "Measures peak velocities for stenosis grading without angle correction"
+   },
+   "distractorExplanations": {
+    "a": "Power Doppler does not display direction or velocity magnitude; that is the strength of color and spectral Doppler.",
+    "c": "Power Doppler is more prone to flash (motion) artifact and usually has a lower frame rate than color Doppler.",
+    "d": "Stenosis grading needs angle-corrected spectral velocities; power Doppler gives no velocity values."
+   },
+   "explanation": "Power Doppler encodes strength of the Doppler signal; it is relatively angle-insensitive compared with color velocity maps and does not show direction/velocity magnitude the same way."
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-013": {
+   "options": {
+    "a": "Chaotic multidirectional velocities filling the spectrum at rest",
+    "b": "Streamlined layers with a relatively narrow range of velocities",
+    "c": "Fastest layers at the walls and slowest layers in the center",
+    "d": "Flow that reverses direction in every cardiac cycle"
+   },
+   "distractorExplanations": {
+    "c": "In laminar (parabolic) flow the fastest layers are in the center and the slowest are at the walls.",
+    "d": "Flow reversal (as in triphasic arterial flow) can occur with laminar flow but does not define it.",
+    "a": "Not the best answer here; the right answer is “Streamlined layers with a relatively narrow range of velocities in a vessel”."
+   }
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-014": {
+   "options": {
+    "a": "The Nyquist limit at any given depth",
+    "b": "Which portion of the vessel is interrogated",
+    "c": "The Doppler angle used for velocity correction",
+    "d": "The transmitted frequency of the Doppler beam"
+   },
+   "distractorExplanations": {
+    "a": "The Nyquist limit depends on PRF, which is set by gate depth, not by gate size.",
+    "c": "The Doppler angle is set by beam steering and the angle cursor, not by the size of the sample gate.",
+    "d": "The transmitted frequency is chosen on the transducer; gate size does not change it."
+   },
+   "explanation": "Larger gates include more of the vessel and more velocity components, which can increase spectral broadening."
+  },
+  "ardms-spi-readiness-check-doppler-hemodynamics-015": {
+   "options": {
+    "a": "Estimate mean Doppler shifts rapidly across many gates",
+    "b": "Display the full velocity spectrum at a single gate",
+    "c": "Estimate peak Doppler shifts using fast Fourier transform",
+    "d": "Suppress wall motion clutter from the color image"
+   },
+   "distractorExplanations": {
+    "b": "Displaying the full spectrum at one gate is spectral Doppler, which uses FFT rather than autocorrelation.",
+    "c": "FFT is the processing method for spectral Doppler; color Doppler uses autocorrelation to estimate mean shifts.",
+    "d": "Clutter from wall motion is removed by the wall (clutter) filter, not by autocorrelation."
+   },
+   "explanation": "Color flow uses autocorrelation (or similar) for fast mean-velocity estimates across many gates for the color display."
+  },
+  "ardms-spi-readiness-check-artifacts-safety-001": {
+   "options": {
+    "a": "Highly attenuating/reflecting structures",
+    "b": "Fluid-filled simple cysts and the bladder",
+    "c": "Areas where far-field TGC is set too high",
+    "d": "Tissues with lower propagation speed than 1540"
+   },
+   "distractorExplanations": {
+    "b": "Low-attenuating fluid such as cysts and the bladder produces enhancement, the opposite of shadowing.",
+    "c": "Excess far-field TGC makes deep tissue too bright; it does not create an acoustic shadow.",
+    "d": "Speed differences cause range (depth) errors and refraction, not shadowing distal to a structure."
+   },
+   "explanation": "Useful diagnostically for stones; distinguish from improper TGC. Shadows form deep to calcifications, stones and bone."
+  },
+  "ardms-spi-readiness-check-artifacts-safety-002": {
+   "options": {
+    "a": "Gallstones and renal calculi",
+    "b": "Low-attenuating fluid (cysts, bladder)",
+    "c": "Calcified arterial plaque",
+    "d": "Dense solid masses that absorb most of the beam"
+   },
+   "distractorExplanations": {
+    "a": "Stones are highly attenuating and cast shadows, not enhancement.",
+    "c": "Calcified plaque reflects and attenuates strongly, producing a shadow rather than enhancement.",
+    "d": "Highly attenuating solid masses cause shadowing; enhancement occurs deep to low-attenuating fluid."
+   }
+  },
+  "ardms-spi-readiness-check-artifacts-safety-003": {
+   "options": {
+    "a": "A duplicate structure deep to a strong curved reflector",
+    "b": "Dark bands distal to a highly attenuating structure",
+    "c": "Multiple equally spaced echoes at increasing depths",
+    "d": "A structure displaced sideways at an oblique interface"
+   },
+   "distractorExplanations": {
+    "a": "A duplicate image deep to a strong curved reflector such as the diaphragm is mirror-image artifact.",
+    "b": "Dark bands distal to an attenuating structure are acoustic shadowing, not reverberation.",
+    "d": "Sideways displacement at an oblique interface is a refraction artifact."
+   },
+   "explanation": "Reverberation produces multiple equally spaced echoes from strong parallel reflectors; comet-tail/ring-down are related variants taught in SPI."
+  },
+  "ardms-spi-readiness-check-artifacts-safety-004": {
+   "options": {
+    "a": "Simple cysts with posterior enhancement",
+    "b": "Small calcifications causing comet tails",
+    "c": "Curved cyst edges that bend the beam",
+    "d": "Strong reflectors like diaphragm/pleura"
+   },
+   "distractorExplanations": {
+    "a": "Posterior enhancement deep to cysts is a through-transmission artifact, not a mirror image.",
+    "b": "Comet tails from small calcifications or metal are a reverberation artifact, not mirror image.",
+    "c": "Beam bending at curved cyst edges produces edge (refraction) shadows, not a duplicated structure."
+   },
+   "explanation": "Strong reflectors like the diaphragm/pleura create a duplicated structure; liver lesions can appear mirrored into the lung base."
+  },
+  "ardms-spi-readiness-check-artifacts-safety-005": {
+   "options": {
+    "a": "False echoes that appear to originate from the main beam path",
+    "b": "Multiple equally spaced echoes from parallel reflectors",
+    "c": "False Doppler signals but no effect on the grayscale B-mode image",
+    "d": "Duplicated structures deep to the diaphragm"
+   },
+   "distractorExplanations": {
+    "b": "Equally spaced echoes from parallel reflectors are reverberation, not side- or grating-lobe artifact.",
+    "c": "Lobe artifacts affect both B-mode and Doppler, placing off-axis echoes as if they were on the beam axis.",
+    "d": "A duplicated structure deep to the diaphragm is mirror-image artifact, not a lobe artifact."
+   }
+  },
+  "ardms-spi-readiness-check-artifacts-safety-006": {
+   "options": {
+    "a": "Use the lowest output possible even if images are nondiagnostic",
+    "b": "Use output exposures As Low As Reasonably Achievable",
+    "c": "Keep exposure below a fixed legal dose limit per exam",
+    "d": "Track cumulative ionizing dose as with CT"
+   },
+   "distractorExplanations": {
+    "a": "ALARA balances exposure against diagnostic quality; a nondiagnostic exam is not reasonable and may need repeating.",
+    "c": "ALARA is a judgment principle, not a per-exam dose limit; diagnostic ultrasound has no ionizing dose to cap.",
+    "d": "Ultrasound is non-ionizing, so there is no cumulative ionizing dose to track as with CT."
+   },
+   "explanation": "Use output exposures As Low As Reasonably Achievable for diagnostic quality. Monitor MI/TI; reduce power, dwell time, and use appropriate modes."
+  },
+  "ardms-spi-readiness-check-artifacts-safety-007": {
+   "options": {
+    "a": "Heating of fetal bone",
+    "b": "Aliasing at high PRF",
+    "c": "Cavitation bioeffects",
+    "d": "Ionizing DNA damage"
+   },
+   "distractorExplanations": {
+    "a": "Bone heating is estimated by the thermal index for bone (TIB), not the mechanical index.",
+    "b": "Aliasing is a Doppler sampling artifact related to low PRF, not a bioeffect indexed by MI.",
+    "d": "Ultrasound is non-ionizing; MI relates to mechanical effects such as cavitation, not ionizing damage."
+   }
+  },
+  "ardms-spi-readiness-check-artifacts-safety-008": {
+   "options": {
+    "a": "Likelihood of cavitation from peak rarefactional pressure",
+    "b": "The exact measured temperature rise in tissue",
+    "c": "Cumulative ionizing dose to the fetus",
+    "d": "Potential tissue heating from ultrasound absorption"
+   },
+   "distractorExplanations": {
+    "a": "Cavitation likelihood from peak rarefactional pressure is described by the mechanical index (MI), not TI.",
+    "b": "TI is a modeled ratio of output power to the power needed to raise tissue 1°C, not a measured temperature.",
+    "c": "Ultrasound is non-ionizing; TI estimates heating, not radiation dose."
+   }
+  },
+  "ardms-spi-readiness-check-artifacts-safety-009": {
+   "options": {
+    "a": "Echoes from deep structures return after the next pulse is sent",
+    "b": "Sound travels slower than the assumed 1540 m/s in tissue",
+    "c": "Echoes bounce repeatedly between two strong parallel reflectors",
+    "d": "The pulse repetition period is much longer than the echo time"
+   },
+   "distractorExplanations": {
+    "b": "A slower actual speed causes a speed (range) error that places reflectors too deep, not range ambiguity.",
+    "c": "Repeated bouncing between parallel reflectors is reverberation artifact.",
+    "d": "A long PRP lets all echoes return before the next pulse, which prevents range ambiguity."
+   },
+   "explanation": "Range ambiguity occurs when the PRP is too short; reduce it by lowering PRF/scale or adjusting depth/timing expectations."
+  },
+  "ardms-spi-readiness-check-artifacts-safety-010": {
+   "options": {
+    "a": "The spectral window due to turbulent flow",
+    "b": "Anechoic structures with false echoes",
+    "c": "Acoustic shadows distal to calcifications",
+    "d": "Gaps between scan lines in the far field"
+   },
+   "distractorExplanations": {
+    "a": "Spectral window fill-in comes from turbulence or a large gate, not from slice thickness.",
+    "c": "Shadows deep to calcifications are attenuation artifacts; slice thickness adds echoes to anechoic areas.",
+    "d": "Gaps between far-field lines relate to line density, not to beam thickness in the elevation plane."
+   },
+   "explanation": "False echoes from beam elevation thickness fill in anechoic structures; elevational focusing/1.5D arrays reduce slice thickness artifacts."
+  },
+  "ardms-spi-readiness-check-artifacts-safety-011": {
+   "options": {
+    "a": "Reverberation from closely spaced strong reflectors",
+    "b": "Refraction at the edges of curved structures",
+    "c": "Mirror imaging across a strong reflector like the diaphragm",
+    "d": "Propagation speed error from passing through fat"
+   },
+   "distractorExplanations": {
+    "b": "Refraction at curved edges produces edge shadows, not the tapering echo trail of a comet tail.",
+    "c": "A duplicated structure across the diaphragm is mirror-image artifact, not comet tail.",
+    "d": "Slower speed in fat causes range errors and displacement, not a dense trail of reverberation echoes."
+   }
+  },
+  "ardms-spi-readiness-check-artifacts-safety-012": {
+   "options": {
+    "a": "PRF is so high that deep echoes return after the next pulse is sent",
+    "b": "PRF is so low that echoes return long before the next pulse is sent",
+    "c": "Sound reflects back and forth between two strong parallel interfaces",
+    "d": "Sound speed in the tissue is lower than the assumed 1540 m/s"
+   },
+   "distractorExplanations": {
+    "b": "A low PRF gives a long listening time, so every echo returns before the next pulse; that prevents range ambiguity.",
+    "c": "Back-and-forth reflection between parallel interfaces is reverberation artifact.",
+    "d": "A lower actual speed causes a range (speed) error that displays reflectors too deep, not range ambiguity."
+   }
+  },
+  "ardms-spi-readiness-check-artifacts-safety-014": {
+   "options": {
+    "a": "Distal to the edges of a curved structure such as a cyst",
+    "b": "Distal to a gallstone with strong central attenuation",
+    "c": "Deep to a fluid-filled cyst as a bright band",
+    "d": "Proximal to the near wall of a vessel as equally spaced lines"
+   },
+   "distractorExplanations": {
+    "b": "Shadowing deep to a gallstone is an attenuation shadow from the stone itself, not a refraction edge shadow.",
+    "c": "A bright band deep to a cyst is posterior acoustic enhancement, not edge shadowing.",
+    "d": "Equally spaced lines near a vessel wall are reverberation artifact, not a refraction shadow."
+   }
+  },
+  "ardms-spi-readiness-check-artifacts-safety-015": {
+   "options": {
+    "a": "Use the lowest power setting even when images become nondiagnostic",
+    "b": "Minimize output and exposure time while obtaining diagnostic images",
+    "c": "Raise output power first, then reduce receiver gain to compensate",
+    "d": "Monitor MI only, since heating is not a concern in obstetrics"
+   },
+   "distractorExplanations": {
+    "a": "ALARA still requires diagnostic images; a nondiagnostic scan adds repeat exposure without benefit.",
+    "c": "ALARA calls for increasing receiver gain first and output power only if needed, the reverse order.",
+    "d": "Fetal bone heating makes TI (especially TIB) a key concern in obstetrics, so MI alone is not enough."
+   }
+  }
+ }
+}

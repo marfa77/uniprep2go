@@ -1,0 +1,754 @@
+{
+ "nremt-paramedic-readiness-check": {
+  "nremt-paramedic-readiness-check-airway-critical-001": {
+   "options": {
+    "a": "Near-simultaneous sedation and neuromuscular blockade to facilitate intubation in at-risk patients",
+    "b": "Paralysis first, then a sedative once tube placement is confirmed so induction does not drop the BP",
+    "c": "Awake intubation with topical anesthesia and light sedation, avoiding a paralytic so breathing continues",
+    "d": "Sedation alone titrated to tolerate laryngoscopy, with the paralytic held back for a failed first attempt"
+   },
+   "distractorExplanations": {
+    "b": "Reverses the RSI sequence: a paralytic given before the induction agent leaves the patient awake and paralyzed.",
+    "c": "Describes an awake/topicalized intubation technique; RSI by definition pairs an induction agent with a paralytic.",
+    "d": "That is sedation-facilitated intubation; RSI gives the paralytic immediately after induction, not as a rescue drug."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-002": {
+   "options": {
+    "a": "Direct visualization of the tube passing the cords, with capnography reserved for difficult intubations",
+    "b": "Waveform capnography plus clinical assessments (bilateral breath sounds, chest rise)",
+    "c": "A colorimetric ETCO2 detector alone, which also tracks tube position continuously during transport",
+    "d": "Pulse oximetry rising within 30 seconds plus breath sounds, which reliably excludes esophageal placement"
+   },
+   "distractorExplanations": {
+    "a": "Seeing the tube pass the cords can be wrong or the tube can move; waveform capnography is expected for every intubation.",
+    "c": "Colorimetric detectors give a one-time color change and cannot monitor continuously; dislodgement en route would be missed.",
+    "d": "SpO2 lags for minutes after preoxygenation, so a normal reading does not exclude an esophageal tube; capnography does."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-003": {
+   "options": {
+    "a": "Two failed intubation attempts while SpO2 stays above 94% with BVM ventilation",
+    "b": "Severe facial trauma in a child under 10 years old who needs a definitive airway",
+    "c": "Cannot intubate/cannot oxygenate scenarios require a front-of-neck airway",
+    "d": "Status asthmaticus with poor air movement, before any attempt at BVM or intubation"
+   },
+   "distractorExplanations": {
+    "a": "If BVM still oxygenates (SpO2 above 94%), this is cannot-intubate-CAN-oxygenate: use an SGA/BVM, not a surgical cric.",
+    "b": "Surgical cricothyrotomy is generally contraindicated in young children (small cricothyroid membrane); needle cric is used.",
+    "d": "Wrong timing: front-of-neck access is the last step of the failed-airway algorithm, never a first move in asthma."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-005": {
+   "options": {
+    "a": "2nd intercostal space midclavicular line or 4th/5th ICS mid/anterior axillary",
+    "b": "2nd ICS midclavicular line, inserting the needle along the inferior border of the 2nd rib",
+    "c": "5th intercostal space at the midclavicular line, directly over the nipple on the affected side",
+    "d": "Subxiphoid, angled toward the left shoulder, the same approach used for pericardiocentesis"
+   },
+   "distractorExplanations": {
+    "b": "Needle goes over the superior border of the 3rd rib; the intercostal artery, vein, and nerve run under each rib.",
+    "c": "The 5th ICS midclavicular site lies over the heart on the left; lateral sites use the mid/anterior axillary line.",
+    "d": "Subxiphoid toward the left shoulder is the pericardiocentesis landmark for tamponade, not pleural decompression."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-006": {
+   "options": {
+    "a": "Confirm ROSC when ETCO2 drops suddenly below 10 mm Hg during compressions",
+    "b": "Indicate CPR quality and early ROSC (sudden ETCO2 rise)",
+    "c": "Decide on shocks by showing whether the rhythm is VF or pulseless VT",
+    "d": "Titrate ventilations upward until ETCO2 falls below 20 mm Hg"
+   },
+   "distractorExplanations": {
+    "a": "Direction is reversed: ROSC shows as an abrupt ETCO2 rise (often to 35–45); a fall below 10 signals poor CPR.",
+    "c": "Rhythm and shock decisions come from the ECG/monitor; capnography reflects perfusion and ventilation, not rhythm.",
+    "d": "Hyperventilating to a low ETCO2 raises intrathoracic pressure and cuts coronary perfusion; ETCO2 under 10 means weak CPR."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-007": {
+   "options": {
+    "a": "A non-rebreather mask kept on the face at 15 L/min during laryngoscopy",
+    "b": "Rapid BVM ventilation at 20+ breaths/min between paralysis and laryngoscopy",
+    "c": "High-flow nasal oxygen during apnea to prolong safe apnea time",
+    "d": "Holding all oxygen until the tube is placed, to avoid absorption atelectasis"
+   },
+   "distractorExplanations": {
+    "a": "A face mask has to come off for laryngoscopy, so it cannot deliver oxygen during apnea; a nasal cannula stays on.",
+    "b": "Aggressive bagging after paralysis insufflates the stomach and raises aspiration risk; apneic oxygenation is passive.",
+    "d": "Confuses a minor theoretical concern with practice; withholding oxygen shortens safe apnea time and speeds desaturation."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-008": {
+   "options": {
+    "a": "Immediate blind finger sweeps and back blows, as for a foreign-body obstruction",
+    "b": "Nebulized racemic epinephrine first-line, the same treatment used for croup stridor",
+    "c": "Immediate needle cricothyrotomy before any attempt at positive-pressure ventilation",
+    "d": "High-quality BVM with jaw thrust/CPAP pressure and progressive advanced measures"
+   },
+   "distractorExplanations": {
+    "a": "Treats laryngospasm like a choking FBAO; blind sweeps are not recommended and back blows do not open closed cords.",
+    "b": "Racemic epinephrine treats subglottic edema in croup; laryngospasm is reflex cord closure broken by pressure/jaw thrust.",
+    "c": "Skips the sequence: most laryngospasm resolves with jaw thrust and CPAP/BVM pressure; surgical access is the last resort."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-009": {
+   "options": {
+    "a": "Relative difficulty of laryngoscopy based on oropharyngeal structures visible",
+    "b": "Glottic view during direct laryngoscopy, graded from full cords to epiglottis only",
+    "c": "Thyromental distance as a predictor of difficult bag-mask ventilation",
+    "d": "Risk of difficult BVM from beard, obesity, age, and no teeth (MOANS)"
+   },
+   "distractorExplanations": {
+    "b": "That is the Cormack-Lehane grade, seen during laryngoscopy; Mallampati is assessed beforehand with the mouth open.",
+    "c": "Thyromental distance is part of the LEMON 3-3-2 evaluation, and Mallampati predicts laryngoscopy, not BVM difficulty.",
+    "d": "MOANS is the mnemonic for difficult bag-mask ventilation; Mallampati grades visible oropharyngeal structures."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-010": {
+   "options": {
+    "a": "Securing a definitive tube on the next attempt before switching to rescue devices",
+    "b": "Oxygenation/ventilation—rescue devices and front-of-neck access if needed",
+    "c": "Immediate surgical cricothyrotomy after the first failed attempt, even if BVM works",
+    "d": "Passing a bougie blindly on repeated attempts until SpO2 falls below 80%"
+   },
+   "distractorExplanations": {
+    "a": "Prioritizes the tube over oxygen; repeated attempts cause edema and hypoxia, so failed airways move to SGA/BVM first.",
+    "c": "If BVM or an SGA oxygenates, the patient is not CICO; front-of-neck access is reserved for cannot-oxygenate situations.",
+    "d": "Waiting for SpO2 to fall before stopping attempts is backwards; attempts are limited and oxygenation is restored first."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-011": {
+   "options": {
+    "a": "Suction set up after the first attempt, since secretions are rarely present in fasting patients",
+    "b": "A single preferred blade size, with backup devices left in the ambulance to keep the scene uncluttered",
+    "c": "Equipment readiness for failed airway (BVM, suction, extraglottic/surgical backup) and confirmation plan",
+    "d": "Preoxygenation for 30 seconds by BVM at 30 breaths/min, followed directly by laryngoscopy"
+   },
+   "distractorExplanations": {
+    "a": "EMS airway patients are not fasting and often vomit; suction must be running and ready before the first look.",
+    "b": "Backups stored in the ambulance are not ready; failed-airway gear (SGA, other blade, cric kit) must be at the head.",
+    "d": "Preoxygenation takes about 3 minutes (or 8 vital-capacity breaths), not 30 seconds of rapid bagging into the stomach."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-012": {
+   "options": {
+    "a": "Arterial oxygen saturation, replacing the need for a pulse oximeter after intubation",
+    "b": "Correct tube depth, showing whether the tip sits above the carina or in a mainstem bronchus",
+    "c": "Exact PaCO2, since ETCO2 equals arterial CO2 in shock and cardiac arrest",
+    "d": "Tracheal placement and ongoing ventilation effectiveness/CO2 elimination"
+   },
+   "distractorExplanations": {
+    "a": "Capnography measures exhaled CO2, not oxygenation; SpO2 monitoring is still required after intubation.",
+    "b": "A right mainstem tube still produces a normal waveform; depth is checked by breath sounds, tube marking, and imaging.",
+    "c": "ETCO2 underestimates PaCO2, and the gap widens in shock and arrest because of reduced pulmonary blood flow."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-013": {
+   "options": {
+    "a": "Allowing adequate expiratory time and avoiding excessive rates that cause auto-PEEP",
+    "b": "Rates of 20–24 breaths/min with large tidal volumes to blow off retained CO2",
+    "c": "A short expiratory time with a 1:1 I:E ratio to keep minute ventilation high",
+    "d": "Permissive hypoxia, keeping SpO2 near 85% to protect the hypoxic drive"
+   },
+   "distractorExplanations": {
+    "b": "Fast rates and big volumes shorten exhalation and stack breaths, causing auto-PEEP, hypotension, and pneumothorax.",
+    "c": "Obstructive disease needs a long exhalation (I:E of 1:4 or more); a 1:1 ratio traps air with every breath.",
+    "d": "Confuses the COPD hypoxic-drive teaching with asthma; status asthmaticus needs oxygen, and the tolerated value is CO2."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-014": {
+   "options": {
+    "a": "Intubation fails twice but an SGA gives good chest rise",
+    "b": "You cannot oxygenate/ventilate and cannot intubate (CICO)",
+    "c": "A child with epiglottitis is drooling but holds SpO2 at 95%",
+    "d": "As the first step for a snoring airway before a jaw thrust"
+   },
+   "distractorExplanations": {
+    "a": "An SGA that ventilates means the patient can be oxygenated; continue with the SGA rather than cutting the neck.",
+    "c": "A child who is oxygenating should be kept calm and transported; instrumenting the airway can trigger full obstruction.",
+    "d": "Snoring is partial upper-airway obstruction fixed by positioning, jaw thrust, and adjuncts long before surgical access."
+   }
+  },
+  "nremt-paramedic-readiness-check-airway-critical-015": {
+   "options": {
+    "a": "Increases preload by pushing blood from the lungs into the left atrium",
+    "b": "Causes vasodilation through hyperoxia-induced nitric oxide release",
+    "c": "Increases intrathoracic pressure and may reduce venous return",
+    "d": "Triggers a vagal reflex that slows the heart below 50 beats/min"
+   },
+   "distractorExplanations": {
+    "a": "Positive pressure lowers venous return to the right heart, so overall preload falls rather than rises.",
+    "b": "Hyperoxia tends to cause vasoconstriction; the BP drop comes from raised intrathoracic pressure reducing venous return.",
+    "d": "PPV-related hypotension is a preload problem from intrathoracic pressure, not a vagal bradycardia reflex."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-001": {
+   "options": {
+    "a": "ST elevation meeting criteria in anatomically contiguous leads",
+    "b": "Diffuse ST elevation in nearly all leads with PR depression",
+    "c": "Peaked T waves alone in the precordial leads with a flat ST",
+    "d": "ST elevation in two non-contiguous leads such as II and V2"
+   },
+   "distractorExplanations": {
+    "b": "Diffuse ST elevation with PR depression is the classic pericarditis pattern, not a regional STEMI territory.",
+    "c": "Peaked T waves without ST elevation suggest hyperkalemia or a hyperacute phase and do not meet STEMI criteria.",
+    "d": "STEMI criteria require elevation in contiguous leads of one territory; II (inferior) and V2 (septal) are not contiguous."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-002": {
+   "options": {
+    "a": "2 J/kg biphasic for adults, escalating to 4 J/kg on the second and later shocks",
+    "b": "Per manufacturer biphasic recommended dose (often 120–200 J) then resume CPR",
+    "c": "360 J synchronized, then a pulse check before resuming CPR",
+    "d": "50–100 J biphasic, the dose used for narrow regular tachycardia"
+   },
+   "distractorExplanations": {
+    "a": "2 J/kg then 4 J/kg is the pediatric defibrillation dosing; adults use the manufacturer dose, typically 120–200 J biphasic.",
+    "c": "VF has no QRS to synchronize to, and CPR resumes immediately after the shock without a pulse check.",
+    "d": "50–100 J is a synchronized cardioversion starting dose for narrow regular tachycardia, too low for VF/pVT."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-003": {
+   "options": {
+    "a": "0.02 mg/kg IV, minimum 0.1 mg, maximum single dose 0.5 mg",
+    "b": "0.5 mg IV every 3–5 minutes up to 3 mg",
+    "c": "1 mg IV every 3–5 minutes up to 3 mg",
+    "d": "3 mg IV once as a single full vagolytic dose"
+   },
+   "distractorExplanations": {
+    "a": "That is the pediatric atropine dose; adult symptomatic bradycardia uses 1 mg every 3–5 minutes up to 3 mg.",
+    "b": "0.5 mg was the pre-2020 AHA adult dose; current guidelines raised the bradycardia dose to 1 mg (maximum 3 mg).",
+    "d": "A single 3 mg push was older asystole dosing; bradycardia is treated with repeated 1 mg doses to a 3 mg total."
+   },
+   "explanation": "If atropine fails, TCP/dopamine/epinephrine infusions per algorithm. Current AHA protocols use the 1 mg dose."
+  },
+  "nremt-paramedic-readiness-check-cardiology-004": {
+   "options": {
+    "a": "Irregular narrow-complex atrial fibrillation with a rapid ventricular rate",
+    "b": "Stable irregular wide-complex tachycardia that may be pre-excited AF",
+    "c": "Symptomatic sinus bradycardia that has not responded to atropine",
+    "d": "Stable regular narrow-complex SVT after vagal maneuvers"
+   },
+   "distractorExplanations": {
+    "a": "AF is irregular and not AV-node re-entrant; adenosine only briefly slows it and does not convert it.",
+    "b": "Adenosine in irregular wide-complex (possible pre-excited AF) can speed accessory-pathway conduction into VF.",
+    "c": "Adenosine blocks the AV node and would worsen bradycardia; atropine failure moves to pacing or epi/dopamine drips."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-005": {
+   "options": {
+    "a": "Airway optimization, BP support, 12-lead, and targeted temperature/neuro considerations",
+    "b": "Ventilating at 20–30 breaths/min to bring ETCO2 down to 20 mm Hg quickly",
+    "c": "Titrating oxygen to SpO2 of 100% and keeping SBP near 80 mm Hg to protect the heart",
+    "d": "Removing the pads once a pulse returns and transporting without a 12-lead to save time"
+   },
+   "distractorExplanations": {
+    "b": "Post-ROSC ventilation targets about 10/min and ETCO2 35–45; hyperventilation causes cerebral vasoconstriction.",
+    "c": "ROSC targets are SpO2 92–98% (avoid hyperoxia) and SBP at least 90 / MAP at least 65, not permissive hypotension.",
+    "d": "Rearrest is common after ROSC; pads stay on, monitoring continues, and a 12-lead screens for STEMI and PCI."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-006": {
+   "options": {
+    "a": "Aspirin, because RV infarction carries a higher bleeding risk",
+    "b": "Nitroglycerin/preload reducers due to preload dependence",
+    "c": "Small IV fluid boluses, since the RV is already volume overloaded",
+    "d": "Lying the patient flat, since it lowers right-sided filling pressure"
+   },
+   "distractorExplanations": {
+    "a": "Aspirin is still given in RV infarction; there is no added bleeding risk, and the caution is about preload reduction.",
+    "c": "The infarcted RV is preload-dependent, so fluid boluses are the treatment for hypotension, not the thing to avoid.",
+    "d": "Lying flat increases venous return and helps a preload-dependent RV; the real danger is nitrates and diuretics."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-007": {
+   "options": {
+    "a": "Adenosine 6 mg rapid IV push first, then cardioversion if it fails",
+    "b": "Amiodarone 150 mg IV over 10 minutes, repeated as needed, before any electrical therapy",
+    "c": "Prompt synchronized cardioversion (or defibrillation if pulseless/degenerate)",
+    "d": "Transcutaneous pacing at a rate above the tachycardia to overdrive it"
+   },
+   "distractorExplanations": {
+    "a": "Adenosine is considered only for stable regular monomorphic wide-complex rhythms; unstable patients get shocked now.",
+    "b": "Amiodarone 150 mg over 10 minutes is the stable wide-complex tachycardia option; instability calls for cardioversion.",
+    "d": "Overdrive pacing is a specialist in-hospital technique; prehospital unstable VT is treated with synchronized shocks."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-008": {
+   "options": {
+    "a": "1–1.5 mg/kg IV/IO first dose, then 0.5–0.75 mg/kg",
+    "b": "5 mg/kg IV/IO first dose, repeated up to twice",
+    "c": "150 mg IV over 10 minutes, then 1 mg/min",
+    "d": "300 mg IV/IO first dose, then 150 mg"
+   },
+   "distractorExplanations": {
+    "a": "That is the lidocaine dosing for refractory VF/pVT, the alternative antiarrhythmic, not amiodarone.",
+    "b": "5 mg/kg repeated up to a 15 mg/kg total is the pediatric amiodarone dose; adults get 300 mg then 150 mg.",
+    "c": "150 mg over 10 minutes is the stable VT dose with a pulse; arrest dosing is a 300 mg push then 150 mg."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-009": {
+   "options": {
+    "a": "Increasing intrathoracic pressure to reduce preload/afterload and improve oxygenation",
+    "b": "Raising preload so the failing left ventricle can stretch and pump harder",
+    "c": "Removing alveolar fluid by increasing renal sodium excretion within minutes",
+    "d": "Reducing the work of breathing by lowering intrathoracic pressure on inhalation"
+   },
+   "distractorExplanations": {
+    "b": "CPAP lowers venous return (preload) to the overloaded heart; adding preload would worsen pulmonary edema.",
+    "c": "Confuses CPAP with diuretic action; CPAP pushes fluid back and recruits alveoli mechanically, with no renal effect.",
+    "d": "CPAP raises intrathoracic pressure through the whole breath; that rise is what cuts preload and afterload."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-010": {
+   "options": {
+    "a": "Flattened T waves, ST depression, and prominent U waves",
+    "b": "Peaked T waves, widened QRS, and sine-wave progression",
+    "c": "Prolonged QT with notched T waves and torsades risk",
+    "d": "Osborn J waves at the QRS-ST junction with bradycardia"
+   },
+   "distractorExplanations": {
+    "a": "Flat T waves, ST depression, and U waves are the hypokalemia pattern, the opposite electrolyte disturbance.",
+    "c": "A long QT with torsades risk points to hypocalcemia, hypomagnesemia, or drugs, not to high potassium.",
+    "d": "Osborn (J) waves are the classic ECG sign of hypothermia, not of hyperkalemia."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-011": {
+   "options": {
+    "a": "Synchronized cardioversion at 50–100 J as the first step in a stable patient",
+    "b": "Amiodarone 300 mg IV push, as used for refractory VF",
+    "c": "Adenosine (when vagal maneuvers fail/are inappropriate)",
+    "d": "Atropine 1 mg IV to restore normal AV nodal conduction"
+   },
+   "distractorExplanations": {
+    "a": "Cardioversion is for unstable SVT; a stable patient gets vagal maneuvers and then adenosine first.",
+    "b": "300 mg IV push is the cardiac-arrest amiodarone dose, not a first-line treatment for stable SVT.",
+    "d": "Atropine speeds AV conduction and treats bradycardia; it would not terminate re-entrant SVT."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-012": {
+   "options": {
+    "a": "The patient is pulseless with coarse VF and a rapid ventricular rate",
+    "b": "The patient has polymorphic VT with a pulse, since synchronizing avoids an R-on-T shock",
+    "c": "The patient has stable sinus tachycardia above 150/min from fever",
+    "d": "The patient has a pulse with an unstable tachyarrhythmia requiring shock"
+   },
+   "distractorExplanations": {
+    "a": "Pulseless VF has no organized QRS to sync to and needs unsynchronized defibrillation.",
+    "b": "Polymorphic VT cannot be reliably synchronized, so AHA calls for unsynchronized high-energy shocks.",
+    "c": "Sinus tachycardia is a compensatory rhythm; treat the fever or cause, never cardiovert it."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-013": {
+   "options": {
+    "a": "Rapid transport/activation of PCI-capable pathways and ACS care bundle",
+    "b": "Transport to the closest ED without prenotification, letting the ED repeat the 12-lead",
+    "c": "Scene fibrinolytic therapy as the first choice even when PCI is within 90 minutes",
+    "d": "Nitroglycerin and a repeat 12-lead in 30 minutes before choosing a destination"
+   },
+   "distractorExplanations": {
+    "b": "Skipping prenotification delays cath-lab activation; STEMI systems want field alerts and direct PCI destinations.",
+    "c": "Fibrinolysis is the fallback when PCI cannot happen in time; primary PCI within 90–120 minutes is preferred.",
+    "d": "Waiting 30 minutes to confirm wastes myocardium; a diagnostic 12-lead triggers immediate STEMI activation."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-014": {
+   "options": {
+    "a": "Delta waves with a short PR interval, as seen in Wolff-Parkinson-White pre-excitation",
+    "b": "Peaked T waves and widened QRS progressing toward sine-wave/VT risk",
+    "c": "Prominent U waves with flattened T waves and ST depression",
+    "d": "A shortened QT interval with no QRS change until cardiac arrest"
+   },
+   "distractorExplanations": {
+    "a": "Delta waves with a short PR are the WPW pre-excitation pattern, unrelated to potassium.",
+    "c": "U waves, flat T waves, and ST depression describe hypokalemia, the opposite derangement.",
+    "d": "A short QT suggests hypercalcemia; hyperkalemia shows progressive T-wave, P-wave, and QRS changes before arrest."
+   }
+  },
+  "nremt-paramedic-readiness-check-cardiology-015": {
+   "options": {
+    "a": "Removing the pads and stopping cardiac monitoring once a pulse returns, since rearrest is rare after sustained ROSC in the field",
+    "b": "Ventilating at 20–30 breaths/min to an ETCO2 near 20 mm Hg and accepting an SBP of 70 mm Hg en route",
+    "c": "Support ABCs, optimize oxygenation/ventilation carefully, treat hypotension, and consider targeted temperature/PCI indications",
+    "d": "Keeping SpO2 at 100% on high-flow oxygen and actively warming the comatose patient above 38 °C to protect the injured brain"
+   },
+   "distractorExplanations": {
+    "a": "Rearrest is common in the first minutes after ROSC; pads, monitoring, and a 12-lead continue throughout transport.",
+    "b": "Post-ROSC targets are about 10 breaths/min, ETCO2 35–45, and SBP at least 90; this is hyperventilation plus hypotension.",
+    "d": "Hyperoxia and fever both worsen brain injury; targets are SpO2 92–98% and active avoidance of hyperthermia."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-001": {
+   "options": {
+    "a": "Avoid popping clots with excessive fluids before surgical hemorrhage control",
+    "b": "Raise SBP above 120 mm Hg with large crystalloid boluses before transport",
+    "c": "Keep SBP near 80–90 in head injury to lower intracranial pressure",
+    "d": "Replace estimated blood loss 3:1 with crystalloid to restore normal vitals on scene"
+   },
+   "distractorExplanations": {
+    "b": "Normalizing BP with big crystalloid volumes dilutes clotting factors and pops clots, the opposite of permissive hypotension.",
+    "c": "Permissive hypotension is contraindicated in TBI; head-injured patients need SBP at least 110 to protect cerebral perfusion.",
+    "d": "The 3:1 crystalloid rule is outdated; balanced resuscitation limits crystalloid and favors blood products."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-002": {
+   "options": {
+    "a": "Dissolve microvascular clots, as alteplase does in ischemic stroke",
+    "b": "Inhibit fibrinolysis and reduce hemorrhage mortality when given early",
+    "c": "Reverse warfarin anticoagulation in trauma by replacing clotting factors",
+    "d": "Reduce mortality most when started more than 3 hours after injury"
+   },
+   "distractorExplanations": {
+    "a": "Alteplase is a fibrinolytic; TXA is the opposite, an antifibrinolytic that stabilizes clots already formed.",
+    "c": "Warfarin reversal uses vitamin K, PCC, or plasma; TXA blocks plasminogen activation and replaces no factors.",
+    "d": "CRASH-2 found benefit only within 3 hours; TXA started after 3 hours was associated with higher bleeding deaths."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-003": {
+   "options": {
+    "a": "Hypotension with tachycardia and cool, pale skin below the injury",
+    "b": "Hypertension with bradycardia and irregular respirations after head injury",
+    "c": "Hypotension with bradycardia and warm dry skin after spinal cord injury",
+    "d": "Hypotension with wheezing, urticaria, and flushed skin after an exposure"
+   },
+   "distractorExplanations": {
+    "a": "Tachycardia with cool pale skin is hypovolemic shock; neurogenic shock loses sympathetic tone, so HR is slow and skin warm.",
+    "b": "That is Cushing's triad from rising intracranial pressure, not the hypotensive picture of neurogenic shock.",
+    "d": "Wheezing, hives, and flushing after an exposure describe anaphylactic shock, not spinal cord injury."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-004": {
+   "options": {
+    "a": "Phenytoin loading IV as the first-line drug before any benzodiazepine",
+    "b": "Dextrose 50% for every seizing patient before checking the glucose",
+    "c": "Haloperidol IM to control the motor activity and agitation",
+    "d": "Benzodiazepines per protocol (eg, midazolam/lorazepam/diazepam)"
+   },
+   "distractorExplanations": {
+    "a": "Phenytoin/fosphenytoin is a second-line agent after benzodiazepines fail; it is not the first drug for status epilepticus.",
+    "b": "Dextrose treats documented hypoglycemia; blood glucose is checked first, and benzodiazepines stop the seizure itself.",
+    "c": "Haloperidol is an antipsychotic for agitation and can lower the seizure threshold; it does not terminate seizures."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-005": {
+   "options": {
+    "a": "Hyperglycemia, dehydration, and Kussmaul respirations with metabolic acidosis",
+    "b": "Hyperglycemia above 600 mg/dL with no ketones and no Kussmaul breathing",
+    "c": "Hypoglycemia with diaphoresis, tremor, and slow shallow respirations",
+    "d": "Hyperglycemia with metabolic alkalosis from vomiting and slow breathing"
+   },
+   "distractorExplanations": {
+    "b": "Very high glucose without ketosis or Kussmaul breathing describes HHS, the type 2 counterpart to DKA.",
+    "c": "Sweating, tremor, and low glucose are hypoglycemia; DKA is high glucose with deep rapid acidotic breathing.",
+    "d": "DKA produces metabolic acidosis with compensatory deep, rapid (Kussmaul) breathing, not alkalosis with slow breaths."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-006": {
+   "options": {
+    "a": "Diphenhydramine IV first, adding epinephrine only if hives spread",
+    "b": "Epinephrine IM (and IV/IO escalation per protocol if refractory)",
+    "c": "Methylprednisolone IV to stop the reaction within minutes",
+    "d": "Epinephrine 1 mg IV push (0.1 mg/mL) as the first dose with a pulse"
+   },
+   "distractorExplanations": {
+    "a": "Antihistamines are adjuncts that do not reverse airway edema or shock; IM epinephrine comes first without delay.",
+    "c": "Steroids take hours to act and are adjuncts at best; they do not treat the acute vasodilation or bronchospasm.",
+    "d": "1 mg IV push is the cardiac-arrest dose; in a patient with a pulse it can cause dysrhythmias and severe hypertension."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-007": {
+   "options": {
+    "a": "Hypovolemic shock with hypotension, tachycardia, and rapid breathing",
+    "b": "Neurogenic shock with hypotension, bradycardia, and warm skin",
+    "c": "Rising ICP with hypertension, bradycardia, irregular respirations",
+    "d": "Sympathomimetic toxicity with hypertension, tachycardia, and fever"
+   },
+   "distractorExplanations": {
+    "a": "Hypovolemia shows low BP and fast HR, the opposite of Cushing's rising BP with bradycardia.",
+    "b": "Neurogenic shock shares the bradycardia but has hypotension; Cushing's reflex has hypertension and abnormal breathing.",
+    "d": "Stimulant toxicity raises BP with tachycardia; Cushing's reflex pairs hypertension with bradycardia from ICP."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-008": {
+   "options": {
+    "a": "TBSA including superficial burns, plus the patient's age",
+    "b": "Patient weight and urine output over the first hour only",
+    "c": "Partial-thickness burn depth and heart rate on arrival",
+    "d": "TBSA burned and patient weight (and timing from injury)"
+   },
+   "distractorExplanations": {
+    "a": "Parkland counts only partial- and full-thickness burns; superficial burns are excluded and age is not in the formula.",
+    "b": "Urine output is used to titrate fluids after they start, but the Parkland calculation itself needs %TBSA and weight.",
+    "c": "Heart rate is not part of Parkland; the formula is 4 mL × kg × %TBSA, half in the first 8 hours from injury."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-009": {
+   "options": {
+    "a": "Infection suspicion plus vital sign/perfusion abnormalities",
+    "b": "Fever above 38.5 °C alone, even with normal vital signs and mentation",
+    "c": "Hypotension and tachycardia after trauma, without any infection concern",
+    "d": "A positive blood culture result before any prehospital alert is made"
+   },
+   "distractorExplanations": {
+    "b": "Fever by itself is not a sepsis alert; criteria need infection plus abnormal vitals, perfusion, or mentation.",
+    "c": "Hypotension after trauma without infection points to hemorrhagic shock; sepsis requires a suspected infection.",
+    "d": "Cultures take days and are drawn in hospital; prehospital sepsis alerts rely on clinical suspicion plus vitals."
+   },
+   "explanation": "Prehospital sepsis recognition speeds door-to-treatment. Hospitals then deliver early fluids, cultures, and antibiotics."
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-010": {
+   "options": {
+    "a": "Unilateral absent breath sounds with late tracheal deviation and JVD",
+    "b": "Muffled heart sounds, JVD, and hypotension (Beck's triad)",
+    "c": "Flat neck veins with hypotension and clear bilateral breath sounds",
+    "d": "Hypertension, bradycardia, and irregular respirations (Cushing's triad)"
+   },
+   "distractorExplanations": {
+    "a": "Unilateral absent breath sounds and tracheal deviation are hallmarks of tension pneumothorax, not tamponade.",
+    "c": "Flat neck veins with hypotension suggest hypovolemia; tamponade causes distended neck veins (JVD).",
+    "d": "Cushing's triad signals raised intracranial pressure; tamponade causes hypotension with muffled heart sounds."
+   },
+   "explanation": "Both cause obstructive shock; differentiate by lung findings vs muffled tones/equal breath sounds. Breath sounds usually stay equal in tamponade."
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-012": {
+   "options": {
+    "a": "Cherry-red skin as the reliable sign of airway thermal injury",
+    "b": "Circumferential limb burns with distal pulse loss",
+    "c": "Normal SpO2, which rules out significant inhalation injury",
+    "d": "Hoarseness, stridor, facial burns, or carbonaceous sputum"
+   },
+   "distractorExplanations": {
+    "a": "Cherry-red skin is a late, unreliable sign of carbon monoxide poisoning, not a marker of thermal airway injury.",
+    "b": "Circumferential limb burns threaten perfusion and need escharotomy; they are not a sign of inhalation injury.",
+    "c": "Pulse oximetry reads carboxyhemoglobin as oxyhemoglobin, so SpO2 can look normal despite CO and airway injury."
+   },
+   "explanation": "Early airway assessment/management is critical because edema progresses. The airway may worsen quickly as edema builds."
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-013": {
+   "options": {
+    "a": "Needle thoracostomy/decompression in the correct site plus support ABCs",
+    "b": "Pericardiocentesis by the subxiphoid approach, then a fluid bolus",
+    "c": "An occlusive dressing sealed on all four sides over the chest wound",
+    "d": "A large-volume crystalloid bolus to raise preload before decompression"
+   },
+   "distractorExplanations": {
+    "b": "Pericardiocentesis treats cardiac tamponade; tension pneumothorax needs pleural decompression.",
+    "c": "A four-sided seal can trap air and create tension; open chest wounds get a vented or three-sided dressing.",
+    "d": "Fluids cannot overcome the mechanical obstruction to venous return; decompression must come first."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-014": {
+   "options": {
+    "a": "Fever plus a white count above 12,000, which by itself defines septic shock without blood pressure or lactate data",
+    "b": "Suspected infection plus signs of hypoperfusion/organ dysfunction (e.g., hypotension, altered mentation, elevated lactate)",
+    "c": "Hypotension with tachycardia and altered mentation after blunt trauma, even without any sign of infection",
+    "d": "A qSOFA score of 1 from a fever above 38 °C, since a single point activates the sepsis pathway"
+   },
+   "distractorExplanations": {
+    "a": "SIRS-type fever and WBC findings do not define septic shock; shock needs hypotension or a lactate above 4 despite fluids.",
+    "c": "Shock after blunt trauma without infection is presumed hemorrhagic; a sepsis alert requires suspected infection.",
+    "d": "qSOFA scores RR at least 22, altered mentation, and SBP 100 or less (no fever item), and a positive screen needs 2 points."
+   }
+  },
+  "nremt-paramedic-readiness-check-trauma-medical-015": {
+   "options": {
+    "a": "Pinpoint pupils and respiratory depression—flumazenil to reverse the TCA",
+    "b": "Bradycardia and hyperglycemia—high-dose insulin as the primary antidote",
+    "c": "Wide-complex dysrhythmias and seizures—sodium bicarbonate for wide QRS/toxicity",
+    "d": "Narrow QRS with torsades—calcium chloride as the first-line antidote"
+   },
+   "distractorExplanations": {
+    "a": "Pinpoint pupils are an opioid sign, and flumazenil can precipitate seizures in TCA overdose; it is not an antidote.",
+    "b": "Bradycardia with hyperglycemia and high-dose insulin therapy belong to calcium channel blocker overdose, not TCAs.",
+    "d": "TCAs widen the QRS through sodium-channel blockade; calcium chloride is the antidote for CCB overdose or hyperkalemia."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-001": {
+   "options": {
+    "a": "Respirations, Perfusion, Mental status",
+    "b": "Respirations, Pulse rate, Motor response",
+    "c": "Radial pulse, Pupils, Mental status",
+    "d": "Rate, Pressure, Mechanism of injury"
+   },
+   "distractorExplanations": {
+    "b": "START uses perfusion (radial pulse or cap refill) and mental status (follows commands), not pulse rate and motor score.",
+    "c": "Pupils are not part of START; the R is respirations, checked first after the walking filter.",
+    "d": "START does not use blood pressure or mechanism; it sorts by respirations, perfusion, and mental status."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-002": {
+   "options": {
+    "a": "1–3 subordinates per supervisor (often 2)",
+    "b": "3–7 subordinates per supervisor (often ~5)",
+    "c": "8–12 subordinates per supervisor (often ~10)",
+    "d": "15–20 subordinates per supervisor in an MCI"
+   },
+   "distractorExplanations": {
+    "a": "1–3 is narrower than the NIMS span of control; ICS uses 3–7 per supervisor with about 5 as optimal.",
+    "c": "8–12 exceeds the NIMS 3–7 range; past 7, ICS adds divisions, groups, or branches to restore control.",
+    "d": "A large incident increases the need for structure; span of control stays at 3–7 and more supervisors are added."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-003": {
+   "options": {
+    "a": "Approximately 30 × 30 feet of level ground, marked with one flare at the center",
+    "b": "A level area of 100 × 100 feet beside a light pole so the pilot can see it at night",
+    "c": "Approximately 100 × 100 feet (day) of level, clear area with secure hazards",
+    "d": "A dry gravel lot of 100 × 100 feet, chosen so the rotor wash stays clean"
+   },
+   "distractorExplanations": {
+    "a": "30 × 30 feet is far below the typical 100 × 100 foot day LZ, and flares can ignite debris or blow away.",
+    "b": "Poles, wires, and other tall obstacles near the LZ are rotor-strike hazards; lighting comes from corner markers.",
+    "d": "Loose gravel and dust become projectiles and brownout hazards in rotor wash; firm, debris-free ground is needed."
+   },
+   "explanation": "Secure debris, mark corners, and communicate with crew; night LZ larger often. Exact size follows local guidance."
+  },
+  "nremt-paramedic-readiness-check-ops-special-004": {
+   "options": {
+    "a": "Airway, breathing, and circulation checked with hands-on vitals",
+    "b": "Activity, pulse, grimace, appearance, and respiration",
+    "c": "Appearance, heart rate, and capillary refill under 2 seconds",
+    "d": "Appearance, work of breathing, and circulation to skin"
+   },
+   "distractorExplanations": {
+    "a": "The PAT is a hands-off visual first impression; the hands-on ABC assessment and vitals come afterward.",
+    "b": "Those are the APGAR components for newborns at 1 and 5 minutes, not the Pediatric Assessment Triangle.",
+    "c": "The PAT uses work of breathing and skin circulation seen from across the room; heart rate needs hands-on assessment."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-005": {
+   "options": {
+    "a": "Effective ventilation if HR remains low/apneic",
+    "b": "Epinephrine IV/IO if the heart rate is below 100/min",
+    "c": "Chest compressions if the heart rate is below 100/min",
+    "d": "Routine deep suctioning of every newborn for meconium"
+   },
+   "distractorExplanations": {
+    "b": "Epinephrine is indicated only when HR stays below 60 despite effective PPV and compressions, not below 100.",
+    "c": "Compressions start when HR is below 60 after 30 seconds of effective ventilation; below 100 calls for PPV.",
+    "d": "NRP no longer recommends routine suctioning, even with meconium; ventilation is the priority for an apneic newborn."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-006": {
+   "options": {
+    "a": "Push the cord gently back into the vagina and have the mother bear down",
+    "b": "Elevate presenting part off the cord, maternal positioning, and rapid transport",
+    "c": "Clamp and cut the cord between two clamps, then deliver the baby on scene",
+    "d": "Position the mother supine with legs flat and transport at routine speed"
+   },
+   "distractorExplanations": {
+    "a": "Replacing the cord and pushing both worsen cord compression; the presenting part is lifted off the cord instead.",
+    "c": "Clamping and cutting is for a nuchal cord that cannot be slipped; cutting a prolapsed cord ends fetal oxygen supply.",
+    "d": "Prolapsed cord needs knee-chest or Trendelenburg positioning and emergency transport, not flat supine and routine speed."
+   },
+   "explanation": "Keep cord moist/protected and maintain elevation of the presenting part per protocol. Do not push the cord back into the vagina."
+  },
+  "nremt-paramedic-readiness-check-ops-special-007": {
+   "options": {
+    "a": "Prone restraint with a knee on the back until the patient stops resisting",
+    "b": "Physical restraint first, then verbal de-escalation once the patient is secured on the stretcher",
+    "c": "Scene safety and de-escalation; restrain only as needed for safety with adequate personnel",
+    "d": "Entering alone before police arrive so the patient feels less threatened"
+   },
+   "distractorExplanations": {
+    "a": "Prone restraint with weight on the back causes positional asphyxia and sudden death; patients are restrained supine or lateral.",
+    "b": "Wrong order: verbal de-escalation comes first, and restraint is a last resort when safety demands it.",
+    "d": "An unsecured scene with a possibly violent patient requires staging until law enforcement makes it safe."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-008": {
+   "options": {
+    "a": "Entering the warm zone in standard EMS PPE to begin treatment during decontamination",
+    "b": "Staging downwind and downhill of the release so responders can watch the hazard",
+    "c": "Treating contaminated patients in the ambulance first and decontaminating at the hospital",
+    "d": "Operating in cold zone with decontaminated patients; don't enter hot zone without training/PPE"
+   },
+   "distractorExplanations": {
+    "a": "The warm zone requires hazmat-level PPE and training; operations-level EMS treats decontaminated patients in the cold zone.",
+    "b": "Responders stage upwind, uphill, and upstream; downwind and downhill places them in the vapor or runoff path.",
+    "c": "Contaminated patients must be decontaminated before transport, or the ambulance and ED become secondary exposure sites."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-009": {
+   "options": {
+    "a": "Exercising caution for public safety despite exemptions",
+    "b": "Right-of-way at intersections once lights and siren are on",
+    "c": "Freedom from liability for crashes while on a true emergency call",
+    "d": "Passing a stopped school bus with red lights flashing, with care"
+   },
+   "distractorExplanations": {
+    "b": "Lights and siren only request right-of-way; other drivers may not yield, so intersections are cleared lane by lane.",
+    "c": "Emergency exemptions do not remove liability; a driver who fails to use due regard can be held liable.",
+    "d": "Most state laws require emergency vehicles to stop for a school bus with red lights flashing until cleared."
+   },
+   "explanation": "Lights/sirens request right-of-way—they don't guarantee it. You can still be held liable for reckless driving."
+  },
+  "nremt-paramedic-readiness-check-ops-special-010": {
+   "options": {
+    "a": "Treat injuries and share suspicions with the parents to get their account before reporting",
+    "b": "Treat injuries, transport as needed, document objectively, and report per mandatory reporting laws",
+    "c": "Treat injuries, and report only if the child confirms abuse when asked directly",
+    "d": "Document the parents' guilt in the narrative so police have a clear conclusion"
+   },
+   "distractorExplanations": {
+    "a": "Confronting caregivers can escalate danger and delay the report; EMS reports suspicions directly as required by law.",
+    "c": "Mandatory reporting is triggered by reasonable suspicion; providers do not need a disclosure or proof.",
+    "d": "The PCR records objective findings and quoted statements; conclusions about guilt are subjective and inappropriate."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-012": {
+   "options": {
+    "a": "Chest compressions at 3:1 with ventilation for any HR below 100/min",
+    "b": "Early IV/IO epinephrine before ventilation when the newborn is apneic",
+    "c": "Routine oral suctioning and vigorous back slapping before drying",
+    "d": "Warming, airway positioning/clearing, and effective ventilation"
+   },
+   "distractorExplanations": {
+    "a": "The 3:1 ratio is right, but compressions start at HR below 60 after effective PPV; below 100 means ventilate.",
+    "b": "Newborn apnea is almost always respiratory; PPV comes first and epinephrine only for HR below 60 despite PPV and CPR.",
+    "c": "Routine suctioning is no longer recommended and slapping is not stimulation; drying and rubbing stimulate the newborn."
+   },
+   "explanation": "Most newborns respond to airway/ventilation and thermal care; meds follow algorithms. Medications come only after these steps when indicated."
+  },
+  "nremt-paramedic-readiness-check-ops-special-013": {
+   "options": {
+    "a": "High-quality CPR with left uterine displacement and prioritization of maternal resuscitation",
+    "b": "CPR on a board tilted 45°, with compressions delayed until the tilt is fully set",
+    "c": "CPR with hands placed lower on the sternum and reduced shock energy to protect the fetus",
+    "d": "CPR with right uterine displacement, since the vena cava lies on the left"
+   },
+   "distractorExplanations": {
+    "b": "Tilting degrades compressions and delays CPR; manual left uterine displacement keeps the patient supine for compressions.",
+    "c": "AHA keeps standard hand position and standard defibrillation energy in pregnancy; shocks are safe for the fetus.",
+    "d": "The inferior vena cava lies to the right, so the uterus is moved to the patient's left to relieve compression."
+   }
+  },
+  "nremt-paramedic-readiness-check-ops-special-014": {
+   "options": {
+    "a": "Approaching from the rear of the aircraft so the pilot does not need to see you",
+    "b": "Securing hazards, marking a clear zone, and protecting eyes/ears from rotor wash",
+    "c": "Approaching from the uphill side so you stay clear of the main rotor",
+    "d": "Lighting the zone with headlights aimed at the aircraft as it lands"
+   },
+   "distractorExplanations": {
+    "a": "The tail rotor is at the rear and nearly invisible when spinning; approach from the front in the pilot's view.",
+    "c": "On a slope the main rotor is closest to the ground on the uphill side; approach from the downhill side.",
+    "d": "Lights aimed at the aircraft blind the pilot; headlights are pointed at the ground or the wind direction."
+   },
+   "explanation": "Rotor hazards kill—controlled approach after crew signals. Approach the aircraft only when the crew signals."
+  },
+  "nremt-paramedic-readiness-check-ops-special-015": {
+   "options": {
+    "a": "The PCR may be corrected later by deleting the original entry and rewriting it",
+    "b": "A refusal needs no PCR narrative when the patient is alert, oriented, and clearly declines transport by ambulance",
+    "c": "The PCR should be accurate, timely, and complete enough to support continuity of care and legal review",
+    "d": "The PCR should record your conclusions, such as 'drunk', rather than the observed findings"
+   },
+   "distractorExplanations": {
+    "a": "Corrections use a single line-through with initials and date, or a dated addendum; deleting the original looks like falsification.",
+    "b": "Refusals carry high liability and need full documentation: capacity, risks explained, advice given, and signatures.",
+    "d": "Labels like 'drunk' are subjective; the PCR records objective findings, such as an odor of alcohol and slurred speech."
+   }
+  }
+ }
+}

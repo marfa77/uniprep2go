@@ -1,0 +1,617 @@
+{
+ "acsm-cpt-readiness-check": {
+  "acsm-cpt-readiness-check-assessment-001": {
+   "options": {
+    "a": "Flexibility and muscular strength first, then cardio and resting measures",
+    "b": "Resting measures, body composition, cardio, muscular fitness, flexibility",
+    "c": "Muscular strength first, then resting HR and BP, then the cardio test",
+    "d": "Cardiorespiratory test first, then body composition and resting BP"
+   },
+   "distractorExplanations": {
+    "a": "Resting HR and BP must be taken before exercise raises them, so they come first, not last.",
+    "c": "Strength testing first raises HR and BP and fatigues the client before the cardio test.",
+    "d": "A cardio test first raises HR and BP and can distort body-composition readings such as BIA."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-003": {
+   "options": {
+    "a": "Static plumb-line posture check",
+    "b": "Sit-and-reach flexibility test",
+    "c": "Resting blood pressure",
+    "d": "Overhead squat assessment"
+   },
+   "distractorExplanations": {
+    "a": "A plumb-line check views static standing posture; it does not load the kinetic chain through movement like the OHSA.",
+    "b": "Sit-and-reach measures hamstring and low-back flexibility at one range, not movement compensations under load.",
+    "c": "BP is a vital sign, not a movement screen."
+   },
+   "explanation": "The overhead squat assessment observes dynamic movement compensations along the kinetic chain; a plumb-line check is static, and sit-and-reach and BP give other data types."
+  },
+  "acsm-cpt-readiness-check-assessment-004": {
+   "options": {
+    "a": "Weak hip abductors and external rotators, such as gluteus medius",
+    "b": "Weak ankle plantar flexors, such as the soleus and gastrocnemius",
+    "c": "Tight hamstrings pulling the pelvis into a posterior tilt",
+    "d": "Weak quadriceps that cannot extend the knee under load"
+   },
+   "distractorExplanations": {
+    "b": "Weak plantar flexors do not pull the knees inward; valgus is a frontal-plane hip control problem.",
+    "c": "Posterior pelvic tilt from tight hamstrings shows as a rounded low back, not knees caving in.",
+    "d": "Quadriceps weakness limits depth or knee extension, but does not by itself drive the knees medially."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-005": {
+   "options": {
+    "a": "Estimate VO2max so a submaximal treadmill test can be skipped",
+    "b": "Screen for health risks and flag need for medical clearance",
+    "c": "Replace the informed consent form before training begins",
+    "d": "Classify the client's fitness level for program design"
+   },
+   "distractorExplanations": {
+    "a": "The PAR-Q+ is a health-history questionnaire; it cannot estimate aerobic capacity or substitute for a fitness test.",
+    "c": "Screening and informed consent are separate documents; one does not replace the other.",
+    "d": "Fitness level comes from assessments, not from a health-risk questionnaire."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-011": {
+   "options": {
+    "a": "Reduce the load and continue if the pain eases",
+    "b": "Switch to the same movement on a machine",
+    "c": "Apply ice and resume after a short rest break",
+    "d": "Stop the movement and refer for medical review"
+   },
+   "distractorExplanations": {
+    "a": "Sharp joint pain is a stop signal, not something to train around with lighter load.",
+    "b": "Changing equipment still loads the painful joint without knowing the cause.",
+    "c": "Resuming after ice ignores a red-flag symptom that needs evaluation."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-012": {
+   "options": {
+    "a": "Whether the client already exercises regularly",
+    "b": "The client's resting blood pressure category",
+    "c": "The number of CVD risk factors the client reports",
+    "d": "The client's age and body mass index category"
+   },
+   "distractorExplanations": {
+    "c": "Counting CVD risk factors was the pre-2015 approach; the current algorithm dropped risk-factor tallies.",
+    "b": "BP is useful data, but the current algorithm does not start from BP category.",
+    "d": "Age and BMI are not decision points in the current preparticipation algorithm."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-015": {
+   "options": {
+    "a": "Tight calves or hip flexors with a weak posterior chain",
+    "b": "Tight hamstrings with weak hip flexors and quadriceps",
+    "c": "Weak calves with overactive tibialis anterior muscles",
+    "d": "Tight latissimus dorsi with weak lower-trapezius muscles"
+   },
+   "distractorExplanations": {
+    "d": "Tight lats with weak middle and lower traps produce the arms-fall-forward compensation, not excessive trunk lean.",
+    "b": "Tight hamstrings pull the pelvis back; they do not cause excessive forward lean.",
+    "c": "Weak calves and an overactive tibialis would ease dorsiflexion, not limit it."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-007": {
+   "options": {
+    "a": "Frequency, intensity, time, type, volume, and progression",
+    "b": "Frequency, intensity, tempo, type, variety, and progression",
+    "c": "Frequency, interval, training load, type, velocity, pace",
+    "d": "Fitness, intensity, time, technique, volume, and posture"
+   },
+   "distractorExplanations": {
+    "b": "Tempo and variety are not FITT-VP letters; the second T stands for time (duration) and the V for volume.",
+    "c": "Interval, training load, velocity, and pace are not part of FITT-VP.",
+    "d": "Fitness, technique, and posture are not the FITT-VP components."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-008": {
+   "options": {
+    "a": "A week of 1RM testing to set new training loads",
+    "b": "A planned drop in volume or intensity for recovery",
+    "c": "A week off all exercise after an injury diagnosis",
+    "d": "A planned week of extra volume to push past a plateau"
+   },
+   "distractorExplanations": {
+    "d": "Planned extra volume is a functional overreaching block, the opposite of a deload's reduced training load.",
+    "a": "Maximal testing adds stress; a deload reduces it.",
+    "c": "A deload keeps some training; it is not injury rest."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-010": {
+   "options": {
+    "a": "2–3 days a week, 8–10 exercises, starting at 1 set of 8–12",
+    "b": "5–6 days a week, 3 exercises, 5 sets of 3 reps at 90% 1RM",
+    "c": "1 day a week, 20 exercises, 3 sets to failure for each one",
+    "d": "Daily sessions, 2 exercises, 10 sets of 15 reps each"
+   },
+   "distractorExplanations": {
+    "b": "Low-rep, high-set work is a strength block for trained lifters, not a novice start.",
+    "c": "Once a week is too infrequent, and 20 exercises to failure is excessive for a novice.",
+    "d": "Daily training of the same muscles leaves no recovery for a beginner."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-012": {
+   "options": {
+    "a": "Maximal strength through low-rep heavy lifting",
+    "b": "Aerobic capacity through long steady-state work",
+    "c": "Acceleration, change of direction, and reaction",
+    "d": "Muscle hypertrophy through moderate-rep sets"
+   },
+   "distractorExplanations": {
+    "a": "Heavy low-rep work builds maximal strength, not agility.",
+    "b": "Long steady work builds aerobic capacity.",
+    "d": "Hypertrophy comes from resistance volume, not agility drills."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-015": {
+   "options": {
+    "a": "Lengthen muscles with long static stretches",
+    "b": "Raise tissue temperature and rehearse movements",
+    "c": "Pre-fatigue the target muscles before the heavy sets",
+    "d": "Lower heart rate before the working sets begin"
+   },
+   "distractorExplanations": {
+    "c": "Pre-fatiguing target muscles lowers force in the working sets; it is an advanced intensity technique, not a warm-up goal.",
+    "a": "Long static holds before lifting can briefly reduce force output.",
+    "d": "A warm-up raises heart rate gradually; it does not lower it."
+   }
+  },
+  "acsm-cpt-readiness-check-science-001": {
+   "options": {
+    "a": "Muscles that only produce movement in the sagittal plane",
+    "b": "Muscles that work together to stabilize and move a joint",
+    "c": "Muscles that oppose the prime mover during an action",
+    "d": "Muscles that attach to the same bone at both ends"
+   },
+   "distractorExplanations": {
+    "a": "Synergists can act in any plane; plane is not what defines them.",
+    "c": "Muscles that oppose the prime mover are antagonists.",
+    "d": "A muscle attaching to one bone at both ends could not move a joint."
+   }
+  },
+  "acsm-cpt-readiness-check-science-003": {
+   "options": {
+    "a": "Muscular endurance: high reps, low load, short rest",
+    "b": "Maximal strength: low reps, heavy load, long rest",
+    "c": "Power: explosive reps with light-to-moderate loads and full rest",
+    "d": "Hypertrophy: moderate reps and moderate rest"
+   },
+   "distractorExplanations": {
+    "c": "Power training needs an established strength and technique base, so it comes well after the initial endurance phase.",
+    "b": "Heavy low-rep work is a later phase once technique and tolerance are built.",
+    "d": "Hypertrophy work usually follows an initial endurance and technique phase."
+   }
+  },
+  "acsm-cpt-readiness-check-science-008": {
+   "options": {
+    "a": "Myofibril",
+    "b": "Sarcomere",
+    "c": "Fascicle",
+    "d": "Sarcolemma"
+   },
+   "distractorExplanations": {
+    "a": "A myofibril is the rod of repeating sarcomeres inside the fiber; the sarcomere is the smallest contractile unit within it.",
+    "c": "A fascicle is a bundle of whole muscle fibers wrapped in perimysium, a level above the fiber, not a unit inside it.",
+    "d": "The sarcolemma is the fiber's cell membrane that conducts the action potential; it does not generate force itself."
+   },
+   "explanation": "Sarcomeres (actin/myosin arrangement between Z-lines) are the smallest contractile units; myofibrils are chains of sarcomeres, fascicles bundle whole fibers, and the sarcolemma is the cell membrane."
+  },
+  "acsm-cpt-readiness-check-science-009": {
+   "options": {
+    "a": "Heavy squats and jump squats done on separate training days",
+    "b": "A light plyometric drill followed by a 1RM test",
+    "c": "A heavy lift paired with a similar explosive move",
+    "d": "Isometric holds followed by long steady cardio"
+   },
+   "distractorExplanations": {
+    "a": "Splitting the heavy and explosive lifts across days removes the post-activation potentiation that defines complex training.",
+    "b": "A 1RM test is a test, not a contrast training pair.",
+    "d": "Isometrics and steady cardio do not train power."
+   }
+  },
+  "acsm-cpt-readiness-check-science-011": {
+   "options": {
+    "a": "Stabilize the lumbar spine by raising intra-abdominal pressure",
+    "b": "Flex the trunk as the prime mover during sit-ups and crunches",
+    "c": "Rotate the trunk as the prime mover during cable woodchops",
+    "d": "Extend the lumbar spine as the prime mover during back extensions"
+   },
+   "distractorExplanations": {
+    "d": "Lumbar extension is driven by the erector spinae, a global mover, not by the deep transverse abdominis stabilizer.",
+    "b": "The rectus abdominis is the prime mover for trunk flexion.",
+    "c": "The obliques are the prime movers for trunk rotation."
+   }
+  },
+  "acsm-cpt-readiness-check-science-013": {
+   "options": {
+    "a": "It is fully shortened with sarcomeres overlapping",
+    "b": "It is stretched to the end of its range of motion",
+    "c": "Actin and myosin overlap optimally near rest length",
+    "d": "It is contracting concentrically at its fastest velocity"
+   },
+   "distractorExplanations": {
+    "d": "That describes the force-velocity relationship: force falls as concentric speed rises, so maximal velocity gives low force.",
+    "a": "When fully shortened, filaments overlap too much and force drops.",
+    "b": "When overstretched, too few cross-bridges can form."
+   }
+  },
+  "acsm-cpt-readiness-check-science-015": {
+   "options": {
+    "a": "Is the primary mover producing the desired joint action",
+    "b": "Relaxes to allow the desired joint action to happen",
+    "c": "Assists the prime mover in producing the same joint action",
+    "d": "Holds nearby joints steady while the movement happens"
+   },
+   "distractorExplanations": {
+    "c": "A muscle that assists the prime mover with the same action is a synergist, not the agonist itself.",
+    "b": "The antagonist relaxes and lengthens to allow the action.",
+    "d": "Muscles that hold nearby joints steady are stabilizers."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-001": {
+   "options": {
+    "a": "Collaborative exploration of ambivalence and motivation",
+    "b": "Direct advice on the fastest way to reach client goals",
+    "c": "Clear consequences when the client misses sessions",
+    "d": "Detailed education on the health risks of staying inactive"
+   },
+   "distractorExplanations": {
+    "d": "Risk education can support change, but MI centers on evoking the client's own reasons rather than lecturing on risks.",
+    "b": "MI evokes the client's own reasons rather than leading with advice.",
+    "c": "Consequences and pressure increase resistance; MI avoids them."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-002": {
+   "options": {
+    "a": "Increasing sweat rate so the body cools more efficiently",
+    "b": "Reducing plasma volume and raising cardiovascular strain",
+    "c": "Lowering heart rate at a given workload during exercise",
+    "d": "Increasing blood volume available to the working muscles"
+   },
+   "distractorExplanations": {
+    "a": "Dehydration reduces sweating capacity and raises core temperature.",
+    "c": "Heart rate rises at a given workload when plasma volume falls (cardiovascular drift).",
+    "d": "Fluid loss lowers blood volume; it does not increase it."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-004": {
+   "options": {
+    "a": "Build a low-carbohydrate meal plan and review glucose logs",
+    "b": "Suggest a calorie target and remind the client to test",
+    "c": "Provide sample diabetic menus from a trusted website",
+    "d": "Refer to a dietitian or physician for nutrition therapy"
+   },
+   "distractorExplanations": {
+    "a": "Designing a disease-specific meal plan and reviewing glucose logs is medical nutrition therapy, outside CPT scope.",
+    "b": "Setting targets for a diabetic client is clinical nutrition therapy.",
+    "c": "Handing out diabetic menus is still individualized medical nutrition advice."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-005": {
+   "options": {
+    "a": "Prioritize sleep, planned progression, and nutrition",
+    "b": "Use daily ice baths after every training session",
+    "c": "Take a full week off training after every 2 weeks",
+    "d": "Stretch statically for 20 minutes after each session"
+   },
+   "distractorExplanations": {
+    "b": "Frequent cold water immersion can blunt strength and hypertrophy gains.",
+    "c": "This is far more rest than typical periodization requires.",
+    "d": "Static stretching has little effect on recovery or soreness."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-007": {
+   "options": {
+    "a": "Moderate intake improves muscle protein synthesis",
+    "b": "Alcohol calories are not stored as body fat",
+    "c": "Excess intake can impair recovery, sleep, and diet",
+    "d": "Alcohol rehydrates well after an endurance session"
+   },
+   "distractorExplanations": {
+    "a": "Alcohol reduces muscle protein synthesis after training.",
+    "b": "Alcohol provides 7 kcal/g, and those calories can contribute to fat gain.",
+    "d": "Alcohol is a diuretic and can worsen post-exercise dehydration."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-013": {
+   "options": {
+    "a": "Recommend brands that carry third-party testing seals",
+    "b": "Share general evidence and refer clinical questions",
+    "c": "Sell supplements only if the client asks for them",
+    "d": "Suggest doses based on the client's body weight"
+   },
+   "distractorExplanations": {
+    "a": "Third-party seals reduce contamination risk, but recommending specific products still stretches CPT scope of practice.",
+    "c": "Selling products creates a conflict of interest and is not evidence-based guidance.",
+    "d": "Individual dosing is clinical advice outside CPT scope."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-014": {
+   "options": {
+    "a": "Simple, Motivating, Achievable, Rewarding, Tracked",
+    "b": "Specific, Meaningful, Active, Reviewed, Targeted",
+    "c": "Specific, Measurable, Attainable, Relevant, Time-bound",
+    "d": "Strategic, Measured, Agreed, Realistic, Timed"
+   },
+   "distractorExplanations": {
+    "a": "These words are not the standard SMART acronym.",
+    "b": "Meaningful, Active, Reviewed, and Targeted are not SMART terms.",
+    "d": "Strategic and Agreed are not in the standard acronym."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-017": {
+   "options": {
+    "a": "Reduces short-term rises from activity, caffeine, or stress",
+    "b": "Lets the cuff warm to body temperature for a steady reading",
+    "c": "Is the time an automatic monitor needs to calibrate itself",
+    "d": "Allows blood to pool in the legs for a lower reading"
+   },
+   "distractorExplanations": {
+    "b": "Cuff temperature does not affect the reading.",
+    "c": "Monitors do not need a calibration period between clients.",
+    "d": "The goal is a stable resting value, not an artificially low one."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-019": {
+   "options": {
+    "a": "The trainer's certifications and their expiry dates",
+    "b": "That the waiver removes liability for all injuries",
+    "c": "Activities, risks, and the right to stop at any time",
+    "d": "The expected results and a timeline to reach them"
+   },
+   "distractorExplanations": {
+    "a": "Credentials may be shared, but they are not the core of informed consent.",
+    "b": "Consent documents do not remove liability for negligence.",
+    "d": "Promising results is not part of consent and can mislead the client."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-021": {
+   "options": {
+    "a": "Upper-body muscular endurance",
+    "b": "Maximal lower-body power",
+    "c": "Static hamstring flexibility",
+    "d": "Resting metabolic rate"
+   },
+   "distractorExplanations": {
+    "b": "Power requires speed-loaded measures.",
+    "c": "Hamstrings are not the primary push-up limiter.",
+    "d": "RMR is not measured by push-ups."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-022": {
+   "options": {
+    "a": "Take one reading per site to avoid compressing tissue",
+    "b": "Average readings that fall within the protocol's range",
+    "c": "Use the highest reading at each site for safety",
+    "d": "Measure on the left side of the body for accuracy"
+   },
+   "distractorExplanations": {
+    "a": "A single reading is unreliable; protocols require repeat measurements.",
+    "c": "Choosing the highest value biases the estimate upward.",
+    "d": "Most US protocols, including ACSM's, use the right side of the body."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-025": {
+   "options": {
+    "a": "Can talk in full sentences but cannot sing",
+    "b": "Can sing comfortably while keeping pace",
+    "c": "Can speak only a few words between breaths",
+    "d": "Cannot speak without stopping to catch breath"
+   },
+   "distractorExplanations": {
+    "d": "Being unable to speak without pausing for breath signals near-maximal effort, well above moderate intensity.",
+    "b": "Being able to sing suggests light intensity.",
+    "c": "Only a few words at a time suggests vigorous intensity."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-027": {
+   "options": {
+    "a": "A 45-year-old with controlled hypertension on medication",
+    "b": "A 60-year-old walker with a knee replacement last year",
+    "c": "A 52-year-old with uncontrolled hypertension and syncope",
+    "d": "A 38-year-old with type 1 diabetes and good control"
+   },
+   "distractorExplanations": {
+    "a": "Controlled hypertension usually allows training with monitoring.",
+    "b": "A healed joint replacement may limit impact but is not a cardiac red flag.",
+    "d": "Well-controlled diabetes needs glucose monitoring, not deferral of all testing."
+   }
+  },
+  "acsm-cpt-readiness-check-assessment-029": {
+   "options": {
+    "a": "Resting HR, maximal HR, and the target intensity",
+    "b": "Resting HR, age, and the client's body weight",
+    "c": "Maximal HR, blood pressure, and target intensity",
+    "d": "Resting BP, age, and the client's RPE rating"
+   },
+   "distractorExplanations": {
+    "b": "Body weight is not part of the HRR formula.",
+    "c": "Blood pressure is not used in the Karvonen formula.",
+    "d": "The formula uses heart rates, not BP or RPE."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-017": {
+   "options": {
+    "a": "150 minutes a week of moderate aerobic activity",
+    "b": "75 minutes a week of moderate aerobic activity",
+    "c": "300 minutes a week of vigorous aerobic activity",
+    "d": "30 minutes a week of moderate aerobic activity"
+   },
+   "distractorExplanations": {
+    "b": "75 minutes is the vigorous-intensity equivalent, not the moderate target.",
+    "c": "300 minutes is the upper moderate range for added benefit, not the vigorous minimum.",
+    "d": "30 minutes a week is far below the recommended minimum."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-025": {
+   "options": {
+    "a": "Lowering reps and raising load, with longer rest",
+    "b": "Raising reps and lowering load, with less rest",
+    "c": "Keeping reps the same and adding more sets",
+    "d": "Switching to explosive reps with light loads"
+   },
+   "distractorExplanations": {
+    "b": "Higher reps with lighter loads shift toward endurance.",
+    "c": "More sets at the same reps adds volume, not a strength emphasis.",
+    "d": "Explosive light loads train power, which usually follows a strength phase."
+   }
+  },
+  "acsm-cpt-readiness-check-programming-027": {
+   "options": {
+    "a": "A heavy upper-body session to rest the legs",
+    "b": "Complete rest with no movement for two days",
+    "c": "Light walking or mobility work at low effort",
+    "d": "Moderate squats to flush out the soreness"
+   },
+   "distractorExplanations": {
+    "a": "A heavy session is not recovery, even for different muscles.",
+    "b": "Complete inactivity is not needed after a normal hard session.",
+    "d": "More squatting adds stress to the same tired muscles."
+   }
+  },
+  "acsm-cpt-readiness-check-science-022": {
+   "options": {
+    "a": "Lower heart rate allowing longer filling time",
+    "b": "Greater venous return and stronger contraction",
+    "c": "Reduced blood volume from sweating",
+    "d": "Increased peripheral vascular resistance"
+   },
+   "distractorExplanations": {
+    "a": "Heart rate rises during exercise, so filling time shortens.",
+    "c": "Sweat loss reduces blood volume and tends to lower stroke volume.",
+    "d": "Resistance in working muscle falls during exercise; higher resistance would reduce stroke volume."
+   }
+  },
+  "acsm-cpt-readiness-check-science-026": {
+   "options": {
+    "a": "Lower blood pressure by reducing venous return",
+    "b": "Raise intrathoracic pressure and blood pressure",
+    "c": "Reduce spinal stability during the heavy lift",
+    "d": "Increase oxygen delivery to the working muscles"
+   },
+   "distractorExplanations": {
+    "a": "Blood pressure rises during the strain; it can drop after release.",
+    "c": "Breath-holding increases trunk stiffness and spinal stability.",
+    "d": "Breath-holding does not improve oxygen delivery."
+   }
+  },
+  "acsm-cpt-readiness-check-science-027": {
+   "options": {
+    "a": "Raise maximal heart rate, so zones are set too low",
+    "b": "Increase blood pressure during resistance training",
+    "c": "Blunt the heart rate response, so zones are unreliable",
+    "d": "Cause heart rate to spike during the warm-up only"
+   },
+   "distractorExplanations": {
+    "a": "Beta-blockers lower, not raise, maximal and exercise heart rate.",
+    "b": "Beta-blockers usually lower blood pressure.",
+    "d": "They blunt heart rate throughout exercise, not just the warm-up."
+   }
+  },
+  "acsm-cpt-readiness-check-science-028": {
+   "options": {
+    "a": "Rapid strength gains followed by a short plateau",
+    "b": "Muscle soreness lasting 24–72 hours after training",
+    "c": "Increased appetite during high-volume weeks",
+    "d": "Persistent fatigue, falling performance, poor sleep"
+   },
+   "distractorExplanations": {
+    "a": "Gains followed by a plateau are normal training responses.",
+    "b": "Short-term DOMS is normal after new or hard sessions.",
+    "c": "More appetite during heavy training is expected, not a sign of overtraining."
+   }
+  },
+  "acsm-cpt-readiness-check-science-029": {
+   "options": {
+    "a": "Storing elastic energy in a quick eccentric pre-stretch",
+    "b": "Holding a long isometric pause before the takeoff",
+    "c": "Using a slow eccentric phase to recruit more fibers",
+    "d": "Relying on passive ligament stretch for rebound"
+   },
+   "distractorExplanations": {
+    "b": "A long pause lets stored elastic energy dissipate.",
+    "c": "The cycle depends on a fast eccentric phase, not a slow one.",
+    "d": "The effect comes from muscle and tendon, not ligaments."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-017": {
+   "options": {
+    "a": "Refer to the agreement and clarify paid boundaries",
+    "b": "Provide a few free plans to keep the relationship",
+    "c": "Stop replying to messages without any explanation",
+    "d": "Offer a discount only if the client posts a review"
+   },
+   "distractorExplanations": {
+    "b": "Ad hoc free work blurs boundaries and sets expectations.",
+    "c": "Ignoring the client is unprofessional; boundaries should be stated clearly.",
+    "d": "Trading discounts for reviews can be deceptive marketing."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-018": {
+   "options": {
+    "a": "Drink less soda and more water starting next month",
+    "b": "Swap one 20-oz soda for water on weekdays for 4 weeks",
+    "c": "Stop drinking soda from tomorrow and stay soda-free",
+    "d": "Try to reduce soda intake as much as possible each week"
+   },
+   "distractorExplanations": {
+    "c": "An abrupt all-or-nothing quit is rarely attainable as a first step and sets no time frame for review.",
+    "d": "Adding 'each week' still gives no measurable amount or end date, so progress cannot be tracked.",
+    "a": "This lacks a measurable amount and a clear timeline."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-019": {
+   "options": {
+    "a": "Removing all flexibility from the weekly schedule",
+    "b": "Restarting at full volume after any missed week",
+    "c": "Planning ahead for high-risk times such as travel",
+    "d": "Setting stricter goals after each missed session"
+   },
+   "distractorExplanations": {
+    "a": "Rigid schedules break easily; relapse prevention builds in flexible options.",
+    "b": "Jumping back to full volume after a lapse raises soreness and dropout risk.",
+    "d": "Stricter goals after a lapse increase pressure and the chance of quitting."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-022": {
+   "options": {
+    "a": "Drink only when thirsty, even in hot weather",
+    "b": "Start well hydrated and replace sweat losses",
+    "c": "Drink a liter of water just before starting",
+    "d": "Use sports drinks instead of plain water throughout"
+   },
+   "distractorExplanations": {
+    "d": "Sports drinks can help in long sessions, but plain water covers most fluid needs; replacing water with them is unnecessary.",
+    "a": "Thirst can lag behind fluid needs during long sessions in heat.",
+    "c": "A large bolus just before exercise is poorly absorbed and uncomfortable."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-023": {
+   "options": {
+    "a": "Offer a moderate deficit plan with weekly check-ins",
+    "b": "Agree only if the client's physician signs off first",
+    "c": "Decline restrictive plans and refer to an RD or therapist",
+    "d": "Focus on exercise and let the client manage their diet"
+   },
+   "distractorExplanations": {
+    "a": "Any prescribed deficit is risky with an eating disorder history and outside scope.",
+    "b": "Physician sign-off does not bring clinical diet design into CPT scope.",
+    "d": "Staying silent misses a chance to refer a client with a known risk."
+   }
+  },
+  "acsm-cpt-readiness-check-behavior-028": {
+   "options": {
+    "a": "Is thinking about change within the next 6 months",
+    "b": "Has been exercising regularly for over 6 months",
+    "c": "Began exercising regularly within the last 6 months",
+    "d": "Plans to start within 30 days and takes small steps"
+   },
+   "distractorExplanations": {
+    "a": "Thinking about change within six months is contemplation.",
+    "b": "Six or more months of regular exercise is maintenance.",
+    "c": "Recent regular exercise is the action stage."
+   }
+  }
+ }
+}

@@ -1,0 +1,571 @@
+{
+ "ascp-mls-readiness-check": {
+  "ascp-mls-readiness-check-blood-bank-001": {
+   "options": {
+    "a": "ABO antigens on red cells using anti-A and anti-B reagents",
+    "b": "ABO antibodies in plasma using A1 and B reagent red cells",
+    "c": "Rh(D) antigen on red cells using anti-D reagent alone",
+    "d": "Unexpected red cell antibodies using group O screening cells"
+   },
+   "distractorExplanations": {
+    "b": "That describes reverse (serum) typing, which detects isoagglutinins in plasma, not antigens on the patient's red cells.",
+    "c": "Anti-D detects the D antigen in Rh typing; forward ABO typing uses anti-A and anti-B, not anti-D.",
+    "d": "That describes the antibody screen, which detects non-ABO alloantibodies with O cells, not forward ABO typing."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-002": {
+   "options": {
+    "a": "Patient plasma + group O screening cells I and II",
+    "b": "Patient serum/plasma + A1 and B reagent cells",
+    "c": "Patient serum + anti-human globulin and check cells",
+    "d": "Patient red cells + anti-A/B"
+   },
+   "distractorExplanations": {
+    "a": "O screening cells are used in the antibody screen to detect unexpected antibodies, not in reverse ABO typing.",
+    "c": "AHG and check cells belong to the indirect antiglobulin phase; reverse typing is read at immediate spin with A1/B cells.",
+    "d": "Forward typing."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-003": {
+   "options": {
+    "a": "Negative antibody screen with known history of no transfusion",
+    "b": "ABO forward and reverse results that agree on repeat testing",
+    "c": "Strong 3+ D-positive reaction at immediate spin with a negative control",
+    "d": "Weak D / discrepant D that may require further testing"
+   },
+   "distractorExplanations": {
+    "b": "Concordant forward and reverse ABO results are the expected finding and raise no D-typing concern.",
+    "c": "A clear-cut D-positive reaction with a valid control is an unambiguous result that needs no further D workup.",
+    "a": "Less urgent than D discrepancy."
+   },
+   "explanation": "Weak D interpretation affects RhIG and transfusion decisions; follow current AABB/lab policy. Further testing follows laboratory policy."
+  },
+  "ascp-mls-readiness-check-blood-bank-004": {
+   "options": {
+    "a": "Expected ABO isoagglutinins using A1 and B cells",
+    "b": "Unexpected RBC antibodies using screening cells",
+    "c": "IgG or complement already bound to the patient's red cells",
+    "d": "Donor red cell antigens using commercial antisera"
+   },
+   "distractorExplanations": {
+    "a": "Detecting anti-A and anti-B with A1 and B cells is reverse typing; the screen looks for unexpected non-ABO antibodies.",
+    "c": "Antibody bound in vivo to patient RBCs is detected by the DAT; the screen detects free antibody in plasma by IAT.",
+    "d": "Typing donor cells with antisera is antigen typing; the antibody screen tests patient plasma against reagent O cells."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-005": {
+   "options": {
+    "a": "It detects IgG antibodies that may not agglutinate in saline",
+    "b": "It detects IgM antibodies that agglutinate best at room temperature",
+    "c": "It enhances agglutination by reducing the zeta potential of red cells",
+    "d": "It confirms ABO grouping when forward and reverse types disagree"
+   },
+   "distractorExplanations": {
+    "b": "IgM antibodies agglutinate directly at immediate spin or room temperature; AHG is needed to detect IgG coating.",
+    "c": "Reducing zeta potential is the role of enhancement media such as LISS or PEG, not the antiglobulin reagent.",
+    "d": "ABO discrepancies are resolved with repeat testing, A1 lectin and other workups; AHG targets IgG alloantibodies."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-006": {
+   "options": {
+    "a": "Patient serum/plasma vs donor red cells",
+    "b": "Patient plasma vs reagent O screening cells",
+    "c": "Patient cells vs patient serum only",
+    "d": "Donor serum vs patient cells"
+   },
+   "distractorExplanations": {
+    "b": "Testing plasma against reagent O cells is the antibody screen; the crossmatch uses the actual donor unit's red cells.",
+    "c": "Autocontrol.",
+    "d": "Minor XM (less used routinely now)."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-009": {
+   "options": {
+    "a": "Leukoreduced and/or CMV-seronegative per policy",
+    "b": "Irradiated to inactivate CMV in donor lymphocytes",
+    "c": "Washed to remove plasma containing CMV antibodies",
+    "d": "Selected from donors with a positive CMV IgG antibody"
+   },
+   "distractorExplanations": {
+    "b": "Irradiation prevents TA-GVHD by disabling donor lymphocytes; it does not reduce CMV transmission risk.",
+    "c": "Washing removes plasma proteins to prevent allergic reactions; donor CMV antibodies are not the transmission risk.",
+    "d": "CMV-IgG-positive donors carry latent virus in leukocytes; CMV-safe units come from seronegative donors or leukoreduction."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-010": {
+   "options": {
+    "a": "An acquired B antigen from bacterial deacetylation",
+    "b": "A cold-reactive autoantibody causing extra reactions",
+    "c": "A subgroup of A such as A2 with anti-A1 present",
+    "d": "Hypogammaglobulinemia / weak isoagglutinins"
+   },
+   "distractorExplanations": {
+    "a": "Acquired B causes an extra forward-type reaction, not weak reverse reactions; it is a red cell antigen problem.",
+    "b": "Cold autoantibodies cause unexpected extra reverse reactions, not weaker-than-expected ones.",
+    "c": "A2 with anti-A1 adds an unexpected reverse reaction with A1 cells; it does not weaken the expected reactions."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-011": {
+   "options": {
+    "a": "Prevent formation of anti-D after exposure to D-positive RBCs",
+    "b": "Treat already formed high-titer anti-D as the sole therapy",
+    "c": "Prevent ABO hemolytic disease when mother and baby are ABO-incompatible",
+    "d": "Prevent formation of anti-c and anti-K after fetal red cell exposure"
+   },
+   "distractorExplanations": {
+    "c": "RhIG contains anti-D only; it has no role in preventing ABO hemolytic disease of the fetus and newborn.",
+    "d": "RhIG targets the D antigen; it does not prevent alloimmunization to other antigens such as c or Kell.",
+    "b": "Does not erase established alloimmunization as sole concept."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-012": {
+   "options": {
+    "a": "Free antibody in plasma reacting with reagent red cells in vitro",
+    "b": "In vivo coating of RBCs with IgG and/or complement",
+    "c": "A clerical or labeling error until proven otherwise by recollection",
+    "d": "Reduced red cell survival from intrinsic membrane defects such as spherocytosis"
+   },
+   "distractorExplanations": {
+    "a": "That describes the indirect antiglobulin test; the DAT detects antibody already bound to red cells in vivo.",
+    "c": "A positive DAT usually reflects real in vivo sensitization (HDFN, AIHA, transfusion reaction), not a labeling error.",
+    "d": "Hereditary spherocytosis causes hemolysis with a negative DAT; a positive DAT points to immune-mediated coating."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-013": {
+   "options": {
+    "a": "Group-specific RBCs based on the patient's prior records",
+    "b": "Group O-positive RBCs preferred for every female patient of childbearing age",
+    "c": "Group AB RBCs, since AB is the universal red cell donor",
+    "d": "Group O RBCs (often O-negative for women of childbearing potential)"
+   },
+   "distractorExplanations": {
+    "a": "Old records cannot confirm an unknown patient's identity; uncrossmatched RBCs are group O until a current type is done.",
+    "b": "Reverses the policy; O-negative is preferred for females of childbearing potential to avoid anti-D formation.",
+    "c": "AB is the universal plasma donor group; group O red cells are the universal red cell choice."
+   },
+   "explanation": "O RBCs are universal donor red cells in emergencies; Rh choice follows policy/risk. Rh selection follows the institution's emergency-release policy."
+  },
+  "ascp-mls-readiness-check-blood-bank-014": {
+   "options": {
+    "a": "Ruling out antibodies using negative reactions and considering phase, dosage, and patient history",
+    "b": "Ruling out antibodies using positive reactions with heterozygous cells, ignoring phase of reactivity",
+    "c": "Matching the reaction pattern to one antigen column and stopping without rule-outs or a rule of three",
+    "d": "Ruling out antibodies on heterozygous cells, then confirming the specificity with a single positive cell"
+   },
+   "distractorExplanations": {
+    "b": "Rule-outs use non-reacting cells, ideally homozygous ones; reacting heterozygous cells cannot exclude an antibody.",
+    "c": "Skipping rule-outs misses additional antibodies; identification needs exclusion plus the rule of three for probability.",
+    "d": "Heterozygous cells can miss dosage antibodies such as Kidd, and one positive cell does not meet the rule of three."
+   }
+  },
+  "ascp-mls-readiness-check-blood-bank-015": {
+   "options": {
+    "a": "Febrile nonhemolytic transfusion reactions and CMV transmission",
+    "b": "Transfusion-associated graft-versus-host disease and bacterial contamination",
+    "c": "Allergic urticarial reactions and anaphylaxis in IgA-deficient patients",
+    "d": "Transfusion-related acute lung injury and circulatory overload"
+   },
+   "distractorExplanations": {
+    "b": "TA-GVHD is prevented by irradiation, not leukoreduction, and bacterial contamination is not addressed by WBC removal.",
+    "c": "Allergic and anaphylactic reactions come from plasma proteins; washed or IgA-deficient products address those.",
+    "d": "TRALI is linked to donor antibodies in plasma and TACO to volume; removing leukocytes prevents neither."
+   },
+   "explanation": "Removing WBCs decreases FNHTR, CMV risk, and alloimmunization risk. It also reduces HLA alloimmunization."
+  },
+  "ascp-mls-readiness-check-chemistry-001": {
+   "options": {
+    "a": "Increased GFR from hyperfiltration in early diabetes",
+    "b": "Hepatocellular injury with impaired protein synthesis",
+    "c": "Increased tubular reabsorption of creatinine by the kidney",
+    "d": "Reduced glomerular filtration / impaired kidney function"
+   },
+   "distractorExplanations": {
+    "a": "Hyperfiltration raises GFR, which lowers serum creatinine; an elevated creatinine reflects reduced filtration.",
+    "b": "Liver injury shows in ALT/AST and synthetic markers; creatinine is cleared by the kidney, not the liver.",
+    "c": "Creatinine is filtered and slightly secreted, not reabsorbed; a rising level reflects falling GFR."
+   }
+  },
+  "ascp-mls-readiness-check-chemistry-003": {
+   "options": {
+    "a": "GGT (and ALP)",
+    "b": "CK (and LD)",
+    "c": "ALT (and AST)",
+    "d": "Lipase (and amylase)"
+   },
+   "distractorExplanations": {
+    "a": "GGT and ALP are cholestatic or biliary markers; ALT and AST are the ones that track hepatocellular injury.",
+    "b": "CK and LD rise with muscle injury and hemolysis; they are not sensitive or specific markers of hepatocyte damage.",
+    "d": "Lipase and amylase mark pancreatic injury, not hepatocellular damage; ALT is the liver-specific enzyme."
+   }
+  },
+  "ascp-mls-readiness-check-chemistry-004": {
+   "options": {
+    "a": "1–2 days",
+    "b": "2–3 weeks",
+    "c": "about 6 weeks",
+    "d": "2–3 months"
+   },
+   "distractorExplanations": {
+    "a": "A day-to-day window reflects meter or plasma glucose readings; HbA1c integrates glycemia over the red cell lifespan.",
+    "b": "Two to three weeks is the window of fructosamine (glycated albumin), which reflects albumin's shorter half-life.",
+    "c": "Six weeks underestimates the window; HbA1c reflects the roughly 120-day red cell lifespan, about 2–3 months."
+   }
+  },
+  "ascp-mls-readiness-check-chemistry-005": {
+   "options": {
+    "a": "Immediate reporting after checking for hemolysis/sample integrity",
+    "b": "Repeating on a new draw before any notification, even if that takes hours",
+    "c": "Reporting through the LIS only, without a direct call to the caregiver",
+    "d": "Immediate reporting without checking for hemolysis or EDTA contamination"
+   },
+   "distractorExplanations": {
+    "b": "Waiting hours for a recollection delays a possibly lethal result; criticals are called promptly once integrity is checked.",
+    "c": "Critical values require direct, documented verbal notification with read-back, not passive electronic reporting.",
+    "d": "Hemolysis and K2EDTA carryover falsely raise potassium, so specimen integrity is checked quickly before the call."
+   },
+   "explanation": "Critical values require rapid verification for preanalytics (hemolysis falsely ↑K+) and clinician notification. Clinical correlation follows the critical-value protocol."
+  },
+  "ascp-mls-readiness-check-chemistry-006": {
+   "options": {
+    "a": "Causing turbidity/volume displacement errors in some methods",
+    "b": "Releasing intracellular potassium from lysed platelets during clotting",
+    "c": "Binding bilirubin and falsely lowering its measured concentration",
+    "d": "Producing pseudohypernatremia on direct ion-selective electrodes"
+   },
+   "distractorExplanations": {
+    "b": "That describes pseudohyperkalemia from thrombocytosis, not lipemia; lipemia interferes optically and by volume.",
+    "c": "Lipemia interferes through light scatter and volume displacement, not by binding analytes such as bilirubin.",
+    "d": "Lipemia causes pseudohyponatremia on indirect ISE or flame methods; direct ISE is the method that avoids it."
+   }
+  },
+  "ascp-mls-readiness-check-chemistry-009": {
+   "options": {
+    "a": "Physiologic jaundice of the newborn",
+    "b": "Hemolysis with increased bilirubin load",
+    "c": "Gilbert syndrome with reduced UGT1A1 activity",
+    "d": "Hepatic excretion defect / cholestasis"
+   },
+   "distractorExplanations": {
+    "a": "Physiologic neonatal jaundice is unconjugated; a conjugated rise in a newborn needs a cholestasis workup.",
+    "b": "Hemolysis overloads conjugation and raises unconjugated bilirubin, not the direct fraction.",
+    "c": "Gilbert syndrome lowers conjugating enzyme activity, so the rise is unconjugated, not direct."
+   },
+   "explanation": "Conjugated hyperbilirubinemia points to hepatic/cholestatic pathways; hemolysis raises unconjugated. Hepatocellular disease can also cause conjugated hyperbilirubinemia."
+  },
+  "ascp-mls-readiness-check-chemistry-011": {
+   "options": {
+    "a": "Albumin, globulins, and fibrinogen",
+    "b": "Potassium, calcium, and magnesium",
+    "c": "Ethanol, mannitol, and ketones",
+    "d": "Sodium, glucose, and urea (BUN)"
+   },
+   "distractorExplanations": {
+    "a": "Plasma proteins drive colloid oncotic pressure but add few osmoles because the molecules are large and few in number.",
+    "b": "These cations are present at low concentrations and add little to osmolality compared with sodium.",
+    "c": "These are added osmoles that create an osmolal gap; they are not the normal main contributors to osmolality."
+   }
+  },
+  "ascp-mls-readiness-check-chemistry-012": {
+   "options": {
+    "a": "Falsely increased glucose due to glycolysis",
+    "b": "Falsely decreased glucose due to glycolysis",
+    "c": "Falsely increased glucose from red cell glucose release",
+    "d": "Unchanged glucose if the tube is kept tightly capped"
+   },
+   "distractorExplanations": {
+    "c": "Red cells consume glucose rather than release it; prolonged cell contact lowers the result by roughly 5–7% per hour.",
+    "d": "Capping prevents evaporation but not glycolysis; prompt separation or a fluoride tube is what preserves glucose.",
+    "a": "Opposite direction."
+   }
+  },
+  "ascp-mls-readiness-check-chemistry-013": {
+   "options": {
+    "a": "Bone source, as in Paget disease or healing fractures",
+    "b": "Placental source during the third trimester of pregnancy",
+    "c": "Hepatic/biliary source of ALP more than bone alone",
+    "d": "Intestinal ALP release after a fatty meal in group O"
+   },
+   "distractorExplanations": {
+    "a": "Bone ALP rises without GGT; a concurrent GGT increase points to a hepatobiliary source instead.",
+    "b": "Placental ALP rises in late pregnancy with a normal GGT; GGT co-elevation indicates the liver or biliary tree.",
+    "d": "Intestinal ALP can rise after meals in group O or B secretors, but it does not raise GGT."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-001": {
+   "options": {
+    "a": "Microcytic, normocytic, or macrocytic",
+    "b": "Hypochromic, normochromic, or hyperchromic",
+    "c": "Regenerative or nonregenerative by marrow output",
+    "d": "Anisocytosis grades from 1+ to 4+ on the smear"
+   },
+   "distractorExplanations": {
+    "b": "Chromia categories come from MCH/MCHC, not MCV; MCV classifies anemias by red cell size.",
+    "c": "Marrow response is judged by the reticulocyte count, not by the mean cell volume.",
+    "d": "Size variation is measured by RDW or smear grading; MCV is the mean cell volume used to classify anemia."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-003": {
+   "options": {
+    "a": "Microangiopathic hemolytic process",
+    "b": "Hereditary membrane defect such as spherocytosis",
+    "c": "Megaloblastic anemia from B12 deficiency",
+    "d": "Oxidant injury with Heinz body formation"
+   },
+   "distractorExplanations": {
+    "b": "Spherocytosis produces spherocytes without central pallor; schistocytes are fragments from shear injury.",
+    "c": "B12 deficiency shows macro-ovalocytes and hypersegmented neutrophils; fragments point to microangiopathy.",
+    "d": "Oxidant injury produces bite and blister cells with Heinz bodies, not the helmet and triangle fragments of MAHA."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-004": {
+   "options": {
+    "a": "Increased hypersegmented neutrophils in circulation",
+    "b": "Increased immature neutrophils (bands/metas) in circulation",
+    "c": "Increased reactive lymphocytes with abundant cytoplasm",
+    "d": "Toxic granulation and Döhle bodies without immature forms"
+   },
+   "distractorExplanations": {
+    "a": "Hypersegmentation is a 'right shift' seen in megaloblastic anemia, the opposite of circulating immature forms.",
+    "c": "Reactive lymphocytes suggest viral infection; a left shift refers to immature neutrophil precursors.",
+    "d": "Toxic changes often accompany infection but are not a left shift unless immature neutrophils increase."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-006": {
+   "options": {
+    "a": "Isolated factor VII deficiency",
+    "b": "Factor VIII/IX deficiency or heparin effect",
+    "c": "Early vitamin K deficiency or warfarin effect",
+    "d": "Factor XIII deficiency or fibrinogen deficiency"
+   },
+   "distractorExplanations": {
+    "c": "Warfarin and early vitamin K deficiency prolong the PT first because factor VII has the shortest half-life.",
+    "d": "Factor XIII deficiency leaves PT and aPTT normal, and low fibrinogen prolongs both tests rather than aPTT alone.",
+    "a": "VII prolongs PT."
+   },
+   "explanation": "Intrinsic pathway defects and unfractionated heparin prolong aPTT more than PT. Other intrinsic pathway problems can produce the same pattern."
+  },
+  "ascp-mls-readiness-check-hematology-007": {
+   "options": {
+    "a": "Fibrinogen breakdown by plasmin without clot formation",
+    "b": "A confirmed deep vein thrombosis or pulmonary embolism",
+    "c": "Reduced fibrinolysis from high plasminogen activator inhibitor",
+    "d": "Fibrin formation and fibrinolysis have occurred (nonspecific)"
+   },
+   "distractorExplanations": {
+    "a": "D-dimer arises from cross-linked fibrin, so a clot must have formed; fibrinogen lysis alone yields other FDPs.",
+    "b": "D-dimer is sensitive but nonspecific; elevation needs imaging to confirm VTE, while a normal level helps exclude it.",
+    "c": "Impaired fibrinolysis would lower D-dimer generation; elevation means plasmin has degraded cross-linked fibrin."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-008": {
+   "options": {
+    "a": "Iron deficiency anemia by measuring stored iron",
+    "b": "Hemoglobinopathies such as sickle cell disease/trait",
+    "c": "Hereditary spherocytosis by red cell membrane analysis",
+    "d": "G6PD deficiency by red cell enzyme activity"
+   },
+   "distractorExplanations": {
+    "a": "Iron status is assessed with ferritin and iron studies; electrophoresis separates hemoglobin variants.",
+    "c": "Spherocytosis is diagnosed with osmotic fragility or EMA binding, not hemoglobin electrophoresis.",
+    "d": "G6PD deficiency is an enzyme defect detected by enzyme assays; hemoglobin structure itself is normal."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-009": {
+   "options": {
+    "a": "Bone marrow increases RBC production",
+    "b": "Erythropoietin production falls in renal disease",
+    "c": "Marrow is replaced in aplastic anemia",
+    "d": "Untreated iron deficiency limits hemoglobin synthesis"
+   },
+   "distractorExplanations": {
+    "b": "Low erythropoietin in kidney disease reduces marrow output, so the reticulocyte count falls.",
+    "c": "Aplastic anemia leaves too few precursors, so reticulocytes are low despite the anemia.",
+    "d": "Untreated iron deficiency gives a low reticulocyte count; it rises after iron is replaced."
+   },
+   "explanation": "Reticulocytosis marks marrow response to anemia. Examples include hemolysis or blood loss once iron is available."
+  },
+  "ascp-mls-readiness-check-hematology-013": {
+   "options": {
+    "a": "Platelet adhesion/aggregation and vessel wall",
+    "b": "Plasmin-mediated breakdown of the fibrin clot",
+    "c": "Fibrin stabilization by factor XIII cross-linking",
+    "d": "Vitamin K–dependent factor cascade"
+   },
+   "distractorExplanations": {
+    "b": "Plasmin breakdown of fibrin is fibrinolysis, the final phase after clot formation, not primary hemostasis.",
+    "c": "Factor XIII cross-linking stabilizes fibrin at the end of secondary hemostasis, not the platelet plug phase.",
+    "d": "Secondary hemostasis."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-014": {
+   "options": {
+    "a": "Possible acute leukemia requiring prompt hematopathology workup",
+    "b": "Leukemoid reaction to infection needing follow-up in a few weeks",
+    "c": "Chronic lymphocytic leukemia needing routine outpatient follow-up",
+    "d": "Iron deficiency with marrow stress needing an iron trial first"
+   },
+   "distractorExplanations": {
+    "b": "Leukemoid reactions show a left shift with few or no blasts; blasts with cytopenias need urgent workup.",
+    "c": "CLL shows mature small lymphocytes and smudge cells, not blasts; blasts with cytopenias suggest acute leukemia.",
+    "d": "Iron deficiency shows microcytic hypochromic cells, not blasts; delaying workup for an iron trial is unsafe."
+   }
+  },
+  "ascp-mls-readiness-check-hematology-015": {
+   "options": {
+    "a": "Polycythemia from increased red cell mass",
+    "b": "Inflammation (also anemia, pregnancy, etc.)",
+    "c": "Sickle cells and spherocytes on the smear",
+    "d": "Low fibrinogen and hypogammaglobulinemia"
+   },
+   "distractorExplanations": {
+    "a": "A high hematocrit slows rouleaux formation and lowers the ESR; anemia, not polycythemia, raises it.",
+    "c": "Abnormally shaped red cells cannot form rouleaux, so they lower the ESR rather than raise it.",
+    "d": "Fibrinogen and immunoglobulins promote rouleaux; low levels lower the ESR rather than raising it."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-001": {
+   "options": {
+    "a": "Red due to mycolic acid retaining carbolfuchsin after acid-alcohol",
+    "b": "Purple due to lipopolysaccharide binding the iodine mordant",
+    "c": "Purple/blue due to thick peptidoglycan retaining crystal violet",
+    "d": "Pink/red because the alcohol decolorizer removes crystal violet"
+   },
+   "distractorExplanations": {
+    "a": "That describes acid-fast staining of mycobacteria, not the Gram reaction of Gram-positive organisms.",
+    "b": "LPS is in Gram-negative outer membranes; Gram-positives retain crystal violet in thick peptidoglycan.",
+    "d": "Losing crystal violet and taking up safranin is the Gram-negative result; Gram-positives resist decolorization."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-002": {
+   "options": {
+    "a": "Staphylococcus aureus (positive) from other staphylococci",
+    "b": "Enterococcus (positive) from Streptococcus (negative)",
+    "c": "Streptococcus (positive) from Staphylococcus (negative)",
+    "d": "Staphylococcus (positive) from Streptococcus (negative)"
+   },
+   "distractorExplanations": {
+    "a": "That is the coagulase test; all staphylococci are catalase-positive, so catalase cannot separate them.",
+    "b": "Enterococci are catalase-negative like streptococci; they are separated by bile esculin and 6.5% NaCl.",
+    "c": "Reverses the reactions; staphylococci produce catalase and bubble with peroxide, streptococci do not."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-005": {
+   "options": {
+    "a": "Enzyme-labeled conjugates producing a measurable color/signal",
+    "b": "Fluorescent-labeled antibodies viewed under a UV microscope",
+    "c": "Visible agglutination of antibody-coated latex particles",
+    "d": "Radioactive isotope-labeled antigens measured by a gamma counter"
+   },
+   "distractorExplanations": {
+    "b": "That is immunofluorescence (DFA/IFA); ELISA uses an enzyme label with a chromogenic or chemiluminescent substrate.",
+    "c": "Latex agglutination is a direct visible lattice reaction with no enzyme-substrate signal.",
+    "d": "Isotope labels define radioimmunoassay (RIA); ELISA replaced the isotopes with enzyme labels."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-006": {
+   "options": {
+    "a": "The organism's minimum bactericidal concentration for the drug",
+    "b": "The exact MIC in µg/mL, read directly from the zone diameter",
+    "c": "Antimicrobial activity against the organism under standardized conditions",
+    "d": "That the antibiotic diffused poorly through the Mueller-Hinton agar"
+   },
+   "distractorExplanations": {
+    "a": "MBC requires subculturing dilution tubes to show killing; disk zones reflect inhibition of growth.",
+    "b": "Zone sizes are interpreted as S/I/R with CLSI breakpoints; an MIC number needs a dilution or gradient method.",
+    "d": "Poor diffusion would shrink the zone; a zone of inhibition reflects the drug inhibiting the organism's growth."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-008": {
+   "options": {
+    "a": "Long-term immunity after vaccination",
+    "b": "Mucosal immunity in secretions",
+    "c": "Recent/primary immune response (often)",
+    "d": "An allergic type I hypersensitivity"
+   },
+   "distractorExplanations": {
+    "a": "Durable post-vaccination immunity is reflected by IgG; IgM marks the early primary response.",
+    "b": "Mucosal secretions are dominated by secretory IgA, not IgM, so this describes a different class.",
+    "d": "Type I hypersensitivity is mediated by IgE bound to mast cells, not by IgM."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-009": {
+   "options": {
+    "a": "Multiple sets growing the same Gram-negative rod in a septic patient",
+    "b": "S. aureus in a single bottle from a patient with a central line",
+    "c": "CoNS in two sets drawn from separate sites in a patient with a prosthetic valve",
+    "d": "Single bottle growth of skin flora (e.g., CoNS) with mismatched clinical picture"
+   },
+   "distractorExplanations": {
+    "b": "S. aureus is rarely a contaminant; even one positive bottle is treated as true bacteremia and worked up.",
+    "c": "CoNS in multiple separately drawn sets with a prosthetic device suggests true infection, not contamination.",
+    "a": "Likely true bacteremia."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-010": {
+   "options": {
+    "a": "Inhibit Gram-negatives and differentiate mannitol fermentation among staphylococci",
+    "b": "Inhibit Gram-positives and differentiate H2S production among Gram-negatives",
+    "c": "Inhibit Gram-positives and differentiate lactose fermentation among Gram-negatives",
+    "d": "Support all bacteria and differentiate hemolysis patterns on sheep blood"
+   },
+   "distractorExplanations": {
+    "a": "That describes mannitol salt agar, which selects for staphylococci with high salt, not MacConkey.",
+    "b": "H2S differentiation is a feature of HE or XLD agar; MacConkey differentiates by lactose fermentation.",
+    "d": "Blood agar is an enriched nonselective medium for hemolysis; MacConkey is selective for Gram-negatives."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-011": {
+   "options": {
+    "a": "Specific antibodies to separated protein antigens",
+    "b": "Specific DNA sequences transferred to a membrane",
+    "c": "Specific RNA transcripts separated by gel electrophoresis",
+    "d": "Viral RNA load by amplification and real-time detection"
+   },
+   "distractorExplanations": {
+    "b": "DNA transferred to a membrane and probed is a Southern blot; the Western blot detects protein-antibody binding.",
+    "c": "RNA detection on a membrane is the Northern blot; immunoblots probe separated proteins with patient antibody.",
+    "d": "Quantitative viral load uses NAAT such as RT-PCR, not antibody reactivity to separated proteins."
+   },
+   "explanation": "Immunoblots detect Ab reactivity to specific proteins after separation. Older HIV testing algorithms used it as the confirmatory step."
+  },
+  "ascp-mls-readiness-check-micro-immuno-013": {
+   "options": {
+    "a": "Anaerobic stool culture alone, without any toxin confirmation step",
+    "b": "Testing of formed stool to screen for colonization",
+    "c": "Stool ova and parasite exam with modified acid-fast stain",
+    "d": "Stool testing for toxins and/or toxin gene NAAT per algorithm"
+   },
+   "distractorExplanations": {
+    "a": "Culture also grows nontoxigenic strains and is slow; diagnosis requires toxin or toxin-gene detection.",
+    "b": "Formed stool is rejected; testing is limited to unformed stool to avoid detecting mere colonization.",
+    "c": "O&P and acid-fast stains target parasites such as Cryptosporidium, not toxigenic C. difficile."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-014": {
+   "options": {
+    "a": "Testing patient isolates in duplicate on the same day",
+    "b": "Testing ATCC strains once at installation of a new disk lot",
+    "c": "Testing appropriate ATCC control strains with acceptable ranges",
+    "d": "Testing ATCC control strains and reading zones against patient breakpoints"
+   },
+   "distractorExplanations": {
+    "a": "Duplicate patient testing checks reproducibility but cannot verify accuracy; QC uses reference strains with known ranges.",
+    "b": "QC is run at a defined frequency (daily, or weekly under a validated plan), not just when a new lot is installed.",
+    "d": "QC zones are compared with the CLSI QC range for the reference strain, not with clinical S/I/R breakpoints."
+   }
+  },
+  "ascp-mls-readiness-check-micro-immuno-015": {
+   "options": {
+    "a": "Cryptococcus neoformans/gattii in CSF/serum contexts",
+    "b": "Histoplasma capsulatum in bone marrow or urine",
+    "c": "Candida albicans in CSF with germ tube testing",
+    "d": "Pneumocystis jirovecii in bronchoalveolar lavage"
+   },
+   "distractorExplanations": {
+    "b": "Histoplasma is detected by urine antigen and culture; India ink highlights the cryptococcal capsule.",
+    "c": "Germ tube testing identifies Candida albicans; India ink and CrAg target encapsulated Cryptococcus.",
+    "d": "Pneumocystis is shown with GMS, calcofluor, or DFA staining, not India ink or cryptococcal antigen."
+   }
+  }
+ }
+}

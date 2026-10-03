@@ -1,0 +1,56 @@
+{
+ "nbrc-tmc-readiness-check": {
+  "nbrc-tmc-readiness-check-patient-data-012": {
+   "options": {
+    "a": "Gradual hypoventilation from oversedation, a lower set rate, or progressive respiratory muscle fatigue",
+    "b": "Hyperventilation from pain, anxiety, or an increased set rate on the ventilator",
+    "c": "Rebreathing from an exhausted CO2 absorber or a faulty expiratory valve in the circuit",
+    "d": "Circuit disconnection, esophageal intubation, or catastrophic drop in pulmonary blood flow"
+   },
+   "distractorExplanations": {
+    "a": "Hypoventilation raises ETCO2 gradually; a sudden drop to near zero means exhaled CO2 is no longer reaching the sensor.",
+    "b": "Hyperventilation lowers ETCO2 gradually over minutes; it does not drop it abruptly to near zero.",
+    "c": "Rebreathing raises the inspired CO2 baseline above zero; it does not cause a sudden fall to near zero."
+   }
+  },
+  "nbrc-tmc-readiness-check-equipment-010": {
+   "options": {
+    "a": "Kept in use with the flow raised to make up for the lower purity",
+    "b": "Removed from service and repaired/replaced; verify with analyzer",
+    "c": "Kept in use if the purity alarm resets after a restart",
+    "d": "Kept in use if purity stays above 70 percent at the prescribed flow"
+   },
+   "distractorExplanations": {
+    "d": "Concentrators should deliver roughly 87-95 percent oxygen at the set flow; 70 percent is far below specification.",
+    "a": "Raising concentrator flow lowers oxygen purity further; the unit must come out of service.",
+    "c": "A reset alarm does not prove purity; output must be verified with an analyzer and the unit repaired."
+   }
+  },
+  "nbrc-tmc-readiness-check-therapeutics-014": {
+   "options": {
+    "a": "Target SpO2 of 94–98 percent, as for most other adult patients",
+    "b": "Target appropriate SpO2 goals and monitor ventilation/ABG",
+    "c": "Avoid oxygen until an ABG confirms the PaCO2 level",
+    "d": "Use a nonrebreather to keep SpO2 at 100 percent"
+   },
+   "distractorExplanations": {
+    "a": "The 94-98 percent target applies to most adults; patients at risk of hypercapnic failure usually get a lower 88-92 percent target.",
+    "c": "Oxygen should not be withheld from a hypoxemic patient while waiting for an ABG.",
+    "d": "Hyperoxia in these patients can worsen hypercapnia; oxygen is titrated to a target range."
+   }
+  },
+  "nbrc-tmc-readiness-check-patient-data-011": {
+   "options": {
+    "a": "Left ventricular failure with acute cardiogenic pulmonary edema",
+    "b": "Tension pneumothorax compressing the great veins",
+    "c": "Cor pulmonale / pulmonary hypertension complications",
+    "d": "Superior vena cava syndrome from a lung tumor"
+   },
+   "distractorExplanations": {
+    "a": "LV failure presents with crackles and orthopnea; JVD, pedal edema, and a loud P2 in COPD point to right heart strain.",
+    "b": "Tension pneumothorax is acute with absent breath sounds and tracheal shift, not chronic edema with a loud P2.",
+    "d": "SVC syndrome causes facial and arm swelling with upper-body vein distension, not pedal edema with a loud P2."
+   }
+  }
+ }
+}

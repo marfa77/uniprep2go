@@ -1,0 +1,423 @@
+{
+ "amt-rma-readiness-check": {
+  "amt-rma-readiness-check-clinical-001": {
+   "options": {
+    "a": "Instruct overnight fasting per protocol",
+    "b": "Tell the patient to stop all medications that day",
+    "c": "Allow coffee with cream before the morning draw",
+    "d": "Ask the patient to fast for 4 hours, with water"
+   },
+   "distractorExplanations": {
+    "b": "Patients usually keep taking prescribed medications unless the provider says otherwise; fasting means no food or caloric drinks.",
+    "c": "Cream and sugar add fat and calories that break the fast; only water is allowed before a fasting lipid draw.",
+    "d": "A fasting lipid panel typically needs 9 to 12 hours without food; 4 hours is too short to count as fasting."
+   },
+   "explanation": "Fasting labs require clear preparation instructions to avoid invalid results and repeat visits; confirm the patient understands the instructions."
+  },
+  "amt-rma-readiness-check-clinical-002": {
+   "options": {
+    "a": "Review documentation and payer policy, then appeal",
+    "b": "Resubmit the same claim unchanged and wait for payment",
+    "c": "Change the diagnosis code to one that pays",
+    "d": "Bill the patient for the full amount at once"
+   },
+   "distractorExplanations": {
+    "b": "Resubmitting an unchanged claim usually triggers the same denial; the medical-necessity issue must be reviewed first.",
+    "c": "Changing codes without documentation support is fraud.",
+    "d": "Billing the patient before reviewing the denial and appeal rights is premature and may be prohibited."
+   }
+  },
+  "amt-rma-readiness-check-clinical-004": {
+   "options": {
+    "a": "Guarantee that Medicare pays for the service",
+    "b": "Replace informed consent for a procedure",
+    "c": "Warn that Medicare may not pay for a service",
+    "d": "Enroll the patient in a Medicare plan"
+   },
+   "distractorExplanations": {
+    "a": "An ABN warns of possible denial; it guarantees nothing.",
+    "b": "Informed consent is separate and still required.",
+    "d": "Plan enrollment is handled through Medicare, not an ABN."
+   }
+  },
+  "amt-rma-readiness-check-clinical-006": {
+   "options": {
+    "a": "Active dates, plan type, and referral needs",
+    "b": "The patient's employer and job title",
+    "c": "The patient's preferred pharmacy and appointment times",
+    "d": "The patient's past medical history"
+   },
+   "distractorExplanations": {
+    "c": "Pharmacy and scheduling preferences are registration details; they do not confirm active coverage or referral rules.",
+    "b": "Employer details may be on file but do not confirm coverage.",
+    "d": "Medical history is clinical intake, not insurance verification."
+   }
+  },
+  "amt-rma-readiness-check-clinical-007": {
+   "options": {
+    "a": "Capture diagnoses and services for billing",
+    "b": "Serve as a prescription pad for controlled substances",
+    "c": "Record the patient's consent to treatment",
+    "d": "Itemize the remittance advice sent by the payer"
+   },
+   "distractorExplanations": {
+    "c": "Consent to treatment is a separate signed form; the superbill lists the codes and charges for the visit.",
+    "d": "The remittance advice comes from the payer after adjudication; the superbill is created at the visit, before the claim.",
+    "b": "It is not a controlled-substance prescription form."
+   },
+   "explanation": "Superbills list common diagnoses/procedures to support charge capture for the encounter; they capture billing data from the visit."
+  },
+  "amt-rma-readiness-check-clinical-010": {
+   "options": {
+    "a": "Strike once; initial, date, and correct it",
+    "b": "Cover the error with correction fluid",
+    "c": "Remove the page and rewrite the entire entry",
+    "d": "Write over the error until unreadable"
+   },
+   "distractorExplanations": {
+    "c": "Removing or replacing a page destroys part of the legal record and looks like tampering, even if rewritten neatly.",
+    "b": "Correction fluid hides the original entry, which is not allowed.",
+    "d": "Obliterating the original entry makes the record look altered."
+   }
+  },
+  "amt-rma-readiness-check-clinical-011": {
+   "options": {
+    "a": "A patient pays cash for an office visit",
+    "b": "A patient requests a copy of their records",
+    "c": "A patient schedules an annual Medicare wellness visit",
+    "d": "A payer requires approval before covering a service"
+   },
+   "distractorExplanations": {
+    "c": "Medicare's annual wellness visit is a covered preventive service that generally needs no prior authorization.",
+    "a": "Cash payment involves no payer, so no authorization is needed.",
+    "b": "Records requests fall under HIPAA access rules, not payer approval."
+   }
+  },
+  "amt-rma-readiness-check-clinical-012": {
+   "options": {
+    "a": "PPO plans require a PCP referral for every specialist visit",
+    "b": "A referral means the payer has approved payment in full",
+    "c": "Many HMO plans require referrals before specialty care",
+    "d": "Original Medicare requires a referral for each specialist"
+   },
+   "distractorExplanations": {
+    "a": "PPOs typically let members see in-network specialists without a referral; that confuses PPO rules with HMO rules.",
+    "b": "A referral directs care but is not a payment guarantee or prior authorization; the claim can still be denied.",
+    "d": "Original Medicare has no referral requirement for specialists; many Medicare Advantage HMOs do require one."
+   },
+   "explanation": "Managed care plans often require referrals or authorizations for specialty services; HMO plans are the classic example."
+  },
+  "amt-rma-readiness-check-clinical-014": {
+   "options": {
+    "a": "100°C (212°F) at normal pressure for 5 minutes",
+    "b": "70°C (158°F) with alcohol vapor for 10 minutes",
+    "c": "121°C (250°F) at about 15 psi for 15–30 minutes",
+    "d": "160°C (320°F) in dry heat for about 15 minutes"
+   },
+   "distractorExplanations": {
+    "d": "Dry-heat sterilization at 160°C needs about 2 hours; 15 minutes confuses dry heat with steam cycle times.",
+    "a": "Boiling at normal pressure does not reliably kill bacterial spores.",
+    "b": "Alcohol is a disinfectant, not a sterilizing method for instruments."
+   }
+  },
+  "amt-rma-readiness-check-admin-002": {
+   "options": {
+    "a": "Toward the midline of the body",
+    "b": "Closer to the trunk or point of origin",
+    "c": "Toward the front of the body",
+    "d": "Farther from the trunk or point of origin"
+   },
+   "distractorExplanations": {
+    "a": "Moving toward the midline of the body is the definition of medial, not proximal.",
+    "c": "Toward the front of the body is anterior (ventral); proximal refers to nearness to the trunk or origin.",
+    "d": "That defines distal."
+   }
+  },
+  "amt-rma-readiness-check-admin-004": {
+   "options": {
+    "a": "Hypokalemia",
+    "b": "Hypocalcemia",
+    "c": "Hyponatremia",
+    "d": "Hyperkalemia"
+   },
+   "distractorExplanations": {
+    "a": "Hypokalemia more often causes U waves/flattened T waves.",
+    "b": "Hypocalcemia affects QT interval differently.",
+    "c": "Sodium disorders have different presentations."
+   }
+  },
+  "amt-rma-readiness-check-admin-007": {
+   "options": {
+    "a": "Intramuscularly into the mid-outer thigh",
+    "b": "Subcutaneously into the back of the upper arm",
+    "c": "Intravenously by the patient at home",
+    "d": "Sublingually as a tablet dissolved under the tongue"
+   },
+   "distractorExplanations": {
+    "b": "Auto-injectors are designed for IM delivery into the thigh; subcutaneous arm injection absorbs more slowly.",
+    "d": "No sublingual epinephrine tablet is the standard anaphylaxis rescue; auto-injectors deliver it intramuscularly.",
+    "c": "Patients do not self-administer IV epinephrine at home."
+   }
+  },
+  "amt-rma-readiness-check-admin-010": {
+   "options": {
+    "a": "Procedures and services performed",
+    "b": "Diagnoses and reasons for encounter",
+    "c": "Drugs, supplies, and equipment",
+    "d": "The place where the service was performed"
+   },
+   "distractorExplanations": {
+    "d": "Where the service took place is reported with place-of-service codes, not ICD-10-CM diagnosis codes.",
+    "a": "Procedures and services are reported with CPT.",
+    "c": "Drugs, supplies, and equipment are HCPCS Level II."
+   }
+  },
+  "amt-rma-readiness-check-admin-011": {
+   "options": {
+    "a": "Diagnoses and reasons for the encounter",
+    "b": "Drugs, supplies, and durable equipment",
+    "c": "Procedures and services performed",
+    "d": "The place-of-service location"
+   },
+   "distractorExplanations": {
+    "a": "Diagnoses and encounter reasons are reported with ICD-10-CM codes, not CPT codes.",
+    "b": "Drugs, supplies and durable medical equipment are reported with HCPCS Level II codes, not CPT.",
+    "d": "The setting of care is reported with two-digit place-of-service codes on the claim, not with CPT."
+   }
+  },
+  "amt-rma-readiness-check-admin-012": {
+   "options": {
+    "a": "Before touching a patient for a routine exam",
+    "b": "After removing gloves when hands look clean",
+    "c": "Before putting on sterile gloves for a dressing change",
+    "d": "Hands visibly soiled or after C. difficile care"
+   },
+   "distractorExplanations": {
+    "c": "Alcohol rub is acceptable before donning sterile gloves for a clinical procedure when hands are not soiled.",
+    "a": "Alcohol rub is appropriate before routine patient contact when hands are not soiled.",
+    "b": "Alcohol rub is acceptable after glove removal if hands are not visibly soiled."
+   }
+  },
+  "amt-rma-readiness-check-admin-013": {
+   "options": {
+    "a": "Measure the total urine volume over 24 hours",
+    "b": "Let the patient avoid cleansing before collection",
+    "c": "Collect the most concentrated first-morning urine",
+    "d": "Minimize contamination from skin and genital flora"
+   },
+   "distractorExplanations": {
+    "a": "Total volume requires a timed 24-hour collection.",
+    "b": "Cleansing is a required step of a clean catch.",
+    "c": "First-morning specimens are about concentration, not contamination control."
+   }
+  },
+  "amt-rma-readiness-check-admin-014": {
+   "options": {
+    "a": "The center tip of the index finger, along the prints",
+    "b": "The side of the thumb near the nail",
+    "c": "The medial or lateral plantar heel surface",
+    "d": "Palmar middle or ring finger, slightly off-center"
+   },
+   "distractorExplanations": {
+    "a": "The index fingertip is more sensitive and callused, the tip is near bone, and cutting along the prints lets blood run.",
+    "b": "The thumb has a pulse and thicker tissue and is not recommended.",
+    "c": "Heel sticks are used for infants, not adults."
+   }
+  },
+  "amt-rma-readiness-check-anatomy-009": {
+   "options": {
+    "a": "Gastric mucosa",
+    "b": "Esophagus",
+    "c": "Large intestine",
+    "d": "Small intestine"
+   },
+   "distractorExplanations": {
+    "a": "The stomach lining mixes and starts digesting food but absorbs little besides some water, alcohol and certain drugs.",
+    "b": "The esophagus only transports food to the stomach.",
+    "c": "The large intestine absorbs mainly water and electrolytes."
+   }
+  },
+  "amt-rma-readiness-check-anatomy-011": {
+   "options": {
+    "a": "Lavender-top (EDTA) tube",
+    "b": "Gray-top (sodium fluoride/potassium oxalate) tube",
+    "c": "Blood culture bottles or sterile tubes",
+    "d": "Light-blue-top (sodium citrate) tube"
+   },
+   "distractorExplanations": {
+    "b": "Gray-top fluoride/oxalate tubes are drawn last in the CLSI order, after lavender EDTA tubes.",
+    "d": "Citrate tubes come first only when no blood cultures are ordered; sterile culture bottles precede them.",
+    "a": "EDTA comes near the end; drawn early, its carryover can falsely raise potassium and lower calcium in later tubes."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-001": {
+   "options": {
+    "a": "Documenting vital signs accurately",
+    "b": "Performing a procedure after valid informed consent",
+    "c": "Threatening to restrain a patient who refuses care",
+    "d": "Touching or treating a patient without consent"
+   },
+   "distractorExplanations": {
+    "c": "A threat that creates fear of contact is assault; battery requires actual unauthorized touching.",
+    "a": "Accurate documentation is appropriate.",
+    "b": "Consented care is not battery."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-002": {
+   "options": {
+    "a": "Only patients with known infections pose a risk",
+    "b": "Any patient's blood or body fluids may be infectious",
+    "c": "Wearing gloves replaces the need for hand hygiene afterward",
+    "d": "Patients without symptoms need no special precautions"
+   },
+   "distractorExplanations": {
+    "d": "People without symptoms can still carry bloodborne pathogens, so precautions apply to every patient.",
+    "c": "Gloves can have defects and hands get contaminated during removal, so hand hygiene is still required afterward.",
+    "a": "Standard Precautions apply to every patient, not only known infections."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-003": {
+   "options": {
+    "a": "Reasonable emergency aid given in good faith",
+    "b": "Care given as part of a paid clinic shift",
+    "c": "Grossly negligent care given at an accident",
+    "d": "Emergency care given in exchange for payment"
+   },
+   "distractorExplanations": {
+    "b": "Care within a paid job carries a duty to treat and is outside Good Samaritan protection.",
+    "c": "Gross negligence and willful misconduct are generally not protected.",
+    "d": "Expecting payment usually removes Good Samaritan protection."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-004": {
+   "options": {
+    "a": "A parent or guardian usually consents, with exceptions",
+    "b": "Minors age 16 and older may consent to any care",
+    "c": "School nurses can consent for any student's routine care",
+    "d": "Any minor may consent alone to any surgery"
+   },
+   "distractorExplanations": {
+    "b": "There is no general age-16 rule; minors consent alone only under specific state exceptions like emancipation.",
+    "c": "School staff, including nurses, cannot give general medical consent in place of a parent or guardian.",
+    "d": "Minors consent alone only under specific state exceptions, such as emancipation."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-005": {
+   "options": {
+    "a": "Written after the manager decides who was at fault",
+    "b": "Copied into the patient's medical record",
+    "c": "Factual, prompt, and filed per facility policy",
+    "d": "Completed only if the patient was harmed"
+   },
+   "distractorExplanations": {
+    "a": "Incident reports are written promptly and objectively; assigning fault is not part of the report or a precondition.",
+    "b": "Incident reports are kept separate from the chart; the record notes only the facts of care.",
+    "d": "Near misses and events without harm should also be reported."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-006": {
+   "options": {
+    "a": "Withholding risks so the patient agrees to treatment",
+    "b": "Respecting a capacitated patient's informed decisions",
+    "c": "Doing what most benefits the patient, as the provider sees it",
+    "d": "Forcing treatment despite informed refusal when the patient has capacity"
+   },
+   "distractorExplanations": {
+    "a": "Withholding risks to gain agreement is paternalism and defeats informed consent, the opposite of autonomy.",
+    "c": "Acting on the provider's view of the patient's good describes beneficence (or paternalism), not autonomy.",
+    "d": "Forcing care against capacitated refusal violates autonomy."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-008": {
+   "options": {
+    "a": "Hear risks, benefits, and alternatives, then agree",
+    "b": "Sign the form before any explanation is given",
+    "c": "Agree after the provider decides for them",
+    "d": "Be told the benefits and the provider's recommendation"
+   },
+   "distractorExplanations": {
+    "d": "Benefits and a recommendation are not enough; risks and alternatives must also be disclosed before consent.",
+    "b": "Signing without explanation is not informed consent.",
+    "c": "Consent must be the patient's voluntary decision."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-010": {
+   "options": {
+    "a": "Provide training, PPE, and an exposure control plan",
+    "b": "Test exposed employees for HIV and hepatitis every year",
+    "c": "Require staff to buy their own gloves and gowns",
+    "d": "Offer hepatitis C vaccine to all employees"
+   },
+   "distractorExplanations": {
+    "b": "The standard requires post-exposure evaluation and follow-up, not routine yearly HIV or hepatitis testing of staff.",
+    "c": "Employers must provide PPE at no cost to employees.",
+    "d": "There is no hepatitis C vaccine; employers must offer the hepatitis B vaccine."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-011": {
+   "options": {
+    "a": "Independently diagnose disease and prescribe medication",
+    "b": "Give injections delegated by the supervising provider",
+    "c": "Perform CLIA-waived tests if trained and authorized",
+    "d": "Take vital signs under supervision/protocol"
+   },
+   "distractorExplanations": {
+    "b": "Giving injections under provider delegation is within trained MA scope in most states, so it is permitted.",
+    "c": "CLIA-waived testing is often within trained MA scope.",
+    "d": "Vitals are common MA duties."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-012": {
+   "options": {
+    "a": "A successful treatment outcome",
+    "b": "Following evidence-based protocols perfectly",
+    "c": "Failure to meet the standard of care causing harm",
+    "d": "Intentional touching of a patient without consent"
+   },
+   "distractorExplanations": {
+    "d": "Intentional unauthorized touching is battery, an intentional tort; negligence is an unintentional breach of duty.",
+    "a": "Good outcomes are not negligence.",
+    "b": "Meeting standards helps prevent negligence claims."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-013": {
+   "options": {
+    "a": "Names a person to make health decisions for the patient",
+    "b": "Gives someone control over bank accounts",
+    "c": "States treatment wishes if unable to communicate",
+    "d": "Records the patient's organ donor status only"
+   },
+   "distractorExplanations": {
+    "a": "Naming a decision-maker is done with a health care proxy or durable power of attorney for health care, not a living will.",
+    "b": "Control over finances is a financial power of attorney.",
+    "d": "Organ donation uses a separate registry or document."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-014": {
+   "options": {
+    "a": "Posting a patient's diagnosis on social media",
+    "b": "Discussing a case with the care team for treatment",
+    "c": "Verifying identity before releasing results",
+    "d": "Faxing records to a specialist for treatment"
+   },
+   "distractorExplanations": {
+    "d": "HIPAA permits sharing PHI with another provider for treatment, so sending records to a specialist is allowed.",
+    "b": "Treatment-related sharing with the care team is permitted.",
+    "c": "Identity verification protects against wrongful disclosure."
+   }
+  },
+  "amt-rma-readiness-check-law-ethics-015": {
+   "options": {
+    "a": "So complex only a pathologist may run it",
+    "b": "Simple and low-risk if directions are followed",
+    "c": "Not allowed in physician office labs",
+    "d": "Restricted to CLIA-certified reference laboratories"
+   },
+   "distractorExplanations": {
+    "d": "Waived tests need only a Certificate of Waiver and are routinely run in physician office labs, not reference labs.",
+    "a": "High-complexity tests need qualified lab personnel; waived tests are the simplest category.",
+    "c": "Waived tests are commonly done in physician offices."
+   }
+  }
+ }
+}

@@ -7,15 +7,15 @@
     "options": [
       {
         "id": "a",
-        "text": "60–80 psi"
+        "text": "60–70 psi"
       },
       {
         "id": "b",
-        "text": "200–220 psi"
+        "text": "80–90 psi"
       },
       {
         "id": "c",
-        "text": "30–40 psi"
+        "text": "100 to 110 psi"
       },
       {
         "id": "d",
@@ -25,9 +25,9 @@
     "correctOptionId": "d",
     "explanation": "125–135 psi. The other choices are incorrect statements about the concept.",
     "distractorExplanations": {
-      "a": "Too low for service systems.",
-      "b": "Far above typical cut-out.",
-      "c": "Cranking pressure range, not cut-out."
+      "a": "That is roughly where the low-air warning must activate, far below the governor cut-out point.",
+      "b": "This is below even the cut-in point; the compressor would never stop pumping at a normal level.",
+      "c": "Around 100 to 110 psi is where the governor cuts the compressor back in; cut-out happens higher, at about 125 to 135 psi."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "20 psi"
+        "text": "60–65 psi"
       },
       {
         "id": "b",
-        "text": "100–105 psi (or manufacturer spec near 100)"
+        "text": "100–105 psi"
       },
       {
         "id": "c",
-        "text": "175 psi"
+        "text": "110 to 115 psi"
       },
       {
         "id": "d",
-        "text": "250 psi"
+        "text": "125–135 psi"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Cut-in is typically ~100 psi so the compressor resumes charging.",
+    "explanation": "Cut-in is typically ~100 psi so the compressor resumes charging. Use the manufacturer specification if it differs.",
     "distractorExplanations": {
-      "a": "Far too low.",
-      "c": "Near/above cut-out.",
-      "d": "Unsafe overpressure."
+      "a": "Around 60 psi is the low-air warning point; cut-in happens well above it, near 100 psi.",
+      "c": "110 to 115 psi overstates the cut-in point; the CDL manual puts compressor cut-in at about 100 psi, well below cut-out.",
+      "d": "That is the governor cut-out range where the compressor stops pumping, not where it resumes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -77,23 +77,23 @@
       },
       {
         "id": "b",
-        "text": "Stores only spring-brake air"
+        "text": "Stores air for the secondary circuit that feeds the front axle"
       },
       {
         "id": "c",
-        "text": "Powers ABS modulators"
+        "text": "Supplies air directly to the trailer through the red gladhand"
       },
       {
         "id": "d",
-        "text": "Is optional on Class A"
+        "text": "Collects air last, after the primary and secondary tanks fill"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Wet tank is first reservoir after compressor/dryer path.",
     "distractorExplanations": {
-      "b": "Spring brakes use separate circuits.",
-      "c": "ABS uses service air.",
-      "d": "Required on air-brake CDVs."
+      "b": "That is the secondary (dry) reservoir; the supply tank receives air first and collects moisture and oil.",
+      "c": "Trailer supply air passes through the tractor protection valve from the service reservoirs, not straight from the wet tank.",
+      "d": "Reverses the order: the supply (wet) tank is the first reservoir after the compressor and dryer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -106,11 +106,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Two compressors"
+        "text": "Two compressors, one for the tractor and one for the trailer"
       },
       {
         "id": "b",
-        "text": "No parking brakes needed"
+        "text": "Separate service and parking brake systems on the same axle"
       },
       {
         "id": "c",
@@ -118,15 +118,15 @@
       },
       {
         "id": "d",
-        "text": "Air brakes plus hydraulic"
+        "text": "Air-over-hydraulic brakes, with air boosting a hydraulic system"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Dual systems provide redundancy if one circuit fails.",
     "distractorExplanations": {
-      "a": "Usually one compressor.",
-      "b": "Parking/emergency still required.",
-      "d": "Pure air systems on many CDVs."
+      "a": "A dual system has one compressor feeding two separate service circuits; the trailer is supplied by the tractor.",
+      "b": "Every air-brake vehicle has service and spring (parking) brakes; dual refers to two service circuits.",
+      "d": "Air-over-hydraulic is a different brake type; a dual air system has primary and secondary air circuits."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -139,11 +139,11 @@
     "options": [
       {
         "id": "a",
-        "text": "An electric motor only at all times"
+        "text": "A separate electric motor"
       },
       {
         "id": "b",
-        "text": "The ABS ECU"
+        "text": "The transmission output shaft"
       },
       {
         "id": "c",
@@ -151,15 +151,15 @@
       },
       {
         "id": "d",
-        "text": "The trailer"
+        "text": "The power steering pump shaft"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Compressor is engine-driven on most tractors.",
     "distractorExplanations": {
-      "a": "Not the primary drive.",
-      "b": "ECU controls ABS, not compressor drive.",
-      "d": "Trailer has tanks/valves, not the tractor compressor."
+      "a": "Truck air compressors are driven by the engine through gears or a belt, not a separate electric motor.",
+      "b": "The compressor turns whenever the engine runs, even when parked, so it is not driven off the driveline.",
+      "d": "The power steering pump is a separate accessory; the compressor is driven directly by the engine."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -172,11 +172,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase governor cut-out to 200 psi"
+        "text": "Cool compressed air so the governor can cut out sooner"
       },
       {
         "id": "b",
-        "text": "Replace the low-air warning"
+        "text": "Store reserve air for the parking brake if tanks leak down"
       },
       {
         "id": "c",
@@ -184,15 +184,15 @@
       },
       {
         "id": "d",
-        "text": "Disable spring brakes"
+        "text": "Release built-up pressure if the governor fails to cut out"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Dryers protect tanks/valves from water/oil.",
     "distractorExplanations": {
-      "a": "Does not raise cut-out that high.",
-      "b": "Warning is separate.",
-      "d": "Does not disable springs."
+      "a": "Cut-out timing is set by the governor; the dryer's job is removing moisture and oil from the air.",
+      "b": "The dryer stores no reserve air; spring brakes apply mechanically when air pressure is lost.",
+      "d": "That is the safety relief valve's job (opens around 150 psi), not the air dryer's."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "120 psi"
+        "text": "20 psi"
       },
       {
         "id": "b",
-        "text": "10 psi"
+        "text": "30 psi"
       },
       {
         "id": "c",
-        "text": "200 psi"
+        "text": "40–45 psi"
       },
       {
         "id": "d",
-        "text": "60 psi (or manufacturer ≤55–60 range)"
+        "text": "60 psi"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "FMVSS/CDL texts: warn by ~60 psi.",
+    "explanation": "FMVSS/CDL texts: warn by ~60 psi. Some manufacturers set it slightly lower (about 55–60 psi).",
     "distractorExplanations": {
-      "a": "Normal operating pressure.",
-      "b": "Too late.",
-      "c": "Cut-out region."
+      "a": "About 20 psi is near the bottom of the spring-brake application range; the warning comes much earlier.",
+      "b": "At 30 psi the spring brakes may already be applying; the warning must sound before pressure falls below 60.",
+      "c": "40 to 45 psi is where spring brakes may begin to apply; the low-air warning must come on earlier, before pressure drops below 60 psi."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -271,7 +271,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Electric signals into ABS"
+        "text": "Spring force into air pressure for the parking brakes"
       },
       {
         "id": "b",
@@ -279,19 +279,19 @@
       },
       {
         "id": "c",
-        "text": "Fuel pressure into braking"
+        "text": "Pedal force into air pressure for the brake lines"
       },
       {
         "id": "d",
-        "text": "Coolant flow into retardation"
+        "text": "Mechanical force into air pressure for the reservoirs"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Diaphragm/pushrod applies foundation brakes.",
     "distractorExplanations": {
-      "a": "ABS modulates; chambers still do force.",
-      "c": "Unrelated.",
-      "d": "Unrelated."
+      "a": "Reversed: spring brakes apply mechanically when air is released; chambers turn air into force.",
+      "c": "That is the foot (treadle) valve, which meters reservoir air when the pedal is pressed.",
+      "d": "That describes the compressor; brake chambers turn air pressure into pushrod force."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,15 +304,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Higher fuel octane"
+        "text": "Faster build-up time because the governor stays cut in"
       },
       {
         "id": "b",
-        "text": "Faster cut-out"
+        "text": "Higher tank pressure as the safety valve compensates"
       },
       {
         "id": "c",
-        "text": "Permanent ABS disable with no warning"
+        "text": "Spring brakes releasing once pressure drops below 60 psi"
       },
       {
         "id": "d",
@@ -322,9 +322,9 @@
     "correctOptionId": "d",
     "explanation": "Leaks waste air; severe loss applies parking springs.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "Leaks slow build-up.",
-      "c": "ABS faults warn; not silent permanent."
+      "a": "A leak wastes compressed air, so build-up takes longer, not shorter.",
+      "b": "The safety valve only vents overpressure; a leak lowers pressure and lengthens build-up time.",
+      "c": "Spring brakes apply, not release, as pressure falls (typically about 20–45 psi)."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminate steering entirely"
+        "text": "Increase front braking force on slippery surfaces to aid steering"
       },
       {
         "id": "b",
-        "text": "Can reduce front application on slippery surfaces (design-dependent)"
+        "text": "Can reduce front application on slippery surfaces"
       },
       {
         "id": "c",
-        "text": "Remove the need for ABS"
+        "text": "Limit trailer brake pressure so the trailer does not push the tractor"
       },
       {
         "id": "d",
-        "text": "Increase cut-out to 180 psi"
+        "text": "Hold front brakes released until rear brakes have fully applied"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Some systems proportion front braking; modern ABS changes practice.",
+    "explanation": "Some systems proportion front braking; modern ABS changes practice. The exact behavior is design-dependent, and modern ABS has changed practice.",
     "distractorExplanations": {
-      "a": "Does not eliminate steering.",
-      "c": "ABS is separate.",
-      "d": "Does not set governor."
+      "a": "Opposite effect: the limiting valve cuts front brake pressure on slick roads to reduce front lockup.",
+      "c": "These valves act on the tractor's front (steer) axle, not on trailer brake pressure.",
+      "d": "They reduce front application pressure; they do not delay front brakes until the rear applies."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,7 +370,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Cools the compressor"
+        "text": "Applies tractor spring brakes when trailer air pressure drops"
       },
       {
         "id": "b",
@@ -378,19 +378,19 @@
       },
       {
         "id": "c",
-        "text": "Replaces the dryer"
+        "text": "Prevents service and spring brake forces from compounding"
       },
       {
         "id": "d",
-        "text": "Powers only the horn"
+        "text": "Releases the trailer brakes after a breakaway so it can be towed"
       }
     ],
     "correctOptionId": "b",
     "explanation": "TP valve isolates tractor service/supply from open trailer lines.",
     "distractorExplanations": {
-      "a": "Not cooling.",
-      "c": "Dryer is separate.",
-      "d": "Horn is separate."
+      "a": "The TP valve closes to keep tractor air; tractor springs apply only if tractor air itself is lost.",
+      "c": "That is the anti-compounding valve's job, not the tractor protection valve's.",
+      "d": "After a breakaway the trailer emergency brakes apply; the TP valve protects tractor air instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -407,23 +407,23 @@
       },
       {
         "id": "b",
-        "text": "Increases max legal speed"
+        "text": "Shortens stopping distance on every road surface"
       },
       {
         "id": "c",
-        "text": "Removes need for inspections"
+        "text": "Lets the driver keep pumping brakes during a stop"
       },
       {
         "id": "d",
-        "text": "Replaces spring brakes"
+        "text": "Takes over braking if the service brakes fail"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ABS modulates brake pressure to reduce lockup.",
     "distractorExplanations": {
-      "b": "Not a speed device.",
-      "c": "Inspections still required.",
-      "d": "Springs remain."
+      "b": "ABS keeps steering control; it may not shorten stops and can lengthen them on loose gravel or snow.",
+      "c": "With ABS the driver applies steady firm pressure; pumping interferes with ABS modulation.",
+      "d": "ABS only modulates normal service brakes; it adds no braking power if the brakes fail."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Store emergency air"
+        "text": "Store emergency air for applying the spring brakes"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Are only used on hydraulic light trucks"
+        "text": "Meter air from the foot valve to each brake chamber"
       },
       {
         "id": "d",
-        "text": "Measure fuel"
+        "text": "Control air pressure in the tanks between cut-in and cut-out"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Manual/auto slack adjusters set free stroke.",
     "distractorExplanations": {
-      "a": "Tanks store air.",
-      "c": "Air CDVs use slacks.",
-      "d": "Unrelated."
+      "a": "Slack adjusters store no air; spring brakes apply mechanically when chamber air is released.",
+      "c": "Metering air is done by the foot valve and relay valves; slack adjusters link pushrod to S-cam.",
+      "d": "That is the governor's role; slack adjusters are mechanical levers at each wheel end."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -473,23 +473,23 @@
       },
       {
         "id": "b",
-        "text": "No change in pedal feel ever"
+        "text": "Full braking, since the other circuit doubles its pressure"
       },
       {
         "id": "c",
-        "text": "Automatic increase to 200 psi"
+        "text": "Spring brakes applying at once on all axles to stop the truck"
       },
       {
         "id": "d",
-        "text": "That parking brakes cannot apply"
+        "text": "Normal braking until the next scheduled stop or inspection"
       }
     ],
     "correctOptionId": "a",
     "explanation": "One circuit loss halves service capacity—stop carefully.",
     "distractorExplanations": {
-      "b": "Feel often changes.",
-      "c": "No auto overpressure.",
-      "d": "Springs should still work."
+      "b": "The remaining circuit does not compensate; losing one circuit reduces total braking capability.",
+      "c": "Springs apply only when pressure falls low; losing one circuit leaves the other circuit's service brakes.",
+      "d": "Braking is reduced immediately; the CDL manual says stop safely and get the system repaired."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "30 psi/min"
+        "text": "2 psi/min single or 3 psi/min combination"
       },
       {
         "id": "b",
-        "text": "3 psi/min single or 4 psi/min combination (handbook)"
+        "text": "3 psi/min single or 4 psi/min combination"
       },
       {
         "id": "c",
-        "text": "100 psi/min"
+        "text": "4 psi/min single or 5 psi/min combination"
       },
       {
         "id": "d",
-        "text": "No limit"
+        "text": "5 psi/min single or 10 psi/min combination"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Applied leakage limits are slightly higher than released.",
+    "explanation": "Applied leakage limits are slightly higher than released. These are the CDL handbook figures.",
     "distractorExplanations": {
-      "a": "Excessive.",
-      "c": "Failure.",
-      "d": "There is a limit."
+      "a": "Those are the released-brake leakage limits; with brakes applied the limits are 3 and 4 psi/min.",
+      "c": "Too lenient by 1 psi/min; the applied-brake limit is 3 psi/min single and 4 psi/min combination.",
+      "d": "Doubling the allowance for combinations is a common error; with brakes applied the limits are 3 psi/min single and 4 psi/min combination."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -568,15 +568,15 @@
     "options": [
       {
         "id": "a",
-        "text": "20 psi"
+        "text": "Governor cut-in pressure, about 100 psi"
       },
       {
         "id": "b",
-        "text": "Parking-brake only pressure"
+        "text": "The low-air warning point, about 60 psi"
       },
       {
         "id": "c",
-        "text": "0 psi"
+        "text": "Just above spring-brake pop-out, about 45 psi"
       },
       {
         "id": "d",
@@ -586,9 +586,9 @@
     "correctOptionId": "d",
     "explanation": "Tests start at normal charged pressure.",
     "distractorExplanations": {
-      "a": "Too low.",
-      "b": "Not the service charge target.",
-      "c": "Need charged system."
+      "a": "The leakage test starts from a fully charged system at cut-out, not from the cut-in point.",
+      "b": "Starting at 60 psi could trigger the warning and springs; the test begins at full operating pressure.",
+      "c": "That is the spring-brake application range; leakage is checked from full charge at governor cut-out."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "~20–45 psi range depending on system (know your vehicle)"
+        "text": "~20–45 psi range depending on system"
       },
       {
         "id": "b",
-        "text": "150 psi"
+        "text": "~55–60 psi, as the low-air warning sounds"
       },
       {
         "id": "c",
-        "text": "Cut-out"
+        "text": "~90–100 psi, near governor cut-in pressure"
       },
       {
         "id": "d",
-        "text": "Never"
+        "text": "~120–125 psi, near governor cut-out pressure"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "As service air falls, springs take over.",
+    "explanation": "As service air falls, springs take over. Know your own vehicle's figure.",
     "distractorExplanations": {
-      "b": "Still holding off springs.",
-      "c": "Not the trigger.",
-      "d": "They must apply."
+      "b": "The low-air warning comes first at about 60 psi; springs apply later, as pressure falls to about 20–45.",
+      "c": "Around 100 psi is governor cut-in; springs stay released until pressure drops far lower.",
+      "d": "125 psi is normal full charge at cut-out; spring brakes apply only after major air loss."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -667,15 +667,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Higher tire PSI needed"
+        "text": "Brake linings are new and still bedding in; recheck later"
       },
       {
         "id": "b",
-        "text": "More fuel required"
+        "text": "The slack adjuster is set too tight; back it off a turn"
       },
       {
         "id": "c",
-        "text": "ABS is working perfectly"
+        "text": "Air pressure is too high; lower the governor cut-out setting"
       },
       {
         "id": "d",
@@ -685,9 +685,9 @@
     "correctOptionId": "d",
     "explanation": "Overstroke reduces braking force.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "Unrelated.",
-      "c": "ABS unrelated to stroke limit."
+      "a": "Excessive pushrod stroke is an adjustment or mechanical defect, not a lining break-in condition.",
+      "b": "Out-of-adjustment brakes usually overstroke because they are too loose; backing off makes it worse.",
+      "c": "Stroke is measured at a set application pressure; changing governor settings does not fix adjustment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the fuel tank"
+        "text": "Gladhands only, since lines are sealed"
       },
       {
         "id": "b",
-        "text": "Only the radiator"
+        "text": "Tank drain valves and the governor alone"
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "Only the battery"
+        "text": "The dash gauges, buzzer, and warning light"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Air-system leak survey is visual/audible around air components.",
     "distractorExplanations": {
-      "a": "Wrong system.",
-      "b": "Wrong system.",
-      "d": "Wrong system."
+      "a": "Leaks occur anywhere in the system: hoses, fittings, chambers, valves and tanks, not just gladhands.",
+      "b": "Drain valves and the governor are only two of many leak points; hoses, fittings and chambers also leak.",
+      "d": "Gauges and warnings show pressure loss; the leak survey checks physical air components."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "10 minutes always OK"
+        "text": "Within about 10 seconds under test conditions"
       },
       {
         "id": "b",
-        "text": "Instantaneous"
+        "text": "Within about 20 seconds under test conditions"
       },
       {
         "id": "c",
-        "text": "Never measurable"
+        "text": "Within about 30 seconds at fast idle under test conditions"
       },
       {
         "id": "d",
-        "text": "Within about 45 seconds under test conditions (handbook/OEM)"
+        "text": "Within about 45 seconds under test conditions"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Slow build-up suggests compressor/drive/leak issues.",
+    "explanation": "Slow build-up suggests compressor/drive/leak issues. Use the OEM figure if it differs from the handbook.",
     "distractorExplanations": {
-      "a": "Too slow.",
-      "b": "Not realistic.",
-      "c": "It is measured."
+      "a": "The handbook standard for dual systems is 85 to 100 psi within 45 seconds; 10 seconds is not the benchmark.",
+      "b": "20 seconds is not the CDL handbook benchmark; dual systems should build 85 to 100 psi within 45 seconds.",
+      "c": "The test is run at fast idle, but the handbook benchmark for dual systems is 85 to 100 psi within 45 seconds, not 30 seconds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -766,11 +766,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Never"
+        "text": "Weekly, once the air dryer purge stops"
       },
       {
         "id": "b",
-        "text": "Only at annual inspection"
+        "text": "Monthly, during scheduled PM service"
       },
       {
         "id": "c",
@@ -778,15 +778,15 @@
       },
       {
         "id": "d",
-        "text": "Only when ABS lamp is on"
+        "text": "Only when the air dryer is not working"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Moisture control protects valves and chambers.",
     "distractorExplanations": {
-      "a": "Must drain.",
-      "b": "More often than annual.",
-      "d": "ABS lamp not the trigger."
+      "a": "Water and oil collect daily; tanks without automatic drains are drained at least daily or as required.",
+      "b": "Waiting a month lets water and oil build up, causing freezing and valve failure.",
+      "d": "Even with a working dryer, tanks still need daily/as-required draining to remove moisture and oil."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Are normal weekly"
+        "text": "Are working normally, since automatic adjusters need manual tweaks every week"
       },
       {
         "id": "c",
-        "text": "Mean tires are low"
+        "text": "Should be backed off so pushrod stroke stays at its maximum limit"
       },
       {
         "id": "d",
-        "text": "Mean you should remove ABS"
+        "text": "Should be replaced by manual slack adjusters on that axle for good"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Chronic overstroke points to mechanical defects.",
     "distractorExplanations": {
-      "b": "Not normal.",
-      "c": "Unrelated.",
-      "d": "Wrong."
+      "b": "Automatic slack adjusters should not need routine manual adjustment; repeated overstroke signals a defect.",
+      "c": "Running at maximum stroke leaves no reserve and risks out-of-service brakes; the root cause needs repair.",
+      "d": "Automatic slack adjusters have been required on new air-braked vehicles since 1994; repair, do not downgrade."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -832,11 +832,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Drive if ABS works"
+        "text": "Drive to the next terminal if ABS still works"
       },
       {
         "id": "b",
-        "text": "Ignore if under 1 inch crack"
+        "text": "Acceptable if braking feels normal on a test stop"
       },
       {
         "id": "c",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "Cover with tape"
+        "text": "Cool it with water, then recheck before driving"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Cracked friction surfaces are OOS risks.",
     "distractorExplanations": {
-      "a": "Unsafe.",
-      "b": "No.",
-      "d": "No."
+      "a": "ABS cannot compensate for a cracked friction surface; the drum or rotor must be repaired first.",
+      "b": "A normal-feeling stop does not prove a cracked drum is safe; cracks can fail suddenly under heat and load.",
+      "d": "Water on a hot drum can widen cracks; a cracked drum or rotor is a repair item, not a cooling issue."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,11 +865,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal gasoline contamination"
+        "text": "Normal lubrication carried over from the brake chamber diaphragms"
       },
       {
         "id": "b",
-        "text": "Coolant thermostat failure"
+        "text": "Engine coolant leaking into the governor line"
       },
       {
         "id": "c",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "Good lubrication of chambers"
+        "text": "Spring-brake grease migrating back up the lines into the tank"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Oil carryover contaminates the air system.",
     "distractorExplanations": {
-      "a": "Not gasoline.",
-      "b": "Different symptom.",
-      "d": "Oil in tanks is not “good”."
+      "a": "Chamber diaphragms are rubber and produce no oil; oil in the tank comes from the compressor.",
+      "b": "Coolant would show as a sweet-smelling, colored fluid; oil carryover points to the compressor or dryer.",
+      "d": "Grease in brake components cannot travel upstream into reservoirs; oil comes from compressor carryover."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,11 +898,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Painted shut"
+        "text": "Coupled with seals removed for a tighter metal fit"
       },
       {
         "id": "b",
-        "text": "Left hanging while pulling a trailer"
+        "text": "Hooked to dummy couplers while pulling a trailer"
       },
       {
         "id": "c",
@@ -910,15 +910,15 @@
       },
       {
         "id": "d",
-        "text": "Interchanged color randomly without care"
+        "text": "Crossed service-to-supply if the colors are faded"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Poor gladhand seal = leaks and brake issues.",
     "distractorExplanations": {
-      "a": "Must connect.",
-      "b": "Must couple to haul.",
-      "d": "Colors/keys matter."
+      "a": "Gladhands seal through rubber grommets; removing seals causes leaks rather than a tighter fit.",
+      "b": "Dummy couplers are for bobtailing; with a trailer the gladhands must be coupled to the trailer.",
+      "d": "Supply goes to supply and service to service; crossed lines can leave the trailer without brakes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Must stay on"
+        "text": "Lamp should stay off at start-up, since lighting at all means a fault"
       },
       {
         "id": "b",
-        "text": "Is optional décor"
+        "text": "Lamp should flash until the air pressure reaches governor cut-out"
       },
       {
         "id": "c",
-        "text": "Lamp should illuminate then go out if system passes self-check (vehicle-specific)"
+        "text": "Lamp should illuminate then go out if system passes self-check"
       },
       {
         "id": "d",
-        "text": "Replaces low-air warning"
+        "text": "Lamp should stay on whenever the parking brake is set"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Bulb/self-check is part of pre-trip.",
+    "explanation": "Bulb/self-check is part of pre-trip. Timing of the lamp check is vehicle-specific.",
     "distractorExplanations": {
-      "a": "Fault if stays on.",
-      "b": "Required safety.",
-      "d": "Separate warning."
+      "a": "The lamp lighting briefly at start-up is the normal bulb check; staying on is what signals a fault.",
+      "b": "The ABS lamp is not tied to air pressure; it does a bulb check and goes out if ABS passes self-test.",
+      "d": "The ABS lamp reports ABS faults, not parking brake status, which has its own indicator."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,11 +964,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Add engine oil to tanks"
+        "text": "Drain the tanks and keep driving if pressure stays above 60"
       },
       {
         "id": "b",
-        "text": "Disable the low-air buzzer"
+        "text": "Raise the governor cut-out setting to compensate for leaks"
       },
       {
         "id": "c",
@@ -976,15 +976,15 @@
       },
       {
         "id": "d",
-        "text": "Raise tire pressure to 150"
+        "text": "Pump the brake pedal to help the compressor build pressure"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Systematic diagnosis of charge path.",
     "distractorExplanations": {
-      "a": "Wrong.",
-      "b": "Masks symptom.",
-      "d": "Unsafe/unrelated."
+      "a": "Slow build-up signals a charging fault that needs diagnosis; draining tanks does not fix it.",
+      "b": "Raising cut-out does not speed charging and can overpressure the system; find the cause first.",
+      "d": "Pumping the pedal uses air and slows build-up; the compressor charges the tanks on its own."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Pump lightly forever without intent"
+        "text": "Apply lightly and steadily without lockup"
       },
       {
         "id": "b",
-        "text": "Never brake"
+        "text": "Pump rapidly on and off before wheels lock"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Only use parking brake"
+        "text": "Apply fully and hold the pedal down until the vehicle stops"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Controlled cadence braking without ABS.",
     "distractorExplanations": {
-      "a": "Not effective technique.",
-      "b": "Must brake.",
-      "d": "Parking is emergency stop aid."
+      "a": "That is controlled braking; stab braking means full application, release on lockup, reapply.",
+      "b": "Rapid pumping wastes air and is not the stab method; the brakes are applied fully until wheels lock.",
+      "d": "Holding full pressure locks the wheels and removes steering control; stab braking releases when the wheels lock, then reapplies."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Pump rapidly"
+        "text": "Pump the pedal so ABS can reset between pulses"
       },
       {
         "id": "b",
-        "text": "Turn ABS off mid-stop"
+        "text": "Use stab braking: apply, release, and reapply"
       },
       {
         "id": "c",
-        "text": "Release fully and coast"
+        "text": "Apply the trailer hand valve before the pedal"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "ABS works best with constant firm application.",
     "distractorExplanations": {
-      "a": "Pumping can confuse ABS.",
-      "b": "Do not disable.",
-      "c": "Need braking force."
+      "a": "Pumping interrupts ABS; it already pulses the brakes, so the driver holds steady firm pressure.",
+      "b": "Stab braking is for vehicles without ABS; with ABS, apply firm steady pressure.",
+      "c": "The hand valve can cause trailer skids and is not used for stopping; use the service pedal with ABS."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "More friction"
+        "text": "Increased brake grab"
       },
       {
         "id": "b",
-        "text": "Higher cut-out"
+        "text": "Higher air pressure use"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Better ABS"
+        "text": "Tighter brake adjustment"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Hot brakes lose effectiveness.",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "b": "Unrelated.",
-      "d": "Unrelated."
+      "a": "Heat makes linings less effective and drums expand away from them, so braking weakens, not grabs.",
+      "b": "Fade is a friction loss from heat, not a change in air pressure consumption.",
+      "d": "Hot drums expand, effectively loosening adjustment and lengthening stroke, which reduces braking."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1096,7 +1096,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Neutral coast"
+        "text": "Start in a higher gear and downshift as the speed builds on the grade"
       },
       {
         "id": "b",
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "Ride service brakes continuously hard"
+        "text": "Hold light, steady brake pressure the whole way down"
       },
       {
         "id": "d",
-        "text": "Rely only on horn"
+        "text": "Use the trailer hand valve to hold the speed down on the grade"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Control speed before brakes overheat.",
     "distractorExplanations": {
-      "a": "Dangerous.",
-      "c": "Causes fade.",
-      "d": "Not a control method."
+      "a": "Downshifting on a downgrade may be impossible once speed builds; select the low gear before the grade.",
+      "c": "Constant light braking overheats the brakes and causes fade; use the right gear and snub braking.",
+      "d": "Using the hand valve to brake can overheat trailer brakes and cause skids; use gear and service brakes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1129,7 +1129,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Hold light continuous pressure"
+        "text": "Hold light, steady pressure to keep speed constant"
       },
       {
         "id": "b",
@@ -1137,19 +1137,19 @@
       },
       {
         "id": "c",
-        "text": "Never use engine braking"
+        "text": "Pump the brakes rapidly to keep the linings cool"
       },
       {
         "id": "d",
-        "text": "Shift to highest gear"
+        "text": "Apply the trailer brakes only and let the tractor coast"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Intermittent firm applications manage heat.",
     "distractorExplanations": {
-      "a": "Light continuous can heat evenly without recovery.",
-      "c": "Engine braking helps.",
-      "d": "Wrong gear choice."
+      "a": "Continuous light pressure builds heat and causes fade; snub braking applies firmly and then releases.",
+      "c": "Rapid pumping wastes air and does not cool brakes; snub braking uses firm applications with release intervals.",
+      "d": "Braking with only the trailer overheats its brakes and risks a skid; snub braking uses the service brakes."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Hold lockup and steer hard"
+        "text": "Hold the lockup and steer gently toward the shoulder"
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "Accelerate"
+        "text": "Pump the trailer hand valve until the wheels unlock"
       },
       {
         "id": "d",
-        "text": "Shut engine off immediately"
+        "text": "Set the parking brake to stop in the shortest distance"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Locked wheels don’t steer well.",
     "distractorExplanations": {
-      "a": "Cannot steer effectively locked.",
-      "c": "Worsens.",
-      "d": "Not first action."
+      "a": "Locked front wheels cannot steer; release the brakes to regain steering before reapplying.",
+      "c": "The hand valve controls only trailer brakes and can cause a trailer skid; release the pedal instead.",
+      "d": "Spring brakes give no lockup control and can cause a skid; release and reapply the service brakes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Improve permanently"
+        "text": "Fade until the engine retarder dries the drums"
       },
       {
         "id": "b",
-        "text": "Need no check"
+        "text": "Lock up until air pressure is rebuilt to cut-out"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "Disable ABS"
+        "text": "Work normally once the ABS lamp goes out"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Wet brakes need careful drying.",
     "distractorExplanations": {
-      "a": "Not improve.",
-      "b": "Must check.",
-      "d": "ABS should recover."
+      "a": "Wet brakes are weak or uneven because of water, and the retarder does not dry them; light braking does.",
+      "b": "Water affects friction, not air pressure; brakes may pull or grab until dried by light application.",
+      "d": "The ABS lamp does not indicate wet brakes; dry them with light application while driving slowly."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1228,11 +1228,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave in neutral"
+        "text": "Set the trailer hand valve and leave the transmission in gear"
       },
       {
         "id": "b",
-        "text": "Use only trailer hand valve forever as parking"
+        "text": "Apply the service brakes with the hand valve and turn off the engine"
       },
       {
         "id": "c",
@@ -1240,15 +1240,15 @@
       },
       {
         "id": "d",
-        "text": "Rely on transmission alone"
+        "text": "Rely on the transmission in low gear, with chocks used only on ice"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Parking brake + securement.",
     "distractorExplanations": {
-      "a": "Insufficient.",
-      "b": "Hand valve not a parking substitute.",
-      "d": "Not enough."
+      "a": "The hand valve uses service air that can leak away; it is never a parking brake.",
+      "b": "Service brakes held by air will release as pressure leaks; use the spring parking brake and chocks.",
+      "d": "The transmission is not a parking brake; set the parking brake and chock as trained on any grade."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Replacing tractor protection"
+        "text": "Holding the trailer parked during short stops"
       },
       {
         "id": "b",
-        "text": "Fuel shutoff"
+        "text": "Releasing the trailer spring brakes"
       },
       {
         "id": "c",
-        "text": "Applying trailer brakes independently (testing/control—not parking)"
+        "text": "Applying trailer brakes independently"
       },
       {
         "id": "d",
-        "text": "Raising cut-out"
+        "text": "Supplying air to charge the trailer tanks"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Limited trailer control; not a parking brake.",
+    "explanation": "Limited trailer control; not a parking brake. It is for testing and control, not for parking.",
     "distractorExplanations": {
-      "a": "Different valve.",
-      "b": "Unrelated.",
-      "d": "Unrelated."
+      "a": "The hand valve uses service air that can leak off; it must not be used as a parking brake.",
+      "b": "Trailer spring brakes are released with the red trailer air supply valve, not the hand valve.",
+      "d": "Charging trailer tanks is done by the trailer air supply (red) valve; the hand valve applies trailer brakes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1294,15 +1294,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore until next exit in 50 miles"
+        "text": "Pump the brakes to rebuild air pressure"
       },
       {
         "id": "b",
-        "text": "Speed up to build air"
+        "text": "Continue to a shop if pressure stays above 40"
       },
       {
         "id": "c",
-        "text": "Disable buzzer"
+        "text": "Push in the red knob to restore trailer air"
       },
       {
         "id": "d",
@@ -1312,9 +1312,9 @@
     "correctOptionId": "d",
     "explanation": "Low air can lead to spring application/loss of service.",
     "distractorExplanations": {
-      "a": "Unsafe.",
-      "b": "Doesn’t fix.",
-      "c": "Masks hazard."
+      "a": "Pumping uses more air and speeds up spring-brake application; stop safely as soon as possible.",
+      "b": "At 40 psi the springs may be close to applying; low air means stop safely right away.",
+      "c": "Pushing the red knob sends more tractor air to the trailer; it does not fix the loss of pressure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Better fuel economy"
+        "text": "Faster build-up time after each stop"
       },
       {
         "id": "c",
-        "text": "Higher payload legal limits"
+        "text": "Low-air warning at normal pressure"
       },
       {
         "id": "d",
-        "text": "Automatic tire inflation"
+        "text": "Spring brakes failing to release"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Uneven brakes destabilize.",
     "distractorExplanations": {
-      "b": "Not a benefit.",
-      "c": "Unrelated.",
-      "d": "Unrelated."
+      "b": "Brake imbalance is about uneven braking force at wheel ends, not air build-up time.",
+      "c": "The low-air warning reflects reservoir pressure, not uneven force between foundation brakes.",
+      "d": "Spring brake release depends on supply air and the chambers, not on foundation brake balance."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,11 +1360,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase compressor RPM legally"
+        "text": "Release the tractor parking brakes while still coupled"
       },
       {
         "id": "b",
-        "text": "Bypass CDL rules"
+        "text": "Cut out the compressor and stop air buildup"
       },
       {
         "id": "c",
@@ -1372,15 +1372,15 @@
       },
       {
         "id": "d",
-        "text": "Cool brakes"
+        "text": "Apply the tractor service brakes along with the trailer"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Red knob controls trailer supply.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "No.",
-      "d": "No."
+      "a": "Tractor parking brakes use the yellow valve; the red valve controls trailer air supply.",
+      "b": "The governor controls compressor cut-out; the red valve does not affect air buildup.",
+      "d": "Pulling the red valve affects the trailer supply and trailer springs, not the tractor service brakes."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1397,23 +1397,23 @@
       },
       {
         "id": "b",
-        "text": "ABS faults"
+        "text": "Trailer air loss draining the tractor's own air supply after a breakaway"
       },
       {
         "id": "c",
-        "text": "Governor cut-out"
+        "text": "Overpressure in the tanks when the governor fails to cut the compressor out"
       },
       {
         "id": "d",
-        "text": "Gladhand freeze"
+        "text": "Wheel lockup on slippery roads during a hard stop"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Avoids applying service against parked springs harshly.",
     "distractorExplanations": {
-      "b": "Different.",
-      "c": "Different.",
-      "d": "Different."
+      "b": "Isolating tractor air from a trailer leak is the tractor protection valve's job.",
+      "c": "Overpressure is handled by the safety relief valve, which opens around 150 psi.",
+      "d": "Preventing lockup is the ABS function; anti-compounding prevents stacked service and spring force."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,11 +1426,11 @@
     "options": [
       {
         "id": "a",
-        "text": "As long as possible"
+        "text": "As long as the brakes hold on a tug test"
       },
       {
         "id": "b",
-        "text": "Irrelevant if ABS present"
+        "text": "Set by feel, with 2 inches of free play at the pedal"
       },
       {
         "id": "c",
@@ -1438,15 +1438,15 @@
       },
       {
         "id": "d",
-        "text": "Always 4 inches minimum"
+        "text": "Within limits when checked with air released only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Stroke limits are critical OOS criteria.",
     "distractorExplanations": {
-      "a": "Overstroke is bad.",
-      "b": "ABS doesn’t excuse.",
-      "d": "No universal 4\"."
+      "a": "A tug test checks coupling or parking brake holding, not whether pushrod stroke is within limits.",
+      "b": "Stroke is measured at the chamber pushrod against chamber-size limits, not by pedal free play.",
+      "d": "Applied stroke is measured with about 90–100 psi applied; released position alone shows nothing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1459,7 +1459,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace service brakes in panic stops"
+        "text": "Replace service brakes in emergency stops"
       },
       {
         "id": "b",
@@ -1467,19 +1467,19 @@
       },
       {
         "id": "c",
-        "text": "Increase top speed"
+        "text": "Prevent wheel lockup on slippery road surfaces"
       },
       {
         "id": "d",
-        "text": "Disable ABS"
+        "text": "Hold the vehicle stationary when parked on grades"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Supplemental control on grades.",
     "distractorExplanations": {
-      "a": "Not a full substitute in emergencies.",
-      "c": "Opposite.",
-      "d": "No."
+      "a": "Retarders are supplemental; they cannot stop the vehicle and are not used in place of service brakes.",
+      "c": "Retarders can actually cause drive-wheel skids on slippery roads; ABS prevents lockup.",
+      "d": "Retarders only work when the driveline is turning; they cannot hold a parked vehicle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1496,23 +1496,23 @@
       },
       {
         "id": "b",
-        "text": "Disable all braking forever with freewheeling"
+        "text": "Leave the vehicle without brakes until the driver sets the parking valve"
       },
       {
         "id": "c",
-        "text": "Increase speed"
+        "text": "Trigger the tractor protection valve, keeping tractor brakes normal"
       },
       {
         "id": "d",
-        "text": "Only affect the horn"
+        "text": "Release the spring brakes so the vehicle coasts to a gradual stop"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Emergency springs apply on air loss.",
     "distractorExplanations": {
-      "b": "Springs apply.",
-      "c": "No.",
-      "d": "No."
+      "b": "Spring brakes apply by themselves as air drops; they do not wait for the driver to set them.",
+      "c": "The TP valve protects tractor air from trailer leaks; with total air loss the springs apply.",
+      "d": "Spring brakes are held off by air, so losing air applies them rather than releasing them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1525,11 +1525,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Dump tractor wet tank intentionally"
+        "text": "Release the trailer brakes to avoid a skid"
       },
       {
         "id": "b",
-        "text": "Shut engine off"
+        "text": "Apply the tractor spring brakes immediately"
       },
       {
         "id": "c",
@@ -1537,15 +1537,15 @@
       },
       {
         "id": "d",
-        "text": "Raise cut-out"
+        "text": "Raise governor cut-out to make up the loss"
       }
     ],
     "correctOptionId": "c",
     "explanation": "TP valve isolates tractor.",
     "distractorExplanations": {
-      "a": "Opposite intent.",
-      "b": "Not automatic.",
-      "d": "Unrelated."
+      "a": "In a breakaway the trailer's emergency brakes apply; the TP valve closes to protect tractor air.",
+      "b": "The TP valve keeps tractor air; tractor springs apply only if the tractor's own air is lost.",
+      "d": "The governor setting does not change in a breakaway; the TP valve seals off the open lines."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1558,11 +1558,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Higher system cut-out"
+        "text": "Spring brakes applying on all axles at once"
       },
       {
         "id": "b",
-        "text": "No symptoms"
+        "text": "Faster stops due to air sent to other wheels"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "Better ABS"
+        "text": "Normal braking until the tanks drop to 60 psi"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Localized force loss.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "There are symptoms.",
-      "d": "Unrelated."
+      "a": "A ruptured service line affects that one chamber; springs apply only after major reservoir loss.",
+      "b": "Air escaping from one line reduces force at that wheel; it does not boost the others.",
+      "d": "Braking at that wheel is lost immediately when the line ruptures, before any tank warning."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1591,11 +1591,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved seal life"
+        "text": "Faster governor cut-out and higher tank pressure"
       },
       {
         "id": "b",
-        "text": "Higher octane"
+        "text": "Overheated drums from excess lining friction"
       },
       {
         "id": "c",
@@ -1603,15 +1603,15 @@
       },
       {
         "id": "d",
-        "text": "Automatic slack perfecting"
+        "text": "ABS lamp staying lit with no effect on braking"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Contamination is a major reliability issue.",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "b": "Unrelated.",
-      "d": "Unrelated."
+      "a": "Contamination clogs and freezes valves; it does not change governor settings or raise tank pressure.",
+      "b": "Drum overheating comes from braking practice; air contamination affects valves, seals and lines.",
+      "d": "Water and oil can freeze or stick valves and weaken braking; they are not just a warning-lamp issue."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1624,15 +1624,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Gain friction"
+        "text": "Grab; pump brakes to cool them"
       },
       {
         "id": "b",
-        "text": "Require immediate higher speed"
+        "text": "Lock; spray water on drums"
       },
       {
         "id": "c",
-        "text": "Be ignored"
+        "text": "Fade; keep braking harder"
       },
       {
         "id": "d",
@@ -1642,9 +1642,9 @@
     "correctOptionId": "d",
     "explanation": "Heat fade is dangerous.",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "b": "Wrong.",
-      "c": "Unsafe."
+      "a": "Overheated brakes lose friction (fade); pumping keeps adding heat and wastes air.",
+      "b": "Hot brakes fade rather than lock, and water on hot drums can crack them.",
+      "c": "Braking harder on faded brakes adds heat and worsens fade; stop safely and let them cool."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1657,11 +1657,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Vehicle cannot move"
+        "text": "Normal braking is lost; stop at once and wait for a tow"
       },
       {
         "id": "b",
-        "text": "Air compressor stopped"
+        "text": "Spring brakes will apply soon; pull over before they lock"
       },
       {
         "id": "c",
@@ -1669,15 +1669,15 @@
       },
       {
         "id": "d",
-        "text": "Spring brakes stuck off"
+        "text": "Traction control is off, but ABS still works at highway speed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Treat as non-ABS capable until fixed.",
     "distractorExplanations": {
-      "a": "Usually still movable.",
-      "b": "Not necessarily.",
-      "d": "Not the meaning."
+      "a": "ABS failure leaves normal service braking; you lose anti-lock function, not the brakes.",
+      "b": "The ABS lamp is unrelated to air pressure or spring brakes; it reports an ABS fault.",
+      "d": "A lit ABS lamp means anti-lock may not function at any speed; get it serviced soon."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Low air forever"
+        "text": "ABS warning lamp lighting and modulators shutting off"
       },
       {
         "id": "b",
-        "text": "No effect"
+        "text": "Spring brakes releasing because supply pressure spikes"
       },
       {
         "id": "c",
-        "text": "Better MPG"
+        "text": "Air dryer heater failure and frozen purge valve"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "Stuck cut-out overcharges.",
     "distractorExplanations": {
-      "a": "Stuck cut-in causes low air.",
-      "b": "Bad effect.",
-      "c": "Not a benefit focus."
+      "a": "The governor controls compressor loading; its failure does not shut down ABS modulators.",
+      "b": "Spring brakes are already released at normal pressure; governor faults do not change that.",
+      "c": "The dryer heater is electrical and separate; a governor fault affects pressure regulation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Overpressure"
+        "text": "ABS lamp lighting with modulators shut off"
       },
       {
         "id": "b",
-        "text": "ABS disable"
+        "text": "Tractor protection valve closing at speed"
       },
       {
         "id": "c",
-        "text": "Tire overinflation"
+        "text": "Brake fade from overheated drums"
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Compressor may not charge properly.",
     "distractorExplanations": {
-      "a": "Opposite mode.",
-      "b": "Different.",
-      "c": "Unrelated."
+      "a": "A governor fault affects compressor loading and tank pressure, not the ABS electronics.",
+      "b": "The TP valve closes on trailer air loss; it is not triggered by a governor fault.",
+      "c": "Fade comes from heat during braking, not from a governor failure."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1756,15 +1756,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Adding water to tanks"
+        "text": "Raising governor cut-out to push ice out"
       },
       {
         "id": "b",
-        "text": "Removing the dryer"
+        "text": "Running the tanks at low pressure overnight"
       },
       {
         "id": "c",
-        "text": "Disabling heaters"
+        "text": "Warming valves with an open flame torch"
       },
       {
         "id": "d",
@@ -1774,9 +1774,9 @@
     "correctOptionId": "d",
     "explanation": "Keep air dry.",
     "distractorExplanations": {
-      "a": "Worse.",
-      "b": "Wrong.",
-      "c": "Often need heat/dry."
+      "a": "Higher pressure does not clear ice and risks overpressure; keeping air dry prevents freezing.",
+      "b": "Pressure level does not stop moisture freezing; dryer maintenance and draining remove the water.",
+      "c": "Open flame can damage valves and hoses and is a fire hazard; prevent ice by keeping the air dry."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Drive anyway to warm them"
+        "text": "Build pressure to cut-out, then drive slowly so friction frees them"
       },
       {
         "id": "b",
-        "text": "Cut chambers open on roadside without training"
+        "text": "Cage the spring brakes on the roadside without training"
       },
       {
         "id": "c",
-        "text": "Check air supply, parking control, valves, freezing, mechanical bind—do not force drive"
+        "text": "Check air supply, parking control, valves, freezing, mechanical bind"
       },
       {
         "id": "d",
-        "text": "Ignore"
+        "text": "Pump the service brake pedal repeatedly until the springs release"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Diagnose safely.",
+    "explanation": "Diagnose safely. Do not force-drive against brakes that will not release.",
     "distractorExplanations": {
-      "a": "Unsafe.",
-      "b": "Dangerous.",
-      "d": "Unsafe."
+      "a": "Driving against applied brakes overheats and damages them; find the cause first.",
+      "b": "Caging without training is dangerous and leaves the axle without parking brakes; diagnose first.",
+      "d": "Pumping uses air and cannot release spring brakes, which need supply air pressure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,7 +1855,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal at 125 psi"
+        "text": "Normal feel once pressure passes 100"
       },
       {
         "id": "b",
@@ -1863,19 +1863,19 @@
       },
       {
         "id": "c",
-        "text": "Need more steering fluid"
+        "text": "Air in the hydraulic master cylinder"
       },
       {
         "id": "d",
-        "text": "Need higher octane"
+        "text": "Brakes adjusted too tight at the slack"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Air systems feel different; soft often = insufficient air.",
     "distractorExplanations": {
-      "a": "Normal charged is firm.",
-      "c": "Wrong system.",
-      "d": "Unrelated."
+      "a": "A soft feel is not normal at any pressure; it suggests low air, leaks or slow build-up.",
+      "c": "Pure air-brake systems have no hydraulic master cylinder; that applies to hydraulic brakes.",
+      "d": "Overly tight brakes drag; a soft, weak feel points to low pressure or long stroke."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1888,11 +1888,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only ABS presence"
+        "text": "ABS on the tractor, which adds wheel slip on dry roads"
       },
       {
         "id": "b",
-        "text": "Driver age alone"
+        "text": "Lower speed, which reduces engine braking"
       },
       {
         "id": "c",
@@ -1900,15 +1900,15 @@
       },
       {
         "id": "d",
-        "text": "Paint color"
+        "text": "Cold drums, which lose friction until they warm up"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Physics + condition.",
     "distractorExplanations": {
-      "a": "ABS helps but doesn’t alone define.",
-      "b": "Not sole.",
-      "d": "No."
+      "a": "ABS reduces lockup and does not add slip; stopping distance grows with speed, weight and bad brakes.",
+      "b": "Lower speed shortens stopping distance; higher speed is what increases it.",
+      "d": "Hot drums lose friction (fade); cold drums do not lengthen emergency stops."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1921,11 +1921,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore both"
+        "text": "Trust the gauge, since the warning buzzer is set too high on most trucks"
       },
       {
         "id": "b",
-        "text": "Trust only speedometer"
+        "text": "Trust the buzzer and continue if the gauge reads above 60 psi"
       },
       {
         "id": "c",
@@ -1933,15 +1933,15 @@
       },
       {
         "id": "d",
-        "text": "Continue if trailer lights work"
+        "text": "Recalibrate the gauge at the next stop and keep driving normally"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Any doubt = out of service path.",
     "distractorExplanations": {
-      "a": "Unsafe.",
-      "b": "Wrong instrument.",
-      "d": "Irrelevant."
+      "a": "When indicators disagree, treat the worse reading as true; one may have failed.",
+      "b": "Continuing with a possible air problem risks sudden spring-brake application; stop and get inspected.",
+      "d": "A conflicting warning may mean real air loss; stop safely now rather than driving on."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Reset by speeding up"
+        "text": "Build air to 60 psi, push the knob in, and resume the trip"
       },
       {
         "id": "b",
-        "text": "Remove fuse for buzzer"
+        "text": "Cage the spring brakes and drive to the next shop"
       },
       {
         "id": "c",
-        "text": "Secure vehicle, diagnose air loss, arrange repair—do not keep driving normally"
+        "text": "Secure vehicle, diagnose air loss, arrange repair"
       },
       {
         "id": "d",
-        "text": "Bleed all tanks to zero and go"
+        "text": "Drain the tanks, recharge to cut-out, and continue"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Fix the air problem first.",
+    "explanation": "Fix the air problem first. Do not keep driving normally after an emergency spring application.",
     "distractorExplanations": {
-      "a": "No.",
-      "b": "Masks.",
-      "d": "Worse."
+      "a": "Resetting the springs without finding the air loss lets it happen again at speed.",
+      "b": "Caging removes the emergency/parking brakes; the vehicle should be repaired or towed.",
+      "d": "Draining and recharging does not fix the leak that caused the emergency application."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

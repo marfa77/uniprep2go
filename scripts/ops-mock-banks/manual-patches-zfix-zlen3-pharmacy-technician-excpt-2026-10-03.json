@@ -1,0 +1,95 @@
+{
+ "pharmacy-technician-excpt-readiness-check": {
+  "pharmacy-technician-excpt-readiness-check-orders-008": {
+   "options": {
+    "a": "10 days",
+    "b": "15 days",
+    "c": "28 days (4-week pack)",
+    "d": "30 days"
+   },
+   "distractorExplanations": {
+    "c": "28 days treats the fill as a four-week calendar blister pack; 30 tablets at one daily lasts 30 days.",
+    "a": "10 days would follow from three tablets daily (TID); the sig is one tablet once daily.",
+    "b": "15 days would follow from two tablets daily (BID); the sig is one tablet once daily."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-013": {
+   "options": {
+    "a": "Storage under USP <797> sterile compounding area rules",
+    "b": "Locked storage in the C-II safe with the opioid inventory",
+    "c": "Refrigeration in a shared drug fridge to slow its degradation",
+    "d": "Segregation and labeling per USP <800> pharmacy practices"
+   },
+   "distractorExplanations": {
+    "c": "Storage temperature follows the label; a shared refrigerator mixes hazardous drugs with other stock, which USP <800> avoids.",
+    "a": "USP <797> covers sterile compounding; hazardous-drug handling and storage are set by USP <800>.",
+    "b": "Cyclophosphamide is not a controlled substance; hazardous drugs are segregated from other stock, not stored with opioids."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-015": {
+   "options": {
+    "a": "Matching the bottle to the pocket by drug name, skipping the barcode scan",
+    "b": "Verification of drug, strength, lot, expiry, and location scan",
+    "c": "Loading new stock in front of older units so the newest is dispensed",
+    "d": "Restocking by the nurse who removes the drug, without a pharmacy check"
+   },
+   "distractorExplanations": {
+    "a": "Name matching alone misses wrong strength or form; the barcode scan is the key ADC restock check.",
+    "c": "Placing new stock in front reverses FIFO and leaves older units to expire in the pocket.",
+    "d": "ADC restocking is a pharmacy function with verification; the nurse who removes doses does not restock unchecked."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-003": {
+   "options": {
+    "a": "Confront the patient and keep the forged prescription until police arrive",
+    "b": "Fill a three-day supply and let the pharmacist sort it out on the next shift",
+    "c": "Call the prescriber's number printed on the prescription to verify it",
+    "d": "Notify pharmacist, refuse fill, document, and contact authorities"
+   },
+   "distractorExplanations": {
+    "a": "Confronting the patient risks safety and skips the pharmacist; escalation follows pharmacy policy.",
+    "b": "Dispensing any amount of a suspected forgery is unlawful; the pharmacist must assess it now.",
+    "c": "A forged prescription may list a fake phone number; verification uses an independently sourced prescriber number."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-law-005": {
+   "options": {
+    "a": "The DEA, which licenses technicians to handle controlled drugs",
+    "b": "State board of pharmacy regulations and supervising pharmacist",
+    "c": "The PTCB or NHA certification body that issued the technician's credential",
+    "d": "Federal FDA rules that apply uniformly in every state"
+   },
+   "distractorExplanations": {
+    "c": "Certification bodies such as PTCB or NHA test competence but do not set legal scope; state boards of pharmacy do.",
+    "a": "The DEA registers pharmacies and prescribers, not technicians; technician duties are set by state boards.",
+    "d": "The FDA regulates drugs, not pharmacy practice; technician scope varies by state."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-004": {
+   "options": {
+    "a": "Set the reorder point at the maximum level so that orders go out early",
+    "b": "Track controlled substance balances for DEA biennial inventories",
+    "c": "Maintain adequate stock without excessive carrying cost or outages",
+    "d": "Calculate the day supply for third-party prescription claims"
+   },
+   "distractorExplanations": {
+    "a": "Confuses the two settings: the minimum is the reorder point, while the maximum caps how much stock is ordered.",
+    "b": "Controlled-substance balances belong to perpetual and biennial inventory records, not to min/max ordering levels.",
+    "d": "Day supply is a claim calculation from quantity and sig, unrelated to setting stock reorder levels."
+   }
+  },
+  "pharmacy-technician-excpt-readiness-check-inventory-012": {
+   "options": {
+    "a": "Record the loss on DEA Form 222 and adjust the balance to match the count",
+    "b": "Recount at the next scheduled biennial inventory before reporting anything",
+    "c": "Notify pharmacist immediately and begin discrepancy investigation",
+    "d": "File DEA Form 106 yourself today and correct the perpetual log to match"
+   },
+   "distractorExplanations": {
+    "a": "DEA Form 222 is an order form, not a loss report; balances are never adjusted before an investigation.",
+    "b": "Waiting up to two years for the biennial count delays a required investigation; C-II discrepancies go to the pharmacist now.",
+    "d": "Wrong party and sequence: the pharmacist-in-charge decides whether a Form 106 is needed after investigating the discrepancy."
+   }
+  }
+ }
+}

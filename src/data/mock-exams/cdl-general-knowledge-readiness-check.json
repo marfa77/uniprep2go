@@ -7,27 +7,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A possible steering-system defect that must be checked before driving"
+        "text": "A possible steering-system defect"
       },
       {
         "id": "b",
-        "text": "Correct alignment that improves tire life"
+        "text": "Normal free play for a power-steering truck"
       },
       {
         "id": "c",
-        "text": "Normal operation whenever the engine is idling"
+        "text": "Low tire pressure on the steer axle"
       },
       {
         "id": "d",
-        "text": "A cargo-securement problem behind the cab"
+        "text": "A loose fifth-wheel mounting"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Excessive steering play can signal worn or loose steering components and reduce directional control; it should be reported and corrected before operation.",
     "distractorExplanations": {
-      "b": "“Correct alignment that improves tire life” is incorrect because excessive steering play can signal worn or loose steering components and reduce directional control; it should be reported and corrected before operation.",
-      "c": "“Normal operation whenever the engine is idling” is incorrect because excessive steering play can signal worn or loose steering components and reduce directional control; it should be reported and corrected before operation.",
-      "d": "“A cargo-securement problem behind the cab” is incorrect because excessive steering play can signal worn or loose steering components and reduce directional control; it should be reported and corrected before operation."
+      "b": "Manuals treat play beyond about 10 degrees (2 inches on a 20-inch wheel) as a defect, even on a truck with power steering.",
+      "c": "Low steer-tire pressure causes hard steering or pulling to one side, not excessive free play at the steering wheel.",
+      "d": "A loose fifth wheel shows as movement between tractor and trailer, not as free play in the steering wheel."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A properly inflated tire with even tread"
+        "text": "Tread depth of 3/32 inch on a drive tire"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Matching tires on the same axle"
+        "text": "Mismatched brands of tire on the same axle"
       },
       {
         "id": "d",
-        "text": "A valve cap installed tightly"
+        "text": "A retreaded tire mounted on a drive or trailer axle"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Exposed cord or fabric shows structural tire damage and creates an immediate failure risk; the vehicle should not be driven until the tire is replaced.",
     "distractorExplanations": {
-      "a": "“A properly inflated tire with even tread” is incorrect because exposed cord or fabric shows structural tire damage and creates an immediate failure risk; the vehicle should not be driven until the tire is replaced.",
-      "c": "“Matching tires on the same axle” is incorrect because exposed cord or fabric shows structural tire damage and creates an immediate failure risk; the vehicle should not be driven until the tire is replaced.",
-      "d": "“A valve cap installed tightly” is incorrect because exposed cord or fabric shows structural tire damage and creates an immediate failure risk; the vehicle should not be driven until the tire is replaced."
+      "a": "Non-steer tires need at least 2/32 inch of tread; 3/32 inch on a drive tire is still legal, so it is not an out-of-service defect.",
+      "c": "Different brands are allowed; the real problem is mixing radial and bias-ply tires or mismatched sizes on one axle.",
+      "d": "Retreads are allowed on drive and trailer axles; the restriction is on the front steer wheels of buses."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -77,7 +77,7 @@
       },
       {
         "id": "b",
-        "text": "Continue to the next scheduled fuel stop"
+        "text": "Add oil at the next stop and continue if the light goes out"
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore the warning if coolant temperature is normal"
+        "text": "Keep driving if coolant temperature stays in the normal range"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Near-zero oil pressure can destroy an engine quickly. The driver should make a safe stop, shut down, and have the lubrication problem corrected.",
     "distractorExplanations": {
       "a": "“Increase engine speed to raise the reading” is incorrect because near-zero oil pressure can destroy an engine quickly. The driver should make a safe stop, shut down, and have the lubrication problem corrected.",
-      "b": "“Continue to the next scheduled fuel stop” is incorrect because near-zero oil pressure can destroy an engine quickly. The driver should make a safe stop, shut down, and have the lubrication problem corrected.",
-      "d": "“Ignore the warning if coolant temperature is normal” is incorrect because near-zero oil pressure can destroy an engine quickly. The driver should make a safe stop, shut down, and have the lubrication problem corrected."
+      "b": "Near-zero oil pressure can destroy the engine within minutes; driving on to the next stop risks seizure, so stop and shut down now.",
+      "d": "Normal coolant temperature says nothing about lubrication; a near-zero oil-pressure reading requires an immediate safe stop."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -106,11 +106,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Mirrors double the vehicle’s fuel economy"
+        "text": "Mirror adjustment is required on the post-trip report"
       },
       {
         "id": "b",
-        "text": "Mirrors power the rear clearance lamps"
+        "text": "Mirrors only need checking each time the trailer is changed"
       },
       {
         "id": "c",
@@ -118,14 +118,14 @@
       },
       {
         "id": "d",
-        "text": "Damaged or misadjusted mirrors leave critical areas around the CMV unseen"
+        "text": "Damaged or misadjusted mirrors leave critical areas unseen"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Properly mounted and adjusted mirrors are essential for monitoring traffic and blind areas; cracked, loose, or obstructed mirrors compromise safe operation.",
     "distractorExplanations": {
-      "a": "“Mirrors double the vehicle’s fuel economy” is incorrect because properly mounted and adjusted mirrors are essential for monitoring traffic and blind areas; cracked, loose, or obstructed mirrors compromise safe operation.",
-      "b": "“Mirrors power the rear clearance lamps” is incorrect because properly mounted and adjusted mirrors are essential for monitoring traffic and blind areas; cracked, loose, or obstructed mirrors compromise safe operation.",
+      "a": "Mirrors are checked pre-trip because they must work before driving; the post-trip DVIR is not the reason for the inspection.",
+      "b": "Mirrors can be knocked out of adjustment or damaged at any time and are checked on every pre-trip, not just after a trailer swap.",
       "c": "“Mirrors eliminate the need for shoulder checks” is incorrect because properly mounted and adjusted mirrors are essential for monitoring traffic and blind areas; cracked, loose, or obstructed mirrors compromise safe operation."
     },
     "difficulty": "medium",
@@ -143,7 +143,7 @@
       },
       {
         "id": "b",
-        "text": "Guarantee a shorter stopping distance on every road surface"
+        "text": "Shorten stopping distances on loose gravel and fresh snow-covered roads"
       },
       {
         "id": "c",
@@ -157,7 +157,7 @@
     "correctOptionId": "a",
     "explanation": "ABS prevents wheel lockup so the driver can steer while braking hard; it does not guarantee shorter stops on every surface.",
     "distractorExplanations": {
-      "b": "“Guarantee a shorter stopping distance on every road surface” is incorrect because aBS prevents wheel lockup so the driver can steer while braking hard; it does not guarantee shorter stops on every surface.",
+      "b": "On loose gravel or fresh snow ABS can lengthen stops because locked wheels would build a wedge of material; its real benefit is steering control.",
       "c": "“Prevent every skid even when the driver enters a curve too fast” is incorrect because aBS prevents wheel lockup so the driver can steer while braking hard; it does not guarantee shorter stops on every surface.",
       "d": "“Replace the need to maintain safe following distance” is incorrect because aBS prevents wheel lockup so the driver can steer while braking hard; it does not guarantee shorter stops on every surface."
     },
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Cool tires always have zero pressure"
+        "text": "Pressure ratings on the sidewall assume a hot tire"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "CDL rules forbid checking hot tires"
+        "text": "FMCSA rules allow pressure checks only on cold tires"
       },
       {
         "id": "d",
-        "text": "Tire pressure only matters for passenger cars"
+        "text": "Hot tires lose pressure, so a hot reading shows false underinflation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Heat increases gauge pressure; checking after long runs can hide underinflation. Underinflated tires overheat and can fail.",
     "distractorExplanations": {
-      "a": "Cool tires still hold rated pressure when properly inflated.",
-      "c": "Hot tires can be checked cautiously; cool checks are preferred for accuracy.",
-      "d": "Commercial tires require proper inflation just as much as car tires."
+      "a": "Sidewall and recommended pressures are cold-inflation figures; that is why checks are made on cool tires, not because they assume hot ones.",
+      "c": "No federal rule bans checking hot tires; cold checks are preferred because heat inflates the reading, not because of a legal limit.",
+      "d": "Heat raises tire pressure rather than lowering it, so a hot reading overstates inflation instead of understating it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal lubrication of the exhaust joint"
+        "text": "Normal carbon buildup from a diesel engine at idle"
       },
       {
         "id": "b",
-        "text": "A properly sealed exhaust system"
+        "text": "A clogged diesel particulate filter needing regeneration"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "A discharged fire extinguisher"
+        "text": "An oil leak dripping onto the hot exhaust manifold"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Soot at an exhaust connection is evidence of leakage. Exhaust defects can expose occupants to fumes and must be repaired before operation.",
     "distractorExplanations": {
-      "a": "“Normal lubrication of the exhaust joint” is incorrect because soot at an exhaust connection is evidence of leakage. Exhaust defects can expose occupants to fumes and must be repaired before operation.",
-      "b": "“A properly sealed exhaust system” is incorrect because soot at an exhaust connection is evidence of leakage. Exhaust defects can expose occupants to fumes and must be repaired before operation.",
-      "d": "“A discharged fire extinguisher” is incorrect because soot at an exhaust connection is evidence of leakage. Exhaust defects can expose occupants to fumes and must be repaired before operation."
+      "a": "Soot at a joint or clamp marks escaping exhaust gas, not harmless idle buildup; the leak must be repaired before operation.",
+      "b": "A DPF problem shows as a dash warning or lost power; soot around one connection points to a leak at that joint.",
+      "d": "Oil on the manifold leaves wet residue, smoke or a burning smell, while dry black soot at a connection marks an exhaust leak."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -238,7 +238,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Shut off the engine immediately while still in traffic"
+        "text": "Shut off the engine immediately while still in the traffic lane"
       },
       {
         "id": "b",
@@ -246,19 +246,19 @@
       },
       {
         "id": "c",
-        "text": "Cover the radiator to trap heat"
+        "text": "Open the hot radiator cap to check coolant"
       },
       {
         "id": "d",
-        "text": "Pull off safely, idle to cool if safe, and investigate before continuing"
+        "text": "Pull off safely, idle to cool if safe, and investigate"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Overheating requires a safe stop and diagnosis (coolant, belts, debris). Stopping in traffic lanes or forcing the engine harder worsens risk.",
+    "explanation": "Overheating requires a safe stop and diagnosis (coolant, belts, debris). Stopping in traffic lanes or forcing the engine harder worsens risk. Investigate before continuing.",
     "distractorExplanations": {
-      "a": "Immediate shutdown in a travel lane creates a collision hazard; get clear first when possible.",
+      "a": "Shutting down in a live travel lane creates a collision hazard; get clear of traffic first, then idle or shut down as conditions allow.",
       "b": "Higher speed increases load and may worsen overheating.",
-      "c": "Covering the radiator traps heat and damages the engine."
+      "c": "Opening a hot, pressurized radiator can spray scalding coolant; let the system cool before checking the level."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "To increase the legal axle-weight limit"
+        "text": "Hose condition sets the engine's oil-pressure reading"
       },
       {
         "id": "b",
-        "text": "Cracks, bulges, or leaks can lead to coolant loss and engine overheating"
+        "text": "Cracks, bulges, or leaks can lead to coolant loss"
       },
       {
         "id": "c",
-        "text": "To verify the electronic logbook is current"
+        "text": "Bulging hoses only matter on gasoline engines"
       },
       {
         "id": "d",
-        "text": "Because coolant hoses control tire pressure"
+        "text": "Collapsed hoses show the coolant is properly full"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Damaged hoses can fail under pressure, drain coolant, and overheat the engine. Leaks, cracks, and insecure connections require attention before driving.",
     "distractorExplanations": {
-      "a": "“To increase the legal axle-weight limit” is incorrect because damaged hoses can fail under pressure, drain coolant, and overheat the engine. Leaks, cracks, and insecure connections require attention before driving.",
-      "c": "“To verify the electronic logbook is current” is incorrect because damaged hoses can fail under pressure, drain coolant, and overheat the engine. Leaks, cracks, and insecure connections require attention before driving.",
-      "d": "“Because coolant hoses control tire pressure” is incorrect because damaged hoses can fail under pressure, drain coolant, and overheat the engine. Leaks, cracks, and insecure connections require attention before driving."
+      "a": "Coolant hoses carry coolant, not oil; oil pressure depends on the lubrication system, so hoses are checked to prevent overheating.",
+      "c": "Diesel cooling systems use the same pressurized hoses; a bulge or crack can fail and drain coolant on any engine.",
+      "d": "A collapsed or soft hose suggests a leak, failed cap or blockage, not a full system; it is a defect to report."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -337,7 +337,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal warm-up for turbocharged diesels"
+        "text": "Normal warm-up for a turbocharged diesel in cold weather"
       },
       {
         "id": "b",
@@ -345,19 +345,19 @@
       },
       {
         "id": "c",
-        "text": "That the coolant thermostat is stuck open"
+        "text": "A stuck coolant thermostat that will clear as the engine warms"
       },
       {
         "id": "d",
-        "text": "That DEF fluid needs topping off"
+        "text": "Low DEF level, which also triggers an oil-pressure warning"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Oil pressure must build promptly; near-zero pressure risks catastrophic engine damage. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control.",
     "distractorExplanations": {
-      "a": "“Normal warm-up for turbocharged diesels” is incorrect because oil pressure must build promptly; near-zero pressure risks catastrophic engine damage.",
-      "c": "“That the coolant thermostat is stuck open” is incorrect because oil pressure must build promptly; near-zero pressure risks catastrophic engine damage.",
-      "d": "“That DEF fluid needs topping off” is incorrect because oil pressure must build promptly; near-zero pressure risks catastrophic engine damage."
+      "a": "Oil pressure should rise within seconds of start-up even when cold; staying near zero is a lubrication failure, not warm-up.",
+      "c": "The thermostat controls coolant flow and temperature; it does not affect oil pressure, which comes from the oil pump.",
+      "d": "DEF is an emissions fluid with its own gauge and derate warnings; it has no link to engine oil pressure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "They only affect radio antenna mounting"
+        "text": "Suspension wear changes the GVWR stamped on the frame"
       },
       {
         "id": "b",
-        "text": "Damaged suspension can cause poor control, uneven tire wear, and unsafe ride height"
+        "text": "Damaged suspension can cause poor control and unsafe ride height"
       },
       {
         "id": "c",
-        "text": "Suspension parts determine hours-of-service limits"
+        "text": "Suspension checks are needed only after carrying heavy loads"
       },
       {
         "id": "d",
-        "text": "They replace the need for a fifth-wheel check"
+        "text": "Suspension defects affect ride comfort but not braking or steering"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Suspension defects compromise stability, tire contact, and cargo/vehicle control. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control.",
     "distractorExplanations": {
-      "a": "“They only affect radio antenna mounting” is incorrect because suspension defects compromise stability, tire contact, and cargo/vehicle control.",
-      "c": "“Suspension parts determine hours-of-service limits” is incorrect because suspension defects compromise stability, tire contact, and cargo/vehicle control.",
-      "d": "“They replace the need for a fifth-wheel check” is incorrect because suspension defects compromise stability, tire contact, and cargo/vehicle control."
+      "a": "GVWR is a manufacturer rating that wear cannot change; damaged suspension is checked because it threatens vehicle control.",
+      "c": "Broken springs, leaking air bags or cracked U-bolts can occur on any trip; suspension is checked on every pre-trip.",
+      "d": "Suspension holds axles in position; a broken spring or shifted axle can affect steering, braking and stability."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Continue downhill and pump the accelerator"
+        "text": "Press harder on the brakes to make up for the fade"
       },
       {
         "id": "b",
-        "text": "Ignore the odor if the vehicle remains in its lane"
+        "text": "Shift into a higher gear to reduce engine load on the grade"
       },
       {
         "id": "c",
-        "text": "Move to a safe stopping place and allow the brakes to cool before inspection"
+        "text": "Move to a safe stopping place and allow the brakes to cool"
       },
       {
         "id": "d",
-        "text": "Apply the parking brake fully while moving"
+        "text": "Pour water on the hot brake drums to cool them quickly"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Burning odor and reduced braking indicate overheated brakes or fade. The driver must stop safely and inspect rather than continue with diminished braking.",
+    "explanation": "Burning odor and reduced braking indicate overheated brakes or fade. The driver must stop safely and inspect rather than continue with diminished braking. Inspect the brakes once they have cooled.",
     "distractorExplanations": {
-      "a": "“Continue downhill and pump the accelerator” is incorrect because burning odor and reduced braking indicate overheated brakes or fade. The driver must stop safely and inspect rather than continue with diminished braking.",
-      "b": "“Ignore the odor if the vehicle remains in its lane” is incorrect because burning odor and reduced braking indicate overheated brakes or fade. The driver must stop safely and inspect rather than continue with diminished braking.",
-      "d": "“Apply the parking brake fully while moving” is incorrect because burning odor and reduced braking indicate overheated brakes or fade. The driver must stop safely and inspect rather than continue with diminished braking."
+      "a": "More pressure on faded brakes adds heat and can lead to complete brake failure; stop and let them cool.",
+      "b": "A higher gear reduces engine braking and lets speed build faster; a lower gear is needed, then a stop to cool the brakes.",
+      "d": "Dousing hot drums can crack them through thermal shock; let the brakes cool naturally after a safe stop."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -436,11 +436,11 @@
     "options": [
       {
         "id": "a",
-        "text": "They increase engine oil pressure during wet weather"
+        "text": "Wipers must work only when rain is forecast for the route"
       },
       {
         "id": "b",
-        "text": "Clear forward vision is required for safe operation in rain, snow, and road spray"
+        "text": "Clear forward vision is required for safe operation"
       },
       {
         "id": "c",
@@ -448,15 +448,15 @@
       },
       {
         "id": "d",
-        "text": "They keep the air-brake reservoirs free of moisture"
+        "text": "Wiper blades are checked for the annual inspection, not pre-trip"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Impaired visibility is a major crash risk; wipers/washers are essential inspection items. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control.",
+    "explanation": "Impaired visibility is a major crash risk; wipers/washers are essential inspection items. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control. Rain, snow, and road spray all demand working wipers.",
     "distractorExplanations": {
-      "a": "“They increase engine oil pressure during wet weather” is incorrect because impaired visibility is a major crash risk; wipers/washers are essential inspection items.",
+      "a": "Weather and road spray change without warning; wipers and washers are checked on every pre-trip, not just when rain is forecast.",
       "c": "“They replace the need to inspect mirrors and lights” is incorrect because impaired visibility is a major crash risk; wipers/washers are essential inspection items.",
-      "d": "“They keep the air-brake reservoirs free of moisture” is incorrect because impaired visibility is a major crash risk; wipers/washers are essential inspection items."
+      "d": "Wipers and washers are daily pre-trip items because a failure in rain or spray immediately limits vision."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "a",
-        "text": "It improves steering response at low speed"
+        "text": "Small power-steering leaks are normal on heavy trucks"
       },
       {
         "id": "b",
@@ -477,19 +477,19 @@
       },
       {
         "id": "c",
-        "text": "It automatically raises engine oil pressure"
+        "text": "The fluid leak can drain the engine's oil supply"
       },
       {
         "id": "d",
-        "text": "It affects only the cab heater"
+        "text": "Loss of fluid can disable the air-brake compressor"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A power-steering leak can lead to loss of assistance and make the vehicle difficult to control, so it must be repaired before safe operation.",
     "distractorExplanations": {
-      "a": "“It improves steering response at low speed” is incorrect because a power-steering leak can lead to loss of assistance and make the vehicle difficult to control, so it must be repaired before safe operation.",
-      "c": "“It automatically raises engine oil pressure” is incorrect because a power-steering leak can lead to loss of assistance and make the vehicle difficult to control, so it must be repaired before safe operation.",
-      "d": "“It affects only the cab heater” is incorrect because a power-steering leak can lead to loss of assistance and make the vehicle difficult to control, so it must be repaired before safe operation."
+      "a": "Any steering-fluid leak is a defect; continued loss reduces assist and can make the truck hard to steer in an emergency.",
+      "c": "Power-steering fluid is a separate system from engine oil; the danger is losing steering assist, not engine lubrication.",
+      "d": "The air compressor does not use power-steering fluid; the leak threatens steering assist, not the brake air supply."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -502,27 +502,27 @@
     "options": [
       {
         "id": "a",
-        "text": "One second for each 10 feet of vehicle length at speeds under 40 mph, plus extra at higher speeds"
+        "text": "One second for each 10 feet of vehicle length under 40 mph"
       },
       {
         "id": "b",
-        "text": "One car length total regardless of speed"
+        "text": "One second for each 15 feet of vehicle length at speeds under 40 mph"
       },
       {
         "id": "c",
-        "text": "Half a second behind any vehicle"
+        "text": "One second for each 20 feet of vehicle length at any speed"
       },
       {
         "id": "d",
-        "text": "Zero following distance if ABS is equipped"
+        "text": "A fixed four-second gap, the same as a passenger car"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Commercial manuals teach length-based following time (e.g., 1 second per 10 ft under 40 mph) and more space at higher speeds or in poor conditions.",
+    "explanation": "Commercial manuals teach length-based following time (e.g., 1 second per 10 ft under 40 mph) and more space at higher speeds or in poor conditions. Add one more second at speeds above 40 mph.",
     "distractorExplanations": {
-      "b": "One car length is inadequate for trucks.",
-      "c": "Half a second provides almost no reaction time.",
-      "d": "ABS does not remove the need for space."
+      "b": "The manual rule is one second per 10 feet under 40 mph; one second per 15 feet leaves a third less time than required.",
+      "c": "One second per 20 feet halves the manual's minimum and ignores the extra second needed above 40 mph.",
+      "d": "Heavy vehicles need length-based time—one second per 10 feet plus one more above 40 mph—not a fixed car-style gap."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -535,11 +535,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Turn from the far-left lane without signaling"
+        "text": "Swing left into the adjacent lane before starting the turn"
       },
       {
         "id": "b",
-        "text": "Swing wide as needed while keeping the rear of the vehicle clear of hazards"
+        "text": "Swing wide as needed while keeping the rear clear of hazards"
       },
       {
         "id": "c",
@@ -547,15 +547,15 @@
       },
       {
         "id": "d",
-        "text": "Accelerate through the turn without checking mirrors"
+        "text": "Begin turning early so the trailer follows the tractor's path"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Trailers off-track inside the tractor path; drivers must plan the turn, use mirrors, and swing appropriately without hitting curb or other traffic.",
     "distractorExplanations": {
-      "a": "Wrong-lane turns and no signal are illegal/unsafe.",
+      "a": "Swinging wide to the left before a right turn invites cars to pass on your right; swing wide as you complete the turn instead.",
       "c": "Cutting tight often curbs the trailer wheels.",
-      "d": "Acceleration without mirror checks invites collisions."
+      "d": "Trailers off-track inside the tractor's path; turning early drags the trailer over the curb rather than making it follow."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Engine oil temperature"
+        "text": "Ice forming under tires below freezing temperatures"
       },
       {
         "id": "b",
-        "text": "Trailer ABS malfunction"
+        "text": "Brakes locking on wet pavement"
       },
       {
         "id": "c",
-        "text": "Water buildup under tires reducing traction, worse with underinflation and higher speed"
+        "text": "Water buildup under tires reducing traction"
       },
       {
         "id": "d",
-        "text": "Parking brake spring strength"
+        "text": "Oil residue lifting from pavement in the first rain"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Hydroplaning occurs when tires ride on water; speed, tread depth, and inflation strongly affect risk. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
     "distractorExplanations": {
-      "a": "Oil temperature is unrelated to hydroplaning.",
-      "b": "ABS helps control skids but is not the cause of hydroplaning.",
-      "d": "Parking brake springs do not cause hydroplaning."
+      "a": "That describes ice or black ice; hydroplaning is tires riding on a film of water, often at speeds above about 30 mph.",
+      "b": "Lockup is a braking skid; hydroplaning occurs when water lifts the tires off the road, even without any braking.",
+      "d": "Oil residue makes early rain slippery, but hydroplaning is water building under the tires so they lose road contact."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ride the clutch continuously"
+        "text": "Use steady, light brake pressure all the way down"
       },
       {
         "id": "b",
-        "text": "Stay in the highest gear available"
+        "text": "Start in a high gear and downshift as speed builds"
       },
       {
         "id": "c",
-        "text": "Turn off the engine to save fuel"
+        "text": "Hold speed with the trailer hand valve"
       },
       {
         "id": "d",
-        "text": "Select a safe low gear before starting down and use proper braking technique"
+        "text": "Select a safe low gear before starting down"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Choose a gear that holds speed without excessive braking; then use steady or snub braking as trained—not high gear or engine-off coasting.",
+    "explanation": "Choose a gear that holds speed without excessive braking; then use steady or snub braking as trained—not high gear or engine-off coasting. Then use proper (snub) braking technique.",
     "distractorExplanations": {
-      "a": "Riding the clutch damages the clutch and reduces control.",
-      "b": "High gear often leads to runaway speed.",
-      "c": "Turning off the engine can lose power steering/brakes assist and is dangerous."
+      "a": "Constant light braking overheats and fades the brakes; manuals teach a low gear plus snub braking.",
+      "b": "Downshifting after speed builds is often impossible and risks a missed shift; choose the low gear before the grade.",
+      "c": "The trailer hand valve brakes the trailer alone and can overheat those brakes or cause a skid; it is not for grade speed control."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -634,7 +634,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase your following distance ahead and avoid sudden moves; do not speed up just to please the tailgater"
+        "text": "Increase your following distance ahead and avoid sudden moves"
       },
       {
         "id": "b",
@@ -650,7 +650,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "Create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition. Do not speed up just to please the tailgater.",
     "distractorExplanations": {
       "b": "“Brake sharply to force the tailgater to back away” is incorrect because create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk.",
       "c": "“Reduce the space ahead so the tailgater can pass sooner” is incorrect because create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk.",
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Look toward the right edge of your lane / road markings until they pass"
+        "text": "Look toward the right edge of your lane until they pass"
       },
       {
         "id": "c",
-        "text": "Turn on your own high beams in retaliation"
+        "text": "Flash your high beams and hold them on until they dim"
       },
       {
         "id": "d",
-        "text": "Close your eyes briefly"
+        "text": "Look toward the center line to track the oncoming car"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Looking to the right edge helps you stay in lane without being dazzled; retaliatory high beams worsen the hazard.",
     "distractorExplanations": {
       "a": "Staring into headlights worsens temporary blindness.",
-      "c": "Retaliation high beams endanger everyone.",
-      "d": "Closing your eyes removes all visual control."
+      "c": "Holding high beams on blinds the other driver too and raises crash risk; dim yours and look toward the right edge.",
+      "d": "Looking toward the center line keeps the glare in view; the manual says to look to the right side of the road."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Whenever entering a curve at normal speed"
+        "text": "Whenever driving through heavy rain or fog at normal highway speed"
       },
       {
         "id": "b",
@@ -708,7 +708,7 @@
       },
       {
         "id": "c",
-        "text": "When you are moving unusually slowly or stopped as a hazard to traffic, per company/state rules"
+        "text": "When you are moving unusually slowly or stopped as a hazard to traffic"
       },
       {
         "id": "d",
@@ -716,9 +716,9 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy.",
+    "explanation": "Flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy. Follow company and state rules on flasher use.",
     "distractorExplanations": {
-      "a": "“Whenever entering a curve at normal speed” is incorrect because flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy.",
+      "a": "Flashers while moving at normal speed confuse drivers about whether you are stopped; use low-beam headlights instead.",
       "b": "“Instead of using turn signals during lane changes” is incorrect because flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy.",
       "d": "“Continuously in clear weather during ordinary highway travel” is incorrect because flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy."
     },
@@ -733,15 +733,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The foam in the driver's seat"
+        "text": "The gap you keep ahead only, measured in seconds of travel"
       },
       {
         "id": "b",
-        "text": "The air gap in the brake chamber"
+        "text": "The extra lane width a wide-turning rig borrows at corners"
       },
       {
         "id": "c",
-        "text": "The distance between dual tires"
+        "text": "The clearance below overpasses that you check before entering"
       },
       {
         "id": "d",
@@ -751,9 +751,9 @@
     "correctOptionId": "d",
     "explanation": "Managing space ahead, behind, and to the sides gives time to react to sudden stops, merges, and road hazards. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
     "distractorExplanations": {
-      "a": "Seat foam is comfort, not space management.",
-      "b": "Brake chambers are mechanical components.",
-      "c": "Dual tire gap is a maintenance item, not the driving concept."
+      "a": "Following distance is one part; a space cushion also includes space behind, to the sides and overhead.",
+      "b": "Swinging wide is a turning technique; the space cushion is the open area kept around the vehicle at all times.",
+      "c": "Overhead clearance is one part of space management, but the space cushion is the open area kept all around the vehicle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Release the brakes to regain rolling traction, then steer and reapply gently as needed"
+        "text": "Release the brakes to regain rolling traction, then steer"
       },
       {
         "id": "b",
-        "text": "Apply the parking brake hard"
+        "text": "Press harder on the brakes until the skid stops"
       },
       {
         "id": "c",
-        "text": "Accelerate to straighten the vehicle"
+        "text": "Steer sharply away from the skid before releasing the brakes"
       },
       {
         "id": "d",
-        "text": "Turn the wheel fully lock-to-lock repeatedly"
+        "text": "Shift to neutral and keep steady pressure on the brakes"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Locked wheels cannot steer; releasing brakes restores rolling contact so you can steer and then brake properly.",
+    "explanation": "Locked wheels cannot steer; releasing brakes restores rolling contact so you can steer and then brake properly. Reapply the brakes gently as needed.",
     "distractorExplanations": {
-      "b": "Parking brake can worsen a skid.",
-      "c": "Acceleration often worsens loss of control.",
-      "d": "Wild steering inputs can induce a spin."
+      "b": "More pressure keeps the wheels locked; releasing the brakes lets the tires roll and regain steering traction.",
+      "c": "Locked wheels cannot steer, so steering first does nothing; release the brakes first, then steer.",
+      "d": "Neutral removes engine braking and steady pressure keeps the wheels locked; release the brakes to regain traction."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "It improves your fuel economy"
+        "text": "Drafting beside a car reduces your truck's wind resistance and fuel use"
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "It activates your ABS automatically"
+        "text": "It blocks your view of the road shoulder on that side"
       },
       {
         "id": "d",
-        "text": "It is required by HOS rules"
+        "text": "It forces you to brake harder when traffic ahead slows"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Large vehicles create large blind spots; lingering beside another vehicle increases sideswipe risk. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
     "distractorExplanations": {
-      "a": "Blind-spot positioning does not improve MPG.",
-      "c": "ABS is not controlled by lane position.",
-      "d": "HOS governs hours, not blind-spot etiquette."
+      "a": "Riding alongside another vehicle gives no meaningful drag or fuel benefit; the real risk is that its driver cannot see you and merges into you.",
+      "c": "The concern is the other driver's view, not yours; lingering where they cannot see you invites a lane change into your rig.",
+      "d": "Braking depends on space ahead; the blind-spot problem is that the other driver may merge into you without warning."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "No following distance if ABS is equipped"
+        "text": "Less following distance if the truck has ABS and disc brakes"
       },
       {
         "id": "d",
-        "text": "Less distance because trucks brake better downhill"
+        "text": "Less distance because air brakes apply faster than hydraulic"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Greater mass and longer stopping distance require more space ahead than light vehicles. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
     "distractorExplanations": {
       "a": "“The same following distance as a passenger car” is incorrect because greater mass and longer stopping distance require more space ahead than light vehicles.",
-      "c": "“No following distance if ABS is equipped” is incorrect because greater mass and longer stopping distance require more space ahead than light vehicles.",
-      "d": "“Less distance because trucks brake better downhill” is incorrect because greater mass and longer stopping distance require more space ahead than light vehicles."
+      "c": "ABS and disc brakes improve control but do not bring a loaded CMV's stopping distance down to a car's; more space is still needed.",
+      "d": "Air brakes add about half a second of brake lag before full braking; they do not apply faster than hydraulic brakes."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Backing is always safer than pulling forward"
+        "text": "Mirrors cover the rear well enough on a straight back"
       },
       {
         "id": "b",
-        "text": "Blind spots are large; use a helper and get out to look when needed"
+        "text": "Blind spots are large; use a helper and get out to look"
       },
       {
         "id": "c",
-        "text": "Mirrors eliminate all blind spots on modern trucks"
+        "text": "Backing toward the blind (right) side is preferred"
       },
       {
         "id": "d",
-        "text": "Backing never requires checking the rear"
+        "text": "Backup alarms make a helper or walk-around unnecessary"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CMVs have large blind areas; walk-arounds and spotters reduce backing crashes. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
     "distractorExplanations": {
-      "a": "“Backing is always safer than pulling forward” is incorrect because cMVs have large blind areas; walk-arounds and spotters reduce backing crashes.",
-      "c": "“Mirrors eliminate all blind spots on modern trucks” is incorrect because cMVs have large blind areas; walk-arounds and spotters reduce backing crashes.",
-      "d": "“Backing never requires checking the rear” is incorrect because cMVs have large blind areas; walk-arounds and spotters reduce backing crashes."
+      "a": "Mirrors leave a large blind area directly behind the trailer; even a straight back needs a get-out-and-look check or helper.",
+      "c": "Manuals prefer backing toward the driver's side, where you can see; blind-side backing is the riskier choice.",
+      "d": "Alarms warn people but do not show you obstacles; a helper or getting out to look is still needed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -898,7 +898,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Improve brake cooling permanently"
+        "text": "Cool the brake drums so braking improves right afterward"
       },
       {
         "id": "b",
@@ -906,19 +906,19 @@
       },
       {
         "id": "c",
-        "text": "Increase tire tread depth"
+        "text": "Flood the air tanks and lock the spring brakes"
       },
       {
         "id": "d",
-        "text": "Disable the need for downshifting"
+        "text": "Cause hydroplaning on the next dry stretch of road"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Water can soak brake linings; test brakes gently after water crossings and dry them if needed. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
     "distractorExplanations": {
-      "a": "“Improve brake cooling permanently” is incorrect because water can soak brake linings; test brakes gently after water crossings and dry them if needed.",
-      "c": "“Increase tire tread depth” is incorrect because water can soak brake linings; test brakes gently after water crossings and dry them if needed.",
-      "d": "“Disable the need for downshifting” is incorrect because water can soak brake linings; test brakes gently after water crossings and dry them if needed."
+      "a": "Water on the linings reduces friction, so braking is weaker until they dry; it is not a cooling benefit.",
+      "c": "Air tanks are a sealed system; deep water affects the brake linings, not reservoir pressure or the spring brakes.",
+      "d": "Hydroplaning needs water on the road surface; the after-effect of a deep crossing is wet, weak brakes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Assume they see you and merge anyway"
+        "text": "Signal, then merge slowly so they can make room"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Honk continuously for 30 seconds"
+        "text": "Speed up so they fall behind your trailer, then merge"
       },
       {
         "id": "d",
-        "text": "Speed up without signaling"
+        "text": "Merge once they have been out of the mirror a few seconds"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Never change lanes into an occupied blind spot; wait until you can see or verify clearance. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
     "distractorExplanations": {
-      "a": "“Assume they see you and merge anyway” is incorrect because never change lanes into an occupied blind spot; wait until you can see or verify clearance.",
-      "c": "“Honk continuously for 30 seconds” is incorrect because never change lanes into an occupied blind spot; wait until you can see or verify clearance.",
-      "d": "“Speed up without signaling” is incorrect because never change lanes into an occupied blind spot; wait until you can see or verify clearance."
+      "a": "Signaling does not make the lane clear; wait until you can see the vehicle has left your blind spot.",
+      "c": "Speeding up to clear them still leaves the vehicle unseen and adds speed; wait until you confirm the lane is clear.",
+      "d": "A vehicle out of the mirror may be in the blind spot itself; confirm the space is clear, not just that the mirror is empty."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "To prevent cargo from shifting or falling and causing crashes or roadway hazards"
+        "text": "To prevent cargo from shifting or falling"
       },
       {
         "id": "b",
-        "text": "To increase axle weight beyond legal limits"
+        "text": "To keep axle weights within legal limits"
       },
       {
         "id": "c",
-        "text": "To reduce the need for pre-trip inspections"
+        "text": "To protect the cargo itself from shipping damage"
       },
       {
         "id": "d",
-        "text": "To replace bill of lading requirements"
+        "text": "To set the shipper's liability for loads"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Securement keeps loads stable under acceleration, braking, and turns so cargo does not spill or destabilize the vehicle.",
+    "explanation": "Securement keeps loads stable under acceleration, braking, and turns so cargo does not spill or destabilize the vehicle. Loose or falling cargo causes crashes and roadway hazards.",
     "distractorExplanations": {
-      "b": "Securement does not legalize overweight axles.",
-      "c": "Inspections remain required.",
-      "d": "Shipping papers are separate requirements."
+      "b": "Axle limits come from weight laws and load placement; securement rules control movement of the load.",
+      "c": "Damage protection is a commercial concern for the shipper; FMCSA securement rules exist to stop shifting and falling loads that cause crashes.",
+      "d": "Liability is covered by the bill of lading and contracts; securement rules target road safety from shifting or falling cargo."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1030,27 +1030,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the weight of the empty tractor"
+        "text": "The rated maximum weight of a single vehicle and its load"
       },
       {
         "id": "b",
-        "text": "The maximum allowable weight of the power unit plus trailer(s) and cargo as rated"
+        "text": "The maximum allowable weight of the power unit plus trailer(s) and cargo"
       },
       {
         "id": "c",
-        "text": "Only the trailer tire capacity"
+        "text": "The actual weight of the loaded combination when weighed on a scale"
       },
       {
         "id": "d",
-        "text": "The driver's personal weight limit"
+        "text": "The maximum weight a single axle may carry on interstate roads"
       }
     ],
     "correctOptionId": "b",
     "explanation": "GCWR is the manufacturer's rated maximum for the combination; operating above ratings is unsafe and often illegal.",
     "distractorExplanations": {
-      "a": "Empty tractor weight is tare, not GCWR.",
-      "c": "Tire ratings matter but GCWR is the combination rating.",
-      "d": "Driver weight is not GCWR."
+      "a": "That is GVWR; GCWR is the rating for the power unit plus its trailer(s) and cargo combined.",
+      "c": "Actual weight is gross combination weight (GCW); GCWR is the manufacturer's maximum rating, not the scale reading.",
+      "d": "Axle limits (20,000 lb on a single axle) are legal weight limits; GCWR is a manufacturer rating for the entire combination."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic increase in fuel tank size"
+        "text": "Light steering and front-wheel skids on wet roads"
       },
       {
         "id": "b",
-        "text": "Elimination of trailer swing"
+        "text": "Poor drive-axle traction on slippery winter road surfaces"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Higher legal speed limits"
+        "text": "Trailer brake lockup during normal hard stops"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Overloading the steer axle harms control and can exceed tire/axle ratings; proper weight distribution is essential.",
     "distractorExplanations": {
-      "a": "Fuel capacity does not change with axle load.",
-      "b": "Trailer swing is not eliminated by steer overload.",
-      "d": "Speed limits are set by law, not axle load."
+      "a": "Light steering comes from too little weight on the steer axle; too much weight causes hard steering and tire overload.",
+      "b": "Poor drive traction results from too little weight on the drive axles, not from overloading the steer axle.",
+      "d": "Trailer brake lockup comes from light trailer axles; excess steer-axle weight affects steering effort and front tires."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "It always reduces stopping distance"
+        "text": "It adds traction to the drive axles on slippery road surfaces"
       },
       {
         "id": "b",
-        "text": "It improves ABS performance"
+        "text": "It shifts weight forward and overloads the steer axle"
       },
       {
         "id": "c",
-        "text": "It lowers bridge formula weight"
+        "text": "It increases off-tracking of the trailer at low speed"
       },
       {
         "id": "d",
-        "text": "It raises the center of gravity and increases rollover risk in turns"
+        "text": "It raises the center of gravity and increases rollover risk"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "High CG makes rollovers more likely at the same speed in curves; load low and centered when possible. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
+    "explanation": "High CG makes rollovers more likely at the same speed in curves; load low and centered when possible. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction. The risk is greatest in turns.",
     "distractorExplanations": {
-      "a": "Top-heavy loads often worsen stopping/handling, not improve them.",
-      "b": "ABS cannot overcome physics of a high CG.",
-      "c": "Bridge formula concerns axle spacing/weight, not CG height directly."
+      "a": "Height does not add traction; a high center of gravity mainly raises rollover risk in curves and sudden turns.",
+      "b": "A tall load raises the center of gravity; steer-axle overload comes from load placed too far forward, not from height.",
+      "c": "Off-tracking depends on wheelbase and trailer length, not load height; high loads mainly raise rollover risk."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1129,7 +1129,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Secure tarp edges so wind cannot get under and tear the cover or unload cargo"
+        "text": "Secure tarp edges so wind cannot get under and tear the cover"
       },
       {
         "id": "b",
@@ -1145,7 +1145,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns.",
+    "explanation": "Wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns. A loose tarp can also unload cargo onto the road.",
     "distractorExplanations": {
       "b": "“Use the tarp as a substitute for required tiedowns” is incorrect because wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns.",
       "c": "“Leave the front edge loose so air can escape underneath” is incorrect because wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns.",
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The weight of the empty trailer"
+        "text": "The force at which the tiedown breaks during testing"
       },
       {
         "id": "b",
-        "text": "The maximum load the device is designed to secure under normal use"
+        "text": "The maximum load the device is designed to secure"
       },
       {
         "id": "c",
-        "text": "The driver's maximum driving hours"
+        "text": "The cargo weight the trailer can carry"
       },
       {
         "id": "d",
-        "text": "The tire ply rating"
+        "text": "The minimum tension a ratchet strap must be pulled to"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "WLL is used to ensure aggregate tiedown capacity meets cargo weight requirements under FMCSA securement rules.",
+    "explanation": "WLL is used to ensure aggregate tiedown capacity meets cargo weight requirements under FMCSA securement rules. WLL applies under normal use.",
     "distractorExplanations": {
-      "a": "Empty trailer weight is not WLL.",
-      "c": "HOS is unrelated to tiedown WLL.",
-      "d": "Tire ply is a separate rating."
+      "a": "That is breaking strength; WLL is a lower rated figure for normal service, set well below the break point.",
+      "c": "Trailer capacity is set by GVWR and axle ratings; WLL rates an individual tiedown or securement device.",
+      "d": "WLL is a maximum rated load for normal service, not a minimum tensioning target for straps."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase maximum trailer length"
+        "text": "Set the maximum overall length of trailers on interstate highways"
       },
       {
         "id": "b",
-        "text": "Replace CDL licensing"
+        "text": "Make sure each truck's GVWR matches its registration"
       },
       {
         "id": "c",
-        "text": "Eliminate the need for scales"
+        "text": "Balance braking force between the tractor and trailer"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Federal bridge formula spreads weight over axle groups so bridges are not overloaded by short, heavy combinations.",
     "distractorExplanations": {
-      "a": "Length rules are separate from bridge formula.",
-      "b": "CDL licensing remains required.",
-      "c": "Scales are still used for enforcement."
+      "a": "Length limits come from separate size rules; the bridge formula limits weight by the number and spacing of axles.",
+      "b": "Registration and GVWR are administrative ratings; the bridge formula limits weight on axle groups to protect bridges.",
+      "c": "Axle-spacing rules are about pavement and bridge loading, not brake balance between units."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "To prevent cargo from moving forward, backward, or sideways in transit"
+        "text": "To prevent cargo from moving forward, backward, or sideways"
       },
       {
         "id": "b",
-        "text": "To increase the tire load rating"
+        "text": "To distribute weight evenly over the axles to stay within legal limits"
       },
       {
         "id": "c",
-        "text": "To replace all required tiedowns in every load"
+        "text": "To protect cargo surfaces from tiedown strap damage"
       },
       {
         "id": "d",
-        "text": "To allow cargo to shift gradually during turns"
+        "text": "To lower the cargo's center of gravity on the trailer deck"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Blocking and bracing fill spaces or restrain cargo so acceleration, braking, and cornering do not cause dangerous movement.",
     "distractorExplanations": {
-      "b": "“To increase the tire load rating” is incorrect because blocking and bracing fill spaces or restrain cargo so acceleration, braking, and cornering do not cause dangerous movement.",
-      "c": "“To replace all required tiedowns in every load” is incorrect because blocking and bracing fill spaces or restrain cargo so acceleration, braking, and cornering do not cause dangerous movement.",
-      "d": "“To allow cargo to shift gradually during turns” is incorrect because blocking and bracing fill spaces or restrain cargo so acceleration, braking, and cornering do not cause dangerous movement."
+      "b": "Axle weight distribution is handled by where cargo is placed; blocking and bracing restrain cargo against movement in transit.",
+      "c": "Edge protectors guard cargo from straps; blocking and bracing are restraints that keep cargo from moving.",
+      "d": "Blocking and bracing do not change load height; they fill gaps and restrain cargo so it cannot shift."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Never after leaving the dock"
+        "text": "Within the first 25 miles, then only at the destination"
       },
       {
         "id": "b",
-        "text": "Within the first 50 miles and periodically thereafter as rules require"
+        "text": "Within the first 50 miles and periodically thereafter"
       },
       {
         "id": "c",
-        "text": "Only at state lines"
+        "text": "Within the first 100 miles and every 300 miles after"
       },
       {
         "id": "d",
-        "text": "Only if the shipper calls"
+        "text": "Within the first 150 miles, then at each duty change"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Federal securement rules require early and periodic inspections because loads can shift. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
+    "explanation": "Federal securement rules require early and periodic inspections because loads can shift. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction. Rechecks follow every 3 hours or 150 miles, whichever comes first.",
     "distractorExplanations": {
-      "a": "“Never after leaving the dock” is incorrect because federal securement rules require early and periodic inspections because loads can shift.",
-      "c": "“Only at state lines” is incorrect because federal securement rules require early and periodic inspections because loads can shift.",
-      "d": "“Only if the shipper calls” is incorrect because federal securement rules require early and periodic inspections because loads can shift."
+      "a": "Federal rules require rechecks every 3 hours or 150 miles after the first check, not just once more at delivery.",
+      "c": "The first check is due within 50 miles, then every 3 hours or 150 miles, whichever comes first—not 100 and 300.",
+      "d": "150 miles is the recheck interval, not the first-check point; the first inspection comes within 50 miles."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase the chance of rollover"
+        "text": "Increase traction by putting more weight on the drive axles"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Bypass bridge formula limits"
+        "text": "Reduce the number of tiedowns the cargo requires"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for any tie-downs"
+        "text": "Shorten stopping distance on wet roads"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A lower center of gravity reduces rollover risk and improves handling. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
     "distractorExplanations": {
-      "a": "“Increase the chance of rollover” is incorrect because a lower center of gravity reduces rollover risk and improves handling.",
-      "c": "“Bypass bridge formula limits” is incorrect because a lower center of gravity reduces rollover risk and improves handling.",
-      "d": "“Eliminate the need for any tie-downs” is incorrect because a lower center of gravity reduces rollover risk and improves handling."
+      "a": "Drive-axle loading depends on fore-aft position, not height; keeping cargo low and centered mainly lowers the center of gravity.",
+      "c": "Tiedown count is set by cargo length and weight rules; low, centered placement improves stability, not securement count.",
+      "d": "Stopping distance is driven by speed, weight and brakes; load height mainly affects rollover and handling."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "WLL is irrelevant if the chain looks new"
+        "text": "WLL equals the breaking strength printed on the tiedown"
       },
       {
         "id": "b",
-        "text": "Aggregate WLL of tiedowns must meet required securement strength for the cargo"
+        "text": "Aggregate WLL of tiedowns must meet required securement strength"
       },
       {
         "id": "c",
-        "text": "Any rope may substitute for rated tiedowns"
+        "text": "Aggregate WLL must equal at least twice the cargo weight"
       },
       {
         "id": "d",
-        "text": "WLL only applies to hazardous materials placards"
+        "text": "The strongest single tiedown sets the WLL for the whole load"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Securement strength is based on rated WLL; inadequate capacity is a violation and a hazard. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
     "distractorExplanations": {
-      "a": "“WLL is irrelevant if the chain looks new” is incorrect because securement strength is based on rated WLL; inadequate capacity is a violation and a hazard.",
-      "c": "“Any rope may substitute for rated tiedowns” is incorrect because securement strength is based on rated WLL; inadequate capacity is a violation and a hazard.",
-      "d": "“WLL only applies to hazardous materials placards” is incorrect because securement strength is based on rated WLL; inadequate capacity is a violation and a hazard."
+      "a": "Breaking strength is much higher than WLL; securement calculations use the lower WLL figure.",
+      "c": "The federal rule is aggregate WLL of at least one-half the cargo weight, not twice the cargo weight.",
+      "d": "Aggregate WLL sums the tiedowns; one strong strap does not set the capacity for the entire load."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Axle overloads can damage roads/bridges and create enforcement violations"
+        "text": "Axle overloads can damage roads/bridges and create violations"
       },
       {
         "id": "b",
-        "text": "Axle weights never matter under FMCSA rules"
+        "text": "Legal GVW makes each axle legal under federal weight rules"
       },
       {
         "id": "c",
-        "text": "Only fuel tanks count toward axle weight"
+        "text": "Axle overloads only affect tire wear, not legality"
       },
       {
         "id": "d",
-        "text": "Overloading one axle always reduces stopping distance"
+        "text": "Poor distribution lowers the GCWR the tractor may pull"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Bridge formula and axle limits protect infrastructure; illegal axle loads can cite a legal GVW load. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
     "distractorExplanations": {
-      "b": "“Axle weights never matter under FMCSA rules” is incorrect because bridge formula and axle limits protect infrastructure; illegal axle loads can cite a legal GVW load.",
-      "c": "“Only fuel tanks count toward axle weight” is incorrect because bridge formula and axle limits protect infrastructure; illegal axle loads can cite a legal GVW load.",
-      "d": "“Overloading one axle always reduces stopping distance” is incorrect because bridge formula and axle limits protect infrastructure; illegal axle loads can cite a legal GVW load."
+      "b": "Each axle and axle group has its own limit; a legal gross weight can still put one axle over its limit.",
+      "c": "Overloaded axles are citable violations and can damage roads and bridges; the issue goes well beyond tire wear.",
+      "d": "GCWR is a fixed manufacturer rating; poor distribution creates axle overloads, not a lower rating."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1463,7 +1463,7 @@
       },
       {
         "id": "b",
-        "text": "Adequate covering or containment to prevent cargo loss onto the roadway"
+        "text": "Adequate covering or containment to prevent cargo loss"
       },
       {
         "id": "c",
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Get everyone away, call emergency services, and use proper extinguishing methods—do not try to drive long distances on a burning tire"
+        "text": "Get everyone away, call emergency services, and use proper extinguishing methods"
       },
       {
         "id": "b",
-        "text": "Continue driving at highway speed until the tire burns out"
+        "text": "Spray water briefly, then drive on once the flames are out"
       },
       {
         "id": "c",
-        "text": "Park beside combustible cargo and open the trailer doors"
+        "text": "Open the trailer doors to check whether the fire reached the cargo"
       },
       {
         "id": "d",
-        "text": "Stand close to the burning tire because it cannot explode"
+        "text": "Keep driving to the nearest exit ramp so responders can reach you more easily"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Tire fires can rekindle and spread to cargo; evacuate, request help, and use appropriate firefighting guidance.",
+    "explanation": "Tire fires can rekindle and spread to cargo; evacuate, request help, and use appropriate firefighting guidance. Do not drive on a burning tire.",
     "distractorExplanations": {
-      "b": "“Continue driving at highway speed until the tire burns out” is incorrect because tire fires can rekindle and spread to cargo; evacuate, request help, and use appropriate firefighting guidance.",
-      "c": "“Park beside combustible cargo and open the trailer doors” is incorrect because tire fires can rekindle and spread to cargo; evacuate, request help, and use appropriate firefighting guidance.",
-      "d": "“Stand close to the burning tire because it cannot explode” is incorrect because tire fires can rekindle and spread to cargo; evacuate, request help, and use appropriate firefighting guidance."
+      "b": "Tire fires can rekindle after the flames disappear; driving on risks the fire spreading to the trailer and cargo.",
+      "c": "Opening the doors feeds oxygen to a cargo fire; the manual says keep them closed and call for help.",
+      "d": "Moving the truck with a burning tire spreads the fire to the trailer; stop safely, get people away and call for help."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "To measure following distance"
+        "text": "To mark where a tow truck should park behind the CMV"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "To reset the ELD"
+        "text": "To satisfy the rule only on divided highways at night"
       },
       {
         "id": "d",
-        "text": "To secure cargo inside the trailer"
+        "text": "To mark the safe zone where passengers should wait outside"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Advance warning devices give other drivers time to slow or change lanes around a disabled CMV. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
     "distractorExplanations": {
-      "a": "Triangles are not for measuring following distance.",
-      "c": "ELD reset is electronic, not triangle-related.",
-      "d": "Triangles do not secure cargo."
+      "a": "Triangles give approaching drivers advance warning; they are not placed for tow trucks or repair crews.",
+      "c": "Warning devices are required whenever a CMV is stopped on the road or shoulder, day or night, on any highway type.",
+      "d": "Passengers wait well off the road; triangles exist to warn approaching traffic, not to mark a waiting area."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Shift to a higher gear to increase downhill speed"
+        "text": "Shift into neutral to save the engine"
       },
       {
         "id": "b",
-        "text": "Turn off the engine and coast while steering toward traffic"
+        "text": "Turn off the engine so the compression slows the truck"
       },
       {
         "id": "c",
-        "text": "Jump from the cab before the vehicle reaches an escape ramp"
+        "text": "Stay on the road and ride it out to the bottom of the grade"
       },
       {
         "id": "d",
-        "text": "Look for an escape ramp or safe escape path and downshift if possible while using remaining braking carefully"
+        "text": "Look for an escape ramp or safe escape path"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Escape ramps are designed for runaway vehicles; maintain control, warn others, and use any remaining system carefully—never jump out.",
+    "explanation": "Escape ramps are designed for runaway vehicles; maintain control, warn others, and use any remaining system carefully—never jump out. Downshift if possible and use any remaining braking carefully.",
     "distractorExplanations": {
-      "a": "“Shift to a higher gear to increase downhill speed” is incorrect because escape ramps are designed for runaway vehicles; maintain control, warn others, and use any remaining system carefully—never jump out.",
-      "b": "“Turn off the engine and coast while steering toward traffic” is incorrect because escape ramps are designed for runaway vehicles; maintain control, warn others, and use any remaining system carefully—never jump out.",
-      "c": "“Jump from the cab before the vehicle reaches an escape ramp” is incorrect because escape ramps are designed for runaway vehicles; maintain control, warn others, and use any remaining system carefully—never jump out."
+      "a": "Neutral removes engine braking and you may not get back into gear, leaving no retarding force at all.",
+      "b": "Shutting off the engine can cost power steering and air supply; keep the engine running in a low gear.",
+      "c": "Manuals say to use an escape ramp or escape route if one is available rather than ride out a runaway on the road."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Protect the scene, notify authorities, and exchange required information; help injured if trained/safe"
+        "text": "Protect the scene, notify authorities, and exchange required information"
       },
       {
         "id": "b",
-        "text": "Leave immediately to avoid paperwork"
+        "text": "Move on once the other driver agrees to settle privately"
       },
       {
         "id": "c",
-        "text": "Move all vehicles into traffic lanes for photos"
+        "text": "Wait in the cab until police arrive before setting out any triangles"
       },
       {
         "id": "d",
-        "text": "Admit full legal fault on the spot to speed things up"
+        "text": "Report the crash to your carrier first, then call police if asked"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Post-crash duties include scene safety, notification, and required reports—without creating new hazards or improper admissions.",
+    "explanation": "Post-crash duties include scene safety, notification, and required reports—without creating new hazards or improper admissions. Help the injured only if trained and it is safe.",
     "distractorExplanations": {
-      "b": "Leaving can be hit-and-run.",
-      "c": "Blocking lanes unnecessarily increases secondary crashes.",
-      "d": "Fault determination is for investigators/insurers; stick to facts."
+      "b": "Crash duties include notifying police and exchanging required information; a private agreement does not replace them.",
+      "c": "Protecting the scene with flashers and warning devices comes first; waiting for police leaves traffic unwarned.",
+      "d": "Authorities are notified as required at the scene; the carrier call does not replace or delay notifying police."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1661,11 +1661,11 @@
       },
       {
         "id": "b",
-        "text": "Set navigation and secure loose items before moving, then stop safely for complex tasks"
+        "text": "Set navigation and secure loose items before moving"
       },
       {
         "id": "c",
-        "text": "Hold a phone below the window so other drivers cannot see it"
+        "text": "Use a hand-held phone only for short calls under one minute"
       },
       {
         "id": "d",
@@ -1673,10 +1673,10 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped.",
+    "explanation": "Preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped. Stop safely for complex tasks.",
     "distractorExplanations": {
       "a": "“Read dispatch messages while moving if traffic is light” is incorrect because preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped.",
-      "c": "“Hold a phone below the window so other drivers cannot see it” is incorrect because preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped.",
+      "c": "FMCSA bans hand-held phone use while driving a CMV for calls of any length; only hands-free, single-touch use is allowed.",
       "d": "“Look away from the road whenever an alert sounds” is incorrect because preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped."
     },
     "difficulty": "medium",
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A personal music player and spare phone charger"
+        "text": "A first-aid kit and flares in place of triangles"
       },
       {
         "id": "b",
-        "text": "Extra cargo straps instead of warning devices"
+        "text": "Spare fuses and a fire extinguisher, with flashers instead of triangles"
       },
       {
         "id": "c",
-        "text": "Fire extinguisher and warning devices (eg, triangles) meeting regulatory specs"
+        "text": "Fire extinguisher and warning devices meeting regulatory specs"
       },
       {
         "id": "d",
-        "text": "Only a flashlight, regardless of vehicle or cargo"
+        "text": "Two warning triangles and a first-aid kit for the driver"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Federal rules require specific emergency equipment so drivers can warn traffic and fight small fires. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
     "distractorExplanations": {
-      "a": "“A personal music player and spare phone charger” is incorrect because federal rules require specific emergency equipment so drivers can warn traffic and fight small fires.",
-      "b": "“Extra cargo straps instead of warning devices” is incorrect because federal rules require specific emergency equipment so drivers can warn traffic and fight small fires.",
-      "d": "“Only a flashlight, regardless of vehicle or cargo” is incorrect because federal rules require specific emergency equipment so drivers can warn traffic and fight small fires."
+      "a": "Federal rules require three reflective triangles; flares may supplement them, and a first-aid kit is not a required item.",
+      "b": "Four-way flashers do not replace warning devices; three triangles are required along with the fire extinguisher.",
+      "d": "The rule calls for three warning devices plus a rated fire extinguisher; two triangles and a first-aid kit do not meet it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1723,11 +1723,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave all lights off to save batteries"
+        "text": "Use flashers and set one triangle 10 feet behind the truck"
       },
       {
         "id": "b",
-        "text": "Stand in the travel lane to flag traffic"
+        "text": "Set triangles only if the stop lasts over 10 minutes"
       },
       {
         "id": "c",
@@ -1735,14 +1735,14 @@
       },
       {
         "id": "d",
-        "text": "Use flashers, place triangles at required distances, and stay visible/safe"
+        "text": "Use flashers and place triangles at required distances"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Visibility and advance warning protect you and other road users; never stand in traffic lanes. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "Visibility and advance warning protect you and other road users; never stand in traffic lanes. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option. Stay visible and off the travel lanes.",
     "distractorExplanations": {
-      "a": "Lights off make you invisible.",
-      "b": "Standing in lanes is extremely dangerous.",
+      "a": "One triangle is not enough; the rule calls for three, at 10 and 100 feet behind and 100 feet ahead on a two-way road.",
+      "b": "Warning devices go out as soon as possible and within 10 minutes of stopping, not just for stops longer than that.",
       "c": "Duration does not remove warning requirements."
     },
     "difficulty": "medium",
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The vehicle gets a free pass for 24 hours"
+        "text": "The vehicle may finish its current trip but must be repaired afterward"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "Only the trailer lights need cleaning"
+        "text": "The driver may drive on but receives a fine and points"
       },
       {
         "id": "d",
-        "text": "The driver must increase speed to the terminal"
+        "text": "The vehicle may be driven to the nearest repair shop only"
       }
     ],
     "correctOptionId": "b",
     "explanation": "OOS orders prohibit operation until defects or driver violations are fixed per inspection criteria. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
     "distractorExplanations": {
-      "a": "There is no free-pass interpretation.",
-      "c": "OOS covers serious safety violations, not cosmetic cleaning only.",
-      "d": "Speeding to terminal while OOS is illegal."
+      "a": "An out-of-service order bars operation immediately; the trip cannot be completed until the violation is corrected.",
+      "c": "OOS is not just a citation; neither vehicle nor driver may operate until the condition is fixed.",
+      "d": "An OOS vehicle may not be driven under its own power before repair; it is fixed on site or towed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1855,27 +1855,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Slam on the brakes immediately and turn hard"
+        "text": "Brake firmly at once to slow before the truck pulls"
       },
       {
         "id": "b",
-        "text": "Hold the wheel firmly, ease off the accelerator, and steer to a safe stop"
+        "text": "Hold the wheel firmly and ease off the accelerator"
       },
       {
         "id": "c",
-        "text": "Accelerate to straighten the truck"
+        "text": "Steer hard toward the shoulder to get off the road fast"
       },
       {
         "id": "d",
-        "text": "Shift to neutral and leave the roadway uncontrolled"
+        "text": "Shift to neutral and coast to the shoulder"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Sudden hard braking can worsen loss of control; grip, stabilize, then stop safely. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "Sudden hard braking can worsen loss of control; grip, stabilize, then stop safely. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option. Then steer to a safe stop.",
     "distractorExplanations": {
-      "a": "“Slam on the brakes immediately and turn hard” is incorrect because sudden hard braking can worsen loss of control; grip, stabilize, then stop safely.",
-      "c": "“Accelerate to straighten the truck” is incorrect because sudden hard braking can worsen loss of control; grip, stabilize, then stop safely.",
-      "d": "“Shift to neutral and leave the roadway uncontrolled” is incorrect because sudden hard braking can worsen loss of control; grip, stabilize, then stop safely."
+      "a": "Braking hard after a blowout can make the vehicle pull or skid; stay off the brake until the vehicle slows.",
+      "c": "Abrupt steering after a steer-tire blowout can cause loss of control; hold firmly and steer gently once slowed.",
+      "d": "Neutral removes the drive force that helps stabilize the truck; hold the wheel, ease off and stay in gear."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1888,27 +1888,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only crashes that occur in a personal car"
+        "text": "Any at-fault crash, even when no citation is issued"
       },
       {
         "id": "b",
-        "text": "Serious traffic offenses and certain railroad-crossing or alcohol/drug violations in a CMV"
+        "text": "Serious traffic offenses and certain alcohol/drug violations in a CMV"
       },
       {
         "id": "c",
-        "text": "Having too many preventive maintenance records"
+        "text": "A single speeding ticket for 10 mph over the limit in a CMV"
       },
       {
         "id": "d",
-        "text": "Using engine brakes on a downgrade"
+        "text": "An hours-of-service log violation found at a roadside inspection"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Major and serious offenses (and other listed violations) can disqualify a CDL. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "Major and serious offenses (and other listed violations) can disqualify a CDL. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option. Certain railroad-crossing violations also disqualify.",
     "distractorExplanations": {
-      "a": "“Only crashes that occur in a personal car” is incorrect because major and serious offenses (and other listed violations) can disqualify a CDL.",
-      "c": "“Having too many preventive maintenance records” is incorrect because major and serious offenses (and other listed violations) can disqualify a CDL.",
-      "d": "“Using engine brakes on a downgrade” is incorrect because major and serious offenses (and other listed violations) can disqualify a CDL."
+      "a": "Crashes alone do not trigger disqualification; disqualifying offenses are listed convictions such as DUI or serious violations.",
+      "c": "Excessive speeding is a serious offense at 15 mph or more over the limit, and it takes two serious offenses in 3 years to disqualify.",
+      "d": "HOS violations bring OOS orders and fines, but they are not listed CDL disqualifying offenses under 49 CFR 383.51."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1925,7 +1925,7 @@
       },
       {
         "id": "b",
-        "text": "Make sure there is enough room to clear the tracks completely before entering"
+        "text": "Make sure there is enough room to clear the tracks"
       },
       {
         "id": "c",
@@ -1954,7 +1954,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Steer into the skid and avoid overcorrecting while reducing demand on traction"
+        "text": "Steer into the skid and avoid overcorrecting"
       },
       {
         "id": "b",

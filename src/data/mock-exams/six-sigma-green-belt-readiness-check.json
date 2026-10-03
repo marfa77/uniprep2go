@@ -7,15 +7,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Design, Make, Assess, Implement, Close"
+        "text": "Define, Measure, Analyze, Design, Verify"
       },
       {
         "id": "b",
-        "text": "Data, Mean, Average, Infer, Chart"
+        "text": "Design, Measure, Analyze, Improve, Control"
       },
       {
         "id": "c",
-        "text": "Deploy, Manage, Audit, Inspect, Certify"
+        "text": "Define, Measure, Assess, Implement, Confirm"
       },
       {
         "id": "d",
@@ -25,9 +25,9 @@
     "correctOptionId": "d",
     "explanation": "Define, Measure, Analyze, Improve, Control.",
     "distractorExplanations": {
-      "a": "Not the best answer: Design, Make, Assess, Implement, Close.",
-      "b": "Not the best answer: Data, Mean, Average, Infer, Chart.",
-      "c": "Not the best answer: Deploy, Manage, Audit, Inspect, Certify."
+      "a": "Swaps Improve/Control for Design/Verify; that is DMADV (Design for Six Sigma) for new processes, not DMAIC.",
+      "b": "Starts with Design; DMAIC opens by defining the problem, scope and CTQs before any solution is designed.",
+      "c": "Assess, Implement and Confirm are invented phase names; the real DMAIC phases are Analyze, Improve and Control."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Buying new machines first"
+        "text": "Baseline data, gage R&R, process capability"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Firing staff"
+        "text": "Root-cause verification with hypothesis tests"
       },
       {
         "id": "d",
-        "text": "Skipping voice of customer"
+        "text": "Pilot solutions, control plans, handover"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Problem statement, scope, CTQs, stakeholders.",
     "distractorExplanations": {
-      "a": "Not the best answer: Buying new machines first.",
-      "c": "Not the best answer: Firing staff.",
-      "d": "Not the best answer: Skipping voice of customer."
+      "a": "Baseline data, gage R&R and capability are Measure-phase deliverables, done after Define has set scope.",
+      "c": "Verifying root causes with hypothesis tests is the Analyze phase, two phases after Define.",
+      "d": "Piloting, control plans and handover belong to Improve and Control, the last two DMAIC phases."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -73,15 +73,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Calculate p-value"
+        "text": "Rank failure modes by severity, occurrence, detection"
       },
       {
         "id": "b",
-        "text": "Replace FMEA"
+        "text": "Detail every process step with decision diamonds"
       },
       {
         "id": "c",
-        "text": "Set salary"
+        "text": "Sort defect categories from most to least frequent"
       },
       {
         "id": "d",
@@ -91,9 +91,9 @@
     "correctOptionId": "d",
     "explanation": "Map suppliers, inputs, process, outputs, customers.",
     "distractorExplanations": {
-      "a": "Not the best answer: Calculate p-value.",
-      "b": "Not the best answer: Replace FMEA.",
-      "c": "Not the best answer: Set salary."
+      "a": "Ranking failure modes by S/O/D describes an FMEA, not a SIPOC high-level process map.",
+      "b": "A SIPOC is a high-level 4-7 step view; step-by-step decision diamonds are a detailed flowchart.",
+      "c": "Sorting defect categories by frequency is a Pareto chart, not a SIPOC scoping map."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Brainstorming"
+        "text": "Root-cause hypotheses and testing"
       },
       {
         "id": "b",
-        "text": "Control charts only after close"
+        "text": "Solution piloting and cost-benefit"
       },
       {
         "id": "c",
-        "text": "Ignoring variation"
+        "text": "Response plans and process audits"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Baseline metrics and data quality.",
     "distractorExplanations": {
-      "a": "Not the best answer: Brainstorming only.",
-      "b": "Not the best answer: Control charts only after close.",
-      "c": "Not the best answer: Ignoring variation."
+      "a": "Generating and testing root-cause hypotheses is the Analyze phase, which follows Measure.",
+      "b": "Piloting solutions and weighing cost-benefit happens in Improve, after the baseline is set.",
+      "c": "Response plans and process audits sustain gains in the Control phase, not in Measure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Random changes"
+        "text": "Baseline sigma level of the process"
       },
       {
         "id": "c",
-        "text": "More meetings"
+        "text": "Sponsor sign-off on project scope"
       },
       {
         "id": "d",
-        "text": "Celebration"
+        "text": "Controls to sustain the gains"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Root causes of variation/defects.",
     "distractorExplanations": {
-      "b": "Not the best answer: Random changes.",
-      "c": "Not the best answer: More meetings only.",
-      "d": "Not the best answer: Celebration."
+      "b": "Establishing the baseline sigma level is a Measure-phase output that Analyze builds on.",
+      "c": "Sponsor sign-off on scope is a Define-phase charter task, not the purpose of Analyze.",
+      "d": "Controls to sustain gains are the Control phase; Analyze finds and verifies root causes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -176,23 +176,23 @@
       },
       {
         "id": "b",
-        "text": "Permanent rollout with no pilot"
+        "text": "Baseline capability indices"
       },
       {
         "id": "c",
-        "text": "Only slogans"
+        "text": "Gage repeatability studies"
       },
       {
         "id": "d",
-        "text": "Only new logos"
+        "text": "Root-cause hypotheses"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Countermeasures and pilots.",
     "distractorExplanations": {
-      "b": "Not the best answer: Permanent rollout with no pilot always.",
-      "c": "Not the best answer: Only slogans.",
-      "d": "Not the best answer: Only new logos."
+      "b": "Baseline capability indices are calculated in Measure, before any countermeasure exists.",
+      "c": "Gage repeatability studies (MSA) validate the measurement system in the Measure phase.",
+      "d": "Root-cause hypotheses are tested in Analyze; Improve tests solutions that address them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -209,23 +209,23 @@
       },
       {
         "id": "b",
-        "text": "Immediate abandonment"
+        "text": "Gains via one-time final inspection of output"
       },
       {
         "id": "c",
-        "text": "Secret tribal knowledge"
+        "text": "Gains via the project team running the process"
       },
       {
         "id": "d",
-        "text": "No documentation"
+        "text": "Gains via retraining only when customers complain"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Gains via standards, monitoring, response plans.",
     "distractorExplanations": {
-      "b": "Not the best answer: Immediate abandonment.",
-      "c": "Not the best answer: Secret tribal knowledge only.",
-      "d": "Not the best answer: No documentation."
+      "b": "One-time final inspection detects defects but does not hold the process; Control uses ongoing monitoring.",
+      "c": "Control hands the process to the process owner; the project team does not keep running it.",
+      "d": "Waiting for customer complaints is reactive; a control plan triggers action on process signals."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -238,7 +238,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only jokes"
+        "text": "Detailed root-cause analysis and verified Xs"
       },
       {
         "id": "b",
@@ -246,19 +246,19 @@
       },
       {
         "id": "c",
-        "text": "Only budget for parties"
+        "text": "Final control plan and response procedures"
       },
       {
         "id": "d",
-        "text": "No metrics"
+        "text": "Chosen solution and full implementation plan"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Business case, scope, goals, timeline, team.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only jokes.",
-      "c": "Not the best answer: Only budget for parties.",
-      "d": "Not the best answer: No metrics."
+      "a": "Verified root causes (Xs) come out of Analyze; the charter is written before analysis starts.",
+      "c": "The control plan and response procedures are Control-phase deliverables, not charter content.",
+      "d": "A charter should not presuppose a solution; solutions are selected in the Improve phase."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -271,11 +271,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Cost to Quit"
+        "text": "Cost to Quality internal spending targets"
       },
       {
         "id": "b",
-        "text": "Chart the Quartile"
+        "text": "Control the Quality process limits"
       },
       {
         "id": "c",
@@ -283,15 +283,15 @@
       },
       {
         "id": "d",
-        "text": "Certified Team Quiz"
+        "text": "Critical to Quantity production volume goals"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Critical to Quality customer requirements.",
     "distractorExplanations": {
-      "a": "Not the best answer: Cost to Quit.",
-      "b": "Not the best answer: Chart the Quartile.",
-      "d": "Not the best answer: Certified Team Quiz."
+      "a": "Confuses CTQ with Cost of Quality (COQ), which tracks prevention, appraisal and failure costs.",
+      "b": "Process control limits come from control charts; CTQ is a customer requirement, not a limit.",
+      "d": "CTQ stands for Critical to Quality, a measurable customer need, not a production volume goal."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,11 +370,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Unrelated vanity"
+        "text": "The easiest X to measure"
       },
       {
         "id": "b",
-        "text": "Secret"
+        "text": "Any upstream input (X)"
       },
       {
         "id": "c",
@@ -382,15 +382,15 @@
       },
       {
         "id": "d",
-        "text": "Changed weekly randomly"
+        "text": "A consequential metric"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Linked to the problem Y.",
     "distractorExplanations": {
-      "a": "Not the best answer: Unrelated vanity.",
-      "b": "Not the best answer: Secret.",
-      "d": "Not the best answer: Changed weekly randomly."
+      "a": "Ease of measurement does not make a metric primary; the primary metric must be the project Y.",
+      "b": "Inputs (Xs) are potential causes; the primary metric measures the output Y the project improves.",
+      "d": "Consequential (secondary) metrics guard against side effects; they are not the primary metric."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -403,11 +403,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Avoid sponsors"
+        "text": "Rank root causes by impact"
       },
       {
         "id": "b",
-        "text": "Hide results"
+        "text": "Set control limits for the Y"
       },
       {
         "id": "c",
@@ -415,15 +415,15 @@
       },
       {
         "id": "d",
-        "text": "Skip tollgates"
+        "text": "Calculate project financial benefits"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Manage influence and communication.",
     "distractorExplanations": {
-      "a": "Not the best answer: Avoid sponsors.",
-      "b": "Not the best answer: Hide results.",
-      "d": "Not the best answer: Skip tollgates."
+      "a": "Ranking root causes by impact is Pareto/Analyze work; stakeholder analysis maps people and influence.",
+      "b": "Control limits are calculated from process data on a control chart, not from stakeholder analysis.",
+      "d": "Financial benefits are estimated by finance/benefit tracking; stakeholder analysis targets buy-in."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Coffee quality"
+        "text": "Control limits"
       },
       {
         "id": "c",
-        "text": "Desk cleanliness"
+        "text": "Gage accuracy"
       },
       {
         "id": "d",
-        "text": "Parking"
+        "text": "Defect counts"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Phase readiness.",
     "distractorExplanations": {
-      "b": "Not the best answer: Coffee quality.",
-      "c": "Not the best answer: Desk cleanliness.",
-      "d": "Not the best answer: Parking."
+      "b": "Control limits are computed on control charts; a tollgate reviews whether a phase is complete.",
+      "c": "Gage accuracy is checked in an MSA during Measure; the tollgate reviews phase deliverables overall.",
+      "d": "Defect counts are data collected in Measure; a tollgate is a go/no-go review of phase readiness."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -473,23 +473,23 @@
       },
       {
         "id": "b",
-        "text": "Replace Master Black Belts"
+        "text": "Lead projects full-time and coach Black Belts"
       },
       {
         "id": "c",
-        "text": "Only take quizzes"
+        "text": "Set strategy and select the project portfolio"
       },
       {
         "id": "d",
-        "text": "Avoid data"
+        "text": "Mentor Black Belts on advanced statistics"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Lead projects part-time with Black Belt support.",
     "distractorExplanations": {
-      "b": "Not the best answer: Replace Master Black Belts always.",
-      "c": "Not the best answer: Only take quizzes.",
-      "d": "Not the best answer: Avoid data."
+      "b": "Full-time project leadership describes a Black Belt; coaching Black Belts is the Master Black Belt role.",
+      "c": "Setting strategy and choosing the portfolio is the Champion/executive role, not a Green Belt duty.",
+      "d": "Mentoring Black Belts on advanced statistics is a Master Black Belt responsibility."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -502,7 +502,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Any change"
+        "text": "A unit with one or more errors"
       },
       {
         "id": "b",
@@ -510,19 +510,19 @@
       },
       {
         "id": "c",
-        "text": "A meeting"
+        "text": "Any variation from the target"
       },
       {
         "id": "d",
-        "text": "A green belt"
+        "text": "A chance for an error to occur"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Failure to meet a requirement.",
     "distractorExplanations": {
-      "a": "Not the best answer: Any change.",
-      "c": "Not the best answer: A meeting.",
-      "d": "Not the best answer: A green belt."
+      "a": "A unit with one or more errors is a defective; a defect is each individual failure to meet a requirement.",
+      "c": "Variation within specification is not a defect; only failing a requirement counts as a defect.",
+      "d": "A chance for an error to occur is an opportunity, the denominator in DPO/DPMO, not a defect."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Dollars per manager office"
+        "text": "Defectives per million units"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Days per monthly outing"
+        "text": "Defects per million units produced"
       },
       {
         "id": "d",
-        "text": "Drawings per marketing ops"
+        "text": "Defects per month of operation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Defects per million opportunities.",
     "distractorExplanations": {
-      "a": "Not the best answer: Dollars per manager office.",
-      "c": "Not the best answer: Days per monthly outing.",
-      "d": "Not the best answer: Drawings per marketing ops."
+      "a": "Defectives per million units is PPM; DPMO counts defects against opportunities, not units.",
+      "c": "Dividing by units gives DPU x 1,000,000; DPMO divides by units times opportunities per unit.",
+      "d": "DPMO is a rate per million opportunities, not a time-based count per month of operation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,7 +601,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Always exact for counts of rare events"
+        "text": "Skewed right; used to model counts of rare events"
       },
       {
         "id": "b",
@@ -609,19 +609,19 @@
       },
       {
         "id": "c",
-        "text": "A control chart type"
+        "text": "Flat; every value in the range equally likely"
       },
       {
         "id": "d",
-        "text": "A charter template"
+        "text": "Bimodal; it signals two mixed process streams"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Bell-shaped; many tools assume approximate normality.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always exact for counts of rare events.",
-      "c": "Not the best answer: A control chart type only.",
-      "d": "Not the best answer: A charter template."
+      "a": "Right-skewed counts of rare events describe the Poisson distribution, not the symmetric normal curve.",
+      "c": "Equal likelihood across a range is the uniform distribution; the normal is peaked at the mean.",
+      "d": "A bimodal shape signals mixed streams and is non-normal; the normal distribution has one peak."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "Identical"
+        "text": "Distinguish operator errors from machine errors"
       },
       {
         "id": "c",
-        "text": "Both ignored"
+        "text": "Separate variation inside vs outside spec limits"
       },
       {
         "id": "d",
-        "text": "Both mean sabotage"
+        "text": "Separate short-term from long-term capability"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Distinguish unusual signals from routine variation.",
     "distractorExplanations": {
-      "b": "Not the best answer: Identical.",
-      "c": "Not the best answer: Both ignored.",
-      "d": "Not the best answer: Both mean sabotage only."
+      "b": "Special vs common cause is about signal type, not whether a person or a machine produced it.",
+      "c": "Confuses specification limits with control limits; special causes are judged against control limits.",
+      "d": "Short- vs long-term capability (Cp vs Pp) is a capability concept, not the special/common distinction."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Replace all capability"
+        "text": "Compare output to customer spec limits"
       },
       {
         "id": "c",
-        "text": "Set product price"
+        "text": "Rank defect types by frequency"
       },
       {
         "id": "d",
-        "text": "Hire staff"
+        "text": "Show correlation between two variables"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Monitor process stability over time.",
     "distractorExplanations": {
-      "b": "Not the best answer: Replace all capability.",
-      "c": "Not the best answer: Set product price.",
-      "d": "Not the best answer: Hire staff."
+      "b": "Comparing output to spec limits is capability analysis; control charts use process-derived limits.",
+      "c": "Ranking defect types by frequency is a Pareto chart, not a control chart.",
+      "d": "Correlation between two variables is shown on a scatter plot, not a control chart."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Absolute truth"
+        "text": "The probability that the null hypothesis is true"
       },
       {
         "id": "b",
@@ -708,19 +708,19 @@
       },
       {
         "id": "c",
-        "text": "Sample size alone"
+        "text": "Size of the practical effect observed"
       },
       {
         "id": "d",
-        "text": "Customer happiness alone"
+        "text": "Power to detect a true difference"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Evidence against a null hypothesis in context.",
     "distractorExplanations": {
-      "a": "Not the best answer: Absolute truth always.",
-      "c": "Not the best answer: Sample size alone.",
-      "d": "Not the best answer: Customer happiness alone."
+      "a": "Classic misreading: the p-value is the probability of data this extreme if H0 is true, not P(H0 true).",
+      "c": "Effect size measures practical magnitude; a tiny p-value can accompany a trivial effect.",
+      "d": "Power (1 - beta) is the chance of detecting a real difference; it is set by n, alpha and effect size."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -766,11 +766,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always n=2"
+        "text": "Bias reduction vs cost"
       },
       {
         "id": "b",
-        "text": "Always census"
+        "text": "Normality vs capability"
       },
       {
         "id": "c",
@@ -778,15 +778,15 @@
       },
       {
         "id": "d",
-        "text": "Irrelevant"
+        "text": "Stability vs alpha"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Precision vs cost/time.",
     "distractorExplanations": {
-      "a": "Not the best answer: Always n=2.",
-      "b": "Not the best answer: Always census.",
-      "d": "Not the best answer: Irrelevant."
+      "a": "A larger sample reduces random error, not bias; biased sampling stays biased at any sample size.",
+      "b": "Normality and capability are data properties, not what you trade off when choosing sample size.",
+      "d": "Alpha is chosen separately and process stability is checked on charts; neither is the n tradeoff."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Only paint color"
+        "text": "Process capability Cp/Cpk against spec limits"
       },
       {
         "id": "c",
-        "text": "Only Wi-Fi"
+        "text": "Process stability via X-bar/R control charts"
       },
       {
         "id": "d",
-        "text": "Only overtime"
+        "text": "Sample size and power for hypothesis tests"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Gage bias/linearity/repeatability/reproducibility.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only paint color.",
-      "c": "Not the best answer: Only Wi-Fi.",
-      "d": "Not the best answer: Only overtime."
+      "b": "Cp/Cpk measure the process against specs; MSA checks the gage first so capability data can be trusted.",
+      "c": "X-bar/R charts monitor process stability; MSA evaluates the measurement system, not the process.",
+      "d": "Sample size and power are planning steps for hypothesis tests, not measurement system checks."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -832,11 +832,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Opinions"
+        "text": "Control limits to specification limits"
       },
       {
         "id": "b",
-        "text": "Logos"
+        "text": "Every population value to the target"
       },
       {
         "id": "c",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "Shift gossip"
+        "text": "Expert opinions to a stated benchmark"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Data to a claim about a population.",
     "distractorExplanations": {
-      "a": "Not the best answer: Opinions only.",
-      "b": "Not the best answer: Logos.",
-      "d": "Not the best answer: Shift gossip."
+      "a": "Comparing control limits to spec limits is a capability view, not a statistical hypothesis test.",
+      "b": "Measuring every population value is a census; hypothesis tests infer from a sample to a population.",
+      "d": "Hypothesis tests use sample data, not expert opinion, to judge a claim about a population."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,11 +898,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace DMAIC"
+        "text": "Prove that X causes the Y"
       },
       {
         "id": "b",
-        "text": "Prove ethics"
+        "text": "Compare two variances"
       },
       {
         "id": "c",
@@ -910,15 +910,15 @@
       },
       {
         "id": "d",
-        "text": "Set vacations"
+        "text": "Rank defects by count"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Relate Y to X predictors.",
     "distractorExplanations": {
-      "a": "Not the best answer: Replace DMAIC.",
-      "b": "Not the best answer: Prove ethics.",
-      "d": "Not the best answer: Set vacations."
+      "a": "Regression shows association; causation needs a designed experiment or process knowledge.",
+      "b": "Comparing two variances is an F-test (or Levene), not regression modeling of Y on X.",
+      "d": "Ranking defects by count is a Pareto chart; regression fits an equation linking Y to Xs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,11 +931,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Identical"
+        "text": "Continuous measurements vs counts/categories"
       },
       {
         "id": "b",
-        "text": "Both always normal"
+        "text": "Customer data vs process data from gages"
       },
       {
         "id": "c",
@@ -943,15 +943,15 @@
       },
       {
         "id": "d",
-        "text": "Both useless"
+        "text": "Sampled data vs data from a full census"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Counts/categories vs continuous measurements.",
     "distractorExplanations": {
-      "a": "Not the best answer: Identical.",
-      "b": "Not the best answer: Both always normal.",
-      "d": "Not the best answer: Both useless."
+      "a": "Reverses the definitions: attribute data are counts/categories and variable data are continuous.",
+      "b": "Customer vs process data describes the source, not the attribute/variable data type.",
+      "d": "Sample vs census describes how data were collected, not whether they are attribute or variable."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ambiguity"
+        "text": "Faster data collection cycles"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Faster arguments"
+        "text": "Tighter specification limits"
       },
       {
         "id": "d",
-        "text": "Hidden criteria"
+        "text": "Statistical significance of results"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Consistent measurement meaning.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ambiguity.",
-      "c": "Not the best answer: Faster arguments.",
-      "d": "Not the best answer: Hidden criteria."
+      "a": "An operational definition aims at consistency between collectors, not speed of data collection.",
+      "c": "Spec limits come from the customer; an operational definition only defines how to measure.",
+      "d": "Significance comes from hypothesis tests; operational definitions make the measurements consistent."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1001,23 +1001,23 @@
       },
       {
         "id": "b",
-        "text": "Control limits"
+        "text": "Defect frequencies"
       },
       {
         "id": "c",
-        "text": "Pay grades"
+        "text": "Process steps"
       },
       {
         "id": "d",
-        "text": "Gantt"
+        "text": "Failure mode scores"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Cause categories.",
     "distractorExplanations": {
-      "b": "Not the best answer: Control limits.",
-      "c": "Not the best answer: Pay grades.",
-      "d": "Not the best answer: Gantt only."
+      "b": "Defect frequencies are displayed on a Pareto chart; a fishbone organizes potential causes by category.",
+      "c": "Process steps in sequence are a flowchart or process map, not an Ishikawa diagram.",
+      "d": "Failure mode scores (RPN) belong to FMEA; the fishbone groups causes under 6M-type headings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Blame person"
+        "text": "Five possible causes"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Five meetings"
+        "text": "The responsible person"
       },
       {
         "id": "d",
-        "text": "Five signatures"
+        "text": "Quick containment"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Deeper root cause.",
     "distractorExplanations": {
-      "a": "Not the best answer: Blame person only.",
-      "c": "Not the best answer: Five meetings.",
-      "d": "Not the best answer: Five signatures."
+      "a": "5 Whys drills down one causal chain; it does not list five parallel candidate causes.",
+      "c": "5 Whys targets process causes; stopping at a person to blame is the classic misuse of the tool.",
+      "d": "Containment stops the bleeding quickly; 5 Whys digs past symptoms to the underlying root cause."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "All equal bars"
+        "text": "Trends over time"
       },
       {
         "id": "b",
-        "text": "Time series"
+        "text": "Process spread vs spec"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Normal curve"
+        "text": "Correlation of X and Y"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Vital few contributors.",
     "distractorExplanations": {
-      "a": "Not the best answer: All equal bars always.",
-      "b": "Not the best answer: Time series only.",
-      "d": "Not the best answer: Normal curve."
+      "a": "Trends over time are shown on a run or control chart; Pareto bars are sorted by size, not time.",
+      "b": "Spread versus specification is a histogram/capability view, not a Pareto chart.",
+      "d": "Correlation between X and Y is a scatter plot; a Pareto chart ranks categories by contribution."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1096,11 +1096,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Random risks"
+        "text": "Failure modes by cost/frequency/customer impact"
       },
       {
         "id": "b",
-        "text": "Only costs"
+        "text": "Root causes by count, as on a Pareto chart"
       },
       {
         "id": "c",
@@ -1108,15 +1108,15 @@
       },
       {
         "id": "d",
-        "text": "Only colors"
+        "text": "Process steps by value-added/non-value time"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Failure modes by severity/occurrence/detection.",
     "distractorExplanations": {
-      "a": "Not the best answer: Random risks.",
-      "b": "Not the best answer: Only costs.",
-      "d": "Not the best answer: Only colors."
+      "a": "FMEA's RPN uses severity, occurrence and detection; cost and customer impact are not the three factors.",
+      "b": "Ranking causes by count is Pareto analysis; FMEA scores potential failure modes before they occur.",
+      "d": "Value-added vs non-value-added time is value stream analysis, not FMEA risk prioritization."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1129,15 +1129,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only org chart"
+        "text": "Reporting lines and team responsibilities"
       },
       {
         "id": "b",
-        "text": "Only P&L"
+        "text": "Supplier-to-customer scope at a high level"
       },
       {
         "id": "c",
-        "text": "Only parking map"
+        "text": "Detailed task steps for one operator"
       },
       {
         "id": "d",
@@ -1147,9 +1147,9 @@
     "correctOptionId": "d",
     "explanation": "Flow of material/information and waste.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only org chart.",
-      "b": "Not the best answer: Only P&L.",
-      "c": "Not the best answer: Only parking map."
+      "a": "Reporting lines and responsibilities are an org chart or RACI, not a value stream map.",
+      "b": "A high-level supplier-to-customer scope is a SIPOC; a VSM adds flow, wait times and waste.",
+      "c": "Detailed task steps for one operator are standard work or a detailed flowchart, not a VSM."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1195,15 +1195,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Hypotheses tests"
+        "text": "Ranking causes by frequency"
       },
       {
         "id": "b",
-        "text": "Control"
+        "text": "Testing differences in means"
       },
       {
         "id": "c",
-        "text": "Charters"
+        "text": "Mapping cause categories"
       },
       {
         "id": "d",
@@ -1213,9 +1213,9 @@
     "correctOptionId": "d",
     "explanation": "Structured data collection.",
     "distractorExplanations": {
-      "a": "Not the best answer: Hypotheses tests only.",
-      "b": "Not the best answer: Control only.",
-      "c": "Not the best answer: Charters only."
+      "a": "Ranking causes by frequency is a Pareto chart, which may use check-sheet data but is a different tool.",
+      "b": "Testing differences in means needs a t-test or ANOVA; a check sheet only records the data.",
+      "c": "Mapping cause categories is a fishbone diagram; a check sheet tallies observations as they occur."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Control limits"
+        "text": "Frequency distribution of one variable"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "Capability index alone"
+        "text": "Proof that one variable causes another"
       },
       {
         "id": "d",
-        "text": "SIPOC boxes"
+        "text": "Ranking of defect categories"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Relationship between two variables.",
     "distractorExplanations": {
-      "a": "Not the best answer: Control limits.",
-      "c": "Not the best answer: Capability index alone.",
-      "d": "Not the best answer: SIPOC boxes."
+      "a": "The frequency distribution of a single variable is a histogram; a scatter plot needs paired data.",
+      "c": "A scatter plot shows correlation only; correlation does not prove causation.",
+      "d": "Ranking defect categories is a Pareto chart, not a scatter plot of two variables."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1261,7 +1261,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Inspects after shipping"
+        "text": "Adds 100% final inspection"
       },
       {
         "id": "b",
@@ -1269,19 +1269,19 @@
       },
       {
         "id": "c",
-        "text": "Hides defects"
+        "text": "Retrains staff after errors"
       },
       {
         "id": "d",
-        "text": "Increases rework on purpose"
+        "text": "Tightens spec limits"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Prevents errors at source.",
     "distractorExplanations": {
-      "a": "Not the best answer: Inspects after shipping only.",
-      "c": "Not the best answer: Hides defects.",
-      "d": "Not the best answer: Increases rework on purpose."
+      "a": "Final inspection detects defects after they occur; poka-yoke prevents the error from happening.",
+      "c": "Retraining after errors relies on memory and vigilance; poka-yoke designs the error out.",
+      "d": "Spec limits are customer requirements; tightening them prevents nothing at the process step."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1298,23 +1298,23 @@
       },
       {
         "id": "b",
-        "text": "Tribal secrecy"
+        "text": "Ideal future-state method"
       },
       {
         "id": "c",
-        "text": "Daily exceptions"
+        "text": "Each operator's own method"
       },
       {
         "id": "d",
-        "text": "No times"
+        "text": "Engineering design specs"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Best known method currently.",
     "distractorExplanations": {
-      "b": "Not the best answer: Tribal secrecy.",
-      "c": "Not the best answer: Daily exceptions only.",
-      "d": "Not the best answer: No times."
+      "b": "Standard work captures today's best known method, not an idealized future state from a VSM.",
+      "c": "Standard work replaces individual methods with one agreed best method so results are consistent.",
+      "d": "Design specs define the product; standard work defines the sequence, timing and WIP of the task."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1327,15 +1327,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Year-long study"
+        "text": "Year-long DMAIC project"
       },
       {
         "id": "b",
-        "text": "Certification exam"
+        "text": "Daily stand-up huddle"
       },
       {
         "id": "c",
-        "text": "Marketing launch"
+        "text": "Annual strategic review"
       },
       {
         "id": "d",
@@ -1345,9 +1345,9 @@
     "correctOptionId": "d",
     "explanation": "Focused improvement burst.",
     "distractorExplanations": {
-      "a": "Not the best answer: Year-long study only.",
-      "b": "Not the best answer: Certification exam.",
-      "c": "Not the best answer: Marketing launch only."
+      "a": "A kaizen event is a short (often 3-5 day) blitz, not a months-long DMAIC project.",
+      "b": "A daily huddle is a communication routine; a kaizen event is a dedicated improvement workshop.",
+      "c": "An annual strategic review sets direction; a kaizen event makes rapid changes at the gemba."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,15 +1393,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Critique immediately"
+        "text": "Vote on each idea as raised"
       },
       {
         "id": "b",
-        "text": "Only boss speaks"
+        "text": "Limit ideas to proven causes"
       },
       {
         "id": "c",
-        "text": "No wild ideas"
+        "text": "Let experts speak first"
       },
       {
         "id": "d",
@@ -1411,9 +1411,9 @@
     "correctOptionId": "d",
     "explanation": "Defer judgment initially.",
     "distractorExplanations": {
-      "a": "Not the best answer: Critique immediately.",
-      "b": "Not the best answer: Only boss speaks.",
-      "c": "Not the best answer: No wild ideas."
+      "a": "Voting comes after idea generation (e.g., multivoting); judging each idea live stifles output.",
+      "b": "Brainstorming seeks quantity, including untested ideas; proving causes comes later in Analyze.",
+      "c": "Letting experts lead anchors the group; brainstorming gives every member equal voice."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Defects into DPMO automatically"
+        "text": "Defects by frequency"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "Control charts"
+        "text": "Steps into swim lanes"
       },
       {
         "id": "d",
-        "text": "Pay bands"
+        "text": "Risks by RPN score"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ideas into themes.",
     "distractorExplanations": {
-      "a": "Not the best answer: Defects into DPMO automatically.",
-      "c": "Not the best answer: Control charts.",
-      "d": "Not the best answer: Pay bands."
+      "a": "Grouping defects by frequency is a Pareto chart; affinity diagrams cluster ideas by theme.",
+      "c": "Swim lanes organize process steps by owner in a deployment flowchart, not an affinity diagram.",
+      "d": "Ranking risks by RPN is FMEA; an affinity diagram sorts qualitative ideas into natural groups."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1459,11 +1459,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Wastes time"
+        "text": "Replaces the control plan"
       },
       {
         "id": "b",
-        "text": "Forbidden in Six Sigma"
+        "text": "Proves root causes statistically"
       },
       {
         "id": "c",
@@ -1471,15 +1471,15 @@
       },
       {
         "id": "d",
-        "text": "Replaces Control"
+        "text": "Sets the project baseline"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Reduces implementation risk.",
     "distractorExplanations": {
-      "a": "Not the best answer: Wastes time always.",
-      "b": "Not the best answer: Forbidden in Six Sigma.",
-      "d": "Not the best answer: Replaces Control."
+      "a": "A pilot tests a solution; a control plan is still needed to sustain it after full rollout.",
+      "b": "Root causes are verified in Analyze; the pilot tests whether the solution works at small scale.",
+      "d": "The baseline is set in Measure before any solution; a pilot compares results against it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only celebrations"
+        "text": "Project scope, goals, team, and timeline"
       },
       {
         "id": "b",
@@ -1500,19 +1500,19 @@
       },
       {
         "id": "c",
-        "text": "Only slogans"
+        "text": "Failure modes ranked by RPN for each step"
       },
       {
         "id": "d",
-        "text": "No owners"
+        "text": "Root causes verified during Analyze"
       }
     ],
     "correctOptionId": "b",
     "explanation": "What/who/how often to monitor and react.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only celebrations.",
-      "c": "Not the best answer: Only slogans.",
-      "d": "Not the best answer: No owners."
+      "a": "Scope, goals, team and timeline are the project charter from Define, not the control plan.",
+      "c": "RPN-ranked failure modes are an FMEA; the control plan may reference it but lists monitoring actions.",
+      "d": "Verified root causes are Analyze outputs; the control plan says how controls are monitored and owned."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1525,15 +1525,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Vacation policy"
+        "text": "Actions when specs change"
       },
       {
         "id": "b",
-        "text": "Logo redesign"
+        "text": "Who approves the charter"
       },
       {
         "id": "c",
-        "text": "Hiring freeze"
+        "text": "Rollout plan for the pilot"
       },
       {
         "id": "d",
@@ -1543,9 +1543,9 @@
     "correctOptionId": "d",
     "explanation": "Actions when out of control.",
     "distractorExplanations": {
-      "a": "Not the best answer: Vacation policy.",
-      "b": "Not the best answer: Logo redesign.",
-      "c": "Not the best answer: Hiring freeze only."
+      "a": "A response plan is triggered by out-of-control signals, not by customer specification changes.",
+      "b": "Charter approval by the sponsor happens in Define; response plans live in the control plan.",
+      "c": "Pilot rollout planning is Improve work; response plans tell owners how to react to signals."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1558,11 +1558,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Old SOPs"
+        "text": "Original SOPs preserved"
       },
       {
         "id": "b",
-        "text": "No revision dates"
+        "text": "Fewer documents written"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "Shadow copies preferred"
+        "text": "Faster approvals"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Latest standards used.",
     "distractorExplanations": {
-      "a": "Not the best answer: Old SOPs forever.",
-      "b": "Not the best answer: No revision dates.",
-      "d": "Not the best answer: Shadow copies preferred."
+      "a": "Keeping original SOPs in use is the failure document control prevents; old revisions are withdrawn.",
+      "b": "Document control governs versions and access, not reducing how many documents exist.",
+      "d": "Approval speed is not the goal; document control ensures only the current approved version is used."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional"
+        "text": "Optional after pilot"
       },
       {
         "id": "b",
-        "text": "One email sufficient"
+        "text": "Needed only for new hires"
       },
       {
         "id": "c",
-        "text": "No practice"
+        "text": "Done by email notice"
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "Required to sustain.",
     "distractorExplanations": {
-      "a": "Not the best answer: Optional.",
-      "b": "Not the best answer: One email sufficient always.",
-      "c": "Not the best answer: No practice."
+      "a": "Training remains required after the pilot; untrained operators drift back to the old method.",
+      "b": "Existing operators must also learn the new standard, not just new hires joining later.",
+      "c": "An email notice is not training; people need demonstration and practice to adopt standard work."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Everything hidden"
+        "text": "Monthly reports more detailed"
       },
       {
         "id": "b",
@@ -1632,19 +1632,19 @@
       },
       {
         "id": "c",
-        "text": "Only dashboards for execs"
+        "text": "Control plans unnecessary"
       },
       {
         "id": "d",
-        "text": "Noise"
+        "text": "Statistics easier to compute"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Status obvious at a glance.",
     "distractorExplanations": {
-      "a": "Not the best answer: Everything hidden.",
-      "c": "Not the best answer: Only dashboards for execs.",
-      "d": "Not the best answer: Noise."
+      "a": "Visual management shows real-time status at the workplace, not longer monthly reports.",
+      "c": "Visual controls support the control plan; they do not replace its owners and reaction steps.",
+      "d": "Visual management is about instant shared awareness, not simplifying statistical calculation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1694,23 +1694,23 @@
       },
       {
         "id": "b",
-        "text": "Abandonment"
+        "text": "Black Belt certification"
       },
       {
         "id": "c",
-        "text": "Secret files"
+        "text": "Charter approval by sponsor"
       },
       {
         "id": "d",
-        "text": "No metrics"
+        "text": "New baseline measurement"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Process owner acceptance.",
     "distractorExplanations": {
-      "b": "Not the best answer: Abandonment.",
-      "c": "Not the best answer: Secret files.",
-      "d": "Not the best answer: No metrics."
+      "b": "Certification is a personal credential; handover transfers process ownership to the process owner.",
+      "c": "Charter approval happens at the start in Define; handover is the close of Control.",
+      "d": "A new baseline is set in Measure; handover is about the owner accepting the controlled process."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1723,11 +1723,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only lag"
+        "text": "Report final results"
       },
       {
         "id": "b",
-        "text": "Replace Y"
+        "text": "Replace the primary Y"
       },
       {
         "id": "c",
@@ -1735,15 +1735,15 @@
       },
       {
         "id": "d",
-        "text": "Confuse"
+        "text": "Set spec limits"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Predict issues early.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only lag forever.",
-      "b": "Not the best answer: Replace Y.",
-      "d": "Not the best answer: Confuse."
+      "a": "Reporting final results is what lagging indicators do; leading indicators warn before outcomes.",
+      "b": "Leading indicators supplement the primary Y; the project is still judged on the Y itself.",
+      "d": "Spec limits come from customer requirements; leading indicators predict performance early."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1789,15 +1789,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore"
+        "text": "Widen the control limits"
       },
       {
         "id": "b",
-        "text": "Blame Green Belt"
+        "text": "Close the project anyway"
       },
       {
         "id": "c",
-        "text": "Buy new software"
+        "text": "Start a new project charter at once"
       },
       {
         "id": "d",
@@ -1807,9 +1807,9 @@
     "correctOptionId": "d",
     "explanation": "Reanalyze and restore controls.",
     "distractorExplanations": {
-      "a": "Not the best answer: Ignore.",
-      "b": "Not the best answer: Blame Green Belt only.",
-      "c": "Not the best answer: Buy new software only."
+      "a": "Widening control limits hides the signal; limits are recalculated only after a real, intended change.",
+      "b": "Closing the project with fading gains leaves the problem unsolved; controls must be restored first.",
+      "c": "A new charter is premature; first reanalyze why the existing controls failed and restore them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Gossip"
+        "text": "Individual performance ratings"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "Only failures hidden"
+        "text": "Control plan monitoring data"
       },
       {
         "id": "d",
-        "text": "Salary data"
+        "text": "Final financial benefit totals"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Knowledge for future projects.",
     "distractorExplanations": {
-      "a": "Not the best answer: Gossip.",
-      "c": "Not the best answer: Only failures hidden.",
-      "d": "Not the best answer: Salary data."
+      "a": "Lessons learned are blame-free knowledge capture, not individual performance appraisals.",
+      "c": "Monitoring data belongs to the control plan; lessons learned record what to repeat or avoid.",
+      "d": "Benefit totals are tracked by finance/benefit tracking; lessons learned capture know-how."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,11 +1855,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Feelings"
+        "text": "Gage repeatability results"
       },
       {
         "id": "b",
-        "text": "Slide count"
+        "text": "Team training completion"
       },
       {
         "id": "c",
@@ -1867,15 +1867,15 @@
       },
       {
         "id": "d",
-        "text": "Meeting count"
+        "text": "Statistical significance only"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Financial/operational impact.",
     "distractorExplanations": {
-      "a": "Not the best answer: Feelings only.",
-      "b": "Not the best answer: Slide count.",
-      "d": "Not the best answer: Meeting count."
+      "a": "Gage repeatability is an MSA result from Measure, not the business impact benefit tracking checks.",
+      "b": "Training completion is a control activity; benefit tracking validates realized savings and results.",
+      "d": "A significant test result does not confirm realized dollars; benefit tracking measures actual impact."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only code"
+        "text": "Gage changes"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Only machines"
+        "text": "Spec revisions"
       },
       {
         "id": "d",
-        "text": "Only fonts"
+        "text": "Capital budgets"
       }
     ],
     "correctOptionId": "b",
     "explanation": "People adoption.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only code.",
-      "c": "Not the best answer: Only machines.",
-      "d": "Not the best answer: Only fonts."
+      "a": "Gage changes are technical MSA issues; change management addresses people accepting new ways of working.",
+      "c": "Spec revisions are document/engineering changes, not the people side that change management targets.",
+      "d": "Capital budgets are financial approvals; change management builds stakeholder buy-in and adoption."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1925,23 +1925,23 @@
       },
       {
         "id": "b",
-        "text": "Is required"
+        "text": "Aids focus—show every metric"
       },
       {
         "id": "c",
-        "text": "Replaces Gemba"
+        "text": "Is needed for audit trails"
       },
       {
         "id": "d",
-        "text": "Is Control phase goal"
+        "text": "Replaces Gemba walks"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Hurts focus—keep vital few.",
     "distractorExplanations": {
-      "b": "Not the best answer: Is required.",
-      "c": "Not the best answer: Replaces Gemba.",
-      "d": "Not the best answer: Is Control phase goal."
+      "b": "Showing every metric dilutes attention; dashboards should highlight the vital few measures.",
+      "c": "Audit trails come from records and document control, not from cluttered dashboard displays.",
+      "d": "Dashboards never substitute for going to the gemba to see the actual process firsthand."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

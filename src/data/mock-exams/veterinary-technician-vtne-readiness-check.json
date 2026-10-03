@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only weather that day"
+        "text": "Drug name and total amount used per month, reconciled yearly"
       },
       {
         "id": "b",
-        "text": "Date, client/patient, drug, amount dispensed/administered, balance, and responsible personnel"
+        "text": "Date, client/patient, drug, amount, balance, and responsible personnel"
       },
       {
         "id": "c",
-        "text": "Technician guesses without signature"
+        "text": "Date, drug, and dose only, with the running balance tracked by the distributor"
       },
       {
         "id": "d",
-        "text": "Nothing if DVM present"
+        "text": "Client name and drug, signed later by the DVM at month end"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "DEA/state rules require perpetual inventory and documentation for controlled drugs.",
+    "explanation": "DEA/state rules require perpetual inventory and documentation for controlled drugs. Record whether the amount was dispensed or administered.",
     "distractorExplanations": {
-      "a": "Irrelevant.",
-      "c": "Signatures/accountability required.",
-      "d": "Records always required."
+      "a": "Monthly totals do not meet DEA rules; each dispensing/administration entry must be logged with a running balance.",
+      "c": "The clinic keeps its own running balance, not the distributor, and each entry must also record the client/patient and who handled the drug.",
+      "d": "Entries are made at the time of use by the person handling the drug, not batch-signed by the DVM at month end."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -73,27 +73,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Using only human OTC without DVM"
+        "text": "Using a human OTC drug at owner request with no VCPR in place"
       },
       {
         "id": "b",
-        "text": "Always illegal without exception"
+        "text": "Adding a drug to feed off-label, which AMDUCA allows in food animals"
       },
       {
         "id": "c",
-        "text": "Using drug in manner not on label (species, dose, route) under valid VCPR with oversight"
+        "text": "Using drug in manner not on label (species, dose, route) under valid VCPR"
       },
       {
         "id": "d",
-        "text": "Same as discarding expired drugs"
+        "text": "Using a drug at labeled dose and route for its labeled species"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ELDU is permitted under AMDUCA with veterinarian direction and food withdrawal rules when applicable.",
     "distractorExplanations": {
-      "a": "Requires veterinarian.",
-      "b": "ELDU legal with conditions.",
-      "d": "Unrelated."
+      "a": "AMDUCA allows ELDU only by or on the order of a veterinarian within a valid VCPR, not at owner request.",
+      "b": "AMDUCA specifically prohibits extra-label use of drugs in animal feed; feed ELDU is not permitted.",
+      "d": "Labeled dose, route and species is on-label use; ELDU means departing from the label directions."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "3 mL luer slip syringe without unit calibration for insulin"
+        "text": "U-40 insulin syringe, reading 10 units on its scale"
       },
       {
         "id": "c",
-        "text": "TB syringe in mL only without conversion knowledge"
+        "text": "1 mL tuberculin syringe drawn to the 0.01 mL mark"
       },
       {
         "id": "d",
-        "text": "Oral syringe in teaspoons"
+        "text": "3 mL syringe drawn to the 1.0 mL line"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Insulin must be measured with appropriate U-100 syringe to avoid dosing errors.",
     "distractorExplanations": {
-      "b": "Wrong calibration risks overdose.",
-      "c": "Requires insulin syringe or careful conversion.",
-      "d": "Insulin not oral."
+      "b": "A U-40 syringe with U-100 insulin gives 2.5 times the intended dose; syringe and insulin units must match.",
+      "c": "10 units of U-100 insulin is 0.1 mL, not 0.01 mL; this conversion error gives one-tenth of the dose.",
+      "d": "1.0 mL of U-100 insulin is 100 units, ten times the order; a 3 mL syringe also lacks unit markings."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Xylitol sweetener always safe in cats"
+        "text": "A propylene glycol base and the manufacturer's expiration date"
       },
       {
         "id": "b",
-        "text": "Flavor/formulation suitable for species and beyond-use dating per pharmacist/DVM protocol"
+        "text": "Flavor/formulation suitable for species and beyond-use dating"
       },
       {
         "id": "c",
-        "text": "Human alcohol-based elixir without adjustment"
+        "text": "Human alcohol-based elixir diluted with tap water"
       },
       {
         "id": "d",
-        "text": "No label because cat cannot read"
+        "text": "Fish flavoring and the expiration date of the bulk powder"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Veterinary compounding considers species toxicity (e.g., avoid xylitol in dogs) and stability.",
     "distractorExplanations": {
-      "a": "Xylitol toxic to dogs; species matters.",
-      "c": "Alcohol may be inappropriate.",
-      "d": "Label required for client."
+      "a": "Propylene glycol can cause Heinz body anemia in cats, and compounded products get a BUD, not a manufacturer expiry.",
+      "c": "Alcohol-based human elixirs are poorly tolerated by cats and tap-water dilution changes stability and dose.",
+      "d": "Flavor may suit cats, but a compounded suspension needs its own beyond-use date, not the bulk powder's expiry."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Left at room temp indefinitely after mixing"
+        "text": "Kept at room temperature until the vial is empty"
       },
       {
         "id": "b",
-        "text": "Frozen after mixing"
+        "text": "Frozen after mixing to extend stability for months"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Mixed weeks in advance without dating"
+        "text": "Refrigerated and used until the original vial's printed expiry date"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Follow manufacturer stability after reconstitution; label BUD.",
     "distractorExplanations": {
-      "a": "Stability limited.",
-      "b": "Freezing may inactivate.",
-      "d": "BUD required."
+      "a": "Most reconstituted antibiotics lose potency within days; storage and BUD follow the manufacturer insert.",
+      "b": "Freezing can inactivate or precipitate many reconstituted drugs unless the label specifically allows it.",
+      "d": "Confuses the unopened expiry date with the beyond-use date, which starts at reconstitution."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Client verbal request only without record"
+        "text": "Client's verbal request, logged later"
       },
       {
         "id": "b",
-        "text": "Unlimited refills without DVM"
+        "text": "Unlimited refills within one year"
       },
       {
         "id": "c",
-        "text": "Transfer to human pharmacy without Rx"
+        "text": "A new written Rx since it is CII"
       },
       {
         "id": "d",
-        "text": "Valid prescription within refill limits and controlled drug accountability"
+        "text": "Valid prescription within refill limits"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Schedule IV controlled anticonvulsant requires prescription compliance and logs.",
+    "explanation": "Schedule IV controlled anticonvulsant requires prescription compliance and logs. Each dispensing also goes in the controlled substance log.",
     "distractorExplanations": {
-      "a": "Documentation required.",
-      "b": "Refills per Rx only.",
-      "c": "Requires veterinary Rx workflow."
+      "a": "A client cannot authorize a controlled refill; the DVM's valid Rx is required and logging is done at dispensing.",
+      "b": "Schedule III-IV prescriptions allow at most 5 refills within 6 months, not unlimited refills for a year.",
+      "c": "Phenobarbital is Schedule IV, not II; refills are allowed within the CIII-IV limits."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Permethrin/pyrethrin toxicity in cats if dog-only product"
+        "text": "Permethrin/pyrethrin toxicity in cats"
       },
       {
         "id": "b",
-        "text": "Improved feline hair shine"
+        "text": "Fipronil toxicity, the main risk in cats"
       },
       {
         "id": "c",
-        "text": "No risk ever across species"
+        "text": "Ivermectin toxicity, like MDR1 collies"
       },
       {
         "id": "d",
-        "text": "Automatic immunity"
+        "text": "Contact dermatitis only, no systemic signs"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Many canine spot-ons contain permethrin toxic to cats; species labeling critical.",
     "distractorExplanations": {
-      "b": "Can cause seizures/death in cats.",
-      "c": "Species differences significant.",
-      "d": "False."
+      "b": "Fipronil is labeled safe for cats; the classic dog-only spot-on danger for cats is concentrated permethrin.",
+      "c": "Ivermectin sensitivity (MDR1) is a herding-breed dog issue, not the toxin in canine flea spot-ons.",
+      "d": "Permethrin causes systemic signs in cats such as tremors, seizures and hyperthermia, not just skin irritation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hide error from client"
+        "text": "Give a reversal agent first, then notify the DVM later"
       },
       {
         "id": "b",
-        "text": "Notify DVM immediately, monitor patient, document, initiate adverse event protocol"
+        "text": "Notify DVM immediately, monitor patient, document"
       },
       {
         "id": "c",
-        "text": "Wait until next week"
+        "text": "Document it and inform the DVM at shift change"
       },
       {
         "id": "d",
-        "text": "Give another random drug to cancel"
+        "text": "Monitor the patient and tell the client only if signs appear"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Rapid notification and supportive care reduce harm; full documentation required.",
+    "explanation": "Rapid notification and supportive care reduce harm; full documentation required. Then follow the clinic's adverse event protocol.",
     "distractorExplanations": {
-      "a": "Concealment unethical/illegal.",
-      "c": "Delay harmful.",
-      "d": "Compounds risk."
+      "a": "Technicians do not choose and give antidotes on their own; the DVM must be told first to direct treatment.",
+      "c": "Waiting for shift change delays treatment; medication errors are reported to the DVM immediately.",
+      "d": "Watching for signs before disclosing hides the error; the DVM decides treatment and client communication now."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Intravenous only always for all IM orders"
+        "text": "Scruff skin fold between the shoulders"
       },
       {
         "id": "b",
-        "text": "Subcutaneous same as IV bolus"
+        "text": "Cephalic vein in the forelimb"
       },
       {
         "id": "c",
-        "text": "Quadriceps or lumbar epaxial muscles per clinic protocol"
+        "text": "Quadriceps or lumbar epaxial muscles"
       },
       {
         "id": "d",
-        "text": "Oral route for injectable"
+        "text": "Subcutaneous tissue over the flank"
       }
     ],
     "correctOptionId": "c",
     "explanation": "IM sites include quadriceps/epaxial with aspiration per policy.",
     "distractorExplanations": {
-      "a": "IM not IV.",
-      "b": "Different routes.",
-      "d": "Injectable not oral."
+      "a": "The scruff is a classic subcutaneous injection site, not an intramuscular one.",
+      "b": "The cephalic vein is used for IV injection and catheters, not IM administration.",
+      "d": "Flank subcutaneous tissue is for SQ fluids and injections; IM needs a large muscle mass."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop when half pills remain for savings"
+        "text": "Stop once the pet looks better to limit side effects"
       },
       {
         "id": "b",
-        "text": "Share leftovers with neighbor's pet"
+        "text": "Double the next dose if one dose is missed"
       },
       {
         "id": "c",
-        "text": "Double dose if one dose missed"
+        "text": "Save leftover pills for the next flare-up"
       },
       {
         "id": "d",
-        "text": "Complete full course even if pet looks better unless DVM directs stop"
+        "text": "Complete full course even if pet looks better"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Incomplete courses promote resistance; consult DVM if dose missed.",
+    "explanation": "Incomplete courses promote resistance; consult DVM if dose missed. Stop early only if the DVM directs it.",
     "distractorExplanations": {
-      "a": "Premature stop risks relapse/resistance.",
-      "b": "Sharing illegal/unsafe.",
-      "c": "Doubling without DVM unsafe."
+      "a": "Stopping when signs improve can leave surviving bacteria, causing relapse and resistance.",
+      "b": "Doubling a missed dose risks toxicity; clients should give it when remembered or call the clinic.",
+      "c": "Leftover pills mean an incomplete course, and self-treating a later flare-up skips diagnosis."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -407,23 +407,23 @@
       },
       {
         "id": "b",
-        "text": "Regular trash bin"
+        "text": "Red biohazard bag disposal like other medical waste"
       },
       {
         "id": "c",
-        "text": "Drain disposal"
+        "text": "Flushing small amounts down the drain with water"
       },
       {
         "id": "d",
-        "text": "Client home compost"
+        "text": "Autoclaving the waste first, then placing it in the regular trash"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Chemo agents require HD waste containers and staff protection.",
     "distractorExplanations": {
-      "b": "Regulated waste.",
-      "c": "Environmental prohibition typically.",
-      "d": "Improper disposal."
+      "b": "Chemo waste goes into designated hazardous drug (often yellow or black) containers, not general biohazard bags.",
+      "c": "Drain disposal of hazardous drugs is prohibited because it contaminates water systems.",
+      "d": "Autoclaving does not destroy cytotoxic drugs and can aerosolize them; HD waste needs incineration."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Patient identification"
+        "text": "Gentle manual restraint during the brief chip implant"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "Medical record"
+        "text": "Low-stress handling for the quick needle stick itself"
       },
       {
         "id": "d",
-        "text": "Client communication"
+        "text": "Towel restraint of a fractious cat for the implant"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Microchips identify pets; anesthesia requires full assessment and protocols.",
     "distractorExplanations": {
-      "a": "Microchip aids ID.",
-      "c": "Records still needed.",
-      "d": "Communication still needed."
+      "a": "Light sedation can replace or reduce manual restraint for a brief chip implant; that is a valid use.",
+      "c": "Pre-medication can stand in for extra handling during a quick needle stick; surgery anesthesia is the gap.",
+      "d": "Sedating a fractious cat can replace towel restraint for the implant; it cannot replace surgical anesthesia."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Improved joint healing"
+        "text": "Hepatic lipidosis and jaundice"
       },
       {
         "id": "b",
-        "text": "Lower bleeding risk"
+        "text": "Hypoglycemia and seizures"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "No interaction"
+        "text": "Lower bleeding and clotting risk"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Concurrent NSAID/steroid raises GI/renal adverse event risk; DVM weighs benefit.",
     "distractorExplanations": {
-      "a": "Healing not improved.",
-      "b": "Bleeding risk increases.",
-      "d": "Known interaction."
+      "a": "Hepatic lipidosis is a feline anorexia syndrome, not the main NSAID-steroid interaction risk.",
+      "b": "Corticosteroids tend to raise blood glucose; hypoglycemic seizures are not the expected interaction.",
+      "d": "NSAIDs impair platelet function, so combined use raises bleeding risk rather than lowering it."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "10–20 bpm"
+        "text": "10–30 bpm depending on size"
       },
       {
         "id": "b",
-        "text": "300–400 bpm"
+        "text": "28–44 bpm depending on size"
       },
       {
         "id": "c",
-        "text": "Identical to human 60"
+        "text": "40–60 bpm depending on size"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "Canine HR varies with size; smaller dogs tend higher end.",
     "distractorExplanations": {
-      "a": "Too low for resting dog.",
-      "b": "Too high resting.",
-      "c": "Varies by size."
+      "a": "10–30 per minute is the resting canine respiratory rate, not the heart rate.",
+      "b": "28–44 bpm is the resting adult horse heart rate; dogs are considerably faster.",
+      "c": "40–60 bpm would be bradycardia in most dogs; the resting canine range is about 60–140 bpm."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -539,23 +539,23 @@
       },
       {
         "id": "b",
-        "text": "Shock"
+        "text": "Hypovolemic shock with poor perfusion"
       },
       {
         "id": "c",
-        "text": "Hyperthermia"
+        "text": "Moderate dehydration of about 8%"
       },
       {
         "id": "d",
-        "text": "Anemia impossible"
+        "text": "Hyperdynamic septic shock with brick-red membranes"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Pink moist MM and quick CRT indicate good perfusion in stable patient.",
     "distractorExplanations": {
-      "b": "Shock shows pale/tacky prolonged CRT.",
-      "c": "Not specific to fever alone.",
-      "d": "Anemia may still show pink early."
+      "b": "Hypovolemic shock gives pale membranes and a CRT longer than 2 seconds, not pink with a quick CRT.",
+      "c": "About 8% dehydration shows tacky membranes and slowed CRT; moist membranes argue against it.",
+      "d": "Hyperdynamic septic shock shows brick-red membranes and a CRT under 1 second, not the normal pink membranes described here."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -568,7 +568,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Full choke collar tension"
+        "text": "Firm scruffing and stretching as the default hold"
       },
       {
         "id": "b",
@@ -576,19 +576,19 @@
       },
       {
         "id": "c",
-        "text": "No restraint speeding poke"
+        "text": "Full-body pinning by two people on its back"
       },
       {
         "id": "d",
-        "text": "Hanging by scruff alone always sufficient for all cats"
+        "text": "Heavy sedation for every cat before any blood draw"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Low-stress feline handling with towel restraint improves safety and sample quality.",
     "distractorExplanations": {
-      "a": "Airway compromise risk.",
-      "c": "Unsafe for staff/patient.",
-      "d": "Scruff alone often insufficient; combine techniques."
+      "a": "Current feline-friendly guidelines discourage scruffing as a default because it raises fear and stress.",
+      "c": "Pinning a cat on its back maximizes fear and fighting; jugular draws use sternal or sitting towel holds.",
+      "d": "Sedation is used case by case for fractious cats; most jugular draws succeed with low-stress towel holds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore until removal date"
+        "text": "Tightening the wrap whenever toe swelling increases"
       },
       {
         "id": "b",
-        "text": "Tighten if swelling increases"
+        "text": "Toe spreading as a sign of a well-fitted wrap"
       },
       {
         "id": "c",
-        "text": "Allow patient to chew if bored"
+        "text": "A recheck only on the scheduled removal date"
       },
       {
         "id": "d",
-        "text": "Swelling, odor, moisture, bandage position, and distal perfusion"
+        "text": "Swelling, odor, moisture, and distal perfusion"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Bandage complications cause ischemia/infection; monitor CMS and cleanliness.",
+    "explanation": "Bandage complications cause ischemia/infection; monitor CMS and cleanliness. Also check that the bandage has not slipped out of position.",
     "distractorExplanations": {
-      "a": "Daily checks required.",
-      "b": "Swelling may require loosen/remove.",
-      "c": "Chewing removes protection."
+      "a": "Increasing toe swelling means the wrap is too tight; it should be loosened or replaced, not tightened.",
+      "b": "Spreading toes signals swelling under a tight bandage, a warning sign rather than a good fit.",
+      "c": "Bandages need at least daily checks; waiting until removal day misses slippage, soiling and ischemia."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Free roam waiting room"
+        "text": "Ward housing with alcohol hand gel used for cleanup"
       },
       {
         "id": "b",
-        "text": "Separate housing, PPE, disinfection with appropriate virucidal agents"
+        "text": "Separate housing, PPE, disinfection with virucidal agents"
       },
       {
         "id": "c",
-        "text": "Shared bedding with healthy puppies"
+        "text": "Quaternary ammonium wipe-down as the sole disinfectant"
       },
       {
         "id": "d",
-        "text": "No hand hygiene"
+        "text": "Isolation until diarrhea stops, then the general ward"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Parvo highly contagious; strict isolation and bleach-compatible disinfection required.",
     "distractorExplanations": {
-      "a": "Contagion risk.",
-      "c": "Fomite transmission.",
-      "d": "Hand hygiene essential."
+      "a": "Alcohol does not inactivate non-enveloped parvovirus; patients need isolation and bleach or AHP disinfection.",
+      "c": "Standard quats are unreliable against parvovirus; use diluted bleach, AHP or peroxymonosulfate.",
+      "d": "Puppies shed parvovirus after diarrhea resolves; isolation continues until discharge."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Human pain score verbally"
+        "text": "Heart rate and blood pressure readings as objective proof of pain"
       },
       {
         "id": "b",
-        "text": "Assume no pain if sleeping"
+        "text": "Sleeping or quiet behavior as a sign of comfort"
       },
       {
         "id": "c",
-        "text": "Behavior, posture, appetite, vocalization, palpation response (pain scales)"
+        "text": "Behavior, posture, appetite, vocalization, palpation response"
       },
       {
         "id": "d",
-        "text": "Ignore because animals feel no pain myth"
+        "text": "Vocalization, since quiet animals are not in pain"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Validated pain scales and behavior observation guide analgesia.",
     "distractorExplanations": {
-      "a": "Animals cannot verbalize.",
-      "b": "Sleep can be pain response.",
-      "d": "Animals experience pain."
+      "a": "Heart rate and BP change with stress, drugs and fluids; they support but do not prove pain.",
+      "b": "Painful animals often hide, stay still or sleep poorly; quiet behavior does not equal comfort.",
+      "d": "Many painful animals, especially cats, are silent; pain scales use posture and behavior too."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -766,15 +766,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal"
+        "text": "A normal value for a resting adult dog"
       },
       {
         "id": "b",
-        "text": "Hypothermia"
+        "text": "Mild hypothermia needing warming"
       },
       {
         "id": "c",
-        "text": "Error never recheck"
+        "text": "A thermometer error, so no recheck is needed"
       },
       {
         "id": "d",
@@ -784,9 +784,9 @@
     "correctOptionId": "d",
     "explanation": "Canine normal ~99.5–102.5°F; elevation suggests infection/inflammation/heat.",
     "distractorExplanations": {
-      "a": "Above normal.",
-      "b": "Hypothermia is low temp.",
-      "c": "Recheck and assess."
+      "a": "Normal canine rectal temperature is about 99.5–102.5°F; 103.8°F at rest is elevated.",
+      "b": "Hypothermia is below the normal range; 103.8°F is above it, so warming would be harmful.",
+      "c": "An unexpected value is rechecked, not dismissed; a confirmed 103.8°F needs DVM evaluation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Fashion accessory"
+        "text": "Reduce patient anxiety during hospitalization"
       },
       {
         "id": "c",
-        "text": "Replace anesthesia"
+        "text": "Keep bandages dry during bathing"
       },
       {
         "id": "d",
-        "text": "Improve hearing"
+        "text": "Replace sedation during exams"
       }
     ],
     "correctOptionId": "a",
     "explanation": "E-collars protect surgical sites from licking/chewing.",
     "distractorExplanations": {
-      "b": "Medical purpose.",
-      "c": "Not anesthetic.",
-      "d": "Unrelated."
+      "b": "E-collars often increase stress; their purpose is to block licking and chewing, not calm the patient.",
+      "c": "Keeping bandages dry needs a bandage cover or bag; the collar blocks access to the wound.",
+      "d": "An E-collar is a barrier to self-trauma; it is not a restraint substitute for sedation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Open drainage on floor"
+        "text": "Open drainage into a floor bucket for easy emptying"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "No output recording"
+        "text": "Routine prophylactic antibiotics while catheterized"
       },
       {
         "id": "d",
-        "text": "Reuse without sterilization between patients"
+        "text": "Collection bag kept above bladder level to help urine flow"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Catheter-associated UTI prevention uses closed sterile technique and monitoring.",
     "distractorExplanations": {
-      "a": "Contamination risk.",
-      "c": "Output guides fluid plan.",
-      "d": "Single patient sterile use."
+      "a": "Open drainage raises catheter-associated UTI risk; a closed sterile collection system is standard.",
+      "c": "Guidelines advise against routine prophylactic antibiotics during catheterization; they breed resistance.",
+      "d": "The bag must hang below bladder level so urine does not flow back into the bladder."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -865,11 +865,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No human risk ever"
+        "text": "Parvovirus transmission from puppy to people, requiring N95 masks"
       },
       {
         "id": "b",
-        "text": "Share bed with immunocompromised owner recommended"
+        "text": "Canine distemper spread to unvaccinated children"
       },
       {
         "id": "c",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "Skip handwashing for speed"
+        "text": "Coronavirus diarrhea spreading to the owners"
       }
     ],
     "correctOptionId": "c",
     "explanation": "GI pathogens zoonotic; PPE and hand hygiene protect staff/clients.",
     "distractorExplanations": {
-      "a": "Zoonoses exist.",
-      "b": "Unsafe for immunocompromised.",
-      "d": "Handwashing mandatory."
+      "a": "Canine parvovirus is not zoonotic; human parvovirus B19 is a different virus.",
+      "b": "Canine distemper does not infect humans; it is a risk to unvaccinated dogs and wildlife.",
+      "d": "Canine enteric coronavirus is not zoonotic; Salmonella and Campylobacter are the real human risks."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Be ignored until suture removal"
+        "text": "Be monitored until suture removal at day 10–14"
       },
       {
         "id": "b",
-        "text": "Be treated by client with essential oils only without call"
+        "text": "Be cleaned with peroxide by the tech, no DVM needed"
       },
       {
         "id": "c",
-        "text": "Hidden from DVM"
+        "text": "Be treated with leftover antibiotics from the client"
       },
       {
         "id": "d",
@@ -916,9 +916,9 @@
     "correctOptionId": "d",
     "explanation": "Purulent discharge suggests infection/dehiscence needing veterinary assessment.",
     "distractorExplanations": {
-      "a": "Needs timely intervention.",
-      "b": "Essential oils not substitute.",
-      "c": "Withholding info harms patient."
+      "a": "Purulent discharge suggests infection or dehiscence; waiting until suture removal delays treatment.",
+      "b": "Peroxide damages healing tissue, and assessing infection is a DVM decision, not a tech-only fix.",
+      "c": "Leftover antibiotics may be the wrong drug or dose and need a DVM prescription and culture decision."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "Only tail wagging"
+        "text": "Watery diarrhea, polyuria, and increased thirst"
       },
       {
         "id": "c",
-        "text": "Ignore GI signs"
+        "text": "Productive vomiting of food with a normal abdomen"
       },
       {
         "id": "d",
-        "text": "Feed large meal immediately"
+        "text": "Lethargy and reduced appetite on the first day after surgery"
       }
     ],
     "correctOptionId": "a",
     "explanation": "GDV signs are emergency; prophylactic protocols may apply peri-op.",
     "distractorExplanations": {
-      "b": "Insufficient monitor.",
-      "c": "GI signs critical.",
-      "d": "Feeding protocol per DVM."
+      "b": "Diarrhea, polyuria and polydipsia are not GDV signs; bloat shows distention and unproductive retching.",
+      "c": "GDV causes non-productive retching because the twisted stomach cannot empty; productive vomiting differs.",
+      "d": "Mild lethargy and low appetite are expected post-op; GDV shows distention, retching and restlessness."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Reuse needles indefinitely"
+        "text": "Reusing one needle for a week if it stays capped"
       },
       {
         "id": "b",
-        "text": "Sterile needle/site rotation, rate/volume per DVM, and when to call"
+        "text": "Sterile needle/site rotation, rate/volume per DVM"
       },
       {
         "id": "c",
-        "text": "IV into vein at home without training"
+        "text": "Giving extra volume whenever the pet seems thirsty"
       },
       {
         "id": "d",
-        "text": "Any fluid bag expired OK"
+        "text": "Injecting into the same site daily to build tolerance"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Home SQ fluids require aseptic technique and clear stop signs.",
+    "explanation": "Home SQ fluids require aseptic technique and clear stop signs. Clients also need clear signs for when to call the clinic.",
     "distractorExplanations": {
-      "a": "Single use needles.",
-      "c": "IV at home requires advanced training.",
-      "d": "Expired fluids unsafe."
+      "a": "Needles dull and contaminate after one use; a new sterile needle is used for each administration.",
+      "c": "Volume is prescribed by the DVM; extra fluid risks overload, especially in cats with heart disease.",
+      "d": "Sites are rotated to prevent irritation and poor absorption; one site does not build tolerance."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Hemolysis from vigorous shaking encouraged"
+        "text": "Vigorous shaking to fully dissolve the EDTA"
       },
       {
         "id": "b",
-        "text": "Serum separator tube instead"
+        "text": "Underfilling the tube to save blood volume"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Leave at hot car dashboard days"
+        "text": "Centrifuging to harvest serum before running the CBC"
       }
     ],
     "correctOptionId": "c",
     "explanation": "EDTA purple top for CBC; gentle inversion prevents hemolysis/clotting errors.",
     "distractorExplanations": {
-      "a": "Hemolysis invalidates results.",
-      "b": "Serum tube for chemistries typically.",
-      "d": "Stability limited."
+      "a": "Vigorous shaking causes hemolysis; EDTA tubes are inverted gently 8-10 times.",
+      "b": "Underfilling leaves excess EDTA, which shrinks cells and falsely lowers PCV.",
+      "d": "A CBC is run on EDTA whole blood; EDTA yields plasma, and serum comes from a clot tube."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Fractured femur"
+        "text": "Motile protozoal trophozoites"
       },
       {
         "id": "b",
-        "text": "Blood glucose"
+        "text": "Occult blood in the feces"
       },
       {
         "id": "c",
-        "text": "Heart murmur grade"
+        "text": "Lungworm larvae, best of all"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "Flotation concentrates parasite eggs in feces.",
     "distractorExplanations": {
-      "a": "Radiology.",
-      "b": "Blood test.",
-      "c": "Auscultation."
+      "a": "Fragile trophozoites are seen on a direct saline smear; flotation concentrates eggs and cysts.",
+      "b": "Occult blood needs a fecal occult blood test, not flotation for parasite stages.",
+      "c": "Lungworm and other larvae are best recovered with the Baermann technique, not flotation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1067,23 +1067,23 @@
       },
       {
         "id": "b",
-        "text": "Holding beam on without PPE daily"
+        "text": "Holding patients without PPE if digital radiography is used"
       },
       {
         "id": "c",
-        "text": "Pregnancy no extra precautions ever"
+        "text": "Lead gloves placed in the primary beam for protection"
       },
       {
         "id": "d",
-        "text": "Digital means zero radiation"
+        "text": "Dosimeter badges worn under the lead apron for accuracy"
       }
     ],
     "correctOptionId": "a",
     "explanation": "As low as reasonably achievable with lead aprons, thyroid shields, and distance.",
     "distractorExplanations": {
-      "b": "Unsafe practice.",
-      "c": "Pregnant staff limit exposure.",
-      "d": "Digital still emits radiation."
+      "b": "Digital systems still use X-rays; anyone in the room needs PPE and distance regardless of detector type.",
+      "c": "Lead gloves only block scatter; hands must stay out of the primary beam even when gloved.",
+      "d": "Dosimeters are worn outside the apron at the collar to record exposure to the unshielded thyroid and head."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave syringe in sun hours"
+        "text": "Ship smears in the same box as formalin-fixed biopsies"
       },
       {
         "id": "b",
-        "text": "Prepare slides immediately or place in appropriate transport medium per lab"
+        "text": "Prepare slides immediately or place in appropriate transport medium"
       },
       {
         "id": "c",
-        "text": "Freeze all cytology"
+        "text": "Freeze the aspirate in the syringe until the lab can process it"
       },
       {
         "id": "d",
-        "text": "Discard if blood present always without DVM review"
+        "text": "Refrigerate the loaded syringe overnight and make slides later"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Rapid slide prep or fluid transfer preserves cytology quality.",
     "distractorExplanations": {
-      "a": "Degradation occurs.",
-      "c": "Cytology usually not frozen fresh smears.",
-      "d": "Blood may be present; DVM interprets."
+      "a": "Formalin fumes alter unfixed cytology smears; ship slides separately from formalin jars.",
+      "c": "Freezing ruptures cells and ruins cytology; smears are made fresh and air-dried.",
+      "d": "Cells degrade and clot in the syringe overnight; slides should be made immediately."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Perfect health"
+        "text": "A normal value showing good concentrating ability"
       },
       {
         "id": "b",
-        "text": "Dehydration"
+        "text": "Dehydration with appropriate urine concentration"
       },
       {
         "id": "c",
-        "text": "Not measurable in dogs"
+        "text": "Hypersthenuria from normal renal function"
       },
       {
         "id": "d",
-        "text": "Poor concentrating ability/isosthenuria range warranting evaluation"
+        "text": "Poor concentrating ability/isosthenuria range"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Persistently low USG may indicate renal disease or other pathology.",
+    "explanation": "Persistently low USG may indicate renal disease or other pathology. A persistently low USG warrants evaluation.",
     "distractorExplanations": {
-      "a": "Context needed.",
-      "b": "Dehydration usually raises USG.",
-      "c": "Measurable."
+      "a": "A dog with good concentrating ability produces USG above about 1.030; 1.010 is isosthenuric.",
+      "b": "A dehydrated dog with normal kidneys should concentrate urine well above 1.030, not 1.010.",
+      "c": "Hypersthenuria is USG above about 1.030 in dogs; 1.008–1.012 is the isosthenuric range."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1199,23 +1199,23 @@
       },
       {
         "id": "b",
-        "text": "Called positive anyway"
+        "text": "Read as positive if the sample spot changed color"
       },
       {
         "id": "c",
-        "text": "Called negative to save cost"
+        "text": "Read as negative since no result spot appeared"
       },
       {
         "id": "d",
-        "text": "Photoshopped in record"
+        "text": "Read after 30 extra minutes to let the line form"
       }
     ],
     "correctOptionId": "a",
     "explanation": "In-house tests require valid control line before result interpretation.",
     "distractorExplanations": {
-      "b": "Invalid unusable.",
-      "c": "Cannot assume negative.",
-      "d": "Fraudulent."
+      "b": "Without a control line the test is invalid; no color on the sample spot can be read as positive.",
+      "c": "An invalid test can hide a true positive; no result may be reported until a valid test is run.",
+      "d": "SNAP tests are read at the labeled time; late reads are unreliable and a missing control means invalid."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Water on dry 4x"
+        "text": "Drop of immersion oil placed on the 40x dry objective lens"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "No cover slip ever"
+        "text": "Water between the slide and the 100x objective"
       },
       {
         "id": "d",
-        "text": "Cleaning never after use"
+        "text": "Drop of oil on the condenser with the 10x lens"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Oil couples 100x lens to slide; clean after use to prevent damage.",
     "distractorExplanations": {
-      "a": "Wrong lens/fluid.",
-      "c": "Thin smears use cover slip.",
-      "d": "Oil must be wiped."
+      "a": "The 40x is a dry objective; oil on it smears and can damage the lens seal.",
+      "c": "The 100x objective is designed for immersion oil; water's refractive index does not match the glass.",
+      "d": "Oil goes between the slide and the 100x objective, not on the condenser with a low-power lens."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlabeled tube in envelope"
+        "text": "Unlabeled tube with the form in the envelope"
       },
       {
         "id": "b",
-        "text": "Hemolyzed sample without note"
+        "text": "Hemolyzed sample sent without a note"
       },
       {
         "id": "c",
-        "text": "Correct tube, fasting status noted, patient ID, and shipping temperature requirements"
+        "text": "Correct tube, fasting status noted, patient ID"
       },
       {
         "id": "d",
-        "text": "Weekend delay at room temp for unstable test always OK"
+        "text": "Serum left on the clot over the weekend"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Lab rejection occurs with wrong tube, hemolysis, or improper transport.",
+    "explanation": "Lab rejection occurs with wrong tube, hemolysis, or improper transport. Also follow the lab's shipping temperature requirements.",
     "distractorExplanations": {
-      "a": "ID required.",
-      "b": "Note hemolysis; may recollect.",
-      "d": "Some tests require refrigeration."
+      "a": "The tube itself must carry patient ID; a form in the envelope can be separated from the sample.",
+      "b": "Hemolysis alters many analytes; note it on the form or recollect, rather than sending it silently.",
+      "d": "Serum left on the clot shifts glucose, potassium and phosphorus; separate and ship promptly."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Human meter on bird without validation"
+        "text": "Validated once at purchase and then used as is"
       },
       {
         "id": "b",
-        "text": "Never cleaned"
+        "text": "Any human meter, since values read identically across species"
       },
       {
         "id": "c",
-        "text": "Shared lancet between all patients"
+        "text": "Checked against a reference lab only when results seem odd"
       },
       {
         "id": "d",
-        "text": "Calibrated/quality controlled per manufacturer for species if applicable"
+        "text": "Calibrated/quality controlled per manufacturer"
       }
     ],
     "correctOptionId": "d",
     "explanation": "QC checks and species-appropriate meters improve accuracy.",
     "distractorExplanations": {
-      "a": "Species differences affect readings.",
-      "b": "Cleaning prevents contamination.",
-      "c": "Single-use lancets prevent disease spread."
+      "a": "Meters need ongoing QC with control solutions and new strip lots, not a single check at purchase.",
+      "b": "Human meters can misread animal blood because of hematocrit and plasma distribution differences.",
+      "c": "Routine QC runs on a schedule; waiting for odd results lets inaccurate readings go unnoticed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Sterilizing surgical field"
+        "text": "Disinfecting the skin before a cystocentesis"
       },
       {
         "id": "c",
-        "text": "Oral rehydration"
+        "text": "Cooling the transducer crystals during long abdominal scans"
       },
       {
         "id": "d",
-        "text": "Radiation shielding"
+        "text": "Enhancing contrast like an iodinated agent"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Gel transmits sound waves; warm if needed for patient comfort.",
     "distractorExplanations": {
-      "b": "Not antiseptic primary.",
-      "c": "Not ingestible.",
-      "d": "Not radiation related."
+      "b": "Gel is not an antiseptic; skin prep for cystocentesis uses alcohol or chlorhexidine.",
+      "c": "Gel removes air between probe and skin; it is not used to cool the transducer.",
+      "d": "Iodinated contrast is for radiography/CT; ultrasound gel only couples sound to the skin."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Malaria parasites"
+        "text": "Sheets of mast cells with granules"
       },
       {
         "id": "b",
-        "text": "Clusters of sebaceous cells often with basaloid proliferation per pathologist read"
+        "text": "Clusters of sebaceous cells"
       },
       {
         "id": "c",
-        "text": "Red blood cells only always malignant"
+        "text": "Spindle cells with wispy cytoplasm"
       },
       {
         "id": "d",
-        "text": "Plant pollen only means cancer"
+        "text": "Neutrophils with phagocytized bacteria"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Sebaceous tumors have characteristic cytology; pathologist confirms.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "c": "Not automatic malignancy.",
-      "d": "Pollen contamination possible benign."
+      "a": "Granulated round cells in sheets describe a mast cell tumor, not a sebaceous adenoma.",
+      "c": "Spindle cells with wispy cytoplasm indicate a mesenchymal lesion, not a sebaceous gland tumor.",
+      "d": "Neutrophils with intracellular bacteria indicate septic inflammation, not a sebaceous tumor."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate melarsomine without evaluation always at home"
+        "text": "Same-day melarsomine injections before any staging or workup"
       },
       {
         "id": "b",
-        "text": "Ignore if asymptomatic"
+        "text": "Monthly preventive alone, which clears adult worms safely"
       },
       {
         "id": "c",
-        "text": "DVM interpretation, confirmatory testing if indicated, and staging before treatment"
+        "text": "DVM interpretation, confirmatory testing if indicated, and staging"
       },
       {
         "id": "d",
-        "text": "Client internet treatment"
+        "text": "Retesting in one year if the dog shows no clinical signs"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Adulticide therapy requires staging, microfilaria status, and complication assessment.",
     "distractorExplanations": {
-      "a": "Treatment protocol complex.",
-      "b": "Asymptomatic still needs plan.",
-      "d": "Unsafe without DVM."
+      "a": "AHS protocol stages disease and gives doxycycline and preventive before melarsomine, not same-day dosing.",
+      "b": "Preventive-only slow kill is not recommended by AHS; it takes years and allows resistance and damage.",
+      "d": "Asymptomatic positive dogs still have adult worms damaging vessels; they need workup and treatment now."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1426,15 +1426,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Be superficial hair"
+        "text": "Sample a single site, since one scrape suffices"
       },
       {
         "id": "b",
-        "text": "Use oil or liquid on slide per technique"
+        "text": "Stop at the epidermis to avoid any bleeding"
       },
       {
         "id": "c",
-        "text": "Never examine under microscope"
+        "text": "Use a dry slide with no mineral oil added"
       },
       {
         "id": "d",
@@ -1444,9 +1444,9 @@
     "correctOptionId": "d",
     "explanation": "Deep scrapings to blood with mineral oil help recover Demodex mites.",
     "distractorExplanations": {
-      "a": "Superficial misses mites.",
-      "b": "Oil aids mite recovery.",
-      "c": "Microscopy essential."
+      "a": "Demodex can be patchy; several sites are scraped to avoid false negatives.",
+      "b": "Demodex lives in hair follicles; deep scrapings continue until capillary ooze appears.",
+      "c": "Mineral oil on the blade and slide helps collect and see mites; dry scrapings lose material."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1459,27 +1459,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Control runs, maintenance logs, and proficiency testing when applicable"
+        "text": "Control runs, maintenance logs, and proficiency testing"
       },
       {
         "id": "b",
-        "text": "Skipping controls to save money"
+        "text": "Calibration once at installation, then only after a failure"
       },
       {
         "id": "c",
-        "text": "One calibration at install"
+        "text": "Running controls when a result looks abnormal"
       },
       {
         "id": "d",
-        "text": "Hide QC failures"
+        "text": "Logging QC failures without corrective action"
       }
     ],
     "correctOptionId": "a",
     "explanation": "QA documents accuracy/reliability of diagnostic equipment and processes.",
     "distractorExplanations": {
-      "b": "Controls required.",
-      "c": "Periodic calibration needed.",
-      "d": "Failures must be addressed."
+      "b": "Analyzers need scheduled calibration and controls; waiting for failure lets errors reach patients.",
+      "c": "Controls run on a fixed schedule, not just when a patient result looks unusual.",
+      "d": "QC failures require corrective action and documented resolution before patient samples are run."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Improve coat shine"
+        "text": "Reduce the dose of induction drugs needed"
       },
       {
         "id": "b",
@@ -1500,19 +1500,19 @@
       },
       {
         "id": "c",
-        "text": "Allow full meal 1 hour before"
+        "text": "Prevent hypoglycemia during recovery"
       },
       {
         "id": "d",
-        "text": "Eliminate need for IV fluids"
+        "text": "Shorten the overall recovery time"
       }
     ],
     "correctOptionId": "b",
     "explanation": "NPO guidelines reduce regurgitation/aspiration during induction/recovery.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "c": "Recent food increases risk.",
-      "d": "Fluids still often given."
+      "a": "Fasting does not lower induction drug doses; doses are set by weight, health and drug protocol.",
+      "c": "Fasting raises hypoglycemia risk, especially in pediatric and toy patients; it does not prevent it.",
+      "d": "Recovery time depends on drugs, temperature and patient status; fasting aims to cut aspiration."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only nail polish color"
+        "text": "Pulse oximetry alone once the patient is intubated"
       },
       {
         "id": "b",
-        "text": "Client opinion"
+        "text": "Vital signs at induction and again at extubation"
       },
       {
         "id": "c",
-        "text": "No monitoring until recovery"
+        "text": "Vaporizer setting as the guide to anesthetic depth"
       },
       {
         "id": "d",
-        "text": "Heart rate, respiratory rate, BP/perfusion, temperature, depth of anesthesia"
+        "text": "Heart rate, respiratory rate, BP/perfusion, temperature"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Multimodal monitoring detects hypotension, hypothermia, and hypoventilation early.",
+    "explanation": "Multimodal monitoring detects hypotension, hypothermia, and hypoventilation early. Depth of anesthesia is also assessed throughout.",
     "distractorExplanations": {
-      "a": "Insufficient.",
-      "b": "Objective monitoring required.",
-      "c": "Intra-op monitoring mandatory."
+      "a": "SpO2 alone misses hypotension, hypothermia and depth changes; multimodal monitoring is standard.",
+      "b": "Vitals are recorded every 5 minutes throughout anesthesia, not just at induction and extubation.",
+      "c": "The vaporizer setting is not depth; depth is judged from reflexes, jaw tone, eye position and vitals."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1591,27 +1591,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Water flow, proper tip, and post-op radiographs policy per DVM"
+        "text": "Water flow, proper tip, and post-op radiographs policy"
       },
       {
         "id": "b",
-        "text": "Dry scaling without suction"
+        "text": "Holding the tip on one tooth for 30 seconds or more"
       },
       {
         "id": "c",
-        "text": "No PPE for aerosols"
+        "text": "Using the tip's point perpendicular to the enamel"
       },
       {
         "id": "d",
-        "text": "Extract all teeth routinely"
+        "text": "Dry scaling with suction instead of coolant"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Dental aerosols require PPE; scaling followed by polishing and assessment.",
     "distractorExplanations": {
-      "b": "Coolant/suction needed.",
-      "c": "Eye/mouth protection important.",
-      "d": "Extractions case-specific."
+      "b": "Ultrasonic tips overheat the pulp if held more than about 10-15 seconds per tooth.",
+      "c": "The side of the tip is used nearly parallel to the tooth; the point gouges enamel.",
+      "d": "Ultrasonic scalers need water coolant to prevent thermal pulp damage; suction does not replace it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Quick rinse"
+        "text": "Scrubbing from elbows down toward the fingertips"
       },
       {
         "id": "b",
@@ -1632,19 +1632,19 @@
       },
       {
         "id": "c",
-        "text": "Perfume application"
+        "text": "A quick rinse and an alcohol spray on the fingertips"
       },
       {
         "id": "d",
-        "text": "Reuse previous day's gloves unwashed"
+        "text": "Drying hands with a nonsterile paper towel from the sink dispenser"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Surgical antisepsis follows timed scrub or approved alcohol-based protocol.",
     "distractorExplanations": {
-      "a": "Inadequate.",
-      "c": "Not antiseptic.",
-      "d": "Gloves require hand antisepsis each case."
+      "a": "The scrub moves from fingertips to elbows with hands held up, so water drains away from clean hands.",
+      "c": "A quick rinse skips the timed mechanical scrub of nails, hands and forearms that the protocol requires.",
+      "d": "Scrubbed hands are dried with a sterile towel; a nonsterile paper towel recontaminates them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1657,11 +1657,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No analgesia because animals hide pain myth"
+        "text": "Acetaminophen for cats, plus an NSAID for dogs"
       },
       {
         "id": "b",
-        "text": "Human acetaminophen routinely in cats"
+        "text": "Two NSAIDs together for stronger anti-inflammation"
       },
       {
         "id": "c",
@@ -1669,15 +1669,15 @@
       },
       {
         "id": "d",
-        "text": "Alcohol rub on incision"
+        "text": "A single opioid dose at extubation, with nothing given afterward"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Balanced analgesia improves recovery; species-safe drugs only.",
     "distractorExplanations": {
-      "a": "Pain control standard of care.",
-      "b": "Acetaminophen toxic to cats.",
-      "d": "Harmful to tissue."
+      "a": "Acetaminophen is toxic to cats (methemoglobinemia, liver injury) and must not be used in them.",
+      "b": "Combining NSAIDs, or NSAIDs with steroids, sharply raises GI ulcer and kidney injury risk.",
+      "d": "One opioid dose wears off within hours; multimodal plans cover the post-op period with ongoing analgesia."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Use anyway if busy"
+        "text": "Pack usable if the outer tape changed color"
       },
       {
         "id": "b",
-        "text": "Indicator cosmetic"
+        "text": "Pack usable if it stays sealed and dry"
       },
       {
         "id": "c",
-        "text": "Freeze pack instead"
+        "text": "Indicator faulty—use pack, log the strip"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "Biological/chemical indicators confirm cycle efficacy.",
     "distractorExplanations": {
-      "a": "Unsafe.",
-      "b": "Indicators validate sterilization.",
-      "c": "Freezing not sterilization."
+      "a": "Outer tape only shows exposure to heat; a failed internal indicator means the pack did not sterilize.",
+      "b": "A sealed, dry pack can still be nonsterile; a failed indicator overrides how the pack looks.",
+      "c": "A failed indicator is treated as a failed cycle; the pack is reprocessed, not used with a note."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Enough to seal without excessive pressure causing tracheal necrosis"
+        "text": "Enough to seal without excessive pressure"
       },
       {
         "id": "b",
-        "text": "Maximal inflation"
+        "text": "Inflated until the pilot balloon is very firm"
       },
       {
         "id": "c",
-        "text": "Zero inflation always leaking"
+        "text": "About 50–60 cm H2O on the cuff manometer"
       },
       {
         "id": "d",
-        "text": "Not monitored ever"
+        "text": "Left deflated in cats to avoid all injury"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Cuff manometry or minimal occlusive volume prevents airway leak and pressure injury.",
+    "explanation": "Cuff manometry or minimal occlusive volume prevents airway leak and pressure injury. Overinflation can cause tracheal necrosis or rupture.",
     "distractorExplanations": {
-      "b": "Overinflation damages trachea.",
-      "c": "Some seal needed.",
-      "d": "Monitoring recommended."
+      "b": "A rock-hard pilot balloon signals overinflation that can cause tracheal necrosis or rupture.",
+      "c": "Recommended cuff pressure is about 20-30 cm H2O; 50-60 cm H2O risks mucosal ischemia.",
+      "d": "Cats still need a seal to prevent aspiration and gas leaks; the cuff is inflated gently, not left empty."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Counts optional for speed"
+        "text": "A final count only for long procedures"
       },
       {
         "id": "b",
-        "text": "Initial and final counts documented; discrepancy resolved before closure"
+        "text": "Initial and final counts documented"
       },
       {
         "id": "c",
-        "text": "Add extra sponge if short"
+        "text": "Counts done by the surgeon from memory"
       },
       {
         "id": "d",
-        "text": "Ignore if patient small"
+        "text": "A count at closure if sponges look short"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Retained foreign bodies prevented by systematic counts.",
+    "explanation": "Retained foreign bodies prevented by systematic counts. Any discrepancy is resolved before closure.",
     "distractorExplanations": {
-      "a": "Standard of care requires counts.",
-      "c": "Search if discrepancy.",
-      "d": "Size irrelevant."
+      "a": "Counts are done for every procedure, starting before the first incision, not just long surgeries.",
+      "c": "Counts are done aloud by two people and recorded; memory is unreliable for retained sponges.",
+      "d": "Counts are routine at the start and close, not triggered only when sponges appear missing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "All pain"
+        "text": "Hyperthermia from residual opioid effects"
       },
       {
         "id": "b",
-        "text": "Need for monitoring"
+        "text": "Post-op pain, so analgesics can be reduced"
       },
       {
         "id": "c",
-        "text": "Shivering only in humans"
+        "text": "Hypertension caused by the inhalant anesthetic agents"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "Perioperative hypothermia common; warm air blankets/fluids help.",
     "distractorExplanations": {
-      "a": "Pain separate issue.",
-      "b": "Monitoring still required.",
-      "c": "Animals shiver too."
+      "a": "Opioid-related hyperthermia (mainly in cats) is a reason to monitor temperature, not to add heat.",
+      "b": "Warming improves comfort but does not replace analgesia; pain plans continue as ordered.",
+      "c": "Inhalant anesthetics cause dose-dependent hypotension and vasodilation, not hypertension."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1859,23 +1859,23 @@
       },
       {
         "id": "b",
-        "text": "Hearing permanently"
+        "text": "Anesthetic gas exposure for the surgeon"
       },
       {
         "id": "c",
-        "text": "Need for sterile gloves"
+        "text": "The need for a surgical hand scrub"
       },
       {
         "id": "d",
-        "text": "Anesthetic gas use entirely"
+        "text": "Radiation exposure during fluoroscopy"
       }
     ],
     "correctOptionId": "a",
     "explanation": "PPE minimizes surgical site infection risk.",
     "distractorExplanations": {
-      "b": "Temporary adjustment.",
-      "c": "Gloves still required.",
-      "d": "Gas still used."
+      "b": "Waste gas exposure is controlled by scavenging and leak checks; surgical masks do not filter it.",
+      "c": "Caps and masks add to, not replace, the surgical hand scrub before gloving.",
+      "d": "Radiation exposure is reduced with lead PPE and distance, not by caps and surgical masks."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Client tug at home"
+        "text": "Waiting until age two for the tooth to fall out"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Ignore until abscess"
+        "text": "Client wiggling it loose at home over weeks"
       },
       {
         "id": "d",
-        "text": "Human pediatric dentist"
+        "text": "Tech extraction during the vaccine visit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Retained deciduous teeth cause periodontal issues; professional extraction indicated.",
     "distractorExplanations": {
-      "a": "Unsafe.",
-      "c": "Early intervention better.",
-      "d": "Veterinary dental care."
+      "a": "A deciduous tooth still present with its adult tooth erupted is extracted promptly to prevent malocclusion.",
+      "c": "Home removal risks root fracture and infection; retained deciduous teeth need surgical extraction.",
+      "d": "Extractions are a surgical procedure for the veterinarian in most states and need anesthesia."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Smoke improves visibility"
+        "text": "Laser plume is sterile, so masks are optional"
       },
       {
         "id": "b",
-        "text": "Blow toward open door at staff"
+        "text": "Room fans can safely disperse the plume instead"
       },
       {
         "id": "c",
-        "text": "Plume contains harmful particulates/bacteria/viable HPV in human literature; use evacuation"
+        "text": "Plume contains harmful particulates/bacteria"
       },
       {
         "id": "d",
-        "text": "No PPE needed ever"
+        "text": "Plume mainly affects the laser lens accuracy"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Surgical plume hazardous; evacuation and masks protect staff.",
+    "explanation": "Surgical plume hazardous; evacuation and masks protect staff. Use smoke evacuation and appropriate masks.",
     "distractorExplanations": {
-      "a": "Health hazard primary concern.",
-      "b": "Unsafe exposure.",
-      "d": "PPE recommended."
+      "a": "Laser plume can carry viable bacteria and viral DNA; local evacuation and masks protect staff.",
+      "b": "Fans spread plume through the room; a smoke evacuator captures it at the source.",
+      "d": "The main concern is staff inhalation of particulates and microbes, not the laser lens."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1954,27 +1954,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate unattended kennel exit"
+        "text": "Extubation as soon as the vaporizer is turned off"
       },
       {
         "id": "b",
-        "text": "Pull ET tube mid-anesthetic depth without swallow"
+        "text": "Checks every few hours once the patient is back in its kennel"
       },
       {
         "id": "c",
-        "text": "No observation until next day"
+        "text": "Brachycephalics extubated early to avoid gagging"
       },
       {
         "id": "d",
-        "text": "Airway patency, temperature, pain, and extubation timing when swallow reflex returns"
+        "text": "Airway patency, temperature, pain, and extubation timing"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Recovery is critical phase for airway obstruction and hypothermia.",
+    "explanation": "Recovery is critical phase for airway obstruction and hypothermia. Extubate when the swallow reflex returns.",
     "distractorExplanations": {
-      "a": "Supervision required.",
-      "b": "Extubate when swallowing present.",
-      "c": "Continuous early recovery monitoring."
+      "a": "The tube stays in until the swallow reflex returns; pulling it at vaporizer off risks aspiration.",
+      "b": "Early recovery needs continuous observation until the patient is extubated, sternal and warm.",
+      "c": "Brachycephalic patients are extubated as late as tolerated because of airway obstruction risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"

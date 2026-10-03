@@ -1,0 +1,691 @@
+{
+ "ccht-dialysis-readiness-check": {
+  "ccht-dialysis-readiness-check-dialysis-principles-001": {
+   "options": {
+    "a": "Remove excess fluid and uremic wastes and help correct electrolyte imbalances",
+    "b": "Restore the kidney's hormone functions, such as erythropoietin and vitamin D activation",
+    "c": "Remove protein-bound drugs and large proteins such as albumin from the blood",
+    "d": "Lower blood pressure by delivering antihypertensive medication via dialysate"
+   },
+   "distractorExplanations": {
+    "b": "Dialysis does not replace endocrine kidney functions; ESAs and active vitamin D are given as separate medications.",
+    "c": "The membrane is designed to retain albumin and most proteins; protein loss is a side effect, not the purpose.",
+    "d": "BP improves through fluid removal; antihypertensives are not delivered through the dialysate."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-002": {
+   "options": {
+    "a": "Movement of water across the membrane driven by a hydrostatic pressure gradient",
+    "b": "Movement of solutes from higher to lower concentration across a semipermeable membrane",
+    "c": "Movement of solutes carried along with water as it crosses the membrane (solvent drag)",
+    "d": "Binding of solutes to the membrane surface so they are removed from the blood"
+   },
+   "distractorExplanations": {
+    "a": "That describes ultrafiltration (fluid removal by pressure), not diffusion of solutes down a concentration gradient.",
+    "c": "That is convection, the main mechanism in hemofiltration; diffusion depends on a concentration gradient.",
+    "d": "That is adsorption, a minor removal mechanism for some proteins, not diffusion."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-004": {
+   "options": {
+    "a": "Passage of blood cells and proteins into the dialysate while retaining water and urea",
+    "b": "Passage of water only, while all solutes including urea and potassium are retained",
+    "c": "Passage of large proteins such as albumin while small molecules such as urea are retained",
+    "d": "Passage of water and small/middle molecules while retaining blood cells and most proteins"
+   },
+   "distractorExplanations": {
+    "a": "Reverses selectivity: cells and proteins stay in the blood while water and urea cross the membrane.",
+    "b": "Describes reverse osmosis behavior; urea, potassium and other small solutes must cross the dialyzer membrane.",
+    "c": "Inverts size selectivity: small molecules like urea pass easily, while albumin is largely retained."
+   },
+   "explanation": "Membrane selectivity is fundamental; blood and dialysate remain in separate compartments. The exact molecular cutoff depends on the membrane."
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-005": {
+   "options": {
+    "a": "Electrolyte concentration of the dialysate mixture",
+    "b": "Bacterial and endotoxin levels in the dialysate",
+    "c": "Temperature of the dialysate delivered to the dialyzer",
+    "d": "Blood flow rate through the extracorporeal circuit"
+   },
+   "distractorExplanations": {
+    "b": "Microbial quality is measured by cultures and LAL endotoxin testing; conductivity reflects ionic concentration.",
+    "c": "Temperature has its own sensor; conductivity is temperature-compensated but reflects electrolyte concentration.",
+    "d": "Blood flow is set by the blood pump and seen on the pump display; conductivity is a dialysate measurement."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-007": {
+   "options": {
+    "a": "Fluid removal accuracy (ultrafiltration relative to dry weight)",
+    "b": "Access recirculation (venous blood re-entering the arterial needle)",
+    "c": "Dialysis adequacy (urea clearance relative to patient factors)",
+    "d": "Anemia management (hemoglobin response to erythropoietin dosing)"
+   },
+   "distractorExplanations": {
+    "a": "UF accuracy is judged by pre/post weights against target weight; Kt/V and URR measure urea clearance.",
+    "b": "Recirculation lowers adequacy but is measured with a separate recirculation study, not by Kt/V or URR.",
+    "d": "Anemia is tracked with hemoglobin and iron studies; Kt/V and URR are urea-clearance adequacy measures."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-008": {
+   "options": {
+    "a": "Venous outflow obstruction from a kinked return line or infiltrated venous needle",
+    "b": "A blood flow rate set too low for the size of the arterial needle in use",
+    "c": "A dialyzer clotting downstream of the blood pump, which increases transmembrane pressure",
+    "d": "Access inflow problems (e.g., stenosis, needle position, clotting) limiting blood flow"
+   },
+   "distractorExplanations": {
+    "a": "Outflow obstruction raises venous (post-dialyzer) pressure; very negative arterial pressure points to inflow.",
+    "b": "A low blood flow makes arterial pressure less negative; high flow through a small needle makes it more negative.",
+    "c": "Dialyzer clotting shows as rising pre-dialyzer pressure/TMP after the pump, not excessive pre-pump negativity."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-009": {
+   "options": {
+    "a": "Outflow obstruction such as clotting, kinked line, or infiltrated/poor venous return",
+    "b": "Arterial needle inflow problems such as stenosis or a needle against the vessel wall",
+    "c": "A disconnected or dislodged venous needle allowing blood to leak at the site",
+    "d": "A blood pump speed reduced after the patient complained of cramping"
+   },
+   "distractorExplanations": {
+    "b": "Inflow problems drive arterial pressure more negative and can lower venous pressure rather than raise it.",
+    "c": "Venous needle dislodgement drops venous pressure, which is why it may not trigger an alarm; it does not rise.",
+    "d": "Lowering blood flow reduces venous pressure; a sharp rise suggests obstruction of the return path."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-010": {
+   "options": {
+    "a": "Detect blood leaks across the dialyzer membrane into the dialysate path",
+    "b": "Reduce risk of air embolism by alarming and clamping if air is detected",
+    "c": "Remove microbubbles from the dialysate before it enters the dialyzer",
+    "d": "Monitor the arterial line for clots forming before the blood pump"
+   },
+   "distractorExplanations": {
+    "a": "Membrane leaks are caught by the blood leak detector on the dialysate outflow, not the venous air detector.",
+    "c": "Dialysate degassing is done by the machine's deaeration system; the venous detector guards the blood path.",
+    "d": "Clotting is watched through pressures and visual checks; the air detector/clamp sits on the venous return line."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-011": {
+   "options": {
+    "a": "Help correct metabolic alkalosis caused by uremic toxin buildup",
+    "b": "Help remove excess calcium that accumulates in kidney failure",
+    "c": "Help correct metabolic acidosis common in kidney failure",
+    "d": "Help prevent clotting of the dialyzer during the treatment"
+   },
+   "distractorExplanations": {
+    "a": "Kidney failure causes metabolic acidosis, not alkalosis; bicarbonate is a base used to correct acidosis.",
+    "b": "Calcium balance is managed with the dialysate calcium concentration; bicarbonate serves as the buffer.",
+    "d": "Circuit clotting is prevented with heparin or saline flushes per order; bicarbonate has no anticoagulant role."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-012": {
+   "options": {
+    "a": "Pressure in the arterial line between the access and the blood pump",
+    "b": "Pressure in the venous drip chamber reflecting resistance to blood return",
+    "c": "Osmotic pressure difference that drives solute diffusion from blood to dialysate",
+    "d": "Pressure gradient across the dialyzer membrane influencing ultrafiltration"
+   },
+   "distractorExplanations": {
+    "a": "That is arterial (pre-pump) pressure, which reflects access inflow rather than the membrane gradient.",
+    "b": "That is venous pressure; TMP is the blood-to-dialysate pressure difference across the membrane.",
+    "c": "Diffusion is driven by concentration gradients; TMP is a hydrostatic gradient that drives ultrafiltration."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-013": {
+   "options": {
+    "a": "Greater permeability allowing more middle-molecule clearance",
+    "b": "Larger surface area allowing faster small-solute clearance like urea",
+    "c": "Lower permeability that retains middle molecules such as beta-2 microglobulin",
+    "d": "Greater blood flow capacity allowing pump speeds above 500 mL/min"
+   },
+   "distractorExplanations": {
+    "b": "Surface area and urea clearance define a high-efficiency dialyzer; flux describes membrane water permeability.",
+    "c": "Describes a low-flux membrane; high-flux membranes clear more beta-2 microglobulin and other middle molecules.",
+    "d": "Flux is a membrane permeability property; blood flow rate is set by the access and prescription."
+   },
+   "explanation": "Flux refers to water/solute permeability characteristics; prescriptions and monitoring still apply. High-flux dialyzers also require careful (volumetric) UF control."
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-014": {
+   "options": {
+    "a": "In the same direction (cocurrent) to keep the pressure gradient stable",
+    "b": "In opposite directions (countercurrent) to maximize diffusion gradients",
+    "c": "In opposite directions, with dialysate flow kept below the blood flow rate",
+    "d": "In the same direction, with dialysate recirculated to conserve concentrate"
+   },
+   "distractorExplanations": {
+    "a": "Cocurrent flow lets the concentration gradient fall along the fiber and lowers clearance; countercurrent is standard.",
+    "c": "Dialysate flow is normally set higher than blood flow (often 500-800 mL/min) to maintain the gradient.",
+    "d": "Standard in-center machines use single-pass, countercurrent dialysate; recirculating it erodes the gradient."
+   }
+  },
+  "ccht-dialysis-readiness-check-dialysis-principles-015": {
+   "options": {
+    "a": "Start treatment with the machine in bypass and recheck conductivity after an hour",
+    "b": "Silence the alarm and rely on the machine's internal conductivity reading alone",
+    "c": "Not initiate or continue treatment until safe dialysate is verified; escalate per policy",
+    "d": "Adjust the patient's prescribed sodium profile until the conductivity alarm finally clears"
+   },
+   "distractorExplanations": {
+    "a": "Treatment cannot start until dialysate composition is verified; bypass is a protective mode, not a workaround.",
+    "b": "An out-of-range reading needs independent verification and correction, not silencing and trusting one sensor.",
+    "d": "Changing the prescription masks a mixing/concentrate error and is outside the technician's scope."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-001": {
+   "options": {
+    "a": "How much fluid to remove (UF goal)",
+    "b": "The dialysate sodium level to order",
+    "c": "The blood flow rate for the session",
+    "d": "Whether the dialyzer size is right"
+   },
+   "distractorExplanations": {
+    "b": "Dialysate sodium is set by the prescription and labs, not by comparing pre-weight with target weight.",
+    "c": "Blood flow is set by the prescription and access performance; weight gain determines the UF goal.",
+    "d": "Dialyzer choice is part of the adequacy prescription; weight versus dry weight sets fluid removal."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-003": {
+   "options": {
+    "a": "A dialysate temperature set cooler than the patient's body temperature",
+    "b": "Interdialytic weight gain too small to require much fluid removal",
+    "c": "Excessive or rapid ultrafiltration relative to vascular refill",
+    "d": "High dialysate sodium drawing fluid out of the vascular space"
+   },
+   "distractorExplanations": {
+    "a": "Cool dialysate causes vasoconstriction and is used to prevent hypotension; warm dialysate contributes to it.",
+    "b": "Small gains mean a low UF rate and less hypotension risk; large gains with rapid UF are the usual cause.",
+    "d": "Higher dialysate sodium supports plasma osmolality and vascular refill; low sodium contributes to hypotension."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-004": {
+   "options": {
+    "a": "A stenosis narrowing the access that needs urgent referral",
+    "b": "Arterial steal reducing blood flow to the hand",
+    "c": "A clotted access that should not be cannulated",
+    "d": "Expected blood flow through a patent access"
+   },
+   "distractorExplanations": {
+    "a": "A normal thrill and bruit indicate patency; stenosis shows as a high-pitched, discontinuous bruit or pulsatile thrill.",
+    "b": "Steal is identified by distal hand coolness, pain or pallor, not by the presence of a thrill and bruit.",
+    "c": "A clotted access has an absent thrill and bruit; their presence indicates flow through a patent access."
+   },
+   "explanation": "Absence or marked change in thrill/bruit can signal thrombosis/stenosis—report promptly. Assess the quality of the thrill and bruit and report any change."
+  },
+  "ccht-dialysis-readiness-check-patient-care-005": {
+   "options": {
+    "a": "Adequate depth, diameter, and flow characteristics for successful cannulation",
+    "b": "Waiting six months before the first cannulation and using 6-gauge fistula needles",
+    "c": "Six hours of treatment per week with a minimum blood pump speed of 600 mL/min",
+    "d": "Rotating sites six centimeters apart over six treatments per week"
+   },
+   "distractorExplanations": {
+    "b": "The rule uses about 6 weeks, not months; fistula needles are typically 14-17 gauge, not 6 gauge.",
+    "c": "The 600 mL/min figure is access flow for maturation, not a treatment blood flow, and time is not part of it.",
+    "d": "Site rotation (rope ladder) is a cannulation technique; the rule of 6s describes fistula maturation criteria."
+   },
+   "explanation": "Maturation criteria guide when an access is ready; follow nephrology/facility standards. Classic figures: flow about 600 mL/min, diameter about 6 mm, depth under 6 mm, about 6 weeks after creation; facility protocols vary."
+  },
+  "ccht-dialysis-readiness-check-patient-care-006": {
+   "options": {
+    "a": "Arm swelling and prominent chest veins due to central vein stenosis",
+    "b": "Hand pain, coolness, or pallor distal to the access due to ischemia",
+    "c": "Redness, warmth, and drainage at the cannulation sites due to infection",
+    "d": "A pulsatile, high-pitched bruit due to outflow stenosis"
+   },
+   "distractorExplanations": {
+    "a": "Swelling with collateral veins signals central venous stenosis/venous hypertension, not arterial steal.",
+    "c": "Those are signs of access infection; steal causes ischemic symptoms distal to the access.",
+    "d": "A high-pitched bruit and pulsatile access indicate outflow stenosis, not distal ischemia from steal."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-007": {
+   "options": {
+    "a": "Lower the blood flow rate, reposition the needle deeper into the vessel, and continue treatment",
+    "b": "Apply heat to the site immediately and continue at the same blood flow rate",
+    "c": "Stop the blood pump, discontinue that needle per protocol, apply pressure, and notify the nurse",
+    "d": "Swap the arterial and venous bloodlines so blood returns through the arterial needle instead"
+   },
+   "distractorExplanations": {
+    "a": "Repositioning an infiltrated needle worsens the hematoma; stop the pump, remove it, hold pressure and notify.",
+    "b": "Continuing flow through an infiltrated needle extends the injury; cold is usually applied first, per protocol.",
+    "d": "Reversing lines does not fix an infiltrated site and increases recirculation; stop and remove the needle."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-008": {
+   "options": {
+    "a": "High dialysate sodium raising plasma osmolality",
+    "b": "Hyperkalemia from a high-potassium dialysate bath",
+    "c": "Heparin dosing that is too high for the patient",
+    "d": "Volume/electrolyte shifts, especially aggressive UF"
+   },
+   "distractorExplanations": {
+    "a": "Higher sodium is used to relieve cramps; low dialysate sodium and rapid UF are associated with cramping.",
+    "b": "Hyperkalemia causes weakness and arrhythmias; intradialytic cramps are linked to volume and electrolyte shifts.",
+    "c": "Excess heparin causes prolonged bleeding at needle sites, not muscle cramps."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-009": {
+   "options": {
+    "a": "Chest pain, back pain, or anaphylactoid symptoms related to dialyzer reaction",
+    "b": "Fever and chills appearing an hour in, from endotoxin in the water supply",
+    "c": "Headache, nausea, and confusion from rapid urea removal in new patients",
+    "d": "Hypotension and cramping late in treatment from excessive ultrafiltration"
+   },
+   "distractorExplanations": {
+    "b": "That is a pyrogenic reaction from contaminated water; first-use reactions occur within minutes of starting.",
+    "c": "Those neurologic symptoms describe disequilibrium syndrome, not a dialyzer (first-use) reaction.",
+    "d": "Late hypotension and cramps reflect fluid removal; first-use syndrome is an early reaction to the dialyzer."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-010": {
+   "options": {
+    "a": "Vital signs and post weight only, with access checked at the next session",
+    "b": "Vital signs, access hemostasis, orthostasis, and ability to safely leave",
+    "c": "Access hemostasis and post weight, with blood pressure taken if symptomatic",
+    "d": "Post-treatment labs and Kt/V before the patient may leave the chair"
+   },
+   "distractorExplanations": {
+    "a": "Access hemostasis must be confirmed before the patient leaves; deferring it risks bleeding after discharge.",
+    "c": "Post-treatment vital signs and orthostatic checks are required for every patient, not just symptomatic ones.",
+    "d": "Labs are drawn on a schedule per policy; discharge criteria are vitals, hemostasis and safe ambulation."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-011": {
+   "options": {
+    "a": "Possible air embolism from the venous line; clamp lines and continue",
+    "b": "Possible hyperkalemia from the dialysate bath; raise the potassium bath",
+    "c": "Possible electrolyte imbalance such as low calcium—notify RN immediately",
+    "d": "Possible first-use reaction to the dialyzer; slow the blood pump down"
+   },
+   "distractorExplanations": {
+    "a": "Air embolism presents with dyspnea, chest pain and cyanosis and requires stopping treatment, not continuing.",
+    "b": "Perioral tingling with twitching suggests hypocalcemia; changing the potassium bath is outside tech scope.",
+    "d": "First-use reactions occur in the first minutes with chest/back pain, not tetany-like signs near the end."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-013": {
+   "options": {
+    "a": "Urea is lowered too rapidly, especially in first treatments of severe uremia",
+    "b": "Fluid is removed too rapidly in patients with large interdialytic gains",
+    "c": "Urea is lowered too slowly in long-term patients on short treatments",
+    "d": "Dialysate sodium is set higher than the patient's serum sodium level"
+   },
+   "distractorExplanations": {
+    "b": "Rapid fluid removal causes hypotension and cramps; disequilibrium comes from rapid urea (osmotic) shifts.",
+    "c": "Slow urea removal means inadequate dialysis; disequilibrium results from removing urea too fast.",
+    "d": "Higher dialysate sodium is a strategy to reduce disequilibrium risk, not a cause of it."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-014": {
+   "options": {
+    "a": "Preferred, because the wider segment is easier to hit",
+    "b": "Avoided; cannulate healthy segments per access plan",
+    "c": "Acceptable if a smaller 17-gauge needle is used there",
+    "d": "Recommended as a buttonhole site to limit new punctures"
+   },
+   "distractorExplanations": {
+    "a": "Aneurysmal skin and wall are thin; cannulating them risks bleeding and rupture, so they are avoided.",
+    "c": "Needle size does not make an aneurysm safe to puncture; the thin wall still risks rupture and bleeding.",
+    "d": "Buttonhole tracks are created in healthy, straight segments, never in aneurysms."
+   }
+  },
+  "ccht-dialysis-readiness-check-patient-care-015": {
+   "options": {
+    "a": "Shorten the session as requested and document it at the end of the shift",
+    "b": "Have the patient sign an AMA form and end treatment without involving the nurse",
+    "c": "Inform the nurse/team, document per policy, and not coerce unsafe deviations alone",
+    "d": "Increase the UF rate for the remaining time so the fluid goal is still met"
+   },
+   "distractorExplanations": {
+    "a": "A refusal must be reported to the nurse promptly so a licensed clinician can address risks and consent.",
+    "b": "Informed refusal and AMA discussions are handled by licensed staff; the technician escalates first.",
+    "d": "Raising UF to compensate without an order risks hypotension and is outside the technician's scope."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-001": {
+   "options": {
+    "a": "Patients are exposed to large volumes of water across the dialyzer membrane",
+    "b": "Patients drink large volumes of treated water to replace removed fluid",
+    "c": "Municipal water already meets AAMI dialysis standards once chlorine is removed",
+    "d": "Softened water can be used directly without carbon or reverse osmosis"
+   },
+   "distractorExplanations": {
+    "b": "Patients are fluid-restricted; the exposure is the 100+ liters of dialysate water contacting blood per treatment.",
+    "c": "Drinking-water standards are not dialysis standards; chloramine, metals, bacteria and endotoxin must be treated.",
+    "d": "Softening only removes hardness; carbon and RO are still needed for chloramine and other contaminants."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-003": {
+   "options": {
+    "a": "Chlorine and chloramine levels",
+    "b": "Bacteria and endotoxin counts",
+    "c": "Calcium and magnesium (hardness)",
+    "d": "Aluminum and other trace metals"
+   },
+   "distractorExplanations": {
+    "a": "Chlorine and chloramine are removed by carbon tanks; softeners exchange hardness ions.",
+    "b": "Bacteria and endotoxin are controlled by RO, ultrafilters and disinfection, not by softeners.",
+    "d": "Trace metals like aluminum are removed mainly by reverse osmosis; softeners target calcium and magnesium."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-004": {
+   "options": {
+    "a": "Removes chloramine so carbon tanks can be omitted from the system",
+    "b": "Adds bicarbonate buffer to product water before concentrate mixing",
+    "c": "Softens feed water by exchanging calcium for sodium ions",
+    "d": "Removes a broad range of chemical and microbial contaminants"
+   },
+   "distractorExplanations": {
+    "a": "RO does not reliably remove chloramine, and chloramine damages some membranes; carbon must stay upstream.",
+    "b": "RO purifies water; bicarbonate is added later from concentrate in the dialysis machine.",
+    "c": "Ion exchange for hardness is the softener's job, placed upstream to protect the RO membrane."
+   },
+   "explanation": "RO is a cornerstone; reject rates, pressures, and product water quality are monitored. It does so only when functioning properly, so rejection and product water quality are monitored."
+  },
+  "ccht-dialysis-readiness-check-water-infection-005": {
+   "options": {
+    "a": "Pyrogenic reactions (fever, chills, hypotension)",
+    "b": "Hemolysis (dark blood, chest pain, back pain)",
+    "c": "Disequilibrium (headache, nausea, confusion)",
+    "d": "Hypocalcemia (perioral tingling, muscle twitching)"
+   },
+   "distractorExplanations": {
+    "b": "Hemolysis is linked to chloramine, overheated or hypotonic dialysate, not endotoxin.",
+    "c": "Disequilibrium comes from rapid urea removal; endotoxin causes pyrogenic reactions.",
+    "d": "Hypocalcemia relates to dialysate calcium/electrolyte shifts, not endotoxin exposure."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-006": {
+   "options": {
+    "a": "Remove chloramine that passes through the carbon tanks into the loop",
+    "b": "Control bacterial biofilm and keep microbial counts within standards",
+    "c": "Restore RO membrane rejection after scale buildup from hard water",
+    "d": "Sterilize the distribution loop so water cultures are no longer needed"
+   },
+   "distractorExplanations": {
+    "a": "Chloramine breakthrough is handled by carbon tank testing and replacement; disinfection targets microbes.",
+    "c": "Scale is handled by softening and membrane cleaning; disinfection controls biofilm and bacteria.",
+    "d": "Disinfection controls biofilm but does not sterilize; routine cultures and endotoxin tests are still required."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-007": {
+   "options": {
+    "a": "Isolating HBsAg+ patients in a negative-pressure room, as is done for airborne spread",
+    "b": "Reusing dialyzers for HBsAg+ patients only after an extra bleach disinfection step",
+    "c": "Vaccination, screening, dedicated equipment/separation practices for HBsAg+ patients",
+    "d": "Monthly HBsAg testing of immune patients with treatment at any station"
+   },
+   "distractorExplanations": {
+    "a": "HBV is bloodborne; CDC calls for a dedicated room/area, machine and staff, not airborne isolation.",
+    "b": "CDC advises that HBsAg+ patients not participate in dialyzer reuse programs at all.",
+    "d": "Immune (anti-HBs positive) patients are tested annually; HBsAg+ patients need a dedicated station."
+   },
+   "explanation": "Dialysis populations have historically elevated HBV risk; infection control is specialized and strict. These practices follow CDC recommendations for dialysis units."
+  },
+  "ccht-dialysis-readiness-check-water-infection-008": {
+   "options": {
+    "a": "Before gloving at the start of each shift, with glove changes replacing it between each patient",
+    "b": "After patient contact and blood exposure, but skipped before contact when wearing gloves",
+    "c": "Before each cannulation and after each disconnection, with alcohol pads in between",
+    "d": "Before and after patient contact and after contact with blood, fluids, or contaminated surfaces"
+   },
+   "distractorExplanations": {
+    "a": "Glove changes do not replace hand hygiene; it is needed before and after each patient contact.",
+    "b": "Hand hygiene is required before donning gloves for patient contact, not only afterward.",
+    "c": "Limits hygiene to two procedures; it is required at every patient/station contact and after contamination."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-009": {
+   "options": {
+    "a": "Promptly with EPA-registered disinfectant appropriate for bloodborne pathogens, using PPE",
+    "b": "Promptly with soap and water, then left to air dry before the next patient sits",
+    "c": "At the end of the shift with full-strength bleach, since cleaning it earlier only spreads it",
+    "d": "Promptly by spraying disinfectant directly onto the blood without wiping it up first"
+   },
+   "distractorExplanations": {
+    "b": "Soap and water removes soil but does not disinfect; an EPA-registered disinfectant is required.",
+    "c": "Blood spills are cleaned immediately; waiting exposes patients and staff to bloodborne pathogens.",
+    "d": "Visible blood must be absorbed and removed first; organic material blocks the disinfectant."
+   },
+   "explanation": "Immediate spill response protects patients and staff. Follow facility policy for the product and contact time."
+  },
+  "ccht-dialysis-readiness-check-water-infection-010": {
+   "options": {
+    "a": "Repeat the culture next month and act if the limit is exceeded a second time",
+    "b": "Investigation, disinfection/corrective action, and possible treatment adjustments",
+    "c": "Documentation only, since action levels are set above the maximum allowable limit",
+    "d": "Replacing the RO membrane before any investigation of the source of contamination"
+   },
+   "distractorExplanations": {
+    "a": "Exceeding the action level requires prompt corrective action, not waiting for a second failed culture.",
+    "c": "Action levels are set below the maximum allowable limit so problems are corrected before limits are breached.",
+    "d": "The source must be investigated first; contamination often comes from loop biofilm, not the membrane."
+   },
+   "explanation": "Quality results drive corrective actions; technicians escalate abnormal findings. Actions are directed by the medical director and facility policy."
+  },
+  "ccht-dialysis-readiness-check-water-infection-011": {
+   "options": {
+    "a": "Change gloves between patients but keep the same pair for clean and dirty tasks at one station",
+    "b": "Return unused supplies from a patient station to the clean cart if the packaging looks intact",
+    "c": "Avoid carrying contaminated items to clean areas and change gloves/hygiene between dirty and clean tasks",
+    "d": "Carry medication vials and supplies in pockets between stations to cut down on trips back to the clean area"
+   },
+   "distractorExplanations": {
+    "a": "Gloves must also be changed when moving from dirty to clean tasks at the same station.",
+    "b": "CDC advises items taken to a station not be returned to common clean areas, even if unopened.",
+    "d": "Pockets carry contamination between stations; supplies should come from the clean area as needed."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-013": {
+   "options": {
+    "a": "Treat all blood and certain body fluids as potentially infectious",
+    "b": "Treat blood as infectious only for patients with a known positive test",
+    "c": "Use airborne precautions for every patient during dialysis treatment",
+    "d": "Use PPE for cannulation, with gloves optional for routine machine checks"
+   },
+   "distractorExplanations": {
+    "b": "Standard precautions apply to every patient because infection status is often unknown.",
+    "c": "Airborne precautions are transmission-based for specific infections; standard precautions cover blood and fluids.",
+    "d": "Machine surfaces and lines can be blood-contaminated; gloves are needed whenever exposure is possible."
+   }
+  },
+  "ccht-dialysis-readiness-check-water-infection-014": {
+   "options": {
+    "a": "Kept at the patient station and shared between neighboring patients' doses",
+    "b": "Handled with aseptic technique; ideally dedicated per patient",
+    "c": "Entered with a new needle but the same syringe for consecutive patients",
+    "d": "Wiped with alcohol once daily, after which the septum can be punctured freely"
+   },
+   "distractorExplanations": {
+    "a": "CDC: medications are prepared in a clean area away from stations; shared vials at stations spread HBV/HCV.",
+    "c": "A new needle on a used syringe still contaminates the vial; needle and syringe must both be new.",
+    "d": "The septum is disinfected with alcohol before every entry, not once a day."
+   },
+   "explanation": "CDC outbreak lessons emphasize medication preparation safety in dialysis units. Dedicated single-patient use is required when policy or outbreak guidance calls for it."
+  },
+  "ccht-dialysis-readiness-check-water-infection-015": {
+   "options": {
+    "a": "Remove chloramine that passes through the carbon tanks",
+    "b": "Remove excess sodium so conductivity stays within range",
+    "c": "Further reduce bacteria/endotoxin in dialysate delivery",
+    "d": "Remove air bubbles from dialysate before the dialyzer"
+   },
+   "distractorExplanations": {
+    "a": "Chloramine is removed by carbon tanks upstream; ultrafilters remove bacteria and endotoxin.",
+    "b": "Sodium and conductivity depend on concentrate proportioning; ultrafilters do not adjust electrolytes.",
+    "d": "Air is removed by the machine's deaeration system; ultrafilters provide extra microbial filtration."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-001": {
+   "options": {
+    "a": "Alarms, conductivity/temperature in range, and extracorporeal circuit integrity",
+    "b": "Conductivity and temperature only, since alarm tests run during treatment",
+    "c": "Alarm tests and patient weight, with conductivity checked after cannulation",
+    "d": "Dialyzer size and heparin dose, with alarm tests done weekly by biomed staff"
+   },
+   "distractorExplanations": {
+    "b": "Alarm tests are part of the pre-treatment checks and must pass before the patient is connected.",
+    "c": "Conductivity must be verified before treatment starts, not after the patient is cannulated.",
+    "d": "Alarm testing is done before every treatment by the operator; biomed handles scheduled maintenance."
+   },
+   "explanation": "Pre-treatment checks prevent many adverse events. Follow the facility checklist each time."
+  },
+  "ccht-dialysis-readiness-check-safety-docs-002": {
+   "options": {
+    "a": "Pre and post vital signs and weights, with machine settings recorded only when an alarm has occurred",
+    "b": "Vital signs, machine parameters, UF/goal, access, medications given per role, and significant events",
+    "c": "Machine parameters and UF totals, with access condition charted by the nurse once weekly",
+    "d": "Vital signs every two hours and significant events, with medications charted by pharmacy"
+   },
+   "distractorExplanations": {
+    "a": "Machine parameters are recorded routinely during treatment, not only when alarms occur.",
+    "c": "Access condition is assessed and documented every treatment, not weekly.",
+    "d": "Vitals are typically recorded at least every 30 minutes, and medications are charted by whoever gives them."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-003": {
+   "options": {
+    "a": "By the end of the shift, after the treatment schedule is completed",
+    "b": "Within 7 days, once the source patient's test results are available",
+    "c": "Immediately per exposure control plan, with first aid and evaluation",
+    "d": "Immediately, but only if the source patient is known to be HBV positive"
+   },
+   "distractorExplanations": {
+    "a": "Post-exposure prophylaxis is time-sensitive; reporting is immediate under the exposure control plan.",
+    "b": "Reporting cannot wait for source results; evaluation and prophylaxis decisions start right away.",
+    "d": "Every needlestick is reported regardless of known source status; HCV/HIV risk also applies."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-005": {
+   "options": {
+    "a": "Respond promptly, ensure patient safety, troubleshoot per training, and escalate if unresolved",
+    "b": "Reset the alarm first, then check the patient and machine if it sounds again within minutes",
+    "c": "Widen the alarm limits so the treatment can continue and recheck at the next vital signs",
+    "d": "Call biomedical staff first and wait for them before checking the patient or the lines"
+   },
+   "distractorExplanations": {
+    "b": "Resetting before assessing ignores the cause; check the patient and circuit before clearing the alarm.",
+    "c": "Widening limits to stop alarms defeats the safety system and can hide a dangerous condition.",
+    "d": "The technician assesses the patient and circuit immediately; biomed is called for unresolved machine faults."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-006": {
+   "options": {
+    "a": "Annual state survey preparation focused on correcting deficiencies cited",
+    "b": "Ongoing quality assessment and performance improvement for outcomes and safety",
+    "c": "Individual staff performance reviews and disciplinary tracking for errors",
+    "d": "Quarterly infection audits conducted by an outside accrediting agency"
+   },
+   "distractorExplanations": {
+    "a": "Survey readiness is a result of QAPI, but QAPI is a continuous program, not annual survey prep.",
+    "c": "QAPI is a system-level improvement program; staff evaluations are a separate HR process.",
+    "d": "QAPI is run internally by the interdisciplinary team, not by an outside agency's audits."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-007": {
+   "options": {
+    "a": "Discuss patient information freely within the clinic, including with other patients",
+    "b": "Share patient details with family members who call, as long as they know the birth date",
+    "c": "Discuss patient information only with those involved in care and per privacy rules",
+    "d": "Discuss cases in hallways or the break room if the patient's full name is not used"
+   },
+   "distractorExplanations": {
+    "a": "HIPAA limits PHI to those involved in care; other patients and uninvolved staff have no right to it.",
+    "b": "Knowing a birth date is not authorization; disclosure to family requires patient permission per policy.",
+    "d": "Other identifiers still reveal identity, and conversations outside care needs violate minimum-necessary use."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-008": {
+   "options": {
+    "a": "Propping fire doors open during treatment so patients can be evacuated faster",
+    "b": "Using extension cords and power strips for machines when outlets are limited",
+    "c": "Evacuating all patients first, before disconnecting them from their dialysis machines",
+    "d": "Keeping exits clear, knowing extinguisher locations, and not using damaged cords"
+   },
+   "distractorExplanations": {
+    "a": "Fire doors must stay closed or on approved release devices to contain smoke and fire.",
+    "b": "Extension cords and power strips for medical equipment are a fire and electrical hazard and not permitted.",
+    "c": "Patients must be clamped and disconnected (emergency takeoff) before they can be evacuated."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-010": {
+   "options": {
+    "a": "Adjust dry weight and UF goals independently once they hold national certification",
+    "b": "Perform delegated technical tasks and escalate clinical decisions to licensed nurses/providers",
+    "c": "Administer any IV medication on the order sheet, including drugs restricted to licensed nurses",
+    "d": "Assess patients and change the dialysis prescription whenever the nurse is unavailable"
+   },
+   "distractorExplanations": {
+    "a": "Certification does not expand scope; dry weight and UF goal changes need an order or RN involvement.",
+    "c": "Medication administration is limited by state law and policy; restricted drugs stay with licensed nurses.",
+    "d": "Assessment and prescription changes are licensed functions; the technician escalates instead."
+   },
+   "explanation": "Technicians are vital but practice within defined limits. Delegation follows state law and facility policy."
+  },
+  "ccht-dialysis-readiness-check-safety-docs-011": {
+   "options": {
+    "a": "Staff need the manufacturer's operating instructions for a dialysis machine",
+    "b": "Staff need the patient's allergy and medication history before treatment",
+    "c": "Staff need hazard and first-aid information about chemicals used in the facility",
+    "d": "Staff need results of monthly water cultures and endotoxin testing"
+   },
+   "distractorExplanations": {
+    "a": "Operating instructions come from the operator's manual; SDSs cover chemical hazards and first aid.",
+    "b": "Allergy and medication history is in the medical record, not on a chemical Safety Data Sheet.",
+    "d": "Water culture results are in the water quality logs; SDSs describe chemical hazards."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-012": {
+   "options": {
+    "a": "Allows the monthly water culture to be skipped when the cycles have been recorded",
+    "b": "Records the conductivity and pH readings taken before each treatment",
+    "c": "Shows the machine's preventive maintenance and alarm calibration status",
+    "d": "Provides evidence that required cleaning/disinfection cycles were completed"
+   },
+   "distractorExplanations": {
+    "a": "Disinfection logs do not replace microbial cultures; both are required.",
+    "b": "Pre-treatment conductivity and pH are recorded on the treatment flowsheet, not the disinfection log.",
+    "c": "Preventive maintenance and calibration are tracked in biomedical service records, not disinfection logs."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-013": {
+   "options": {
+    "a": "Ask the nurse/supervisor and follow policy rather than guessing",
+    "b": "Perform it if a coworker with more experience says it is allowed",
+    "c": "Perform it if the patient consents and it was covered in training",
+    "d": "Check online forums for what other technicians do in that case"
+   },
+   "distractorExplanations": {
+    "b": "Peer opinion does not define scope; the nurse/supervisor and written policy do.",
+    "c": "Patient consent and training do not authorize a task outside the technician's defined role.",
+    "d": "Practices vary by state and facility; online forums are not an authority on your scope."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-014": {
+   "options": {
+    "a": "Replace the nurse in leading codes when a technician is present",
+    "b": "Respond rapidly to respiratory/cardiac emergencies in the unit",
+    "c": "Use the AED only after the physician arrives at the bedside",
+    "d": "Pass the annual survey checklist of required emergency items"
+   },
+   "distractorExplanations": {
+    "a": "Technicians assist in emergencies per role; leading resuscitation stays with licensed staff.",
+    "c": "AEDs are designed for immediate use by trained staff; waiting for a physician delays defibrillation.",
+    "d": "Survey compliance is secondary; the purpose of readiness is a rapid response to real emergencies."
+   }
+  },
+  "ccht-dialysis-readiness-check-safety-docs-015": {
+   "options": {
+    "a": "Weighing pre-treatment and estimating the post weight from the UF total removed",
+    "b": "Using whichever scale is free and averaging the two values when the readings conflict",
+    "c": "Same scale conditions when possible, shoes/outerwear consistency, and documented values",
+    "d": "Weighing with the patient's coat and shoes on pre and off post for comfort"
+   },
+   "distractorExplanations": {
+    "a": "Post weight must be measured; estimating from UF totals hides machine or fluid-intake discrepancies.",
+    "b": "Scales should be consistent, and conflicting values need investigation rather than averaging.",
+    "d": "Inconsistent clothing between weights creates false fluid-removal figures and UF errors."
+   }
+  }
+ }
+}

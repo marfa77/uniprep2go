@@ -1,0 +1,30 @@
+{
+ "medical-billing-specialist-readiness-check": {
+  "medical-billing-specialist-readiness-check-claims-004": {
+   "options": {
+    "a": "Appealed in writing to the payer with supporting records",
+    "b": "Billed to the patient as self-pay until the payer confirms coverage",
+    "c": "Resubmitted as a corrected claim with frequency code 7",
+    "d": "Corrected with verified insurance information and resubmitted"
+   },
+   "distractorExplanations": {
+    "b": "A rejected subscriber ID is a fixable data error; verify and correct it and resubmit rather than shifting the balance to the patient.",
+    "a": "Appeals are for adjudicated denials; a clearinghouse rejection never reached adjudication, so it is corrected and resubmitted.",
+    "c": "Frequency code 7 replaces a claim the payer already adjudicated; a rejected claim was never accepted and goes as a new claim."
+   }
+  },
+  "medical-billing-specialist-readiness-check-coding-awareness-002": {
+   "options": {
+    "a": "Established patient office visit level 3",
+    "b": "New patient office visit level 3",
+    "c": "Established patient office visit level 4",
+    "d": "Office or outpatient consultation, level 3"
+   },
+   "distractorExplanations": {
+    "d": "Office or other outpatient consultations use the 99242-99245 range (level 3 is 99243), not established-visit code 99213.",
+    "b": "A new patient level 3 office visit is CPT 99203; 99213 is the established patient code.",
+    "c": "An established patient level 4 office visit is CPT 99214, one level above 99213."
+   }
+  }
+ }
+}

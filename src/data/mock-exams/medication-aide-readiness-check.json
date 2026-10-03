@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Right color of the pill"
+        "text": "Right person, drug, dose, route, time, and pill color"
       },
       {
         "id": "c",
-        "text": "Right room number if the name is close"
+        "text": "Right person, drug, dose, room, time, and documentation"
       },
       {
         "id": "d",
-        "text": "Right family member signing"
+        "text": "Right drug, dose, route, time, family consent, and documentation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "All six, every pass. This item asks: “The six rights of medication include:”. The matching answer is: Right person, drug, dose, route, time, and documentation. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Right color of the pill only” does not answer “The six rights of medication include:”. The matching answer is: Right person, drug, dose, route, time, and documentation.",
-      "c": "“Right room number if the name is close” does not answer “The six rights of medication include:”. The matching answer is: Right person, drug, dose, route, time, and documentation.",
-      "d": "“Right family member signing” does not answer “The six rights of medication include:”. The matching answer is: Right person, drug, dose, route, time, and documentation."
+      "b": "Tablet appearance can change between generic manufacturers, so color is not one of the rights; the sixth right is documentation.",
+      "c": "Room number is a location, not one of the rights and not a valid identifier; the missing right here is route.",
+      "d": "Family consent is not one of the rights, and this list drops the right person, which is confirmed with two resident identifiers."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "You are in a hurry"
+        "text": "The resident has trouble swallowing the tablet"
       },
       {
         "id": "b",
-        "text": "The resident prefers applesauce"
+        "text": "The resident prefers taking it in applesauce"
       },
       {
         "id": "c",
-        "text": "The tablet is large"
+        "text": "The tablet is scored down the middle"
       },
       {
         "id": "d",
-        "text": "The order and the drug form allow crush — never crush XL/enteric without authority"
+        "text": "The order and the drug form allow crush"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Some forms must stay intact. This item asks: “Crushing a medication is allowed only when:”. The matching answer is: The order and the drug form allow crush — never crush XL/enteric without authority. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Some forms must stay intact. This item asks: “Crushing a medication is allowed only when:”. The matching answer is: The order and the drug form allow crush — never crush XL/enteric without authority. Independent UniPrep diagnostic — not an official medication aide paper. Never crush extended-release (XL) or enteric-coated forms without authority from the nurse or pharmacist.",
     "distractorExplanations": {
-      "a": "“You are in a hurry” does not answer “Crushing a medication is allowed only when:”. The matching answer is: The order and the drug form allow crush — never crush XL/enteric without authority.",
-      "b": "“The resident prefers applesauce always” does not answer “Crushing a medication is allowed only when:”. The matching answer is: The order and the drug form allow crush — never crush XL/enteric without authority.",
-      "c": "“The tablet is large” does not answer “Crushing a medication is allowed only when:”. The matching answer is: The order and the drug form allow crush — never crush XL/enteric without authority."
+      "a": "Swallowing trouble is a reason to ask the nurse or pharmacist for another form; it does not make an extended-release or enteric tablet safe to crush.",
+      "b": "A preference for applesauce does not change whether the drug form can be crushed; the order and the product must allow it.",
+      "c": "A score line means the tablet may be split if the label allows, not that it may be crushed; some scored tablets are extended-release."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "A second secret dose"
+        "text": "A set schedule so the dose is given every four hours"
       },
       {
         "id": "c",
-        "text": "Sharing with a roommate"
+        "text": "Documentation of the dose time alone, since PRN reasons are verbal"
       },
       {
         "id": "d",
-        "text": "No note if it worked"
+        "text": "The resident’s request alone, with no check of the last dose time"
       }
     ],
     "correctOptionId": "a",
     "explanation": "PRN is not a candy bowl. This item asks: “A PRN pain med requires:”. The matching answer is: The reason and the response documented per the order. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“A second secret dose” does not answer “A PRN pain med requires:”. The matching answer is: The reason and the response documented per the order.",
-      "c": "“Sharing with a roommate” does not answer “A PRN pain med requires:”. The matching answer is: The reason and the response documented per the order.",
-      "d": "“No note if it worked” does not answer “A PRN pain med requires:”. The matching answer is: The reason and the response documented per the order."
+      "b": "PRN means as needed within the ordered minimum interval; giving it on a fixed schedule turns it into a routine dose that was not ordered.",
+      "c": "PRN documentation must record the reason given and the resident’s response, not only the time of the dose.",
+      "d": "Before a PRN dose the aide checks the order’s minimum interval and maximum daily dose on the MAR, not just the request."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Room number"
+        "text": "Room number and bed letter"
       },
       {
         "id": "b",
-        "text": "The facility's two identifiers, not 'the lady in 12'"
+        "text": "The facility's two identifiers"
       },
       {
         "id": "c",
-        "text": "A visitor's word"
+        "text": "The resident answering to their name"
       },
       {
         "id": "d",
-        "text": "Hair color"
+        "text": "Name and room number on the door"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Two IDs. This item asks: “Identifying the resident uses:”. The matching answer is: The facility's two identifiers, not 'the lady in 12'. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Two IDs. This item asks: “Identifying the resident uses:”. The matching answer is: The facility's two identifiers, not 'the lady in 12'. Independent UniPrep diagnostic — not an official medication aide paper. Location descriptions such as “the lady in 12” are never identifiers.",
     "distractorExplanations": {
-      "a": "“Room number only” does not answer “Identifying the resident uses:”. The matching answer is: The facility's two identifiers, not 'the lady in 12'.",
-      "c": "“A visitor's word only” does not answer “Identifying the resident uses:”. The matching answer is: The facility's two identifiers, not 'the lady in 12'.",
-      "d": "“Hair color” does not answer “Identifying the resident uses:”. The matching answer is: The facility's two identifiers, not 'the lady in 12'."
+      "a": "Room and bed describe a location, not the person; residents move rooms and can sit in the wrong bed or chair.",
+      "c": "Confused or hard-of-hearing residents may answer to any name; two identifiers such as name plus photo or birth date are required.",
+      "d": "A door sign shows who should be in the room, not who is in front of you; room number is not an accepted identifier."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Pass meds already on the MAR as trained"
+        "text": "Give a scheduled oral med already transcribed on the MAR"
       },
       {
         "id": "b",
-        "text": "Document a refusal"
+        "text": "Document a refusal and notify the nurse as facility policy requires"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Wash hands"
+        "text": "Report a resident’s new dizziness to the charge nurse before the next dose"
       }
     ],
     "correctOptionId": "c",
     "explanation": "New orders are a nurse/provider act in most states. This item asks: “A medication aide does not:”. The matching answer is: Take a new phone order for a controlled drug if the state forbids it. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Pass meds already on the MAR as trained” does not answer “A medication aide does not:”. The matching answer is: Take a new phone order for a controlled drug if the state forbids it.",
-      "b": "“Document a refusal” does not answer “A medication aide does not:”. The matching answer is: Take a new phone order for a controlled drug if the state forbids it.",
-      "d": "“Wash hands” does not answer “A medication aide does not:”. The matching answer is: Take a new phone order for a controlled drug if the state forbids it."
+      "a": "Passing scheduled oral medications already on the MAR is the core task a trained medication aide performs.",
+      "b": "Documenting refusals and notifying the nurse is part of the aide’s role, not something outside scope.",
+      "d": "Observing and reporting changes in condition to the nurse is expected of a medication aide."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Fine within the shift"
+        "text": "Acceptable if given within the shift"
       },
       {
         "id": "b",
-        "text": "The resident's fault"
+        "text": "A wrong-dose error — report per policy"
       },
       {
         "id": "c",
-        "text": "Uncharted on purpose"
+        "text": "Not an error if charted on time"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Time is a right. This item asks: “Giving a drug late because you were chatting is:”. The matching answer is: A timing error — report per policy. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Fine within the shift” does not answer “Giving a drug late because you were chatting is:”. The matching answer is: A timing error — report per policy.",
-      "b": "“The resident's fault” does not answer “Giving a drug late because you were chatting is:”. The matching answer is: A timing error — report per policy.",
-      "c": "“Uncharted on purpose” does not answer “Giving a drug late because you were chatting is:”. The matching answer is: A timing error — report per policy."
+      "a": "The allowed window is set by facility policy (commonly about an hour around the scheduled time), not the whole shift.",
+      "b": "The amount given was correct; giving a drug outside its time window is a timing error, not a wrong-dose error.",
+      "c": "Charting a late dose as on time falsifies the record; the late administration is still a timing error to report."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Stored mixed to save space"
+        "text": "Stored side by side on the cart so they are easy to compare"
       },
       {
         "id": "c",
-        "text": "Given together"
+        "text": "Stored alphabetically so each one is quick to find"
       },
       {
         "id": "d",
-        "text": "Labeled with marker on the tablet"
+        "text": "Relabeled by the aide in marker to tell them apart"
       }
     ],
     "correctOptionId": "a",
     "explanation": "LASA errors are classic. This item asks: “A look-alike / sound-alike pair should be:”. The matching answer is: Separated and double-checked, not grabbed by memory. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Stored mixed to save space” does not answer “A look-alike / sound-alike pair should be:”. The matching answer is: Separated and double-checked, not grabbed by memory.",
-      "c": "“Given together always” does not answer “A look-alike / sound-alike pair should be:”. The matching answer is: Separated and double-checked, not grabbed by memory.",
-      "d": "“Labeled with marker on the tablet” does not answer “A look-alike / sound-alike pair should be:”. The matching answer is: Separated and double-checked, not grabbed by memory."
+      "b": "Side-by-side storage is how look-alike pairs get swapped; they should be separated and flagged, not placed together.",
+      "c": "Alphabetical storage often puts sound-alike names next to each other, which is exactly what LASA precautions try to prevent.",
+      "d": "Aides do not alter pharmacy labels or write on tablets; LASA risk is managed with separation, alerts, and double-checks."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Whenever they ask"
+        "text": "Whenever the resident is alert and asks to take it"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "If they hide pills"
+        "text": "If a family member stays to watch the resident take it"
       },
       {
         "id": "d",
-        "text": "Instead of the MAR"
+        "text": "If the aide leaves the pills at the bedside for later"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Self-admin is a planned privilege. This item asks: “Self-administration by a resident happens only:”. The matching answer is: If the care plan and law allow, with the checks required. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Whenever they ask” does not answer “Self-administration by a resident happens only:”. The matching answer is: If the care plan and law allow, with the checks required.",
-      "c": "“If they hide pills” does not answer “Self-administration by a resident happens only:”. The matching answer is: If the care plan and law allow, with the checks required.",
-      "d": "“Instead of the MAR” does not answer “Self-administration by a resident happens only:”. The matching answer is: If the care plan and law allow, with the checks required."
+      "a": "A request does not authorize self-administration; the resident must be assessed and the practice approved in the care plan.",
+      "c": "Family supervision does not replace the care-plan assessment and facility checks required for self-administration.",
+      "d": "Leaving medications unattended at the bedside is not self-administration and breaks storage and observation rules."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Either eye"
+        "text": "The nostril, as ordered"
       },
       {
         "id": "b",
-        "text": "IV"
+        "text": "The eye, if the bottle says sterile"
       },
       {
         "id": "c",
-        "text": "A nebulizer by default"
+        "text": "The ear canal of both ears"
       },
       {
         "id": "d",
-        "text": "The ear, as ordered — not the eye because the bottles look alike"
+        "text": "The ear, as ordered"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Route errors blind people. This item asks: “The right route for an ear drop is:”. The matching answer is: The ear, as ordered — not the eye because the bottles look alike. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Route errors blind people. This item asks: “The right route for an ear drop is:”. The matching answer is: The ear, as ordered — not the eye because the bottles look alike. Independent UniPrep diagnostic — not an official medication aide paper. Do not put ear drops in the eye just because the bottles look alike.",
     "distractorExplanations": {
-      "a": "“Either eye” does not answer “The right route for an ear drop is:”. The matching answer is: The ear, as ordered — not the eye because the bottles look alike.",
-      "b": "“IV” does not answer “The right route for an ear drop is:”. The matching answer is: The ear, as ordered — not the eye because the bottles look alike.",
-      "c": "“A nebulizer by default” does not answer “The right route for an ear drop is:”. The matching answer is: The ear, as ordered — not the eye because the bottles look alike."
+      "a": "Otic means ear; a nasal route is a different product and order, so this is a wrong-route error.",
+      "b": "Otic preparations are not made for the eye even when sterile; giving an ear drop in the eye is a serious wrong-route error.",
+      "c": "Drops go only in the ear(s) named in the order; treating both ears when one is ordered is a wrong-site error."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -407,23 +407,23 @@
       },
       {
         "id": "b",
-        "text": "Give again to be safe"
+        "text": "Give it again, since a missed dose is worse than an extra"
       },
       {
         "id": "c",
-        "text": "Skip the next three"
+        "text": "Skip it and give the next scheduled dose as a double"
       },
       {
         "id": "d",
-        "text": "Ask the roommate"
+        "text": "Ask the resident whether they already took it"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Uncertainty is a hold. This item asks: “If you are not sure you already gave a dose:”. The matching answer is: Do not double-dose — check the MAR and the nurse. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Give again to be safe” does not answer “If you are not sure you already gave a dose:”. The matching answer is: Do not double-dose — check the MAR and the nurse.",
-      "c": "“Skip the next three” does not answer “If you are not sure you already gave a dose:”. The matching answer is: Do not double-dose — check the MAR and the nurse.",
-      "d": "“Ask the roommate” does not answer “If you are not sure you already gave a dose:”. The matching answer is: Do not double-dose — check the MAR and the nurse."
+      "b": "An unconfirmed second dose risks a double dose and overdose; uncertainty means hold and check, not repeat.",
+      "c": "Doubling the next dose is a dose change the aide cannot make; check the MAR and ask the nurse instead.",
+      "d": "Residents may not remember accurately; the MAR and the nurse are the reliable sources for whether a dose was given."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "You give it anyway"
+        "text": "You give it and recheck the pressure in an hour"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "You change the parameter"
+        "text": "You give half the dose when the pressure is low"
       },
       {
         "id": "d",
-        "text": "You hide the vital"
+        "text": "You hold it and document only at shift end"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Parameters are part of the order. This item asks: “Holding a med for a low blood pressure when ordered that way means:”. The matching answer is: You follow the parameter and notify as written. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“You give it anyway” does not answer “Holding a med for a low blood pressure when ordered that way means:”. The matching answer is: You follow the parameter and notify as written.",
-      "c": "“You change the parameter” does not answer “Holding a med for a low blood pressure when ordered that way means:”. The matching answer is: You follow the parameter and notify as written.",
-      "d": "“You hide the vital” does not answer “Holding a med for a low blood pressure when ordered that way means:”. The matching answer is: You follow the parameter and notify as written."
+      "a": "A hold parameter means the dose is not given when the reading is below the limit; rechecking later does not override the order.",
+      "c": "Changing the dose is outside the aide’s scope; the order says hold, and the nurse is notified as written.",
+      "d": "The hold must be documented when it happens and the nurse notified as the order states, not batched at shift end."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The NCLEX"
+        "text": "The official state medication aide certification exam"
       },
       {
         "id": "b",
-        "text": "A gait-belt CNA clone"
+        "text": "A CNA skills checklist with gait-belt and transfer tasks"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "A PHR test"
+        "text": "An NCLEX-PN style nursing-board practice form for practical nurses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Different job than CNA mobility. This item asks: “This med-aide mock is:”. The matching answer is: Independent practice — not a CNA skills or nursing-board exam form. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“The NCLEX” does not answer “This med-aide mock is:”. The matching answer is: Independent practice — not a CNA skills or nursing-board exam form.",
-      "b": "“A gait-belt CNA clone” does not answer “This med-aide mock is:”. The matching answer is: Independent practice — not a CNA skills or nursing-board exam form.",
-      "d": "“A PHR test” does not answer “This med-aide mock is:”. The matching answer is: Independent practice — not a CNA skills or nursing-board exam form."
+      "a": "This is an independent practice mock, not the official state certification exam or one of its forms.",
+      "b": "Medication aide content covers medication administration, not CNA mobility skills such as gait-belt transfers.",
+      "d": "The NCLEX-PN is the practical nurse licensing exam; this mock is independent medication aide practice."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -502,27 +502,27 @@
     "options": [
       {
         "id": "a",
-        "text": "In the ear"
+        "text": "Between the cheek and gum until dissolved"
       },
       {
         "id": "b",
-        "text": "In the eye"
+        "text": "Swallowed whole with a full glass of water"
       },
       {
         "id": "c",
-        "text": "On the skin as a cream"
+        "text": "Absorbed through the skin from a patch"
       },
       {
         "id": "d",
-        "text": "Under the tongue until dissolved — not swallowed whole"
+        "text": "Under the tongue until dissolved"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "SL is not PO. This item asks: “Sublingual means:”. The matching answer is: Under the tongue until dissolved — not swallowed whole. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "SL is not PO. This item asks: “Sublingual means:”. The matching answer is: Under the tongue until dissolved — not swallowed whole. Independent UniPrep diagnostic — not an official medication aide paper. A sublingual tablet is not swallowed whole.",
     "distractorExplanations": {
-      "a": "“In the ear” does not answer “Sublingual means:”. The matching answer is: Under the tongue until dissolved — not swallowed whole.",
-      "b": "“In the eye” does not answer “Sublingual means:”. The matching answer is: Under the tongue until dissolved — not swallowed whole.",
-      "c": "“On the skin as a cream” does not answer “Sublingual means:”. The matching answer is: Under the tongue until dissolved — not swallowed whole."
+      "a": "Between the cheek and gum is the buccal route; sublingual means under the tongue.",
+      "b": "Swallowing with water is the oral (PO) route; a sublingual tablet must dissolve under the tongue.",
+      "c": "Absorption through the skin from a patch is the transdermal route, not sublingual."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -568,7 +568,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Hairy wet skin over the old patch"
+        "text": "Clean skin directly over the old patch so the dose overlaps"
       },
       {
         "id": "b",
@@ -576,19 +576,19 @@
       },
       {
         "id": "c",
-        "text": "The same site forever without looking"
+        "text": "The same site each time so absorption stays consistent"
       },
       {
         "id": "d",
-        "text": "The chart"
+        "text": "Skin freshly coated with lotion so the patch sticks better"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Old + new patches stack dose. This item asks: “A transdermal patch is applied to:”. The matching answer is: Clean, dry, intact skin, dated, old patch removed. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Hairy wet skin over the old patch” does not answer “A transdermal patch is applied to:”. The matching answer is: Clean, dry, intact skin, dated, old patch removed.",
-      "c": "“The same site forever without looking” does not answer “A transdermal patch is applied to:”. The matching answer is: Clean, dry, intact skin, dated, old patch removed.",
-      "d": "“The chart only” does not answer “A transdermal patch is applied to:”. The matching answer is: Clean, dry, intact skin, dated, old patch removed."
+      "a": "Applying over or beside an old patch stacks the dose; the old patch must be removed before the new one goes on.",
+      "c": "Sites are rotated to prevent skin irritation; reusing one site is not how consistent absorption is achieved.",
+      "d": "Lotions and oils reduce adhesion and can change absorption; patches go on clean, dry, intact skin."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Aim at the cornea from a foot away"
+        "text": "Place the drop directly onto the center of the cornea for best absorption"
       },
       {
         "id": "b",
-        "text": "Share a bottle between roommates"
+        "text": "Give two different eye drops back to back so neither washes the other out"
       },
       {
         "id": "c",
-        "text": "Avoid touching the dropper to the eye and wait between different drops as trained"
+        "text": "Avoid touching the dropper to the eye and wait between different drops"
       },
       {
         "id": "d",
-        "text": "Use the ear bottle"
+        "text": "Use one bottle for roommates if both have the same order"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Technique prevents infection. This item asks: “Eye drops: the aide should:”. The matching answer is: Avoid touching the dropper to the eye and wait between different drops as trained. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Aim at the cornea from a foot away” does not answer “Eye drops: the aide should:”. The matching answer is: Avoid touching the dropper to the eye and wait between different drops as trained.",
-      "b": "“Share a bottle between roommates” does not answer “Eye drops: the aide should:”. The matching answer is: Avoid touching the dropper to the eye and wait between different drops as trained.",
-      "d": "“Use the ear bottle” does not answer “Eye drops: the aide should:”. The matching answer is: Avoid touching the dropper to the eye and wait between different drops as trained."
+      "a": "Drops go into the lower conjunctival sac, not onto the cornea, which is sensitive and triggers blinking.",
+      "b": "Giving drops back to back washes out the first; wait about five minutes between different eye drops.",
+      "d": "Eye drop bottles are single-resident items; sharing spreads infection even when the orders match."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -634,15 +634,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A swallow of the canister"
+        "text": "Puffs taken back to back with no wait between them"
       },
       {
         "id": "b",
-        "text": "No rinse after steroid if the protocol says rinse"
+        "text": "No mouth rinse after a steroid inhaler unless the resident asks for one"
       },
       {
         "id": "c",
-        "text": "Sharing spacers dirty"
+        "text": "A shared spacer between residents if it is wiped after use"
       },
       {
         "id": "d",
@@ -652,9 +652,9 @@
     "correctOptionId": "d",
     "explanation": "Device technique is the dose. This item asks: “Inhalers need:”. The matching answer is: A shake/prime if the product requires it and a slow breath as taught. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“A swallow of the canister” does not answer “Inhalers need:”. The matching answer is: A shake/prime if the product requires it and a slow breath as taught.",
-      "b": "“No rinse after steroid if the protocol says rinse” does not answer “Inhalers need:”. The matching answer is: A shake/prime if the product requires it and a slow breath as taught.",
-      "c": "“Sharing spacers dirty” does not answer “Inhalers need:”. The matching answer is: A shake/prime if the product requires it and a slow breath as taught."
+      "a": "Most metered-dose inhaler instructions call for a short wait (often about a minute) between puffs.",
+      "b": "Rinsing after an inhaled steroid helps prevent oral thrush and is part of correct technique, not optional.",
+      "c": "Spacers are single-resident devices; wiping does not make sharing acceptable."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Crushed in juice"
+        "text": "Inserted with the foil wrapper left on for easier handling"
       },
       {
         "id": "c",
-        "text": "Given SL"
+        "text": "Softened in warm water, then given by mouth"
       },
       {
         "id": "d",
-        "text": "Left in the foil"
+        "text": "Inserted while the resident lies on the right side"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Route is rectal. This item asks: “A rectal suppository is:”. The matching answer is: Unwrapped and inserted as trained, with privacy. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Crushed in juice” does not answer “A rectal suppository is:”. The matching answer is: Unwrapped and inserted as trained, with privacy.",
-      "c": "“Given SL” does not answer “A rectal suppository is:”. The matching answer is: Unwrapped and inserted as trained, with privacy.",
-      "d": "“Left in the foil” does not answer “A rectal suppository is:”. The matching answer is: Unwrapped and inserted as trained, with privacy."
+      "b": "The wrapper must be removed; a suppository left in foil cannot melt or be absorbed.",
+      "c": "A rectal suppository is never given orally; if too soft it is briefly chilled, not dissolved in water.",
+      "d": "The usual position is the left side-lying (Sims’) position, which follows the anatomy of the colon."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -700,7 +700,7 @@
     "options": [
       {
         "id": "a",
-        "text": "In the IV"
+        "text": "Under the tongue"
       },
       {
         "id": "b",
@@ -708,19 +708,19 @@
       },
       {
         "id": "c",
-        "text": "In the nose"
+        "text": "Swallowed with a sip of water"
       },
       {
         "id": "d",
-        "text": "Crushed in coffee"
+        "text": "Inside the nostril"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Do not swallow immediately. This item asks: “Buccal means:”. The matching answer is: Between cheek and gum. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“In the IV” does not answer “Buccal means:”. The matching answer is: Between cheek and gum.",
-      "c": "“In the nose only” does not answer “Buccal means:”. The matching answer is: Between cheek and gum.",
-      "d": "“Crushed in coffee” does not answer “Buccal means:”. The matching answer is: Between cheek and gum."
+      "a": "Under the tongue is the sublingual route; buccal means between the cheek and the gum.",
+      "c": "Swallowing is the oral route; a buccal tablet stays between cheek and gum until it dissolves.",
+      "d": "Inside the nostril is the intranasal route, not buccal, which refers to the cheek."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A coffee mug guess"
+        "text": "A household kitchen teaspoon"
       },
       {
         "id": "b",
-        "text": "The bottle cap"
+        "text": "An unmarked bottle cap"
       },
       {
         "id": "c",
-        "text": "An oral syringe or marked cup, not a kitchen spoon"
+        "text": "An oral syringe or marked cup"
       },
       {
         "id": "d",
-        "text": "A syringe meant for injection used in the vein by the aide"
+        "text": "An injection syringe with the needle removed"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Oral syringes stay oral. This item asks: “A liquid oral med is measured with:”. The matching answer is: An oral syringe or marked cup, not a kitchen spoon. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Oral syringes stay oral. This item asks: “A liquid oral med is measured with:”. The matching answer is: An oral syringe or marked cup, not a kitchen spoon. Independent UniPrep diagnostic — not an official medication aide paper. Kitchen spoons are not accurate measuring devices.",
     "distractorExplanations": {
-      "a": "“A coffee mug guess” does not answer “A liquid oral med is measured with:”. The matching answer is: An oral syringe or marked cup, not a kitchen spoon.",
-      "b": "“The bottle cap” does not answer “A liquid oral med is measured with:”. The matching answer is: An oral syringe or marked cup, not a kitchen spoon.",
-      "d": "“A syringe meant for injection used in the vein by the aide” does not answer “A liquid oral med is measured with:”. The matching answer is: An oral syringe or marked cup, not a kitchen spoon."
+      "a": "Household spoons vary widely in volume, so they are not accurate for measuring liquid medication doses.",
+      "b": "A cap without calibrated markings cannot measure a dose accurately; use an oral syringe or marked cup.",
+      "d": "Injection syringes invite wrong-route errors; ISMP recommends dedicated oral syringes for liquid oral doses."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Eaten"
+        "text": "A thick layer so it lasts until the next shift"
       },
       {
         "id": "b",
-        "text": "Put in the eye unless it is ophthalmic"
+        "text": "Applied with a bare finger straight from the jar"
       },
       {
         "id": "c",
-        "text": "Shared finger-to-jar-to-next-resident"
+        "text": "Rubbed into any open wound nearby as well"
       },
       {
         "id": "d",
-        "text": "A thin layer on intact skin as ordered, not a sandwich spread"
+        "text": "A thin layer on intact skin as ordered"
       }
     ],
     "correctOptionId": "d",
     "explanation": "No double-dipping jars. This item asks: “Topical cream is:”. The matching answer is: A thin layer on intact skin as ordered, not a sandwich spread. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Eaten” does not answer “Topical cream is:”. The matching answer is: A thin layer on intact skin as ordered, not a sandwich spread.",
-      "b": "“Put in the eye unless it is ophthalmic” does not answer “Topical cream is:”. The matching answer is: A thin layer on intact skin as ordered, not a sandwich spread.",
-      "c": "“Shared finger-to-jar-to-next-resident” does not answer “Topical cream is:”. The matching answer is: A thin layer on intact skin as ordered, not a sandwich spread."
+      "a": "Topicals are applied thinly as ordered; a thick layer does not extend action and wastes or overdoses the drug.",
+      "b": "Use gloves or an applicator and never double-dip into a shared jar; bare-finger use contaminates the product.",
+      "c": "Topical medication goes only on the ordered site; open wounds need their own wound-care order."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -832,27 +832,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Into the eye"
+        "text": "Straight toward the septum so the spray stays inside"
       },
       {
         "id": "b",
-        "text": "As the product says, usually not straight up the septum with a hard blast"
+        "text": "As the product says, usually not straight up the septum"
       },
       {
         "id": "c",
-        "text": "Down the throat as a drink"
+        "text": "Toward the back of the throat so it is swallowed"
       },
       {
         "id": "d",
-        "text": "Shared with a cold going around the unit"
+        "text": "Into both nostrils from one bottle shared on the unit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Technique + no sharing. This item asks: “Nasal spray is aimed:”. The matching answer is: As the product says, usually not straight up the septum with a hard blast. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Into the eye” does not answer “Nasal spray is aimed:”. The matching answer is: As the product says, usually not straight up the septum with a hard blast.",
-      "c": "“Down the throat as a drink” does not answer “Nasal spray is aimed:”. The matching answer is: As the product says, usually not straight up the septum with a hard blast.",
-      "d": "“Shared with a cold going around the unit” does not answer “Nasal spray is aimed:”. The matching answer is: As the product says, usually not straight up the septum with a hard blast."
+      "a": "Aiming at the septum irritates it and can cause nosebleeds; the tip is usually aimed toward the outer wall.",
+      "c": "Nasal sprays act on the nasal lining; spraying toward the throat means the dose is swallowed instead.",
+      "d": "Nasal spray bottles are single-resident items; sharing spreads infection between residents."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -865,11 +865,11 @@
     "options": [
       {
         "id": "a",
-        "text": "A good place to start practicing"
+        "text": "Within scope once the aide has watched a nurse give one"
       },
       {
         "id": "b",
-        "text": "The same as eye drops"
+        "text": "Within scope if the resident asks and consents"
       },
       {
         "id": "c",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "Fine if the resident asks"
+        "text": "Allowed if the nurse draws it up and hands it over"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Know your state's allowed routes. This item asks: “An IM injection is:”. The matching answer is: Usually outside medication-aide scope — do not improvise. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“A good place to start practicing” does not answer “An IM injection is:”. The matching answer is: Usually outside medication-aide scope — do not improvise.",
-      "b": "“The same as eye drops” does not answer “An IM injection is:”. The matching answer is: Usually outside medication-aide scope — do not improvise.",
-      "d": "“Fine if the resident asks” does not answer “An IM injection is:”. The matching answer is: Usually outside medication-aide scope — do not improvise."
+      "a": "Observing a nurse does not expand legal scope; injections are generally outside medication aide practice.",
+      "b": "Resident consent does not change the aide’s legal scope of practice, which is set by state rules.",
+      "d": "A nurse preparing the syringe does not transfer authority to inject; the aide still may not give an IM injection."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Given whole if that is the order"
+        "text": "Given whole with water as the order directs"
       },
       {
         "id": "b",
-        "text": "Held when NPO"
+        "text": "Held when the resident is NPO and the nurse is told"
       },
       {
         "id": "c",
-        "text": "Documented"
+        "text": "Documented on the MAR right after the resident swallows"
       },
       {
         "id": "d",
@@ -916,9 +916,9 @@
     "correctOptionId": "d",
     "explanation": "Opening XR dumps the dose. This item asks: “Time-release capsules should not be:”. The matching answer is: Opened and sprinkled unless the label says they may. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Given whole if that is the order” does not answer “Time-release capsules should not be:”. The matching answer is: Opened and sprinkled unless the label says they may.",
-      "b": "“Held when NPO” does not answer “Time-release capsules should not be:”. The matching answer is: Opened and sprinkled unless the label says they may.",
-      "c": "“Documented” does not answer “Time-release capsules should not be:”. The matching answer is: Opened and sprinkled unless the label says they may."
+      "a": "Giving a time-release capsule whole as ordered is the correct practice, not something to avoid.",
+      "b": "Holding per an NPO order and notifying the nurse is appropriate; the danger is opening the capsule.",
+      "c": "Documenting right after administration is correct practice; opening and sprinkling is what should not happen."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "The dropper jammed deep"
+        "text": "The pinna pulled down and back, as for a toddler"
       },
       {
         "id": "c",
-        "text": "The same bottle in both residents' ears without wipe rules"
+        "text": "The dropper tip inserted deep into the ear canal"
       },
       {
         "id": "d",
-        "text": "A tablet in the canal"
+        "text": "The resident sitting up straight with the head level"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Age changes the pinna cue. This item asks: “Otic (ear) drops in an adult are often given with:”. The matching answer is: The pinna pulled as trained for that age. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“The dropper jammed deep” does not answer “Otic (ear) drops in an adult are often given with:”. The matching answer is: The pinna pulled as trained for that age.",
-      "c": "“The same bottle in both residents' ears without wipe rules” does not answer “Otic (ear) drops in an adult are often given with:”. The matching answer is: The pinna pulled as trained for that age.",
-      "d": "“A tablet in the canal” does not answer “Otic (ear) drops in an adult are often given with:”. The matching answer is: The pinna pulled as trained for that age."
+      "b": "Down and back straightens the ear canal in young children; in adults the pinna is pulled up and back.",
+      "c": "The dropper should not enter the canal; inserting it can injure the canal and contaminate the bottle.",
+      "d": "The head is tilted with the affected ear up and kept there a few minutes so the drops stay in the canal."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -964,7 +964,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A buffet"
+        "text": "Meds with a full glass of juice and a light snack"
       },
       {
         "id": "b",
@@ -972,19 +972,19 @@
       },
       {
         "id": "c",
-        "text": "Skip all meds automatically"
+        "text": "Hold all scheduled meds until the resident can eat"
       },
       {
         "id": "d",
-        "text": "Ice cream"
+        "text": "Nothing by mouth, including meds, until the nurse says"
       }
     ],
     "correctOptionId": "b",
     "explanation": "NPO has versions. This item asks: “NPO except meds means:”. The matching answer is: Follow the exact order — not a full breakfast. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“A buffet” does not answer “NPO except meds means:”. The matching answer is: Follow the exact order — not a full breakfast.",
-      "c": "“Skip all meds automatically” does not answer “NPO except meds means:”. The matching answer is: Follow the exact order — not a full breakfast.",
-      "d": "“Ice cream only” does not answer “NPO except meds means:”. The matching answer is: Follow the exact order — not a full breakfast."
+      "a": "NPO except meds allows meds with minimal water as ordered, not juice or food.",
+      "c": "The order specifically exempts medications, so scheduled meds are still given with minimal fluid.",
+      "d": "That describes strict NPO; “except meds” means ordered medications are still given by mouth."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Given extra at bedtime for 'sleep'"
+        "text": "Allowed to sleep it off alone"
       },
       {
         "id": "b",
-        "text": "Left without a call bell"
+        "text": "Given the next dose anyway"
       },
       {
         "id": "c",
-        "text": "Monitored and the nurse told — do not give another sedative on your own"
+        "text": "Monitored and the nurse told"
       },
       {
         "id": "d",
-        "text": "Walked in the parking lot alone"
+        "text": "Given coffee to stay awake"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Sedation stacks. This item asks: “A resident drowsy after a new opioid should be:”. The matching answer is: Monitored and the nurse told — do not give another sedative on your own. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Sedation stacks. This item asks: “A resident drowsy after a new opioid should be:”. The matching answer is: Monitored and the nurse told — do not give another sedative on your own. Independent UniPrep diagnostic — not an official medication aide paper. Do not give another sedative on your own.",
     "distractorExplanations": {
-      "a": "“Given extra at bedtime for 'sleep'” does not answer “A resident drowsy after a new opioid should be:”. The matching answer is: Monitored and the nurse told — do not give another sedative on your own.",
-      "b": "“Left without a call bell” does not answer “A resident drowsy after a new opioid should be:”. The matching answer is: Monitored and the nurse told — do not give another sedative on your own.",
-      "d": "“Walked in the parking lot alone” does not answer “A resident drowsy after a new opioid should be:”. The matching answer is: Monitored and the nurse told — do not give another sedative on your own."
+      "a": "New-opioid drowsiness can precede respiratory depression; the resident needs monitoring and the nurse must be told.",
+      "b": "Giving more opioid to a sedated resident adds to the risk; the nurse assesses before any further dose.",
+      "d": "Caffeine does not reverse opioid sedation and hides the problem; the change must be reported to the nurse."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1096,7 +1096,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Covered with lotion and given again"
+        "text": "Given with an antihistamine already on the MAR"
       },
       {
         "id": "b",
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "Ignored"
+        "text": "Recorded as a normal side effect and given again"
       },
       {
         "id": "d",
-        "text": "A reason to give a bigger dose"
+        "text": "Given, then reported at the end of the shift"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Allergy can escalate. This item asks: “A rash after a new antibiotic is:”. The matching answer is: Held and reported as a possible allergy. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Covered with lotion and given again” does not answer “A rash after a new antibiotic is:”. The matching answer is: Held and reported as a possible allergy.",
-      "c": "“Ignored” does not answer “A rash after a new antibiotic is:”. The matching answer is: Held and reported as a possible allergy.",
-      "d": "“A reason to give a bigger dose” does not answer “A rash after a new antibiotic is:”. The matching answer is: Held and reported as a possible allergy."
+      "a": "An antihistamine can mask an evolving allergic reaction; the antibiotic is held until the nurse assesses.",
+      "c": "A new rash after a new antibiotic may be an allergy, which can escalate to anaphylaxis if the drug is repeated.",
+      "d": "Possible allergic reactions are reported right away, before another dose, not at shift end."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1129,11 +1129,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Borrow from another cart"
+        "text": "Borrow a tablet from another cart to balance the count"
       },
       {
         "id": "b",
-        "text": "Ignore one missing oxycodone"
+        "text": "Recount at the next shift change before reporting"
       },
       {
         "id": "c",
@@ -1141,15 +1141,15 @@
       },
       {
         "id": "d",
-        "text": "Ask the resident to forget it"
+        "text": "Correct the count sheet and explain it in a note"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Counts are legal. This item asks: “Controlled-count discrepancy means:”. The matching answer is: Stop and report — do not 'fix' the book later. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Borrow from another cart” does not answer “Controlled-count discrepancy means:”. The matching answer is: Stop and report — do not 'fix' the book later.",
-      "b": "“Ignore one missing oxycodone” does not answer “Controlled-count discrepancy means:”. The matching answer is: Stop and report — do not 'fix' the book later.",
-      "d": "“Ask the resident to forget it” does not answer “Controlled-count discrepancy means:”. The matching answer is: Stop and report — do not 'fix' the book later."
+      "a": "Borrowing controlled drugs hides the discrepancy and creates a second count error; stop and report.",
+      "b": "Discrepancies are reported immediately so they can be investigated; waiting a shift delays the investigation.",
+      "d": "Altering the count record to match is falsification; the discrepancy must be reported as found."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A dark room with no call light"
+        "text": "Giving the drug earlier in the day on your own"
       },
       {
         "id": "b",
-        "text": "Socks without traction"
+        "text": "Raising all four bed rails so the resident stays in bed"
       },
       {
         "id": "c",
-        "text": "Leaving the bed high"
+        "text": "Holding the dose whenever the resident seems sleepy"
       },
       {
         "id": "d",
-        "text": "Safety measures and reporting dizziness, not a secret extra pill"
+        "text": "Safety measures and reporting dizziness"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Meds change fall risk. This item asks: “Fall risk after a night blood-pressure drug means:”. The matching answer is: Safety measures and reporting dizziness, not a secret extra pill. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Meds change fall risk. This item asks: “Fall risk after a night blood-pressure drug means:”. The matching answer is: Safety measures and reporting dizziness, not a secret extra pill. Independent UniPrep diagnostic — not an official medication aide paper. Never give an extra or unordered pill to manage it.",
     "distractorExplanations": {
-      "a": "“A dark room with no call light” does not answer “Fall risk after a night blood-pressure drug means:”. The matching answer is: Safety measures and reporting dizziness, not a secret extra pill.",
-      "b": "“Socks without traction” does not answer “Fall risk after a night blood-pressure drug means:”. The matching answer is: Safety measures and reporting dizziness, not a secret extra pill.",
-      "c": "“Leaving the bed high” does not answer “Fall risk after a night blood-pressure drug means:”. The matching answer is: Safety measures and reporting dizziness, not a secret extra pill."
+      "a": "Changing administration time is a prescriber or nurse decision; the aide reports dizziness instead.",
+      "b": "Full rails can act as a restraint and increase injury from climbing over them; use ordered fall precautions.",
+      "c": "An aide holds a dose only per the order’s parameters; drowsiness or dizziness is reported to the nurse."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1195,27 +1195,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A hazardous-drug problem — follow the special procedure or don't"
+        "text": "A hazardous-drug problem — follow the special procedure"
       },
       {
         "id": "b",
-        "text": "Fine if you hold your breath"
+        "text": "Acceptable if the aide wears a pair of exam gloves"
       },
       {
         "id": "c",
-        "text": "Required"
+        "text": "Acceptable if the crushed powder is wiped up afterward"
       },
       {
         "id": "d",
-        "text": "A CNA gait-belt skill"
+        "text": "Acceptable because oral tablets are not hazardous drugs"
       }
     ],
     "correctOptionId": "a",
     "explanation": "HD drugs have USP rules. This item asks: “Crushing a chemo tablet on the open cart is:”. The matching answer is: A hazardous-drug problem — follow the special procedure or don't. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Fine if you hold your breath” does not answer “Crushing a chemo tablet on the open cart is:”. The matching answer is: A hazardous-drug problem — follow the special procedure or don't.",
-      "c": "“Required” does not answer “Crushing a chemo tablet on the open cart is:”. The matching answer is: A hazardous-drug problem — follow the special procedure or don't.",
-      "d": "“A CNA gait-belt skill” does not answer “Crushing a chemo tablet on the open cart is:”. The matching answer is: A hazardous-drug problem — follow the special procedure or don't."
+      "b": "Gloves alone do not control airborne powder; hazardous drugs are manipulated only under the special procedure.",
+      "c": "Cleanup afterward does not prevent inhalation or spread of hazardous dust during crushing.",
+      "d": "Many oral antineoplastics are on the NIOSH hazardous drug list and need special handling."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A kindness"
+        "text": "Is allowed if the roommate agrees to share"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "Fine if you document later"
+        "text": "Is allowed if the nurse is told afterward"
       },
       {
         "id": "d",
-        "text": "OK once"
+        "text": "Is allowed once if doses match"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Never share controlleds. This item asks: “A resident in pain who wants a roommate's leftover oxycodone:”. The matching answer is: Is a no — only their ordered drug. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“A kindness” does not answer “A resident in pain who wants a roommate's leftover oxycodone:”. The matching answer is: Is a no — only their ordered drug.",
-      "c": "“Fine if you document later” does not answer “A resident in pain who wants a roommate's leftover oxycodone:”. The matching answer is: Is a no — only their ordered drug.",
-      "d": "“OK once” does not answer “A resident in pain who wants a roommate's leftover oxycodone:”. The matching answer is: Is a no — only their ordered drug."
+      "a": "A drug dispensed for one resident cannot be given to another, even with consent; this is also diversion of a controlled drug.",
+      "c": "Telling the nurse later does not make giving another resident’s opioid legal or safe; ask the nurse about the resident’s own orders.",
+      "d": "Matching strength does not change ownership; each resident receives only drugs dispensed for them."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1261,11 +1261,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional if you know them"
+        "text": "Optional if gloves are worn"
       },
       {
         "id": "b",
-        "text": "Replaced by gloves all day without washing"
+        "text": "Needed at shift start only"
       },
       {
         "id": "c",
@@ -1273,15 +1273,15 @@
       },
       {
         "id": "d",
-        "text": "Rude"
+        "text": "Optional for oral meds"
       }
     ],
     "correctOptionId": "c",
     "explanation": "You touch the pills. This item asks: “Hand hygiene before a med pass is:”. The matching answer is: Required. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Optional if you know them” does not answer “Hand hygiene before a med pass is:”. The matching answer is: Required.",
-      "b": "“Replaced by gloves all day without washing” does not answer “Hand hygiene before a med pass is:”. The matching answer is: Required.",
-      "d": "“Rude” does not answer “Hand hygiene before a med pass is:”. The matching answer is: Required."
+      "a": "Gloves do not replace hand hygiene; hands are cleaned before putting gloves on and after taking them off.",
+      "b": "Hand hygiene is repeated before and after each resident contact, not done once at the start of the shift.",
+      "d": "Oral meds are handled and taken by mouth, so hand hygiene matters as much as for any other route."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1294,15 +1294,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Pre-mixed for the hallway"
+        "text": "Mixed ahead of time for the whole hallway"
       },
       {
         "id": "b",
-        "text": "Left on the table"
+        "text": "Mixed with all of that resident’s meds in one spoonful"
       },
       {
         "id": "c",
-        "text": "Fed to two people"
+        "text": "Saved in the cart for the next scheduled dose"
       },
       {
         "id": "d",
@@ -1312,9 +1312,9 @@
     "correctOptionId": "d",
     "explanation": "One cup, one person. This item asks: “A crushed med in applesauce must be:”. The matching answer is: Given to that one resident, not a shared cup. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Pre-mixed for the hallway” does not answer “A crushed med in applesauce must be:”. The matching answer is: Given to that one resident, not a shared cup.",
-      "b": "“Left on the table” does not answer “A crushed med in applesauce must be:”. The matching answer is: Given to that one resident, not a shared cup.",
-      "c": "“Fed to two people” does not answer “A crushed med in applesauce must be:”. The matching answer is: Given to that one resident, not a shared cup."
+      "a": "Premixing for several residents breaks identification and timing; each dose is prepared for one resident at a time.",
+      "b": "Crushed medications are generally given separately unless the pharmacist approves mixing, because of interaction and dosing concerns.",
+      "c": "Crushed doses are given right away; saved mixtures lose identity and stability and must be discarded per policy."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Discard per policy and get a replacement — do not blow it off and give it"
+        "text": "Discard per policy and get a replacement"
       },
       {
         "id": "b",
-        "text": "Give it"
+        "text": "Wipe it off and give it if it landed on a clean floor"
       },
       {
         "id": "c",
-        "text": "Put it back in the blister"
+        "text": "Return it to the blister pack for the pharmacy"
       },
       {
         "id": "d",
-        "text": "Split it with the next dose"
+        "text": "Give it, then report the contamination"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Floor pills are dirty. This item asks: “If you drop a tablet on the floor:”. The matching answer is: Discard per policy and get a replacement — do not blow it off and give it. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Floor pills are dirty. This item asks: “If you drop a tablet on the floor:”. The matching answer is: Discard per policy and get a replacement — do not blow it off and give it. Independent UniPrep diagnostic — not an official medication aide paper. Do not blow off a dropped tablet and give it.",
     "distractorExplanations": {
-      "b": "“Give it” does not answer “If you drop a tablet on the floor:”. The matching answer is: Discard per policy and get a replacement — do not blow it off and give it.",
-      "c": "“Put it back in the blister” does not answer “If you drop a tablet on the floor:”. The matching answer is: Discard per policy and get a replacement — do not blow it off and give it.",
-      "d": "“Split it with the next dose” does not answer “If you drop a tablet on the floor:”. The matching answer is: Discard per policy and get a replacement — do not blow it off and give it."
+      "b": "A dropped tablet is contaminated regardless of how clean the floor looks; it is discarded per policy.",
+      "c": "Returning a contaminated tablet to packaging risks another resident receiving it; discard and document instead.",
+      "d": "Reporting does not make giving a contaminated tablet acceptable; get a replacement first."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Yours to discontinue"
+        "text": "Drugs the aide should hold for any resident over age 65 until reviewed"
       },
       {
         "id": "b",
-        "text": "A reason the nurse/pharmacist watches — you still give only as ordered"
+        "text": "A reason the nurse/pharmacist watches — you give only as ordered"
       },
       {
         "id": "c",
-        "text": "Vitamins"
+        "text": "Banned in nursing homes under federal regulations"
       },
       {
         "id": "d",
-        "text": "Always IM"
+        "text": "A reason to cut the dose in half for residents over age 75"
       }
     ],
     "correctOptionId": "b",
     "explanation": "You report side effects; you do not deprescribe. This item asks: “Beers-list drugs in older adults are:”. The matching answer is: A reason the nurse/pharmacist watches — you still give only as ordered. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Yours to discontinue” does not answer “Beers-list drugs in older adults are:”. The matching answer is: A reason the nurse/pharmacist watches — you still give only as ordered.",
-      "c": "“Vitamins” does not answer “Beers-list drugs in older adults are:”. The matching answer is: A reason the nurse/pharmacist watches — you still give only as ordered.",
-      "d": "“Always IM” does not answer “Beers-list drugs in older adults are:”. The matching answer is: A reason the nurse/pharmacist watches — you still give only as ordered."
+      "a": "Beers criteria flag drugs for prescriber and pharmacist review; an aide may not hold an ordered drug because of age.",
+      "c": "The Beers criteria are expert guidance on potentially inappropriate drugs, not a federal ban.",
+      "d": "Dose changes are a prescriber decision; the aide gives the dose as ordered and reports side effects."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Another tablet immediately"
+        "text": "Water to help wash the pill down"
       },
       {
         "id": "b",
-        "text": "A laugh"
+        "text": "Time alone to cough it up in private"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Water forced into a closed airway"
+        "text": "A finger sweep to find the pill blindly"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Airway first. This item asks: “A resident choking on a pill needs:”. The matching answer is: Emergency response — do not leave them. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Another tablet immediately” does not answer “A resident choking on a pill needs:”. The matching answer is: Emergency response — do not leave them.",
-      "b": "“A laugh” does not answer “A resident choking on a pill needs:”. The matching answer is: Emergency response — do not leave them.",
-      "d": "“Water forced into a closed airway” does not answer “A resident choking on a pill needs:”. The matching answer is: Emergency response — do not leave them."
+      "a": "Fluids poured into a blocked airway can worsen choking or cause aspiration; call for emergency help.",
+      "b": "A choking resident must not be left alone; stay, call for help, and start the emergency response.",
+      "d": "Blind finger sweeps can push the object deeper; follow the trained choking emergency response instead."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1426,15 +1426,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Open in the dining room"
+        "text": "Locked at the end of each med pass"
       },
       {
         "id": "b",
-        "text": "Keys on a hook in the hall"
+        "text": "Keys left in the lock during the pass"
       },
       {
         "id": "c",
-        "text": "Residents helping themselves"
+        "text": "Unlocked in the dining room at meals"
       },
       {
         "id": "d",
@@ -1444,9 +1444,9 @@
     "correctOptionId": "d",
     "explanation": "Diversion starts with an open cart. This item asks: “Storage of the med cart includes:”. The matching answer is: Locked when out of your sight. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Open in the dining room” does not answer “Storage of the med cart includes:”. The matching answer is: Locked when out of your sight.",
-      "b": "“Keys on a hook in the hall” does not answer “Storage of the med cart includes:”. The matching answer is: Locked when out of your sight.",
-      "c": "“Residents helping themselves” does not answer “Storage of the med cart includes:”. The matching answer is: Locked when out of your sight."
+      "a": "The cart must be locked whenever it leaves the aide’s sight, including during the pass, not just when it ends.",
+      "b": "Keys left in the lock make the cart effectively unlocked; keys stay on the aide’s person.",
+      "c": "A cart left unlocked in a common area invites diversion and accidental ingestion by residents."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "Never report nausea"
+        "text": "Report only effects that are not listed on the label"
       },
       {
         "id": "c",
-        "text": "Chart only if they code"
+        "text": "Report once the effect lasts longer than a day"
       },
       {
         "id": "d",
-        "text": "Ask Facebook"
+        "text": "Report at the next care-plan meeting"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Reporting is cheap; silence is not. This item asks: “An adverse effect vs a mild expected side effect:”. The matching answer is: When in doubt, report — do not wait for 'bad enough'. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Never report nausea” does not answer “An adverse effect vs a mild expected side effect:”. The matching answer is: When in doubt, report — do not wait for 'bad enough'.",
-      "c": "“Chart only if they code” does not answer “An adverse effect vs a mild expected side effect:”. The matching answer is: When in doubt, report — do not wait for 'bad enough'.",
-      "d": "“Ask Facebook” does not answer “An adverse effect vs a mild expected side effect:”. The matching answer is: When in doubt, report — do not wait for 'bad enough'."
+      "b": "Listed side effects can still be severe or new for that resident; if in doubt, report it.",
+      "c": "Waiting a day can let a serious reaction progress; possible adverse effects are reported when noticed.",
+      "d": "Care-plan meetings are too late for a possible adverse reaction; the nurse is told right away."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The night before"
+        "text": "Before the pass, to save time later"
       },
       {
         "id": "b",
-        "text": "After the drug is taken, not before you walk in the room"
+        "text": "After the drug is taken"
       },
       {
         "id": "c",
-        "text": "By a coworker who was not there"
+        "text": "At the end of the shift for all meds"
       },
       {
         "id": "d",
-        "text": "Never for PRNs"
+        "text": "When it is poured"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Chart what occurred. This item asks: “Documentation happens:”. The matching answer is: After the drug is taken, not before you walk in the room. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Chart what occurred. This item asks: “Documentation happens:”. The matching answer is: After the drug is taken, not before you walk in the room. Independent UniPrep diagnostic — not an official medication aide paper. Never document before you walk into the room.",
     "distractorExplanations": {
-      "a": "“The night before” does not answer “Documentation happens:”. The matching answer is: After the drug is taken, not before you walk in the room.",
-      "c": "“By a coworker who was not there” does not answer “Documentation happens:”. The matching answer is: After the drug is taken, not before you walk in the room.",
-      "d": "“Never for PRNs” does not answer “Documentation happens:”. The matching answer is: After the drug is taken, not before you walk in the room."
+      "a": "Pre-charting records doses that may be refused, held, or dropped, which falsifies the MAR.",
+      "c": "Batch charting at shift end risks errors and leaves the MAR inaccurate for others during the shift.",
+      "d": "Pouring is not administration; the dose is documented after the resident actually takes it."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Given"
+        "text": "Held, since the dose was not given"
       },
       {
         "id": "b",
-        "text": "Crushed in secret"
+        "text": "Omitted, and retried at the next scheduled time"
       },
       {
         "id": "c",
-        "text": "Refused, with the nurse notified as required — not a secret skip"
+        "text": "Refused, with the nurse notified as required"
       },
       {
         "id": "d",
-        "text": "Omitted from the MAR"
+        "text": "Refused, with crushing in food tried next"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Refusals are data. This item asks: “A refusal is charted as:”. The matching answer is: Refused, with the nurse notified as required — not a secret skip. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Refusals are data. This item asks: “A refusal is charted as:”. The matching answer is: Refused, with the nurse notified as required — not a secret skip. Independent UniPrep diagnostic — not an official medication aide paper. A refusal is never a secret skip.",
     "distractorExplanations": {
-      "a": "“Given” does not answer “A refusal is charted as:”. The matching answer is: Refused, with the nurse notified as required — not a secret skip.",
-      "b": "“Crushed in secret” does not answer “A refusal is charted as:”. The matching answer is: Refused, with the nurse notified as required — not a secret skip.",
-      "d": "“Omitted from the MAR” does not answer “A refusal is charted as:”. The matching answer is: Refused, with the nurse notified as required — not a secret skip."
+      "a": "“Held” is for doses withheld under a parameter or nurse decision; a refusal has its own code and notification.",
+      "b": "Retrying at the next scheduled time can double-dose; the refusal is charted and the nurse decides what follows.",
+      "d": "Hiding a refused drug in food is covert administration, which violates resident rights without a specific order and plan."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Written as 0800 if it was 1100"
+        "text": "Timed at the scheduled hour to match the MAR"
       },
       {
         "id": "b",
-        "text": "Erased with white-out"
+        "text": "Corrected with correction fluid over the old time"
       },
       {
         "id": "c",
-        "text": "Ignored"
+        "text": "Left blank so the next shift can complete it"
       },
       {
         "id": "d",
-        "text": "Honest and timed as a late entry, not backdated as on-time"
+        "text": "Honest and timed as a late entry"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Falsifying time is a legal issue. This item asks: “Late entry on the MAR must be:”. The matching answer is: Honest and timed as a late entry, not backdated as on-time. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Falsifying time is a legal issue. This item asks: “Late entry on the MAR must be:”. The matching answer is: Honest and timed as a late entry, not backdated as on-time. Independent UniPrep diagnostic — not an official medication aide paper. It is never backdated to look on time.",
     "distractorExplanations": {
-      "a": "“Written as 0800 if it was 1100” does not answer “Late entry on the MAR must be:”. The matching answer is: Honest and timed as a late entry, not backdated as on-time.",
-      "b": "“Erased with white-out only” does not answer “Late entry on the MAR must be:”. The matching answer is: Honest and timed as a late entry, not backdated as on-time.",
-      "c": "“Ignored” does not answer “Late entry on the MAR must be:”. The matching answer is: Honest and timed as a late entry, not backdated as on-time."
+      "a": "Recording the scheduled time instead of the actual time backdates the entry and falsifies the record.",
+      "b": "Correction fluid obscures the original entry; errors get a single line, initials, and the correct information.",
+      "c": "Only the person who gave the dose documents it; another shift cannot chart care it did not provide."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1595,23 +1595,23 @@
       },
       {
         "id": "b",
-        "text": "A refusal they witnessed"
+        "text": "A refusal they witnessed during the pass"
       },
       {
         "id": "c",
-        "text": "A pulse they took if allowed"
+        "text": "A pulse they took before digoxin"
       },
       {
         "id": "d",
-        "text": "A hold they did"
+        "text": "A dose they held per the written parameter"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Stay in what you did. This item asks: “The aide does not document:”. The matching answer is: A new medical diagnosis they invented. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“A refusal they witnessed” does not answer “The aide does not document:”. The matching answer is: A new medical diagnosis they invented.",
-      "c": "“A pulse they took if allowed” does not answer “The aide does not document:”. The matching answer is: A new medical diagnosis they invented.",
-      "d": "“A hold they did” does not answer “The aide does not document:”. The matching answer is: A new medical diagnosis they invented."
+      "b": "Documenting a refusal the aide witnessed is required, not prohibited.",
+      "c": "Recording a pulse the aide is permitted to take before a drug like digoxin is part of the task.",
+      "d": "A dose held under the written parameter must be documented by the aide who held it."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A toilet flush with no count"
+        "text": "A note in the MAR without a second person"
       },
       {
         "id": "b",
@@ -1632,19 +1632,19 @@
       },
       {
         "id": "c",
-        "text": "Your pocket"
+        "text": "Flushing right away, with the count fixed later"
       },
       {
         "id": "d",
-        "text": "A story"
+        "text": "Return to the cart drawer for the next dose"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Waste is two-person. This item asks: “A wasted narcotic needs:”. The matching answer is: A witness and the form your facility uses. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“A toilet flush with no count” does not answer “A wasted narcotic needs:”. The matching answer is: A witness and the form your facility uses.",
-      "c": "“Your pocket” does not answer “A wasted narcotic needs:”. The matching answer is: A witness and the form your facility uses.",
-      "d": "“A story” does not answer “A wasted narcotic needs:”. The matching answer is: A witness and the form your facility uses."
+      "a": "Controlled-drug waste requires a second witness who co-signs; a solo MAR note does not meet that standard.",
+      "c": "Waste is documented with a witness at the time it happens; fixing the count later hides discrepancies.",
+      "d": "A dose that has been prepared or contaminated is wasted with a witness, not returned to stock."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1657,27 +1657,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Wait until Monday"
+        "text": "Hold all meds until the system is restored"
       },
       {
         "id": "b",
-        "text": "Give from memory"
+        "text": "Give from memory and chart everything later"
       },
       {
         "id": "c",
-        "text": "Use the downtime paper process — you do not skip the pass"
+        "text": "Use the downtime paper process"
       },
       {
         "id": "d",
-        "text": "Send everyone home"
+        "text": "Use yesterday’s printout as today’s MAR"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Downtime procedures exist. This item asks: “If the eMAR is down, you:”. The matching answer is: Use the downtime paper process — you do not skip the pass. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Downtime procedures exist. This item asks: “If the eMAR is down, you:”. The matching answer is: Use the downtime paper process — you do not skip the pass. Independent UniPrep diagnostic — not an official medication aide paper. The medication pass is not skipped.",
     "distractorExplanations": {
-      "a": "“Wait until Monday” does not answer “If the eMAR is down, you:”. The matching answer is: Use the downtime paper process — you do not skip the pass.",
-      "b": "“Give from memory only” does not answer “If the eMAR is down, you:”. The matching answer is: Use the downtime paper process — you do not skip the pass.",
-      "d": "“Send everyone home” does not answer “If the eMAR is down, you:”. The matching answer is: Use the downtime paper process — you do not skip the pass."
+      "a": "Downtime does not justify missing doses; the paper downtime MAR lets the pass continue safely.",
+      "b": "Memory-based passes cause omissions and wrong doses; downtime forms are used during the pass.",
+      "d": "An old printout may miss new, changed, or stopped orders; use the facility’s current downtime record."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "You can give morphine without telling anyone if you feel like it"
+        "text": "Morphine can be given without checking, since it differs"
       },
       {
         "id": "b",
-        "text": "Allergies expire"
+        "text": "The allergy can be ignored if the rash was years ago"
       },
       {
         "id": "c",
-        "text": "Ignore it for cough syrups that contain it"
+        "text": "Codeine cough syrups are fine, since the allergy was to tablets"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "Allergies stay visible. This item asks: “Allergy listed as 'codeine → rash' means:”. The matching answer is: You still check every pass and report a new reaction. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“You can give morphine without telling anyone if you feel like it” does not answer “Allergy listed as 'codeine → rash' means:”. The matching answer is: You still check every pass and report a new reaction.",
-      "b": "“Allergies expire” does not answer “Allergy listed as 'codeine → rash' means:”. The matching answer is: You still check every pass and report a new reaction.",
-      "c": "“Ignore it for cough syrups that contain it” does not answer “Allergy listed as 'codeine → rash' means:”. The matching answer is: You still check every pass and report a new reaction."
+      "a": "Opioids can cross-react; any related drug is checked against the allergy with the nurse before giving it.",
+      "b": "Allergies stay on the record and are checked every pass regardless of when the reaction happened.",
+      "c": "The allergy is to the drug, not the dosage form; codeine in a syrup carries the same risk."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1727,23 +1727,23 @@
       },
       {
         "id": "b",
-        "text": "Hidden"
+        "text": "Reported at the end of the shift on the form"
       },
       {
         "id": "c",
-        "text": "Blamed on the night shift"
+        "text": "Corrected by skipping the next scheduled dose"
       },
       {
         "id": "d",
-        "text": "Fixed by giving a second wrong dose"
+        "text": "Reported only if the resident shows symptoms"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Residents come first. This item asks: “A med error you made should be:”. The matching answer is: Reported at once so the resident can be checked. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Hidden” does not answer “A med error you made should be:”. The matching answer is: Reported at once so the resident can be checked.",
-      "c": "“Blamed on the night shift always” does not answer “A med error you made should be:”. The matching answer is: Reported at once so the resident can be checked.",
-      "d": "“Fixed by giving a second wrong dose” does not answer “A med error you made should be:”. The matching answer is: Reported at once so the resident can be checked."
+      "b": "Medication errors are reported at once so the resident can be assessed; the incident form follows, it does not replace reporting.",
+      "c": "Adjusting later doses is a nurse or prescriber decision; the error is reported so they can decide.",
+      "d": "Effects may be delayed, so every error is reported whether or not symptoms appear."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Fine"
+        "text": "Fine if it is closed after the pass"
       },
       {
         "id": "b",
-        "text": "Required"
+        "text": "A privacy risk only if names show"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "How families learn"
+        "text": "Fine while the aide is in a nearby room"
       }
     ],
     "correctOptionId": "c",
     "explanation": "PHI on a cart in public is a breach. This item asks: “Leaving the MAR open on a table in the lobby is:”. The matching answer is: A privacy and diversion risk. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Fine” does not answer “Leaving the MAR open on a table in the lobby is:”. The matching answer is: A privacy and diversion risk.",
-      "b": "“Required” does not answer “Leaving the MAR open on a table in the lobby is:”. The matching answer is: A privacy and diversion risk.",
-      "d": "“How families learn” does not answer “Leaving the MAR open on a table in the lobby is:”. The matching answer is: A privacy and diversion risk."
+      "a": "An open MAR in a public lobby exposes resident information while it sits there, even if closed later.",
+      "b": "The MAR shows drug and resident details that identify people and reveal controlled drugs, beyond names alone.",
+      "d": "Leaving the MAR out of sight in a public area is exactly when privacy and diversion risks occur."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Read the whole list loudly"
+        "text": "Read the list to any relative who visits often"
       },
       {
         "id": "b",
-        "text": "Hand them the narcotic keys"
+        "text": "Hand them a printed copy of the MAR"
       },
       {
         "id": "c",
-        "text": "Text a photo of the cart"
+        "text": "Tell them the list if they say they are family"
       },
       {
         "id": "d",
-        "text": "Follow facility privacy rules — do not recite the MAR in the hall"
+        "text": "Follow facility privacy rules"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Privacy + the nurse. This item asks: “A family asks 'what pills is dad on?'”. The matching answer is: Follow facility privacy rules — do not recite the MAR in the hall. Independent UniPrep diagnostic — not an official medication aide paper.",
+    "explanation": "Privacy + the nurse. This item asks: “A family asks 'what pills is dad on?'”. The matching answer is: Follow facility privacy rules — do not recite the MAR in the hall. Independent UniPrep diagnostic — not an official medication aide paper. Never recite the MAR in the hall; refer the family to the nurse.",
     "distractorExplanations": {
-      "a": "“Read the whole list loudly” does not answer “A family asks 'what pills is dad on?'”. The matching answer is: Follow facility privacy rules — do not recite the MAR in the hall.",
-      "b": "“Hand them the narcotic keys” does not answer “A family asks 'what pills is dad on?'”. The matching answer is: Follow facility privacy rules — do not recite the MAR in the hall.",
-      "c": "“Text a photo of the cart” does not answer “A family asks 'what pills is dad on?'”. The matching answer is: Follow facility privacy rules — do not recite the MAR in the hall."
+      "a": "Frequent visits do not make a relative authorized; disclosure follows the resident’s wishes and facility privacy rules.",
+      "b": "Releasing a copy of the MAR is a records disclosure that goes through the nurse and facility process, not the aide.",
+      "c": "Claiming to be family is not verification of authority; follow privacy rules and involve the nurse."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1859,23 +1859,23 @@
       },
       {
         "id": "b",
-        "text": "Only the pharmacy's feelings"
+        "text": "The pharmacy’s billing records"
       },
       {
         "id": "c",
-        "text": "No one"
+        "text": "The outgoing shift alone"
       },
       {
         "id": "d",
-        "text": "The kitchen"
+        "text": "Only the facility’s inventory"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Start the shift with a clean count. This item asks: “Counts at shift change protect:”. The matching answer is: Residents and your license. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "b": "“Only the pharmacy's feelings” does not answer “Counts at shift change protect:”. The matching answer is: Residents and your license.",
-      "c": "“No one” does not answer “Counts at shift change protect:”. The matching answer is: Residents and your license.",
-      "d": "“The kitchen” does not answer “Counts at shift change protect:”. The matching answer is: Residents and your license."
+      "b": "Shift counts exist to detect loss or diversion that harms residents, not to support pharmacy billing.",
+      "c": "Counts protect both shifts and, above all, residents; they are not just a release for the outgoing staff.",
+      "d": "Inventory matters, but the main purpose is resident safety and accountability for each staff member’s license."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Guess"
+        "text": "Use it after reading the package insert"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Let the resident teach you mid-dose"
+        "text": "Let the resident guide you through the dose"
       },
       {
         "id": "d",
-        "text": "Skip insulin and not tell anyone"
+        "text": "Use it after watching a video on your phone"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Competence is a right too. This item asks: “If you are not competent on a device (insulin pen):”. The matching answer is: Do not use it — get training or the nurse. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“Guess” does not answer “If you are not competent on a device (insulin pen):”. The matching answer is: Do not use it — get training or the nurse.",
-      "c": "“Let the resident teach you mid-dose” does not answer “If you are not competent on a device (insulin pen):”. The matching answer is: Do not use it — get training or the nurse.",
-      "d": "“Skip insulin and not tell anyone” does not answer “If you are not competent on a device (insulin pen):”. The matching answer is: Do not use it — get training or the nurse."
+      "a": "Reading an insert is not competency validation; the aide needs facility training or the nurse.",
+      "c": "Relying on the resident mid-dose shifts responsibility and risks a dosing error; get training or the nurse.",
+      "d": "A video is not a validated competency check; devices like insulin pens require documented training."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
@@ -1954,15 +1954,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A shopping list"
+        "text": "A reminder list the aide may discard after the shift"
       },
       {
         "id": "b",
-        "text": "Optional scrap paper"
+        "text": "The pharmacy’s order form for refills"
       },
       {
         "id": "c",
-        "text": "A CNA bath sheet"
+        "text": "The prescriber’s original order for each drug"
       },
       {
         "id": "d",
@@ -1972,9 +1972,9 @@
     "correctOptionId": "d",
     "explanation": "If it is not charted, it is not proved. This item asks: “The purpose of the MAR is:”. The matching answer is: The legal record of what was given. Independent UniPrep diagnostic — not an official medication aide paper.",
     "distractorExplanations": {
-      "a": "“A shopping list” does not answer “The purpose of the MAR is:”. The matching answer is: The legal record of what was given.",
-      "b": "“Optional scrap paper” does not answer “The purpose of the MAR is:”. The matching answer is: The legal record of what was given.",
-      "c": "“A CNA bath sheet” does not answer “The purpose of the MAR is:”. The matching answer is: The legal record of what was given."
+      "a": "The MAR is a permanent part of the medical record and is retained, not a personal reminder to discard.",
+      "b": "Refill requests use pharmacy processes; the MAR documents what was actually administered.",
+      "c": "The original order lives in the chart; the MAR is the transcribed administration record of what was given."
     },
     "difficulty": "medium",
     "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
