@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Proprietary communication between controllers from one manufacturer's own product line."
       },
       {
         "id": "c",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings."
       },
       {
         "id": "d",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Interoperable communication between building automation devices from different manufacturers”.",
-      "c": "Not the best answer here; the right answer is “Interoperable communication between building automation devices from different manufacturers”.",
-      "d": "Not the best answer here; the right answer is “Interoperable communication between building automation devices from different manufacturers”."
+      "b": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate.",
+      "c": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet.",
+      "d": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -73,11 +73,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Master/slave register polling between PLCs and power meters on industrial RS-485 serial networks."
       },
       {
         "id": "b",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Defining acceptable thermal comfort conditions for occupants in conditioned spaces."
       },
       {
         "id": "c",
@@ -85,15 +85,15 @@
       },
       {
         "id": "d",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Low-power wireless mesh networking for battery-powered lighting and smart-home devices."
       }
     ],
     "correctOptionId": "c",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "b": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "a": "Describes Modbus RTU register polling; BACnet is an object-based peer protocol built for building automation.",
+      "b": "That is ASHRAE Standard 55 (thermal environmental conditions for occupancy), not ASHRAE 135 BACnet.",
+      "d": "Describes a Zigbee-style wireless mesh; BACnet defines building automation objects and services over many data links."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Peer-to-peer messaging between Neuron-chip nodes on free-topology LonTalk twisted-pair channels."
       },
       {
         "id": "b",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Defining the commissioning process that verifies HVAC systems meet the owner's project requirements."
       },
       {
         "id": "c",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Proprietary communication between controllers from one manufacturer's own product line."
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "b": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "a": "Describes LonWorks (LonTalk, ISO/IEC 14908), a competing building protocol, not ASHRAE 135 BACnet.",
+      "b": "That is the ASHRAE Standard 202 / Guideline 0 commissioning process, not the BACnet communication protocol.",
+      "c": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -143,23 +143,23 @@
       },
       {
         "id": "b",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings."
       },
       {
         "id": "c",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope."
       },
       {
         "id": "d",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Master/slave register polling between PLCs and power meters on industrial RS-485 serial networks."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "b": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet.",
+      "c": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol.",
+      "d": "Describes Modbus RTU register polling; BACnet is an object-based peer protocol built for building automation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Defining acceptable thermal comfort conditions for occupants in conditioned spaces."
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Low-power wireless mesh networking for battery-powered lighting and smart-home devices."
       },
       {
         "id": "d",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Peer-to-peer messaging between Neuron-chip nodes on free-topology LonTalk twisted-pair channels."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "a": "That is ASHRAE Standard 55 (thermal environmental conditions for occupancy), not ASHRAE 135 BACnet.",
+      "c": "Describes a Zigbee-style wireless mesh; BACnet defines building automation objects and services over many data links.",
+      "d": "Describes LonWorks (LonTalk, ISO/IEC 14908), a competing building protocol, not ASHRAE 135 BACnet."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Defining the commissioning process that verifies HVAC systems meet the owner's project requirements."
       },
       {
         "id": "b",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Proprietary communication between controllers from one manufacturer's own product line."
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings."
       }
     ],
     "correctOptionId": "c",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "b": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "a": "That is the ASHRAE Standard 202 / Guideline 0 commissioning process, not the BACnet communication protocol.",
+      "b": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate.",
+      "d": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope."
       },
       {
         "id": "b",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Master/slave register polling between PLCs and power meters on industrial RS-485 serial networks."
       },
       {
         "id": "c",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Defining acceptable thermal comfort conditions for occupants in conditioned spaces."
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "b": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "a": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol.",
+      "b": "Describes Modbus RTU register polling; BACnet is an object-based peer protocol built for building automation.",
+      "c": "That is ASHRAE Standard 55 (thermal environmental conditions for occupancy), not ASHRAE 135 BACnet."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Low-power wireless mesh networking for battery-powered lighting and smart-home devices."
       },
       {
         "id": "c",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Peer-to-peer messaging between Neuron-chip nodes on free-topology LonTalk twisted-pair channels."
       },
       {
         "id": "d",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Defining the commissioning process that verifies HVAC systems meet the owner's project requirements."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "b": "Describes a Zigbee-style wireless mesh; BACnet defines building automation objects and services over many data links.",
+      "c": "Describes LonWorks (LonTalk, ISO/IEC 14908), a competing building protocol, not ASHRAE 135 BACnet.",
+      "d": "That is the ASHRAE Standard 202 / Guideline 0 commissioning process, not the BACnet communication protocol."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Electrical wiring color codes for HVAC panels."
+        "text": "Proprietary communication between controllers from one manufacturer's own product line."
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "Fire alarm voice evacuation messaging only."
+        "text": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings."
       },
       {
         "id": "d",
-        "text": "Structural load calculations for rooftop units."
+        "text": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Interoperable communication between building automation devices from different manufacturers. This aligns with BACnet Protocol and Networking for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "c": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking.",
-      "d": "Incorrect. This does not reflect best practice for BACnet Protocol and Networking."
+      "a": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate.",
+      "c": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet.",
+      "d": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -403,15 +403,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Chiller refrigerant charge"
+        "text": "Routing messages between MS/TP and BACnet/IP networks"
       },
       {
         "id": "b",
-        "text": "Lighting color temperature"
+        "text": "Assigning unique device instances across the network"
       },
       {
         "id": "c",
-        "text": "Badge access encryption"
+        "text": "Encrypting BACnet traffic between IP subnets"
       },
       {
         "id": "d",
@@ -419,11 +419,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Broadcast management across IP subnets.",
+    "explanation": "Broadcast management across IP subnets. Routers block IP broadcasts, so a BBMD in each subnet forwards BACnet broadcasts such as Who-Is/I-Am to its peers (Broadcast Distribution Table).",
     "distractorExplanations": {
-      "a": "Not the best answer: Chiller refrigerant charge.",
-      "b": "Not the best answer: Lighting color temperature only.",
-      "c": "Not the best answer: Badge access encryption only."
+      "a": "That is a BACnet router's job (network-layer routing between data links); a BBMD forwards broadcasts between IP subnets.",
+      "b": "Device instance numbers are configured per device by the integrator; a BBMD does not assign or manage them.",
+      "c": "Encryption comes from BACnet Secure Connect (TLS), not from a BBMD, which only redistributes broadcast messages."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "A cloud SaaS"
+        "text": "An Ethernet-based UDP transport for BACnet"
       },
       {
         "id": "c",
-        "text": "A refrigerant pipe"
+        "text": "A free-topology LonTalk channel for LonWorks"
       },
       {
         "id": "d",
-        "text": "A fire panel fiber"
+        "text": "A two-wire 4–20 mA analog loop for sensors"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "A twisted-pair RS-485 style LAN for BACnet.",
+    "explanation": "A twisted-pair RS-485 style LAN for BACnet. MS/TP (Master-Slave/Token-Passing) daisy-chains field controllers on shielded twisted pair with end-of-line termination and common baud rates such as 38.4 or 76.8 kbps.",
     "distractorExplanations": {
-      "b": "Not the best answer: A cloud SaaS only.",
-      "c": "Not the best answer: A refrigerant pipe.",
-      "d": "Not the best answer: A fire panel fiber only."
+      "b": "That describes BACnet/IP (UDP port 47808 on Ethernet), not MS/TP, which runs on an RS-485 twisted-pair bus.",
+      "c": "LonTalk free-topology channels belong to LonWorks; MS/TP is a BACnet data link on RS-485 twisted pair.",
+      "d": "A 4–20 mA loop is a single analog signal circuit, not a multi-drop token-passing LAN like BACnet MS/TP."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -469,15 +469,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The need for trends"
+        "text": "Alarm floods by suppressing repeat events"
       },
       {
         "id": "b",
-        "text": "Electrical codes"
+        "text": "Controller scan time by skipping PID updates"
       },
       {
         "id": "c",
-        "text": "Damper sizing"
+        "text": "Wiring runs by sharing one MS/TP trunk"
       },
       {
         "id": "d",
@@ -485,11 +485,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Polling traffic by eventing changes.",
+    "explanation": "Polling traffic by eventing changes. With SubscribeCOV, a device sends a notification only when a value changes by more than its COV increment, instead of being polled on a fixed interval.",
     "distractorExplanations": {
-      "a": "Not the best answer: The need for trends forever.",
-      "b": "Not the best answer: Electrical codes.",
-      "c": "Not the best answer: Damper sizing."
+      "a": "Alarm floods are handled by alarm delays, priorities, and suppression logic; COV only changes how values are reported.",
+      "b": "COV is a network reporting service; it does not change how often a controller executes its PID control loops.",
+      "c": "COV is a software subscription service and has no effect on physical MS/TP trunk layout or cable length."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall."
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow."
       },
       {
         "id": "d",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "a": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat.",
+      "c": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset.",
+      "d": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -568,11 +568,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling."
       },
       {
         "id": "b",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Supply fan speed is increased to raise airflow so the chilled water valve can close further."
       },
       {
         "id": "c",
@@ -580,15 +580,15 @@
       },
       {
         "id": "d",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity."
       }
     ],
     "correctOptionId": "c",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "b": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "a": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead.",
+      "b": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls.",
+      "d": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Economizer is locked out and mechanical cooling holds the design discharge air temperature."
       },
       {
         "id": "b",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall."
       },
       {
         "id": "c",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow."
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "b": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "a": "Economizer lockout depends on outdoor air conditions, not on falling cooling load, and SAT reset raises the setpoint.",
+      "b": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat.",
+      "c": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -638,23 +638,23 @@
       },
       {
         "id": "b",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy."
       },
       {
         "id": "c",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling."
       },
       {
         "id": "d",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Supply fan speed is increased to raise airflow so the chilled water valve can close further."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "b": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum.",
+      "c": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead.",
+      "d": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity."
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Economizer is locked out and mechanical cooling holds the design discharge air temperature."
       },
       {
         "id": "d",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "a": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset.",
+      "c": "Economizer lockout depends on outdoor air conditions, not on falling cooling load, and SAT reset raises the setpoint.",
+      "d": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -700,11 +700,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow."
       },
       {
         "id": "b",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy."
       },
       {
         "id": "c",
@@ -712,15 +712,15 @@
       },
       {
         "id": "d",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling."
       }
     ],
     "correctOptionId": "c",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "b": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "a": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset.",
+      "b": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum.",
+      "d": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -733,15 +733,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Supply fan speed is increased to raise airflow so the chilled water valve can close further."
       },
       {
         "id": "b",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity."
       },
       {
         "id": "c",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Economizer is locked out and mechanical cooling holds the design discharge air temperature."
       },
       {
         "id": "d",
@@ -751,9 +751,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "b": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "a": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls.",
+      "b": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset.",
+      "c": "Economizer lockout depends on outdoor air conditions, not on falling cooling load, and SAT reset raises the setpoint."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall."
       },
       {
         "id": "c",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow."
       },
       {
         "id": "d",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "b": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat.",
+      "c": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset.",
+      "d": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -799,7 +799,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Outdoor air damper must always close to 0%."
+        "text": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling."
       },
       {
         "id": "b",
@@ -807,19 +807,19 @@
       },
       {
         "id": "c",
-        "text": "Chiller staging is unrelated to AHU control."
+        "text": "Supply fan speed is increased to raise airflow so the chilled water valve can close further."
       },
       {
         "id": "d",
-        "text": "Return fan speed is fixed and cannot modulate."
+        "text": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits. This aligns with HVAC Control Sequences and Plant Logic for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "c": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic.",
-      "d": "Incorrect. This does not reflect best practice for HVAC Control Sequences and Plant Logic."
+      "a": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead.",
+      "c": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls.",
+      "d": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -832,15 +832,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only proportional kick"
+        "text": "Overshoot from sudden setpoint changes"
       },
       {
         "id": "b",
-        "text": "Only derivative noise"
+        "text": "Rate of change of the error"
       },
       {
         "id": "c",
-        "text": "Only schedule holidays"
+        "text": "Instant response to current error"
       },
       {
         "id": "d",
@@ -848,11 +848,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Steady-state error over time.",
+    "explanation": "Steady-state error over time. Proportional-only control leaves an offset from setpoint; the integral term accumulates error over time and keeps adjusting output until the offset is removed.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only proportional kick.",
-      "b": "Not the best answer: Only derivative noise.",
-      "c": "Not the best answer: Only schedule holidays."
+      "a": "Damping overshoot on setpoint changes is the derivative term's role; integral action can add overshoot (windup).",
+      "b": "Responding to the rate of change of error is the derivative (D) term, not the integral (I) term.",
+      "c": "Output proportional to the present error is the proportional (P) term, which alone leaves steady-state offset."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,15 +865,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Maximize reheat"
+        "text": "Increase dehumidification at part load"
       },
       {
         "id": "b",
-        "text": "Disable economizers"
+        "text": "Raise duct static pressure at low load"
       },
       {
         "id": "c",
-        "text": "Ignore zone temps"
+        "text": "Hold discharge air at a fixed 55°F"
       },
       {
         "id": "d",
@@ -881,11 +881,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Reduce energy while meeting loads.",
+    "explanation": "Reduce energy while meeting loads. Raising SAT at part load cuts chiller energy and VAV reheat, while the highest-demand zone and humidity limits cap how far the reset can go.",
     "distractorExplanations": {
-      "a": "Not the best answer: Maximize reheat always.",
-      "b": "Not the best answer: Disable economizers forever.",
-      "c": "Not the best answer: Ignore zone temps."
+      "a": "Raising SAT reduces coil dehumidification, which is why resets are capped by humidity limits; it does not increase it.",
+      "b": "Confuses SAT reset with static pressure reset, which lowers (not raises) duct pressure as VAV demand falls.",
+      "c": "A fixed 55°F discharge is the non-reset baseline that SAT reset is designed to improve on at part load."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,15 +898,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase duct leaks helpfully"
+        "text": "Raise duct pressure to cut VAV hunting"
       },
       {
         "id": "b",
-        "text": "Replace filters"
+        "text": "Hold supply airflow at design max"
       },
       {
         "id": "c",
-        "text": "Eliminate VFDs"
+        "text": "Lower chilled water pump head at low load"
       },
       {
         "id": "d",
@@ -914,11 +914,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Lower fan energy when demand allows.",
+    "explanation": "Lower fan energy when demand allows. Trim-and-respond logic lowers the duct static setpoint until the most-open VAV damper is nearly fully open, so the VFD slows and fan power drops roughly with the cube of speed.",
     "distractorExplanations": {
-      "a": "Not the best answer: Increase duct leaks helpfully.",
-      "b": "Not the best answer: Replace filters.",
-      "c": "Not the best answer: Eliminate VFDs."
+      "a": "Static pressure reset lowers duct pressure; excess pressure tends to cause VAV damper hunting rather than cure it.",
+      "b": "Holding design maximum airflow is the opposite of reset; static pressure reset lets the fan slow as VAV demand drops.",
+      "c": "That is pump differential pressure reset on the water side, a sibling strategy, not duct static pressure reset."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "All ventilation"
+        "text": "Mechanical cooling running during occupied hours"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Humidity sensors"
+        "text": "Coil freezing when mixed air drops below 35°F"
       },
       {
         "id": "d",
-        "text": "CO2 control"
+        "text": "Demand-controlled ventilation raising OA on high CO2"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Bringing in air that cannot cool economically.",
+    "explanation": "Bringing in air that cannot cool economically. High-limit lockout (fixed or differential dry-bulb or enthalpy) returns the outdoor air damper to minimum when outdoor air is warmer or more humid than return air.",
     "distractorExplanations": {
-      "a": "Not the best answer: All ventilation forever.",
-      "c": "Not the best answer: Humidity sensors.",
-      "d": "Not the best answer: CO2 control."
+      "a": "Lockout ends free cooling and hands the load to mechanical cooling; it does not stop compressors from running.",
+      "c": "Coil freeze protection is the low-limit freezestat's job, not the economizer high-limit lockout.",
+      "d": "DCV still raises outdoor air on high CO2 during lockout; lockout only stops economizer free-cooling above the minimum."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,15 +964,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Perfect control"
+        "text": "A setpoint deadband that is set too wide"
       },
       {
         "id": "b",
-        "text": "Need for more setpoints randomly"
+        "text": "A derivative term set to zero on the loop"
       },
       {
         "id": "c",
-        "text": "Disabled trends"
+        "text": "Normal cycling of a well-tuned PI loop at low load"
       },
       {
         "id": "d",
@@ -980,11 +980,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Poor tuning, oversized valves, or sensor issues.",
+    "explanation": "Poor tuning, oversized valves, or sensor issues. High gain, an oversized valve working near closed, a noisy or poorly located sensor, or actuator hysteresis all make a loop oscillate.",
     "distractorExplanations": {
-      "a": "Not the best answer: Perfect control.",
-      "b": "Not the best answer: Need for more setpoints randomly.",
-      "c": "Not the best answer: Disabled trends."
+      "a": "A wider deadband reduces cycling; hunting is linked to deadbands that are too narrow or gains that are too high.",
+      "b": "Most HVAC loops run PI with derivative at zero by design; zero D alone does not cause valve hunting.",
+      "c": "A well-tuned loop settles at a steady position; continuous oscillation is a fault symptom, not normal behavior."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed."
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They let alarms clear on return to normal so operators do not need to record any response."
       },
       {
         "id": "d",
-        "text": "They replace BACnet device discovery."
+        "text": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "a": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones.",
+      "c": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep.",
+      "d": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They lower controller CPU load by limiting how often BACnet devices report changes of value."
       },
       {
         "id": "b",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They replace trend logs by storing each alarm timestamp as the historical performance record."
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "They replace BACnet device discovery."
+        "text": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered."
       }
     ],
     "correctOptionId": "c",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "b": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "a": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported.",
+      "b": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance.",
+      "d": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1096,15 +1096,15 @@
     "options": [
       {
         "id": "a",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They transfer fault response to the controls vendor, who acknowledges alarms under the warranty."
       },
       {
         "id": "b",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed."
       },
       {
         "id": "c",
-        "text": "They replace BACnet device discovery."
+        "text": "They let alarms clear on return to normal so operators do not need to record any response."
       },
       {
         "id": "d",
@@ -1114,9 +1114,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "b": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "a": "Acknowledgment belongs to the operating staff on duty; vendor warranty support does not replace on-site alarm response.",
+      "b": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones.",
+      "c": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1133,23 +1133,23 @@
       },
       {
         "id": "b",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system."
       },
       {
         "id": "c",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They lower controller CPU load by limiting how often BACnet devices report changes of value."
       },
       {
         "id": "d",
-        "text": "They replace BACnet device discovery."
+        "text": "They replace trend logs by storing each alarm timestamp as the historical performance record."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "b": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel.",
+      "c": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported.",
+      "d": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1162,7 +1162,7 @@
     "options": [
       {
         "id": "a",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered."
       },
       {
         "id": "b",
@@ -1170,19 +1170,19 @@
       },
       {
         "id": "c",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They transfer fault response to the controls vendor, who acknowledges alarms under the warranty."
       },
       {
         "id": "d",
-        "text": "They replace BACnet device discovery."
+        "text": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "a": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended.",
+      "c": "Acknowledgment belongs to the operating staff on duty; vendor warranty support does not replace on-site alarm response.",
+      "d": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They let alarms clear on return to normal so operators do not need to record any response."
       },
       {
         "id": "b",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system."
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "They replace BACnet device discovery."
+        "text": "They lower controller CPU load by limiting how often BACnet devices report changes of value."
       }
     ],
     "correctOptionId": "c",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "b": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "a": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep.",
+      "b": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel.",
+      "d": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They replace trend logs by storing each alarm timestamp as the historical performance record."
       },
       {
         "id": "b",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered."
       },
       {
         "id": "c",
-        "text": "They replace BACnet device discovery."
+        "text": "They transfer fault response to the controls vendor, who acknowledges alarms under the warranty."
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "b": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "a": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance.",
+      "b": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended.",
+      "c": "Acknowledgment belongs to the operating staff on duty; vendor warranty support does not replace on-site alarm response."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1265,23 +1265,23 @@
       },
       {
         "id": "b",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed."
       },
       {
         "id": "c",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They let alarms clear on return to normal so operators do not need to record any response."
       },
       {
         "id": "d",
-        "text": "They replace BACnet device discovery."
+        "text": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system."
       }
     ],
     "correctOptionId": "a",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "b": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones.",
+      "c": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep.",
+      "d": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1294,7 +1294,7 @@
     "options": [
       {
         "id": "a",
-        "text": "They eliminate the need for preventive maintenance."
+        "text": "They lower controller CPU load by limiting how often BACnet devices report changes of value."
       },
       {
         "id": "b",
@@ -1302,19 +1302,19 @@
       },
       {
         "id": "c",
-        "text": "They disable all nuisance alarms permanently without review."
+        "text": "They replace trend logs by storing each alarm timestamp as the historical performance record."
       },
       {
         "id": "d",
-        "text": "They replace BACnet device discovery."
+        "text": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: They help operators focus on critical faults and maintain an audit trail of response actions. This aligns with Alarms, Trends, Schedules, and Operator Workflows for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "c": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows.",
-      "d": "Incorrect. This does not reflect best practice for Alarms, Trends, Schedules, and Operator Workflows."
+      "a": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported.",
+      "c": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance.",
+      "d": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1327,11 +1327,11 @@
     "options": [
       {
         "id": "a",
-        "text": "All equal and constant paging"
+        "text": "Equal priority so every alarm pages on-call"
       },
       {
         "id": "b",
-        "text": "Disabled at night"
+        "text": "Disabled overnight, including life-safety interlocks"
       },
       {
         "id": "c",
@@ -1339,15 +1339,15 @@
       },
       {
         "id": "d",
-        "text": "Hidden from trends"
+        "text": "Configured by the vendor at default factory values"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Engineered so operators see actionable faults.",
+    "explanation": "Engineered so operators see actionable faults. Priorities, delays, and conditional suppression (e.g., no zone alarms when the AHU is off) prevent alarm floods that hide critical faults.",
     "distractorExplanations": {
-      "a": "Not the best answer: All equal and constant paging.",
-      "b": "Not the best answer: Disabled at night always.",
-      "d": "Not the best answer: Hidden from trends."
+      "a": "Equal priority floods on-call staff with nuisance alarms and buries critical faults; priority must be engineered.",
+      "b": "Unoccupied suppression may apply to comfort alarms, but critical equipment and life-safety alarms must stay active.",
+      "d": "Factory defaults do not reflect site criticality or the sequence of operations; priorities must be engineered per site."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1364,23 +1364,23 @@
       },
       {
         "id": "b",
-        "text": "Maximum forever on every point"
+        "text": "Alarm delay versus operator workload"
       },
       {
         "id": "c",
-        "text": "No history"
+        "text": "Controller scan time versus PID loop gain"
       },
       {
         "id": "d",
-        "text": "Only manual clipboard"
+        "text": "Sensor accuracy versus calibration interval"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Resolution versus storage/network load.",
+    "explanation": "Resolution versus storage/network load. Fast intervals catch hunting and short cycling but fill storage and add polling traffic; COV or 1–15 minute intervals suit most points.",
     "distractorExplanations": {
-      "b": "Not the best answer: Maximum forever on every point.",
-      "c": "Not the best answer: No history.",
-      "d": "Not the best answer: Only manual clipboard."
+      "b": "Alarm delays are tuned against nuisance trips; trend sample rate is a data-resolution versus storage decision.",
+      "c": "Scan time and loop gain affect control stability; trend sampling is a separate historian setting.",
+      "d": "Accuracy and calibration interval are maintenance trade-offs, not what trend sample rate selection balances."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,7 +1393,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only one forever-on command"
+        "text": "A single 24/7 occupied command per AHU"
       },
       {
         "id": "b",
@@ -1401,19 +1401,19 @@
       },
       {
         "id": "c",
-        "text": "No optimal start"
+        "text": "Fixed start times with optimal start disabled"
       },
       {
         "id": "d",
-        "text": "Random overrides without audit"
+        "text": "Overrides that run without an end time"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Occupied/unoccupied and holiday exceptions.",
+    "explanation": "Occupied/unoccupied and holiday exceptions. Weekly occupied/unoccupied periods plus calendar exceptions for holidays and special events stop equipment running on days the building is empty.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only one forever-on command.",
-      "c": "Not the best answer: No optimal start.",
-      "d": "Not the best answer: Random overrides without audit."
+      "a": "Running 24/7 wastes energy and drops the unoccupied setback that schedules exist to provide.",
+      "c": "Optimal start is a standard energy measure; fixed early starts waste energy on mild days and start late on extreme ones.",
+      "d": "Overrides without an expiry leave equipment running indefinitely; timed overrides are the accepted practice."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Permanent anonymous force"
+        "text": "Shared operator logins for quick access"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "No documentation"
+        "text": "Permanent priority-1 manual commands"
       },
       {
         "id": "d",
-        "text": "Shared generic logins"
+        "text": "Verbal approval with no written record"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Time limits and audit trails.",
+    "explanation": "Time limits and audit trails. Timed overrides release on their own, and the audit log records who commanded what, when, and why, so forgotten overrides do not waste energy or mask faults.",
     "distractorExplanations": {
-      "a": "Not the best answer: Permanent anonymous force.",
-      "c": "Not the best answer: No documentation.",
-      "d": "Not the best answer: Shared generic logins only."
+      "a": "Shared logins break accountability because overrides cannot be traced to a person; each operator needs an account.",
+      "c": "BACnet priority 1 is reserved for Manual Life Safety; operator overrides normally use priority 8 and should expire.",
+      "d": "Verbal approval leaves no audit trail; overrides should be logged with user, reason, and expiry time."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1459,15 +1459,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only logos"
+        "text": "Static equipment images without live values"
       },
       {
         "id": "b",
-        "text": "Only static PDFs"
+        "text": "Alarm counts without point values"
       },
       {
         "id": "c",
-        "text": "Only alarms without values"
+        "text": "Vendor logos and floor plans as the main view"
       },
       {
         "id": "d",
@@ -1475,11 +1475,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Current values, setpoints, and modes clearly.",
+    "explanation": "Current values, setpoints, and modes clearly. Good graphics put live values beside setpoints, show occupancy and override status, and flag points in alarm or manual so operators can act fast.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only logos.",
-      "b": "Not the best answer: Only static PDFs.",
-      "c": "Not the best answer: Only alarms without values."
+      "a": "Static images show layout but no live state; operators need current values to diagnose equipment.",
+      "b": "Alarm counts alone do not show how far a value is from setpoint or which mode the equipment is in.",
+      "c": "Branding and floor plans add context but are not the operational data that graphics should put first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations."
+        "text": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations"
       },
       {
         "id": "b",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision."
       },
       {
         "id": "c",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Graphic values refresh on screen within the polling interval configured in the front-end driver."
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
+    "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+      "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+      "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter."
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule."
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+      "c": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+      "d": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision."
       },
       {
         "id": "b",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Graphic values refresh on screen within the polling interval configured in the front-end driver."
       },
       {
         "id": "c",
-        "text": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations."
+        "text": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations"
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
+    "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "b": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "a": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+      "b": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+      "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1591,15 +1591,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter."
       },
       {
         "id": "b",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule."
       },
       {
         "id": "c",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
       },
       {
         "id": "d",
@@ -1609,9 +1609,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "b": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+      "b": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+      "c": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations."
+        "text": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations"
       },
       {
         "id": "b",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision."
       },
       {
         "id": "c",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Graphic values refresh on screen within the polling interval configured in the front-end driver."
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
+    "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+      "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+      "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter."
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule."
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+      "c": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+      "d": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision."
       },
       {
         "id": "b",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Graphic values refresh on screen within the polling interval configured in the front-end driver."
       },
       {
         "id": "c",
-        "text": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations."
+        "text": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations"
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
+    "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "b": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "a": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+      "b": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+      "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1723,15 +1723,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter."
       },
       {
         "id": "b",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule."
       },
       {
         "id": "c",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
       },
       {
         "id": "d",
@@ -1741,9 +1741,9 @@
     "correctOptionId": "d",
     "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "b": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+      "b": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+      "c": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations."
+        "text": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations"
       },
       {
         "id": "b",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision."
       },
       {
         "id": "c",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Graphic values refresh on screen within the polling interval configured in the front-end driver."
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
+    "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
     "distractorExplanations": {
-      "b": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+      "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+      "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the graphic color matches the CAD background."
+        "text": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter."
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "Network IP addresses are hidden from integrators."
+        "text": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule."
       },
       {
         "id": "d",
-        "text": "Trend logs are disabled to save storage."
+        "text": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
       }
     ],
     "correctOptionId": "b",
     "explanation": "Correct: Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations. This aligns with Integration, Commissioning, and Troubleshooting for this readiness check.",
     "distractorExplanations": {
-      "a": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "c": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting.",
-      "d": "Incorrect. This does not reflect best practice for Integration, Commissioning, and Troubleshooting."
+      "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+      "c": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+      "d": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only graphics colors"
+        "text": "Graphic links and colors before wiring checks"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "Only IP addresses"
+        "text": "Sequence logic before any field wiring tests"
       },
       {
         "id": "d",
-        "text": "Only passwords"
+        "text": "Network IP and BACnet device instance assignments"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Sensor/actuator wiring and direction before sequences.",
+    "explanation": "Sensor/actuator wiring and direction before sequences. Each input is compared to a reference reading and each output is stroked to confirm direction, range, and fail position before functional testing.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only graphics colors.",
-      "c": "Not the best answer: Only IP addresses.",
-      "d": "Not the best answer: Only passwords."
+      "a": "Graphics review is a later front-end task; point-to-point checkout proves field wiring and device response first.",
+      "c": "Reverses the order: wiring and device direction are proven before functional sequence testing begins.",
+      "d": "Addressing is a network checkout step; point-to-point verifies each sensor and actuator end-to-end."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1855,15 +1855,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only that the unit powers on"
+        "text": "The unit starts and runs on its local panel"
       },
       {
         "id": "b",
-        "text": "Only BACnet vendor name"
+        "text": "Each device's vendor ID and model are reported"
       },
       {
         "id": "c",
-        "text": "Only trend file size"
+        "text": "Trend files stay within the storage limit"
       },
       {
         "id": "d",
@@ -1871,11 +1871,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Control logic matches the written SOO.",
+    "explanation": "Control logic matches the written SOO. Functional tests force each mode (occupied, unoccupied, economizer, failure/safeties) and compare the system's response with the written sequence of operations.",
     "distractorExplanations": {
-      "a": "Not the best answer: Only that the unit powers on.",
-      "b": "Not the best answer: Only BACnet vendor name.",
-      "c": "Not the best answer: Only trend file size."
+      "a": "Start-up at the local panel is a pre-functional check; SOO testing proves the automatic control logic.",
+      "b": "Vendor ID and model come from device discovery, not from testing the control sequence.",
+      "c": "Trend storage is a historian setting; it does not show that the control logic follows the written sequence."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Guessed kWh"
+        "text": "Estimated kWh from nameplate ratings"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Hardcoded fake pulses"
+        "text": "Unscaled raw register values as-is"
       },
       {
         "id": "d",
-        "text": "No verification"
+        "text": "Pulse inputs left uncalibrated against the meter"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Protocol gateways/mapping with scaled units.",
+    "explanation": "Protocol gateways/mapping with scaled units. Meters on Modbus, M-Bus, or pulse outputs are mapped into BACnet objects with correct multipliers, CT ratios, and units, then verified against the meter display.",
     "distractorExplanations": {
-      "a": "Not the best answer: Guessed kWh.",
-      "c": "Not the best answer: Hardcoded fake pulses.",
-      "d": "Not the best answer: No verification."
+      "a": "Nameplate estimates are not metered data; meter integration reads actual registers through a gateway or driver.",
+      "c": "Raw registers often need multipliers, CT ratios, or unit conversion; unscaled values give wrong readings.",
+      "d": "Pulse inputs need the correct pulse weight checked against the meter display, or totals drift from billing data."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1917,7 +1917,7 @@
     "id": "bms-bas-readiness-check-integration-commissioning-014",
     "examSlug": "bms-bas-readiness-check",
     "topicId": "integration-commissioning",
-    "prompt": "On the BMS / BAS Readiness, when a VAV box ignores commands, check:? Select the best answer.",
+    "prompt": "When a VAV box ignores commands, check:",
     "options": [
       {
         "id": "a",
@@ -1925,23 +1925,23 @@
       },
       {
         "id": "b",
-        "text": "Only the chiller refrigerant"
+        "text": "AHU discharge air setpoint and economizer mode"
       },
       {
         "id": "c",
-        "text": "Only the boiler stack"
+        "text": "Zone thermostat calibration and heating setpoint"
       },
       {
         "id": "d",
-        "text": "Only lighting scenes"
+        "text": "Duct static pressure reset logic at the AHU"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Addressing, binding, power, and actuator status.",
+    "explanation": "Addressing, binding, power, and actuator status. A VAV box that ignores commands usually has a duplicate MAC or device instance, a lost binding, no 24 VAC, or a failed or slipping damper actuator.",
     "distractorExplanations": {
-      "b": "Not the best answer: Only the chiller refrigerant.",
-      "c": "Not the best answer: Only the boiler stack.",
-      "d": "Not the best answer: Only lighting scenes."
+      "b": "Upstream AHU settings change supply air conditions but do not explain a box that ignores its own commands.",
+      "c": "A miscalibrated sensor shifts control, but a box that ignores commands points to communication, power, or actuator faults.",
+      "d": "Static pressure reset affects available airflow, not whether a box controller accepts and acts on its commands."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1958,23 +1958,23 @@
       },
       {
         "id": "b",
-        "text": "Forgotten after demo day"
+        "text": "Closed once the contractor says it is fixed"
       },
       {
         "id": "c",
-        "text": "Hidden from owners"
+        "text": "Reported verbally at the final walkthrough"
       },
       {
         "id": "d",
-        "text": "Reset by reboot"
+        "text": "Cleared by a controller reboot and retest"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Logged, assigned, and closed with evidence.",
+    "explanation": "Logged, assigned, and closed with evidence. The commissioning issues log records each deficiency, the responsible party, and the retest or trend evidence used to close it.",
     "distractorExplanations": {
-      "b": "Not the best answer: Forgotten after demo day.",
-      "c": "Not the best answer: Hidden from owners.",
-      "d": "Not the best answer: Reset by reboot only."
+      "b": "Closing on a verbal claim skips verification; issues close only after a retest documents the fix.",
+      "c": "Verbal reports at walkthrough leave no tracking record; issues belong in a written Cx issues log.",
+      "d": "A reboot can mask the symptom without fixing the cause; the issue still needs logging and root-cause closure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

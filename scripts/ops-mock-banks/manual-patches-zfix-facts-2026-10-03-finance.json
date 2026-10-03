@@ -1,0 +1,476 @@
+{
+ "series-99-readiness-check": {
+  "series-99-readiness-check-ops-011": {
+   "prompt": "Options exercise and assignment processing in operations occurs:",
+   "options": {
+    "a": "Only on the third business day after expiration through the OCC",
+    "b": "Before expiration for European options whenever the holder chooses",
+    "c": "Any business day until expiration when American-style options are exercised",
+    "d": "On expiration for every out-of-the-money option held in the customer account"
+   },
+   "explanation": "American-style options can be exercised on any business day up to expiration, so operations must process exercise notices and OCC's random assignments daily and settle the resulting stock trade T+1. European-style options are exercised only at expiration.",
+   "distractorExplanations": {
+    "a": "OCC processes exercises on the exercise date with T+1 settlement; there is no three-day post-expiration processing window.",
+    "b": "European-style options can be exercised only at expiration, so there is no early exercise or assignment to process.",
+    "d": "OCC exercise-by-exception covers in-the-money contracts ($0.01 or more ITM); out-of-the-money options normally expire worthless."
+   }
+  },
+  "series-99-readiness-check-ops-010": {
+   "options": {
+    "a": "Release funds once the check is endorsed and imaged on deposit",
+    "b": "Hold funds under firm policy until the check has cleared",
+    "c": "Hold funds for 30 calendar days on every check by SEC rule",
+    "d": "Credit the account and permit withdrawal by wire the same day"
+   },
+   "explanation": "Regulation CC governs funds availability at banks, not broker-dealers. A brokerage firm sets its own written hold policy for deposited checks and keeps the funds unavailable until the check clears collection, limiting returned-check and kiting losses.",
+   "distractorExplanations": {
+    "a": "Endorsement and imaging do not mean the check has cleared; funds stay on hold until collection to manage returned-check risk.",
+    "c": "No SEC rule mandates a flat 30-day hold; a broker-dealer's check holds follow its own written funds-availability policy.",
+    "d": "Same-day withdrawal of uncollected check funds is a classic check-kiting fraud path; holds apply until the check clears."
+   }
+  },
+  "series-99-readiness-check-regs-002": {
+   "explanation": "Regulation T, issued by the Federal Reserve Board, governs credit that broker-dealers extend for securities purchases, chiefly the 50% initial margin requirement. Maintenance margin is set by FINRA Rule 4210 and stricter firm house rules, not by Reg T."
+  },
+  "series-99-readiness-check-regs-013": {
+   "options": {
+    "a": "Cash bonuses the firm pays its own associated persons each year",
+    "b": "Business entertainment such as meals hosted with the client present",
+    "c": "Gifts to a customer's family members for personal life events such as weddings",
+    "d": "Gifts given to another firm's employees beyond an annual per-person cap"
+   },
+   "explanation": "FINRA Rule 3220 bars a member or associated person from giving gifts above the rule's annual per-person limit to an employee or agent of another firm when the gift relates to the recipient employer's business. It targets improper influence over people who work for others.",
+   "distractorExplanations": {
+    "a": "Bonuses a firm pays its own associated persons are compensation, not gifts; Rule 3220 covers gifts to employees of another firm.",
+    "b": "Business entertainment where the host attends is not subject to the Rule 3220 gift limit; it is governed by firm entertainment policy.",
+    "c": "Personal gifts for life events such as weddings are excluded from the 3220 limit when not given in relation to the recipient employer's business."
+   }
+  },
+  "series-99-readiness-check-regs-028": {
+   "options": {
+    "a": "Year-end awards the firm gives its own employees for strong performance",
+    "b": "Gifts from customers to representatives, capped at $25 per occasion",
+    "c": "Salary and commissions the broker-dealer pays registered employees",
+    "d": "Gifts to other firms' employees relating to their employer's business"
+   },
+   "explanation": "Rule 3220 limits gifts that a member or its associated persons give to employees or agents of another person when the gift relates to that employer's business; gifts above the annual per-person limit are prohibited. Ordinary business entertainment and the firm's own pay fall outside the rule.",
+   "distractorExplanations": {
+    "a": "Awards a firm gives its own employees are employment compensation; Rule 3220 targets gifts to people employed by others.",
+    "b": "There is no $25 per-occasion cap; the Rule 3220 limit is a per-person annual amount on gifts relating to the recipient employer's business.",
+    "c": "Regular compensation paid by the employing firm is ordinary employment pay and falls outside the Rule 3220 gift limit."
+   }
+  },
+  "series-99-readiness-check-regs-016": {
+   "options": {
+    "a": "Paper or electronic form, kept for three years when no other period is specified",
+    "b": "Electronic form only, with paper records converted within one year",
+    "c": "Any format the firm chooses, provided it keeps records for two years",
+    "d": "A 17a-4 compliant format kept for each required retention period"
+   },
+   "explanation": "FINRA Rule 4511(c) requires books and records to be preserved in a format and media that comply with SEA Rule 17a-4, and Rule 4511(b) sets a six-year retention default where FINRA rules and Rule 17a-4 specify no other period.",
+   "distractorExplanations": {
+    "a": "Rule 4511(b) sets a six-year default for records with no specified period under FINRA rules or 17a-4, not three years.",
+    "b": "Rule 4511 and 17a-4 permit paper or compliant electronic records; there is no mandatory one-year paper conversion.",
+    "c": "Records must be kept in a 17a-4-compliant format under 4511(c), and the default retention under 4511(b) is six years, not two."
+   }
+  },
+  "series-99-readiness-check-books-017": {
+   "prompt": "Customer account statements, which FINRA Rule 2231 requires at least quarterly, must reflect:",
+   "options": {
+    "a": "Positions, balances, transactions, and fees for the statement period",
+    "b": "Positions and balances, with transactions reported on the confirms instead",
+    "c": "Transactions and fees, with positions shown on the annual Form 1099 instead",
+    "d": "Positions at month-end, with fees disclosed only on the annual fee schedule"
+   },
+   "explanation": "FINRA Rule 2231 requires account statements at least once each calendar quarter showing securities positions, money balances, and account activity since the last statement, including fees charged; confirms, 1099s, and fee schedules do not replace them.",
+   "distractorExplanations": {
+    "b": "Confirmations are trade-by-trade notices under Rule 10b-10; Rule 2231 statements must still list account activity.",
+    "c": "Form 1099 reports tax information and does not substitute for positions on a periodic account statement.",
+    "d": "Fees charged during the period must appear on the statement; a separate fee schedule does not replace that disclosure."
+   }
+  },
+  "series-99-readiness-check-regs-007": {
+   "options": {
+    "a": "$2,000 in a margin account, the general minimum to buy on margin",
+    "b": "$25,000 in a margin account for a pattern day trader",
+    "c": "$50,000 in margin account once four day trades occur in five days",
+    "d": "$100,000 in margin account for any customer making any day trade"
+   },
+   "explanation": "Under the current FINRA Rule 4210 pattern day trader provisions, a customer who makes four or more day trades within five business days is a pattern day trader and must keep at least $25,000 of equity in the margin account before day trading.",
+   "distractorExplanations": {
+    "a": "$2,000 is the FINRA Rule 4210 minimum equity to open or maintain a margin account, not the higher pattern day trader threshold.",
+    "c": "The PDT minimum is $25,000, not $50,000, although four or more day trades in five business days does trigger PDT status.",
+    "d": "PDT status needs four or more day trades in five business days (over 6% of trades), and the minimum equity is $25,000, not $100,000."
+   }
+  },
+  "series-99-readiness-check-regs-022": {
+   "explanation": "Under the current FINRA Rule 4210 pattern day trader provisions, the customer must hold at least $25,000 of equity in the margin account before day trading; below that level, day trading is restricted until the equity is restored."
+  },
+  "series-99-readiness-check-regs-011": {
+   "options": {
+    "a": "Screen customers against OFAC lists at account opening, then annually",
+    "b": "Screen customers and transactions against OFAC sanctions lists",
+    "c": "File a Suspicious Activity Report with FinCEN within 30 days of a match",
+    "d": "Obtain OFAC approval before opening any account for a non-U.S. citizen"
+   },
+   "explanation": "OFAC regulations bar U.S. persons from dealing with Specially Designated Nationals, blocked persons, and sanctioned countries, so firms screen both customers and transactions on an ongoing basis, block or reject matches, and report them to OFAC.",
+   "distractorExplanations": {
+    "a": "OFAC screening is ongoing: new transactions and list updates must be screened, not just an annual re-check after onboarding.",
+    "c": "OFAC matches are blocked or rejected and reported to OFAC within 10 business days; SARs to FinCEN are a separate BSA process.",
+    "d": "OFAC does not pre-approve foreign customers; firms screen names against the SDN and sanctions lists and block only true matches."
+   }
+  },
+  "series-99-readiness-check-regs-026": {
+   "options": {
+    "a": "Screen customers against SDN lists at onboarding and on annual reviews",
+    "b": "Screen customers and transactions against SDN and blocked lists",
+    "c": "Report blocked transactions to FinCEN on a SAR within 30 calendar days",
+    "d": "Screen wire beneficiaries against SDN lists but not the account holders"
+   },
+   "explanation": "OFAC rules bar dealings with Specially Designated Nationals and other blocked persons, so broker-dealers screen customers and transactions continuously, block or reject matches, and report blocked property to OFAC within 10 business days.",
+   "distractorExplanations": {
+    "a": "Screening must cover transactions and list updates on an ongoing basis, not just onboarding plus an annual refresh.",
+    "c": "Blocked or rejected transactions are reported to OFAC within 10 business days; SARs to FinCEN are a separate BSA filing.",
+    "d": "OFAC compliance covers both customers and transactions; skipping account holders misses sanctioned account owners."
+   }
+  },
+  "series-99-readiness-check-regs-015": {
+   "options": {
+    "a": "Trade on information only after it appears in a firm research note",
+    "b": "Possess material nonpublic information gained through their work",
+    "c": "Trade in their own accounts at an outside broker without pre-clearance",
+    "d": "Execute customer orders without exercising any investment discretion"
+   },
+   "explanation": "Insider trading rules apply to anyone who trades or tips while possessing material nonpublic information. Operations staff often see MNPI on pending mergers, tender offers, or corporate actions while processing, so their personal trading is restricted.",
+   "distractorExplanations": {
+    "a": "Trading after publication in research uses public information; the prohibition covers trading on MNPI before public dissemination.",
+    "c": "Trading away without pre-clearance breaks firm policy and Rule 3210 consent rules, but insider-trading law turns on possessing MNPI.",
+    "d": "Executing nondiscretionary orders is routine processing and not itself insider trading; liability turns on trading while holding MNPI."
+   }
+  },
+  "series-99-readiness-check-risk-026": {
+   "options": {
+    "a": "Decide which individual complaints are reportable under Rule 4530",
+    "b": "Spot systemic process failures and prioritize control fixes",
+    "c": "Calculate restitution owed to each complainant on a case-by-case basis",
+    "d": "Rank staff for incentive pay based on complaints logged per employee"
+   },
+   "explanation": "Analyzing complaint trends across accounts and time lets operations leaders spot recurring root causes such as system defects, training gaps, or broken procedures, and direct control improvements where they prevent the most future harm.",
+   "distractorExplanations": {
+    "a": "4530 reportability is decided complaint by complaint; trending looks for repeated root causes across many complaints.",
+    "c": "Restitution is an individual remedy; trend analysis is for spotting systemic control weaknesses.",
+    "d": "Paying by complaint counts discourages logging complaints; trending is for finding process failures."
+   }
+  }
+ },
+ "series-79-readiness-check": {
+  "series-79-readiness-check-regulations-020": {
+   "options": {
+    "a": "Spinning IPO shares to executives of investment banking clients",
+    "b": "Underwriting compensation above fair limits in public offerings",
+    "c": "Research analyst participation in IPO roadshows",
+    "d": "Selling new issues to accounts of restricted persons"
+   },
+   "explanation": "FINRA Rule 5130 bars members from selling new equity issues (IPOs) to accounts in which restricted persons, such as broker-dealer personnel and portfolio managers, hold a beneficial interest. Spinning to executives of investment banking clients is covered separately by Rule 5131.",
+   "distractorExplanations": {
+    "a": "Allocating IPO shares to executives of IB clients is spinning, prohibited by FINRA Rule 5131.",
+    "b": "Underwriting compensation fairness is reviewed under FINRA Rule 5110, not Rule 5130.",
+    "c": "Analyst roadshow participation is restricted by FINRA Rule 2241, not Rule 5130."
+   }
+  },
+  "series-79-readiness-check-products-005": {
+   "prompt": "Rule 144A provides a resale exemption for restricted securities sold to:",
+   "explanation": "Rule 144A is a resale exemption: the issuer sells to initial purchasers in a private placement under Section 4(a)(2), and those purchasers resell the restricted securities to qualified institutional buyers (generally $100 million or more in securities owned) without registration."
+  },
+  "series-79-readiness-check-regulations-021": {
+   "prompt": "The Rule 144 holding period for restricted securities of a reporting issuer, for affiliates and non-affiliates alike, is generally:",
+   "explanation": "For restricted securities, Rule 144 requires six months if the issuer has been an Exchange Act reporting company for at least 90 days and one year otherwise; the period is the same for affiliates and non-affiliates. Affiliates also face volume, manner-of-sale, and Form 144 conditions."
+  }
+ },
+ "enrolled-agent-readiness-check": {
+  "enrolled-agent-readiness-check-businesses-026": {
+   "options": {
+    "a": "Distributions above basis are subject to SE tax for active owners",
+    "b": "IRS can recharacterize distributions as wages if salary is set too low",
+    "c": "High wages reduce the corporate AAA and trigger built-in gains tax",
+    "d": "Wages must equal at least 60% of S corporation net income"
+   },
+   "explanation": "When an S corporation pays a shareholder-employee unreasonably low wages and takes the rest as distributions, the IRS can recharacterize those distributions as wages and assess FICA and employment taxes; reasonable compensation is judged on the services performed.",
+   "distractorExplanations": {
+    "a": "Distributions above basis are capital gain, not SE income; the concern is distributions recharacterized as wages.",
+    "c": "Wages are deductible and do not trigger §1374 built-in gains tax; AAA is reduced by distributions and losses.",
+    "d": "No fixed 60% rule exists; reasonable compensation is a facts-and-circumstances test of services rendered."
+   }
+  },
+  "enrolled-agent-readiness-check-businesses-019": {
+   "prompt": "For payments made in tax year 2025, Form 1099-NEC is generally used to report:",
+   "explanation": "For 2025 payments, Form 1099-NEC reports nonemployee compensation of $600 or more paid in a trade or business, such as fees to independent contractors. Legislation enacted in 2025 raises this threshold for payments made after 2025, so check the form year's instructions."
+  }
+ },
+ "mortgage-loan-originator-readiness-check": {
+  "mortgage-loan-originator-readiness-check-origination-025": {
+   "explanation": "Under the Homeowners Protection Act, PMI terminates automatically when the balance is scheduled to reach 78% of the home's original value and the borrower is current. The borrower may request cancellation earlier at 80% of original value with a good payment history and no subordinate liens."
+  },
+  "mortgage-loan-originator-readiness-check-ethics-029": {
+   "options": {
+    "a": "Which closing cost increases over the Loan Estimate are allowed or must be cured",
+    "b": "Which fees count toward the 3% points-and-fees cap that applies to Qualified Mortgages",
+    "c": "Which APR changes require a corrected CD and a new three-business-day waiting period",
+    "d": "Which settlement providers the borrower may shop for after receiving the LE"
+   },
+   "explanation": "TRID tolerances limit how much charges may rise from the Loan Estimate. Zero tolerance covers fees paid to the creditor, mortgage broker, or an affiliate of either, transfer taxes, and services the borrower cannot shop for; 10% aggregate covers recording fees and shoppable services chosen from the creditor's list. Excess must be refunded within 60 days of consummation.",
+   "distractorExplanations": {
+    "b": "The points-and-fees cap is a QM/ATR test; tolerance buckets limit how much LE fees may rise at closing.",
+    "c": "APR accuracy redisclosure triggers a new three-day wait; tolerance buckets govern increases in specific closing fees.",
+    "d": "Shoppable status influences the bucket, but the buckets themselves classify allowable fee increases and cures."
+   }
+  },
+  "mortgage-loan-originator-readiness-check-fed-law-017": {
+   "options": {
+    "a": "Three business days from the latest of closing, notice, or disclosures",
+    "b": "Three calendar days to cancel after funding, including Sundays and holidays",
+    "c": "Three business days to cancel a purchase-money loan on a primary residence",
+    "d": "Seven business days to cancel after the Loan Estimate is delivered"
+   },
+   "explanation": "TILA rescission applies to certain refinances and home-equity loans secured by the borrower's principal dwelling. The borrower may cancel until midnight of the third business day after the latest of consummation, delivery of the rescission notice, or delivery of the material disclosures.",
+   "distractorExplanations": {
+    "b": "Rescission runs three business days (Saturdays count, Sundays and federal holidays do not) from consummation, notice, or disclosures, whichever is last.",
+    "c": "Purchase-money (residential mortgage transaction) loans are exempt from rescission; it applies to certain refinances and home equity loans.",
+    "d": "Seven business days is the LE waiting period before consummation, not the post-closing rescission window."
+   }
+  }
+ },
+ "cfp-certification-readiness-check": {
+  "cfp-certification-readiness-check-planning-001": {
+   "options": {
+    "a": "Understanding the client's personal and financial circumstances",
+    "b": "Identifying and selecting the client's goals before any data is collected",
+    "c": "Analyzing the client's current course of action and potential alternatives first",
+    "d": "Developing written recommendations that address the client's stated goals"
+   },
+   "explanation": "CFP Board's seven-step financial planning process (2019 Standards of Conduct) begins with understanding the client's personal and financial circumstances, then identifying goals, analyzing alternatives, developing and presenting recommendations, implementing, and monitoring.",
+   "distractorExplanations": {
+    "b": "Goal selection is Step 2 of CFP Board's process; it follows understanding the client's circumstances rather than preceding it.",
+    "c": "Analyzing the current course of action and alternatives is Step 3; it needs the information gathered in Step 1 first.",
+    "d": "Developing recommendations is Step 4 of the seven-step process and cannot start before circumstances and goals are known."
+   }
+  },
+  "cfp-certification-readiness-check-retirement-risk-030": {
+   "prompt": "An adviser who serves as a fiduciary to an employer retirement plan buys fiduciary liability insurance mainly to cover:",
+   "options": {
+    "a": "Plan investment losses caused purely by broad market declines",
+    "b": "Claims that the adviser breached its ERISA duties to the plan",
+    "c": "Theft of plan assets, the risk the required ERISA fidelity bond covers",
+    "d": "Negligent planning advice given to individual retail clients"
+   },
+   "explanation": "Fiduciary liability insurance responds to claims that a plan fiduciary breached ERISA duties, such as imprudent fund selection or excessive fees, paying defense costs and damages. Theft is covered by the ERISA fidelity bond, and negligent advice to retail clients falls under professional E&O.",
+   "distractorExplanations": {
+    "a": "Neither fiduciary nor E&O policies insure investment performance; market losses on prudent decisions are not a breach claim.",
+    "c": "Theft or fraud by people handling plan assets is covered by the ERISA fidelity bond, not by fiduciary liability insurance.",
+    "d": "Negligent advice to individual retail clients is a professional E&O exposure; fiduciary liability cover targets plan fiduciary breaches."
+   }
+  },
+  "cfp-certification-readiness-check-investments-013": {
+   "options": {
+    "a": "Taxed as ordinary income at the taxpayer's top marginal bracket rate",
+    "b": "Taxed at a flat 28% rate under the long-term capital gains rules",
+    "c": "Excluded from income up to $250,000 for single filers",
+    "d": "Taxed at preferential long-term capital gains rates"
+   },
+   "explanation": "Gains on capital assets held more than one year are long-term and taxed at preferential rates (0%, 15%, or 20%, plus any 3.8% NIIT) below ordinary rates; collectibles and unrecaptured Section 1250 gain have separate maximum rates.",
+   "distractorExplanations": {
+    "a": "Ordinary-income rates apply to short-term gains on assets held one year or less, not to long-term gains.",
+    "b": "28% is the maximum rate for collectibles gain; most long-term gains are taxed at 0%, 15%, or 20%.",
+    "c": "The $250,000 exclusion is Section 121 for a principal residence sale, not a general long-term capital gain rule."
+   }
+  },
+  "cfp-certification-readiness-check-planning-024": {
+   "options": {
+    "a": "Saving the surplus left at month-end after the bills have been paid",
+    "b": "Paying off all consumer debt in full before beginning any regular savings plan",
+    "c": "Directing raises and bonuses to discretionary spending before saving",
+    "d": "Automating savings toward goals before discretionary spending"
+   },
+   "explanation": "Paying yourself first means directing savings to goals, often by automatic transfers on payday, before discretionary spending happens, rather than saving whatever is left at month-end. It builds consistency for emergency, retirement, and other goals.",
+   "distractorExplanations": {
+    "a": "Saving the month-end leftover is the reverse of pay-yourself-first, which moves savings out before spending.",
+    "b": "Debt-first sequencing is a separate strategy; pay-yourself-first sets aside savings at the start of each pay period.",
+    "c": "Spending raises first is lifestyle creep; pay-yourself-first routes new income to savings before spending."
+   }
+  },
+  "cfp-certification-readiness-check-retirement-risk-022": {
+   "options": {
+    "a": "Deferring the whole account so RMDs wait until the annuity payments begin",
+    "b": "Deferring a portion of the account so RMDs on that part wait until payments begin",
+    "c": "Deferring a portion of the account so RMDs on that amount wait until age 75",
+    "d": "Deferring a portion of a Roth IRA so lifetime RMDs on that amount wait until payments begin"
+   },
+   "explanation": "A QLAC lets the owner of a traditional IRA or eligible employer plan use part of the account, up to the IRS premium limit, to buy a deferred annuity; that amount is excluded from RMDs until payments begin, which must be no later than age 85.",
+   "distractorExplanations": {
+    "a": "QLAC premiums are capped at an indexed dollar limit, so only that portion is deferred, not the whole account.",
+    "c": "QLAC deferral lasts until payments start (no later than 85); 75 is the SECURE 2.0 RMD age for later cohorts.",
+    "d": "Roth IRAs have no lifetime RMDs for owners, so there is nothing to defer; QLACs serve pre-tax accounts."
+   }
+  },
+  "cfp-certification-readiness-check-tax-estate-027": {
+   "options": {
+    "a": "Keep death benefit outside the estate even if the insured is a trustee",
+    "b": "Use annual exclusion gifts for premiums without sending Crummey notices",
+    "c": "Keep death benefit outside the insured's estate when properly structured",
+    "d": "Make the death benefit exempt from income tax, which it otherwise would not be"
+   },
+   "explanation": "An ILIT owns the policy so the insured holds no incidents of ownership, keeping the death benefit out of the insured's gross estate; existing policies transferred within three years of death are pulled back, and Crummey notices support annual-exclusion premium gifts.",
+   "distractorExplanations": {
+    "a": "If the insured serves as trustee with incidents of ownership, the proceeds are included under §2042.",
+    "b": "Crummey withdrawal notices create the present interest needed for premium gifts to qualify for the annual exclusion.",
+    "d": "Life insurance proceeds are generally income-tax-free under §101 with or without an ILIT; the ILIT targets estate tax."
+   }
+  },
+  "cfp-certification-readiness-check-retirement-risk-023": {
+   "options": {
+    "a": "Medical bills from an illness or injury that prevents working",
+    "b": "Earned income only for injuries that occur on the job at work",
+    "c": "Part of earned income if illness or injury prevents working",
+    "d": "The insured's full gross income for the length of the disability"
+   },
+   "explanation": "Individual disability income insurance replaces a portion of earned income, not all of it, when illness or injury prevents the insured from working; benefits depend on the policy's definition of disability, elimination period, and benefit period.",
+   "distractorExplanations": {
+    "a": "Medical bills are a health insurance need; DI pays a benefit that replaces lost earnings.",
+    "b": "On-the-job injuries are covered by workers' compensation; individual DI covers disabilities on or off the job.",
+    "d": "Insurers limit benefits to roughly 60–70% of gross income; full replacement would discourage a return to work."
+   }
+  },
+  "cfp-certification-readiness-check-planning-023": {
+   "options": {
+    "a": "Paying back Medicaid from remaining funds at the beneficiary's death",
+    "b": "Giving the beneficiary cash each month for food and shelter costs",
+    "c": "Supplementing care without disqualifying means-tested benefits",
+    "d": "Holding the beneficiary's own assets, such as a personal injury award"
+   },
+   "explanation": "A third-party special needs trust, funded with family assets rather than the beneficiary's own, pays for supplemental needs without counting as the beneficiary's resource for SSI or Medicaid, and it carries no Medicaid payback at the beneficiary's death.",
+   "distractorExplanations": {
+    "a": "Medicaid payback is required for first-party (self-settled) SNTs; third-party SNTs funded by family have no payback.",
+    "b": "Cash or in-kind support for food and shelter can reduce SSI benefits; SNTs pay supplemental, not basic, needs.",
+    "d": "A beneficiary's own assets go into a first-party SNT; a third-party SNT holds assets from parents or others."
+   }
+  },
+  "cfp-certification-readiness-check-planning-013": {
+   "options": {
+    "a": "Rank goals by importance, urgency, and feasibility",
+    "b": "Fund each goal in the order the client first listed it",
+    "c": "Fund the largest goal first, then allocate what remains",
+    "d": "Fund retirement fully before considering any other goal"
+   },
+   "explanation": "Clients rarely have the resources to fund every goal at once, so the planner ranks goals by importance to the client, urgency or time horizon, and feasibility, then allocates cash flow and assets in that order and revisits the ranking over time.",
+   "distractorExplanations": {
+    "b": "The order goals are mentioned is not their priority; the planner helps rank them by importance and feasibility.",
+    "c": "Dollar size is not priority; a smaller urgent goal such as an emergency fund may outrank a larger long-term goal.",
+    "d": "Retirement is often high priority, but a blanket rule ignores the client's values, urgency, and feasibility."
+   }
+  },
+  "cfp-certification-readiness-check-retirement-risk-015": {
+   "options": {
+    "a": "Bodily injury to clients who are hurt at the planner's office",
+    "b": "Client losses caused by employee theft or fraud at the firm",
+    "c": "Investment losses from market declines on suitable portfolios",
+    "d": "Claims of negligent advice or errors in professional work"
+   },
+   "explanation": "Errors and omissions insurance is professional liability cover: it pays defense costs and damages when a client alleges the planner was negligent or made a mistake in professional services. It does not cover market losses, bodily injury, or employee theft.",
+   "distractorExplanations": {
+    "a": "Premises bodily injury falls under commercial general liability, not professional E&O coverage.",
+    "b": "Employee theft is covered by a fidelity bond or crime policy; E&O covers negligent professional services.",
+    "c": "Market losses on suitable advice are not negligence; E&O responds to claims of professional error."
+   }
+  },
+  "cfp-certification-readiness-check-investments-020": {
+   "options": {
+    "a": "Sensitivity of returns to overall market movements",
+    "b": "Average return earned over the measurement period",
+    "c": "Downside deviation of returns below a target return",
+    "d": "Historical dispersion of returns around the mean"
+   },
+   "explanation": "Standard deviation measures total volatility: how widely periodic returns have been dispersed around their average. A higher figure means a wider range of outcomes; beta measures market sensitivity, and downside deviation looks only at returns below a target.",
+   "distractorExplanations": {
+    "a": "Sensitivity to market movements is beta; standard deviation measures total dispersion around the mean.",
+    "b": "The average return is the mean itself; standard deviation measures how widely returns scatter around it.",
+    "c": "Deviation below a target is semi-deviation, used in the Sortino ratio; standard deviation counts both sides."
+   }
+  },
+  "cfp-certification-readiness-check-investments-022": {
+   "options": {
+    "a": "Changes in the issuer's credit spread and default risk",
+    "b": "Parallel shifts in interest rates for bond holdings",
+    "c": "Changes in the slope of the yield curve for bond holdings",
+    "d": "Movements in equity prices for convertible bond holdings"
+   },
+   "explanation": "Modified duration estimates the percentage price change of a bond or bond portfolio for a 1% parallel shift in yields; changes in curve shape need key rate duration, and credit spread risk is measured separately with spread duration.",
+   "distractorExplanations": {
+    "a": "Spread duration addresses credit spreads; modified duration measures sensitivity to changes in yield.",
+    "c": "Non-parallel curve twists are measured by key rate durations; modified duration assumes a parallel shift.",
+    "d": "Equity sensitivity of convertibles is measured by delta; modified duration measures sensitivity to yield changes."
+   }
+  },
+  "cfp-certification-readiness-check-retirement-risk-012": {
+   "options": {
+    "a": "A qualifying high-deductible health plan (HDHP)",
+    "b": "Medicare Part A or Part B to contribute each year",
+    "c": "A low-deductible PPO with an employer FSA attached",
+    "d": "An employer group plan with any annual deductible"
+   },
+   "explanation": "To contribute to an HSA, a person must be covered by a qualifying high-deductible health plan, have no disqualifying other coverage, not be enrolled in Medicare, and not be claimable as a dependent; the HDHP must meet IRS minimum deductible and out-of-pocket limits.",
+   "distractorExplanations": {
+    "b": "Medicare enrollment ends HSA contribution eligibility; existing HSA balances can still be spent tax-free.",
+    "c": "A general-purpose FSA or a low-deductible plan is disqualifying coverage for HSA contributions.",
+    "d": "The plan must meet the IRS minimum deductible and out-of-pocket limits for an HDHP; a token deductible is not enough."
+   }
+  }
+ },
+ "series-65-readiness-check": {
+  "series-65-readiness-check-economics-029": {
+   "prompt": "Reserve requirements have been 0% since March 2020. If the Fed raised them again, member banks would have to:",
+   "explanation": "The Fed cut reserve requirement ratios to 0% in March 2020, but in principle raising them forces banks to hold a larger share of deposits as reserves, shrinking excess reserves and the money multiplier and reducing lending capacity."
+  },
+  "series-65-readiness-check-ethics-016": {
+   "options": {
+    "a": "Within 48 hours after the contract is signed, and then every two years thereafter",
+    "b": "Before entering the contract, with updates delivered only upon client request",
+    "c": "After the first trade settles in the account, and annually thereafter",
+    "d": "Before or at signing, then yearly if the brochure changed materially"
+   },
+   "explanation": "Under SEC Rule 204-3, an adviser delivers the Form ADV Part 2A brochure before or at the time of entering the advisory contract. Each year, within 120 days of fiscal year-end, it must deliver a summary of material changes or an updated brochure if material changes occurred.",
+   "distractorExplanations": {
+    "a": "Delivery is due before or at contract signing, not 48 hours after, and annual updates follow material changes, not a two-year cycle.",
+    "b": "When the brochure changes materially, the adviser must deliver a summary or updated brochure each year without waiting for a request.",
+    "c": "Delivery must occur before or at entering the advisory contract, not after the first trade settles."
+   }
+  },
+  "series-65-readiness-check-client-002": {
+   "options": {
+    "a": "Spread risk across asset classes in line with goals and risk tolerance",
+    "b": "Pick the individual securities expected to outperform within each sector",
+    "c": "Shift between stocks and cash based on short-term market forecasts",
+    "d": "Maximize expected return by concentrating in the best-performing asset class"
+   },
+   "explanation": "Asset allocation divides a portfolio among asset classes such as stocks, bonds, and cash so the overall mix of risk and expected return fits the client's goals, time horizon, and risk tolerance; it drives most long-run variability in portfolio returns.",
+   "distractorExplanations": {
+    "b": "Choosing individual winners is security selection, a separate step from allocating among asset classes.",
+    "c": "Forecast-driven switching is market timing, not the purpose of strategic asset allocation.",
+    "d": "Concentrating in one class abandons diversification; allocation balances risk and return to goals."
+   }
+  },
+  "series-65-readiness-check-client-012": {
+   "options": {
+    "a": "Buys more of the winners to ride recent momentum",
+    "b": "Changes the target weights to match current market values",
+    "c": "Moves the portfolio to cash until volatility subsides",
+    "d": "Sells winners and buys laggards to restore targets"
+   },
+   "explanation": "Rebalancing trims asset classes that have drifted above their target weights and adds to those below, restoring the strategic allocation and its intended risk level; it is a contrarian discipline, not a change to the targets themselves.",
+   "distractorExplanations": {
+    "a": "Adding to winners is momentum investing, which lets weights drift further from targets.",
+    "b": "Resetting targets to market values abandons the strategic allocation; rebalancing restores the targets.",
+    "c": "Moving to cash on volatility is market timing, not restoring target weights."
+   }
+  }
+ }
+}

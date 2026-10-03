@@ -1,0 +1,2957 @@
+{
+ "cem-readiness-check": {
+  "cem-readiness-check-commissioning-espc-001": {
+   "options": {
+    "a": "Retrofit isolation with utility-grade measurement of energy use at the ECM level",
+    "b": "Retrofit isolation with key parameters measured and other parameters stipulated",
+    "c": "Calibrated whole-building simulation checked against utility bills and submeter data",
+    "d": "Whole-facility utility meter comparison adjusted for weather and static factors"
+   },
+   "distractorExplanations": {
+    "b": "Measuring key parameters while stipulating the rest is IPMVP Option A; Option B measures every parameter at the retrofit.",
+    "c": "Calibrated whole-building simulation is IPMVP Option D, used when baseline or isolation data are not available.",
+    "d": "Whole-facility utility meter analysis with routine and non-routine adjustments is IPMVP Option C, not Option B."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-002": {
+   "options": {
+    "a": "Audits the facility and sells the owner equipment, leaving performance risk with the owner",
+    "b": "Provides the capital as a lender while the owner's own staff designs and installs measures",
+    "c": "Locks in a fixed utility rate for the contract term in exchange for a share of the energy budget",
+    "d": "Designs, installs, and often guarantees savings financed through future energy cost reductions"
+   },
+   "distractorExplanations": {
+    "a": "That is an equipment vendor or design-bid-build model; in an ESPC the ESCO takes on implementation and performance risk.",
+    "b": "That describes third-party loan financing; the ESCO in an ESPC designs and installs the ECMs itself, often arranging financing.",
+    "c": "Fixed-rate supply deals are energy procurement contracts; ESPC payments come from verified energy savings, not rate locks."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-003": {
+   "options": {
+    "a": "Review design, witness testing, and verify systems operate per owner's project requirements",
+    "b": "Write the basis of design and sequences of operation for the engineer of record to stamp",
+    "c": "Approve contractor change orders and pay applications acting as the owner's construction manager",
+    "d": "Replace TAB by measuring and setting design airflows and water flows at each terminal"
+   },
+   "distractorExplanations": {
+    "b": "The basis of design and sequences are written by the design team; the CxA reviews them against the OPR rather than authoring them.",
+    "c": "Change orders and pay applications belong to the owner, architect, or construction manager, not to the commissioning authority.",
+    "d": "Setting design flows is the TAB contractor's scope; the CxA reviews and spot-verifies the TAB report rather than replacing it."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-004": {
+   "options": {
+    "a": "Records the as-built sequences after turnover so operators can run the systems",
+    "b": "Translates owner requirements into measurable performance criteria for systems",
+    "c": "Lists the test procedures and pass/fail forms the contractor completes during FPT",
+    "d": "Summarizes deficiencies found during construction and the dates they were closed"
+   },
+   "distractorExplanations": {
+    "a": "As-built sequences for operators belong in the systems manual and O&M documents produced at turnover, not the design intent.",
+    "c": "Step-by-step procedures and pass/fail forms are functional test scripts, which are written to verify against the design intent.",
+    "d": "A running list of deficiencies and closure dates is the commissioning issues log, a separate tracking document."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-005": {
+   "options": {
+    "a": "Equipment was set in place, wired, and started per the manufacturer's checklist",
+    "b": "Air and water systems deliver design flows measured at each terminal and coil",
+    "c": "Installed equipment matches approved submittals and nameplate data recorded at delivery",
+    "d": "Systems and assemblies operate according to sequences and setpoints under simulated conditions"
+   },
+   "distractorExplanations": {
+    "a": "Setting, wiring, and startup are covered by pre-functional (construction) checklists, which come before functional performance testing.",
+    "b": "Measuring design flows at terminals and coils is testing, adjusting, and balancing (TAB), not functional performance testing.",
+    "c": "Comparing installed equipment with submittals is installation verification; FPT tests sequences and setpoints in operation."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-006": {
+   "options": {
+    "a": "Repeating commissioning on a building that was commissioned at construction to restore its performance",
+    "b": "Ongoing monitoring-based process using permanent meters and fault analytics after turnover",
+    "c": "Quality process applied from design through construction and turnover of a new building",
+    "d": "Systematic process to improve performance of existing buildings whose systems were not commissioned"
+   },
+   "distractorExplanations": {
+    "a": "Repeating Cx on a building that was commissioned before is recommissioning; RCx applies to buildings never commissioned.",
+    "b": "Permanent metering with fault analytics describes ongoing or monitoring-based commissioning, not a retrocommissioning project.",
+    "c": "Design-through-turnover verification of a new building is new construction commissioning, not retrocommissioning."
+   },
+   "explanation": "RCx uses documentation review, testing, and control corrections in operating buildings. Buildings that were commissioned before and have drifted are handled by recommissioning instead."
+  },
+  "cem-readiness-check-commissioning-espc-007": {
+   "options": {
+    "a": "Owner's goals for comfort, energy performance, and system operability",
+    "b": "Design narrative of how each system will meet the owner's requirements",
+    "c": "Scope, schedule, roles, test procedures, and acceptance criteria",
+    "d": "Measured savings baseline, adjustments, and reporting period equations"
+   },
+   "distractorExplanations": {
+    "a": "Owner goals for comfort, energy, and operability are the Owner's Project Requirements (OPR), a separate input to the Cx plan.",
+    "b": "A narrative of how systems meet owner requirements is the basis of design (BOD), prepared by the design team.",
+    "d": "Baseline, adjustments, and savings equations make up an M&V plan under IPMVP, not a commissioning plan."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-008": {
+   "options": {
+    "a": "Savings shortfalls in the reporting period caused by underperforming ECMs",
+    "b": "Utility rate increases between the baseline year and the reporting period",
+    "c": "Changes in static factors (e.g., area, shift schedule) that affect energy use",
+    "d": "Metering errors discovered in reporting-period data after the savings were already invoiced"
+   },
+   "distractorExplanations": {
+    "a": "Baseline adjustments must not absorb ECM underperformance; shortfalls caused by the ECMs are exactly what M&V is meant to reveal.",
+    "b": "Rate changes affect the dollar value of savings, not the energy baseline; IPMVP adjusts for conditions that change energy use.",
+    "d": "Correcting bad meter data is a data-quality fix in the reporting period, not an adjustment of the baseline for changed conditions."
+   },
+   "explanation": "IPMVP requires documenting adjustments when conditions change so savings remain attributable to ECMs. These non-routine adjustments are made independent of ECM performance."
+  },
+  "cem-readiness-check-commissioning-espc-009": {
+   "options": {
+    "a": "The utility commits to hold energy rates fixed for the contract term",
+    "b": "The owner and ESCO split measured savings by an agreed percentage",
+    "c": "The ESCO commits contractually to meet agreed savings targets",
+    "d": "The lender commits to cover debt service if the owner's budget falls short"
+   },
+   "distractorExplanations": {
+    "a": "Utilities do not freeze rates for ESPC terms; the guarantee is an ESCO commitment on energy savings, not on tariffs.",
+    "b": "Splitting measured savings by percentage is the shared savings structure, a different ESPC model from guaranteed savings.",
+    "d": "Lenders finance the project but do not backstop savings; the ESCO, not the lender, guarantees the savings level."
+   },
+   "explanation": "Guarantees tie payments and remedies to measured or stipulated savings per M&V plan. Contracts often specify remedies, such as ESCO payments, if verified savings fall short."
+  },
+  "cem-readiness-check-commissioning-espc-010": {
+   "options": {
+    "a": "Is performed once during the warranty period to resolve contractor deficiencies",
+    "b": "Begins at design phase and ends at turnover once acceptance testing is signed off",
+    "c": "Uses continuous monitoring and periodic re-testing to maintain performance over time",
+    "d": "Targets existing buildings that were not commissioned at construction, using a one-time study"
+   },
+   "distractorExplanations": {
+    "a": "A one-time check during the warranty period is warranty-phase or seasonal commissioning, not an ongoing process.",
+    "b": "A process that runs from design to turnover is new construction commissioning; OCx continues after occupancy.",
+    "d": "A one-time investigation of never-commissioned buildings describes retrocommissioning, which OCx is being contrasted with."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-011": {
+   "options": {
+    "a": "Control sequences respond correctly to every operating mode and alarm",
+    "b": "Installed equipment matches approved submittals and design capacities",
+    "c": "Envelope air barrier meets the specified leakage rate under test",
+    "d": "Hydronic and air systems deliver design flows and pressures"
+   },
+   "distractorExplanations": {
+    "a": "Verifying sequences through every mode and alarm is functional performance testing, which follows TAB.",
+    "b": "Matching equipment to submittals is submittal review and installation verification, not testing, adjusting, and balancing.",
+    "c": "Air barrier leakage is checked by blower door or envelope testing, not by hydronic and air balancing."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-012": {
+   "options": {
+    "a": "Owner goals for performance, comfort, energy, and operability",
+    "b": "Design team's narrative of how systems will meet the owner's goals",
+    "c": "Contractor's sequences of operation submitted for engineer approval",
+    "d": "Commissioning scope, schedule, and team roles for the project"
+   },
+   "distractorExplanations": {
+    "b": "The design team's narrative of how goals are met is the basis of design (BOD), which responds to the OPR.",
+    "c": "Contractor sequence submittals implement the design; they do not define the owner's own requirements.",
+    "d": "Scope, schedule, and roles are the contents of the commissioning plan, not the Owner's Project Requirements."
+   },
+   "explanation": "OPR captures what the owner needs; basis of design shows how the team meets OPR. The OPR is used to guide both design and commissioning."
+  },
+  "cem-readiness-check-commissioning-espc-013": {
+   "options": {
+    "a": "The commissioning plan schedule and roles issued before construction began",
+    "b": "Test results, issues resolved, training provided, and recommendations for O&M",
+    "c": "Measured energy savings by ECM versus the adjusted baseline for the first performance year",
+    "d": "Contractor bid tabulations and change-order pricing for each trade package"
+   },
+   "distractorExplanations": {
+    "a": "The Cx plan schedule and roles are an early planning document; the final report records what was verified and handed over.",
+    "c": "Savings by ECM versus baseline belong in an M&V or savings verification report, not the final commissioning report.",
+    "d": "Bid tabs and change-order pricing are procurement and contract records, not commissioning verification content."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-014": {
+   "options": {
+    "a": "Selecting the 12-month period of pre-retrofit data used to build the baseline",
+    "b": "Choosing the independent variables, such as degree-days, for the regression",
+    "c": "Specifying which meters and systems are included in savings calculations",
+    "d": "Setting the reporting period during which post-retrofit savings are verified"
+   },
+   "distractorExplanations": {
+    "a": "Choosing 12 months of pre-retrofit data defines the baseline period, which is separate from where the measurement boundary is drawn.",
+    "b": "Selecting degree-days and other drivers defines the regression model, not which meters and systems sit inside the boundary.",
+    "d": "The post-retrofit verification window is the reporting period; the boundary defines what is metered, not when."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-015": {
+   "options": {
+    "a": "Weather and occupancy regressed against utility consumption as the predictor",
+    "b": "Utility consumption regressed against weather and other independent variables",
+    "c": "Monthly peak demand regressed against utility rates to normalize cost",
+    "d": "Post-retrofit consumption regressed against pre-retrofit consumption by month"
+   },
+   "distractorExplanations": {
+    "a": "This swaps the variables: consumption is the dependent variable, while weather and occupancy are the independent predictors.",
+    "c": "Utility rates do not drive energy use; whole-building M&V regresses consumption on weather and operating variables.",
+    "d": "Regressing post on pre consumption ignores the drivers; the baseline model uses weather and other independent variables."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-016": {
+   "options": {
+    "a": "Savings measured at the ECM with isolation meters under IPMVP Option B",
+    "b": "Savings computed from whole-facility utility bills with routine weather adjustments",
+    "c": "Savings predicted by a calibrated simulation model under IPMVP Option D",
+    "d": "Savings assigned by agreement without direct measurement of that specific ECM"
+   },
+   "distractorExplanations": {
+    "a": "Option B measures all parameters at the ECM with isolation meters; stipulated savings are agreed values that are not measured.",
+    "b": "Whole-facility bills with routine weather adjustments describe IPMVP Option C, a measured approach rather than stipulation.",
+    "c": "Option D calculates savings with a calibrated model; stipulation assigns values by agreement without measuring that ECM."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-017": {
+   "options": {
+    "a": "Once, on an existing building whose systems were not commissioned at construction",
+    "b": "Periodically after initial commissioning to restore performance as systems change",
+    "c": "During design and construction, before the building is first occupied",
+    "d": "Continuously through permanent meters and automated fault detection"
+   },
+   "distractorExplanations": {
+    "a": "Commissioning an existing building that was never commissioned is retrocommissioning; recommissioning follows a prior Cx.",
+    "c": "Verification during design and construction is new construction commissioning, which precedes any recommissioning.",
+    "d": "Continuous metering with automated fault detection is ongoing or monitoring-based commissioning, not periodic recommissioning."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-018": {
+   "options": {
+    "a": "Let the CxA assume design liability for systems it reviews and tests",
+    "b": "Allow the CxA to direct contractors' means and methods during installation",
+    "c": "Ensure the CxA can approve pay applications without owner involvement",
+    "d": "Provide objective verification separate from design and construction teams"
+   },
+   "distractorExplanations": {
+    "a": "Design liability stays with the engineer of record; independence is about objective verification, not taking over design risk.",
+    "b": "Means and methods remain the contractor's responsibility; an independent CxA verifies results but does not direct construction.",
+    "c": "Pay application approval is an owner and architect function; CxA independence does not grant payment authority."
+   },
+   "explanation": "Independence reduces conflicts of interest in identifying issues affecting energy and operability. Owners or programs such as LEED may require this independence."
+  },
+  "cem-readiness-check-commissioning-espc-019": {
+   "options": {
+    "a": "Structured so the obligation resembles a service payment tied to savings",
+    "b": "Structured as a capital lease where the owner takes title at signing",
+    "c": "Financed through general obligation bonds issued and repaid by the public owner",
+    "d": "Funded by an upfront appropriation from the owner's capital budget"
+   },
+   "distractorExplanations": {
+    "b": "A capital (finance) lease with title transfer is recorded as a liability on the balance sheet, the opposite of the intended treatment.",
+    "c": "General obligation bonds are public debt carried on the owner's books, so they are not off-balance-sheet financing.",
+    "d": "An upfront capital appropriation is direct budget funding; ESPCs exist to avoid relying on capital budget appropriations."
+   },
+   "explanation": "Accounting treatment depends on contract terms and applicable standards; ESPCs aim to avoid capital budget barriers. Actual treatment depends on the applicable accounting rules for the owner."
+  },
+  "cem-readiness-check-commissioning-espc-020": {
+   "options": {
+    "a": "Application after installation is complete, since pre-approval would delay the project schedule",
+    "b": "Pre- and post-verification, often aligned with IPMVP or program-specific M&V rules",
+    "c": "A signed ESPC with an ESCO guarantee before the utility will pay",
+    "d": "Approval from the state energy code official before equipment purchase"
+   },
+   "distractorExplanations": {
+    "a": "Most custom incentive programs require pre-approval and a pre-installation inspection; applying after installation often forfeits the incentive.",
+    "c": "Utility incentives are available to owner-funded projects too; an ESPC with an ESCO guarantee is not a program prerequisite.",
+    "d": "Code officials enforce minimum codes; incentive eligibility is set by the utility program and its M&V rules, not by code approval."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-021": {
+   "options": {
+    "a": "Comparisons reflect ECM impacts rather than year-to-year weather differences",
+    "b": "Savings are reported in dollars at current utility rates instead of in energy units",
+    "c": "Baseline consumption is reset each year to the most recent 12 months",
+    "d": "Static factors such as floor area changes are removed from the baseline"
+   },
+   "distractorExplanations": {
+    "b": "Converting savings to dollars is a pricing step; weather normalization adjusts energy quantities for weather differences.",
+    "c": "Rolling the baseline forward would absorb the ECM savings; normalization keeps the baseline and adjusts it for weather.",
+    "d": "Floor area and similar static factors are handled by non-routine adjustments, not by weather normalization."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-022": {
+   "options": {
+    "a": "A single lighting retrofit is isolated and its operating hours are measured on site",
+    "b": "No baseline meter data exist and a calibrated simulation is required",
+    "c": "Whole-facility or whole-system utility data are used with routine adjustments",
+    "d": "Expected savings are small relative to the facility's total consumption"
+   },
+   "distractorExplanations": {
+    "a": "Isolating one retrofit and measuring its key parameter is IPMVP Option A, not a whole-facility Option C approach.",
+    "b": "Missing baseline data that require calibrated simulation point to IPMVP Option D rather than Option C.",
+    "d": "Option C needs savings large relative to facility use (often above about 10%) or they get lost in meter noise."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-023": {
+   "options": {
+    "a": "Performed at installation, after which electronic meters hold accuracy",
+    "b": "Matched to the utility's billing cycle so readings align monthly",
+    "c": "Defined in the M&V plan per manufacturer and program requirements",
+    "d": "Deferred until savings fall short of the target in a reporting year"
+   },
+   "distractorExplanations": {
+    "a": "Electronic meters and CTs still drift; a one-time calibration at installation does not keep M&V data defensible.",
+    "b": "Billing-cycle alignment concerns read dates, not calibration; intervals come from manufacturer and program requirements.",
+    "d": "Waiting for a shortfall makes calibration reactive; the M&V plan sets intervals in advance so data stay trustworthy."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-024": {
+   "options": {
+    "a": "The design-phase OPR and BOD drafts in place of the systems manual",
+    "b": "Training, as-built sequences, trend access, and documented setpoints",
+    "c": "Contractor punch lists and closeout invoices for the owner's accountant",
+    "d": "Startup checklists, with sequences kept by the controls contractor"
+   },
+   "distractorExplanations": {
+    "a": "OPR and BOD drafts are design documents; operators need the systems manual, as-built sequences, and training.",
+    "c": "Punch lists and invoices are construction closeout paperwork and do not help operators sustain commissioned performance.",
+    "d": "Sequences must be turned over to the owner; leaving them with the controls contractor undermines O&M handoff."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-025": {
+   "options": {
+    "a": "The construction period while the ESCO installs and commissions the ECMs",
+    "b": "The investment-grade audit period before the contract is signed",
+    "c": "The first 12 months after acceptance, matching the installing contractor's warranty",
+    "d": "Years after construction/implementation when savings are measured and guaranteed"
+   },
+   "distractorExplanations": {
+    "a": "Installation and commissioning make up the implementation period; the performance period starts after acceptance.",
+    "b": "The investment-grade audit is the development phase before contract award, not the period when savings are guaranteed.",
+    "c": "A one-year warranty is far shorter than typical ESPC performance periods, which often run 5 to 20 years."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-026": {
+   "options": {
+    "a": "Begins after occupancy by investigating systems that have drifted",
+    "b": "Relies on utility bill regression to find deficiencies after turnover",
+    "c": "Integrates verification throughout design and construction before turnover",
+    "d": "Focuses on finding low-cost operational fixes in existing controls"
+   },
+   "distractorExplanations": {
+    "a": "Investigating drifted systems after occupancy describes recommissioning or RCx, not new construction Cx.",
+    "b": "Bill regression is an M&V or benchmarking tool; new Cx finds deficiencies through reviews and testing before turnover.",
+    "d": "Low-cost fixes to existing controls are the hallmark of retrocommissioning in operating buildings."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-027": {
+   "options": {
+    "a": "Baseline, reporting period, adjustments, measurement uncertainty, and savings computation",
+    "b": "Contract financing terms, ESCO markup, and debt service coverage ratio",
+    "c": "Equipment warranties, spare parts inventories, and preventive maintenance schedules",
+    "d": "Design intent, functional test scripts, and commissioning issues log"
+   },
+   "distractorExplanations": {
+    "b": "Financing terms and markup belong in the ESPC contract and financial schedules, not the IPMVP M&V plan.",
+    "c": "Warranties, spares, and PM schedules are O&M deliverables; IPMVP plans address how savings are determined.",
+    "d": "Design intent, test scripts, and issues logs are commissioning documents rather than IPMVP M&V plan content."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-028": {
+   "options": {
+    "a": "The ESCO selects the best-performing fixtures to measure for the savings report",
+    "b": "A fixed 5% of units is metered without regard to variability or precision targets",
+    "c": "Units of different types and schedules are pooled into one sample to cut cost",
+    "d": "Representative samples and statistical methods justify extrapolation to similar units"
+   },
+   "distractorExplanations": {
+    "a": "Hand-picking top performers biases the sample; IPMVP sampling must be random and representative of the population.",
+    "b": "Sample size must be set from variability and precision targets (such as 90/10), not from a fixed percentage.",
+    "c": "Mixing unlike units and schedules violates sample homogeneity; each similar group needs its own sample."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-029": {
+   "options": {
+    "a": "The cost of energy the owner would have paid without the ECMs",
+    "b": "The ESCO's installed project cost divided by the annual energy savings",
+    "c": "The owner's actual utility bills paid during the reporting period",
+    "d": "The baseline-year utility cost, without adjusting for current conditions"
+   },
+   "distractorExplanations": {
+    "b": "Project cost divided by annual savings is simple payback, an economic metric rather than avoided cost.",
+    "c": "Actual reporting-period bills are what the owner did pay; avoided cost is what would have been paid without the ECMs.",
+    "d": "Avoided cost uses the baseline adjusted to reporting-period conditions; the raw baseline-year cost skips those adjustments."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-030": {
+   "options": {
+    "a": "Estimated and documented so stakeholders understand confidence in reported savings",
+    "b": "Excluded from the M&V report once meters have passed their factory calibration tests",
+    "c": "Assumed to be zero when Option C utility bills are used as the data source",
+    "d": "Limited to meter accuracy, leaving out modeling and sampling error"
+   },
+   "distractorExplanations": {
+    "b": "Factory calibration covers only instrument error; IPMVP still expects uncertainty to be quantified and reported.",
+    "c": "Option C regression models carry statistical uncertainty even with revenue meters; it is not zero.",
+    "d": "Total M&V uncertainty includes measurement, modeling, and sampling error, not instrument accuracy alone."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-031": {
+   "options": {
+    "a": "The most recent 3 months before installation, to reflect current operating practices",
+    "b": "The lowest-consumption year on record, so the savings claim stays conservative",
+    "c": "The period just after ECM installation, while operators are still adjusting",
+    "d": "Representative operation, complete data, and absence of major anomalies or concurrent ECMs"
+   },
+   "distractorExplanations": {
+    "a": "Three months does not span a full operating cycle; baselines usually cover 12 months to capture seasonal variation.",
+    "b": "Cherry-picking the lowest year is not representative; the baseline must reflect normal pre-retrofit operation.",
+    "c": "Post-installation data belong to the reporting period; the baseline must describe conditions before the ECMs."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-032": {
+   "options": {
+    "a": "Require a capital budget appropriation before they can be implemented",
+    "b": "Rely heavily on control changes, O&M practices, and persistence",
+    "c": "Produce savings that persist without monitoring once they are set",
+    "d": "Qualify for ESPC financing as long-lived equipment with 15-year lives"
+   },
+   "distractorExplanations": {
+    "a": "Operational ECMs are low-capital measures; a capital appropriation is typical of equipment replacement ECMs instead.",
+    "c": "Control and O&M changes are prone to backsliding, so persistence depends on monitoring rather than lasting by itself.",
+    "d": "Long equipment lives describe capital ECMs; operational measures have shorter, persistence-dependent savings lives."
+   },
+   "explanation": "Controls optimization and RCx measures are common operational ECMs with low capital cost. They depend on how systems are operated rather than on new equipment alone."
+  },
+  "cem-readiness-check-commissioning-espc-033": {
+   "options": {
+    "a": "Project risk so the owner guarantees savings while the ESCO finances",
+    "b": "Utility incentive payments between the ESCO's subcontractors by trade",
+    "c": "Measured savings between owner and ESCO per agreed percentages after costs",
+    "d": "Annual debt service between the owner's lender and the ESCO's lender"
+   },
+   "distractorExplanations": {
+    "a": "This reverses the roles: the ESCO, not the owner, carries savings performance risk in ESPC structures.",
+    "b": "Incentive payments usually go to the customer or ESCO under the program; shared savings split the measured savings.",
+    "d": "Debt service is paid to lenders under the financing agreement; shared savings divide verified savings between owner and ESCO."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-034": {
+   "options": {
+    "a": "Replace the owner's approval of the M&V plan with a third-party signature",
+    "b": "Verify reporting-period savings after the first performance year closes",
+    "c": "Set the savings level the ESCO must commit to in the contract",
+    "d": "Identify gaps in baseline, boundaries, and methods before implementation"
+   },
+   "distractorExplanations": {
+    "a": "Peer review informs the owner's decision; it does not substitute a third-party signature for owner approval.",
+    "b": "Checking first-year savings is reporting-period verification; peer review of the plan happens before implementation.",
+    "c": "The committed savings level is negotiated in the contract from the audit; peer review checks the M&V methods."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-035": {
+   "options": {
+    "a": "Test procedures, expected responses, and pass/fail criteria for each mode",
+    "b": "Owner goals, comfort criteria, and energy targets for each system",
+    "c": "Scope, schedule, team roles, and communication protocols for Cx",
+    "d": "Deficiencies, responsible parties, resolution dates, and retest status"
+   },
+   "distractorExplanations": {
+    "a": "Procedures with expected responses and pass/fail criteria are functional test scripts, not the issues log.",
+    "b": "Owner goals and energy targets belong in the Owner's Project Requirements document, not the issues log.",
+    "c": "Scope, schedule, and roles make up the commissioning plan; the issues log tracks deficiencies to closure."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-036": {
+   "options": {
+    "a": "Air and water flows match design values at each terminal and coil",
+    "b": "Installed equipment capacities match the approved submittal data",
+    "c": "Control sequences and setpoints match intended operation over time",
+    "d": "Meter readings agree with utility bills for the same billing period"
+   },
+   "distractorExplanations": {
+    "a": "Flow at terminals and coils is verified by TAB measurements, not by trending control sequences over time.",
+    "b": "Capacity versus submittal data is checked during submittal review and installation verification, not by BAS trends.",
+    "d": "Reconciling meters with bills is a metering QA step; trend verification checks sequences and setpoints."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-037": {
+   "options": {
+    "a": "The contractor's startup checklists, used in place of the sequences",
+    "b": "Utility bill history, so the tests target the highest-cost months of the year first",
+    "c": "Design intent, sequences of operation, and manufacturer requirements",
+    "d": "The TAB report, so scripts repeat the measured airflow readings"
+   },
+   "distractorExplanations": {
+    "a": "Startup checklists confirm installation; test scripts must exercise the sequences of operation, not replace them.",
+    "b": "Bill history helps target RCx opportunities but does not define test steps or pass/fail criteria for each mode.",
+    "d": "Repeating TAB readings checks flows only; scripts test control modes and interlocks against design intent."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-038": {
+   "options": {
+    "a": "The contractor completes startup checklists and submits the final pay application",
+    "b": "Substantial completion is certified by the architect, before functional testing is finished",
+    "c": "The first utility bills after occupancy show consumption below the energy model's estimate",
+    "d": "Systems meet OPR/design intent and outstanding issues are resolved or deferred with documentation"
+   },
+   "distractorExplanations": {
+    "a": "Startup checklists and pay applications are contractor milestones; acceptance requires verified performance against the OPR.",
+    "b": "Substantial completion is a contract milestone and can precede Cx acceptance; testing must still be completed or documented.",
+    "c": "Bills below the model estimate do not verify system operation; acceptance is based on testing against OPR and design intent."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-039": {
+   "options": {
+    "a": "Calibrated computer simulation models to predict baseline and reporting period consumption",
+    "b": "Whole-facility utility meter data with regression adjustments for weather and occupancy",
+    "c": "Continuous isolation metering of every parameter affecting the retrofit's energy use",
+    "d": "Spot measurement of key parameters with other values stipulated by agreement"
+   },
+   "distractorExplanations": {
+    "b": "Whole-facility meter regression with weather and occupancy adjustments is IPMVP Option C, not Option D.",
+    "c": "Isolation metering of all retrofit parameters is IPMVP Option B; Option D relies on calibrated simulation.",
+    "d": "Measuring key parameters and stipulating others is IPMVP Option A, the retrofit isolation key-parameter option."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-040": {
+   "options": {
+    "a": "Contractor warranty claims are filed before the first-year warranty expires",
+    "b": "Energy improvements continue rather than degrading due to overrides or poor O&M",
+    "c": "Baseline consumption is re-established each year from the most recent utility bills",
+    "d": "Original design capacities are restored by replacing worn equipment"
+   },
+   "distractorExplanations": {
+    "a": "Warranty claims address equipment defects; persistence monitoring tracks whether operational savings hold up.",
+    "c": "Resetting the baseline each year would hide degradation; persistence monitoring compares against a fixed baseline.",
+    "d": "Replacing worn equipment is a capital project; persistence monitoring catches overrides and drift in RCx fixes."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-041": {
+   "options": {
+    "a": "Normal operation, alarms, seasonal changeover, and documentation locations",
+    "b": "Construction means and methods used by each trade during installation",
+    "c": "Design load calculations and equipment selection software procedures",
+    "d": "Contractor bid pricing so staff can evaluate future change orders"
+   },
+   "distractorExplanations": {
+    "b": "Installation means and methods are the contractor's concern; operators need to know how to run the installed systems.",
+    "c": "Load calculations and selection software are design-team tools, not operating knowledge for O&M staff.",
+    "d": "Bid pricing is commercial information; Cx training covers operation, alarms, and changeover of the systems."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-042": {
+   "options": {
+    "a": "Measurement boundary, baseline period, and routine adjustment methods",
+    "b": "Investment-grade audit scope and the list of ECMs to be evaluated",
+    "c": "Annual savings reconciliation and the rate escalation used for dollars",
+    "d": "Early contract end, performance shortfalls, and equipment ownership transfer"
+   },
+   "distractorExplanations": {
+    "a": "Boundary, baseline, and adjustments are M&V plan content; termination clauses cover early exit and asset transfer.",
+    "b": "Audit scope and ECM lists belong to the project development agreement, not the contract termination provisions.",
+    "c": "Savings reconciliation and escalation rates sit in the M&V and payment schedules, not the termination clause."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-043": {
+   "options": {
+    "a": "Savings from separate ECMs are added directly with no overlap analysis",
+    "b": "Weather and occupancy changes shift consumption during the reporting period",
+    "c": "Combined savings differ from the sum of individual measure savings",
+    "d": "An ECM's savings decline over time as operators override its controls"
+   },
+   "distractorExplanations": {
+    "a": "Simply adding measure savings is the error interactive effects warn against, because one ECM changes another's savings.",
+    "b": "Weather and occupancy shifts are handled by routine adjustments; interactive effects arise between the ECMs themselves.",
+    "d": "Savings eroding through overrides is a persistence problem, not an interaction between measures."
+   },
+   "explanation": "M&V plans must address interactions to avoid over-claiming savings. The difference comes from overlapping impacts, such as lighting retrofits changing HVAC loads."
+  },
+  "cem-readiness-check-commissioning-espc-044": {
+   "options": {
+    "a": "Variables that change routinely, such as degree-days, entered in the baseline regression",
+    "b": "Measured savings parameters stipulated by agreement, such as lamp wattage under Option A",
+    "c": "Parameters held constant or adjusted such as floor area, production rate, or operating hours",
+    "d": "Utility tariff components, such as demand ratchets and fuel adjustments, used to price savings"
+   },
+   "distractorExplanations": {
+    "a": "Routinely changing drivers like degree-days are independent variables handled by routine adjustments, not static factors.",
+    "b": "Stipulated Option A parameters are agreed estimates for the ECM; static factors are site conditions outside the ECM.",
+    "d": "Tariff components only price the savings; static factors are physical conditions that affect energy use."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-045": {
+   "options": {
+    "a": "Design review, commissioning plan, FPT, and O&M handoff for specified systems",
+    "b": "Measurement and verification of savings for 10 years after occupancy",
+    "c": "Envelope blower door testing at ACH50 for every new construction project",
+    "d": "An independent CxA from a separate firm on projects of any size"
+   },
+   "distractorExplanations": {
+    "b": "Long-term savings M&V is not part of LEED fundamental commissioning; metering is addressed by separate credits.",
+    "c": "Blower door testing is not a fundamental commissioning requirement; envelope Cx is part of enhanced or optional scope.",
+    "d": "LEED lets a qualified owner employee or disinterested design-firm staff serve as CxA, so a separate firm is not mandatory."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-046": {
+   "options": {
+    "a": "A one-time walkthrough with portable data loggers installed for about two weeks",
+    "b": "Monthly utility bill regression with no interval or BAS trend data",
+    "c": "Design-phase energy modeling to set performance targets for turnover",
+    "d": "Permanent or semi-permanent sensors and analytics to detect efficiency degradation"
+   },
+   "distractorExplanations": {
+    "a": "Short-term portable logging during a walkthrough is a classic RCx investigation, not continuous monitoring.",
+    "b": "Monthly bill regression is too coarse for fault detection; MBCx relies on interval and BAS trend data.",
+    "c": "Design-phase energy modeling sets targets before construction; MBCx monitors operating buildings."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-047": {
+   "options": {
+    "a": "Envelope air leakage paths at parapets and window perimeter seals from IR scans",
+    "b": "Wiring code violations and arc-flash hazards in electrical switchgear",
+    "c": "Undersized equipment selected during design load calculations",
+    "d": "Stuck dampers, failed economizers, and short cycling equipment from trend rules"
+   },
+   "distractorExplanations": {
+    "a": "Leakage paths found by infrared scans are envelope diagnostics; FDD rules analyze BAS trends for HVAC faults.",
+    "b": "Code violations and arc-flash hazards are found by electrical inspections and studies, not by trend-based FDD.",
+    "c": "Undersizing is a design issue found in load reviews; FDD flags operating faults such as stuck dampers."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-048": {
+   "options": {
+    "a": "Cooling energy comparisons for hotter or cooler reporting periods versus baseline",
+    "b": "Electric demand charges for peak months in the reporting period versus baseline",
+    "c": "Domestic hot water use for changes in occupancy between baseline and reporting",
+    "d": "Heating energy comparisons for colder or milder reporting periods versus baseline"
+   },
+   "distractorExplanations": {
+    "a": "Cooling energy is normalized with cooling degree days (CDD); heating degree days apply to heating energy.",
+    "b": "Demand charges depend on peak kW and tariff terms; HDD normalization adjusts heating energy for weather.",
+    "c": "Occupancy-driven hot water use is adjusted with occupancy variables, not with heating degree days."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-049": {
+   "options": {
+    "a": "Avoided energy, maintenance, comfort complaints, and equipment life impacts",
+    "b": "Commissioning fees alone, compared against the total construction contract value",
+    "c": "Energy savings alone, valued at the blended rate without demand impacts",
+    "d": "First-cost premium of high-efficiency equipment selected by the designer"
+   },
+   "distractorExplanations": {
+    "b": "Comparing fees to contract value is a cost ratio; cost-benefit analysis must also count the benefits of Cx.",
+    "c": "Counting energy alone omits maintenance, comfort, and equipment-life benefits that make up much of Cx value.",
+    "d": "Efficiency equipment premiums are a design decision; Cx cost-benefit weighs commissioning cost against its benefits."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-050": {
+   "options": {
+    "a": "Baseline data are unavailable and a calibrated simulation must model the facility",
+    "b": "Whole-facility utility data are adjusted for weather and static factor changes",
+    "c": "Retrofit isolation measures every energy parameter continuously at the ECM with submeters",
+    "d": "Retrofit isolation uses short-term or periodic measurement of key parameters and agreed factors"
+   },
+   "distractorExplanations": {
+    "a": "Missing baseline data with calibrated simulation is the IPMVP Option D situation, not Option A.",
+    "b": "Whole-facility utility data with weather and static factor adjustments describe IPMVP Option C.",
+    "c": "Continuous measurement of every parameter at the ECM is IPMVP Option B; Option A stipulates some factors."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-001": {
+   "options": {
+    "a": "Loses about 10 percentage points of efficiency compared with full load",
+    "b": "Runs at its lowest efficiency point because losses peak below full load",
+    "c": "Draws more input kW than at full load because slip increases at part load",
+    "d": "Operates near its best efficiency point when properly sized for the load"
+   },
+   "distractorExplanations": {
+    "a": "Efficiency at 75% load is usually within about a point of full-load efficiency, not 10 points lower.",
+    "b": "Efficiency falls off mainly below about 50% load; 75% load is near the peak of the efficiency curve.",
+    "c": "Input kW drops as load drops; at 75% load the motor draws less power than at full load, not more."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-002": {
+   "options": {
+    "a": "Fan power drops roughly with the cube of speed when flow is reduced via speed control",
+    "b": "Fan power drops in direct proportion to speed, so a 20% speed cut saves about 20%",
+    "c": "Fan power drops with the square of speed, so pressure falls more than flow",
+    "d": "VFD input current is in phase with voltage, cutting reactive power demand"
+   },
+   "distractorExplanations": {
+    "b": "Flow is proportional to speed, but power follows the cube: a 20% speed cut saves roughly 49% of fan power.",
+    "c": "The square law applies to pressure; fan power varies with the cube of speed under the affinity laws.",
+    "d": "A drive's displacement power factor is a minor side benefit; the main saving comes from the cube-law drop in fan power."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-006": {
+   "options": {
+    "a": "Reduce input wattage for the same delivered lumens",
+    "b": "Increase input wattage but extend rated L70 lamp life",
+    "c": "Increase efficacy, meaning more watts per lumen",
+    "d": "Keep wattage the same while raising light output"
+   },
+   "distractorExplanations": {
+    "b": "Higher efficacy lowers wattage for the same lumens; L70 life is a separate rating unrelated to efficacy.",
+    "d": "The question fixes light output, so the efficacy gain shows up as lower input watts, not more lumens at equal watts.",
+    "c": "Higher lm/W means fewer watts per lumen, not more."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-007": {
+   "options": {
+    "a": "A constant-torque conveyor requiring full torque at low speed continuously",
+    "b": "A pump with throttling valve control replaced by speed control",
+    "c": "A cooling tower fan cycled on and off today to hold condenser water setpoint",
+    "d": "A variable-torque HVAC fan with reduced speed at part load"
+   },
+   "distractorExplanations": {
+    "c": "Tower fans cycled on and off are good VFD candidates; speed control saves energy and reduces cycling wear.",
+    "b": "Pump VFD retrofits replacing throttling valves are common ECMs.",
+    "d": "Variable-torque fans are classic VFD applications with strong savings."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-008": {
+   "options": {
+    "a": "On resistive heating circuits, where current is largest during winter peaks",
+    "b": "On LED lighting circuits whose drivers already operate near unity power factor",
+    "c": "On the utility side of the meter, so the utility's transformer losses fall",
+    "d": "At the point of reactive load causing low power factor, such as near large motors"
+   },
+   "distractorExplanations": {
+    "a": "Resistive heaters draw almost no reactive power, so capacitors there correct nothing despite the large current.",
+    "b": "Loads already near unity power factor need no correction; capacitors belong near the inductive motor loads.",
+    "c": "Utility-side capacitors do not reduce the customer's billed kVA or penalty; correction must be on the customer side."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-010": {
+   "options": {
+    "a": "Starting inrush current, which drops by roughly half versus standard motors",
+    "b": "Stator and rotor copper losses, core losses, and stray load losses",
+    "c": "Reactive power draw, raising power factor to near unity at every load",
+    "d": "Mechanical drive losses in belts, couplings, and the driven load"
+   },
+   "distractorExplanations": {
+    "a": "Premium motors often have equal or higher inrush current; their gains come from lower running losses.",
+    "c": "Premium efficiency targets real-power losses; power factor changes little and stays well below unity at light load.",
+    "d": "Belt, coupling, and driven-load losses are outside the motor; NEMA Premium reduces losses inside the motor itself."
+   },
+   "explanation": "Premium efficiency motors use improved materials and design to lower electrical losses compared with EPAct or standard efficiency models. The comparison is against standard-efficiency motors."
+  },
+  "cem-readiness-check-electrical-lighting-014": {
+   "options": {
+    "a": "Correlated color temperature",
+    "b": "Luminous efficacy (lm/W)",
+    "c": "Color Rendering Index (CRI)",
+    "d": "Lumen maintenance (L70)"
+   },
+   "distractorExplanations": {
+    "a": "Correlated color temperature describes how warm or cool light looks, not how faithfully it renders colors.",
+    "b": "Luminous efficacy measures lumens per watt of input power, an efficiency metric rather than color quality.",
+    "d": "L70 lumen maintenance estimates hours until output falls to 70%; it says nothing about color rendering."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-015": {
+   "options": {
+    "a": "Limiting inrush current and mechanical stress",
+    "b": "Reducing motor speed to match load as a VFD does",
+    "c": "Correcting power factor at the motor terminals",
+    "d": "Lowering voltage to cut running losses at full load"
+   },
+   "distractorExplanations": {
+    "b": "Soft starters ramp voltage only during starting; they do not vary running speed the way a VFD does.",
+    "c": "Soft starters do not supply reactive power; power factor correction still needs capacitors or other equipment.",
+    "d": "At full load the soft starter is bypassed or at full voltage, so it does not cut running losses there."
+   },
+   "explanation": "Soft starters reduce starting torque and inrush, lowering demand spikes and mechanical stress; continuous-run efficiency gains are typically small compared with VFDs. Energy savings at run conditions are usually modest."
+  },
+  "cem-readiness-check-electrical-lighting-017": {
+   "options": {
+    "a": "Adding standard PF capacitors at the drive input to absorb the harmonics",
+    "b": "Switching the utility meter to kWh-only billing so PF is not measured",
+    "c": "Line reactors, harmonic filters, or true-RMS metering depending on severity",
+    "d": "Lowering the VFD carrier frequency to eliminate line-side harmonics"
+   },
+   "distractorExplanations": {
+    "a": "Standard capacitors can resonate with VFD harmonics and fail; detuned filters or reactors are used instead.",
+    "b": "The utility sets the tariff and metering; the customer cannot remove PF billing to avoid harmonic effects.",
+    "d": "Carrier frequency affects motor-side switching noise; line-side harmonics come from the rectifier front end."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-018": {
+   "options": {
+    "a": "Photosensors detect sufficient daylight to meet target illuminance",
+    "b": "Occupancy sensors detect no motion for the programmed time delay",
+    "c": "The astronomical time clock reaches the scheduled sunrise offset for the zone",
+    "d": "The utility issues a demand response signal during a peak event"
+   },
+   "distractorExplanations": {
+    "b": "Turning lights off after no motion is occupancy sensing; daylight harvesting responds to measured daylight.",
+    "c": "Astronomical clocks switch on schedule, mostly for exterior lighting, without measuring actual daylight levels.",
+    "d": "Dimming on a utility signal is demand response; daylight harvesting dims based on photosensor readings."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-019": {
+   "options": {
+    "a": "The application runs at high hours and benefits from higher efficiency",
+    "b": "The motor runs a few hundred hours per year at near full load",
+    "c": "The motor drives a constant-speed load with an across-the-line starter",
+    "d": "The existing motor is lightly loaded but its utility rate is very low"
+   },
+   "distractorExplanations": {
+    "b": "A few hundred hours per year gives too little energy to pay back a premium motor, even at full load.",
+    "c": "Synchronous reluctance and most PM motors require a drive; an across-the-line constant-speed setup does not suit them.",
+    "d": "A very low utility rate shrinks the dollar value of efficiency gains, which weakens the payback."
+   },
+   "explanation": "Advanced motor technologies improve efficiency especially at partial load; high run hours improve payback on premium motor investments. These motors also hold efficiency well across the load curve."
+  },
+  "cem-readiness-check-electrical-lighting-020": {
+   "options": {
+    "a": "Replace throttling with VFD speed control matched to system requirements",
+    "b": "Keep throttling and add soft starters to cut inrush demand at startup",
+    "c": "Install a larger, more efficient motor on the same throttled pump",
+    "d": "Add PF capacitors at the motor to cut kVA while throttling continues"
+   },
+   "distractorExplanations": {
+    "b": "Soft starters only limit starting current; the throttling losses during operation remain unchanged.",
+    "c": "A larger motor on an oversized throttled pump makes oversizing worse; the throttling loss itself stays.",
+    "d": "Capacitors reduce kVA and PF penalties but leave kWh and real kW unchanged while the valve keeps throttling."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-022": {
+   "options": {
+    "a": "Reduced or eliminated PF penalty and lower I²R losses on distribution",
+    "b": "Lower billed kW demand because real power falls with reactive current",
+    "c": "Reduced kWh charges equal to the drop in kVA from 0.82 to 0.95 PF",
+    "d": "Higher real power kW consumption for the same work output"
+   },
+   "distractorExplanations": {
+    "b": "Real kW stays essentially unchanged; PF correction lowers kVA and reactive current, not billed kW demand.",
+    "c": "kWh tracks real energy, which barely changes; the kVA reduction does not translate into equal kWh savings.",
+    "d": "Real kW for the same load should not increase; apparent kVA drops."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-023": {
+   "options": {
+    "a": "Certifying luminaires as meeting UL safety standards and electrical listing tests",
+    "b": "Rating ENERGY STAR residential lamps for retail consumer labeling",
+    "c": "Identifying tested LED products meeting efficacy and performance criteria",
+    "d": "Setting lighting power density limits for commercial energy codes"
+   },
+   "distractorExplanations": {
+    "a": "Safety listing is done by UL and other NRTLs; DLC lists products that meet efficacy and performance criteria.",
+    "b": "ENERGY STAR covers residential lamps and fixtures; DLC focuses on commercial LED products for utility rebates.",
+    "d": "LPD limits are set by ASHRAE 90.1 and the IECC, not by the DesignLights Consortium qualified product lists."
+   },
+   "explanation": "DLC qualification provides third-party verified performance data used in utility rebate programs and procurement specifications for commercial lighting. Utility rebate programs and specifications often require DLC-listed products."
+  },
+  "cem-readiness-check-electrical-lighting-024": {
+   "options": {
+    "a": "Mechanical efficiency and reliability of power transfer to the fan",
+    "b": "Motor nameplate efficiency, raising it to the NEMA Premium level",
+    "c": "Fan curve shape, shifting the fan's best efficiency point to higher flow",
+    "d": "Power factor at the motor terminals by reducing reactive current"
+   },
+   "distractorExplanations": {
+    "b": "Nameplate efficiency is fixed by motor design; belt maintenance improves transmission between motor and fan.",
+    "c": "The fan curve is a property of the wheel and housing; belt fixes improve power transfer, not the curve shape.",
+    "d": "Belt slip and misalignment are mechanical losses; they do not set the motor's reactive current or power factor."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-026": {
+   "options": {
+    "a": "Copper losses in the stator rise sharply as current falls at light load",
+    "b": "Power factor improves at light load, increasing the reactive losses in the rotor bars",
+    "c": "Fixed core and friction/windage losses become a larger fraction of input power",
+    "d": "Stray load losses grow faster than output as the load fraction drops"
+   },
+   "distractorExplanations": {
+    "a": "Copper (I²R) losses fall as load current falls; it is the fixed losses that dominate at light load.",
+    "b": "Power factor falls at light load rather than improving, and reactive current is not the main efficiency loss.",
+    "d": "Stray load losses shrink with load; fixed core and friction/windage losses are what stay constant."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-028": {
+   "options": {
+    "a": "Time-of-use on-peak energy (kWh) charges",
+    "b": "Power factor (kVAR) penalties",
+    "c": "Fuel cost adjustment riders",
+    "d": "Monthly billing demand (kW) charges"
+   },
+   "distractorExplanations": {
+    "a": "Short shedding events trim some on-peak kWh, but the charge set by the peak interval is the billing demand.",
+    "b": "PF penalties depend on reactive power ratio; shedding non-critical loads mainly cuts the peak kW interval.",
+    "c": "Fuel adjustment riders are priced per kWh and pass through fuel costs; they do not respond to peak kW."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-029": {
+   "options": {
+    "a": "How accurately the source renders colors versus a reference source",
+    "b": "The visual warmth or coolness appearance of the light source",
+    "c": "The operating temperature of the LED junction at rated current",
+    "d": "The spectral power output used to compute luminous efficacy"
+   },
+   "distractorExplanations": {
+    "a": "Color fidelity compared with a reference source is the Color Rendering Index, not correlated color temperature.",
+    "c": "Junction temperature is a thermal rating that affects LED life; CCT in kelvin describes light color appearance.",
+    "d": "Spectral output feeds efficacy calculations, but CCT only describes whether light appears warm or cool."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-030": {
+   "options": {
+    "a": "Maintained illuminance meets task requirements after wattage reduction",
+    "b": "Fixture counts match the utility rebate application before installation",
+    "c": "Lighting power density stays above the energy code minimum allowance",
+    "d": "Color temperature of new fixtures matches the existing lamps exactly"
+   },
+   "distractorExplanations": {
+    "b": "Fixture counts matter for rebates, but a light-level audit is about maintained illuminance for tasks.",
+    "c": "Energy codes set maximum LPD allowances, not minimums; illuminance targets come from IES task guidance.",
+    "d": "Matching CCT is a design preference; the audit checks foot-candle levels so tasks stay properly lit."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-032": {
+   "options": {
+    "a": "Raising the efficacy of each luminaire so it produces more lumens per watt consumed",
+    "b": "Adjusting output to required illuminance rather than maintaining uniform over-lighting",
+    "c": "Switching fixtures off when occupancy sensors detect a vacant space",
+    "d": "Dimming perimeter fixtures in response to measured daylight levels"
+   },
+   "distractorExplanations": {
+    "a": "Efficacy is a fixed product property; task tuning lowers set output levels without changing lumens per watt.",
+    "c": "Switching off in vacant spaces is occupancy control; task tuning sets a lower maximum output while occupied.",
+    "d": "Dimming on measured daylight is daylight harvesting; task tuning trims output to need regardless of daylight."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-033": {
+   "options": {
+    "a": "Rewinding with smaller wire gauge or increased slot fill losses versus factory design",
+    "b": "Using manufacturer-specified varnish and wire for identical slot design",
+    "c": "Testing insulation resistance and running a surge comparison test after rewind",
+    "d": "Balancing the rotor and replacing worn bearings during the rewind"
+   },
+   "distractorExplanations": {
+    "c": "Insulation resistance and surge testing verify rewind quality; they do not reduce the motor's efficiency.",
+    "d": "Rotor balancing and bearing replacement are good rewind practice that help preserve efficiency and reliability.",
+    "b": "Proper rewinds to OEM specs maintain efficiency."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-036": {
+   "options": {
+    "a": "Elevator motors are DC machines that a standard AC drive cannot control",
+    "b": "Elevators require specialized controls and safety codes not met by generic VFD retrofits",
+    "c": "Elevator hoists are variable-torque loads whose VFD savings would be too small to matter",
+    "d": "Regenerated energy from descending cars would be billed by the utility"
+   },
+   "distractorExplanations": {
+    "a": "Many modern elevators use AC motors, and code and safety integration, not motor type, is the real obstacle.",
+    "c": "Hoists are constant-torque loads; elevator drives can save energy, but must be manufacturer-integrated for safety.",
+    "d": "Regeneration reduces net energy use; the concern with generic VFDs is safety, controls, and code compliance."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-037": {
+   "options": {
+    "a": "Data center IT load supplied by a single UPS with no redundancy",
+    "b": "Non-critical process loads or HVAC with thermal storage buffer",
+    "c": "Hospital operating room HVAC that must hold pressure and humidity",
+    "d": "Fire pump and emergency lighting loads tested during the event"
+   },
+   "distractorExplanations": {
+    "a": "Non-redundant IT load cannot be shed without risking an outage, so it is a poor curtailment candidate.",
+    "c": "Operating room HVAC must hold pressure relationships and humidity for infection control during any event.",
+    "d": "Life safety loads such as fire pumps and egress lighting must stay available and are excluded from curtailment."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-038": {
+   "options": {
+    "a": "Estimated hours until 70% of a sample of LED drivers have failed",
+    "b": "Percentage of initial lumens remaining after 70,000 operating hours",
+    "c": "Estimated hours until light output falls to 70% of initial lumens",
+    "d": "Hours until the fixture's efficacy drops to 70 lumens per watt"
+   },
+   "distractorExplanations": {
+    "a": "Driver failure rates are a separate reliability metric; L70 tracks lumen depreciation of the light source.",
+    "b": "L70 is the hours to reach 70% of initial lumens, not the lumen percentage left at a fixed 70,000 hours.",
+    "d": "The 70 in L70 is a percentage of initial lumens, not an efficacy value in lumens per watt."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-040": {
+   "options": {
+    "a": "LED signs are switched off by occupancy sensors when spaces are empty",
+    "b": "LED signs run on battery power, removing them from the electric bill",
+    "c": "LED exit signs use far fewer watts for equivalent visibility 24/7",
+    "d": "Incandescent signs have a higher power factor that raises kVA billing"
+   },
+   "distractorExplanations": {
+    "a": "Exit signs must stay illuminated continuously by code; occupancy control of exit signs is not allowed.",
+    "b": "Batteries only provide backup during outages; normal operation draws utility power continuously.",
+    "d": "Incandescent lamps are resistive with near-unity power factor; savings come from much lower wattage."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-041": {
+   "options": {
+    "a": "Long-term motor energy consumption across the installed base turnover",
+    "b": "Peak demand charges in the first year, before any motors are replaced",
+    "c": "Motor repair costs, since premium motors are not eligible for rewinding",
+    "d": "Reactive power penalties, since premium motors run at unity power factor"
+   },
+   "distractorExplanations": {
+    "b": "A replacement policy acts as motors fail over years; it gives no first-year demand cut before replacements occur.",
+    "c": "Premium motors can be rewound to proper standards; the policy targets energy losses, not repair eligibility.",
+    "d": "Premium motors still run below unity power factor; the policy cuts real-power losses, not reactive penalties."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-042": {
+   "options": {
+    "a": "Demand meters record instantaneous peaks rather than averages",
+    "b": "Nameplate ratings understate the actual running load of motors",
+    "c": "Not all equipment runs simultaneously at nameplate load",
+    "d": "Billed demand is measured in kVA while connected load is in kW"
+   },
+   "distractorExplanations": {
+    "a": "Demand is usually a 15- or 30-minute average, and instantaneous peaks would raise billed demand, not lower it.",
+    "b": "Motors usually run below nameplate, so nameplate overstates load; understating would push demand above connected load.",
+    "d": "kVA is equal to or larger than kW, so kVA billing would raise billed demand relative to connected kW."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-043": {
+   "options": {
+    "a": "Switch entire warehouse zones on a fixed time schedule set to shift start and end",
+    "b": "Dim or switch fixtures in unoccupied aisles while maintaining safety minimums",
+    "c": "Hold emergency egress fixtures at full output and switch off the rest",
+    "d": "Raise fixture output when forklifts enter to offset lumen depreciation"
+   },
+   "distractorExplanations": {
+    "a": "Zone time schedules save only outside shifts; aisle controls respond to actual aisle occupancy during shifts.",
+    "c": "Leaving only egress fixtures on can drop vacant aisles below safety minimums; aisle controls dim to a set level.",
+    "d": "Lumen depreciation is handled by tuning or maintenance factors; aisle controls dim vacant aisles to save energy."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-044": {
+   "options": {
+    "a": "kW draw at comparable airflow or static pressure setpoints",
+    "b": "Motor full-load amps recorded once before and once after the VFD",
+    "c": "VFD output frequency compared with the original 60 Hz motor speed",
+    "d": "Annual facility kWh from utility bills with no weather adjustment"
+   },
+   "distractorExplanations": {
+    "b": "Single amp readings ignore voltage, power factor, and duty point; true kW at matched flow or pressure is needed.",
+    "c": "Frequency indicates speed, not power; savings must be shown as kW at comparable airflow or pressure.",
+    "d": "Unadjusted facility bills mix many loads and weather effects; one fan's savings cannot be isolated that way."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-046": {
+   "options": {
+    "a": "Billed demand peaks equal to locked-rotor kW for the whole month",
+    "b": "Lower running efficiency for the motor once it reaches full speed",
+    "c": "Short-duration demand spikes and voltage dip on weak feeders",
+    "d": "Power factor penalties because inrush is mostly reactive current"
+   },
+   "distractorExplanations": {
+    "a": "Demand is averaged over 15 to 30 minutes, so a few seconds of inrush adds only a small spike, not locked-rotor kW.",
+    "b": "Starting method does not change running efficiency once the motor is up to speed.",
+    "d": "PF penalties are based on billing-period kVAR or kVA, so brief starting current has little effect on them."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-047": {
+   "options": {
+    "a": "Fixtures with the highest lumen output per fixture, independent of wattage",
+    "b": "Efficient products delivering required lumens with lower connected wattage",
+    "c": "Products with the lowest wattage per fixture, without checking lumen output",
+    "d": "Fixtures meeting the specified CRI and CCT for occupant visual comfort"
+   },
+   "distractorExplanations": {
+    "a": "Maximizing lumens per fixture ignores input power; an efficacy spec ties output to the watts consumed.",
+    "c": "Low wattage alone can mean under-lighting; efficacy requires delivering required lumens per watt.",
+    "d": "CRI and CCT are color quality specs; efficacy (lm/W) is what ensures efficient light output per watt."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-048": {
+   "options": {
+    "a": "It lowers kWh charges by the same percentage as the kVA reduction",
+    "b": "It reduces real kW demand, which kVA tariffs bill at a higher rate",
+    "c": "Reducing reactive power lowers billed apparent demand directly",
+    "d": "It lowers the demand ratchet percentage written into the tariff"
+   },
+   "distractorExplanations": {
+    "a": "kWh reflects real energy, which barely changes with PF correction; only the billed kVA demand drops.",
+    "b": "PF correction leaves real kW almost unchanged; the saving comes from lower apparent kVA on the bill.",
+    "d": "The ratchet percentage is fixed in the tariff; PF correction lowers the kVA value the ratchet applies to."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-049": {
+   "options": {
+    "a": "Group relamping on the fluorescent schedule of about every 3 to 4 years to cut labor cost",
+    "b": "Run-to-failure with no inspections, since LED arrays rarely fail before L70",
+    "c": "Preventive inspection and spot replacement based on failure or lumen depreciation monitoring",
+    "d": "Group replacement of all drivers at the 50,000-hour L70 rating in one visit"
+   },
+   "distractorExplanations": {
+    "a": "Fluorescent group-relamp intervals reflect short lamp life; applying them to LEDs discards most of their useful life.",
+    "b": "Drivers often fail before the arrays reach L70, so skipping inspection leaves outages and dim fixtures unnoticed.",
+    "d": "L70 rates the light source, not driver life; blanket driver swaps at L70 ignore actual condition and failures."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-050": {
+   "options": {
+    "a": "Motor nameplate horsepower alone, matching the drive hp rating",
+    "b": "Motor locked-rotor current, since the drive must supply full inrush",
+    "c": "The feeder breaker rating serving the motor control center",
+    "d": "Motor full-load current and manufacturer/heating requirements"
+   },
+   "distractorExplanations": {
+    "a": "Drive hp ratings assume typical motor current; sizing must use actual motor FLA, which can exceed the hp table value.",
+    "b": "A VFD ramps the motor up and avoids locked-rotor inrush, so it is not sized to supply locked-rotor current.",
+    "c": "The feeder breaker protects the MCC circuit; VFD current rating must match the motor full-load current."
+   },
+   "explanation": "VFD sizing follows motor FLA, service factor, and application duty; undersizing causes nuisance trips and overheating. Sizing should also include the drive's overload capability for the application."
+  },
+  "cem-readiness-check-hvac-envelope-bas-001": {
+   "options": {
+    "a": "Outdoor dry-bulb temperature is below the return air temperature, so outside air can replace return air",
+    "b": "Outdoor wet-bulb temperature is low enough to produce chilled water without mechanical refrigeration",
+    "c": "Outdoor dew point is low enough that the cooling coil runs dry with no latent load left to remove",
+    "d": "Condenser water leaving the tower is above chilled water return, so the chiller can be bypassed"
+   },
+   "distractorExplanations": {
+    "a": "Comparing outdoor dry-bulb with return air is the airside economizer test; a waterside economizer depends on wet-bulb.",
+    "c": "A dry coil reduces latent load but still needs chilled water; free cooling depends on the tower making cold enough water.",
+    "d": "Tower water must be colder than chilled water return for free cooling; warmer water cannot cool the loop."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-002": {
+   "options": {
+    "a": "Raising supply air temperature at every load so reheat is not needed in any zone",
+    "b": "Delivering constant airflow while varying supply air temperature at each zone",
+    "c": "Increasing outdoor air at part load so the economizer handles more of the building's cooling load",
+    "d": "Reducing supply fan energy and minimizing simultaneous cooling and reheat at partial loads"
+   },
+   "distractorExplanations": {
+    "a": "Supply air temperature reset is an add-on strategy; VAV savings come from reducing airflow, fan power, and reheat.",
+    "b": "Constant airflow with varying temperature describes constant-volume systems, the baseline VAV improves on.",
+    "c": "Economizer operation is separate from VAV; minimum outdoor air is set by ventilation needs, not part load."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-003": {
+   "options": {
+    "a": "Chilled water supply setpoint reset upward by 2°F during a mild-weather period",
+    "b": "Entering condenser water about 5°F below design because the tower is oversized",
+    "c": "Evaporator water flow at design with a clean, recently brushed evaporator",
+    "d": "Elevated condenser water temperature or fouled condenser tubes raising lift"
+   },
+   "distractorExplanations": {
+    "a": "Raising chilled water supply temperature reduces lift and improves kW/ton, so it cannot explain worse efficiency.",
+    "b": "Colder entering condenser water lowers lift and improves kW/ton; it would not push the chiller to 0.72 kW/ton.",
+    "c": "Design evaporator flow and clean tubes support rated efficiency; they point away from the cause of high kW/ton."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-004": {
+   "options": {
+    "a": "The difference between entering and leaving condenser water temperature at the tower",
+    "b": "The difference between leaving condenser water temperature and ambient dry-bulb temperature",
+    "c": "The difference between leaving condenser water temperature and ambient wet-bulb temperature",
+    "d": "The difference between supply and return chilled water temperature"
+   },
+   "distractorExplanations": {
+    "a": "Entering minus leaving condenser water temperature is the cooling tower range, not the approach.",
+    "b": "Evaporative towers are limited by wet-bulb, not dry-bulb; approach is measured against ambient wet-bulb.",
+    "d": "Supply/return delta-T describes chilled water loop performance, not tower approach."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-005": {
+   "options": {
+    "a": "Holding duct static at the design setpoint and trimming flow with box dampers",
+    "b": "Resetting supply air temperature upward whenever zone dampers are mostly closed",
+    "c": "Lowering duct static setpoint when zone dampers are sufficiently open",
+    "d": "Raising static setpoint during low occupancy to keep VAV boxes controllable"
+   },
+   "distractorExplanations": {
+    "a": "A fixed design static setpoint is the baseline that reset improves on; throttling at the boxes wastes fan energy.",
+    "b": "Raising supply air temperature is SAT reset, a different strategy that can increase fan airflow.",
+    "d": "Low occupancy means lower airflow and allows a lower static setpoint, not a higher one."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-006": {
+   "options": {
+    "a": "Outdoor air temperature or building load to reduce piping and boiler losses",
+    "b": "Indoor zone humidity so supply water stays above the space dew point",
+    "c": "Boiler stack temperature to keep flue gas from condensing in the vent",
+    "d": "Time of day only, using a fixed schedule for occupied and unoccupied periods"
+   },
+   "distractorExplanations": {
+    "b": "Keeping water above dew point is a radiant cooling or chilled water concern, not heating hot water reset.",
+    "c": "Minimum return temperature protects non-condensing boilers, but reset itself follows outdoor air or load.",
+    "d": "A time schedule gives occupied and setback setpoints; reset continuously varies supply temperature with load."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-007": {
+   "options": {
+    "a": "Chilled water flow too low for the load, starving coils at the loop end",
+    "b": "Chiller evaporator fouling that raises the leaving chilled water supply temperature",
+    "c": "Supply water setpoint too low, causing chiller surge at light load",
+    "d": "Excessive flow relative to load, often from oversized pumps or poor valve control"
+   },
+   "distractorExplanations": {
+    "a": "Too little flow for the load produces a high delta-T, the opposite of low delta-T syndrome.",
+    "b": "Evaporator fouling hurts chiller heat transfer but does not cause the excess flow behind low delta-T.",
+    "c": "Surge is a compressor stability issue at low lift and load; low delta-T is a loop flow-to-load mismatch."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-008": {
+   "options": {
+    "a": "Flow is constant at design and the pump runs at full speed most hours",
+    "b": "System head is mostly static lift, such as pumping up to an open tower at high elevation",
+    "c": "The pump is already trimmed to the duty point with three-way coil valves",
+    "d": "System head varies with flow and pumps operate at part load for extended periods"
+   },
+   "distractorExplanations": {
+    "a": "Constant design flow at full speed leaves no room for speed reduction, so the VFD saves little.",
+    "b": "Static lift does not fall with flow, so speed can drop only slightly and cube-law savings are limited.",
+    "c": "Three-way valves keep loop flow constant, so a VFD has little variable flow to follow without valve changes."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-009": {
+   "options": {
+    "a": "Using outdoor air for free cooling when outdoor enthalpy is below return",
+    "b": "Raising ventilation when CO2 falls below setpoint to pre-flush the space",
+    "c": "Modulating outdoor air intake based on measured or estimated occupancy",
+    "d": "Recovering heat from exhaust air to precondition the ventilation air"
+   },
+   "distractorExplanations": {
+    "a": "Free cooling with outdoor air based on enthalpy is economizer control, not demand controlled ventilation.",
+    "b": "DCV reduces outdoor air when CO2 is low; raising it below setpoint reverses the control logic.",
+    "d": "Exhaust heat recovery is an ERV or HRV function; DCV changes the amount of outdoor air brought in."
+   },
+   "explanation": "DCV trims ventilation when actual occupancy is below design, lowering conditioning load while maintaining code-minimum air quality. This replaces ventilating continuously for fixed design occupancy."
+  },
+  "cem-readiness-check-hvac-envelope-bas-010": {
+   "options": {
+    "a": "Outdoor air is a small share of supply and the site sees mostly mild, temperate weather",
+    "b": "Most exhaust air comes from kitchen hoods and fume hoods that cannot share a wheel with supply",
+    "c": "The supply and exhaust air streams are located on opposite ends of the building",
+    "d": "There is a significant temperature or enthalpy difference between exhaust and outdoor air streams"
+   },
+   "distractorExplanations": {
+    "a": "Low outdoor air fractions and mild weather leave little recoverable energy, which makes an ERV hard to justify.",
+    "b": "Grease and fume exhaust risk contaminating supply air through a wheel, so ERVs are usually excluded there.",
+    "c": "Separated airstreams require long ductwork or run-around loops, which raise cost and reduce ERV value."
+   },
+   "explanation": "ERVs transfer sensible and/or latent energy between exhaust and supply streams, reducing heating and cooling loads when conditions differ. Adequate annual run hours are also needed for a good payback."
+  },
+  "cem-readiness-check-hvac-envelope-bas-011": {
+   "options": {
+    "a": "Have lower first cost and simpler maintenance but may have higher unit energy use at scale",
+    "b": "Achieve lower kW/ton than a central water-cooled plant of the same capacity",
+    "c": "Have higher first cost but lower energy use because each zone gets its own packaged unit",
+    "d": "Need a dedicated chilled water loop and cooling tower to serve each unit"
+   },
+   "distractorExplanations": {
+    "b": "Air-cooled packaged units generally have higher kW/ton than water-cooled central plants of similar capacity.",
+    "c": "RTUs usually cost less up front, not more, and many small units are not inherently more efficient.",
+    "d": "Packaged rooftop units have self-contained DX refrigeration and need no chilled water loop or cooling tower."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-012": {
+   "options": {
+    "a": "Horizontally to the left (decreasing dry-bulb) at constant humidity ratio",
+    "b": "Horizontally to the right (increasing dry-bulb) at constant humidity ratio",
+    "c": "Vertically downward (decreasing humidity ratio) at constant dry-bulb",
+    "d": "Down and to the left along the saturation curve as moisture condenses"
+   },
+   "distractorExplanations": {
+    "b": "Moving right at constant humidity ratio is sensible heating, which raises dry-bulb rather than lowering it.",
+    "c": "Moving straight down at constant dry-bulb is pure dehumidification, which removes moisture without cooling.",
+    "d": "Following the saturation curve occurs with condensation, which is cooling with dehumidification."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-013": {
+   "options": {
+    "a": "Suction pressure alone, compared against a standard refrigerant pressure-temperature chart",
+    "b": "Compressor amperage compared against nameplate rated load amps (RLA)",
+    "c": "Superheat at the evaporator and subcooling at the condenser within manufacturer ranges",
+    "d": "Sight glass clarity, with bubbles indicating overcharge of refrigerant"
+   },
+   "distractorExplanations": {
+    "a": "Suction pressure alone gives saturation temperature but not superheat; charge needs pressure and line temperature.",
+    "b": "Amp draw varies with load and conditions, so it is not a reliable indicator of correct refrigerant charge.",
+    "d": "Bubbles in the sight glass usually indicate undercharge or flash gas, not overcharge."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-014": {
+   "options": {
+    "a": "Running chillers at full load overnight to cool the building mass before occupancy arrives",
+    "b": "Recirculating indoor air at minimum outdoor air to hold overnight setback",
+    "c": "Flushing warm indoor air and replacing it with cooler outdoor air during unoccupied hours",
+    "d": "Bringing in outdoor air during occupied hours whenever enthalpy is below return"
+   },
+   "distractorExplanations": {
+    "a": "Mechanical precooling uses chillers; night purge relies on cool outdoor air with fans only.",
+    "b": "Recirculation at minimum outdoor air is normal setback; purge maximizes outdoor air to flush heat.",
+    "d": "Outdoor air cooling during occupied hours is economizer operation; night purge runs during unoccupied hours."
+   },
+   "explanation": "When nighttime outdoor air is cooler than indoor mass/air, purge ventilation can reduce morning peak cooling load. Purge runs only when outdoor conditions allow."
+  },
+  "cem-readiness-check-hvac-envelope-bas-016": {
+   "options": {
+    "a": "Full-load conditions alone, with no part-load rating such as IPLV",
+    "b": "Standardized entering/leaving water temperatures and ambient conditions",
+    "c": "Site-specific design conditions submitted by each manufacturer",
+    "d": "ASHRAE 90.1 climate-zone design temperatures for each project"
+   },
+   "distractorExplanations": {
+    "a": "AHRI 550/590 defines both full-load ratings and the IPLV/NPLV part-load metrics.",
+    "c": "Manufacturer-chosen site conditions would prevent comparison; AHRI sets standard conditions for everyone.",
+    "d": "ASHRAE 90.1 uses AHRI ratings for its minimum efficiencies but does not define the rating test conditions."
+   },
+   "explanation": "AHRI conditions normalize chiller performance data so engineers can compare equipment at consistent test points. This gives comparable kW/ton ratings across manufacturers."
+  },
+  "cem-readiness-check-hvac-envelope-bas-017": {
+   "options": {
+    "a": "Lower coil capacity because the higher drop raises coil face velocity",
+    "b": "Higher chiller kW/ton because the supply air temperature setpoint must be raised",
+    "c": "Higher fan energy consumption and potential airflow reduction if not compensated",
+    "d": "Higher supply air humidity because the cooling coil bypass factor rises"
+   },
+   "distractorExplanations": {
+    "a": "Higher filter resistance reduces airflow, which lowers coil face velocity rather than raising it.",
+    "b": "Filter loading affects fan work; it does not force a supply air temperature reset or raise chiller kW/ton.",
+    "d": "Bypass factor depends on coil geometry and face velocity; filter loading mainly increases fan energy."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-018": {
+   "options": {
+    "a": "Losing conditioned air to unconditioned spaces before it reaches occupied zones",
+    "b": "Drawing unconditioned plenum air into the duct, which raises the supply air temperature",
+    "c": "Raising duct static pressure because leaks add resistance to the supply path",
+    "d": "Overventilating occupied zones as leakage air is counted as outdoor air"
+   },
+   "distractorExplanations": {
+    "b": "Supply ducts are under positive pressure and leak outward; drawing plenum air inward is return-side leakage.",
+    "c": "Leaks reduce resistance and lower delivered airflow; they do not add resistance to the supply path.",
+    "d": "Leaked supply air never reaches zones, so it does not overventilate them or count as outdoor air."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-019": {
+   "options": {
+    "a": "Equal pressure drop in every branch by setting all balancing valves fully open",
+    "b": "Design flow rates to coils and terminals so loads are met without excess pump energy",
+    "c": "Maximum velocity in each branch to keep air and debris moving through coils",
+    "d": "Control sequences respond correctly to setpoint changes in each operating mode"
+   },
+   "distractorExplanations": {
+    "a": "Fully open valves let near branches take excess flow; balancing sets valves to deliver design flow.",
+    "c": "Excess velocity increases noise, erosion, and pump energy; balancing targets design flow, not maximum velocity.",
+    "d": "Checking sequence response is functional performance testing; hydronic balancing sets design flow rates."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-020": {
+   "options": {
+    "a": "They use outdoor air for free cooling when conditions are favorable",
+    "b": "They recover heat from exhaust air to precondition the outdoor air supply",
+    "c": "They modulate outdoor air to match occupancy measured by CO2 sensors",
+    "d": "They use condenser water from the tower to make chilled water in winter"
+   },
+   "distractorExplanations": {
+    "b": "Exhaust heat recovery is an energy recovery requirement in 90.1, not the function of an air economizer.",
+    "c": "Modulating outdoor air by CO2 is demand controlled ventilation, a separate 90.1 provision.",
+    "d": "Making chilled water from tower water is a waterside economizer, which is not an air economizer."
+   },
+   "explanation": "Economizers can provide significant cooling energy savings where ambient conditions permit. This reduces mechanical cooling energy."
+  },
+  "cem-readiness-check-hvac-envelope-bas-023": {
+   "options": {
+    "a": "It replaces designed ventilation, so outdoor air dampers can be closed further",
+    "b": "It raises the building's pressurization, increasing exhaust fan energy",
+    "c": "It increases conduction through walls by lowering their effective R-value",
+    "d": "Unconditioned outdoor air enters the space, adding sensible and latent loads"
+   },
+   "distractorExplanations": {
+    "a": "Infiltration is uncontrolled and cannot be counted on for ventilation; designed outdoor air is still required.",
+    "b": "Infiltration occurs when the building is at negative pressure relative to outside; it does not pressurize it.",
+    "c": "Conduction depends on R-value, which infiltration does not change; infiltration adds air-exchange loads."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-024": {
+   "options": {
+    "a": "The fraction of solar radiation incident on the window that is transmitted plus absorbed and reradiated inward",
+    "b": "The fraction of visible light incident on the window that is transmitted through the glazing to the interior",
+    "c": "The rate of heat flow through the window per unit area and degree of indoor-outdoor temperature difference",
+    "d": "The fraction of solar radiation incident on the window that is reflected back outward from the exterior glass surface"
+   },
+   "distractorExplanations": {
+    "b": "The transmitted fraction of visible light is visible transmittance (VT), not the solar heat gain coefficient.",
+    "c": "Heat flow per unit area per degree of temperature difference is the U-factor, which describes conduction.",
+    "d": "The reflected fraction is solar reflectance; SHGC counts the solar energy that enters the building."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-025": {
+   "options": {
+    "a": "Localized heat gain only in summer, with no winter condensation concern",
+    "b": "Localized heat loss, condensation risk, and higher peak heating loads",
+    "c": "Air leakage through the parapet cap, which is an air barrier issue",
+    "d": "Uniform loss of R-value across the whole wall area, not a local effect"
+   },
+   "distractorExplanations": {
+    "a": "Thermal bridges lose heat in winter, creating cold interior spots where condensation can form.",
+    "c": "Air leakage is a separate air barrier problem; thermal bridging is conduction through conductive elements.",
+    "d": "Bridging creates concentrated local heat flow at the detail, not a uniform R-value loss over the wall."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-026": {
+   "options": {
+    "a": "Serve as the roof's primary air barrier in place of a separate membrane",
+    "b": "Add thermal mass that shifts the roof's peak cooling load to evening",
+    "c": "Raise the roof's solar reflectance so less solar heat is absorbed at the exterior surface",
+    "d": "Reduce thermal bridging through deck fasteners and maintain effective R-value"
+   },
+   "distractorExplanations": {
+    "a": "Insulation boards are not an air barrier by themselves; the air barrier must be a continuous separate layer.",
+    "b": "Rigid insulation has little thermal mass; its role is resisting heat flow and limiting thermal bridging.",
+    "c": "Solar reflectance is a property of the roof surface or coating, not the insulation layer beneath it."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-027": {
+   "options": {
+    "a": "Duct leakage to outside, commonly reported as CFM25 per 100 ft²",
+    "b": "Wall thermal resistance, commonly reported as an effective R-value",
+    "c": "Building airtightness, commonly reported as CFM50 or ACH50",
+    "d": "Ventilation airflow at the AHU, commonly reported as outdoor air cfm"
+   },
+   "distractorExplanations": {
+    "a": "Duct leakage at 25 Pa is measured with a duct blaster test, not a whole-building blower door test.",
+    "b": "Effective R-value comes from calculations or hot-box tests; a blower door measures air leakage.",
+    "d": "Outdoor air cfm at the AHU is measured during TAB; the blower door measures envelope airtightness."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-028": {
+   "options": {
+    "a": "Heat gains are shifted by storing and releasing heat over time",
+    "b": "Its high R-value stops heat flow so gains do not reach the space",
+    "c": "It reflects solar radiation before the heat reaches the interior",
+    "d": "The building runs 24/7 with no night setback or flushing period"
+   },
+   "distractorExplanations": {
+    "b": "Mass stores and delays heat; resisting heat flow is the role of insulation R-value, not thermal mass.",
+    "c": "Reflecting solar radiation is a cool roof or glazing property, not the heat storage effect of mass.",
+    "d": "Mass needs a cooler period to discharge stored heat; continuous operation without flushing removes that benefit."
+   },
+   "explanation": "Mass delays and attenuates peak loads, enabling load shifting strategies in suitable climates and controls. Appropriate ventilation or night flushing is needed to discharge the stored heat."
+  },
+  "cem-readiness-check-hvac-envelope-bas-029": {
+   "options": {
+    "a": "Heat loss through the roof in winter",
+    "b": "Conductive heat flow through the roof insulation",
+    "c": "Air leakage through the roof deck seams",
+    "d": "Solar heat absorption by the roof surface"
+   },
+   "distractorExplanations": {
+    "a": "Cool roofs reduce solar gain, which can slightly increase winter heating; they do not cut winter heat loss.",
+    "b": "Conduction through insulation is governed by R-value; reflectance reduces the solar heat absorbed at the surface.",
+    "c": "Deck seam leakage is an air barrier issue; reflectance does not change air leakage through the roof."
+   },
+   "explanation": "High reflectance lowers roof surface temperature and heat transfer to the interior, benefiting cooling-dominated buildings. Lower absorption reduces roof surface temperature and cooling load."
+  },
+  "cem-readiness-check-hvac-envelope-bas-030": {
+   "options": {
+    "a": "Lower U-factor in winter versus higher solar heat gain in summer",
+    "b": "Reduced solar heat gain versus potential loss of daylight and views",
+    "c": "Higher visible light transmittance versus increased winter heat loss",
+    "d": "Lower glare versus a higher SHGC that raises summer cooling loads"
+   },
+   "distractorExplanations": {
+    "a": "Solar control films lower SHGC, so they reduce summer solar gain rather than raising it.",
+    "c": "Solar control films generally lower visible transmittance; they do not raise it.",
+    "d": "Solar control films reduce SHGC; a higher SHGC would defeat the purpose of the film."
+   },
+   "explanation": "Films can lower cooling loads but designers must balance visible transmittance, glare, and winter heat gain impacts. The size of the trade-off depends on the film type."
+  },
+  "cem-readiness-check-hvac-envelope-bas-031": {
+   "options": {
+    "a": "Air barrier continuity, insulation installation quality, and fenestration performance",
+    "b": "Duct leakage, TAB airflows, and control sequences for each air handler and VAV box",
+    "c": "Roof structural capacity, wind uplift rating, and seismic anchorage",
+    "d": "Daylight sensor calibration, LPD compliance, and exit sign wattage"
+   },
+   "distractorExplanations": {
+    "b": "Duct leakage, TAB, and sequences are HVAC commissioning scope, not building envelope commissioning.",
+    "c": "Structural capacity and seismic anchorage are verified by the structural engineer, not envelope Cx.",
+    "d": "Daylight sensors and LPD fall under lighting controls commissioning, not envelope commissioning."
+   },
+   "explanation": "Envelope commissioning confirms assemblies perform as intended, supporting accurate loads and durability. Each is checked against the design intent."
+  },
+  "cem-readiness-check-hvac-envelope-bas-032": {
+   "options": {
+    "a": "A commanded setpoint value written by the operator to a controller",
+    "b": "A modulating signal sent to a valve or damper actuator by the controller",
+    "c": "A sensor value such as temperature or pressure read by the controller",
+    "d": "An on/off status contact such as a fan proof switch read by the controller"
+   },
+   "distractorExplanations": {
+    "a": "A writable setpoint is typically an Analog Value (AV) object; AI objects represent physical measured inputs.",
+    "b": "Modulating commands to actuators are Analog Output (AO) objects; AI objects carry measured sensor inputs.",
+    "d": "On/off status contacts are Binary Input (BI) objects; AI objects carry continuously variable measured values."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-033": {
+   "options": {
+    "a": "Lower first cost than pneumatics in each retrofit, with no added sensors needed",
+    "b": "Elimination of routine calibration because digital sensors do not drift over time",
+    "c": "Faster actuator stroke speeds that let dampers and valves respond within seconds",
+    "d": "Precise software-based control, trending, remote access, and complex sequencing"
+   },
+   "distractorExplanations": {
+    "a": "DDC retrofits often cost more up front than pneumatic repairs; the driver is control capability and data, not first cost.",
+    "b": "Sensors on digital systems still drift and need periodic calibration; DDC did not remove calibration from O&M programs.",
+    "c": "Actuator speed is a hardware property shared by pneumatic and electric actuators; DDC's advantage is software logic and trending."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-034": {
+   "options": {
+    "a": "Continuously adjust outputs to minimize error between setpoint and measured process variable",
+    "b": "Switch outputs fully on or off when the variable crosses a fixed differential band",
+    "c": "Schedule equipment start and stop times based on occupancy calendars and holidays",
+    "d": "Step outputs up or down on a fixed outdoor-temperature schedule without measuring the zone variable"
+   },
+   "distractorExplanations": {
+    "b": "Switching fully on/off around a differential describes two-position (on/off) control, not PID modulation.",
+    "c": "Occupancy start/stop is a time-of-day scheduling function, not a closed-loop PID algorithm acting on error.",
+    "d": "Acting on outdoor temperature without feedback from the controlled variable is open-loop control; PID needs measured feedback."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-035": {
+   "options": {
+    "a": "Starts HVAC at a fixed time each morning chosen from the coldest design day",
+    "b": "Calculates the latest start and earliest stop times to meet occupancy comfort",
+    "c": "Calculates the earliest start and latest stop times to maximize comfort margins",
+    "d": "Runs equipment at reduced capacity overnight so no morning warm-up is required"
+   },
+   "distractorExplanations": {
+    "a": "A fixed start time sized for the design day is conventional scheduling; optimal start varies the start time daily from conditions.",
+    "c": "Earliest start and latest stop maximize runtime; optimal start/stop does the opposite, using the latest start and earliest stop.",
+    "d": "Holding reduced capacity overnight is a standby strategy that adds runtime hours; optimal start removes unneeded hours."
+   },
+   "explanation": "Optimal algorithms reduce runtime while ensuring space conditions are met at occupancy. The timing is based on learned building response."
+  },
+  "cem-readiness-check-hvac-envelope-bas-036": {
+   "options": {
+    "a": "Running the most efficient available chiller(s) at favorable load points",
+    "b": "Staging chillers on equal runtime hours first, with efficiency as a tiebreaker",
+    "c": "Bringing on the next chiller as soon as the lead machine reaches 50% load",
+    "d": "Running the largest chiller first so that one machine can carry most loads"
+   },
+   "distractorExplanations": {
+    "b": "Runtime equalization is a maintenance goal; letting it override efficiency puts less efficient machines online at poor load points.",
+    "c": "Staging up at 50% runs two machines lightly loaded; staging should follow where each chiller's kW/ton is best, often at higher loads.",
+    "d": "The largest chiller is not necessarily the most efficient at the actual load; an oversized lead machine runs at low part load."
+   },
+   "explanation": "Effective staging matches capacity to load and selects efficient combinations, considering lift and part-load performance. Good sequencing also minimizes simultaneous inefficient operation."
+  },
+  "cem-readiness-check-hvac-envelope-bas-037": {
+   "options": {
+    "a": "Routing every alarm to the same email list so that no notification is missed",
+    "b": "Setting alarm limits at the equipment design ratings so alarms rarely occur",
+    "c": "Prioritization, nuisance alarm reduction, and documented response procedures",
+    "d": "Assigning critical priority to temperature alarms so operators respond fastest"
+   },
+   "distractorExplanations": {
+    "a": "Sending every alarm to one list without priority creates alarm fatigue; operators need severity tiers and routing by role.",
+    "b": "Limits set at design ratings flag faults too late; energy-waste alarms need tighter, operationally meaningful thresholds.",
+    "d": "Elevating routine temperature alarms to critical dilutes true life-safety and equipment-failure alarms; priorities must be tiered."
+   },
+   "explanation": "Actionable alarms with clear severity help operators maintain performance without alarm fatigue. Response procedures should be written for operators."
+  },
+  "cem-readiness-check-hvac-envelope-bas-038": {
+   "options": {
+    "a": "Envelope air leakage locations that need blower-door testing and air sealing",
+    "b": "Design airflow and capacity shortfalls that require replacing the equipment",
+    "c": "Utility billing errors such as wrong rate schedules or meter multiplier mistakes",
+    "d": "Control problems such as simultaneous heating and cooling or hunting valves"
+   },
+   "distractorExplanations": {
+    "a": "Leakage locations come from blower-door and infrared testing; BAS trends show control behavior, not where the envelope leaks.",
+    "b": "Trend reviews in RCx mostly reveal operational and sequence problems fixable at low cost, not capacity shortfalls needing replacement.",
+    "c": "Billing errors are found by bill audits against the tariff; BAS trend logs record equipment points, not utility rates or multipliers."
+   },
+   "explanation": "Long-term trend data shows how systems actually operate versus design intent. Economizers locked out are another common finding."
+  },
+  "cem-readiness-check-hvac-envelope-bas-039": {
+   "options": {
+    "a": "Increases reheat energy because zones drift farther from setpoint",
+    "b": "Reduces simultaneous heating and cooling when properly enforced",
+    "c": "Raises fan energy because supply airflow must rise to hold comfort",
+    "d": "Mainly lowers peak demand by staggering heating and cooling starts"
+   },
+   "distractorExplanations": {
+    "a": "Drifting within the deadband means neither heating nor cooling runs; reheat drops rather than rises with a wider deadband.",
+    "c": "In the deadband VAV boxes sit at minimum airflow; a wider deadband lowers rather than raises fan and reheat energy.",
+    "d": "Deadband targets concurrent heating and cooling energy in a zone; staggering equipment starts is a separate demand-limiting tactic."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-040": {
+   "options": {
+    "a": "Raise outdoor air to purge the zone each time the sensor detects vacancy",
+    "b": "Hold full ventilation in unoccupied zones and reset space temperature alone",
+    "c": "Reduce ventilation, lighting, or conditioning in unoccupied zones",
+    "d": "Shut off zone exhaust fans while keeping lighting on for security reasons"
+   },
+   "distractorExplanations": {
+    "a": "Vacancy should cut outdoor air toward the occupied-standby minimum; purging on every vacancy wastes conditioning energy.",
+    "b": "Codes such as ASHRAE 90.1 allow ventilation to drop in vacant zones; resetting temperature alone leaves ventilation savings unused.",
+    "d": "Occupancy integration typically turns lighting off in vacant zones; cutting exhaust while leaving lights on reverses the intent."
+   },
+   "explanation": "Occupancy-based control saves energy when sequences respect life safety and ventilation minimums. Reductions must follow the control sequence and code limits."
+  },
+  "cem-readiness-check-hvac-envelope-bas-041": {
+   "options": {
+    "a": "Optimize setpoints continuously by writing new values to field controllers in real time",
+    "b": "Identify equipment or control faults early using rules or analytics on operational data",
+    "c": "Verify savings for each ECM against an adjusted baseline using IPMVP Option B",
+    "d": "Schedule preventive maintenance tasks at fixed intervals from equipment run hours"
+   },
+   "distractorExplanations": {
+    "a": "Writing optimized setpoints is supervisory optimization control; FDD detects and diagnoses faults, often without commanding.",
+    "c": "Savings verification against a baseline is M&V; FDD diagnoses faults such as stuck dampers or sensor drift in operating data.",
+    "d": "Run-hour PM scheduling is a CMMS function; FDD uses operational data to flag faults as they appear, enabling condition-based work."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-042": {
+   "options": {
+    "a": "Merging BAS controllers onto the corporate office LAN so that IT tools can monitor them directly",
+    "b": "Allowing vendor remote access through a shared account with a strong password",
+    "c": "Deferring controller firmware updates until equipment replacement to avoid any operational downtime",
+    "d": "Segmenting control networks from general IT and restricting remote access with authentication"
+   },
+   "distractorExplanations": {
+    "a": "Flattening the BAS onto the office LAN widens the attack surface; segmentation keeps control traffic isolated from general IT.",
+    "b": "A shared vendor account, even with a strong password, prevents individual accountability; each user needs unique authenticated access.",
+    "c": "Deferring patches leaves known vulnerabilities open for years; updates should be scheduled and tested, not postponed to replacement."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-043": {
+   "options": {
+    "a": "Determine each end use's exact share of consumption without any submetering",
+    "b": "Replace the utility revenue meter reading in billing disputes with BAS totals",
+    "c": "Correlate whole-building consumption with equipment operation and identify anomalies",
+    "d": "Set the utility demand ratchet level by forecasting next month's peak from the BAS trend data"
+   },
+   "distractorExplanations": {
+    "a": "Whole-building interval data cannot disaggregate end uses exactly; submeters or engineering estimates are still needed for detail.",
+    "b": "BAS trend points are not revenue-grade; billing disputes rely on utility or shadow revenue meters, not controller totals.",
+    "d": "Ratchet levels are set by the tariff from recorded billing peaks; customers cannot set them from their own BAS forecasts."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-044": {
+   "options": {
+    "a": "It focuses on existing systems using operational data to find drift from design or changed use",
+    "b": "It is performed before occupancy to confirm the design intent of new systems",
+    "c": "It re-commissions a building that was already commissioned, repeating the process on a periodic cycle",
+    "d": "It replaces aging equipment with new high-efficiency units sized to the building's current loads"
+   },
+   "distractorExplanations": {
+    "b": "Pre-occupancy verification of design intent describes initial (new-building) commissioning, the opposite of retrocommissioning.",
+    "c": "Periodic repeat of a previously commissioned building is re-commissioning; RCx is a first commissioning of an existing building.",
+    "d": "Equipment replacement is a capital retrofit; RCx focuses on low-cost operational fixes to existing systems and controls."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-045": {
+   "options": {
+    "a": "Rotating lead and lag chillers to balance runtime across machines",
+    "b": "Multiple chillers operating at very low part load simultaneously",
+    "c": "Resetting condenser water temperature lower when wet-bulb allows",
+    "d": "Locking out a chiller when load falls below its minimum stable flow"
+   },
+   "distractorExplanations": {
+    "a": "Lead/lag rotation balances wear and is a sound practice; parallel chiller sequences should keep it, not avoid it.",
+    "c": "Lowering condenser water temperature when wet-bulb permits reduces lift and kW/ton; it is a recommended strategy.",
+    "d": "Lockout below minimum stable flow protects the machine from surge and low-flow trips; it should be included, not avoided."
+   },
+   "explanation": "Poor staging increases kW/ton by running too many machines at inefficient low loads. This matters most when one chiller could carry the load efficiently."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-001": {
+   "options": {
+    "a": "Tuning excess air, maintaining clean heat transfer surfaces, and recovering waste heat",
+    "b": "Raising excess air well above 30% to ensure complete burnout at each firing rate",
+    "c": "Raising stack temperature so that more heat leaves with the flue gas as useful work",
+    "d": "Increasing blowdown frequency and firing at maximum steam pressure in each season"
+   },
+   "distractorExplanations": {
+    "b": "Excess air far above the burner's optimum carries heat up the stack; typical gas targets are about 10-15% (2-3% O2).",
+    "c": "Higher stack temperature means more heat lost to the flue; efficiency improves when stack temperature is lowered.",
+    "d": "Extra blowdown discards heated water and needless high pressure raises losses; neither improves combustion efficiency."
+   },
+   "explanation": "Efficient combustion minimizes excess air while maintaining complete burn and maximizing heat transfer to the load. Waste heat recovery applies where feasible."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-002": {
+   "options": {
+    "a": "Hold a fixed air damper position set during the annual tune-up",
+    "b": "Maintain target carbon dioxide in the combustion air across loads",
+    "c": "Maintain target excess oxygen in the flue gas across varying loads",
+    "d": "Maintain a target stack temperature by modulating the feedwater pump"
+   },
+   "distractorExplanations": {
+    "a": "A fixed damper position is mechanical linkage control without feedback; O2 trim corrects air based on measured flue oxygen.",
+    "b": "Trim measures oxygen (or CO) in the flue gas, not CO2 in incoming combustion air, which is essentially ambient air.",
+    "d": "Feedwater control maintains drum level; O2 trim adjusts the air-fuel ratio, and stack temperature is a result, not its setpoint."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-003": {
+   "options": {
+    "a": "Returning blowdown water to the deaerator as clean feedwater makeup",
+    "b": "Reducing the blowdown rate by raising boiler water conductivity limits",
+    "c": "Capturing latent heat from flue gas condensing in the economizer section of the stack",
+    "d": "Capturing sensible heat from blowdown water before it is discharged to drain"
+   },
+   "distractorExplanations": {
+    "a": "Blowdown carries concentrated dissolved solids; returning it as feedwater defeats its purpose. Only its heat and flash steam are reused.",
+    "b": "Changing conductivity limits adjusts how much blowdown occurs; blowdown heat recovery captures heat from whatever is discharged.",
+    "c": "Flue-gas condensing recovery is a condensing economizer measure, not blowdown heat recovery from boiler water."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-004": {
+   "options": {
+    "a": "Condensate backing up into heat exchangers when traps fail open",
+    "b": "Live steam loss to condensate return or atmosphere, wasting fuel",
+    "c": "Higher steam pressure in the mains as failed traps hold back steam",
+    "d": "Lower boiler load because less condensate is returned to the plant"
+   },
+   "distractorExplanations": {
+    "a": "Traps failing open blow live steam through; condensate backup into equipment is the symptom of a trap that fails closed.",
+    "c": "Failed-open traps vent steam and lower available pressure; they do not raise main pressure by holding steam back.",
+    "d": "Steam lost through failed traps must be replaced by the boiler, raising fuel use and makeup water rather than lowering load."
+   },
+   "explanation": "Blown traps pass steam continuously, increasing boiler load and risking system damage. Failed traps can also cause water hammer."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-005": {
+   "options": {
+    "a": "Returned condensate retains heat and reduces makeup water heating demand",
+    "b": "Returned condensate raises boiler pressure and lowers the firing rate",
+    "c": "Returned condensate needs no deaeration, removing deaerator steam use",
+    "d": "Returned condensate contains latent heat that is released in the boiler"
+   },
+   "distractorExplanations": {
+    "b": "Condensate return affects feedwater temperature, not operating pressure; the fuel saving comes from heat already in the water.",
+    "c": "Condensate still passes through the deaerator; return mainly cuts makeup heating, treatment chemicals, and water costs.",
+    "d": "Condensate has already given up its latent heat at the process; what it returns is sensible heat that preheats feedwater."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-006": {
+   "options": {
+    "a": "The ratio of steam output to fuel input at full firing rate",
+    "b": "The time needed to go from cold start to full firing rate",
+    "c": "The share of boiler capacity held in reserve at peak load",
+    "d": "The range between minimum and maximum stable firing rate"
+   },
+   "distractorExplanations": {
+    "a": "Output divided by fuel input is boiler efficiency; turndown compares the maximum to the minimum stable firing rate.",
+    "b": "Cold-start time is a warm-up or ramp-rate characteristic; turndown is the max-to-min stable firing rate ratio.",
+    "c": "Reserve capacity at peak is a redundancy or standby margin, not the burner's maximum-to-minimum firing ratio."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-007": {
+   "options": {
+    "a": "Compressors consume significant electricity to produce air that performs no useful work",
+    "b": "Leaks lower system pressure, which mainly raises the risk of compressed air dryer freeze-ups",
+    "c": "Leak losses are mostly a water-treatment cost from the extra condensate drainage they create",
+    "d": "Leaks add demand charges but use no extra kWh because compressors run anyway"
+   },
+   "distractorExplanations": {
+    "b": "Leak pressure drop affects end-use tools and compressor runtime; dryer freezing is not the main cost of leaks.",
+    "c": "Condensate drainage is minor; the dominant cost of leaks is the compressor electricity used to make air that is wasted.",
+    "d": "Leaks add compressor runtime and kWh as well as demand; compressors run longer and load more to replace leaked air."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-008": {
+   "options": {
+    "a": "Lower pressure raises air density at the compressor inlet and boosts output",
+    "b": "Lower pressure lets end-use tools run faster, shortening process cycle times",
+    "c": "Compressor power decreases when less pressure rise is required for the same flow",
+    "d": "Compressor motor efficiency rises sharply at lower discharge pressure"
+   },
+   "distractorExplanations": {
+    "a": "Inlet density depends on ambient conditions, not system discharge pressure; savings come from a lower compression ratio.",
+    "b": "Tools at lower pressure typically deliver less force or speed; the saving comes from compressor power, not faster tools.",
+    "d": "Motor efficiency is nearly flat across normal loads; savings come from less compression work, not a jump in motor efficiency."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-009": {
+   "options": {
+    "a": "Ranking exhaust streams by volume flow rate without regard to temperature",
+    "b": "Targeting exhaust streams above 1,000°F because lower grades are unusable",
+    "c": "Surveying electrical submeters to find motors with the highest run hours",
+    "d": "Mapping energy flows and finding exhaust streams with usable temperature"
+   },
+   "distractorExplanations": {
+    "a": "Recoverable heat depends on temperature and heat capacity relative to sinks; flow rate alone does not identify usable heat.",
+    "b": "Low- and medium-grade waste heat (below about 450°F) is widely recovered for preheating water, air, and process streams.",
+    "c": "Motor run-hour surveys find drive and motor opportunities; heat recovery requires thermal stream temperatures and loads."
+   },
+   "explanation": "Pinch analysis and heat balances reveal where recovered heat can preheat combustion air, water, or process loads. The usable temperature must sit above downstream needs."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-010": {
+   "options": {
+    "a": "Generating power at higher electrical efficiency than a combined-cycle plant",
+    "b": "Running the prime mover at grid peak hours to export power to the utility",
+    "c": "Using utility power for thermal loads and onsite fuel for electrical loads",
+    "d": "Using waste heat from power generation for thermal loads instead of rejecting it"
+   },
+   "distractorExplanations": {
+    "a": "CHP prime movers usually have lower electrical efficiency than combined-cycle plants; the gain comes from using the heat.",
+    "b": "Peak export is a dispatch strategy; CHP's fuel-utilization gain depends on using recovered heat at a thermal load.",
+    "c": "This swaps energy sources without capturing waste heat; CHP generates power onsite and recovers its rejected heat."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-011": {
+   "options": {
+    "a": "Lowering fluid velocity so that heat exchangers reach a smaller approach",
+    "b": "Raising the overall U-value because deposits add surface area for transfer",
+    "c": "Adding thermal resistance and requiring higher approach temperatures or flow",
+    "d": "Lowering pump head, which forces control valves to throttle and waste energy"
+   },
+   "distractorExplanations": {
+    "a": "Fouling narrows passages, raising pressure drop, and widens the approach; it does not produce a smaller approach.",
+    "b": "Deposits add a fouling resistance that lowers the overall U-value; any added area is negligible versus the resistance.",
+    "d": "Fouling raises, not lowers, pressure drop and pump head; extra pumping energy comes from that higher resistance."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-012": {
+   "options": {
+    "a": "Motors operate most efficiently near full load; low load factor may indicate oversizing",
+    "b": "Motors operate most efficiently near 25% load; high load factor indicates overloading",
+    "c": "Load factor sets the motor's utility demand charge independent of its runtime",
+    "d": "Low load factor means a motor has a high power factor and needs no correction"
+   },
+   "distractorExplanations": {
+    "b": "Motor efficiency peaks roughly at 75-100% load and drops sharply below about 40%; 25% load is inefficient operation.",
+    "c": "Demand charges depend on coincident peak kW; load factor describes average versus rated motor load for efficiency screening.",
+    "d": "Lightly loaded induction motors have low, not high, power factor; low load factor often worsens reactive demand."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-013": {
+   "options": {
+    "a": "Lower pressure raises steam's saturation temperature and speeds heat transfer",
+    "b": "Lower pressure steam has less latent heat, so each pound carries less energy",
+    "c": "Lower pressure eliminates flash steam at condensate traps and receivers",
+    "d": "Lower pressure reduces heat loss through piping and may improve boiler efficiency"
+   },
+   "distractorExplanations": {
+    "a": "Saturation temperature falls as pressure drops; the heat transfer driving force decreases, which is why process needs set the floor.",
+    "b": "Latent heat per pound actually rises slightly as pressure falls; the saving comes from lower line and flash losses.",
+    "c": "Flash steam forms whenever condensate drops to a lower pressure; lowering system pressure reduces flash rather than eliminating it."
+   },
+   "explanation": "Lower system pressure reduces saturation temperature and line losses if process requirements permit. The boiler efficiency gain comes at lower firing."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-014": {
+   "options": {
+    "a": "Excess air and incomplete combustion that raise flue-gas stack losses",
+    "b": "Soot buildup on fireside tube surfaces that raises the stack temperature",
+    "c": "Scale, corrosion, and carryover that reduce efficiency and damage equipment",
+    "d": "Steam trap failures and condensate line leaks across the distribution system"
+   },
+   "distractorExplanations": {
+    "a": "Excess air is a fireside combustion issue controlled by tuning and O2 trim; water treatment protects the waterside.",
+    "b": "Fireside soot comes from combustion and is cleaned by soot blowing or tuning; water treatment addresses waterside scale.",
+    "d": "Trap failures are mechanical issues found by trap surveys; treatment controls waterside chemistry, though it slows line corrosion."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-015": {
+   "options": {
+    "a": "Actual energy output divided by theoretical maximum output at rated capacity over a period",
+    "b": "Actual AC energy output divided by the total solar energy incident on the module surface",
+    "c": "Peak sun hours per day divided by 24 hours, adjusted for the inverter rating",
+    "d": "Measured output divided by modeled expected output for the same weather period, as a percentage"
+   },
+   "distractorExplanations": {
+    "b": "Output divided by incident solar energy is system or module conversion efficiency, not capacity factor.",
+    "c": "Peak sun hours describe the solar resource; capacity factor compares actual kWh to rated kW times hours in the period.",
+    "d": "Measured versus modeled output under actual weather is the performance ratio or performance index, not capacity factor."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-017": {
+   "options": {
+    "a": "Rated power, rotor diameter, and grid voltage level",
+    "b": "Tower height alone, since wind speed rises with height",
+    "c": "Turbine nameplate rating and the local electric tariff",
+    "d": "Wind resource, turbine availability, and wake losses"
+   },
+   "distractorExplanations": {
+    "a": "Rated power is the denominator of capacity factor; grid voltage does not determine how much of it the site achieves.",
+    "b": "Hub height matters through the wind resource, but availability and wake losses also drive capacity factor; height alone is incomplete.",
+    "c": "Tariffs affect project revenue, not physical energy production; capacity factor depends on resource, availability, and losses."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-018": {
+   "options": {
+    "a": "Process needs low- to medium-temperature heat and good solar resource with storage or backup",
+    "b": "Process needs high-pressure steam above 400°F with demand peaking during the night shifts",
+    "c": "Process load runs mainly on night shifts and the site lacks any thermal storage for solar heat",
+    "d": "Process heat is supplied by cheap waste heat already available onsite"
+   },
+   "distractorExplanations": {
+    "b": "Typical flat-plate and evacuated-tube collectors serve low to medium temperatures; night peaks also mismatch solar supply.",
+    "c": "Solar collection occurs in daylight; night-dominant loads without storage leave collected heat unused.",
+    "d": "Free waste heat already onsite undercuts solar thermal economics; solar preheat fits where fossil preheat would otherwise be bought."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-019": {
+   "options": {
+    "a": "Water chemistry and blowdown alone, since combustion runs much like natural gas",
+    "b": "Electrical service sizing and harmonics from the boiler's heating elements",
+    "c": "Refrigerant charge, compressor lift, and condenser fouling in the heat loop",
+    "d": "Fuel supply consistency, emissions controls, ash handling, and combustion tuning"
+   },
+   "distractorExplanations": {
+    "a": "Biomass combustion differs from gas firing: variable fuel moisture and size require fuel handling, ash removal, and tuning.",
+    "b": "Heating elements and harmonics belong to electric boilers; biomass units burn solid fuel and need fuel and ash systems.",
+    "c": "Refrigerant charge and lift are heat pump or chiller concerns; biomass boilers raise heat by combustion, not compression."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-020": {
+   "options": {
+    "a": "Electrochemical reaction, often with usable heat depending on type",
+    "b": "Combustion of hydrogen in a micro-turbine that drives a small generator",
+    "c": "Photovoltaic conversion of light in cells stacked inside a sealed module",
+    "d": "Thermoelectric conversion of a temperature difference across a junction"
+   },
+   "distractorExplanations": {
+    "b": "Fuel cells convert fuel chemically without combustion; burning fuel in a micro-turbine is a different DG technology.",
+    "c": "Light-to-electricity conversion is photovoltaics; fuel cells use an electrochemical reaction of hydrogen-rich fuel and oxygen.",
+    "d": "Thermoelectric generators use the Seebeck effect across a junction; fuel cells react fuel and oxidant at electrodes."
+   },
+   "explanation": "Fuel cells offer high electrical efficiency and recoverable heat for CHP applications. High-temperature types such as MCFC and SOFC offer the most usable heat."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-021": {
+   "options": {
+    "a": "The local system trips its generators offline whenever the utility grid is lost and waits for restoration",
+    "b": "The local system exports surplus generation to the grid during peak hours",
+    "c": "The local system can disconnect from the utility grid and continue serving critical loads",
+    "d": "The local system runs permanently off-grid with no utility interconnection or parallel operation"
+   },
+   "distractorExplanations": {
+    "a": "Shutting down on grid loss is standard anti-islanding behavior for grid-tied inverters; islanding keeps serving loads.",
+    "b": "Exporting surplus is grid-parallel operation under net metering or export rules; islanding means operating disconnected.",
+    "d": "A permanently off-grid system is not a microgrid with islanding capability, which connects and disconnects as needed."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-022": {
+   "options": {
+    "a": "A tradable permit for one ton of CO2 emitted under a cap-and-trade program",
+    "b": "Physical delivery of renewable electrons from a named generator to the site",
+    "c": "A verified emission reduction credit from a project like methane capture",
+    "d": "The environmental attributes of renewable generation, separable from energy"
+   },
+   "distractorExplanations": {
+    "a": "Emission allowances under cap-and-trade are a different instrument; one REC represents 1 MWh of renewable generation attributes.",
+    "b": "Electrons on a shared grid cannot be traced; RECs track attribute ownership separate from the physical power flow.",
+    "c": "Project-based carbon offsets measure tonnes of avoided emissions; RECs certify MWh of renewable generation attributes."
+   },
+   "explanation": "RECs document renewable attribute claims for compliance or voluntary goals. Separation from the energy applies in some markets."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-023": {
+   "options": {
+    "a": "The site's ECM savings potential and its eligibility for utility rebates",
+    "b": "Grid impacts, protection settings, and power quality for safe parallel operation",
+    "c": "Generator fuel supply contracts and onsite emissions permit conditions for the new unit",
+    "d": "Building load profiles to size the generator for maximum self-consumption"
+   },
+   "distractorExplanations": {
+    "a": "Savings potential and rebates come from audits and program rules; interconnection studies assess grid safety and reliability.",
+    "c": "Fuel contracts and air permits are separate project tasks; utilities study fault current, protection, and power quality.",
+    "d": "Load profiles inform the owner's sizing decision; the utility study evaluates impacts on the distribution system."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-024": {
+   "options": {
+    "a": "Feedwater or combustion air using flue gas heat before it exits the stack",
+    "b": "Makeup water using heat recovered from continuous surface blowdown before the deaerator",
+    "c": "Outdoor ventilation air using exhaust air from the boiler room",
+    "d": "Condensate return using flash steam from the deaerator vent"
+   },
+   "distractorExplanations": {
+    "b": "Preheating makeup with blowdown heat is a blowdown heat exchanger, not an economizer, which uses flue gas heat.",
+    "c": "Exhaust-to-ventilation air recovery is an HVAC energy recovery ventilator; an economizer recovers flue gas heat.",
+    "d": "Flash steam and vent condensers recover deaerator or condensate heat; economizers transfer stack heat to feedwater."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-025": {
+   "options": {
+    "a": "Lowering steam velocity so less pressure drop occurs in the mains",
+    "b": "Lowering heat transfer from hot pipes to ambient surroundings",
+    "c": "Raising steam pressure so condensate forms farther from the boiler",
+    "d": "Lowering the steam's saturation temperature to cut surface losses"
+   },
+   "distractorExplanations": {
+    "a": "Velocity and pressure drop depend on pipe size and flow; insulation reduces heat loss, not friction in the mains.",
+    "c": "Insulation does not change system pressure; it reduces condensation caused by heat loss along the line.",
+    "d": "Saturation temperature is set by pressure, not insulation; insulation adds thermal resistance between the pipe and air."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-026": {
+   "options": {
+    "a": "The difference between peak and off-peak electricity prices in a TOU tariff",
+    "b": "The ratio of electrical output to fuel input of the CHP prime mover",
+    "c": "The difference between natural gas commodity and pipeline delivery charges",
+    "d": "The difference between electricity purchase price and fuel cost"
+   },
+   "distractorExplanations": {
+    "a": "The peak/off-peak spread drives load shifting and storage; spark spread compares the power price with the fuel cost.",
+    "b": "Output over fuel input is electrical efficiency; spark spread is a price difference between electricity and fuel.",
+    "c": "Commodity versus delivery split is a gas bill structure; spark spread compares electricity price against fuel cost."
+   },
+   "explanation": "Favorable spark spread means onsite generation fuel cost is below avoided electricity cost. The comparison is made on an equivalent energy basis."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-027": {
+   "options": {
+    "a": "There is a large winter heating load and little summer cooling demand",
+    "b": "Electricity is cheap relative to gas and recovered heat is unavailable",
+    "c": "Recovered heat is available only at 120°F from engine jacket water",
+    "d": "There is sufficient thermal input and concurrent cooling load"
+   },
+   "distractorExplanations": {
+    "a": "Absorption chillers need a cooling load; a heating-dominated site would use CHP heat directly, not for cooling.",
+    "b": "Cheap power and no waste heat favor electric chillers; absorption pays off when recovered heat is free and power costly.",
+    "c": "Single-effect absorbers need hot water around 180-200°F or steam; 120°F heat is too low to drive them well."
+   },
+   "explanation": "Heat-driven cooling leverages CHP thermal output, improving overall system efficiency. Both conditions are needed to utilize the recovered heat."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-028": {
+   "options": {
+    "a": "Throttled valves, oversized pumps, and poor maintenance of impellers and seals",
+    "b": "Undersized pumps that run continuously at the right end of their curves",
+    "c": "VFD-controlled pumps with trimmed impellers matched to the system curve",
+    "d": "Low-friction piping layouts that let pumps run near best efficiency point"
+   },
+   "distractorExplanations": {
+    "b": "Oversizing, not undersizing, is the common waste; oversized pumps are throttled back and run far from best efficiency.",
+    "c": "VFDs and impeller trimming are remedies that cut pumping energy, not typical sources of waste.",
+    "d": "Running near BEP with low friction is the efficient condition; waste comes from throttling and pump-system mismatch."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-029": {
+   "options": {
+    "a": "Demand is steady at full load and the compressor rarely unloads",
+    "b": "Demand varies and inlet modulation or unload modes would otherwise waste power",
+    "c": "Demand varies but the VFD unit serves as a constant base-load machine",
+    "d": "Demand is steady and the plant pressure setpoint is raised to cover occasional peaks"
+   },
+   "distractorExplanations": {
+    "a": "At steady full load a fixed-speed compressor runs efficiently; a VFD adds drive losses and gives little benefit.",
+    "c": "A VFD compressor should be the trim unit; running it as base load at full speed wastes its part-load advantage.",
+    "d": "Raising pressure increases compressor power and leak flow; a VFD's benefit comes from varying demand, not higher setpoints."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-030": {
+   "options": {
+    "a": "The lowest flue gas temperature allowed before acid condensation occurs in the stack",
+    "b": "The economic pipe size that balances friction loss against first cost",
+    "c": "The point of maximum heat exchanger effectiveness in a single counterflow exchanger unit",
+    "d": "The minimum temperature approach limiting heat recovery between hot and cold streams"
+   },
+   "distractorExplanations": {
+    "a": "That is the acid dew point limit on stack heat recovery; pinch analysis finds the network temperature bottleneck.",
+    "b": "Economic pipe sizing trades pumping energy against capital cost; pinch analysis concerns heat exchange between streams.",
+    "c": "Effectiveness describes a single exchanger; pinch analysis uses composite curves for the whole process network."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-031": {
+   "options": {
+    "a": "Increases output in the first years as cells cure, then levels off",
+    "b": "Reduces output gradually due to cell aging and potential-induced degradation",
+    "c": "Reduces output by about 5% per year until the warranty period ends",
+    "d": "Lowers inverter efficiency each year while module output stays at STC rating"
+   },
+   "distractorExplanations": {
+    "a": "Modules lose output early through light-induced degradation rather than gaining; output then declines about 0.5%/year.",
+    "c": "Typical degradation is about 0.5-0.8% per year; 5% per year would exceed standard performance warranties many times over.",
+    "d": "Degradation refers to module power loss; inverter efficiency is a separate component rating that degradation rates do not describe."
+   },
+   "explanation": "Financial models use degradation rates (often ~0.5%/year) for long-term production estimates. Soiling adds further output losses in the field."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-032": {
+   "options": {
+    "a": "DC array maximum power exceeds inverter AC rating and output is limited at peak sun",
+    "b": "AC grid voltage drops below the inverter's minimum setting and output trips offline briefly",
+    "c": "Module temperature rises at peak sun and lowers the array's voltage output",
+    "d": "Shading of one string forces bypass diodes to cut that string's output"
+   },
+   "distractorExplanations": {
+    "b": "Low grid voltage causes an under-voltage trip, which stops output; clipping is a power limit with output continuing.",
+    "c": "Heat-related voltage loss is temperature derating of modules; clipping happens at the inverter's AC power limit.",
+    "d": "Bypass diode activation is a shading mismatch loss; clipping occurs when DC power exceeds the inverter AC rating."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-033": {
+   "options": {
+    "a": "Loop fluid has higher glycol concentration than freeze protection needs",
+    "b": "Entering source temperature is favorable relative to required lift",
+    "c": "Loop flow rate is reduced to cut pumping energy below design minimum",
+    "d": "Supply water temperature to the building is raised in heating mode"
+   },
+   "distractorExplanations": {
+    "a": "Excess glycol raises viscosity and pumping energy and lowers heat transfer, reducing rather than improving COP.",
+    "c": "Flow below design raises the temperature change across the heat pump, increasing lift and possibly tripping units.",
+    "d": "Higher heating supply temperature increases compressor lift and lowers COP; lower supply temperatures improve it."
+   },
+   "explanation": "Stable ground temperatures reduce lift compared to air-source extremes, improving COP. This applies in both heating and cooling mode."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-034": {
+   "options": {
+    "a": "Gas is compressed to the burner supply pressure without removing H2S or moisture",
+    "b": "Gas methane content is held below 30% so that flame temperatures stay low",
+    "c": "Gas is cleaned to meet equipment fuel specifications and heating value is sufficient",
+    "d": "Gas is blended with air before storage to raise its heating value per cubic foot"
+   },
+   "distractorExplanations": {
+    "a": "Compression alone leaves H2S, moisture, and siloxanes that corrode and foul engines and boilers; cleaning is required.",
+    "b": "Digester gas typically runs 55-65% methane; very low methane makes combustion unstable and reduces heating value.",
+    "d": "Adding air dilutes heating value and can create explosive mixtures; heating value rises by removing CO2, not adding air."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-035": {
+   "options": {
+    "a": "Run at maximum boiler design pressure so that steam carries more energy",
+    "b": "Match the lowest pressure adequate for all connected loads to minimize losses",
+    "c": "Be set by the average pressure demand of connected loads rather than the highest need",
+    "d": "Stay at boiler pressure with each user throttling steam by hand valves"
+   },
+   "distractorExplanations": {
+    "a": "Higher pressure raises line, flash, and trap losses; latent heat per pound actually falls as pressure rises.",
+    "c": "Setting to the average starves the most demanding loads; header pressure must satisfy the highest required use pressure.",
+    "d": "Hand throttling wastes control and causes erratic supply; PRVs or separate headers step pressure down to each use point."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-036": {
+   "options": {
+    "a": "The boiler frequently short-cycles at low load without turndown or buffer capacity",
+    "b": "The boiler runs continuously at high fire to carry a steady process base load",
+    "c": "Several smaller modular boilers are staged in sequence to follow load swings",
+    "d": "The burner has a high turndown ratio and modulates down at light loads"
+   },
+   "distractorExplanations": {
+    "b": "Continuous steady firing minimizes purge and standby losses; cycling losses arise from frequent on/off operation.",
+    "c": "Staging smaller modules matches load and reduces cycling; it is a remedy, not a cause of cycling losses.",
+    "d": "High turndown lets the burner modulate rather than cycle, lowering losses; low turndown is what causes short cycling."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-037": {
+   "options": {
+    "a": "Calculate combustion efficiency directly from the hourly steam flow data",
+    "b": "Size the boiler plant for the annual average load to reduce standby losses",
+    "c": "Set the water treatment chemical feed rate from the daily peak firing rate",
+    "d": "Identify opportunities for scheduling, staging, and right-sizing equipment"
+   },
+   "distractorExplanations": {
+    "a": "Combustion efficiency needs flue O2 and stack temperature; steam flow profiles show load timing and part-load hours.",
+    "b": "Sizing to the average load leaves peaks unmet; profiling supports right-sizing to actual peaks and part-load hours.",
+    "c": "Chemical feed is set from makeup volume and water chemistry tests, not from load profiling of peak firing."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-038": {
+   "options": {
+    "a": "The site finances and owns the system through a loan repaid from savings",
+    "b": "A third party owns and operates the system while the site buys energy at agreed rates",
+    "c": "The site leases the equipment for a fixed monthly fee independent of output",
+    "d": "The utility owns the array on site and credits the customer at the retail net-metering rate"
+   },
+   "distractorExplanations": {
+    "a": "Owner financing through a loan is direct ownership; under a PPA a third party owns the system and sells the power.",
+    "c": "A fixed lease payment not tied to output is a solar lease; a PPA bills per kWh actually produced.",
+    "d": "Utility-owned arrays with bill credits describe community or utility solar programs; PPAs use a third-party developer."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-039": {
+   "options": {
+    "a": "Fuel carbon content, generation efficiency, and displaced grid emissions factors",
+    "b": "Fuel carbon content alone, since displaced grid power is treated as having no emissions",
+    "c": "Generator nameplate kW and annual run hours, without any fuel or grid emissions data",
+    "d": "Grid emissions factors and onsite peak demand, with fuel use excluded"
+   },
+   "distractorExplanations": {
+    "b": "Displaced grid electricity carries an emissions factor; omitting it misstates DG's net emissions impact.",
+    "c": "Nameplate and hours give energy output but not emissions; fuel carbon content and efficiency set DG emissions.",
+    "d": "Excluding DG fuel use ignores the onsite source of emissions; net impact compares DG fuel emissions with grid emissions."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-040": {
+   "options": {
+    "a": "Traps that are blowing live steam or blocked by distinguishing acoustic signatures",
+    "b": "Trap body surface temperature, to confirm the condensate is subcooled below 100°F at discharge",
+    "c": "Wall thickness loss in steam mains caused by erosion and corrosion",
+    "d": "Dissolved oxygen levels in the condensate returning from the traps to the deaerator"
+   },
+   "distractorExplanations": {
+    "b": "Surface temperature is measured with infrared or contact thermometers; ultrasound detects flow noise through the trap.",
+    "c": "Pipe wall thickness is measured by ultrasonic thickness gauging, a different technique from acoustic trap testing.",
+    "d": "Dissolved oxygen is measured by water chemistry sampling; ultrasonic trap testing listens for steam or condensate flow."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-041": {
+   "options": {
+    "a": "Hold blowdown at a fixed 10% of steam flow set at commissioning",
+    "b": "Maximize cycles of concentration even beyond conductivity limits",
+    "c": "Maintain acceptable water chemistry while minimizing energy loss",
+    "d": "Minimize energy loss by blowing down once per shift by hand"
+   },
+   "distractorExplanations": {
+    "a": "A fixed blowdown rate ignores changing makeup quality; the rate should follow measured conductivity or TDS.",
+    "b": "Exceeding conductivity limits causes scale and carryover; cycles should be raised only up to the chemistry limits.",
+    "d": "Infrequent manual blowdown lets TDS swing above and below targets; continuous conductivity control is better."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-042": {
+   "options": {
+    "a": "Produces steam by burning fuel in a fired furnace with no exhaust input",
+    "b": "Condenses turbine exhaust steam and returns it as boiler feedwater",
+    "c": "Produces chilled water from exhaust heat using a lithium bromide cycle",
+    "d": "Produces steam from exhaust heat of a gas turbine or reciprocating engine"
+   },
+   "distractorExplanations": {
+    "a": "A conventional fired boiler burns fuel directly; an HRSG uses prime-mover exhaust, with duct burners only supplementing.",
+    "b": "Condensing exhaust steam is the job of a surface condenser; an HRSG generates steam from hot exhaust gas.",
+    "c": "Exhaust-driven chilled water comes from an absorption chiller; an HRSG produces steam or hot water, not chilled water."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-043": {
+   "options": {
+    "a": "Lower cooling tower load for absorption chillers versus higher load for electric units",
+    "b": "Heat input versus electrical kW/ton depending on relative fuel and power costs",
+    "c": "Higher COP for absorption versus lower COP for electric chillers",
+    "d": "Electric demand charges versus chiller refrigerant phase-out risk"
+   },
+   "distractorExplanations": {
+    "a": "Absorption chillers reject more heat per ton than electric chillers, so they need larger, not smaller, cooling towers.",
+    "c": "Absorption COPs run about 0.7-1.4, well below electric chillers' COP of 5-7; the trade is energy source and cost.",
+    "d": "Refrigerant phase-out is a secondary factor; the core trade-off is thermal input cost versus electric kW/ton."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-044": {
+   "options": {
+    "a": "Flue gas or process heat to raise incoming air temperature before the burner",
+    "b": "Flue gas heat to raise feedwater temperature before the boiler drum",
+    "c": "Blowdown heat to warm makeup water before it enters the deaerator",
+    "d": "Steam coils to warm the boiler room so combustion air stays above freezing"
+   },
+   "distractorExplanations": {
+    "b": "Heating feedwater with flue gas is an economizer function; combustion air preheat heats the burner's air supply.",
+    "c": "Blowdown heat recovery preheats makeup water; combustion air preheaters heat the air going to the burner.",
+    "d": "Steam-heated room air uses boiler output rather than recovering waste heat, so it does not save fuel."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-045": {
+   "options": {
+    "a": "Faces due west at a tilt near latitude to maximize annual energy yield",
+    "b": "Faces south (or north in southern hemisphere) at tilt near latitude",
+    "c": "Faces south at a tilt near latitude plus 15° to maximize summer output",
+    "d": "Faces north at a tilt near latitude to reduce module heating losses"
+   },
+   "distractorExplanations": {
+    "a": "West orientation shifts output to afternoon peaks but lowers annual yield versus south in the northern hemisphere.",
+    "c": "Latitude plus about 15° favors winter output; summer optimization uses a tilt lower than latitude.",
+    "d": "North-facing arrays in the northern hemisphere lose substantial irradiance; cooler modules do not offset it."
+   },
+   "explanation": "Site-specific modeling accounts for latitude, tariff, and shading for optimal yield. This orientation maximizes annual energy."
+  },
+  "cem-readiness-check-industrial-boiler-renewables-046": {
+   "options": {
+    "a": "Seasonal storage that shifts summer solar output to winter heating",
+    "b": "Power factor correction that replaces the need for utility interconnection studies",
+    "c": "Reduction of annual kWh consumption through round-trip efficiency gains",
+    "d": "Peak shaving, backup power, and arbitrage where economics and controls support it"
+   },
+   "distractorExplanations": {
+    "a": "Batteries store hours, not months; seasonal shifting is beyond typical lithium-ion economics and duration.",
+    "b": "Storage inverters can supply reactive power, but storage still requires interconnection review and protection.",
+    "c": "Round-trip losses of about 10-15% increase total kWh; storage saves on timing and demand, not consumption."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-047": {
+   "options": {
+    "a": "Compare total energy cost across years without volume adjustment",
+    "b": "Benchmark process efficiency and track improvements over time",
+    "c": "Set the facility's utility demand charges for each production line",
+    "d": "Calculate boiler combustion efficiency from units of production"
+   },
+   "distractorExplanations": {
+    "a": "Comparing raw totals ignores production changes; intensity metrics normalize energy by output.",
+    "c": "Demand charges come from the tariff and metered peak kW; intensity metrics are internal benchmarks.",
+    "d": "Combustion efficiency comes from flue gas O2 and temperature; BTU per unit covers the whole process."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-048": {
+   "options": {
+    "a": "Capacity, pressure requirements, site access, and lifecycle cost",
+    "b": "Fuel type alone, since package units can burn natural gas only",
+    "c": "Stack height and the local air permit's opacity limit for the site",
+    "d": "Efficiency rating, since field-erected units are rated more efficient"
+   },
+   "distractorExplanations": {
+    "b": "Package boilers are available for gas, oil, and dual fuel; fuel type alone does not decide package versus field-erected.",
+    "c": "Stack and opacity limits affect emissions design for either type; selection depends mainly on capacity and access.",
+    "d": "Efficiency depends on design and operation, not construction method; field erection is driven by size and pressure."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-049": {
+   "options": {
+    "a": "Building owners to install onsite renewables sized to a set share of their annual load",
+    "b": "Utilities or suppliers to procure a percentage of energy from renewable sources",
+    "c": "Utilities to offer net metering to customers with renewable systems",
+    "d": "Large facilities to cut energy intensity by a set percentage each year"
+   },
+   "distractorExplanations": {
+    "a": "RPS obligations fall on load-serving entities, not building owners; onsite mandates are separate building code provisions.",
+    "c": "Net metering is a separate interconnection and billing policy; an RPS sets a renewable share in the supply portfolio.",
+    "d": "Energy intensity reduction targets are efficiency policies such as federal goals, not renewable portfolio standards."
+   }
+  },
+  "cem-readiness-check-industrial-boiler-renewables-050": {
+   "options": {
+    "a": "Replacing traps after a visible plume shows at the vent line",
+    "b": "Replacing every trap on a fixed five-year cycle without testing",
+    "c": "Regular inspection and replacement because failed traps waste fuel",
+    "d": "Installing bypass valves so failed traps can be left open in service"
+   },
+   "distractorExplanations": {
+    "a": "Waiting for visible plumes misses many failed traps; scheduled testing finds failures before major losses accumulate.",
+    "b": "Blanket replacement wastes money on good traps and misses early failures; testing-based programs are better.",
+    "d": "Open bypasses pass live steam continuously; bypasses are for maintenance isolation, not ongoing service."
+   },
+   "explanation": "Effective trap management reduces live steam loss, improves safety, and supports boiler efficiency. Failed traps can also damage piping."
+  },
+  "cem-readiness-check-policy-audits-economics-003": {
+   "options": {
+    "a": "Running base-load equipment only during on-peak periods",
+    "b": "Shifting discretionary loads to off-peak periods",
+    "c": "Raising thermostat setpoints during off-peak hours",
+    "d": "Increasing power factor without changing load schedule"
+   },
+   "distractorExplanations": {
+    "a": "Operating during on-peak periods increases exposure to the highest energy rates.",
+    "c": "Thermostat changes affect consumption but do not inherently align loads with lower-priced periods.",
+    "d": "Power factor correction affects demand/reactive charges, not TOU energy pricing by itself."
+   },
+   "explanation": "TOU rates charge different energy prices by time period. Moving flexible loads to off-peak hours lowers the energy ($/kWh) portion of the bill. Off-peak periods are when energy prices are lower."
+  },
+  "cem-readiness-check-policy-audits-economics-005": {
+   "options": {
+    "a": "Preliminary utility bill analysis and benchmarking against peers",
+    "b": "A list of low-cost and no-cost measures from a walk-through",
+    "c": "Investment-grade modeling with measured data for capital projects",
+    "d": "Detailed energy-use breakdown and savings calculations"
+   },
+   "distractorExplanations": {
+    "a": "Bill analysis and benchmarking are part of the preliminary energy use analysis before Level I; they are not Level II additions.",
+    "b": "Low-cost/no-cost measures from a walk-through are the Level I deliverable, not the added Level II requirement.",
+    "c": "Investment-grade analysis of capital-intensive projects is Level III, which goes beyond the Level II survey and analysis."
+   },
+   "explanation": "Level II expands on Level I with more detailed survey data, end-use breakdowns, quantified savings, and economic evaluation of recommended measures. Level II also includes economic analysis for recommended ECMs."
+  },
+  "cem-readiness-check-policy-audits-economics-006": {
+   "options": {
+    "a": "Billing demand is set at 80% of each month's own measured peak demand",
+    "b": "The customer pays demand charges on 80% of the yearly average peak",
+    "c": "Demand charges apply only in months when the peak exceeds 80% of contract capacity",
+    "d": "The customer may pay demand charges based on a floor even if actual peak is lower"
+   },
+   "distractorExplanations": {
+    "a": "The ratchet compares against 80% of the prior 12-month peak; it does not discount the current month's own peak.",
+    "b": "Ratchets use the highest peak in the lookback window, not the average; one spike can set the floor for a year.",
+    "c": "Ratchets set a minimum billing demand from past peaks; they do not limit charges to months above a capacity threshold."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-007": {
+   "options": {
+    "a": "First-year savings divided by installed cost",
+    "b": "Discounted payback period at the cost of capital",
+    "c": "Savings-to-investment ratio without discounting",
+    "d": "Net present value (NPV) using a discount rate"
+   },
+   "distractorExplanations": {
+    "b": "Discounted payback adds the time value of money but still ignores cash flows after the payback point.",
+    "c": "An undiscounted savings-to-investment ratio sums cash flows but ignores the time value of money.",
+    "a": "That ratio is a simplified metric, not a full lifecycle evaluation."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-008": {
+   "options": {
+    "a": "Retrofit savings are isolated with continuous measurement of all key parameters over time",
+    "b": "Whole-facility savings must be determined using utility bill regression",
+    "c": "Individual equipment retrofit savings are isolated with periodic short-term measurements",
+    "d": "Savings are estimated with a calibrated whole-building simulation model"
+   },
+   "distractorExplanations": {
+    "a": "Measuring all parameters continuously within the retrofit boundary is Option B; Option A measures key parameters and stipulates others.",
+    "d": "Calibrated simulation is Option D, used when baseline or reporting data are missing or interactive effects are complex.",
+    "b": "Whole-facility utility analysis aligns more with Option C or D approaches."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-009": {
+   "options": {
+    "a": "Mandatory minimum efficiency requirements for building systems and envelope",
+    "b": "Voluntary design guidelines that owners may follow to qualify for rebates",
+    "c": "Above-code efficiency targets used for LEED or green building certification",
+    "d": "Retrofit requirements for all existing buildings immediately"
+   },
+   "distractorExplanations": {
+    "b": "Adopted codes are enforceable through permits; voluntary guidelines tied to rebates describe utility program criteria.",
+    "c": "Above-code targets belong to rating systems like LEED or stretch codes; the base code sets mandatory minimums.",
+    "d": "Existing building retrofits are typically addressed by separate policies, not new-construction code alone."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-010": {
+   "options": {
+    "a": "First-year energy savings and the installed cost of the new boiler",
+    "b": "Sunk costs already spent on the existing boiler's original purchase",
+    "c": "Ongoing maintenance, fuel, and replacement costs over the analysis period",
+    "d": "Initial capital cost, including design and installation contractor fees"
+   },
+   "distractorExplanations": {
+    "a": "Simple payback already uses first-year savings and installed cost; LCC adds the multi-year operating costs.",
+    "b": "Sunk costs are excluded from both LCC and payback because they do not change with the replacement decision.",
+    "d": "Initial capital cost is included in simple payback; LCC is distinguished by adding ongoing and future costs."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-011": {
+   "options": {
+    "a": "Adjust consumption for weather variation when tracking performance",
+    "b": "Calculate the facility's power factor penalties from monthly kVAR",
+    "c": "Separate base load from end uses so submetering is no longer needed",
+    "d": "Forecast next month's billing demand ratchet from degree-day trends"
+   },
+   "distractorExplanations": {
+    "b": "Power factor uses kW and kVAR from metering; degree days have no role in reactive power charges.",
+    "c": "Degree-day regression separates weather-dependent from base load but cannot replace end-use submetering detail.",
+    "d": "Ratchets come from tariff rules and recorded peaks; HDD/CDD normalization adjusts consumption for weather."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-012": {
+   "options": {
+    "a": "An ESPC or performance contract where savings guarantee repayment",
+    "b": "A preliminary bill review to rank buildings in a portfolio for study",
+    "c": "A walk-through to list no-cost and low-cost measures for a small office",
+    "d": "A Level II survey to estimate savings for measures with short paybacks"
+   },
+   "distractorExplanations": {
+    "b": "Ranking buildings from bills is a preliminary energy use analysis, the step before even a Level I audit.",
+    "c": "Walk-through identification of low-cost measures is a Level I audit, far short of investment-grade rigor.",
+    "d": "Level II suits most ECM decisions; Level III is reserved for capital-intensive projects such as financed ESPCs."
+   },
+   "explanation": "Level III audits provide the rigor, measurement, and risk analysis needed when savings estimates underpin financing guarantees in ESPCs or similar arrangements. The guaranteed savings repay third-party financing."
+  },
+  "cem-readiness-check-policy-audits-economics-014": {
+   "options": {
+    "a": "Site EUI to the building's own three-year average consumption",
+    "b": "Weather-normalized site EUI to the ASHRAE 90.1 code baseline",
+    "c": "Annual energy cost per square foot to the regional utility average",
+    "d": "Actual source EUI to the national median for similar building types"
+   },
+   "distractorExplanations": {
+    "a": "Comparing to the building's own history is trend tracking; the 1-100 score compares source EUI to national peers.",
+    "b": "Code-baseline comparisons are used for modeling compliance; Portfolio Manager scores use source EUI versus a national peer group.",
+    "c": "Cost per square foot depends on rates; the ENERGY STAR score uses source energy intensity, not dollars."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-015": {
+   "options": {
+    "a": "The project creates value on a discounted basis despite a long simple payback",
+    "b": "NPV and payback should agree, so one of the analyses contains an error",
+    "c": "The project should be rejected because payback exceeds 5 years",
+    "d": "Positive NPV means the IRR must be below the 6% discount rate"
+   },
+   "distractorExplanations": {
+    "b": "NPV and payback measure different things and often diverge for long-lived measures; disagreement is not an error.",
+    "c": "A fixed payback cutoff ignores savings after payback; a positive NPV at the 6% rate shows the project adds value.",
+    "d": "Positive NPV at 6% means the IRR is above 6%, not below; IRR is the rate at which NPV equals zero."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-016": {
+   "options": {
+    "a": "Appliance and equipment efficiency standards set by DOE for manufacturers",
+    "b": "Energy Policy Act tax deductions for efficient commercial buildings (179D)",
+    "c": "ENERGY STAR labeling for buildings that score 75 or higher in Portfolio Manager benchmarking",
+    "d": "Federal energy management requirements such as EISA/ECPA energy intensity goals"
+   },
+   "distractorExplanations": {
+    "a": "DOE appliance standards apply to products sold nationwide; federal building targets come from EISA/NECPA mandates.",
+    "b": "Section 179D is a tax deduction for efficient buildings; it does not set mandatory federal agency reduction targets.",
+    "c": "ENERGY STAR certification is a voluntary recognition program, not a mandated energy reduction target for agencies."
+   },
+   "explanation": "Federal statutes and executive orders establish energy intensity reduction targets and reporting for federal agencies, driving efficiency in government facilities. These goals require energy intensity reduction."
+  },
+  "cem-readiness-check-policy-audits-economics-017": {
+   "options": {
+    "a": "Cover the single month just before installation to reflect the latest operating mode",
+    "b": "Represent pre-retrofit conditions with sufficient data to characterize normal operation",
+    "c": "Include the installation period so that construction effects are averaged into it",
+    "d": "Use design-day equipment ratings to represent full-load operation"
+   },
+   "distractorExplanations": {
+    "a": "One month cannot capture seasonal swings; baselines usually span a full operating cycle, often 12 months.",
+    "c": "The installation period is excluded from both baseline and reporting periods because it is not normal operation.",
+    "d": "Nameplate or design-day ratings do not reflect actual operating patterns; the baseline uses measured pre-retrofit data."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-018": {
+   "options": {
+    "a": "Pre-cool the building during the high-price event to bank cooling",
+    "b": "Reduce or shift non-critical loads during the high-price event",
+    "c": "Start onsite backup generators once the price event has ended",
+    "d": "Shift critical process loads first while keeping comfort loads on"
+   },
+   "distractorExplanations": {
+    "a": "Pre-cooling works before the event, at lower prices; doing it during the price spike raises cost and grid stress.",
+    "c": "Backup generation helps the bill only if it runs during the event; starting after the price spike captures no savings.",
+    "d": "Demand response should curtail non-critical loads first; shedding critical process loads risks production and safety."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-020": {
+   "options": {
+    "a": "The measure has a 90% chance of saving at least 35% of baseline energy",
+    "b": "The estimated savings should be reduced by 35% before any economic analysis is done",
+    "c": "The measure will save exactly 35% with 90% of its cost recovered",
+    "d": "The savings estimate includes quantified uncertainty bounds from the analysis"
+   },
+   "distractorExplanations": {
+    "a": "The figure is a plus/minus band on the savings estimate, not a 35% share of baseline energy saved with 90% probability.",
+    "b": "Uncertainty describes a range around the estimate; it does not mean savings should be cut by 35% before analysis.",
+    "c": "Uncertainty bands mean savings are not fixed at a single value; 90% is a statistical confidence level, not cost recovery."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-021": {
+   "options": {
+    "a": "One year of interval demand data with no field survey of installed equipment",
+    "b": "Design drawings and equipment schedules from the original construction set",
+    "c": "Nameplate ratings of major equipment multiplied by 8,760 hours",
+    "d": "12 months of utility bills plus end-use estimates from survey and spot measurements"
+   },
+   "distractorExplanations": {
+    "a": "Interval data shows load shape but cannot allocate energy to end uses without an equipment survey.",
+    "b": "Original design documents may not reflect current equipment or operation; balances need actual bills and field data.",
+    "c": "Nameplate times 8,760 overstates use by ignoring load factor and schedules; balances reconcile with actual bills."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-022": {
+   "options": {
+    "a": "Taxable income in year one that is excluded from the project cash flows",
+    "b": "A reduction in annual energy cost spread evenly over the measure's useful life",
+    "c": "An addition to salvage value at the end of the analysis period",
+    "d": "A reduction in initial capital cost (or equivalent incentive cash flow)"
+   },
+   "distractorExplanations": {
+    "a": "Rebates belong in the cash flow analysis; excluding them overstates net cost and understates project viability.",
+    "b": "A rebate is a one-time incentive at installation, not a recurring energy cost saving across the measure's life.",
+    "c": "Salvage value is residual worth at the end of the period; rebates arrive at the start and offset capital cost."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-024": {
+   "options": {
+    "a": "Lighting power density in the open office areas",
+    "b": "Plug load and office equipment energy consumption",
+    "c": "HVAC fan energy serving the office floors",
+    "d": "Peak cooling demand from chillers serving data rooms"
+   },
+   "distractorExplanations": {
+    "a": "Lighting power is governed by fixture and control choices; ENERGY STAR office equipment targets plug loads.",
+    "c": "Fan energy depends on air handlers and VAV control; ENERGY STAR office equipment affects plug loads directly.",
+    "d": "Chiller demand is an HVAC plant issue; the procurement policy reduces equipment plug loads, with minor cooling side effects."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-025": {
+   "options": {
+    "a": "Adjust the baseline for production or other relevant independent variables",
+    "b": "Report the 10% drop as savings because production rose at the same time",
+    "c": "Normalize consumption for heating and cooling degree days only",
+    "d": "Reset the baseline to the first post-retrofit year of production"
+   },
+   "distractorExplanations": {
+    "b": "Unadjusted comparisons mix production effects with the retrofit; savings must be calculated against an adjusted baseline.",
+    "c": "Weather is one variable, but here production changed 20%; the baseline must be adjusted for production too.",
+    "d": "A post-retrofit period cannot serve as the baseline; the pre-retrofit baseline is kept and adjusted."
+   },
+   "explanation": "M&V protocols require routine adjustments for variables like production, occupancy, or weather so reported savings reflect the ECM, not unrelated activity changes. These adjustments belong in the M&V plan."
+  },
+  "cem-readiness-check-policy-audits-economics-026": {
+   "options": {
+    "a": "Tenant data access for ENERGY STAR Portfolio Manager benchmarking",
+    "b": "Split incentive barriers between landlord and tenant",
+    "c": "Demand charge allocation among multiple tenants",
+    "d": "Free-rider effects in utility rebate programs"
+   },
+   "distractorExplanations": {
+    "a": "Data access clauses support benchmarking; cost-recovery clauses mainly fix who pays versus who benefits.",
+    "c": "Allocating demand among tenants is a submetering and billing issue; green leases mainly resolve split incentives.",
+    "d": "Free-ridership is a program evaluation concept for rebates; split incentives concern landlord-tenant cost and benefit."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-027": {
+   "options": {
+    "a": "Spot-indexed volumes expose the buyer to price volatility on those blocks",
+    "b": "Fixed blocks expose the buyer to daily spot price volatility",
+    "c": "Take-or-pay terms require paying for blocks at the daily index price",
+    "d": "Index volumes are capped at the block price, so the risk falls on the supplier"
+   },
+   "distractorExplanations": {
+    "b": "Block volumes are priced at a fixed contract rate; the volatility risk sits on the index-priced portion.",
+    "c": "Take-or-pay obliges payment for unused contracted volume; it does not reprice fixed blocks at the index.",
+    "d": "No cap is implied; without a collar or cap, index-priced volumes carry the market risk for the buyer."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-028": {
+   "options": {
+    "a": "Marginal energy rate for the next kWh in the tariff block",
+    "b": "Load factor, average demand divided by peak demand",
+    "c": "Energy use intensity in kBtu per square foot per year",
+    "d": "Average blended energy rate ($/kWh or $/therm equivalent)"
+   },
+   "distractorExplanations": {
+    "a": "The marginal rate is the cost of the next unit at the current tier or period, not total cost divided by total use.",
+    "b": "Load factor is average kW divided by peak kW over a period, a usage shape metric, not a cost per unit.",
+    "c": "EUI divides energy by floor area, not cost by energy; it measures intensity rather than average unit price."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-029": {
+   "options": {
+    "a": "Third-party certification of a fixed percent energy reduction",
+    "b": "An environmental management system covering emissions and waste",
+    "c": "A building energy code compliance path for new construction",
+    "d": "A structured energy management system with continual improvement"
+   },
+   "distractorExplanations": {
+    "a": "ISO 50001 requires demonstrated improvement in energy performance but sets no fixed percentage reduction.",
+    "b": "That describes ISO 14001; ISO 50001 is the energy management system standard.",
+    "c": "Codes such as ASHRAE 90.1 govern design; ISO 50001 is a voluntary organizational management standard."
+   },
+   "explanation": "ISO 50001 establishes a management system framework—policy, energy review, objectives, monitoring, and corrective action—for continual energy performance improvement. Its elements include policy, planning, and monitoring."
+  },
+  "cem-readiness-check-policy-audits-economics-030": {
+   "options": {
+    "a": "The initial capital cost and annual savings used to compute it",
+    "b": "Savings occurring after year 4 and the time value of money",
+    "c": "Savings in years 1 through 4 and the project's installed cost",
+    "d": "Energy price escalation during the first year of operation"
+   },
+   "distractorExplanations": {
+    "a": "Payback is computed from initial cost and annual savings, so it does not ignore them.",
+    "c": "Payback counts the first four years of savings against installed cost; it ignores savings after recovery.",
+    "d": "First-year escalation is minor; the key omission is all savings beyond year 4 and discounting."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-031": {
+   "options": {
+    "a": "Detailed end-use breakdowns and savings for each capital measure",
+    "b": "Obvious operational waste and low-cost/no-cost opportunities",
+    "c": "Investment-grade uncertainty analysis for every recommended measure",
+    "d": "Sub-hourly interval data regression for each major end use"
+   },
+   "distractorExplanations": {
+    "a": "End-use breakdowns and measure-by-measure savings are Level II deliverables, beyond a Level I walk-through.",
+    "c": "Detailed uncertainty and risk analysis is characteristic of Level III investment-grade audits.",
+    "d": "Sub-hourly regression exceeds Level I scope and budget; Level I relies on bills and a brief survey."
+   },
+   "explanation": "Level I focuses on rapid identification of evident waste and no-cost/low-cost measures with preliminary savings direction, not detailed investment-grade analysis. Comfort complaints are also worth recording."
+  },
+  "cem-readiness-check-policy-audits-economics-032": {
+   "options": {
+    "a": "Reducing on-peak demand and associated demand charges",
+    "b": "Reducing total cooling energy by improving chiller efficiency",
+    "c": "Lowering energy charges by running the chiller during peak hours",
+    "d": "Reducing the facility's off-peak demand ratchet in winter"
+   },
+   "distractorExplanations": {
+    "b": "Storage shifts when cooling is made; total energy often rises slightly due to storage losses and colder charging.",
+    "c": "Running chillers on-peak is what storage avoids; charging off-peak lowers on-peak kW and demand charges.",
+    "d": "Thermal storage raises off-peak load to cut on-peak demand; it targets summer on-peak charges."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-034": {
+   "options": {
+    "a": "Financing efficiency upgrades repaid through the monthly utility bill",
+    "b": "Tax credits for efficiency upgrades claimed on state income tax returns",
+    "c": "Financing efficiency upgrades repaid via a special property tax assessment",
+    "d": "Utility rebates for upgrades paid as a credit on the property tax bill"
+   },
+   "distractorExplanations": {
+    "a": "Repayment on the utility bill is on-bill financing; PACE repays through the property tax assessment.",
+    "b": "State income tax credits are incentives, not financing; PACE is financing repaid via the property tax bill.",
+    "d": "Rebates are grants with no repayment; PACE financing must be repaid over time through the assessment."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-035": {
+   "options": {
+    "a": "Cooling degree-day normalization of the baseline and reporting period gas use",
+    "b": "Heating degree-day normalization of baseline and reporting period consumption",
+    "c": "Production-based normalization of baseline and reporting period gas consumption",
+    "d": "Comparing reporting period gas use directly with the baseline"
+   },
+   "distractorExplanations": {
+    "a": "Winter gas use is driven by heating degree days; cooling degree days do not explain space-heating consumption.",
+    "c": "Production adjustment applies when output changes; a warmer winter calls for HDD normalization.",
+    "d": "A direct comparison credits mild-weather reductions to the retrofit, overstating savings."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-036": {
+   "options": {
+    "a": "Present value of benefits is 1.4 times present value of costs",
+    "b": "Undiscounted savings exceed project cost by 1.4 percent overall",
+    "c": "Simple payback is 1.4 years on the installed project cost",
+    "d": "The internal rate of return on the measure is 40 percent"
+   },
+   "distractorExplanations": {
+    "b": "BCR is a ratio of present values, not a percent margin; 1.4 means benefits are 140% of costs.",
+    "c": "Payback is years to recover cost; BCR is a dimensionless ratio of discounted benefits to discounted costs.",
+    "d": "IRR is the discount rate yielding zero NPV; a BCR of 1.4 does not translate directly to a 40% return."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-037": {
+   "options": {
+    "a": "Set mandatory energy reduction targets for each covered building",
+    "b": "Require owners to implement every measure the audit identifies",
+    "c": "Identify efficiency opportunities and inform owners about performance",
+    "d": "Replace annual benchmarking with a one-time audit at sale"
+   },
+   "distractorExplanations": {
+    "a": "Building performance standards set reduction targets; audit ordinances require assessments, not targets.",
+    "b": "Most audit ordinances require the assessment but leave measure implementation to owner decisions.",
+    "d": "Audit ordinances usually complement benchmarking; time-of-sale disclosure is a different policy design."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-038": {
+   "options": {
+    "a": "The ECM affects only fixed monthly customer charges",
+    "b": "The project changes consumption at the margin",
+    "c": "The tariff is a flat rate with no tiers or demand",
+    "d": "The utility bill shows a low blended average rate"
+   },
+   "distractorExplanations": {
+    "a": "Fixed customer charges do not change with consumption; marginal analysis applies to energy and demand avoided.",
+    "c": "Under a pure flat rate, marginal and average costs are equal, so the distinction does not matter there.",
+    "d": "A low average rate says nothing about the next unit's cost; marginal pricing matters when tiers or TOU differ."
+   },
+   "explanation": "Savings should reflect the cost of the next unit of energy avoided—accounting for rate tiers, TOU periods, and demand impacts—not always a simple average rate. Example: kWh avoided at the current rate tier or TOU period."
+  },
+  "cem-readiness-check-policy-audits-economics-039": {
+   "options": {
+    "a": "Project approval speed by using simple payback as the sole screening test",
+    "b": "Capital budget control by selecting the lowest first-cost bid for each project",
+    "c": "Decision quality by comparing long-term costs rather than first cost alone",
+    "d": "Code compliance by documenting minimum efficiency equipment"
+   },
+   "distractorExplanations": {
+    "a": "Simple payback is what LCC policies supplement; it ignores savings beyond payback and discounting.",
+    "b": "Lowest first cost is the approach LCC replaces; LCC weighs energy, maintenance, and replacements.",
+    "d": "Code compliance sets minimum efficiency; LCC policy guides choices among options above that floor."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-040": {
+   "options": {
+    "a": "The M&V plan including measurement boundary and reporting period",
+    "b": "The savings report issued after each reporting period",
+    "c": "The baseline model regression equation and its coefficients",
+    "d": "The ECM installation contract's scope of work section"
+   },
+   "distractorExplanations": {
+    "b": "Savings reports present results after the fact; the M&V plan defines the claim and boundary beforehand.",
+    "c": "The baseline model is one component; the M&V plan sets the boundary, option, and reporting period.",
+    "d": "The construction scope defines what is installed, not how savings are measured or bounded."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-041": {
+   "options": {
+    "a": "Estimating consumption from a calibrated model when meter data are missing",
+    "b": "Temporarily logging a single end use for a few weeks with portable meters",
+    "c": "Independent verification metering installed alongside the utility meter",
+    "d": "Using the utility meter's pulse output to feed the campus BAS"
+   },
+   "distractorExplanations": {
+    "a": "Filling gaps with a calibrated model is an Option D or data-estimation method, not shadow metering.",
+    "b": "Short-term portable logging is spot or short-term metering for Option A, not permanent parallel metering.",
+    "d": "Pulse output sharing reuses the utility meter's data; a shadow meter is a separate, independent meter."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-042": {
+   "options": {
+    "a": "$11,600 including energy and summer demand reduction",
+    "b": "$1,600 from summer demand reduction alone",
+    "c": "$10,000 from energy savings alone at $0.10",
+    "d": "$14,800 including energy and 12 months of demand"
+   },
+   "distractorExplanations": {
+    "b": "$1,600 is the demand piece only (50 x $8 x 4); it omits the $10,000 of energy savings.",
+    "c": "This counts 100,000 x $0.10 = $10,000 and omits the $1,600 summer demand savings.",
+    "d": "Applying demand savings for 12 months (50 x $8 x 12 = $4,800) ignores that peak reduction lasts 4 summer months."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-043": {
+   "options": {
+    "a": "IRR exceeds 10% or NPV is positive at a 10% discount rate",
+    "b": "IRR exceeds 10% and simple payback is under the 10-year mark",
+    "c": "NPV is positive at the company's 6% cost of borrowing",
+    "d": "Simple ROI exceeds 10% in the first year of operation"
+   },
+   "distractorExplanations": {
+    "b": "Adding a payback cutoff is not part of the hurdle test; the rate test is IRR above 10% or NPV above zero at 10%.",
+    "c": "Testing at 6% instead of the 10% hurdle rate approves projects that fail the corporate threshold.",
+    "d": "First-year ROI ignores the time value of money and later cash flows; hurdle rates apply to IRR or NPV."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-044": {
+   "options": {
+    "a": "Prescriptive compliance with each envelope and HVAC minimum",
+    "b": "Performance-based or total building energy compliance modeling",
+    "c": "Envelope trade-off compliance using COMcheck envelope UA",
+    "d": "Mandatory provisions compliance applied to every project"
+   },
+   "distractorExplanations": {
+    "a": "The prescriptive path requires each component to meet its minimum and allows no cross-system trade-offs.",
+    "c": "Envelope UA trade-offs allow swaps within the envelope, not between envelope and HVAC efficiency.",
+    "d": "Mandatory provisions apply under every path and cannot be traded off; they are not a trade-off path."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-045": {
+   "options": {
+    "a": "Measuring leak flow in cfm directly with ultrasonic detectors",
+    "b": "Estimating compressor full-load kW from motor nameplate data",
+    "c": "Translating technical waste into dollar terms to prioritize repairs",
+    "d": "Setting the leak repair budget from last year's maintenance spend"
+   },
+   "distractorExplanations": {
+    "a": "Ultrasonic detection locates leaks; COWE converts the resulting waste into dollars for decisions.",
+    "b": "Nameplate kW is an input; COWE translates wasted energy into an annual cost for prioritizing repairs.",
+    "d": "Historical spend ignores the size of the waste; COWE ties priorities to the dollar value of losses."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-046": {
+   "options": {
+    "a": "Lets utilities earn a return on efficiency spending like capital assets",
+    "b": "Separates generation from distribution ownership to allow competition",
+    "c": "Reduces utility disincentive to sell less energy when efficiency reduces sales",
+    "d": "Lowers customer rates whenever efficiency programs reduce utility sales"
+   },
+   "distractorExplanations": {
+    "a": "Earning a return on program spending is a performance incentive or capitalization; decoupling breaks the revenue-sales link.",
+    "b": "That describes restructuring or unbundling; decoupling adjusts revenue recovery independent of sales volume.",
+    "d": "Decoupling true-ups can raise per-unit rates slightly when sales fall; it protects revenue rather than lowering rates."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-047": {
+   "options": {
+    "a": "Decrease the present value of savings because prices are discounted",
+    "b": "Increase the nominal value of future savings compared with flat prices",
+    "c": "Cancel out the discount rate so that real and nominal values match",
+    "d": "Increase first-year savings by 3% compared with flat prices"
+   },
+   "distractorExplanations": {
+    "a": "Escalation raises future savings; discounting is applied separately and does not reverse the escalation effect.",
+    "c": "Escalation and discounting are separate; they offset only if the rates are equal, and discounting still applies.",
+    "d": "Escalation starts after the base year; first-year savings are at current prices, and later years grow."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-048": {
+   "options": {
+    "a": "A major unrelated change occurs, such as adding a new production line",
+    "b": "Production volume rises 15% within its normal range in the M&V plan",
+    "c": "Weather is warmer than normal but within the regression's data range",
+    "d": "The ECM's savings fall short of the audit estimate by about 20%"
+   },
+   "distractorExplanations": {
+    "b": "Production within the planned range is a routine adjustment variable already in the baseline model.",
+    "c": "Weather variation within the model's range is handled by routine adjustments, not non-routine ones.",
+    "d": "A savings shortfall is a performance finding, not a change in static factors requiring non-routine adjustment."
+   },
+   "explanation": "Non-routine adjustments address unforeseen changes outside the M&V plan's routine variables, such as significant capacity additions or shutdowns. The change occurs mid-period."
+  },
+  "cem-readiness-check-policy-audits-economics-049": {
+   "options": {
+    "a": "A measure's simple payback and its first-year energy savings",
+    "b": "A measure's capital cost and its share of the total project budget",
+    "c": "A measure's cost per unit of energy saved and potential savings volume",
+    "d": "A measure's emissions per kWh saved and the grid's marginal emissions rate"
+   },
+   "distractorExplanations": {
+    "a": "MACC bar height is cost per unit abated and width is volume; payback is not the plotted metric.",
+    "b": "Capital cost alone ignores savings; MACC bars show cost-effectiveness per unit saved and volume.",
+    "d": "Emission factors convert energy to carbon but are not the bars; MACC bars plot cost per unit and potential."
+   }
+  },
+  "cem-readiness-check-policy-audits-economics-050": {
+   "options": {
+    "a": "Determining exact end-use energy shares without a site survey",
+    "b": "Identifying load shapes, peak drivers, and operational anomalies",
+    "c": "Verifying the utility's revenue meter accuracy for billing disputes",
+    "d": "Calculating monthly power factor penalties from kWh data"
+   },
+   "distractorExplanations": {
+    "a": "Interval data shows when loads occur but not which equipment; a site survey still links shapes to end uses.",
+    "c": "Accuracy disputes need meter testing; interval data reveals load shape and peak timing.",
+    "d": "Power factor needs kVAR or kVA data; kW/kWh interval data alone cannot compute it."
+   }
+  },
+  "cem-readiness-check-hvac-envelope-bas-046": {
+   "options": {
+    "a": "Raise the hot deck setpoint to recover warm-up faster.",
+    "b": "Add zone reheat coils to correct the cold deck overcooling.",
+    "c": "Reset and sequence deck setpoints to eliminate overlap.",
+    "d": "Lower the cold deck setpoint to improve zone dehumidification."
+   },
+   "distractorExplanations": {
+    "a": "A higher hot deck temperature increases mixing losses with the cold deck; the setpoint overlap remains.",
+    "b": "Adding reheat increases simultaneous heating and cooling; the deck sequencing must be fixed first.",
+    "d": "A colder cold deck widens the gap the hot deck must offset, increasing simultaneous heating and cooling waste."
+   },
+   "explanation": "Overlapping heating and cooling setpoints waste energy through concurrent conditioning. Correcting sequencing and setpoints is the highest-leverage first fix before adding capacity. Correct sequencing also enables economizer-friendly operation."
+  },
+  "cem-readiness-check-hvac-envelope-bas-047": {
+   "options": {
+    "a": "Thermal bridging and air leakage paths that increase heating load.",
+    "b": "Moisture-saturated insulation from roof leaks inside wall cavities.",
+    "c": "Effective insulation that keeps heat inside along the studs and frames.",
+    "d": "Solar gain reflected off adjacent glazing during the early morning."
+   },
+   "distractorExplanations": {
+    "b": "Wet insulation shows as irregular patches, not regular lines at every stud and window perimeter.",
+    "c": "Warm exterior streaks mean heat escaping; effective insulation would show uniformly cool exterior surfaces.",
+    "d": "Reflections shift with viewing angle and sun position; stud-line patterns on a cold morning indicate conduction."
+   },
+   "explanation": "IR patterns highlighting framing and openings typically reveal conduction bridges and infiltration, which raise heating energy and create cold spots. They also cause local discomfort."
+  },
+  "cem-readiness-check-hvac-envelope-bas-048": {
+   "options": {
+    "a": "Mixed-air temperature tracks outdoor-air temperature closely.",
+    "b": "Return-air temperature tracks the zone setpoint closely.",
+    "c": "Supply-air temperature tracks the discharge setpoint closely.",
+    "d": "Return-air CO2 rises steadily while dampers are at minimum."
+   },
+   "distractorExplanations": {
+    "b": "Return air near setpoint indicates satisfied zones; it says nothing about outdoor-air damper position.",
+    "c": "Supply air on setpoint shows the heating coil is keeping up, not that excess outdoor air is entering.",
+    "d": "Rising CO2 suggests under-ventilation, the opposite of a stuck-open outdoor-air damper."
+   },
+   "explanation": "If mixed air follows outdoor air in cold weather and heating is maxed, excess outdoor air is likely entering through a damper that is open or leaking. Heating valves staying near full open confirm the diagnosis."
+  },
+  "cem-readiness-check-hvac-envelope-bas-049": {
+   "options": {
+    "a": "Air-sealing and weatherstripping to reduce uncontrolled infiltration.",
+    "b": "Replacing single glazing with low-e triple glazing on all facades.",
+    "c": "Adding interior insulation behind spandrel panels before sealing.",
+    "d": "Applying reflective window film to reduce winter heat loss."
+   },
+   "distractorExplanations": {
+    "b": "Reglazing is costly and its heating savings vary; infiltration in leaky curtain walls usually dominates first.",
+    "c": "Insulating before sealing leaves air bypassing the insulation, so the savings are less reliable.",
+    "d": "Reflective films mainly cut solar gain and can raise heating load; they do little for infiltration."
+   },
+   "explanation": "Infiltration often dominates heating loss in leaky curtain-wall buildings; sealing is cost-effective and improves comfort before capital HVAC upgrades. Sealing comes before adding insulation or HVAC capacity."
+  },
+  "cem-readiness-check-hvac-envelope-bas-050": {
+   "options": {
+    "a": "Whether the setback temperature stays above the space dew point to avoid condensation.",
+    "b": "Whether radiation and air-side recovery sequences can restore comfort by occupancy.",
+    "c": "Whether VAV box minimum airflows meet ventilation rates during unoccupied hours.",
+    "d": "Whether chilled-water reset limits allow economizer operation during setback."
+   },
+   "distractorExplanations": {
+    "a": "Condensation risk applies to cooling setup in humid climates; winter setback with radiation is a morning recovery issue.",
+    "c": "Ventilation minimums apply during occupancy; unoccupied setback mode can close outdoor air.",
+    "d": "Chilled-water reset is a cooling plant strategy; night setback evaluation centers on morning heating recovery."
+   },
+   "explanation": "Aggressive setback without adequate morning warmup capacity or sequencing can cause recovery peaks, complaints, and demand charges. Recovery must also avoid excessive morning peak demand."
+  }
+ }
+}

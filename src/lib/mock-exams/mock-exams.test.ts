@@ -882,7 +882,7 @@ describe("llm visibility", () => {
       isAccessibleForFree: true,
     });
     expect(course?.teaches).toContain("Ethical and Professional Standards");
-    expect(buildMockSeoDescription(config!)).toContain("60 timed questions");
+    expect(buildMockSeoDescription(config!)).toContain("60 questions, 90 minutes");
     expect(breadcrumb).toMatchObject({
       itemListElement: expect.arrayContaining([
         expect.objectContaining({ position: 1, name: "Home" }),

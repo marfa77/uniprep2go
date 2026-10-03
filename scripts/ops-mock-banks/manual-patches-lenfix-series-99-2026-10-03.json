@@ -1,0 +1,1437 @@
+{
+ "series-99-readiness-check": {
+  "series-99-readiness-check-ops-001": {
+   "options": {
+    "a": "Opening, maintaining, and supervising customer accounts and processing transactions",
+    "b": "Reviewing and approving registration statements for new issues before SEC effectiveness",
+    "c": "Recommending securities to retail customers and soliciting new brokerage accounts",
+    "d": "Auditing the firm's annual financial statements as its independent accountant"
+   },
+   "distractorExplanations": {
+    "b": "Reviewing registration statements is an investment banking / SEC Corporation Finance function, not back-office operations work.",
+    "c": "Recommending securities and soliciting accounts is a registered representative (Series 7) sales role, not an operations function.",
+    "d": "An independent public accountant audits the firm's annual report under Rule 17a-5; operations staff are not the external auditor."
+   }
+  },
+  "series-99-readiness-check-ops-002": {
+   "options": {
+    "a": "A signed trade confirmation from the customer, which substitutes for endorsement",
+    "b": "Proper endorsement, registration match, and transfer procedures per industry rules",
+    "c": "A notarized customer signature in place of a medallion signature guarantee",
+    "d": "Delivery of a physical certificate, because book-entry positions are not good delivery"
+   },
+   "distractorExplanations": {
+    "a": "A trade confirmation documents the trade; it does not replace a proper endorsement or stock power for good delivery of certificates.",
+    "c": "Transfer agents require a medallion signature guarantee for transfers; a notary acknowledgment is not an accepted substitute.",
+    "d": "Most securities settle by book-entry at DTC; book-entry delivery is good delivery, so a physical certificate is not required."
+   }
+  },
+  "series-99-readiness-check-ops-004": {
+   "options": {
+    "a": "Trade settles one calendar day after trade date",
+    "b": "Trade settles two business days after trade date",
+    "c": "Trade settles on the same business day as trade date",
+    "d": "Trade settles one business day after trade date"
+   },
+   "distractorExplanations": {
+    "a": "Settlement counts business days, not calendar days; a Friday trade settles the following Monday, not Saturday.",
+    "b": "Two business days (T+2) was the prior cycle; U.S. standard equity settlement moved to T+1 on May 28, 2024.",
+    "c": "Same-day settlement (T+0, a 'cash' trade) is a special arrangement, not the standard regular-way settlement cycle."
+   }
+  },
+  "series-99-readiness-check-ops-006": {
+   "options": {
+    "a": "Immediate free sale once deposited, since the plan already cleared it",
+    "b": "Proper restriction coding, legend compliance, and release tracking",
+    "c": "Transfer to the firm's DTC account as freely tradable street-name stock",
+    "d": "Filing a Form 4 by the operations department on the customer's behalf"
+   },
+   "distractorExplanations": {
+    "a": "Depositing restricted stock does not lift the legend; removal needs issuer/counsel sign-off and Rule 144 conditions before sale.",
+    "c": "Legended shares cannot be treated as freely tradable street-name stock until the issuer and transfer agent remove the restriction.",
+    "d": "Form 4 is the insider's own Section 16 ownership report; filing it does not release a legend or establish ops restriction controls."
+   }
+  },
+  "series-99-readiness-check-ops-007": {
+   "options": {
+    "a": "Orders priced at the NAV computed at the prior day's market close",
+    "b": "Orders received after deadline also get that day's NAV",
+    "c": "Orders received before fund deadline priced at that day's NAV",
+    "d": "Orders priced at the intraday market price when the order executes"
+   },
+   "distractorExplanations": {
+    "a": "That is backward pricing; Rule 22c-1 requires forward pricing at the next NAV computed after the order is received.",
+    "b": "Pricing after-deadline orders at that day's NAV is illegal late trading; those orders receive the next day's NAV.",
+    "d": "Intraday execution pricing applies to ETFs and stocks; open-end mutual funds price once daily at the next computed NAV."
+   }
+  },
+  "series-99-readiness-check-ops-008": {
+   "options": {
+    "a": "Collect elections from each holder before exchanging the target shares",
+    "b": "Hold target positions unchanged until each customer submits certificates",
+    "c": "Credit merger consideration on the record date set for shareholder voting",
+    "d": "Exchange old shares for merger consideration per terms on payable date"
+   },
+   "distractorExplanations": {
+    "a": "Elections are collected for voluntary actions; a mandatory merger is applied to every holder without customer instructions.",
+    "b": "Book-entry positions are exchanged through DTC on the effective/payable date; ops does not wait for customers to submit certificates.",
+    "c": "The voting record date decides who may vote on the deal, not when consideration is paid; exchange occurs on the payable date."
+   }
+  },
+  "series-99-readiness-check-ops-009": {
+   "options": {
+    "a": "Short sale without locate, insufficient securities, or counterparty fail",
+    "b": "Customer entering a limit order rather than a market order on the sell",
+    "c": "Customer selling long shares already held in the firm account in street name",
+    "d": "A trade executed late in the day near the 4:00 p.m. market close"
+   },
+   "distractorExplanations": {
+    "b": "Order type affects execution price, not the seller's ability to deliver shares on settlement date, so it does not cause a fail.",
+    "c": "Selling fully paid shares already held in street name is the normal way to ensure delivery; it does not cause a fail.",
+    "d": "Execution time within the trading day does not affect delivery; the trade still settles T+1 from the firm's existing position."
+   }
+  },
+  "series-99-readiness-check-ops-010": {
+   "options": {
+    "a": "Release funds once the check is endorsed and imaged on deposit",
+    "b": "Hold funds per Regulation CC and firm policy until cleared",
+    "c": "Hold funds for 30 calendar days on every check by SEC rule",
+    "d": "Credit the account and permit withdrawal by wire the same day"
+   },
+   "distractorExplanations": {
+    "a": "Endorsement and imaging do not mean the check has cleared; funds stay on hold until collection to manage returned-check risk.",
+    "c": "No SEC rule mandates a flat 30-day hold; hold periods follow firm policy and funds-availability schedules.",
+    "d": "Same-day withdrawal of uncollected check funds is a classic check-kiting fraud path; holds apply until the check clears."
+   }
+  },
+  "series-99-readiness-check-ops-011": {
+   "options": {
+    "a": "Only on the third business day after expiration through the OCC",
+    "b": "Before expiration for European options whenever the holder chooses",
+    "c": "On expiration for American options when holder exercises or is assigned",
+    "d": "On expiration for every out-of-the-money option held in the customer account"
+   },
+   "distractorExplanations": {
+    "a": "OCC processes exercises on the exercise date with T+1 settlement; there is no three-day post-expiration processing window.",
+    "b": "European-style options can be exercised only at expiration, so there is no early exercise or assignment to process.",
+    "d": "OCC exercise-by-exception covers in-the-money contracts ($0.01 or more ITM); out-of-the-money options normally expire worthless."
+   }
+  },
+  "series-99-readiness-check-ops-012": {
+   "options": {
+    "a": "Mailing confirmation to the new address only, then releasing pending wires",
+    "b": "An updated W-9 and new CIP verification as if opening a new account",
+    "c": "Suspension of trading in the account until the next quarterly statement",
+    "d": "Verification procedures and possible hold on disbursements per fraud protocols"
+   },
+   "distractorExplanations": {
+    "a": "Confirming only at the new address lets a fraudster confirm their own change; notice should go to the prior address or contact on file.",
+    "b": "An address change does not reopen the account; it triggers change verification and Red Flags review, not a full new CIP cycle.",
+    "c": "Firms verify the change and may hold disbursements; freezing trading until the next statement cycle is not the required response."
+   }
+  },
+  "series-99-readiness-check-ops-013": {
+   "options": {
+    "a": "Prime serves institutional clients with complex financing/custody needs",
+    "b": "Prime serves retail clients who open margin accounts above $25,000",
+    "c": "Prime settles trades on T+2 while retail accounts settle on T+1",
+    "d": "Prime is exempt from Rule 15c3-3 customer protection requirements"
+   },
+   "distractorExplanations": {
+    "b": "Margin accounts above the $25,000 pattern-day-trader level are still retail; prime brokerage serves hedge funds and institutions.",
+    "c": "Settlement cycle depends on the security, not the client type; prime and retail U.S. equity trades both settle T+1.",
+    "d": "Prime brokerage customers' assets are still covered by Rule 15c3-3 possession/control and reserve formula requirements."
+   }
+  },
+  "series-99-readiness-check-ops-014": {
+   "options": {
+    "a": "Market losses on securities when prices decline, within the same limits",
+    "b": "Missing customer securities/cash if broker-dealer fails, within limits",
+    "c": "Customer deposits in bank sweep accounts, up to $500,000 per customer",
+    "d": "Losses from fraud by the customer's own investment adviser, within limits"
+   },
+   "distractorExplanations": {
+    "a": "SIPC restores missing customer property in a broker-dealer liquidation; it does not cover market losses from price declines.",
+    "c": "Cash swept to a bank is covered by FDIC, not SIPC; SIPC's $500,000 limit (including $250,000 cash) applies to assets held at the broker-dealer.",
+    "d": "SIPC does not insure against bad advice or adviser fraud outside a broker-dealer failure; it replaces missing assets in a liquidation."
+   }
+  },
+  "series-99-readiness-check-ops-015": {
+   "options": {
+    "a": "Customer orders match the execution prices quoted on the NBBO at entry",
+    "b": "Positions are reconciled monthly against customer account statements",
+    "c": "Internal records match clearing firm, depositories, and general ledger",
+    "d": "Cash balances reconcile to the bank, with positions reviewed at year-end"
+   },
+   "distractorExplanations": {
+    "a": "Comparing executions to the NBBO is a best-execution review, not the books-versus-street reconciliation done at end of day.",
+    "b": "Reconciliation against depositories and the clearing firm is daily; a monthly statement comparison would let breaks age undetected.",
+    "d": "Positions must be reconciled along with cash; deferring position breaks to year-end defeats prompt resolution and 17a-13 counts."
+   }
+  },
+  "series-99-readiness-check-regs-001": {
+   "options": {
+    "a": "Written supervisory procedures for each office of supervisory jurisdiction",
+    "b": "Copies of all customer complaints and their resolution for four years",
+    "c": "Fingerprint records and Form U4 filings for associated persons",
+    "d": "Customer account information including identity and contact details"
+   },
+   "distractorExplanations": {
+    "a": "Written supervisory procedures are required by FINRA Rule 3110, not by Rule 4512's customer account information rule.",
+    "b": "Customer complaint records are FINRA Rule 4513 (four years); Rule 4512 covers account information such as name, residence, and trusted contact.",
+    "c": "Fingerprinting is SEC Rule 17f-2 and Form U4 filing is FINRA registration under Rule 1010/1220; neither is Rule 4512."
+   }
+  },
+  "series-99-readiness-check-regs-002": {
+   "options": {
+    "a": "Credit extended by brokers/dealers for securities purchases (margin)",
+    "b": "Credit extended by banks for purchasing securities against collateral",
+    "c": "Maintenance margin levels in margin accounts after the initial purchase",
+    "d": "Borrowers' obligations when they obtain purpose credit from any lender"
+   },
+   "distractorExplanations": {
+    "b": "Bank loans secured by securities for buying securities fall under Regulation U, not Regulation T.",
+    "c": "Maintenance margin is set by FINRA Rule 4210 and firm house rules; Reg T governs the initial extension of credit.",
+    "d": "Regulation X applies the margin rules to borrowers obtaining purpose credit; Reg T applies to credit extended by broker-dealers."
+   }
+  },
+  "series-99-readiness-check-regs-004": {
+   "options": {
+    "a": "Verification of identity only when a customer wires out funds",
+    "b": "Collection of a government ID copy with no further verification",
+    "c": "Reasonable procedures to verify identity when opening account",
+    "d": "Filing each new customer's identity information with FinCEN"
+   },
+   "distractorExplanations": {
+    "a": "CIP verification is tied to account opening, not deferred until a withdrawal; outbound wires trigger fraud checks, not initial CIP.",
+    "b": "Collecting ID alone is not enough; CIP requires risk-based procedures to verify the data by documentary or non-documentary methods.",
+    "d": "CIP information is kept in the firm's own records for five years after account closing; it is not filed with FinCEN per customer."
+   }
+  },
+  "series-99-readiness-check-regs-005": {
+   "options": {
+    "a": "Unsolicited orders placed by retail customers through a self-directed online brokerage account",
+    "b": "Recommendations of securities to institutional customers by broker-dealers",
+    "c": "Investment advice given by registered investment advisers to advisory clients",
+    "d": "Recommendations of securities transactions and investment strategies to retail customers"
+   },
+   "distractorExplanations": {
+    "a": "Reg BI is triggered by a recommendation; unsolicited self-directed orders with no recommendation fall outside its care obligation.",
+    "b": "Reg BI covers retail customers; recommendations to institutional accounts fall under FINRA Rule 2111 suitability instead.",
+    "c": "Advisory clients of an RIA are covered by the Advisers Act fiduciary duty, not by Regulation Best Interest."
+   }
+  },
+  "series-99-readiness-check-regs-006": {
+   "options": {
+    "a": "Municipal securities dealers and advisors",
+    "b": "Issuers of municipal bonds and their disclosure",
+    "c": "Corporate bond dealers reporting trades to TRACE",
+    "d": "Banks underwriting U.S. Treasury securities"
+   },
+   "distractorExplanations": {
+    "b": "The MSRB has no direct authority over municipal issuers themselves; it regulates dealers and municipal advisors.",
+    "c": "Corporate bond trade reporting to TRACE is a FINRA rule; MSRB trade reporting for munis runs through RTRS.",
+    "d": "Treasury securities fall under the Government Securities Act and Treasury rules, not MSRB municipal regulation."
+   }
+  },
+  "series-99-readiness-check-regs-007": {
+   "options": {
+    "a": "$2,000 in a margin account, the general minimum to buy on margin",
+    "b": "$25,000 in margin account for day trading activity meeting definition",
+    "c": "$50,000 in margin account once four day trades occur in five days",
+    "d": "$100,000 in margin account for any customer making any day trade"
+   },
+   "distractorExplanations": {
+    "a": "$2,000 is the FINRA Rule 4210 minimum equity to open or maintain a margin account, not the higher pattern day trader threshold.",
+    "c": "The PDT minimum is $25,000, not $50,000, although four or more day trades in five business days does trigger PDT status.",
+    "d": "PDT status needs four or more day trades in five business days (over 6% of trades), and the minimum equity is $25,000, not $100,000."
+   }
+  },
+  "series-99-readiness-check-regs-009": {
+   "options": {
+    "a": "Market makers charging brokers access fees for executing marketable orders",
+    "b": "Broker paying research providers with client commissions under soft-dollar terms",
+    "c": "Broker internalizing orders as principal, which removes best execution duties",
+    "d": "Broker routing equity orders to venues that pay for flow with best execution obligations"
+   },
+   "distractorExplanations": {
+    "a": "Access fees run from the broker to the venue; PFOF is the reverse, compensation paid to the broker for routing orders.",
+    "b": "That describes soft-dollar arrangements under Exchange Act Section 28(e), not payment for order flow from market makers.",
+    "c": "Internalized orders still carry best-execution obligations under FINRA Rule 5310; internalization does not remove that duty."
+   }
+  },
+  "series-99-readiness-check-regs-010": {
+   "options": {
+    "a": "Failures to deliver in short sale positions",
+    "b": "Locates obtained before effecting short sales",
+    "c": "Marking sell orders as long or short at entry",
+    "d": "Short sale price tests after a 10% price decline"
+   },
+   "distractorExplanations": {
+    "b": "The locate is a Reg SHO Rule 203(b)(1) pre-trade requirement; Rule 204 close-out addresses fails after settlement date.",
+    "c": "Order marking is Reg SHO Rule 200(g); close-out under Rule 204 addresses fails to deliver after settlement date.",
+    "d": "The 10% circuit-breaker price test is Rule 201 (alternative uptick rule), not the Rule 204 close-out requirement."
+   }
+  },
+  "series-99-readiness-check-regs-011": {
+   "options": {
+    "a": "Screen customers against OFAC lists at account opening, then annually",
+    "b": "Screen customers and transactions against blocked persons/country lists",
+    "c": "File a Suspicious Activity Report with FinCEN within 30 days of a match",
+    "d": "Obtain OFAC approval before opening any account for a non-U.S. citizen"
+   },
+   "distractorExplanations": {
+    "a": "OFAC screening is ongoing: new transactions and list updates must be screened, not just an annual re-check after onboarding.",
+    "c": "OFAC matches are blocked or rejected and reported to OFAC within 10 business days; SARs to FinCEN are a separate BSA process.",
+    "d": "OFAC does not pre-approve foreign customers; firms screen names against the SDN and sanctions lists and block only true matches."
+   }
+  },
+  "series-99-readiness-check-regs-012": {
+   "options": {
+    "a": "Retention of business emails for three years with no format requirement",
+    "b": "Retention of business emails for six years in any rewriteable format",
+    "c": "WORM/non-rewriteable format for specified communications retention",
+    "d": "Retention of personal-device business texts at the employee's discretion"
+   },
+   "distractorExplanations": {
+    "a": "17a-4 sets both the period (generally three years, first two easily accessible) and the format (WORM or audit-trail), so no-format is wrong.",
+    "b": "Communications are generally kept three years under 17a-4(b)(4), and electronic storage must be WORM or audit-trail, not rewriteable.",
+    "d": "Business communications on personal devices must be captured by the firm; leaving it to employees is the off-channel failure the SEC fined."
+   }
+  },
+  "series-99-readiness-check-regs-013": {
+   "options": {
+    "a": "Cash bonuses the firm pays associated persons above $100 per year",
+    "b": "Business entertainment such as meals hosted with the client present",
+    "c": "Gifts to a customer's family members for personal life events such as weddings",
+    "d": "Non-cash gifts from vendors to associated persons beyond de minimis thresholds"
+   },
+   "distractorExplanations": {
+    "a": "Firm compensation to its own employees is not a gift under Rule 3220, which addresses gifts relating to another employer's business.",
+    "b": "Business entertainment where the host attends is not subject to the Rule 3220 gift limit; it is governed by firm entertainment policy.",
+    "c": "Personal gifts for life events such as weddings are excluded from the 3220 limit when not given in relation to the recipient employer's business."
+   }
+  },
+  "series-99-readiness-check-regs-014": {
+   "options": {
+    "a": "Firm ops/proxy department forwarding materials and processing instructions per policy",
+    "b": "The transfer agent mailing proxies directly to each street-name beneficial owner",
+    "c": "The issuer voting street-name shares in line with management recommendations",
+    "d": "The DTC voting all street-name shares as the nominee holder of record"
+   },
+   "distractorExplanations": {
+    "b": "Transfer agents mail to registered holders; street-name owners receive materials through their broker or its agent such as Broadridge.",
+    "c": "Issuers cannot vote shares they do not own; street-name shares are voted on the beneficial owner's instruction or broker routine discretion.",
+    "d": "DTC passes voting authority to its participants through an omnibus proxy; it does not itself vote beneficial owners' shares."
+   }
+  },
+  "series-99-readiness-check-regs-015": {
+   "options": {
+    "a": "Trade on information only after it appears in a firm research note",
+    "b": "Possess material nonpublic information from firm processing activities",
+    "c": "Trade in their own accounts at an outside broker without pre-clearance",
+    "d": "Execute customer orders without exercising any investment discretion"
+   },
+   "distractorExplanations": {
+    "a": "Trading after publication in research uses public information; the prohibition covers trading on MNPI before public dissemination.",
+    "c": "Trading away without pre-clearance breaks firm policy and Rule 3210 consent rules, but insider-trading law turns on possessing MNPI.",
+    "d": "Executing nondiscretionary orders is routine processing and not itself insider trading; liability turns on trading while holding MNPI."
+   }
+  },
+  "series-99-readiness-check-books-001": {
+   "options": {
+    "a": "Debit customer payable/liability, credit cash/asset",
+    "b": "Debit cash/asset, credit customer receivable/asset",
+    "c": "Debit cash/asset, credit customer payable/liability",
+    "d": "Debit cash/asset, credit commission revenue/income"
+   },
+   "distractorExplanations": {
+    "a": "This reverses the entry: a deposit increases the cash asset (debit) and the amount owed to the customer (credit).",
+    "b": "A customer receivable is a debit balance the customer owes; deposited cash is owed back to the customer, so it is a payable.",
+    "d": "Customer cash is not earned revenue; it is a liability to the customer until fees are actually charged to the account."
+   }
+  },
+  "series-99-readiness-check-books-002": {
+   "options": {
+    "a": "Positions and balances, with trade activity shown on confirms instead",
+    "b": "Activity for the period, with holdings shown only once a year",
+    "c": "Balances and fees, with positions reported on the annual Form 1099",
+    "d": "Positions, balances, activity, and fees for the period accurately"
+   },
+   "distractorExplanations": {
+    "a": "Confirms do not replace statement activity; FINRA Rule 2231 statements must show securities positions, money balances, and account activity.",
+    "b": "Statements must show positions every period (at least quarterly under Rule 2231), not once a year.",
+    "c": "Form 1099 is a tax report of income and sales; it does not substitute for the positions section of a periodic account statement."
+   }
+  },
+  "series-99-readiness-check-books-004": {
+   "options": {
+    "a": "Customer funds held in escrow until a trade settles",
+    "b": "Transactions pending identification or resolution",
+    "c": "Firm proprietary positions awaiting a sale decision",
+    "d": "Dormant balances awaiting escheatment to the state"
+   },
+   "distractorExplanations": {
+    "a": "Unsettled trade money sits in customer and settlement accounts, not suspense; suspense is for items that cannot yet be identified.",
+    "c": "Proprietary inventory sits in firm trading accounts; suspense holds unidentified or unresolved items pending correct booking.",
+    "d": "Dormant balances stay in the customer's account until escheated; suspense is a temporary holding area for unresolved items."
+   }
+  },
+  "series-99-readiness-check-books-005": {
+   "options": {
+    "a": "A weekly reserve computation covering customer fully paid securities",
+    "b": "Pledging fully paid securities up to 140% of the customer's debit balance",
+    "c": "Possession or control procedures protecting customer securities",
+    "d": "Annual physical counts of customer securities under Rule 17a-13"
+   },
+   "distractorExplanations": {
+    "a": "The weekly reserve formula protects customer cash credits; fully paid securities are protected by possession or control, not the reserve deposit.",
+    "b": "The 140% hypothecation limit applies to margin securities; fully paid securities may not be pledged and must be kept in possession or control.",
+    "d": "Rule 17a-13 box counts are quarterly, not annual, and are a separate control; 15c3-3 protection works through possession or control."
+   }
+  },
+  "series-99-readiness-check-books-006": {
+   "options": {
+    "a": "Order details and execution prices, retained for one year under 17a-4",
+    "b": "Customer names, addresses, and investment objectives for each account",
+    "c": "Supervisory approvals of new accounts and their documentation dates",
+    "d": "Order details, timestamps, execution prices, and account identifiers"
+   },
+   "distractorExplanations": {
+    "a": "Blotters are 17a-3(a)(1) records kept six years under 17a-4(a), the first two in an easily accessible place, not one year.",
+    "b": "Customer name, address, and objective data belong in the account record under 17a-3(a)(17) and Rule 4512, not the trade blotter.",
+    "c": "New-account approvals are account-opening records, not blotter entries of daily purchases, sales, receipts, and deliveries."
+   }
+  },
+  "series-99-readiness-check-books-007": {
+   "options": {
+    "a": "Transferring remaining cash after securities moved per customer request",
+    "b": "Sweeping remaining cash to the firm's error account pending research",
+    "c": "Transferring remaining margin debit balances to the receiving firm later",
+    "d": "Mailing a check for remaining cash to the customer's address of record"
+   },
+   "distractorExplanations": {
+    "b": "Residual credits belong to the customer and are forwarded through the ACATS residual process, not parked in an error account.",
+    "c": "Residual credit means money owed to the customer (cash, dividends, interest), not a margin debit owed by the customer.",
+    "d": "Under FINRA Rule 11870, residual credits after a full transfer are sent to the receiving firm through ACATS, not mailed to the customer."
+   }
+  },
+  "series-99-readiness-check-books-008": {
+   "options": {
+    "a": "Gain recognition when substantially identical security repurchased within 30 days",
+    "b": "Loss deduction when substantially identical security repurchased within 30 days",
+    "c": "Loss deduction when a security in the same sector is repurchased within 30 days",
+    "d": "Loss deduction when substantially identical security repurchased within 60 days"
+   },
+   "distractorExplanations": {
+    "a": "The wash sale rule disallows losses only; gains on a sale followed by a repurchase are recognized normally.",
+    "c": "Only substantially identical securities trigger a wash sale; buying a different company in the same sector does not.",
+    "d": "The window is 30 days before or after the sale (a 61-day period), not 60 days after the sale."
+   }
+  },
+  "series-99-readiness-check-books-009": {
+   "options": {
+    "a": "Remitting unclaimed property to the SEC once the statutory dormancy period lapses",
+    "b": "Remitting unclaimed property to the state of the firm's headquarters",
+    "c": "Reporting and remitting unclaimed property to state after dormancy period",
+    "d": "Transferring dormant accounts to SIPC after a dormancy period lapses"
+   },
+   "distractorExplanations": {
+    "a": "Unclaimed property is escheated to the states under state law, not to the SEC.",
+    "b": "Priority rules send property to the state of the owner's last known address first; the firm's domicile state is only the fallback.",
+    "d": "SIPC protects customers in broker-dealer liquidations; it does not take custody of dormant accounts or unclaimed property."
+   }
+  },
+  "series-99-readiness-check-books-010": {
+   "options": {
+    "a": "Last shares purchased are first shares sold for gain/loss calculation",
+    "b": "Highest-cost shares are first shares sold for gain/loss calculation",
+    "c": "Average cost per share of the position is used for gain/loss calculation",
+    "d": "First shares purchased are first shares sold for gain/loss calculation"
+   },
+   "distractorExplanations": {
+    "a": "Last-in, first-out is LIFO; FIFO relieves the earliest acquired lots first.",
+    "b": "Highest-cost-first is HIFO, a tax-lot election the customer can choose, not FIFO.",
+    "c": "Average cost is a separate method common for mutual fund shares; FIFO matches the earliest lots, not a blended cost."
+   }
+  },
+  "series-99-readiness-check-books-012": {
+   "options": {
+    "a": "Interest charged on the client's margin debit balance under the financing terms",
+    "b": "Costs associated with securities borrowing/lending or settlement fails per agreement",
+    "c": "Penalties FINRA assesses on the client for late Reg SHO close-outs on short sales",
+    "d": "Custody fees for safekeeping fully paid securities held in segregation"
+   },
+   "distractorExplanations": {
+    "a": "Margin interest is a financing charge on the debit balance, shown separately from borrow or settlement fail charges.",
+    "c": "Reg SHO close-out duties fall on the clearing participant, and FINRA does not post fines to client statements as fail charges.",
+    "d": "Custody or safekeeping fees are a service charge on held assets, not a cost arising from borrow or settlement fails."
+   }
+  },
+  "series-99-readiness-check-books-013": {
+   "options": {
+    "a": "Produce records within 30 days of a written request",
+    "b": "Produce records only after counsel reviews them first",
+    "c": "Produce required records promptly and accurately",
+    "d": "Produce summaries in place of the underlying records"
+   },
+   "distractorExplanations": {
+    "a": "Records must be produced promptly on request under 17a-4(j) and Rule 8210; there is no 30-day grace period for examiners.",
+    "b": "Firms may involve counsel, but production to examiners cannot be held back pending legal review; prompt production is required.",
+    "d": "Examiners can require the actual books and records, not firm-prepared summaries, under Rule 8210 and 17a-4(j)."
+   }
+  },
+  "series-99-readiness-check-books-014": {
+   "options": {
+    "a": "Cash owed by the customer on a margin debit balance",
+    "b": "Cash in the customer's account pledged as collateral",
+    "c": "Cash swept to an FDIC-insured bank deposit program",
+    "d": "Cash payable to customer on demand subject to holds"
+   },
+   "distractorExplanations": {
+    "a": "A margin debit is money the customer owes the firm; a free credit balance is money the firm owes the customer.",
+    "b": "Cash pledged against a short or margin position is not free; free credits are unencumbered and payable on demand.",
+    "c": "Swept bank deposits are held at a bank, not at the broker-dealer as a free credit balance under Rule 15c3-3."
+   }
+  },
+  "series-99-readiness-check-books-015": {
+   "options": {
+    "a": "Firm will receive and pass through dividend to entitled accounts",
+    "b": "Dividends credit to accounts that bought on or after the ex-date",
+    "c": "Dividends credit to accounts holding on the declaration date",
+    "d": "Dividends post to accounts on the record date, ahead of payment"
+   },
+   "distractorExplanations": {
+    "b": "Buyers on or after the ex-date are not entitled; under T+1 the ex-date and record date fall on the same day.",
+    "c": "Entitlement is set by holdings at the record date, not on the declaration date when the board announces the dividend.",
+    "d": "The record date fixes entitlement; cash is not credited until the issuer pays on the payable date."
+   }
+  },
+  "series-99-readiness-check-risk-001": {
+   "options": {
+    "a": "Price declines in the firm's proprietary inventory positions",
+    "b": "Failed processes, systems outages, fraud, and human error",
+    "c": "Counterparty default on unsecured lending and margin debits",
+    "d": "Inability to fund settlements because cash is tied up"
+   },
+   "distractorExplanations": {
+    "a": "Price movements in firm inventory are market risk, a separate category from operational risk.",
+    "c": "Losses from a borrower or counterparty failing to pay are credit risk, not operational risk.",
+    "d": "Being unable to meet funding obligations is liquidity risk; operational risk stems from processes, people, and systems."
+   }
+  },
+  "series-99-readiness-check-risk-002": {
+   "options": {
+    "a": "A customer adding a trusted contact person to the account profile",
+    "b": "Repeated small dividend reinvestments posted over several months",
+    "c": "Password reset, new bank link, and large wire to new payee same day",
+    "d": "A long-time customer requesting paper statements after years of e-delivery"
+   },
+   "distractorExplanations": {
+    "a": "Adding a trusted contact under FINRA Rule 4512 is a protective step, not an account takeover red flag by itself.",
+    "b": "Routine dividend reinvestment is expected account activity and does not signal credential compromise.",
+    "d": "Switching delivery preference is a minor service change; takeover patterns combine credential changes with outbound funds."
+   }
+  },
+  "series-99-readiness-check-risk-003": {
+   "options": {
+    "a": "Sign off on each report once the exception count is below target",
+    "b": "Review exceptions quarterly when preparing the annual 3130 certification",
+    "c": "Reassign aged items to the staff member who created each break",
+    "d": "Verify timely resolution and escalate unresolved aged items"
+   },
+   "distractorExplanations": {
+    "a": "A low count is not proof of resolution; supervisors must check that each item is resolved and escalate aged ones.",
+    "b": "Exception reports need ongoing review; waiting for the Rule 3130 CEO certification cycle lets breaks age.",
+    "c": "Routing breaks back to their originator weakens segregation of duties and is not escalation to supervision."
+   }
+  },
+  "series-99-readiness-check-risk-004": {
+   "options": {
+    "a": "Alternate site, data backup, staffing, and communication during disruption",
+    "b": "Alternate site and data backup, with plan review every five years",
+    "c": "Data backup and recovery, with customer access deferred until restored",
+    "d": "Recovery steps filed with the SEC for approval before implementation"
+   },
+   "distractorExplanations": {
+    "b": "Rule 4370 requires the plan to be updated for material changes and reviewed annually, not every five years.",
+    "c": "Rule 4370 requires the plan to address how customers get prompt access to funds and securities during a disruption.",
+    "d": "Firms keep BCPs internally and report emergency contacts to FINRA; plans are not filed with the SEC for approval."
+   }
+  },
+  "series-99-readiness-check-risk-005": {
+   "options": {
+    "a": "Account equity rises above requirements, creating excess SMA for the customer",
+    "b": "Account equity falls below requirements and customer fails to meet calls",
+    "c": "Customer pays for a cash account purchase within the Reg T payment period",
+    "d": "Customer deposits fully paid securities that the firm keeps in segregation"
+   },
+   "distractorExplanations": {
+    "a": "Rising equity creates SMA (buying power), which reduces rather than creates credit risk for the firm.",
+    "c": "Timely payment in a cash account means no credit exposure; risk arises from margin debits that are not met.",
+    "d": "Segregated fully paid securities carry no loan, so there is no customer credit exposure to the firm."
+   }
+  },
+  "series-99-readiness-check-risk-006": {
+   "options": {
+    "a": "Customer margin securities pledged to banks under hypothecation",
+    "b": "Customer free credit balances held in the reserve bank account",
+    "c": "Proprietary trading desk holdings subject to price changes",
+    "d": "Customer fully paid securities held in the firm's DTC account"
+   },
+   "distractorExplanations": {
+    "a": "Hypothecated customer collateral remains customer property; its price risk sits with the customer, not firm inventory.",
+    "b": "Reserve account deposits protect customer cash; they are not firm inventory exposed to market price changes.",
+    "d": "Segregated customer securities belong to customers; their price changes are not firm proprietary market risk."
+   }
+  },
+  "series-99-readiness-check-risk-007": {
+   "options": {
+    "a": "Update the record to the newest address and process pending wires",
+    "b": "File a Suspicious Activity Report before contacting the customer",
+    "c": "Close the account and return assets to the address on the latest form",
+    "d": "Trigger enhanced due diligence and hold on disbursements pending resolution"
+   },
+   "distractorExplanations": {
+    "a": "Accepting the newest data without verification is how account takeovers succeed; resolve the conflict before releasing funds.",
+    "b": "A mismatch alone is a red flag to investigate; a SAR follows if the review finds suspicious activity, not as a first step.",
+    "c": "Closing and sending assets to an unverified address compounds the fraud risk; investigate and hold disbursements first."
+   }
+  },
+  "series-99-readiness-check-risk-008": {
+   "options": {
+    "a": "Temporary placement of trade errors until allocated correctly",
+    "b": "Holding unallocated block trades until advisers send allocations",
+    "c": "Absorbing customer losses on trades the customer later regrets",
+    "d": "Parking unidentified cash receipts until the payer is confirmed"
+   },
+   "distractorExplanations": {
+    "b": "Unallocated blocks belong in an average-price or allocation account, not the error account.",
+    "c": "Customer-directed trades the customer regrets are not firm errors; moving them to the error account is improper.",
+    "d": "Unidentified receipts go to a suspense account; the error account is reserved for trade errors."
+   }
+  },
+  "series-99-readiness-check-risk-009": {
+   "options": {
+    "a": "Longer settlement cycles that give firms more time to match trades",
+    "b": "Shorter settlement cycles and central clearing (T+1, CCP)",
+    "c": "Bilateral netting with each counterparty instead of a central CCP",
+    "d": "Free delivery of securities before payment is received"
+   },
+   "distractorExplanations": {
+    "a": "Longer cycles increase exposure between trade and settlement; T+1 shortened the window to cut risk.",
+    "c": "Bilateral netting leaves counterparty exposure in place; central clearing through a CCP such as NSCC is the stronger mitigant.",
+    "d": "Free delivery is the textbook source of Herstatt risk; DVP and PvP link delivery to payment to remove it."
+   }
+  },
+  "series-99-readiness-check-risk-010": {
+   "options": {
+    "a": "Broad system access for senior staff so they can cover absences",
+    "b": "Dual control over outbound wires, with reconciliation done by the wire initiator",
+    "c": "Least privilege access, logging, segregation of duties, and background checks",
+    "d": "Annual background checks, with access reviews left to the IT vendor"
+   },
+   "distractorExplanations": {
+    "a": "Broad access violates least privilege; absence coverage should use role-based backups with logging.",
+    "b": "Letting the wire initiator also reconcile defeats segregation of duties; reconciliation must be independent.",
+    "d": "Access recertification is a firm control that cannot be outsourced away; background checks alone do not mitigate insider threat."
+   }
+  },
+  "series-99-readiness-check-risk-011": {
+   "options": {
+    "a": "Determine which complaints must be reported under Rule 4530",
+    "b": "Calculate customer restitution owed on each individual complaint",
+    "c": "Set staff incentive pay based on complaint counts per employee",
+    "d": "Identify systematic process failures requiring remediation"
+   },
+   "distractorExplanations": {
+    "a": "4530 reporting is decided complaint by complaint; trending is for spotting systemic causes across many complaints.",
+    "b": "Restitution is decided case by case; trend analysis looks for repeated root causes across complaints.",
+    "c": "Tying pay to complaint counts discourages logging complaints; trending is meant to find process failures."
+   }
+  },
+  "series-99-readiness-check-risk-012": {
+   "options": {
+    "a": "Best execution and liability exposure requiring prompt correction",
+    "b": "A Reg SHO close-out obligation by the start of trading on T+2",
+    "c": "Exposure only if the customer files a written complaint first",
+    "d": "A trade reporting violation to be fixed at month-end reconciliation"
+   },
+   "distractorExplanations": {
+    "b": "Reg SHO close-outs address fails to deliver on short sales, not unfilled customer limit orders.",
+    "c": "The firm's duty to correct the error and make the customer whole exists whether or not the customer complains.",
+    "d": "The issue is execution quality and customer harm, and it needs prompt correction, not month-end cleanup."
+   }
+  },
+  "series-99-readiness-check-risk-013": {
+   "options": {
+    "a": "Quarterly revenue per registered representative and new account growth",
+    "b": "Aged fail percentage, break rate, and STP straight-through processing rate",
+    "c": "Firm net capital ratio and the size of its proprietary inventory",
+    "d": "Average client portfolio return compared with its stated benchmark"
+   },
+   "distractorExplanations": {
+    "a": "Revenue and account growth are business performance metrics, not indicators of operational control risk.",
+    "c": "Net capital and inventory size measure financial and market risk, not operational process health.",
+    "d": "Portfolio performance measures investment results, not the operational failure rate a KRI tracks."
+   }
+  },
+  "series-99-readiness-check-risk-014": {
+   "options": {
+    "a": "Reliance on the vendor's SOC 2 report in place of oversight",
+    "b": "A vendor indemnity clause that transfers regulatory liability",
+    "c": "Due diligence, contract SLAs, and ongoing monitoring",
+    "d": "Due diligence at onboarding, with renewal reviews every 5 years"
+   },
+   "distractorExplanations": {
+    "a": "A SOC report is one input; FINRA Regulatory Notice 21-29 says the firm keeps supervisory responsibility for outsourced functions.",
+    "b": "Contracts cannot transfer a member firm's regulatory obligations; the firm remains responsible for outsourced activities.",
+    "d": "Vendor oversight must be ongoing and risk-based, not a one-time onboarding check revisited every five years."
+   }
+  },
+  "series-99-readiness-check-ops-017": {
+   "options": {
+    "a": "Only specified assets the customer designates, leaving other holdings at the delivering firm",
+    "b": "Every asset in the account, with the delivering firm closing it after settlement",
+    "c": "Specified assets, but processed outside ACATS as a manual DTC free delivery",
+    "d": "Specified assets once the delivering firm validates the request within five business days"
+   },
+   "distractorExplanations": {
+    "b": "Moving every asset and closing the account is a full transfer; a partial transfer leaves non-designated holdings behind.",
+    "c": "Partial transfers are a supported ACATS transaction type; they do not need to be handled as manual free deliveries.",
+    "d": "Under FINRA Rule 11870 the delivering firm must validate or take exception within one business day, not five."
+   }
+  },
+  "series-99-readiness-check-ops-019": {
+   "options": {
+    "a": "Apply the default option to each holder on the effective date without notice",
+    "b": "Notify customers and accept elections up to the payable date set by the issuer",
+    "c": "Notify customers, collect elections by deadline, and submit instructions",
+    "d": "Tender shares for each holder and let customers withdraw before the offer expires"
+   },
+   "distractorExplanations": {
+    "a": "Defaults apply only when a holder does not respond after notice; a voluntary offer requires notifying holders and collecting elections first.",
+    "b": "Elections must arrive before the firm's internal deadline ahead of offer expiration; the payable date comes after the offer closes.",
+    "d": "The firm cannot tender without instructions; in a voluntary offer customers opt in rather than being tendered and opting out."
+   },
+   "explanation": "Voluntary actions require timely client communication and accurate election processing. Instructions are submitted to the issuer's tender or exchange agent."
+  },
+  "series-99-readiness-check-ops-020": {
+   "options": {
+    "a": "Legend removal by the firm's own operations team once the shares are deposited",
+    "b": "Holding the shares for one year before any sale, as Rule 144 requires",
+    "c": "Filing Form 144 for any sale, even when shares are freely tradable",
+    "d": "Restriction legend tracking, release schedules, and compliance with Rule 144"
+   },
+   "distractorExplanations": {
+    "a": "The issuer's transfer agent removes a legend, typically after an issuer or counsel opinion; the firm's ops team cannot remove it.",
+    "b": "For an SEC-reporting issuer the Rule 144 holding period is six months; one year applies to non-reporting issuers, so a blanket hold is wrong.",
+    "c": "Form 144 is needed for affiliate or restricted sales above 5,000 shares or $50,000 in three months, not for any freely tradable sale."
+   },
+   "explanation": "Ops tracks control restrictions and release dates before unrestricted trading. Rule 144 compliance applies where the shares are restricted or held by an affiliate."
+  },
+  "series-99-readiness-check-ops-021": {
+   "options": {
+    "a": "Verify authorization, confirm payee details, and apply fraud controls per firm policy",
+    "b": "Confirm the request by email reply to the address on file, then release",
+    "c": "Verify authorization only for wires to third parties, not to the customer's bank",
+    "d": "Release the wire and complete identity verification after it settles"
+   },
+   "distractorExplanations": {
+    "b": "Email confirmation can be intercepted by a fraudster who controls the mailbox; a callback to a phone number on file is the standard.",
+    "c": "First-party wires to a newly linked bank are a top takeover path; authorization and payee checks apply to first-party wires too.",
+    "d": "Verification after release is too late; wired funds are hard to recall, so controls must run before release."
+   }
+  },
+  "series-99-readiness-check-ops-022": {
+   "options": {
+    "a": "Collect customer elections before crediting cash on payment date",
+    "b": "Remove target shares and credit cash proceeds on payment date",
+    "c": "Credit cash proceeds on the record date and remove shares at payment",
+    "d": "Remove target shares and credit acquirer stock at the exchange ratio"
+   },
+   "distractorExplanations": {
+    "a": "Elections are for voluntary or cash/stock election deals; a mandatory cash merger is processed for every holder without instructions.",
+    "c": "In a cash merger, shares are removed and cash credited together on payment date; the record date does not trigger the cash credit.",
+    "d": "Crediting acquirer stock describes a stock-for-stock merger; a cash merger pays a fixed cash amount per share."
+   },
+   "explanation": "Mandatory mergers exchange shares for cash and/or acquirer stock per terms on effective date. Corporate action entries are posted to each account on the payment date."
+  },
+  "series-99-readiness-check-ops-023": {
+   "options": {
+    "a": "Customer selling long shares held at the firm in fully paid street name",
+    "b": "Customer buying shares on margin instead of paying in full by T+1",
+    "c": "Short seller lacking locate/borrow or deliverer missing shares at settlement",
+    "d": "Short seller obtaining a locate and borrowing shares before settlement"
+   },
+   "distractorExplanations": {
+    "a": "Long sales from fully paid street-name positions are deliverable from the firm's DTC account and do not cause fails.",
+    "b": "Margin purchases are financed by the firm and settle normally; how a buyer pays does not create a fail to deliver.",
+    "d": "A locate plus a borrow before settlement lets the seller deliver; that prevents rather than causes a fail."
+   }
+  },
+  "series-99-readiness-check-ops-024": {
+   "options": {
+    "a": "Make check funds available for trading and withdrawal the next business day",
+    "b": "Apply a fixed 10-business-day hold set by FINRA to every check deposit",
+    "c": "Hold funds for trading but permit wires out of the account immediately",
+    "d": "Apply hold periods per firm policy and applicable funds-availability rules"
+   },
+   "distractorExplanations": {
+    "a": "Next-day availability for withdrawals invites returned-check fraud; firms hold funds per policy until the check is collected.",
+    "b": "FINRA sets no uniform check-hold period; hold schedules come from firm policy informed by funds-availability rules.",
+    "c": "Wiring out uncollected funds is the highest-risk release; restricting trading but not withdrawals inverts the control."
+   },
+   "explanation": "Broker-dealers apply hold schedules and fraud controls on check deposits; bank-like Reg CC schedules may inform policy but the firm’s procedures govern release for trading. Holds apply before funds are released for trading."
+  },
+  "series-99-readiness-check-ops-025": {
+   "options": {
+    "a": "On any business day the long holder exercises, including before expiration",
+    "b": "Only on expiration day, since early exercise applies to European options",
+    "c": "On the day OCC receives exercise notice, with assignment deferred to expiry",
+    "d": "At expiration for any contract in the money by at least $1.00"
+   },
+   "distractorExplanations": {
+    "b": "That reverses the styles: American options allow early exercise, while European options are exercisable only at expiration.",
+    "c": "OCC assigns exercise notices to clearing members on the exercise date itself; assignment is not deferred to expiration.",
+    "d": "OCC exercise by exception applies at $0.01 in the money, and early exercise can trigger assignment before expiration anyway."
+   }
+  },
+  "series-99-readiness-check-ops-026": {
+   "options": {
+    "a": "Updated mailings to the new address, with disbursements processed as usual",
+    "b": "Verification procedures, possible hold on disbursements, and updated mailings",
+    "c": "A new account form and fresh CIP verification as if opening the account",
+    "d": "Notice to FINRA through an amended Form U4 within 30 days of the change"
+   },
+   "distractorExplanations": {
+    "a": "Disbursements right after an address change are a classic takeover pattern; firms verify and may hold them first.",
+    "c": "An address change does not restart CIP; it triggers change verification and identity-theft red flags review.",
+    "d": "Form U4 covers registered persons' information; customer address changes are internal account records under Rule 4512."
+   },
+   "explanation": "Address changes are common fraud vectors; firms verify identity before releasing assets. This follows the firm's AML and identity-theft red flags policy."
+  },
+  "series-99-readiness-check-ops-027": {
+   "options": {
+    "a": "Mutual fund breakpoint tracking and 529 plan account servicing",
+    "b": "Cash-account trading settled delivery versus payment at a custodian",
+    "c": "Securities lending, margin financing, and consolidated reporting",
+    "d": "Odd-lot dividend reinvestment and paper certificate safekeeping"
+   },
+   "distractorExplanations": {
+    "a": "Breakpoints and 529 plans are retail product servicing needs, not hedge fund financing and custody services.",
+    "b": "DVP/RVP accounts settle at an outside custodian without financing; prime clients need leverage, borrows, and consolidated reporting.",
+    "d": "DRIP and certificate safekeeping are retail services; prime brokerage centers on financing, securities lending, and reporting."
+   },
+   "explanation": "Prime services support hedge funds and institutions with complex financing and reporting. Capital introduction is another common prime brokerage service."
+  },
+  "series-99-readiness-check-ops-028": {
+   "options": {
+    "a": "Verify ex-date trades and file a claim with the issuer's transfer agent",
+    "b": "Verify declaration date holdings and credit the dividend if shares were held",
+    "c": "Issue a goodwill credit for the dividend and research the break afterward",
+    "d": "Verify record date holdings, payment date entries, and entitlements on the account"
+   },
+   "distractorExplanations": {
+    "a": "Claims go to the counterparty or through DTC after research; the first step is reconciling the account's record date entitlement.",
+    "b": "Entitlement depends on record date holdings, not on what the customer held on the declaration date.",
+    "c": "Crediting before research risks a duplicate payment; ops must first confirm entitlement and posting."
+   }
+  },
+  "series-99-readiness-check-ops-029": {
+   "options": {
+    "a": "Shares credit on settlement date with correct restricted status and cost basis",
+    "b": "Shares credit on trade date at the first-day closing price as cost basis",
+    "c": "Shares credit to restricted persons under Rule 5130 like other customers",
+    "d": "Shares credit after the 25-day quiet period ends for each allocated account"
+   },
+   "distractorExplanations": {
+    "b": "IPO cost basis is the public offering price, and shares post on settlement date, not at the first-day close on trade date.",
+    "c": "Rule 5130 bars allocating new issues to restricted persons such as broker-dealer personnel; ops must exclude them.",
+    "d": "The research quiet period limits analyst reports; it does not delay settlement of allocated IPO shares."
+   },
+   "explanation": "Allocations must reflect offering price, restrictions, and settlement through standard channels. This applies to each allocated customer account."
+  },
+  "series-99-readiness-check-ops-030": {
+   "options": {
+    "a": "U.S. settlement cycles applied to every market, with local holidays noted",
+    "b": "Local market settlement cycles, holiday calendars, and currency cut-off times",
+    "c": "Holiday calendars of the trade's home market, with FX settled on the trade date",
+    "d": "Currency cut-off times in New York, since all FX settles through CHIPS"
+   },
+   "distractorExplanations": {
+    "a": "Many foreign markets settle T+2 or on other cycles; applying the U.S. T+1 cycle everywhere causes cross-border fails.",
+    "c": "Settlement needs both markets' calendars and FX funding within currency cut-offs (spot FX is T+2), not same-day FX on one calendar.",
+    "d": "FX settles in each currency's home payment system (CLS, local RTGS), so desks track local cut-offs, not just New York CHIPS."
+   },
+   "explanation": "Cross-border ops aligns settlement dates and FX funding across jurisdictions. These matter most for cross-border trades."
+  },
+  "series-99-readiness-check-regs-016": {
+   "options": {
+    "a": "Paper or electronic form, kept for three years when no other period is specified",
+    "b": "Electronic form only, with paper records converted within one year",
+    "c": "Any format the firm chooses, provided it keeps records for two years",
+    "d": "A format that is readily accessible and auditable for required retention periods"
+   },
+   "distractorExplanations": {
+    "a": "Rule 4511(b) sets a six-year default for records with no specified period under FINRA rules or 17a-4, not three years.",
+    "b": "Rule 4511 and 17a-4 permit paper or compliant electronic records; there is no mandatory one-year paper conversion.",
+    "c": "Records must be kept in a 17a-4-compliant format under 4511(c), and the default retention under 4511(b) is six years, not two."
+   }
+  },
+  "series-99-readiness-check-regs-017": {
+   "options": {
+    "a": "Business continuity and contingency plans for critical operations",
+    "b": "Written supervisory procedures for each office of supervisory jurisdiction",
+    "c": "Annual CEO certification of compliance and supervisory processes",
+    "d": "Customer account information records including a trusted contact"
+   },
+   "distractorExplanations": {
+    "b": "Written supervisory procedures are required by Rule 3110; Rule 4370 is the business continuity plan rule.",
+    "c": "The annual CEO certification is Rule 3130; Rule 4370 covers business continuity plans and emergency contacts.",
+    "d": "Account information and trusted contact persons are FINRA Rule 4512, not the Rule 4370 business continuity rule."
+   }
+  },
+  "series-99-readiness-check-regs-018": {
+   "options": {
+    "a": "File Currency Transaction Reports for cash deposits of $3,000 or more in a day",
+    "b": "Implement AML programs including customer due diligence and suspicious activity monitoring",
+    "c": "File Suspicious Activity Reports with FINRA for any suspicious transaction of $2,000 or more",
+    "d": "Implement AML programs reviewed by an independent tester every five years"
+   },
+   "distractorExplanations": {
+    "a": "CTRs are filed for cash over $10,000 in a business day; $3,000 is the monetary instrument purchase recordkeeping threshold.",
+    "c": "SARs are filed with FinCEN, not FINRA, and the broker-dealer threshold is $5,000; $2,000 is the money services business threshold.",
+    "d": "FINRA Rule 3310 requires independent AML testing annually (every two years for certain firms), not every five years."
+   }
+  },
+  "series-99-readiness-check-regs-019": {
+   "options": {
+    "a": "Verify identity of customers using documentary methods, as non-documentary ones are barred",
+    "b": "Verify identity of customers by obtaining each customer's Social Security card copy",
+    "c": "Verify identity of customers opening accounts using documentary or non-documentary methods",
+    "d": "Verify identity of account owners and file the CIP records with FinCEN each month"
+   },
+   "distractorExplanations": {
+    "a": "The CIP rule expressly allows non-documentary methods such as credit bureau checks, alone or combined with documents.",
+    "b": "CIP does not require an SSN card; it requires a taxpayer ID number and risk-based verification by documents or other means.",
+    "d": "CIP records are kept by the firm for five years after the account closes; they are not filed with FinCEN."
+   }
+  },
+  "series-99-readiness-check-regs-020": {
+   "options": {
+    "a": "Broker-dealer recommendations of securities and accounts to institutional customers",
+    "b": "Investment adviser recommendations to advisory clients under the Advisers Act",
+    "c": "Broker-dealer execution of unsolicited orders for retail self-directed accounts",
+    "d": "Broker-dealer recommendations of securities and accounts to retail customers"
+   },
+   "distractorExplanations": {
+    "a": "Reg BI covers retail customers; institutional recommendations remain under FINRA Rule 2111 suitability.",
+    "b": "RIAs owe a fiduciary duty under the Advisers Act; Reg BI applies to broker-dealers and their associated persons.",
+    "c": "Reg BI is triggered by a recommendation; unsolicited self-directed orders without a recommendation are outside it."
+   }
+  },
+  "series-99-readiness-check-regs-021": {
+   "options": {
+    "a": "Broker-dealers and municipal advisors engaged in municipal securities activities",
+    "b": "State and local issuers that sell municipal bonds to fund public projects",
+    "c": "Broker-dealers trading corporate bonds and reporting those trades to TRACE",
+    "d": "Banks and dealers in U.S. Treasury securities under the Government Securities Act"
+   },
+   "distractorExplanations": {
+    "b": "The MSRB cannot regulate municipal issuers directly; issuer disclosure is reached through dealer rules such as SEC Rule 15c2-12.",
+    "c": "Corporate bond dealing and TRACE reporting are FINRA rules; MSRB rules govern municipal securities activities.",
+    "d": "Treasury dealers are regulated under the Government Securities Act by Treasury, the SEC, and bank regulators, not the MSRB."
+   }
+  },
+  "series-99-readiness-check-regs-022": {
+   "options": {
+    "a": "$2,000 in the margin account, the same minimum required to open any margin account",
+    "b": "$25,000 in the margin account before day trading is permitted without restriction",
+    "c": "$50,000 in the margin account, of which half may be met with a customer's cash account",
+    "d": "$100,000 in the margin account, with day trading buying power limited to 2x equity"
+   },
+   "distractorExplanations": {
+    "a": "$2,000 is the Rule 4210 minimum equity for a margin account; pattern day traders need $25,000.",
+    "c": "PDT minimum equity is $25,000 and must be held in the margin account; cash-account balances do not count toward it.",
+    "d": "The PDT minimum is $25,000, and day-trading buying power is up to 4x maintenance margin excess, not 2x equity."
+   }
+  },
+  "series-99-readiness-check-regs-023": {
+   "options": {
+    "a": "Complaints are made orally or in writing, once three are received from one customer",
+    "b": "Complaints involve service delays and are not resolved within 30 days of receipt",
+    "c": "Complaints involve allegations of theft, misappropriation, or certain sales practice violations",
+    "d": "Complaints allege customer losses above $5,000, with the report due to FINRA within 90 days"
+   },
+   "distractorExplanations": {
+    "a": "4530 reporting concerns written customer complaints; there is no three-complaints-per-customer trigger.",
+    "b": "Service delays are not a 4530(a) trigger; 30 days is the deadline to report a specified event, not a complaint test.",
+    "d": "4530(a) events are reported within 30 days, and complaint reporting turns on the allegation type (theft, misappropriation, forgery), not a dollar amount."
+   }
+  },
+  "series-99-readiness-check-regs-024": {
+   "options": {
+    "a": "The firm pays market makers a fee to execute orders at the NBBO midpoint",
+    "b": "The customer's orders will be routed to the venue paying the highest rebate",
+    "c": "The firm receives commissions from customers for each order it routes",
+    "d": "The firm may receive compensation from market makers for routing orders"
+   },
+   "distractorExplanations": {
+    "a": "PFOF flows from market makers to the broker, not from the broker to market makers.",
+    "b": "PFOF does not override best execution; the firm must still route for the most favorable terms reasonably available.",
+    "c": "Commissions are charged to customers; PFOF is compensation the firm receives from execution venues for routing."
+   }
+  },
+  "series-99-readiness-check-regs-025": {
+   "options": {
+    "a": "Publication of quotations for over-the-counter equity securities by broker-dealers",
+    "b": "Continuing disclosure by municipal issuers that broker-dealers must review",
+    "c": "Delivery of a preliminary prospectus to buyers 48 hours before confirmation",
+    "d": "Net capital that broker-dealers must hold relative to aggregate indebtedness"
+   },
+   "distractorExplanations": {
+    "b": "Municipal continuing disclosure obligations for underwriters are SEC Rule 15c2-12, not Rule 15c2-11.",
+    "c": "The 48-hour preliminary prospectus delivery for IPOs is SEC Rule 15c2-8, not Rule 15c2-11.",
+    "d": "Net capital requirements are SEC Rule 15c3-1; Rule 15c2-11 governs publishing quotations for OTC securities."
+   }
+  },
+  "series-99-readiness-check-regs-026": {
+   "options": {
+    "a": "Screen customers against SDN lists at onboarding and on annual reviews",
+    "b": "Screen customers and transactions against SDN and blocked persons lists",
+    "c": "Report blocked transactions to FinCEN on a SAR within 30 calendar days",
+    "d": "Screen wire beneficiaries against SDN lists but not the account holders"
+   },
+   "distractorExplanations": {
+    "a": "Screening must cover transactions and list updates on an ongoing basis, not just onboarding plus an annual refresh.",
+    "c": "Blocked or rejected transactions are reported to OFAC within 10 business days; SARs to FinCEN are a separate BSA filing.",
+    "d": "OFAC compliance covers both customers and transactions; skipping account holders misses sanctioned account owners."
+   }
+  },
+  "series-99-readiness-check-regs-027": {
+   "options": {
+    "a": "Retention of electronic communications for one year in any rewriteable electronic storage format",
+    "b": "Backup on the firm email server, with deletion permitted after 90 days",
+    "c": "Non-rewriteable, non-erasable format (or equivalent) for retained broker-dealer records",
+    "d": "Retention of emails only, while instant messages and texts are excluded"
+   },
+   "distractorExplanations": {
+    "a": "Communications are kept at least three years under 17a-4(b)(4), in WORM or a compliant audit-trail system, not rewriteable storage.",
+    "b": "Ordinary server backups with 90-day deletion fail both the three-year retention period and the 17a-4 format requirement.",
+    "d": "17a-4 covers business communications in any medium, including IMs, texts, and chats, as the SEC off-channel cases showed."
+   }
+  },
+  "series-99-readiness-check-regs-028": {
+   "options": {
+    "a": "Gifts the firm pays its own employees as year-end awards above $100",
+    "b": "Gifts from customers to representatives, capped at $25 per occasion",
+    "c": "Salary and commissions the broker-dealer pays registered employees",
+    "d": "Gifts and entertainment from non-customers that could impair objectivity"
+   },
+   "distractorExplanations": {
+    "a": "Rule 3220 targets gifts to persons employed by others in relation to their employer's business, not the firm's own employee awards.",
+    "b": "There is no $25 per-occasion cap; the Rule 3220 limit is a per-person annual amount on gifts relating to the recipient employer's business.",
+    "c": "Regular compensation paid by the employing firm is ordinary employment pay and falls outside the Rule 3220 gift limit."
+   },
+   "explanation": "3220 restricts non-cash compensation from vendors to associated persons. Gifts above the rule's annual per-person threshold are prohibited."
+  },
+  "series-99-readiness-check-regs-029": {
+   "options": {
+    "a": "The broker-dealer or designated agent sending proxy materials",
+    "b": "The issuer's transfer agent mailing ballots to each beneficial owner",
+    "c": "The Depository Trust Company voting as the nominee holder of record",
+    "d": "The broker voting on every proposal at its discretion after 10 days"
+   },
+   "distractorExplanations": {
+    "b": "Transfer agents deal with registered holders; street-name owners get materials through their broker or its agent.",
+    "c": "DTC issues an omnibus proxy to its participants; it does not vote beneficial owners' shares itself.",
+    "d": "Under NYSE Rule 452 brokers may vote uninstructed shares on routine matters only, not on every proposal."
+   },
+   "explanation": "Beneficial owners receive voting instructions via broker; ops processes ballots and omnibus votes. The broker or its agent also records and submits customer voting instructions."
+  },
+  "series-99-readiness-check-regs-030": {
+   "options": {
+    "a": "Duplicate statements sent to compliance, but no pre-clearance of personal trades",
+    "b": "Pre-clearance of trades, restricted lists, and blackout periods around corporate actions",
+    "c": "Disclosure of trades to the employer only for purchases of employer stock",
+    "d": "Trading through the firm itself, with accounts at other firms left unreported"
+   },
+   "distractorExplanations": {
+    "a": "Duplicate statements are common, but ops staff with MNPI access are typically also subject to pre-clearance and restricted lists.",
+    "c": "Policies cover reportable personal securities trades generally, not just purchases of employer stock.",
+    "d": "Rule 3210 requires prior written consent from the employer for accounts held at other firms; they cannot go unreported."
+   }
+  },
+  "series-99-readiness-check-books-016": {
+   "options": {
+    "a": "Debits the customer's payable account and credits cash for the deposit",
+    "b": "Debits cash/assets and credits the customer's receivable account",
+    "c": "Debits cash/assets and credits the firm's commission revenue account",
+    "d": "Debits cash/assets and credits the customer's liability (payable) account"
+   },
+   "distractorExplanations": {
+    "a": "This reverses the entry; incoming cash raises the asset (debit) and the amount owed to the customer (credit).",
+    "b": "A receivable means the customer owes the firm, as with a margin debit; deposited cash is owed back to the customer.",
+    "c": "Deposited customer cash is not revenue; it remains a liability until fees are actually earned and charged."
+   }
+  },
+  "series-99-readiness-check-books-017": {
+   "options": {
+    "a": "Positions, balances, transactions, and fees for the statement period accurately",
+    "b": "Positions and balances, with transactions reported on the confirms instead",
+    "c": "Transactions and fees, with positions shown on the annual Form 1099 instead",
+    "d": "Positions at month-end, with fees disclosed only on the annual fee schedule"
+   },
+   "distractorExplanations": {
+    "b": "Confirmations are trade-by-trade notices under Rule 10b-10; Rule 2231 statements must still list account activity.",
+    "c": "Form 1099 reports tax information and does not substitute for positions on a periodic account statement.",
+    "d": "Fees charged during the period must appear on the statement; a separate fee schedule does not replace that disclosure."
+   }
+  },
+  "series-99-readiness-check-books-018": {
+   "options": {
+    "a": "Dividends and interest paid on covered securities during the year",
+    "b": "Proceeds and basis for sales to assist customer tax reporting",
+    "c": "Proceeds for sales, with basis left for the customer to compute",
+    "d": "Year-end market value and basis of positions still held"
+   },
+   "distractorExplanations": {
+    "a": "Dividends and interest go on Forms 1099-DIV and 1099-INT; Form 1099-B reports proceeds and basis from sales.",
+    "c": "For covered securities brokers must report adjusted basis; leaving basis to the customer describes noncovered lots.",
+    "d": "Form 1099-B reports dispositions, not unrealized year-end holdings; unsold positions do not appear on it."
+   }
+  },
+  "series-99-readiness-check-books-019": {
+   "options": {
+    "a": "Customer cash awaiting investment in a bank sweep program",
+    "b": "Unsettled customer trades awaiting T+1 settlement",
+    "c": "Unidentified receipts or items pending proper allocation",
+    "d": "Trade errors held until the firm absorbs the loss"
+   },
+   "distractorExplanations": {
+    "a": "Sweep balances are customer assets in a bank program, not unidentified items awaiting allocation.",
+    "b": "Pending settlements are tracked in settlement or fail accounts; suspense is for items that cannot yet be identified.",
+    "d": "Trade errors go to the error account; suspense holds unidentified receipts or unallocated items."
+   },
+   "explanation": "Suspense clears when research identifies correct booking; prolonged balances trigger audit flags. Items are later allocated to the correct customer or firm account."
+  },
+  "series-99-readiness-check-books-021": {
+   "options": {
+    "a": "Internal ledgers to DTC/depository records and counterparty statements",
+    "b": "Customer statements to trade confirmations sent during the period",
+    "c": "Internal ledgers to the firm's general ledger cash accounts only",
+    "d": "Trader positions to their profit-and-loss reports for the day"
+   },
+   "distractorExplanations": {
+    "b": "Statement-versus-confirm checks are a customer communications review, not a books-to-depository position reconciliation.",
+    "c": "Cash reconciliation is a separate control; position reconciliation compares security positions to DTC and counterparties.",
+    "d": "P&L-versus-position checks are a desk risk control; operations position recon compares books to depository records."
+   }
+  },
+  "series-99-readiness-check-books-022": {
+   "options": {
+    "a": "Remaining margin debit after the receiving firm accepts the transfer",
+    "b": "Remaining cash after securities transfer settles between firms",
+    "c": "Remaining securities the receiving firm rejected as non-transferable",
+    "d": "Remaining IRA balances moved by a 60-day indirect rollover check"
+   },
+   "distractorExplanations": {
+    "a": "A residual credit is money owed to the customer, not a margin debit the customer owes.",
+    "c": "Non-transferable assets stay at the delivering firm or are liquidated on instruction; residual credit refers to trailing cash.",
+    "d": "A 60-day indirect rollover is a tax distribution method, not the ACATS residual credit process between firms."
+   }
+  },
+  "series-99-readiness-check-books-023": {
+   "options": {
+    "a": "Recognition of tax gains when substantially identical securities are repurchased within 30 days",
+    "b": "Recognition of tax losses when shares of a different issuer in the same industry are repurchased",
+    "c": "Recognition of tax losses when substantially identical securities are repurchased within 30 days",
+    "d": "Recognition of tax losses when substantially identical securities are repurchased within 90 days"
+   },
+   "distractorExplanations": {
+    "a": "The wash sale rule disallows losses only; gains are recognized normally even if the shares are bought back.",
+    "b": "Only substantially identical securities trigger a wash sale; a different company in the same industry does not.",
+    "d": "The wash sale window is 30 days before or after the sale (61 days in total), not 90 days."
+   },
+   "explanation": "Wash sales defer losses when replacement purchases occur in the 61-day window. The window runs 30 days before or after the sale."
+  },
+  "series-99-readiness-check-books-024": {
+   "options": {
+    "a": "Turning unclaimed property over to the SEC after dormancy periods lapse",
+    "b": "Turning unclaimed property over to the state where the firm is incorporated",
+    "c": "Moving dormant accounts into the firm's suspense account indefinitely",
+    "d": "Turning unclaimed property over to the state after dormancy periods"
+   },
+   "distractorExplanations": {
+    "a": "Escheatment is governed by state unclaimed property laws; property goes to the states, not the SEC.",
+    "b": "Priority goes to the state of the owner's last known address; the firm's state of incorporation is the secondary rule.",
+    "c": "Dormant assets stay in the customer's name until escheated; suspense is for unidentified items, not long-term dormancy."
+   },
+   "explanation": "States claim abandoned property; firms must diligence and remit per escheat statutes. This is done per each state's unclaimed property laws."
+  },
+  "series-99-readiness-check-books-025": {
+   "options": {
+    "a": "The earliest purchased shares are deemed sold first for gain/loss calculation",
+    "b": "The most recently purchased shares are deemed sold first for gain/loss calculation",
+    "c": "The highest-cost shares are deemed sold first for gain/loss calculation",
+    "d": "The average cost per share is used for gain/loss calculation"
+   },
+   "distractorExplanations": {
+    "b": "Most-recent-first is LIFO; FIFO relieves the earliest purchased lots first.",
+    "c": "Highest-cost-first is HIFO, a tax-lot election the customer can choose, not FIFO.",
+    "d": "Average cost is a separate method common for mutual fund shares; FIFO matches specific earliest lots."
+   }
+  },
+  "series-99-readiness-check-books-026": {
+   "options": {
+    "a": "Authorization from the receiving account owner and a matching entry",
+    "b": "Authorization, matching debit/credit, and compliance review",
+    "c": "A matching debit/credit, with authorization needed above $10,000",
+    "d": "Supervisory approval in place of written customer authorization"
+   },
+   "distractorExplanations": {
+    "a": "The instruction must come from the owner of the account being debited (or lawful authority), not just the receiving owner.",
+    "c": "Authorization is required for any inter-account journal; there is no dollar floor below which consent is waived.",
+    "d": "A supervisor cannot substitute for the customer's instruction; journals between customer accounts require client authority."
+   },
+   "explanation": "Inter-account journals need client instruction or lawful authority and audit trail. These controls prevent unauthorized transfers between accounts."
+  },
+  "series-99-readiness-check-books-027": {
+   "options": {
+    "a": "Interest charged on the client's margin debit balance under its financing terms",
+    "b": "Rebates paid to the client on cash collateral for its short positions",
+    "c": "Costs or interest associated with securities borrow fails or settlement delays",
+    "d": "Custody fees charged for safekeeping the client's fully paid securities"
+   },
+   "distractorExplanations": {
+    "a": "Margin interest is a financing charge on the debit balance, separate from borrow or settlement fail charges.",
+    "b": "Short rebates are credits paid to the client on collateral, not charges arising from fails.",
+    "d": "Safekeeping fees are custody service charges, not costs arising from borrow or settlement fails."
+   }
+  },
+  "series-99-readiness-check-books-028": {
+   "options": {
+    "a": "Produce requested records within 30 days of the examiner's written request",
+    "b": "Produce requested records only after legal counsel completes privilege review",
+    "c": "Produce firm-prepared summaries in place of the underlying source records",
+    "d": "Produce requested records promptly in accessible form during examinations"
+   },
+   "distractorExplanations": {
+    "a": "Firms must furnish records promptly on request under 17a-4(j) and Rule 8210; there is no 30-day grace period.",
+    "b": "Counsel may review for privilege, but production cannot be delayed past prompt; examiners are entitled to required records.",
+    "c": "Examiners can demand the actual books and records, not summaries prepared by the firm."
+   }
+  },
+  "series-99-readiness-check-books-029": {
+   "options": {
+    "a": "Cash payable to the customer on demand from fully paid activity not yet withdrawn",
+    "b": "Cash the customer owes the firm on a margin debit after a purchase",
+    "c": "Cash in a short account held as collateral for the short position",
+    "d": "Cash swept to an FDIC-insured bank deposit program and held off the firm's books"
+   },
+   "distractorExplanations": {
+    "b": "Money owed by the customer is a debit balance; a free credit is money the firm owes the customer.",
+    "c": "Short sale proceeds held as collateral are not free; free credits are unencumbered and payable on demand.",
+    "d": "Bank-swept cash is a deposit at a bank, not a free credit balance on the broker-dealer's books under Rule 15c3-3."
+   }
+  },
+  "series-99-readiness-check-books-030": {
+   "options": {
+    "a": "Share quantity and total cost basis by the split ratio, while leaving price unchanged",
+    "b": "Share quantity and price history while preserving total market value per account",
+    "c": "Per-share cost basis upward by the split ratio for each affected lot",
+    "d": "Price history, with cash in lieu paid for each whole share received"
+   },
+   "distractorExplanations": {
+    "a": "Total cost basis stays the same in a split; only per-share basis and price are divided by the split ratio.",
+    "c": "In a forward split per-share basis is divided by the ratio, not increased; total basis stays the same.",
+    "d": "Cash in lieu is paid for fractional shares; whole split shares are credited to the account as shares."
+   }
+  },
+  "series-99-readiness-check-risk-016": {
+   "options": {
+    "a": "Loss from price changes in the firm's proprietary trading inventory",
+    "b": "Loss from a counterparty defaulting on its settlement obligations",
+    "c": "Loss from being unable to fund settlements when cash is tied up",
+    "d": "Loss from failed processes, people, systems, or external events"
+   },
+   "distractorExplanations": {
+    "a": "Price-driven losses on inventory are market risk, a separate category from operational risk.",
+    "b": "Counterparty default is credit or settlement risk; operational risk is about processes, people, and systems.",
+    "c": "A funding shortfall is liquidity risk, not operational risk from failed processes or systems."
+   }
+  },
+  "series-99-readiness-check-risk-017": {
+   "options": {
+    "a": "Password reset followed immediately by large wire to a new external account",
+    "b": "Customer naming a trusted contact person during an annual profile update",
+    "c": "Large deposit from the customer's verified bank followed by a stock purchase",
+    "d": "Customer switching from paper statements to e-delivery after several years"
+   },
+   "distractorExplanations": {
+    "b": "Adding a trusted contact under Rule 4512 is a protective step, not an account takeover signal.",
+    "c": "Money flowing in from a verified bank into investments is ordinary activity; takeovers drain funds out to new payees.",
+    "d": "A delivery preference change alone is minor; takeover patterns pair credential changes with outbound funds."
+   }
+  },
+  "series-99-readiness-check-risk-018": {
+   "options": {
+    "a": "Clear exceptions below a set dollar threshold without investigating them",
+    "b": "Investigate root cause, assign remediation, and escalate patterns per policy",
+    "c": "Close each exception once the ops analyst marks it resolved in the system",
+    "d": "Retain the reports for one year and review them at the annual audit"
+   },
+   "distractorExplanations": {
+    "a": "Small repeating exceptions can signal a systemic break; thresholds may prioritize review but do not waive it.",
+    "c": "Supervisors must verify resolution themselves, not just rely on the analyst's own status flag.",
+    "d": "Exception reports require timely review; deferring them to an annual audit lets breaks age."
+   }
+  },
+  "series-99-readiness-check-risk-019": {
+   "options": {
+    "a": "Backup sites and data replication, with plan updates every three years",
+    "b": "Data replication and recovery, with customer access deferred until systems return",
+    "c": "Backup sites, data replication, and staffing for critical functions during disruptions",
+    "d": "Backup sites and staffing, with the plan submitted to the SEC for approval before its use"
+   },
+   "distractorExplanations": {
+    "a": "Rule 4370 requires annual review and updates for material changes, not a three-year cycle.",
+    "b": "Rule 4370 requires addressing how customers get prompt access to funds and securities during a disruption.",
+    "d": "BCPs are kept by the firm and emergency contacts reported to FINRA; the SEC does not pre-approve plans."
+   }
+  },
+  "series-99-readiness-check-risk-020": {
+   "options": {
+    "a": "The firm's proprietary inventory falls in value during a market decline",
+    "b": "A customer fails to meet a margin call and the debit becomes unsecured",
+    "c": "A system outage delays trade processing during the overnight settlement batch run",
+    "d": "The firm cannot meet cash or securities settlement obligations on due dates"
+   },
+   "distractorExplanations": {
+    "a": "Price declines in inventory are market risk; liquidity risk is about meeting settlement and funding obligations when due.",
+    "b": "An unsecured margin debit is customer credit risk, not the firm's ability to fund its settlements.",
+    "c": "System outages are operational risk, even though they may later contribute to funding problems."
+   }
+  },
+  "series-99-readiness-check-risk-022": {
+   "options": {
+    "a": "Updating to the most recent address and releasing pending wires",
+    "b": "Enhanced due diligence and hold on disbursements until resolved",
+    "c": "Immediate SAR filing before any contact with the customer",
+    "d": "Closing the account and mailing assets to the newest address"
+   },
+   "distractorExplanations": {
+    "a": "Accepting the newest address without verification is the takeover pattern; resolve the conflict first.",
+    "c": "A mismatch is a red flag to investigate; a SAR follows if the review finds suspicious activity, not as a reflex.",
+    "d": "Closing and shipping assets to an unverified address compounds the risk; investigate and hold first."
+   }
+  },
+  "series-99-readiness-check-risk-023": {
+   "options": {
+    "a": "Holding unallocated block trades until the adviser sends allocations",
+    "b": "Absorbing losses on trades a customer later says they regret placing",
+    "c": "Temporary posting of trade breaks or processing errors pending correction",
+    "d": "Parking unidentified incoming cash until the remitter is identified"
+   },
+   "distractorExplanations": {
+    "a": "Unallocated blocks belong in an allocation or average-price account, not the error account.",
+    "b": "A customer's regret over a correctly executed order is not a firm error and does not belong in the error account.",
+    "d": "Unidentified receipts go to a suspense account; the error account is for trade and processing errors."
+   }
+  },
+  "series-99-readiness-check-risk-024": {
+   "options": {
+    "a": "Longer settlement cycles that allow more time to match, affirm, and fund each trade",
+    "b": "Bilateral netting with each dealer in place of clearing through a central counterparty (CCP)",
+    "c": "Free delivery of securities ahead of payment to speed up settlement",
+    "d": "Shorter settlement cycles, central clearing, and payment-versus-payment where available"
+   },
+   "distractorExplanations": {
+    "a": "Longer cycles extend the exposure window between trade and settlement; T+1 shortened it to cut risk.",
+    "b": "Bilateral netting leaves counterparty exposure in place; central clearing through a CCP is the stronger mitigant.",
+    "c": "Free delivery before payment creates principal (Herstatt) risk; DVP and PvP tie delivery to payment."
+   }
+  },
+  "series-99-readiness-check-risk-025": {
+   "options": {
+    "a": "Isolating affected systems, preserving logs, and notifying security leadership",
+    "b": "Restoring affected systems from backup first, then reviewing logs afterward",
+    "c": "Notifying all affected customers before isolating the compromised systems",
+    "d": "Isolating affected systems, then waiting for FINRA approval to resume wires"
+   },
+   "distractorExplanations": {
+    "b": "Restoring before preserving evidence can overwrite forensic data; containment and log preservation come first.",
+    "c": "Containment comes first; customer notice follows Reg S-P and state breach laws once the scope is known.",
+    "d": "FINRA does not approve resumption of operations; the firm decides under its incident response and BCP plans."
+   },
+   "explanation": "Incident response contains damage and supports forensic review and regulatory reporting. Each step follows the firm's incident response playbook."
+  },
+  "series-99-readiness-check-risk-026": {
+   "options": {
+    "a": "Decide which individual complaints are reportable under Rule 4530",
+    "b": "Identify systemic process failures and prioritize control improvements",
+    "c": "Calculate restitution owed to each complainant on a case-by-case basis",
+    "d": "Rank staff for incentive pay based on complaints logged per employee"
+   },
+   "distractorExplanations": {
+    "a": "4530 reportability is decided complaint by complaint; trending looks for repeated root causes across many complaints.",
+    "c": "Restitution is an individual remedy; trend analysis is for spotting systemic control weaknesses.",
+    "d": "Paying by complaint counts discourages logging complaints; trending is for finding process failures."
+   }
+  },
+  "series-99-readiness-check-risk-027": {
+   "options": {
+    "a": "Liability only if the customer submits a written complaint first",
+    "b": "A Reg SHO close-out obligation by the open of trading on T+2",
+    "c": "Financial exposure, customer harm, and regulatory conduct issues",
+    "d": "A trade reporting break to be corrected at month-end reconciliation"
+   },
+   "distractorExplanations": {
+    "a": "The duty to correct and make the customer whole exists whether or not the customer complains.",
+    "b": "Reg SHO close-outs address short-sale fails to deliver, not unfilled customer limit orders.",
+    "d": "The issue is execution quality and customer harm, which require prompt correction rather than month-end cleanup."
+   },
+   "explanation": "Mishandled orders can breach duty of care; firms must fix and compensate where appropriate. These issues require prompt correction."
+  },
+  "series-99-readiness-check-risk-028": {
+   "options": {
+    "a": "Revenue per registered representative and new account openings",
+    "b": "Net capital ratio and the size of the proprietary inventory",
+    "c": "Average client portfolio return versus the stated benchmark",
+    "d": "Rate of trade breaks, fail rates, or aged unreconciled items"
+   },
+   "distractorExplanations": {
+    "a": "Revenue and account growth are business metrics, not indicators of operational control risk.",
+    "b": "Net capital and inventory size measure financial and market risk, not operational process health.",
+    "c": "Portfolio performance measures investment results, not operational failure rates."
+   }
+  },
+  "series-99-readiness-check-risk-029": {
+   "options": {
+    "a": "Due diligence, contract SLAs, SOC reports, and exit/contingency planning",
+    "b": "Reliance on the vendor's SOC 2 report in place of the firm's own oversight",
+    "c": "An indemnity clause that transfers regulatory liability to the vendor",
+    "d": "Due diligence at onboarding, with contract reviews every five years"
+   },
+   "distractorExplanations": {
+    "b": "A SOC report informs oversight, but FINRA Notice 21-29 keeps supervisory responsibility with the firm.",
+    "c": "Contracts cannot transfer a member firm's regulatory obligations for outsourced functions.",
+    "d": "Vendor oversight must be ongoing and risk-based, not a one-time check revisited every five years."
+   }
+  },
+  "series-99-readiness-check-risk-030": {
+   "options": {
+    "a": "Notify the customer that a SAR was filed once 30 days have passed",
+    "b": "Not tip off the subject that a SAR was filed, per BSA confidentiality rules",
+    "c": "Disclose the SAR to the customer's attorney once a written request is received",
+    "d": "Close the account and tell the customer the SAR was the reason"
+   },
+   "distractorExplanations": {
+    "a": "SAR confidentiality has no time limit; disclosing a SAR to its subject is prohibited at any point.",
+    "c": "SAR confidentiality bars disclosure to the subject or their counsel; regulators and law enforcement may receive it.",
+    "d": "Explaining a closure by reference to a SAR is tipping off; firms may close accounts but cannot reveal the filing."
+   }
+  }
+ }
+}

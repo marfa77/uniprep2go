@@ -1,0 +1,1445 @@
+{
+ "series-79-readiness-check": {
+  "series-79-readiness-check-valuation-001": {
+   "options": {
+    "a": "A discount rate reflecting the risk of the cash flows",
+    "b": "The risk-free Treasury rate matched to the forecast horizon",
+    "c": "The company's after-tax cost of debt, as the cheapest capital",
+    "d": "Historical book value growth of the company"
+   },
+   "distractorExplanations": {
+    "b": "The risk-free rate ignores business and financial risk; a DCF needs a risk-adjusted rate such as WACC.",
+    "c": "Cost of debt alone understates risk; firm-level FCF is discounted at a blended WACC that includes the higher cost of equity.",
+    "d": "Book value growth is an accounting trend, not a required return, so it cannot serve as a DCF discount rate."
+   },
+   "explanation": "DCF uses a risk-adjusted discount rate; WACC is common for unlevered FCF to firm value. For enterprise value this is often WACC."
+  },
+  "series-79-readiness-check-valuation-002": {
+   "options": {
+    "a": "Market cap minus net debt",
+    "b": "Market cap plus net debt",
+    "c": "Market cap plus cash",
+    "d": "Book equity plus net debt"
+   },
+   "distractorExplanations": {
+    "c": "Cash is subtracted, not added, when moving from equity value to EV; adding it overstates enterprise value.",
+    "d": "EV uses the market value of equity; book equity plus net debt is invested capital, not enterprise value.",
+    "a": "Subtracting debt gives equity, not EV."
+   },
+   "explanation": "EV = equity value + net debt (and other claims as applicable), sometimes including minority interest and preferred stock."
+  },
+  "series-79-readiness-check-valuation-003": {
+   "options": {
+    "a": "Match the target's SIC code even when size and growth differ widely",
+    "b": "Use only the sector's highest-multiple trading names",
+    "c": "Reflect similar business models, size, growth, and risk profiles",
+    "d": "Contain private companies valued in recent precedent transactions"
+   },
+   "distractorExplanations": {
+    "a": "Industry code alone is not enough; peers with very different size and growth trade at different multiples and distort the range.",
+    "b": "Cherry-picking the highest-multiple names biases the valuation upward instead of reflecting true comparability.",
+    "d": "Private-company deal values belong in precedent transactions analysis; trading comps use publicly traded peers."
+   }
+  },
+  "series-79-readiness-check-valuation-004": {
+   "options": {
+    "a": "Eliminates all capital structure effects on the multiple",
+    "b": "Is after interest expense, so it reflects each firm's differing financing costs",
+    "c": "Is a GAAP measure that already deducts capital expenditures and taxes",
+    "d": "Is before interest and often used to compare firms with different leverage"
+   },
+   "distractorExplanations": {
+    "b": "EBITDA is earnings before interest; an after-interest figure would embed leverage, which is why P/E is less comparable.",
+    "c": "EBITDA is a non-GAAP measure that excludes taxes and is calculated before capex; it is not a free cash flow proxy.",
+    "a": "EV still embeds capital structure in the numerator."
+   }
+  },
+  "series-79-readiness-check-valuation-005": {
+   "options": {
+    "a": "The model is mathematically invalid (denominator negative)",
+    "b": "Terminal value becomes very large but remains meaningful",
+    "c": "Terminal value equals the final-year FCF divided by g alone",
+    "d": "The discount rate should be replaced with the growth rate"
+   },
+   "distractorExplanations": {
+    "b": "With g above WACC the denominator is negative, producing a negative, meaningless TV rather than a large valid one.",
+    "c": "Dropping WACC from the denominator is not a recognized fix; the Gordon formula simply fails when g is at or above WACC.",
+    "d": "Substituting g for the discount rate makes the denominator zero; the correct conclusion is that the inputs are invalid."
+   }
+  },
+  "series-79-readiness-check-valuation-006": {
+   "options": {
+    "a": "Trading prices typically exceed negotiated deal prices",
+    "b": "Buyers pay for 100% control and expected synergies",
+    "c": "Sellers must be paid for their tax liability on the gain",
+    "d": "Precedent multiples are measured on depressed post-deal prices"
+   },
+   "distractorExplanations": {
+    "a": "Reversed: deals usually price at a premium to the unaffected trading price, not below it.",
+    "c": "Seller tax costs are not the source of the control premium; buyers pay for control rights and synergies.",
+    "d": "Precedent multiples use the announced deal price, not post-deal trading; the premium reflects control value."
+   }
+  },
+  "series-79-readiness-check-valuation-007": {
+   "options": {
+    "a": "Accounts receivable",
+    "b": "Raw material inventory",
+    "c": "Cash and short-term debt",
+    "d": "Accrued liabilities"
+   },
+   "distractorExplanations": {
+    "b": "Inventory, including raw materials, is a core operating current asset that stays in NWC rather than being excluded.",
+    "d": "Accrued liabilities are operating current liabilities and stay in NWC; only cash and debt-like items are carved out.",
+    "a": "AR is typically operating NWC."
+   },
+   "explanation": "Cash/debt often carved out; NWC definitions vary but cash is frequently excluded from operating NWC. Short-term debt is treated as part of net debt instead."
+  },
+  "series-79-readiness-check-valuation-008": {
+   "options": {
+    "a": "Decreases DCF value via a higher discount rate",
+    "b": "Has no effect unless WACC also changes",
+    "c": "Changes only the explicit forecast-period value",
+    "d": "Increases DCF value (sometimes materially)"
+   },
+   "distractorExplanations": {
+    "a": "Terminal growth does not change the discount rate; a higher g raises terminal value and therefore DCF value.",
+    "b": "Terminal value = FCF×(1+g)/(WACC−g) depends directly on g, so value changes even with WACC held constant.",
+    "c": "Terminal growth drives the terminal value, not the explicit forecast years, which are projected separately."
+   }
+  },
+  "series-79-readiness-check-valuation-009": {
+   "options": {
+    "a": "Assets are sold piecemeal and the firm ceases operations",
+    "b": "The company is a going concern with strong growth",
+    "c": "The firm is sold whole to a strategic buyer as a going concern",
+    "d": "The firm reorganizes in Chapter 11 and keeps operating"
+   },
+   "distractorExplanations": {
+    "c": "A whole-company sale to a strategic buyer is valued as a going concern using DCF, comps, and precedents.",
+    "d": "A Chapter 11 reorganization keeps the business operating, so a going-concern value is used; liquidation is the comparison case.",
+    "b": "Going concern uses DCF/comps."
+   }
+  },
+  "series-79-readiness-check-valuation-011": {
+   "options": {
+    "a": "The company has one segment with a single peer group",
+    "b": "The firm's segments share the same growth and margin profile",
+    "c": "A conglomerate's segments have different risk/peer sets",
+    "d": "The firm is being valued on asset liquidation values"
+   },
+   "distractorExplanations": {
+    "a": "A single-segment company is valued with one comp set; SOTP is for multiple segments with distinct peers.",
+    "b": "If segments share the same profile, one blended multiple works; SOTP matters when segments differ in risk and peers.",
+    "d": "Liquidation analysis values assets at disposal; SOTP values operating segments as going concerns and sums them."
+   }
+  },
+  "series-79-readiness-check-valuation-012": {
+   "options": {
+    "a": "Free cash flow to equity after net borrowing",
+    "b": "Net income plus depreciation and amortization",
+    "c": "Cash flow from operations before subtracting capital expenditures",
+    "d": "Free cash flow to the firm (FCFF) before financing costs"
+   },
+   "distractorExplanations": {
+    "a": "FCFE is levered cash flow after interest and net borrowing; unlevered FCF is measured before financing flows.",
+    "b": "Net income plus D&A is a rough cash earnings proxy that is already after interest and ignores capex and working capital.",
+    "c": "Unlevered FCF subtracts capex and working capital investment; operating cash flow before capex is not free cash flow."
+   }
+  },
+  "series-79-readiness-check-valuation-013": {
+   "options": {
+    "a": "Ranges from multiple valuation methodologies side by side",
+    "b": "The single DCF value range chosen as the base case",
+    "c": "The target's relative share price performance against an index",
+    "d": "The sources and uses of funds for the proposed deal"
+   },
+   "distractorExplanations": {
+    "b": "A football field compares ranges across several methods; showing one DCF range defeats its purpose.",
+    "c": "Relative share price performance is a separate chart; the football field summarizes valuation ranges across methods.",
+    "d": "Sources and uses tables show how a deal is funded; they are not the football field valuation summary."
+   }
+  },
+  "series-79-readiness-check-valuation-014": {
+   "options": {
+    "a": "$600M",
+    "b": "$1,000M",
+    "c": "$1,200M",
+    "d": "$1,600M"
+   },
+   "distractorExplanations": {
+    "c": "$1,200M double-counts the $200M net debt; EV adds net debt to the $800M market cap once.",
+    "d": "$1,600M doubles the market cap instead of adding net debt; EV = $800M + $200M = $1,000M.",
+    "a": "Subtracting debt gives equity-like math."
+   }
+  },
+  "series-79-readiness-check-valuation-015": {
+   "options": {
+    "a": "Pinpoint the single correct transaction price",
+    "b": "Replace comps with an intrinsic value range",
+    "c": "Show how value changes with key assumptions",
+    "d": "Check that the model's balance sheet balances"
+   },
+   "distractorExplanations": {
+    "a": "Sensitivity analysis produces a range of values, not a single precise price; the deal price is negotiated.",
+    "b": "Sensitivities test DCF assumptions; comps remain a separate market-based method on the football field.",
+    "d": "Balance sheet checks are model integrity tests; sensitivity analysis flexes assumptions to show value ranges."
+   },
+   "explanation": "Sensitivities illustrate assumption risk and valuation range. Typical inputs flexed are WACC, growth, and margins."
+  },
+  "series-79-readiness-check-mna-001": {
+   "options": {
+    "a": "The acquirer's P/E multiple exceeds the purchase P/E it pays for the target in the stock exchange",
+    "b": "The target's net income is smaller in absolute dollars than the acquirer's net income",
+    "c": "The exchange ratio gives target holders more than 50% of the combined company shares",
+    "d": "The target's earnings contribution per new share issued is less than the acquirer's pre-deal EPS"
+   },
+   "distractorExplanations": {
+    "a": "When the acquirer's P/E exceeds the P/E paid, an all-stock deal is accretive, not dilutive.",
+    "b": "A smaller target can still be accretive; dilution depends on earnings per new share issued, not absolute size.",
+    "c": "The ownership split determines control, not EPS impact; dilution turns on earnings contributed per new share."
+   }
+  },
+  "series-79-readiness-check-mna-003": {
+   "options": {
+    "a": "SEC rules bar synergies from fairness opinion analyses",
+    "b": "They may not be fully realized and timing is uncertain",
+    "c": "They are already included in the target's trading price",
+    "d": "Accounting rules require synergies to be expensed upfront"
+   },
+   "distractorExplanations": {
+    "a": "No SEC rule bars synergy analysis; bankers haircut synergies because of execution and timing risk.",
+    "c": "The unaffected trading price excludes deal-specific synergies; the haircut reflects realization risk.",
+    "d": "Synergies are not expensed; integration costs are, but the discount reflects uncertain realization."
+   }
+  },
+  "series-79-readiness-check-mna-004": {
+   "options": {
+    "a": "It requires a target shareholder vote before closing",
+    "b": "It is exempt from SEC filing if made for cash",
+    "c": "It directly offers to buy shares from public holders",
+    "d": "It must first be approved by the target's board"
+   },
+   "distractorExplanations": {
+    "a": "A tender offer closes when holders tender shares; a statutory merger is the deal that needs a shareholder vote.",
+    "b": "Cash tender offers still require a Schedule TO filing and the target's Schedule 14D-9 response.",
+    "d": "Tender offers can be unsolicited; board approval is typical of negotiated mergers, not required for tenders."
+   },
+   "explanation": "Tender offers are direct purchases, sometimes hostile. A tender offer often bypasses target board negotiation initially."
+  },
+  "series-79-readiness-check-mna-006": {
+   "options": {
+    "a": "Compensates a party if the deal fails under specified circumstances",
+    "b": "Is paid to target shareholders when the deal closes",
+    "c": "Adjusts the exchange ratio if the acquirer's stock falls",
+    "d": "Covers the investment bankers' success fee when the transaction closes"
+   },
+   "distractorExplanations": {
+    "b": "Payments to shareholders at closing are merger consideration; a break fee is paid if the deal terminates.",
+    "c": "Adjusting the exchange ratio for share price moves is a collar, not a termination fee.",
+    "d": "A success fee is paid to advisers on closing; a break fee compensates a party when the deal falls apart."
+   }
+  },
+  "series-79-readiness-check-mna-007": {
+   "options": {
+    "a": "Financial statements only, since legal review follows signing",
+    "b": "Financial, legal, tax, operational, and commercial review of the target",
+    "c": "Review of the acquirer's own financing sources and credit capacity for the deal",
+    "d": "Legal and tax matters, leaving financials to the target's auditors"
+   },
+   "distractorExplanations": {
+    "a": "Legal review is part of diligence before signing; financials are just one of several required workstreams.",
+    "c": "Acquirer financing is checked by the seller for certainty, but diligence on the target covers its business.",
+    "d": "Auditors' opinions do not replace buyer financial diligence such as a quality of earnings analysis."
+   }
+  },
+  "series-79-readiness-check-mna-008": {
+   "options": {
+    "a": "A public company merges into a private firm and goes dark",
+    "b": "A company buys back its shares from a private equity owner",
+    "c": "A private company merges into a public shell to become public",
+    "d": "A public company sells a division to a private buyer"
+   },
+   "distractorExplanations": {
+    "a": "A public company becoming private is a going-private transaction, the opposite of a reverse merger.",
+    "b": "A buyback from a PE owner is a share repurchase, not a shell merger that takes a private company public.",
+    "d": "Selling a division to a private buyer is a divestiture; a reverse merger takes a private company public via a shell."
+   }
+  },
+  "series-79-readiness-check-mna-009": {
+   "options": {
+    "a": "Registration of the securities issued as merger consideration",
+    "b": "Disclosure of 5% stakes acquired in public targets",
+    "c": "Review of insider trading by target officers before announcement",
+    "d": "Antitrust/competition review for qualifying transactions"
+   },
+   "distractorExplanations": {
+    "a": "Registering stock issued as merger consideration is done on Form S-4 under the Securities Act, not through HSR.",
+    "b": "Disclosure of 5% stakes is Schedule 13D/13G under Section 13(d); HSR is a premerger antitrust notification.",
+    "c": "Insider trading is policed under Rule 10b-5 by the SEC; HSR filings go to the FTC and DOJ for antitrust review."
+   }
+  },
+  "series-79-readiness-check-mna-010": {
+   "options": {
+    "a": "Post-closing performance milestones are met",
+    "b": "The buyer's share price falls below a set floor",
+    "c": "Closing working capital exceeds the agreed peg",
+    "d": "Target holders vote to approve the merger"
+   },
+   "distractorExplanations": {
+    "b": "Price protection for falling acquirer stock is a collar or CVR, not an earnout tied to business performance.",
+    "c": "A working capital true-up is a closing price adjustment, not contingent consideration for future performance.",
+    "d": "Shareholder approval is a closing condition; an earnout pays out when post-closing targets are achieved."
+   }
+  },
+  "series-79-readiness-check-mna-012": {
+   "options": {
+    "a": "The target's outside M&A legal counsel",
+    "b": "The SEC staff reviewing the proxy",
+    "c": "The target's board financial adviser",
+    "d": "The target's independent auditor"
+   },
+   "distractorExplanations": {
+    "a": "Legal counsel advises on fiduciary duties and documents, but the fairness opinion comes from the financial adviser.",
+    "b": "The SEC reviews disclosure in the proxy; it does not opine on whether the consideration is fair.",
+    "d": "Auditors opine on financial statements, not on the fairness of merger consideration to shareholders."
+   },
+   "explanation": "Fairness opinions support board fiduciary decisions. The opinion addresses fairness of the consideration from a financial point of view."
+  },
+  "series-79-readiness-check-mna-013": {
+   "options": {
+    "a": "The purchase price the buyer may offer sellers",
+    "b": "Trading in the borrower's common stock",
+    "c": "Equity contributions by the sponsor",
+    "d": "Additional debt, asset sales, and dividends"
+   },
+   "distractorExplanations": {
+    "a": "Financing covenants govern the borrower after funding; the purchase price is set in the merger agreement.",
+    "b": "Credit agreements limit borrower actions like leverage and payouts, not secondary trading in its stock.",
+    "c": "Lenders welcome added sponsor equity as a cushion; covenants restrict debt, asset sales, and distributions."
+   },
+   "explanation": "Credit agreements include maintenance/incurrence covenants. These limits protect lenders."
+  },
+  "series-79-readiness-check-mna-014": {
+   "options": {
+    "a": "Allowing separate valuation of distinct businesses",
+    "b": "Letting the parent book a taxable gain on the sale",
+    "c": "Combining two businesses to capture cost synergies",
+    "d": "Raising new cash for the parent from IPO investors"
+   },
+   "distractorExplanations": {
+    "b": "Qualifying spin-offs are generally tax-free distributions under Section 355; a taxable sale gain is not the goal.",
+    "c": "Combining businesses for synergies is a merger rationale; a spin-off separates businesses.",
+    "d": "Raising IPO cash describes an equity carve-out; a spin-off distributes subsidiary shares to existing holders."
+   }
+  },
+  "series-79-readiness-check-mna-015": {
+   "options": {
+    "a": "The acquirer's historical results with the target added at book value",
+    "b": "Adjusted combined results as if the transaction occurred at a specified date",
+    "c": "Projected results of the target alone under the buyer's post-closing operating plan",
+    "d": "Simple sums of both companies' reported figures with no adjustments"
+   },
+   "distractorExplanations": {
+    "a": "Pro forma statements combine both companies with purchase accounting fair-value adjustments, not target book values.",
+    "c": "A standalone target projection is not a combined pro forma; pro forma presents both entities together.",
+    "d": "Pro forma presentation requires transaction adjustments such as financing, fair-value step-ups, and new shares."
+   }
+  },
+  "series-79-readiness-check-products-001": {
+   "options": {
+    "a": "Sell up to 10% additional shares if demand exceeds the offering",
+    "b": "Withdraw from the deal if the stock trades below the offer price",
+    "c": "Sell up to 15% additional shares if demand exceeds the offering",
+    "d": "Sell up to 20% more shares, priced at the first-day close"
+   },
+   "distractorExplanations": {
+    "a": "The overallotment option is capped at 15% of the offering, not 10%; 10% understates the standard greenshoe.",
+    "b": "Underwriters cannot walk away for poor trading; the greenshoe adds shares or covers a short to stabilize.",
+    "d": "The greenshoe is limited to 15% and is exercised at the public offering price, not the first-day close."
+   }
+  },
+  "series-79-readiness-check-products-002": {
+   "options": {
+    "a": "An initial public offering",
+    "b": "A Rule 144A private placement",
+    "c": "A tender offer for its own shares",
+    "d": "A secondary/follow-on offering"
+   },
+   "distractorExplanations": {
+    "b": "A 144A deal is an unregistered resale to QIBs; a follow-on is typically a registered public offering.",
+    "c": "A self-tender repurchases shares from holders; a follow-on offering sells additional shares to the public.",
+    "a": "IPO is first public sale."
+   },
+   "explanation": "Follow-ons raise additional equity after listing. Shares may be primary or secondary depending on structure."
+  },
+  "series-79-readiness-check-products-003": {
+   "options": {
+    "a": "Institutional investors accepting higher credit risk for yield",
+    "b": "Retail investors through bank branches, covered by FDIC deposit insurance",
+    "c": "Money market funds seeking short-term liquidity",
+    "d": "Central banks seeking high-quality reserve assets"
+   },
+   "distractorExplanations": {
+    "b": "Corporate bonds are not FDIC insured, and high-yield deals are marketed mainly to institutions, often under 144A.",
+    "c": "Money market funds are limited to short-term, high-quality instruments and cannot hold speculative-grade bonds.",
+    "d": "Central banks hold high-quality reserve assets such as sovereign debt, not speculative-grade corporate bonds."
+   }
+  },
+  "series-79-readiness-check-products-004": {
+   "options": {
+    "a": "Voting rights equal to common stockholders before any conversion",
+    "b": "The option to convert into common stock at a set ratio/price",
+    "c": "A floating coupon that resets to the stock's dividend yield",
+    "d": "Seniority over secured bank debt in bankruptcy"
+   },
+   "distractorExplanations": {
+    "a": "Convertible bondholders are creditors with no vote until they actually convert into common stock.",
+    "c": "Convertibles usually pay a fixed, below-market coupon; their extra value comes from the conversion option.",
+    "d": "Convertible bonds are typically unsecured and rank behind secured bank debt in bankruptcy."
+   }
+  },
+  "series-79-readiness-check-products-005": {
+   "options": {
+    "a": "Accredited individual investors without SEC registration",
+    "b": "Non-U.S. persons in offshore transactions without registration",
+    "c": "Qualified institutional buyers without full SEC registration",
+    "d": "Any investor once a Form D notice has been filed"
+   },
+   "distractorExplanations": {
+    "a": "Sales to accredited individuals rely on Regulation D; Rule 144A resales are limited to QIBs.",
+    "b": "Offshore sales to non-U.S. persons fall under Regulation S, not Rule 144A.",
+    "d": "Form D is a notice filing for Regulation D offerings; it does not open 144A deals to any investor."
+   }
+  },
+  "series-79-readiness-check-products-006": {
+   "options": {
+    "a": "Act as agents and return any unsold shares to the issuer",
+    "b": "Sell shares on a standby basis once a rights offering has expired",
+    "c": "Price the deal only after a two-week marketed roadshow",
+    "d": "Commit to purchase securities from the issuer and resell them"
+   },
+   "distractorExplanations": {
+    "a": "Agency selling with unsold shares returned is best efforts; a bought deal puts underwriter capital at risk.",
+    "b": "Standby underwriting buys shares left after a rights offering; a bought deal buys the whole issue upfront.",
+    "c": "Bought deals are priced and committed before marketing, avoiding a lengthy marketed roadshow."
+   }
+  },
+  "series-79-readiness-check-products-007": {
+   "options": {
+    "a": "Private investment in public equity, often at a discount",
+    "b": "A registered public offering of a private company's equity",
+    "c": "Private equity buying a public company to delist it",
+    "d": "Public debt issued to fund a private company's buyout"
+   },
+   "distractorExplanations": {
+    "b": "A registered offering by a private company is an IPO; a PIPE is a private sale of a public company's shares.",
+    "c": "A sponsor buying and delisting a public company is a take-private LBO, not a PIPE.",
+    "d": "Public bonds funding a buyout are high-yield acquisition financing, not private investment in public equity."
+   },
+   "explanation": "PIPEs sell registered/unregistered equity privately to institutions. Investors usually receive registration rights for resale."
+  },
+  "series-79-readiness-check-products-008": {
+   "options": {
+    "a": "BB+/Ba1 and above by major agencies",
+    "b": "BBB-/Baa3 and above by major agencies",
+    "c": "A-/A3 and above by major agencies",
+    "d": "B-/B3 and above by major agencies"
+   },
+   "distractorExplanations": {
+    "a": "BB+/Ba1 is the top of high yield; investment grade starts one notch higher at BBB-/Baa3.",
+    "c": "A-/A3 is too high a cutoff; bonds in the BBB tier down to BBB-/Baa3 are also investment grade.",
+    "d": "B-/B3 is deep in speculative grade; investment grade requires BBB-/Baa3 or better."
+   }
+  },
+  "series-79-readiness-check-products-009": {
+   "options": {
+    "a": "Skip prospectus supplements for each takedown",
+    "b": "Register an IPO and sell it in tranches over three years",
+    "c": "Register securities in advance and offer them over time",
+    "d": "Offer unregistered stock to accredited investors"
+   },
+   "distractorExplanations": {
+    "a": "Each shelf takedown still requires a prospectus supplement describing the specific offering terms.",
+    "b": "Form S-3 requires an existing reporting history, so it cannot be used to register an IPO.",
+    "d": "Unregistered sales to accredited investors rely on Regulation D, not on a registered shelf."
+   }
+  },
+  "series-79-readiness-check-products-010": {
+   "options": {
+    "a": "Allocating shares pro rata to all retail orders received",
+    "b": "Preparing the preliminary prospectus with issuer counsel",
+    "c": "Filing the final prospectus after pricing",
+    "d": "Collecting institutional indications of interest"
+   },
+   "distractorExplanations": {
+    "a": "Bookbuilding gathers demand to price the deal; allocations are discretionary, not pro rata to retail orders.",
+    "b": "Drafting the red herring is part of registration; bookbuilding happens during the roadshow.",
+    "c": "Filing the final prospectus follows pricing; bookbuilding is the demand-gathering step before it."
+   }
+  },
+  "series-79-readiness-check-products-011": {
+   "options": {
+    "a": "The pro rata right to purchase additional shares, often at a discount",
+    "b": "A put right letting holders sell shares back to the issuer at a premium",
+    "c": "Warrants to buy shares at a premium strike for up to ten years",
+    "d": "Priority allocation in the issuer's next bond offering"
+   },
+   "distractorExplanations": {
+    "b": "Selling shares back to the issuer at a premium is a tender offer or buyback, not a rights offering.",
+    "c": "Long-dated warrants with above-market strikes differ from short-term rights priced at a discount.",
+    "d": "Rights offerings involve the issuer's equity; they do not grant priority allocation in debt deals."
+   }
+  },
+  "series-79-readiness-check-products-012": {
+   "options": {
+    "a": "Above senior secured bank debt in priority",
+    "b": "Between senior debt and equity in the capital structure",
+    "c": "At the same payment priority as the senior secured term loans",
+    "d": "Below common equity as the first-loss tranche"
+   },
+   "distractorExplanations": {
+    "c": "Mezzanine is subordinated to senior secured loans; it does not rank pari passu with them.",
+    "d": "Common equity is the first-loss position; mezzanine ranks ahead of equity but behind senior debt.",
+    "a": "Usually junior to senior."
+   }
+  },
+  "series-79-readiness-check-products-013": {
+   "options": {
+    "a": "A small order split across venues to hide its size",
+    "b": "A primary share sale by the issuer dribbled out through an ATM program",
+    "c": "A large sale of stock arranged quickly, often at a discount to market",
+    "d": "A rights offering to existing holders at a deep discount"
+   },
+   "distractorExplanations": {
+    "a": "Splitting orders to hide size is algorithmic execution; a block is a single large negotiated sale.",
+    "b": "ATM programs dribble shares into the market over time rather than selling one large block at once.",
+    "d": "Rights offerings go to existing holders pro rata; a block is sold by a holder to institutions."
+   }
+  },
+  "series-79-readiness-check-products-014": {
+   "options": {
+    "a": "U.S. qualified institutional buyers purchasing in private resales",
+    "b": "Accredited U.S. investors reached through general solicitation",
+    "c": "Foreign issuers listing ADRs on a U.S. exchange",
+    "d": "Offshore non-U.S. persons with distribution compliance periods"
+   },
+   "distractorExplanations": {
+    "a": "Resales to U.S. QIBs rely on Rule 144A; Regulation S covers offshore offers and sales.",
+    "b": "General solicitation to verified accredited investors is Rule 506(c), not Regulation S.",
+    "c": "ADR listings on a U.S. exchange are registered U.S. offerings, not offshore Regulation S sales."
+   }
+  },
+  "series-79-readiness-check-products-015": {
+   "options": {
+    "a": "The difference between what underwriters pay the issuer and the public offering price",
+    "b": "The difference between the public offering price and the stock's first-day closing price",
+    "c": "The difference between the bid and ask quoted by the lead manager",
+    "d": "The difference between the issuer's gross proceeds and its legal costs"
+   },
+   "distractorExplanations": {
+    "b": "The first-day price move is the IPO pop or underpricing, not the underwriters' compensation.",
+    "c": "A dealer's bid-ask spread in secondary trading differs from the gross spread in a new issue.",
+    "d": "Legal and filing costs are separate offering expenses; the spread is the underwriters' discount."
+   }
+  },
+  "series-79-readiness-check-regulations-002": {
+   "options": {
+    "a": "Registration with the state securities regulator where the issuer is incorporated",
+    "b": "A FINRA review of underwriting terms before any public offer",
+    "c": "Registration or valid exemption before interstate sale of securities",
+    "d": "Periodic 10-K and 10-Q reporting by every public issuer"
+   },
+   "distractorExplanations": {
+    "a": "State registration is blue sky law; Section 5 is the federal registration requirement.",
+    "b": "FINRA Rule 5110 reviews underwriting compensation, but Section 5 is the SEC registration mandate.",
+    "d": "Periodic reporting arises under the Exchange Act of 1934, not Section 5 of the Securities Act."
+   }
+  },
+  "series-79-readiness-check-regulations-003": {
+   "options": {
+    "a": "Permit general solicitation if every purchaser is verified as accredited and no non-accredited investors buy",
+    "b": "Cap the offering at $5 million and allow up to 35 non-accredited investors without information delivery",
+    "c": "Permit unlimited accredited investors and up to 50 non-accredited investors if a Form D is filed first",
+    "d": "Permit unlimited accredited investors and up to 35 sophisticated non-accredited with no general solicitation"
+   },
+   "distractorExplanations": {
+    "a": "General solicitation with verified accredited-only purchasers is Rule 506(c); 506(b) bans general solicitation.",
+    "b": "Rule 506(b) has no dollar cap; the old $5M limit belonged to repealed Rule 505, and non-accredited buyers need disclosure.",
+    "c": "506(b) allows up to 35 non-accredited purchasers, not 50, and Form D is due within 15 days after the first sale."
+   }
+  },
+  "series-79-readiness-check-regulations-004": {
+   "options": {
+    "a": "Secondary market trading and ongoing reporting of public companies",
+    "b": "Registration of new securities offerings before they are sold to investors",
+    "c": "Investment advisers' fiduciary duties to their advisory clients",
+    "d": "Mutual fund registration, structure, and governance"
+   },
+   "distractorExplanations": {
+    "b": "Registering new offerings is the job of the Securities Act of 1933; the 1934 Act covers trading and reporting.",
+    "c": "Investment adviser duties fall under the Investment Advisers Act of 1940, not the Exchange Act.",
+    "d": "Mutual fund registration and governance are covered by the Investment Company Act of 1940."
+   }
+  },
+  "series-79-readiness-check-regulations-005": {
+   "options": {
+    "a": "Trading on any nonpublic information, material or not",
+    "b": "Trading on material nonpublic information in breach of a duty",
+    "c": "Trading by an insider within six months of a purchase",
+    "d": "A tippee profiting even without any duty breach by the tipper"
+   },
+   "distractorExplanations": {
+    "a": "Liability requires materiality; immaterial nonpublic information does not support an insider trading claim.",
+    "c": "Matching purchases and sales within six months is Section 16(b) short-swing liability, not 10b-5 insider trading.",
+    "d": "Tippee liability depends on the tipper breaching a duty for personal benefit; with no breach there is no liability."
+   }
+  },
+  "series-79-readiness-check-regulations-006": {
+   "options": {
+    "a": "Annual reporting of operating results and financials for an already listed company",
+    "b": "Notice of an exempt private placement to accredited investors",
+    "c": "Prospectus disclosures about business, risks, and financials for an IPO",
+    "d": "Beneficial ownership disclosure by holders above 5 percent"
+   },
+   "distractorExplanations": {
+    "a": "Annual reports of listed companies are filed on Form 10-K; Form S-1 registers new offerings.",
+    "b": "Exempt Regulation D placements are noticed on Form D; an S-1 registers a public offering.",
+    "d": "Ownership above 5% is reported by the holder on Schedule 13D or 13G, not in an issuer's S-1 filing."
+   }
+  },
+  "series-79-readiness-check-regulations-007": {
+   "options": {
+    "a": "Underwriting compensation limits that apply in public securities offerings",
+    "b": "Restrictions on IPO allocations to industry insiders and their families",
+    "c": "Conflicts of interest in debt research reports",
+    "d": "Conflicts of interest related to equity research and public offerings"
+   },
+   "distractorExplanations": {
+    "a": "Underwriting compensation is reviewed under FINRA Rule 5110, not Rule 2241.",
+    "b": "IPO allocation restrictions on restricted persons are set by FINRA Rule 5130, not Rule 2241.",
+    "c": "Debt research conflicts are covered by FINRA Rule 2242; Rule 2241 governs equity research."
+   }
+  },
+  "series-79-readiness-check-regulations-008": {
+   "options": {
+    "a": "Issuer and syndicate comments that could hype the offering",
+    "b": "Secondary trading in the issuer's shares for 90 days after listing",
+    "c": "Analyst coverage by non-syndicate firms for 40 days",
+    "d": "Insider sales of shares during the 180-day lock-up period"
+   },
+   "distractorExplanations": {
+    "b": "Secondary trading begins once the offering is priced and listed; the quiet period limits promotional publicity.",
+    "c": "Research quiet periods bind participating underwriters, not unaffiliated firms outside the syndicate.",
+    "d": "Insider sales are limited by contractual lock-ups, a separate restriction from the quiet period."
+   },
+   "explanation": "Gun-jumping rules limit pre-offering publicity beyond filed materials. The concern is publicity beyond what the prospectus says."
+  },
+  "series-79-readiness-check-regulations-009": {
+   "options": {
+    "a": "Form 4 filed within two business days of the trade",
+    "b": "Schedule 13D or 13G under Exchange Act Section 13(d)",
+    "c": "Form 144 notice of proposed sale by affiliates",
+    "d": "Form 3 initial statement filed by directors and officers"
+   },
+   "distractorExplanations": {
+    "a": "Form 4 reports changes in Section 16 insiders' holdings; 5% beneficial owners report on 13D/13G.",
+    "c": "Form 144 gives notice of affiliate resales under Rule 144, not 5% beneficial ownership.",
+    "d": "Form 3 is the initial Section 16 statement; >5% beneficial ownership is reported on Schedule 13D or 13G."
+   }
+  },
+  "series-79-readiness-check-regulations-011": {
+   "options": {
+    "a": "Release earnings to analysts one day before the public",
+    "b": "File a Form 8-K before any meeting with investors",
+    "c": "Withhold material information from investors until the next 10-Q filing",
+    "d": "Disclose material information broadly when selectively disclosed"
+   },
+   "distractorExplanations": {
+    "a": "Giving analysts earnings before the public is exactly the selective disclosure Regulation FD prohibits.",
+    "b": "Reg FD does not require an 8-K before investor meetings; it requires public disclosure when MNPI is shared selectively.",
+    "c": "Reg FD does not require waiting for the 10-Q; it requires broad disclosure whenever MNPI is selectively shared."
+   }
+  },
+  "series-79-readiness-check-regulations-012": {
+   "options": {
+    "a": "May hold unsold securities on its balance sheet temporarily",
+    "b": "Returns unsold securities to the issuer after the offering",
+    "c": "Earns a fee but bears no risk if the deal is undersubscribed",
+    "d": "Must sell the whole issue before the issuer is paid"
+   },
+   "distractorExplanations": {
+    "b": "Returning unsold securities describes best efforts; firm commitment underwriters keep what they cannot sell.",
+    "c": "Under a firm commitment the underwriter buys the issue and bears the undersubscription risk.",
+    "d": "Selling the full issue before payment describes an all-or-none best efforts deal, not a firm commitment."
+   }
+  },
+  "series-79-readiness-check-regulations-013": {
+   "options": {
+    "a": "Federal rules for registering securities offerings with the SEC",
+    "b": "State securities registration and anti-fraud regulations",
+    "c": "FINRA rules on advertising and retail communications",
+    "d": "SEC rules for registering investment advisers"
+   },
+   "distractorExplanations": {
+    "a": "Federal registration with the SEC arises under the Securities Act; blue sky laws are state laws.",
+    "c": "FINRA communication rules are SRO rules, not state securities statutes.",
+    "d": "Large advisers register with the SEC under the Advisers Act; blue sky laws are state securities laws."
+   }
+  },
+  "series-79-readiness-check-regulations-014": {
+   "options": {
+    "a": "Officers, directors, and 5%+ shareholders trading within a six-month window",
+    "b": "Any investor who buys and sells within the same quarter",
+    "c": "Officers, directors, and 10%+ shareholders trading within six months",
+    "d": "Underwriters stabilizing a new issue after pricing"
+   },
+   "distractorExplanations": {
+    "a": "Section 16 covers 10% holders, not 5%; the 5% level triggers Schedule 13D/13G reporting instead.",
+    "b": "Short-swing disgorgement applies to statutory insiders, not to any investor trading within a quarter.",
+    "d": "Stabilization is governed by Regulation M Rule 104, not Section 16(b) short-swing profits."
+   }
+  },
+  "series-79-readiness-check-regulations-015": {
+   "options": {
+    "a": "Act solely as registered investment advisers giving securities advice",
+    "b": "Issue their own securities to the public through an underwriter",
+    "c": "Invest corporate cash in securities through a broker",
+    "d": "Engage in securities business with the U.S. public as broker-dealers"
+   },
+   "distractorExplanations": {
+    "a": "Pure investment advisers register with the SEC or states; FINRA membership is for broker-dealers.",
+    "b": "Issuers selling through an underwriter need not join FINRA; the underwriting broker-dealer must.",
+    "c": "A corporation investing its own cash through a broker is a customer, not a broker-dealer needing membership."
+   }
+  },
+  "series-79-readiness-check-valuation-016": {
+   "options": {
+    "a": "Risk-free rate minus beta times equity risk premium",
+    "b": "Risk-free rate plus the equity risk premium divided by beta",
+    "c": "Cost of debt plus beta times the equity risk premium",
+    "d": "Risk-free rate plus beta times the equity risk premium"
+   },
+   "distractorExplanations": {
+    "b": "Dividing the ERP by beta inverts the risk scaling; CAPM multiplies beta by the equity risk premium.",
+    "c": "CAPM starts from the risk-free rate, not the cost of debt; using debt cost mixes in a credit spread.",
+    "a": "Subtracting ERP inverts the model."
+   }
+  },
+  "series-79-readiness-check-valuation-018": {
+   "options": {
+    "a": "Only the latest single quarter annualized once",
+    "b": "The most recent four consecutive fiscal quarters",
+    "c": "The last completed fiscal year as reported in the 10-K",
+    "d": "The next four quarters of consensus estimates"
+   },
+   "distractorExplanations": {
+    "c": "The last fiscal year can be stale; TTM rolls forward to include the most recent four reported quarters.",
+    "d": "Next-four-quarter consensus is an NTM or forward metric, not trailing twelve months.",
+    "a": "One quarter is not trailing twelve months."
+   }
+  },
+  "series-79-readiness-check-valuation-021": {
+   "options": {
+    "a": "Non-recurring expenses, stock-based compensation, and other owner-defined items",
+    "b": "Recurring maintenance capital expenditures and annual working capital increases",
+    "c": "Interest and taxes a second time, on top of standard EBITDA",
+    "d": "Recurring operating costs such as rent and core salaries"
+   },
+   "distractorExplanations": {
+    "b": "Capex and working capital are cash-flow items, not EBITDA add-backs; adding them back overstates earnings.",
+    "c": "Interest and taxes are already excluded from EBITDA; adding them back again double-counts them.",
+    "d": "Ongoing operating costs are not non-recurring; adding them back inflates EBITDA and fails diligence."
+   },
+   "explanation": "Buyers normalize earnings for one-time or non-cash items; adjustments must be defensible in diligence. Each add-back should be supported by disclosure."
+  },
+  "series-79-readiness-check-valuation-022": {
+   "options": {
+    "a": "The acquirer's industry and the share price reaction to the deal",
+    "b": "Industry, deal size, transaction date, and target geography",
+    "c": "Deals that closed above the target's 52-week high",
+    "d": "Deals advised by the same bank in the last ten years"
+   },
+   "distractorExplanations": {
+    "a": "Filtering by the acquirer's sector and stock reaction ignores whether the target resembles the subject company.",
+    "c": "Screening by premium to the 52-week high biases the set toward rich deals rather than comparable targets.",
+    "d": "Adviser identity is irrelevant to comparability; screen deals on target industry, size, timing, and geography."
+   },
+   "explanation": "Precedent multiples are useful only when transactions resemble the subject company on key dimensions. Business model similarity also matters."
+  },
+  "series-79-readiness-check-valuation-023": {
+   "options": {
+    "a": "The company is undervalued relative to its trading comps",
+    "b": "The explicit forecast period should be shortened from ten years to three years",
+    "c": "The model may be overly sensitive to long-term growth and WACC assumptions",
+    "d": "The WACC used is too high and should be reduced"
+   },
+   "distractorExplanations": {
+    "a": "A high terminal-value share is a modeling sensitivity flag, not evidence that the stock is undervalued.",
+    "b": "Shortening the forecast period pushes even more value into the terminal value, worsening the problem.",
+    "d": "Lowering WACC raises the terminal value's share further; the right response is to stress-test g and WACC."
+   }
+  },
+  "series-79-readiness-check-valuation-024": {
+   "options": {
+    "a": "Minority holders are owed a premium for the dividend stream they give up at delisting",
+    "b": "SEC rules require a minimum 30% premium in going-private deals",
+    "c": "Control premiums compensate holders for the buyer's due diligence costs",
+    "d": "They acquire 100% ownership and can change strategy and capital structure"
+   },
+   "distractorExplanations": {
+    "a": "The premium pays for control rights and synergies, not compensation for a lost dividend stream.",
+    "b": "No SEC rule sets a minimum premium; Rule 13e-3 requires fairness disclosure, not a fixed premium.",
+    "c": "Diligence costs are borne by the buyer; the premium reflects the value of control over the business."
+   },
+   "explanation": "Control value reflects full decision rights and integration benefits unavailable to minority public holders. Buyers can also capture synergies."
+  },
+  "series-79-readiness-check-valuation-025": {
+   "options": {
+    "a": "WACC and terminal growth, or exit multiples and leverage in LBO contexts",
+    "b": "Historical revenue and EBITDA figures reported in prior annual 10-K filings",
+    "c": "The target's current credit rating and the date of its most recent audit",
+    "d": "Share count and fiscal year-end used in the trading comps"
+   },
+   "distractorExplanations": {
+    "b": "Historical reported figures are facts, not assumptions; sensitivity tables flex forward-looking inputs.",
+    "c": "Credit ratings and audit dates are not model inputs that sensitivity tables vary.",
+    "d": "Share count and fiscal year-end are fixed data; sensitivities vary drivers like WACC, g, and exit multiple."
+   }
+  },
+  "series-79-readiness-check-valuation-026": {
+   "options": {
+    "a": "Net debt plus goodwill, other intangible assets, and deferred tax assets",
+    "b": "Net debt, preferred stock, minority interest, and other non-common claims",
+    "c": "Gross debt alone, leaving both cash and preferred stock out of the equity bridge",
+    "d": "Cash, equity investments, and net operating loss carryforwards"
+   },
+   "distractorExplanations": {
+    "a": "Goodwill and intangibles are operating assets reflected in EV; they are not claims deducted to reach equity.",
+    "c": "Cash reduces the deduction and preferred stock is also deducted; gross debt alone misstates the bridge.",
+    "d": "Cash and non-operating investments are added back when moving from EV to equity value, not subtracted."
+   }
+  },
+  "series-79-readiness-check-valuation-027": {
+   "options": {
+    "a": "The company is mature with stable, positive EBITDA margins and steady growth",
+    "b": "The company has high leverage and large interest expense",
+    "c": "The company is unprofitable or EBITDA is negative or not meaningful",
+    "d": "The company has large non-cash depreciation charges"
+   },
+   "distractorExplanations": {
+    "a": "Mature profitable companies are usually valued on EV/EBITDA or P/E, not on revenue multiples.",
+    "b": "EV/EBITDA is already capital-structure neutral, so high leverage alone does not call for a revenue multiple.",
+    "d": "EBITDA is measured before depreciation, so large D&A charges do not distort EV/EBITDA."
+   }
+  },
+  "series-79-readiness-check-valuation-028": {
+   "options": {
+    "a": "Cash flows are assumed to arrive on the first day of each year",
+    "b": "Discount rates are halved to reflect semiannual compounding",
+    "c": "Cash flows are assumed to arrive at the end of each fiscal year",
+    "d": "Cash flows are assumed to arrive evenly through the year"
+   },
+   "distractorExplanations": {
+    "a": "Beginning-of-year timing overstates value; mid-year assumes flows arrive evenly, about halfway through.",
+    "b": "Mid-year convention shifts discount periods by half a year; it does not halve the discount rate.",
+    "c": "End-of-year timing is the convention mid-year discounting replaces, since flows arrive through the year."
+   }
+  },
+  "series-79-readiness-check-valuation-029": {
+   "options": {
+    "a": "Enabling iterative calculation or a circularity switch in the spreadsheet",
+    "b": "Calculating interest on the ending debt balance for each forecast period",
+    "c": "Hard-coding interest expense taken from the bank's commitment letter terms",
+    "d": "Removing the cash sweep and assuming no debt paydown"
+   },
+   "distractorExplanations": {
+    "b": "Interest on the ending balance is what creates the circularity in the first place; it does not resolve it.",
+    "c": "Hard-coding interest breaks the link to debt balances, so interest no longer reflects paydown.",
+    "d": "Dropping the cash sweep distorts debt paydown and LBO returns; iteration solves the loop instead."
+   }
+  },
+  "series-79-readiness-check-valuation-030": {
+   "options": {
+    "a": "Exclude lease liabilities since ASC 842 keeps them off-balance-sheet",
+    "b": "Treat capitalized operating lease obligations similarly to debt",
+    "c": "Subtract lease liabilities from EV as if they were cash",
+    "d": "Ignore lease liabilities because they are already in working capital"
+   },
+   "distractorExplanations": {
+    "a": "ASC 842 put operating lease liabilities on the balance sheet; they are no longer off-balance-sheet.",
+    "c": "Lease liabilities are debt-like claims; subtracting them from EV as if they were cash reverses the treatment.",
+    "d": "Lease liabilities are not working capital items; analysts treat them as debt-like obligations."
+   }
+  },
+  "series-79-readiness-check-mna-016": {
+   "options": {
+    "a": "A binding purchase price together with final closing conditions and indemnities",
+    "b": "Final reps, warranties, and indemnity caps agreed by both sides",
+    "c": "The board's fairness opinion and the proxy vote timetable",
+    "d": "Indicative price, structure, diligence timeline, and exclusivity terms"
+   },
+   "distractorExplanations": {
+    "a": "Binding price, conditions, and indemnities belong in the definitive purchase agreement, not a non-binding LOI.",
+    "b": "Final reps, warranties, and indemnity caps are negotiated in the definitive agreement after confirmatory diligence.",
+    "c": "Fairness opinions and proxy timing come near signing and approval, not in the LOI."
+   },
+   "explanation": "LOIs set expectations and process terms but definitive docs and diligence determine final deal. Terms remain subject to definitive agreements."
+  },
+  "series-79-readiness-check-mna-017": {
+   "options": {
+    "a": "Negotiate only with the designated buyer for a defined period",
+    "b": "Run a go-shop to solicit rival bids for 30 to 45 days",
+    "c": "Share the buyer's bid with other bidders to start an auction",
+    "d": "Continue a parallel auction with up to three other bidders"
+   },
+   "distractorExplanations": {
+    "b": "A go-shop permits soliciting rival bids after signing a merger agreement; exclusivity bars shopping the deal.",
+    "c": "Using the buyer's bid to run an auction breaches exclusivity and usually confidentiality terms.",
+    "d": "Running a parallel auction is exactly what exclusivity prohibits during the no-shop period."
+   },
+   "explanation": "Exclusivity focuses the process on one buyer while preserving board fiduciary duties in material respects. A limited fiduciary out for superior proposals is usually preserved."
+  },
+  "series-79-readiness-check-mna-018": {
+   "options": {
+    "a": "Pro forma combined EPS to the target's standalone EPS",
+    "b": "Pro forma combined EPS to the acquirer's standalone EPS",
+    "c": "The offer price to the target's unaffected share price",
+    "d": "Combined EBITDA to the acquirer's standalone EBITDA"
+   },
+   "distractorExplanations": {
+    "a": "Accretion/dilution is measured against the acquirer's standalone EPS, since acquirer holders own the combined firm.",
+    "c": "Offer price versus unaffected price measures the takeover premium, not EPS accretion.",
+    "d": "Accretion/dilution is an EPS test; combined EBITDA ignores interest, taxes, and new shares issued."
+   }
+  },
+  "series-79-readiness-check-mna-019": {
+   "options": {
+    "a": "A go-shop period negotiated in a signed, board-approved merger agreement",
+    "b": "A Schedule 13G filing after buying 6% of the target",
+    "c": "A tender offer directly to shareholders without board approval",
+    "d": "A Rule 10b5-1 plan to buy target shares quietly"
+   },
+   "distractorExplanations": {
+    "a": "A go-shop is part of a negotiated, board-approved agreement, not a hostile bid tool.",
+    "b": "Schedule 13G is for passive investors; a hostile acquirer with control intent must file Schedule 13D.",
+    "d": "10b5-1 plans are insider trading defenses for scheduled trades, not a takeover mechanism."
+   }
+  },
+  "series-79-readiness-check-mna-020": {
+   "options": {
+    "a": "All interested bidders before any NDA so interest can be gauged",
+    "b": "The target's lenders in place of a bidder process",
+    "c": "The winning bidder alone, after the definitive purchase agreement is signed",
+    "d": "Qualified prospective bidders after signing confidentiality agreements"
+   },
+   "distractorExplanations": {
+    "a": "Management meetings come after NDAs and screening; pre-NDA outreach uses a short anonymous teaser.",
+    "b": "Lenders may get financing materials, but management presentations target prospective buyers.",
+    "c": "Presentations happen in the second round before signing so bidders can firm up their bids."
+   }
+  },
+  "series-79-readiness-check-mna-021": {
+   "options": {
+    "a": "Exchange ratio fluctuation if the acquirer's or target's share price moves",
+    "b": "Antitrust delay if HSR review runs past the merger agreement's outside date",
+    "c": "Target earnings shortfalls discovered after the deal closes",
+    "d": "Currency moves on cross-border cash consideration"
+   },
+   "distractorExplanations": {
+    "b": "Regulatory delay is handled by outside dates and reverse termination fees, not a collar.",
+    "c": "Post-closing earnings shortfalls are addressed by earnouts or indemnities, not a price collar.",
+    "d": "FX exposure on cash consideration is hedged with derivatives; a collar addresses share price moves."
+   },
+   "explanation": "Collars fix or float the ratio within limits so neither party bears unlimited price movement before close. The protection applies within agreed price bands."
+  },
+  "series-79-readiness-check-mna-022": {
+   "options": {
+    "a": "Known liabilities found in diligence from the buyer to an insurer",
+    "b": "Breach risk from seller indemnities toward an insurer",
+    "c": "Antitrust failure risk from the buyer to the seller via a reverse fee",
+    "d": "Directors' fiduciary claims to the acquirer"
+   },
+   "distractorExplanations": {
+    "a": "RWI excludes known issues found in diligence; those are handled by specific indemnities or price.",
+    "c": "A reverse termination fee allocates antitrust risk; it is not representation and warranty insurance.",
+    "d": "Director fiduciary exposure is covered by D&O insurance, not representation and warranty insurance."
+   },
+   "explanation": "RWI lets buyers pursue claims against insurers for covered reps instead of solely chasing seller escrows. This often reduces escrow holdbacks."
+  },
+  "series-79-readiness-check-mna-023": {
+   "options": {
+    "a": "Closing-date accounts with a post-closing true-up",
+    "b": "The average share price over a 20-day period",
+    "c": "Equity value at a historical balance sheet date",
+    "d": "Future EBITDA measured after closing in an earnout"
+   },
+   "distractorExplanations": {
+    "a": "Closing accounts with a post-closing true-up is the completion accounts mechanism, the alternative to locked box.",
+    "b": "VWAP averaging sets exchange ratios in stock deals; a locked box fixes price from a historical balance sheet.",
+    "d": "Post-closing EBITDA targets describe an earnout, not a locked-box price set at a reference date."
+   }
+  },
+  "series-79-readiness-check-mna-024": {
+   "options": {
+    "a": "Respond only to unsolicited bids under a fiduciary out",
+    "b": "Run a full auction before signing any merger agreement",
+    "c": "Extend the outside date if antitrust regulators issue a second request",
+    "d": "Solicit alternative proposals for a limited period after signing"
+   },
+   "distractorExplanations": {
+    "a": "Responding to unsolicited bids via a fiduciary out describes a no-shop; a go-shop lets the target actively solicit.",
+    "b": "A pre-signing auction is a different process; a go-shop period starts after an agreement is signed.",
+    "c": "Outside date extensions handle regulatory delay; they are unrelated to a go-shop provision."
+   }
+  },
+  "series-79-readiness-check-mna-025": {
+   "options": {
+    "a": "Operating synergies, portfolio fit, and integration",
+    "b": "Leveraged returns from a five-year hold and exit by IPO or sale",
+    "c": "Dividend recaps funded by new debt",
+    "d": "Minority stakes with board seats and no operating control"
+   },
+   "distractorExplanations": {
+    "b": "A levered hold followed by an exit is the financial sponsor model, not the strategic acquirer's motive.",
+    "c": "Dividend recaps are a sponsor tool to return capital, not a strategic acquirer's goal.",
+    "d": "Strategics usually seek full control to integrate; passive minority stakes do not deliver synergies."
+   },
+   "explanation": "Strategics buy for commercial rationale; sponsors seek financial returns via leverage and eventual exit. Integration is with existing business lines."
+  },
+  "series-79-readiness-check-mna-026": {
+   "options": {
+    "a": "Ends the initial waiting period early by granting clearance",
+    "b": "Extends antitrust review by requiring additional documents",
+    "c": "Moves review from the FTC to the SEC for a public target",
+    "d": "Requires the parties to refile under the new HSR form"
+   },
+   "distractorExplanations": {
+    "a": "Ending the waiting period early is early termination; a second request extends the review instead.",
+    "c": "The SEC does not conduct antitrust review; second requests are issued by the FTC or DOJ.",
+    "d": "Refiling restarts the initial period; a second request is an agency demand for more information."
+   }
+  },
+  "series-79-readiness-check-mna-027": {
+   "options": {
+    "a": "Emailing encrypted files to each bidder's legal counsel",
+    "b": "Allowing unrestricted downloads once a bidder signs an LOI",
+    "c": "Granting permissioned logins and watermarking documents",
+    "d": "Keeping documents in a physical room visited by appointment"
+   },
+   "distractorExplanations": {
+    "a": "Emailing files loses access control and audit trails, which is why virtual data rooms exist.",
+    "b": "VDRs restrict downloads by permission level; signing an LOI does not unlock unrestricted access.",
+    "d": "A physical data room is the legacy alternative; a VDR controls access through logins and tracking."
+   },
+   "explanation": "VDRs protect confidentiality and provide diligence evidence through access controls and logging. VDRs also track user activity."
+  },
+  "series-79-readiness-check-mna-028": {
+   "options": {
+    "a": "Filing Chapter 11 and Chapter 7 petitions at the same time",
+    "b": "Running a sale with two bidders in a back-to-back auction",
+    "c": "Issuing two classes of stock with different voting rights",
+    "d": "Pursuing an out-of-court sale alongside Chapter 11 preparation"
+   },
+   "distractorExplanations": {
+    "a": "A debtor cannot pursue Chapter 7 liquidation and Chapter 11 reorganization at once; dual-track pairs out-of-court and in-court paths.",
+    "b": "Two bidders in an auction is a competitive sale, not a dual-track out-of-court versus Chapter 11 strategy.",
+    "c": "Dual-class stock is a capital structure feature, not a dual-track restructuring process."
+   }
+  },
+  "series-79-readiness-check-mna-029": {
+   "options": {
+    "a": "Acquire the target through a subsidiary merger",
+    "b": "Merge the target directly into the parent company",
+    "c": "Buy the target's assets and leave its shell behind",
+    "d": "Exchange parent shares for target shares by tender"
+   },
+   "distractorExplanations": {
+    "b": "A direct merger into the parent exposes the parent to target liabilities; the triangular form uses a subsidiary.",
+    "c": "Buying assets and leaving the shell behind is an asset acquisition, not a merger structure.",
+    "d": "An exchange offer acquires shares by tender, not by merging the target into an acquisition subsidiary."
+   }
+  },
+  "series-79-readiness-check-mna-030": {
+   "options": {
+    "a": "Giving target holders appraisal rights in a cash merger",
+    "b": "Diluting or delaying acquirer ability to gain control",
+    "c": "Requiring bidders to file Schedule TO before buying shares",
+    "d": "Letting the board accept the first bid above book value"
+   },
+   "distractorExplanations": {
+    "a": "Appraisal rights are a statutory remedy for dissenting holders, not a takeover defense.",
+    "c": "Schedule TO is an SEC filing for tender offers; pills and staggered boards are corporate defenses.",
+    "d": "Defenses give the board leverage to reject inadequate bids, not a duty to accept the first one."
+   },
+   "explanation": "Shareholder rights plans and classified boards raise cost and time for unsolicited control attempts. Bidders are pushed toward board negotiation."
+  },
+  "series-79-readiness-check-products-016": {
+   "options": {
+    "a": "All potential buyers alongside the one-page teaser",
+    "b": "The target's lenders as part of a consent solicitation",
+    "c": "Bidders who have already signed a letter of intent",
+    "d": "Potential buyers who have signed confidentiality agreements"
+   },
+   "distractorExplanations": {
+    "a": "The teaser goes out broadly; the CIM is released only after a bidder signs an NDA.",
+    "b": "Lenders receive consent materials, not the CIM used to market the company to buyers.",
+    "c": "The CIM comes before indications of interest; LOIs are submitted later in the process."
+   },
+   "explanation": "CIMs contain non-public financial and operational detail for qualified bidders only. Recipients are screened before the CIM goes out."
+  },
+  "series-79-readiness-check-products-017": {
+   "options": {
+    "a": "Marketing and pricing occur in a compressed window, often overnight",
+    "b": "The deal follows a two-week roadshow with management meetings",
+    "c": "Shares are sold gradually into the open market through a sales agent",
+    "d": "Pricing is set by Dutch auction among retail bidders"
+   },
+   "distractorExplanations": {
+    "b": "A two-week roadshow is a fully marketed offering; an ABB is launched and priced within hours.",
+    "c": "Gradual sales through an agent describe an at-the-market program, not an accelerated bookbuild.",
+    "d": "ABBs are priced by underwriters from institutional demand, not via a retail Dutch auction."
+   },
+   "explanation": "ABBs quickly gather institutional demand and set final price/volume in days or hours. The short window reduces market risk."
+  },
+  "series-79-readiness-check-products-018": {
+   "options": {
+    "a": "To accredited investors under Rule 506(c)",
+    "b": "To qualified institutional buyers under Rule 144A",
+    "c": "To retail investors after an A/B exchange offer",
+    "d": "To non-U.S. investors under Regulation S only"
+   },
+   "distractorExplanations": {
+    "a": "Rule 506(c) is a Reg D issuer exemption with verification; 144A-for-life bonds are resold to QIBs.",
+    "c": "An A/B exchange offer registers the bonds; 144A-for-life deals skip that registration step.",
+    "d": "Many 144A deals have a Reg S tranche, but the 144A-for-life label refers to the QIB resale market."
+   },
+   "explanation": "144A-for-life relies on QIB private placement exemptions for both issuance and trading restrictions. No subsequent SEC registration for resale follows."
+  },
+  "series-79-readiness-check-products-019": {
+   "options": {
+    "a": "Sell a large block overnight at a discount to institutions",
+    "b": "Offer new shares to existing holders at a fixed discount",
+    "c": "Sell shares into the open market at prevailing prices",
+    "d": "Buy back shares in the open market under Rule 10b-18"
+   },
+   "distractorExplanations": {
+    "a": "An overnight discounted block is an accelerated bookbuild, not a dribble-out ATM program.",
+    "b": "Offering new shares pro rata to existing holders at a discount is a rights offering.",
+    "d": "Rule 10b-18 repurchases buy shares back; an ATM sells new primary shares."
+   },
+   "explanation": "ATMs dribble out primary shares opportunistically with lower market impact than block deals. Sales run through a sales agent over time."
+  },
+  "series-79-readiness-check-products-020": {
+   "options": {
+    "a": "Buys the full issue and resells it to the public",
+    "b": "Buys only the shares left after a rights offering",
+    "c": "Guarantees a minimum price for 30 days after listing",
+    "d": "Uses commercially reasonable efforts to sell securities"
+   },
+   "distractorExplanations": {
+    "a": "Buying the full issue and reselling it is a firm commitment, not a best-efforts underwriting.",
+    "b": "Buying shares left after a rights offering is a standby commitment, not best efforts.",
+    "c": "No underwriting form guarantees aftermarket prices; stabilization is limited by Regulation M."
+   },
+   "explanation": "Best efforts shift unsold risk to the issuer; firm commitment underwriters buy the offering. The underwriter does not commit to buy unsold shares."
+  },
+  "series-79-readiness-check-products-021": {
+   "options": {
+    "a": "Company insiders and major shareholders from selling shares",
+    "b": "Underwriter analysts from publishing research on the issuer",
+    "c": "The issuer from paying dividends until profitable",
+    "d": "New investors from flipping IPO shares in the first week"
+   },
+   "distractorExplanations": {
+    "b": "Research quiet periods arise under FINRA Rule 2241, not from insider lock-up agreements.",
+    "c": "Dividend restrictions come from credit agreements, not from IPO lock-up agreements.",
+    "d": "Lock-ups bind pre-IPO holders; flipping by IPO buyers is discouraged by penalty bids, not lock-ups."
+   },
+   "explanation": "Lock-ups reduce post-IPO supply pressure from pre-IPO holders and align with stabilization period. The restriction runs for a period after the offering."
+  },
+  "series-79-readiness-check-products-022": {
+   "options": {
+    "a": "Common stock alongside warrants in a units offering",
+    "b": "Senior secured notes alongside senior unsecured notes",
+    "c": "A term loan B alongside a revolving credit facility",
+    "d": "Convertible notes alongside a stock repurchase"
+   },
+   "distractorExplanations": {
+    "a": "Stock with warrants is an equity units offering, not two tranches of bonds.",
+    "c": "Term loans and revolvers are bank loan facilities, not bond tranches in a note offering.",
+    "d": "A convertible paired with a buyback is an equity-linked trade, not a dual-tranche bond deal."
+   },
+   "explanation": "Issuers split credit risk tiers to broaden investor demand and optimize pricing. Tranches differ in collateral packages and yields."
+  },
+  "series-79-readiness-check-products-023": {
+   "options": {
+    "a": "Eligible social projects such as affordable housing and community health care",
+    "b": "General corporate purposes as long as the issuer has a climate target",
+    "c": "Eligible environmental projects tracked and often reported to investors",
+    "d": "Any project once the bond is rated investment grade"
+   },
+   "distractorExplanations": {
+    "a": "Proceeds for social projects define social bonds; green bonds fund environmental projects.",
+    "b": "Bonds tied to company-wide climate targets are sustainability-linked; green bonds ring-fence proceeds.",
+    "d": "Credit rating has nothing to do with use of proceeds; green bonds fund eligible environmental projects."
+   }
+  },
+  "series-79-readiness-check-products-024": {
+   "options": {
+    "a": "Modify scheduled plan trades at will after learning material nonpublic information",
+    "b": "Start trading the day after adoption with no cooling-off period",
+    "c": "Avoid filing Form 4 for transactions executed under the plan",
+    "d": "Pre-schedule trades under a written plan adopted when not in possession of MNPI"
+   },
+   "distractorExplanations": {
+    "a": "Modifying a plan while holding MNPI destroys the affirmative defense and counts as a new adoption.",
+    "b": "Since the 2022 amendments, officers and directors face a cooling-off period of at least 90 days before trading.",
+    "c": "Plan trades by Section 16 insiders still require Form 4 reporting within two business days."
+   },
+   "explanation": "Affirmative defense plans set automatic sales/purchases to reduce appearance of trading on MNPI. The plan must be adopted in good faith."
+  },
+  "series-79-readiness-check-products-025": {
+   "options": {
+    "a": "Pro forma financial tests (e.g., leverage or coverage ratios) are satisfied",
+    "b": "The ratio test is met at every quarter-end, whether or not new debt is added",
+    "c": "Bondholders holding a majority consent to each new borrowing",
+    "d": "The issuer's credit rating stays at investment grade"
+   },
+   "distractorExplanations": {
+    "b": "Testing every quarter-end without any triggering action is a maintenance covenant; incurrence tests apply when debt is incurred.",
+    "c": "Consent solicitations amend indentures; incurrence covenants permit debt that meets ratio tests without a vote.",
+    "d": "Rating-based fall-away provisions are different; incurrence covenants turn on pro forma ratios."
+   }
+  },
+  "series-79-readiness-check-products-026": {
+   "options": {
+    "a": "Distributing all of the subsidiary's shares to the parent's holders tax-free",
+    "b": "Selling a minority stake in a subsidiary while the parent retains control",
+    "c": "Selling the subsidiary outright to a private equity buyer",
+    "d": "Listing the parent's shares on a second foreign exchange"
+   },
+   "distractorExplanations": {
+    "a": "Distributing subsidiary shares to existing holders is a spin-off, not an IPO carve-out.",
+    "c": "An outright sale to a sponsor is a divestiture; a carve-out sells a minority stake via IPO.",
+    "d": "A dual listing of parent shares raises no subsidiary equity; it is not a carve-out."
+   }
+  },
+  "series-79-readiness-check-products-028": {
+   "options": {
+    "a": "Issue new senior bonds to fund an acquisition of a competitor",
+    "b": "Convert all outstanding bonds to equity by court order in Chapter 11",
+    "c": "Increase leverage to fund a special dividend",
+    "d": "Refinance or extend maturities, reduce coupons, or amend covenants"
+   },
+   "distractorExplanations": {
+    "a": "Issuing bonds to fund an acquisition is new-money financing, not liability management of existing debt.",
+    "b": "Court-ordered conversion is a Chapter 11 plan outcome; LM exercises are consensual and out of court.",
+    "c": "Borrowing for a special dividend is a dividend recap, not a liability management transaction."
+   },
+   "explanation": "LM transactions restructure outstanding bonds when issuers seek lower cost or flexibility. These changes are made with holder consent."
+  },
+  "series-79-readiness-check-products-029": {
+   "options": {
+    "a": "Pre-arranged debt commitment letters bidders can use to fund the acquisition",
+    "b": "Seller financing in which the target's owners carry a note",
+    "c": "An equity backstop from the sell-side bank's private equity arm",
+    "d": "A bridge loan the target itself draws to refinance its debt before the sale closes"
+   },
+   "distractorExplanations": {
+    "b": "A seller note is deferred consideration from the sellers, not a bank financing package stapled to the auction.",
+    "c": "Stapled financing is debt offered to bidders, not an equity backstop from the bank.",
+    "d": "Staple packages fund the buyer's acquisition, not the target's own refinancing before closing."
+   }
+  },
+  "series-79-readiness-check-products-030": {
+   "options": {
+    "a": "An issuer surveying investors with test-the-waters calls",
+    "b": "An investor initiating interest in a potential offering",
+    "c": "Underwriters gathering orders after the deal is launched",
+    "d": "A rating agency querying the issuer during the roadshow"
+   },
+   "distractorExplanations": {
+    "a": "Test-the-waters outreach is issuer-initiated; reverse inquiry starts with the investor.",
+    "c": "Collecting orders after launch is bookbuilding, not investor-initiated reverse inquiry.",
+    "d": "Rating agency questions are part of the rating process, not investor-driven demand."
+   },
+   "explanation": "Reverse inquiry helps bankers gauge demand and structure for opportunistic or window offerings. The inquiry comes before the issuer formally launches."
+  },
+  "series-79-readiness-check-regulations-016": {
+   "options": {
+    "a": "Retail sales of mutual funds and variable annuities",
+    "b": "Equity research report preparation and analysis",
+    "c": "Supervision of a firm's investment banking unit as principal",
+    "d": "Investment banking representative activities such as M&A"
+   },
+   "distractorExplanations": {
+    "a": "Retail mutual fund and variable annuity sales fall under Series 6 or Series 7, not Series 79.",
+    "b": "Writing research reports requires the Series 86/87 analyst exams, not Series 79.",
+    "c": "Supervising as a principal requires the Series 24 in addition to representative qualification."
+   }
+  },
+  "series-79-readiness-check-regulations-017": {
+   "options": {
+    "a": "Executive compensation including summary comp tables",
+    "b": "Related-party transactions with directors and officers",
+    "c": "Security ownership of management and 5% holders",
+    "d": "Risk factors that make the offering speculative"
+   },
+   "distractorExplanations": {
+    "b": "Related-party transactions are disclosed under Item 404 of Regulation S-K, not Item 402.",
+    "c": "Beneficial ownership tables come from Item 403; Item 402 covers executive pay.",
+    "d": "Risk factor disclosure is Item 105 of Regulation S-K; Item 402 is executive compensation."
+   },
+   "explanation": "Item 402 governs named executive officer pay disclosure in public company filings. Related compensation policies are also covered."
+  },
+  "series-79-readiness-check-regulations-019": {
+   "options": {
+    "a": "A new Form S-1 filed for each takedown from the shelf",
+    "b": "A free writing prospectus in place of any supplement",
+    "c": "A prospectus supplement updating the base shelf registration",
+    "d": "A post-effective amendment filed for every routine shelf takedown"
+   },
+   "distractorExplanations": {
+    "a": "Filing a new S-1 defeats the purpose of a shelf; takedowns use prospectus supplements.",
+    "b": "An FWP can supplement marketing but does not replace the prospectus supplement with final terms.",
+    "d": "Post-effective amendments are for fundamental changes; routine takedowns use prospectus supplements."
+   }
+  },
+  "series-79-readiness-check-regulations-020": {
+   "options": {
+    "a": "Spinning IPO shares to executives of investment banking clients",
+    "b": "Underwriting compensation above fair limits in public offerings",
+    "c": "Research analyst participation in IPO roadshows",
+    "d": "Sharing in IPO allocations with certain covered persons"
+   },
+   "distractorExplanations": {
+    "a": "Allocating IPO shares to executives of IB clients is spinning, prohibited by FINRA Rule 5131.",
+    "b": "Underwriting compensation fairness is reviewed under FINRA Rule 5110, not Rule 5130.",
+    "c": "Analyst roadshow participation is restricted by FINRA Rule 2241, not Rule 5130."
+   }
+  },
+  "series-79-readiness-check-regulations-021": {
+   "options": {
+    "a": "Six months if the company has been subject to Exchange Act reporting for at least 90 days",
+    "b": "One year if the issuer has been subject to Exchange Act periodic reporting for at least 90 days",
+    "c": "Two years, with no reporting requirement, for all restricted securities",
+    "d": "Three years for restricted securities of a non-reporting issuer"
+   },
+   "distractorExplanations": {
+    "b": "One year is the holding period for non-reporting issuers; a 90-day reporting issuer qualifies for six months.",
+    "c": "The two-year period predates the 2008 amendments; current Rule 144 uses six months or one year.",
+    "d": "Securities of a non-reporting issuer need a one-year holding period under Rule 144, not three years."
+   }
+  },
+  "series-79-readiness-check-regulations-023": {
+   "options": {
+    "a": "Short-swing profits by insiders trading within six months",
+    "b": "Sales of unregistered securities made without a valid exemption",
+    "c": "Fraud in connection with the purchase or sale of securities",
+    "d": "Failure to file Form 4 within two business days"
+   },
+   "distractorExplanations": {
+    "a": "Short-swing profit recovery is Section 16(b), a strict liability rule, not Rule 10b-5 fraud.",
+    "b": "Selling unregistered, non-exempt securities violates Section 5 of the Securities Act, not Rule 10b-5.",
+    "d": "Late Form 4 filings violate Section 16(a) reporting rules, not the Rule 10b-5 antifraud prohibition."
+   },
+   "explanation": "10b-5 is the principal antifraud rule enforced by SEC and used in insider trading cases. It covers material misstatements and omissions."
+  },
+  "series-79-readiness-check-regulations-024": {
+   "options": {
+    "a": "Wait until the next quarterly earnings call to disclose the information",
+    "b": "File a Form 8-K within four business days in every case",
+    "c": "Delay disclosure until the SEC staff has reviewed and approved the release",
+    "d": "Make public disclosure of that information simultaneously or promptly"
+   },
+   "distractorExplanations": {
+    "a": "Waiting for the next earnings call leaves the selective disclosure uncured; Reg FD requires prompt public release.",
+    "b": "Reg FD's prompt standard is generally within 24 hours or before the next market open, not four business days.",
+    "c": "The SEC does not pre-approve issuer releases; the issuer must disclose simultaneously or promptly."
+   }
+  },
+  "series-79-readiness-check-regulations-025": {
+   "options": {
+    "a": "Prevent issuers and underwriters from manipulating the market price",
+    "b": "Limit underwriting compensation to a fair percentage of offering proceeds",
+    "c": "Require prospectus delivery to all purchasers in an IPO",
+    "d": "Bar insiders from selling shares during the IPO lock-up"
+   },
+   "distractorExplanations": {
+    "b": "Underwriting compensation limits come from FINRA Rule 5110, not Regulation M.",
+    "c": "Prospectus delivery is a Securities Act Section 5 requirement, not part of Regulation M.",
+    "d": "Lock-ups are contractual agreements with underwriters; Regulation M restricts trading by distribution participants."
+   },
+   "explanation": "Reg M trading restrictions (Rules 101–105) limit bids, purchases, and shorting around a distribution so the offering is not artificially supported. Other distribution participants are covered too."
+  },
+  "series-79-readiness-check-regulations-026": {
+   "options": {
+    "a": "More than $10 million in total assets and a class of equity held by 500 or more holders",
+    "b": "More than $10 million in assets and a class of equity held by 2,000 or more holders",
+    "c": "A class of securities listed on a national securities exchange",
+    "d": "Any public offering of debt registered under the Securities Act"
+   },
+   "distractorExplanations": {
+    "a": "500 holders of record was the pre-JOBS Act threshold; it now applies to non-accredited holders within the 2,000 total.",
+    "c": "Exchange listing triggers registration under Section 12(b), not the Section 12(g) asset and holder thresholds.",
+    "d": "A registered debt offering creates Section 15(d) reporting duties, not Section 12(g) equity registration."
+   },
+   "explanation": "12(g) triggers public reporting obligations when private companies grow broad shareholder bases. Alternatively 500 non-accredited holders trigger it."
+  },
+  "series-79-readiness-check-regulations-027": {
+   "options": {
+    "a": "It has no more than 35 non-accredited investors",
+    "b": "It sells interests only to qualified purchasers",
+    "c": "It has no more than 100 beneficial owners",
+    "d": "It has no more than 2,000 holders of record"
+   },
+   "distractorExplanations": {
+    "a": "The 35 non-accredited limit belongs to Rule 506(b); Section 3(c)(1) caps beneficial owners at 100.",
+    "b": "Selling only to qualified purchasers is the Section 3(c)(7) exemption, which has no 100-owner cap.",
+    "d": "2,000 holders is the Exchange Act Section 12(g) registration threshold, not the 3(c)(1) fund limit."
+   }
+  },
+  "series-79-readiness-check-regulations-028": {
+   "options": {
+    "a": "$250,000, 5% of total assets, or 5% of outstanding securities",
+    "b": "$500,000, 10% of total assets, or 10% of outstanding securities",
+    "c": "$1 million, 10% of total assets, or 10% of outstanding securities",
+    "d": "$1 million, 15% of total assets, or 15% of outstanding securities"
+   },
+   "distractorExplanations": {
+    "a": "These caps are far too low; Rule 701 uses $1 million or 15% of total assets or outstanding securities.",
+    "b": "Rule 701 percentage tests are 15%, not 10%, and the dollar floor is $1 million, not $500,000.",
+    "c": "The $1 million floor is right, but Rule 701 uses 15% of assets or outstanding securities, not 10%."
+   },
+   "explanation": "Rule 701 lets private companies grant equity to employees without full registration within caps and disclosure rules. Outstanding securities are measured by class."
+  },
+  "series-79-readiness-check-regulations-029": {
+   "options": {
+    "a": "Material misstatements or omissions in a registration statement",
+    "b": "Misstatements in a prospectus or oral communication by a seller",
+    "c": "Selling securities before the registration statement is effective",
+    "d": "Fraudulent statements in a company's periodic 10-K filings"
+   },
+   "distractorExplanations": {
+    "b": "Liability for misstatements in a prospectus or oral communication is Section 12(a)(2); Section 11 covers the registration statement.",
+    "c": "Selling before effectiveness violates Section 5 with rescission under Section 12(a)(1), not Section 11.",
+    "d": "Fraud in periodic Exchange Act filings is pursued under Rule 10b-5 or Section 18, not Securities Act Section 11."
+   },
+   "explanation": "Section 11 is a core registered-offering liability statute for the registration statement; due-diligence defenses may be available to non-issuer defendants. Liability falls on the issuer and specified offering participants."
+  },
+  "series-79-readiness-check-regulations-030": {
+   "options": {
+    "a": "Two business days after crossing 5% beneficial ownership",
+    "b": "Five business days after crossing 5% beneficial ownership",
+    "c": "Ten calendar days after crossing 5% beneficial ownership",
+    "d": "45 days after the calendar year-end in which 5% was crossed"
+   },
+   "distractorExplanations": {
+    "a": "Two business days is the Form 4 deadline for Section 16 insiders, not the Schedule 13D deadline.",
+    "c": "Ten days was the pre-2024 Schedule 13D deadline; SEC amendments shortened it to five business days.",
+    "d": "45 days after year-end was the old annual Schedule 13G timing for exempt filers, not the 13D deadline."
+   },
+   "explanation": "Schedule 13D discloses activist or large passive positions and acquisition purpose within the SEC deadline. The deadline applies to a class of equity securities."
+  }
+ }
+}

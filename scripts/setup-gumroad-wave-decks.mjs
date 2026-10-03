@@ -33,6 +33,7 @@ import {
   ensureGumroadAccessToken,
   loadLocalEnvFiles,
 } from "./lib/gumroad-auth.mjs";
+import { BUNDLE_FILE_SLUGS } from "./lib/gumroad-bundles.mjs";
 import { gumroadDiscoverFields } from "./lib/gumroad-discover.mjs";
 import { putGumroadDigitalSettings } from "./lib/gumroad-product-settings.mjs";
 import { buildCopyDescription, loadLandingCopy } from "./lib/landing-copy.mjs";
@@ -452,14 +453,7 @@ function uploadProductThumbnail({ productId, slug, coverPath, dryRun }) {
   }
 }
 
-function uploadProductAssets({
-  productId,
-  slug,
-  apkgPath,
-  coverPath,
-  apkgDisplayName,
-  dryRun,
-}) {
+function uploadApkg({ productId, apkgPath, apkgDisplayName, dryRun }) {
   console.log(`  assets: apkg ${apkgPath}`);
   const fileFlags = `--file "${apkgPath}" --file-name "${apkgDisplayName}" --file-description "Anki deck — import into Anki desktop, then sync to mobile via AnkiWeb."`;
   try {
@@ -472,6 +466,21 @@ function uploadProductAssets({
     } else {
       throw error;
     }
+  }
+}
+
+function uploadProductAssets({
+  productId,
+  slug,
+  apkgPath,
+  coverPath,
+  apkgDisplayName,
+  dryRun,
+}) {
+  if (BUNDLE_FILE_SLUGS.has(slug)) {
+    console.log(`  assets: ${slug} files are managed by setup-gumroad-language-decks — apkg skipped`);
+  } else {
+    uploadApkg({ productId, apkgPath, apkgDisplayName, dryRun });
   }
 
   const { thumbJpg, workDir, prebuilt } = prepareSquareThumbnail(coverPath, slug);

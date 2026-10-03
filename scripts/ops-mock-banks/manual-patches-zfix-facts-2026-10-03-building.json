@@ -1,0 +1,489 @@
+{
+ "cem-readiness-check": {
+  "cem-readiness-check-electrical-lighting-026": {
+   "prompt": "Induction motor slip falls as load falls. At very light load, the motor's efficiency drops mainly because",
+   "explanation": "Core (iron) and friction/windage losses stay roughly constant while useful output falls, so they become a larger share of input power at light load; this is why badly oversized motors run inefficiently."
+  },
+  "cem-readiness-check-hvac-envelope-bas-005": {
+   "options": {
+    "a": "Holding duct static at the design setpoint and trimming flow with box dampers",
+    "b": "Resetting supply air temperature upward whenever zone dampers are mostly closed",
+    "c": "Lowering duct static setpoint until the most-open VAV damper is nearly full open",
+    "d": "Raising static setpoint during low occupancy to keep VAV boxes controllable"
+   },
+   "explanation": "Trim-and-respond static pressure reset lowers the duct static setpoint while every VAV damper is throttled, and raises it only when the most-open damper approaches full open. Less static pressure means less fan power for the same airflow.",
+   "distractorExplanations": {
+    "a": "A fixed design static setpoint is the baseline that reset improves on; throttling excess pressure at the boxes wastes fan energy.",
+    "b": "Raising supply air temperature is SAT reset, a different strategy that can actually increase fan airflow and fan energy.",
+    "d": "Low occupancy means lower airflow and more throttled dampers, which allows a lower static setpoint, not a higher one."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-019": {
+   "prompt": "A public owner asks whether its ESPC payments can stay off the balance sheet. Under current lease accounting (GASB 87 / ASC 842), the most accurate answer is that",
+   "options": {
+    "a": "It depends on contract terms; most lease-type ESPC obligations are now recognized",
+    "b": "Payments stay off the balance sheet as long as the ESCO holds title until final payoff",
+    "c": "Payments count as operating expense because they are funded from the measured savings",
+    "d": "ESPCs must be financed with general obligation bonds and carried as public debt"
+   },
+   "explanation": "GASB 87 (governments) and ASC 842 (private entities) put most leases and financed purchases on the balance sheet, so the old off-balance-sheet pitch for ESPCs rarely holds; treatment depends on the contract terms and the owner's auditor.",
+   "distractorExplanations": {
+    "b": "Title staying with the ESCO does not avoid recognition; under GASB 87 the owner still records a lease liability for the right to use the equipment.",
+    "c": "Paying from savings does not change the accounting; a financed obligation is recognized based on its terms, not on its funding source.",
+    "d": "ESPCs are usually financed with tax-exempt lease-purchase or third-party financing; general obligation bonds are one option, not a requirement."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-045": {
+   "explanation": "LEED v4 Fundamental Commissioning requires the CxA to review the OPR, BOD and project design, write a Cx plan, verify functional tests, and support O&M handoff for energy-related systems; enhanced Cx adds submittal review, seasonal testing and a 10-month review."
+  },
+  "cem-readiness-check-commissioning-espc-015": {
+   "options": {
+    "a": "Weather and occupancy regressed against utility consumption as the predictor",
+    "b": "Utility use regressed against weather and other independent variables",
+    "c": "Monthly peak demand regressed against utility rates to normalize cost",
+    "d": "Post-retrofit consumption regressed against pre-retrofit consumption by month"
+   },
+   "explanation": "Whole-building regression treats utility consumption as the dependent variable and weather (degree days) plus other independent variables as predictors, so pre/post use can be compared on a normalized basis.",
+   "distractorExplanations": {
+    "a": "This swaps the variables: consumption is the dependent variable, while weather and occupancy are the independent predictors.",
+    "c": "Utility rates do not drive energy use; whole-building M&V regresses consumption on weather and operating variables.",
+    "d": "Regressing post on pre consumption ignores the drivers; the baseline model uses weather and other independent variables."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-017": {
+   "options": {
+    "a": "Once, on an existing building whose systems were not commissioned at construction",
+    "b": "Periodically after initial Cx to restore performance as systems change",
+    "c": "During design and construction, before the building is first occupied",
+    "d": "Continuously through permanent meters and automated fault detection"
+   },
+   "explanation": "Recommissioning repeats commissioning on a building that was commissioned before, restoring performance lost to drift, renovations and operational changes over the building's life.",
+   "distractorExplanations": {
+    "a": "Commissioning an existing building that was never commissioned is retrocommissioning; recommissioning follows a prior Cx.",
+    "c": "Verification during design and construction is new construction commissioning, which precedes any recommissioning.",
+    "d": "Continuous metering with automated fault detection is ongoing or monitoring-based commissioning, not periodic recommissioning."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-018": {
+   "options": {
+    "a": "Let the CxA assume design liability for systems it reviews and tests",
+    "b": "Allow the CxA to direct contractors' means and methods during installation",
+    "c": "Ensure the CxA can approve pay applications without owner involvement",
+    "d": "Provide objective verification independent of designers and contractors"
+   },
+   "explanation": "An independent CxA has no stake in the design or installation, which reduces conflicts of interest when reporting issues that affect energy and operability. Owners and programs such as LEED may require this independence.",
+   "distractorExplanations": {
+    "a": "Design liability stays with the engineer of record; independence is about objective verification, not taking over design risk.",
+    "b": "Means and methods remain the contractor's responsibility; an independent CxA verifies results but does not direct construction.",
+    "c": "Pay application approval is an owner and architect function; CxA independence does not grant payment authority."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-047": {
+   "options": {
+    "a": "Envelope air leakage paths at parapets and window perimeter seals from IR scans",
+    "b": "Wiring code violations and arc-flash hazards in electrical switchgear",
+    "c": "Undersized equipment selected during design load calculations",
+    "d": "Stuck dampers, failed economizers, and short cycling found by trend rules"
+   },
+   "explanation": "Fault detection and diagnostics apply rules to BAS trend and meter data to reveal operating faults such as stuck dampers, failed economizers and short cycling that waste energy.",
+   "distractorExplanations": {
+    "a": "Leakage paths found by infrared scans are envelope diagnostics; FDD rules analyze BAS trends for HVAC faults.",
+    "b": "Code violations and arc-flash hazards are found by electrical inspections and studies, not by trend-based FDD.",
+    "c": "Undersizing is a design issue found in load reviews; FDD flags operating faults such as stuck dampers."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-048": {
+   "options": {
+    "a": "Cooling energy comparisons for hotter or cooler reporting periods versus baseline",
+    "b": "Electric demand charges for peak months in the reporting period versus baseline",
+    "c": "Domestic hot water use for changes in occupancy between baseline and reporting",
+    "d": "Heating energy comparisons for colder or milder periods versus baseline"
+   },
+   "explanation": "Heating degree day models separate weather-driven heating consumption from ECM impacts, so a colder or milder reporting period can be compared fairly with the baseline.",
+   "distractorExplanations": {
+    "a": "Cooling energy is normalized with cooling degree days (CDD); heating degree days apply to heating energy.",
+    "b": "Demand charges depend on peak kW and tariff terms; HDD normalization adjusts heating energy for weather.",
+    "c": "Occupancy-driven hot water use is adjusted with occupancy variables, not with heating degree days."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-019": {
+   "options": {
+    "a": "The application runs long hours and gains from higher efficiency",
+    "b": "The motor runs a few hundred hours per year at near full load",
+    "c": "The motor drives a constant-speed load with an across-the-line starter",
+    "d": "The existing motor is lightly loaded but its utility rate is very low"
+   },
+   "explanation": "Synchronous reluctance and PM motors cost more but hold high efficiency across the load curve; long run hours turn that efficiency gain into enough kWh savings to pay back the premium.",
+   "distractorExplanations": {
+    "b": "A few hundred hours per year gives too little energy to pay back a premium motor, even at full load.",
+    "c": "Synchronous reluctance and most PM motors require a drive; an across-the-line constant-speed setup does not suit them.",
+    "d": "A very low utility rate shrinks the dollar value of efficiency gains, which weakens the payback."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-022": {
+   "options": {
+    "a": "Reduced or eliminated PF penalty and lower I²R distribution losses",
+    "b": "Lower billed kW demand because real power falls with reactive current",
+    "c": "Reduced kWh charges equal to the drop in kVA from 0.82 to 0.95 PF",
+    "d": "Higher real power kW consumption for the same work output"
+   },
+   "explanation": "Power factor correction reduces reactive current, avoiding the utility penalty and lowering line losses, while real power for the same mechanical output stays substantially unchanged.",
+   "distractorExplanations": {
+    "b": "Real kW stays essentially unchanged; PF correction lowers kVA and reactive current, not billed kW demand.",
+    "c": "kWh tracks real energy, which barely changes; the kVA reduction does not translate into equal kWh savings.",
+    "d": "Real kW for the same load should not increase; apparent kVA drops."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-036": {
+   "options": {
+    "a": "Elevator motors are DC machines that a standard AC drive cannot control",
+    "b": "Elevators require specialized controls and safety codes that generic VFDs do not meet",
+    "c": "Elevator hoists are variable-torque loads whose VFD savings would be too small to matter",
+    "d": "Regenerated energy from descending cars would be billed by the utility"
+   },
+   "explanation": "Elevator systems integrate safety circuits, regeneration and proprietary controls; a generic VFD retrofit without the manufacturer can violate elevator code and safety requirements.",
+   "distractorExplanations": {
+    "a": "Many modern elevators use AC motors, and code and safety integration, not motor type, is the real obstacle.",
+    "c": "Hoists are constant-torque loads; elevator drives can save energy, but must be manufacturer-integrated for safety.",
+    "d": "Regeneration reduces net energy use; the concern with generic VFDs is safety, controls, and code compliance."
+   }
+  },
+  "cem-readiness-check-electrical-lighting-012": {
+   "options": {
+    "a": "Cutting burn hours when spaces are unoccupied",
+    "b": "Increasing lamp efficacy above 300 lm/W",
+    "c": "Eliminating the need for illuminance standards",
+    "d": "Raising power factor above unity"
+   },
+   "explanation": "Occupancy controls turn off or dim lights when spaces are vacant, reducing operating hours and kWh without changing fixture efficacy.",
+   "distractorExplanations": {
+    "b": "Occupancy sensors switch fixtures off; they do not change luminaire efficacy, and 300 lm/W is beyond any current commercial LED.",
+    "c": "Sensors change when lights run, not the required illuminance; IES target light levels still apply whenever the space is occupied.",
+    "d": "Power factor cannot exceed 1.0 (unity), and occupancy sensing has no effect on the power factor of the lighting load."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-005": {
+   "options": {
+    "a": "Equipment was set in place, wired, and started per the manufacturer's checklist",
+    "b": "Air and water systems deliver design flows measured at each terminal and coil",
+    "c": "Installed equipment matches approved submittals and nameplate data recorded at delivery",
+    "d": "Systems and assemblies operate per sequences and setpoints under test conditions"
+   },
+   "explanation": "Functional performance testing checks that systems run their sequences, setpoints, interlocks, safeties and modes under real or simulated conditions, going beyond startup and installation checks.",
+   "distractorExplanations": {
+    "a": "Setting, wiring, and startup are covered by pre-functional (construction) checklists, which come before functional performance testing.",
+    "b": "Measuring design flows at terminals and coils is testing, adjusting, and balancing (TAB), not functional performance testing.",
+    "c": "Comparing installed equipment with submittals is installation verification; FPT tests sequences and setpoints in operation."
+   }
+  },
+  "cem-readiness-check-commissioning-espc-039": {
+   "options": {
+    "a": "Calibrated simulation models to predict baseline and reporting period consumption",
+    "b": "Whole-facility utility meter data with regression adjustments for weather and occupancy",
+    "c": "Continuous isolation metering of every parameter affecting the retrofit's energy use",
+    "d": "Spot measurement of key parameters with other values stipulated by agreement"
+   },
+   "explanation": "IPMVP Option D uses calibrated computer simulation to estimate baseline and reporting-period energy; it suits complex sites or new construction where isolation metering or a usable baseline is impractical.",
+   "distractorExplanations": {
+    "b": "Whole-facility meter regression with weather and occupancy adjustments is IPMVP Option C, not Option D.",
+    "c": "Isolation metering of all retrofit parameters is IPMVP Option B; Option D relies on calibrated simulation.",
+    "d": "Measuring key parameters and stipulating others is IPMVP Option A, the retrofit isolation key-parameter option."
+   }
+  }
+ },
+ "ashrae-certifications-readiness-check": {
+  "ashrae-certifications-readiness-check-chd-hbdp-design-047": {
+   "options": {
+    "a": "Holding condenser water at a fixed 85°F design setpoint year-round for stable chiller control",
+    "b": "Staging extra chillers on at light load to keep each one near minimum capacity",
+    "c": "Lowering condenser water temperature when wet-bulb allows, to reduce chiller lift",
+    "d": "Lowering chilled water supply temperature at part load to dehumidify better"
+   },
+   "explanation": "Colder condenser water lowers condensing pressure and chiller lift, cutting compressor kW. Optimized reset balances that gain against extra tower fan energy and must stay above the chiller manufacturer's minimum entering condenser water temperature.",
+   "distractorExplanations": {
+    "a": "A fixed 85°F design setpoint is what reset strategies replace; it forgoes the part-load and low wet-bulb savings.",
+    "b": "Running chillers near minimum load is inefficient and is a sequencing error, not a condenser water reset strategy.",
+    "d": "That is a chilled water strategy, and lowering CHWS raises lift and chiller energy instead of reducing it."
+   }
+  },
+  "ashrae-certifications-readiness-check-bcxp-commissioning-047": {
+   "explanation": "ASHRAE certifications, including BCxP, run on a three-year cycle and are renewed by earning the required Professional Development Hours and submitting a renewal application and fee; no re-examination is needed. Check the current renewal guide for the PDH count."
+  },
+  "ashrae-certifications-readiness-check-bcxp-commissioning-015": {
+   "options": {
+    "a": "OPR and BOD documentation, a Cx plan, and a final Cx report for the energy-related systems",
+    "b": "Submittal review, seasonal testing, a 10-month occupancy review, and an ongoing Cx plan",
+    "c": "Third-party verification of the energy model and Appendix G baseline used for the Optimize Energy Performance credit",
+    "d": "Replacement of seasonal testing with a single turnover test to reduce commissioning fees"
+   },
+   "explanation": "In LEED v4, design review of the OPR, BOD and design is already part of Fundamental Commissioning. The Enhanced Commissioning credit adds contractor submittal review, systems manual and training verification, seasonal testing, a 10-month review and an ongoing Cx plan.",
+   "distractorExplanations": {
+    "a": "OPR/BOD documentation, a Cx plan and a final Cx report are already required by Fundamental Commissioning, so they add nothing.",
+    "c": "Energy model review belongs to Optimize Energy Performance documentation, not to the Enhanced Commissioning credit.",
+    "d": "Enhanced Cx adds seasonal testing and a 10-month review; reducing testing to one turnover event moves the wrong way."
+   }
+  },
+  "ashrae-certifications-readiness-check-bemp-modeling-041": {
+   "prompt": "The purpose of ASHRAE Standard 140 (Method of Test for the Evaluation of Building Energy Analysis Computer Programs) is to:"
+  }
+ },
+ "cdcp-readiness-check": {
+  "cdcp-readiness-check-cooling-water-thermal-044": {
+   "options": {
+    "a": "Lower rack inlet temperatures from extra cold air reaching servers",
+    "b": "Hotter, uneven rack inlets and a lower CRAC return delta-T",
+    "c": "Higher underfloor static pressure that improves tile airflow",
+    "d": "Lower server fan speeds because inlet air reaches them cooler"
+   },
+   "explanation": "Open U-spaces let hot exhaust recirculate to server inlets (hot spots, uneven inlet temperatures) and let cold supply air bypass into the hot aisle, which dilutes the return air and lowers the CRAC return temperature and delta-T.",
+   "distractorExplanations": {
+    "a": "Open U spaces let hot exhaust recirculate to the front of the rack, raising inlet temperatures rather than lowering them.",
+    "c": "Blanking panels sit in the rack, not the floor; gaps cause front-to-back recirculation and bypass, not plenum pressure gains.",
+    "d": "Recirculation raises inlet temperature, so server fans speed up to compensate; it does not let them slow down."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-007": {
+   "options": {
+    "a": "Exhaust fans running at full speed during discharge to clear the agent from the protected room",
+    "b": "CRAH units left running on fresh-air mode to dilute agent for occupant safety",
+    "c": "Doors held open for staff egress through the full 10-minute agent hold period",
+    "d": "Abort switches, pre-discharge alarms, door closers, and HVAC damper shutdown"
+   },
+   "explanation": "A clean-agent discharge needs abort switches to stop a false release, pre-discharge horns/strobes so people leave, and door closers plus HVAC shutdown and damper closure so the room holds design concentration for the hold time.",
+   "distractorExplanations": {
+    "a": "Running exhaust during discharge drains the agent and fails the hold time; ventilation shuts down and dampers close.",
+    "b": "Introducing outside air dilutes the agent below design concentration; HVAC dampers close until the soak period ends.",
+    "c": "Pre-discharge alarms give staff time to leave; doors must then close so the room holds concentration (commonly 10 minutes)."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-016": {
+   "options": {
+    "a": "Open access for any colocation customer holding a badge",
+    "b": "Customer-managed locks on the room with no facility logging required",
+    "c": "Shared vendor PINs rotated once a year by the site lead",
+    "d": "Authorized-staff access control, CCTV, and logged cross-connects"
+   },
+   "explanation": "Meet-me rooms hold carrier and customer interconnections, so access is limited to authorized operator, carrier and cross-connect staff (often escorted), monitored by CCTV, and every entry and cross-connect is logged for accountability.",
+   "distractorExplanations": {
+    "a": "MMRs restrict access to authorised carrier and operator staff; a general colocation badge should not open the MMR.",
+    "b": "The operator must control and log MMR access and cross-connect work; customer locks alone remove that oversight.",
+    "c": "Shared PINs prevent individual accountability; MMR access should be individually credentialed and logged."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-011": {
+   "prompt": "Closed-transition paralleling of a standby generator with the utility requires:",
+   "explanation": "Before the paralleling breaker closes, a synchronizer must match the generator's voltage, frequency and phase angle to the utility; closing out of phase causes damaging current and torque transients."
+  },
+  "cdcp-readiness-check-site-standards-building-008": {
+   "explanation": "Clear height above racks must leave room for overhead cable tray, busway, lighting and safe ladder access. TIA-942 sets a minimum of 2.6 m (8.5 ft) from finished floor to the lowest obstruction such as sprinklers or lights, with more height preferred."
+  }
+ },
+ "nebosh-readiness-check": {
+  "nebosh-readiness-check-health-ergonomics-022": {
+   "prompt": "A tool's datasheet declares a vibration emission value of 8 m/s². This value is used to:",
+   "explanation": "The declared emission value is a vibration magnitude, not a daily dose; combined with trigger time it gives the daily exposure A(8), which is compared with the action and limit values to plan controls and health surveillance."
+  },
+  "nebosh-readiness-check-hsm-systems-culture-001": {
+   "prompt": "Under ISO 45001 clause 5.1 (Leadership and commitment), which action best shows top management meeting its duty for the OH&S management system?"
+  },
+  "nebosh-readiness-check-hsm-systems-culture-034": {
+   "prompt": "The 'arrangements' section of a health and safety policy typically documents",
+   "options": {
+    "a": "The organisation's commitment to health and safety and its overall aims, signed by the managing director",
+    "b": "How the policy is put into practice — procedures, training, consultation, and emergency planning",
+    "c": "The list of hazards identified in risk assessments together with their residual risk ratings",
+    "d": "The chain of named responsibilities from the board down to supervisors and workers"
+   },
+   "explanation": "A health and safety policy has three parts: the statement of intent (aims and commitment), the organisation (who is responsible for what) and the arrangements, which set out the procedures, training, consultation and emergency plans that put the policy into practice.",
+   "distractorExplanations": {
+    "a": "Commitment and overall aims form the statement of intent section, not the arrangements for putting the policy into practice.",
+    "c": "Risk registers are separate records; the arrangements describe the systems and procedures used to implement the policy.",
+    "d": "The chain of responsibilities is the organisation section of the policy; arrangements cover procedures and systems."
+   }
+  },
+  "nebosh-readiness-check-gic2-risk-assessment-037": {
+   "prompt": "During a GIC2 inspection, the candidate notices an unguarded drill in a busy walkway. What is the best immediate recommendation?",
+   "options": {
+    "a": "Segregate or guard the equipment, restrict access, and review the work-equipment risk assessment",
+    "b": "Fit a warning sign and floor markings around the drill, and brief walkway users at the next toolbox talk",
+    "c": "Issue safety glasses and gloves to people using the walkway until the drill can be relocated",
+    "d": "Record the hazard for the report and recommend guarding within the next quarterly maintenance cycle"
+   },
+   "explanation": "Accessible dangerous parts beside a walkway need immediate guarding or segregation, then the risk assessment for that machine and location should be reviewed (ILO C155 duty to keep work equipment safe). Engineering controls come before signs or PPE.",
+   "distractorExplanations": {
+    "b": "Signs and briefings are lower-order controls; an unguarded drill beside a busy walkway needs guarding or segregation first.",
+    "c": "PPE is the last resort, and gloves near rotating drills add an entanglement risk; guarding and segregation come first.",
+    "d": "An unguarded drill beside a busy walkway is an immediate danger; deferring action to a quarterly cycle is not acceptable."
+   }
+  },
+  "nebosh-readiness-check-health-ergonomics-016": {
+   "prompt": "A worker is exposed to 85 dB(A) for six hours a day, a daily exposure of about 84 dB(A) — between the 80 and 85 dB(A) action values. What is the most suitable control?"
+  }
+ },
+ "leed-ap-om-readiness-check": {
+  "leed-ap-om-readiness-check-location-sites-021": {
+   "options": {
+    "a": "store deicing chemicals uncovered beside a catch basin for quick access",
+    "b": "store deicing chemicals under a roof but wash spilled material into the nearest catch basin",
+    "c": "rely on the municipal storm sewer treatment plant to remove chemicals from site runoff",
+    "d": "cover outdoor chemical storage away from storm drains and keep spill kits beside it"
+   },
+   "explanation": "Runoff pollution prevention keeps chemicals out of stormwater at the source: store them covered and away from drains, with spill-response kits right beside the storage so a spill is contained before it reaches a catch basin.",
+   "distractorExplanations": {
+    "a": "Uncovered storage beside a catch basin lets rain and melt carry chemicals straight into the storm system.",
+    "b": "Covering storage helps, but washing spills into a catch basin sends pollutants directly to the storm system.",
+    "c": "Many storm sewers discharge untreated to waterways; pollution prevention keeps chemicals out of runoff on site."
+   }
+  },
+  "leed-ap-om-readiness-check-location-sites-024": {
+   "explanation": "LEED O+M evaluates documented, ongoing performance. For runoff pollution prevention at a municipal building, the team must implement the operational practice and retain traceable evidence. The practice behind those records: cover outdoor chemical storage away from storm drains and keep spill kits beside it."
+  },
+  "leed-ap-om-readiness-check-location-sites-025": {
+   "options": {
+    "a": "store deicing chemicals uncovered beside a catch basin for quick winter access, and maintain the supplier's delivery tickets as the site-management records",
+    "b": "wash spilled chemicals into the nearest storm drain with a hose, and maintain a log of the cleanup dates as the inspection record",
+    "c": "cover chemical storage away from storm drains, keep spill kits beside it, and maintain site-management procedures and inspection records",
+    "d": "rely on the municipal treatment plant to handle site runoff, and maintain the city's stormwater permit as the building's site-management procedure"
+   },
+   "explanation": "LEED O+M evaluates documented, ongoing performance. Covering chemical storage away from drains with spill kits at hand prevents runoff pollution, and written procedures plus inspection records keep that practice provable throughout the performance period.",
+   "distractorExplanations": {
+    "a": "Uncovered storage next to a catch basin lets chemicals wash into the storm system; delivery tickets are not procedures.",
+    "b": "Hosing spills into a drain causes the runoff pollution the practice is meant to prevent, so the cleanup log proves a failure.",
+    "d": "Storm runoff often bypasses treatment, and the city permit is not a site-management procedure for this building."
+   }
+  }
+ },
+ "well-ap-readiness-check": {
+  "well-ap-readiness-check-air-water-nourishment-031": {
+   "prompt": "Why is a dedicated, hygienic lactation room relevant to the WELL v2 Community concept (C09 New Mother Support)?",
+   "explanation": "WELL v2 places lactation support in the Community concept (C09 New Mother Support): a private, hygienic, non-restroom room with seating, power and milk storage lets nursing parents breastfeed or express milk at work."
+  },
+  "well-ap-readiness-check-air-water-nourishment-050": {
+   "explanation": "WELL v2 C09 New Mother Support (Community concept) pairs reasonable break time with a private, hygienic, non-restroom lactation space so employees can express milk safely; the policy complements the physical room design."
+  },
+  "well-ap-readiness-check-mind-community-004": {
+   "prompt": "Which employer program best exemplifies WELL v2 Civic Engagement (C11) volunteering strategies?",
+   "explanation": "WELL v2 moved v1 'altruism' into the Community concept as C11 Civic Engagement, which rewards paid volunteer time and organized community service opportunities that connect people to purposeful prosocial activity.",
+   "distractorExplanations": {
+    "a": "Limiting the program to senior staff excludes most employees, and no volunteering component is offered at all.",
+    "b": "Internal team-building builds collaboration but does not involve giving time or service to the wider community.",
+    "d": "Making volunteering mandatory and tying it to reviews makes it coercive, which undermines the well-being benefit."
+   }
+  },
+  "well-ap-readiness-check-mind-community-032": {
+   "prompt": "Which volunteering program design best aligns with WELL v2 Civic Engagement (C11) and research on prosocial well-being?",
+   "explanation": "Voluntary, team-based community projects with employee choice of cause build intrinsic motivation and social connection, the well-being benefits WELL v2 targets with C11 Civic Engagement in the Community concept.",
+   "distractorExplanations": {
+    "a": "Choosing one charity for everyone removes autonomy, which research links to the well-being benefit of prosocial activity.",
+    "b": "Donation matching helps causes but lacks the social connection and active contribution that drive prosocial well-being.",
+    "d": "Tying volunteering to reviews and bonuses makes it coercive, which undermines the intrinsic motivation behind the benefit."
+   }
+  },
+  "well-ap-readiness-check-mind-community-044": {
+   "prompt": "A corporate campus donates skilled volunteer hours to build affordable housing with a local nonprofit. Which WELL v2 Community feature is most directly demonstrated?",
+   "options": {
+    "a": "Health and wellness promotion through a fitness challenge",
+    "b": "Responsible labor practices through contractor wage audits",
+    "c": "Civic engagement through community volunteering",
+    "d": "Housing equality through affordable unit set-asides on site"
+   },
+   "explanation": "Skills-based volunteering for a community nonprofit is C11 Civic Engagement in the WELL v2 Community concept (the successor to v1 Mind 'altruism'); it connects employees to purposeful prosocial activity.",
+   "distractorExplanations": {
+    "a": "A fitness challenge is health and wellness promotion; donating skilled volunteer hours is engagement with the wider community.",
+    "b": "Wage audits address labor practices in the supply chain, not employees volunteering with a housing nonprofit.",
+    "d": "Housing equity concerns affordable units within the project itself; volunteering off site for a nonprofit is civic engagement."
+   }
+  },
+  "well-ap-readiness-check-light-movement-thermal-045": {
+   "prompt": "Which metric flags floor area at risk of glare and overheating because it receives more than 1,000 lux of direct beam light for over 250 occupied hours a year?",
+   "options": {
+    "a": "Daylight factor measured at a single point under a CIE overcast sky at the work plane",
+    "b": "Annual sunlight exposure (ASE), reported alongside spatial daylight autonomy",
+    "c": "Unified Glare Rating calculated for each luminaire in the occupied zone across the working year",
+    "d": "Equivalent Melanopic Lux measured at the eye at 9 a.m. on a set date each season"
+   },
+   "explanation": "ASE (ASE1000,250) is the share of floor area receiving over 1,000 lux of direct sunlight for more than 250 occupied hours a year; it is paired with sDA so a design gets enough daylight without excessive glare or overheating.",
+   "distractorExplanations": {
+    "a": "Daylight factor is a static point ratio under one overcast sky, so it cannot count annual hours of direct sun.",
+    "c": "UGR rates discomfort glare from electric luminaires and does not track hours of direct sunlight over the year.",
+    "d": "EML is a point-in-time circadian measure at the eye, not an annual cumulative direct-sunlight metric."
+   }
+  },
+  "well-ap-readiness-check-well-certification-portfolio-024": {
+   "prompt": "A project registered under WELL v1 years ago is renovating. The team wants to certify under the current version of the standard. They should",
+   "explanation": "WELL v2 is the current version and v1 projects may transition to it. v1 also used preconditions and optimizations, but v2 adds a points-based scorecard with flexible optimizations, so the team picks the v2 scorecard that fits the renovation scope."
+  }
+ },
+ "bms-bas-readiness-check": {
+  "bms-bas-readiness-check-integration-commissioning-001": {
+   "options": {
+    "a": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations",
+    "b": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "c": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
+   "distractorExplanations": {
+    "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-003": {
+   "options": {
+    "a": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "b": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "c": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
+   "distractorExplanations": {
+    "a": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "b": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-005": {
+   "options": {
+    "a": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations",
+    "b": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "c": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
+   "distractorExplanations": {
+    "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-007": {
+   "options": {
+    "a": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "b": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "c": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
+   "distractorExplanations": {
+    "a": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "b": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-009": {
+   "options": {
+    "a": "I/O mapping, scaling, command authority, and alarm routing match the sequence of operations",
+    "b": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "c": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "explanation": "Point-to-point checkout of a critical point proves the I/O is mapped to the right terminal, scaled to engineering units, commanded by the correct authority, and alarms routed as the sequence of operations requires.",
+   "distractorExplanations": {
+    "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  }
+ }
+}

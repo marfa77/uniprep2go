@@ -7,11 +7,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Form 1065"
+        "text": "Form 1040"
       },
       {
         "id": "b",
-        "text": "Form 1040"
+        "text": "Form 1065"
       },
       {
         "id": "c",
@@ -22,10 +22,10 @@
         "text": "Form 990"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Individuals generally file Form 1040 (with schedules as needed)",
     "distractorExplanations": {
-      "a": "Partnership return.",
+      "b": "Partnership return.",
       "c": "C corporation.",
       "d": "Exempt organization."
     },
@@ -40,27 +40,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ordinary income rates only,"
+        "text": "Ordinary income rates, the same brackets that apply to wages"
       },
       {
         "id": "b",
-        "text": "Preferential capital gains rates (0%/15%/20% tiers, subject to rules)"
+        "text": "Preferential capital gains rates (0%/15%/20% tiers)"
       },
       {
         "id": "c",
-        "text": "A flat 37% regardless of income"
+        "text": "The 28% collectibles rate that applies to all long-term gains"
       },
       {
         "id": "d",
-        "text": "Payroll tax rates"
+        "text": "Ordinary rates plus the 3.8% NIIT for every taxpayer"
       }
     ],
     "correctOptionId": "b",
     "explanation": "LTCG/qualified dividends use preferential rate schedules when requirements are met.",
     "distractorExplanations": {
-      "a": "Not always ordinary.",
-      "c": "Not flat 37% for these.",
-      "d": "FICA is separate."
+      "a": "Qualified dividends and LTCG get preferential rates; ordinary brackets apply to nonqualified dividends and short-term gains.",
+      "c": "28% is the maximum rate for collectibles and unrecaptured-type special gains, not the general rate for qualified dividends and LTCG.",
+      "d": "NIIT is a surtax that applies above MAGI thresholds; it does not convert qualified dividends to ordinary-rate income."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -73,27 +73,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Is claimed instead of itemizing Schedule A deductions when it's larger/beneficial"
+        "text": "Is the same as the personal exemption suspended by TCJA"
       },
       {
         "id": "b",
-        "text": "Is the same as the personal exemption (pre-TCJA reinstatement myth)"
+        "text": "Is claimed in addition to itemized Schedule A deductions"
       },
       {
         "id": "c",
-        "text": "Can never be used by married couples"
+        "text": "Is claimed instead of itemizing Schedule A deductions"
       },
       {
         "id": "d",
-        "text": "Applies only to corporations"
+        "text": "Is available to a spouse filing MFS when the other itemizes"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Taxpayers take the greater of standard deduction or itemized deductions.",
     "distractorExplanations": {
-      "b": "Personal exemptions were suspended under TCJA for years.",
-      "c": "MFJ has a standard deduction.",
-      "d": "Individuals."
+      "a": "The personal exemption was a separate per-person amount reduced to $0 by TCJA; the standard deduction is a different allowance.",
+      "b": "Taxpayers choose the greater of the two; the standard deduction cannot be stacked on top of itemized deductions.",
+      "d": "If one MFS spouse itemizes, the other spouse's standard deduction is zero, so that spouse must itemize as well."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -106,27 +106,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Their employer's fiscal year"
+        "text": "Marital status on the first day of the tax year (January 1)"
       },
       {
         "id": "b",
-        "text": "Marital status and household situation as of year-end (with specific rules)"
+        "text": "The W-4 withholding status chosen at work"
       },
       {
         "id": "c",
-        "text": "Whether they own municipal bonds"
+        "text": "The status shown on the prior year's return unless changed"
       },
       {
         "id": "d",
-        "text": "Their state only, never federal rules"
+        "text": "Marital status and household situation as of year-end"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Filing status follows Code rules on marriage/dependents/household as of Dec 31 (with nuances)",
     "distractorExplanations": {
-      "a": "Irrelevant.",
-      "c": "Investment choice.",
-      "d": "Federal status is federal."
+      "a": "Marital status is determined on the last day of the tax year (December 31), not on January 1.",
+      "b": "The Form W-4 status only sets payroll withholding; it does not determine the filing status on Form 1040.",
+      "c": "Filing status is redetermined each year from current facts; the prior-year status does not carry over by default."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Charitable gifts only via Schedule A"
+        "text": "Deductible IRA contribution or student loan interest"
       },
       {
         "id": "b",
-        "text": "Deductible IRA contribution or student loan interest (when eligible)"
+        "text": "Home mortgage interest on a primary residence"
       },
       {
         "id": "c",
-        "text": "State income tax only on Schedule A"
+        "text": "State and local income taxes paid, up to the SALT cap"
       },
       {
         "id": "d",
-        "text": "Home mortgage interest only on Schedule A"
+        "text": "Medical expenses exceeding 7.5% of AGI"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Certain adjustments reduce AGI before itemizing/standard deduction.",
     "distractorExplanations": {
-      "a": "Charity is typically itemized (with limited above-the-line exceptions in some years).",
-      "c": "Itemized.",
-      "d": "Itemized."
+      "b": "Mortgage interest is an itemized deduction on Schedule A, so it is taken after AGI rather than reducing it.",
+      "c": "SALT is an itemized deduction on Schedule A subject to the cap, not an adjustment to income above the line.",
+      "d": "Medical expenses above the 7.5%-of-AGI floor are itemized; they cannot be an adjustment used to compute AGI itself."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -172,27 +172,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Qualifying children meeting age/relationship/support/residency tests (subject to phaseouts)"
+        "text": "Any dependent of any age, including qualifying relatives"
       },
       {
         "id": "b",
-        "text": "Any roommate over age 40"
+        "text": "Qualifying children meeting age/relationship/support/residency tests"
       },
       {
         "id": "c",
-        "text": "Only nonresident aliens with no SSN ever"
+        "text": "Children under 19, or under 24 if full-time students"
       },
       {
         "id": "d",
-        "text": "C corporations"
+        "text": "Dependent care costs for children under 13 while both parents work or look for work"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "CTC has specific qualifying child and identification requirements.",
     "distractorExplanations": {
-      "b": "Doesn't qualify.",
-      "c": "Identification/SSN rules apply; residency matters.",
-      "d": "Individual credit."
+      "a": "Dependents who are not qualifying children under 17 get the $500 credit for other dependents, not the Child Tax Credit.",
+      "c": "Under-19/under-24-student is the dependency age test; the Child Tax Credit requires the child to be under 17 at year-end.",
+      "d": "Care costs for children under 13 belong to the Child and Dependent Care Credit on Form 2441, a separate credit."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -205,27 +205,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only federal income tax"
+        "text": "Federal income tax withheld from a sole proprietor's draws"
       },
       {
         "id": "b",
-        "text": "Social Security and Medicare taxes on net earnings from self-employment"
+        "text": "Social Security tax only, with Medicare covered by Part B premiums later"
       },
       {
         "id": "c",
-        "text": "Only property taxes"
+        "text": "Social Security and Medicare taxes on net earnings from self-employment"
       },
       {
         "id": "d",
-        "text": "Only AMT"
+        "text": "FUTA unemployment tax on the owner's own business profits"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "SE tax approximates employee+employer FICA on SE income.",
     "distractorExplanations": {
-      "a": "Income tax is separate.",
-      "c": "Local/property.",
-      "d": "AMT is different."
+      "a": "SE tax is not income tax, and owner draws are not wages, so nothing is withheld from them for income tax.",
+      "b": "SE tax includes both the 12.4% Social Security and 2.9% Medicare portions; Part B premiums are a separate cost.",
+      "d": "FUTA is an employer tax on employee wages; sole proprietors do not pay FUTA on their own net earnings."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -238,27 +238,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Current market value every day"
+        "text": "Fair market value at year-end, marked to market annually"
       },
       {
         "id": "b",
-        "text": "Cost (including commissions) adjusted for certain events"
+        "text": "The company's book value per share on the purchase date"
       },
       {
         "id": "c",
-        "text": "Always zero"
+        "text": "Cost excluding commissions, which are deducted separately"
       },
       {
         "id": "d",
-        "text": "The company's book value"
+        "text": "Cost (including commissions) adjusted for certain events"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Cost basis starts with purchase price plus acquisition costs, then adjusts.",
     "distractorExplanations": {
-      "a": "Mark-to-market not default for most investors.",
-      "c": "False.",
-      "d": "Not investor basis."
+      "a": "Mark-to-market applies to §475 traders who elect it; ordinary investors keep a cost basis in purchased stock.",
+      "b": "Book value per share is a corporate accounting figure; an investor's basis is what the investor actually paid.",
+      "c": "Purchase commissions are added to basis; they are not a separate deduction, especially with miscellaneous deductions suspended."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -271,27 +271,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Never offset capital gains"
+        "text": "Offset capital gains and then up to $3,000 of ordinary income per year"
       },
       {
         "id": "b",
-        "text": "Offset capital gains and then up to $3,000 of ordinary income per year ($1,500 MFS), with carryforward"
+        "text": "Offset gains plus $3,000 of ordinary income, then carry back three years"
       },
       {
         "id": "c",
-        "text": "Offset unlimited ordinary income in the year realized"
+        "text": "Offset capital gains and then up to $5,000 of ordinary income per year"
       },
       {
         "id": "d",
-        "text": "Only be used against municipal bond interest"
+        "text": "Offset only long-term gains if the loss was long-term"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Net capital loss deduction against ordinary income is limited annually; excess carries forward.",
+    "correctOptionId": "a",
+    "explanation": "Net capital loss deduction against ordinary income is limited annually; excess carries forward. Net losses offset gains first, then up to $3,000 ($1,500 MFS) of ordinary income per year, with the excess carried forward.",
     "distractorExplanations": {
-      "a": "Can offset gains.",
-      "c": "Limited to $3k/$1.5k.",
-      "d": "False."
+      "b": "Individual capital losses carry forward indefinitely; the 3-year carryback applies to C corporation capital losses.",
+      "c": "The annual ordinary-income offset is $3,000 ($1,500 MFS), not $5,000; the excess carries forward.",
+      "d": "After netting within each holding-period group, a net long-term loss can offset net short-term gain and vice versa."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A child's unearned income above thresholds, taxed at parents' rates/under special rules"
+        "text": "A child's earned wages above the standard deduction, taxed at parents' rates"
       },
       {
         "id": "b",
-        "text": "Only wages from a paper route"
+        "text": "A child's unearned income above thresholds, taxed at parents' rates"
       },
       {
         "id": "c",
-        "text": "Corporate AMT"
+        "text": "Unearned income of any dependent, including adults over age 24"
       },
       {
         "id": "d",
-        "text": "Estate tax portability"
+        "text": "Gifts a child receives from parents above the annual exclusion"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "Kiddie tax targets unearned income of certain children.",
     "distractorExplanations": {
-      "b": "Earned income treated differently.",
-      "c": "Wrong regime.",
-      "d": "Estate topic."
+      "a": "Kiddie tax applies to unearned income such as interest, dividends, and gains; a child's wages are taxed at the child's own rates.",
+      "c": "Kiddie tax covers children under 18, or under 19/under 24 if full-time students with limited earned income, not older dependents.",
+      "d": "Gifts are not income to the child; amounts above the annual exclusion are a gift tax reporting issue for the donor."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -337,27 +337,27 @@
     "options": [
       {
         "id": "a",
-        "text": "As an above-the-line educator expense deduction up to the annual limit"
+        "text": "As an above-the-line deduction with no annual dollar limit"
       },
       {
         "id": "b",
-        "text": "Only as a business bad debt"
+        "text": "As an itemized deduction subject to the 2%-of-AGI floor"
       },
       {
         "id": "c",
-        "text": "Never, after TCJA for all teachers"
+        "text": "As an above-the-line educator expense deduction up to the annual limit"
       },
       {
         "id": "d",
-        "text": "Only on Form 1120S"
+        "text": "As a nonrefundable education credit on Form 8863 for classroom supplies"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Educators get a limited above-the-line deduction for qualified expenses.",
     "distractorExplanations": {
-      "b": "Wrong category.",
-      "c": "The educator expense deduction remains (itemized misc. 2% were limited).",
-      "d": "S corp form."
+      "a": "The educator expense deduction is capped at $300 per eligible educator ($600 if both spouses qualify).",
+      "b": "The 2%-floor miscellaneous itemized deduction is suspended; eligible educators use the separate above-the-line deduction.",
+      "d": "Form 8863 is for the AOTC and Lifetime Learning Credit; classroom supplies use the educator expense adjustment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -370,27 +370,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Provisional income / combined income thresholds"
+        "text": "Earned income above the annual earnings-test limit"
       },
       {
         "id": "b",
-        "text": "Only the taxpayer's age at retirement"
+        "text": "The taxpayer's age when benefits were first claimed"
       },
       {
         "id": "c",
-        "text": "Whether they filed Schedule C ever"
+        "text": "Adjusted gross income alone, excluding tax-exempt interest"
       },
       {
         "id": "d",
-        "text": "A flat 100% inclusion"
+        "text": "Provisional income / combined income thresholds"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Up to 85% of SS may be taxable based on combined income formulas.",
     "distractorExplanations": {
-      "b": "Age alone doesn't set inclusion %.",
-      "c": "Not the test.",
-      "d": "Not always 100%."
+      "a": "The SSA earnings test can withhold benefits before full retirement age; it does not set the taxable percentage.",
+      "b": "Claiming age changes the benefit amount, but the taxable portion depends on combined income versus the base amounts.",
+      "c": "Combined income adds half of benefits and tax-exempt interest to other income; AGI by itself is not the test."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No tax ever"
-      },
-      {
-        "id": "b",
         "text": "Ordinary income tax plus 10% additional tax unless an exception applies"
       },
       {
+        "id": "b",
+        "text": "Long-term capital gains rates plus a 10% additional tax"
+      },
+      {
         "id": "c",
-        "text": "Only capital gains rates"
+        "text": "Ordinary income tax plus a 25% additional tax unless an exception applies"
       },
       {
         "id": "d",
-        "text": "Self-employment tax on the full distribution"
+        "text": "A 20% additional tax but no income tax if rolled within 90 days"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Early distributions are taxable and may face the 10% additional tax with listed exceptions.",
     "distractorExplanations": {
-      "a": "Generally taxable.",
-      "c": "Ordinary rates typically.",
-      "d": "Not SE tax on IRA distributions."
+      "b": "Traditional IRA distributions are ordinary income; capital gains rates do not apply to IRA payouts.",
+      "c": "25% is the SIMPLE IRA rate in the first two years of participation; the general early-distribution tax is 10%.",
+      "d": "Rollovers must be completed within 60 days, and a completed rollover avoids both income tax and the 10% additional tax."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -436,27 +436,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Qualified education expenses for an eligible student in the first four years of postsecondary education (subject to limits/phaseouts)"
+        "text": "Qualified expenses for graduate or professional degree courses"
       },
       {
         "id": "b",
-        "text": "Graduate school only"
+        "text": "Qualified education expenses for the first four years of postsecondary education"
       },
       {
         "id": "c",
-        "text": "Kindergarten tuition"
+        "text": "Qualified education expenses for any year of postsecondary study, without a year limit"
       },
       {
         "id": "d",
-        "text": "Gym memberships"
+        "text": "Tuition for K-12 private schools paid from a 529 plan"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "AOTC targets undergraduate years with specific expense and phaseout rules.",
     "distractorExplanations": {
-      "b": "Lifetime Learning is more flexible for grad; AOTC is undergrad-focused.",
-      "c": "K-12 not AOTC.",
-      "d": "Not qualified."
+      "a": "Graduate courses fall under the Lifetime Learning Credit; the AOTC covers the first four years of undergraduate study.",
+      "c": "The AOTC can be claimed for no more than four tax years per student; it is the Lifetime Learning Credit that has no year limit.",
+      "d": "K-12 tuition can be a qualified 529 distribution but is not an AOTC expense; the AOTC needs postsecondary enrollment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only on April 15 for the entire year"
+        "text": "In one payment with the return by the April filing deadline"
       },
       {
         "id": "b",
-        "text": "In quarterly installments (Apr/Jun/Sep/Jan dates, with nuances)"
+        "text": "In equal quarterly installments in Mar/Jun/Sep/Dec"
       },
       {
         "id": "c",
-        "text": "Never if self-employed"
+        "text": "In quarterly installments (Apr/Jun/Sep/Jan dates)"
       },
       {
         "id": "d",
-        "text": "Only when filing an extension"
+        "text": "Monthly by the 15th, matching the payroll deposit schedule"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Pay-as-you-go via withholding/estimates; quarterly due dates apply.",
     "distractorExplanations": {
-      "a": "Annualizing/quarterly needed for many.",
-      "c": "SE often must estimate.",
-      "d": "Extension is for filing, not payment."
+      "a": "Paying everything with the return can trigger the underpayment penalty; estimates are due in four installments.",
+      "b": "Those are calendar-quarter ends; individual estimates are due April 15, June 15, September 15, and January 15.",
+      "d": "Monthly deposit schedules apply to employment taxes withheld by employers, not to individual estimated tax."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -502,27 +502,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Form 1040"
-      },
-      {
-        "id": "b",
         "text": "Form 1065 and issues Schedule K-1s to partners"
       },
       {
+        "id": "b",
+        "text": "Form 1120-S and issues Schedule K-1s to partners"
+      },
+      {
         "id": "c",
-        "text": "Form 1120-C"
+        "text": "Form 1041 and issues Schedule K-1s to beneficiaries"
       },
       {
         "id": "d",
-        "text": "Form 706"
+        "text": "Form 1099-NEC to each partner for their share"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Partnerships are pass-through entities filing 1065 with K-1s.",
     "distractorExplanations": {
-      "a": "Partners report on 1040.",
-      "c": "C corp.",
-      "d": "Estate tax."
+      "b": "Form 1120-S is the S corporation return; partnerships file Form 1065, though both entity types issue K-1s.",
+      "c": "Form 1041 is the estate and trust income tax return; its K-1s go to beneficiaries, not to partners.",
+      "d": "Partners receive Schedule K-1, not Form 1099-NEC; a partner is not a nonemployee contractor of the partnership."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,27 +535,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Is taxed at the entity at progressive corporate rates"
+        "text": "Is taxed at the flat 21% corporate rate"
       },
       {
         "id": "b",
-        "text": "Passes through to shareholders (with basis/AAA and employment tax nuances for wages)"
+        "text": "Passes through to shareholders"
       },
       {
         "id": "c",
-        "text": "Is never reported to shareholders"
+        "text": "Is taxed twice, at entity and shareholder levels"
       },
       {
         "id": "d",
-        "text": "Is exempt from all tax"
+        "text": "Is subject to SE tax for each shareholder"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "S corps are pass-throughs; reasonable compensation rules matter for shareholder-employees.",
+    "explanation": "S corps are pass-throughs; reasonable compensation rules matter for shareholder-employees. Basis, AAA, and reasonable-compensation rules for shareholder-employee wages still apply.",
     "distractorExplanations": {
-      "a": "C corp model.",
-      "c": "K-1s report.",
-      "d": "False."
+      "a": "The flat 21% rate applies to C corporations; S corporations generally pay no entity-level income tax.",
+      "c": "Double taxation is the C corporation model; S corporation income is taxed once, at the shareholder level.",
+      "d": "S corporation pass-through income is not self-employment income; shareholder wages bear FICA instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -568,27 +568,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Form 1120 and pays entity-level tax"
+        "text": "Form 1120-H and pays a flat 30% rate"
       },
       {
         "id": "b",
-        "text": "Only Form 1065"
+        "text": "Form 1120-S and pays entity-level tax"
       },
       {
         "id": "c",
-        "text": "Only Schedule C"
+        "text": "Form 1065 and passes income to owners"
       },
       {
         "id": "d",
-        "text": "Form 1041"
+        "text": "Form 1120 and pays entity-level tax"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "C corps are separate taxable entities on Form 1120.",
     "distractorExplanations": {
-      "b": "Partnership.",
-      "c": "Sole prop on 1040.",
-      "d": "Trust/estate income."
+      "a": "Form 1120-H is the homeowners association election return; ordinary C corporations file Form 1120 at 21%.",
+      "b": "Form 1120-S is for S corporations, which generally pass income through rather than paying entity-level tax.",
+      "c": "Form 1065 is the partnership return; C corporations file Form 1120 and pay tax at the entity level."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,7 +601,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$80,000 deduction, creating a $30,000 net operating loss"
+        "text": "$50,000 deduction; $30,000 carries forward to future years"
       },
       {
         "id": "b",
@@ -613,15 +613,15 @@
       },
       {
         "id": "d",
-        "text": "$50,000 deduction; $30,000 carries forward to future years"
+        "text": "$80,000 deduction, creating a $30,000 net operating loss"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "Section 179 is limited to taxable income from the taxpayer's active trades or businesses, including wages. Maya's limit is her $50,000 of business income, so she deducts $50,000; the disallowed $30,000 carries forward indefinitely, subject to the same limit in later years.",
     "distractorExplanations": {
-      "a": "Section 179 cannot create or increase a loss because the business income limit caps it; bonus depreciation, by contrast, can create a loss.",
       "b": "The excess is not lost; Section 179 amounts disallowed by the income limit carry forward to later tax years.",
-      "c": "Staying under the annual dollar limit is necessary but not enough; the separate business income limit still applies."
+      "c": "Staying under the annual dollar limit is necessary but not enough; the separate business income limit still applies.",
+      "d": "Section 179 cannot create or increase a loss because the business income limit caps it; bonus depreciation, by contrast, can create a loss."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Applies to specified service trades/businesses without limit for all incomes"
+        "text": "Allows SSTB owners the full 20% deduction at any income level"
       },
       {
         "id": "b",
-        "text": "May allow up to 20% deduction of QBI for eligible pass-throughs, subject to thresholds/limitations"
+        "text": "May allow up to 20% deduction of QBI for eligible pass-throughs"
       },
       {
         "id": "c",
-        "text": "Applies only to C corporations"
+        "text": "Allows C corporations a 20% deduction against the 21% rate"
       },
       {
         "id": "d",
-        "text": "Is a payroll tax credit"
+        "text": "Is a 20% credit against self-employment tax for sole proprietors"
       }
     ],
     "correctOptionId": "b",
     "explanation": "199A provides a potential 20% QBI deduction with wage/UBIA and SSTB limitations.",
     "distractorExplanations": {
-      "a": "SSTB limitations apply above thresholds.",
-      "c": "C corps don't get 199A.",
-      "d": "Income tax deduction."
+      "a": "Above the taxable-income threshold, an SSTB owner's deduction phases out and is eliminated at the top of the range.",
+      "c": "§199A is for individuals, trusts, and estates with pass-through income; C corporations cannot claim it.",
+      "d": "The QBI deduction reduces taxable income; it does not reduce self-employment tax and is not a credit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "MACRS methods/lives under the Code"
+        "text": "Personal residence percentage"
       },
       {
         "id": "b",
@@ -675,18 +675,18 @@
       },
       {
         "id": "c",
-        "text": "Personal residence percentage"
+        "text": "MACRS methods/lives under the Code"
       },
       {
         "id": "d",
         "text": "Municipal bond amortization"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "MACRS is the primary federal depreciation system for most tangible property.",
     "distractorExplanations": {
+      "a": "Home office has separate rules.",
       "b": "Not the method.",
-      "c": "Home office has separate rules.",
       "d": "Bond premium/tax-exempt rules differ."
     },
     "difficulty": "easy",
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Schedule C (Form 1040)"
+        "text": "Form 1065 with one partner"
       },
       {
         "id": "b",
-        "text": "Form 1120S"
+        "text": "Schedule E (Form 1040)"
       },
       {
         "id": "c",
-        "text": "Form 1065"
+        "text": "Schedule SE (Form 1040)"
       },
       {
         "id": "d",
-        "text": "Form 990-T"
+        "text": "Schedule C (Form 1040)"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Sole props use Schedule C; SE tax via Schedule SE.",
     "distractorExplanations": {
-      "b": "S corp.",
-      "c": "Partnership.",
-      "d": "Exempt org UBTI."
+      "a": "A partnership requires at least two owners; a one-owner unincorporated business reports on Schedule C.",
+      "b": "Schedule E reports rents, royalties, and pass-through K-1 income, not an active sole proprietorship's profit.",
+      "c": "Schedule SE computes self-employment tax on the profit; the profit itself is figured on Schedule C."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "100% deductible always after TCJA"
+        "text": "Subject to 50% limitation in many cases"
       },
       {
         "id": "b",
-        "text": "Subject to 50% limitation in many cases (with exceptions)"
+        "text": "100% deductible when provided by a restaurant"
       },
       {
         "id": "c",
-        "text": "Never deductible"
+        "text": "Subject to an 80% limitation for most taxpayers"
       },
       {
         "id": "d",
-        "text": "Deductible only if lavish"
+        "text": "Fully nondeductible, like entertainment"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Business meals are often 50% deductible when ordinary/necessary and substantiated; rules have varied.",
     "distractorExplanations": {
-      "a": "Not always 100%.",
-      "c": "Often partially deductible.",
-      "d": "Lavish can be disallowed."
+      "b": "The temporary 100% restaurant-meal deduction expired after 2022; business meals are back to the 50% limit.",
+      "c": "80% applies to DOT hours-of-service workers; the general business-meal limit is 50%.",
+      "d": "TCJA disallowed entertainment, but business meals with a business purpose remain 50% deductible."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -766,27 +766,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A disregarded entity taxed as a sole proprietorship (unless corporate election)"
+        "text": "A C corporation unless it files Form 2553 for S status"
       },
       {
         "id": "b",
-        "text": "Always a C corporation"
+        "text": "A disregarded entity taxed as a sole proprietorship"
       },
       {
         "id": "c",
-        "text": "Always a partnership"
+        "text": "A partnership filing Form 1065 with one K-1"
       },
       {
         "id": "d",
-        "text": "Tax-exempt automatically"
+        "text": "An S corporation by default for federal tax"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Single-member LLCs are disregarded by default; Form 8832/2553 elections can change classification.",
+    "correctOptionId": "b",
+    "explanation": "Single-member LLCs are disregarded by default; Form 8832/2553 elections can change classification. A Form 8832 or 2553 election can change this default classification.",
     "distractorExplanations": {
-      "b": "Only if elected/default corporate in rare cases.",
-      "c": "Needs 2+ members for partnership default.",
-      "d": "False."
+      "a": "Corporate status is not the default for a single-member LLC; it requires an election on Form 8832 or 2553.",
+      "c": "Default partnership classification requires two or more members; a single-member LLC is disregarded.",
+      "d": "S status requires a timely Form 2553 election; it is not the default classification for any LLC."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -799,27 +799,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Optional if the business is profitable"
+        "text": "Required quarterly when each Form 941 is filed, for every employer"
       },
       {
         "id": "b",
-        "text": "Required on IRS schedules (monthly/semiweekly, etc.) based on lookback"
+        "text": "Required monthly or semiweekly based on the current quarter's payroll amounts"
       },
       {
         "id": "c",
-        "text": "Paid only with the annual Form 1040"
+        "text": "Required on IRS schedules (monthly/semiweekly, etc.) based on lookback"
       },
       {
         "id": "d",
-        "text": "The same as estimated taxes for investors"
+        "text": "Due annually with Form 940 along with the FUTA return"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Employment tax deposits follow deposit schedules; Forms 941/940 report.",
     "distractorExplanations": {
-      "a": "Not optional.",
-      "c": "Employment taxes have their own returns.",
-      "d": "Different regime."
+      "a": "Paying with Form 941 is allowed for small quarterly liabilities under $2,500; most employers deposit monthly or semiweekly.",
+      "b": "The deposit schedule is set by the lookback period (12 months ending the prior June 30), not current-quarter payroll.",
+      "d": "Form 940 reports FUTA; withheld income tax and FICA are deposited on the monthly or semiweekly schedule."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Limit current deductibility of losses"
+        "text": "Eliminate estimated taxes"
       },
       {
         "id": "b",
@@ -844,15 +844,15 @@
       },
       {
         "id": "d",
-        "text": "Eliminate estimated taxes"
+        "text": "Limit current deductibility of losses"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "§465/§469 can defer loss utilization until at-risk/passive tests are met.",
     "distractorExplanations": {
+      "a": "False.",
       "b": "Unrelated.",
-      "c": "Election needed.",
-      "d": "False."
+      "c": "Election needed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,27 +865,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited amounts"
+        "text": "A percentage of taxable income (commonly 10%)"
       },
       {
         "id": "b",
-        "text": "A percentage of taxable income (commonly 10% before special rules/elections)"
+        "text": "60% of AGI, the same limit as for individuals"
       },
       {
         "id": "c",
-        "text": "Only $300"
+        "text": "A percentage of gross receipts (commonly 25%)"
       },
       {
         "id": "d",
-        "text": "Zero if it has NOLs ever"
+        "text": "A percentage of book income (commonly 5%)"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Corporate charity deductions face taxable income percentage limits (with carryovers)",
     "distractorExplanations": {
-      "a": "Limited.",
-      "c": "Individual above-the-line concepts differ.",
-      "d": "NOLs interact but don't auto-zero charity."
+      "b": "60% of AGI is the individual cash-to-public-charity limit; corporations use a taxable-income percentage.",
+      "c": "The corporate limit is based on taxable income, not gross receipts; 25% applies to certain food-inventory gifts.",
+      "d": "The limit is computed on taxable income with adjustments, not book income, and the general ceiling is 10%."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Businesses with inventory (gross receipts minus COGS = gross profit)"
+        "text": "Service firms with no inventory"
       },
       {
         "id": "b",
-        "text": "W-2 employees with no side activity"
+        "text": "Businesses with inventory"
       },
       {
         "id": "c",
-        "text": "Only municipal bond investors"
+        "text": "Landlords renting residential units"
       },
       {
         "id": "d",
-        "text": "Estate tax portability elections"
+        "text": "Employees with unreimbursed costs"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Inventory businesses compute COGS under accounting/tax inventory methods.",
+    "correctOptionId": "b",
+    "explanation": "Inventory businesses compute COGS under accounting/tax inventory methods. Gross receipts minus COGS equals gross profit.",
     "distractorExplanations": {
-      "b": "No COGS typically.",
-      "c": "Investments.",
-      "d": "Estate."
+      "a": "Service businesses without merchandise generally have no COGS; their costs are ordinary operating expenses.",
+      "c": "Rental property costs are depreciation and operating expenses on Schedule E, not cost of goods sold.",
+      "d": "Employees have no COGS; unreimbursed employee expenses are suspended miscellaneous itemized deductions."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,27 +931,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Wages are subject to employment taxes while distributions generally are not"
+        "text": "Wages reduce the shareholder's stock basis while distributions do not"
       },
       {
         "id": "b",
-        "text": "Distributions are always subject to SE tax"
+        "text": "Distributions are subject to SE tax unless wages are paid first"
       },
       {
         "id": "c",
-        "text": "S corps cannot pay wages"
+        "text": "Wages are subject to employment taxes while distributions generally are not"
       },
       {
         "id": "d",
-        "text": "It increases the corporate AMT credit"
+        "text": "Wages paid to shareholders are not deductible by the corporation"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "IRS expects reasonable wages before profit distributions to avoid employment tax avoidance.",
     "distractorExplanations": {
-      "b": "Distributions generally not SE tax.",
-      "c": "They can/should pay wages when working.",
-      "d": "Wrong focus."
+      "a": "Distributions reduce stock basis; wages are a deductible corporate expense and do not reduce shareholder basis.",
+      "b": "S corporation distributions are not subject to SE tax; the risk is recharacterization of distributions as wages.",
+      "d": "Reasonable wages are deductible by the S corporation; the scrutiny concerns avoided FICA on disguised wages."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Fully deductible in year one without limit"
+        "text": "Deductible up to $50,000 in year one, with the rest amortized over 180 months"
       },
       {
         "id": "b",
-        "text": "Subject to capitalization with limited immediate expensing and amortization rules"
+        "text": "Nondeductible until the business is sold, then added to the basis"
       },
       {
         "id": "c",
-        "text": "Nondeductible"
+        "text": "Capitalized and recovered over 39 years like nonresidential real property"
       },
       {
         "id": "d",
-        "text": "Treated as capital losses on Schedule D"
+        "text": "Subject to capitalization with limited immediate expensing and amortization rules"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "§195/§248 provide limited expensing plus amortization of the rest.",
     "distractorExplanations": {
-      "a": "Limits apply.",
-      "c": "Recoverable under rules.",
-      "d": "Not Schedule D capital loss treatment."
+      "a": "$50,000 is the phase-out threshold; the immediate deduction is up to $5,000 each for start-up and organizational costs.",
+      "b": "Under §195 and §248 these costs are partly expensed and amortized; they are not frozen until a sale.",
+      "c": "Start-up and organizational costs are amortized over 180 months (15 years), not the 39-year building life."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -997,27 +997,27 @@
     "options": [
       {
         "id": "a",
-        "text": "State bar membership"
+        "text": "IRS enrollment (Special Enrollment Exam or qualifying IRS experience)"
       },
       {
         "id": "b",
-        "text": "IRS enrollment (Special Enrollment Exam or qualifying IRS experience) and Circular 230 status"
+        "text": "A state license issued after passing the Uniform CPA Exam"
       },
       {
         "id": "c",
-        "text": "CPA license"
+        "text": "Completing the Annual Filing Season Program and receiving a Record of Completion"
       },
       {
         "id": "d",
-        "text": "Real estate broker license"
+        "text": "Obtaining a PTIN and passing an IRS suitability check"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "EAs are federally authorized tax practitioners under Circular 230.",
     "distractorExplanations": {
-      "a": "Attorneys have separate path.",
-      "c": "CPAs also practice; EA is its own credential.",
-      "d": "Irrelevant."
+      "b": "Passing the CPA exam leads to a state CPA license; EAs are enrolled federally by the IRS, not licensed by states.",
+      "c": "AFSP gives limited representation rights to unenrolled preparers; it does not make someone an Enrolled Agent.",
+      "d": "A PTIN is needed to prepare returns for pay but grants no representation rights; EAs pass the SEE or qualify by experience."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1030,7 +1030,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Elect S corporation status"
+        "text": "Authorize a third party to inspect tax information without representing"
       },
       {
         "id": "b",
@@ -1038,19 +1038,19 @@
       },
       {
         "id": "c",
-        "text": "Report foreign gifts"
+        "text": "Allow a designee to receive the taxpayer's refund check"
       },
       {
         "id": "d",
-        "text": "Claim the EITC"
+        "text": "Designate a third party to discuss only the current return"
       }
     ],
     "correctOptionId": "b",
     "explanation": "2848 authorizes representation for specified tax matters/periods.",
     "distractorExplanations": {
-      "a": "2553.",
-      "c": "3520 themes.",
-      "d": "Credit on the return."
+      "a": "Information-only authorization is Form 8821; Form 2848 grants representation rights for listed matters.",
+      "c": "Form 2848 cannot authorize endorsing or cashing refund checks; refund direction is handled on the return or Form 8888.",
+      "d": "That is the third-party designee checkbox on Form 1040; Form 2848 appoints a representative for listed matters and periods."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,27 +1063,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Full advocacy representation like 2848"
+        "text": "Power of attorney allowing the appointee to represent the taxpayer"
       },
       {
         "id": "b",
-        "text": "Tax information authorization (inspection/receipt of information) without full representation powers"
+        "text": "Third-party designee authority that lapses one year after the due date"
       },
       {
         "id": "c",
-        "text": "A corporation's bylaws"
+        "text": "Tax information authorization without full representation powers"
       },
       {
         "id": "d",
-        "text": "Payroll deposit frequency changes"
+        "text": "Authorization for a preparer to e-file the return using Form 8879"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "8821 is TIA—information access, not the same as POA representation.",
     "distractorExplanations": {
-      "a": "2848 is POA.",
-      "c": "False.",
-      "d": "Too narrow."
+      "a": "Representation requires Form 2848; Form 8821 lets the designee receive and inspect information but not advocate.",
+      "b": "That describes the Form 1040 third-party designee checkbox, which expires a year after the return due date.",
+      "d": "Form 8879 is the IRS e-file signature authorization; Form 8821 is a tax information authorization."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Destroy unfavorable records"
-      },
-      {
-        "id": "b",
         "text": "Respond timely, provide relevant records, and advocate within Circular 230 ethics"
       },
       {
+        "id": "b",
+        "text": "Provide every record requested, including privileged material, without any prior review"
+      },
+      {
         "id": "c",
-        "text": "Ignore information document requests"
+        "text": "Refuse all IDRs until the IRS issues a formal summons"
       },
       {
         "id": "d",
-        "text": "Coach the client to fabricate receipts"
+        "text": "Let the client meet the agent alone to show good faith cooperation"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Competent, ethical representation includes timely responses and honest submissions.",
     "distractorExplanations": {
-      "a": "Obstruction.",
-      "c": "Harms client/can escalate.",
-      "d": "Fraud."
+      "b": "Representatives may assert privileges and limit responses to relevant records; turning everything over unreviewed is poor practice.",
+      "c": "Refusing IDRs escalates the case and invites a summons; prompt cooperation within proper scope is expected.",
+      "d": "With a valid Form 2848 the representative can handle the meeting; the client generally need not attend alone."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Form 12153 (within the stated deadline after NFTL/levy notice)"
+        "text": "Form 9423 (Collection Appeals Program request after a levy notice)"
       },
       {
         "id": "b",
-        "text": "Form 1040-X"
+        "text": "Form 12153 (within the stated deadline after NFTL/levy notice)"
       },
       {
         "id": "c",
-        "text": "Form 2553"
+        "text": "Form 911 (Taxpayer Advocate assistance request after a levy notice)"
       },
       {
         "id": "d",
-        "text": "Form 3115"
+        "text": "Form 843 (claim for refund and abatement after an NFTL filing)"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "CDP rights are exercised via Form 12153 within the 30-day period generally.",
     "distractorExplanations": {
-      "b": "Amended return.",
-      "c": "S election.",
-      "d": "Accounting method change."
+      "a": "Form 9423 requests a CAP appeal, a faster process without Tax Court review; CDP hearings use Form 12153.",
+      "c": "Form 911 requests Taxpayer Advocate help; it does not preserve the statutory CDP hearing right.",
+      "d": "Form 843 claims refunds or penalty abatement; it is not a request for a collection due process hearing."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1162,27 +1162,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Change filing status after the fact without criteria"
+        "text": "Pay the full debt in monthly installments over six years"
       },
       {
         "id": "b",
-        "text": "Settle a tax debt for less than the full amount based on doubt as to collectibility/liability or effective tax administration"
+        "text": "Remove penalties for a first-time noncompliant year"
       },
       {
         "id": "c",
-        "text": "Automatically abate all penalties"
+        "text": "Settle a tax debt for less than the full amount"
       },
       {
         "id": "d",
-        "text": "Elect mark-to-market trading"
+        "text": "Pause collection while the taxpayer cannot pay expenses"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "OIC is a collection alternative under specific IRS standards.",
+    "correctOptionId": "c",
+    "explanation": "OIC is a collection alternative under specific IRS standards. Grounds are doubt as to collectibility, doubt as to liability, or effective tax administration.",
     "distractorExplanations": {
-      "a": "Not OIC.",
-      "c": "Penalty relief is separate (FTA, reasonable cause).",
-      "d": "§475 election."
+      "a": "Paying in full over time is an installment agreement; an OIC settles for less than the full amount owed.",
+      "b": "Penalty removal for a clean history is First-Time Abatement, a separate administrative waiver, not an OIC.",
+      "d": "Pausing collection for hardship is Currently Not Collectible status; the debt itself is not reduced."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1195,7 +1195,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Form 8857"
+        "text": "Form W-4 only"
       },
       {
         "id": "b",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "Form W-4 only"
+        "text": "Form 8857"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Form 8857 requests innocent spouse / separation of liability / equitable relief.",
     "distractorExplanations": {
+      "a": "Withholding.",
       "b": "Partnership.",
-      "c": "Info return.",
-      "d": "Withholding."
+      "c": "Info return."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1232,23 +1232,23 @@
       },
       {
         "id": "b",
-        "text": "Only pay immediately with no rights"
+        "text": "Request a CDP hearing within 30 days to contest the deficiency"
       },
       {
         "id": "c",
-        "text": "File bankruptcy as the sole remedy"
+        "text": "Petition the U.S. Tax Court within 30 days (60 days if addressed outside the U.S.)"
       },
       {
         "id": "d",
-        "text": "Ignore it safely"
+        "text": "File suit in district court within 90 days without paying the tax"
       }
     ],
     "correctOptionId": "a",
     "explanation": "The SNOD opens Tax Court jurisdiction if petitioned timely.",
     "distractorExplanations": {
-      "b": "Rights exist.",
-      "c": "Not sole remedy.",
-      "d": "Dangerous."
+      "b": "CDP hearings follow lien or levy notices; the deficiency notice opens the 90-day Tax Court window instead.",
+      "c": "The SNOD petition period is 90 days (150 if addressed outside the U.S.), not 30 or 60 days.",
+      "d": "District court refund suits generally require full payment first; prepayment review is available in Tax Court."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1261,27 +1261,27 @@
     "options": [
       {
         "id": "a",
-        "text": "It is revoked, withdrawn, superseded, or the matter/period concludes as specified"
+        "text": "The taxpayer hires a different preparer to file the following year's income tax return"
       },
       {
         "id": "b",
-        "text": "Never, under any circumstances"
+        "text": "It is revoked, withdrawn, superseded, or the matter/period concludes as specified"
       },
       {
         "id": "c",
-        "text": "The practitioner changes email providers"
+        "text": "Six years pass from the date the Form 2848 was signed"
       },
       {
         "id": "d",
-        "text": "The client buys municipal bonds"
+        "text": "A new Form 2848 is filed for a different tax form and period"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "POAs can be revoked/withdrawn and are limited to specified matters/periods.",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "a": "A new preparer does not revoke a Form 2848; revocation requires written notice or a new POA that does not retain the old one.",
+      "c": "Form 2848 has no fixed six-year life; it ends by revocation, withdrawal, superseding, or as listed matters end.",
+      "d": "A new POA supersedes earlier ones for the same matters; a different form or period leaves the prior POA in place."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "IRS-recognized representatives on authorizations"
+        "text": "Businesses on payroll returns and deposits"
       },
       {
         "id": "b",
-        "text": "County assessor parcels"
+        "text": "Paid preparers on the returns they sign for clients"
       },
       {
         "id": "c",
-        "text": "EIN verification for employees"
+        "text": "IRS-recognized representatives on authorizations"
       },
       {
         "id": "d",
-        "text": "PTIN for software vendors"
+        "text": "E-file providers transmitting returns"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "CAF tracks POA/TIA authorizations for practitioners.",
     "distractorExplanations": {
-      "b": "Property tax.",
-      "c": "EIN is entity ID.",
-      "d": "PTIN is preparer tax ID."
+      "a": "Businesses use EINs on payroll returns and deposits; the CAF number is issued to authorized representatives.",
+      "b": "Preparers are identified on returns by PTIN; CAF numbers track representatives on Forms 2848 and 8821.",
+      "d": "E-file providers are identified by EFIN; the CAF number relates to POA and tax information authorizations."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1327,27 +1327,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Litigate immediately in district court"
+        "text": "Re-examine the return and develop new issues for assessment"
       },
       {
         "id": "b",
-        "text": "Resolve disputes fairly considering hazards of litigation without new enforcement by Appeals"
+        "text": "Issue a statutory notice of deficiency at the first meeting"
       },
       {
         "id": "c",
-        "text": "Increase penalties automatically"
+        "text": "Decide the case strictly on the law with no settlement authority"
       },
       {
         "id": "d",
-        "text": "Bypass all administrative remedies"
+        "text": "Resolve disputes fairly considering hazards of litigation"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "IRS Independent Office of Appeals seeks case resolution considering litigation hazards.",
     "distractorExplanations": {
-      "a": "Appeals is pre-litigation forum often.",
-      "c": "Not the mission.",
-      "d": "Exhaustion concepts vary."
+      "a": "Appeals does not raise new issues or reopen issues the examiner conceded; it settles existing disputes.",
+      "b": "Appeals may issue an SNOD if no settlement is reached, but its goal is settlement, not immediate assessment.",
+      "c": "Appeals has settlement authority and weighs litigation hazards; it is not a court ruling strictly on the law."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Must exclude the representative"
+        "text": "May proceed with the authorized representative present"
       },
       {
         "id": "b",
-        "text": "May proceed with the authorized representative present/handling communications per the authorization"
+        "text": "Requires the taxpayer to attend in person with the representative"
       },
       {
         "id": "c",
-        "text": "Requires a Form 706 filing"
+        "text": "Must be rescheduled until the taxpayer signs a new Form 8821"
       },
       {
         "id": "d",
-        "text": "Is illegal under Circular 230"
+        "text": "Is limited to written questions once a Form 2848 is on file"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Authorized representatives may handle IRS contacts within the POA scope.",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "c": "Estate tax return.",
-      "d": "False."
+      "b": "Generally the taxpayer need not attend when a representative is authorized, unless the taxpayer is summoned.",
+      "c": "Form 8821 grants information access without advocacy; representation in interviews comes from Form 2848.",
+      "d": "A Form 2848 does not restrict interviews to written questions; the representative may attend and speak."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,27 +1393,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Meeting IRS criteria (compliance history, specific penalties, etc.)"
+        "text": "Showing reasonable cause such as illness or a natural disaster"
       },
       {
         "id": "b",
-        "text": "Owning a home"
+        "text": "Meeting IRS criteria (compliance history, specific penalties)"
       },
       {
         "id": "c",
-        "text": "Being an EA"
+        "text": "A clean compliance history for the prior five years"
       },
       {
         "id": "d",
-        "text": "Filing only on paper"
+        "text": "Owing less than $10,000 in total tax for the year"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "FTA is an administrative waiver with eligibility conditions.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Taxpayer eligibility, not practitioner credential.",
-      "d": "Filing method not the test."
+      "a": "Reasonable cause is a separate relief basis; FTA is granted on a clean three-year history without proving cause.",
+      "c": "FTA looks back three years, not five, for no prior significant penalties.",
+      "d": "FTA has no dollar ceiling; eligibility turns on compliance history, filing, and payment arrangements."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Finally determine tax liability for specific matters when appropriate"
+        "text": "Waive restrictions on assessment while preserving appeal rights"
       },
       {
         "id": "b",
-        "text": "Elect S status"
+        "text": "Extend the assessment statute of limitations for open years"
       },
       {
         "id": "c",
-        "text": "Report tip income"
+        "text": "Finally determine tax liability for specific matters"
       },
       {
         "id": "d",
-        "text": "Request a PTIN"
+        "text": "Record a taxpayer's acceptance of an installment plan"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Closing agreements finally resolve specified tax matters when executed.",
     "distractorExplanations": {
-      "b": "2553.",
-      "c": "Tip reporting forms differ.",
-      "d": "PTIN application."
+      "a": "That describes Form 870, which consents to assessment but is not a binding final closing agreement.",
+      "b": "Extending the assessment statute uses Form 872; closing agreements on Forms 866/906 finally settle liabilities.",
+      "d": "Installment agreements use Form 9465 or 433-D; closing agreements finally determine tax liability."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1463,7 +1463,7 @@
       },
       {
         "id": "b",
-        "text": "Allows IRS to discuss return processing issues with a designated person for a limited purpose/period"
+        "text": "Replaces Form 2848 for audits of all prior years"
       },
       {
         "id": "c",
@@ -1471,15 +1471,15 @@
       },
       {
         "id": "d",
-        "text": "Replaces Form 2848 for audits of all prior years"
+        "text": "Allows IRS to discuss return processing issues with a designated person for a limited purpose/period"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "The third-party designee is narrow (processing), not a general POA.",
     "distractorExplanations": {
       "a": "Not the best answer here; the right answer is “Allows IRS to discuss return processing issues with a designated person for a limited purpose/period”.",
-      "c": "Too broad.",
-      "d": "2848 still needed for representation."
+      "b": "2848 still needed for representation.",
+      "c": "Too broad."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only state sales tax audits"
+        "text": "Practice before the U.S. Tax Court by attorneys and nonattorney practitioners"
       },
       {
         "id": "b",
@@ -1500,19 +1500,19 @@
       },
       {
         "id": "c",
-        "text": "SEC broker advertising"
+        "text": "State tax practice by CPAs and attorneys under each state's board rules"
       },
       {
         "id": "d",
-        "text": "FINRA arbitration"
+        "text": "Treasury employees' ethics when communicating with tax practitioners"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Circular 230 is the Treasury regulation for IRS practice standards.",
     "distractorExplanations": {
-      "a": "State tax separate.",
-      "c": "Securities.",
-      "d": "Securities disputes."
+      "a": "Tax Court admission is governed by the court's own rules; Circular 230 governs practice before the IRS.",
+      "c": "State boards and bars regulate state licensure; Circular 230 is a federal Treasury regulation for IRS practice.",
+      "d": "Circular 230 regulates practitioners, not IRS employees, whose conduct falls under federal employee ethics rules."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1525,27 +1525,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Anyone who prepares or assists in preparing all or substantially all of a federal tax return for compensation"
+        "text": "Anyone who prepares state returns for compensation, while federal-only preparers use their EFIN instead"
       },
       {
         "id": "b",
-        "text": "Only EAs"
+        "text": "Only credentialed preparers (EAs, CPAs, attorneys) who sign returns, not unenrolled seasonal preparers"
       },
       {
         "id": "c",
-        "text": "Only taxpayers filing their own returns"
+        "text": "Anyone who prepares federal returns, including volunteers at VITA sites and family members who are not paid for it"
       },
       {
         "id": "d",
-        "text": "Only corporate officers"
+        "text": "Anyone who prepares or assists in preparing all or substantially all of a federal tax return for compensation"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Paid preparers generally must have a PTIN.",
     "distractorExplanations": {
-      "b": "All paid preparers (with rules).",
-      "c": "Self-preparers don't need PTIN.",
-      "d": "Too narrow."
+      "a": "The PTIN is a federal requirement for paid federal return preparers; an EFIN identifies an e-file provider, not a preparer.",
+      "b": "Every paid preparer, credentialed or not, must have a PTIN; unenrolled preparers need one too.",
+      "c": "PTINs are required for compensated preparers; unpaid VITA volunteers and family helpers do not need one."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1562,23 +1562,23 @@
       },
       {
         "id": "b",
-        "text": "Hide it from the client"
+        "text": "File an amended return for the client once the omission is confirmed"
       },
       {
         "id": "c",
-        "text": "Always resign without saying anything"
+        "text": "Report the omission to the IRS if the client declines to correct it"
       },
       {
         "id": "d",
-        "text": "Amend without client knowledge"
+        "text": "Withdraw from the engagement before discussing the omission"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Duty to inform the client; cannot amend without authorization.",
     "distractorExplanations": {
-      "b": "Violates standards.",
-      "c": "Must advise.",
-      "d": "Unauthorized."
+      "b": "§10.21 requires advising the client; the practitioner cannot amend without the client's authorization.",
+      "c": "Circular 230 does not require reporting a client's omission to the IRS; the duty is to advise the client.",
+      "d": "Withdrawal may be considered later, but §10.21 first requires promptly advising the client of the omission."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Completing Form 8867 and applying knowledge/inquiry standards"
+        "text": "Retaining the completed checklist for two years from filing"
       },
       {
         "id": "b",
-        "text": "Skipping questions if the refund is large"
+        "text": "Obtaining Form 8879 and keeping the client's signed engagement letter"
       },
       {
         "id": "c",
-        "text": "Accepting any document without review"
+        "text": "Completing Form 8862 for every client claiming the credits"
       },
       {
         "id": "d",
-        "text": "Avoiding PTIN use"
+        "text": "Completing Form 8867 and applying knowledge/inquiry standards"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "d",
     "explanation": "Paid preparer due diligence rules require Form 8867 and specific checklists/inquiries.",
     "distractorExplanations": {
-      "b": "Opposite of diligence.",
-      "c": "Must make reasonable inquiries.",
-      "d": "PTIN required."
+      "a": "Due diligence records must be kept for three years from the latest relevant filing date, not two.",
+      "b": "Form 8879 is the e-file signature authorization; due diligence for these credits requires Form 8867 and inquiry.",
+      "c": "Form 8862 is filed after a prior-year credit disallowance; preparer due diligence uses Form 8867."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1661,23 +1661,23 @@
       },
       {
         "id": "b",
-        "text": "Posting returns on social media for marketing"
+        "text": "Disclosing return information to a lender when the client verbally agrees"
       },
       {
         "id": "c",
-        "text": "Selling client lists with SSNs freely"
+        "text": "Sharing client data with affiliated firms without consent for marketing"
       },
       {
         "id": "d",
-        "text": "Discussing client details at a conference without consent"
+        "text": "Disclosing client details to other preparers in the firm's online forum"
       }
     ],
     "correctOptionId": "a",
     "explanation": "IRC §7216/privacy rules and ethics restrict disclosure of tax return information.",
     "distractorExplanations": {
-      "b": "Prohibited.",
-      "c": "Illegal/unethical.",
-      "d": "Needs consent/exception."
+      "b": "§7216 consent must be written and signed in the prescribed format; a verbal agreement is not valid consent.",
+      "c": "Using return information for marketing, even with affiliates, requires prior written §7216 consent.",
+      "d": "Sharing identifiable client details outside a need-to-know purpose breaches confidentiality without consent."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Be based on reasonable factual/legal assumptions and not be misleading"
+        "text": "Be issued as a covered opinion with a 'more likely than not' level"
       },
       {
         "id": "b",
-        "text": "Guarantee audit-proof results"
+        "text": "Be based on reasonable factual/legal assumptions and not be misleading"
       },
       {
         "id": "c",
-        "text": "Ignore contrary authorities knowingly"
+        "text": "Assume the IRS will not audit the return when evaluating the position"
       },
       {
         "id": "d",
-        "text": "Be unsigned to avoid responsibility"
+        "text": "Rely on the client's statements even if the practitioner knows they are false"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "Circular 230 competence/diligence standards apply to advice.",
     "distractorExplanations": {
-      "b": "Cannot guarantee.",
-      "c": "Must not mislead.",
-      "d": "Accountability remains."
+      "a": "The covered-opinion rules of former §10.35 were withdrawn in 2014; §10.37 now sets a reasonableness standard.",
+      "c": "§10.37 forbids taking audit likelihood into account when evaluating a position or giving written advice.",
+      "d": "A practitioner may rely in good faith on client information, but not on representations known to be incorrect."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1723,27 +1723,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Altered to improve the facts"
+        "text": "Reconstructed records labeled as originals"
       },
       {
         "id": "b",
-        "text": "Accurate copies/originals as appropriate; do not submit known false documents"
+        "text": "Originals only, since copies are not accepted"
       },
       {
         "id": "c",
-        "text": "Destroyed after mailing"
+        "text": "Accurate copies/originals as appropriate"
       },
       {
         "id": "d",
-        "text": "Backdated routinely"
+        "text": "Summaries prepared by the practitioner instead"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Submitting false documents is criminal/ethical violation.",
+    "correctOptionId": "c",
+    "explanation": "Submitting false documents is criminal/ethical violation. Never submit documents known to be false.",
     "distractorExplanations": {
-      "a": "Fraud.",
-      "c": "Keep copies.",
-      "d": "Falsification."
+      "a": "Reconstructed records may be submitted if clearly identified as reconstructions; labeling them as originals is false.",
+      "b": "The IRS generally accepts legible copies; sending originals is often unnecessary and risks losing them.",
+      "d": "Summaries can help, but the IRS may require underlying records; summaries do not replace substantiation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1756,27 +1756,27 @@
     "options": [
       {
         "id": "a",
-        "text": "State the EA credential truthfully"
+        "text": "State that the practitioner is enrolled to practice before the IRS"
       },
       {
         "id": "b",
-        "text": "Claim IRS employee status or guaranteed results deceptively"
+        "text": "Use the term 'enrolled agent' in the firm's name or website"
       },
       {
         "id": "c",
-        "text": "List contact information"
+        "text": "Include a fee schedule for return preparation and representation"
       },
       {
         "id": "d",
-        "text": "Mention enrollment"
+        "text": "Claim IRS employee status or guaranteed results deceptively"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Practitioners cannot falsely imply government employment or guarantee outcomes.",
     "distractorExplanations": {
-      "a": "Allowed if true.",
-      "c": "Allowed.",
-      "d": "Allowed if accurate."
+      "a": "§10.30 expressly permits an EA to describe the credential as enrolled to practice before the IRS.",
+      "b": "Using 'enrolled agent' truthfully is allowed; the prohibition is on 'certified' or implying IRS employment.",
+      "c": "Published fee information is permitted under §10.30 as long as the practitioner honors the stated fees."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1789,27 +1789,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignoring the conflict if fees are high"
+        "text": "Informed consent in writing when representation of conflicting interests is otherwise permitted"
       },
       {
         "id": "b",
-        "text": "Informed consent in writing when representation of conflicting interests is otherwise permitted, or declining representation"
+        "text": "Oral informed consent from each affected client, documented later if a dispute arises"
       },
       {
         "id": "c",
-        "text": "Automatic dual representation without notice"
+        "text": "Written notice to the IRS Office of Professional Responsibility before representing both"
       },
       {
         "id": "d",
-        "text": "Referral kickbacks"
+        "text": "Retaining written consent for one year after the representation ends"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Conflicts need waiver/consent meeting Circular 230 conditions or withdrawal.",
+    "correctOptionId": "a",
+    "explanation": "Conflicts need waiver/consent meeting Circular 230 conditions or withdrawal. Otherwise the practitioner must decline the representation.",
     "distractorExplanations": {
-      "a": "Fees don't cure.",
-      "c": "Consent required.",
-      "d": "Unrelated/illegal in tax prep contexts often."
+      "b": "§10.29 requires consent confirmed in writing by each affected client within 30 days; oral consent alone fails.",
+      "c": "Conflict waivers come from the affected clients, not OPR; OPR does not pre-approve representation.",
+      "d": "§10.29 requires keeping written consents for at least 36 months from the end of the representation, not one year."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Strong ID verification, secure systems, and not participating in refund fraud"
+        "text": "Sharing EFINs with trusted seasonal preparers to speed up filing season"
       },
       {
         "id": "b",
-        "text": "Sharing EFPINs on forums"
+        "text": "Strong ID verification, secure systems, and not participating in refund fraud"
       },
       {
         "id": "c",
-        "text": "Allowing clients to use the preparer's credentials"
+        "text": "Disabling MFA on tax software so multiple staff can log in quickly"
       },
       {
         "id": "d",
-        "text": "Disabling multi-factor authentication"
+        "text": "Accepting photo IDs by email without checking them against the client"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "Security and due diligence combat stolen-identity refund fraud.",
     "distractorExplanations": {
-      "b": "Security failure.",
-      "c": "Credential sharing is improper.",
-      "d": "Weakens security."
+      "a": "EFINs are issued to a specific provider and may not be shared; sharing them enables refund fraud.",
+      "c": "IRS safeguards guidance requires multi-factor authentication; disabling it weakens protection of client data.",
+      "d": "Emailed IDs must still be verified against the person; unverified IDs are a common stolen-identity fraud path."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1859,23 +1859,23 @@
       },
       {
         "id": "b",
-        "text": "Filing on time with correct positions"
+        "text": "Any understatement the IRS assesses, even with substantial authority"
       },
       {
         "id": "c",
-        "text": "Using tax software"
+        "text": "Failure to sign the return or include the preparer's PTIN"
       },
       {
         "id": "d",
-        "text": "Obtaining a PTIN"
+        "text": "Failing to furnish the client a copy of the completed return"
       }
     ],
     "correctOptionId": "a",
     "explanation": "§6694 penalizes preparers for unreasonable positions and reckless/willful understatements.",
     "distractorExplanations": {
-      "b": "Compliance.",
-      "c": "Software ok.",
-      "d": "Required."
+      "b": "§6694 does not apply to positions supported by substantial authority; an IRS adjustment alone is not enough.",
+      "c": "Missing signatures or PTINs are penalized under §6695, a separate preparer penalty.",
+      "d": "Not furnishing a client copy is a §6695(a) penalty, not the §6694 understatement penalty."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Defining scope, responsibilities, deadlines, and fee arrangements in writing"
+        "text": "Promising specific refund amounts"
       },
       {
         "id": "b",
@@ -1896,18 +1896,18 @@
       },
       {
         "id": "c",
-        "text": "Promising specific refund amounts"
+        "text": "Defining scope, responsibilities, deadlines, and fee arrangements in writing"
       },
       {
         "id": "d",
         "text": "Authorizing the preparer to sign for the taxpayer without Form 8879/alternative e-file auth"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Engagement letters reduce misunderstandings and document scope.",
     "distractorExplanations": {
+      "a": "Improper guarantee.",
       "b": "Risky.",
-      "c": "Improper guarantee.",
       "d": "E-file auth still required."
     },
     "difficulty": "easy",
@@ -1921,27 +1921,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Practitioners must return client-provided records; may retain copies of their work product subject to rules/fee disputes nuances"
+        "text": "Practitioners must return records only to a successor preparer"
       },
       {
         "id": "b",
-        "text": "May keep original client records permanently as ransom"
+        "text": "Practitioners may hold the records until fees are paid"
       },
       {
         "id": "c",
-        "text": "Never need to return anything"
+        "text": "Practitioners must return records and their own workpapers"
       },
       {
         "id": "d",
-        "text": "Only applies to attorneys"
+        "text": "Practitioners must return client-provided records"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Circular 230 addresses return of client records; holding originals for unpaid fees is restricted.",
+    "correctOptionId": "d",
+    "explanation": "Circular 230 addresses return of client records; holding originals for unpaid fees is restricted. Practitioners may keep copies; their own work product may be retained subject to fee-dispute rules.",
     "distractorExplanations": {
-      "b": "Improper.",
-      "c": "False.",
-      "d": "Applies to practitioners broadly."
+      "a": "§10.28 requires returning records to the client on request, not merely to a successor preparer.",
+      "b": "§10.28 requires returning client records needed to comply with tax obligations even when fees are disputed.",
+      "c": "Workpapers and the practitioner's own work product may be withheld in a fee dispute when state law allows."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1958,23 +1958,23 @@
       },
       {
         "id": "b",
-        "text": "Accept any matter regardless of knowledge"
+        "text": "Accept a new matter if a supervisor will sign the return, even without relevant knowledge"
       },
       {
         "id": "c",
-        "text": "Rely solely on the client's legal conclusions without evaluation"
+        "text": "Rely on the client's legal conclusions when the client is a licensed attorney"
       },
       {
         "id": "d",
-        "text": "Avoid continuing education"
+        "text": "Meet competence by completing the minimum continuing education hours each year"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Competence requires knowledge/skill or acquiring it appropriately.",
     "distractorExplanations": {
-      "b": "Violates competence.",
-      "c": "Must exercise diligence.",
-      "d": "CE required for EAs."
+      "b": "§10.35 requires the practitioner personally have or acquire the knowledge, skill, and preparation needed.",
+      "c": "Practitioners must evaluate legal issues themselves; a client's legal conclusion does not satisfy competence.",
+      "d": "CE is a separate enrollment-renewal requirement; competence is judged matter by matter under §10.35."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1995,19 +1995,19 @@
       },
       {
         "id": "c",
-        "text": "$3,000 deduction; $5,500 short-term carryover"
+        "text": "$8,500 deduction in 2025, with no carryover to 2026"
       },
       {
         "id": "d",
-        "text": "$8,500 deduction in 2025, with no carryover to 2026"
+        "text": "$3,000 deduction; $5,500 short-term carryover"
       }
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "d",
     "explanation": "Net the gain against the loss: $12,500 − $4,000 = $8,500 net short-term loss. Individuals deduct up to $3,000 of net capital loss against ordinary income each year, so $8,500 − $3,000 = $5,500 carries forward and keeps its short-term character.",
     "distractorExplanations": {
       "a": "Skips netting the $4,000 long-term gain against the loss first; the carryover is $8,500 − $3,000, not $12,500 − $3,000.",
       "b": "Gets the amount right but the character wrong: the leftover loss came from short-term sales and carries over as short-term.",
-      "d": "Ignores the $3,000 annual cap on deducting net capital losses against ordinary income for a single filer."
+      "c": "Ignores the $3,000 annual cap on deducting net capital losses against ordinary income for a single filer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2020,27 +2020,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Being unmarried (or considered unmarried) and maintaining a home for a qualifying person for more than half the year"
+        "text": "Being unmarried and maintaining a home for a qualifying person for more than half the year"
       },
       {
         "id": "b",
-        "text": "Being married filing jointly with any dependent listed"
+        "text": "Being married and living with the spouse while paying all costs of a home for a child"
       },
       {
         "id": "c",
-        "text": "Owning any rental property in the taxpayer's name"
+        "text": "Being unmarried and maintaining a home for a qualifying person for at least three months of the year"
       },
       {
         "id": "d",
-        "text": "Having wage income above a fixed dollar threshold set in the stem"
+        "text": "Being a surviving spouse with a dependent child within two years of the spouse's death"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "HOH has specific relationship, support, and abode tests beyond simply having a dependent.",
+    "explanation": "HOH has specific relationship, support, and abode tests beyond simply having a dependent. A taxpayer who is considered unmarried can also qualify.",
     "distractorExplanations": {
-      "b": "MFJ is a different status with its own rules.",
-      "c": "Rental ownership alone does not establish HOH.",
-      "d": "HOH is not triggered by a wage threshold invented in the stem."
+      "b": "A married taxpayer can use HOH only if considered unmarried, which requires living apart from the spouse for the last six months.",
+      "c": "The qualifying person must live with the taxpayer for more than half the year, not just three months.",
+      "d": "That describes qualifying surviving spouse status, which is more favorable than HOH and has its own tests."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2119,15 +2119,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Taxed at ordinary rates plus self-employment tax automatically"
+        "text": "Taxable as ordinary income but excluded from state tax"
       },
       {
         "id": "b",
-        "text": "Fully taxable as short-term capital gain in every case"
+        "text": "Taxed at 0%/15%/20% preferential rates like qualified dividends"
       },
       {
         "id": "c",
-        "text": "Deductible as a business expense on Schedule C"
+        "text": "Exempt from federal tax but subject to self-employment tax"
       },
       {
         "id": "d",
@@ -2137,9 +2137,9 @@
     "correctOptionId": "d",
     "explanation": "Municipal bond interest is a classic federal-tax-exempt investment income category, subject to specific bond qualification rules.",
     "distractorExplanations": {
-      "a": "Muni interest is not self-employment income.",
-      "b": "It is not capital gain by default.",
-      "c": "Schedule C expenses are unrelated to muni interest."
+      "a": "It is the reverse: qualified muni interest is federally exempt, while states may tax out-of-state bond interest.",
+      "b": "Muni interest is excluded from gross income, not taxed at preferential qualified dividend rates.",
+      "c": "Muni interest is investment income, not self-employment income, so SE tax does not apply to it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2156,23 +2156,23 @@
       },
       {
         "id": "b",
-        "text": "The taxpayer has any W-2 income regardless of amount"
+        "text": "The taxpayer or spouse is covered by an employer 401(k) plan during the year"
       },
       {
         "id": "c",
-        "text": "The taxpayer itemizes deductions on Schedule A"
+        "text": "The taxpayer is over age 70½ at the end of the year"
       },
       {
         "id": "d",
-        "text": "The taxpayer owns a primary residence"
+        "text": "Earned income exceeds the annual Social Security wage base limit"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Roth IRA eligibility combines earned/compensation requirements with MAGI-based phase-outs published annually.",
     "distractorExplanations": {
-      "b": "W-2 alone does not automatically prohibit Roth contributions.",
-      "c": "Itemizing is unrelated to Roth limits.",
-      "d": "Homeownership is not a Roth limit trigger."
+      "b": "Workplace plan coverage limits deductibility of traditional IRA contributions, not Roth IRA eligibility.",
+      "c": "Roth contributions have no age limit, and SECURE Act removed the age cap for traditional IRA contributions too.",
+      "d": "Roth eligibility uses MAGI phase-out ranges by filing status, not the Social Security wage base."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2185,7 +2185,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only wage income exceeds Social Security wage base"
+        "text": "Wages exceed the threshold for the 0.9% Additional Medicare Tax"
       },
       {
         "id": "b",
@@ -2193,19 +2193,19 @@
       },
       {
         "id": "c",
-        "text": "The taxpayer claims the standard deduction"
+        "text": "Net investment income exceeds $250,000 for every filing status"
       },
       {
         "id": "d",
-        "text": "All capital losses are fully deducted against ordinary income without limit"
+        "text": "Taxable income exceeds the top of the 35% bracket and gains are present"
       }
     ],
     "correctOptionId": "b",
     "explanation": "NIIT is a 3.8% surtax on net investment income for higher-income taxpayers meeting MAGI thresholds.",
     "distractorExplanations": {
-      "a": "Social Security wage base is a payroll tax concept.",
-      "c": "Standard deduction choice does not trigger NIIT.",
-      "d": "Capital loss limits are separate from NIIT."
+      "a": "The 0.9% Additional Medicare Tax applies to wages and SE income; NIIT is a 3.8% tax on investment income.",
+      "c": "Thresholds apply to MAGI ($200,000 single, $250,000 MFJ, $125,000 MFS), not to investment income alone.",
+      "d": "NIIT uses fixed MAGI thresholds that are not indexed, not tax bracket breakpoints."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2218,11 +2218,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Applies only to C corporations filing Form 1120"
+        "text": "Replaces regular tax with a flat 21% rate on alternative minimum taxable income"
       },
       {
         "id": "b",
-        "text": "Eliminates all tax on long-term capital gains permanently"
+        "text": "Applies to anyone with income above the AMT exemption amount, even if regular tax is higher"
       },
       {
         "id": "c",
@@ -2230,15 +2230,15 @@
       },
       {
         "id": "d",
-        "text": "Replaces estimated tax requirements entirely"
+        "text": "Recalculates tax using the same deductions but a higher 28% flat rate on all income"
       }
     ],
     "correctOptionId": "c",
     "explanation": "AMT adds back certain preference items and uses an exemption amount that phases out at higher income.",
     "distractorExplanations": {
-      "a": "Corporate AMT rules differ from individual AMT.",
-      "b": "AMT does not eliminate capital gain taxation.",
-      "d": "Estimated tax obligations remain separate."
+      "a": "Individual AMT rates are 26% and 28%; 21% is the regular C corporation income tax rate.",
+      "b": "AMT is owed when tentative minimum tax exceeds regular tax; income above the exemption alone does not trigger it.",
+      "d": "AMT adds back items like SALT and uses a 26%/28% schedule after an exemption, not one flat rate with the same deductions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2251,15 +2251,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Taxable contributions with no withdrawal rules"
+        "text": "Tax-deductible contributions and growth, with withdrawals taxed like a traditional IRA"
       },
       {
         "id": "b",
-        "text": "Mandatory taxation of all withdrawals at ordinary rates regardless of use"
+        "text": "After-tax contributions, tax-free growth, and tax-free withdrawals for any purpose after 55"
       },
       {
         "id": "c",
-        "text": "Eligibility for any taxpayer regardless of health coverage type"
+        "text": "Deductible contributions and tax-free medical withdrawals, but use-it-or-lose-it balances each year"
       },
       {
         "id": "d",
@@ -2269,9 +2269,9 @@
     "correctOptionId": "d",
     "explanation": "HSAs require HDHP coverage and have annual contribution limits; qualified medical expenses avoid withdrawal tax.",
     "distractorExplanations": {
-      "a": "Contributions are not fully taxable by design.",
-      "b": "Qualified medical withdrawals are tax-free.",
-      "c": "Non-HDHP coverage generally disqualifies HSA contributions."
+      "a": "Qualified medical HSA withdrawals are tax-free; nonqualified withdrawals are taxed, plus 20% before age 65.",
+      "b": "HSA contributions are deductible, and nonmedical withdrawals are taxable; age 65 (not 55) removes the 20% penalty.",
+      "c": "Use-it-or-lose-it describes health FSAs; HSA balances roll over and stay with the account owner."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2288,23 +2288,23 @@
       },
       {
         "id": "b",
-        "text": "Form 1040-ES only with no reconciliation"
+        "text": "Form 1095-A attached to the return, reconciling actual income to the estimate"
       },
       {
         "id": "c",
-        "text": "Schedule C as business income in every case"
+        "text": "Form 8965 with the tax return, comparing actual coverage to Marketplace estimates"
       },
       {
         "id": "d",
-        "text": "Form 709 gift tax return"
+        "text": "Form 1095-B issued by the insurer, with any excess repaid directly to the insurer"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Reconciliation can create additional tax or refund depending on final household income versus subsidies received.",
     "distractorExplanations": {
-      "b": "1040-ES is for estimated payments, not APTC reconciliation.",
-      "c": "APTC is not Schedule C business income.",
-      "d": "Form 709 covers gifts, not health credits."
+      "b": "Form 1095-A is the Marketplace statement used as input; the reconciliation itself is computed on Form 8962.",
+      "c": "Form 8965 claimed coverage exemptions for the individual mandate and is obsolete; APTC is reconciled on Form 8962.",
+      "d": "Excess APTC is repaid to the IRS through Form 8962 on the return; Form 1095-B just reports minimum coverage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2317,7 +2317,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Allows unlimited loss deductions regardless of repurchase timing"
+        "text": "Disallows a gain when substantially identical stock or securities are repurchased within 30 days after the sale"
       },
       {
         "id": "b",
@@ -2325,19 +2325,19 @@
       },
       {
         "id": "c",
-        "text": "Applies only to real property sales, not stocks"
+        "text": "Disallows a loss when substantially identical stock is repurchased within 61 days after the sale, ignoring purchases before"
       },
       {
         "id": "d",
-        "text": "Requires the taxpayer to hold the security for five years before selling"
+        "text": "Disallows a loss permanently when the same stock is repurchased within 30 days, with no basis adjustment"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Wash sales defer the loss by adjusting basis in the replacement shares rather than allowing immediate deduction.",
     "distractorExplanations": {
-      "a": "Repurchases within the window trigger wash sale treatment.",
-      "c": "Wash sale rules target securities, not real property sales.",
-      "d": "No five-year holding period applies to wash sales."
+      "a": "Wash sale rules apply to losses, not gains, and the window covers 30 days before as well as after the sale.",
+      "c": "The 61-day window is 30 days before, the sale day, and 30 days after, not 61 days after the sale.",
+      "d": "A wash sale loss is deferred, not lost: it is added to the basis of the replacement shares."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2350,27 +2350,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Any personal automobile swapped for another automobile"
+        "text": "Business vehicles and equipment traded for similar assets"
       },
       {
         "id": "b",
-        "text": "Stock in publicly traded corporations traded for similar stock"
+        "text": "Any real property, including a personal residence"
       },
       {
         "id": "c",
-        "text": "Real property held for investment or business use (not personal-use property or most personal property)"
+        "text": "Real property held for investment or business use"
       },
       {
         "id": "d",
-        "text": "Household furniture exchanged between individuals"
+        "text": "Real property in the U.S. exchanged for foreign real property"
       }
     ],
     "correctOptionId": "c",
     "explanation": "TCJA limited §1031 to real property; personal property exchanges no longer qualify for nonrecognition treatment.",
     "distractorExplanations": {
-      "a": "Personal cars are not §1031 real property.",
-      "b": "Stock swaps are not like-kind exchanges.",
-      "d": "Household furniture is personal property, not qualifying real property."
+      "a": "TCJA removed personal property, including vehicles and equipment, from §1031 for exchanges after 2017.",
+      "b": "A personal residence is not held for investment or business use, so it cannot be §1031 property.",
+      "d": "U.S. and foreign real property are not like-kind to each other under §1031(h)."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2383,27 +2383,27 @@
     "options": [
       {
         "id": "a",
-        "text": "That the property was never used as a rental at any time with no exceptions"
+        "text": "Ownership and use for three of the last five years"
       },
       {
         "id": "b",
-        "text": "Sale within one year of purchase in every case"
+        "text": "Reinvesting the proceeds in a new home within two years"
       },
       {
         "id": "c",
-        "text": "That the seller is a C corporation"
+        "text": "Being age 55 or older at the time of the sale"
       },
       {
         "id": "d",
-        "text": "Ownership and use tests (typically two of five years) and other limits on frequency and amount"
+        "text": "Ownership and use tests (typically two of five years)"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Partial exclusions may apply for certain work/health moves; nonqualified use can reduce exclusion for rental periods after 2008.",
+    "explanation": "Partial exclusions may apply for certain work/health moves; nonqualified use can reduce exclusion for rental periods after 2008. Limits also apply to how often (generally once every two years) and how much ($250,000/$500,000) gain is excluded.",
     "distractorExplanations": {
-      "a": "Some rental use may reduce but not always eliminate exclusion.",
-      "b": "Two-of-five-year use/ownership is the classic test, not one year.",
-      "c": "Section 121 is an individual home sale provision."
+      "a": "The §121 tests require two of the five years before the sale, not three.",
+      "b": "Reinvestment was the pre-1997 rollover rule (§1034); §121 has no reinvestment requirement.",
+      "c": "The age-55 one-time exclusion was repealed in 1997; current §121 has no age requirement."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2416,27 +2416,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Offsets taxable income in later years subject to post-TCJA percentage limitations and ordering rules"
+        "text": "Offsets taxable income in later years subject to post-TCJA percentage limitations"
       },
       {
         "id": "b",
-        "text": "May be carried back 20 years automatically in every case"
+        "text": "Carries back two years first, then forward up to 20 years"
       },
       {
         "id": "c",
-        "text": "Is fully deductible against any type of income without limitation"
+        "text": "Offsets 100% of taxable income in later years for up to 20 years"
       },
       {
         "id": "d",
-        "text": "Expires immediately in the year after it arises with no carryforward"
+        "text": "Offsets taxable income in later years, but expires after five years if unused"
       }
     ],
     "correctOptionId": "a",
     "explanation": "NOL rules changed materially under TCJA; carrybacks are limited while carryforwards remain with an 80% taxable income cap in many cases.",
     "distractorExplanations": {
-      "b": "Carryback availability is restricted compared to pre-TCJA law.",
-      "c": "NOL use is not unlimited against all income types.",
-      "d": "NOLs can carry forward rather than expiring immediately."
+      "b": "That is the pre-2018 rule; post-2020 NOLs generally carry forward indefinitely, with farm losses carried back two years.",
+      "c": "Post-2017 NOLs are limited to 80% of taxable income but carry forward indefinitely, not for 20 years.",
+      "d": "Post-2017 NOLs do not expire; the 5-year period was the temporary CARES Act carryback for 2018–2020 losses."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2449,27 +2449,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The property is a personal vacation home used one week per year"
+        "text": "The taxpayer materially participates for at least 750 hours"
       },
       {
         "id": "b",
-        "text": "The taxpayer actively participates and MAGI is below phase-out thresholds (with other requirements)"
+        "text": "The taxpayer actively participates and MAGI is below phase-out thresholds"
       },
       {
         "id": "c",
-        "text": "The taxpayer never inspects or manages the rental"
+        "text": "The taxpayer actively participates and MAGI is below $200,000"
       },
       {
         "id": "d",
-        "text": "The taxpayer is a real estate professional in every case without a separate test"
+        "text": "The rental is a vacation home rented fewer than 15 days per year and used personally"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Active participation is a lower standard than real estate professional status; real estate professionals follow different grouping rules.",
     "distractorExplanations": {
-      "a": "Personal vacation use can taint rental classification.",
-      "c": "Active participation requires some management involvement.",
-      "d": "Real estate professional status is a separate, stricter test."
+      "a": "750 hours is part of the real estate professional test; the $25,000 allowance requires active participation.",
+      "c": "The $25,000 allowance phases out between $100,000 and $150,000 of MAGI, not at $200,000.",
+      "d": "Rentals under 15 days are tax-free and not reported; the special allowance is for active rental real estate."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2482,27 +2482,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A corporate charter from the Secretary of State"
+        "text": "The payee's taxpayer identification number and certification"
       },
       {
         "id": "b",
-        "text": "An automatic extension of the income tax filing deadline"
+        "text": "The employee's withholding allowances for federal income tax"
       },
       {
         "id": "c",
-        "text": "Proof of sales tax exemption for retail customers"
+        "text": "The payee's verified identity for an EIN application"
       },
       {
         "id": "d",
-        "text": "The payee's taxpayer identification number and certification for information reporting"
+        "text": "The payee's foreign status certification to avoid withholding"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "W-9 supports 1099 reporting; it is not a tax return or incorporation document.",
     "distractorExplanations": {
-      "a": "Corporate charters come from state filing offices.",
-      "b": "Extensions use Form 4868 or other IRS forms.",
-      "c": "Sales tax exemption certificates are state documents."
+      "b": "Employees give withholding information on Form W-4; Form W-9 goes to payees such as contractors.",
+      "c": "EIN applications use Form SS-4; Form W-9 supplies an existing TIN to a payer for information reporting.",
+      "d": "Foreign status is certified on Form W-8BEN; Form W-9 is for U.S. persons providing a TIN."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2515,27 +2515,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Deduct a large percentage of qualifying property cost in the year placed in service (subject to current law limits)"
+        "text": "Deduct qualifying property cost in the year placed in service up to a taxable income limit"
       },
       {
         "id": "b",
-        "text": "Defer all depreciation until the asset is sold"
+        "text": "Deduct a large percentage of qualifying property cost in the year placed in service"
       },
       {
         "id": "c",
-        "text": "Depreciate land improvements over 39 years only with no first-year deduction"
+        "text": "Deduct a large percentage of real property cost, including buildings, in the first year"
       },
       {
         "id": "d",
-        "text": "Expense only intangible assets with no physical component ever"
+        "text": "Take a first-year deduction only for new property not previously used by anyone"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "Bonus depreciation interacts with §179 and regular MACRS; eligibility depends on property type and placed-in-service date.",
     "distractorExplanations": {
-      "b": "Bonus depreciation accelerates rather than defers deductions.",
-      "c": "Land is not depreciable; qualifying improvements may be.",
-      "d": "Many tangible assets qualify, not intangibles only."
+      "a": "The taxable-income limit applies to §179 expensing; bonus depreciation can create or increase a loss.",
+      "c": "Buildings (27.5/39-year property) do not qualify; bonus applies to property with a recovery period of 20 years or less.",
+      "d": "Since TCJA, used property acquired from unrelated parties also qualifies for bonus depreciation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2552,22 +2552,22 @@
       },
       {
         "id": "b",
-        "text": "Payment is actually or constructively received"
+        "text": "The fiscal year ends on June 30 by IRS mandate"
       },
       {
         "id": "c",
-        "text": "The fiscal year ends on June 30 by IRS mandate"
+        "text": "Payment is actually or constructively received"
       },
       {
         "id": "d",
         "text": "Accrual entries are required for all inventory businesses without exception"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Cash method timing differs from accrual; certain taxpayers must use accrual (e.g., some inventory-heavy businesses).",
     "distractorExplanations": {
       "a": "Unpaid invoices may not be income under cash method.",
-      "c": "June 30 year-end is not mandatory for all businesses.",
+      "b": "June 30 year-end is not mandatory for all businesses.",
       "d": "Inventory rules can force accrual for some taxpayers."
     },
     "difficulty": "easy",
@@ -2577,31 +2577,31 @@
     "id": "enrolled-agent-readiness-check-businesses-019",
     "examSlug": "enrolled-agent-readiness-check",
     "topicId": "businesses",
-    "prompt": "Form 1099-NEC is generally used to report:",
+    "prompt": "For payments made in tax year 2025, Form 1099-NEC is generally used to report:",
     "options": [
       {
         "id": "a",
-        "text": "Employee wages subject to withholding on Form W-2"
+        "text": "Payments of $600 or more for rent and prizes paid by a business"
       },
       {
         "id": "b",
-        "text": "Corporate dividends paid to shareholders on Form 1099-DIV"
+        "text": "Payment card and third-party network transactions above the reporting threshold"
       },
       {
         "id": "c",
-        "text": "Nonemployee compensation of $600 or more paid in the course of a trade or business"
+        "text": "Nonemployee compensation of $5,000 or more paid to a corporation"
       },
       {
         "id": "d",
-        "text": "Personal gifts between family members with no business purpose"
+        "text": "Nonemployee compensation of $600 or more paid in the course of a trade or business"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "1099-NEC replaced box 7 nonemployee compensation on 1099-MISC for many payers after law changes.",
+    "correctOptionId": "d",
+    "explanation": "For 2025 payments, Form 1099-NEC reports nonemployee compensation of $600 or more paid in a trade or business, such as fees to independent contractors. Legislation enacted in 2025 raises this threshold for payments made after 2025, so check the form year's instructions.",
     "distractorExplanations": {
-      "a": "Employees receive W-2, not 1099-NEC.",
-      "b": "Dividends use 1099-DIV.",
-      "d": "Personal gifts without business context are not 1099-NEC items."
+      "a": "Rents, prizes, and awards are reported on Form 1099-MISC; Form 1099-NEC is for nonemployee compensation.",
+      "b": "Card and payment-app transactions are reported by settlement entities on Form 1099-K, not Form 1099-NEC.",
+      "c": "Payments to corporations are generally exempt from 1099-NEC (attorney fees excepted), and $5,000 is not the threshold."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2614,27 +2614,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace each employee's Social Security number on Form W-2"
+        "text": "Identify the business on tax returns, payroll deposits, and information returns"
       },
       {
         "id": "b",
-        "text": "Avoid all payroll tax obligations permanently"
+        "text": "Report employee wages on Form W-2 in place of each employee's Social Security number"
       },
       {
         "id": "c",
-        "text": "Register personal vehicles for state DMV purposes"
+        "text": "Obtain the electronic filing identification number required to e-file returns"
       },
       {
         "id": "d",
-        "text": "Identify the business on tax returns, payroll deposits, and information returns"
+        "text": "Replace the owner's SSN on the owner's own Form 1040"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "EIN is the business federal tax ID; employees still use SSNs on W-2s.",
     "distractorExplanations": {
-      "a": "Employee SSNs remain on W-2.",
-      "b": "EIN does not eliminate payroll taxes.",
-      "c": "DMV registration is unrelated to EIN."
+      "b": "Form W-2 shows the employer's EIN and each employee's SSN; the EIN does not replace employee SSNs.",
+      "c": "An EFIN comes from the IRS e-file provider application; an EIN is the business taxpayer ID.",
+      "d": "An EIN identifies the business; the owner still uses an SSN on the individual Form 1040."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2647,27 +2647,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Corporations accumulating earnings beyond reasonable business needs to avoid shareholder-level tax"
+        "text": "Personal holding companies earning mostly passive investment income such as dividends and royalties"
       },
       {
         "id": "b",
-        "text": "S corporations with pass-through income reported on Schedule K-1"
+        "text": "Corporations accumulating earnings beyond reasonable business needs to avoid shareholder-level tax"
       },
       {
         "id": "c",
-        "text": "Sole proprietors filing Schedule C"
+        "text": "S corporations with accumulated E&P from C years and excess passive investment income"
       },
       {
         "id": "d",
-        "text": "Tax-exempt organizations filing Form 990"
+        "text": "C corporations paying dividends beyond current earnings and profits to their shareholders"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "AET is a C corporation penalty tax concept; reasonable needs of the business is a key defense.",
     "distractorExplanations": {
-      "b": "S corps pass through income to shareholders.",
-      "c": "Schedule C is individual business reporting.",
-      "d": "Exempt orgs follow different rules."
+      "a": "Passive-income companies face the separate personal holding company tax and are excluded from the accumulated earnings tax.",
+      "c": "That is the §1375 tax on S corporations' excess passive income, not the accumulated earnings tax.",
+      "d": "Distributions exceeding E&P are a return of capital; AET penalizes retaining, not distributing, earnings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2680,27 +2680,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Fully deductible immediately without limitation"
+        "text": "Deductible currently if the sale price equals fair market value as set by an appraisal"
       },
       {
         "id": "b",
-        "text": "Disallowed currently, with potential offsetting rules when the related party later sells"
+        "text": "Deferred until the related buyer resells, then deducted by the original seller at that time"
       },
       {
         "id": "c",
-        "text": "Converted automatically to charitable contributions"
+        "text": "Disallowed currently, with potential offsetting rules when the related party later sells"
       },
       {
         "id": "d",
-        "text": "Ignored because related-party transactions are always tax-free"
+        "text": "Disallowed currently and added to the related buyer's basis"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Related-party loss disallowance prevents shifting losses; basis and holding period rules also apply.",
     "distractorExplanations": {
-      "a": "Immediate deduction is usually not allowed.",
-      "c": "Losses are not recharacterized as charity.",
-      "d": "Related-party sales are not automatically tax-free."
+      "a": "§267 disallows losses between related parties even when the price equals appraised fair market value.",
+      "b": "The original seller does not get the loss later; the buyer may use it to reduce gain on a later resale.",
+      "d": "The disallowed loss is not added to the buyer's basis; it can be used to offset the buyer's later gain."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2713,27 +2713,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Expense all research costs in the year paid without capitalization"
+        "text": "Expense direct and indirect production costs as period costs"
       },
       {
         "id": "b",
-        "text": "Avoid maintaining any inventory records"
+        "text": "Capitalize all selling and marketing costs into inventory"
       },
       {
         "id": "c",
-        "text": "Capitalize certain indirect costs into inventory or produced property rather than deducting immediately"
+        "text": "Capitalize certain indirect costs into inventory or produced property"
       },
       {
         "id": "d",
-        "text": "Use cash method regardless of inventory levels"
+        "text": "Capitalize indirect costs even if gross receipts are under $31 million"
       }
     ],
     "correctOptionId": "c",
     "explanation": "UNICAP affects manufacturers, resellers, and producers by requiring capitalization of allocable costs.",
     "distractorExplanations": {
-      "a": "R&D may have separate capitalization/amortization rules.",
-      "b": "Inventory businesses need records.",
-      "d": "Large inventory can force accrual method."
+      "a": "UNICAP requires capitalizing allocable direct and indirect costs, not expensing them as period costs.",
+      "b": "Selling, advertising, and distribution costs are excluded from UNICAP; it covers production and resale costs.",
+      "d": "Small businesses meeting the §448(c) gross receipts test ($31 million for 2025) are exempt from UNICAP."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2746,27 +2746,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A capital loss limited to $3,000 per year without exception"
+        "text": "A short-term capital loss when the debt becomes totally worthless"
       },
       {
         "id": "b",
-        "text": "A charitable contribution on Schedule A"
+        "text": "An ordinary loss using the reserve method for estimated bad debts"
       },
       {
         "id": "c",
-        "text": "A nondeductible personal expense in every case"
+        "text": "An ordinary loss for unpaid cash-basis fees not yet reported as income"
       },
       {
         "id": "d",
-        "text": "An ordinary loss when worthlessness or partial charge-off is established under business debt rules"
+        "text": "An ordinary loss when worthlessness or partial charge-off is established"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Nonbusiness bad debts are typically short-term capital losses; business bad debts follow different treatment.",
     "distractorExplanations": {
-      "a": "Capital loss limits apply to nonbusiness bad debts.",
-      "b": "Bad debts are not charitable gifts.",
-      "c": "Business debts can be ordinary, not always nondeductible."
+      "a": "Short-term capital loss treatment applies to nonbusiness bad debts; business bad debts are ordinary losses.",
+      "b": "The reserve method is not allowed for most taxpayers; business bad debts use the specific charge-off method.",
+      "c": "Cash-method taxpayers cannot deduct uncollected fees not included in income; there is no basis in the receivable."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2779,27 +2779,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Limits NOL deductions to a percentage of taxable income in carryforward years (with limited carryback rules)"
+        "text": "Limits NOL deductions to a percentage of taxable income in carryforward years"
       },
       {
         "id": "b",
-        "text": "Allows the NOL to offset 100% of taxable income in every future year without cap"
+        "text": "Allows a two-year carryback and a 20-year carryforward with no percentage limit"
       },
       {
         "id": "c",
-        "text": "Requires immediate refund of all prior-year taxes paid"
+        "text": "Limits NOL carryforwards to 80% of taxable income for 20 years before expiration"
       },
       {
         "id": "d",
-        "text": "Forbids any carryforward of unused NOL amounts"
+        "text": "Allows a five-year carryback for losses arising in any tax year"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Post-TCJA NOL rules include an 80% taxable income limitation for many carryforwards and restricted carrybacks.",
     "distractorExplanations": {
-      "b": "100% offset is not current law for many NOLs.",
-      "c": "Automatic full refunds of old taxes are not the general rule.",
-      "d": "Carryforwards remain available within limits."
+      "b": "That is pre-TCJA law; post-2017 NOLs carry forward indefinitely and are capped at 80% of taxable income.",
+      "c": "The 80% cap is right, but post-2017 NOLs carry forward indefinitely rather than expiring after 20 years.",
+      "d": "The five-year carryback was a temporary CARES Act rule for 2018–2020 losses, not current law."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2812,27 +2812,27 @@
     "options": [
       {
         "id": "a",
-        "text": "S corporations never owe employment taxes on any payments"
+        "text": "Distributions above basis are subject to SE tax for active owners"
       },
       {
         "id": "b",
-        "text": "Too-low wages can recharacterize distributions to avoid payroll taxes"
+        "text": "IRS can recharacterize distributions as wages if salary is set too low"
       },
       {
         "id": "c",
-        "text": "All S corp income is automatically subject to self-employment tax"
+        "text": "High wages reduce the corporate AAA and trigger built-in gains tax"
       },
       {
         "id": "d",
-        "text": "Wages are optional if the shareholder owns 100% of stock"
+        "text": "Wages must equal at least 60% of S corporation net income"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "IRS examines whether W-2 wages are reasonable for services before treating remaining amounts as distributions.",
+    "explanation": "When an S corporation pays a shareholder-employee unreasonably low wages and takes the rest as distributions, the IRS can recharacterize those distributions as wages and assess FICA and employment taxes; reasonable compensation is judged on the services performed.",
     "distractorExplanations": {
-      "a": "Employment taxes apply to wages.",
-      "c": "Only wage/compensation amounts face FICA; distributions differ.",
-      "d": "100% ownership does not eliminate wage reasonableness rules."
+      "a": "Distributions above basis are capital gain, not SE income; the concern is distributions recharacterized as wages.",
+      "c": "Wages are deductible and do not trigger §1374 built-in gains tax; AAA is reduced by distributions and losses.",
+      "d": "No fixed 60% rule exists; reasonable compensation is a facts-and-circumstances test of services rendered."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2845,27 +2845,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Fully deductible in the first month without any election or limit"
+        "text": "Capitalized and amortized over 60 months"
       },
       {
         "id": "b",
-        "text": "Never deductible or amortizable under any circumstance"
+        "text": "Capitalized and depreciated over 39 years"
       },
       {
         "id": "c",
-        "text": "Capitalized and amortized over 180 months when an election is made, with limited immediate expensing allowed"
+        "text": "Capitalized and amortized over 180 months"
       },
       {
         "id": "d",
-        "text": "Deductible only on the shareholder's personal medical return"
+        "text": "Deducted in full up to $50,000 in year one"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Organizational and start-up costs have specific capitalization and §195 amortization rules.",
+    "explanation": "Organizational and start-up costs have specific capitalization and §195 amortization rules. Up to $5,000 can be expensed immediately (phased out above $50,000), with the rest amortized.",
     "distractorExplanations": {
-      "a": "Immediate full deduction is limited.",
-      "b": "Amortization election is available.",
-      "d": "Medical returns are unrelated."
+      "a": "Sixty months was the pre-2004 §195 amortization period; current law uses 180 months.",
+      "b": "39 years is the nonresidential real property life; start-up costs are amortized over 180 months.",
+      "d": "$50,000 is the phase-out threshold; the immediate deduction is $5,000, reduced dollar-for-dollar above it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2878,15 +2878,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Individual filing status on Form 1040"
+        "text": "Sharing of graduated corporate tax brackets among members of the controlled group"
       },
       {
         "id": "b",
-        "text": "Personal exemption amounts on dependent returns"
+        "text": "Consolidated filing of one Form 1120 for brother-sister groups"
       },
       {
         "id": "c",
-        "text": "Municipal bond tax exemption at the state level"
+        "text": "Treatment of each member's employees as independent contractors"
       },
       {
         "id": "d",
@@ -2896,9 +2896,9 @@
     "correctOptionId": "d",
     "explanation": "Controlled groups must aggregate employees for retirement plan coverage and nondiscrimination testing.",
     "distractorExplanations": {
-      "a": "Filing status is individual, not controlled-group driven.",
-      "b": "Personal exemptions were suspended for many years.",
-      "c": "Muni bond rules are unrelated to controlled groups."
+      "a": "Graduated corporate brackets ended with the flat 21% rate under TCJA, so bracket sharing no longer matters.",
+      "b": "Consolidated returns are for affiliated parent-subsidiary groups; brother-sister groups cannot file one return.",
+      "c": "Worker classification uses common-law control tests; controlled group status does not convert employees."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2915,23 +2915,23 @@
       },
       {
         "id": "b",
-        "text": "All profits are shifted to zero-tax jurisdictions without substance"
+        "text": "Prices match the related parties' cost plus a fixed 10% markup"
       },
       {
         "id": "c",
-        "text": "Intercompany loans need no interest under any circumstance"
+        "text": "Prices and terms follow the parent company's internal budget rates approved by its board"
       },
       {
         "id": "d",
-        "text": "Related parties may ignore inventory cost methods entirely"
+        "text": "Prices and terms minimize combined worldwide tax for the group"
       }
     ],
     "correctOptionId": "a",
     "explanation": "IRS and OECD guidelines require contemporaneous documentation supporting arm's-length pricing for international related-party deals.",
     "distractorExplanations": {
-      "b": "Profit shifting without substance invites penalties.",
-      "c": "Intercompany loans usually require arm's-length interest.",
-      "d": "Inventory methods still apply to related parties."
+      "b": "Cost plus is one possible method, but no fixed 10% markup is required; results must fall in an arm's-length range.",
+      "c": "Internal budget rates are not a §482 standard; pricing must reflect what unrelated parties would agree to.",
+      "d": "Minimizing worldwide tax is not a §482 standard; the IRS may reallocate income that departs from arm's length."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2944,27 +2944,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The taxpayer uses the standard deduction on Form 1040"
+        "text": "Adjusted gross income exceeds thresholds and the business has no W-2 employees"
       },
       {
         "id": "b",
-        "text": "Taxable income exceeds thresholds and the business is a specified service trade or business (SSTB) without exceptions"
+        "text": "Taxable income exceeds thresholds and the business is a specified service trade or business"
       },
       {
         "id": "c",
-        "text": "The taxpayer files Form 1040 on time"
+        "text": "Taxable income is below thresholds and the business pays no W-2 wages"
       },
       {
         "id": "d",
-        "text": "The entity is a sole proprietorship by definition alone"
+        "text": "The business is an S corporation paying its shareholder-employee reasonable compensation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "W-2 wage and UBIA limits phase in above thresholds; SSTBs face additional restrictions.",
     "distractorExplanations": {
-      "a": "Standard deduction choice does not alone eliminate §199A.",
-      "c": "Timely filing does not create a 199A limitation.",
-      "d": "Sole props can qualify if other tests are met."
+      "a": "Limits key off taxable income before the QBI deduction, not AGI; wage limits matter above the threshold.",
+      "c": "Below the threshold the W-2 wage and UBIA limits do not apply, so the full 20% deduction is generally available.",
+      "d": "S corporation income qualifies; the owner's reasonable compensation is excluded from QBI but causes no limitation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2977,15 +2977,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Sign the taxpayer's original return without authorization"
+        "text": "Sign the original return on the taxpayer's behalf once a Form 2848 is filed"
       },
       {
         "id": "b",
-        "text": "Ignore IRS correspondence addressed to the taxpayer"
+        "text": "Answer only the IRS correspondence sent to the representative, leaving taxpayer notices aside"
       },
       {
         "id": "c",
-        "text": "Disclose another client's confidential records to the revenue agent"
+        "text": "Bring a second client's records to show the agent consistent industry practice"
       },
       {
         "id": "d",
@@ -2995,9 +2995,9 @@
     "correctOptionId": "d",
     "explanation": "Representation requires valid authority (e.g., Form 2848) and adherence to Circular 230 duties.",
     "distractorExplanations": {
-      "a": "Signing returns requires specific authorization.",
-      "b": "Correspondence must be addressed promptly.",
-      "c": "Other clients' records are confidential."
+      "a": "A Form 2848 does not authorize signing a return unless the narrow Reg. 1.6012-1(a)(5) conditions are met and stated.",
+      "b": "Notices sent to the taxpayer also need a response; representatives coordinate replies to relevant IRS correspondence.",
+      "c": "Sharing another client's records breaches §7216 and Circular 230 confidentiality duties."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3010,27 +3010,27 @@
     "options": [
       {
         "id": "a",
-        "text": "90 days from the date the notice was mailed (not including extensions for payment alone)"
+        "text": "90 days from the date the notice was mailed"
       },
       {
         "id": "b",
-        "text": "Three years from the original return due date regardless of notice"
+        "text": "120 days from the date the notice was mailed"
       },
       {
         "id": "c",
-        "text": "Thirty days with automatic extension if they call the IRS"
+        "text": "150 days from the date the notice was mailed to a U.S. address"
       },
       {
         "id": "d",
-        "text": "Only after paying the full proposed tax in full as a prerequisite in every case"
+        "text": "180 days from the date the notice was mailed"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "The 90-day period is jurisdictional; missing it forecloses Tax Court review of the deficiency.",
+    "explanation": "The 90-day period is jurisdictional; missing it forecloses Tax Court review of the deficiency. Requests to pay or extensions of time to pay do not extend the period; it is 150 days if the notice is addressed outside the U.S.",
     "distractorExplanations": {
-      "b": "Three-year rules apply to other contexts, not Tax Court petitions.",
-      "c": "Phone calls do not extend the 90-day deadline.",
-      "d": "Tax Court prepayment petition is available without paying first."
+      "b": "No 120-day rule applies; the petition is due within 90 days (150 days if addressed outside the U.S.).",
+      "c": "150 days applies when the notice is addressed to a person outside the U.S.; U.S. addresses get 90 days.",
+      "d": "180 days is not a Tax Court deadline; the deficiency petition is due 90 days after the notice is mailed."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3043,7 +3043,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Authorize a third party to receive refund checks"
+        "text": "Authorize a representative to receive confidential collection information from the IRS"
       },
       {
         "id": "b",
@@ -3051,19 +3051,19 @@
       },
       {
         "id": "c",
-        "text": "Elect S corporation status retroactively"
+        "text": "Request a Collection Due Process hearing after a final notice of levy"
       },
       {
         "id": "d",
-        "text": "Claim innocent spouse relief automatically"
+        "text": "Compute the trust fund recovery penalty for responsible business officers"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Collection financial statements document income, expenses, assets, and liabilities for IRS collection decisions.",
     "distractorExplanations": {
-      "a": "Refund check authorization uses other forms.",
-      "c": "S election uses Form 2553.",
-      "d": "Innocent spouse uses Form 8857."
+      "a": "Information authorization uses Form 8821 (or 2848); Forms 433-A/B are collection financial statements.",
+      "c": "CDP hearings are requested on Form 12153; Form 433-A/B supplies financial data within collection cases.",
+      "d": "TFRP is proposed via Letter 1153 after a Form 4180 interview; Form 433-B describes a business's finances."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3076,11 +3076,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The taxpayer elected married filing separately on a joint return"
+        "text": "The IRS accepted a return the taxpayer filed after the extended due date"
       },
       {
         "id": "b",
-        "text": "A valid extension was automatically granted for six months"
+        "text": "The IRS filed a return for the taxpayer that includes all available deductions"
       },
       {
         "id": "c",
@@ -3088,15 +3088,15 @@
       },
       {
         "id": "d",
-        "text": "All penalties are permanently waived"
+        "text": "The IRS converted a joint return to MFS after a spouse disputed it"
       }
     ],
     "correctOptionId": "c",
     "explanation": "SFRs often omit beneficial deductions; filing a true return may be preferable when allowed.",
     "distractorExplanations": {
-      "a": "MFS election is taxpayer-filed, not an SFR.",
-      "b": "Extensions require Form 4868 or other valid request.",
-      "d": "SFR does not waive penalties."
+      "a": "A late original return filed by the taxpayer is still a taxpayer return; an SFR is prepared by the IRS for nonfilers.",
+      "b": "SFRs typically use single or MFS status and the standard deduction, omitting deductions and credits the taxpayer could claim.",
+      "d": "SFR has nothing to do with MFS conversions; it is an IRS-prepared basis for assessing a missing return."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3109,27 +3109,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminates all interest and penalties from the due date forward"
+        "text": "Stops interest from accruing once the agreement is approved"
       },
       {
         "id": "b",
-        "text": "Requires no financial disclosure in any case"
+        "text": "Requires Form 433-A for every balance, even under $10,000"
       },
       {
         "id": "c",
-        "text": "Automatically reduces the tax liability to zero"
+        "text": "Reduces the balance owed to what the taxpayer can afford"
       },
       {
         "id": "d",
-        "text": "Allows monthly payments when the IRS approves terms based on amount owed and financial ability"
+        "text": "Allows monthly payments when the IRS approves terms"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Installment agreements accrue interest and may include user fees; larger balances may need detailed financials.",
+    "explanation": "Installment agreements accrue interest and may include user fees; larger balances may need detailed financials. Terms depend on the amount owed and the taxpayer's financial ability.",
     "distractorExplanations": {
-      "a": "Interest generally continues during IA.",
-      "b": "Financial disclosure may be required for larger balances.",
-      "c": "IA does not reduce tax owed, only payment timing."
+      "a": "Interest continues to accrue on the unpaid balance under an installment agreement; only the failure-to-pay rate drops.",
+      "b": "Guaranteed and streamlined agreements under $50,000 generally need no Form 433-A financial statement.",
+      "c": "Reducing the amount owed is an Offer in Compromise; an installment agreement spreads payment of the full balance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3146,23 +3146,23 @@
       },
       {
         "id": "b",
-        "text": "The last day to file an original return for the year"
+        "text": "The end of the IRS period to assess additional tax after the return is filed"
       },
       {
         "id": "c",
-        "text": "The deadline to amend a return for any reason without limit"
+        "text": "The last day to claim a refund of an overpayment for the tax year"
       },
       {
         "id": "d",
-        "text": "The date state sales tax permits expire"
+        "text": "The date an installment agreement must be fully paid to avoid default"
       }
     ],
     "correctOptionId": "a",
     "explanation": "CSED is typically ten years from assessment, extended by OIC, bankruptcy, CDP, or other events.",
     "distractorExplanations": {
-      "b": "Original filing deadlines differ from collection statutes.",
-      "c": "Amendment periods are separate rules.",
-      "d": "Sales tax permits are state, not federal CSED."
+      "b": "Assessment generally must occur within 3 years (ASED); the CSED is the 10-year collection period after assessment.",
+      "c": "Refund claims follow the 3-year/2-year rule of §6511; the CSED governs IRS collection, not refunds.",
+      "d": "IA terms may run to the CSED, but the CSED itself is the statutory end of the collection period."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3175,27 +3175,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The tax liability is forgiven and removed from records permanently"
+        "text": "The IRS writes off the balance after six months"
       },
       {
         "id": "b",
-        "text": "The IRS pauses enforced collection because the taxpayer cannot pay basic living expenses"
+        "text": "The IRS pauses enforced collection"
       },
       {
         "id": "c",
-        "text": "The taxpayer is exempt from filing future returns"
+        "text": "The taxpayer stops filing returns while in hardship"
       },
       {
         "id": "d",
-        "text": "All penalties and interest stop accruing"
+        "text": "Penalties and interest stop accruing on the balance"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "CNC is temporary hardship relief; liabilities remain and interest may continue.",
+    "explanation": "CNC is temporary hardship relief; liabilities remain and interest may continue. CNC applies when the taxpayer cannot pay basic living expenses.",
     "distractorExplanations": {
-      "a": "CNC is not forgiveness.",
-      "c": "Future filing obligations continue.",
-      "d": "Interest may still accrue during CNC."
+      "a": "CNC does not forgive the debt; the balance remains on the account and the CSED keeps running.",
+      "c": "Taxpayers in CNC must continue filing returns; noncompliance can end CNC status.",
+      "d": "Interest and the failure-to-pay penalty generally continue to accrue during CNC status."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3208,11 +3208,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Late filing of individual Form 1040 with no balance due"
+        "text": "Negligent failure to deposit the employer's share of FICA"
       },
       {
         "id": "b",
-        "text": "Claiming the standard deduction instead of itemizing"
+        "text": "Willful failure to pay the corporation's income tax balance"
       },
       {
         "id": "c",
@@ -3220,15 +3220,15 @@
       },
       {
         "id": "d",
-        "text": "Deducting legitimate business meals at allowed percentages"
+        "text": "Willful failure to file Forms W-2 with the SSA on time"
       }
     ],
     "correctOptionId": "c",
     "explanation": "TFRP targets withheld income and FICA taxes considered held in trust for the government.",
     "distractorExplanations": {
-      "a": "Individual late filing without trust funds is different.",
-      "b": "Deduction method choice is unrelated.",
-      "d": "Meals deductions are unrelated to employment tax trust funds."
+      "a": "TFRP covers withheld trust fund taxes (income tax and employee FICA) and requires willfulness, not negligence.",
+      "b": "Corporate income tax is not a trust fund tax; TFRP applies to withheld employment taxes.",
+      "d": "Late W-2 filing triggers information-return penalties under §6721, not the Trust Fund Recovery Penalty."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3241,27 +3241,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Sets individual income tax brackets each year"
+        "text": "Processes PTIN applications and renewals for paid return preparers"
       },
       {
         "id": "b",
-        "text": "Prints paper refund checks for all taxpayers"
+        "text": "Administers the Special Enrollment Examination for EA candidates"
       },
       {
         "id": "c",
-        "text": "Administers state bar licensing for attorneys nationwide"
+        "text": "Reviews disputed audit adjustments as an independent appeals forum"
       },
       {
         "id": "d",
-        "text": "Investigates practitioner misconduct and may impose sanctions under Circular 230"
+        "text": "Investigates practitioner misconduct and may impose sanctions"
       }
     ],
     "correctOptionId": "d",
     "explanation": "OPR handles Circular 230 discipline; tax law administration is separate IRS functions.",
     "distractorExplanations": {
-      "a": "Tax brackets are statutory/Treasury/IRS published.",
-      "b": "Refund disbursement is not OPR's role.",
-      "c": "State bars license attorneys, not OPR."
+      "a": "PTINs are administered by the IRS Return Preparer Office; OPR handles Circular 230 discipline.",
+      "b": "The SEE is run by the IRS through its testing vendor, not by OPR, whose role is disciplinary.",
+      "c": "Independent review of audit disputes is the IRS Independent Office of Appeals, not OPR."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3274,27 +3274,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Face economic harm or have unresolved IRS problems the normal channels cannot fix timely"
+        "text": "Face economic harm or have unresolved IRS problems"
       },
       {
         "id": "b",
-        "text": "Need free tax return preparation in every case without criteria"
+        "text": "Want an independent review of an audit adjustment"
       },
       {
         "id": "c",
-        "text": "Want to choose any filing status regardless of law"
+        "text": "Need free return preparation through VITA sites"
       },
       {
         "id": "d",
-        "text": "Seek automatic approval of all Offers in Compromise"
+        "text": "Seek a private letter ruling on a proposed transaction"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "TAS is an independent organization within the IRS focused on systemic and hardship cases.",
+    "explanation": "TAS is an independent organization within the IRS focused on systemic and hardship cases. TAS steps in when normal IRS channels cannot fix the problem timely.",
     "distractorExplanations": {
-      "b": "VITA/TCE programs assist with prep; TAS is different.",
-      "c": "Filing status must follow law.",
-      "d": "OIC acceptance requires IRS evaluation."
+      "b": "Independent review of audit adjustments is the Office of Appeals; TAS resolves hardship and systemic problems.",
+      "c": "VITA and TCE provide free preparation; TAS helps with unresolved IRS problems and economic harm.",
+      "d": "PLRs are issued by IRS Chief Counsel; TAS does not rule on substantive tax law questions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3307,27 +3307,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The taxpayer requested a routine six-month extension"
+        "text": "The taxpayer filed a frivolous return position"
       },
       {
         "id": "b",
-        "text": "Collection of tax is in jeopardy because the taxpayer may quickly leave the country or dissipate assets"
+        "text": "Collection of tax is in jeopardy"
       },
       {
         "id": "c",
-        "text": "The return was filed electronically with direct deposit"
+        "text": "The assessment statute will expire within 90 days"
       },
       {
         "id": "d",
-        "text": "The taxpayer owes less than the standard deduction amount"
+        "text": "The taxpayer has missed two installment payments"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Jeopardy assessments are extraordinary immediate assessments with limited prior notice.",
+    "explanation": "Jeopardy assessments are extraordinary immediate assessments with limited prior notice. Typical triggers: the taxpayer may quickly leave the country or dissipate assets.",
     "distractorExplanations": {
-      "a": "Extensions are routine, not jeopardy triggers.",
-      "c": "E-file and direct deposit are normal.",
-      "d": "Jeopardy relates to collection risk, not deduction size."
+      "a": "Frivolous returns draw the §6702 $5,000 penalty; jeopardy assessments are about collection being endangered.",
+      "c": "An expiring statute calls for a statute extension or quick assessment; jeopardy depends on collection risk.",
+      "d": "Missed IA payments lead to default notices and possible levy, not a jeopardy assessment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3340,27 +3340,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited time to claim any refund regardless of filing"
+        "text": "Two years from the return filing date or three years from the date the tax was paid"
       },
       {
         "id": "b",
-        "text": "Thirty days from the original due date"
+        "text": "Three years from the date of assessment, or ten years if unpaid"
       },
       {
         "id": "c",
-        "text": "Three years from the return due date (or filing date) or two years from payment, with later date controlling in some cases"
+        "text": "Three years from the return due date (or filing date) or two years from payment"
       },
       {
         "id": "d",
-        "text": "Ten years after the CSED expires automatically"
+        "text": "Ten years from the date of assessment, matching the CSED period"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Refund statutes differ from assessment statutes; missed deadlines can forfeit refunds.",
     "distractorExplanations": {
-      "a": "Refunds are time-barred after statutory periods.",
-      "b": "Thirty days is not the general refund rule.",
-      "d": "CSED and refund periods are distinct."
+      "a": "The periods are reversed: three years from filing or two years from payment, whichever is later.",
+      "b": "The assessment date and the 10-year collection statute do not set the refund claim period under §6511.",
+      "d": "Ten years is the collection statute; refund claims follow the 3-year/2-year rule of §6511."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3373,27 +3373,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic discharge of the tax debt"
+        "text": "Suspension of the taxpayer's state driver's license by the IRS"
       },
       {
         "id": "b",
-        "text": "Permanent loss of Social Security benefits without process"
+        "text": "A 15% FPLP levy on Social Security benefits"
       },
       {
         "id": "c",
-        "text": "Mandatory conversion of the debt to a charitable contribution"
+        "text": "Denial of a U.S. visa for the taxpayer's foreign spouse"
       },
       {
         "id": "d",
-        "text": "State Department denial or revocation of a U.S. passport (with exceptions and relief paths)"
+        "text": "State Department denial or revocation of a U.S. passport"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Fixing Debt Passport law links large unpaid debts to passport actions after certification procedures.",
     "distractorExplanations": {
-      "a": "Debt is not discharged by certification.",
-      "b": "Social Security is unrelated to passport certification.",
-      "c": "Tax debts are not recharacterized as charity."
+      "a": "Federal tax debt certification affects passports; driver's license suspension is a state child-support or state tax tool.",
+      "b": "The Federal Payment Levy Program is a separate collection tool; §7345 certification goes to the State Department.",
+      "c": "Certification affects the delinquent taxpayer's own passport, not visas for relatives."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3406,27 +3406,27 @@
     "options": [
       {
         "id": "a",
-        "text": "May comply, challenge in court within time limits, or seek to quash if procedurally or privilege defective"
+        "text": "May comply, challenge in court within time limits, or seek to quash"
       },
       {
         "id": "b",
-        "text": "Must always surrender all documents with no review or challenge"
+        "text": "Must comply within 10 days or face arrest without a court order"
       },
       {
         "id": "c",
-        "text": "Is automatically criminally prosecuted for receiving any summons"
+        "text": "May petition the Tax Court within 90 days to quash the summons"
       },
       {
         "id": "d",
-        "text": "Can ignore federal summons because state law overrides IRS authority"
+        "text": "May ignore it unless the IRS re-serves it through state court"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Summons enforcement goes through district court; privileges and relevance may be litigated.",
     "distractorExplanations": {
-      "b": "Compliance or timely challenge are the options.",
-      "c": "Summons alone does not equal prosecution.",
-      "d": "Federal summons authority preempts inconsistent state claims."
+      "b": "IRS summonses are enforced through a federal district court; there is no self-executing arrest power.",
+      "c": "Third-party summons challenges go to federal district court (20-day petition to quash), not the Tax Court.",
+      "d": "State courts play no role; IRS summonses are enforced in federal district court under §§7402 and 7604."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3439,27 +3439,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Creates unlimited privilege for all tax work performed by the accountant"
+        "text": "Extends attorney-client privilege to an accountant's return preparation work once an attorney engages the firm"
       },
       {
         "id": "b",
-        "text": "May extend attorney-client privilege to an accountant hired by counsel to help the attorney provide legal advice, not to routine return preparation"
+        "text": "May extend attorney-client privilege to an accountant hired by counsel to help the attorney provide legal advice"
       },
       {
         "id": "c",
-        "text": "Eliminates the practitioner's Circular 230 duties entirely"
+        "text": "Gives the accountant the §7525 federally authorized practitioner privilege in criminal tax investigations"
       },
       {
         "id": "d",
-        "text": "Allows the accountant to represent the client in Tax Court without enrollment"
+        "text": "Lets the accountant represent the client before Appeals without filing a Form 2848 for the periods"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Kovel covers accountants engaged to assist counsel with legal advice; ordinary compliance work remains unprivileged.",
+    "explanation": "Kovel covers accountants engaged to assist counsel with legal advice; ordinary compliance work remains unprivileged. It does not cover routine return preparation.",
     "distractorExplanations": {
-      "a": "Privilege is limited, not blanket for all tax work.",
-      "c": "Circular 230 still applies to practitioners.",
-      "d": "Tax Court practice requires proper authorization/enrollment."
+      "a": "Return preparation is not legal advice, so Kovel privilege does not cover it even when counsel hires the accountant.",
+      "c": "The §7525 privilege does not apply in criminal matters, and Kovel rests on attorney-client privilege, not §7525.",
+      "d": "Kovel engagements concern privilege; representation before the IRS still requires a valid Form 2848."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3476,7 +3476,7 @@
       },
       {
         "id": "b",
-        "text": "Only state real estate courses with no tax content"
+        "text": "Ethics hours and federal tax law updates over a three-year enrollment cycle"
       },
       {
         "id": "c",
@@ -3484,15 +3484,15 @@
       },
       {
         "id": "d",
-        "text": "Ethics hours and federal tax law updates over a three-year enrollment cycle"
+        "text": "Only state real estate courses with no tax content"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "b",
     "explanation": "EA CE requirements are published by IRS; failure can affect enrollment status.",
     "distractorExplanations": {
       "a": "CE is ongoing, not one-time.",
-      "b": "Real estate CE does not substitute for EA tax CE.",
-      "c": "Ethics is recurring, not lifetime-only."
+      "c": "Ethics is recurring, not lifetime-only.",
+      "d": "Real estate CE does not substitute for EA tax CE."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3505,27 +3505,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Certain refundable credits such as EITC, CTC/ACTC/ODC, and AOTC on paid-prepared returns"
+        "text": "Credits such as the premium tax credit and dependent care credit on paid returns"
       },
       {
         "id": "b",
-        "text": "Only corporate estimated tax payments"
+        "text": "Credits such as EITC, CTC, and the Lifetime Learning Credit on any return"
       },
       {
         "id": "c",
-        "text": "Exclusively foreign earned income exclusion on Form 2555"
+        "text": "Certain credits such as EITC, CTC/ACTC/ODC, and AOTC on paid-prepared returns"
       },
       {
         "id": "d",
-        "text": "Personal casualty losses with no credit involved"
+        "text": "The EITC only, when the client has no qualifying children"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Due diligence includes knowledge questions, document retention, and credit eligibility verification.",
     "distractorExplanations": {
-      "b": "Estimated tax payments are not covered by 8867.",
-      "c": "FEIE claims use different forms.",
-      "d": "Casualty losses are not the 8867 credit focus."
+      "a": "Form 8867 covers EITC, CTC/ACTC/ODC, AOTC, and HOH status, not the premium tax credit or dependent care credit.",
+      "b": "The Lifetime Learning Credit is not covered by Form 8867, and the form applies to paid-prepared returns.",
+      "d": "Form 8867 covers the EITC with or without children plus CTC/ACTC/ODC, AOTC, and HOH filing status."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3538,27 +3538,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Mail paper returns exclusively regardless of volume"
+        "text": "E-file those returns only if clients sign Form 8948 consents"
       },
       {
         "id": "b",
-        "text": "E-file those returns unless an approved hardship exception applies"
+        "text": "Register for an EFIN, then paper-file returns over the limit"
       },
       {
         "id": "c",
-        "text": "Avoid signing returns to bypass e-file rules"
+        "text": "E-file those returns once they file 100 or more per year"
       },
       {
         "id": "d",
-        "text": "Use only state portals with no IRS involvement"
+        "text": "E-file those returns unless an approved hardship exception applies"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "E-file mandates promote accuracy and processing efficiency; exceptions are limited.",
     "distractorExplanations": {
-      "a": "High-volume preparers must e-file.",
-      "c": "Signing requirements remain.",
-      "d": "Federal returns go through IRS systems."
+      "a": "Form 8948 documents a client's choice to paper file; the default for specified preparers is e-file.",
+      "b": "An EFIN lets a preparer e-file; it does not permit paper-filing returns that fall under the e-file mandate.",
+      "c": "The specified tax return preparer threshold is 11 or more individual or trust returns per year, not 100."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3571,11 +3571,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave the preparer section blank to protect anonymity"
+        "text": "Sign the return and provide the firm's EIN instead of a PTIN"
       },
       {
         "id": "b",
-        "text": "Use a client's SSN as the preparer tax ID"
+        "text": "Sign the return only if they hold an EA, CPA, or attorney credential"
       },
       {
         "id": "c",
@@ -3583,15 +3583,15 @@
       },
       {
         "id": "d",
-        "text": "Sign only if the client pays in cash on the spot"
+        "text": "Provide the PTIN but leave signing to the taxpayer alone"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Preparer signature and PTIN identify who prepared the return for IRS enforcement.",
     "distractorExplanations": {
-      "a": "Blank preparer sections violate rules.",
-      "b": "PTIN is preparer-specific, not client's SSN.",
-      "d": "Payment method does not determine signing duty."
+      "a": "The firm EIN may also appear, but each signing preparer must enter a personal PTIN on the return.",
+      "b": "Paid preparers must sign whether credentialed or not; credentials do not determine the signing duty.",
+      "d": "Both the taxpayer and the paid preparer sign; the preparer's signature requirement is separate under §6695(b)."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3604,27 +3604,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Transmit the same return repeatedly without changes until accepted"
+        "text": "Contact the client, verify the correct TIN, and retransmit after correction"
       },
       {
         "id": "b",
-        "text": "Substitute a fabricated TIN to force acceptance"
+        "text": "Retransmit with the mismatched dependent removed, without asking the client first"
       },
       {
         "id": "c",
-        "text": "Abandon the client file without notice or correction"
+        "text": "Use an ITIN from the client's prior file to force acceptance"
       },
       {
         "id": "d",
-        "text": "Contact the client, verify the correct TIN, and retransmit after correction"
+        "text": "Paper-file the same return to avoid the e-file TIN match"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "a",
     "explanation": "E-file rejects must be resolved with accurate data; fabricating TINs is fraud.",
     "distractorExplanations": {
-      "a": "Repeating unchanged data will keep failing.",
-      "b": "Fabricated TINs violate preparer and fraud rules.",
-      "c": "Abandoning clients without resolution breaches duties."
+      "b": "Changing a return without the client's knowledge is improper; the client must confirm data and approve changes.",
+      "c": "Substituting an old ITIN without verification risks a false return; the correct current TIN must be confirmed.",
+      "d": "Paper filing with a wrong TIN still fails processing; the TIN must be verified and corrected first."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3637,27 +3637,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Disclosure or use of tax return information without client consent or an exception"
+        "text": "IRS employees' disclosure of return information to state tax agencies and others"
       },
       {
         "id": "b",
-        "text": "The IRS from auditing any return ever filed"
+        "text": "Disclosure or use of tax return information without client consent or an exception"
       },
       {
         "id": "c",
-        "text": "Taxpayers from amending prior-year returns"
+        "text": "Disclosure of return information by the taxpayer to a mortgage lender"
       },
       {
         "id": "d",
-        "text": "States from collecting sales tax on retail purchases"
+        "text": "Preparer advertising that guarantees refunds or IRS approval"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "b",
     "explanation": "§7216 governs preparers and others handling return data; marketing uses often need consent.",
     "distractorExplanations": {
-      "b": "IRS audit authority is separate.",
-      "c": "Amended returns remain allowed.",
-      "d": "Sales tax is unrelated to §7216."
+      "a": "IRS disclosures are governed by §6103; §7216 applies to return preparers and related persons.",
+      "c": "Taxpayers may share their own information freely; §7216 restricts preparers and others in the tax business.",
+      "d": "Misleading advertising falls under Circular 230 §10.30, not the §7216 return-information rules."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3670,27 +3670,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Is the preferred method under Circular 230"
+        "text": "Is permitted if the client signs and files the return as self-prepared with no preparer"
       },
       {
         "id": "b",
-        "text": "Violates preparer rules and exposes clients to errors and identity theft risk"
+        "text": "Is permitted for preparers who file fewer than 11 returns a year"
       },
       {
         "id": "c",
-        "text": "Automatically qualifies the preparer as an Enrolled Agent"
+        "text": "Violates preparer rules and exposes clients to errors and identity theft risk"
       },
       {
         "id": "d",
-        "text": "Eliminates all preparer penalties for the client"
+        "text": "Shifts the §6694 penalties for the return onto the client"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Ghost preparers evade oversight; clients should verify PTIN and signature on returns.",
     "distractorExplanations": {
-      "a": "Ghost prep is prohibited, not preferred.",
-      "c": "EA status requires enrollment, not ghost prep.",
-      "d": "Penalties can still apply to clients for accuracy issues."
+      "a": "A client's signature does not cure the paid preparer's duty to sign and enter a PTIN under §6695.",
+      "b": "Eleven returns is the e-file mandate threshold; every paid preparer must still sign and use a PTIN.",
+      "d": "§6694 penalties are preparer penalties; clients face accuracy penalties for their own understatements."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3703,27 +3703,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Any position the client prefers regardless of law"
+        "text": "More-likely-than-not support"
       },
       {
         "id": "b",
-        "text": "Automatic penalty whenever the IRS disagrees on audit"
+        "text": "A realistic possibility of success"
       },
       {
         "id": "c",
-        "text": "Substantial authority (reasonable basis is the disclosed-position threshold, not the undisclosed one)"
+        "text": "Substantial authority"
       },
       {
         "id": "d",
-        "text": "Penalty only if the return is filed on paper"
+        "text": "A supporting opinion of counsel"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Undisclosed positions need substantial authority; disclosed positions may rely on reasonable basis. Tax shelters use a more-likely-than-not standard.",
     "distractorExplanations": {
-      "a": "Client preference alone is insufficient.",
-      "b": "IRS disagreement alone does not auto-trigger §6694.",
-      "d": "Filing method is irrelevant to §6694."
+      "a": "More-likely-than-not applies to tax shelters and reportable transactions; ordinary undisclosed positions need substantial authority.",
+      "b": "The one-in-three realistic possibility standard was replaced in 2007; undisclosed positions now need substantial authority.",
+      "d": "No opinion of counsel is required; the §6694(a) test turns on whether substantial authority supports the position."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3736,15 +3736,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only whether the position maximizes refund with no legal review"
+        "text": "Whether the position is likely to be audited, since low audit risk supports taking it"
       },
       {
         "id": "b",
-        "text": "Whether the position has never been tested because novelty alone suffices"
+        "text": "Whether the client is willing to pay the preparer penalty if assessed"
       },
       {
         "id": "c",
-        "text": "Ignoring contrary authority if the client insists"
+        "text": "The refund amount and whether disclosure would trigger an examination"
       },
       {
         "id": "d",
@@ -3754,9 +3754,9 @@
     "correctOptionId": "d",
     "explanation": "Circular 230 and §6694 frameworks emphasize reasonable inquiry and supportable positions.",
     "distractorExplanations": {
-      "a": "Refund size alone is not the standard.",
-      "b": "Novelty without authority is risky.",
-      "c": "Contrary authority must be considered."
+      "a": "§10.37 and §6694 analysis may not weigh audit risk; positions are judged on their merits and authority.",
+      "b": "Preparer penalties fall on the preparer and cannot be shifted by client agreement; authority strength controls.",
+      "c": "Refund size and fear of examination are not proper factors; disclosure decisions turn on the level of authority."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3773,23 +3773,23 @@
       },
       {
         "id": "b",
-        "text": "Silence because prior years are closed"
+        "text": "Filing an amended return for the client before the statute closes"
       },
       {
         "id": "c",
-        "text": "Automatic amendment without telling the client"
+        "text": "Notifying the IRS of the error if the client refuses to file an amended return"
       },
       {
         "id": "d",
-        "text": "Reporting the client to media before any client contact"
+        "text": "Withdrawing from all future work for the client immediately"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Practitioners should advise correction paths; they cannot force amendments but must not ignore known material errors.",
     "distractorExplanations": {
-      "b": "Prior years may still be amendable or subject to penalties.",
-      "c": "Amendments require client authorization.",
-      "d": "Public disclosure before client advice violates duties."
+      "b": "Under §10.21 the practitioner advises the client; amending requires the client's decision and signature.",
+      "c": "Circular 230 does not require reporting the client to the IRS; the duty is to advise and consider withdrawal.",
+      "d": "Withdrawal is not required; §10.21 requires advising the client, and later conduct may affect future work."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3802,27 +3802,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hide total costs until after the loan closes"
+        "text": "Describe the loan as an IRS expedited refund once e-filed"
       },
       {
         "id": "b",
-        "text": "Clearly disclose fees, that the loan is from a lender (not the IRS), and that refunds may differ"
+        "text": "Clearly disclose fees, that the loan is from a lender (not the IRS)"
       },
       {
         "id": "c",
-        "text": "Claim the IRS guarantees loan approval"
+        "text": "Disclose the loan fees only after the client signs the lender's loan documents"
       },
       {
         "id": "d",
-        "text": "Promise the same-day IRS refund directly from Treasury"
+        "text": "Present the refund transfer fee as an IRS processing charge"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Transparent RAL disclosures prevent misleading borrowers about timing and costs.",
+    "explanation": "Transparent RAL disclosures prevent misleading borrowers about timing and costs. Disclosures should also note that the actual refund may differ from the loan amount.",
     "distractorExplanations": {
-      "a": "Hidden fees violate UDAAP-style fairness expectations.",
-      "c": "IRS does not guarantee RAL approval.",
-      "d": "Treasury does not issue RAL proceeds directly."
+      "a": "RALs are third-party loans; describing them as IRS refunds is misleading under Circular 230 §10.30.",
+      "c": "Fees must be disclosed before the client commits; post-signing disclosure defeats informed consent.",
+      "d": "The IRS charges no e-file processing fee; refund transfer and loan fees belong to the bank or preparer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3835,27 +3835,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignoring IRS notices because they must be errors"
+        "text": "Filing Form 8821 so the IRS can lock the client's account"
       },
       {
         "id": "b",
-        "text": "Using another person's SSN on the next return"
+        "text": "Filing Form 8857 to have the fraudulent return removed from the client's account"
       },
       {
         "id": "c",
-        "text": "Filing Form 14039 or following IRS Identity Theft Victim Assistance procedures as appropriate"
+        "text": "Filing Form 14039 or following IRS Identity Theft Victim Assistance procedures"
       },
       {
         "id": "d",
-        "text": "Refusing to communicate with the IRS on any matter"
+        "text": "Filing a paper return with a new SSN requested from the IRS"
       }
     ],
     "correctOptionId": "c",
     "explanation": "IP PINs, identity theft affidavits, and specialized IRS units help resolve account issues.",
     "distractorExplanations": {
-      "a": "IRS notices may signal account compromise.",
-      "b": "Using another SSN is fraud.",
-      "d": "Communication through proper channels is necessary."
+      "a": "Form 8821 is an information authorization; identity theft victims file Form 14039 and may get an IP PIN.",
+      "b": "Form 8857 requests innocent spouse relief; identity theft affidavits use Form 14039.",
+      "d": "The SSA, not the IRS, issues SSNs and rarely changes them; the IRS protects victims with IP PINs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3868,15 +3868,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee IRS agreement with every written conclusion"
+        "text": "Follow the former covered-opinion rules for any advice on listed transactions"
       },
       {
         "id": "b",
-        "text": "Rely only on a promoter's marketing claims without inquiry"
+        "text": "Rely on a promoter's representations about the facts if the practitioner discloses that reliance"
       },
       {
         "id": "c",
-        "text": "Treat every casual email mentioning tax season as a formal opinion"
+        "text": "Include a disclaimer that the advice cannot be used to avoid penalties"
       },
       {
         "id": "d",
@@ -3886,9 +3886,9 @@
     "correctOptionId": "d",
     "explanation": "After withdrawal of the old covered-opinion rules, Circular 230 §10.37 sets a single written-advice standard of reasonable assumptions and due diligence.",
     "distractorExplanations": {
-      "a": "Practitioners cannot guarantee IRS acceptance.",
-      "b": "Promoter materials need independent evaluation.",
-      "c": "Informal mentions are not automatically formal opinions."
+      "a": "Covered-opinion rules (§10.35) were withdrawn in 2014; §10.37 now applies one standard to written advice.",
+      "b": "Reliance on a promoter is unreasonable under §10.37 when the advisor knows or should know of the conflict.",
+      "c": "The Circular 230 penalty disclaimer became unnecessary after the 2014 amendments; it is not required."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3934,27 +3934,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Destroying all client records immediately after e-filing without retention policy"
+        "text": "Keeping records for one year and shredding client originals after e-filing"
       },
       {
         "id": "b",
-        "text": "Keeping records per Circular 230 and IRS rules for the required period and returning client-owned documents on request"
+        "text": "Keeping records for the required period and returning client-owned documents on request"
       },
       {
         "id": "c",
-        "text": "Refusing to return source documents the client provided"
+        "text": "Keeping client originals until fees are paid and discarding workpapers after filing"
       },
       {
         "id": "d",
-        "text": "Storing only unsigned draft returns with no supporting evidence"
+        "text": "Keeping only the signed Form 8879 and returning all other documents to clients"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Retention supports due diligence defense; clients own their underlying documents.",
     "distractorExplanations": {
-      "a": "Immediate destruction violates best practice.",
-      "c": "Client records must be returned on lawful request.",
-      "d": "Supporting evidence should be retained with drafts as policy requires."
+      "a": "Preparers must keep return copies or a list for 3 years; client originals should be returned, not shredded.",
+      "c": "§10.28 requires returning client records even in fee disputes, and workpapers support due diligence.",
+      "d": "Form 8879 must be kept 3 years, but due diligence also requires retaining supporting records and workpapers."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

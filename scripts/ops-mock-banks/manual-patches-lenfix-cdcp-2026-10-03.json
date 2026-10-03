@@ -1,0 +1,3116 @@
+{
+ "cdcp-readiness-check": {
+  "cdcp-readiness-check-cooling-water-thermal-001": {
+   "options": {
+    "a": "Defined environmental classes allowing wider bands than legacy 20–25°C-only designs",
+    "b": "A single fixed 18–21°C band that every IT equipment class must hold at the rack inlet",
+    "c": "Rack exhaust temperature limits measured in the hot aisle rather than at server inlets",
+    "d": "Facility water supply limits set by the W-classes rather than by air inlet bands"
+   },
+   "distractorExplanations": {
+    "b": "Confuses legacy tight setpoints with ASHRAE's class-based envelopes; TC 9.9 recommends 18–27°C for classes A1–A4 plus wider allowable ranges, not one narrow fixed band.",
+    "c": "ASHRAE ranges are specified at the IT equipment air inlet; exhaust temperature is a result of load and delta-T, not the controlled parameter.",
+    "d": "Confuses ASHRAE's liquid-cooling W classes (facility water temperature) with the air-cooled A classes that define inlet air ranges."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-002": {
+   "options": {
+    "a": "CRAH has an integral DX compressor while CRAC relies on a central chilled water plant",
+    "b": "CRAH controls humidity only, while the CRAC handles sensible cooling of the IT load",
+    "c": "CRAH is built for overhead ducted supply while a CRAC requires a raised floor",
+    "d": "CRAH uses chilled water coils while CRAC typically has integral refrigeration"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the two: the CRAC carries its own compressor/DX refrigeration circuit, while the CRAH uses chilled water from a central plant.",
+    "b": "Both units provide sensible cooling and can include humidity control; the distinction is the cooling source (chilled water vs integral refrigeration), not a split of functions.",
+    "c": "Either unit can supply via a raised floor or ducted overhead air; the air delivery path does not define CRAH versus CRAC."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-003": {
+   "options": {
+    "a": "Reduce chiller lift but cut the number of annual free cooling hours",
+    "b": "Increase dehumidification capacity at the cooling coils in the hall",
+    "c": "Improve chiller efficiency and increase free cooling hours",
+    "d": "Allow smaller CRAH coils to deliver the same sensible cooling capacity"
+   },
+   "distractorExplanations": {
+    "a": "Higher CHW supply temperature increases free cooling hours because outdoor wet-bulb sits below the setpoint more often; it does not reduce them.",
+    "b": "Warmer coils remove less moisture, not more; an elevated CHW temperature reduces latent (dehumidification) capacity.",
+    "d": "Warmer chilled water reduces coil capacity per unit area, so coils typically need to be larger or carry more flow, not smaller."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-004": {
+   "options": {
+    "a": "Return air temperature to cooling units, raising delta-T and efficiency",
+    "b": "Supply air temperature at the rack inlet by chilling the cold aisle air further",
+    "c": "Static pressure under the raised floor so perforated tiles deliver more air",
+    "d": "Humidity stability in the white space by isolating latent load in the hot aisle"
+   },
+   "distractorExplanations": {
+    "b": "Hot aisle containment isolates exhaust so returns run hotter; it does not lower supply temperature — it lets supply setpoints rise.",
+    "c": "Containing the hot aisle affects return-air separation, not underfloor static pressure, which is set by fan speed and tile layout.",
+    "d": "Latent load in data halls is small and is not isolated by containment; the benefit of HAC is thermal separation and a higher return temperature."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-005": {
+   "options": {
+    "a": "Cool outdoor conditions to produce or assist chilled water",
+    "b": "Waste heat from chillers to regenerate desiccant dehumidifier wheels",
+    "c": "Hot-gas bypass to unload chiller compressors at low plant loads",
+    "d": "Thermal storage tanks charged by chillers at off-peak tariffs"
+   },
+   "distractorExplanations": {
+    "b": "Desiccant regeneration is a dehumidification technique, not economizing; free cooling uses cold ambient conditions to replace compressor work.",
+    "c": "Hot-gas bypass is a capacity-control method that keeps the compressor running inefficiently — the opposite of free cooling.",
+    "d": "That describes load shifting with chilled water storage; the chiller still performs mechanical refrigeration, so it is not an economizer."
+   },
+   "explanation": "Free cooling, also known as economization, leverages cool outdoor ambient conditions to reduce or eliminate the need for mechanical refrigeration in a chilled water plant. This can be achieved through waterside economizers (using cooling towers to cool water directly) or airside economizers (using outdoor air to cool the data center directly), significantly saving energy. Free cooling does this without full mechanical refrigeration."
+  },
+  "cdcp-readiness-check-cooling-water-thermal-006": {
+   "options": {
+    "a": "Leaving water temperature minus ambient dry-bulb",
+    "b": "Entering water minus leaving water temperature",
+    "c": "Leaving water temperature minus ambient wet-bulb",
+    "d": "Condenser water supply minus chilled water supply"
+   },
+   "distractorExplanations": {
+    "a": "Cooling towers reject heat evaporatively, so approach is referenced to wet-bulb, not dry-bulb (dry-bulb applies to dry coolers).",
+    "b": "Entering minus leaving water temperature is the tower range, not the approach.",
+    "d": "That difference relates to chiller lift, not tower approach, which compares leaving tower water with ambient wet-bulb."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-008": {
+   "options": {
+    "a": "Electrostatic discharge damage to circuit boards",
+    "b": "Condensation and corrosion on surfaces and media",
+    "c": "Reduced latent load on CRAC coils and dehumidifiers",
+    "d": "Tape media drying out and brittle cable jackets"
+   },
+   "distractorExplanations": {
+    "a": "ESD risk rises when humidity is too low (dry air), not too high; high RH drives condensation and corrosion.",
+    "c": "Higher humidity increases latent load on coils rather than reducing it; the real risk is condensation and corrosion.",
+    "d": "Drying and brittleness are associated with low humidity; high RH causes moisture absorption, condensation and corrosion."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-009": {
+   "options": {
+    "a": "Around the room perimeter to push air under a raised floor",
+    "b": "On the roof as packaged units ducted into the cold aisles",
+    "c": "On top of each cabinet to cool the air directly above the rack",
+    "d": "Adjacent to rack rows to capture heat near the source"
+   },
+   "distractorExplanations": {
+    "a": "That is the classic perimeter CRAC/CRAH layout; in-row units sit between racks within the row.",
+    "b": "Rooftop packaged units are remote air handlers, not in-row cooling, which is placed within the rack row next to the heat source.",
+    "c": "Overhead/top-of-rack units are a separate close-coupled type; in-row units are placed in the row alongside the racks."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-010": {
+   "options": {
+    "a": "Ducting rack exhaust to a ceiling plenum via chimneys",
+    "b": "Dielectric fluid circulating across server motherboards",
+    "c": "Perforated mesh rear doors that boost passive exhaust flow",
+    "d": "Active water-cooled coils mounted on rack rear doors"
+   },
+   "distractorExplanations": {
+    "a": "That describes chimney (vertical exhaust duct) cabinets, not rear-door heat exchangers, which cool exhaust air through a coil on the door.",
+    "b": "That describes immersion or direct-to-chip liquid cooling, not a coil on the rear door that cools exhaust air.",
+    "c": "Perforated doors merely reduce airflow impedance; a rear-door heat exchanger removes heat through a water or refrigerant coil."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-011": {
+   "options": {
+    "a": "Increase the rate of temperature rise after a chiller trip in the white space",
+    "b": "Replace the need for redundant chillers by storing cold for several hours",
+    "c": "Buffer short-term temperature swings during cooling failures or load changes",
+    "d": "Reduce the steady-state cooling load that the CRAH units must remove daily"
+   },
+   "distractorExplanations": {
+    "a": "Thermal mass slows rather than speeds temperature rise; its stored heat capacity absorbs energy during a loss of cooling.",
+    "b": "Building fabric buffers minutes, not hours; it does not substitute for N+1 cooling redundancy.",
+    "d": "Thermal mass shifts the timing of heat absorption but does not reduce the steady-state IT heat that must ultimately be removed."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-012": {
+   "options": {
+    "a": "Too high delta-T indicates over-pumping and excess chiller capacity",
+    "b": "Low delta-T lets chillers run at higher load and better efficiency",
+    "c": "Delta-T sets the refrigerant charge needed in each chiller circuit",
+    "d": "Too low delta-T indicates over-pumping and poor chiller efficiency"
+   },
+   "distractorExplanations": {
+    "a": "Over-pumping lowers delta-T (low delta-T syndrome); a higher delta-T reflects lower flow per unit of heat removed.",
+    "b": "Low delta-T forces more chillers and pumps online at partial load, reducing efficiency rather than improving it.",
+    "c": "Refrigerant charge is a chiller design attribute; loop delta-T affects flow, pumping energy and chiller staging."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-013": {
+   "options": {
+    "a": "Evaporatively lowers air temperature before mechanical cooling",
+    "b": "Cools intake air by compressing it before it reaches the coil",
+    "c": "Removes moisture from intake air with a desiccant wheel first",
+    "d": "Lowers air temperature by heat transfer to chilled water coils"
+   },
+   "distractorExplanations": {
+    "b": "Compressing air raises its temperature; adiabatic cooling relies on water evaporation, not compression.",
+    "c": "Desiccant dehumidification adds sensible heat; adiabatic cooling adds moisture while lowering dry-bulb temperature.",
+    "d": "Chilled water coil cooling is sensible mechanical cooling, not adiabatic evaporative pre-cooling."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-014": {
+   "options": {
+    "a": "Refrigerant leak rates and oil return within the chillers",
+    "b": "Glycol concentration and freeze protection in tower basins",
+    "c": "Scale, corrosion, biological growth, and blowdown control",
+    "d": "Dissolved oxygen removal for the facility boiler feedwater"
+   },
+   "distractorExplanations": {
+    "a": "Refrigerant and oil management are chiller maintenance items; tower water treatment targets scale, corrosion and biology.",
+    "b": "Glycol is used in closed loops, not open cooling tower water, where treatment focuses on scale, corrosion and biological growth.",
+    "d": "Deaeration is a boiler water concern; data centre cooling tower treatment addresses scaling, corrosion, microbes and blowdown."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-015": {
+   "options": {
+    "a": "Temperature control, biocide programs, and monitoring per local regulations",
+    "b": "Holding basin water at 25–45°C so bacteria stay dormant between duty cycles",
+    "c": "Chlorinating the supply once at commissioning and then sealing the loop",
+    "d": "Cleaning drift eliminators yearly and relying on blowdown to dilute bacteria"
+   },
+   "distractorExplanations": {
+    "b": "Roughly 20–45°C is the Legionella growth range; control aims to keep water outside that band, not hold it there.",
+    "c": "A one-off commissioning dose does not control Legionella; ongoing biocide dosing, temperature control and monitoring are required.",
+    "d": "Blowdown controls dissolved solids, not microbes; drift eliminator cleaning alone omits biocide and monitoring programs."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-016": {
+   "options": {
+    "a": "Excess underfloor pressure that overcools the racks at the room edges",
+    "b": "Low return temperatures that let units run at peak compressor efficiency",
+    "c": "Condensation on server inlets because supply air falls below dew point",
+    "d": "Short cycling and uneven rack inlet temperatures due to recirculation"
+   },
+   "distractorExplanations": {
+    "a": "Without containment the typical issue is hot-air recirculation and uneven inlets, not excess pressure overcooling edge racks.",
+    "b": "Mixing in uncontained rooms causes return-air variability and poor efficiency, not optimized compressor operation.",
+    "c": "Condensation requires surfaces below dew point; the common legacy problem is recirculation and uneven inlet temperatures."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-017": {
+   "options": {
+    "a": "IT inlet class, humidity limits, and cooling plant capabilities",
+    "b": "The occupant comfort setpoint used in adjoining office spaces",
+    "c": "The coldest temperature the CRAH coils can physically deliver",
+    "d": "Return air temperature measured at the CRAH intake grille"
+   },
+   "distractorExplanations": {
+    "b": "Office comfort setpoints (about 21–23°C) are unrelated to IT inlet classes; data halls should follow equipment envelopes.",
+    "c": "Driving supply air as cold as possible wastes energy and risks condensation; setpoints should match the IT inlet class.",
+    "d": "Controlling to return air is a legacy method that ignores rack inlet conditions; the supply setpoint should target the IT inlet class."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-018": {
+   "options": {
+    "a": "Detect refrigerant leaks from DX coils under the raised floor",
+    "b": "Measure chilled water flow rates to balance the CRAH branches",
+    "c": "Catch water ingress before damage to IT and floor structure",
+    "d": "Trigger the pre-action sprinkler system when moisture is found"
+   },
+   "distractorExplanations": {
+    "a": "Rope and spot leak detection senses liquid water; refrigerant leaks need gas detectors, so this confuses sensor types.",
+    "b": "Flow balancing uses flow meters and balancing valves; leak detection merely alarms on the presence of liquid.",
+    "d": "Leak detection alarms to the BMS for response; pre-action release depends on fire detection, not water sensing."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-019": {
+   "options": {
+    "a": "Deionised water coolant in direct contact with the server electronics",
+    "b": "Raised floor plenums sized to deliver supply air into each tank base",
+    "c": "Dielectric fluid compatibility, fire codes review, and service procedures",
+    "d": "Conventional fan-cooled servers with fans left running inside the fluid"
+   },
+   "distractorExplanations": {
+    "a": "Even deionised water becomes conductive in service; immersion uses dielectric fluids, not water, in contact with electronics.",
+    "b": "Immersion tanks reject heat through fluid loops and heat exchangers; they do not depend on underfloor air delivery.",
+    "d": "Server fans are typically removed or disabled for immersion; running fans in fluid adds no cooling and can damage equipment."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-020": {
+   "options": {
+    "a": "Outdoor dry-bulb is just below the condenser water return temperature",
+    "b": "Outdoor wet-bulb is close to the chilled water return temperature",
+    "c": "Outdoor wet-bulb is sufficiently below required chilled water temperature",
+    "d": "Indoor humidity is high so the tower can evaporate more water"
+   },
+   "distractorExplanations": {
+    "a": "Tower-based waterside economizers depend on wet-bulb and need a margin below CHW temperature, not below condenser return.",
+    "b": "A wet-bulb near CHW return leaves no approach margin; free cooling needs wet-bulb well below the CHW supply temperature.",
+    "d": "Tower evaporation depends on outdoor wet-bulb, not indoor humidity; high indoor RH does not enable free cooling."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-021": {
+   "options": {
+    "a": "Lowering the CRAH supply setpoint for the whole hall until the hot spot clears",
+    "b": "Checking blanking panels, floor tile placement, and rack kW vs allocated airflow",
+    "c": "Adding perforated tiles in the hot aisle behind the rack to dilute exhaust air",
+    "d": "Moving the rack's highest-load servers to the top U positions in the cabinet"
+   },
+   "distractorExplanations": {
+    "a": "Overcooling the whole room treats the symptom; local airflow fixes (blanking, tile placement, kW versus airflow) come first.",
+    "c": "Perforated tiles in hot aisles short-circuit cold air into the return and worsen efficiency; they belong in cold aisles.",
+    "d": "Top-of-rack positions often see the most recirculation; moving load upward does not fix missing blanking panels or tile issues."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-023": {
+   "options": {
+    "a": "Allowable temperature rise from rack inlet to exhaust",
+    "b": "The rack's U height and the number of servers installed",
+    "c": "Underfloor plenum depth and perforated tile open area",
+    "d": "Supply air humidity ratio measured at the CRAH outlet"
+   },
+   "distractorExplanations": {
+    "b": "Airflow per kW depends on heat removed and delta-T; rack size or server count does not set CFM per kW.",
+    "c": "Plenum depth and tile open area affect air delivery, not the airflow the IT load requires per kW.",
+    "d": "Sensible airflow requirement is governed by delta-T (CFM ≈ 3,160 × kW ÷ ΔT°F), not by humidity ratio."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-024": {
+   "options": {
+    "a": "Long airflow paths and hot spots at center rows if not engineered",
+    "b": "Overcooling of centre rows while perimeter racks run too hot",
+    "c": "Higher underfloor velocity at the centre than near the units",
+    "d": "Excess humidity at the room edges from CRAH condensate drains"
+   },
+   "distractorExplanations": {
+    "b": "Perimeter units serve nearby racks best; it is centre rows far from the units that tend to starve, not perimeter racks.",
+    "c": "Velocity is highest near the unit discharge (which can even cause negative pressure at close tiles); centre rows see lower delivery.",
+    "d": "Condensate is piped away; the typical perimeter-placement issue is long throw distances and centre hot spots, not edge humidity."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-025": {
+   "options": {
+    "a": "Refrigerant charge levels inside the in-row cooling units",
+    "b": "Power factor and harmonic distortion on the rack PDUs",
+    "c": "Exact airflow volume in CFM delivered by each tile",
+    "d": "Inlet temperature uniformity and misdirected airflow"
+   },
+   "distractorExplanations": {
+    "a": "Thermal imaging of rack fronts shows surface and inlet temperatures; refrigerant charge needs pressure and superheat readings.",
+    "b": "Power quality metrics need a power analyser; infrared scans show heat patterns, not power factor or THD.",
+    "c": "Thermal cameras show temperature patterns, not airflow volume; CFM per tile is measured with a flow hood."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-026": {
+   "options": {
+    "a": "Condensate removed by the CRAH coils",
+    "b": "Chilled water lost through pump seals",
+    "c": "Evaporation, drift, and blowdown losses",
+    "d": "Glycol dilution in the outdoor loop"
+   },
+   "distractorExplanations": {
+    "a": "CRAH condensate is a separate stream drained away; tower makeup replaces evaporation, drift and blowdown.",
+    "b": "Closed chilled water loops need minimal fill makeup; tower makeup replaces open-loop evaporative and blowdown losses.",
+    "d": "Glycol belongs to closed loops and is topped up by concentration checks; tower makeup offsets evaporation, drift and blowdown."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-027": {
+   "options": {
+    "a": "Freezing in cold climates during idle or low-load conditions",
+    "b": "Scale formation on condenser tubes during summer peak loads",
+    "c": "Legionella growth in open towers serving the chilled loop",
+    "d": "Cavitation at pump inlets when the loop runs at high flow"
+   },
+   "distractorExplanations": {
+    "b": "Scale is controlled by water treatment and blowdown; glycol's purpose is freeze protection, and it actually reduces heat transfer.",
+    "c": "Legionella control uses biocides and temperature management in open towers; glycol in closed loops is for freeze protection.",
+    "d": "Cavitation is prevented by adequate NPSH and system pressure, not glycol, which raises viscosity and pumping energy."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-028": {
+   "options": {
+    "a": "Hot aisle temperatures falling too low for the CRAH return sensors",
+    "b": "Excess cold aisle overpressure that blocks server fan intake airflow",
+    "c": "Higher latent load from trapped moisture inside the contained aisle",
+    "d": "Negative plenum pressure and insufficient airflow to bottom of racks"
+   },
+   "distractorExplanations": {
+    "a": "Containment raises hot aisle and return temperatures; the design risk is starving IT airflow, not overly cold hot aisles.",
+    "b": "Positive cold-aisle pressure assists server intake; the dangerous failure mode is undersupply and negative pressure.",
+    "c": "Containment does not trap moisture or add latent load; the design risk is under-supplying air to the contained aisle."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-029": {
+   "options": {
+    "a": "Chilled water loop from condenser water via a chiller",
+    "b": "Supply air from return air using containment panels",
+    "c": "Data hall air loop from outdoor air via heat exchanger",
+    "d": "Humidifier water from potable supply via backflow valves"
+   },
+   "distractorExplanations": {
+    "a": "That describes a chiller's function; indirect evaporative cooling uses an air-to-air heat exchanger with evaporatively cooled outdoor air.",
+    "b": "Containment separates hot and cold aisles; indirect evaporative cooling separates indoor air from outdoor (scavenger) air.",
+    "d": "Backflow prevention protects potable water; it is unrelated to the heat-exchanger separation in indirect evaporative cooling."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-030": {
+   "options": {
+    "a": "High—most IT load is sensible with limited latent cooling need",
+    "b": "Low—about half of the load is latent moisture from IT equipment",
+    "c": "About 0.7, similar to an office with normal occupancy loads",
+    "d": "Variable—dominated by latent load during summer outdoor air peaks"
+   },
+   "distractorExplanations": {
+    "b": "IT equipment produces virtually no moisture; data hall sensible heat ratio is high (often 0.95+), not low.",
+    "c": "An SHR of 0.7–0.8 is typical of comfort cooling with people; data halls are close to 0.9–1.0 sensible.",
+    "d": "Data halls use minimal outdoor air, so summer ventilation latent load is small relative to sensible IT heat."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-031": {
+   "options": {
+    "a": "Prevent condensation and reduce thermal losses",
+    "b": "Reduce pipe noise and absorb water hammer",
+    "c": "Provide fire rating for pipes through walls",
+    "d": "Protect pipes from freezing inside the hall"
+   },
+   "distractorExplanations": {
+    "b": "Water hammer is addressed with arrestors and valve timing; insulation's role is condensation and heat-gain control.",
+    "c": "Fire rating at penetrations comes from listed firestop systems, not standard pipe insulation.",
+    "d": "Indoor halls are warm; freeze protection is an outdoor concern (heat trace, glycol), while indoor insulation prevents condensation."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-032": {
+   "options": {
+    "a": "One large centrifugal fan that lowers the number of maintenance points",
+    "b": "Modular airflow capacity and redundancy with many small fans",
+    "c": "Higher static pressure per fan that removes the need for VFD control",
+    "d": "Constant-speed operation that keeps airflow fixed at design volume"
+   },
+   "distractorExplanations": {
+    "a": "That is the opposite design; fan walls use many smaller fans so a single failure removes only a fraction of capacity.",
+    "c": "Fan arrays are typically VFD- or EC-controlled for modulation; they do not remove the need for speed control.",
+    "d": "Fan walls modulate speed to match load; fixed constant-speed operation wastes energy and is not their benefit."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-033": {
+   "options": {
+    "a": "Supplying cold air overhead directly into the hot aisle",
+    "b": "Collecting warm exhaust without mixing into cold aisles",
+    "c": "Raising underfloor static pressure for the front racks",
+    "d": "Drawing cool air from floor level to lower return temperature"
+   },
+   "distractorExplanations": {
+    "a": "High-level returns extract hot air; supplying cold air into hot aisles creates bypass and wastes cooling.",
+    "c": "Return grilles affect the return path, not supply plenum pressure, which is set by CRAH fans and tiles.",
+    "d": "A low-level return pulls cool supply air back unused, lowering delta-T; high returns capture stratified hot exhaust."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-034": {
+   "options": {
+    "a": "Total facility energy divided by the IT equipment energy",
+    "b": "Cooling tower cycles of concentration in the makeup water",
+    "c": "Data centre water consumption relative to IT energy",
+    "d": "Renewable energy share of total data centre electricity"
+   },
+   "distractorExplanations": {
+    "a": "That is the PUE definition; WUE is annual site water use (litres) divided by IT energy (kWh).",
+    "b": "Cycles of concentration is a water-treatment metric; WUE normalises annual water use to IT energy.",
+    "d": "Renewable share relates to carbon and energy-sourcing metrics, not water; WUE is litres per kWh of IT energy."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-035": {
+   "options": {
+    "a": "Raising fan speed at low load to improve coil heat transfer",
+    "b": "Lowering motor voltage while holding fan speed at 100% design",
+    "c": "Matching airflow to load rather than constant maximum speed",
+    "d": "Cycling fans on and off at full speed to average the airflow"
+   },
+   "distractorExplanations": {
+    "a": "Raising speed at low load wastes energy; VFDs reduce speed when load drops, exploiting the fan affinity laws.",
+    "b": "VFDs vary frequency and therefore speed; holding 100% speed forfeits the cubic power savings from the affinity laws.",
+    "d": "On/off cycling causes temperature swings; VFD savings come from continuous reduced-speed operation (power ∝ speed³)."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-036": {
+   "options": {
+    "a": "Faster chiller compressor restart achieved by raising the CHW setpoint",
+    "b": "Buffer mass, stored chilled water volume, and operational procedures",
+    "c": "Increasing CRAH fan speed to full so air circulates faster in the hall",
+    "d": "Opening the economizer bypass to circulate warm return water to coils"
+   },
+   "distractorExplanations": {
+    "a": "Raising the setpoint does not shorten compressor restart time; ride-through depends on stored cold, thermal mass and procedures.",
+    "c": "Moving more air without a cooling source adds fan heat; ride-through needs stored chilled water and thermal buffering.",
+    "d": "Circulating warm return water provides no cooling; stored chilled water and thermal mass provide the ride-through."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-037": {
+   "options": {
+    "a": "Comfort units hold tighter humidity tolerances because they are designed around occupants",
+    "b": "Precision units provide close temperature/humidity control year-round at high sensible loads",
+    "c": "Precision units are sized for high latent loads from people, while comfort units handle IT",
+    "d": "Comfort units are rated for continuous 24/7 duty while precision units suit seasonal use"
+   },
+   "distractorExplanations": {
+    "a": "Comfort systems are designed for people with a low SHR and looser control; precision units hold tighter tolerances for IT.",
+    "c": "Reversed: precision units target high sensible IT loads; comfort units are designed for latent loads from occupants.",
+    "d": "Reversed: precision units are built for continuous year-round duty; comfort units are typically designed for occupied hours."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-038": {
+   "options": {
+    "a": "Effective plenum airflow to perforated tiles",
+    "b": "Return air temperature at the CRAH units",
+    "c": "Fire rating of the raised floor panels",
+    "d": "Chilled water flow through CRAH coils"
+   },
+   "distractorExplanations": {
+    "b": "Underfloor cable blockages reduce supply delivery to tiles; they do not directly change return air temperature.",
+    "c": "Cable density affects fire load, but the primary effect of blockages is restricted plenum airflow to tiles.",
+    "d": "Coil water flow is set by valves and pumps; cable blockages impede supply air in the plenum."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-039": {
+   "options": {
+    "a": "Starve the contained cold aisle and pull in hot exhaust air",
+    "b": "Force air through floor gaps and cause whistle/leakage losses",
+    "c": "Lower fan energy because CRAH units work against less resistance",
+    "d": "Reduce bypass airflow by sealing cable cutouts more tightly"
+   },
+   "distractorExplanations": {
+    "a": "Starvation and hot-air ingress result from supply pressure that is too low, not too high.",
+    "c": "Higher plenum pressure means fans work harder and more air leaks as bypass, increasing fan energy.",
+    "d": "High pressure increases leakage through unsealed openings; it does not seal cutouts."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-040": {
+   "options": {
+    "a": "Fault tolerant 2N cooling with compartmentalised paths",
+    "b": "A single cooling path with N capacity and no spares",
+    "c": "N+1 cooling units on a single distribution path",
+    "d": "Concurrently maintainable redundant cooling paths"
+   },
+   "distractorExplanations": {
+    "a": "Fault tolerance with compartmentalisation is the Tier IV requirement; Tier III requires concurrent maintainability.",
+    "b": "N capacity on a single path is Tier I; Tier III needs redundant components and paths so maintenance causes no outage.",
+    "c": "Redundant components on one path is Tier II; Tier III also requires a redundant distribution path."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-041": {
+   "options": {
+    "a": "Raised floor plenums sized to remove the full heat load from the processors",
+    "b": "Untreated potable water in the cold plates to maximise heat transfer rates",
+    "c": "Refrigerant compressors at each server to chill plates below the dew point",
+    "d": "Facility water loops, leak mitigation, and air cooling for ancillary heat"
+   },
+   "distractorExplanations": {
+    "a": "Direct-to-chip removes most processor heat via liquid; air handles the residual load, not the full load.",
+    "b": "Cold-plate loops need treated, filtered coolant; untreated water causes corrosion and fouling of microchannels.",
+    "c": "D2C typically runs warm water above dew point; chilling plates below dew point invites condensation."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-042": {
+   "options": {
+    "a": "Chiller staging up at night to pre-cool the hall for the next day",
+    "b": "Higher economizer use when ambient supports lower mechanical cooling",
+    "c": "Lower economizer use in winter to protect towers from icing risk",
+    "d": "Reduced supply setpoints so chillers handle more load at night"
+   },
+   "distractorExplanations": {
+    "a": "Night pre-cooling with chillers is load shifting, not free cooling; economizer strategies exploit cool ambient air or water.",
+    "c": "Icing is managed with bypass, basin heaters and fan control; winter is when economizer hours are highest, not reduced.",
+    "d": "Lowering setpoints increases mechanical cooling; free cooling strategies raise economizer use when ambient is cool."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-043": {
+   "options": {
+    "a": "Particulate removal efficiency and fan energy",
+    "b": "Refrigerant pressure and compressor run hours",
+    "c": "Coil approach temperature and chilled water flow",
+    "d": "Supply air humidity and dew point control"
+   },
+   "distractorExplanations": {
+    "b": "MERV ratings describe filter particle capture; refrigerant pressures and run hours relate to DX circuits, not filters.",
+    "c": "Filters affect airflow resistance and particulate capture; coil approach depends on coil design and water conditions.",
+    "d": "Filters do not change moisture content; MERV ratings govern particle capture efficiency and pressure drop (fan energy)."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-044": {
+   "options": {
+    "a": "Lower rack inlet temperatures from extra cold air reaching servers",
+    "b": "Higher return temperatures at CRAC and uneven rack inlets",
+    "c": "Higher underfloor static pressure that improves tile airflow",
+    "d": "Lower server fan speeds because inlet air reaches them cooler"
+   },
+   "distractorExplanations": {
+    "a": "Open U spaces let hot exhaust recirculate to the front, raising inlet temperatures rather than lowering them.",
+    "c": "Blanking panels sit in the rack, not the floor; gaps cause front-to-back recirculation, not plenum pressure gains.",
+    "d": "Recirculation raises inlet temperature, so server fans speed up; it does not let them slow down."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-045": {
+   "options": {
+    "a": "Freeze protection for outdoor loops in place of glycol additives",
+    "b": "Makeup water for cooling towers during evaporation peaks in summer",
+    "c": "Fire sprinkler supply that doubles as the chiller condenser loop",
+    "d": "Ride-through and load shifting during maintenance or peak pricing"
+   },
+   "distractorExplanations": {
+    "a": "Storage tanks hold chilled water as a thermal buffer; freeze protection still requires glycol, heat trace or drain-down.",
+    "b": "Chilled water storage is a closed-loop thermal buffer; tower makeup comes from a separate water supply.",
+    "c": "Fire water storage must meet fire code and is normally dedicated; it is not the purpose of chilled water storage."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-046": {
+   "options": {
+    "a": "Prevent static discharge when the air becomes too dry",
+    "b": "Detect refrigerant leaks from DX units in the white space",
+    "c": "Avoid condensation when surfaces approach dew point",
+    "d": "Confirm the supply air delta-T across each CRAH coil"
+   },
+   "distractorExplanations": {
+    "a": "Dry-air ESD risk is tracked with low-humidity alarms; dew point alarms target condensation risk on cold surfaces.",
+    "b": "Refrigerant leaks need gas detectors; dew point alarms warn when surfaces may fall below the condensation point.",
+    "d": "Delta-T monitoring uses supply and return temperatures; dew point alarms relate to moisture and condensation."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-047": {
+   "options": {
+    "a": "Shutting down the hall so panels can be fitted around cold racks",
+    "b": "Phased airflow rebalancing to avoid sudden pressure/flow shocks",
+    "c": "Raising supply setpoints first, then installing panels a week later",
+    "d": "Installing every panel at once and rebalancing tiles afterwards"
+   },
+   "distractorExplanations": {
+    "a": "Containment retrofits are normally done live in phases; a full shutdown is unnecessary and puts the SLA at risk.",
+    "c": "Setpoints should be raised after containment is in and airflow is rebalanced, not before, or rack inlets will overheat.",
+    "d": "Sealing everything at once causes sudden pressure and flow shifts; retrofits phase panels with rebalancing as they go."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-048": {
+   "options": {
+    "a": "kW or tons of refrigeration removed from IT/environment",
+    "b": "kVA or amps drawn by the cooling unit compressors",
+    "c": "CFM of airflow delivered at the rated static pressure",
+    "d": "Degrees of delta-T achieved across the cooling coil"
+   },
+   "distractorExplanations": {
+    "b": "kVA and amps describe electrical input, not heat removal; cooling capacity is stated in kW (thermal) or tons.",
+    "c": "CFM is airflow volume; capacity depends on airflow and delta-T and is expressed in kW or tons.",
+    "d": "Delta-T alone is not capacity; capacity is heat removed, in kW or tons (1 ton ≈ 3.517 kW)."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-049": {
+   "options": {
+    "a": "Raise rack inlet temperatures above the ASHRAE recommended range",
+    "b": "Lower the coil sensible heat ratio and improve plant efficiency",
+    "c": "Overcool air and waste energy rehumidifying or reheating",
+    "d": "Increase ESD risk by pushing relative humidity above 80%"
+   },
+   "distractorExplanations": {
+    "a": "Excess dehumidification overcools air rather than heating it; the penalty is wasted energy on reheat or rehumidification.",
+    "b": "Excess latent removal lowers SHR but wastes energy; it does not improve plant efficiency.",
+    "d": "Over-dehumidification lowers humidity rather than raising it; the energy waste comes from reheat and rehumidifying."
+   }
+  },
+  "cdcp-readiness-check-cooling-water-thermal-050": {
+   "options": {
+    "a": "Share one combined tank sized for cooling demand, with fire reserve drawn as needed",
+    "b": "Meet separate code requirements for each use with dedicated systems where required",
+    "c": "Follow the cooling plant design standard, since fire storage rules apply to offices",
+    "d": "Hold a common 30-minute reserve agreed between the operator and the cooling vendor"
+   },
+   "distractorExplanations": {
+    "a": "Fire codes require a protected fire reserve; a combined tank sized for cooling alone can leave fire suppression short.",
+    "c": "Fire water storage is governed by fire codes (e.g., NFPA 22 for tanks) in data centres too, not just offices.",
+    "d": "Fire water volume and duration come from fire code and the AHJ, not an operator–vendor agreement."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-001": {
+   "options": {
+    "a": "Telecommunications facilities such as central offices",
+    "b": "Clean agent extinguishing system design and agent quantity",
+    "c": "Information technology equipment and data processing areas",
+    "d": "Installation of sprinkler systems in commercial buildings"
+   },
+   "distractorExplanations": {
+    "a": "Telecom facility fire protection is NFPA 76; NFPA 75 covers IT equipment and IT equipment areas.",
+    "b": "Clean agent system design is NFPA 2001; NFPA 75 is the IT equipment protection standard.",
+    "d": "Sprinkler installation is NFPA 13; NFPA 75 addresses protection of IT equipment and data processing areas."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-002": {
+   "options": {
+    "a": "Fire protection of telecommunications facilities",
+    "b": "Fire protection of information technology equipment",
+    "c": "Design of clean agent fire extinguishing systems",
+    "d": "Installation of fire alarm and signalling systems"
+   },
+   "distractorExplanations": {
+    "b": "That is the scope of NFPA 75; NFPA 76 covers telecommunications facilities.",
+    "c": "Clean agent extinguishing systems are covered by NFPA 2001, not NFPA 76.",
+    "d": "Fire alarm and signalling is NFPA 72; NFPA 76 addresses telecommunications facilities."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-003": {
+   "options": {
+    "a": "It extinguishes fire with minimal residue and low conductivity",
+    "b": "It lowers room oxygen to near zero, smothering fire like CO2",
+    "c": "It is a water-based agent that cools the fire with fine droplets",
+    "d": "It leaves a dry powder layer that keeps the fire from reigniting"
+   },
+   "distractorExplanations": {
+    "b": "FM-200 and Novec 1230 extinguish mainly by heat absorption at concentrations safe for occupied spaces; they do not remove oxygen.",
+    "c": "That describes water mist; clean agents are gaseous and leave no water residue.",
+    "d": "Dry chemical agents leave residue that damages electronics; clean agents evaporate without residue."
+   },
+   "explanation": "Clean agent fire suppression systems are chosen for data centers and other sensitive environments because they extinguish fires by chemical reaction or oxygen displacement without leaving corrosive or conductive residues. This characteristic is crucial for protecting energized electronic equipment and minimizing downtime after a fire event. That makes it suitable for energized equipment."
+  },
+  "cdcp-readiness-check-fire-security-network-004": {
+   "options": {
+    "a": "Require detection confirmation before water fills pipes to reduce accidental discharge",
+    "b": "Keep pipes filled with water so each head discharges as soon as its bulb fuses at 68°C",
+    "c": "Discharge water through every open head at once when the detection system alarms",
+    "d": "Use a clean agent in the piping that converts to water mist when the heads open"
+   },
+   "distractorExplanations": {
+    "b": "That describes a wet-pipe system; pre-action pipes stay dry until detection opens the valve.",
+    "c": "That is a deluge system with open heads; pre-action uses closed heads that must each fuse after the pipes fill.",
+    "d": "Pre-action systems are water-based sprinklers; clean agent systems and water mist are separate technologies."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-005": {
+   "options": {
+    "a": "Measure rack inlet temperatures to spot developing hot spots before alarms trip",
+    "b": "Detect combustion products at low concentrations before visible smoke",
+    "c": "Release clean agent as soon as a single sampling hole sees smoke",
+    "d": "Confirm humidity levels so the room stays within the ASHRAE range"
+   },
+   "distractorExplanations": {
+    "a": "VESDA is an aspirating smoke detector, not a temperature monitoring system for hot spots.",
+    "c": "VESDA is detection; suppression release normally needs cross-zoned confirmation through the release panel, not one sampling point.",
+    "d": "VESDA samples air for smoke particles; humidity is monitored by EMS/BMS sensors."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-006": {
+   "options": {
+    "a": "Concentrate clean agent in one shared zone covering the whole building",
+    "b": "Increase airflow between halls so smoke clears faster through the site",
+    "c": "Limit fire/smoke spread between zones to protect life and continuity",
+    "d": "Replace the need for detection by using rated walls in each data hall"
+   },
+   "distractorExplanations": {
+    "a": "Compartmentation divides space into rated zones; one shared agent zone needs huge agent volumes and defeats separation.",
+    "b": "Moving smoke between halls spreads damage; compartments with rated barriers and dampers contain it.",
+    "d": "Rated barriers slow spread but do not detect fire; detection and suppression are still required."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-007": {
+   "options": {
+    "a": "Exhaust fans running at full speed during discharge to clear the agent from the protected room",
+    "b": "CRAH units left running on fresh-air mode to dilute agent for occupant safety",
+    "c": "Doors held open for staff egress through the full 10-minute agent hold period",
+    "d": "Abort holds, warning horns/strobes, and door dampers to maintain agent concentration"
+   },
+   "distractorExplanations": {
+    "a": "Running exhaust during discharge drains agent and fails the hold time; ventilation shuts down and dampers close.",
+    "b": "Introducing outside air dilutes the agent below design concentration; HVAC dampers close until the soak period ends.",
+    "c": "Pre-discharge alarms give staff time to leave; doors must then close so the room holds concentration (commonly 10 minutes)."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-008": {
+   "options": {
+    "a": "Two-person rule so that no one enters the hall unaccompanied",
+    "b": "Fire door release so both doors open together during alarms",
+    "c": "Sequential door access so only one door is open at a time",
+    "d": "Badge plus PIN entry at a single door into the data hall"
+   },
+   "distractorExplanations": {
+    "a": "A two-person rule is a procedural control; a mantrap is a physical interlock of two doors.",
+    "b": "Opening both doors together is the egress override, not the mantrap's purpose, which is one door open at a time.",
+    "d": "Multi-factor entry at one door is access control, not the interlocked two-door airlock that a mantrap provides."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-009": {
+   "options": {
+    "a": "Anonymous access with faster throughput than badge readers",
+    "b": "A replacement for audit logs since each user is identified",
+    "c": "Stronger identity binding than shared PINs or cards alone",
+    "d": "A way to share one credential safely across a whole team"
+   },
+   "distractorExplanations": {
+    "a": "Biometrics tie access to a specific person; they are not anonymous and are often slower than badges.",
+    "b": "Biometric identification strengthens audit logs; it does not replace logging.",
+    "d": "Biometrics prevent credential sharing by binding access to an individual; sharing defeats their purpose."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-010": {
+   "options": {
+    "a": "The fire code, which sets a fixed seven-day retention for footage",
+    "b": "Camera resolution alone, since higher pixels need longer retention",
+    "c": "Security investigations, privacy regulations, and storage capacity",
+    "d": "The ITIL change calendar, which purges footage after each change"
+   },
+   "distractorExplanations": {
+    "a": "Retention is not a fire code item; it is set by investigative need, privacy law and storage capacity.",
+    "b": "Resolution affects storage per day, not how long footage should be kept for investigations and privacy rules.",
+    "d": "Change management does not govern CCTV retention; policy must reflect investigations, privacy and storage."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-011": {
+   "options": {
+    "a": "Badge readers and turnstiles at each fence panel",
+    "b": "Vibration, fiber optic sensing, or microwave beams",
+    "c": "VESDA sampling pipes routed along the fence line",
+    "d": "Proximity cards read by sensors along the fence"
+   },
+   "distractorExplanations": {
+    "a": "Badge readers and turnstiles control entry points; perimeter intrusion detection senses climbing or cutting along the fence.",
+    "c": "VESDA is aspirating smoke detection, not perimeter intrusion detection.",
+    "d": "Proximity cards identify authorised users at readers; fence intrusion detection senses disturbance by intruders."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-012": {
+   "options": {
+    "a": "Escort policies, badge logging, and defined access zones",
+    "b": "Temporary PINs that grant visitors access to every hall",
+    "c": "Photo ID checks at reception with no further zone limits",
+    "d": "Customer self-escort once the visitor signs an NDA form"
+   },
+   "distractorExplanations": {
+    "b": "Visitors should be restricted to defined zones; blanket temporary PINs to every hall violate least privilege.",
+    "c": "ID verification is one step; visitors also need escorts, badges and zone restrictions.",
+    "d": "An NDA does not replace physical controls; visitors still require escorts, logging and zone limits."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-013": {
+   "options": {
+    "a": "Labeling and administration formats for cables, patch panels and pathways",
+    "b": "Maximum channel lengths and performance categories for copper and fiber",
+    "c": "Data centre rating levels and redundancy for power and cooling paths",
+    "d": "Pathway and space design for telecom rooms and cable trays"
+   },
+   "distractorExplanations": {
+    "a": "Labeling and administration is TIA-606; TIA-568 covers cabling performance and channel lengths.",
+    "c": "Data centre infrastructure and rating levels are covered by TIA-942, not TIA-568.",
+    "d": "Pathways and spaces are TIA-569; TIA-568 defines cabling channel lengths and performance categories."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-014": {
+   "options": {
+    "a": "Short in-rack patching links where the cost per link matters most",
+    "b": "Long-distance campus and carrier links due to lower attenuation",
+    "c": "Links under 100 m because its modal dispersion is higher",
+    "d": "Low-cost LED transmitters over short horizontal runs"
+   },
+   "distractorExplanations": {
+    "a": "Short in-rack links usually use multimode, copper or DAC; single-mode's advantage is long reach.",
+    "c": "Single-mode has negligible modal dispersion; that limitation belongs to multimode fiber.",
+    "d": "LED and VCSEL sources pair with multimode; single-mode uses laser sources for long distances."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-015": {
+   "options": {
+    "a": "Long-haul carrier spans over 40 km without amplifiers",
+    "b": "Higher bandwidth at moderate distances within buildings",
+    "c": "Laser-optimised single-mode reach with 9 µm cores",
+    "d": "Lower bandwidth than OM3 at the same link distance"
+   },
+   "distractorExplanations": {
+    "a": "40 km spans need single-mode fiber; OM4 multimode reaches roughly 100–550 m depending on speed.",
+    "c": "OM4 is laser-optimised multimode with a 50 µm core; 9 µm cores are single-mode.",
+    "d": "OM4 has higher effective modal bandwidth than OM3 (4700 vs 2000 MHz·km at 850 nm)."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-016": {
+   "options": {
+    "a": "Open access for any colocation customer holding a badge",
+    "b": "Customer-managed locks on the room with no facility logging required",
+    "c": "Shared vendor PINs rotated once a year by the site lead",
+    "d": "Carrier-only access, CCTV, and logging of cross-connect work"
+   },
+   "distractorExplanations": {
+    "a": "MMRs restrict access to authorised carrier and operator staff; general customer badges should not open the MMR.",
+    "b": "The operator must control and log MMR access and cross-connect work; customer locks alone remove oversight.",
+    "c": "Shared PINs prevent individual accountability; MMR access should be individually credentialed and logged."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-017": {
+   "options": {
+    "a": "Intumescent foam of any brand applied by hand",
+    "b": "Mineral wool packed tightly into the opening",
+    "c": "Listed systems tested for that penetration type",
+    "d": "Fire-rated gypsum board patched around cables"
+   },
+   "distractorExplanations": {
+    "a": "Firestop must be a listed system tested for the exact penetration; unlisted generic foam carries no rating.",
+    "b": "Mineral wool is acceptable only as part of a tested listed system with the correct sealant.",
+    "d": "Patching gypsum around cables is not a tested penetration seal; a listed firestop system is required."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-018": {
+   "options": {
+    "a": "Switches on when staff badge into the hall after normal hours",
+    "b": "Illuminates exit routes during power loss per life safety codes",
+    "c": "Runs from the UPS feeding IT loads so it lasts as long as racks",
+    "d": "Is required in office areas only, not in the white space itself"
+   },
+   "distractorExplanations": {
+    "a": "Badge-triggered lighting is a convenience control; emergency lighting activates on loss of normal power.",
+    "c": "Emergency lighting uses its own battery units or a life-safety branch, not the IT UPS; codes set duration (often 90 minutes).",
+    "d": "Life safety codes require egress lighting along all exit paths, including data halls."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-019": {
+   "options": {
+    "a": "Hydrogen gas buildup released during battery charging",
+    "b": "Thermal runaway fires in lithium-ion battery cabinets",
+    "c": "Arc flash burns from working on live DC battery strings and busbars",
+    "d": "Chemical splash exposure from electrolyte or maintenance fluids"
+   },
+   "distractorExplanations": {
+    "a": "Hydrogen is controlled by ventilation and gas detection; showers and eyewash address splash exposure.",
+    "b": "Thermal runaway needs detection, a BMS and suppression; eyewash stations address chemical splash.",
+    "c": "Arc flash is mitigated by PPE and de-energised work; showers and eyewash treat chemical exposure."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-020": {
+   "options": {
+    "a": "Control welding/cutting with fire watch and area preparation",
+    "b": "Authorise welding once the IT customer approves the outage",
+    "c": "Replace the change ticket for any work using power tools",
+    "d": "Cover cutting work only, since welding falls under the MOP"
+   },
+   "distractorExplanations": {
+    "b": "Customer outage approval is change management; a hot work permit adds fire watch, area prep and detection isolation controls.",
+    "c": "Hot work permits supplement change management and cover flame or spark work, not every power-tool job.",
+    "d": "Hot work permits cover welding, cutting, brazing and grinding; a MOP does not replace the permit."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-021": {
+   "options": {
+    "a": "Running CRAH fans at full speed to dilute smoke across the halls",
+    "b": "Opening clean agent room dampers so smoke vents during discharge",
+    "c": "Holding the HVAC in normal mode until the fire service arrives",
+    "d": "Pressurization, exhaust, and damper sequences per engineered plans"
+   },
+   "distractorExplanations": {
+    "a": "Spreading smoke across halls worsens damage; smoke control uses engineered pressurization and exhaust sequences.",
+    "b": "Clean agent rooms keep dampers closed to hold concentration; smoke control is a separately engineered sequence.",
+    "c": "Waiting for the fire service delays the engineered response; fire alarm signals trigger smoke control sequences immediately."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-022": {
+   "options": {
+    "a": "A badge being used after the holder's employment end date",
+    "b": "Doors held open longer than the set time after a valid read",
+    "c": "Using a badge to enter without a matching exit record",
+    "d": "Badge cloning by copying card data with a handheld reader"
+   },
+   "distractorExplanations": {
+    "a": "Expired or terminated credentials are handled by revocation and expiry dates, not anti-passback logic.",
+    "b": "Held-open doors are detected by door-prop alarms; anti-passback tracks each badge's entry/exit sequence.",
+    "d": "Cloning is countered by encrypted credentials; anti-passback enforces an in/out sequence per badge."
+   },
+   "explanation": "Access control anti-passback is a security feature designed to prevent unauthorized entry or credential sharing by enforcing a strict sequence of entry and exit. It ensures that a badge used to enter a controlled area must also be used to exit before it can be used to enter again, preventing tailgating or credential pass-back. This blocks tailgating and credential pass-back."
+  },
+  "cdcp-readiness-check-fire-security-network-023": {
+   "options": {
+    "a": "Two carriers sharing one conduit into a single entrance room",
+    "b": "Dual fibers in one cable run to two different router ports",
+    "c": "Separate conduits/routes so one backhoe cut does not kill all links",
+    "d": "Two circuits from one carrier that share its local central office building"
+   },
+   "distractorExplanations": {
+    "a": "Shared conduit and entrance is a single point of failure; diversity needs physically separate routes.",
+    "b": "Two fibers in one cable fail together on a cut; diversity requires separate physical paths.",
+    "d": "A shared central office or route is a common failure point; true diversity uses separate routes and entrances."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-024": {
+   "options": {
+    "a": "Channel insertion loss and return loss",
+    "b": "Cable bend radius and pathway fill",
+    "c": "Tier rating and redundancy of the site",
+    "d": "Troubleshooting and MAC work accuracy"
+   },
+   "distractorExplanations": {
+    "a": "Loss performance is defined by TIA-568 and verified by testing; TIA-606 is administration and labeling.",
+    "b": "Pathway fill and bend radius belong to TIA-569 and installation practice, not TIA-606 labeling.",
+    "c": "Tier ratings relate to TIA-942 or Uptime; TIA-606 labeling improves troubleshooting and moves/adds/changes."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-025": {
+   "options": {
+    "a": "Use an inert gas that lowers oxygen while leaving no water behind in the room",
+    "b": "Use fine droplets to absorb heat with less water damage than standard sprinklers",
+    "c": "Use large droplets at high flow to soak combustibles faster than sprinklers do",
+    "d": "Use a dry chemical powder carried by water to smother fires on energized gear"
+   },
+   "distractorExplanations": {
+    "a": "That describes inert gas systems (e.g., IG-541); water mist uses fine water droplets.",
+    "c": "Water mist uses very small droplets at low water volume; large droplets at high flow describe standard sprinklers.",
+    "d": "Dry chemical agents are powders, not water mist; mist relies on cooling and local oxygen displacement by steam."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-026": {
+   "options": {
+    "a": "Access, video, intrusion, and environmental alarms into monitored workflows",
+    "b": "IT application logs alone, leaving physical alarms with each site team",
+    "c": "Billing and contract data so the SOC team can approve customer invoices",
+    "d": "BMS energy reports for monthly PUE calculation by the facilities team"
+   },
+   "distractorExplanations": {
+    "b": "SOC integration combines physical security and environmental alarms; excluding them defeats correlation.",
+    "c": "Billing is a commercial function; SOC integration covers security and environmental alarm workflows.",
+    "d": "PUE reporting is energy management; SOC integration focuses on real-time security and alarm monitoring."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-027": {
+   "options": {
+    "a": "Form factor and density—LC is smaller for higher port counts",
+    "b": "Fiber type—SC is for single-mode and LC is for multimode",
+    "c": "Insertion loss—LC loses roughly 3 dB more than SC per mate",
+    "d": "Polish type—LC is APC and SC is UPC in every installation"
+   },
+   "distractorExplanations": {
+    "b": "Both SC and LC are available for single-mode and multimode fiber; they differ in size and density.",
+    "c": "Both have typical losses well under 0.5 dB per mated pair; the key difference is form factor, not a 3 dB penalty.",
+    "d": "Polish (UPC or APC) is independent of connector type; both SC and LC come in either polish."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-028": {
+   "options": {
+    "a": "Limit blast radius of misconfiguration or attack within a row",
+    "b": "Remove the need for firewalls at the facility network edge",
+    "c": "Increase broadcast domains so devices discover each other",
+    "d": "Raise switch throughput by merging VLANs into one network"
+   },
+   "distractorExplanations": {
+    "b": "Segmentation complements perimeter firewalls; it does not replace edge security.",
+    "c": "Segmentation reduces broadcast domain size and lateral reach rather than expanding discovery.",
+    "d": "Merging VLANs is the opposite of segmentation and increases the blast radius."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-029": {
+   "options": {
+    "a": "Class A pressurised water units, since paper and plastics dominate the hall",
+    "b": "Dry chemical ABC units, since one multipurpose unit type covers every class of fire",
+    "c": "Expected fire classes (often clean agent or CO2 near energized gear per policy)",
+    "d": "Class K wet chemical units, since UPS batteries burn like cooking oil fires"
+   },
+   "distractorExplanations": {
+    "a": "Water extinguishers are unsuitable near energized equipment; data halls need agents rated for electrical (Class C) fires.",
+    "b": "ABC powder is corrosive and leaves residue that damages electronics; clean agent or CO2 is preferred near IT gear.",
+    "d": "Class K is for commercial cooking oils and fats; battery and electrical fires call for other agents."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-030": {
+   "options": {
+    "a": "Tailgating by a second person on the same badge read",
+    "b": "Forced entry through a locked perimeter door by someone without a badge",
+    "c": "Badge cloning attempts at readers on the perimeter fence",
+    "d": "Held-open doors that defeat access control or fire door ratings"
+   },
+   "distractorExplanations": {
+    "a": "Tailgating is addressed by mantraps, anti-passback and guards; prop alarms detect doors held open too long.",
+    "b": "Forced entry raises a separate door-forced alarm; prop alarms trigger when a door stays open after a valid read.",
+    "c": "Cloning is countered by encrypted credentials; prop alarms detect doors left open beyond a set time."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-031": {
+   "options": {
+    "a": "Rack power draw per phase and breaker sizing per cabinet",
+    "b": "Customer billing rates and contract renewal dates",
+    "c": "Fiber OTDR traces for each carrier's long-haul route",
+    "d": "Circuit IDs, carrier demarcation, and patch assignments"
+   },
+   "distractorExplanations": {
+    "a": "Power capacity data lives in DCIM power records; cross-connect records track circuits, demarcs and patches.",
+    "b": "Commercial terms are contract records; cross-connect documentation is about physical circuit paths.",
+    "c": "Long-haul OTDR traces belong to the carrier; facility cross-connect records track IDs, demarcs and patching."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-032": {
+   "options": {
+    "a": "Toxicity at the concentrations used for flooding",
+    "b": "Ozone depletion and environmental regulations",
+    "c": "Poor performance on energized electrical fires",
+    "d": "Water damage left behind after each discharge"
+   },
+   "distractorExplanations": {
+    "a": "Halon 1301 is low-toxicity at design concentrations; its Montreal Protocol phase-out was driven by ozone depletion.",
+    "c": "Halon was highly effective on electrical fires; it was replaced for environmental (ozone) reasons, not performance.",
+    "d": "Halon is a gaseous agent with no water residue; the driver for replacement was ozone depletion."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-033": {
+   "options": {
+    "a": "Use high-glare floodlights aimed outward to dazzle anyone approaching the fence",
+    "b": "Activate on motion only, leaving fence lines dark for infrared cameras",
+    "c": "Support camera identification and deter intrusion without blinding sensors",
+    "d": "Match office lighting levels so guards inside are not distracted at night"
+   },
+   "distractorExplanations": {
+    "a": "Glare lighting can blind CCTV and create dark shadows; perimeter lighting should support camera identification.",
+    "b": "Motion-only lighting leaves gaps for visible-spectrum cameras; perimeter lighting should give consistent illumination for identification.",
+    "d": "Perimeter lighting design follows security and camera needs, not interior office lighting levels."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-034": {
+   "options": {
+    "a": "Cable tray fill ratios and labeling effort",
+    "b": "Electromagnetic interference and safety risk",
+    "c": "Fiber attenuation caused by tight bends",
+    "d": "Grounding and bonding requirements in cable trays"
+   },
+   "distractorExplanations": {
+    "a": "Tray fill is managed by pathway sizing; separating power and data is about EMI and electrical safety.",
+    "c": "Fiber is immune to EMI and bend loss is a handling issue; separation protects copper data cabling from power interference.",
+    "d": "Separation does not remove bonding requirements; trays still need grounding per TIA-607 and the electrical code."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-035": {
+   "options": {
+    "a": "Reset the alarm at the panel first and review the logs at the next shift handover",
+    "b": "Trigger the EPO for the affected hall so intruders cannot damage running equipment",
+    "c": "Verify via CCTV, dispatch guards, and coordinate with law enforcement if needed",
+    "d": "Lock down every door and wait for the police before any guard checks the area"
+   },
+   "distractorExplanations": {
+    "a": "Resetting without verification risks ignoring a real intrusion; forced-entry alarms need immediate verification and dispatch.",
+    "b": "EPO cuts power to IT and causes an outage; it is not a security response to forced entry.",
+    "d": "Waiting for police without verifying delays the response; guards verify via CCTV and dispatch, escalating to police as needed."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-036": {
+   "options": {
+    "a": "The Uptime Institute tier level awarded to the site",
+    "b": "Local life safety codes and operator policy",
+    "c": "The insurer's annual audit date each year",
+    "d": "The NFPA 75 IT equipment testing schedule"
+   },
+   "distractorExplanations": {
+    "a": "Tier certification addresses infrastructure topology, not fire drill frequency, which follows life safety codes.",
+    "c": "Insurers may review drill records, but frequency is set by local codes and operator policy.",
+    "d": "NFPA 75 covers IT equipment protection; occupant drills follow local life safety and fire codes."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-037": {
+   "options": {
+    "a": "Enabling SNMPv1 with public community strings for DCIM",
+    "b": "Changing default credentials and network segmentation",
+    "c": "Placing PDUs on the customer VLAN for easier access",
+    "d": "Keeping vendor default passwords for support access"
+   },
+   "distractorExplanations": {
+    "a": "SNMPv1 with default community strings is insecure; use SNMPv3 with changed credentials on a segmented network.",
+    "c": "Management interfaces belong on an isolated management network, not on customer production VLANs.",
+    "d": "Default credentials are a top attack vector; they must be changed at deployment."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-038": {
+   "options": {
+    "a": "Certify copper channel crosstalk and NEXT",
+    "b": "Locate fiber breaks, bends, and splice loss",
+    "c": "Measure optical power at the receiver end of a link",
+    "d": "Clean and inspect connector end faces"
+   },
+   "distractorExplanations": {
+    "a": "NEXT and crosstalk are copper certification tests; an OTDR is a fiber reflectometry tool.",
+    "c": "Receiver power is measured with an optical power meter; an OTDR maps events along the fiber length.",
+    "d": "End-face inspection uses a fiber microscope; an OTDR locates breaks, bends and splice loss."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-039": {
+   "options": {
+    "a": "Discharge nozzle coverage and agent mixing patterns in the room",
+    "b": "Smoke detector sensitivity in the protected space",
+    "c": "CRAH airflow balance before the system is armed",
+    "d": "Envelope tightness to hold design agent concentration"
+   },
+   "distractorExplanations": {
+    "a": "Nozzle coverage is a design and discharge matter; the door fan test measures room leakage for hold time.",
+    "b": "Detector sensitivity is tested by the fire alarm contractor; the fan test measures envelope leakage.",
+    "c": "Airflow balancing is an HVAC task; the integrity test pressurises the room to measure leakage."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-040": {
+   "options": {
+    "a": "One strong perimeter firewall that protects every internal OT system",
+    "b": "Strong passwords on the BMS as the main control for facility systems",
+    "c": "Physical controls, network segmentation, and monitoring layered together",
+    "d": "Air-gapping the BMS so that no further monitoring or patching is needed"
+   },
+   "distractorExplanations": {
+    "a": "Relying on one perimeter control is the opposite of defense in depth, which layers multiple controls.",
+    "b": "Passwords are one control layer; defense in depth combines physical, network and monitoring layers.",
+    "d": "Air gaps can be bridged (USB drives, vendor laptops); defense in depth still requires monitoring and patching."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-041": {
+   "options": {
+    "a": "A fixed 9 m spacing copied unchanged from office layouts",
+    "b": "Engineered layout per ceiling height, airflow, and code",
+    "c": "One detector per CRAH unit mounted at its return grille",
+    "d": "Wider spacing than offices because airflow spreads smoke"
+   },
+   "distractorExplanations": {
+    "a": "High airflow in data halls dilutes smoke, so spacing must be engineered and is often reduced from the 9 m (30 ft) office listing.",
+    "c": "Return-grille detection can supplement but not replace an engineered area layout per code and airflow.",
+    "d": "High airflow dilutes smoke, so data halls typically need closer detector spacing, not wider."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-042": {
+   "options": {
+    "a": "Response times, patrol frequency, and escalation procedures",
+    "b": "Guard headcount alone, with response handled case by case",
+    "c": "The site's PUE target and cooling availability penalties",
+    "d": "Customer uptime credits for any outage during a guard shift"
+   },
+   "distractorExplanations": {
+    "b": "Headcount does not define performance; SLAs set measurable response, patrol and escalation terms.",
+    "c": "PUE and cooling SLAs belong to facilities contracts, not guard force SLAs.",
+    "d": "Uptime credits are colocation SLA terms; guard SLAs measure response, patrols and escalation."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-043": {
+   "options": {
+    "a": "Two fiber cables laid side by side in one shared trench",
+    "b": "Higher strand-count cables on the existing single route",
+    "c": "Two carriers entering the campus through one shared vault",
+    "d": "Geographically separated routes and entrance facilities"
+   },
+   "distractorExplanations": {
+    "a": "A shared trench is a single point of failure; diversity needs geographically separate routes.",
+    "b": "More strands on one route add capacity, not diversity; one cut still severs every strand.",
+    "c": "A shared vault or entrance is a common failure point; diversity needs separate entrance facilities."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-044": {
+   "options": {
+    "a": "Logging the impairment and repairing it at the next annual inspection",
+    "b": "Switching the IT load to the alternate hall until the system returns",
+    "c": "Fire watch, notifications, and expedited repair when systems are down",
+    "d": "Notifying the insurer only after the system is restored to service"
+   },
+   "distractorExplanations": {
+    "a": "Waiting for the annual inspection leaves the space unprotected; impairments need fire watch and prompt repair.",
+    "b": "Load migration may be a business choice, but impairment procedures still require fire watch, notifications and repair.",
+    "d": "Insurers and the AHJ are typically notified when the impairment begins, not after restoration."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-045": {
+   "options": {
+    "a": "Higher crosstalk between adjacent fibers in the tray",
+    "b": "Reduced latency from shorter optical path lengths",
+    "c": "Electromagnetic interference from nearby power cables",
+    "d": "Increased attenuation and potential fiber breakage"
+   },
+   "distractorExplanations": {
+    "a": "Optical crosstalk between fibers is not the bend risk; bend violations cause macrobend loss and breakage.",
+    "b": "Bends do not shorten the path or reduce latency; they cause light to leak out (attenuation).",
+    "c": "Fiber is immune to EMI; bend radius violations cause attenuation and mechanical stress."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-046": {
+   "options": {
+    "a": "Shared among shift staff to reduce badge printing costs",
+    "b": "Disabled at the next quarterly access review after leaving",
+    "c": "Revoked promptly on termination and reported if lost",
+    "d": "Kept active for 30 days after exit in case of a rehire"
+   },
+   "distractorExplanations": {
+    "a": "Shared badges destroy individual accountability in access logs; each badge is personal.",
+    "b": "Quarterly reviews catch drift, but leavers must be revoked promptly at termination, not months later.",
+    "d": "Keeping leaver badges active is a classic insider-risk gap; access must be revoked at termination."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-047": {
+   "options": {
+    "a": "Sprinkler heads have the correct temperature rating",
+    "b": "Cable trays meet the TIA-569 pathway fill limits",
+    "c": "Penetrations match approved firestop submittals",
+    "d": "Fire doors close and latch fully on alarm release"
+   },
+   "distractorExplanations": {
+    "a": "Sprinkler checks are separate fire protection inspections; firestop inspection verifies penetration seals.",
+    "b": "Tray fill is a pathway design issue; firestop inspection verifies listed systems at rated penetrations.",
+    "d": "Door closure is a fire door inspection item; firestop inspection checks penetrations against submittals."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-048": {
+   "options": {
+    "a": "Utility power ownership transfers at the main switchboard",
+    "b": "The carrier's long-haul network meets its own metro ring",
+    "c": "Provider network ends and customer responsibility begins",
+    "d": "The customer's own core switch terminates its LAN uplinks"
+   },
+   "distractorExplanations": {
+    "a": "That describes an electrical utility service point; carrier demarcation is the telecom handoff point.",
+    "b": "Internal carrier network boundaries are not the demarc; the demarc is where provider and customer responsibility meet.",
+    "d": "That is an internal LAN boundary; the demarc is the carrier-to-customer handoff."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-049": {
+   "options": {
+    "a": "Replace guard patrols with live camera views of each hall",
+    "b": "Suppress repeat alarms so fewer events reach the audit log",
+    "c": "Correlate alarms and reduce mean time to investigate",
+    "d": "Store CCTV footage longer by compressing older video"
+   },
+   "distractorExplanations": {
+    "a": "Dashboards support rather than replace physical patrols; their value is alarm correlation and faster investigation.",
+    "b": "Suppressing logged events hides evidence; dashboards correlate alarms rather than reducing logging.",
+    "d": "Retention and compression are storage functions; dashboards correlate alarms across systems."
+   }
+  },
+  "cdcp-readiness-check-fire-security-network-050": {
+   "options": {
+    "a": "The site keeps its Uptime Tier certification for the year",
+    "b": "Clean agent cylinders are refilled whether or not discharged",
+    "c": "Detection/suppression components function per code and design",
+    "d": "The insurer's premium is reset for the coming policy year"
+   },
+   "distractorExplanations": {
+    "a": "Tier certification is unrelated to annual fire inspections, which verify system function per code (e.g., NFPA 72 and 25).",
+    "b": "Cylinders are weighed or level-checked and refilled when below limits, not refilled every year by default.",
+    "d": "Premiums are commercial matters; inspections verify detection and suppression function per code."
+   }
+  },
+  "cdcp-readiness-check-operations-management-001": {
+   "options": {
+    "a": "Verbal approval from the shift lead, with records written up once the work is done",
+    "b": "Documented approval, risk assessment, rollback, and communication before implementation",
+    "c": "Vendor sign-off on the procedure, which then replaces the internal CAB review step",
+    "d": "Approval and risk review, with customer notice issued after the change completes"
+   },
+   "distractorExplanations": {
+    "a": "Change management requires documented approval and risk assessment before work, not after-the-fact records.",
+    "c": "Vendor procedures feed the MOP, but internal change approval (CAB review) is still required.",
+    "d": "Customer communication must happen before implementation within notice periods, not after completion."
+   }
+  },
+  "cdcp-readiness-check-operations-management-002": {
+   "options": {
+    "a": "Safety, customer impact, scope, and SLA exposure",
+    "b": "Ticket age, with the oldest open tickets handled first",
+    "c": "The seniority of the customer contact who reported it",
+    "d": "Which engineer on shift has the right skills"
+   },
+   "distractorExplanations": {
+    "b": "First-in-first-out ignores severity; priority is set by safety, customer impact, scope and SLA exposure.",
+    "c": "Reporter seniority does not define impact; priority follows safety, impact, scope and SLA exposure.",
+    "d": "Skill availability affects assignment, not priority; priority is based on impact and urgency."
+   }
+  },
+  "cdcp-readiness-check-operations-management-003": {
+   "options": {
+    "a": "Current power draw against the utility bill for the last quarter",
+    "b": "Power, cooling, space, and network headroom against forecasted demand",
+    "c": "Rack space utilisation, since power and cooling follow from floor space",
+    "d": "Installed UPS and chiller nameplate ratings for the design day"
+   },
+   "distractorExplanations": {
+    "a": "Billing reconciliation is energy accounting; capacity management compares every resource against forecast demand.",
+    "c": "Power and cooling often run out before space; capacity management tracks each resource separately.",
+    "d": "Nameplate ratings ignore redundancy and actual load; capacity management tracks usable headroom against forecasts."
+   }
+  },
+  "cdcp-readiness-check-operations-management-004": {
+   "options": {
+    "a": "Fuel delivery contracts and the annual generator emissions report",
+    "b": "Generator nameplate data and the original manufacturer warranty terms",
+    "c": "Pre-checks, start sequence, load transfer steps, and notification tree",
+    "d": "Load bank test results and the annual maintenance schedule only"
+   },
+   "distractorExplanations": {
+    "a": "Fuel contracts and emissions reports are admin records; a failover runbook gives step-by-step operating actions.",
+    "b": "Nameplate and warranty data belong in asset records; runbooks contain procedural steps and notifications.",
+    "d": "Test results and schedules support maintenance planning; the runbook must give live failover steps."
+   }
+  },
+  "cdcp-readiness-check-operations-management-005": {
+   "options": {
+    "a": "Perform work on redundant path without customer impact",
+    "b": "Schedule full site shutdowns during low-traffic hours",
+    "c": "Work on the active path while UPS batteries cover the load",
+    "d": "Defer maintenance until a component fails in service"
+   },
+   "distractorExplanations": {
+    "b": "Tier III is concurrently maintainable, so planned work should not require site shutdowns.",
+    "c": "Working on the active path risks an outage; Tier III maintenance shifts load to the redundant path first.",
+    "d": "Run-to-failure defeats planned maintenance; windows let work proceed on the redundant path."
+   }
+  },
+  "cdcp-readiness-check-operations-management-006": {
+   "options": {
+    "a": "Availability, response times, and planned maintenance exclusions",
+    "b": "PUE results and renewable energy share for the reporting month",
+    "c": "Ticket counts by engineer and staff overtime hours for the month",
+    "d": "Availability figures with unplanned outages excluded from the totals"
+   },
+   "distractorExplanations": {
+    "b": "PUE and renewable reports are sustainability metrics; SLA reports cover availability, response and exclusions.",
+    "c": "Internal staffing metrics are not customer SLA terms; SLA reporting covers availability and response.",
+    "d": "Unplanned outages count against availability; it is planned maintenance that is typically excluded per contract."
+   }
+  },
+  "cdcp-readiness-check-operations-management-007": {
+   "options": {
+    "a": "Identify contributing factors and corrective actions to prevent recurrence",
+    "b": "Name the individual at fault so disciplinary action can close the incident",
+    "c": "Restore service and close the ticket once the immediate fault is cleared",
+    "d": "List the failed component and order a like-for-like replacement part"
+   },
+   "distractorExplanations": {
+    "b": "Blame-focused reviews hide systemic causes; RCA seeks contributing factors and corrective actions.",
+    "c": "Service restoration is incident management; RCA goes further to prevent recurrence.",
+    "d": "Replacing a part fixes the symptom; RCA examines why it failed and which processes contributed."
+   }
+  },
+  "cdcp-readiness-check-operations-management-008": {
+   "options": {
+    "a": "Staff hours worked and overtime claims for the payroll system",
+    "b": "Closed tickets from the past week as a summary for management",
+    "c": "Open work orders, alarms, abnormal conditions, and scheduled changes",
+    "d": "A verbal briefing by the outgoing lead with no written record kept"
+   },
+   "distractorExplanations": {
+    "a": "Payroll data is HR administration; handover logs capture operational state for the incoming shift.",
+    "b": "Closed work is historical; handover must cover open items, alarms, abnormal conditions and upcoming changes.",
+    "d": "Verbal-only handovers lose detail; a written log is needed for continuity and accountability."
+   }
+  },
+  "cdcp-readiness-check-operations-management-009": {
+   "options": {
+    "a": "A single critical setpoint so that staff respond to every alarm raised",
+    "b": "Set at the ASHRAE allowable limits so alarms rarely fire at night",
+    "c": "Tiered warning/critical setpoints aligned with equipment classes",
+    "d": "Copied from the comfort cooling setpoints used in office areas"
+   },
+   "distractorExplanations": {
+    "a": "One threshold gives no early warning; tiered setpoints let staff act before a condition becomes critical.",
+    "b": "Alarming at allowable limits leaves no warning margin; warnings belong near the recommended range.",
+    "d": "Office comfort settings do not reflect IT equipment classes; thresholds should follow equipment envelopes."
+   }
+  },
+  "cdcp-readiness-check-operations-management-010": {
+   "options": {
+    "a": "Repeatable processes for incidents, changes, and capacity",
+    "b": "Hardware asset depreciation schedules for the finance team",
+    "c": "Vendor-specific tooling selected for each process area",
+    "d": "Engineer discretion in place of documented procedures"
+   },
+   "distractorExplanations": {
+    "b": "Depreciation is financial accounting; ITIL focuses on service processes such as incident and change management.",
+    "c": "ITIL is tool-agnostic process guidance; it does not prescribe vendor tools.",
+    "d": "ITIL emphasises documented, repeatable processes rather than ad-hoc discretion."
+   }
+  },
+  "cdcp-readiness-check-operations-management-011": {
+   "options": {
+    "a": "Load kept on the UPS under test, with technicians wearing arc-rated PPE",
+    "b": "Generator start and transfer of the full site load before any UPS work",
+    "c": "Battery strings disconnected first, then work on the energised UPS",
+    "d": "Load on alternate path, lockout/tagout, and verified isolation"
+   },
+   "distractorExplanations": {
+    "a": "PPE does not replace isolation; concurrently maintainable work moves load to the alternate path and locks out the unit.",
+    "b": "A generator transfer is not required for UPS maintenance; the load moves to the alternate UPS path.",
+    "c": "Working on an energised UPS with batteries removed risks outage and shock; load must move to the alternate path with verified isolation."
+   }
+  },
+  "cdcp-readiness-check-operations-management-012": {
+   "options": {
+    "a": "Stocking one of every part listed in each vendor's catalogue",
+    "b": "Relying on vendor next-day delivery for every component type",
+    "c": "Stocking per criticality, lead time, and mean time to repair",
+    "d": "Ordering spares after each failure based on the incident report"
+   },
+   "distractorExplanations": {
+    "a": "Blanket stocking wastes capital; spares are prioritised by criticality, lead time and MTTR.",
+    "b": "Next-day delivery fails for long-lead items; critical long-lead parts need on-site spares.",
+    "d": "Reactive ordering extends downtime; spares are pre-stocked by criticality and lead time."
+   }
+  },
+  "cdcp-readiness-check-operations-management-013": {
+   "options": {
+    "a": "Vendors finish their work faster with fewer stops",
+    "b": "Vendor staff can skip badge and ID checks",
+    "c": "Third-party work is supervised and logged",
+    "d": "The customer carries liability for vendor work"
+   },
+   "distractorExplanations": {
+    "a": "Escorts may slow work; their purpose is supervision and accountability, not speed.",
+    "b": "Escorting adds to, rather than replaces, badge and ID verification for vendors.",
+    "d": "Liability is set by contract; escort policy exists so third-party work is supervised and logged."
+   }
+  },
+  "cdcp-readiness-check-operations-management-014": {
+   "options": {
+    "a": "Lowering supply temperatures so CRAH fans can slow down and save energy in the hall",
+    "b": "Right-sizing airflow, raising supply temps within class, and idle server consolidation",
+    "c": "Adding perforated tiles in hot aisles so return air reaches the cooling units faster",
+    "d": "Running every CRAH at full fan speed so each unit operates at its rated efficiency"
+   },
+   "distractorExplanations": {
+    "a": "Lower supply temperatures increase chiller energy; efficiency comes from raising supply temps within the IT class.",
+    "c": "Hot-aisle perforated tiles create bypass and lower delta-T, which wastes energy.",
+    "d": "Fan power scales with speed cubed; running at full speed wastes energy compared with VFD modulation."
+   }
+  },
+  "cdcp-readiness-check-operations-management-015": {
+   "options": {
+    "a": "Removing the unit from the rack and shipping it back to the lessor",
+    "b": "Powering off the server and leaving it in place until the next audit",
+    "c": "Quick-formatting drives before sending the equipment for recycling",
+    "d": "Power/cooling isolation, data sanitization, and asset disposal records"
+   },
+   "distractorExplanations": {
+    "a": "Shipping without sanitisation risks data exposure; decommissioning needs isolation, wiping and disposal records.",
+    "b": "Leaving gear in place wastes space and power capacity and skips sanitisation and CMDB updates.",
+    "c": "A quick format does not sanitise data; media need NIST SP 800-88 compliant wiping or destruction."
+   }
+  },
+  "cdcp-readiness-check-operations-management-016": {
+   "options": {
+    "a": "MOPs are task-specific step plans for a defined maintenance activity",
+    "b": "MOPs describe routine recurring duties while SOPs cover one-off tasks",
+    "c": "MOPs are emergency procedures used when an unplanned failure occurs",
+    "d": "MOPs are vendor contracts that set response times for maintenance work"
+   },
+   "distractorExplanations": {
+    "b": "Reversed: SOPs cover routine recurring operations; MOPs are step plans for specific maintenance tasks.",
+    "c": "Emergency actions belong in EOPs; MOPs are planned procedures for defined maintenance work.",
+    "d": "Response times belong in service contracts or SLAs; a MOP is a step-by-step work plan."
+   }
+  },
+  "cdcp-readiness-check-operations-management-017": {
+   "options": {
+    "a": "Incident commander, safety officer, technical leads, and communications",
+    "b": "A single on-call engineer who handles the response and customer updates",
+    "c": "Senior executives who direct technical recovery steps on the data floor",
+    "d": "The local fire service, which leads each internal incident response"
+   },
+   "distractorExplanations": {
+    "b": "One person cannot safely coordinate, act and communicate; ERT roles divide command, safety and technical work.",
+    "c": "Executives provide escalation support; technical recovery is directed by the incident commander and technical leads.",
+    "d": "Fire services lead fire-scene response, but the site ERT needs its own command, safety and technical roles."
+   }
+  },
+  "cdcp-readiness-check-operations-management-018": {
+   "options": {
+    "a": "Calculate PUE directly from the rack-level PDU readings",
+    "b": "Detect imbalance and plan additions before breaker trips",
+    "c": "Confirm UPS battery health through per-phase load data",
+    "d": "Size cooling units per rack from the phase current data"
+   },
+   "distractorExplanations": {
+    "a": "PUE needs total facility energy versus IT energy; phase trending targets imbalance and capacity planning.",
+    "c": "Battery health needs impedance or discharge testing; PDU phase trends reveal load imbalance.",
+    "d": "Phase currents support electrical capacity planning; cooling sizing needs total heat load and airflow."
+   }
+  },
+  "cdcp-readiness-check-operations-management-019": {
+   "options": {
+    "a": "Occur within contracted lead times with impact description",
+    "b": "Occur once work starts so customers can see live status",
+    "c": "Go to the facility's internal team rather than customers",
+    "d": "Be posted on the status page without any stated impact"
+   },
+   "distractorExplanations": {
+    "b": "Notices must come before work within contracted lead times, not when work begins.",
+    "c": "Customers must be notified of planned maintenance affecting their services per contract.",
+    "d": "Notices need an impact description so customers can plan; a bare posting is insufficient."
+   }
+  },
+  "cdcp-readiness-check-operations-management-020": {
+   "options": {
+    "a": "Staff rosters, shift patterns, and overtime hours worked",
+    "b": "Customer invoices and contract renewal dates",
+    "c": "Assets, relationships, locations, and change history",
+    "d": "Real-time alarm feeds streamed from the BMS and EPMS"
+   },
+   "distractorExplanations": {
+    "a": "Rosters are workforce management data; a CMDB tracks configuration items and their relationships.",
+    "b": "Billing data belongs in finance or CRM systems, not the CMDB.",
+    "d": "Live alarms belong in BMS/EPMS monitoring; the CMDB holds configuration records and change history."
+   }
+  },
+  "cdcp-readiness-check-operations-management-021": {
+   "options": {
+    "a": "Document timeline, actions, gaps, and improvement items",
+    "b": "Assign blame so the responsible team can be retrained",
+    "c": "Wait until the vendor's root cause report is received",
+    "d": "Close the incident ticket once service has been fully restored"
+   },
+   "distractorExplanations": {
+    "b": "Blame-oriented reviews suppress honest reporting; post-incident reviews focus on gaps and improvements.",
+    "c": "Vendor reports can take weeks; the internal review should capture timeline and actions while they are fresh.",
+    "d": "Restoration ends the incident, not the review; lessons and improvement items still need documenting."
+   }
+  },
+  "cdcp-readiness-check-operations-management-022": {
+   "options": {
+    "a": "Staff press EPO first on any alarm to protect the equipment quickly",
+    "b": "Contractors alone hold the procedures for suppression abort steps",
+    "c": "Suppression aborts are held down until the agent cylinders vent",
+    "d": "Staff understand when not to activate and how to respond to alarms"
+   },
+   "distractorExplanations": {
+    "a": "EPO is a last resort for life safety; drills teach staff when not to activate it.",
+    "b": "On-site staff must know abort and EPO procedures; relying on contractors delays response.",
+    "c": "Abort switches delay discharge only while held; drills teach when to use them, not to wait for cylinders to vent."
+   }
+  },
+  "cdcp-readiness-check-operations-management-023": {
+   "options": {
+    "a": "Allocated kW sum may exceed physical capacity based on average vs peak draw policies",
+    "b": "The facility contracts more cooling capacity than the chillers can deliver at peak design load",
+    "c": "Tenants may draw above their contracted kW whenever the upstream UPS has spare headroom",
+    "d": "Redundant A and B feeds are summed so a tenant may load both paths to 100% each"
+   },
+   "distractorExplanations": {
+    "b": "Describes cooling overcommitment; power oversubscription is about allocated kW versus physical electrical capacity.",
+    "c": "That is tenant overdraw (a contract breach), not the operator's planned oversubscription based on diversity of draw.",
+    "d": "Summing A+B capacity is a classic dual-feed error that destroys redundancy; it is not what oversubscription means."
+   }
+  },
+  "cdcp-readiness-check-operations-management-024": {
+   "options": {
+    "a": "Vendor factory test reports accepted in place of on-site functional testing",
+    "b": "Final as-builts deferred until after the first year of live operation",
+    "c": "Training for ops staff scheduled after the warranty period has expired",
+    "d": "Acceptance testing against spec, as-builts, and training for ops staff"
+   },
+   "distractorExplanations": {
+    "a": "Factory acceptance tests do not replace site acceptance and integrated testing of the installed system.",
+    "b": "As-builts are a handover deliverable; deferring them leaves operations working from outdated design drawings.",
+    "c": "Ops training must happen before handover so staff can run the plant safely while warranty support still applies."
+   }
+  },
+  "cdcp-readiness-check-operations-management-025": {
+   "options": {
+    "a": "Remote logical configuration of customer servers, OS patching and backups",
+    "b": "Root-cause engineering analysis of customer application outages on request",
+    "c": "Physical tasks like reboots, cable swaps, and media handling per ticket",
+    "d": "Structured cabling design and new cross-connect provisioning in the MMR"
+   },
+   "distractorExplanations": {
+    "a": "OS patching and backups are managed services, not the physical hands-and-eyes tasks covered by remote hands.",
+    "b": "Application root-cause analysis is customer IT engineering work, outside the physical scope of remote hands tickets.",
+    "d": "Cross-connects and cabling design are separately ordered services, not ad-hoc remote hands tasks per ticket."
+   }
+  },
+  "cdcp-readiness-check-operations-management-026": {
+   "options": {
+    "a": "Total kWh billed to tenants and the number of racks sold per month",
+    "b": "Nameplate UPS capacity and generator kVA ratings from the design",
+    "c": "Number of tickets closed per shift with no severity weighting",
+    "d": "MTTR, change success rate, PUE trend, and alarm noise ratio"
+   },
+   "distractorExplanations": {
+    "a": "Billed kWh and racks sold are commercial sales metrics, not indicators of operational performance or reliability.",
+    "b": "Nameplate ratings are static design data; KPIs track performance trends such as MTTR and change success.",
+    "c": "Raw ticket counts reward volume over outcomes; operations KPIs weight restoration time and change quality."
+   }
+  },
+  "cdcp-readiness-check-operations-management-027": {
+   "options": {
+    "a": "Replacing one string at a time on live float charge without bypass planning",
+    "b": "Mixing new jars with aged jars in the same string to stretch budget",
+    "c": "Scheduling the swap during peak IT load to prove runtime under stress",
+    "d": "Runtime validation, load transfer plan, and disposal of hazardous waste"
+   },
+   "distractorExplanations": {
+    "a": "Working on live strings without a load transfer plan risks dropping the critical load; transfer planning comes first.",
+    "b": "Mixed-age jars in one string cause charge imbalance and early failure; strings are replaced as matched sets.",
+    "c": "Battery work is scheduled at low-risk periods; runtime is validated with a controlled discharge test, not peak load."
+   }
+  },
+  "cdcp-readiness-check-operations-management-028": {
+   "options": {
+    "a": "Exemption from change control because software changes carry no physical risk",
+    "b": "Approval from the IT change board alone, without facilities sign-off",
+    "c": "Execution during the freeze window provided a rollback script exists",
+    "d": "Facilities change control when physical risk or customer impact exists"
+   },
+   "distractorExplanations": {
+    "a": "Software-defined changes can still trip breakers or alter cooling, so they are not exempt from facilities change control.",
+    "b": "IT CAB approval alone skips facilities review when the change carries physical risk or customer impact.",
+    "c": "A rollback script does not lift a change freeze; freeze rules still require formal change control approval."
+   }
+  },
+  "cdcp-readiness-check-operations-management-029": {
+   "options": {
+    "a": "Serial numbers to CMDB location and owner",
+    "b": "Purchase order numbers to the finance ledger",
+    "c": "Vendor warranty dates to the shipping manifest",
+    "d": "Model numbers to the rack elevation drawing"
+   },
+   "distractorExplanations": {
+    "b": "PO-to-ledger matching is a finance control; asset tagging links the unique serial to CMDB location and owner.",
+    "c": "Warranty dates are asset attributes, but tagging must link the serial to where the item lives and who owns it.",
+    "d": "Model numbers are not unique per device; the serial number is what identifies an individual asset in the CMDB."
+   }
+  },
+  "cdcp-readiness-check-operations-management-030": {
+   "options": {
+    "a": "Restoring service as quickly as possible vs analyzing root causes later",
+    "b": "Handling planned changes vs responding to unplanned service interruptions",
+    "c": "Investigating recurring underlying causes vs restoring service quickly",
+    "d": "Logging user requests vs escalating major outages to senior management"
+   },
+   "distractorExplanations": {
+    "a": "Swaps the definitions: restoring service fast is incident management, while problem management finds root causes.",
+    "b": "Describes change management versus incident management, not the problem versus incident distinction.",
+    "d": "Describes service requests versus major incident escalation; problem management targets recurring underlying causes."
+   }
+  },
+  "cdcp-readiness-check-operations-management-031": {
+   "options": {
+    "a": "Firmware versions, license expiry dates, and patch levels",
+    "b": "Leaks, abnormal noise, hot spots, and safety hazards",
+    "c": "Monthly generator load bank results and fuel invoices",
+    "d": "Customer billing meters and contract kW thresholds"
+   },
+   "distractorExplanations": {
+    "a": "Firmware and license checks are IT asset audits done in tools, not physical walkthrough observations.",
+    "c": "Load bank results and invoices are periodic records; the daily walk looks for leaks, noise, heat and hazards.",
+    "d": "Billing meter review is a commercial task; daily walkthroughs are physical inspections for abnormal conditions."
+   }
+  },
+  "cdcp-readiness-check-operations-management-032": {
+   "options": {
+    "a": "Energy management system performance and continual energy efficiency gains",
+    "b": "Quality management processes and customer satisfaction measurement records",
+    "c": "Environmental aspects, waste streams, and pollution prevention objectives and targets",
+    "d": "Information security controls including physical and operational procedures"
+   },
+   "distractorExplanations": {
+    "a": "That is the scope of ISO 50001 energy management, not ISO 27001 information security controls.",
+    "b": "That is the scope of ISO 9001 quality management, not ISO 27001 information security management.",
+    "c": "That is the scope of ISO 14001 environmental management, not ISO 27001 information security controls."
+   }
+  },
+  "cdcp-readiness-check-operations-management-033": {
+   "options": {
+    "a": "Power and cooling perform at design under simulated IT load",
+    "b": "Racks and PDUs are labelled to match the as-built drawings",
+    "c": "Generators start within 10 seconds with no load connected",
+    "d": "Network links reach rated throughput under synthetic traffic"
+   },
+   "distractorExplanations": {
+    "b": "Label checks are documentation verification; load testing proves power and cooling at design load.",
+    "c": "A no-load start test proves engine start only; acceptance load testing applies simulated IT load to the hall.",
+    "d": "Network throughput testing is IT acceptance; facility load testing verifies power and cooling under heat load."
+   }
+  },
+  "cdcp-readiness-check-operations-management-034": {
+   "options": {
+    "a": "Who to contact at each severity and time threshold",
+    "b": "The order in which redundant systems fail over during an outage",
+    "c": "Which changes need CAB approval and the lead time for each",
+    "d": "Contracted response times customers can claim credits against"
+   },
+   "distractorExplanations": {
+    "b": "Failover sequence is an engineering design document, not the people-and-timing contact map of an escalation matrix.",
+    "c": "CAB approval rules belong to change management policy, not to the incident escalation matrix.",
+    "d": "That describes SLA terms and service credits; the escalation matrix defines who to call at each severity and time."
+   }
+  },
+  "cdcp-readiness-check-operations-management-035": {
+   "options": {
+    "a": "Unauthorized entry by personnel who lack a valid access badge",
+    "b": "Electrostatic discharge damage when handling server components",
+    "c": "Theft of customer hardware leaving through the loading dock",
+    "d": "Foreign object damage and forgotten conductive tools in racks"
+   },
+   "distractorExplanations": {
+    "a": "Badge-based entry control is physical access security; tool control tracks tools in and out of the white space.",
+    "b": "ESD damage is prevented by wrist straps and dissipative floors, not by tool check-in and check-out control.",
+    "c": "Hardware theft is addressed by dock and egress security; tool control targets tools left inside equipment."
+   }
+  },
+  "cdcp-readiness-check-operations-management-036": {
+   "options": {
+    "a": "Renewal by paying an annual fee with no further assessment required",
+    "b": "Retaking the full CDCP classroom course every year to stay certified",
+    "c": "Ongoing education or higher credentials to maintain professional standing",
+    "d": "Permanent certification once passed, with optional yearly refresher webinars"
+   },
+   "distractorExplanations": {
+    "a": "CDCP renewal is tied to professional development or higher credentials, not a fee-only annual renewal.",
+    "b": "Wrong interval: the cycle is three years, and renewal can be met through education or higher credentials.",
+    "d": "Contradicts the three-year validity; the credential lapses unless the holder maintains it through education."
+   }
+  },
+  "cdcp-readiness-check-operations-management-037": {
+   "options": {
+    "a": "Shutting down the generators pre-storm to protect them from debris",
+    "b": "Reducing on-site staff to a single guard to limit personal risk",
+    "c": "Relying on the utility's restoration time estimate for fuel orders",
+    "d": "Fuel top-off, generator tests, flood barriers, and staffing plans"
+   },
+   "distractorExplanations": {
+    "a": "Generators are the main resilience asset during a hurricane; they are tested and fuelled, not shut down.",
+    "b": "Hurricane plans pre-position extra shift staff with lodging; one guard cannot run the plant through a grid loss.",
+    "c": "Utility estimates are unreliable after storms; fuel is topped off in advance with priority refuelling contracts."
+   }
+  },
+  "cdcp-readiness-check-operations-management-038": {
+   "options": {
+    "a": "Real-time cooling capacity planning for new customer cages",
+    "b": "Billing of cross-connect and remote hands charges to colocation tenants",
+    "c": "Forensics after security events and compliance demonstrations",
+    "d": "Network intrusion detection on customer IP traffic flows"
+   },
+   "distractorExplanations": {
+    "a": "Capacity planning uses power and thermal data, not access logs, which record who entered which area and when.",
+    "b": "Billing relies on ticket and order systems; access logs provide forensic and compliance evidence.",
+    "d": "Network IDS monitors logical traffic; physical access logs support investigations of who entered spaces."
+   }
+  },
+  "cdcp-readiness-check-operations-management-039": {
+   "options": {
+    "a": "Availability, cost, safety, and sustainability metrics together",
+    "b": "Uptime percentage alone as the headline measure for every team",
+    "c": "Quarterly operating cost per kW against budget, without other KPIs",
+    "d": "Technician utilisation and ticket closure counts per shift"
+   },
+   "distractorExplanations": {
+    "b": "A balanced scorecard combines several perspectives; a single uptime metric is the opposite of balanced.",
+    "c": "Cost-only tracking ignores availability, safety and sustainability, which a balanced scorecard measures together.",
+    "d": "Utilisation and ticket counts are workload metrics, not the multi-perspective view a balanced scorecard provides."
+   }
+  },
+  "cdcp-readiness-check-operations-management-040": {
+   "options": {
+    "a": "Fair scheduling, secondary backup, and post-incident rest",
+    "b": "Longer rotations so fewer handovers occur between engineers",
+    "c": "Routing every alarm to the on-call phone to avoid missing events",
+    "d": "Paying on-call premiums in place of rest periods after callouts"
+   },
+   "distractorExplanations": {
+    "b": "Longer on-call stints increase fatigue; mitigation spreads load fairly and builds in rest after incidents.",
+    "c": "Unfiltered paging causes alarm fatigue and burnout; alarms should be correlated and prioritized first.",
+    "d": "Pay compensates but does not reduce fatigue; post-incident rest and backup coverage are the mitigation."
+   }
+  },
+  "cdcp-readiness-check-operations-management-041": {
+   "options": {
+    "a": "Apply to all units at once so firmware versions stay consistent",
+    "b": "Upgrade the redundant UPS module first while it carries the critical load",
+    "c": "Test in staging, schedule maintenance window, and maintain rollback",
+    "d": "Accept vendor auto-updates pushed over the network as released"
+   },
+   "distractorExplanations": {
+    "a": "Simultaneous updates remove redundancy and risk a common-mode failure; units are updated one at a time.",
+    "b": "Firmware is never tested on a unit carrying critical load; staging and a maintenance window come first.",
+    "d": "Unreviewed vendor pushes bypass staging, change control and rollback planning for critical power gear."
+   }
+  },
+  "cdcp-readiness-check-operations-management-042": {
+   "options": {
+    "a": "Shut down the CRAH units in the hall before locating the source",
+    "b": "Isolate source, protect IT downstream, notify customers if impact",
+    "c": "Mop up the visible water first, then log the event at the next shift handover",
+    "d": "Trigger the EPO for the room to remove any shock hazard at once"
+   },
+   "distractorExplanations": {
+    "a": "Shutting cooling causes a thermal event; first isolate the water source and protect downstream IT.",
+    "c": "Cleanup before isolating the source lets the leak continue, and delayed logging skips customer notification.",
+    "d": "EPO drops the whole room's IT load; it is a life-safety last resort, not the first step for a water leak."
+   }
+  },
+  "cdcp-readiness-check-operations-management-043": {
+   "options": {
+    "a": "Each technician keeps a personal annotated copy",
+    "b": "Vendors can edit procedures directly on site",
+    "c": "Operators execute current approved steps",
+    "d": "Old revisions are reused when they still work"
+   },
+   "distractorExplanations": {
+    "a": "Personal copies create uncontrolled versions; version control means one approved current MOP.",
+    "b": "Unreviewed vendor edits bypass approval; MOP changes go through review before operators use them.",
+    "d": "Reusing superseded revisions is what version control prevents; operators must run the current approved MOP."
+   }
+  },
+  "cdcp-readiness-check-operations-management-044": {
+   "options": {
+    "a": "Longer preventive maintenance intervals to cut downtime",
+    "b": "Adding redundancy so failures do not impact the IT load",
+    "c": "Spares, training, tooling, and accessible documentation",
+    "d": "Extended vendor SLAs with next-business-day parts delivery"
+   },
+   "distractorExplanations": {
+    "a": "Longer PM intervals affect failure frequency, not how fast a failed component is repaired.",
+    "b": "Redundancy improves availability and masks failures but does not shorten the repair time itself.",
+    "d": "Next-business-day parts lengthen repair time; on-site spares are what reduce MTTR."
+   }
+  },
+  "cdcp-readiness-check-operations-management-045": {
+   "options": {
+    "a": "PUE, WUE, renewable energy fraction, and e-waste handling",
+    "b": "Rack count, white space square metres, and contracted kW",
+    "c": "Uptime percentage, MTTR, and change success rate per month",
+    "d": "Carbon offsets purchased, without reporting energy use data"
+   },
+   "distractorExplanations": {
+    "b": "These are capacity and commercial figures, not sustainability metrics such as PUE, WUE and renewable share.",
+    "c": "These are operational reliability KPIs, not environmental sustainability reporting metrics.",
+    "d": "Offsets without underlying energy, water and renewable data are not credible sustainability reporting."
+   }
+  },
+  "cdcp-readiness-check-operations-management-046": {
+   "options": {
+    "a": "Measuring return air temperature at the CRAH and holding it at 18 °C year-round",
+    "b": "Monitoring inlet temps/RH and aligning setpoints with equipment classes",
+    "c": "Setting the room to 15 °C to give maximum margin on every server",
+    "d": "Placing temperature sensors in hot aisles to control supply air"
+   },
+   "distractorExplanations": {
+    "a": "TC 9.9 guidance is based on IT inlet temperature, not CRAH return air, and allows warmer recommended setpoints.",
+    "c": "15 °C is below the ASHRAE recommended range (18–27 °C) and wastes cooling energy without reliability gain.",
+    "d": "ASHRAE measures conditions at equipment inlets in the cold aisle, not hot aisle exhaust temperatures."
+   }
+  },
+  "cdcp-readiness-check-operations-management-047": {
+   "options": {
+    "a": "Handover of keys and access cards with as-builts to follow later",
+    "b": "Training, warranty lists, test reports, and defect punch list closure",
+    "c": "Transfer as soon as IT equipment is installed, before commissioning has ended",
+    "d": "Contractor-run operations for a year in place of staff training"
+   },
+   "distractorExplanations": {
+    "a": "Handover without as-builts, test reports and training leaves operations unable to run the facility safely.",
+    "c": "Handover follows completed commissioning; installing IT before tests close is out of sequence.",
+    "d": "Contractor stewardship does not replace training; handover must equip the operations team to run the site."
+   }
+  },
+  "cdcp-readiness-check-operations-management-048": {
+   "options": {
+    "a": "Raising alarm thresholds across the board to cut volume",
+    "b": "Correlation, suppression of duplicates, and priority routing",
+    "c": "Forwarding every alarm to the whole team so nothing is missed",
+    "d": "Acknowledging alarms in bulk and reviewing them at shift end"
+   },
+   "distractorExplanations": {
+    "a": "Blanket threshold changes hide real faults; floods are handled by correlation and duplicate suppression.",
+    "c": "Broadcasting every alarm worsens the flood and causes fatigue; priority routing sends each alarm to the right owner.",
+    "d": "Bulk acknowledgment buries critical alarms; correlation must surface the root alarm in real time."
+   }
+  },
+  "cdcp-readiness-check-operations-management-049": {
+   "options": {
+    "a": "Recovery of IT data and systems from backup after a failure",
+    "b": "Continuity of critical functions during prolonged outages",
+    "c": "Daily response steps for individual equipment alarms",
+    "d": "Insurance cover for physical damage to the building shell"
+   },
+   "distractorExplanations": {
+    "a": "That is disaster recovery, a subset of continuity; BCP keeps critical business functions running.",
+    "c": "Alarm response procedures are operational runbooks, not continuity planning for prolonged outages.",
+    "d": "Insurance transfers financial risk but does not keep critical functions operating during an outage."
+   }
+  },
+  "cdcp-readiness-check-operations-management-050": {
+   "options": {
+    "a": "Signed customer contracts, billing set-up, and launch publicity",
+    "b": "Factory test certificates in place of integrated systems testing",
+    "c": "Equipment installation complete, with integrated commissioning deferred until later",
+    "d": "Redundancy tests, monitoring baselines, staffing, and escalation paths"
+   },
+   "distractorExplanations": {
+    "a": "Commercial readiness does not prove technical readiness: redundancy tests, baselines and staffing.",
+    "b": "Factory tests do not prove integrated failover on site; go-live requires redundancy and failover testing.",
+    "c": "Going live before commissioning skips the redundancy tests and baselines that readiness must confirm."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-002": {
+   "options": {
+    "a": "One UPS system with double the battery runtime on a single path",
+    "b": "Two UPS modules each sized to 50% with no independence",
+    "c": "Two paralleled UPS modules on one shared output bus feeding a single path",
+    "d": "Two independent UPS systems each capable of carrying the full load"
+   },
+   "distractorExplanations": {
+    "a": "Extra runtime on one system is still N; 2N needs two independent systems each able to carry the full load.",
+    "c": "Paralleled modules on a shared bus are N+1 parallel redundancy with a single path, not two independent 2N systems.",
+    "b": "This describes an N+1 configuration, where there is one extra module beyond what is strictly required to meet the load. In a 2N setup, each of the two systems is independently capable of handling the full load, offering a higher level of redundancy than two 50% modules without independence."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-003": {
+   "options": {
+    "a": "Transfers the load from utility to UPS batteries within one AC cycle",
+    "b": "Detects utility failure and starts generator transfer within designed time limits",
+    "c": "Synchronizes generator and utility so both feed the load continuously in parallel",
+    "d": "Switches dual-corded IT racks between A and B feeds within a few milliseconds"
+   },
+   "distractorExplanations": {
+    "a": "Sub-cycle ride-through is the UPS's job; the ATS transfers between utility and generator after the engine is ready.",
+    "c": "Continuous parallel operation is done by paralleling switchgear, not by a standard utility/generator ATS.",
+    "d": "Millisecond source switching at rack or row level is a static transfer switch function, not an ATS."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-004": {
+   "options": {
+    "a": "Transfer between utility and generator after engine start-up",
+    "b": "Route the load around a UPS during maintenance",
+    "c": "Parallel two UPS modules onto a shared output bus",
+    "d": "Transfer between two AC sources in milliseconds"
+   },
+   "distractorExplanations": {
+    "a": "Utility-to-generator transfer after engine start is the ATS role; an STS switches two live AC sources in milliseconds.",
+    "b": "Routing around a UPS for service is the maintenance bypass, not a static transfer switch.",
+    "c": "Paralleling modules on one bus is done by UPS paralleling controls; an STS selects one of two sources."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-005": {
+   "options": {
+    "a": "Lower transformer losses since harmonic currents are filtered by the core",
+    "b": "Reduced neutral current because the phase currents cancel at the neutral",
+    "c": "Higher true power factor, which reduces the kVA rating needed on upstream gear",
+    "d": "Transformer heating, neutral conductor overload, and nuisance breaker trips"
+   },
+   "distractorExplanations": {
+    "a": "Harmonic currents increase eddy-current and stray losses, so transformers run hotter, not cooler.",
+    "b": "Triplen harmonics add in the neutral instead of cancelling, which is why neutrals can overload.",
+    "c": "Harmonic distortion lowers true power factor and increases the kVA that upstream equipment must carry."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-006": {
+   "options": {
+    "a": "Two complete UPS systems, each able to carry the full facility load alone",
+    "b": "One spare module held in storage for swap-in after a failure",
+    "c": "One additional module beyond what is required to support the load",
+    "d": "Enough modules to carry the load plus a 10% headroom margin"
+   },
+   "distractorExplanations": {
+    "a": "Two complete full-load systems describe 2N, not N+1 (one module beyond the number required).",
+    "b": "A shelf spare is not N+1; the extra module must be installed and online to take over without an outage.",
+    "d": "A percentage headroom margin is not redundancy; N+1 means one whole extra module beyond the requirement."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-007": {
+   "options": {
+    "a": "Periodic impedance testing, temperature monitoring, and replacement at end of design life",
+    "b": "Visual inspection only, since sealed valve-regulated jars cannot be tested internally",
+    "c": "Periodic electrolyte top-up and specific gravity checks on each cell, as with flooded wet cells",
+    "d": "A room held near 35 °C to boost capacity, with replacement once runtime fails"
+   },
+   "distractorExplanations": {
+    "b": "Sealed VRLA jars can and should be impedance or conductance tested; visual checks alone miss failing cells.",
+    "c": "Watering and specific gravity checks apply to flooded cells; VRLA jars are sealed and recombinant.",
+    "d": "VRLA life halves for about every 8–10 °C above 25 °C, and waiting for runtime failure risks an outage."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-008": {
+   "options": {
+    "a": "Branch circuit breakers and outlets feeding IT equipment from upstream feeders",
+    "b": "Transfer between utility and generator sources for the entire hall load",
+    "c": "Double-conversion power conditioning with battery ride-through for the whole rack",
+    "d": "Voltage step-down from 11 kV medium voltage to 400/230 V for the row"
+   },
+   "distractorExplanations": {
+    "b": "Utility/generator transfer for the hall is an ATS function upstream, not a rack PDU's role.",
+    "c": "Conditioning and battery ride-through are UPS functions; a rack PDU distributes power to outlets.",
+    "d": "MV to LV step-down is done by site transformers, far upstream of the rack PDU."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-009": {
+   "options": {
+    "a": "Rack inlet temperature control by adjusting CRAH fan speed",
+    "b": "Conversion of 400 V three-phase to 48 V DC for server shelves",
+    "c": "Higher breaker ratings by spreading load across all outlets",
+    "d": "Per-outlet or per-phase kW tracking for capacity and billing"
+   },
+   "distractorExplanations": {
+    "a": "Metered PDUs report electrical load; CRAH fan control is a cooling and BMS function.",
+    "b": "AC-to-48 V DC conversion is done by rectifier power shelves, not by metering PDUs.",
+    "c": "Metering does not raise breaker ratings; it shows per-outlet or per-phase load for capacity and billing."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-010": {
+   "options": {
+    "a": "It provides 400 V line-to-neutral for servers and 230 V line-to-line for motors",
+    "b": "It is a delta system with no neutral, so harmonic currents cannot circulate",
+    "c": "It delivers 230 V between phases so that three-phase PDUs need no neutral",
+    "d": "It provides 230 V line-to-neutral for single-phase loads and 400 V line-to-line"
+   },
+   "distractorExplanations": {
+    "a": "Swaps the values: in a 400/230 V Wye, 230 V is line-to-neutral and 400 V is line-to-line.",
+    "b": "400/230 V is a Wye with a neutral; a delta has no neutral and cannot supply 230 V line-to-neutral loads.",
+    "c": "Phase-to-phase voltage is 400 V, not 230 V; 230 V is measured from line to neutral."
+   },
+   "explanation": "The 400/230 V Wye distribution system is common in EU facilities because it efficiently provides both 230 V line-to-neutral for single-phase loads (like IT equipment) and 400 V line-to-line for three-phase loads (like larger HVAC or UPS units) from a single source. This versatility simplifies power infrastructure. 230 V line-to-neutral serves single-phase loads and 400 V line-to-line serves three-phase loads."
+  },
+  "cdcp-readiness-check-power-emf-distribution-011": {
+   "options": {
+    "a": "Matching only voltage magnitude, since frequency is held fixed by the utility grid",
+    "b": "Synchronization of voltage, frequency, and phase angle before closing the paralleling breaker",
+    "c": "Matching frequency and phase rotation once the paralleling breaker has been closed",
+    "d": "Opening the utility main breaker first, then closing the generator breaker in an open transition"
+   },
+   "distractorExplanations": {
+    "a": "Voltage alone is not enough; frequency and phase angle must also match or the breaker closes out of phase.",
+    "c": "Wrong sequence: synchronization must be confirmed before closing, otherwise an out-of-phase close damages equipment.",
+    "d": "Open transition breaks before make and never parallels the sources, so no synchronization is involved."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-014": {
+   "options": {
+    "a": "Flexible tap-off points and high ampacity for row power",
+    "b": "Lower installed cost per metre than cable for every small branch",
+    "c": "Built-in arc flash protection that removes PPE requirements",
+    "d": "No need for overcurrent protection at each tap-off box"
+   },
+   "distractorExplanations": {
+    "b": "Busway's advantage is flexible high-ampacity tap-offs; for small branch circuits cable is usually cheaper.",
+    "c": "Busway does not remove arc flash hazards; tap-off work still needs incident-energy analysis and PPE.",
+    "d": "Each tap-off box carries its own breaker or fuses to protect the branch it feeds."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-015": {
+   "options": {
+    "a": "Deliver utilizable voltage levels to UPS and distribution gear closer to load",
+    "b": "Step utility low voltage up to 11 kV for transmission inside the building",
+    "c": "Convert AC to DC for the UPS battery string and inverter input",
+    "d": "Isolate harmonics so that K-rated equipment is no longer needed on downstream feeders"
+   },
+   "distractorExplanations": {
+    "b": "Reverses the direction: site transformers step medium voltage down to low voltage for UPS and distribution.",
+    "c": "AC-to-DC conversion is done by the UPS rectifier, not by a step-down transformer.",
+    "d": "A standard step-down transformer does not remove harmonics; K-rating addresses harmonic heating."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-016": {
+   "options": {
+    "a": "Capacitors add real power demand that increases the facility kW bill",
+    "b": "Harmonic resonance with non-linear loads can cause overheating and failures",
+    "c": "IT loads have a lagging PF below 0.5, so banks must be oversized",
+    "d": "Capacitor banks would store enough energy to replace the UPS battery runtime"
+   },
+   "distractorExplanations": {
+    "a": "Capacitors supply reactive power (kVAr), not real power; the risk is resonance with harmonic loads.",
+    "c": "Modern server PSUs have active PFC near unity; the concern is harmonic resonance, not a very low PF.",
+    "d": "PF correction capacitors store negligible energy and cannot provide UPS ride-through."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-017": {
+   "options": {
+    "a": "Should have both cords on one PDU so the load shares one breaker",
+    "b": "Draw double the power, because each power supply carries the full load",
+    "c": "Allow maintenance on one power path while the other feeds the load",
+    "d": "Need an STS upstream so that each cord can switch sources"
+   },
+   "distractorExplanations": {
+    "a": "Both cords on one PDU or breaker recreates a single point of failure and defeats dual-cording.",
+    "b": "Dual PSUs typically share load about 50/50; total draw does not double.",
+    "d": "STSs serve single-corded loads; dual-corded servers get redundancy from separate A and B feeds."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-018": {
+   "options": {
+    "a": "String voltage, impedance, temperature, and runtime estimates",
+    "b": "Inlet air temperature and humidity at each server across the row",
+    "c": "Generator fuel level, coolant temperature, and run hours",
+    "d": "Breaker trip history and harmonic distortion at each PDU"
+   },
+   "distractorExplanations": {
+    "b": "Rack inlet conditions are tracked by environmental sensors and DCIM, not the battery monitoring system.",
+    "c": "These are generator controller parameters; a UPS BMS tracks battery string health.",
+    "d": "Trip and THD data come from power quality meters and PDU monitoring, not a battery monitoring system."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-019": {
+   "options": {
+    "a": "Passes raw utility directly with no conditioning in normal mode",
+    "b": "Switches to battery only when utility voltage leaves tolerance",
+    "c": "Stores energy in a spinning flywheel and delivers it on utility loss",
+    "d": "Rectifies AC to DC and inverts back to regulated AC for the load"
+   },
+   "distractorExplanations": {
+    "b": "Switching to battery on a fault describes standby or line-interactive UPS, not continuous double conversion.",
+    "c": "Flywheel storage describes a rotary or flywheel UPS, not the static double-conversion topology.",
+    "a": "This describes line-interactive or passive standby UPS topologies, which allow utility power to pass through directly, only engaging the inverter during power fluctuations or outages."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-020": {
+   "options": {
+    "a": "Rectifying and inverting the full load power continuously while in normal operating mode",
+    "b": "Using a flywheel in place of batteries to bridge the transfer to the standby generator",
+    "c": "Regulating voltage with a transformer/tap changer while normally passing utility through",
+    "d": "Delivering DC output straight to servers without any inverter stage"
+   },
+   "distractorExplanations": {
+    "a": "That is the double-conversion topology itself, the opposite of line-interactive pass-through.",
+    "b": "Flywheel storage is a rotary/flywheel UPS feature; line-interactive units normally use batteries.",
+    "d": "DC output describes a DC power plant; line-interactive UPSs deliver AC through an inverter on battery."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-021": {
+   "options": {
+    "a": "They are required by code to stop generators while leaving the UPS output fully energized",
+    "b": "They can drop all IT load instantly for life safety but risk broad unplanned outages if misused",
+    "c": "They must be installed at every rack outlet and tested monthly by discharging the full building load",
+    "d": "They trigger the clean-agent suppression release before staff can evacuate the data hall"
+   },
+   "distractorExplanations": {
+    "a": "An EPO that leaves UPS output live fails its purpose; the controversy is that it drops IT load broadly.",
+    "c": "EPOs are at room exits, not every rack, and are not tested by dropping the live load monthly.",
+    "d": "Agent release is controlled by the suppression panel with abort switches, a separate system from EPO."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-022": {
+   "options": {
+    "a": "Day tank sized for the full runtime so a bulk tank is not needed on site",
+    "b": "Annual fuel replacement in place of polishing, with no secondary containment",
+    "c": "Tank capacity for required runtime, spill containment, and periodic fuel polishing",
+    "d": "Blending in high-ratio biodiesel to extend stored fuel life beyond ten years without polishing"
+   },
+   "distractorExplanations": {
+    "a": "Day tanks hold a few hours; required runtime is stored in bulk tanks with spill containment.",
+    "b": "Replacing fuel is wasteful and skipping secondary containment breaks environmental and code requirements.",
+    "d": "High biodiesel blends shorten storage life and promote microbial growth, making polishing more important."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-023": {
+   "options": {
+    "a": "Reduce the inrush current drawn when UPS rectifiers start up",
+    "b": "Handle harmonic currents from non-linear loads without excessive heating",
+    "c": "Raise output voltage to compensate for long feeder voltage drop",
+    "d": "Filter harmonics so that the upstream current waveforms become sinusoidal again"
+   },
+   "distractorExplanations": {
+    "a": "Inrush is handled by soft-start and breaker selection; K-rating addresses harmonic heating.",
+    "c": "Voltage boost is a tap setting; K-rating is about tolerating harmonic currents without overheating.",
+    "d": "K-rated transformers tolerate harmonic heating; they do not filter harmonics like an active filter."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-024": {
+   "options": {
+    "a": "A battery string and static inverter with no rotating machine",
+    "b": "A gas turbine and absorption chiller for combined heat and power generation",
+    "c": "A motor-generator set with kinetic energy storage for ride-through",
+    "d": "Paralleled diesel generators with a static transfer switch"
+   },
+   "distractorExplanations": {
+    "a": "Batteries and a static inverter describe a static UPS, the opposite of a rotary DRUPS.",
+    "b": "Turbine plus absorption chiller describes a CHP/trigeneration plant, not a rotary UPS.",
+    "d": "Generators with an STS lack the kinetic store and motor-generator that give DRUPS ride-through."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-025": {
+   "options": {
+    "a": "Rack elevation views showing the U positions of each installed IT device",
+    "b": "From utility through transformers, UPS, distribution, to rack PDUs",
+    "c": "Chilled water flow from the plant through CRAHs to the hall",
+    "d": "Network topology from carrier entrance to the core switches"
+   },
+   "distractorExplanations": {
+    "a": "Rack elevations document device placement; the single-line diagram documents the electrical power path.",
+    "c": "Chilled water flow belongs on mechanical P&ID schematics, not the electrical single-line diagram.",
+    "d": "Network topology diagrams document data paths; single-line diagrams cover the power chain."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-026": {
+   "options": {
+    "a": "Engine and alternator performance under rated load and transfer stability",
+    "b": "Fuel consumption at idle with no electrical load connected to the alternator",
+    "c": "UPS battery runtime while the generator is held offline",
+    "d": "Fuel quality and microbial contamination levels in the bulk storage tank"
+   },
+   "distractorExplanations": {
+    "b": "No-load running does not test the alternator; load bank testing applies rated load to prove performance.",
+    "c": "Battery runtime is verified by a UPS discharge test, not a generator load bank test.",
+    "d": "Fuel quality is checked by sampling and polishing; load banks test engine and alternator output."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-027": {
+   "options": {
+    "a": "Transferring both UPS paths to maintenance bypass at the same time to service them together",
+    "b": "Isolating each path in turn while the other path runs on battery",
+    "c": "Procedures ensuring the remaining path carries load while one path is isolated",
+    "d": "Loading each path to 80% so that either one can absorb the full load during maintenance"
+   },
+   "distractorExplanations": {
+    "a": "Bypassing both paths removes conditioning and redundancy; concurrent maintenance isolates one path only.",
+    "b": "The remaining path should run on normal UPS power, not drain its battery during planned maintenance.",
+    "d": "In 2N each path must stay at or below 50% so the surviving path can carry the whole load."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-028": {
+   "options": {
+    "a": "An overloaded phase conductor that requires an immediate upsizing of its breaker",
+    "b": "A failing UPS battery string that is no longer holding float voltage",
+    "c": "Potential neutral conductor sizing or bonding issues needing investigation",
+    "d": "Utility overvoltage that should be fixed with a surge protective device"
+   },
+   "distractorExplanations": {
+    "a": "Neutral-to-ground voltage points to neutral sizing or bonding issues; upsizing a breaker does not fix it.",
+    "b": "Battery float problems show on DC bus voltage, not as neutral-to-ground rise from harmonics.",
+    "d": "SPDs clamp transients; N-G voltage from triplen harmonics needs neutral sizing or bonding review."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-029": {
+   "options": {
+    "a": "Overhead runs need no clearance planning because they sit above the racks",
+    "b": "Maintenance access, clearance, and impact on airflow under raised floor",
+    "c": "Underfloor whips improve airflow by acting as turning vanes for air",
+    "d": "Overhead routing requires DC distribution for code compliance"
+   },
+   "distractorExplanations": {
+    "a": "Overhead distribution must be coordinated with lighting, sprinklers, containment and maintenance clearance.",
+    "c": "Underfloor cable obstructs plenum airflow; that is a drawback of underfloor power, not a benefit.",
+    "d": "Overhead or underfloor routing does not dictate AC versus DC; codes cover either distribution type."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-030": {
+   "options": {
+    "a": "Provide ride-through during long utility sags and outages",
+    "b": "Correct harmonic distortion produced by switched-mode server power supplies",
+    "c": "Clear sustained ground faults by tripping the main breaker",
+    "d": "Clamp transient overvoltages from lightning or switching events"
+   },
+   "distractorExplanations": {
+    "a": "SPDs clamp microsecond transients; ride-through for sags and outages needs a UPS.",
+    "b": "Harmonic correction needs filters or K-rated equipment; SPDs only clamp transient overvoltage.",
+    "c": "Ground faults are cleared by ground-fault protection relays; SPDs divert transient surges."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-031": {
+   "options": {
+    "a": "It lets servers run without power supplies, since 48 V DC feeds the CPU directly",
+    "b": "It removes the need for overcurrent protection because DC faults self-extinguish",
+    "c": "It can reduce conversion stages for DC-native IT and improve efficiency in some architectures",
+    "d": "It carries more power per conductor than 400 V AC distribution at the same copper cross-section"
+   },
+   "distractorExplanations": {
+    "a": "Servers still need DC-DC conversion from 48 V down to CPU voltages; only the AC stages are removed.",
+    "b": "DC arcs do not self-extinguish at zero crossings; DC systems need properly rated overcurrent protection.",
+    "d": "At 48 V the current is much higher for the same power, so it needs more copper than 400 V AC."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-032": {
+   "options": {
+    "a": "Voltage sag/swell, THD, frequency deviation, and power factor",
+    "b": "Inlet temperature, relative humidity, and dew point at the racks",
+    "c": "Fuel level, oil pressure, and run hours on each generator",
+    "d": "Bandwidth utilisation, packet loss, and latency on uplinks"
+   },
+   "distractorExplanations": {
+    "b": "These are environmental metrics from thermal sensors, not electrical power quality measurements.",
+    "c": "These are generator controller readings; power quality meters track sag/swell, THD and frequency.",
+    "d": "These are network performance metrics, not electrical power quality metrics."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-033": {
+   "options": {
+    "a": "Running the load on the battery string alone while the rectifier and inverter are serviced",
+    "b": "Transferring the load onto the redundant UPS module through the internal static bypass switch",
+    "c": "Isolating the battery string so the UPS module keeps running with no stored energy reserve",
+    "d": "Routing utility directly around the UPS module for service while risking reduced conditioning"
+   },
+   "distractorExplanations": {
+    "a": "Battery-only operation lasts minutes and still uses the inverter; a bypass routes utility around the UPS.",
+    "b": "The static bypass is an automatic internal path; the maintenance bypass is an external manual service path.",
+    "c": "Battery isolation is for battery work; maintenance bypass routes utility around the whole UPS module."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-035": {
+   "options": {
+    "a": "Nearby sensitive analog/network circuits if filtering and routing are inadequate",
+    "b": "Generator governor stability by distorting the diesel engine's fuel injection timing",
+    "c": "Fibre optic links, which pick up induced noise along the glass core",
+    "d": "Chilled water flow rate readings by magnetizing the steel pipework near the drives"
+   },
+   "distractorExplanations": {
+    "b": "VFD EMI couples into nearby signal and network wiring, not mechanical fuel injection timing.",
+    "c": "Optical fibre is immune to electromagnetic interference; copper analog and network cabling is at risk.",
+    "d": "VFD noise affects sensor wiring through conducted or radiated EMI, not by magnetizing pipes."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-036": {
+   "options": {
+    "a": "Short-circuit ratings needed for new switchgear purchases",
+    "b": "Incident energy, required PPE, and safe work boundaries",
+    "c": "Breaker trip settings for selective coordination",
+    "d": "Grounding electrode resistance for the building"
+   },
+   "distractorExplanations": {
+    "a": "Short-circuit ratings come from a short-circuit study, an input to but distinct from arc flash analysis.",
+    "c": "Trip settings are set by a coordination study; arc flash analysis yields incident energy and PPE.",
+    "d": "Electrode resistance comes from ground testing, not arc flash incident-energy analysis."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-037": {
+   "options": {
+    "a": "Diversity against single utility failure points upstream of the site",
+    "b": "Tier IV certification on their own, with no on-site generation",
+    "c": "Lower utility tariffs because the facility load is split across two meters",
+    "d": "Protection against a site-level fault in the main LV switchboard"
+   },
+   "distractorExplanations": {
+    "b": "Uptime Tier ratings treat utility as an economic source; on-site generation is still required.",
+    "c": "Dual feeds are bought for upstream diversity, not tariff savings; a second feed often costs more.",
+    "d": "Dual substations cover upstream utility faults; an on-site switchboard fault needs internal redundancy."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-038": {
+   "options": {
+    "a": "Detect phase current imbalance before a PDU branch breaker trips on sustained overload",
+    "b": "Identify insulation faults before they escalate to outages or safety hazards",
+    "c": "Clamp lightning surges arriving through the utility service",
+    "d": "Measure harmonic distortion caused by switched-mode server power supplies"
+   },
+   "distractorExplanations": {
+    "a": "Phase imbalance is found by branch current metering, not by ground fault detection.",
+    "c": "Lightning surges are clamped by SPDs at the service entrance, not by ground fault detection.",
+    "d": "THD is measured by power quality analyzers; ground fault detection finds insulation faults to ground."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-039": {
+   "options": {
+    "a": "Nameplate ratings alone, summed across every installed server and switch",
+    "b": "Nameplate vs actual draw, inrush, and phase balance across PDUs",
+    "c": "Loading each A and B feed to 80% for maximum utilisation",
+    "d": "Today's measured draw with no allowance for growth or inrush"
+   },
+   "distractorExplanations": {
+    "a": "Summing nameplates badly overstates real draw; planning compares nameplate to measured load.",
+    "c": "Dual feeds should stay near 40–50% each so either can take the full load if the other fails.",
+    "d": "Measured draw alone ignores inrush, growth and phase balance, which capacity plans must include."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-040": {
+   "options": {
+    "a": "Raise the ampacity rating of the power conductor",
+    "b": "Replace the equipment grounding conductor",
+    "c": "Block harmonic currents from the neutral",
+    "d": "Limit radiated EMI in sensitive environments"
+   },
+   "distractorExplanations": {
+    "a": "Shielding does not increase ampacity; ampacity depends on conductor size, insulation and installation.",
+    "b": "A cable shield is not a substitute for the equipment grounding conductor required by code.",
+    "c": "Shielding limits radiated EMI; harmonic neutral currents need neutral sizing or harmonic mitigation."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-041": {
+   "options": {
+    "a": "Starting generation without reliance on external grid power",
+    "b": "Restarting servers in priority order after a utility outage",
+    "c": "Transferring load to generator with a closed-transition ATS",
+    "d": "Running the facility on UPS batteries until utility returns"
+   },
+   "distractorExplanations": {
+    "b": "Priority restart is IT recovery sequencing, not starting generation without an external grid.",
+    "c": "A closed-transition ATS needs a live utility to parallel with, the opposite of black start.",
+    "d": "Battery ride-through is short-term bridging; black start means starting generators with no grid power."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-042": {
+   "options": {
+    "a": "Upstream breakers trip first so the whole downstream system is de-energized",
+    "b": "Every breaker in the chain uses an identical trip curve and rating",
+    "c": "Breakers trip at the lowest possible setting to minimize arc flash",
+    "d": "The device nearest the fault opens first without unnecessary upstream trips"
+   },
+   "distractorExplanations": {
+    "a": "Reverses coordination: the device nearest the fault should open first to limit the outage.",
+    "b": "Identical curves trip together and lose selectivity; coordination needs staged ratings and curves.",
+    "c": "Lowest settings help arc flash but can break selectivity; coordination targets nearest-device clearing."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-043": {
+   "options": {
+    "a": "Inverter output frequency and phase synchronization",
+    "b": "Load current drawn by each downstream PDU branch",
+    "c": "Health of rectifier/charger and battery float conditions",
+    "d": "Utility input voltage sags arriving before the rectifier stage"
+   },
+   "distractorExplanations": {
+    "a": "Output frequency and sync are inverter/bypass parameters, not what the DC bus voltage reflects.",
+    "b": "Branch load current is measured at the PDU; DC bus voltage reflects rectifier and battery condition.",
+    "d": "Input sags are measured on the AC input; the DC bus shows rectifier/charger output and float."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-044": {
+   "options": {
+    "a": "Replace UPS ride-through by holding servers at idle during outages",
+    "b": "Limit server power draw to protect facility headroom during stress",
+    "c": "Let racks exceed their breaker rating for short peak workloads",
+    "d": "Lower PUE by reducing cooling plant power in proportion"
+   },
+   "distractorExplanations": {
+    "a": "Capping limits draw but cannot keep servers running through an outage; a UPS is still required.",
+    "c": "Power capping keeps draw under limits; letting racks exceed breaker ratings is the opposite.",
+    "d": "Capping reduces IT power; PUE is a ratio and is not directly lowered by IT power caps."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-045": {
+   "options": {
+    "a": "Adding power factor capacitors at the main switchboard",
+    "b": "Raising UPS bypass thresholds so transients pass straight through",
+    "c": "Installing K-rated transformers on every downstream PDU",
+    "d": "UPS conditioning, surge devices, and utility coordination"
+   },
+   "distractorExplanations": {
+    "a": "Capacitor banks are often the source of switching transients and can resonate, not a mitigation.",
+    "b": "Letting transients pass defeats protection; conditioning and SPDs are used to block them.",
+    "c": "K-rated transformers handle harmonic heating, not switching transient overvoltages."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-046": {
+   "options": {
+    "a": "Utility → LV switchboard → transformer → MV switchgear → UPS → PDU → rack",
+    "b": "Utility → MV switchgear → UPS → transformer → LV switchboard → PDU → rack",
+    "c": "Utility → transformer → PDU → UPS → LV switchboard → MV switchgear → rack",
+    "d": "Utility → MV switchgear → transformer → LV switchboard → UPS → PDU → rack"
+   },
+   "distractorExplanations": {
+    "a": "Puts LV gear before the transformer; MV switchgear and the step-down transformer come before LV.",
+    "b": "Places the UPS on the MV side before the transformer; LV static UPSs sit downstream of the LV switchboard.",
+    "c": "Scrambles the chain: PDUs feed racks from the UPS output and MV gear sits at the utility end."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-047": {
+   "options": {
+    "a": "Electrical code limits for touch voltage on metal enclosures",
+    "b": "Radio frequency limits set for Wi-Fi access points in offices",
+    "c": "Noise exposure limits for staff working near generators",
+    "d": "Occupational exposure guidelines and equipment vendor limits"
+   },
+   "distractorExplanations": {
+    "a": "Touch voltage limits concern shock protection, not EMF exposure from electric and magnetic fields.",
+    "b": "Wi-Fi RF limits cover radio emitters; power-frequency EMF uses occupational exposure guidelines.",
+    "c": "Noise limits address acoustic exposure, not electromagnetic field exposure."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-048": {
+   "options": {
+    "a": "The UPS carries the load on batteries until utility power returns",
+    "b": "Generators run in parallel with the utility to share facility load",
+    "c": "Critical loads are shed so that generators carry life-safety loads",
+    "d": "On-site generation feeds facility loads isolated from the utility"
+   },
+   "distractorExplanations": {
+    "a": "Battery operation is short-term bridging; island mode is on-site generation isolated from the grid.",
+    "b": "Grid-parallel operation is the opposite of island mode, where the site is disconnected from utility.",
+    "c": "Island mode means generation feeds facility loads; shedding critical IT is a capacity failure response."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-049": {
+   "options": {
+    "a": "Revalidation of PDU, whip, and upstream breaker capacity plus cooling",
+    "b": "Swapping rack PDUs for higher-rated units without checking upstream",
+    "c": "Adding perforated tiles in front of the racks as the sole cooling change",
+    "d": "Spreading the GPU racks across rows to avoid any electrical review"
+   },
+   "distractorExplanations": {
+    "b": "Bigger PDUs without checking whips and upstream breakers just move the overload upstream.",
+    "c": "Extra tiles rarely cool high-density GPU racks; power and cooling capacity must both be revalidated.",
+    "d": "Spreading load may help cooling, but each circuit and breaker still needs electrical revalidation."
+   }
+  },
+  "cdcp-readiness-check-power-emf-distribution-050": {
+   "options": {
+    "a": "UPS systems sized for required duration and transfer scenarios",
+    "b": "Standby generators that start within seconds of the voltage sag",
+    "c": "Surge protective devices installed at the service entrance",
+    "d": "Power factor correction capacitors on the main switchboard"
+   },
+   "distractorExplanations": {
+    "b": "Generators need seconds to start, too slow for sags; the UPS bridges the load meanwhile.",
+    "c": "SPDs clamp overvoltage transients; they cannot supply energy during a voltage sag.",
+    "d": "PF capacitors correct reactive power and cannot hold up voltage during a sag."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-002": {
+   "options": {
+    "a": "Fully fault-tolerant with 2N power and cooling at all levels",
+    "b": "Concurrently maintainable with redundant components",
+    "c": "Single path with N+1 redundant capacity components on that path",
+    "d": "Basic capacity with a single non-redundant path for power and cooling"
+   },
+   "distractorExplanations": {
+    "c": "A single path with N+1 components describes Tier II; Tier I has no redundant components at all.",
+    "a": "Fault tolerance with 2N power and cooling at all levels is the hallmark of a Tier IV data center, which is designed to withstand any single point of failure without impact to IT operations. This is a much higher standard than Tier I.",
+    "b": "Concurrent maintainability with redundant components is the defining characteristic of a Tier III data center, allowing for planned maintenance without service interruption. This level of resilience is significantly beyond Tier I."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-003": {
+   "options": {
+    "a": "Single path with redundant components but no concurrent maintenance",
+    "b": "Fault-tolerant infrastructure with no single point of failure",
+    "c": "Concurrently maintainable infrastructure with redundant paths",
+    "d": "Basic infrastructure with a single path and no component redundancy"
+   },
+   "distractorExplanations": {
+    "a": "Redundant components on a single path match EN 50600 Class 2, not Class 3.",
+    "b": "Fault tolerance with no single point of failure matches Class 4, one level above Class 3.",
+    "d": "A single path with no redundancy matches Class 1, the lowest EN 50600 availability class."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-005": {
+   "options": {
+    "a": "Omitting rack bracing because raised-floor pedestals absorb the seismic loads on their own",
+    "b": "Mounting UPS modules and battery cabinets on casters so they can move freely during tremors",
+    "c": "Anchoring racks, cabinets, and heavy equipment per structural and vendor guidelines",
+    "d": "Increasing floor loading without reviewing slab capacity"
+   },
+   "distractorExplanations": {
+    "a": "Raised-floor pedestals are themselves vulnerable in earthquakes; racks and floors need seismic bracing.",
+    "b": "Free-rolling heavy cabinets become hazards in earthquakes; heavy equipment must be anchored.",
+    "d": "Increasing floor loading without reviewing slab capacity is a critical structural oversight. Any significant increase in equipment weight requires a structural engineer to verify that the building's floor slab can safely support the additional load, preventing structural failure."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-006": {
+   "options": {
+    "a": "Underfloor air distribution and/or cable routing with adjustable tile heights",
+    "b": "Elimination of all overhead cable tray requirements in every design",
+    "c": "Structural support for the building roof without steel beams",
+    "d": "A fire-rated barrier that replaces suppression and detection in the hall"
+   },
+   "distractorExplanations": {
+    "d": "Raised floors are not fire barriers; the underfloor void often needs its own detection and suppression.",
+    "b": "While raised floors can accommodate significant cabling, they do not eliminate the need for overhead cable trays in every design. Many data centers still utilize overhead pathways for fiber optic cables, power busways, or other infrastructure to maintain separation and accessibility.",
+    "c": "Raised floors are not designed to provide structural support for the building roof. Their primary function is to create a service void for utilities and air distribution, while the building's main structural framing (beams, columns) supports the roof and upper floors."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-007": {
+   "options": {
+    "a": "In hot aisles to cool exhaust air before it returns to the CRAH units",
+    "b": "Only in office areas adjacent to the data hall",
+    "c": "Under every rack so air rises directly into the cabinet base",
+    "d": "In cold aisles to deliver conditioned air to IT equipment intakes"
+   },
+   "distractorExplanations": {
+    "a": "Tiles in hot aisles waste cold air as bypass and lower return temperature; they belong in cold aisles.",
+    "c": "Most IT equipment draws air front-to-back, so tiles go in the cold aisle in front of the intakes.",
+    "b": "Perforated tiles are a critical component of the data hall's cooling infrastructure, specifically designed for air delivery to IT equipment. They are not typically used in office areas, which have different HVAC requirements and no need for underfloor air delivery to racks."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-008": {
+   "options": {
+    "a": "Exactly equal to rack height with zero overhead clearance",
+    "b": "Low enough that hot exhaust air stays near racks for faster return to CRAHs",
+    "c": "Unlimited only when using non-raised-floor designs",
+    "d": "Sufficient to allow top-of-rack cable management and safe ladder access"
+   },
+   "distractorExplanations": {
+    "b": "Low ceilings trap hot exhaust near the racks and raise recirculation; adequate height aids return airflow.",
+    "a": "Having exactly zero overhead clearance above a rack would prevent essential activities such as installing cable trays, connecting power, or performing maintenance. This would make the data center impractical and unsafe for operations.",
+    "c": "Clear height requirements are universal for data centers, regardless of whether a raised floor is used. Adequate overhead space is always necessary for cable management, power distribution, and safe access to equipment at the top of racks."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-009": {
+   "options": {
+    "a": "Raise room humidity so that static charges dissipate through the air",
+    "b": "Replace the equipment grounding conductors bonded to each rack frame",
+    "c": "Reduce electrostatic charge buildup when personnel walk on the surface",
+    "d": "Eliminate the need for ESD wrist straps during all work"
+   },
+   "distractorExplanations": {
+    "a": "Static dissipative flooring bleeds charge to ground; it does not change room humidity.",
+    "b": "Dissipative flooring complements but does not replace equipment grounding and bonding conductors.",
+    "d": "While static dissipative flooring reduces the risk of ESD, it does not eliminate the need for all other ESD controls, such as wrist straps. When handling sensitive components, additional measures like wrist straps are often still required to ensure maximum protection."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-010": {
+   "options": {
+    "a": "Network cabling performance classes and channel testing for structured cabling systems",
+    "b": "Holistic facility design including availability, security, and environmental sustainability",
+    "c": "Uptime-style Tier certification of operational sustainability, staffing, and training",
+    "d": "IT equipment thermal envelopes and allowable inlet temperature classes"
+   },
+   "distractorExplanations": {
+    "a": "Cabling performance classes are the scope of ISO/IEC 11801, not the ISO/IEC 22237 facility series.",
+    "c": "Operational sustainability certification is an Uptime Institute program, not ISO/IEC 22237.",
+    "d": "Thermal envelopes and equipment classes come from ASHRAE TC 9.9 guidance, not ISO/IEC 22237."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-011": {
+   "options": {
+    "a": "Concentrated loads from fully populated racks plus rolling equipment and maintenance traffic",
+    "b": "Uniform loads averaged over the room area, since panels spread concentrated weight",
+    "c": "The static rack weight alone, because rolling loads are covered by the floor tile finish layer",
+    "d": "Seismic loads only, because vertical rack weight is carried by the building slab"
+   },
+   "distractorExplanations": {
+    "b": "Floor panels fail under concentrated point loads; averaging over the room hides local overloads.",
+    "c": "Rolling loads from pallet jacks and equipment moves are a separate rating that must be checked.",
+    "d": "Raised-floor panels and pedestals carry rack weight directly; concentrated live load must be designed for."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-012": {
+   "options": {
+    "a": "Meet the tray's weight rating, with heat buildup not a design factor",
+    "b": "Eliminate separation between power and data cables in all cases",
+    "c": "Keep power and data in one tray to simplify grounding and bonding",
+    "d": "Prevent overheating, maintain bend radii, and allow future cable additions"
+   },
+   "distractorExplanations": {
+    "a": "Weight is one limit, but heat buildup in packed bundles is a key reason fill ratios are capped.",
+    "c": "Power and data cabling are separated to limit interference; fill limits do not call for mixing them.",
+    "b": "While separation between power and data cables is often required for electromagnetic compatibility (EMC) and safety, the cable tray fill ratio itself is a distinct limitation related to thermal management and physical capacity, not a universal rule for eliminating all separation requirements. Specific segregation rules still apply."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-013": {
+   "options": {
+    "a": "Mix supply and return air so that the room reaches one uniform temperature throughout",
+    "b": "Separate equipment intake (cold) and exhaust (hot) airflow paths to reduce recirculation",
+    "c": "Place supply tiles in hot aisles so exhaust air is cooled before it re-enters the racks",
+    "d": "Remove the need for blanking panels by aligning rack fronts in a single direction"
+   },
+   "distractorExplanations": {
+    "a": "Mixing supply and return is the recirculation that hot/cold aisle layout is designed to prevent.",
+    "c": "Supply tiles belong in cold aisles at equipment intakes; hot aisle tiles create bypass airflow.",
+    "d": "Aisle layout and blanking panels work together; empty U-spaces still recirculate hot air."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-014": {
+   "options": {
+    "a": "Block bypass airflow so conditioned air flows through installed equipment",
+    "b": "Raise the rack's static load rating by stiffening the frame rails",
+    "c": "Act as a fire-rated barrier that contains flame spread between servers",
+    "d": "Reduce electromagnetic interference between adjacent servers in the rack"
+   },
+   "distractorExplanations": {
+    "b": "Blanking panels are light airflow barriers and add no structural load rating to the rack.",
+    "c": "Standard blanking panels are not fire-rated compartmentation; their job is airflow management.",
+    "d": "Blanking panels manage airflow; EMI is handled by equipment design, shielding and bonding."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-015": {
+   "options": {
+    "a": "Adequate illuminance for safe work, often with occupancy-based controls",
+    "b": "Continuous 100% output at all times without controls",
+    "c": "UV-rich lamps that sterilize equipment surfaces and suppress dust",
+    "d": "Lighting levels low enough to eliminate glare by making the hall nearly dark"
+   },
+   "distractorExplanations": {
+    "c": "UV lamps degrade cable jackets and plastics; data hall lighting is for safe work illuminance.",
+    "b": "Maintaining continuous 100% output without controls is an inefficient approach that wastes significant energy, as many areas of a data center are not constantly occupied. Modern data center design prioritizes energy efficiency through smart lighting controls.",
+    "d": "While glare reduction is important, designing lighting levels so low that the hall is nearly dark creates significant safety hazards for personnel, making it difficult to perform tasks and increasing the risk of accidents. Adequate, but not excessive, illumination is key."
+   },
+   "explanation": "Data centre lighting design must provide sufficient illuminance to ensure a safe working environment for personnel performing maintenance, installations, and inspections. Incorporating occupancy-based controls, such as motion sensors, allows for energy savings by dimming or turning off lights when areas are unoccupied, balancing safety with efficiency. Occupancy-based lighting controls deliver energy savings in rarely occupied white space."
+  },
+  "cdcp-readiness-check-site-standards-building-016": {
+   "options": {
+    "a": "A single shared entrance room so every carrier can be secured together",
+    "b": "Combining all carriers into one conduit with no diversity",
+    "c": "Separate power and telecom service entrances to avoid electromagnetic coupling between them",
+    "d": "Diverse carrier paths to reduce single-point-of-failure on external connectivity"
+   },
+   "distractorExplanations": {
+    "a": "One shared entrance room is a single point of failure; TIA-942 recommends diverse entrance facilities.",
+    "c": "Second entrance facilities serve carrier path diversity, not separating power from telecom services.",
+    "b": "Combining all carriers into one conduit with no diversity directly contradicts the principle of resilience and creates a single point of failure. If that single conduit is damaged, all external connectivity would be lost, which is a critical risk for a data center."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-017": {
+   "options": {
+    "a": "One carrier to serve the entire building under an exclusive long-term access agreement",
+    "b": "Tenants to host their own servers in a shared, lower-security overflow area",
+    "c": "Multiple telecommunications carriers to interconnect with tenant or operator networks",
+    "d": "Customers to buy IP transit only from the facility operator as sole provider"
+   },
+   "distractorExplanations": {
+    "a": "Exclusive single-carrier access is the opposite of a carrier-neutral meet-me room.",
+    "b": "An MMR is a secured interconnection space for carriers, not overflow server hosting.",
+    "d": "Carrier-neutral MMRs let customers pick among many carriers rather than one operator-supplied transit."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-018": {
+   "options": {
+    "a": "Use manufacturer load maps and spread heavy loads to avoid localized panel failure",
+    "b": "Rely on total room weight, since point loads spread out evenly across the slab",
+    "c": "Group the heaviest racks together on one row of panels to simplify load planning",
+    "d": "Use any panel with a high uniform load rating, ignoring concentrated rack-foot loads"
+   },
+   "distractorExplanations": {
+    "b": "Point loads concentrate on individual panels and pedestals; total room weight hides local overloads.",
+    "c": "Clustering heavy racks concentrates load on a few stringers; load maps call for spreading weight.",
+    "d": "Uniform ratings do not cover concentrated rack-foot loads; concentrated and rolling ratings must be checked."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-019": {
+   "options": {
+    "a": "Reducing solar heat gain on perimeter walls and supporting free-cooling potential",
+    "b": "Eliminating the need for a mechanical cooling plant, even for sites in hot climates",
+    "c": "Increasing infiltration of unfiltered outdoor air into the white space",
+    "d": "Raising internal humidity levels so the hall's humidifiers are no longer needed"
+   },
+   "distractorExplanations": {
+    "b": "Shading cuts envelope heat gain, but IT heat still needs mechanical or economized cooling.",
+    "d": "Orientation and shading affect solar heat gain, not the humidity control of the white space.",
+    "c": "Uncontrolled infiltration is undesirable for contamination and humidity control."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-020": {
+   "options": {
+    "a": "Removing internal server fans and relying on room airflow to achieve quiet operation",
+    "b": "Open floor penetrations to vent noise outdoors unchecked",
+    "c": "Sound-attenuating construction and equipment isolation to meet noise criteria",
+    "d": "Ignoring CRAC/CRAH sound power because IT equipment is louder"
+   },
+   "distractorExplanations": {
+    "a": "Server fans are needed for component cooling; noise is managed with construction and isolation.",
+    "b": "Open floor penetrations would compromise the controlled environment of the data hall, allowing uncontrolled air and noise transfer. This would defeat the purpose of acoustic isolation and negatively impact thermal management and air quality.",
+    "d": "While IT equipment can be noisy, CRAC/CRAH units also contribute significantly to the overall sound power level in a data center. Ignoring their acoustic output, especially when adjacent to occupied spaces, is a common mistake that can lead to unacceptable noise levels."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-021": {
+   "options": {
+    "a": "Removal of all redundant components to simplify maintenance",
+    "b": "Fault tolerance so a single fault does not interrupt IT operations",
+    "c": "Mandatory use of 120 V rack PDUs to lower arc flash risk",
+    "d": "Concurrent maintainability so components can be serviced without shutdown"
+   },
+   "distractorExplanations": {
+    "c": "Tier ratings are topology-based and do not dictate rack voltages such as 120 V PDUs.",
+    "d": "Concurrent maintainability is the Tier III objective; Tier IV adds fault tolerance on top of it.",
+    "a": "Tier IV facilities are designed for the highest level of availability, which requires increased redundancy and fault tolerance, not the removal of redundant components. Removing redundancy would drastically reduce reliability and availability."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-023": {
+   "options": {
+    "a": "Installing the full design capacity on day one to avoid later work",
+    "b": "Sealing all spare floor penetrations permanently before operations",
+    "c": "Reserved power, cooling, and floor space with scalable cable pathways",
+    "d": "Omitting structural review for additional rack rows"
+   },
+   "distractorExplanations": {
+    "a": "Building everything on day one strands capital; expansion design reserves space and pathways for growth.",
+    "b": "Sealing all spare floor penetrations permanently before operations is a mistake, as managed spare penetrations are essential for supporting future racks, power feeds, and network connections, enabling flexible and efficient expansion.",
+    "d": "Omitting structural review for additional rack rows is a critical error; structural and load reviews are absolutely required for any expansion to ensure the building can safely support increased weight and equipment density."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-024": {
+   "options": {
+    "a": "A common bonding infrastructure for racks, trays, and protective grounding",
+    "b": "Complete electrical isolation from the building ground",
+    "c": "Separate isolated ground rods for each rack, unbonded from building steel",
+    "d": "Bonding through painted rack surfaces so no grounding conductors are needed"
+   },
+   "distractorExplanations": {
+    "c": "Isolated, unbonded grounds create potential differences; TIA-607 requires a common bonded system.",
+    "d": "Paint insulates joints; TIA-607 requires bonding conductors and paint-piercing hardware.",
+    "b": "The idea of complete electrical isolation from the building ground is a misconception; even isolated grounds must ultimately tie into the main grounding system to provide a safe path for fault currents and maintain equipotential bonding across the facility."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-025": {
+   "options": {
+    "a": "Façade glazing area and its effect on solar heat gain into the planned data hall",
+    "b": "Slab/floor load capacity, vibration, and ceiling height for racks and cooling",
+    "c": "Parking capacity and road access for staff during operations",
+    "d": "Existing office HVAC duct routes and their reuse for data hall supply air"
+   },
+   "distractorExplanations": {
+    "a": "Glazing affects thermal design later; the first structural question is whether slabs carry rack loads.",
+    "c": "Parking and access are site logistics, not structural suitability for racks and cooling plant.",
+    "d": "Office HVAC reuse is a mechanical question; structure (load, vibration, height) must be confirmed first."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-026": {
+   "options": {
+    "a": "Open loading dock doors into the hall during deliveries to speed up installations",
+    "b": "Matting at entrances, controlled delivery paths, and prohibiting food in the data hall",
+    "c": "Cleaning inside racks with compressed air from the plant without filtration or capture",
+    "d": "Unpacking new equipment inside the hall so cardboard is removed close to the racks"
+   },
+   "distractorExplanations": {
+    "a": "Direct dock-to-hall openings bring in dust and outdoor air; deliveries should pass through staging areas.",
+    "c": "Compressed air spreads particulates around the hall; vacuum with HEPA capture is the contamination control.",
+    "d": "Cardboard sheds fibres and is a fire load; equipment is unpacked in a staging area outside the white space."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-027": {
+   "options": {
+    "a": "Identify circuit ownership, media type, or destination for faster troubleshooting",
+    "b": "Mark each cable's fire rating so inspectors can confirm plenum and riser compliance",
+    "c": "Replace the as-built drawings, since labelled pathways document themselves",
+    "d": "Indicate the voltage class of overhead busway for arc flash planning"
+   },
+   "distractorExplanations": {
+    "b": "Fire ratings are printed on the cable jacket; pathway labels identify ownership, media and destination.",
+    "c": "Labels complement but do not replace as-built records, which remain required documentation.",
+    "d": "Arc flash data is on equipment labels from the study; cable pathway coding aids troubleshooting."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-028": {
+   "options": {
+    "a": "Downstream distribution, synchronization, and maintenance practices can still create failure modes",
+    "b": "Two utility feeds make on-site generators and UPS ride-through unnecessary for availability",
+    "c": "The 2N entrance makes every downstream PDU and breaker redundant by definition",
+    "d": "Cooling inherits the same 2N rating as power, without separate engineering"
+   },
+   "distractorExplanations": {
+    "b": "Both utility feeds can fail together; on-site generation and UPS remain essential.",
+    "c": "Redundancy at the entrance does not carry downstream; a single PDU or breaker remains a point of failure.",
+    "d": "Cooling redundancy is designed separately; a 2N power entrance says nothing about cooling topology."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-029": {
+   "options": {
+    "a": "Only aesthetic preference with no engineering impact",
+    "b": "Ladder rack for copper and basket tray for power cables, as TIA-942 specifies",
+    "c": "Cable bend radius, support span, and ease of adding/removing large cable bundles",
+    "d": "Elimination of grounding requirements for metallic trays"
+   },
+   "distractorExplanations": {
+    "b": "TIA-942 does not mandate tray types by media; selection depends on bend radius, span and access.",
+    "a": "This option is incorrect because tray selection has substantial mechanical, electrical, and maintenance implications that directly affect data center operations, not just aesthetics. Ignoring these engineering impacts can lead to significant operational issues.",
+    "d": "This option is incorrect because all metallic cable management systems, including basket trays, require proper bonding and grounding according to electrical codes and standards to ensure safety and prevent electrical hazards."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-030": {
+   "options": {
+    "a": "Be sealed with standard expanding foam to block smoke and air leakage",
+    "b": "Be sealed with listed firestop systems matching the assembly rating",
+    "c": "Be sealed with a listed system rated one hour less than the wall",
+    "d": "Be fitted with removable pillows left open until cabling is done"
+   },
+   "distractorExplanations": {
+    "a": "Generic expanding foam is not a listed firestop system and will not maintain the wall's fire rating.",
+    "c": "The firestop system rating must match the assembly rating; a lower rating breaches compartmentation.",
+    "d": "Leaving penetrations open during works breaches compartmentation; they must be sealed at all times."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-032": {
+   "options": {
+    "a": "Point-to-point cabling direct between servers, with no central patching areas",
+    "b": "Maximum cable lengths beyond standard limits without compensation",
+    "c": "Structured cabling with defined backbone and horizontal zones supporting growth",
+    "d": "Mixing all voltages in the same outlet strip"
+   },
+   "distractorExplanations": {
+    "a": "Point-to-point cabling is what TIA-942 structured zones (MDA, HDA, EDA) replace to support growth.",
+    "b": "Exceeding standard cable length limits without proper compensation or active equipment will result in signal degradation and network performance issues. Adhering to specified length limits is crucial for reliable data transmission.",
+    "d": "Mixing all voltages in the same outlet strip is a dangerous practice that violates electrical safety codes and can lead to equipment damage or electrical hazards. Proper segregation of power types is essential."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-033": {
+   "options": {
+    "a": "Redundant capacity components (N+1) with a single distribution path",
+    "b": "Two independent distribution paths, one active, with N+1 components",
+    "c": "A single path and no redundant capacity components for power or cooling",
+    "d": "Fault-tolerant 2N components with compartmentalized distribution paths"
+   },
+   "distractorExplanations": {
+    "b": "Multiple paths with one active and N+1 components describes Tier III concurrent maintainability.",
+    "c": "No redundant components on a single path describes Tier I basic capacity, not Tier II.",
+    "d": "Fault tolerance with compartmentalized paths describes Tier IV, two levels above Tier II."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-034": {
+   "options": {
+    "a": "Reducing static electricity risk and limiting corrosion at acceptable RH bands",
+    "b": "Holding RH near 5% to save humidifier energy and to limit condensation risk",
+    "c": "Holding RH near 90% so that dust settles out of the supply air",
+    "d": "Preventing thermal runaway in the UPS batteries by adding moisture to the room air"
+   },
+   "distractorExplanations": {
+    "b": "Very low RH raises electrostatic discharge risk; ASHRAE bands keep humidity above such extremes.",
+    "c": "High RH accelerates corrosion and condensation; it is not used for dust control.",
+    "d": "Battery thermal runaway is controlled by temperature and charging; humidity control targets ESD and corrosion."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-035": {
+   "options": {
+    "a": "Smaller footprint, latency-driven location, and often reduced onsite staff",
+    "b": "Larger power blocks, campus-scale cooling, and in-house operations teams",
+    "c": "Higher Tier ratings by default because they host latency-critical applications",
+    "d": "Raised floors in each deployment to support underfloor air distribution"
+   },
+   "distractorExplanations": {
+    "b": "Large power blocks and campus-scale plants describe hyperscale builds, not edge sites.",
+    "c": "Edge sites often rely on network-level resilience and lower site redundancy, not higher Tier ratings.",
+    "d": "Edge sites are often containerized or slab-on-grade with in-row cooling, not raised floors."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-036": {
+   "options": {
+    "a": "Lobby finishes, signage, and furniture placement against the interior design plan",
+    "b": "Server firmware and OS patch levels before customer migration begins",
+    "c": "Leak-free envelope, floor flatness, grounding, and installed capacity matches design",
+    "d": "Network throughput between the meet-me room and tenant cages"
+   },
+   "distractorExplanations": {
+    "a": "Interior finishes are not shell commissioning; envelope, floor flatness and grounding must be verified.",
+    "b": "Firmware and patches are IT readiness tasks, not architectural shell commissioning.",
+    "d": "Network throughput is tested in telecom commissioning, not architectural shell verification."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-037": {
+   "options": {
+    "a": "Open dock with no weather canopy to improve ventilation of the staging area",
+    "b": "Sized for largest expected equipment, level access, and a clean path to the install area",
+    "c": "Direct access into the white space so crated equipment can be unpacked beside the racks",
+    "d": "A shared freight lift sized for office loads, with ramps to the install area"
+   },
+   "distractorExplanations": {
+    "a": "Docks need weather protection to keep rain and dust off equipment entering the facility.",
+    "c": "Uncontrolled direct access brings packaging debris into the hall; unpacking happens in staging.",
+    "d": "Office-rated lifts may not take loaded racks; the dock path must be sized for the largest equipment."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-038": {
+   "options": {
+    "a": "Reduces delivered airflow to racks and wastes fan energy",
+    "b": "Improves cooling by increasing uncontrolled bypass",
+    "c": "Raises underfloor static pressure, which pushes more air to the racks",
+    "d": "Lowers return air temperature, which improves CRAH coil efficiency"
+   },
+   "distractorExplanations": {
+    "c": "Leakage lowers plenum pressure and diverts air away from perforated tiles in front of racks.",
+    "d": "Bypass leakage lowers return temperature, which reduces CRAH capacity and efficiency.",
+    "b": "Bypass leakage, where conditioned air bypasses the IT equipment, actually harms cooling efficiency by reducing the amount of cold air available to cool servers. This option reflects a misunderstanding of airflow dynamics in data centers."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-039": {
+   "options": {
+    "a": "Originate from independent PDUs/UPS branches with distinct breakers and routes",
+    "b": "Share one upstream UPS output breaker to simplify the single-line",
+    "c": "Run in the same cable tray and conduit for easier tracing",
+    "d": "Come from the same rack PDU, on different outlet groups, to keep phases balanced"
+   },
+   "distractorExplanations": {
+    "b": "A shared upstream breaker is a single point of failure for both A and B paths.",
+    "c": "Shared routing exposes both paths to one physical event; A and B routes should be separated.",
+    "d": "Outlets on one PDU share its input; A and B must come from independent PDUs and upstream branches."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-040": {
+   "options": {
+    "a": "Power usage effectiveness measured at the UPS output on a monthly basis",
+    "b": "Mean time between failures quoted on equipment manufacturer datasheets",
+    "c": "Total installed generator capacity expressed as a share of the IT load",
+    "d": "Planned and unplanned downtime metrics tied to business requirements"
+   },
+   "distractorExplanations": {
+    "a": "PUE is an energy efficiency metric, not an availability KPI measured as downtime against requirements.",
+    "b": "Datasheet MTBF is a vendor reliability claim, not a measured facility availability KPI.",
+    "c": "Generator capacity ratio is a design parameter, not a measured availability performance indicator."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-041": {
+   "options": {
+    "a": "Immediate unrestricted white space access from the street",
+    "b": "Building reception and a visitor badge, then direct badge access into the white space",
+    "c": "White space first, then the operations area and loading dock",
+    "d": "Outer site controls, building access, operations area, and high-security white space"
+   },
+   "distractorExplanations": {
+    "b": "Skipping intermediate zones defeats layered security; access should step through progressively restricted zones.",
+    "c": "Reverses the zoning: the white space is the innermost, most restricted zone.",
+    "a": "Allowing immediate, unrestricted access to the white space from the street is a critical security failure, as it bypasses all necessary controls and leaves valuable assets vulnerable."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-042": {
+   "options": {
+    "a": "Busway housing, tap-off boxes, cable drops, and maintenance headroom",
+    "b": "Light fixtures and sprinklers, which take priority over busway height",
+    "c": "Busway housing alone, since tap-off boxes mount below the rack top",
+    "d": "Rack height plus 100 mm, as busway hangs directly from rack frames"
+   },
+   "distractorExplanations": {
+    "b": "Lighting and sprinklers must be coordinated with, not placed instead of, busway and maintenance clearance.",
+    "c": "Tap-off boxes hang from the busway and need clearance, plus headroom to service them.",
+    "d": "Busway is supported from the structure, not rack frames, and needs more than 100 mm of clearance."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-043": {
+   "options": {
+    "a": "Electrical arc flash labelling on each switchboard and distribution panel",
+    "b": "Capacity tracking, cable labeling, and incident response location finding",
+    "c": "Fire suppression zone design and clean-agent quantity calculations per room",
+    "d": "Network IP addressing schemes and VLAN plans for tenant equipment"
+   },
+   "distractorExplanations": {
+    "a": "Arc flash labels come from the incident-energy study, not a rack grid floor map.",
+    "c": "Agent quantities come from room volume and suppression design, not rack grid coordinates.",
+    "d": "IP addressing is logical network design, unrelated to physical grid location maps."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-044": {
+   "options": {
+    "a": "Loose access panels that open to relieve wind pressure in storms",
+    "b": "Removing all louvers before hurricane season permanently",
+    "c": "Anchorage designed for gravity loads, without wind uplift review",
+    "d": "Anchorage and screening per local codes and equipment ratings"
+   },
+   "distractorExplanations": {
+    "a": "Loose panels become windborne debris themselves; panels must be secured and anchored.",
+    "c": "Gravity-only anchorage ignores wind uplift and debris impact, which local codes require.",
+    "b": "Removing all louvers permanently before hurricane season is an inappropriate mitigation strategy, as louvers are essential for equipment operation and proper airflow; engineered solutions are required."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-046": {
+   "options": {
+    "a": "Record expected service life and replacement planning for UPS batteries, chillers, and generators",
+    "b": "Record the warranty start date alone, since vendors track service life for each asset",
+    "c": "Assume the design life equals the warranty term for UPS batteries, chillers, and generators",
+    "d": "List current asset tags and floor locations for UPS batteries, chillers, and generators"
+   },
+   "distractorExplanations": {
+    "b": "Warranty dates are not service life; the operator must plan replacement for its own assets.",
+    "c": "Warranty terms are commercial and often shorter or longer than actual design service life.",
+    "d": "Asset location is inventory data; design life documentation records expected life and replacement."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-047": {
+   "options": {
+    "a": "Fault tolerance of power and cooling with no single point",
+    "b": "Concurrent maintainability of power and cooling paths",
+    "c": "Redundant capacity components on a single distribution path",
+    "d": "Basic site infrastructure with a single non-redundant path"
+   },
+   "distractorExplanations": {
+    "a": "Fault tolerance with no single point of failure is TIA-942 Rated-4, not Rated-3.",
+    "c": "Redundant components on a single path describe Rated-2, one level below Rated-3.",
+    "d": "A single non-redundant path describes Rated-1, the lowest TIA-942 rating."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-048": {
+   "options": {
+    "a": "Hot spots in electrical terminations and uneven airflow patterns",
+    "b": "Phase imbalance and harmonic distortion values on each rack PDU",
+    "c": "Refrigerant charge levels inside the sealed CRAC unit compressors",
+    "d": "Cable continuity faults inside bundled fibre trunk assemblies"
+   },
+   "distractorExplanations": {
+    "b": "Phase imbalance and THD need a power analyzer; thermal imaging shows hot terminations.",
+    "c": "Refrigerant charge is checked with gauges and superheat readings, not thermal imaging of the hall.",
+    "d": "Fibre faults are found with an OTDR or light meter, not with a thermal camera."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-049": {
+   "options": {
+    "a": "Remote sites far from network carriers to cut land, tax, and power costs",
+    "b": "Low-cost land in flood-prone zones, offset by raising the ground floor slab",
+    "c": "Low-carbon grid power, water availability, and renewable integration potential",
+    "d": "Regions with the lowest power tariff from coal-heavy grids"
+   },
+   "distractorExplanations": {
+    "a": "Distance from carriers raises latency and connectivity cost; it is not a sustainability criterion.",
+    "b": "Flood-prone sites increase resilience risk; sustainable selection avoids high hazard zones.",
+    "d": "Cheap coal-heavy power raises carbon footprint; sustainable siting prioritizes low-carbon grids."
+   }
+  },
+  "cdcp-readiness-check-site-standards-building-050": {
+   "options": {
+    "a": "Paint finishes and signage against the tenant branding brief",
+    "b": "Agreed power kW, cooling capacity, cross-connects, and security boundaries",
+    "c": "Unlimited oversubscription beyond contracted capacity",
+    "d": "Shared administrator credentials for the tenant's BMS and access control systems"
+   },
+   "distractorExplanations": {
+    "a": "Cosmetic finishes do not confirm the contracted power, cooling, connectivity and security scope.",
+    "d": "Shared admin credentials break tenant isolation; each tenant needs individual, auditable access.",
+    "c": "Oversubscription beyond contracted capacity would lead to service degradation or outages for the tenant and potentially other tenants. Colocation agreements strictly define allocated resources to prevent such issues."
+   }
+  }
+ }
+}

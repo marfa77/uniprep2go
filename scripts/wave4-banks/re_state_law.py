@@ -119,7 +119,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Before a person may engage in activities requiring a {s} real estate license, they generally must:",
             {
-                "a": "Complete required education and obtain the license (and any sponsorship) under {c} rules",
+                "a": f"Complete required education and obtain the license (and any sponsorship) under {c} rules",
                 "b": "Only post on social media",
                 "c": "Pay a federal securities registration fee only",
                 "d": "Own five rentals personally",
@@ -156,7 +156,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
                 "a": "A civil/contract matter between the brokers (or via MLS/association processes), not a reason to withhold a buyer's earnest money unlawfully",
                 "b": "Resolved by keeping the buyer's deposit as a fine automatically",
                 "c": "Decided by the postal inspector",
-                "d": "Ignored because commissions are illegal in {s}",
+                "d": f"Ignored because commissions are illegal in {s}",
             },
             "a",
             "Commission disputes are between licensees/firms; earnest money still follows contract/escrow rules.",
@@ -187,7 +187,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"A {s} broker's place of business typically must:",
             {
-                "a": "Meet statutory office/registration requirements under {c} rules",
+                "a": f"Meet statutory office/registration requirements under {c} rules",
                 "b": "Be only an anonymous P.O. box with no required presence when an office is mandated",
                 "c": "Be located outside the United States always",
                 "d": "Have no identifying sign when a sign is required",
@@ -204,7 +204,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"When a {s} licensee changes brokers, they typically must:",
             {
-                "a": "Notify {c} / follow transfer procedures so the license is properly affiliated",
+                "a": f"Notify {c} / follow transfer procedures so the license is properly affiliated",
                 "b": "Keep practicing under both brokers secretly without notice",
                 "c": "Destroy their license wall certificate and continue unlicensed",
                 "d": "Wait 20 years before transferring",
@@ -221,7 +221,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Reciprocity or license recognition for an out-of-state licensee seeking to practice in {s}:",
             {
-                "a": "Depends on {c} rules, education/exam waivers, and any required state-portion steps",
+                "a": f"Depends on {c} rules, education/exam waivers, and any required state-portion steps",
                 "b": "Is automatic worldwide with no paperwork",
                 "c": "Is forbidden by federal criminal law in all cases",
                 "d": "Requires only a social media post",
@@ -238,7 +238,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Continuing education for {s} real estate license renewal is generally:",
             {
-                "a": "Required on the statutory cycle set by {c}",
+                "a": f"Required on the statutory cycle set by {c}",
                 "b": "Never required once initially licensed",
                 "c": "Replaced by watching any YouTube video without approval",
                 "d": "Optional only for brokers, never associates",
@@ -272,7 +272,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Document retention for {s} brokerages typically requires:",
             {
-                "a": "Keeping transaction records for the period required by {c}",
+                "a": f"Keeping transaction records for the period required by {c}",
                 "b": "Shredding all files the day after closing always",
                 "c": "Storing records only in a personal phone with no backup forever",
                 "d": "Never retaining trust account records",
@@ -306,7 +306,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Team advertising in {s} generally must:",
             {
-                "a": "Clearly identify the responsible brokerage as required by {c}",
+                "a": f"Clearly identify the responsible brokerage as required by {c}",
                 "b": "Omit the broker's name if the team is popular",
                 "c": "Imply the team is a separate licensed brokerage when it is not",
                 "d": "Use only first names with no firm identity",
@@ -374,8 +374,8 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Kickbacks for referring settlement service business in covered residential loans are:",
             {
-                "a": "Restricted under federal RESPA rules and also may violate {s} standards of practice",
-                "b": "Required monthly by {c}",
+                "a": f"Restricted under federal RESPA rules and also may violate {s} standards of practice",
+                "b": f"Required monthly by {c}",
                 "c": "Always legal if paid in cash under the table",
                 "d": "Only regulated for commercial warehouses",
             },
@@ -391,7 +391,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"A {s} broker who fails to supervise affiliated licensees adequately may face:",
             {
-                "a": "Discipline by {c}",
+                "a": f"Discipline by {c}",
                 "b": "A commendation for neglect",
                 "c": "Automatic federal judicial immunity",
                 "d": "Exemption from all civil suits forever",
@@ -459,7 +459,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Licensee name and brokerage identification in {s} online ads typically must:",
             {
-                "a": "Be clear and not misleading under {c} advertising rules",
+                "a": f"Be clear and not misleading under {c} advertising rules",
                 "b": "Use only nicknames with no firm name when rules require firm ID",
                 "c": "Claim \"guaranteed approval\" for every mortgage",
                 "d": "Hide that the poster is licensed",
@@ -527,7 +527,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"A {s} licensee convicted of a crime of moral turpitude related to practice may face:",
             {
-                "a": "License suspension/revocation proceedings before {c}",
+                "a": f"License suspension/revocation proceedings before {c}",
                 "b": "Automatic promotion to broker",
                 "c": "A state-funded bonus",
                 "d": "No possible regulatory consequences",
@@ -544,7 +544,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Trust account reconciliations for a {s} brokerage are important because:",
             {
-                "a": "They help detect shortages/overages and demonstrate compliance to {c}",
+                "a": f"They help detect shortages/overages and demonstrate compliance to {c}",
                 "b": "They replace the need for licenses",
                 "c": "They set the local MLS dues",
                 "d": "They determine property tax assessments",
@@ -595,7 +595,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Errors and omissions (E&O) insurance for a {s} brokerage:",
             {
-                "a": "May be required or strongly expected by firm/{c} risk practices, but does not excuse license law violations",
+                "a": f"May be required or strongly expected by firm/{c} risk practices, but does not excuse license law violations",
                 "b": "Legalizes intentional fraud",
                 "c": "Removes the need to disclose material defects",
                 "d": "Is identical to title insurance",
@@ -680,7 +680,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Discriminatory refusal to show a {s} home based on a protected class under fair housing law is:",
             {
-                "a": "Illegal under federal fair housing law and typically also violates {s} license standards",
+                "a": f"Illegal under federal fair housing law and typically also violates {s} license standards",
                 "b": "Required for exclusive listings",
                 "c": "Allowed if the seller asks orally",
                 "d": "Encouraged in team meetings",
@@ -714,7 +714,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Post-closing, a {s} broker discovers a trust account shortage. The broker should:",
             {
-                "a": "Immediately investigate, correct, and report/notify as required by {c} rules",
+                "a": f"Immediately investigate, correct, and report/notify as required by {c} rules",
                 "b": "Ignore it if under $10,000",
                 "c": "Blame an intern and close the file quietly",
                 "d": "Transfer unrelated operating funds without documenting the cure",
@@ -732,7 +732,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
             f"In {s}, representing yourself as a REALTOR® when you are not a member of the association is:",
             {
                 "a": "Improper trademark/membership misuse and can also be deceptive advertising",
-                "b": "Required by {c} for all licensees",
+                "b": f"Required by {c} for all licensees",
                 "c": "The same as holding a broker license",
                 "d": "Mandatory on every yard sign by federal law",
             },
@@ -765,7 +765,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"License renewals in {s} that are filed late typically may result in:",
             {
-                "a": "Late fees, inactive status, or other {c} penalties until cured",
+                "a": f"Late fees, inactive status, or other {c} penalties until cured",
                 "b": "A free upgrade to attorney status",
                 "c": "Permanent immunity from CE",
                 "d": "Automatic reciprocity with every country",
@@ -782,7 +782,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"A {s} broker opens a trust account. Interest on trust funds, if permitted, typically must be handled:",
             {
-                "a": "According to {c}/statutory rules (e.g., client benefit or approved housing-trust programs)",
+                "a": f"According to {c}/statutory rules (e.g., client benefit or approved housing-trust programs)",
                 "b": "As the broker's personal bonus always",
                 "c": "By mailing cash to the listing agent weekly",
                 "d": "By investing in options without records",
@@ -816,7 +816,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"A temporary/practice permit or provisional status in {s}, where offered, generally means:",
             {
-                "a": "Limited authority under {c} rules until full licensing conditions are met",
+                "a": f"Limited authority under {c} rules until full licensing conditions are met",
                 "b": "Unlimited practice rights worldwide",
                 "c": "No supervision is ever allowed",
                 "d": "The person is exempt from all advertising rules forever",
@@ -867,7 +867,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Misrepresenting square footage in a {s} listing when the licensee knew better is:",
             {
-                "a": "A material misrepresentation that can trigger {c} discipline and civil liability",
+                "a": f"A material misrepresentation that can trigger {c} discipline and civil liability",
                 "b": "Harmless puffing in all cases",
                 "c": "Required to win featured placement",
                 "d": "Only the appraiser's problem, never the listing agent's",
@@ -901,7 +901,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Branch offices of a {s} brokerage typically must:",
             {
-                "a": "Be registered/comply with {c} branch office rules when required",
+                "a": f"Be registered/comply with {c} branch office rules when required",
                 "b": "Operate with no broker oversight by design",
                 "c": "Use a different unlicensed trade name that implies a separate firm improperly",
                 "d": "Avoid all trust account rules",
@@ -918,7 +918,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"A {s} buyer asks for a rebate of commission. The licensee should:",
             {
-                "a": "Follow {c}/brokerage rules on rebates and ensure any payment is lawful and disclosed",
+                "a": f"Follow {c}/brokerage rules on rebates and ensure any payment is lawful and disclosed",
                 "b": "Pay cash secretly from escrow without records",
                 "c": "Promise any rebate regardless of legality",
                 "d": "Ignore brokerage policy always",
@@ -936,7 +936,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
             f"Failure to disclose a known material adverse property condition in a {s} sale can lead to:",
             {
                 "a": "License discipline and civil claims",
-                "b": "A medal from {c}",
+                "b": f"A medal from {c}",
                 "c": "Automatic loan approval for the buyer",
                 "d": "Cancellation of property taxes",
             },
@@ -1020,7 +1020,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"A {s} licensee receives a referral from another state. Best practice is to:",
             {
-                "a": "Confirm licensure status and follow {c} rules on referral fees and advertising",
+                "a": f"Confirm licensure status and follow {c} rules on referral fees and advertising",
                 "b": "Pay any unlicensed finder any amount in cash without records",
                 "c": "Ignore whether the referrer is licensed",
                 "d": "Split trust deposits with the referrer personally",
@@ -1088,7 +1088,7 @@ def _pool(state: str, commission: str) -> list[tuple]:
         (
             f"Operating without the required {s} real estate license while performing brokerage for others for compensation is:",
             {
-                "a": "Unlicensed practice that {c} can stop with penalties",
+                "a": f"Unlicensed practice that {c} can stop with penalties",
                 "b": "Encouraged for new agents before class",
                 "c": "Allowed on weekends only",
                 "d": "Legal if the person uses the word \"consultant\"",

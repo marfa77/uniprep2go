@@ -1,0 +1,599 @@
+{
+ "oh-real-estate-readiness-check": {
+  "oh-real-estate-readiness-check-finance-appraisal-009": {
+   "options": {
+    "a": "Conventional LTV is high (commonly above 80%)",
+    "b": "An FHA loan is used with a down payment of 3.5%",
+    "c": "A VA loan is used with no down payment at all",
+    "d": "Conventional LTV falls to 78% of original value"
+   },
+   "distractorExplanations": {
+    "b": "FHA loans carry the government's mortgage insurance premium (MIP), not private mortgage insurance.",
+    "c": "VA loans are guaranteed by the VA and do not require PMI even with no down payment; a funding fee applies instead.",
+    "d": "78% of original value is when borrower-paid PMI terminates under the Homeowners Protection Act, not when it starts."
+   }
+  },
+  "oh-real-estate-readiness-check-property-ownership-009": {
+   "options": {
+    "a": "Upon the death of the remainderman",
+    "b": "When the life tenant sells the estate",
+    "c": "Upon the death of the original grantor",
+    "d": "Upon the death of the measuring life"
+   },
+   "distractorExplanations": {
+    "a": "Confuses the remainderman with the measuring life; if the remainderman dies first, the remainder passes to his heirs and the life estate continues.",
+    "b": "A life tenant may convey the interest, but the buyer simply holds a life estate pur autre vie that still ends at the original tenant's death.",
+    "c": "Confuses the grantor with the measuring life; the grantor's death does not end an estate measured by the life tenant's life."
+   },
+   "explanation": "Life estates are measured by a life; the estate ends when the measuring life dies (or as otherwise defined in the grant), and the remainder or reversion follows."
+  },
+  "oh-real-estate-readiness-check-agency-law-001": {
+   "options": {
+    "a": "Obtain the highest price by carrying out every seller instruction, lawful or not",
+    "b": "Owe the buyer customer the same loyalty and confidentiality as the seller",
+    "c": "Promote the seller's interests with loyalty, care, and obedience within the law",
+    "d": "Guarantee the seller a closed sale at list price within the listing term"
+   },
+   "distractorExplanations": {
+    "a": "Obedience extends only to lawful instructions; a broker must refuse illegal directions such as discriminatory or fraudulent ones.",
+    "b": "Confuses client and customer: a buyer customer is owed honesty and fair dealing, not the fiduciary loyalty owed to the seller client.",
+    "d": "Fiduciary duties concern conduct (loyalty, care, obedience), not guaranteed outcomes; brokers cannot promise a sale or price."
+   }
+  },
+  "oh-real-estate-readiness-check-agency-law-009": {
+   "options": {
+    "a": "The broker's compensation is a fixed percentage of the final sale price",
+    "b": "The broker's compensation is the amount above a seller's net price",
+    "c": "The seller keeps the right to sell on their own without owing a commission",
+    "d": "The broker's flat fee is owed up front even if the property does not sell"
+   },
+   "distractorExplanations": {
+    "a": "That describes a standard percentage commission listing, which does not create the net listing's incentive to underprice.",
+    "c": "That describes an exclusive agency listing, not a net listing where the broker keeps everything above the seller's net.",
+    "d": "Confuses a net listing with a flat-fee or advance-fee arrangement; a net listing pays the broker only the excess over the net price."
+   },
+   "explanation": "Net listings pay the broker the amount above the seller's net price, creating conflict-of-interest concerns: they can incentivize underpricing and are banned or tightly regulated in many places."
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-014": {
+   "options": {
+    "a": "Maximum loan-to-value ratios that lenders may offer on certain loans",
+    "b": "Minimum disclosures of APR and finance charges on consumer loans",
+    "c": "Maximum interest rates that may be charged on certain loans",
+    "d": "Maximum property tax rates that local governments may levy"
+   },
+   "distractorExplanations": {
+    "a": "LTV limits come from lender and investor underwriting guidelines, not usury laws, which cap the interest rate charged.",
+    "b": "That is the Truth in Lending Act (Regulation Z), which requires cost disclosure but does not cap interest rates.",
+    "d": "Property tax limits are set by tax and levy laws; usury laws apply to interest charged by lenders on loans."
+   }
+  },
+  "oh-real-estate-readiness-check-agency-law-005": {
+   "options": {
+    "a": "The seller's reason for selling and lowest acceptable price, even if the seller objects",
+    "b": "The racial or religious makeup of the neighborhood, since it may affect desirability",
+    "c": "Known latent defects or conditions that could significantly affect value or desirability",
+    "d": "Obvious patent defects, while hidden latent defects are left for the buyer's own inspection"
+   },
+   "distractorExplanations": {
+    "a": "Seller motivation and bottom-line price are confidential client information, not material property facts a buyer must be told.",
+    "b": "Commenting on a neighborhood's race or religion is steering under the Fair Housing Act, not a required material-fact disclosure.",
+    "d": "Reverses the rule: known latent (hidden) defects are exactly what must be disclosed, because a buyer cannot readily discover them."
+   },
+   "explanation": "Material property defects and legally required disclosures must be shared, as required by law; confidential motivations may be protected."
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-004": {
+   "options": {
+    "a": "Interest alone, with the full principal due as a balloon at maturity",
+    "b": "Part of the interest, with the unpaid rest added to the balance",
+    "c": "Interest plus escrowed taxes and insurance, with no principal reduction",
+    "d": "Both interest and principal so the balance declines over the term"
+   },
+   "distractorExplanations": {
+    "a": "That describes an interest-only or balloon loan; an amortizing payment repays principal with each installment.",
+    "b": "Adding unpaid interest to the balance is negative amortization, the opposite of a fully amortizing payment.",
+    "c": "Escrowed taxes and insurance may be added to PITI, but an amortizing payment still reduces principal every month."
+   }
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-005": {
+   "options": {
+    "a": "Banning certain kickbacks and requiring settlement cost disclosures",
+    "b": "Requiring APR and finance charge disclosures for all consumer credit",
+    "c": "Prohibiting lending discrimination based on race, sex, or marital status",
+    "d": "Requiring lenders to report loan data by census tract to regulators"
+   },
+   "distractorExplanations": {
+    "b": "APR and finance-charge disclosure is the Truth in Lending Act (Regulation Z), not RESPA's settlement-services focus.",
+    "c": "That is the Equal Credit Opportunity Act (ECOA); RESPA targets settlement kickbacks and closing-cost disclosure.",
+    "d": "Census-tract loan reporting is the Home Mortgage Disclosure Act (HMDA), which tracks lending patterns, not settlement costs."
+   },
+   "explanation": "RESPA addresses settlement services, kickbacks, and related disclosures in covered transactions (with TRID integration for many loans)."
+  },
+  "oh-real-estate-readiness-check-agency-law-003": {
+   "options": {
+    "a": "The listing broker earns a commission during the term except when the seller personally finds the buyer",
+    "b": "The listing broker is owed a commission if the property sells during the term, regardless of who finds the buyer",
+    "c": "Any cooperating broker who is the procuring cause earns the commission, and the seller may list with other firms",
+    "d": "The broker keeps any proceeds above the seller's stated net price as compensation for the sale"
+   },
+   "distractorExplanations": {
+    "a": "That describes an exclusive agency listing, where the seller keeps the right to sell on their own without owing a commission.",
+    "c": "That describes an open listing, where only the procuring broker is paid and the seller may list with several firms.",
+    "d": "That describes a net listing, which is restricted or banned in many places; it is a compensation method, not exclusive right-to-sell."
+   },
+   "explanation": "Exclusive right-to-sell typically protects the listing broker's commission if a sale occurs during the listing term (per the agreement)."
+  },
+  "oh-real-estate-readiness-check-agency-law-012": {
+   "options": {
+    "a": "Practicing law any time they fill in a standard form's blanks for a client",
+    "b": "Permitted to draft custom clauses as long as the client signs a waiver",
+    "c": "Practicing law if they draft novel legal clauses beyond authorized forms",
+    "d": "Required to have the client's attorney approve each filled-in form first"
+   },
+   "distractorExplanations": {
+    "a": "Filling in approved standard forms is generally permitted for licensees; drafting new legal language is what crosses into law practice.",
+    "b": "A client waiver does not authorize a licensee to practice law; drafting novel legal clauses remains unauthorized practice.",
+    "d": "Attorney review may be advisable or a contract contingency, but it is not a general prerequisite to completing standard forms."
+   }
+  },
+  "oh-real-estate-readiness-check-property-ownership-015": {
+   "options": {
+    "a": "Land bordering a still lake, sea, or ocean",
+    "b": "Water use based on first in time, first in right by permit",
+    "c": "Land bordering flowing water such as a river or stream",
+    "d": "Ownership of subsurface minerals beneath a parcel of land"
+   },
+   "distractorExplanations": {
+    "a": "Confuses riparian with littoral rights, which apply to land bordering lakes, seas, and oceans rather than flowing water.",
+    "b": "That describes the prior appropriation doctrine, a contrasting permit system, not riparian rights tied to bordering land.",
+    "d": "Subsurface rights cover minerals and can be severed; riparian rights concern use of water by land bordering a stream."
+   }
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-002": {
+   "options": {
+    "a": "1% of the purchase price",
+    "b": "1% of the down payment",
+    "c": "1% of the loan amount",
+    "d": "1% of the interest rate"
+   },
+   "distractorExplanations": {
+    "a": "Points are computed on the loan amount, not the price; on a $200,000 price with a $160,000 loan, one point is $1,600.",
+    "b": "Uses the wrong base: the down payment is the buyer's equity, while points are a percentage of the amount borrowed.",
+    "d": "Confuses one point (1% of the loan amount) with one percentage point of interest rate; a point typically buys down far less."
+   }
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-013": {
+   "options": {
+    "a": "Originate new loans directly to borrowers at closing",
+    "b": "Insure lenders against borrower default on high-LTV loans",
+    "c": "Buy and sell existing mortgages, improving liquidity",
+    "d": "Set the discount rate that member banks pay the Fed"
+   },
+   "distractorExplanations": {
+    "a": "That describes the primary mortgage market, where lenders originate loans; the secondary market buys loans already made.",
+    "b": "That is the role of private mortgage insurance or FHA insurance, not the secondary market's buying and selling of loans.",
+    "d": "Confuses the secondary market with the Federal Reserve, which sets the discount rate as a monetary-policy tool."
+   },
+   "explanation": "Entities like Fannie Mae and Freddie Mac (and others) buy existing loans, improving liquidity for originators so they can lend again."
+  },
+  "oh-real-estate-readiness-check-agency-law-010": {
+   "options": {
+    "a": "An obligation to purchase on stated terms within a period, once consideration is paid",
+    "b": "A right of first refusal to match any offer the owner later accepts",
+    "c": "A right to purchase on stated terms within a period, usually for consideration",
+    "d": "An equitable title that passes legal title once payments are complete"
+   },
+   "distractorExplanations": {
+    "a": "Only the optionor (owner) is bound; the optionee holds a right, not an obligation, to buy, making the option unilateral.",
+    "b": "A right of first refusal only lets the holder match a third-party offer; an option fixes the price and terms in advance.",
+    "d": "That describes a vendee's position under a land contract (contract for deed), not an optionee's unexercised right."
+   }
+  },
+  "oh-real-estate-readiness-check-property-ownership-011": {
+   "options": {
+    "a": "A zoning variance granted to the owner for a hardship use",
+    "b": "A deed recorded with a full covenant of warranty from the grantor",
+    "c": "A claim, encumbrance, or defect that may impair marketability",
+    "d": "The abstract summary of the chain of title prepared for a buyer"
+   },
+   "distractorExplanations": {
+    "a": "Confuses public land-use control with title: a variance governs permitted use and is not a claim against ownership.",
+    "b": "A recorded general warranty deed strengthens the chain of title; it is the opposite of a cloud that casts doubt on it.",
+    "d": "Confuses an abstract of title (a history of recorded documents) with a cloud, which is a defect or claim the abstract may reveal."
+   }
+  },
+  "oh-real-estate-readiness-check-agency-law-002": {
+   "options": {
+    "a": "Before or as soon as practicable when the dual/designated relationship arises",
+    "b": "At closing, when the broker's compensation appears on the Closing Disclosure",
+    "c": "Only after an offer is accepted and both parties have signed the contract",
+    "d": "After the inspection period ends, once the buyer is committed to the purchase"
+   },
+   "distractorExplanations": {
+    "b": "Closing is far too late; informed consent to dual or designated agency must come before the parties rely on it.",
+    "c": "Waiting until after acceptance denies the parties informed consent during negotiations, when the conflict matters most.",
+    "d": "Disclosure tied to a later contract milestone is too late; it is required when the dual relationship first arises."
+   },
+   "explanation": "Agency disclosure timing is early—when the dual or designated relationship is created or contemplated, per applicable rules."
+  },
+  "oh-real-estate-readiness-check-agency-law-006": {
+   "options": {
+    "a": "Refuse to share any property facts until the buyer hires a buyer agent",
+    "b": "Recommend an offer amount, since customers are owed the same advice as clients",
+    "c": "Avoid acting as the buyer's advocate and stay within the listing agency role",
+    "d": "Share the seller's lowest acceptable price so the buyer can make a fair offer"
+   },
+   "distractorExplanations": {
+    "a": "Listing agents owe customers honesty and may share property facts; the limit is on advocacy, not on providing information.",
+    "b": "Confuses customer and client: advising a buyer on price is advocacy that conflicts with the agent's loyalty to the seller.",
+    "d": "Revealing the seller's bottom line breaches the confidentiality the listing agent owes to the seller client."
+   },
+   "explanation": "Listing agents represent the seller; advocacy for a buyer requires a proper agency shift and disclosure (or properly creating buyer agency if allowed)."
+  },
+  "oh-real-estate-readiness-check-agency-law-008": {
+   "options": {
+    "a": "Parties may still perform within a reasonable time after each stated deadline passes",
+    "b": "The closing date is firm, but other contingency deadlines may slip",
+    "c": "Contract dates and times are critical and late performance may be a breach",
+    "d": "The offer expires if the seller does not accept it within 24 hours"
+   },
+   "distractorExplanations": {
+    "a": "That is the default rule when the clause is absent; time is of the essence makes the stated deadlines strictly enforceable.",
+    "b": "The clause applies to all contract dates, including inspection, financing, and appraisal contingency deadlines.",
+    "d": "Confuses the clause with an offer's expiration term; time is of the essence governs performance deadlines in the contract."
+   }
+  },
+  "oh-real-estate-readiness-check-agency-law-013": {
+   "options": {
+    "a": "Proceed with dual agency once the buyer consents in writing, since one party's consent suffices",
+    "b": "Not create the dual agency relationship; consider designated agency, referral, or withdrawal",
+    "c": "Act as a dual agent for both parties but keep each side's confidential information private",
+    "d": "Represent the buyer and treat the seller as a customer while keeping the listing"
+   },
+   "distractorExplanations": {
+    "a": "Dual agency requires informed consent from both clients; the buyer's consent alone cannot override the seller's refusal.",
+    "c": "Keeping confidences does not replace consent; without the seller's agreement the broker may not act as a dual agent.",
+    "d": "The broker cannot downgrade an existing seller client to customer status to sidestep the required dual agency consent."
+   },
+   "explanation": "Consent is required for dual agency where the model is used; without it, other compliant paths are needed (designated agency, referral, or withdrawal as appropriate)."
+  },
+  "oh-real-estate-readiness-check-property-ownership-013": {
+   "options": {
+    "a": "Use allowed in a district only after a special permit is issued",
+    "b": "Lawful use that predates current zoning and may continue as is",
+    "c": "Permission to deviate from a zoning requirement due to hardship",
+    "d": "Permanent change of the zoning map for an entire district"
+   },
+   "distractorExplanations": {
+    "a": "That describes a conditional or special use permit, which allows a listed use under conditions rather than relief for hardship.",
+    "b": "That describes a nonconforming use (grandfathered use), which predates the ordinance rather than being granted relief from it.",
+    "d": "That is rezoning/amendment."
+   },
+   "explanation": "Variances grant relief from strict zoning application in hardship cases, granted by the zoning authority (such as a board of zoning appeals)."
+  },
+  "oh-real-estate-readiness-check-agency-law-007": {
+   "options": {
+    "a": "Signed under a mistaken belief about the market value",
+    "b": "Was induced by fraud or was a minor",
+    "c": "Later found a better-priced property elsewhere",
+    "d": "Changed their mind before closing"
+   },
+   "distractorExplanations": {
+    "a": "A one-sided mistake about value or a bad bargain does not make a contract voidable; fraud or incapacity does.",
+    "c": "Buyer's remorse over a better deal is not a legal ground to void a contract; that would be a breach.",
+    "d": "Changing one's mind after a binding contract is formed is a breach, not a ground that makes the contract voidable."
+   },
+   "explanation": "Fraud or lack of capacity can make a contract voidable by the protected party. Whether a particular contract is voidable depends on the circumstances and state law."
+  },
+  "oh-real-estate-readiness-check-agency-law-011": {
+   "options": {
+    "a": "A misstatement of a measurable fact, such as lot size, that buyers may rely upon",
+    "b": "An implied warranty of quality that binds the seller once the buyer relies on it",
+    "c": "Exaggerated opinion that a reasonable person would not treat as a factual warranty",
+    "d": "A form of negligent misrepresentation that licensees are liable for if a buyer relies on it"
+   },
+   "distractorExplanations": {
+    "a": "That is misrepresentation; puffing is vague opinion, while measurable facts like lot size must be accurate.",
+    "b": "Puffing creates no warranty; a reasonable buyer is not expected to treat sales talk as a promise of quality.",
+    "d": "Negligent misrepresentation involves a false statement of fact; opinion-level puffing is not actionable on its own."
+   }
+  },
+  "oh-real-estate-readiness-check-agency-law-015": {
+   "options": {
+    "a": "Spending client trust money on the broker's own business expenses",
+    "b": "Holding earnest money for several different clients in one pooled trust account",
+    "c": "Depositing earnest money after the legally required deadline",
+    "d": "Mixing client trust money with personal or operating funds improperly"
+   },
+   "distractorExplanations": {
+    "a": "That is conversion (using trust money for oneself); commingling is the mixing of funds, even if none is spent.",
+    "b": "A pooled trust account for multiple clients with proper ledgers is permitted; commingling is mixing trust and broker money.",
+    "c": "A late deposit violates the deposit timeline rule, not the commingling rule against mixing trust and personal funds."
+   }
+  },
+  "oh-real-estate-readiness-check-property-ownership-005": {
+   "options": {
+    "a": "Devise by will",
+    "b": "Survivorship",
+    "c": "Homestead",
+    "d": "Curtesy"
+   },
+   "distractorExplanations": {
+    "a": "A joint tenant cannot pass the interest by will; survivorship gives it to the surviving co-owners.",
+    "c": "Homestead is a separate protection for a primary residence, not a defining feature of joint tenancy.",
+    "d": "Curtesy is a husband's marital life interest (largely abolished), not a feature of joint tenancy."
+   }
+  },
+  "oh-real-estate-readiness-check-property-ownership-008": {
+   "options": {
+    "a": "Public use and the owner's written consent",
+    "b": "Just compensation equal to the assessed value",
+    "c": "Police power and a zoning hearing",
+    "d": "Public use/purpose and just compensation"
+   },
+   "distractorExplanations": {
+    "a": "Eminent domain is a forced taking; the owner's consent is not required, only public use and just compensation.",
+    "b": "Just compensation is measured by fair market value, not the tax-assessed value, and public use is also required.",
+    "c": "Confuses eminent domain with police power regulation, which restricts use without taking title or paying compensation."
+   },
+   "explanation": "Takings require public purpose and just compensation under the Constitution. This is the Fifth Amendment takings framework."
+  },
+  "oh-real-estate-readiness-check-property-ownership-012": {
+   "options": {
+    "a": "May hold unequal shares and typically lack survivorship",
+    "b": "Must acquire title at the same time and by the same deed",
+    "c": "Hold equal shares but may sell only with the others' consent",
+    "d": "Have survivorship rights but may not devise their shares by will"
+   },
+   "distractorExplanations": {
+    "b": "Unities of time and title are required for joint tenancy; tenants in common need only unity of possession.",
+    "c": "Tenants in common may hold unequal shares and may convey their interests without the others' consent.",
+    "d": "Reverses the rule: tenants in common can devise their shares by will and have no automatic survivorship."
+   },
+   "explanation": "TIC allows unequal interests and no automatic survivorship. Survivorship applies only if the deed specifies it."
+  },
+  "oh-real-estate-readiness-check-property-ownership-014": {
+   "options": {
+    "a": "Delivering the signed deed to the grantee",
+    "b": "Having the grantor's signature notarized",
+    "c": "Recording the deed in the public land records",
+    "d": "Taking open physical possession of the land"
+   },
+   "distractorExplanations": {
+    "a": "Delivery and acceptance transfer title between the parties but give no notice to the world; recording does.",
+    "b": "Acknowledgment (notarization) usually makes a deed eligible for recording but does not itself give constructive notice.",
+    "d": "Possession gives inquiry (actual) notice to those who inspect, not the constructive notice created by recording."
+   }
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-008": {
+   "options": {
+    "a": "Lets the lender call the full balance due if the property is sold",
+    "b": "Adds a late charge when a payment arrives after the grace period",
+    "c": "Charges a fee to assume the existing loan",
+    "d": "Requires extra payment if the borrower pays off early"
+   },
+   "distractorExplanations": {
+    "a": "Describes a due-on-sale (alienation) clause, which is triggered by transfer, not by early payoff.",
+    "b": "That is a late-payment charge for paying too late, the opposite of a penalty for paying off early.",
+    "c": "An assumption fee applies when a buyer takes over the loan; a prepayment penalty applies to early payoff."
+   },
+   "explanation": "Prepayment penalties charge for early payoff when permitted by the loan terms and law. It applies only when the note and applicable law allow it."
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-010": {
+   "options": {
+    "a": "Can adjust based on an index plus margin, subject to caps",
+    "b": "Adjusts by the margin alone, with the index fixed at closing",
+    "c": "Adjusts to the current prime rate with no periodic caps",
+    "d": "Changes only when the borrower elects to refinance"
+   },
+   "distractorExplanations": {
+    "b": "The margin is the fixed part; the index moves with the market and drives each adjustment.",
+    "c": "ARMs follow the index named in the note, not necessarily prime, and most carry periodic and lifetime caps.",
+    "d": "An ARM rate resets on its schedule without a refinance; refinancing replaces the loan entirely."
+   }
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-011": {
+   "options": {
+    "a": "Borrower default on the loan, protecting the lender's unpaid balance",
+    "b": "Covered title defects and claims against ownership per the policy",
+    "c": "Physical damage to the home from fire or storm",
+    "d": "Construction defects discovered after the buyer closes"
+   },
+   "distractorExplanations": {
+    "a": "Default protection is private mortgage insurance (PMI) or FHA insurance, not title insurance.",
+    "c": "Casualty damage is covered by hazard (homeowner's) insurance; title insurance covers ownership defects.",
+    "d": "Physical construction defects fall under warranties or disclosure claims, not a title policy's coverage of ownership defects."
+   }
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-012": {
+   "options": {
+    "a": "The buyer is credited; it reduces the cash needed",
+    "b": "The seller is charged the item on the buyer's behalf",
+    "c": "The lender pays the item at closing",
+    "d": "The buyer is charged; it increases cash needed"
+   },
+   "distractorExplanations": {
+    "a": "Reverses the entry: a credit reduces the buyer's cash to close, while a debit is a charge that increases it.",
+    "b": "A buyer debit charges the buyer; a seller-paid item would appear as a seller debit and buyer credit.",
+    "c": "Lender-paid items show as credits to the buyer; a buyer debit means the buyer pays."
+   },
+   "explanation": "Debits charge a party; buyer debits typically increase funds due at closing. For the seller, a debit reduces sale proceeds."
+  },
+  "oh-real-estate-readiness-check-finance-appraisal-015": {
+   "options": {
+    "a": "Finance a short-term gap, often between purchase of a new home and sale of an existing one",
+    "b": "Fund construction draws on a new home and then convert to permanent financing once it is completed",
+    "c": "Let a buyer take over the seller's existing loan at its current rate and terms",
+    "d": "Combine a first mortgage with a second loan to avoid PMI on a low down payment"
+   },
+   "distractorExplanations": {
+    "b": "Describes a construction-to-permanent loan, not a short-term bridge between buying and selling homes.",
+    "c": "Describes a loan assumption, which transfers an existing mortgage rather than covering a short timing gap.",
+    "d": "Describes a piggyback (80/10/10) loan structure used to avoid PMI, not a bridge loan."
+   }
+  },
+  "oh-real-estate-readiness-check-oh-license-law-001": {
+   "options": {
+    "a": "Restricted under federal RESPA rules",
+    "b": "Permitted when the fee is disclosed to the borrower in writing",
+    "c": "Permitted between affiliated businesses without any disclosure",
+    "d": "Legal if paid by the lender"
+   },
+   "distractorExplanations": {
+    "b": "Disclosure does not cure a RESPA Section 8 kickback; fees for referrals alone are prohibited.",
+    "c": "Affiliated business arrangements are allowed only with the required written disclosure and no referral-fee payment.",
+    "d": "RESPA's ban covers referral fees from any settlement provider, including lenders."
+   },
+   "explanation": "RESPA bans certain referral fees; state ethics/license rules also police improper inducements. Improper referral fees may also violate state license law and standards of practice."
+  },
+  "oh-real-estate-readiness-check-oh-license-law-004": {
+   "options": {
+    "a": "Follow lawful client instructions and brokerage policy for timely presentation/notification",
+    "b": "Hold the offer until a second offer arrives so that both offers can be presented together",
+    "c": "Ask the buyer's agent to resubmit the offer once the seller can be reached",
+    "d": "Have the principal broker accept the offer under the listing agreement's authority"
+   },
+   "distractorExplanations": {
+    "b": "Offers must be presented promptly as received; holding one back to batch offers breaches the duty to present.",
+    "c": "The listing agent must handle the offer it already received; asking for a resubmission delays presentation.",
+    "d": "A listing agreement does not give the principal broker authority to accept offers; only the seller can accept."
+   },
+   "explanation": "Offers must be handled per agency duties and any written seller instructions. An offer is never ignored."
+  },
+  "oh-real-estate-readiness-check-oh-license-law-005": {
+   "options": {
+    "a": "May negotiate offer terms if the supervising broker reviews and approves them afterward",
+    "b": "May show property and discuss price unsupervised once trained by the firm",
+    "c": "Performs administrative tasks under supervision and must not negotiate unless licensed",
+    "d": "Performs licensed tasks under a broker's supervision without needing a license"
+   },
+   "distractorExplanations": {
+    "a": "Negotiating is licensed activity; after-the-fact broker approval does not let an unlicensed coordinator negotiate.",
+    "b": "Showing property and discussing price are licensed activities; firm training does not replace a license.",
+    "d": "Supervision does not authorize unlicensed people to perform licensed activities; only clerical tasks are allowed."
+   }
+  },
+  "oh-real-estate-readiness-check-oh-license-law-006": {
+   "options": {
+    "a": "Immediately investigate, correct, and report/notify as required",
+    "b": "Wait for the next monthly reconciliation to confirm the shortage",
+    "c": "Report it if a client files a complaint about missing funds",
+    "d": "Close the trust account and open a new one at another bank"
+   },
+   "distractorExplanations": {
+    "b": "Delaying until the next reconciliation leaves client funds short; a known shortage must be investigated and cured now.",
+    "c": "Reporting duties do not depend on a client complaint; the broker must act and notify when the shortage is found.",
+    "d": "Moving banks does not cure the shortage and may hide it; the deficit must be corrected and reported."
+   },
+   "explanation": "Shortages are serious; prompt remediation and required notices protect the public. Reporting and notice duties follow the state commission's trust account rules."
+  },
+  "oh-real-estate-readiness-check-oh-license-law-007": {
+   "options": {
+    "a": "As brokerage income once the transaction closes, without any written disclosure to the parties",
+    "b": "According to statutory rules (e.g., client benefit or approved housing-trust programs)",
+    "c": "By splitting it between the listing and selling brokers at closing",
+    "d": "By paying it to the state real estate recovery fund in every case"
+   },
+   "distractorExplanations": {
+    "a": "Interest on trust money is not the broker's to keep without authority; keeping it undisclosed is conversion.",
+    "c": "Cooperating brokers have no claim to trust-account interest; its use is set by statute or the parties' agreement.",
+    "d": "Confuses trust interest with recovery-fund fees; interest goes where statute or the agreement directs, such as the client."
+   }
+  },
+  "oh-real-estate-readiness-check-oh-license-law-008": {
+   "options": {
+    "a": "Documents supervision standards and compliant procedures for affiliated licensees",
+    "b": "Shifts liability for agents' violations from the broker to the agents",
+    "c": "Takes the place of required continuing education for affiliated licensees",
+    "d": "Satisfies the broker's supervision duty without any further review of agents' files"
+   },
+   "distractorExplanations": {
+    "b": "A manual does not transfer the broker's supervisory liability; the broker remains responsible for supervision.",
+    "c": "Continuing education is a separate licensing requirement that a policy manual cannot replace.",
+    "d": "A written manual supports but does not satisfy supervision; brokers must still actively review transactions."
+   }
+  },
+  "oh-real-estate-readiness-check-oh-license-law-009": {
+   "options": {
+    "a": "Pay the rebate directly from the earnest money deposit at closing",
+    "b": "Refuse, because federal RESPA bans all commission rebates paid to buyers in a sale",
+    "c": "Pay the rebate in cash after closing so it need not be disclosed to the lender",
+    "d": "Follow brokerage rules on rebates and ensure any payment is lawful and disclosed"
+   },
+   "distractorExplanations": {
+    "a": "Earnest money is trust money for the transaction, not a source the licensee can use to pay a rebate.",
+    "b": "RESPA does not ban disclosed rebates to buyers; legality turns on state law and lender disclosure.",
+    "c": "Undisclosed rebates can be mortgage fraud; rebates must be disclosed to the lender and on the closing statement."
+   },
+   "explanation": "Rebate legality varies; compliance and disclosure are essential. The state commission's rules govern when rebates are permitted."
+  },
+  "oh-real-estate-readiness-check-oh-license-law-010": {
+   "options": {
+    "a": "Perform licensed activities under the associate's license and supervision",
+    "b": "Perform licensed activities only within their own license authority",
+    "c": "Be paid commissions directly by the associate they work for",
+    "d": "Negotiate offers for the associate's clients without broker affiliation"
+   },
+   "distractorExplanations": {
+    "a": "A licensee works under their own license and the broker's supervision, not another associate's license.",
+    "c": "Compensation for licensed activity must flow through the employing broker, not directly from another associate.",
+    "d": "Licensed activity requires affiliation with a broker; an unaffiliated license cannot be used to negotiate."
+   },
+   "explanation": "Licensed assistants still must stay within license and supervision rules. The assistant must also follow brokerage affiliation rules."
+  },
+  "oh-real-estate-readiness-check-oh-license-law-011": {
+   "options": {
+    "a": "Protect confidential client information and not disclose without authority",
+    "b": "Disclose it, since the duty of confidentiality ends when the transaction closes",
+    "c": "Disclose it, because the buyer was a party to the same transaction",
+    "d": "Refer the buyer to the cooperating agent, who may share it freely"
+   },
+   "distractorExplanations": {
+    "b": "Confidentiality can survive closing for non-public personal information; it does not end automatically at closing.",
+    "c": "Being a party to the deal gives the buyer no right to the seller's personal contact information.",
+    "d": "Passing the request to another agent does not make disclosure permissible; the information stays confidential."
+   },
+   "explanation": "Confidentiality can survive closing for non-public personal information. Disclosure is allowed only with authority or a legal requirement."
+  },
+  "oh-real-estate-readiness-check-oh-license-law-012": {
+   "options": {
+    "a": "Licensed and holding an active E&O policy in their own name",
+    "b": "Licensed and having finished the post-licensing course first",
+    "c": "Licensed and operating their own office under a registered trade name",
+    "d": "Properly licensed and affiliated with a supervising broker as required"
+   },
+   "distractorExplanations": {
+    "a": "E&O coverage is a risk tool, not the condition for practice; a salesperson must be affiliated with a broker.",
+    "b": "Post-licensing education is due within the first year of licensure, not before a salesperson may practice.",
+    "c": "Operating an independent office requires a broker license; a salesperson must work under a supervising broker."
+   }
+  },
+  "oh-real-estate-readiness-check-oh-license-law-013": {
+   "options": {
+    "a": "Deposited into a properly designated trust/escrow account",
+    "b": "Deposited into the brokerage's operating account until closing",
+    "c": "Held by the listing agent in a personal account until closing",
+    "d": "Given directly to the seller at signing"
+   },
+   "distractorExplanations": {
+    "b": "Placing trust money in the operating account is commingling; it must go into a designated trust account.",
+    "c": "Trust funds belong in the broker's designated trust account, never a salesperson's personal account.",
+    "d": "Earnest money is held in trust until closing or release, not paid to the seller when the contract is signed."
+   },
+   "explanation": "Timely deposit to a trust account is a core compliance duty. Deposits must be made within the required timelines."
+  },
+  "oh-real-estate-readiness-check-oh-license-law-014": {
+   "options": {
+    "a": "Retake the state exam before joining the new brokerage",
+    "b": "Follow transfer procedures so the license is properly affiliated",
+    "c": "Apply for a new license number under the new brokerage",
+    "d": "Wait until the next license renewal cycle to change their affiliation"
+   },
+   "distractorExplanations": {
+    "a": "Changing brokers is an affiliation transfer; there is no requirement to retake the licensing exam.",
+    "c": "The license stays the same; only its affiliation transfers to the new broker.",
+    "d": "Transfers are processed when the move happens; practicing for a new broker before transfer is not allowed."
+   },
+   "explanation": "Affiliation changes require regulatory notice/transfer steps. The licensee must notify the Ohio Division of Real Estate of the change."
+  }
+ }
+}

@@ -7,11 +7,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Appraises property value independently for the lender"
+        "text": "Orders and reviews the appraisal, then sets the final loan amount the lender will approve"
       },
       {
         "id": "b",
-        "text": "Issues title insurance policies"
+        "text": "Performs clerical loan processing such as gathering documents for a licensed originator"
       },
       {
         "id": "c",
@@ -19,15 +19,15 @@
       },
       {
         "id": "d",
-        "text": "Sets the Federal Reserve discount rate"
+        "text": "Makes the final credit decision and issues the commitment letter for the lender"
       }
     ],
     "correctOptionId": "c",
     "explanation": "SAFE Act definitions center on taking applications and offering/negotiating terms for compensation.",
     "distractorExplanations": {
-      "a": "Appraiser role.",
-      "b": "Title agent/underwriter role.",
-      "d": "Monetary policy."
+      "a": "Ordering appraisals and setting the final amount are processing/underwriting functions; SAFE Act MLO activity is taking applications and offering or negotiating terms.",
+      "b": "Clerical or support processing under a licensed MLO's supervision is excluded from the SAFE Act MLO definition; the MLO takes applications and negotiates terms.",
+      "d": "Final credit decisions and commitment letters are underwriting functions; an MLO is defined by taking applications and offering/negotiating terms for pay."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -40,15 +40,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Property taxes to HOA fees"
+        "text": "Monthly debt obligations to net take-home pay"
       },
       {
         "id": "b",
-        "text": "Home equity to purchase price"
+        "text": "Total outstanding debt balances to annual income"
       },
       {
         "id": "c",
-        "text": "Credit score to LTV"
+        "text": "Loan amount to the property's appraised value"
       },
       {
         "id": "d",
@@ -58,9 +58,9 @@
     "correctOptionId": "d",
     "explanation": "DTI = monthly debts ÷ gross monthly income (front-end/back-end variants exist)",
     "distractorExplanations": {
-      "a": "Expense components, not DTI.",
-      "b": "LTV/equity concepts.",
-      "c": "Different metrics."
+      "a": "DTI uses gross (pre-tax) monthly income, not net take-home pay; using net income would overstate the ratio.",
+      "b": "DTI compares monthly payments, not total outstanding balances, to monthly income; balance-to-income is a different measure.",
+      "c": "Loan amount divided by appraised value is the loan-to-value (LTV) ratio, a collateral measure rather than a capacity measure like DTI."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -106,11 +106,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only points and title fees"
+        "text": "Principal, interest, title, and inspection"
       },
       {
         "id": "b",
-        "text": "Only PMI without taxes"
+        "text": "Points, interest, taxes, and insurance"
       },
       {
         "id": "c",
@@ -118,15 +118,15 @@
       },
       {
         "id": "d",
-        "text": "Only HOA and utilities"
+        "text": "Principal, interest, and transfer taxes"
       }
     ],
     "correctOptionId": "c",
     "explanation": "PITI is the standard housing payment stack used in underwriting.",
     "distractorExplanations": {
-      "a": "Closing costs.",
-      "b": "Incomplete.",
-      "d": "Not the PITI acronym."
+      "a": "Title and inspection are one-time closing costs; the T and I in PITI stand for property taxes and hazard insurance paid monthly.",
+      "b": "The P in PITI is principal, not discount points; points are a one-time upfront charge, not part of the monthly housing payment.",
+      "d": "Transfer taxes are a one-time closing charge; PITI includes recurring property taxes plus homeowners insurance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -139,11 +139,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Skip the appraisal"
+        "text": "Exit the contract if the home appraises below the purchase price"
       },
       {
         "id": "b",
-        "text": "Force the seller to pay all closing costs by law"
+        "text": "Exit the contract if the home inspection reveals material defects"
       },
       {
         "id": "c",
@@ -151,15 +151,15 @@
       },
       {
         "id": "d",
-        "text": "Avoid disclosing income to the lender"
+        "text": "Exit if they cannot sell their current home before closing"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Financing contingencies protect buyers if loan approval fails under stated terms.",
     "distractorExplanations": {
-      "a": "Appraisal is separate.",
-      "b": "Not automatic by law.",
-      "d": "Income disclosure is required for underwriting."
+      "a": "Exiting on a low value is an appraisal contingency; a financing contingency covers failure to obtain the specified loan.",
+      "b": "Defect findings trigger an inspection contingency, not a financing contingency, which hinges on obtaining the specified loan.",
+      "d": "Making the purchase depend on selling the buyer's existing home is a home-sale contingency, not a financing contingency."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -176,23 +176,23 @@
       },
       {
         "id": "b",
-        "text": "Record the deed as county clerk"
+        "text": "Take the application and negotiate rate and terms with the borrower"
       },
       {
         "id": "c",
-        "text": "Set county property tax rates"
+        "text": "Collect documents, order verifications, and prepare the file for review"
       },
       {
         "id": "d",
-        "text": "Market the loan on TikTok"
+        "text": "Coordinate the closing, disburse loan funds, and record the security instrument"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Underwriting assesses whether the loan meets program and risk standards.",
     "distractorExplanations": {
-      "b": "Recording office.",
-      "c": "Tax authority.",
-      "d": "Sales/marketing."
+      "b": "Taking applications and negotiating terms is the loan originator's role; the underwriter independently evaluates risk against guidelines.",
+      "c": "Gathering documents and ordering verifications is the processor's job; the underwriter decides whether the file meets guidelines.",
+      "d": "Disbursing funds and recording documents are closing/settlement agent tasks, not the underwriter's risk evaluation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -205,15 +205,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantees closing will occur"
+        "text": "Commits the lender to approve the loan at the quoted rate once the lock is signed"
       },
       {
         "id": "b",
-        "text": "Is illegal under RESPA"
+        "text": "Holds the quoted rate until closing, however long the transaction takes"
       },
       {
         "id": "c",
-        "text": "Eliminates the need for an appraisal"
+        "text": "Fixes the rate for the first five years before adjustments begin on an ARM"
       },
       {
         "id": "d",
@@ -223,9 +223,9 @@
     "correctOptionId": "d",
     "explanation": "Locks hold a rate/points for a window; closing is not guaranteed by the lock alone.",
     "distractorExplanations": {
-      "a": "Lock ≠ closing guarantee.",
-      "b": "Locks are common/legal.",
-      "c": "Appraisal still needed typically."
+      "a": "A lock protects pricing only; it is not a credit approval, and the loan still has to clear underwriting before closing.",
+      "b": "Locks expire after a stated period (e.g., 30-60 days); delays past expiration can require an extension fee or repricing.",
+      "c": "That describes an ARM's initial fixed period in the note, not a pre-closing rate lock that protects quoted pricing until closing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only investment property cash flow"
+        "text": "All monthly debts including housing relative to income"
       },
       {
         "id": "b",
-        "text": "Only student loans"
+        "text": "Non-housing installment debts relative to income"
       },
       {
         "id": "c",
-        "text": "All revolving debt only excluding housing"
+        "text": "Housing payment relative to the property's value"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Front-end (housing) ratio compares housing costs to income.",
     "distractorExplanations": {
-      "a": "Not the definition.",
-      "b": "Too narrow.",
-      "c": "That's closer to other debt components of back-end."
+      "a": "Including every monthly debt plus housing describes the back-end ratio; the front-end ratio isolates the housing payment.",
+      "b": "Non-housing installment debts are part of the back-end calculation, not the front-end housing ratio.",
+      "c": "Front-end DTI divides housing expense by gross income, not property value; payment-to-value is not a standard qualifying ratio."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A casual verbal estimate with no credit check ever"
+        "text": "An informal estimate based on borrower-stated income and assets without verification"
       },
       {
         "id": "b",
-        "text": "Final clear-to-close"
+        "text": "A final loan commitment issued after the appraisal and title are approved"
       },
       {
         "id": "c",
-        "text": "A more verified underwriting review of credit/income/assets (still not a final commitment)"
+        "text": "A more verified underwriting review of credit/income/assets"
       },
       {
         "id": "d",
-        "text": "An appraisal waiver"
+        "text": "A rate lock on the program the borrower selects before choosing a specific property"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Pre-approval is stronger than pre-qual but is not the same as a final loan commitment.",
     "distractorExplanations": {
-      "a": "Sounds like soft pre-qual.",
-      "b": "CTC is later.",
-      "d": "Appraisal decisions are separate."
+      "a": "Unverified, borrower-stated estimates describe pre-qualification; pre-approval involves a credit pull and document verification.",
+      "b": "A final commitment comes after appraisal, title, and conditions clear; pre-approval precedes a property and is not a commitment.",
+      "d": "A rate lock protects pricing on a specific loan; pre-approval is a verified credit review, not a pricing lock."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -337,11 +337,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Will never live in the property"
+        "text": "Intends to occupy the property for part of the year"
       },
       {
         "id": "b",
-        "text": "Must rent it on day one"
+        "text": "Intends to rent the property while living elsewhere"
       },
       {
         "id": "c",
@@ -349,15 +349,15 @@
       },
       {
         "id": "d",
-        "text": "Can only buy commercial warehouses"
+        "text": "Lists it as a mailing address while living in another home"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Primary occupancy is the borrower's principal residence.",
     "distractorExplanations": {
-      "a": "Investment/second home.",
-      "b": "Would conflict with primary intent.",
-      "d": "Residential mortgage context."
+      "a": "Part-year occupancy describes a second home; a primary residence is the borrower's principal, main home.",
+      "b": "Renting the property out while living elsewhere makes it an investment property, not a primary residence.",
+      "d": "A mailing address alone does not establish occupancy; the borrower must actually live in the home as their principal residence."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -370,15 +370,15 @@
     "options": [
       {
         "id": "a",
-        "text": "That gifts be repaid monthly like a loan without disclosure"
+        "text": "A gift letter alone, since the donor's statement is sufficient proof"
       },
       {
         "id": "b",
-        "text": "That gifts come only from the listing agent"
+        "text": "Proof the funds sat in the borrower's account for 60 days before closing"
       },
       {
         "id": "c",
-        "text": "No documentation"
+        "text": "A promissory note showing repayment terms agreed with the donor"
       },
       {
         "id": "d",
@@ -388,9 +388,9 @@
     "correctOptionId": "d",
     "explanation": "Agencies require gift documentation and paper trail; repayment may recharacterize as a loan.",
     "distractorExplanations": {
-      "a": "If repaid, it's debt.",
-      "b": "Donor rules are specific; agents are conflicted.",
-      "c": "Docs required."
+      "a": "A gift letter by itself is not enough; lenders also require evidence of the donor's transfer and sourcing of the funds.",
+      "b": "Seasoning funds for 60 days is a way to avoid sourcing; gift funds instead require a gift letter and documentation of the transfer.",
+      "c": "A repayment obligation turns the gift into a loan that must be counted in DTI; a true gift requires no repayment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -403,7 +403,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A HELOC that never has a credit limit"
+        "text": "A loan amount above FHA county loan limits"
       },
       {
         "id": "b",
@@ -411,19 +411,19 @@
       },
       {
         "id": "c",
-        "text": "A loan with zero interest"
+        "text": "A loan with an LTV ratio above 95 percent"
       },
       {
         "id": "d",
-        "text": "Any FHA loan"
+        "text": "A loan secured by a two- to four-unit property"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Jumbo = above conforming limits (investor overlays apply)",
     "distractorExplanations": {
-      "a": "HELOC is different product.",
-      "c": "False.",
-      "d": "FHA has its own limits/insurance."
+      "a": "FHA limits cap FHA eligibility; a jumbo is defined by exceeding the conforming limit set for Fannie Mae and Freddie Mac.",
+      "c": "A high LTV describes leverage, not loan size; jumbo status depends on the loan amount exceeding conforming limits.",
+      "d": "Two- to four-unit properties have their own higher conforming limits; unit count alone does not make a loan jumbo."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -440,23 +440,23 @@
       },
       {
         "id": "b",
-        "text": "Proof of fraud"
+        "text": "Separate inquiries, each lowering the score by a fixed number of points"
       },
       {
         "id": "c",
-        "text": "Illegal under ECOA"
+        "text": "Soft inquiries that do not appear on the consumer's credit report"
       },
       {
         "id": "d",
-        "text": "Always each a separate permanent score hit"
+        "text": "A single inquiry only if every pull comes from the same lender"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Rate-shopping windows commonly collapse multiple mortgage inquiries.",
     "distractorExplanations": {
-      "b": "Not proof of fraud.",
-      "c": "Shopping isn't illegal.",
-      "d": "Overstates the hit."
+      "b": "Scoring models deduplicate mortgage inquiries within a shopping window rather than penalizing each pull separately.",
+      "c": "Mortgage pulls are hard inquiries and do appear on the report; the window only collapses them into one for scoring.",
+      "d": "Rate-shopping windows apply across different lenders; the point is to let consumers compare lenders without score penalties."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -469,27 +469,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The borrower can skip signing"
+        "text": "The loan has funded and the deed of trust has been recorded"
       },
       {
         "id": "b",
-        "text": "The property tax bill is waived"
+        "text": "The underwriter issued approval subject to remaining conditions"
       },
       {
         "id": "c",
-        "text": "Underwriting conditions are satisfied and the loan may proceed to closing"
+        "text": "Underwriting conditions are satisfied"
       },
       {
         "id": "d",
-        "text": "The MLO becomes the title insurer"
+        "text": "The title company has cleared all liens so the seller may be paid"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "CTC indicates conditions are met for closing (final walk-through/funding still matter)",
+    "explanation": "CTC indicates underwriting conditions are met and the loan may proceed to closing (final walk-through/funding still matter).",
     "distractorExplanations": {
-      "a": "Signing still required.",
-      "b": "False.",
-      "d": "False."
+      "a": "Funding and recording happen after closing; clear-to-close is the earlier signal that underwriting conditions are satisfied.",
+      "b": "Approval subject to conditions is conditional approval; clear-to-close means those conditions have already been satisfied.",
+      "d": "Clearing title is one input; clear-to-close is the lender's underwriting sign-off that every loan condition is satisfied."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "Only available to veterans"
+        "text": "Backed by a VA guaranty for eligible veterans, often with no down payment"
       },
       {
         "id": "c",
-        "text": "Uninsured and only for investment condos"
+        "text": "Purchased by Fannie Mae under conforming guidelines with a low down payment"
       },
       {
         "id": "d",
-        "text": "Always a 15-year interest-only product"
+        "text": "Funded directly by HUD for first-time buyers whose incomes fall below area median limits"
       }
     ],
     "correctOptionId": "a",
     "explanation": "FHA provides mortgage insurance enabling flexible credit/down-payment profiles.",
     "distractorExplanations": {
-      "b": "VA is for eligible veterans.",
-      "c": "FHA is insured.",
-      "d": "Not the definition."
+      "b": "A VA guaranty for eligible veterans describes VA loans; FHA loans are insured by the Federal Housing Administration.",
+      "c": "Fannie Mae buys conventional conforming loans; FHA loans are government-insured and typically securitized through Ginnie Mae.",
+      "d": "FHA does not lend directly or impose income caps; approved lenders make the loans and FHA insures them."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The escrow taxes forever at zero"
+        "text": "The total monthly payment including escrow constant for the loan's life"
       },
       {
         "id": "b",
-        "text": "No amortization schedule"
+        "text": "The interest rate constant until the first scheduled adjustment date"
       },
       {
         "id": "c",
-        "text": "The interest rate constant for the life of the loan (payment may still change with escrow)"
+        "text": "The interest rate constant for the life of the loan"
       },
       {
         "id": "d",
-        "text": "A rate that resets monthly by statute"
+        "text": "The principal balance constant until the loan reaches maturity"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Fixed-rate locks the note rate; PITI can change if taxes/insurance change.",
+    "explanation": "Fixed-rate locks the note rate; PITI can change if taxes/insurance change, so the payment may still change with escrow.",
     "distractorExplanations": {
-      "a": "Escrow can change.",
-      "b": "Amortizing loans have schedules.",
-      "d": "That's ARM-like."
+      "a": "Only the note rate and P&I are fixed; escrowed taxes and insurance can change, so the total payment may change.",
+      "b": "Scheduled adjustment dates belong to ARMs; a fixed-rate mortgage has no rate adjustment during the loan term.",
+      "d": "That describes an interest-only or balloon structure; a fixed-rate amortizing loan reduces principal each month."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -634,7 +634,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Never changes"
+        "text": "Can adjust based on the margin alone, which resets at each adjustment"
       },
       {
         "id": "b",
@@ -642,19 +642,19 @@
       },
       {
         "id": "c",
-        "text": "Must be interest-only"
+        "text": "Can adjust based on the lender's prime rate at its sole discretion"
       },
       {
         "id": "d",
-        "text": "Is set only by the county assessor"
+        "text": "Can adjust based on the borrower's credit score at each anniversary"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ARMs adjust per note terms: index + margin, caps, etc.",
     "distractorExplanations": {
-      "a": "Fixed loans.",
-      "c": "Not required.",
-      "d": "False."
+      "a": "The margin is fixed for the life of an ARM; it is the index that moves, and the rate equals index plus margin.",
+      "c": "ARM changes follow a published, independent index plus a margin set in the note, not a rate the lender controls.",
+      "d": "Credit score affects initial pricing; ARM adjustments follow the index plus margin, not changes in the borrower's credit."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Luxury urban condos"
+        "text": "Eligible veterans buying in rural areas with no income or geographic limits"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Cash-out unlimited investor flips"
+        "text": "First-time buyers in any area with incomes above the area median"
       },
       {
         "id": "d",
-        "text": "Only commercial farms with no residence"
+        "text": "Farmers financing agricultural land and equipment for commercial use"
       }
     ],
     "correctOptionId": "b",
     "explanation": "USDA SFH programs have geography and income eligibility rules.",
     "distractorExplanations": {
-      "a": "Opposite focus.",
-      "c": "Not the product focus.",
-      "d": "Different USDA farm programs exist; SFH is residential."
+      "a": "Veteran status is the VA program's test; USDA eligibility turns on property location and household income limits.",
+      "c": "USDA requires an eligible rural/suburban location and caps income (typically 115% of area median) rather than requiring above-median income.",
+      "d": "Farm-operating credit is a separate USDA Farm Service Agency program; the rural housing loan finances primary residences."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,15 +700,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminate default risk"
+        "text": "Require interest plus a small principal amount on a 40-year schedule"
       },
       {
         "id": "b",
-        "text": "Amortize principal aggressively"
+        "text": "Require payments below accrued interest, so the balance grows"
       },
       {
         "id": "c",
-        "text": "Are identical to biweekly biweekly principal prepay mandates"
+        "text": "Require level principal-and-interest payments based on a fixed rate"
       },
       {
         "id": "d",
@@ -718,9 +718,9 @@
     "correctOptionId": "d",
     "explanation": "IO payments do not reduce principal unless extra principal is paid.",
     "distractorExplanations": {
-      "a": "Risk remains/can rise.",
-      "b": "Opposite.",
-      "c": "Different feature."
+      "a": "Paying principal on a longer schedule is extended amortization; during the IO period no principal payment is required.",
+      "b": "Paying less than accrued interest is negative amortization; IO payments cover the full interest so the balance stays level.",
+      "c": "Level P&I payments describe a fully amortizing fixed-rate loan; during the IO period the payment covers interest alone."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -737,23 +737,23 @@
       },
       {
         "id": "b",
-        "text": "A closed-end purchase money first mortgage"
+        "text": "A closed-end second mortgage paid out in one lump sum"
       },
       {
         "id": "c",
-        "text": "FHA upfront MIP"
+        "text": "A reverse mortgage line drawn by borrowers age 62+"
       },
       {
         "id": "d",
-        "text": "An unsecured credit card"
+        "text": "An unsecured personal line of credit for home repairs"
       }
     ],
     "correctOptionId": "a",
     "explanation": "HELOCs are revolving junior (or sometimes first) liens against equity.",
     "distractorExplanations": {
-      "b": "That's a closed-end mortgage.",
-      "c": "FHA fee.",
-      "d": "Unsecured."
+      "b": "A lump-sum, closed-end second lien is a home equity loan; a HELOC is a revolving line the borrower draws on as needed.",
+      "c": "A HECM line of credit is a reverse mortgage with no required monthly payments; a HELOC is a forward revolving line that must be repaid.",
+      "d": "A HELOC is secured by a lien on the home's equity; an unsecured line carries no collateral and is a different product."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -799,15 +799,15 @@
     "options": [
       {
         "id": "a",
-        "text": "No interest ever"
+        "text": "A payment that rises at each adjustment as the index increases"
       },
       {
         "id": "b",
-        "text": "Fully amortizing payments with no large final payment"
+        "text": "Payments that start low and rise by a set percentage each year"
       },
       {
         "id": "c",
-        "text": "Only monthly interest that never ends by contract"
+        "text": "Interest-only payments that convert to amortizing payments after ten years"
       },
       {
         "id": "d",
@@ -817,9 +817,9 @@
     "correctOptionId": "d",
     "explanation": "Balloons leave a lump-sum balance at term.",
     "distractorExplanations": {
-      "a": "False.",
-      "b": "Fully amortizing.",
-      "c": "Not the balloon definition."
+      "a": "Payment increases tied to an index describe an ARM; a balloon is a lump-sum balance due before the loan fully amortizes.",
+      "b": "Scheduled annual payment increases describe a graduated payment mortgage, not a balloon's lump sum at maturity.",
+      "c": "Converting to amortizing payments after the IO period still pays the loan off over the term; a balloon leaves a large balance due early."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -832,7 +832,7 @@
     "options": [
       {
         "id": "a",
-        "text": "County recording fees"
+        "text": "Mortgage insurance coverage required based on FICO and LTV"
       },
       {
         "id": "b",
@@ -840,19 +840,19 @@
       },
       {
         "id": "c",
-        "text": "HOA bylaws"
+        "text": "The maximum loan amount allowed based on FICO and LTV"
       },
       {
         "id": "d",
-        "text": "Property tax millage rates"
+        "text": "Underwriting approval decisions based on FICO, LTV, and DTI"
       }
     ],
     "correctOptionId": "b",
     "explanation": "LLPAs adjust secondary-market pricing for risk attributes.",
     "distractorExplanations": {
-      "a": "Different fees.",
-      "c": "HOA.",
-      "d": "Taxes."
+      "a": "MI coverage levels are set by investor/MI rules; LLPAs are Fannie/Freddie price adjustments charged for risk attributes.",
+      "c": "Maximum loan amounts come from conforming limits and program caps; LLPAs change pricing, not the loan limit.",
+      "d": "Approve/refer decisions come from AUS and underwriting; LLPAs affect the price of a loan that is already eligible."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,7 +865,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only refinance credit cards"
+        "text": "Finance the land purchase, with building funded separately"
       },
       {
         "id": "b",
@@ -873,19 +873,19 @@
       },
       {
         "id": "c",
-        "text": "Fund stock purchases"
+        "text": "Finance repairs to an existing home bought in one loan"
       },
       {
         "id": "d",
-        "text": "Replace title insurance permanently"
+        "text": "Provide short-term funds to buy before selling the old home"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Construction financing transitions into a long-term mortgage.",
     "distractorExplanations": {
-      "a": "Unsecured refinance.",
-      "c": "Securities.",
-      "d": "Title is separate."
+      "a": "A lot/land loan finances the land; a construction-to-perm loan funds building and rolls into the long-term mortgage.",
+      "c": "Combining purchase with repairs on an existing home describes a renovation loan such as FHA 203(k), not new construction.",
+      "d": "Short-term financing to buy before selling is a bridge loan; construction-to-perm converts building financing into a mortgage."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,11 +898,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The loan is paid off early"
+        "text": "Payments cover interest only, so the principal balance stays level"
       },
       {
         "id": "b",
-        "text": "The borrower prepays principal aggressively"
+        "text": "Rising property values reduce the loan-to-value ratio over time"
       },
       {
         "id": "c",
@@ -910,15 +910,15 @@
       },
       {
         "id": "d",
-        "text": "Escrow is waived"
+        "text": "Extra principal payments shorten the loan term below the schedule"
       }
     ],
     "correctOptionId": "c",
     "explanation": "If interest exceeds payment, unpaid interest is added to principal.",
     "distractorExplanations": {
-      "a": "Payoff.",
-      "b": "Reduces balance.",
-      "d": "Unrelated."
+      "a": "Paying exactly the interest keeps principal flat (interest-only); negative amortization requires paying less than the interest due.",
+      "b": "Appreciation lowers LTV but does not change the loan balance; negative amortization is about unpaid interest added to principal.",
+      "d": "Extra principal accelerates amortization, the opposite of negative amortization where the balance grows."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -931,11 +931,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only commercial CMBS"
+        "text": "Disclosure timing rules for the Loan Estimate and Closing Disclosure under TRID"
       },
       {
         "id": "b",
-        "text": "Setting the Fed funds rate"
+        "text": "Fair lending standards prohibiting discrimination on protected bases under ECOA"
       },
       {
         "id": "c",
@@ -943,15 +943,15 @@
       },
       {
         "id": "d",
-        "text": "Ignoring income documentation"
+        "text": "Eligibility standards for conventional loans that Fannie Mae and Freddie Mac may purchase"
       }
     ],
     "correctOptionId": "c",
     "explanation": "ATR/QM is a consumer-protection underwriting framework for closed-end consumer mortgages.",
     "distractorExplanations": {
-      "a": "Consumer mortgage focus.",
-      "b": "Monetary policy.",
-      "d": "Opposite intent."
+      "a": "LE/CD timing is TRID (Reg Z 1026.19); QM/ATR governs whether the creditor reasonably determined repayment ability.",
+      "b": "Prohibited-basis discrimination is ECOA/Reg B; QM is part of the Reg Z ability-to-repay underwriting framework.",
+      "d": "GSE purchase eligibility is set by agency selling guides; QM is a CFPB ATR standard that applies to creditors generally."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -968,23 +968,23 @@
       },
       {
         "id": "b",
-        "text": "Free homeowners insurance"
+        "text": "A federal tax deduction for all mortgage interest paid by any homeowner"
       },
       {
         "id": "c",
-        "text": "Automatic PMI cancellation day one"
+        "text": "A state grant that covers the down payment for first-time buyers"
       },
       {
         "id": "d",
-        "text": "VA funding fee waivers for all civilians"
+        "text": "A certificate that exempts eligible borrowers from mortgage insurance"
       }
     ],
     "correctOptionId": "a",
     "explanation": "MCCs can provide a tax credit on a portion of mortgage interest (program-specific)",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "False.",
-      "d": "VA rules differ; MCC is separate."
+      "b": "The mortgage interest deduction is a separate itemized deduction; an MCC is a dollar-for-dollar credit for eligible (often first-time) buyers.",
+      "c": "Down payment assistance grants are separate programs; an MCC converts part of the mortgage interest into a federal tax credit.",
+      "d": "MCCs do not affect mortgage insurance requirements; they provide a federal tax credit on a portion of mortgage interest."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -997,15 +997,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Truthful advertising of APR"
+        "text": "APR disclosure, finance charge accuracy, and rescission rights on refinances"
       },
       {
         "id": "b",
-        "text": "Margin requirements for stocks"
+        "text": "Collection of loan application data and reporting of lending patterns"
       },
       {
         "id": "c",
-        "text": "Equal credit without regard to race only (that's ECOA/FHA fair lending)"
+        "text": "Prohibited bases for credit decisions and the content and timing of adverse action notices"
       },
       {
         "id": "d",
@@ -1015,9 +1015,9 @@
     "correctOptionId": "d",
     "explanation": "RESPA (Reg X) covers settlement process and anti-kickback rules.",
     "distractorExplanations": {
-      "a": "Closer to TILA.",
-      "b": "Securities.",
-      "c": "Fair lending statutes."
+      "a": "APR, finance charge, and rescission are TILA/Reg Z topics; RESPA/Reg X governs settlement costs, servicing, and kickbacks.",
+      "b": "Application data collection and reporting is HMDA/Reg C; RESPA focuses on settlement costs and anti-kickback rules.",
+      "c": "Prohibited bases and adverse action notices are ECOA/Reg B requirements, not RESPA settlement-procedure rules."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,11 +1030,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Title insurance premiums set by HUD"
+        "text": "Settlement service referrals, kickback and unearned fee prohibitions, and escrow account limits"
       },
       {
         "id": "b",
-        "text": "Appraisal licensing"
+        "text": "Licensing standards, background checks, and testing for loan originators"
       },
       {
         "id": "c",
@@ -1042,15 +1042,15 @@
       },
       {
         "id": "d",
-        "text": "Kickback bans"
+        "text": "Permissible purpose for credit reports and consumer dispute procedures"
       }
     ],
     "correctOptionId": "c",
     "explanation": "TILA focuses on cost-of-credit disclosures and related consumer protections.",
     "distractorExplanations": {
-      "a": "Not TILA's role.",
-      "b": "Appraiser regulation separate.",
-      "d": "RESPA."
+      "a": "Kickback bans and escrow limits are RESPA/Reg X; TILA/Reg Z governs credit-cost disclosure, advertising, and ATR.",
+      "b": "Licensing, background checks, and testing are SAFE Act requirements, not TILA credit-term disclosure rules.",
+      "d": "Permissible purpose and disputes are FCRA topics; TILA covers APR and credit-term disclosures plus ATR and advertising."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only BSA SARs"
+        "text": "Good Faith Estimate and HUD-1 settlement statement rules"
       },
       {
         "id": "b",
-        "text": "Only HMDA reporting"
+        "text": "Adverse action notice and appraisal copy delivery rules"
       },
       {
         "id": "c",
@@ -1075,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "Only Flood insurance maps"
+        "text": "Initial escrow statement and servicing transfer notice rules"
       }
     ],
     "correctOptionId": "c",
     "explanation": "TRID combines TILA/RESPA disclosures into LE/CD.",
     "distractorExplanations": {
-      "a": "AML.",
-      "b": "HMDA is different.",
-      "d": "Flood."
+      "a": "The GFE and HUD-1 are the pre-2015 RESPA forms that TRID replaced with the Loan Estimate and Closing Disclosure.",
+      "b": "Adverse action notices and appraisal copies are ECOA/Reg B requirements, not part of the TILA-RESPA integrated disclosures.",
+      "d": "Escrow statements and servicing transfer notices remain separate RESPA/Reg X requirements outside the TRID LE/CD forms."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1096,27 +1096,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Protected characteristics such as race, color, religion, national origin, sex, marital status, age (with limits), and receipt of public assistance"
+        "text": "Protected characteristics such as race, color, religion, national origin, sex, marital status, and age"
       },
       {
         "id": "b",
-        "text": "LTV"
+        "text": "Characteristics such as race, color, religion, national origin, sex, handicap, and familial status"
       },
       {
         "id": "c",
-        "text": "Credit score"
+        "text": "Characteristics such as race, color, religion, sex, and national origin, but not age or marital status"
       },
       {
         "id": "d",
-        "text": "Whether the borrower uses a Realtor"
+        "text": "Characteristics such as occupation, length of employment, credit history, and property location"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "ECOA bars credit discrimination on listed prohibited bases.",
+    "explanation": "ECOA bars credit discrimination on listed prohibited bases, including age (with limits), receipt of public assistance, and good-faith exercise of consumer credit rights.",
     "distractorExplanations": {
-      "b": "Risk factor, not ECOA basis.",
-      "c": "Score can be a legitimate factor.",
-      "d": "Not a protected basis."
+      "b": "Handicap and familial status are Fair Housing Act bases; ECOA adds marital status, age, and receipt of public assistance instead.",
+      "c": "ECOA expressly covers marital status and age (with limited exceptions); excluding them confuses ECOA with a shorter civil-rights list.",
+      "d": "Occupation, job tenure, and credit history are permissible underwriting factors, not ECOA prohibited bases."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Credit utilization"
+        "text": "Race, color, religion, sex, marital status, age, and receipt of public assistance"
       },
       {
         "id": "b",
-        "text": "Race, color, religion, sex, handicap, familial status, national origin (among others as applied)"
+        "text": "Race, color, religion, sex, handicap, familial status, national origin"
       },
       {
         "id": "c",
-        "text": "Loan amount above jumbo"
+        "text": "Race, color, religion, sex, and national origin, but not familial status"
       },
       {
         "id": "d",
-        "text": "Whether PMI is paid"
+        "text": "Race, color, national origin, income level, and credit history"
       }
     ],
     "correctOptionId": "b",
     "explanation": "FHA fair housing protected classes govern housing discrimination.",
     "distractorExplanations": {
-      "a": "Credit factor.",
-      "c": "Not a protected class.",
-      "d": "Product feature."
+      "a": "Marital status, age, and public assistance are ECOA bases; the Fair Housing Act adds handicap and familial status instead.",
+      "c": "Familial status (households with children under 18) was added to the Fair Housing Act by the 1988 amendments and is protected.",
+      "d": "Income level and credit history are not Fair Housing Act protected classes; they are legitimate underwriting factors."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Appraise every property for free"
+        "text": "Provide adverse action notices on denied loans"
       },
       {
         "id": "b",
-        "text": "Provide free legal counsel at closing"
+        "text": "Meet the credit needs of their local communities"
       },
       {
         "id": "c",
-        "text": "Set interest rates nationally"
+        "text": "Deliver Loan Estimates within three business days"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "HMDA (Reg C) is a data reporting statute for fair lending analysis/transparency.",
     "distractorExplanations": {
-      "a": "False.",
-      "b": "False.",
-      "c": "False."
+      "a": "Adverse action notices are an ECOA/Reg B requirement; HMDA requires collecting and reporting application and loan data.",
+      "b": "Serving local community credit needs is the Community Reinvestment Act's mandate; HMDA is a data reporting law.",
+      "c": "Loan Estimate timing comes from TRID under Reg Z; HMDA (Reg C) concerns reporting application and loan data."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Never take continuing education"
+        "text": "Be licensed only by the federal CFPB, with states having no licensing role"
       },
       {
         "id": "b",
-        "text": "Work only for GSEs as employees"
+        "text": "Be registered with HUD and complete FHA lender approval before originating"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "Avoid all licensing"
+        "text": "Complete testing once, with no ongoing education after licensure is granted"
       }
     ],
     "correctOptionId": "c",
     "explanation": "SAFE Act created nationwide licensing/registration standards through NMLS.",
     "distractorExplanations": {
-      "a": "CE is required.",
-      "b": "False.",
-      "d": "Opposite."
+      "a": "States license MLOs under SAFE Act standards; federal registration through NMLS applies to depository-institution employees.",
+      "b": "HUD/FHA approval applies to lenders for FHA programs; SAFE Act licensing/registration of individuals runs through NMLS.",
+      "d": "SAFE Act licensees must complete at least 8 hours of approved continuing education every year to renew."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1261,11 +1261,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Charge higher rates to all seniors"
+        "text": "Verify customer identity under a written CIP"
       },
       {
         "id": "b",
-        "text": "Skip CIP entirely"
+        "text": "File suspicious activity reports on fraud"
       },
       {
         "id": "c",
@@ -1273,15 +1273,15 @@
       },
       {
         "id": "d",
-        "text": "Destroy loan files weekly"
+        "text": "Provide annual privacy notices to customers"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Red Flags programs detect/respond to identity theft red flags.",
     "distractorExplanations": {
-      "a": "ECOA issue.",
-      "b": "CIP is BSA/AML related and still needed.",
-      "d": "Retention rules exist."
+      "a": "A Customer Identification Program is a BSA/USA PATRIOT Act requirement; the Red Flags Rule requires an identity theft prevention program.",
+      "b": "SAR filing is a Bank Secrecy Act/AML obligation; the FACTA Red Flags Rule requires a written identity theft program.",
+      "d": "Annual privacy notices are a GLBA Privacy Rule requirement, not part of the Red Flags identity theft prevention program."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1298,23 +1298,23 @@
       },
       {
         "id": "b",
-        "text": "Only if APR exceeds 25%"
+        "text": "Within 7 business days of application (TRID timing)"
       },
       {
         "id": "c",
-        "text": "Never if the loan is conventional"
+        "text": "Within 10 business days of application (TRID timing)"
       },
       {
         "id": "d",
-        "text": "Only after closing"
+        "text": "Within 30 days of application (TRID timing)"
       }
     ],
     "correctOptionId": "a",
     "explanation": "TRID requires LE within 3 business days of application.",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "Applies broadly to covered closed-end consumer mortgages.",
-      "d": "Too late."
+      "b": "Seven business days is the waiting period between LE delivery and consummation, not the deadline to issue the LE.",
+      "c": "Ten business days is the minimum period the LE's estimated charges must stay available, not the delivery deadline.",
+      "d": "Thirty days is the Reg B deadline to notify an applicant of action taken on a completed application, not the LE deadline."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1327,7 +1327,7 @@
     "options": [
       {
         "id": "a",
-        "text": "One year after funding"
+        "text": "At least 1 business day before consummation, as with the old HUD-1 review"
       },
       {
         "id": "b",
@@ -1335,19 +1335,19 @@
       },
       {
         "id": "c",
-        "text": "Only if they ask verbally"
+        "text": "At least 7 business days before consummation (with limited exceptions)"
       },
       {
         "id": "d",
-        "text": "Never for purchase loans"
+        "text": "At consummation, when the consumer signs the note and security instrument"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CD timing is a core TRID consumer protection.",
     "distractorExplanations": {
-      "a": "False.",
-      "c": "Required delivery.",
-      "d": "Applies to covered transactions."
+      "a": "One business day was the HUD-1 inspection right under pre-TRID RESPA; TRID requires CD receipt three business days before consummation.",
+      "c": "Seven business days is the LE waiting period before consummation; the CD must be received three business days before.",
+      "d": "Delivering the CD at the closing table violates TRID; the consumer must receive it at least three business days before consummation."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the Uniform Commercial Code Article 9"
+        "text": "RESPA Section 8, which bans payments made by borrowers to their MLO"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Best practices only with no legal risk"
+        "text": "HMDA reporting rules, which bar reporting loans with higher pricing"
       },
       {
         "id": "d",
-        "text": "Only flood zone mapping"
+        "text": "The SAFE Act, which caps MLO commissions at a percentage of the loan"
       }
     ],
     "correctOptionId": "b",
     "explanation": "LO compensation/anti-steering rules target harmful steering for compensation.",
     "distractorExplanations": {
-      "a": "Wrong body of law focus.",
-      "c": "Legal risk exists.",
-      "d": "Unrelated."
+      "a": "Section 8 targets referral kickbacks and unearned fees among settlement providers; steering for compensation is a Reg Z LO comp issue.",
+      "c": "HMDA requires reporting pricing data rather than restricting it; anti-steering is a TILA/Reg Z LO compensation rule.",
+      "d": "The SAFE Act sets licensing standards and does not cap commissions; compensation-based steering falls under TILA LO comp rules."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "That the MLO write the appraisal value"
+        "text": "An interior appraisal ordered by the MLO, who may discuss target values"
       },
       {
         "id": "b",
-        "text": "Verbal values"
+        "text": "An automated valuation model accepted in place of a full interior inspection"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "No appraisal ever"
+        "text": "A second appraisal on every refinance, paid for by the consumer"
       }
     ],
     "correctOptionId": "c",
     "explanation": "HPML and AIR rules add appraisal/independence protections.",
     "distractorExplanations": {
-      "a": "Conflicts with independence.",
-      "b": "Written appraisals required when mandated.",
-      "d": "False."
+      "a": "Appraisal independence bars originators from influencing or suggesting values; HPML rules add a written interior appraisal requirement.",
+      "b": "HPML appraisal rules require a written appraisal with an interior inspection by a certified or licensed appraiser, not an AVM.",
+      "d": "A second appraisal applies to certain HPML flips (resale within 180 days at a markup) and cannot be charged to the consumer."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The property is never near water by borrower statement alone"
+        "text": "The property is in a moderate-risk Zone X area and the borrower has filed no prior flood insurance claims"
       },
       {
         "id": "b",
-        "text": "The loan is a HELOC under $100"
+        "text": "The property is in a Special Flood Hazard Area, but only when the loan is FHA or VA"
       },
       {
         "id": "c",
-        "text": "The borrower has excellent credit"
+        "text": "The flood zone determination is pending and the loan amount exceeds the county limit"
       },
       {
         "id": "d",
-        "text": "The property is in a Special Flood Hazard Area and the loan is secured by that improved real estate from a regulated lender"
+        "text": "The property is in a Special Flood Hazard Area and the loan is secured by that improved real estate"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Mandatory flood insurance applies to SFHA properties with designated loans.",
+    "explanation": "Mandatory flood insurance applies to SFHA properties with designated loans from a regulated lender (or loans the GSEs buy).",
     "distractorExplanations": {
-      "a": "Maps/determinations control.",
-      "b": "Wrong threshold logic.",
-      "c": "Credit irrelevant."
+      "a": "Zone X is outside the Special Flood Hazard Area; mandatory purchase applies to SFHA zones such as A and V.",
+      "b": "Mandatory flood insurance applies to loans from federally regulated lenders and GSE-purchased loans, not just FHA/VA loans.",
+      "c": "The trigger is an SFHA determination on improved property, not loan size; a pending determination must be completed before closing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1492,11 +1492,11 @@
     "options": [
       {
         "id": "a",
-        "text": "A RESPA-permitted courtesy"
+        "text": "A permissible fee if disclosed on the Loan Estimate"
       },
       {
         "id": "b",
-        "text": "Required by TILA"
+        "text": "A TILA finance charge violation subject to rescission"
       },
       {
         "id": "c",
@@ -1504,15 +1504,15 @@
       },
       {
         "id": "d",
-        "text": "Always allowed if disclosed in tiny print"
+        "text": "A zero-tolerance violation curable by a lender credit"
       }
     ],
     "correctOptionId": "c",
     "explanation": "RESPA prohibits unearned fees and kickbacks.",
     "distractorExplanations": {
-      "a": "Not permitted.",
-      "b": "False.",
-      "d": "Disclosure doesn't legalize kickbacks."
+      "a": "Disclosure does not cure an unearned fee; RESPA Section 8(b) bars charges for which no service is actually performed.",
+      "b": "Finance-charge errors can trigger TILA remedies, but charging for no service is the RESPA Section 8 unearned-fee problem.",
+      "d": "TRID tolerance cures address fee increases over the LE; they do not legitimize a fee for which no service was performed."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1558,7 +1558,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A form of flood determination"
+        "text": "A permissible lender-credit structure"
       },
       {
         "id": "b",
@@ -1566,19 +1566,19 @@
       },
       {
         "id": "c",
-        "text": "Best practice"
+        "text": "A RESPA Section 8 kickback violation"
       },
       {
         "id": "d",
-        "text": "Required by HMDA"
+        "text": "A TRID 10% tolerance violation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Misleading cost claims create UDAAP and advertising law risk.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "c": "Not best practice.",
-      "d": "HMDA is reporting."
+      "a": "Lender credits can be legitimate, but advertising 'no closing costs' while hiding the cost in the rate is deceptive.",
+      "c": "Section 8 covers referral kickbacks between settlement providers; misleading cost claims are a deceptive advertising/UDAAP issue.",
+      "d": "Tolerance buckets limit fee increases from the LE; a misleading 'no closing cost' claim is an advertising/UDAAP problem."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1595,23 +1595,23 @@
       },
       {
         "id": "b",
-        "text": "A TRID tolerance cure"
+        "text": "Permitted if both payments are disclosed on the CD"
       },
       {
         "id": "c",
-        "text": "The definition of a discount point"
+        "text": "Permitted when the borrower requests it in writing"
       },
       {
         "id": "d",
-        "text": "Always required"
+        "text": "A RESPA Section 8 violation curable by refund"
       }
     ],
     "correctOptionId": "a",
     "explanation": "LO Comp Rule restricts dual compensation structures.",
     "distractorExplanations": {
-      "b": "Tolerances are disclosure cures.",
-      "c": "Points are different.",
-      "d": "False."
+      "b": "Disclosure does not cure dual compensation; Reg Z bars receiving both consumer- and creditor-paid comp on the same loan.",
+      "c": "A borrower request does not allow dual compensation; the LO comp rule restricts it under Reg Z even with consent.",
+      "d": "Dual compensation is governed by TILA's LO compensation rule, not RESPA Section 8, and is not cured by a refund."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1661,23 +1661,23 @@
       },
       {
         "id": "b",
-        "text": "Delete the credit report"
+        "text": "Submit it and let the underwriter decide if it matters"
       },
       {
         "id": "c",
-        "text": "Ignore it if the loan will close"
+        "text": "Have the borrower initial the change at closing"
       },
       {
         "id": "d",
-        "text": "Increase the loan amount quietly"
+        "text": "Wait to see whether the AUS flags it before acting"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Submitting false information is fraud/ethics violation.",
     "distractorExplanations": {
-      "b": "Improper.",
-      "c": "Complicity.",
-      "d": "Worsens issue."
+      "b": "Knowingly passing false data to underwriting makes the MLO complicit in fraud; the MLO must address it before submission.",
+      "c": "Initialing a misstatement at closing does not correct it; the MLO must fix the record before the file goes to underwriting.",
+      "d": "Waiting for the AUS to catch a known misstatement is willful blindness; the MLO must address it and not submit false data."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1727,23 +1727,23 @@
       },
       {
         "id": "b",
-        "text": "The borrower pays cash for a car"
+        "text": "A lender pays a broker yield spread on a loan"
       },
       {
         "id": "c",
-        "text": "The MLO changes NMLS password"
+        "text": "A borrower chooses an unaffiliated title company"
       },
       {
         "id": "d",
-        "text": "The Fed raises rates"
+        "text": "A servicer transfers servicing rights to another firm"
       }
     ],
     "correctOptionId": "a",
     "explanation": "AfBA disclosures inform consumers of affiliate relationships on referrals.",
     "distractorExplanations": {
-      "b": "Unrelated.",
-      "c": "Security hygiene.",
-      "d": "Macro."
+      "b": "Lender-paid broker compensation is an LO comp/TILA disclosure matter, not an affiliated business arrangement referral.",
+      "c": "AfBA disclosure is triggered by referrals to providers with an ownership affiliation, not by an unaffiliated choice.",
+      "d": "Servicing transfers require a RESPA servicing transfer notice, not an affiliated business arrangement disclosure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1756,11 +1756,11 @@
     "options": [
       {
         "id": "a",
-        "text": "A form of best execution"
+        "text": "Permitted if the APR is shown in the ad's fine print"
       },
       {
         "id": "b",
-        "text": "Acceptable if the website looks premium"
+        "text": "Acceptable if the rate was available for one borrower"
       },
       {
         "id": "c",
@@ -1768,15 +1768,15 @@
       },
       {
         "id": "d",
-        "text": "Required by RESPA Section 8"
+        "text": "A RESPA Section 8 violation for unearned referral fees"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Advertising must be truthful and available as represented.",
     "distractorExplanations": {
-      "a": "Securities/advice concept.",
-      "b": "Looks don't legalize deceit.",
-      "d": "Section 8 is kickbacks."
+      "a": "Including an APR does not cure advertising a rate that is not actually available; the ad remains deceptive.",
+      "b": "Advertised rates must be reasonably available to qualified consumers; one isolated borrower does not make a teaser honest.",
+      "d": "Section 8 targets kickbacks and unearned fees; bait-and-switch rate advertising is deceptive advertising under TILA/UDAAP."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "HMDA"
+        "text": "HMDA data confidentiality and reporting rules"
       },
       {
         "id": "b",
-        "text": "Flood rules"
+        "text": "FCRA permissible purpose rules for credit reports"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "Only the yellow pages code"
+        "text": "RESPA Section 8 rules on settlement referrals"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Nonpublic personal information is protected under GLBA and ethical standards.",
     "distractorExplanations": {
-      "a": "HMDA is data reporting.",
-      "b": "Flood is insurance.",
-      "d": "False."
+      "a": "HMDA governs reporting of application data; protecting borrower NPI from unauthorized use is a GLBA matter.",
+      "b": "FCRA permissible purpose limits credit report pulls; using a borrower's NPI for personal marketing falls under GLBA privacy rules.",
+      "d": "Section 8 concerns kickbacks for settlement referrals, not unauthorized use of a borrower's nonpublic personal information."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "It replaces the CD"
+        "text": "RESPA allows splits only with licensed real estate agents"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "It always increases FICO"
+        "text": "The fee must be disclosed as a finance charge on the LE"
       },
       {
         "id": "d",
-        "text": "It is required for jumbo loans"
+        "text": "HMDA requires reporting the unlicensed person's NMLS ID"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Only properly licensed/registered individuals may engage in MLO activity for compensation.",
     "distractorExplanations": {
-      "a": "False.",
-      "c": "Nonsense.",
-      "d": "False."
+      "a": "RESPA Section 8 does not authorize referral splits with agents; the issue here is paying an unlicensed person for MLO activity.",
+      "c": "Disclosure classification is not the problem; paying an unlicensed person to take applications violates SAFE Act licensing.",
+      "d": "An unlicensed person has no NMLS ID; the core problem is compensating unlicensed MLO activity under the SAFE Act."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1921,15 +1921,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A standard rate lock extension"
+        "text": "A buyer inflating income on the application to qualify for a larger loan"
       },
       {
         "id": "b",
-        "text": "An AfBA disclosure"
+        "text": "An appraiser inflating the value so a seller can pay off an underwater loan"
       },
       {
         "id": "c",
-        "text": "A legitimate gift letter"
+        "text": "A seller paying the buyer's down payment through an undisclosed side agreement"
       },
       {
         "id": "d",
@@ -1939,9 +1939,9 @@
     "correctOptionId": "d",
     "explanation": "Straw buyers conceal the true purchaser/borrower—classic fraud pattern.",
     "distractorExplanations": {
-      "a": "Normal process.",
-      "b": "Disclosure form.",
-      "c": "Legitimate gifts differ."
+      "a": "Inflating income is income fraud by the actual borrower; a straw buyer lends their name and credit for someone else.",
+      "b": "Inflated valuations describe appraisal/property flipping fraud; a straw buyer is a stand-in borrower for a hidden party.",
+      "c": "Undisclosed seller-funded down payments are down payment fraud, not a stand-in borrower scheme."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1954,11 +1954,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Uniform deed and appraisal protocols"
+        "text": "Unfair, discriminatory, or abusive acts or practices"
       },
       {
         "id": "b",
-        "text": "Underwriter desk audit appraisal premiums"
+        "text": "Unlawful disclosure and appraisal practices"
       },
       {
         "id": "c",
@@ -1966,15 +1966,15 @@
       },
       {
         "id": "d",
-        "text": "USDA annual accounting procedures"
+        "text": "Unfair or deceptive acts or practices (FTC Act)"
       }
     ],
     "correctOptionId": "c",
     "explanation": "UDAAP is a core consumer protection standard (Dodd-Frank/CFPB)",
     "distractorExplanations": {
-      "a": "Acronym mash.",
-      "b": "False.",
-      "d": "False."
+      "a": "The D stands for deceptive, not discriminatory; discrimination is addressed separately under ECOA and the Fair Housing Act.",
+      "b": "UDAAP is not about disclosures or appraisals specifically; it stands for unfair, deceptive, or abusive acts or practices.",
+      "d": "Unfair or deceptive (UDAP) is the FTC Act standard; Dodd-Frank added 'abusive' to create the CFPB's UDAAP standard."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1987,15 +1987,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the appraised value with no borrower financial data"
+        "text": "Borrower credit scores, the appraised value, and the final approved loan terms issued by underwriting"
       },
       {
         "id": "b",
-        "text": "Corporate stock ticker symbols for investment accounts"
+        "text": "Settlement charges, cash to close, and closing cost details disclosed to the borrower"
       },
       {
         "id": "c",
-        "text": "State bar membership numbers for attorneys"
+        "text": "Demographic data only, used by the lender for HMDA government monitoring reporting"
       },
       {
         "id": "d",
@@ -2005,9 +2005,9 @@
     "correctOptionId": "d",
     "explanation": "The URLA is the standard application package lenders use to evaluate creditworthiness and program eligibility.",
     "distractorExplanations": {
-      "a": "Appraisal alone is insufficient for underwriting.",
-      "b": "Stock tickers are not standard URLA fields.",
-      "c": "Bar numbers are unrelated to mortgage applications."
+      "a": "Credit scores, appraisal results, and final terms come from third-party reports and underwriting, not from the 1003 application.",
+      "b": "Settlement charges and cash to close are disclosed on the Loan Estimate and Closing Disclosure, not collected on the URLA.",
+      "c": "The URLA includes a demographic section for HMDA, but its main purpose is collecting identity, income, assets, and liabilities."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2024,23 +2024,23 @@
       },
       {
         "id": "b",
-        "text": "Force the seller to lend the purchase price personally"
+        "text": "Cancel without penalty if the property appraises below the agreed purchase price"
       },
       {
         "id": "c",
-        "text": "Skip the appraisal because the contract guarantees value"
+        "text": "Cancel without penalty if the inspection reveals defects the seller refuses to repair before closing"
       },
       {
         "id": "d",
-        "text": "Close without any underwriting review"
+        "text": "Cancel without penalty if the buyer cannot sell their current home by the deadline"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Contingencies protect buyers when loan denial or unacceptable terms prevent closing.",
     "distractorExplanations": {
-      "b": "Seller financing is a separate negotiated arrangement.",
-      "c": "Appraisal remains a typical lender requirement.",
-      "d": "Underwriting is still required for lender approval."
+      "b": "A low appraisal triggers an appraisal contingency; a financing contingency turns on failing to get loan approval.",
+      "c": "Unrepaired defects are covered by an inspection contingency, not the financing contingency.",
+      "d": "Dependence on selling an existing home is a home-sale contingency, distinct from obtaining mortgage approval."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2053,7 +2053,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The borrower's credit score from the three bureaus"
+        "text": "Boundary lines, encroachments, and lot dimensions from a physical survey"
       },
       {
         "id": "b",
@@ -2061,19 +2061,19 @@
       },
       {
         "id": "c",
-        "text": "Future interest rate movements for ARMs"
+        "text": "Structural defects, code violations, and needed repairs at the property"
       },
       {
         "id": "d",
-        "text": "The MLO's NMLS continuing education status"
+        "text": "Flood zone status and hazard insurance requirements for the property"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Title review ensures marketable title and reveals clouds that must be cleared before insuring or lending.",
     "distractorExplanations": {
-      "a": "Credit scores come from credit reports, not title search.",
-      "c": "Rate forecasts are unrelated to title.",
-      "d": "MLO CE is licensing, not title work."
+      "a": "Boundary lines and encroachments are found by a survey; a title search reviews recorded liens, easements, and ownership.",
+      "c": "Physical defects and code issues are found by a home inspection, not a search of public title records.",
+      "d": "Flood zone status comes from a flood determination using FEMA maps, not from the title search of recorded documents."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2086,11 +2086,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminates the borrower's obligation to pay property taxes"
+        "text": "Holds the buyer's earnest money deposit until the purchase contract closes"
       },
       {
         "id": "b",
-        "text": "Replaces homeowner's insurance with lender stock dividends"
+        "text": "Collects a full year of taxes and insurance at closing, with no monthly deposits after"
       },
       {
         "id": "c",
@@ -2098,15 +2098,15 @@
       },
       {
         "id": "d",
-        "text": "Is optional for every loan type in every state without exception"
+        "text": "Collects monthly amounts the servicer may hold with no cushion limit under RESPA"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Escrows help lenders protect collateral by ensuring taxes and insurance stay current.",
     "distractorExplanations": {
-      "a": "Taxes remain the borrower's obligation, paid via escrow.",
-      "b": "Insurance is not replaced by dividends.",
-      "d": "Escrow requirements vary by loan type and investor rules."
+      "a": "Earnest money is held in a purchase escrow by a title/escrow agent; an impound account pays taxes and insurance after closing.",
+      "b": "Closing funds an initial deposit and cushion, but the borrower then pays monthly escrow installments with each payment.",
+      "d": "RESPA limits the escrow cushion to one-sixth (two months) of annual disbursements and requires an annual analysis."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2119,15 +2119,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The loan is fully closed and funded immediately"
+        "text": "The loan is cleared to close, pending only the borrower's signature at closing"
       },
       {
         "id": "b",
-        "text": "The borrower may skip providing any further information"
+        "text": "The underwriter has suspended the file because key information cannot be verified as submitted"
       },
       {
         "id": "c",
-        "text": "The rate lock is automatically canceled without notice"
+        "text": "The borrower is pre-approved but has not yet identified a property to purchase"
       },
       {
         "id": "d",
@@ -2137,9 +2137,9 @@
     "correctOptionId": "d",
     "explanation": "Conditions might include updated pay stubs, explanation letters, or appraisal revisions.",
     "distractorExplanations": {
-      "a": "Funding follows clear-to-close, not conditional approval alone.",
-      "b": "Outstanding conditions must be satisfied.",
-      "c": "Rate lock terms are separate from conditional approval status."
+      "a": "Clear-to-close comes after conditions are satisfied; conditional approval means items are still outstanding.",
+      "b": "A suspense status halts review until missing information arrives; conditional approval is a yes subject to listed items.",
+      "c": "Pre-approval precedes a property contract; conditional approval is an underwriting decision on a specific loan file."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2156,23 +2156,23 @@
       },
       {
         "id": "b",
-        "text": "Replace all human underwriter judgment in every file without review"
+        "text": "Issue a final credit decision that the underwriter cannot override or condition"
       },
       {
         "id": "c",
-        "text": "Set the Federal Reserve federal funds rate"
+        "text": "Generate the Loan Estimate and calculate tolerance cures for the closing"
       },
       {
         "id": "d",
-        "text": "Issue property title insurance policies"
+        "text": "Verify the borrower's identity against OFAC and fraud databases before application"
       }
     ],
     "correctOptionId": "a",
     "explanation": "AUS findings guide documentation requirements; underwriters still validate data and exceptions.",
     "distractorExplanations": {
-      "b": "Human underwriters review AUS results and exceptions.",
-      "c": "Monetary policy is not set by AUS.",
-      "d": "Title insurance is a separate product."
+      "b": "AUS findings are recommendations; underwriters validate data, add conditions, and may decline despite an approve finding.",
+      "c": "LE generation and tolerance cures happen in the LOS/disclosure system; AUS evaluates risk and eligibility.",
+      "d": "OFAC and fraud screening are separate compliance tools; DU and LP assess credit risk and program eligibility."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2185,7 +2185,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No documentation because verbal assurance is sufficient"
+        "text": "A letter from the borrower promising to pay the account off within 30 days after the closing date"
       },
       {
         "id": "b",
@@ -2193,19 +2193,19 @@
       },
       {
         "id": "c",
-        "text": "That the borrower keeps the same monthly payment after closing"
+        "text": "Exclusion of the payment from DTI once the balance falls below ten monthly payments"
       },
       {
         "id": "d",
-        "text": "Payment only after the deed is recorded six months later"
+        "text": "Closing of the account by the creditor before the borrower submits the application"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Payoff demands and closing disclosures must reflect debts eliminated to improve DTI.",
     "distractorExplanations": {
-      "a": "Verbal assurance alone is inadequate.",
-      "c": "DTI improves when the debt payment ends.",
-      "d": "Payoffs occur at closing, not months later."
+      "a": "A promise to pay after closing does not remove the debt from DTI; the payoff must be documented at or before closing.",
+      "c": "The 10-month rule applies to installment debts that will run out soon, not to debts being paid off at closing.",
+      "d": "The debt need not be closed before application; it must be shown paid from closing proceeds and documented."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2218,11 +2218,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only a handwritten note listing approximate balances"
+        "text": "A verification of rent and 12 months of canceled checks to landlords as proof of reserves"
       },
       {
         "id": "b",
-        "text": "Proof of prior landlord rent payments only with no account statements"
+        "text": "Year-end account statements from the prior tax year showing average balances"
       },
       {
         "id": "c",
@@ -2230,15 +2230,15 @@
       },
       {
         "id": "d",
-        "text": "Social media posts about vacation spending"
+        "text": "Current account balances plus the borrower's available credit card limits as reserves"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Lenders verify funds are available, seasoned, and not borrowed without disclosure.",
     "distractorExplanations": {
-      "a": "Handwritten notes are not acceptable verification.",
-      "b": "Rent history alone does not prove liquid reserves.",
-      "d": "Social media is not verification."
+      "a": "Rent history shows payment behavior, not liquid funds; reserves are verified with account statements and sourced deposits.",
+      "b": "Lenders want the most recent statements (typically two months), not prior-year balances, plus sourcing of large deposits.",
+      "d": "Unused credit lines are borrowed funds, not reserves; reserves must be verified liquid assets owned by the borrower."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2251,15 +2251,15 @@
     "options": [
       {
         "id": "a",
-        "text": "That the employer will guarantee the loan if the borrower defaults"
+        "text": "The borrower's two-year employment history and job title from the original W-2 forms"
       },
       {
         "id": "b",
-        "text": "The borrower's political affiliation"
+        "text": "The employer's written agreement to deduct mortgage payments directly from the borrower's paycheck"
       },
       {
         "id": "c",
-        "text": "That the property appraised above list price"
+        "text": "The borrower's credit report shows no new debts opened since the initial application"
       },
       {
         "id": "d",
@@ -2269,9 +2269,9 @@
     "correctOptionId": "d",
     "explanation": "Pre-closing VOE catches job loss or income changes before funding.",
     "distractorExplanations": {
-      "a": "Employers do not guarantee mortgage debt.",
-      "b": "Political affiliation is irrelevant and prohibited consideration.",
-      "c": "Appraisal results are separate from VOE."
+      "a": "W-2 history is reviewed at application; a pre-closing VOE confirms the borrower is still employed as represented.",
+      "b": "Employers do not set up payroll deductions for mortgages as part of a VOE; it confirms current employment and income.",
+      "c": "Checking for new debts is a credit refresh or undisclosed-debt monitoring, not the verbal or written VOE."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2284,27 +2284,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The principal balance reaches a scheduled LTV threshold under federal homeowner protection rules (often 78% on original value with timely payments)"
+        "text": "The principal balance reaches a scheduled LTV threshold under federal homeowner protection rules"
       },
       {
         "id": "b",
-        "text": "The borrower requests cancellation on day one of the loan"
+        "text": "The home's current market value rises enough for the loan-to-value ratio to reach 85 percent"
       },
       {
         "id": "c",
-        "text": "The borrower pays one extra payment regardless of LTV"
+        "text": "The borrower requests cancellation once the principal balance reaches 90 percent of the original value"
       },
       {
         "id": "d",
-        "text": "The home is rented to a tenant without lender consent"
+        "text": "The borrower has made 24 consecutive on-time payments at any loan-to-value ratio"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Borrower-initiated cancellation at 80% current LTV may also be available with good payment history and no subordinate liens.",
+    "explanation": "Under the Homeowners Protection Act, PMI terminates automatically when the balance is scheduled to reach 78% of the home's original value and the borrower is current. The borrower may request cancellation earlier at 80% of original value with a good payment history and no subordinate liens.",
     "distractorExplanations": {
-      "b": "Day-one cancellation is not automatic at origination.",
-      "c": "One extra payment alone may not reach termination LTV.",
-      "d": "Non-owner occupancy can affect PMI rules."
+      "b": "Automatic termination follows the amortization schedule against original value at 78%, not appreciation to 85%.",
+      "c": "Borrower-requested cancellation starts at 80% of original value, not 90%; automatic termination occurs at 78%.",
+      "d": "Payment history alone does not end PMI; HPA termination requires reaching the 78% LTV schedule (or the loan midpoint)."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2317,7 +2317,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Has no effect on underwriting because only the first lien matters"
+        "text": "Is excluded from CLTV when the second lien is held by a different lender"
       },
       {
         "id": "b",
@@ -2325,19 +2325,19 @@
       },
       {
         "id": "c",
-        "text": "Eliminates the need for any down payment in every case"
+        "text": "Lowers the first-lien LTV, so the second lien's payment is excluded from DTI"
       },
       {
         "id": "d",
-        "text": "Automatically qualifies the loan as FHA-insured"
+        "text": "Requires the first-lien lender to subordinate its position to the new second lien"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CLTV includes all liens; piggyback structures must meet investor and MI guidelines.",
     "distractorExplanations": {
-      "a": "Second liens affect CLTV and risk.",
-      "c": "Down payment requirements remain program-specific.",
-      "d": "FHA has its own insurance and LTV rules."
+      "a": "CLTV counts every lien on the property whoever holds it; a separate lender does not remove the second lien from the calculation.",
+      "c": "Although the first-lien LTV may be lower, the second lien's monthly payment must be included in the borrower's DTI.",
+      "d": "On a purchase the first mortgage is recorded first; subordination is needed when refinancing a first while keeping a second."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2350,27 +2350,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The borrower may cash out the day after purchase with no title seasoning"
+        "text": "The borrower must have held the current rate lock for a minimum period before closing"
       },
       {
         "id": "b",
-        "text": "Cash-out is prohibited on all primary residences without exception"
+        "text": "The borrower must wait a minimum period after a refinance before applying for a HELOC"
       },
       {
         "id": "c",
-        "text": "The borrower must have owned the property for a minimum period before tapping equity (varies by agency/investor)"
+        "text": "The borrower must have owned the property for a minimum period before tapping equity"
       },
       {
         "id": "d",
-        "text": "Seasoning refers only to how long rate locks last"
+        "text": "The borrower must have made 36 months of payments before any cash-out is permitted"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Agency guides limit cash-out soon after acquisition to reduce flip and fraud risk.",
+    "explanation": "Agency guides limit cash-out soon after acquisition to reduce flip and fraud risk; the exact seasoning period varies by agency/investor.",
     "distractorExplanations": {
-      "a": "Immediate cash-out after purchase is usually restricted.",
-      "b": "Cash-out refi is allowed when guidelines are met.",
-      "d": "Seasoning here is ownership tenure, not lock duration."
+      "a": "Lock duration is a pricing term; cash-out seasoning measures how long the borrower has owned the property or been on title.",
+      "b": "HELOC timing is set by the lender; cash-out seasoning is about ownership time before a cash-out refinance.",
+      "d": "Seasoning is measured mainly by time on title (often 6-12 months), not a 36-month payment count."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2383,15 +2383,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Must occupy the property as the only eligible borrower type"
+        "text": "Must occupy the home within 60 days of closing, the same as the primary borrower"
       },
       {
         "id": "b",
-        "text": "Cannot be related to the occupying borrower under any program"
+        "text": "Is a guarantor who signs the note but whose income cannot be used to qualify"
       },
       {
         "id": "c",
-        "text": "Eliminates the need for credit report review"
+        "text": "Holds title to the property but does not sign the note or the mortgage"
       },
       {
         "id": "d",
@@ -2401,9 +2401,9 @@
     "correctOptionId": "d",
     "explanation": "Programs differ on non-occupant co-borrower allowance and LTV limits.",
     "distractorExplanations": {
-      "a": "Non-occupant means they will not live there.",
-      "b": "Many programs allow related co-borrowers.",
-      "c": "Credit is still reviewed for all borrowers."
+      "a": "That 60-day move-in describes an occupant borrower's obligation; a non-occupant co-borrower does not live in the home.",
+      "b": "Non-occupant co-borrower income can be used to qualify (subject to program rules); a guarantor-only role is a different concept.",
+      "c": "A titleholder who doesn't sign the note is a non-borrowing title holder; a co-borrower signs the note and is obligated."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2420,23 +2420,23 @@
       },
       {
         "id": "b",
-        "text": "Requires no income verification because non-QM means no rules apply"
+        "text": "Must rely on the borrower's stated income, because third-party verification applies only to QM loans"
       },
       {
         "id": "c",
-        "text": "Prohibits any consideration of assets or reserves"
+        "text": "Requires the creditor to consider the eight ATR factors but without any third-party verification of them"
       },
       {
         "id": "d",
-        "text": "Eliminates all federal lending laws including anti-discrimination statutes"
+        "text": "Follows the same rules as QM but gives the creditor a stronger legal safe harbor"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Non-QM lacks QM safe harbor but ATR and fair lending laws still apply.",
     "distractorExplanations": {
-      "b": "Non-QM is not a free pass from ATR.",
-      "c": "Assets/reserves may support repayment analysis.",
-      "d": "ECOA and FHA still apply."
+      "b": "ATR requires verifying income using reasonably reliable third-party records for every covered mortgage; stated-income lending is not allowed.",
+      "c": "The ATR rule requires both considering the eight factors and verifying them with reasonably reliable third-party records.",
+      "d": "Non-QM loans lack the QM safe harbor or presumption; the creditor bears more litigation risk, not less."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2449,7 +2449,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Permanently reduces the note rate for the entire loan term without cost"
+        "text": "Permanently lowers the note rate in exchange for discount points the borrower pays at closing"
       },
       {
         "id": "b",
@@ -2457,19 +2457,19 @@
       },
       {
         "id": "c",
-        "text": "Eliminates the need for escrow accounts and insurance"
+        "text": "Lowers the payment in early years by adding the unpaid interest to the balance"
       },
       {
         "id": "d",
-        "text": "Guarantees the borrower will never default"
+        "text": "Lowers the rate for the first five years, then adjusts with an index and margin"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Buydowns must be disclosed; post-buydown payment increases must be understandable to the borrower.",
     "distractorExplanations": {
-      "a": "Note rate often stays fixed; subsidy funds early payments.",
-      "c": "Escrow/insurance requirements remain.",
-      "d": "Buydowns do not eliminate default risk."
+      "a": "Paying discount points for a lower note rate is a permanent buydown; a temporary buydown subsidizes payments for a few years.",
+      "c": "Adding unpaid interest to principal is negative amortization (like a GPM); a buydown uses a funded subsidy account instead.",
+      "d": "Index-plus-margin adjustments after a fixed period describe an ARM; a temporary buydown keeps the note rate and subsidizes payments."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2482,15 +2482,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The minimum credit score every borrower nationwide must have"
+        "text": "The maximum loan amount FHA will insure for a one-unit property in a given county"
       },
       {
         "id": "b",
-        "text": "The maximum interest rate lenders may charge by law in all states"
+        "text": "The maximum loan-to-value ratio Fannie Mae or Freddie Mac allows for a primary residence"
       },
       {
         "id": "c",
-        "text": "The number of bedrooms required in every financed home"
+        "text": "The minimum loan amount a lender must originate to sell the loan to Ginnie Mae"
       },
       {
         "id": "d",
@@ -2500,9 +2500,9 @@
     "correctOptionId": "d",
     "explanation": "Loans above conforming limits are often jumbo/non-conforming with different underwriting.",
     "distractorExplanations": {
-      "a": "Credit scores are investor overlays, not the conforming limit definition.",
-      "b": "Rate caps are not defined by conforming limits.",
-      "c": "Bedroom counts are not conforming limit criteria."
+      "a": "FHA sets its own county mortgage limits; conforming limits govern Fannie Mae and Freddie Mac purchases.",
+      "b": "Maximum LTV is an eligibility guideline; the conforming limit is a dollar cap on loan size set annually by FHFA.",
+      "c": "Ginnie Mae guarantees securities backed by government loans and sets no such minimum; conforming limits are maximums."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2519,23 +2519,23 @@
       },
       {
         "id": "b",
-        "text": "No mortgage insurance at any LTV"
+        "text": "Private mortgage insurance that cancels at 78% LTV, with a 5% minimum down payment"
       },
       {
         "id": "c",
-        "text": "Guarantee by the U.S. Department of Veterans Affairs"
+        "text": "A one-time funding fee instead of monthly insurance, with no down payment for eligible borrowers"
       },
       {
         "id": "d",
-        "text": "Eligibility limited to active-duty military"
+        "text": "Income below 115% of area median and a property located in an eligible rural area"
       }
     ],
     "correctOptionId": "a",
     "explanation": "FHA insurance protects the lender; MIP costs appear in disclosures and affect payment.",
     "distractorExplanations": {
-      "b": "FHA has MIP, not zero insurance.",
-      "c": "VA guarantees VA loans, not FHA.",
-      "d": "Military-only eligibility describes VA, not FHA."
+      "b": "Cancelable PMI and 5% minimums describe conventional loans; FHA uses upfront and annual MIP with a 3.5% minimum down.",
+      "c": "A funding fee with no down payment describes VA loans; FHA charges upfront plus annual mortgage insurance premiums.",
+      "d": "Income caps and rural location are USDA eligibility tests; FHA has no income limit or geographic restriction."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2548,7 +2548,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Is paid only by the seller with no borrower option"
+        "text": "Is a monthly premium that cancels when the loan reaches 78 percent LTV"
       },
       {
         "id": "b",
@@ -2556,19 +2556,19 @@
       },
       {
         "id": "c",
-        "text": "Replaces the need for any occupancy certification"
+        "text": "Must be paid in cash at closing and cannot be added to the loan amount"
       },
       {
         "id": "d",
-        "text": "Is identical to FHA upfront MIP in every respect"
+        "text": "Is the same flat amount for every veteran, including those receiving VA disability pay"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Certain veterans are exempt from the funding fee; amount varies by service and use.",
     "distractorExplanations": {
-      "a": "Borrowers often finance the fee.",
-      "c": "Occupancy rules still apply.",
-      "d": "VA funding fee differs from FHA MIP structure."
+      "a": "VA loans have no monthly mortgage insurance; the funding fee is a one-time charge, and 78% cancellation is a conventional PMI rule.",
+      "c": "The VA funding fee can be financed into the loan; requiring it in cash confuses it with other closing costs.",
+      "d": "The fee varies by down payment, service type, and first vs subsequent use; veterans receiving VA disability compensation are exempt."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2581,11 +2581,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Lower monthly payments and higher total interest"
+        "text": "Lower monthly payments and less total interest because the rate is lower"
       },
       {
         "id": "b",
-        "text": "An interest rate that adjusts every six months by statute"
+        "text": "The same monthly payment but a lower interest rate, so the loan builds equity much faster"
       },
       {
         "id": "c",
@@ -2593,15 +2593,15 @@
       },
       {
         "id": "d",
-        "text": "No amortization of principal until year 20"
+        "text": "Higher monthly payments and more total interest because of the higher rate"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Shorter terms build equity faster and reduce interest cost if the payment is affordable.",
     "distractorExplanations": {
-      "a": "Shorter terms mean higher payments, not lower.",
-      "b": "Fixed means no periodic adjustment.",
-      "d": "Principal amortizes from the start."
+      "a": "A lower rate helps, but the shorter term raises the monthly payment; payments are higher, not lower, on a 15-year loan.",
+      "b": "Compressing repayment into 15 years raises the payment even at a lower rate; the payment is not the same.",
+      "d": "15-year rates are typically lower, and fewer years of interest mean less total interest, not more."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2614,27 +2614,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Borrowers under age 18 with no occupancy requirement"
+        "text": "Borrowers at least age 55 who occupy the home as a principal residence"
       },
       {
         "id": "b",
-        "text": "Mandatory rental of the property to third parties"
+        "text": "Borrowers at least age 62 who may rent the home out as an investment property"
       },
       {
         "id": "c",
-        "text": "No HUD counseling or disclosures"
+        "text": "Borrowers of any age who own the home free and clear and live there full time"
       },
       {
         "id": "d",
-        "text": "Borrowers at least age 62 who occupy the home as a principal residence (among other counseling and financial tests)"
+        "text": "Borrowers at least age 62 who occupy the home as a principal residence"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "HECMs are FHA-insured reverse mortgages with specific counseling and non-recourse features.",
+    "explanation": "HECMs are FHA-insured reverse mortgages with specific counseling and non-recourse features; borrowers must also complete HUD-approved counseling and meet financial assessment tests.",
     "distractorExplanations": {
-      "a": "Age and occupancy minimums apply.",
-      "b": "Primary residence occupancy is required.",
-      "c": "HUD counseling is mandatory for HECM."
+      "a": "Age 55 is used by some proprietary reverse mortgages; the FHA-insured HECM requires borrowers to be at least 62.",
+      "b": "HECMs require the home to be the borrower's principal residence; investment properties are ineligible.",
+      "c": "HECMs require borrowers to be at least 62, and an existing mortgage may be paid off with proceeds rather than owned free and clear."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2651,23 +2651,23 @@
       },
       {
         "id": "b",
-        "text": "The rate changes every month from closing with no fixed period"
+        "text": "A fixed rate for one year, then adjustments every five years based on an index"
       },
       {
         "id": "c",
-        "text": "The rate is fixed for 30 years with no adjustment ever"
+        "text": "A fixed rate for five years, then a balloon payment of the remaining balance"
       },
       {
         "id": "d",
-        "text": "The loan converts automatically to a credit card account"
+        "text": "A fixed rate for five years, then rate adjustments every six months based on an index plus margin"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ARM disclosures must show initial fixed period, caps, index, margin, and worst-case scenarios.",
     "distractorExplanations": {
-      "b": "5/1 includes a five-year fixed period.",
-      "c": "30-year fixed is a different product.",
-      "d": "ARMs remain mortgage loans, not credit cards."
+      "b": "The first number is the initial fixed period (five years) and the second is the adjustment frequency (one year).",
+      "c": "A five-year balloon requires a lump-sum payoff; a 5/1 ARM continues amortizing with annual rate adjustments.",
+      "d": "Six-month adjustments after five years describe a 5/6 ARM (common with SOFR); a 5/1 adjusts annually."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2680,7 +2680,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Pay only for luxury pools with no structural repairs"
+        "text": "Finance the purchase of a vacant lot and the construction of a new single-family home"
       },
       {
         "id": "b",
@@ -2688,19 +2688,19 @@
       },
       {
         "id": "c",
-        "text": "Finance commercial strip malls"
+        "text": "Finance repairs alone, as an unsecured personal loan insured under FHA Title I"
       },
       {
         "id": "d",
-        "text": "Eliminate all contractor inspections and draw schedules"
+        "text": "Finance a home that already meets FHA standards, with repairs paid by the seller"
       }
     ],
     "correctOptionId": "b",
     "explanation": "203(k) includes standard and limited versions with consultant/draw requirements for larger projects.",
     "distractorExplanations": {
-      "a": "Eligible repairs must meet FHA guidelines.",
-      "c": "203(k) targets residential rehab.",
-      "d": "Draw inspections manage completion."
+      "a": "Lot purchase plus new construction is a construction-to-permanent loan; 203(k) rehabilitates an existing dwelling.",
+      "c": "FHA Title I property improvement loans are separate; 203(k) combines purchase/refinance with repair costs in one mortgage.",
+      "d": "Seller-paid repairs before closing are a standard FHA purchase; 203(k) rolls the borrower's repair costs into the loan."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2713,11 +2713,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Must always be sold to Fannie Mae within 24 hours"
+        "text": "Is sold to Fannie Mae with servicing retained by the originating lender"
       },
       {
         "id": "b",
-        "text": "Cannot be made on any residential property"
+        "text": "Is securitized through Ginnie Mae as an FHA or VA government loan"
       },
       {
         "id": "c",
@@ -2725,15 +2725,15 @@
       },
       {
         "id": "d",
-        "text": "Is exempt from all federal disclosure laws"
+        "text": "Is exempt from ATR rules because the lender keeps the credit risk"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Portfolio products can serve non-conforming borrowers but still follow TRID and fair lending rules.",
     "distractorExplanations": {
-      "a": "Portfolio means retained, not mandatory immediate sale.",
-      "b": "Residential portfolio loans exist.",
-      "d": "Federal disclosures still apply."
+      "a": "Selling to Fannie Mae with servicing retained is still a GSE sale; a portfolio loan is held on the lender's own books.",
+      "b": "Ginnie Mae securitization covers government loans sold into MBS; portfolio loans are retained by the lender.",
+      "d": "ATR applies to portfolio loans too; small-creditor portfolio QM offers a compliance path, not an exemption from repayment analysis."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2746,15 +2746,15 @@
     "options": [
       {
         "id": "a",
-        "text": "100% financing with three simultaneous FHA loans"
+        "text": "A first mortgage at 80% LTV, PMI at 10% coverage, and a 10% down payment"
       },
       {
         "id": "b",
-        "text": "Zero down payment and no second lien ever"
+        "text": "A first mortgage at 80% LTV, a 10% gift, and a 10% down payment from savings"
       },
       {
         "id": "c",
-        "text": "A single lien at 110% LTV without MI"
+        "text": "A first mortgage at 90% LTV and a 10% down payment, with PMI until 80% LTV"
       },
       {
         "id": "d",
@@ -2764,9 +2764,9 @@
     "correctOptionId": "d",
     "explanation": "Piggybacks historically helped avoid PMI; second lien terms and qualification matter.",
     "distractorExplanations": {
-      "a": "Three FHA loans on one purchase is not 80-10-10.",
-      "b": "10% down is core to the structure.",
-      "c": "110% LTV without subordinate lien is different."
+      "a": "The structure avoids PMI by using a 10% second lien; it does not involve 10% mortgage insurance coverage.",
+      "b": "An 80-10-10 includes a 10% second mortgage, not a gift; gift-plus-savings would be a 20% down payment.",
+      "c": "A 90% first lien with PMI is a standard conventional loan; the piggyback splits financing into 80% and 10% liens."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2779,27 +2779,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Reduces documentation when replacing an existing FHA/VA loan with a new FHA/VA loan meeting net tangible benefit tests"
+        "text": "Reduces documentation when replacing an existing FHA/VA loan with a new FHA/VA loan"
       },
       {
         "id": "b",
-        "text": "Allows cash-out of unlimited equity without appraisal"
+        "text": "Allows cash-out up to 85% of value with reduced income and appraisal documentation"
       },
       {
         "id": "c",
-        "text": "Requires no mortgage history or payment verification ever"
+        "text": "Converts an FHA loan to a conventional loan without a new appraisal or credit check"
       },
       {
         "id": "d",
-        "text": "Converts the loan to a commercial line of credit"
+        "text": "Reduces documentation when refinancing a conventional loan into a new FHA loan"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Streamlines have program-specific eligibility, NTB, and funding fee/MIP rules.",
+    "explanation": "Streamlines have program-specific eligibility, NTB, and funding fee/MIP rules; the new loan must meet net tangible benefit tests.",
     "distractorExplanations": {
-      "b": "Cash-out limits differ from streamline refi.",
-      "c": "Payment history requirements still exist.",
-      "d": "Streamlines remain mortgage loans."
+      "b": "Streamlines are rate/term refinances with little or no cash back; cash-out refinances require full underwriting and appraisal.",
+      "c": "A streamline must refinance FHA into FHA (or VA into VA via IRRRL); moving to conventional requires full underwriting.",
+      "d": "Conventional-to-FHA refinances require full documentation; streamlines are limited to existing FHA or VA loans."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2812,7 +2812,7 @@
     "options": [
       {
         "id": "a",
-        "text": "All condos automatically qualify with no project review"
+        "text": "Condo units cannot be financed with any loan that carries private mortgage insurance"
       },
       {
         "id": "b",
@@ -2820,19 +2820,19 @@
       },
       {
         "id": "c",
-        "text": "Condo questionnaires are prohibited by TRID"
+        "text": "TRID requires a separate condo disclosure in place of the Loan Estimate"
       },
       {
         "id": "d",
-        "text": "FHA and GSEs treat every condo identically without review"
+        "text": "The borrower's DTI exceeds 50%, making the condo unit ineligible for agency sale"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Project approval or limited review status affects eligibility and pricing.",
     "distractorExplanations": {
-      "a": "Project review is often required.",
-      "c": "TRID does not ban questionnaires.",
-      "d": "Agency condo rules differ and require review."
+      "a": "Warrantable condos can carry PMI; non-warrantable status comes from project-level issues like litigation or investor concentration.",
+      "c": "TRID has no condo-specific disclosure replacing the LE; project eligibility is set by agency condo guidelines.",
+      "d": "Warrantability is a project-level determination; a borrower's DTI affects the loan, not the condo project's status."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2845,27 +2845,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Are identical to jumbo loans with no GSE eligibility"
+        "text": "Exceed the higher area limits for high-cost counties but remain eligible for GSE purchase"
       },
       {
         "id": "b",
-        "text": "Require no appraisal under any circumstance"
+        "text": "Fall below the baseline conforming limit but carry a higher LTV than standard loans"
       },
       {
         "id": "c",
-        "text": "Exceed the national baseline conforming limit but remain within higher area limits set for certain counties"
+        "text": "Exceed the national baseline conforming limit but remain within higher area limits"
       },
       {
         "id": "d",
-        "text": "Are available only for commercial warehouses"
+        "text": "Exceed the FHA county limit and are insured by FHA under its high-cost area program"
       }
     ],
     "correctOptionId": "c",
     "explanation": "High-cost areas have elevated limits; pricing and LLPAs may differ from standard conforming.",
     "distractorExplanations": {
-      "a": "Jumbo exceeds even high-balance limits.",
-      "b": "Appraisals remain typical.",
-      "d": "High-balance applies to residential conforming-eligible areas."
+      "a": "Loans above the high-cost area limit are jumbo and not GSE-eligible; high-balance loans stay within the higher area limit.",
+      "b": "Loans under the baseline are standard conforming; high-balance refers to amounts above the baseline in high-cost areas.",
+      "d": "High-balance conforming loans are conventional Fannie/Freddie loans, not FHA-insured; FHA has its own county limits."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2878,15 +2878,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminate the homeowner's property tax obligation permanently"
+        "text": "Provide monthly payments to an older homeowner, repaid from sale proceeds when they leave"
       },
       {
         "id": "b",
-        "text": "Transfer full title to the investor on day one with no occupancy rights"
+        "text": "Provide a lower interest rate in exchange for the lender's right to call the loan early"
       },
       {
         "id": "c",
-        "text": "Are identical to standard 30-year fixed-rate notes in every respect"
+        "text": "Provide funds as a second lien that accrues interest monthly at a fixed rate"
       },
       {
         "id": "d",
@@ -2896,9 +2896,9 @@
     "correctOptionId": "d",
     "explanation": "Equity sharing has distinct repayment and appreciation-sharing terms requiring clear disclosure.",
     "distractorExplanations": {
-      "a": "Property taxes remain the owner's duty.",
-      "b": "Occupancy rights are defined in the agreement.",
-      "c": "Shared appreciation is not a plain fixed mortgage."
+      "a": "Monthly payouts repaid on move-out describe a reverse mortgage (HECM), not a share of future appreciation.",
+      "b": "A call option for a lower rate is a callable loan feature; shared appreciation trades funding for a share of future value.",
+      "c": "A fixed-rate interest-bearing second lien is a home equity loan; equity-sharing repayment is tied to future appreciation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2911,27 +2911,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Charges interest without reducing principal during the IO period, after which amortizing payments typically rise"
+        "text": "Charges interest without reducing principal during the IO period"
       },
       {
         "id": "b",
-        "text": "Never requires principal repayment at any time"
+        "text": "Charges less than the full interest, so the unpaid interest is added to principal"
       },
       {
         "id": "c",
-        "text": "Is identical to a 15-year fully amortizing fixed-rate loan"
+        "text": "Lets the borrower skip payments during the IO period without accruing interest"
       },
       {
         "id": "d",
-        "text": "Eliminates ability-to-repay documentation"
+        "text": "Reduces principal gradually from the first payment, like a standard 30-year loan"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "IO loans defer principal; payment shock at recast and ATR analysis of the fully amortizing payment are core MLO disclosures.",
+    "explanation": "IO loans defer principal; after the IO period, amortizing payments typically rise. Payment shock at recast and ATR analysis of the fully amortizing payment are core MLO disclosures.",
     "distractorExplanations": {
-      "b": "Principal is still due—via later amortization, balloon, or refinance.",
-      "c": "Fully amortizing 15-year loans pay principal from the first payment.",
-      "d": "ATR still applies to IO products."
+      "b": "Adding unpaid interest to principal is negative amortization; an IO payment covers the full interest so the balance stays level.",
+      "c": "Interest accrues and must be paid monthly during the IO period; only principal reduction is deferred, not interest.",
+      "d": "Gradual principal reduction from the first payment describes a fully amortizing loan, not the IO period."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2944,27 +2944,27 @@
     "options": [
       {
         "id": "a",
-        "text": "They require no ability-to-repay analysis under any federal rule"
+        "text": "Income is taken from the borrower's stated figure without any third-party verification"
       },
       {
         "id": "b",
-        "text": "Income is inferred from deposits rather than traditional W-2/ tax return verification, requiring strong overlays"
+        "text": "Income is inferred from deposits rather than traditional W-2/ tax return verification"
       },
       {
         "id": "c",
-        "text": "They are exempt from fraud penalties"
+        "text": "Income is verified with W-2s and tax returns, but assets are not checked at all"
       },
       {
         "id": "d",
-        "text": "They prohibit any review of bank statements"
+        "text": "Income is calculated from the property's rent, without any personal income review"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Non-QM bank statement loans need robust deposit analysis, expense factors, and ATR documentation.",
+    "explanation": "Non-QM bank statement loans need robust deposit analysis, expense factors, and ATR documentation, which is why lenders apply strong overlays.",
     "distractorExplanations": {
-      "a": "ATR still applies.",
-      "c": "Fraud penalties apply to misstated income.",
-      "d": "Bank statements are central to the program."
+      "a": "Bank statement loans still verify income through 12-24 months of statements; stated-income lending violates ATR.",
+      "c": "Bank statement programs serve borrowers who lack traditional W-2/tax return income; asset review is still part of underwriting.",
+      "d": "Using property rent to qualify describes a DSCR investor loan, not a bank-statement program based on deposits."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2977,15 +2977,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Providing a Loan Estimate within three business days"
+        "text": "Charging more than three points and fees on a Qualified Mortgage"
       },
       {
         "id": "b",
-        "text": "Disclosing the APR on the Closing Disclosure"
+        "text": "A seller requiring the buyer to use a particular title insurance company"
       },
       {
         "id": "c",
-        "text": "Collecting property taxes through an escrow account"
+        "text": "Escrow cushions larger than two months of annual escrow disbursements"
       },
       {
         "id": "d",
@@ -2995,9 +2995,9 @@
     "correctOptionId": "d",
     "explanation": "Section 8 targets referral fees that inflate settlement costs without legitimate services.",
     "distractorExplanations": {
-      "a": "Loan Estimate timing is a TRID requirement, not prohibited.",
-      "b": "APR disclosure is required under TILA.",
-      "c": "Escrows are permitted when disclosed."
+      "a": "The 3% points-and-fees cap is a Reg Z QM requirement, not a RESPA Section 8 prohibition on kickbacks.",
+      "b": "Seller-required title insurance companies are prohibited by RESPA Section 9, not Section 8's kickback rule.",
+      "c": "The two-month (one-sixth) escrow cushion limit is in RESPA Section 10, not Section 8's anti-kickback rule."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3010,27 +3010,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Three business days to cancel after closing disclosures and note signing (when applicable)"
+        "text": "Three business days from the latest of closing, notice, or disclosures"
       },
       {
         "id": "b",
-        "text": "Thirty calendar years to cancel without reason"
+        "text": "Three calendar days to cancel after funding, including Sundays and holidays"
       },
       {
         "id": "c",
-        "text": "Immediate funding with no waiting period in every case"
+        "text": "Three business days to cancel a purchase-money loan on a primary residence"
       },
       {
         "id": "d",
-        "text": "Cancellation rights on all investment property purchases automatically"
+        "text": "Seven business days to cancel after the Loan Estimate is delivered"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Rescission applies to certain home-equity/refinance situations on owner-occupied dwellings, not all purchases.",
+    "explanation": "TILA rescission applies to certain refinances and home-equity loans secured by the borrower's principal dwelling. The borrower may cancel until midnight of the third business day after the latest of consummation, delivery of the rescission notice, or delivery of the material disclosures.",
     "distractorExplanations": {
-      "b": "Rescission period is measured in business days, not years.",
-      "c": "Funding may be delayed during rescission on covered transactions.",
-      "d": "Investment purchases often lack rescission rights."
+      "b": "Rescission runs three business days (Saturdays count, Sundays and federal holidays do not) from consummation, notice, or disclosures, whichever is last.",
+      "c": "Purchase-money (residential mortgage transaction) loans are exempt from rescission; it applies to certain refinances and home equity loans.",
+      "d": "Seven business days is the LE waiting period before consummation, not the post-closing rescission window."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3043,7 +3043,7 @@
     "options": [
       {
         "id": "a",
-        "text": "No notice if the denial is oral"
+        "text": "A copy of the credit report used, with the bureau's contact details only"
       },
       {
         "id": "b",
@@ -3051,19 +3051,19 @@
       },
       {
         "id": "c",
-        "text": "Only a verbal congratulations message"
+        "text": "A written notice within 60 days of the decision stating that the application was denied"
       },
       {
         "id": "d",
-        "text": "A guarantee of approval on the next application automatically"
+        "text": "A general statement that the applicant did not meet internal standards"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Adverse action notices promote fair lending transparency and applicant rights.",
     "distractorExplanations": {
-      "a": "Written notice requirements apply to covered denials.",
-      "c": "Denials require adverse action compliance.",
-      "d": "Future approval is not automatic."
+      "a": "FCRA requires bureau contact and score disclosure, but ECOA requires an adverse action notice with specific reasons.",
+      "c": "Reg B requires notice within 30 days of a completed application, and it must give or offer the specific reasons.",
+      "d": "Reg B says vague statements like 'failed internal standards' are insufficient; specific principal reasons are required."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3076,11 +3076,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No purpose because credit reports are public records for anyone"
+        "text": "A permissible purpose, plus FCRA notice to the consumer after funding"
       },
       {
         "id": "b",
-        "text": "Only verbal permission from a neighbor"
+        "text": "Written authorization from the consumer, renewed every 90 days"
       },
       {
         "id": "c",
@@ -3088,15 +3088,15 @@
       },
       {
         "id": "d",
-        "text": "Purchase of the report on the open market without applicant identity"
+        "text": "A HMDA disclosure and adverse action notice before the pull"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Permissible purpose and consent protect consumer credit privacy.",
     "distractorExplanations": {
-      "a": "Credit reports are not public to all requesters.",
-      "b": "Neighbor permission is irrelevant.",
-      "d": "Identity and purpose are required."
+      "a": "The permissible purpose must exist before the pull; FCRA does not make a post-funding notice the authorization.",
+      "b": "FCRA has no 90-day renewal rule; the consumer's credit application itself creates the permissible purpose.",
+      "d": "HMDA disclosures and adverse action notices are unrelated to accessing credit reports; FCRA requires a permissible purpose."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3109,27 +3109,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the applicant's favorite sports team"
+        "text": "Race, color, religion, national origin, sex, handicap, and familial status as listed under fair lending law"
       },
       {
         "id": "b",
-        "text": "The day of the week the application is submitted"
+        "text": "Race, color, religion, sex, marital status, age, and the applicant's length of employment or job type"
       },
       {
         "id": "c",
-        "text": "Whether the applicant prefers email over phone contact"
+        "text": "Race, color, religion, national origin, sex, and age, but not marital status or receipt of public assistance"
       },
       {
         "id": "d",
-        "text": "Race, color, religion, national origin, sex, marital status, age (with exceptions), receipt of public assistance, or exercise of rights under consumer credit laws"
+        "text": "Race, color, religion, national origin, sex, marital status, age (with exceptions), receipt of public assistance"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Protected classes under ECOA and FHA guide fair lending compliance.",
+    "explanation": "Protected classes under ECOA and FHA guide fair lending compliance. ECOA also protects good-faith exercise of rights under consumer credit laws.",
     "distractorExplanations": {
-      "a": "Sports preference is not a protected class.",
-      "b": "Application day is irrelevant.",
-      "c": "Communication preference is not a prohibited basis."
+      "a": "Handicap and familial status are Fair Housing Act bases; ECOA covers marital status, age, and public assistance instead.",
+      "b": "Length of employment is a legitimate underwriting factor, not an ECOA prohibited basis.",
+      "c": "Reg B expressly protects marital status and income from public assistance programs; creditors may not exclude them as prohibited bases."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3142,27 +3142,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Events like interest rate locks after LE issuance, appraisal-driven value changes, or other specific TRID triggers"
+        "text": "Events like interest rate locks after LE issuance or appraisal-driven value changes"
       },
       {
         "id": "b",
-        "text": "Any fee increase the lender prefers without documentation"
+        "text": "Fee increases the lender documents internally, even when no new information has come to light"
       },
       {
         "id": "c",
-        "text": "Borrower shopping for lower title fees alone in every case"
+        "text": "Borrower complaints about fees, which reset all tolerances once a new LE is sent"
       },
       {
         "id": "d",
-        "text": "MLO desire to increase compensation after closing"
+        "text": "Any event discovered after the Closing Disclosure is issued, up to 60 days later"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Changed circumstance rules limit tolerance violations and require timely redisclosure.",
     "distractorExplanations": {
-      "b": "Fee increases need qualifying events.",
-      "c": "Borrower-induced title shop may not always permit LE revision.",
-      "d": "Post-closing comp changes are not LE redisclosure events."
+      "b": "A changed circumstance needs an extraordinary event, new information, or inaccurate information relied on, not internal paperwork.",
+      "c": "Complaints are not changed circumstances; a revised LE resets baselines only when a valid trigger exists and is sent within 3 business days.",
+      "d": "Changed circumstances justify a revised LE before the CD; the 60-day window applies to post-consummation tolerance refunds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3208,27 +3208,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No appraisal on any primary residence loan"
+        "text": "An automated valuation model, with the result given to the borrower at closing"
       },
       {
         "id": "b",
-        "text": "Use of only automated valuation models with no exceptions"
+        "text": "A verbal value estimate from the appraiser before the lender orders the report"
       },
       {
         "id": "c",
-        "text": "A written appraisal and delivery to the borrower before closing on many higher-priced first-lien mortgages"
+        "text": "A written appraisal and delivery to the borrower before closing"
       },
       {
         "id": "d",
-        "text": "Waiving appraisal for all jumbo loans automatically"
+        "text": "A desktop appraisal without interior inspection, shared on borrower request"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Borrowers receive copies and may obtain additional appraisal under certain conditions.",
+    "explanation": "Borrowers receive copies and may obtain additional appraisal under certain conditions; this applies to many higher-priced first-lien mortgages.",
     "distractorExplanations": {
-      "a": "Appraisals are often required for HPML.",
-      "b": "AVMs alone may not satisfy HPML rules.",
-      "d": "Jumbo HPML may still need appraisals."
+      "a": "HPML rules require a written appraisal with an interior inspection by a certified or licensed appraiser, not an AVM.",
+      "b": "HPML appraisals must be written, and copies delivered at least three business days before consummation.",
+      "d": "HPML rules require a physical interior inspection, and the copy must be provided free without waiting for a request."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3241,15 +3241,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Set individual borrower credit scores each year"
+        "text": "Verify each borrower's identity and screen loan applicants against OFAC sanctions lists"
       },
       {
         "id": "b",
-        "text": "Determine property tax assessments for counties"
+        "text": "Set annual conforming loan limits based on reported home prices in each county"
       },
       {
         "id": "c",
-        "text": "License MLOs at the state level"
+        "text": "Track MLO licensing status and continuing education through annual NMLS filings"
       },
       {
         "id": "d",
@@ -3259,9 +3259,9 @@
     "correctOptionId": "d",
     "explanation": "HMDA data supports public disclosure and regulatory fair lending analysis.",
     "distractorExplanations": {
-      "a": "Credit scores are not set via HMDA.",
-      "b": "Property tax is local government, not HMDA.",
-      "c": "MLO licensing is SAFE/state, though HMDA collects originator IDs."
+      "a": "Identity verification and OFAC screening are BSA/AML and sanctions duties, not HMDA's data-reporting purpose.",
+      "b": "Conforming limits are set by FHFA using its house price index, not from HMDA LAR data.",
+      "c": "Licensing and CE tracking happen in NMLS under the SAFE Act; HMDA collects application and loan data."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3274,27 +3274,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Provide applicants copies of appraisals and written valuations developed in connection with the application"
+        "text": "Provide applicants copies of appraisals and written valuations"
       },
       {
         "id": "b",
-        "text": "Withhold all appraisals until seven years after closing"
+        "text": "Provide copies of appraisals only if the applicant requests them in writing"
       },
       {
         "id": "c",
-        "text": "Share appraisals only with the listing agent without borrower notice"
+        "text": "Provide copies of appraisals for loans that close, but not for denied applications"
       },
       {
         "id": "d",
-        "text": "Destroy appraisals before the borrower may review them"
+        "text": "Provide copies of appraisals after charging the applicant a separate copy fee"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Applicants may review valuations promptly even if credit is denied.",
+    "explanation": "Applicants may review valuations promptly even if credit is denied; the rule covers appraisals and written valuations developed in connection with the application.",
     "distractorExplanations": {
-      "b": "Timely copy rights apply before closing/denial.",
-      "c": "Borrowers—not just agents—have copy rights.",
-      "d": "Destruction before review violates Reg B."
+      "b": "Since 2014, Reg B requires creditors to provide copies promptly without a request; a written request is no longer needed.",
+      "c": "Copies are due promptly or three business days before consummation, and also when the application is denied or withdrawn.",
+      "d": "Reg B bars charging for the copy itself, although a reasonable fee for the appraisal may be charged."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3307,7 +3307,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Whether TRID disclosures are required at all"
+        "text": "Whether the loan's points and fees fall under the 3% cap that applies to every QM"
       },
       {
         "id": "b",
@@ -3315,19 +3315,19 @@
       },
       {
         "id": "c",
-        "text": "Whether ECOA applies to the transaction"
+        "text": "Whether the creditor must verify the borrower's income and assets before the loan is consummated"
       },
       {
         "id": "d",
-        "text": "Whether the borrower must occupy the property"
+        "text": "Whether the loan may include negative amortization, interest-only, or balloon payment features"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Safe harbor QM offers stronger defense; rebuttable presumption QM allows borrower challenge with evidence.",
     "distractorExplanations": {
-      "a": "TRID applies regardless of QM status.",
-      "c": "ECOA applies to credit transactions.",
-      "d": "Occupancy rules are program-specific, not QM's core distinction."
+      "a": "The 3% points-and-fees cap applies to both safe harbor and rebuttable QMs; the split depends on APR vs APOR pricing.",
+      "c": "Verification is required for QMs and non-QMs alike; safe harbor vs rebuttable presumption concerns litigation protection.",
+      "d": "No QM of either type may have negative amortization or IO features (balloons only in narrow small-creditor cases); that is not the distinction between them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3340,27 +3340,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only after funding and recording are complete"
+        "text": "At least one business day before consummation, as with the old HUD-1"
       },
       {
         "id": "b",
-        "text": "Exactly one year before application"
+        "text": "At the closing table, together with the note and the security instrument"
       },
       {
         "id": "c",
-        "text": "At least three business days before consummation (with limited redisclosure rules if certain changes occur)"
+        "text": "At least three business days before consummation"
       },
       {
         "id": "d",
-        "text": "Verbally with no written document required"
+        "text": "At least seven business days before consummation, the same as the LE"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Three-day CD rule helps borrowers compare final terms to the Loan Estimate.",
+    "explanation": "Three-day CD rule helps borrowers compare final terms to the Loan Estimate; limited redisclosure rules apply if certain changes occur.",
     "distractorExplanations": {
-      "a": "CD precedes consummation.",
-      "b": "Application timing is unrelated to the three-day CD rule.",
-      "d": "Written CD is required."
+      "a": "The one-day pre-closing review was a HUD-1 rule under old RESPA; the CD must be received three business days before.",
+      "b": "Receipt at the closing table is too late; TRID requires CD receipt at least three business days before consummation.",
+      "d": "Seven business days is the waiting period after LE delivery; the CD rule is three business days before consummation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3373,15 +3373,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Erase all legitimate collection accounts without review"
+        "text": "Remove accurate negative items older than two years by filing a written dispute"
       },
       {
         "id": "b",
-        "text": "Change their Social Security number by mailing a postcard"
+        "text": "Block lenders from pulling their credit while a dispute is pending with a bureau"
       },
       {
         "id": "c",
-        "text": "Prohibit lenders from ever pulling credit again permanently"
+        "text": "Have the lender correct the credit report directly during underwriting"
       },
       {
         "id": "d",
@@ -3391,9 +3391,9 @@
     "correctOptionId": "d",
     "explanation": "Bureaus must investigate disputes and correct or delete inaccurate/unverifiable data.",
     "distractorExplanations": {
-      "a": "Accurate negatives remain reportable.",
-      "b": "SSN changes follow SSA rules, not FCRA disputes.",
-      "c": "Permissible purpose pulls remain allowed."
+      "a": "Accurate negative information can be reported for seven years (bankruptcies up to ten); disputes address inaccuracy.",
+      "b": "A pending dispute does not bar permissible-purpose pulls; it obligates the bureau to investigate, usually within 30 days.",
+      "c": "Lenders cannot alter bureau files; corrections come from bureau and furnisher investigations or a rapid rescore based on them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3410,23 +3410,23 @@
       },
       {
         "id": "b",
-        "text": "Only the borrower's shoe size and astrological sign"
+        "text": "Income/assets, employment, credit history, the property's appraised value, expected appreciation, and the LTV ratio"
       },
       {
         "id": "c",
-        "text": "The MLO's commission check amount alone"
+        "text": "Income/assets, employment, monthly payment, and DTI, with credit history excluded under ECOA to prevent discrimination"
       },
       {
         "id": "d",
-        "text": "The color of the front door"
+        "text": "Income/assets, employment, other debt, DTI, and credit history, with the monthly payment measured at the introductory teaser rate"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Creditors must consider comprehensive repayment ability under Reg Z ATR.",
     "distractorExplanations": {
-      "b": "Irrelevant personal traits are not ATR factors.",
-      "c": "MLO comp is not an ATR underwriting factor.",
-      "d": "Property cosmetic features are not ATR factors."
+      "b": "Appreciation forecasts and LTV are collateral considerations; ATR's eight factors focus on the borrower's capacity to repay.",
+      "c": "Credit history is one of the eight ATR factors; ECOA does not bar considering it as a legitimate underwriting factor.",
+      "d": "ATR requires the payment at the fully indexed rate (or the maximum in the first five years), not the introductory teaser rate."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3439,7 +3439,7 @@
     "options": [
       {
         "id": "a",
-        "text": "That appraisals be withheld until the loan is sold on the secondary market"
+        "text": "A second appraisal on every HPML refinance, ordered by the lender at the borrower's expense"
       },
       {
         "id": "b",
@@ -3447,19 +3447,19 @@
       },
       {
         "id": "c",
-        "text": "Waiver of all TILA disclosures because the loan is higher-priced"
+        "text": "Private mortgage insurance for at least five years after consummation, even below 80% LTV"
       },
       {
         "id": "d",
-        "text": "Exemption from ability-to-repay underwriting"
+        "text": "An escrow account for taxes and insurance that the borrower may cancel after 12 months"
       }
     ],
     "correctOptionId": "b",
     "explanation": "HPML rules add escrow (and appraisal) protections on many first-lien principal-dwelling loans; ATR and TILA still apply.",
     "distractorExplanations": {
-      "a": "Appraisal-copy rights are separate; withholding until sale is not the HPML escrow rule.",
-      "c": "TILA disclosures remain required.",
-      "d": "ATR still applies to HPMLs."
+      "a": "A second appraisal applies to certain HPML flips, not every refinance, and the borrower cannot be charged for it.",
+      "c": "HPML rules require escrow for at least five years; they do not mandate private mortgage insurance.",
+      "d": "HPML escrows generally must be kept at least five years, and cancellation requires LTV under 80% and no delinquency."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3472,15 +3472,15 @@
     "options": [
       {
         "id": "a",
-        "text": "No continuing education after initial licensure ever"
+        "text": "Annual completion of 8 hours of CE, with no federal law or ethics content required"
       },
       {
         "id": "b",
-        "text": "Only social media marketing courses with no law content"
+        "text": "Completion of 20 hours of CE every two years, focused on nontraditional lending"
       },
       {
         "id": "c",
-        "text": "CE once every twenty years regardless of state rules"
+        "text": "Retaking the national test every three years instead of completing annual CE"
       },
       {
         "id": "d",
@@ -3490,9 +3490,9 @@
     "correctOptionId": "d",
     "explanation": "States set hour requirements within SAFE minimums; failure can suspend licensure.",
     "distractorExplanations": {
-      "a": "CE is ongoing under SAFE.",
-      "b": "Ethics and federal law must be covered.",
-      "c": "State renewal cycles are more frequent than twenty years."
+      "a": "The 8 annual hours must include 3 hours of federal law, 2 of ethics, and 2 on nontraditional lending.",
+      "b": "Twenty hours is the pre-licensing education minimum; SAFE CE is at least 8 hours every year, not biennial.",
+      "c": "The national test must be retaken only after a licensing lapse of five years or more; CE is the annual requirement."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3509,23 +3509,23 @@
       },
       {
         "id": "b",
-        "text": "Kept secret from borrowers and regulators"
+        "text": "Disclosed on the loan application, but omitted from advertising to avoid confusion"
       },
       {
         "id": "c",
-        "text": "Used only on personal social media with no loan tie"
+        "text": "Disclosed to the borrower verbally at application, with no written disclosure needed"
       },
       {
         "id": "d",
-        "text": "Shared with unlicensed assistants to originate loans"
+        "text": "Shared with the processor so loans can be submitted under the MLO's identifier"
       }
     ],
     "correctOptionId": "a",
     "explanation": "NMLS ID promotes accountability and consumer lookup of originator credentials.",
     "distractorExplanations": {
-      "b": "Disclosure is required on applications and ads.",
-      "c": "Loan-related use is mandated, not optional social-only.",
-      "d": "Unlicensed origination is prohibited."
+      "b": "Reg Z and state rules require the NMLS ID on key loan documents, and states generally require it in advertising too.",
+      "c": "Reg Z requires the NMLS ID in writing on the application, note, and security instrument, not just verbally.",
+      "d": "The NMLS ID belongs to the individual MLO; letting others originate under it is unlicensed activity."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3538,7 +3538,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Quoting the lowest possible rate without APR or assumptions"
+        "text": "Showing the lowest rate available to top-tier borrowers, with the APR placed in a footnote"
       },
       {
         "id": "b",
@@ -3546,19 +3546,19 @@
       },
       {
         "id": "c",
-        "text": "Promising rates the MLO cannot deliver to attract leads"
+        "text": "Listing the monthly payment and rate, with trigger-term disclosures offered upon request"
       },
       {
         "id": "d",
-        "text": "Hiding discount points and fees in fine print only after application"
+        "text": "Advertising a fixed rate that later converts to an adjustable rate, with the change disclosed only after application"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Truth in advertising and UDAAP principles prohibit bait-and-switch promotions.",
     "distractorExplanations": {
-      "a": "APR and assumptions matter in ads.",
-      "c": "Unavailable teaser rates are misleading.",
-      "d": "Material costs must be clear upfront."
+      "a": "Reg Z requires the APR with equal prominence when a rate is stated, and rates must be reasonably available, not top-tier.",
+      "c": "Payment amounts are trigger terms, so required disclosures must appear in the ad itself, not on request.",
+      "d": "Ads must clearly disclose rate changes; hiding an ARM conversion until after application is misleading."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3571,11 +3571,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only optional company style guides with no legal effect"
+        "text": "RESPA Section 8 rules prohibiting referral fees between the MLO and the borrower"
       },
       {
         "id": "b",
-        "text": "The borrower's right to choose any paint color for the home"
+        "text": "HMDA rules requiring the MLO to report the higher-cost loan to regulators as a steering violation"
       },
       {
         "id": "c",
@@ -3583,15 +3583,15 @@
       },
       {
         "id": "d",
-        "text": "Requirements to provide flood maps"
+        "text": "SAFE Act rules capping MLO commissions at a fixed percentage of the loan amount"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Steering for compensation harms borrowers and triggers RESPA/TILA/ECOA scrutiny.",
     "distractorExplanations": {
-      "a": "Steering is a legal compliance issue.",
-      "b": "Paint color is unrelated.",
-      "d": "Flood maps are disclosure-related, not steering defenses."
+      "a": "Section 8 targets kickbacks among settlement providers; steering for higher pay is addressed by LO comp and fair lending rules.",
+      "b": "HMDA collects pricing data for analysis; it does not classify individual loans as steering violations.",
+      "d": "The SAFE Act governs licensing and does not cap commissions; steering is governed by Reg Z anti-steering rules."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3604,15 +3604,15 @@
     "options": [
       {
         "id": "a",
-        "text": "No written disclosures because verbal summaries suffice"
+        "text": "A Good Faith Estimate early and a HUD-1 settlement statement one day before closing"
       },
       {
         "id": "b",
-        "text": "Only the seller's net sheet with no loan terms"
+        "text": "The Closing Disclosure early, with the Loan Estimate delivered at the closing table"
       },
       {
         "id": "c",
-        "text": "Post-closing disclosures alone without a Loan Estimate"
+        "text": "The Loan Estimate early, with the Closing Disclosure delivered after funding"
       },
       {
         "id": "d",
@@ -3622,9 +3622,9 @@
     "correctOptionId": "d",
     "explanation": "Timely LE/CD delivery is a core consumer protection under TRID.",
     "distractorExplanations": {
-      "a": "Written TRID disclosures are mandatory.",
-      "b": "Seller net sheets do not replace LE/CD.",
-      "c": "LE must precede consummation."
+      "a": "The GFE and HUD-1 were replaced by the LE and CD for most closed-end mortgages in October 2015.",
+      "b": "The order is reversed: the LE comes within 3 business days of application and the CD at least 3 business days before closing.",
+      "c": "The CD must be received before consummation, at least three business days ahead, not after funding."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3637,27 +3637,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A timely AfBA disclosure of the relationship and estimated charges, without treating disclosure as a license to require that title company"
+        "text": "A timely AfBA disclosure of the relationship and estimated charges"
       },
       {
         "id": "b",
-        "text": "That the borrower must use the affiliate once any disclosure is given"
+        "text": "An AfBA disclosure, after which the borrower may be required to use the affiliate"
       },
       {
         "id": "c",
-        "text": "The MLO verbally prefers the affiliate with no written disclosure"
+        "text": "A verbal mention of the affiliation at closing, with the charges shown on the CD"
       },
       {
         "id": "d",
-        "text": "The affiliate may charge any amount with no estimate disclosed"
+        "text": "A disclosure of the relationship, with referral fees paid to the MLO per closed file"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "AfBA disclosures explain the relationship and charges; RESPA still generally bars requiring a particular title company.",
+    "explanation": "AfBA disclosures explain the relationship and charges; RESPA still generally bars requiring a particular title company, so disclosure is not a license to require it.",
     "distractorExplanations": {
-      "b": "Disclosure does not authorize mandatory use of an affiliated title company.",
-      "c": "Verbal preference alone is insufficient.",
-      "d": "Estimated charges must be disclosed."
+      "b": "Disclosure does not authorize mandatory use; RESPA generally bars requiring an affiliated title company as a condition.",
+      "c": "The AfBA disclosure must be written and given at or before the referral, not verbally at closing.",
+      "d": "AfBA compliance allows ownership returns, not per-referral payments; fees for referrals remain Section 8 kickbacks."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3670,27 +3670,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Paying an originator a stable commission from the lender in compliance with the rule"
+        "text": "Paying originators a fixed percentage of the loan amount on each closed loan"
       },
       {
         "id": "b",
-        "text": "Varying originator compensation based on loan terms or conditions when the variation benefits the originator"
+        "text": "Varying originator compensation based on loan terms or conditions"
       },
       {
         "id": "c",
-        "text": "Disclosing compensation to the borrower where required"
+        "text": "Paying originators more for higher loan volume or a larger number of closings"
       },
       {
         "id": "d",
-        "text": "Using lender-paid compensation with proper disclosure"
+        "text": "Reducing originator compensation to cover an unforeseen closing cost increase"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Comp may not be tied to rate, price, or product to steer for higher pay.",
     "distractorExplanations": {
-      "a": "Flat lender-paid comp can be compliant.",
-      "c": "Disclosure is required under TILA.",
-      "d": "Lender-paid comp is allowed when structured properly."
+      "a": "A fixed percentage of the loan amount is permitted (with small-loan limits); the ban is on comp that varies with loan terms.",
+      "c": "Volume-based compensation is permitted because volume is not a loan term; terms such as rate or fees cannot drive pay.",
+      "d": "Reg Z allows an originator to reduce comp to cover unforeseen increases in third-party settlement costs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3703,11 +3703,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Tell the appraiser the value needed to close the loan"
+        "text": "Share the contract price and target value so the appraiser can confirm it"
       },
       {
         "id": "b",
-        "text": "Withhold payment unless the appraisal meets a predetermined number"
+        "text": "Select appraisers based on how often their values support the contract price"
       },
       {
         "id": "c",
@@ -3715,15 +3715,15 @@
       },
       {
         "id": "d",
-        "text": "Select only appraisers who guarantee highest values"
+        "text": "Review the appraisal and adjust the value if comparable sales seem too low"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Appraiser independence rules under Dodd-Frank and USPAP ethics prohibit undue influence.",
     "distractorExplanations": {
-      "a": "Predetermined values violate independence.",
-      "b": "Payment threats compromise independence.",
-      "d": "Value guarantees are prohibited."
+      "a": "Providing a target value to hit is undue influence; sharing the contract is fine, but no value should be suggested.",
+      "b": "Choosing appraisers for hitting values is a classic independence violation under Reg Z valuation rules.",
+      "d": "Only the appraiser may change a value; originators can request reconsideration of value with data but cannot alter the report."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3736,15 +3736,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Submitting the file unchanged to meet production quotas"
+        "text": "Submitting the file and letting quality control catch the misstatement after closing"
       },
       {
         "id": "b",
-        "text": "Encouraging the borrower to inflate income"
+        "text": "Having the borrower sign a corrected 1003 at closing while underwriting still relies on the original"
       },
       {
         "id": "c",
-        "text": "Deleting adverse credit tradelines from the repository personally"
+        "text": "Telling the borrower about the issue but leaving it up to them whether to correct the file before submission"
       },
       {
         "id": "d",
@@ -3754,9 +3754,9 @@
     "correctOptionId": "d",
     "explanation": "Fraudulent misrepresentation exposes the MLO, company, and borrower to civil and criminal liability.",
     "distractorExplanations": {
-      "a": "Quotas do not excuse fraud.",
-      "b": "Income inflation is mortgage fraud.",
-      "c": "Altering credit reports is unlawful."
+      "a": "Knowingly passing false data to underwriting and relying on post-closing QC makes the MLO complicit in fraud.",
+      "b": "Leaving underwriting with the false original means the decision still rests on misstated data; corrections must come first.",
+      "c": "The MLO cannot submit known false information even if the borrower declines to fix it; escalation and correction are required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3769,27 +3769,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Denying or limiting credit in geographic areas based on prohibited characteristics rather than individual risk"
+        "text": "Denying or limiting credit in geographic areas based on prohibited characteristics"
       },
       {
         "id": "b",
-        "text": "Drawing hazard insurance maps for flood zones"
+        "text": "Charging higher rates to individual borrowers based on their race rather than credit risk"
       },
       {
         "id": "c",
-        "text": "Using legitimate geographic risk data alone without discriminatory intent or effect"
+        "text": "Pricing loans in flood zones higher based on FEMA maps and insurance costs"
       },
       {
         "id": "d",
-        "text": "Marketing only to borrowers who pre-qualify under neutral criteria"
+        "text": "Steering minority buyers toward certain neighborhoods during the home search"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Redlining is illegal discrimination in lending patterns, not neutral risk-based marketing.",
     "distractorExplanations": {
-      "b": "Flood maps are regulatory tools.",
-      "c": "Neutral criteria marketing can be lawful.",
-      "d": "Redlining targets protected class geography abuse."
+      "b": "Individual pricing discrimination is disparate treatment; redlining refers to excluding or limiting credit in whole areas.",
+      "c": "Pricing for documented geographic hazards is a legitimate risk factor, not discrimination based on neighborhood demographics.",
+      "d": "Directing buyers toward or away from neighborhoods is real estate steering under the Fair Housing Act, not lending redlining."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3802,7 +3802,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Clear TRID disclosures and documented ATR analysis"
+        "text": "A rate/term refinance that lowers the rate and pays modest documented fees"
       },
       {
         "id": "b",
@@ -3810,19 +3810,19 @@
       },
       {
         "id": "c",
-        "text": "Fixed-rate fully amortizing loans with transparent costs"
+        "text": "A cash-out refinance used to consolidate high-rate debt with disclosed costs"
       },
       {
         "id": "d",
-        "text": "Providing adverse action notices when credit is denied"
+        "text": "Offering an ARM with clear disclosure of caps, index, margin, and worst case"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Flipping and fee packing harm vulnerable borrowers and trigger UDAAP/enforcement action.",
     "distractorExplanations": {
-      "a": "TRID transparency is protective, not predatory.",
-      "c": "Transparent fixed loans are standard.",
-      "d": "Adverse action notices are fair lending compliance."
+      "a": "A transparent rate reduction with documented fees provides a net tangible benefit; that is ordinary, not predatory, lending.",
+      "c": "Debt consolidation with disclosed costs can be legitimate; predatory lending involves flipping, fee packing, or concealment.",
+      "d": "Fully disclosed ARMs are legitimate products; predatory lending involves equity stripping and hidden or excessive fees."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3835,11 +3835,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No notice because financial privacy is unlimited"
+        "text": "A notice only when NPI is shared with affiliates, with no notice owed to new customers at account opening"
       },
       {
         "id": "b",
-        "text": "Sharing NPI with any marketer without restriction"
+        "text": "Written opt-in consumer consent before any NPI is shared with nonaffiliated third parties for marketing"
       },
       {
         "id": "c",
@@ -3847,15 +3847,15 @@
       },
       {
         "id": "d",
-        "text": "Destroying privacy policies after closing"
+        "text": "Annual privacy notices that customers must sign and return before closing"
       }
     ],
     "correctOptionId": "c",
     "explanation": "GLBA governs nonpublic personal information handling and affiliate sharing rules.",
     "distractorExplanations": {
-      "a": "Privacy notices are mandatory.",
-      "b": "NPI marketing often needs opt-out/consent.",
-      "d": "Policies must remain available."
+      "a": "GLBA requires an initial notice at the start of the customer relationship; affiliate sharing is covered separately by FCRA.",
+      "b": "GLBA uses an opt-out model for most nonaffiliated sharing, not opt-in consent (some states impose stricter rules).",
+      "d": "Privacy notices are delivered, not signed and returned; annual notices can be skipped if policies are unchanged and sharing is limited."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3868,15 +3868,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Operate nationwide with no state oversight ever"
+        "text": "Hold a single national NMLS license that replaces separate state licensing"
       },
       {
         "id": "b",
-        "text": "Originate loans while license is voluntarily expired"
+        "text": "Register through NMLS once, with background checks and credit reports required only at initial application"
       },
       {
         "id": "c",
-        "text": "Delegate licensed activities to unregistered assistants freely"
+        "text": "Obtain federal registration whether employed by a bank or by a nonbank mortgage company"
       },
       {
         "id": "d",
@@ -3886,9 +3886,9 @@
     "correctOptionId": "d",
     "explanation": "Dual state and federal registration enforces standards through NMLS.",
     "distractorExplanations": {
-      "a": "State oversight remains central.",
-      "b": "Expired licenses prohibit origination.",
-      "c": "Licensed activities require proper registration."
+      "a": "NMLS is a registry and system of record; licenses are still issued by each state where the MLO originates.",
+      "b": "Licensing requires ongoing renewal, CE, and updated background/credit authorizations, not a one-time check.",
+      "c": "Federal registration applies to depository-institution employees; nonbank MLOs need a state license."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3901,27 +3901,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Which closing cost increases require lender credits or revised disclosures before consummation"
+        "text": "Which closing cost increases over the Loan Estimate are allowed or must be cured"
       },
       {
         "id": "b",
-        "text": "Which paint colors are allowed in the living room"
+        "text": "Which fees count toward the 3% points-and-fees cap that applies to Qualified Mortgages"
       },
       {
         "id": "c",
-        "text": "Which borrowers may skip the Closing Disclosure entirely"
+        "text": "Which APR changes require a corrected CD and a new three-business-day waiting period"
       },
       {
         "id": "d",
-        "text": "Which MLOs receive higher commissions automatically"
+        "text": "Which settlement providers the borrower may shop for after receiving the LE"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Zero-tolerance fees include transfer taxes and fees paid to affiliate lenders; others have 10% aggregate or unlimited categories.",
+    "explanation": "TRID tolerances limit how much charges may rise from the Loan Estimate. Zero tolerance covers fees paid to the creditor, mortgage broker, or an affiliate of either, transfer taxes, and services the borrower cannot shop for; 10% aggregate covers recording fees and shoppable services chosen from the creditor's list. Excess must be refunded within 60 days of consummation.",
     "distractorExplanations": {
-      "b": "Paint is unrelated to TRID tolerances.",
-      "c": "CD cannot be skipped.",
-      "d": "Comp is not defined by tolerance buckets."
+      "b": "The points-and-fees cap is a QM/ATR test; tolerance buckets limit how much LE fees may rise at closing.",
+      "c": "APR accuracy redisclosure triggers a new three-day wait; tolerance buckets govern increases in specific closing fees.",
+      "d": "Shoppable status influences the bucket, but the buckets themselves classify allowable fee increases and cures."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3934,7 +3934,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Fully documented QM loans with clear LE/CD and no steering"
+        "text": "Conduct that violates a state licensing rule, such as a late NMLS renewal filing"
       },
       {
         "id": "b",
@@ -3942,19 +3942,19 @@
       },
       {
         "id": "c",
-        "text": "Providing interpreters when requested for limited English proficiency applicants"
+        "text": "Any lending practice that results in a borrower default or foreclosure later on"
       },
       {
         "id": "d",
-        "text": "Explaining ARM payment shock before closing"
+        "text": "Charging fees that exceed the 10% tolerance bucket at closing on the CD"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CFPB UDAAP authority addresses hidden traps and abusive sales tactics.",
     "distractorExplanations": {
-      "a": "Transparent QM processes are compliant behavior.",
-      "c": "Language access supports fair treatment.",
-      "d": "ARM shock disclosure prevents deception."
+      "a": "Late renewals are licensing matters handled by state regulators; UDAAP targets misleading or exploitative conduct toward consumers.",
+      "c": "Default alone does not prove UDAAP; the standard looks at deceptive, unfair, or abusive conduct, not loan outcomes.",
+      "d": "Tolerance violations are TRID disclosure issues cured with refunds; UDAAP covers deceptive, unfair, or abusive conduct."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

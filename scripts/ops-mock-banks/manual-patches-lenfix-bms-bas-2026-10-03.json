@@ -1,0 +1,737 @@
+{
+ "bms-bas-readiness-check": {
+  "bms-bas-readiness-check-bacnet-networking-001": {
+   "options": {
+    "a": "Interoperable communication between building automation devices from different manufacturers",
+    "b": "Proprietary communication between controllers from one manufacturer's own product line.",
+    "c": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings.",
+    "d": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope."
+   },
+   "distractorExplanations": {
+    "b": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate.",
+    "c": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet.",
+    "d": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-003": {
+   "options": {
+    "a": "Master/slave register polling between PLCs and power meters on industrial RS-485 serial networks.",
+    "b": "Defining acceptable thermal comfort conditions for occupants in conditioned spaces.",
+    "c": "Interoperable communication between building automation devices from different manufacturers.",
+    "d": "Low-power wireless mesh networking for battery-powered lighting and smart-home devices."
+   },
+   "distractorExplanations": {
+    "a": "Describes Modbus RTU register polling; BACnet is an object-based peer protocol built for building automation.",
+    "b": "That is ASHRAE Standard 55 (thermal environmental conditions for occupancy), not ASHRAE 135 BACnet.",
+    "d": "Describes a Zigbee-style wireless mesh; BACnet defines building automation objects and services over many data links."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-004": {
+   "options": {
+    "a": "Peer-to-peer messaging between Neuron-chip nodes on free-topology LonTalk twisted-pair channels.",
+    "b": "Defining the commissioning process that verifies HVAC systems meet the owner's project requirements.",
+    "c": "Proprietary communication between controllers from one manufacturer's own product line.",
+    "d": "Interoperable communication between building automation devices from different manufacturers."
+   },
+   "distractorExplanations": {
+    "a": "Describes LonWorks (LonTalk, ISO/IEC 14908), a competing building protocol, not ASHRAE 135 BACnet.",
+    "b": "That is the ASHRAE Standard 202 / Guideline 0 commissioning process, not the BACnet communication protocol.",
+    "c": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-005": {
+   "options": {
+    "a": "Interoperable communication between building automation devices from different manufacturers.",
+    "b": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings.",
+    "c": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope.",
+    "d": "Master/slave register polling between PLCs and power meters on industrial RS-485 serial networks."
+   },
+   "distractorExplanations": {
+    "b": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet.",
+    "c": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol.",
+    "d": "Describes Modbus RTU register polling; BACnet is an object-based peer protocol built for building automation."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-006": {
+   "options": {
+    "a": "Defining acceptable thermal comfort conditions for occupants in conditioned spaces.",
+    "b": "Interoperable communication between building automation devices from different manufacturers.",
+    "c": "Low-power wireless mesh networking for battery-powered lighting and smart-home devices.",
+    "d": "Peer-to-peer messaging between Neuron-chip nodes on free-topology LonTalk twisted-pair channels."
+   },
+   "distractorExplanations": {
+    "a": "That is ASHRAE Standard 55 (thermal environmental conditions for occupancy), not ASHRAE 135 BACnet.",
+    "c": "Describes a Zigbee-style wireless mesh; BACnet defines building automation objects and services over many data links.",
+    "d": "Describes LonWorks (LonTalk, ISO/IEC 14908), a competing building protocol, not ASHRAE 135 BACnet."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-007": {
+   "options": {
+    "a": "Defining the commissioning process that verifies HVAC systems meet the owner's project requirements.",
+    "b": "Proprietary communication between controllers from one manufacturer's own product line.",
+    "c": "Interoperable communication between building automation devices from different manufacturers.",
+    "d": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings."
+   },
+   "distractorExplanations": {
+    "a": "That is the ASHRAE Standard 202 / Guideline 0 commissioning process, not the BACnet communication protocol.",
+    "b": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate.",
+    "d": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-008": {
+   "options": {
+    "a": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope.",
+    "b": "Master/slave register polling between PLCs and power meters on industrial RS-485 serial networks.",
+    "c": "Defining acceptable thermal comfort conditions for occupants in conditioned spaces.",
+    "d": "Interoperable communication between building automation devices from different manufacturers."
+   },
+   "distractorExplanations": {
+    "a": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol.",
+    "b": "Describes Modbus RTU register polling; BACnet is an object-based peer protocol built for building automation.",
+    "c": "That is ASHRAE Standard 55 (thermal environmental conditions for occupancy), not ASHRAE 135 BACnet."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-009": {
+   "options": {
+    "a": "Interoperable communication between building automation devices from different manufacturers.",
+    "b": "Low-power wireless mesh networking for battery-powered lighting and smart-home devices.",
+    "c": "Peer-to-peer messaging between Neuron-chip nodes on free-topology LonTalk twisted-pair channels.",
+    "d": "Defining the commissioning process that verifies HVAC systems meet the owner's project requirements."
+   },
+   "distractorExplanations": {
+    "b": "Describes a Zigbee-style wireless mesh; BACnet defines building automation objects and services over many data links.",
+    "c": "Describes LonWorks (LonTalk, ISO/IEC 14908), a competing building protocol, not ASHRAE 135 BACnet.",
+    "d": "That is the ASHRAE Standard 202 / Guideline 0 commissioning process, not the BACnet communication protocol."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-010": {
+   "options": {
+    "a": "Proprietary communication between controllers from one manufacturer's own product line.",
+    "b": "Interoperable communication between building automation devices from different manufacturers.",
+    "c": "Defining minimum outdoor air ventilation rates for occupied zones in commercial buildings.",
+    "d": "Setting minimum energy efficiency requirements for building HVAC, lighting, and envelope."
+   },
+   "distractorExplanations": {
+    "a": "Describes a closed vendor protocol; BACnet exists precisely so devices from different manufacturers can interoperate.",
+    "c": "That is ASHRAE Standard 62.1 (ventilation for acceptable indoor air quality), not ASHRAE 135 BACnet.",
+    "d": "That is ASHRAE/IES Standard 90.1 (the energy standard), not the BACnet data communication protocol."
+   }
+  },
+  "bms-bas-readiness-check-bacnet-networking-013": {
+   "options": {
+    "a": "Routing messages between MS/TP and BACnet/IP networks",
+    "b": "Assigning unique device instances across the network",
+    "c": "Encrypting BACnet traffic between IP subnets",
+    "d": "Broadcast management across IP subnets"
+   },
+   "distractorExplanations": {
+    "a": "That is a BACnet router's job (network-layer routing between data links); a BBMD forwards broadcasts between IP subnets.",
+    "b": "Device instance numbers are configured per device by the integrator; a BBMD does not assign or manage them.",
+    "c": "Encryption comes from BACnet Secure Connect (TLS), not from a BBMD, which only redistributes broadcast messages."
+   },
+   "explanation": "Broadcast management across IP subnets. Routers block IP broadcasts, so a BBMD in each subnet forwards BACnet broadcasts such as Who-Is/I-Am to its peers (Broadcast Distribution Table)."
+  },
+  "bms-bas-readiness-check-bacnet-networking-014": {
+   "options": {
+    "a": "A twisted-pair RS-485 style LAN for BACnet",
+    "b": "An Ethernet-based UDP transport for BACnet",
+    "c": "A free-topology LonTalk channel for LonWorks",
+    "d": "A two-wire 4–20 mA analog loop for sensors"
+   },
+   "distractorExplanations": {
+    "b": "That describes BACnet/IP (UDP port 47808 on Ethernet), not MS/TP, which runs on an RS-485 twisted-pair bus.",
+    "c": "LonTalk free-topology channels belong to LonWorks; MS/TP is a BACnet data link on RS-485 twisted pair.",
+    "d": "A 4–20 mA loop is a single analog signal circuit, not a multi-drop token-passing LAN like BACnet MS/TP."
+   },
+   "explanation": "A twisted-pair RS-485 style LAN for BACnet. MS/TP (Master-Slave/Token-Passing) daisy-chains field controllers on shielded twisted pair with end-of-line termination and common baud rates such as 38.4 or 76.8 kbps."
+  },
+  "bms-bas-readiness-check-bacnet-networking-015": {
+   "options": {
+    "a": "Alarm floods by suppressing repeat events",
+    "b": "Controller scan time by skipping PID updates",
+    "c": "Wiring runs by sharing one MS/TP trunk",
+    "d": "Polling traffic by eventing changes"
+   },
+   "distractorExplanations": {
+    "a": "Alarm floods are handled by alarm delays, priorities, and suppression logic; COV only changes how values are reported.",
+    "b": "COV is a network reporting service; it does not change how often a controller executes its PID control loops.",
+    "c": "COV is a software subscription service and has no effect on physical MS/TP trunk layout or cable length."
+   },
+   "explanation": "Polling traffic by eventing changes. With SubscribeCOV, a device sends a notification only when a value changes by more than its COV increment, instead of being polled on a fixed interval."
+  },
+  "bms-bas-readiness-check-hvac-control-002": {
+   "options": {
+    "a": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall.",
+    "b": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits.",
+    "c": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow.",
+    "d": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy."
+   },
+   "distractorExplanations": {
+    "a": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat.",
+    "c": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset.",
+    "d": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-003": {
+   "options": {
+    "a": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling.",
+    "b": "Supply fan speed is increased to raise airflow so the chilled water valve can close further.",
+    "c": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits.",
+    "d": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity."
+   },
+   "distractorExplanations": {
+    "a": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead.",
+    "b": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls.",
+    "d": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-004": {
+   "options": {
+    "a": "Economizer is locked out and mechanical cooling holds the design discharge air temperature.",
+    "b": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall.",
+    "c": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow.",
+    "d": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits."
+   },
+   "distractorExplanations": {
+    "a": "Economizer lockout depends on outdoor air conditions, not on falling cooling load, and SAT reset raises the setpoint.",
+    "b": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat.",
+    "c": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-005": {
+   "options": {
+    "a": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits.",
+    "b": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy.",
+    "c": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling.",
+    "d": "Supply fan speed is increased to raise airflow so the chilled water valve can close further."
+   },
+   "distractorExplanations": {
+    "b": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum.",
+    "c": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead.",
+    "d": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-006": {
+   "options": {
+    "a": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity.",
+    "b": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits.",
+    "c": "Economizer is locked out and mechanical cooling holds the design discharge air temperature.",
+    "d": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall."
+   },
+   "distractorExplanations": {
+    "a": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset.",
+    "c": "Economizer lockout depends on outdoor air conditions, not on falling cooling load, and SAT reset raises the setpoint.",
+    "d": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-007": {
+   "options": {
+    "a": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow.",
+    "b": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy.",
+    "c": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits.",
+    "d": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling."
+   },
+   "distractorExplanations": {
+    "a": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset.",
+    "b": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum.",
+    "d": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-008": {
+   "options": {
+    "a": "Supply fan speed is increased to raise airflow so the chilled water valve can close further.",
+    "b": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity.",
+    "c": "Economizer is locked out and mechanical cooling holds the design discharge air temperature.",
+    "d": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits."
+   },
+   "distractorExplanations": {
+    "a": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls.",
+    "b": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset.",
+    "c": "Economizer lockout depends on outdoor air conditions, not on falling cooling load, and SAT reset raises the setpoint."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-009": {
+   "options": {
+    "a": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits.",
+    "b": "Supply air temperature setpoint is reset downward to increase dehumidification as zone loads fall.",
+    "c": "Duct static pressure setpoint is raised so every VAV box can reach its maximum cooling airflow.",
+    "d": "Minimum outdoor air damper position is lowered below the ventilation minimum to save cooling energy."
+   },
+   "distractorExplanations": {
+    "b": "Reverses the reset direction: as cooling load drops, SAT is raised (not lowered) to cut chiller energy and reheat.",
+    "c": "Static pressure reset lowers the setpoint as boxes close at low load, and it is a different loop from SAT reset.",
+    "d": "Dropping outdoor air below the required ventilation minimum violates ASHRAE 62.1; SAT reset does not touch the OA minimum."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-010": {
+   "options": {
+    "a": "Discharge air setpoint stays fixed at 55°F and zone VAV reheat valves open to offset overcooling.",
+    "b": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits.",
+    "c": "Supply fan speed is increased to raise airflow so the chilled water valve can close further.",
+    "d": "Chilled water supply setpoint is lowered at the plant to hold the coil at full capacity."
+   },
+   "distractorExplanations": {
+    "a": "Describes a fixed-DAT design that wastes reheat at low load; a reset sequence raises the setpoint instead.",
+    "c": "Raising fan speed at low load wastes fan energy; reset sequences reduce airflow and raise SAT as load falls.",
+    "d": "Lowering CHW supply temperature at low load is the opposite of plant reset and does not describe AHU SAT reset."
+   }
+  },
+  "bms-bas-readiness-check-hvac-control-011": {
+   "options": {
+    "a": "Overshoot from sudden setpoint changes",
+    "b": "Rate of change of the error",
+    "c": "Instant response to current error",
+    "d": "Steady-state error over time"
+   },
+   "distractorExplanations": {
+    "a": "Damping overshoot on setpoint changes is the derivative term's role; integral action can add overshoot (windup).",
+    "b": "Responding to the rate of change of error is the derivative (D) term, not the integral (I) term.",
+    "c": "Output proportional to the present error is the proportional (P) term, which alone leaves steady-state offset."
+   },
+   "explanation": "Steady-state error over time. Proportional-only control leaves an offset from setpoint; the integral term accumulates error over time and keeps adjusting output until the offset is removed."
+  },
+  "bms-bas-readiness-check-hvac-control-012": {
+   "options": {
+    "a": "Increase dehumidification at part load",
+    "b": "Raise duct static pressure at low load",
+    "c": "Hold discharge air at a fixed 55°F",
+    "d": "Reduce energy while meeting loads"
+   },
+   "distractorExplanations": {
+    "a": "Raising SAT reduces coil dehumidification, which is why resets are capped by humidity limits; it does not increase it.",
+    "b": "Confuses SAT reset with static pressure reset, which lowers (not raises) duct pressure as VAV demand falls.",
+    "c": "A fixed 55°F discharge is the non-reset baseline that SAT reset is designed to improve on at part load."
+   },
+   "explanation": "Reduce energy while meeting loads. Raising SAT at part load cuts chiller energy and VAV reheat, while the highest-demand zone and humidity limits cap how far the reset can go."
+  },
+  "bms-bas-readiness-check-hvac-control-013": {
+   "options": {
+    "a": "Raise duct pressure to cut VAV hunting",
+    "b": "Hold supply airflow at design max",
+    "c": "Lower chilled water pump head at low load",
+    "d": "Lower fan energy when demand allows"
+   },
+   "distractorExplanations": {
+    "a": "Static pressure reset lowers duct pressure; excess pressure tends to cause VAV damper hunting rather than cure it.",
+    "b": "Holding design maximum airflow is the opposite of reset; static pressure reset lets the fan slow as VAV demand drops.",
+    "c": "That is pump differential pressure reset on the water side, a sibling strategy, not duct static pressure reset."
+   },
+   "explanation": "Lower fan energy when demand allows. Trim-and-respond logic lowers the duct static setpoint until the most-open VAV damper is nearly fully open, so the VFD slows and fan power drops roughly with the cube of speed."
+  },
+  "bms-bas-readiness-check-hvac-control-014": {
+   "options": {
+    "a": "Mechanical cooling running during occupied hours",
+    "b": "Bringing in air that cannot cool economically",
+    "c": "Coil freezing when mixed air drops below 35°F",
+    "d": "Demand-controlled ventilation raising OA on high CO2"
+   },
+   "distractorExplanations": {
+    "a": "Lockout ends free cooling and hands the load to mechanical cooling; it does not stop compressors from running.",
+    "c": "Coil freeze protection is the low-limit freezestat's job, not the economizer high-limit lockout.",
+    "d": "DCV still raises outdoor air on high CO2 during lockout; lockout only stops economizer free-cooling above the minimum."
+   },
+   "explanation": "Bringing in air that cannot cool economically. High-limit lockout (fixed or differential dry-bulb or enthalpy) returns the outdoor air damper to minimum when outdoor air is warmer or more humid than return air."
+  },
+  "bms-bas-readiness-check-hvac-control-015": {
+   "options": {
+    "a": "A setpoint deadband that is set too wide",
+    "b": "A derivative term set to zero on the loop",
+    "c": "Normal cycling of a well-tuned PI loop at low load",
+    "d": "Poor tuning, oversized valves, or sensor issues"
+   },
+   "distractorExplanations": {
+    "a": "A wider deadband reduces cycling; hunting is linked to deadbands that are too narrow or gains that are too high.",
+    "b": "Most HVAC loops run PI with derivative at zero by design; zero D alone does not cause valve hunting.",
+    "c": "A well-tuned loop settles at a steady position; continuous oscillation is a fault symptom, not normal behavior."
+   },
+   "explanation": "Poor tuning, oversized valves, or sensor issues. High gain, an oversized valve working near closed, a noisy or poorly located sensor, or actuator hysteresis all make a loop oscillate."
+  },
+  "bms-bas-readiness-check-platform-ops-002": {
+   "options": {
+    "a": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed.",
+    "b": "They help operators focus on critical faults and maintain an audit trail of response actions.",
+    "c": "They let alarms clear on return to normal so operators do not need to record any response.",
+    "d": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system."
+   },
+   "distractorExplanations": {
+    "a": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones.",
+    "c": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep.",
+    "d": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-003": {
+   "options": {
+    "a": "They lower controller CPU load by limiting how often BACnet devices report changes of value.",
+    "b": "They replace trend logs by storing each alarm timestamp as the historical performance record.",
+    "c": "They help operators focus on critical faults and maintain an audit trail of response actions.",
+    "d": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered."
+   },
+   "distractorExplanations": {
+    "a": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported.",
+    "b": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance.",
+    "d": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-004": {
+   "options": {
+    "a": "They transfer fault response to the controls vendor, who acknowledges alarms under the warranty.",
+    "b": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed.",
+    "c": "They let alarms clear on return to normal so operators do not need to record any response.",
+    "d": "They help operators focus on critical faults and maintain an audit trail of response actions."
+   },
+   "distractorExplanations": {
+    "a": "Acknowledgment belongs to the operating staff on duty; vendor warranty support does not replace on-site alarm response.",
+    "b": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones.",
+    "c": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-005": {
+   "options": {
+    "a": "They help operators focus on critical faults and maintain an audit trail of response actions.",
+    "b": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system.",
+    "c": "They lower controller CPU load by limiting how often BACnet devices report changes of value.",
+    "d": "They replace trend logs by storing each alarm timestamp as the historical performance record."
+   },
+   "distractorExplanations": {
+    "b": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel.",
+    "c": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported.",
+    "d": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-006": {
+   "options": {
+    "a": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered.",
+    "b": "They help operators focus on critical faults and maintain an audit trail of response actions.",
+    "c": "They transfer fault response to the controls vendor, who acknowledges alarms under the warranty.",
+    "d": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed."
+   },
+   "distractorExplanations": {
+    "a": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended.",
+    "c": "Acknowledgment belongs to the operating staff on duty; vendor warranty support does not replace on-site alarm response.",
+    "d": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-007": {
+   "options": {
+    "a": "They let alarms clear on return to normal so operators do not need to record any response.",
+    "b": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system.",
+    "c": "They help operators focus on critical faults and maintain an audit trail of response actions.",
+    "d": "They lower controller CPU load by limiting how often BACnet devices report changes of value."
+   },
+   "distractorExplanations": {
+    "a": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep.",
+    "b": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel.",
+    "d": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-008": {
+   "options": {
+    "a": "They replace trend logs by storing each alarm timestamp as the historical performance record.",
+    "b": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered.",
+    "c": "They transfer fault response to the controls vendor, who acknowledges alarms under the warranty.",
+    "d": "They help operators focus on critical faults and maintain an audit trail of response actions."
+   },
+   "distractorExplanations": {
+    "a": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance.",
+    "b": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended.",
+    "c": "Acknowledgment belongs to the operating staff on duty; vendor warranty support does not replace on-site alarm response."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-009": {
+   "options": {
+    "a": "They help operators focus on critical faults and maintain an audit trail of response actions.",
+    "b": "They route every alarm to the same on-call pager at equal priority so no fault is ever missed.",
+    "c": "They let alarms clear on return to normal so operators do not need to record any response.",
+    "d": "They satisfy NFPA 72 signaling rules so the BMS can serve as the building's fire alarm system."
+   },
+   "distractorExplanations": {
+    "b": "Equal-priority paging creates alarm floods and fatigue; prioritization exists to separate critical faults from nuisance ones.",
+    "c": "Clearing on return to normal without acknowledgment removes the audit trail the acknowledgment workflow is meant to keep.",
+    "d": "NFPA 72 governs listed fire alarm systems; a BMS alarm workflow does not make the BMS a code-compliant fire alarm panel."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-010": {
+   "options": {
+    "a": "They lower controller CPU load by limiting how often BACnet devices report changes of value.",
+    "b": "They help operators focus on critical faults and maintain an audit trail of response actions.",
+    "c": "They replace trend logs by storing each alarm timestamp as the historical performance record.",
+    "d": "They let operators shelve recurring alarms indefinitely so the alarm summary stays uncluttered."
+   },
+   "distractorExplanations": {
+    "a": "Confuses alarm workflows with COV increments and subscriptions, which govern how often values are reported.",
+    "c": "Alarm history records discrete events, not continuous values; trend logs are still needed to diagnose performance.",
+    "d": "Indefinite shelving hides real faults; shelving should be time-limited, reviewed, and logged rather than open-ended."
+   }
+  },
+  "bms-bas-readiness-check-platform-ops-011": {
+   "options": {
+    "a": "Equal priority so every alarm pages on-call",
+    "b": "Disabled overnight, including life-safety interlocks",
+    "c": "Engineered so operators see actionable faults",
+    "d": "Configured by the vendor at default factory values"
+   },
+   "distractorExplanations": {
+    "a": "Equal priority floods on-call staff with nuisance alarms and buries critical faults; priority must be engineered.",
+    "b": "Unoccupied suppression may apply to comfort alarms, but critical equipment and life-safety alarms must stay active.",
+    "d": "Factory defaults do not reflect site criticality or the sequence of operations; priorities must be engineered per site."
+   },
+   "explanation": "Engineered so operators see actionable faults. Priorities, delays, and conditional suppression (e.g., no zone alarms when the AHU is off) prevent alarm floods that hide critical faults."
+  },
+  "bms-bas-readiness-check-platform-ops-012": {
+   "options": {
+    "a": "Resolution versus storage/network load",
+    "b": "Alarm delay versus operator workload",
+    "c": "Controller scan time versus PID loop gain",
+    "d": "Sensor accuracy versus calibration interval"
+   },
+   "distractorExplanations": {
+    "b": "Alarm delays are tuned against nuisance trips; trend sample rate is a data-resolution versus storage decision.",
+    "c": "Scan time and loop gain affect control stability; trend sampling is a separate historian setting.",
+    "d": "Accuracy and calibration interval are maintenance trade-offs, not what trend sample rate selection balances."
+   },
+   "explanation": "Resolution versus storage/network load. Fast intervals catch hunting and short cycling but fill storage and add polling traffic; COV or 1–15 minute intervals suit most points."
+  },
+  "bms-bas-readiness-check-platform-ops-013": {
+   "options": {
+    "a": "A single 24/7 occupied command per AHU",
+    "b": "Occupied/unoccupied and holiday exceptions",
+    "c": "Fixed start times with optimal start disabled",
+    "d": "Overrides that run without an end time"
+   },
+   "distractorExplanations": {
+    "a": "Running 24/7 wastes energy and drops the unoccupied setback that schedules exist to provide.",
+    "c": "Optimal start is a standard energy measure; fixed early starts waste energy on mild days and start late on extreme ones.",
+    "d": "Overrides without an expiry leave equipment running indefinitely; timed overrides are the accepted practice."
+   },
+   "explanation": "Occupied/unoccupied and holiday exceptions. Weekly occupied/unoccupied periods plus calendar exceptions for holidays and special events stop equipment running on days the building is empty."
+  },
+  "bms-bas-readiness-check-platform-ops-014": {
+   "options": {
+    "a": "Shared operator logins for quick access",
+    "b": "Time limits and audit trails",
+    "c": "Permanent priority-1 manual commands",
+    "d": "Verbal approval with no written record"
+   },
+   "distractorExplanations": {
+    "a": "Shared logins break accountability because overrides cannot be traced to a person; each operator needs an account.",
+    "c": "BACnet priority 1 is reserved for Manual Life Safety; operator overrides normally use priority 8 and should expire.",
+    "d": "Verbal approval leaves no audit trail; overrides should be logged with user, reason, and expiry time."
+   },
+   "explanation": "Time limits and audit trails. Timed overrides release on their own, and the audit log records who commanded what, when, and why, so forgotten overrides do not waste energy or mask faults."
+  },
+  "bms-bas-readiness-check-platform-ops-015": {
+   "options": {
+    "a": "Static equipment images without live values",
+    "b": "Alarm counts without point values",
+    "c": "Vendor logos and floor plans as the main view",
+    "d": "Current values, setpoints, and modes clearly"
+   },
+   "distractorExplanations": {
+    "a": "Static images show layout but no live state; operators need current values to diagnose equipment.",
+    "b": "Alarm counts alone do not show how far a value is from setpoint or which mode the equipment is in.",
+    "c": "Branding and floor plans add context but are not the operational data that graphics should put first."
+   },
+   "explanation": "Current values, setpoints, and modes clearly. Good graphics put live values beside setpoints, show occupancy and override status, and flag points in alarm or manual so operators can act fast."
+  },
+  "bms-bas-readiness-check-integration-commissioning-001": {
+   "options": {
+    "a": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "b": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "c": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "distractorExplanations": {
+    "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-002": {
+   "options": {
+    "a": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter.",
+    "b": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "c": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule.",
+    "d": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
+   },
+   "distractorExplanations": {
+    "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+    "c": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+    "d": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-003": {
+   "options": {
+    "a": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "b": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "c": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "distractorExplanations": {
+    "a": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "b": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-004": {
+   "options": {
+    "a": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter.",
+    "b": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule.",
+    "c": "Every point has a trend log enabled at a one-second interval to capture the full functional test.",
+    "d": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations."
+   },
+   "distractorExplanations": {
+    "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+    "b": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+    "c": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-005": {
+   "options": {
+    "a": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "b": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "c": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "distractorExplanations": {
+    "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-006": {
+   "options": {
+    "a": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter.",
+    "b": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "c": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule.",
+    "d": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
+   },
+   "distractorExplanations": {
+    "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+    "c": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+    "d": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-007": {
+   "options": {
+    "a": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "b": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "c": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "distractorExplanations": {
+    "a": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "b": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-008": {
+   "options": {
+    "a": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter.",
+    "b": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule.",
+    "c": "Every point has a trend log enabled at a one-second interval to capture the full functional test.",
+    "d": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations."
+   },
+   "distractorExplanations": {
+    "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+    "b": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+    "c": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-009": {
+   "options": {
+    "a": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "b": "Each controller answers a BACnet Who-Is broadcast and reports the latest vendor firmware revision.",
+    "c": "Graphic values refresh on screen within the polling interval configured in the front-end driver.",
+    "d": "Point names follow the owner's naming convention and appear on the correct floor-plan graphic."
+   },
+   "distractorExplanations": {
+    "b": "Device discovery and firmware checks are network-level steps; they do not prove a point's mapping, scaling, or sequence behavior.",
+    "c": "Screen refresh only shows the front end is polling; it does not verify the point is wired, scaled, or commanded correctly.",
+    "d": "Naming and graphic placement are documentation checks; functional verification of I/O, scaling, and authority is still required."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-010": {
+   "options": {
+    "a": "Sensor readings fall inside the nominal ranges on the submittal data sheets, without a reference meter.",
+    "b": "Correct I/O mapping, scaling, command authority, and alarm routing match the sequence of operations.",
+    "c": "Controller panels are labeled and the network riser diagram matches the as-built IP address schedule.",
+    "d": "Every point has a trend log enabled at a one-second interval to capture the full functional test."
+   },
+   "distractorExplanations": {
+    "a": "A plausible-range check is not calibration; commissioning compares each reading against a reference instrument.",
+    "c": "Panel labels and riser drawings are as-built documentation; they do not verify point-level control or alarm routing.",
+    "d": "One-second trends on every point overload storage and networks and still do not verify mapping, scaling, or authority."
+   }
+  },
+  "bms-bas-readiness-check-integration-commissioning-011": {
+   "options": {
+    "a": "Graphic links and colors before wiring checks",
+    "b": "Sensor/actuator wiring and direction before sequences",
+    "c": "Sequence logic before any field wiring tests",
+    "d": "Network IP and BACnet device instance assignments"
+   },
+   "distractorExplanations": {
+    "a": "Graphics review is a later front-end task; point-to-point checkout proves field wiring and device response first.",
+    "c": "Reverses the order: wiring and device direction are proven before functional sequence testing begins.",
+    "d": "Addressing is a network checkout step; point-to-point verifies each sensor and actuator end-to-end."
+   },
+   "explanation": "Sensor/actuator wiring and direction before sequences. Each input is compared to a reference reading and each output is stroked to confirm direction, range, and fail position before functional testing."
+  },
+  "bms-bas-readiness-check-integration-commissioning-012": {
+   "options": {
+    "a": "The unit starts and runs on its local panel",
+    "b": "Each device's vendor ID and model are reported",
+    "c": "Trend files stay within the storage limit",
+    "d": "Control logic matches the written SOO"
+   },
+   "distractorExplanations": {
+    "a": "Start-up at the local panel is a pre-functional check; SOO testing proves the automatic control logic.",
+    "b": "Vendor ID and model come from device discovery, not from testing the control sequence.",
+    "c": "Trend storage is a historian setting; it does not show that the control logic follows the written sequence."
+   },
+   "explanation": "Control logic matches the written SOO. Functional tests force each mode (occupied, unoccupied, economizer, failure/safeties) and compare the system's response with the written sequence of operations."
+  },
+  "bms-bas-readiness-check-integration-commissioning-013": {
+   "options": {
+    "a": "Estimated kWh from nameplate ratings",
+    "b": "Protocol gateways/mapping with scaled units",
+    "c": "Unscaled raw register values as-is",
+    "d": "Pulse inputs left uncalibrated against the meter"
+   },
+   "distractorExplanations": {
+    "a": "Nameplate estimates are not metered data; meter integration reads actual registers through a gateway or driver.",
+    "c": "Raw registers often need multipliers, CT ratios, or unit conversion; unscaled values give wrong readings.",
+    "d": "Pulse inputs need the correct pulse weight checked against the meter display, or totals drift from billing data."
+   },
+   "explanation": "Protocol gateways/mapping with scaled units. Meters on Modbus, M-Bus, or pulse outputs are mapped into BACnet objects with correct multipliers, CT ratios, and units, then verified against the meter display."
+  },
+  "bms-bas-readiness-check-integration-commissioning-014": {
+   "options": {
+    "a": "Addressing, binding, power, and actuator status",
+    "b": "AHU discharge air setpoint and economizer mode",
+    "c": "Zone thermostat calibration and heating setpoint",
+    "d": "Duct static pressure reset logic at the AHU"
+   },
+   "distractorExplanations": {
+    "b": "Upstream AHU settings change supply air conditions but do not explain a box that ignores its own commands.",
+    "c": "A miscalibrated sensor shifts control, but a box that ignores commands points to communication, power, or actuator faults.",
+    "d": "Static pressure reset affects available airflow, not whether a box controller accepts and acts on its commands."
+   },
+   "explanation": "Addressing, binding, power, and actuator status. A VAV box that ignores commands usually has a duplicate MAC or device instance, a lost binding, no 24 VAC, or a failed or slipping damper actuator."
+  },
+  "bms-bas-readiness-check-integration-commissioning-015": {
+   "options": {
+    "a": "Logged, assigned, and closed with evidence",
+    "b": "Closed once the contractor says it is fixed",
+    "c": "Reported verbally at the final walkthrough",
+    "d": "Cleared by a controller reboot and retest"
+   },
+   "distractorExplanations": {
+    "b": "Closing on a verbal claim skips verification; issues close only after a retest documents the fix.",
+    "c": "Verbal reports at walkthrough leave no tracking record; issues belong in a written Cx issues log.",
+    "d": "A reboot can mask the symptom without fixing the cause; the issue still needs logging and root-cause closure."
+   },
+   "explanation": "Logged, assigned, and closed with evidence. The commissioning issues log records each deficiency, the responsible party, and the retest or trend evidence used to close it."
+  }
+ }
+}

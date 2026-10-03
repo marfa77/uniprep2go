@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Minimum intake to prevent death"
+        "text": "Average daily intake estimated to meet the needs of half (50%) of healthy individuals in a life-stage group"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Upper limit before toxicity for all nutrients identically"
+        "text": "Highest average daily intake likely to pose no risk of adverse health effects for most healthy individuals"
       },
       {
         "id": "d",
-        "text": "A restaurant portion size standard"
+        "text": "Observed average intake of apparently healthy people, used when evidence is insufficient to set a requirement"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The Recommended Dietary Allowance (RDA) is the average daily dietary nutrient intake level sufficient to meet the nutrient requirements of nearly all (97–98%) healthy individuals in a particular life stage and gender group. It is a key guideline for ensuring adequate nutrient intake for the majority of the population. For example, the RDA for Vitamin C for adult non-smoking males is 90 mg/day.",
     "distractorExplanations": {
-      "a": "Defining the RDA as the minimum intake to prevent death only is incorrect and represents a misunderstanding of its purpose. The RDA aims for optimal health and prevention of deficiency diseases, not just survival, reflecting a higher standard than mere prevention of death.",
-      "c": "This description aligns with the Tolerable Upper Intake Level (UL), which is the maximum daily intake unlikely to cause adverse health effects, not the RDA. Confusing the RDA with the UL indicates a lack of clarity regarding the different types of Dietary Reference Intakes (DRIs).",
-      "d": "Unrelated."
+      "a": "That defines the Estimated Average Requirement (EAR), which covers 50% of the group; the RDA is set above the EAR to cover 97–98%.",
+      "c": "That is the Tolerable Upper Intake Level (UL), the ceiling for safe intake, not the RDA target for adequacy.",
+      "d": "That describes the Adequate Intake (AI), used only when there is not enough evidence to calculate an EAR and therefore an RDA."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -106,7 +106,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only carbohydrate is consumed"
+        "text": "Urinary urea nitrogen exceeds dietary nitrogen intake"
       },
       {
         "id": "b",
@@ -114,19 +114,19 @@
       },
       {
         "id": "c",
-        "text": "Fat intake is zero"
+        "text": "Nitrogen intake exceeds losses, as in pregnancy"
       },
       {
         "id": "d",
-        "text": "Water intake is high"
+        "text": "Total energy intake equals resting energy expenditure"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Nitrogen balance occurs when the amount of nitrogen consumed (primarily from protein intake) equals the amount of nitrogen excreted from the body (in urine, feces, and other losses). This state indicates that the body is maintaining its protein mass, which is typical for healthy adults not undergoing significant growth or catabolism. For example, a healthy adult consuming adequate protein will typically be in nitrogen equilibrium.",
     "distractorExplanations": {
-      "a": "Carbohydrates do not contain nitrogen, so consuming only carbohydrates would lead to a negative nitrogen balance as the body would still excrete nitrogen from protein turnover. This choice indicates a misunderstanding of the elemental composition of macronutrients and their role in nitrogen balance.",
-      "c": "Fat does not contain nitrogen, so its intake level does not directly determine nitrogen balance. A zero fat intake would not inherently lead to nitrogen equilibrium if protein intake is insufficient or excessive, reflecting a misconception about the components of nitrogen balance.",
-      "d": "Water intake is essential for hydration and many bodily functions, but it does not directly influence nitrogen balance. Nitrogen balance is determined by the intake and output of nitrogen-containing compounds, primarily from protein, indicating a confusion between hydration and metabolic balance."
+      "a": "Losses greater than intake describe negative nitrogen balance (catabolism, stress, starvation), not equilibrium.",
+      "c": "Intake greater than losses is positive nitrogen balance, seen in growth, pregnancy, and recovery, not equilibrium.",
+      "d": "Confuses energy balance with nitrogen balance; equilibrium is defined by nitrogen intake versus nitrogen output."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -172,11 +172,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Adipose"
+        "text": "Adipose tissue and liver"
       },
       {
         "id": "b",
-        "text": "Bone cortex"
+        "text": "Brain and skeletal muscle"
       },
       {
         "id": "c",
@@ -184,15 +184,15 @@
       },
       {
         "id": "d",
-        "text": "Hair shafts"
+        "text": "Red blood cells and liver"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Glycogen, the storage form of glucose, is primarily stored in the liver and skeletal muscles. Liver glycogen is crucial for maintaining blood glucose homeostasis, while muscle glycogen provides an immediate energy source for muscle contraction. For instance, after a meal, excess glucose is converted to glycogen and stored in these tissues.",
     "distractorExplanations": {
-      "a": "Adipose tissue primarily stores triglycerides (fat) as its main energy reserve, not glycogen. Confusing adipose tissue's role with that of the liver or muscles indicates a misunderstanding of the primary storage sites for different macronutrients.",
-      "b": "Bone cortex is primarily composed of minerals like calcium and phosphorus, providing structural support to the body. It does not serve as a storage site for glycogen, suggesting a fundamental misunderstanding of bone composition and metabolic storage.",
-      "d": "Hair shafts are composed mainly of keratin, a protein, and do not store glycogen. This option represents a significant misunderstanding of basic human anatomy and metabolic storage sites."
+      "a": "Adipose tissue stores energy as triglyceride, not glycogen; only the liver half of this pair is a major glycogen store.",
+      "b": "The brain holds only trace glycogen and depends on blood glucose; the liver, not the brain, is the second major store.",
+      "d": "Red blood cells lack mitochondria and store no glycogen; they rely on circulating glucose via anaerobic glycolysis."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -205,7 +205,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Protein quality score"
+        "text": "Carbohydrate grams per serving multiplied by the food's GI value"
       },
       {
         "id": "b",
@@ -213,19 +213,19 @@
       },
       {
         "id": "c",
-        "text": "Sodium content"
+        "text": "Insulin response relative to an equal-calorie reference food"
       },
       {
         "id": "d",
-        "text": "Vitamin D content"
+        "text": "Total carbohydrate and fiber content per 100 grams of food"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The glycemic index (GI) quantifies how much a food raises blood glucose levels compared to a reference food, typically pure glucose or white bread. It measures the area under the blood glucose response curve after consumption.",
     "distractorExplanations": {
-      "a": "This option refers to methods like PDCAAS or DIAAS, which are used to evaluate the quality and digestibility of protein, not the glycemic response of carbohydrates.",
-      "c": "This option incorrectly links the glycemic index to sodium content, which is a separate nutritional component and not a factor in how carbohydrates affect blood glucose.",
-      "d": "This option incorrectly associates the glycemic index with vitamin D content, which is a micronutrient and has no direct role in classifying foods based on their impact on blood glucose."
+      "a": "That describes glycemic load (GI × available carbohydrate per serving ÷ 100), which builds on GI but is a different measure.",
+      "c": "That describes the insulin index; GI is based on the blood glucose curve after 50 g of available carbohydrate.",
+      "d": "GI is a measured physiological response, not a nutrient composition value read from the label or food database."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -238,7 +238,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Alanine and glutamate"
+        "text": "Alanine, glutamate, and other dispensable amino acids the liver synthesizes"
       },
       {
         "id": "b",
@@ -246,19 +246,19 @@
       },
       {
         "id": "c",
-        "text": "All amino acids are nonessential"
+        "text": "Glutamine, arginine, and other conditionally indispensable amino acids"
       },
       {
         "id": "d",
-        "text": "Only glycine"
+        "text": "Glycine, serine, and other amino acids synthesized from glycolytic intermediates"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Essential amino acids, also known as indispensable amino acids, cannot be synthesized by the body and must be obtained through the diet. Examples include leucine, lysine, methionine, threonine, tryptophan, phenylalanine, valine, isoleucine, and histidine.",
     "distractorExplanations": {
-      "a": "Alanine and glutamate are non-essential (dispensable) amino acids, meaning the body can synthesize them from other compounds.",
-      "c": "False.",
-      "d": "Glycine is a non-essential (dispensable) amino acid, as the human body can produce it, making dietary intake not strictly necessary."
+      "a": "Alanine and glutamate are dispensable: the body makes them by transamination, so they are not dietary essentials.",
+      "c": "Conditionally indispensable amino acids become essential only in stress or illness; healthy adults can synthesize them.",
+      "d": "Glycine and serine are made from 3-phosphoglycerate, so they are dispensable, not essential, amino acids."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -337,15 +337,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Vitamin C only"
+        "text": "Thiamin (TPP)"
       },
       {
         "id": "b",
-        "text": "Vitamin K only"
+        "text": "Niacin (NAD+)"
       },
       {
         "id": "c",
-        "text": "Vitamin E only"
+        "text": "Riboflavin (FAD)"
       },
       {
         "id": "d",
@@ -355,9 +355,9 @@
     "correctOptionId": "d",
     "explanation": "Transamination, the process of transferring an amino group from one amino acid to a keto acid, is catalyzed by enzymes that require pyridoxal phosphate (PLP), the active form of vitamin B6, as a coenzyme.",
     "distractorExplanations": {
-      "a": "Antioxidant/collagen roles.",
-      "b": "Clotting factors.",
-      "c": "Antioxidant lipid protection."
+      "a": "Thiamin pyrophosphate drives oxidative decarboxylation (e.g., pyruvate dehydrogenase), not amino group transfer.",
+      "b": "NAD+ from niacin is the electron carrier in dehydrogenase reactions; transaminases use PLP, not NAD+.",
+      "c": "FAD from riboflavin carries electrons in oxidation reactions such as succinate dehydrogenase, not transamination."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -370,11 +370,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Recommended therapeutic megadose for disease"
+        "text": "Intake estimated to meet the requirement of half the healthy people in a group"
       },
       {
         "id": "b",
-        "text": "Minimum to prevent deficiency"
+        "text": "Intake meeting the needs of 97–98% of healthy people in a life-stage group"
       },
       {
         "id": "c",
@@ -382,15 +382,15 @@
       },
       {
         "id": "d",
-        "text": "Athletic doping threshold"
+        "text": "Lowest intake at which adverse effects were observed in human or animal studies"
       }
     ],
     "correctOptionId": "c",
     "explanation": "The Tolerable Upper Intake Level (UL) is the highest daily nutrient intake level that is likely to pose no risk of adverse health effects to almost all individuals in the general population. It serves as a guide for safe upper limits of nutrient consumption.",
     "distractorExplanations": {
-      "a": "Not a treatment dose.",
-      "b": "That is closer to EAR/RDA concepts.",
-      "d": "Unrelated."
+      "a": "That defines the EAR, the median requirement used to assess group adequacy, not the upper safety limit.",
+      "b": "That defines the RDA, the adequacy goal for individuals; the UL marks the top of the safe range instead.",
+      "d": "That is the LOAEL; the UL is set below the NOAEL/LOAEL by applying an uncertainty factor for safety."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -403,11 +403,11 @@
     "options": [
       {
         "id": "a",
-        "text": "It has no effect on lipids or glucose"
+        "text": "It mainly adds stool bulk and speeds transit without affecting lipids"
       },
       {
         "id": "b",
-        "text": "It is identical to elemental calcium"
+        "text": "It lowers LDL by being absorbed and blocking hepatic cholesterol synthesis"
       },
       {
         "id": "c",
@@ -415,15 +415,15 @@
       },
       {
         "id": "d",
-        "text": "It increases heme iron absorption"
+        "text": "It raises postprandial glucose by speeding gastric emptying"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Soluble fiber, found in foods like oats and psyllium, forms a gel in the digestive tract, which can help lower LDL cholesterol by binding to bile acids and blunt postprandial glucose by slowing nutrient absorption.",
     "distractorExplanations": {
-      "a": "This statement is incorrect because soluble fiber has well-documented positive effects on both lipid profiles and glucose metabolism, making it a beneficial dietary component.",
-      "b": "This option incorrectly equates soluble fiber with elemental calcium; these are entirely different nutritional components with distinct chemical structures and physiological roles.",
-      "d": "This statement is incorrect because soluble fiber does not increase heme iron absorption; in fact, some fiber components like phytates can inhibit the absorption of non-heme iron."
+      "a": "That describes insoluble fiber such as wheat bran; soluble fiber forms viscous gels that do affect lipids and glucose.",
+      "b": "Soluble fiber is not absorbed; it lowers LDL by binding bile acids in the gut, unlike statins that block synthesis.",
+      "d": "Viscous soluble fiber slows gastric emptying and glucose absorption, so it blunts rather than raises the glucose peak."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -436,27 +436,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Protein intake is zero and CHO is abundant"
+        "text": "Protein intake is high and amino acids are converted to glucose"
       },
       {
         "id": "b",
-        "text": "Water intake doubles"
+        "text": "Insulin levels are high and lipolysis in adipose tissue increases"
       },
       {
         "id": "c",
-        "text": "Carbohydrate availability is very low and fat oxidation rises (e.g., fasting, low-CHO diets)"
+        "text": "Carbohydrate availability is very low and fat oxidation rises"
       },
       {
         "id": "d",
-        "text": "Vitamin C is supplemented"
+        "text": "Carbohydrate intake is high and excess glucose is converted to fat"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Ketone bodies are produced by the liver when carbohydrate availability is very low, leading to increased fat oxidation for energy, as seen in prolonged fasting or very low-carbohydrate diets.",
+    "explanation": "Ketone bodies are produced by the liver when carbohydrate availability is very low, leading to increased fat oxidation for energy, as seen in prolonged fasting or very low-carbohydrate diets. Typical settings are prolonged fasting and very low-carbohydrate (ketogenic) diets.",
     "distractorExplanations": {
-      "a": "Abundant carbohydrate intake is the primary signal for the body to use glucose for energy, which actively suppresses the production of ketone bodies.",
-      "b": "Water intake primarily affects hydration status and electrolyte balance, but it does not directly influence the metabolic pathways that lead to an increase in ketone body production.",
-      "d": "Unrelated."
+      "a": "Gluconeogenesis from amino acids supplies glucose and tends to restrain ketogenesis; it is not the driver of ketosis.",
+      "b": "High insulin suppresses lipolysis and ketogenesis; ketones rise when insulin is low relative to glucagon.",
+      "d": "Abundant carbohydrate drives lipogenesis and suppresses fatty acid oxidation, so ketone production falls."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -506,23 +506,23 @@
       },
       {
         "id": "b",
-        "text": "Intervention, assessment, diagnosis, monitoring"
+        "text": "Screening, assessment, intervention, monitoring/evaluation"
       },
       {
         "id": "c",
-        "text": "Billing, coding, collection, appeal"
+        "text": "Assessment, intervention, nutrition diagnosis, monitoring/evaluation"
       },
       {
         "id": "d",
-        "text": "Screening"
+        "text": "Nutrition diagnosis, assessment, intervention, monitoring/evaluation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "The Nutrition Care Process (NCP) is a systematic approach used by dietetics professionals, consisting of four distinct steps: Assessment, Nutrition Diagnosis, Intervention, and Monitoring/Evaluation (ADIME).",
     "distractorExplanations": {
-      "b": "This option presents the steps in an incorrect order; the NCP is a sequential process that begins with assessment and follows a specific progression.",
-      "c": "This option describes administrative and financial processes related to healthcare services, which are separate from the clinical steps of the Nutrition Care Process.",
-      "d": "Screening is a preliminary step that identifies individuals at nutritional risk, but it is not the entire Nutrition Care Process; it precedes the full assessment."
+      "b": "Screening precedes the NCP and is not one of its four steps; this sequence also drops the nutrition diagnosis step.",
+      "c": "Places intervention before diagnosis; the intervention must target the etiology identified in the nutrition diagnosis.",
+      "d": "A nutrition diagnosis cannot be made before assessment data are collected; assessment is step 1 of the NCP."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -535,11 +535,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Price, Expense, Salary"
+        "text": "Problem, Evaluation, Supporting data"
       },
       {
         "id": "b",
-        "text": "Protein, Energy, Sodium"
+        "text": "Prognosis, Etiology, Severity"
       },
       {
         "id": "c",
@@ -547,15 +547,15 @@
       },
       {
         "id": "d",
-        "text": "Physician, EMT, Surgeon"
+        "text": "Problem, Evidence, Strategy"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A PES statement is the structured format used to write a nutrition diagnosis, clearly identifying the Problem, its Etiology (cause), and the Signs/Symptoms that provide evidence for the problem.",
     "distractorExplanations": {
-      "a": "Nonsense.",
-      "b": "While protein, energy, or sodium might be part of the 'Signs/Symptoms' in a PES statement, the acronym PES itself refers to Problem, Etiology, and Signs/Symptoms, not specific nutrients.",
-      "d": "This option lists healthcare professionals; a PES statement is a clinical documentation tool for nutrition diagnoses, not a list of medical personnel."
+      "a": "Evaluation belongs to the monitoring/evaluation step; the E in PES is the etiology, or root cause, of the problem.",
+      "b": "The P is the nutrition problem (diagnostic label), not a prognosis, and S stands for signs/symptoms, not severity.",
+      "d": "Strategy belongs to the intervention step; PES ends with signs/symptoms, and the E is the etiology, not evidence."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -568,15 +568,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Complete elimination of all carbohydrates forever for every patient"
+        "text": "A uniform 45% carbohydrate prescription for every patient with diabetes"
       },
       {
         "id": "b",
-        "text": "Unlimited sugar-sweetened beverages"
+        "text": "Strict avoidance of sucrose, with sugar-free foods used at every meal"
       },
       {
         "id": "c",
-        "text": "Avoiding all dietary fiber"
+        "text": "High-protein meals to replace carbohydrate and prevent hypoglycemia"
       },
       {
         "id": "d",
@@ -586,9 +586,9 @@
     "correctOptionId": "d",
     "explanation": "Medical nutrition therapy for diabetes commonly emphasizes a consistent carbohydrate intake pattern, individualized to the patient's medications, activity level, and personal preferences, to help manage blood glucose levels.",
     "distractorExplanations": {
-      "a": "Complete elimination of all carbohydrates is generally not recommended or sustainable for most individuals with diabetes, as it can lead to nutrient deficiencies and is not necessary for glycemic control.",
-      "b": "Unlimited sugar-sweetened beverages would significantly worsen glycemic control and are strongly discouraged in the management of diabetes due to their high sugar content.",
-      "c": "Avoiding all dietary fiber is counterproductive for diabetes management, as fiber helps improve glycemic control, lower cholesterol, and promote satiety."
+      "a": "ADA Standards state there is no ideal macronutrient percentage; the carbohydrate plan is individualized.",
+      "b": "Sucrose can fit within the carbohydrate plan when substituted for other carbohydrate; strict avoidance is not required.",
+      "c": "Protein does not raise glucose reliably or treat hypoglycemia, and replacing carbohydrate with protein is not standard MNT."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -601,27 +601,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Lower than pre-dialysis restrictions always without assessment"
+        "text": "Restricted to 0.6–0.8 g/kg/day to slow progression of residual kidney function"
       },
       {
         "id": "b",
-        "text": "Higher than typical pre-dialysis needs to account for dialytic losses (individualized)"
+        "text": "Higher than typical pre-dialysis needs to account for dialytic losses"
       },
       {
         "id": "c",
-        "text": "Zero protein"
+        "text": "Lowered to 0.3–0.4 g/kg/day with keto-acid analogs to limit urea buildup"
       },
       {
         "id": "d",
-        "text": "Identical to acute gout diet"
+        "text": "Unchanged from pre-dialysis needs because dialysis replaces kidney function"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Patients on hemodialysis typically require higher protein intake, around 1.0–1.2 g/kg/day, to compensate for amino acid and protein losses during dialysis sessions. This is generally higher than the protein restrictions often recommended for pre-dialysis chronic kidney disease.",
+    "explanation": "Patients on hemodialysis typically require higher protein intake, around 1.0–1.2 g/kg/day, to compensate for amino acid and protein losses during dialysis sessions. This is generally higher than the protein restrictions often recommended for pre-dialysis chronic kidney disease. Targets are individualized.",
     "distractorExplanations": {
-      "a": "This option reflects a misunderstanding of protein needs in hemodialysis. Protein recommendations generally increase, not decrease, once a patient starts hemodialysis due to dialytic losses.",
-      "c": "Zero protein intake is unsafe and would lead to severe protein-energy malnutrition. The body requires protein for essential functions, even with kidney disease.",
-      "d": "This option incorrectly links kidney disease protein needs to a diet for acute gout. These are distinct conditions with different dietary management principles."
+      "a": "Protein restriction is used in CKD stages 3–5 not on dialysis; hemodialysis patients need about 1.0–1.2 g/kg/day.",
+      "c": "Very low-protein diets with keto-acid analogs apply to selected non-dialysis CKD patients, not hemodialysis.",
+      "d": "Dialysis removes amino acids and increases catabolism, so needs rise above pre-dialysis levels rather than staying the same."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -634,27 +634,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Giving water only to a well-nourished athlete"
+        "text": "Slowly refeeding a well-nourished patient after a 24-hour fast"
       },
       {
         "id": "b",
-        "text": "Aggressively refeeding a severely malnourished patient, causing shifts of P, K, Mg"
+        "text": "Aggressively refeeding a severely malnourished patient"
       },
       {
         "id": "c",
-        "text": "Using the Mediterranean diet in healthy adults"
+        "text": "Rehydrating a well-nourished patient after acute vomiting"
       },
       {
         "id": "d",
-        "text": "Taking a daily multivitamin at RDA levels"
+        "text": "Giving a hypocaloric diet to a patient with obesity"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Refeeding syndrome occurs when severely malnourished individuals are aggressively refed, leading to a rapid shift from fat to carbohydrate metabolism. This causes an intracellular shift of electrolytes like phosphorus, potassium, and magnesium, resulting in potentially fatal hypophosphatemia and other electrolyte imbalances.",
     "distractorExplanations": {
-      "a": "Low risk.",
-      "c": "The Mediterranean diet is a healthy eating pattern for most adults and is not associated with refeeding syndrome. It does not involve aggressive refeeding of a malnourished state.",
-      "d": "Taking a daily multivitamin at recommended dietary allowance (RDA) levels is a standard practice for many and does not pose a risk for refeeding syndrome. It is a preventative measure, not a cause of this metabolic complication."
+      "a": "A short fast in a well-nourished person does not deplete intracellular phosphate, potassium, or magnesium stores.",
+      "c": "Fluid replacement without prior starvation does not trigger the insulin-driven electrolyte shifts of refeeding.",
+      "d": "Energy restriction does not cause refeeding syndrome; the risk comes from rapidly feeding a starved patient."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -667,7 +667,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Steak and potatoes"
+        "text": "Broth, milk, strained cream soups, and pulp-free juices"
       },
       {
         "id": "b",
@@ -675,19 +675,19 @@
       },
       {
         "id": "c",
-        "text": "Whole nuts"
+        "text": "Gelatin, pudding, nectar juices, and coffee with cream"
       },
       {
         "id": "d",
-        "text": "Ice cream sundaes as the definition"
+        "text": "Broth, ice cream, sherbet, and orange juice with pulp"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A clear liquid diet consists of foods that are transparent and liquid at room temperature, leaving minimal residue in the gastrointestinal tract. Common items include broth, gelatin, clear fruit juices without pulp, and plain tea or coffee.",
     "distractorExplanations": {
-      "a": "Steak and potatoes are solid foods that are part of a regular, unrestricted diet. They are not transparent and leave significant residue, making them unsuitable for a clear liquid diet.",
-      "c": "Whole nuts are solid, high-fiber foods that are not liquid or transparent. They would be part of a regular diet and are contraindicated on a clear liquid diet.",
-      "d": "Ice cream sundaes contain dairy and solid components, making them part of a full liquid or regular diet, not a clear liquid diet. Full liquid diets include items that are liquid at body temperature, like ice cream."
+      "a": "Milk and strained cream soups are full liquids; a clear liquid diet excludes dairy and opaque items.",
+      "c": "Pudding, nectars, and cream are full-liquid items; only the gelatin belongs on a clear liquid diet.",
+      "d": "Ice cream, sherbet, and juice with pulp are full liquids; a clear liquid diet uses transparent, pulp-free fluids."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -799,11 +799,11 @@
     "options": [
       {
         "id": "a",
-        "text": "High sodium convenience foods liberally"
+        "text": "Liberal sodium to offset diuretic losses, with fluids taken freely"
       },
       {
         "id": "b",
-        "text": "Encouraging 10 L fluid/day routinely"
+        "text": "Potassium restriction for every patient taking a loop diuretic"
       },
       {
         "id": "c",
@@ -811,15 +811,15 @@
       },
       {
         "id": "d",
-        "text": "Eliminating all potassium-rich foods"
+        "text": "Fluid loading with 3–4 L/day to protect renal perfusion on diuretics"
       }
     ],
     "correctOptionId": "c",
     "explanation": "For heart failure with fluid retention, medical nutrition therapy (MNT) focuses on individualized sodium restriction and careful fluid management to control symptoms and prevent exacerbations. This approach, combined with appropriate medications, helps manage volume status effectively.",
     "distractorExplanations": {
-      "a": "Consuming high-sodium convenience foods liberally would significantly worsen fluid retention and symptoms in heart failure patients, directly contradicting MNT goals.",
-      "b": "Encouraging 10 L of fluid per day routinely would lead to severe fluid overload in heart failure patients with fluid retention, potentially causing acute decompensation.",
-      "d": "Eliminating all potassium-rich foods is generally not indicated; potassium management depends on kidney function and medications (e.g., diuretics, ACE inhibitors) that can affect potassium levels."
+      "a": "Liberal sodium and free fluids worsen congestion; heart failure MNT limits sodium and manages fluid as indicated.",
+      "b": "Loop diuretics waste potassium, so these patients more often need potassium repletion, not routine restriction.",
+      "d": "Large fluid intakes worsen volume overload; fluid restriction (often 1.5–2 L/day) is used when congestion persists."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -865,7 +865,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only serum sodium"
+        "text": "Serum albumin, prealbumin, and CRP trends drawn during the same visit"
       },
       {
         "id": "b",
@@ -873,19 +873,19 @@
       },
       {
         "id": "c",
-        "text": "Only insurance status"
+        "text": "Diet history, 24-hour recall, and food frequency questionnaire results"
       },
       {
         "id": "d",
-        "text": "Only food preferences without exam"
+        "text": "Weight history, BMI, and percent usual body weight from the chart"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A nutrition-focused physical exam (NFPE) is a clinical assessment tool used to identify signs of malnutrition, including loss of subcutaneous fat (e.g., orbital fat pads), muscle wasting (e.g., at clavicle/shoulder, temporal wasting), and fluid accumulation (e.g., edema).",
     "distractorExplanations": {
-      "a": "Serum sodium is a laboratory value, not something assessed directly during a physical examination; an NFPE focuses on visual and tactile signs of nutritional status.",
-      "c": "Insurance status is an administrative detail and has no relevance to the clinical assessment of a patient's nutritional status during a physical exam.",
-      "d": "Incomplete."
+      "a": "These are biochemical data, a separate assessment domain; NFPE is a hands-on physical exam of fat, muscle, and fluid.",
+      "c": "These are food/nutrition-related history methods; they assess intake, not physical signs found on examination.",
+      "d": "These are anthropometric measurements, a separate domain; NFPE inspects and palpates for fat and muscle loss and edema."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -898,7 +898,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Large high-sugar liquids with meals"
+        "text": "Three larger meals, liquids taken with food, and fruit juice for energy"
       },
       {
         "id": "b",
@@ -906,19 +906,19 @@
       },
       {
         "id": "c",
-        "text": "Drinking 1 L juice with every meal"
+        "text": "Small frequent meals, high simple sugars, and fluids with each bite"
       },
       {
         "id": "d",
-        "text": "Lying flat never after meals as the only advice without diet change"
+        "text": "Clear liquids for 48 hours, then a low-fat, low-fiber full liquid diet"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Dumping syndrome occurs when food moves too quickly from the stomach into the small intestine, causing symptoms like nausea, cramping, and diarrhea. Dietary management focuses on slowing gastric emptying and reducing osmotic load by consuming small, frequent meals, limiting simple sugars, and separating liquids from solids.",
     "distractorExplanations": {
-      "a": "Consuming large, high-sugar liquids with meals would rapidly increase the osmotic load in the small intestine, exacerbating dumping syndrome symptoms.",
-      "c": "Drinking 1 L of juice with every meal would introduce a large volume of high-sugar liquid, significantly worsening dumping syndrome due to rapid gastric emptying and osmotic shifts.",
-      "d": "While lying flat after meals can sometimes help reduce symptoms by slowing gastric emptying, it is a supportive measure, and dietary modifications are the cornerstone of managing dumping syndrome."
+      "a": "Large meals, fluids with food, and juice speed gastric emptying and add osmotic load, worsening dumping symptoms.",
+      "c": "Meal size is right, but simple sugars and fluids with meals increase osmotic load and rapid transit into the jejunum.",
+      "d": "Liquid diets empty fastest and full liquids are often high in sugar, so this would aggravate dumping syndrome."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -931,7 +931,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Urine ketones"
+        "text": "Heat released by the body inside a sealed chamber"
       },
       {
         "id": "b",
@@ -939,19 +939,19 @@
       },
       {
         "id": "c",
-        "text": "Skinfold calipers"
+        "text": "Urinary nitrogen excretion over 24 hours"
       },
       {
         "id": "d",
-        "text": "Food frequency questionnaires"
+        "text": "Body weight, height, age, and sex in a prediction equation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Indirect calorimetry is the gold standard for estimating resting energy expenditure by measuring the body's oxygen consumption (VO2) and carbon dioxide production (VCO2). These measurements are then used in equations, such as the Weir equation, to calculate energy expenditure.",
     "distractorExplanations": {
-      "a": "Metabolic state clue only.",
-      "c": "Body composition method.",
-      "d": "Intake method."
+      "a": "Measuring heat output in a chamber is direct calorimetry; indirect calorimetry uses respiratory gas exchange.",
+      "c": "24-hour urinary urea nitrogen estimates protein catabolism and nitrogen balance, not total energy expenditure.",
+      "d": "That describes predictive equations such as Mifflin-St Jeor, which estimate rather than measure energy expenditure."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -964,15 +964,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Severe protein restriction for all patients"
+        "text": "Routine high-dose zinc and vitamin C for every patient without deficiency"
       },
       {
         "id": "b",
-        "text": "Vitamin A megadoses without assessment"
+        "text": "Energy restriction to promote weight loss before the wound can close"
       },
       {
         "id": "c",
-        "text": "NPO indefinitely"
+        "text": "Fluid restriction to reduce edema around the wound bed"
       },
       {
         "id": "d",
@@ -982,9 +982,9 @@
     "correctOptionId": "d",
     "explanation": "For pressure injury healing, optimal nutrition is crucial, requiring adequate intake of energy and protein to support tissue repair and immune function. Correcting any existing nutrient deficiencies and ensuring proper hydration are also vital for wound healing and overall patient health.",
     "distractorExplanations": {
-      "a": "Opposite usually.",
-      "b": "Toxicity risk; assess first.",
-      "c": "Feeding needed if gut works."
+      "a": "Guidelines support supplementing zinc or vitamin C when deficiency is suspected, not routine high doses for all.",
+      "b": "Wound healing raises energy needs (about 30–35 kcal/kg); restriction slows healing and promotes protein loss.",
+      "c": "Adequate hydration supports tissue perfusion; wound guidelines call for about 1 mL fluid/kcal unless contraindicated."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -997,15 +997,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Menu esthetics"
+        "text": "Inspecting finished products for defects before they reach customers"
       },
       {
         "id": "b",
-        "text": "Employee uniforms fashion"
+        "text": "Documenting sanitation schedules for floors, walls, and equipment"
       },
       {
         "id": "c",
-        "text": "Raising food temperatures into the danger zone intentionally"
+        "text": "Tracking food and labor costs at each step of production"
       },
       {
         "id": "d",
@@ -1015,9 +1015,9 @@
     "correctOptionId": "d",
     "explanation": "HACCP (Hazard Analysis and Critical Control Points) is a systematic, preventive approach to food safety that identifies potential hazards and establishes controls at specific points in the food production process. The core principle is to identify critical control points (CCPs) where hazards can be prevented, eliminated, or reduced to safe levels.",
     "distractorExplanations": {
-      "a": "Focusing on menu esthetics only is a common misunderstanding of HACCP's purpose, as HACCP is exclusively concerned with food safety and preventing hazards, not the visual appeal of dishes. While presentation is important in foodservice, it falls outside the scope of HACCP principles.",
-      "b": "Irrelevant.",
-      "c": "Intentionally raising food temperatures into the danger zone (41–135°F or 5–57°C) would promote rapid bacterial growth, directly contradicting the fundamental goal of HACCP, which is to prevent food safety hazards. This choice represents a severe misunderstanding of safe food handling practices."
+      "a": "End-product inspection is reactive quality control; HACCP prevents hazards by controlling steps during production.",
+      "b": "Cleaning schedules are prerequisite programs (SSOPs) that support HACCP but are not the CCP-based plan itself.",
+      "c": "Cost tracking is a financial control; HACCP addresses biological, chemical, and physical hazards, not costs."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1067,23 +1067,23 @@
       },
       {
         "id": "b",
-        "text": "First in, forever stored"
+        "text": "Last in, first out — newest stock used first"
       },
       {
         "id": "c",
-        "text": "Fill in for others randomly"
+        "text": "First expired, first out — stock used by expiration date"
       },
       {
         "id": "d",
-        "text": "Freeze immediately, forget order"
+        "text": "Fixed inventory, fixed order — stock reordered at par"
       }
     ],
     "correctOptionId": "a",
     "explanation": "FIFO (First In, First Out) is an inventory management method where the oldest inventory is sold or used first. This practice is crucial in foodservice to ensure product freshness, minimize spoilage, and reduce waste by preventing items from expiring before they can be utilized.",
     "distractorExplanations": {
-      "b": "The idea of 'First in, forever stored' directly contradicts the principles of effective inventory management and FIFO, which aims to rotate stock. Storing older items indefinitely would lead to spoilage, waste, and potential food safety issues.",
-      "c": "The phrase 'Fill in for others randomly' does not align with the established meaning of the FIFO acronym or its purpose in inventory management. FIFO is a systematic approach to stock rotation, not a random process.",
-      "d": "Not FIFO."
+      "b": "That is LIFO, which uses the newest stock first and lets older product expire; FIFO rotates the oldest stock out first.",
+      "c": "That is FEFO, a related rotation method keyed to expiration dates; FIFO is keyed to the date product was received.",
+      "d": "Reordering to a par level is a purchasing method, not a stock rotation rule, and is not what the FIFO acronym means."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1096,11 +1096,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Prevents any cooking"
+        "text": "Allows cooks to adjust ingredients freely to suit each day's taste"
       },
       {
         "id": "b",
-        "text": "Eliminates the need for receiving checks"
+        "text": "Eliminates the need for production forecasting and receiving checks"
       },
       {
         "id": "c",
@@ -1108,15 +1108,15 @@
       },
       {
         "id": "d",
-        "text": "Replaces sanitation SOPs"
+        "text": "Sets the purchase specifications that vendors must meet on delivery"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A standardized recipe provides a consistent set of instructions for preparing a dish, ensuring that every time it is made, the yield, quality, cost, and nutritional content remain the same. This consistency is vital for customer satisfaction, cost control, and accurate nutritional labeling in foodservice operations.",
     "distractorExplanations": {
-      "a": "A standardized recipe is a guide for cooking and preparing food, not a means to prevent it. This choice reflects a misunderstanding of the fundamental purpose of recipes in a kitchen, which is to facilitate the cooking process.",
-      "b": "Standardized recipes do not eliminate the need for receiving checks; receiving checks are essential for verifying the quality and quantity of incoming ingredients. These are separate but equally important aspects of foodservice management.",
-      "d": "Sanitation Standard Operating Procedures (SOPs) are distinct from standardized recipes and focus on hygiene and cleanliness to prevent contamination. While both are critical for food safety, a recipe does not replace the need for specific sanitation protocols."
+      "a": "Free adjustment defeats standardization; a standardized recipe fixes ingredients and method to keep results consistent.",
+      "b": "Forecasting and receiving are separate controls; standardized recipes support them but do not replace either one.",
+      "d": "Purchase specifications describe the product vendors deliver; a standardized recipe governs how it is produced."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Serving all food raw"
+        "text": "Cooking, rapid freezing, frozen storage for months, then thawing for service"
       },
       {
         "id": "b",
-        "text": "Holding food at 100°F for days"
+        "text": "Cooking, hot holding at 135°F or above until service later that day"
       },
       {
         "id": "c",
-        "text": "Skipping temperature logs"
+        "text": "Purchasing prepared foods, cold storage, then heating for service"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "Cook-chill is a food production system where food is fully cooked, rapidly chilled to a safe temperature, stored under refrigeration, and then rethermalized just before service. This method allows for batch production, extended shelf life, and efficient meal distribution, commonly used in large-scale operations like hospitals or catering.",
     "distractorExplanations": {
-      "a": "The cook-chill process explicitly involves cooking food to safe temperatures, so serving all food raw is inaccurate and contradicts the fundamental steps of this method. This choice represents a complete misunderstanding of the cook-chill system.",
-      "b": "Holding food at 100°F (38°C) for days would keep it squarely within the temperature danger zone, promoting rapid bacterial growth and making the food unsafe. This practice is a severe food safety violation and is the opposite of the safe holding temperatures required in cook-chill systems.",
-      "c": "Temperature logs are critical for ensuring food safety and quality control throughout the cook-chill process, from cooking and chilling to storage and rethermalization. Skipping these logs would compromise safety and is not part of any approved cook-chill protocol."
+      "a": "That describes cook-freeze, a sibling ready-prepared system; cook-chill stores food refrigerated, not frozen.",
+      "b": "Cooking then hot holding for same-day service is conventional production, with no chilling or rethermalization step.",
+      "c": "Heating purchased prepared foods is assembly-serve; in cook-chill the operation cooks the food itself before chilling."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1199,23 +1199,23 @@
       },
       {
         "id": "b",
-        "text": "Choosing plate color"
+        "text": "Receiving poultry at 50°F or below, verified by a delivery thermometer"
       },
       {
         "id": "c",
-        "text": "Menu font size"
+        "text": "Cooking to an internal temperature of 145°F held for 15 seconds"
       },
       {
         "id": "d",
-        "text": "Tray pad design"
+        "text": "Washing raw poultry in the sink before cooking to remove pathogens"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Cooking poultry to 165°F (74°C) is a critical control point (CCP) because it is the final step that eliminates harmful pathogens, ensuring the food is safe to eat. Verifying this temperature with a calibrated thermometer is essential for food safety.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Cooking to a safe internal temperature (eg, 165°F) verified by thermometer”.",
-      "c": "Not the best answer here; the right answer is “Cooking to a safe internal temperature (eg, 165°F) verified by thermometer”.",
-      "d": "Not the best answer here; the right answer is “Cooking to a safe internal temperature (eg, 165°F) verified by thermometer”."
+      "b": "Cold TCS food must be received at 41°F or below; 50°F is in the danger zone and is not a valid critical limit.",
+      "c": "145°F for 15 seconds is the Food Code limit for whole-muscle meats and fish; poultry requires 165°F.",
+      "d": "Washing raw poultry spreads pathogens by splashing and does not eliminate them, so it cannot serve as a CCP."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1228,27 +1228,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Labor hours × wage"
+        "text": "(Food sales revenue / cost of food used) × 100"
       },
       {
         "id": "b",
-        "text": "Census × tray factor without cost"
+        "text": "(Cost of food purchased / total operating cost) × 100"
       },
       {
         "id": "c",
-        "text": "Number of recipes on file"
+        "text": "(Cost of food used / number of meals served) × 100"
       },
       {
         "id": "d",
-        "text": "(Cost of food used / foodsales revenue) × 100"
+        "text": "(Cost of food used / food sales revenue) × 100"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Food cost percentage is a key financial metric calculated by dividing the cost of food used by the food sales revenue and multiplying by 100 to express it as a percentage. This ratio helps assess operational efficiency and profitability.",
+    "explanation": "Food cost percentage is calculated by dividing the cost of food used by food sales revenue and multiplying by 100 to express it as a percentage. Cost of food used is opening inventory plus purchases minus closing inventory, and the ratio shows how much of each sales dollar goes to food.",
     "distractorExplanations": {
-      "a": "This option describes a labor cost metric, which is distinct from food cost percentage. Labor hours multiplied by wage calculates the cost of labor, not the cost of food relative to sales.",
-      "b": "This option relates to production forecasting, where census and tray factor are used to estimate meal counts. It does not involve financial costs or sales revenue for calculating a percentage.",
-      "c": "This option refers to an inventory count of recipes, which is a measure of menu variety or documentation. It is unrelated to the financial calculation of food cost percentage."
+      "a": "Inverts the ratio; food cost percentage puts cost of food used in the numerator and food sales in the denominator.",
+      "b": "Uses purchases instead of food used and total operating cost instead of sales, so it is not food cost percentage.",
+      "c": "Dividing food cost by meals gives cost per meal, a dollar figure; multiplying it by 100 does not make a sales percentage."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1261,15 +1261,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Serving identical meals every day forever without variation planning"
+        "text": "Planning a new single-use menu each week to maximize seasonal variety"
       },
       {
         "id": "b",
-        "text": "Eliminating allergen identification"
+        "text": "Offering one unchanging menu daily so production sheets stay the same"
       },
       {
         "id": "c",
-        "text": "Avoiding production sheets"
+        "text": "Letting each cook choose dishes daily from available inventory, leftovers, and specials"
       },
       {
         "id": "d",
@@ -1279,9 +1279,9 @@
     "correctOptionId": "d",
     "explanation": "A cycle menu repeats a planned sequence of meals over a specific period, such as a week or a month, which streamlines purchasing, inventory management, and production. This approach balances menu variety for customers with operational efficiency for the foodservice establishment.",
     "distractorExplanations": {
-      "a": "This option suggests a static menu without variation, which contradicts the purpose of a cycle menu that includes planned changes over its cycle. Cycle menus are designed to offer variety while maintaining efficiency.",
-      "b": "This option incorrectly implies that cycle menus eliminate the need for allergen identification. Regardless of the menu type, proper allergen management is a critical food safety responsibility.",
-      "c": "This option suggests that cycle menus avoid production sheets, but production sheets are still essential for organizing and executing daily meal preparation, even with a repeating menu cycle."
+      "a": "Single-use menus are written once and not repeated; a cycle menu's benefit comes from repeating planned menus.",
+      "b": "One unchanging daily menu is a static menu, typical of restaurants; a cycle menu rotates several different days.",
+      "c": "Daily cook choice from inventory resembles a market menu and loses the forecasting benefits a cycle menu provides."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1294,27 +1294,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Guessing by touch"
+        "text": "Ice-point method, adjusting the dial to read 41°F"
       },
       {
         "id": "b",
-        "text": "Room air only without reference"
+        "text": "Room-temperature water compared with a wall thermostat"
       },
       {
         "id": "c",
-        "text": "Ice-point (32°F) and/or boiling-point methods as appropriate"
+        "text": "Ice-point (32°F) and/or boiling-point methods"
       },
       {
         "id": "d",
-        "text": "Never — factory forever accurate"
+        "text": "Boiling-point method set to read 212°F at any altitude"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Calibrating food thermometers using ice-point (32°F / 0°C) and/or boiling-point (212°F / 100°C at sea level) methods ensures their accuracy. Regular calibration is crucial for monitoring critical control points and maintaining food safety.",
+    "explanation": "Calibrating food thermometers using ice-point (32°F / 0°C) and/or boiling-point (212°F / 100°C at sea level) methods ensures their accuracy. Regular calibration is crucial for monitoring critical control points and maintaining food safety. Choose the method that fits the thermometer and the range it will be used for.",
     "distractorExplanations": {
-      "a": "Relying on touch to estimate food temperature is highly inaccurate and unsafe, as it cannot reliably determine if food has reached a safe internal temperature to kill pathogens.",
-      "b": "Checking a thermometer in room air without a known reference point does not provide a standard for calibration. Calibration requires a precise, known temperature to adjust the thermometer's reading.",
-      "d": "Assuming a thermometer is always accurate from the factory is a misconception. Thermometers can drift out of calibration over time due to use, drops, or temperature changes, requiring regular checks."
+      "a": "41°F is the cold-holding limit; in an ice-point check the thermometer is adjusted to read 32°F (0°C).",
+      "b": "Room-temperature water and a wall thermostat give no fixed reference point, so they cannot verify accuracy.",
+      "d": "Water boils below 212°F at higher altitudes, so the boiling-point reference must be adjusted for elevation."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1327,7 +1327,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase choking risk intentionally"
+        "text": "Increase calorie density for patients with poor appetite"
       },
       {
         "id": "b",
@@ -1335,19 +1335,19 @@
       },
       {
         "id": "c",
-        "text": "Replace speech therapy"
+        "text": "Standardize portion sizes for patients on calorie-controlled diets"
       },
       {
         "id": "d",
-        "text": "Eliminate all protein"
+        "text": "Replace the clinical swallow evaluation by a speech-language pathologist"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Modified texture diets, such as those guided by IDDSI (International Dysphagia Diet Standardization Initiative), are used to match the texture and consistency of foods and liquids to an individual's swallowing abilities. This helps reduce the risk of choking and aspiration for people with dysphagia.",
     "distractorExplanations": {
-      "a": "This option is incorrect as modified texture diets are designed to decrease, not increase, the risk of choking. The primary goal is to enhance swallowing safety.",
-      "c": "Modified texture diets are a component of dysphagia management but do not replace speech therapy. Speech-language pathologists (SLPs) continue to assess and provide interventions for swallowing difficulties.",
-      "d": "This option is incorrect because modified texture diets aim to provide adequate nutrition while ensuring safe swallowing. They do not eliminate essential nutrients like protein, which is vital for health."
+      "a": "Calorie fortification addresses intake, not swallowing; IDDSI levels describe texture and flow for dysphagia safety.",
+      "c": "Portion control is a calorie-management tool; IDDSI is a framework for food and drink texture, not portion size.",
+      "d": "The SLP evaluation determines which IDDSI level is safe; texture-modified diets implement it, not replace it."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1356,15 +1356,15 @@
     "id": "rd-exam-readiness-check-foodservice-012",
     "examSlug": "rd-exam-readiness-check",
     "topicId": "foodservice",
-    "prompt": "Receiving criteria for refrigerated potentially hazardous foods include",
+    "prompt": "Receiving criteria for refrigerated TCS (time/temperature control for safety) foods include",
     "options": [
       {
         "id": "a",
-        "text": "Accepting warm deliveries without temperature checks"
+        "text": "Accepting if ≤45°F with intact packaging, since trucks warm during unloading"
       },
       {
         "id": "b",
-        "text": "Accepting dented swollen cans of low-acid food without question"
+        "text": "Accepting if ≤50°F when the product will be cooked within 4 hours"
       },
       {
         "id": "c",
@@ -1372,15 +1372,15 @@
       },
       {
         "id": "d",
-        "text": "Storing deliveries on the floor in the hallway"
+        "text": "Accepting if ≤41°F even if packages are torn, provided the product is cooked"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Receiving refrigerated potentially hazardous foods requires verifying that they arrive at or below 41°F (5°C), have intact packaging, and are properly dated. These checks are essential to prevent bacterial growth and ensure food safety from the point of delivery.",
+    "explanation": "TCS (time/temperature control for safety) is the FDA Food Code term that replaced 'potentially hazardous food'. Refrigerated TCS foods are received at 41°F (5°C) or below unless the code allows otherwise, with intact packaging and proper dating, so temperature-abused or possibly contaminated product is rejected at the door.",
     "distractorExplanations": {
-      "a": "Accepting warm deliveries indicates temperature abuse, which allows harmful bacteria to multiply rapidly. Such deliveries should be rejected to prevent foodborne illness.",
-      "b": "Dented or swollen cans, especially of low-acid foods, are signs of potential spoilage or botulism contamination. Accepting them poses a severe health risk and is a critical food safety violation.",
-      "d": "Storing deliveries on the floor in the hallway is a sanitation violation. Food should be stored immediately in designated, clean areas to prevent contamination and maintain proper temperatures."
+      "a": "The general receiving limit for cold TCS food is 41°F; the 45°F allowance applies only to specific items like milk.",
+      "b": "50°F is in the danger zone; planned cooking does not justify accepting temperature-abused TCS food.",
+      "d": "Temperature is right, but torn packaging is a reason to reject; cooking does not correct possible contamination."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore patient preferences"
+        "text": "Verify cooking temperatures at critical control points"
       },
       {
         "id": "b",
-        "text": "Increase overproduction intentionally"
+        "text": "Calculate staff productivity in meals per labor hour"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Eliminate sanitation"
+        "text": "Audit sanitizer concentration in dish machines"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Plate waste studies are a direct measure of food acceptability and consumption, providing valuable data to refine menu offerings, adjust portion sizes, and improve overall customer satisfaction and cost control. This helps managers make data-driven decisions to optimize food service operations.",
     "distractorExplanations": {
-      "a": "Ignoring patient preferences is counterproductive to quality improvement and patient-centered care, which are key goals in foodservice management. Plate waste studies aim to understand and respond to preferences, not disregard them.",
-      "b": "Intentionally increasing overproduction leads to higher food costs, increased waste, and reduced efficiency, which is the opposite of what effective foodservice management aims to achieve. Plate waste studies help identify areas to reduce waste.",
-      "d": "Unrelated."
+      "a": "CCP temperatures are verified with thermometers and logs; plate waste measures how much served food is eaten.",
+      "b": "Meals per labor hour relates output to staffing hours; plate waste data say nothing about labor productivity.",
+      "d": "Sanitizer concentration is checked with test strips; plate waste studies assess food acceptance and portioning."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Norovirus only from beef fat"
+        "text": "Nontyphoidal Salmonella (e.g., Typhimurium)"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "Clostridium botulinum from fresh lettuce"
+        "text": "Clostridium perfringens (e.g., type A)"
       },
       {
         "id": "d",
-        "text": "Rhinovirus"
+        "text": "Listeria monocytogenes (e.g., serotype 4b)"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Shiga toxin–producing E. coli (STEC), particularly O157:H7, is a dangerous pathogen commonly found in the intestines of cattle and can contaminate ground beef. Undercooked ground beef is a primary vehicle for transmission, leading to severe illness and a risk of Hemolytic Uremic Syndrome (HUS).",
     "distractorExplanations": {
-      "a": "Norovirus is a common cause of foodborne illness, often spread through person-to-person contact or contaminated ready-to-eat foods, but it is not typically associated with undercooked ground beef or specifically beef fat. It is a virus, not a bacterium.",
-      "c": "Clostridium botulinum causes botulism, a rare but severe illness, primarily associated with improperly canned foods or other anaerobic environments, not fresh lettuce or undercooked ground beef. It produces a neurotoxin.",
-      "d": "Rhinovirus is the most common cause of the common cold, a respiratory illness, and is not a foodborne pathogen associated with undercooked ground beef or severe gastrointestinal illness like HUS. It is transmitted through respiratory droplets."
+      "a": "Salmonella causes gastroenteritis linked to poultry and eggs but does not produce Shiga toxin or cause classic HUS.",
+      "c": "C. perfringens causes illness from cooked meats cooled or held improperly, not HUS from undercooked ground beef.",
+      "d": "Listeria is linked to ready-to-eat deli meats and soft cheeses and causes listeriosis, not Shiga toxin–driven HUS."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "Maximize bacterial growth"
+        "text": "Reduce labor by preparing the full day's volume in one session"
       },
       {
         "id": "c",
-        "text": "Eliminate the need for recipes"
+        "text": "Lower food cost by using larger, discounted bulk ingredient packs"
       },
       {
         "id": "d",
-        "text": "Avoid temperature monitoring"
+        "text": "Eliminate the need for hot-holding temperature checks during service"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Batch cooking involves preparing smaller quantities of food closer to service time, which significantly improves food quality by maintaining optimal temperature, texture, and flavor. This method also minimizes the time food spends in the temperature danger zone (41°F-135°F or 5°C-57°C), thereby enhancing food safety.",
     "distractorExplanations": {
-      "b": "Opposite.",
-      "c": "Recipes are essential for consistency, quality control, and accurate portioning in any foodservice operation, regardless of cooking method. Batch cooking does not eliminate the need for standardized recipes.",
-      "d": "Temperature monitoring is a critical food safety practice required for all food items, especially those held hot or cold, to ensure they remain out of the danger zone. Batch cooking reduces holding time but does not remove the need for monitoring."
+      "b": "Cooking the full volume at once is the opposite of batch cooking, which staggers small batches through service.",
+      "c": "Batch cooking is about timing production to service, not purchasing; ingredient pack size is a buying decision.",
+      "d": "Held food must still be monitored; batch cooking shortens holding time but does not remove temperature checks."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Lists exact minute-by-minute steps"
+        "text": "Lists step-by-step tasks; procedures state the broad rules behind them"
       },
       {
         "id": "b",
@@ -1500,19 +1500,19 @@
       },
       {
         "id": "c",
-        "text": "Is never written"
+        "text": "Applies to one shift only; procedures apply across the organization"
       },
       {
         "id": "d",
-        "text": "Replaces all job descriptions"
+        "text": "Defines a single position's duties and required qualifications"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A policy sets broad guidelines and principles that direct decision-making and actions within an organization, outlining 'what' should be done and 'why.' In contrast, a procedure provides detailed, step-by-step instructions on 'how' to carry out a specific task or implement a policy.",
     "distractorExplanations": {
-      "a": "Listing exact minute-by-minute steps is characteristic of a procedure, which provides detailed instructions for performing a task. A policy offers broader guidance rather than granular operational steps.",
-      "c": "Policies should always be written and formally documented to ensure clarity, consistency, and accessibility for all employees. Unwritten policies can lead to misunderstandings and inconsistent application.",
-      "d": "Job descriptions define the responsibilities, duties, and qualifications for a specific role, while policies provide overarching rules for the organization. They serve different purposes and are not interchangeable."
+      "a": "Reverses the two: procedures give the step-by-step method, while policies state the guiding rule.",
+      "c": "Policies are broad, organization-wide guides; scope by shift is not what distinguishes a policy from a procedure.",
+      "d": "Duties and qualifications for one position make up a job description, not a policy."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1525,11 +1525,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Square footage of the kitchen"
+        "text": "Number of management levels between frontline staff and the CEO"
       },
       {
         "id": "b",
-        "text": "Number of menu cycles"
+        "text": "Range of decisions a manager may make without higher approval"
       },
       {
         "id": "c",
@@ -1537,15 +1537,15 @@
       },
       {
         "id": "d",
-        "text": "Food cost percentage target alone"
+        "text": "Principle that each employee reports to only one supervisor"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Span of control refers to the number of subordinates a manager can effectively and efficiently supervise. An appropriate span of control ensures adequate supervision, communication, and support for employees, impacting organizational structure and managerial effectiveness.",
     "distractorExplanations": {
-      "a": "The square footage of a kitchen relates to facility layout and operational space, not directly to the number of employees a manager can supervise. This is a physical attribute, not a management principle.",
-      "b": "Menu cycles pertain to the rotation of food offerings over a specific period, a concept related to menu planning and food production, not the organizational structure or supervisory capacity of a manager.",
-      "d": "Food cost percentage is a financial metric used to assess the efficiency of food purchasing and production. While important for financial management, it is unrelated to the concept of how many employees a manager can effectively oversee."
+      "a": "Levels of management describe organizational height (tall vs flat); span of control counts direct reports per manager.",
+      "b": "Decision latitude describes delegated authority, not the number of employees a manager supervises.",
+      "d": "One employee reporting to one supervisor is unity of command, a different organizing principle."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1624,11 +1624,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Personal friendship"
+        "text": "The supervisor's overall impression from the most recent month"
       },
       {
         "id": "b",
-        "text": "Employee age alone"
+        "text": "Comparison with coworkers' ratings to fit a forced distribution"
       },
       {
         "id": "c",
@@ -1636,15 +1636,15 @@
       },
       {
         "id": "d",
-        "text": "Rumors without facts"
+        "text": "Employee self-assessment, accepted as the final rating"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Performance appraisals should be objective and based on clearly defined, job-related criteria and observable behaviors. This ensures fairness, reduces bias, and provides employees with actionable feedback for improvement.",
     "distractorExplanations": {
-      "a": "Basing appraisals on personal friendship introduces bias and undermines fairness, leading to inconsistent and unreliable evaluations that do not reflect actual job performance.",
-      "b": "Evaluating employees based on age is discriminatory and illegal, as it is not a job-related factor and violates equal employment opportunity principles.",
-      "d": "Relying on rumors for performance appraisal is unprofessional and unfair, as rumors are unsubstantiated and can lead to inaccurate and biased evaluations, damaging employee trust."
+      "a": "Rating on recent impressions is the recency error; appraisals should cover the full period against set standards.",
+      "b": "Forced distribution ranks people against each other rather than against documented job standards.",
+      "d": "Self-assessment can inform the discussion, but the appraisal must rest on the supervisor's documented observations."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1690,11 +1690,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Daily produce orders"
+        "text": "Recurring food, supply, and labor costs for the fiscal year"
       },
       {
         "id": "b",
-        "text": "Hourly wages for one shift"
+        "text": "Projected cash receipts and payments for each month of the year"
       },
       {
         "id": "c",
@@ -1702,15 +1702,15 @@
       },
       {
         "id": "d",
-        "text": "Paper napkin purchases"
+        "text": "Small wares such as pans and utensils replaced as they wear out"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A capital budget is specifically designed for planning and allocating funds for major, long-term investments that have a useful life of more than one year. These investments include significant equipment, buildings, and facility renovations.",
     "distractorExplanations": {
-      "a": "Daily produce orders are considered operating expenses, which are short-term, recurring costs covered by an operating budget, not a capital budget.",
-      "b": "Hourly wages for staff are operational labor costs, which are part of the operating budget, covering day-to-day expenses, not long-term capital investments.",
-      "d": "Paper napkin purchases are routine operating supplies, which are short-term expenses managed within the operating budget, not a capital budget."
+      "a": "Recurring food, supply, and labor costs are planned in the operating budget, not the capital budget.",
+      "b": "Monthly receipts and payments are planned in the cash budget, which tracks liquidity rather than long-term assets.",
+      "d": "Small wares fall below capital cost thresholds and are expensed through the operating budget."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1756,11 +1756,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Cooks meals for one patient"
+        "text": "Measures whether a program's objectives were achieved after implementation"
       },
       {
         "id": "b",
-        "text": "Calibrates a single thermometer"
+        "text": "Tracks how many sessions were delivered and who attended them"
       },
       {
         "id": "c",
@@ -1768,15 +1768,15 @@
       },
       {
         "id": "d",
-        "text": "Writes one PES for an inpatient"
+        "text": "Identifies one patient's nutrition diagnosis using a PES statement"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A community needs assessment systematically gathers information to identify the health and nutrition problems, resources, and priorities of a specific population. This process is crucial for developing effective community-based programs and interventions.",
     "distractorExplanations": {
-      "a": "Cooking meals for an individual patient is a clinical foodservice task, focusing on individual care rather than population-level assessment.",
-      "b": "FSD task.",
-      "d": "Writing a PES (Problem, Etiology, Signs/Symptoms) statement is part of the Nutrition Care Process for an individual patient in a clinical setting, not a community-wide assessment."
+      "a": "That is outcome evaluation, done after a program runs; a needs assessment comes first to identify problems.",
+      "b": "Counting sessions and attendance is process evaluation of a running program, not a pre-planning needs assessment.",
+      "d": "A PES statement documents one patient's nutrition diagnosis in the NCP; needs assessment looks at a population."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignoring customer feedback"
+        "text": "Sales orientation that pushes volume through aggressive promotion"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "Producing only what is convenient regardless of need"
+        "text": "Production orientation focused on efficient, low-cost output"
       },
       {
         "id": "d",
-        "text": "Price dumping as the sole strategy"
+        "text": "Product orientation focused on quality features over customer needs"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The marketing concept focused on long-term relationships and value is relationship marketing or marketing orientation. This approach prioritizes customer retention and loyalty over single transactions by consistently delivering superior value and service.",
     "distractorExplanations": {
-      "a": "Opposite.",
-      "c": "Producing only what is convenient regardless of need describes a production orientation, which prioritizes efficiency in production over customer desires and market demands.",
-      "d": "Price dumping as the sole strategy is unsustainable and typically focuses on short-term sales volume rather than building lasting customer relationships or perceived value."
+      "a": "A sales orientation stresses persuading customers to buy now, focusing on transactions rather than lasting relationships.",
+      "c": "A production orientation assumes customers want cheap, available products and centers on efficiency, not relationships.",
+      "d": "A product orientation assumes quality alone sells and can ignore what customers want, unlike relationship marketing."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1822,27 +1822,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Employment decisions based on protected classes such as race, sex, religion (per law)"
+        "text": "Employment decisions based on protected classes such as race, sex, religion"
       },
       {
         "id": "b",
-        "text": "Hiring based on bona fide job qualifications"
+        "text": "Hiring based on bona fide occupational qualifications tied to the job"
       },
       {
         "id": "c",
-        "text": "Documenting performance objectively"
+        "text": "Requiring a valid food handler card as a condition of employment"
       },
       {
         "id": "d",
-        "text": "Posting job requirements related to essential functions"
+        "text": "Posting job requirements tied to essential functions of the position"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Equal Employment Opportunity (EEO) principles prohibit discrimination in employment decisions based on protected characteristics such as race, color, religion, sex, national origin, age, disability, or genetic information. These laws aim to ensure fair treatment for all applicants and employees.",
+    "explanation": "Equal Employment Opportunity (EEO) principles prohibit discrimination in employment decisions based on protected characteristics such as race, color, religion, sex, national origin, age, disability, or genetic information. These laws aim to ensure fair treatment for all applicants and employees. Protected classes are defined by law (Title VII, ADEA, ADA, and related statutes).",
     "distractorExplanations": {
-      "b": "Hiring based on bona fide job qualifications (BFOQs) is permissible when a specific characteristic is genuinely necessary for the job, such as a specific language for a translator role. EEO does not prohibit this.",
-      "c": "Documenting performance objectively is a crucial and appropriate management practice for providing feedback, making promotion decisions, and addressing performance issues fairly, and it is not prohibited by EEO.",
-      "d": "Posting job requirements related to essential functions is a standard and appropriate practice, especially under the Americans with Disabilities Act (ADA), as it clarifies what tasks are fundamental to the role and helps assess reasonable accommodations."
+      "b": "BFOQs are a recognized legal exception; EEO law permits job-related qualifications that are genuinely necessary.",
+      "c": "A job-related credential required by food code applies to every applicant equally, so EEO does not prohibit it.",
+      "d": "Defining essential functions is lawful and supports ADA reasonable accommodation decisions; EEO does not bar it."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1855,11 +1855,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Measure blood glucose"
+        "text": "Map an organization's reporting lines"
       },
       {
         "id": "b",
-        "text": "Calculate BMI"
+        "text": "Show the frequency of defect causes"
       },
       {
         "id": "c",
@@ -1867,15 +1867,15 @@
       },
       {
         "id": "d",
-        "text": "Identify bacteria on agar"
+        "text": "Map steps of a process with decision points"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A Gantt chart is a project management tool used to visually represent a project schedule, showing the start and end dates of tasks, their dependencies, and overall project progress. It helps managers plan, coordinate, and track specific tasks within a project.",
     "distractorExplanations": {
-      "a": "Clinical.",
-      "b": "Calculating BMI (Body Mass Index) is an anthropometric measurement used to assess body fat based on height and weight, not a project scheduling tool.",
-      "d": "Identifying bacteria on agar is a microbiological technique used in laboratory settings to culture and analyze microorganisms, which is unrelated to management scheduling."
+      "a": "Reporting lines are shown on an organizational chart; a Gantt chart plots tasks against a timeline.",
+      "b": "Ranking how often causes occur is a Pareto chart, a quality tool, not a project scheduling tool.",
+      "d": "Process steps with decision points are drawn as a flowchart; a Gantt chart shows task durations over time."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Medicare Part D"
+        "text": "Monthly benefits for low-income households to buy groceries at retailers"
       },
       {
         "id": "b",
@@ -1929,19 +1929,19 @@
       },
       {
         "id": "c",
-        "text": "Inpatient TPN for all adults"
+        "text": "Free or reduced-price breakfasts and lunches for eligible children in participating schools"
       },
       {
         "id": "d",
-        "text": "OSHA inspections of restaurants"
+        "text": "Congregate and home-delivered meals for eligible adults aged 60 and older"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The Special Supplemental Nutrition Program for Women, Infants, and Children (WIC) provides federal grants to states for supplemental foods, healthcare referrals, and nutrition education. It serves low-income pregnant, breastfeeding, and non-breastfeeding postpartum women, and to infants and children up to age five who are found to be at nutritional risk.",
     "distractorExplanations": {
-      "a": "Medicare Part D is a federal program that helps cover the cost of prescription drugs for Medicare beneficiaries, which is distinct from WIC's focus on supplemental foods and nutrition education for mothers and young children.",
-      "c": "Inpatient Total Parenteral Nutrition (TPN) for all adults is a highly specialized clinical nutrition therapy provided in a hospital setting for individuals unable to digest or absorb nutrients, which is not the primary service of the WIC program.",
-      "d": "OSHA (Occupational Safety and Health Administration) is a federal agency that sets and enforces standards for safe and healthful working conditions, including in restaurants, which is a different function and agency from WIC."
+      "a": "That describes SNAP, which gives general grocery benefits to households; WIC targets pregnant/postpartum women and children under 5.",
+      "c": "That describes the National School Lunch Program; WIC serves infants and children up to age 5, not school meals.",
+      "d": "That describes Older Americans Act nutrition programs; WIC serves women, infants, and young children."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -1954,15 +1954,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only how many flyers were printed without impact"
+        "text": "How many sessions, flyers, and contacts the program delivered"
       },
       {
         "id": "b",
-        "text": "Kitchen hood CFM"
+        "text": "Whether the program was implemented as planned and reached the target group"
       },
       {
         "id": "c",
-        "text": "Employee locker counts"
+        "text": "Health problems, resources, and priorities before the program begins"
       },
       {
         "id": "d",
@@ -1972,9 +1972,9 @@
     "correctOptionId": "d",
     "explanation": "Outcome evaluation assesses the ultimate effects or changes resulting from a program, such as improvements in health status, behaviors, or knowledge among participants. It measures whether the program achieved its intended goals and objectives, providing evidence of its effectiveness.",
     "distractorExplanations": {
-      "a": "Process/output metric alone.",
-      "b": "Facility engineering.",
-      "c": "Irrelevant."
+      "a": "Counts of sessions and materials are process or output measures; outcome evaluation looks at participant change.",
+      "b": "Fidelity and reach are assessed in process evaluation; outcome evaluation asks whether objectives were met.",
+      "c": "Identifying problems and resources before launch is a needs assessment, the planning step, not outcome evaluation."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2024,23 +2024,23 @@
       },
       {
         "id": "b",
-        "text": "97–98% of healthy individuals (that is the RDA)"
+        "text": "97–98% of healthy individuals in a specific life-stage and gender group"
       },
       {
         "id": "c",
-        "text": "Only the lowest 2% of the population"
+        "text": "Most healthy individuals, based on observed intakes when data are limited"
       },
       {
         "id": "d",
-        "text": "Every person regardless of health status"
+        "text": "Nearly every individual without risk of adverse effects from excess intake"
       }
     ],
     "correctOptionId": "a",
     "explanation": "EAR is the median requirement; RDA is set higher to cover nearly all healthy people.",
     "distractorExplanations": {
-      "b": "RDA covers ~97–98%, not EAR.",
-      "c": "EAR is not limited to the lowest 2%.",
-      "d": "Requirements vary by group and health."
+      "b": "Covering 97–98% of the group defines the RDA, which is set about two standard deviations above the EAR.",
+      "c": "That describes the Adequate Intake (AI), used when evidence is too limited to establish an EAR.",
+      "d": "That describes the Tolerable Upper Intake Level (UL), which concerns excess intake, not the median requirement."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2061,19 +2061,19 @@
       },
       {
         "id": "c",
-        "text": "Only vitamin D"
+        "text": "Vitamin C, folate, and vitamin E"
       },
       {
         "id": "d",
-        "text": "Only vitamin E"
+        "text": "B-complex vitamins and vitamin K"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Water-soluble vitamins include C and the B vitamins; A, D, E, and K are fat-soluble.",
     "distractorExplanations": {
       "a": "A, D, E, K are fat-soluble.",
-      "c": "D is fat-soluble.",
-      "d": "E is fat-soluble."
+      "c": "Vitamin C and folate are water-soluble, but vitamin E is fat-soluble, so this set mixes the two classes.",
+      "d": "The B vitamins are water-soluble, but vitamin K is fat-soluble and absorbed with dietary fat in micelles."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2218,11 +2218,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only HDL cholesterol"
+        "text": "Endogenous triglycerides synthesized in the liver"
       },
       {
         "id": "b",
-        "text": "Stored liver glycogen"
+        "text": "Cholesterol from peripheral tissues back to the liver"
       },
       {
         "id": "c",
@@ -2230,15 +2230,15 @@
       },
       {
         "id": "d",
-        "text": "Dietary fiber intact to muscle"
+        "text": "Cholesterol from the liver to peripheral tissues"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Chylomicrons carry dietary lipids through the lymph and blood after meals.",
     "distractorExplanations": {
-      "a": "HDL is a separate lipoprotein class.",
-      "b": "Glycogen is intracellular storage.",
-      "d": "Fiber is not transported in chylomicrons."
+      "a": "Liver-made (endogenous) triglycerides are packaged in VLDL; chylomicrons carry dietary fat from the gut.",
+      "b": "Reverse cholesterol transport from tissues to the liver is the role of HDL, not chylomicrons.",
+      "d": "Delivering cholesterol from the liver to tissues is the role of LDL, derived from VLDL, not chylomicrons."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2284,27 +2284,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Elevated waist circumference, blood pressure, triglycerides, fasting glucose, and low HDL (per guideline sets)"
+        "text": "Elevated waist circumference, blood pressure, triglycerides, fasting glucose, and low HDL"
       },
       {
         "id": "b",
-        "text": "Only low vitamin C intake"
+        "text": "Elevated body mass index, LDL cholesterol, total cholesterol, HbA1c, and C-reactive protein"
       },
       {
         "id": "c",
-        "text": "Only short stature"
+        "text": "Elevated waist circumference, LDL cholesterol, uric acid, and fasting insulin"
       },
       {
         "id": "d",
-        "text": "Only high dietary potassium from food"
+        "text": "Elevated body weight, total cholesterol, HbA1c, and low serum albumin"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Metabolic syndrome clusters cardiometabolic risk factors including central adiposity and dyslipidemia.",
+    "explanation": "Metabolic syndrome clusters cardiometabolic risk factors including central adiposity and dyslipidemia. Criteria sets include NCEP ATP III and the IDF/AHA harmonized definition.",
     "distractorExplanations": {
-      "b": "Vitamin C is not a diagnostic criterion.",
-      "c": "Height is not the defining feature.",
-      "d": "Potassium intake alone does not define the syndrome."
+      "b": "BMI, LDL, total cholesterol, HbA1c, and CRP are not among the five NCEP ATP III/IDF metabolic syndrome criteria.",
+      "c": "Waist circumference counts, but LDL, uric acid, and fasting insulin are not metabolic syndrome criteria.",
+      "d": "Body weight, total cholesterol, HbA1c, and albumin are not criteria; low HDL and high triglycerides are used instead."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2325,19 +2325,19 @@
       },
       {
         "id": "c",
-        "text": "Amylase"
+        "text": "Superoxide dismutase"
       },
       {
         "id": "d",
-        "text": "Pepsin"
+        "text": "Cytochrome c oxidase"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Selenium-dependent glutathione peroxidase reduces hydrogen peroxide.",
     "distractorExplanations": {
       "a": "Carbonic anhydrase uses zinc.",
-      "c": "Amylase digests starch.",
-      "d": "Pepsin is a gastric protease."
+      "c": "Superoxide dismutase is an antioxidant enzyme, but it uses copper/zinc or manganese, not selenium.",
+      "d": "Cytochrome c oxidase in the electron transport chain is a copper- and iron-containing enzyme, not selenium."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2350,11 +2350,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Directly replaces hemoglobin iron"
+        "text": "Is required for hydroxylation of proline and lysine in collagen"
       },
       {
         "id": "b",
-        "text": "Is the main fuel for anaerobic glycolysis"
+        "text": "Activates clotting factors through gamma-carboxylation of glutamate"
       },
       {
         "id": "c",
@@ -2362,15 +2362,15 @@
       },
       {
         "id": "d",
-        "text": "Stores glucose as glycogen in liver"
+        "text": "Forms the core of hemoglobin that carries oxygen to the wound bed"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Zinc is a cofactor for many enzymes involved in tissue repair and immunity.",
     "distractorExplanations": {
-      "a": "Iron carries oxygen in hemoglobin.",
-      "b": "Carbohydrate fuels glycolysis.",
-      "d": "Glycogen storage is not zinc's role."
+      "a": "Proline and lysine hydroxylation for collagen requires vitamin C; zinc acts in protein synthesis and cell division.",
+      "b": "Gamma-carboxylation of clotting factors is the role of vitamin K, not zinc.",
+      "d": "Iron, not zinc, sits at the center of the heme in hemoglobin and carries oxygen."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2449,7 +2449,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed prevention of all cancers"
+        "text": "Reduced lung cancer incidence in intervention trials"
       },
       {
         "id": "b",
@@ -2457,19 +2457,19 @@
       },
       {
         "id": "c",
-        "text": "Cure of iron-deficiency anemia"
+        "text": "Vitamin A toxicity from excess conversion to retinol"
       },
       {
         "id": "d",
-        "text": "Elimination of vitamin A need"
+        "text": "Reduced cardiovascular mortality in intervention trials"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ATBC and CARET trials raised concern about beta-carotene supplements in smokers.",
     "distractorExplanations": {
-      "a": "Supplements did not prevent lung cancer in those trials.",
-      "c": "Beta-carotene does not treat iron deficiency.",
-      "d": "Vitamin A requirements remain."
+      "a": "ATBC and CARET found more lung cancer, not less, in smokers given beta-carotene, so CARET was stopped early.",
+      "c": "Conversion of beta-carotene to retinol is regulated, so supplements do not cause vitamin A toxicity.",
+      "d": "These trials showed no cardiovascular benefit; ATBC and CARET reported equal or higher total mortality."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2482,15 +2482,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Weight loss related to policy violations"
+        "text": "Inadequate oral intake related to 8% weight loss in 3 months as evidenced by poor appetite"
       },
       {
         "id": "b",
-        "text": "Protein intake related to equipment failure"
+        "text": "Unintended weight loss related to colon cancer as evidenced by patient report of feeling tired"
       },
       {
         "id": "c",
-        "text": "Patient employer supervisor statement"
+        "text": "Unintended weight loss related to 8% loss in 3 months as evidenced by inadequate intake"
       },
       {
         "id": "d",
@@ -2500,9 +2500,9 @@
     "correctOptionId": "d",
     "explanation": "PES links a nutrition problem, etiology, and signs/symptoms supported by assessment data.",
     "distractorExplanations": {
-      "a": "Policy is not a PES nutrition problem.",
-      "b": "Equipment is not etiology for weight loss.",
-      "c": "PES is not an HR acronym."
+      "a": "Uses the sign (weight loss) as the etiology; the etiology should be the cause, with measured loss as the evidence.",
+      "b": "Fatigue does not measure weight loss, and the medical diagnosis alone is not an etiology the RD can address.",
+      "c": "Swaps etiology and signs: the 8% loss is the evidence, and inadequate intake is the cause."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2519,23 +2519,23 @@
       },
       {
         "id": "b",
-        "text": "Eliminate the need for any blood glucose monitoring"
+        "text": "Set a fixed daily carbohydrate limit that replaces insulin titration"
       },
       {
         "id": "c",
-        "text": "Replace medical diagnosis of diabetes"
+        "text": "Match basal insulin doses to the day's total protein intake"
       },
       {
         "id": "d",
-        "text": "Avoid all carbohydrate indefinitely"
+        "text": "Rank foods by glycemic index so high-GI foods can be dropped"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Carb counting aligns insulin with meal carbohydrate for glycemic management.",
     "distractorExplanations": {
-      "b": "Monitoring remains essential.",
-      "c": "Diagnosis is medical.",
-      "d": "Carbohydrate is not eliminated in T1D MNT."
+      "b": "Carbohydrate counting is used to adjust insulin, not to replace titration with a fixed carbohydrate cap.",
+      "c": "Basal insulin covers fasting needs; bolus (prandial) insulin is matched to carbohydrate, not protein.",
+      "d": "Ranking foods by GI is a different tool; carbohydrate counting quantifies grams to dose mealtime insulin."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2548,27 +2548,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Raw nuts and whole fresh apples with skin"
+        "text": "Cottage cheese, scrambled eggs, and mashed potatoes"
       },
       {
         "id": "b",
-        "text": "Milk, strained cream soups, and pudding (per physician order)"
+        "text": "Milk, strained cream soups, and pudding"
       },
       {
         "id": "c",
-        "text": "Steak and raw vegetables"
+        "text": "Milk, cream soups with noodles, and rice pudding"
       },
       {
         "id": "d",
-        "text": "Thick milkshakes with nuts if not ordered"
+        "text": "Pureed meats, mashed bananas, and applesauce"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Full liquids are pourable at room temperature and may include milk-based items per order.",
+    "explanation": "Full liquids are pourable at room temperature and may include milk-based items per order. Items are given per the physician's diet order.",
     "distractorExplanations": {
-      "a": "Nuts and whole apples are not full liquids.",
-      "c": "Steaks are solids.",
-      "d": "Added nuts change texture/residue."
+      "a": "These are soft-diet solids; a full liquid diet is limited to foods that are liquid or pourable at body temperature.",
+      "c": "Milk is allowed, but noodles and rice add solid pieces, which are excluded on a full liquid diet.",
+      "d": "Pureed meats and fruits belong to a pureed (IDDSI level 4) diet, not a full liquid diet."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2581,11 +2581,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Stopping all green vegetables permanently"
+        "text": "Avoiding leafy green vegetables so the INR stays within the target range"
       },
       {
         "id": "b",
-        "text": "Doubling vitamin K weekly for variety"
+        "text": "Increasing vitamin K foods on days a warfarin dose is missed to keep INR steady"
       },
       {
         "id": "c",
@@ -2593,15 +2593,15 @@
       },
       {
         "id": "d",
-        "text": "Replacing warfarin with fish oil independently"
+        "text": "Taking vitamin K supplements with each warfarin dose"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Stable vitamin K intake supports consistent INR; sudden large changes alter anticoagulation.",
     "distractorExplanations": {
-      "a": "Total elimination is not standard advice.",
-      "b": "Erratic high K swings INR.",
-      "d": "Anticoagulation changes require physicians."
+      "a": "Avoiding greens makes intake erratic and harms diet quality; warfarin doses are set around a steady vitamin K intake.",
+      "b": "Extra vitamin K on a missed-dose day further lowers INR; a missed dose is handled per prescriber instructions.",
+      "d": "Vitamin K supplements counteract warfarin; low-dose vitamin K is only given by prescribers for specific INR goals."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2614,15 +2614,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase choking by making fluids faster"
+        "text": "Increase fluid intake because thick liquids improve hydration"
       },
       {
         "id": "b",
-        "text": "Replace all need for swallow evaluation"
+        "text": "Speed oral transit so the swallow is triggered sooner"
       },
       {
         "id": "c",
-        "text": "Eliminate fluid requirements entirely"
+        "text": "Raise calorie density for patients with poor oral intake"
       },
       {
         "id": "d",
@@ -2632,9 +2632,9 @@
     "correctOptionId": "d",
     "explanation": "Thickened liquids improve bolus control for safer swallowing when recommended by the care team.",
     "distractorExplanations": {
-      "a": "Thickened liquids slow, not accelerate, flow.",
-      "b": "Clinical swallow assessment still guides care.",
-      "c": "Hydration remains necessary."
+      "a": "Thickened liquids are often less palatable and can reduce fluid intake, so hydration must be monitored closely.",
+      "b": "Thickening slows bolus flow to give more time for airway closure; faster transit would raise aspiration risk.",
+      "c": "Most thickeners add little energy; the purpose is safer bolus control, not calorie fortification."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2647,27 +2647,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Sodium restriction and adequate protein unless hepatic encephalopathy requires modification"
+        "text": "Sodium restriction and adequate protein"
       },
       {
         "id": "b",
-        "text": "Unlimited sodium to increase thirst"
+        "text": "Low-fat diet and limited animal protein"
       },
       {
         "id": "c",
-        "text": "Protein elimination for every patient regardless of status"
+        "text": "Liberal sodium with fluid restriction to 1 L"
       },
       {
         "id": "d",
-        "text": "High alcohol to stimulate appetite"
+        "text": "Sodium restriction and 0.5 g/kg protein"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Ascites management limits sodium; protein is usually adequate unless encephalopathy dictates change.",
+    "explanation": "Ascites in cirrhosis is managed with sodium restriction (about 2 g/day) while protein stays adequate at roughly 1.2-1.5 g/kg/day to prevent sarcopenia. Current ESPEN and AASLD guidance does not restrict protein even in hepatic encephalopathy; late-evening snacks and, if needed, vegetable or BCAA-rich protein sources are used instead.",
     "distractorExplanations": {
-      "b": "High sodium worsens fluid retention.",
-      "c": "Protein restriction is individualized.",
-      "d": "Alcohol worsens liver disease."
+      "b": "Fat restriction is not indicated, and limiting protein worsens sarcopenia; cirrhosis needs about 1.2–1.5 g/kg.",
+      "c": "Sodium drives ascites, so it is restricted (about 2 g/day); fluid restriction is reserved for severe hyponatremia.",
+      "d": "Sodium restriction is right, but 0.5 g/kg protein is outdated and promotes muscle loss; adequate protein is advised."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2680,7 +2680,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited protein with no individualization"
+        "text": "Increased to 1.2 g/kg/day to offset protein losses as GFR declines"
       },
       {
         "id": "b",
@@ -2688,19 +2688,19 @@
       },
       {
         "id": "c",
-        "text": "Zero protein indefinitely"
+        "text": "Restricted to 0.6 g/kg/day with energy cut to promote weight loss"
       },
       {
         "id": "d",
-        "text": "Identical to hemodialysis requirements without assessment"
+        "text": "Unrestricted protein, with phosphorus binders used to offset the extra protein load"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Non-dialysis CKD may use moderated protein with preserved energy intake.",
     "distractorExplanations": {
-      "a": "Unlimited protein may accelerate decline in some patients.",
-      "c": "Zero protein is unsafe.",
-      "d": "Dialysis changes protein needs."
+      "a": "About 1.0–1.2 g/kg/day is the target once on dialysis; non-dialysis CKD 3–4 uses moderate protein restriction.",
+      "c": "The protein level is in range, but energy must stay adequate (about 25–35 kcal/kg) to prevent protein wasting.",
+      "d": "Phosphate binders control phosphorus, not protein load; unrestricted protein may speed CKD progression."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2713,27 +2713,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Plain white rice and refined grains typically"
+        "text": "High-sodium foods such as canned soups, deli meats, and pickles"
       },
       {
         "id": "b",
-        "text": "Water in all cases regardless of renal function"
+        "text": "High-phosphorus foods such as colas, processed cheese, and nuts"
       },
       {
         "id": "c",
-        "text": "High-potassium foods such as bananas, oranges, and salt substitutes containing potassium chloride"
+        "text": "High-potassium foods such as bananas, oranges, and salt substitutes"
       },
       {
         "id": "d",
-        "text": "All protein sources equally without lab review"
+        "text": "Refined grains such as white rice, white bread, and plain pasta"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Potassium restriction targets concentrated sources and KCl salt substitutes when hyperkalemia is present.",
+    "explanation": "Potassium restriction targets concentrated sources and KCl salt substitutes when hyperkalemia is present. Salt substitutes are a hidden source because they contain potassium chloride.",
     "distractorExplanations": {
-      "a": "Refined grains are lower in potassium.",
-      "b": "Fluids are restricted based on renal/cardiac status, not always.",
-      "d": "Protein restriction depends on diagnosis."
+      "a": "Sodium restriction targets blood pressure and fluid; it does not lower serum potassium in hyperkalemia.",
+      "b": "Phosphorus restriction treats hyperphosphatemia; it is a separate CKD electrolyte goal from potassium.",
+      "d": "Refined grains are low in potassium and are often recommended in place of whole grains on a low-K diet."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2746,15 +2746,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only total cholesterol"
+        "text": "Sodium, chloride, albumin, and prealbumin levels"
       },
       {
         "id": "b",
-        "text": "Only hair zinc without clinical context"
+        "text": "Calcium, vitamin D, zinc, and serum ferritin"
       },
       {
         "id": "c",
-        "text": "Only grip strength without electrolytes"
+        "text": "Total cholesterol, triglycerides, and HbA1c"
       },
       {
         "id": "d",
@@ -2764,9 +2764,9 @@
     "correctOptionId": "d",
     "explanation": "Refeeding can precipitously drop electrolytes and require thiamin repletion.",
     "distractorExplanations": {
-      "a": "Cholesterol is not the primary refeeding marker.",
-      "b": "Hair zinc is not acute refeeding monitoring.",
-      "c": "Grip strength alone misses electrolyte shifts."
+      "a": "Albumin and prealbumin reflect inflammation, and sodium/chloride are not the hallmark intracellular shifts of refeeding.",
+      "b": "These markers relate to bone and micronutrient status; refeeding causes acute drops in phosphorus, potassium, and magnesium.",
+      "c": "Lipids and HbA1c change over weeks to months and do not detect the acute electrolyte shifts of refeeding."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2779,27 +2779,27 @@
     "options": [
       {
         "id": "a",
-        "text": "NPO status with transition to enteral feeding when clinically appropriate"
+        "text": "Early enteral tube feeding within 24-72 hours instead of prolonged NPO"
       },
       {
         "id": "b",
-        "text": "Immediate high-fat oral boluses"
+        "text": "Routine parenteral nutrition from day one to rest the pancreas"
       },
       {
         "id": "c",
-        "text": "Routine parenteral nutrition for every mild case on day one"
+        "text": "Clear liquids by mouth for 7 days before any enteral tube feeding is considered"
       },
       {
         "id": "d",
-        "text": "Alcohol clearance drinks to stimulate appetite"
+        "text": "High-fat oral supplements to meet energy needs quickly"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Bowel rest may be initial; enteral nutrition is preferred when the gut can be used safely.",
+    "explanation": "Current ACG and AGA guidance favours early feeding in acute pancreatitis: oral intake within about 24-72 hours as tolerated and, when oral intake is not tolerated, enteral tube feeding (nasogastric or nasojejunal) rather than prolonged NPO or parenteral nutrition, because enteral feeding protects the gut barrier and lowers infection risk.",
     "distractorExplanations": {
-      "b": "High fat stimulates pancreatic secretion.",
-      "c": "PN is reserved when enteral is not feasible.",
-      "d": "Alcohol is contraindicated."
+      "b": "Enteral is preferred over parenteral nutrition; PN is reserved for patients who cannot meet needs enterally.",
+      "c": "Delaying nutrition for a week raises infection and malnutrition risk; enteral feeding should start early if tolerated.",
+      "d": "Oral intake is not tolerated in this case, and high-fat feeds stimulate pancreatic secretion and pain."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2812,7 +2812,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Tea with every iron-rich meal to boost absorption"
+        "text": "Non-heme iron sources taken with black tea at meals to enhance absorption"
       },
       {
         "id": "b",
@@ -2820,19 +2820,19 @@
       },
       {
         "id": "c",
-        "text": "Complete avoidance of all plant foods"
+        "text": "Non-heme iron sources taken with milk to enhance absorption"
       },
       {
         "id": "d",
-        "text": "Calcium megadoses at every iron meal without exception"
+        "text": "Heme iron sources taken with a calcium supplement at meals"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Vitamin C enhances non-heme iron absorption; polyphenols in tea can inhibit it.",
     "distractorExplanations": {
-      "a": "Tea tannins inhibit iron absorption.",
-      "c": "Plant foods provide non-heme iron.",
-      "d": "Calcium competes with iron absorption when co-ingested."
+      "a": "Tea polyphenols (tannins) inhibit non-heme iron absorption; tea should be taken between meals instead.",
+      "c": "Calcium in milk inhibits iron absorption, so milk is a poor pairing with iron-rich meals.",
+      "d": "Calcium supplements reduce both heme and non-heme iron absorption when taken with an iron-rich meal."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2845,11 +2845,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Large glasses of regular milk with every meal"
+        "text": "Regular milk in large servings to build up lactase activity"
       },
       {
         "id": "b",
-        "text": "Only ice cream as the sole dairy source"
+        "text": "Evaporated milk, which has less lactose than fluid milk"
       },
       {
         "id": "c",
@@ -2857,15 +2857,15 @@
       },
       {
         "id": "d",
-        "text": "No calcium sources of any kind"
+        "text": "Calcium-fortified goat milk, which is naturally lactose-free"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Lactose-free products and fermented dairy may be tolerated individually.",
     "distractorExplanations": {
-      "a": "Regular milk may cause symptoms.",
-      "b": "Ice cream still contains lactose.",
-      "d": "Calcium can come from many foods."
+      "a": "Large servings of regular milk cause symptoms; tolerance improves with small amounts spread through the day.",
+      "b": "Evaporated milk is concentrated, so it has about twice the lactose of fluid milk per cup.",
+      "d": "Goat milk contains lactose (about 4%) in amounts similar to cow's milk, so it is not lactose-free."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2878,15 +2878,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited high-protein foods"
+        "text": "Strict restriction of tyrosine, with a medical formula supplying extra phenylalanine instead"
       },
       {
         "id": "b",
-        "text": "Only fat restriction"
+        "text": "Restriction of leucine, isoleucine, and valine with a BCAA-free formula"
       },
       {
         "id": "c",
-        "text": "Elimination of all carbohydrates"
+        "text": "Restriction of galactose and lactose with a soy-based infant formula"
       },
       {
         "id": "d",
@@ -2896,9 +2896,9 @@
     "correctOptionId": "d",
     "explanation": "PKU management limits phenylalanine while supplying adequate nutrition via medical foods.",
     "distractorExplanations": {
-      "a": "High protein increases phenylalanine.",
-      "b": "Fat is not the primary restriction.",
-      "c": "Carbohydrate is not eliminated."
+      "a": "Reverses PKU therapy: phenylalanine is restricted, and tyrosine becomes conditionally essential and is supplied.",
+      "b": "Restricting branched-chain amino acids treats maple syrup urine disease (MSUD), not PKU.",
+      "c": "Galactose and lactose restriction treats galactosemia; PKU restricts the amino acid phenylalanine."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2911,27 +2911,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Small frequent meals, lower fat and fiber, and texture modification as tolerated"
+        "text": "Small frequent meals, lower fat and fiber, and texture modification"
       },
       {
         "id": "b",
-        "text": "Large high-fat meals before bed"
+        "text": "Three large meals, higher fiber, and lying down after eating"
       },
       {
         "id": "c",
-        "text": "Raw high-fiber salads at every meal"
+        "text": "Small frequent meals, high fiber, and raw vegetables for motility"
       },
       {
         "id": "d",
-        "text": "Fluids only with every bite of solid if that worsens symptoms"
+        "text": "Three large meals with high-fat foods to slow nutrient delivery"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Reduced gastric emptying responds to smaller, lower-residue meals and individualized fluid timing.",
+    "explanation": "Reduced gastric emptying responds to smaller, lower-residue meals and individualized fluid timing. Texture modification (e.g., more liquid or pureed foods) is advanced as tolerated.",
     "distractorExplanations": {
-      "b": "Large fatty meals delay emptying.",
-      "c": "High fiber can worsen symptoms.",
-      "d": "Fluid timing depends on symptom pattern."
+      "b": "Large meals and fiber slow emptying further, and lying down after eating also delays gastric emptying.",
+      "c": "Meal size is right, but high fiber and raw vegetables delay emptying and can form bezoars in gastroparesis.",
+      "d": "Large, high-fat meals delay gastric emptying, which is already impaired in gastroparesis."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2944,7 +2944,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate 4000 kcal on day one without labs"
+        "text": "Starting at 3,000 kcal/day to reverse weight loss quickly"
       },
       {
         "id": "b",
@@ -2952,19 +2952,19 @@
       },
       {
         "id": "c",
-        "text": "Zero carbohydrate"
+        "text": "High-protein, very-low-carbohydrate meals to limit insulin surges"
       },
       {
         "id": "d",
-        "text": "Unsupervised rapid weight gain competitions"
+        "text": "Weight gain targets of 3–4 kg per week from the first week"
       }
     ],
     "correctOptionId": "b",
     "explanation": "AN refeeding requires cautious energy progression to prevent refeeding syndrome.",
     "distractorExplanations": {
-      "a": "Aggressive day-one calories increase risk.",
-      "c": "Carbohydrate is required for recovery.",
-      "d": "Competition is unethical and unsafe."
+      "a": "Starting high without monitoring risks refeeding syndrome; energy is advanced gradually with electrolyte checks.",
+      "c": "Carbohydrate is needed for recovery and is not eliminated; refeeding risk is managed with gradual energy increases and electrolyte checks.",
+      "d": "Typical inpatient targets are about 0.5–1.5 kg per week; 3–4 kg per week is unsafe and mostly fluid."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -2977,15 +2977,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Print new menu fonts"
+        "text": "Identify critical control points in the flow of food"
       },
       {
         "id": "b",
-        "text": "Schedule staff vacations"
+        "text": "Establish critical limits for each control point"
       },
       {
         "id": "c",
-        "text": "Select table centerpiece colors"
+        "text": "Establish monitoring procedures for each control point"
       },
       {
         "id": "d",
@@ -2995,9 +2995,9 @@
     "correctOptionId": "d",
     "explanation": "HACCP begins with identifying biological, chemical, and physical hazards.",
     "distractorExplanations": {
-      "a": "Menu design is not HACCP step one.",
-      "b": "Vacation scheduling is HR.",
-      "c": "Decor is unrelated to hazard analysis."
+      "a": "Identifying CCPs is HACCP principle 2; it depends on the hazard analysis completed in principle 1.",
+      "b": "Setting critical limits is principle 3; limits cannot be set until hazards and CCPs are identified.",
+      "c": "Monitoring procedures are principle 4, which comes after hazard analysis, CCPs, and critical limits."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3076,11 +3076,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Touching the water to guess temperature"
+        "text": "A probe thermometer reading of the sanitizer water"
       },
       {
         "id": "b",
-        "text": "Smelling the sanitizer without measurement"
+        "text": "Visual color of the solution compared with fresh water"
       },
       {
         "id": "c",
@@ -3088,15 +3088,15 @@
       },
       {
         "id": "d",
-        "text": "Never checking after initial setup"
+        "text": "A pH strip confirming the solution is acidic"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Sanitizer concentration must meet label ppm requirements and be tested routinely.",
     "distractorExplanations": {
-      "a": "Touch does not measure ppm.",
-      "b": "Odor is unreliable for concentration.",
-      "d": "Sanitizer strength degrades with use."
+      "a": "Water temperature affects sanitizer efficacy but does not measure concentration in ppm.",
+      "b": "Color does not indicate concentration; sanitizer strength is verified with a test kit matched to the chemical.",
+      "d": "pH influences how well sanitizers work but does not measure ppm; concentration needs a test strip or titration."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3109,15 +3109,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Menu prices never change"
+        "text": "The lowest bid price on each purchase order for the contract period"
       },
       {
         "id": "b",
-        "text": "Employees never need handwashing"
+        "text": "Delivery on the same day the order is placed"
       },
       {
         "id": "c",
-        "text": "Thermometers never require calibration"
+        "text": "Exemption from temperature and quality checks on delivered goods"
       },
       {
         "id": "d",
@@ -3127,9 +3127,9 @@
     "correctOptionId": "d",
     "explanation": "Approved vendors follow regulatory oversight and recall traceability expectations.",
     "distractorExplanations": {
-      "a": "Pricing is a separate business decision.",
-      "b": "Handwashing remains mandatory.",
-      "c": "Thermometers still need calibration."
+      "a": "Approved-source rules are about food safety and inspection; bid price is a separate purchasing decision.",
+      "b": "Delivery timing is a service term in the vendor contract, not what the approved-source requirement guarantees.",
+      "c": "Deliveries from approved suppliers must still be inspected for temperature, packaging, and quality on receipt."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3208,27 +3208,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Wait for health department citations before correcting practices"
+        "text": "Correct practices after each health inspection"
       },
       {
         "id": "b",
-        "text": "Rely solely on end-product tasting"
+        "text": "Rely on end-product testing to confirm safety"
       },
       {
         "id": "c",
-        "text": "Take preventive actions and monitor CCPs rather than only reacting to violations"
+        "text": "Take preventive actions and monitor CCPs"
       },
       {
         "id": "d",
-        "text": "Disable all temperature logs to save time"
+        "text": "Delegate food safety oversight to the vendor"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Active control includes training, monitoring, and corrective action before outbreaks.",
+    "explanation": "Active control includes training, monitoring, and corrective action before outbreaks. Active managerial control is proactive rather than only reacting to violations.",
     "distractorExplanations": {
-      "a": "Proactive prevention beats reactive citations.",
-      "b": "Tasting does not verify safety.",
-      "d": "Logs document control."
+      "a": "Fixing problems after inspections is reactive; active managerial control builds prevention into daily operations.",
+      "b": "End-product testing detects problems after the fact; active control monitors CCPs during production.",
+      "d": "The person in charge stays responsible for food safety; it cannot be handed to suppliers."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3241,15 +3241,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Serving only undercooked ground beef"
+        "text": "Cooking ground beef to 155°F and holding hot foods at 135°F or above"
       },
       {
         "id": "b",
-        "text": "Ignoring vomiting incidents in the kitchen"
+        "text": "Restricting ill employees to dishwashing duty and wiping surfaces with quaternary ammonium"
       },
       {
         "id": "c",
-        "text": "Discontinuing all hand sinks"
+        "text": "Using hand sanitizer in place of handwashing and cleaning dining tables once daily"
       },
       {
         "id": "d",
@@ -3259,9 +3259,9 @@
     "correctOptionId": "d",
     "explanation": "Norovirus spreads via fecal-oral route; exclusion and hygiene break transmission.",
     "distractorExplanations": {
-      "a": "Undercooked beef is unrelated to norovirus.",
-      "b": "Vomiting requires cleanup and exclusion protocols.",
-      "c": "Hand sinks are critical."
+      "a": "These are time/temperature controls for bacteria in meat; norovirus spreads mainly through ill workers and surfaces.",
+      "b": "Vomiting or diarrhea requires exclusion, not restriction, and quats work poorly on norovirus; chlorine is preferred.",
+      "c": "Hand sanitizer is not effective against norovirus and cannot replace handwashing; daily cleaning is too infrequent."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3278,23 +3278,23 @@
       },
       {
         "id": "b",
-        "text": "Employee satisfaction scores"
+        "text": "The as-purchased price per pound quoted on the vendor invoice"
       },
       {
         "id": "c",
-        "text": "Patient blood glucose response"
+        "text": "The minimum internal cooking temperature for each chicken cut"
       },
       {
         "id": "d",
-        "text": "Only the color of the menu cover"
+        "text": "The number of portions to order based on patient census and menu popularity data"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Yield testing links purchase weight to usable portions for recipe costing.",
     "distractorExplanations": {
-      "b": "HR satisfaction is separate.",
-      "c": "Clinical glucose is unrelated.",
-      "d": "Menu color is design."
+      "b": "The AP price is an input to the yield test; the test converts it to edible-portion cost after losses.",
+      "c": "Cooking temperatures are food safety standards; a yield test measures weight lost to trimming and cooking.",
+      "d": "Forecasting portions from census is production planning; a yield test measures usable weight per purchase unit."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3307,27 +3307,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Cooking all items from scratch in a central kitchen then transporting them"
+        "text": "Cooking items in a central kitchen, then transporting them to service sites"
       },
       {
         "id": "b",
-        "text": "Purchasing fully prepared or convenience foods that are assembled and served with little or no on-site cooking"
+        "text": "Purchasing fully prepared or convenience foods that are assembled and served"
       },
       {
         "id": "c",
-        "text": "Cooking and serving only from raw ingredients the same day as the sole model"
+        "text": "Purchasing raw ingredients and cooking them on site close to service"
       },
       {
         "id": "d",
-        "text": "Holding large cooked batches in the danger zone for hours"
+        "text": "Cooking and rapidly chilling foods for storage, then reheating on site"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Assembly-serve uses commercially prepared items assembled on site, minimizing production labor and cooking.",
+    "explanation": "Assembly-serve uses commercially prepared items assembled on site, minimizing production labor and cooking. There is little or no on-site cooking.",
     "distractorExplanations": {
-      "a": "Commissary/central production cooks then distributes.",
-      "c": "Conventional production cooks from scratch on site.",
-      "d": "Danger-zone holding is unsafe in any system."
+      "a": "Central cooking and transport describes a commissary system, which still involves full production.",
+      "c": "Cooking from raw ingredients on site is conventional production, the opposite of assembly-serve.",
+      "d": "Cooking then chilling for later reheating describes ready-prepared (cook-chill) production."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3340,11 +3340,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Leaving doors propped open overnight"
+        "text": "Scheduled pesticide spraying by kitchen staff throughout food prep areas"
       },
       {
         "id": "b",
-        "text": "Storing food on the floor"
+        "text": "Bait stations placed on food prep tables to catch pests where they feed"
       },
       {
         "id": "c",
@@ -3352,15 +3352,15 @@
       },
       {
         "id": "d",
-        "text": "Ignoring droppings until inspection day"
+        "text": "Calling a pest control operator only after droppings are found"
       }
     ],
     "correctOptionId": "c",
     "explanation": "IPM combines prevention, monitoring, and targeted control with records.",
     "distractorExplanations": {
-      "a": "Open doors invite pests.",
-      "b": "Food must be stored off the floor.",
-      "d": "Droppings require immediate action."
+      "a": "IPM relies on prevention first; pesticides are applied by a licensed operator, not routinely by kitchen staff.",
+      "b": "Bait and pesticides must be kept away from food-contact surfaces; placing them on prep tables risks contamination.",
+      "d": "Waiting for droppings is reactive; IPM uses ongoing monitoring and prevention before an infestation is visible."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3373,15 +3373,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the brand of vacuum sealer"
+        "text": "Vacuum seal integrity alone, since oxygen removal prevents growth"
       },
       {
         "id": "b",
-        "text": "Menu font readability"
+        "text": "Final cooking temperature only, since chilling is optional after pasteurization"
       },
       {
         "id": "c",
-        "text": "Number of napkins per table"
+        "text": "Product appearance and odor at rethermalization before service"
       },
       {
         "id": "d",
@@ -3391,9 +3391,9 @@
     "correctOptionId": "d",
     "explanation": "Sous vide requires validated time/temp and cooling to control pathogens like C. botulinum risk.",
     "distractorExplanations": {
-      "a": "Equipment brand alone is insufficient.",
-      "b": "Fonts are unrelated.",
-      "c": "Napkins do not verify pasteurization."
+      "a": "Removing oxygen favors anaerobes such as C. botulinum, so time–temperature control is still essential.",
+      "b": "Pasteurization leaves spores, so rapid chilling and cold holding must also be verified and recorded.",
+      "c": "Sensory checks cannot detect pathogens or toxins; safety depends on documented time–temperature records."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3406,27 +3406,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ready-to-eat refrigerated foods with extended shelf life (e.g., deli meats, soft cheeses)"
+        "text": "Ready-to-eat refrigerated foods with extended shelf life"
       },
       {
         "id": "b",
-        "text": "Only raw dried beans in sealed bags at room temperature"
+        "text": "Low-acid canned foods that are improperly processed"
       },
       {
         "id": "c",
-        "text": "Only fresh whole citrus with intact peel before processing"
+        "text": "Cooked rice held at room temperature after cooking"
       },
       {
         "id": "d",
-        "text": "Only bottled water sealed at the source"
+        "text": "Raw shell eggs and undercooked poultry dishes"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "L. monocytogenes grows at refrigeration temperatures in RTE products.",
+    "explanation": "L. monocytogenes grows at refrigeration temperatures in RTE products. Examples include deli meats, hot dogs, smoked seafood, and soft cheeses.",
     "distractorExplanations": {
-      "b": "Dry beans are low moisture.",
-      "c": "Intact citrus is not the classic RTE risk.",
-      "d": "Water is not the primary Listeria vehicle discussed here."
+      "b": "Improperly processed low-acid canned foods are the classic risk for Clostridium botulinum, not Listeria.",
+      "c": "Cooked rice left at room temperature is the classic risk for Bacillus cereus, not Listeria.",
+      "d": "Raw eggs and undercooked poultry are classic Salmonella (and Campylobacter) risks, not the RTE Listeria risk."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3439,7 +3439,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Keep food hot indefinitely without monitoring"
+        "text": "Hold cooked food at 135°F or above until service"
       },
       {
         "id": "b",
@@ -3447,19 +3447,19 @@
       },
       {
         "id": "c",
-        "text": "Replace all employee training"
+        "text": "Thaw frozen products quickly at room temperature"
       },
       {
         "id": "d",
-        "text": "Eliminate the need for any refrigeration"
+        "text": "Store chilled food long term at 41°F or below until it is needed"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Rapid chilling reduces microbial growth during cooling.",
     "distractorExplanations": {
-      "a": "Hot holding still has limits.",
-      "c": "Training remains required.",
-      "d": "Refrigeration is still necessary after chilling."
+      "a": "Hot holding at 135°F or above is done with hot-holding equipment, not blast chillers designed for rapid cooling.",
+      "c": "Room-temperature thawing is unsafe; blast chillers are for rapid cooling of cooked food, not thawing.",
+      "d": "Long-term cold storage is done in walk-ins or reach-ins; blast chillers cool food quickly before storage."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3472,15 +3472,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only financial targets for the next quarter"
+        "text": "The organization's desired future state in 5–10 years"
       },
       {
         "id": "b",
-        "text": "The personal hobbies of one manager"
+        "text": "Measurable targets the department must meet this quarter"
       },
       {
         "id": "c",
-        "text": "Exact oven temperatures for poultry"
+        "text": "The core beliefs that guide how staff behave"
       },
       {
         "id": "d",
@@ -3490,9 +3490,9 @@
     "correctOptionId": "d",
     "explanation": "Mission clarifies present reason for existence and primary stakeholders.",
     "distractorExplanations": {
-      "a": "Financial targets are objectives, not mission.",
-      "b": "Hobbies are irrelevant.",
-      "c": "Cooking temps are operational standards."
+      "a": "A desired future state is the vision statement; the mission states the current purpose and whom it serves.",
+      "b": "Measurable, time-bound targets are objectives that support the mission, not the mission statement itself.",
+      "c": "Core beliefs guiding behavior are the organization's values statement, not its mission."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3538,7 +3538,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Clinical medical nutrition therapy licensure"
+        "text": "Authorization to provide medical nutrition therapy"
       },
       {
         "id": "b",
@@ -3546,19 +3546,19 @@
       },
       {
         "id": "c",
-        "text": "Automatic RD credential"
+        "text": "Eligibility to sit for the CDR registration exam"
       },
       {
         "id": "d",
-        "text": "Exemption from all health inspections"
+        "text": "Exemption of the facility from routine health inspections"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Food protection manager certification covers sanitation and HACCP basics.",
     "distractorExplanations": {
-      "a": "MNT requires RD credential.",
-      "c": "ServSafe is not an RD license.",
-      "d": "Inspections still occur."
+      "a": "MNT is provided by RDNs under state licensure; a food safety certificate does not authorize clinical practice.",
+      "c": "CDR exam eligibility requires an accredited degree and supervised practice, not a food safety certificate.",
+      "d": "Certified managers are required by food code, but the facility is still inspected routinely."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3571,11 +3571,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee specific weight outcomes for every client"
+        "text": "Promise clients specific weight-loss results in writing"
       },
       {
         "id": "b",
-        "text": "Share confidential records on social media"
+        "text": "Share client records with family members on request"
       },
       {
         "id": "c",
@@ -3583,15 +3583,15 @@
       },
       {
         "id": "d",
-        "text": "Prescribe medication independently"
+        "text": "Recommend supplements they sell to maximize client outcomes"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Ethical practice includes competence, honesty, and client-centered care.",
     "distractorExplanations": {
-      "a": "Outcomes cannot be guaranteed.",
-      "b": "Confidentiality must be protected.",
-      "d": "Prescribing is outside RD scope except as allowed by law."
+      "a": "The Code requires honesty about expected results; promising specific outcomes is misleading.",
+      "b": "Disclosure needs client consent or legal authority; family requests alone do not override confidentiality.",
+      "d": "Selling products to clients is a conflict of interest that must be disclosed and must not drive recommendations."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3604,15 +3604,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only how to bypass temperature logs"
+        "text": "Payroll and benefits paperwork, with job training deferred for months"
       },
       {
         "id": "b",
-        "text": "Confidential gossip about patients"
+        "text": "Advanced clinical MNT protocols for every new food service worker"
       },
       {
         "id": "c",
-        "text": "Personal trainer certification exams"
+        "text": "A single video on company history, with skills learned on the job"
       },
       {
         "id": "d",
@@ -3622,9 +3622,9 @@
     "correctOptionId": "d",
     "explanation": "Orientation integrates regulatory requirements and department procedures.",
     "distractorExplanations": {
-      "a": "Temperature logs must not be bypassed.",
-      "b": "Gossip violates HIPAA/ethics.",
-      "c": "PT exams are unrelated."
+      "a": "Paperwork is part of onboarding, but delaying safety and job training leaves new staff unprepared to work safely.",
+      "b": "Advanced MNT is outside a food service worker's role; orientation covers safety, sanitation, and job duties.",
+      "c": "A history video omits required safety, sanitation, and policy content that orientation must cover."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3641,23 +3641,23 @@
       },
       {
         "id": "b",
-        "text": "Immediate termination for any minor error without review"
+        "text": "Immediate termination for a first minor error to deter others"
       },
       {
         "id": "c",
-        "text": "Public humiliation in the cafeteria"
+        "text": "Verbal warnings only, with no written record to avoid conflict"
       },
       {
         "id": "d",
-        "text": "No documentation of conversations"
+        "text": "Suspension without pay as the first step, followed by coaching if the problem repeats"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Progressive discipline uses fair, documented steps aligned with policy.",
     "distractorExplanations": {
-      "b": "Minor errors often start with coaching.",
-      "c": "Humiliation violates professionalism.",
-      "d": "Documentation supports fairness."
+      "b": "Progressive discipline escalates step by step; termination is the final step, not the response to a first minor error.",
+      "c": "Verbal warnings are the first step, but documentation is required to support fairness and later steps.",
+      "d": "Reverses the sequence: coaching and verbal warnings come before suspension in progressive discipline."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3670,7 +3670,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Sodium, water, oxygen, temperature"
+        "text": "Sales, workload, overhead, and turnover"
       },
       {
         "id": "b",
@@ -3678,19 +3678,19 @@
       },
       {
         "id": "c",
-        "text": "Staff wages on one shift"
+        "text": "Strategies, weaknesses, objectives, and timelines"
       },
       {
         "id": "d",
-        "text": "Only the color of uniforms"
+        "text": "Staffing, wages, operations, and training"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SWOT supports strategic planning by internal and external scanning.",
     "distractorExplanations": {
-      "a": "Those nutrition terms are not SWOT.",
-      "c": "SWOT is broader than one shift wage.",
-      "d": "Uniform color is trivial to SWOT."
+      "a": "These are operating metrics; SWOT pairs internal strengths/weaknesses with external opportunities/threats.",
+      "c": "Strategies and objectives come after a SWOT analysis; the S and O stand for strengths and opportunities.",
+      "d": "These are internal operating areas; SWOT also scans external opportunities and threats."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3703,11 +3703,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Measures patient serum albumin"
+        "text": "Relates food cost to the number of meals served"
       },
       {
         "id": "b",
-        "text": "Replaces HACCP monitoring"
+        "text": "Relates labor cost to total food sales revenue"
       },
       {
         "id": "c",
@@ -3715,15 +3715,15 @@
       },
       {
         "id": "d",
-        "text": "Calculates vitamin D status"
+        "text": "Relates patient satisfaction to staffing levels"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Labor productivity links meal volume to scheduled hours for staffing decisions.",
     "distractorExplanations": {
-      "a": "Albumin is clinical lab data.",
-      "b": "HACCP remains separate.",
-      "d": "Vitamin D is unrelated."
+      "a": "Food cost divided by meals is food cost per meal, a cost metric, not a labor productivity measure.",
+      "b": "Labor cost divided by sales is labor cost percentage; meals per labor hour uses meals and paid hours.",
+      "d": "Satisfaction scores are quality measures; meals per labor hour relates meals produced to labor hours."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3736,15 +3736,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only employee shoe sizes"
+        "text": "This year's budget to the prior year's budgeted amounts"
       },
       {
         "id": "b",
-        "text": "Only menu font choices"
+        "text": "Projected revenue to projected expenses before the period"
       },
       {
         "id": "c",
-        "text": "Only the UL for niacin"
+        "text": "Actual results to those of peer hospitals for a period"
       },
       {
         "id": "d",
@@ -3754,9 +3754,9 @@
     "correctOptionId": "d",
     "explanation": "Variance analysis identifies over- or under-spending versus plan.",
     "distractorExplanations": {
-      "a": "Shoe size is not financial.",
-      "b": "Fonts are design.",
-      "c": "UL is a nutrition DRI."
+      "a": "Comparing two budgets is trend analysis of plans; a variance report compares actual results with the budget.",
+      "b": "Projecting revenue against expenses is budget preparation; variance analysis happens after actuals are known.",
+      "c": "Comparing results with peer hospitals is benchmarking, not budget variance analysis."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3773,23 +3773,23 @@
       },
       {
         "id": "b",
-        "text": "Serving food with bare hands after handling raw meat"
+        "text": "Hand hygiene, gloves replacing handwashing, and clean uniform protocols"
       },
       {
         "id": "c",
-        "text": "Ignoring vomiting employees on the line"
+        "text": "Hand sanitizer in place of handwashing and daily uniform checks"
       },
       {
         "id": "d",
-        "text": "Storing chemicals with food"
+        "text": "Bare-hand contact with ready-to-eat foods if hands were just washed"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Employee health and hygiene policies reduce transmission to vulnerable patients.",
     "distractorExplanations": {
-      "b": "Bare hands after raw meat violate hygiene.",
-      "c": "Vomiting workers must be excluded.",
-      "d": "Chemicals must be separated from food."
+      "b": "Gloves do not replace handwashing; hands must be washed before putting on gloves.",
+      "c": "Hand sanitizer is not a substitute for handwashing in food handling, and this omits excluding ill workers.",
+      "d": "Food Code prohibits bare-hand contact with ready-to-eat foods even after handwashing; utensils or gloves are required."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3802,7 +3802,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only number of parking spaces"
+        "text": "Sales minus cost of food sold, labor, and overhead for the period"
       },
       {
         "id": "b",
@@ -3810,19 +3810,19 @@
       },
       {
         "id": "c",
-        "text": "Only patient room numbers"
+        "text": "Sales minus the cost of food and beverages sold, before labor and overhead"
       },
       {
         "id": "d",
-        "text": "Only dietary consult minutes documented"
+        "text": "Cash on hand at the end of the period after paying vendors"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Revenue is income from sales; profit or contribution margin is what remains after COGS, labor, and overhead.",
     "distractorExplanations": {
-      "a": "Parking is not café revenue.",
-      "c": "Room numbers are unrelated.",
-      "d": "Consult minutes are clinical billing."
+      "a": "Subtracting food cost, labor, and overhead from sales gives net profit, not revenue.",
+      "c": "Sales minus cost of goods sold is gross profit (contribution); revenue is total sales before any deduction.",
+      "d": "End-of-period cash is a balance sheet figure; revenue is sales income earned during the period."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3835,11 +3835,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the manager's vacation preferences"
+        "text": "The clinic's mission and vision statements and logo design"
       },
       {
         "id": "b",
-        "text": "Only social media follower counts without context"
+        "text": "Patient outcomes measured after the clinic's first year of operation"
       },
       {
         "id": "c",
@@ -3847,15 +3847,15 @@
       },
       {
         "id": "d",
-        "text": "Only cafeteria napkin inventory"
+        "text": "Current inpatient census and cafeteria sales trends"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Feasibility examines whether the service can be sustained operationally and financially.",
     "distractorExplanations": {
-      "a": "Vacation prefs are irrelevant.",
-      "b": "Followers alone do not prove demand.",
-      "d": "Napkin stock is unrelated."
+      "a": "Mission, vision, and branding come after deciding the clinic is viable; they do not test demand or finances.",
+      "b": "First-year outcomes are measured by outcome evaluation after launch; feasibility is assessed before opening.",
+      "d": "Inpatient census and café sales describe other services and do not show outpatient demand or reimbursement."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3868,15 +3868,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Eliminating all diet orders"
+        "text": "Menu pricing, café profitability, and retail sales growth"
       },
       {
         "id": "b",
-        "text": "Guaranteed five-star restaurant ratings"
+        "text": "Patient satisfaction and taste-panel scores as the main accreditation measure"
       },
       {
         "id": "c",
-        "text": "Replacing physicians with line cooks"
+        "text": "Staff union contracts and wage parity across departments"
       },
       {
         "id": "d",
@@ -3886,9 +3886,9 @@
     "correctOptionId": "d",
     "explanation": "Accreditation standards address safe food handling and correct diet delivery.",
     "distractorExplanations": {
-      "a": "Diet orders remain essential.",
-      "b": "Ratings are not accreditation criteria.",
-      "c": "Physicians retain medical authority."
+      "a": "Retail financial performance is a management concern, not a Joint Commission accreditation standard.",
+      "b": "Satisfaction data may support quality work, but standards focus on patient safety and correct diet delivery.",
+      "c": "Labor contracts and wages fall under labor law and HR, not Joint Commission foodservice standards."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3905,23 +3905,23 @@
       },
       {
         "id": "b",
-        "text": "Avoid all quality improvement efforts"
+        "text": "Set prices to match the lowest-cost peer hospital"
       },
       {
         "id": "c",
-        "text": "Eliminate standardized recipes"
+        "text": "Replace internal quality monitoring with peer hospitals' data"
       },
       {
         "id": "d",
-        "text": "Stop tracking food cost entirely"
+        "text": "Prove compliance with state food code requirements"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Benchmarks contextualize metrics like cost per meal and satisfaction scores.",
     "distractorExplanations": {
-      "b": "QI uses benchmarks actively.",
-      "c": "Standardized recipes support consistency.",
-      "d": "Food cost tracking remains essential."
+      "b": "Benchmarking informs improvement; copying a peer's prices ignores local cost structure and goals.",
+      "c": "Benchmarks add external context to internal monitoring; they do not replace ongoing QI data.",
+      "d": "Food code compliance is shown through inspections; benchmarking compares performance metrics with peers."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
@@ -3934,27 +3934,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Unilateral manager changes to contract terms without discussion"
+        "text": "Individual employees negotiating pay directly with managers"
       },
       {
         "id": "b",
-        "text": "Negotiating wages, benefits, and working conditions between management and union representatives"
+        "text": "Negotiating wages, benefits, and working conditions"
       },
       {
         "id": "c",
-        "text": "Replacing all diet orders with social media polls"
+        "text": "Filing a complaint with OSHA about workplace hazards"
       },
       {
         "id": "d",
-        "text": "Eliminating sanitation training to save time"
+        "text": "A state agency setting minimum wages for food workers"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Labor contracts are negotiated collectively per labor law and union agreements.",
+    "explanation": "Labor contracts are negotiated collectively per labor law and union agreements. Bargaining takes place between management and union representatives.",
     "distractorExplanations": {
-      "a": "Unilateral changes violate agreements.",
-      "c": "Diet orders are clinical.",
-      "d": "Sanitation training is mandatory."
+      "a": "Individual negotiation is the opposite of collective bargaining, where the union bargains for the whole unit.",
+      "c": "OSHA complaints are a regulatory safety process, not negotiation of a labor contract with management.",
+      "d": "Minimum wages are set by law; collective bargaining sets contract terms between management and the union."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."

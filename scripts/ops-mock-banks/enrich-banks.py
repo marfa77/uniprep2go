@@ -46,6 +46,13 @@ KEY_BALANCE_TOPICS = {
 KEY_FILL_TOPICS = {
     "gmat-focus-readiness-check": {"quant", "data-insights"},
     "gre-readiness-check": {"quant"},
+    "enrolled-agent-readiness-check": {"individuals", "businesses", "representation", "practices"},
+    "epa-608-readiness-check": {"core", "type-1", "type-2", "type-3"},
+    "fl-real-estate-readiness-check": {"contracts-titles", "finance-appraisal", "license-law", "property-practice"},
+    "il-real-estate-readiness-check": {"agency-law", "finance-math", "il-license-law", "property-ownership"},
+    "nc-real-estate-readiness-check": {"agency-law", "finance-math", "nc-license-law", "property-ownership"},
+    "pa-real-estate-readiness-check": {"agency-law", "finance-closing", "pa-license-law", "property-ownership"},
+    "tx-real-estate-readiness-check": {"contracts-agency", "finance-closing", "license-law", "property-practice"},
 }
 NUMERIC_OPTION = re.compile(r"\s*\$?(-?[\d,]*\.?\d+)\s*(%|[a-zA-Z ]{0,12})?\s*")
 SOURCE_FILE = {"sie-quick-diagnostic": "sie-full-mock"}

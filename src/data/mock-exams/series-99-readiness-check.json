@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "Approving IPO prospectuses for the SEC"
+        "text": "Reviewing and approving registration statements for new issues before SEC effectiveness"
       },
       {
         "id": "c",
-        "text": "Setting Federal Reserve interest rates"
+        "text": "Recommending securities to retail customers and soliciting new brokerage accounts"
       },
       {
         "id": "d",
-        "text": "Auditing public company financial statements as CPA"
+        "text": "Auditing the firm's annual financial statements as its independent accountant"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Series 99 covers ops professionals handling account maintenance, transactions, and related supervisory tasks.",
     "distractorExplanations": {
-      "b": "Investment banking/SEC filing roles differ.",
-      "c": "Federal Reserve role.",
-      "d": "External audit role."
+      "b": "Reviewing registration statements is an investment banking / SEC Corporation Finance function, not back-office operations work.",
+      "c": "Recommending securities and soliciting accounts is a registered representative (Series 7) sales role, not an operations function.",
+      "d": "An independent public accountant audits the firm's annual report under Rule 17a-5; operations staff are not the external auditor."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Verbal promise"
+        "text": "A signed trade confirmation from the customer, which substitutes for endorsement"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Customer social security card taped to street sign"
+        "text": "A notarized customer signature in place of a medallion signature guarantee"
       },
       {
         "id": "d",
-        "text": "Physical certificate always mandatory in modern markets"
+        "text": "Delivery of a physical certificate, because book-entry positions are not good delivery"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ops ensures securities transfers meet DTC, transfer agent, and firm requirements.",
     "distractorExplanations": {
-      "a": "Documentation required.",
-      "c": "Not valid delivery.",
-      "d": "Book-entry common; rules still apply."
+      "a": "A trade confirmation documents the trade; it does not replace a proper endorsement or stock power for good delivery of certificates.",
+      "c": "Transfer agents require a medallion signature guarantee for transfers; a notary acknowledgment is not an accepted substitute.",
+      "d": "Most securities settle by book-entry at DTC; book-entry delivery is good delivery, so a physical certificate is not required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Settlement occurs same instant as order entry"
+        "text": "Trade settles one calendar day after trade date"
       },
       {
         "id": "b",
-        "text": "Settlement after 30 calendar days standard"
+        "text": "Trade settles two business days after trade date"
       },
       {
         "id": "c",
-        "text": "No settlement ever required"
+        "text": "Trade settles on the same business day as trade date"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "US equities moved to T+1 settlement cycle reducing counterparty risk.",
     "distractorExplanations": {
-      "a": "Settlement follows trade date rules.",
-      "b": "Not standard equity cycle.",
-      "c": "Settlement mandatory."
+      "a": "Settlement counts business days, not calendar days; a Friday trade settles the following Monday, not Saturday.",
+      "b": "Two business days (T+2) was the prior cycle; U.S. standard equity settlement moved to T+1 on May 28, 2024.",
+      "c": "Same-day settlement (T+0, a 'cash' trade) is a special arrangement, not the standard regular-way settlement cycle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -172,7 +172,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate unrestricted sale always without review"
+        "text": "Immediate free sale once deposited, since the plan already cleared it"
       },
       {
         "id": "b",
@@ -180,19 +180,19 @@
       },
       {
         "id": "c",
-        "text": "No documentation of acquisition date"
+        "text": "Transfer to the firm's DTC account as freely tradable street-name stock"
       },
       {
         "id": "d",
-        "text": "Transfer to unrelated third party anonymously always allowed"
+        "text": "Filing a Form 4 by the operations department on the customer's behalf"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Restricted securities require ops controls on legends, Rule 144, and release events.",
     "distractorExplanations": {
-      "a": "Sale may require compliance approval.",
-      "c": "Tax/lot data required.",
-      "d": "Transfer rules and AML apply."
+      "a": "Depositing restricted stock does not lift the legend; removal needs issuer/counsel sign-off and Rule 144 conditions before sale.",
+      "c": "Legended shares cannot be treated as freely tradable street-name stock until the issuer and transfer agent remove the restriction.",
+      "d": "Form 4 is the insider's own Section 16 ownership report; filing it does not release a legend or establish ops restriction controls."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "All orders anytime get prior month NAV"
+        "text": "Orders priced at the NAV computed at the prior day's market close"
       },
       {
         "id": "b",
-        "text": "Cut-offs irrelevant for funds"
+        "text": "Orders received after deadline also get that day's NAV"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Crypto priced like mutual funds always same day"
+        "text": "Orders priced at the intraday market price when the order executes"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Fund ops must timestamp orders relative to prospectus cut-off for NAV pricing.",
     "distractorExplanations": {
-      "a": "Incorrect pricing rule.",
-      "b": "Cut-offs fundamental.",
-      "d": "Different products/rules."
+      "a": "That is backward pricing; Rule 22c-1 requires forward pricing at the next NAV computed after the order is received.",
+      "b": "Pricing after-deadline orders at that day's NAV is illegal late trading; those orders receive the next day's NAV.",
+      "d": "Intraday execution pricing applies to ETFs and stocks; open-end mutual funds price once daily at the next computed NAV."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -238,15 +238,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Let customers keep old ticker indefinitely"
+        "text": "Collect elections from each holder before exchanging the target shares"
       },
       {
         "id": "b",
-        "text": "Convert all accounts to cash without notice"
+        "text": "Hold target positions unchanged until each customer submits certificates"
       },
       {
         "id": "c",
-        "text": "Skip issuer announcement review"
+        "text": "Credit merger consideration on the record date set for shareholder voting"
       },
       {
         "id": "d",
@@ -256,9 +256,9 @@
     "correctOptionId": "d",
     "explanation": "Mandatory reorganizations applied firm-wide per issuer instructions.",
     "distractorExplanations": {
-      "a": "Ticker retired post merger.",
-      "b": "Cash/stock per terms.",
-      "c": "Announcements drive processing."
+      "a": "Elections are collected for voluntary actions; a mandatory merger is applied to every holder without customer instructions.",
+      "b": "Book-entry positions are exchanged through DTC on the effective/payable date; ops does not wait for customers to submit certificates.",
+      "c": "The voting record date decides who may vote on the deal, not when consideration is paid; exchange occurs on the payable date."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -275,23 +275,23 @@
       },
       {
         "id": "b",
-        "text": "Customer logging into app"
+        "text": "Customer entering a limit order rather than a market order on the sell"
       },
       {
         "id": "c",
-        "text": "Reading research report"
+        "text": "Customer selling long shares already held in the firm account in street name"
       },
       {
         "id": "d",
-        "text": "Paying advisory fee"
+        "text": "A trade executed late in the day near the 4:00 p.m. market close"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Fails require buy-in procedures and regulatory reporting in some cases.",
     "distractorExplanations": {
-      "b": "Unrelated.",
-      "c": "Unrelated.",
-      "d": "Unrelated."
+      "b": "Order type affects execution price, not the seller's ability to deliver shares on settlement date, so it does not cause a fail.",
+      "c": "Selling fully paid shares already held in street name is the normal way to ensure delivery; it does not cause a fail.",
+      "d": "Execution time within the trading day does not affect delivery; the trade still settles T+1 from the firm's existing position."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -304,27 +304,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate full release for all checks always day zero"
+        "text": "Release funds once the check is endorsed and imaged on deposit"
       },
       {
         "id": "b",
-        "text": "Hold funds per Regulation CC and firm policy until cleared"
+        "text": "Hold funds under firm policy until the check has cleared"
       },
       {
         "id": "c",
-        "text": "No endorsement verification"
+        "text": "Hold funds for 30 calendar days on every check by SEC rule"
       },
       {
         "id": "d",
-        "text": "Deposit to unrelated account if faster"
+        "text": "Credit the account and permit withdrawal by wire the same day"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Funds availability schedules and holds manage check fraud risk.",
+    "explanation": "Regulation CC governs funds availability at banks, not broker-dealers. A brokerage firm sets its own written hold policy for deposited checks and keeps the funds unavailable until the check clears collection, limiting returned-check and kiting losses.",
     "distractorExplanations": {
-      "a": "Holds may apply.",
-      "c": "Endorsement review standard.",
-      "d": "Must deposit to customer's account."
+      "a": "Endorsement and imaging do not mean the check has cleared; funds stay on hold until collection to manage returned-check risk.",
+      "c": "No SEC rule mandates a flat 30-day hold; a broker-dealer's check holds follow its own written funds-availability policy.",
+      "d": "Same-day withdrawal of uncollected check funds is a classic check-kiting fraud path; holds apply until the check clears."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -333,31 +333,31 @@
     "id": "series-99-readiness-check-ops-011",
     "examSlug": "series-99-readiness-check",
     "topicId": "ops",
-    "prompt": "Options exercise assignment processing occurs",
+    "prompt": "Options exercise and assignment processing in operations occurs:",
     "options": [
       {
         "id": "a",
-        "text": "Only when customer requests stock certificate art"
+        "text": "Only on the third business day after expiration through the OCC"
       },
       {
         "id": "b",
-        "text": "Never for index options"
+        "text": "Before expiration for European options whenever the holder chooses"
       },
       {
         "id": "c",
-        "text": "On expiration for American options when holder exercises or is assigned"
+        "text": "Any business day until expiration when American-style options are exercised"
       },
       {
         "id": "d",
-        "text": "Automatically for all OTM options beneficially"
+        "text": "On expiration for every out-of-the-money option held in the customer account"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Ops handles exercise/assignment, stock delivery, and cash settlement per OCC.",
+    "explanation": "American-style options can be exercised on any business day up to expiration, so operations must process exercise notices and OCC's random assignments daily and settle the resulting stock trade T+1. European-style options are exercised only at expiration.",
     "distractorExplanations": {
-      "a": "Irrelevant.",
-      "b": "Index options cash settled.",
-      "d": "OTM options typically expire worthless."
+      "a": "OCC processes exercises on the exercise date with T+1 settlement; there is no three-day post-expiration processing window.",
+      "b": "European-style options can be exercised only at expiration, so there is no early exercise or assignment to process.",
+      "d": "OCC exercise-by-exception covers in-the-money contracts ($0.01 or more ITM); out-of-the-money options normally expire worthless."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -370,15 +370,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate wire to new address without verification"
+        "text": "Mailing confirmation to the new address only, then releasing pending wires"
       },
       {
         "id": "b",
-        "text": "No documentation"
+        "text": "An updated W-9 and new CIP verification as if opening a new account"
       },
       {
         "id": "c",
-        "text": "Closure of all accounts automatically"
+        "text": "Suspension of trading in the account until the next quarterly statement"
       },
       {
         "id": "d",
@@ -388,9 +388,9 @@
     "correctOptionId": "d",
     "explanation": "Address changes are common fraud vector; firms verify before outbound funds.",
     "distractorExplanations": {
-      "a": "Verification prevents fraud.",
-      "b": "Documentation required.",
-      "c": "Not automatic closure."
+      "a": "Confirming only at the new address lets a fraudster confirm their own change; notice should go to the prior address or contact on file.",
+      "b": "An address change does not reopen the account; it triggers change verification and Red Flags review, not a full new CIP cycle.",
+      "c": "Firms verify the change and may hold disbursements; freezing trading until the next statement cycle is not the required response."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -407,23 +407,23 @@
       },
       {
         "id": "b",
-        "text": "Prime only handles piggy banks"
+        "text": "Prime serves retail clients who open margin accounts above $25,000"
       },
       {
         "id": "c",
-        "text": "Retail never settles trades"
+        "text": "Prime settles trades on T+2 while retail accounts settle on T+1"
       },
       {
         "id": "d",
-        "text": "Identical processes"
+        "text": "Prime is exempt from Rule 15c3-3 customer protection requirements"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Prime brokerage ops supports hedge funds with margin, short locates, and reporting.",
     "distractorExplanations": {
-      "b": "Nonsense.",
-      "c": "Retail settles trades.",
-      "d": "Processes differ."
+      "b": "Margin accounts above the $25,000 pattern-day-trader level are still retail; prime brokerage serves hedge funds and institutions.",
+      "c": "Settlement cycle depends on the security, not the client type; prime and retail U.S. equity trades both settle T+1.",
+      "d": "Prime brokerage customers' assets are still covered by Rule 15c3-3 possession/control and reserve formula requirements."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Market losses on stock decline"
+        "text": "Market losses on securities when prices decline, within the same limits"
       },
       {
         "id": "b",
@@ -444,19 +444,19 @@
       },
       {
         "id": "c",
-        "text": "All crypto losses worldwide"
+        "text": "Customer deposits in bank sweep accounts, up to $500,000 per customer"
       },
       {
         "id": "d",
-        "text": "Guaranteed investment performance"
+        "text": "Losses from fraud by the customer's own investment adviser, within limits"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SIPC replaces missing assets in liquidation, not market value declines.",
     "distractorExplanations": {
-      "a": "Market risk not covered.",
-      "c": "Crypto coverage limited/evolving.",
-      "d": "Not performance guarantee."
+      "a": "SIPC restores missing customer property in a broker-dealer liquidation; it does not cover market losses from price declines.",
+      "c": "Cash swept to a bank is covered by FDIC, not SIPC; SIPC's $500,000 limit (including $250,000 cash) applies to assets held at the broker-dealer.",
+      "d": "SIPC does not insure against bad advice or adviser fraud outside a broker-dealer failure; it replaces missing assets in a liquidation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore breaks until annual audit"
+        "text": "Customer orders match the execution prices quoted on the NBBO at entry"
       },
       {
         "id": "b",
-        "text": "Delete unmatched trades silently"
+        "text": "Positions are reconciled monthly against customer account statements"
       },
       {
         "id": "c",
@@ -481,15 +481,15 @@
       },
       {
         "id": "d",
-        "text": "Only reconcile cash never positions"
+        "text": "Cash balances reconcile to the bank, with positions reviewed at year-end"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Daily recon identifies breaks in trades, cash, and positions for timely resolution.",
     "distractorExplanations": {
-      "a": "Daily recon standard.",
-      "b": "Breaks must be investigated.",
-      "d": "Positions and cash both reconciled."
+      "a": "Comparing executions to the NBBO is a best-execution review, not the books-versus-street reconciliation done at end of day.",
+      "b": "Reconciliation against depositories and the clearing firm is daily; a monthly statement comparison would let breaks age undetected.",
+      "d": "Positions must be reconciled along with cash; deferring position breaks to year-end defeats prompt resolution and 17a-13 counts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only marketing brochures"
+        "text": "Written supervisory procedures for each office of supervisory jurisdiction"
       },
       {
         "id": "b",
-        "text": "Employee lunch orders"
+        "text": "Copies of all customer complaints and their resolution for four years"
       },
       {
         "id": "c",
-        "text": "Competitor trade secrets"
+        "text": "Fingerprint records and Form U4 filings for associated persons"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "4512 governs customer account recordkeeping content and updates.",
     "distractorExplanations": {
-      "a": "Broader customer records.",
-      "b": "Irrelevant.",
-      "c": "Prohibited."
+      "a": "Written supervisory procedures are required by FINRA Rule 3110, not by Rule 4512's customer account information rule.",
+      "b": "Customer complaint records are FINRA Rule 4513 (four years); Rule 4512 covers account information such as name, residence, and trusted contact.",
+      "c": "Fingerprinting is SEC Rule 17f-2 and Form U4 filing is FINRA registration under Rule 1010/1220; neither is Rule 4512."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -539,23 +539,23 @@
       },
       {
         "id": "b",
-        "text": "Airline baggage fees"
+        "text": "Credit extended by banks for purchasing securities against collateral"
       },
       {
         "id": "c",
-        "text": "Hospital HIPAA privacy"
+        "text": "Maintenance margin levels in margin accounts after the initial purchase"
       },
       {
         "id": "d",
-        "text": "Municipal bond underwriting approval"
+        "text": "Borrowers' obligations when they obtain purpose credit from any lender"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Reg T sets initial/maintenance margin from Federal Reserve Board.",
+    "explanation": "Regulation T, issued by the Federal Reserve Board, governs credit that broker-dealers extend for securities purchases, chiefly the 50% initial margin requirement. Maintenance margin is set by FINRA Rule 4210 and stricter firm house rules, not by Reg T.",
     "distractorExplanations": {
-      "b": "Unrelated.",
-      "c": "HIPAA separate.",
-      "d": "MSRB governs muni dealer activities differently."
+      "b": "Bank loans secured by securities for buying securities fall under Regulation U, not Regulation T.",
+      "c": "Maintenance margin is set by FINRA Rule 4210 and firm house rules; Reg T governs the initial extension of credit.",
+      "d": "Regulation X applies the margin rules to borrowers obtaining purpose credit; Reg T applies to credit extended by broker-dealers."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -601,11 +601,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No ID for all online accounts ever"
+        "text": "Verification of identity only when a customer wires out funds"
       },
       {
         "id": "b",
-        "text": "Copy of passport sent to unrelated vendor always publicly"
+        "text": "Collection of a government ID copy with no further verification"
       },
       {
         "id": "c",
@@ -613,15 +613,15 @@
       },
       {
         "id": "d",
-        "text": "Verification only after account closed"
+        "text": "Filing each new customer's identity information with FinCEN"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Firms must verify name, DOB, address, ID number with documentary/non-documentary methods.",
     "distractorExplanations": {
-      "a": "Online accounts still require CIP.",
-      "b": "Protect PII.",
-      "d": "At opening."
+      "a": "CIP verification is tied to account opening, not deferred until a withdrawal; outbound wires trigger fraud checks, not initial CIP.",
+      "b": "Collecting ID alone is not enough; CIP requires risk-based procedures to verify the data by documentary or non-documentary methods.",
+      "d": "CIP information is kept in the firm's own records for five years after account closing; it is not filed with FinCEN per customer."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -634,15 +634,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Purely operational wire processing with no recommendation"
+        "text": "Unsolicited orders placed by retail customers through a self-directed online brokerage account"
       },
       {
         "id": "b",
-        "text": "Setting property tax rates"
+        "text": "Recommendations of securities to institutional customers by broker-dealers"
       },
       {
         "id": "c",
-        "text": "All commercial banking loans"
+        "text": "Investment advice given by registered investment advisers to advisory clients"
       },
       {
         "id": "d",
@@ -652,9 +652,9 @@
     "correctOptionId": "d",
     "explanation": "Reg BI imposes care, disclosure, conflict, and compliance obligations on recommendations.",
     "distractorExplanations": {
-      "a": "Ops processing alone not recommendation.",
-      "b": "Unrelated.",
-      "c": "Different regulatory regime."
+      "a": "Reg BI is triggered by a recommendation; unsolicited self-directed orders with no recommendation fall outside its care obligation.",
+      "b": "Reg BI covers retail customers; recommendations to institutional accounts fall under FINRA Rule 2111 suitability instead.",
+      "c": "Advisory clients of an RIA are covered by the Advisers Act fiduciary duty, not by Regulation Best Interest."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Only equity day traders"
+        "text": "Issuers of municipal bonds and their disclosure"
       },
       {
         "id": "c",
-        "text": "FDA drug approvals"
+        "text": "Corporate bond dealers reporting trades to TRACE"
       },
       {
         "id": "d",
-        "text": "Insurance property claims adjusters"
+        "text": "Banks underwriting U.S. Treasury securities"
       }
     ],
     "correctOptionId": "a",
     "explanation": "MSRB regulates muni market professional activities and disclosures like G-32.",
     "distractorExplanations": {
-      "b": "Equities under FINRA/SEC other rules.",
-      "c": "Unrelated.",
-      "d": "Unrelated."
+      "b": "The MSRB has no direct authority over municipal issuers themselves; it regulates dealers and municipal advisors.",
+      "c": "Corporate bond trade reporting to TRACE is a FINRA rule; MSRB trade reporting for munis runs through RTRS.",
+      "d": "Treasury securities fall under the Government Securities Act and Treasury rules, not MSRB municipal regulation."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -700,27 +700,27 @@
     "options": [
       {
         "id": "a",
-        "text": "$500"
+        "text": "$2,000 in a margin account, the general minimum to buy on margin"
       },
       {
         "id": "b",
-        "text": "$25,000 in margin account for day trading activity meeting definition"
+        "text": "$25,000 in a margin account for a pattern day trader"
       },
       {
         "id": "c",
-        "text": "$2,000 in any margin account"
+        "text": "$50,000 in margin account once four day trades occur in five days"
       },
       {
         "id": "d",
-        "text": "$1 million for all accounts"
+        "text": "$100,000 in margin account for any customer making any day trade"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "FINRA margin rule requires $25k minimum for pattern day traders.",
+    "explanation": "Under the current FINRA Rule 4210 pattern day trader provisions, a customer who makes four or more day trades within five business days is a pattern day trader and must keep at least $25,000 of equity in the margin account before day trading.",
     "distractorExplanations": {
-      "a": "Too low.",
-      "c": "$2,000 is the general minimum equity to open or maintain a margin account, not the higher threshold for pattern day traders.",
-      "d": "Too high for rule."
+      "a": "$2,000 is the FINRA Rule 4210 minimum equity to open or maintain a margin account, not the higher pattern day trader threshold.",
+      "c": "The PDT minimum is $25,000, not $50,000, although four or more day trades in five business days does trigger PDT status.",
+      "d": "PDT status needs four or more day trades in five business days (over 6% of trades), and the minimum equity is $25,000, not $100,000."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -766,15 +766,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Mailing paper statements"
+        "text": "Market makers charging brokers access fees for executing marketable orders"
       },
       {
         "id": "b",
-        "text": "Office rent payments"
+        "text": "Broker paying research providers with client commissions under soft-dollar terms"
       },
       {
         "id": "c",
-        "text": "Customer birthday gifts unlimited"
+        "text": "Broker internalizing orders as principal, which removes best execution duties"
       },
       {
         "id": "d",
@@ -784,9 +784,9 @@
     "correctOptionId": "d",
     "explanation": "SEC/FINRA require disclosure and best execution review of PFOF arrangements.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "Unrelated.",
-      "c": "Gifts limited by rules."
+      "a": "Access fees run from the broker to the venue; PFOF is the reverse, compensation paid to the broker for routing orders.",
+      "b": "That describes soft-dollar arrangements under Exchange Act Section 28(e), not payment for order flow from market makers.",
+      "c": "Internalized orders still carry best-execution obligations under FINRA Rule 5310; internalization does not remove that duty."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Mutual fund marketing"
+        "text": "Locates obtained before effecting short sales"
       },
       {
         "id": "c",
-        "text": "Insurance annuities"
+        "text": "Marking sell orders as long or short at entry"
       },
       {
         "id": "d",
-        "text": "Real estate closings"
+        "text": "Short sale price tests after a 10% price decline"
       }
     ],
     "correctOptionId": "a",
     "explanation": "SHO includes locate, marking, and close-out of FTDs for short sales.",
     "distractorExplanations": {
-      "b": "Unrelated.",
-      "c": "Unrelated.",
-      "d": "Unrelated."
+      "b": "The locate is a Reg SHO Rule 203(b)(1) pre-trade requirement; Rule 204 close-out addresses fails after settlement date.",
+      "c": "Order marking is Reg SHO Rule 200(g); close-out under Rule 204 addresses fails to deliver after settlement date.",
+      "d": "The 10% circuit-breaker price test is Rule 201 (alternative uptick rule), not the Rule 204 close-out requirement."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -832,27 +832,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Process payments to SDN list entities knowingly"
+        "text": "Screen customers against OFAC lists at account opening, then annually"
       },
       {
         "id": "b",
-        "text": "Screen customers and transactions against blocked persons/country lists"
+        "text": "Screen customers and transactions against OFAC sanctions lists"
       },
       {
         "id": "c",
-        "text": "Ignore geographic red flags"
+        "text": "File a Suspicious Activity Report with FinCEN within 30 days of a match"
       },
       {
         "id": "d",
-        "text": "Only check sanctions at account close"
+        "text": "Obtain OFAC approval before opening any account for a non-U.S. citizen"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Office of Foreign Assets Control prohibits dealings with sanctioned parties.",
+    "explanation": "OFAC regulations bar U.S. persons from dealing with Specially Designated Nationals, blocked persons, and sanctioned countries, so firms screen both customers and transactions on an ongoing basis, block or reject matches, and report them to OFAC.",
     "distractorExplanations": {
-      "a": "Prohibited.",
-      "c": "Screening ongoing.",
-      "d": "At onboarding and transactions."
+      "a": "OFAC screening is ongoing: new transactions and list updates must be screened, not just an annual re-check after onboarding.",
+      "c": "OFAC matches are blocked or rejected and reported to OFAC within 10 business days; SARs to FinCEN are a separate BSA process.",
+      "d": "OFAC does not pre-approve foreign customers; firms screen names against the SDN and sanctions lists and block only true matches."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -865,11 +865,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Delete all emails daily"
+        "text": "Retention of business emails for three years with no format requirement"
       },
       {
         "id": "b",
-        "text": "Personal Gmail only without capture"
+        "text": "Retention of business emails for six years in any rewriteable format"
       },
       {
         "id": "c",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "No retention policy ever"
+        "text": "Retention of personal-device business texts at the employee's discretion"
       }
     ],
     "correctOptionId": "c",
     "explanation": "17a-4 mandates books and records retention including electronic communications.",
     "distractorExplanations": {
-      "a": "Prohibited.",
-      "b": "Firm must capture business communications.",
-      "d": "Policy required."
+      "a": "17a-4 sets both the period (generally three years, first two easily accessible) and the format (WORM or audit-trail), so no-format is wrong.",
+      "b": "Communications are generally kept three years under 17a-4(b)(4), and electronic storage must be WORM or audit-trail, not rewriteable.",
+      "d": "Business communications on personal devices must be captured by the firm; leaving it to employees is the off-channel failure the SEC fined."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -898,27 +898,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All salaries"
+        "text": "Cash bonuses the firm pays its own associated persons each year"
       },
       {
         "id": "b",
-        "text": "Customer trade confirmations"
+        "text": "Business entertainment such as meals hosted with the client present"
       },
       {
         "id": "c",
-        "text": "Office lease payments to landlord at FMV always prohibited"
+        "text": "Gifts to a customer's family members for personal life events such as weddings"
       },
       {
         "id": "d",
-        "text": "Non-cash gifts from vendors to associated persons beyond de minimis thresholds"
+        "text": "Gifts given to another firm's employees beyond an annual per-person cap"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Rules prevent improper influence through excessive entertainment/gifts.",
+    "explanation": "FINRA Rule 3220 bars a member or associated person from giving gifts above the rule's annual per-person limit to an employee or agent of another firm when the gift relates to the recipient employer's business. It targets improper influence over people who work for others.",
     "distractorExplanations": {
-      "a": "Salaries separate.",
-      "b": "Confirmations required.",
-      "c": "FMV business payments allowed."
+      "a": "Bonuses a firm pays its own associated persons are compensation, not gifts; Rule 3220 covers gifts to employees of another firm.",
+      "b": "Business entertainment where the host attends is not subject to the Rule 3220 gift limit; it is governed by firm entertainment policy.",
+      "c": "Personal gifts for life events such as weddings are excluded from the 3220 limit when not given in relation to the recipient employer's business."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "Customer never receives proxy"
+        "text": "The transfer agent mailing proxies directly to each street-name beneficial owner"
       },
       {
         "id": "c",
-        "text": "Firm votes arbitrarily without disclosure when customer delegated"
+        "text": "The issuer voting street-name shares in line with management recommendations"
       },
       {
         "id": "d",
-        "text": "SEC votes for all shareholders"
+        "text": "The DTC voting all street-name shares as the nominee holder of record"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Ops distributes proxy materials and records customer voting instructions.",
     "distractorExplanations": {
-      "b": "Required delivery.",
-      "c": "Policy/disclosure governs discretionary voting.",
-      "d": "Shareholders vote."
+      "b": "Transfer agents mail to registered holders; street-name owners receive materials through their broker or its agent such as Broadridge.",
+      "c": "Issuers cannot vote shares they do not own; street-name shares are voted on the beneficial owner's instruction or broker routine discretion.",
+      "d": "DTC passes voting authority to its participants through an omnibus proxy; it does not itself vote beneficial owners' shares."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -964,27 +964,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only research analysts"
+        "text": "Trade on information only after it appears in a firm research note"
       },
       {
         "id": "b",
-        "text": "Possess material nonpublic information from firm processing activities"
+        "text": "Possess material nonpublic information gained through their work"
       },
       {
         "id": "c",
-        "text": "Never see trade flow"
+        "text": "Trade in their own accounts at an outside broker without pre-clearance"
       },
       {
         "id": "d",
-        "text": "Work only in unrelated industries always exempt"
+        "text": "Execute customer orders without exercising any investment discretion"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Ops may see MNPI on mergers/corp actions; personal trading restricted.",
+    "explanation": "Insider trading rules apply to anyone who trades or tips while possessing material nonpublic information. Operations staff often see MNPI on pending mergers, tender offers, or corporate actions while processing, so their personal trading is restricted.",
     "distractorExplanations": {
-      "a": "Ops also covered.",
-      "c": "Ops sees account activity.",
-      "d": "Securities employees covered."
+      "a": "Trading after publication in research uses public information; the prohibition covers trading on MNPI before public dissemination.",
+      "c": "Trading away without pre-clearance breaks firm policy and Rule 3210 consent rules, but insider-trading law turns on possessing MNPI.",
+      "d": "Executing nondiscretionary orders is routine processing and not itself insider trading; liability turns on trading while holding MNPI."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -997,11 +997,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Debit customer liability only without cash"
+        "text": "Debit customer payable/liability, credit cash/asset"
       },
       {
         "id": "b",
-        "text": "No entry needed modern brokerage"
+        "text": "Debit cash/asset, credit customer receivable/asset"
       },
       {
         "id": "c",
@@ -1009,15 +1009,15 @@
       },
       {
         "id": "d",
-        "text": "Credit revenue immediately as firm income"
+        "text": "Debit cash/asset, credit commission revenue/income"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Customer cash is firm liability owed to customer; asset increases on deposit.",
     "distractorExplanations": {
-      "a": "Double entry requires both sides.",
-      "b": "Accounting required.",
-      "d": "Not revenue until earned fees."
+      "a": "This reverses the entry: a deposit increases the cash asset (debit) and the amount owed to the customer (credit).",
+      "b": "A customer receivable is a debit balance the customer owes; deposited cash is owed back to the customer, so it is a payable.",
+      "d": "Customer cash is not earned revenue; it is a liability to the customer until fees are actually charged to the account."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1030,15 +1030,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only logo art"
+        "text": "Positions and balances, with trade activity shown on confirms instead"
       },
       {
         "id": "b",
-        "text": "Other customers' trades for comparison"
+        "text": "Activity for the period, with holdings shown only once a year"
       },
       {
         "id": "c",
-        "text": "Projected future returns guaranteed"
+        "text": "Balances and fees, with positions reported on the annual Form 1099"
       },
       {
         "id": "d",
@@ -1048,9 +1048,9 @@
     "correctOptionId": "d",
     "explanation": "Periodic statements are regulatory requirement showing account snapshot and activity.",
     "distractorExplanations": {
-      "a": "Insufficient.",
-      "b": "Confidentiality violation.",
-      "c": "Cannot guarantee returns."
+      "a": "Confirms do not replace statement activity; FINRA Rule 2231 statements must show securities positions, money balances, and account activity.",
+      "b": "Statements must show positions every period (at least quarterly under Rule 2231), not once a year.",
+      "c": "Form 1099 is a tax report of income and sales; it does not substitute for the positions section of a periodic account statement."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1096,7 +1096,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Permanent customer investments intentionally"
+        "text": "Customer funds held in escrow until a trade settles"
       },
       {
         "id": "b",
@@ -1104,19 +1104,19 @@
       },
       {
         "id": "c",
-        "text": "Employee payroll"
+        "text": "Firm proprietary positions awaiting a sale decision"
       },
       {
         "id": "d",
-        "text": "Marketing budget"
+        "text": "Dormant balances awaiting escheatment to the state"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Suspense clears when breaks resolved; should not be long-term holding.",
     "distractorExplanations": {
-      "a": "Temporary use.",
-      "c": "Wrong account type.",
-      "d": "Wrong purpose."
+      "a": "Unsettled trade money sits in customer and settlement accounts, not suspense; suspense is for items that cannot yet be identified.",
+      "c": "Proprietary inventory sits in firm trading accounts; suspense holds unidentified or unresolved items pending correct booking.",
+      "d": "Dormant balances stay in the customer's account until escheated; suspense is a temporary holding area for unresolved items."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1129,11 +1129,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Commingling with firm proprietary assets freely"
+        "text": "A weekly reserve computation covering customer fully paid securities"
       },
       {
         "id": "b",
-        "text": "No inventory counts"
+        "text": "Pledging fully paid securities up to 140% of the customer's debit balance"
       },
       {
         "id": "c",
@@ -1141,15 +1141,15 @@
       },
       {
         "id": "d",
-        "text": "Customer securities as firm collateral always without consent"
+        "text": "Annual physical counts of customer securities under Rule 17a-13"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Rule 15c3-3 protects customer assets through possession/control and reserve formula.",
     "distractorExplanations": {
-      "a": "Commingling prohibited.",
-      "b": "Counts/reconciliations required.",
-      "d": "Customer ownership protected."
+      "a": "The weekly reserve formula protects customer cash credits; fully paid securities are protected by possession or control, not the reserve deposit.",
+      "b": "The 140% hypothecation limit applies to margin securities; fully paid securities may not be pledged and must be kept in possession or control.",
+      "d": "Rule 17a-13 box counts are quarterly, not annual, and are a separate control; 15c3-3 protection works through possession or control."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only weather notes"
+        "text": "Order details and execution prices, retained for one year under 17a-4"
       },
       {
         "id": "b",
-        "text": "Personal opinions about customer intelligence"
+        "text": "Customer names, addresses, and investment objectives for each account"
       },
       {
         "id": "c",
-        "text": "Deleted after one hour"
+        "text": "Supervisory approvals of new accounts and their documentation dates"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "Blotters support best execution, audits, and dispute resolution.",
     "distractorExplanations": {
-      "a": "Irrelevant.",
-      "b": "Inappropriate.",
-      "c": "Retention required years."
+      "a": "Blotters are 17a-3(a)(1) records kept six years under 17a-4(a), the first two in an easily accessible place, not one year.",
+      "b": "Customer name, address, and objective data belong in the account record under 17a-3(a)(17) and Rule 4512, not the trade blotter.",
+      "c": "New-account approvals are account-opening records, not blotter entries of daily purchases, sales, receipts, and deliveries."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1199,23 +1199,23 @@
       },
       {
         "id": "b",
-        "text": "Stealing cash as firm revenue"
+        "text": "Sweeping remaining cash to the firm's error account pending research"
       },
       {
         "id": "c",
-        "text": "Ignoring small balances always legally"
+        "text": "Transferring remaining margin debit balances to the receiving firm later"
       },
       {
         "id": "d",
-        "text": "Transferring only margin debt without authorization"
+        "text": "Mailing a check for remaining cash to the customer's address of record"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Residual balances follow transfer process; unclaimed property laws may apply later.",
     "distractorExplanations": {
-      "b": "Theft/ violation.",
-      "c": "Balances owed to customer.",
-      "d": "Needs authorization."
+      "b": "Residual credits belong to the customer and are forwarded through the ACATS residual process, not parked in an error account.",
+      "c": "Residual credit means money owed to the customer (cash, dividends, interest), not a margin debit owed by the customer.",
+      "d": "Under FINRA Rule 11870, residual credits after a full transfer are sent to the receiving firm through ACATS, not mailed to the customer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1228,7 +1228,7 @@
     "options": [
       {
         "id": "a",
-        "text": "All gains automatically tax-free"
+        "text": "Gain recognition when substantially identical security repurchased within 30 days"
       },
       {
         "id": "b",
@@ -1236,19 +1236,19 @@
       },
       {
         "id": "c",
-        "text": "Only bonds never equities"
+        "text": "Loss deduction when a security in the same sector is repurchased within 30 days"
       },
       {
         "id": "d",
-        "text": "Operations trade settlement timing"
+        "text": "Loss deduction when substantially identical security repurchased within 60 days"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Tax reporting may flag wash sales; ops may track for customer reporting tools.",
     "distractorExplanations": {
-      "a": "Loss deferral not exemption from gains.",
-      "c": "Applies to stocks/options etc.",
-      "d": "Tax concept though ops may support reporting."
+      "a": "The wash sale rule disallows losses only; gains on a sale followed by a repurchase are recognized normally.",
+      "c": "Only substantially identical securities trigger a wash sale; buying a different company in the same sector does not.",
+      "d": "The window is 30 days before or after the sale (a 61-day period), not 60 days after the sale."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1261,11 +1261,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Firm keeping all dormant cash permanently"
+        "text": "Remitting unclaimed property to the SEC once the statutory dormancy period lapses"
       },
       {
         "id": "b",
-        "text": "Deleting account history illegally"
+        "text": "Remitting unclaimed property to the state of the firm's headquarters"
       },
       {
         "id": "c",
@@ -1273,15 +1273,15 @@
       },
       {
         "id": "d",
-        "text": "Immediate donation to employee parties"
+        "text": "Transferring dormant accounts to SIPC after a dormancy period lapses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "States require escheat of unclaimed balances per statutory dormancy timelines.",
     "distractorExplanations": {
-      "a": "Illegal retention.",
-      "b": "Records retained.",
-      "d": "Misappropriation."
+      "a": "Unclaimed property is escheated to the states under state law, not to the SEC.",
+      "b": "Priority rules send property to the state of the owner's last known address first; the firm's domicile state is only the fallback.",
+      "d": "SIPC protects customers in broker-dealer liquidations; it does not take custody of dormant accounts or unclaimed property."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1294,15 +1294,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Highest cost always sold first automatically without election"
+        "text": "Last shares purchased are first shares sold for gain/loss calculation"
       },
       {
         "id": "b",
-        "text": "Random lot"
+        "text": "Highest-cost shares are first shares sold for gain/loss calculation"
       },
       {
         "id": "c",
-        "text": "No lot tracking in brokerage systems ever"
+        "text": "Average cost per share of the position is used for gain/loss calculation"
       },
       {
         "id": "d",
@@ -1312,9 +1312,9 @@
     "correctOptionId": "d",
     "explanation": "Default method may be FIFO unless customer elects specific identification/other.",
     "distractorExplanations": {
-      "a": "HIFO/spec ID are alternatives.",
-      "b": "Systems track lots.",
-      "c": "Lot accounting standard."
+      "a": "Last-in, first-out is LIFO; FIFO relieves the earliest acquired lots first.",
+      "b": "Highest-cost-first is HIFO, a tax-lot election the customer can choose, not FIFO.",
+      "c": "Average cost is a separate method common for mutual fund shares; FIFO matches the earliest lots, not a blended cost."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1360,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Monthly gym membership"
+        "text": "Interest charged on the client's margin debit balance under the financing terms"
       },
       {
         "id": "b",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Customer shoe size fee"
+        "text": "Penalties FINRA assesses on the client for late Reg SHO close-outs on short sales"
       },
       {
         "id": "d",
-        "text": "Guaranteed profit share"
+        "text": "Custody fees for safekeeping fully paid securities held in segregation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Prime clients see financing, borrow, and fail-related charges per contracts.",
     "distractorExplanations": {
-      "a": "Irrelevant.",
-      "c": "Irrelevant.",
-      "d": "Not guaranteed profit."
+      "a": "Margin interest is a financing charge on the debit balance, shown separately from borrow or settlement fail charges.",
+      "c": "Reg SHO close-out duties fall on the clearing participant, and FINRA does not post fines to client statements as fail charges.",
+      "d": "Custody or safekeeping fees are a service charge on held assets, not a cost arising from borrow or settlement fails."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Destroy records before exam always legal"
+        "text": "Produce records within 30 days of a written request"
       },
       {
         "id": "b",
-        "text": "Hide email archives"
+        "text": "Produce records only after counsel reviews them first"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Provide only verbal summaries always sufficient"
+        "text": "Produce summaries in place of the underlying records"
       }
     ],
     "correctOptionId": "c",
     "explanation": "SEC/FINRA examination authority includes access to required books and records.",
     "distractorExplanations": {
-      "a": "Destruction illegal if obstructive.",
-      "b": "Obstruction violation.",
-      "d": "Written records required."
+      "a": "Records must be produced promptly on request under 17a-4(j) and Rule 8210; there is no 30-day grace period for examiners.",
+      "b": "Firms may involve counsel, but production to examiners cannot be held back pending legal review; prompt production is required.",
+      "d": "Examiners can require the actual books and records, not firm-prepared summaries, under Rule 8210 and 17a-4(j)."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1426,15 +1426,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Firm's retained earnings"
+        "text": "Cash owed by the customer on a margin debit balance"
       },
       {
         "id": "b",
-        "text": "Margin loan automatically"
+        "text": "Cash in the customer's account pledged as collateral"
       },
       {
         "id": "c",
-        "text": "Accrued interest owed by customer"
+        "text": "Cash swept to an FDIC-insured bank deposit program"
       },
       {
         "id": "d",
@@ -1444,9 +1444,9 @@
     "correctOptionId": "d",
     "explanation": "Free credit balances are customer liabilities representing cash owed.",
     "distractorExplanations": {
-      "a": "Firm equity different.",
-      "b": "Debit balance is loan.",
-      "c": "Credit balance owed to customer."
+      "a": "A margin debit is money the customer owes the firm; a free credit balance is money the firm owes the customer.",
+      "b": "Cash pledged against a short or margin position is not free; free credits are unencumbered and payable on demand.",
+      "c": "Swept bank deposits are held at a bank, not at the broker-dealer as a free credit balance under Rule 15c3-3."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "Customer loses dividend always if long on ex-date wrong"
+        "text": "Dividends credit to accounts that bought on or after the ex-date"
       },
       {
         "id": "c",
-        "text": "No entitlement rules exist"
+        "text": "Dividends credit to accounts holding on the declaration date"
       },
       {
         "id": "d",
-        "text": "Dividends paid only to firm proprietary account"
+        "text": "Dividends post to accounts on the record date, ahead of payment"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Ops tracks record date entitlements and incoming issuer payments.",
     "distractorExplanations": {
-      "b": "Long holders entitled if record date met.",
-      "c": "Rules exist.",
-      "d": "Passed to customers."
+      "b": "Buyers on or after the ex-date are not entitled; under T+1 the ex-date and record date fall on the same day.",
+      "c": "Entitlement is set by holdings at the record date, not on the declaration date when the board announces the dividend.",
+      "d": "The record date fixes entitlement; cash is not credited until the issuer pays on the payable date."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only market price movement of customer portfolio"
+        "text": "Price declines in the firm's proprietary inventory positions"
       },
       {
         "id": "b",
@@ -1500,19 +1500,19 @@
       },
       {
         "id": "c",
-        "text": "Sunrise time"
+        "text": "Counterparty default on unsecured lending and margin debits"
       },
       {
         "id": "d",
-        "text": "Competitor advertising colors"
+        "text": "Inability to fund settlements because cash is tied up"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ops risk is non-market risk from inadequate/failed internal processes, people, systems.",
     "distractorExplanations": {
-      "a": "Market risk separate.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "a": "Price movements in firm inventory are market risk, a separate category from operational risk.",
+      "c": "Losses from a borrower or counterparty failing to pay are credit risk, not operational risk.",
+      "d": "Being unable to meet funding obligations is liquidity risk; operational risk stems from processes, people, and systems."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1525,11 +1525,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer reading statement"
+        "text": "A customer adding a trusted contact person to the account profile"
       },
       {
         "id": "b",
-        "text": "Regular dividend credit"
+        "text": "Repeated small dividend reinvestments posted over several months"
       },
       {
         "id": "c",
@@ -1537,15 +1537,15 @@
       },
       {
         "id": "d",
-        "text": "Long-term buy-and-hold pattern"
+        "text": "A long-time customer requesting paper statements after years of e-delivery"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Multiple account changes plus outbound funds trigger enhanced verification.",
     "distractorExplanations": {
-      "a": "Normal activity.",
-      "b": "Normal activity.",
-      "d": "Not suspicious alone."
+      "a": "Adding a trusted contact under FINRA Rule 4512 is a protective step, not an account takeover red flag by itself.",
+      "b": "Routine dividend reinvestment is expected account activity and does not signal credential compromise.",
+      "d": "Switching delivery preference is a minor service change; takeover patterns combine credential changes with outbound funds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1558,15 +1558,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Delete exceptions to reduce count"
+        "text": "Sign off on each report once the exception count is below target"
       },
       {
         "id": "b",
-        "text": "Ignore until customer complains years later"
+        "text": "Review exceptions quarterly when preparing the annual 3130 certification"
       },
       {
         "id": "c",
-        "text": "Approve all without reading"
+        "text": "Reassign aged items to the staff member who created each break"
       },
       {
         "id": "d",
@@ -1576,9 +1576,9 @@
     "correctOptionId": "d",
     "explanation": "Supervisory procedures require monitoring exceptions and aging breaks.",
     "distractorExplanations": {
-      "a": "Concealment violation.",
-      "b": "Timely resolution required.",
-      "c": "Negligent supervision."
+      "a": "A low count is not proof of resolution; supervisors must check that each item is resolved and escalate aged ones.",
+      "b": "Exception reports need ongoing review; waiting for the Rule 3130 CEO certification cycle lets breaks age.",
+      "c": "Routing breaks back to their originator weakens segregation of duties and is not escalation to supervision."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1595,23 +1595,23 @@
       },
       {
         "id": "b",
-        "text": "Only pizza delivery vendor"
+        "text": "Alternate site and data backup, with plan review every five years"
       },
       {
         "id": "c",
-        "text": "Permanent shutdown on any snowflake"
+        "text": "Data backup and recovery, with customer access deferred until restored"
       },
       {
         "id": "d",
-        "text": "Single employee knowledge with no documentation"
+        "text": "Recovery steps filed with the SEC for approval before implementation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "BCP ensures critical ops continue after disaster with tested recovery.",
     "distractorExplanations": {
-      "b": "Trivial.",
-      "c": "Overreaction not plan.",
-      "d": "Documentation essential."
+      "b": "Rule 4370 requires the plan to be updated for material changes and reviewed annually, not every five years.",
+      "c": "Rule 4370 requires the plan to address how customers get prompt access to funds and securities during a disruption.",
+      "d": "Firms keep BCPs internally and report emergency contacts to FINRA; plans are not filed with the SEC for approval."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1624,7 +1624,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer pays cash in full"
+        "text": "Account equity rises above requirements, creating excess SMA for the customer"
       },
       {
         "id": "b",
@@ -1632,19 +1632,19 @@
       },
       {
         "id": "c",
-        "text": "Account holds only US Treasuries with no leverage ever impossible"
+        "text": "Customer pays for a cash account purchase within the Reg T payment period"
       },
       {
         "id": "d",
-        "text": "Customer reads prospectus"
+        "text": "Customer deposits fully paid securities that the firm keeps in segregation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Margin credit risk is customer default on debit balance after liquidations insufficient.",
     "distractorExplanations": {
-      "a": "Cash accounts different risk profile.",
-      "c": "Margin accounts have credit exposure.",
-      "d": "Unrelated."
+      "a": "Rising equity creates SMA (buying power), which reduces rather than creates credit risk for the firm.",
+      "c": "Timely payment in a cash account means no credit exposure; risk arises from margin debits that are not met.",
+      "d": "Segregated fully paid securities carry no loan, so there is no customer credit exposure to the firm."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1657,11 +1657,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer fully paid cash securities segregated"
+        "text": "Customer margin securities pledged to banks under hypothecation"
       },
       {
         "id": "b",
-        "text": "Office furniture depreciation only in ops context"
+        "text": "Customer free credit balances held in the reserve bank account"
       },
       {
         "id": "c",
@@ -1669,15 +1669,15 @@
       },
       {
         "id": "d",
-        "text": "Employee payroll timing"
+        "text": "Customer fully paid securities held in the firm's DTC account"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Firm risk management monitors proprietary positions; customer assets segregated.",
     "distractorExplanations": {
-      "a": "Customer assets not firm market risk if segregated.",
-      "b": "Not primary ops trading risk.",
-      "d": "Unrelated."
+      "a": "Hypothecated customer collateral remains customer property; its price risk sits with the customer, not firm inventory.",
+      "b": "Reserve account deposits protect customer cash; they are not firm inventory exposed to market price changes.",
+      "d": "Segregated customer securities belong to customers; their price changes are not firm proprietary market risk."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1690,15 +1690,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Auto-approve wire anyway"
+        "text": "Update the record to the newest address and process pending wires"
       },
       {
         "id": "b",
-        "text": "Ignore mismatch"
+        "text": "File a Suspicious Activity Report before contacting the customer"
       },
       {
         "id": "c",
-        "text": "Close market globally"
+        "text": "Close the account and return assets to the address on the latest form"
       },
       {
         "id": "d",
@@ -1708,9 +1708,9 @@
     "correctOptionId": "d",
     "explanation": "AML/KYC inconsistencies require investigation before high-risk transactions.",
     "distractorExplanations": {
-      "a": "Fraud risk.",
-      "b": "Red flag.",
-      "c": "Disproportionate."
+      "a": "Accepting the newest data without verification is how account takeovers succeed; resolve the conflict before releasing funds.",
+      "b": "A mismatch alone is a red flag to investigate; a SAR follows if the review finds suspicious activity, not as a first step.",
+      "c": "Closing and sending assets to an unverified address compounds the fraud risk; investigate and hold disbursements first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1727,23 +1727,23 @@
       },
       {
         "id": "b",
-        "text": "Permanent hiding of customer assets"
+        "text": "Holding unallocated block trades until advisers send allocations"
       },
       {
         "id": "c",
-        "text": "Employee bonus pool"
+        "text": "Absorbing customer losses on trades the customer later regrets"
       },
       {
         "id": "d",
-        "text": "Marketing expenses"
+        "text": "Parking unidentified cash receipts until the payer is confirmed"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Error accounts resolve breaks quickly with supervisory oversight.",
     "distractorExplanations": {
-      "b": "Prohibited misuse.",
-      "c": "Misappropriation.",
-      "d": "Wrong use."
+      "b": "Unallocated blocks belong in an average-price or allocation account, not the error account.",
+      "c": "Customer-directed trades the customer regrets are not firm errors; moving them to the error account is improper.",
+      "d": "Unidentified receipts go to a suspense account; the error account is reserved for trade errors."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1756,7 +1756,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Longer indefinite settlement"
+        "text": "Longer settlement cycles that give firms more time to match trades"
       },
       {
         "id": "b",
@@ -1764,19 +1764,19 @@
       },
       {
         "id": "c",
-        "text": "Verbal-only trades without confirmation"
+        "text": "Bilateral netting with each counterparty instead of a central CCP"
       },
       {
         "id": "d",
-        "text": "Avoiding all confirmations"
+        "text": "Free delivery of securities before payment is received"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Reduced settlement exposure through T+1 and cleared markets.",
     "distractorExplanations": {
-      "a": "Longer increases risk.",
-      "c": "Confirmations required.",
-      "d": "Confirmations reduce risk."
+      "a": "Longer cycles increase exposure between trade and settlement; T+1 shortened the window to cut risk.",
+      "c": "Bilateral netting leaves counterparty exposure in place; central clearing through a CCP such as NSCC is the stronger mitigant.",
+      "d": "Free delivery is the textbook source of Herstatt risk; DVP and PvP link delivery to payment to remove it."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Shared passwords for speed"
+        "text": "Broad system access for senior staff so they can cover absences"
       },
       {
         "id": "b",
-        "text": "Single person controls wire and reconciliation with no review"
+        "text": "Dual control over outbound wires, with reconciliation done by the wire initiator"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "Disable audit logs to save disk"
+        "text": "Annual background checks, with access reviews left to the IT vendor"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Controls limit unauthorized access and detect suspicious ops activity.",
     "distractorExplanations": {
-      "a": "Password sharing prohibited.",
-      "b": "Segregation of duties key.",
-      "d": "Logs required."
+      "a": "Broad access violates least privilege; absence coverage should use role-based backups with logging.",
+      "b": "Letting the wire initiator also reconcile defeats segregation of duties; reconciliation must be independent.",
+      "d": "Access recertification is a firm control that cannot be outsourced away; background checks alone do not mitigate insider threat."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1822,15 +1822,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore root causes"
+        "text": "Determine which complaints must be reported under Rule 4530"
       },
       {
         "id": "b",
-        "text": "Punish all complainants"
+        "text": "Calculate customer restitution owed on each individual complaint"
       },
       {
         "id": "c",
-        "text": "Hide data from compliance"
+        "text": "Set staff incentive pay based on complaint counts per employee"
       },
       {
         "id": "d",
@@ -1840,9 +1840,9 @@
     "correctOptionId": "d",
     "explanation": "Trending complaints signal control weaknesses in statements, transfers, or fees.",
     "distractorExplanations": {
-      "a": "Analysis purpose is improvement.",
-      "b": "Retaliation prohibited.",
-      "c": "Compliance needs data."
+      "a": "4530 reporting is decided complaint by complaint; trending is for spotting systemic causes across many complaints.",
+      "b": "Restitution is decided case by case; trend analysis looks for repeated root causes across complaints.",
+      "c": "Tying pay to complaint counts discourages logging complaints; trending is meant to find process failures."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1859,23 +1859,23 @@
       },
       {
         "id": "b",
-        "text": "No firm responsibility ever"
+        "text": "A Reg SHO close-out obligation by the start of trading on T+2"
       },
       {
         "id": "c",
-        "text": "Automatic SEC registration revocation next day"
+        "text": "Exposure only if the customer files a written complaint first"
       },
       {
         "id": "d",
-        "text": "Customer must ignore"
+        "text": "A trade reporting violation to be fixed at month-end reconciliation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Routing errors may breach best execution and require trade correction/damage review.",
     "distractorExplanations": {
-      "b": "Firm may be liable.",
-      "c": "Extreme overstatement.",
-      "d": "Customer should be made whole if error."
+      "b": "Reg SHO close-outs address fails to deliver on short sales, not unfilled customer limit orders.",
+      "c": "The firm's duty to correct the error and make the customer whole exists whether or not the customer complains.",
+      "d": "The issue is execution quality and customer harm, and it needs prompt correction, not month-end cleanup."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1888,7 +1888,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Office plant height"
+        "text": "Quarterly revenue per registered representative and new account growth"
       },
       {
         "id": "b",
@@ -1896,19 +1896,19 @@
       },
       {
         "id": "c",
-        "text": "Random lottery numbers"
+        "text": "Firm net capital ratio and the size of its proprietary inventory"
       },
       {
         "id": "d",
-        "text": "Employee zodiac signs"
+        "text": "Average client portfolio return compared with its stated benchmark"
       }
     ],
     "correctOptionId": "b",
     "explanation": "KRIs quantify operational health for management dashboards.",
     "distractorExplanations": {
-      "a": "Irrelevant.",
-      "c": "Irrelevant.",
-      "d": "Irrelevant."
+      "a": "Revenue and account growth are business performance metrics, not indicators of operational control risk.",
+      "c": "Net capital and inventory size measure financial and market risk, not operational process health.",
+      "d": "Portfolio performance measures investment results, not the operational failure rate a KRI tracks."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1921,11 +1921,11 @@
     "options": [
       {
         "id": "a",
-        "text": "No review because vendor promises security"
+        "text": "Reliance on the vendor's SOC 2 report in place of oversight"
       },
       {
         "id": "b",
-        "text": "Share customer passwords with vendor informally"
+        "text": "A vendor indemnity clause that transfers regulatory liability"
       },
       {
         "id": "c",
@@ -1933,15 +1933,15 @@
       },
       {
         "id": "d",
-        "text": "Skip BCP testing entirely"
+        "text": "Due diligence at onboarding, with renewal reviews every 5 years"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Outsourcing does not outsource regulatory responsibility; vendor oversight mandatory.",
     "distractorExplanations": {
-      "a": "Due diligence required.",
-      "b": "Secure credential management required.",
-      "d": "BCP testing needed."
+      "a": "A SOC report is one input; FINRA Regulatory Notice 21-29 says the firm keeps supervisory responsibility for outsourced functions.",
+      "b": "Contracts cannot transfer a member firm's regulatory obligations; the firm remains responsible for outsourced activities.",
+      "d": "Vendor oversight must be ongoing and risk-based, not a one-time onboarding check revisited every five years."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -2024,23 +2024,23 @@
       },
       {
         "id": "b",
-        "text": "The entire account automatically with no customer choice"
+        "text": "Every asset in the account, with the delivering firm closing it after settlement"
       },
       {
         "id": "c",
-        "text": "Only cash with no securities permitted ever"
+        "text": "Specified assets, but processed outside ACATS as a manual DTC free delivery"
       },
       {
         "id": "d",
-        "text": "Customer tax returns instead of financial assets"
+        "text": "Specified assets once the delivering firm validates the request within five business days"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ACATS supports full or partial transfers per customer instruction and receiving firm acceptance.",
     "distractorExplanations": {
-      "b": "Full transfer is optional, not mandatory always.",
-      "c": "Securities may transfer in ACATS.",
-      "d": "Tax returns are not ACATS assets."
+      "b": "Moving every asset and closing the account is a full transfer; a partial transfer leaves non-designated holdings behind.",
+      "c": "Partial transfers are a supported ACATS transaction type; they do not need to be handled as manual free deliveries.",
+      "d": "Under FINRA Rule 11870 the delivering firm must validate or take exception within one business day, not five."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2086,27 +2086,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Force all customers to participate without consent"
+        "text": "Apply the default option to each holder on the effective date without notice"
       },
       {
         "id": "b",
-        "text": "Ignore the offer because it is voluntary"
+        "text": "Notify customers and accept elections up to the payable date set by the issuer"
       },
       {
         "id": "c",
-        "text": "Notify customers, collect elections by deadline, and submit instructions to the issuer/agent"
+        "text": "Notify customers, collect elections by deadline, and submit instructions"
       },
       {
         "id": "d",
-        "text": "Cancel all open orders in unrelated symbols automatically"
+        "text": "Tender shares for each holder and let customers withdraw before the offer expires"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Voluntary actions require timely client communication and accurate election processing.",
+    "explanation": "Voluntary actions require timely client communication and accurate election processing. Instructions are submitted to the issuer's tender or exchange agent.",
     "distractorExplanations": {
-      "a": "Participation requires customer instruction.",
-      "b": "Voluntary actions must be processed.",
-      "d": "Unrelated orders are separate."
+      "a": "Defaults apply only when a holder does not respond after notice; a voluntary offer requires notifying holders and collecting elections first.",
+      "b": "Elections must arrive before the firm's internal deadline ahead of offer expiration; the payable date comes after the offer closes.",
+      "d": "The firm cannot tender without instructions; in a voluntary offer customers opt in rather than being tendered and opting out."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2119,27 +2119,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate unrestricted sale without any legend review"
+        "text": "Legend removal by the firm's own operations team once the shares are deposited"
       },
       {
         "id": "b",
-        "text": "Conversion to municipal bonds automatically"
+        "text": "Holding the shares for one year before any sale, as Rule 144 requires"
       },
       {
         "id": "c",
-        "text": "Deletion of cost basis records"
+        "text": "Filing Form 144 for any sale, even when shares are freely tradable"
       },
       {
         "id": "d",
-        "text": "Restriction legend tracking, release schedules, and compliance with Rule 144 where applicable"
+        "text": "Restriction legend tracking, release schedules, and compliance with Rule 144"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Ops tracks control restrictions and release dates before unrestricted trading.",
+    "explanation": "Ops tracks control restrictions and release dates before unrestricted trading. Rule 144 compliance applies where the shares are restricted or held by an affiliate.",
     "distractorExplanations": {
-      "a": "Legends block free sale until removed.",
-      "b": "Muni conversion is unrelated.",
-      "c": "Cost basis must be maintained."
+      "a": "The issuer's transfer agent removes a legend, typically after an issuer or counsel opinion; the firm's ops team cannot remove it.",
+      "b": "For an SEC-reporting issuer the Rule 144 holding period is six months; one year applies to non-reporting issuers, so a blanket hold is wrong.",
+      "c": "Form 144 is needed for affiliate or restricted sales above 5,000 shares or $50,000 in three months, not for any freely tradable sale."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2156,23 +2156,23 @@
       },
       {
         "id": "b",
-        "text": "Release funds to any new payee without callback verification"
+        "text": "Confirm the request by email reply to the address on file, then release"
       },
       {
         "id": "c",
-        "text": "Skip identity checks for wires above firm limits"
+        "text": "Verify authorization only for wires to third parties, not to the customer's bank"
       },
       {
         "id": "d",
-        "text": "Post the wire to the error account permanently"
+        "text": "Release the wire and complete identity verification after it settles"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Wire fraud controls include callback to number on file and hold periods for new payees.",
     "distractorExplanations": {
-      "b": "Unverified payees are a top fraud vector.",
-      "c": "Limits trigger enhanced review.",
-      "d": "Error accounts are temporary."
+      "b": "Email confirmation can be intercepted by a fraudster who controls the mailbox; a callback to a phone number on file is the standard.",
+      "c": "First-party wires to a newly linked bank are a top takeover path; authorization and payee checks apply to first-party wires too.",
+      "d": "Verification after release is too late; wired funds are hard to recall, so controls must run before release."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2185,27 +2185,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave target shares trading indefinitely after close"
+        "text": "Collect customer elections before crediting cash on payment date"
       },
       {
         "id": "b",
-        "text": "Remove target shares, credit cash proceeds, and post corporate action entries on payment date"
+        "text": "Remove target shares and credit cash proceeds on payment date"
       },
       {
         "id": "c",
-        "text": "Debit customer accounts for receiving cash"
+        "text": "Credit cash proceeds on the record date and remove shares at payment"
       },
       {
         "id": "d",
-        "text": "Convert cash proceeds to physical coin shipments"
+        "text": "Remove target shares and credit acquirer stock at the exchange ratio"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Mandatory mergers exchange shares for cash and/or acquirer stock per terms on effective date.",
+    "explanation": "Mandatory mergers exchange shares for cash and/or acquirer stock per terms on effective date. Corporate action entries are posted to each account on the payment date.",
     "distractorExplanations": {
-      "a": "Target ceases trading post-close.",
-      "c": "Cash proceeds credit customers.",
-      "d": "Physical coin is not settlement method."
+      "a": "Elections are for voluntary or cash/stock election deals; a mandatory cash merger is processed for every holder without instructions.",
+      "c": "In a cash merger, shares are removed and cash credited together on payment date; the record date does not trigger the cash credit.",
+      "d": "Crediting acquirer stock describes a stock-for-stock merger; a cash merger pays a fixed cash amount per share."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2218,11 +2218,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer depositing too much cash in the account"
+        "text": "Customer selling long shares held at the firm in fully paid street name"
       },
       {
         "id": "b",
-        "text": "Correct timely delivery of all shares"
+        "text": "Customer buying shares on margin instead of paying in full by T+1"
       },
       {
         "id": "c",
@@ -2230,15 +2230,15 @@
       },
       {
         "id": "d",
-        "text": "Using a limit order instead of market order"
+        "text": "Short seller obtaining a locate and borrowing shares before settlement"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Fails occur when the delivering broker cannot provide shares owed on settlement date.",
     "distractorExplanations": {
-      "a": "Excess cash does not cause delivery fails.",
-      "b": "Timely delivery prevents fails.",
-      "d": "Order type alone does not cause fails."
+      "a": "Long sales from fully paid street-name positions are deliverable from the firm's DTC account and do not cause fails.",
+      "b": "Margin purchases are financed by the firm and settle normally; how a buyer pays does not create a fail to deliver.",
+      "d": "A locate plus a borrow before settlement lets the seller deliver; that prevents rather than causes a fail."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2251,27 +2251,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Make funds immediately available for all checks without exception"
+        "text": "Make check funds available for trading and withdrawal the next business day"
       },
       {
         "id": "b",
-        "text": "Forward checks to the SEC for approval"
+        "text": "Apply a fixed 10-business-day hold set by FINRA to every check deposit"
       },
       {
         "id": "c",
-        "text": "Shred checks upon receipt without posting"
+        "text": "Hold funds for trading but permit wires out of the account immediately"
       },
       {
         "id": "d",
-        "text": "Apply hold periods per firm policy and applicable funds-availability rules before releasing funds for trading"
+        "text": "Apply hold periods per firm policy and applicable funds-availability rules"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Broker-dealers apply hold schedules and fraud controls on check deposits; bank-like Reg CC schedules may inform policy but the firm’s procedures govern release for trading.",
+    "explanation": "Broker-dealers apply hold schedules and fraud controls on check deposits; bank-like Reg CC schedules may inform policy but the firm’s procedures govern release for trading. Holds apply before funds are released for trading.",
     "distractorExplanations": {
-      "a": "Immediate availability for every check is not required.",
-      "b": "SEC does not approve individual checks.",
-      "c": "Checks must be posted to the ledger."
+      "a": "Next-day availability for withdrawals invites returned-check fraud; firms hold funds per policy until the check is collected.",
+      "b": "FINRA sets no uniform check-hold period; hold schedules come from firm policy informed by funds-availability rules.",
+      "c": "Wiring out uncollected funds is the highest-risk release; restricting trading but not withdrawals inverts the control."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2288,23 +2288,23 @@
       },
       {
         "id": "b",
-        "text": "Only after the contract has expired worthless"
+        "text": "Only on expiration day, since early exercise applies to European options"
       },
       {
         "id": "c",
-        "text": "Only when the underlying stock splits 2-for-1"
+        "text": "On the day OCC receives exercise notice, with assignment deferred to expiry"
       },
       {
         "id": "d",
-        "text": "Automatically for every out-of-the-money contract"
+        "text": "At expiration for any contract in the money by at least $1.00"
       }
     ],
     "correctOptionId": "a",
     "explanation": "American options may be exercised early; OCC also auto-exercises many ITM contracts at expiration. Ops must process assignments whenever they occur.",
     "distractorExplanations": {
-      "b": "Worthless expiration is the opposite of assignment.",
-      "c": "Splits may adjust terms but are not the assignment trigger.",
-      "d": "OTM options typically expire unexercised."
+      "b": "That reverses the styles: American options allow early exercise, while European options are exercisable only at expiration.",
+      "c": "OCC assigns exercise notices to clearing members on the exercise date itself; assignment is not deferred to expiration.",
+      "d": "OCC exercise by exception applies at $0.01 in the money, and early exercise can trigger assignment before expiration anyway."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2317,27 +2317,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate wire transfer to any new address without verification"
+        "text": "Updated mailings to the new address, with disbursements processed as usual"
       },
       {
         "id": "b",
-        "text": "Verification procedures, possible hold on disbursements, and updated mailings per AML/red flags policy"
+        "text": "Verification procedures, possible hold on disbursements, and updated mailings"
       },
       {
         "id": "c",
-        "text": "Closure of the account without customer contact"
+        "text": "A new account form and fresh CIP verification as if opening the account"
       },
       {
         "id": "d",
-        "text": "Deletion of all trade history"
+        "text": "Notice to FINRA through an amended Form U4 within 30 days of the change"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Address changes are common fraud vectors; firms verify identity before releasing assets.",
+    "explanation": "Address changes are common fraud vectors; firms verify identity before releasing assets. This follows the firm's AML and identity-theft red flags policy.",
     "distractorExplanations": {
-      "a": "Unverified wires increase fraud risk.",
-      "c": "Closure requires cause and process.",
-      "d": "Trade history must be retained."
+      "a": "Disbursements right after an address change are a classic takeover pattern; firms verify and may hold them first.",
+      "c": "An address change does not restart CIP; it triggers change verification and identity-theft red flags review.",
+      "d": "Form U4 covers registered persons' information; customer address changes are internal account records under Rule 4512."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2350,27 +2350,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only passbook savings with no securities activity"
+        "text": "Mutual fund breakpoint tracking and 529 plan account servicing"
       },
       {
         "id": "b",
-        "text": "In-person coin counting for every trade"
+        "text": "Cash-account trading settled delivery versus payment at a custodian"
       },
       {
         "id": "c",
-        "text": "Securities lending, margin financing, consolidated reporting, and capital introduction services"
+        "text": "Securities lending, margin financing, and consolidated reporting"
       },
       {
         "id": "d",
-        "text": "Elimination of all SIPC coverage automatically"
+        "text": "Odd-lot dividend reinvestment and paper certificate safekeeping"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Prime services support hedge funds and institutions with complex financing and reporting.",
+    "explanation": "Prime services support hedge funds and institutions with complex financing and reporting. Capital introduction is another common prime brokerage service.",
     "distractorExplanations": {
-      "a": "Passbook savings is banking, not prime brokerage.",
-      "b": "Coin counting is not prime ops.",
-      "d": "SIPC rules still apply where eligible."
+      "a": "Breakpoints and 529 plans are retail product servicing needs, not hedge fund financing and custody services.",
+      "b": "DVP/RVP accounts settle at an outside custodian without financing; prime clients need leverage, borrows, and consolidated reporting.",
+      "d": "DRIP and certificate safekeeping are retail services; prime brokerage centers on financing, securities lending, and reporting."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2383,15 +2383,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Issue a duplicate payment without research"
+        "text": "Verify ex-date trades and file a claim with the issuer's transfer agent"
       },
       {
         "id": "b",
-        "text": "Close the account for complaining"
+        "text": "Verify declaration date holdings and credit the dividend if shares were held"
       },
       {
         "id": "c",
-        "text": "Transfer blame to the customer without review"
+        "text": "Issue a goodwill credit for the dividend and research the break afterward"
       },
       {
         "id": "d",
@@ -2401,9 +2401,9 @@
     "correctOptionId": "d",
     "explanation": "Dividend inquiries require reconciliation of positions on record date and cash postings.",
     "distractorExplanations": {
-      "a": "Duplicate pay without research creates loss.",
-      "b": "Complaints require investigation.",
-      "c": "Research precedes conclusions."
+      "a": "Claims go to the counterparty or through DTC after research; the first step is reconciling the account's record date entitlement.",
+      "b": "Entitlement depends on record date holdings, not on what the customer held on the declaration date.",
+      "c": "Crediting before research risks a duplicate payment; ops must first confirm entitlement and posting."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2416,27 +2416,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Shares credit on settlement date with correct restricted status and cost basis for allocated customers"
+        "text": "Shares credit on settlement date with correct restricted status and cost basis"
       },
       {
         "id": "b",
-        "text": "Retail customers receive unlimited shares without registration compliance"
+        "text": "Shares credit on trade date at the first-day closing price as cost basis"
       },
       {
         "id": "c",
-        "text": "IPO shares bypass all settlement systems"
+        "text": "Shares credit to restricted persons under Rule 5130 like other customers"
       },
       {
         "id": "d",
-        "text": "Cost basis is always zero regardless of offering price"
+        "text": "Shares credit after the 25-day quiet period ends for each allocated account"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Allocations must reflect offering price, restrictions, and settlement through standard channels.",
+    "explanation": "Allocations must reflect offering price, restrictions, and settlement through standard channels. This applies to each allocated customer account.",
     "distractorExplanations": {
-      "b": "Allocations follow offering and 5130 rules.",
-      "c": "IPOs settle through normal processes.",
-      "d": "Cost basis reflects offering/allocation price."
+      "b": "IPO cost basis is the public offering price, and shares post on settlement date, not at the first-day close on trade date.",
+      "c": "Rule 5130 bars allocating new issues to restricted persons such as broker-dealer personnel; ops must exclude them.",
+      "d": "The research quiet period limits analyst reports; it does not delay settlement of allocated IPO shares."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2449,27 +2449,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only U.S. holidays ignoring London or Tokyo closures"
+        "text": "U.S. settlement cycles applied to every market, with local holidays noted"
       },
       {
         "id": "b",
-        "text": "Local market settlement cycles, holiday calendars, and currency cut-off times for cross-border trades"
+        "text": "Local market settlement cycles, holiday calendars, and currency cut-off times"
       },
       {
         "id": "c",
-        "text": "Single time zone without FX consideration"
+        "text": "Holiday calendars of the trade's home market, with FX settled on the trade date"
       },
       {
         "id": "d",
-        "text": "Physical certificate delivery for all international book-entry markets"
+        "text": "Currency cut-off times in New York, since all FX settles through CHIPS"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Cross-border ops aligns settlement dates and FX funding across jurisdictions.",
+    "explanation": "Cross-border ops aligns settlement dates and FX funding across jurisdictions. These matter most for cross-border trades.",
     "distractorExplanations": {
-      "a": "Foreign markets have local holidays.",
-      "c": "FX matters for cross-border settlement.",
-      "d": "Many markets are dematerialized."
+      "a": "Many foreign markets settle T+2 or on other cycles; applying the U.S. T+1 cycle everywhere causes cross-border fails.",
+      "c": "Settlement needs both markets' calendars and FX funding within currency cut-offs (spot FX is T+2), not same-day FX on one calendar.",
+      "d": "FX settles in each currency's home payment system (CLS, local RTGS), so desks track local cut-offs, not just New York CHIPS."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2482,27 +2482,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Paper only with no electronic copies permitted ever"
+        "text": "Paper or electronic form, kept for three years when no other period is specified"
       },
       {
         "id": "b",
-        "text": "Encrypted form that the firm cannot decrypt"
+        "text": "Electronic form only, with paper records converted within one year"
       },
       {
         "id": "c",
-        "text": "Personal employee laptops with no backup"
+        "text": "Any format the firm chooses, provided it keeps records for two years"
       },
       {
         "id": "d",
-        "text": "A format that is readily accessible and auditable for required retention periods"
+        "text": "A 17a-4 compliant format kept for each required retention period"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "4511 sets WORM/electronic media standards and retention aligned with SEC rules.",
+    "explanation": "FINRA Rule 4511(c) requires books and records to be preserved in a format and media that comply with SEA Rule 17a-4, and Rule 4511(b) sets a six-year retention default where FINRA rules and Rule 17a-4 specify no other period.",
     "distractorExplanations": {
-      "a": "Electronic records are permitted with controls.",
-      "b": "Regulators must be able to examine records.",
-      "c": "Personal unbacked laptops violate requirements."
+      "a": "Rule 4511(b) sets a six-year default for records with no specified period under FINRA rules or 17a-4, not three years.",
+      "b": "Rule 4511 and 17a-4 permit paper or compliant electronic records; there is no mandatory one-year paper conversion.",
+      "c": "Records must be kept in a 17a-4-compliant format under 4511(c), and the default retention under 4511(b) is six years, not two."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2519,23 +2519,23 @@
       },
       {
         "id": "b",
-        "text": "Only marketing slogans for retail advertising"
+        "text": "Written supervisory procedures for each office of supervisory jurisdiction"
       },
       {
         "id": "c",
-        "text": "Personal vacation schedules for all employees"
+        "text": "Annual CEO certification of compliance and supervisory processes"
       },
       {
         "id": "d",
-        "text": "Unlimited proprietary trading without risk limits"
+        "text": "Customer account information records including a trusted contact"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Rule 4370 mandates BCP addressing data backup, alternate sites, and critical function recovery.",
     "distractorExplanations": {
-      "b": "Marketing is separate compliance.",
-      "c": "Vacation schedules are not Rule 4370.",
-      "d": "Prop trading requires risk controls."
+      "b": "Written supervisory procedures are required by Rule 3110; Rule 4370 is the business continuity plan rule.",
+      "c": "The annual CEO certification is Rule 3130; Rule 4370 covers business continuity plans and emergency contacts.",
+      "d": "Account information and trusted contact persons are FINRA Rule 4512, not the Rule 4370 business continuity rule."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2548,7 +2548,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore cash transactions below any threshold without monitoring"
+        "text": "File Currency Transaction Reports for cash deposits of $3,000 or more in a day"
       },
       {
         "id": "b",
@@ -2556,19 +2556,19 @@
       },
       {
         "id": "c",
-        "text": "Report all customer birthdays to FINRA daily"
+        "text": "File Suspicious Activity Reports with FINRA for any suspicious transaction of $2,000 or more"
       },
       {
         "id": "d",
-        "text": "Prohibit all international wires without exception"
+        "text": "Implement AML programs reviewed by an independent tester every five years"
       }
     ],
     "correctOptionId": "b",
     "explanation": "BSA/AML programs include CDD, SAR filings, and currency transaction reporting where applicable.",
     "distractorExplanations": {
-      "a": "Monitoring is required beyond single thresholds holistically.",
-      "c": "Birthday reporting is not BSA.",
-      "d": "International wires are permitted with controls."
+      "a": "CTRs are filed for cash over $10,000 in a business day; $3,000 is the monetary instrument purchase recordkeeping threshold.",
+      "c": "SARs are filed with FinCEN, not FINRA, and the broker-dealer threshold is $5,000; $2,000 is the money services business threshold.",
+      "d": "FINRA Rule 3310 requires independent AML testing annually (every two years for certain firms), not every five years."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2581,11 +2581,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Open accounts anonymously with no name collected"
+        "text": "Verify identity of customers using documentary methods, as non-documentary ones are barred"
       },
       {
         "id": "b",
-        "text": "Rely solely on social media profiles without documents"
+        "text": "Verify identity of customers by obtaining each customer's Social Security card copy"
       },
       {
         "id": "c",
@@ -2593,15 +2593,15 @@
       },
       {
         "id": "d",
-        "text": "Skip verification for all legal entity accounts"
+        "text": "Verify identity of account owners and file the CIP records with FinCEN each month"
       }
     ],
     "correctOptionId": "c",
     "explanation": "CIP collects name, address, DOB/formation date, and ID number with verification procedures.",
     "distractorExplanations": {
-      "a": "Anonymous accounts violate CIP.",
-      "b": "Social media alone is insufficient.",
-      "d": "Entities require beneficial ownership identification."
+      "a": "The CIP rule expressly allows non-documentary methods such as credit bureau checks, alone or combined with documents.",
+      "b": "CIP does not require an SSN card; it requires a taxpayer ID number and risk-based verification by documents or other means.",
+      "d": "CIP records are kept by the firm for five years after the account closes; they are not filed with FinCEN."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2614,15 +2614,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Every conversation between friends about sports"
+        "text": "Broker-dealer recommendations of securities and accounts to institutional customers"
       },
       {
         "id": "b",
-        "text": "Corporate issuers filing 10-K reports"
+        "text": "Investment adviser recommendations to advisory clients under the Advisers Act"
       },
       {
         "id": "c",
-        "text": "State insurance department property claims"
+        "text": "Broker-dealer execution of unsolicited orders for retail self-directed accounts"
       },
       {
         "id": "d",
@@ -2632,9 +2632,9 @@
     "correctOptionId": "d",
     "explanation": "Reg BI governs retail recommendation conduct for BD recommendations and account types.",
     "distractorExplanations": {
-      "a": "Personal non-business talk is out of scope.",
-      "b": "Issuer filings are separate.",
-      "c": "Insurance claims are not Reg BI."
+      "a": "Reg BI covers retail customers; institutional recommendations remain under FINRA Rule 2111 suitability.",
+      "b": "RIAs owe a fiduciary duty under the Advisers Act; Reg BI applies to broker-dealers and their associated persons.",
+      "c": "Reg BI is triggered by a recommendation; unsolicited self-directed orders without a recommendation are outside it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2651,23 +2651,23 @@
       },
       {
         "id": "b",
-        "text": "Only federal credit unions with no securities business"
+        "text": "State and local issuers that sell municipal bonds to fund public projects"
       },
       {
         "id": "c",
-        "text": "Retail clothing merchants"
+        "text": "Broker-dealers trading corporate bonds and reporting those trades to TRACE"
       },
       {
         "id": "d",
-        "text": "Private pilots operating aircraft"
+        "text": "Banks and dealers in U.S. Treasury securities under the Government Securities Act"
       }
     ],
     "correctOptionId": "a",
     "explanation": "MSRB regulates municipal market professionals, not all businesses generally.",
     "distractorExplanations": {
-      "b": "Credit unions without muni business are not MSRB focus.",
-      "c": "Clothing merchants unrelated.",
-      "d": "Aviation unrelated."
+      "b": "The MSRB cannot regulate municipal issuers directly; issuer disclosure is reached through dealer rules such as SEC Rule 15c2-12.",
+      "c": "Corporate bond dealing and TRACE reporting are FINRA rules; MSRB rules govern municipal securities activities.",
+      "d": "Treasury dealers are regulated under the Government Securities Act by Treasury, the SEC, and bank regulators, not the MSRB."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2680,7 +2680,7 @@
     "options": [
       {
         "id": "a",
-        "text": "$500 for unlimited day trades"
+        "text": "$2,000 in the margin account, the same minimum required to open any margin account"
       },
       {
         "id": "b",
@@ -2688,19 +2688,19 @@
       },
       {
         "id": "c",
-        "text": "$1 million for any cash account"
+        "text": "$50,000 in the margin account, of which half may be met with a customer's cash account"
       },
       {
         "id": "d",
-        "text": "$0 with no equity requirement"
+        "text": "$100,000 in the margin account, with day trading buying power limited to 2x equity"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "PDT rules under FINRA margin requirements protect firms and customers from excessive intraday leverage.",
+    "explanation": "Under the current FINRA Rule 4210 pattern day trader provisions, the customer must hold at least $25,000 of equity in the margin account before day trading; below that level, day trading is restricted until the equity is restored.",
     "distractorExplanations": {
-      "a": "$500 is far below PDT minimum.",
-      "c": "Cash accounts have different rules.",
-      "d": "Zero equity does not satisfy PDT."
+      "a": "$2,000 is the Rule 4210 minimum equity for a margin account; pattern day traders need $25,000.",
+      "c": "PDT minimum equity is $25,000 and must be held in the margin account; cash-account balances do not count toward it.",
+      "d": "The PDT minimum is $25,000, and day-trading buying power is up to 4x maintenance margin excess, not 2x equity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2713,11 +2713,11 @@
     "options": [
       {
         "id": "a",
-        "text": "A customer asks for a duplicate statement politely"
+        "text": "Complaints are made orally or in writing, once three are received from one customer"
       },
       {
         "id": "b",
-        "text": "Market indices rise more than 1% in a day"
+        "text": "Complaints involve service delays and are not resolved within 30 days of receipt"
       },
       {
         "id": "c",
@@ -2725,15 +2725,15 @@
       },
       {
         "id": "d",
-        "text": "Operations staff take scheduled vacation"
+        "text": "Complaints allege customer losses above $5,000, with the report due to FINRA within 90 days"
       }
     ],
     "correctOptionId": "c",
     "explanation": "4530 defines reportable events including specified complaints and financial losses.",
     "distractorExplanations": {
-      "a": "Duplicate statements are routine service.",
-      "b": "Index moves are not complaint triggers.",
-      "d": "Vacation is unrelated."
+      "a": "4530 reporting concerns written customer complaints; there is no three-complaints-per-customer trigger.",
+      "b": "Service delays are not a 4530(a) trigger; 30 days is the deadline to report a specified event, not a complaint test.",
+      "d": "4530(a) events are reported within 30 days, and complaint reporting turns on the allegation type (theft, misappropriation, forgery), not a dollar amount."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2746,15 +2746,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Orders are executed only on the NYSE floor physically"
+        "text": "The firm pays market makers a fee to execute orders at the NBBO midpoint"
       },
       {
         "id": "b",
-        "text": "The customer pays no fees ever on any transaction"
+        "text": "The customer's orders will be routed to the venue paying the highest rebate"
       },
       {
         "id": "c",
-        "text": "The SEC sets the customer's limit price"
+        "text": "The firm receives commissions from customers for each order it routes"
       },
       {
         "id": "d",
@@ -2764,9 +2764,9 @@
     "correctOptionId": "d",
     "explanation": "Rule 606/607 and Form CRS disclose PFOF and routing practices to retail customers.",
     "distractorExplanations": {
-      "a": "Many orders execute electronically off floor.",
-      "b": "Commissions and fees may apply.",
-      "c": "Customers set limit prices, not SEC."
+      "a": "PFOF flows from market makers to the broker, not from the broker to market makers.",
+      "b": "PFOF does not override best execution; the firm must still route for the most favorable terms reasonably available.",
+      "c": "Commissions are charged to customers; PFOF is compensation the firm receives from execution venues for routing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2783,23 +2783,23 @@
       },
       {
         "id": "b",
-        "text": "Only municipal bond underwriting syndicate formation"
+        "text": "Continuing disclosure by municipal issuers that broker-dealers must review"
       },
       {
         "id": "c",
-        "text": "Insurance annuity illustration standards"
+        "text": "Delivery of a preliminary prospectus to buyers 48 hours before confirmation"
       },
       {
         "id": "d",
-        "text": "Airport security screening procedures"
+        "text": "Net capital that broker-dealers must hold relative to aggregate indebtedness"
       }
     ],
     "correctOptionId": "a",
     "explanation": "15c2-11 requires issuer information for quoting OTC securities to protect investors.",
     "distractorExplanations": {
-      "b": "Muni syndicates follow MSRB/other rules.",
-      "c": "Annuities are state insurance.",
-      "d": "Airport security unrelated."
+      "b": "Municipal continuing disclosure obligations for underwriters are SEC Rule 15c2-12, not Rule 15c2-11.",
+      "c": "The 48-hour preliminary prospectus delivery for IPOs is SEC Rule 15c2-8, not Rule 15c2-11.",
+      "d": "Net capital requirements are SEC Rule 15c3-1; Rule 15c2-11 governs publishing quotations for OTC securities."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2812,27 +2812,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Process wires to sanctioned countries without review"
+        "text": "Screen customers against SDN lists at onboarding and on annual reviews"
       },
       {
         "id": "b",
-        "text": "Screen customers and transactions against SDN and blocked persons lists"
+        "text": "Screen customers and transactions against SDN and blocked lists"
       },
       {
         "id": "c",
-        "text": "Ignore government list updates"
+        "text": "Report blocked transactions to FinCEN on a SAR within 30 calendar days"
       },
       {
         "id": "d",
-        "text": "Share sanctions evasion tips with customers"
+        "text": "Screen wire beneficiaries against SDN lists but not the account holders"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "OFAC prohibits dealings with blocked parties; firms must block and report matches.",
+    "explanation": "OFAC rules bar dealings with Specially Designated Nationals and other blocked persons, so broker-dealers screen customers and transactions continuously, block or reject matches, and report blocked property to OFAC within 10 business days.",
     "distractorExplanations": {
-      "a": "Sanctioned dealings are prohibited.",
-      "c": "Lists must be updated and screened.",
-      "d": "Assisting evasion is illegal."
+      "a": "Screening must cover transactions and list updates on an ongoing basis, not just onboarding plus an annual refresh.",
+      "c": "Blocked or rejected transactions are reported to OFAC within 10 business days; SARs to FinCEN are a separate BSA filing.",
+      "d": "OFAC compliance covers both customers and transactions; skipping account holders misses sanctioned account owners."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2845,11 +2845,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Deletion of all emails after one hour"
+        "text": "Retention of electronic communications for one year in any rewriteable electronic storage format"
       },
       {
         "id": "b",
-        "text": "Storage on unsecured personal phones"
+        "text": "Backup on the firm email server, with deletion permitted after 90 days"
       },
       {
         "id": "c",
@@ -2857,15 +2857,15 @@
       },
       {
         "id": "d",
-        "text": "No retention of any instant messages ever"
+        "text": "Retention of emails only, while instant messages and texts are excluded"
       }
     ],
     "correctOptionId": "c",
     "explanation": "WORM or audit-trail alternatives preserve books and records for examination.",
     "distractorExplanations": {
-      "a": "One-hour deletion violates retention.",
-      "b": "Personal unsecured storage fails requirements.",
-      "d": "IMs must be retained per policy."
+      "a": "Communications are kept at least three years under 17a-4(b)(4), in WORM or a compliant audit-trail system, not rewriteable storage.",
+      "b": "Ordinary server backups with 90-day deletion fail both the three-year retention period and the 17a-4 format requirement.",
+      "d": "17a-4 covers business communications in any medium, including IMs, texts, and chats, as the SEC off-channel cases showed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2878,27 +2878,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All meals regardless of value without any limit ever"
+        "text": "Year-end awards the firm gives its own employees for strong performance"
       },
       {
         "id": "b",
-        "text": "Only gifts from customers with no limits"
+        "text": "Gifts from customers to representatives, capped at $25 per occasion"
       },
       {
         "id": "c",
-        "text": "Salary paid by the broker-dealer to employees"
+        "text": "Salary and commissions the broker-dealer pays registered employees"
       },
       {
         "id": "d",
-        "text": "Gifts and entertainment from non-customers that could impair objectivity, with de minimis thresholds"
+        "text": "Gifts to other firms' employees relating to their employer's business"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "3220 restricts non-cash compensation from vendors to associated persons.",
+    "explanation": "Rule 3220 limits gifts that a member or its associated persons give to employees or agents of another person when the gift relates to that employer's business; gifts above the annual per-person limit are prohibited. Ordinary business entertainment and the firm's own pay fall outside the rule.",
     "distractorExplanations": {
-      "a": "De minimis thresholds exist.",
-      "b": "Non-customer gifts are the focus.",
-      "c": "Salary is employment compensation, not 3220 gift."
+      "a": "Awards a firm gives its own employees are employment compensation; Rule 3220 targets gifts to people employed by others.",
+      "b": "There is no $25 per-occasion cap; the Rule 3220 limit is a per-person annual amount on gifts relating to the recipient employer's business.",
+      "c": "Regular compensation paid by the employing firm is ordinary employment pay and falls outside the Rule 3220 gift limit."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2911,27 +2911,27 @@
     "options": [
       {
         "id": "a",
-        "text": "The broker-dealer or designated agent sending proxy materials and recording customer instructions"
+        "text": "The broker-dealer or designated agent sending proxy materials"
       },
       {
         "id": "b",
-        "text": "The Federal Reserve Board directly"
+        "text": "The issuer's transfer agent mailing ballots to each beneficial owner"
       },
       {
         "id": "c",
-        "text": "Random selection among account holders daily"
+        "text": "The Depository Trust Company voting as the nominee holder of record"
       },
       {
         "id": "d",
-        "text": "The issuer's CEO without shareholder input"
+        "text": "The broker voting on every proposal at its discretion after 10 days"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Beneficial owners receive voting instructions via broker; ops processes ballots and omnibus votes.",
+    "explanation": "Beneficial owners receive voting instructions via broker; ops processes ballots and omnibus votes. The broker or its agent also records and submits customer voting instructions.",
     "distractorExplanations": {
-      "b": "Fed does not vote retail proxies.",
-      "c": "Voting follows shareholder instruction.",
-      "d": "CEO cannot vote customer shares."
+      "b": "Transfer agents deal with registered holders; street-name owners get materials through their broker or its agent.",
+      "c": "DTC issues an omnibus proxy to its participants; it does not vote beneficial owners' shares itself.",
+      "d": "Under NYSE Rule 452 brokers may vote uninstructed shares on routine matters only, not on every proposal."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2944,7 +2944,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited day trading in employer stock without disclosure"
+        "text": "Duplicate statements sent to compliance, but no pre-clearance of personal trades"
       },
       {
         "id": "b",
@@ -2952,19 +2952,19 @@
       },
       {
         "id": "c",
-        "text": "Sharing MNPI with family for their trading benefit"
+        "text": "Disclosure of trades to the employer only for purchases of employer stock"
       },
       {
         "id": "d",
-        "text": "No restrictions because ops staff are not associated persons"
+        "text": "Trading through the firm itself, with accounts at other firms left unreported"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ops staff access MNPI; firms restrict personal trading to prevent conflicts and insider trading.",
     "distractorExplanations": {
-      "a": "Employer stock trading is often restricted.",
-      "c": "Tipping family violates insider rules.",
-      "d": "Many ops staff are associated persons."
+      "a": "Duplicate statements are common, but ops staff with MNPI access are typically also subject to pre-clearance and restricted lists.",
+      "c": "Policies cover reportable personal securities trades generally, not just purchases of employer stock.",
+      "d": "Rule 3210 requires prior written consent from the employer for accounts held at other firms; they cannot go unreported."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -2977,15 +2977,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Credits revenue immediately as earned fee income"
+        "text": "Debits the customer's payable account and credits cash for the deposit"
       },
       {
         "id": "b",
-        "text": "Debits customer payable and credits cash incorrectly reversed"
+        "text": "Debits cash/assets and credits the customer's receivable account"
       },
       {
         "id": "c",
-        "text": "Ignores the deposit until year-end close"
+        "text": "Debits cash/assets and credits the firm's commission revenue account"
       },
       {
         "id": "d",
@@ -2995,9 +2995,9 @@
     "correctOptionId": "d",
     "explanation": "Customer cash is a liability until invested; double-entry reflects firm custody obligation.",
     "distractorExplanations": {
-      "a": "Wire deposits are not automatic fee revenue.",
-      "b": "Reversed entries misstate balances.",
-      "c": "Deposits post promptly per policy."
+      "a": "This reverses the entry; incoming cash raises the asset (debit) and the amount owed to the customer (credit).",
+      "b": "A receivable means the customer owes the firm, as with a margin debit; deposited cash is owed back to the customer.",
+      "c": "Deposited customer cash is not revenue; it remains a liability until fees are actually earned and charged."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3006,31 +3006,31 @@
     "id": "series-99-readiness-check-books-017",
     "examSlug": "series-99-readiness-check",
     "topicId": "books",
-    "prompt": "Monthly customer statements must reflect:",
+    "prompt": "Customer account statements, which FINRA Rule 2231 requires at least quarterly, must reflect:",
     "options": [
       {
         "id": "a",
-        "text": "Positions, balances, transactions, and fees for the statement period accurately"
+        "text": "Positions, balances, transactions, and fees for the statement period"
       },
       {
         "id": "b",
-        "text": "Only the firm logo with no account detail"
+        "text": "Positions and balances, with transactions reported on the confirms instead"
       },
       {
         "id": "c",
-        "text": "Projected future trades not yet executed"
+        "text": "Transactions and fees, with positions shown on the annual Form 1099 instead"
       },
       {
         "id": "d",
-        "text": "Other customers' account numbers for comparison"
+        "text": "Positions at month-end, with fees disclosed only on the annual fee schedule"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "FINRA Rule 2231 and firm policy require complete transactional and holdings disclosure.",
+    "explanation": "FINRA Rule 2231 requires account statements at least once each calendar quarter showing securities positions, money balances, and account activity since the last statement, including fees charged; confirms, 1099s, and fee schedules do not replace them.",
     "distractorExplanations": {
-      "b": "Detail is mandatory.",
-      "c": "Unexecuted projections are not statement facts.",
-      "d": "Other customer data is confidential."
+      "b": "Confirmations are trade-by-trade notices under Rule 10b-10; Rule 2231 statements must still list account activity.",
+      "c": "Form 1099 reports tax information and does not substitute for positions on a periodic account statement.",
+      "d": "Fees charged during the period must appear on the statement; a separate fee schedule does not replace that disclosure."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3043,7 +3043,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only dividends with no sale information"
+        "text": "Dividends and interest paid on covered securities during the year"
       },
       {
         "id": "b",
@@ -3051,19 +3051,19 @@
       },
       {
         "id": "c",
-        "text": "Customer Social Security numbers publicly online"
+        "text": "Proceeds for sales, with basis left for the customer to compute"
       },
       {
         "id": "d",
-        "text": "Fictional basis set to zero for all sales"
+        "text": "Year-end market value and basis of positions still held"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Brokers report sales proceeds and basis on 1099-B per cost basis reporting rules.",
     "distractorExplanations": {
-      "a": "1099-B covers sales, not dividends alone.",
-      "c": "SSNs are confidential on tax forms.",
-      "d": "Basis reflects actual acquisition data."
+      "a": "Dividends and interest go on Forms 1099-DIV and 1099-INT; Form 1099-B reports proceeds and basis from sales.",
+      "c": "For covered securities brokers must report adjusted basis; leaving basis to the customer describes noncovered lots.",
+      "d": "Form 1099-B reports dispositions, not unrealized year-end holdings; unsold positions do not appear on it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3076,27 +3076,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer long-term investments for retirement planning"
+        "text": "Customer cash awaiting investment in a bank sweep program"
       },
       {
         "id": "b",
-        "text": "Permanent firm profit reserves without reconciliation"
+        "text": "Unsettled customer trades awaiting T+1 settlement"
       },
       {
         "id": "c",
-        "text": "Unidentified receipts or items pending proper allocation to customer or firm accounts"
+        "text": "Unidentified receipts or items pending proper allocation"
       },
       {
         "id": "d",
-        "text": "Deleted trade records"
+        "text": "Trade errors held until the firm absorbs the loss"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Suspense clears when research identifies correct booking; prolonged balances trigger audit flags.",
+    "explanation": "Suspense clears when research identifies correct booking; prolonged balances trigger audit flags. Items are later allocated to the correct customer or firm account.",
     "distractorExplanations": {
-      "a": "Suspense is temporary, not investment.",
-      "b": "Profit reserves use different GL accounts.",
-      "d": "Records cannot be deleted improperly."
+      "a": "Sweep balances are customer assets in a bank program, not unidentified items awaiting allocation.",
+      "b": "Pending settlements are tracked in settlement or fail accounts; suspense is for items that cannot yet be identified.",
+      "d": "Trade errors go to the error account; suspense holds unidentified receipts or unallocated items."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3146,23 +3146,23 @@
       },
       {
         "id": "b",
-        "text": "Only marketing mailers to retail prospects"
+        "text": "Customer statements to trade confirmations sent during the period"
       },
       {
         "id": "c",
-        "text": "Employee timesheets to payroll tax forms"
+        "text": "Internal ledgers to the firm's general ledger cash accounts only"
       },
       {
         "id": "d",
-        "text": "Weather forecasts to trading volume"
+        "text": "Trader positions to their profit-and-loss reports for the day"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Position breaks between books and depository must be researched and resolved promptly.",
     "distractorExplanations": {
-      "b": "Marketing is unrelated.",
-      "c": "Payroll is HR function.",
-      "d": "Weather is not reconciliation input."
+      "b": "Statement-versus-confirm checks are a customer communications review, not a books-to-depository position reconciliation.",
+      "c": "Cash reconciliation is a separate control; position reconciliation compares security positions to DTC and counterparties.",
+      "d": "P&L-versus-position checks are a desk risk control; operations position recon compares books to depository records."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3175,7 +3175,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Only physical coin collections in safe deposit boxes"
+        "text": "Remaining margin debit after the receiving firm accepts the transfer"
       },
       {
         "id": "b",
@@ -3183,19 +3183,19 @@
       },
       {
         "id": "c",
-        "text": "Customer personal loans to neighbors"
+        "text": "Remaining securities the receiving firm rejected as non-transferable"
       },
       {
         "id": "d",
-        "text": "Unrelated IRA rollovers without paperwork"
+        "text": "Remaining IRA balances moved by a 60-day indirect rollover check"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Residual balances follow asset transfers to complete account closure at delivering firm.",
     "distractorExplanations": {
-      "a": "Coin collections are not ACATS standard assets.",
-      "c": "Personal loans are not brokerage assets.",
-      "d": "IRA rollovers use separate forms."
+      "a": "A residual credit is money owed to the customer, not a margin debit the customer owes.",
+      "c": "Non-transferable assets stay at the delivering firm or are liquidated on instruction; residual credit refers to trailing cash.",
+      "d": "A 60-day indirect rollover is a tax distribution method, not the ACATS residual credit process between firms."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3208,27 +3208,27 @@
     "options": [
       {
         "id": "a",
-        "text": "All long-term capital gains rates"
+        "text": "Recognition of tax gains when substantially identical securities are repurchased within 30 days"
       },
       {
         "id": "b",
-        "text": "Municipal bond interest tax exemption"
+        "text": "Recognition of tax losses when shares of a different issuer in the same industry are repurchased"
       },
       {
         "id": "c",
-        "text": "Recognition of tax losses when substantially identical securities are repurchased within 30 days before or after the sale"
+        "text": "Recognition of tax losses when substantially identical securities are repurchased within 30 days"
       },
       {
         "id": "d",
-        "text": "Corporate payroll withholding schedules"
+        "text": "Recognition of tax losses when substantially identical securities are repurchased within 90 days"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Wash sales defer losses when replacement purchases occur in the 61-day window.",
+    "explanation": "Wash sales defer losses when replacement purchases occur in the 61-day window. The window runs 30 days before or after the sale.",
     "distractorExplanations": {
-      "a": "Wash sales concern losses, not LTCG rates directly.",
-      "b": "Muni interest is separate tax rule.",
-      "d": "Payroll unrelated."
+      "a": "The wash sale rule disallows losses only; gains are recognized normally even if the shares are bought back.",
+      "b": "Only substantially identical securities trigger a wash sale; a different company in the same industry does not.",
+      "d": "The wash sale window is 30 days before or after the sale (61 days in total), not 90 days."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3241,27 +3241,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Donating customer assets to charity without notice"
+        "text": "Turning unclaimed property over to the SEC after dormancy periods lapse"
       },
       {
         "id": "b",
-        "text": "Deleting account records immediately with no reporting"
+        "text": "Turning unclaimed property over to the state where the firm is incorporated"
       },
       {
         "id": "c",
-        "text": "Transferring accounts to employees as bonus"
+        "text": "Moving dormant accounts into the firm's suspense account indefinitely"
       },
       {
         "id": "d",
-        "text": "Turning unclaimed property over to the state after dormancy periods per unclaimed property laws"
+        "text": "Turning unclaimed property over to the state after dormancy periods"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "States claim abandoned property; firms must diligence and remit per escheat statutes.",
+    "explanation": "States claim abandoned property; firms must diligence and remit per escheat statutes. This is done per each state's unclaimed property laws.",
     "distractorExplanations": {
-      "a": "Charitable donation requires legal process.",
-      "b": "Records must be retained.",
-      "c": "Employee transfer is theft."
+      "a": "Escheatment is governed by state unclaimed property laws; property goes to the states, not the SEC.",
+      "b": "Priority goes to the state of the owner's last known address; the firm's state of incorporation is the secondary rule.",
+      "c": "Dormant assets stay in the customer's name until escheated; suspense is for unidentified items, not long-term dormancy."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3278,23 +3278,23 @@
       },
       {
         "id": "b",
-        "text": "The highest-cost shares sell first automatically"
+        "text": "The most recently purchased shares are deemed sold first for gain/loss calculation"
       },
       {
         "id": "c",
-        "text": "Random lots are chosen daily without method"
+        "text": "The highest-cost shares are deemed sold first for gain/loss calculation"
       },
       {
         "id": "d",
-        "text": "Only shares bought yesterday may be sold"
+        "text": "The average cost per share is used for gain/loss calculation"
       }
     ],
     "correctOptionId": "a",
     "explanation": "FIFO is a default method unless customer specifies another acceptable lot relief.",
     "distractorExplanations": {
-      "b": "Highest cost is HIFO/specific ID, not FIFO.",
-      "c": "Random selection is not standard default.",
-      "d": "FIFO uses earliest lots, not only yesterday."
+      "b": "Most-recent-first is LIFO; FIFO relieves the earliest purchased lots first.",
+      "c": "Highest-cost-first is HIFO, a tax-lot election the customer can choose, not FIFO.",
+      "d": "Average cost is a separate method common for mutual fund shares; FIFO matches specific earliest lots."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3307,27 +3307,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No documentation if amounts are small"
+        "text": "Authorization from the receiving account owner and a matching entry"
       },
       {
         "id": "b",
-        "text": "Authorization, matching debit/credit, and compliance review to prevent unauthorized transfers"
+        "text": "Authorization, matching debit/credit, and compliance review"
       },
       {
         "id": "c",
-        "text": "Only verbal approval from unknown third parties"
+        "text": "A matching debit/credit, with authorization needed above $10,000"
       },
       {
         "id": "d",
-        "text": "Posting to firm proprietary account without customer consent"
+        "text": "Supervisory approval in place of written customer authorization"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Inter-account journals need client instruction or lawful authority and audit trail.",
+    "explanation": "Inter-account journals need client instruction or lawful authority and audit trail. These controls prevent unauthorized transfers between accounts.",
     "distractorExplanations": {
-      "a": "Size does not eliminate controls.",
-      "c": "Unknown third parties cannot authorize.",
-      "d": "Proprietary use without consent is misappropriation."
+      "a": "The instruction must come from the owner of the account being debited (or lawful authority), not just the receiving owner.",
+      "c": "Authorization is required for any inter-account journal; there is no dollar floor below which consent is waived.",
+      "d": "A supervisor cannot substitute for the customer's instruction; journals between customer accounts require client authority."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3340,11 +3340,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Marketing fees for mutual fund prospectuses"
+        "text": "Interest charged on the client's margin debit balance under its financing terms"
       },
       {
         "id": "b",
-        "text": "Customer birthday club rewards"
+        "text": "Rebates paid to the client on cash collateral for its short positions"
       },
       {
         "id": "c",
@@ -3352,15 +3352,15 @@
       },
       {
         "id": "d",
-        "text": "State income tax withholding on wages"
+        "text": "Custody fees charged for safekeeping the client's fully paid securities"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Prime clients may see fail charges tied to financing and securities lending operations.",
     "distractorExplanations": {
-      "a": "Prospectus fees are separate.",
-      "b": "Birthday clubs unrelated.",
-      "d": "Wage withholding unrelated."
+      "a": "Margin interest is a financing charge on the debit balance, separate from borrow or settlement fail charges.",
+      "b": "Short rebates are credits paid to the client on collateral, not charges arising from fails.",
+      "d": "Safekeeping fees are custody service charges, not costs arising from borrow or settlement fails."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3373,15 +3373,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Destroy records before examiner arrival"
+        "text": "Produce requested records within 30 days of the examiner's written request"
       },
       {
         "id": "b",
-        "text": "Provide only verbal summaries with no documents"
+        "text": "Produce requested records only after legal counsel completes privilege review"
       },
       {
         "id": "c",
-        "text": "Charge regulators prohibited excessive fees to block access"
+        "text": "Produce firm-prepared summaries in place of the underlying source records"
       },
       {
         "id": "d",
@@ -3391,9 +3391,9 @@
     "correctOptionId": "d",
     "explanation": "SEC/FINRA examinations depend on timely production of complete books and records.",
     "distractorExplanations": {
-      "a": "Destruction is obstruction.",
-      "b": "Written records are required.",
-      "c": "Blocking access violates law."
+      "a": "Firms must furnish records promptly on request under 17a-4(j) and Rule 8210; there is no 30-day grace period.",
+      "b": "Counsel may review for privilege, but production cannot be delayed past prompt; examiners are entitled to required records.",
+      "c": "Examiners can demand the actual books and records, not summaries prepared by the firm."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3410,23 +3410,23 @@
       },
       {
         "id": "b",
-        "text": "Margin loan owed by the customer to the firm"
+        "text": "Cash the customer owes the firm on a margin debit after a purchase"
       },
       {
         "id": "c",
-        "text": "Firm's retained earnings for shareholders"
+        "text": "Cash in a short account held as collateral for the short position"
       },
       {
         "id": "d",
-        "text": "Accrued interest on corporate bonds held in inventory"
+        "text": "Cash swept to an FDIC-insured bank deposit program and held off the firm's books"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Free credit balances are liabilities owed to customers, distinct from margin debit balances.",
     "distractorExplanations": {
-      "b": "Margin debit is customer owes firm.",
-      "c": "Retained earnings are equity.",
-      "d": "Inventory bond interest is firm asset income."
+      "b": "Money owed by the customer is a debit balance; a free credit is money the firm owes the customer.",
+      "c": "Short sale proceeds held as collateral are not free; free credits are unencumbered and payable on demand.",
+      "d": "Bank-swept cash is a deposit at a bank, not a free credit balance on the broker-dealer's books under Rule 15c3-3."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3439,7 +3439,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer cash balances downward by the split ratio"
+        "text": "Share quantity and total cost basis by the split ratio, while leaving price unchanged"
       },
       {
         "id": "b",
@@ -3447,19 +3447,19 @@
       },
       {
         "id": "c",
-        "text": "Securities symbols to unrelated tickers permanently"
+        "text": "Per-share cost basis upward by the split ratio for each affected lot"
       },
       {
         "id": "d",
-        "text": "Cost basis to zero for all affected lots"
+        "text": "Price history, with cash in lieu paid for each whole share received"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Splits multiply shares and divide price; total value unchanged absent fractional handling.",
     "distractorExplanations": {
-      "a": "Cash is unaffected by standard splits.",
-      "c": "Symbol may add suffix temporarily but not random tickers.",
-      "d": "Basis per share adjusts, not zeroed."
+      "a": "Total cost basis stays the same in a split; only per-share basis and price are divided by the split ratio.",
+      "c": "In a forward split per-share basis is divided by the ratio, not increased; total basis stays the same.",
+      "d": "Cash in lieu is paid for fractional shares; whole split shares are credited to the account as shares."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3472,15 +3472,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only market price changes on customer long portfolios"
+        "text": "Loss from price changes in the firm's proprietary trading inventory"
       },
       {
         "id": "b",
-        "text": "Interest rate moves on Treasuries held by customers"
+        "text": "Loss from a counterparty defaulting on its settlement obligations"
       },
       {
         "id": "c",
-        "text": "Inflation affecting grocery prices nationally"
+        "text": "Loss from being unable to fund settlements when cash is tied up"
       },
       {
         "id": "d",
@@ -3490,9 +3490,9 @@
     "correctOptionId": "d",
     "explanation": "Op risk covers settlement fails, fraud, system outages, and human error—not primary market risk.",
     "distractorExplanations": {
-      "a": "Customer market risk is separate category.",
-      "b": "Customer Treasury moves are investment risk.",
-      "c": "Grocery inflation is not firm op risk directly."
+      "a": "Price-driven losses on inventory are market risk, a separate category from operational risk.",
+      "b": "Counterparty default is credit or settlement risk; operational risk is about processes, people, and systems.",
+      "c": "A funding shortfall is liquidity risk, not operational risk from failed processes or systems."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3509,23 +3509,23 @@
       },
       {
         "id": "b",
-        "text": "Customer logging in from usual home IP occasionally"
+        "text": "Customer naming a trusted contact person during an annual profile update"
       },
       {
         "id": "c",
-        "text": "Receiving scheduled dividend payments"
+        "text": "Large deposit from the customer's verified bank followed by a stock purchase"
       },
       {
         "id": "d",
-        "text": "Holding a diversified ETF long term"
+        "text": "Customer switching from paper statements to e-delivery after several years"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Credential changes plus urgent disbursements to new payees trigger enhanced verification.",
     "distractorExplanations": {
-      "b": "Routine home login is normal.",
-      "c": "Dividends are expected.",
-      "d": "Long-term ETF holding is not fraud signal."
+      "b": "Adding a trusted contact under Rule 4512 is a protective step, not an account takeover signal.",
+      "c": "Money flowing in from a verified bank into investments is ordinary activity; takeovers drain funds out to new payees.",
+      "d": "A delivery preference change alone is minor; takeover patterns pair credential changes with outbound funds."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3538,7 +3538,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore repeats if the dollar amount is below an arbitrary round number once"
+        "text": "Clear exceptions below a set dollar threshold without investigating them"
       },
       {
         "id": "b",
@@ -3546,19 +3546,19 @@
       },
       {
         "id": "c",
-        "text": "Delete the report after reading"
+        "text": "Close each exception once the ops analyst marks it resolved in the system"
       },
       {
         "id": "d",
-        "text": "Approve all exceptions without documentation"
+        "text": "Retain the reports for one year and review them at the annual audit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Exception management closes control gaps and documents supervisory oversight.",
     "distractorExplanations": {
-      "a": "Repeat exceptions need escalation.",
-      "c": "Deletion destroys audit trail.",
-      "d": "Undocumented approval fails supervision."
+      "a": "Small repeating exceptions can signal a systemic break; thresholds may prioritize review but do not waive it.",
+      "c": "Supervisors must verify resolution themselves, not just rely on the analyst's own status flag.",
+      "d": "Exception reports require timely review; deferring them to an annual audit lets breaks age."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3571,11 +3571,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only marketing brochure redesign"
+        "text": "Backup sites and data replication, with plan updates every three years"
       },
       {
         "id": "b",
-        "text": "Eliminating all customer communication during outages"
+        "text": "Data replication and recovery, with customer access deferred until systems return"
       },
       {
         "id": "c",
@@ -3583,15 +3583,15 @@
       },
       {
         "id": "d",
-        "text": "Single point of failure with no backups"
+        "text": "Backup sites and staffing, with the plan submitted to the SEC for approval before its use"
       }
     ],
     "correctOptionId": "c",
     "explanation": "BCP ensures trade processing and customer service continue after disasters or system failures.",
     "distractorExplanations": {
-      "a": "Marketing is not core BCP.",
-      "b": "Customer communication increases during crises.",
-      "d": "No backups violate BCP purpose."
+      "a": "Rule 4370 requires annual review and updates for material changes, not a three-year cycle.",
+      "b": "Rule 4370 requires addressing how customers get prompt access to funds and securities during a disruption.",
+      "d": "BCPs are kept by the firm and emergency contacts reported to FINRA; the SEC does not pre-approve plans."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3604,15 +3604,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Customer portfolios appreciate in a bull market"
+        "text": "The firm's proprietary inventory falls in value during a market decline"
       },
       {
         "id": "b",
-        "text": "Employees take approved vacation days"
+        "text": "A customer fails to meet a margin call and the debit becomes unsecured"
       },
       {
         "id": "c",
-        "text": "Statements mail on schedule to all accounts"
+        "text": "A system outage delays trade processing during the overnight settlement batch run"
       },
       {
         "id": "d",
@@ -3622,9 +3622,9 @@
     "correctOptionId": "d",
     "explanation": "Clearing liquidity risk is failure to fund settlements—not customer investment performance.",
     "distractorExplanations": {
-      "a": "Appreciation reduces liquidity stress.",
-      "b": "Vacation is operational staffing.",
-      "c": "Statement mailing unrelated."
+      "a": "Price declines in inventory are market risk; liquidity risk is about meeting settlement and funding obligations when due.",
+      "b": "An unsecured margin debit is customer credit risk, not the firm's ability to fund its settlements.",
+      "c": "System outages are operational risk, even though they may later contribute to funding problems."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3670,7 +3670,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate large wire release without verification"
+        "text": "Updating to the most recent address and releasing pending wires"
       },
       {
         "id": "b",
@@ -3678,19 +3678,19 @@
       },
       {
         "id": "c",
-        "text": "Account opening for additional anonymous sub-accounts"
+        "text": "Immediate SAR filing before any contact with the customer"
       },
       {
         "id": "d",
-        "text": "Deletion of the discrepancy from records"
+        "text": "Closing the account and mailing assets to the newest address"
       }
     ],
     "correctOptionId": "b",
     "explanation": "AML programs require resolving identity conflicts before moving funds.",
     "distractorExplanations": {
-      "a": "Unverified wires increase fraud/AML risk.",
-      "c": "Anonymous sub-accounts violate CIP.",
-      "d": "Hiding discrepancies is misconduct."
+      "a": "Accepting the newest address without verification is the takeover pattern; resolve the conflict first.",
+      "c": "A mismatch is a red flag to investigate; a SAR follows if the review finds suspicious activity, not as a reflex.",
+      "d": "Closing and shipping assets to an unverified address compounds the risk; investigate and hold first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3703,11 +3703,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Permanent storage of customer retirement assets"
+        "text": "Holding unallocated block trades until the adviser sends allocations"
       },
       {
         "id": "b",
-        "text": "Hiding losses from regulators indefinitely"
+        "text": "Absorbing losses on trades a customer later says they regret placing"
       },
       {
         "id": "c",
@@ -3715,15 +3715,15 @@
       },
       {
         "id": "d",
-        "text": "Paying employee bonuses without tax reporting"
+        "text": "Parking unidentified incoming cash until the remitter is identified"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Error accounts must clear quickly with supervisory review—not mask customer assets.",
     "distractorExplanations": {
-      "a": "Customer retirement assets belong in customer accounts.",
-      "b": "Hiding losses is fraud.",
-      "d": "Bonuses require payroll process."
+      "a": "Unallocated blocks belong in an allocation or average-price account, not the error account.",
+      "b": "A customer's regret over a correctly executed order is not a firm error and does not belong in the error account.",
+      "d": "Unidentified receipts go to a suspense account; the error account is for trade and processing errors."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3736,15 +3736,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Extending settlement to T+20"
+        "text": "Longer settlement cycles that allow more time to match, affirm, and fund each trade"
       },
       {
         "id": "b",
-        "text": "Eliminating all confirmation processes"
+        "text": "Bilateral netting with each dealer in place of clearing through a central counterparty (CCP)"
       },
       {
         "id": "c",
-        "text": "Trading only via unverified email without records"
+        "text": "Free delivery of securities ahead of payment to speed up settlement"
       },
       {
         "id": "d",
@@ -3754,9 +3754,9 @@
     "correctOptionId": "d",
     "explanation": "T+1 and CCP models reduce counterparty exposure between trade and settlement.",
     "distractorExplanations": {
-      "a": "Longer settlement increases risk.",
-      "b": "Confirmations reduce errors.",
-      "c": "Unverified email trading is unsafe."
+      "a": "Longer cycles extend the exposure window between trade and settlement; T+1 shortened it to cut risk.",
+      "b": "Bilateral netting leaves counterparty exposure in place; central clearing through a CCP is the stronger mitigant.",
+      "c": "Free delivery before payment creates principal (Herstatt) risk; DVP and PvP tie delivery to payment."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3769,27 +3769,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Isolating affected systems, preserving logs, and notifying security leadership per playbook"
+        "text": "Isolating affected systems, preserving logs, and notifying security leadership"
       },
       {
         "id": "b",
-        "text": "Publishing customer passwords online to confirm breach scope"
+        "text": "Restoring affected systems from backup first, then reviewing logs afterward"
       },
       {
         "id": "c",
-        "text": "Deleting all audit trails before investigation"
+        "text": "Notifying all affected customers before isolating the compromised systems"
       },
       {
         "id": "d",
-        "text": "Continuing wire processing through compromised systems"
+        "text": "Isolating affected systems, then waiting for FINRA approval to resume wires"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Incident response contains damage and supports forensic review and regulatory reporting.",
+    "explanation": "Incident response contains damage and supports forensic review and regulatory reporting. Each step follows the firm's incident response playbook.",
     "distractorExplanations": {
-      "b": "Password publication worsens breach.",
-      "c": "Log preservation is essential.",
-      "d": "Compromised systems should be isolated."
+      "b": "Restoring before preserving evidence can overwrite forensic data; containment and log preservation come first.",
+      "c": "Containment comes first; customer notice follows Reg S-P and state breach laws once the scope is known.",
+      "d": "FINRA does not approve resumption of operations; the firm decides under its incident response and BCP plans."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3802,27 +3802,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore recurring themes if each ticket looks unique superficially"
+        "text": "Decide which individual complaints are reportable under Rule 4530"
       },
       {
         "id": "b",
-        "text": "Identify systemic process failures and prioritize control improvements"
+        "text": "Spot systemic process failures and prioritize control fixes"
       },
       {
         "id": "c",
-        "text": "Reduce staffing whenever complaints rise"
+        "text": "Calculate restitution owed to each complainant on a case-by-case basis"
       },
       {
         "id": "d",
-        "text": "Delete complaint records after one day"
+        "text": "Rank staff for incentive pay based on complaints logged per employee"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pattern detection on complaints surfaces training, system, or policy gaps.",
+    "explanation": "Analyzing complaint trends across accounts and time lets operations leaders spot recurring root causes such as system defects, training gaps, or broken procedures, and direct control improvements where they prevent the most future harm.",
     "distractorExplanations": {
-      "a": "Recurring themes matter.",
-      "c": "Staff cuts may worsen service.",
-      "d": "Complaint retention is regulatory."
+      "a": "4530 reportability is decided complaint by complaint; trending looks for repeated root causes across many complaints.",
+      "c": "Restitution is an individual remedy; trend analysis is for spotting systemic control weaknesses.",
+      "d": "Paying by complaint counts discourages logging complaints; trending is for finding process failures."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3835,27 +3835,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic profit for the firm with no liability"
+        "text": "Liability only if the customer submits a written complaint first"
       },
       {
         "id": "b",
-        "text": "Exemption from all best execution obligations"
+        "text": "A Reg SHO close-out obligation by the open of trading on T+2"
       },
       {
         "id": "c",
-        "text": "Financial exposure, customer harm, and regulatory conduct issues requiring prompt correction"
+        "text": "Financial exposure, customer harm, and regulatory conduct issues"
       },
       {
         "id": "d",
-        "text": "No need to notify the customer ever"
+        "text": "A trade reporting break to be corrected at month-end reconciliation"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Mishandled orders can breach duty of care; firms must fix and compensate where appropriate.",
+    "explanation": "Mishandled orders can breach duty of care; firms must fix and compensate where appropriate. These issues require prompt correction.",
     "distractorExplanations": {
-      "a": "Errors can create liability.",
-      "b": "Best execution still applies.",
-      "d": "Customers must be notified of errors."
+      "a": "The duty to correct and make the customer whole exists whether or not the customer complains.",
+      "b": "Reg SHO close-outs address short-sale fails to deliver, not unfilled customer limit orders.",
+      "d": "The issue is execution quality and customer harm, which require prompt correction rather than month-end cleanup."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3868,15 +3868,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Number of coffee cups in the break room"
+        "text": "Revenue per registered representative and new account openings"
       },
       {
         "id": "b",
-        "text": "CEO's favorite color"
+        "text": "Net capital ratio and the size of the proprietary inventory"
       },
       {
         "id": "c",
-        "text": "Historical weather averages"
+        "text": "Average client portfolio return versus the stated benchmark"
       },
       {
         "id": "d",
@@ -3886,9 +3886,9 @@
     "correctOptionId": "d",
     "explanation": "KRIs quantify control effectiveness; rising breaks signal escalating op risk.",
     "distractorExplanations": {
-      "a": "Coffee cups are not KRIs.",
-      "b": "Personal preferences irrelevant.",
-      "c": "Weather averages unrelated."
+      "a": "Revenue and account growth are business metrics, not indicators of operational control risk.",
+      "b": "Net capital and inventory size measure financial and market risk, not operational process health.",
+      "c": "Portfolio performance measures investment results, not operational failure rates."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3905,23 +3905,23 @@
       },
       {
         "id": "b",
-        "text": "Blind trust with no periodic review"
+        "text": "Reliance on the vendor's SOC 2 report in place of the firm's own oversight"
       },
       {
         "id": "c",
-        "text": "Sharing admin credentials publicly"
+        "text": "An indemnity clause that transfers regulatory liability to the vendor"
       },
       {
         "id": "d",
-        "text": "No backup if vendor fails"
+        "text": "Due diligence at onboarding, with contract reviews every five years"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Outsourcing critical ops functions extends firm's responsibility for vendor oversight.",
     "distractorExplanations": {
-      "b": "Periodic review is required.",
-      "c": "Credential sharing is prohibited.",
-      "d": "Contingency plans are essential."
+      "b": "A SOC report informs oversight, but FINRA Notice 21-29 keeps supervisory responsibility with the firm.",
+      "c": "Contracts cannot transfer a member firm's regulatory obligations for outsourced functions.",
+      "d": "Vendor oversight must be ongoing and risk-based, not a one-time check revisited every five years."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -3934,7 +3934,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Notify the customer immediately that they are under investigation"
+        "text": "Notify the customer that a SAR was filed once 30 days have passed"
       },
       {
         "id": "b",
@@ -3942,19 +3942,19 @@
       },
       {
         "id": "c",
-        "text": "Post SAR details on the firm website"
+        "text": "Disclose the SAR to the customer's attorney once a written request is received"
       },
       {
         "id": "d",
-        "text": "Discuss the SAR openly on social media"
+        "text": "Close the account and tell the customer the SAR was the reason"
       }
     ],
     "correctOptionId": "b",
     "explanation": "SAR confidentiality prohibits notifying subjects; tipping off may be a crime.",
     "distractorExplanations": {
-      "a": "Tipping off violates BSA.",
-      "c": "Public SAR disclosure is prohibited.",
-      "d": "Social media disclosure is illegal."
+      "a": "SAR confidentiality has no time limit; disclosing a SAR to its subject is prohibited at any point.",
+      "c": "SAR confidentiality bars disclosure to the subject or their counsel; regulators and law enforcement may receive it.",
+      "d": "Explaining a closure by reference to a SAR is tipping off; firms may close accounts but cannot reveal the filing."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

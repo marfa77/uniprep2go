@@ -7,15 +7,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Higher short-term rates as reserves shrink"
+        "text": "Reduced bank reserves and upward pressure on short-term interest rates"
       },
       {
         "id": "b",
-        "text": "Guaranteed stock market gains"
+        "text": "Higher reserve requirements that restrict new bank lending"
       },
       {
         "id": "c",
-        "text": "Immediate statutory tax cuts"
+        "text": "An immediate cut in federal income tax rates by Congress"
       },
       {
         "id": "d",
@@ -25,9 +25,9 @@
     "correctOptionId": "d",
     "explanation": "OMOs that buy securities inject reserves and tend to ease short-term rates.",
     "distractorExplanations": {
-      "a": "Purchases expand, not shrink, reserves.",
-      "b": "Markets are not guaranteed.",
-      "c": "Fiscal policy, not Fed OMOs."
+      "a": "Confuses open-market purchases with open-market sales; sales drain reserves and push short-term rates up.",
+      "b": "Reserve requirements are a separate Fed tool; buying Treasuries changes reserve balances, not the required ratio.",
+      "c": "Tax-rate cuts are fiscal policy enacted by Congress, not a result of Federal Reserve open-market operations."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -81,19 +81,19 @@
       },
       {
         "id": "c",
-        "text": "Exactly zero"
+        "text": "Equal to short-term yields across maturities"
       },
       {
         "id": "d",
-        "text": "Unrelated to maturity"
+        "text": "Set directly by the Fed's discount rate"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A normal (upward-sloping) curve pays more for longer maturity.",
     "distractorExplanations": {
       "a": "That describes inversion.",
-      "c": "False.",
-      "d": "Maturity is a key driver."
+      "c": "Equal yields across maturities describe a flat yield curve, not the normal upward-sloping shape.",
+      "d": "The Fed's administered rates anchor the short end; long-term yields are market-set by inflation expectations and term premium."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -102,7 +102,7 @@
     "id": "series-65-readiness-check-economics-004",
     "examSlug": "series-65-readiness-check",
     "topicId": "economics",
-    "prompt": "On the Series 65, which is a leading economic indicator example? Select the best answer.",
+    "prompt": "Which is a leading economic indicator example?",
     "options": [
       {
         "id": "a",
@@ -139,27 +139,27 @@
     "options": [
       {
         "id": "a",
-        "text": "High growth and low inflation"
+        "text": "Strong growth with rising inflation"
       },
       {
         "id": "b",
-        "text": "Stagnant growth with high inflation and often high unemployment"
+        "text": "Stagnant growth with high inflation"
       },
       {
         "id": "c",
-        "text": "Only a bull market in bonds"
+        "text": "Falling growth with falling prices"
       },
       {
         "id": "d",
-        "text": "Deflation with boom employment"
+        "text": "High unemployment with stable prices"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Stagflation combines weak growth with elevated inflation.",
+    "explanation": "Stagflation combines weak growth with elevated inflation. It often comes with high unemployment as well.",
     "distractorExplanations": {
-      "a": "Opposite mix.",
-      "c": "Incomplete.",
-      "d": "Not stagflation."
+      "a": "Strong growth with rising inflation describes an overheating late-cycle expansion, not stagnant growth.",
+      "c": "Falling output with falling prices describes a deflationary recession; stagflation has rising prices.",
+      "d": "High unemployment with stable prices is an ordinary recession; it lacks the elevated inflation of stagflation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -205,11 +205,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Risk unique to one firm's warehouse fire"
+        "text": "Firm-specific risk that a broad portfolio can reduce"
       },
       {
         "id": "b",
-        "text": "Only fraud risk"
+        "text": "Default risk on a single issuer's bonds"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Risk eliminable by owning one stock"
+        "text": "Sector risk that spreading across industries removes"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Systematic (market) risk remains after diversification.",
     "distractorExplanations": {
-      "a": "Idiosyncratic/unsystematic.",
-      "b": "Too narrow.",
-      "d": "Unsystematic can be diversified."
+      "a": "Describes unsystematic (idiosyncratic) risk, which diversification does reduce; systematic risk is market-wide.",
+      "b": "Single-issuer credit risk is company-specific (unsystematic) risk that can be diversified, not market-wide risk.",
+      "d": "Industry or sector risk is diversifiable unsystematic risk; systematic risk persists across every industry."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -238,7 +238,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Has no market risk"
+        "text": "Moved about 20% less than the market on average"
       },
       {
         "id": "b",
@@ -246,19 +246,19 @@
       },
       {
         "id": "c",
-        "text": "Moved less than the market"
+        "text": "Returned 1.2% more than the market each year"
       },
       {
         "id": "d",
-        "text": "Is risk-free"
+        "text": "Had 20% total volatility (standard deviation)"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Beta > 1 implies higher average sensitivity to market moves.",
     "distractorExplanations": {
-      "a": "False.",
-      "c": "That would be beta < 1.",
-      "d": "Equities aren't risk-free."
+      "a": "Moving about 20% less than the market describes a beta near 0.8; a beta above 1 means more movement.",
+      "c": "Confuses beta with alpha; beta measures sensitivity to market moves, not excess annual return.",
+      "d": "Standard deviation measures total risk; beta measures relative systematic sensitivity versus the market."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -271,15 +271,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only reserve requirements"
+        "text": "Reserve requirements and the discount rate"
       },
       {
         "id": "b",
-        "text": "Only the discount rate"
+        "text": "Open-market operations by the Fed"
       },
       {
         "id": "c",
-        "text": "Only open-market operations"
+        "text": "Interest on reserve balances"
       },
       {
         "id": "d",
@@ -289,9 +289,9 @@
     "correctOptionId": "d",
     "explanation": "Fiscal policy is taxing/spending by government.",
     "distractorExplanations": {
-      "a": "Monetary.",
-      "b": "Monetary.",
-      "c": "Monetary tool."
+      "a": "Reserve requirements and the discount rate are Federal Reserve monetary tools, not fiscal tools of Congress.",
+      "b": "Open-market operations are the Fed's main monetary policy tool; fiscal policy is government taxing and spending.",
+      "c": "Interest on reserve balances is an administered Fed rate, a monetary tool rather than a fiscal one."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -304,7 +304,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Producer inventory"
+        "text": "Price changes received by domestic producers for output"
       },
       {
         "id": "b",
@@ -312,19 +312,19 @@
       },
       {
         "id": "c",
-        "text": "Gold reserves at the Fed"
+        "text": "Total value of goods and services produced domestically"
       },
       {
         "id": "d",
-        "text": "Corporate earnings yields"
+        "text": "Price changes across everything included in GDP"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CPI tracks consumer price inflation for a defined basket.",
     "distractorExplanations": {
-      "a": "Different metrics.",
-      "c": "Balance sheet item.",
-      "d": "Valuation concept."
+      "a": "That describes the Producer Price Index (PPI), which tracks prices producers receive, not consumer prices.",
+      "c": "That is GDP, a measure of total output, not an index of consumer price changes.",
+      "d": "That is the GDP price deflator, which covers all domestic output rather than a fixed consumer basket."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -337,7 +337,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A requirement to buy only munis"
+        "text": "A sign of accelerating economic expansion"
       },
       {
         "id": "b",
@@ -345,19 +345,19 @@
       },
       {
         "id": "c",
-        "text": "Evidence stocks cannot fall"
+        "text": "A signal that inflation is about to surge"
       },
       {
         "id": "d",
-        "text": "Proof inflation is always zero"
+        "text": "Evidence that the Fed is cutting short rates"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Inversion has historically preceded many U.S. recessions (not a guarantee)",
     "distractorExplanations": {
-      "a": "Unrelated mandate.",
-      "c": "False.",
-      "d": "False."
+      "a": "A steepening curve tends to accompany expansion; inversion has historically preceded recessions.",
+      "c": "Inversion usually reflects expectations of lower future rates and inflation, not an imminent inflation surge.",
+      "d": "Inversion typically occurs after the Fed has raised short rates above long yields, not while it is cutting."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -370,15 +370,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A type of put option"
+        "text": "The total explicit cash outlay for a choice"
       },
       {
         "id": "b",
-        "text": "Only brokerage commissions"
+        "text": "Costs already incurred that cannot be recovered"
       },
       {
         "id": "c",
-        "text": "Always an accounting depreciation entry"
+        "text": "The extra cost of producing one more unit"
       },
       {
         "id": "d",
@@ -388,9 +388,9 @@
     "correctOptionId": "d",
     "explanation": "Economics defines opportunity cost as the forgone alternative.",
     "distractorExplanations": {
-      "a": "Derivative.",
-      "b": "Too narrow.",
-      "c": "Accounting ≠ opportunity cost definition."
+      "a": "Explicit outlays are accounting costs; opportunity cost is the implicit value of the best alternative given up.",
+      "b": "Those are sunk costs, which should be ignored in decisions; opportunity cost looks forward at forgone options.",
+      "c": "That is marginal cost, the cost of one more unit, not the value of the next-best alternative forgone."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -403,11 +403,11 @@
     "options": [
       {
         "id": "a",
-        "text": "GDP collapses"
+        "text": "GDP declines for two consecutive quarters"
       },
       {
         "id": "b",
-        "text": "Only bankruptcies soar by definition"
+        "text": "Unemployment rises while output stays flat"
       },
       {
         "id": "c",
@@ -415,15 +415,15 @@
       },
       {
         "id": "d",
-        "text": "Interest rates are irrelevant"
+        "text": "Prices fall as inventories pile up"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Expansions feature rising activity and usually improving employment.",
     "distractorExplanations": {
-      "a": "Contraction.",
-      "b": "Not definitional.",
-      "d": "Rates matter but aren't the definition."
+      "a": "Two straight quarters of falling GDP is the rule-of-thumb for contraction, the opposite of expansion.",
+      "b": "Rising unemployment with flat output describes the contraction or trough phase, not expansion.",
+      "d": "Falling prices and inventory build-ups characterize contraction, when demand weakens, not expansion."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Call risk on mortgages"
+        "text": "Rising interest rates lowering bond prices"
       },
       {
         "id": "b",
@@ -448,15 +448,15 @@
       },
       {
         "id": "d",
-        "text": "Exchange-traded option expiration Friday"
+        "text": "Currency moves reducing foreign returns"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Inflation reduces purchasing power of fixed cash flows/returns.",
     "distractorExplanations": {
-      "a": "Prepayment/call is different.",
+      "a": "That is interest-rate (market) risk; purchasing power risk is inflation eroding real returns.",
       "b": "Business-specific.",
-      "d": "Timing/technical."
+      "d": "That is exchange-rate (currency) risk on foreign holdings, not inflation eroding purchasing power."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -535,7 +535,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Never track an index"
+        "text": "Are priced once daily at the closing NAV"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Are always actively managed hedge funds"
+        "text": "Charge front-end sales loads on each purchase"
       },
       {
         "id": "d",
-        "text": "Cannot hold stocks"
+        "text": "Have a fixed share count like closed-end funds"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ETFs trade throughout the day like stocks; many are index-based.",
     "distractorExplanations": {
-      "a": "Many are index trackers.",
-      "c": "Most are not hedge funds.",
-      "d": "They can hold equities."
+      "a": "Once-daily pricing at NAV describes open-end mutual funds; ETFs trade intraday at market prices.",
+      "c": "ETF buyers pay brokerage commissions and spreads, not mutual-fund style front-end sales loads.",
+      "d": "ETF shares are created and redeemed by authorized participants, so the share count is not fixed."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -572,23 +572,23 @@
       },
       {
         "id": "b",
-        "text": "Credit default of municipalities"
+        "text": "Credit default by the U.S. Treasury"
       },
       {
         "id": "c",
-        "text": "Currency devaluation of bitcoin"
+        "text": "Rising rates lowering bond prices"
       },
       {
         "id": "d",
-        "text": "Call risk on corporates"
+        "text": "Reinvestment risk on coupon payments"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Treasury Inflation-Protected Securities adjust with inflation.",
     "distractorExplanations": {
-      "b": "TIPS are Treasuries.",
-      "c": "Not their design.",
-      "d": "Different risk."
+      "b": "TIPS are Treasury obligations; their design feature is the CPI principal adjustment, not default protection.",
+      "c": "TIPS still lose value when real yields rise; the inflation adjustment does not remove interest-rate risk.",
+      "d": "TIPS pay semiannual coupons that must be reinvested, so they do not remove reinvestment risk."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -601,15 +601,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Force dividends to increase"
+        "text": "Buy the stock at the strike only on expiration day"
       },
       {
         "id": "b",
-        "text": "Sell the stock at any time"
+        "text": "Sell the stock at the strike before expiration"
       },
       {
         "id": "c",
-        "text": "Avoid all losses"
+        "text": "Collect the premium if the option expires unexercised"
       },
       {
         "id": "d",
@@ -619,9 +619,9 @@
     "correctOptionId": "d",
     "explanation": "Calls give the right to buy at the strike; American style allows exercise before expiry.",
     "distractorExplanations": {
-      "a": "No.",
-      "b": "That is a put right.",
-      "c": "Options can expire worthless."
+      "a": "Exercise only at expiration is European style; American-style options can be exercised any time before expiry.",
+      "b": "The right to sell at the strike belongs to a put buyer, not a call buyer.",
+      "c": "The call writer keeps the premium when the option expires; the buyer pays the premium."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -638,7 +638,7 @@
       },
       {
         "id": "b",
-        "text": "Equity voting rights"
+        "text": "Lower credit risk and usually higher yields"
       },
       {
         "id": "c",
@@ -646,15 +646,15 @@
       },
       {
         "id": "d",
-        "text": "No interest-rate risk"
+        "text": "Higher credit risk but lower interest-rate risk"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Higher ratings imply lower credit risk and typically lower yield spreads.",
     "distractorExplanations": {
       "a": "Opposite of IG vs HY.",
-      "b": "Bonds don't grant common voting rights.",
-      "d": "Duration/rate risk remains."
+      "b": "Lower credit risk means investors accept smaller yield spreads, so investment-grade yields are usually lower.",
+      "d": "Investment-grade bonds carry lower credit risk, and interest-rate risk depends on duration, not rating."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -671,23 +671,23 @@
       },
       {
         "id": "b",
-        "text": "Quarterly dividends"
+        "text": "Semiannual coupon payments reinvested"
       },
       {
         "id": "c",
-        "text": "Stock split premiums"
+        "text": "Price appreciation as interest rates rise"
       },
       {
         "id": "d",
-        "text": "Insurance premiums paid by the holder"
+        "text": "A premium paid back above par at maturity"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Zeros pay no periodic coupons; return is the discount to par.",
     "distractorExplanations": {
-      "b": "Bonds don't pay stock dividends.",
-      "c": "Equity event.",
-      "d": "Not applicable."
+      "b": "Zero-coupon bonds pay no periodic coupons; return comes from accretion of the discount to par.",
+      "c": "Bond prices fall when rates rise, and long-duration zeros fall the most.",
+      "d": "Zeros are bought at a discount and mature at par, not at a premium above face value."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -700,15 +700,15 @@
     "options": [
       {
         "id": "a",
-        "text": "FDIC-insured CDs"
+        "text": "Direct ownership of a specific property deed"
       },
       {
         "id": "b",
-        "text": "Treasury-only portfolios"
+        "text": "Limited partnership interests in oil pipelines"
       },
       {
         "id": "c",
-        "text": "Municipal general obligation taxes"
+        "text": "Tax-exempt revenue bonds funding housing projects"
       },
       {
         "id": "d",
@@ -718,9 +718,9 @@
     "correctOptionId": "d",
     "explanation": "REITs own/finance real estate and pass through income characteristics.",
     "distractorExplanations": {
-      "a": "Bank products.",
-      "b": "Different asset.",
-      "c": "Munis are different."
+      "a": "REIT investors own shares of a pooled trust, not title to an individual property.",
+      "b": "Pipeline partnership units describe MLPs (energy infrastructure), not real estate investment trusts.",
+      "c": "Municipal housing bonds are tax-exempt debt; REIT dividends are generally taxable equity income."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -737,23 +737,23 @@
       },
       {
         "id": "b",
-        "text": "Is identical to Treasury bills"
+        "text": "Ranks ahead of bonds in liquidation but carries full voting rights"
       },
       {
         "id": "c",
-        "text": "Must convert to bonds annually"
+        "text": "Has priority over common for dividends and grants extra votes per share"
       },
       {
         "id": "d",
-        "text": "Has no dividend features ever"
+        "text": "Pays a variable dividend that rises with earnings like common stock"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Preferred sits above common for dividends; voting is often limited.",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "Not a requirement.",
-      "d": "Dividends are a key feature."
+      "b": "Preferred ranks behind bondholders in liquidation and usually has limited or no voting rights.",
+      "c": "Preferred does get dividend priority, but it usually has limited voting, not extra votes per share.",
+      "d": "Preferred dividends are typically fixed; earnings-linked variable payouts are a common-stock trait."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "30-year zero-coupon municipals"
+        "text": "Long-term, high-quality government bonds"
       },
       {
         "id": "c",
-        "text": "Physical commodities in a warehouse"
+        "text": "Short-term, below-investment-grade corporate debt"
       },
       {
         "id": "d",
-        "text": "Long-duration junk equities"
+        "text": "Listed preferred shares with stable dividends"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Money markets: short maturities, high credit quality.",
     "distractorExplanations": {
-      "b": "Long munis aren't MM.",
-      "c": "Not money markets.",
-      "d": "Opposite characteristics."
+      "b": "Money market instruments mature in about a year or less; long-term government bonds are capital-market debt.",
+      "c": "Money market instruments require high credit quality; short-term junk debt does not qualify.",
+      "d": "Preferred stock is equity with no maturity, so it is not a short-term money market instrument."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -803,23 +803,23 @@
       },
       {
         "id": "b",
-        "text": "Always higher yield than corporates of equal risk"
+        "text": "Capital gains on sale exempt from federal income tax as well"
       },
       {
         "id": "c",
-        "text": "No credit risk ever"
+        "text": "Interest exempt from state income tax in any state of residence"
       },
       {
         "id": "d",
-        "text": "Guaranteed by the FDIC"
+        "text": "Interest deductible against ordinary income on the investor's return"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Muni interest is frequently federally tax-exempt (state rules vary)",
     "distractorExplanations": {
-      "b": "Taxable-equivalent yield analysis needed.",
-      "c": "Credit risk exists.",
-      "d": "Not FDIC."
+      "b": "Only muni interest is typically federally exempt; capital gains on selling munis are taxable.",
+      "c": "State exemption usually applies only to bonds issued in the investor's own state, not any state.",
+      "d": "Muni interest is excluded from taxable income; it is not a deduction against other ordinary income."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -865,7 +865,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Option open interest"
+        "text": "The time remaining until a bond's final maturity"
       },
       {
         "id": "b",
@@ -873,19 +873,19 @@
       },
       {
         "id": "c",
-        "text": "GDP growth next quarter precisely"
+        "text": "A bond's default probability over its life"
       },
       {
         "id": "d",
-        "text": "A stock's P/E"
+        "text": "Stock price sensitivity to market movements"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Duration approximates interest-rate price sensitivity of bonds.",
     "distractorExplanations": {
-      "a": "Options metric.",
-      "c": "Macro forecast.",
-      "d": "Equity multiple."
+      "a": "That is term to maturity; duration is shorter for coupon bonds and measures rate sensitivity.",
+      "c": "Default probability is credit risk, assessed through ratings and spreads, not duration.",
+      "d": "Sensitivity of a stock to the market is beta; duration applies to bond price sensitivity to rates."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -898,7 +898,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A Treasury inflation swap"
+        "text": "A foreign-currency bond issued by a U.S. corporation"
       },
       {
         "id": "b",
@@ -906,19 +906,19 @@
       },
       {
         "id": "c",
-        "text": "A municipal pre-refunding escrow"
+        "text": "A dollar-denominated bond issued in the U.S. by a foreign firm"
       },
       {
         "id": "d",
-        "text": "A money market mutual fund share class"
+        "text": "A U.S. dollar deposit held at a foreign bank"
       }
     ],
     "correctOptionId": "b",
     "explanation": "ADRs facilitate U.S. trading of foreign equities.",
     "distractorExplanations": {
-      "a": "Different instrument.",
-      "c": "Muni structure.",
-      "d": "Too narrow/wrong."
+      "a": "That is a foreign-currency denominated corporate bond, not a receipt representing foreign shares.",
+      "c": "A dollar bond sold in the U.S. by a foreign issuer is a Yankee bond, debt rather than a share receipt.",
+      "d": "Dollar deposits at foreign banks are Eurodollars, not depositary receipts for foreign equity."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -935,23 +935,23 @@
       },
       {
         "id": "b",
-        "text": "Unlimited upside exactly like common stock"
+        "text": "The issuer calling when rates rise, forcing reinvestment at higher yields"
       },
       {
         "id": "c",
-        "text": "Mandatory conversion to crypto"
+        "text": "Mandatory conversion into common shares when the stock price falls"
       },
       {
         "id": "d",
-        "text": "No interest-rate risk"
+        "text": "Unlimited price appreciation as rates fall, unlike noncallable bonds"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Call risk: bonds called in declining-rate environments.",
     "distractorExplanations": {
-      "b": "Bond upside is capped near call/par dynamics.",
-      "c": "False.",
-      "d": "False."
+      "b": "Issuers call bonds when rates fall to refinance cheaply; rising rates make a call unlikely.",
+      "c": "Conversion features belong to convertible bonds; a call returns cash at the call price.",
+      "d": "Callable bonds suffer price compression near the call price as rates fall, so upside is limited."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -964,15 +964,15 @@
     "options": [
       {
         "id": "a",
-        "text": "FDIC insurance"
+        "text": "Daily redemption at NAV and registration under the Investment Company Act"
       },
       {
         "id": "b",
-        "text": "Identical retail liquidity daily"
+        "text": "Lower fees, daily liquidity, and open availability to any retail investor"
       },
       {
         "id": "c",
-        "text": "No use of leverage ever by definition"
+        "text": "Restrictions on short selling and leverage under the 1940 Act's diversification rules"
       },
       {
         "id": "d",
@@ -982,9 +982,9 @@
     "correctOptionId": "d",
     "explanation": "Hedge funds are less regulated in structure, often illiquid/fee-heavy, and limited to eligible investors.",
     "distractorExplanations": {
-      "a": "Not FDIC.",
-      "b": "Liquidity often restricted.",
-      "c": "Many may use leverage."
+      "a": "Daily redeemability and 1940 Act registration describe mutual funds; hedge funds rely on exemptions.",
+      "b": "These are mutual fund traits; hedge funds charge performance fees, restrict liquidity, and limit eligibility.",
+      "c": "Leverage and shorting limits apply to registered funds; hedge funds commonly use both."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1030,27 +1030,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Balance risk/return across asset classes aligned to goals and risk tolerance"
+        "text": "Spread risk across asset classes in line with goals and risk tolerance"
       },
       {
         "id": "b",
-        "text": "Time the market daily"
+        "text": "Pick the individual securities expected to outperform within each sector"
       },
       {
         "id": "c",
-        "text": "Avoid equities"
+        "text": "Shift between stocks and cash based on short-term market forecasts"
       },
       {
         "id": "d",
-        "text": "Eliminate all risk"
+        "text": "Maximize expected return by concentrating in the best-performing asset class"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Allocation matches portfolio mix to objectives and constraints.",
+    "explanation": "Asset allocation divides a portfolio among asset classes such as stocks, bonds, and cash so the overall mix of risk and expected return fits the client's goals, time horizon, and risk tolerance; it drives most long-run variability in portfolio returns.",
     "distractorExplanations": {
-      "b": "Allocation ≠ day trading.",
-      "c": "Depends on client.",
-      "d": "Risk cannot be eliminated."
+      "b": "Choosing individual winners is security selection, a separate step from allocating among asset classes.",
+      "c": "Forecast-driven switching is market timing, not the purpose of strategic asset allocation.",
+      "d": "Concentrating in one class abandons diversification; allocation balances risk and return to goals."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1063,7 +1063,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Margin day-trading as the IPS default"
+        "text": "A higher bond allocation than a retiree who needs portfolio income soon"
       },
       {
         "id": "b",
@@ -1071,19 +1071,19 @@
       },
       {
         "id": "c",
-        "text": "Only collectible art"
+        "text": "Heavy use of margin to boost equity exposure beyond 100%"
       },
       {
         "id": "d",
-        "text": "100% short-term T-bills only by rule"
+        "text": "A stable-value and money-market core to avoid volatility"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Longer horizons can typically bear more equity risk (client-specific)",
     "distractorExplanations": {
-      "a": "Usually inappropriate default.",
-      "c": "Concentrated alternative.",
-      "d": "Too rigid."
+      "a": "Reverses the logic; a long horizon and high tolerance support more equities, not more bonds.",
+      "c": "High risk tolerance does not make leverage the default; margin adds risk beyond a suitable baseline.",
+      "d": "A cash-like core suits short horizons; over decades it exposes a young investor to inflation erosion."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1129,27 +1129,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Roth IRA contributions in the year made"
+        "text": "Roth IRAs during the original owner's lifetime"
       },
       {
         "id": "b",
-        "text": "Taxable brokerage cash always monthly"
+        "text": "Taxable brokerage accounts once the account owner reaches age 73"
       },
       {
         "id": "c",
-        "text": "Traditional IRAs/401(k)s after the applicable RMD age (rules evolve)"
+        "text": "Traditional IRAs/401(k)s after the applicable RMD age"
       },
       {
         "id": "d",
-        "text": "529 plans at age 18 by federal mandate"
+        "text": "529 plans once the beneficiary reaches age 18"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "RMDs apply to most pre-tax retirement accounts starting at the statutory age.",
+    "explanation": "RMDs apply to most pre-tax retirement accounts starting at the statutory age. The applicable age has changed under the SECURE Acts, so rules evolve.",
     "distractorExplanations": {
-      "a": "Roth IRA RMDs generally not during owner lifetime.",
-      "b": "No.",
-      "d": "No federal RMD like that."
+      "a": "Roth IRAs have no RMDs while the original owner is alive; RMDs target pre-tax accounts.",
+      "b": "RMDs apply to tax-deferred retirement accounts; taxable brokerage accounts have no required distributions.",
+      "d": "529 plans have no federal required distribution at 18; assets can stay invested for later education costs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1162,15 +1162,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A promise to beat the S&P every quarter"
+        "text": "Specific securities to buy and target prices for each trade"
       },
       {
         "id": "b",
-        "text": "Guaranteed returns"
+        "text": "A target return the adviser commits to achieving each year"
       },
       {
         "id": "c",
-        "text": "Only the adviser's lunch preferences"
+        "text": "Short-term market forecasts that drive monthly allocation shifts"
       },
       {
         "id": "d",
@@ -1180,9 +1180,9 @@
     "correctOptionId": "d",
     "explanation": "IPS documents objectives, constraints, and process.",
     "distractorExplanations": {
-      "a": "Unrealistic promise.",
-      "b": "Cannot guarantee.",
-      "c": "Irrelevant."
+      "a": "An IPS sets policy and allocation guidelines, not trade-level security picks and price targets.",
+      "b": "An IPS states return objectives, but no adviser can commit to achieving a return each year.",
+      "c": "An IPS is a long-term policy document, not a vehicle for tactical short-term forecasts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1228,15 +1228,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Concentrated small-cap growth"
+        "text": "Growth stocks to build the down payment faster"
       },
       {
         "id": "b",
-        "text": "Leveraged volatility ETFs"
+        "text": "Long-term bonds to lock in higher current yields"
       },
       {
         "id": "c",
-        "text": "Illiquid private equity lockups"
+        "text": "A balanced 60/40 portfolio to blend growth with steady income"
       },
       {
         "id": "d",
@@ -1246,9 +1246,9 @@
     "correctOptionId": "d",
     "explanation": "Short-horizon goals favor safety and liquidity.",
     "distractorExplanations": {
-      "a": "High risk of shortfall.",
-      "b": "Inappropriate.",
-      "c": "Illiquid."
+      "a": "A 12-month goal cannot absorb an equity drawdown; growth stocks risk a shortfall when cash is needed.",
+      "b": "Long-duration bonds can drop in price if rates rise before the 12-month need, risking principal.",
+      "c": "A 60/40 mix suits long horizons; it still carries meaningful drawdown risk over a 12-month window."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1261,15 +1261,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Remove all systematic risk"
+        "text": "Remove systematic risk by combining many assets across sectors"
       },
       {
         "id": "b",
-        "text": "Guarantee alpha"
+        "text": "Reduce systematic risk by combining perfectly correlated assets"
       },
       {
         "id": "c",
-        "text": "Eliminate the need for an IPS"
+        "text": "Raise expected return above the highest-returning asset held"
       },
       {
         "id": "d",
@@ -1279,9 +1279,9 @@
     "correctOptionId": "d",
     "explanation": "Diversification reduces idiosyncratic risk; market risk remains.",
     "distractorExplanations": {
-      "a": "Systematic remains.",
-      "b": "No guarantee.",
-      "c": "IPS still needed."
+      "a": "Systematic (market) risk remains however many assets are held; diversification reduces unsystematic risk.",
+      "b": "Perfectly correlated assets give no diversification benefit, and it is unsystematic risk that falls.",
+      "c": "A portfolio's expected return is a weighted average; diversification improves risk, not return beyond the best asset."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1290,7 +1290,7 @@
     "id": "series-65-readiness-check-client-010",
     "examSlug": "series-65-readiness-check",
     "topicId": "client",
-    "prompt": "On the Series 65, when assessing risk tolerance, an adviser should consider:? Select the best answer.",
+    "prompt": "When assessing risk tolerance, an adviser should consider:",
     "options": [
       {
         "id": "a",
@@ -1331,23 +1331,23 @@
       },
       {
         "id": "b",
-        "text": "Only capital gains are taxed"
+        "text": "Everyone pays the same percentage of income"
       },
       {
         "id": "c",
-        "text": "Everyone pays the same flat dollar tax"
+        "text": "Lower earners pay a higher share of income"
       },
       {
         "id": "d",
-        "text": "Interest is never taxed"
+        "text": "Tax rates rise as the holding period of assets lengthens"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Progressive brackets tax additional income at higher marginal rates.",
     "distractorExplanations": {
-      "b": "False.",
-      "c": "Flat/head tax idea.",
-      "d": "False."
+      "b": "Paying the same percentage of income describes a flat (proportional) tax, not a progressive one.",
+      "c": "A higher burden on lower earners describes a regressive tax, the opposite of progressive.",
+      "d": "Holding period affects capital gains, and longer holding lowers the rate; progressivity is about income."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1360,27 +1360,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Abandons the IPS permanently"
+        "text": "Buys more of the winners to ride recent momentum"
       },
       {
         "id": "b",
-        "text": "Only happens once in a lifetime"
+        "text": "Changes the target weights to match current market values"
       },
       {
         "id": "c",
-        "text": "Is illegal for advisers"
+        "text": "Moves the portfolio to cash until volatility subsides"
       },
       {
         "id": "d",
-        "text": "Sells winners and buys laggards to restore target weights"
+        "text": "Sells winners and buys laggards to restore targets"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Rebalancing restores strategic weights after drift.",
+    "explanation": "Rebalancing trims asset classes that have drifted above their target weights and adds to those below, restoring the strategic allocation and its intended risk level; it is a contrarian discipline, not a change to the targets themselves.",
     "distractorExplanations": {
-      "a": "Opposite of discipline.",
-      "b": "Usually periodic.",
-      "c": "Common practice."
+      "a": "Adding to winners is momentum investing, which lets weights drift further from targets.",
+      "b": "Resetting targets to market values abandons the strategic allocation; rebalancing restores the targets.",
+      "c": "Moving to cash on volatility is market timing, not restoring target weights."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1393,11 +1393,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Always maximize taxes owed"
+        "text": "Overestimate their ability to pick winning stocks"
       },
       {
         "id": "b",
-        "text": "Prefer only foreign bonds"
+        "text": "Anchor on the price they originally paid for a stock"
       },
       {
         "id": "c",
@@ -1405,15 +1405,15 @@
       },
       {
         "id": "d",
-        "text": "Ignore prices entirely"
+        "text": "Follow the crowd into popular investments"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Prospect theory: losses hurt more than similar gains please.",
     "distractorExplanations": {
-      "a": "False.",
-      "b": "False.",
-      "d": "False."
+      "a": "Overestimating stock-picking skill is overconfidence bias, not loss aversion.",
+      "b": "Fixating on the purchase price is anchoring bias, related to but distinct from loss aversion.",
+      "d": "Following the crowd is herding bias; loss aversion is feeling losses more than equal gains."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1492,27 +1492,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Contain untrue statements of material fact or be otherwise misleading"
+        "text": "Contain untrue statements of material fact or be misleading"
       },
       {
         "id": "b",
-        "text": "Include fair and balanced presentations"
+        "text": "Include performance results presented net of advisory fees"
       },
       {
         "id": "c",
-        "text": "Describe the adviser's methods accurately"
+        "text": "Describe the adviser's investment methods and their material risks"
       },
       {
         "id": "d",
-        "text": "Disclose conflicts"
+        "text": "Include testimonials that carry the required disclosures"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Ads cannot be false or misleading; marketing rule sets detailed standards.",
+    "explanation": "Ads cannot be false or misleading; marketing rule sets detailed standards. Advertisements may not be otherwise misleading either.",
     "distractorExplanations": {
-      "b": "Allowed if not misleading.",
-      "c": "Allowed if accurate.",
-      "d": "Often required."
+      "b": "Net-of-fee performance is required under the marketing rule, not prohibited.",
+      "c": "Accurately describing methods and their risks is permitted and supports a fair, balanced presentation.",
+      "d": "The marketing rule permits testimonials when the required disclosures and oversight conditions are met."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1525,7 +1525,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The adviser's personal vacation"
+        "text": "The adviser through general overhead like office rent"
       },
       {
         "id": "b",
@@ -1533,19 +1533,19 @@
       },
       {
         "id": "c",
-        "text": "Only the broker's marketing department"
+        "text": "The broker-dealer through higher order flow volume"
       },
       {
         "id": "d",
-        "text": "Unrelated office furniture"
+        "text": "Clients through lower commission rates on every trade"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Soft dollars must provide lawful and appropriate assistance to advisory services for clients.",
     "distractorExplanations": {
-      "a": "Personal benefit is improper.",
-      "c": "Client benefit required.",
-      "d": "Typically not qualifying research."
+      "a": "Office rent and general overhead are not research or brokerage services under the Section 28(e) safe harbor.",
+      "c": "Soft dollars must benefit client accounts through research, not boost the executing broker's volume.",
+      "d": "Soft-dollar deals usually involve paying more than execution-only rates; the client benefit is research."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1558,27 +1558,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic SIPC coverage for advice fees"
+        "text": "SIPC coverage of advisory fees if the adviser fails"
       },
       {
         "id": "b",
-        "text": "No extra rules"
+        "text": "A requirement to register as a broker-dealer with FINRA"
       },
       {
         "id": "c",
-        "text": "Additional Advisers Act custody rule requirements (e.g., qualified custodian, notices, surprise exam in many cases)"
+        "text": "Additional Advisers Act custody rule requirements"
       },
       {
         "id": "d",
-        "text": "Exemption from fiduciary duty"
+        "text": "Exemption from fiduciary duty for custodied accounts"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Custody increases compliance obligations under Rule 206(4)-2 themes.",
+    "explanation": "Custody increases compliance obligations under Rule 206(4)-2 themes. Examples include a qualified custodian, client notices, and a surprise exam in many cases.",
     "distractorExplanations": {
-      "a": "SIPC is about brokerage failures, not advice fees.",
-      "b": "False.",
-      "d": "Duty remains."
+      "a": "SIPC protects customers of failed broker-dealers; it does not cover advisory fees or custody status.",
+      "b": "Custody triggers custody rule duties for the adviser, not broker-dealer registration with FINRA.",
+      "d": "Fiduciary duty applies to every advisory account; custody adds safeguards rather than removing duties."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1591,7 +1591,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Best execution"
+        "text": "Trade allocation under a block order"
       },
       {
         "id": "b",
@@ -1599,19 +1599,19 @@
       },
       {
         "id": "c",
-        "text": "Qualified custodianship"
+        "text": "Interpositioning by a broker-dealer"
       },
       {
         "id": "d",
-        "text": "Soft-dollar research"
+        "text": "Permissible agency cross transaction"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Using advance knowledge of client trades for personal gain is prohibited.",
     "distractorExplanations": {
-      "a": "Opposite of best execution ethics.",
-      "c": "Custody topic.",
-      "d": "Different concept."
+      "a": "Fair allocation of an aggregated block order is legitimate; trading ahead of clients is front-running.",
+      "c": "Interpositioning inserts a third party between a customer and the best market; it is not trading ahead.",
+      "d": "An agency cross means acting as broker for both sides with consent, not trading ahead of client orders."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1624,27 +1624,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Provides clients with material disclosures about the advisory business, fees, and conflicts"
+        "text": "Provides clients with material disclosures about fees and conflicts"
       },
       {
         "id": "b",
-        "text": "Is filed only with state insurance departments"
+        "text": "Registers the adviser's representatives with state regulators"
       },
       {
         "id": "c",
-        "text": "Is optional"
+        "text": "Serves as the client's written consent to principal trades"
       },
       {
         "id": "d",
-        "text": "Replaces the need for any suitability analysis"
+        "text": "Satisfies the adviser's duty to determine client suitability"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "The brochure is a key client disclosure document.",
+    "explanation": "The brochure is a key client disclosure document. It also describes the advisory business and services.",
     "distractorExplanations": {
-      "b": "SEC/state securities regulators.",
-      "c": "Required in specified circumstances.",
-      "d": "Doesn't replace care/fiduciary analysis."
+      "b": "Representatives register through Form U4; ADV Part 2 is a client disclosure brochure.",
+      "c": "Principal-trade consent must be obtained transaction by transaction; the brochure cannot supply it.",
+      "d": "Disclosure does not replace the fiduciary duty to determine suitability and act in the client's best interest."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Required by ERISA"
+        "text": "Acceptable if gross returns are shown"
       },
       {
         "id": "b",
@@ -1665,19 +1665,19 @@
       },
       {
         "id": "c",
-        "text": "Always acceptable"
+        "text": "Allowed for institutional audiences"
       },
       {
         "id": "d",
-        "text": "A form of custody"
+        "text": "A valid composite presentation"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Selective performance without proper presentation is misleading.",
     "distractorExplanations": {
-      "a": "False.",
-      "c": "Not acceptable.",
-      "d": "Unrelated."
+      "a": "Showing gross returns does not cure cherry-picking; selective account results remain misleading.",
+      "c": "Audience sophistication does not make selective best-account performance a fair presentation.",
+      "d": "A composite must include every similar account, not just the best performers, to be fair."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -1690,27 +1690,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Cash payments only in crypto"
+        "text": "Registration of the solicitor as a broker-dealer with FINRA"
       },
       {
         "id": "b",
-        "text": "Avoiding written records"
+        "text": "Client consent before each solicitor payment is made"
       },
       {
         "id": "c",
-        "text": "Required disclosures/agreements under applicable solicitor/marketing rules"
+        "text": "Required disclosures/agreements under applicable marketing rules"
       },
       {
         "id": "d",
-        "text": "No disclosures"
+        "text": "Verbal disclosure after the client has signed the contract"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Paid solicitation typically needs documented disclosures and compliance.",
+    "explanation": "Paid solicitation typically needs documented disclosures and compliance. Applicable rules include the solicitor and marketing rules.",
     "distractorExplanations": {
-      "a": "Nonsense.",
-      "b": "Records are needed.",
-      "d": "False."
+      "a": "Paid solicitation for an adviser triggers marketing rule disclosures, not broker-dealer registration.",
+      "b": "Disclosure is given at the time of the solicitation; client consent to each payment is not required.",
+      "d": "Disclosures must be provided at the time of the solicitation, not after the client has already signed."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1723,7 +1723,7 @@
     "options": [
       {
         "id": "a",
-        "text": "CPI releases after public announcement"
+        "text": "Material information after a company's public press release"
       },
       {
         "id": "b",
@@ -1731,19 +1731,19 @@
       },
       {
         "id": "c",
-        "text": "Public SEC filings"
+        "text": "Analyst mosaic conclusions from public data"
       },
       {
         "id": "d",
-        "text": "Yesterday's closing prices"
+        "text": "Nonmaterial nonpublic details about a company"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Classic illegal insider trading: MNPI + duty breach.",
     "distractorExplanations": {
-      "a": "Public after release.",
-      "c": "Public info.",
-      "d": "Public."
+      "a": "Once information is broadly disseminated, such as by press release, it is public and may be traded on.",
+      "c": "Mosaic theory allows conclusions built from public and nonmaterial pieces; it is not insider trading.",
+      "d": "Insider trading liability requires material information; nonmaterial details do not trigger it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1756,11 +1756,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The most favorable total execution quality reasonably available under the circumstances"
+        "text": "The most favorable total execution quality reasonably available"
       },
       {
         "id": "b",
-        "text": "Always the slowest venue"
+        "text": "The fastest fill available at any trading venue"
       },
       {
         "id": "c",
@@ -1768,15 +1768,15 @@
       },
       {
         "id": "d",
-        "text": "Only after-hours dark pools"
+        "text": "The broker that provides the most soft-dollar research to the adviser"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Best execution is about overall quality, not solely sticker commission.",
+    "explanation": "Best execution is about overall quality, not solely sticker commission. The standard is applied under the circumstances of each trade.",
     "distractorExplanations": {
-      "b": "False.",
+      "b": "Speed is one factor; best execution weighs price, costs, research value, and reliability together.",
       "c": "Too narrow.",
-      "d": "Not a rule."
+      "d": "Soft-dollar research cannot override best execution; execution quality must still be evaluated."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1789,7 +1789,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Avoiding confirmations"
+        "text": "A blanket consent in the advisory contract signed at account opening"
       },
       {
         "id": "b",
@@ -1797,19 +1797,19 @@
       },
       {
         "id": "c",
-        "text": "No consent"
+        "text": "Disclosure only in Form ADV Part 2 without separate client approval"
       },
       {
         "id": "d",
-        "text": "Automatic approval by FINRA exam staff"
+        "text": "Approval by the adviser's chief compliance officer instead of the client"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Principal transactions need consent/disclosure under applicable rules.",
     "distractorExplanations": {
-      "a": "Confirms matter.",
-      "c": "False.",
-      "d": "Not how it works."
+      "a": "Section 206(3) requires disclosure and consent for each principal trade; blanket contract consent is insufficient.",
+      "c": "Brochure disclosure alone does not satisfy the transaction-specific client consent required for principal trades.",
+      "d": "Internal compliance approval cannot substitute for the client's own consent to a principal trade."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1888,11 +1888,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Are always banned without exception"
+        "text": "Remain prohibited for SEC-registered advisers"
       },
       {
         "id": "b",
-        "text": "Require no disclosures ever"
+        "text": "May be used without disclosure if unpaid"
       },
       {
         "id": "c",
@@ -1900,15 +1900,15 @@
       },
       {
         "id": "d",
-        "text": "Apply only to commodity pools"
+        "text": "Require prior approval by SEC staff before use"
       }
     ],
     "correctOptionId": "c",
     "explanation": "The marketing rule permits testimonials with required conditions.",
     "distractorExplanations": {
-      "a": "Old blanket bans changed.",
-      "b": "Disclosures required.",
-      "d": "Advisers Act marketing."
+      "a": "The modern marketing rule replaced the old testimonial ban; testimonials are allowed with conditions.",
+      "b": "Even unpaid testimonials need disclosures, such as whether the person is a client and any conflicts.",
+      "d": "The SEC does not pre-approve testimonials; the adviser must meet the rule's conditions and oversight."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1921,7 +1921,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignored if the client doesn't ask"
+        "text": "Disclosed only if the client asks about it directly"
       },
       {
         "id": "b",
@@ -1929,19 +1929,19 @@
       },
       {
         "id": "c",
-        "text": "Hidden if profitable"
+        "text": "Disclosed once at onboarding and then left unmanaged"
       },
       {
         "id": "d",
-        "text": "Resolved by increasing fees quietly"
+        "text": "Reported to the SEC instead of being disclosed to clients"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fiduciary process: disclose and manage conflicts.",
     "distractorExplanations": {
-      "a": "Duty is proactive.",
-      "c": "Violation.",
-      "d": "Worsens conflict."
+      "a": "The fiduciary duty is proactive; material conflicts must be disclosed without waiting for a client question.",
+      "c": "Conflict management is ongoing; a single disclosure with no mitigation or updates is insufficient.",
+      "d": "The duty runs to clients; a regulatory filing does not replace disclosure to the affected clients."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1954,11 +1954,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Destroyed weekly"
+        "text": "Kept for one year and then destroyed by policy"
       },
       {
         "id": "b",
-        "text": "Optional if AUM is high"
+        "text": "Kept only for clients with discretionary accounts"
       },
       {
         "id": "c",
@@ -1966,15 +1966,15 @@
       },
       {
         "id": "d",
-        "text": "Stored only on personal phones without backup"
+        "text": "Filed with the SEC each quarter in place of retention"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Recordkeeping rules mandate retention and accessibility.",
     "distractorExplanations": {
-      "a": "Violates retention.",
-      "b": "AUM doesn't waive rules.",
-      "d": "Inadequate controls."
+      "a": "Advisers must generally keep records five years, the first two in an appropriate office, not one year.",
+      "b": "Recordkeeping duties cover every advisory client, not just discretionary accounts.",
+      "d": "Records are retained by the adviser and produced on inspection; quarterly SEC filing does not replace retention."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -2119,15 +2119,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Any single quarter of flat corporate earnings"
+        "text": "A single quarter of negative real GDP growth"
       },
       {
         "id": "b",
-        "text": "A temporary holiday retail slowdown"
+        "text": "A 20% decline in a broad stock market index from its peak"
       },
       {
         "id": "c",
-        "text": "Two weeks of volatile stock trading"
+        "text": "A sustained rise in the general price level across the economy"
       },
       {
         "id": "d",
@@ -2137,9 +2137,9 @@
     "correctOptionId": "d",
     "explanation": "Recessions involve broad, sustained weakness in output, income, and employment.",
     "distractorExplanations": {
-      "a": "One firm's earnings do not define a recession.",
-      "b": "Seasonal sales patterns alone are insufficient.",
-      "c": "Market volatility alone is not a recession."
+      "a": "One weak quarter is not enough; recessions involve broad, sustained declines across the economy.",
+      "b": "A 20% index decline from the peak is the common bear market definition, not a recession.",
+      "c": "A sustained rise in the general price level is inflation, not a decline in economic activity."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2218,11 +2218,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Immediate deflation in all goods"
+        "text": "Lower consumer spending as households save more"
       },
       {
         "id": "b",
-        "text": "Mandatory reductions in household debt"
+        "text": "Immediate Fed rate cuts to support demand"
       },
       {
         "id": "c",
@@ -2230,15 +2230,15 @@
       },
       {
         "id": "d",
-        "text": "Automatic increases in the discount rate"
+        "text": "Lower bond yields as investors seek safety"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Optimistic consumers tend to spend more, boosting demand.",
     "distractorExplanations": {
-      "a": "Confidence usually lifts demand, not broad deflation.",
-      "b": "Debt levels are not mechanically reduced.",
-      "d": "The discount rate is a Fed tool, not a confidence outcome."
+      "a": "Rising confidence usually lowers precautionary saving and raises spending, not the reverse.",
+      "b": "Stronger confidence boosts demand on its own; it does not call for Fed rate cuts to support demand.",
+      "d": "Optimism tends to push yields up as investors move away from safe assets, not toward them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2255,11 +2255,11 @@
       },
       {
         "id": "b",
-        "text": "Permanent elimination of inflation risk"
+        "text": "Demand-pull inflation driven by excess spending"
       },
       {
         "id": "c",
-        "text": "Fiscal policy tool of Congress"
+        "text": "Monetary policy tightening by the Federal Reserve"
       },
       {
         "id": "d",
@@ -2270,8 +2270,8 @@
     "explanation": "Energy supply disruptions can push costs and prices up economy-wide.",
     "distractorExplanations": {
       "a": "Higher oil prices raise costs; they do not cut bills.",
-      "b": "Supply shocks can increase, not remove, inflation risk.",
-      "c": "Oil prices are market-driven, not a fiscal lever."
+      "b": "Confuses cost-push with demand-pull; an oil price spike raises costs from the supply side.",
+      "c": "Oil prices are set in commodity markets; Fed tightening is a policy action, not a supply shock."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2288,23 +2288,23 @@
       },
       {
         "id": "b",
-        "text": "The speed of Fed wire transfers"
+        "text": "The rate at which the Fed expands the money supply"
       },
       {
         "id": "c",
-        "text": "Stock turnover on a single exchange"
+        "text": "The share of income households save each year"
       },
       {
         "id": "d",
-        "text": "The rate banks pay on CDs"
+        "text": "How quickly bank deposits multiply through lending"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Velocity measures how often each dollar supports transactions in a period.",
     "distractorExplanations": {
-      "b": "Fed wires are operational, not economic velocity.",
-      "c": "Exchange turnover is market activity, not MV=PY velocity.",
-      "d": "CD rates are deposit pricing, not velocity."
+      "b": "Money supply growth is the M in MV=PY; velocity is how often each dollar is spent.",
+      "c": "The share of income saved is the personal saving rate, not the velocity of money.",
+      "d": "Deposit expansion through lending is the money multiplier, a different concept from velocity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2325,19 +2325,19 @@
       },
       {
         "id": "c",
-        "text": "Eliminate currency risk for all investors"
+        "text": "Raise the dollar value of foreign investment returns"
       },
       {
         "id": "d",
-        "text": "Force the Fed to buy foreign equities"
+        "text": "Make foreign travel more expensive for Americans"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A stronger dollar buys more foreign goods and can weigh on export competitiveness.",
     "distractorExplanations": {
       "a": "Stronger dollar usually makes exports relatively expensive.",
-      "c": "Currency risk remains in international investing.",
-      "d": "Fed policy is not tied to buying foreign stocks."
+      "c": "A stronger dollar reduces the dollar value of foreign-currency returns for U.S. investors.",
+      "d": "A stronger dollar buys more foreign currency, making foreign travel cheaper for Americans."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2350,11 +2350,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Tax cuts automatically increase bank capital ratios"
+        "text": "Higher tax revenue pushes down interest rates and increases private business investment"
       },
       {
         "id": "b",
-        "text": "Deficits guarantee higher stock dividends"
+        "text": "Government spending raises private incomes and multiplies total output"
       },
       {
         "id": "c",
@@ -2362,15 +2362,15 @@
       },
       {
         "id": "d",
-        "text": "Public spending replaces all private consumption permanently"
+        "text": "Fed bond purchases push down interest rates and boost private borrowing"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Heavy government borrowing can compete with private borrowers for capital.",
     "distractorExplanations": {
-      "a": "Tax cuts affect revenue, not the crowding-out mechanism directly.",
-      "b": "Dividends are corporate decisions, not deficit outcomes.",
-      "d": "Public spending supplements; it does not permanently replace all private activity."
+      "a": "That describes crowding in from reduced government borrowing, the opposite of crowding out.",
+      "b": "That is the fiscal multiplier effect, not the rate-driven reduction in private investment.",
+      "d": "That describes monetary easing such as quantitative easing, not fiscal crowding out."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2383,15 +2383,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Every worker who is temporarily on vacation"
+        "text": "Frictional and cyclical unemployment at full employment"
       },
       {
         "id": "b",
-        "text": "Only cyclical layoffs during recessions"
+        "text": "Cyclical unemployment caused by recession layoffs"
       },
       {
         "id": "c",
-        "text": "Zero job turnover in the economy"
+        "text": "Workers who have stopped looking for work"
       },
       {
         "id": "d",
@@ -2401,9 +2401,9 @@
     "correctOptionId": "d",
     "explanation": "At the natural rate, cyclical unemployment is minimal but normal turnover remains.",
     "distractorExplanations": {
-      "a": "Vacation is not unemployment.",
-      "b": "Cyclical unemployment rises in downturns, not at the natural rate.",
-      "c": "Some turnover persists even in strong labor markets."
+      "a": "Cyclical unemployment is near zero at the natural rate; it is frictional plus structural.",
+      "b": "Recession layoffs are cyclical unemployment, which is excluded from the natural rate.",
+      "c": "Discouraged workers are outside the labor force and are not counted in the unemployment rate."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2412,7 +2412,7 @@
     "id": "series-65-readiness-check-economics-029",
     "examSlug": "series-65-readiness-check",
     "topicId": "economics",
-    "prompt": "If the Fed raises reserve requirements, member banks must",
+    "prompt": "Reserve requirements have been 0% since March 2020. If the Fed raised them again, member banks would have to:",
     "options": [
       {
         "id": "a",
@@ -2420,23 +2420,23 @@
       },
       {
         "id": "b",
-        "text": "Lend unlimited amounts because reserves are optional"
+        "text": "Hold a smaller fraction of deposits as reserves, increasing funds available to lend"
       },
       {
         "id": "c",
-        "text": "Stop paying interest on all customer deposits immediately"
+        "text": "Raise the discount rate charged on overnight borrowing from the Fed"
       },
       {
         "id": "d",
-        "text": "Purchase equities directly from the Treasury"
+        "text": "Hold more capital against loans under Basel risk-weighting standards"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Higher reserve requirements tie up more deposits and can restrict lending capacity.",
+    "explanation": "The Fed cut reserve requirement ratios to 0% in March 2020, but in principle raising them forces banks to hold a larger share of deposits as reserves, shrinking excess reserves and the money multiplier and reducing lending capacity.",
     "distractorExplanations": {
-      "b": "Reserve requirements are binding for member banks.",
-      "c": "Deposit interest is a separate bank pricing decision.",
-      "d": "Banks do not buy Treasury stock for reserve compliance."
+      "b": "Reverses the effect; a higher requirement ties up more deposits and reduces lending capacity.",
+      "c": "The Fed sets the discount rate; member banks do not raise it in response to reserve requirements.",
+      "d": "Capital requirements are a separate bank regulation; reserve requirements apply to deposits."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2482,15 +2482,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Priority over bondholders in bankruptcy"
+        "text": "Priority over preferred stockholders for dividends"
       },
       {
         "id": "b",
-        "text": "A guaranteed fixed dividend each quarter"
+        "text": "A fixed dividend set at issuance like preferred stock"
       },
       {
         "id": "c",
-        "text": "No exposure to business performance"
+        "text": "A claim on assets ahead of unsecured bondholders"
       },
       {
         "id": "d",
@@ -2500,9 +2500,9 @@
     "correctOptionId": "d",
     "explanation": "Equity owners participate in upside and bear residual risk after debt claims.",
     "distractorExplanations": {
-      "a": "Bondholders typically rank ahead of stockholders.",
-      "b": "Common dividends are discretionary, not guaranteed.",
-      "c": "Stock values reflect business performance."
+      "a": "Preferred stockholders receive dividends before common stockholders, not after.",
+      "b": "Common dividends are discretionary and variable; a fixed stated dividend is a preferred feature.",
+      "c": "Common stockholders rank last, behind every class of creditor including unsecured bondholders."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2581,11 +2581,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Buy the underlying at any future price"
+        "text": "Buy the underlying asset at the strike price before or at expiration"
       },
       {
         "id": "b",
-        "text": "Receive dividends without owning shares"
+        "text": "Receive the premium if the underlying stays above the strike"
       },
       {
         "id": "c",
@@ -2593,15 +2593,15 @@
       },
       {
         "id": "d",
-        "text": "Convert bonds into common stock"
+        "text": "Sell the underlying at the market price on expiration day"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Puts hedge or profit from declines by locking in a sale price.",
     "distractorExplanations": {
-      "a": "Buying at a set price describes a call option.",
-      "b": "Dividends flow to shareholders, not put holders alone.",
-      "d": "Conversion rights belong to convertible securities."
+      "a": "The right to buy at the strike describes a call option, not a put.",
+      "b": "Keeping the premium when the price stays above the strike is the put writer's outcome, not the holder's.",
+      "d": "A put locks in the strike price; selling at the market price needs no option."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2618,11 +2618,11 @@
       },
       {
         "id": "b",
-        "text": "Must hold only Treasury bills by regulation"
+        "text": "Continuously issue new shares as investors buy in"
       },
       {
         "id": "c",
-        "text": "Never use leverage or borrow"
+        "text": "Trade on exchanges at prices fixed to their NAV"
       },
       {
         "id": "d",
@@ -2633,8 +2633,8 @@
     "explanation": "Closed-end shares trade among investors; market price may premium/discount NAV.",
     "distractorExplanations": {
       "a": "Open-end funds redeem at NAV; closed-end funds generally do not.",
-      "b": "Closed-end funds are not restricted to Treasuries only.",
-      "c": "Some closed-end funds may use leverage."
+      "b": "Continuous issuance of new shares is an open-end fund feature; closed-end funds have a fixed share count.",
+      "c": "Closed-end market prices float and often sit at a premium or discount to NAV."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2651,23 +2651,23 @@
       },
       {
         "id": "b",
-        "text": "Sell the issuer's assets directly to the public"
+        "text": "Exchange the bond for cash at par before maturity"
       },
       {
         "id": "c",
-        "text": "Reset the coupon rate weekly with the Fed"
+        "text": "Receive a coupon that resets with a benchmark rate"
       },
       {
         "id": "d",
-        "text": "Insulate the portfolio from all market risk"
+        "text": "Buy additional shares at a set price via attached warrants"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Convertible features blend fixed income with equity participation.",
     "distractorExplanations": {
-      "b": "Bondholders do not liquidate issuer assets individually.",
-      "c": "Coupons are contractually set, not Fed-adjusted weekly.",
-      "d": "Convertibles still carry credit and equity risk."
+      "b": "Redeeming for cash at par before maturity is a put feature of putable bonds, not conversion.",
+      "c": "A coupon that resets with a benchmark describes a floating-rate note, not a convertible.",
+      "d": "Warrants are separate purchase rights; a convertible exchanges the bond itself for shares."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2713,11 +2713,11 @@
     "options": [
       {
         "id": "a",
-        "text": "U.S. government backing of principal"
+        "text": "Investment-grade ratings and higher yield spreads"
       },
       {
         "id": "b",
-        "text": "Zero default risk because of high coupons"
+        "text": "Non-investment-grade ratings and lower yield spreads"
       },
       {
         "id": "c",
@@ -2725,15 +2725,15 @@
       },
       {
         "id": "d",
-        "text": "Exemption from SEC registration"
+        "text": "Ratings of BBB or above with low default rates"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Lower-rated issuers pay higher yields to compensate for elevated credit risk.",
     "distractorExplanations": {
-      "a": "Junk bonds are corporate/municipal risk, not U.S. full faith credit.",
-      "b": "Defaults occur in high-yield markets.",
-      "d": "Registration exemptions depend on offering structure, not rating alone."
+      "a": "Junk bonds are below investment grade; investment-grade issuers pay narrower spreads.",
+      "b": "Investors demand wider, not narrower, yield spreads to hold non-investment-grade credit.",
+      "d": "BBB-/Baa3 and above is investment grade; junk bonds are rated BB+/Ba1 or lower."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2746,27 +2746,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Retail banking with FDIC-insured deposits"
+        "text": "Commercial real estate such as office towers"
       },
       {
         "id": "b",
-        "text": "Short-term municipal note issuance"
+        "text": "Technology and biotech venture investments"
       },
       {
         "id": "c",
-        "text": "Federal agency mortgage pooling"
+        "text": "Municipal water and transit infrastructure"
       },
       {
         "id": "d",
-        "text": "Energy and natural-resource infrastructure with pass-through taxation"
+        "text": "Energy and natural-resource infrastructure"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "MLPs often own pipelines and pass income to unit holders with unique tax reporting.",
+    "explanation": "MLPs often own pipelines and pass income to unit holders with unique tax reporting. MLPs use pass-through taxation, so unit holders receive Schedule K-1s.",
     "distractorExplanations": {
-      "a": "MLPs are not bank deposit vehicles.",
-      "b": "MLPs are equity partnerships, not muni issuers.",
-      "c": "Agency MBS pooling is a separate product structure."
+      "a": "Commercial real estate ownership is the domain of REITs, not master limited partnerships.",
+      "b": "MLPs must earn qualifying income, largely from natural resources, not venture technology investments.",
+      "c": "Municipal water and transit projects are financed by muni bonds, not structured as MLPs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2783,23 +2783,23 @@
       },
       {
         "id": "b",
-        "text": "FDIC insurance up to statutory limits"
+        "text": "FDIC insurance on principal up to $250,000 per depositor"
       },
       {
         "id": "c",
-        "text": "Guaranteed principal regardless of issuer or formula"
+        "text": "Principal protection backed by the U.S. Treasury"
       },
       {
         "id": "d",
-        "text": "Voting rights in the issuing broker-dealer"
+        "text": "SIPC coverage against the issuer's default"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Returns depend on linked indexes and the note issuer's creditworthiness.",
     "distractorExplanations": {
-      "b": "Structured notes are unsecured issuer obligations, not bank deposits.",
-      "c": "Principal protection depends on terms and issuer health.",
-      "d": "Notes do not grant corporate governance rights."
+      "b": "Structured notes are unsecured issuer debt; FDIC insurance covers bank deposits, not these notes.",
+      "c": "Any principal protection depends on the issuer's credit, not on U.S. Treasury backing.",
+      "d": "SIPC covers missing customer assets at a failed broker-dealer, not losses from issuer default."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2812,27 +2812,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Direct ownership of underlying mutual fund shares in the client's name"
+        "text": "Tax-free growth and withdrawals after age 59½"
       },
       {
         "id": "b",
-        "text": "Tax-deferred growth and insurer-guaranteed minimum interest or payout terms per contract"
+        "text": "Tax-deferred growth and insurer-guaranteed minimum interest"
       },
       {
         "id": "c",
-        "text": "SIPC protection on the cash value like a brokerage account"
+        "text": "Tax-deferred growth and returns tied to subaccount performance"
       },
       {
         "id": "d",
-        "text": "Unlimited withdrawals without surrender charges ever"
+        "text": "SIPC protection on cash value like a brokerage account"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Fixed annuities are insurance products with contractual guarantees subject to insurer strength.",
+    "explanation": "Fixed annuities are insurance products with contractual guarantees subject to insurer strength. Payout terms are set per contract.",
     "distractorExplanations": {
-      "a": "Funds inside annuities are insurer assets, not direct client fund ownership.",
-      "c": "SIPC covers broker-dealer failure, not insurer general account.",
-      "d": "Surrender schedules commonly apply in early years."
+      "a": "Tax-free qualified withdrawals describe a Roth IRA; annuity gains are taxed as ordinary income.",
+      "c": "Returns tied to subaccounts describe a variable annuity, not a fixed annuity.",
+      "d": "SIPC covers broker-dealer failures; fixed annuity guarantees depend on the insurer's claims-paying ability."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2915,23 +2915,23 @@
       },
       {
         "id": "b",
-        "text": "Buying puts to eliminate all downside risk permanently"
+        "text": "Buying put options to protect against a decline in the stock"
       },
       {
         "id": "c",
-        "text": "Borrowing to double share count without disclosure"
+        "text": "Selling put options to collect premium and possibly buy more of the shares"
       },
       {
         "id": "d",
-        "text": "Writing naked calls without owning the underlying"
+        "text": "Writing calls without owning the stock to collect premium income"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Covered calls exchange some upside for premium; downside remains except to the extent premium offsets losses.",
     "distractorExplanations": {
-      "b": "Puts hedge downside; covered calls sell calls against long stock.",
-      "c": "Leverage requires suitability and margin compliance.",
-      "d": "Naked calls without stock are uncovered and higher risk."
+      "b": "Buying puts against owned stock is a protective put, a hedge, not a covered call.",
+      "c": "Selling puts to possibly acquire shares is a cash-secured put strategy, not a covered call.",
+      "d": "Writing calls without the stock is a naked (uncovered) call with unlimited risk."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2944,7 +2944,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Are paid to the SEC as registration fees"
+        "text": "Increase the longer shares are held before redemption"
       },
       {
         "id": "b",
@@ -2952,19 +2952,19 @@
       },
       {
         "id": "c",
-        "text": "Apply only to purchases, never to redemptions"
+        "text": "Are deducted from each purchase as a front-end load"
       },
       {
         "id": "d",
-        "text": "Guarantee the fund's NAV will not fluctuate"
+        "text": "Are annual 12b-1 fees charged for distribution and marketing costs"
       }
     ],
     "correctOptionId": "b",
     "explanation": "B-share and similar structures often assess declining back-end loads on early redemptions.",
     "distractorExplanations": {
-      "a": "Sales charges go to distributors/issuers, not the SEC.",
-      "c": "CDSC is tied to redemption timing, not purchase.",
-      "d": "NAV still moves with portfolio values."
+      "a": "Reverses the schedule; CDSC percentages decline the longer shares are held.",
+      "c": "Charges deducted at purchase are front-end loads (Class A), not contingent deferred charges.",
+      "d": "12b-1 fees are ongoing annual distribution fees, separate from a back-end CDSC on redemption."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2977,15 +2977,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the client's favorite stock tickers"
+        "text": "Recent trade history and preferred securities to buy"
       },
       {
         "id": "b",
-        "text": "Projected market returns guaranteed for the next decade"
+        "text": "Return targets the adviser commits to deliver each year"
       },
       {
         "id": "c",
-        "text": "Other clients' account balances for comparison"
+        "text": "The adviser's own model portfolio performance history"
       },
       {
         "id": "d",
@@ -2995,9 +2995,9 @@
     "correctOptionId": "d",
     "explanation": "Suitable advice requires knowing objectives, constraints, and capacity for risk.",
     "distractorExplanations": {
-      "a": "Tickers alone miss goals and constraints.",
-      "b": "Markets cannot be guaranteed.",
-      "c": "Other clients' data is confidential and irrelevant."
+      "a": "Trade history and preferences alone miss the client's goals, horizon, and capacity for risk.",
+      "b": "Advisers cannot commit to deliver returns; profiling records the client's goals and constraints.",
+      "c": "The firm's model performance does not describe the client's needs, finances, or risk tolerance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3014,23 +3014,23 @@
       },
       {
         "id": "b",
-        "text": "The client's preferred trading platform brand"
+        "text": "How much of the portfolio is invested in exchange-listed securities"
       },
       {
         "id": "c",
-        "text": "Long-term appreciation potential"
+        "text": "How much long-term appreciation the client needs to meet goals"
       },
       {
         "id": "d",
-        "text": "Tax bracket history from ten years ago"
+        "text": "How much volatility the client can tolerate without selling"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Liquidity planning ensures funds are accessible when bills or goals require cash.",
     "distractorExplanations": {
-      "b": "Platforms do not define liquidity need.",
-      "c": "Appreciation is separate from cash availability.",
-      "d": "Historical tax data alone does not set liquidity requirements."
+      "b": "Exchange listing affects marketability; liquidity need is when the client requires cash.",
+      "c": "Needed appreciation is the return objective, separate from how quickly cash must be available.",
+      "d": "Comfort with volatility is risk tolerance, not the client's need for accessible cash."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3043,7 +3043,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The adviser's tenure at the current firm"
+        "text": "The period over which the adviser expects to outperform a benchmark"
       },
       {
         "id": "b",
@@ -3051,19 +3051,19 @@
       },
       {
         "id": "c",
-        "text": "The length of the latest economic expansion"
+        "text": "The average holding period of each security in the portfolio"
       },
       {
         "id": "d",
-        "text": "The settlement cycle for stock trades"
+        "text": "The years remaining before the client's bond holdings mature"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Horizon links portfolio risk to when money will be spent or withdrawn.",
     "distractorExplanations": {
-      "a": "Adviser tenure is unrelated to client horizon.",
-      "c": "Macro cycles are context, not the client's horizon.",
-      "d": "Settlement timing is operational, not planning horizon."
+      "a": "Outperformance expectations concern the manager, not when the client will need the money.",
+      "c": "Average holding period is a turnover measure, not the client's planning horizon.",
+      "d": "Bond maturities are portfolio traits that should be matched to the horizon, not define it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3076,11 +3076,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Emotional comfort with volatility"
+        "text": "Emotional willingness to accept portfolio volatility"
       },
       {
         "id": "b",
-        "text": "The adviser's model portfolio name"
+        "text": "The client's stated preference for growth over income"
       },
       {
         "id": "c",
@@ -3088,15 +3088,15 @@
       },
       {
         "id": "d",
-        "text": "Historical index returns in the 1990s"
+        "text": "The maximum return the client hopes to earn each year"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Capacity is objective (finances); tolerance is subjective (comfort).",
     "distractorExplanations": {
-      "a": "Comfort alone is tolerance, not capacity.",
-      "b": "Model names are not client-specific capacity.",
-      "d": "Past index returns do not measure personal capacity."
+      "a": "Emotional willingness to accept volatility is risk tolerance, the subjective side, not capacity.",
+      "b": "A preference for growth is an investment objective, not an objective measure of loss capacity.",
+      "d": "Hoped-for return is a return objective; capacity is the financial ability to absorb losses."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3109,15 +3109,15 @@
     "options": [
       {
         "id": "a",
-        "text": "No need to consider inflation or taxes ever"
+        "text": "A short horizon that calls for capital preservation and liquidity"
       },
       {
         "id": "b",
-        "text": "A requirement to hold only cash equivalents"
+        "text": "A need for income-producing bonds to cover living expenses"
       },
       {
         "id": "c",
-        "text": "Identical constraints to a retiree taking RMDs"
+        "text": "Constraints similar to a retiree taking required distributions"
       },
       {
         "id": "d",
@@ -3127,9 +3127,9 @@
     "correctOptionId": "d",
     "explanation": "Long horizons can allow riding out equity volatility if goals and temperament align.",
     "distractorExplanations": {
-      "a": "Inflation and taxes still matter over decades.",
-      "b": "All-cash may not meet long-term growth needs.",
-      "c": "Retirees face different withdrawal and risk constraints."
+      "a": "A 30-year retirement goal is a long horizon; preservation and liquidity fit short horizons.",
+      "b": "A working professional saving for retirement is accumulating, not drawing portfolio income for expenses.",
+      "c": "Retirees face withdrawal, RMD, and sequence risk constraints that a young saver does not."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3146,23 +3146,23 @@
       },
       {
         "id": "b",
-        "text": "Realizing gains only to increase current-year taxes"
+        "text": "Selling appreciated securities to reset cost basis higher, subject to holding rules"
       },
       {
         "id": "c",
-        "text": "Ignoring cost basis records entirely"
+        "text": "Selling securities at a loss and rebuying them within 30 days to keep the deduction"
       },
       {
         "id": "d",
-        "text": "Trading identical securities within 30 days without consequence"
+        "text": "Donating appreciated securities to charity to avoid capital gains"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Harvesting can manage tax liability but wash-sale rules disallow certain immediate repurchases.",
     "distractorExplanations": {
-      "b": "Harvesting targets losses, not deliberate gain acceleration.",
-      "c": "Basis records are essential for tax reporting.",
-      "d": "Wash-sale rules can defer loss recognition."
+      "b": "Realizing gains to step up basis is gain harvesting, not harvesting losses to offset gains.",
+      "c": "Repurchasing substantially identical securities within 30 days triggers the wash-sale rule and disallows the loss.",
+      "d": "Gifting appreciated securities is a charitable strategy, not selling losers to offset gains."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3175,7 +3175,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Passing a state insurance-license exam"
+        "text": "Holding an active state insurance producer license"
       },
       {
         "id": "b",
@@ -3183,19 +3183,19 @@
       },
       {
         "id": "c",
-        "text": "Opening any brokerage account with $500"
+        "text": "Having at least $250,000 in a single brokerage account"
       },
       {
         "id": "d",
-        "text": "Being referred by an existing client"
+        "text": "Having invested in at least three prior private placements"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Accredited status depends on financial thresholds, certain professional certifications (e.g., Series 7/65/82 in good standing), or institutional status—not insurance licenses or referrals.",
     "distractorExplanations": {
-      "a": "State insurance licenses do not confer accredited status.",
-      "c": "Dollar amounts in accounts may differ from Rule 501 tests.",
-      "d": "Referrals are unrelated to accredited definitions."
+      "a": "Insurance producer licenses do not confer accredited status; certain securities licenses such as Series 65 do.",
+      "c": "Rule 501 uses $1 million net worth excluding the primary residence or income tests, not an account balance.",
+      "d": "Past private placement experience is not one of the Regulation D accredited investor tests."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3208,11 +3208,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Mandatory immediate liquidation regardless of client goals"
+        "text": "Selling the position at once to remove single-stock risk"
       },
       {
         "id": "b",
-        "text": "Ignoring single-stock risk because of past gains"
+        "text": "Holding the position because past gains signal continued strength"
       },
       {
         "id": "c",
@@ -3220,15 +3220,15 @@
       },
       {
         "id": "d",
-        "text": "Guaranteeing the issuer will not decline"
+        "text": "Adding margin to the position to amplify the expected upside"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Large single-stock exposures create idiosyncratic risk that should be addressed in planning.",
     "distractorExplanations": {
-      "a": "Liquidation must fit goals, taxes, and client consent.",
-      "b": "Past gains do not remove concentration risk.",
-      "d": "No adviser can guarantee issuer performance."
+      "a": "Immediate liquidation ignores tax consequences and the client's goals; options should be discussed first.",
+      "b": "Past gains do not reduce concentration risk; this reflects recency and familiarity bias.",
+      "d": "Margin on a concentrated position compounds single-stock risk rather than addressing it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3241,15 +3241,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Liquidating Roth assets first regardless of tax impact"
+        "text": "Drawing down Roth assets first so tax-deferred accounts grow longer"
       },
       {
         "id": "b",
-        "text": "Avoiding any cash buffer for living expenses"
+        "text": "Withdrawing equally from each account type every year"
       },
       {
         "id": "c",
-        "text": "Maximizing short-term capital gains deliberately"
+        "text": "Delaying all withdrawals until required distributions begin"
       },
       {
         "id": "d",
@@ -3259,9 +3259,9 @@
     "correctOptionId": "d",
     "explanation": "Order of withdrawals can materially affect after-tax income and longevity of assets.",
     "distractorExplanations": {
-      "a": "Roth timing depends on brackets and legacy goals.",
-      "b": "Cash buffers help manage sequence-of-returns risk.",
-      "c": "Deliberate gain maximization is rarely optimal."
+      "a": "Roth assets are usually tapped last; deferred accounts face RMDs and tax on withdrawal anyway.",
+      "b": "Equal pro-rata withdrawals ignore bracket management and differing tax treatment across accounts.",
+      "c": "Retirees need income before RMD age, and waiting can push later RMDs into higher brackets."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3307,7 +3307,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The adviser's CRD number"
+        "text": "The client's holding period beyond one year, with longer periods taxed lower"
       },
       {
         "id": "b",
@@ -3315,19 +3315,19 @@
       },
       {
         "id": "c",
-        "text": "The number of trades placed each month"
+        "text": "The type of security sold, with stocks taxed lower than bonds"
       },
       {
         "id": "d",
-        "text": "Whether the security is held in paper certificate form"
+        "text": "The state where the brokerage firm is headquartered"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Long-term rates follow statutory brackets and income levels.",
     "distractorExplanations": {
-      "a": "CRD identifies registration, not tax rates.",
-      "c": "Trade count alone does not set capital gains rates.",
-      "d": "Certificate form does not change tax characterization."
+      "a": "Past one year every holding is long-term at the same rates; holding period only separates short from long.",
+      "c": "Long-term gains on stocks and bonds use the same rate schedule; the brackets depend on income.",
+      "d": "Federal rates depend on the client's income and filing status, not the broker's location."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3340,27 +3340,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore changes and increase portfolio leverage"
+        "text": "Close the account immediately and transfer assets to heirs"
       },
       {
         "id": "b",
-        "text": "Share the client's statements publicly on social media"
+        "text": "Accept the client's instructions without any further review"
       },
       {
         "id": "c",
-        "text": "Involve trusted contacts or legal guidance and document concerns appropriately"
+        "text": "Involve trusted contacts or legal guidance and document concerns"
       },
       {
         "id": "d",
-        "text": "Change beneficiaries without authorization"
+        "text": "Take over decisions under the existing advisory agreement"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Advisers should follow firm policy, document, and protect vulnerable clients within legal bounds.",
+    "explanation": "Advisers should follow firm policy, document, and protect vulnerable clients within legal bounds. Concerns should be documented appropriately under firm policy.",
     "distractorExplanations": {
-      "a": "Leverage increases risk inappropriately for vulnerable clients.",
-      "b": "Privacy rules prohibit public disclosure.",
-      "d": "Beneficiary changes require proper authority."
+      "a": "An adviser has no authority to transfer assets to heirs; that requires legal authority or death.",
+      "b": "Signs of diminished capacity call for heightened care, trusted-contact outreach, and documentation.",
+      "d": "Investment discretion does not grant authority over a client's broader affairs; that needs a POA or court order."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3373,15 +3373,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Guarantee the client will not outlive assets"
+        "text": "Project a single expected return using historical averages"
       },
       {
         "id": "b",
-        "text": "Replace the need for an investment policy statement"
+        "text": "Measure a portfolio's sensitivity to interest-rate changes"
       },
       {
         "id": "c",
-        "text": "Predict a single certain portfolio return each year"
+        "text": "Calculate the risk-adjusted return of past portfolio results"
       },
       {
         "id": "d",
@@ -3391,9 +3391,9 @@
     "correctOptionId": "d",
     "explanation": "Simulations illustrate probability of success under uncertainty; they are not guarantees.",
     "distractorExplanations": {
-      "a": "Outcomes remain probabilistic, not guaranteed.",
-      "b": "IPS still governs objectives and constraints.",
-      "c": "Returns vary; simulations show distributions, not one certain number."
+      "a": "A single-return projection is a deterministic forecast; Monte Carlo models many possible paths.",
+      "b": "Sensitivity to interest-rate changes is measured by duration, not Monte Carlo simulation.",
+      "c": "Risk-adjusted past returns are measured by ratios like Sharpe; Monte Carlo models future outcomes."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3410,23 +3410,23 @@
       },
       {
         "id": "b",
-        "text": "Speculate aggressively to maximize short-term trading profits"
+        "text": "Judge each investment on its own merits rather than as part of the overall portfolio"
       },
       {
         "id": "c",
-        "text": "Delegate all duties without monitoring managers"
+        "text": "Avoid delegating investment functions to outside managers"
       },
       {
         "id": "d",
-        "text": "Ignore risk in favor of highest nominal yield"
+        "text": "Favor the highest-yielding investments to maximize current income"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Prudence emphasizes diversification, risk management, and duty of care.",
     "distractorExplanations": {
-      "b": "Speculation conflicts with prudent fiduciary investing.",
-      "c": "Delegation requires ongoing monitoring.",
-      "d": "Yield alone ignores risk and suitability."
+      "b": "The prudent investor rule judges investments in the context of the whole portfolio, not in isolation.",
+      "c": "The rule permits delegation, provided the fiduciary selects managers prudently and monitors them.",
+      "d": "Chasing yield ignores the risk-return balance and diversification the prudent investor rule requires."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3439,7 +3439,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Converting the entire IRA in one day without analysis"
+        "text": "Converting the full IRA at once to minimize total taxes owed"
       },
       {
         "id": "b",
@@ -3447,19 +3447,19 @@
       },
       {
         "id": "c",
-        "text": "Assuming conversions never affect Medicare premiums or IRMAA"
+        "text": "Paying conversion taxes from the IRA to preserve taxable assets"
       },
       {
         "id": "d",
-        "text": "Ignoring state tax treatment entirely"
+        "text": "Whether the client's modified AGI falls below the Roth conversion income limit"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Conversions accelerate tax recognition; bracket management and ancillary effects matter.",
     "distractorExplanations": {
-      "a": "Large conversions need tax modeling and cash planning.",
-      "c": "IRMAA and other thresholds may be affected.",
-      "d": "State taxes can materially change conversion economics."
+      "a": "A single large conversion can push income into top brackets; partial conversions often reduce total tax.",
+      "c": "Withholding tax from the IRA shrinks the amount converted and can add a penalty before age 59½.",
+      "d": "The income limit on Roth conversions was eliminated in 2010; any IRA owner may convert."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3472,27 +3472,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only if the client requests it five years later"
+        "text": "Within 48 hours after the contract is signed, and then every two years thereafter"
       },
       {
         "id": "b",
-        "text": "Never to existing clients after the first meeting"
+        "text": "Before entering the contract, with updates delivered only upon client request"
       },
       {
         "id": "c",
-        "text": "Only to institutional clients, not individuals"
+        "text": "After the first trade settles in the account, and annually thereafter"
       },
       {
         "id": "d",
-        "text": "Before or at the time of entering an advisory contract, and annually thereafter"
+        "text": "Before or at signing, then yearly if the brochure changed materially"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "ADV Part 2 is the brochure describing services, fees, conflicts, and disciplinary history.",
+    "explanation": "Under SEC Rule 204-3, an adviser delivers the Form ADV Part 2A brochure before or at the time of entering the advisory contract. Each year, within 120 days of fiscal year-end, it must deliver a summary of material changes or an updated brochure if material changes occurred.",
     "distractorExplanations": {
-      "a": "Delivery timing is regulatory, not optional years later.",
-      "b": "Annual delivery continues for ongoing relationships.",
-      "c": "Retail and institutional clients receive required disclosures."
+      "a": "Delivery is due before or at contract signing, not 48 hours after, and annual updates follow material changes, not a two-year cycle.",
+      "b": "When the brochure changes materially, the adviser must deliver a summary or updated brochure each year without waiting for a request.",
+      "c": "Delivery must occur before or at entering the advisory contract, not after the first trade settles."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3505,27 +3505,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Trade securities for personal or client benefit before public disclosure"
+        "text": "Trade securities for personal or client benefit"
       },
       {
         "id": "b",
-        "text": "Support legitimate public research using filed 10-K data"
+        "text": "Report the information to the firm's compliance department"
       },
       {
         "id": "c",
-        "text": "Comply with a client's tax-loss harvesting request"
+        "text": "Place the issuer on the firm's restricted or watch list"
       },
       {
         "id": "d",
-        "text": "Rebalance a diversified index portfolio per IPS"
+        "text": "Inform legal counsel when assessing a disclosure obligation"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Insider trading rules prohibit trading on MNPI.",
+    "explanation": "Insider trading rules prohibit trading on MNPI. Trading on it before public disclosure is prohibited.",
     "distractorExplanations": {
-      "b": "Public filings are not MNPI.",
-      "c": "Tax harvesting uses market prices, not MNPI.",
-      "d": "Index rebalancing does not rely on MNPI."
+      "b": "Escalating MNPI to compliance is required by insider trading policies, not a prohibited use.",
+      "c": "Restricting the issuer is a standard control that MNPI should prompt, not a prohibited use of it.",
+      "d": "Sharing MNPI with counsel for legal advice is a legitimate use, not trading on the information."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3538,7 +3538,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Unlimited personal trading ahead of all client orders"
+        "text": "Annual holdings reports for clients' personal accounts"
       },
       {
         "id": "b",
@@ -3546,19 +3546,19 @@
       },
       {
         "id": "c",
-        "text": "Destruction of trade records after 30 days"
+        "text": "Pre-clearance of all client trades by the chief compliance officer"
       },
       {
         "id": "d",
-        "text": "Exemption from all conflict disclosure"
+        "text": "Personal trading reports for every employee filed directly with the SEC"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Access persons must follow firm policies designed to prevent misuse of client information.",
     "distractorExplanations": {
-      "a": "Trading ahead of clients is front-running and prohibited.",
-      "c": "Books and records must be retained for prescribed periods.",
-      "d": "Conflicts must be disclosed and managed."
+      "a": "Code-of-ethics reports cover access persons' own holdings, not clients' personal accounts.",
+      "c": "Pre-clearance applies to access persons' personal trades, such as IPOs and private placements, not client trades.",
+      "d": "Access persons report to the adviser's CCO, not to the SEC, and not every employee is an access person."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3571,11 +3571,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Charging advisory fees disclosed in Form ADV"
+        "text": "Making political contributions of any amount to candidates in states where they have clients"
       },
       {
         "id": "b",
-        "text": "Using third-party custodians for client assets"
+        "text": "Soliciting government clients through registered placement agents subject to pay-to-play rules"
       },
       {
         "id": "c",
@@ -3583,15 +3583,15 @@
       },
       {
         "id": "d",
-        "text": "Delivering quarterly performance reports with proper disclosures"
+        "text": "Accepting compensation from private clients within two years of any campaign donation"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Pay-to-play policies curb quid pro quo influence in winning public pension mandates.",
     "distractorExplanations": {
-      "a": "Disclosed fees are normal business.",
-      "b": "Custody at third parties is standard.",
-      "d": "Performance reporting is permitted with compliance."
+      "a": "The rule targets officials of government entity clients and allows de minimis $350/$150 contributions.",
+      "b": "Paying regulated placement agents to solicit government entities is permitted; unregulated solicitors are barred.",
+      "d": "The two-year time-out applies to compensation from government entity clients, not private clients."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3604,15 +3604,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Commingle client cash with the adviser's operating account freely"
+        "text": "Hold client securities in the adviser's own name at a qualified custodian"
       },
       {
         "id": "b",
-        "text": "Send account statements only if the client asks verbally each month"
+        "text": "Send account statements to clients annually instead of the custodian quarterly"
       },
       {
         "id": "c",
-        "text": "Avoid notifying clients about custodial arrangements"
+        "text": "Undergo a surprise examination once every three years by the SEC staff"
       },
       {
         "id": "d",
@@ -3622,9 +3622,9 @@
     "correctOptionId": "d",
     "explanation": "Custody rules protect client assets through independent custodians and verification.",
     "distractorExplanations": {
-      "a": "Commingling client funds is prohibited.",
-      "b": "Custody rules require regular account statements to clients.",
-      "c": "Clients must be informed about custodial safeguards."
+      "a": "Accounts must be in the client's name or the adviser's name as agent or trustee, not the adviser's own name.",
+      "b": "The qualified custodian must send account statements to clients at least quarterly.",
+      "c": "The surprise exam is annual and performed by an independent public accountant, not SEC staff."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3641,23 +3641,23 @@
       },
       {
         "id": "b",
-        "text": "Disclosing all material conflicts to clients"
+        "text": "Charging performance fees to qualified clients under Rule 205-3"
       },
       {
         "id": "c",
-        "text": "Maintaining required books and records"
+        "text": "Agency cross transactions with written client consent"
       },
       {
         "id": "d",
-        "text": "Using a qualified custodian when custody exists"
+        "text": "Recommending securities in which the adviser has a disclosed interest"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Rule 206 prohibits fraudulent, deceptive, or manipulative conduct.",
     "distractorExplanations": {
-      "b": "Conflict disclosure is required, not prohibited.",
-      "c": "Recordkeeping is mandatory.",
-      "d": "Qualified custodians are required when custody exists."
+      "b": "Performance fees charged to qualified clients under Rule 205-3 are permitted, not fraudulent.",
+      "c": "Agency cross trades with written consent and required disclosures are permitted under Rule 206(3)-2.",
+      "d": "Recommending securities with a disclosed interest is allowed; the anti-fraud rules target nondisclosure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3670,7 +3670,7 @@
     "options": [
       {
         "id": "a",
-        "text": "May omit limitations if returns look attractive"
+        "text": "May be shown to any retail audience as long as gross and net returns are presented together"
       },
       {
         "id": "b",
@@ -3678,19 +3678,19 @@
       },
       {
         "id": "c",
-        "text": "Is unrestricted for all retail social media posts"
+        "text": "Is permitted without further conditions as long as it is labeled hypothetical in a footnote"
       },
       {
         "id": "d",
-        "text": "Replaces the need for Form ADV fee disclosure"
+        "text": "Must be pre-approved by SEC staff before any public distribution"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Hypotheticals must be fair, not misleading, and appropriately targeted.",
     "distractorExplanations": {
-      "a": "Limitations and assumptions must be clear.",
-      "c": "Retail distribution faces strict conditions.",
-      "d": "ADV fee disclosure remains required."
+      "a": "Gross-and-net presentation applies to actual performance; hypotheticals also need audience-relevance policies.",
+      "c": "A label is not enough; hypotheticals require assumptions, risk disclosures, and audience-targeting policies.",
+      "d": "The SEC does not pre-approve advertisements; the adviser must meet the rule's conditions itself."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3703,11 +3703,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the firm's street address"
+        "text": "Holdings of each client account to every other client"
       },
       {
         "id": "b",
-        "text": "Conflicts only after a client discovers them independently"
+        "text": "Material conflicts only after a client raises a complaint"
       },
       {
         "id": "c",
@@ -3715,15 +3715,15 @@
       },
       {
         "id": "d",
-        "text": "Trading algorithms as proprietary secrets never described"
+        "text": "Its proprietary trading algorithms in full source-code detail to every client"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Form ADV and client agreements must reveal conflicts that could affect advice.",
     "distractorExplanations": {
-      "a": "Address alone is insufficient disclosure.",
-      "b": "Conflicts must be disclosed proactively.",
-      "d": "Material practices affecting clients must be described."
+      "a": "Client holdings are confidential; disclosure duties concern the adviser's conflicts, not other clients' data.",
+      "b": "Material conflicts must be disclosed proactively, not only after a client complains.",
+      "d": "Advisers must describe methods and material risks, not hand over proprietary source code."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3736,27 +3736,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hide the issue to protect firm marketing"
+        "text": "Repay the affected clients quietly from firm capital and close the matter without any report"
       },
       {
         "id": "b",
-        "text": "Wait until all clients redeem before acting"
+        "text": "Wait for the next annual compliance review to evaluate the issue"
       },
       {
         "id": "c",
-        "text": "Transfer the employee to sales without review"
+        "text": "Terminate the employee and treat the matter as a personnel issue"
       },
       {
         "id": "d",
-        "text": "Investigate, escalate per policy, and consider notifying custodians, regulators, or law enforcement"
+        "text": "Investigate, escalate per policy, and consider notifying regulators or law enforcement"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Firms must address theft promptly and meet reporting obligations.",
+    "explanation": "Firms must address theft promptly and meet reporting obligations. Custodians may also need to be notified.",
     "distractorExplanations": {
-      "a": "Concealing theft violates fiduciary and legal duties.",
-      "b": "Delay increases client harm.",
-      "c": "Personnel moves do not substitute for investigation."
+      "a": "Quiet repayment conceals misconduct and can breach reporting duties; the matter must be investigated and escalated.",
+      "b": "Suspected theft requires prompt action; waiting for the annual review increases client harm.",
+      "c": "Firing the employee does not address client losses, investigation, or possible reporting obligations."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3773,23 +3773,23 @@
       },
       {
         "id": "b",
-        "text": "Only the color scheme of client statements"
+        "text": "Only the advisory portion of the fee, excluding brokerage services"
       },
       {
         "id": "c",
-        "text": "Guaranteed outperformance versus all benchmarks"
+        "text": "Commissions charged on each trade executed within the wrap account"
       },
       {
         "id": "d",
-        "text": "The SEC's internal examination schedule"
+        "text": "Each portfolio manager's personal securities holdings and recent trading history"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Wrap programs combine advisory and brokerage costs; disclosure must explain coverage and incentives.",
     "distractorExplanations": {
-      "b": "Cosmetic details are not the regulatory focus.",
-      "c": "Performance cannot be guaranteed.",
-      "d": "Exam schedules are not brochure content."
+      "b": "The wrap brochure must describe the full bundled fee, including brokerage, and whether it may cost more.",
+      "c": "A wrap fee replaces per-trade commissions; the brochure explains what the bundled fee covers.",
+      "d": "Personal holdings of managers are code-of-ethics matters, not wrap fee brochure content."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3802,7 +3802,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Deleting unfavorable footnotes to improve click rates"
+        "text": "Disclosure of the adviser's ranking among its peers for every year rated"
       },
       {
         "id": "b",
@@ -3810,19 +3810,19 @@
       },
       {
         "id": "c",
-        "text": "Presenting a decade-old rating as current without context"
+        "text": "Approval from the rating agency's compliance team before each use"
       },
       {
         "id": "d",
-        "text": "Implying SEC endorsement of the rating"
+        "text": "A statement that the SEC has reviewed the rating methodology"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Ratings must be fair, current, and not misleading about sponsorship.",
     "distractorExplanations": {
-      "a": "Omitting material context is misleading.",
-      "c": "Stale ratings need dating and context.",
-      "d": "The SEC does not endorse third-party ratings."
+      "a": "The rule does not require a year-by-year peer ranking; it requires date, period, provider, and compensation.",
+      "c": "The marketing rule places conditions on the adviser; rating-agency approval of each use is not required.",
+      "d": "Implying SEC review or endorsement of a rating is misleading; the SEC does not review ratings."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3835,11 +3835,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic voting with management on every ballot item"
+        "text": "Voting with management on every ballot item to avoid conflicts"
       },
       {
         "id": "b",
-        "text": "Charging clients an undisclosed fee for each vote cast"
+        "text": "Voting every proxy, even when the cost exceeds the client benefit"
       },
       {
         "id": "c",
@@ -3847,15 +3847,15 @@
       },
       {
         "id": "d",
-        "text": "Delegating proxy duties to clients without informing them"
+        "text": "Passing every vote decision to the client's custodian bank"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Advisers must describe proxy procedures and act in clients' best interests.",
     "distractorExplanations": {
-      "a": "Blind management alignment may not serve clients.",
-      "b": "Undisclosed fees violate disclosure duties.",
-      "d": "Clients must know whether the adviser votes proxies."
+      "a": "Blanket management voting may not serve clients; votes must follow policies in clients' best interest.",
+      "b": "SEC guidance lets advisers refrain from voting when the cost exceeds the expected client benefit.",
+      "d": "Custodians forward ballots; an adviser with voting authority must vote under its own policies."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3868,15 +3868,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The adviser feels confident about next quarter"
+        "text": "The adviser discloses the basis for the guarantee in Form ADV Part 2"
       },
       {
         "id": "b",
-        "text": "A back-tested model showed positive returns"
+        "text": "A back-tested model supports the projected returns"
       },
       {
         "id": "c",
-        "text": "The custodian is a large national bank"
+        "text": "The client signs a written risk acknowledgment first"
       },
       {
         "id": "d",
@@ -3886,9 +3886,9 @@
     "correctOptionId": "d",
     "explanation": "Guaranteeing investment returns is misleading and prohibited.",
     "distractorExplanations": {
-      "a": "Confidence is not a guarantee.",
-      "b": "Back-tests are hypothetical, not promises.",
-      "c": "Custodian size does not guarantee performance."
+      "a": "Disclosure cannot legitimize a promise of investment results; guaranteeing performance is prohibited.",
+      "b": "Back-tested results are hypothetical and cannot support a guarantee of future performance.",
+      "c": "A signed risk acknowledgment does not permit the adviser to guarantee investment results."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3901,27 +3901,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Written authorization, proper invoicing, and a custodian that sends statements to clients"
+        "text": "Written authorization and a custodian that sends statements to clients"
       },
       {
         "id": "b",
-        "text": "Verbal approval once every ten years"
+        "text": "Verbal authorization and a custodian that sends statements to the adviser"
       },
       {
         "id": "c",
-        "text": "Debiting any amount the adviser chooses without notice"
+        "text": "Written authorization and annual statements sent by the adviser itself"
       },
       {
         "id": "d",
-        "text": "Using the adviser's personal checking account as custodian"
+        "text": "Client approval of each fee debit by phone before it is processed"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Fee deduction from custodied accounts needs client consent and custodian oversight.",
+    "explanation": "Fee deduction from custodied accounts needs client consent and custodian oversight. Proper invoicing is also expected.",
     "distractorExplanations": {
-      "b": "Authorization must be documented per rule.",
-      "c": "Amounts must match disclosed fee arrangements.",
-      "d": "Personal accounts cannot serve as qualified custodians."
+      "b": "Fee deduction needs written authorization, and custodian statements must go to clients, not the adviser.",
+      "c": "The qualified custodian, not the adviser, must send statements, and at least quarterly.",
+      "d": "A written authorization in the advisory agreement covers fee deduction; per-debit phone approval is not the rule."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3934,7 +3934,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Give all shares to the largest revenue account secretly"
+        "text": "Allocate to the largest accounts first because they pay the most fees"
       },
       {
         "id": "b",
@@ -3942,19 +3942,19 @@
       },
       {
         "id": "c",
-        "text": "Trade personal accounts ahead of client accounts"
+        "text": "Allocate to performance-fee accounts first to maximize client returns"
       },
       {
         "id": "d",
-        "text": "Promise IPO access in exchange for undisclosed side payments"
+        "text": "Allocate first to the adviser's proprietary accounts to test demand"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Fair allocation policies prevent favoritism and conflicts in scarce offerings.",
     "distractorExplanations": {
-      "a": "Secret favoritism violates fiduciary duty.",
-      "c": "Personal front-running is prohibited.",
-      "d": "Side payments create undisclosed conflicts."
+      "a": "Favoring fee-rich accounts is a conflict; allocations must follow a fair, disclosed policy.",
+      "c": "Favoring performance-fee accounts benefits the adviser and violates fair allocation duties.",
+      "d": "Placing proprietary accounts ahead of clients in scarce IPOs breaches the duty of loyalty."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

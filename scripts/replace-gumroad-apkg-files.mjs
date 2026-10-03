@@ -11,6 +11,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ensureGumroadAccessToken, loadLocalEnvFiles } from "./lib/gumroad-auth.mjs";
+import { BUNDLE_FILE_SLUGS } from "./lib/gumroad-bundles.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ANKI = join(root, "..", "Anki Generator");
@@ -105,6 +106,10 @@ async function main() {
       const record = catalog.products?.[slug];
       const spec = specs[slug];
       if (!record?.gumroadProductId || !record.apkgUploadedAt || !spec) continue;
+      if (BUNDLE_FILE_SLUGS.has(slug)) {
+        results.push({ slug, status: "skipped-bundle" });
+        continue;
+      }
       const apkg = cfg.outDirs
         .map((dir) => join(ANKI, dir, `${spec.filePrefix}_FULL_${spec.cardCount}.apkg`))
         .find((path) => existsSync(path));

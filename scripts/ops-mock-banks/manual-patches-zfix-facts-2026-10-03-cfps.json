@@ -1,0 +1,244 @@
+{
+ "cfps-readiness-check": {
+  "cfps-readiness-check-fire-prevention-programs-003": {
+   "prompt": "Under current NFPA 51B, the fire watch after hot work must remain on duty for at least",
+   "options": {
+    "a": "Until the arc stops, since sparks are no longer produced once welding ends",
+    "b": "30 minutes after work ends, provided an area sprinkler system is in service",
+    "c": "1 hour after work ends, with fire monitoring up to 3 more hours if the PAI decides",
+    "d": "24 hours after work ends, with the fire watch remaining on site overnight"
+   },
+   "correctOptionId": "c",
+   "explanation": "Since the 2019 edition, NFPA 51B requires the fire watch to stay at least 1 hour after hot work ends to catch smoldering fires, followed by fire monitoring for up to 3 more hours as the permit authorizing individual (PAI) decides. The 2024 edition lets the PAI cut the watch to 30 minutes only where no fire hazards are present.",
+   "distractorExplanations": {
+    "a": "Smoldering fires often develop after hot work stops, so the fire watch must continue well beyond the end of welding.",
+    "b": "30 minutes is the OSHA 1910.252 and pre-2019 NFPA 51B figure; current 51B starts at 1 hour, and a sprinkler system is not a basis for shortening it.",
+    "d": "A 24-hour watch is not the minimum; NFPA 51B sets a 1-hour watch plus up to 3 hours of fire monitoring set by the PAI."
+   }
+  },
+  "cfps-readiness-check-fire-suppression-001": {
+   "options": {
+    "a": "Low combustibility, moderate fuel quantity, and moderate heat release rates",
+    "b": "Low quantities of combustibles with low heat release, such as offices and churches",
+    "c": "Moderate-to-high combustibles with stockpiles up to 12 ft, such as paper mills",
+    "d": "Flammable liquids in significant amounts, such as solvent cleaning and dip tanks"
+   },
+   "correctOptionId": "a",
+   "explanation": "NFPA 13 defines Ordinary Hazard Group 1 as occupancies where combustibility is low, the quantity of combustibles is moderate, stockpiles do not exceed 8 ft, and fires with moderate rates of heat release are expected. Typical examples are parking garages, bakeries, canneries, and laundries; the classification sets sprinkler design density and area.",
+   "distractorExplanations": {
+    "b": "Low fuel quantity with low heat release describes Light Hazard occupancies such as offices, churches, and schools, not Ordinary Hazard Group 1.",
+    "c": "Moderate-to-high combustibles with stockpiles up to 12 ft, as in paper mills, define Ordinary Hazard Group 2, not Group 1 with its 8 ft stockpiles.",
+    "d": "Significant flammable liquid use such as solvent cleaning and dip tanks describes Extra Hazard Group 2, not Ordinary Hazard Group 1."
+   }
+  },
+  "cfps-readiness-check-facility-hazard-management-017": {
+   "prompt": "Indoor storage of Class I flammable liquids under NFPA 30 is controlled by:",
+   "explanation": "NFPA 30 governs flammable and combustible liquid storage (NFPA 400 excludes these liquids). It caps maximum allowable quantities per control area and sets storage room fire-resistance ratings, ventilation, and automatic sprinkler protection based on liquid class, container type, and storage arrangement."
+  },
+  "cfps-readiness-check-facility-hazard-management-021": {
+   "options": {
+    "a": "Fire area or hazard exceeds building code thresholds, such as IBC Group F-1 fire area limits",
+    "b": "The building has fewer than two exits serving each floor of the production and assembly area",
+    "c": "Employees are trained in portable fire extinguisher use under OSHA 1910.157",
+    "d": "The structure is Type I or Type II noncombustible construction of any size"
+   },
+   "correctOptionId": "a",
+   "explanation": "Sprinkler mandates for industrial buildings come from the building and fire codes, not NFPA 101's life safety chapter. For example, IBC 903.2.4 requires sprinklers in Group F-1 where a fire area exceeds 12,000 sq ft, the fire area is more than three stories above grade, or combined F-1 fire areas exceed 24,000 sq ft; hazard and occupancy drive the trigger.",
+   "distractorExplanations": {
+    "b": "Exit count is a means-of-egress requirement; deficient exits are corrected by egress design, not by triggering sprinklers.",
+    "c": "Extinguisher training is an OSHA workforce requirement and has no effect on whether automatic sprinklers are mandated.",
+    "d": "Noncombustible construction does not remove sprinkler triggers; contents, area and hazard still drive sprinkler mandates."
+   }
+  },
+  "cfps-readiness-check-fire-prevention-programs-010": {
+   "prompt": "NFPA 654, now consolidated into NFPA 660 (2025), applies primarily to:",
+   "options": {
+    "a": "Prevention of fires and dust explosions in grain elevators, flour mills, feed mills, and agricultural facilities",
+    "b": "Prevention of fire and dust explosions from combustible particulate solids not covered elsewhere",
+    "c": "Prevention of fire and dust explosions in wood processing and woodworking facilities",
+    "d": "Prevention of fires and explosions in the production and handling of combustible metals"
+   },
+   "correctOptionId": "b",
+   "explanation": "NFPA 654 covered the manufacturing, processing, and handling of combustible particulate solids not addressed by a commodity-specific standard; its old title named the chemical, dye, pharmaceutical, and plastics industries. Since 2025 its content is Chapter 25 of NFPA 660, alongside chapters carried over from NFPA 61, 484, 655, and 664.",
+   "distractorExplanations": {
+    "a": "Agricultural and food dusts were covered by NFPA 61, now Chapter 21 of NFPA 660, a commodity-specific scope separate from NFPA 654.",
+    "c": "Wood processing and woodworking dusts were covered by NFPA 664, now Chapter 24 of NFPA 660, not by the general NFPA 654 scope.",
+    "d": "Combustible metals such as aluminum and magnesium were covered by NFPA 484, now Chapter 22 of NFPA 660, not by NFPA 654."
+   }
+  },
+  "cfps-readiness-check-detection-alarm-019": {
+   "prompt": "When fire alarm and mass notification share speakers, NFPA 72 requires:",
+   "options": {
+    "a": "Background music to keep playing at reduced volume during fire messages",
+    "b": "All messages to play simultaneously at equal volume",
+    "c": "A risk-analysis-based priority order, which may let MNS override fire alarm",
+    "d": "MNS to suppress the strobes while a fire alarm voice message is playing"
+   },
+   "correctOptionId": "c",
+   "explanation": "NFPA 72 gives fire alarm signals precedence by default, but emergency mass notification messages may take priority over fire alarm notification when stakeholders justify it through a risk analysis and the emergency response plan. When MNS has priority, the fire alarm control unit must show a distinctive audible and visible indication.",
+   "distractorExplanations": {
+    "a": "Background music and non-emergency paging must be muted when fire alarm or emergency messages play, not kept at reduced volume.",
+    "b": "Simultaneous competing messages destroy intelligibility; NFPA 72 requires a defined priority order so one message plays at a time.",
+    "d": "Visible notification continues during a fire alarm; MNS integration may not disable the strobes that the fire alarm system requires."
+   }
+  },
+  "cfps-readiness-check-detection-alarm-043": {
+   "prompt": "Under NFPA 72, a spot-type heat detector with a 30 ft listed spacing on a smooth 17 ft ceiling should be spaced at about:",
+   "options": {
+    "a": "0.4 times the 30 ft listed spacing, or about 12 ft between detectors",
+    "b": "0.5 times the 30 ft listed spacing, or about 15 ft between detectors",
+    "c": "0.7 times the 30 ft listed spacing, or about 21 ft between detectors",
+    "d": "0.9 times the 30 ft listed spacing, or about 27 ft between detectors"
+   },
+   "correctOptionId": "c",
+   "explanation": "NFPA 72 Table 17.6.3.5.1 reduces the listed spacing of spot-type heat detectors on ceilings above 10 ft and up to 30 ft, because the hot ceiling jet cools and dilutes with height. A ceiling above 16 ft and up to 18 ft uses a 0.71 multiplier, so a 30 ft listed detector is spaced at about 21 ft.",
+   "distractorExplanations": {
+    "a": "A 0.40 multiplier applies to ceilings above 26 ft and up to 28 ft; a 17 ft ceiling needs a much smaller reduction.",
+    "b": "15 ft is half the listed spacing, the maximum distance to a wall; a factor near 0.5 fits a 22 to 24 ft ceiling, not 17 ft.",
+    "d": "A 0.91 multiplier applies to ceilings above 10 ft and up to 12 ft; a 17 ft ceiling falls in the 0.71 band."
+   }
+  },
+  "cfps-readiness-check-detection-alarm-027": {
+   "options": {
+    "a": "Any sprinkler waterflow anywhere in the building without further conditions",
+    "b": "A trouble signal appears on the fire alarm communicator",
+    "c": "Lobby, hoistway, or machine room smoke detectors (or alternate detection) or the Phase I key switch",
+    "d": "Waterflow on a floor sprinkler zone sends the car directly to the fire floor for firefighter access"
+   },
+   "correctOptionId": "c",
+   "explanation": "Under NFPA 72 and ASME A17.1, Phase I recall is initiated by smoke detectors in elevator lobbies, hoistways, and machine or control rooms, by other automatic detection only where ambient conditions rule out smoke detectors, or by the Phase I key switch. Heat detectors near hoistway or machine room sprinklers serve shunt trip, not recall.",
+   "distractorExplanations": {
+    "a": "General building waterflow does not initiate recall; NFPA 72 permits waterflow only from a dedicated, separately valved elevator-pit sprinkler line.",
+    "b": "Trouble signals indicate a system fault, not a fire, so they never initiate elevator Phase I recall.",
+    "d": "Phase I recall sends cars to the designated or alternate level, away from the fire floor, not toward it."
+   }
+  },
+  "cfps-readiness-check-confining-fires-034": {
+   "options": {
+    "a": "Acoustic performance only, since the hourly rating comes from the structural floor slab above it",
+    "b": "The assembly rating when tested as part of the system, shielding the floor structure above",
+    "c": "Surface flame spread control, with the hourly rating assigned separately to the joists",
+    "d": "Smoke barrier continuity, allowing the floor above to remain unrated in any building"
+   },
+   "correctOptionId": "b",
+   "explanation": "In a tested floor-ceiling assembly, the ceiling membrane shields the joists, deck, and floor structure above from a fire in the room below. The hourly rating belongs to the whole tested system (ceiling, framing, decking, and protection together), so removing or penetrating the membrane can void the rating.",
+   "distractorExplanations": {
+    "a": "In floor-ceiling assemblies the ceiling membrane is a tested part of the rating, not acoustic trim.",
+    "c": "Ratings are assigned to the whole tested floor-ceiling system, not to the joists apart from the ceiling.",
+    "d": "The ceiling membrane contributes to the fire-resistance rating; it does not make the floor above unrated."
+   }
+  },
+  "cfps-readiness-check-information-analysis-013": {
+   "options": {
+    "a": "Ignition time and lateral flame spread across a vertically mounted specimen",
+    "b": "Flame spread along a horizontal floor covering exposed to a radiant panel",
+    "c": "Flame spread and smoke development along a 24-ft tunnel specimen ceiling",
+    "d": "Heat release rate and mass loss of a small specimen under a conical heater"
+   },
+   "correctOptionId": "a",
+   "explanation": "LIFT (ASTM E1321) exposes a vertically mounted specimen to a radiant panel to measure time to piloted ignition and lateral (sideways) flame spread. The results yield ignition and flame spread properties used in fire modeling, unlike the upward-spread or tunnel tests.",
+   "distractorExplanations": {
+    "b": "Horizontal floor covering flame spread under a radiant panel is the ASTM E648 flooring test, not the LIFT apparatus.",
+    "c": "A 24-ft tunnel with a ceiling-mounted specimen is the ASTM E84 Steiner tunnel test, not LIFT (ASTM E1321).",
+    "d": "HRR and mass loss under a conical heater are cone calorimeter (ASTM E1354) measurements, not LIFT flame spread."
+   }
+  },
+  "cfps-readiness-check-fire-suppression-010": {
+   "prompt": "Under NFPA 14, the minimum design flow for the hydraulically most remote Class I standpipe in a building with several standpipes is",
+   "options": {
+    "a": "100 gpm for the most remote standpipe plus 100 gpm for each additional standpipe in the building, up to 500 gpm",
+    "b": "500 gpm for the most remote standpipe plus 250 gpm for each additional standpipe, up to the 1,000-1,250 gpm cap",
+    "c": "750 gpm for the most remote standpipe, with sprinkler demand excluded when the systems are combined",
+    "d": "1,000 gpm for the most remote standpipe plus 500 gpm for each additional standpipe up to 2,500 gpm"
+   },
+   "correctOptionId": "b",
+   "explanation": "NFPA 14 requires 500 gpm for the most remote Class I standpipe, flowing 250 gpm from each of the two most remote 2½-inch hose connections at 100 psi, plus 250 gpm for each additional standpipe. The total is capped at 1,000 gpm in fully sprinklered buildings and 1,250 gpm otherwise.",
+   "distractorExplanations": {
+    "a": "100 gpm is the Class II (1½-inch occupant hose) flow; Class I design starts at 500 gpm for the most remote standpipe.",
+    "c": "750 gpm is roughly the two-standpipe total (500 + 250 gpm), not the single most remote standpipe flow, and combined demand must be evaluated.",
+    "d": "1,000 gpm is the total cap for a fully sprinklered building; additional standpipes add 250 gpm each, not 500 gpm per riser."
+   }
+  },
+  "cfps-readiness-check-fire-suppression-011": {
+   "prompt": "In a fully sprinklered high-rise, a combined sprinkler/standpipe riser and its water supply are sized for",
+   "options": {
+    "a": "Sprinkler demand alone, since standpipe hose outlets are used only after the sprinkler system has been shut down",
+    "b": "Standpipe demand alone at 65 psi residual, because sprinkler flow is supplied through the FDC",
+    "c": "The greater of the standpipe demand or the sprinkler demand including hose allowance",
+    "d": "Full sprinkler design flow added to the full standpipe flow, as both run at once"
+   },
+   "correctOptionId": "c",
+   "explanation": "NFPA 14 lets the standpipe demand also serve the sprinklers in a building sprinklered throughout, so the two demands are not added; the supply must meet whichever is greater, the standpipe demand or the sprinkler demand with its hose allowance. Only partially sprinklered buildings add sprinkler flow (up to 150 or 500 gpm) to standpipe demand.",
+   "distractorExplanations": {
+    "a": "Firefighters use hose outlets while sprinklers are still flowing, so the combined riser cannot be sized for sprinkler demand alone.",
+    "b": "Class I outlets need 100 psi residual, not 65 psi, and the FDC is supplemental; the permanent supply must still serve the riser demand.",
+    "d": "NFPA 14 does not add full sprinkler demand to standpipe demand in a fully sprinklered building; the larger of the two governs."
+   }
+  },
+  "cfps-readiness-check-fire-suppression-045": {
+   "options": {
+    "a": "Detect supply impairment or partly closed valves by comparing static and residual pressures",
+    "b": "Confirm that the alarm check valve trips and the water motor gong sounds within 5 minutes",
+    "c": "Flush sediment from the system piping to satisfy the five-year internal obstruction assessment",
+    "d": "Determine the system's hydraulic design demand for the remote area during each annual test"
+   },
+   "correctOptionId": "a",
+   "explanation": "NFPA 25 main drain test: record static pressure, open the main drain fully, and record residual pressure. The drop is compared with earlier results; a larger drop than before points to a partly closed valve or deteriorating supply. The test does not measure flow or prove hydraulic adequacy.",
+   "distractorExplanations": {
+    "b": "Waterflow alarm operation is proven through the inspector's test connection; the main drain test checks supply pressure behavior.",
+    "c": "The five-year internal assessment opens a valve or flushing connection to inspect piping; the main drain test is a supply check.",
+    "d": "Design demand comes from hydraulic calculations; the main drain test compares static and residual readings to the baseline."
+   }
+  },
+  "cfps-readiness-check-fire-suppression-042": {
+   "options": {
+    "a": "That the check valves hold tight against reverse flow, measured with a differential pressure gauge",
+    "b": "That the assembly passes the required system demand flow without excessive pressure loss",
+    "c": "That the relief valve on the reduced-pressure zone opens at the required differential pressure",
+    "d": "That the static pressure at the riser matches the hydrant flow test value recorded at acceptance"
+   },
+   "correctOptionId": "b",
+   "explanation": "NFPA 25 requires an annual forward-flow test of backflow preventers at the system demand flow to prove the assembly does not choke the fire supply. It does not test backflow prevention itself; check valve tightness and RPZ relief operation are verified separately with a backflow test kit.",
+   "distractorExplanations": {
+    "a": "Check valve tightness with a differential gauge is the backflow assembly test, not the forward-flow test that proves fire flow.",
+    "c": "RPZ relief valve opening point is part of the backflow device test kit procedure, not the NFPA 25 forward-flow test.",
+    "d": "Static pressure comparison is a main drain or supply check; forward-flow testing proves the assembly passes system demand flow."
+   }
+  },
+  "cfps-readiness-check-organizing-fire-rescue-003": {
+   "prompt": "Former NFPA 1561, now consolidated into NFPA 1550 (2024), addresses which core organizational concept?",
+   "explanation": "NFPA 1561 defined the emergency services incident management system and command safety; since 2024 that content forms the incident management chapters of NFPA 1550, which also absorbed NFPA 1500 and NFPA 1521.",
+   "distractorExplanations": {
+    "a": "The occupational safety, health, and wellness program came from NFPA 1500 (also now in NFPA 1550), not from NFPA 1561's incident management content.",
+    "b": "Incident safety officer qualifications came from NFPA 1521 (also now in NFPA 1550), not from the incident management content of NFPA 1561.",
+    "d": "Organization and deployment of career fire suppression operations is NFPA 1710, not the incident management standard."
+   }
+  },
+  "cfps-readiness-check-fire-suppression-030": {
+   "prompt": "Where a total-flooding CO2 system protects a normally occupied enclosure, NFPA 12 requires:",
+   "options": {
+    "a": "Predischarge alarms only, with immediate discharge permitted once the alarm sounds",
+    "b": "Lockout valves, predischarge alarms, and a time delay long enough to evacuate",
+    "c": "A time delay of at least 5 minutes before discharge in every occupied enclosure",
+    "d": "Odorizer injection in place of alarms, since odor warns occupants before discharge"
+   },
+   "correctOptionId": "b",
+   "explanation": "CO2 at extinguishing concentration is lethal. NFPA 12 now bars new total-flooding CO2 in normally occupied enclosures except in narrow cases; where such systems exist or are permitted, they need system lockout valves, pneumatic predischarge alarms, and a pneumatic time delay long enough for occupants of the most remote point to escape.",
+   "distractorExplanations": {
+    "a": "An alarm alone gives no egress time; NFPA 12 requires a pneumatic time delay with predischarge alarms so occupants can leave first.",
+    "c": "NFPA 12 sizes the delay by the evacuation time from the most remote point, found by dry runs, not a fixed 5 minutes that lets fire grow.",
+    "d": "Odorizers are an added safeguard for detecting leaked CO2; they do not replace predischarge alarms and time delays."
+   }
+  },
+  "cfps-readiness-check-safety-built-environment-034": {
+   "prompt": "NFPA 101 permits increased travel distance in many sprinklered occupancies because"
+  },
+  "cfps-readiness-check-safety-built-environment-036": {
+   "explanation": "Exit access runs from any occupied point to an exit, including rooms, doors, corridors, and aisles. The public way is the destination of the means of egress, beyond the exit discharge, so it is not part of exit access (or of the means of egress itself)."
+  },
+  "cfps-readiness-check-safety-built-environment-013": {
+   "prompt": "Under the IBC, high-rise interior exit stairways serving floors more than 75 ft above the lowest fire department vehicle access require which feature?",
+   "explanation": "IBC 403.5.4 requires every required interior exit stairway serving floors more than 75 ft above the lowest level of fire department vehicle access in a high-rise to be a smokeproof enclosure per Section 909.20, using ventilated vestibules or stair pressurization to keep smoke out of the vertical exit."
+  }
+ }
+}
