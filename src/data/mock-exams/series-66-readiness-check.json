@@ -36,31 +36,31 @@
     "id": "series-66-readiness-check-products-002",
     "examSlug": "series-66-readiness-check",
     "topicId": "products",
-    "prompt": "A municipal bond's tax advantage for many investors is",
+    "prompt": "Rosa, 78, wants to move $200,000 from maturing CDs into something paying more income. She may need the money for assisted living within two years. Which recommendation fits her best?",
     "options": [
       {
         "id": "a",
-        "text": "Interest often exempt from federal income tax"
+        "text": "A short-term investment-grade bond fund"
       },
       {
         "id": "b",
-        "text": "Capital gains exempt from all federal taxes"
+        "text": "A deferred variable annuity with a 7-year surrender schedule"
       },
       {
         "id": "c",
-        "text": "Principal guaranteed by the issuing state"
+        "text": "A non-traded REIT offering a higher distribution rate"
       },
       {
         "id": "d",
-        "text": "Interest taxed at long-term capital gain rates"
+        "text": "A long-term high-yield bond fund for maximum income"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Muni interest is frequently federally tax-exempt (state rules vary)",
+    "explanation": "Her age and two-year liquidity need make capital preservation and access the priority. A short-term investment-grade bond fund pays income with daily liquidity and modest rate and credit risk, so she can sell when needed without surrender charges or deep losses.",
     "distractorExplanations": {
-      "b": "Gains on municipal bonds are taxable; only the interest is usually exempt.",
-      "c": "Munis carry credit risk; states do not guarantee local issuers' principal.",
-      "d": "Taxable municipal interest is taxed as ordinary income, and most muni interest is federally exempt."
+      "b": "Surrender charges through year 7 would penalize the withdrawal she expects within two years, and tax deferral adds little here.",
+      "c": "Non-traded REITs are illiquid, with limited redemption programs, a poor fit when the money may be needed within two years.",
+      "d": "Long duration and junk-grade credit add price risk she cannot ride out on a two-year horizon, despite the higher yield."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -663,33 +663,33 @@
     "id": "series-66-readiness-check-recommendations-006",
     "examSlug": "series-66-readiness-check",
     "topicId": "recommendations",
-    "prompt": "Asset allocation's primary purpose is to:",
+    "prompt": "Leo's father bought 200 shares at $30 in 2009 and died when the stock was at $55 (no alternate valuation date). Three months later Leo sold all 200 shares at $60. What is Leo's taxable gain?",
     "options": [
       {
         "id": "a",
-        "text": "Pick the individual securities with the best outlook"
+        "text": "$1,000 short-term gain"
       },
       {
         "id": "b",
-        "text": "Time moves between stocks and cash to avoid losses"
+        "text": "$1,000 long-term gain"
       },
       {
         "id": "c",
-        "text": "Balance risk and return across asset classes"
+        "text": "$6,000 long-term gain"
       },
       {
         "id": "d",
-        "text": "Maximize expected return regardless of volatility"
+        "text": "$12,000 long-term gain"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Allocation matches portfolio mix to objectives and constraints.",
+    "correctOptionId": "b",
+    "explanation": "Inherited securities take a stepped-up basis equal to fair market value at death, here $55. Gain = 200 × ($60 − $55) = $1,000. Inherited property is treated as held long term regardless of how briefly the heir owned it.",
     "distractorExplanations": {
-      "a": "Choosing individual securities is security selection, not allocation.",
-      "b": "Shifting based on forecasts is market timing.",
-      "d": "Allocation matches risk to goals and tolerance, not return alone."
+      "a": "The dollar amount is right, but inherited property gets automatic long-term treatment even when the heir sells within a year.",
+      "c": "Uses the father's $30 cost basis, as with a lifetime gift, instead of the $55 stepped-up basis at death.",
+      "d": "Treats the full $12,000 of sale proceeds as gain, ignoring Leo's $55-per-share stepped-up basis."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "series-66-readiness-check-ethics-001",
     "examSlug": "series-66-readiness-check",
     "topicId": "ethics",
-    "prompt": "An investment adviser has custody when it:",
+    "prompt": "State-registered Alder Advisers is reviewing its practices. Which arrangement gives Alder custody of client funds or securities under the NASAA model custody rule?",
     "options": [
       {
         "id": "a",
-        "text": "Files Form ADV Part 1 with the SEC"
+        "text": "Alder has discretion to buy and sell securities in client accounts"
       },
       {
         "id": "b",
-        "text": "Can withdraw client funds or holds securities"
+        "text": "Alder recommends that clients open accounts at a named custodian"
       },
       {
         "id": "c",
-        "text": "Sends clients quarterly performance reports"
+        "text": "Alder's principal serves as trustee of a client's family trust"
       },
       {
         "id": "d",
-        "text": "Recommends a custodian to its advisory clients"
+        "text": "Alder receives duplicate copies of client statements from the custodian"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Authority over client assets/fees or possession can constitute custody.",
+    "correctOptionId": "c",
+    "explanation": "Custody means holding client funds or securities or having any authority to obtain or move them. Serving as trustee gives Alder's principal legal power over the trust's assets, so the firm has custody and must follow the custody safeguards, including use of a qualified custodian.",
     "distractorExplanations": {
-      "a": "Filing Form ADV is registration, not custody.",
-      "c": "Reporting performance does not give access to client assets.",
-      "d": "Recommending a custodian does not give the adviser control of assets."
+      "a": "Discretion lets Alder choose trades, not withdraw assets; trading authority by itself is not custody.",
+      "b": "Recommending a custodian leaves the assets with that custodian; Alder gains no power to obtain client funds or securities.",
+      "d": "Receiving copies of statements supports oversight but gives Alder no access to withdraw or move client assets."
     },
-    "difficulty": "hard",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {

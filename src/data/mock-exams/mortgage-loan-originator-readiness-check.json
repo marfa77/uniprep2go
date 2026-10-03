@@ -69,33 +69,33 @@
     "id": "mortgage-loan-originator-readiness-check-origination-003",
     "examSlug": "mortgage-loan-originator-readiness-check",
     "topicId": "origination",
-    "prompt": "Loan-to-value (LTV) is calculated as:",
+    "prompt": "Borrower Kim earns $8,000 a month gross. Proposed PITI is $2,000; she pays $400 on a car loan, $250 on student loans, a $150 card minimum, and $300 for utilities. What are her front-end and back-end ratios?",
     "options": [
       {
         "id": "a",
-        "text": "Closing costs ÷ prepaid interest"
+        "text": "Front-end 25%, back-end 10%"
       },
       {
         "id": "b",
-        "text": "Income ÷ debts"
+        "text": "Front-end 25%, back-end 35%"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ lesser of purchase price or appraised value (typical purchase)"
+        "text": "Front-end 28.75%, back-end 38.75%"
       },
       {
         "id": "d",
-        "text": "Credit score ÷ 850"
+        "text": "Front-end 35%, back-end 25%"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "LTV measures loan size relative to property value.",
+    "correctOptionId": "b",
+    "explanation": "Front-end = housing payment ÷ gross income = $2,000 ÷ $8,000 = 25%. Back-end adds recurring debts: ($2,000 + $400 + $250 + $150) ÷ $8,000 = $2,800 ÷ $8,000 = 35%. Utilities are living expenses, not credit obligations, so they stay out of both ratios.",
     "distractorExplanations": {
-      "a": "Closing cost items.",
-      "b": "That is DTI-related.",
-      "d": "Nonsense."
+      "a": "Divides the non-housing debts alone ($800 ÷ $8,000 = 10%); the back-end ratio must include the $2,000 housing payment.",
+      "c": "Counts the $300 utilities as debt; utilities are living expenses and are excluded from both DTI ratios.",
+      "d": "Swaps the two ratios; front-end is housing alone and back-end is housing plus all recurring debts."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
   },
   {
@@ -531,33 +531,33 @@
     "id": "mortgage-loan-originator-readiness-check-products-002",
     "examSlug": "mortgage-loan-originator-readiness-check",
     "topicId": "products",
-    "prompt": "VA loans are generally available to:",
+    "prompt": "Sgt. Diego Rivera, on active duty for six years, wants to buy a condo in downtown Denver as his primary residence with no down payment. His credit score is 660. Which loan program fits?",
     "options": [
       {
         "id": "a",
-        "text": "Any first-time buyer worldwide"
+        "text": "An FHA loan with 3.5% down and mortgage insurance"
       },
       {
         "id": "b",
-        "text": "Eligible veterans, service members, and certain surviving spouses"
+        "text": "A USDA guaranteed loan, which also allows zero down"
       },
       {
         "id": "c",
-        "text": "Only borrowers with 50% down"
+        "text": "A conventional 97% LTV loan with private mortgage insurance"
       },
       {
         "id": "d",
-        "text": "Only cash investors"
+        "text": "A VA-guaranteed loan using his eligibility entitlement"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "VA guaranty programs serve eligible military-related borrowers.",
+    "correctOptionId": "d",
+    "explanation": "VA-guaranteed loans let eligible service members buy a primary residence with no down payment and no monthly mortgage insurance, though a funding fee usually applies. Active-duty members qualify after 90 continuous days of service, so VA meets Rivera's zero-down goal.",
     "distractorExplanations": {
-      "a": "Eligibility required.",
-      "c": "Often $0 down if entitlement allows.",
-      "d": "False."
+      "a": "FHA requires at least 3.5% down at a 580+ score, plus mortgage insurance premiums, so it misses his zero-down goal.",
+      "b": "USDA loans are limited to eligible rural areas and income limits; a downtown Denver condo would not be in an eligible area.",
+      "c": "A 97% LTV conventional loan still needs a 3% down payment, so it does not meet his no-down-payment goal."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
   },
   {
@@ -1224,33 +1224,33 @@
     "id": "mortgage-loan-originator-readiness-check-fed-law-008",
     "examSlug": "mortgage-loan-originator-readiness-check",
     "topicId": "fed-law",
-    "prompt": "GLBA privacy rules require financial institutions to:",
+    "prompt": "Two days after the borrowers receive the Closing Disclosure, one change arises before closing. Under TRID, which change requires a corrected CD and a new 3-business-day waiting period?",
     "options": [
       {
         "id": "a",
-        "text": "Publish Social Security numbers online"
+        "text": "The lender adds a prepayment penalty to the loan terms"
       },
       {
         "id": "b",
-        "text": "Ignore opt-out rights"
+        "text": "The seller agrees to a $1,500 credit toward closing costs"
       },
       {
         "id": "c",
-        "text": "Provide privacy notices and limit sharing of nonpublic personal information per the rule"
+        "text": "Closing moves two days later at the borrowers' request"
       },
       {
         "id": "d",
-        "text": "Share all NPI freely without notice"
+        "text": "The county recording fee increases by $40 before closing"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "GLBA Privacy Rule governs notice and NPI sharing.",
+    "correctOptionId": "a",
+    "explanation": "TRID restarts the 3-business-day review for just three CD changes: the APR becomes inaccurate beyond tolerance, the loan product changes, or a prepayment penalty is added. Adding a prepayment penalty therefore requires a corrected CD and a fresh wait before consummation.",
     "distractorExplanations": {
-      "a": "Illegal/unsafe.",
-      "b": "Opt-outs matter where applicable.",
-      "d": "Violates GLBA."
+      "b": "A seller credit changes cash to close but is not one of the three triggers; a corrected CD at or before closing is enough.",
+      "c": "A borrower-requested date change does not restart the waiting period unless it causes a trigger such as an inaccurate APR.",
+      "d": "Recording fees sit in the 10% tolerance bucket; a small increase needs a corrected CD but no new 3-day wait."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
   },
   {

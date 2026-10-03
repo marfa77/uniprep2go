@@ -55,6 +55,26 @@ function checkoutPermalink(slug) {
   return chunk.match(/checkoutUrl:\s*"[^"]*gumroad\.com\/l\/([^/?"]+)/)?.[1] ?? null;
 }
 
+/** `gumroad products view <permalink>` 404s, so match the permalink against the paginated product list. */
+async function productIdByPermalink(permalink) {
+  const { token } = ensureGumroadAccessToken({ persist: false });
+  let key = "";
+  for (let page = 0; page < 40; page += 1) {
+    const response = await fetch(
+      `https://api.gumroad.com/v2/products${key ? `?page_key=${encodeURIComponent(key)}` : ""}`,
+      { headers: { Authorization: `Bearer ${token}` } },
+    );
+    const payload = await response.json();
+    const hit = (payload.products || []).find(
+      (p) => p.custom_permalink === permalink || (p.short_url || "").endsWith(`/l/${permalink}`),
+    );
+    if (hit) return hit.id;
+    key = payload.next_page_key || "";
+    if (!key) return null;
+  }
+  return null;
+}
+
 function parseArgs(argv) {
   const args = { dryRun: false, slug: null, slugsFile: null };
   for (let i = 2; i < argv.length; i += 1) {
@@ -70,7 +90,7 @@ function displayName(title, slug) {
   return `${base.replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "_")}_Anki_Deck.apkg`;
 }
 
-function main() {
+async function main() {
   const args = parseArgs(process.argv);
   loadLocalEnvFiles();
   ensureGumroadAccessToken({ persist: true });
@@ -93,10 +113,10 @@ function main() {
         continue;
       }
       const cmd =
-        `gumroad products update ${record.gumroadProductId} --replace-files --file "${apkg}" ` +
+        `gumroad products update --replace-files --file "${apkg}" ` +
         `--file-name "${displayName(spec.gumroadName, slug)}" ` +
         `--file-description "Anki deck — import into Anki desktop, then sync to mobile via AnkiWeb."` +
-        `${args.dryRun ? " --dry-run" : ""} --non-interactive --yes`;
+        `${args.dryRun ? " --dry-run" : ""} --non-interactive --yes -- "${record.gumroadProductId}"`;
       try {
         execSync(cmd, { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
         results.push({ slug, status: args.dryRun ? "dry-run" : "replaced" });
@@ -156,10 +176,7 @@ function main() {
       continue;
     }
     try {
-      const view = JSON.parse(
-        execSync(`gumroad products view "${permalink}" --json --non-interactive`, { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }),
-      );
-      const productId = view.product?.id;
+      const productId = financeCatalog.products?.[slug]?.gumroadProductId ?? (await productIdByPermalink(permalink));
       if (!productId) throw new Error(`product ${permalink} not found`);
       const cmd =
         `gumroad products update --replace-files --file "${apkg}" ` +
@@ -179,4 +196,7 @@ function main() {
   console.log(`# replaced=${count("replaced")} dry-run=${count("dry-run")} failed=${count("failed")} no-apkg=${count("no-apkg")}`);
 }
 
-main();
+main().catch((error) => {
+  console.error(error.message);
+  process.exit(1);
+});

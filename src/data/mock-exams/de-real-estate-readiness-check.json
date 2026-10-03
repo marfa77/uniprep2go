@@ -102,31 +102,31 @@
     "id": "de-real-estate-readiness-check-agency-law-004",
     "examSlug": "de-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "A Delaware listing agent receives the buyer's $5,000 earnest-money check on a Friday. The seller asks the agent to 'just keep it in your desk drawer until the inspection clears next week.' Under the duty of accounting, what should the agent do?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Hold the check as asked, since the seller is the party who benefits from it"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "Deposit the check into the agent's own account and repay it at closing"
       },
       {
         "id": "c",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "Return the check to the buyer until the contingencies have been removed"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "Give the check promptly to the broker for deposit in the trust account"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "explanation": "The duty of accounting requires a licensee to safeguard and account for every dollar received in a transaction. Earnest money belongs to neither the agent nor the seller yet, so it must go promptly to the broker for deposit in the escrow (trust) account within the time state rules set. A seller's convenience request does not override that duty.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "c": "Transfer taxes are closing items, not earnest money."
+      "a": "The seller cannot waive trust-handling rules; an undeposited check sitting in a desk is unaccounted-for client money, exactly what the duty forbids.",
+      "b": "Putting client money in a personal account is commingling (and possibly conversion), the most common trust-account violation.",
+      "c": "Returning the deposit would undercut the contract; the buyer gave it as good-faith money to be held in escrow, not handed back on request."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -498,33 +498,33 @@
     "id": "de-real-estate-readiness-check-property-ownership-001",
     "examSlug": "de-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "A Delaware widower signs and notarizes a deed giving his house to his daughter, then locks it in his own safe, telling no one, planning to hand it over 'someday.' He dies before doing so. Does the daughter own the house under that deed?",
     "options": [
       {
         "id": "a",
-        "text": "A leasehold for one month"
+        "text": "No, because the deed was never delivered during the grantor's life"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "Yes, because a signed and notarized deed transfers title immediately"
       },
       {
         "id": "c",
-        "text": "A personal property license"
+        "text": "Yes, because the daughter can still accept the deed after his death"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "No, because a deed between family members must state a cash price"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "a",
+    "explanation": "A deed transfers title only when it is delivered and accepted while the grantor is alive. Delivery means the grantor intends the deed to take effect now and gives up control over it. Keeping it in his own safe shows he kept control, so there was no delivery and the house passes through his estate. Notarization only makes a deed recordable.",
     "distractorExplanations": {
-      "a": "Leaseholds are non-freehold.",
-      "b": "Easements are nonpossessory rights.",
-      "c": "Licenses are typically personal privileges."
+      "b": "Signing and acknowledgment make a deed eligible for recording, but title does not pass until the grantor delivers it with present intent.",
+      "c": "Acceptance cannot cure a missing delivery; a deed cannot be delivered after the grantor's death, so the gift fails and the house goes through the estate.",
+      "d": "Consideration is not required for a valid deed; a gift deed reciting love and affection is valid once it is delivered and accepted."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "de-real-estate-readiness-check-finance-closing-001",
     "examSlug": "de-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "A Delaware investor sells a rental building at a $180,000 gain and completes a 1031 exchange into a like-kind replacement property, but takes $40,000 in cash out of the exchange. There is no mortgage on either property. How much gain is taxable this year?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$0 of the gain"
       },
       {
         "id": "b",
-        "text": "Down payment ÷ interest rate"
+        "text": "$8,000 of the gain"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$40,000 of the gain"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$140,000 of the gain"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "explanation": "A 1031 exchange defers gain only on value reinvested in like-kind property. Cash the investor keeps is 'boot' and is taxed in the year of the exchange, up to the total gain. Here the $40,000 of boot is recognized now; the remaining $180,000 − $40,000 = $140,000 of gain is deferred into the replacement property's basis.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "b": "Nonsense formula.",
-      "d": "Unrelated."
+      "a": "A 1031 exchange is not a full shelter when cash comes out; boot received is taxable to the extent of the realized gain.",
+      "b": "That is roughly the tax at a 20% rate on the boot; the question asks how much gain is recognized, which is the full $40,000.",
+      "d": "That is the deferred portion ($180,000 − $40,000), which carries into the new property's basis instead of being taxed now."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {

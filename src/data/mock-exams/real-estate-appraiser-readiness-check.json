@@ -3,31 +3,31 @@
     "id": "real-estate-appraiser-readiness-check-uspaps-001",
     "examSlug": "real-estate-appraiser-readiness-check",
     "topicId": "uspaps",
-    "prompt": "USPAP requires appraisals to be",
+    "prompt": "Appraiser Ruth completes a refinance appraisal ordered by First Harbor Bank. The homeowner, who paid the $550 appraisal fee at application, calls and asks her to email him the report and value today. What should Ruth do?",
     "options": [
       {
         "id": "a",
-        "text": "Client advocacy pieces"
+        "text": "Refer him to the bank; release results only with its consent"
       },
       {
         "id": "b",
-        "text": "Credible and not misleading for the intended use"
+        "text": "Email him the report, since the homeowner paid the appraisal fee"
       },
       {
         "id": "c",
-        "text": "Guaranteed sale prices"
+        "text": "Send a copy, because ECOA requires borrowers to receive one"
       },
       {
         "id": "d",
-        "text": "Anonymous opinions without date"
+        "text": "Tell him the value by phone but hold back the written report"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Credible and not misleading for the intended use.",
+    "correctOptionId": "a",
+    "explanation": "Under the USPAP Ethics Rule, assignment results are confidential to the client, here the bank. Ruth may disclose them only to the client, parties the client authorizes, state regulators, due process of law, or a peer review committee. Paying the fee does not make the borrower a client.",
     "distractorExplanations": {
-      "a": "Not the best answer: Client advocacy pieces.",
-      "c": "Not the best answer: Guaranteed sale prices.",
-      "d": "Not the best answer: Anonymous opinions without date."
+      "b": "Who pays the fee does not decide who the client is; the bank engaged Ruth, so the homeowner needs the bank's authorization first.",
+      "c": "ECOA's copy rule binds the lender, not the appraiser; the bank delivers the copy, and Ruth's duty is to protect assignment results.",
+      "d": "The value conclusion is itself an assignment result, so stating it by phone breaches confidentiality just as sending the report would."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -960,31 +960,31 @@
     "id": "real-estate-appraiser-readiness-check-approaches-015",
     "examSlug": "real-estate-appraiser-readiness-check",
     "topicId": "approaches",
-    "prompt": "An appraisal is",
+    "prompt": "Appraiser Marcus values a 35-year-old single-family home in a subdivision with six recent, similar sales and very few rentals. He developed all three approaches. In reconciliation, which indication deserves the most weight?",
     "options": [
       {
         "id": "a",
-        "text": "A guaranteed sale price"
+        "text": "An average of the three, so their errors offset"
       },
       {
         "id": "b",
-        "text": "An automatic loan approval"
+        "text": "Cost approach, as replacement cost is easy to verify"
       },
       {
         "id": "c",
-        "text": "An opinion of value as of a date for a defined purpose"
+        "text": "Income approach, using a GRM from the few rentals"
       },
       {
         "id": "d",
-        "text": "An insurance binder"
+        "text": "Sales comparison, backed by six recent sales"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "An opinion of value as of a date for a defined purpose.",
+    "correctOptionId": "d",
+    "explanation": "Reconciliation weighs each approach by the quality and quantity of its data and its relevance to how buyers act. Six recent similar sales make sales comparison the strongest indication; the cost approach weakens as accrued depreciation grows on a 35-year-old home, and sparse rentals undercut the income approach.",
     "distractorExplanations": {
-      "a": "Not the best answer: A guaranteed sale price.",
-      "b": "Not the best answer: An automatic loan approval.",
-      "d": "Not the best answer: An insurance binder."
+      "a": "Reconciliation is not averaging; USPAP expects the appraiser to weigh each approach by data quality and explain the final choice.",
+      "b": "Building cost is verifiable, but estimating 35 years of accrued depreciation is subjective, which makes the cost indication weak here.",
+      "c": "A GRM drawn from very few rentals is thinly supported, and buyers of owner-occupied homes in this subdivision do not price them on rent."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
@@ -1290,31 +1290,31 @@
     "id": "real-estate-appraiser-readiness-check-math-010",
     "examSlug": "real-estate-appraiser-readiness-check",
     "topicId": "math",
-    "prompt": "A loan of $280,000 on a $350,000 value is LTV of:",
+    "prompt": "Nina's subject has a finished basement and backs onto a busy road. Comparable 2, on a quiet cul-de-sac with an unfinished basement, sold for $950,000. Market data support $40,000 for basement finish and $15,000 for location. What is Comparable 2's adjusted sale price?",
     "options": [
       {
         "id": "a",
-        "text": "70%"
+        "text": "$895,000"
       },
       {
         "id": "b",
-        "text": "80%"
+        "text": "$925,000"
       },
       {
         "id": "c",
-        "text": "125%"
+        "text": "$975,000"
       },
       {
         "id": "d",
-        "text": "8%"
+        "text": "$1,005,000"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "80%.",
+    "correctOptionId": "c",
+    "explanation": "Adjustments are made to the comparable to make it like the subject. Comparable 2's unfinished basement is inferior, so add $40,000; its quiet location is superior, so subtract $15,000: $950,000 + $40,000 − $15,000 = $975,000.",
     "distractorExplanations": {
-      "a": "Not the best answer: 70%.",
-      "c": "Not the best answer: 125%.",
-      "d": "Not the best answer: 8%."
+      "a": "Subtracts both adjustments as if every difference lowers value; the unfinished basement makes the comparable inferior, so $40,000 is added.",
+      "b": "Reverses the signs by adjusting toward the comparable (−$40,000 + $15,000); superior comparable features are subtracted, inferior ones added.",
+      "d": "Adds both adjustments; the comparable's quiet cul-de-sac is superior to the subject's busy-road site, so $15,000 is subtracted, not added."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"

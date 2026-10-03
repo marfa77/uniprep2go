@@ -597,33 +597,33 @@
     "id": "enrolled-agent-readiness-check-businesses-004",
     "examSlug": "enrolled-agent-readiness-check",
     "topicId": "businesses",
-    "prompt": "Section 179 expensing allows eligible taxpayers to:",
+    "prompt": "Maya, a sole proprietor with no wages or other business income, buys $80,000 of equipment and elects Section 179 for the full cost. Her business income before the deduction is $50,000. What is the result?",
     "options": [
       {
         "id": "a",
-        "text": "Expense the cost of qualifying property up to annual limits instead of depreciating over time"
+        "text": "$80,000 deduction, creating a $30,000 net operating loss"
       },
       {
         "id": "b",
-        "text": "Ignore capitalization forever for inventory"
+        "text": "$50,000 deduction, with the other $30,000 permanently lost"
       },
       {
         "id": "c",
-        "text": "Deduct personal living expenses"
+        "text": "$80,000 deduction, since the cost is below the dollar limit"
       },
       {
         "id": "d",
-        "text": "Exempt all meals at 100%"
+        "text": "$50,000 deduction; $30,000 carries forward to future years"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "§179 permits immediate expensing of qualifying asset costs within limits/taxable income limits.",
+    "correctOptionId": "d",
+    "explanation": "Section 179 is limited to taxable income from the taxpayer's active trades or businesses, including wages. Maya's limit is her $50,000 of business income, so she deducts $50,000; the disallowed $30,000 carries forward indefinitely, subject to the same limit in later years.",
     "distractorExplanations": {
-      "b": "UNICAP/inventory rules still apply.",
-      "c": "Nondeductible personal.",
-      "d": "Meals limited."
+      "a": "Section 179 cannot create or increase a loss because the business income limit caps it; bonus depreciation, by contrast, can create a loss.",
+      "b": "The excess is not lost; Section 179 amounts disallowed by the income limit carry forward to later tax years.",
+      "c": "Staying under the annual dollar limit is necessary but not enough; the separate business income limit still applies."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
   },
   {
@@ -1587,31 +1587,31 @@
     "id": "enrolled-agent-readiness-check-practices-004",
     "examSlug": "enrolled-agent-readiness-check",
     "topicId": "practices",
-    "prompt": "Contingent fees for preparing an original return are generally",
+    "prompt": "The IRS sends written notice of examination of Dana's 2024 return. Sixty days later her EA, Omar, files an amended return claiming a refund and wants to bill 20% of the refund. Under Circular 230, is that fee allowed?",
     "options": [
       {
         "id": "a",
-        "text": "Broadly permitted in all cases under Circular 230"
+        "text": "No, Circular 230 bars contingent fees on any return or claim"
       },
       {
         "id": "b",
-        "text": "Restricted; contingent fees are limited to specific circumstances (eg, certain IRS examinations/challenges)"
+        "text": "Yes, the claim is filed within 120 days of the exam notice"
       },
       {
         "id": "c",
-        "text": "Required by the IRS"
+        "text": "Yes, provided the fee appears in a signed engagement letter"
       },
       {
         "id": "d",
-        "text": "The same as a refund anticipation loan"
+        "text": "No, unless the fee is capped at 10% of the refund obtained"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Circular 230 limits contingent fees for return preparation.",
+    "explanation": "Section 10.27 generally bars contingent fees but allows them for services tied to an IRS examination, including an amended return or refund claim filed within 120 days after the taxpayer receives written notice of the examination. Omar filed on day 60, inside that window.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Restricted; contingent fees are limited to specific circumstances (eg, certain IRS examinations/challenges)”.",
-      "c": "Not the best answer here; the right answer is “Restricted; contingent fees are limited to specific circumstances (eg, certain IRS examinations/challenges)”.",
-      "d": "Not the best answer here; the right answer is “Restricted; contingent fees are limited to specific circumstances (eg, certain IRS examinations/challenges)”."
+      "a": "Overstates the rule; Section 10.27 has exceptions for exam-related work, interest and penalty claims, and judicial proceedings.",
+      "c": "A signed engagement letter does not create an exception; whether a contingent fee is allowed depends on the type of service.",
+      "d": "Circular 230 sets no percentage cap; a contingent fee is either within an exception or barred, whatever its size."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"
@@ -1983,33 +1983,33 @@
     "id": "enrolled-agent-readiness-check-individuals-016",
     "examSlug": "enrolled-agent-readiness-check",
     "topicId": "individuals",
-    "prompt": "W-2 wage income is generally reported by the employee on:",
+    "prompt": "Jordan, a single filer, sells stock in 2025 for a $4,000 long-term capital gain and a $12,500 short-term capital loss, with no other capital transactions. How is the net loss treated?",
     "options": [
       {
         "id": "a",
-        "text": "Form 1065 only, regardless of employment status"
+        "text": "$3,000 deduction; $9,500 short-term carryover"
       },
       {
         "id": "b",
-        "text": "Form 990-T as unrelated business income"
+        "text": "$3,000 deduction; $5,500 long-term carryover"
       },
       {
         "id": "c",
-        "text": "Schedule K-1 from the employer corporation automatically"
+        "text": "$3,000 deduction; $5,500 short-term carryover"
       },
       {
         "id": "d",
-        "text": "Form 1040 (Schedule 1 if needed) with amounts from Form W-2"
+        "text": "$8,500 deduction in 2025, with no carryover to 2026"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Employees report W-2 wages on the individual return; employers issue W-2s summarizing withholdings and compensation.",
+    "correctOptionId": "c",
+    "explanation": "Net the gain against the loss: $12,500 − $4,000 = $8,500 net short-term loss. Individuals deduct up to $3,000 of net capital loss against ordinary income each year, so $8,500 − $3,000 = $5,500 carries forward and keeps its short-term character.",
     "distractorExplanations": {
-      "a": "Form 1065 is for partnerships.",
-      "b": "Form 990-T is for exempt organizations.",
-      "c": "W-2 income is not automatically on a K-1 from the employer."
+      "a": "Skips netting the $4,000 long-term gain against the loss first; the carryover is $8,500 − $3,000, not $12,500 − $3,000.",
+      "b": "Gets the amount right but the character wrong: the leftover loss came from short-term sales and carries over as short-term.",
+      "d": "Ignores the $3,000 annual cap on deducting net capital losses against ordinary income for a single filer."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {

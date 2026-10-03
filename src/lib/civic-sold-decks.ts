@@ -1,5 +1,8 @@
+import deckSampleShots from "@/data/deck-sample-shots.json";
 import civicCatalog from "@/data/gumroad/civic-anki-decks.json";
 import type { CatalogAvailableDeck } from "./decks";
+
+const sampleShots = deckSampleShots as Record<string, { question: string; answer: string }[]>;
 
 type CivicProduct = {
   permalink: string;
@@ -55,11 +58,17 @@ function civicSoldDeck(slug: string, product: CivicProduct): CatalogAvailableDec
       { name: `${product.exam} — society & daily life`, examWeight: "25%", cards: String(product.cards) },
       { name: `${product.exam} — exam-style recall`, examWeight: "25%", cards: String(product.cards) },
     ],
-    sampleCards: product.samples.slice(0, 3).map((card) => ({
-      question: card.q,
-      answer: card.a,
-      imageUrl: coverImage,
-    })),
+    sampleCards: sampleShots[slug]?.length
+      ? sampleShots[slug].slice(0, 3).map((card, index) => ({
+          question: card.question,
+          answer: card.answer,
+          imageUrl: `/samples/${slug}-sample-${index + 1}.webp`,
+        }))
+      : product.samples.slice(0, 3).map((card) => ({
+          question: card.q,
+          answer: card.a,
+          imageUrl: coverImage,
+        })),
     faqs: [
       {
         question: "How many cards are in this deck?",

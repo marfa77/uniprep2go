@@ -56,10 +56,32 @@ def check(path: Path):
         if not (f.get("q") or "").strip().endswith("?"):
             problems.append(f"faqs[{i}].q must be a question")
         span(problems, f"faqs[{i}].a", f.get("a"), 60, 380)
+    tags = copy.get("tags") or []
+    if tags and not 3 <= len(tags) <= 8:
+        problems.append("tags: need 3-8")
+    for tag in tags:
+        if len(tag) >= 20:
+            problems.append(f"tag over Gumroad's 20-char limit: {tag!r}")
+    if "title" in copy:
+        span(problems, "title", copy.get("title"), 20, 100)
+    if "inside" in copy:
+        items = copy.get("inside") or []
+        if not 3 <= len(items) <= 7:
+            problems.append("inside: need 3-7 items")
+        for i, item in enumerate(items):
+            span(problems, f"inside[{i}]", item, 20, 260)
+    if "factsHeading" in copy:
+        span(problems, "factsHeading", copy.get("factsHeading"), 8, 60)
+    if "disclaimer" in copy:
+        span(problems, "disclaimer", copy.get("disclaimer"), 40, 300)
+    if "samplesNote" in copy:
+        span(problems, "samplesNote", copy.get("samplesNote"), 40, 260)
     blob = json.dumps(copy, ensure_ascii=False)
     for m in BANNED.finditer(blob):
         problems.append(f"banned claim: {m.group(0)!r}")
-    spec = SPECS.get(slug)
+    spec = SPECS.get(slug) or ({"cardCount": copy["cardCount"]} if copy.get("cardCount") else None)
+    if copy.get("noun") in ("bundle", "guide"):
+        spec = None
     if spec and spec.get("cardCount"):
         count = str(spec["cardCount"])
         if count not in copy.get("hook", ""):

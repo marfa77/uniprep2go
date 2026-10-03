@@ -102,33 +102,33 @@
     "id": "mn-real-estate-readiness-check-agency-law-004",
     "examSlug": "mn-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "A Minnesota buyer, Lena, transfers her purchase contract to her brother with the seller's consent, but no new agreement releases her from it. The brother then fails to close. Can the seller hold Lena liable?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "No, because the seller's consent to the transfer released her"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "No, because residential purchase contracts may not be assigned to others"
       },
       {
         "id": "c",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "No, because the brother replaced her as the party to the contract"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "Yes; an assignment does not release her the way a novation would"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "explanation": "In an assignment, the original party transfers her rights but remains secondarily liable if the assignee fails to perform. Only a novation, a new agreement in which the seller expressly releases Lena and accepts her brother in her place, would end her liability. Consenting to the assignment is not the same as releasing her.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "c": "Transfer taxes are closing items, not earnest money."
+      "a": "Consent allows the transfer but does not by itself release the assignor; a release requires a novation agreement.",
+      "b": "Purchase contracts are generally assignable unless the contract forbids it or the obligation is personal, such as seller financing based on the buyer's credit.",
+      "c": "That describes a novation; here no new agreement substituted the brother, so Lena remains liable as the assignor."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -498,31 +498,31 @@
     "id": "mn-real-estate-readiness-check-property-ownership-001",
     "examSlug": "mn-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "A Minnesota farm owner dies with no valid will; an unsigned note says his friend Ole should get the farm. A search finds no spouse, descendants, parents, siblings or other heirs the law recognizes. Who takes title?",
     "options": [
       {
         "id": "a",
-        "text": "A leasehold for one month"
+        "text": "The state, through escheat, because no lawful heir exists"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "Ole, because the note shows what the owner clearly intended"
       },
       {
         "id": "c",
-        "text": "A personal property license"
+        "text": "The county, through eminent domain, after paying its value"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "The township, through its police power over vacant land"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "a",
+    "explanation": "Escheat is the state's right to take property when an owner dies intestate (without a valid will) and no heirs can be found. An unsigned note is not a valid will, so intestacy rules apply; with no heirs at all, title passes to the state. Escheat is not a taking, so no compensation is paid to anyone.",
     "distractorExplanations": {
-      "a": "Leaseholds are non-freehold.",
-      "b": "Easements are nonpossessory rights.",
-      "c": "Licenses are typically personal privileges."
+      "b": "Wishes in an unsigned note are not a valid will; without proper execution the farm passes by intestacy, and here there is no heir.",
+      "c": "Eminent domain is a government taking from a living owner for public use with just compensation, not a transfer when no heir exists.",
+      "d": "Police power lets government regulate land through zoning and codes; it does not transfer ownership of an heirless estate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -993,33 +993,33 @@
     "id": "mn-real-estate-readiness-check-finance-closing-001",
     "examSlug": "mn-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "Two Minnesota buyers each put 5% down on a $300,000 home: Ana with a conventional loan and PMI, Ben with an FHA loan. Years later both loans reach 78% of the original value on schedule, with payments current. What happens to their mortgage insurance?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "Both policies end automatically once the 78% level is reached"
       },
       {
         "id": "b",
-        "text": "Down payment ÷ interest rate"
+        "text": "Both stay in place until each borrower sells or refinances the home loan"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "Ana's PMI ends; Ben's FHA premium continues for the life of the loan"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "Ben's FHA premium ends automatically; Ana must refinance to drop her PMI"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "explanation": "Under the Homeowners Protection Act, conventional PMI ends automatically when the loan is scheduled to reach 78% of the original value and payments are current. FHA works differently: with less than 10% down (case numbers since June 2013), the annual mortgage insurance premium lasts for the life of the loan, so Ben must refinance to remove it.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "b": "Nonsense formula.",
-      "d": "Unrelated."
+      "a": "Automatic termination at 78% is the Homeowners Protection Act rule for conventional PMI; it does not apply to FHA mortgage insurance.",
+      "b": "Conventional PMI does not run until sale or refinance; the Homeowners Protection Act ends it automatically at 78% of original value.",
+      "d": "This reverses the rules: conventional PMI drops off automatically, while FHA insurance with under 10% down remains for the loan's life."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {

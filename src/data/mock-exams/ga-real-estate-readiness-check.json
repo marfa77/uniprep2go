@@ -102,33 +102,33 @@
     "id": "ga-real-estate-readiness-check-agency-law-004",
     "examSlug": "ga-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Augusta owner Ted gives open listings to brokers Amy and Ben. Amy shows the house to buyer Kim and negotiates price and terms with Ted. Kim then calls Ben, who writes up an offer on those same terms, and Ted accepts. Who has earned the commission?",
     "options": [
       {
         "id": "a",
-        "text": "The broker's guaranteed commission"
+        "text": "Amy, as the procuring cause of the sale"
       },
       {
         "id": "b",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Ben, because he wrote the accepted offer"
       },
       {
         "id": "c",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "Amy and Ben, splitting one fee equally"
       },
       {
         "id": "d",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "Both, each owed a full fee by their listing"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "a",
+    "explanation": "Under open listings the owner owes a commission only to the broker who is the procuring cause: the one whose efforts started an unbroken chain of events that produced the sale. Amy found Kim and negotiated the terms; Ben merely wrote up a deal Amy had already put together, so Amy earned the fee.",
     "distractorExplanations": {
-      "a": "Commission is separate.",
-      "b": "It is not a personal gift to the agent.",
-      "d": "Transfer taxes are closing items, not earnest money."
+      "b": "Writing the final offer is not enough; the commission follows the unbroken chain of effort that Amy started.",
+      "c": "Open listings pay the procuring cause; they do not divide the fee among every broker who touched the deal.",
+      "d": "Each open listing pays only if that broker is the procuring cause, so Ted owes one commission, to Amy, not two."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "ga-real-estate-readiness-check-property-ownership-001",
     "examSlug": "ga-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "For many years Glenn has farmed a strip of his neighbor's rural Georgia land under a signed permission letter the neighbor gave him. He now claims title to the strip by adverse possession. What is the main weakness in his claim?",
     "options": [
       {
         "id": "a",
-        "text": "An easement"
+        "text": "He did not pay property taxes on the strip"
       },
       {
         "id": "b",
-        "text": "A personal property license"
+        "text": "His use was permissive, not hostile"
       },
       {
         "id": "c",
-        "text": "A leasehold for one month"
+        "text": "Farming is not open and notorious use of land"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "He holds no recorded deed to the strip itself"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "b",
+    "explanation": "Adverse possession requires possession that is actual, open and notorious, exclusive, continuous for the statutory period, and hostile, meaning without the owner's permission. The written permission letter makes Glenn a licensee, so no amount of farming time ripens into title until permission ends and truly hostile use begins.",
     "distractorExplanations": {
-      "a": "Easements are nonpossessory rights.",
-      "b": "Licenses are typically personal privileges.",
-      "c": "Leaseholds are non-freehold."
+      "a": "Tax payment is an added element in some states, but it cannot cure this claim; use under permission is not hostile.",
+      "c": "Visible farming is the kind of open, notorious use that puts an owner on notice; that element is satisfied here.",
+      "d": "Color of title can shorten the required period, but a deed is not an element of adverse possession; the defect is permission."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "ga-real-estate-readiness-check-finance-closing-001",
     "examSlug": "ga-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "A Marietta home sells for $425,000 with a 6% total commission split 50/50 between the listing and selling brokerages. The selling agent, Tasha, is on a 70/30 split with her broker. How much does Tasha earn on the sale?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$3,825.00"
       },
       {
         "id": "b",
-        "text": "Down payment ÷ interest rate"
+        "text": "$6,375.00"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$8,925.00"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$17,850.00"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "explanation": "Work the split from the top down. Total commission: $425,000 × 6% = $25,500. The selling brokerage receives half, $12,750. Tasha keeps 70% of her brokerage's share: $12,750 × 0.70 = $8,925. Her broker keeps the remaining 30%, $3,825.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "b": "Nonsense formula.",
-      "d": "Unrelated."
+      "a": "That is the broker's 30% of the selling side; Tasha's 70% share is the larger portion, $8,925.",
+      "b": "Splits the $12,750 selling side 50/50 again, applying the co-brokerage split twice instead of Tasha's 70%.",
+      "d": "Takes 70% of the entire $25,500 commission, skipping the 50/50 split with the listing brokerage."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {

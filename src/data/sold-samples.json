@@ -2617,30 +2617,30 @@
   ],
   "cfa-level-1-anki-deck": [
     {
-      "q": "How is portfolio duration calculated?",
-      "a": "Weighted average of individual bond durations, weights = market value proportions."
+      "q": "An option-free bond has annual modified duration 7.2 and annual convexity 64. If its yield rises by 100 bps, what is the estimated percentage price change?",
+      "a": "About −6.88%. The duration term gives −7.2 × 0.01 = −7.20%, and the convexity term adds ½ × 64 × 0.01² = +0.32%. For an option-free bond the convexity term is always positive, so the price falls less (and rises more) than duration alone predicts."
     },
     {
-      "q": "What is the variance of a two-asset portfolio?",
-      "a": "Depends on individual variances AND covariance (correlation) between assets."
+      "q": "A US GAAP firm on LIFO reports inventory of $800k and COGS of $3,000k; its LIFO reserve rose from $150k to $200k as prices rose. What are FIFO inventory and FIFO COGS?",
+      "a": "FIFO inventory = $1,000k (LIFO inventory + ending reserve) and FIFO COGS = $2,950k (LIFO COGS − increase in the reserve). With rising prices LIFO expenses the newest, costliest units, so FIFO shows higher inventory, lower COGS and higher profit."
     },
     {
-      "q": "What is a protective put?",
-      "a": "Long stock + long put. Limits downside while keeping upside. Acts as portfolio insurance."
+      "q": "A non-dividend stock trades at $52. A 1-year European call with a $50 strike costs $6.00 and the risk-free rate is 5%. What is the no-arbitrage price of the matching European put?",
+      "a": "About $1.62. Put-call parity: fiduciary call (call + PV of strike) = protective put (put + stock), so P = C + X/(1 + r)^T − S. If the put trades above $1.62, sell it and buy the synthetic put: long call, short stock, lend PV of the strike."
     }
   ],
   "cfa-level-2-anki-deck": [
     {
-      "q": "How is the OLS slope coefficient calculated?",
-      "a": "Ratio of covariance between X and Y to variance of X."
+      "q": "CFO is $120M after a $5M working-capital build and $8M interest paid. FCInv is $25M, new debt $15M, debt repaid $5M, tax rate 25%. What is FCFE?",
+      "a": "FCFE = $105M: CFO − FCInv + net borrowing = 120 − 25 + 10. CFO already reflects the working-capital investment and interest paid (a cost borne before equity), so neither is adjusted again. The after-tax interest add-back belongs only in FCFF, here 120 + 6 − 25 = $101M."
     },
     {
-      "q": "Hedge fund share classes may differ by:",
-      "a": "Fees, liquidity, and investor eligibility"
+      "q": "A callable bond is worth 100.00 on a binomial tree at a constant OAS. Shifting the benchmark curve down and up 25 bps gives 101.40 and 98.20. What is its effective duration?",
+      "a": "6.40. A callable bond's cash flows change when rates move (the issuer calls when rates fall), so yield-based modified duration is invalid. Effective duration reprices the bond off parallel curve shifts holding OAS constant. The gain (+1.40) is smaller than the loss (−1.80): negative convexity."
     },
     {
-      "q": "A key due diligence theme in private equity is",
-      "a": "Understanding value drivers, risks, and exit assumptions"
+      "q": "A sub's functional currency is the parent's USD, so the temporal method applies. It holds LC 1,000 of inventory bought at $0.80/LC; today's rate is $0.70. What is inventory in USD?",
+      "a": "$800. Under the temporal method, non-monetary items carried at historical cost (inventory, PP&E) are remeasured at historical rates; only monetary items (cash, receivables, debt) use the current rate. The remeasurement gain or loss goes to net income, not OCI, so earnings get more volatile."
     }
   ],
   "frm-part-1-anki-deck": [
@@ -2701,44 +2701,44 @@
   ],
   "california-real-estate-exam-anki-deck": [
     {
-      "q": "In California, when a broker represents both buyer and seller in the same transaction (dual agency), what is generally required?",
-      "a": "Informed written consent and required agency disclosures"
+      "q": "A listing agent meets a Fresno homeowner to sign a listing; weeks later a buyer's agent writes an offer. When must each agent deliver the agency relationship disclosure form?",
+      "a": "The listing agent gives it to the seller before the listing agreement is signed. The buyer's agent gives it to the buyer as soon as practicable before the buyer signs the offer, and to the seller before the offer is presented. The agency relationships are then confirmed in the purchase contract or a separate writing."
     },
     {
-      "q": "In California contracts, when must a licensee typically disclose a dual agency or designated agency relationship?",
-      "a": "Before or as soon as practicable when the dual/designated relationship arises, per applicable rules"
+      "q": "A Sacramento seller hands the buyer the Transfer Disclosure Statement two days after the buyer's offer was accepted. The house is sold 'as-is.' What right does the buyer have?",
+      "a": "Because the TDS arrived after the offer was signed, the buyer may terminate by written notice within 3 days of in-person delivery (5 days if it is mailed). Sellers of 1-4 residential units must deliver the TDS as soon as practicable before title transfers, and an 'as-is' sale does not waive it."
     },
     {
-      "q": "A California real estate broker employs several salespersons. What does the broker’s supervision duty generally include?",
-      "a": "Reasonable supervision of the licensed activities of employed salespersons"
+      "q": "Lena buys a Los Angeles condo for $800,000 in 2025. Ignoring voter-approved bonds and assessments, what is her basic property tax, and the most her assessed value can be the next year?",
+      "a": "Her basic tax is $8,000: Proposition 13 caps the general levy at 1% of assessed value, and a change in ownership resets the base-year value to the $800,000 purchase price. After that, assessed value can rise at most 2% a year (less if inflation is lower), so next year's cap is $816,000 even if the market jumps."
     }
   ],
   "life-and-health-insurance-exam-anki-deck": [
     {
-      "q": "How does traditional whole life insurance primarily differ from level term life insurance?",
-      "a": "Whole life combines a permanent death benefit with cash-value accumulation; term is temporary pure protection"
+      "q": "Dana bought a $250,000 life policy without disclosing that she smoked. She dies in a car crash 26 months after issue. Can the insurer deny the claim because of the misstatement?",
+      "a": "No, in most states. Once the policy has been in force for the contestable period, typically 2 years during the insured's lifetime, the incontestability clause bars the insurer from voiding it for misstatements on the application. The full $250,000 is payable, and the cause of death does not matter."
     },
     {
-      "q": "A conditional receipt on a life insurance application typically means:",
-      "a": "Coverage may begin on the receipt date if the applicant is later found insurable as applied"
+      "q": "Raj's nonqualified deferred annuity holds $60,000 of after-tax premiums and is worth $90,000. At age 52 he withdraws $40,000. How much is taxable, and is there a penalty?",
+      "a": "$30,000 is taxable as ordinary income and $10,000 is a tax-free return of basis. Withdrawals from a nonqualified deferred annuity are taxed LIFO: earnings come out first. Because Raj is under 59½, the taxable $30,000 also faces the 10% federal penalty, which is $3,000."
     },
     {
-      "q": "In life insurance basics, how does life insurance fund buy-sell agreement?",
-      "a": "Policy proceeds provide cash to buy deceased owner’s business interest"
+      "q": "Mia, 8, is covered under both her married parents' employer health plans. Mom was born March 10, 1990; Dad was born July 2, 1985. Which plan pays first on Mia's $2,000 claim?",
+      "a": "Mom's plan is primary under the birthday rule: for a dependent child of parents who are married or living together, the plan of the parent whose birthday comes earlier in the calendar year pays first. Dad's plan pays second, up to its own benefit, so combined payments never exceed the $2,000 allowable expense."
     }
   ],
   "property-casualty-insurance-exam-anki-deck": [
     {
-      "q": "Under a Building and Personal Property Coverage Form (BPP), which property categories are typically addressed at the described premises?",
-      "a": "Building, business personal property, and personal property of others, subject to limits and conditions"
+      "q": "A building worth $500,000 is insured for $300,000 with an 80% coinsurance clause and a $1,000 deductible. A fire causes a $100,000 partial loss. How much does the insurer pay?",
+      "a": "$74,000. Required insurance is 80% × $500,000 = $400,000. The owner carried only $300,000, so the insurer pays $300,000 ÷ $400,000 = 75% of the loss: 75% × $100,000 = $75,000, minus the $1,000 deductible. The owner absorbs the other $26,000 as the coinsurance penalty."
     },
     {
-      "q": "In homeowners/dwelling coverage, why schedule personal property?",
-      "a": "To broaden/increase coverage for valuable items like jewelry, fine arts, cameras, or musical instruments."
+      "q": "Under an HO-3, a homeowner knocks over a can of paint while redecorating. It ruins the wall-to-wall carpet and a leather sofa. Which damage is covered?",
+      "a": "Only the carpet. Wall-to-wall carpet is part of the dwelling (Coverage A), which HO-3 insures on an open-perils basis: any direct physical loss is covered unless excluded, and an accidental spill is not excluded. The sofa is personal property (Coverage C), covered only for named broad-form perils, and a paint spill is not one of them."
     },
     {
-      "q": "Which factors most commonly affect eligibility for a Businessowners Policy (BOP)?",
-      "a": "Business type, size, revenues, square footage, operations, and risk characteristics"
+      "q": "Sam carries 25/50/25 auto liability. He causes a crash: driver A has $40,000 of injuries, driver B $15,000, and A's car needs $30,000 of repairs. What does Sam's insurer pay?",
+      "a": "$65,000. Bodily injury: A is capped at the $25,000 per-person limit and B's $15,000 is paid in full, a $40,000 total within the $50,000 per-accident limit. Property damage: $25,000 of the $30,000. Sam is personally exposed for the remaining $20,000 ($15,000 + $5,000)."
     }
   ],
   "servsafe-manager-anki-deck": [

@@ -6,9 +6,9 @@ describe("applySoldSamplesToDeck", () => {
   it("keeps screenshot-faithful finance questions", () => {
     const cfa = getDeckBySlug("cfa-level-1-anki-deck");
     expect(cfa?.sampleCards.map((card) => card.question)).toEqual([
-      "How is portfolio duration calculated?",
-      "What is the variance of a two-asset portfolio?",
-      "What is a protective put?",
+      "An option-free bond has annual modified duration 7.2 and annual convexity 64. If its yield rises by 100 bps, what is the estimated percentage price change?",
+      "A US GAAP firm on LIFO reports inventory of $800k and COGS of $3,000k; its LIFO reserve rose from $150k to $200k as prices rose. What are FIFO inventory and FIFO COGS?",
+      "A non-dividend stock trades at $52. A 1-year European call with a $50 strike costs $6.00 and the risk-free rate is 5%. What is the no-arbitrage price of the matching European put?",
     ]);
   });
 
@@ -19,7 +19,10 @@ describe("applySoldSamplesToDeck", () => {
       imageUrl: "/samples/sie-exam-anki-deck-sample-1.webp",
     });
     const nebosh = getDeckBySlug("nebosh-anki-deck");
-    expect(nebosh?.sampleCards.some((card) => /bleach/i.test(card.question))).toBe(true);
+    expect(nebosh?.sampleCards[0]).toMatchObject({
+      question: expect.stringMatching(/^A warehouse operative reports lower back pain/),
+      imageUrl: "/samples/nebosh-anki-deck-sample-1.webp",
+    });
   });
 
   it("uses sold samples only over cover images", () => {

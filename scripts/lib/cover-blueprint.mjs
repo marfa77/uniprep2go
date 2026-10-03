@@ -190,7 +190,7 @@ function buildBadgeSvg(badge, x, y) {
     <text x="${x + width / 2}" y="${y + 17}" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="0.14em" fill="${COLORS.white}">${label.toUpperCase()}</text>`;
 }
 
-function buildLeftPanel({ width, height, panelLeft, title, subtitle, badge }) {
+function buildLeftPanel({ width, height, panelLeft, title, subtitle, badge, stat }) {
   const displayTitle = simplifyCoverTitle(title);
   const displaySubtitle = simplifyCoverSubtitle(subtitle);
   const titleLines = wrapLines(displayTitle, width >= HERO_WIDTH ? 18 : 15);
@@ -220,7 +220,12 @@ function buildLeftPanel({ width, height, panelLeft, title, subtitle, badge }) {
     <g transform="translate(44, 34) scale(0.98)">${LOGO_SVG}</g>
     ${badge ? buildBadgeSvg(badge, 52, 72) : ""}
     <text x="52" y="${titleStartY}" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="${titleSize}" font-weight="700" fill="${COLORS.ink}">${titleTspans}</text>
-    <text x="52" y="${subtitleStartY}" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="${COLORS.muted}">${subtitleTspans}</text>`;
+    <text x="52" y="${subtitleStartY}" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="${COLORS.muted}">${subtitleTspans}</text>
+    ${
+      stat
+        ? `<text x="52" y="${subtitleStartY + subtitleLines.length * 26 + 30}" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="${COLORS.navy}">${escapeXml(stat)}</text>`
+        : ""
+    }`;
 }
 
 export function buildCoverSvg({
@@ -231,6 +236,7 @@ export function buildCoverSvg({
   badge = "Anki Deck",
   panelKind = "study",
   monogram,
+  stat,
   panelLeft = Math.round(width * PANEL_SPLIT),
 }) {
   const code = inferMonogram(title, monogram);
@@ -238,7 +244,7 @@ export function buildCoverSvg({
   return Buffer.from(
     `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
       <rect width="100%" height="100%" fill="${COLORS.paper}"/>
-      ${buildLeftPanel({ width, height, panelLeft, title, subtitle, badge })}
+      ${buildLeftPanel({ width, height, panelLeft, title, subtitle, badge, stat })}
       ${buildRightPanel({ panelLeft, width, height, panelKind, monogram: code, badge })}
     </svg>`,
   );

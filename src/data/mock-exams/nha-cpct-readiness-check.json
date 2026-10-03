@@ -36,33 +36,33 @@
     "id": "nha-cpct-readiness-check-patient-care-002",
     "examSlug": "nha-cpct-readiness-check",
     "topicId": "patient-care",
-    "prompt": "Active range of motion (ROM) means:",
+    "prompt": "During an 8-hour shift, Mrs. Chen takes 240 mL coffee, 180 mL juice, 240 mL broth, 120 mL gelatin, a serving of mashed potatoes, and a 400 mL cup of ice chips. She voids 650 mL. What total intake should PCT Dana record?",
     "options": [
       {
         "id": "a",
-        "text": "The PCT moves the joint fully for a passive patient always as the definition of active"
+        "text": "780 mL total"
       },
       {
         "id": "b",
-        "text": "The patient moves the joint independently"
+        "text": "860 mL total"
       },
       {
         "id": "c",
-        "text": "No movement occurs"
+        "text": "980 mL total"
       },
       {
         "id": "d",
-        "text": "Only therapist-performed continuous passive motion machine"
+        "text": "1,180 mL total"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Active = patient powered; passive = staff moves limb; active-assist is shared.",
+    "correctOptionId": "c",
+    "explanation": "Intake counts every fluid and every food that is liquid at room temperature, and ice chips are recorded at half their volume. 240 + 180 + 240 + 120 (gelatin) + 200 (400 ÷ 2 for ice chips) = 980 mL. Mashed potatoes are solid food, and the 650 mL void goes in the output column.",
     "distractorExplanations": {
-      "a": "That describes passive ROM.",
-      "c": "ROM implies movement.",
-      "d": "CPM is a device modality."
+      "a": "Leaves out the ice chips entirely; ice chips are fluid intake, recorded at half their volume (400 mL of chips = 200 mL).",
+      "b": "Leaves out the gelatin; gelatin, ice cream, and popsicles turn liquid at room temperature and count as fluid intake.",
+      "d": "Records the ice chips at their full 400 mL; melted chips yield roughly half that volume, so only 200 mL is recorded."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
   },
   {
@@ -1389,31 +1389,31 @@
     "id": "nha-cpct-readiness-check-safety-infection-013",
     "examSlug": "nha-cpct-readiness-check",
     "topicId": "safety-infection",
-    "prompt": "When a chemical spill occurs, the PCT should:",
+    "prompt": "PCT Jordan is leaving the room of a patient on contact and droplet precautions, wearing gloves, a gown, a surgical mask, and a face shield. Which removal sequence follows CDC guidance?",
     "options": [
       {
         "id": "a",
-        "text": "Protect self/others, follow SDS/spill protocol, and report—do not clean unknown chemicals casually"
+        "text": "Gloves, face shield, gown, mask, then hand hygiene"
       },
       {
         "id": "b",
-        "text": "Wipe with bare hands immediately"
+        "text": "Mask, face shield, gown, gloves, then hand hygiene"
       },
       {
         "id": "c",
-        "text": "Pour the chemical into the sink without identification"
+        "text": "Face shield, gloves, mask, gown, then hand hygiene"
       },
       {
         "id": "d",
-        "text": "Ignore small spills of unknown agents"
+        "text": "Gloves, mask, gown, face shield, then hand hygiene if soiled"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "SDS-guided response prevents injury; unknown chemicals need proper handling.",
+    "explanation": "CDC's doffing sequence removes the most contaminated items first: gloves, then the face shield by its band, then the gown rolled inside-out, then the mask by its ties, with hand hygiene right after. Touching face items with soiled gloves, or removing the mask early, risks contaminating the face.",
     "distractorExplanations": {
-      "b": "Bare-hand contact risks burns/toxicity.",
-      "c": "Improper disposal is hazardous.",
-      "d": "Even small unknown spills matter."
+      "b": "Removing the mask and face shield first means still-contaminated gloves touch the face; gloves are the dirtiest item and come off first.",
+      "c": "Handling the face shield with soiled gloves contaminates the face area, and the gown comes off before the mask, which is removed last.",
+      "d": "The mask comes off last, after the gown and face shield, and hand hygiene is required after every PPE removal, not just when hands look soiled."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -3072,33 +3072,33 @@
     "id": "nha-cpct-readiness-check-professional-practice-004",
     "examSlug": "nha-cpct-readiness-check",
     "topicId": "professional-practice",
-    "prompt": "Chain of command means:",
+    "prompt": "During 0800 vitals, PCT Marco gets 188/112 mm Hg on Mr. Patel, who reports a new headache. Mr. Patel's assigned RN is off the unit and has not answered two pages. What should Marco do?",
     "options": [
       {
         "id": "a",
-        "text": "Call the media first"
+        "text": "Recheck it in 30 minutes and report it then if still high"
       },
       {
         "id": "b",
-        "text": "Only talk to the CEO for every linen request"
+        "text": "Page the physician directly and ask for a PRN medication"
       },
       {
         "id": "c",
-        "text": "Ignore problems"
+        "text": "Chart the reading and report it at the end-of-shift handoff"
       },
       {
         "id": "d",
-        "text": "Report issues to the immediate supervisor/nurse per facility structure"
+        "text": "Report it to the charge nurse now, noting the headache"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Escalate clinical/safety concerns through proper channels promptly.",
+    "explanation": "A PCT reports abnormal findings up the chain of command: the assigned nurse first and, if that nurse cannot be reached, the charge nurse right away. A BP of 188/112 with a new headache can signal a hypertensive emergency, so waiting is unsafe, and going straight to the physician bypasses the nurse.",
     "distractorExplanations": {
-      "a": "Media first violates policy/privacy.",
-      "b": "Right level of chain for the issue.",
-      "c": "Ignoring harms patients."
+      "a": "Delays reporting a possibly dangerous reading with a new symptom; abnormal vitals with symptoms are reported right away, not after a wait.",
+      "b": "Skips the nursing chain of command and requests a medication, which is outside PCT scope; the nurse assesses and contacts the provider.",
+      "c": "Charting alone is not reporting; a critical reading with a new headache cannot wait hours for the shift handoff."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
   },
   {

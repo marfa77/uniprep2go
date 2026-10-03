@@ -11,6 +11,7 @@ describe("site config", () => {
       "/terms",
       "/cookies",
       "/contact",
+      "/press",
     ]);
   });
 

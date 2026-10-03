@@ -102,33 +102,33 @@
     "id": "va-real-estate-readiness-check-agency-law-004",
     "examSlug": "va-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Under a 6-month exclusive agency listing with broker Dana Price, Richmond seller Marcus Hill finds his own buyer, a coworker, with no help from any licensee and closes in month four. What commission does Dana's brokerage earn?",
     "options": [
       {
         "id": "a",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "The full commission, since the listing was in effect at closing"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "Half the commission, as the owner and broker split credit for the sale"
       },
       {
         "id": "c",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "No commission, because the owner procured the buyer himself"
       },
       {
         "id": "d",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "The listing-side share, since no cooperating broker took part"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "c",
+    "explanation": "An exclusive agency listing makes the broker the sole agent entitled to a fee if any licensee sells the home, but the owner keeps the right to sell it himself without owing a commission. Marcus found the buyer with no licensee involved, so no fee is due. Only an exclusive-right-to-sell listing pays the broker no matter who finds the buyer.",
     "distractorExplanations": {
-      "b": "Commission is separate.",
-      "c": "Transfer taxes are closing items, not earnest money.",
-      "d": "It is not a personal gift to the agent."
+      "a": "Confuses exclusive agency with an exclusive-right-to-sell listing, the type that pays the broker even when the owner finds the buyer.",
+      "b": "There is no automatic split rule. An owner-procured sale under exclusive agency earns the broker nothing, not a shared fee.",
+      "d": "The listing-side share is still a commission. Under exclusive agency, a sale the owner procures himself owes the broker no fee."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "va-real-estate-readiness-check-property-ownership-001",
     "examSlug": "va-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "Grace deeds her lake cabin 'to my brother Paul for life, then to my niece Rosa.' Paul dies in 2026 and his will leaves everything he owns to his son. Grace and Rosa are both alive. Who owns the cabin now?",
     "options": [
       {
         "id": "a",
-        "text": "An easement"
+        "text": "Paul's son, because Paul's will passes the cabin to him"
       },
       {
         "id": "b",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "Grace, because the cabin reverts to her as the grantor"
       },
       {
         "id": "c",
-        "text": "A personal property license"
+        "text": "Grace and Rosa together, as tenants in common in equal shares"
       },
       {
         "id": "d",
-        "text": "A leasehold for one month"
+        "text": "Rosa, because she holds the remainder interest"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "d",
+    "explanation": "A life estate ends when the measuring life ends, so Paul had nothing to leave by will. Because Grace named a third party to take afterward, Rosa holds a remainder and becomes the fee simple owner at Paul's death. A reversion back to the grantor arises only when the deed names no one to take after the life tenant.",
     "distractorExplanations": {
-      "a": "Easements are nonpossessory rights.",
-      "c": "Licenses are typically personal privileges.",
-      "d": "Leaseholds are non-freehold."
+      "a": "A life estate measured by Paul's own life ends at his death; it cannot pass under his will or to his heirs.",
+      "b": "Reversion applies when the grantor names no one to take after the life tenant. Grace named Rosa, so Rosa holds a remainder.",
+      "c": "Nothing in the deed splits ownership. Grace kept no future interest once she named Rosa to take after Paul."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "va-real-estate-readiness-check-finance-closing-001",
     "examSlug": "va-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "Seller Ava Brooks closes at $380,000. Her loan payoff is $214,650, the brokerage fee is 5.5% of the price, and her other closing costs are $3,850. The buyer's $10,000 earnest money is applied to the price. What are Ava's net proceeds?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$140,600"
       },
       {
         "id": "b",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$150,600"
       },
       {
         "id": "c",
-        "text": "Down payment ÷ interest rate"
+        "text": "$152,405.75"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$161,500"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "LTV ratios loan size to property value.",
+    "correctOptionId": "a",
+    "explanation": "Net proceeds = price minus everything the seller pays. Fee: $380,000 × 5.5% = $20,900. Deductions: $214,650 + $20,900 + $3,850 = $239,400. Net: $380,000 − $239,400 = $140,600. The earnest money is part of the $380,000 the buyer pays, so it is neither added nor subtracted again.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "c": "Nonsense formula.",
-      "d": "Unrelated."
+      "b": "Adds the $10,000 earnest money on top of the price. The deposit is already part of the $380,000, so counting it again overstates the net.",
+      "c": "Charges the 5.5% fee on Ava's equity ($165,350) instead of the $380,000 sale price; brokerage fees are a percentage of the price.",
+      "d": "Forgets the $20,900 brokerage fee (5.5% of $380,000), the largest seller expense after the loan payoff."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {

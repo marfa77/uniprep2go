@@ -102,33 +102,33 @@
     "id": "ma-real-estate-readiness-check-agency-law-004",
     "examSlug": "ma-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Broker Tess receives a buyer's $15,000 earnest money check late Friday. To avoid a weekend trip, she deposits it into her brokerage's operating account, planning to move it to the escrow account Monday. What has Tess done?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Commingled client funds with her business funds"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "Converted the funds, since they sat in her own account"
       },
       {
         "id": "c",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "Nothing improper, because the money stays within her firm"
       },
       {
         "id": "d",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "Acted properly, as long as both parties later approve it"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "a",
+    "explanation": "Commingling is mixing client or customer money with the broker's own funds, and it happens the moment the earnest money lands in the operating account, even for a weekend. Deposits must go into a separate escrow or trust account. Spending the money on business expenses would be a further offense, conversion.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "d": "Transfer taxes are closing items, not earnest money."
+      "b": "Conversion means using trust money for the broker's own purposes. Tess has not spent it; mixing it with business funds is commingling.",
+      "c": "Keeping it inside the firm is the problem: the operating account holds the brokerage's own money, not client deposits.",
+      "d": "Later approval by the parties does not cure putting trust money in the operating account; the violation already occurred."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "ma-real-estate-readiness-check-property-ownership-001",
     "examSlug": "ma-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "Married couple Dan and Lia own the Worcester home they both live in as tenants by the entirety. A judgment creditor of Dan alone, from a failed business loan, tries to force a sale of the home. What is the likely result?",
     "options": [
       {
         "id": "a",
-        "text": "A personal property license"
+        "text": "The creditor may force a sale and take Dan's half of the proceeds"
       },
       {
         "id": "b",
-        "text": "A leasehold for one month"
+        "text": "The creditor may sever the tenancy and become Lia's co-owner"
       },
       {
         "id": "c",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "Lia must buy out Dan's share to stop the creditor's sale"
       },
       {
         "id": "d",
-        "text": "An easement"
+        "text": "The creditor cannot force a sale for one spouse's debt"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "d",
+    "explanation": "Tenancy by the entirety treats a married couple as a single owner, so neither spouse alone holds a separate share a creditor can seize. A creditor of only one spouse cannot force a sale or partition of the home while the marriage and the tenancy continue. A debt owed jointly by both spouses is a different case and could reach the property.",
     "distractorExplanations": {
-      "a": "Licenses are typically personal privileges.",
-      "b": "Leaseholds are non-freehold.",
-      "d": "Easements are nonpossessory rights."
+      "a": "Splitting into halves describes tenancy in common or joint tenancy. Entirety owners have no separate half for Dan's creditor to sell.",
+      "b": "Severance by a creditor or a transfer applies to joint tenancy. A tenancy by the entirety cannot be severed by one spouse's creditor.",
+      "c": "Lia owes nothing on Dan's separate debt; the entirety protects the home, so there is no share she must buy back."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "ma-real-estate-readiness-check-finance-closing-001",
     "examSlug": "ma-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "Buyer Owen closes on May 20 on a $360,000 loan at 6% interest. The lender collects prepaid interest from closing through May 31, counting the closing day, on a 360-day year. How much prepaid interest does Owen pay at closing?",
     "options": [
       {
         "id": "a",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$660 for 11 days"
       },
       {
         "id": "b",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$720 for 12 days"
       },
       {
         "id": "c",
-        "text": "Down payment ÷ interest rate"
+        "text": "$780 for 13 days"
       },
       {
         "id": "d",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$1,800 for 30 days"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "LTV ratios loan size to property value.",
+    "correctOptionId": "b",
+    "explanation": "Daily interest = $360,000 × 6% ÷ 360 = $60. May 20 through May 31 inclusive is 12 days, so 12 × $60 = $720. Mortgage interest is paid in arrears: the first regular payment on July 1 covers June, so prepaid interest only fills the gap from closing to month-end.",
     "distractorExplanations": {
-      "b": "Unrelated.",
-      "c": "Nonsense formula.",
-      "d": "That relates to debt-to-income concepts."
+      "a": "Uses 11 days by leaving out the closing day; this lender counts May 20 itself, which gives 12 days.",
+      "c": "Runs interest into June 1. The first regular payment covers June's interest in arrears, so prepaid interest stops at May 31.",
+      "d": "Charges a full 30-day month ($60 × 30). Prepaid interest covers just the days from closing to month-end, not a whole month."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {

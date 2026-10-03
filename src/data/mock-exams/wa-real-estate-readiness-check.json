@@ -102,33 +102,33 @@
     "id": "wa-real-estate-readiness-check-agency-law-004",
     "examSlug": "wa-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Buyer Leo offers $512,000 for Nina's Spokane house. Nina counters at $520,000. Leo rejects the counter, and a day later Nina writes back that she now accepts his original $512,000 offer. Is there a binding contract?",
     "options": [
       {
         "id": "a",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "Yes, because Nina accepted Leo's offer before he withdrew it"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "No; her counter ended Leo's offer, so her reply is a new offer"
       },
       {
         "id": "c",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Yes, because an offer stays open until its stated deadline passes"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "No, because acceptance must come from Nina's listing broker"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "b",
+    "explanation": "A counteroffer rejects and terminates the original offer; under the mirror-image rule, acceptance must match the offer exactly. Once Nina countered, Leo's $512,000 offer no longer existed for her to accept. Her later message is a new offer at $512,000, and no contract forms unless Leo accepts it.",
     "distractorExplanations": {
-      "a": "Transfer taxes are closing items, not earnest money.",
-      "b": "Commission is separate.",
-      "c": "It is not a personal gift to the agent."
+      "a": "Leo never needed to withdraw. Nina's own counteroffer had already terminated his offer, so nothing was left to accept.",
+      "c": "A stated deadline keeps an offer open only until it is rejected; a counteroffer is a rejection that ends it early.",
+      "d": "The seller, not her broker, is the party who accepts. The problem is that Leo's offer had already ended, not who signed."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "wa-real-estate-readiness-check-property-ownership-001",
     "examSlug": "wa-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "For 14 years, longer than the state's prescriptive period, Omar has openly driven across a corner of neighbor Beth's lot to reach his garage, never asking permission. His lot also fronts a public street. Beth now plans a fence. Omar's best claim is:",
     "options": [
       {
         "id": "a",
-        "text": "A personal property license"
+        "text": "Title to the corner strip by adverse possession"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "An easement by necessity across Beth's lot"
       },
       {
         "id": "c",
-        "text": "A leasehold for one month"
+        "text": "A revocable license that ended when Beth objected"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "An easement by prescription to keep crossing"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "explanation": "Open, notorious, continuous, and hostile (unpermitted) use for the full statutory period creates an easement by prescription. Omar used the strip as a driveway, not as land he possessed exclusively, so he gains a right to use it rather than title. Beth cannot shut that right off with a fence.",
     "distractorExplanations": {
-      "a": "Licenses are typically personal privileges.",
-      "b": "Easements are nonpossessory rights.",
-      "c": "Leaseholds are non-freehold."
+      "a": "Adverse possession transfers title and requires exclusive possession; Omar only crossed the strip and never possessed it as an owner would.",
+      "b": "An easement by necessity requires a landlocked parcel. Omar's lot fronts a public street, so he has other access.",
+      "c": "A license exists only when the owner gives permission. Omar never asked, which is exactly what made his use hostile."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "wa-real-estate-readiness-check-finance-appraisal-001",
     "examSlug": "wa-real-estate-readiness-check",
     "topicId": "finance-appraisal",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "Appraiser Kim is valuing a Bellevue subject home with a three-car garage and no pool. Comparable 2 sold for $968,000 and has a pool (market value $22,000) but no garage (market value $45,000). What is Comparable 2's adjusted sale price?",
     "options": [
       {
         "id": "a",
-        "text": "Down payment ÷ interest rate"
+        "text": "$901,000"
       },
       {
         "id": "b",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$945,000"
       },
       {
         "id": "c",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$991,000"
       },
       {
         "id": "d",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$1,035,000"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "LTV ratios loan size to property value.",
+    "correctOptionId": "c",
+    "explanation": "Adjust the comparable to look like the subject, not the subject to look like the comp. Comp 2 has a pool the subject lacks, so subtract $22,000; it lacks the garage the subject has, so add $45,000. $968,000 − $22,000 + $45,000 = $991,000.",
     "distractorExplanations": {
-      "a": "Nonsense formula.",
-      "c": "Unrelated.",
-      "d": "That relates to debt-to-income concepts."
+      "a": "Subtracts both features. The missing garage makes the comp inferior to the subject, so $45,000 must be added, not deducted.",
+      "b": "Reverses both signs, as if the subject were adjusted toward the comp: +$22,000 for the pool and −$45,000 for the garage.",
+      "d": "Adds both features. The comp's extra pool makes it superior to the subject, so $22,000 must come off its price."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {

@@ -399,21 +399,21 @@ const rawDecks: Deck[] = [
     topicCoverage: cfaLevelOneTopics,
     sampleCards: [
       {
-        question: "How is portfolio duration calculated?",
+        question: "An option-free bond has annual modified duration 7.2 and annual convexity 64. If its yield rises by 100 bps, what is the estimated percentage price change?",
         answer:
-          "Weighted average of individual bond durations, weights = market value proportions.",
+          "About −6.88%. The duration term gives −7.2 × 0.01 = −7.20%, and the convexity term adds ½ × 64 × 0.01² = +0.32%. For an option-free bond the convexity term is always positive, so the price falls less (and rises more) than duration alone predicts.",
         imageUrl: "/samples/cfa-level-1-anki-deck-sample-1.webp",
       },
       {
-        question: "What is the variance of a two-asset portfolio?",
+        question: "A US GAAP firm on LIFO reports inventory of $800k and COGS of $3,000k; its LIFO reserve rose from $150k to $200k as prices rose. What are FIFO inventory and FIFO COGS?",
         answer:
-          "Depends on individual variances AND covariance (correlation) between assets.",
+          "FIFO inventory = $1,000k (LIFO inventory + ending reserve) and FIFO COGS = $2,950k (LIFO COGS − increase in the reserve). With rising prices LIFO expenses the newest, costliest units, so FIFO shows higher inventory, lower COGS and higher profit.",
         imageUrl: "/samples/cfa-level-1-anki-deck-sample-2.webp",
       },
       {
-        question: "What is a protective put?",
+        question: "A non-dividend stock trades at $52. A 1-year European call with a $50 strike costs $6.00 and the risk-free rate is 5%. What is the no-arbitrage price of the matching European put?",
         answer:
-          "Long stock + long put. Limits downside while keeping upside. Acts as portfolio insurance.",
+          "About $1.62. Put-call parity: fiduciary call (call + PV of strike) = protective put (put + stock), so P = C + X/(1 + r)^T − S. If the put trades above $1.62, sell it and buy the synthetic put: long call, short stock, lend PV of the strike.",
         imageUrl: "/samples/cfa-level-1-anki-deck-sample-3.webp",
       },
     ],
@@ -990,21 +990,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What is real property?",
+        question: "A listing agent meets a Fresno homeowner to sign a listing; weeks later a buyer's agent writes an offer. When must each agent deliver the agency relationship disclosure form?",
         answer:
-          "Real property is land plus things permanently attached to it and the rights associated with ownership. Land, buildings, fixtures, and appurtenant rights are real property.",
+          "The listing agent gives it to the seller before the listing agreement is signed. The buyer's agent gives it to the buyer as soon as practicable before the buyer signs the offer, and to the seller before the offer is presented. The agency relationships are then confirmed in the purchase contract or a separate writing.",
         imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-1.webp",
       },
       {
-        question: "What is personal property?",
+        question: "A Sacramento seller hands the buyer the Transfer Disclosure Statement two days after the buyer's offer was accepted. The house is sold 'as-is.' What right does the buyer have?",
         answer:
-          "Personal property is movable property not classified as real property. Furniture, appliances not attached, and trade tools can be personal property.",
+          "Because the TDS arrived after the offer was signed, the buyer may terminate by written notice within 3 days of in-person delivery (5 days if it is mailed). Sellers of 1-4 residential units must deliver the TDS as soon as practicable before title transfers, and an 'as-is' sale does not waive it.",
         imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-2.webp",
       },
       {
-        question: "What is a fixture?",
+        question: "Lena buys a Los Angeles condo for $800,000 in 2025. Ignoring voter-approved bonds and assessments, what is her basic property tax, and the most her assessed value can be the next year?",
         answer:
-          "A fixture is personal property that has become real property because it is attached or adapted with intent to be permanent. Built-in cabinets are usually fixtures.",
+          "Her basic tax is $8,000: Proposition 13 caps the general levy at 1% of assessed value, and a change in ownership resets the base-year value to the $800,000 purchase price. After that, assessed value can rise at most 2% a year (less if inflation is lower), so next year's cap is $816,000 even if the market jumps.",
         imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-3.webp",
       },
     ],
@@ -1083,21 +1083,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What is risk in insurance?",
+        question: "Dana bought a $250,000 life policy without disclosing that she smoked. She dies in a car crash 26 months after issue. Can the insurer deny the claim because of the misstatement?",
         answer:
-          "Risk is uncertainty or chance of loss. Insurance transfers certain financial consequences of risk from insured to insurer. Risk of premature death can be transferred through life insurance.",
+          "No, in most states. Once the policy has been in force for the contestable period, typically 2 years during the insured's lifetime, the incontestability clause bars the insurer from voiding it for misstatements on the application. The full $250,000 is payable, and the cause of death does not matter.",
         imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-1.webp",
       },
       {
-        question: "What is pure risk?",
+        question: "Raj's nonqualified deferred annuity holds $60,000 of after-tax premiums and is worth $90,000. At age 52 he withdraws $40,000. How much is taxable, and is there a penalty?",
         answer:
-          "Pure risk involves only the chance of loss or no loss, not gain, and is generally insurable. Risk of sickness, disability, or death.",
+          "$30,000 is taxable as ordinary income and $10,000 is a tax-free return of basis. Withdrawals from a nonqualified deferred annuity are taxed LIFO: earnings come out first. Because Raj is under 59½, the taxable $30,000 also faces the 10% federal penalty, which is $3,000.",
         imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-2.webp",
       },
       {
-        question: "What is speculative risk?",
+        question: "Mia, 8, is covered under both her married parents' employer health plans. Mom was born March 10, 1990; Dad was born July 2, 1985. Which plan pays first on Mia's $2,000 claim?",
         answer:
-          "Speculative risk involves chance of gain, loss, or no change and is generally not insurable. Starting a business or buying stock involves speculative risk.",
+          "Mom's plan is primary under the birthday rule: for a dependent child of parents who are married or living together, the plan of the parent whose birthday comes earlier in the calendar year pays first. Dad's plan pays second, up to its own benefit, so combined payments never exceed the $2,000 allowable expense.",
         imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-3.webp",
       },
     ],
@@ -1171,21 +1171,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What is risk in property and casualty insurance?",
+        question: "A building worth $500,000 is insured for $300,000 with an 80% coinsurance clause and a $1,000 deductible. A fire causes a $100,000 partial loss. How much does the insurer pay?",
         answer:
-          "Risk is uncertainty about financial loss; P&C insurance transfers covered property or liability loss risk to insurer. Risk of house fire or lawsuit from auto accident.",
+          "$74,000. Required insurance is 80% × $500,000 = $400,000. The owner carried only $300,000, so the insurer pays $300,000 ÷ $400,000 = 75% of the loss: 75% × $100,000 = $75,000, minus the $1,000 deductible. The owner absorbs the other $26,000 as the coinsurance penalty.",
         imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-1.webp",
       },
       {
-        question: "What is pure risk?",
+        question: "Under an HO-3, a homeowner knocks over a can of paint while redecorating. It ruins the wall-to-wall carpet and a leather sofa. Which damage is covered?",
         answer:
-          "Pure risk has possibility of loss or no loss, not gain, and is generally insurable. Risk of theft, fire, or liability claim.",
+          "Only the carpet. Wall-to-wall carpet is part of the dwelling (Coverage A), which HO-3 insures on an open-perils basis: any direct physical loss is covered unless excluded, and an accidental spill is not excluded. The sofa is personal property (Coverage C), covered only for named broad-form perils, and a paint spill is not one of them.",
         imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-2.webp",
       },
       {
-        question: "What is speculative risk?",
+        question: "Sam carries 25/50/25 auto liability. He causes a crash: driver A has $40,000 of injuries, driver B $15,000, and A's car needs $30,000 of repairs. What does Sam's insurer pay?",
         answer:
-          "Speculative risk has chance of gain, loss, or no change and is generally not insurable. Investing in rental property value appreciation.",
+          "$65,000. Bodily injury: A is capped at the $25,000 per-person limit and B's $15,000 is paid in full, a $40,000 total within the $50,000 per-accident limit. Property damage: $25,000 of the $30,000. Sam is personally exposed for the remaining $20,000 ($15,000 + $5,000).",
         imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-3.webp",
       },
     ],
@@ -1242,21 +1242,21 @@ const rawDecks: Deck[] = [
     topicCoverage: cfaLevelTwoTopics,
     sampleCards: [
       {
-        question: "What is free cash flow to the firm (FCFF)?",
+        question: "CFO is $120M after a $5M working-capital build and $8M interest paid. FCInv is $25M, new debt $15M, debt repaid $5M, tax rate 25%. What is FCFE?",
         answer:
-          "Cash available to all capital providers after operating expenses, taxes, reinvestment, and working capital needs. FCFF = NI + NCC + Int(1 − t) − FCInv − WCInv. Common mistake: forgetting to tax-adjust interest when starting from NI.",
+          "FCFE = $105M: CFO − FCInv + net borrowing = 120 − 25 + 10. CFO already reflects the working-capital investment and interest paid (a cost borne before equity), so neither is adjusted again. The after-tax interest add-back belongs only in FCFF, here 120 + 6 − 25 = $101M.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-1.webp",
       },
       {
-        question: "What is free cash flow to equity (FCFE)?",
+        question: "A callable bond is worth 100.00 on a binomial tree at a constant OAS. Shifting the benchmark curve down and up 25 bps gives 101.40 and 98.20. What is its effective duration?",
         answer:
-          "Cash available to equity holders after all expenses, reinvestment, debt flows, and preferred dividends. FCFE = NI + NCC − FCInv − WCInv + Net Borrowing. Common mistake: using FCFF discounted at cost of equity.",
+          "6.40. A callable bond's cash flows change when rates move (the issuer calls when rates fall), so yield-based modified duration is invalid. Effective duration reprices the bond off parallel curve shifts holding OAS constant. The gain (+1.40) is smaller than the loss (−1.80): negative convexity.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-2.webp",
       },
       {
-        question: "How do you compute FCFF from CFO?",
+        question: "A sub's functional currency is the parent's USD, so the temporal method applies. It holds LC 1,000 of inventory bought at $0.80/LC; today's rate is $0.70. What is inventory in USD?",
         answer:
-          "Start with CFO, add back after-tax interest, subtract net investment in fixed and working capital. FCFF = CFO + Int(1 − t) − FCInv − WCInv. Common mistake: subtracting interest from CFO without tax adjustment.",
+          "$800. Under the temporal method, non-monetary items carried at historical cost (inventory, PP&E) are remeasured at historical rates; only monetary items (cash, receivables, debt) use the current rate. The remeasurement gain or loss goes to net income, not OCI, so earnings get more volatile.",
         imageUrl: "/samples/cfa-level-2-anki-deck-sample-3.webp",
       },
     ],
@@ -1401,12 +1401,12 @@ const rawDecks: Deck[] = [
     slug: "ciple-a2-european-portuguese-anki-deck",
     category: "language",
     status: "available",
-    title: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2058 Flashcards",
+    title: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2067 Flashcards",
     shortName: "CIPLE CAPLE Portuguese",
     subtitle:
-      "2,058 European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
+      "2,067 European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
     directAnswer:
-      "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 2,058 European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
+      "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 2,067 European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
     lastUpdated: "2026-09-21",
     audience: "CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and European Portuguese self-learners.",
     format: ".apkg",
@@ -1415,7 +1415,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2058",
+      cards: "2067",
       topics: "CIPLE, CAPLE A2, Portuguese residency and citizenship vocabulary",
       formulas: "Audio pronunciation + contextual examples (PT-PT)",
       examYear: "Current CAPLE / Portuguese nationality cycle",
@@ -1465,7 +1465,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,058 Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
+          "2,067 Anki cards with European Portuguese vocabulary, phrases, contextual examples, audio pronunciation, and images where helpful.",
       },
       {
         question: "What file format is delivered?",
@@ -1477,12 +1477,12 @@ const rawDecks: Deck[] = [
     slug: "delf-b2-french-anki-deck",
     category: "language",
     status: "available",
-    title: "DELF DALF TCF TEF French Anki Deck — 2100 Flashcards",
+    title: "DELF DALF TCF TEF French Anki Deck — 2115 Flashcards",
     shortName: "DELF DALF TCF TEF French",
     subtitle:
-      "2,100 French vocabulary flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général — plus shared lexicon useful for fide / Swiss residency French and everyday Belgian French.",
+      "2,115 French vocabulary flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général — plus shared lexicon useful for fide / Swiss residency French and everyday Belgian French.",
     directAnswer:
-      "UniPrep2Go sells a French Anki deck with 2,100 flashcards for DELF / DALF (lifetime diploma track), TCF Canada and TEF Canada (Express Entry / Quebec immigration), TCF ANF (French naturalization), and TCF général (French university admission). The same high-frequency lexicon also supports fide / Swiss residency French language prep and everyday Belgian French work-and-life vocabulary — not a Swiss civics or official fide format pack. Each card pairs a headword with a visual cue, native French audio, and a contextual example. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank covering the main French certificate and immigration pathways.",
+      "UniPrep2Go sells a French Anki deck with 2,115 flashcards for DELF / DALF (lifetime diploma track), TCF Canada and TEF Canada (Express Entry / Quebec immigration), TCF ANF (French naturalization), and TCF général (French university admission). The same high-frequency lexicon also supports fide / Swiss residency French language prep and everyday Belgian French work-and-life vocabulary — not a Swiss civics or official fide format pack. Each card pairs a headword with a visual cue, native French audio, and a contextual example. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank covering the main French certificate and immigration pathways.",
     lastUpdated: "2026-09-21",
     audience:
       "DELF / DALF candidates, TCF Canada and TEF Canada immigration applicants, TCF ANF naturalization candidates, TCF général university applicants, and learners needing high-frequency French for fide / Swiss residency or Belgian everyday pathways.",
@@ -1492,7 +1492,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2100",
+      cards: "2115",
       topics:
         "DELF, DALF, TCF Canada, TEF Canada, TCF ANF, TCF général; soft overlap for fide / Swiss residency French and Belgian everyday French",
       formulas: "Native audio + visual image + contextual example per card",
@@ -1542,7 +1542,7 @@ const rawDecks: Deck[] = [
       {
         question: "How many cards does the deck have?",
         answer:
-          "2,100 cards covering the high-frequency French vocabulary you need for DELF, DALF, TCF, and TEF prep — not grammar lectures.",
+          "2,115 cards covering the high-frequency French vocabulary you need for DELF, DALF, TCF, and TEF prep — not grammar lectures.",
       },
       {
         question: "What file format is delivered?",
@@ -1618,12 +1618,12 @@ const rawDecks: Deck[] = [
     slug: "german-a2-anki-deck",
     category: "language",
     status: "available",
-    title: "German Goethe telc ÖSD DTZ Anki Deck — 2101 Flashcards",
+    title: "German Goethe telc ÖSD DTZ Anki Deck — 2115 Flashcards",
     shortName: "German Goethe telc ÖSD DTZ",
     subtitle:
-      "2,101 German A2–B1 flashcards for Goethe-Institut, telc, ÖSD, and DTZ — plus shared lexicon useful for residence / Einbürgerung language and fide / Swiss residency German.",
+      "2,115 German A2–B1 flashcards for Goethe-Institut, telc, ÖSD, and DTZ — plus shared lexicon useful for residence / Einbürgerung language and fide / Swiss residency German.",
     directAnswer:
-      "UniPrep2Go sells a German Anki deck with 2,101 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. The same A2–B1 lexicon overlaps everyday German used toward residence and Einbürgerung language expectations and fide / Swiss residency German prep — not a Leben in Deutschland civics deck or official fide format pack. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
+      "UniPrep2Go sells a German Anki deck with 2,115 essential words for Goethe-Institut A2, telc Deutsch A2, ÖSD Zertifikat A2, and DTZ (Deutsch-Test für Zuwanderer) immigrant integration vocabulary. The same A2–B1 lexicon overlaps everyday German used toward residence and Einbürgerung language expectations and fide / Swiss residency German prep — not a Leben in Deutschland civics deck or official fide format pack. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one shared vocabulary bank across the main German certificate and immigration pathways, not a tourist phrase pack.",
     lastUpdated: "2026-09-21",
     audience:
       "Goethe A2, telc A2, ÖSD A2, and DTZ learners, plus applicants building German for residence / Einbürgerung language or fide / Swiss residency pathways.",
@@ -1633,7 +1633,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2101",
+      cards: "2115",
       topics:
         "Goethe-Institut A2, telc Deutsch A2, ÖSD A2, DTZ; soft overlap for residence / Einbürgerung language and fide / Swiss residency German",
       formulas: "Essential words with examples for integration and certificate prep",
@@ -1685,12 +1685,12 @@ const rawDecks: Deck[] = [
     slug: "celi-b1-italian-anki-deck",
     category: "language",
     status: "available",
-    title: "CELI CILS PLIDA Italian Anki Deck — 2151 Flashcards",
+    title: "CELI CILS PLIDA Italian Anki Deck — 2171 Flashcards",
     shortName: "CELI CILS PLIDA Italian",
     subtitle:
-      "2,151 Italian B1 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways.",
+      "2,171 Italian B1 flashcards for CELI, CILS, and PLIDA — including vocabulary overlap used for permesso di soggiorno and cittadinanza language pathways.",
     directAnswer:
-      "UniPrep2Go sells an Italian B1 Anki deck with 2,151 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates, including the lexicon overlap used for permesso di soggiorno and cittadinanza language requirements (including CILS B1 cittadinanza-adjacent pathways). It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 and immigration-language pathways, not an Italian civics quiz.",
+      "UniPrep2Go sells an Italian B1 Anki deck with 2,171 flashcards for CELI (Università per Stranieri di Perugia), CILS (Università per Stranieri di Siena), and PLIDA (Società Dante Alighieri). Cards target the shared B1 vocabulary and phrase bank across those certificates, including the lexicon overlap used for permesso di soggiorno and cittadinanza language requirements (including CILS B1 cittadinanza-adjacent pathways). It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary deck for the main Italian B1 and immigration-language pathways, not an Italian civics quiz.",
     lastUpdated: "2026-09-21",
     audience:
       "CELI, CILS, and PLIDA B1 candidates plus applicants building Italian for permesso di soggiorno or cittadinanza language requirements.",
@@ -1700,7 +1700,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2151",
+      cards: "2171",
       topics:
         "CELI, CILS, PLIDA B1 Italian vocabulary; permesso di soggiorno and cittadinanza language overlap",
       formulas: "Exam-focused B1 vocabulary shared across Italian certificates",
@@ -1739,7 +1739,7 @@ const rawDecks: Deck[] = [
       },
       {
         question: "How many cards does the deck have?",
-        answer: "2,151 cards covering B1-level Italian vocabulary for CELI, CILS, and PLIDA preparation.",
+        answer: "2,171 cards covering B1-level Italian vocabulary for CELI, CILS, and PLIDA preparation.",
       },
       {
         question: "What file format is delivered?",
@@ -2247,12 +2247,12 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-french-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for French Speakers Anki Deck — 2482 Flashcards",
+    title: "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
     shortName: "IELTS / TOEFL English for French Speakers",
     subtitle:
-      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
+      "2,522 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for French Speakers Anki deck with 2,482 high-frequency English vocabulary cards, French glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for French-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells an IELTS / TOEFL English for French Speakers Anki deck with 2,522 high-frequency English vocabulary cards, French glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for French-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
     lastUpdated: "2026-09-28",
     audience:
       "French-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
@@ -2262,7 +2262,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2482",
+      cards: "2522",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with French bilingual support",
       formulas: "Audio + French glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2284,7 +2284,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,482 English vocabulary cards from the Prep2Go app: French glosses, bilingual examples, native English audio, and illustrations.",
+          "2,522 English vocabulary cards from the Prep2Go app: French glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2366,12 +2366,12 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-arabic-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2482 Flashcards",
+    title: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
     shortName: "IELTS / TOEFL English for Arabic Speakers",
     subtitle:
-      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Arabic Speakers Anki deck with 2,482 high-frequency English vocabulary cards, Arabic glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Arabic-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells an IELTS / TOEFL English for Arabic Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Arabic glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Arabic-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
     lastUpdated: "2026-09-28",
     audience:
       "Arabic-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
@@ -2381,7 +2381,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2482",
+      cards: "2504",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Arabic bilingual support",
       formulas: "Audio + Arabic glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2403,7 +2403,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,482 English vocabulary cards from the Prep2Go app: Arabic glosses, bilingual examples, native English audio, and illustrations.",
+          "2,504 English vocabulary cards from the Prep2Go app: Arabic glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2487,12 +2487,12 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2482 Flashcards",
+    title: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
     shortName: "IELTS / TOEFL English for Ukrainian Speakers",
     subtitle:
-      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Ukrainian Speakers Anki deck with 2,482 high-frequency English vocabulary cards, Ukrainian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells an IELTS / TOEFL English for Ukrainian Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Ukrainian glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
     lastUpdated: "2026-09-28",
     audience:
       "Ukrainian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
@@ -2502,7 +2502,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2482",
+      cards: "2504",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Ukrainian bilingual support",
       formulas: "Audio + Ukrainian glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2524,7 +2524,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,482 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
+          "2,504 English vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2537,12 +2537,12 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-russian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2482 Flashcards",
+    title: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
     shortName: "IELTS / TOEFL English for Russian Speakers",
     subtitle:
-      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support and cognate-trap notes on every card.",
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Russian support and cognate-trap notes on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Russian speakers: 2,482 high-frequency English vocabulary cards with Russian glosses, bilingual examples, native English audio, and illustrations. Built for Russian-speaking candidates targeting IELTS Academic or General (Canada / Australia / UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like актуальный/actual and магазин/magazine stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: a tourist EN–RU AnkiWeb dump, an English Vocabulary in Use book mirror, a timed mock exam, or a PT-BR / LatAm-Spanish-gloss sibling pack.",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Russian speakers: 2,504 high-frequency English vocabulary cards with Russian glosses, bilingual examples, native English audio, and illustrations. Built for Russian-speaking candidates targeting IELTS Academic or General (Canada / Australia / UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like актуальный/actual and магазин/magazine stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: a tourist EN–RU AnkiWeb dump, an English Vocabulary in Use book mirror, a timed mock exam, or a PT-BR / LatAm-Spanish-gloss sibling pack.",
     lastUpdated: "2026-09-28",
     audience:
       "Russian-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary — not tourist phrase learners.",
@@ -2552,7 +2552,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2482",
+      cards: "2504",
       topics:
         "IELTS / TOEFL / Cambridge / PTE English vocabulary for Russian speakers (Russian glosses, false-friend awareness)",
       formulas: "Audio + Russian glosses + bilingual example sentences",
@@ -2575,7 +2575,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the same as free AnkiWeb English–Russian or EVU decks?",
         answer:
-          "No. Free AnkiWeb EN–RU dumps and English Vocabulary in Use mirrors are often tourist phrases, undated frequency lists, or CEFR book mirrors without IELTS/TOEFL framing. This is a 2,482-card Prep2Go exam-frequency bank with Russian glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
+          "No. Free AnkiWeb EN–RU dumps and English Vocabulary in Use mirrors are often tourist phrases, undated frequency lists, or CEFR book mirrors without IELTS/TOEFL framing. This is a 2,504-card Prep2Go exam-frequency bank with Russian glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
       },
       {
         question: "Is this the same as the Portuguese- or Spanish-speaker English Anki pages?",
@@ -2585,7 +2585,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,482 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations where included.",
+          "2,504 English vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native English audio, and illustrations where included.",
       },
       {
         question: "What file format is delivered?",
@@ -2598,12 +2598,12 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-spanish-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2482 Flashcards",
+    title: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
     shortName: "IELTS / TOEFL English for Spanish Speakers (LatAm)",
     subtitle:
-      "2,482 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
+      "2,504 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Spanish Speakers Anki deck with 2,482 high-frequency English vocabulary cards, Latin American Spanish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Spanish-speaking (LatAm) candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells an IELTS / TOEFL English for Spanish Speakers Anki deck with 2,504 high-frequency English vocabulary cards, Latin American Spanish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Spanish-speaking (LatAm) candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
     lastUpdated: "2026-09-28",
     audience:
       "Latin American Spanish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
@@ -2613,7 +2613,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2482",
+      cards: "2504",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Latin American Spanish bilingual support",
       formulas: "Audio + LatAm Spanish glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2645,7 +2645,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,482 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
+          "2,504 English vocabulary cards from the Prep2Go app: LatAm Spanish glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2658,12 +2658,12 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-portuguese-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2482 Cards",
+    title: "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
     shortName: "IELTS / TOEFL English for Brazilian Portuguese Speakers (BR)",
     subtitle:
-      "2,482 English flashcards for Brazilians on IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, audio, and cognate traps (atual ≠ actual).",
+      "2,504 English flashcards for Brazilians on IELTS, TOEFL, Cambridge, and PTE — PT-BR glosses, audio, and cognate traps (atual ≠ actual).",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese (PT-BR) speakers: 2,482 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS Academic or General (Canada Express Entry / SDS, Australia, UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: CIPLE / CAPLE European Portuguese, Celpe-Bras, ENEM English drills, a timed mock exam, or a LatAm-Spanish-gloss sibling pack.",
+      "UniPrep2Go sells an IELTS / TOEFL English Anki deck for Brazilian Portuguese (PT-BR) speakers: 2,504 high-frequency English vocabulary cards with PT-BR glosses, bilingual examples, native English audio, and illustrations. Built for Brazilians targeting IELTS Academic or General (Canada Express Entry / SDS, Australia, UKVI), TOEFL iBT (U.S. graduate), Cambridge, and PTE — English-first recall so false friends like atual/actual and pretender/pretend stop costing Reading points. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. What this is not: CIPLE / CAPLE European Portuguese, Celpe-Bras, ENEM English drills, a timed mock exam, or a LatAm-Spanish-gloss sibling pack.",
     lastUpdated: "2026-09-28",
     audience:
       "Brazilian Portuguese speakers preparing IELTS, TOEFL, Cambridge, or PTE who want Anki vocabulary with PT-BR support — not CIPLE, not Celpe-Bras, not ENEM English.",
@@ -2673,7 +2673,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2482",
+      cards: "2504",
       topics:
         "IELTS / TOEFL / Cambridge / PTE English vocabulary for Brazilian Portuguese speakers (PT-BR glosses, false-friend awareness)",
       formulas: "Audio + Brazilian Portuguese (PT-BR) glosses + bilingual example sentences",
@@ -2701,7 +2701,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this the same as ENEM English or free AnkiWeb Inglês–Português decks?",
         answer:
-          "No. ENEM English reading is a Brazilian high-school exam skill set; free AnkiWeb PT–EN dumps are usually tourist phrases or undated frequency lists. This is a 2,482-card Prep2Go IELTS/TOEFL-framed bank with PT-BR glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
+          "No. ENEM English reading is a Brazilian high-school exam skill set; free AnkiWeb PT–EN dumps are usually tourist phrases or undated frequency lists. This is a 2,504-card Prep2Go IELTS/TOEFL-framed bank with PT-BR glosses, English audio, and cognate-trap notes — instant Gumroad .apkg at list price.",
       },
       {
         question: "Is this the same as the Spanish- or Russian-speaker English Anki pages?",
@@ -2711,7 +2711,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "2,482 English vocabulary cards from the Prep2Go app: Brazilian Portuguese glosses, bilingual examples, native English audio, and illustrations where included.",
+          "2,504 English vocabulary cards from the Prep2Go app: Brazilian Portuguese glosses, bilingual examples, native English audio, and illustrations where included.",
       },
       {
         question: "What file format is delivered?",
@@ -2724,12 +2724,12 @@ const rawDecks: Deck[] = [
     slug: "ielts-toefl-english-for-turkish-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 924 Flashcards",
+    title: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
     shortName: "IELTS / TOEFL English for Turkish Speakers",
     subtitle:
-      "924 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
+      "952 English flashcards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
     directAnswer:
-      "UniPrep2Go sells an IELTS / TOEFL English for Turkish Speakers Anki deck with 924 high-frequency English vocabulary cards, Turkish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Turkish-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells an IELTS / TOEFL English for Turkish Speakers Anki deck with 952 high-frequency English vocabulary cards, Turkish glosses, bilingual examples, native English audio, and illustrations. Built from the Prep2Go app bank for Turkish-speaking candidates preparing IELTS, TOEFL, Cambridge, and PTE word knowledge. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio.",
     lastUpdated: "2026-09-28",
     audience:
       "Turkish-speaking IELTS, TOEFL, Cambridge, and PTE candidates using Anki for English exam vocabulary.",
@@ -2739,7 +2739,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "924",
+      cards: "952",
       topics: "IELTS, TOEFL, Cambridge, and PTE English vocabulary with Turkish bilingual support",
       formulas: "Audio + Turkish glosses + bilingual example sentences",
       examYear: "Current IELTS / TOEFL / Cambridge / PTE cycle",
@@ -2761,7 +2761,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "924 English vocabulary cards from the Prep2Go app: Turkish glosses, bilingual examples, native English audio, and illustrations.",
+          "952 English vocabulary cards from the Prep2Go app: Turkish glosses, bilingual examples, native English audio, and illustrations.",
       },
       {
         question: "Is this the same as the French- or Arabic-speaker English Anki pages?",
@@ -2779,13 +2779,13 @@ const rawDecks: Deck[] = [
     slug: "dele-a2-spanish-anki-deck",
     category: "language",
     status: "available",
-    title: "DELE SIELE Spanish Anki Deck — 2105 Flashcards",
+    title: "DELE SIELE Spanish Anki Deck — 2120 Flashcards",
 
     shortName: "DELE SIELE Spanish",
     subtitle:
-      "2,105 Spanish A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE civics bundle.",
+      "2,120 Spanish A2 vocabulary flashcards for DELE A2 and SIELE A2-style word knowledge — language only, not a CCSE civics bundle.",
     directAnswer:
-      "UniPrep2Go sells a Spanish Anki deck with 2,105 high-frequency A2 vocabulary cards for DELE A2 (Instituto Cervantes) and overlapping SIELE A2-style word knowledge. Each card targets exam-ready Spanish recall with examples and media where included. It is delivered as a single Anki .apkg file for {PRICE} through Gumroad by PixID Studio — DELE / SIELE vocabulary only, not a DELE + CCSE nationality bundle.",
+      "UniPrep2Go sells a Spanish Anki deck with 2,120 high-frequency A2 vocabulary cards for DELE A2 (Instituto Cervantes) and overlapping SIELE A2-style word knowledge. Each card targets exam-ready Spanish recall with examples and media where included. It is delivered as a single Anki .apkg file for {PRICE} through Gumroad by PixID Studio — DELE / SIELE vocabulary only, not a DELE + CCSE nationality bundle.",
     lastUpdated: "2026-09-21",
     audience:
       "DELE A2 candidates and learners building SIELE A2-overlapping Spanish vocabulary with spaced repetition.",
@@ -2795,7 +2795,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "2105",
+      cards: "2120",
       topics: "DELE A2, SIELE A2-overlapping Spanish vocabulary",
       formulas: "High-frequency A2 vocabulary with examples and media",
       examYear: "Current DELE A2 / SIELE cycle",
@@ -2834,38 +2834,38 @@ const rawDecks: Deck[] = [
     slug: "dele-a2-ccse-spanish-citizenship-bundle",
     category: "language",
     status: "available",
-    title: "DELE CCSE Spanish Nationality Anki Deck — 60 Flashcards",
-    shortName: "DELE CCSE Spanish Nationality",
+    title: "DELE A2 + CCSE Anki Bundle — 2463 Flashcards for Spanish Nationality",
+    shortName: "DELE A2 + CCSE Spanish Nationality",
     subtitle:
-      "Compact 60-card DELE-adjacent + CCSE civics .apkg — not a full Cervantes substitute.",
+      "Two .apkg files for both Spanish nationality tests: 2,120 DELE A2 vocabulary cards with audio + 343 CCSE civics cards.",
     directAnswer:
-      "UniPrep2Go sells a compact DELE A2 + CCSE Spanish nationality Anki deck with 60 MCQ cards plus a free 60-question CCSE timed diagnostic. Official Cervantes CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary use the standalone 2105-card listing. Delivered as an Anki .apkg for {PRICE} through Gumroad.",
-    lastUpdated: "2026-08-23",
-    audience: "Spanish nationality applicants preparing DELE A2 language evidence plus CCSE civics.",
+      "UniPrep2Go sells a DELE A2 + CCSE Spanish nationality Anki bundle with 2,463 cards in two .apkg files: 2,120 DELE A2 vocabulary cards (picture, Spanish example sentence, native audio) and 343 CCSE question-and-answer civics cards on the Constitution, institutions, geography, history and daily life. Official Cervantes CCSE is 25 questions / 45 minutes / 60%; start with the free 60-question CCSE readiness check. Delivered for {PRICE} through Gumroad.",
+    lastUpdated: "2026-10-03",
+    audience: "Spanish nationality-by-residence applicants who need DELE A2 (or higher) plus the CCSE.",
     format: ".apkg",
     coverImage: "/samples/prep2go-dele-a2-ccse-spanish-citizenship-cover.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/dele-a2-ccse-spanish-citizenship-bundle?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "60",
-      topics: "DELE A2-adjacent language themes and CCSE civics",
-      formulas: "Compact MCQ companion — not a full Cervantes bank",
+      cards: "2463",
+      topics: "DELE A2 vocabulary (2,120 cards with audio) + CCSE civics (343 cards)",
+      formulas: "Two Anki .apkg files — DELE A2 picture/audio vocabulary and CCSE question → answer",
       examYear: "Current DELE A2 / CCSE cycle",
-      delivery: "Digital .apkg through Gumroad (instant download)",
+      delivery: "Two digital .apkg files through Gumroad (instant download)",
     },
     topicCoverage: [],
     sampleCards: [],
     faqs: [
       {
-        question: "Is this a full DELE + CCSE nationality course?",
+        question: "What is in the DELE A2 + CCSE bundle?",
         answer:
-          "No. This is a compact 60-card companion (DELE-adjacent language themes + CCSE civics). Official CCSE is 25 questions / 45 minutes / 60%. For thicker DELE / SIELE vocabulary buy the standalone 2105-card DELE SIELE Anki deck.",
+          "Two Anki files, 2,463 cards: 2,120 DELE A2 vocabulary cards (Spanish word with a picture, English translation, Spanish example sentence with native audio) and 343 CCSE civics cards in Spanish question → answer form. It does not include the 300 CCSE manual questions as multiple choice, DELE writing or speaking practice, or official audio.",
       },
       {
         question: "Is there a free CCSE practice test?",
         answer:
-          "Yes. Take the free 60-question CCSE (España) readiness check at /mock-exams/ccse-espana-readiness-check, then repair weak topics in this 60-card deck.",
+          "Yes. Take the free 60-question CCSE (España) readiness check at /mock-exams/ccse-espana-readiness-check, then repair weak topics with the 343 CCSE cards. Official Cervantes CCSE is 25 questions / 45 minutes / 60%.",
       },
       {
         question: "Is this official exam material?",
@@ -3037,24 +3037,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A shirt originally priced $80 is discounted by 25%, and then the discounted price is reduced by an additional 10%. What is the final price?",
+        question: "If n is a positive integer and 15n is a perfect square, what is the smallest possible value of n?",
         answer:
-          "Correct: (a) $54. Sequential discounts multiply remaining-price factors: 80 × 0.75 × 0.90 = 54.",
+          "Correct: (a) 15 15 = 3¹ × 5¹. For 15n to be a perfect square, every prime factor must have an even exponent, so n must supply one more factor of 3 and one more factor of 5, i.e., n = 3 × 5 = 15. Then 15 × 15 = 225 = 15².",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "The city's new bike-share program has reduced traffic congestion, as evidenced by a 15% drop in average commute times since the program launched. Therefore, the city should expand the bike-share program to all neighborhoods.\n\nWhich of the following is an assumption required by the argument?",
+        question: "The new tax policy will increase total government revenue, because it lowers the tax rate on small businesses, which will encourage them to report income they previously underreported to avoid high taxes. Which of the following is an assumption on which the argument depends?",
         answer:
-          "Correct: (a) The drop in commute times was primarily caused by the bike-share program rather than by other factors introduced during the same period.",
+          "Correct: (a) The increase in reported income resulting from lower rates will be large enough to offset the revenue lost from the rate reduction itself. The conclusion that total revenue will increase depends on the gain from newly reported income outweighing the loss from the lower rate applied to previously reported income. If this were false, the argument's conclusion would not follow.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "Is x > 0?\n\n(1) x² = 16\n(2) x³ = -64\n\nWhich Data Sufficiency answer is correct?",
+        question: "A line chart shows a company's monthly website traffic (in thousands of visits): January: 50, February: 65, March: 60, April: 80, May: 75, June: 95. In how many months (other than January, which has no prior month for comparison) did traffic decrease compared to the previous month?",
         answer:
-          "Correct: (b) Statement (2) alone is sufficient — x³ = -64 gives x = -4, a definitive NO to x > 0.",
+          "Correct: (a) 2 Month-over-month changes: Feb (+15), Mar (-5, a decrease), Apr (+20), May (-5, a decrease), Jun (+20). Traffic decreased in exactly 2 months: March and May.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-3.webp",
       },
     ],
@@ -3107,21 +3104,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "In the novel The Lantern Keeper, the narrator's grandfather is portrayed as someone who values careful work over speed. Which quotation from the novel most effectively illustrates this portrayal?",
+        question: "In the system 4x - 2y = 9 and kx - y = 3, k is a constant. If the system has no solution, what is the value of k?",
         answer:
-          "Correct: (a) \"He sanded each oar three times, though one pass would have satisfied anyone else.\" The portrayal is about choosing care over speed. Sanding each oar three times when one pass would satisfy others shows him spending extra time to do the job thoroughly.",
+          "Correct: (c) 2 No solution means parallel lines: same slope, different intercepts. The first line is y = 2x - 4.5; the second is y = kx - 3. Matching slopes gives k = 2, and the intercepts differ, so the lines never meet.",
         imageUrl: "/samples/sat-anki-deck-sample-1.webp",
       },
       {
-        question: "A random sample of 400 voters in a city found that 56% support building a new library, with a margin of error of 4 percentage points. Which conclusion is most appropriate?",
+        question: "Researchers hypothesized that a plant called sweet clover spreads quickly through prairies mainly because grazing animals avoid eating it, leaving it free to grow while native grasses are eaten. Which finding, if true, would most directly weaken the researchers' hypothesis?",
         answer:
-          "Correct: (d) Between 52% and 60% of all voters in the city likely support the new library. A margin of error describes uncertainty about the whole population, not the sample. The plausible range for all city voters is 56% ± 4%, or 52% to 60%.",
+          "Correct: (d) Sweet clover spreads just as quickly in fenced prairie plots where no grazing animals are present. If grazing avoidance were the main reason, removing grazers should remove sweet clover's advantage. Fast spread in fenced plots with no grazers shows the plant spreads quickly without that advantage, which undercuts the hypothesis.",
         imageUrl: "/samples/sat-anki-deck-sample-2.webp",
       },
       {
-        question: "Hoping to finish the mural before the festival, ______ Which choice completes the text so that it conforms to the conventions of Standard English?",
+        question: "Ada Lovelace ______ wrote what many historians consider the first published computer program in the 1840s. Which choice completes the text so that it conforms to the conventions of Standard English?",
         answer:
-          "Correct: (b) the artists worked through the night. An introductory modifier describes the noun that comes right after the comma. The artists are the ones hoping to finish, so 'the artists' must follow the modifier.",
+          "Correct: (b) , the daughter of the poet Lord Byron, 'The daughter of the poet Lord Byron' is extra information about Lovelace (a nonrestrictive appositive), so it must be set off by a matching pair of commas, one before and one after.",
         imageUrl: "/samples/sat-anki-deck-sample-3.webp",
       },
     ],
@@ -3185,24 +3182,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A project manager is closing a complex infrastructure project that involved multiple vendors and internal teams. The final deliverable has been accepted, but several lessons learned sessions still need to be conducted with different stakeholder groups. Which closing process activity should be completed first?",
+        question: "An agile team has 240 story points left in the release backlog. Its velocity over the last six two-week sprints averaged 30 points, ranging from 25 to 35. How should the project manager forecast the release date for stakeholders?",
         answer:
-          "Correct: (d) Complete formal acceptance documentation with the customer. Formal acceptance comes first in Close Project or Phase before archiving, releasing resources, or final performance reporting.",
+          "Correct: (c) Give a range of about 7 to 10 sprints (14 to 20 weeks) and update it as sprints complete Dividing the remaining points by the velocity range gives a forecast range: 240 / 35 is about 7 sprints and 240 / 25 is about 10. Communicating a range and updating it each sprint is honest and useful.",
         imageUrl: "/samples/pmp-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "A project manager is establishing a risk management process for a project with both predictive and agile components. The predictive portions require formal risk registers while the agile portions need more adaptive risk handling. What integrated risk management approach should be implemented?",
+        question: "A project manager notices that during retrospectives, the same few team members always speak while others remain silent. When asked directly, the quiet members say everything is fine, but body language suggests otherwise. What facilitation technique should the project manager implement?",
         answer:
-          "Correct: (b) Apply different risk management approaches based on the delivery method of each component. Hybrid delivery tailors risk practice to predictive vs agile workstreams.",
+          "Correct: (b) Use anonymous feedback collection methods like sticky notes or digital tools Anonymous feedback collection removes the social pressure that may prevent quieter team members from sharing their thoughts, allowing for more honest and complete input from all participants.",
         imageUrl: "/samples/pmp-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "A project team member consistently delivers high-quality work but rarely participates in team discussions or collaborative activities. Other team members have started excluding them from informal communications. How should the project manager address this situation?",
+        question: "During project execution, a critical vendor informs the project manager that they cannot deliver a key component by the planned date due to supply chain issues. This will impact the project's critical path. Which process should the project manager execute first?",
         answer:
-          "Correct: (c) Have a private conversation to understand their perspective and coach them on team engagement. People-domain leadership starts with one-to-one coaching before public confrontation.",
+          "Correct: (c) Perform integrated change control to evaluate options and impacts When a change occurs that impacts the project's critical path, the project manager should first execute integrated change control to evaluate all options, assess impacts, and determine the best course of action before making decisions or updates.",
         imageUrl: "/samples/pmp-anki-deck-sample-3.webp",
       },
     ],
@@ -3261,24 +3255,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A water tank can be filled by pipe A alone in 12 hours and by pipe B alone in 18 hours. If both pipes work together for 4 hours and then pipe A is closed, how many additional hours will it take pipe B alone to finish filling the tank?",
+        question: "A water tank can be filled by pipe A alone in 12 hours and by pipe B alone in 18 hours. If both pipes work together for 4 hours and then pipe A is closed, how many additional hours will it take pipe B alone to finish filling the tank?",
         answer:
-          "Correct: (c) 10 hours. Combined rate 1/12 + 1/18 = 5/36; after 4 hours they fill 5/9, so B alone needs 10 more hours for the remaining 4/9.",
+          "Correct: (d) 8 hours",
         imageUrl: "/samples/gre-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "Despite the composer's reputation for creating ______ works that challenged audiences, her latest symphony was surprisingly ______, featuring melodies that even casual listeners could easily appreciate and remember.",
+        question: "The pharmaceutical company's research findings were initially _______ by the scientific community, but subsequent independent studies _______ the original conclusions, leading to widespread acceptance of the new treatment protocol.",
         answer:
-          "Correct: (d) abstruse ... accessible. 'Despite' sets up a contrast: her usual difficult work versus a surprisingly approachable new symphony.",
+          "Correct: (a) scrutinized .. corroborated The sentence describes a progression from initial skepticism to eventual acceptance. 'Scrutinized' (examined critically) fits the initial scientific caution, while 'corroborated' (confirmed) explains how independent studies supported the findings, leading to acceptance.",
         imageUrl: "/samples/gre-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "In a coordinate plane, the vertices of a parallelogram are located at points A, B, C, and D. If three of the vertices are A(2, 3), B(7, 5), and C(9, 1), what are the coordinates of the fourth vertex D?",
+        question: "The archaeological evidence from the recently excavated site challenges the prevailing theory about ancient trade routes. The discovery of Mediterranean pottery fragments in what was believed to be an isolated inland settlement suggests that",
         answer:
-          "Correct: (a) (4, −1). Opposite sides are equal as vectors: using AB = DC (or AD = BC) yields D(4, −1).",
+          "Correct: (d) trade networks in the ancient world were more extensive than scholars had assumed The presence of Mediterranean pottery in an 'isolated inland settlement' directly contradicts the assumption of isolation, indicating that trade networks reached farther than previously believed and were more extensive than scholars had assumed.",
         imageUrl: "/samples/gre-anki-deck-sample-3.webp",
       },
     ],
@@ -3414,24 +3405,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "On site you notice water pooling near temporary electrics. The contractor says it is under control. What do you do?",
+        question: "A retail landlord asks you to confirm a tenant fit-out completes two weeks before Christmas trading. You lack the contractor programme. What is the most professional response?",
         answer:
-          "Correct: (b) Report the hazard and do not enter the affected area until remedied. H&S requires immediate escalation of observed risks.",
+          "Correct: (a) Explain the information gap, confirm what you can verify now, and agree a realistic update once the programme arrives Client care combines honesty about uncertainty with proactive information gathering.",
         imageUrl: "/samples/mrics-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "You attend a RICS branch event on digital surveying. Which CPD entry best meets APC expectations?",
+        question: "When you learn confidential client budget data while advising Party A and Party B asks you to tender on the same scheme, what aligns with RICS Rules of Conduct?",
         answer:
-          "Correct: (c) Two hours structured learning with three techniques you will trial on your next instruction. Structured, reflected CPD linked to pathway competencies strengthens the APC record.",
+          "Correct: (a) Decline or disclose the conflict to both parties and seek written consent before proceeding Conduct requires early identification, disclosure, and appropriate action.",
         imageUrl: "/samples/mrics-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "Your multidisciplinary team architect keeps missing cost review deadlines. What teamwork action is best?",
+        question: "For Level 2 versus Level 3 APC application, regarding deputising for your manager on a complex client meeting, which guidance is correct?",
         answer:
-          "Correct: (d) Agree a shared milestone plan with clear inputs, owners, and a coordination call before submission. Effective teamwork uses shared planning and early escalation.",
+          "Correct: (a) Deputising may support Level 3 if key decisions and advice were yours Competency levels are based on knowledge, application, and accountable advice.",
         imageUrl: "/samples/mrics-anki-deck-sample-3.webp",
       },
     ],
@@ -3483,24 +3471,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A BOQ for NEC Option B requires activity schedule instead of traditional BOQ. What quantification focus changes?",
+        question: "A commercial director on a main contractor framework asks you to review three tender returns for a £12m school extension. Returns range £11.4m–£13.1m. What is your best next step?",
         answer:
-          "Correct: (a) Price against defined activities/milestones with scope references rather than only trade bills. NEC Option B uses BOQ; quantification must align with the chosen NEC option.",
+          "Correct: (b) Analyse scope compliance, qualifications, preliminaries, risk, programme, and resource assumptions before recommendation Commercial management includes rigorous tender return analysis beyond headline price.",
         imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "An apprentice QS measures external paving. The drawing shows 1,250 m² but site boundaries reduce workable area. What action is required?",
+        question: "An item description reads 'Excavate foundation trenches, max depth 1.2m'. The site requires 2.1m deep trenches in rock. How should quantification treat this?",
         answer:
-          "Correct: (b) Adjust quantity to workable area per drawings and site constraints, note assumption in query if unclear. Measurement must reflect constructible scope with queries for ambiguities.",
+          "Correct: (b) Amend description and measure additional depth/rock as separate items or provisional sum per tender strategy BOQ preparation must align descriptions and quantities with site and design information.",
         imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "NRM3 is requested for maintenance quantification on a shopping centre. Its primary use is:",
+        question: "Under NEC4 ECC Option C, target cost mechanics mean",
         answer:
-          "Correct: (c) Order of cost estimates and elemental cost planning for building maintenance works. NRM3 supports measurement and cost planning of maintenance works.",
+          "Correct: (b) Defined cost plus fee with pain/gain share against agreed target at completion NEC Option C combines target cost with defined cost and pain/gain share.",
         imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-3.webp",
       },
     ],
@@ -3556,22 +3541,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "Before discharging CO2 into a normally occupied enclosure, NFPA 12 requires:",
+        question: "When a fire wall separates two portions of a building, structural design often requires?",
         answer:
-          "Correct: (b) Predischarge alarms and time delay or personnel accounting to allow evacuation. CO2 is asphyxiant; lockout and warning devices protect occupants from lethal oxygen displacement.",
+          "Correct: (b) Independent structural framing on each side so collapse on one side does not pull down the other Structural independence is a defining fire wall feature — butt joints, double walls, or protected structural members achieve this.",
         imageUrl: "/samples/cfps-anki-deck-sample-1.webp",
       },
       {
-        question: "A total flooding CO2 system design concentration depends primarily on:",
+        question: "Illumination levels for emergency lighting on the walking surface of egress paths are typically required to be at least",
         answer:
-          "Correct: (c) Fuel type, enclosure volume, and minimum design concentration from NFPA 12 tables. CO2 quantity = concentration × adjusted volume; deep-seated fires may need extended holding periods.",
+          "Correct: (a) 1 foot-candle (10.8 lux) measured at the floor NFPA 101 requires minimum 1 fc at the walking surface along egress routes during emergency mode.",
         imageUrl: "/samples/cfps-anki-deck-sample-2.webp",
       },
       {
-        question: "Clean agent systems covered under NFPA 2001 are characterized by:",
+        question: "CFAST (Consolidated Model of Fire and Smoke Transport) is primarily classified as:",
         answer:
-          "Correct: (d) Electrically nonconductive gaseous agents that extinguish by heat absorption and/or oxygen reduction without residue. Clean agents (HFCs, FK-5-1-12, inert gases) protect sensitive equipment in enclosures with concentration-based design.",
+          "Correct: (a) A two-zone compartment fire model used for rapid scenario analysis CFAST couples zone model compartments with vent flow, plume correlations, and target heating for engineering-level predictions.",
         imageUrl: "/samples/cfps-anki-deck-sample-3.webp",
       },
     ],
@@ -3635,23 +3619,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A cleaner mixes bleach and acid-based descaler in a toilet bowl, producing chlorine gas. The immediate priority is:",
+        question: "A warehouse operative reports lower back pain after repeated lifting of 20 kg sacks from floor level. Which initial control is most aligned with the hierarchy of control?",
         answer:
-          "Correct: (a) Evacuate and ventilate the area, ensure affected people get fresh air and medical help, and review COSHH controls. Incompatible chemicals can release toxic gases; emergency response is evacuation, ventilation, medical care, and investigation.",
+          "Correct: (a) Provide a mechanical lift or raise the load source to waist height to reduce bending and manual exertion Engineering and task redesign that reduce bending and load handling at floor level address the musculoskeletal hazard at source.",
         imageUrl: "/samples/nebosh-anki-deck-sample-1.webp",
       },
       {
-        question: "Before using a new solvent, an employer must ensure workers have access to:",
+        question: "A principal contractor selects subcontractors for façade work at height. Which action best meets NEBOSH expectations for contractor management?",
         answer:
-          "Correct: (b) A current Safety Data Sheet (SDS) with hazards, controls, PPE, and emergency measures. COSHH requires hazard information via SDS and risk assessment before use of hazardous substances.",
+          "Correct: (a) Pre-qualify competence, define H&S requirements in contract, monitor site performance, and coordinate shared risks Contractor management includes selection, induction, contractual H&S clauses, monitoring, and coordination of overlapping activities and shared site risks.",
         imageUrl: "/samples/nebosh-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "Local Exhaust Ventilation (LEV) on a welding bench fails airflow tests. The best action is:",
+        question: "Static electricity ignition in a solvent filling area is controlled by:",
         answer:
-          "Correct: (c) Take the LEV out of service until repaired, use alternative controls, and notify workers. LEV must be maintained and examined; failed extraction requires repair or substitute controls.",
+          "Correct: (c) Bonding and earthing, conductive footwear/floors, humidity control, and exclusion of ignition sources Bonding/earthing prevents static buildup discharges in flammable atmospheres.",
         imageUrl: "/samples/nebosh-anki-deck-sample-3.webp",
       },
     ],
@@ -3702,23 +3684,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "ASHRAE TC 9.9 recommended inlet air temperature ranges for most IT equipment are:",
+        question: "Hot aisle containment primarily improves",
         answer:
-          "Correct: (a) Defined environmental classes allowing wider bands than legacy 20–25°C-only designs. TC 9.9 classes support higher supply temps where equipment allows, improving economizer hours.",
+          "Correct: (a) Return air temperature to cooling units, raising delta-T and efficiency Hot aisle containment effectively isolates the hot exhaust air from IT equipment, preventing it from mixing with the cold supply air. This isolation ensures that the cooling units receive a higher, more consistent return air temperature, which increases the temperature differential (delta-T) across the cooling coil and improves the efficiency of the cooling system.",
         imageUrl: "/samples/cdcp-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "A CRAH (Computer Room Air Handler) differs from a CRAC primarily because:",
+        question: "EN 50600 classifies availability using Availability Classes. Class 3 MOST closely aligns with:",
         answer:
-          "Correct: (a) CRAH uses chilled water coils while CRAC typically has integral refrigeration. CRAHs are air handlers connected to central chiller plants; CRACs are self-contained DX units.",
+          "Correct: (c) Concurrently maintainable infrastructure with redundant paths EN 50600 Availability Class 3 specifies a data center infrastructure that is concurrently maintainable, featuring redundant components and multiple independent distribution paths for power and cooling. This allows for planned maintenance activities without requiring a shutdown of IT operations.",
         imageUrl: "/samples/cdcp-anki-deck-sample-2.webp",
       },
       {
-        question: "Chilled water supply temperature elevation (within ASHRAE limits) can:",
+        question: "Dual-corded servers connected to A and B PDUs",
         answer:
-          "Correct: (a) Improve chiller efficiency and increase free cooling hours. Higher CHW temps raise evaporator temperature and reduce chiller lift.",
+          "Correct: (c) Allow maintenance on one power path while the other feeds the load Dual-corded servers connected to independent A and B PDUs are a fundamental design for redundancy in data centers. This configuration allows for concurrent maintenance on one power path without interrupting the server's operation, as the other path continues to feed the load, ensuring high availability and failover capability.",
         imageUrl: "/samples/cdcp-anki-deck-sample-3.webp",
       },
     ],
@@ -3769,21 +3749,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "ASHRAE Guideline 0 describes commissioning as:",
+        question: "An assessment finding open outdoor air dampers in winter suggests",
         answer:
-          "Correct: (a) A quality-focused process verifying systems achieve owner requirements throughout project delivery. Guideline 0 is the overarching framework for total building commissioning.",
+          "Correct: (d) Economizer or damper actuator failure causing massive heating load Stuck dampers are common retrocommissioning fixes with fast payback.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-1.webp",
       },
       {
-        question: "The BCxP exam form includes approximately:",
+        question: "Pump affinity laws indicate pump power scales approximately with:",
         answer:
-          "Correct: (b) 130 total items with 120 scored and 10 unscored pretest questions. BCxP has the largest scored item count among common ASHRAE certification exams.",
+          "Correct: (c) The cube of speed (or flow) ratio for variable-speed applications VFDs on variable-load pumps yield significant energy savings.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-2.webp",
       },
       {
-        question: "The published BCxP passing score is approximately:",
+        question: "When calibrating an existing-building energy model to utility data, a common acceptance criterion is?",
         answer:
-          "Correct: (a) 83 correct out of 120 scored items (verify current FAQs). BCxP has the highest pass threshold among the common ASHRAE credentials.",
+          "Correct: (c) Monthly or annual simulated energy within an agreed tolerance (often ±5–15%) of billed consumption after normalization ASHRAE and industry practice use tolerance bands on normalized utility data to judge model calibration quality.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-3.webp",
       },
     ],
@@ -4027,24 +4007,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A building project team is selecting air filtration media for a ventilation system serving a densely occupied open-plan office. The team wants to reduce PM2.5 from outdoor intake and minimize microbial growth on filter media. Which combination best meets these goals?",
+        question: "A WELL v2 project team is designing open-plan office lighting to support circadian health. Which metric is most directly used to evaluate melanopic (circadian-effective) light exposure?",
         answer:
-          "Correct: (b) MERV 13 filter made of synthetic polymer; low moisture retention. MERV 13 captures at least 85% of 1–3 micron particles, reducing PM2.5; low moisture retention discourages microbial growth per WELL Air filtration concepts.",
+          "Correct: (a) Equivalent Melanopic Lux (EML) at the eye WELL Light concepts emphasize circadian-effective illumination evaluated at the occupant's eye using melanopic weighting, commonly expressed as EML rather than generic illuminance alone.",
         imageUrl: "/samples/well-ap-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "A building owner wants to implement the WELL Nourishment concept by offering healthy food options in an on-site cafeteria. To earn a point under Feature N03 (Fruits and Vegetables), what minimum percentage of total food offerings must be fruits and non-starchy vegetables?",
+        question: "A WELL v2 project team is evaluating partition assemblies between private offices and an open workspace. Which acoustic rating most directly measures airborne sound transmission through a wall or floor-ceiling assembly?",
         answer:
-          "Correct: (c) 50%. WELL v2 Feature N03 requires at least 50% of cafeteria food offerings to be fruits and non-starchy vegetables to encourage nutrient-dense choices aligned with dietary guidelines.",
+          "Correct: (d) Sound Transmission Class (STC) STC quantifies how well a building partition attenuates airborne sound such as speech and music. WELL Sound strategies often reference STC when separating noisy and quiet zones.",
         imageUrl: "/samples/well-ap-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "A project team pursuing the WELL Water concept aims for the optimization point for Feature 27 (Drinking Water Quality) after meeting the precondition tests for lead, arsenic, and mercury. Which contaminant is explicitly listed as an additional test in WELL v2 Feature 27?",
+        question: "A facilities manager wants to reduce outdoor smoke and dust entering an air-handling unit. Which filter rating is generally more effective for capturing smaller particles than MERV 8?",
         answer:
-          "Correct: (a) Chromium (hexavalent). Feature 27 optimization requires testing additional contaminants beyond the precondition list; hexavalent chromium (Cr⁶⁺) is one of them.",
+          "Correct: (d) MERV 13 MERV 13 filtration is substantially more effective than MERV 8 at removing smaller airborne particles, including a meaningful portion of fine particulate matter. It is commonly used in higher-performance indoor-air strategies when the system can accommodate the pressure drop.",
         imageUrl: "/samples/well-ap-anki-deck-sample-3.webp",
       },
     ],
@@ -4094,22 +4071,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "IPMVP Option B is characterized by:",
+        question: "A 460V motor circuit draws 100 A at 0.75 power factor. Approximate real power is",
         answer:
-          "Correct: (a) Retrofit isolation with utility-grade measurement of energy use at the ECM level. Option B uses periodic or continuous measurements at specific retrofits to quantify savings.",
+          "Correct: (d) 59 kW Three-phase kW ≈ √3 × V × I × PF / 1000 = 1.732 × 460 × 100 × 0.75 / 1000 ≈ 59.7 kW.",
         imageUrl: "/samples/cem-anki-deck-sample-1.webp",
       },
       {
-        question: "In an Energy Savings Performance Contract (ESPC), the ESCO typically:",
+        question: "A centrifugal chiller rated at 0.55 kW/ton at AHRI conditions is operating at 0.72 kW/ton. Which issue is MOST likely?",
         answer:
-          "Correct: (a) Designs, installs, and often guarantees savings financed through future energy cost reductions. ESCOs assume implementation and performance risk per contract, repaid via savings stream.",
+          "Correct: (d) Elevated condenser water temperature or fouled condenser tubes raising lift Higher condenser entering water temperature increases compressor lift and kW/ton; condenser fouling has a similar effect.",
         imageUrl: "/samples/cem-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "The commissioning authority (CxA) on a new construction project should:",
+        question: "An energy manager compares two ECMs using simple payback. Project A saves $12,000/year with a $36,000 cost. Project B saves $8,000/year with a $20,000 cost. Which statement is correct?",
         answer:
-          "Correct: (a) Review design, witness testing, and verify systems operate per owner's project requirements. Independent or qualified CxA verifies design intent through plans review, submittals, and testing.",
+          "Correct: (b) Project B has the shorter simple payback period Simple payback equals initial cost divided by annual savings. Project A: 3.0 years; Project B: 2.5 years, so Project B returns capital faster on a simple payback basis.",
         imageUrl: "/samples/cem-anki-deck-sample-3.webp",
       },
     ],
@@ -4154,24 +4130,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A BACnet network segment has devices with MAC addresses 5, 12, 18, and 25. Which device will serve as the designated router if all devices have the same router priority?",
+        question: "During BACnet device configuration, a technician needs to set up trending for analog input objects. The facility manager wants to store 30 days of hourly samples for energy analysis. What BACnet service is most appropriate for retrieving this historical data from the trend log objects?",
         answer:
-          "Correct: (d) Device with MAC address 25. When BACnet devices have the same router priority, the device with the highest MAC address becomes the designated router.",
+          "Correct: (c) ReadRange ReadRange is specifically designed for retrieving time-series data from trend log objects, allowing efficient access to historical samples within specified time ranges or record counts.",
         imageUrl: "/samples/bms-building-automation-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "What is the primary purpose of the BACnet Device Object in a building automation system?",
+        question: "In a multi-zone air handling unit with hot water reheat coils, the BAS implements a supply air temperature reset strategy. The system currently shows 6 zones calling for heating (reheat valves >50% open) and 2 zones satisfied. What should the reset logic do to optimize energy performance?",
         answer:
-          "Correct: (b) To provide basic device identification and network configuration information. The Device Object is mandatory and is the fundamental identifying object on the network.",
+          "Correct: (a) Increase supply air temperature to reduce reheat energy When multiple zones have reheat valves significantly open (>50%), it indicates the supply air is too cold for current conditions. Increasing the supply air temperature reduces the need for reheat energy while still maintaining zone comfort, which is the primary goal of supply air temperature reset control.",
         imageUrl: "/samples/bms-building-automation-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "In a BACnet/IP network, a device needs to discover other devices on a remote subnet. Which BACnet service is primarily responsible for this discovery process?",
+        question: "A BAS operator is investigating why critical equipment alarms are not escalating to management after 30 minutes as configured. The alarm acknowledgment logs show that alarms are being auto-acknowledged by the system every 25 minutes. What workflow component requires immediate attention?",
         answer:
-          "Correct: (c) Who-Is service forwarded through BACnet Broadcast Management Devices (BBMDs). Standard broadcasts do not cross subnet boundaries without BBMD forwarding.",
+          "Correct: (b) Automatic acknowledgment timer configuration Auto-acknowledgment at 25 minutes prevents the 30-minute escalation from occurring because acknowledged alarms typically don't escalate. The auto-acknowledgment timer needs to be disabled or set longer than the escalation period.",
         imageUrl: "/samples/bms-building-automation-anki-deck-sample-3.webp",
       },
     ],
@@ -4222,24 +4195,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "When working with refrigerant recovery equipment, what is the minimum required recovery efficiency for stationary refrigeration and air conditioning equipment?",
+        question: "A technician needs to determine the leak rate for a commercial refrigeration system. The system has a full charge of 45 pounds of R-404A refrigerant and loses 6 pounds over a 12-month period. What is the annual leak rate percentage for this system?",
         answer:
-          "Correct: (c) 90% of the refrigerant charge. EPA rules require at least 90% recovery efficiency for stationary equipment before disposal or major repair.",
+          "Correct: (b) 13.3%",
         imageUrl: "/samples/hvac-epa-608-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "A technician suspects acid and moisture contamination in a recovered refrigerant stream. Which precaution best protects recovery equipment during evacuation?",
+        question: "A technician is servicing a Type II appliance containing 20 pounds of R-134a. The system has been running normally, but when checked with manifold gauges, both high and low side pressures read exactly the same at 70 psig. What does this condition most likely indicate?",
         answer:
-          "Correct: (c) Install an in-line filter drier ahead of the recovery machine inlet. Filter driers trap contaminants before they reach the recovery unit.",
+          "Correct: (b) The compressor is not running or has failed When both high and low side pressures equalize at the same reading, it indicates the compressor is not running or has failed. During normal operation, there should be a significant pressure difference between the high and low sides of the system.",
         imageUrl: "/samples/hvac-epa-608-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "What is the maximum allowable leak rate for commercial refrigeration equipment containing 50 or more pounds of refrigerant before repair is required?",
+        question: "When leak testing a low-pressure appliance, what is the maximum test pressure that should be used to avoid damaging system components?",
         answer:
-          "Correct: (c) 20% annually. Commercial refrigeration has a 20% annual leak threshold — stricter than some industrial categories but different from comfort cooling rules.",
+          "Correct: (b) 10 psig Low-pressure appliances should be leak tested at no more than 10 psig because these systems are designed to operate at or below atmospheric pressure. Higher test pressures could damage components not designed for elevated pressures and may not accurately represent actual operating conditions.",
         imageUrl: "/samples/hvac-epa-608-anki-deck-sample-3.webp",
       },
     ],

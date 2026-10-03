@@ -31,6 +31,8 @@ type GumroadCatalog = {
       createdAt?: string;
       apkgUploadedAt?: string;
       publishedAt?: string;
+      /** Sold on Gumroad only (Tier C freeze) — never becomes a site deck page. */
+      siteHidden?: boolean;
     }
   >;
 };
@@ -47,7 +49,7 @@ const waveSpecBySlug = waveSpecs as Record<string, WaveSpec>;
  * Auto-launch when:
  * - money cohort, or
  * - explicit force-launch allowlist, or
- * - product has gumroadProductId + apkgUploadedAt (sellable — do not leave orphans)
+ * - product has gumroadProductId + apkgUploadedAt (sellable — do not leave orphans), unless siteHidden
  */
 export const WAVE_LAUNCH_COHORTS = new Set(["money"]);
 
@@ -85,7 +87,7 @@ export function isWaveForceLaunchSlug(slug: string): boolean {
 /** Wave product already sellable on Gumroad (id + apkg) — site catalog must not stay planned. */
 export function isWaveApkgReadyLaunchSlug(slug: string): boolean {
   const product = wave.products[slug];
-  return Boolean(product?.gumroadProductId && product?.apkgUploadedAt);
+  return Boolean(product?.gumroadProductId && product?.apkgUploadedAt && !product.siteHidden);
 }
 
 /** Building catalog + money / force-launch / apkg-ready wave SKUs. */
@@ -162,49 +164,6 @@ const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set([
   "series-79-anki-deck",
   "series-99-anki-deck",
 ]);
-
-/** Copy must match public/samples/ace-cpt-anki-deck-sample-{1,2,3}.webp (not bank Q1–Q3). */
-const ACE_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
-  {
-    question: "The primary purpose of a preparticipation health screening is to:",
-    answer:
-      "(a) Identify health risks and determine whether medical clearance or modifications are needed before exercise.",
-    imageUrl: "/samples/ace-cpt-anki-deck-sample-1.webp",
-  },
-  {
-    question: "Informed consent for training should include:",
-    answer:
-      "(b) Explanation of procedures, risks/benefits, and voluntary participation with opportunity for questions.",
-    imageUrl: "/samples/ace-cpt-anki-deck-sample-2.webp",
-  },
-  {
-    question: "A client reports chest pain during exertion. The safest immediate action is to:",
-    answer:
-      "(c) Stop exercise and advise seeking urgent medical evaluation as appropriate.",
-    imageUrl: "/samples/ace-cpt-anki-deck-sample-3.webp",
-  },
-];
-
-/** Copy must match public/samples/acsm-cpt-anki-deck-sample-{1,2,3}.webp (not bank Q1–Q3). */
-const ACSM_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
-  {
-    question: "Feet turning out in the overhead squat assessment most commonly suggests overactivity of:",
-    answer:
-      "(b) Soleus / lateral gastrocnemius and/or biceps femoris (short head) with underactive medial gastroc/medial hamstrings/gracilis/sartorius/popliteus as applicable",
-    imageUrl: "/samples/acsm-cpt-anki-deck-sample-1.webp",
-  },
-  {
-    question: "What does a resting heart rate assessment primarily help a trainer establish?",
-    answer:
-      "(c) A baseline cardiorespiratory status and training intensity reference (with other metrics)",
-    imageUrl: "/samples/acsm-cpt-anki-deck-sample-2.webp",
-  },
-  {
-    question: "Which assessment is most appropriate as a dynamic postural observation of the kinetic chain under load?",
-    answer: "(d) Overhead squat assessment",
-    imageUrl: "/samples/acsm-cpt-anki-deck-sample-3.webp",
-  },
-];
 
 /** Copy must match public/samples/luxembourg-vivre-ensemble-anki-deck-sample-fr-{1,2,3}.webp
  *  and ...-sample-{1,2,3}.webp (EN). */
@@ -291,12 +250,6 @@ function buildSampleCardsFromLinkedMock(deck: PlannedDeck): SampleCard[] {
   const rendered = renderedSampleCards(deck.slug);
   if (rendered) {
     return rendered;
-  }
-  if (deck.slug === "ace-cpt-anki-deck") {
-    return ACE_LAUNCH_SAMPLE_CARDS;
-  }
-  if (deck.slug === "acsm-cpt-anki-deck") {
-    return ACSM_LAUNCH_SAMPLE_CARDS;
   }
   if (deck.slug === "luxembourg-vivre-ensemble-anki-deck") {
     return LUXEMBOURG_LAUNCH_SAMPLE_CARDS;

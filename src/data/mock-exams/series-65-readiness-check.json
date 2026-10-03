@@ -36,33 +36,33 @@
     "id": "series-65-readiness-check-economics-002",
     "examSlug": "series-65-readiness-check",
     "topicId": "economics",
-    "prompt": "GDP that is adjusted for inflation is called:",
+    "prompt": "Mr. Chen is in the 32% federal bracket and pays no state income tax. A municipal bond yields 3.40%. What yield would a taxable corporate bond need to match it after tax?",
     "options": [
       {
         "id": "a",
-        "text": "Real GDP"
+        "text": "2.31 percent"
       },
       {
         "id": "b",
-        "text": "Current account"
+        "text": "4.49 percent"
       },
       {
         "id": "c",
-        "text": "Nominal GDP"
+        "text": "5.00 percent"
       },
       {
         "id": "d",
-        "text": "M1 money supply"
+        "text": "10.63 percent"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Real GDP removes price-level changes to show volume of output.",
+    "correctOptionId": "c",
+    "explanation": "Tax-equivalent yield = muni yield ÷ (1 − marginal rate) = 3.40% ÷ (1 − 0.32) = 3.40% ÷ 0.68 = 5.00%. A taxable bond yielding 5.00% keeps 5.00% × 0.68 = 3.40% after federal tax, matching the muni.",
     "distractorExplanations": {
-      "b": "Trade balance component.",
-      "c": "Nominal is in current dollars.",
-      "d": "Money supply measure."
+      "a": "Multiplies by 0.68, which gives the after-tax yield of a taxable 3.40% bond, not the taxable yield needed to equal the muni.",
+      "b": "Multiplies by 1.32 instead of dividing by 0.68; grossing up by the tax rate understates the required taxable yield.",
+      "d": "Divides by the 32% tax rate instead of by one minus the rate, more than doubling the true tax-equivalent yield."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "series-65-readiness-check-products-001",
     "examSlug": "series-65-readiness-check",
     "topicId": "products",
-    "prompt": "A key advantage of mutual funds for retail investors is",
+    "prompt": "Laura expects interest rates to rise sharply and holds a 20-year zero-coupon Treasury. She wants to cut interest-rate risk the most while keeping Treasury credit quality. Which swap fits?",
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed principal"
+        "text": "A 20-year Treasury bond paying a 5% semiannual coupon"
       },
       {
         "id": "b",
-        "text": "No market risk"
+        "text": "A 30-year Treasury Inflation-Protected Security (TIPS)"
       },
       {
         "id": "c",
-        "text": "FDIC insurance on equity funds"
+        "text": "A 10-year zero-coupon Treasury STRIPS position"
       },
       {
         "id": "d",
-        "text": "Professional management and diversification at relatively low minimums"
+        "text": "A 3-year Treasury note paying a 4% coupon"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Funds pool money for diversified, managed portfolios (risk remains)",
+    "explanation": "Interest-rate risk rises with duration. A zero's duration equals its maturity, so the 20-year zero carries about 20 years of duration. A 3-year coupon note has a duration under 3 years, the smallest here, so its price falls least when rates climb.",
     "distractorExplanations": {
-      "a": "Not guaranteed.",
-      "b": "Market risk remains.",
-      "c": "Equity funds aren't FDIC-insured."
+      "a": "The coupon trims duration only modestly; a 20-year coupon bond still has a duration in the low teens and stays highly rate-sensitive.",
+      "b": "TIPS adjust principal for inflation, but a 30-year maturity keeps duration very long, so rising real rates still hit price hard.",
+      "c": "Halving the zero's maturity helps, but a 10-year zero still has a 10-year duration, far above a 3-year note."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local short-stem expansion"
   },
   {
@@ -1818,31 +1818,31 @@
     "id": "series-65-readiness-check-ethics-011",
     "examSlug": "series-65-readiness-check",
     "topicId": "ethics",
-    "prompt": "An adviser borrowing money from a retail client is generally",
+    "prompt": "IAR Priya Nair needs a $40,000 loan to renovate her home. Under NASAA's model rule on unethical adviser practices, which lender is she permitted to borrow from?",
     "options": [
       {
         "id": "a",
-        "text": "Encouraged without limits"
+        "text": "An advisory client that is a bank in the business of lending"
       },
       {
         "id": "b",
-        "text": "Required annually"
+        "text": "Her brother, who is also one of her advisory clients"
       },
       {
         "id": "c",
-        "text": "The same as soft dollars"
+        "text": "A long-time advisory client, if they sign a written promissory note"
       },
       {
         "id": "d",
-        "text": "Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes"
+        "text": "An advisory client, at a market interest rate with written disclosure"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Borrowing from clients creates severe conflicts and is largely prohibited.",
+    "correctOptionId": "a",
+    "explanation": "NASAA lists borrowing money or securities from a client as unethical unless the client is a broker-dealer, an affiliate of the adviser, or a financial institution engaged in the business of lending. A bank client fits that exception; loan terms or disclosure do not create one.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes”.",
-      "b": "Not the best answer here; the right answer is “Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes”.",
-      "c": "Not the best answer here; the right answer is “Prohibited/highly restricted except narrow circumstances (eg, certain broker-dealers/affiliates) under NASAA model themes”."
+      "b": "Confuses FINRA Rule 3240, which can let agents borrow from immediate family, with the NASAA adviser rule, which has no family exception.",
+      "c": "A promissory note documents the loan but fits no exception; the client is not a lender, broker-dealer, or affiliate of the adviser.",
+      "d": "Fair interest and disclosure do not cure the conflict; the rule turns on who the client is, not on the loan terms."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality). · Local QA repair (stems/distractors)"

@@ -234,33 +234,33 @@
     "id": "ny-real-estate-readiness-check-license-law-008",
     "examSlug": "ny-real-estate-readiness-check",
     "topicId": "license-law",
-    "prompt": "A New York salesperson's license renewal typically requires:",
+    "prompt": "A New York salesperson sits down at a homeowner's kitchen table for a listing presentation. Before discussing the owner's price, timeline, or reasons for selling, what does New York law require the salesperson to do?",
     "options": [
       {
         "id": "a",
-        "text": "Never completing any continuing education"
+        "text": "Present the agency disclosure form for acknowledgment"
       },
       {
         "id": "b",
-        "text": "Paying only a parking ticket"
+        "text": "Present the agency disclosure form after the listing is signed"
       },
       {
         "id": "c",
-        "text": "Automatic lifetime renewal with no filing"
+        "text": "Send the disclosure form to the buyer's agent with any offer"
       },
       {
         "id": "d",
-        "text": "Meeting DOS renewal and continuing education requirements on the prescribed cycle"
+        "text": "Mail the disclosure form with the closing paperwork"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Active status depends on timely renewal and required CE under DOS rules.",
+    "correctOptionId": "a",
+    "explanation": "New York requires licensees to present the agency disclosure form at the first substantive contact with a prospective seller or buyer, before confidential details such as price or motivation are discussed. The consumer is asked to sign an acknowledgment; if they refuse, the licensee records the refusal in a signed declaration.",
     "distractorExplanations": {
-      "a": "CE is generally required for renewal.",
-      "b": "Parking tickets are unrelated.",
-      "c": "Licenses are not lifetime without renewal."
+      "b": "Too late: the form is due at first substantive contact, before the owner shares price or motivation details.",
+      "c": "Confuses the consumer disclosure with paperwork between agents; the homeowner in front of the salesperson receives it first.",
+      "d": "Treats agency disclosure as an after-the-fact record; its purpose is to explain representation before any confidential talk."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
   },
   {
@@ -597,31 +597,31 @@
     "id": "ny-real-estate-readiness-check-contracts-agency-004",
     "examSlug": "ny-real-estate-readiness-check",
     "topicId": "contracts-agency",
-    "prompt": "Dual agency in New York generally requires:",
+    "prompt": "A Brooklyn brokerage holds the listing on a brownstone, and another agent at the same firm represents a buyer who wants to make an offer on it. What must happen before the firm can act for both sides?",
     "options": [
       {
         "id": "a",
-        "text": "Keeping both parties unaware"
+        "text": "The listing agent gets the seller's verbal approval"
       },
       {
         "id": "b",
-        "text": "Automatic dual agency with no disclosure"
+        "text": "Seller and buyer each give informed written consent"
       },
       {
         "id": "c",
-        "text": "Dual agency only for cash deals under $10,000"
+        "text": "The buyer signs a waiver releasing the firm from liability"
       },
       {
         "id": "d",
-        "text": "Informed written consent of the parties as required by law"
+        "text": "The broker notifies the Department of State of the conflict"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Advanced informed consent is required before dual agency can lawfully proceed.",
+    "correctOptionId": "b",
+    "explanation": "When one brokerage represents both seller and buyer in the same deal, New York permits dual agency only with the informed written consent of both parties, after they learn the firm cannot give either side undivided loyalty. With the same written consent, the broker may appoint designated sales agents to advocate for each side.",
     "distractorExplanations": {
-      "a": "Concealment violates agency law.",
-      "b": "Disclosure/consent is mandatory, not automatic secrecy.",
-      "c": "Price and cash terms do not waive consent rules."
+      "a": "Consent from one party is not enough, and oral approval is insufficient; both clients must consent in writing.",
+      "c": "A liability waiver is not consent; both parties must understand and accept the limits of dual agency before it begins.",
+      "d": "No agency notice to the Department of State is required; consent comes from the two clients, not the regulator."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -993,33 +993,33 @@
     "id": "ny-real-estate-readiness-check-finance-valuation-001",
     "examSlug": "ny-real-estate-readiness-check",
     "topicId": "finance-valuation",
-    "prompt": "Loan-to-value (LTV) ratio is best described as:",
+    "prompt": "Dana is buying a Rochester house for $320,000 with a conventional loan and $40,000 down. The appraisal comes in at $300,000, and the lender bases LTV on the lower of price or appraised value. What is her LTV, and is PMI typically required?",
     "options": [
       {
         "id": "a",
-        "text": "The loan amount divided by the property's value (or purchase price, as used by the lender)"
+        "text": "86.7%; PMI is required"
       },
       {
         "id": "b",
-        "text": "Property taxes divided by HOA dues"
+        "text": "87.5%; PMI is required"
       },
       {
         "id": "c",
-        "text": "Commission rate times days on market"
+        "text": "93.3%; PMI is not required"
       },
       {
         "id": "d",
-        "text": "Square footage divided by lot size"
+        "text": "93.3%; PMI is required"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "LTV measures leverage: loan ÷ value. Higher LTV generally means more lender risk.",
+    "correctOptionId": "d",
+    "explanation": "LTV = loan ÷ the lower of price or appraised value. The loan is $320,000 − $40,000 = $280,000, and $280,000 ÷ $300,000 = 93.3%. Conventional lenders typically require private mortgage insurance when LTV is above 80%, so PMI applies. The low appraisal pushed her LTV higher than the price alone suggests.",
     "distractorExplanations": {
-      "b": "Taxes/HOA are ownership costs, not LTV.",
-      "c": "Commission and DOM are marketing metrics.",
-      "d": "Size ratios are not financing LTV."
+      "a": "Subtracts the down payment from the appraisal ($260,000 ÷ $300,000); the loan is price minus down payment, $280,000.",
+      "b": "Divides by the $320,000 price; the lender uses the lower appraised value, which raises LTV to 93.3%.",
+      "c": "Right ratio, wrong rule: PMI is the conventional-loan insurance, typically required above 80% LTV, not an FHA-only cost."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
   },
   {

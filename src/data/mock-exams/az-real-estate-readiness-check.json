@@ -102,33 +102,33 @@
     "id": "az-real-estate-readiness-check-agency-law-004",
     "examSlug": "az-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Tucson seller Helen signs a six-month exclusive listing with broker Ray. Two months later, before any offer is accepted, Helen dies. Her daughter, the named executor, calls Ray to ask where things stand. What is the status of the listing?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "It continues, and the executor must honor its terms"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "It continues until the six-month term expires"
       },
       {
         "id": "c",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "It ended at Helen's death; the estate may relist"
       },
       {
         "id": "d",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "It ends once Ray signs a written release for the estate"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "explanation": "A listing creates a personal agency relationship, and the death of either the principal or the broker terminates it automatically by operation of law. Ray has no authority to keep marketing the home. Once the executor has authority to act for the estate, she can sign a new listing if the heirs want to sell.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "d": "Transfer taxes are closing items, not earnest money."
+      "a": "Confuses a sale contract with agency; an accepted purchase contract may bind the estate, but agency authority ends at the principal's death.",
+      "b": "The term sets the maximum length of the listing; the principal's death ends the agency earlier by operation of law.",
+      "d": "No release is needed; termination by death is automatic and requires no action by the broker or the estate."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "az-real-estate-readiness-check-property-ownership-001",
     "examSlug": "az-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "Walter deeds his Scottsdale condo to his nephew Ben 'for the life of Walter's sister, Rose,' naming no remainderman. Ben lives there for years, then dies while Rose is still alive. Who holds the right to possess the condo now?",
     "options": [
       {
         "id": "a",
-        "text": "A leasehold for one month"
+        "text": "Walter, because the estate reverts when Ben dies"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "Rose, because the estate is measured by her life"
       },
       {
         "id": "c",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "Ben's estate, which now owns it in fee simple"
       },
       {
         "id": "d",
-        "text": "A personal property license"
+        "text": "Ben's heirs or devisees, until Rose dies"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "d",
+    "explanation": "This is a life estate pur autre vie: Ben's estate lasts for Rose's life, not his own. Because the measuring life is still alive, Ben's interest passes to his heirs or devisees, who hold it until Rose dies. At Rose's death the property reverts to Walter or his estate, since no remainderman was named.",
     "distractorExplanations": {
-      "a": "Leaseholds are non-freehold.",
-      "b": "Easements are nonpossessory rights.",
-      "d": "Licenses are typically personal privileges."
+      "a": "Treats it as an ordinary life estate measured by Ben's own life; Walter's reversion waits for Rose's death.",
+      "b": "Rose is the measuring life, not an owner; being named in the deed gives her no right to possess the condo.",
+      "c": "A life estate does not grow into fee simple; Ben's heirs hold it until the measuring life ends, then it reverts."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "az-real-estate-readiness-check-finance-appraisal-001",
     "examSlug": "az-real-estate-readiness-check",
     "topicId": "finance-appraisal",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "A Mesa fourplex grosses $72,000 a year. Vacancy and credit loss run 5%, operating expenses are $20,400, and the owner's mortgage payments total $12,000 a year. At a 6% market cap rate, what value does the income approach indicate?",
     "options": [
       {
         "id": "a",
-        "text": "Down payment ÷ interest rate"
+        "text": "$600,000"
       },
       {
         "id": "b",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$800,000"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$860,000"
       },
       {
         "id": "d",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$1,200,000"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "correctOptionId": "b",
+    "explanation": "Value = NOI ÷ cap rate. Effective gross income is $72,000 − 5% vacancy = $68,400. Subtracting $20,400 of operating expenses leaves NOI of $48,000. Debt service is a financing cost, not an operating expense, so it is ignored. $48,000 ÷ 0.06 = $800,000.",
     "distractorExplanations": {
-      "a": "Nonsense formula.",
-      "b": "Unrelated.",
-      "d": "That relates to debt-to-income concepts."
+      "a": "Subtracts the $12,000 mortgage payments; debt service depends on the owner's financing and is excluded from NOI.",
+      "c": "Skips the 5% vacancy and credit loss, capitalizing $51,600 instead of the true $48,000 NOI.",
+      "d": "Capitalizes gross income; the income approach divides net operating income, after vacancy and expenses, by the cap rate."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {

@@ -115,19 +115,25 @@ function renderTemplate(tpl, fields, frontSide = "") {
   let out = tpl;
   const section = /\{\{([#^])([^}]+)\}\}([\s\S]*?)\{\{\/\2\}\}/;
   for (let m = out.match(section); m; m = out.match(section)) {
-    const filled = Boolean(stripHtml(fields[m[2].trim()] ?? ""));
+    // Anki's field_is_empty: only whitespace, <br> and <div> tags count as empty (an <img> alone is content).
+    const filled = !/^(?:\s|&nbsp;|<\/?(?:br|div)\s*\/?>)*$/i.test(fields[m[2].trim()] ?? "");
     out = out.replace(m[0], (m[1] === "#") === filled ? m[3] : "");
   }
   out = out.replace(/\{\{([^}]+)\}\}/g, (_, raw) => {
-    const key = raw.trim();
+    // Anki drops extra opening braces, so legacy `{{{Image}}` renders the Image field.
+    const key = raw.trim().replace(/^\{+/, "").trim();
     if (key === "FrontSide") return frontSide;
     const [filter, name] = key.includes(":") ? key.split(/:(.+)/) : [null, key];
     if (filter === "type" || filter?.startsWith("tts")) return "";
     const value = fields[name.trim()] ?? "";
     return filter === "text" ? stripHtml(value) : value;
   });
-  return out.replace(/\[sound:[^\]]+\]/g, "");
+  return out.replace(/\[sound:[^\]]+\]/g, SOUND_BUTTON);
 }
+
+/** Anki desktop shows a round play button where a [sound:] tag sits. */
+const SOUND_BUTTON =
+  '<span class="replay-button" style="display:inline-block;vertical-align:middle;margin:4px"><svg width="40" height="40" viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="#fff" stroke="#6b7280" stroke-width="3"/><path d="M26 20 L46 32 L26 44 Z" fill="#374151"/></svg></span>';
 
 const FRAME_CSS = `
 html, body { margin: 0; width: ${WIDTH}px; height: 100vh; overflow: hidden; background: #1e1e1e; }
@@ -143,6 +149,9 @@ html, body { margin: 0; width: ${WIDTH}px; height: 100vh; overflow: hidden; back
 .answerbar { display: flex; justify-content: space-around; padding: 6px 18px 10px; background: #2a2a2a; color: #e5e5e5; font-size: 12px; text-align: center; }
 .answerbar b { display: block; margin-top: 3px; padding: 5px 0; width: 92px; border-radius: 9px; background: #5a5a5a; font-size: 13px; font-weight: 500; }
 `;
+
+/** Anki's light-mode reviewer defaults; deck CSS loads after and overrides them. */
+const ANKI_DEFAULT_CARD_CSS = `.card { background-color: #fff; color: #000; padding: 20px; font-size: 20px; }`;
 
 const BARE_CSS = `html, body { margin: 0; width: ${WIDTH}px; height: 100vh; overflow: hidden; }
 .stage { width: ${WIDTH}px; height: 100vh; overflow: hidden; } .stage > .card { min-height: 100%; box-sizing: border-box; }`;
@@ -160,7 +169,7 @@ ${stage}
         .join("")}</div></div>`
     : stage;
   return `<!doctype html><html><head><meta charset="utf-8"><base href="file://${mediaDir}/">
-<style>${css}</style><style>${frame ? FRAME_CSS : BARE_CSS}${MARK_CSS}</style>
+<style>${ANKI_DEFAULT_CARD_CSS}</style><style>${css}</style><style>${frame ? FRAME_CSS : BARE_CSS}${MARK_CSS}</style>
 <script>
 window.MathJax = { tex: { inlineMath: [["\\\\(", "\\\\)"]], displayMath: [["\\\\[", "\\\\]"]] }, svg: { fontCache: "global" },
   startup: { pageReady: () => MathJax.startup.defaultPageReady().then(fit) } };
@@ -302,7 +311,10 @@ async function main() {
   const apkg = args.apkg ?? resolveApkg(args.slug);
   const work = join(root, "tmp/anki-shots", args.slug);
   const { models, notes, mediaDir } = loadDeck(apkg, join(work, "apkg"));
-  const findNote = (front) => notes.find((n) => norm(stemOf(n.flds.split("\x1f")[0])) === norm(front));
+  const findNote = (front) =>
+    notes.find((n) => norm(stemOf(n.flds.split("\x1f")[0])) === norm(front)) ??
+    notes.find((n) => n.flds.split("\x1f").some((f) => norm(stemOf(f)) === norm(front))) ??
+    notes.find((n) => norm(stemOf(n.flds.split("\x1f")[0])).startsWith(norm(front)));
 
   const fronts = args.fronts.length
     ? args.fronts

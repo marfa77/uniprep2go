@@ -828,31 +828,31 @@
     "id": "series-79-readiness-check-mna-011",
     "examSlug": "series-79-readiness-check",
     "topicId": "mna",
-    "prompt": "In a leveraged buyout, returns to sponsors are driven primarily by:",
+    "prompt": "A buyer agrees to acquire Target Co. for 9.0x its $100 million EBITDA on a cash-free, debt-free basis. Target has $200 million of debt and $50 million of cash. What equity purchase price do the sellers receive?",
     "options": [
       {
         "id": "a",
-        "text": "Only dividend policy of unrelated firms"
+        "text": "$650 million"
       },
       {
         "id": "b",
-        "text": "Debt paydown, EBITDA growth, and exit multiple"
+        "text": "$700 million"
       },
       {
         "id": "c",
-        "text": "Elimination of all operating risk"
+        "text": "$750 million"
       },
       {
         "id": "d",
-        "text": "Government grants"
+        "text": "$1,050 million"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "LBO returns come from deleveraging, growth, and multiple expansion/contraction.",
+    "correctOptionId": "c",
+    "explanation": "Enterprise value = 9.0 × $100M = $900M. In a cash-free, debt-free deal the sellers repay debt and keep the cash: equity value = $900M − $200M debt + $50M cash = $750M. Debt reduces, and cash increases, what equity holders receive.",
     "distractorExplanations": {
-      "a": "Too narrow.",
-      "c": "Risk remains.",
-      "d": "Not primary driver."
+      "a": "Subtracts both debt and cash ($900M − $200M − $50M); cash is added back to reach equity value, not deducted.",
+      "b": "Deducts the $200M of debt but ignores the $50M of cash that the sellers keep in a cash-free, debt-free deal.",
+      "d": "Adds net debt to enterprise value ($900M + $150M), running the enterprise-to-equity bridge backward."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1785,31 +1785,31 @@
     "id": "series-79-readiness-check-regulations-010",
     "examSlug": "series-79-readiness-check",
     "topicId": "regulations",
-    "prompt": "Underwriter due diligence defense under Section 11 relates to:",
+    "prompt": "After an IPO, investors sue under Section 11 over a misstatement in the audited financial statements. Underwriter Kestrel did not re-audit them but had no reason to doubt the auditor's report. What is Kestrel's best defense?",
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed stock price performance"
+        "text": "Reliance on the expertised audit, having no reasonable ground to doubt it"
       },
       {
         "id": "b",
-        "text": "Avoiding all liability regardless of fraud"
+        "text": "Investors must first prove they relied on the misstated figures"
       },
       {
         "id": "c",
-        "text": "Reasonable investigation of registration statement disclosures"
+        "text": "The investors sued more than 90 days after the registration became effective"
       },
       {
         "id": "d",
-        "text": "Only municipal bond defaults"
+        "text": "Section 11 reaches the issuer and its officers but not its underwriters"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Due diligence can mitigate Section 11 liability for underwriters.",
+    "correctOptionId": "a",
+    "explanation": "Section 11 gives underwriters a due diligence defense. For expertised portions such as audited financials, the underwriter need show only that it had no reasonable ground to believe, and did not believe, they were misstated; non-expertised parts require its own reasonable investigation.",
     "distractorExplanations": {
-      "a": "No performance guarantee.",
-      "b": "Fraud still actionable.",
-      "d": "Section 11 applies to registered offerings broadly."
+      "b": "Section 11 generally does not require proof of reliance; a material misstatement in the effective registration statement is enough.",
+      "c": "Section 11 claims may be brought within 1 year of discovery and 3 years of the offering; 90 days is not a bar.",
+      "d": "Section 11 expressly lists every underwriter, along with signers and directors, as a potential defendant."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -3336,31 +3336,31 @@
     "id": "series-79-readiness-check-products-027",
     "examSlug": "series-79-readiness-check",
     "topicId": "products",
-    "prompt": "A private placement memorandum under Regulation D typically includes:",
+    "prompt": "Fintech issuer Northloop plans a $25 million raise, to be advertised on LinkedIn and its website, and will sell to accredited investors exclusively. Which offering exemption fits?",
     "options": [
       {
         "id": "a",
-        "text": "A guaranteed return promise without risk disclosure"
+        "text": "Rule 506(b), since every buyer will be accredited"
       },
       {
         "id": "b",
-        "text": "Only marketing slogans with no financials"
+        "text": "Rule 506(c), verifying each buyer's accredited status"
       },
       {
         "id": "c",
-        "text": "Risk factors, use of proceeds, and issuer financial information for accredited or qualified investors"
+        "text": "Regulation Crowdfunding, as it permits online advertising"
       },
       {
         "id": "d",
-        "text": "Public advertising to unlimited unqualified investors for Rule 506(b)"
+        "text": "Rule 504, which lets issuers advertise in any state"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "PPMs disclose material facts for exempt offerings; 506(b) generally prohibits general solicitation.",
+    "correctOptionId": "b",
+    "explanation": "The general-solicitation track of Rule 506 permits public online ads if every purchaser is accredited and the issuer takes reasonable steps to verify that status, not just a self-certification. Rule 506 has no dollar cap, so a $25 million raise fits.",
     "distractorExplanations": {
-      "a": "Guaranteed returns misstate securities risk.",
-      "b": "Financial disclosure is required material.",
-      "d": "506(b) restricts general solicitation."
+      "a": "The traditional Rule 506 track bars general solicitation even when all buyers are accredited, so public LinkedIn and website ads would break it.",
+      "c": "Regulation Crowdfunding caps raises at $5 million in 12 months and must run through a registered portal, far below $25 million.",
+      "d": "Rule 504 caps offerings at $10 million in 12 months and allows general solicitation only under qualifying state registration."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

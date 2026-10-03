@@ -894,31 +894,31 @@
     "id": "fl-real-estate-readiness-check-contracts-titles-013",
     "examSlug": "fl-real-estate-readiness-check",
     "topicId": "contracts-titles",
-    "prompt": "A Florida abstract of title is best described as:",
+    "prompt": "Carlos and his sister Dana took title to a Miami condo as joint tenants with right of survivorship, stated in the deed. Carlos dies, and his will leaves his real property to his son Mateo. Who owns the condo now?",
     "options": [
       {
         "id": "a",
-        "text": "A guaranteed insurance policy against all defects"
+        "text": "Dana owns the entire condo by survivorship"
       },
       {
         "id": "b",
-        "text": "A condensed history of recorded title instruments affecting a property"
+        "text": "Mateo and Dana, as tenants in common, half each"
       },
       {
         "id": "c",
-        "text": "A property tax bill"
+        "text": "Mateo owns Carlos's half once the will is probated"
       },
       {
         "id": "d",
-        "text": "A broker's CMA"
+        "text": "Dana and Mateo hold it together as new joint tenants"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "An abstract summarizes the public-record chain of title; insurance is separate.",
+    "correctOptionId": "a",
+    "explanation": "Survivorship operates at the moment of death: Carlos's interest ends and Dana, the surviving joint tenant, holds the whole title. A joint tenant's share never enters the probate estate, so a will cannot pass it. In Florida the right of survivorship must be expressly stated in the deed, as it was here.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “A condensed history of recorded title instruments affecting a property”.",
-      "c": "Not the best answer here; the right answer is “A condensed history of recorded title instruments affecting a property”.",
-      "d": "Not the best answer here; the right answer is “A condensed history of recorded title instruments affecting a property”."
+      "b": "Describes the result of a tenancy in common; survivorship sends Carlos's share to Dana, not to his heir.",
+      "c": "Assumes a will controls joint tenancy property; the share passed to Dana at death and never reached probate.",
+      "d": "Joint tenancy needs the unities created together; an heir cannot step into one, and here Mateo takes nothing."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1356,31 +1356,31 @@
     "id": "fl-real-estate-readiness-check-finance-appraisal-012",
     "examSlug": "fl-real-estate-readiness-check",
     "topicId": "finance-appraisal",
-    "prompt": "In the cost approach to appraisal, value is generally estimated as:",
+    "prompt": "An appraiser values a 10-year-old office building in Ocala. The site is worth $150,000, replacement cost new is $900,000, and the building has a 50-year economic life with straight-line depreciation. What value does the cost approach indicate?",
     "options": [
       {
         "id": "a",
-        "text": "Income divided by a stock market PE ratio"
+        "text": "$720,000"
       },
       {
         "id": "b",
-        "text": "Reproduction/replacement cost new minus depreciation plus site value"
+        "text": "$840,000"
       },
       {
         "id": "c",
-        "text": "Only the last sale price with no adjustments"
+        "text": "$870,000"
       },
       {
         "id": "d",
-        "text": "Assessed value times three"
+        "text": "$1,050,000"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Cost approach: cost new − depreciation + land/site value.",
+    "correctOptionId": "c",
+    "explanation": "Cost approach = replacement cost new − accrued depreciation + site value. Depreciation is 10/50 = 20% of $900,000 = $180,000, leaving a depreciated building of $720,000. Adding the $150,000 site gives $870,000. Land does not wear out, so it is added after depreciation, not depreciated.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Reproduction/replacement cost new minus depreciation plus site value”.",
-      "c": "Not the best answer here; the right answer is “Reproduction/replacement cost new minus depreciation plus site value”.",
-      "d": "Not the best answer here; the right answer is “Reproduction/replacement cost new minus depreciation plus site value”."
+      "a": "Stops at the depreciated building value ($720,000) and forgets to add the $150,000 site value back in.",
+      "b": "Depreciates the land along with the building (80% of $1,050,000); land is not depreciated in the cost approach.",
+      "d": "Adds site value to replacement cost new but skips the $180,000 of accrued depreciation on a 10-year-old building."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1950,33 +1950,33 @@
     "id": "fl-real-estate-readiness-check-property-practice-015",
     "examSlug": "fl-real-estate-readiness-check",
     "topicId": "property-practice",
-    "prompt": "Zoning ordinances primarily regulate",
+    "prompt": "Sarasota zoning allows backyard accessory dwellings, but a subdivision's recorded deed restrictions limit each lot to one single-family residence. A buyer plans to add a rental cottage after closing. Which rule controls what she can build?",
     "options": [
       {
         "id": "a",
-        "text": "Federal income tax brackets"
+        "text": "Zoning, because public law overrides private covenants"
       },
       {
         "id": "b",
-        "text": "Land use, density, and building standards within a locality"
+        "text": "Zoning, once the county issues a building permit"
       },
       {
         "id": "c",
-        "text": "Interstate highway speed limits"
+        "text": "Whichever rule was adopted most recently"
       },
       {
         "id": "d",
-        "text": "Broker commission splits"
+        "text": "The deed restriction, as the stricter rule"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Zoning is a police-power tool controlling permitted uses and development standards.",
+    "correctOptionId": "d",
+    "explanation": "Zoning and recorded deed restrictions both bind the lot, and the owner must satisfy each one. When they conflict, the more restrictive rule effectively controls: zoning permission does not cancel a private covenant, which other lot owners or the association can enforce by injunction. The buyer should read the restrictions before relying on zoning.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Land use, density, and building standards within a locality”.",
-      "c": "Not the best answer here; the right answer is “Land use, density, and building standards within a locality”.",
-      "d": "Not the best answer here; the right answer is “Land use, density, and building standards within a locality”."
+      "a": "Confuses permission with override: zoning sets a public floor but does not erase stricter private covenants recorded on the lot.",
+      "b": "A permit shows zoning compliance only; it does not release a recorded covenant, so neighbors or the HOA can still sue to enforce it.",
+      "c": "Recency is not the test; both sets of rules bind the owner at once, and the more restrictive one sets the practical limit."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
   }
 ]

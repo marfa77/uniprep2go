@@ -663,33 +663,33 @@
     "id": "cfp-certification-readiness-check-investments-006",
     "examSlug": "cfp-certification-readiness-check",
     "topicId": "investments",
-    "prompt": "An index fund typically aims to:",
+    "prompt": "A client's entire portfolio will be one fund. Fund X returned 12% with a 20% standard deviation and beta 1.2; Fund Y returned 9% with a 10% standard deviation and beta 0.9. T-bills yield 3%. Which conclusion is correct?",
     "options": [
       {
         "id": "a",
-        "text": "Replicate the performance of a benchmark index before fees"
+        "text": "Fund X, with the higher Treynor ratio of 7.50 versus 6.67"
       },
       {
         "id": "b",
-        "text": "Beat the index by 5% every year guaranteed"
+        "text": "Fund Y, with the higher Sharpe ratio of 0.60 versus 0.45"
       },
       {
         "id": "c",
-        "text": "Hold a single stock"
+        "text": "Fund X, because its 12% total return is the highest"
       },
       {
         "id": "d",
-        "text": "Avoid all market exposure"
+        "text": "Fund Y, because its lower beta means lower total risk"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Index funds passively track benchmarks with low turnover.",
+    "correctOptionId": "b",
+    "explanation": "When one fund is the whole portfolio, total risk matters, so use the Sharpe ratio: (return − risk-free rate) ÷ standard deviation. Fund X: (12 − 3) ÷ 20 = 0.45. Fund Y: (9 − 3) ÷ 10 = 0.60. Fund Y earns more excess return per unit of total risk.",
     "distractorExplanations": {
-      "b": "No guarantee of outperformance.",
-      "c": "Diversified basket.",
-      "d": "Full market exposure."
+      "a": "Treynor divides by beta and suits well-diversified portfolios; for a single-fund portfolio, unsystematic risk matters and Sharpe applies.",
+      "c": "Raw return ignores risk; Fund X took twice the volatility to earn three extra points of return.",
+      "d": "Beta captures market (systematic) risk, not total risk; the right reason to pick Fund Y is its higher Sharpe ratio."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -1653,31 +1653,31 @@
     "id": "cfp-certification-readiness-check-retirement-risk-006",
     "examSlug": "cfp-certification-readiness-check",
     "topicId": "retirement-risk",
-    "prompt": "Sequence of returns risk in retirement refers to:",
+    "prompt": "Mia, 40, inherits a traditional IRA from her father, who died in 2025 at age 80, after his required beginning date. She is not disabled, chronically ill, or a minor child. How must she take distributions?",
     "options": [
       {
         "id": "a",
-        "text": "Guaranteed order of all future market returns"
+        "text": "Over her own life expectancy, as a stretch IRA"
       },
       {
         "id": "b",
-        "text": "Only bond coupon payment timing"
+        "text": "Within 5 years of his death, with no annual RMDs"
       },
       {
         "id": "c",
-        "text": "Poor early returns when withdrawals begin can deplete portfolio faster"
+        "text": "Annual RMDs in years 1-9, with a full payout by year 10"
       },
       {
         "id": "d",
-        "text": "Inflation being zero"
+        "text": "Any amounts she likes, provided it is empty by the end of year 10"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Withdrawals plus early losses compound harm to sustainability.",
+    "explanation": "Under the SECURE Act and the 2024 final regulations, a non-eligible designated beneficiary must empty the IRA by the end of the 10th year after death. Because her father died after his required beginning date, she must also take annual RMDs in years 1 through 9, starting in 2026.",
     "distractorExplanations": {
-      "a": "Unknown future.",
-      "b": "Broader portfolio effect.",
-      "d": "Inflation varies."
+      "a": "Lifetime stretch is limited to eligible designated beneficiaries such as a spouse, minor child, or disabled heir; an adult child does not qualify.",
+      "b": "The 5-year rule applies to non-designated beneficiaries, such as an estate, when the owner died before the required beginning date.",
+      "d": "That flexible 10-year payout works when the owner dies before the required beginning date; dying after it adds annual RMDs."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -2148,31 +2148,31 @@
     "id": "cfp-certification-readiness-check-planning-021",
     "examSlug": "cfp-certification-readiness-check",
     "topicId": "planning",
-    "prompt": "Monte Carlo analysis in a financial plan illustrates:",
+    "prompt": "A Monte Carlo analysis for the Garcias, retiring at 62 and spending $90,000 a year, shows a 58% probability of success. They want more confidence. What is the planner's most appropriate next step?",
     "options": [
       {
         "id": "a",
-        "text": "Probability ranges of outcomes given variable returns and assumptions"
+        "text": "Model changes like later retirement or lower spending, then rerun"
       },
       {
         "id": "b",
-        "text": "A guaranteed future account balance with no uncertainty"
+        "text": "Raise the assumed rate of return until the success rate reaches 90%"
       },
       {
         "id": "c",
-        "text": "Only the single historical average return path"
+        "text": "Explain that they should expect 58% of their target retirement income"
       },
       {
         "id": "d",
-        "text": "Tax penalties for every withdrawal automatically"
+        "text": "Move the portfolio to 100% equities to lift expected returns"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Monte Carlo runs many scenarios to show likelihood of plan success, not certainty.",
+    "explanation": "A 58% result means 42% of simulated return paths ran out of money. The planner should test realistic levers the clients control, such as retiring later, spending less, or saving more, and rerun the simulation rather than changing assumptions to manufacture a better number.",
     "distractorExplanations": {
-      "b": "No projection guarantees outcomes.",
-      "c": "Single average path ignores sequence risk.",
-      "d": "Tax depends on account type and law."
+      "b": "Inflating the return assumption manufactures a higher success rate without changing the real risk; assumptions must stay reasonable.",
+      "c": "Misreads the output: 58% is the share of simulated trials that fund the full goal, not the share of income they will receive.",
+      "d": "Ignores their risk tolerance; more equity volatility can worsen sequence risk early in retirement and need not raise success."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."

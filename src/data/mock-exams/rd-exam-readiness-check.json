@@ -2115,33 +2115,33 @@
     "id": "rd-exam-readiness-check-principles-020",
     "examSlug": "rd-exam-readiness-check",
     "topicId": "principles",
-    "prompt": "Linoleic acid is best classified as:",
+    "prompt": "RD Priya is analyzing dietary data from 400 adults to estimate what proportion has inadequate usual magnesium intake. Which DRI value should she use as the cut-point?",
     "options": [
       {
         "id": "a",
-        "text": "A nonessential amino acid"
+        "text": "The RDA, since it covers nearly every healthy adult"
       },
       {
         "id": "b",
-        "text": "A water-soluble vitamin"
+        "text": "The EAR, counting the share of adults below it"
       },
       {
         "id": "c",
-        "text": "A major intracellular cation"
+        "text": "The AI, since it marks the line for adequate intake"
       },
       {
         "id": "d",
-        "text": "An essential omega-6 fatty acid"
+        "text": "The UL, since intakes above it flag a nutrition risk"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Humans must obtain linoleic acid from diet as an essential fatty acid.",
+    "correctOptionId": "b",
+    "explanation": "The EAR cut-point method estimates the prevalence of inadequacy in a group: the share of people whose usual intake falls below the EAR approximates the share with inadequate intake. The RDA is set for planning individual intakes and would overstate inadequacy if used as a group cut-point.",
     "distractorExplanations": {
-      "a": "Amino acids are protein building blocks.",
-      "b": "Vitamins are organic micronutrients.",
-      "c": "Cations are minerals like potassium."
+      "a": "The RDA sits about two standard deviations above the EAR, so using it as a cut-point would greatly overestimate how many adults are inadequate.",
+      "c": "An AI is used when no EAR exists; magnesium has an EAR, and intakes below an AI cannot be read as inadequacy.",
+      "d": "The UL screens for risk of excessive intake, not inadequacy, so it cannot estimate the share of adults eating too little."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
   },
   {
@@ -3039,33 +3039,33 @@
     "id": "rd-exam-readiness-check-foodservice-018",
     "examSlug": "rd-exam-readiness-check",
     "topicId": "foodservice",
-    "prompt": "A dairy cooler follows FIFO when staff:",
+    "prompt": "Foodservice manager Ana must serve 60 portions of 4-oz cooked chicken breast. Her yield test shows a 75% yield from as-purchased raw weight to cooked edible weight. How many pounds of raw chicken should she order?",
     "options": [
       {
         "id": "a",
-        "text": "Always open the newest delivery first"
+        "text": "11.25 pounds"
       },
       {
         "id": "b",
-        "text": "Place newer milk behind older dated cartons so the oldest acceptable product is used first"
+        "text": "15 pounds"
       },
       {
         "id": "c",
-        "text": "Store raw chicken over yogurt"
+        "text": "18.75 pounds"
       },
       {
         "id": "d",
-        "text": "Ignore use-by dates if the carton looks fine"
+        "text": "20 pounds"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "FIFO reduces spoilage by using the oldest acceptable stock before newer deliveries.",
+    "correctOptionId": "d",
+    "explanation": "Edible portion needed: 60 × 4 oz = 240 oz = 15 lb. As-purchased weight = edible portion ÷ yield, so 15 ÷ 0.75 = 20 lb. Dividing by the yield percentage restores the weight lost to trimming and cooking.",
     "distractorExplanations": {
-      "a": "Newest product should not be used first.",
-      "c": "Raw poultry belongs below RTE foods.",
-      "d": "Dates, not appearance alone, guide rotation."
+      "a": "Multiplies 15 lb by 0.75 instead of dividing, which shrinks the order and leaves service about 15 portions short.",
+      "b": "Orders the cooked edible weight as if there were no trim or cooking loss; a 75% yield means the raw weight must be higher.",
+      "c": "Adds 25% to 15 lb instead of dividing by 0.75; 18.75 lb raw at 75% yield gives only about 14 lb cooked, short of the 15 lb needed."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
   },
   {
@@ -3501,33 +3501,33 @@
     "id": "rd-exam-readiness-check-management-017",
     "examSlug": "rd-exam-readiness-check",
     "topicId": "management",
-    "prompt": "A complete job description should include:",
+    "prompt": "Patient ratings of hot-food temperature at Lakeview Hospital dropped from 82% to 64% over two quarters. As quality-improvement lead, what should RD manager Tom do first?",
     "options": [
       {
         "id": "a",
-        "text": "Duties, qualifications, and reporting relationships"
+        "text": "Measure food temperatures at each step, tray line to bedside"
       },
       {
         "id": "b",
-        "text": "Employee social media passwords"
+        "text": "Buy insulated delivery carts so trays stay hot during transport"
       },
       {
         "id": "c",
-        "text": "Private patient diagnoses"
+        "text": "Write up the tray-line staff whose plating is the slowest"
       },
       {
         "id": "d",
-        "text": "Guaranteed promotion dates for all hires"
+        "text": "Raise steam-table hot holding to 165°F for every hot entrée"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Job descriptions define role scope, required credentials, and supervision lines.",
+    "explanation": "Quality improvement starts with data: a PDSA cycle measures the current process to find where heat is lost before choosing a fix. Temperature checks at plating, cart loading, and bedside pinpoint the failing step, so any later change can be tested against a baseline.",
     "distractorExplanations": {
-      "b": "Passwords must not be collected.",
-      "c": "Patient diagnoses are confidential.",
-      "d": "Promotions are not guaranteed in descriptions."
+      "b": "Jumps to an expensive solution before finding the cause; heat may be lost at plating or in delayed delivery, which carts would not fix.",
+      "c": "Blames individuals before measuring the process; most quality failures are system problems, and discipline does not show where heat is lost.",
+      "d": "Confuses the 165°F reheating standard with hot holding (135°F or higher) and changes the process with no data showing holding is the problem."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Wave 2 RD bank — cleaned stems/keys."
   },
   {

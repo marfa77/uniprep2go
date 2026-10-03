@@ -564,33 +564,33 @@
     "id": "series-6-readiness-check-suitability-003",
     "examSlug": "series-6-readiness-check",
     "topicId": "suitability",
-    "prompt": "Asset allocation's primary purpose is to:",
+    "prompt": "Ella, 74, holds a variable annuity bought four years ago. A rep proposes a 1035 exchange into a new VA with a richer living-benefit rider and a new 7-year surrender schedule. Ella may need $40,000 for home care next year. Best course?",
     "options": [
       {
         "id": "a",
-        "text": "Pick the individual securities with the best outlook"
+        "text": "Proceed, because a 1035 exchange is tax-free and therefore suitable"
       },
       {
         "id": "b",
-        "text": "Time moves between stocks and cash to avoid losses"
+        "text": "Proceed if Ella signs a form acknowledging the new surrender charges"
       },
       {
         "id": "c",
-        "text": "Balance risk and return across asset classes"
+        "text": "Proceed, because the richer rider better protects her lifetime income"
       },
       {
         "id": "d",
-        "text": "Maximize expected return regardless of volatility"
+        "text": "Advise against it, given the new surrender period and her cash need"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Allocation matches portfolio mix to objectives and constraints.",
+    "correctOptionId": "d",
+    "explanation": "Under FINRA Rule 2330 an exchange must be suitable after weighing surrender charges, benefits lost and gained, and the customer's liquidity needs. A fresh 7-year surrender schedule conflicts with Ella's expected $40,000 withdrawal, so the rider does not justify the switch.",
     "distractorExplanations": {
-      "a": "Choosing individual securities is security selection, not allocation.",
-      "b": "Shifting based on forecasts is market timing.",
-      "d": "Allocation matches risk to goals and tolerance, not return alone."
+      "a": "Section 1035 avoids current tax on the exchange, but tax-free treatment says nothing about whether new surrender charges fit her needs.",
+      "b": "A signed disclosure does not cure an unsuitable recommendation; the rep still needs a reasonable basis that the exchange benefits her.",
+      "c": "Focuses on the rider and ignores that a new 7-year surrender schedule would penalize the withdrawal she expects next year."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
   },
   {
@@ -2214,33 +2214,33 @@
     "id": "series-6-readiness-check-products-023",
     "examSlug": "series-6-readiness-check",
     "topicId": "products",
-    "prompt": "Variable life insurance death benefits generally",
+    "prompt": "Ana Ruiz invests $50,000 in Class A shares of a fund whose schedule charges 5.00% below $50,000 and 4.00% from $50,000 up. NAV is $19.20. How many shares does she buy?",
     "options": [
       {
         "id": "a",
-        "text": "Are fixed, while the cash value is guaranteed"
+        "text": "2,400 shares"
       },
       {
         "id": "b",
-        "text": "Are guaranteed to rise every year of the policy"
+        "text": "2,473.96 shares"
       },
       {
         "id": "c",
-        "text": "Can vary with performance above a minimum"
+        "text": "2,500 shares"
       },
       {
         "id": "d",
-        "text": "Are paid from the insurer's general account only"
+        "text": "2,604.17 shares"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "VLI combines insurance protection with investment risk in separate accounts.",
+    "explanation": "At $50,000 she reaches the 4.00% breakpoint. Offering price = NAV ÷ (1 − sales charge) = $19.20 ÷ 0.96 = $20.00, so $50,000 ÷ $20.00 = 2,500 shares. The sales charge is a percentage of the offering price, not of NAV.",
     "distractorExplanations": {
-      "a": "Variable life cash values are not guaranteed.",
-      "b": "Death benefits can fall back toward the minimum after losses.",
-      "d": "Variable benefits depend on separate account performance."
+      "a": "Deducts the 4% load from the $50,000 and then also divides by the $20.00 offering price, charging the load twice.",
+      "b": "Uses the 5.00% rate ($19.20 ÷ 0.95 = $20.21), missing that a $50,000 purchase qualifies for the 4.00% breakpoint.",
+      "d": "Buys at the $19.20 NAV as if Class A shares carried no front-end sales charge."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
@@ -3204,31 +3204,31 @@
     "id": "series-6-readiness-check-regulations-023",
     "examSlug": "series-6-readiness-check",
     "topicId": "regulations",
-    "prompt": "Variable contract illustrations must",
+    "prompt": "Rep Dana Ortiz emails the same commentary recommending her firm's balanced fund to 40 retail customers over two weeks. Under FINRA Rule 2210, how is the email treated?",
     "options": [
       {
         "id": "a",
-        "text": "Show the highest rate as a guaranteed value"
+        "text": "As a retail communication that a principal must approve before use"
       },
       {
         "id": "b",
-        "text": "Show only the guaranteed values, not projections"
+        "text": "As correspondence, since each email goes to one person, reviewed after sending"
       },
       {
         "id": "c",
-        "text": "Separate guaranteed and nonguaranteed values"
+        "text": "As an institutional communication exempt from principal approval"
       },
       {
         "id": "d",
-        "text": "Use the illustration in place of the prospectus"
+        "text": "As a retail communication that FINRA must pre-approve before it is sent"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Illustrations are educational; guarantees must be clearly identified separately.",
+    "correctOptionId": "a",
+    "explanation": "Rule 2210 treats a written communication sent to more than 25 retail investors within any 30-calendar-day period as a retail communication. Forty recipients in two weeks crosses that line, and a retail communication promoting a fund needs principal approval before first use.",
     "distractorExplanations": {
-      "a": "Illustrations cannot present hypothetical rates as guarantees.",
-      "b": "Illustrations may show projections if clearly labeled.",
-      "d": "Illustrations must be accompanied or preceded by the prospectus."
+      "b": "Correspondence covers 25 or fewer retail investors in 30 days; sending identical emails one at a time does not reset the count.",
+      "c": "Institutional communications go to institutional investors such as banks and insurers; these 40 recipients are retail customers.",
+      "d": "Approval happens inside the firm by a registered principal; FINRA does not pre-approve routine retail communications before they are sent."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."

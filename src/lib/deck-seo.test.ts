@@ -8,16 +8,16 @@ import {
 } from "./deck-seo";
 
 describe("deck SEO magnets", () => {
-  it("frames FRM as exam prep with free mock in title and headline", () => {
+  it("pairs the FRM deck with the free mock in title and headline", () => {
     const deck = getDeckBySlug("frm-part-1-anki-deck");
     expect(deck).toBeDefined();
 
-    expect(buildDeckSeoTitle(deck!)).toContain("FRM Part 1 Prep");
-    expect(buildDeckSeoTitle(deck!)).toContain("Free Practice Test");
-    expect(buildDeckSeoTitle(deck!)).not.toMatch(/Anki Deck/i);
+    expect(buildDeckSeoTitle(deck!)).toContain("FRM Part 1 Anki Deck");
+    expect(buildDeckSeoTitle(deck!)).toContain("Free Mock");
 
-    expect(buildDeckSeoHeadline(deck!)).toContain("FRM Part 1 Exam Prep");
-    expect(buildDeckSeoDescription(deck!)).toContain("practice test");
+    expect(buildDeckSeoHeadline(deck!)).toContain("Free Timed Mock");
+    expect(buildDeckSeoDescription(deck!)).toContain("timed mock");
+    expect(buildDeckSeoDescription(deck!)).toContain("Not GARP material");
   });
 
   it("frames SIE as exam prep with free mock", () => {

@@ -42,13 +42,13 @@ describe("deck catalog", () => {
       "/samples/cfa-level-1-anki-deck-sample-3.webp",
     ]);
     expect(primaryDeck.sampleCards.map((card) => card.question)).toEqual([
-      "How is portfolio duration calculated?",
-      "What is the variance of a two-asset portfolio?",
-      "What is a protective put?",
+      "An option-free bond has annual modified duration 7.2 and annual convexity 64. If its yield rises by 100 bps, what is the estimated percentage price change?",
+      "A US GAAP firm on LIFO reports inventory of $800k and COGS of $3,000k; its LIFO reserve rose from $150k to $200k as prices rose. What are FIFO inventory and FIFO COGS?",
+      "A non-dividend stock trades at $52. A 1-year European call with a $50 strike costs $6.00 and the risk-free rate is 5%. What is the no-arbitrage price of the matching European put?",
     ]);
-    expect(primaryDeck.sampleCards[0]?.answer).toContain("weights = market value proportions");
-    expect(primaryDeck.sampleCards[1]?.answer).toContain("covariance (correlation)");
-    expect(primaryDeck.sampleCards[2]?.answer).toContain("Long stock + long put");
+    expect(primaryDeck.sampleCards[0]?.answer).toContain("About −6.88%. The durati");
+    expect(primaryDeck.sampleCards[1]?.answer).toContain("FIFO inventory = $1,000k");
+    expect(primaryDeck.sampleCards[2]?.answer).toContain("About $1.62. Put-call pa");
   });
 
   it("includes the CFA Level 1 Formula Reference as a printable recall product", () => {
@@ -228,12 +228,12 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.directAnswer).toContain(
       "nacionalidade portuguesa",
     );
-    expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.facts.cards).toBe("2058");
+    expect(getDeckBySlug("ciple-a2-european-portuguese-anki-deck")?.facts.cards).toBe("2067");
     expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.title).toContain("NT2");
     expect(getDeckBySlug("dutch-a2-inburgering-anki-deck")?.facts.cards).toBe("1897");
     expect(getDeckBySlug("german-a2-anki-deck")?.title).toContain("Goethe telc ÖSD DTZ");
     expect(getDeckBySlug("celi-b1-italian-anki-deck")?.title).toContain("CELI CILS PLIDA");
-    expect(getDeckBySlug("celi-b1-italian-anki-deck")?.facts.cards).toBe("2151");
+    expect(getDeckBySlug("celi-b1-italian-anki-deck")?.facts.cards).toBe("2171");
     expect(getDeckBySlug("danish-a2-prove-i-dansk-anki-deck")?.title).toContain("PD2 PD3");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.title).toContain("Norskprøve");
     expect(getDeckBySlug("norwegian-a2-norskprove-anki-deck")?.facts.cards).toBe("1487");
@@ -252,29 +252,29 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.facts.cards).toBe("1926");
     const enFr = getDeckBySlug("ielts-toefl-english-for-french-speakers-anki-deck");
     expect(enFr?.title).toContain("IELTS / TOEFL English for French Speakers");
-    expect(enFr?.facts.cards).toBe("2482");
+    expect(enFr?.facts.cards).toBe("2522");
     expect(enFr?.directAnswer).toContain("French");
     expect(enFr?.directAnswer).toContain("IELTS");
     const enAr = getDeckBySlug("ielts-toefl-english-for-arabic-speakers-anki-deck");
     expect(enAr?.title).toContain("IELTS / TOEFL English for Arabic Speakers");
-    expect(enAr?.facts.cards).toBe("2482");
+    expect(enAr?.facts.cards).toBe("2504");
     expect(enAr?.directAnswer).toContain("Arabic");
     const enUk = getDeckBySlug("ielts-toefl-english-for-ukrainian-speakers-anki-deck");
     expect(enUk?.title).toContain("IELTS / TOEFL English for Ukrainian Speakers");
-    expect(enUk?.facts.cards).toBe("2482");
+    expect(enUk?.facts.cards).toBe("2504");
     expect(enUk?.directAnswer).toContain("Ukrainian");
     const enRu = getDeckBySlug("ielts-toefl-english-for-russian-speakers-anki-deck");
     expect(enRu?.title).toContain("IELTS / TOEFL English for Russian Speakers");
-    expect(enRu?.facts.cards).toBe("2482");
+    expect(enRu?.facts.cards).toBe("2504");
     expect(enRu?.directAnswer).toContain("Russian");
     const enEs = getDeckBySlug("ielts-toefl-english-for-spanish-speakers-anki-deck");
     expect(enEs?.title).toContain("IELTS / TOEFL English for Spanish Speakers");
-    expect(enEs?.facts.cards).toBe("2482");
+    expect(enEs?.facts.cards).toBe("2504");
     expect(enEs?.directAnswer).toContain("Latin American Spanish");
     expect(enEs?.shortName).toContain("LatAm");
     const enPt = getDeckBySlug("ielts-toefl-english-for-portuguese-speakers-anki-deck");
     expect(enPt?.title).toContain("IELTS / TOEFL English for Brazilian Portuguese Speakers");
-    expect(enPt?.facts.cards).toBe("2482");
+    expect(enPt?.facts.cards).toBe("2504");
     expect(enPt?.directAnswer).toContain("Brazilian Portuguese");
     expect(enPt?.shortName).toContain("BR");
     const deleDeck = getDeckBySlug("dele-a2-spanish-anki-deck");
@@ -282,14 +282,14 @@ describe("deck catalog", () => {
     expect(deleDeck?.directAnswer).toContain("DELE A2");
     expect(deleDeck?.directAnswer).toContain("SIELE");
     expect(deleDeck?.directAnswer).toContain("not a DELE + CCSE nationality bundle");
-    expect(deleDeck?.facts.cards).toBe("2105");
+    expect(deleDeck?.facts.cards).toBe("2120");
     expect(deleDeck?.directAnswer).toContain("single Anki .apkg");
     expect(getCatalogDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("available");
     expect(getDeckBySlug("czech-citizenship-anki-deck")?.status).toBe("available");
     expect(getDeckBySlug("polish-citizenship-anki-deck")?.status).toBe("available");
     const frenchDeck = getDeckBySlug("delf-b2-french-anki-deck");
     expect(frenchDeck?.title).toContain("DELF DALF TCF TEF");
-    expect(frenchDeck?.facts.cards).toBe("2100");
+    expect(frenchDeck?.facts.cards).toBe("2115");
     expect(frenchDeck?.directAnswer).toContain("TCF Canada");
     expect(frenchDeck?.directAnswer).toContain("TEF Canada");
     expect(frenchDeck?.directAnswer).toContain("TCF ANF");
@@ -327,7 +327,7 @@ describe("deck catalog", () => {
 
     const enTr = getDeckBySlug("ielts-toefl-english-for-turkish-speakers-anki-deck");
     expect(enTr?.status).toBe("available");
-    expect(enTr?.facts.cards).toBe("924");
+    expect(enTr?.facts.cards).toBe("952");
     expect(enTr?.directAnswer).toContain("Turkish");
     expect(enTr?.checkoutUrl).toContain("ielts-toefl-english-for-turkish-speakers-anki-deck");
   });
@@ -344,13 +344,13 @@ describe("deck catalog", () => {
       "/samples/cfa-level-2-anki-deck-sample-3.webp",
     ]);
     expect(l2Deck?.sampleCards.map((card) => card.question)).toEqual([
-      "What is free cash flow to the firm (FCFF)?",
-      "What is free cash flow to equity (FCFE)?",
-      "How do you compute FCFF from CFO?",
+      "CFO is $120M after a $5M working-capital build and $8M interest paid. FCInv is $25M, new debt $15M, debt repaid $5M, tax rate 25%. What is FCFE?",
+      "A callable bond is worth 100.00 on a binomial tree at a constant OAS. Shifting the benchmark curve down and up 25 bps gives 101.40 and 98.20. What is its effective duration?",
+      "A sub's functional currency is the parent's USD, so the temporal method applies. It holds LC 1,000 of inventory bought at $0.80/LC; today's rate is $0.70. What is inventory in USD?",
     ]);
-    expect(l2Deck?.sampleCards[0]?.answer).toContain("FCFF = NI + NCC");
-    expect(l2Deck?.sampleCards[1]?.answer).toContain("Net Borrowing");
-    expect(l2Deck?.sampleCards[2]?.answer).toContain("FCFF = CFO");
+    expect(l2Deck?.sampleCards[0]?.answer).toContain("FCFE = $105M: CFO − FCIn");
+    expect(l2Deck?.sampleCards[1]?.answer).toContain("6.40. A callable bond's ");
+    expect(l2Deck?.sampleCards[2]?.answer).toContain("$800. Under the temporal");
   });
 
   it("includes the FRM Part 1 deck with three Gumroad preview cards", () => {
@@ -474,9 +474,9 @@ describe("deck catalog", () => {
     ]);
     // Screenshot captures: text must stay the captured card.
     expect(californiaRealEstateDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "What is real property?",
-      "What is personal property?",
-      "What is a fixture?",
+      "A listing agent meets a Fresno homeowner to sign a listing; weeks later a buyer's agent writes an offer. When must each agent deliver the agency relationship disclosure form?",
+      "A Sacramento seller hands the buyer the Transfer Disclosure Statement two days after the buyer's offer was accepted. The house is sold 'as-is.' What right does the buyer have?",
+      "Lena buys a Los Angeles condo for $800,000 in 2025. Ignoring voter-approved bonds and assessments, what is her basic property tax, and the most her assessed value can be the next year?",
     ]);
   });
 
@@ -499,9 +499,9 @@ describe("deck catalog", () => {
     ]);
     // Screenshot captures: text must stay the captured card.
     expect(lifeHealthDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "What is risk in insurance?",
-      "What is pure risk?",
-      "What is speculative risk?",
+      "Dana bought a $250,000 life policy without disclosing that she smoked. She dies in a car crash 26 months after issue. Can the insurer deny the claim because of the misstatement?",
+      "Raj's nonqualified deferred annuity holds $60,000 of after-tax premiums and is worth $90,000. At age 52 he withdraws $40,000. How much is taxable, and is there a penalty?",
+      "Mia, 8, is covered under both her married parents' employer health plans. Mom was born March 10, 1990; Dad was born July 2, 1985. Which plan pays first on Mia's $2,000 claim?",
     ]);
   });
 
@@ -524,9 +524,9 @@ describe("deck catalog", () => {
     ]);
     // Screenshot captures: text must stay the captured card.
     expect(propertyCasualtyDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "What is risk in property and casualty insurance?",
-      "What is pure risk?",
-      "What is speculative risk?",
+      "A building worth $500,000 is insured for $300,000 with an 80% coinsurance clause and a $1,000 deductible. A fire causes a $100,000 partial loss. How much does the insurer pay?",
+      "Under an HO-3, a homeowner knocks over a can of paint while redecorating. It ruins the wall-to-wall carpet and a leather sofa. Which damage is covered?",
+      "Sam carries 25/50/25 auto liability. He causes a crash: driver A has $40,000 of injuries, driver B $15,000, and A's car needs $30,000 of repairs. What does Sam's insurer pay?",
     ]);
   });
 
@@ -716,8 +716,8 @@ describe("deck catalog", () => {
       "swedish-a2-sfi-anki-deck": ["universitet", "kontor", "marknad"],
       "greek-a2-ellinomatheia-anki-deck": ["πανεπιστήμιο", "γραφείο", "αγορά"],
       "czech-a2-cce-anki-deck": ["univerzita", "kancelář", "trh"],
-      "polish-a2-certyfikat-anki-deck": ["uniwersytet", "biuro", "rynek"],
-      "polish-a2-for-ukrainian-speakers-anki-deck": ["uniwersytet", "biuro", "rynek"],
+      "polish-a2-certyfikat-anki-deck": ["dom", "rodzina", "rynek"],
+      "polish-a2-for-ukrainian-speakers-anki-deck": ["dom", "rodzina", "rynek"],
       "german-a2-for-ukrainian-speakers-anki-deck": ["universität", "büro", "markt"],
       "german-a2-for-russian-speakers-anki-deck": ["universität", "büro", "markt"],
       "ielts-toefl-english-for-french-speakers-anki-deck": ["university", "interview", "station"],
@@ -758,20 +758,20 @@ describe("deck catalog", () => {
       "property-casualty-insurance-exam-anki-deck":
         "Property & Casualty Insurance Exam Anki Deck — 400 High-Yield Flashcards",
       "ciple-a2-european-portuguese-anki-deck":
-        "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2058 Flashcards",
-      "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2100 Flashcards",
+        "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2067 Flashcards",
+      "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2115 Flashcards",
       "delf-prim-printable-french-flashcards":
         "DELF Prim Printable French Flashcards — Ages 7–12 · 360 PDF Cards",
-            "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 2105 Flashcards",
+            "dele-a2-spanish-anki-deck": "DELE SIELE Spanish Anki Deck — 2120 Flashcards",
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1897 Flashcards",
-      "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2101 Flashcards",
+      "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2115 Flashcards",
       "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400+ Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 160+ Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346+ Flashcards",
       "gre-anki-deck": "GRE Anki Deck — 350+ Flashcards",
       "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 250+ Flashcards",
-      "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 2151 Flashcards",
+      "celi-b1-italian-anki-deck": "CELI CILS PLIDA Italian Anki Deck — 2171 Flashcards",
       "danish-a2-prove-i-dansk-anki-deck":
         "Danish Prøve i Dansk PD2 PD3 Anki Deck — 1000 Flashcards",
       "norwegian-a2-norskprove-anki-deck":
@@ -791,19 +791,19 @@ describe("deck catalog", () => {
       "german-a2-for-russian-speakers-anki-deck":
         "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
       "ielts-toefl-english-for-french-speakers-anki-deck":
-        "IELTS / TOEFL English for French Speakers Anki Deck — 2482 Flashcards",
+        "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
       "ielts-toefl-english-for-arabic-speakers-anki-deck":
-        "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2482 Flashcards",
+        "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-ukrainian-speakers-anki-deck":
-        "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2482 Flashcards",
+        "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-russian-speakers-anki-deck":
-        "IELTS / TOEFL English for Russian Speakers Anki Deck — 2482 Flashcards",
+        "IELTS / TOEFL English for Russian Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-spanish-speakers-anki-deck":
-        "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2482 Flashcards",
+        "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2504 Flashcards",
       "ielts-toefl-english-for-portuguese-speakers-anki-deck":
-        "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2482 Cards",
+        "IELTS / TOEFL English for Brazilian Portuguese Speakers Anki — 2504 Cards",
       "ielts-toefl-english-for-turkish-speakers-anki-deck":
-        "IELTS / TOEFL English for Turkish Speakers Anki Deck — 924 Flashcards",
+        "IELTS / TOEFL English for Turkish Speakers Anki Deck — 952 Flashcards",
       "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 165 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200+ Flashcards",
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
@@ -847,7 +847,7 @@ describe("deck catalog", () => {
       "az-real-estate-anki-deck": "Arizona Real Estate Anki Deck — 60 Flashcards",
       "co-real-estate-anki-deck": "Colorado Real Estate Anki Deck — 60 Flashcards",
       "dele-a2-ccse-spanish-citizenship-bundle":
-        "DELE CCSE Spanish Nationality Anki Deck — 60 Flashcards",
+        "DELE A2 + CCSE Anki Bundle — 2463 Flashcards for Spanish Nationality",
       "ga-real-estate-anki-deck": "Georgia Real Estate Anki Deck — 60 Flashcards",
       "il-real-estate-anki-deck": "Illinois Real Estate Anki Deck — 60 Flashcards",
       "ma-real-estate-anki-deck": "Massachusetts Real Estate Anki Deck — 60 Flashcards",

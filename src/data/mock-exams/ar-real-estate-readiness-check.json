@@ -102,33 +102,33 @@
     "id": "ar-real-estate-readiness-check-agency-law-004",
     "examSlug": "ar-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Listing agent Tom represents Fayetteville seller Erin, who privately told him she would take $30,000 under list. An unrepresented buyer asks Tom whether Erin will go lower and whether the roof has leaked; Tom knows it leaked last spring. What should Tom do?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Disclose the roof leak but keep Erin's price flexibility private"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "Disclose both facts, since the buyer asked direct questions"
       },
       {
         "id": "c",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "Keep both private, since his duty of loyalty runs to Erin"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "Tell the buyer Erin will accept less but stay silent on the roof leak"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "a",
+    "explanation": "A seller's agent owes the seller confidentiality, so Erin's willingness to take less stays private. But every licensee owes all parties honesty and must disclose known material defects, so Tom must reveal the roof leak. Loyalty to the client does not permit concealing a material fact from a buyer-customer.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "c": "Transfer taxes are closing items, not earnest money."
+      "b": "A direct question does not override confidentiality; revealing Erin's lowest acceptable price would breach his duty to his client.",
+      "c": "Loyalty covers Erin's negotiating position, not known defects. Hiding the leak would be misrepresentation to the buyer.",
+      "d": "This reverses the duties: price flexibility is confidential, while the known roof leak is a material fact he must disclose."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "ar-real-estate-readiness-check-property-ownership-001",
     "examSlug": "ar-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "Buyer Wes is about to close on a Fort Smith lot when the title search shows a recorded lis pendens: the seller's former business partner has sued, claiming a half interest in the lot. What does the notice mean for Wes?",
     "options": [
       {
         "id": "a",
-        "text": "A leasehold for one month"
+        "text": "No effect, since a lis pendens is notice and not a lien"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "The partner has already won half ownership by a court judgment"
       },
       {
         "id": "c",
-        "text": "A personal property license"
+        "text": "If he closes now, he takes title subject to the suit's result"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "The law prohibits any transfer of the lot until the case ends"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "c",
+    "explanation": "A lis pendens is recorded notice that a lawsuit affecting title or possession is pending. It gives constructive notice, so anyone who buys now is bound by the court's eventual ruling. It does not decide ownership or legally block the sale, but most buyers and title insurers will not close until it is resolved.",
     "distractorExplanations": {
-      "a": "Leaseholds are non-freehold.",
-      "b": "Easements are nonpossessory rights.",
-      "c": "Licenses are typically personal privileges."
+      "a": "It is not a lien, but it still binds later buyers: anyone acquiring the lot takes subject to whatever the court decides.",
+      "b": "A lis pendens shows a case is pending, not decided. A judgment would come later and might reject the partner's claim.",
+      "d": "The notice warns buyers rather than forbidding a sale; the risk is taking title subject to the suit, not a legal ban."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "ar-real-estate-readiness-check-finance-closing-001",
     "examSlug": "ar-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "Buyer Ana's lender hands her the Closing Disclosure in person on a Thursday, and no federal holiday falls in the following week. Under TRID's three-business-day rule, what is the earliest day her loan can be consummated?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "Saturday, counting Thursday as the first day"
       },
       {
         "id": "b",
-        "text": "Down payment ÷ interest rate"
+        "text": "Tuesday, since Saturday is not a business day"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "The next Thursday, after a 7-business-day wait"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "Monday, counting Saturday as a business day"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "correctOptionId": "d",
+    "explanation": "The Closing Disclosure must be received at least three business days before consummation, and for this rule a business day is every day except Sundays and federal holidays. From Thursday receipt: Friday (1), Saturday (2), Monday (3), so consummation may occur Monday. The 7-business-day lead time applies to the Loan Estimate, not the CD.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "b": "Nonsense formula.",
-      "d": "Unrelated."
+      "a": "The day of receipt does not count; the three days start the next day, so Thursday cannot be day one.",
+      "b": "For the Closing Disclosure timing rule, Saturdays are business days; just Sundays and federal holidays are skipped.",
+      "c": "Seven business days is the Loan Estimate lead time before consummation; the Closing Disclosure needs three."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {

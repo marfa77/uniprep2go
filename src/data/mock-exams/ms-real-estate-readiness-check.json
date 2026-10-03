@@ -102,33 +102,33 @@
     "id": "ms-real-estate-readiness-check-agency-law-004",
     "examSlug": "ms-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "A 17-year-old Mississippi student inherits money and signs a contract to buy a condo from an adult seller. Before closing, the seller gets a better offer and wants out, pointing to the buyer's age. Who can cancel the contract?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Either party, because a contract with a minor is void from the start"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "The seller, because an adult may cancel a deal made with a minor"
       },
       {
         "id": "c",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "The minor alone, since the contract is voidable at the minor's option"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "Neither party, because the minor's inheritance gives him full capacity"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "c",
+    "explanation": "A contract signed by a minor is voidable, not void: the minor may affirm or disaffirm it, but the adult who chose to deal with a minor is bound. So the seller cannot use the buyer's age to escape for a better offer. A truly void contract, such as one with a person already declared legally incompetent, has no effect for either side.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "c": "Transfer taxes are closing items, not earnest money."
+      "a": "Void contracts have no legal effect for anyone; a minor's contract is voidable, so it stays valid unless the minor chooses to disaffirm.",
+      "b": "This flips the rule: the protection belongs to the minor, so the adult who contracted with a minor cannot cancel on that ground.",
+      "d": "Having money does not confer contractual capacity; capacity depends on age or emancipation, so the minor can still disaffirm."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "ms-real-estate-readiness-check-property-ownership-001",
     "examSlug": "ms-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "A Mississippi River farm gains 3 acres over 20 years as silt slowly builds along its bank. Downstream, a spring flood suddenly cuts a new channel, leaving 40 acres of another farm on the far side of the river. Who owns the 3 acres and the 40 acres?",
     "options": [
       {
         "id": "a",
-        "text": "A leasehold for one month"
+        "text": "The farm owner gains the 3 acres; the 40 acres stay with their owner"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "Both owners gain land, since the river is the boundary in each case"
       },
       {
         "id": "c",
-        "text": "A personal property license"
+        "text": "The state takes both areas, because riverbank land is public trust"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "The 3 acres stay public; the 40 acres go to the opposite riparian owner"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "a",
+    "explanation": "Accretion is the slow, gradual build-up of soil (alluvion) along a bank, and the riparian owner gains title to it. Avulsion is a sudden, perceptible loss or shift of land, as when a flood cuts a new channel; the boundary stays where it was, so the 40 acres still belong to their original owner even though they now sit across the river.",
     "distractorExplanations": {
-      "a": "Leaseholds are non-freehold.",
-      "b": "Easements are nonpossessory rights.",
-      "c": "Licenses are typically personal privileges."
+      "b": "The moving-river boundary rule applies to gradual accretion; after a sudden avulsion the boundary stays put, so the owner across does not gain.",
+      "c": "Land built up by accretion belongs to the adjoining riparian owner, and avulsion does not transfer land to the state.",
+      "d": "Accreted soil belongs to the riparian owner whose bank it builds; the sudden cut-off does not shift the 40 acres to the opposite owner."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "ms-real-estate-readiness-check-finance-closing-001",
     "examSlug": "ms-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "A Mississippi seller has a 3% mortgage. A buyer offers to take title and simply keep making the seller's payments without telling the lender. The note contains a due-on-sale clause. What is the main risk of this arrangement?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "There is little risk, since the lender keeps getting paid on time each month"
       },
       {
         "id": "b",
-        "text": "Down payment ÷ interest rate"
+        "text": "The buyer must pay a prepayment penalty on the seller's old loan"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "The seller is released and the buyer becomes liable on the note"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "The lender may call the full balance due once it learns of the sale"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "correctOptionId": "d",
+    "explanation": "A due-on-sale (alienation) clause lets the lender demand the entire balance when the property is transferred without its consent. Taking title 'subject to' the existing loan does not stop that, and with market rates above 3% the lender has a reason to accelerate. The seller also stays personally liable on the note, because the buyer never assumed it.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "b": "Nonsense formula.",
-      "d": "Unrelated."
+      "a": "On-time payments do not prevent acceleration; the clause is triggered by the transfer of title itself, not by a payment default.",
+      "b": "A prepayment penalty concerns paying a loan off early; the issue here is the lender's right to accelerate after an unapproved sale.",
+      "c": "Taking title subject to a loan does not release the seller; only a lender-approved assumption with a release (novation) does that."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {

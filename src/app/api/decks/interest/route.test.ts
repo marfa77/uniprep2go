@@ -1,10 +1,14 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
 
-const recordFunnelEvent = vi.fn(async () => undefined);
-const notifyDeckWaitlistInterest = vi.fn(async () => true);
+const { recordFunnelEvent, notifyDeckWaitlistInterest } = vi.hoisted(() => ({
+  recordFunnelEvent: vi.fn(async () => undefined),
+  notifyDeckWaitlistInterest: vi.fn(async () => true),
+}));
 
 vi.mock("@/lib/funnel-store", () => ({ recordFunnelEvent }));
 vi.mock("@/lib/telegram-notify", () => ({ notifyDeckWaitlistInterest }));
+
+import { POST } from "./route";
 
 describe("POST /api/decks/interest", () => {
   beforeEach(() => {
@@ -13,15 +17,14 @@ describe("POST /api/decks/interest", () => {
   });
 
   it("requires a valid email and forwards it to Telegram", async () => {
-    const { POST } = await import("./route");
     const request = new Request("https://uniprep2go.study/api/decks/interest", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-vercel-ip-country": "BE",
+        "x-vercel-ip-country": "US",
       },
       body: JSON.stringify({
-        deckSlug: "belgium-wallonie-citoyennete-anki-deck",
+        deckSlug: "cdl-general-knowledge-anki-deck",
         email: " Learner@Example.com ",
       }),
     });
@@ -34,21 +37,20 @@ describe("POST /api/decks/interest", () => {
     expect(notifyDeckWaitlistInterest).toHaveBeenCalledWith(
       expect.objectContaining({
         name: "deck_waitlist_interest",
-        deckSlug: "belgium-wallonie-citoyennete-anki-deck",
+        deckSlug: "cdl-general-knowledge-anki-deck",
       }),
-      expect.objectContaining({ slug: "belgium-wallonie-citoyennete-anki-deck" }),
+      expect.objectContaining({ slug: "cdl-general-knowledge-anki-deck" }),
       "learner@example.com",
     );
     expect(recordFunnelEvent).toHaveBeenCalledTimes(1);
   });
 
   it("rejects missing or invalid email", async () => {
-    const { POST } = await import("./route");
     const request = new Request("https://uniprep2go.study/api/decks/interest", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        deckSlug: "belgium-wallonie-citoyennete-anki-deck",
+        deckSlug: "cdl-general-knowledge-anki-deck",
         email: "not-an-email",
       }),
     });

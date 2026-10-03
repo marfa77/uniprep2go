@@ -102,33 +102,33 @@
     "id": "ct-real-estate-readiness-check-agency-law-004",
     "examSlug": "ct-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "At a Connecticut networking breakfast, broker Dana tells brokers from two competing firms that 'everyone in town should hold the line at 6% so sellers stop negotiating us down.' The others nod and agree. What is the main legal problem?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Competing brokers agreeing on a rate is price-fixing under antitrust law"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "It is fine as long as the 6% rate is disclosed in each listing contract"
       },
       {
         "id": "c",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "It is legal because commission rates are set by the state commission"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "It is acceptable because each broker can still lower the fee for a client who asks"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "a",
+    "explanation": "Commission rates are negotiable between each broker and its client. When competitors agree to charge a set rate, that is price-fixing, a per se violation of the Sherman Antitrust Act: no proof of harm is needed, and a nod of agreement at a meeting can be evidence of a conspiracy. Each firm must set its own fee policy independently.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "c": "Transfer taxes are closing items, not earnest money."
+      "b": "Disclosing the rate does not cure anything: the illegal act is the agreement between competitors, not a lack of transparency to sellers.",
+      "c": "No state commission or trade association sets commission rates; fees are negotiated between broker and client, which is why agreeing on them is unlawful.",
+      "d": "Leaving room for exceptions does not save it; an agreement among competitors on a standard rate is illegal even if individual deals deviate."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "ct-real-estate-readiness-check-property-ownership-001",
     "examSlug": "ct-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "A Connecticut deed describes a lot by metes and bounds from a point of beginning at an oak tree, 'thence east 300 feet to a stone wall.' The surveyor finds the stone wall is actually 312 feet east of the oak. Where does the boundary generally run?",
     "options": [
       {
         "id": "a",
-        "text": "A leasehold for one month"
+        "text": "At 300 feet, because stated distances control over physical monuments"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "At 306 feet, splitting the difference between the two measurements"
       },
       {
         "id": "c",
-        "text": "A personal property license"
+        "text": "At 300 feet, unless the deed's total acreage figure says otherwise"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "At the stone wall, because monuments control over stated distances"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "explanation": "When calls in a metes-and-bounds description conflict, courts apply a priority order: natural monuments, then artificial monuments, then courses (directions), then distances, with stated area last. The stone wall is a visible monument, so the line runs to the wall at 312 feet, and the description must still close back to the point of beginning.",
     "distractorExplanations": {
-      "a": "Leaseholds are non-freehold.",
-      "b": "Easements are nonpossessory rights.",
-      "c": "Licenses are typically personal privileges."
+      "a": "This reverses the priority order: distances rank below monuments because a measuring error is more likely than a mistake about a visible wall.",
+      "b": "Surveyors do not split the difference between conflicting calls; the higher-priority call, the monument, controls.",
+      "c": "Stated acreage is the weakest call of all and gives way to monuments, courses and distances."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "ct-real-estate-readiness-check-finance-closing-001",
     "examSlug": "ct-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "A Connecticut town assesses a home at $245,000 and sets a mill rate of 28.5. The buyer's lender needs the annual property tax to set up the escrow account. What is the annual tax?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$698.25 a year"
       },
       {
         "id": "b",
-        "text": "Down payment ÷ interest rate"
+        "text": "$4,887.75 a year"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$6,982.50 a year"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$69,825.00 a year"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "explanation": "A mill is one-tenth of a cent, so 1 mill means $1 of tax per $1,000 of assessed value. Tax = assessed value × mill rate ÷ 1,000 = $245,000 × 28.5 ÷ 1,000 = $6,982.50 per year. The mill rate is applied to the assessed value the town set, which already reflects any assessment ratio.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "b": "Nonsense formula.",
-      "d": "Unrelated."
+      "a": "Divides by 10,000 instead of 1,000, so the result is ten times too small; 28.5 mills means $28.50 per $1,000 of assessed value.",
+      "b": "Applies a 70% assessment ratio a second time; $245,000 is already the assessed value, so no further ratio is applied.",
+      "d": "Treats the mill rate as a percentage (28.5 per 100); mills are per 1,000, so this overstates the tax tenfold."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {

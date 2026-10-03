@@ -102,33 +102,33 @@
     "id": "oh-real-estate-readiness-check-agency-law-004",
     "examSlug": "oh-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Columbus seller Nora signs a 90-day exclusive-right-to-sell listing with broker Sam. In week six, her cousin visiting from Toledo falls for the house at a family dinner, offers full price, and Nora sells to him directly without involving Sam. What does Nora owe Sam?",
     "options": [
       {
         "id": "a",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "The full listing commission, as agreed"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "Nothing, since Nora found the buyer through family"
       },
       {
         "id": "c",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "A reduced fee covering Sam's marketing costs"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "Half the commission, since Sam did not find the buyer"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "correctOptionId": "a",
+    "explanation": "Under an exclusive-right-to-sell listing the broker earns the commission if the property sells during the term, no matter who finds the buyer, including the owner. That is the key difference from an exclusive agency listing, where the owner's own sale would owe no commission. Nora owes Sam the agreed fee.",
     "distractorExplanations": {
-      "a": "Transfer taxes are closing items, not earnest money.",
-      "b": "Commission is separate.",
-      "c": "It is not a personal gift to the agent."
+      "b": "Describes an exclusive agency listing, which lets the owner sell commission-free; an exclusive right to sell does not.",
+      "c": "The contract sets a full commission on any sale during the term; it does not shrink to Sam's out-of-pocket expenses.",
+      "d": "Who found the buyer matters under open listings; an exclusive right to sell pays the agreed fee regardless of who found the buyer."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "oh-real-estate-readiness-check-property-ownership-001",
     "examSlug": "oh-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "Mark's lot near Akron has a recorded easement to cross his neighbor Joan's land to reach the county road. Mark sells his lot to Erin, and the deed to Erin says nothing about the easement. Can Erin keep using the driveway across Joan's land?",
     "options": [
       {
         "id": "a",
-        "text": "A personal property license"
+        "text": "No, because the easement was personal to Mark"
       },
       {
         "id": "b",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "No, unless Joan grants Erin a new easement"
       },
       {
         "id": "c",
-        "text": "A leasehold for one month"
+        "text": "Yes, until Joan sells her parcel to someone new"
       },
       {
         "id": "d",
-        "text": "An easement"
+        "text": "Yes, because the easement runs with the land"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "d",
+    "explanation": "An easement appurtenant benefits a parcel of land (the dominant estate), not a particular person. It runs with the land, so it transfers automatically when Mark's lot is conveyed, even if the deed is silent. Joan's parcel stays burdened as the servient estate, and a later sale of her land does not end the easement.",
     "distractorExplanations": {
-      "a": "Licenses are typically personal privileges.",
-      "c": "Leaseholds are non-freehold.",
-      "d": "Easements are nonpossessory rights."
+      "a": "Describes an easement in gross, which benefits a person or utility; this one serves Mark's lot and passes with it.",
+      "b": "No new grant is needed; the recorded easement transfers with the dominant parcel automatically on sale.",
+      "c": "The burden also runs with Joan's land, so a buyer of the servient parcel takes it subject to the recorded easement."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "oh-real-estate-readiness-check-finance-appraisal-001",
     "examSlug": "oh-real-estate-readiness-check",
     "topicId": "finance-appraisal",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "A Dayton duplex rents for $1,450 per unit per month and also earns $200 a month from a coin laundry. Nearby duplex sales show a gross rent multiplier of 110, calculated on monthly rent alone. What value does the GRM indicate?",
     "options": [
       {
         "id": "a",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "$159,500"
       },
       {
         "id": "b",
-        "text": "Monthly payment ÷ annual income"
+        "text": "$319,000"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "$341,000"
       },
       {
         "id": "d",
-        "text": "Down payment ÷ interest rate"
+        "text": "$3,828,000"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "correctOptionId": "b",
+    "explanation": "Value = monthly gross rent × GRM. Two units × $1,450 = $2,900 a month, and $2,900 × 110 = $319,000. Because the comparable GRMs were built on rent alone, the laundry income is left out so the subject is measured on the same basis as the comps.",
     "distractorExplanations": {
-      "a": "Unrelated.",
-      "b": "That relates to debt-to-income concepts.",
-      "d": "Nonsense formula."
+      "a": "Uses one unit's $1,450 rent; the duplex's gross rent is both units together, $2,900 a month.",
+      "c": "Adds the $200 laundry income; the comps' multiplier was derived from rent alone, so the subject must be measured the same way.",
+      "d": "Applies a monthly multiplier to annual rent ($34,800 × 110), overstating value twelvefold."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — repaired from template). · Local short-stem expansion"
   },
   {

@@ -106,9 +106,16 @@ function loadEnv() {
   ensureGumroadAccessToken({ persist: true });
 }
 
+/** Product ids can start with "-" (e.g. "-K9V…=="), so positionals go after a literal ` -- `. */
+function gumroadArgv(args, dryRun = false) {
+  const sep = args.indexOf(" -- ");
+  const head = sep >= 0 ? args.slice(0, sep) : args;
+  const tail = sep >= 0 ? args.slice(sep) : "";
+  return `${head}${dryRun ? " --dry-run" : ""} --non-interactive --yes${tail}`;
+}
+
 function runGumroad(args, { dryRun = false } = {}) {
-  const flags = dryRun ? `${args} --dry-run` : args;
-  execSync(`gumroad ${flags} --non-interactive --yes`, {
+  execSync(`gumroad ${gumroadArgv(args, dryRun)}`, {
     encoding: "utf8",
     stdio: ["ignore", "pipe", "pipe"],
   });
@@ -212,7 +219,7 @@ ${topicItems}
 function stripExtraCovers(productId, { keep = 1, dryRun = false } = {}) {
   if (dryRun) return;
   const raw = execSync(
-    `gumroad products view ${productId} --json --non-interactive --yes`,
+    `gumroad ${gumroadArgv(`products view --json -- "${productId}"`)}`,
     { encoding: "utf8" },
   );
   const view = JSON.parse(raw);
@@ -225,7 +232,7 @@ function stripExtraCovers(productId, { keep = 1, dryRun = false } = {}) {
   for (const cover of [...extra].reverse()) {
     const cid = cover?.id;
     if (!cid) continue;
-    runGumroad(`products covers remove ${productId} ${cid}`, { dryRun: false });
+    runGumroad(`products covers remove -- "${productId}" ${cid}`, { dryRun: false });
   }
   console.log(`  covers: ${covers.length}→${keep} (stripped ${extra.length} extras)`);
 }
@@ -250,7 +257,7 @@ function uploadSamplePreviews({ productId, slug, dryRun }) {
     });
     console.log(`  samples: ${jpgs.length} preview screenshots`);
     for (const jpg of jpgs) {
-      runGumroad(`products update ${productId} --preview-image "${jpg}"`, { dryRun });
+      runGumroad(`products update --preview-image "${jpg}" -- "${productId}"`, { dryRun });
     }
   } finally {
     rmSync(workDir, { recursive: true, force: true });
@@ -260,7 +267,7 @@ function uploadSamplePreviews({ productId, slug, dryRun }) {
 /** A custom landing replaces the classic page (iframe), hiding the description Discover buyers should see. */
 function clearCustomLanding(productId) {
   try {
-    runGumroad(`products page clear ${productId}`);
+    runGumroad(`products page clear -- "${productId}"`);
     console.log(`  custom landing cleared → classic product page`);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
@@ -437,7 +444,7 @@ function uploadProductThumbnail({ productId, slug, coverPath, dryRun }) {
     console.log(
       `  thumbnail: 600×600 JPEG${prebuilt ? " (blueprint square)" : " (cropped fallback)"}`,
     );
-    runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
+    runGumroad(`products thumbnail set --image "${thumbJpg}" -- "${productId}"`, { dryRun });
   } finally {
     if (workDir) {
       rmSync(workDir, { recursive: true, force: true });
@@ -456,12 +463,12 @@ function uploadProductAssets({
   console.log(`  assets: apkg ${apkgPath}`);
   const fileFlags = `--file "${apkgPath}" --file-name "${apkgDisplayName}" --file-description "Anki deck — import into Anki desktop, then sync to mobile via AnkiWeb."`;
   try {
-    runGumroad(`products update ${productId} --replace-files ${fileFlags}`, { dryRun });
+    runGumroad(`products update --replace-files ${fileFlags} -- "${productId}"`, { dryRun });
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     if (/replace one embedded file|rich_content|remove-file/i.test(message)) {
       console.warn(`  replace-files blocked; appending .apkg without replace`);
-      runGumroad(`products update ${productId} ${fileFlags}`, { dryRun });
+      runGumroad(`products update ${fileFlags} -- "${productId}"`, { dryRun });
     } else {
       throw error;
     }
@@ -472,12 +479,12 @@ function uploadProductAssets({
     console.log(
       `  assets: thumbnail (600×600 JPEG${prebuilt ? ", blueprint square" : ", cropped fallback"})`,
     );
-    runGumroad(`products thumbnail set ${productId} --image "${thumbJpg}"`, { dryRun });
+    runGumroad(`products thumbnail set --image "${thumbJpg}" -- "${productId}"`, { dryRun });
 
     const { coverPng, workDir: coverDir } = prepareCoverPng(coverPath);
     try {
       console.log(`  assets: cover image`);
-      runGumroad(`products update ${productId} --cover-image "${coverPng}"`, { dryRun });
+      runGumroad(`products update --cover-image "${coverPng}" -- "${productId}"`, { dryRun });
     } finally {
       rmSync(coverDir, { recursive: true, force: true });
     }
@@ -507,9 +514,9 @@ async function syncProductThumbnail({ slug, record, dryRun }) {
   const specs = loadSpecs();
   const name = specs[slug]?.gumroadName;
   if (name) {
-    runGumroad(`products update ${productId} --name "${name.replace(/"/g, '\\"')}"`, { dryRun: false });
+    runGumroad(`products update --name "${name.replace(/"/g, '\\"')}" -- "${productId}"`, { dryRun: false });
   }
-  runGumroad(`products publish ${productId}`);
+  runGumroad(`products publish -- "${productId}"`);
   console.log(`  thumbnail uploaded + product published`);
 }
 
@@ -565,7 +572,7 @@ async function syncProductAssets({
     dryRun: false,
   });
 
-  runGumroad(`products update ${productId} --name "${name.replace(/"/g, '\\"')}"`, { dryRun: false });
+  runGumroad(`products update --name "${name.replace(/"/g, '\\"')}" -- "${productId}"`, { dryRun: false });
   await putGumroadDescriptionAsync(productId, description, dryRun, slug, spec);
 
   const sampleCount = resolveSampleWebps(slug).length;
@@ -579,7 +586,7 @@ async function syncProductAssets({
     );
   }
 
-  runGumroad(`products publish ${productId}`);
+  runGumroad(`products publish -- "${productId}"`);
 
   const refreshed = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
   catalog.products[slug] = {
@@ -623,11 +630,11 @@ async function syncProductPolish({ slug, record, titles, getAllMockExams, catalo
   }
 
   uploadSamplePreviews({ productId, slug, dryRun: false });
-  runGumroad(`products update ${productId} --name "${name.replace(/"/g, '\\"')}"`, { dryRun: false });
+  runGumroad(`products update --name "${name.replace(/"/g, '\\"')}" -- "${productId}"`, { dryRun: false });
   await putGumroadDigitalSettings(resolveGumroadToken(), productId);
   await putGumroadDescriptionAsync(productId, description, false, slug, spec);
   if (loadLandingCopy(slug)) clearCustomLanding(productId);
-  runGumroad(`products publish ${productId}`);
+  runGumroad(`products publish -- "${productId}"`);
   const refreshed = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
   catalog.products[slug] = {
     ...(refreshed.products[slug] ?? record),

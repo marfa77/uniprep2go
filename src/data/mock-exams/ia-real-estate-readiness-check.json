@@ -102,33 +102,33 @@
     "id": "ia-real-estate-readiness-check-agency-law-004",
     "examSlug": "ia-real-estate-readiness-check",
     "topicId": "agency-law",
-    "prompt": "Earnest money is best described as:",
+    "prompt": "Two Iowa brokers, upset that a new flat-fee brokerage is undercutting them, agree to tell their agents not to show any of the flat-fee firm's listings. One of their buyer's agents asks whether this is allowed. What is the best answer?",
     "options": [
       {
         "id": "a",
-        "text": "A nonrefundable gift to the listing agent personally"
+        "text": "Allowed, because each broker may decide which listings its own agents will show"
       },
       {
         "id": "b",
-        "text": "The broker's guaranteed commission"
+        "text": "Allowed, as long as the two brokers do not also discuss commission rates"
       },
       {
         "id": "c",
-        "text": "A municipal transfer tax paid at listing"
+        "text": "A breach of MLS etiquette, but not a matter for antitrust law"
       },
       {
         "id": "d",
-        "text": "A good-faith deposit typically held in escrow/trust pending contract performance"
+        "text": "An illegal group boycott under antitrust law, even with no price talks"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Earnest money shows good faith and is usually escrowed subject to the contract.",
+    "explanation": "When competitors agree to refuse to deal with another firm, that is a group boycott, a per se violation of the Sherman Antitrust Act. A single broker may make its own business decisions independently, but the agreement between two competing firms is what makes this illegal. Withholding listings also breaches duties owed to buyer clients.",
     "distractorExplanations": {
-      "a": "It is not a personal gift to the agent.",
-      "b": "Commission is separate.",
-      "c": "Transfer taxes are closing items, not earnest money."
+      "a": "Independent choices are lawful, but here two competing brokers agreed together to shut out a rival; the agreement itself is the violation.",
+      "b": "Price-fixing and boycotts are separate antitrust violations; avoiding rate talk does not make a coordinated boycott legal.",
+      "c": "Group boycotts violate federal antitrust law and can bring fines, damages and even criminal charges, not just MLS discipline."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -498,33 +498,33 @@
     "id": "ia-real-estate-readiness-check-property-ownership-001",
     "examSlug": "ia-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A fee simple absolute estate is best characterized as:",
+    "prompt": "An Iowa farmer rents cropland from Ruth, who holds a life estate in it. He plants soybeans in May. Ruth dies in August, which ends the lease before harvest. Who has the right to the soybean crop?",
     "options": [
       {
         "id": "a",
-        "text": "A leasehold for one month"
+        "text": "The tenant, who may return to harvest the crop he planted"
       },
       {
         "id": "b",
-        "text": "An easement"
+        "text": "The remainderman, because growing crops pass with the land"
       },
       {
         "id": "c",
-        "text": "A personal property license"
+        "text": "Ruth's estate, because the crop grew while she held the land"
       },
       {
         "id": "d",
-        "text": "The most complete ownership interest recognized in real property"
+        "text": "The remainderman, who must repay the tenant for seed and labor"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Fee simple absolute is the fullest freehold estate.",
+    "correctOptionId": "a",
+    "explanation": "Emblements are annual crops produced by labor, such as soybeans or corn. When a tenancy of uncertain length ends through no fault of the tenant, as when the life tenant's death ends this lease, the tenant may re-enter and harvest the crop he planted. The crop is treated as his personal property, not as part of the land passing to the remainderman.",
     "distractorExplanations": {
-      "a": "Leaseholds are non-freehold.",
-      "b": "Easements are nonpossessory rights.",
-      "c": "Licenses are typically personal privileges."
+      "b": "Growing crops normally pass with the land, but emblements are the exception for a tenant whose lease ended unexpectedly through no fault of his own.",
+      "c": "Ruth's estate did not plant the crop; the doctrine protects the person whose labor produced it, which is the tenant.",
+      "d": "The remainderman does not take the crop and reimburse costs; the tenant keeps the right to harvest the crop itself."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {
@@ -993,33 +993,33 @@
     "id": "ia-real-estate-readiness-check-finance-closing-001",
     "examSlug": "ia-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "An Iowa borrower's 5/1 ARM started at 7.00% with 2/2/5 caps (initial, periodic, lifetime). At the first adjustment, the index is 7.25% and the margin is 2.75%. What interest rate applies for year six?",
     "options": [
       {
         "id": "a",
-        "text": "Monthly payment ÷ annual income"
+        "text": "7.00% interest"
       },
       {
         "id": "b",
-        "text": "Down payment ÷ interest rate"
+        "text": "7.25% interest"
       },
       {
         "id": "c",
-        "text": "Loan amount ÷ appraised value (or purchase price, per lender rules) × 100%"
+        "text": "9.00% interest"
       },
       {
         "id": "d",
-        "text": "Closing costs ÷ HOA dues"
+        "text": "10.00% interest"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value.",
+    "explanation": "The fully indexed rate is index + margin = 7.25% + 2.75% = 10.00%. But the first adjustment is limited by the 2% initial cap: 7.00% + 2.00% = 9.00% maximum. The new rate is the lower of the two, 9.00%. The lifetime cap of 7.00% + 5.00% = 12.00% is not reached.",
     "distractorExplanations": {
-      "a": "That relates to debt-to-income concepts.",
-      "b": "Nonsense formula.",
-      "d": "Unrelated."
+      "a": "The rate is not frozen after the fixed period; at the first adjustment it resets toward index plus margin, limited by the caps.",
+      "b": "Uses the index alone and forgets the lender's margin, which is added to the index at every adjustment.",
+      "d": "This is the fully indexed rate, but the 2% initial adjustment cap limits the first increase to 9.00%."
     },
-    "difficulty": "easy",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
   },
   {

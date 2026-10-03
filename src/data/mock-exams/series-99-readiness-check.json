@@ -135,33 +135,33 @@
     "id": "series-99-readiness-check-ops-005",
     "examSlug": "series-99-readiness-check",
     "topicId": "ops",
-    "prompt": "Corporate action voluntary tender offer requires operations to:",
+    "prompt": "XYZ declares a cash dividend payable to holders of record on Monday, June 15, 2026. Under today's T+1 regular-way settlement, what is the last day a buyer can purchase and still receive it?",
     "options": [
       {
         "id": "a",
-        "text": "Notify customers, track instructions, and submit elections by deadline"
+        "text": "Wednesday, June 10"
       },
       {
         "id": "b",
-        "text": "Auto-tender all accounts without disclosure"
+        "text": "Thursday, June 11"
       },
       {
         "id": "c",
-        "text": "Ignore issuer notices"
+        "text": "Friday, June 12"
       },
       {
         "id": "d",
-        "text": "Delete positions from system"
+        "text": "Monday, June 15"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Voluntary actions need client communication and timely election processing.",
+    "correctOptionId": "c",
+    "explanation": "With T+1 settlement the ex-dividend date is the record date, Monday, June 15. A buyer on the ex-date settles too late, so the last day to buy with the dividend is the prior business day, Friday, June 12, which settles Monday on the record date.",
     "distractorExplanations": {
-      "b": "Requires client authorization.",
-      "c": "Must process notices.",
-      "d": "Positions remain until settled."
+      "a": "Uses the old T+3 timing, when the ex-date fell two business days before the record date.",
+      "b": "Applies the retired T+2 rule, under which the ex-date was one business day before the record date.",
+      "d": "June 15 is the ex-date under T+1; a trade that day settles June 16, after the record date, so it carries no dividend."
     },
-    "difficulty": "medium",
+    "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
@@ -564,31 +564,31 @@
     "id": "series-99-readiness-check-regs-003",
     "examSlug": "series-99-readiness-check",
     "topicId": "regs",
-    "prompt": "Bank Secrecy Act requires broker-dealers to:",
+    "prompt": "An operations analyst at Harbor Securities finds that an incoming $85,000 wire for a customer account comes from an entity on OFAC's SDN list. What must the firm do?",
     "options": [
       {
         "id": "a",
-        "text": "Ignore large cash transactions"
+        "text": "Return the wire to the sending bank and note the account file"
       },
       {
         "id": "b",
-        "text": "Implement AML program, file SARs, and verify customer identity"
+        "text": "Block the funds and report them to OFAC within 10 business days"
       },
       {
         "id": "c",
-        "text": "Share SAR details publicly"
+        "text": "File a SAR with FinCEN within 30 days, then credit the customer"
       },
       {
         "id": "d",
-        "text": "Accept anonymous accounts without CIP"
+        "text": "Hold the funds for 30 days and release them if OFAC does not respond"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "BSA/AML rules mandate CIP, monitoring, reporting suspicious activity confidentially.",
+    "explanation": "Property in which an SDN has an interest must be blocked, not returned or released. The firm moves the funds to a blocked account and files a blocked property report with OFAC within 10 business days; a SAR may also be warranted but does not replace blocking.",
     "distractorExplanations": {
-      "a": "CTR/SAR obligations exist.",
-      "c": "SAR confidential.",
-      "d": "CIP required."
+      "a": "Returning funds is rejection, used for some prohibited transactions; SDN property must be frozen, and sending it back hands it to the sanctioned party.",
+      "c": "A SAR goes to FinCEN and does not satisfy OFAC; crediting the customer would release property that must stay blocked.",
+      "d": "Blocked property stays frozen until OFAC licenses its release; silence from OFAC does not unblock the funds."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1059,31 +1059,31 @@
     "id": "series-99-readiness-check-books-003",
     "examSlug": "series-99-readiness-check",
     "topicId": "books",
-    "prompt": "Cost basis reporting on Form 1099-B includes:",
+    "prompt": "Ridge Brokerage closed a customer's account in March 2026. Under SEC Rule 17a-4, how long must it keep that customer's account record with investment objectives and financial details?",
     "options": [
       {
         "id": "a",
-        "text": "Proceeds and basis where reported for covered securities"
+        "text": "Until at least six years after the account was closed"
       },
       {
         "id": "b",
-        "text": "Only customer birthday"
+        "text": "For three years after the account was closed"
       },
       {
         "id": "c",
-        "text": "Medical history"
+        "text": "For six years after the account was opened"
       },
       {
         "id": "d",
-        "text": "Guaranteed tax advice binding IRS"
+        "text": "For the life of the firm, like its organizational records"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "1099-B reports sales proceeds; basis reported for covered securities per rules.",
+    "explanation": "Rule 17a-4 requires the customer account record that Rule 17a-3 mandates to be kept until at least six years after the account is closed or the information is replaced or updated. The clock runs from the March 2026 closing, so Ridge keeps it into 2032.",
     "distractorExplanations": {
-      "b": "Irrelevant.",
-      "c": "Irrelevant.",
-      "d": "Tax advice not on form."
+      "b": "Three years is the period for many other records, such as order tickets and communications, not customer account records.",
+      "c": "Anchors the clock to the opening date; a long-held account could lose its record while still open or soon after closing.",
+      "d": "Life-of-the-firm retention applies to organizational records such as articles and minute books, not customer account records."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
