@@ -60,7 +60,7 @@ function defaultTitle(deck: SeoDeck, mock?: MockExamConfig): string {
     case "professional":
       return `${year}${deck.shortName} Exam Prep | ${content}${suffix}`;
     case "language":
-      return `${deck.shortName} Exam Prep | ${content} Flashcards`;
+      return `${deck.shortName} Exam Prep | ${content.replace(/ cards$/, "")} Flashcards`;
     case "immigration":
       return deck.format === "App"
         ? `${deck.shortName} Exam Prep | Survival Guide App`

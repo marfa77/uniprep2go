@@ -20,6 +20,12 @@ describe("deck SEO magnets", () => {
     expect(buildDeckSeoDescription(deck!)).toContain("Not GARP material");
   });
 
+  it("does not double the unit in civics deck titles", () => {
+    const deck = getDeckBySlug("us-citizenship-anki-deck");
+    expect(deck).toBeDefined();
+    expect(buildDeckSeoTitle(deck!)).toBe("U.S. Citizenship Exam Prep | 128 Flashcards");
+  });
+
   it("frames SIE as exam prep with free mock", () => {
     const deck = getDeckBySlug("sie-exam-anki-deck");
     expect(buildDeckSeoTitle(deck!)).toContain("SIE");
