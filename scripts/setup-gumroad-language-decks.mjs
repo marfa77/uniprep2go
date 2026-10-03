@@ -215,12 +215,12 @@ const SPECS = {
     fileNames: ["Polish_A2_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "german-a2-for-ukrainian-speakers-anki-deck": {
-    name: "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+    name: "German A2 for Ukrainian Speakers Anki Deck — 2026 Flashcards",
     summary:
-      "1,926 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Ukrainian support on every card.",
+      "2,026 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Ukrainian translations on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
-      "<p><strong>1,926</strong> high-frequency German cards with Ukrainian glosses, bilingual examples, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,026</strong> high-frequency German cards with Ukrainian translations of each word and example sentence, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle). Distinct from the English-gloss German multi-pathway deck.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
@@ -232,12 +232,12 @@ const SPECS = {
     fileNames: ["German_A2_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "german-a2-for-russian-speakers-anki-deck": {
-    name: "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
+    name: "German A2 for Russian Speakers Anki Deck — 2026 Flashcards",
     summary:
-      "1,926 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Russian support on every card.",
+      "2,026 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Russian translations on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Russian speakers</strong> preparing <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
-      "<p><strong>1,926</strong> high-frequency German cards with Russian glosses, bilingual examples, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>2,026</strong> high-frequency German cards with Russian translations of each word and example sentence, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle). Distinct from the English-gloss German multi-pathway deck and the Ukrainian-support edition.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",

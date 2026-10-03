@@ -2713,7 +2713,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       scoring_scale: "Scaled score 1–50",
       passing_score: "Scaled score of 25 or greater (verify current handbook at cdrnet.org)",
       delivery: "Pearson VUE testing centers / CDR-authorized delivery (verify current options in the RD Handbook)",
-      outline_effective_date: "Test specifications January 1, 2022 – December 31, 2026",
+      outline_effective_date: "Test specifications January 1, 2022 – December 31, 2026; new 2027–2031 specifications apply from January 1, 2027",
       verify_at_url: "https://www.cdrnet.org/rd-handbook",
     },
     official_sources: [
@@ -2724,6 +2724,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       {
         label: "CDR — RD exam test specifications (2022–2026)",
         url: "https://admin.cdrnet.org/vault/2459/web/2022%20RD%20Test%20Specifications%20without%20detail%20CDR%20approved%209%202020%5B1%5D.pdf",
+      },
+      {
+        label: "CDR — RD exam test specifications and study outline (2027–2031)",
+        url: "https://www.cdrnet.org/vault/2459/web/2027-2031%20RD%20Test%20Specifications%20and%20Expanded%20Study%20Outline.pdf",
       },
       {
         label: "CDR — Study resources",
@@ -2740,6 +2744,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "The RD exam is computer-adaptive and variable length: minimum 125 items (100 scored + 25 pretest), maximum 145 (120 scored + 25 pretest).",
       "Passing requires a scaled score of 25 or higher on a 1–50 scale — the number of raw correct answers needed varies by form.",
       "Current outline (2022–2026): Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%.",
+      "From January 1, 2027 the 2027–2031 outline applies: Fundamentals of Dietetics Practice 23%, Community and Public Health Nutrition 22%, Human Nutrition and Medical Nutrition Therapy 40%, Food Science and Food Systems 15%.",
       "Eligibility requires ACEND-accredited education pathway and supervised practice before CDR authorizes the exam.",
       "Nutrition Care Process (ADIME) and PES statements are core clinical judgment themes.",
       "Foodservice and management domains still appear on every exam — do not skip sanitation, procurement, or HR/finance basics.",
@@ -2756,6 +2761,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       {
         q: "What domains does the RD exam cover?",
         a: "Four domains under the 2022–2026 specifications: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%).",
+      },
+      {
+        q: "Does the RD exam outline change in 2027?",
+        a: "Yes. From January 1, 2027 CDR uses the 2027–2031 specifications: Fundamentals of Dietetics Practice (23%), Community and Public Health Nutrition (22%), Human Nutrition and Medical Nutrition Therapy (40%), and Food Science and Food Systems (15%). Most topics carry over but are regrouped. UniPrep2Go's free check and deck are still mapped to the 2022–2026 domains, so if you test in 2027, use CDR's new study outline as your checklist.",
       },
       {
         q: "Is UniPrep2Go’s RD readiness check the official CDR exam?",

@@ -464,7 +464,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       },
     ],
     officialSourceNote:
-      "CDR Registration Examination for Dietitians (2022–2026 outline): computer-adaptive, 125–145 items (100–120 scored + 25 pretest), 3 hours, scaled pass 25/50. Domains — Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%. This UniPrep2Go check is a 120-question / 120-minute diagnostic, not a CDR exam.",
+      "CDR Registration Examination for Dietitians (2022–2026 outline): computer-adaptive, 125–145 items (100–120 scored + 25 pretest), 3 hours, scaled pass 25/50. Domains — Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%. From January 1, 2027 the 2027–2031 outline regroups these into Fundamentals 23%, Community and Public Health 22%, Human Nutrition and MNT 40%, Food Science and Food Systems 15%; this check still uses the 2022–2026 domains. This UniPrep2Go check is a 120-question / 120-minute diagnostic, not a CDR exam.",
     description:
       "Free 120-question Registered Dietitian (RDN) exam readiness check across CDR’s four domains — principles, nutrition care, management, and foodservice.",
     examBody: "CDR (Commission on Dietetic Registration)",

@@ -37,9 +37,9 @@ const AUTHORED_APKG = {
   "cfa-level-1-anki-deck": "out/cfa/CFA_Level_1_FULL_348.apkg",
   "cfa-level-2-anki-deck": "out/cfa_level2/CFA_Level_2_FULL_495.apkg",
   "frm-part-1-anki-deck": "out/frm/FRM_Part_1_FULL_444.apkg",
-  "life-and-health-insurance-exam-anki-deck": "out/insurance/Life_Health_Insurance_FULL_400.apkg",
-  "property-casualty-insurance-exam-anki-deck": "out/insurance/Property_Casualty_Insurance_FULL_400.apkg",
-  "california-real-estate-exam-anki-deck": "out/real_estate/California_Real_Estate_Salesperson_FULL_400.apkg",
+  "life-and-health-insurance-exam-anki-deck": "out/insurance/Life_Health_Insurance_FULL_250.apkg",
+  "property-casualty-insurance-exam-anki-deck": "out/insurance/Property_Casualty_Insurance_FULL_250.apkg",
+  "california-real-estate-exam-anki-deck": "out/real_estate/California_Real_Estate_Salesperson_FULL_250.apkg",
 };
 
 function parseArgs(argv) {

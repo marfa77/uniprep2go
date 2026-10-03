@@ -950,7 +950,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Mapped to FINRA Series 99 (Operations Professional) themes. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not an official exam.",
+      "Mapped to FINRA Series 99 (Operations Professional) themes. Official Series 99: 50 scored questions / 90 minutes / scaled passing score 68, SIE corequisite. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not an official exam.",
     description: "Free 120-question Series 99 readiness check with topic scoring.",
     examBody: "FINRA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",

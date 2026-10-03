@@ -622,7 +622,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "german-a2-for-ukrainian-speakers-anki-deck": {
         "label": "German A2 for Ukrainian Speakers",
-        "headline": "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+        "headline": "German A2 for Ukrainian Speakers Anki Deck — 2026 Flashcards",
         "exam": "Goethe A2 · telc A2 · ÖSD A2 · DTZ — for Ukrainian speakers",
         "hook": (
             "German A2 vocabulary for Ukrainian speakers preparing Goethe-Institut, telc, "
@@ -642,7 +642,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Ukrainian support",
         "deck_covers": (
-            "1,926 German vocabulary cards with Ukrainian glosses, bilingual examples, "
+            "2,026 German vocabulary cards with Ukrainian glosses, bilingual examples, "
             "native German audio, and illustrations."
         ),
         "not_included": (
@@ -653,19 +653,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "A2 certificate and DTZ success depends on automatic everyday German. "
             "Ukrainian support speeds early comprehension while audio forces German recall."
         ),
-        "cards": "1926",
+        "cards": "2026",
         "format_note": "Anki .apkg with audio, images, and Ukrainian glosses",
         "sample_captions": ["Universität", "Büro", "Markt"],
         "facts": [
             ("Pathways", "Goethe · telc · ÖSD · DTZ"),
-            ("Cards", "1926 vocabulary"),
+            ("Cards", "2026 vocabulary"),
             ("Support", "Ukrainian glosses"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "german-a2-for-russian-speakers-anki-deck": {
         "label": "German A2 for Russian Speakers",
-        "headline": "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
+        "headline": "German A2 for Russian Speakers Anki Deck — 2026 Flashcards",
         "exam": "Goethe A2 · telc A2 · ÖSD A2 · DTZ — for Russian speakers",
         "hook": (
             "German A2 vocabulary for Russian speakers preparing Goethe-Institut, telc, "
@@ -685,7 +685,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Goethe A2 · telc A2 · ÖSD A2 · DTZ · Russian support",
         "deck_covers": (
-            "1,926 German vocabulary cards with Russian glosses, bilingual examples, "
+            "2,026 German vocabulary cards with Russian glosses, bilingual examples, "
             "native German audio, and illustrations."
         ),
         "not_included": (
@@ -696,12 +696,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "A2 certificate and DTZ success depends on automatic everyday German. "
             "Russian support speeds early comprehension while audio forces German recall."
         ),
-        "cards": "1926",
+        "cards": "2026",
         "format_note": "Anki .apkg with audio, images, and Russian glosses",
         "sample_captions": ["Universität", "Büro", "Markt"],
         "facts": [
             ("Pathways", "Goethe · telc · ÖSD · DTZ"),
-            ("Cards", "1926 vocabulary"),
+            ("Cards", "2026 vocabulary"),
             ("Support", "Russian glosses"),
             ("Delivery", "Instant .apkg"),
         ],

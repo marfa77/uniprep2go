@@ -317,11 +317,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Ukrainian-speaking Certyfikat A2 and residence-language candidates use bilingual Polish vocabulary recall with Ukrainian support before timed exam practice. Not a Polish citizenship civics deck.",
   },
   "german-a2-for-ukrainian-speakers-anki-deck": {
-    title: "German A2 for Ukrainian Speakers Anki | 1926 Cards",
-    headline: "German A2 for Ukrainian Speakers — 1926 Flashcards",
+    title: "German A2 for Ukrainian Speakers Anki | 2026 Cards",
+    headline: "German A2 for Ukrainian Speakers — 2026 Flashcards",
     studyLabel: "German A2 for Ukrainian speakers exam prep",
     description:
-      "German Anki deck with 1926 flashcards for Ukrainian speakers preparing Goethe A2, telc A2, ÖSD A2, and DTZ — Ukrainian glosses, bilingual examples, and native German audio. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
+      "German Anki deck with 2026 flashcards for Ukrainian speakers preparing Goethe A2, telc A2, ÖSD A2, and DTZ — Ukrainian translations of words and example sentences, and native German audio. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
     keywords: [
       "german for ukrainian speakers anki",
       "німецька для українців anki",
@@ -333,11 +333,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Ukrainian-speaking Goethe, telc, ÖSD, and DTZ candidates use bilingual German vocabulary recall with Ukrainian support before timed exam practice. Not a Leben in Deutschland civics deck.",
   },
   "german-a2-for-russian-speakers-anki-deck": {
-    title: "German A2 for Russian Speakers Anki | 1926 Cards",
-    headline: "German A2 for Russian Speakers — 1926 Flashcards",
+    title: "German A2 for Russian Speakers Anki | 2026 Cards",
+    headline: "German A2 for Russian Speakers — 2026 Flashcards",
     studyLabel: "German A2 for Russian speakers exam prep",
     description:
-      "German Anki deck with 1926 flashcards for Russian speakers preparing Goethe A2, telc A2, ÖSD A2, and DTZ — Russian glosses, bilingual examples, and native German audio. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
+      "German Anki deck with 2026 flashcards for Russian speakers preparing Goethe A2, telc A2, ÖSD A2, and DTZ — Russian translations of words and example sentences, and native German audio. Independent study aid — not official Goethe, telc, ÖSD, or BAMF material.",
     keywords: [
       "german for russian speakers anki",
       "немецкий для русских anki",
@@ -456,7 +456,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "IRS Enrolled Agent (SEE) Prep — 120 Flashcards",
     studyLabel: "Enrolled Agent Anki flashcards",
     description:
-      "Enrolled Agent Anki: 120 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a free 120-question EA readiness check with topic scoring. Ownable .apkg before Prometric. Independent — not IRS material.",
+      "Enrolled Agent Anki: 120 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a free 120-question EA readiness check with topic scoring. Ownable .apkg before your PSI sitting. Independent — not IRS material.",
     keywords: [
       "enrolled agent anki",
       "ea exam flashcards",
@@ -661,11 +661,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), French university applicants (TCF général), and fide / Swiss residency French language learners.",
   },
   "cfa-level-1-anki-deck": {
-    title: "Best CFA Level 1 Anki Deck 2026 | 342 Cards + Free Mock",
-    headline: "CFA Level 1 Exam Prep — 342+ Flashcards + Free Mock",
+    title: "Best CFA Level 1 Anki Deck 2026 | 348 Cards + Free Mock",
+    headline: "CFA Level 1 Exam Prep — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "Best independent CFA Level 1 Anki deck for 2026: focused 342+ cards across all 10 topic weights, free 60-question timed mock with topic scoring, and printable formula PDF companion — not a 1,600-card dump. Not CFA Institute material.",
+      "Best independent CFA Level 1 Anki deck for 2026: focused 348 cards across all 10 topic weights, free 60-question timed mock with topic scoring, and printable formula PDF companion — not a 1,600-card dump. Not CFA Institute material.",
     keywords: [
       "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
@@ -715,7 +715,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best CFA Level 1 Formula Sheet PDF 2026 — 250 Formulas + 80Q Drill",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "Best CFA Level 1 formula sheet PDF for 2026: 250 typeset formulas, 98 definitions, 80-question recall drill, 54 print pages — not a free one-page cheat sheet. Pairs with 342+ Anki ($29) and free 60Q mock. Not CFA Institute curriculum.",
+      "Best CFA Level 1 formula sheet PDF for 2026: 250 typeset formulas, 98 definitions, 80-question recall drill, 54 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($29) and free 60Q mock. Not CFA Institute curriculum.",
     keywords: [
       "best cfa level 1 formula sheet",
       "cfa level 1 formula sheet pdf",
@@ -860,11 +860,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Four hundred state-specific cards plus a free 60-question CA mock beat a Quizlet national dump before you buy a full Aceable-style course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
-    title: "Life & Health Insurance Prep 2026 | 400 Cards + Mock",
-    headline: "Life & Health Insurance Exam Prep — 400 Flashcards + Free Mock",
+    title: "Life & Health Insurance Prep 2026 | 250 Cards + Mock",
+    headline: "Life & Health Insurance Exam Prep — 250 Flashcards + Free Mock",
     studyLabel: "Life & Health insurance exam prep",
     description:
-      "Life & Health insurance license prep: 400 Anki flashcards (provisions, annuities, Medicare) + 60-question timed practice test online — first mock free, no signup. Independent study aid — not official state exam material.",
+      "Life & Health insurance license prep: 250 Anki flashcards (provisions, annuities, Medicare) + 60-question timed practice test online — first mock free, no signup. Independent study aid — not official state exam material.",
     keywords: [
       "life and health insurance practice test",
       "insurance license exam prep",
@@ -876,11 +876,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Americans studying for state Life & Health producer licensing use Anki for policy provisions, annuities, and cost-sharing concepts — then validate with the free timed practice test.",
   },
   "property-casualty-insurance-exam-anki-deck": {
-    title: "P&C Insurance Prep | 400 Cards + Free Practice Test",
-    headline: "Property & Casualty Insurance Exam Prep — 400 Flashcards + Free Mock",
+    title: "P&C Insurance Prep | 250 Cards + Free Practice Test",
+    headline: "Property & Casualty Insurance Exam Prep — 250 Flashcards + Free Mock",
     studyLabel: "Property & Casualty insurance exam prep",
     description:
-      "Property and Casualty insurance license exam prep with 400 flashcards for homeowners, auto, commercial lines, and workers comp — plus a free 60-question P&C insurance practice test.",
+      "Property and Casualty insurance license exam prep with 250 flashcards for homeowners, auto, commercial lines, and workers comp — plus a free 60-question P&C insurance practice test.",
     keywords: [
       "property casualty insurance practice test",
       "p&c insurance exam prep",

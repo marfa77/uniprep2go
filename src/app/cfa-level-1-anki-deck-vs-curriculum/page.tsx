@@ -9,7 +9,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const directAnswer =
-  "The CFA Level 1 Anki deck and the official CFA curriculum serve different roles. The deck is a 342+ card spaced-repetition tool for fast recall of formulas, definitions, and concepts. The official curriculum is the authoritative source for full learning and exam-standard practice. Use the deck alongside the curriculum, not as a replacement for it.";
+  "The CFA Level 1 Anki deck and the official CFA curriculum serve different roles. The deck is a 348-card spaced-repetition tool for fast recall of formulas, definitions, and concepts. The official curriculum is the authoritative source for full learning and exam-standard practice. Use the deck alongside the curriculum, not as a replacement for it.";
 
 export const metadata: Metadata = withAiMetadata(
   {

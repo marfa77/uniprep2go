@@ -798,7 +798,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Mapped to IRS SEE themes (Individuals, Businesses, Representation, Practices). This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target — not an official three-part Prometric sitting. Independent prep — not IRS exam material.",
+      "Mapped to IRS SEE themes (Individuals, Businesses, Representation, Practices). This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target — not an official three-part SEE sitting (official: 100 questions / 3.5 hours per part, scaled pass 500 on 200–800, delivered by PSI since March 2026). Independent prep — not IRS exam material.",
     description: "Free 120-question IRS Enrolled Agent readiness check with topic scoring.",
     examBody: "IRS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",

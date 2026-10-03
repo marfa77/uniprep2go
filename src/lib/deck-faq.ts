@@ -54,7 +54,7 @@ function buildExamFaqs(deck: Deck): DeckFaq[] {
     faqs.push({
       question: "Does this pair with the CFA Level 1 Anki deck?",
       answer:
-        "Yes. The PDF and 342+ card Anki deck share the same validated item bank. Use the reference for printable formula tables and the 80-question recall drill; use Anki for daily spaced-repetition on your phone.",
+        "Yes. The PDF and 348-card Anki deck share the same validated item bank. Use the reference for printable formula tables and the 80-question recall drill; use Anki for daily spaced-repetition on your phone.",
     });
   } else {
     faqs.push({

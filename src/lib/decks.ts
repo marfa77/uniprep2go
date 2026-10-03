@@ -376,12 +376,12 @@ const rawDecks: Deck[] = [
     slug: "cfa-level-1-anki-deck",
     category: "finance",
     status: "available",
-    title: "CFA Level 1 Anki Deck — 342+ Smart Flashcards",
+    title: "CFA Level 1 Anki Deck — 348 Smart Flashcards",
     shortName: "CFA Level 1",
     subtitle:
       "Focused 342-card CFA Level 1 Anki deck + free 60-question timed mock — not a 1,600-card dump.",
     directAnswer:
-      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 342+ card .apkg across all 10 topic weights, paired with a free 60-question timed readiness-check mock (topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
+      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg across all 10 topic weights, paired with a free 60-question timed readiness-check mock (topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
     lastUpdated: "2026-09-29",
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
@@ -390,7 +390,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "342+",
+      cards: "348",
       topics: "10 CFA Level 1 topic areas",
       formulas: "Core formulas and definitions",
       examYear: "2026 preparation cycle",
@@ -426,7 +426,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is included in the CFA Level 1 Anki deck?",
         answer:
-          "342+ Anki flashcards covering CFA Level 1 concepts, formulas, and definitions across all 10 topic areas, with a linked free 60-question timed mock and a matching printable formula reference PDF.",
+          "348 Anki flashcards covering CFA Level 1 concepts, formulas, and definitions across all 10 topic areas, with a linked free 60-question timed mock and a matching printable formula reference PDF.",
       },
       {
         question: "Is there a free CFA Level 1 practice test with this deck?",
@@ -484,7 +484,7 @@ const rawDecks: Deck[] = [
       },
       {
         dimension: "Format",
-        deck: "342+ Anki flashcards (.apkg) using spaced repetition.",
+        deck: "348 Anki flashcards (.apkg) using spaced repetition.",
         curriculum: "Official readings, learning outcome statements, and item sets.",
       },
       {
@@ -514,7 +514,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "54-page printable formula quick reference for the 2026 cycle — 250 typeset formulas, 98 key definitions, and an 80-question recall drill.",
     directAnswer:
-      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC — same validated bank as the 342+ card Anki deck and free 60-question timed mock. Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
+      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC — same validated bank as the 348-card Anki deck and free 60-question timed mock. Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
     lastUpdated: "2026-09-29",
     audience:
       "CFA Level 1 candidates who need fast formula retrieval under exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
@@ -579,7 +579,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does this pair with the CFA Level 1 Anki deck?",
         answer:
-          "Yes. The PDF and 342+ card Anki deck share the same validated item bank. Use the reference for printable formula tables and the recall drill; use Anki for daily spaced-repetition on your phone.",
+          "Yes. The PDF and 348-card Anki deck share the same validated item bank. Use the reference for printable formula tables and the recall drill; use Anki for daily spaced-repetition on your phone.",
       },
       {
         question: "Is there a free practice test?",
@@ -957,12 +957,12 @@ const rawDecks: Deck[] = [
     slug: "california-real-estate-exam-anki-deck",
     category: "finance",
     status: "available",
-    title: "California Real Estate Exam Anki Deck — 400 High-Yield Flashcards",
+    title: "California Real Estate Exam Anki Deck — 250 High-Yield Flashcards",
     shortName: "California Real Estate",
     subtitle:
-      "400 California DRE salesperson Anki cards + free 60-question CA practice test — agency, disclosures, math.",
+      "250 California DRE salesperson Anki cards + free 60-question CA practice test — agency, disclosures, math.",
     directAnswer:
-      "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 400 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a free 60-question timed California practice test with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
+      "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 250 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a free 60-question timed California practice test with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
     lastUpdated: "2026-09-29",
     audience:
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
@@ -972,7 +972,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "400",
+      cards: "250",
       topics:
         "California DRE salesperson exam structure: property ownership, agency, valuation, financing, transfer, disclosures, and contracts",
       formulas: "Clear explanations, common exam traps, and formula support for real estate math",
@@ -1012,12 +1012,12 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best California real estate exam Anki deck?",
         answer:
-          "Choose a California DRE–specific deck (agency, disclosures, contracts, financing math) with a free timed CA practice test — not a generic national flashcard pack. UniPrep2Go’s California Real Estate Anki deck is 400 cards plus a free 60-question readiness check.",
+          "Choose a California DRE–specific deck (agency, disclosures, contracts, financing math) with a free timed CA practice test — not a generic national flashcard pack. UniPrep2Go’s California Real Estate Anki deck is 250 cards plus a free 60-question readiness check.",
       },
       {
         question: "What does the California Real Estate deck include?",
         answer:
-          "400 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math, plus a free 60-question California practice test.",
+          "250 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math, plus a free 60-question California practice test.",
       },
       {
         question: "Is there a free California real estate practice test?",
@@ -1049,12 +1049,12 @@ const rawDecks: Deck[] = [
     slug: "life-and-health-insurance-exam-anki-deck",
     category: "finance",
     status: "available",
-    title: "Life & Health Insurance Exam Anki Deck — 400 High-Yield Flashcards",
+    title: "Life & Health Insurance Exam Anki Deck — 250 High-Yield Flashcards",
     shortName: "Life & Health Insurance",
     subtitle:
-      "400 Life & Health insurance flashcards + free 60-question timed practice test — provisions, annuities, Medicare.",
+      "250 Life & Health insurance flashcards + free 60-question timed practice test — provisions, annuities, Medicare.",
     directAnswer:
-      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a 60-question timed Life & Health readiness check (first mock free, no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
+      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 250 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a 60-question timed Life & Health readiness check (first mock free, no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
     lastUpdated: "2026-09-21",
     audience:
       "Life & Health insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for policy provisions, riders, annuities, health plans, and insurance terminology.",
@@ -1064,7 +1064,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "400",
+      cards: "250",
       topics:
         "Life & Health insurance producer exam core topics: general principles, life policies, provisions and riders, annuities, health plans, disability and LTC, Medicare, tax, replacement, ethics, and producer duties",
       formulas: "Clear explanations, common exam traps, and formula support where needed",
@@ -1105,7 +1105,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the Life & Health Insurance deck include?",
         answer:
-          "400 high-yield Anki cards covering Life & Health insurance producer exam topics including general principles, life policies, provisions and riders, annuities, health plans, disability and LTC, Medicare, tax, replacement, ethics, and producer responsibilities.",
+          "250 high-yield Anki cards covering Life & Health insurance producer exam topics including general principles, life policies, provisions and riders, annuities, health plans, disability and LTC, Medicare, tax, replacement, ethics, and producer responsibilities.",
       },
       {
         question: "Is there a free Life & Health insurance practice test?",
@@ -1137,12 +1137,12 @@ const rawDecks: Deck[] = [
     slug: "property-casualty-insurance-exam-anki-deck",
     category: "finance",
     status: "available",
-    title: "Property & Casualty Insurance Exam Anki Deck — 400 High-Yield Flashcards",
+    title: "Property & Casualty Insurance Exam Anki Deck — 250 High-Yield Flashcards",
     shortName: "Property & Casualty Insurance",
     subtitle:
       "A focused Anki deck for U.S. Property & Casualty insurance licensing exam active recall.",
     directAnswer:
-      "UniPrep2Go sells an independent Property & Casualty Insurance Exam Anki deck with 400 high-yield cards covering national core topics tested across U.S. P&C licensing exams: property insurance basics, homeowners and dwelling policies, personal auto, commercial property, business owners policy, commercial general liability, workers compensation, policy structure, exclusions, claims, and key regulation concepts. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for P&C insurance licensing candidates and is not official state exam material.",
+      "UniPrep2Go sells an independent Property & Casualty Insurance Exam Anki deck with 250 high-yield cards covering national core topics tested across U.S. P&C licensing exams: property insurance basics, homeowners and dwelling policies, personal auto, commercial property, business owners policy, commercial general liability, workers compensation, policy structure, exclusions, claims, and key regulation concepts. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary active-recall study aid for P&C insurance licensing candidates and is not official state exam material.",
     lastUpdated: "2026-09-21",
     audience:
       "Property & Casualty insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for homeowners, auto, commercial lines, and policy provisions.",
@@ -1152,7 +1152,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "400",
+      cards: "250",
       topics:
         "U.S. P&C licensing core topics: property basics, homeowners, dwelling, personal auto, commercial property, BOP, CGL, workers comp, policy structure, exclusions, claims, and regulation",
       formulas: "Clear explanations, common exam traps, and examples on every card",
@@ -1193,7 +1193,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the Property & Casualty Insurance deck include?",
         answer:
-          "400 high-yield Anki cards covering U.S. P&C licensing topics including property basics, homeowners, auto, commercial property, BOP, CGL, workers comp, policy structure, exclusions, claims, and regulation.",
+          "250 high-yield Anki cards covering U.S. P&C licensing topics including property basics, homeowners, auto, commercial property, BOP, CGL, workers comp, policy structure, exclusions, claims, and regulation.",
       },
       {
         question: "Who is this deck for?",
@@ -1345,21 +1345,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "Cover — Level 2 formula reference at a glance",
+        question: "Equity Valuation table — FCFF and FCFE models (page 19)",
         answer:
-          "60 print-ready pages with 219 typeset formulas and 276 definitions organized across all 10 Level 2 topic areas.",
+          "FCFF and FCFE from net income and from CFO, discounting FCFE at r_e, EV-to-equity bridge, terminal value TV_N = FCFF_(N+1) / (WACC − g) and the two-stage FCFF model — each row with a plain-English meaning.",
         imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-1.webp",
       },
       {
-        question: "Fixed Income formula table — typeset math at a glance",
+        question: "Formula Recall Drill — Equity Valuation items 36–41 (page 46)",
         answer:
-          "Each row shows concept, typeset formula, and a one-line plain-English meaning — the fastest pre-exam scan for arbitrage-free and credit-model families Level 2 repeats.",
+          "See the formula, name the concept: RI intrinsic value V0 = BV0 + Σ RI_t / (1 + r_e)^t, clean surplus BV_t = BV_(t−1) + NI_t − D_t, RI persistence ω · RI_(t−1) and FCFF from CFO, with same-topic distractors.",
         imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-2.webp",
       },
       {
-        question: "Formula Recall Drill — see the formula, name the concept",
+        question: "Answer key with common traps (page 56)",
         answer:
-          "80 questions with same-topic distractors test whether you can retrieve the concept behind a displayed formula under item-set exam timing.",
+          "Every drill answer explains the concept and names the trap — e.g. WACC uses market-value weights and after-tax debt cost; FCFF discounted at WACC gives firm value, FCFE at the cost of equity gives equity value directly.",
         imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-3.webp",
       },
     ],
@@ -2135,12 +2135,12 @@ const rawDecks: Deck[] = [
     slug: "german-a2-for-ukrainian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+    title: "German A2 for Ukrainian Speakers Anki Deck — 2026 Flashcards",
     shortName: "German A2 for Ukrainian Speakers",
     subtitle:
-      "1,926 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Ukrainian support on every card.",
+      "2,026 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Ukrainian translations on every card.",
     directAnswer:
-      "UniPrep2Go sells a German A2 for Ukrainian Speakers Anki deck with 1,926 high-frequency German vocabulary cards, Ukrainian glosses, bilingual examples, native German audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
+      "UniPrep2Go sells a German A2 for Ukrainian Speakers Anki deck with 2,026 high-frequency German vocabulary cards, Ukrainian translations of each word and example sentence, native German audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
     lastUpdated: "2026-09-21",
     audience:
       "Ukrainian-speaking Goethe A2, telc A2, ÖSD A2, and DTZ candidates using Anki for German exam and integration vocabulary.",
@@ -2151,7 +2151,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1926",
+      cards: "2026",
       topics:
         "Goethe A2, telc A2, ÖSD A2, DTZ German vocabulary with Ukrainian bilingual support",
       formulas: "Audio + Ukrainian glosses + bilingual example sentences",
@@ -2169,7 +2169,7 @@ const rawDecks: Deck[] = [
       {
         question: "How is this different from the German Goethe telc ÖSD DTZ deck?",
         answer:
-          "This listing is the Ukrainian-support edition: German on the front, Ukrainian glosses and bilingual examples on the back. The general German Goethe telc ÖSD DTZ deck uses English glosses. Pick the language support that matches how you study.",
+          "This listing is the Ukrainian-support edition: German on the front, the Ukrainian translation and a German example sentence with its Ukrainian translation on the back. The general German Goethe telc ÖSD DTZ deck uses English glosses. Pick the language support that matches how you study.",
       },
       {
         question: "Is this a Leben in Deutschland civics deck?",
@@ -2179,7 +2179,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,926 German vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native German audio, and illustrations.",
+          "2,026 German vocabulary cards from the Prep2Go app: Ukrainian translations of each word and example sentence, native German audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",
@@ -2191,12 +2191,12 @@ const rawDecks: Deck[] = [
     slug: "german-a2-for-russian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
+    title: "German A2 for Russian Speakers Anki Deck — 2026 Flashcards",
     shortName: "German A2 for Russian Speakers",
     subtitle:
-      "1,926 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Russian support on every card.",
+      "2,026 German A2 flashcards for Goethe, telc, ÖSD, and DTZ — with Russian translations on every card.",
     directAnswer:
-      "UniPrep2Go sells a German A2 for Russian Speakers Anki deck with 1,926 high-frequency German vocabulary cards, Russian glosses, bilingual examples, native German audio, and illustrations. Built from the Prep2Go app bank for Russian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
+      "UniPrep2Go sells a German A2 for Russian Speakers Anki deck with 2,026 high-frequency German vocabulary cards, Russian translations of each word and example sentence, native German audio, and illustrations. Built from the Prep2Go app bank for Russian-speaking candidates preparing Goethe-Institut A2, telc Deutsch A2, ÖSD A2, and DTZ (Deutsch-Test für Zuwanderer) word knowledge — plus everyday German used toward residence and Einbürgerung language expectations. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Leben in Deutschland civics deck.",
     lastUpdated: "2026-09-21",
     audience:
       "Russian-speaking Goethe A2, telc A2, ÖSD A2, and DTZ candidates using Anki for German exam and integration vocabulary.",
@@ -2207,7 +2207,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1926",
+      cards: "2026",
       topics:
         "Goethe A2, telc A2, ÖSD A2, DTZ German vocabulary with Russian bilingual support",
       formulas: "Audio + Russian glosses + bilingual example sentences",
@@ -2225,7 +2225,7 @@ const rawDecks: Deck[] = [
       {
         question: "How is this different from the German Goethe telc ÖSD DTZ deck?",
         answer:
-          "This listing is the Russian-support edition: German on the front, Russian glosses and bilingual examples on the back. The general German Goethe telc ÖSD DTZ deck uses English glosses. Pick the language support that matches how you study.",
+          "This listing is the Russian-support edition: German on the front, the Russian translation and a German example sentence with its Russian translation on the back. The general German Goethe telc ÖSD DTZ deck uses English glosses. Pick the language support that matches how you study.",
       },
       {
         question: "Is this a Leben in Deutschland civics deck?",
@@ -2235,7 +2235,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,926 German vocabulary cards from the Prep2Go app: Russian glosses, bilingual examples, native German audio, and illustrations.",
+          "2,026 German vocabulary cards from the Prep2Go app: Russian translations of each word and example sentence, native German audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",

@@ -39,7 +39,7 @@ describe("LLM documents", () => {
       category: "finance",
       price_usd: 11,
       price_currency: "USD",
-      card_count: "342+",
+      card_count: "348",
       format: ".apkg",
       checkout_url: "https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true",
       checkout_provider: "Gumroad",
@@ -54,7 +54,7 @@ describe("LLM documents", () => {
         question_count: 60,
       },
     });
-    expect(facts.serp_answer).toContain("342+ cards");
+    expect(facts.serp_answer).toContain("348 cards");
     expect(facts.topic_coverage).toHaveLength(10);
     expect(facts.sample_cards).toHaveLength(3);
   });
@@ -233,7 +233,7 @@ describe("LLM documents", () => {
     expect(markdown).toContain("> ");
     expect(markdown).toContain("## CFA Level 1 exam facts");
     expect(markdown).toContain("## Product facts");
-    expect(markdown).toContain("- CFA Level 1 Anki Deck — 342+ Smart Flashcards");
+    expect(markdown).toContain("- CFA Level 1 Anki Deck — 348 Smart Flashcards");
     expect(markdown).toContain("## Topic coverage");
     expect(markdown).toContain("## Sample cards");
     expect(markdown).toContain("## Product FAQ");

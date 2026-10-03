@@ -13,7 +13,7 @@ import { getDeckUniqueContent } from "./deck-money-page-content";
 describe("deck money pages", () => {
   it("fixes exam-focused content grammar for CFA", () => {
     const deck = getDeckBySlug("cfa-level-1-anki-deck")!;
-    expect(formatExamFocusedContent(deck)).toBe("342+ exam-focused flashcards");
+    expect(formatExamFocusedContent(deck)).toBe("348 exam-focused flashcards");
     expect(formatExamFocusedContent(deck)).not.toMatch(/of exam-focused content/);
   });
 

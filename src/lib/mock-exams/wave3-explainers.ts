@@ -808,9 +808,9 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "enrolled-agent-readiness-check": {
     practiceTestName: "IRS Enrolled Agent Practice Test",
-    whatIsExam: "The IRS Special Enrollment Examination (SEE) qualifies Enrolled Agents to represent taxpayers before the IRS across individuals, businesses, and representation topics.",
-    administeredBy: "IRS",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with IRS.",
+    whatIsExam: "The IRS Special Enrollment Examination (SEE) qualifies Enrolled Agents to represent taxpayers before the IRS across individuals, businesses, and representation topics. Since March 1, 2026 the exam is developed and delivered by PSI Services, replacing Prometric.",
+    administeredBy: "IRS (delivered by PSI Services since March 1, 2026)",
+    officialFormat: "Three parts — Individuals; Businesses; Representation, Practices and Procedures — each 100 multiple-choice questions (85 scored, 15 unscored) in 3.5 hours. Scaled score 200–800 with a passing score of 500, which replaced the old 105 on Prometric's 40–130 scale. PSI test centers or online proctoring, $317 per part; the 2026 window runs July 1, 2026 to February 28, 2027. All three parts must be passed within three years.",
     examFaqs: [
       {
         question: "What is the IRS Enrolled Agent exam?",
@@ -819,6 +819,14 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is this an official IRS Enrolled Agent exam?",
         answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from IRS.",
+      },
+      {
+        question: "What is the passing score on the Enrolled Agent exam?",
+        answer: "A scaled score of 500 on a 200–800 scale for each part. Passing candidates see only a pass designation; failing candidates see a scaled score between 200 and 500 plus diagnostics. Guides that quote 105 describe the old Prometric scale used before March 2026.",
+      },
+      {
+        question: "Who delivers the Enrolled Agent exam now?",
+        answer: "PSI Services, since March 1, 2026 (previously Prometric). You schedule each part through PSI at a test center or by online proctoring; the fee is $317 per part.",
       },
     ],
     keywords: ["enrolled agent practice test", "ea exam practice test", "see practice test", "irs enrolled agent practice exam"],

@@ -55,6 +55,7 @@ export function buildCopyDescription({ copy, spec, mockUrl, deckUrl, delivery, h
   const links = [
     deckUrl ? `<a href="${deckUrl}">deck page</a>` : "",
     mockUrl ? `<a href="${mockUrl}">free timed readiness check</a>` : "",
+    ...(copy.siteLinks ?? []).map((l) => `<a href="${esc(l.href)}">${esc(l.label)}</a>`),
   ]
     .filter(Boolean)
     .join(" · ");

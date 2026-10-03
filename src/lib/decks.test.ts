@@ -21,7 +21,7 @@ describe("deck catalog", () => {
     expect(primaryDeck.checkoutUrl).toBe("https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true");
     expect(primaryDeck.checkoutProvider).toBe("Gumroad");
     expect(primaryDeck.checkoutSeller).toBe("PixID Studio");
-    expect(primaryDeck.facts.cards).toBe("342+");
+    expect(primaryDeck.facts.cards).toBe("348");
     expect(primaryDeck.format).toBe(".apkg");
     expect(primaryDeck.coverImage).toBe("/covers/cfa-level-1-anki-deck.webp");
     expect(primaryDeck.topicCoverage).toHaveLength(10);
@@ -247,9 +247,9 @@ describe("deck catalog", () => {
     expect(getDeckBySlug("polish-a2-for-ukrainian-speakers-anki-deck")?.title).toContain("Ukrainian Speakers");
     expect(getDeckBySlug("polish-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("1491");
     expect(getDeckBySlug("german-a2-for-ukrainian-speakers-anki-deck")?.title).toContain("Ukrainian Speakers");
-    expect(getDeckBySlug("german-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("1926");
+    expect(getDeckBySlug("german-a2-for-ukrainian-speakers-anki-deck")?.facts.cards).toBe("2026");
     expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.title).toContain("Russian Speakers");
-    expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.facts.cards).toBe("1926");
+    expect(getDeckBySlug("german-a2-for-russian-speakers-anki-deck")?.facts.cards).toBe("2026");
     const enFr = getDeckBySlug("ielts-toefl-english-for-french-speakers-anki-deck");
     expect(enFr?.title).toContain("IELTS / TOEFL English for French Speakers");
     expect(enFr?.facts.cards).toBe("2522");
@@ -465,7 +465,7 @@ describe("deck catalog", () => {
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
-    expect(californiaRealEstateDeck?.facts.cards).toBe("400");
+    expect(californiaRealEstateDeck?.facts.cards).toBe("250");
     expect(californiaRealEstateDeck?.sampleCards).toHaveLength(3);
     expect(californiaRealEstateDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
       "/samples/california-real-estate-exam-anki-deck-sample-1.webp",
@@ -490,7 +490,7 @@ describe("deck catalog", () => {
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
-    expect(lifeHealthDeck?.facts.cards).toBe("400");
+    expect(lifeHealthDeck?.facts.cards).toBe("250");
     expect(lifeHealthDeck?.sampleCards).toHaveLength(3);
     expect(lifeHealthDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
       "/samples/life-and-health-insurance-exam-anki-deck-sample-1.webp",
@@ -515,7 +515,7 @@ describe("deck catalog", () => {
       checkoutProvider: "Gumroad",
       checkoutSeller: "PixID Studio",
     });
-    expect(propertyCasualtyDeck?.facts.cards).toBe("400");
+    expect(propertyCasualtyDeck?.facts.cards).toBe("250");
     expect(propertyCasualtyDeck?.sampleCards).toHaveLength(3);
     expect(propertyCasualtyDeck?.sampleCards.map((card) => card.imageUrl)).toEqual([
       "/samples/property-casualty-insurance-exam-anki-deck-sample-1.webp",
@@ -740,7 +740,7 @@ describe("deck catalog", () => {
 
   it("uses a consistent public title pattern for available decks", () => {
     const expectedTitles: Record<string, string> = {
-      "cfa-level-1-anki-deck": "CFA Level 1 Anki Deck — 342+ Smart Flashcards",
+      "cfa-level-1-anki-deck": "CFA Level 1 Anki Deck — 348 Smart Flashcards",
       "cfa-level-1-formula-reference-2026":
         "CFA Level 1 Formula Reference 2026 — 250 Formulas + 98 Definitions + 80-Question Drill (PDF)",
       "cfa-level-2-anki-deck": "CFA Level 2 Anki Deck — 495 Flashcards",
@@ -752,11 +752,11 @@ describe("deck catalog", () => {
       "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",
       "series-63-anki-deck": "Series 63 Flashcards — 250 High-Yield NASAA Cards + Free Timed Mock",
       "california-real-estate-exam-anki-deck":
-        "California Real Estate Exam Anki Deck — 400 High-Yield Flashcards",
+        "California Real Estate Exam Anki Deck — 250 High-Yield Flashcards",
       "life-and-health-insurance-exam-anki-deck":
-        "Life & Health Insurance Exam Anki Deck — 400 High-Yield Flashcards",
+        "Life & Health Insurance Exam Anki Deck — 250 High-Yield Flashcards",
       "property-casualty-insurance-exam-anki-deck":
-        "Property & Casualty Insurance Exam Anki Deck — 400 High-Yield Flashcards",
+        "Property & Casualty Insurance Exam Anki Deck — 250 High-Yield Flashcards",
       "ciple-a2-european-portuguese-anki-deck":
         "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2067 Flashcards",
       "delf-b2-french-anki-deck": "DELF DALF TCF TEF French Anki Deck — 2115 Flashcards",
@@ -787,9 +787,9 @@ describe("deck catalog", () => {
       "polish-a2-for-ukrainian-speakers-anki-deck":
         "Polish A2 for Ukrainian Speakers Anki Deck — 1491 Flashcards",
       "german-a2-for-ukrainian-speakers-anki-deck":
-        "German A2 for Ukrainian Speakers Anki Deck — 1926 Flashcards",
+        "German A2 for Ukrainian Speakers Anki Deck — 2026 Flashcards",
       "german-a2-for-russian-speakers-anki-deck":
-        "German A2 for Russian Speakers Anki Deck — 1926 Flashcards",
+        "German A2 for Russian Speakers Anki Deck — 2026 Flashcards",
       "ielts-toefl-english-for-french-speakers-anki-deck":
         "IELTS / TOEFL English for French Speakers Anki Deck — 2522 Flashcards",
       "ielts-toefl-english-for-arabic-speakers-anki-deck":

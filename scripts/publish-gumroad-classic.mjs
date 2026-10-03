@@ -7,7 +7,10 @@
  * Sets name, summary, tags, category and the rich description, then rebuilds the gallery as
  * the main cover + 3 real screenshots, and clears any custom landing (it hides the classic page).
  *
- *   node scripts/publish-gumroad-classic.mjs --slug <slug> [--shots <dir>] [--dry-run]
+ *   node scripts/publish-gumroad-classic.mjs --slug <slug> [--shots <dir>] [--desc-only] [--dry-run]
+ *
+ * --desc-only: update name/summary/tags/description and leave the gallery as is.
+ * copy.siteSlug: site deck slug when it differs from the Gumroad slug.
  *
  * Screenshots: --shots dir with sample-{1,2,3}.(png|jpg|webp), else public/samples/<slug>-sample-N.webp,
  * else tmp/anki-shots/<slug>/sample-N.png (from render-anki-sample-shots.mjs without --write).
@@ -27,11 +30,12 @@ const DEFAULT_DELIVERY =
   "Instant download. After checkout, open your Gumroad library or receipt and download the Anki <code>.apkg</code> file. Import it in Anki desktop (File → Import) and sync to AnkiMobile or AnkiDroid through a free AnkiWeb account.";
 
 function parseArgs(argv) {
-  const args = { slug: null, shots: null, dryRun: false };
+  const args = { slug: null, shots: null, dryRun: false, descOnly: false };
   for (let i = 2; i < argv.length; i += 1) {
     if (argv[i] === "--slug") args.slug = argv[++i];
     else if (argv[i] === "--shots") args.shots = argv[++i];
     else if (argv[i] === "--dry-run") args.dryRun = true;
+    else if (argv[i] === "--desc-only") args.descOnly = true;
   }
   if (!args.slug) throw new Error("--slug is required");
   return args;
@@ -126,7 +130,7 @@ async function main() {
 
   const wantsSamples = copy.samples !== false;
   const shots = wantsSamples ? resolveShots(args.slug, args.shots) : [];
-  if (wantsSamples && shots.length !== 3) {
+  if (wantsSamples && shots.length !== 3 && !args.descOnly) {
     throw new Error(`${args.slug}: need 3 screenshots (got ${shots.length}); render them first or pass --shots`);
   }
 
@@ -135,9 +139,10 @@ async function main() {
     copy,
     spec: buildingSpecs[args.slug] ?? null,
     mockUrl: copy.mockSlug ? `${SITE}/mock-exams/${copy.mockSlug}` : null,
-    deckUrl: copy.sitePage !== false && hasSiteDeckPage(args.slug) ? `${SITE}/decks/${args.slug}` : null,
+    deckUrl:
+      copy.sitePage !== false && hasSiteDeckPage(copy.siteSlug ?? args.slug) ? `${SITE}/decks/${copy.siteSlug ?? args.slug}` : null,
     delivery: copy.delivery ?? DEFAULT_DELIVERY,
-    hasSamples: shots.length === 3,
+    hasSamples: shots.length === 3 || (args.descOnly && wantsSamples),
   });
 
   console.log(`${args.slug} (${productId}): ${description.replace(/<[^>]+>/g, "").length} chars, ${shots.length} shots`);
@@ -151,7 +156,7 @@ async function main() {
   });
   if (copy.title) gumroad(`products update --name ${JSON.stringify(copy.title)}`, [productId]);
 
-  if (shots.length === 3 || copy.keepCovers) {
+  if (!args.descOnly && (shots.length === 3 || copy.keepCovers)) {
     const view = JSON.parse(gumroad("products view", [productId], { json: true }));
     const product = view.product || view;
     const covers = product.covers || [];
@@ -159,7 +164,7 @@ async function main() {
     const mainFirst = [...covers].sort((a, b) => (b.id === product.main_cover_id) - (a.id === product.main_cover_id));
     for (const cover of mainFirst.slice(keep).reverse()) gumroad("products covers remove", [productId, cover.id]);
   }
-  if (shots.length === 3) {
+  if (!args.descOnly && shots.length === 3) {
     const work = mkdtempSync(join(tmpdir(), `gumroad-classic-${args.slug}-`));
     try {
       shots.forEach((shot, i) => {

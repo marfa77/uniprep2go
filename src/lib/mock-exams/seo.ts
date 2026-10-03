@@ -224,7 +224,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "california-real-estate-readiness-check": {
     title: "Free California Real Estate Salesperson Practice Test | 60Q Mock",
     description:
-      "Free California real estate practice: 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 400-card CA DRE Anki deck. Official DRE salesperson exam is 150Q / 3 hours / 70%. Independent — not DRE material.",
+      "Free California real estate practice: 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 250-card CA DRE Anki deck. Official DRE salesperson exam is 150Q / 3 hours / 70%. Independent — not DRE material.",
     keywords: [
       "california real estate practice test",
       "ca real estate exam questions",
@@ -234,7 +234,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free California Real Estate Salesperson Readiness Check",
     intro:
-      "A California real estate licensing readiness check covering practice and disclosures, agency, ownership, valuation, contracts, financing, and transfer of property — then drill weak DRE domains in the linked 400-card Anki deck. Official DRE salesperson sitting is 150 questions / 3 hours / 70%; this mock is a shorter diagnostic.",
+      "A California real estate licensing readiness check covering practice and disclosures, agency, ownership, valuation, contracts, financing, and transfer of property — then drill weak DRE domains in the linked 250-card Anki deck. Official DRE salesperson sitting is 150 questions / 3 hours / 70%; this mock is a shorter diagnostic.",
     audience: "California DRE salesperson exam candidates who want a timed baseline before licensing prep.",
     practiceTestLabel: "California real estate practice test",
   },
@@ -312,7 +312,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "life-and-health-insurance-readiness-check": {
     title: "Life & Health Insurance Practice Test 2026 | Free 60Q",
     description:
-      "Life & Health insurance practice test — first mock free, no signup: 60 timed questions, 90 minutes, 70% target, topic scoring, and full answer review. Pairs with 400-card Anki deck. Independent prep — not official state exam material.",
+      "Life & Health insurance practice test — first mock free, no signup: 60 timed questions, 90 minutes, 70% target, topic scoring, and full answer review. Pairs with 250-card Anki deck. Independent prep — not official state exam material.",
     keywords: [
       "life and health insurance practice test",
       "free life and health insurance practice test",
@@ -323,7 +323,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Life & Health Insurance Practice Test — 60 Questions",
     intro:
-      "A Life & Health insurance licensing practice test built from UniPrep2Go deck content — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic with topic scoring — first mock free, no signup. Drill weak areas in the 400-card Life & Health Anki deck between sittings.",
+      "A Life & Health insurance licensing practice test built from UniPrep2Go deck content — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic with topic scoring — first mock free, no signup. Drill weak areas in the 250-card Life & Health Anki deck between sittings.",
     audience: "Insurance producer candidates preparing for state Life & Health licensing exams.",
     practiceTestLabel: "Life & Health insurance practice test",
   },

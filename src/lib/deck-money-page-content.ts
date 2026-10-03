@@ -5,7 +5,7 @@ import { getDeckPracticeMock } from "./deck-funnel";
 
 export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
-    "342+ flashcards mapped to all 10 CFA Level 1 topic weights — pairs with the printable 2026 formula reference PDF.",
+    "348 flashcards mapped to all 10 CFA Level 1 topic weights — pairs with the printable 2026 formula reference PDF.",
   "cfa-level-1-formula-reference-2026":
     "54-page 2026 formula reference: 250 formulas + 98 definitions by topic plus an 80-question recall drill with answer key.",
   "cfa-level-2-anki-deck":
@@ -65,7 +65,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "well-ap-anki-deck":
     "$11 / 250 WELL AP cards + free 50Q timed mock — official 115 items / 2.5h / scaled 170. Not IWBI material.",
   "california-real-estate-exam-anki-deck":
-    "400 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
+    "250 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
   "series-63-anki-deck":
     "$11 Series 63 flashcards (250 NASAA cards) + free 60Q timed mock — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
@@ -126,7 +126,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "rd-exam-anki-deck":
     "CDR domain-weighted prompts: Principles of Dietetics, Nutrition Care (PES/ADIME), Management of Food and Nutrition Programs, and Foodservice Systems. Explanations name why distractors fail. Take the free 120-question RD readiness check first, then filter Anki to weak domains — not a random 2,000-card clinical dump.",
   "enrolled-agent-anki-deck":
-    "SEE Part 1–3 themes in one ownable deck: individuals (income, deductions, credits), businesses (entities, payroll themes), representation before the IRS, and practices & procedures. Pair with the free Enrolled Agent readiness check for timed topic scoring before you schedule Prometric — independent prep, not IRS material.",
+    "SEE Part 1–3 themes in one ownable deck: individuals (income, deductions, credits), businesses (entities, payroll themes), representation before the IRS, and practices & procedures. Pair with the free Enrolled Agent readiness check for timed topic scoring before you schedule with PSI — independent prep, not IRS material.",
   "ptcb-study-guide-2026":
     "Four chapters sized to the January 2026 PTCE outline/blueprint (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%). The 80-question exam mirrors PTCE scored length (28/15/19/18). Cluster: free 90-question online mock for readiness scoring → this PDF for structured reading → separate 300-card Anki for daily weak-topic repair.",
   "mrics-quantity-surveying-anki-deck":
@@ -164,7 +164,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "bms-building-automation-anki-deck":
     "BACnet objects/services/BBMD, HVAC sequences, operator alarms/trends/schedules, and commissioning checkout — the same four domains as the free 60-question timed check. Ownable .apkg for controls techs; not Tridium Niagara 4 TCP material and not a CertifBus 10-question tease.",
   "california-real-estate-exam-anki-deck":
-    "400 California DRE-only cards — agency, disclosure timelines, financing math — plus a free 60-question timed mock. Official DRE salesperson sitting is 150Q / 3 hours / 70%; our mock is a shorter diagnostic, not a 1,500-question course dump.",
+    "250 California DRE-only cards — agency, disclosure timelines, financing math — plus a free 60-question timed mock. Official DRE salesperson sitting is 150Q / 3 hours / 70%; our mock is a shorter diagnostic, not a 1,500-question course dump.",
   "bench-energy-metal-trader-anki-deck":
     "LME cash vs 3M, carry economics, contango/backwardation, and base/precious metals benchmarks — the vocabulary new metals desk analysts actually hear. Spaced repetition beats rereading a PDF glossary the night before a desk interview.",
   "life-and-health-insurance-exam-anki-deck":
@@ -178,7 +178,7 @@ export const positioningOverrides: Partial<
 > = {
   "cfa-level-1-anki-deck": {
     ourEdge: [
-      "342+ cards across all 10 CFA Institute Level 1 topic weights in the table below",
+      "348 cards across all 10 CFA Institute Level 1 topic weights in the table below",
       "2026 cycle formulas and definitions — ethics through portfolio management",
       "Pairs with printable formula reference (250 formulas + 98 definitions + 80 recall drill)",
       "Free 60-question CFA Level 1 readiness check with topic scoring",
@@ -201,7 +201,7 @@ export const positioningOverrides: Partial<
       "250 formulas + 98 definitions — not a free one-page cheat sheet",
       "80-question formula recall drill with explained answer key",
       "Print-ready US Letter PDF — companion, not curriculum replacement",
-      "Same validated item bank as the 342+ card CFA Level 1 Anki deck + free 60Q mock",
+      "Same validated item bank as the 348-card CFA Level 1 Anki deck + free 60Q mock",
     ],
     summaryProse:
       "Free one-pagers look helpful until the exam clock starts. This $19 reference forces typed formula recall across all 10 topics, then hands you an 80-question drill and the free 60-question mock for gap scoring.",
@@ -477,7 +477,7 @@ export const positioningOverrides: Partial<
   },
   "california-real-estate-exam-anki-deck": {
     ourEdge: [
-      "400 California DRE-only cards — not Quizlet/Aceable national packs",
+      "250 California DRE-only cards — not Quizlet/Aceable national packs",
       "Agency, disclosure timelines, financing math, and CA property law",
       "Free 60-question California real estate practice test with scoring",
       "State-specific traps DRE actually writes — not relabeled US trivia",
@@ -497,7 +497,7 @@ export const positioningOverrides: Partial<
   },
   "life-and-health-insurance-exam-anki-deck": {
     ourEdge: [
-      "400 Life & Health cards: policies, riders, annuities, Medicare",
+      "250 Life & Health cards: policies, riders, annuities, Medicare",
       "National producer-exam core topics in the coverage table",
       "Free Life & Health insurance practice test",
       "Sized for licensing prep — not unlimited insurance trivia",
@@ -505,7 +505,7 @@ export const positioningOverrides: Partial<
   },
   "property-casualty-insurance-exam-anki-deck": {
     ourEdge: [
-      "400 P&C cards: homeowners, auto, CGL, workers comp, BOP",
+      "250 P&C cards: homeowners, auto, CGL, workers comp, BOP",
       "National licensing outline weights reflected in the table",
       "Free Property & Casualty practice test",
       "Commercial and personal lines separated by topic rows",
@@ -551,7 +551,7 @@ ACEND education, supervised practice, and the official CDR / Pearson VUE exam. T
 
 ### Plan with the free EA mock
 
-**Start:** Take the [free Enrolled Agent readiness check](/mock-exams/enrolled-agent-readiness-check) under quiet conditions. **Then:** 15–20 Anki cards/day on your weakest SEE part. **Before Prometric:** re-sit a short timed block on failed topics only; keep IRS/Prometric candidate bulletin timing separate from this diagnostic.
+**Start:** Take the [free Enrolled Agent readiness check](/mock-exams/enrolled-agent-readiness-check) under quiet conditions. **Then:** 15–20 Anki cards/day on your weakest SEE part. **Before your PSI sitting:** re-sit a short timed block on failed topics only; keep IRS/PSI candidate bulletin timing separate from this diagnostic.
 
 ### Pitfalls this deck targets
 
@@ -559,7 +559,7 @@ Candidates grind Part 1 (Individuals) and skip Representation/Practices, confuse
 
 ### What this does not replace
 
-IRS SEE registration, official study materials, or the three-part Prometric exam. Independent prep — not IRS material.`,
+IRS SEE registration, official study materials, or the three-part SEE delivered by PSI Services (since March 2026). Independent prep — not IRS material.`,
 
   "aspt-phlebotomy-anki-deck": `### What this page is
 
@@ -1009,11 +1009,11 @@ Ellinomatheia + residence/citizenship framing on Gumroad — not a tourist phras
 
   "german-a2-for-ukrainian-speakers-anki-deck": `### Which German exams this deck targets
 
-**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** share a large A2 German lexicon. This deck packages that bank for **Ukrainian speakers**: German headword, Ukrainian gloss, bilingual example, native German audio, and an image on each card. It is vocabulary recall — not a full mock exam and not Leben in Deutschland civics.
+**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** share a large A2 German lexicon. This deck packages that bank for **Ukrainian speakers**: German headword, Ukrainian translation, a German example sentence with its Ukrainian translation, native German audio, and an image on each card. It is vocabulary recall — not a full mock exam and not Leben in Deutschland civics.
 
 ### Study plan
 
-Aim for six to eight weeks of daily Anki before your Goethe, telc, ÖSD, or DTZ date: 20–25 new cards on weekdays. Say each German example out loud before flipping; treat the Ukrainian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
+Aim for six to eight weeks of daily Anki before your Goethe, telc, ÖSD, or DTZ date: 20–25 new cards on weekdays. Say each German example out loud before flipping; check the Ukrainian translation only after you have tried to recall the meaning. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
 
 ### Pitfalls this deck targets
 
@@ -1026,11 +1026,11 @@ Ukrainian-support German A2 framing (Goethe / telc / ÖSD / DTZ) on Gumroad — 
 
   "german-a2-for-russian-speakers-anki-deck": `### Which German exams this deck targets
 
-**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** share a large A2 German lexicon. This deck packages that bank for **Russian speakers**: German headword, Russian gloss, bilingual example, native German audio, and an image on each card. It is vocabulary recall — not a full mock exam and not Leben in Deutschland civics.
+**Goethe-Institut A2**, **telc Deutsch A2**, **ÖSD A2**, and **DTZ** share a large A2 German lexicon. This deck packages that bank for **Russian speakers**: German headword, Russian translation, a German example sentence with its Russian translation, native German audio, and an image on each card. It is vocabulary recall — not a full mock exam and not Leben in Deutschland civics.
 
 ### Study plan
 
-Aim for six to eight weeks of daily Anki before your Goethe, telc, ÖSD, or DTZ date: 20–25 new cards on weekdays. Say each German example out loud before flipping; treat the Russian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
+Aim for six to eight weeks of daily Anki before your Goethe, telc, ÖSD, or DTZ date: 20–25 new cards on weekdays. Say each German example out loud before flipping; check the Russian translation only after you have tried to recall the meaning. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
 
 ### Pitfalls this deck targets
 
@@ -1065,7 +1065,7 @@ Certyfikat A2 + residence/citizenship language pathway copy — not a generic Po
 
 ### Study plan
 
-Aim for six to eight weeks of daily Anki before your Certyfikat or residence-language date: 20–25 new cards on weekdays. Say each Polish example out loud before flipping; treat the Ukrainian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
+Aim for six to eight weeks of daily Anki before your Certyfikat or residence-language date: 20–25 new cards on weekdays. Say each Polish example out loud before flipping; check the Ukrainian translation only after you have tried to recall the meaning. In the last ten days, stop adding cards and clear overdue reviews while you take official practice papers.
 
 ### Pitfalls this deck targets
 
@@ -1130,7 +1130,7 @@ Prep2Go app bank (2,504 cards) with UniPrep2Go IELTS/TOEFL framing on Gumroad at
 
 ### Study plan
 
-Aim for nine to ten weeks of daily Anki before your IELTS or TOEFL date: 20–30 new cards on weekdays, lighter review on weekends. Say each English example out loud before flipping; treat the Ukrainian gloss as a last-resort check. In the last ten days, stop adding cards and clear overdue reviews while you take two timed practice papers.
+Aim for nine to ten weeks of daily Anki before your IELTS or TOEFL date: 20–30 new cards on weekdays, lighter review on weekends. Say each English example out loud before flipping; check the Ukrainian translation only after you have tried to recall the meaning. In the last ten days, stop adding cards and clear overdue reviews while you take two timed practice papers.
 
 ### Pitfalls this deck targets
 

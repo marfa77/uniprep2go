@@ -1194,7 +1194,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The Registration Examination for Dietitians from the Commission on Dietetic Registration (CDR) is the national exam required to become a Registered Dietitian Nutritionist (RDN) after completing an ACEND-accredited education pathway and supervised practice. The computer-adaptive exam delivers 125–145 items (including 25 unscored pretest questions) in 3 hours and uses a scaled score of 1–50 with a passing point of 25. Current 2022–2026 domain weights are Principles of Dietetics 21%, Nutrition Care for Individuals and Groups 45%, Management of Food and Nutrition Programs and Services 21%, and Foodservice Systems 13%. UniPrep2Go’s free timed check is an independent diagnostic — not a CDR or Pearson VUE exam.",
     administeredBy: "Commission on Dietetic Registration (CDR)",
     officialFormat:
-      "Computer-adaptive multiple-choice, 125–145 total items (100–120 scored + 25 pretest), 3 hours; scaled pass score 25/50 — verify the current RD Handbook at cdrnet.org.",
+      "Computer-adaptive multiple-choice, 125–145 total items (100–120 scored + 25 pretest), 3 hours; scaled pass score 25/50. The 2022–2026 domains apply through December 31, 2026; from January 1, 2027 CDR switches to the 2027–2031 outline (Fundamentals 23%, Community and Public Health 22%, Human Nutrition and MNT 40%, Food Science and Food Systems 15%).",
     whoFor:
       "Dietetic interns and candidates who have finished (or are finishing) ACEND-accredited education and supervised practice and need a timed domain diagnostic before scheduling the official CDR exam.",
     howToPrepare:
