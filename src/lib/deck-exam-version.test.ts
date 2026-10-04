@@ -107,4 +107,11 @@ describe("buildMockExamVersionModel", () => {
     expect(model.covers).toContain("75-question timed diagnostic");
     expect(config.officialSourceNote).toContain("80 items");
   });
+
+  it("does not call the longer AHA BLS diagnostic shorter than HeartCode", () => {
+    const config = getMockExamConfig("aha-bls-provider-readiness-check")!;
+    const model = buildMockExamVersionModel(config, getExamFactsProfileForDeck(config.linkedDeckSlug))!;
+    expect(model.covers).not.toMatch(/shorter than the official exam/i);
+    expect(model.covers).toMatch(/25/);
+  });
 });

@@ -132,7 +132,7 @@ export function buildMockExamVersionModel(
     sourceLabel: source.label,
     sourceUrl: source.url,
     lastReviewed: formatLastReviewed(config.lastUpdated),
-    covers: `${config.questionCount}-question timed diagnostic (${config.durationMinutes} min) across ${config.topics.length} topic areas, with topic scoring and answer review — shorter than the official exam.`,
+    covers: `${config.questionCount}-question timed diagnostic (${config.durationMinutes} min) across ${config.topics.length} topic areas, with topic scoring and answer review. Official form: ${facts.question_count ?? "verify current bulletin"}.`,
     passRule: `${officialPass ? `Official exam: ${officialPass}. ` : ""}UniPrep2Go mock: ${config.passRule.passPercent}% readiness target (not an official pass score).`,
     doesNotReplace: buildDoesNotReplace(profile),
   };
