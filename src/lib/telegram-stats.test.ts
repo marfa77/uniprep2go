@@ -16,6 +16,7 @@ import {
   formatTodayTopPages,
   formatThreadsSection,
   formatYesterdaySection,
+  rankWeeklyMockAndAnkiVisits,
 } from "./telegram-stats";
 import type { FunnelStats } from "./funnel-store";
 import type { FunnelEvent } from "./analytics";
@@ -120,6 +121,7 @@ const sampleStats: FunnelStats = {
         pageViews: 88,
         paths: {
           "/decks/cfa-level-1-anki-deck": { unique: 8, views: 12 },
+          "/mock-exams/cfa-level-1-readiness-check": { unique: 5, views: 9 },
           "/": { unique: 5, views: 7 },
         },
         byChannel: {
@@ -196,7 +198,11 @@ describe("telegram stats", () => {
     expect(message).toContain("23u · 88v");
     expect(message).toContain("/decks/cfa-level-1-anki-deck — 12v (8u)");
     expect(message).toContain("▸ Period money");
-    expect(message).toContain("cfa-level-1-anki-deck: 14 view → 2 intent → 1 convert (7.1%)");
+    expect(message).toContain("Top mocks (7d visits):");
+    expect(message).toContain("Top Anki (7d visits):");
+    expect(message).toContain("/mock-exams/cfa-level-1-readiness-check — 9v (5u)");
+    expect(message).toContain("/decks/cfa-level-1-anki-deck — 12v (8u)");
+    expect(message).not.toContain("14 view → 2 intent");
     expect(message).toContain("▸ Acquisition");
     expect(message).toContain("▸ Threads · @uniprep2go");
     expect(message).toContain("No tagged Threads clicks yet.");
@@ -646,36 +652,103 @@ describe("telegram stats", () => {
     expect(signal.label).toContain("↑ growing");
   });
 
-  it("splits Period money into top 10 mocks and top 10 Anki", () => {
-    const products = Object.fromEntries([
-      ...Array.from({ length: 12 }, (_, index) => [
-        `mock:mock-${index + 1}`,
-        { visitors: 120 - index, intents: 1, completions: 0, conversions: 0 },
-      ]),
-      ...Array.from({ length: 12 }, (_, index) => [
-        `deck-${index + 1}`,
-        { visitors: 80 - index, intents: 0, completions: 0, conversions: 0 },
-      ]),
-    ]);
-
-    const message = toTelegramStatsMessage({
-      ...sampleStats,
-      visitors: {
-        ...sampleStats.visitors,
-        products,
+  it("ranks top 10 mocks and top 10 Anki by last-7-day visits, not period totals", () => {
+    const now = new Date("2026-06-10T12:00:00.000Z");
+    const paths: Record<string, { unique: number; views: number }> = {};
+    for (let index = 1; index <= 12; index += 1) {
+      paths[`/mock-exams/mock-${index}`] = { unique: 1, views: 120 - index };
+      paths[`/decks/deck-${index}`] = { unique: 1, views: 80 - index };
+    }
+    const message = toTelegramStatsMessage(
+      {
+        ...sampleStats,
+        visitors: {
+          ...sampleStats.visitors,
+          products: {
+            "stale-lifetime-anki": { visitors: 999, intents: 0, completions: 0, conversions: 0 },
+            "mock:stale-lifetime-mock": { visitors: 888, intents: 0, completions: 0, conversions: 0 },
+          },
+          dailySnapshots: {
+            "2026-06-09": {
+              unique: 20,
+              pageViews: 400,
+              paths,
+              byChannel: { google: 2, chatgpt: 0, llm: 0, direct: 18, other: 0 },
+              byCountry: { US: 20 },
+            },
+          },
+        },
       },
-    });
+      now,
+    );
 
-    expect(message).toContain("Top mocks (view → start → done → convert):");
-    expect(message).toContain("Top Anki (view → intent → convert):");
-    expect(message).toContain("mock · mock-1: 120 view");
-    expect(message).toContain("mock · mock-10: 111 view");
-    expect(message).not.toContain("mock · mock-11:");
-    expect(message).toContain("deck-1: 80 view");
-    expect(message).toContain("deck-10: 71 view");
-    expect(message).not.toContain("deck-11:");
+    expect(message).toContain("Top mocks (7d visits):");
+    expect(message).toContain("Top Anki (7d visits):");
+    expect(message).toContain("/mock-exams/mock-1 — 119v (1u)");
+    expect(message).toContain("/mock-exams/mock-10 — 110v (1u)");
+    expect(message).not.toContain("/mock-exams/mock-11");
+    expect(message).toContain("/decks/deck-1 — 79v (1u)");
+    expect(message).toContain("/decks/deck-10 — 70v (1u)");
+    expect(message).not.toContain("/decks/deck-11");
+    expect(message).not.toContain("stale-lifetime");
     expect(message).toContain("- …and 2 more mocks");
     expect(message).toContain("- …and 2 more Anki");
+  });
+
+  it("sums mock and Anki visits across the last 7 UTC days", () => {
+    const now = new Date("2026-06-10T12:00:00.000Z");
+    const ranked = rankWeeklyMockAndAnkiVisits(
+      {
+        ...sampleStats,
+        visitors: {
+          ...sampleStats.visitors,
+          dailySnapshots: {
+            "2026-06-09": {
+              unique: 10,
+              pageViews: 20,
+              paths: {
+                "/mock-exams/aha-bls-provider-readiness-check": { unique: 3, views: 5 },
+                "/decks/series-63-anki-deck": { unique: 2, views: 4 },
+              },
+              byChannel: { google: 1, chatgpt: 0, llm: 0, direct: 9, other: 0 },
+              byCountry: { US: 10 },
+            },
+            "2026-06-04": {
+              unique: 8,
+              pageViews: 16,
+              paths: {
+                "/mock-exams/aha-bls-provider-readiness-check": { unique: 2, views: 3 },
+                "/decks/series-63-anki-deck": { unique: 4, views: 6 },
+              },
+              byChannel: { google: 1, chatgpt: 0, llm: 0, direct: 7, other: 0 },
+              byCountry: { US: 8 },
+            },
+            "2026-05-20": {
+              unique: 50,
+              pageViews: 90,
+              paths: {
+                "/mock-exams/aha-bls-provider-readiness-check": { unique: 40, views: 80 },
+                "/decks/series-63-anki-deck": { unique: 40, views: 80 },
+              },
+              byChannel: { google: 2, chatgpt: 0, llm: 0, direct: 48, other: 0 },
+              byCountry: { US: 50 },
+            },
+          },
+        },
+      },
+      now,
+    );
+
+    expect(ranked.mocks[0]).toMatchObject({
+      path: "/mock-exams/aha-bls-provider-readiness-check",
+      views: 8,
+      unique: 5,
+    });
+    expect(ranked.anki[0]).toMatchObject({
+      path: "/decks/series-63-anki-deck",
+      views: 10,
+      unique: 6,
+    });
   });
 
   it("splits only when the message is too long", () => {

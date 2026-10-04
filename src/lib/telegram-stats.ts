@@ -10,7 +10,7 @@ import {
   type TrafficChannel,
 } from "./traffic-channel";
 import { detectBotBurstDay, filterBotBurstDailyCounts } from "./traffic-bot-burst";
-import { emptyThreadsMetrics, type DailyTrafficSnapshot, type ProductUniqueMetrics } from "./visitor-metrics";
+import { emptyThreadsMetrics, type DailyTrafficSnapshot } from "./visitor-metrics";
 
 export function shouldReturnStats(text: string) {
   const normalized = text.trim().toLowerCase();
@@ -134,46 +134,108 @@ function formatChannelLine(byChannel: Record<string, number>) {
   ).join(" · ");
 }
 
-function formatProductLabel(productKey: string) {
-  if (productKey.startsWith("mock:")) {
-    return productKey.replace(/^mock:/, "mock · ");
-  }
-
-  return productKey;
-}
-
 const TOP_PRODUCTS_LIMIT = 10;
+const WEEKLY_PRODUCT_DAYS = 7;
 
-function isMockProductKey(productKey: string) {
-  return productKey.startsWith("mock:");
+function isMockVisitPath(path: string) {
+  return path.startsWith("/mock-exams/");
 }
 
-function formatProductLine(productKey: string, metrics: ProductUniqueMetrics) {
-  const conversionRate = formatRate(metrics.conversions, metrics.visitors);
+function isAnkiVisitPath(path: string) {
+  return path.startsWith("/decks/");
+}
 
-  if (isMockProductKey(productKey)) {
-    return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} start → ${metrics.completions} done → ${metrics.conversions} convert (${conversionRate})`;
+type WeeklyVisitRank = { path: string; views: number; unique: number };
+
+function addWeeklyVisit(totals: Map<string, WeeklyVisitRank>, path: string, views: number, unique: number) {
+  const row = totals.get(path) ?? { path, views: 0, unique: 0 };
+  row.views += views;
+  row.unique += unique;
+  totals.set(path, row);
+}
+
+function sortWeeklyVisitRanks(totals: Map<string, WeeklyVisitRank>): WeeklyVisitRank[] {
+  return [...totals.values()].sort(
+    (left, right) =>
+      right.views - left.views || right.unique - left.unique || left.path.localeCompare(right.path),
+  );
+}
+
+/** Mock / Anki page ranks from the last 7 UTC days (bot-burst days skipped). Unique is Σ daily uniques. */
+export function rankWeeklyMockAndAnkiVisits(
+  stats: FunnelStats,
+  now = new Date(),
+  days = WEEKLY_PRODUCT_DAYS,
+): { mocks: WeeklyVisitRank[]; anki: WeeklyVisitRank[] } {
+  const totals = new Map<string, WeeklyVisitRank>();
+  const cutoffMs = now.getTime() - days * 24 * 60 * 60 * 1000;
+
+  for (let offset = 0; offset < days; offset += 1) {
+    const day = dayOffsetUtc(now, offset);
+    const snapshot = stats.visitors.dailySnapshots[day];
+    if (detectBotBurstDay(snapshot).isBurst) {
+      continue;
+    }
+    for (const [path, metrics] of Object.entries(snapshot?.paths ?? {})) {
+      if (!isMockVisitPath(path) && !isAnkiVisitPath(path)) {
+        continue;
+      }
+      addWeeklyVisit(totals, path, metrics.views, metrics.unique);
+    }
   }
 
-  return `- ${formatProductLabel(productKey)}: ${metrics.visitors} view → ${metrics.intents} intent → ${metrics.conversions} convert (${conversionRate})`;
+  if (totals.size === 0) {
+    const uniquesByPath = new Map<string, Set<string>>();
+    for (const event of stats.recentEvents) {
+      if (event.name !== "page_view") {
+        continue;
+      }
+      const path = event.path ?? "";
+      if (!isMockVisitPath(path) && !isAnkiVisitPath(path)) {
+        continue;
+      }
+      const occurred = Date.parse(event.occurredAt || "");
+      if (!Number.isFinite(occurred) || occurred < cutoffMs) {
+        continue;
+      }
+      addWeeklyVisit(totals, path, 1, 0);
+      if (event.visitorId) {
+        const bucket = uniquesByPath.get(path) ?? new Set<string>();
+        bucket.add(event.visitorId);
+        uniquesByPath.set(path, bucket);
+      }
+    }
+    for (const [path, visitors] of uniquesByPath) {
+      const row = totals.get(path);
+      if (row) {
+        row.unique = visitors.size;
+      }
+    }
+  }
+
+  const ranked = sortWeeklyVisitRanks(totals);
+  return {
+    mocks: ranked.filter((row) => isMockVisitPath(row.path)),
+    anki: ranked.filter((row) => isAnkiVisitPath(row.path)),
+  };
 }
 
-function formatProductCategoryLines(
-  products: Array<[string, ProductUniqueMetrics]>,
+function formatWeeklyVisitLines(
+  ranked: WeeklyVisitRank[],
   heading: string,
   emptyHint: string,
   moreLabel: string,
   limit: number,
 ) {
-  if (products.length === 0) {
-    return [`${heading}`, `- ${emptyHint}`];
+  if (ranked.length === 0) {
+    return [heading, `- ${emptyHint}`];
   }
 
   const lines = [
     heading,
-    ...products.slice(0, limit).map(([key, metrics]) => formatProductLine(key, metrics)),
+    ...ranked.slice(0, limit).map(({ path, views, unique }) => `- ${path} — ${views}v (${unique}u)`),
   ];
-  const hidden = products.length - limit;
+  const hidden = ranked.length - limit;
   if (hidden > 0) {
     lines.push(`- …and ${hidden} more ${moreLabel}`);
   }
@@ -266,43 +328,6 @@ function daySnapshotMetrics(
     views: snapshot?.pageViews ?? stats.visitors.dailyPageViews[day] ?? 0,
     snapshot,
   };
-}
-
-function shortProductLabel(productKey: string) {
-  return productKey
-    .replace(/^mock:/, "m·")
-    .replace(/-anki-deck$/, "")
-    .replace(/-readiness-check$/, "")
-    .replace(/-full-mock$/, "")
-    .replace(/-practice-test$/, "");
-}
-
-function formatCompactProduct(productKey: string, metrics: ProductUniqueMetrics) {
-  const label = shortProductLabel(productKey);
-  const rate = formatRate(metrics.conversions, metrics.visitors);
-
-  if (productKey.startsWith("mock:")) {
-    return `${label} ${metrics.visitors}v→${metrics.intents}s→${metrics.completions}d`;
-  }
-
-  return `${label} ${metrics.visitors}v→${metrics.conversions}c (${rate})`;
-}
-
-function compactPathRanks(
-  ranked: Array<{ path: string; unique: number; views: number }>,
-  limit = 3,
-) {
-  if (ranked.length === 0) {
-    return "—";
-  }
-
-  return ranked
-    .slice(0, limit)
-    .map((row) => {
-      const path = row.path.length <= 28 ? row.path : `${row.path.slice(0, 25)}…`;
-      return `${path} ${row.unique}u`;
-    })
-    .join(" · ");
 }
 
 function findLastHumanDay(
@@ -415,38 +440,30 @@ export function formatTodaySection(stats: FunnelStats, now = new Date(), pathLim
 
 export function formatFunnelSection(
   stats: FunnelStats,
-  products: Array<[string, ProductUniqueMetrics]>,
+  now = new Date(),
   skuLimit = TOP_PRODUCTS_LIMIT,
 ) {
   const visitors = stats.visitors;
-  const mocks = products.filter(([key]) => isMockProductKey(key));
-  const anki = products.filter(([key]) => !isMockProductKey(key));
+  const weekly = rankWeeklyMockAndAnkiVisits(stats, now);
   const lines = [
     "▸ Period money",
     `Traffic: ${formatChannelLine(visitors.periodByChannel)}`,
     `Countries: ${formatTopCountries(visitors.periodByCountry, stats.byCountry, 6)}`,
+    ...formatWeeklyVisitLines(
+      weekly.mocks,
+      "Top mocks (7d visits):",
+      "no mock visits this week",
+      "mocks",
+      skuLimit,
+    ),
+    ...formatWeeklyVisitLines(
+      weekly.anki,
+      "Top Anki (7d visits):",
+      "no Anki visits this week",
+      "Anki",
+      skuLimit,
+    ),
   ];
-
-  if (products.length === 0) {
-    lines.push("Top mocks / Anki:", "- no product traffic yet");
-  } else {
-    lines.push(
-      ...formatProductCategoryLines(
-        mocks,
-        "Top mocks (view → start → done → convert):",
-        "no mock traffic yet",
-        "mocks",
-        skuLimit,
-      ),
-      ...formatProductCategoryLines(
-        anki,
-        "Top Anki (view → intent → convert):",
-        "no Anki traffic yet",
-        "Anki",
-        skuLimit,
-      ),
-    );
-  }
 
   return lines.join("\n");
 }
@@ -665,36 +682,6 @@ function formatPeriodFunnelSection(stats: FunnelStats) {
     `Mock: ${mockStarts.total} starts (exam ${mockStarts.exam} · learn ${mockStarts.learn}) · ${stats.byEvent.mock_completed ?? 0} completed · ${stats.byEvent.mock_deck_cta_click ?? 0} deck CTA · ${stats.byEvent.checkout_click ?? 0} checkout`,
     `Sources: ${formatChannelLine(visitors.periodByChannel)}`,
     `Countries: ${formatTopCountries(visitors.periodByCountry, stats.byCountry)}`,
-  ].join("\n");
-}
-
-function formatPeriodProductsSection(
-  products: Array<[string, ProductUniqueMetrics]>,
-  limit = TOP_PRODUCTS_LIMIT,
-) {
-  const mocks = products.filter(([key]) => isMockProductKey(key));
-  const anki = products.filter(([key]) => !isMockProductKey(key));
-
-  if (products.length === 0) {
-    return "▸ TOP SKUs (period)\n- no product traffic yet";
-  }
-
-  return [
-    "▸ TOP SKUs (period)",
-    ...formatProductCategoryLines(
-      mocks,
-      "Top mocks (view → start → done → convert):",
-      "no mock traffic yet",
-      "mocks",
-      limit,
-    ),
-    ...formatProductCategoryLines(
-      anki,
-      "Top Anki (view → intent → convert):",
-      "no Anki traffic yet",
-      "Anki",
-      limit,
-    ),
   ].join("\n");
 }
 
@@ -1149,9 +1136,6 @@ export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
   }
 
   const visitors = stats.visitors;
-  const products = Object.entries(visitors.products).sort(
-    ([, left], [, right]) => right.visitors - left.visitors,
-  );
 
   const lines = [
     formatPulseSection(stats, now),
@@ -1160,7 +1144,7 @@ export function toTelegramStatsMessages(stats: FunnelStats, now = new Date()) {
     "",
     formatYesterdaySection(stats, now),
     "",
-    formatFunnelSection(stats, products),
+    formatFunnelSection(stats, now),
     "",
     formatAcquisitionSection(stats),
     "",
