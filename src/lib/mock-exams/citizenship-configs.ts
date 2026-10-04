@@ -474,7 +474,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       70,
     ),
     officialSourceNote:
-      "Flanders has no single federal civics MCQ like BAMF/LITUK. Live path is typically Dutch language + Maatschappelijke Oriëntatie (MO) / integration proof. A national civic test has been proposed, not assumed live. This 60Q check is independent MO-theme practice — not AGII material.",
+      "Flanders has no single federal civics MCQ like BAMF/LITUK. Live path: Dutch (NT2) plus Maatschappelijke Oriëntatie. Official standaardtest MO is 41 digital MCQ / 120 minutes (11 sokkelvragen) after a ~60-hour course; test 60% + process 40%. This 60Q / 45 min check is independent MO-theme practice — not AgII material. A federal civic test has been proposed, not assumed live.",
     description:
       "Free 60-question Flanders MO / social-orientation diagnostic. Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 165-card Anki on Gumroad. Independent prep.",
     examBody:
@@ -482,7 +482,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     questionSourceNote:
       "Questions rewritten from Prep2Go Belgium Flanders MO (maatschappelijke oriëntatie) themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Flemish government material.",
     ankiDeckCardCount: 120,
-    lastUpdated: "2026-08-27",
+    lastUpdated: "2026-10-04",
     searchAliases: ["maatschappelijke oriëntatie", "Flanders MO test", "inburgering Vlaanderen"],
   }),
   nicheReadinessConfig({

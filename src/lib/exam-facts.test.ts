@@ -211,9 +211,21 @@ describe("exam facts layer", () => {
   it("returns a Flanders MO profile with AgII pathway facts", () => {
     const profile = getExamFactsProfileForDeck("belgium-flanders-mo-anki-deck");
     expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/41/);
+    expect(profile!.exam_facts.time_limit).toMatch(/120/);
     expect(profile!.exam_facts.passing_score).toMatch(/70%/);
     expect(profile!.exam_facts.passing_score).toMatch(/60%/);
     expect(profile!.candidate_qa.some((item) => /Wallonia/i.test(item.a))).toBe(true);
+  });
+
+  it("returns an NHA CMAA profile with 110+25 / 135 min / 390 honesty", () => {
+    const profile = getExamFactsProfileForDeck("nha-cmaa-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/110/);
+    expect(profile!.exam_facts.question_count).toMatch(/25/);
+    expect(profile!.exam_facts.time_limit).toMatch(/135|2 hours 15/);
+    expect(profile!.exam_facts.passing_score).toMatch(/390/);
+    expect(profile!.candidate_qa.some((item) => /CCMA/i.test(item.a))).toBe(true);
   });
 
   it("returns a Finland kansalaisuuskoe profile with 2027 application gate", () => {

@@ -149,9 +149,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "ServSafe Manager practice test",
   },
   "ptcb-pharmacy-technician-mock": {
-    title: "Free PTCB Practice Test 2026 | 90-Question PTCE Mock Exam Online",
+    title: "Free PTCB Practice Test 2026 | 90-Question PTCE Mock (80 Scored)",
     description:
-      "Take a free PTCB / PTCE practice test online: 90 timed questions, 110 minutes, 2026 domain-weighted scoring (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%), answer explanations, and a pass/no-pass topic readiness report. Independent mock — not official PTCB material.",
+      "Free PTCB / PTCE mock: 90 timed questions, 110 minutes, January 2026 domain weights (Medications 35%, Federal 18.75%, Safety 23.75%, Order Entry 22.5%). Official PTCE is 80 scored + 10 pretest / scaled 1,400 — this page uses a 70% diagnostic. Full explanations, then $11 / 300-card Anki. Independent — not PTCB material.",
     keywords: [
       "ptcb practice test",
       "ptcb mock exam",
@@ -160,9 +160,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "pharmacy technician practice test",
       "ptcb exam questions",
     ],
-    headline: "Free PTCB Pharmacy Technician Practice Test",
+    headline: "Free PTCB Pharmacy Technician Practice Test (2026 Outline)",
     intro:
-      "A full-length PTCB / PTCE mock aligned to the January 2026 content outline: 90 questions, 110 minutes, and domain-weighted topic diagnosis across medications, federal requirements, patient safety, and order entry — then fix only the weak domains before exam day.",
+      "A full-length PTCB / PTCE mock on the January 2026 outline: 90 questions in 110 minutes with domain-weighted scoring across medications, federal requirements (including DSCSA), patient safety, and order entry. Official PTCE pass is a scaled 1,400 on 80 scored items (10 pretest). Compounding/alligation are off the 2026 outline. After the report, drill only weak domains in the $11 / 300-card Anki deck (study-guide PDF sold separately).",
     audience:
       "Pharmacy technician candidates, pharmacy tech students, and career changers preparing for the PTCE who want a timed readiness baseline before buying prep courses or drilling flashcards.",
     practiceTestLabel: "PTCB / PTCE practice test",
@@ -419,9 +419,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Digital SAT practice test",
   },
   "pmp-readiness-check": {
-    title: "Free PMP Practice Test | Domain Readiness Check",
+    title: "Free PMP Practice Test 2026 | 51Q People / Process / BE",
     description:
-      "Free PMP practice: timed domain diagnostic across People, Process, and Business Environment (2026 ECO), then repair with the $11 / 346+ PMP Anki deck. Official PMI exam is 180Q / 240 min. Independent — not PMI material.",
+      "Free PMP domain diagnostic: 51 questions, 70 minutes, 17 People / 21 Process / 13 Business Environment (2026 ECO 33/41/26). All three domains must clear 70%. Official PMI exam is 180Q (170 scored) / 240 min with no published % cut. Then $11 / 346 Anki. Independent — not PMI material.",
     keywords: [
       "pmp practice test",
       "pmp mock exam",
@@ -431,9 +431,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "pmp exam prep",
       "project management professional practice test",
     ],
-    headline: "Free PMP Readiness Check",
+    headline: "Free PMP Domain Readiness Check (51 Questions)",
     intro:
-      "A timed PMP readiness diagnostic scored on the three official PMI Exam Content Outline domains — People (33%), Process (41%), and Business Environment (26%). All three domains must clear the readiness bar for a pass. After the report, drill weak domains in the linked $11 / 346 Anki deck before a full 180-question / 240-minute simulator.",
+      "A timed 51-question PMP diagnostic scored on the three 2026 PMI Exam Content Outline domains — People 33% (17Q), Process 41% (21Q), Business Environment 26% (13Q). All three must clear 70% for a readiness pass. Official PMP is 180 questions (170 scored + 10 pretest) in 240 minutes with ~40% predictive and ~60% agile/hybrid items and no published percentage cut. After the report, drill the weak domain in the $11 / 346-card Anki deck before a full-length simulator.",
     audience:
       "Project managers and aspirants preparing for the PMI PMP certification who want a domain-weighted baseline before a full-length mock or paid study course.",
     practiceTestLabel: "PMP practice test",
@@ -1181,7 +1181,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "belgium-flanders-mo-readiness-check": {
     title: "Free Belgium Flanders MO Practice Test | 60 Questions",
     description:
-      "Free Flanders MO practice: 60 timed questions. Belgium has no single federal civics MCQ today — live path is Dutch + MO/integration; a national civic test is proposed. Live 165-card Anki on Gumroad. Independent prep.",
+      "Free Flanders MO practice: 60 timed Dutch questions. Official AgII standaardtest is 41 MCQ / 120 min after the MO course — this page is independent. Live 165-card Anki on Gumroad.",
     keywords: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
     headline: "Free Belgium Flanders MO Readiness Check",
     intro:
@@ -1193,9 +1193,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nl-BE": {
         title: "Gratis MO oefentest Vlaanderen | 60 vragen maatschappelijke oriëntatie",
         description:
-          "Gratis MO-oefentest Vlaanderen: 60 getimede vragen over maatschappelijke oriëntatie (instellingen, geschiedenis, rechten, dagelijks leven). Geen officiële AgII-standaardtest — onafhankelijke voorbereiding. Live 165-card Anki-deck op Gumroad.",
+          "Gratis MO-oefentest Vlaanderen: 60 getimede vragen. Officiële AgII-standaardtest = 41 MCQ / 120 min na de cursus — deze pagina is onafhankelijke oefening. Live 165-card Anki-deck op Gumroad.",
         intro:
-          "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen. Officieel traject = 60u MO-cursus + standaardtest (60/40) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
+          "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen. Officieel traject = ~60u MO-cursus + standaardtest van 41 vragen / 120 minuten (60% test / 40% proces) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
       },
     },
   },

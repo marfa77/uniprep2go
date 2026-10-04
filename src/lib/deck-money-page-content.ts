@@ -9,7 +9,11 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-formula-reference-2026":
     "54-page 2026 formula reference: 250 formulas + 98 definitions by topic plus an 80-question recall drill with answer key.",
   "cfa-level-2-anki-deck":
-    "495 vignette-depth cards across all 10 CFA Level 2 topics — plus a free 60-question mock and the matching formula PDF. Not a Level 1 leftover dump.",
+    "495 vignette-depth cards across all 10 CFA Level 2 topics — plus a free 60-question / 120-minute mock and the matching formula PDF. Not a Level 1 leftover dump.",
+  "cfa-level-2-formula-reference-2026":
+    "60-page 2026 L2 formula reference: 219 formulas + 276 definitions plus an 80-question recall drill — pairs with the free 60Q item-set diagnostic.",
+  "cat4-level-d-anki-deck-printable-pdf":
+    "200 Anki cards + 49-page PDF for CAT4 Level D verbal and quantitative subtests (Year 7) — not the spatial or figure batteries.",
   "frm-part-1-anki-deck":
     "444 cards across FRM Part 1 foundations, quant, markets, and valuation — with a free 50-question readiness check.",
   "bench-energy-metal-trader-anki-deck":
@@ -202,7 +206,7 @@ export const positioningOverrides: Partial<
       "Ownable .apkg — not a 3,000-card Level 1 leftover or monthly Q-bank",
     ],
     summaryProse:
-      "Level 2 punishes item-set misfires, not missing a random L1 definition. Four hundred ninety-five focused cards plus one free timed diagnostic beat a mega-dump when you need FCFF vs FCFE and FSA adjustments under the clock.",
+      "Level 2 punishes item-set misfires, not missing a random L1 definition. Four hundred ninety-five focused cards plus one free 60-question / 120-minute diagnostic beat a mega-dump when you need FCFF vs FCFE and FSA adjustments before 22 official vignettes.",
   },
   "cfa-level-1-formula-reference-2026": {
     ourEdge: [
@@ -763,7 +767,7 @@ Candidates lose points confusing forward vs futures margin flows, mis-stating in
 
 **Weeks 1–2:** 20 new cards/day across ethics and FSA. **Week 3:** Run the [free 60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check). **Week 4+:** Drill only weak topics from the report; pair with the [Level 2 formula reference PDF](/decks/cfa-level-2-formula-reference-2026) for printable recall tables.
 
-Official CFA Level 2 is 88 item-set questions across 10 topics weighted 5–15% — this 60-question, 120-minute mock is a shorter diagnostic, not a CFA Institute mock.
+Official CFA Level 2 is 88 item-set questions in 22 vignettes (4 hours 24 minutes; 20 scored sets + 2 trial) — this 60-question, 120-minute mock is a shorter diagnostic, not a CFA Institute mock.
 
 ### Pitfalls this deck targets
 
@@ -777,11 +781,25 @@ Level 2 failures often come from mis-applying inventory and lease adjustments in
 
 **Week 1:** Print weak-topic tables (Fixed Income, Equity, FSA first). **Week 2:** Run the 80-question recall drill timed; review every explanation. **Week 3:** Take the [60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check) — first mock free, no signup — and map topic gaps back to the PDF tables. **Week 4+:** Drill missed formulas in the [495-card Level 2 Anki deck](/decks/cfa-level-2-anki-deck) between mock retakes.
 
-Official CFA Level 2 is 88 item-set questions across 10 topics weighted 5–15% — this PDF is a recall companion, not CFA Institute curriculum.
+Official CFA Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is a recall companion, not CFA Institute curriculum.
 
 ### Pitfalls this reference targets
 
 Candidates lose item-set points from slow formula retrieval (duration/convexity families, residual income vs FCFE), mixing Level 1 ratio shortcuts with L2 adjustments, and skipping ethics application cards. The recall drill forces concept naming — not passive highlighting.`,
+
+  "cat4-level-d-anki-deck-printable-pdf": `### What is inside
+
+A **200-card Anki deck** plus a **~49-page printable PDF** with 192 worked examples for four CAT4 Level D subtests: Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Anki carries method cards; the PDF is timed paper practice with answers and insight lines.
+
+### How to use it in 3–4 weeks
+
+**Week 1:** Method cards in Anki (15–20/day). **Week 2:** One printable block per subtest under a kitchen timer. **Week 3:** Repeat only missed patterns in Anki. **Final days:** Mixed PDF pages, then Anki review — do not cram new rules the morning of the school sitting.
+
+Official CAT4 Level D (GL Assessment) is about **2 hours 15 minutes** in three timed parts and reports Standard Age Scores (mean 100, SD 15). There is **no pass mark**. Full CAT4 also includes **non-verbal** and **spatial** batteries — this pack does not.
+
+### What this is not
+
+Not a scored school CAT4, not 11+ English/math papers, and not GL Assessment material.`,
 
   "ciple-a2-european-portuguese-anki-deck": `### Which Portuguese pathways this deck targets
 

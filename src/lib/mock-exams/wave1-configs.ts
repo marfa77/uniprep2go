@@ -334,11 +334,12 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "communication-ethics", label: "Communication & ethics" },
     ]),
     officialSourceNote:
-      "Readiness check mapped to NHA CMAA themes. Not an NHA certification exam.",
+      "Official NHA CMAA (2021 test plan): 110 scored + 25 pretest (135 total) / 2 hours 15 minutes / scaled pass 390 on 200–500. This check is a shorter 60-question / 50-minute diagnostic mapped to CMAA themes — not an NHA exam and not CCMA/CBCS.",
     description:
-      "Free 60-question NHA CMAA readiness check for medical administrative assistant candidates.",
+      "Free 60-question NHA CMAA readiness check for medical administrative assistant candidates. Official form is 135 questions in 135 minutes (scaled 390) — this page is a shorter diagnostic.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank for CMAA topics.",
+    lastUpdated: "2026-10-04",
   }),
   readinessConfig({
     slug: "ardms-spi-readiness-check",

@@ -2857,11 +2857,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       administered_by:
         "Agentschap Integratie & Inburgering (AgII) and local inburgering partners in Flanders",
       question_count:
-        "Standardized digital MO test after course completion (exact item count in official reglement cursus en test MO — verify PDF on integratie-inburgering.be)",
+        "41 digital multiple-choice items on the standaardtest MO (11 sokkelvragen on fundamental values/norms + 30 other items; Vlaams Parlement 14 Mar 2023). UniPrep2Go mock is a separate 60-question diagnostic — not that form. Verify current reglement PDF on integratie-inburgering.be",
       time_limit:
-        "Course is typically 60 hours; test timing is set by AgII delivery rules — verify current reglement",
+        "Official standaardtest: maximum 120 minutes on computer (AgII reglement). MO course is typically about 60 hours before the test. UniPrep2Go mock: 45 minutes",
       passing_score:
-        "Combined MO result: standardized test weighted 60% + in-class process evaluation 40%. Total pass threshold rises to 70% from 2 February 2026 (verify current reglement)",
+        "Combined MO result: standardized test 60% + in-class process evaluation 40%. On the test itself: overall minimum about 7/10 and a high bar (~80%) on sokkel/values items (AgII reglement / Vlaams Parlement — verify current PDF). Combined pass threshold publications also cite 70% from 2 February 2026",
       delivery:
         "Mandatory inburgeringstraject: Dutch (NT2 A2 target) + MO course + work + participation tracks; MO test taken after course in the learner’s language (26+ languages with audio support per AgII publications)",
       verify_at_url:
@@ -2873,8 +2873,12 @@ const examProfiles: Record<string, ExamFactsProfile> = {
         url: "https://www.integratie-inburgering.be/nl/inburgering/maatschappelijke-orientatie",
       },
       {
-        label: "AgII — Inburgeringstraject (MO component)",
-        url: "https://www.integratie-inburgering.be/nl/wat-kunnen-we-voor-jou-doen/inburgeringstraject-en-cursus-maatschappelijke-orientatie/inburgeringstraject",
+        label: "AgII — Documenten inburgering (reglement cursus en test MO)",
+        url: "https://www.integratie-inburgering.be/nl/documenten",
+      },
+      {
+        label: "Vlaams Parlement — standaardtest MO 41 vragen / 11 sokkelvragen (14 Mar 2023)",
+        url: "https://www.vlaamsparlement.be/nl/parlementair-werk/commissies/commissievergaderingen/1714645/verslag/1717724",
       },
       {
         label: "AgII — Reglement cursus en test MO (PDF index)",
@@ -2891,16 +2895,16 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "MO is course-based under AgII rules: you typically cannot skip straight to a public free MCQ bank — the standaardtest follows course completion.",
       "MO test score counts for 60% of the MO component; teacher process evaluation counts for 40% (attendance, participation, core skills).",
       "Dutch A2 evidence (NT2) is a separate inburgering pillar — Netherlands Inburgering KNM decks do not substitute for Flanders MO civics.",
-      "UniPrep2Go’s free 60-question Dutch diagnostic (45 min / 70%) is independent theme practice — not AgII exam items and not the official standaardtest format.",
+      "Official standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen). UniPrep2Go’s free 60-question Dutch diagnostic (45 min / 70%) is independent theme practice — not AgII items and not the official form.",
     ],
     candidate_qa: [
       {
         q: "Is there a free official Flanders MO practice test online?",
-        a: "AgII publishes course rules and sample learning modules — not a full public timed MCQ bank. VRT NWS and similar outlets publish sample quiz items for awareness only.",
+        a: "AgII publishes the reglement and onderwijsdoelen, not a full public timed 41-question bank. VRT NWS has published sample Online Leren-style items for awareness only.",
       },
       {
         q: "What pass score applies to the official MO standaardtest?",
-        a: "AgII combines test (60%) and process evaluation (40%). Publications note the total pass threshold moving to 70% from 2 February 2026 — verify the current reglement before your sitting.",
+        a: "AgII combines the standaardtest (60%) with process evaluation (40%). The computer test is 41 MCQ / 120 minutes with 11 sokkelvragen (high bar on values items, overall ~7/10 on the test). Combined-result publications also cite 70% from 2 February 2026 — verify the current reglement before your sitting.",
       },
       {
         q: "Is Flanders MO the same as Wallonia citoyenneté?",
@@ -2908,7 +2912,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s Belgium Flanders MO readiness check the official test?",
-        a: "No. It is an independent 60-question Dutch diagnostic on MO-style themes. The live 165-card Flanders MO Anki deck on Gumroad is separate spaced-repetition prep — not AgII material.",
+        a: "No. It is an independent 60-question / 45-minute Dutch diagnostic on MO-style themes, not the official 41-question / 120-minute standaardtest. The live Flanders MO Anki deck on Gumroad is separate spaced-repetition prep — not AgII material.",
       },
     ],
     trademark_note:
@@ -3118,6 +3122,81 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     trademark_note:
       "NHA® and CBCS® are trademarks of the National Healthcareer Association. UniPrep2Go is not affiliated with or endorsed by NHA.",
+  },
+  "nha-cmaa": {
+    examKey: "nha-cmaa",
+    pageHeading: "NHA CMAA Exam — Facts, Domains & Prep",
+    intro:
+      "The NHA Certified Medical Administrative Assistant (CMAA) exam certifies front-office medical administrative assistants (scheduling, intake, records, billing basics, communication). This page summarizes the public 2021 NHA CMAA test plan; UniPrep2Go products are independent prep (not NHA exam material). CMAA is not NHA CCMA (clinical medical assisting) and not NHA CBCS (billing/coding specialist).",
+    exam_facts: {
+      exam_name: "NHA Certified Medical Administrative Assistant (CMAA) Examination",
+      administered_by: "National Healthcareer Association (NHA)",
+      question_count: "135 items (110 scored + 25 pretest)",
+      scored_count: "110",
+      time_limit: "2 hours 15 minutes (135 minutes)",
+      scoring_scale: "Scaled score 200–500 (NHA candidate handbook)",
+      passing_score: "Scaled 390 or higher (NHA handbook — verify at nhanow.com)",
+      delivery:
+        "School/program site, PSI test center, or NHA live remote proctoring (verify current options when you schedule)",
+      outline_effective_date:
+        "CMAA test plan based on 2021 job analysis (NHA PDF: 110 scored / 25 pretest / 2 hours 15 minutes) — verify the plan that matches your sitting",
+      verify_at_url:
+        "https://www.nhanow.com/certification/nha-certifications/medical-admin-assistant-(cmaa)",
+    },
+    official_sources: [
+      {
+        label: "NHA — CMAA certification",
+        url: "https://www.nhanow.com/certification/nha-certifications/medical-admin-assistant-(cmaa)",
+      },
+      {
+        label: "NHA CMAA Test Plan 2021 (110 scored / 25 pretest / 2h 15m)",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/nha_cmaa_test_plan_2021.pdf",
+      },
+      {
+        label: "NHA Candidate Handbook (scaled 200–500, pass 390)",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/candidate_handbook.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "1. Foundational Knowledge", weight: "10 scored items" },
+      { domain: "2. Communication and Professionalism", weight: "21 scored items" },
+      { domain: "3. Medical Law, Ethics, and Compliance", weight: "17 scored items" },
+      { domain: "4. Scheduling", weight: "16 scored items" },
+      { domain: "5. Patient Encounter", weight: "21 scored items" },
+      { domain: "6. Billing and Revenue Cycle", weight: "11 scored items" },
+      { domain: "7. Medical Practice Administrative Procedures and Logistics", weight: "14 scored items" },
+    ],
+    whats_changed: [
+      "Public 2021 CMAA test plan lists 110 scored + 25 pretest items in 2 hours 15 minutes — older NHA PDFs that say 20 pretest / 2h 10m are stale.",
+      "UniPrep2Go’s free check is 60 questions / 50 minutes with four topic buckets — shorter than the official 135-item form and not a domain-for-domain clone of NHA’s seven domains.",
+    ],
+    high_yield_facts: [
+      "Official form is 135 items in 135 minutes; only the 110 scored items count toward the scaled score.",
+      "NHA exams in the candidate handbook use a 200–500 scale with a passing scaled score of 390.",
+      "Communication/professionalism and patient encounter are the heaviest domains (21 scored each); billing is only 11 — do not treat CMAA as a coding exam.",
+      "CMAA is front-office admin — not NHA CCMA, not CBCS, and not AAPC CPC.",
+      "UniPrep2Go’s free check is a 60-question / 50-minute diagnostic; the matching Anki deck is planned (waitlist), not a live Gumroad SKU.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the NHA CMAA exam?",
+        a: "The 2021 NHA CMAA test plan lists 110 scored items plus 25 pretest items (135 total) in 2 hours 15 minutes. Verify the plan for your sitting at nhanow.com.",
+      },
+      {
+        q: "What score do you need to pass CMAA?",
+        a: "NHA’s candidate handbook uses a 200–500 scaled score and requires 390 or higher for exams covered in that handbook. Confirm on your score-report rules at nhanow.com.",
+      },
+      {
+        q: "Is CMAA the same as NHA CCMA?",
+        a: "No. CMAA is medical administrative assisting (front desk, scheduling, records, billing basics). CCMA is clinical medical assisting. CBCS is NHA billing/coding.",
+      },
+      {
+        q: "Is UniPrep2Go’s CMAA readiness check the official NHA exam?",
+        a: "No. The free 60-question / 50-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NHA material.",
+      },
+    ],
+    trademark_note:
+      "NHA® and CMAA® are trademarks of the National Healthcareer Association. UniPrep2Go is not affiliated with or endorsed by NHA.",
   },
   "nic-cosmetology-theory": {
     examKey: "nic-cosmetology-theory",
@@ -3608,6 +3687,7 @@ const deckExamKeyMap: Record<string, string> = {
   "finland-kansalaisuuskoe-anki-deck": "finland-kansalaisuuskoe",
   "nha-cpct-anki-deck": "nha-cpct",
   "nha-cbcs-anki-deck": "nha-cbcs",
+  "nha-cmaa-anki-deck": "nha-cmaa",
   "cosmetology-state-anki-deck": "nic-cosmetology-theory",
   "cdl-general-knowledge-anki-deck": "cdl-general-knowledge",
   "armed-security-officer-anki-deck": "armed-security-officer",

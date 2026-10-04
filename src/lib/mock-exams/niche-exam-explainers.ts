@@ -461,13 +461,24 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cmaa-readiness-check": explainer({
     practiceTestName: "NHA CMAA Practice Test",
     whatIsExam:
-      "The NHA Certified Medical Administrative Assistant (CMAA) exam focuses on front-office medical admin: scheduling, EHR basics, insurance intake, medical terminology, and patient communication — not clinical procedures.",
+      "The NHA Certified Medical Administrative Assistant (CMAA) exam focuses on front-office medical admin: scheduling, EHR basics, insurance intake, medical terminology, and patient communication — not clinical procedures. Official public 2021 test plan: 110 scored + 25 pretest items (135 total) in 2 hours 15 minutes; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a free 60-question / 50-minute timed diagnostic with domain scoring — not NHA material, not CCMA, and not CBCS.",
     administeredBy: "National Healthcareer Association (NHA)",
+    officialFormat:
+      "Official NHA CMAA (2021 test plan): 110 scored + 25 pretest / 2 hours 15 minutes / scaled pass 390 (200–500). Seven domains (foundational knowledge, communication, law/ethics, scheduling, patient encounter, billing, practice logistics). UniPrep2Go free readiness check: 60 timed questions, 50 minutes, four topic buckets — shorter than the live form.",
+    whoFor:
+      "Medical office students and front-desk staff sitting CMAA — not CCMA clinical assisting, not CBCS billing/coding, and not AAPC CPC. Confirm employer preference and NHA eligibility before you register.",
+    howToPrepare:
+      "Download the current NHA CMAA test plan, drill scheduling and patient-encounter tasks first, then sit this free 60-question / 50-minute check. Use the domain report to queue weak HIPAA, billing-basics, or communication rows. Keep NHA’s official practice test separate.",
     examFaqs: [
       {
         question: "What is the NHA CMAA certification?",
         answer:
-          "CMAA certifies medical administrative assistants who run the front desk and administrative workflows in clinics and medical offices.",
+          "CMAA certifies medical administrative assistants who run the front desk and administrative workflows in clinics and medical offices. It is not NHA CCMA and not NHA CBCS.",
+      },
+      {
+        question: "How many questions are on the official NHA CMAA exam?",
+        answer:
+          "The 2021 NHA test plan lists 110 scored items plus 25 pretest items (135 total) in 2 hours 15 minutes. UniPrep’s free check is a shorter 60-question / 50-minute diagnostic.",
       },
     ],
     keywords: ["nha cmaa practice test", "medical administrative assistant practice test"],

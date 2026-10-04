@@ -1222,10 +1222,10 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "CFA Level 2 Anki Deck — 495 Flashcards",
     shortName: "CFA Level 2",
-    subtitle: "A vignette-depth Anki deck for CFA Level 2 candidates using spaced repetition.",
+    subtitle: "A vignette-depth Anki deck for CFA Level 2 item sets — not a Level 1 leftover dump.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topic areas, including FSA, equity and fixed income valuation, portfolio management, derivatives, and ethics application. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck is a supplementary spaced-repetition study aid for the 2026 exam cycle and is not official CFA Institute material or a replacement for the curriculum.",
-    lastUpdated: "2026-09-29",
+      "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topics (2026 weights 5–15%), including FSA adjustments, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Official Level 2 is 88 item-set questions in 22 vignettes over two 132-minute sessions (4h24); this product pairs with a free 60-question / 120-minute diagnostic, not a CFA Institute mock. Delivered as an Anki .apkg for {PRICE} through Gumroad. Supplementary spaced-repetition aid — not official CFA Institute curriculum.",
+    lastUpdated: "2026-10-04",
     audience: "CFA Level 2 candidates who want structured recall practice for vignette-depth formulas, concepts, and application-level definitions.",
     format: ".apkg",
     coverImage: "/covers/cfa-level-2-anki-deck.webp",
@@ -1278,6 +1278,11 @@ const rawDecks: Deck[] = [
         answer: "Download the .apkg file from your Gumroad receipt, open the desktop Anki app, choose File then Import, select the .apkg file, and the deck appears in your deck list ready for study.",
       },
       {
+        question: "How does this compare with the official CFA Level 2 exam?",
+        answer:
+          "Official Level 2 is 88 vignette-based questions in 22 item sets (11 per session) over 4 hours 24 minutes; CFA Institute sets the MPS after each sitting. This deck is daily recall. The paired free mock is 60 questions in 120 minutes with topic scores — a diagnostic, not a CFA Institute mock.",
+      },
+      {
         question: "Does the deck pair with a formula reference?",
         answer:
           "Yes. The 60-page CFA Level 2 Formula Reference PDF shares the same validated item bank — use it for printable tables and the 80-question recall drill; use this deck for daily spaced repetition.",
@@ -1312,8 +1317,8 @@ const rawDecks: Deck[] = [
     subtitle:
       "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus free 60Q timed mock.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) organized across all 10 Level 2 topic areas (concept, typeset formula, one-line meaning), an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents — same validated bank as the 495-card Anki deck and the 60-question timed CFA Level 2 readiness check (first mock free, no signup). Delivered as a grayscale-friendly US Letter PDF for {PRICE} through Gumroad. Recall companion — not CFA Institute curriculum or a study course.",
-    lastUpdated: "2026-09-29",
+      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) across all 10 Level 2 topics, an 80-question Formula Recall Drill with explained answers, and a clickable table of contents. Official Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is retrieval practice, not the exam and not a one-page cheat sheet. Same bank as the 495-card Anki deck and the free 60-question timed mock. US Letter PDF for {PRICE} on Gumroad. Not CFA Institute curriculum.",
+    lastUpdated: "2026-10-04",
     audience:
       "CFA Level 2 candidates who need fast formula retrieval under item-set exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -3300,8 +3305,8 @@ const rawDecks: Deck[] = [
     shortName: "CAT4 Level D",
     subtitle: "200-card Anki deck + 49-page printable workbook for CAT4 Level D verbal and quantitative subtests.",
     directAnswer:
-      "CAT4 Level D bundle for Year 7 / Grade 7 selective entry: 200 Anki cards for daily pattern review plus a ~49-page printable PDF with 192 worked examples across Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Use Anki for method cards and weak-spot review; use the PDF for timed paper practice with answer keys and insight notes. Independent study material — not affiliated with GL Assessment or CAT4. Instant download for {PRICE} through Gumroad.",
-    lastUpdated: "2026-06-02",
+      "CAT4 Level D bundle for Year 7 / Grade 7 selective entry: 200 Anki cards plus a ~49-page printable PDF with 192 worked examples across Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Official CAT4 Level D (GL Assessment) runs about 2 hours 15 minutes across four batteries and reports Standard Age Scores (mean 100, SD 15) — there is no pass/fail cut. This pack does not include non-verbal figure items or spatial subtests. Instant download for {PRICE} through Gumroad. Independent — not affiliated with GL Assessment.",
+    lastUpdated: "2026-10-04",
     audience:
       "Parents and tutors preparing students for CAT4 Level D at UK independent schools, grammar schools, and Year 7 / Grade 7 entry.",
     format: ".apkg",
@@ -3354,7 +3359,7 @@ const rawDecks: Deck[] = [
       {
         question: "Which CAT4 subtests are covered?",
         answer:
-          "Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Spatial subtests are not included in this bundle.",
+          "Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Official CAT4 also has non-verbal (figure classification/matrices) and spatial batteries — those are not in this bundle.",
       },
       {
         question: "Who is this bundle for?",
@@ -3365,6 +3370,11 @@ const rawDecks: Deck[] = [
         question: "Is this official CAT4 material?",
         answer:
           "No. This is an independent prep2go product in CAT4-style format and is not affiliated with, endorsed by, or sponsored by GL Assessment or CAT4.",
+      },
+      {
+        question: "Is there a passing score on CAT4 Level D?",
+        answer:
+          "No. Schools use Standard Age Scores (mean 100, SD 15), stanines, and percentiles. This bundle is pattern practice, not a scored GL Assessment sitting.",
       },
       {
         question: "How should I use the Anki deck and PDF together?",

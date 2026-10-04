@@ -678,11 +678,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US and global CFA Level 1 candidates use a focused spaced-repetition deck (not a mega-dump) to retain formulas across all 10 topics — pair with the free timed mock and the matching formula sheet PDF for printable tables and an 80-question recall drill.",
   },
   "cfa-level-2-anki-deck": {
-    title: "CFA L2 Flashcards 2026 | 495 Cards + Free Mock",
-    headline: "CFA Level 2 Exam Prep — 495 Flashcards + Free Mock",
+    title: "CFA Level 2 Anki 2026 | 495 Cards + Free 60Q Mock",
+    headline: "CFA Level 2 Exam Prep — 495 Vignette Cards + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 exam prep with 495 Anki flashcards across all 10 topic areas — vignette-depth FSA, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Includes a free 60-question readiness check. Independent study aid — not CFA Institute material.",
+      "CFA Level 2 Anki: 495 vignette-depth cards across all 10 topics (2026 weights 5–15%). Official L2 is 88 item-set questions in 22 vignettes / 4h24 — this page pairs the deck with a free 60-question / 120-minute diagnostic, not a CFA Institute mock. Formula PDF sold separately. Independent — not CFA Institute material.",
     keywords: [
       "cfa level 2 anki deck",
       "cfa level 2 flashcards",
@@ -691,14 +691,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 2 mock exam",
     ],
     intro:
-      "CFA Level 2 candidates use spaced-repetition flashcards to retain vignette-depth formulas and application logic across all ten curriculum topics (weighted 5–15% each) — run the free readiness check before item-set practice blocks.",
+      "Level 2 is item-set, not Level 1 one-liners. Use 495 spaced-repetition cards for FCFF vs FCFE, FSA adjustments, and ethics under a short case — then sit the free 60-question / 120-minute mock to pick weak topics before 22 official vignettes.",
   },
   "cfa-level-2-formula-reference-2026": {
-    title: "CFA L2 Formula Sheet 2026 | Free 60Q Mock + PDF",
+    title: "CFA L2 Formula Sheet 2026 | 219 Formulas + 80Q Drill",
     headline: "CFA Level 2 Formula Sheet PDF 2026 — 219 Formulas + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 formula sheet PDF for 2026: 219 typeset formulas, 276 definitions, 80-question recall drill, 60 print pages — plus a 60-question timed L2 mock (first mock free, no signup). Pairs with 495-card Anki. Not CFA Institute curriculum.",
+      "CFA Level 2 formula sheet PDF: 219 typeset formulas, 276 definitions, 80-question recall drill, 60 print pages. Official L2 is 88 item-set questions / 22 vignettes — this is a retrieval companion, not a one-page cheat sheet. Free 60Q timed mock + 495-card Anki. Not CFA Institute curriculum.",
     keywords: [
       "cfa level 2 formula sheet",
       "cfa level 2 formula reference",
@@ -708,7 +708,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 2 practice test",
     ],
     intro:
-      "Free one-page cheat sheets skip item-set timing. Print this 60-page reference for typeset formula tables and the 80-question recall drill — then run the free 60-question CFA Level 2 mock and drill weak vignette topics in the companion Anki deck.",
+      "One-page L2 cheat sheets skip item-set timing. Print the 60-page tables, run the 80-question recall drill, then take the free 60-question CFA Level 2 mock and repair misses in the 495-card Anki deck. Official exam: 88 questions in 22 vignettes over 4 hours 24 minutes.",
   },
   "cfa-level-1-formula-reference-2026": {
     title: "Best CFA L1 Formula Sheet 2026 | 250 Formulas + Drill",
@@ -907,11 +907,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Managers who prefer printable study material use this PDF for domain review and 70 exam-style questions — then drill weak topics in the companion Anki deck or free online mock.",
   },
   "cat4-level-d-anki-deck-printable-pdf": {
-    title: "CAT4 Level D Exam Prep | 200 Cards + Printable PDF",
+    title: "CAT4 Level D Exam Prep | 200 Anki + 49-Page PDF",
     headline: "CAT4 Level D Exam Prep — Anki Deck + Printable PDF",
     studyLabel: "CAT4 Level D exam prep",
     description:
-      "CAT4 Level D bundle with 200 Anki flashcards and a 49-page printable PDF for Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Built for Year 7 / Grade 7 selective entry. Independent prep — not official GL Assessment material.",
+      "CAT4 Level D (Year 7 / Grade 7) bundle: 200 Anki cards plus a 49-page printable PDF with 192 worked examples for Verbal Classification, Verbal Analogies, Number Analogies, and Number Series. Official CAT4 is ~2h15 with no pass mark (SAS 100/15) and also has non-verbal and spatial batteries — those two are not in this pack. Independent — not GL Assessment.",
     keywords: [
       "cat4 level d prep",
       "cat4 anki deck",
@@ -921,6 +921,10 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "verbal classification cat4",
       "number series cat4",
     ],
+    intro:
+      "CAT4 Level D is a GL Assessment cognitive battery for ages 11:6–14:11, often used in Year 7 selective entry. This bundle trains four verbal and quantitative subtests on paper and in Anki. It does not include figure matrices or spatial items, and it is not a scored school sitting — schools use Standard Age Scores, not a pass/fail cut.",
+    audience:
+      "Parents and tutors preparing Year 7 / Grade 7 CAT4 Level D verbal and quantitative subtests — not a full four-battery GL Assessment pack.",
   },
   "gmat-focus-anki-deck": {
     title: "GMAT Focus Exam Prep | 400 Cards + Free Mock",

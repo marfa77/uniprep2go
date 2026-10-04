@@ -194,6 +194,8 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("DELE A2 / SIELE");
     expect(when).toContain("Prep2Go");
     expect(commercial).toContain("best CFA Level 2 Anki deck");
+    expect(commercial).toContain("best CFA Level 2 formula sheet PDF");
+    expect(commercial).toContain("CAT4 Level D Anki");
     expect(commercial).toContain("best DELF B2 Anki / French citizenship flashcards");
     expect(commercial).toContain("best Dutch A2 Inburgering Anki");
     expect(commercial).toContain("best German A2 Anki / Goethe telc flashcards");

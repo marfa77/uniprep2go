@@ -596,7 +596,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     administeredBy:
       "Flanders: Agentschap Integratie & Inburgering / local inburgering partners for MO and Dutch. Naturalisation: federal / municipal pathways. Proposed national test: not a stable bookable federal MCQ yet — verify on official Belgian and Flemish pages.",
     officialFormat:
-      "No single federal Belgian citizenship MCQ in force. Live Flanders path: 60-hour MO course under Agentschap Integratie & Inburgering, then a standardized digital standaardtest MO (learner’s language, audio-supported) weighted 60% alongside 40% in-class process evaluation — total pass threshold 70% from 2 Feb 2026 per AgII publications (verify reglement). Dutch NT2 A2 is a separate pillar. Proposed federal knowledge test: format unpublished. UniPrep2Go mock: independent 60/45/70 Dutch diagnostic only — not the official standaardtest.",
+      "No single federal Belgian citizenship MCQ in force. Live Flanders path: ~60-hour MO course under Agentschap Integratie & Inburgering, then a digital standaardtest MO of 41 multiple-choice items in max 120 minutes (11 sokkelvragen on values/norms; learner’s language, audio-supported). Combined MO result: test 60% + in-class process 40% (high bar on sokkel items; overall test ~7/10; combined-result publications also cite 70% from 2 Feb 2026 — verify reglement). Dutch NT2 A2 is a separate pillar. Proposed federal knowledge test: format unpublished. UniPrep2Go mock: independent 60/45/70 Dutch diagnostic only — not the official 41-question form.",
     whoFor:
       "Newcomers in Flanders preparing maatschappelijke oriëntatie and Dutch; applicants who wrongly expect a federal MCQ like CCSE or Life in the UK; and learners future-proofing against a proposed national test. Not legal advice and not official inburgering material.",
     howToPrepare:
@@ -636,12 +636,12 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "What is maatschappelijke oriëntatie (MO)?",
         answer:
-          "MO is Flanders’ mandatory social-orientation course (about 60 hours) followed by AgII’s standardized digital standaardtest MO plus in-class process evaluation (60% test / 40% process). It is not a federal passport MCQ like Life in the UK.",
+          "MO is Flanders’ mandatory social-orientation course (about 60 hours) followed by AgII’s digital standaardtest MO (41 MCQ / 120 minutes, including 11 sokkelvragen) plus in-class process evaluation (60% test / 40% process). It is not a federal passport MCQ like Life in the UK.",
       },
       {
         question: "What is the official MO pass rule?",
         answer:
-          "AgII combines the standaardtest score (60%) with teacher process evaluation (40%). Publications note the total pass threshold rising to 70% from 2 February 2026 — confirm the current reglement on integratie-inburgering.be before your sitting.",
+          "AgII combines the standaardtest (60%) with teacher process evaluation (40%). The computer test is 41 questions / 120 minutes with 11 sokkelvragen (high bar on values items). Combined-result publications also cite 70% from 2 February 2026 — confirm the current reglement on integratie-inburgering.be before your sitting.",
       },
       {
         question: "Is this UniPrep2Go page the official Flanders MO exam?",

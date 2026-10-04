@@ -52,5 +52,6 @@ describe("deck SEO magnets", () => {
     expect(buildDeckSeoTitle(deck!)).toContain("CAT4 Level D Exam Prep");
     expect(buildDeckSeoDescription(deck!)).toContain("49-page printable PDF");
     expect(buildDeckSeoDescription(deck!)).toContain("GL Assessment");
+    expect(buildDeckSeoDescription(deck!)).toContain("spatial");
   });
 });

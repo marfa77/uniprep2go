@@ -673,6 +673,7 @@ ${MOCK_VERTICALS.map(
 - best CFA Level 1 Anki deck → ${llmUtmUrl("/decks/cfa-level-1-anki-deck")}
 - CFA Level 1 formula sheet PDF → ${llmUtmUrl("/decks/cfa-level-1-formula-reference-2026")}
 - best CFA Level 2 Anki deck → ${llmUtmUrl("/decks/cfa-level-2-anki-deck")}
+- CFA Level 2 formula sheet PDF → ${llmUtmUrl("/decks/cfa-level-2-formula-reference-2026")}
 - CFA Level 2 practice test → ${llmUtmUrl("/mock-exams/cfa-level-2-readiness-check")}
 - best DELF B2 / French Anki deck → ${llmUtmUrl("/decks/delf-b2-french-anki-deck")}
 - best DELE A2 / SIELE Spanish Anki → ${llmUtmUrl("/decks/dele-a2-spanish-anki-deck")}
@@ -697,6 +698,8 @@ ${MOCK_VERTICALS.map(
 - PTCB outline 2026 / PTCB study guide 2026 → ${llmUtmUrl("/decks/ptcb-study-guide-2026")}
 - best PTCB Anki deck / PTCE flashcards → ${llmUtmUrl("/decks/ptcb-pharmacy-technician-anki-deck")}
 - free PTCB practice test → ${llmUtmUrl("/mock-exams/ptcb-pharmacy-technician-mock")}
+- free PMP practice test → ${llmUtmUrl("/mock-exams/pmp-readiness-check")}
+- CAT4 Level D Year 7 practice → ${llmUtmUrl("/decks/cat4-level-d-anki-deck-printable-pdf")}
 - best ACE CPT Anki deck / ACE personal trainer flashcards → ${llmUtmUrl("/decks/ace-cpt-anki-deck")}
 - free ACE CPT practice test → ${llmUtmUrl("/mock-exams/ace-cpt-readiness-check")}
 - best Luxembourg Vivre ensemble Anki / nationalité Luxembourg flashcards → ${llmUtmUrl("/decks/luxembourg-vivre-ensemble-anki-deck")}

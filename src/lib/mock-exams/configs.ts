@@ -611,12 +611,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the January 2026 PTCE outline: 90 questions, 110 minutes, domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%). Official PTCE pass is a scaled score of 1,400 — this mock uses a 70% diagnostic threshold.",
+      "Modeled on the January 2026 PTCE outline: 90 questions (80 scored + 10 unscored pretest), 110 minutes, domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%). Official PTCE pass is a scaled 1,400 — this mock scores all 90 items at a 70% diagnostic threshold. Pearson VUE in-person (online PTCE suspended Dec 2025). Compounding/alligation are not standalone 2026 knowledge areas.",
     disclaimer: ptcbDisclaimer,
     description:
       "A timed 90-question PTCB / PTCE mock with 2026 domain-weighted scoring, full question review, and a pass/no-pass readiness verdict before you drill the linked Anki deck.",
     examBody: "PTCB / PTCE",
-    lastUpdated: "2026-10-02",
+    lastUpdated: "2026-10-04",
   },
   {
     slug: "gmat-focus-readiness-check",
@@ -764,12 +764,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the PMI PMP Exam Content Outline (2026): People 33%, Process 41%, Business Environment 26%. Official exam is 180 questions (170 scored + 10 pretest) in 240 minutes with ~40% predictive and ~60% agile/hybrid approaches. This readiness check uses a 17+21+13 domain-weighted sample. Not a PMI practice exam.",
+      "Modeled on the PMI PMP Exam Content Outline (2026, live 9 July 2026): People 33%, Process 41%, Business Environment 26%. Official exam is 180 questions (170 scored + 10 pretest) in 240 minutes with two 10-minute breaks, ~40% predictive and ~60% agile/hybrid. No published percentage cut. This check is a 17+21+13 domain-weighted sample; all three domains must hit 70%. Not a PMI / Pearson VUE simulator.",
     disclaimer: pmpDisclaimer,
     description:
       "A 51-question PMP readiness diagnostic scored on the three official ECO domains — People, Process, and Business Environment — with pacing feedback and full answer review. Independent prep aligned to the 2026 PMI outline.",
     examBody: "PMI",
-    lastUpdated: "2026-09-29",
+    lastUpdated: "2026-10-04",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the PMP readiness check (114 People + 142 Process + 90 Business Environment in the Anki bank, matching the 2026 ECO 33/41/26 weighting; 51-question timed session).",
     ankiDeckCardCount: 346,

@@ -716,6 +716,21 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "nha-cmaa-readiness-check": {
+    certifier: "National Healthcareer Association (NHA) — CMAA",
+    verifyAtUrl:
+      "https://www.nhanow.com/certification/nha-certifications/medical-admin-assistant-(cmaa)",
+    sources: [
+      {
+        label: "NHA — CMAA certification",
+        url: "https://www.nhanow.com/certification/nha-certifications/medical-admin-assistant-(cmaa)",
+      },
+      {
+        label: "NHA CMAA Test Plan 2021 (110 scored / 25 pretest / 2h 15m)",
+        url: "https://www.nhanow.com/docs/default-source/test-plans/nha_cmaa_test_plan_2021.pdf",
+      },
+    ],
+  },
   "nha-ccma-readiness-check": {
     certifier: "National Healthcareer Association (NHA)",
     verifyAtUrl: "https://www.nhanow.com/certification/nha-certifications/certified-clinical-medical-assistant-(ccma)",
@@ -861,8 +876,12 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
         url: "https://www.integratie-inburgering.be/nl/inburgering/maatschappelijke-orientatie",
       },
       {
-        label: "AgII — Inburgeringstraject",
-        url: "https://www.integratie-inburgering.be/nl/wat-kunnen-we-voor-jou-doen/inburgeringstraject-en-cursus-maatschappelijke-orientatie/inburgeringstraject",
+        label: "AgII — Documenten inburgering (reglement cursus en test MO)",
+        url: "https://www.integratie-inburgering.be/nl/documenten",
+      },
+      {
+        label: "Vlaams Parlement — standaardtest MO 41 vragen / 11 sokkelvragen",
+        url: "https://www.vlaamsparlement.be/nl/parlementair-werk/commissies/commissievergaderingen/1714645/verslag/1717724",
       },
       {
         label: "VRT NWS — sample MO quiz (official Online Leren style)",
