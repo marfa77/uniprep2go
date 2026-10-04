@@ -343,8 +343,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "safety", label: "Safety & side effects" },
       { id: "docs", label: "Documentation & scope" }
     ]),
-    officialSourceNote: "Mapped to State nurse aide / medication aide boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Medication Aide readiness check with topic scoring.",
+    officialSourceNote:
+      "Typical NCSBN MACE (where a state uses it) is 60 multiple-choice questions in 2 hours; some states use a 50-item form. This free check is a 60-question / 75-minute / 70% diagnostic on six rights, routes, safety, and documentation — not RN/LPN and not NNAAP CNA. Independent UniPrep2Go practice — not NCSBN, Credentia, or a state board exam.",
+    description:
+      "Free 60-question Medication Aide readiness check (75 min) with topic scoring — shorter clock than typical 2-hour MACE.",
+    lastUpdated: "2026-10-04",
     examBody: "State nurse aide / medication aide boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["medication aide", "CMA med aide"],
@@ -422,11 +425,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "hematology", label: "Hematology" },
       { id: "micro", label: "Microbiology" }
     ]),
-    officialSourceNote: "Mapped to ASCP Board of Certification themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question ASCP MLT readiness check with topic scoring.",
+    officialSourceNote:
+      "Official ASCP BOC MLT(ASCP) is 100 CAT questions / 2 hours 30 minutes / scaled pass 400 (100–999). This free check is a shorter 60-question / 75-minute linear diagnostic on four benches (blood bank, chemistry, hematology, microbiology) — not CAT, not MLS, and not the California-only 80Q / 2h form. Independent UniPrep2Go practice — not ASCP BOC material.",
+    description:
+      "Free 60-question ASCP MLT readiness check (75 min) with topic scoring — shorter than the official 100-question CAT.",
     examBody: "ASCP Board of Certification",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["MLT", "ASCP MLT", "medical lab technician"],
+    lastUpdated: "2026-10-04",
   }),
   nicheReadinessConfig({
     slug: "aapc-ccs-readiness-check",
@@ -499,8 +505,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "anatomy", label: "Basic anatomy" },
       { id: "ethics", label: "Ethics & scope" }
     ]),
-    officialSourceNote: "Mapped to Employer / state PT aide rules themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Physical Therapy Aide readiness check with topic scoring.",
+    officialSourceNote:
+      "There is no single national PT aide exam — hiring and competency are employer- and state-specific. Aides work under a PT or PTA and do not independently evaluate, progress a plan, or deliver skilled modalities. This free check is a 60-question / 75-minute knowledge diagnostic — not the NPTE and not a PTA exam. Independent UniPrep2Go practice.",
+    description:
+      "Free 60-question Physical Therapy Aide readiness check (75 min) with topic scoring — aide scope only, not NPTE/PTA.",
+    lastUpdated: "2026-10-04",
     examBody: "Employer / state PT aide rules",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["PT aide", "physical therapy aide"],
@@ -582,8 +591,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "technique", label: "Exercise technique" },
       { id: "safety", label: "Safety & client consult" }
     ]),
-    officialSourceNote: "Mapped to NSCA themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question NSCA-CPT readiness check with topic scoring.",
+    officialSourceNote:
+      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. This free check is a shorter 60-question / 75-minute text diagnostic — not CSCS (two papers) and not NASM/ACE/ACSM CPT. Independent UniPrep2Go practice — not NSCA exam material.",
+    description:
+      "Free 60-question NSCA-CPT readiness check (75 min) with topic scoring — shorter than the official 155-question / 3-hour sitting.",
+    lastUpdated: "2026-10-04",
     examBody: "NSCA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["NSCA-CPT", "NSCA personal trainer"],
@@ -601,8 +613,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "habits", label: "Habit change" },
       { id: "scopes", label: "Scope & ethics" }
     ]),
-    officialSourceNote: "Mapped to Precision Nutrition themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Precision Nutrition L1 readiness check with topic scoring.",
+    officialSourceNote:
+      "Precision Nutrition Level 1 is a coaching certification (behavior change + nutrition fundamentals), not an RDN credential and not a CPT exam. PN does not publish a single ETS-style national Q-count/clock comparable to this page. This free check is a 60-question / 75-minute coaching diagnostic. Independent UniPrep2Go practice — not Precision Nutrition material.",
+    description:
+      "Free 60-question Precision Nutrition L1 readiness check (75 min) with topic scoring — coaching scope, not RDN or CPT.",
+    lastUpdated: "2026-10-04",
     examBody: "Precision Nutrition",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Precision Nutrition", "PN Level 1"],
@@ -641,8 +656,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "services", label: "Manicure/pedicure services" },
       { id: "chemistry", label: "Products & chemistry" }
     ]),
-    officialSourceNote: "Mapped to State cosmetology boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Nail Technician readiness check with topic scoring.",
+    officialSourceNote:
+      "Official NIC National Nail Technology Theory is 110 items (100 scored) / 90 minutes; practical is separate; pass is set by the state (often scaled 75). This free check is a shorter 60-question / 75-minute theory diagnostic — not NIC Cosmetology Theory and not Barber Theory. Independent UniPrep2Go practice — not NIC or a state board exam.",
+    description:
+      "Free 60-question Nail Technician theory readiness check (75 min) with topic scoring — shorter than official NIC 110-item / 90-minute theory.",
+    lastUpdated: "2026-10-04",
     examBody: "State cosmetology boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["nail tech exam", "manicurist license"],
@@ -660,8 +678,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "chemistry", label: "Chemical services" },
       { id: "laws", label: "State laws & safety" }
     ]),
-    officialSourceNote: "Mapped to State barber boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Barber readiness check with topic scoring.",
+    officialSourceNote:
+      "Official NIC National Barber Theory is 60 items (50 scored) / 90 minutes; the practical exam is separate and passing scores are set by the state (often scaled 75). This free check is a 60-question / 75-minute theory diagnostic — not NIC Cosmetology Theory (typically 110 items) and not a skills sitting. Independent UniPrep2Go practice — not NIC or state-board material.",
+    description:
+      "Free 60-question Barber theory readiness check (75 min) with topic scoring — not the NIC practical.",
+    lastUpdated: "2026-10-04",
     examBody: "State barber boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["barber exam", "barber license"],
@@ -679,8 +700,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "intervention", label: "Intervention" },
       { id: "ethics", label: "Ethics & law" }
     ]),
-    officialSourceNote: "Mapped to ASWB themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question ASWB Bachelors readiness check with topic scoring.",
+    officialSourceNote:
+      "Official ASWB Bachelors from 3 August 2026 is 122 questions (110 scored + 12 pretest) in 4 hours on three content areas; pass is form-equated (generally about 66–78 of 110 scored). This free check is a shorter 60-question / 75-minute generalist diagnostic — not Masters, not Clinical/LCSW. Independent UniPrep2Go practice — not ASWB material.",
+    description:
+      "Free 60-question ASWB Bachelors readiness check (75 min) with topic scoring — shorter than the official 122-question / 4-hour sitting.",
+    lastUpdated: "2026-10-04",
     examBody: "ASWB",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ASWB Bachelors", "LSW exam"],
@@ -698,8 +722,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "psychotherapy", label: "Psychotherapy" },
       { id: "ethics", label: "Ethics & law" }
     ]),
-    officialSourceNote: "Mapped to ASWB themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question ASWB Clinical readiness check with topic scoring.",
+    officialSourceNote:
+      "Official ASWB Clinical from 3 August 2026 is 122 questions (110 scored + 12 pretest) in 4 hours on three content areas; pass is form-equated (generally about 66–78 of 110 scored). This free check is a shorter 60-question / 75-minute LCSW-level diagnostic (assessment, diagnosis concepts, psychotherapy, ethics) — not Bachelors/LSW. Independent UniPrep2Go practice — not ASWB material.",
+    description:
+      "Free 60-question ASWB Clinical readiness check (75 min) with topic scoring — shorter than the official 122-question / 4-hour sitting.",
+    lastUpdated: "2026-10-04",
     examBody: "ASWB",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["ASWB Clinical", "LCSW exam"],
@@ -736,8 +763,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "comp-ben", label: "Compensation & benefits" },
       { id: "compliance", label: "Compliance & risk" }
     ]),
-    officialSourceNote: "Mapped to HRCI themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question PHR readiness check with topic scoring.",
+    officialSourceNote:
+      "Official HRCI PHR is 90 scored + 25 pretest questions in 2 hours (plus 30 minutes administration) with a scaled pass of 500 (100–700). This free check is a shorter 60-question / 75-minute operational-HR diagnostic — not SPHR and not SHRM-CP. Independent UniPrep2Go practice — not HRCI material.",
+    description:
+      "Free 60-question PHR readiness check (75 min) with topic scoring — shorter than the official 115-question / 2-hour sitting.",
+    lastUpdated: "2026-10-04",
     examBody: "HRCI",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["PHR", "HRCI PHR"],
@@ -889,8 +919,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "math", label: "Mathematics" },
       { id: "test-strat", label: "Academic skills strategy" }
     ]),
-    officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Praxis Core readiness check with topic scoring.",
+    officialSourceNote:
+      "Official Praxis Core is three separate ETS tests: Reading 5713 (56 selected-response / 85 minutes), Writing 5723 (40 selected-response + 2 essays / 100 minutes), and Math 5733 (56 selected-response / 90 minutes). Passing scores are set by states. This free check is a combined 60-question / 75-minute selected-response diagnostic — not three sittings and not constructed-response essays. Independent UniPrep2Go practice — not ETS material.",
+    description:
+      "Free 60-question Praxis Core readiness check (75 min) with topic scoring — combined diagnostic, not the three official Core sittings.",
+    lastUpdated: "2026-10-04",
     examBody: "ETS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["Praxis Core", "Praxis I"],
@@ -928,8 +961,11 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "emergency", label: "Emergencies" },
       { id: "ethics", label: "Ethics & report writing" }
     ]),
-    officialSourceNote: "Mapped to State security licensing boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Unarmed Security Officer readiness check with topic scoring.",
+    officialSourceNote:
+      "There is no single national unarmed-guard exam — states set hours, written tests, and cards. This free check is a 60-question / 75-minute unarmed knowledge diagnostic. Firearm qualification and armed cards are separate. Independent UniPrep2Go practice — not a state board exam.",
+    description:
+      "Free 60-question Unarmed Security Officer readiness check (75 min) with topic scoring — unarmed only, not an armed/firearms card.",
+    lastUpdated: "2026-10-04",
     examBody: "State security licensing boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["security officer exam", "unarmed guard card"],
@@ -1026,7 +1062,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NATE themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NATE Core readiness check with topic scoring.",
     examBody: "NATE",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    lastUpdated: "2026-10-04",
+    questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
     searchAliases: ["NATE Core", "HVAC NATE"],
   }),
   nicheReadinessConfig({
@@ -1109,7 +1146,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State wastewater operator boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Wastewater Operator Level 1 readiness check with topic scoring.",
     examBody: "State wastewater operator boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    lastUpdated: "2026-10-04",
+    questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
     searchAliases: ["wastewater operator", "WW operator exam"],
   }),
   nicheReadinessConfig({

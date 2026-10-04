@@ -3,114 +3,114 @@
     "id": "nsca-cpt-readiness-check-assessment-001",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "A preparticipation screen is used to:",
+    "prompt": "A 42-year-old books a first NSCA-CPT consult at a commercial gym. On the PAR-Q+ he marks yes to unexplained chest discomfort with easy walking. What should the trainer do before any fitness testing?",
     "options": [
       {
         "id": "a",
-        "text": "Spot red flags and decide when to refer"
+        "text": "Stop the assessment and refer him for medical clearance"
       },
       {
         "id": "b",
-        "text": "Diagnose the cause of a client's symptoms"
+        "text": "Start a submaximal bike test because only walking triggered it"
       },
       {
         "id": "c",
-        "text": "Clear the client in place of a physician"
+        "text": "Skip clearance because he is under the age-45 risk cutoff"
       },
       {
         "id": "d",
-        "text": "Estimate maximal strength before session one"
+        "text": "Have him waive liability and complete a 1RM battery today"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "NSCA-CPT screens; it does not diagnose. This item asks: “A preparticipation screen is used to:”. The matching answer is: Spot red flags and decide when to refer, not to diagnose disease. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "PAR-Q+ yes answers to ischemic symptoms (chest discomfort with light activity) are a stop for an NSCA-CPT. The trainer screens for red flags and refers; medical diagnosis and clearance are outside scope. No 1RM, submax, or “under 45 so it is fine” workaround until a physician clears him.",
     "distractorExplanations": {
-      "b": "Diagnosis is outside a CPT's scope; the screen identifies risk factors and symptoms that trigger a referral.",
-      "c": "A trainer cannot issue medical clearance; the screen decides whether clearance from a physician is needed first.",
-      "d": "Strength estimates come from fitness testing after screening; the preparticipation screen covers health risk."
+      "b": "Confuses a mode change with medical clearance; swapping treadmill for bike still stresses a possible cardiac symptom.",
+      "c": "Confuses age-based risk-factor counting with a positive symptom screen; chest discomfort needs referral at any age.",
+      "d": "Confuses informed consent with permission to ignore a PAR-Q+ red flag; a waiver does not replace physician clearance."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-002",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "A resting heart rate taken after coffee and a sprint is:",
+    "prompt": "A new client arrives after a double espresso and a jog from the parking garage. You need a resting heart rate for her intake vitals. How should you treat the pulse you get right now?",
     "options": [
       {
         "id": "a",
-        "text": "Gold standard"
+        "text": "Log it as her true resting HR for Karvonen zone math"
       },
       {
         "id": "b",
-        "text": "Not a true resting value"
+        "text": "Reject it as resting HR; recapture after quiet rest"
       },
       {
         "id": "c",
-        "text": "The same as HRR"
+        "text": "Convert the pulse directly into heart-rate reserve"
       },
       {
         "id": "d",
-        "text": "A 1RM"
+        "text": "Treat the pulse as a 1RM predictor for session one"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Control the conditions. This item asks: “A resting heart rate taken after coffee and a sprint is:”. The matching answer is: Not a true resting value. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Resting HR must be taken after seated or supine rest, without recent caffeine, nicotine, or exercise. A post-coffee, post-jog pulse is elevated and will inflate training zones if used as RHR. Recapture under controlled conditions; do not treat the number as a strength or HRR value.",
     "distractorExplanations": {
-      "a": "“Gold standard” does not answer “A resting heart rate taken after coffee and a sprint is:”. The matching answer is: Not a true resting value.",
-      "c": "“The same as HRR” does not answer “A resting heart rate taken after coffee and a sprint is:”. The matching answer is: Not a true resting value.",
-      "d": "“A 1RM” does not answer “A resting heart rate taken after coffee and a sprint is:”. The matching answer is: Not a true resting value."
+      "a": "Confuses an acute, stimulated pulse with true resting HR; Karvonen built on that number overestimates intensity.",
+      "c": "Confuses a single pulse with HRR, which needs true rest and a known or estimated HRmax, not a lobby reading.",
+      "d": "Confuses vitals with maximal strength testing; heart rate does not estimate a one-repetition maximum."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-003",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "BMI is:",
+    "prompt": "A 28-year-old powerlifter is 5 ft 10 in and 230 lb. His BMI prints as obese on the gym kiosk. How should the NSCA-CPT use that number in the assessment?",
     "options": [
       {
         "id": "a",
-        "text": "A direct measure of body-fat percentage"
+        "text": "Read BMI as a measured body-fat percentage"
       },
       {
         "id": "b",
-        "text": "A waist-to-height ratio for central fat"
+        "text": "Read BMI as a waist-to-height ratio for visceral fat mass"
       },
       {
         "id": "c",
-        "text": "A population height-weight index"
+        "text": "Read BMI as a height-weight index that can misclassify muscle"
       },
       {
         "id": "d",
-        "text": "A lean-mass index adjusted for muscle"
+        "text": "Read BMI as a lean-mass index that already credits muscle"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Use BMI carefully. This item asks: “BMI is:”. The matching answer is: A population height-weight index, not a complete body-comp diagnosis. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "BMI is mass (kg) divided by height (m) squared. It is a population screening index, not a body-composition method, so dense muscular clients are often labeled overweight or obese. Pair it with girths, skinfolds, or another composition tool rather than treating the kiosk printout as fat or lean mass.",
     "distractorExplanations": {
-      "a": "BMI uses only height and weight and cannot separate fat from lean mass, so it misclassifies muscular clients.",
-      "b": "Waist-to-height ratio uses a waist girth; BMI is weight in kg divided by height in meters squared.",
-      "d": "BMI makes no adjustment for muscle; that is exactly why muscular clients can score as overweight."
+      "a": "Confuses BMI with densitometry or calipers; BMI cannot split fat from lean tissue.",
+      "b": "Confuses BMI with waist-to-height ratio, which needs a waist girth the BMI formula never uses.",
+      "d": "Confuses BMI with FFM or FFMI; the index has no muscle adjustment, which is why lifters get misclassified."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-004",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "A push-up test mainly estimates:",
+    "prompt": "In a baseline battery, a 35-year-old client does as many strict push-ups as possible until form fails. What does this test primarily estimate for an NSCA-CPT?",
     "options": [
       {
         "id": "a",
-        "text": "Upper-body maximal muscular strength"
+        "text": "Upper-body one-repetition-maximum strength"
       },
       {
         "id": "b",
-        "text": "Upper-body muscular power output"
+        "text": "Upper-body peak muscular power output"
       },
       {
         "id": "c",
@@ -122,1861 +122,1861 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Match the test to the quality. This item asks: “A push-up test mainly estimates:”. The matching answer is: Upper-body muscular endurance. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Repetitions to form failure with body weight estimate local muscular endurance, not a 1RM. NSCA-CPT testing matches the quality: max strength needs a heavy single or low-rep estimate, power needs a fast throw or jump, and mobility needs range-of-motion screens. Score the push-up as endurance.",
     "distractorExplanations": {
-      "a": "Maximal strength is tested with a 1RM (e.g., bench press); reps to fatigue measure muscular endurance.",
-      "b": "Power is tested with fast, explosive tasks such as a medicine-ball throw, not repetitions to fatigue.",
-      "c": "Mobility and flexibility are assessed with range-of-motion tests; a push-up test counts reps to measure endurance."
+      "a": "Confuses high-rep bodyweight work with 1RM strength, which uses a heavy bench or similar max effort.",
+      "b": "Confuses endurance reps with power, which is force times velocity (med-ball throw, jump), not fatigue sets.",
+      "c": "Confuses a repetition-count test with ROM screens; push-ups do not grade shoulder or trunk flexibility."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-005",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Exertional chest pain during screening means:",
+    "prompt": "During a treadmill submaximal screen, a 50-year-old reports crushing chest pressure that started when the grade increased. What should the NSCA-CPT do?",
     "options": [
       {
         "id": "a",
-        "text": "Stop and refer"
+        "text": "Stop the test at once and arrange medical referral"
       },
       {
         "id": "b",
-        "text": "Continue at a lower intensity"
+        "text": "Drop one stage and continue the same protocol"
       },
       {
         "id": "c",
-        "text": "Stop, rest, then retest today"
+        "text": "Sit him down, then restart the identical test today"
       },
       {
         "id": "d",
-        "text": "Refer only if over age 45"
+        "text": "Continue if pain is only 4/10 and he is under 55"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pain on exertion is a stop. This item asks: “Exertional chest pain during screening means:”. The matching answer is: Stop and refer — do not start a 5K test. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Do not start a fitness test or a session.",
+    "explanation": "Exertional chest pressure is a possible cardiac symptom and an absolute stop for fitness testing. The CPT ends the test, monitors the client, and refers; lowering the grade or retesting the same day repeats the stimulus. Age cutoffs and pain scores do not authorize continuing a symptomatic screen.",
     "distractorExplanations": {
-      "b": "Exertional chest pain is a possible cardiac symptom; lowering intensity still exposes the client to risk.",
-      "c": "Retesting the same day repeats the dangerous stimulus; the client needs medical evaluation before any testing.",
-      "d": "Age thresholds apply to risk-factor counting, but symptoms such as chest pain require referral at any age."
+      "b": "Confuses intensity titration with emergency stop rules; a possible ischemic symptom is not a stage-down cue.",
+      "c": "Confuses recovery with clearance; same-day retest restimulates the same risk without a medical workup.",
+      "d": "Confuses age/risk tables with a hard stop; symptomatic chest pressure is referred at any age or rating."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-006",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Girth measurements should use:",
+    "prompt": "You repeat waist and hip girths every 4 weeks on a client tracking waist change. Which procedure keeps the measures comparable?",
     "options": [
       {
         "id": "a",
-        "text": "Standard landmarks, but over light clothing for comfort"
+        "text": "Same landmarks, but tape over a T-shirt for extra modesty"
       },
       {
         "id": "b",
-        "text": "Standard landmarks, same tension, similar time of day"
+        "text": "Standard landmarks, even tension, similar time of day"
       },
       {
         "id": "c",
-        "text": "Any convenient site, as long as the same tape is used"
+        "text": "Any convenient site if you keep the same tape"
       },
       {
         "id": "d",
-        "text": "Standard landmarks, pulling the tape tight to compress skin"
+        "text": "Standard landmarks, tape cinched until skin indents"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Reliability is the skill. This item asks: “Girth measurements should use:”. The matching answer is: Standard landmarks, same tension, similar time of day. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Girth reliability for an NSCA-CPT depends on the same anatomical landmarks, snug-not-compressing tape tension, and similar time of day and clothing state (bare skin). Clothing thickness, wandering sites, or crushing the tissue add error that looks like fat loss or gain.",
     "distractorExplanations": {
-      "a": "Girths are taken on bare skin; clothing adds variable thickness and makes repeat measures unreliable.",
-      "c": "Using the same tape does not fix site error; standardized anatomical landmarks are what make girths repeatable.",
-      "d": "The tape should be snug on the skin without compressing tissue; pulling it tight understates the girth."
+      "a": "Confuses comfort with reliability; fabric thickness varies and inflates girth from visit to visit.",
+      "c": "Confuses equipment with site standardization; the same tape cannot fix a moved landmark.",
+      "d": "Confuses snug contact with compression; cinching understates girth and wrecks week-to-week trends."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-007",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "A sit-and-reach is limited because it:",
+    "prompt": "A client scores well on a sit-and-reach box and asks if that proves a healthy low back. Why should the NSCA-CPT not over-read that score?",
     "options": [
       {
         "id": "a",
-        "text": "Measures only hip flexor length"
+        "text": "The test only measures hip-flexor muscle length"
       },
       {
         "id": "b",
-        "text": "Tests dynamic, not static, flexibility"
+        "text": "The test grades dynamic flexibility, not static range"
       },
       {
         "id": "c",
-        "text": "Mixes hamstring and low-back"
+        "text": "One score mixes hamstring and low-back flexibility"
       },
       {
         "id": "d",
-        "text": "Isolates the lumbar spine from the hips"
+        "text": "The test isolates lumbar motion from the hips"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Do not over-read the test. This item asks: “A sit-and-reach is limited because it:”. The matching answer is: Mixes hamstring and low-back and is not a 'healthy spine' diagnosis. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It is not a 'healthy spine' diagnosis.",
+    "explanation": "Sit-and-reach is a static posterior-chain reach. Hamstring and lumbar flexibility both contribute, so a high score is not a spine-health diagnosis and a low score does not name one tight tissue. Use it as a limited ROM snapshot, not medical clearance of the low back.",
     "distractorExplanations": {
-      "a": "Sit-and-reach targets the posterior chain (hamstrings and low back), not the hip flexors on the front of the hip.",
-      "b": "Sit-and-reach is a static range-of-motion test; the limitation is mixing two regions, not the type of flexibility.",
-      "d": "It does the opposite: hamstring and low-back flexibility both contribute, so one score cannot isolate either region."
+      "a": "Confuses posterior-chain sit-and-reach with hip-flexor length tests (Thomas), which target the anterior hip.",
+      "b": "Confuses static ROM with dynamic flexibility; the limit is mixed regions, not ballistic versus held stretch.",
+      "d": "Confuses isolation with the actual blended score; the box cannot separate lumbar from hip contribution."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-008",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Blood pressure 162/100 at rest before a session:",
+    "prompt": "Seated rest blood pressure before a session is 162/100 mmHg on a calibrated cuff, repeated after five quiet minutes. What should the NSCA-CPT do?",
     "options": [
       {
         "id": "a",
-        "text": "Is fine for moderate cardio only"
+        "text": "Train moderate cardio only and skip free weights"
       },
       {
         "id": "b",
-        "text": "Is fine if the client feels well"
+        "text": "Train as planned because she reports feeling well"
       },
       {
         "id": "c",
-        "text": "Is stage 1, so lift but skip HIIT"
+        "text": "Call it stage 1 and lift but skip interval work"
       },
       {
         "id": "d",
-        "text": "Is a referral/stop situation"
+        "text": "Stop the session and refer her for medical review"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Know your cutoffs. This item asks: “Blood pressure 162/100 at rest before a session:”. The matching answer is: Is a referral/stop situation per your screening rules — not a max-out day. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It is not a day for maximal testing.",
+    "explanation": "A confirmed resting 162/100 mmHg is stage 2-range hypertension and above common CPT cutoffs for starting exercise (often SBP ≥160 or DBP ≥100). The trainer does not diagnose, but stops the session and refers. Feeling well is expected; hypertension is often silent. Stage 1 is 130–139/80–89, not this reading.",
     "distractorExplanations": {
-      "a": "162/100 is stage 2 hypertension; training at any intensity should wait for medical referral and clearance.",
-      "b": "Hypertension is often symptom-free, so feeling well does not make a resting reading of 162/100 safe to train on.",
-      "c": "Stage 1 hypertension is 130–139/80–89; a resting 162/100 is stage 2, which calls for referral before training."
+      "a": "Confuses modality choice with a contraindication; 162/100 is not a green light for any training intensity.",
+      "b": "Confuses symptoms with risk; absence of headache or dizziness does not make this resting BP safe to train on.",
+      "c": "Confuses stage 1 (130–139/80–89) with this stage 2-range reading that needs referral before loading."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-009",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "A 1RM estimate from a 5RM is:",
+    "prompt": "A novice wants a squat 1RM. You have a clean 5RM of 185 lb and no extra spotters for a true max. How should you treat a chart-predicted 1RM?",
     "options": [
       {
         "id": "a",
-        "text": "A prediction with error"
+        "text": "As a prediction with error, not a lab-measured max"
       },
       {
         "id": "b",
-        "text": "An exact value for any lifter"
+        "text": "As an exact 1RM that any trained lifter will hit today"
       },
       {
         "id": "c",
-        "text": "Most accurate from 12–15 reps"
+        "text": "As most accurate from a 12–15-repetition set"
       },
       {
         "id": "d",
-        "text": "Equally valid for every exercise"
+        "text": "As equally valid for every gym exercise"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Use charts as estimates. This item asks: “A 1RM estimate from a 5RM is:”. The matching answer is: A prediction with error — not a lab truth. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It is an estimate, not a lab-measured value.",
+    "explanation": "NSCA-CPT load charts convert a repetition-maximum into an estimated 1RM. Error varies with training status, exercise, and how far the set is from a true max. A 5RM is a reasonable predictor, but it is not a tested single. Accuracy falls as reps rise, and the ratio is not identical across lifts.",
     "distractorExplanations": {
-      "b": "Prediction equations carry error that varies by lifter, training status, and exercise, so the result is an estimate.",
-      "c": "Prediction accuracy falls as reps rise; estimates are most accurate from loads that allow about 10 reps or fewer.",
-      "d": "The rep-to-1RM relationship differs between exercises and muscle groups, so one chart is not valid for every lift."
+      "b": "Confuses an equation with a measured 1RM; individual error means the chart is a planning estimate.",
+      "c": "Confuses better accuracy at low reps with high-rep sets; 12–15RM predictions are typically less precise.",
+      "d": "Confuses a squat chart with a universal conversion; isolation and Olympic lifts do not share one ratio."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-010",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Body-fat from a cheap handheld BIA can be off because of:",
+    "prompt": "A client ate recently, is under-hydrated, and uses a cheap handheld BIA at the front desk. The printout says 31% fat. What mainly explains why that number can mislead?",
     "options": [
       {
         "id": "a",
-        "text": "Room temperature and body height"
+        "text": "Room temperature and entered height dominate the error"
       },
       {
         "id": "b",
-        "text": "Hydration, food, and device error"
+        "text": "Hydration, recent food, and device error swing it"
       },
       {
         "id": "c",
-        "text": "Recent caffeine, but not hydration"
+        "text": "Caffeine changes BIA but hydration does not"
       },
       {
         "id": "d",
-        "text": "Skinfold site choice and pinch depth"
+        "text": "Skinfold site choice and pinch depth drove it"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Treat BIA as a trend, not a verdict. This item asks: “Body-fat from a cheap handheld BIA can be off because of:”. The matching answer is: Hydration, food, and device error. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Handheld BIA estimates composition from a small current through body water. Hydration, recent meals, and cheap-device error move impedance and the fat estimate. Treat BIA as a trend under identical conditions, not a verdict. Height is an input, not the main error source; skinfold technique is a different method.",
     "distractorExplanations": {
-      "a": "Height is entered into the equation, and room temperature is minor; hydration status drives most BIA error.",
-      "c": "Hydration is the main source of BIA error, because the current travels through body water.",
-      "d": "Site choice and pinch technique are sources of error for skinfold calipers, not for bioelectrical impedance."
+      "a": "Confuses entered height with the main BIA bias; hydration and meal timing move impedance far more.",
+      "c": "Confuses stimulant effects with water; BIA current travels in body water, so hydration is a primary error.",
+      "d": "Confuses BIA with caliper error; site and pinch depth apply to skinfolds, not a handheld impedance wand."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-011",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "A movement screen that shows a painful squat means:",
+    "prompt": "In a bodyweight squat screen, a 38-year-old winces at the bottom and points to the right anterior knee. What should the trainer do with loaded squats today?",
     "options": [
       {
         "id": "a",
-        "text": "Load it lightly at a slow tempo so the pain can settle"
+        "text": "Load lightly at a slow tempo so the pain settles"
       },
       {
         "id": "b",
-        "text": "Stretch the hips first, then load it"
+        "text": "Stretch the hips five minutes, then barbell squat"
       },
       {
         "id": "c",
-        "text": "Do not load that pattern — regress or refer"
+        "text": "Do not load that pattern; regress it or refer"
       },
       {
         "id": "d",
-        "text": "Diagnose the joint and plan the rehab"
+        "text": "Diagnose the joint and write a rehab plan"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Painful patterns are not loading candidates. This item asks: “A movement screen that shows a painful squat means:”. The matching answer is: Do not load that pattern — regress or refer. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Pain during a movement screen is a stop for loading that pattern. The NSCA-CPT regresses to a pain-free variation or refers to a qualified clinician. Light load, stretching-then-loading, and diagnosing the joint all keep the client in a painful squat the CPT is not licensed to treat.",
     "distractorExplanations": {
-      "a": "Adding load to a painful pattern is still loading it; pain means regress or refer, not continue with less weight.",
-      "b": "Assuming tightness and loading anyway ignores the pain; a painful screen is referred, not treated by the trainer.",
-      "d": "Diagnosing injuries and prescribing rehab is outside CPT scope; a painful pattern is referred to a clinician."
+      "a": "Confuses a lighter load with a pain-free screen; adding any load to a painful squat still loads the symptom.",
+      "b": "Confuses assumed tightness with a painful pattern; stretching then loading is treatment, not a CPT screen.",
+      "d": "Confuses CPT scope with clinical diagnosis and rehab prescription, which belong to licensed providers."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-012",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Informed consent before testing covers:",
+    "prompt": "Before a 1.5-mile walk test, what must informed consent include so the client can agree to the assessment?",
     "options": [
       {
         "id": "a",
-        "text": "What you will do, and a waiver of all liability"
+        "text": "Procedures plus a waiver that erases all trainer liability"
       },
       {
         "id": "b",
-        "text": "The risks, signed after the test is finished"
+        "text": "A risk talk signed after the walk test is finished"
       },
       {
         "id": "c",
-        "text": "The benefits and goals, with the risks left out"
+        "text": "Benefits and goals with the risks left out"
       },
       {
         "id": "d",
-        "text": "What you will do, risks, and that they can stop"
+        "text": "Procedures, foreseeable risks, and the right to stop"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Consent is part of assessment. This item asks: “Informed consent before testing covers:”. The matching answer is: What you will do, risks, and that they can stop. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Informed consent for NSCA-CPT testing is obtained before the test. It explains what will happen, foreseeable risks and discomforts, expected benefits, and that the client may stop at any time. It is not a negligence waiver and cannot be signed after the effort or stripped of risk language.",
     "distractorExplanations": {
-      "a": "Informed consent explains procedures and risks; it is not a liability waiver, and negligence cannot be waived away.",
-      "b": "Consent must be obtained before testing starts, otherwise the client could not agree to the risks in advance.",
-      "c": "Consent is not informed unless the client hears the risks and discomforts as well as the benefits."
+      "a": "Confuses consent with a liability waiver; explaining the test does not erase trainer negligence.",
+      "b": "Confuses timing; consent after the test cannot authorize risks the client already took.",
+      "c": "Confuses marketing the benefits with informed consent, which must include risks and the right to stop."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-013",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "A client on a beta-blocker may show:",
+    "prompt": "A 62-year-old on a prescribed beta-blocker wants a Karvonen heart-rate zone from today’s treadmill screen. What should the trainer expect?",
     "options": [
       {
         "id": "a",
-        "text": "A blunted heart-rate response"
+        "text": "A blunted HR response that makes HR targets unreliable"
       },
       {
         "id": "b",
-        "text": "An exaggerated heart-rate response"
+        "text": "An exaggerated heart-rate rise even at easy walking speeds"
       },
       {
         "id": "c",
-        "text": "A higher maximal heart rate"
+        "text": "A higher than age-predicted maximal heart rate"
       },
       {
         "id": "d",
-        "text": "A blunted RPE response to effort"
+        "text": "A blunted RPE so talk-test and RPE cannot be used"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Meds change HR math. This item asks: “A client on a beta-blocker may show:”. The matching answer is: A blunted heart-rate response — do not chase a target HR blindly. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Use RPE instead of chasing a target HR.",
+    "explanation": "Beta-blockers lower resting and exercise heart rate and reduce HRmax, so age-predicted or Karvonen targets overestimate a safe zone. The NSCA-CPT should expect a blunted HR and use RPE or talk-test, not chase a formula HR. Stimulants, not beta-blockers, raise HR; RPE remains usable.",
     "distractorExplanations": {
-      "b": "Beta-blockers lower resting and exercise HR; an exaggerated HR response is more typical of stimulants.",
-      "c": "Beta-blockers reduce maximal heart rate, so age-predicted HR targets overestimate the safe intensity.",
-      "d": "The HR is blunted, not perceived exertion; that is why RPE is the preferred intensity tool on beta-blockers."
+      "b": "Confuses beta-blockade with stimulant or withdrawal tachycardia; these drugs blunt, not exaggerate, HR.",
+      "c": "Confuses the drug effect with a higher HRmax; beta-blockers typically reduce maximal heart rate.",
+      "d": "Confuses the HR effect with perception; RPE is preferred because HR is the blunted signal."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-014",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Waist circumference is useful as:",
+    "prompt": "You measure a 47-year-old man’s waist at a standard site as part of cardiometabolic screening. What is the most appropriate use of that girth?",
     "options": [
       {
         "id": "a",
-        "text": "A direct body-fat percentage"
+        "text": "Convert the tape reading into a body-fat percentage"
       },
       {
         "id": "b",
-        "text": "A central-adiposity risk flag"
+        "text": "Flag elevated central adiposity and related risk"
       },
       {
         "id": "c",
-        "text": "A measure of lean muscle mass"
+        "text": "Estimate lean muscle mass around the trunk"
       },
       {
         "id": "d",
-        "text": "A flexibility screen for the trunk"
+        "text": "Score trunk flexibility instead of sit-and-reach"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Central fat is the health signal. This item asks: “Waist circumference is useful as:”. The matching answer is: A central-adiposity risk flag, not a personality score. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Waist circumference is a central-adiposity risk flag linked to cardiometabolic disease. It is not a body-fat percent, a lean-mass estimate, or a flexibility test. The NSCA-CPT uses standardized landmarks and interprets high values as a reason to emphasize referral and risk-aware programming, not as a composition lab result.",
     "distractorExplanations": {
-      "a": "Waist girth does not yield a body-fat percentage; it flags abdominal fat linked to cardiometabolic risk.",
-      "c": "Waist circumference reflects abdominal fat, not muscle mass; lean mass needs a body-composition method.",
-      "d": "A tape around the waist measures girth, not range of motion; trunk flexibility uses movement tests."
+      "a": "Confuses girth with a % fat equation from skinfolds or BIA; a tape does not output body-fat percent.",
+      "c": "Confuses abdominal fat with muscle; lean mass needs a composition method, not a waist tape.",
+      "d": "Confuses a tape measure with ROM testing; flexibility is scored with movement screens, not girth."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-assessment-015",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "This NSCA-CPT mock is:",
+    "prompt": "A 29-year-old client at 22 weeks of pregnancy reports calf pain, swelling, and warmth after a long car trip. She wants a lower-body 1RM day. What should the NSCA-CPT do?",
     "options": [
       {
         "id": "a",
-        "text": "A released official NSCA-CPT exam form"
+        "text": "Proceed with machines and skip the barbell squat today"
       },
       {
         "id": "b",
-        "text": "A NASM-CPT practice exam relabeled for the NSCA-CPT"
+        "text": "Heat and massage the calf, then test the 1RM"
       },
       {
         "id": "c",
-        "text": "Independent practice — not the official NSCA exam"
+        "text": "Stop lower-body loading and refer for possible DVT"
       },
       {
         "id": "d",
-        "text": "The official NSCA-CSCS practice exam"
+        "text": "Elevate the leg ten minutes and retest 1RM today"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Different credential. This item asks: “This NSCA-CPT mock is:”. The matching answer is: Independent practice — not the official NSCA exam. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Unilateral calf pain, swelling, and warmth after prolonged sitting in pregnancy is a red-flag cluster for possible deep-vein thrombosis. The CPT does not diagnose DVT, but stops lower-body loading and refers immediately. Changing implements, massaging, or delaying ten minutes still stresses a potentially clotting limb.",
     "distractorExplanations": {
-      "a": "NSCA does not release live exam forms; this bank is independent practice written by UniPrep, not by NSCA.",
-      "b": "This is a separate NSCA-CPT practice set; NASM-CPT is a different credential with its own content outline.",
-      "d": "The CSCS is NSCA's strength-coach credential with its own exam; this set is independent NSCA-CPT practice."
+      "a": "Confuses barbell versus machine with a medical emergency; any lower-body 1RM still loads the calf.",
+      "b": "Confuses a possible clot with a muscle cramp; heat and massage are dangerous if DVT is in the differential.",
+      "d": "Confuses brief rest with medical evaluation; elevation does not clear a DVT red flag for 1RM testing."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-016",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Progressive overload means:",
+    "prompt": "A client hits 12 reps on the last goblet-squat set when the target is 10, and does it again the next session. Using the 2-for-2 rule, what should the trainer change?",
     "options": [
       {
         "id": "a",
-        "text": "Adding load every single session"
+        "text": "Raise the load a small step next time (about 2.5–10%)"
       },
       {
         "id": "b",
-        "text": "Maxing out on each lift once a week"
+        "text": "Drop the last set so extra reps cannot accumulate"
       },
       {
         "id": "c",
-        "text": "Constant load with longer rest periods"
+        "text": "Hold the same load unchanged for the next eight weeks"
       },
       {
         "id": "d",
-        "text": "A planned increase in demand over time"
+        "text": "Replace the squat with a 1RM test because extra reps prove a new max"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Progress is programmed. This item asks: “Progressive overload means:”. The matching answer is: A planned increase in demand over time. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "a",
+    "explanation": "The 2-for-2 rule is a practical progression tool: if the client completes at least two extra reps on the last set in two consecutive sessions, increase load modestly (often about 2.5–10%) rather than jumping to a max test. That keeps overload planned and technique intact.",
     "distractorExplanations": {
-      "a": "Overload is planned and progressive over weeks; forcing load up every session ignores recovery and technique.",
-      "b": "Weekly 1RM testing measures strength rather than building it; overload is a planned rise in training demand.",
-      "c": "Keeping load constant and resting longer lowers the demand, which is the opposite of progressive overload."
+      "b": "Removing volume after successful extra reps underloads the client; the rule uses those reps as a green light to add load, not to cut sets.",
+      "c": "Leaving load frozen for eight weeks ignores the two-session signal that the assigned dose is now too easy.",
+      "d": "Two extra reps at a working weight are not a 1RM; max testing is a separate, higher-stress event, not the default next step."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-017",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "A novice strength block often uses:",
+    "prompt": "A previously sedentary adult wants general strength. Which weekly frequency and structure fits a novice FITT resistance plan?",
     "options": [
       {
         "id": "a",
-        "text": "Full-body or upper/lower with compound lifts 2–4 days"
+        "text": "A six-day body-part split with each muscle trained once"
       },
       {
         "id": "b",
-        "text": "A body-part split hitting each muscle once, 5–6 days"
+        "text": "Full-body compound sessions on 2–3 nonconsecutive days"
       },
       {
         "id": "c",
-        "text": "Isolation machines only for the first 8 weeks"
+        "text": "Daily maximal singles on squat, bench, and deadlift"
       },
       {
         "id": "d",
-        "text": "Full-body compound lifts on 5–6 consecutive days"
+        "text": "Isolation-machine circuits five weekdays in a row"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Simple frequency wins. This item asks: “A novice strength block often uses:”. The matching answer is: Full-body or upper/lower with compound lifts 2–4 days. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "b",
+    "explanation": "Novices progress well with 2–3 nonconsecutive full-body days and multi-joint lifts. That frequency gives practice, recovery, and a simple FITT start. High-day body-part splits and daily maxes are advanced or high-fatigue choices, not a first-block default.",
     "distractorExplanations": {
-      "b": "High-volume body-part splits suit advanced lifters; novices progress best with full-body or upper/lower plans.",
-      "c": "Novices can learn compound patterns early; avoiding them for 8 weeks delays strength and skill development.",
-      "d": "Training the same full-body lifts 5–6 days in a row leaves no recovery; novices use 2–3 nonconsecutive days."
+      "a": "Once-weekly body-part splits suit advanced volume distribution; a novice needs more frequent practice of the same compound patterns.",
+      "c": "Daily 1RM-style singles are high neural stress with little hypertrophy or skill volume; they are not a novice strength template.",
+      "d": "Five consecutive isolation days skip recovery and delay learning of squat, hinge, push, and pull patterns."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-018",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Specificity means:",
+    "prompt": "A client’s main goal is a first 5K in 12 weeks; bigger arms are a secondary wish. How should specificity shape the week?",
     "options": [
       {
         "id": "a",
-        "text": "Training every quality equally"
+        "text": "Center the week on 8–12RM arm isolation and treat running as optional"
       },
       {
         "id": "b",
-        "text": "The program looks like the goal"
+        "text": "Fill the week with heavy 3RM lower-body lifting and skip the run practice"
       },
       {
         "id": "c",
-        "text": "Training the weakest muscle first"
+        "text": "Most weekly minutes on 5K-pace cardio, with lifting as support"
       },
       {
         "id": "d",
-        "text": "Using one plan for every goal"
+        "text": "Split every session evenly between biceps work and all-out hill sprints"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Train the quality you want. This item asks: “Specificity means:”. The matching answer is: The program looks like the goal (strength vs 5K vs hypertrophy). Independent UniPrep diagnostic — not an official NSCA-CPT paper. Strength, a 5K, and hypertrophy each need different training.",
+    "correctOptionId": "c",
+    "explanation": "The SAID principle says adaptations match the demand. A 5K is an aerobic, running-specific goal, so most weekly time should be running or similar cardio at relevant effort. Resistance training supports durability and muscle, but it does not replace race-pace practice.",
     "distractorExplanations": {
-      "a": "Equal emphasis on all qualities describes general fitness; specificity biases training toward the target goal.",
-      "c": "Prioritizing a weak point concerns exercise order and needs analysis, not the principle of specificity.",
-      "d": "A single plan for every goal ignores specificity; adaptations match the demands that are imposed (SAID)."
+      "a": "Arm hypertrophy volume is a secondary vanity goal; making it the week’s center violates specificity for a 5K.",
+      "b": "Heavy 3RM work trains maximal strength, not 5K economy or endurance; skipping run practice leaves the goal untrained.",
+      "d": "A rigid 50/50 split of curls and all-out hills is not a 5K program; it mixes the wrong lift emphasis with unsustainable sprint density."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-019",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "A deload is:",
+    "prompt": "After three progressive weeks, a general-fitness client has stalled reps and lingering fatigue. What should week 4 of this mesocycle usually be?",
     "options": [
       {
         "id": "a",
-        "text": "A full week off with no training"
+        "text": "A fourth overload week with 1RM tests on every compound lift"
       },
       {
         "id": "b",
-        "text": "A week of 1RM testing attempts"
+        "text": "A complete week away from training so all qualities fully reset"
       },
       {
         "id": "c",
-        "text": "A planned reduction in volume or intensity"
+        "text": "Daily random exercise swaps meant to confuse the muscles into adapting"
       },
       {
         "id": "d",
-        "text": "A planned increase in volume after a test"
+        "text": "A planned deload: keep the lifts but cut volume (often load)"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Deloads are programming, not punishment. This item asks: “A deload is:”. The matching answer is: A planned reduction in volume or intensity so the client can recover. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It lets the client recover before the next block.",
+    "correctOptionId": "d",
+    "explanation": "A simple client mesocycle often uses three progressive weeks and a deload. Training continues so skill is retained, but volume (and often intensity) drops so fatigue can dissipate before the next block. That is programmed recovery, not a missed week or a testing peak.",
     "distractorExplanations": {
-      "a": "Complete rest is detraining or a break; a deload keeps training going at a reduced volume or intensity.",
-      "b": "A testing week is a peak demand; a deload lowers training stress so fatigue can dissipate.",
-      "d": "Raising volume is an overreaching or accumulation phase, the opposite of the reduction that defines a deload."
+      "a": "Piling on overload plus 1RM tests raises demand when the client is already stalling; that is a peak, not a recovery week.",
+      "b": "Complete rest can be a break or detraining; a deload usually keeps some training at a reduced dose.",
+      "c": "Random exercise swapping is not periodization; deloads change load and volume on a planned template, not chaos."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-020",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "For fat loss, resistance training is there to:",
+    "prompt": "A healthy adult’s primary goal is muscle size rather than a new 1RM. Which loading scheme best matches hypertrophy guidelines?",
     "options": [
       {
         "id": "a",
-        "text": "Burn more calories per session than cardio"
+        "text": "About 67–85% 1RM, 6–12 reps, and 30–90 seconds of rest"
       },
       {
         "id": "b",
-        "text": "Spot-reduce fat over the trained muscles"
+        "text": "At least 90% 1RM, 1–3 reps, and 5-minute rests on every set"
       },
       {
         "id": "c",
-        "text": "Raise resting metabolism enough to replace the diet deficit"
+        "text": "About 40% 1RM, 25–40 reps, with no planned rest intervals"
       },
       {
         "id": "d",
-        "text": "Keep muscle while a deficit and steps do much of the math"
+        "text": "Continuous bodyweight circuits to failure with 10-second rests"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Lift in a cut. This item asks: “For fat loss, resistance training is there to:”. The matching answer is: Keep muscle while a deficit and steps do much of the math. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "a",
+    "explanation": "NSCA hypertrophy guidelines cluster around moderate loads (about 67–85% 1RM), 6–12 reps, multiple sets, and 30–90 second rests. That combination provides mechanical tension and metabolic stress without using near-max singles as the main size tool.",
     "distractorExplanations": {
-      "a": "Steady cardio usually burns more per session; lifting earns its place by preserving lean mass during the deficit.",
-      "b": "Spot reduction is a myth; fat is lost systemically through the energy deficit, not from the area being trained.",
-      "c": "Added muscle raises resting metabolism only slightly; the calorie deficit still drives most of the fat loss."
+      "b": "≥90% for 1–3 reps with long rest is a strength/power scheme; it can support size as accessory work but is not the hypertrophy default.",
+      "c": "Very light, very high-rep work with no rest drifts toward endurance or conditioning, not the usual hypertrophy loading band.",
+      "d": "Nonstop failure circuits emphasize fatigue and density, not the controlled 6–12RM loading used for hypertrophy blocks."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-021",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Rest intervals for a heavy 5RM squat are typically:",
+    "prompt": "A client is performing heavy 5RM back squats in a strength block. Which rest between working sets is most appropriate?",
     "options": [
       {
         "id": "a",
-        "text": "2–5 minutes, not 15 seconds like a circuit"
+        "text": "30–90 seconds, matching a typical hypertrophy rest range"
       },
       {
         "id": "b",
-        "text": "Zero"
+        "text": "2–5 minutes so phosphagen stores recover between heavy sets"
       },
       {
         "id": "c",
-        "text": "One breath"
+        "text": "15–30 seconds, matching a metabolic or circuit rest range"
       },
       {
         "id": "d",
-        "text": "Tomorrow"
+        "text": "8–12 minutes after every set, longer than strength usually needs"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Strength needs rest. This item asks: “Rest intervals for a heavy 5RM squat are typically:”. The matching answer is: 2–5 minutes, not 15 seconds like a circuit. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "b",
+    "explanation": "Heavy low-rep strength work relies on the phosphagen system. Rest of about 2–5 minutes lets that system recover so the next 5RM set can be high quality. Cutting rest to hypertrophy or circuit lengths turns the set into fatigue management instead of force production.",
     "distractorExplanations": {
-      "b": "“Zero” does not answer “Rest intervals for a heavy 5RM squat are typically:”. The matching answer is: 2–5 minutes, not 15 seconds like a circuit.",
-      "c": "“One breath only” does not answer “Rest intervals for a heavy 5RM squat are typically:”. The matching answer is: 2–5 minutes, not 15 seconds like a circuit.",
-      "d": "“Tomorrow” does not answer “Rest intervals for a heavy 5RM squat are typically:”. The matching answer is: 2–5 minutes, not 15 seconds like a circuit."
+      "a": "30–90 seconds is the hypertrophy band; it is too short to reliably repeat a true 5RM squat.",
+      "c": "15–30 seconds is endurance/circuit rest and will collapse load and technique on heavy squats.",
+      "d": "8–12 minutes is more rest than most general-client strength sets need and blows up session density without a performance reason."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-022",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Order of a session usually puts:",
+    "prompt": "A client’s leg-press work is 3 sets of 15–20 reps for muscular endurance. Rest between those sets should usually be:",
     "options": [
       {
         "id": "a",
-        "text": "Small isolation lifts first to pre-fatigue before compounds"
+        "text": "2–5 minutes, as prescribed for heavy 5RM strength work"
       },
       {
         "id": "b",
-        "text": "Power/strength compounds before small isolation and long cardio"
+        "text": "30–90 seconds, as prescribed for 6–12RM hypertrophy work"
       },
       {
         "id": "c",
-        "text": "Long steady cardio first, then the power and strength compounds"
+        "text": "5–8 minutes, as if each high-rep set were a maximal effort"
       },
       {
         "id": "d",
-        "text": "Core stability work first, then the power lifts at the end"
+        "text": "≤30 seconds, keeping the local endurance metabolic demand"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Fatigue order matters. This item asks: “Order of a session usually puts:”. The matching answer is: Power/strength compounds before small isolation and long cardio. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "d",
+    "explanation": "Muscular endurance uses lighter loads, ≥12 reps, and short rest (≤30 seconds). Brief rest keeps local metabolic stress high, which is part of the endurance stimulus. Strength-length rests would let the set recover like a heavy 5 and change the training effect.",
     "distractorExplanations": {
-      "a": "Pre-fatigue is a niche bodybuilding method; NSCA order puts power and multi-joint lifts first while the client is fresh.",
-      "c": "Long cardio before lifting drains glycogen and form for the heavy lifts; power and strength work comes first.",
-      "d": "Fatiguing the trunk first weakens bracing for heavy lifts; core and small-muscle work usually goes at the end."
+      "a": "2–5 minutes is for high-load strength; it undercuts the short-rest demand of a 15–20-rep endurance set.",
+      "b": "30–90 seconds is the hypertrophy rest band, longer than the ≤30-second endurance target.",
+      "c": "5–8 minutes treats high-rep work like a max-effort single; that is the wrong energy-system rest for endurance."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-023",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "A client with a goal of a first pull-up needs:",
+    "prompt": "For a general-fitness client (not a peaking athlete), which 8-week linear block is most consistent with NSCA-CPT periodization?",
     "options": [
       {
         "id": "a",
-        "text": "Bench press and push-ups for pulling strength"
+        "text": "Higher volume at moderate loads first, then fewer reps at heavier loads"
       },
       {
         "id": "b",
-        "text": "Daily max-effort pull-up attempts to failure"
+        "text": "Daily 1RM testing in week 1, then unplanned isolation for seven weeks"
       },
       {
         "id": "c",
-        "text": "Hangs, rows, and assisted progressions"
+        "text": "The same 3×10 load every session with no planned change across the block"
       },
       {
         "id": "d",
-        "text": "Biceps curls only, since they drive the pull"
+        "text": "A 16-week Olympic-lift meet taper copied from a collegiate program"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "The lift is the program. This item asks: “A client with a goal of a first pull-up needs:”. The matching answer is: Hangs, rows, and assisted progressions — not random burpees only. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "a",
+    "explanation": "Traditional linear periodization for a CPT client starts with higher volume and moderate intensity, then shifts toward lower volume and higher intensity. That is a simple mesocycle, not a CSCS-style competition peak. Unchanging 3×10 or random testing is not planned variation.",
     "distractorExplanations": {
-      "a": "Bench press and push-ups train the horizontal push; a pull-up needs vertical-pull strength from the lats and biceps.",
-      "b": "Daily failed attempts give no usable reps and no recovery; assisted and eccentric progressions build the pull.",
-      "d": "The lats are the prime movers in a pull-up; curls train a small assisting muscle and cannot replace the pattern."
+      "b": "Opening with daily maxes and then improvising isolation is chaos and high risk, not a linear progression of volume and intensity.",
+      "c": "Fixed load and reps for eight weeks is a static template; linear periodization requires planned changes across weeks.",
+      "d": "A collegiate Olympic-lift taper is athlete periodization for a meet, not the default model for a general-fitness client."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-024",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Volume is roughly:",
+    "prompt": "A deconditioned adult is starting aerobic training. Using FITT intensity, where should the first weeks usually sit?",
     "options": [
       {
         "id": "a",
-        "text": "Load lifted as a percentage of 1RM"
+        "text": "Repeated all-out 400-meter repeats from the first session"
       },
       {
         "id": "b",
-        "text": "Total minutes spent in the session"
+        "text": "Near 90% heart-rate reserve, treating moderate work as unused"
       },
       {
         "id": "c",
-        "text": "Reps × rest interval × sessions"
+        "text": "Moderate effort (about 40–59% HRR or a sustainable RPE)"
       },
       {
         "id": "d",
-        "text": "Sets × reps × load (or hard sets)"
+        "text": "Very light walking that does not raise breathing or heart rate"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Define volume. This item asks: “Volume is roughly:”. The matching answer is: Sets × reps × load (or hard sets) — not Instagram stories. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "c",
+    "explanation": "FITT intensity for a deconditioned starter is typically moderate: about 40–59% HRR, or an RPE the client can sustain in complete sentences. That dose builds an aerobic base. All-out repeats and near-90% HRR are vigorous/interval tools to introduce after a base, not week-one defaults.",
     "distractorExplanations": {
-      "a": "Percentage of 1RM describes intensity; volume combines sets, reps, and load across the session.",
-      "b": "Session duration depends on rest and pace; volume is the total work done (sets × reps × load).",
-      "c": "Rest interval is a separate program variable; volume is sets × reps × load, not a product involving rest."
+      "a": "All-out 400s are high-intensity intervals; they exceed a deconditioned client’s first-week intensity and recovery capacity.",
+      "b": "≈90% HRR is vigorous-to-near-max; moderate work is a valid and preferred entry band, not wasted time.",
+      "d": "If breathing and heart rate never rise, intensity is below a training zone and will not drive aerobic adaptation."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-025",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "An older deconditioned adult should start with:",
+    "prompt": "Relative to a maximal-strength block, a muscular-endurance resistance block typically programs:",
     "options": [
       {
         "id": "a",
-        "text": "Machine or supported patterns and a slower ramp"
+        "text": "Heavier loads (≥85% 1RM) and fewer than 6 reps per set"
       },
       {
         "id": "b",
-        "text": "Free-weight barbell lifts to build balance early"
+        "text": "The same 3RM loads, changing the exercise order but not the load"
       },
       {
         "id": "c",
-        "text": "Low-level plyometrics in week one for bone health"
+        "text": "Olympic lifts at ~95% 1RM for single-effort power practice"
       },
       {
         "id": "d",
-        "text": "Cardio only until strength work is cleared"
+        "text": "Lighter loads (≤67% 1RM) and at least 12 reps per set"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Dose the start. This item asks: “An older deconditioned adult should start with:”. The matching answer is: Machine or supported patterns and a slower ramp. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "d",
+    "explanation": "Strength uses high load (≥85% 1RM) and low reps (≤6). Muscular endurance uses the opposite end: ≤67% 1RM and ≥12 reps, usually with shorter rest. Trainers pick the band that matches the goal rather than recycling 3RM loads and hoping endurance appears.",
     "distractorExplanations": {
-      "b": "Barbell lifts demand balance and skill a deconditioned older adult may lack; supported machines lower the risk first.",
-      "c": "Impact work can help bone later, but week one for a deconditioned adult needs a base of strength and balance first.",
-      "d": "Resistance training is a key need for older adults (sarcopenia, falls) and should start early at low intensity."
+      "a": "≥85% and <6 reps is the strength loading band, not endurance.",
+      "b": "Keeping 3RM loads and shuffling exercise order still trains high-force strength; it does not create an endurance stimulus.",
+      "c": "Near-max Olympic singles are power/strength work, far from high-rep endurance loading."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-026",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Cardio for health can be:",
+    "prompt": "Which weekly aerobic dose matches adult health guidelines a personal trainer can program toward?",
     "options": [
       {
         "id": "a",
-        "text": "At least 300 minutes of vigorous work each week"
+        "text": "300 minutes of vigorous intervals as the required health minimum"
       },
       {
         "id": "b",
-        "text": "Most days of moderate work or fewer hard sessions"
+        "text": "150 minutes of moderate work, or 75 minutes vigorous"
       },
       {
         "id": "c",
-        "text": "Two moderate 10-minute walks per week"
+        "text": "Two 10-minute easy walks totaling 20 minutes for the week"
       },
       {
         "id": "d",
-        "text": "Daily vigorous intervals with no moderate option"
+        "text": "Daily high-intensity intervals with moderate work excluded"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Aerobic dose still matters. This item asks: “Cardio for health can be:”. The matching answer is: Most days of moderate work or fewer hard sessions — not zero movement. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Guidelines are about 150 min moderate or 75 min vigorous a week.",
+    "explanation": "Public-health aerobic targets commonly used in CPT programming are about 150 minutes/week of moderate activity or 75 minutes of vigorous activity (or an equivalent mix), plus muscle-strengthening on ≥2 days. More volume can be a later goal; it is not the minimum bar.",
     "distractorExplanations": {
-      "a": "Guidelines call for 150 min moderate or 75 min vigorous; 300 vigorous minutes is far above the health minimum.",
-      "c": "Two 10-minute walks total 20 minutes, well below the 150 minutes of moderate activity recommended each week.",
-      "d": "Guidelines allow moderate activity on most days as a full option; vigorous work is an alternative, not a requirement."
+      "a": "300 vigorous minutes far exceeds the usual 75-minute vigorous health target; it is not the required minimum.",
+      "c": "Twenty easy minutes is well below 150 moderate minutes and is not an adequate weekly health dose.",
+      "d": "Guidelines treat moderate activity as a full option; vigorous intervals are an alternative, not a mandatory daily format."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-027",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "If knees hurt on lunges, you:",
+    "prompt": "Today’s session includes jump shrugs, barbell back squats, lying hamstring curls, and 25 minutes of easy cycling. Best order?",
     "options": [
       {
         "id": "a",
-        "text": "Add load to strengthen the knee"
+        "text": "Power shrugs, then squats, then curls, then the easy bike"
       },
       {
         "id": "b",
-        "text": "Stretch the quads and keep lunging"
+        "text": "Easy bike first to pre-fatigue the legs before any lifting"
       },
       {
         "id": "c",
-        "text": "Change the pattern or range"
+        "text": "Curls first to pre-exhaust hamstrings, with shrugs last"
       },
       {
         "id": "d",
-        "text": "Diagnose the knee and set rehab"
+        "text": "Easy bike, then curls, saving squats and shrugs for the end"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Pain is a program input. This item asks: “If knees hurt on lunges, you:”. The matching answer is: Change the pattern or range — do not 'push through' sharp pain. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Do not push through sharp pain.",
+    "correctOptionId": "a",
+    "explanation": "When the priority is performance, session order is power, then other multi-joint strength, then isolation, then longer aerobic work. Jump shrugs need freshness; squats come next; curls are assistance; easy cycling is last so it does not fatigue the lifts.",
     "distractorExplanations": {
-      "a": "Loading a painful pattern increases joint stress; pain calls for a change in exercise, range, or a referral.",
-      "b": "Assuming tightness and continuing ignores the pain signal; the pattern is changed before training continues.",
-      "d": "Diagnosing injury and prescribing rehab is beyond CPT scope; persistent pain is referred to a clinician."
+      "b": "Long easy cycling first drains legs and attention for power and squat work; cardio is sequenced after the lifts when RT is the priority.",
+      "c": "Pre-exhaust isolation before power work is a bodybuilding tactic that hurts shrug quality and rate of force development.",
+      "d": "Saving power and squats for last puts the highest-skill, highest-force work on fatigued legs."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-028",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "A youth athlete's program should emphasize:",
+    "prompt": "An 8RM bench-press block is aimed at muscle size. Which rest between those sets best matches hypertrophy guidelines?",
     "options": [
       {
         "id": "a",
-        "text": "Maximal 1RM testing every month"
+        "text": "2–5 minutes, as used for near-maximal strength sets"
       },
       {
         "id": "b",
-        "text": "One sport year-round from age 8"
+        "text": "10–15 seconds, as used in a nonstop metabolic circuit"
       },
       {
         "id": "c",
-        "text": "No resistance training until 16"
+        "text": "About 10 minutes so metabolic stress fully clears"
       },
       {
         "id": "d",
-        "text": "Skill, variety, and recovery"
+        "text": "About 30–90 seconds, the usual hypertrophy rest interval"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Kids are not small powerlifters. This item asks: “A youth athlete's program should emphasize:”. The matching answer is: Skill, variety, and recovery — not a copied advanced split. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Avoid copying an advanced adult split.",
+    "explanation": "Hypertrophy rest is typically 30–90 seconds. That is long enough to repeat an 8RM with decent technique and short enough to keep metabolic stress. Strength rests (2–5 min) and circuit rests (seconds) belong to other goals.",
     "distractorExplanations": {
-      "a": "Frequent max testing suits trained adults; youth programs focus on technique and gradual progression.",
-      "b": "Early single-sport specialization raises overuse injury and burnout risk; varied activity is recommended.",
-      "c": "Supervised resistance training is safe and beneficial for youth well before 16; avoiding it is an outdated myth."
+      "a": "2–5 minutes is the strength rest band; it reduces the metabolic stress that hypertrophy programming usually wants.",
+      "b": "10–15 seconds is circuit density; load and bench technique will drop below a true 8RM.",
+      "c": "Ten minutes over-recovers the set and turns a hypertrophy session into a sparse strength day."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-029",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Periodization is:",
+    "prompt": "A busy professional wants planned variety without an athletic peak. Which periodization model fits a general NSCA-CPT client?",
     "options": [
       {
         "id": "a",
-        "text": "Planned variation across weeks"
+        "text": "A long Olympic-weightlifting competition taper built for a meet date"
       },
       {
         "id": "b",
-        "text": "Same load and reps for months"
+        "text": "Undulating weekly loads (strength, hypertrophy, endurance days)"
       },
       {
         "id": "c",
-        "text": "Random workouts to confuse muscles"
+        "text": "The same load, sets, and reps at every session for many months"
       },
       {
         "id": "d",
-        "text": "A plan reserved for elite athletes"
+        "text": "A full recovery month scheduled after every two training days"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Plan the wave. This item asks: “Periodization is:”. The matching answer is: Planned variation across weeks, not chaos. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "b",
+    "explanation": "Daily undulating periodization varies load and reps inside a week (for example a heavier strength day, a 6–12RM hypertrophy day, and a higher-rep endurance day). That gives planned variety for a general client without copying a sport-season taper. Static loading or month-long layoffs are not undulation.",
     "distractorExplanations": {
-      "b": "Unchanged training leads to stagnation; periodization deliberately varies volume and intensity over phases.",
-      "c": "'Muscle confusion' is random, not planned; periodization sequences phases toward a goal on purpose.",
-      "d": "Periodization applies to general clients too; any long-term program benefits from planned phases."
+      "a": "A meet taper is athlete periodization aimed at one peak; it is not the default for a non-competitive professional.",
+      "c": "Unchanging sets and reps for months is no periodization; variety has to be planned, not accidental.",
+      "d": "A month off after two sessions is detraining, not a microcycle variation of volume and intensity."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-program-design-030",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "program-design",
-    "prompt": "Minimum effective dose means:",
+    "prompt": "After one successful session, a novice wants to add 40 lb to an 80 lb goblet squat. How should the trainer progress the load?",
     "options": [
       {
         "id": "a",
-        "text": "The most work the client can recover from"
+        "text": "Double the load again next week to keep overload aggressive"
       },
       {
         "id": "b",
-        "text": "Enough to progress without burying the client"
+        "text": "Begin daily 1RM testing because the client already adapted"
       },
       {
         "id": "c",
-        "text": "A fixed three sets of ten for every lift"
+        "text": "Use a small planned jump (about 2.5–10%) and confirm technique"
       },
       {
         "id": "d",
-        "text": "The volume that takes the client to failure"
+        "text": "Stop resistance training and use walking until the jump settles"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Do not hero-workout beginners. This item asks: “Minimum effective dose means:”. The matching answer is: Enough to progress without burying the client. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "c",
+    "explanation": "Progressive overload is a planned, small increase the client can still perform with sound form—often about 2.5–10% on a lift, or a small increment on dumbbells. A 50% jump (40 lb on 80 lb) is a form and injury risk, not a standard progression step.",
     "distractorExplanations": {
-      "a": "That describes maximum recoverable volume, the upper limit; the minimum effective dose is the lower one.",
-      "c": "A fixed set-rep scheme is a template, not a dose matched to the client's response and recovery.",
-      "d": "Training to failure is a high-stress method; the minimum effective dose is the least work that still drives progress."
+      "a": "Doubling again compounds an already oversized jump; overload is graded, not exponential week to week.",
+      "b": "One good session is not a reason to start daily max testing; that confuses progression with constant 1RM trials.",
+      "d": "Abandoning the lift after a greedy jump ignores the actual fix: a smaller load increase with technique checks."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-031",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A squat cue 'knees out' is meant to:",
+    "prompt": "A novice’s knees cave inward at the bottom of a bodyweight squat. You cue “knees out.” What is that cue meant to produce?",
     "options": [
       {
         "id": "a",
-        "text": "Push the knees well past the little toes"
+        "text": "Knees tracking over the feet instead of collapsing into valgus"
       },
       {
         "id": "b",
-        "text": "Keep the knees behind the toes at all costs"
+        "text": "Knees shoved well past the little toes into extra hip turnout"
       },
       {
         "id": "c",
-        "text": "Keep the knees tracking over the feet"
+        "text": "Knees locked behind the toes no matter how the torso leans"
       },
       {
         "id": "d",
-        "text": "Shift the weight onto the balls of the feet"
+        "text": "Weight shifted onto the balls of the feet so they can sit deeper"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Track the knees. This item asks: “A squat cue 'knees out' is meant to:”. The matching answer is: Keep the knees tracking over the feet, not collapse inward. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It prevents the knees collapsing inward.",
+    "correctOptionId": "a",
+    "explanation": "“Knees out” is a tracking cue: the knees should follow the line of the feet so the hip, knee, and foot stay stacked. It is not a rule against forward knee travel and not a cue to spin the knees outside the fifth toe. Valgus collapse is the fault; mid-foot balance stays the goal.",
     "distractorExplanations": {
-      "a": "'Knees out' means in line with the toes; forcing them past the little toes over-rotates the hips and loads the knee.",
-      "b": "Knees may travel forward past the toes; the cue is about side-to-side tracking, not forward travel.",
-      "d": "Weight stays over the mid-foot; shifting onto the toes destabilizes the squat and stresses the knees."
+      "b": "Forcing the knees outside the little toes over-rotates the hips and can stress the knee rather than restore tracking.",
+      "c": "Forward knee travel can be normal; the cue is medial-lateral tracking, not keeping knees behind the toes.",
+      "d": "Shifting onto the toes is a balance fault; the squat should stay over the mid-foot while the knees track."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-032",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A deadlift starting position needs:",
+    "prompt": "You set a novice for a conventional deadlift from the floor. Which start position is the best default?",
     "options": [
       {
         "id": "a",
-        "text": "Hips low like a squat, bar out over the toes"
+        "text": "Hips as low as a squat, bar over the toes, and weight on the forefoot"
       },
       {
         "id": "b",
-        "text": "A rounded back, bar close, weight on the toes"
+        "text": "Neutral spine, bar over mid-foot, shoulders slightly ahead of the bar"
       },
       {
         "id": "c",
-        "text": "Shoulders behind the bar, with heels raised"
+        "text": "Rounded upper back, heels lifted, and the bar hovering in front of the toes"
       },
       {
         "id": "d",
-        "text": "A flat-ish back, bar close, weight mid-foot"
+        "text": "Shoulders behind the bar, chest high, and heels raised off the floor"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Set the back. This item asks: “A deadlift starting position needs:”. The matching answer is: A flat-ish back, bar close, weight mid-foot — not a rounded yank. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "b",
+    "explanation": "A conventional deadlift starts with a braced, relatively neutral spine, the bar over the mid-foot, and the shoulders over or slightly in front of the bar so the lats can keep the bar close. It is a hinge-pull, not a squat with the bar out over the toes, and the feet stay flat.",
     "distractorExplanations": {
-      "a": "A squat-depth hip position pushes the knees forward and the bar off the mid-foot; the bar stays over mid-foot.",
-      "b": "A rounded back loads the spine in flexion, and weight on the toes pulls the bar forward off the mid-foot.",
-      "c": "Shoulders sit over or slightly ahead of the bar, and the feet stay flat with weight through the mid-foot."
+      "a": "Squat-depth hips push the knees forward and the bar off mid-foot, turning the first pull into a squat-yank.",
+      "c": "A rounded start loads the spine in flexion, and raised heels dump weight onto the toes.",
+      "d": "Shoulders behind the bar and raised heels both move the bar path forward of the mid-foot."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-033",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A bench press spotter should:",
+    "prompt": "A client is bench-pressing a hard set of five. How should you spot the barbell bench press?",
     "options": [
       {
         "id": "a",
-        "text": "Help at the sticking point and the unracking"
+        "text": "Lift through every concentric so the bar never slows or stalls"
       },
       {
         "id": "b",
-        "text": "Lift the bar on every rep to keep it moving"
+        "text": "Stand beside the bench and spot the lift by holding the elbows"
       },
       {
         "id": "c",
-        "text": "Stand at the side and spot at the elbows"
+        "text": "Stay at the head of the bench; help unrack and assist only if the bar stalls"
       },
       {
         "id": "d",
-        "text": "Stand back and step in only after a miss"
+        "text": "Stand several steps back and step in only after a failed press attempt"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Spotting is a skill. This item asks: “A bench press spotter should:”. The matching answer is: Help at the sticking point and the unracking, not chest-pass every rep. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "c",
+    "explanation": "A bench spotter stands at the head of the bench with a mixed or alternated grip ready on the bar, helps with a controlled unrack/hand-off, and assists only if the bar stalls or the lifter asks. Lifting every rep removes the training stimulus; an elbow-side spot or a late step-in cannot control a falling bar.",
     "distractorExplanations": {
-      "b": "Assisting every rep takes the work away from the lifter; the spotter helps only when the bar stalls.",
-      "c": "Bench spots are at the head of the bench with hands on the bar; spotting the elbows cannot control the load.",
-      "d": "The spotter stays close with hands near the bar to catch it in time; stepping in after a miss is too late."
+      "a": "Assisting every rep turns the set into a partner lift and hides true sticking points.",
+      "b": "Elbow spotting cannot control a loaded bar over the face; hands belong on the bar at the head of the bench.",
+      "d": "Waiting until after a miss is too late; the spotter stays close enough to take the bar immediately."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-034",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "Valgus collapse on a landing is a cue to:",
+    "prompt": "Box-jump landings show the client’s knees collapsing into valgus. What should you do first?",
     "options": [
       {
         "id": "a",
-        "text": "Raise the box height to build strength"
+        "text": "Raise the box so they have to absorb more landing force next"
       },
       {
         "id": "b",
-        "text": "Coach the knee and hip, or regress"
+        "text": "Add a loaded trap-bar jump so the hips have to work harder"
       },
       {
         "id": "c",
-        "text": "Add load so the hips must work harder"
+        "text": "Cue the knees inward so they can “absorb” the landing better"
       },
       {
         "id": "d",
-        "text": "Cue knees inward to absorb force"
+        "text": "Cue knees over toes and hips back, or regress the box height"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Control before height. This item asks: “Valgus collapse on a landing is a cue to:”. The matching answer is: Coach the knee and hip, or regress — not add height. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "d",
+    "explanation": "Valgus on landing is a control problem, not a reason to add height or load. Cue knee tracking over the feet with hips back, and drop the box or switch to a lower-impact landing drill until the pattern is stable. Loading a collapsing landing raises knee stress.",
     "distractorExplanations": {
-      "a": "More height raises landing forces on a pattern already failing; progression waits until landings are controlled.",
-      "c": "Adding load to a valgus landing increases knee stress; control is restored before any overload.",
-      "d": "Knees caving inward is the valgus fault itself; the cue is knees over toes with hips back."
+      "a": "More height increases landing force on a pattern that is already failing.",
+      "b": "Adding external load on a valgus landing raises joint stress before control is restored.",
+      "c": "Knees caving inward is the valgus fault itself; the cue is knees over the feet, not in."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-035",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A Romanian deadlift differs from a conventional deadlift mainly in:",
+    "prompt": "You want hinge work without a dead-stop from the floor. Why choose a Romanian deadlift over a conventional deadlift?",
     "options": [
       {
         "id": "a",
-        "text": "More knee bend and a squat-pull emphasis"
+        "text": "The RDL is a standing hip hinge with less knee bend and no floor start"
       },
       {
         "id": "b",
-        "text": "Starting each rep from the floor"
+        "text": "The RDL uses more knee bend and a squat-style pull from the plates"
       },
       {
         "id": "c",
-        "text": "Less knee bend and a hip-hinge emphasis"
+        "text": "The RDL starts each rep from a dead stop on the floor like a conventional pull"
       },
       {
         "id": "d",
-        "text": "A wider grip and a vertical torso"
+        "text": "The RDL needs a snatch-width grip and a fully vertical torso"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Hinge vs squat-pull. This item asks: “A Romanian deadlift differs from a conventional deadlift mainly in:”. The matching answer is: Less knee bend and a hip-hinge emphasis. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "a",
+    "explanation": "The RDL starts from standing and lowers the bar with a hip hinge and soft knees, typically to mid-shin, then returns by hip extension. Conventional deadlifts start from the floor with more knee bend. Grip width is similar to a conventional pull, and the torso leans as the hips travel back.",
     "distractorExplanations": {
-      "a": "That reverses the two lifts; the conventional deadlift uses more knee bend, the RDL is a hip hinge.",
-      "b": "The RDL starts standing and lowers to about mid-shin; starting from the floor describes the conventional lift.",
-      "d": "Grip width is similar, and the RDL torso leans forward as the hips hinge back; it is not vertical."
+      "b": "More knee bend and a floor pull describe the conventional deadlift, not the RDL.",
+      "c": "Starting from the floor each rep is the conventional deadlift; the RDL never parks the bar.",
+      "d": "A snatch grip and upright torso are Olympic-lift setup ideas, not RDL mechanics."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-036",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A plank is failed when:",
+    "prompt": "A client is holding a front plank. When should you end the set as a technique fail?",
     "options": [
       {
         "id": "a",
-        "text": "Breathing becomes noticeable or heavy"
+        "text": "When breathing under the brace becomes audible or heavy"
       },
       {
         "id": "b",
-        "text": "The preset 60-second target on the clock is reached"
+        "text": "When the hips pike or sag past the body line you cued"
       },
       {
         "id": "c",
-        "text": "The client begins to shake slightly"
+        "text": "When the stopwatch hits the 60-second target you wrote"
       },
       {
         "id": "d",
-        "text": "The hips pike or sag past the cue you set"
+        "text": "When the legs and trunk begin to tremble slightly"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Own the position. This item asks: “A plank is failed when:”. The matching answer is: The hips pike or sag past the cue you set. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "b",
+    "explanation": "A plank is a position, not a clock. The set ends when the client can no longer hold a roughly straight line from head to heels—hips sagging into lumbar extension or piking up. Mild shake and heavier breathing are fatigue, not automatic failure; time is only a target if the position is still honest.",
     "distractorExplanations": {
-      "a": "Steady breathing while bracing is expected; heavier breathing alone does not mean the position was lost.",
-      "b": "Time is a target, not the failure point; a plank ends when the neutral body line can no longer be held.",
-      "c": "Mild trembling is normal muscular fatigue; failure is the hips sagging or piking out of position."
+      "a": "Steady or heavier breathing while the brace holds is expected; position loss is the fail.",
+      "c": "Hitting a time goal with a broken line still counts as a failed plank; stop when the line goes.",
+      "d": "Mild trembling is common fatigue; failure is the hips leaving the cued line."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-037",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "An overhead press needs:",
+    "prompt": "A client overhead-presses by flinging the ribs into a large lumbar arch to finish each rep. What should you cue?",
     "options": [
       {
         "id": "a",
-        "text": "A ribcage that is not flung into a giant arch"
+        "text": "A deeper lumbar arch so the bar can clear the face more easily"
       },
       {
         "id": "b",
-        "text": "A deep lumbar arch to clear the face"
+        "text": "Behind-the-neck pressing so beginners can shorten the bar path more"
       },
       {
         "id": "c",
-        "text": "A behind-the-neck path for beginners"
+        "text": "Ribs down and a stacked torso so the bar finishes over the mid-foot"
       },
       {
         "id": "d",
-        "text": "Shoulder blades held down and still throughout"
+        "text": "Scapulae locked down with no upward rotation through the whole press"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Earn the overhead. This item asks: “An overhead press needs:”. The matching answer is: A ribcage that is not flung into a giant arch as the only way up. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "c",
+    "explanation": "Overhead pressing needs a braced, stacked ribcage over the pelvis so the bar finishes over the mid-foot without a giant lumbar dump. The head can pull back slightly to clear the bar; the low back should not become the path. Scapulae must upwardly rotate, and behind-the-neck pressing is a poor default for limited shoulders.",
     "distractorExplanations": {
-      "b": "The head moves back to clear the bar; a deep lumbar arch shifts load onto the low back.",
-      "c": "Behind-the-neck pressing needs extreme shoulder mobility and stresses the joint; beginners press in front.",
-      "d": "Overhead pressing needs scapular upward rotation; locking the blades down limits range and can impinge the shoulder."
+      "a": "A bigger arch shifts load onto the lumbar spine instead of finishing the press with the shoulders.",
+      "b": "Behind-the-neck pressing demands extreme external rotation and is not a beginner default.",
+      "d": "Locking the blades down blocks scapular upward rotation and can impinge the shoulder."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-038",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "Tempo 3-1-1-0 means:",
+    "prompt": "On a bent-over barbell row, the client’s torso pops up and the bar swings into the hips. What is the primary fault?",
     "options": [
       {
         "id": "a",
-        "text": "About 3 s concentric, 1 s pause, 1 s eccentric"
+        "text": "The grip is too narrow to let the elbows travel back"
       },
       {
         "id": "b",
-        "text": "About 3 s eccentric, 1 s pause, 1 s concentric"
+        "text": "The elbows are tracking too close to the ribcage"
       },
       {
         "id": "c",
-        "text": "About 3 s eccentric, 1 s concentric, 1 s top hold"
+        "text": "The load is too light for the lats to feel the row"
       },
       {
         "id": "d",
-        "text": "3 sets, 1 minute rest, 1 rep in reserve"
+        "text": "They are using hip drive and losing the hinged torso"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Read tempo codes. This item asks: “Tempo 3-1-1-0 means:”. The matching answer is: About 3 s eccentric, 1 s pause, 1 s concentric. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "d",
+    "explanation": "A bent-over row keeps a stable hip hinge while the arms pull the bar to the torso. If the torso rises and the bar swings, the client is turning the row into a hip-hinge cheat. Cue a quieter torso, a closer bar path, and usually a lighter load—not a narrower grip or more weight.",
     "distractorExplanations": {
-      "a": "The first digit is the eccentric (lowering) phase, not the concentric; this reverses the tempo code.",
-      "c": "The second digit is the pause at the bottom and the third is the concentric; the top hold is the final 0.",
-      "d": "A tempo code describes timing of one rep's phases; sets, rest, and RIR are separate program variables."
+      "a": "Grip width is a secondary setup choice; the visible fault is the lost hinge, not a narrow grip.",
+      "b": "Elbows near the ribs can be a valid row path; it does not explain a rising torso and swinging bar.",
+      "c": "Too much load, not too little, usually causes the torso to pop and the bar to swing."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-039",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A kettlebell swing is primarily a:",
+    "prompt": "A client’s kettlebell swing looks like a squat plus a front raise. Which pattern should you restore?",
     "options": [
       {
         "id": "a",
-        "text": "Squat-dominant power pattern"
+        "text": "A hip-hinge power snap with the arms only guiding the bell"
       },
       {
         "id": "b",
-        "text": "Shoulder-driven raise pattern"
+        "text": "A squat-dominant jump that parks the bell at eye level"
       },
       {
         "id": "c",
-        "text": "Hip hinge power pattern"
+        "text": "A shoulder-driven raise that lifts the bell with the delts"
       },
       {
         "id": "d",
-        "text": "Spinal flexion core exercise"
+        "text": "A spinal-flexion crunch that loads the low back on purpose"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Hinge fast. This item asks: “A kettlebell swing is primarily a:”. The matching answer is: Hip hinge power pattern, not a squat-and-shrug. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It is not a squat-and-shrug.",
+    "correctOptionId": "a",
+    "explanation": "The swing is a fast hip hinge: the hips load back, then snap to extension while the arms stay long as a tether. Squatting the bell and lifting it with the shoulders turns it into a front raise. The spine stays braced and neutral; it is not a flexion-based core drill.",
     "distractorExplanations": {
-      "a": "A swing comes from a fast hip hinge with minimal knee bend; squatting the bell up turns it into a front raise.",
-      "b": "The arms only guide the bell; power comes from hip extension, not a shoulder raise.",
-      "d": "The spine stays neutral throughout; the trunk resists flexion while the hips do the work."
+      "b": "A squat-dominant swing dumps the knees forward and usually floats the bell with the arms.",
+      "c": "The delts do not lift the bell; they only keep the arms long while the hips supply power.",
+      "d": "Spinal flexion under a swinging load is a fault, not a core strategy."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-040",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "If the bar drifts forward on a squat:",
+    "prompt": "Mid-set, a client’s squat bar drifts forward of the mid-foot. What does that usually mean?",
     "options": [
       {
         "id": "a",
-        "text": "The client needs more forward lean"
+        "text": "They need more forward torso lean so they can sit back"
       },
       {
         "id": "b",
-        "text": "The bar is placed too low on the back"
+        "text": "They are losing mid-foot balance toward the toes"
       },
       {
         "id": "c",
-        "text": "The client is sitting back too far"
+        "text": "The bar is simply placed too low on the upper back"
       },
       {
         "id": "d",
-        "text": "The client is losing mid-foot balance"
+        "text": "They are sitting too far onto the heels and pulling the bar back"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Bar path is data. This item asks: “If the bar drifts forward on a squat:”. The matching answer is: The client is losing mid-foot balance — cue and unload if ugly. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Cue the client and reduce the load if form breaks down.",
+    "correctOptionId": "b",
+    "explanation": "The bar should stay over the mid-foot. Forward drift usually means the center of mass has shifted onto the toes—chest falling, heels light, or knees shooting forward without control. Cue mid-foot pressure and a quieter bar path, and drop load if the pattern stays ugly. Extra lean or blaming low-bar placement misses the balance fault.",
     "distractorExplanations": {
-      "a": "More lean moves the bar further forward; the bar should stay over the mid-foot throughout the squat.",
-      "b": "Low-bar placement increases torso lean but keeps the bar over the mid-foot; forward drift is a balance fault.",
-      "c": "Sitting back too far shifts weight to the heels and pulls the bar back; forward drift means weight moved to the toes."
+      "a": "More forward lean moves the bar farther in front of the mid-foot, worsening the drift.",
+      "c": "Low-bar placement can increase torso lean but still keeps the bar over mid-foot if balance is good.",
+      "d": "Sitting onto the heels pulls the bar backward; forward drift is the opposite weight shift."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-041",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A split squat that wobbles hard means:",
+    "prompt": "A rear-foot-elevated split squat wobbles so much that the front knee hunts side to side. What should you do?",
     "options": [
       {
         "id": "a",
-        "text": "Shorten stance or hold support"
+        "text": "Hand them dumbbells so extra load is said to “increase stability”"
       },
       {
         "id": "b",
-        "text": "Add dumbbells to increase stability"
+        "text": "Lengthen the stance and slow the eccentric to demand more control"
       },
       {
         "id": "c",
-        "text": "Lengthen the stance and slow the tempo"
+        "text": "Shorten the stance or let them hold a support, then add load later"
       },
       {
         "id": "d",
-        "text": "Switch to a single-leg box jump"
+        "text": "Progress to a single-leg box jump to train that same balance demand"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Stability before load. This item asks: “A split squat that wobbles hard means:”. The matching answer is: Shorten stance or hold support — do not load it. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Do not add load until it is stable.",
+    "correctOptionId": "c",
+    "explanation": "A split squat that cannot be balanced is too hard. Shorten the stance, lower the rear-foot elevation, or let the client hold a rack or dowel until the front knee tracks. Load and plyometrics wait until the pattern is quiet. Extra mass and a longer stance both raise the balance demand.",
     "distractorExplanations": {
-      "b": "Extra load magnifies a balance problem; stability is earned with support or a regression before loading.",
-      "c": "A longer stance raises the balance and mobility demand; the regression is a shorter or supported stance.",
-      "d": "A box jump is a harder, plyometric single-leg task; an unstable split squat needs a regression, not progression."
+      "a": "Dumbbells magnify an unstable base; load is added after the stance is controlled.",
+      "b": "A longer stance increases mobility and balance demand, the opposite of a regression.",
+      "d": "A box jump is a harder plyometric task, not a fix for an unstable split squat."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-042",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "Breathing on a heavy squat is often:",
+    "prompt": "For a heavy working-set squat, which breathing strategy is the usual coaching default?",
     "options": [
       {
         "id": "a",
-        "text": "Exhaling during the descent"
+        "text": "Exhale throughout the descent so the trunk stays relaxed under load"
       },
       {
         "id": "b",
-        "text": "A brace (Valsalva as appropriate)"
+        "text": "Inhale during the ascent right at the sticking point of the squat"
       },
       {
         "id": "c",
-        "text": "Inhaling on the way up"
+        "text": "Take rapid shallow breaths on every inch of the repetition"
       },
       {
         "id": "d",
-        "text": "Rapid shallow breaths each rep"
+        "text": "Brace the trunk (Valsalva as appropriate) before the descent"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Brace the trunk. This item asks: “Breathing on a heavy squat is often:”. The matching answer is: A brace (Valsalva as appropriate) — not a casual exhale at the bottom for a max. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Avoid a casual exhale at the bottom of a max.",
+    "correctOptionId": "d",
+    "explanation": "Heavy squats need a stiff trunk. The usual cue is a breath in, a brace (Valsalva when appropriate for a healthy client), then descent and drive before a controlled exhale at or after lockout. Exhaling on the way down or panting through the rep dumps intra-abdominal pressure when the spine needs it most.",
     "distractorExplanations": {
-      "a": "Exhaling on the way down loses trunk pressure under the heaviest part of the rep; lifters brace through the descent.",
-      "c": "Breathing in during the ascent breaks the brace at the sticking point; the breath is taken and held before descent.",
-      "d": "Shallow fast breathing gives no trunk stiffness; a full breath is held as a brace for heavy reps."
+      "a": "Exhaling on the descent loses trunk stiffness under the heaviest part of the squat.",
+      "b": "Inhaling at the sticking point breaks the brace exactly when the bar is hardest to move.",
+      "c": "Shallow panting never creates a usable brace; it is a fatigue pattern, not a cue."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-043",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "A lat pulldown to the chest with control beats:",
+    "prompt": "A deconditioned novice cannot keep a goblet squat over mid-foot without the knees caving. When is a machine squat or leg press the better next step?",
     "options": [
       {
         "id": "a",
-        "text": "A strict pull-up with full scapular control"
+        "text": "Never; free-weight squats must start on session one no matter the collapse"
       },
       {
         "id": "b",
-        "text": "An assisted pull-up at a controlled tempo"
+        "text": "When you need a safer load while you rebuild the squat pattern"
       },
       {
         "id": "c",
-        "text": "Behind-the-neck yanks on a tight shoulder"
+        "text": "When you want to skip teaching any squat or hinge pattern at all"
       },
       {
         "id": "d",
-        "text": "A front pulldown with a neutral-grip handle"
+        "text": "Only for competitive lifters who already squat well without a guide"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Path of the humerus. This item asks: “A lat pulldown to the chest with control beats:”. The matching answer is: Behind-the-neck yanks on a tight shoulder. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "b",
+    "explanation": "Machines are a tool, not a cop-out. If free-weight balance or valgus is the limiter, a guided squat or leg press can load the legs while you coach the pattern with lighter goblet or box squats. They do not replace movement teaching, and they are often most useful for novices—not only for skilled competitive lifters.",
     "distractorExplanations": {
-      "a": "A strict pull-up is an equal or harder vertical pull; controlled front pulldowns do not beat it for the same goal.",
-      "b": "An assisted pull-up is an equally sound vertical-pull option; the pulldown beats risky behind-the-neck pulling only.",
-      "d": "A neutral-grip front pulldown is a sound variation of the same safe pattern; it is not inferior to a wide grip."
+      "a": "Forcing free weights on day one with a collapsing squat is a technique and safety error.",
+      "c": "Machines can load the legs, but the CPT still teaches a squat or hinge the client can own.",
+      "d": "Guided loading is often more useful for unstable novices than for already-skilled lifters."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-044",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "RPE 8 on a lift means:",
+    "prompt": "A client wants a heavy lat pulldown and has limited shoulder external rotation. Which version should you choose?",
     "options": [
       {
         "id": "a",
-        "text": "No reps left; a true failure set"
+        "text": "Behind-the-neck pulldowns despite the tight shoulders and limited rotation"
       },
       {
         "id": "b",
-        "text": "An 8/10 on a medical pain scale"
+        "text": "A max-load pulldown with a bounce off the upper chest each rep"
       },
       {
         "id": "c",
-        "text": "Several reps left; a light set"
+        "text": "A controlled pulldown to the upper chest with the bar in front"
       },
       {
         "id": "d",
-        "text": "About 2 reps in reserve"
+        "text": "A kipping pull-up so extra momentum replaces scapular control"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Teach RPE. This item asks: “RPE 8 on a lift means:”. The matching answer is: About 2 reps in reserve, not a lifestyle feeling. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It is not a general mood or lifestyle rating.",
+    "correctOptionId": "c",
+    "explanation": "A front pulldown to the upper chest keeps the humerus in a friendlier path and lets you control scapular depression and elbow drive. Behind-the-neck pulldowns demand more external rotation than this client has. Momentum and chest-bounce loading hide the very control the CPT is trying to teach.",
     "distractorExplanations": {
-      "a": "Failure with no reps left is RPE 10 on the reps-in-reserve scale; RPE 8 means about 2 more reps were possible.",
-      "b": "RPE rates effort, not pain; pain scales are clinical tools and pain is a reason to stop, not an intensity target.",
-      "c": "Several reps in reserve corresponds to RPE 6 or lower; RPE 8 is a hard set with about 2 reps left."
+      "a": "Behind-the-neck pulling plus limited external rotation is a classic shoulder-stress setup.",
+      "b": "Bouncing the bar off the chest trades control for load and is not a technique upgrade.",
+      "d": "Kipping uses extra body swing; it does not teach a controlled vertical pull for this client."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-technique-045",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "technique",
-    "prompt": "Chalk, belts, and straps are:",
+    "prompt": "A client’s lumbar spine rounds as a conventional deadlift leaves the floor. What should you do on the next attempt?",
     "options": [
       {
         "id": "a",
-        "text": "Tools — they do not replace a pattern that is not there"
+        "text": "Cue more speed so they yank past the sticky start position"
       },
       {
         "id": "b",
-        "text": "Cheating aids that weaken the trunk and grip"
+        "text": "Drop the hips into a squat so the knees start well in front of the bar"
       },
       {
         "id": "c",
-        "text": "Required for every warm-up set to build habits"
+        "text": "Add a hitch at the knees to grind the lockout after the round"
       },
       {
         "id": "d",
-        "text": "Ways to fix a pattern the client cannot yet hold under load"
+        "text": "Lower the load and reset a braced spine with the bar over mid-foot"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Use equipment honestly. This item asks: “Chalk, belts, and straps are:”. The matching answer is: Tools — they do not replace a pattern that is not there. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "correctOptionId": "d",
+    "explanation": "Lumbar flexion under load is a stop-and-reset fault, not a cue to pull faster. Drop the weight, rebuild a braced neutral start, and keep the bar over the mid-foot. Speed, extra knee bend, or hitching a rounded spine all train the same problem at a higher risk.",
     "distractorExplanations": {
-      "b": "Belts and straps are legitimate tools for heavy sets; problems come only from relying on them for every rep.",
-      "c": "Warm-ups are where grip and bracing get trained without aids; equipment is saved for heavy working sets.",
-      "d": "Equipment supports a pattern that is already sound; a belt or straps cannot fix a movement the client cannot do."
+      "a": "Yanking faster with a rounded lumbar spine increases spinal loading, it does not fix the start.",
+      "b": "Squatting the hips lower pushes the knees forward and the bar off mid-foot; that is not a back-set fix.",
+      "c": "A hitch after rounding rewards a broken pattern instead of resetting the brace."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-046",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "A client who is dizzy mid-set should:",
+    "prompt": "A newly diagnosed client with type 2 diabetes asks you to write a 1,200-calorie meal plan that 'treats the diabetes like a dietitian would.' What is the correct CPT action?",
     "options": [
       {
         "id": "a",
-        "text": "Finish the set, then sit down"
+        "text": "Decline the meal plan and refer them to an RD or their physician"
       },
       {
         "id": "b",
-        "text": "Stop, sit, and be evaluated"
+        "text": "Write the plan if they sign a waiver calling it educational only"
       },
       {
         "id": "c",
-        "text": "Stand and walk it off slowly"
+        "text": "Copy a public food-guide handout and add their insulin timing"
       },
       {
         "id": "d",
-        "text": "Drink water and resume the set"
+        "text": "Start intermittent fasting because it is a common wellness trend"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Dizziness ends the set. This item asks: “A client who is dizzy mid-set should:”. The matching answer is: Stop, sit, and be evaluated — not 'one more rep'. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Never push for one more rep.",
+    "correctOptionId": "a",
+    "explanation": "Medical nutrition therapy for a diagnosed disease is outside NSCA-CPT scope. A trainer may share public, general healthy-eating ideas, but a calorie prescription meant to treat diabetes belongs with a registered dietitian or the client's physician. Refer rather than invent a clinical diet.",
     "distractorExplanations": {
-      "a": "Continuing while dizzy risks fainting under load; the set ends immediately and the client sits or lies down.",
-      "c": "Standing and walking while dizzy risks a fall; the client sits or lies down and symptoms are assessed.",
-      "d": "Dizziness may be cardiac, blood-pressure, or glucose related; water and resuming skip the evaluation."
+      "b": "A waiver does not expand scope; writing a disease-treatment meal plan is still unauthorized practice of dietetics.",
+      "c": "Adding insulin timing turns general nutrition talk into medical advice the CPT is not licensed to give.",
+      "d": "Picking a fasting protocol to treat diabetes is still disease-specific nutrition therapy, not general wellness chat."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-047",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Rhabdomyolysis risk rises with:",
+    "prompt": "Which first session most raises exertional rhabdomyolysis risk in a new client?",
     "options": [
       {
         "id": "a",
-        "text": "Familiar moderate volume in a trained client"
+        "text": "Familiar 3×8 goblet squats in a cool gym with a trained lifter"
       },
       {
         "id": "b",
-        "text": "Long low-intensity walks in cool weather"
+        "text": "Forty-minute easy walking on a treadmill in an air-conditioned room"
       },
       {
         "id": "c",
-        "text": "Novel extreme volume in a heat-dehydrated client"
+        "text": "Novel all-out 200-rep leg work in a hot, poorly hydrated beginner"
       },
       {
         "id": "d",
-        "text": "Heavy low-rep sets with long rest in a trained lifter"
+        "text": "Heavy triples with 3-minute rests in an experienced strength athlete"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Do not 'crush' beginners. This item asks: “Rhabdomyolysis risk rises with:”. The matching answer is: Novel extreme volume in a heat-dehydrated client. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Exertional rhabdomyolysis clusters after unaccustomed, high-volume (often eccentric) work, especially in heat and dehydration. Crushing a beginner with novel extreme volume is the classic trigger. Familiar moderate work, easy aerobic sessions, and heavy low-rep sets with full rest in trained people carry far lower risk.",
     "distractorExplanations": {
-      "a": "Trained clients doing familiar volume are low risk; rhabdo follows novel, excessive work, especially eccentrics.",
-      "b": "Low-intensity work in cool conditions causes little muscle damage; heat and dehydration are risk multipliers.",
-      "d": "Heavy low-rep work with full rest is low total volume; rhabdo risk comes from extreme unaccustomed volume."
+      "a": "Trained clients doing familiar moderate volume produce little novel muscle damage, so rhabdo risk stays low.",
+      "b": "Low-intensity walking in a cool room does not create the muscle breakdown load linked to rhabdo.",
+      "d": "Heavy low-rep work with long rest is high intensity but low total volume; rhabdo tracks extreme unaccustomed volume."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-048",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "A pregnant client needs:",
+    "prompt": "A 16-week pregnant client wants to keep lifting with you and asks to start today. What is the best first step?",
     "options": [
       {
         "id": "a",
-        "text": "Supine lifting after the first trimester"
+        "text": "Keep long supine bench presses as the main lift after the first trimester"
       },
       {
         "id": "b",
-        "text": "A stop to all exercise until delivery"
+        "text": "Stop all planned exercise until delivery so there is no training risk"
       },
       {
         "id": "c",
-        "text": "Heart rate held below 140 bpm in every session"
+        "text": "Hold her heart rate under 140 bpm in every session no matter her fitness"
       },
       {
         "id": "d",
-        "text": "Physician clearance and exercise guidelines"
+        "text": "Get physician clearance and follow current prenatal exercise guidance"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Special population. This item asks: “A pregnant client needs:”. The matching answer is: Physician clearance and exercise guidelines — not a max-out challenge. Independent UniPrep diagnostic — not an official NSCA-CPT paper. It is not a time for max-out challenges.",
+    "explanation": "Pregnancy is a special-population consult: obtain physician clearance and follow current prenatal guidelines (ACOG-style), including avoiding prolonged supine work after the first trimester and using RPE or talk-test intensity. Healthy clients are often encouraged to stay active once cleared—not parked until delivery or capped at an outdated 140 bpm rule.",
     "distractorExplanations": {
-      "a": "ACOG advises avoiding prolonged supine positions after the first trimester because of vena cava compression.",
-      "b": "Healthy pregnant clients are encouraged to stay active with clearance; stopping all exercise is not the guideline.",
-      "c": "The fixed 140 bpm cap is outdated guidance; current advice uses RPE or the talk test for intensity."
+      "a": "Prolonged supine loading after the first trimester can compress the vena cava; it is not a default main lift.",
+      "b": "Uncomplicated pregnancy is not an automatic stop-all-exercise order; clearance plus modified training is the path.",
+      "c": "A fixed 140 bpm ceiling is outdated; current guidance uses effort and symptoms, not one heart-rate number."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-049",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "You do not:",
+    "prompt": "A client hands you a lipid panel and asks you to raise their statin dose because LDL is still high. What do you do?",
     "options": [
       {
         "id": "a",
-        "text": "Give a meal plan that treats Type 2 diabetes"
+        "text": "Stay in scope: do not change meds; send them back to their clinician"
       },
       {
         "id": "b",
-        "text": "Share general healthy-eating guidelines"
+        "text": "Add one extra statin tablet if they already have the prescription bottle"
       },
       {
         "id": "c",
-        "text": "Modify exercise for a diabetic client"
+        "text": "Write a zero-fat meal plan so they can stop the statin on their own"
       },
       {
         "id": "d",
-        "text": "Refer the client to a registered dietitian"
+        "text": "Say the lab must be wrong because they have trained three days a week"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Scope: training, not medicine. This item asks: “You do not:”. The matching answer is: Give a meal plan that treats Type 2 diabetes as a CPT acting as an RD/MD. Independent UniPrep diagnostic — not an official NSCA-CPT paper. That is the role of an RD or physician, not a CPT.",
+    "explanation": "Medication changes and lab interpretation for treatment are medical acts. The CPT documents the concern, continues safe training within clearance, and refers the client to the prescribing clinician. Do not titrate drugs, cancel prescriptions with a diet, or dismiss labs because the client trains.",
     "distractorExplanations": {
-      "b": "Sharing public, general nutrition guidance is within CPT scope; only medical nutrition therapy is excluded.",
-      "c": "Adapting exercise for a client with diabetes is core CPT work once the client is cleared.",
-      "d": "Referring to an RD is the correct scope-of-practice action, so it is something a CPT should do."
+      "b": "Adjusting a prescribed dose is practicing medicine; having leftover tablets does not authorize it.",
+      "c": "A therapeutic meal plan to replace a statin is medical nutrition therapy and still outside CPT scope.",
+      "d": "Training status does not invalidate a lipid panel; dismissing labs delays needed medical follow-up."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-050",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Dropping a deadlift on a busy platform is a risk when:",
+    "prompt": "A client wants to dump a loaded deadlift on a crowded platform. When is that a serious facility hazard?",
     "options": [
       {
         "id": "a",
-        "text": "The plates are bumper and the area is clear as the gym allows"
+        "text": "Bumper plates are loaded and the drop zone looks reasonably empty from your view"
       },
       {
         "id": "b",
-        "text": "People are in the path — control the dump"
+        "text": "People are walking through the bar path, so the dump cannot be controlled"
       },
       {
         "id": "c",
-        "text": "You whisper"
+        "text": "The client prefers to drop rather than lower because their grip is tired"
       },
       {
         "id": "d",
-        "text": "You film"
+        "text": "You are filming the set for their social media and need a dramatic finish"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Space management. This item asks: “Dropping a deadlift on a busy platform is a risk when:”. The matching answer is: People are in the path — control the dump. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Platform safety is space management: a dropped bar is a projectile. If people occupy the landing path, the client must lower under control or wait. Bumper plates and a 'looks clear' glance do not authorize an uncontrolled dump when traffic is in the path.",
     "distractorExplanations": {
-      "a": "“The plates are bumper and the area is clear as the gym allows” does not answer “Dropping a deadlift on a busy platform is a risk when:”. The matching answer is: People are in the path — control the dump.",
-      "c": "“You whisper” does not answer “Dropping a deadlift on a busy platform is a risk when:”. The matching answer is: People are in the path — control the dump.",
-      "d": "“You film” does not answer “Dropping a deadlift on a busy platform is a risk when:”. The matching answer is: People are in the path — control the dump."
+      "a": "Bumpers reduce floor damage but do not make a drop safe if someone can still enter the landing zone.",
+      "c": "Grip fatigue is a programming issue; it does not justify launching a loaded bar into other members.",
+      "d": "Content for a camera is not a safety exception; filming never outranks controlling the bar path."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-051",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "A torn callus mid-deadlift block:",
+    "prompt": "During an outdoor session at 95°F (35°C), a client becomes confused, hot, and stops sweating. What is the best action?",
     "options": [
       {
         "id": "a",
-        "text": "Calls for straps and a heavy single"
+        "text": "Have them jog a short cooldown lap so circulation can dump extra heat"
       },
       {
         "id": "b",
-        "text": "Needs urgent care for stitches"
+        "text": "Give salt tablets and keep working at a slower pace in the full sun"
       },
       {
         "id": "c",
-        "text": "May need a downshift and skin care"
+        "text": "Stop, begin rapid cooling, and activate EMS for suspected heat stroke"
       },
       {
         "id": "d",
-        "text": "Is trained through with tape"
+        "text": "Move into shade, sip cool water, and finish the remaining work sets"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Skin is a limiter. This item asks: “A torn callus mid-deadlift block:”. The matching answer is: May need a downshift and skin care — not more mixed-grip ego. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Avoid ego-driven mixed-grip work through torn skin.",
+    "explanation": "Altered mental status plus hot dry skin in extreme heat is a heat-stroke picture, a medical emergency. Stop exercise, cool aggressively (shade, cold water/ice if available), and activate EMS. Do not keep them moving or treat it as ordinary thirst.",
     "distractorExplanations": {
-      "a": "Straps may protect the hand, but a heavy single on torn skin ignores the need to reduce load while it heals.",
-      "b": "A torn callus is a minor skin wound handled with first aid and hygiene; it rarely needs stitches or urgent care.",
-      "d": "Taping over an open tear and continuing risks deeper tearing and infection; reduce grip work and let it heal."
+      "a": "Continued jogging adds metabolic heat when the client already cannot thermoregulate; it delays cooling and EMS.",
+      "b": "Pushing work in the sun and chasing salt misses the emergency; heat stroke is not treated by finishing the session.",
+      "d": "Shade and sips fit milder heat exhaustion with a clear, sweating athlete—not confusion and a dry, hot client."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-052",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Caffeine pre-workout in a client with uncontrolled BP:",
+    "prompt": "A client with untreated high blood pressure asks to take a high-dose caffeine pre-workout before every session. What is the best CPT response?",
     "options": [
       {
         "id": "a",
-        "text": "Is fine below 400 mg a day for anyone, so no change is needed"
+        "text": "Allow up to 400 mg daily because that limit is safe for every adult"
       },
       {
         "id": "b",
-        "text": "Is safer than coffee because it is dosed and labeled for exercise"
+        "text": "Prefer a branded pre-workout over coffee because the label lists the dose"
       },
       {
         "id": "c",
-        "text": "Is fine if they skip their BP medicine that day to avoid stacking"
+        "text": "Have them skip the blood-pressure medicine that day so stimulants do not stack"
       },
       {
         "id": "d",
-        "text": "Is a reason to be conservative and refer questions to their clinician"
+        "text": "Keep stimulants conservative and send dosing questions to their clinician"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Stimulants are not free. This item asks: “Caffeine pre-workout in a client with uncontrolled BP:”. The matching answer is: Is a reason to be conservative and refer questions to their clinician. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Uncontrolled hypertension plus high-dose stimulants is a consult issue. The CPT stays conservative on pre-workout caffeine and refers dosing, stacking, and medication questions to the client's clinician. Population caffeine limits for healthy adults do not clear a high-risk client.",
     "distractorExplanations": {
-      "a": "The 400 mg figure applies to healthy adults; uncontrolled hypertension is a reason for caution at lower doses.",
-      "b": "Pre-workouts often stack caffeine with other stimulants; labeling does not make them safer for high BP.",
-      "c": "Advising a client to skip prescribed medication is outside CPT scope and raises blood pressure further."
+      "a": "The ~400 mg healthy-adult figure does not apply as a free pass in untreated hypertension.",
+      "b": "Labeled pre-workouts often stack caffeine with other stimulants; a label does not make them safer for high BP.",
+      "c": "Telling a client to skip prescribed BP medication is outside scope and can raise pressure further."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-053",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Emergency action plan includes:",
+    "prompt": "You are writing the floor emergency action plan for after-school sessions that include 16-year-old clients. Which elements belong in that EAP?",
     "options": [
       {
         "id": "a",
-        "text": "Who calls EMS, where the AED is, and how you reach parents for a minor"
+        "text": "Who calls EMS, where the AED is posted, and how you reach a minor's parent"
       },
       {
         "id": "b",
-        "text": "Who calls EMS and a rule that you drive the client to hospital yourself"
+        "text": "Who calls EMS plus a standing rule that you personally drive to the hospital"
       },
       {
         "id": "c",
-        "text": "Where the AED is, reviewed once at hire and not rehearsed"
+        "text": "AED location reviewed at hire once, with no further drills or posted copies"
       },
       {
         "id": "d",
-        "text": "A first-aid kit list and a plan to call the gym owner first"
+        "text": "A first-aid kit inventory and a requirement to phone the owner before EMS"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Write the EAP. This item asks: “Emergency action plan includes:”. The matching answer is: Who calls EMS, where the AED is, and how you reach parents for a minor. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "A usable EAP assigns who activates EMS, where the AED and exits are, and how to notify a parent or guardian for a minor. It is written, posted, and rehearsed. Staff transport and calling an owner before EMS delay care and create liability.",
     "distractorExplanations": {
-      "b": "Transporting an ill client yourself delays care and adds liability; the EAP routes emergencies to EMS.",
-      "c": "An EAP must be written, posted, and rehearsed regularly; a one-time review leaves staff unprepared.",
-      "d": "Calling the owner before EMS delays care; the EAP makes calling EMS an immediate, assigned role."
+      "b": "Driving an ill client yourself delays ALS care and exposes you to transport liability; EMS is the assigned route.",
+      "c": "A one-time hire briefing is not an EAP; staff must be able to find the AED under stress and rehearse the plan.",
+      "d": "Owner-first phone trees waste minutes; EMS activation is an immediate assigned role, not a permission request."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-054",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "A child in the gym during an adult session is:",
+    "prompt": "A new adult client wants to pull heavy deadlifts today. You have a PAR-Q+ and waiver, but you have not reviewed risks, benefits, or the right to stop. What is still missing?",
     "options": [
       {
         "id": "a",
-        "text": "Acceptable if the parent client signs a waiver for the child"
+        "text": "Nothing more is needed; PAR-Q+ and the liability waiver already replace consent"
       },
       {
         "id": "b",
-        "text": "A supervision and liability problem if they wander the floor"
+        "text": "Documented informed consent on risks, benefits, and the right to stop"
       },
       {
         "id": "c",
-        "text": "Fine if they stay near the racks where you can see them"
+        "text": "Only a photo-release so you can post clips from this first heavy session"
       },
       {
         "id": "d",
-        "text": "A front-desk issue only, outside your duty as the trainer"
+        "text": "A written 12-week guarantee that they will add 40 pounds to the deadlift"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Kids off the platform. This item asks: “A child in the gym during an adult session is:”. The matching answer is: A supervision and liability problem if they wander the floor. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Screening and a liability waiver are not the same as informed consent. Before high-risk loading, the client should understand reasonably foreseeable risks, expected benefits, alternatives, and that they may refuse or stop. Document that discussion.",
     "distractorExplanations": {
-      "a": "A waiver does not remove the duty to supervise; unsupervised children on the floor remain a hazard and liability.",
-      "c": "Racks and loaded bars are the highest-risk area; seeing a child there does not make it safe or supervised.",
-      "d": "Trainers share responsibility for a safe training environment; hazards on the floor are part of their duty."
+      "a": "PAR-Q+ flags medical risk and a waiver shifts some civil risk; neither explains the session so the client can consent.",
+      "c": "A photo-release is a marketing document; it does not disclose training risks or obtain consent to lift.",
+      "d": "Outcome guarantees are unethical and still leave the consent conversation about risk unsaid."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-055",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Concussion suspicion after a dropped bar near the head:",
+    "prompt": "A bar glances off a client's head during a missed jerk. They feel foggy and nauseated but never lost consciousness. What is the best action?",
     "options": [
       {
         "id": "a",
-        "text": "Rest 15 minutes, then resume"
+        "text": "Sit 15 minutes on a bench, then finish the remaining accessory work"
       },
       {
         "id": "b",
-        "text": "Continue if there was no loss of consciousness"
+        "text": "Continue lifting because they never lost consciousness after the contact"
       },
       {
         "id": "c",
-        "text": "Stop, medical evaluation"
+        "text": "Stop the session and arrange prompt medical evaluation for concussion"
       },
       {
         "id": "d",
-        "text": "Ice the head and finish light work"
+        "text": "Ice the scalp and switch to light machine work to complete the hour"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Brain first. This item asks: “Concussion suspicion after a dropped bar near the head:”. The matching answer is: Stop, medical evaluation — not 'shake it off' and squat. Independent UniPrep diagnostic — not an official NSCA-CPT paper. Do not let the client shake it off and keep squatting.",
+    "explanation": "Suspected head injury ends the session. Most concussions occur without loss of consciousness, and symptoms can evolve. The CPT stops training, monitors, and routes the client to medical evaluation rather than waiting out a quarter hour or finishing the block.",
     "distractorExplanations": {
-      "a": "Concussion symptoms can be delayed; a suspected head injury ends the session pending medical evaluation.",
-      "b": "Most concussions occur without loss of consciousness; any suspicion means stop and get evaluated.",
-      "d": "Ice does not treat a brain injury, and any further training risks a second impact; the session ends."
+      "a": "A short sit does not clear a brain injury; delayed symptoms are common and further work adds second-impact risk.",
+      "b": "Absence of knockout does not rule out concussion; continuing after head contact is the wrong screen.",
+      "d": "Ice treats a scalp bump, not a brain injury, and 'light' work still keeps a possibly concussed client training."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-056",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Floor hygiene after a bleed from a ripped callus:",
+    "prompt": "A torn callus leaves blood on the deadlift platform. How should the spill be handled?",
     "options": [
       {
         "id": "a",
-        "text": "Wipe it up with a dry paper towel"
+        "text": "Wipe the plate with a dry paper towel so the next client can keep moving"
       },
       {
         "id": "b",
-        "text": "Mop it with soapy water"
+        "text": "Mop the iron with dish soap and water until the visible stain is gone"
       },
       {
         "id": "c",
-        "text": "Let the client clean it"
+        "text": "Give the client spray and towels so they clean their own blood spill"
       },
       {
         "id": "d",
-        "text": "Clean per bloodborne policy"
+        "text": "Use PPE and an approved disinfectant per the bloodborne-pathogen policy"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Blood is a spill. This item asks: “Floor hygiene after a bleed from a ripped callus:”. The matching answer is: Clean per bloodborne policy. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Blood on a platform is a bloodborne-pathogen spill. Trained staff use gloves/PPE, an EPA-registered disinfectant (or the facility's listed agent), and proper disposal. Dry towels, soap-only mops, and handing cleanup to the client do not meet exposure-control policy.",
     "distractorExplanations": {
-      "a": "A dry wipe leaves infectious material; blood spills need gloves, an EPA-registered disinfectant, and proper disposal.",
-      "b": "Soap cleans but does not disinfect; bloodborne policy requires an approved disinfectant after cleanup.",
-      "c": "Cleanup is done by trained staff with PPE under the exposure-control plan, not by an untrained client."
+      "a": "A dry wipe leaves infectious material on a shared surface and skips PPE and disinfectant.",
+      "b": "Soap removes soil but is not the required disinfectant step in a bloodborne-pathogen procedure.",
+      "c": "Untrained clients should not be assigned BBP cleanup; staff follow the exposure-control plan."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-057",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Dual relationships (dating a client) create:",
+    "prompt": "You want to film a 15-year-old client's lifts for a training log that may be shared in the gym's private app. What is required first?",
     "options": [
       {
         "id": "a",
-        "text": "A consent and power problem — follow policy"
+        "text": "Informed permission from the parent/guardian and the minor, per policy"
       },
       {
         "id": "b",
-        "text": "No issue if the client initiates it"
+        "text": "Only the minor's verbal okay because they are the one being filmed"
       },
       {
         "id": "c",
-        "text": "No issue once the client signs a relationship waiver"
+        "text": "A social-media waiver signed by the minor after the session is posted"
       },
       {
         "id": "d",
-        "text": "A problem only if training results drop"
+        "text": "Nothing extra if the parent already signed the gym's adult liability form"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Boundaries. This item asks: “Dual relationships (dating a client) create:”. The matching answer is: A consent and power problem — follow policy. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Minors cannot give standalone informed consent for recording that may be stored or shared. Follow facility policy: parent/guardian permission plus the minor's assent, before filming. Adult liability waivers and after-the-fact minor signatures do not cover this.",
     "distractorExplanations": {
-      "b": "Who initiates does not remove the power imbalance or conflict of interest; follow policy and end the professional role.",
-      "c": "A waiver covers training risks, not professional boundary violations; dual relationships remain a conflict.",
-      "d": "The problem is the conflict of interest and power imbalance itself, whether or not results change."
+      "b": "A teenager's verbal okay is not a substitute for parent/guardian informed permission to record.",
+      "c": "Consent must come before capture and posting; a minor cannot ratify a privacy breach after the fact.",
+      "d": "A standard adult liability waiver addresses injury risk, not media consent for a minor."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-058",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Guaranteeing a 20 lb fat-loss in 14 days is:",
+    "prompt": "Two days after a novel high-volume leg session, a client reports cola-colored urine, severe muscle pain, and weakness. What should the CPT do?",
     "options": [
       {
         "id": "a",
-        "text": "Acceptable with a signed waiver"
+        "text": "Add a light flush circuit, extra water, and have them train through the pain"
       },
       {
         "id": "b",
-        "text": "Unethical and often unsafe"
+        "text": "Stop training and refer now for medical evaluation of possible rhabdomyolysis"
       },
       {
         "id": "c",
-        "text": "Fine if the client is obese"
+        "text": "Add more eccentric volume because deep soreness means the work is landing"
       },
       {
         "id": "d",
-        "text": "Ethical if the plan is evidence-based"
+        "text": "Recommend extra NSAIDs and schedule a harder lower-body day later this week"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "No miracle cuts. This item asks: “Guaranteeing a 20 lb fat-loss in 14 days is:”. The matching answer is: Unethical and often unsafe. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Dark tea- or cola-colored urine with out-of-proportion muscle pain and weakness after unaccustomed volume is a rhabdomyolysis red-flag cluster. The CPT stops exercise and refers for urgent medical evaluation. Hydration circuits, more eccentrics, or NSAIDs delay care and can worsen kidney risk.",
     "distractorExplanations": {
-      "a": "A waiver cannot make a misleading guarantee ethical; promising specific, unrealistic results breaches codes of conduct.",
-      "c": "Starting weight does not make a guaranteed 20 lb loss in 14 days honest or safe; most early loss is water.",
-      "d": "Even a sound plan cannot guarantee an outcome; guaranteeing results is misleading regardless of the method used."
+      "a": "Training through pigmenturia treats a medical emergency as ordinary soreness and delays a workup.",
+      "c": "More eccentric load is how many rhabdo cases start; it is the opposite of the needed response.",
+      "d": "NSAIDs can stress kidneys when muscle breakdown is already releasing myoglobin; this needs a clinician, not another hard day."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-059",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "If you are not competent on Olympic lifts:",
+    "prompt": "A client asks you to coach the snatch. You have never been taught to teach Olympic lifts. What is the safe action?",
     "options": [
       {
         "id": "a",
-        "text": "Coach it from video using light loads"
+        "text": "Cue the snatch from a popular video and keep loads at 40% of their clean"
       },
       {
         "id": "b",
-        "text": "Coach the snatch with only a PVC pipe"
+        "text": "Teach only PVC-pipe snatches until you feel more comfortable spotting"
       },
       {
         "id": "c",
-        "text": "Do not coach a snatch — refer or get educated"
+        "text": "Decline to coach the snatch until qualified; refer out or get trained"
       },
       {
         "id": "d",
-        "text": "Coach it anyway if the client already knows the lift"
+        "text": "Coach the full lift anyway if they already know it from a CrossFit class"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Competence is safety. This item asks: “If you are not competent on Olympic lifts:”. The matching answer is: Do not coach a snatch — refer or get educated. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Competence is a safety boundary. CPTs coach only skills they are qualified to teach and spot. Until you have education and practice in the snatch, decline, refer to a qualified coach, or get trained. Light loads, PVC, and the client's prior gym experience do not create your competence.",
     "distractorExplanations": {
-      "a": "Light loads do not create coaching competence; trainers coach only skills they are qualified to teach.",
-      "b": "Even PVC work requires the coach to see and correct technique; lacking competence, refer or get trained.",
-      "d": "The client's experience does not replace the coach's competence to spot faults and keep the lift safe."
+      "a": "A video plus a light percentage is still coaching a high-skill lift you cannot reliably correct or catch.",
+      "b": "PVC work still requires the coach to see and fix faults; discomfort is a signal to refer, not to improvise.",
+      "d": "The client's CrossFit background does not replace the coach's ability to spot errors and failed reps."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "nsca-cpt-readiness-check-safety-060",
     "examSlug": "nsca-cpt-readiness-check",
     "topicId": "safety",
-    "prompt": "Documentation of an incident is:",
+    "prompt": "A client slips on a wet platform, catches themselves, and says they are fine. How should the incident be documented?",
     "options": [
       {
         "id": "a",
-        "text": "Done only if an injury occurred"
+        "text": "Skip any written report because no visible injury showed up at the moment"
       },
       {
         "id": "b",
-        "text": "Done within 30 days of the event"
+        "text": "File the write-up within 30 days once you fully recall the sequence of events"
       },
       {
         "id": "c",
-        "text": "Done with your opinion of fault"
+        "text": "Record your opinion that the client was careless and therefore at fault"
       },
       {
         "id": "d",
-        "text": "Done the same day, factually"
+        "text": "Complete a same-day factual report with time, conditions, and actions taken"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Write what happened. This item asks: “Documentation of an incident is:”. The matching answer is: Done the same day, factually. Independent UniPrep diagnostic — not an official NSCA-CPT paper.",
+    "explanation": "Near-misses belong in the incident log. Write the same day: time, location, conditions (wet platform), what was seen, what was done (cleanup, client statement), and witnesses. Facts only—no blame narrative. Delayed or skipped reports lose detail when symptoms or claims appear later.",
     "distractorExplanations": {
-      "a": "Near misses and incidents without obvious injury are documented too; symptoms and claims can appear later.",
-      "b": "Waiting weeks loses detail and credibility; incident reports are completed the same day while facts are fresh.",
-      "c": "Reports record objective facts, times, and witness statements; opinions about fault do not belong in them."
+      "a": "Pain and claims often show up after the session; near-misses without a bruise still get a report.",
+      "b": "Waiting weeks destroys credibility and memory; incident notes are completed while details are fresh.",
+      "c": "Fault opinions do not belong in the record; stick to observable facts and statements."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   }
 ]

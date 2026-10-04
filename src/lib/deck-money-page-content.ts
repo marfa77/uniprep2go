@@ -32,6 +32,10 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a free 90-question ServSafe mock (official 80 scored + 10 pilot / 2h; official pass 70% (56/80) · 75% readiness target).",
   "gre-anki-deck":
     "350 Verbal + Quant cards for the shorter GRE — free 30-question / 45-minute readiness check is live now (both axes required). Not a Magoosh/Manhattan vocab mega.",
+  "gmat-focus-anki-deck":
+    "$11 / 200 unique cards rewritten October 2026 for the current GMAT (Quant + Verbal + Data Insights) — no Sentence Correction, no Quant geometry. Free 45-question timed check. SuperScore live since 12 Aug 2026.",
+  "sat-anki-deck":
+    "$11 / 160 unique Digital SAT cards (88 Reading and Writing + 72 Math) + free 49-question / 70-minute timed check scored on both official axes. Live Gumroad .apkg — not waitlist.",
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — pairs with the 2026 printable study guide PDF.",
   "luxembourg-vivre-ensemble-anki-deck":
@@ -88,6 +92,40 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). Free 60Q / 45 min / 84% cognitive diagnostic live now — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
   "ardms-spi-anki-deck":
     "Planned 60-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety). Free 60Q / 75 min diagnostic live now — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
+  "ascp-mlt-anki-deck":
+    "Planned 60-card ASCP MLT Anki (blood bank, chemistry, hematology, microbiology). Free 60Q / 75 min diagnostic live now — official BOC MLT is 100Q / 2h30 CAT / scaled 400. ≠ MLS; CA-only MLT form is 80Q / 2h.",
+  "aswb-bachelors-anki-deck":
+    "Planned 60-card ASWB Bachelors Anki (HBSE, assessment, intervention, ethics). Free 60Q / 75 min diagnostic live now — official from 3 Aug 2026 is 122Q / 4h. ≠ Clinical/LCSW.",
+  "aswb-clinical-anki-deck":
+    "Planned 60-card ASWB Clinical Anki (clinical assessment, diagnosis concepts, psychotherapy, ethics). Free 60Q / 75 min diagnostic live now — official from 3 Aug 2026 is 122Q / 4h. ≠ Bachelors/LSW.",
+  "barber-state-anki-deck":
+    "Planned 60-card NIC-style barber theory Anki. Free 60Q / 75 min diagnostic live now — official NIC Barber theory is 60 items (50 scored) / 90 min; practical separate. ≠ Cosmetology Theory.",
+  "medication-aide-anki-deck":
+    "Planned 60-card medication-aide Anki (rights, routes, safety, documentation). Free 60Q / 75 min diagnostic live now — typical MACE is 60Q / 2h. ≠ NNAAP CNA.",
+  "nail-technician-state-anki-deck":
+    "Planned 60-card NIC-style nail theory Anki. Free 60Q / 75 min diagnostic live now — official NIC Nail Technology Theory is 110 (100 scored) / 90 min; practical separate. ≠ Cosmetology / Barber Theory.",
+  "nsca-cpt-anki-deck":
+    "Planned 60-card NSCA-CPT Anki (assessment, program design, technique, safety). Free 60Q / 75 min text diagnostic live now — official NSCA-CPT is 155Q (140+15) / 3h / scaled 70 with video items. ≠ CSCS.",
+  "phr-hrci-anki-deck":
+    "Planned 60-card HRCI PHR Anki (talent, employee relations, total rewards, compliance). Free 60Q / 75 min diagnostic live now — official PHR is 90 scored + 25 pretest / 2h / scaled 500. ≠ SPHR / SHRM-CP.",
+  "physical-therapy-aide-anki-deck":
+    "Planned 60-card PT aide Anki (modalities assist, transfers, anatomy, ethics). Free 60Q / 75 min diagnostic live now — no national PT aide exam. ≠ NPTE / PTA.",
+  "praxis-core-anki-deck":
+    "Planned 60-card Praxis Core Anki. Free 60Q / 75 min combined SR diagnostic live now — official Core is three ETS tests (5713/5723/5733). ≠ SpEd 5355.",
+  "praxis-special-education-anki-deck":
+    "Planned 60-card Praxis Special Education Anki. Free 60Q / 75 min diagnostic live now — typical 5355 is 120Q / 2h. ≠ Praxis Core.",
+  "precision-nutrition-l1-anki-deck":
+    "Planned 60-card PN L1 Anki (coaching, nutrition science, habits, scope). Free 60Q / 75 min diagnostic live now — coaching cert, not RDN, not CPT.",
+  "unarmed-security-officer-anki-deck":
+    "Planned 60-card unarmed security Anki. Free 60Q / 75 min diagnostic live now — state-specific; ≠ armed card.",
+  "wastewater-operator-1-anki-deck":
+    "Planned 60-card wastewater operator Anki. Free 60Q / 75 min diagnostic live now — state-specific; ≠ drinking-water treatment.",
+  "electrical-journeyman-anki-deck":
+    "Planned 60-card journeyman electrician Anki. Free 60Q / 75 min diagnostic live now — state-specific NEC; ≠ master electrician.",
+  "nate-core-anki-deck":
+    "Planned 60-card NATE Core Anki. Free 60Q / 75 min diagnostic live now — HVAC/R knowledge; ≠ specialty NATE and ≠ EPA 608.",
+  "plumbing-journeyman-anki-deck":
+    "Planned 60-card journeyman plumber Anki. Free 60Q / 75 min diagnostic live now — state-specific IPC/UPC; ≠ master plumber.",
   "cosmetology-state-anki-deck":
     "Planned 60-card NIC-style cosmetology theory Anki. Free 60Q / 75 min diagnostic live now — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
   "cdl-general-knowledge-anki-deck":
@@ -125,6 +163,10 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the free 90-question mock first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
     "Live 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. Free 30-question timed diagnostic (15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
+  "gmat-focus-anki-deck":
+    "Live 200 unique cards for the current GMAT Exam (2026 SuperScore era): Quant algebra/arithmetic, Critical Reasoning + RC, and Data Insights including Data Sufficiency. Rewritten October 2026 — not 10th Edition leftovers and not a padded 400-card clone dump. Pair with the free 45-question timed check.",
+  "sat-anki-deck":
+    "Live 160 unique Digital SAT cards from the same validated bank as the free 49-question timed check: 88 Reading and Writing plus 72 Math across College Board content domains. Instant Gumroad .apkg — not a planned waitlist SKU. Bluebook remains the adaptive full-length practice.",
   "ptcb-pharmacy-technician-anki-deck":
     "Front-load high-yield drugs and interactions, high-alert safety, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
   "ace-cpt-anki-deck":
@@ -161,6 +203,32 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned AHA BLS Provider Anki for 2025 adult CPR/AED, infant heel-of-1-hand or 2-thumb compressions, FBAO cycles, and team dynamics. Free 60-question / 45-minute / 84% cognitive check is live; official HeartCode BLS cognitive is about 25 questions / 84% plus skills. Not a BLS card and not Heartsaver/ACLS.",
   "ardms-spi-anki-deck":
     "Planned ARDMS SPI Anki for ultrasound physics, transducers/beam, Doppler, and artifacts/safety. Free 60-question / 75-minute readiness check is live; official SPI is about 110 questions / 2 hours / scaled 555. Text/physics only — not ABD/OB image interpretation.",
+  "ascp-mlt-anki-deck":
+    "Planned ASCP MLT Anki for blood bank, chemistry, hematology, and microbiology. Free 60-question / 75-minute readiness check is live; official BOC MLT is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLS and not the California-only 80Q / 2h form.",
+  "aswb-bachelors-anki-deck":
+    "Planned ASWB Bachelors Anki for HBSE, assessment, intervention, and ethics. Free 60-question / 75-minute readiness check is live; official from 3 August 2026 is 122 questions / 4 hours. Not Clinical/LCSW.",
+  "aswb-clinical-anki-deck":
+    "Planned ASWB Clinical Anki for clinical assessment, diagnosis concepts, psychotherapy, and ethics. Free 60-question / 75-minute readiness check is live; official from 3 August 2026 is 122 questions / 4 hours. Not Bachelors/LSW.",
+  "barber-state-anki-deck":
+    "Planned NIC-style barber theory Anki for infection control, cutting/shaving, chemical services, and board-law themes. Free 60-question / 75-minute readiness check is live; official NIC Barber theory is 60 items (50 scored) / 90 minutes. Practical exam is separate. Not NIC Cosmetology Theory.",
+  "medication-aide-anki-deck":
+    "Planned medication-aide Anki for six rights, routes, safety, and documentation. Free 60-question / 75-minute readiness check is live; typical MACE is 60 questions / 2 hours where a state uses it. Not NNAAP CNA and not LPN/RN.",
+  "nail-technician-state-anki-deck":
+    "Planned NIC-style nail technician theory Anki for infection control, anatomy, services, and chemistry. Free 60-question / 75-minute readiness check is live; official NIC Nail Technology Theory is 110 items (100 scored) / 90 minutes. Practical exam is separate. Not Cosmetology Theory and not Barber Theory.",
+  "nsca-cpt-anki-deck":
+    "Planned NSCA-CPT Anki for assessment, program design, technique, and safety. Free 60-question / 75-minute text readiness check is live; official NSCA-CPT is 155 questions (140 scored + 15 pretest) / 3 hours / scaled 70, including 25–35 video/image items. Not CSCS and not NASM/ACE/ACSM CPT.",
+  "phr-hrci-anki-deck":
+    "Planned HRCI PHR Anki for talent, employee relations, total rewards, and compliance. Free 60-question / 75-minute readiness check is live; official PHR is 90 scored + 25 pretest / 2 hours / scaled 500. Not SPHR and not SHRM-CP.",
+  "physical-therapy-aide-anki-deck":
+    "Planned physical therapy aide Anki for modalities assist, transfers, anatomy, and ethics/scope. Free 60-question / 75-minute readiness check is live; there is no national PT aide exam. Not NPTE and not PTA.",
+  "praxis-core-anki-deck":
+    "Planned Praxis Core Anki for reading, writing selected-response, math, and strategy. Free 60-question / 75-minute combined diagnostic is live; official Core is three ETS tests. Not Special Education 5355.",
+  "praxis-special-education-anki-deck":
+    "Planned Praxis Special Education Anki for development, IEP planning, assessment, and IDEA/504. Free 60-question / 75-minute diagnostic is live; typical 5355 is 120Q / 2h. Not Praxis Core.",
+  "precision-nutrition-l1-anki-deck":
+    "Planned Precision Nutrition L1 Anki for coaching, nutrition science, habits, and scope. Free 60-question / 75-minute diagnostic is live. Not RDN and not CPT.",
+  "unarmed-security-officer-anki-deck":
+    "Planned unarmed security Anki for law, patrol, emergencies, and reports. Free 60-question / 75-minute diagnostic is live; licensing is state-specific. Not an armed card.",
   "cosmetology-state-anki-deck":
     "Planned NIC-style cosmetology theory Anki for scientific concepts & safety, hair services, skin & nails, and salon/infection-control themes. Free 60-question / 75-minute readiness check is live; NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes — verify your state CIB. Theory only — practical exam is separate.",
   "cdl-general-knowledge-anki-deck":
@@ -407,6 +475,176 @@ export const positioningOverrides: Partial<
     summaryProse:
       "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a free timed 60Q physics diagnostic with topic scoring plus a planned ownable Anki waitlist — not a full 110-item SPI form and not an image-heavy specialty bank.",
   },
+  "ascp-mlt-anki-deck": {
+    ourEdge: [
+      "Planned 60-card MLT Anki for blood bank, chemistry, hematology, microbiology",
+      "Free 60Q / 75 min timed diagnostic live now — first mock free, no signup",
+      "Honest: official BOC MLT is 100Q CAT / 2h30 / scaled 400 — our mock is shorter",
+      "≠ ASCP MLS; California-only MLT sitting is 80Q / 2h",
+    ],
+    summaryProse:
+      "OpenExamPrep, Mometrix, and MLSIA 100Q CAT banks own official length. UniPrep wins when you want a free no-signup timed 60Q diagnostic with bench-topic scoring plus a planned ownable Anki waitlist — not a 100-item CAT substitute and not an MLS dump.",
+  },
+  "aswb-bachelors-anki-deck": {
+    ourEdge: [
+      "Planned 60-card ASWB Bachelors Anki for HBSE, assessment, intervention, ethics",
+      "Free 60Q / 75 min timed diagnostic live now — first mock free, no signup",
+      "Honest: official from 3 Aug 2026 is 122Q / 4h — our mock is shorter",
+      "≠ Clinical/LCSW and ≠ Masters",
+    ],
+    summaryProse:
+      "OpenExamPrep 193+ and Mometrix own volume. UniPrep wins when you want a free no-signup timed 60Q generalist diagnostic with topic scoring plus a planned ownable Anki waitlist — not a 4-hour 122-item substitute.",
+  },
+  "aswb-clinical-anki-deck": {
+    ourEdge: [
+      "Planned 60-card ASWB Clinical Anki for assessment, diagnosis concepts, psychotherapy, ethics",
+      "Free 60Q / 75 min timed diagnostic live now — first mock free, no signup",
+      "Honest: official from 3 Aug 2026 is 122Q / 4h — our mock is shorter",
+      "≠ Bachelors/LSW",
+    ],
+    summaryProse:
+      "OpenExamPrep 110Q no-signup banks own Clinical volume. UniPrep wins when you want a free timed 60Q LCSW-level diagnostic with topic scoring plus a planned ownable Anki waitlist — not a 4-hour 122-item substitute.",
+  },
+  "barber-state-anki-deck": {
+    ourEdge: [
+      "Planned 60-card NIC-style barber theory Anki",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: official NIC Barber theory is 60 items (50 scored) / 90 min",
+      "Theory only — practical/skills exam is separate; ≠ Cosmetology Theory",
+    ],
+    summaryProse:
+      "CosmetologyGuru and NICPrep own volume. UniPrep wins when you want a free timed 60Q theory diagnostic plus a planned ownable Anki waitlist — not the practical exam and not a 110-item Cosmetology dump.",
+  },
+  "medication-aide-anki-deck": {
+    ourEdge: [
+      "Planned 60-card medication-aide Anki for rights, routes, safety, documentation",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: typical MACE is 60Q / 2h — our clock is shorter",
+      "≠ NNAAP CNA and ≠ LPN/RN",
+    ],
+    summaryProse:
+      "PracticeQuiz / TheExamsLab dumps own volume. UniPrep wins when you want a free timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a 2-hour official MACE substitute.",
+  },
+  "nail-technician-state-anki-deck": {
+    ourEdge: [
+      "Planned 60-card NIC-style nail theory Anki",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: official NIC Nail Theory is 110 (100 scored) / 90 min; our mock is shorter",
+      "Theory only — practical separate; ≠ Cosmetology / Barber Theory",
+    ],
+    summaryProse:
+      "SalonExam / CosmetologyGuru own volume. UniPrep wins when you want a free timed 60Q nail-theory diagnostic plus a planned Anki waitlist — not a 110-item NIC substitute and not the practical.",
+  },
+  "nsca-cpt-anki-deck": {
+    ourEdge: [
+      "Planned 60-card NSCA-CPT Anki for assessment, program design, technique, safety",
+      "Free 60Q / 75 min timed text diagnostic live now",
+      "Honest: official NSCA-CPT is 155Q / 3h / scaled 70 with video items",
+      "≠ CSCS and ≠ NASM/ACE/ACSM CPT",
+    ],
+    summaryProse:
+      "Mometrix / OpenExamPrep own volume. UniPrep wins when you want a free timed 60Q NSCA-CPT diagnostic plus a planned Anki waitlist — not a 3-hour video form and not CSCS.",
+  },
+  "phr-hrci-anki-deck": {
+    ourEdge: [
+      "Planned 60-card HRCI PHR Anki for talent, ER, rewards, compliance",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: official PHR is 90 scored + 25 pretest / 2h / scaled 500",
+      "≠ SPHR and ≠ SHRM-CP",
+    ],
+    summaryProse:
+      "Pocket Prep / Mometrix own volume. UniPrep wins when you want a free timed 60Q PHR diagnostic plus a planned Anki waitlist — not a 115-item HRCI substitute.",
+  },
+  "physical-therapy-aide-anki-deck": {
+    ourEdge: [
+      "Planned 60-card PT aide Anki for modalities assist, transfers, anatomy, ethics",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: no national PT aide exam — employer/state competency",
+      "≠ NPTE and ≠ PTA",
+    ],
+    summaryProse:
+      "Job-quiz sites own volume. UniPrep wins when you want a free timed 60Q aide-scope diagnostic plus a planned Anki waitlist — not NPTE or PTA licensure prep.",
+  },
+  "praxis-core-anki-deck": {
+    ourEdge: [
+      "Planned 60-card Praxis Core Anki for reading, writing SR, math, strategy",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: official Core is three ETS tests — our mock is combined SR only",
+      "≠ Praxis Special Education 5355",
+    ],
+    summaryProse:
+      "240Tutoring / 240 and ETS own official length. UniPrep wins when you want a free timed 60Q combined diagnostic plus a planned Anki waitlist — not three Core sittings and not essays.",
+  },
+  "praxis-special-education-anki-deck": {
+    ourEdge: [
+      "Planned 60-card Praxis Special Education Anki",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: typical 5355 is 120Q / 2h — our mock is shorter",
+      "≠ Praxis Core",
+    ],
+    summaryProse:
+      "Quizlet dumps own volume. UniPrep wins when you want a free timed 60Q SpEd diagnostic plus a planned Anki waitlist — not a 120-item 5355 substitute.",
+  },
+  "precision-nutrition-l1-anki-deck": {
+    ourEdge: [
+      "Planned 60-card PN L1 Anki for coaching, science, habits, scope",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: coaching cert — no ETS-style national Q-count on this page",
+      "≠ RDN and ≠ CPT",
+    ],
+    summaryProse:
+      "PN’s own course owns the official path. UniPrep wins when you want a free timed 60Q coaching diagnostic plus a planned Anki waitlist — not an RDN or CPT dump.",
+  },
+  "unarmed-security-officer-anki-deck": {
+    ourEdge: [
+      "Planned 60-card unarmed security Anki",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: state-specific — no national Q-count",
+      "≠ armed card / range",
+    ],
+    summaryProse:
+      "OpenExamPrep multi-state banks own volume. UniPrep wins when you want a free timed 60Q unarmed diagnostic plus a planned Anki waitlist — not an armed qualification.",
+  },
+  "wastewater-operator-1-anki-deck": {
+    ourEdge: [
+      "Planned 60-card wastewater operator Anki for process, safety, labs, regs",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: state-specific ABC-style exams — no national Q-count",
+      "≠ drinking-water treatment operator",
+    ],
+    summaryProse:
+      "State operator handbooks own the license. UniPrep wins when you want a free timed 60Q wastewater diagnostic plus a planned Anki waitlist — not a drinking-water dump.",
+  },
+  "electrical-journeyman-anki-deck": {
+    ourEdge: [
+      "Planned 60-card journeyman electrician Anki for NEC, wiring, services, motors",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: state/local NEC exam — no national Q-count",
+      "≠ master electrician / contractor",
+    ],
+    summaryProse:
+      "PSI/Prometric board banks own official length. UniPrep wins when you want a free timed 60Q NEC diagnostic plus a planned Anki waitlist — not a master electrician form.",
+  },
+  "nate-core-anki-deck": {
+    ourEdge: [
+      "Planned 60-card NATE Core Anki for safety, tools, electrical, ethics",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: this is Core knowledge — not a NATE specialty sitting",
+      "≠ EPA 608 refrigerant handling",
+    ],
+    summaryProse:
+      "NATE’s own prep owns the credential. UniPrep wins when you want a free timed 60Q Core diagnostic plus a planned Anki waitlist — not a specialty or EPA 608 dump.",
+  },
+  "plumbing-journeyman-anki-deck": {
+    ourEdge: [
+      "Planned 60-card journeyman plumber Anki for DWV, water, fixtures, code",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: state/local IPC or UPC exam — no national Q-count",
+      "≠ master plumber",
+    ],
+    summaryProse:
+      "Board code books own the license. UniPrep wins when you want a free timed 60Q plumbing diagnostic plus a planned Anki waitlist — not a master plumber form.",
+  },
   "nha-cbcs-anki-deck": {
     ourEdge: [
       "Planned 60-card CBCS Anki for coding, claims, HIPAA, revenue cycle",
@@ -506,6 +744,26 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "Free AnkiWeb vocab decks win on word count. UniPrep wins when you want a free timed Verbal+Quant diagnostic with both axes required, then an ownable V+Q .apkg — use PowerPrep for adaptive format and Writing.",
+  },
+  "gmat-focus-anki-deck": {
+    ourEdge: [
+      "200 unique cards rewritten October 2026 for the current GMAT (not 10th Edition)",
+      "No Sentence Correction, no Quant geometry, Data Sufficiency only in Data Insights",
+      "Free 45-question / 90-minute timed diagnostic across Quant, Verbal, DI",
+      "Honest: official exam is 64Q / 2h15 / 205–805; SuperScore live since 12 Aug 2026",
+    ],
+    summaryProse:
+      "Official GMAT prep and large Q-banks win on volume. UniPrep wins when you want a free timed three-section diagnostic plus an ownable 200 unique .apkg written to the 2026 exam — not a padded Focus leftover.",
+  },
+  "sat-anki-deck": {
+    ourEdge: [
+      "160 unique cards: 88 Reading and Writing + 72 Math from the validated SAT bank",
+      "Free 49-question / 70-minute timed check scored on both official section axes",
+      "Live $11 Gumroad .apkg with instant download — not a planned waitlist SKU",
+      "Honest: official Digital SAT is adaptive two-module Bluebook; this is diagnostic + daily drill",
+    ],
+    summaryProse:
+      "College Board Bluebook and Khan Academy own full-length adaptive practice. UniPrep wins when you want a no-signup timed section diagnostic plus 160 unique ownable cards for daily RW + Math repair.",
   },
   "california-real-estate-exam-anki-deck": {
     ourEdge: [
@@ -1514,19 +1772,53 @@ Read manager book chapters once, then 20 cards/day. Take the [free ServSafe Mana
 
 Managers confuse cleaning vs sanitizing steps, cooling time limits, and when to exclude ill employees. Cards use the exact temperature thresholds ServSafe tests.`,
 
+  "gmat-focus-anki-deck": `### What is inside
+
+**200 unique** flashcards rewritten **October 2026** for the **current GMAT Exam**: 67 Quantitative Reasoning (algebra, arithmetic, word problems — no dedicated geometry), 67 Verbal (Critical Reasoning and Reading Comprehension — no Sentence Correction), and 66 Data Insights (tables, multi-source, Data Sufficiency). Same bank as the free timed check. Not a padded 400-card clone dump and not 10th Edition leftovers.
+
+### Plan with the free GMAT mock
+
+**Start:** Take the [free 45-question GMAT readiness check](/mock-exams/gmat-focus-readiness-check) (15 per section / 90 minutes). **Then:** Drill the **$11 / 200 unique** Anki at 15–20 cards/day on the weakest section. **Closer to test day:** official GMAC mocks for adaptive timing. SuperScore has been live on Official Score Reports since **12 August 2026**.
+
+### Pitfalls this deck targets
+
+Candidates still drill Sentence Correction, Quant geometry, or Data Sufficiency inside Quant — those are 10th Edition habits. Cards force the 2026 three-section map.
+
+### What this does not replace
+
+Official GMAC practice exams, tutoring, or registration. Independent prep — not GMAC material.`,
+
+  "sat-anki-deck": `### What is inside
+
+**160 unique** flashcards — **88 Reading and Writing** (information and ideas, craft and structure, expression of ideas, Standard English conventions) and **72 Math** (algebra, advanced math, problem-solving and data analysis, geometry and trigonometry) — from the same validated bank as the free Digital SAT readiness check. Instant **$11** Gumroad .apkg. This is live, not a planned waitlist SKU.
+
+### Plan with the free SAT mock
+
+**Start:** Take the [free 49-question Digital SAT readiness check](/mock-exams/sat-readiness-check) (27 Reading and Writing + 22 Math / 70 minutes; both axes must clear the readiness bar). **Then:** 15–20 Anki cards/day on the weaker section. **Closer to test day:** College Board Bluebook for full adaptive modules.
+
+Official Digital SAT reports two section scores that sum to **400–1600**. Our check is a shorter two-axis diagnostic, not an adaptive Bluebook form.
+
+### Pitfalls this deck targets
+
+Students treat Khan volume as enough, skip Standard English conventions, or assume a blended percent matches the real two-section report. Cards force RW vs Math balance under spaced recall.
+
+### What this does not replace
+
+Bluebook full-length tests, Khan Academy Official SAT Practice, or College Board registration. Independent prep — not College Board material.`,
+
   "gre-anki-deck": `### What is inside
 
 **350** flashcards — **175 Verbal** (Text Completion, Sentence Equivalence, Reading Comprehension judgment) and **175 Quantitative** (arithmetic, algebra, geometry, data analysis) — built from the same bank themes as the free readiness check. This is section-skill recall, not a 1,000-word free AnkiWeb vocab mega (Magoosh/Manhattan shared decks still win on raw vocab volume).
 
 ### Plan with the free GRE mock
 
-**Start:** Take the [free 30-question GRE readiness check](/mock-exams/gre-readiness-check) (15 Verbal + 15 Quant / 45 minutes; both axes must clear the readiness bar). **Then:** Use ETS PowerPrep for adaptive timing and Analytical Writing. **When the Anki ships:** 15–20 cards/day on the weaker section only.
+**Start:** Take the [free 30-question GRE readiness check](/mock-exams/gre-readiness-check) (15 Verbal + 15 Quant / 45 minutes; both axes must clear the readiness bar). **Then:** Drill the **$11 / 350-card** Anki (175 Verbal + 175 Quant) at 15–20 cards/day on the weaker section. **Closer to test day:** ETS PowerPrep for adaptive timing and Analytical Writing.
 
 Official shorter GRE is about **1 hour 58 minutes** with **27 Verbal + 27 Quant** plus Writing (0–6). Our mock is a shorter diagnostic — Writing is not included.
 
-### Pitfalls this deck targets (when live)
+### Pitfalls this deck targets
 
-Candidates treat a vocab mega as enough for Quant, skip Sentence Equivalence synonym pairs, or confuse our 30Q check with PowerPrep. Cards (when shipped) force section decisions under spaced recall.
+Candidates treat a vocab mega as enough for Quant, skip Sentence Equivalence synonym pairs, or confuse our 30Q check with PowerPrep. Cards force section decisions under spaced recall.
 
 ### What this does not replace
 
@@ -1729,6 +2021,310 @@ Candidates confuse SPL with axial resolution, treat 90° Doppler as a strong shi
 ### What this does not replace
 
 ARDMS/Inteleos registration or a full 110-item sitting. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ARDMS material.`,
+
+  "ascp-mlt-anki-deck": `### What is inside
+
+Planned **60** flashcards across blood bank, chemistry, hematology, and microbiology — the same four buckets as the free readiness check. Built for ASCP BOC **MLT** bench judgment (ABO/Rh, hemolysis flags, CBC smear holds, cultures), not MLS-only molecular dumps and not phlebotomy-only PBT.
+
+### Plan with the free MLT mock (live now)
+
+**Start:** Take the [free 60-question ASCP MLT readiness check](/mock-exams/ascp-mlt-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use the BOC content guideline and a full-length CAT-style bank for stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official ASCP BOC MLT: **100 multiple-choice questions / 2 hours 30 minutes / computer-adaptive / scaled pass 400** (100–999). Our mock is a shorter linear diagnostic. Official content also weights urinalysis, immunology, and laboratory operations (5–10% each) — those themes appear inside the four UniPrep buckets, not as extra topics. California-only MLT licensure is **80 questions / 2 hours**.
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat a 60Q free check as the 100-item CAT, confuse MLT with MLS, or skip clerical ID and specimen-integrity items. Cards force technician-level decisions under spaced recall.
+
+### What this does not replace
+
+ASCP BOC registration, Pearson VUE scheduling, or a full-length CAT bank. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ASCP BOC material.`,
+
+  "aswb-bachelors-anki-deck": `### What is inside
+
+Planned **60** flashcards across human development, assessment, intervention, and ethics — the same four buckets as the free readiness check. Built for **ASWB Bachelors / LSW** generalist judgment, not LCSW psychotherapy dumps.
+
+### Plan with the free Bachelors mock (live now)
+
+**Start:** Take the [free 60-question ASWB Bachelors readiness check](/mock-exams/aswb-bachelors-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use the ASWB Examination Guidebook and a 4-hour stamina bank. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official ASWB Bachelors from **3 August 2026: 122 questions (110 scored + 12 pretest) / 4 hours** / form-equated pass. Our mock is a shorter diagnostic. Not Clinical/LCSW.
+
+### Pitfalls this deck targets (when live)
+
+Candidates sit Clinical banks for LSW, treat a 60Q check as the 122-item sitting, or skip ethics/self-determination vs safety. Cards force generalist decisions under spaced recall.
+
+### What this does not replace
+
+ASWB registration or a 4-hour form. Anki is **planned**. Independent prep — not ASWB material.`,
+
+  "aswb-clinical-anki-deck": `### What is inside
+
+Planned **60** flashcards across clinical assessment, diagnosis concepts, psychotherapy, and ethics — the same four buckets as the free readiness check. Built for **ASWB Clinical / LCSW** judgment, not Bachelors case-management clones.
+
+### Plan with the free Clinical mock (live now)
+
+**Start:** Take the [free 60-question ASWB Clinical readiness check](/mock-exams/aswb-clinical-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use the Guidebook plus DSM-5-TR / EBP review. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official ASWB Clinical from **3 August 2026: 122 questions / 4 hours** / form-equated pass. Our mock is shorter. Not Bachelors/LSW.
+
+### Pitfalls this deck targets (when live)
+
+Candidates use Bachelors banks for LCSW, skip risk/Tarasoff items, or treat 60Q as the 4-hour sitting.
+
+### What this does not replace
+
+ASWB registration or a 4-hour form. Anki is **planned**. Independent prep — not ASWB material.`,
+
+  "barber-state-anki-deck": `### What is inside
+
+Planned **60** flashcards across infection control, cutting/shaving, chemical services, and board-law themes — the same four buckets as the free readiness check. Built for **NIC-style Barber theory**, not Cosmetology Theory and not the practical.
+
+### Plan with the free Barber mock (live now)
+
+**Start:** Take the [free 60-question Barber readiness check](/mock-exams/barber-state-readiness-check) (75 minutes / 70% diagnostic). **Then:** Read your state CIB and drill practical kit skills separately. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official NIC National Barber Theory: **60 items (50 scored) / 90 minutes**. Our mock is the same item count on a shorter clock. Passing scores are set by the state (often scaled 75).
+
+### Pitfalls this deck targets (when live)
+
+Candidates confuse sanitation with disinfection, skip blood-exposure steps, or study Cosmetology 110-item banks for a 60-item Barber theory form.
+
+### What this does not replace
+
+NIC/state registration or the practical exam. Anki is **planned**. Independent prep — not NIC material.`,
+
+  "medication-aide-anki-deck": `### What is inside
+
+Planned **60** flashcards across six rights, routes, safety, and documentation — the same four buckets as the free readiness check. Built for **medication aide / MACE** under nurse supervision, not LPN/RN independent practice.
+
+### Plan with the free Medication Aide mock (live now)
+
+**Start:** Take the [free 60-question Medication Aide readiness check](/mock-exams/medication-aide-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use your state handbook. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Typical NCSBN MACE (where used): **60 questions / 2 hours**. Our mock uses the same item count on a shorter clock. Confirm your state form.
+
+### Pitfalls this deck targets (when live)
+
+Candidates crush XR/enteric tablets, start IVs, change doses, or sit NNAAP CNA banks for a medication-aide exam.
+
+### What this does not replace
+
+State/MACE registration. Anki is **planned**. Independent prep — not NCSBN material.`,
+
+  "nail-technician-state-anki-deck": `### What is inside
+
+Planned **60** flashcards across infection control, nail anatomy, services, and chemistry — the same four buckets as the free readiness check. Built for **NIC-style nail technician / manicurist theory**, not Cosmetology or Barber Theory.
+
+### Plan with the free Nail Technician mock (live now)
+
+**Start:** Take the [free 60-question Nail Technician readiness check](/mock-exams/nail-technician-state-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use your state CIB. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official NIC Nail Technology Theory: **110 items (100 scored) / 90 minutes**. Practical is separate. Our mock is a shorter theory diagnostic.
+
+### Pitfalls this deck targets (when live)
+
+Candidates confuse psoriasis with fungus, mix MMA with EMA monomer, or skip EPA contact time after a blood nick.
+
+### What this does not replace
+
+NIC/state registration or the practical exam. Anki is **planned**. Independent prep — not NIC material.`,
+
+  "nsca-cpt-anki-deck": `### What is inside
+
+Planned **60** flashcards across assessment, program design, technique, and safety — the same four buckets as the free readiness check. Built for **NSCA-CPT**, not CSCS and not NASM/ACE/ACSM CPT.
+
+### Plan with the free NSCA-CPT mock (live now)
+
+**Start:** Take the [free 60-question NSCA-CPT readiness check](/mock-exams/nsca-cpt-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use NSCA’s official resources for video-item stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official NSCA-CPT: **155 questions (140 scored + 15 pretest) / 3 hours / scaled 70**, including 25–35 video/image items. Our mock is text-only and shorter.
+
+### Pitfalls this deck targets (when live)
+
+Candidates skip medical clearance after a PAR-Q+ “yes,” start loading without informed consent, or confuse NSCA-CPT with CSCS.
+
+### What this does not replace
+
+NSCA registration or the 3-hour video form. Anki is **planned**. Independent prep — not NSCA material.`,
+
+  "phr-hrci-anki-deck": `### What is inside
+
+Planned **60** flashcards across talent, employee relations, compensation/benefits, and compliance — the same four buckets as the free readiness check. Built for **HRCI PHR**, not SPHR and not SHRM-CP.
+
+### Plan with the free PHR mock (live now)
+
+**Start:** Take the [free 60-question PHR readiness check](/mock-exams/phr-hrci-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use HRCI’s outline. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official PHR: **90 scored + 25 pretest / 2 hours / scaled 500**. Our mock is a shorter diagnostic.
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat job titles as FLSA exemptions, skip OSHA 300 recording, or sit SHRM-CP banks for an HRCI exam.
+
+### What this does not replace
+
+HRCI registration. Anki is **planned**. Independent prep — not HRCI material.`,
+
+  "physical-therapy-aide-anki-deck": `### What is inside
+
+Planned **60** flashcards across modalities assist, transfers/safety, anatomy, and ethics/scope — the same four buckets as the free readiness check. Built for **PT aides / rehab techs**, not NPTE or PTA licensure.
+
+### Plan with the free Physical Therapy Aide mock (live now)
+
+**Start:** Take the [free 60-question Physical Therapy Aide readiness check](/mock-exams/physical-therapy-aide-readiness-check) (75 minutes / 70% diagnostic). **Then:** Follow your clinic’s competency packet. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+There is **no national PT aide exam**. Our mock is a 60-question knowledge diagnostic.
+
+### Pitfalls this deck targets (when live)
+
+Candidates run ultrasound without a PT/PTA on site, progress loads off-plan, or treat swelling as a diagnosis.
+
+### What this does not replace
+
+Employer competency or PT/PTA licensure. Anki is **planned**. Independent prep.`,
+
+  "praxis-core-anki-deck": `### What is inside
+
+Planned **60** flashcards across reading, writing selected-response, math, and strategy — the same four buckets as the free readiness check. Built for **Praxis Core**, not Special Education 5355.
+
+### Plan with the free Praxis Core mock (live now)
+
+**Start:** Take the [free 60-question Praxis Core readiness check](/mock-exams/praxis-core-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use ETS PowerPrep / Test at a Glance for each sitting. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official Core is **three tests**. Our mock is a combined selected-response diagnostic with **no essays**.
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat one 60Q check as 5713+5723+5733, skip essays, or sit SpEd 5355 banks for Core.
+
+### What this does not replace
+
+ETS registration or constructed-response writing. Anki is **planned**. Independent prep — not ETS material.`,
+
+  "praxis-special-education-anki-deck": `### What is inside
+
+Planned **60** flashcards across development, IEP planning, assessment, and IDEA/504 foundations — the same four buckets as the free readiness check. Built for **Praxis Special Education**, not Praxis Core.
+
+### Plan with the free Praxis Special Education mock (live now)
+
+**Start:** Take the [free 60-question Praxis Special Education readiness check](/mock-exams/praxis-special-education-readiness-check) (75 minutes / 70% diagnostic). **Then:** Confirm your state code (often 5355). **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Typical 5355: **120 questions / 2 hours**. Our mock is shorter.
+
+### Pitfalls this deck targets (when live)
+
+Candidates confuse 504 with IEP, treat accommodations as modifications, or sit Praxis Core banks for SpEd content.
+
+### What this does not replace
+
+ETS registration. Anki is **planned**. Independent prep — not ETS material.`,
+
+  "precision-nutrition-l1-anki-deck": `### What is inside
+
+Planned **60** flashcards across coaching, nutrition science, habits, and scope — the same four buckets as the free readiness check. Built for **PN Level 1 coaches**, not RDNs and not CPT exams.
+
+### Plan with the free Precision Nutrition L1 mock (live now)
+
+**Start:** Take the [free 60-question Precision Nutrition L1 readiness check](/mock-exams/precision-nutrition-l1-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use PN’s curriculum. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+### Pitfalls this deck targets (when live)
+
+Candidates diagnose from lab results, write meal plans as MNT, or sit CPT banks for a coaching cert.
+
+### What this does not replace
+
+PN registration. Anki is **planned**. Independent prep — not Precision Nutrition material.`,
+
+  "unarmed-security-officer-anki-deck": `### What is inside
+
+Planned **60** flashcards across law, patrol, emergencies, and reports — the same four buckets as the free readiness check. Built for **unarmed** officers, not armed/range qualification.
+
+### Plan with the free Unarmed Security Officer mock (live now)
+
+**Start:** Take the [free 60-question Unarmed Security Officer readiness check](/mock-exams/unarmed-security-officer-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use your state handbook. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Licensing is **state-specific**. Our mock is a 60-question unarmed diagnostic.
+
+### Pitfalls this deck targets (when live)
+
+Candidates play SWAT unarmed, skip objective reports, or sit armed-card banks for an unarmed exam.
+
+### What this does not replace
+
+State registration or firearms qualification. Anki is **planned**. Independent prep.`,
+
+  "wastewater-operator-1-anki-deck": `### What is inside
+
+Planned **60** flashcards across treatment process, safety/confined space, labs/sampling, and regs — the same four buckets as the free readiness check. Built for **wastewater** operators, not drinking-water treatment.
+
+### Plan with the free Wastewater Operator 1 mock (live now)
+
+**Start:** Take the [free 60-question Wastewater Operator Level 1 readiness check](/mock-exams/wastewater-operator-1-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use your state / ABC Need-to-Know handbook. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Licensing is **state-specific**. Our mock is a 60-question diagnostic — not a national form.
+
+### Pitfalls this deck targets (when live)
+
+Candidates sit drinking-water banks for a wastewater sitting, skip H2S/confined-space items, or treat 60Q as the state exam.
+
+### What this does not replace
+
+State operator certification. Anki is **planned**. Independent prep — not ABC material.`,
+
+  "electrical-journeyman-anki-deck": `### What is inside
+
+Planned **60** flashcards across NEC theory, wiring methods, services/feeders, and motors/safety — the same four buckets as the free readiness check. Built for **journeyman** written exams, not master electrician.
+
+### Plan with the free Electrical Journeyman mock (live now)
+
+**Start:** Take the [free 60-question Electrical Journeyman readiness check](/mock-exams/electrical-journeyman-readiness-check) (75 minutes / 70% diagnostic). **Then:** Tab the adopted NEC cycle for your board. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Licensing is **state-specific**. Our mock is a 60-question diagnostic.
+
+### Pitfalls this deck targets (when live)
+
+Candidates skip grounding/bonding, confuse feeder vs branch OCPD, or sit master-electrician banks for journeyman.
+
+### What this does not replace
+
+State/local electrical board registration. Anki is **planned**. Independent prep — not NFPA material.`,
+
+  "nate-core-anki-deck": `### What is inside
+
+Planned **60** flashcards across HVAC safety, tools/math, electrical basics, and ethics — the same four buckets as the free readiness check. Built for **NATE Core**, not specialty exams and not EPA 608.
+
+### Plan with the free NATE Core mock (live now)
+
+**Start:** Take the [free 60-question NATE Core readiness check](/mock-exams/nate-core-readiness-check) (75 minutes / 70% diagnostic). **Then:** Confirm the Core + specialty pairing on natex.org. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Our mock is a 60-question Core-style diagnostic — not a NATE specialty sitting.
+
+### Pitfalls this deck targets (when live)
+
+Candidates confuse Core with EPA 608, skip recovery/LOTO, or sit air-conditioning specialty banks for Core.
+
+### What this does not replace
+
+NATE registration. Anki is **planned**. Independent prep — not NATE material.`,
+
+  "plumbing-journeyman-anki-deck": `### What is inside
+
+Planned **60** flashcards across DWV, water supply, fixtures, and code/safety — the same four buckets as the free readiness check. Built for **journeyman** plumber written exams, not master plumber.
+
+### Plan with the free Plumbing Journeyman mock (live now)
+
+**Start:** Take the [free 60-question Plumbing Journeyman readiness check](/mock-exams/plumbing-journeyman-readiness-check) (75 minutes / 70% diagnostic). **Then:** Confirm IPC vs UPC for your board. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Licensing is **state-specific**. Our mock is a 60-question diagnostic.
+
+### Pitfalls this deck targets (when live)
+
+Candidates skip backflow, confuse fixture units with DFU, or sit master-plumber banks for journeyman.
+
+### What this does not replace
+
+State/local plumbing board registration. Anki is **planned**. Independent prep.`,
 
   "nha-cbcs-anki-deck": `### What is inside
 

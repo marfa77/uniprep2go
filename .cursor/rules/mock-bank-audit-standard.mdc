@@ -34,7 +34,9 @@ Goal: every live bank is the **best practice bank on the market** for its exam, 
 
 ## 3. Metric gates (`npm run audit:bank-quality`)
 
-FAIL (must be 0 or within limit): invalid key · duplicate or near-duplicate/templated stems · duplicate options · all/none of the above · missing / template / thin distractor notes (incl. "Not the best answer here; the right answer is …") · thin explanations · boilerplate stem wrappers ("On the X Mock…", "Select the best answer.") · distractor copied from another item's correct answer > 5% · correct = longest option > 30% · correct >40% longer than every distractor > 10% · any key letter outside 15–35% (n ≥ 40).
+FAIL (must be 0 or within limit): invalid key · duplicate or near-duplicate/templated stems · duplicate options · all/none of the above · missing / template / thin distractor notes (incl. "Not the best answer here; the right answer is …", **"This item asks" / "The matching answer is" Wave-3 pads**) · thin explanations · boilerplate stem wrappers ("On the X Mock…", "Select the best answer.", **"This X mock is:"**) · distractor copied from another item's correct answer > 5% · correct = longest option > 30% · correct >40% longer than every distractor > 10% · any key letter outside 15–35% (n ≥ 40).
+
+**Wave template family is not "clean."** Banks still using "This item asks…" notes were a false mechanical pass until 2026-10-04. Do **not** wait for `mock:…:start` to rewrite them — Bing/Google already start those URLs. Remaining live template banks: `docs/mock-bank-qa/bank-audit-ledger.md` § Wave template pre-start queue.
 WARN: absolute-word giveaways > 10% · short definition stems > 20% · NOT/EXCEPT > 10% · topic < 3 items.
 
 ## 4. Cascade after any bank correction (same pass, before "done")

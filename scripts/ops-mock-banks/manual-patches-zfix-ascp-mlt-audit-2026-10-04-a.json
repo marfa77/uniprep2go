@@ -1,0 +1,259 @@
+{
+  "ascp-mlt-readiness-check": {
+    "ascp-mlt-readiness-check-blood-bank-001": {
+      "prompt": "A 78-year-old's forward type is 4+ with anti-A and 0 with anti-B, but reverse typing is 0 with both A1 cells and B cells. What should the MLT do next before assigning an ABO group?",
+      "options": {
+        "a": "Issue group A RBCs because the forward type overrides a reverse mismatch",
+        "b": "Report group AB from the reverse and skip further reverse workup",
+        "c": "Resolve the missing reverse antibody before assigning the ABO group",
+        "d": "Switch to group O units and cancel ABO testing on this specimen"
+      },
+      "correctOptionId": "c",
+      "explanation": "Forward group A should reverse as 0 with A1 cells and reactive with B cells (anti-B). A missing reverse (both cell lines negative) is a discrepancy, often weakened isoagglutinins in elderly patients. Do not assign ABO or issue type-specific RBCs until the reverse is resolved (history, incubate reverse at room temperature, enhance, check subgroups).",
+      "distractorExplanations": {
+        "a": "Confuses forward typing with a finished ABO assignment; a mismatch with reverse is a discrepancy that must be resolved first.",
+        "b": "Confuses a missing reverse with true group AB; AB reverse is negative with A1 and B cells only when the forward is A and B positive.",
+        "d": "Confuses discrepancy workup with emergency O-negative release; you still complete ABO testing on a valid specimen."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-blood-bank-002": {
+      "prompt": "A donor types 0 with anti-D at immediate spin but 2+ with anti-D at AHG after 37°C. How should the unit be labeled?",
+      "options": {
+        "a": "Rh-positive after weak D testing is complete and reactive",
+        "b": "Rh-negative because the immediate-spin anti-D was nonreactive",
+        "c": "DAT-positive discard; do not label D type on the unit",
+        "d": "Emergency O-negative stock regardless of the donor ABO type"
+      },
+      "correctOptionId": "a",
+      "explanation": "Donor weak D (anti-D negative at IS, positive at AHG) is labeled Rh-positive so D-negative recipients are not given D antigen. The recipient rule is different: many facilities treat weak-D patients as Rh-negative for transfusion. Immediate-spin anti-D alone is not the donor labeling endpoint.",
+      "distractorExplanations": {
+        "b": "Confuses recipient weak-D policy with donor labeling; donors who type weak D must be labeled Rh-positive.",
+        "c": "Confuses a weak-D AHG reaction with a positive DAT requiring unit discard; weak D is a typing result, not a discard criterion.",
+        "d": "Confuses D typing with ABO and emergency inventory; weak D does not convert the unit to O-negative stock."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-blood-bank-003": {
+      "prompt": "A preoperative antibody screen is 2+ with both screening cells at AHG; the autocontrol is negative. What is the next step before selecting RBCs?",
+      "options": {
+        "a": "Issue after an immediate-spin crossmatch, skipping identification",
+        "b": "Identify the antibody, then crossmatch antigen-negative units",
+        "c": "Repeat ABO/Rh and issue group-specific uncrossmatched RBCs",
+        "d": "Give washed O-negative RBCs without further antibody workup"
+      },
+      "correctOptionId": "b",
+      "explanation": "A positive antibody screen with a negative autocontrol means unexpected alloantibody in the plasma. Identification (panel) comes next so antigen-negative units can be selected and crossmatched. The screen detects antibody; it does not name specificity or prove donor compatibility by itself.",
+      "distractorExplanations": {
+        "a": "Confuses antibody screen with a finished XM: a positive screen requires identification and AHG-compatible antigen-negative units, not IS-only issue.",
+        "c": "Confuses a positive screen with emergency uncrossmatched release; this is a scheduled preoperative workup, not physician-released trauma.",
+        "d": "Confuses washing/O-negative RBCs with antibody identification; washing does not remove plasma alloantibody risk in the recipient."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-blood-bank-004": {
+      "prompt": "After 37°C incubation and washing in an antibody screen, why is anti-human globulin added before centrifugation?",
+      "options": {
+        "a": "To lyse IgM-coated cells so hemolysis can be graded as the endpoint",
+        "b": "To neutralize complement so clinically insignificant colds disappear",
+        "c": "To enzyme-treat the cells so Duffy antigens are stripped off",
+        "d": "To bridge cell-bound IgG that does not agglutinate in saline"
+      },
+      "correctOptionId": "d",
+      "explanation": "Most clinically significant antibodies are IgG. They coat red cells at 37°C but often do not lattice in saline. AHG (anti-IgG ± anti-C3) bridges that bound IgG after washing, producing visible agglutination. Washing first removes unbound globulin that would neutralize AHG (false-negative).",
+      "distractorExplanations": {
+        "a": "Confuses AHG agglutination with hemolysis scoring; IgM usually agglutinates at immediate spin without AHG.",
+        "b": "Confuses AHG with prewarming or neutralization; AHG detects bound IgG/complement, it does not erase cold antibodies.",
+        "c": "Confuses AHG reagent with enzyme treatment (ficin/papain), a different enhancement that can destroy Duffy and MNS antigens."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-blood-bank-005": {
+      "prompt": "A jaundiced term newborn has a 3+ DAT. Mother is group O, D-positive; infant is group A, D-positive. What does the DAT most likely indicate?",
+      "options": {
+        "a": "Maternal IgG anti-A coating the infant's red cells (HDFN workup)",
+        "b": "Maternal IgM anti-A that crossed the placenta and coated the infant",
+        "c": "Physiologic jaundice; a positive DAT is expected in every newborn",
+        "d": "Infant anti-B formed in utero coating the infant's own group A cells"
+      },
+      "correctOptionId": "a",
+      "explanation": "DAT detects in-vivo coating of red cells. Group O mothers can make IgG anti-A/B that crosses the placenta and coats a group A or B infant (ABO HDFN). Next steps follow SOP (eluate, maternal antibody screen). IgM does not cross the placenta, and physiologic jaundice has a negative DAT.",
+      "distractorExplanations": {
+        "b": "Confuses IgM with IgG: IgM anti-A does not cross the placenta, so it cannot cause a neonatal DAT.",
+        "c": "Confuses physiologic jaundice (immature conjugation, DAT-negative) with immune coating shown by a positive DAT.",
+        "d": "Confuses maternal alloantibody with an infant making anti-B; neonates do not coat their own A cells with anti-B."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-blood-bank-006": {
+      "prompt": "A D-negative mother has a negative antibody screen and delivers a D-positive infant. Which RhIG decision is correct?",
+      "options": {
+        "a": "Withhold RhIG; delivery itself means she is already immunized to D",
+        "b": "Give RhIG; she is D-negative and not immunized, so anti-D risk remains",
+        "c": "Give RhIG if the infant DAT is already 4+ for anti-D coating",
+        "d": "Give RhIG to the D-positive infant rather than to the D-negative mother"
+      },
+      "correctOptionId": "b",
+      "explanation": "RhIG prevents anti-D formation in a D-negative person exposed to D-positive cells. Eligibility: mother is D-negative, not already immunized (no immune anti-D), and the infant (or FMH source) is D-positive. A postpartum dose is still indicated after this delivery; antenatal dosing follows facility protocol.",
+      "distractorExplanations": {
+        "a": "Confuses exposure with immunization: a negative screen means she has not formed anti-D; RhIG is given to prevent that.",
+        "c": "Confuses RhIG eligibility with a positive infant DAT; a 4+ DAT is not required and may reflect ABO HDFN, not anti-D.",
+        "d": "Confuses who is at risk: the D-negative mother can form anti-D; the D-positive infant does not receive maternal RhIG."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-blood-bank-007": {
+      "prompt": "Anti-K is identified in a patient. A K-negative donor unit is compatible at immediate spin. What crossmatch is required before issue?",
+      "options": {
+        "a": "Immediate-spin crossmatch alone is enough once the unit types K-negative",
+        "b": "Electronic crossmatch may replace serology because K was already named",
+        "c": "AHG (or equivalent) crossmatch of the antigen-negative unit is required",
+        "d": "Skip serologic crossmatch and issue after a visual check of the bag"
+      },
+      "correctOptionId": "c",
+      "explanation": "Immediate-spin (or electronic) crossmatch is for patients with a current negative antibody screen and no history of clinically significant antibodies. A positive screen / identified alloantibody requires selection of antigen-negative units plus an AHG crossmatch (or validated equivalent) to detect IgG incompatibility.",
+      "distractorExplanations": {
+        "a": "Confuses ABO immediate-spin XM with AHG XM; IS does not detect IgG anti-K even if the unit is labeled K-negative.",
+        "b": "Confuses electronic crossmatch eligibility: computer XM is not used when unexpected antibodies are present.",
+        "d": "Confuses visual inspection with compatibility testing; appearance does not rule out IgG incompatibility."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-blood-bank-008": {
+      "prompt": "A packed RBC unit is found sitting on the bench at 22°C. What storage condition was violated?",
+      "options": {
+        "a": "Packed RBCs are stored at 1–6°C, not at room temperature",
+        "b": "Packed RBCs must stay frozen at −18°C until the moment of issue",
+        "c": "Packed RBCs must be agitated continuously, like platelet units",
+        "d": "Packed RBCs may remain at 22°C for 24 hours if the seal is intact"
+      },
+      "correctOptionId": "a",
+      "explanation": "Licensed packed RBCs are stored at 1–6°C. Room temperature (20–24°C) is platelet storage, and ≤−18°C is frozen plasma/cryo. Time out of controlled refrigeration is limited by SOP (often a 30-minute / measured-temperature rule); a unit left at 22°C on the bench is not in storage.",
+      "distractorExplanations": {
+        "b": "Confuses RBC fridge storage with FFP/cryoprecipitate frozen storage at −18°C or colder.",
+        "c": "Confuses RBCs with platelets, which need 20–24°C plus continuous agitation.",
+        "d": "Confuses a brief monitored return-to-stock window with 24 hours at room temperature, which is not RBC storage."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-blood-bank-009": {
+      "prompt": "An apheresis platelet is found in the 1–6°C refrigerator, not on the agitator. Why is that storage incorrect?",
+      "options": {
+        "a": "Platelets expire at 30 days when they are kept refrigerated",
+        "b": "Platelets must be frozen at −18°C and thawed like FFP before issue",
+        "c": "Platelets must sit in a 37°C water bath from receipt until issue",
+        "d": "Platelets are stored at 20–24°C with continuous gentle agitation"
+      },
+      "correctOptionId": "d",
+      "explanation": "Platelets are stored at 20–24°C with continuous agitation for gas exchange and to prevent aggregation, typically up to 5–7 days per product dating. Refrigeration (1–6°C) is for RBCs and thawed plasma, not routine platelet storage; freezing is for FFP/cryo.",
+      "distractorExplanations": {
+        "a": "Confuses platelet dating (about 5–7 days at room temperature) with 30-day refrigerated storage, which is not used.",
+        "b": "Confuses platelets with FFP/cryoprecipitate, which are frozen at −18°C or colder until thawed.",
+        "c": "Confuses platelet room-temp storage with thawing or warming devices; 37°C water-bath holding is not platelet storage."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-blood-bank-010": {
+      "prompt": "FFP is thawed for a case expected in 90 minutes. How should it be handled compared with packed RBCs?",
+      "options": {
+        "a": "Keep FFP frozen in the 1–6°C RBC refrigerator until issue",
+        "b": "Thaw per SOP, then hold thawed plasma at 1–6°C; do not refreeze",
+        "c": "Store thawed FFP at 20–24°C on the platelet agitator until issue",
+        "d": "Refreeze leftover thawed FFP at −18°C to preserve clotting factors"
+      },
+      "correctOptionId": "b",
+      "explanation": "FFP is stored frozen at −18°C or colder, then thawed per SOP. After thawing it is kept at 1–6°C (like RBCs) for a limited dating window and is not refrozen. It is not stored in the fridge while still frozen, and it is not a room-temperature agitated product.",
+      "distractorExplanations": {
+        "a": "Confuses frozen FFP storage (≤−18°C) with RBC refrigerator temperature; FFP is not kept frozen at 1–6°C.",
+        "c": "Confuses thawed plasma with platelets (20–24°C with agitation).",
+        "d": "Confuses frozen inventory with thawed plasma: once thawed, FFP is not refrozen for later transfusion."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-blood-bank-011": {
+      "prompt": "At issue, unit number and ABO/Rh match the computer, but the patient's wristband medical record number does not match the request. What should the MLT do?",
+      "options": {
+        "a": "Issue the unit if the last name on the wristband is close enough",
+        "b": "Rewrite the unit tag to the wristband number and send the product",
+        "c": "Hold issue until two identifiers match the unit, tag, and request",
+        "d": "Send the unit and let nursing reconcile identifiers on the floor"
+      },
+      "correctOptionId": "c",
+      "explanation": "Clerical identification errors cause ABO-incompatible transfusion. Issue requires two independent patient identifiers plus unit number and ABO/Rh matching the tag, request, and records. A wristband/request mismatch is a stop: do not relabel around it or push the check to the bedside after release.",
+      "distractorExplanations": {
+        "a": "Confuses phonetic name similarity with two-identifier match; name-alone or 'close enough' is not an issue check.",
+        "b": "Confuses correcting a discrepancy with forging a match; tags are not rewritten to force the wristband number.",
+        "d": "Confuses blood-bank issue with nursing bedside check; both are required, and a known ID mismatch is not released."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-blood-bank-012": {
+      "prompt": "Ten minutes into an RBC transfusion the patient develops fever, back pain, and hemoglobinuria. The unit is stopped. What is the blood bank's first workup step?",
+      "options": {
+        "a": "Clerical check, then DAT and visual inspection for hemolysis per SOP",
+        "b": "Restart the same unit slowly after an antipyretic is given on the floor",
+        "c": "Run an antibody panel on plasma from the donor bag as the first test",
+        "d": "Discard the remaining unit in the trash so it cannot be reissued"
+      },
+      "correctOptionId": "a",
+      "explanation": "Suspect acute hemolytic transfusion reaction: stop the unit, keep IV access, and notify the blood bank. The initial lab workup is a clerical identification check plus visual inspection for hemolysis and a DAT on a post-transfusion specimen, per SOP. Further tests (repeat ABO/XM, cultures) follow that first pass.",
+      "distractorExplanations": {
+        "b": "Confuses febrile nonhemolytic reaction treatment with AHTR: fever plus back pain/hemoglobinuria is not 'slow and resume.'",
+        "c": "Confuses first-line clerical/DAT/visual checks with a donor-plasma panel, which is not the opening step.",
+        "d": "Confuses stopping the transfusion with destroying evidence; the bag and tubing return to the blood bank for the workup."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-blood-bank-013": {
+      "prompt": "A trauma patient is exsanguinating; type and screen are not finished. Uncrossmatched RBCs are requested now. Correct MLT practice?",
+      "options": {
+        "a": "Issue O-negative units with no physician signature because it is trauma",
+        "b": "Issue O-neg or group-specific RBCs as a documented physician release",
+        "c": "Refuse all RBCs until a full AHG crossmatch is completed and signed",
+        "d": "Issue any ABO group from oldest dating without recording the release"
+      },
+      "correctOptionId": "b",
+      "explanation": "Emergency uncrossmatched RBCs (O-negative, or group-specific once the ABO is known, per protocol) are a physician-released exception. The MLT issues them with signed documentation, then completes type, screen, and crossmatch on retained segments. It is not unsigned 'trauma privilege' and not a reason to skip records.",
+      "distractorExplanations": {
+        "a": "Confuses clinical urgency with authorization: the ordering physician still signs for uncrossmatched release.",
+        "c": "Confuses routine AHG XM with massive-transfusion exception; delaying all RBCs for AHG can be fatal in exsanguination.",
+        "d": "Confuses emergency O-neg/group-specific protocol with issuing unmatched random ABO units without documentation."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-blood-bank-014": {
+      "prompt": "A bleeding patient has fibrinogen 80 mg/dL. The team wants a small-volume product, not several units of plasma. What should the MLT prepare?",
+      "options": {
+        "a": "Apheresis platelets, because they are the concentrated fibrinogen product",
+        "b": "Packed RBCs, because residual plasma in the bag replaces fibrinogen",
+        "c": "Whole blood; cryoprecipitate is no longer used for hypofibrinogenemia",
+        "d": "Cryoprecipitate, which packs fibrinogen into a small infusion volume"
+      },
+      "correctOptionId": "d",
+      "explanation": "Cryoprecipitate is the concentrated fibrinogen (also factor VIII, vWF, factor XIII, fibronectin) product used when fibrinogen is low and volume overload from FFP is a concern. FFP contains fibrinogen but at plasma concentration, so many units would be needed. Platelets and packed RBCs are not fibrinogen concentrates.",
+      "distractorExplanations": {
+        "a": "Confuses platelet therapy (count/function) with fibrinogen replacement; platelets are not the fibrinogen concentrate.",
+        "b": "Confuses RBC transfusion with coagulation-factor replacement; packed RBCs do not treat a fibrinogen of 80 mg/dL.",
+        "c": "Confuses current practice: cryoprecipitate remains the small-volume fibrinogen product versus FFP volume."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-blood-bank-015": {
+      "prompt": "A panel is 3+ with Jk(a+b−) cells, 1+ with Jk(a+b+) cells, and 0 with Jk(a−) cells at AHG; autocontrol is 0. What is the best interpretation?",
+      "options": {
+        "a": "Cold autoantibody; prewarm the panel and ignore the Jk pattern",
+        "b": "Anti-I; expect the strongest reactions with cord red cells",
+        "c": "Anti-Jka showing dosage; crossmatch Jk(a−) antigen-negative units",
+        "d": "Warm autoantibody; all adult cells should be positive, including the auto"
+      },
+      "correctOptionId": "c",
+      "explanation": "A negative autocontrol rules out autoantibody. Reactivity only with Jk(a+) cells, stronger with Jk(a+b−) (double-dose) than Jk(a+b+) (single-dose), is anti-Jka with dosage. Select Jk(a−) units and AHG-crossmatch. Cold auto/anti-I would not spare Jk(a−) adult cells this cleanly, and a warm auto would typically react with the autocontrol.",
+      "distractorExplanations": {
+        "a": "Confuses alloanti-Jka with a cold auto; a negative autocontrol and Jk-specific pattern are not a cold auto to prewarm away.",
+        "b": "Confuses Kidd dosage with anti-I, which is usually a cold agglutinin stronger with adult I-positive cells, not a Jk(a) pattern.",
+        "d": "Confuses alloantibody with warm auto: warm autos usually have a positive autocontrol, not a clean Jk(a−) negative panel."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

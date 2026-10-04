@@ -1,0 +1,778 @@
+{
+  "gre-readiness-check": {
+    "gre-readiness-check-quant-148": {
+      "topicId": "quant",
+      "prompt": "A shop adds 15% sales tax to an $80 list price. How many dollars is the tax alone?",
+      "options": {
+        "a": "$12",
+        "b": "$15",
+        "c": "$18",
+        "d": "$92"
+      },
+      "correctOptionId": "a",
+      "explanation": "Tax is 0.15 × 80 = 12 dollars. The tagged total would be 80 + 12 = 92, but the question asks only for the tax, not the amount paid at the register.",
+      "distractorExplanations": {
+        "b": "Treats the 15% figure as $15 of tax instead of 15 percent of 80.",
+        "c": "Uses a 22.5% rate (or 80 × 0.225) rather than 15% of 80.",
+        "d": "Gives the tax-inclusive total 80 + 12 instead of the tax alone."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-149": {
+      "topicId": "quant",
+      "prompt": "Solve 3(x − 4) = 21 for x.",
+      "options": {
+        "a": "7",
+        "b": "11",
+        "c": "21",
+        "d": "25"
+      },
+      "correctOptionId": "b",
+      "explanation": "Divide both sides by 3 to get x − 4 = 7, then add 4 to obtain x = 11. Expanding first also works: 3x − 12 = 21, so 3x = 33 and x = 11.",
+      "distractorExplanations": {
+        "a": "Stops after 21 ÷ 3 = 7 and never adds back the subtracted 4.",
+        "c": "Copies the right-hand side 21 instead of solving for x.",
+        "d": "Adds 4 before dividing, as if the equation were 3x − 4 = 21."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-151": {
+      "topicId": "quant",
+      "prompt": "A bicycle wheel has radius 6 inches. What is its circumference, in inches?",
+      "options": {
+        "a": "6π",
+        "b": "12",
+        "c": "12π",
+        "d": "36π"
+      },
+      "correctOptionId": "c",
+      "explanation": "Circumference is 2πr. With r = 6, that is 2π × 6 = 12π inches. Diameter is 12, so C = πd is the same 12π.",
+      "distractorExplanations": {
+        "a": "Computes πr instead of 2πr, dropping the factor of 2.",
+        "b": "Gives the diameter 2r = 12 and omits the factor of π.",
+        "d": "Computes area πr² = 36π instead of circumference."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-152": {
+      "topicId": "quant",
+      "prompt": "A locker code uses 3 digits chosen from {1, 2, 3, 4, 5}, and digits may repeat. How many codes are possible?",
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "60",
+        "d": "125"
+      },
+      "correctOptionId": "d",
+      "explanation": "Each of the 3 positions has 5 choices independently, so 5 × 5 × 5 = 125 codes. Repetition is allowed, so this is 5³, not a permutation of distinct digits.",
+      "distractorExplanations": {
+        "a": "Uses C(5, 3) = 10, which counts unordered subsets without repetition.",
+        "b": "Uses 5 × 3 = 15 as if only one choice per unused digit slot.",
+        "c": "Uses P(5, 3) = 60, which forbids repeated digits."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-153": {
+      "topicId": "quant",
+      "prompt": "In a survey of 250 voters, 40% favored the levy. How many voters favored it?",
+      "options": {
+        "a": "100",
+        "b": "140",
+        "c": "160",
+        "d": "250"
+      },
+      "correctOptionId": "a",
+      "explanation": "40% of 250 is 0.40 × 250 = 100 voters. Equivalently, (2/5) × 250 = 100. The sample size 250 is the whole, not the part.",
+      "distractorExplanations": {
+        "b": "Computes 0.40 × 350, using the wrong whole instead of 250.",
+        "c": "Computes 0.40 × 400, or 250 − 90, not 40% of 250.",
+        "d": "Returns the survey size 250 instead of the 40% subset."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-154": {
+      "topicId": "quant",
+      "prompt": "What is the greater solution of |2x − 6| = 10?",
+      "options": {
+        "a": "−2",
+        "b": "8",
+        "c": "16",
+        "d": "32"
+      },
+      "correctOptionId": "b",
+      "explanation": "Split cases: 2x − 6 = 10 gives 2x = 16 and x = 8; 2x − 6 = −10 gives 2x = −4 and x = −2. The greater solution is 8.",
+      "distractorExplanations": {
+        "a": "Is the lesser root from 2x − 6 = −10, not the greater one.",
+        "c": "Stops at 2x = 16 and never divides by 2.",
+        "d": "Multiplies 2 × 16 instead of dividing 16 by 2."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-155": {
+      "topicId": "quant",
+      "prompt": "A right triangle has legs 3 m and 4 m. What is its area, in square meters?",
+      "options": {
+        "a": "3",
+        "b": "5",
+        "c": "6",
+        "d": "12"
+      },
+      "correctOptionId": "c",
+      "explanation": "Area of a right triangle is (1/2) × leg × leg = (1/2) × 3 × 4 = 6. The hypotenuse is 5 by 3-4-5, but that length is not the area.",
+      "distractorExplanations": {
+        "a": "Returns one leg instead of (1/2) × 3 × 4.",
+        "b": "Gives the hypotenuse 5 from the 3-4-5 triple, not the area.",
+        "d": "Omits the 1/2 and reports the product of the legs 3 × 4."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-157": {
+      "topicId": "quant",
+      "prompt": "A $500 deposit earns 10% interest compounded once per year. What is the account balance after 2 years?",
+      "options": {
+        "a": "$500",
+        "b": "$550",
+        "c": "$600",
+        "d": "$605"
+      },
+      "correctOptionId": "d",
+      "explanation": "After year 1 the balance is 500 × 1.10 = 550. After year 2 it is 550 × 1.10 = 605. Equivalently 500 × (1.10)² = 500 × 1.21 = 605.",
+      "distractorExplanations": {
+        "a": "Leaves the principal unchanged and ignores interest entirely.",
+        "b": "Stops after one year of 10% interest (500 × 1.10).",
+        "c": "Uses simple interest 500 × 0.10 × 2 = 100 added to 500, skipping compounding."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-158": {
+      "topicId": "quant",
+      "prompt": "Two fair six-sided dice are rolled. What is the probability that the sum is 12?",
+      "options": {
+        "a": "1/36",
+        "b": "1/18",
+        "c": "1/12",
+        "d": "1/6"
+      },
+      "correctOptionId": "a",
+      "explanation": "There are 6 × 6 = 36 equally likely outcomes. Only (6, 6) sums to 12, so the probability is 1/36.",
+      "distractorExplanations": {
+        "b": "Counts two ordered pairs, but (6, 6) is a single ordered outcome.",
+        "c": "Treats 12 as one of 12 sums, ignoring that sums are not equally likely.",
+        "d": "Gives P(one die shows 6) = 1/6 instead of P(sum 12)."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-159": {
+      "topicId": "quant",
+      "prompt": "8 liters of 20% saline are mixed with 4 liters of 40% saline. What fraction of the blend is salt?",
+      "options": {
+        "a": "1/5",
+        "b": "4/15",
+        "c": "3/10",
+        "d": "2/5"
+      },
+      "correctOptionId": "b",
+      "explanation": "Salt mass is 0.20 × 8 + 0.40 × 4 = 1.6 + 1.6 = 3.2 liters. Total volume is 12 liters, so 3.2/12 = 32/120 = 4/15.",
+      "distractorExplanations": {
+        "a": "Keeps the 20% concentration of the larger jug and ignores mixing.",
+        "c": "Averages 20% and 40% as 30% without weighting by volume.",
+        "d": "Keeps the 40% concentration of the smaller jug."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-160": {
+      "topicId": "quant",
+      "prompt": "How many positive integers divide 72?",
+      "options": {
+        "a": "8",
+        "b": "9",
+        "c": "12",
+        "d": "18"
+      },
+      "correctOptionId": "c",
+      "explanation": "72 = 2³ × 3², so the number of positive divisors is (3 + 1)(2 + 1) = 4 × 3 = 12. Listing also gives 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72.",
+      "distractorExplanations": {
+        "a": "Counts only the prime-power pieces or 2³ instead of the divisor formula.",
+        "b": "Uses 3 × 3 = 9 from the exponents without adding 1 to each.",
+        "d": "Adds an extra factor, as if 72 had a third prime in its factorization."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-161": {
+      "topicId": "quant",
+      "prompt": "For the linear rule g(t) = 2t + 7, g(9) equals which number?",
+      "options": {
+        "a": "16",
+        "b": "18",
+        "c": "23",
+        "d": "25"
+      },
+      "correctOptionId": "d",
+      "explanation": "Substitute x = 9: f(9) = 2(9) + 7 = 18 + 7 = 25. Do not multiply 2 by the whole (9 + 7).",
+      "distractorExplanations": {
+        "a": "Computes 9 + 7 = 16 and drops the coefficient 2.",
+        "b": "Computes only 2 × 9 = 18 and forgets to add 7.",
+        "c": "Evaluates 2(8) + 7 = 23, using 8 instead of 9."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-162": {
+      "topicId": "quant",
+      "prompt": "Simplify (2^5 × 2^3) / 2^6.",
+      "options": {
+        "a": "4",
+        "b": "8",
+        "c": "16",
+        "d": "64"
+      },
+      "correctOptionId": "a",
+      "explanation": "Same base: add exponents in the product then subtract the denominator: 2^(5+3−6) = 2^2 = 4. Canceling 2^5 / 2^5 leaves 2^3 / 2^1 = 2^2 as well.",
+      "distractorExplanations": {
+        "b": "Leaves 2^3 = 8 after canceling only part of the 2^6.",
+        "c": "Computes 2^(5+3−4) or 2^4 = 16 with an off-by-two exponent.",
+        "d": "Multiplies 2^6 = 64 and ignores the quotient structure."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-163": {
+      "topicId": "quant",
+      "prompt": "A courier drives 60 miles at 30 mph and returns the same 60 miles at 60 mph. What is the average speed for the round trip, in mph?",
+      "options": {
+        "a": "30",
+        "b": "40",
+        "c": "45",
+        "d": "90"
+      },
+      "correctOptionId": "b",
+      "explanation": "Outbound time is 60/30 = 2 hours; return is 60/60 = 1 hour. Total distance 120 miles in 3 hours, so average speed is 120/3 = 40 mph. The arithmetic mean of 30 and 60 is not the average speed.",
+      "distractorExplanations": {
+        "a": "Reports only the slower outbound speed of 30 mph.",
+        "c": "Averages 30 and 60 as (30+60)/2 = 45, which ignores unequal times.",
+        "d": "Adds the two speeds instead of using total distance over total time."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-164": {
+      "topicId": "quant",
+      "prompt": "How many 2-person committees can be formed from 6 volunteers?",
+      "options": {
+        "a": "12",
+        "b": "13",
+        "c": "15",
+        "d": "30"
+      },
+      "correctOptionId": "c",
+      "explanation": "Order does not matter, so C(6, 2) = 6 × 5 / 2 = 15. P(6, 2) = 30 would count ordered pairs, which overcounts each committee twice.",
+      "distractorExplanations": {
+        "a": "Computes 6 × 2 = 12 instead of the combination C(6, 2).",
+        "b": "Off-by-one from 15, as if one pairing were excluded without reason.",
+        "d": "Uses P(6, 2) = 30, counting ordered seats instead of unordered pairs."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-165": {
+      "topicId": "quant",
+      "prompt": "A storage cube has edge length 5 cm. What is its volume, in cubic centimeters?",
+      "options": {
+        "a": "15",
+        "b": "25",
+        "c": "75",
+        "d": "125"
+      },
+      "correctOptionId": "d",
+      "explanation": "Cube volume is s³ = 5 × 5 × 5 = 125. Surface area would be 6s² = 150, which is a different quantity.",
+      "distractorExplanations": {
+        "a": "Adds the three edges 5 + 5 + 5 instead of multiplying.",
+        "b": "Computes s² = 25, the area of one face, not the volume.",
+        "c": "Computes 3 × 25 = 75, three faces, not the solid volume."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-166": {
+      "topicId": "quant",
+      "prompt": "When 100 is divided by 7, what is the remainder?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "7"
+      },
+      "correctOptionId": "a",
+      "explanation": "7 × 14 = 98, and 100 − 98 = 2, so 100 = 7 × 14 + 2. The remainder must be strictly less than 7.",
+      "distractorExplanations": {
+        "b": "Uses 7 × 13 = 91 and 100 − 91 = 9, then reduces incorrectly to 3.",
+        "c": "Uses 7 × 13 = 91 and a leftover 9, then reports 4 from a mis-subtraction.",
+        "d": "Reports the divisor 7, which cannot be a remainder when dividing by 7."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-167": {
+      "topicId": "quant",
+      "prompt": "In the coordinate plane, what is the distance from (0, 0) to (6, 8)?",
+      "options": {
+        "a": "7",
+        "b": "10",
+        "c": "14",
+        "d": "48"
+      },
+      "correctOptionId": "b",
+      "explanation": "Distance is √(6² + 8²) = √(36 + 64) = √100 = 10. This is the 6-8-10 scaling of a 3-4-5 triangle.",
+      "distractorExplanations": {
+        "a": "Averages 6 and 8, or uses √(36 + 13), not √(36 + 64).",
+        "c": "Adds 6 + 8 instead of taking the Pythagorean hypotenuse.",
+        "d": "Multiplies 6 × 8 = 48, which is unrelated to Euclidean distance."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-168": {
+      "topicId": "quant",
+      "prompt": "Printer A finishes a batch in 6 hours and printer B in 12 hours. Working together at constant rates, how many hours do they need?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "9"
+      },
+      "correctOptionId": "c",
+      "explanation": "Combined rate is 1/6 + 1/12 = 2/12 + 1/12 = 3/12 = 1/4 batch per hour, so the time is 4 hours. Adding the times 6 + 12 is not the together-time.",
+      "distractorExplanations": {
+        "a": "Takes the harmonic shortcut with the wrong product, 24/12 = 2.",
+        "b": "Averages 6 and 12 as 9, then halves that to 3.",
+        "d": "Averages the two times (6 + 12)/2 = 9 instead of adding rates."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-169": {
+      "topicId": "quant",
+      "prompt": "An arithmetic sequence begins 5, 8, 11, …. What is the 10th term?",
+      "options": {
+        "a": "14",
+        "b": "29",
+        "c": "30",
+        "d": "32"
+      },
+      "correctOptionId": "d",
+      "explanation": "Common difference d = 3. The nth term is a + (n − 1)d = 5 + 9 × 3 = 5 + 27 = 32. Using n = 10 as the multiplier 10 × 3 would skip the first-term offset.",
+      "distractorExplanations": {
+        "a": "Gives the 4th term 5 + 3 × 3 = 14, not the 10th.",
+        "b": "Uses 5 + 8 × 3 = 29, as if there were 8 steps instead of 9.",
+        "c": "Uses 10 × 3 = 30 and drops the starting 5."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-171": {
+      "topicId": "quant",
+      "prompt": "Two fair coins are flipped. What is the probability both land heads?",
+      "options": {
+        "a": "1/4",
+        "b": "1/3",
+        "c": "1/2",
+        "d": "3/4"
+      },
+      "correctOptionId": "a",
+      "explanation": "Four equally likely outcomes: HH, HT, TH, TT. Only HH is two heads, so the probability is 1/4. Independence also gives (1/2) × (1/2) = 1/4.",
+      "distractorExplanations": {
+        "b": "Conditions on seeing at least one head (3 outcomes) and miscounts HH as 1/3.",
+        "c": "Gives P(one particular coin is heads) = 1/2, not both coins.",
+        "d": "Gives P(at least one head) = 3/4 instead of both heads."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-172": {
+      "topicId": "quant",
+      "prompt": "What is the slope of the line through (2, 3) and (6, 11)?",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "4",
+        "d": "8"
+      },
+      "correctOptionId": "b",
+      "explanation": "Slope is (y₂ − y₁)/(x₂ − x₁) = (11 − 3)/(6 − 2) = 8/4 = 2. Rise 8 over run 4, not rise alone.",
+      "distractorExplanations": {
+        "a": "Uses run over rise 4/8, or (6 − 2)/(11 − 3) inverted twice incorrectly as 1.",
+        "c": "Uses the horizontal run 4 as if that run were the slope.",
+        "d": "Uses the vertical rise 8 as if that rise were the slope."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-173": {
+      "topicId": "quant",
+      "prompt": "The interior angles of a triangle sum to how many degrees?",
+      "options": {
+        "a": "90",
+        "b": "120",
+        "c": "180",
+        "d": "360"
+      },
+      "correctOptionId": "c",
+      "explanation": "Any Euclidean triangle has interior-angle sum 180°. A right angle is 90°, and a full quadrilateral sums to 360°, neither of which is the triangle sum.",
+      "distractorExplanations": {
+        "a": "Gives one right angle, not the sum of all three interior angles.",
+        "b": "Uses 3 × 40 or an exterior-angle mix, not the interior sum.",
+        "d": "Gives the sum for a quadrilateral, or a full turn, not a triangle."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-174": {
+      "topicId": "quant",
+      "prompt": "What is the least common multiple of 12 and 18?",
+      "options": {
+        "a": "6",
+        "b": "24",
+        "c": "30",
+        "d": "36"
+      },
+      "correctOptionId": "d",
+      "explanation": "12 = 2² × 3 and 18 = 2 × 3², so LCM = 2² × 3² = 4 × 9 = 36. The GCD is 6, which is a factor of the LCM, not the LCM itself.",
+      "distractorExplanations": {
+        "a": "Gives gcd(12, 18) = 6 instead of the least common multiple.",
+        "b": "Takes 2 × 12 = 24, a common multiple that is not the least.",
+        "c": "Adds 12 + 18 = 30, which is not a multiple of 12."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-175": {
+      "topicId": "quant",
+      "prompt": "What is the positive square root of 49?",
+      "options": {
+        "a": "7",
+        "b": "14",
+        "c": "24",
+        "d": "49"
+      },
+      "correctOptionId": "a",
+      "explanation": "7 × 7 = 49, so √49 = 7 (the principal, positive root). 49 itself is the radicand, not the root, and 14 would be 2 × 7.",
+      "distractorExplanations": {
+        "b": "Doubles 7, as if √49 were 2√49/2 without simplifying.",
+        "c": "Approximates 49/2 = 24.5 and truncates, which is not a square root.",
+        "d": "Returns the radicand 49 instead of its square root."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-176": {
+      "topicId": "quant",
+      "prompt": "For the list 4, 4, 8, 12, what is the median?",
+      "options": {
+        "a": "4",
+        "b": "6",
+        "c": "7",
+        "d": "8"
+      },
+      "correctOptionId": "b",
+      "explanation": "An even count of four ordered values uses the mean of the two central numbers: (4 + 8)/2 = 6. The mode is 4 and the mean is 7, which are different statistics.",
+      "distractorExplanations": {
+        "a": "Reports the mode (the repeated 4), not the median.",
+        "c": "Reports the mean (4+4+8+12)/4 = 7, not the median.",
+        "d": "Takes the larger of the two middle values instead of averaging them."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-177": {
+      "topicId": "quant",
+      "prompt": "A soup can is a cylinder with radius 2 cm and height 5 cm. What is its volume?",
+      "options": {
+        "a": "4π",
+        "b": "10π",
+        "c": "20π",
+        "d": "40π"
+      },
+      "correctOptionId": "c",
+      "explanation": "Cylinder volume is πr²h = π × 2² × 5 = π × 4 × 5 = 20π cubic centimeters. Lateral area 2πrh = 20π is a coincidence of numbers but a different formula; here r²h is 20.",
+      "distractorExplanations": {
+        "a": "Computes πr² = 4π, the base area, and omits height.",
+        "b": "Computes πrh = 10π, missing one factor of the radius r.",
+        "d": "Uses 2πr²h = 40π, inserting an extra factor of 2 from surface area."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-178": {
+      "topicId": "quant",
+      "prompt": "In how many distinct orders can 5 runners line up at a starting gate?",
+      "options": {
+        "a": "5",
+        "b": "15",
+        "c": "25",
+        "d": "120"
+      },
+      "correctOptionId": "d",
+      "explanation": "Lineups are permutations of 5 distinct people: 5! = 5 × 4 × 3 × 2 × 1 = 120. C(5, 1) or 5² do not count ordered lists of all five.",
+      "distractorExplanations": {
+        "a": "Counts the people instead of the permutations of those people.",
+        "b": "Uses 5 × 3 = 15 rather than the factorial 5!.",
+        "c": "Uses 5² = 25, as if only two positions were filled from 5."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-179": {
+      "topicId": "quant",
+      "prompt": "Compute 2^0 + 2^1 + 2^2.",
+      "options": {
+        "a": "7",
+        "b": "8",
+        "c": "12",
+        "d": "16"
+      },
+      "correctOptionId": "a",
+      "explanation": "2^0 = 1, 2^1 = 2, and 2^2 = 4, so the sum is 1 + 2 + 4 = 7. A geometric-series shortcut 2^3 − 1 = 7 matches. 2^3 = 8 is the next power, not this sum.",
+      "distractorExplanations": {
+        "b": "Computes 2^3 = 8, the next power, instead of summing 1 + 2 + 4.",
+        "c": "Adds the exponents 0 + 1 + 2 = 3 and then 4 × 3, or 2+4+6.",
+        "d": "Computes 2^4 = 16, skipping the actual three-term sum."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-180": {
+      "topicId": "quant",
+      "prompt": "Given 1/x + 1/y = 1/2 with x = 6, find y.",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "12"
+      },
+      "correctOptionId": "b",
+      "explanation": "1/6 + 1/y = 1/2, so 1/y = 1/2 − 1/6 = 3/6 − 1/6 = 2/6 = 1/3. Therefore y = 3. Harmonic pairing: the number whose reciprocal with 1/6 yields 1/2 is 3.",
+      "distractorExplanations": {
+        "a": "Treats 1/2 − 1/6 as if it were still 1/2, so y = 2.",
+        "c": "Averages 6 and 2, or solves 1/6 + 1/y = 1/3 instead.",
+        "d": "Takes y = 2x = 12, as if the equation were x + y = 18 with a different relation."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-181": {
+      "topicId": "quant",
+      "prompt": "An equilateral triangle has side length 6. What is its area?",
+      "options": {
+        "a": "6√3",
+        "b": "8√3",
+        "c": "9√3",
+        "d": "18√3"
+      },
+      "correctOptionId": "c",
+      "explanation": "Area = (√3 / 4) s² = (√3 / 4) × 36 = 9√3. Height is 3√3, so (1/2) × 6 × 3√3 = 9√3 as well.",
+      "distractorExplanations": {
+        "a": "Uses (√3 / 4) × 24 or half of the correct 9√3.",
+        "b": "Mixes (√3 / 4) × 32, as if the side were √32.",
+        "d": "Uses (√3 / 2) s² = 18√3, doubling the standard formula."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-182": {
+      "topicId": "quant",
+      "prompt": "After a 25% increase, a price is $80. What was the original price?",
+      "options": {
+        "a": "$55",
+        "b": "$60",
+        "c": "$61",
+        "d": "$64"
+      },
+      "correctOptionId": "d",
+      "explanation": "If the original is p, then 1.25p = 80, so p = 80 / 1.25 = 64. Subtracting 25% of 80 (which is 20) gives 60 and reverses the percent on the wrong base.",
+      "distractorExplanations": {
+        "a": "Subtracts 25 from 80 as dollars, yielding 55.",
+        "b": "Subtracts 25% of the new price: 80 × 0.75 = 60, reversing the percent on 80 instead of dividing by 1.25.",
+        "c": "Uses 80 − 19 from a 24% mix, not 80 ÷ 1.25."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-183": {
+      "topicId": "quant",
+      "prompt": "What is the greatest integer less than or equal to 3.9?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "5",
+        "d": "9"
+      },
+      "correctOptionId": "a",
+      "explanation": "The floor of 3.9 is 3, the greatest integer that is not greater than 3.9. Rounding to nearest would give 4, which is a different function.",
+      "distractorExplanations": {
+        "b": "Rounds 3.9 to the nearest integer 4, which is ceiling-like here, not floor.",
+        "c": "Jumps to 5, farther from 3.9 than 4 even for rounding.",
+        "d": "Reads the tenths digit 9 as if it were the floor value."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-184": {
+      "topicId": "quant",
+      "prompt": "Red paint and blue paint are mixed in the ratio 2:5. If the mix is 63 ounces, how many ounces are red?",
+      "options": {
+        "a": "9",
+        "b": "18",
+        "c": "21",
+        "d": "45"
+      },
+      "correctOptionId": "b",
+      "explanation": "2 + 5 = 7 parts, and 63 / 7 = 9 ounces per part. Red is 2 parts, so 18 ounces. Blue would be 45 ounces.",
+      "distractorExplanations": {
+        "a": "Gives one part (63 / 7 = 9) instead of two parts of red.",
+        "c": "Uses 63 / 3 = 21, as if the 2:5 ratio summed to 3 parts.",
+        "d": "Gives the blue share 5 × 9 = 45 instead of red."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-185": {
+      "topicId": "quant",
+      "prompt": "A parallelogram has base 10 cm and corresponding height 7 cm. What is its area, in square centimeters?",
+      "options": {
+        "a": "17",
+        "b": "34",
+        "c": "70",
+        "d": "140"
+      },
+      "correctOptionId": "c",
+      "explanation": "Parallelogram area is base × height = 10 × 7 = 70. Perimeter would need the sides, not this height, and 2 × 70 would double the area without reason.",
+      "distractorExplanations": {
+        "a": "Adds 10 + 7 = 17 instead of multiplying base by height.",
+        "b": "Computes 2(10 + 7) = 34 as if it were a perimeter of those two lengths.",
+        "d": "Doubles the parallelogram area as 2 × 10 × 7 = 140."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-186": {
+      "topicId": "quant",
+      "prompt": "Evaluate the stacked power (3^2)^3.",
+      "options": {
+        "a": "27",
+        "b": "81",
+        "c": "243",
+        "d": "729"
+      },
+      "correctOptionId": "d",
+      "explanation": "Power of a power multiplies exponents: (3^2)^3 = 3^6 = 729. Also 9^3 = 729. 3^(2×3) is not 3^(2+3) = 3^5 = 243.",
+      "distractorExplanations": {
+        "a": "Computes 3^3 = 27, using only the outer exponent on 3.",
+        "b": "Computes 3^4 = 81, or 9², which is not (3²)³.",
+        "c": "Adds exponents 2 + 3 to get 3^5 = 243 instead of multiplying them."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-187": {
+      "topicId": "quant",
+      "prompt": "The data set of ages is 1, 1, 4, 8, 9. What is the mode?",
+      "options": {
+        "a": "1",
+        "b": "4",
+        "c": "5",
+        "d": "8"
+      },
+      "correctOptionId": "a",
+      "explanation": "The mode is the most frequent value. 1 appears twice and every other value appears once, so the mode is 1. The median is 4 and the mean is 4.6.",
+      "distractorExplanations": {
+        "b": "Gives the median of the ordered ages, not the most frequent mode.",
+        "c": "Rounds the arithmetic mean 23/5 = 4.6 up to 5.",
+        "d": "Picks a unique interior value 8 that is not the most frequent."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-188": {
+      "topicId": "quant",
+      "prompt": "A $90 jacket is sold at 20% off. What is the sale price?",
+      "options": {
+        "a": "$18",
+        "b": "$72",
+        "c": "$90",
+        "d": "$108"
+      },
+      "correctOptionId": "b",
+      "explanation": "The customer pays 80% of 90, so 0.80 × 90 = 72. The $18 is the discount amount, not the price at the register.",
+      "distractorExplanations": {
+        "a": "Gives the discount 0.20 × 90 = 18 instead of the sale price.",
+        "c": "Leaves the original $90 tag unchanged after the coupon.",
+        "d": "Marks the jacket up 20% to 108 instead of discounting it."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-190": {
+      "topicId": "quant",
+      "prompt": "Inlet C fills an empty pool in 8 hours; drain D empties a full pool in 24 hours. If both are open, how many hours fill the empty pool?",
+      "options": {
+        "a": "6 hours",
+        "b": "8 hours",
+        "c": "12 hours",
+        "d": "16 hours"
+      },
+      "correctOptionId": "c",
+      "explanation": "Net rate is 1/8 − 1/24 = 3/24 − 1/24 = 2/24 = 1/12 of the pool per hour, so filling takes 12 hours. Adding 8 + 24 or subtracting 24 − 8 mixes times, not rates.",
+      "distractorExplanations": {
+        "a": "Adds the rates as if both were filling: 1/8 + 1/24 = 1/6, time 6.",
+        "b": "Ignores the drain and reports the inlet-only time of 8 hours.",
+        "d": "Subtracts the times 24 − 8 = 16 instead of subtracting rates."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-191": {
+      "topicId": "quant",
+      "prompt": "A gift box is a cube with edge 4 in. How many square inches of wrapping cover all six faces with no overlap?",
+      "options": {
+        "a": "16",
+        "b": "24",
+        "c": "64",
+        "d": "96"
+      },
+      "correctOptionId": "d",
+      "explanation": "Surface area of a cube is 6s² = 6 × 16 = 96. Volume s³ = 64 is cubic inches, not wrapping area.",
+      "distractorExplanations": {
+        "a": "Gives the area of a single face 4² = 16.",
+        "b": "Uses 6 × 4 = 24, adding edges instead of using 6s².",
+        "c": "Gives the volume 4³ = 64 instead of surface area."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-192": {
+      "topicId": "quant",
+      "prompt": "If 8 painters finish a wall in 12 days, how many days would 16 painters need at the same rate?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "12",
+        "d": "24"
+      },
+      "correctOptionId": "a",
+      "explanation": "Work is 8 × 12 = 96 painter-days. With 16 painters, days = 96 / 16 = 6. Doubling the crew halves the time when rate per painter is constant.",
+      "distractorExplanations": {
+        "b": "Keeps 8 days from the original crew size instead of the time.",
+        "c": "Leaves the original 12 days even though the crew doubled.",
+        "d": "Doubles the days to 24 when the crew doubled, inverting inverse proportion."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-193": {
+      "topicId": "quant",
+      "prompt": "A card is drawn at random from a standard 52-card deck. What is the probability it is a heart?",
+      "options": {
+        "a": "1/13",
+        "b": "1/4",
+        "c": "1/3",
+        "d": "1/2"
+      },
+      "correctOptionId": "b",
+      "explanation": "A standard deck has 13 hearts among 52 cards, so 13/52 = 1/4. Probability of a specific rank (one ace of hearts class) would be 1/52 or 1/13 for a given rank across suits.",
+      "distractorExplanations": {
+        "a": "Gives 4/52 = 1/13, the chance of a given rank (for example, any ace), not a suit.",
+        "c": "Approximates 13/39 or treats three remaining suits incorrectly as 1/3.",
+        "d": "Splits red/black as 1/2, which is two suits, not hearts alone."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-194": {
+      "topicId": "quant",
+      "prompt": "A balloon is a sphere of radius 3 cm. What is its volume?",
+      "options": {
+        "a": "9π",
+        "b": "12π",
+        "c": "27π",
+        "d": "36π"
+      },
+      "correctOptionId": "d",
+      "explanation": "Sphere volume is (4/3)πr³ = (4/3)π × 27 = 36π. Surface area 4πr² = 36π is numerically the same here, but the asked quantity is volume and the formula used is (4/3)πr³.",
+      "distractorExplanations": {
+        "a": "Computes πr² = 9π, a circle of radius 3, not the sphere volume.",
+        "b": "Uses 4πr = 12π, mixing circumference factors into volume.",
+        "c": "Uses πr³ = 27π and drops the 4/3 coefficient."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

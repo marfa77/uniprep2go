@@ -1,0 +1,259 @@
+{
+  "phr-hrci-readiness-check": {
+    "phr-hrci-readiness-check-comp-ben-031": {
+      "prompt": "A nonexempt warehouse associate in a federal-FLSA-only state works 9 hours Monday–Thursday and 4 hours Friday (40 hours). The manager then schedules 6 hours on Saturday. What overtime is due under the FLSA?",
+      "options": {
+        "a": "Time-and-a-half for the 6 Saturday hours as hours over 40 in the workweek",
+        "b": "Daily overtime for each 9-hour weekday because those days exceeded 8 hours",
+        "c": "Double-time pay for Saturday because it is a sixth consecutive scheduled day",
+        "d": "No overtime at all because no single workday reached 10 scheduled hours"
+      },
+      "correctOptionId": "a",
+      "explanation": "Federal FLSA overtime is 1.5× the regular rate for hours over 40 in a workweek. The first 40 hours are already worked, so the Saturday six hours are overtime. Daily overtime after 8 or 10 hours, and sixth-day double time, come from some state laws or contracts, not the default FLSA rule.",
+      "distractorExplanations": {
+        "b": "Confuses California-style daily overtime after 8 hours with the federal FLSA weekly 40-hour test.",
+        "c": "The FLSA rate is time-and-a-half; sixth-day or double-time premiums are state or contract rules.",
+        "d": "A 10-hour daily trigger is not the federal test; weekly hours over 40 still create overtime."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-032": {
+      "prompt": "A coordinator is titled “Director of Operations” and is paid a salary above the FLSA threshold, but spends about 90% of hours scanning invoices with no hire/fire or policy authority. What should HR conclude about exemption?",
+      "options": {
+        "a": "The director title automatically satisfies the executive exemption tests",
+        "b": "Primary duties fail the EAP tests, so treat the employee as nonexempt",
+        "c": "Salary above the threshold is enough even when duties are clerical",
+        "d": "Paying any salary lets the employer skip overtime regardless of duties"
+      },
+      "correctOptionId": "b",
+      "explanation": "FLSA white-collar exemptions require both a salary-basis/salary-level test and a duties test. A director title and a salary do not convert clerical scanning into executive or administrative work. Without genuine management or independent policy judgment as the primary duty, the role is nonexempt and overtime is due.",
+      "distractorExplanations": {
+        "a": "Titles are not controlling; the executive test looks at actual management of a recognized department and staff.",
+        "c": "Salary level is necessary but not sufficient; clerical production work fails the duties test.",
+        "d": "Salary basis without qualifying duties does not create an exemption or erase overtime."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-033": {
+      "prompt": "An eligible employee is on approved FMLA leave for a serious health condition. What must the employer do with the employee’s group health coverage during that leave?",
+      "options": {
+        "a": "Cancel medical coverage on the first unpaid leave day to avoid premium cost",
+        "b": "Move the employee to COBRA immediately because the leave week is unpaid",
+        "c": "Keep group health on the same terms as if the employee were still at work",
+        "d": "Continue coverage only after the employee prepays all 12 weeks of premiums"
+      },
+      "correctOptionId": "c",
+      "explanation": "Federal FMLA requires the employer to maintain group health coverage under the same conditions as if the employee had continued working. The employee still owes the usual employee share of premiums. Unpaid leave is not a COBRA qualifying event by itself while FMLA coverage must be kept in force.",
+      "distractorExplanations": {
+        "a": "Dropping coverage on day one of unpaid FMLA violates the maintain-coverage rule.",
+        "b": "COBRA is for loss of coverage after a qualifying event, not a substitute for FMLA continuation.",
+        "d": "Employers may require the usual share on the usual schedule; requiring 12 weeks prepaid is not the federal rule."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-034": {
+      "prompt": "A covered employee at an 80-person employer is terminated (not for gross misconduct) and receives a COBRA election notice. What is the usual federal election window?",
+      "options": {
+        "a": "30 days from the qualifying event, or continuation rights expire permanently",
+        "b": "90 days from the plan’s Form 5500 filing date for that plan year",
+        "c": "No election is needed because coverage continues automatically for 18 months",
+        "d": "60 days from the later of coverage loss or when the election notice arrives"
+      },
+      "correctOptionId": "d",
+      "explanation": "Federal COBRA gives the qualified beneficiary at least 60 days to elect, measured from the later of the date coverage would be lost or the date the election notice is provided. Coverage is not automatic. Thirty days is a common misconception borrowed from other benefit deadlines, and Form 5500 timing is unrelated.",
+      "distractorExplanations": {
+        "a": "Confuses a 30-day HIPAA special-enrollment or other deadline with COBRA’s 60-day election period.",
+        "b": "Form 5500 is an annual plan filing; it does not start or end a COBRA election clock.",
+        "c": "Continuation is elective and generally requires timely election and premium payment, not automatic enrollment."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-035": {
+      "prompt": "After a market study, a job’s 50th-percentile survey rate is $80,000. Leadership wants a match-the-market policy. How should HR set the salary-range midpoint?",
+      "options": {
+        "a": "Place the midpoint at the 75th percentile so the range lags the labor market",
+        "b": "Set the midpoint at the 50th percentile ($80,000) as the match-market target",
+        "c": "Set the midpoint equal to the range minimum so new hires start at market rate",
+        "d": "Ignore survey data and set the midpoint solely from the incumbent’s current pay"
+      },
+      "correctOptionId": "b",
+      "explanation": "In a match-the-market strategy, the range midpoint is aimed at the market going rate, typically the survey 50th percentile for the benchmark job. Leading uses a higher percentile; lagging uses a lower one. Midpoint is not the minimum, and one incumbent’s pay is not a market price.",
+      "distractorExplanations": {
+        "a": "The 75th percentile is a lead-the-market choice, not a lag or a match-to-median design.",
+        "c": "The minimum is the hire-in zone; using it as midpoint would underpay fully proficient incumbents.",
+        "d": "Job pricing starts from the job’s market and internal value, not one person’s current salary."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-036": {
+      "prompt": "A covered employee is terminated for reasons other than gross misconduct. What is the usual maximum federal COBRA continuation period for that qualifying event?",
+      "options": {
+        "a": "6 months, matching a typical short-term disability maximum duration",
+        "b": "12 months, matching an ERISA summary plan description annual cycle",
+        "c": "18 months for termination or a reduction in hours",
+        "d": "36 months for every qualifying event, including ordinary termination"
+      },
+      "correctOptionId": "c",
+      "explanation": "Termination or a reduction in hours generally opens 18 months of COBRA (29 months if a timely disability extension applies). Thirty-six months is reserved for other events such as death, divorce, Medicare entitlement of the covered employee, or a dependent aging out—not ordinary termination.",
+      "distractorExplanations": {
+        "a": "Short-term disability duration is a separate wage-replacement design, not the COBRA maximum.",
+        "b": "SPD timing and annual notices are ERISA communication rules, not COBRA duration.",
+        "d": "36 months applies to specified second events, not the default termination/reduction-in-hours period."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-037": {
+      "prompt": "HR is building a point-factor job evaluation plan to price internal jobs. What should the compensable factors measure?",
+      "options": {
+        "a": "Each incumbent’s latest performance rating and years of service in the role",
+        "b": "External survey percentiles for similar titles in the local labor market",
+        "c": "Degrees the current holder earned beyond what the job description requires",
+        "d": "Job-content dimensions: skill, effort, responsibility, and working conditions"
+      },
+      "correctOptionId": "d",
+      "explanation": "Point-factor systems score the job, not the person. Classic compensable factors are skill, effort, responsibility, and working conditions (or similar job-content dimensions). Performance, tenure, extra credentials, and market percentiles belong to other pay tools: merit, longevity, hiring criteria, and market pricing.",
+      "distractorExplanations": {
+        "a": "Performance and tenure price the person; they are not job-evaluation factors.",
+        "b": "Survey percentiles are the market-pricing method, used alongside—not as—internal point factors.",
+        "c": "Extra education the incumbent holds is a person characteristic, not a requirement of the job."
+      },
+      "difficulty": "easy"
+    },
+    "phr-hrci-readiness-check-comp-ben-038": {
+      "prompt": "An analyst is paid $56,000. The grade midpoint is $70,000 and the range maximum is $91,000. What does a compa-ratio of 0.80 mean for job pricing?",
+      "options": {
+        "a": "Pay is 80% of midpoint and may need a market or internal-equity review",
+        "b": "Pay is 80% of the range maximum, so the incumbent is already over range",
+        "c": "Pay sits 20% above midpoint because 1.00 minus 0.80 is read in reverse",
+        "d": "The job is priced at the 80th percentile of the salary survey used this year"
+      },
+      "correctOptionId": "a",
+      "explanation": "Compa-ratio is actual pay divided by the range midpoint ($56,000 ÷ $70,000 = 0.80). Below 1.00 means pay is under midpoint, which is a signal to check experience, performance, or compression—not a legal violation by itself. It is not pay versus maximum and not a market percentile.",
+      "distractorExplanations": {
+        "b": "Compa-ratio uses midpoint, not maximum; $56,000 is well below the $91,000 max.",
+        "c": "0.80 is 20% below midpoint, not above; reversing the ratio misreads the index.",
+        "d": "A market percentile compares the job rate to survey data, which is a different metric."
+      },
+      "difficulty": "easy"
+    },
+    "phr-hrci-readiness-check-comp-ben-039": {
+      "prompt": "A nonexempt assembler earns $20 per hour plus a promised production bonus tied to weekly output. How should overtime be calculated under the FLSA?",
+      "options": {
+        "a": "Ignore the bonus and pay overtime only at 1.5 times the $20 hourly rate",
+        "b": "Include the nondiscretionary bonus in the regular rate, then pay 1.5× over 40",
+        "c": "Pay double time on the bonus alone and ignore whether weekly hours exceed 40",
+        "d": "Treat the bonus as a gift and exclude it from both straight-time wages and overtime"
+      },
+      "correctOptionId": "b",
+      "explanation": "Nondiscretionary bonuses (promised for output, attendance, or similar) must be included in the FLSA regular rate. Overtime is 1.5 times that blended rate for hours over 40. Truly discretionary bonuses, decided at the employer’s sole later choice with no prior promise, are the ones generally excluded.",
+      "distractorExplanations": {
+        "a": "Omitting a promised production bonus understates the regular rate and underpays overtime.",
+        "c": "Overtime is driven by weekly hours over 40, not by paying double time on the bonus in isolation.",
+        "d": "A promised output bonus is wages, not a gift; gifts and true discretionary bonuses are the exclusion."
+      },
+      "difficulty": "hard"
+    },
+    "phr-hrci-readiness-check-comp-ben-040": {
+      "prompt": "A biotech employer cannot fill specialized quality roles and has budget for higher fixed pay. When is a lead-the-market midpoint policy the best fit?",
+      "options": {
+        "a": "When the goal is to cut base payroll during a soft labor market",
+        "b": "When turnover is already low and replacements are easy to hire locally",
+        "c": "When scarce skills must be hired and the budget can fund higher midpoints",
+        "d": "When the firm wants to lag surveys and rely only on year-end cash bonuses"
+      },
+      "correctOptionId": "c",
+      "explanation": "Lead-the-market sets midpoints above survey medians to attract and retain scarce talent. It raises fixed cost, so it fits when skills are hard to hire and leadership will fund the structure. Cost-cutting, easy fills, or a lag-plus-bonus mix point to match or lag strategies instead.",
+      "distractorExplanations": {
+        "a": "Cutting base pay in a soft market is a lag or freeze strategy, the opposite of leading.",
+        "b": "Easy replacement and low turnover do not justify paying a structural premium.",
+        "d": "Lagging the survey and substituting bonuses is a lag mix, not a lead-midpoint policy."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-041": {
+      "prompt": "A salaried exempt professional misses three hours on Tuesday for personal errands. The manager wants to reduce that week’s salary by three hours. What is the usual FLSA salary-basis rule?",
+      "options": {
+        "a": "Dock any partial-day personal absence; exempt status is unaffected by the deduction",
+        "b": "Convert the person to hourly for that week, then resume salary the following week",
+        "c": "Reduce salary in proportion to hours missed on every partial personal day",
+        "d": "Do not dock partial-day personal absences; that deduction can destroy the exemption"
+      },
+      "correctOptionId": "d",
+      "explanation": "Exempt EAP employees must be paid on a salary basis. Deducting pay for a partial-day personal absence is a classic improper deduction and can destroy the exemption (subject to the window-of-correction rules). Full-day personal absences, bona fide PTO banks, and FMLA leave have different docking rules.",
+      "distractorExplanations": {
+        "a": "Partial-day docking for personal time is the salary-basis violation, not a safe practice.",
+        "b": "Switching to hourly for a week treats the person as nonexempt and undermines salary basis.",
+        "c": "Proportional partial-day reductions are how nonexempt pay works, not exempt salary basis."
+      },
+      "difficulty": "hard"
+    },
+    "phr-hrci-readiness-check-comp-ben-042": {
+      "prompt": "An eligible employee is out five consecutive workdays for planned surgery and returns a complete medical certification. What should HR do under federal FMLA?",
+      "options": {
+        "a": "Designate FMLA promptly and provide the required designation notice",
+        "b": "Wait until 30 consecutive absence days before any FMLA designation",
+        "c": "Deny FMLA because planned surgery is never a serious health condition",
+        "d": "Require the employee to exhaust 12 weeks of PTO before FMLA can start"
+      },
+      "correctOptionId": "a",
+      "explanation": "Once the employer has enough information (here, a complete certification for inpatient or continuing treatment surgery), it must designate FMLA and give the designation notice, generally within five business days. Surgery can be a serious health condition. PTO may run concurrently if policy allows, but it is not a 12-week precondition.",
+      "distractorExplanations": {
+        "b": "There is no 30-day waiting period before designation; delay can forfeit employer protections.",
+        "c": "Inpatient care or continuing treatment can make surgery a serious health condition under FMLA.",
+        "d": "Employers may require concurrent PTO, but they cannot make employees burn 12 PTO weeks first."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-043": {
+      "prompt": "A company averaged 18 employees last year and sponsors a group health plan. After a termination, a manager tells HR to mail federal COBRA election notices. What is the correct response?",
+      "options": {
+        "a": "Mail federal COBRA packets because every employer health plan is covered",
+        "b": "Mail COBRA only if the departing employee had at least five years of service",
+        "c": "Federal COBRA generally starts at 20 employees; check state mini-COBRA",
+        "d": "COBRA applies only to fully insured plans and never to self-funded group plans"
+      },
+      "correctOptionId": "c",
+      "explanation": "Federal COBRA generally covers group health plans of employers that had 20 or more employees on typical business days in the prior calendar year. An 18-employee firm is usually outside federal COBRA, though many states impose mini-COBRA on smaller groups. Service length and insured-versus-self-funded status do not create that 20-employee test.",
+      "distractorExplanations": {
+        "a": "Small-employer plans are generally excluded from federal COBRA despite offering group health.",
+        "b": "COBRA eligibility is about qualifying events and coverage, not a five-year vesting rule.",
+        "d": "Self-funded ERISA plans can be subject to federal COBRA; funding method is not the size test."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-044": {
+      "prompt": "After ranges are updated, an incumbent’s base pay sits $2,000 above the new range maximum. What is the usual job-pricing practice?",
+      "options": {
+        "a": "Immediately cut base pay to the new maximum to restore internal equity overnight",
+        "b": "Recalculate FLSA status because pay above the maximum automatically makes the job exempt",
+        "c": "Treat the amount over the maximum as imputed income reported on Form 1099-NEC",
+        "d": "Red-circle the rate—hold or lump-sum future increases until the range catches up"
+      },
+      "correctOptionId": "d",
+      "explanation": "A red-circle rate is pay above the range maximum, usually frozen (or given as lump-sum bonuses instead of base increases) until market movement lifts the range. Immediate base cuts create morale and, in some states, notice issues. Range position does not decide FLSA status, and the overage is still W-2 wages, not 1099 income.",
+      "distractorExplanations": {
+        "a": "Cutting base to force a range fit is unusual and can be treated as a demotion or wage reduction.",
+        "b": "Exemption turns on duties and salary-basis tests, not on whether pay exceeds a structure max.",
+        "c": "Employee wages belong on the W-2; Form 1099-NEC is for nonemployee compensation."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-comp-ben-045": {
+      "prompt": "Payroll asks whether a truly discretionary year-end bonus, decided after the year with no prior promise, must go into the FLSA regular rate for nonexempt overtime. What is the correct treatment?",
+      "options": {
+        "a": "Include every bonus in the regular rate, including holiday gifts of any amount",
+        "b": "Exclude a true discretionary bonus from the regular rate; promised bonuses stay in",
+        "c": "Pay it as earned wages on the final paycheck of anyone who resigns mid-year",
+        "d": "Exclude it from income tax withholding because discretionary bonuses are nontaxable gifts"
+      },
+      "correctOptionId": "b",
+      "explanation": "Under the FLSA, a bonus is discretionary—and generally excluded from the regular rate—only if the employer retains discretion on fact and amount until near the time of payment and did not promise it as part of a plan. Nondiscretionary or promised bonuses must be included. Discretionary labeling does not make the payment a tax-free gift or an automatic final-pay wage.",
+      "distractorExplanations": {
+        "a": "Over-includes: holiday gifts of nominal value and true discretionary bonuses can be excluded.",
+        "c": "A bonus that was never promised is generally not earned wages owed at resignation.",
+        "d": "Bonuses are taxable supplemental wages; gift treatment is an IRS misconception."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

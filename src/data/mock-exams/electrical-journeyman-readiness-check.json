@@ -3,1980 +3,1980 @@
     "id": "electrical-journeyman-readiness-check-nec-001",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "NEC Article 210 covers:",
+    "prompt": "A storefront lighting load is 16 A and will run more than 3 hours. Terminations are 75°C. What is the smallest copper THHN branch-circuit size and OCPD that meet the 210.19/210.20 continuous-load factors?",
     "options": [
       {
         "id": "a",
-        "text": "Branch circuits and outlets"
+        "text": "12 AWG copper on a 20 A breaker"
       },
       {
         "id": "b",
-        "text": "NFPA (National Fire Protection Association)"
+        "text": "14 AWG copper on a 15 A breaker"
       },
       {
         "id": "c",
-        "text": "3 hours or more"
+        "text": "12 AWG copper on a 15 A breaker"
       },
       {
         "id": "d",
-        "text": "Fault current path to clear overcurrent devices quickly"
+        "text": "10 AWG copper on a 25 A breaker"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “NEC Article 210 covers:”. The matching rule is: Branch circuits and outlets. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "A continuous load is one expected to run 3 hours or more. Branch-circuit conductors and the OCPD must be sized at not less than 125% of that load: 16 A × 1.25 = 20 A. 12 AWG copper is the smallest size 240.4(D) permits on a 20 A breaker, and its 75°C ampacity (25 A) covers 20 A.",
     "distractorExplanations": {
-      "b": "“NFPA (National Fire Protection Association)” does not answer “NEC Article 210 covers:”. The matching answer is: Branch circuits and outlets.",
-      "c": "“3 hours or more” does not answer “NEC Article 210 covers:”. The matching answer is: Branch circuits and outlets.",
-      "d": "“Fault current path to clear overcurrent devices quickly” does not answer “NEC Article 210 covers:”. The matching answer is: Branch circuits and outlets."
+      "b": "Uses the 16 A nameplate without the 125% continuous factor and violates the 240.4(D) 15 A cap only as if the load were noncontinuous 14 AWG work.",
+      "c": "The 12 AWG conductor can carry 20 A, but 210.20 still requires the OCPD itself to be at least 125% of the continuous load (20 A), not 15 A.",
+      "d": "Oversizes both the conductor and breaker; 25 A is not required once 16 A × 1.25 is 20 A, and it wastes material on this branch."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-002",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "The NEC is published by:",
+    "prompt": "A 60 A copper feeder supplies a subpanel. What equipment grounding conductor size does Table 250.122 require, independent of the ungrounded conductor size?",
     "options": [
       {
         "id": "a",
-        "text": "UL (Underwriters Laboratories), which lists equipment"
+        "text": "8 AWG copper, the 100 A row of Table 250.122"
       },
       {
         "id": "b",
-        "text": "NFPA (National Fire Protection Association)"
+        "text": "10 AWG copper, the 60 A overcurrent-device row"
       },
       {
         "id": "c",
-        "text": "ICC (International Code Council), alongside the IRC"
+        "text": "6 AWG copper, matching typical 60 A ungrounded conductors"
       },
       {
         "id": "d",
-        "text": "OSHA (Occupational Safety and Health Administration)"
+        "text": "Size the EGC from Table 250.66 using the ungrounded conductors"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “The NEC is published by:”. The matching rule is: NFPA (National Fire Protection Association). Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Equipment grounding conductors are sized from Table 250.122 by the rating of the overcurrent device ahead of the circuit, not by matching the ungrounded conductors and not from Table 250.66. For a 60 A OCPD the copper EGC is 10 AWG. Upsize the EGC only if you increase ungrounded conductors for voltage drop (250.122(B)).",
     "distractorExplanations": {
-      "a": "UL tests and lists products to safety standards; it does not write or publish the National Electrical Code.",
-      "c": "ICC publishes the IBC and IRC; the IRC electrical chapters are derived from the NEC, which NFPA publishes as NFPA 70.",
-      "d": "OSHA is a federal regulator that references consensus standards; NFPA publishes the NEC as NFPA 70."
+      "a": "Reads the 100 A row of Table 250.122 (8 AWG copper). A 60 A feeder uses the 60 A row, which is 10 AWG copper.",
+      "c": "Matches the EGC to typical 6 AWG ungrounded conductors. Table 250.122 follows the OCPD rating, so 60 A still takes 10 AWG copper.",
+      "d": "Confuses the EGC with the grounding electrode conductor. Table 250.66 sizes the GEC from ungrounded service conductors, not feeder EGCs."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-003",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "A continuous load runs for:",
+    "prompt": "Four 10 AWG copper THHN current-carrying conductors share one EMT at 30°C. Terminations are 75°C. What ampacity do you use when selecting the branch OCPD?",
     "options": [
       {
         "id": "a",
-        "text": "Exactly 30 seconds"
+        "text": "40 A, 90°C column with no adjustment"
       },
       {
         "id": "b",
-        "text": "Less than 1 minute defining continuous"
+        "text": "35 A, 75°C column with no CCC adjustment"
       },
       {
         "id": "c",
-        "text": "3 hours or more"
+        "text": "32 A, 90°C value times 80% for four CCC"
       },
       {
         "id": "d",
-        "text": "Only during lightning storms"
+        "text": "30 A, applying the 70% factor for four CCC"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “A continuous load runs for:”. The matching rule is: 3 hours or more. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "THHN may start at the 90°C column of Table 310.16 (10 AWG copper = 40 A) for adjustment, but 310.15(C)(1) requires 80% when four to six current-carrying conductors share a raceway: 40 A × 0.80 = 32 A. That 32 A is below the 75°C termination value (35 A), so 32 A governs OCPD selection.",
     "distractorExplanations": {
-      "a": "“Exactly 30 seconds” does not answer “A continuous load runs for:”. The matching answer is: 3 hours or more.",
-      "b": "“Less than 1 minute defining continuous” does not answer “A continuous load runs for:”. The matching answer is: 3 hours or more.",
-      "d": "“Only during lightning storms” does not answer “A continuous load runs for:”. The matching answer is: 3 hours or more."
+      "a": "Uses the 90°C column as a termination rating. 110.14(C) limits terminations to 75°C unless the equipment is 90°C-listed, and four CCC still require the 80% adjustment.",
+      "b": "Takes the 75°C column (35 A) without the 80% adjustment required for four current-carrying conductors in one raceway.",
+      "d": "Applies the 70% factor, which is the 7–9 CCC row of 310.15(C)(1), not the 4–6 conductor 80% row."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-004",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Equipment grounding conductors (EGC) provide",
+    "prompt": "A metal device box contains four 12 AWG insulated conductors, one 12 AWG equipment grounding conductor, one internal cable clamp, and one wiring device. What minimum box volume does 314.16 require?",
     "options": [
       {
         "id": "a",
-        "text": "Normal return path for unbalanced load current"
+        "text": "13.50 in³, counting the yoke as one 12 AWG volume"
       },
       {
         "id": "b",
-        "text": "Earth connection that limits voltage from lightning"
+        "text": "15.75 in³, omitting the equipment grounding conductor"
       },
       {
         "id": "c",
-        "text": "Path that GFCIs depend on in order to trip on ground faults"
+        "text": "11.25 in³, counting only the four insulated conductors"
       },
       {
         "id": "d",
-        "text": "Fault current path to clear overcurrent devices quickly"
+        "text": "18.00 in³, using 2.25 in³ for each 12 AWG allowance"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “Equipment grounding conductors (EGC) provide”. The matching rule is: Fault current path to clear overcurrent devices quickly. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Table 314.16(B) assigns 2.25 in³ per 12 AWG volume. Four insulated conductors = 9.00; all EGCs together count as one volume = 2.25; one or more internal clamps = 2.25; each yoke counts as two volumes = 4.50. Total 18.00 in³. Fill is a volume check, not an ampacity or conduit-fill check.",
     "distractorExplanations": {
-      "a": "Carrying normal unbalanced current is the job of the grounded (neutral) conductor; the EGC carries current only during a fault.",
-      "b": "Limiting lightning and surge voltage to earth is the role of the grounding electrode system, not the equipment grounding conductor.",
-      "c": "A GFCI senses hot-neutral imbalance and works without an EGC (406.4(D) permits GFCI replacements on two-wire circuits)."
+      "a": "Counts the device yoke as a single 12 AWG volume (2.25). 314.16(B)(4) requires two volume allowances for each yoke.",
+      "b": "Drops the EGC allowance. One or more EGCs still add one volume based on the largest EGC in the box (here 2.25 in³).",
+      "c": "Counts only the four insulated conductors (9.00) plus one extra 2.25, ignoring clamp, EGC, and the double yoke allowance."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-005",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Article 250 addresses",
+    "prompt": "A 200 A, 120/240 V service uses 3/0 copper ungrounded conductors. The grounding electrode conductor lands only on a single driven rod. What is the smallest copper GEC Table 250.66 with 250.66(A) permits?",
     "options": [
       {
         "id": "a",
-        "text": "Grounding and bonding"
+        "text": "6 AWG copper, the rod-electrode ceiling in 250.66(A)"
       },
       {
         "id": "b",
-        "text": "Clear depth, width, and height for safe operation and maintenance"
+        "text": "4 AWG copper, the full Table 250.66 size for 3/0 copper"
       },
       {
         "id": "c",
-        "text": "Bathrooms, garages, outdoors, and other locations per 210.8"
+        "text": "8 AWG copper, the smallest GEC in Table 250.66"
       },
       {
         "id": "d",
-        "text": "Branch circuits from arc faults that can cause fires"
+        "text": "2 AWG copper, the row used for 250 kcmil ungrounded conductors"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “Article 250 addresses”. The matching rule is: Grounding and bonding. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Table 250.66 would size a GEC for 3/0 copper ungrounded conductors at 4 AWG copper. When that GEC connects solely to a rod, pipe, or plate electrode, 250.66(A) does not require it larger than 6 AWG copper. 8 AWG is the table minimum for small services, not a further reduction off a 3/0 service.",
     "distractorExplanations": {
-      "b": "“Clear depth, width, and height for safe operation and maintenance” does not answer “Article 250 addresses”. The matching answer is: Grounding and bonding.",
-      "c": "“Bathrooms, garages, outdoors, and other locations per 210.8” does not answer “Article 250 addresses”. The matching answer is: Grounding and bonding.",
-      "d": "“Branch circuits from arc faults that can cause fires” does not answer “Article 250 addresses”. The matching answer is: Grounding and bonding."
+      "b": "Uses the full Table 250.66 size for 3/0 (4 AWG) and skips 250.66(A), which caps a rod-only GEC at 6 AWG copper.",
+      "c": "Drops to 8 AWG, the Table 250.66 size for 2 AWG or smaller ungrounded conductors. 250.66(A) reduces 4 AWG to 6 AWG, not to 8 AWG.",
+      "d": "Reads a larger Table 250.66 row (2 AWG for 3/0 aluminum through 250 kcmil copper). 3/0 copper is the 4 AWG copper row before the rod cap."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-006",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Working space about electrical equipment (110.26) requires:",
+    "prompt": "A 480Y/277 V switchboard has exposed live parts on both sides of the working space (Table 110.26(A)(1) Condition 3). What is the minimum clear working depth?",
     "options": [
       {
         "id": "a",
-        "text": "Storage of combustibles in front of panels"
+        "text": "3 ft, the 0–150 V Condition 1 depth"
       },
       {
         "id": "b",
-        "text": "Clear depth, width, and height for safe operation and maintenance"
+        "text": "4 ft, the 151–600 V Condition 3 depth"
       },
       {
         "id": "c",
-        "text": "Zero clearance acceptable"
+        "text": "3½ ft, the 151–600 V Condition 2 depth"
       },
       {
         "id": "d",
-        "text": "Only 6 inches width regardless of equipment"
+        "text": "6 ft, the dedicated equipment-space height in 110.26(E)"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Working space about electrical equipment (110.26) requires:”. The matching rule is: Clear depth, width, and height for safe operation and maintenance. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Voltage to ground on a 480Y/277 V system is 277 V, so the 151–600 V column applies. Condition 3 is exposed live parts on both sides of the working space, which requires 4 ft of clear depth. Width and height are separate 110.26(A)(2) and (A)(3) rules; 110.26(E) dedicated space is not working-depth.",
     "distractorExplanations": {
-      "a": "“Storage of combustibles in front of panels” does not answer “Working space about electrical equipment (110.26) requires:”. The matching answer is: Clear depth, width, and height for safe operation and maintenance.",
-      "c": "“Zero clearance acceptable” does not answer “Working space about electrical equipment (110.26) requires:”. The matching answer is: Clear depth, width, and height for safe operation and maintenance.",
-      "d": "“Only 6 inches width regardless of equipment” does not answer “Working space about electrical equipment (110.26) requires:”. The matching answer is: Clear depth, width, and height for safe operation and maintenance."
+      "a": "Uses the 0–150 V column and Condition 1. 277 V to ground is the 151–600 V column, and live-to-live is Condition 3.",
+      "c": "Uses Condition 2 (live parts on one side, grounded on the other) at 151–600 V, which is 3½ ft, not live-to-live Condition 3.",
+      "d": "Confuses working-space depth with dedicated equipment space, which extends 6 ft above the gear or to the structural ceiling."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-007",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "GFCI protection is required for 125V, 15A and 20A receptacles in:",
+    "prompt": "A 125 V, 20 A receptacle is installed in a non-dwelling indoor wet location subject to wash-down. Which personnel-protection rule applies?",
     "options": [
       {
         "id": "a",
-        "text": "Bathrooms and kitchen countertops only, per 210.12"
+        "text": "AFCI only, because 210.12 is limited to dwelling units"
       },
       {
         "id": "b",
-        "text": "Bedrooms, living rooms, and other habitable rooms per 210.12"
+        "text": "No GFCI, because 20 A commercial receptacles are exempt"
       },
       {
         "id": "c",
-        "text": "Bathrooms, garages, outdoors, and other locations per 210.8"
+        "text": "GFCI protection under 210.8(B) for other than dwelling units"
       },
       {
         "id": "d",
-        "text": "Locations within 6 ft of a sink, with dwelling garages exempt"
+        "text": "GFCI only if that receptacle is also located outdoors"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “GFCI protection is required for 125V, 15A and 20A receptacles in:”. The matching rule is: Bathrooms, garages, outdoors, and other locations per 210.8. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "210.8(B) requires GFCI protection for 150 V-to-ground receptacles 50 A or less in listed other-than-dwelling locations, including indoor wet locations. AFCI in 210.12 is a dwelling arc-fire rule and does not replace GFCI shock protection in a commercial wash-down area.",
     "distractorExplanations": {
-      "a": "210.12 is the AFCI section, and 210.8 GFCI locations go well beyond bathrooms and countertops (garages, outdoors, basements, etc.).",
-      "b": "Those habitable-room locations are the AFCI list in 210.12; GFCI locations come from 210.8.",
-      "d": "The 6 ft sink rule is one 210.8 trigger, but dwelling garages are a required GFCI location, not an exemption."
+      "a": "Applies dwelling AFCI (210.12) to a commercial wet location. AFCI addresses arcing fire risk, not the 210.8(B) GFCI requirement.",
+      "b": "Invented a 20 A commercial exemption. 210.8(B) covers 125 V 15 A and 20 A (and larger ratings up to 50 A in current cycles) in the listed locations.",
+      "d": "Treats outdoors as the only 210.8(B) trigger. Indoor wet locations, garages, sinks, and rooftops are separate listed GFCI locations."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-008",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "AFCI protection in dwelling units protects",
+    "prompt": "A 15 A, 120 V branch circuit will supply dwelling-unit bedroom receptacles and lighting. Besides the OCPD, which additional protection does 210.12 require?",
     "options": [
       {
         "id": "a",
-        "text": "People from shock by detecting 5 mA ground faults"
+        "text": "GFCI, because bedrooms are listed in 210.8(A)"
       },
       {
         "id": "b",
-        "text": "Equipment from lightning and switching surges"
+        "text": "A Type 1 or 2 SPD at the service in place of AFCI"
       },
       {
         "id": "c",
-        "text": "Conductors from sustained overloads above their rating"
+        "text": "No AFCI if the circuit is NM-B in wood framing"
       },
       {
         "id": "d",
-        "text": "Branch circuits from arc faults that can cause fires"
+        "text": "Combination-type AFCI protecting that bedroom circuit"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “AFCI protection in dwelling units protects”. The matching rule is: Branch circuits from arc faults that can cause fires. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "210.12 requires AFCI protection of listed dwelling branch circuits, including bedrooms, to reduce fire risk from arcing faults. Combination-type AFCIs are the usual means. GFCI (210.8) is a different device for shock in wet/damp locations; an SPD (Article 242) does not satisfy 210.12.",
     "distractorExplanations": {
-      "a": "Detecting about 5 mA of ground-fault current to protect people is the GFCI function, not AFCI arc detection.",
-      "b": "Surge protection from lightning and switching transients is the job of an SPD (Article 242), not an AFCI.",
-      "c": "Overload protection is the thermal trip of a standard breaker; an AFCI adds detection of arcing signatures."
+      "a": "Puts bedrooms on the 210.8 GFCI list. Bedrooms are an AFCI location in 210.12; GFCI is for bathrooms, garages, outdoors, and similar 210.8 sites.",
+      "b": "Substitutes surge protection for AFCI. SPDs clamp transients; they do not detect series or parallel arcing the way an AFCI does.",
+      "c": "Treats NM-B as an AFCI exception. Cable type does not remove 210.12 for dwelling bedroom circuits."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-009",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Box fill calculations (314.16) ensure",
+    "prompt": "A feeder’s conductors have 230 A ampacity after corrections. The load is 220 A noncontinuous. What is the largest standard OCPD 240.4(B) permits?",
     "options": [
       {
         "id": "a",
-        "text": "Conductor volume in box does not exceed box capacity"
+        "text": "250 A, the next standard rating above 230 A"
       },
       {
         "id": "b",
-        "text": "Splices in the box stay within conductor ampacity limits"
+        "text": "200 A, because the OCPD must stay below ampacity"
       },
       {
         "id": "c",
-        "text": "Raceway fill stays below 40% of the conduit area"
+        "text": "300 A, because next-size-up always applies over 800 A"
       },
       {
         "id": "d",
-        "text": "Pull boxes are 8 times the largest raceway on straight pulls"
+        "text": "230 A, using a nonstandard breaker matching ampacity"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “Box fill calculations (314.16) ensure”. The matching rule is: Conductor volume in box does not exceed box capacity. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "240.4(B) allows the next standard overcurrent-device rating above the conductor ampacity when that ampacity does not match a 240.6 size, the OCPD is 800 A or less, and 240.4(D) small-conductor limits do not apply. 230 A is not a standard size; the next is 250 A. 240.4(C) forbids this round-up above 800 A.",
     "distractorExplanations": {
-      "b": "Box fill is a volume calculation per 314.16; conductor ampacity comes from Table 310.16 and is unrelated to box size.",
-      "c": "The 40% limit is conduit fill from Chapter 9 Table 1; boxes are sized by cubic-inch volume allowances in 314.16.",
-      "d": "The 8× straight-pull rule is pull-box sizing in 314.28 for 4 AWG and larger, not the 314.16 box fill calculation."
+      "b": "Rounds down to 200 A. 240.4(B) permits the next standard size up (250 A) for 800 A or less when ampacity is 230 A.",
+      "c": "Applies next-size-up above 800 A. 240.4(C) requires conductor ampacity to be at least the OCPD rating in that range.",
+      "d": "Assumes a 230 A breaker exists. Standard ratings in 240.6 skip from 225 A to 250 A, which is why 240.4(B) exists."
     },
     "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-010",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "The ampacity of conductors is found in:",
+    "prompt": "A 120/240 V feeder in EMT has two ungrounded conductors and a grounded conductor serving linear loads (a 3-wire single-phase MWBC). How many current-carrying conductors count for 310.15(C)(1) adjustment?",
     "options": [
       {
         "id": "a",
-        "text": "Table 250.122, based on the overcurrent device rating"
+        "text": "Three, always counting the grounded conductor"
       },
       {
         "id": "b",
-        "text": "Table 310.16 (or applicable tables) with adjustments"
+        "text": "Two; the linear 120/240 V neutral is not counted"
       },
       {
         "id": "c",
-        "text": "Chapter 9, Table 8, based on conductor area and resistance"
+        "text": "One, counting only the larger ungrounded conductor"
       },
       {
         "id": "d",
-        "text": "Table 220.12, based on the volt-ampere load per square foot"
+        "text": "Four, adding the equipment grounding conductor"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “The ampacity of conductors is found in:”. The matching rule is: Table 310.16 (or applicable tables) with adjustments. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "310.15(E)(1) does not count a grounded conductor that carries only unbalanced current from linear loads on a 3-wire 120/240 V single-phase circuit. The two ungrounded conductors are the CCCs for adjustment. Count the neutral when it is a 4-wire 3-phase wye with nonlinear loads, or when it carries substantial harmonic current.",
     "distractorExplanations": {
-      "a": "Table 250.122 sizes equipment grounding conductors by OCPD rating; conductor ampacity comes from Table 310.16.",
-      "c": "Chapter 9 Table 8 lists conductor properties (area, resistance) used for voltage drop, not allowable ampacity.",
-      "d": "Table 220.12 gives general lighting load per square foot for load calculations, not conductor ampacity."
+      "a": "Always counts the grounded conductor. That is required for some wye harmonic feeders, not for this linear 120/240 V 3-wire MWBC.",
+      "c": "Counts only one ungrounded conductor. Each ungrounded CCC occupies raceway heat; both hots count.",
+      "d": "Counts the EGC. Equipment grounding conductors are not current-carrying for 310.15(C)(1) adjustment."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-011",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Dedicated equipment space (110.26(E)) above panelboards",
+    "prompt": "A panelboard is installed indoors. How far must dedicated electrical equipment space stay clear of unrelated piping and ductwork?",
     "options": [
       {
         "id": "a",
-        "text": "Must be kept clear of foreign systems to 3 ft above the equipment"
+        "text": "3 ft above the enclosure, matching working-space depth"
       },
       {
         "id": "b",
-        "text": "May contain ductwork within that zone if a drip pan protects the panel"
+        "text": "Foreign systems may occupy that zone if a drip pan is over the panel"
       },
       {
         "id": "c",
-        "text": "Must be kept clear of foreign systems to 6 ft above or structural ceiling"
+        "text": "To 6 ft above the equipment or the structural ceiling, whichever is lower"
       },
       {
         "id": "d",
-        "text": "Must be kept clear in commercial occupancies, with dwellings exempt"
+        "text": "Commercial gear only; dwelling panelboards are exempt from 110.26(E)"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Dedicated equipment space (110.26(E)) above panelboards”. The matching rule is: Must be kept clear of foreign systems to 6 ft above or structural ceiling. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "110.26(E) reserves the space equal to the equipment width and depth, from the floor to 6 ft above the equipment or to the structural ceiling, whichever is lower, for the electrical installation. Foreign systems belong above that dedicated volume (with protection from leaks), not inside it. The rule applies to indoor panelboards, including dwellings.",
     "distractorExplanations": {
-      "a": "The dedicated electrical space extends 6 ft above the equipment or to the structural ceiling, whichever is lower, not 3 ft.",
-      "b": "Protected foreign systems are allowed only above the dedicated space; nothing foreign may occupy the dedicated zone itself.",
-      "d": "110.26(E) applies to indoor switchboards and panelboards in all occupancies, dwellings included."
+      "a": "Uses 3 ft, a working-space depth figure. Dedicated equipment space is a 6 ft (or ceiling) envelope above the gear, not the 110.26(A) depth.",
+      "b": "Puts drip-protected piping inside the dedicated zone. Protection is for foreign systems above the dedicated space, not through it.",
+      "d": "Exempts dwellings. 110.26(E) covers indoor switchboards, switchgear, panelboards, and motor control centers in all occupancies."
     },
-    "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-012",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Receptacle spacing in dwelling unit walls (210.52) generally requires:",
+    "prompt": "A dwelling bathroom will have a 125 V receptacle beside the basin. What branch-circuit rule in 210.11(C)(3) must the journeyman follow?",
     "options": [
       {
         "id": "a",
-        "text": "One receptacle per wall section, plus one beside each doorway"
+        "text": "A 15 A lighting circuit may also feed those bathroom receptacles"
       },
       {
         "id": "b",
-        "text": "Receptacles so no point along the countertop is more than 2 ft from one"
+        "text": "Bathroom receptacles may ride on a kitchen small-appliance circuit"
       },
       {
         "id": "c",
-        "text": "One receptacle per room, with extra ones where the owner specifies"
+        "text": "One 20 A circuit may feed bathrooms plus the garage receptacles"
       },
       {
         "id": "d",
-        "text": "Receptacles so no point along floor line is more than 6 ft from a receptacle"
+        "text": "A 20 A circuit must supply the bathroom receptacles and have no other outlets"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “Receptacle spacing in dwelling unit walls (210.52) generally requires:”. The matching rule is: Receptacles so no point along floor line is more than 6 ft from a receptacle. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "210.11(C)(3) requires at least one 20 A branch circuit for dwelling bathroom receptacle outlets, and that circuit shall have no other outlets. The exception allows other equipment only when the 20 A circuit supplies a single bathroom. Kitchen small-appliance circuits (210.11(C)(1)) and garage outlets are separate assignments.",
     "distractorExplanations": {
-      "a": "210.52(A) is a spacing rule (no floor-line point more than 6 ft from a receptacle), not a count per wall or doorway.",
-      "b": "The 24 in. (2 ft) rule applies to kitchen countertop receptacles under 210.52(C), not general wall spacing.",
-      "c": "210.52 sets mandatory spacing for habitable rooms; a single receptacle per room does not meet the 6 ft floor-line rule."
+      "a": "Puts bathroom receptacles on a 15 A lighting circuit. 210.11(C)(3) requires a 20 A circuit for those receptacles.",
+      "b": "Shares the 210.11(C)(1) kitchen small-appliance circuits with the bathroom. Those two 20 A circuits are for kitchen/dining receptacles, not bathrooms.",
+      "c": "Adds garage outlets to the bathroom receptacle circuit. Garage receptacles are a 210.8 GFCI location and are not ‘other outlets’ allowed on the bathroom 20 A circuit."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-013",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Overcurrent protection must not exceed conductor ampacity except",
+    "prompt": "A non-motor, noncontinuous 22 A load is proposed on 12 AWG copper THHN with 75°C terminations. May the circuit use a 25 A breaker?",
     "options": [
       {
         "id": "a",
-        "text": "Where 240.4(B) or specific exceptions allow next standard size up"
+        "text": "No; 240.4(D) limits 12 AWG copper to 20 A protection"
       },
       {
         "id": "b",
-        "text": "Where 240.4(D) allows 12 AWG copper on a 25 A breaker"
+        "text": "Yes; Table 310.16 lists 12 AWG at 25 A in the 75°C column"
       },
       {
         "id": "c",
-        "text": "Where the load is continuous, permitting the OCPD at 125% of conductor ampacity"
+        "text": "Yes, because the load is not continuous and 22 A is under 25 A"
       },
       {
         "id": "d",
-        "text": "Where the next size up exceeds 800 A, per 240.4(C)"
+        "text": "Yes, if the 90°C THHN column (30 A) is used for the breaker"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “Overcurrent protection must not exceed conductor ampacity except”. The matching rule is: Where 240.4(B) or specific exceptions allow next standard size up. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "240.4(D) small-conductor rules cap 12 AWG copper at 20 A overcurrent protection unless a specific article (motors, tap conductors, and similar) provides otherwise. The 75°C ampacity of 25 A and the 90°C THHN value of 30 A do not override 240.4(D) for this ordinary branch circuit, so a 25 A breaker is not permitted.",
     "distractorExplanations": {
-      "b": "240.4(D) does the opposite: it caps 12 AWG copper at 20 A overcurrent protection.",
-      "c": "The 125% factor sizes the OCPD and conductors for continuous loads; it does not let the OCPD exceed conductor ampacity.",
-      "d": "240.4(C) removes the next-size-up allowance above 800 A; the conductor ampacity must then equal or exceed the OCPD rating."
+      "b": "Treats the 75°C ampacity column as the OCPD cap. 240.4(D) still limits 12 AWG copper to 20 A on ordinary branch circuits.",
+      "c": "Uses load current versus breaker rating and skips 240.4(D). Noncontinuous status does not authorize 12 AWG on 25 A.",
+      "d": "Uses the 90°C column to pick the breaker. 110.14(C) and 240.4(D) still keep 12 AWG copper at 20 A for this circuit."
     },
-    "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-014",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "Listed equipment means:",
+    "prompt": "A 120 V branch circuit supplies a 16 A continuous sign 120 ft from the panel. Using copper (K = 12.9) and a 3% branch voltage-drop target (3.6 V), what is the smallest conductor that meets that target? CM = 2KIL / VD.",
     "options": [
       {
         "id": "a",
-        "text": "Acceptable to the authority having jurisdiction for the installation"
+        "text": "12 AWG copper (6,530 cmil), sized only by ampacity"
       },
       {
         "id": "b",
-        "text": "Evaluated by recognized testing lab for safety standard compliance"
+        "text": "8 AWG copper (16,510 cmil), which exceeds 13,760 cmil needed"
       },
       {
         "id": "c",
-        "text": "Bearing a label or symbol from the manufacturer showing its ratings"
+        "text": "10 AWG copper (10,380 cmil), which is below 13,760 cmil needed"
       },
       {
         "id": "d",
-        "text": "Recognized as suitable for a specific purpose, function, or environment"
+        "text": "4 AWG copper (41,740 cmil), far above the calculated area"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Listed equipment means:”. The matching rule is: Evaluated by recognized testing lab for safety standard compliance. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Required circular mils = 2 × 12.9 × 16 × 120 / 3.6 = 13,760 cmil. 10 AWG (10,380) is short; 8 AWG (16,510) is the smallest standard copper size over 13,760. NEC voltage-drop notes in 210.19/215.2 are informational (about 3% branch, 5% feeder plus branch), but journeyman work still sizes conductors so the load actually starts and does not overheat from excess current at low voltage.",
     "distractorExplanations": {
-      "a": "Acceptable to the AHJ is the Article 100 definition of 'Approved,' not 'Listed.'",
-      "c": "Manufacturer markings are not a listing; 'Listed' means included on a list published by a recognized testing organization.",
-      "d": "Suitability for a specific purpose or environment is the Article 100 definition of 'Identified,' not 'Listed.'"
+      "a": "Stops at 12 AWG ampacity (20 A continuous-capable). 6,530 cmil is far below 13,760 cmil, so drop far exceeds 3%.",
+      "c": "Picks 10 AWG because it carries 16 A × 1.25. 10,380 cmil is still below 13,760 cmil, so the 3% target is missed.",
+      "d": "Jumps to 4 AWG. That size works but is larger than needed; 8 AWG already exceeds 13,760 cmil."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-nec-015",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "nec",
-    "prompt": "NEC scope (Article 90) covers:",
+    "prompt": "How many 12 AWG copper THHN conductors (0.0133 in² each) may be installed in ¾ in. EMT (40% fill area 0.213 in²) when more than two conductors occupy the raceway?",
     "options": [
       {
         "id": "a",
-        "text": "Utility transmission lines under exclusive utility control"
+        "text": "9, using 60% fill as if the run were a nipple"
       },
       {
         "id": "b",
-        "text": "Product safety standards for manufacturing electrical equipment"
+        "text": "22, using the full internal area of the EMT"
       },
       {
         "id": "c",
-        "text": "Installation of electrical conductors and equipment"
+        "text": "16, 0.213 in² divided by 0.0133 in² at 40% fill"
       },
       {
         "id": "d",
-        "text": "Wiring of ships, railway rolling stock, and aircraft"
+        "text": "4, matching the 310.15(C)(1) four-CCC adjustment count"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “NEC scope (Article 90) covers:”. The matching rule is: Installation of electrical conductors and equipment. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Chapter 9 Table 1 limits more than two conductors to 40% of the raceway cross section. ¾ in. EMT 40% area is 0.213 in²; 12 AWG THHN is 0.0133 in²; 0.213 / 0.0133 ≈ 16. Annex C matches that count. Nipple 60% fill and ampacity adjustment counts are different calculations.",
     "distractorExplanations": {
-      "a": "90.2(B) excludes installations under the exclusive control of an electric utility for generation and transmission.",
-      "b": "Product construction standards are written by UL and similar bodies; the NEC covers installation.",
-      "d": "Ships, railway rolling stock, aircraft, and automotive vehicles are listed exclusions in 90.2(B)."
+      "a": "Uses 60% fill, permitted for nipples 24 in. or less (Chapter 9 Note 4), not for a ordinary EMT run.",
+      "b": "Uses 100% of the EMT area. Table 1 allows 100% only for a single conductor, not for a bundle of 12 AWG THHN.",
+      "d": "Confuses conduit fill with the four-CCC ampacity adjustment threshold. Fill is a geometric count; adjustment is a heat-count of current-carrying conductors."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-001",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "NM-B (Romex) cable is permitted in:",
+    "prompt": "A 3/4 in. EMT run between a 480 V motor disconnect and a starter uses listed couplings and connectors made up wrench-tight. When may this EMT serve as the equipment grounding conductor?",
     "options": [
       {
         "id": "a",
-        "text": "Damp locations such as basements with exposed foundation walls"
+        "text": "When the fittings are listed for grounding and the joints are made up tight"
       },
       {
         "id": "b",
-        "text": "Underground raceways, since the conduit keeps the cable dry"
+        "text": "Only if a green insulated 12 AWG copper is pulled with the circuit conductors"
       },
       {
         "id": "c",
-        "text": "Exposed in commercial parking garages if run along the ceiling joists"
+        "text": "Never, because a raceway may contain an EGC but cannot itself be the EGC"
       },
       {
         "id": "d",
-        "text": "Dry, protected locations per 334 (typically not wet or exposed)"
+        "text": "Only on 120 V circuits; 480 V feeders require a separate copper EGC"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “NM-B (Romex) cable is permitted in:”. The matching rule is: Dry, protected locations per 334 (typically not wet or exposed). Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "a",
+    "explanation": "NEC 250.118 recognizes EMT as an equipment grounding conductor when the fittings are listed for grounding and the joints are made up tight. A separate wire EGC is not required solely because the circuit is 480 V. Listed wrench-tight EMT is a standard fault-return path on motor circuits.",
     "distractorExplanations": {
-      "a": "NM-B is limited to dry locations; damp or wet locations call for NMC-type or UF cable or another listed method.",
-      "b": "Underground raceways are wet locations per 300.5(B), so NM-B is not permitted inside them.",
-      "c": "334.12 restricts NM where exposed to physical damage and in certain occupancies; exposed garage runs need another wiring method."
+      "b": "A wire EGC may be added, but 250.118 does not require one inside listed, tight EMT just to qualify the raceway.",
+      "c": "Several metal raceways, including EMT, RMC, and IMC, are permitted EGCs under 250.118 when fittings are listed.",
+      "d": "Voltage class does not strip EMT of EGC status; the listing and tightness of the fittings control, not 120 V versus 480 V."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-002",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Conductor color: grounded (neutral) conductor is typically",
+    "prompt": "A 400 A service uses 600 kcmil copper ungrounded conductors. The grounding electrode system is two driven rods. What is the minimum copper grounding electrode conductor to those rods?",
     "options": [
       {
         "id": "a",
-        "text": "White or gray"
+        "text": "1/0 AWG copper, matching Table 250.66 for 600 kcmil ungrounded conductors"
       },
       {
         "id": "b",
-        "text": "Green for neutral"
+        "text": "6 AWG copper; rod, pipe, or plate taps need not exceed 6 AWG"
       },
       {
         "id": "c",
-        "text": "Bare only for insulated neutral"
+        "text": "4 AWG copper, matching the concrete-encased electrode (ufer) column"
       },
       {
         "id": "d",
-        "text": "Red for all neutrals"
+        "text": "8 AWG copper, matching Table 250.122 for a 400 A feeder equipment ground"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "This item asks: “Conductor color: grounded (neutral) conductor is typically”. The matching rule is: White or gray. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "b",
+    "explanation": "Table 250.66 would call for 1/0 copper to a water pipe or building steel on this service, but 250.66(A) caps the conductor to a rod, pipe, or plate electrode at 6 AWG copper. The rods cannot usefully take a larger GEC, so the Code does not require one.",
     "distractorExplanations": {
-      "b": "“Green for neutral” does not answer “Conductor color: grounded (neutral) conductor is typically”. The matching answer is: White or gray.",
-      "c": "“Bare only for insulated neutral” does not answer “Conductor color: grounded (neutral) conductor is typically”. The matching answer is: White or gray.",
-      "d": "“Red for all neutrals” does not answer “Conductor color: grounded (neutral) conductor is typically”. The matching answer is: White or gray."
+      "a": "1/0 is the Table 250.66 size to metal water pipe or structural steel for 600 kcmil copper; 250.66(A) reduces the rod tap to 6 AWG.",
+      "c": "4 AWG copper is the usual minimum to a concrete-encased electrode under 250.66(B), not to driven rods.",
+      "d": "Table 250.122 sizes equipment grounding conductors from the OCPD; GECs to electrodes use 250.66, with the 6 AWG rod cap."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-003",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Equipment grounding conductor insulation color is typically",
+    "prompt": "Interior metal water piping used as a grounding electrode has an insulating meter coupling that can be removed for service. What bonding is required around that meter?",
     "options": [
       {
         "id": "a",
-        "text": "White always for EGC"
+        "text": "No jumper is needed if the meter body is listed as electrically continuous"
       },
       {
         "id": "b",
-        "text": "Green or bare"
+        "text": "Bond only the hot-water heater piping; cold water already serves as the electrode"
       },
       {
         "id": "c",
-        "text": "Blue exclusively always for all EGC"
+        "text": "Install a jumper only when the water utility requests it in writing"
       },
       {
         "id": "d",
-        "text": "Orange exclusively always for all EGC"
+        "text": "Install a bonding jumper around the meter so the electrode path stays continuous"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Equipment grounding conductor insulation color is typically”. The matching rule is: Green or bare. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "d",
+    "explanation": "250.68 and 250.53(D) require a bonding jumper around likely-to-be-disconnected sections of metal water piping used as an electrode, including meters and insulating couplings. Removing the meter must not open the grounding electrode conductor path.",
     "distractorExplanations": {
-      "a": "White is neutral.",
-      "c": "Not standard EGC.",
-      "d": "Not standard EGC."
+      "a": "A listed meter body does not keep the path intact when the meter is pulled; the jumper bonds around the removable section.",
+      "b": "The electrode connection is to the metal water piping system, not a hot-only loop; skipping the meter leaves a gap on the cold line.",
+      "c": "The Code, not a utility letter, requires continuity of the electrode path around removable fittings."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-004",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Maximum number of 12 AWG THHN conductors in 1/2\" EMT depends on",
+    "prompt": "A 60 A non-motor branch circuit is installed in Schedule 40 PVC with 6 AWG copper ungrounded conductors. What is the minimum copper equipment grounding conductor?",
     "options": [
       {
         "id": "a",
-        "text": "Table 310.16 ampacity, since fill depends on conductor heat"
+        "text": "8 AWG copper, using the 100 A column of Table 250.122"
       },
       {
         "id": "b",
-        "text": "Box fill volume in 314.16 for each conductor size"
+        "text": "6 AWG copper, matching the ungrounded circuit conductors in the PVC"
       },
       {
         "id": "c",
-        "text": "Chapter 9 Table 1 and conductor fill (often about 9 for 40% fill)"
+        "text": "10 AWG copper, using the 60 A column of Table 250.122"
       },
       {
         "id": "d",
-        "text": "Chapter 9 Table 8 conductor area alone, with no percentage limit"
+        "text": "12 AWG copper, using the 20 A column as if it were a receptacle circuit"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Maximum number of 12 AWG THHN conductors in 1/2\" EMT depends on”. The matching rule is: Chapter 9 Table 1 and conductor fill (often about 9 for 40% fill). Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Table 250.122 sizes the EGC from the rating of the overcurrent device, not from the ungrounded conductor size. For a 60 A OCPD the minimum copper EGC is 10 AWG. PVC is not an EGC, so that 10 AWG must be pulled and bonded at the metal enclosure.",
     "distractorExplanations": {
-      "a": "Ampacity tables set current ratings; the number of conductors in a raceway comes from Chapter 9 fill percentages.",
-      "b": "314.16 sizes boxes by cubic-inch allowances; raceway fill uses Chapter 9 Table 1 and Tables 4 and 5.",
-      "d": "Table 8 gives bare conductor properties; fill uses insulated areas from Table 5 against the Table 1 percentage limit."
+      "a": "8 AWG copper is the 100 A row of Table 250.122, not the 60 A row.",
+      "b": "Matching the 6 AWG hots oversizes the EGC; 250.122 does not require the EGC to equal the ungrounded conductors here.",
+      "d": "12 AWG is the 20 A row. A 60 A circuit is not sized as a 15/20 A receptacle branch."
     },
-    "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-005",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Splicing conductors must be made in:",
+    "prompt": "A 20 A, 120 V circuit is pulled in Schedule 40 PVC from a panelboard to a metal disconnect on a rooftop unit. How is equipment grounding completed at the disconnect?",
     "options": [
       {
         "id": "a",
-        "text": "Hidden inside wall without access"
+        "text": "Pull a copper EGC in the PVC and terminate it to the metal enclosure"
       },
       {
         "id": "b",
-        "text": "Only with tape and no box as permanent"
+        "text": "Rely on the PVC itself, because nonmetallic conduit is listed as an EGC"
       },
       {
         "id": "c",
-        "text": "Under carpet without enclosure"
+        "text": "Use metal locknuts on the PVC hubs; the hubs bond the enclosure without a wire"
       },
       {
         "id": "d",
-        "text": "Approved box or fitting with accessible cover"
+        "text": "Land the grounded (neutral) conductor on the disconnect’s grounding bar"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “Splicing conductors must be made in:”. The matching rule is: Approved box or fitting with accessible cover. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "a",
+    "explanation": "PVC is not an equipment grounding conductor (250.118). A copper EGC sized from Table 250.122 must be pulled in the raceway and bonded to the metal disconnect so fault current has a path back to the source. Hub locknuts on PVC do not create that path.",
     "distractorExplanations": {
-      "a": "“Hidden inside wall without access” does not answer “Splicing conductors must be made in:”. The matching answer is: Approved box or fitting with accessible cover.",
-      "b": "“Only with tape and no box as permanent” does not answer “Splicing conductors must be made in:”. The matching answer is: Approved box or fitting with accessible cover.",
-      "c": "“Under carpet without enclosure” does not answer “Splicing conductors must be made in:”. The matching answer is: Approved box or fitting with accessible cover."
+      "b": "Article 352 PVC is a nonmetallic raceway; it is not listed as an EGC the way EMT, IMC, or RMC can be.",
+      "c": "PVC hubs and locknuts secure the raceway; they do not substitute for an EGC terminated to the enclosure.",
+      "d": "The grounded conductor is not used as an EGC on the load side of the service; that would create objectionable current on the raceway and enclosure."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-006",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Voltage drop should be considered because excessive drop causes",
+    "prompt": "A 2 in. RMC containing 480Y/277 V feeders enters a metal enclosure through a concentric knockout that is not listed for bonding. What is required at that entry?",
     "options": [
       {
         "id": "a",
-        "text": "Poor equipment performance and wasted energy"
+        "text": "Standard locknuts on both sides of the box, because RMC is a ferrous raceway"
       },
       {
         "id": "b",
-        "text": "Improved motor torque always from low voltage"
+        "text": "A listed bonding bushing or locknut that bonds around the knockout"
       },
       {
         "id": "c",
-        "text": "No effect ever always on loads"
+        "text": "No extra bonding if the conduit is wrench-tight against the outer knockout ring"
       },
       {
         "id": "d",
-        "text": "Automatic code compliance always regardless of length"
+        "text": "Change the RMC to EMT so concentric knockouts are treated as automatically bonded"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "This item asks: “Voltage drop should be considered because excessive drop causes”. The matching rule is: Poor equipment performance and wasted energy. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "b",
+    "explanation": "On circuits over 250 V to ground, 250.97 requires bonding around concentric or eccentric knockouts unless the box or knockout is listed to provide a reliable bond. A bonding bushing or equivalent listed fitting jumpers the raceway to the enclosure past the weakened rings.",
     "distractorExplanations": {
-      "b": "Motors struggle on low voltage.",
-      "c": "Performance suffers.",
-      "d": "Design consideration."
+      "a": "Ordinary locknuts may be acceptable on a single knockout listed for grounding; they do not replace 250.97 bonding on unused concentric rings.",
+      "c": "Tightness on the outer ring still leaves painted, stacked KO rings in the fault path; that is the condition 250.97 is written to avoid.",
+      "d": "EMT has the same 250.97 duty at concentric KOs on >250 V circuits; changing raceway type does not skip the bonding fitting."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-007",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Three-way switches control a load from:",
+    "prompt": "Listed flexible metal conduit is used as the wiring method to a 120 V, 20 A disposal. When may the FMC itself serve as the equipment grounding conductor?",
     "options": [
       {
         "id": "a",
-        "text": "Three locations, one for each terminal on the switch"
+        "text": "For any length, provided the connectors are listed for grounding"
       },
       {
         "id": "b",
-        "text": "Two locations using traveler conductors between switches"
+        "text": "On circuits up to 60 A if the FMC is 3/4 in. trade size or larger"
       },
       {
         "id": "c",
-        "text": "Two locations, using a shared neutral between the switches"
+        "text": "In a wet location if the FMC has a sunlight-resistant outer jacket"
       },
       {
         "id": "d",
-        "text": "One location, switching three separate loads independently"
+        "text": "Listed fittings, 20 A OCPD or less, and not more than 6 ft of FMC"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Three-way switches control a load from:”. The matching rule is: Two locations using traveler conductors between switches. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "d",
+    "explanation": "250.118(5) and 348.60 allow FMC to serve as the EGC only with listed grounding fittings, a circuit OCPD not over 20 A, and a total length not over 6 ft. Longer or larger-ampacity runs need a wire EGC inside the FMC.",
     "distractorExplanations": {
-      "a": "Three terminals (common plus two travelers) serve two locations; a third location requires a four-way switch.",
-      "c": "The conductors between three-way switches are travelers, which are ungrounded conductors, not neutrals.",
-      "d": "Three-way refers to the switch's three terminals for two-location control, not to switching three loads."
+      "a": "Length is capped at 6 ft when FMC is used as the EGC; listed fittings alone do not lift that limit.",
+      "b": "The OCPD cap is 20 A, not 60 A; trade size does not buy a higher EGC rating for FMC.",
+      "c": "FMC is not a wet-location wiring method by default, and a jacket does not create EGC permission beyond 250.118(5)."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-008",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "How does standard interlocked-armor Type MC cable differ from Type AC cable for equipment grounding?",
+    "prompt": "An exposed 3/4 in. EMT homerun crosses a dry storage room and lands in a metal panel. What are the support and fastening intervals for that EMT?",
     "options": [
       {
         "id": "a",
-        "text": "MC has an internal aluminum bonding strip touching the armor, so the armor serves as the EGC"
+        "text": "Within 12 in. of each box and at 4.5 ft intervals, matching NM cable 334.30"
       },
       {
         "id": "b",
-        "text": "MC is limited to dry locations and cannot be installed in wet locations"
+        "text": "Within 18 in. of each box and at 8 ft intervals, matching IMC in some tables"
       },
       {
         "id": "c",
-        "text": "MC needs a separate EGC inside, because its interlocked armor alone is not an EGC"
+        "text": "Fastened within 3 ft of each box or fitting and supported every 10 ft"
       },
       {
         "id": "d",
-        "text": "MC is permitted in exposed runs only and cannot be concealed in walls"
+        "text": "Only at boxes; intermediate straps are not required on a straight, short run"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Under NEC 250.118, the armor of Type AC cable together with its internal bonding strip qualifies as an equipment grounding conductor. Standard interlocked Type MC does not: it carries a separate EGC among its conductors. MC-AP, with a bare aluminum grounding/bonding conductor in contact with the armor, is the listed exception.",
+    "explanation": "358.30 requires EMT to be securely fastened within 3 ft of each outlet box, junction box, device box, cabinet, or fitting and supported at intervals not exceeding 10 ft. NM’s 12 in. / 4.5 ft rule is Article 334, not EMT.",
     "distractorExplanations": {
-      "a": "The internal bonding strip that lets the armor act as the EGC is the defining feature of Type AC cable, not standard Type MC.",
-      "b": "MC cable with a listed jacket is permitted in wet locations; the dry-location limit belongs to other cable types such as NM.",
-      "d": "MC cable may be installed exposed or concealed under NEC 330.10; there is no ban on concealed runs."
+      "a": "12 in. and 4.5 ft are the NM-B support figures in 334.30, not the EMT fastening rule.",
+      "b": "IMC (342.30) also uses 3 ft and 10 ft in the general case; 18 in. / 8 ft is not the EMT interval.",
+      "d": "Even a straight homerun needs intermediate support at 10 ft and fastening within 3 ft of each termination."
     },
-    "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-009",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Pull boxes are sized per",
+    "prompt": "Nine 12 AWG THHN conductors plus a 12 AWG EGC will be pulled in 1/2 in. EMT. What determines whether that count is permitted?",
     "options": [
       {
         "id": "a",
-        "text": "314.16 based on conductor volume allowances per AWG size"
+        "text": "Chapter 9 Table 1 at 40% fill, using Tables 4 and 5 conductor areas"
       },
       {
         "id": "b",
-        "text": "314.28 at 6 times the largest raceway trade size for straight pulls"
+        "text": "Table 310.16 ampacity only, because raceway fill is treated as a heating calculation"
       },
       {
         "id": "c",
-        "text": "Chapter 9 Table 1 based on 40% fill of the largest conduit"
+        "text": "314.16 box-fill volumes applied to the EMT trade size as if it were a device box"
       },
       {
         "id": "d",
-        "text": "314.28 based on conduit trade size and number of bends/conductors"
+        "text": "Chapter 9 Table 8 bare-conductor areas, with no percentage fill limit applied"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “Pull boxes are sized per”. The matching rule is: 314.28 based on conduit trade size and number of bends/conductors. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "a",
+    "explanation": "Raceway conductor fill uses Chapter 9 Table 1 (40% when more than two conductors) against the internal area in Table 4 and the insulated conductor areas in Table 5 (or Annex C). Ampacity tables and box-fill volumes do not set how many THHN wires fit in the EMT.",
     "distractorExplanations": {
-      "a": "314.16 box fill applies to conductors 6 AWG and smaller; boxes for 4 AWG and larger are sized under 314.28.",
-      "b": "Swaps the multipliers: straight pulls use 8× the largest raceway, while 6× applies to angle and U pulls.",
-      "c": "Chapter 9 Table 1 governs conductor fill inside raceways, not the dimensions of pull or junction boxes."
+      "b": "310.16 sets ampacity after adjustment; it does not replace Chapter 9 percentage fill for the number of conductors.",
+      "c": "314.16 sizes boxes by cubic inches for 6 AWG and smaller; it is not the raceway fill calculation.",
+      "d": "Table 8 is compact-strand and bare properties; insulated fill uses Table 5 against the Table 1 percentage."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-010",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Identifying ungrounded conductors: 208Y/120V system typically uses",
+    "prompt": "A metal service raceway containing the ungrounded and grounded service conductors enters a metal service disconnect. How must that raceway be bonded to the enclosure?",
     "options": [
       {
         "id": "a",
-        "text": "Black, red, blue for phases; white neutral"
+        "text": "By ordinary EMT set-screw connectors, the same method used on a branch-circuit homerun"
       },
       {
         "id": "b",
-        "text": "Brown, orange, yellow for phases; gray neutral"
+        "text": "A bonding jumper or 250.92(B) locknut, bushing, or threaded hub"
       },
       {
         "id": "c",
-        "text": "Black, red, blue for phases; green neutral"
+        "text": "Only if the inspector labels the enclosure as a separately derived system"
       },
       {
         "id": "d",
-        "text": "Black, red, orange for phases; white neutral"
+        "text": "By landing the grounded conductor on a bonding lug at every coupling along the riser"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "This item asks: “Identifying ungrounded conductors: 208Y/120V system typically uses”. The matching rule is: Black, red, blue for phases; white neutral. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "b",
+    "explanation": "Metal raceways enclosing service conductors must be bonded under 250.92 using the methods in 250.92(B): threaded bosses, bonding locknuts or bushings, or bonding jumpers. Standard set-screw fittings that are acceptable on a branch EMT homerun are not the listed service-bonding methods.",
     "distractorExplanations": {
-      "b": "Brown-orange-yellow with gray is the common convention for 480Y/277 V systems, not 208Y/120 V.",
-      "c": "Green or bare is reserved for equipment grounding conductors (250.119); the neutral is white or gray.",
-      "d": "Orange marks the high leg of a 4-wire delta system (110.15), not a phase of a 208Y/120 V wye system."
+      "a": "Branch-circuit EMT set-screws may qualify the raceway as an EGC, but service raceways need the bonding methods of 250.92(B).",
+      "c": "Service equipment bonding is required whether or not a separately derived system is present; SDS bonding is 250.30, not a substitute.",
+      "d": "Couplings along the riser are made up as a raceway; they are not each a service-neutral termination point."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-011",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Switch loops must",
+    "prompt": "A metal 4 in. square box is supplied by PVC containing a 20 A circuit and a spliced copper EGC. What must be done with the metal box?",
     "options": [
       {
         "id": "a",
-        "text": "Use the white wire as the switched return to the light"
+        "text": "Leave the box unbonded; PVC is intended to isolate metal boxes from the grounding system"
       },
       {
         "id": "b",
-        "text": "Provide grounded conductor to switch location"
+        "text": "Bond the box only if a receptacle yoke will be installed on the cover"
       },
       {
         "id": "c",
-        "text": "Include a neutral at smart switches, while standard toggles are exempt"
+        "text": "Connect the grounded (neutral) splice to a grounding clip on the box"
       },
       {
         "id": "d",
-        "text": "Provide the grounded conductor at the light fixture box only"
+        "text": "Terminate the EGC to the box with a listed grounding screw, clip, or bushing"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Switch loops must”. The matching rule is: Provide grounded conductor to switch location per current NEC dwelling requirements. Independent UniPrep diagnostic — not a state board exam paper. This follows 404.2(C) for current NEC dwelling requirements.",
+    "correctOptionId": "d",
+    "explanation": "250.148 and 314.40 require metal boxes to be connected to the equipment grounding conductor when an EGC is present. With PVC, that connection is a listed screw, clip, or grounding bushing—not the raceway. Device yokes are extra; the box itself must still be bonded.",
     "distractorExplanations": {
-      "a": "200.7(C)(1) allows a re-identified white conductor only as the supply to the switch, never as the switched return.",
-      "c": "404.2(C) requires the grounded conductor at most switch locations regardless of the switch type installed.",
-      "d": "The neutral at the fixture is not enough; 404.2(C) requires it at the switch location for future electronic controls."
+      "a": "PVC isolates the raceway, which is why the box needs a wire EGC connection; isolation is not permission to leave the box floating.",
+      "b": "A receptacle yoke can bond a box when the yoke is listed for that, but 250.148 still requires the EGC to be connected at splices in the box.",
+      "c": "The grounded conductor is not an EGC on the load side of the service; neutrals stay isolated from the box except at the service or SDS bond."
     },
-    "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-012",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Underground service lateral conductors entering building must",
+    "prompt": "A 100 A feeder is run in 1 in. RMC with threaded couplings made up wrench-tight between two metal enclosures. Is a separate wire EGC required in the conduit?",
     "options": [
       {
         "id": "a",
-        "text": "Be buried at least 6 in. deep if direct-buried under a lawn"
+        "text": "No; listed threaded RMC made up tight qualifies as an EGC under 250.118"
       },
       {
         "id": "b",
-        "text": "Enter through an unsealed raceway so that any condensation can drain out"
+        "text": "Yes; rigid metal conduit never qualifies, so a copper EGC must be pulled"
       },
       {
         "id": "c",
-        "text": "Be protected from physical damage and meet burial depth/raceway rules"
+        "text": "Yes, but only if the conduit run exceeds 25 ft between enclosures"
       },
       {
         "id": "d",
-        "text": "Rise along the wall without protection above the final grade"
+        "text": "No, but only when the feeder overcurrent device is 20 A or less"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "This item asks: “Underground service lateral conductors entering building must”. The matching rule is: Be protected from physical damage and meet burial depth/raceway rules. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "a",
+    "explanation": "250.118 lists rigid metal conduit as an equipment grounding conductor when the fittings are listed and the threaded joints are made up tight. Unlike FMC, RMC has no 6 ft or 20 A cap for this use. A wire EGC may still be pulled for redundancy, but it is not required by 250.118.",
     "distractorExplanations": {
-      "a": "6 in. is the cover for RMC/IMC; direct-buried cables and conductors generally need 24 in. of cover per Table 300.5.",
-      "b": "300.5(G) requires raceways entering a building from underground to be sealed against moisture and gas migration.",
-      "d": "300.5(D) requires protection of conductors emerging from grade up to at least 8 ft above finished grade."
+      "b": "RMC is one of the raceways expressly recognized as an EGC; “never qualifies” confuses RMC with PVC or non-listed flexible conduit.",
+      "c": "There is no 25 ft length limit on RMC used as an EGC; that kind of cap belongs to FMC/LFMC conditions, not threaded rigid.",
+      "d": "The 20 A / 6 ft limits apply to flexible metal conduit as an EGC, not to RMC."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-013",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Multiwire branch circuits share",
+    "prompt": "Exposed EMT will be installed under a commercial parking-deck soffit that is a wet location. Which installation is permitted?",
     "options": [
       {
         "id": "a",
-        "text": "Neutral with two ungrounded conductors on the same phase"
+        "text": "Indoor set-screw EMT and fittings, because the soffit keeps rain off the raceway"
       },
       {
         "id": "b",
-        "text": "Equipment grounding conductor used as the common neutral"
+        "text": "EMT with wet-location fittings and corrosion protection as required"
       },
       {
         "id": "c",
-        "text": "Neutral with ungrounded conductors on separate breakers without handle ties"
+        "text": "EMT only if it is used as a sleeve for NM-B rather than for individual conductors"
       },
       {
         "id": "d",
-        "text": "Neutral with opposing ungrounded conductors on different phases"
+        "text": "No EMT; wet locations require RMC or IMC and prohibit electrical metallic tubing"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “Multiwire branch circuits share”. The matching rule is: Neutral with opposing ungrounded conductors on different phases. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "b",
+    "explanation": "358.10 permits EMT in wet locations when the raceway, supports, and fittings are identified for wet use and corrosion protection is provided as needed. A parking-deck soffit is still wet; indoor set-screw fittings are not the wet-location listing.",
     "distractorExplanations": {
-      "a": "On the same phase the currents add on the neutral and can overload it; MWBC hots must be on different phases.",
-      "b": "The EGC may not carry normal load current; an MWBC shares a grounded (neutral) conductor, not the EGC.",
-      "c": "210.4(B) requires simultaneous disconnection of all ungrounded MWBC conductors, typically by handle ties or a multipole breaker."
+      "a": "A soffit does not reclassify the space as dry, and indoor set-screw fittings are not identified for wet locations.",
+      "c": "NM-B is not a wet-location cable; sleeving it in EMT under a parking deck does not make the method legal.",
+      "d": "RMC and IMC are common in wet work, but 358.10 still allows EMT with wet-location fittings; it is not prohibited outright."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-014",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Torque requirements for terminations",
+    "prompt": "A PVC feeder from a 200 A service disconnect supplies a remote building subpanel. Where is the grounded conductor bonded to the metal enclosure?",
     "options": [
       {
         "id": "a",
-        "text": "Should follow manufacturer specifications"
+        "text": "At both the service and the subpanel so each enclosure has a main bonding jumper"
       },
       {
         "id": "b",
-        "text": "Should be tight enough by feel, with torque tools optional"
+        "text": "Only at the subpanel; the service uses an equipment bonding jumper instead of an MBJ"
       },
       {
         "id": "c",
-        "text": "Should follow Table 310.16 values listed by conductor size"
+        "text": "At neither location if a ground rod is driven at the remote building"
       },
       {
         "id": "d",
-        "text": "Should use an impact driver set to maximum for consistent results"
+        "text": "At the service only; the subpanel isolates neutrals from EGCs and the enclosure"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "This item asks: “Torque requirements for terminations”. The matching rule is: Should follow manufacturer specifications; 110.14 requires proper tightening. Independent UniPrep diagnostic — not a state board exam paper. 110.14 requires proper tightening, with a calibrated torque tool when a value is specified.",
+    "correctOptionId": "d",
+    "explanation": "250.24 bonds the grounded conductor to the service enclosure with the main bonding jumper. On the load side, 250.24(A)(5) and 408.40 keep the grounded conductor isolated from EGCs and metal enclosures. The remote subpanel gets an EGC (or equivalent) with the feeder; a rod there is a grounding electrode, not a second neutral-enclosure bond.",
     "distractorExplanations": {
-      "b": "Since NEC 2017, 110.14(D) requires an approved calibrated torque tool where a tightening torque is indicated.",
-      "c": "Table 310.16 lists ampacities, not torque values; torque comes from the equipment manufacturer or Annex I.",
-      "d": "Maximum impact torque can strip or damage terminals; the specified value is applied with a calibrated tool."
+      "a": "A second MBJ at the subpanel parallels the neutral and EGC and puts objectionable current on enclosures and raceways.",
+      "b": "The MBJ belongs at the service, not at a downstream subpanel; swapping them reverses 250.24.",
+      "c": "A ground rod at a separate building does not replace feeder EGCs or authorize bonding the neutral to the subpanel enclosure on a four-wire feeder."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-wiring-015",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "wiring",
-    "prompt": "Cable support for NM-B must occur within",
+    "prompt": "A pull box has one 2 in. raceway entering a wall and another 2 in. raceway leaving the adjacent wall (angle pull). What is the minimum distance between those raceway centerlines?",
     "options": [
       {
         "id": "a",
-        "text": "8 inches of box and every 3 ft along run (334.30)"
+        "text": "8 times the 2 in. trade size, or 16 in., as used for a straight pull"
       },
       {
         "id": "b",
-        "text": "12 inches of box and every 4.5 ft along run (334.30)"
+        "text": "4 times the trade size, because angle pulls are allowed to be shorter than straight pulls"
       },
       {
         "id": "c",
-        "text": "18 inches of box and every 6 ft along run (334.30)"
+        "text": "6 times the 2 in. trade size, or 12 in., per 314.28(A)(2) for angle pulls"
       },
       {
         "id": "d",
-        "text": "24 inches of box and every 10 ft along run (334.30)"
+        "text": "Equal to the 2 in. trade size; conductor bending radius is not a box-sizing factor"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Cable support for NM-B must occur within”. The matching rule is: 12 inches of box and every 4.5 ft along run (334.30). Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "c",
+    "explanation": "314.28(A)(2) sizes angle, U, and similar pulls at six times the largest raceway trade size between entries in the same wall—here 6 × 2 in. = 12 in. Straight pulls through opposite walls use eight times (314.28(A)(1)). Mixing the multipliers is a common journeyman error.",
     "distractorExplanations": {
-      "a": "The 8 in. figure applies to single-gang boxes without cable clamps (314.17); 334.30 sets 12 in. and 4.5 ft.",
-      "c": "Too far apart: 334.30 requires NM support within 12 in. of each box and at intervals of no more than 4.5 ft.",
-      "d": "10 ft is the support interval for raceways such as EMT (358.30), not NM cable, which needs 4.5 ft spacing."
+      "a": "8× is the straight-pull multiplier in 314.28(A)(1), not the angle-pull distance between adjacent walls.",
+      "b": "Angle pulls are 6×, not 4×; 4× is not a 314.28 dimension for these entries.",
+      "d": "Pull-box sizing exists specifically to protect conductor bending; trade size alone is not the dimension."
     },
-    "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-001",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Service disconnecting means must be",
+    "prompt": "A crew is placing the service disconnect for a new dwelling whose service conductors enter at an exterior wall. Where must that disconnecting means be installed?",
     "options": [
       {
         "id": "a",
-        "text": "Located anywhere in the building if the service conductors are in conduit"
+        "text": "Anywhere inside the building if those service conductors are in rigid metal conduit"
       },
       {
         "id": "b",
-        "text": "Installed in a bathroom if it is the nearest point of entrance"
+        "text": "In the bathroom if that room is the nearest point of entrance of the conductors"
       },
       {
         "id": "c",
-        "text": "Readily accessible and located per 230.70 near meter/service entrance"
+        "text": "Readily accessible, nearest the conductor entrance, and not in a bathroom"
       },
       {
         "id": "d",
-        "text": "Accessible to the utility only, with a lockable cover required"
+        "text": "Only behind a utility lock so the occupant cannot operate the handle"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Service disconnecting means must be”. The matching rule is: Readily accessible and located per 230.70 near meter/service entrance. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "230.70 requires a readily accessible service disconnect at the nearest point of entrance of the service conductors into the building. 230.70(A)(2) prohibits that disconnect in bathrooms. Conduit does not let you bury it deeper in the building, and occupant access is required.",
     "distractorExplanations": {
-      "a": "230.70(A)(1) requires the disconnect at the nearest point of entrance of the service conductors, conduit or not.",
-      "b": "230.70(A)(2) prohibits service disconnecting means in bathrooms even at the nearest point of entrance.",
-      "d": "The service disconnect must be readily accessible to the occupant; utility-only access applies to the meter seal."
+      "a": "Raceway type does not move the disconnect; 230.70(A)(1) still ties it to the nearest point of entrance.",
+      "b": "Bathrooms are prohibited locations for the service disconnecting means even if they are closest to the entrance.",
+      "d": "The occupant must be able to operate the service disconnect; a utility meter seal is a separate issue."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-002",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Service entrance conductors are sized from:",
+    "prompt": "You are pulling 120/240-V service-entrance conductors for a one-family dwelling. What determines the minimum ampacity of those conductors?",
     "options": [
       {
         "id": "a",
-        "text": "Main breaker size alone, without an Article 220 load calculation"
+        "text": "The main breaker handle rating alone, with no Article 220 load calculation"
       },
       {
         "id": "b",
-        "text": "Table 250.66, based on the grounding electrode conductor size"
+        "text": "Table 250.66, working backward from the grounding electrode conductor size"
       },
       {
         "id": "c",
-        "text": "Article 430 motor tables, using the largest motor's FLC"
+        "text": "Article 430 motor tables using only the largest motor full-load current"
       },
       {
         "id": "d",
-        "text": "Calculated load per Article 220 and 230.42/230.82 rules"
+        "text": "The Article 220 calculated load, with ampacity meeting 230.42"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “Service entrance conductors are sized from:”. The matching rule is: Calculated load per Article 220 and 230.42/230.82 rules. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Service-entrance conductors are sized from the Article 220 calculated load. 230.42 requires their ampacity to be at least that load (with the usual 125% continuous-load treatment). The main breaker, Table 250.66, and motor FLC tables do not reverse-size the service conductors.",
     "distractorExplanations": {
-      "a": "Service conductors are sized from the Article 220 calculated load per 230.42, not just from the main breaker rating.",
-      "b": "Table 250.66 sizes the grounding electrode conductor from the service conductor size, not the other way around.",
-      "c": "Article 430 sizes motor circuits; a service is sized from the total calculated load under Article 220."
+      "a": "A large main does not replace the load calculation; 230.42 sizes conductors from calculated load, not from the handle alone.",
+      "b": "Table 250.66 sizes the grounding electrode conductor from the service conductors, not the other way around.",
+      "c": "Article 430 sizes motor circuits. A dwelling service is an Article 220 building load, not a single-motor feeder."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-003",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Grounding electrode system for service includes:",
+    "prompt": "A dwelling service has a metal water pipe, a concrete-encased electrode in the footing, and a driven rod available on site. Which electrodes belong in the grounding electrode system?",
     "options": [
       {
         "id": "a",
-        "text": "Rod(s), plate, concrete encased electrode, or metal underground pipe where available"
+        "text": "The water pipe, concrete-encased electrode, and rod, as each is present"
       },
       {
         "id": "b",
-        "text": "Metal underground gas piping bonded at the meter as the electrode"
+        "text": "The underground gas pipe at the meter, used as the sole grounding electrode"
       },
       {
         "id": "c",
-        "text": "A single rod alone, without testing or a supplemental electrode"
+        "text": "The single rod only, with no 25-ohm test and no supplemental electrode"
       },
       {
         "id": "d",
-        "text": "Interior metal water piping located more than 5 ft from where it enters the building"
+        "text": "Interior water piping 20 ft from where the pipe enters the building"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “Grounding electrode system for service includes:”. The matching rule is: Rod(s), plate, concrete encased electrode, or metal underground pipe where available. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "250.50 requires all electrodes present at the building to be bonded into one grounding electrode system. Metal underground water pipe, concrete-encased electrodes, and rods/plates in 250.52(A) are permitted electrodes. Gas piping is not an electrode, a lone untested rod needs a supplement, and interior water pipe beyond the first 5 ft is not the electrode conductor path.",
     "distractorExplanations": {
       "b": "250.52(B) prohibits metal underground gas piping from being used as a grounding electrode.",
-      "c": "250.53(A)(2) requires a supplemental electrode for a single rod unless it is shown to be 25 ohms or less.",
-      "d": "250.68(C) limits use of interior water piping as a grounding conductor to the first 5 ft from the point of entrance."
+      "c": "250.53(A)(2) requires a supplemental electrode unless that single rod is shown to be 25 ohms or less.",
+      "d": "250.68(C) limits interior metal water piping used as a grounding conductor to the first 5 ft from entrance."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-004",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Overhead service clearance from windows",
+    "prompt": "Open overhead service conductors run along a dwelling wall that has operable windows and a porch. What clearance from those openings is required?",
     "options": [
       {
         "id": "a",
-        "text": "Applies to doors and porches, with operable windows exempt"
+        "text": "Three feet from doors and porches only; operable windows are exempt"
       },
       {
         "id": "b",
-        "text": "Must meet clearances from openings not designed for conductors"
+        "text": "Three feet from operable windows, doors, porches, and similar openings"
       },
       {
         "id": "c",
-        "text": "Is set by the utility alone, since NEC clearance rules stop at the meter"
+        "text": "Whatever the utility specifies, because NEC clearances stop at the meter"
       },
       {
         "id": "d",
-        "text": "Is governed by the vertical clearances above roofs in 230.24(A)"
+        "text": "The roof vertical clearances in 230.24(A), which also cover wall openings"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Overhead service clearance from windows”. The matching rule is: Must meet 230.24(B) clearances from openings not designed for conductors. Independent UniPrep diagnostic — not a state board exam paper. For windows, doors, and porches the clearance is 3 ft per 230.9(A).",
+    "explanation": "230.9(A) requires 3 ft of clearance from windows designed to be opened, doors, porches, balconies, and similar openings, except above the top of a window. Premises overhead service conductors are still under Article 230. Roof clearances in 230.24(A) are a different rule and do not replace opening clearances.",
     "distractorExplanations": {
-      "a": "230.9(A) includes windows designed to be opened along with doors, porches, and balconies.",
-      "c": "Overhead service conductors on the premises side of the service point are covered by NEC Article 230 clearances.",
-      "d": "230.24(A) covers clearance above roofs; clearance from building openings is a separate rule in 230.9."
+      "a": "Operable windows are in the 230.9(A) list with doors, porches, and balconies; they are not exempt.",
+      "c": "On the premises side of the service point, Article 230 clearance rules still apply to overhead service conductors.",
+      "d": "230.24(A) is roof clearance. Clearance from building openings is 230.9, not the roof table."
     },
     "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-005",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Meter socket is typically",
+    "prompt": "A dwelling has a meter socket on the outside wall and a separate main breaker enclosure a few feet away. What is that meter socket?",
     "options": [
       {
         "id": "a",
-        "text": "The service disconnecting means required by 230.70"
+        "text": "The 230.70 service disconnect, because pulling the meter isolates the premises"
       },
       {
         "id": "b",
-        "text": "Owned and maintained by the utility in every jurisdiction"
+        "text": "Utility-owned equipment in every jurisdiction, so the customer never furnishes it"
       },
       {
         "id": "c",
-        "text": "Utility/customer demarcation point; not load center unless combined"
+        "text": "A metering enclosure at the utility interface, not the disconnect unless combined"
       },
       {
         "id": "d",
-        "text": "The point where service-entrance conductors end and feeders begin"
+        "text": "The point where service-entrance conductors end and feeder conductors begin"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Meter socket is typically”. The matching rule is: Utility/customer demarcation point; not load center unless combined. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "A stand-alone meter socket is a metering enclosure at the utility/customer interface. It does not open the circuit the way a 230.70 disconnect does unless the equipment is a listed combination meter-main. Service conductors generally end at the service disconnect, which is where feeders begin. Socket ownership varies by utility.",
     "distractorExplanations": {
-      "a": "A meter socket houses the revenue meter and does not open the circuit; the disconnect is separate unless combined.",
-      "b": "Meter socket ownership varies; in many areas the customer furnishes and installs it to utility specifications.",
-      "d": "Service conductors end at the service disconnect/service equipment, which is where feeders begin, not at the meter."
+      "a": "Pulling a meter is not the required disconnecting means; 230.70 still needs a listed service disconnect.",
+      "b": "Many utilities require the customer to furnish and install the socket to their spec; ownership is not universal.",
+      "d": "Feeders begin at the load side of the service equipment, not at the meter jaws of a separate socket."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-006",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Service lateral vs service drop",
+    "prompt": "One dwelling is fed from a pole with an overhead span to the weatherhead. The house next door is fed from a buried utility run in the street to the meter. How are those two supplies named?",
     "options": [
       {
         "id": "a",
-        "text": "Lateral is overhead; drop is underground from utility"
+        "text": "The buried run is a service drop; the overhead span is a service lateral"
       },
       {
         "id": "b",
-        "text": "Lateral runs from meter to panel; drop runs pole to meter"
+        "text": "The buried run is a meter-to-panel service-entrance conductor; the overhead span is only a drop to the weatherhead"
       },
       {
         "id": "c",
-        "text": "Both are customer-owned service-entrance conductors"
+        "text": "Both utility runs are customer-owned service-entrance conductors under Article 230"
       },
       {
         "id": "d",
-        "text": "Lateral is underground; drop is overhead from utility"
+        "text": "The buried utility run is a service lateral; the overhead span is a service drop"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “Service lateral vs service drop”. The matching rule is: Lateral is underground; drop is overhead from utility. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "A service drop is the overhead utility conductors to the service point. A service lateral is the underground equivalent. Customer service-entrance conductors are a separate Article 230 category, typically from the service point to the service disconnect, not the utility drop or lateral itself.",
     "distractorExplanations": {
-      "a": "Swaps the terms: a service drop is overhead and a service lateral is underground.",
-      "b": "Meter-to-panel conductors are service-entrance conductors; a lateral is the underground conductor from the utility.",
-      "c": "Drops and laterals run from the utility to the service point; service-entrance conductors are a separate category."
+      "a": "The names are reversed: drop is overhead, lateral is underground.",
+      "b": "Meter-to-panel conductors are service-entrance conductors. The buried utility run to the meter is the lateral.",
+      "c": "Drops and laterals are the utility supply to the service point, not the customer’s service-entrance conductors."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-007",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Parallel service conductors must",
+    "prompt": "A 400-A service uses two conductors in parallel per phase. What must be true of those paralleled conductors?",
     "options": [
       {
         "id": "a",
-        "text": "Be same length, material, size, and termination"
+        "text": "Same length, conductor material, size, and termination for each phase set"
       },
       {
         "id": "b",
-        "text": "Be 1/0 AWG or larger, in different lengths per phase as needed"
+        "text": "1/0 AWG or larger, with unequal lengths allowed if that eases the pull"
       },
       {
         "id": "c",
-        "text": "Be the same size per phase, with mixed copper and aluminum permitted"
+        "text": "Same size per phase, with mixed copper and aluminum allowed in one phase"
       },
       {
         "id": "d",
-        "text": "Be grouped by phase in separate raceways, one phase per raceway"
+        "text": "Each phase in its own metal raceway and the grounded conductor in a fourth"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “Parallel service conductors must”. The matching rule is: Be same length, material, size, and termination per 310.10(H). Independent UniPrep diagnostic — not a state board exam paper. In NEC 2023 the parallel-conductor rules are in 310.10(G); insulation type must match too.",
+    "explanation": "Paralleled conductors (310.10) must be the same length, material, circular mil area, and insulation, and they must use the same terminating method, so they share current. 1/0 AWG is the usual minimum size, but length still must match. Mixing metals in a phase, or splitting phases into separate ferrous raceways, creates unequal impedance and inductive heating.",
     "distractorExplanations": {
-      "b": "1/0 AWG is the minimum size, but each phase's paralleled conductors must be the same length to share current.",
-      "c": "Paralleled conductors in a phase must be the same material as well as the same size, length, and insulation.",
-      "d": "300.20 requires all phases and the neutral in each raceway to avoid inductive heating of metal raceways."
+      "b": "1/0 AWG is the typical minimum, but paralleled conductors of a phase must still be the same length to share current.",
+      "c": "Material must match within the paralleled set; copper and aluminum in one phase will not share current equally.",
+      "d": "300.20 requires all phase conductors and the grounded conductor of the circuit in each metal raceway."
     },
     "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-008",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "230.82 lists permitted loads connected to service conductors",
+    "prompt": "An installer wants to land equipment on the line side of the service disconnect. Which connections does 230.82 actually permit there?",
     "options": [
       {
         "id": "a",
-        "text": "Any branch circuit, provided it has its own overcurrent device"
+        "text": "Ordinary branch circuits, if each circuit has its own overcurrent device"
       },
       {
         "id": "b",
-        "text": "Supply-side connections like certain solar, MGTs per rules"
+        "text": "Listed supply-side items such as metering, certain surge devices, and permitted PV taps"
       },
       {
         "id": "c",
-        "text": "Only the meter, with no other equipment allowed ahead of the disconnect"
+        "text": "Nothing except the meter enclosure; all other line-side gear is forbidden"
       },
       {
         "id": "d",
-        "text": "Feeder panelboards sized at 125% of the service conductor ampacity"
+        "text": "Feeder panelboards rated at 125 percent of the service-conductor ampacity"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “230.82 lists permitted loads connected to service conductors”. The matching rule is: Supply-side connections like certain solar, MGTs per rules—not all branch loads. Independent UniPrep diagnostic — not a state board exam paper. Branch loads in general may not connect ahead of the service disconnect.",
+    "explanation": "230.82 is a short list: cable limiters, meters and meter disconnects, instrument transformers, surge protective devices, supply-side PV connections, and similar listed items. General branch circuits and feeder panelboards connect on the load side of the service disconnect. The meter is permitted, but it is not the only permitted item.",
     "distractorExplanations": {
-      "a": "230.82 permits only listed items ahead of the disconnect; general branch circuits connect on the load side.",
-      "c": "230.82 lists several permitted items such as surge arresters, PV supply-side connections, and meter disconnects.",
-      "d": "Feeder panelboards are fed from the load side of the service disconnect; 230.82 does not permit them ahead of it."
+      "a": "General branch circuits are load-side. A local breaker does not authorize a 230.82 line-side tap.",
+      "c": "230.82 lists several permitted line-side items beyond the meter, including surge devices and certain PV connections.",
+      "d": "Feeder panelboards are supplied from the load side of the service disconnect, not from 230.82."
     },
     "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-009",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Neutral conductor on service carries",
+    "prompt": "A 120/240-V dwelling service supplies mixed 120-V lighting and 240-V equipment. What current does the grounded (neutral) service conductor carry?",
     "options": [
       {
         "id": "a",
-        "text": "The full phase current on balanced 3-phase linear loads"
+        "text": "Full ungrounded-conductor current even when 240-V line-to-line loads are balanced"
       },
       {
         "id": "b",
-        "text": "Only current from 240-volt loads such as ranges' heating elements"
+        "text": "Only the current of 240-V loads such as a range or water-heater element"
       },
       {
         "id": "c",
-        "text": "Unbalanced current and harmonic return on single-phase and some 3-phase"
+        "text": "Unbalanced 120-V load current, plus harmonic return from nonlinear loads"
       },
       {
         "id": "d",
-        "text": "No current, since it is bonded to the grounding electrode"
+        "text": "Negligible current, because the neutral is bonded to the grounding electrode"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Neutral conductor on service carries”. The matching rule is: Unbalanced current and harmonic return on single-phase and some 3-phase. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "On a 120/240-V service the grounded conductor returns the unbalanced 120-V load. Line-to-line 240-V loads cancel on the neutral. Nonlinear loads can add triplen harmonic current. Bonding the neutral to the electrode at the service does not stop that load current from flowing on the grounded conductor back to the source.",
     "distractorExplanations": {
-      "a": "On balanced linear 3-phase loads the phase currents cancel and the neutral carries little or no current.",
-      "b": "Line-to-line 240 V loads draw no neutral current; the neutral carries the unbalanced 120 V load.",
-      "d": "Bonding to the electrode does not stop neutral current; it carries the unbalanced load back to the source."
+      "a": "Balanced line-to-line current cancels in the neutral; the neutral is not sized as a third ungrounded conductor for that reason.",
+      "b": "Pure 240-V line-to-line loads draw no neutral current; 120-V unbalance is what the neutral carries.",
+      "d": "The bonding jumper creates a fault path; it does not eliminate normal unbalanced load current on the neutral."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-010",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Service equipment rating must be at least",
+    "prompt": "You are selecting the service disconnecting means for a new one-family dwelling. What is the NEC minimum rating?",
     "options": [
       {
         "id": "a",
-        "text": "60 amperes for one-family dwellings under 230.79"
+        "text": "60 A, which 230.79 sets as the one-family dwelling service minimum"
       },
       {
         "id": "b",
-        "text": "The sum of all branch-circuit breaker ratings installed in the panelboard"
+        "text": "The arithmetic sum of every branch-circuit breaker handle in the panelboard"
       },
       {
         "id": "c",
-        "text": "The utility transformer rating serving the building"
+        "text": "The kVA nameplate of the utility transformer that serves the lot"
       },
       {
         "id": "d",
-        "text": "Calculated load but not less than minimums in 230.79 for dwelling"
+        "text": "The Article 220 load, and not less than 100 A for a one-family dwelling"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “Service equipment rating must be at least”. The matching rule is: Calculated load but not less than minimums in 230.79 for dwelling. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Service equipment must be at least the Article 220 calculated load. 230.79(C) also sets a 100 A floor for a one-family dwelling disconnect. 60 A is not that dwelling minimum. Breaker-handle totals ignore demand factors, and the utility transformer rating is not the NEC service size.",
     "distractorExplanations": {
-      "a": "230.79(C) sets 100 A as the minimum for a one-family dwelling service; 60 A applies to other limited cases.",
-      "b": "Services are sized from the Article 220 calculated load with demand factors, not from adding breaker handle ratings.",
-      "c": "The utility transformer size does not set the NEC service rating; the calculated load and 230.79 minimums do."
+      "a": "230.79(C) is 100 A for a one-family dwelling. 60 A is a smaller-occupancy minimum, not this dwelling floor.",
+      "b": "Article 220 applies demand factors. Adding breaker handles oversizes the service and is not the Code method.",
+      "c": "The serving transformer kVA does not set the premises service rating under 230.79 or Article 220."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-011",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Utility service point demarcation determines",
+    "prompt": "The serving utility marks the service point on a dwelling job. What does that demarcation determine for the electrician?",
     "options": [
       {
         "id": "a",
-        "text": "Who owns conductors and which code/rules apply beyond point"
+        "text": "The enclosure in which the main bonding jumper must be installed"
       },
       {
         "id": "b",
-        "text": "Where the main bonding jumper must be installed in the system"
+        "text": "Where utility conductors and rules end and NEC premises wiring begins"
       },
       {
         "id": "c",
-        "text": "The service disconnect location under 230.70"
+        "text": "The exact wall on which 230.70 requires the service disconnect to be mounted"
       },
       {
         "id": "d",
-        "text": "The point where the NEC stops and NFPA 70E work rules begin"
+        "text": "The line beyond which the NEC no longer applies and only NFPA 70E remains"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "This item asks: “Utility service point demarcation determines”. The matching rule is: Who owns conductors and which code/rules apply beyond point. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "b",
+    "explanation": "The service point is the boundary between the serving utility and the premises wiring. Utility rules govern on the supply side; the NEC governs the customer’s service-entrance conductors and equipment beyond that point. The main bonding jumper and the 230.70 disconnect location are equipment rules, not the ownership line. NFPA 70E is work-practice, not the service-point definition.",
     "distractorExplanations": {
-      "b": "The main bonding jumper is installed at the service disconnect, not at the utility service point.",
-      "c": "The disconnect location is set by 230.70 (nearest point of entrance), not by the utility service point.",
-      "d": "NFPA 70E covers safe work practices, not ownership; the service point separates utility rules from NEC coverage."
+      "a": "The main bonding jumper is installed at the service disconnect/service equipment, not automatically at the utility service point.",
+      "c": "230.70 sets disconnect location by nearest point of entrance of the service conductors, not by the painted service-point mark.",
+      "d": "The NEC still applies to premises wiring past the service point. 70E covers electrical safety in the workplace, not ownership."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-012",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Transformers supplying building separately derived systems require",
+    "prompt": "A feeder leaves the service equipment to a remote dwelling panelboard. How must the feeder overcurrent device relate to those feeder conductors?",
     "options": [
       {
         "id": "a",
-        "text": "Bonding and grounding per 250.24"
+        "text": "It may exceed conductor ampacity freely if the feeder is shorter than 50 ft"
       },
       {
         "id": "b",
-        "text": "Bonding and grounding per 250.30"
+        "text": "It must protect the feeder conductors, generally not exceeding their ampacity"
       },
       {
         "id": "c",
-        "text": "Grounding at the primary side only, per 250.32"
+        "text": "It can be omitted because the service main already protects every downstream feeder"
       },
       {
         "id": "d",
-        "text": "Bonding at both the transformer and the panel per 250.30"
+        "text": "It is taken from Table 250.66 using the feeder equipment grounding conductor"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "This item asks: “Transformers supplying building separately derived systems require”. The matching rule is: Bonding and grounding per 250.30. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Feeders are protected under 240.4 and Article 215: the overcurrent device generally must not exceed the conductor ampacity after any required adjustments, with only the listed next-size-up and tap exceptions. A short run is not a blanket waiver. The service main does not replace feeder protection, and Table 250.66 is not an OCPD table.",
     "distractorExplanations": {
-      "a": "250.24 covers grounding of service-supplied systems; separately derived systems such as transformers fall under 250.30.",
-      "c": "250.32 covers buildings supplied by feeders; a transformer secondary is a separately derived system under 250.30.",
-      "d": "250.30(A)(1) permits the system bonding jumper at one location only; bonding at both creates parallel neutral paths."
+      "a": "Length alone is not a license to oversize the breaker; 240.21 tap rules are specific and limited, not a 50-ft free pass.",
+      "c": "The service OCPD protects the service conductors. Each feeder still needs its own protection unless a true tap rule applies.",
+      "d": "Table 250.66 sizes grounding electrode conductors, not feeder breakers."
     },
     "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-013",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Class 160 service overcurrent device maximum for dwelling",
+    "prompt": "A candidate says a dwelling service overcurrent device cannot exceed a “Class 160” 160-A maximum. What does the NEC actually set?",
     "options": [
       {
         "id": "a",
-        "text": "60 A, the minimum service for any dwelling under 230.79"
+        "text": "60 A as both the minimum and the maximum for any dwelling service"
       },
       {
         "id": "b",
-        "text": "160 A, set as the dwelling maximum by 230.79"
+        "text": "160 A as the dwelling-service maximum in 230.79"
       },
       {
         "id": "c",
-        "text": "Not standard—services typically 100A-400A"
+        "text": "No 160-A cap; 100–400 A services are common as the calculated load requires"
       },
       {
         "id": "d",
-        "text": "200 A, the largest service permitted for a one-family dwelling"
+        "text": "200 A as the largest service permitted for a one-family dwelling"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Class 160 service overcurrent device maximum for dwelling”. The matching rule is: Not standard—services typically 100A-400A; 160A may exist as equipment rating context. Independent UniPrep diagnostic — not a state board exam paper. 160A may appear only as an equipment rating context.",
+    "explanation": "230.79 sets minimum disconnect ratings (100 A for a one-family dwelling), not a 160 A ceiling. Dwelling services are routinely 100, 200, 320, or 400 A when Article 220 supports them. “Class 160” is not an NEC dwelling-service class. 60 A is not the one-family floor, and 200 A is not a Code maximum.",
     "distractorExplanations": {
-      "a": "230.79(C) sets 100 A as the one-family dwelling minimum; 60 A is not the dwelling minimum.",
-      "b": "230.79 sets minimum service ratings, not maximums, and there is no 'Class 160' dwelling service rule.",
-      "d": "The NEC sets no 200 A ceiling; dwellings may have 320/400 A or larger services when the calculated load requires."
+      "a": "230.79(C) is a 100 A one-family minimum, not a 60 A min-and-max for dwellings.",
+      "b": "230.79 is a minimum-rating rule. It does not create a 160 A dwelling maximum.",
+      "d": "The NEC does not cap one-family services at 200 A; larger services are used when the calculated load requires them."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-014",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Emergency disconnect for one- and two-family dwellings (230.85)",
+    "prompt": "A one-family dwelling is being wired to a recent NEC cycle that includes 230.85. Where must the emergency disconnect be located?",
     "options": [
       {
         "id": "a",
-        "text": "Requires an emergency disconnect only for services over 400 A"
+        "text": "Only if the service is larger than 400 A; smaller dwellings are exempt"
       },
       {
         "id": "b",
-        "text": "Requires an emergency disconnect located inside next to the panel"
+        "text": "Indoors, mounted immediately beside the interior panelboard"
       },
       {
         "id": "c",
-        "text": "Applies to multifamily buildings, while one- and two-family homes are exempt"
+        "text": "At multifamily buildings; one- and two-family dwellings are exempt"
       },
       {
         "id": "d",
-        "text": "Requires readily accessible external disconnect"
+        "text": "Outdoors, readily accessible, and identified as an emergency disconnect"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "This item asks: “Emergency disconnect for one- and two-family dwellings (230.85)”. The matching rule is: Requires readily accessible external disconnect as of recent NEC cycles. Independent UniPrep diagnostic — not a state board exam paper. This has applied since the 2020 NEC cycle.",
+    "explanation": "230.85 requires a readily accessible outdoor emergency disconnect for one- and two-family dwellings so first responders can de-energize the premises. It is not limited to services over 400 A, it is not an indoor-beside-the-panel rule, and the requirement targets one- and two-family dwellings rather than exempting them.",
     "distractorExplanations": {
-      "a": "230.85 applies to one- and two-family dwelling services regardless of rating, not only above 400 A.",
-      "b": "230.85 requires the emergency disconnect at a readily accessible outdoor location so first responders can reach it.",
-      "c": "Reverses the scope: 230.85 targets one- and two-family dwelling units specifically."
+      "a": "230.85 applies to one- and two-family dwelling services without a 400 A threshold.",
+      "b": "The emergency disconnect is an outdoor, readily accessible device, not an indoor handle next to the panel.",
+      "c": "The rule is written for one- and two-family dwellings; it does not flip the scope to multifamily only."
     },
     "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-services-015",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "services",
-    "prompt": "Service raceway seal where underground conductors enter building",
+    "prompt": "An underground service raceway enters a dwelling below grade and turns up into the meter-main. What sealing requirement applies?",
     "options": [
       {
         "id": "a",
-        "text": "May be required to prevent gas/moisture migration per 300.5(G) and 230.8"
+        "text": "Seal the entry to limit moisture and gas, using a sealant identified for the insulation"
       },
       {
         "id": "b",
-        "text": "Is needed for overhead service masts but not underground raceways"
+        "text": "Seal overhead masts only; underground service raceways are left open to drain"
       },
       {
         "id": "c",
-        "text": "May use any foam sealant, since compatibility with insulation is not required"
+        "text": "Use any expanding foam, because insulation compatibility is not a Code issue"
       },
       {
         "id": "d",
-        "text": "Is prohibited because sealing traps condensation inside the raceway"
+        "text": "Leave the raceway unsealed, because a seal would trap condensation in the pipe"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “Service raceway seal where underground conductors enter building”. The matching rule is: May be required to prevent gas/moisture migration per 300.5(G) and 230.8. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "230.8 and 300.5(G) require sealing underground raceways where they enter buildings so moisture and gases do not migrate into equipment. The sealant must be identified for use with the cable or conductor insulation. Overhead-only sealing, random foam, and a ban on seals reverse those rules.",
     "distractorExplanations": {
-      "b": "300.5(G) specifically targets raceways entering from underground, where moisture and gas can migrate inside.",
-      "c": "300.5(G) requires sealants identified for use with the cable or conductor insulation.",
-      "d": "Sealing is required, not prohibited; it keeps warm moist air and gases from migrating into equipment."
+      "b": "300.5(G) is aimed at raceways entering from underground, where moisture and gas travel inside the pipe.",
+      "c": "The sealant must be identified for the conductor insulation; unlisted foam can damage insulation.",
+      "d": "Sealing is required to keep moist air and gases out of the equipment, not prohibited as a condensation trap."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-001",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Arc flash hazard analysis helps determine",
+    "prompt": "A 480 V MCC bucket must be racked for troubleshooting and has no incident-energy label. Before energized work, an arc-flash risk assessment is required. What does that assessment primarily establish?",
     "options": [
       {
         "id": "a",
-        "text": "Available fault current to size the service overcurrent device"
+        "text": "Available fault current used only to upsize the service overcurrent device"
       },
       {
         "id": "b",
-        "text": "PPE category and approach boundaries for energized work"
+        "text": "Rubber insulating glove class from the shock voltage of the bus"
       },
       {
         "id": "c",
-        "text": "Shock voltage limits for selecting rubber insulating gloves"
+        "text": "Which lockout steps may be skipped because live work is planned"
       },
       {
         "id": "d",
-        "text": "Which LOTO steps can be skipped for live troubleshooting"
+        "text": "Arc-rated PPE and the arc-flash boundary for the assigned task"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Arc flash hazard analysis helps determine”. The matching rule is: PPE category and approach boundaries for energized work. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "d",
+    "explanation": "NFPA 70E arc-flash risk assessment uses available fault current and clearing time to estimate incident energy. That result sets the arc-flash boundary and the arc-rated PPE (or PPE category) for justified energized work. It does not size service overcurrent devices, select glove class, or waive lockout.",
     "distractorExplanations": {
-      "a": "Available fault current comes from a short-circuit study (110.24); arc flash analysis uses it to find incident energy and PPE.",
-      "c": "Glove class selection comes from the shock risk assessment; arc flash analysis sets arc-rated PPE and the arc boundary.",
-      "d": "Arc flash analysis does not waive lockout/tagout; it sets PPE and boundaries when energized work is justified."
+      "a": "Fault current comes from a short-circuit study (NEC 110.24) to rate equipment; arc-flash analysis uses it to find incident energy, not to resize the service main.",
+      "b": "Glove class is a shock-risk decision from voltage and ASTM D120; arc-flash analysis sets arc-rated clothing and the arc boundary.",
+      "c": "An assessment never authorizes skipping LOTO; it only specifies PPE and boundaries when energized work is justified."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-002",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Lockout/tagout before electrical work",
+    "prompt": "A 50 hp 480 V pump will be uncoupled for a seal change. The local disconnect is opened. What must the crew still do before anyone puts a hand in the coupling?",
     "options": [
       {
         "id": "a",
-        "text": "Open the breaker and begin work once the circuit is labeled"
+        "text": "Apply personal locks, release stored energy, and verify residual voltage is gone"
       },
       {
         "id": "b",
-        "text": "Verify absence of voltage first, then open the disconnect"
+        "text": "Tag the disconnect without locking because the pump coupling is already off"
       },
       {
         "id": "c",
-        "text": "De-energize and verify absence of voltage before contact"
+        "text": "Jog the starter once to prove the motor cannot start, then begin the seal work"
       },
       {
         "id": "d",
-        "text": "Lock the breaker and test with a non-contact tester only"
+        "text": "Wait thirty seconds for the field to collapse, then start work without testing"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "This item asks: “Lockout/tagout before electrical work”. The matching rule is: De-energize and verify absence of voltage before contact. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "a",
+    "explanation": "OSHA 1910.147 and NFPA 70E require isolation, personal lockout, control of stored energy (rotation, springs, capacitors), and a proven absence of voltage before contact. Uncoupling the pump does not replace locks or a zero-energy test on a 480 V motor circuit.",
     "distractorExplanations": {
-      "a": "Opening and labeling is not enough; the circuit must be locked out and tested for absence of voltage before contact.",
-      "b": "Reverses the order: open and lock out the disconnect first, then verify absence of voltage.",
-      "d": "NFPA 70E requires an adequately rated contact test instrument; non-contact testers alone are not acceptable verification."
+      "b": "A tag without a personal lock does not prevent someone from reclosing the disconnect; uncoupling is not a substitute for LOTO.",
+      "c": "Jogging can start the machine unexpectedly and is not a verification method; isolation must be proven dead, not bumped.",
+      "d": "Time delay does not prove de-energization; residual voltage and stored mechanical energy must be tested and released."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-003",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Insulated tools are rated by:",
+    "prompt": "A 277 V lighting contactor must stay energized for in-service voltage checks. The journeyman needs hand tools at the terminals. How must those tools be rated?",
     "options": [
       {
         "id": "a",
-        "text": "OSHA glove classes, with Class 00 equal to 500V"
+        "text": "To OSHA Class 00 glove voltage, because the tool rating follows glove class"
       },
       {
         "id": "b",
-        "text": "The arc-flash PPE category printed on the handle"
+        "text": "To the printed arc-flash PPE category stamped on the insulated tool handle"
       },
       {
         "id": "c",
-        "text": "The UL listing number stamped on the jaw"
+        "text": "To ASTM F1505/IEC 60900 insulation, typically 1000 V, jackets intact"
       },
       {
         "id": "d",
-        "text": "ASTM/ISO standards for voltage rating (e.g., 1000V)"
+        "text": "By the UL file number on the jaw, treated as the insulation voltage rating"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “Insulated tools are rated by:”. The matching rule is: ASTM/ISO standards for voltage rating (e.g., 1000V). Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "c",
+    "explanation": "Insulated hand tools for live work are rated under ASTM F1505 / IEC 60900, commonly 1000 V, and the insulation must be intact. Glove classes, arc-flash PPE categories, and listing file numbers are different systems and do not set the tool voltage rating.",
     "distractorExplanations": {
-      "a": "Class 00 (500 V) is a rubber insulating glove class under ASTM D120, not a rating system for insulated hand tools.",
-      "b": "PPE categories rate arc-rated clothing; insulated tools carry a voltage rating such as 1000 V per ASTM F1505/IEC 60900.",
-      "c": "A listing number identifies a product, not its insulation rating; tools are rated to 1000 V under ASTM/IEC standards."
+      "a": "Class 00 (500 V ac) is an ASTM D120 rubber-glove class, not the rating system for insulated pliers or screwdrivers.",
+      "b": "PPE categories describe arc-rated clothing; they are not a voltage rating printed as a tool insulation class.",
+      "d": "A UL file number identifies a listed product; it is not the 1000 V insulation rating required for live-work tools."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-004",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "First aid for electrical shock victim includes:",
+    "prompt": "A helper contacts a 277 V conductor and is unresponsive on the floor. The circuit is still energized. What is the first safe action?",
     "options": [
       {
         "id": "a",
-        "text": "De-energize if safe, call EMS, begin CPR if needed"
+        "text": "De-energize from a safe place, call EMS, then start CPR if the scene is safe"
       },
       {
         "id": "b",
-        "text": "Pull victim by still-energized wire"
+        "text": "Grab the victim’s clothing and pull them clear of the still-live conductor"
       },
       {
         "id": "c",
-        "text": "Ignore until lunch"
+        "text": "Throw water on the panel so a ground-fault current will open the breaker"
       },
       {
         "id": "d",
-        "text": "Pour water on panel"
+        "text": "Wait for the victim to regain consciousness before calling EMS or a supervisor"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “First aid for electrical shock victim includes:”. The matching rule is: De-energize if safe, call EMS, begin CPR if needed. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Rescuers must not become a second victim. Open or trip the source from a safe place, summon EMS, then begin CPR or AED use only after the scene is de-energized or the victim is clear of the circuit. Direct contact with a live victim or wetting equipment is unsafe.",
     "distractorExplanations": {
-      "b": "“Pull victim by still-energized wire” does not answer “First aid for electrical shock victim includes:”. The matching answer is: De-energize if safe, call EMS, begin CPR if needed.",
-      "c": "“Ignore until lunch” does not answer “First aid for electrical shock victim includes:”. The matching answer is: De-energize if safe, call EMS, begin CPR if needed.",
-      "d": "“Pour water on panel” does not answer “First aid for electrical shock victim includes:”. The matching answer is: De-energize if safe, call EMS, begin CPR if needed."
+      "b": "Pulling a person who is still on an energized conductor puts the rescuer in the current path.",
+      "c": "Water on energized gear creates additional shock and does not reliably clear the fault.",
+      "d": "Electrical shock can stop the heart; delayed EMS and CPR worsen outcomes even if the person looks merely stunned."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-005",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Confined space with electrical equipment may have atmospheric hazards including",
+    "prompt": "A VFD-fed 40 hp motor is locked out at the disconnect. The journeyman must land a new EGC at the drive terminals. Which remaining hazard must still be controlled?",
     "options": [
       {
         "id": "a",
-        "text": "Arc flash incident energy from enclosed switchgear"
+        "text": "Line-side residual only; load terminals are dead as soon as the disconnect opens"
       },
       {
         "id": "b",
-        "text": "Low oxygen, toxic gases, or flammable vapors"
+        "text": "Dynamic braking that makes shaft coasting impossible after the stop command"
       },
       {
         "id": "c",
-        "text": "Step and touch potential from grounded vault walls"
+        "text": "No meter check at the VFD, because the locked disconnect is proof enough"
       },
       {
         "id": "d",
-        "text": "Engulfment by loose cable fill and conduit debris"
+        "text": "Stored energy in the DC bus capacitors until discharged and verified dead"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Confined space with electrical equipment may have atmospheric hazards including”. The matching rule is: Low oxygen, toxic gases, or flammable vapors. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "d",
+    "explanation": "Opening a motor disconnect isolates the line but does not instantly drain a VFD DC bus. Capacitors can hold hazardous voltage for minutes. LOTO for electronic drives includes waiting the manufacturer’s discharge time, using bleed paths if provided, and proving absence of voltage at the DC bus and motor terminals.",
     "distractorExplanations": {
-      "a": "Arc flash is an electrical hazard, not an atmospheric one; confined-space testing checks oxygen, toxics, and flammables.",
-      "c": "Step and touch potential is a shock hazard; atmospheric hazards are low oxygen, toxic gases, and flammable vapors.",
-      "d": "Engulfment is a physical confined-space hazard, separate from the atmospheric hazards measured before entry."
+      "a": "Load-side and DC-bus terminals can remain live after the disconnect opens; residual energy is not limited to the line lugs.",
+      "b": "Many VFDs coast on stop; braking is not guaranteed and does not remove electrical stored energy.",
+      "c": "A locked disconnect is isolation, not verification; NFPA 70E still requires an absence-of-voltage test at the work point."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-006",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Live-dead-live test sequence verifies",
+    "prompt": "A 208Y/120 V panel is locked out. Before landing new branch conductors, the journeyman must prove the meter works. What is the live-dead-live sequence?",
     "options": [
       {
         "id": "a",
-        "text": "Circuit is live, then dead after switching, then live again on restore"
+        "text": "Watch the circuit go live, then dead after switching, then live again after restore"
       },
       {
         "id": "b",
-        "text": "Tester reads dead on two phases, then the third is checked live"
+        "text": "Prove two phases dead and treat the third as dead if those two readings match"
       },
       {
         "id": "c",
-        "text": "Tester works on known live, confirms dead, then recheck live"
+        "text": "Test the meter on a known live source, prove the circuit dead, then retest live"
       },
       {
         "id": "d",
-        "text": "Meter calibration is current before each shift's first test"
+        "text": "Check the calibration sticker on the meter and skip the known-live source checks"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Live-dead-live test sequence verifies”. The matching rule is: Tester works on known live, confirms dead, then recheck live. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "Live-dead-live proves the instrument, not the switching history. Test on a known energized source, measure every conductor on the locked-out circuit, then retest the meter on the known live source so a failed tester cannot be mistaken for a dead circuit.",
     "distractorExplanations": {
-      "a": "Live-dead-live checks the tester, not the circuit's switching history: test on a known live source before and after.",
-      "b": "Every conductor is tested for absence of voltage; the known-live checks are on a separate source before and after.",
-      "d": "Calibration date matters, but live-dead-live proves the tester is working at the moment of the absence-of-voltage test."
+      "a": "The sequence checks the tester before and after, not whether the panel was recently energized or restored.",
+      "b": "Each ungrounded conductor and the grounded conductor must be tested; two dead phases do not prove the third.",
+      "d": "A current calibration sticker does not prove the meter works at this moment; known-live checks are still required."
     },
-    "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "difficulty": "medium",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-007",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "GFCI devices protect personnel by:",
+    "prompt": "A Class A GFCI on a 20 A construction receptacle trips when a helper uses a wet drill. What current condition caused that trip?",
     "options": [
       {
         "id": "a",
-        "text": "Detecting arcing signatures on the branch circuit"
+        "text": "An arcing signature on the ungrounded conductor, which is AFCI protection"
       },
       {
         "id": "b",
-        "text": "Detecting current over 30 mA, the equipment-protection trip level"
+        "text": "About 4–6 mA imbalance between the hot and the grounded conductor"
       },
       {
         "id": "c",
-        "text": "Sending fault current over the EGC to trip the breaker"
+        "text": "More than 30 mA residual current, the typical equipment GFPE level"
       },
       {
         "id": "d",
-        "text": "Detecting imbalance between hot and neutral (~5mA trip)"
+        "text": "Fault current on the equipment grounding conductor that then trips the breaker"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “GFCI devices protect personnel by:”. The matching rule is: Detecting imbalance between hot and neutral (~5mA trip). Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "b",
+    "explanation": "A Class A GFCI compares current leaving on the ungrounded conductor with current returning on the grounded conductor and trips at about 4–6 mA. That personnel threshold is far below 30 mA GFPE and is not the same function as an AFCI or a overcurrent device clearing via the EGC.",
     "distractorExplanations": {
-      "a": "Recognizing arcing signatures is the AFCI function; a GFCI compares current on the hot and neutral.",
-      "b": "30 mA is a typical equipment ground-fault protection (GFPE) level; Class A GFCIs for people trip at about 4–6 mA.",
-      "c": "Clearing faults through the EGC is how the breaker protects equipment; a GFCI trips on a small current imbalance."
+      "a": "Detecting parallel or series arcing is an AFCI function; a GFCI does not look for arc signatures.",
+      "c": "30 mA is a common equipment ground-fault (GFPE) setting; it is too high for Class A personnel protection.",
+      "d": "Breaker trip via the EGC is overcurrent/ground-fault clearing of large current, not a 5 mA differential trip."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-008",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Approach boundary 'restricted approach' means:",
+    "prompt": "Covers are off a 480 V motor-control bus. The restricted approach boundary is marked. Who may cross it to take a voltage reading?",
     "options": [
       {
         "id": "a",
-        "text": "Only qualified persons with appropriate PPE may enter"
+        "text": "A qualified person using shock PPE rated for the exposed voltage"
       },
       {
         "id": "b",
-        "text": "Unqualified persons may enter if escorted by a qualified person"
+        "text": "An unqualified helper if a qualified person walks beside them"
       },
       {
         "id": "c",
-        "text": "Anyone wearing arc-rated clothing may enter"
+        "text": "Anyone in arc-rated clothing, because clothing also covers shock risk"
       },
       {
         "id": "d",
-        "text": "Qualified persons may enter without shock PPE if work is brief"
+        "text": "A qualified person without shock PPE if the meter reading takes under a minute"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "This item asks: “Approach boundary 'restricted approach' means:”. The matching rule is: Only qualified persons with appropriate PPE may enter. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "The restricted approach boundary is a shock boundary. NFPA 70E allows only a qualified person inside it, with insulating PPE and insulated tools as the voltage requires. Escort rules apply at the limited approach boundary, not the restricted boundary, and arc-rated clothing does not replace shock protection.",
     "distractorExplanations": {
-      "b": "The escort allowance applies to the limited approach boundary; unqualified persons may not cross the restricted boundary.",
-      "c": "Arc-rated clothing addresses arc flash; crossing the restricted (shock) boundary requires qualification and shock PPE.",
-      "d": "Inside the restricted approach boundary a qualified person needs shock protection regardless of task duration."
+      "b": "An escort may take an unqualified person to the limited approach boundary, not across the restricted shock boundary.",
+      "c": "Arc-rated clothing addresses incident energy; crossing the restricted boundary is a shock decision that needs insulated PPE.",
+      "d": "Task duration does not waive shock PPE inside the restricted approach boundary."
     },
     "difficulty": "hard",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-009",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Temporary wiring on construction sites must",
+    "prompt": "A 25 hp 480 V motor in a mechanical room is served from an MCC two rooms away. For ordinary servicing at the motor, what does NEC 430.102 require?",
     "options": [
       {
         "id": "a",
-        "text": "Follow Article 527 rules, which govern temporary installations"
+        "text": "A remote emergency-stop pushbutton used in place of the motor disconnecting means"
       },
       {
         "id": "b",
-        "text": "Meet NEC Article 590 including protection from damage"
+        "text": "No local disconnect if the MCC bucket nameplate already lists this motor ID"
       },
       {
         "id": "c",
-        "text": "Be removed within 180 days of first energizing"
+        "text": "No motor disconnect when the controller disconnect is located in another building"
       },
       {
         "id": "d",
-        "text": "Use GFCI only for 15A receptacles, not 20A or 30A"
+        "text": "A lockable disconnect in sight of the motor unless a Code exception applies"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Temporary wiring on construction sites must”. The matching rule is: Meet NEC Article 590 including protection from damage. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "d",
+    "explanation": "NEC 430.102(B) requires a disconnecting means in sight from the motor location, and it must be lockable. Limited exceptions exist for some industrial installations with documented safety procedures. An E-stop, a nameplate, or a remote controller disconnect does not by itself meet the in-sight motor disconnect rule.",
     "distractorExplanations": {
-      "a": "Temporary wiring moved from Article 527 to Article 590 in the 2002 NEC; Article 590 is the current rule.",
-      "c": "Construction temporary wiring is removed when construction is complete (590.3); the 90-day limit is for holiday lighting.",
-      "d": "590.6 requires GFCI protection for 125 V, single-phase 15, 20, and 30 A receptacles on construction sites."
+      "a": "An E-stop may drop a starter coil; it is not the lockable disconnecting means required at the motor.",
+      "b": "Identification of the MCC bucket helps lockout but does not place a disconnect in sight of the motor.",
+      "c": "Distance to the controller makes an in-sight motor disconnect more necessary, not optional."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-010",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Ladder safety near electrical equipment requires:",
+    "prompt": "A journeyman must replace lamps from a ladder next to an exposed 277 V lighting busway. What ladder practice is required?",
     "options": [
       {
         "id": "a",
-        "text": "Aluminum ladders kept at least 3 ft from overhead lines"
+        "text": "An aluminum ladder kept about 3 ft from the energized busway"
       },
       {
         "id": "b",
-        "text": "Wood ladders that have been painted to seal and protect the side rails"
+        "text": "A wood ladder painted so cracks in the side rails cannot collect moisture"
       },
       {
         "id": "c",
-        "text": "Non-conductive side rails or maintain clearance from energized parts"
+        "text": "Nonconductive side rails, or stay clear of the exposed energized parts"
       },
       {
         "id": "d",
-        "text": "Metal ladders grounded to the panel enclosure before use"
+        "text": "A metal ladder bonded to the enclosure before the worker climbs"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "This item asks: “Ladder safety near electrical equipment requires:”. The matching rule is: Non-conductive side rails or maintain clearance from energized parts. Independent UniPrep diagnostic — not a state board exam paper.",
+    "explanation": "OSHA and NFPA 70E expect nonconductive ladders near exposed live parts, or else maintained clearance so the ladder cannot contact them. Conductive rails put the worker in a fault path; paint on wood hides defects; bonding a metal ladder does not make contact safe.",
     "distractorExplanations": {
-      "a": "Conductive ladders should not be used near energized parts, and OSHA sets 10 ft minimum clearance for lines up to 50 kV.",
-      "b": "OSHA prohibits opaque coatings on wood ladders because paint can hide cracks and defects.",
-      "d": "Grounding a metal ladder does not make it safe; contact with energized parts still puts the worker in the fault path."
+      "a": "Aluminum is conductive; OSHA overhead-line clearance for up to 50 kV is 10 ft, not a 3 ft busway exception.",
+      "b": "Opaque coatings on wood ladders are prohibited because they hide cracks and other defects.",
+      "d": "Bonding a metal ladder still leaves the climber in the path if the rail touches 277 V parts."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-011",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Incident energy on 480V switchgear can be",
+    "prompt": "An unlabeled 480 V switchgear cubicle will have covers removed for an infrared scan. Why are untreated cotton work clothes not enough?",
     "options": [
       {
         "id": "a",
-        "text": "Low enough that cotton work clothes provide full protection"
+        "text": "Incident energy at 480 V can exceed cotton and needs arc-rated PPE"
       },
       {
         "id": "b",
-        "text": "Limited to shock risk, since 480V does not sustain arcs"
+        "text": "480 V cannot sustain an arcing fault, so voltage-rated gloves are enough"
       },
       {
         "id": "c",
-        "text": "Dangerous only at 13.8 kV and above, not 480V"
+        "text": "Arc flash is a concern on 13.8 kV gear and is treated as negligible at 480 V"
       },
       {
         "id": "d",
-        "text": "Severe enough to require arc-rated suit and face shield"
+        "text": "Infrared work is non-contact, so NFPA 70E clothing rules do not apply here"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “Incident energy on 480V switchgear can be”. The matching rule is: Severe enough to require arc-rated suit and face shield. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "a",
+    "explanation": "Low-voltage switchgear can produce high incident energy because fault current is large and clearing times can be long. Opening doors for IR work is energized work. Untreated cotton can ignite; arc-rated clothing, face protection, and a documented risk assessment are required even at 480 V.",
     "distractorExplanations": {
-      "a": "480 V switchgear incident energy often exceeds what untreated cotton can withstand; arc-rated PPE is required.",
-      "b": "480 V systems readily sustain arcing faults; arc flash risk is a major hazard at this voltage.",
-      "c": "Many serious arc flash injuries occur on 480 V equipment; severity depends on fault current and clearing time."
+      "b": "480 V systems readily sustain arcing faults; arc flash is a major hazard at this voltage.",
+      "c": "Many severe arc-flash injuries occur on 480 V equipment; voltage class alone does not make it negligible.",
+      "d": "Removing covers and working near exposed buses is energized work; non-contact IR does not waive 70E PPE."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-012",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Electrical burns at entry/exit points indicate",
+    "prompt": "A shock victim has a charred fingertip and a matching mark at the opposite boot. What do those paired marks indicate?",
     "options": [
       {
         "id": "a",
-        "text": "Current passed through body causing tissue damage"
+        "text": "Surface-only burns, so internal tissue along the current path is uninjured"
       },
       {
         "id": "b",
-        "text": "Surface burns only, with no internal injury beneath the skin"
+        "text": "Current traveled through the body and damaged tissue along that path"
       },
       {
         "id": "c",
-        "text": "Arc flash thermal burns without current passing through the body"
+        "text": "Arc-flash radiant burns, which usually lack paired electrical contact wounds"
       },
       {
         "id": "d",
-        "text": "Static discharge from clothing during the contact"
+        "text": "A clothing static discharge that can closely mimic true electrical contact burns"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "This item asks: “Electrical burns at entry/exit points indicate”. The matching rule is: Current passed through body causing tissue damage. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "b",
+    "explanation": "Entry and exit burns mark where current entered and left the body. Damage along the path can include muscle, nerve, and heart injury that looks mild at the skin. That pattern is contact current, not purely radiant arc-flash burn or static.",
     "distractorExplanations": {
-      "b": "Entry and exit wounds often hide far more extensive internal tissue, nerve, and cardiac damage along the current path.",
-      "c": "Arc flash causes thermal burns without entry/exit wounds; entry and exit points indicate current flowed through the body.",
-      "d": "Static discharge does not produce entry and exit burns; those mark the current path through the body."
+      "a": "Skin marks often hide deeper necrosis and cardiac effects; they are not proof the injury is superficial.",
+      "c": "Arc-flash thermal burns can be extensive on exposed skin without classic entry/exit contact pairs.",
+      "d": "Static discharge does not produce paired electrical contact burns of this kind."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-013",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Housekeeping in electrical rooms",
+    "prompt": "Spare lumber and cardboard are stacked in front of a 480 V switchboard, leaving a walkway. What is wrong with that storage?",
     "options": [
       {
         "id": "a",
-        "text": "Store spare parts in the working space if aisles stay open"
+        "text": "Storage is allowed if a 24 in. aisle remains in front of the switchboard"
       },
       {
         "id": "b",
-        "text": "Keep combustibles out of working space and equipment area"
+        "text": "Ladders may occupy the dedicated space above the gear if the front stays clear"
       },
       {
         "id": "c",
-        "text": "Use the dedicated space above panels for storing ladders"
+        "text": "Required working space cannot be used for storage, and combustibles stay out"
       },
       {
         "id": "d",
-        "text": "Keep the room locked, with working space clearance optional"
+        "text": "A locked electrical room waives the NEC 110.26 working-space clearance rules"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "This item asks: “Housekeeping in electrical rooms”. The matching rule is: Keep combustibles out of working space and equipment area. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "c",
+    "explanation": "NEC 110.26(B) forbids using required working space for storage. Combustibles next to switchgear add fire load and block emergency access. Dedicated equipment space above gear must also stay clear. Locking the room does not reduce the clearance dimensions.",
     "distractorExplanations": {
-      "a": "110.26(B) prohibits using required working space for storage, even if a walkway remains.",
-      "c": "Dedicated equipment space above panelboards must stay clear and cannot be used for storage.",
-      "d": "Locking the room does not waive 110.26 working space; clearances must be maintained at all times."
+      "a": "A leftover walkway does not satisfy 110.26 depth and width; the working space itself cannot be storage.",
+      "b": "110.26(E) dedicated space above equipment is for raceways and ventilation, not ladder or material storage.",
+      "d": "Access control does not waive working space; clearances apply whether or not the door is locked."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-014",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Testing for absence of voltage uses",
+    "prompt": "After LOTO on a 480 V motor disconnect, the journeyman must prove the load side is dead before lifting motor leads. What method is required?",
     "options": [
       {
         "id": "a",
-        "text": "Non-contact voltage tester swept near each conductor"
+        "text": "Sweep a non-contact tester near each conductor and stop if the wand is silent"
       },
       {
         "id": "b",
-        "text": "Opening the breaker and checking the panel schedule"
+        "text": "Open the breaker and rely on the panel schedule as the official dead check"
       },
       {
         "id": "c",
-        "text": "Properly rated test instrument contacting all conductors"
+        "text": "Measure one phase-to-ground pair and treat the remaining phases as matching"
       },
       {
         "id": "d",
-        "text": "Test instrument on one phase-to-ground pair only"
+        "text": "Use a rated contact tester on each phase-to-phase and phase-to-ground pair"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "This item asks: “Testing for absence of voltage uses”. The matching rule is: Properly rated test instrument contacting all conductors. Independent UniPrep diagnostic — not a state board exam paper.",
+    "correctOptionId": "d",
+    "explanation": "NFPA 70E requires an adequately rated contact instrument. Test phase-to-phase and phase-to-ground on every conductor, using live-dead-live to prove the meter. Non-contact wands, schedules, and a single pair can miss a still-live lead on a motor circuit.",
     "distractorExplanations": {
-      "a": "Non-contact testers can miss shielded or low-level voltage; NFPA 70E requires an adequately rated contact test instrument.",
-      "b": "Panel schedules can be wrong; absence of voltage must be verified by testing, not by documentation.",
-      "d": "Each conductor must be tested phase-to-phase and phase-to-ground; testing one pair can miss a live conductor."
+      "a": "Non-contact testers can miss shielded or low voltage and are not the accepted absence-of-voltage method.",
+      "b": "Panel schedules are often wrong; documentation is not a voltage test.",
+      "c": "One phase-to-ground reading can miss an open ground or a live remaining phase; all combinations are required."
     },
     "difficulty": "easy",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "electrical-journeyman-readiness-check-safety-015",
     "examSlug": "electrical-journeyman-readiness-check",
     "topicId": "safety",
-    "prompt": "Qualified person per NEC means:",
+    "prompt": "A 480 V MCC bucket must be racked. Under NEC Article 100, who is a qualified person for that task?",
     "options": [
       {
         "id": "a",
-        "text": "One who holds a state journeyman license for the work being done"
+        "text": "Any state-licensed journeyman, even when untrained on this specific MCC"
       },
       {
         "id": "b",
-        "text": "One who has completed OSHA 10 training on electrical hazards"
+        "text": "A person skilled on this equipment and trained to recognize and avoid its hazards"
       },
       {
         "id": "c",
-        "text": "One who has experience operating the equipment, without safety training"
+        "text": "Anyone who finished OSHA 10 awareness training, without equipment-specific practice"
       },
       {
         "id": "d",
-        "text": "One who has skills and knowledge related to construction and operation"
+        "text": "An operator who has run the production line for years without electrical safety training"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "This item asks: “Qualified person per NEC means:”. The matching rule is: One who has skills and knowledge related to construction and operation for safety. Independent UniPrep diagnostic — not a state board exam paper. The definition also requires safety training to recognize and avoid the hazards involved.",
+    "correctOptionId": "b",
+    "explanation": "Article 100 defines a qualified person as one with skills and knowledge related to the construction and operation of the electrical equipment and who has received safety training to recognize and avoid the hazards involved. A license, OSHA 10, or operating experience without that training does not meet the definition.",
     "distractorExplanations": {
-      "a": "The Article 100 definition is based on skills, knowledge, and safety training, not on holding a license.",
-      "b": "OSHA 10 is general awareness training; qualification requires equipment-specific skills and hazard training.",
-      "c": "Experience alone is not enough; the definition requires safety training to recognize and avoid the hazards."
+      "a": "A license is not the Article 100 test; qualification is equipment- and hazard-specific skills plus safety training.",
+      "c": "OSHA 10 is general awareness; racking an MCC requires training on that gear and its shock and arc-flash hazards.",
+      "d": "Years of operation without electrical hazard training leave the person unqualified for exposed 480 V work."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 fix 2026-09-21: stripped always-always leftover distractors on electrical-journeyman-readiness-check."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   }
 ]

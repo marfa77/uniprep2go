@@ -1,0 +1,259 @@
+{
+  "electrical-journeyman-readiness-check": {
+    "electrical-journeyman-readiness-check-services-001": {
+      "prompt": "A crew is placing the service disconnect for a new dwelling whose service conductors enter at an exterior wall. Where must that disconnecting means be installed?",
+      "options": {
+        "a": "Anywhere inside the building if those service conductors are in rigid metal conduit",
+        "b": "In the bathroom if that room is the nearest point of entrance of the conductors",
+        "c": "Readily accessible, nearest the conductor entrance, and not in a bathroom",
+        "d": "Only behind a utility lock so the occupant cannot operate the handle"
+      },
+      "correctOptionId": "c",
+      "explanation": "230.70 requires a readily accessible service disconnect at the nearest point of entrance of the service conductors into the building. 230.70(A)(2) prohibits that disconnect in bathrooms. Conduit does not let you bury it deeper in the building, and occupant access is required.",
+      "distractorExplanations": {
+        "a": "Raceway type does not move the disconnect; 230.70(A)(1) still ties it to the nearest point of entrance.",
+        "b": "Bathrooms are prohibited locations for the service disconnecting means even if they are closest to the entrance.",
+        "d": "The occupant must be able to operate the service disconnect; a utility meter seal is a separate issue."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-services-002": {
+      "prompt": "You are pulling 120/240-V service-entrance conductors for a one-family dwelling. What determines the minimum ampacity of those conductors?",
+      "options": {
+        "a": "The main breaker handle rating alone, with no Article 220 load calculation",
+        "b": "Table 250.66, working backward from the grounding electrode conductor size",
+        "c": "Article 430 motor tables using only the largest motor full-load current",
+        "d": "The Article 220 calculated load, with ampacity meeting 230.42"
+      },
+      "correctOptionId": "d",
+      "explanation": "Service-entrance conductors are sized from the Article 220 calculated load. 230.42 requires their ampacity to be at least that load (with the usual 125% continuous-load treatment). The main breaker, Table 250.66, and motor FLC tables do not reverse-size the service conductors.",
+      "distractorExplanations": {
+        "a": "A large main does not replace the load calculation; 230.42 sizes conductors from calculated load, not from the handle alone.",
+        "b": "Table 250.66 sizes the grounding electrode conductor from the service conductors, not the other way around.",
+        "c": "Article 430 sizes motor circuits. A dwelling service is an Article 220 building load, not a single-motor feeder."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-services-003": {
+      "prompt": "A dwelling service has a metal water pipe, a concrete-encased electrode in the footing, and a driven rod available on site. Which electrodes belong in the grounding electrode system?",
+      "options": {
+        "a": "The water pipe, concrete-encased electrode, and rod, as each is present",
+        "b": "The underground gas pipe at the meter, used as the sole grounding electrode",
+        "c": "The single rod only, with no 25-ohm test and no supplemental electrode",
+        "d": "Interior water piping 20 ft from where the pipe enters the building"
+      },
+      "correctOptionId": "a",
+      "explanation": "250.50 requires all electrodes present at the building to be bonded into one grounding electrode system. Metal underground water pipe, concrete-encased electrodes, and rods/plates in 250.52(A) are permitted electrodes. Gas piping is not an electrode, a lone untested rod needs a supplement, and interior water pipe beyond the first 5 ft is not the electrode conductor path.",
+      "distractorExplanations": {
+        "b": "250.52(B) prohibits metal underground gas piping from being used as a grounding electrode.",
+        "c": "250.53(A)(2) requires a supplemental electrode unless that single rod is shown to be 25 ohms or less.",
+        "d": "250.68(C) limits interior metal water piping used as a grounding conductor to the first 5 ft from entrance."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-services-004": {
+      "prompt": "Open overhead service conductors run along a dwelling wall that has operable windows and a porch. What clearance from those openings is required?",
+      "options": {
+        "a": "Three feet from doors and porches only; operable windows are exempt",
+        "b": "Three feet from operable windows, doors, porches, and similar openings",
+        "c": "Whatever the utility specifies, because NEC clearances stop at the meter",
+        "d": "The roof vertical clearances in 230.24(A), which also cover wall openings"
+      },
+      "correctOptionId": "b",
+      "explanation": "230.9(A) requires 3 ft of clearance from windows designed to be opened, doors, porches, balconies, and similar openings, except above the top of a window. Premises overhead service conductors are still under Article 230. Roof clearances in 230.24(A) are a different rule and do not replace opening clearances.",
+      "distractorExplanations": {
+        "a": "Operable windows are in the 230.9(A) list with doors, porches, and balconies; they are not exempt.",
+        "c": "On the premises side of the service point, Article 230 clearance rules still apply to overhead service conductors.",
+        "d": "230.24(A) is roof clearance. Clearance from building openings is 230.9, not the roof table."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-services-005": {
+      "prompt": "A dwelling has a meter socket on the outside wall and a separate main breaker enclosure a few feet away. What is that meter socket?",
+      "options": {
+        "a": "The 230.70 service disconnect, because pulling the meter isolates the premises",
+        "b": "Utility-owned equipment in every jurisdiction, so the customer never furnishes it",
+        "c": "A metering enclosure at the utility interface, not the disconnect unless combined",
+        "d": "The point where service-entrance conductors end and feeder conductors begin"
+      },
+      "correctOptionId": "c",
+      "explanation": "A stand-alone meter socket is a metering enclosure at the utility/customer interface. It does not open the circuit the way a 230.70 disconnect does unless the equipment is a listed combination meter-main. Service conductors generally end at the service disconnect, which is where feeders begin. Socket ownership varies by utility.",
+      "distractorExplanations": {
+        "a": "Pulling a meter is not the required disconnecting means; 230.70 still needs a listed service disconnect.",
+        "b": "Many utilities require the customer to furnish and install the socket to their spec; ownership is not universal.",
+        "d": "Feeders begin at the load side of the service equipment, not at the meter jaws of a separate socket."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-services-006": {
+      "prompt": "One dwelling is fed from a pole with an overhead span to the weatherhead. The house next door is fed from a buried utility run in the street to the meter. How are those two supplies named?",
+      "options": {
+        "a": "The buried run is a service drop; the overhead span is a service lateral",
+        "b": "The buried run is a meter-to-panel service-entrance conductor; the overhead span is only a drop to the weatherhead",
+        "c": "Both utility runs are customer-owned service-entrance conductors under Article 230",
+        "d": "The buried utility run is a service lateral; the overhead span is a service drop"
+      },
+      "correctOptionId": "d",
+      "explanation": "A service drop is the overhead utility conductors to the service point. A service lateral is the underground equivalent. Customer service-entrance conductors are a separate Article 230 category, typically from the service point to the service disconnect, not the utility drop or lateral itself.",
+      "distractorExplanations": {
+        "a": "The names are reversed: drop is overhead, lateral is underground.",
+        "b": "Meter-to-panel conductors are service-entrance conductors. The buried utility run to the meter is the lateral.",
+        "c": "Drops and laterals are the utility supply to the service point, not the customer’s service-entrance conductors."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-services-007": {
+      "prompt": "A 400-A service uses two conductors in parallel per phase. What must be true of those paralleled conductors?",
+      "options": {
+        "a": "Same length, conductor material, size, and termination for each phase set",
+        "b": "1/0 AWG or larger, with unequal lengths allowed if that eases the pull",
+        "c": "Same size per phase, with mixed copper and aluminum allowed in one phase",
+        "d": "Each phase in its own metal raceway and the grounded conductor in a fourth"
+      },
+      "correctOptionId": "a",
+      "explanation": "Paralleled conductors (310.10) must be the same length, material, circular mil area, and insulation, and they must use the same terminating method, so they share current. 1/0 AWG is the usual minimum size, but length still must match. Mixing metals in a phase, or splitting phases into separate ferrous raceways, creates unequal impedance and inductive heating.",
+      "distractorExplanations": {
+        "b": "1/0 AWG is the typical minimum, but paralleled conductors of a phase must still be the same length to share current.",
+        "c": "Material must match within the paralleled set; copper and aluminum in one phase will not share current equally.",
+        "d": "300.20 requires all phase conductors and the grounded conductor of the circuit in each metal raceway."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-services-008": {
+      "prompt": "An installer wants to land equipment on the line side of the service disconnect. Which connections does 230.82 actually permit there?",
+      "options": {
+        "a": "Ordinary branch circuits, if each circuit has its own overcurrent device",
+        "b": "Listed supply-side items such as metering, certain surge devices, and permitted PV taps",
+        "c": "Nothing except the meter enclosure; all other line-side gear is forbidden",
+        "d": "Feeder panelboards rated at 125 percent of the service-conductor ampacity"
+      },
+      "correctOptionId": "b",
+      "explanation": "230.82 is a short list: cable limiters, meters and meter disconnects, instrument transformers, surge protective devices, supply-side PV connections, and similar listed items. General branch circuits and feeder panelboards connect on the load side of the service disconnect. The meter is permitted, but it is not the only permitted item.",
+      "distractorExplanations": {
+        "a": "General branch circuits are load-side. A local breaker does not authorize a 230.82 line-side tap.",
+        "c": "230.82 lists several permitted line-side items beyond the meter, including surge devices and certain PV connections.",
+        "d": "Feeder panelboards are supplied from the load side of the service disconnect, not from 230.82."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-services-009": {
+      "prompt": "A 120/240-V dwelling service supplies mixed 120-V lighting and 240-V equipment. What current does the grounded (neutral) service conductor carry?",
+      "options": {
+        "a": "Full ungrounded-conductor current even when 240-V line-to-line loads are balanced",
+        "b": "Only the current of 240-V loads such as a range or water-heater element",
+        "c": "Unbalanced 120-V load current, plus harmonic return from nonlinear loads",
+        "d": "Negligible current, because the neutral is bonded to the grounding electrode"
+      },
+      "correctOptionId": "c",
+      "explanation": "On a 120/240-V service the grounded conductor returns the unbalanced 120-V load. Line-to-line 240-V loads cancel on the neutral. Nonlinear loads can add triplen harmonic current. Bonding the neutral to the electrode at the service does not stop that load current from flowing on the grounded conductor back to the source.",
+      "distractorExplanations": {
+        "a": "Balanced line-to-line current cancels in the neutral; the neutral is not sized as a third ungrounded conductor for that reason.",
+        "b": "Pure 240-V line-to-line loads draw no neutral current; 120-V unbalance is what the neutral carries.",
+        "d": "The bonding jumper creates a fault path; it does not eliminate normal unbalanced load current on the neutral."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-services-010": {
+      "prompt": "You are selecting the service disconnecting means for a new one-family dwelling. What is the NEC minimum rating?",
+      "options": {
+        "a": "60 A, which 230.79 sets as the one-family dwelling service minimum",
+        "b": "The arithmetic sum of every branch-circuit breaker handle in the panelboard",
+        "c": "The kVA nameplate of the utility transformer that serves the lot",
+        "d": "The Article 220 load, and not less than 100 A for a one-family dwelling"
+      },
+      "correctOptionId": "d",
+      "explanation": "Service equipment must be at least the Article 220 calculated load. 230.79(C) also sets a 100 A floor for a one-family dwelling disconnect. 60 A is not that dwelling minimum. Breaker-handle totals ignore demand factors, and the utility transformer rating is not the NEC service size.",
+      "distractorExplanations": {
+        "a": "230.79(C) is 100 A for a one-family dwelling. 60 A is a smaller-occupancy minimum, not this dwelling floor.",
+        "b": "Article 220 applies demand factors. Adding breaker handles oversizes the service and is not the Code method.",
+        "c": "The serving transformer kVA does not set the premises service rating under 230.79 or Article 220."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-services-011": {
+      "prompt": "The serving utility marks the service point on a dwelling job. What does that demarcation determine for the electrician?",
+      "options": {
+        "a": "The enclosure in which the main bonding jumper must be installed",
+        "b": "Where utility conductors and rules end and NEC premises wiring begins",
+        "c": "The exact wall on which 230.70 requires the service disconnect to be mounted",
+        "d": "The line beyond which the NEC no longer applies and only NFPA 70E remains"
+      },
+      "correctOptionId": "b",
+      "explanation": "The service point is the boundary between the serving utility and the premises wiring. Utility rules govern on the supply side; the NEC governs the customer’s service-entrance conductors and equipment beyond that point. The main bonding jumper and the 230.70 disconnect location are equipment rules, not the ownership line. NFPA 70E is work-practice, not the service-point definition.",
+      "distractorExplanations": {
+        "a": "The main bonding jumper is installed at the service disconnect/service equipment, not automatically at the utility service point.",
+        "c": "230.70 sets disconnect location by nearest point of entrance of the service conductors, not by the painted service-point mark.",
+        "d": "The NEC still applies to premises wiring past the service point. 70E covers electrical safety in the workplace, not ownership."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-services-012": {
+      "prompt": "A feeder leaves the service equipment to a remote dwelling panelboard. How must the feeder overcurrent device relate to those feeder conductors?",
+      "options": {
+        "a": "It may exceed conductor ampacity freely if the feeder is shorter than 50 ft",
+        "b": "It must protect the feeder conductors, generally not exceeding their ampacity",
+        "c": "It can be omitted because the service main already protects every downstream feeder",
+        "d": "It is taken from Table 250.66 using the feeder equipment grounding conductor"
+      },
+      "correctOptionId": "b",
+      "explanation": "Feeders are protected under 240.4 and Article 215: the overcurrent device generally must not exceed the conductor ampacity after any required adjustments, with only the listed next-size-up and tap exceptions. A short run is not a blanket waiver. The service main does not replace feeder protection, and Table 250.66 is not an OCPD table.",
+      "distractorExplanations": {
+        "a": "Length alone is not a license to oversize the breaker; 240.21 tap rules are specific and limited, not a 50-ft free pass.",
+        "c": "The service OCPD protects the service conductors. Each feeder still needs its own protection unless a true tap rule applies.",
+        "d": "Table 250.66 sizes grounding electrode conductors, not feeder breakers."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-services-013": {
+      "prompt": "A candidate says a dwelling service overcurrent device cannot exceed a “Class 160” 160-A maximum. What does the NEC actually set?",
+      "options": {
+        "a": "60 A as both the minimum and the maximum for any dwelling service",
+        "b": "160 A as the dwelling-service maximum in 230.79",
+        "c": "No 160-A cap; 100–400 A services are common as the calculated load requires",
+        "d": "200 A as the largest service permitted for a one-family dwelling"
+      },
+      "correctOptionId": "c",
+      "explanation": "230.79 sets minimum disconnect ratings (100 A for a one-family dwelling), not a 160 A ceiling. Dwelling services are routinely 100, 200, 320, or 400 A when Article 220 supports them. “Class 160” is not an NEC dwelling-service class. 60 A is not the one-family floor, and 200 A is not a Code maximum.",
+      "distractorExplanations": {
+        "a": "230.79(C) is a 100 A one-family minimum, not a 60 A min-and-max for dwellings.",
+        "b": "230.79 is a minimum-rating rule. It does not create a 160 A dwelling maximum.",
+        "d": "The NEC does not cap one-family services at 200 A; larger services are used when the calculated load requires them."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-services-014": {
+      "prompt": "A one-family dwelling is being wired to a recent NEC cycle that includes 230.85. Where must the emergency disconnect be located?",
+      "options": {
+        "a": "Only if the service is larger than 400 A; smaller dwellings are exempt",
+        "b": "Indoors, mounted immediately beside the interior panelboard",
+        "c": "At multifamily buildings; one- and two-family dwellings are exempt",
+        "d": "Outdoors, readily accessible, and identified as an emergency disconnect"
+      },
+      "correctOptionId": "d",
+      "explanation": "230.85 requires a readily accessible outdoor emergency disconnect for one- and two-family dwellings so first responders can de-energize the premises. It is not limited to services over 400 A, it is not an indoor-beside-the-panel rule, and the requirement targets one- and two-family dwellings rather than exempting them.",
+      "distractorExplanations": {
+        "a": "230.85 applies to one- and two-family dwelling services without a 400 A threshold.",
+        "b": "The emergency disconnect is an outdoor, readily accessible device, not an indoor handle next to the panel.",
+        "c": "The rule is written for one- and two-family dwellings; it does not flip the scope to multifamily only."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-services-015": {
+      "prompt": "An underground service raceway enters a dwelling below grade and turns up into the meter-main. What sealing requirement applies?",
+      "options": {
+        "a": "Seal the entry to limit moisture and gas, using a sealant identified for the insulation",
+        "b": "Seal overhead masts only; underground service raceways are left open to drain",
+        "c": "Use any expanding foam, because insulation compatibility is not a Code issue",
+        "d": "Leave the raceway unsealed, because a seal would trap condensation in the pipe"
+      },
+      "correctOptionId": "a",
+      "explanation": "230.8 and 300.5(G) require sealing underground raceways where they enter buildings so moisture and gases do not migrate into equipment. The sealant must be identified for use with the cable or conductor insulation. Overhead-only sealing, random foam, and a ban on seals reverse those rules.",
+      "distractorExplanations": {
+        "b": "300.5(G) is aimed at raceways entering from underground, where moisture and gas travel inside the pipe.",
+        "c": "The sealant must be identified for the conductor insulation; unlisted foam can damage insulation.",
+        "d": "Sealing is required to keep moist air and gases out of the equipment, not prohibited as a condensation trap."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

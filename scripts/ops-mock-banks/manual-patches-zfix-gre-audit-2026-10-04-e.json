@@ -1,0 +1,796 @@
+{
+  "gre-readiness-check": {
+    "gre-readiness-check-quant-001": {
+      "prompt": "A copier prints 180 pages in 12 minutes at a constant rate, then a jam forces it to run at two-thirds of that rate. How many pages does it print in the next 9 minutes at the reduced rate?",
+      "options": {
+        "a": "90",
+        "b": "120",
+        "c": "135",
+        "d": "180"
+      },
+      "correctOptionId": "a",
+      "explanation": "The original rate is 180/12 = 15 pages per minute. Two-thirds of 15 is 10 pages per minute. In 9 minutes it prints 10 × 9 = 90 pages.",
+      "distractorExplanations": {
+        "b": "Takes two-thirds of 180 pages (120) instead of two-thirds of the 15-page-per-minute rate.",
+        "c": "Keeps the original 15 pages per minute and multiplies by 9, skipping the two-thirds slowdown: 15 × 9 = 135.",
+        "d": "Reports the 180-page warmup batch as if that count applied to the jammed 9-minute window."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-002": {
+      "prompt": "Painter A can finish a hallway in 10 days and painter B in 15 days. They work together for 4 days and then stop. What fraction of the hallway is still unpainted?",
+      "options": {
+        "a": "1/6",
+        "b": "1/3",
+        "c": "2/5",
+        "d": "1/2"
+      },
+      "correctOptionId": "b",
+      "explanation": "A's rate is 1/10 and B's is 1/15, so together 3/30 + 2/30 = 5/30 = 1/6 of the hallway per day. In 4 days they complete 4/6 = 2/3. The remaining fraction is 1 − 2/3 = 1/3.",
+      "distractorExplanations": {
+        "a": "Leaves the combined daily rate 1/6 as if one more day of joint work were the leftover, instead of subtracting 4/6 from 1.",
+        "c": "Adds 10 and 15 to get 25 and writes 4/10 as 2/5, mixing days-to-finish with a leftover fraction.",
+        "d": "Averages 10 and 15 to 12.5 days and treats 4/8 as one-half remaining, using an arithmetic mean of times."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-003": {
+      "prompt": "A radio beacon sits at the origin of a coordinate map. A ranger is at (5, 12). What is the straight-line distance from the beacon to the ranger?",
+      "options": {
+        "a": "5",
+        "b": "12",
+        "c": "13",
+        "d": "17"
+      },
+      "correctOptionId": "c",
+      "explanation": "Distance = √(5² + 12²) = √(25 + 144) = √169 = 13. The pair 5-12-13 is a Pythagorean triple, so the hypotenuse is 13.",
+      "distractorExplanations": {
+        "a": "Reports the x-displacement 5 and skips the Pythagorean sum of squares.",
+        "b": "Reports the y-displacement 12 instead of combining both legs.",
+        "d": "Adds 5 + 12 = 17, using the taxicab sum of legs rather than √(25+144)."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-004": {
+      "prompt": "From a 9-member research lab, how many injective ordered triples of distinct people can be assigned to roles chair, recorder, and timekeeper?",
+      "options": {
+        "a": "56",
+        "b": "72",
+        "c": "336",
+        "d": "504"
+      },
+      "correctOptionId": "d",
+      "explanation": "Order matters and repeats are forbidden, so the count is P(9,3) = 9 × 8 × 7. Compute 9 × 8 = 72, then 72 × 7 = 504.",
+      "distractorExplanations": {
+        "a": "Computes only 8 × 7 = 56, omitting the 9 choices for chair.",
+        "b": "Stops at 9 × 8 = 72 and never multiplies by the 7 remaining people for timekeeper.",
+        "c": "Computes P(8,3) = 8 × 7 × 6 = 336, shrinking the lab size from 9 to 8."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-005": {
+      "prompt": "A taxi meter starts at $3 and then adds $1 for every 4 kilometers. At the drop-off the meter reads $7. How many kilometers were driven?",
+      "options": {
+        "a": "16",
+        "b": "20",
+        "c": "28",
+        "d": "40"
+      },
+      "correctOptionId": "a",
+      "explanation": "Subtract 3 from both sides: x/4 = 4. Multiply both sides by 4: x = 16. Check: 16/4 + 3 = 4 + 3 = 7.",
+      "distractorExplanations": {
+        "b": "Subtracts 3 from 8 instead of 7, solving x/4 = 5 and getting x = 20.",
+        "c": "Multiplies 7 by 4 without subtracting 3 first, yielding x = 28.",
+        "d": "Adds 3 to 7 then multiplies by 4, treating the equation as x/4 = 7 + 3 and getting x = 40."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-006": {
+      "prompt": "If (x + 4)/2 = 11, what is x?",
+      "options": {
+        "a": "14",
+        "b": "18",
+        "c": "22",
+        "d": "26"
+      },
+      "correctOptionId": "b",
+      "explanation": "Multiply both sides by 2: x + 4 = 22. Subtract 4: x = 18. Check: (18 + 4)/2 = 22/2 = 11.",
+      "distractorExplanations": {
+        "a": "Divides 11 by 2 incorrectly as a first step and solves x/2 + 4 = 11, so x/2 = 7 and x = 14.",
+        "c": "Stops after clearing the denominator, reporting x + 4 = 22 as if that were x.",
+        "d": "Adds 4 after multiplying: x = 2 × 11 + 4 = 26, using +4 outside the parentheses."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-007": {
+      "prompt": "Five consecutive integers sum to 100. What is the largest of the five?",
+      "options": {
+        "a": "18",
+        "b": "20",
+        "c": "22",
+        "d": "24"
+      },
+      "correctOptionId": "c",
+      "explanation": "Let the integers be n, n+1, n+2, n+3, n+4. Then 5n + 10 = 100, so 5n = 90 and n = 18. The largest is n + 4 = 22. Equivalently the middle term is 100/5 = 20, so the largest is 22.",
+      "distractorExplanations": {
+        "a": "Reports the smallest integer n = 18 instead of n + 4.",
+        "b": "Reports the middle integer 20 (the mean) instead of the largest.",
+        "d": "Adds 6 to the smallest, as if the five integers were consecutive even numbers n, n+2, …, n+8."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-009": {
+      "prompt": "A prize fund starts at $5 and doubles at the end of each round. After 6 doublings, what is the fund?",
+      "options": {
+        "a": "32",
+        "b": "80",
+        "c": "160",
+        "d": "320"
+      },
+      "correctOptionId": "d",
+      "explanation": "After k doublings the fund is 5 × 2^k. After 6 doublings: 5 × 2^6 = 5 × 64 = 320.",
+      "distractorExplanations": {
+        "a": "Computes 2^5 = 32, dropping both the sixth doubling and the $5 start.",
+        "b": "Uses 5 × 2^4 = 80, stopping after four doublings instead of six.",
+        "c": "Uses 5 × 2^5 = 160, counting five doublings rather than six."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-010": {
+      "prompt": "A right triangle has legs 5 cm and 12 cm. What is its area in square centimeters?",
+      "options": {
+        "a": "30",
+        "b": "60",
+        "c": "65",
+        "d": "78"
+      },
+      "correctOptionId": "a",
+      "explanation": "Area of a right triangle is (1/2) × leg × leg = (1/2) × 5 × 12 = 60/2 = 30.",
+      "distractorExplanations": {
+        "b": "Forgets the 1/2 factor and computes 5 × 12 = 60, which is twice the area.",
+        "c": "Treats 5-12 as needing the hypotenuse 13 and then does (1/2)×10×13 = 65, mixing in an extra length.",
+        "d": "Adds 5 + 12 + 13 = 30 then multiplies by something yielding 78, or uses (1/2)×12×13 = 78 as if 13 were a leg."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-012": {
+      "prompt": "A clinic records 45 recovered patients out of 180 enrolled. What percent of the enrolled patients recovered?",
+      "options": {
+        "a": "15%",
+        "b": "25%",
+        "c": "30%",
+        "d": "40%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Percent = (45/180) × 100. Simplify 45/180 = 1/4 = 0.25, so 25%.",
+      "distractorExplanations": {
+        "a": "Divides 45 by 300 (or 180 by 12 incorrectly) to get 15%, shrinking the rate.",
+        "c": "Computes 45/150 = 30%, replacing the true denominator 180 with 150.",
+        "d": "Uses 72/180 = 40%, or 45/112.5, inflating the recovered count."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-014": {
+      "prompt": "The test scores 4, 8, 12, 16, and 20 are recorded. What is the mean of these five scores?",
+      "options": {
+        "a": "8",
+        "b": "10",
+        "c": "12",
+        "d": "16"
+      },
+      "correctOptionId": "c",
+      "explanation": "Sum = 4 + 8 + 12 + 16 + 20 = 60. Mean = 60/5 = 12. The scores are an arithmetic progression, so the mean equals the middle term 12.",
+      "distractorExplanations": {
+        "a": "Reports the second-smallest score 8 instead of dividing the sum 60 by 5.",
+        "b": "Uses a five-number span 20 − 4 = 16, then halves it incorrectly to 10, confusing range with mean.",
+        "d": "Reports the second-largest score 16, or computes 80/5 after adding an extra 20."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-017": {
+      "prompt": "A packing crate is a cube with edge 7 cm. What is its volume in cubic centimeters?",
+      "options": {
+        "a": "49",
+        "b": "216",
+        "c": "294",
+        "d": "343"
+      },
+      "correctOptionId": "d",
+      "explanation": "Volume of a cube is the edge cubed. First 7 × 7 = 49, then 49 × 7 = 343 cubic centimeters.",
+      "distractorExplanations": {
+        "a": "Stops at the face area 7 × 7 = 49 and never multiplies by the third edge.",
+        "b": "Computes 6³ = 216, using edge 6 instead of 7.",
+        "c": "Computes 7 × 42 = 294, or 6 × 49, mixing a 6 into 7 × 7 × 6."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-018": {
+      "prompt": "A jacket listed at $80 is sold at a 15% discount. What is the sale price?",
+      "options": {
+        "a": "$68",
+        "b": "$72",
+        "c": "$80",
+        "d": "$92"
+      },
+      "correctOptionId": "a",
+      "explanation": "15% of 80 is 0.15 × 80 = 12. Sale price = 80 − 12 = 68. Equivalently 80 × 0.85 = 68.",
+      "distractorExplanations": {
+        "b": "Takes a 10% discount (subtracting 8) to get $72, using 10% instead of 15%.",
+        "c": "Leaves the listed $80 unchanged, as if the discount were not applied.",
+        "d": "Adds 15% instead of subtracting: 80 × 1.15 = 92."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-019": {
+      "prompt": "Alumni dues are split between travel and meals in the ratio 1:2. If $42 is collected, how many dollars go to travel (the smaller share)?",
+      "options": {
+        "a": "12",
+        "b": "14",
+        "c": "18",
+        "d": "21"
+      },
+      "correctOptionId": "b",
+      "explanation": "The ratio 1:2 has 3 parts. Each part is 42/3 = 14. Travel is one part, so $14.",
+      "distractorExplanations": {
+        "a": "Uses a 2:5 split (7 parts) giving 2/7 × 42 = 12 instead of 1:2.",
+        "c": "Uses 3:4 of 42, taking 3/7 × 42 = 18, a different ratio.",
+        "d": "Halves 42 to 21, treating the split as 1:1 instead of 1:2."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-020": {
+      "prompt": "A circular fountain has radius 7 meters. What is its area in square meters?",
+      "options": {
+        "a": "14π",
+        "b": "28π",
+        "c": "49π",
+        "d": "98π"
+      },
+      "correctOptionId": "c",
+      "explanation": "The area of a circle is π times radius squared: π × 7 × 7 = 49π square meters. Do not use 2πr, which is circumference.",
+      "distractorExplanations": {
+        "a": "Computes 2πr = 14π, which is the circumference, not the area.",
+        "b": "Computes π × 4 × 7 = 28π, using diameter 14 as if area were πd, or 2πr × 2.",
+        "d": "Computes 2πr² = 98π, doubling the area formula."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-021": {
+      "prompt": "Eight sprinters finish a heat. How many ways can gold and silver be awarded to two different sprinters?",
+      "options": {
+        "a": "14",
+        "b": "28",
+        "c": "42",
+        "d": "56"
+      },
+      "correctOptionId": "d",
+      "explanation": "Gold and silver are different medals, so order matters: P(8,2) = 8 × 7 = 56 ordered pairs. Combinations C(8,2) = 28 would treat the two medals as identical.",
+      "distractorExplanations": {
+        "a": "Adds 8 + 6 = 14 instead of multiplying the two ordered slots.",
+        "b": "Computes C(8,2) = 28, dropping order so gold and silver are treated as identical.",
+        "c": "Computes 7 × 6 = 42, starting the product at 7 instead of 8."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-022": {
+      "prompt": "The equation |2x − 6| = 10 has two real solutions. What is the positive solution?",
+      "options": {
+        "a": "8",
+        "b": "10",
+        "c": "13",
+        "d": "16"
+      },
+      "correctOptionId": "a",
+      "explanation": "Split cases: 2x − 6 = 10 or 2x − 6 = −10. First: 2x = 16, x = 8. Second: 2x = −4, x = −2. The positive solution is 8. Check: |16 − 6| = 10.",
+      "distractorExplanations": {
+        "b": "Drops the coefficient 2 and sets x − 6 = 4 or similar, landing on x = 10.",
+        "c": "Adds 6 and 10 then divides poorly (16/1.23) or solves 2x = 26 as if −6 became +6 on the wrong side, getting 13.",
+        "d": "Stops at 2x = 16 and reports 16 as x, never dividing by 2."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-024": {
+      "prompt": "A courier drives 120 miles at 40 mph and then another 120 miles at 60 mph. What is the average speed for the whole 240-mile trip, in miles per hour?",
+      "options": {
+        "a": "40",
+        "b": "48",
+        "c": "50",
+        "d": "60"
+      },
+      "correctOptionId": "b",
+      "explanation": "Time for the first leg: 120/40 = 3 hours. Second leg: 120/60 = 2 hours. Total time 5 hours. Average speed = 240/5 = 48 mph. (The harmonic mean of 40 and 60 is 2×40×60/(40+60) = 4800/100 = 48.)",
+      "distractorExplanations": {
+        "a": "Reports only the slower 40 mph, ignoring the second leg.",
+        "c": "Averages the two speeds arithmetically: (40 + 60)/2 = 50, which is not the distance-weighted average.",
+        "d": "Reports only the faster 60 mph, or uses total distance over 4 hours: 240/4 = 60."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-025": {
+      "prompt": "Each interior angle of a regular hexagon measures how many degrees?",
+      "options": {
+        "a": "60",
+        "b": "90",
+        "c": "120",
+        "d": "135"
+      },
+      "correctOptionId": "c",
+      "explanation": "Sum of interior angles = (6 − 2) × 180 = 720°. Each of 6 congruent angles is 720/6 = 120°. Equivalently exterior 360/6 = 60, so interior 180 − 60 = 120.",
+      "distractorExplanations": {
+        "a": "Reports the exterior angle 360°/6 = 60° instead of the interior 180 − 60.",
+        "b": "Uses a right angle 90°, as if the figure were a square.",
+        "d": "Uses the regular octagon interior (8 − 2)×180/8 = 135°."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-026": {
+      "prompt": "A square plaza has side length 11 meters. What is its area in square meters?",
+      "options": {
+        "a": "100",
+        "b": "110",
+        "c": "120",
+        "d": "121"
+      },
+      "correctOptionId": "d",
+      "explanation": "Square area is side times side: 11 × 11 = 121 square meters. Using 10 × 10 = 100 undercounts by rounding the side down.",
+      "distractorExplanations": {
+        "a": "Uses 10 × 10 = 100, rounding the side down to 10.",
+        "b": "Computes 10 × 11 = 110, replacing one factor of 11 with 10.",
+        "c": "Computes 10 × 12 = 120, or 11 × 11 − 1, off by a fence-post error."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-028": {
+      "prompt": "A grocer mixes 12 kg of almonds priced at $5 per kilogram with some cashews priced at $9 per kilogram so that the blend costs $6 per kilogram. How many kilograms of cashews are required?",
+      "options": {
+        "a": "4",
+        "b": "6",
+        "c": "8",
+        "d": "12"
+      },
+      "correctOptionId": "a",
+      "explanation": "Let c be kilograms of cashews. Then 12×5 + 9c = 6(12 + c) → 60 + 9c = 72 + 6c → 3c = 12 → c = 4. Check: 60 + 36 = 96 and 6×16 = 96.",
+      "distractorExplanations": {
+        "b": "Balances at a $7 target instead of $6, or uses alligation parts 3:3, getting c = 6.",
+        "c": "Sets 5×12 + 9c = 6×12 without adding c to the mass, then mis-solves to c = 8.",
+        "d": "Matches the almond mass and takes c = 12, ignoring the $6 weighted-average constraint."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-029": {
+      "prompt": "A trail map marks a trailhead at (2, 3) and a lookout at (6, 11). What is the slope of the straight trail connecting them?",
+      "options": {
+        "a": "1/2",
+        "b": "2",
+        "c": "4",
+        "d": "8"
+      },
+      "correctOptionId": "b",
+      "explanation": "Slope is rise over run: (11 − 3)/(6 − 2) = 8/4 = 2. Inverting to 4/8 = 1/2 swaps the coordinates of the two points.",
+      "distractorExplanations": {
+        "a": "Inverts the ratio to 4/8 = 1/2, swapping rise and run.",
+        "c": "Uses run = 2 (from 6 − 4) or rise/2 = 4, dropping a factor of 2 in the denominator.",
+        "d": "Reports the rise 11 − 3 = 8 and never divides by the run 4."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-030": {
+      "prompt": "A fair coin is flipped twice. What is the probability of at least one head?",
+      "options": {
+        "a": "1/4",
+        "b": "1/2",
+        "c": "3/4",
+        "d": "1"
+      },
+      "correctOptionId": "c",
+      "explanation": "Four equally likely outcomes: HH, HT, TH, TT. Three of them have at least one head, so 3/4. Complement: P(TT) = 1/4, so 1 − 1/4 = 3/4.",
+      "distractorExplanations": {
+        "a": "Computes P(HH) = 1/4, requiring two heads instead of at least one.",
+        "b": "Treats the trials as mutually exclusive single-head events 1/2 + 1/2 then caps at 1/2, or uses P(exactly one) incorrectly as 1/2.",
+        "d": "Assumes at least one head is certain on two flips, ignoring the TT outcome."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-031": {
+      "prompt": "Twelve technicians complete a calibration in 8 days at a constant combined rate. How many technicians are needed to finish the same calibration in 6 days?",
+      "options": {
+        "a": "9",
+        "b": "10",
+        "c": "12",
+        "d": "16"
+      },
+      "correctOptionId": "d",
+      "explanation": "Work = 12 × 8 = 96 technician-days. For 6 days: 96/6 = 16 technicians.",
+      "distractorExplanations": {
+        "a": "Computes 12 × 6 / 8 = 9, inverting the time ratio (fewer days should need more people).",
+        "b": "Splits the difference between 8 and 6 and subtracts 2 from 12, getting 10.",
+        "c": "Keeps 12 technicians, as if time could shrink with no extra staff."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-032": {
+      "prompt": "The quadratic equation x² − 5x + 6 = 0 has roots r and s. What is the product rs?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "9",
+        "d": "11"
+      },
+      "correctOptionId": "a",
+      "explanation": "For x² − (sum)x + product = 0, the product of roots is 6. Factoring (x − 2)(x − 3) = 0 gives roots 2 and 3, and 2 × 3 = 6.",
+      "distractorExplanations": {
+        "b": "Adds 5 + 3 or uses 2 + 6, mixing sum-of-roots 5 with an extra 3 to get 8.",
+        "c": "Squares 3, reporting 9, as if the repeated-root case x² − 6x + 9 applied.",
+        "d": "Adds the coefficients 5 + 6 = 11 instead of reading the constant term as the product."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-033": {
+      "prompt": "Three times a courier's hourly fee equals twice that fee plus $15. What is the hourly fee in dollars?",
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "20",
+        "d": "30"
+      },
+      "correctOptionId": "b",
+      "explanation": "Subtract 2x from both sides: x = 15. Check: 3 × 15 = 45 and 2 × 15 + 15 = 45.",
+      "distractorExplanations": {
+        "a": "Subtracts 15 from 3x = 2x and then divides poorly, or solves 2x = 20 to get 10.",
+        "c": "Adds 5 to 15 after moving terms, treating the leftover as 2x = 40 or x = 20.",
+        "d": "Divides 15 by 1/2 or multiplies 15 by 2, as if 3x − 2x = 15 became (1/2)x = 15."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-034": {
+      "prompt": "A tin can is a right circular cylinder with radius 3 cm and height 4 cm. What is its volume in cubic centimeters?",
+      "options": {
+        "a": "12π",
+        "b": "24π",
+        "c": "36π",
+        "d": "48π"
+      },
+      "correctOptionId": "c",
+      "explanation": "Cylinder volume is π r² h. Radius squared is 3 × 3 = 9, then 9 × 4 = 36, so the volume is 36π cubic centimeters. Using πrh = 12π drops the extra factor of r.",
+      "distractorExplanations": {
+        "a": "Computes π × 3 × 4 = 12π, using r instead of r².",
+        "b": "Computes the lateral area 2πrh = 2π × 3 × 4 = 24π, not the volume.",
+        "d": "Computes π × 3² × 16/3 or 4πr² = 48π, mixing surface 2πr² + 2πrh pieces."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-035": {
+      "prompt": "A department of 10 faculty members must form a 3-person curriculum committee. How many distinct committees are possible if order inside the committee does not matter?",
+      "options": {
+        "a": "10",
+        "b": "36",
+        "c": "45",
+        "d": "120"
+      },
+      "correctOptionId": "d",
+      "explanation": "Order does not matter, so use combinations: C(10,3) = (10 × 9 × 8)/(3 × 2 × 1) = 720/6 = 120 distinct committees.",
+      "distractorExplanations": {
+        "a": "Reports 10, as if only the chair were chosen.",
+        "b": "Computes C(9,2) = 36, shrinking the department to 9.",
+        "c": "Computes C(10,2) = 45, forming a pair instead of a triple."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-036": {
+      "prompt": "Each of 4 shelves holds x extra binders plus 3 already on the shelf, and the four shelves hold 20 binders in all. How many extra binders are on one shelf?",
+      "options": {
+        "a": "2",
+        "b": "5",
+        "c": "8",
+        "d": "17"
+      },
+      "correctOptionId": "a",
+      "explanation": "Divide both sides by 4: x + 3 = 5. Subtract 3: x = 2. Check: 4(2 + 3) = 4 × 5 = 20.",
+      "distractorExplanations": {
+        "b": "Divides 20 by 4 and stops, reporting x = 5 and leaving the +3 unsubtracted.",
+        "c": "Distributes as 4x + 3 = 20, so 4x = 17, then rounds or takes 4x + 12 = 44 to reach 8.",
+        "d": "Moves 3 with the wrong sign: 4x = 20 − 3 is skipped and x + 3 = 20 is used, giving x = 17."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-038": {
+      "prompt": "A share price rises from $40 to $50. What is the percent increase?",
+      "options": {
+        "a": "20%",
+        "b": "25%",
+        "c": "30%",
+        "d": "125%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Increase = 50 − 40 = 10. Percent increase = (10/40) × 100 = 25%.",
+      "distractorExplanations": {
+        "a": "Divides 10 by the new price 50, getting 20% (percent of the new value, not the increase from the old).",
+        "c": "Uses 12/40 = 30%, inflating the $10 change to $12.",
+        "d": "Computes 50/40 = 1.25 and reads 125% as the increase rather than the index of the new price."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-039": {
+      "prompt": "A right triangle has legs 9 m and 12 m. What is the length of the hypotenuse in meters?",
+      "options": {
+        "a": "9",
+        "b": "12",
+        "c": "15",
+        "d": "21"
+      },
+      "correctOptionId": "c",
+      "explanation": "Hypotenuse = √(9² + 12²) = √(81 + 144) = √225 = 15. The triple 9-12-15 is 3×(3-4-5).",
+      "distractorExplanations": {
+        "a": "Reports a leg 9 instead of the hypotenuse.",
+        "b": "Reports a leg 12 instead of combining the squares.",
+        "d": "Adds 9 + 12 = 21, using the sum of legs rather than √(81+144)."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-040": {
+      "prompt": "A 6-character password is formed by independently choosing one of 3 symbols at each position. How many such passwords are possible?",
+      "options": {
+        "a": "216",
+        "b": "243",
+        "c": "512",
+        "d": "729"
+      },
+      "correctOptionId": "d",
+      "explanation": "Each of 6 positions has 3 choices, so 3^6. Compute 3² = 9, 3³ = 27, 3⁴ = 81, 3⁵ = 243, 3⁶ = 729.",
+      "distractorExplanations": {
+        "a": "Computes 6³ = 216, swapping the base and the exponent.",
+        "b": "Stops at 3⁵ = 243, using five positions instead of six.",
+        "c": "Computes 2^9 = 512, changing the alphabet size from 3 to 2 and the length to 9."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-041": {
+      "prompt": "Quantity y varies inversely as x. When x = 4, y = 12. What is y when x = 6?",
+      "options": {
+        "a": "8",
+        "b": "9",
+        "c": "12",
+        "d": "18"
+      },
+      "correctOptionId": "a",
+      "explanation": "Inverse variation means xy = k. Then k = 4 × 12 = 48. When x = 6, y = 48/6 = 8.",
+      "distractorExplanations": {
+        "b": "Uses a 3:2 scale on 12 to get 8, then averages with 12 to land on 9, mixing inverse with an arithmetic mean.",
+        "c": "Leaves y = 12 unchanged, as if y did not depend on x.",
+        "d": "Treats the variation as direct: y = 12 × 6/4 = 18."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-042": {
+      "prompt": "Five waiting times in minutes are 3, 7, 9, 15, and 20. What is the median waiting time?",
+      "options": {
+        "a": "7",
+        "b": "9",
+        "c": "11",
+        "d": "15"
+      },
+      "correctOptionId": "b",
+      "explanation": "Ordered already: 3, 7, 9, 15, 20. For five values the median is the third, which is 9.",
+      "distractorExplanations": {
+        "a": "Reports the second value 7, off-by-one in the ordered list.",
+        "c": "Averages 7 and 15, or (3+20)/2, to get 11.5 rounded to 11, confusing mean of extremes with median.",
+        "d": "Reports the fourth value 15, the second-largest instead of the middle."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-043": {
+      "prompt": "What is the sum of the interior angles of a convex hexagon, in degrees?",
+      "options": {
+        "a": "360",
+        "b": "540",
+        "c": "720",
+        "d": "900"
+      },
+      "correctOptionId": "c",
+      "explanation": "Polygon interior-sum formula: (n − 2) × 180. For n = 6: (4) × 180 = 720.",
+      "distractorExplanations": {
+        "a": "Uses 360°, the sum of exterior angles (or a quadrilateral's interior sum).",
+        "b": "Uses (5 − 2) × 180 = 540, the pentagon sum, undercounting sides by 1.",
+        "d": "Uses (7 − 2) × 180 = 900, the heptagon sum, overcounting sides by 1."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-044": {
+      "prompt": "A bacterial culture starts with 1 cell and doubles every hour. How many cells are present after 10 hours?",
+      "options": {
+        "a": "256",
+        "b": "512",
+        "c": "1000",
+        "d": "1024"
+      },
+      "correctOptionId": "d",
+      "explanation": "After t hours there are 2^t cells. 2^10 = 1024. Compute 2^8 = 256, 2^9 = 512, 2^10 = 1024.",
+      "distractorExplanations": {
+        "a": "Stops at 2^8 = 256, which is the count after 8 hours rather than 10.",
+        "b": "Stops at 2^9 = 512, which is the count after 9 hours rather than 10.",
+        "c": "Approximates 10³ = 1000 instead of 2^10."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-045": {
+      "prompt": "Solve 2^x = 16 for the real number x.",
+      "options": {
+        "a": "4",
+        "b": "5",
+        "c": "8",
+        "d": "16"
+      },
+      "correctOptionId": "a",
+      "explanation": "Rewrite 16 as a power of 2: 16 = 2 × 2 × 2 × 2 = 2^4. Then 2^x = 2^4 forces x = 4. Treating 2x = 16 instead would give the false root 8.",
+      "distractorExplanations": {
+        "b": "Uses 2^5 = 32, matching 32 rather than 16, or counts five factors of 2 from 32.",
+        "c": "Reports 8 because 2 × 8 = 16, treating the equation as 2x = 16.",
+        "d": "Reports 16, equating x with the right-hand side instead of the exponent."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-046": {
+      "prompt": "A vendor buys a lamp for $80 and sells it for $100. What is the percent profit based on cost?",
+      "options": {
+        "a": "20%",
+        "b": "25%",
+        "c": "30%",
+        "d": "80%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Profit = 100 − 80 = 20. Percent profit on cost = (20/80) × 100 = 25%.",
+      "distractorExplanations": {
+        "a": "Computes 20/100 = 20%, using selling price as the base instead of cost.",
+        "c": "Uses 24/80 = 30%, inflating the $20 profit.",
+        "d": "Reports 80%, the cost as a percent of 100, not the profit rate."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-047": {
+      "prompt": "In a survey of readers, 40 like mysteries, 30 like biographies, and 10 like both. How many like mysteries or biographies (or both)?",
+      "options": {
+        "a": "30",
+        "b": "40",
+        "c": "60",
+        "d": "70"
+      },
+      "correctOptionId": "c",
+      "explanation": "Inclusion-exclusion: |M ∪ B| = |M| + |B| − |M ∩ B| = 40 + 30 − 10 = 60.",
+      "distractorExplanations": {
+        "a": "Reports only the biography count 30, dropping mysteries.",
+        "b": "Reports only the mystery count 40, dropping biographies.",
+        "d": "Adds 40 + 30 = 70 and never subtracts the 10 double-counted readers."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-048": {
+      "prompt": "Buses leave a depot every 12 minutes and shuttles every 18 minutes. If both leave together at 9:00, after how many minutes do they next leave together?",
+      "options": {
+        "a": "12",
+        "b": "18",
+        "c": "24",
+        "d": "36"
+      },
+      "correctOptionId": "d",
+      "explanation": "The next common departure is the LCM of 12 and 18. 12 = 2² × 3 and 18 = 2 × 3², so LCM = 2² × 3² = 4 × 9 = 36.",
+      "distractorExplanations": {
+        "a": "Reports the bus interval 12, not a common multiple.",
+        "b": "Reports the shuttle interval 18, not a common multiple.",
+        "c": "Uses 2 × 12 = 24, which is a multiple of 12 but not of 18 (24/18 is not an integer)."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-049": {
+      "prompt": "A muffin recipe uses 2 cups of sugar for every 3 cups of flour. If a baker measures 9 cups of flour, how many cups of sugar are needed to keep the same ratio?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "12",
+        "d": "18"
+      },
+      "correctOptionId": "a",
+      "explanation": "The sugar-to-flour ratio is 2/3, so sugar = 9 × 2 / 3. First 9 × 2 = 18, then 18/3 = 6 cups. Multiplying 9 × 2 and skipping the divide-by-3 yields 18.",
+      "distractorExplanations": {
+        "b": "Uses 12 cups of flour in 12 × 2/3 = 8, swapping 9 for 12.",
+        "c": "Sets sugar equal to flour (9) plus 3, or 9 × 4/3 = 12, inverting 2/3 to 3/2 then mis-copying.",
+        "d": "Multiplies 9 × 2 = 18, dropping the division by 3 in the ratio 2/3."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-050": {
+      "prompt": "A course grade is 30% midterm and 70% final. A student scores 80 on the midterm and 60 on the final. What is the weighted course score?",
+      "options": {
+        "a": "60",
+        "b": "66",
+        "c": "70",
+        "d": "74"
+      },
+      "correctOptionId": "b",
+      "explanation": "Weighted score = 0.30 × 80 + 0.70 × 60. First 0.30 × 80 = 24 and 0.70 × 60 = 42, then 24 + 42 = 66. Equal averaging (80+60)/2 = 70 ignores the 30/70 split.",
+      "distractorExplanations": {
+        "a": "Reports the final 60 alone, ignoring the 30% midterm.",
+        "c": "Averages 80 and 60 equally: (80 + 60)/2 = 70, dropping the 30/70 weights.",
+        "d": "Swaps the weights: 0.70 × 80 + 0.30 × 60 = 56 + 18 = 74."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-051": {
+      "prompt": "On a grid, a depot is at (3, −5) and a warehouse is at (7, 9). Point M is the midpoint of the segment joining them. What is the sum of the coordinates of M?",
+      "options": {
+        "a": "4",
+        "b": "5",
+        "c": "7",
+        "d": "12"
+      },
+      "correctOptionId": "c",
+      "explanation": "Midpoint M = ((3 + 7)/2, (−5 + 9)/2) = (10/2, 4/2) = (5, 2). Sum of coordinates = 5 + 2 = 7.",
+      "distractorExplanations": {
+        "a": "Adds only the y-pieces (−5 + 9)/2 = 2 then doubles it, or reports 4 as the y-numerator.",
+        "b": "Reports the x-coordinate 5 of M and forgets to add the y-coordinate 2.",
+        "d": "Adds the original x-coordinates 3 + 7 + 2 or 3 + 9, skipping the divide-by-2 in the midpoint formula."
+      },
+      "difficulty": "medium",
+      "topicId": "quant"
+    },
+    "gre-readiness-check-quant-052": {
+      "prompt": "A $400 bond earns 5% simple annual interest. What is the value of the bond after 3 years (principal plus interest)?",
+      "options": {
+        "a": "$20",
+        "b": "$60",
+        "c": "$400",
+        "d": "$460"
+      },
+      "correctOptionId": "d",
+      "explanation": "Simple interest I = Prt = 400 × 0.05 × 3 = 20 × 3 = 60. Value = 400 + 60 = 460.",
+      "distractorExplanations": {
+        "a": "Computes one year of interest 400 × 0.05 = 20 and never multiplies by 3 or adds principal.",
+        "b": "Computes the 3-year interest 60 but forgets to add the $400 principal.",
+        "c": "Reports the original principal $400, as if no interest accrued."
+      },
+      "difficulty": "easy",
+      "topicId": "quant"
+    }
+  }
+}

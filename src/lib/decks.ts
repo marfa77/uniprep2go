@@ -3022,41 +3022,41 @@ const rawDecks: Deck[] = [
     coverImage: "/covers/gmat-focus-anki-deck.webp",
     title: "GMAT Focus Anki Deck",
     shortName: "GMAT Focus",
-    subtitle: "A planned spaced-repetition deck for GMAT Quant, Verbal, and Data Insights.",
+    subtitle: "Anki deck for the current GMAT (Quant, Verbal, Data Insights).",
     directAnswer:
-      "The GMAT Focus Anki Deck is a planned UniPrep2Go product for MBA applicants preparing for the GMAC GMAT. It is not yet available for purchase. Take the free GMAT Focus readiness check to benchmark weak sections first.",
-    lastUpdated: "2026-06-02",
+      "The GMAT Focus Anki Deck is a live UniPrep2Go .apkg for MBA applicants on the current GMAT Exam (three 45-minute sections, 205–805). The item bank was rewritten October 2026 for that format — no Sentence Correction, no Quant geometry, Data Sufficiency only in Data Insights. Take the free GMAT readiness check to benchmark weak sections first.",
+    lastUpdated: "2026-10-04",
     audience: "MBA and business master's applicants using spaced repetition alongside official GMAC prep.",
     format: ".apkg",
     facts: {
-      cards: "Planned",
+      cards: "200",
       topics: "Quantitative Reasoning, Verbal Reasoning, Data Insights",
-      formulas: "Planned high-yield GMAT concepts and question-type drills",
-      examYear: "GMAT Focus Edition (205–805 scale)",
-      delivery: "Digital download (planned)",
+      formulas: "Current GMAT (2026) algebra/arithmetic, CR/RC, and Data Insights — not 10th Edition leftovers",
+      examYear: "GMAT Exam (205–805); GMAT SuperScore live since 12 Aug 2026",
+      delivery: "Digital .apkg through Gumroad",
     },
     topicCoverage: [
-      { name: "Quantitative Reasoning", examWeight: "33% of GMAT total score", cards: "Planned" },
-      { name: "Verbal Reasoning", examWeight: "33% of GMAT total score", cards: "Planned" },
-      { name: "Data Insights", examWeight: "33% of GMAT total score", cards: "Planned" },
+      { name: "Quantitative Reasoning", examWeight: "33% of GMAT total score (21 q / 45 min)", cards: "67" },
+      { name: "Verbal Reasoning", examWeight: "33% of GMAT total score (23 q / 45 min)", cards: "67" },
+      { name: "Data Insights", examWeight: "33% of GMAT total score (20 q / 45 min)", cards: "66" },
     ],
     sampleCards: [
       {
-        question: "If n is a positive integer and 15n is a perfect square, what is the smallest possible value of n?",
+        question: "A studio moved to a four-day on-site week. Over the next half year, client-reported defects in its apps fell. Leadership credits extra rest. Which finding, if true, most weakens that explanation?",
         answer:
-          "Correct: (a) 15 15 = 3¹ × 5¹. For 15n to be a perfect square, every prime factor must have an even exponent, so n must supply one more factor of 3 and one more factor of 5, i.e., n = 3 × 5 = 15. Then 15 × 15 = 225 = 15².",
+          "Correct: (c) In the same week as the calendar change, the studio shipped a long-delayed automated test suite. A new test suite can catch defects before clients see them, so the drop need not come from rest.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-1.webp",
       },
       {
-        question: "The new tax policy will increase total government revenue, because it lowers the tax rate on small businesses, which will encourage them to report income they previously underreported to avoid high taxes. Which of the following is an assumption on which the argument depends?",
+        question: "A print shop’s unit cost and price: Poster $4 / $9; Zine $6 / $10. Fixed weekly costs are $300. If the shop sells 40 posters and 20 zines, which pair is correct?",
         answer:
-          "Correct: (a) The increase in reported income resulting from lower rates will be large enough to offset the revenue lost from the rate reduction itself. The conclusion that total revenue will increase depends on the gain from newly reported income outweighing the loss from the lower rate applied to previously reported income. If this were false, the argument's conclusion would not follow.",
+          "Correct: (d) Contribution $280 and weekly profit −$20 after the $300 fixed cost Poster margin $5 × 40 = $200. Zine margin $4 × 20 = $80. Contribution $280. Profit 280−300=−$20. Skipping fixed cost reports $280 profit. Adding prices 40×9+20×10=560 is not contribution.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-2.webp",
       },
       {
-        question: "A line chart shows a company's monthly website traffic (in thousands of visits): January: 50, February: 65, March: 60, April: 80, May: 75, June: 95. In how many months (other than January, which has no prior month for comparison) did traffic decrease compared to the previous month?",
+        question: "A village replaced all-night street lamps with motion-triggered LEDs, and the lighting electricity bill fell 40 percent. Officials credit the sensors. Which finding, if true, most weakens that credit?",
         answer:
-          "Correct: (a) 2 Month-over-month changes: Feb (+15), Mar (-5, a decrease), Apr (+20), May (-5, a decrease), Jun (+20). Traffic decreased in exactly 2 months: March and May.",
+          "Correct: (a) The village also cut the nightly hours of two floodlit sports fields in the same billing period. Losing sports-field flood hours can crash the lighting bill without the street sensors doing the work.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-3.webp",
       },
     ],
@@ -3064,12 +3064,12 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free GMAT practice test?",
         answer:
-          "Yes. Take the free 45-question GMAT Focus readiness check at uniprep2go.study/mock-exams/gmat-focus-readiness-check — timed section scoring and full answer review. The paid Anki deck includes 400 cards from the same validated bank for daily drilling.",
+          "Yes. Take the free 45-question GMAT readiness check at uniprep2go.study/mock-exams/gmat-focus-readiness-check — timed section scoring and full answer review. The paid Anki deck includes 200 unique cards from the same October 2026 bank.",
       },
       {
         question: "How many cards are in the GMAT Focus Anki deck?",
         answer:
-          "The deck includes 400 flashcards across Quantitative Reasoning, Verbal Reasoning, and Data Insights — built from the same validated item bank as the free readiness check.",
+          "The deck includes 200 unique flashcards across Quantitative Reasoning, Verbal Reasoning, and Data Insights — rewritten October 2026 for the current GMAT (no Sentence Correction, no Quant geometry). Same bank as the free readiness check.",
       },
     ],
   },
@@ -3081,10 +3081,10 @@ const rawDecks: Deck[] = [
     coverImage: "/covers/sat-anki-deck.webp",
     title: "Digital SAT Anki Deck",
     shortName: "Digital SAT",
-    subtitle: "A planned spaced-repetition deck for Digital SAT Reading and Writing and Math.",
+    subtitle: "Anki deck for Digital SAT Reading and Writing and Math.",
     directAnswer:
-      "The Digital SAT Anki Deck is a planned UniPrep2Go product with 160 flashcards — 88 Reading and Writing and 72 Math — written to the eight official Digital SAT content domains. It is not yet available for purchase. Take the free Digital SAT readiness check to benchmark both scored sections first.",
-    lastUpdated: "2026-10-02",
+      "The Digital SAT Anki Deck is a live UniPrep2Go product with 160 unique flashcards — 88 Reading and Writing and 72 Math — written to the eight official Digital SAT content domains. Buy the .apkg on Gumroad. Take the free Digital SAT readiness check to benchmark both scored sections first.",
+    lastUpdated: "2026-10-04",
     audience:
       "High school students preparing for the Digital SAT using spaced repetition alongside College Board Bluebook practice.",
     format: ".apkg",
@@ -3093,7 +3093,7 @@ const rawDecks: Deck[] = [
       topics: "Reading and Writing, Math",
       formulas: "High-yield Digital SAT section skills, grammar rules, algebra, and data analysis drills",
       examYear: "Digital SAT Suite (400–1600 scale)",
-      delivery: "Digital download (planned)",
+      delivery: "Digital .apkg through Gumroad",
     },
     topicCoverage: [
       {
@@ -3232,10 +3232,10 @@ const rawDecks: Deck[] = [
     coverImage: "/covers/gre-anki-deck.webp",
     title: "GRE General Anki Deck",
     shortName: "GRE",
-    subtitle: "A planned spaced-repetition deck for GRE Verbal Reasoning and Quantitative Reasoning.",
+    subtitle: "Anki deck for GRE Verbal Reasoning and Quantitative Reasoning.",
     directAnswer:
-      "The GRE General Anki Deck is a planned UniPrep2Go product with 350 flashcards across Verbal and Quantitative Reasoning (175 each). It is not yet available for purchase. Take the free 30-question / 45-minute GRE readiness check first (both Verbal and Quant axes required). Official shorter GRE is about 1 hour 58 minutes with 27 Verbal + 27 Quant plus Analytical Writing — our mock is a diagnostic baseline, not PowerPrep.",
-    lastUpdated: "2026-09-03",
+      "The GRE General Anki Deck is a live UniPrep2Go product with 350 unique flashcards — 175 Verbal and 175 Quant — from the same bank as the free 30-question / 45-minute GRE readiness check (both axes required). Buy the .apkg on Gumroad. Official shorter GRE is about 1 hour 58 minutes with 27 Verbal + 27 Quant plus Analytical Writing — our mock is a diagnostic baseline, not PowerPrep.",
+    lastUpdated: "2026-10-04",
     audience:
       "Graduate school applicants preparing for the ETS GRE General Test using spaced repetition alongside PowerPrep.",
     format: ".apkg",
@@ -3244,7 +3244,7 @@ const rawDecks: Deck[] = [
       topics: "Verbal Reasoning, Quantitative Reasoning",
       formulas: "High-yield GRE Verbal (TC/SE/RC) and Quant (arithmetic, algebra, geometry, data analysis) drills",
       examYear: "GRE General Test (Verbal/Quant 130–170)",
-      delivery: "Digital download (planned)",
+      delivery: "Digital .apkg through Gumroad",
     },
     topicCoverage: [
       {

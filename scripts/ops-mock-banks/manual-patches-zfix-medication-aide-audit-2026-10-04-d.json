@@ -1,0 +1,259 @@
+{
+  "medication-aide-readiness-check": {
+    "medication-aide-readiness-check-docs-046": {
+      "prompt": "A resident just swallowed the 0800 furosemide. The aide is running behind. How should that dose be documented?",
+      "options": {
+        "a": "Initial the MAR now for the tablet that was swallowed",
+        "b": "Initial every remaining 0800 box now so the pass looks finished",
+        "c": "Wait until 1500 and batch-chart all morning doses at once",
+        "d": "Initial the slot when the tablet is punched, before the room"
+      },
+      "correctOptionId": "a",
+      "explanation": "The MAR is the legal record of what the resident actually took. Chart the furosemide immediately after it is swallowed, not when it is punched and not for doses that have not happened yet. Pre-charting or end-of-shift batching records events that may be refused, held, or dropped.",
+      "distractorExplanations": {
+        "b": "Pre-charting remaining boxes records doses that may still be refused or held and falsifies the MAR for other staff.",
+        "c": "Batch-charting hours later leaves the MAR inaccurate during the shift and raises omission and double-dose risk.",
+        "d": "Punching is not administration; documenting before the resident takes the tablet is pre-charting."
+      },
+      "difficulty": "easy"
+    },
+    "medication-aide-readiness-check-docs-047": {
+      "prompt": "A resident shakes their head at evening sertraline and says, \"Not tonight.\" What should the aide chart and do?",
+      "options": {
+        "a": "Chart the dose as held so the box looks like a parameter hold",
+        "b": "Leave the slot blank and give two tablets at the next clock time",
+        "c": "Chart refused, notify the nurse, and leave the tablet ungiven",
+        "d": "Crush it into pudding so the resident takes it without knowing"
+      },
+      "correctOptionId": "c",
+      "explanation": "A refusal is documented as refused, not as a hold or an omission. The nurse is notified so a clinical follow-up can be decided. Hiding the tablet in food is covert administration and is not a substitute for a documented refusal.",
+      "distractorExplanations": {
+        "a": "Held is for a parameter or a nurse-directed withhold; a resident who declines is charted as refused.",
+        "b": "A later double dose can overdose the resident; the nurse decides what happens after a documented refusal.",
+        "d": "Putting a refused drug in food without an order and a plan violates consent and resident rights."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-docs-048": {
+      "prompt": "The 1400 amlodipine was given at 1448 after a fire drill. The aide is charting at 1610. What belongs on the MAR?",
+      "options": {
+        "a": "Enter 1400 so the MAR matches the printed administration hour",
+        "b": "Cover the 1400 box with correction fluid and write 1448",
+        "c": "Leave the box empty so night shift can complete the time",
+        "d": "Chart 1448 as a late entry with the actual time given"
+      },
+      "correctOptionId": "d",
+      "explanation": "Late documentation must show the true administration time and be marked as a late entry. Writing the scheduled hour backdates the record. Only the person who gave the dose charts it, and the original entry is never obscured with fluid.",
+      "distractorExplanations": {
+        "a": "Recording the printed hour instead of 1448 backdates the MAR and falsifies when the dose was given.",
+        "b": "Correction fluid hides the original mark; errors get a single line, initials, date, and the correct time.",
+        "c": "Night shift cannot document a dose it did not give; the administering aide makes the late entry."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-docs-049": {
+      "prompt": "A resident coughs and says, \"I have pneumonia.\" The aide is writing in the record. What is in scope?",
+      "options": {
+        "a": "Record the cough and notify the nurse; do not write a diagnosis",
+        "b": "Add \"new pneumonia\" as a MAR comment for the next shift",
+        "c": "Hold the vitamin and chart \"rule out COVID\" as the reason",
+        "d": "Start leftover azithromycin from another resident's drawer"
+      },
+      "correctOptionId": "a",
+      "explanation": "Medication aides document what they observed and what they administered or withheld under an order. They do not assign medical diagnoses. The cough is reported to the nurse, who assesses and decides on holds, tests, or treatment.",
+      "distractorExplanations": {
+        "b": "Writing a new diagnosis on the MAR is diagnosing, which is outside the aide's scope.",
+        "c": "Inventing a rule-out reason to hold a drug is a clinical decision and a false MAR entry.",
+        "d": "Starting another resident's antibiotic is treating without an order and is a medication error."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-docs-050": {
+      "prompt": "A hydrocodone 5 mg tablet falls on the dirty floor during the pass. What is the correct controlled-drug action?",
+      "options": {
+        "a": "Flush it, initial the MAR alone, and continue the pass",
+        "b": "Witnessed waste on the count form, then replace per policy",
+        "c": "Put the dirty tablet back in the blister for tonight's dose",
+        "d": "Toss it in regular trash and correct the count at shift change"
+      },
+      "correctOptionId": "b",
+      "explanation": "A contaminated opioid is wasted in the facility's approved way with a licensed witness who co-signs the controlled-count or waste record at that time. A replacement dose is obtained per policy. Solo MAR notes, delayed count fixes, and returning the tablet to stock hide diversion and contaminate the supply.",
+      "distractorExplanations": {
+        "a": "Controlled waste requires a second witness; a solo flush and MAR initial does not close the count.",
+        "c": "A floor tablet is contaminated and cannot be returned to the blister as if it were unused stock.",
+        "d": "Fixing the count later conceals a discrepancy; waste is documented with a witness when it happens."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-docs-051": {
+      "prompt": "The eMAR will not load at the start of the 0800 pass. What should the aide use to keep the pass legal?",
+      "options": {
+        "a": "Hold every morning dose until the vendor restores the screen",
+        "b": "Give from memory of yesterday's pass and chart when it is back",
+        "c": "Use the downtime paper MAR and follow the facility process",
+        "d": "Use last Tuesday's printout as today's administration record"
+      },
+      "correctOptionId": "c",
+      "explanation": "Downtime procedures exist so doses are still given from a current, controlled paper MAR and later transcribed per policy. Memory, an old printout, or holding the whole pass creates missed, extra, or outdated doses.",
+      "distractorExplanations": {
+        "a": "System downtime does not authorize missing scheduled doses; the paper downtime MAR continues the pass.",
+        "b": "Memory-based passes omit changes and invite wrong residents; charting after the fact is not a downtime MAR.",
+        "d": "An old printout can miss new, changed, or discontinued orders; only the current downtime record is used."
+      },
+      "difficulty": "easy"
+    },
+    "medication-aide-readiness-check-docs-052": {
+      "prompt": "The MAR lists \"codeine → rash.\" Hydrocodone is due at 0900. What should the aide do before charting a dose?",
+      "options": {
+        "a": "Give it because hydrocodone is a different drug name",
+        "b": "Give it if the rash happened more than five years ago",
+        "c": "Substitute codeine syrup because tablets caused the rash",
+        "d": "Hold the dose and have the nurse review the opioid allergy"
+      },
+      "correctOptionId": "d",
+      "explanation": "Allergy flags stay in force on every pass. Related opioids can cross-react, so the aide holds hydrocodone and notifies the nurse before administering or charting it as given. Form, age of the reaction, and a different brand name do not clear the allergy.",
+      "distractorExplanations": {
+        "a": "A different opioid name does not prove safety; hydrocodone is related to codeine and needs a nurse review.",
+        "b": "Old reactions remain on the record; time since the rash does not authorize the aide to give the drug.",
+        "c": "The allergy is to the drug, not the tablet; a codeine syrup is the same allergen."
+      },
+      "difficulty": "hard"
+    },
+    "medication-aide-readiness-check-docs-053": {
+      "prompt": "The aide gives another resident's metformin 500 mg by mistake. After staying with the resident, what comes next?",
+      "options": {
+        "a": "Call the nurse now for assessment, then complete the incident form",
+        "b": "Wait until the end of the shift to fill out the incident form",
+        "c": "Skip the next metformin to offset the extra tablet given",
+        "d": "Initial the correct resident's MAR so the counts still match"
+      },
+      "correctOptionId": "a",
+      "explanation": "A wrong-resident error is reported at once so the nurse can assess for hypoglycemia risk and other effects. The incident or medication-error report documents what happened. Later-dose changes and false MAR initials are not the aide's correction.",
+      "distractorExplanations": {
+        "b": "Delaying the report until shift end postpones assessment; the form follows immediate nurse notification.",
+        "c": "Skipping a later dose is a clinical adjustment the nurse or prescriber makes, not an aide self-correction.",
+        "d": "Charting the dose on the intended resident's MAR falsifies who received the tablet."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-docs-054": {
+      "prompt": "A daughter asks the aide to explain the new heart-failure diagnosis and why an ACE inhibitor was started. What is in scope?",
+      "options": {
+        "a": "Teach the diagnosis from a video the aide watched last night",
+        "b": "Refer her to the nurse or provider for diagnosis teaching",
+        "c": "Write \"CHF, NYHA III\" in the progress note as the aide's finding",
+        "d": "Move the ACE inhibitor to bedtime because heart patients do that"
+      },
+      "correctOptionId": "b",
+      "explanation": "In-depth disease teaching and the reason a drug class was chosen belong to the nurse or provider. The aide may confirm, under privacy rules, that a scheduled dose was given, then route diagnostic questions to licensed staff. Changing times or writing a staging diagnosis is out of scope.",
+      "distractorExplanations": {
+        "a": "Watching a video does not authorize the aide to teach a new medical diagnosis.",
+        "c": "Assigning a heart-failure class in the note is diagnosing, which the aide must not do.",
+        "d": "Rescheduling an ACE inhibitor is an order change, not an aide teaching decision."
+      },
+      "difficulty": "easy"
+    },
+    "medication-aide-readiness-check-docs-055": {
+      "prompt": "The aide leaves the paper MAR open on a lobby table while answering a call light. How should that be treated?",
+      "options": {
+        "a": "Acceptable if the MAR is closed after the 0800 pass is finished",
+        "b": "A problem only if last names are printed in the header",
+        "c": "A privacy and diversion risk until the MAR is secured",
+        "d": "Acceptable while the aide is in a resident room down the hall"
+      },
+      "correctOptionId": "c",
+      "explanation": "An open MAR in a public lobby exposes protected health information and shows which controlled drugs are in use. Retrieve and secure it immediately. Closing it later, hiding names, or standing in another room does not undo the exposure while it sits unattended.",
+      "distractorExplanations": {
+        "a": "Closing the MAR after the pass does not protect residents while it sits open in the lobby.",
+        "b": "Drug names, doses, and times identify residents and advertise narcotics even without a header name.",
+        "d": "Being down the hall is when visitors can read or take the MAR; distance increases the risk."
+      },
+      "difficulty": "easy"
+    },
+    "medication-aide-readiness-check-docs-056": {
+      "prompt": "A visitor in the hallway asks, \"What pills is Dad on today?\" What should the medication aide do?",
+      "options": {
+        "a": "Read the MAR list because the visitor comes every afternoon",
+        "b": "Hand over a photocopy of today's MAR for the family's file",
+        "c": "Recite the list if the visitor says they are next of kin",
+        "d": "Follow privacy rules and refer the question to the nurse"
+      },
+      "correctOptionId": "d",
+      "explanation": "Medication lists are protected health information. The aide follows facility privacy rules and routes the request to the nurse, who verifies authority. Frequent visits, a verbal claim of kinship, and handing over a MAR copy are not an aide-level disclosure.",
+      "distractorExplanations": {
+        "a": "Regular visiting does not prove the person is authorized to hear the medication list.",
+        "b": "Releasing a MAR copy is a records disclosure that goes through nursing and medical records, not the pass.",
+        "c": "Self-identifying as next of kin is not verification; the nurse handles authorized family questions."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-docs-057": {
+      "prompt": "At shift change the oxycodone count is one tablet short of the book. What should the oncoming aide do?",
+      "options": {
+        "a": "Stop, recount with the offgoing staff, and notify the nurse",
+        "b": "Sign the count so the offgoing aide can leave on time",
+        "c": "Borrow one tablet from another resident's controlled card",
+        "d": "Change the book total to match the number in the drawer"
+      },
+      "correctOptionId": "a",
+      "explanation": "A short controlled count is a discrepancy until it is resolved. Both aides recount together and the nurse is notified before anyone signs or starts the pass. Signing a false count, borrowing another resident's opioid, or rewriting the book conceals possible diversion and puts both licenses at risk.",
+      "distractorExplanations": {
+        "b": "Signing an unresolved short count attests to a number you know is wrong and shares liability for the missing tablet.",
+        "c": "Taking another resident's oxycodone is theft from that person and creates a second count error.",
+        "d": "Altering the book to match the drawer falsifies the controlled record instead of reporting the shortage."
+      },
+      "difficulty": "hard"
+    },
+    "medication-aide-readiness-check-docs-058": {
+      "prompt": "A new insulin pen arrives. The aide has never been competency-checked on that device. The dose is due. What next?",
+      "options": {
+        "a": "Prime it using the package insert and give the ordered units",
+        "b": "Do not give it; get the nurse or completed device training",
+        "c": "Ask the resident to talk the aide through the injection",
+        "d": "Watch a phone video in the med room, then inject the dose"
+      },
+      "correctOptionId": "b",
+      "explanation": "Device competence must be validated by the facility before the aide uses an insulin pen. If that check-off is missing, the nurse gives the dose or training is completed first. Inserts, resident coaching, and videos are not a competency record.",
+      "distractorExplanations": {
+        "a": "Reading the insert is not a documented competency; insulin pens have dose and prime steps that must be checked off.",
+        "c": "Letting the resident coach the injection still leaves the aide responsible for a device they cannot use.",
+        "d": "A phone video is not facility validation and can miss the specific pen's prime and dial steps."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-docs-059": {
+      "prompt": "The offgoing aide asks you to initial three MAR boxes for doses they say they already gave. What should you do?",
+      "options": {
+        "a": "Initial them to help the teammate clock out on time",
+        "b": "Initial them because policy requires a second set of marks",
+        "c": "Refuse; only the person who gave the dose may initial it",
+        "d": "Initial them and add \"late entry\" so the times look honest"
+      },
+      "correctOptionId": "c",
+      "explanation": "MAR initials mean the signer administered that dose. Signing another person's boxes is falsification of the medical record, even if labeled a late entry or framed as teamwork. The offgoing aide must chart their own administrations or make their own late entries.",
+      "distractorExplanations": {
+        "a": "Helping someone clock out does not authorize you to attest to doses you did not give.",
+        "b": "A second set of initials is not a substitute for the giver's signature; it would still be a false attestation.",
+        "d": "Calling a forged initial a late entry still records that you gave a dose you did not administer."
+      },
+      "difficulty": "hard"
+    },
+    "medication-aide-readiness-check-docs-060": {
+      "prompt": "The aide initials the 0900 MAR box by mistake for a dose given at 0800 and notices immediately. How is the chart corrected?",
+      "options": {
+        "a": "Discard the MAR page and rewrite the whole day's pass",
+        "b": "Use correction fluid so only the 0800 time remains visible",
+        "c": "Ask the next shift to initial the 0800 box for you",
+        "d": "Draw one line through the error, initial, and write 0800"
+      },
+      "correctOptionId": "d",
+      "explanation": "A MAR error is corrected so the original mark remains readable: one line through the mistake, the aide's initials and date, and the correct 0800 entry. Correction fluid, replacing the page, and having another shift sign your dose are improper alterations.",
+      "distractorExplanations": {
+        "a": "Destroying the page hides the original entry and is not an accepted medical-record correction.",
+        "b": "Correction fluid conceals what was written; reviewers must be able to see the error and the fix.",
+        "c": "The next shift cannot initial a dose it did not give; the administering aide corrects their own box."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

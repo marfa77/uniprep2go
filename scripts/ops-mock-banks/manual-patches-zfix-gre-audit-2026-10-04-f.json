@@ -1,0 +1,796 @@
+{
+  "gre-readiness-check": {
+    "gre-readiness-check-quant-053": {
+      "topicId": "quant",
+      "prompt": "A lab mixes a 40% acid solution with a 70% acid solution to make 12 liters of 50% acid. How many liters of the 40% solution are used?",
+      "options": {
+        "a": "8",
+        "b": "9",
+        "c": "10",
+        "d": "12"
+      },
+      "correctOptionId": "a",
+      "explanation": "Let x be liters of 40% acid. Then 0.4x + 0.7(12 − x) = 0.5(12) = 6. That is 8.4 − 0.3x = 6, so 0.3x = 2.4 and x = 8. Check: 8 L at 40% plus 4 L at 70% is 3.2 + 2.8 = 6 L of acid in 12 L, which is 50%.",
+      "distractorExplanations": {
+        "b": "9 L of 40% would leave 3 L of 70%, giving 3.6 + 2.1 = 5.7 L of acid, below 50%.",
+        "c": "10 L of 40% would leave 2 L of 70%, giving 4.0 + 1.4 = 5.4 L of acid, not 6 L.",
+        "d": "12 L uses only the 40% stock, which is 4.8 L of acid, far short of the 6 L needed."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-055": {
+      "topicId": "quant",
+      "prompt": "When a positive integer n is divided by 6, the remainder is 4. What is the remainder when n + 4 is divided by 6?",
+      "options": {
+        "a": "0",
+        "b": "2",
+        "c": "4",
+        "d": "5"
+      },
+      "correctOptionId": "b",
+      "explanation": "Write n = 6k + 4. Then n + 4 = 6k + 8 = 6(k + 1) + 2, so the remainder is 2. Equivalently, adding 4 to a remainder of 4 produces 8, and 8 − 6 leaves remainder 2.",
+      "distractorExplanations": {
+        "a": "Remainder 0 would mean n + 4 is a multiple of 6, but 6k + 8 is 2 more than a multiple of 6.",
+        "c": "Keeping remainder 4 ignores that the extra +4 pushes the remainder past 6.",
+        "d": "Remainder 5 would fit n + 1, not n + 4, under the same modulus."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-056": {
+      "topicId": "quant",
+      "prompt": "A student has five test scores averaging 82. What score on a sixth test makes the six-test average 85?",
+      "options": {
+        "a": "88",
+        "b": "94",
+        "c": "100",
+        "d": "106"
+      },
+      "correctOptionId": "c",
+      "explanation": "Five tests totaling 5 × 82 = 410 points. Six tests at average 85 require 6 × 85 = 510 points. The sixth score must be 510 − 410 = 100.",
+      "distractorExplanations": {
+        "a": "88 is 85 + 3, as if raising the average by 3 required adding only 3 points once.",
+        "b": "94 is 82 + 12, a one-test bump that does not cover five existing scores 3 points below 85.",
+        "d": "106 overshoots: that total would be 516, an average of 86, not 85."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-057": {
+      "topicId": "quant",
+      "prompt": "Simplify the exponential expression (2^5 × 4^2) ÷ 2^3.",
+      "options": {
+        "a": "8",
+        "b": "16",
+        "c": "32",
+        "d": "64"
+      },
+      "correctOptionId": "d",
+      "explanation": "Rewrite 4 as 2^2 so 4^2 = 2^4. Then 2^5 × 2^4 ÷ 2^3 = 2^(5+4−3) = 2^6 = 64. Directly: 32 × 16 = 512 and 512 ÷ 8 = 64.",
+      "distractorExplanations": {
+        "a": "8 is 2^3, the denominator alone, as if the numerator canceled completely.",
+        "b": "16 is 4^2, stopping after evaluating one factor and ignoring 2^5 / 2^3.",
+        "c": "32 is 2^5, the first factor only, without multiplying by 4^2 / 2^3 = 2."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-058": {
+      "topicId": "quant",
+      "prompt": "An isosceles right triangle has legs of length 5. What is the length of the hypotenuse?",
+      "options": {
+        "a": "5√2",
+        "b": "5√3",
+        "c": "10",
+        "d": "10√2"
+      },
+      "correctOptionId": "a",
+      "explanation": "In a 45-45-90 triangle the hypotenuse is leg × √2, so 5√2. By Pythagoras: 5^2 + 5^2 = 50 and √50 = 5√2.",
+      "distractorExplanations": {
+        "b": "5√3 is the longer leg in a 30-60-90 triangle with short side 5, not this isosceles right triangle.",
+        "c": "10 doubles the leg as if the hypotenuse were 2s, which is the 30-60-90 hypotenuse rule.",
+        "d": "10√2 treats a leg as the hypotenuse and scales again by √2."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-059": {
+      "topicId": "quant",
+      "prompt": "Pump A fills a tank in 8 hours and pump B fills the same tank in 24 hours. Working together, how many hours do they need to fill the tank?",
+      "options": {
+        "a": "4",
+        "b": "6",
+        "c": "8",
+        "d": "16"
+      },
+      "correctOptionId": "b",
+      "explanation": "A’s rate is 1/8 tank per hour and B’s is 1/24. Combined: 1/8 + 1/24 = 3/24 + 1/24 = 4/24 = 1/6 tank per hour, so they finish in 6 hours.",
+      "distractorExplanations": {
+        "a": "4 hours would require a combined rate of 1/4, which is faster than 1/8 + 1/24.",
+        "c": "8 hours is pump A working alone, ignoring B’s contribution.",
+        "d": "16 is the arithmetic mean of 8 and 24, not the harmonic combination of rates."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-060": {
+      "topicId": "quant",
+      "prompt": "How many positive multiples of 4 are there that are less than or equal to 50?",
+      "options": {
+        "a": "10",
+        "b": "11",
+        "c": "12",
+        "d": "13"
+      },
+      "correctOptionId": "c",
+      "explanation": "The multiples are 4, 8, …, 48. That is 4 × 1 through 4 × 12, so there are 12 of them. 50 is not a multiple of 4, and 4 × 13 = 52 exceeds 50.",
+      "distractorExplanations": {
+        "a": "10 would stop at 40, omitting 44 and 48.",
+        "b": "Counting 11 multiples would stop at 44 and omit 48, which is still 4 × 12.",
+        "d": "13 would include 52, which is greater than 50."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-061": {
+      "topicId": "quant",
+      "prompt": "Two fair coins are flipped. What is the probability of at least one head?",
+      "options": {
+        "a": "1/4",
+        "b": "1/2",
+        "c": "2/3",
+        "d": "3/4"
+      },
+      "correctOptionId": "d",
+      "explanation": "The four equally likely outcomes are HH, HT, TH, TT. Three of them have at least one head, so the probability is 3/4. Complement: P(no heads) = P(TT) = 1/4, and 1 − 1/4 = 3/4.",
+      "distractorExplanations": {
+        "a": "1/4 is P(both heads) or P(both tails), not P(at least one head).",
+        "b": "1/2 is P(exactly one head) if HH is ignored, or a single-coin probability.",
+        "c": "2/3 treats HH, HT, TH as the sample space after dropping TT, which is not how the coins are flipped."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-062": {
+      "topicId": "quant",
+      "prompt": "In the coordinate plane, what is the distance from the origin to the point (5, 12)?",
+      "options": {
+        "a": "13",
+        "b": "15",
+        "c": "17",
+        "d": "25"
+      },
+      "correctOptionId": "a",
+      "explanation": "Distance from (0, 0) to (5, 12) is √(5^2 + 12^2) = √(25 + 144) = √169 = 13, the 5-12-13 triple.",
+      "distractorExplanations": {
+        "b": "15 is 5 × 3, as if scaling a 3-4-5 triangle without using 12 as the other leg.",
+        "c": "17 is 5 + 12, the taxicab (Manhattan) distance, not Euclidean length.",
+        "d": "25 is 5^2, using only one coordinate and skipping the square root of the sum."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-063": {
+      "topicId": "quant",
+      "prompt": "A jacket listed at $90 is sold at 20% off, then 5% sales tax is charged on the sale price. What is the total paid?",
+      "options": {
+        "a": "$72.00",
+        "b": "$75.60",
+        "c": "$85.50",
+        "d": "$94.50"
+      },
+      "correctOptionId": "b",
+      "explanation": "Sale price is 90 × 0.80 = $72. Tax on that amount is 72 × 0.05 = $3.60, so the total is 72 × 1.05 = $75.60.",
+      "distractorExplanations": {
+        "a": "$72.00 is the discounted price before the 5% tax is added.",
+        "c": "$85.50 is 90 × 0.95, applying 5% off the list price instead of tax on the sale price.",
+        "d": "$94.50 is 90 × 1.05, charging tax on the original $90 and skipping the discount."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-064": {
+      "topicId": "quant",
+      "prompt": "An arithmetic sequence has common difference 3. If the fifth term is 20, what is the first term?",
+      "options": {
+        "a": "2",
+        "b": "5",
+        "c": "8",
+        "d": "11"
+      },
+      "correctOptionId": "c",
+      "explanation": "a_5 = a_1 + 4d. So 20 = a_1 + 4(3) = a_1 + 12, hence a_1 = 8. The terms are 8, 11, 14, 17, 20.",
+      "distractorExplanations": {
+        "a": "2 comes from subtracting 6 × 3, as if 20 were the seventh term.",
+        "b": "5 comes from subtracting 5 × 3, counting five steps back instead of four.",
+        "d": "11 is the second term, after subtracting only one common difference from 20."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-065": {
+      "topicId": "quant",
+      "prompt": "A rectangular box measures 2 by 3 by 6. What is the length of a space diagonal of the box?",
+      "options": {
+        "a": "4",
+        "b": "5",
+        "c": "6",
+        "d": "7"
+      },
+      "correctOptionId": "d",
+      "explanation": "The space diagonal is √(2^2 + 3^2 + 6^2) = √(4 + 9 + 36) = √49 = 7.",
+      "distractorExplanations": {
+        "a": "4 is √(4 + 9 + 3) or a face mix-up, not the full three-edge formula.",
+        "b": "5 is the 3-4-5 face diagonal of a 3-by-4 rectangle, not this 2-3-6 box.",
+        "c": "6 is the longest edge, a face path, not the interior space diagonal."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-066": {
+      "topicId": "quant",
+      "prompt": "A $50 prize is split in the ratio 3 : 7. How many dollars does the smaller share receive?",
+      "options": {
+        "a": "15",
+        "b": "21",
+        "c": "35",
+        "d": "50"
+      },
+      "correctOptionId": "a",
+      "explanation": "The parts total 3 + 7 = 10. The smaller share is (3/10) × 50 = 15 dollars. The larger share is 35, and 15 + 35 = 50.",
+      "distractorExplanations": {
+        "b": "21 is not a 3-tenths or 7-tenths cut of 50; it may mix 3 × 7.",
+        "c": "35 is the larger 7/10 share, not the smaller share asked for.",
+        "d": "50 is the whole prize, not a single person’s share."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-068": {
+      "topicId": "quant",
+      "prompt": "A function is defined by f(x) = 3x + 1. Evaluate the composition f(f(2)).",
+      "options": {
+        "a": "7",
+        "b": "22",
+        "c": "25",
+        "d": "43"
+      },
+      "correctOptionId": "b",
+      "explanation": "First f(2) = 3(2) + 1 = 7. Then f(f(2)) = f(7) = 3(7) + 1 = 22. Composition means apply the rule twice, not multiply coefficients once.",
+      "distractorExplanations": {
+        "a": "7 is f(2) after one application; the question asks for f of that output.",
+        "c": "25 is 3(8) + 1, as if the inner value were 8 instead of 7.",
+        "d": "43 is 3(14) + 1, doubling 7 before the second application."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-069": {
+      "topicId": "quant",
+      "prompt": "A circular disk has radius 8. Find the area of the disk.",
+      "options": {
+        "a": "16π",
+        "b": "32π",
+        "c": "64π",
+        "d": "128π"
+      },
+      "correctOptionId": "c",
+      "explanation": "Area = πr^2 = π(8)^2 = 64π. Circumference would be 2πr = 16π, which is a different measure.",
+      "distractorExplanations": {
+        "a": "16π is 2πr, the circumference, or π(2r) with the radius not squared.",
+        "b": "32π is 4πr, mixing 2πr with an extra factor of 2.",
+        "d": "128π is 2πr^2, doubling the area as if using diameter 8 in πd^2 / 2."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-070": {
+      "topicId": "quant",
+      "prompt": "Simple interest is earned on $1,500 at 8% per year for 2 years. How much interest is earned?",
+      "options": {
+        "a": "120",
+        "b": "160",
+        "c": "180",
+        "d": "240"
+      },
+      "correctOptionId": "d",
+      "explanation": "I = Prt = 1500 × 0.08 × 2 = 120 × 2 = 240. The question asks for interest only, not the new principal 1740.",
+      "distractorExplanations": {
+        "a": "120 is one year’s interest, omitting the factor of 2 years.",
+        "b": "160 is 1500 × 0.08 plus an extra 40, not a two-year simple-interest total.",
+        "c": "180 is 1500 × 0.12, as if a 12% rate were used for one year."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-072": {
+      "topicId": "quant",
+      "prompt": "A club of 7 people chooses a 2-person committee. How many distinct committees are possible?",
+      "options": {
+        "a": "21",
+        "b": "35",
+        "c": "42",
+        "d": "49"
+      },
+      "correctOptionId": "a",
+      "explanation": "Order does not matter, so C(7, 2) = 7 × 6 / 2 = 21. That is the number of unordered pairs from 7 people.",
+      "distractorExplanations": {
+        "b": "35 is C(7, 3), choosing 3 people instead of 2.",
+        "c": "42 is 7 × 6, the permutation P(7, 2), which counts ordered pairs twice each.",
+        "d": "49 is 7^2, as if each of 7 could pair with each of 7, including repeats."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-073": {
+      "topicId": "quant",
+      "prompt": "Solve the linear equation 4x + 9 = 3x + 17 for x.",
+      "options": {
+        "a": "4",
+        "b": "8",
+        "c": "12",
+        "d": "26"
+      },
+      "correctOptionId": "b",
+      "explanation": "Subtract 3x from both sides: x + 9 = 17. Then x = 8. Check: 4(8) + 9 = 41 and 3(8) + 17 = 41.",
+      "distractorExplanations": {
+        "a": "4 comes from 17 − 9 − 4, dropping an x term incorrectly.",
+        "c": "12 comes from adding 9 + 3 instead of subtracting 9 from 17 after isolating x.",
+        "d": "26 is 9 + 17, adding the constants and ignoring the x coefficients."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-074": {
+      "topicId": "quant",
+      "prompt": "What is the slope of the line through (2, 3) and (6, −1)?",
+      "options": {
+        "a": "-2",
+        "b": "-3/2",
+        "c": "-1",
+        "d": "1"
+      },
+      "correctOptionId": "c",
+      "explanation": "Slope is (y2 − y1)/(x2 − x1) = (−1 − 3)/(6 − 2) = (−4)/4 = −1. The line falls 1 unit for each 1 unit right.",
+      "distractorExplanations": {
+        "a": "−2 uses Δy = −4 with Δx = 2, reading the x-coordinates as 2 and 4.",
+        "b": "−3/2 uses Δy = −3, dropping the −1 or using 3 − 0 in the numerator.",
+        "d": "1 is the absolute value of the slope, missing that y decreases as x increases."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-077": {
+      "topicId": "quant",
+      "prompt": "What is the median of the list 4, 11, 7, 9, 2?",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "6",
+        "d": "7"
+      },
+      "correctOptionId": "d",
+      "explanation": "Sorted order is 2, 4, 7, 9, 11. With five values the median is the third, which is 7. The mean is 33/5 = 6.6, a different statistic.",
+      "distractorExplanations": {
+        "a": "2 is the minimum of the list, not the middle value after sorting.",
+        "b": "4 is the second-smallest value, one place left of the median.",
+        "c": "6 is a rounded mean (33/5 = 6.6), not the median of the ordered list."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-078": {
+      "topicId": "quant",
+      "prompt": "A driver goes 150 miles at 50 mph and then 150 miles at 30 mph. What is the average speed for the whole 300 miles?",
+      "options": {
+        "a": "37.5",
+        "b": "40.0",
+        "c": "42.5",
+        "d": "45.0"
+      },
+      "correctOptionId": "a",
+      "explanation": "Time is 150/50 = 3 hours plus 150/30 = 5 hours, total 8 hours. Average speed is 300/8 = 37.5 mph, the harmonic mean of 50 and 30, not their arithmetic mean.",
+      "distractorExplanations": {
+        "b": "40.0 is a common guess between 30 and 50 that is still above the true time-weighted average.",
+        "c": "42.5 splits the difference from 40 toward 45, still treating the legs as equal-time.",
+        "d": "45.0 is (50 + 30)/2, the arithmetic mean, which would apply only if the times were equal."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-079": {
+      "topicId": "quant",
+      "prompt": "What is the smallest integer x that satisfies 3x − 4 > 11?",
+      "options": {
+        "a": "5",
+        "b": "6",
+        "c": "7",
+        "d": "8"
+      },
+      "correctOptionId": "b",
+      "explanation": "3x − 4 > 11 so 3x > 15 and x > 5. The smallest integer greater than 5 is 6. Check: 3(6) − 4 = 14 > 11, while 3(5) − 4 = 11, which is not greater.",
+      "distractorExplanations": {
+        "a": "5 gives 11, which fails a strict inequality; x must be greater than 5.",
+        "c": "7 works but is not the smallest integer solution.",
+        "d": "8 also works and is even farther from the boundary x = 5."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-080": {
+      "topicId": "quant",
+      "prompt": "A trapezoid has parallel bases 6 and 10 and height 4. What is its area?",
+      "options": {
+        "a": "24",
+        "b": "28",
+        "c": "32",
+        "d": "40"
+      },
+      "correctOptionId": "c",
+      "explanation": "Trapezoid area is (b1 + b2)/2 × h = (6 + 10)/2 × 4 = 8 × 4 = 32.",
+      "distractorExplanations": {
+        "a": "24 is 6 × 4, using only the shorter base as if it were a rectangle of width 6.",
+        "b": "28 is 6 + 10 × 2, adding bases without averaging or using height 4 correctly.",
+        "d": "40 is 10 × 4, using only the longer base as the rectangular width."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-081": {
+      "topicId": "quant",
+      "prompt": "How many positive divisors does 60 have?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "10",
+        "d": "12"
+      },
+      "correctOptionId": "d",
+      "explanation": "60 = 2^2 × 3^1 × 5^1, so the number of positive divisors is (2 + 1)(1 + 1)(1 + 1) = 3 × 2 × 2 = 12. They are 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.",
+      "distractorExplanations": {
+        "a": "6 counts only the prime factors with multiplicity, or the proper small divisors, not the full list.",
+        "b": "8 is (2+1)(3−1)(5−3) style arithmetic, or 2^3, not the divisor-function product.",
+        "c": "10 omits two divisors from the list of 12 (often 1 and 60, or 4 and 15)."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-082": {
+      "topicId": "quant",
+      "prompt": "If three-fourths of a number is 36, what is the number?",
+      "options": {
+        "a": "48",
+        "b": "54",
+        "c": "72",
+        "d": "108"
+      },
+      "correctOptionId": "a",
+      "explanation": "(3/4)n = 36 so n = 36 × 4/3 = 48. Check: three-fourths of 48 is 36.",
+      "distractorExplanations": {
+        "b": "54 is 36 × 3/2, inverting 2/3 instead of 3/4.",
+        "c": "72 is 36 × 2, as if the given amount were half the number.",
+        "d": "108 is 36 × 3, multiplying by the numerator 3 instead of 4/3."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-083": {
+      "topicId": "quant",
+      "prompt": "What is the midpoint of the segment joining (1, 4) and (7, 10)?",
+      "options": {
+        "a": "(3, 6)",
+        "b": "(4, 7)",
+        "c": "(5, 8)",
+        "d": "(8, 14)"
+      },
+      "correctOptionId": "b",
+      "explanation": "Average the coordinates: ((1 + 7)/2, (4 + 10)/2) = (8/2, 14/2) = (4, 7). That point sits halfway along the segment.",
+      "distractorExplanations": {
+        "a": "(3, 6) subtracts 1 from each midpoint coordinate, or averages with (5, 8) incorrectly.",
+        "c": "(5, 8) adds 4 to (1, 4), a point one-third of the way if the run were counted as 6 + 2.",
+        "d": "(8, 14) is the vector sum of the endpoints, not their average."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-084": {
+      "topicId": "quant",
+      "prompt": "A price rises from 80 to 100. What is the percent increase?",
+      "options": {
+        "a": "10%",
+        "b": "20%",
+        "c": "25%",
+        "d": "80%"
+      },
+      "correctOptionId": "c",
+      "explanation": "The increase is 20. Percent increase is 20/80 = 0.25 = 25% of the original price, not 20/100.",
+      "distractorExplanations": {
+        "a": "A 10% increase from 80 is only 8 points, which would land at 88, not 100.",
+        "b": "20% treats the 20-point rise as already a percent of 100, using the new price as the base.",
+        "d": "80% uses 80/100, the original as a percent of the new price, which is not percent increase."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-085": {
+      "topicId": "quant",
+      "prompt": "A cube has total surface area 96. What is its volume?",
+      "options": {
+        "a": "16",
+        "b": "36",
+        "c": "48",
+        "d": "64"
+      },
+      "correctOptionId": "d",
+      "explanation": "Six faces give 6s^2 = 96, so s^2 = 16 and s = 4. Volume is s^3 = 64.",
+      "distractorExplanations": {
+        "a": "16 is s^2, one face area, not the volume.",
+        "b": "36 is 6^2, as if the edge were 6 because 96/16, mixing face count.",
+        "c": "48 is half of 96, a face-area mix-up, not the cube of the edge length 4."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-086": {
+      "topicId": "quant",
+      "prompt": "What is the degree measure of the smaller angle between the hour and minute hands at 3:00?",
+      "options": {
+        "a": "90",
+        "b": "105",
+        "c": "120",
+        "d": "180"
+      },
+      "correctOptionId": "a",
+      "explanation": "At 3:00 the minute hand is on 12 and the hour hand is on 3. Each hour mark is 30°, so three hours is 90°. The hands form a right angle.",
+      "distractorExplanations": {
+        "b": "105° is a 3:30-style estimate; at 3:00 the minute hand has not moved off 12.",
+        "c": "120° is the 4:00 angle (4 × 30), not 3:00.",
+        "d": "180° would be 6:00, when the hands are opposite."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-087": {
+      "topicId": "quant",
+      "prompt": "A class of 12 has mean score 70 and a class of 8 has mean score 85. What is the combined mean of all 20 scores?",
+      "options": {
+        "a": "72",
+        "b": "76",
+        "c": "78",
+        "d": "85"
+      },
+      "correctOptionId": "b",
+      "explanation": "Totals are 12 × 70 = 840 and 8 × 85 = 680. Combined sum 1520 over 20 scores is 1520/20 = 76. The larger class pulls the mean below the unweighted 77.5.",
+      "distractorExplanations": {
+        "a": "72 is closer to 70, overweighting the first class beyond its 12/20 share.",
+        "c": "78 is near (70 + 85)/2 = 77.5, treating the classes as equal size.",
+        "d": "85 is the second class mean alone, ignoring the 12 scores of 70."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-089": {
+      "topicId": "quant",
+      "prompt": "The equation x^2 − 9x + 18 = 0 has two roots. What is the sum of the roots?",
+      "options": {
+        "a": "3",
+        "b": "6",
+        "c": "9",
+        "d": "18"
+      },
+      "correctOptionId": "c",
+      "explanation": "For x^2 − (sum)x + product = 0, the sum of roots is 9 and the product is 18. Factoring (x − 3)(x − 6) = 0 confirms 3 + 6 = 9.",
+      "distractorExplanations": {
+        "a": "3 is a single root of the quadratic, not the sum of both roots.",
+        "b": "6 is the other individual root; the question asks for 3 + 6.",
+        "d": "18 is the product of the roots, the constant term."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-090": {
+      "topicId": "quant",
+      "prompt": "A regular hexagon has side length 5. What is its perimeter?",
+      "options": {
+        "a": "15",
+        "b": "20",
+        "c": "25",
+        "d": "30"
+      },
+      "correctOptionId": "d",
+      "explanation": "A hexagon has six sides, so perimeter is 6 × 5 = 30. Regular only means the sides are equal; you still multiply by six, not five.",
+      "distractorExplanations": {
+        "a": "15 counts only three of the six equal sides, a half-hexagon walk, not the full perimeter.",
+        "b": "20 is four sides, as if the figure were a pentagon missing a side or a square of side 5.",
+        "c": "25 is five sides, confusing a hexagon with a pentagon."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-091": {
+      "topicId": "quant",
+      "prompt": "Compute the difference of squares 15^2 − 14^2 without expanding each square fully.",
+      "options": {
+        "a": "29",
+        "b": "30",
+        "c": "31",
+        "d": "41"
+      },
+      "correctOptionId": "a",
+      "explanation": "Difference of squares: 15^2 − 14^2 = (15 − 14)(15 + 14) = 1 × 29 = 29. Directly: 225 − 196 = 29.",
+      "distractorExplanations": {
+        "b": "30 is 15 + 14 + 1, adding instead of using (a − b)(a + b).",
+        "c": "31 is 15 + 14 + 2, a nearby odd number not equal to 225 − 196.",
+        "d": "41 is 15 + 14 + 12, or a mix of 25 + 16, not this difference of squares."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-092": {
+      "topicId": "quant",
+      "prompt": "Two fair six-sided dice are rolled. What is the probability that the sum is 8?",
+      "options": {
+        "a": "1/12",
+        "b": "5/36",
+        "c": "1/6",
+        "d": "1/4"
+      },
+      "correctOptionId": "b",
+      "explanation": "There are 36 equally likely outcomes. Sum 8 occurs as (2,6), (3,5), (4,4), (5,3), (6,2) — five ways — so 5/36. (1,7) is impossible on a six-sided die.",
+      "distractorExplanations": {
+        "a": "1/12 = 3/36 undercounts the five ordered pairs that sum to 8.",
+        "c": "1/6 = 6/36 is P(sum 7), which has six pairs, one more than sum 8.",
+        "d": "1/4 = 9/36 overcounts, as if every face on one die had a unique partner."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-093": {
+      "topicId": "quant",
+      "prompt": "Eight workers finish a job in 12 days. How many workers are needed to finish the same job in 8 days at the same rate?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "12",
+        "d": "16"
+      },
+      "correctOptionId": "c",
+      "explanation": "Work is 8 × 12 = 96 worker-days. For 8 days, 96/8 = 12 workers. Inverse proportion: fewer days need more workers in the ratio 12 : 8 = 3 : 2, and 8 × 3/2 = 12.",
+      "distractorExplanations": {
+        "a": "6 scales workers with days (8 × 8/12), the wrong direction of inverse proportion.",
+        "b": "8 keeps the crew the same, which would still take 12 days.",
+        "d": "16 doubles the crew as if the time were halved from 12 to 6, not to 8."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-094": {
+      "topicId": "quant",
+      "prompt": "If |x − 5| = 9, what is the larger solution for x?",
+      "options": {
+        "a": "-4",
+        "b": "4",
+        "c": "9",
+        "d": "14"
+      },
+      "correctOptionId": "d",
+      "explanation": "|x − 5| = 9 means x − 5 = 9 or x − 5 = −9, so x = 14 or x = −4. The larger solution is 14.",
+      "distractorExplanations": {
+        "a": "−4 is the smaller solution, from x − 5 = −9.",
+        "b": "4 is 5 − 1 or |5 − 9|, not a solution: |4 − 5| = 1 ≠ 9.",
+        "c": "9 is the distance in the equation, not a value of x: |9 − 5| = 4 ≠ 9."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-095": {
+      "topicId": "quant",
+      "prompt": "A 60° pizza slice is cut from a pie of radius 6. What is the area of that slice?",
+      "options": {
+        "a": "6π",
+        "b": "12π",
+        "c": "18π",
+        "d": "36π"
+      },
+      "correctOptionId": "a",
+      "explanation": "Full-circle area is π(6)^2 = 36π. A 60° sector is 60/360 = 1/6 of the circle, so (1/6) × 36π = 6π.",
+      "distractorExplanations": {
+        "b": "12π is 1/3 of 36π, a 120° sector, or 2πr with r = 6.",
+        "c": "18π is half of 36π, a semicircle (180°), not 60°.",
+        "d": "36π is the area of the whole circle, not the 60° slice."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-096": {
+      "topicId": "quant",
+      "prompt": "Find three-fifths of four-thirds of 90.",
+      "options": {
+        "a": "54",
+        "b": "72",
+        "c": "90",
+        "d": "108"
+      },
+      "correctOptionId": "b",
+      "explanation": "First (4/3) × 90 = 120. Then (3/5) × 120 = 72. Combined: (3/5)(4/3)(90) = (4/5)(90) = 72 after canceling the 3s.",
+      "distractorExplanations": {
+        "a": "54 is (3/5) × 90, skipping the (4/3) factor.",
+        "c": "90 leaves the original number unchanged, as if the fractions multiplied to 1.",
+        "d": "108 is (6/5) × 90, inverting 3/5 or using 4/3 × 81."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-097": {
+      "topicId": "quant",
+      "prompt": "Four numbers add to 72. If one of them is 24, what is the mean of the other three?",
+      "options": {
+        "a": "12",
+        "b": "14",
+        "c": "16",
+        "d": "24"
+      },
+      "correctOptionId": "c",
+      "explanation": "The other three add to 72 − 24 = 48, so their mean is 48/3 = 16. Do not average 72 across four or three without removing 24 first.",
+      "distractorExplanations": {
+        "a": "12 is 72/6, dividing the total by the wrong count.",
+        "b": "14 is near 72/5, mixing five numbers into a four-number sum.",
+        "d": "24 is the removed number, not the mean of the remaining three."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-098": {
+      "topicId": "quant",
+      "prompt": "The line 2x + 3y = 12 intersects the y-axis. What is the y-coordinate of that intercept?",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "correctOptionId": "d",
+      "explanation": "On the y-axis, x = 0, so 3y = 12 and y = 4. The intercept is (0, 4). The x-intercept is 6, a different point.",
+      "distractorExplanations": {
+        "a": "1 is not 12 divided by 2 or 3; it may come from a slope intercept mix-up.",
+        "b": "2 is the coefficient of x, not the y-intercept value.",
+        "c": "3 is the coefficient of y, not 12/3 after setting x = 0 correctly as 4."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-099": {
+      "topicId": "quant",
+      "prompt": "How many 2-letter codes can be made from 6 distinct letters if order matters and letters are not repeated?",
+      "options": {
+        "a": "30",
+        "b": "36",
+        "c": "60",
+        "d": "720"
+      },
+      "correctOptionId": "a",
+      "explanation": "P(6, 2) = 6 × 5 = 30. First letter 6 choices, second letter 5 remaining. Combinations C(6, 2) = 15 would apply only if order did not matter.",
+      "distractorExplanations": {
+        "b": "36 is 6 × 6, which allows repeating a letter.",
+        "c": "60 is 6 × 5 × 2, multiplying by an extra 2 after already counting order.",
+        "d": "720 is 6!, the number of permutations of all six letters."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-100": {
+      "topicId": "quant",
+      "prompt": "In a 30-60-90 triangle the side opposite 30° has length 4. What is the length of the side opposite 60°?",
+      "options": {
+        "a": "4",
+        "b": "4√3",
+        "c": "8",
+        "d": "8√3"
+      },
+      "correctOptionId": "b",
+      "explanation": "In 30-60-90 the sides are x : x√3 : 2x. Opposite 30° is x = 4, so opposite 60° is 4√3. The hypotenuse would be 8.",
+      "distractorExplanations": {
+        "a": "4 is the short side again, opposite 30°, not opposite 60°.",
+        "c": "8 is the hypotenuse (2x), opposite 90°, not opposite 60°.",
+        "d": "8√3 doubles the long leg, as if x were 8."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-101": {
+      "topicId": "quant",
+      "prompt": "In a survey of 90 students, 50 study French, 40 study Spanish, and 20 study both. How many study neither language?",
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "20",
+        "d": "30"
+      },
+      "correctOptionId": "c",
+      "explanation": "At least one language: 50 + 40 − 20 = 70 by inclusion-exclusion. Neither: 90 − 70 = 20. Adding 50 and 40 without subtracting the overlap double-counts the 20.",
+      "distractorExplanations": {
+        "a": "10 is 90 − 50 − 40 + 10, an off-by-ten slip in the overlap.",
+        "b": "15 is not 90 − (50 + 40 − 20); it may average 10 and 20.",
+        "d": "30 is 90 − 60, treating the overlap as already removed twice or using 50 + 40 − 30."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-102": {
+      "topicId": "quant",
+      "prompt": "A principal of $400 earns 20% interest compounded annually for 2 years. What is the amount after 2 years?",
+      "options": {
+        "a": "480",
+        "b": "500",
+        "c": "560",
+        "d": "576"
+      },
+      "correctOptionId": "d",
+      "explanation": "After one year: 400 × 1.20 = 480. After two years: 480 × 1.20 = 576. Equivalently 400 × 1.20^2 = 400 × 1.44 = 576. Simple interest would be only 400 + 160 = 560.",
+      "distractorExplanations": {
+        "a": "480 is the amount after one year only, missing the second compounding.",
+        "b": "500 is 400 + 100, an unstated 25% flat add-on, not 20% compounded.",
+        "c": "560 is simple interest of 20% × 2 = 40% of 400, which does not compound year two on 480."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

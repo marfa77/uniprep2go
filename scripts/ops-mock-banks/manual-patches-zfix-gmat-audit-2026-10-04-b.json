@@ -1,0 +1,598 @@
+{
+  "gmat-focus-readiness-check": {
+    "gmat-focus-readiness-check-quant-038": {
+      "topicId": "quant",
+      "prompt": "A copy shop runs a four-hour overnight job. It prints 40 pages in the first hour, and each later hour it prints 8 more pages than the hour before. How many pages are printed in the four hours combined?",
+      "options": {
+        "a": "208",
+        "b": "216",
+        "c": "224",
+        "d": "240"
+      },
+      "correctOptionId": "a",
+      "explanation": "The hourly counts form an arithmetic sequence 40, 48, 56, 64. The four-term sum is 4/2 × (first + last) = 2 × (40 + 64) = 208 pages. Equivalently, S = 4/2 × (2 × 40 + 3 × 8) = 2 × 104 = 208.",
+      "distractorExplanations": {
+        "b": "216 would be the sum if the last hour were 72 (a fifth term), which is one hour past the four-hour window.",
+        "c": "224 treats the increase as 8 pages per hour added to a flat 40 × 4 = 160, giving 160 + 64 instead of summing the actual hourly totals.",
+        "d": "240 is 40 × 6, as if the shop printed at the opening rate for six hours rather than four increasing hours."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-039": {
+      "topicId": "quant",
+      "prompt": "A delivery van leaves a warehouse at 8:00 a.m. traveling 50 mph on a straight highway. A second van leaves the same warehouse at 9:00 a.m. along the same route at 70 mph. At what clock time does the second van first catch the first?",
+      "options": {
+        "a": "11:00 a.m.",
+        "b": "11:30 a.m.",
+        "c": "12:00 p.m.",
+        "d": "12:30 p.m."
+      },
+      "correctOptionId": "b",
+      "explanation": "By 9:00 a.m. the first van has a 50-mile head start. The second van closes that gap at 70 − 50 = 20 mph, so it needs 50/20 = 2.5 hours after 9:00 a.m., which is 11:30 a.m. Distance check: first van 50 × 3.5 = 175 miles; second van 70 × 2.5 = 175 miles.",
+      "distractorExplanations": {
+        "a": "11:00 a.m. is only 2 hours after 9:00, which would close 40 miles, not the 50-mile head start.",
+        "c": "12:00 p.m. would be 3 hours of closing at 20 mph (60 miles), overshooting the actual 50-mile gap.",
+        "d": "12:30 p.m. treats the head start as 70 miles or uses the slower van’s speed as the closing rate."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-040": {
+      "topicId": "quant",
+      "prompt": "A grocer blends 12 kilograms of almonds priced at $8 per kilogram with 8 kilograms of cashews priced at $14 per kilogram. If the mix is sold with no extra markup, what is the price per kilogram of the blend?",
+      "options": {
+        "a": "$9.20",
+        "b": "$10.00",
+        "c": "$10.40",
+        "d": "$11.00"
+      },
+      "correctOptionId": "c",
+      "explanation": "Total cost is 12 × 8 + 8 × 14 = 96 + 112 = $208. Total mass is 20 kilograms, so the blend price is 208/20 = $10.40 per kilogram. That is the mass-weighted average (12/20)(8) + (8/20)(14) = 4.80 + 5.60 = 10.40.",
+      "distractorExplanations": {
+        "a": "$9.20 is the unweighted mean of $8 and $14 minus a dollar, not the 12-to-8 weighted average.",
+        "b": "$10.00 is the simple average of $8 and $14, which would be correct only if the two masses were equal.",
+        "d": "$11.00 weights the pricier nut too heavily, as if the blend were half-and-half or more cashew than almond."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-041": {
+      "topicId": "quant",
+      "prompt": "An analyst is paid $20 per hour for the first 36 hours in a week and 1.5 times that hourly rate for each overtime hour. In a week with 8 overtime hours, what is the analyst’s total pay?",
+      "options": {
+        "a": "$720",
+        "b": "$800",
+        "c": "$880",
+        "d": "$960"
+      },
+      "correctOptionId": "d",
+      "explanation": "Regular pay is 36 × 20 = $720. Overtime is paid at $30 per hour, so 8 × 30 = $240. Combined pay is 720 + 240 = $960. The 1.5 multiplier applies only to the 8 overtime hours, not to the whole 44-hour week.",
+      "distractorExplanations": {
+        "a": "$720 is regular pay only and omits the eight overtime hours entirely.",
+        "b": "$800 treats overtime as $10 extra per hour on $720 (720 + 80) instead of paying $30 per overtime hour.",
+        "c": "$880 applies time-and-a-half to only 4 overtime hours, or adds 8 × 20 instead of 8 × 30."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-042": {
+      "topicId": "quant",
+      "prompt": "A warehouse stacks identical crates so that the number of crates n satisfies n² + n − 12 = 0. If n must be a positive integer, how many crates are in the stack?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "6",
+        "d": "12"
+      },
+      "correctOptionId": "a",
+      "explanation": "Factor n² + n − 12 = (n + 4)(n − 3) = 0, so n = −4 or n = 3. Only the positive integer n = 3 is admissible. Check: 3² + 3 − 12 = 9 + 3 − 12 = 0.",
+      "distractorExplanations": {
+        "b": "4 is the absolute value of the negative root; substituting n = 4 gives 16 + 4 − 12 = 8, not 0.",
+        "c": "6 is the product of 3 and 2, not a root; 36 + 6 − 12 ≠ 0.",
+        "d": "12 is the constant term of the quadratic, not a solution of the equation."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-043": {
+      "topicId": "quant",
+      "prompt": "Consultant A can finish an audit alone in 12 workdays, and Consultant B can finish the same audit alone in 18 workdays. If they work together at those constant rates with no overlap or idle time, how many workdays does the audit take?",
+      "options": {
+        "a": "6",
+        "b": "7.2",
+        "c": "8",
+        "d": "9"
+      },
+      "correctOptionId": "b",
+      "explanation": "A’s rate is 1/12 of the audit per day and B’s is 1/18. Combined rate is 1/12 + 1/18 = 3/36 + 2/36 = 5/36 of the audit per day, so the time is 36/5 = 7.2 workdays. The harmonic shortcut 12 × 18 / (12 + 18) = 216/30 = 7.2 confirms the same result.",
+      "distractorExplanations": {
+        "a": "6 is the arithmetic mean of 12 and 18 divided by 2.5, or half of 12; combined work is slower than A alone only if B subtracts, which is not the case.",
+        "c": "8 is a rounded compromise between 12 and 18 and is not the reciprocal of the summed rates.",
+        "d": "9 is the arithmetic mean of 12 and 18, which overstates the time because the faster worker pulls the pair below that mean."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-044": {
+      "topicId": "quant",
+      "prompt": "A lab protocol dilutes a sample by a factor of 1/2 at each step. If the recorded concentration after four reverse (concentrating) steps is modeled by (1/2)^(−4) times the diluted reading, what is the numerical value of (1/2)^(−4)?",
+      "options": {
+        "a": "4",
+        "b": "8",
+        "c": "16",
+        "d": "32"
+      },
+      "correctOptionId": "c",
+      "explanation": "A negative exponent inverts the base: (1/2)^(−4) = 2^4 = 16. Equivalently, four reverse dilutions each multiply by 2, so the scale factor is 2 × 2 × 2 × 2 = 16.",
+      "distractorExplanations": {
+        "a": "4 equals the exponent, or 2², which would be (1/2)^(−2), two reverse steps rather than four.",
+        "b": "8 = 2³, the scale for three reverse steps, not four.",
+        "d": "32 = 2⁵, one extra doubling past the four reverse steps in the stem."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-045": {
+      "topicId": "quant",
+      "prompt": "A shipping code is the positive integer 360. How many distinct positive divisors does 360 have?",
+      "options": {
+        "a": "12",
+        "b": "16",
+        "c": "18",
+        "d": "24"
+      },
+      "correctOptionId": "d",
+      "explanation": "Prime factorization is 360 = 2³ × 3² × 5¹. The divisor-count formula multiplies one plus each exponent: (3 + 1)(2 + 1)(1 + 1) = 4 × 3 × 2 = 24 distinct positive divisors.",
+      "distractorExplanations": {
+        "a": "12 counts only the exponents themselves (3 × 2 × 2) or the divisors of 60, omitting the extra factor of 2 in 360 = 6 × 60.",
+        "b": "16 = 2^4 would be the divisor count of a pure power of 2, not of 360’s mixed primes.",
+        "c": "18 uses (3+1)(2+1)(1+0.5) or adds the exponents (3+2+1) incorrectly instead of adding 1 to each."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-046": {
+      "topicId": "quant",
+      "prompt": "A contractor’s fee is $50,000. The client first raises the fee by 20% after a scope change, then cuts the new fee by 20% when part of the work is dropped. What is the fee after both adjustments?",
+      "options": {
+        "a": "$48,000",
+        "b": "$50,000",
+        "c": "$52,000",
+        "d": "$60,000"
+      },
+      "correctOptionId": "a",
+      "explanation": "After the 20% increase the fee is 50,000 × 1.20 = $60,000. A 20% cut of that new amount is 60,000 × 0.80 = $48,000. Successive +20% and −20% multiply by 1.2 × 0.8 = 0.96, so the original fee falls by 4%, not back to itself.",
+      "distractorExplanations": {
+        "b": "$50,000 assumes a 20% raise and a 20% cut cancel; they do not, because the cut applies to the already increased base.",
+        "c": "$52,000 adds a net 4% instead of subtracting the 4% compound loss.",
+        "d": "$60,000 stops after the raise and never applies the later 20% reduction."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-047": {
+      "topicId": "quant",
+      "prompt": "The pair of equations 2x + 3y = 18 and 4x + 6y = k is to have infinitely many solutions in x and y. What must k equal?",
+      "options": {
+        "a": "18",
+        "b": "36",
+        "c": "54",
+        "d": "72"
+      },
+      "correctOptionId": "b",
+      "explanation": "Infinitely many solutions require the second equation to be a scalar multiple of the first. Doubling 2x + 3y = 18 produces 4x + 6y = 36, so k must be 36. Any other k makes the lines parallel and distinct (no solution) rather than coincident.",
+      "distractorExplanations": {
+        "a": "18 copies the first constant term and ignores that the left-hand coefficients were doubled.",
+        "c": "54 triples 18, but the coefficient ratio is 2, not 3 (4/2 = 6/3 = 2).",
+        "d": "72 quadruples 18, matching a factor of 4 that is not the ratio of the x- or y-coefficients."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-048": {
+      "topicId": "quant",
+      "prompt": "Pipe A can fill an empty tank in 10 minutes. Drain B can empty a full tank in 15 minutes. If the tank starts empty and both A and B are open, how many minutes does it take to fill the tank?",
+      "options": {
+        "a": "12",
+        "b": "20",
+        "c": "30",
+        "d": "45"
+      },
+      "correctOptionId": "c",
+      "explanation": "A contributes +1/10 tank per minute and B contributes −1/15 tank per minute. Net rate is 1/10 − 1/15 = 3/30 − 2/30 = 1/30 tank per minute, so a full tank takes 30 minutes. The fill still wins because A is faster than B.",
+      "distractorExplanations": {
+        "a": "12 minutes is a blend of 10 and 15 that ignores the opposing drain; net work in 12 minutes is only 12/30 of the tank.",
+        "b": "20 minutes is twice A’s solo time; in 20 minutes the net fill is only 20/30 of the tank.",
+        "d": "45 minutes is three times B’s empty time and would overfill: net work would be 45/30 = 1.5 tanks."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-049": {
+      "topicId": "quant",
+      "prompt": "A loyalty-points sequence starts at 2 points. Each later week the balance is obtained by doubling the previous week’s points and then adding 1. What is the balance after four weeks, that is, the fourth term?",
+      "options": {
+        "a": "11",
+        "b": "15",
+        "c": "19",
+        "d": "23"
+      },
+      "correctOptionId": "d",
+      "explanation": "Terms: a1 = 2, a2 = 2 × 2 + 1 = 5, a3 = 2 × 5 + 1 = 11, a4 = 2 × 11 + 1 = 23. Closed form a_n = 3 × 2^(n−1) − 1 also gives a4 = 3 × 8 − 1 = 23.",
+      "distractorExplanations": {
+        "a": "11 is the third term; the stem asks for the fourth week, one more doubling-plus-one beyond 11.",
+        "b": "15 comes from 2 × 8 − 1 or from adding 1 before doubling on the last step (2 × (11 + 1) − 8 type arithmetic).",
+        "c": "19 adds 8 to 11 instead of doubling 11 and adding 1."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-050": {
+      "topicId": "quant",
+      "prompt": "Two consecutive even positive integers have product 224. What is the larger of the two integers?",
+      "options": {
+        "a": "16",
+        "b": "18",
+        "c": "20",
+        "d": "28"
+      },
+      "correctOptionId": "a",
+      "explanation": "Let the integers be n and n + 2 with n even. Then n(n + 2) = 224, so n² + 2n − 224 = 0. Trial of even factors of 224 shows 14 × 16 = 224. The larger integer is 16. Check: 16 − 14 = 2, both even.",
+      "distractorExplanations": {
+        "b": "18 with 16 would give product 288, not 224; 18 is even but not paired with 224’s factor 14.",
+        "c": "20 with 18 gives 360, far above 224; 20 is a factor of 224 only with 11.2, which is not an integer.",
+        "d": "28 with 8 gives 224, but 28 and 8 are not consecutive even integers (they differ by 20)."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-051": {
+      "topicId": "quant",
+      "prompt": "Two production lots contain 84 units and 126 units. The lots will be split into identical smaller cartons with no units left over. What is the greatest carton size, in units, that works for both lots?",
+      "options": {
+        "a": "14",
+        "b": "42",
+        "c": "84",
+        "d": "126"
+      },
+      "correctOptionId": "b",
+      "explanation": "The greatest common carton size is gcd(84, 126). Factor 84 = 2² × 3 × 7 and 126 = 2 × 3² × 7, so gcd = 2 × 3 × 7 = 42. Euclidean check: 126 = 1 × 84 + 42, and 84 = 2 × 42 + 0, remainder 0 at 42.",
+      "distractorExplanations": {
+        "a": "14 divides both lots but is not greatest; 42 is a larger common divisor (84/42 = 2 and 126/42 = 3).",
+        "c": "84 divides 84 but not 126 (126/84 is not an integer), so leftover units would remain in the second lot.",
+        "d": "126 is the size of the larger lot; it does not divide 84."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-052": {
+      "topicId": "quant",
+      "prompt": "A cost split is written as 2x/5 + x/3 = 11, where x is the invoice amount in thousands of dollars. What is x?",
+      "options": {
+        "a": "9",
+        "b": "12",
+        "c": "15",
+        "d": "18"
+      },
+      "correctOptionId": "c",
+      "explanation": "Multiply through by 15, the least common multiple of 5 and 3: 15 × (2x/5) + 15 × (x/3) = 165, which simplifies to 6x + 5x = 165, so 11x = 165 and x = 15. Check: 30/5 + 15/3 = 6 + 5 = 11.",
+      "distractorExplanations": {
+        "a": "x = 9 gives 18/5 + 3 = 3.6 + 3 = 6.6, well short of 11.",
+        "b": "x = 12 gives 24/5 + 4 = 4.8 + 4 = 8.8, not 11.",
+        "d": "x = 18 gives 36/5 + 6 = 7.2 + 6 = 13.2, overshooting 11."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-053": {
+      "topicId": "quant",
+      "prompt": "A cafe surveyed 200 customers. 110 bought coffee, 90 bought pastry, and 40 bought both coffee and pastry. How many customers bought neither coffee nor pastry?",
+      "options": {
+        "a": "10",
+        "b": "20",
+        "c": "30",
+        "d": "40"
+      },
+      "correctOptionId": "d",
+      "explanation": "Inclusion-exclusion: coffee or pastry = 110 + 90 − 40 = 160 customers. Neither = 200 − 160 = 40. The 40 who bought both are inside both counts, so they must be subtracted once to avoid double-counting.",
+      "distractorExplanations": {
+        "a": "10 subtracts the overlap twice more (200 − 110 − 90) and then adjusts incorrectly, undercounting the outside group.",
+        "b": "20 is 200 − 110 − 90 + 20, a half-overlap error, not the full 40 overlap.",
+        "c": "30 is 70 − 40 using coffee-only 70 and forgetting that pastry-only must also be removed from 200."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-054": {
+      "topicId": "quant",
+      "prompt": "A hashing check stores 2^10 as an integer and then reports the remainder when that integer is divided by 11. What remainder is reported?",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "10"
+      },
+      "correctOptionId": "a",
+      "explanation": "2^10 = 1024. Divide by 11: 11 × 93 = 1023, so 1024 = 11 × 93 + 1 and the remainder is 1. Modular shortcut: 2^5 = 32 ≡ −1 (mod 11), hence 2^10 ≡ (−1)² ≡ 1 (mod 11).",
+      "distractorExplanations": {
+        "b": "2 is 2^1, or the remainder of 2 itself, not of 2^10.",
+        "c": "3 would be 2^10 − 1021, which is not a multiple-of-11 offset from 1024.",
+        "d": "10 ≡ −1 (mod 11) is 2^5’s remainder, one exponent-doubling short of 2^10."
+      },
+      "difficulty": "hard"
+    },
+    "gmat-focus-readiness-check-quant-055": {
+      "topicId": "quant",
+      "prompt": "A training plan adds 5 minutes of drill each session, starting at 8 minutes in session 1. How many minutes of drill are scheduled in session 12?",
+      "options": {
+        "a": "58",
+        "b": "63",
+        "c": "68",
+        "d": "73"
+      },
+      "correctOptionId": "b",
+      "explanation": "This is an arithmetic sequence with first term 8 and common difference 5. The 12th term is a_12 = 8 + (12 − 1) × 5 = 8 + 55 = 63 minutes. Counting 12 jumps of 5 instead of 11 is the usual off-by-one error.",
+      "distractorExplanations": {
+        "a": "58 uses 10 increments (8 + 50) as if session 12 were the 11th term.",
+        "c": "68 uses 12 increments (8 + 60), one extra 5-minute step past session 12.",
+        "d": "73 uses 13 increments, matching session 14 rather than session 12."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-056": {
+      "topicId": "quant",
+      "prompt": "A cash account starts at $4,000 and earns 5% interest compounded once per year. What is the balance at the end of 2 years if no money is added or withdrawn?",
+      "options": {
+        "a": "$4,200",
+        "b": "$4,400",
+        "c": "$4,410",
+        "d": "$4,500"
+      },
+      "correctOptionId": "c",
+      "explanation": "Compound growth is 4,000 × (1.05)² = 4,000 × 1.1025 = $4,410. Year 1 ends at $4,200; year 2 interest is 5% of 4,200 = $210, not another $200 on the original principal.",
+      "distractorExplanations": {
+        "a": "$4,200 is the balance after only one year, or simple interest for a single period.",
+        "b": "$4,400 is two years of simple interest (4,000 × 0.05 × 2 added once), missing compounding on the first year’s interest.",
+        "d": "$4,500 treats the rate as 6.25% per year or adds $500 as a round 12.5% jump, not 1.05²."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-057": {
+      "topicId": "quant",
+      "prompt": "A drawer holds 5 red tags and 3 blue tags. Two tags are drawn at random with replacement, so the draws are independent. What is the probability that at least one of the two tags is red?",
+      "options": {
+        "a": "25/64",
+        "b": "40/64",
+        "c": "49/64",
+        "d": "55/64"
+      },
+      "correctOptionId": "d",
+      "explanation": "P(red) = 5/8 and P(blue) = 3/8 on each draw. P(no red) = P(both blue) = (3/8)² = 9/64. Therefore P(at least one red) = 1 − 9/64 = 55/64. Replacement keeps the second-draw denominator at 8.",
+      "distractorExplanations": {
+        "a": "25/64 is (5/8)², the probability both tags are red, which is a subset of “at least one red.”",
+        "b": "40/64 = 5/8 is the probability a single draw is red, not the two-draw union.",
+        "c": "49/64 = 1 − (3/8)(5/8) mis-subtracts one mixed term instead of both-blue only."
+      },
+      "difficulty": "hard"
+    },
+    "gmat-focus-readiness-check-quant-058": {
+      "topicId": "quant",
+      "prompt": "Three identical printers produce 900 pages in 6 hours, working together at a constant combined rate. At that same per-printer rate, how many hours will two of the printers take to produce 600 pages?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "9",
+        "d": "12"
+      },
+      "correctOptionId": "a",
+      "explanation": "Combined rate of three printers is 900/6 = 150 pages per hour, so one printer does 50 pages per hour. Two printers do 100 pages per hour, and 600/100 = 6 hours. The job size and crew both drop by one-third, so time is unchanged.",
+      "distractorExplanations": {
+        "b": "8 hours would be correct if two printers ran at the three-printer combined rate of 150 pages per hour on a 1,200-page job, which is not this prompt.",
+        "c": "9 hours scales time by 3/2 for the smaller crew but forgets that the page count also fell from 900 to 600.",
+        "d": "12 hours doubles the original 6 hours as if two printers were half as fast as three on the same 900-page job."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-059": {
+      "topicId": "quant",
+      "prompt": "A course grade is 40% midterm and 60% final. A student scored 70 on the midterm and wants an overall grade of 82. What score is needed on the final?",
+      "options": {
+        "a": "86",
+        "b": "90",
+        "c": "94",
+        "d": "98"
+      },
+      "correctOptionId": "b",
+      "explanation": "Solve 0.40(70) + 0.60x = 82. That is 28 + 0.60x = 82, so 0.60x = 54 and x = 90. The final is weighted more than the midterm, so it must sit above 82 to offset the 70.",
+      "distractorExplanations": {
+        "a": "86 is the unweighted midpoint of 70 and 102, or 82 + 4, without using the 60% weight.",
+        "c": "94 solves 0.5(70) + 0.5x = 82, treating the weights as equal instead of 40/60.",
+        "d": "98 would be required if the midterm were 30% and the final 70%: 0.3(70) + 0.7x = 82 implies x ≈ 87.7, not 98; 98 overcorrects the 70."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-060": {
+      "topicId": "quant",
+      "prompt": "Three consecutive multiples of 4 have sum 84. What is the largest of the three multiples?",
+      "options": {
+        "a": "24",
+        "b": "28",
+        "c": "32",
+        "d": "36"
+      },
+      "correctOptionId": "c",
+      "explanation": "Let the multiples be n, n + 4, and n + 8. Then 3n + 12 = 84, so 3n = 72 and n = 24. The three numbers are 24, 28, and 32; the largest is 32. Check: 24 + 28 + 32 = 84.",
+      "distractorExplanations": {
+        "a": "24 is the smallest of the three consecutive multiples, not the largest.",
+        "b": "28 is the middle term; the stem asks for the largest.",
+        "d": "36 would be the next multiple after 32 and would make the sum 24 + 28 + 36 = 88, or 28 + 32 + 36 = 96, not 84."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-061": {
+      "topicId": "quant",
+      "prompt": "A linear pricing function f satisfies f(1) = 4 and f(4) = 13. If the same line is used, what is f(7)?",
+      "options": {
+        "a": "16",
+        "b": "19",
+        "c": "21",
+        "d": "22"
+      },
+      "correctOptionId": "d",
+      "explanation": "Slope is (13 − 4)/(4 − 1) = 9/3 = 3. Then f(x) = 3x + 1, because f(1) = 3 + 1 = 4. Hence f(7) = 21 + 1 = 22. From x = 4 to x = 7 is another +3 in the input, so the output rises another 9 from 13 to 22.",
+      "distractorExplanations": {
+        "a": "16 adds 3 to 13, using the slope as a raw addend instead of slope times the +3 change in x.",
+        "b": "19 adds 6 to 13, as if the run from 4 to 7 were 2 rather than 3.",
+        "c": "21 is 3 × 7 with the intercept dropped; the line is 3x + 1, not 3x."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-062": {
+      "topicId": "quant",
+      "prompt": "If n is a positive multiple of 4, which of the following must be a multiple of 8?",
+      "options": {
+        "a": "2n",
+        "b": "n + 4",
+        "c": "n / 2",
+        "d": "3n"
+      },
+      "correctOptionId": "a",
+      "explanation": "Write n = 4k for a positive integer k. Then 2n = 8k, which is always a multiple of 8. The other three expressions each fail for at least one multiple of 4, so only 2n is forced.",
+      "distractorExplanations": {
+        "b": "n + 4 is a multiple of 8 only when n ≡ 4 (mod 8). For n = 20, which is a multiple of 4, n + 4 = 24 is not a multiple of 8.",
+        "c": "n/2 is a multiple of 2, but for n = 4 it equals 2, which is not a multiple of 8.",
+        "d": "3n is a multiple of 8 only when n already supplies a factor 8/gcd(3,8)=8. For n = 4, 3n = 12 is not a multiple of 8."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-063": {
+      "topicId": "quant",
+      "prompt": "A courier drives 120 miles at 40 mph and then another 120 miles at 60 mph. What is the courier’s average speed, in mph, for the 240-mile trip?",
+      "options": {
+        "a": "45",
+        "b": "48",
+        "c": "50",
+        "d": "52"
+      },
+      "correctOptionId": "b",
+      "explanation": "Time on the first leg is 120/40 = 3 hours; time on the second is 120/60 = 2 hours. Total time is 5 hours for 240 miles, so average speed is 240/5 = 48 mph. Equal distances make the average the harmonic mean of 40 and 60: 2/(1/40 + 1/60) = 48, not the arithmetic mean 50.",
+      "distractorExplanations": {
+        "a": "45 underweights the faster leg, as if more than 3 of the 5 hours were spent at 40 mph.",
+        "c": "50 is the arithmetic mean (40 + 60)/2, which would be the average only if the two times were equal, not the two distances.",
+        "d": "52 has no corresponding time split; it inflates 48 by treating part of the trip as if both speeds applied at once."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-064": {
+      "topicId": "quant",
+      "prompt": "For a positive integer n, the remainder is 4 when n is divided by 9. What is the remainder when 3n + 2 is divided by 9?",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "5",
+        "d": "8"
+      },
+      "correctOptionId": "c",
+      "explanation": "Write n = 9k + 4. Then 3n + 2 = 27k + 12 + 2 = 27k + 14. Since 14 = 9 + 5, the remainder is 5. Shortcut: replace n by 4 to get 3(4) + 2 = 14, and 14 leaves remainder 5 on division by 9.",
+      "distractorExplanations": {
+        "a": "2 is the constant added in 3n + 2, not the remainder after dividing the whole expression by 9.",
+        "b": "4 is n’s remainder; multiplying by 3 and adding 2 changes that remainder.",
+        "d": "8 would be the remainder of 3n alone (3 × 4 = 12 ≡ 3, or if 14 were reduced incorrectly as 18 − 10)."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-065": {
+      "topicId": "quant",
+      "prompt": "An investment doubles in value every 8 years at a constant compound rate. If no cash is added or withdrawn, by what factor has the investment grown after 32 years?",
+      "options": {
+        "a": "4",
+        "b": "8",
+        "c": "12",
+        "d": "16"
+      },
+      "correctOptionId": "d",
+      "explanation": "32 years contains 32/8 = 4 doubling periods, so the growth factor is 2^4 = 16. Exponential doubling is multiplicative: 2 × 2 × 2 × 2, not 2 × 4 or 2 + 4.",
+      "distractorExplanations": {
+        "a": "4 = 2^2 would be the factor after only 16 years (two doublings), not 32.",
+        "b": "8 = 2^3 is three doublings, which occur at 24 years, one period short of 32.",
+        "c": "12 treats growth as 8 + 4 or 32/8 × 3, mixing addition with doubling counts."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-066": {
+      "topicId": "quant",
+      "prompt": "A positive number x plus its reciprocal equals 5. What is the value of x² + 1/x²?",
+      "options": {
+        "a": "23",
+        "b": "25",
+        "c": "27",
+        "d": "29"
+      },
+      "correctOptionId": "a",
+      "explanation": "Square the given identity: (x + 1/x)² = 25 = x² + 2 + 1/x². Subtract 2 from both sides to isolate x² + 1/x² = 23. You do not need to solve for x itself.",
+      "distractorExplanations": {
+        "b": "25 is (x + 1/x)² and still includes the cross term 2; the stem asks for the sum of squares, not the square of the sum.",
+        "c": "27 adds 2 instead of subtracting 2 from 25, which would match x² − 2 + 1/x² inverted.",
+        "d": "29 adds 4, as if (x + 1/x)² + 4, which would be x² + 6 + 1/x², not the requested expression."
+      },
+      "difficulty": "hard"
+    },
+    "gmat-focus-readiness-check-quant-067": {
+      "topicId": "quant",
+      "prompt": "Inventory SKUs are integers n that leave remainder 2 when divided by 6. After the recode 4n + 1, what remainder does the new code leave on division by 6?",
+      "options": {
+        "a": "1",
+        "b": "3",
+        "c": "4",
+        "d": "5"
+      },
+      "correctOptionId": "b",
+      "explanation": "Write n = 6k + 2. Then 4n + 1 = 24k + 8 + 1 = 24k + 9. Since 9 = 6 + 3, the remainder is 3. Shortcut: replace n by 2 to get 8 + 1 = 9, and 9 leaves remainder 3 on division by 6.",
+      "distractorExplanations": {
+        "a": "1 would be the remainder of 4n − 1 or of 7, not of 4(2) + 1 after reducing modulo 6.",
+        "c": "4 is 4 × 1, or leftover from 4n without adding 1 and reducing 8 to 2.",
+        "d": "5 is n’s remainder 2 plus 3, or 4n + 1 before dividing 9 by 6."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-065-dup2": {
+      "topicId": "quant",
+      "prompt": "A checksum keeps only the units digit of 3^27. Which units digit does it keep?",
+      "options": {
+        "a": "1",
+        "b": "3",
+        "c": "7",
+        "d": "9"
+      },
+      "correctOptionId": "c",
+      "explanation": "Units digits of powers of 3 cycle every four exponents: 3, 9, 7, 1. Because 27 = 4 × 6 + 3, the 27th power matches the third position in the cycle, which is 7. Check a small analog: 3^3 = 27, units digit 7.",
+      "distractorExplanations": {
+        "a": "1 is the units digit when the exponent is a multiple of 4 (cycle position 4), and 27 is not a multiple of 4.",
+        "b": "3 is the units digit for exponents congruent to 1 mod 4, such as 3^1 or 3^25, not 3^27.",
+        "d": "9 is the units digit for exponents congruent to 2 mod 4, such as 3^2 = 9 or 3^26."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-066-dup2": {
+      "topicId": "quant",
+      "prompt": "Three times a positive number plus 7 equals 43. If that number is then increased by 50%, what is the result?",
+      "options": {
+        "a": "12",
+        "b": "14",
+        "c": "16",
+        "d": "18"
+      },
+      "correctOptionId": "d",
+      "explanation": "Solve 3n + 7 = 43, so 3n = 36 and n = 12. Increasing 12 by 50% means 12 × 1.50 = 18. The 50% applies to n, not to 43 or to 3n.",
+      "distractorExplanations": {
+        "a": "12 is the original number n; the stem then requires a 50% increase of that value.",
+        "b": "14 adds 2 to 12, a one-sixth increase, not 50%.",
+        "c": "16 is a one-third increase of 12, or 12 + 4, not 50%."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-067-dup2": {
+      "topicId": "quant",
+      "prompt": "Fifteen technicians can complete a data-cleaning job in 12 days, working at the same constant rate. If the same job is instead given to 20 technicians at that same per-person rate, how many days will the job take?",
+      "options": {
+        "a": "6",
+        "b": "9",
+        "c": "10",
+        "d": "15"
+      },
+      "correctOptionId": "b",
+      "explanation": "Total work is 15 × 12 = 180 technician-days. With 20 technicians the duration is 180/20 = 9 days. Worker count and days are inversely proportional when the job size is fixed: 15/20 × 12 = 9.",
+      "distractorExplanations": {
+        "a": "6 days would require 30 technicians for 180 technician-days, twice the original crew rather than 20.",
+        "c": "10 days is a round split of 12 that does not equal 180/20.",
+        "d": "15 days treats the relationship as direct (more workers, more days) instead of inverse."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

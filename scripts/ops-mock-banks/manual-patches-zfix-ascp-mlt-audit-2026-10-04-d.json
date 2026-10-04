@@ -1,0 +1,259 @@
+{
+  "ascp-mlt-readiness-check": {
+    "ascp-mlt-readiness-check-micro-046": {
+      "prompt": "A COPD patient's labeled sputum Gram stain shows abundant squamous epithelial cells, rare neutrophils, and mixed oral flora. What should the MLT do next?",
+      "options": {
+        "a": "Reject as saliva; request a new deep-cough or induced specimen",
+        "b": "Identify mixed flora to species and issue full susceptibilities",
+        "c": "Culture quantitatively because any labeled sputum must be worked",
+        "d": "Call Gram-negative pneumonia from the mixed rods on the slide"
+      },
+      "correctOptionId": "a",
+      "explanation": "Squamous cells and mixed oral flora mean the specimen is saliva, not lower-airway sputum. Quality screens (Bartlett-style) reject such slides so the lab does not work up contaminants as pneumonia pathogens. A new deep-cough or induced specimen is requested.",
+      "distractorExplanations": {
+        "b": "Speciating mixed oral flora from a saliva-quality smear over-works contamination and misleads therapy.",
+        "c": "A sputum label does not override epithelial-cell rejection criteria; poor specimens are not cultured as if they were lower-airway.",
+        "d": "Mixed rods on a saliva smear are oral flora, not a license to call Gram-negative pneumonia."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-micro-047": {
+      "prompt": "An adult fever workup arrives with two aerobic bottles, each filled with 2 mL drawn an hour apart from one arm. What is the best next action?",
+      "options": {
+        "a": "Incubate as is; the 1-hour interval matters more than fill volume",
+        "b": "Pool both bottles into one container to reach an adequate fill",
+        "c": "Recollect 8–10 mL per bottle from two separate venipuncture sites",
+        "d": "Discard only bottle two because same-arm draws are always invalid"
+      },
+      "correctOptionId": "c",
+      "explanation": "Adult blood-culture yield depends mainly on volume (typically 8–10 mL per bottle) and two independent sites. Underfilled 2 mL adult bottles miss bacteremia. Staggering draws an hour apart from one arm does not replace adequate volume or a second site.",
+      "distractorExplanations": {
+        "a": "Older 1-hour spacing does not compensate for adult underfill; volume and two sites drive recovery.",
+        "b": "Pooling bottles contaminates the set and still fails two-site collection; each bottle needs its own adequate fill.",
+        "d": "Same-arm timing is suboptimal, but the core defect is 2 mL fills; both bottles need recollection, not discarding only the second."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-micro-048": {
+      "prompt": "A wound isolate is catalase-positive GPC in clusters and coagulase-positive. The cefoxitin disk is resistant and the oxacillin MIC is 8 µg/mL. How is this reported?",
+      "options": {
+        "a": "MSSA, because an oxacillin MIC of 8 remains in the susceptible range",
+        "b": "Borderline-resistant staph; report oxacillin susceptible with a note",
+        "c": "Coagulase-negative staph; cefoxitin screens are not used for S. aureus",
+        "d": "MRSA; oxacillin must not be reported as susceptible"
+      },
+      "correctOptionId": "d",
+      "explanation": "Coagulase-positive staphylococci with a resistant cefoxitin screen and an oxacillin MIC ≥4 µg/mL are MRSA (mecA-mediated). Oxacillin, nafcillin, and other beta-lactams except ceftaroline are reported resistant. Cefoxitin is the preferred phenotypic MRSA screen for S. aureus.",
+      "distractorExplanations": {
+        "a": "Oxacillin MIC 8 µg/mL is resistant for S. aureus; susceptible breakpoints are well below this value.",
+        "b": "There is no 'report susceptible with a comment' pathway for cefoxitin-resistant, high-MIC S. aureus; it is MRSA.",
+        "c": "Cefoxitin is the standard phenotypic MRSA screen for S. aureus; coagulase-positive isolates are not CoNS."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-micro-049": {
+      "prompt": "Unformed stool is GDH antigen positive, toxin EIA negative, and tcdB PCR positive. How should the bench interpret this pattern?",
+      "options": {
+        "a": "PCR detects toxin gene, not free toxin; correlate with symptoms",
+        "b": "Negative toxin EIA excludes CDI even when the PCR is positive",
+        "c": "GDH positivity alone proves toxin and mandates drug therapy",
+        "d": "Repeat on formed stool tomorrow as a mandatory test of cure"
+      },
+      "correctOptionId": "a",
+      "explanation": "GDH shows C. difficile organism present; toxin EIA looks for free toxin; NAAT detects toxin genes (tcdA/tcdB) that can persist without toxin-producing disease. A PCR-positive, toxin-EIA-negative result is colonization versus CDI and must be correlated with unformed stool and clinical findings—not called 'toxin-positive disease' from PCR alone.",
+      "distractorExplanations": {
+        "b": "Toxin EIA can miss toxin; a negative EIA does not cancel a positive NAAT when colitis is present.",
+        "c": "GDH detects organism antigen, not toxin; many colonized patients are GDH-positive without CDI.",
+        "d": "Test-of-cure and formed-stool testing are rejected; toxin/DNA can persist after symptoms resolve."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-micro-050": {
+      "prompt": "An induced-sputum AFB smear is negative. The clinician asks to cancel mycobacterial culture because 'the stain already ruled TB out.' What should the MLT do?",
+      "options": {
+        "a": "Cancel culture; a negative AFB smear excludes tuberculosis",
+        "b": "Keep culture; smears miss many mycobacteria and need weeks",
+        "c": "Convert leftover sputum to a same-day routine bacterial culture",
+        "d": "Finalize no AFB without incubating mycobacterial media at all"
+      },
+      "correctOptionId": "b",
+      "explanation": "Acid-fast smears detect only relatively high organism loads. Many culture-proven mycobacterial infections are smear-negative. Mycobacterial cultures incubate for weeks (often up to 6–8) because M. tuberculosis grows slowly. A negative smear is preliminary, not a reason to cancel culture.",
+      "distractorExplanations": {
+        "a": "Smear-negative tuberculosis is common; culture remains the recovery method after a negative stain.",
+        "c": "Routine bacterial plates do not replace mycobacterial media or the long incubation mycobacteria require.",
+        "d": "Finalizing from smear alone skips the higher-yield culture that labs hold for weeks."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-micro-051": {
+      "prompt": "A 6-year-old has nocturnal perianal itching. The order is a stool ova-and-parasite exam. Which collection actually recovers the likely pathogen?",
+      "options": {
+        "a": "Three concentrated stool O&P exams because eggs pack densely in feces",
+        "b": "A rectal swab in bacterial Amies gel for overnight enteric culture",
+        "c": "Morning perianal tape or paddle; pinworm eggs are rarely in stool",
+        "d": "A single random formalin stool collected at any hour of the day"
+      },
+      "correctOptionId": "c",
+      "explanation": "Enterobius vermicularis (pinworm) females lay eggs on perianal skin at night. Eggs are seldom passed in stool, so O&P on feces has poor yield. The cellulose-tape or paddle collected from perianal skin in the morning is the correct specimen.",
+      "distractorExplanations": {
+        "a": "Stool concentration finds many intestinal helminths, but pinworm eggs are deposited on skin, not packed in feces.",
+        "b": "Amies bacterial culture recovers enteric bacteria, not pinworm eggs.",
+        "d": "Random formalin stool is an O&P specimen; it still misses perianal pinworm eggs."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-micro-052": {
+      "prompt": "A candidemia isolate incubated in serum at 37°C for 3 hours shows true germ tubes. Which identification is most likely?",
+      "options": {
+        "a": "Cryptococcus neoformans, because serum induces a visible capsule",
+        "b": "Candida glabrata, the most frequent yeast recovered in candidemia",
+        "c": "Saccharomyces cerevisiae, since all budding yeasts make germ tubes",
+        "d": "Candida albicans (or C. dubliniensis) pending further tests"
+      },
+      "correctOptionId": "d",
+      "explanation": "True germ tubes (no constriction at the mother-cell neck) after 2–3 hours in serum at 37°C indicate C. albicans, with C. dubliniensis as the uncommon look-alike. Other Candida species and Cryptococcus do not form germ tubes in this test. Further tests separate albicans from dubliniensis when needed.",
+      "distractorExplanations": {
+        "a": "Cryptococcus is identified by capsule, urease, and antigen, not by germ-tube formation in serum.",
+        "b": "C. glabrata is a common candidemia yeast but is germ-tube negative and remains small yeasts only.",
+        "c": "Most budding yeasts do not produce germ tubes; the test is used because it is relatively specific."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-micro-053": {
+      "prompt": "A CSF Streptococcus pneumoniae isolate has an oxacillin-screen zone of 19 mm. What is the correct next step for penicillin reporting?",
+      "options": {
+        "a": "Perform a penicillin MIC; the oxacillin disk is only a screen",
+        "b": "Report penicillin-resistant; any zone under 20 mm is confirmatory",
+        "c": "Report penicillin-susceptible using the S. aureus oxacillin chart",
+        "d": "Place a penicillin disk and report that zone diameter as the MIC"
+      },
+      "correctOptionId": "a",
+      "explanation": "For pneumococci, a 1-µg oxacillin disk is a screen: zones ≤19 mm (or per current CLSI) require a penicillin MIC before reporting, especially from CSF where meningitis breakpoints apply. Disk diffusion penicillin zones are not a substitute for an MIC on S. pneumoniae.",
+      "distractorExplanations": {
+        "b": "A small oxacillin zone is not itself a penicillin MIC result; confirmation by MIC is required before calling resistant.",
+        "c": "S. aureus cefoxitin/oxacillin charts do not apply to S. pneumoniae penicillin interpretation.",
+        "d": "Zone millimeters are not MIC values; pneumococcal penicillin decisions use broth or gradient MIC."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-micro-054": {
+      "prompt": "A 0700 clean-catch urine sat unrefrigerated on the ward until 1500 and then grew 10^5 CFU/mL of mixed organisms. How should the MLT handle the culture?",
+      "options": {
+        "a": "Identify each colony morphotype and issue full AST on every isolate",
+        "b": "Report the predominant colony as the sole urinary tract pathogen",
+        "c": "Comment delayed warm transport; mixed growth may be overgrowth",
+        "d": "Label the plate no growth so mixed organisms are omitted from the report"
+      },
+      "correctOptionId": "c",
+      "explanation": "Urine left at room temperature for hours allows contaminants to multiply to 'significant' counts. Mixed flora after delayed unrefrigerated transport is often artifactual overgrowth, not true polymicrobial UTI. Labs add a quality comment and avoid full workup of every colony as if the specimen were fresh.",
+      "distractorExplanations": {
+        "a": "Full ID/AST on mixed delayed-transport growth reports contaminants as pathogens and wastes panels.",
+        "b": "Picking one colony from mixed overgrowth invents a single pathogen the delayed specimen does not support.",
+        "d": "Growth occurred; 'no growth' is false. Mixed flora plus a delay comment is the honest report."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-micro-055": {
+      "prompt": "Night-shift CSF from a febrile infant shows intracellular Gram-negative diplococci on stain; plates are not yet growing. What is required?",
+      "options": {
+        "a": "Wait for complete identification and susceptibilities before notifying",
+        "b": "Hold the stain overnight and include it on the morning call list",
+        "c": "Require a second lumbar puncture before any verbal notification",
+        "d": "Critical-call the Gram-stain morphology now with caregiver read-back"
+      },
+      "correctOptionId": "d",
+      "explanation": "Organisms on a CSF Gram stain are a critical result. Morphology (here, intracellular GNDC suggesting Neisseria meningitidis) is called immediately to a licensed caregiver with read-back. Culture identification later confirms but must not delay the emergency notification.",
+      "distractorExplanations": {
+        "a": "Waiting for ID and AST delays meningitis treatment by a day or more; the stain itself is the critical value.",
+        "b": "Batching until morning is not acceptable for CSF organisms; the call is immediate.",
+        "c": "A second LP is a clinical decision and must not delay reporting organisms already seen."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-micro-056": {
+      "prompt": "OR sends a dry swab labeled 'anaerobic culture, keep cold' that sat in the refrigerator for 6 hours. What should the MLT do?",
+      "options": {
+        "a": "Process as usual; refrigeration equally preserves anaerobes and aerobes",
+        "b": "Reject; use anaerobic transport at room temp, not a refrigerated dry swab",
+        "c": "Warm 30 minutes, then plate as a routine aerobic wound culture",
+        "d": "Freeze overnight to improve recovery of Bacteroides species"
+      },
+      "correctOptionId": "b",
+      "explanation": "Anaerobes die with oxygen and drying. Preferred specimens are tissue or aspirate in anaerobic transport, held at room temperature. Refrigerating a dry swab lets oxygen in and is a common myth; such specimens are rejected rather than plated as valid anaerobic cultures.",
+      "distractorExplanations": {
+        "a": "Cold storage does not protect oxygen-sensitive anaerobes on a dry swab; it can worsen recovery.",
+        "c": "Warming and converting to an aerobic wound workup does not recover the requested anaerobes.",
+        "d": "Freezing a dry swab further damages anaerobes; it is not an enrichment step for Bacteroides."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-micro-057": {
+      "prompt": "The ED sends a nasopharyngeal swab in Amies bacterial gel with an influenza PCR order. What should the MLT do?",
+      "options": {
+        "a": "Recollect in VTM/UTM; bacterial gel is not approved viral PCR media",
+        "b": "Culture the gel on blood agar and report influenza from bacterial growth",
+        "c": "Rinse the gel swab in saline and treat the rinse as viral transport",
+        "d": "Freeze the gel swab at −70°C and run PCR without changing media"
+      },
+      "correctOptionId": "a",
+      "explanation": "Viral PCR needs flocked synthetic swabs in viral or universal transport medium (or a manufacturer-approved molecular medium). Bacterial gels (Amies/Stuart) inhibit or dilute nucleic acid tests and are meant for bacterial culture. The specimen is rejected or recollected in the correct viral transport.",
+      "distractorExplanations": {
+        "b": "Influenza is not diagnosed by bacterial colony growth on blood agar.",
+        "c": "Saline rinse of gel does not convert a bacterial transport device into validated VTM.",
+        "d": "Freezing gel does not remove PCR inhibitors or meet the collection requirements for influenza NAAT."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-micro-058": {
+      "prompt": "A prenatal RPR is reactive at 1:2. The treponemal immunoassay (or TP-PA/FTA-ABS) is nonreactive. What is the correct interpretation?",
+      "options": {
+        "a": "Diagnose syphilis because any reactive RPR in pregnancy is confirmatory",
+        "b": "Report late latent syphilis and treat from the nontreponemal titer only",
+        "c": "False-positive RPR is likely; do not diagnose syphilis on RPR alone",
+        "d": "Omit treponemal confirmation whenever a prenatal RPR is already reactive"
+      },
+      "correctOptionId": "c",
+      "explanation": "In the traditional algorithm, a reactive nontreponemal test (RPR/VDRL) must be confirmed with a treponemal test (FTA-ABS, TP-PA, or EIA). A reactive RPR with a nonreactive treponemal test is a biological false-positive (pregnancy, autoimmune disease, other infections), not syphilis. RPR titer alone never establishes the diagnosis.",
+      "distractorExplanations": {
+        "a": "Pregnancy increases biologic false-positive RPRs; reactivity is not confirmatory without a treponemal test.",
+        "b": "Latent syphilis requires a reactive treponemal test; titer without confirmation is not a staging result.",
+        "d": "Treponemal confirmation is required after a reactive RPR; skipping it is the algorithm error."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-micro-059": {
+      "prompt": "An employee-health HIV Ag/Ab immunoassay is repeatedly reactive. What is the laboratory's next step in the current algorithm?",
+      "options": {
+        "a": "Finalize HIV positive from the screening Ag/Ab immunoassay without reflex",
+        "b": "Repeat the identical screen on a fingerstick to finalize the diagnosis",
+        "c": "Perform Western blot as the sole CDC-recommended confirmatory method",
+        "d": "Reflex Ab differentiation (and NAT if discordant); do not finalize from screen"
+      },
+      "correctOptionId": "d",
+      "explanation": "HIV Ag/Ab screens are not diagnostic by themselves. CDC's algorithm reflexes a repeatedly reactive screen to an HIV-1/HIV-2 antibody differentiation immunoassay, then HIV-1 nucleic acid testing if results are discordant. The same logic applies to hepatitis screening versus confirmatory markers: a screen flags, confirmation (or supplemental testing) establishes infection status.",
+      "distractorExplanations": {
+        "a": "Screening immunoassays have false positives; they are not a stand-alone HIV diagnosis.",
+        "b": "Repeating the same screen on capillary blood does not replace differentiation and NAT steps.",
+        "c": "HIV-1 Western blot is no longer the recommended confirmatory test in the current CDC algorithm."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-micro-060": {
+      "prompt": "While recapping a used blood-culture needle, an MLT punctures a finger. What is the FIRST action?",
+      "options": {
+        "a": "Squeeze the site and soak it in bleach for 10 minutes before notifying",
+        "b": "Wash with soap and water, then report at once for exposure evaluation",
+        "c": "Finish remaining draws, then file an incident report at end of shift",
+        "d": "Self-start HIV PEP from bench stock without occupational-health review"
+      },
+      "correctOptionId": "b",
+      "explanation": "After a percutaneous bloodborne-pathogen exposure, wash the site immediately with soap and water (mucous membranes are flushed with water or saline). Then report at once to the supervisor and occupational health so source testing and timely PEP decisions can start. Bleach soaks, delay until end of shift, and unsupervised self-medication are not the first steps.",
+      "distractorExplanations": {
+        "a": "Squeezing and soaking in bleach injures tissue and is not CDC/OSHA first aid; soap-and-water wash is.",
+        "c": "Finishing the shift delays source evaluation and the PEP window; reporting is immediate after first aid.",
+        "d": "PEP is an occupational-health decision after risk assessment, not a bench-stock self-start before reporting."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "unarmed-security-officer-readiness-check": {
+    "unarmed-security-officer-readiness-check-patrol-016": {
+      "prompt": "Night warehouse post. Post orders require irregular routes and times. The unarmed officer still hits the loading dock at 02:00 every night, then the same hallway loop. What is the main problem?",
+      "options": {
+        "a": "A predictable round lets someone time a theft between checkpoints",
+        "b": "Varying the route would skip every required clock on the tour",
+        "c": "A 02:00 dock stop is required so cameras can timestamp the walk",
+        "d": "A fixed indoor loop is safer because hallway cameras cover it fully"
+      },
+      "correctOptionId": "a",
+      "explanation": "See-and-be-seen patrols work because timing and path are hard to predict. The same dock hit at 02:00 plus the same hallway loop lets an offender wait until the officer is two zones away. Clock points still get hit, but order and minutes should change within the tour window.",
+      "distractorExplanations": {
+        "b": "Irregular patrols still scan every required clock; they change sequence and timing, not coverage.",
+        "c": "Cameras record continuously; they do not need a fixed 02:00 walk to make a useful timestamp.",
+        "d": "Indoor cameras have blind spots and do not replace an unpredictable foot tour of the rest of the site."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-017": {
+      "prompt": "A parking-garage stairwell is fully dark and the radio has been quiet. Before the unarmed officer walks those stairs, what comes first?",
+      "options": {
+        "a": "Enter without light so a trespasser cannot see the approach",
+        "b": "Light the landing, radio location, then walk with a charged radio",
+        "c": "Prop the stair door open so backup can find the officer later",
+        "d": "Finish a silent solo sweep, then call dispatch only if something looks wrong"
+      },
+      "correctOptionId": "b",
+      "explanation": "A dark stairwell is a trip and contact hazard. Light the space, tell dispatch where you are, and keep a working radio before you commit to the stairs. Unarmed posts do not do hero searches in the dark; if post orders require two officers, wait for backup.",
+      "distractorExplanations": {
+        "a": "Going in dark raises fall and ambush risk; light is a safety tool, not a courtesy to an offender.",
+        "c": "Propping a stair door defeats fire separation and access control; it is not a locate-me marker.",
+        "d": "A silent solo sweep leaves no one tracking your location; radio first, then search per orders."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-018": {
+      "prompt": "At the lobby turnstile an employee holds the door for someone in a vendor shirt with no badge. The unarmed officer at the desk should:",
+      "options": {
+        "a": "Wave them through because the employee already vouched for them",
+        "b": "Log the pair only if they look like VIP visitors on today's list",
+        "c": "Stop the tailgate; each person still needs a badge or visitor pass",
+        "d": "Leave the lobby to walk the fence line instead of checking badges"
+      },
+      "correctOptionId": "c",
+      "explanation": "Access control is one person, one credential. A familiar employee holding the door is classic tailgating; the second person still needs a badge or a logged visitor pass. Waving a vendor shirt through creates an unknown on site with no trail.",
+      "distractorExplanations": {
+        "a": "A coworker's wave is not a credential; each person badges or is processed as a visitor.",
+        "b": "Partial VIP-only logs leave gaps; every visitor and escort exception is recorded.",
+        "d": "Perimeter patrol is a separate duty; the live failure here is the unbadged entry at the turnstile."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-019": {
+      "prompt": "At 01:40 the unarmed officer finds the exterior mechanical-room door ajar. No one is in sight and it is safe to close. Best action?",
+      "options": {
+        "a": "Leave it open and mention it in the end-of-shift summary",
+        "b": "Relock it quietly and skip any report so the client is not alarmed",
+        "c": "Email the property manager next week after confirming it was a fluke",
+        "d": "Secure it if safe, log it, and notify per post orders"
+      },
+      "correctOptionId": "d",
+      "explanation": "An open exterior door is a live access failure. If it is safe, close and lock it now, then write time, location, and condition and notify per post orders during that shift. Silent relocks hide broken hardware or a possible walk-in; delayed notes leave the client blind.",
+      "distractorExplanations": {
+        "a": "Hours later is too late; the opening is a current risk, not a paperwork leftover.",
+        "b": "Locking without a report hides a possible breach or failed latch the client must fix.",
+        "c": "A week delay leaves the site unaware of a possible entry; report it on the shift it is found."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-020": {
+      "prompt": "A new unarmed officer wants to sit the monitor room all night instead of walking. Why is that wrong on this post?",
+      "options": {
+        "a": "Cameras deter and review events; they miss smell, sound, and many blind spots",
+        "b": "CCTV is the site's fire and smoke detector, so walking the floors is optional",
+        "c": "Monitor time exists mainly to timestamp guard breaks for payroll disputes",
+        "d": "Foot patrol is required only on sites that have no cameras at all"
+      },
+      "correctOptionId": "a",
+      "explanation": "CCTV is a deterrent and a review tool, not a substitute for feet. Cameras miss odors, sounds, temperature, and angles the lens never sees. Unarmed officers still walk the post; sitting the wall all night leaves those gaps unwatched.",
+      "distractorExplanations": {
+        "b": "Fire and smoke detection belongs to the fire alarm system; cameras are not smoke heads.",
+        "c": "The purpose of CCTV is site protection, not a time clock for breaks.",
+        "d": "Even camera-rich sites need foot patrol for blind spots and conditions the lens cannot sense."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-021": {
+      "prompt": "A utility-closet door contact trips at 03:00. The unarmed officer is the only person on site. First response?",
+      "options": {
+        "a": "Kick the door and rush in alone to catch whoever set the contact off",
+        "b": "Treat it as real: radio up and approach with caution per orders",
+        "c": "Tag it as a likely false alarm for the day porter to check at 07:00",
+        "d": "Silence and reset the panel before anyone looks at the closet"
+      },
+      "correctOptionId": "b",
+      "explanation": "Treat every alarm as real until it is cleared. Radio your location, approach with caution, and follow post orders on backup — unarmed officers do not kick in a dark closet alone. Resetting first or parking it for day shift can hide an open door or an intruder.",
+      "distractorExplanations": {
+        "a": "Rushing in alone ignores backup and contact risk; notify and approach as ordered.",
+        "c": "Deferring a 03:00 alarm to day shift leaves a possible intrusion unchecked for hours.",
+        "d": "Reset before inspect erases the cause; respond to the door first, then reset per SOP."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-022": {
+      "prompt": "Freezing rain on an outdoor lot post. How should the unarmed officer change the patrol without abandoning the post?",
+      "options": {
+        "a": "Stay in the vehicle the entire shift until the storm fully passes",
+        "b": "Cut outdoor rounds because theft usually drops in bad weather",
+        "c": "Slow for ice, watch roofs and HVAC, keep the radio up",
+        "d": "Go radio-silent to save battery until the weather clears"
+      },
+      "correctOptionId": "c",
+      "explanation": "Weather changes the hazard picture, not the duty to cover the post. Ice raises slips; wind and freeze also show as roof leaks and HVAC icing. Slow the walk, scan those systems, and keep radio contact — spare batteries beat going silent.",
+      "distractorExplanations": {
+        "a": "Shelter is an adjustment between legs of the tour, not a reason to hide in the car all shift.",
+        "b": "Storms add leaks, slips, and opportunistic theft; they are not a license to skip clocks.",
+        "d": "Risk is higher in weather, so radio contact matters more; carry spares instead of going dark."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-023": {
+      "prompt": "An unlabeled box sits at a locked tenant door. There is no courier tag, and wires show through the tape. The unarmed officer should:",
+      "options": {
+        "a": "Peel a corner of the tape to confirm the box is empty",
+        "b": "Carry it to the dumpster so the hallway stays clear",
+        "c": "Leave it in place and skip any report because it may be a late delivery",
+        "d": "Do not touch it, isolate the area, and follow suspicious-item SOP"
+      },
+      "correctOptionId": "d",
+      "explanation": "A package that looks wrong is a do-not-touch problem. Unarmed officers do not open, move, or ignore it. Isolate the area, keep people away, and follow the site bomb or suspicious-item procedure, including supervisor and police notification.",
+      "distractorExplanations": {
+        "a": "Opening a suspicious item is how an officer becomes part of the incident; leave it sealed.",
+        "b": "Moving it can trigger a device and spreads the hazard; isolate in place.",
+        "c": "No report leaves occupants walking past an unvetted item; notify and follow SOP."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-024": {
+      "prompt": "The unarmed officer signed a key ring out of the lockbox for the night tour. Until those keys are signed back in, where do they stay?",
+      "options": {
+        "a": "On the officer or locked in the key box — not on a public hook",
+        "b": "On a labeled hook at the open lobby desk for anyone who needs a door",
+        "c": "In the last door the officer opened so the next shift can find them",
+        "d": "Under the blotter at the desk so they stay hidden from lobby cameras"
+      },
+      "correctOptionId": "a",
+      "explanation": "Signed-out keys are controlled property. They stay on the officer's person or go back into the lockbox with a log entry. A lobby hook, a key left in a door, or a 'hidden' desk stash is how rings walk off and how unauthorized people get into mechanical rooms.",
+      "distractorExplanations": {
+        "b": "An open labeled hook is not key control; anyone at the desk can lift a ring.",
+        "c": "A key left in a door is an unlocked door plus a lost ring; hand-offs go through the log or box.",
+        "d": "Under-the-mat and under-the-blotter hiding spots are the first places a thief checks."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-025": {
+      "prompt": "A stair fire door is wedged open with a rubber stop 'for airflow.' On tour, the unarmed officer should:",
+      "options": {
+        "a": "Leave the wedge; HVAC comfort beats compartmentation on this post",
+        "b": "Pull the wedge, close the door, and report it this shift",
+        "c": "Add a second wedge so the door cannot slam during later patrols",
+        "d": "Note it for next week's safety meeting and keep walking the clocks"
+      },
+      "correctOptionId": "b",
+      "explanation": "Fire doors stop smoke and keep egress tenable. A wedge defeats that rating the moment it is in place. Pull the stop, close the door, and report it on this shift so facilities can stop the practice. Unarmed officers do not 'improve' a life-safety violation by fastening it open.",
+      "distractorExplanations": {
+        "a": "Comfort airflow is not a valid reason to defeat a fire door; smoke uses that same path.",
+        "c": "A firmer wedge makes the life-safety failure worse, not more professional.",
+        "d": "A wedged fire door is immediate, not a next-week agenda item; close it now."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-026": {
+      "prompt": "Half the lamps in the employee lot are dark. The unarmed officer still has to cover that lot tonight. Best action?",
+      "options": {
+        "a": "Wait for the quarterly lighting audit before writing anything down",
+        "b": "Skip that lot until facilities restores the lamps next week",
+        "c": "Treat it as a landlord-only issue and stay on the well-lit side of the building",
+        "d": "Open a work order, increase presence in the dark zone, and log the outage"
+      },
+      "correctOptionId": "d",
+      "explanation": "Dark parking lots raise theft and assault risk the same night. The officer reports the outage, opens a work order, and puts extra patrol time in the dark zone until light returns. Skipping the lot or waiting for an audit leaves the hazard unwatched.",
+      "distractorExplanations": {
+        "a": "Crime does not wait for the next audit; lighting failures get a work order now.",
+        "b": "Dark areas need more presence, not less, until the lamps are repaired.",
+        "c": "Guards flag lighting as a security risk; it is not left solely for a landlord to notice."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-027": {
+      "prompt": "After a lobby dispute, the unarmed officer writes in the field notebook. What belongs on that page?",
+      "options": {
+        "a": "Times, names, and observed facts written as the event unfolds",
+        "b": "Opinions about who was guilty and who should be banned from the site",
+        "c": "Alarm panel codes in case the next officer forgets the reset sequence",
+        "d": "A polished narrative drafted at home the next afternoon"
+      },
+      "correctOptionId": "a",
+      "explanation": "Field notes are contemporaneous facts: times, names, what was seen and heard. They support the incident report and, if needed, testimony. Guilt opinions, stored codes, and next-day rewrite all damage credibility or site security.",
+      "distractorExplanations": {
+        "b": "Guesses about guilt read as bias in court; record what you observed, not a verdict.",
+        "c": "Codes in a notebook that can be lost or subpoenaed are a credential leak.",
+        "d": "Next-day summaries lose accurate times; write as the event happens, then formalize from those notes."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-028": {
+      "prompt": "At 21:10 a person in a hard hat and tool belt is at a loading door with no company badge, saying they are the after-hours plumber. The unarmed officer should:",
+      "options": {
+        "a": "Let them in because tools and a hard hat prove they are a real contractor",
+        "b": "Stop them at the door and verify identity and the work order",
+        "c": "Hand them a master key so they can finish before the tenant arrives",
+        "d": "Physically detain them in the vestibule until police arrive"
+      },
+      "correctOptionId": "b",
+      "explanation": "Uniforms and tools are easy props. After hours, an unarmed officer challenges kindly, keeps the door controlled, and verifies identity and authorization against the work order or tenant list. No badge is not itself a crime, so detention is out of bounds; a master key is worse.",
+      "distractorExplanations": {
+        "a": "A tool belt is not a credential; many thieves dress as tradespeople.",
+        "c": "Issuing a master key to an unverified person breaks key control and creates huge liability.",
+        "d": "Lack of a badge is not a crime in progress; verify rather than detain."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-029": {
+      "prompt": "The service walk is glazed with ice and the unarmed officer still must complete a foot tour. Safest practice?",
+      "options": {
+        "a": "Take long strides to get across the ice before conditions get worse",
+        "b": "Keep both hands in pockets so gloves stay warm if the officer falls",
+        "c": "Shorten the step, keep hands free, and report the ice for treatment",
+        "d": "Cancel the outdoor clocks without telling dispatch or the client"
+      },
+      "correctOptionId": "c",
+      "explanation": "An injured officer is another incident. On ice, use short flat steps, keep hands out of pockets so you can catch a fall, and report the hazard so salt or cones can go down. Skipping clocks silently leaves the post uncovered and the ice unfixed.",
+      "distractorExplanations": {
+        "a": "Long fast strides raise slip risk; slow, short steps keep the center of gravity over the feet.",
+        "b": "Hands in pockets cannot break a fall; wear gloves with hands free.",
+        "d": "If ice blocks a route, report it and adjust; do not drop outdoor clocks with no notice."
+      },
+      "difficulty": "medium"
+    },
+    "unarmed-security-officer-readiness-check-patrol-030": {
+      "prompt": "Through lobby glass the unarmed officer sees two people smashing a display case. Observe-and-report on this post still requires:",
+      "options": {
+        "a": "Tackling the nearer person to hold them until police arrive",
+        "b": "Finishing the remaining clock points, then calling from the office",
+        "c": "Recording a long video instead of calling so the evidence file is complete",
+        "d": "Calling police now, keeping a safe view, and reporting what is seen"
+      },
+      "correctOptionId": "d",
+      "explanation": "Observe-and-report is not 'do nothing.' A crime in progress gets an immediate police call, a safe observation point, and a factual description. Unarmed officers are not sent to tackle smash-and-grab suspects, and remaining clocks wait.",
+      "distractorExplanations": {
+        "a": "Physical intervention exceeds most unarmed post orders and turns the officer into a casualty.",
+        "b": "A crime in progress outranks the rest of the tour; call now, do not finish clocks first.",
+        "c": "Video can help after the call is in; filming is not a substitute for reporting."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

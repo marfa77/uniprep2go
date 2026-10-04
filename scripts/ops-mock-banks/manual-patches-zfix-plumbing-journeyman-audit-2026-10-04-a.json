@@ -1,0 +1,259 @@
+{
+  "plumbing-journeyman-readiness-check": {
+    "plumbing-journeyman-readiness-check-dwv-001": {
+      "prompt": "A helper solvent-welds a 3/4-inch potable adapter into a 2-inch PVC sanitary wye so a lavatory faucet can share the chase. What should the journeyman do?",
+      "options": {
+        "a": "Cut it out; keep DWV sanitary piping isolated from potable supply",
+        "b": "Leave it if the adapter is listed for 140°F drain temperature",
+        "c": "Leave it if a dual-check is added on the potable adapter",
+        "d": "Leave it only when the fixture is a water-softener brine tank"
+      },
+      "correctOptionId": "a",
+      "explanation": "Drain, waste, and vent piping is the sanitary drainage system. Codes keep it physically separate from potable water. A faucet supply must not tap a DWV wye; that is a cross-connection and a wrong-system joint, not a chase convenience.",
+      "distractorExplanations": {
+        "b": "Confuses a DWV temperature listing with permission to join potable pipe to a sanitary wye.",
+        "c": "Confuses a backflow preventer with isolation; a dual-check does not make a potable-to-DWV tap legal.",
+        "d": "Confuses a licensed plumber with a treatment-plant operator; brine still cannot enter potable piping."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-dwv-002": {
+      "prompt": "A 2-inch horizontal kitchen-sink drain is being laid in a crawl space. Under the IPC, what is the minimum slope for that pipe?",
+      "options": {
+        "a": "1/8 inch per foot, the same slope used for 3- to 6-inch drains",
+        "b": "1/4 inch per foot, the IPC minimum for 2-1/2 inch and smaller",
+        "c": "1/4 inch per foot for 3 inch and smaller; 1/8 inch for 4 inch up",
+        "d": "1/2 inch per foot, twice the tabulated value for small drains"
+      },
+      "correctOptionId": "b",
+      "explanation": "IPC Table 704.1 sets 1/4 inch per foot for horizontal drainage 2-1/2 inch and smaller. A 2-inch sink drain therefore needs 1/4 inch per foot. 1/8 inch per foot starts at 3 to 6 inch; 1/16 inch per foot is for 8 inch and larger.",
+      "distractorExplanations": {
+        "a": "Applies the 3- to 6-inch slope to a 2-inch drain; small pipe needs 1/4 inch per foot.",
+        "c": "Uses a 3-inch/4-inch split from other codes; IPC drops to 1/8 inch per foot starting at 3 inches.",
+        "d": "Doubles the table; 1/2 inch per foot is steeper than the IPC minimum for a 2-inch drain."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-dwv-003": {
+      "prompt": "A first-floor lavatory trap seal is pulled and the water closet gurgles every time an upstairs toilet is flushed. What is the most likely DWV fault?",
+      "options": {
+        "a": "The soil stack is being pressurized to speed wastewater flow",
+        "b": "The vent is serving as an overflow path during a stoppage",
+        "c": "The vent is blocked or missing, so trap seals are siphoned",
+        "d": "A missing air gap is letting potable water siphon into the drain"
+      },
+      "correctOptionId": "c",
+      "explanation": "A vent’s job is to admit air and hold traps at atmospheric pressure. When an upstairs closet discharges into an unvented or blocked stack, negative pressure siphons downstairs seals and causes gurgling. Restore the vent path; do not treat it as a drain or a supply air gap.",
+      "distractorExplanations": {
+        "a": "Vents equalize to atmosphere; pressurizing drains blows seals rather than helping flow.",
+        "b": "Dry vents carry air, not wastewater; using a vent as a relief drain is a code violation.",
+        "d": "Confuses DWV venting with potable air-gap protection on the supply side."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-dwv-004": {
+      "prompt": "A mop-basin P-trap is being set on a 3-inch floor-sink outlet. What trap-seal depth does the IPC require?",
+      "options": {
+        "a": "1/2 inch min and 1 inch max, as on a shallow drum trap",
+        "b": "1 inch minimum, matching the smallest listed trap diameter",
+        "c": "1-1/2 inch minimum, matching a common lavatory trap size",
+        "d": "2 inch minimum and 4 inch maximum for the water seal"
+      },
+      "correctOptionId": "d",
+      "explanation": "IPC trap-seal depth is 2 inches minimum and 4 inches maximum, measured from weir to dip. Pipe size (1-1/4, 1-1/2, 3 inch) is not the seal depth. A 1/2-inch or 1-inch seal evaporates or siphons too easily for a sanitary trap.",
+      "distractorExplanations": {
+        "a": "A 1/2-inch seal is lost to evaporation or siphonage; code requires 2 to 4 inches.",
+        "b": "Confuses trap-seal depth with the smallest trap pipe size; the seal still must be 2 inches.",
+        "c": "Confuses 1-1/2-inch trap tubing with seal depth; the water seal is 2 inches minimum."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-dwv-005": {
+      "prompt": "A bathroom group uses a 2-inch lavatory-and-tub drain as the vent for the water closet on the same floor. What must remain true of that wet vent?",
+      "options": {
+        "a": "The pipe may carry waste and also vent other fixtures within code limits",
+        "b": "The pipe may only vent two drains that join at the same elevation",
+        "c": "The pipe may also take a roof leader as a sanitary storm vent",
+        "d": "An AAV may replace both the wet vent and the building roof stack"
+      },
+      "correctOptionId": "a",
+      "explanation": "A wet vent is a drain that also vents other fixtures, typically a bathroom group, within size, length, and fixture limits. It is not a dry common vent, not a storm conductor, and it does not let the building drop its required open vent to outdoors.",
+      "distractorExplanations": {
+        "b": "Describes a dry common (dual) vent; a wet vent also receives drainage from other fixtures.",
+        "c": "Storm and sanitary must stay separate; a roof leader cannot vent a closet.",
+        "d": "AAVs may supplement island or cabinet vents; they do not erase the wet-vent pipe or the roof terminal."
+      },
+      "difficulty": "hard"
+    },
+    "plumbing-journeyman-readiness-check-dwv-006": {
+      "prompt": "A 3-inch building drain turns 90 degrees with two 45s under a slab. Why does the inspector require a cleanout at that change of direction?",
+      "options": {
+        "a": "So each fixture trap can be pressure-tested before the slab is poured",
+        "b": "So the drain can be rodded at the direction change if it stops up",
+        "c": "So the vent stack can be snaked from the roof if frost closes it",
+        "d": "So potable shutoffs at the fixture group stay reachable after cover"
+      },
+      "correctOptionId": "b",
+      "explanation": "Cleanouts give rodding access on the drainage system at changes of direction greater than 45 degrees and at required intervals. Test tees are for the air or water test; vent terminals and supply stops are not DWV cleanout locations.",
+      "distractorExplanations": {
+        "a": "Test plugs and testers serve the tightness test; cleanouts exist to rod stoppages.",
+        "c": "Vent terminals are not cleanouts; frost closure is a vent-sizing and termination issue.",
+        "d": "Confuses DWV cleanouts with potable shutoff access on the supply side."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-dwv-007": {
+      "prompt": "An island kitchen sink cannot take a conventional vent through the cabinet. An AAV is listed and installed on the fixture drain. How does it protect the trap?",
+      "options": {
+        "a": "It lets the building omit the required vent through the roof",
+        "b": "It dumps sewer gas when the drain develops positive pressure",
+        "c": "It admits air on vacuum in the drain, then reseals when idle",
+        "d": "It bleeds air from the potable line to stop water-hammer knock"
+      },
+      "correctOptionId": "c",
+      "explanation": "An air-admittance valve opens only on negative pressure, admitting air so the trap seal is not siphoned, then closes against sewer gas. Codes still require at least one open vent to outdoors for the building drain. AAVs do not relieve positive pressure and are not supply devices.",
+      "distractorExplanations": {
+        "a": "AAVs supplement local vents; each building drain still needs a vent to open air.",
+        "b": "AAVs are one-way: they seal on positive pressure and do not dump sewer gas.",
+        "d": "Confuses an AAV with a water-hammer arrestor on the potable side."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-dwv-008": {
+      "prompt": "A 4-inch collector in the basement receives the soil stacks and leaves the foundation wall. What is this piping, and where does it end?",
+      "options": {
+        "a": "Building sewer, running from the public main to the property line",
+        "b": "Vent header, tying stacks to the roof terminal above the top floor",
+        "c": "Fixture branch, taking each trap arm directly into the soil stack",
+        "d": "Building drain, taking stacks to the sewer just outside the wall"
+      },
+      "correctOptionId": "d",
+      "explanation": "The building drain is the lowest horizontal drainage piping that receives stacks and branches inside the structure and conveys them to the building sewer, typically a short distance outside the foundation. The sewer continues to the public main; vents and fixture arms are different parts of the system.",
+      "distractorExplanations": {
+        "a": "That run is the building sewer; the building drain is the in-structure collector that feeds it.",
+        "b": "Vent headers carry air to the roof; they do not collect sanitary stacks at the basement.",
+        "c": "Fixture arms and branches serve individual traps; they do not leave the foundation as a 4-inch collector."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-dwv-009": {
+      "prompt": "A basement bar sink was roughed with an S-trap: trap, then a vertical drop, and no vent. Why must the journeyman replace it with a P-trap and a vent (or listed AAV)?",
+      "options": {
+        "a": "The vertical outlet can siphon the trap seal without a vent",
+        "b": "The S-bend traps more debris than a P-trap of the same size",
+        "c": "The S-bend makes the seal too deep for the fixture to drain",
+        "d": "The S-bend automatically exceeds the maximum trap-arm length"
+      },
+      "correctOptionId": "a",
+      "explanation": "An S-trap drops vertically immediately after the weir, so discharging water can self-siphon the seal. Codes require a P-trap with a vented trap arm (or a listed AAV where allowed) so air breaks the siphon. Clogging, seal depth, and trap-arm length are separate rules.",
+      "distractorExplanations": {
+        "b": "S-traps are banned for self-siphonage, not because they clog more than a P-trap.",
+        "c": "Seal depth is still 2 to 4 inches; the defect is the unvented vertical drop.",
+        "d": "Trap-arm length is a vent-distance rule; the S-trap fails because it siphons its seal."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-dwv-010": {
+      "prompt": "A 3-inch horizontal building drain is laid at 1/4 inch per foot. Using typical IPC building-drain tables, about how many drainage fixture units may it carry?",
+      "options": {
+        "a": "About 10 dfu, as if it were a 2-inch branch at that slope",
+        "b": "About 42 dfu, the usual IPC value for 3-inch at 1/4 in/ft",
+        "c": "About 84 dfu, double the 3-inch table, still within 3-inch",
+        "d": "About 216 dfu, the IPC 4-inch building-drain value at 1/4 in/ft"
+      },
+      "correctOptionId": "b",
+      "explanation": "IPC Table 710.1(1) lists about 42 drainage fixture units for a 3-inch building drain at 1/4 inch per foot. Ten dfu is 2-inch territory; 84 dfu overloads 3-inch; 216 dfu is the 4-inch row at the same slope.",
+      "distractorExplanations": {
+        "a": "Far too low; a 3-inch drain at 1/4 in/ft is tabulated near 42 dfu, not 10.",
+        "c": "Doubles the table; 84 dfu needs a larger drain, typically 4-inch.",
+        "d": "216 dfu is the 4-inch building-drain value at 1/4 in/ft, not 3-inch."
+      },
+      "difficulty": "hard"
+    },
+    "plumbing-journeyman-readiness-check-dwv-011": {
+      "prompt": "A 3-inch vent stack is being terminated on a two-story dwelling. Where must the open terminal be located?",
+      "options": {
+        "a": "In a ventilated attic, a few inches above the insulation",
+        "b": "Under a soffit overhang next to the attic intake vents",
+        "c": "Open to outdoors, usually through the roof with code clearances",
+        "d": "Through a sidewall immediately under an operable bedroom window"
+      },
+      "correctOptionId": "c",
+      "explanation": "Vent terminals must discharge to open outdoor air, typically through the roof, with the required projection and separation from openings, air intakes, and soffit vents. Ending in an attic, under a soffit, or directly under a window puts sewer gas into the building or back through intakes.",
+      "distractorExplanations": {
+        "a": "An attic, even a ventilated one, is still inside the building envelope for sewer gas.",
+        "b": "Codes bar terminals under overhangs with soffit vents because gas is drawn into the attic.",
+        "d": "A terminal may not sit directly under an openable window; IPC needs 10 ft horizontal or 3 ft above."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-dwv-012": {
+      "prompt": "A basement floor drain overflows with sewage when the public sewer surcharges after a storm. In DWV terms, what is happening?",
+      "options": {
+        "a": "Potable water is back-siphoning from the house into the street main",
+        "b": "Fixture trap seals are being pulled by induced siphonage only",
+        "c": "Wastewater is flowing normally from fixtures toward the sewer",
+        "d": "Wastewater is reversing and discharging back through the fixtures"
+      },
+      "correctOptionId": "d",
+      "explanation": "In DWV, backflow is reverse flow of wastewater toward and out of fixtures, here from a surcharged public sewer into a basement drain. That is not potable back-siphonage, not trap siphonage from a missing vent, and not ordinary forward drainage.",
+      "distractorExplanations": {
+        "a": "That is potable-supply backflow; this event is sewage reversing in the drain.",
+        "b": "Induced siphonage empties traps via vacuum; it does not flood a floor drain with sewage.",
+        "c": "Forward flow goes to the sewer; overflow at the floor drain is reverse flow."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-dwv-013": {
+      "prompt": "A restaurant dining room will have an exposed soil stack. Why might the journeyman choose no-hub cast iron instead of PVC for that run?",
+      "options": {
+        "a": "Cast iron damps sound; PVC is lighter and solvent-welded",
+        "b": "PVC is quieter; cast iron is lighter and joined with solvent",
+        "c": "PVC handles higher waste heat; cast iron is limited to dry vents",
+        "d": "Cast iron is solvent-welded; PVC is joined with lead and oakum"
+      },
+      "correctOptionId": "a",
+      "explanation": "No-hub cast iron is heavy, fire-resistant, and much quieter on an exposed stack. PVC is light, noisier, and joined with primer and solvent cement. Cast iron uses no-hub couplings or lead-and-oakum on hub joints and is not limited to vents; it also takes heat better than PVC.",
+      "distractorExplanations": {
+        "b": "Swaps the properties: cast iron is heavier and quieter; PVC is the solvent-welded plastic.",
+        "c": "Cast iron tolerates heat better and is used for drains, not only dry vents.",
+        "d": "Reverses joining: lead-and-oakum or no-hub for CI; primer and cement for PVC."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-dwv-014": {
+      "prompt": "A food-prep room has several floor sinks on one oversized horizontal combination waste-and-vent. Which fixtures may that system serve under typical IPC limits?",
+      "options": {
+        "a": "Water closets on a high-rise soil stack with no wet-vent limits",
+        "b": "Floor sinks and similar receptors listed for combination waste-and-vent",
+        "c": "Potable cold-water mains that also need air relief at the meter",
+        "d": "Natural-draft gas appliance vents sharing the sanitary stack"
+      },
+      "correctOptionId": "b",
+      "explanation": "Combination waste-and-vent is a limited horizontal method for floor drains, floor sinks, sinks, and similar receptors, using oversized pipe in place of individual vents. It is not a high-rise closet stack, not potable piping, and not a fuel-gas vent.",
+      "distractorExplanations": {
+        "a": "Water closets are excluded from combination waste-and-vent; they need conventional or wet vents.",
+        "c": "Confuses DWV combination venting with potable air relief at a water meter.",
+        "d": "Fuel-gas vents must never share a sanitary stack; that is a combustion-product path."
+      },
+      "difficulty": "hard"
+    },
+    "plumbing-journeyman-readiness-check-dwv-015": {
+      "prompt": "Before concealing a new DWV rough-in, the journeyman sets inflatable test plugs in the building drain. What is their purpose?",
+      "options": {
+        "a": "Leave them in the cleanouts permanently to block sewer gas",
+        "b": "Use them to hydrostatic-test the potable supply before the meter",
+        "c": "Isolate the DWV so it can take an air or water test before cover",
+        "d": "Cap the roof vent terminal so rain cannot enter the stack"
+      },
+      "correctOptionId": "c",
+      "explanation": "Test plugs (or test balls) temporarily seal DWV openings so the rough-in can hold an air or water test before concealment. They are removed after the test. Cleanouts get listed plugs, potable piping is tested separately, and vent terminals must remain open in service.",
+      "distractorExplanations": {
+        "a": "Test plugs come out after the test; permanent sewer-gas seals are listed cleanout plugs.",
+        "b": "DWV test plugs seal drains; supply lines are capped and tested at working pressure.",
+        "d": "A plugged roof terminal would block venting and siphon traps after occupancy."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

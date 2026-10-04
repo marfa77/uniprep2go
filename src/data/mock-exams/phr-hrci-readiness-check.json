@@ -3,151 +3,151 @@
     "id": "phr-hrci-readiness-check-talent-001",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "A job analysis should produce:",
+    "prompt": "A plant needs a new maintenance technician posting by Friday, but there is no current job description. What should the PHR take from a job analysis before the posting goes live?",
     "options": [
       {
         "id": "a",
-        "text": "Tasks, KSAs, and working conditions"
+        "text": "The job's tasks, required KSAs, and working conditions"
       },
       {
         "id": "b",
-        "text": "Pay grades and market salary benchmarks"
+        "text": "Market pay data and a recommended salary midpoint"
       },
       {
         "id": "c",
-        "text": "Performance ratings for current incumbents"
+        "text": "Last year's ratings of technicians in other plants"
       },
       {
         "id": "d",
-        "text": "Personality traits of top hires"
+        "text": "Personality labels taken from last year's top performers"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "HRCI work starts from the job. This item asks: “A job analysis should produce:”. The matching answer is: Tasks, KSAs, and working conditions — not a personality roast. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "Job analysis describes the work itself: tasks, knowledge/skills/abilities, and conditions. That output drives the posting, interview questions, and later evaluation. Pay grades come from job evaluation and market pricing; ratings and personality lists describe people, not the job, and can pull selection off job-related criteria.",
     "distractorExplanations": {
-      "b": "Pay grades and benchmarks come from job evaluation and market pricing, which use job analysis output but are not its product.",
-      "c": "Performance ratings describe how incumbents perform; job analysis describes the job itself, independent of who holds it.",
-      "d": "Job analysis studies the job, not people; trait profiles of top performers invite non-job-related selection criteria."
+      "b": "Confuses job analysis with job evaluation and market pricing, which use the analysis later but are not its product.",
+      "c": "Performance ratings describe incumbents; analysis must describe the job independent of who currently holds it.",
+      "d": "Trait lists of 'top people' study persons, not the job, and invite non-job-related hiring screens."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-002",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "A structured interview is better than an unstructured chat because it:",
+    "prompt": "Three finalists met different interviewers who each used a unique question list and no scoring guide. Why should the PHR convert this to a structured interview?",
     "options": [
       {
         "id": "a",
-        "text": "Lets the hiring manager ramble"
+        "text": "So the hiring manager can spend more time selling the role"
       },
       {
         "id": "b",
-        "text": "Compares candidates on the same job-related questions"
+        "text": "So all finalists answer the same job-related questions"
       },
       {
         "id": "c",
-        "text": "Asks about kids first"
+        "text": "So the panel can ask about family status before skills"
       },
       {
         "id": "d",
-        "text": "Ignores KSAs"
+        "text": "So KSAs from the analysis can be dropped from the talk"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Structure reduces noise. This item asks: “A structured interview is better than an unstructured chat because it:”. The matching answer is: Compares candidates on the same job-related questions. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "Structured interviews use the same job-related questions and a common rating guide so candidates can be compared fairly. That design raises reliability and helps defend selection under Title VII. Rambling, family questions, or ignoring KSAs increase noise and discrimination risk, not validity.",
     "distractorExplanations": {
-      "a": "“Lets the hiring manager ramble” does not answer “A structured interview is better than an unstructured chat because it:”. The matching answer is: Compares candidates on the same job-related questions.",
-      "c": "“Asks about kids first” does not answer “A structured interview is better than an unstructured chat because it:”. The matching answer is: Compares candidates on the same job-related questions.",
-      "d": "“Ignores KSAs” does not answer “A structured interview is better than an unstructured chat because it:”. The matching answer is: Compares candidates on the same job-related questions."
+      "a": "Selling time is recruiting, not a validity reason; structure exists to compare candidates, not to lengthen the pitch.",
+      "c": "Family-status questions are not job-related and create sex and related Title VII exposure, the opposite of structure.",
+      "d": "KSAs from job analysis should drive the questions; dropping them returns the process to an unstructured chat."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-003",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "A BFOQ is:",
+    "prompt": "A store director wants to hire only White clerks because 'our shoppers prefer it.' How should the PHR treat that request under Title VII?",
     "options": [
       {
         "id": "a",
-        "text": "A legally allowed race or color requirement when customers prefer it"
+        "text": "Allow it as a race BFOQ based on customer preference"
       },
       {
         "id": "b",
-        "text": "An age limit an employer may set whenever it lowers training costs"
+        "text": "Allow an age cap if it would cut new-hire training cost"
       },
       {
         "id": "c",
-        "text": "A legally allowed sex/religion/national-origin requirement essential to the job"
+        "text": "Refuse it; race has no BFOQ and preference is not a defense"
       },
       {
         "id": "d",
-        "text": "A neutral job requirement justified by business necessity in a disparate impact case"
+        "text": "Treat it as a business-necessity defense to disparate impact"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "BFOQ is narrow. This item asks: “A BFOQ is:”. The matching answer is: A rare, legally allowed sex/religion/national-origin requirement that is essential to the job. Independent UniPrep diagnostic — not an official HRCI PHR paper. It is rare and narrowly construed.",
+    "explanation": "Title VII permits no BFOQ for race or color. Customer preference is not a lawful basis for excluding a protected group. Sex, religion, or national origin BFOQs are rare and must be essential to the job; they still do not cover this request. Business necessity answers disparate-impact cases, not an open race screen.",
     "distractorExplanations": {
-      "a": "Title VII allows no BFOQ for race or color, and customer preference is not a valid BFOQ basis.",
-      "b": "Age BFOQs under the ADEA are narrow (e.g., public safety); lower training cost is not a lawful basis.",
-      "d": "Confuses BFOQ with the business-necessity defense to disparate impact; a BFOQ openly uses a protected trait."
+      "a": "There is no race or color BFOQ, and customer preference does not convert a discriminatory hiring rule into a BFOQ.",
+      "b": "ADEA age BFOQs are narrow (for example some public-safety roles); lower training cost is not a lawful age cutoff.",
+      "d": "Confuses BFOQ (using a protected trait openly) with the business-necessity defense used after a neutral practice shows impact."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-004",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "Adverse impact in selection is spotted with:",
+    "prompt": "A written screen's Hispanic pass rate is 60% of the White pass rate. What should the PHR do first under the Uniform Guidelines (UGESP)?",
     "options": [
       {
         "id": "a",
-        "text": "A check that each protected group's pass rate is at least 50% of the highest group's"
+        "text": "Switch the screen to a 50% half-rate rule instead of four-fifths"
       },
       {
         "id": "b",
-        "text": "A review of test content by managers, since statistics are used only after a lawsuit"
+        "text": "Wait to run any pass-rate statistics until a charge is filed"
       },
       {
         "id": "c",
-        "text": "A count of protected-class hires per year, with validation needed for any shortfall"
+        "text": "Count protected-class hires against a yearly numeric quota"
       },
       {
         "id": "d",
-        "text": "A statistical look at pass rates by protected class, then a validity defense if needed"
+        "text": "Confirm the rate gap, then review validity if impact holds"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "4/5ths is a screen, not the whole law. This item asks: “Adverse impact in selection is spotted with:”. The matching answer is: A statistical look at pass rates by protected class, then a validity defense if needed. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "UGESP expects employers to monitor selection rates by race, sex, and ethnic group. The four-fifths (80%) rule is a practical screen, not the whole law. A 60% ratio is below 80%, so HR should confirm the data and, if adverse impact remains, be ready to show job-relatedness and validity or use a less-impactful alternative.",
     "distractorExplanations": {
-      "a": "Wrong threshold: the UGESP screen is the four-fifths (80%) rule, not 50%.",
-      "b": "Employers are expected to monitor selection rates proactively under UGESP, not only once litigation starts.",
-      "c": "Adverse impact compares selection rates, not raw hire counts against a quota."
+      "a": "Wrong threshold: the UGESP rule of thumb is four-fifths (80%) of the highest group's rate, not 50%.",
+      "b": "Monitoring is proactive under UGESP; waiting for a lawsuit is not the compliance standard for selection rates.",
+      "c": "Adverse impact compares selection rates, not raw hire totals against a quota, which Title VII also forbids."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-005",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "Onboarding should include:",
+    "prompt": "A new customer-service hire finished day-one forms but still has no system access, no 30-day goals, and no check-in on the calendar. What should the PHR add so this is onboarding, not orientation?",
     "options": [
       {
         "id": "a",
-        "text": "Role, tools, compliance, and a 30-day check"
+        "text": "Role goals, tools access, compliance, and a 30-day check"
       },
       {
         "id": "b",
-        "text": "Benefits forms and a signed handbook receipt"
+        "text": "Only the benefits packet and a signed handbook receipt"
       },
       {
         "id": "c",
-        "text": "Company history and culture, with role training at 90 days"
+        "text": "Culture videos now, with job training delayed until day 90"
       },
       {
         "id": "d",
@@ -155,1828 +155,1828 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Time-to-productivity is a metric. This item asks: “Onboarding should include:”. The matching answer is: Role, tools, compliance, and a 30-day check — not a handbook toss. Independent UniPrep diagnostic — not an official HRCI PHR paper. A handbook alone is not onboarding.",
+    "explanation": "Onboarding gets a new hire productive: role clarity, tools, required compliance, and an early (often 30-day) check with the manager. Paperwork-only orientation, delayed skill training, or a video day without a manager connection leave time-to-productivity and early turnover unmeasured.",
     "distractorExplanations": {
-      "b": "Paperwork is orientation, not onboarding; it leaves out role clarity, tools, and an early check-in.",
-      "c": "Delaying role training to 90 days slows time-to-productivity; culture content alone is not onboarding.",
-      "d": "Compliance content matters, but onboarding centers on the role and manager connection, not a video day."
+      "b": "Benefits and handbook receipt are orientation paperwork; they do not give role, tools, or an early performance check.",
+      "c": "Holding job training until day 90 slows productivity; culture content alone is not a complete onboarding plan.",
+      "d": "Compliance matters, but isolating the hire from the manager and the actual work is not effective onboarding."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-006",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "A reliability problem in a test means:",
+    "prompt": "Applicants take the same cognitive screen two weeks apart and their rank order changes sharply. What does that reliability problem mean for hiring decisions?",
     "options": [
       {
         "id": "a",
-        "text": "The test measures the wrong construct for the job"
+        "text": "The test is measuring a construct unrelated to the job"
       },
       {
         "id": "b",
-        "text": "Scores bounce — you cannot trust the rank order"
+        "text": "Scores are unstable, so the rank order cannot be trusted"
       },
       {
         "id": "c",
-        "text": "The test has adverse impact on a protected group"
+        "text": "The screen already has adverse impact on a protected class"
       },
       {
         "id": "d",
-        "text": "Scores are consistent but do not predict performance"
+        "text": "Scores are consistent but fail to predict later performance"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Reliable ≠ valid. This item asks: “A reliability problem in a test means:”. The matching answer is: Scores bounce — you cannot trust the rank order. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "Reliability is score consistency. If rank order jumps on retest, you cannot trust who scored 'higher' and should not use the tool as a hurdle. Measuring the wrong construct, weak criterion prediction, and adverse impact are validity or fairness issues; they are not what a reliability failure itself shows.",
     "distractorExplanations": {
-      "a": "Measuring the wrong construct is a validity problem; reliability is about consistency of scores.",
-      "c": "Adverse impact concerns group pass-rate differences, a separate issue from score consistency.",
-      "d": "This describes a reliable but invalid test, the reverse of a reliability problem."
+      "a": "Wrong construct is a validity problem; reliability asks whether the measure is consistent, not whether it is the right trait.",
+      "c": "Adverse impact is about group pass-rate gaps; bouncing scores are a consistency issue, not a four-fifths finding.",
+      "d": "That pattern is a reliable but invalid test (stable scores that do not predict). Here the scores themselves are unstable."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-007",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "Content validity for a work sample means:",
+    "prompt": "HR must defend a 45-minute parts-assembly work sample used to hire technicians. What would establish content validity for that exercise?",
     "options": [
       {
         "id": "a",
-        "text": "Scores correlate with later job performance"
+        "text": "Scores later correlate with on-the-job performance ratings"
       },
       {
         "id": "b",
-        "text": "The sample measures an abstract trait"
+        "text": "The exercise is built to measure an abstract personality trait"
       },
       {
         "id": "c",
-        "text": "The sample mirrors important job tasks"
+        "text": "The sample's tasks match important tasks done on the job"
       },
       {
         "id": "d",
-        "text": "Retesting gives the same scores over time"
+        "text": "Retesting the same people yields nearly the same numeric scores"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Match the work. This item asks: “Content validity for a work sample means:”. The matching answer is: The sample mirrors important job tasks. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "Content validity for a work sample means the exercise is a fair sample of important job tasks identified in job analysis. Criterion-related validity is the later correlation with performance. Construct validity targets an abstract trait. Stable retest scores are reliability, not content evidence.",
     "distractorExplanations": {
-      "a": "Correlation with later performance is criterion-related validity, not content validity.",
-      "b": "Measuring an abstract trait is construct validity; content validity samples actual job tasks.",
-      "d": "Stable scores on retest describe test-retest reliability, not content validity."
+      "a": "Correlation with later performance is criterion-related validity, a different validation strategy than content sampling.",
+      "b": "Measuring an abstract trait is construct validity; a work sample should represent job tasks, not a personality construct.",
+      "d": "Same scores on retest describe test-retest reliability, which does not prove the sample mirrors the job."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-008",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "A RIF selection list should be:",
+    "prompt": "A plant must cut 12 assembler jobs. The supervisor wants to rank people by salary, highest first, 'to save the most money.' What should the PHR require for the RIF list?",
     "options": [
       {
         "id": "a",
-        "text": "Ranked by salary, highest first"
+        "text": "Rank by pay, highest first, to maximize payroll savings"
       },
       {
         "id": "b",
-        "text": "Based on manager gut sense of fit"
+        "text": "Rank by the supervisor's undocumented sense of cultural fit"
       },
       {
         "id": "c",
-        "text": "Kept confidential from legal review"
+        "text": "Keep the list off legal review until after layoff notices go out"
       },
       {
         "id": "d",
-        "text": "Job-related and documented"
+        "text": "Use documented, job-related criteria and check age impact"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Document the criteria. This item asks: “A RIF selection list should be:”. The matching answer is: Job-related and documented, not a secret 'attitude' sort. Independent UniPrep diagnostic — not an official HRCI PHR paper. Avoid secret 'attitude' sorts.",
+    "explanation": "RIF selections must rest on documented, job-related criteria (skills, performance, seniority if used consistently). Ranking by pay often tracks age and can create ADEA disparate-impact exposure. Gut 'fit' is hard to defend. Legal and adverse-impact review belong before notices, not after.",
     "distractorExplanations": {
-      "a": "Cutting top earners first often tracks age and can create ADEA disparate-impact exposure.",
-      "b": "Subjective 'fit' is undocumented and hard to defend against discrimination claims.",
-      "c": "RIF lists should get legal and adverse-impact review before notices go out."
+      "a": "Highest-paid-first often correlates with age; payroll savings is not a job-related RIF criterion and raises ADEA risk.",
+      "b": "Undocumented 'fit' is subjective and difficult to defend if a discrimination charge follows the layoff.",
+      "c": "Counsel and impact analysis should review the list before notices; hiding it until after the fact is the wrong sequence."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-009",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "Internal mobility works when:",
+    "prompt": "Employees say posted internal jobs are already filled by the hiring manager's pick. What change actually makes internal mobility work at the practitioner level?",
     "options": [
       {
         "id": "a",
-        "text": "Postings are real and managers do not hide roles"
+        "text": "Post real openings and stop managers from hiding roles"
       },
       {
         "id": "b",
-        "text": "Roles go to manager referrals before posting"
+        "text": "Fill from manager referrals before any internal posting"
       },
       {
         "id": "c",
-        "text": "Transfers are capped so top performers stay in their teams"
+        "text": "Cap transfers so high performers stay on current teams"
       },
       {
         "id": "d",
-        "text": "Openings go to the external market first to test the pay"
+        "text": "Go to the external market first to test the posted pay range"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Make the market internal. This item asks: “Internal mobility works when:”. The matching answer is: Postings are real and managers do not hide roles. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "Internal mobility needs a real internal market: genuine postings, visible qualifications, and managers who cannot pre-fill roles in the dark. Pre-selected referrals, transfer caps (talent hoarding), and external-first searches all close that market and drive exits of mobile talent.",
     "distractorExplanations": {
-      "b": "Filling roles by referral before posting closes the internal market and undermines trust.",
-      "c": "Capping transfers is talent hoarding, a main reason internal mobility programs fail.",
-      "d": "Going external first sidelines internal candidates; mobility needs real internal access."
+      "b": "Referral-first filling before a posting is the complaint: it closes the internal market and destroys trust in the process.",
+      "c": "Capping transfers is talent hoarding, a main reason mobility programs fail even when a careers site exists.",
+      "d": "External-first searches sideline internal candidates; mobility requires real internal access, not a pay survey via job boards."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-010",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "A realistic job preview is used to:",
+    "prompt": "Warehouse 90-day quits keep saying recruiting 'sold a different job.' How should the PHR use a realistic job preview in talent acquisition?",
     "options": [
       {
         "id": "a",
-        "text": "Raise offer acceptance by highlighting only the perks"
+        "text": "Raise offer rates by showing only overtime premiums and perks"
       },
       {
         "id": "b",
-        "text": "Cut early turnover by telling the hard parts too"
+        "text": "Cut early quits by also describing the hard parts of the work"
       },
       {
         "id": "c",
-        "text": "Screen out applicants who fail a knowledge test"
+        "text": "Screen applicants with a scored knowledge test as a hurdle"
       },
       {
         "id": "d",
-        "text": "Replace the formal job description during onboarding"
+        "text": "Replace the formal job description after the person starts work"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Honesty is a filter. This item asks: “A realistic job preview is used to:”. The matching answer is: Cut early turnover by telling the hard parts too. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "A realistic job preview shares both attractive and difficult parts of the work so candidates can self-select. That honesty typically lowers early turnover even if some offers are declined. A perks-only pitch, a knowledge test, or swapping out the job description after hire are different tools and do not serve the RJP purpose.",
     "distractorExplanations": {
-      "a": "That is a sales pitch; an RJP deliberately shares the downsides so candidates can self-select.",
-      "c": "Knowledge testing is a selection tool; an RJP relies on candidate self-selection, not a test.",
-      "d": "An RJP supplements the job description during recruiting; it does not replace it."
+      "a": "That is a sales pitch; an RJP deliberately includes downsides rather than maximizing acceptance at any cost.",
+      "c": "Knowledge tests are selection instruments; an RJP relies on informed self-selection, not a scored hurdle.",
+      "d": "An RJP supplements recruiting information; it does not replace the job description during onboarding."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-011",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "I-9 completion is:",
+    "prompt": "A Monday start is on the calendar. Payroll wants to 'catch up I-9s later, even for U.S. citizens after 90 days.' What timing should the PHR enforce?",
     "options": [
       {
         "id": "a",
-        "text": "Section 1 within 3 business days of the start date"
+        "text": "Complete Section 1 within three business days of the start date"
       },
       {
         "id": "b",
-        "text": "Required only for employees who are not U.S. citizens"
+        "text": "Complete Form I-9 only for employees who are not U.S. citizens"
       },
       {
         "id": "c",
-        "text": "Section 1 by day 1, documents timed"
+        "text": "Section 1 by day one; Section 2 within three business days"
       },
       {
         "id": "d",
-        "text": "Completed for new hires after their 90-day probation"
+        "text": "Complete the I-9 after the 90-day probationary period ends"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "IRCA timing is real. This item asks: “I-9 completion is:”. The matching answer is: Section 1 by day 1, documents timed — not 'whenever payroll remembers'. Independent UniPrep diagnostic — not an official HRCI PHR paper. Section 2 documents are reviewed within three business days of the start date.",
+    "explanation": "Under IRCA, every new hire—including U.S. citizens—completes Section 1 by the first day of work. The employer reviews identity and work-authorization documents and completes Section 2 within three business days of the start date. Probation does not delay I-9, and citizenship status does not exempt anyone.",
     "distractorExplanations": {
-      "a": "Swaps the deadlines: Section 1 is due by the first day; three business days is the Section 2 deadline.",
-      "b": "Every new hire, including U.S. citizens, must complete Form I-9.",
-      "d": "The I-9 is due at hire (Section 1 day 1, Section 2 within three business days), not after probation."
+      "a": "Swaps the deadlines: Section 1 is due by day one; three business days is the Section 2 document-review window.",
+      "b": "Form I-9 is required for every new hire, including U.S. citizens; IRCA does not limit it to noncitizens.",
+      "d": "I-9 timing is hire-based (Section 1 day one, Section 2 within three business days), not after a probation period."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-012",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "A noncompete that is statewide for a junior clerk is often:",
+    "prompt": "An otherwise qualified applicant asks for a sign-language interpreter at the interview. The hiring manager wants to reject the person for that request. What should the PHR do under the ADA?",
     "options": [
       {
         "id": "a",
-        "text": "Automatically valid everywhere"
+        "text": "Cancel the interview because an interpreter would cost too much"
       },
       {
         "id": "b",
-        "text": "An EEO charge by itself"
+        "text": "Ask a family member to interpret instead of a qualified interpreter"
       },
       {
         "id": "c",
-        "text": "A BFOQ"
+        "text": "Switch to a written test so no accommodation request remains"
       },
       {
         "id": "d",
-        "text": "Hard to defend — reasonableness matters"
+        "text": "Provide a reasonable interview accommodation absent undue hardship"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Draft with counsel. This item asks: “A noncompete that is statewide for a junior clerk is often:”. The matching answer is: Hard to defend — reasonableness matters. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "The ADA covers qualified applicants. Providing an interpreter for an interview is a typical reasonable accommodation unless it would impose undue hardship on the operation. Cost alone, a family interpreter, or swapping the process to dodge the request are not the default PHR response; document the interactive process and proceed with the interview.",
     "distractorExplanations": {
-      "a": "“Automatically valid everywhere” does not answer “A noncompete that is statewide for a junior clerk is often:”. The matching answer is: Hard to defend — reasonableness matters.",
-      "b": "“An EEO charge by itself” does not answer “A noncompete that is statewide for a junior clerk is often:”. The matching answer is: Hard to defend — reasonableness matters.",
-      "c": "“A BFOQ” does not answer “A noncompete that is statewide for a junior clerk is often:”. The matching answer is: Hard to defend — reasonableness matters."
+      "a": "Undue hardship is a fact-specific operational showing, not an automatic rejection because an interpreter has a fee.",
+      "b": "Family members are not a substitute for a qualified interpreter and can compromise accuracy and confidentiality.",
+      "c": "Changing the method to avoid the request is not the interactive process; the interview accommodation should be addressed."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-013",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "Succession planning is:",
+    "prompt": "The plant's only licensed boiler operator can retire in eight months. Leadership asks HR for a succession plan, not a headcount forecast. What should the PHR do?",
     "options": [
       {
         "id": "a",
-        "text": "Identifying and developing backups for critical roles"
+        "text": "Identify and develop a backup for that critical role"
       },
       {
         "id": "b",
-        "text": "Choosing the next CEO by board vote when the role opens"
+        "text": "Wait for a board vote on a new CEO when the operator leaves"
       },
       {
         "id": "c",
-        "text": "A replacement chart listing names with no development plan"
+        "text": "Post a names-only chart and skip any development actions"
       },
       {
         "id": "d",
-        "text": "Forecasting total headcount needs for the next fiscal year"
+        "text": "Run a plant-wide headcount forecast for the next fiscal year"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Critical roles first. This item asks: “Succession planning is:”. The matching answer is: Identifying and developing backups for critical roles. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "Practitioner succession planning names critical roles and builds ready backups through development, not just a list. Waiting for an opening is reactive replacement. A chart with no development is not a plan. Headcount forecasting is workforce planning; it does not staff a licensed-operator gap.",
     "distractorExplanations": {
-      "b": "Waiting until a role opens is reactive replacement; succession planning prepares candidates in advance.",
-      "c": "A replacement chart without development is only a list; succession planning builds readiness.",
-      "d": "Headcount forecasting is workforce planning; succession focuses on backups for critical roles."
+      "b": "A board CEO vote is executive replacement after a vacancy, not PHR-level succession for a licensed plant role.",
+      "c": "A replacement chart without development or readiness criteria is only a list, not succession planning.",
+      "d": "Fiscal headcount forecasting is workforce planning; succession targets backups for specific critical jobs."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-014",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "An assessment center is:",
+    "prompt": "HR must compare six supervisor finalists on coaching and shift scheduling, not only interview talk. In this setting, what is an assessment center?",
     "options": [
       {
         "id": "a",
-        "text": "A single structured interview with a trained panel"
+        "text": "One structured panel interview with trained interviewers"
       },
       {
         "id": "b",
-        "text": "Multiple job-like exercises rated on competencies"
+        "text": "Several job-like exercises scored on defined competencies"
       },
       {
         "id": "c",
-        "text": "A cognitive ability test scored against national norms"
+        "text": "One cognitive test compared with national percentile norms"
       },
       {
         "id": "d",
-        "text": "An off-site training center for high-potential leaders"
+        "text": "An off-site classroom used to train high-potential leaders"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "See them work. This item asks: “An assessment center is:”. The matching answer is: Multiple job-like exercises rated on competencies. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "An assessment center is a method: multiple job-like exercises (in-basket, role-play, scheduling case) rated by trained assessors against competencies. A single panel interview or a cognitive test is one tool, not an assessment center. The name does not mean a training facility.",
     "distractorExplanations": {
-      "a": "A structured interview is one method; an assessment center combines several job-like exercises.",
-      "c": "A cognitive test is a single paper measure, not multiple simulations rated by assessors.",
-      "d": "Despite the name, an assessment center is an evaluation method, not a training facility."
+      "a": "A structured interview is one method; an assessment center combines several simulations, not a single panel.",
+      "c": "A normed cognitive test is a paper-and-pencil measure, not multiple job simulations scored by assessors.",
+      "d": "Despite the name, an assessment center is an evaluation process, not an off-site leadership school."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-talent-015",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "talent",
-    "prompt": "This PHR mock is:",
+    "prompt": "A recruiter drafts 'seeking recent college graduates only' for an analyst job that a 52-year-old applicant fully meets. What should the PHR do?",
     "options": [
       {
         "id": "a",
-        "text": "The official HRCI PHR exam form licensed for practice"
+        "text": "Keep the phrase; it is only a slogan and not an age cutoff"
       },
       {
         "id": "b",
-        "text": "An SHRM-CP practice set relabeled for PHR candidates"
+        "text": "Add a maximum age of 40 so the preference is explicit"
       },
       {
         "id": "c",
-        "text": "Independent HRCI-style practice — not the official PHR"
+        "text": "Drop the age-proxy wording; list job-related qualifications"
       },
       {
         "id": "d",
-        "text": "The HRCI aPHR exam, which this mock replaces"
+        "text": "Keep it if the team wants a cheaper-to-train incoming cohort"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Different body. This item asks: “This PHR mock is:”. The matching answer is: Independent HRCI-style practice — not the official PHR and not SHRM-CP. Independent UniPrep diagnostic — not an official HRCI PHR paper. It is also not SHRM-CP.",
+    "explanation": "ADEA protects applicants 40 and older. 'Recent graduate' is a classic age proxy in recruiting copy even without an explicit age. PHR practice is to state education, skills, and experience actually required. Training-cost preferences and explicit age caps are not lawful substitutes for job-related qualifications.",
     "distractorExplanations": {
-      "a": "HRCI does not license live exam forms; this is independent practice, not the official PHR.",
-      "b": "SHRM-CP is a different credential from a different body; this mock follows the HRCI PHR outline.",
-      "d": "The aPHR is HRCI's entry-level credential; this independent mock neither is nor replaces any HRCI exam."
+      "a": "Courts and EEOC treat 'recent graduate' language as an age signal; calling it a slogan does not remove ADEA risk.",
+      "b": "Stating a maximum age makes the ADEA problem worse; age is not a BFOQ for a typical analyst role.",
+      "d": "Lower training cost is not a defense to age-proxy recruiting; selection must rest on job-related qualifications."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-016",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "A documented coaching conversation should:",
+    "prompt": "A supervisor wants a file note after a first coaching talk about three late clock-ins this month. What should the note contain?",
     "options": [
       {
         "id": "a",
-        "text": "Summarize the employee's attitude and personality traits"
+        "text": "The late dates, the start-time rule, and a dated follow-up to check attendance"
       },
       {
         "id": "b",
-        "text": "Be kept in a manager's private file the employee does not see"
+        "text": "A judgment that the employee has a bad attitude and is not a team player"
       },
       {
         "id": "c",
-        "text": "Issue a final warning so the employee knows it is serious"
+        "text": "A final warning issued today so the file shows the issue was treated as severe"
       },
       {
         "id": "d",
-        "text": "State the gap, the expectation, and the follow-up date"
+        "text": "A private manager memo stored at home that the employee is not allowed to see"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Write the facts. This item asks: “A documented coaching conversation should:”. The matching answer is: State the gap, the expectation, and the follow-up date. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "Early coaching notes should stick to observable facts: which shifts were late, the attendance expectation, and when the manager will check again. That record supports later steps if the pattern continues and is fair if the employee asks to see it. Attitude labels, jumping to a final warning, and secret side files all weaken the documentation.",
     "distractorExplanations": {
-      "a": "Documentation should describe observable behavior and results, not attitude or personality labels.",
-      "b": "Secret files undercut fairness; the employee should know what was discussed and expected.",
-      "c": "Coaching is an early step; jumping to a final warning skips progressive discipline."
+      "b": "Personality and attitude labels are not observable conduct; they read as bias and are hard to defend if the note is later used in discipline.",
+      "c": "A first coaching talk is an early step; a final warning skips progressive discipline unless the conduct is already egregious.",
+      "d": "The employee should know what was discussed and expected; a hidden home file undercuts due process and discovery later."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-017",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "Progressive discipline is skipped when:",
+    "prompt": "Camera footage shows a picker punch a coworker after an argument. The handbook lists workplace violence as immediate-discharge conduct. What should HR recommend?",
     "options": [
       {
         "id": "a",
-        "text": "The conduct is egregious and policy allows summary action"
+        "text": "Give a first verbal warning because the picker has no prior write-ups on file"
       },
       {
         "id": "b",
-        "text": "The employee has already received one verbal warning"
+        "text": "Move to summary discharge under the violence rule rather than more coaching steps"
       },
       {
         "id": "c",
-        "text": "The manager has documented two minor attendance issues"
+        "text": "Write two attendance warnings first so the packet looks like progressive discipline"
       },
       {
         "id": "d",
-        "text": "The employee files a complaint shortly before discipline"
+        "text": "Pause all discipline because the picker emailed an overtime complaint yesterday"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Severity can jump steps. This item asks: “Progressive discipline is skipped when:”. The matching answer is: The conduct is egregious and policy allows summary action. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "b",
+    "explanation": "Progressive steps can be skipped when the conduct is egregious and the published policy allows summary action. Workplace violence is the classic example: the file still needs a prompt, documented investigation, but HR does not have to coach first. Inventing unrelated warnings or freezing action because of a recent complaint creates other legal problems.",
     "distractorExplanations": {
-      "b": "One prior verbal warning is the normal next step in progression, not grounds to skip to termination.",
-      "c": "Minor attendance issues call for progressive steps, not summary action.",
-      "d": "Skipping steps right after a complaint creates retaliation risk; protected activity is never a reason to accelerate."
+      "a": "A clean prior record does not force a verbal warning when policy treats violence as summary-discharge conduct.",
+      "c": "Padding the file with unrelated attendance write-ups is dishonest documentation and does not cure an investigation gap.",
+      "d": "A recent complaint is not a reason to skip or stall violence discipline; rushing because of the complaint would raise retaliation risk, but the violence still must be addressed on its facts."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-018",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "Weingarten rights (union, private sector) are about:",
+    "prompt": "A union assembler in a private plant is called in about missing kits that may lead to a write-up and asks for a steward. What should the supervisor do?",
     "options": [
       {
         "id": "a",
-        "text": "Any non-union employee's right to bring a lawyer to a meeting"
+        "text": "Refuse the steward, because Weingarten applies only at NLRB unfair-labor-practice hearings"
       },
       {
         "id": "b",
-        "text": "A union employee's request for a rep in an investigatory interview"
+        "text": "Let the assembler bring a personal lawyer instead of waiting for a union representative"
       },
       {
         "id": "c",
-        "text": "A union's right to bargain over a disciplinary policy change"
+        "text": "Pause the interview until a steward can attend; this is an investigatory meeting"
       },
       {
         "id": "d",
-        "text": "A union employee's right to a rep at any routine work meeting"
+        "text": "Bring a steward only for a routine start-of-shift huddle, which is not investigatory"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Know the setting. This item asks: “Weingarten rights (union, private sector) are about:”. The matching answer is: A union employee's request for a rep in an investigatory interview. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "c",
+    "explanation": "Weingarten rights (private-sector union settings) let an employee request a union representative in an investigatory interview the employee reasonably believes may lead to discipline. The operational move is to wait for a steward or stop the interview; the employer may not compel the interview without the representative once the request is made.",
     "distractorExplanations": {
-      "a": "Weingarten covers union representatives for unionized employees; it gives no right to bring a lawyer.",
-      "c": "Bargaining over policy changes is a separate NLRA duty, not the Weingarten interview right.",
-      "d": "Weingarten applies to investigatory interviews the employee reasonably believes may lead to discipline, not routine meetings."
+      "a": "Weingarten is about the employer's investigatory interview, not a hearing at the NLRB.",
+      "b": "The right is to a union representative, not a personal attorney; swapping in counsel does not satisfy Weingarten.",
+      "d": "Routine operational huddles are not Weingarten events; the right attaches when discipline is a reasonable prospect."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-019",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "An investigation of harassment should:",
+    "prompt": "An employee reports a site manager's repeated sexual comments. Who should run the investigation and how?",
     "options": [
       {
         "id": "a",
-        "text": "Wait until a second complaint confirms a pattern"
+        "text": "Wait for a second reporter so HR can show a pattern before any interviews start"
       },
       {
         "id": "b",
-        "text": "Be run by the accused employee's own manager"
+        "text": "Have the site manager investigate, because they already know the workgroup"
       },
       {
         "id": "c",
-        "text": "Be prompt, impartial, and documented"
+        "text": "Promise the reporter that their name will never be shared with anyone"
       },
       {
         "id": "d",
-        "text": "Promise the complainant total confidentiality"
+        "text": "Assign an impartial investigator promptly and keep a contemporaneous record"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Process protects everyone. This item asks: “An investigation of harassment should:”. The matching answer is: Be prompt, impartial, and documented — not a gossip circle. Independent UniPrep diagnostic — not an official HRCI PHR paper. Avoid a gossip circle.",
+    "correctOptionId": "d",
+    "explanation": "Harassment complaints require a prompt, impartial, documented investigation. The accused supervisor cannot run it. Employers act on the first report; waiting for a pattern undermines the Faragher/Ellerth defense. Confidentiality is limited to a need-to-know circle, so a promise of total secrecy is not available.",
     "distractorExplanations": {
-      "a": "Employers must act promptly on the first complaint; waiting for a pattern weakens the Faragher/Ellerth defense.",
-      "b": "The accused's own manager has a conflict of interest; investigators must be impartial.",
-      "d": "Confidentiality can be kept as far as possible, but total confidentiality cannot be promised in an investigation."
+      "a": "The first complaint is enough to open a file; waiting for a second reporter delays correction and weakens the employer's defense.",
+      "b": "The accused manager has a conflict of interest; an investigator must be outside that reporting line.",
+      "c": "Investigators can limit gossip, but they cannot promise that the reporter's identity will never be known to witnesses or the accused."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-020",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "At-will still does not allow:",
+    "prompt": "A store director wants to fire an at-will cashier the day after the cashier filed an EEOC charge, saying the store is at-will. What should HR say?",
     "options": [
       {
         "id": "a",
-        "text": "Terminating without giving a reason in writing"
+        "text": "Do not fire for that reason; at-will does not cover discrimination or retaliation"
       },
       {
         "id": "b",
-        "text": "Firing an employee for poor performance without warnings"
+        "text": "Proceed today; at-will status means no reason is required even after a charge"
       },
       {
         "id": "c",
-        "text": "Changing duties or schedules without employee consent"
+        "text": "Demote instead of firing so the charge has no effect on the personnel file"
       },
       {
         "id": "d",
-        "text": "Firing for a discriminatory or retaliatory reason"
+        "text": "Fire and backfill this week so the pending charge can be treated as closed"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "At-will ≠ illegal reason. This item asks: “At-will still does not allow:”. The matching answer is: Firing for a discriminatory or retaliatory reason. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "At-will employment lets most private employers end the relationship without cause, but it does not legalize a discriminatory or retaliatory motive. Timing a discharge to an EEOC filing is a classic retaliation fact pattern. HR should separate any independent performance case from the protected activity and keep the file clean.",
     "distractorExplanations": {
-      "a": "At-will employers generally need not give a written reason, though some states require service letters.",
-      "b": "At-will allows termination for performance without progressive warnings unless a contract or policy says otherwise.",
-      "c": "At-will employers can usually change duties and schedules, subject to contracts and specific laws."
+      "b": "At-will does not wipe out Title VII or retaliation rules; a charge is protected activity even if no written reason is otherwise required.",
+      "c": "A demotion tied to the charge is still an adverse action and can support the same retaliation claim.",
+      "d": "Backfilling does not moot a charge; it can look like the employer is covering its tracks."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-021",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "A last-chance agreement is:",
+    "prompt": "A second documented lockout-tagout miss occurred. Operations wants one more chance before discharge. Which tool should HR use?",
     "options": [
       {
         "id": "a",
-        "text": "A written final boundary before termination"
+        "text": "A hallway verbal reminder with a handshake and no written terms or dates"
       },
       {
         "id": "b",
-        "text": "A verbal warning given before written discipline"
+        "text": "A last-chance agreement that states the next like violation ends employment"
       },
       {
         "id": "c",
-        "text": "A severance contract that waives future claims"
+        "text": "A severance-and-release packet the employee signs while still on the job"
       },
       {
         "id": "d",
-        "text": "A performance plan with no consequence"
+        "text": "A development plan that says further misses will have no job consequence"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Make the last chance real. This item asks: “A last-chance agreement is:”. The matching answer is: A written final boundary before termination. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "b",
+    "explanation": "A last-chance agreement is a written final boundary: the rule, the remaining period, and that a further like violation ends employment. It is used when operations will retain the employee one more time. Verbal-only reminders, severance packets while still employed, and plans with no consequence do not create that boundary.",
     "distractorExplanations": {
-      "b": "A verbal warning is the first step of progressive discipline, not the final written boundary.",
-      "c": "A severance agreement follows separation; a last-chance agreement keeps the employee on clear terms.",
-      "d": "A last-chance agreement states that a further violation leads to termination; no consequence defeats its purpose."
+      "a": "A hallway verbal is an early coaching step, not a documented last chance before termination.",
+      "c": "Severance-and-release belongs at separation; it is not a tool for keeping someone employed on strict terms.",
+      "d": "If the plan says there is no consequence, it cannot function as a last chance and confuses later discharge."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-022",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "Skip-level meetings help when:",
+    "prompt": "After a pulse drop, a director wants skip-level coffees with every individual contributor. How should HR design them?",
     "options": [
       {
         "id": "a",
-        "text": "They let employees file grievances outside the policy"
+        "text": "Treat skip-levels as the official grievance path and close the handbook process"
       },
       {
         "id": "b",
-        "text": "They surface issues without undermining the manager"
+        "text": "Cancel weekly one-on-ones with the immediate supervisor during the skip-level month"
       },
       {
         "id": "c",
-        "text": "They replace regular one-on-ones with the direct manager"
+        "text": "Keep every note in the director's drawer and do not share themes with HR partners"
       },
       {
         "id": "d",
-        "text": "Results stay with the senior leader, not shared with HR"
+        "text": "Use them to hear themes while routing formal complaints through published policy"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Design them. This item asks: “Skip-level meetings help when:”. The matching answer is: They surface issues without undermining the manager as policy. Independent UniPrep diagnostic — not an official HRCI PHR paper. Design them as a policy, not a complaint dump.",
+    "correctOptionId": "d",
+    "explanation": "Skip-levels are a listening tool: they can surface engagement issues without replacing the manager or the complaint procedure. Formal grievances and harassment reports still follow the published path. Themes should be shared with HR so patterns get action, and direct-manager one-on-ones stay in place.",
     "distractorExplanations": {
-      "a": "Skip-levels are listening sessions; formal complaints still follow the grievance or complaint policy.",
-      "c": "Skip-levels supplement direct-manager one-on-ones; replacing them undermines the manager.",
-      "d": "Themes should be shared with HR so patterns are acted on, not kept by one leader."
+      "a": "Skip-levels are not a substitute grievance procedure; closing the handbook path creates inconsistent due process.",
+      "b": "Canceling the supervisor's one-on-ones undercuts the manager the skip-level is supposed to complement.",
+      "c": "Parking themes with one leader hides patterns HR needs for investigations, engagement work, and risk."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-023",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "A grievance procedure in a union shop is:",
+    "prompt": "A CBA sets a three-step grievance. A supervisor wants to skip to an open-door with the plant VP. What should HR do?",
     "options": [
       {
         "id": "a",
-        "text": "The company open-door policy"
+        "text": "Use the open-door path because it is faster than following the contract steps"
       },
       {
         "id": "b",
-        "text": "An NLRB unfair labor practice charge"
+        "text": "File an NLRB unfair-labor-practice charge instead of using the grievance"
       },
       {
         "id": "c",
-        "text": "The contractual path"
+        "text": "Stay on the CBA grievance steps; do not substitute a management-designed appeal"
       },
       {
         "id": "d",
-        "text": "A manager-designed appeal process"
+        "text": "Let the supervisor write a one-step appeal because they own the employee handbook"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Follow the CBA. This item asks: “A grievance procedure in a union shop is:”. The matching answer is: The contractual path — do not freelance a different process. Independent UniPrep diagnostic — not an official HRCI PHR paper. Do not freelance a different process.",
+    "explanation": "In a union shop the contractual grievance procedure is the bargained path for contract disputes. Supervisors do not freelance an open-door or handbook appeal that skips steps. NLRB unfair-labor-practice charges address statutory NLRA violations; they are not the substitute for a CBA grievance on a contract issue.",
     "distractorExplanations": {
-      "a": "An open-door policy is a non-union tool; in a union shop, grievances follow the CBA procedure.",
-      "b": "ULP charges go to the NLRB for statutory violations; contract disputes go through the CBA grievance steps.",
-      "d": "Management cannot replace the bargained grievance procedure with its own appeal process."
+      "a": "Speed does not authorize bypassing bargained steps; the open-door is a non-union tool.",
+      "b": "A ULP charge goes to the NLRB for alleged NLRA violations, not as a shortcut around the contract grievance.",
+      "d": "Management cannot replace the CBA procedure with a handbook appeal the supervisor invents."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-024",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "Employee engagement pulse scores matter if you:",
+    "prompt": "Pulse scores fell on 'I can raise concerns.' Leaders want the number up before the next survey. What should HR do first?",
     "options": [
       {
         "id": "a",
-        "text": "Tie manager bonuses to raising the scores"
+        "text": "Choose a few drivers, take visible action, and close the loop with employees"
       },
       {
         "id": "b",
-        "text": "Share the scores and move to next year"
+        "text": "Pay every manager a bonus solely for a five-point jump on that survey item"
       },
       {
         "id": "c",
-        "text": "Survey monthly to track every small change"
+        "text": "Field a weekly pulse until the score moves, then drop all follow-up talk"
       },
       {
         "id": "d",
-        "text": "Act on a few drivers and close the loop"
+        "text": "Post the scores in the newsletter and wait for the next annual survey cycle"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Surveys without action breed cynicism. This item asks: “Employee engagement pulse scores matter if you:”. The matching answer is: Act on a few drivers and close the loop. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "Engagement surveys create value when leaders pick a short list of drivers, act, and tell employees what changed. Publishing scores with no action, surveying more often without follow-through, and paying for the number all teach people to game or ignore the instrument.",
     "distractorExplanations": {
-      "a": "Paying for scores invites gaming and pressure on respondents instead of fixing the drivers.",
-      "b": "Sharing without action breeds survey cynicism; the value comes from acting and reporting back.",
-      "c": "More frequent surveys without action add fatigue, not engagement."
+      "b": "Bonuses tied only to the score invite pressure on respondents and gaming rather than fixing the concern-raising climate.",
+      "c": "Weekly pulses without action add survey fatigue; dropping communication after the number moves repeats the cynicism cycle.",
+      "d": "Sharing results and waiting a year is the classic 'survey to nowhere' that lowers trust on the next pulse."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-025",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "A workplace romance policy is meant to:",
+    "prompt": "Two peers begin dating; six months later one is promoted into the other's reporting line. What is the romance policy meant to do?",
     "options": [
       {
         "id": "a",
-        "text": "Manage conflicts and harassment risk"
+        "text": "Forbid dating between any two employees anywhere in the company, including peers"
       },
       {
         "id": "b",
-        "text": "Ban relationships between any two employees"
+        "text": "Manage conflict and harassment risk through disclosure and a reporting-line change"
       },
       {
         "id": "c",
-        "text": "Replace sexual harassment training for managers"
+        "text": "Replace annual harassment training now that dating is addressed in a written rule"
       },
       {
         "id": "d",
-        "text": "Require HR approval before employees date"
+        "text": "Require HR to approve social dates before employees may see each other off-site"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Disclose reporting lines. This item asks: “A workplace romance policy is meant to:”. The matching answer is: Manage conflicts and harassment risk, not ban all friendship. Independent UniPrep diagnostic — not an official HRCI PHR paper. It is not a ban on all friendship.",
+    "correctOptionId": "b",
+    "explanation": "Workplace-relationship policies are risk tools: they catch supervisor-subordinate conflicts, require disclosure, and usually force a reporting-line or transfer change. They do not typically ban all peer dating, pre-clear social lives, or replace harassment training. PHR work is to administer disclosure and the conflict fix consistently.",
     "distractorExplanations": {
-      "b": "Most policies target supervisor-subordinate conflicts; blanket bans are hard to enforce and can raise privacy issues.",
-      "c": "A romance policy complements harassment training; it does not replace it.",
-      "d": "Policies usually require disclosure of relationships in a reporting line, not prior HR approval to date."
+      "a": "Blanket bans on all peer relationships are hard to enforce and raise privacy issues; the usual trigger is a reporting line.",
+      "c": "A romance rule complements harassment training; it does not satisfy the training obligation.",
+      "d": "Most policies require disclosure of a reporting-line relationship, not prior HR approval of off-site dating."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-026",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "Insubordination is:",
+    "prompt": "After a manager restates a lawful, safe weekend coverage order, a technician says they will not do it and walks out. How should HR classify this?",
     "options": [
       {
         "id": "a",
-        "text": "Disagreeing with a manager in a meeting"
+        "text": "Ordinary staff-meeting disagreement that should not be written into the file"
       },
       {
         "id": "b",
-        "text": "A clear refusal of a lawful work order"
+        "text": "A protected OSHA refusal because weekend work is treated as imminent danger"
       },
       {
         "id": "c",
-        "text": "Refusing an order that violates OSHA safety rules"
+        "text": "A missed-deadline performance issue rather than a refusal of a stated directive"
       },
       {
         "id": "d",
-        "text": "Missing a deadline because of workload"
+        "text": "Insubordination: refusing a lawful, safe order after the manager restated it"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Define it tightly. This item asks: “Insubordination is:”. The matching answer is: A clear refusal of a lawful work order. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "d",
+    "explanation": "Insubordination is a clear refusal of a lawful, reasonably safe work order after it has been stated. Weekend coverage that is not an OSHA imminent-danger situation fits. Respectful debate in a meeting and ordinary missed deadlines are different problems and should not be labeled insubordination.",
     "distractorExplanations": {
-      "a": "Respectful disagreement is not refusal; insubordination requires refusing a lawful directive.",
-      "c": "Refusing work that poses imminent danger can be protected under OSHA; it is not insubordination.",
-      "d": "A missed deadline is a performance issue, not a refusal of an order."
+      "a": "Walking out after a restated order is a refusal, not mere disagreement in a meeting.",
+      "b": "OSHA protects refusal of work that poses a real imminent danger; a lawful weekend queue is not that exception.",
+      "c": "A missed deadline is performance; this employee refused the assignment itself."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-027",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "A reduction in force meeting should include:",
+    "prompt": "HR sits in on a 12-person layoff meeting at a WARN-covered site. What must the meeting script include?",
     "options": [
       {
         "id": "a",
-        "text": "A promise of rehire priority to keep the meeting calm"
+        "text": "The business reason, last day, and any WARN or benefits information that applies"
       },
       {
         "id": "b",
-        "text": "A waiver with 7 days to consider for employees over 40 in a group RIF"
+        "text": "A WARN notice handed to each person as they walk out of the conference room today"
       },
       {
         "id": "c",
-        "text": "The business reason, the date, and the benefits/WARN pieces that apply"
+        "text": "An unscripted promise of rehire priority so the conversation stays calm and short"
       },
       {
         "id": "d",
-        "text": "A WARN notice handed over on the day of the layoff"
+        "text": "An OWBPA waiver that gives employees age 40+ only seven days to consider a group deal"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Older Workers Act timing exists. This item asks: “A reduction in force meeting should include:”. The matching answer is: The business reason, the date, and the benefits/WARN pieces that apply. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "A RIF conversation should state the business reason, the effective date, and the benefits, severance, and WARN pieces that actually apply. Covered WARN events need 60 days' advance notice, not a packet on the walk-out. OWBPA group programs give employees 40+ 45 days to consider and 7 days to revoke, not 7 days to consider.",
     "distractorExplanations": {
-      "a": "Unplanned rehire promises can create contract claims; stick to the documented reason and benefits.",
-      "b": "OWBPA gives employees 40+ in a group program 45 days to consider and 7 days to revoke; 7 days is the revocation period.",
-      "d": "WARN requires 60 days' advance notice for covered layoffs, not notice on the day of the layoff."
+      "b": "WARN, when it applies, is 60 days' advance notice for a covered layoff, not same-day delivery in the meeting.",
+      "c": "Casual rehire promises can create contract claims; stick to the documented reason and written benefits.",
+      "d": "Seven days is the OWBPA revocation window, not the consideration period for a group program (45 days)."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-028",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "Peer mediation is a bad fit for:",
+    "prompt": "A vendor offers peer mediation for workplace conflict. Which case should HR keep out of mediation and send to investigation?",
     "options": [
       {
         "id": "a",
-        "text": "A small style clash"
+        "text": "Two coworkers who clash over the tone of a missed status email"
       },
       {
         "id": "b",
-        "text": "A missed email tone"
+        "text": "A report of sexual harassment or a threat of physical violence"
       },
       {
         "id": "c",
-        "text": "A dispute over shift swaps"
+        "text": "Peers arguing over who will cover a Saturday overtime shift"
       },
       {
         "id": "d",
-        "text": "Harassment or violence"
+        "text": "A mild style clash about how weekly team huddles are run"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Do not mediate abuse. This item asks: “Peer mediation is a bad fit for:”. The matching answer is: Harassment or violence — use investigation. Independent UniPrep diagnostic — not an official HRCI PHR paper. These require a formal investigation, not mediation.",
+    "correctOptionId": "b",
+    "explanation": "Peer mediation can help style clashes, email tone, and shift-swap disputes between equals. Harassment and violence are not mediate-and-compromise problems: they need a prompt investigation, possible separation of the parties, and discipline if substantiated. Putting those complaints into mediation can look like the employer failed to act.",
     "distractorExplanations": {
-      "a": "“A small style clash” does not answer “Peer mediation is a bad fit for:”. The matching answer is: Harassment or violence — use investigation.",
-      "b": "“A missed email tone” does not answer “Peer mediation is a bad fit for:”. The matching answer is: Harassment or violence — use investigation.",
-      "c": "Scheduling disputes between peers are a good fit for mediation; harassment and violence require investigation."
+      "a": "Email-tone friction between peers is a typical mediation fit, not a substitute for a harassment investigation.",
+      "c": "Scheduling disputes between peers are a common, appropriate mediation topic when no policy violation is alleged.",
+      "d": "Mild style differences are the core use case for mediation; they do not require a formal misconduct investigation."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-029",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "Attendance point systems fail when they:",
+    "prompt": "A no-fault attendance policy assigns the same point for certified FMLA leave as for a no-call no-show. What should HR change?",
     "options": [
       {
         "id": "a",
-        "text": "Punish protected leave the same as no-call no-show"
+        "text": "Keep the points; identical treatment is the purpose of a no-fault system"
       },
       {
         "id": "b",
-        "text": "Assign points for unexcused absences and tardies"
+        "text": "Point tardies only and stop assessing unexcused full-day absences"
       },
       {
         "id": "c",
-        "text": "Reset points after a period of good attendance"
+        "text": "Drop the call-in rule for everyone because FMLA users cannot be required to call"
       },
       {
         "id": "d",
-        "text": "Require call-in before the start of a shift"
+        "text": "Exclude protected FMLA, ADA, and USERRA time from the point assessments"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "FMLA/ADA/USERRA carve-outs. This item asks: “Attendance point systems fail when they:”. The matching answer is: Punish protected leave the same as no-call no-show. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "d",
+    "explanation": "No-fault point systems fail when they treat protected leave like unprotected absence. FMLA, ADA reasonable-leave, and USERRA absences generally cannot draw the same points as a no-call no-show. Unexcused tardies and absences can still be pointed, and usual call-in procedures may still apply to FMLA users.",
     "distractorExplanations": {
-      "b": "Pointing unexcused absences is the normal design; the failure is pointing protected leave.",
-      "c": "Rolling resets are a common, lawful feature that rewards improved attendance.",
-      "d": "Call-in rules are lawful and can apply to FMLA users under usual procedures."
+      "a": "Consistency is not a defense when the points attach to legally protected leave; that design is the failure mode.",
+      "b": "Pointing unexcused full-day absences is ordinary; the illegal piece is pointing certified protected leave.",
+      "c": "Employers may still require FMLA users to follow usual call-in rules; dropping call-in for everyone is not required."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-employee-rel-030",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "employee-rel",
-    "prompt": "A resignation should be:",
+    "prompt": "An employee emails that they resign Friday. The supervisor wants badge access left on until the paycheck two weeks later. What should HR do?",
     "options": [
       {
         "id": "a",
-        "text": "Rejected until the employee gives two weeks' notice"
+        "text": "Reject the resignation until the employee provides two weeks of written notice"
       },
       {
         "id": "b",
-        "text": "Confirmed in writing with last day and access cutoff"
+        "text": "Recode the separation as a for-cause firing so unemployment can be blocked"
       },
       {
         "id": "c",
-        "text": "Processed as a termination for cause to block benefits"
+        "text": "Confirm Friday as the last day in writing and cut systems access that same day"
       },
       {
         "id": "d",
-        "text": "Accepted verbally with access kept through the last paycheck"
+        "text": "Accept the notice only verbally and leave badge access on through payday two weeks out"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Close the loop. This item asks: “A resignation should be:”. The matching answer is: Confirmed in writing with last day and access cutoff. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "c",
+    "explanation": "Treat a clear resignation as a resignation: confirm last day in writing, collect access on that date, and run the normal offboarding checklist. Two weeks' notice is a courtesy, not a condition of acceptance. Leaving access open until payday and recoding the event as a for-cause firing both create security and legal risk.",
     "distractorExplanations": {
-      "a": "Two weeks' notice is a courtesy; at-will employees can resign without it being accepted.",
-      "c": "Recasting a resignation as a for-cause firing without facts is inaccurate and creates legal risk.",
-      "d": "Access should be cut on the last day, not left open until the final paycheck; confirm in writing."
+      "a": "At-will employees can resign without two weeks' notice; HR cannot hold the person until a longer notice appears.",
+      "b": "Relabeling a quit as a for-cause termination without facts is inaccurate and can support a claim.",
+      "d": "Verbal-only acceptance leaves the last day fuzzy, and access should end on the last day, not on payday."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-031",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "A compensable factor in a point-factor job eval is:",
+    "prompt": "A nonexempt warehouse associate in a federal-FLSA-only state works 9 hours Monday–Thursday and 4 hours Friday (40 hours). The manager then schedules 6 hours on Saturday. What overtime is due under the FLSA?",
     "options": [
       {
         "id": "a",
-        "text": "An incumbent's performance rating and years of service in the role"
+        "text": "Time-and-a-half for the 6 Saturday hours as hours over 40 in the workweek"
       },
       {
         "id": "b",
-        "text": "The market rate for the job from salary surveys"
+        "text": "Daily overtime for each 9-hour weekday because those days exceeded 8 hours"
       },
       {
         "id": "c",
-        "text": "A job-related dimension like skill, effort, responsibility, conditions"
+        "text": "Double-time pay for Saturday because it is a sixth consecutive scheduled day"
       },
       {
         "id": "d",
-        "text": "The employee's education credentials beyond job needs"
+        "text": "No overtime at all because no single workday reached 10 scheduled hours"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Evaluate the job. This item asks: “A compensable factor in a point-factor job eval is:”. The matching answer is: A job-related dimension like skill, effort, responsibility, conditions. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "Federal FLSA overtime is 1.5× the regular rate for hours over 40 in a workweek. The first 40 hours are already worked, so the Saturday six hours are overtime. Daily overtime after 8 or 10 hours, and sixth-day double time, come from some state laws or contracts, not the default FLSA rule.",
     "distractorExplanations": {
-      "a": "Performance and tenure describe the person; compensable factors evaluate the job.",
-      "b": "Market rates are used in market pricing; point-factor plans rate internal job dimensions.",
-      "d": "Factors measure what the job requires, not credentials an incumbent holds beyond it."
+      "b": "Confuses California-style daily overtime after 8 hours with the federal FLSA weekly 40-hour test.",
+      "c": "The FLSA rate is time-and-a-half; sixth-day or double-time premiums are state or contract rules.",
+      "d": "A 10-hour daily trigger is not the federal test; weekly hours over 40 still create overtime."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-032",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "FLSA overtime for a nonexempt is:",
+    "prompt": "A coordinator is titled “Director of Operations” and is paid a salary above the FLSA threshold, but spends about 90% of hours scanning invoices with no hire/fire or policy authority. What should HR conclude about exemption?",
     "options": [
       {
         "id": "a",
-        "text": "1.5× after 8 hours in any workday"
+        "text": "The director title automatically satisfies the executive exemption tests"
       },
       {
         "id": "b",
-        "text": "2× after 40 hours in the workweek"
+        "text": "Primary duties fail the EAP tests, so treat the employee as nonexempt"
       },
       {
         "id": "c",
-        "text": "1.5× after 80 hours in a two-week period"
+        "text": "Salary above the threshold is enough even when duties are clerical"
       },
       {
         "id": "d",
-        "text": "1.5× after 40 hours in the workweek"
+        "text": "Paying any salary lets the employer skip overtime regardless of duties"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Hours are hours. This item asks: “FLSA overtime for a nonexempt is:”. The matching answer is: 1.5× after 40 hours in the workweek (usual federal rule). Independent UniPrep diagnostic — not an official HRCI PHR paper. This is the usual federal rule.",
+    "correctOptionId": "b",
+    "explanation": "FLSA white-collar exemptions require both a salary-basis/salary-level test and a duties test. A director title and a salary do not convert clerical scanning into executive or administrative work. Without genuine management or independent policy judgment as the primary duty, the role is nonexempt and overtime is due.",
     "distractorExplanations": {
-      "a": "Daily overtime after 8 hours is a state rule (e.g., California), not the federal FLSA standard.",
-      "b": "The FLSA rate is 1.5×; double time comes from state law or company policy.",
-      "c": "The 8/80 system is a limited exception for hospitals and residential care facilities, not the usual rule."
+      "a": "Titles are not controlling; the executive test looks at actual management of a recognized department and staff.",
+      "c": "Salary level is necessary but not sufficient; clerical production work fails the duties test.",
+      "d": "Salary basis without qualifying duties does not create an exemption or erase overtime."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-033",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "An exempt EAP employee still must:",
+    "prompt": "An eligible employee is on approved FMLA leave for a serious health condition. What must the employer do with the employee’s group health coverage during that leave?",
     "options": [
       {
         "id": "a",
-        "text": "Meet duties and salary tests"
+        "text": "Cancel medical coverage on the first unpaid leave day to avoid premium cost"
       },
       {
         "id": "b",
-        "text": "Hold a manager or director title"
+        "text": "Move the employee to COBRA immediately because the leave week is unpaid"
       },
       {
         "id": "c",
-        "text": "Earn a salary, with duties not reviewed"
+        "text": "Keep group health on the same terms as if the employee were still at work"
       },
       {
         "id": "d",
-        "text": "Supervise at least five full-time employees"
+        "text": "Continue coverage only after the employee prepays all 12 weeks of premiums"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Duties tests matter. This item asks: “An exempt EAP employee still must:”. The matching answer is: Meet duties and salary tests — a title is not enough. Independent UniPrep diagnostic — not an official HRCI PHR paper. A title is not enough.",
+    "correctOptionId": "c",
+    "explanation": "Federal FMLA requires the employer to maintain group health coverage under the same conditions as if the employee had continued working. The employee still owes the usual employee share of premiums. Unpaid leave is not a COBRA qualifying event by itself while FMLA coverage must be kept in force.",
     "distractorExplanations": {
-      "b": "A title alone does not make anyone exempt; actual duties and salary decide.",
-      "c": "Salary basis is only one test; the duties test must also be met.",
-      "d": "The executive exemption requires directing at least two full-time employees, not five."
+      "a": "Dropping coverage on day one of unpaid FMLA violates the maintain-coverage rule.",
+      "b": "COBRA is for loss of coverage after a qualifying event, not a substitute for FMLA continuation.",
+      "d": "Employers may require the usual share on the usual schedule; requiring 12 weeks prepaid is not the federal rule."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-034",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "A compa-ratio of 0.80 means:",
+    "prompt": "A covered employee at an 80-person employer is terminated (not for gross misconduct) and receives a COBRA election notice. What is the usual federal election window?",
     "options": [
       {
         "id": "a",
-        "text": "Pay is 80% of the range maximum"
+        "text": "30 days from the qualifying event, or continuation rights expire permanently"
       },
       {
         "id": "b",
-        "text": "Pay is at 80% of range midpoint"
+        "text": "90 days from the plan’s Form 5500 filing date for that plan year"
       },
       {
         "id": "c",
-        "text": "Pay is 20% above the range midpoint"
+        "text": "No election is needed because coverage continues automatically for 18 months"
       },
       {
         "id": "d",
-        "text": "Pay is at the 80th market percentile"
+        "text": "60 days from the later of coverage loss or when the election notice arrives"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Read the range. This item asks: “A compa-ratio of 0.80 means:”. The matching answer is: Pay is at 80% of range midpoint — a signal, not a crime by itself. Independent UniPrep diagnostic — not an official HRCI PHR paper. It is a signal to review, not a violation by itself.",
+    "correctOptionId": "d",
+    "explanation": "Federal COBRA gives the qualified beneficiary at least 60 days to elect, measured from the later of the date coverage would be lost or the date the election notice is provided. Coverage is not automatic. Thirty days is a common misconception borrowed from other benefit deadlines, and Form 5500 timing is unrelated.",
     "distractorExplanations": {
-      "a": "Compa-ratio divides pay by the range midpoint, not the maximum.",
-      "c": "Reverses the direction: 0.80 is 20% below the midpoint, not above.",
-      "d": "A percentile is a market position; compa-ratio is pay ÷ midpoint of the range."
+      "a": "Confuses a 30-day HIPAA special-enrollment or other deadline with COBRA’s 60-day election period.",
+      "b": "Form 5500 is an annual plan filing; it does not start or end a COBRA election clock.",
+      "c": "Continuation is elective and generally requires timely election and premium payment, not automatic enrollment."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-035",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "Lead-the-market pay is chosen when:",
+    "prompt": "After a market study, a job’s 50th-percentile survey rate is $80,000. Leadership wants a match-the-market policy. How should HR set the salary-range midpoint?",
     "options": [
       {
         "id": "a",
-        "text": "You want to minimize fixed labor costs"
+        "text": "Place the midpoint at the 75th percentile so the range lags the labor market"
       },
       {
         "id": "b",
-        "text": "Turnover is low and roles are easy to fill"
+        "text": "Set the midpoint at the 50th percentile ($80,000) as the match-market target"
       },
       {
         "id": "c",
-        "text": "You need scarce talent and can fund it"
+        "text": "Set the midpoint equal to the range minimum so new hires start at market rate"
       },
       {
         "id": "d",
-        "text": "The labor market is soft and budgets are tight"
+        "text": "Ignore survey data and set the midpoint solely from the incumbent’s current pay"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Strategy first. This item asks: “Lead-the-market pay is chosen when:”. The matching answer is: You need scarce talent and can fund it. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "b",
+    "explanation": "In a match-the-market strategy, the range midpoint is aimed at the market going rate, typically the survey 50th percentile for the benchmark job. Leading uses a higher percentile; lagging uses a lower one. Midpoint is not the minimum, and one incumbent’s pay is not a market price.",
     "distractorExplanations": {
-      "a": "Minimizing labor costs points to a lag-the-market strategy, not a lead strategy.",
-      "b": "Low turnover and easy-to-fill roles argue for meeting or lagging the market.",
-      "d": "A soft market and tight budget favor lagging; leading costs more."
+      "a": "The 75th percentile is a lead-the-market choice, not a lag or a match-to-median design.",
+      "c": "The minimum is the hire-in zone; using it as midpoint would underpay fully proficient incumbents.",
+      "d": "Job pricing starts from the job’s market and internal value, not one person’s current salary."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-036",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "A bonus that is discretionary is:",
+    "prompt": "A covered employee is terminated for reasons other than gross misconduct. What is the usual maximum federal COBRA continuation period for that qualifying event?",
     "options": [
       {
         "id": "a",
-        "text": "Excluded from federal income tax withholding as a gift to staff"
+        "text": "6 months, matching a typical short-term disability maximum duration"
       },
       {
         "id": "b",
-        "text": "Included in the FLSA regular rate used to calculate overtime pay"
+        "text": "12 months, matching an ERISA summary plan description annual cycle"
       },
       {
         "id": "c",
-        "text": "Owed to departing employees under final paycheck laws"
+        "text": "18 months for termination or a reduction in hours"
       },
       {
         "id": "d",
-        "text": "Not a guaranteed wage in the same way a promised commission may be"
+        "text": "36 months for every qualifying event, including ordinary termination"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Labels need legal review. This item asks: “A bonus that is discretionary is:”. The matching answer is: Not a guaranteed wage in the same way a promised commission may be. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "c",
+    "explanation": "Termination or a reduction in hours generally opens 18 months of COBRA (29 months if a timely disability extension applies). Thirty-six months is reserved for other events such as death, divorce, Medicare entitlement of the covered employee, or a dependent aging out—not ordinary termination.",
     "distractorExplanations": {
-      "a": "Bonuses are taxable supplemental wages subject to withholding, not gifts.",
-      "b": "Reversed: truly discretionary bonuses are excluded from the regular rate; nondiscretionary bonuses are included.",
-      "c": "Final-pay laws cover earned wages; a truly discretionary bonus is generally not an earned wage owed at exit."
+      "a": "Short-term disability duration is a separate wage-replacement design, not the COBRA maximum.",
+      "b": "SPD timing and annual notices are ERISA communication rules, not COBRA duration.",
+      "d": "36 months applies to specified second events, not the default termination/reduction-in-hours period."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-037",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "COBRA is about:",
+    "prompt": "HR is building a point-factor job evaluation plan to price internal jobs. What should the compensable factors measure?",
     "options": [
       {
         "id": "a",
-        "text": "Continuation of group health after qualifying events"
+        "text": "Each incumbent’s latest performance rating and years of service in the role"
       },
       {
         "id": "b",
-        "text": "Conversion of group life insurance to an individual policy"
+        "text": "External survey percentiles for similar titles in the local labor market"
       },
       {
         "id": "c",
-        "text": "Retiree health coverage funded by a pension plan"
+        "text": "Degrees the current holder earned beyond what the job description requires"
       },
       {
         "id": "d",
-        "text": "Health coverage portability rules for preexisting conditions"
+        "text": "Job-content dimensions: skill, effort, responsibility, and working conditions"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Qualifying events. This item asks: “COBRA is about:”. The matching answer is: Continuation of group health after qualifying events, at a cost. Independent UniPrep diagnostic — not an official HRCI PHR paper. Coverage continues at the participant's cost (up to 102% of premium).",
+    "correctOptionId": "d",
+    "explanation": "Point-factor systems score the job, not the person. Classic compensable factors are skill, effort, responsibility, and working conditions (or similar job-content dimensions). Performance, tenure, extra credentials, and market percentiles belong to other pay tools: merit, longevity, hiring criteria, and market pricing.",
     "distractorExplanations": {
-      "b": "Life insurance conversion is a policy feature; COBRA covers group health plans.",
-      "c": "COBRA is temporary, employee-paid continuation, not retiree coverage funded by a pension.",
-      "d": "Portability and preexisting-condition rules came from HIPAA, not COBRA."
+      "a": "Performance and tenure price the person; they are not job-evaluation factors.",
+      "b": "Survey percentiles are the market-pricing method, used alongside—not as—internal point factors.",
+      "c": "Extra education the incumbent holds is a person characteristic, not a requirement of the job."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-038",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "ERISA fiduciary duty on a 401(k) includes:",
+    "prompt": "An analyst is paid $56,000. The grade midpoint is $70,000 and the range maximum is $91,000. What does a compa-ratio of 0.80 mean for job pricing?",
     "options": [
       {
         "id": "a",
-        "text": "Guaranteeing participants a minimum annual return"
+        "text": "Pay is 80% of midpoint and may need a market or internal-equity review"
       },
       {
         "id": "b",
-        "text": "Prudent process and fees that can be explained"
+        "text": "Pay is 80% of the range maximum, so the incumbent is already over range"
       },
       {
         "id": "c",
-        "text": "Picking the cheapest funds without other review"
+        "text": "Pay sits 20% above midpoint because 1.00 minus 0.80 is read in reverse"
       },
       {
         "id": "d",
-        "text": "Matching employee deferrals at the IRS maximum"
+        "text": "The job is priced at the 80th percentile of the salary survey used this year"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Process over bets. This item asks: “ERISA fiduciary duty on a 401(k) includes:”. The matching answer is: Prudent process and fees that can be explained. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "Compa-ratio is actual pay divided by the range midpoint ($56,000 ÷ $70,000 = 0.80). Below 1.00 means pay is under midpoint, which is a signal to check experience, performance, or compression—not a legal violation by itself. It is not pay versus maximum and not a market percentile.",
     "distractorExplanations": {
-      "a": "ERISA judges fiduciaries on prudent process, not on guaranteeing investment results.",
-      "c": "Low fees matter, but prudence weighs quality and suitability too, not cost alone.",
-      "d": "Matching formulas are a plan design choice, not a fiduciary duty."
+      "b": "Compa-ratio uses midpoint, not maximum; $56,000 is well below the $91,000 max.",
+      "c": "0.80 is 20% below midpoint, not above; reversing the ratio misreads the index.",
+      "d": "A market percentile compares the job rate to survey data, which is a different metric."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-039",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "An SPD must be:",
+    "prompt": "A nonexempt assembler earns $20 per hour plus a promised production bonus tied to weekly output. How should overtime be calculated under the FLSA?",
     "options": [
       {
         "id": "a",
-        "text": "Filed with the DOL in place of the Form 5500"
+        "text": "Ignore the bonus and pay overtime only at 1.5 times the $20 hourly rate"
       },
       {
         "id": "b",
-        "text": "Given to participants only when they request it"
+        "text": "Include the nondiscretionary bonus in the regular rate, then pay 1.5× over 40"
       },
       {
         "id": "c",
-        "text": "Understandable and given on the ERISA timeline"
+        "text": "Pay double time on the bonus alone and ignore whether weekly hours exceed 40"
       },
       {
         "id": "d",
-        "text": "Written as the full legal plan document itself"
+        "text": "Treat the bonus as a gift and exclude it from both straight-time wages and overtime"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Participants get the SPD. This item asks: “An SPD must be:”. The matching answer is: Understandable and given on the ERISA timeline. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "b",
+    "explanation": "Nondiscretionary bonuses (promised for output, attendance, or similar) must be included in the FLSA regular rate. Overtime is 1.5 times that blended rate for hours over 40. Truly discretionary bonuses, decided at the employer’s sole later choice with no prior promise, are the ones generally excluded.",
     "distractorExplanations": {
-      "a": "SPDs are no longer routinely filed with the DOL, and they never replace the Form 5500 annual report.",
-      "b": "ERISA requires automatic distribution to participants within set deadlines, not only on request.",
-      "d": "The SPD summarizes the plan in plain language; the plan document is a separate instrument."
+      "a": "Omitting a promised production bonus understates the regular rate and underpays overtime.",
+      "c": "Overtime is driven by weekly hours over 40, not by paying double time on the bonus in isolation.",
+      "d": "A promised output bonus is wages, not a gift; gifts and true discretionary bonuses are the exclusion."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-040",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "A wellness program that is too coercive can:",
+    "prompt": "A biotech employer cannot fill specialized quality roles and has budget for higher fixed pay. When is a lead-the-market midpoint policy the best fit?",
     "options": [
       {
         "id": "a",
-        "text": "Lose its HSA eligibility under IRS rules"
+        "text": "When the goal is to cut base payroll during a soft labor market"
       },
       {
         "id": "b",
-        "text": "Violate FLSA overtime and minimum wage rules"
+        "text": "When turnover is already low and replacements are easy to hire locally"
       },
       {
         "id": "c",
-        "text": "Require OSHA injury recordkeeping"
+        "text": "When scarce skills must be hired and the budget can fund higher midpoints"
       },
       {
         "id": "d",
-        "text": "Create ADA/GINA/HIPAA problems"
+        "text": "When the firm wants to lag surveys and rely only on year-end cash bonuses"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Incentives have caps and notices. This item asks: “A wellness program that is too coercive can:”. The matching answer is: Create ADA/GINA/HIPAA problems. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "c",
+    "explanation": "Lead-the-market sets midpoints above survey medians to attract and retain scarce talent. It raises fixed cost, so it fits when skills are hard to hire and leadership will fund the structure. Cost-cutting, easy fills, or a lag-plus-bonus mix point to match or lag strategies instead.",
     "distractorExplanations": {
-      "a": "HSA eligibility depends on the health plan design, not on wellness incentive pressure.",
-      "b": "Wellness coercion raises ADA voluntariness and GINA issues, not FLSA wage problems.",
-      "c": "OSHA recordkeeping covers work injuries; it is not triggered by wellness program design."
+      "a": "Cutting base pay in a soft market is a lag or freeze strategy, the opposite of leading.",
+      "b": "Easy replacement and low turnover do not justify paying a structural premium.",
+      "d": "Lagging the survey and substituting bonuses is a lag mix, not a lead-midpoint policy."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-041",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "Prevailing wage / Davis-Bacon (when it applies) is:",
+    "prompt": "A salaried exempt professional misses three hours on Tuesday for personal errands. The manager wants to reduce that week’s salary by three hours. What is the usual FLSA salary-basis rule?",
     "options": [
       {
         "id": "a",
-        "text": "A mandated rate on covered public work — not a vibe"
+        "text": "Dock any partial-day personal absence; exempt status is unaffected by the deduction"
       },
       {
         "id": "b",
-        "text": "Optional overtime"
+        "text": "Convert the person to hourly for that week, then resume salary the following week"
       },
       {
         "id": "c",
-        "text": "A 401(k) match"
+        "text": "Reduce salary in proportion to hours missed on every partial personal day"
       },
       {
         "id": "d",
-        "text": "FMLA"
+        "text": "Do not dock partial-day personal absences; that deduction can destroy the exemption"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Know if you are covered. This item asks: “Prevailing wage / Davis-Bacon (when it applies) is:”. The matching answer is: A mandated rate on covered public work — not a vibe. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "d",
+    "explanation": "Exempt EAP employees must be paid on a salary basis. Deducting pay for a partial-day personal absence is a classic improper deduction and can destroy the exemption (subject to the window-of-correction rules). Full-day personal absences, bona fide PTO banks, and FMLA leave have different docking rules.",
     "distractorExplanations": {
-      "b": "“Optional overtime” does not answer “Prevailing wage / Davis-Bacon (when it applies) is:”. The matching answer is: A mandated rate on covered public work — not a vibe.",
-      "c": "“A 401(k) match” does not answer “Prevailing wage / Davis-Bacon (when it applies) is:”. The matching answer is: A mandated rate on covered public work — not a vibe.",
-      "d": "“FMLA” does not answer “Prevailing wage / Davis-Bacon (when it applies) is:”. The matching answer is: A mandated rate on covered public work — not a vibe."
+      "a": "Partial-day docking for personal time is the salary-basis violation, not a safe practice.",
+      "b": "Switching to hourly for a week treats the person as nonexempt and undermines salary basis.",
+      "c": "Proportional partial-day reductions are how nonexempt pay works, not exempt salary basis."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-042",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "A total rewards statement is useful to:",
+    "prompt": "An eligible employee is out five consecutive workdays for planned surgery and returns a complete medical certification. What should HR do under federal FMLA?",
     "options": [
       {
         "id": "a",
-        "text": "Replace the annual W-2 form"
+        "text": "Designate FMLA promptly and provide the required designation notice"
       },
       {
         "id": "b",
-        "text": "Show pay plus benefits value"
+        "text": "Wait until 30 consecutive absence days before any FMLA designation"
       },
       {
         "id": "c",
-        "text": "Report benefits costs to the IRS"
+        "text": "Deny FMLA because planned surgery is never a serious health condition"
       },
       {
         "id": "d",
-        "text": "Determine each job's FLSA status"
+        "text": "Require the employee to exhaust 12 weeks of PTO before FMLA can start"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Communicate the package. This item asks: “A total rewards statement is useful to:”. The matching answer is: Show pay plus benefits value. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "Once the employer has enough information (here, a complete certification for inpatient or continuing treatment surgery), it must designate FMLA and give the designation notice, generally within five business days. Surgery can be a serious health condition. PTO may run concurrently if policy allows, but it is not a 12-week precondition.",
     "distractorExplanations": {
-      "a": "A total rewards statement is a communication tool; the W-2 is a required tax form.",
-      "c": "Benefit costs reported to the IRS go on the W-2 or other filings, not a total rewards statement.",
-      "d": "FLSA status comes from duties and salary tests, not a rewards statement."
+      "b": "There is no 30-day waiting period before designation; delay can forfeit employer protections.",
+      "c": "Inpatient care or continuing treatment can make surgery a serious health condition under FMLA.",
+      "d": "Employers may require concurrent PTO, but they cannot make employees burn 12 PTO weeks first."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-043",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "Shift differential is:",
+    "prompt": "A company averaged 18 employees last year and sponsors a group health plan. After a termination, a manager tells HR to mail federal COBRA election notices. What is the correct response?",
     "options": [
       {
         "id": "a",
-        "text": "Overtime pay required for night work"
+        "text": "Mail federal COBRA packets because every employer health plan is covered"
       },
       {
         "id": "b",
-        "text": "Premium pay set by FLSA for weekend shifts"
+        "text": "Mail COBRA only if the departing employee had at least five years of service"
       },
       {
         "id": "c",
-        "text": "Extra pay for less desirable hours"
+        "text": "Federal COBRA generally starts at 20 employees; check state mini-COBRA"
       },
       {
         "id": "d",
-        "text": "A bonus paid for perfect attendance"
+        "text": "COBRA applies only to fully insured plans and never to self-funded group plans"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Define it in policy. This item asks: “Shift differential is:”. The matching answer is: Extra pay for less desirable hours, if you offer it. Independent UniPrep diagnostic — not an official HRCI PHR paper. It applies if the employer offers it.",
+    "explanation": "Federal COBRA generally covers group health plans of employers that had 20 or more employees on typical business days in the prior calendar year. An 18-employee firm is usually outside federal COBRA, though many states impose mini-COBRA on smaller groups. Service length and insured-versus-self-funded status do not create that 20-employee test.",
     "distractorExplanations": {
-      "a": "The FLSA requires no extra pay for night work; shift differentials are voluntary.",
-      "b": "The FLSA does not mandate weekend premiums; any premium comes from policy or contract.",
-      "d": "Attendance bonuses reward attendance, not working less desirable shifts."
+      "a": "Small-employer plans are generally excluded from federal COBRA despite offering group health.",
+      "b": "COBRA eligibility is about qualifying events and coverage, not a five-year vesting rule.",
+      "d": "Self-funded ERISA plans can be subject to federal COBRA; funding method is not the size test."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-044",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "Imputed income on a benefit means:",
+    "prompt": "After ranges are updated, an incumbent’s base pay sits $2,000 above the new range maximum. What is the usual job-pricing practice?",
     "options": [
       {
         "id": "a",
-        "text": "It is excluded from taxable wages"
+        "text": "Immediately cut base pay to the new maximum to restore internal equity overnight"
       },
       {
         "id": "b",
-        "text": "It is taxed only when paid in cash"
+        "text": "Recalculate FLSA status because pay above the maximum automatically makes the job exempt"
       },
       {
         "id": "c",
-        "text": "It is reported on a 1099-NEC"
+        "text": "Treat the amount over the maximum as imputed income reported on Form 1099-NEC"
       },
       {
         "id": "d",
-        "text": "The IRS may tax a portion"
+        "text": "Red-circle the rate—hold or lump-sum future increases until the range catches up"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Tax is part of benefits. This item asks: “Imputed income on a benefit means:”. The matching answer is: The IRS may tax a portion — payroll has to get it right. Independent UniPrep diagnostic — not an official HRCI PHR paper. Payroll has to get it right.",
+    "explanation": "A red-circle rate is pay above the range maximum, usually frozen (or given as lump-sum bonuses instead of base increases) until market movement lifts the range. Immediate base cuts create morale and, in some states, notice issues. Range position does not decide FLSA status, and the overage is still W-2 wages, not 1099 income.",
     "distractorExplanations": {
-      "a": "Imputed income is the taxable value of a noncash benefit; it is added to wages.",
-      "b": "Imputed income applies to noncash benefits, such as group-term life over $50,000.",
-      "c": "Employee imputed income is reported on the W-2; Form 1099-NEC is for nonemployee compensation."
+      "a": "Cutting base to force a range fit is unusual and can be treated as a demotion or wage reduction.",
+      "b": "Exemption turns on duties and salary-basis tests, not on whether pay exceeds a structure max.",
+      "c": "Employee wages belong on the W-2; Form 1099-NEC is for nonemployee compensation."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-comp-ben-045",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "comp-ben",
-    "prompt": "A clawback on a bonus after fraud is:",
+    "prompt": "Payroll asks whether a truly discretionary year-end bonus, decided after the year with no prior promise, must go into the FLSA regular rate for nonexempt overtime. What is the correct treatment?",
     "options": [
       {
         "id": "a",
-        "text": "A contract/policy tool"
+        "text": "Include every bonus in the regular rate, including holiday gifts of any amount"
       },
       {
         "id": "b",
-        "text": "An FLSA overtime offset"
+        "text": "Exclude a true discretionary bonus from the regular rate; promised bonuses stay in"
       },
       {
         "id": "c",
-        "text": "A COBRA qualifying event"
+        "text": "Pay it as earned wages on the final paycheck of anyone who resigns mid-year"
       },
       {
         "id": "d",
-        "text": "A remedy only for public companies"
+        "text": "Exclude it from income tax withholding because discretionary bonuses are nontaxable gifts"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Write it first. This item asks: “A clawback on a bonus after fraud is:”. The matching answer is: A contract/policy tool — draft it before you need it. Independent UniPrep diagnostic — not an official HRCI PHR paper. Draft it before you need it.",
+    "correctOptionId": "b",
+    "explanation": "Under the FLSA, a bonus is discretionary—and generally excluded from the regular rate—only if the employer retains discretion on fact and amount until near the time of payment and did not promise it as part of a plan. Nondiscretionary or promised bonuses must be included. Discretionary labeling does not make the payment a tax-free gift or an automatic final-pay wage.",
     "distractorExplanations": {
-      "b": "Clawbacks recover incentive pay after misconduct; they are not tied to FLSA overtime.",
-      "c": "COBRA qualifying events trigger health continuation, not bonus recovery.",
-      "d": "SEC/Dodd-Frank rules require clawbacks at listed companies, but private employers can adopt them by contract too."
+      "a": "Over-includes: holiday gifts of nominal value and true discretionary bonuses can be excluded.",
+      "c": "A bonus that was never promised is generally not earned wages owed at resignation.",
+      "d": "Bonuses are taxable supplemental wages; gift treatment is an IRS misconception."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-046",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "Title VII covers:",
+    "prompt": "A 120-employee private manufacturer has no federal contracts. Finance wants to skip the EEO-1 because 'that form is only for contractors.' What should the PHR advise?",
     "options": [
       {
         "id": "a",
-        "text": "Race, color, sex, age, and disability"
+        "text": "File Component 1; private employers with 100 or more employees report workforce demographics to the EEOC"
       },
       {
         "id": "b",
-        "text": "Race, color, religion, sex, national origin"
+        "text": "Skip the filing; EEO-1 Component 1 applies only to federal contractors with 50 or more employees"
       },
       {
         "id": "c",
-        "text": "Race, religion, sex, and veteran status"
+        "text": "File VETS-4212 instead; that veterans report replaced EEO-1 for private non-contractor employers"
       },
       {
         "id": "d",
-        "text": "Color, religion, national origin, and genetics"
+        "text": "Submit last year's affirmative action plan to OFCCP and treat that contractor packet as the EEO-1 filing"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Know the statute. This item asks: “Title VII covers:”. The matching answer is: Race, color, religion, sex, national origin — and the case law on harassment/retaliation. Independent UniPrep diagnostic — not an official HRCI PHR paper. Case law extends it to harassment and retaliation.",
+    "correctOptionId": "a",
+    "explanation": "EEO-1 Component 1 is a workforce demographic report to the EEOC. Private employers with 100 or more employees generally must file, even with no federal contract. The contractor threshold (often 50 employees plus a qualifying contract) is an additional coverage path, not the only one. VETS-4212 and AAPs are separate contractor obligations.",
     "distractorExplanations": {
-      "a": "Age is protected by the ADEA and disability by the ADA, not Title VII.",
-      "c": "Veteran status is protected by USERRA/VEVRAA; the list also omits color and national origin.",
-      "d": "Genetic information is protected by GINA, and the list omits race and sex."
+      "b": "Contractor coverage is extra, not exclusive; a 100-employee private firm typically still files Component 1.",
+      "c": "VETS-4212 is a veterans employment report for certain contractors; it did not replace the EEO-1.",
+      "d": "An AAP is an OFCCP contractor document, not a substitute EEO-1 Component 1 filing with the EEOC."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-047",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "ADA interactive process is:",
+    "prompt": "A new operations VP wants last year's EEO-1 uploaded into the OFCCP audit folder and labeled 'our AAP.' What should HR explain?",
     "options": [
       {
         "id": "a",
-        "text": "A medical exam the employer orders first"
+        "text": "The EEO-1 is the AAP; attaching the prior-year Component 1 filing satisfies an OFCCP audit"
       },
       {
         "id": "b",
-        "text": "A review limited to the employee's job title"
+        "text": "The EEO-1 is an EEOC demographic snapshot; an AAP is a separate contractor planning document"
       },
       {
         "id": "c",
-        "text": "A dialogue about reasonable accommodation"
+        "text": "OFCCP treats Component 1 job-category counts as a complete utilization analysis with goals"
       },
       {
         "id": "d",
-        "text": "An undue-hardship denial issued in writing"
+        "text": "Only EEO-1 pay-data Component 2, when collected, functions as the written affirmative action plan"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Talk, then decide. This item asks: “ADA interactive process is:”. The matching answer is: A dialogue about reasonable accommodation, not a one-letter deny. Independent UniPrep diagnostic — not an official HRCI PHR paper. It is not a one-letter denial.",
+    "correctOptionId": "b",
+    "explanation": "The EEO-1 tells the EEOC how the workforce looks by job category, sex, and race/ethnicity at a snapshot. An affirmative action plan for covered federal contractors is a different OFCCP document with utilization, goals, and outreach analysis. Re-labeling an EEO-1 as an AAP leaves the contractor file incomplete.",
     "distractorExplanations": {
-      "a": "Employers may request reasonable documentation, but the process is a dialogue, not a mandatory exam first.",
-      "b": "The process looks at the person's limitations and essential functions, not just the title.",
-      "d": "Undue hardship is a defense considered after exploring options, not the process itself."
+      "a": "Component 1 is not an AAP; OFCCP expects a distinct plan, not a recycled EEOC headcount file.",
+      "c": "Job-category counts on the EEO-1 are not a utilization analysis with incumbency versus availability.",
+      "d": "Pay-data collection, when it occurs, still is not the narrative AAP contractors must maintain."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-048",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "FMLA eligible employee typically needs:",
+    "prompt": "Payroll offers W-2 totals, home addresses, and SSNs 'to make the EEO-1 more useful to the government.' What belongs on Component 1?",
     "options": [
       {
         "id": "a",
-        "text": "6 months, 1,000 hours, and 15 or more employees"
+        "text": "Each employee's exact wages and bonus so the EEOC can run a pay-equity audit"
       },
       {
         "id": "b",
-        "text": "12 months, 1,000 hours, and 20 employees at the site"
+        "text": "Only the top-five executives' demographics, because they represent the employer"
       },
       {
         "id": "c",
-        "text": "12 months of service, with no hours threshold"
+        "text": "Headcount by EEO job category, sex, and race/ethnicity for the snapshot period"
       },
       {
         "id": "d",
-        "text": "12 months, 1250 hours, and a covered employer size"
+        "text": "Home addresses and SSNs so the EEOC can match employees to census files"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Do the math. This item asks: “FMLA eligible employee typically needs:”. The matching answer is: 12 months, 1250 hours, and a covered employer size — then a qualifying reason. Independent UniPrep diagnostic — not an official HRCI PHR paper. A qualifying reason is also needed.",
+    "correctOptionId": "c",
+    "explanation": "Component 1 is a demographic headcount: employees grouped into EEO job categories with sex and race/ethnicity counts for a selected pay period. It is not a dump of SSNs, home addresses, or individual W-2 amounts. Mixing identifiers into the EEO-1 workpapers also creates a privacy incident without helping the filing.",
     "distractorExplanations": {
-      "a": "Uses ADA/Title VII-like figures; FMLA requires 12 months, 1,250 hours, and 50 employees within 75 miles.",
-      "b": "1,000 hours is the ERISA vesting year; FMLA requires 1,250 hours and 50 employees within 75 miles.",
-      "c": "FMLA has both a 12-month and a 1,250-hour test in the prior 12 months."
+      "a": "Individual wage lines are not what Component 1 collects; that confuses the form with a pay study.",
+      "b": "The report covers the workforce in EEO categories, not a handful of named executives.",
+      "d": "SSNs and home addresses are not EEO-1 fields and should not ride along as 'helpful' extras."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-049",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "A Form 300 log is:",
+    "prompt": "A picker hired four years ago resigned eight months ago. Counsel asks whether that Form I-9 can be shredded this week. What is the retention rule?",
     "options": [
       {
         "id": "a",
-        "text": "OSHA recordkeeping for work-related injuries"
+        "text": "Destroy it now; three years after the hire date already passed last calendar year"
       },
       {
         "id": "b",
-        "text": "The OSHA annual summary posted Feb–Apr"
+        "text": "Keep it seven years so I-9 retention matches common employment-tax record habits"
       },
       {
         "id": "c",
-        "text": "The OSHA incident report for each case"
+        "text": "Destroy it the day after the final paycheck because IRCA ends at termination"
       },
       {
         "id": "d",
-        "text": "A workers' comp claim form for the insurer"
+        "text": "Keep it until one year after termination, the later of the two statutory dates"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Recordables have tests. This item asks: “A Form 300 log is:”. The matching answer is: OSHA recordkeeping for work-related injuries that meet the criteria. Independent UniPrep diagnostic — not an official HRCI PHR paper. Only cases that meet recording criteria go on the log.",
+    "correctOptionId": "d",
+    "explanation": "Employers retain each I-9 for three years after the hire date or one year after termination, whichever is later. Here three years after hire already passed, but one year after the resignation is still about four months away, so the form stays. Neither IRS seven-year habits nor 'destroy at final pay' replace that later-of rule.",
     "distractorExplanations": {
-      "b": "The annual summary posted February 1 to April 30 is Form 300A, not the 300 log.",
-      "c": "The detailed incident report for each case is Form 301.",
-      "d": "Workers' comp claims are state insurance forms, separate from OSHA logs."
+      "a": "Three years after hire is only one prong; when termination is later, keep one year after exit.",
+      "b": "Seven years is a tax-file convention, not the IRCA I-9 retention period.",
+      "c": "IRCA does not let you destroy the I-9 at the last paycheck; post-termination time still runs."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-050",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "USERRA requires:",
+    "prompt": "A supervisor tells a new hire to 'just bring a U.S. passport so HR does not have to look at other papers.' What should the PHR do?",
     "options": [
       {
         "id": "a",
-        "text": "Paid military leave for up to 5 years"
+        "text": "Stop the request; the employee may present any acceptable List A document or List B plus List C"
       },
       {
         "id": "b",
-        "text": "Reemployment rights after uniformed service"
+        "text": "Allow it if the supervisor puts the passport-only instruction in a written email to HR staff"
       },
       {
         "id": "c",
-        "text": "Rehire only if the employee gave 30 days' notice"
+        "text": "Require the passport plus a Social Security card so identity and work status are dual-checked"
       },
       {
         "id": "d",
-        "text": "Unpaid leave limited to 12 weeks per year"
+        "text": "Accept only passports for adult hires because List B identity documents are limited to minors"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Military leave is federal. This item asks: “USERRA requires:”. The matching answer is: Reemployment rights after uniformed service as the statute says. Independent UniPrep diagnostic — not an official HRCI PHR paper. Reemployment applies as the statute describes.",
+    "correctOptionId": "a",
+    "explanation": "Document abuse occurs when an employer specifies which acceptable I-9 documents the employee must show. The employee chooses any valid List A document or a List B identity document plus a List C work-authorization document. A manager's 'passport only' instruction is unlawful even if meant to speed Section 2.",
     "distractorExplanations": {
-      "a": "USERRA protects up to 5 cumulative years of service, but the leave is generally unpaid.",
-      "c": "USERRA requires advance notice where possible, with no 30-day minimum.",
-      "d": "Twelve weeks per year is the FMLA limit; USERRA covers up to 5 cumulative years."
+      "b": "A written manager preference does not legalize specifying documents; the choice remains the employee's.",
+      "c": "If List A is presented, List C is not required; stacking extra papers is another form of specification.",
+      "d": "List B is not a minor-only list; adults may present List B plus List C instead of List A."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-051",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "A negligent-hire risk is highest when you:",
+    "prompt": "An LPR presented an unexpired Permanent Resident Card (Form I-551) at hire. Two years later the date printed on the card has passed. Should HR reverify?",
     "options": [
       {
         "id": "a",
-        "text": "Run a job-related background check for a driver role"
+        "text": "Yes; complete Section 3 within three business days of the printed card date"
       },
       {
         "id": "b",
-        "text": "Skip a check for a desk role with no safety duties"
+        "text": "Yes, but only if E-Verify previously returned a tentative nonconfirmation"
       },
       {
         "id": "c",
-        "text": "Skip a reasonable check for a role with foreseeable harm"
+        "text": "No; do not reverify an LPR I-551 solely because the card's printed date passed"
       },
       {
         "id": "d",
-        "text": "Follow FCRA steps before taking adverse action"
+        "text": "Remove the person from the schedule until a newly issued green card is produced"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Duty of care. This item asks: “A negligent-hire risk is highest when you:”. The matching answer is: Skip a reasonable check for a role with foreseeable harm. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "USCIS instructions tell employers not to reverify U.S. citizens or lawful permanent residents who presented a Form I-551. The card's expiration date does not end LPR status or restart Section 3. Reverification is for temporary work authorization that actually expires, not for a green card date.",
     "distractorExplanations": {
-      "a": "A job-related check lowers negligent-hire risk rather than raising it.",
-      "b": "With no foreseeable harm, skipping a check carries less risk than skipping one for a high-risk role.",
-      "d": "FCRA compliance governs how checks are used; it reduces, not raises, negligent-hire risk."
+      "a": "Section 3 timing for expiring temporary work papers does not apply to an I-551 LPR presentation.",
+      "b": "E-Verify TNC history does not create an I-9 reverification duty for an LPR green card.",
+      "d": "Pulling the employee off the schedule treats a card reprint as lost work authorization, which it is not."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-052",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "GINA limits:",
+    "prompt": "ICE serves a Notice of Inspection for Forms I-9. How should those records have been stored so HR can produce them without over-disclosing?",
     "options": [
       {
         "id": "a",
-        "text": "Medical exams after a conditional job offer"
+        "text": "Inside each medical file, because identity documents are treated as ADA medical information"
       },
       {
         "id": "b",
-        "text": "Questions about an applicant's age or birth date"
+        "text": "Only as a scanned offer letter in the ATS, which substitutes for Form I-9 in an audit"
       },
       {
         "id": "c",
-        "text": "Use of drug test results in hiring decisions"
+        "text": "In the public OSHA 300 log binder so safety and immigration records travel together"
       },
       {
         "id": "d",
-        "text": "Genetic information in employment decisions"
+        "text": "In a dedicated I-9 file or system, produced without dumping full personnel or medical files"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Do not collect genetic data to hire. This item asks: “GINA limits:”. The matching answer is: Genetic information in employment decisions. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "Best practice is to keep I-9s (and copies of documents, if you copy) in a separate file or system so an ICE inspection does not become a wholesale personnel-file dump. Medical files, OSHA logs, and ATS offer letters are the wrong homes: they mix legally distinct records and either withhold the actual Form I-9 or over-disclose unrelated data.",
     "distractorExplanations": {
-      "a": "Post-offer medical exams are governed by the ADA, not GINA.",
-      "b": "Questions about age or birth date raise ADEA concerns; GINA covers genetic information and family medical history.",
-      "c": "Drug tests are not medical exams under the ADA and are not genetic information under GINA."
+      "a": "I-9 identity documents are not ADA medical records and do not belong in the confidential medical file.",
+      "b": "An offer letter is not Form I-9; ICE inspects the I-9 itself, not ATS recruiting PDFs.",
+      "c": "OSHA injury logs are posted/workplace safety records, not an immigration audit binder."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-053",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "A privacy misstep is emailing:",
+    "prompt": "A warehouse employee strains a back lifting a crate, misses two shifts, works restricted duty, and later fills a prescription muscle relaxer. Ice was used on day one. How should OSHA recording be handled?",
     "options": [
       {
         "id": "a",
-        "text": "A spreadsheet of SSNs to the wrong vendor"
+        "text": "Skip the OSHA log because an ice pack is first aid, and first aid keeps the whole case off the log"
       },
       {
         "id": "b",
-        "text": "A redacted headcount report to the CFO"
+        "text": "Record it on the OSHA 300 log; days away, restriction, or a prescription each make the case recordable"
       },
       {
         "id": "c",
-        "text": "A job posting to an external job board"
+        "text": "File only the state workers' compensation first report and skip OSHA forms when WC is involved"
       },
       {
         "id": "d",
-        "text": "A benefits guide link to all employees"
+        "text": "Wait 180 days before recording; OSHA recording begins only after six months of work restriction"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Minimum necessary. This item asks: “A privacy misstep is emailing:”. The matching answer is: A spreadsheet of SSNs to the wrong vendor. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "b",
+    "explanation": "A work-related case is recordable if it involves death, days away, restricted work or transfer, medical treatment beyond first aid, loss of consciousness, or a significant diagnosed injury. Missed shifts, restricted duty, and a prescription drug each independently meet the test. First-aid ice on day one does not cancel those later criteria, and workers' comp filing is a separate insurance process.",
     "distractorExplanations": {
-      "b": "Redacted aggregate data to an authorized executive is not a privacy breach.",
-      "c": "A job posting is public information meant for outside audiences, so emailing it exposes no personal data.",
-      "d": "A general benefits guide contains no individual personal data."
+      "a": "First aid does not wipe recordability once days away, restriction, or prescription treatment occur.",
+      "c": "A state WC claim form does not replace the OSHA 300/301 recordkeeping duty for covered employers.",
+      "d": "There is no 180-day waiting period; recording is due within seven calendar days of receiving information that a recordable case occurred."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-054",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "Pay transparency laws (where they exist) can require:",
+    "prompt": "On February 10 a plant manager asks when the annual injury summary can come down off the break-room board. What is the OSHA 300A posting window?",
     "options": [
       {
         "id": "a",
-        "text": "Paying every employee in a role the range midpoint"
+        "text": "Keep Form 300A posted February 1 through April 30 where employee notices are customarily posted"
       },
       {
         "id": "b",
-        "text": "Posting ranges and not retaliating for pay talk"
+        "text": "Post the annual summary only on the day an OSHA compliance officer is expected on the site"
       },
       {
         "id": "c",
-        "text": "Disclosing each employee's salary publicly"
+        "text": "Post each Form 301 incident report on the wall for the full calendar year instead of 300A"
       },
       {
         "id": "d",
-        "text": "Banning salary discussions among coworkers"
+        "text": "Email 300A to OSHA and skip workplace posting whenever the establishment e-files injury data"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "State law stacks on federal. This item asks: “Pay transparency laws (where they exist) can require:”. The matching answer is: Posting ranges and not retaliating for pay talk. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "a",
+    "explanation": "Covered establishments must post the Form 300A annual summary from February 1 through April 30 in a conspicuous place where workplace notices usually appear. February 10 is still inside that window, so the poster stays up. Electronic submission, if required, does not replace the employee posting, and Form 301 is an incident report, not the annual summary employees must see.",
     "distractorExplanations": {
-      "a": "Transparency laws require disclosure of ranges, not paying everyone the midpoint.",
-      "c": "Laws require posting ranges for roles, not publishing individual salaries.",
-      "d": "Banning pay discussions conflicts with NLRA Section 7 and many transparency laws."
+      "b": "Inspection-day-only posting defeats the three-month employee notice OSHA requires.",
+      "c": "Form 301 is the case incident report; posting every 301 would also expose more detail than 300A.",
+      "d": "E-file or electronic submission, where it applies, is in addition to—not instead of—the Feb–Apr posting."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-055",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "An EEO-1 (when you must file) is:",
+    "prompt": "A finger is cleaned, bandaged, and the employee returns to full duty the same shift. No prescription, stitches, or lost time. Is this OSHA-recordable for a covered employer?",
     "options": [
       {
         "id": "a",
-        "text": "A pay equity audit filed with the OFCCP"
+        "text": "Yes; any visible blood on a tool automatically becomes an OSHA recordable case under Part 1904"
       },
       {
         "id": "b",
-        "text": "Optional for a 10,000-person federal contractor"
+        "text": "Yes; every workers' compensation claim, even if later denied, must appear on the 300 log"
       },
       {
         "id": "c",
-        "text": "A demographic report to the EEOC on the timeline"
+        "text": "Yes; adhesive bandages count as medical treatment beyond first aid under OSHA recordkeeping rules"
       },
       {
         "id": "d",
-        "text": "An affirmative action plan filed with the DOL"
+        "text": "Generally no; cleaning and a bandage without days away, restriction, or treatment beyond first aid stays first aid"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Know if you file. This item asks: “An EEO-1 (when you must file) is:”. The matching answer is: A demographic report to the EEOC on the timeline. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "d",
+    "explanation": "OSHA lists cleaning wounds and using bandages as first aid. First aid alone, with no days away, restricted work, job transfer, or medical treatment beyond first aid, is not recordable. Blood on a tool, a WC claim, or a bandage does not by itself convert the case. Contrast this with prescription medication, stitches, or lost time, which typically do.",
     "distractorExplanations": {
-      "a": "The EEO-1 reports workforce demographics to the EEOC; it is not a pay equity audit for OFCCP.",
-      "b": "“Optional for a 10,000-person federal contractor always” does not answer “An EEO-1 (when you must file) is:”. The matching answer is: A demographic report to the EEOC on the timeline.",
-      "d": "Affirmative action plans are kept by contractors, not filed as the EEO-1 report."
+      "a": "Blood exposure on equipment is not an automatic 300-log trigger; apply the recording criteria.",
+      "b": "Workers' comp and OSHA recordkeeping use different tests; a WC filing does not force a 300 entry.",
+      "c": "Bandages are on OSHA's first-aid list, not medical treatment beyond first aid."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-056",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "A workplace safety complaint to OSHA that is real should not be met with:",
+    "prompt": "Outside counsel is redlining the employee handbook in an at-will state. Which disclaimer best reduces implied-contract risk?",
     "options": [
       {
         "id": "a",
-        "text": "Abatement"
+        "text": "Employment is promised for at least 12 months after the employee signs the acknowledgment"
       },
       {
         "id": "b",
-        "text": "An investigation"
+        "text": "Discipline will follow every numbered step in the progressive-discipline chart in every case"
       },
       {
         "id": "c",
-        "text": "Better guarding"
+        "text": "The handbook is not a contract; employment is at-will and the company may revise policies"
       },
       {
         "id": "d",
-        "text": "Retaliation"
+        "text": "Policies change only when a majority of employees vote to accept the revision"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Section 11(c). This item asks: “A workplace safety complaint to OSHA that is real should not be met with:”. The matching answer is: Retaliation. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "c",
+    "explanation": "Handbooks can create implied contracts if they guarantee tenure or lock the employer into every listed process. A clear at-will statement, a 'not a contract' disclaimer, and a reserved right to change policies are the usual PHR controls. Promising a year of work, promising every discipline step, or requiring an employee vote does the opposite.",
     "distractorExplanations": {
-      "a": "Abatement (fixing the hazard) is the proper response; OSH Act Section 11(c) bars retaliation.",
-      "b": "“An investigation” does not answer “A workplace safety complaint to OSHA that is real should not be met with:”. The matching answer is: Retaliation.",
-      "c": "“Better guarding” does not answer “A workplace safety complaint to OSHA that is real should not be met with:”. The matching answer is: Retaliation."
+      "a": "A one-year guarantee is a term contract, which undercuts at-will instead of preserving it.",
+      "b": "Mandatory step charts are a classic implied-contract hook that limits discharge discretion.",
+      "d": "Requiring an employee vote to change rules treats the handbook like a bargained contract."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-057",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "Record retention for I-9s is:",
+    "prompt": "Operations wants a 40-page overtime-approval SOP copied into the employee handbook 'so nobody can say they were not told.' What is the better PHR design?",
     "options": [
       {
         "id": "a",
-        "text": "The statutory later-of rule"
+        "text": "Keep a short handbook rule and house the detailed SOP in a manager policy you can update"
       },
       {
         "id": "b",
-        "text": "Three years after the hire date"
+        "text": "Paste every operational SOP into the handbook so the acknowledgment covers each procedure"
       },
       {
         "id": "c",
-        "text": "One year after termination"
+        "text": "Replace the handbook with Slack pins, which never create handbook-contract risk"
       },
       {
         "id": "d",
-        "text": "Seven years after termination"
+        "text": "Publish overtime rules only inside a union contract, even at a nonunion site"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Count the years. This item asks: “Record retention for I-9s is:”. The matching answer is: The statutory later-of rule — not 'until the drawer is full'. Independent UniPrep diagnostic — not an official HRCI PHR paper. Keep I-9s 3 years after hire or 1 year after termination, whichever is later.",
+    "explanation": "The handbook is the employee-facing summary of rules and disclaimers. Long manager SOPs belong in a policy/procedure library so operations can revise workflows without implying that every checklist is a contractual right. A receipt acknowledgment still covers the handbook rule. Slack pins are still communications that can create expectations, and a nonunion site has no CBA to hide procedures in.",
     "distractorExplanations": {
-      "b": "Three years after hire is only half of the rule; the later of that or one year after termination applies.",
-      "c": "One year after termination is half of the rule; use whichever date is later.",
-      "d": "Seven years is a common tax-record habit, not the I-9 rule."
+      "b": "Stuffing SOPs into the handbook bloats it and makes each revision look like a bargained term.",
+      "c": "Informal chat posts can still create policy promises; they are not a safe substitute handbook.",
+      "d": "A nonunion employer has no union contract vehicle; that answer invents a CBA that does not exist."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-058",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "A handbook disclaimer should say:",
+    "prompt": "A supervisor emails the whole shift a scanned doctor's note describing an employee's lifting limits 'so everyone can help.' What should HR do?",
     "options": [
       {
         "id": "a",
-        "text": "Employment is promised for at least one year"
+        "text": "File the doctor's note in the ordinary personnel file so any future supervisor can open it"
       },
       {
         "id": "b",
-        "text": "The handbook is not a contract"
+        "text": "Add the diagnosis to the OSHA 300A annual posting so coworkers see why the job was modified"
       },
       {
         "id": "c",
-        "text": "Policies change only with employee consent"
+        "text": "Forward the doctor's note to payroll to store with Forms I-9, because leave tracking sits with hire forms"
       },
       {
         "id": "d",
-        "text": "Discipline will follow every listed step"
+        "text": "Move it into a confidential medical file, separate from personnel, and limit access to need-to-know"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "Words create contracts. This item asks: “A handbook disclaimer should say:”. The matching answer is: The handbook is not a contract (where you want at-will preserved). Independent UniPrep diagnostic — not an official HRCI PHR paper. This preserves at-will employment where desired.",
+    "correctOptionId": "d",
+    "explanation": "ADA (and related privacy practice) requires that employee medical information be collected on a need-to-know basis and kept in a confidential medical file separate from the personnel file. A team-wide email of a doctor's note is a disclosure. Coworkers may need a functional restriction ('no lifts over 20 pounds'), not the diagnosis or the scan.",
     "distractorExplanations": {
-      "a": "A guarantee of term employment destroys at-will status; the disclaimer should do the opposite.",
-      "c": "Disclaimers usually reserve the employer's right to change policies; requiring consent creates contract terms.",
-      "d": "Promising every step can create an implied contract for progressive discipline."
+      "a": "The personnel file is too broadly available; medical notes do not belong there.",
+      "b": "The 300A summary is an injury-count poster, not a place to publish a coworker's diagnosis.",
+      "c": "I-9 files are for employment-eligibility forms, not medical notes or FMLA clinical detail."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-059",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "If state law is stricter than federal on sick leave:",
+    "prompt": "Benefits asks HR to email a spreadsheet of employee Social Security numbers to a new broker 'to speed the census.' What is the right privacy response?",
     "options": [
       {
         "id": "a",
-        "text": "Follow federal law, which preempts state"
+        "text": "Send the file if the spreadsheet name includes the word confidential"
       },
       {
         "id": "b",
-        "text": "Apply the federal rule to exempt staff"
+        "text": "CC the entire leadership team so executives share responsibility for the transfer"
       },
       {
         "id": "c",
-        "text": "Follow the stricter rule that applies"
+        "text": "Refuse the open email; send only needed fields through a secure channel to a vetted vendor"
       },
       {
         "id": "d",
-        "text": "Average the two rules for each employee"
+        "text": "Post the census on the intranet so employees can self-correct SSNs before the broker sees them"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Floor vs ceiling. This item asks: “If state law is stricter than federal on sick leave:”. The matching answer is: Follow the stricter rule that applies. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "explanation": "SSNs are high-risk personal data. PHR practice is minimum necessary: confirm the broker is under contract, use a secure transfer, and send only the fields the census actually requires. A 'confidential' filename, a wider CC list, or an intranet post increases exposure instead of reducing it and can trigger state breach-notice duties if the file is misdirected.",
     "distractorExplanations": {
-      "a": "Federal employment laws generally set a floor; more protective state laws are not preempted.",
-      "b": "Exempt status is an FLSA wage concept; it does not remove state sick-leave rights.",
-      "d": "Employers follow the more protective rule, not an average."
+      "a": "A filename label does not encrypt the attachment or stop a misaddressed email from being a breach.",
+      "b": "Copying more executives multiplies inboxes that hold SSNs; it does not transfer legal risk away from HR.",
+      "d": "Posting SSNs internally is a broadcast, not a safeguard, and far exceeds need-to-know."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   },
   {
     "id": "phr-hrci-readiness-check-compliance-060",
     "examSlug": "phr-hrci-readiness-check",
     "topicId": "compliance",
-    "prompt": "Attorney-client on an investigation is:",
+    "prompt": "A line manager wants PDFs of every direct report's full personnel file for 'career talks,' including investigation memos and I-9 copies. What should HR release?",
     "options": [
       {
         "id": "a",
-        "text": "A shield that keeps the underlying facts out of discovery"
+        "text": "The entire personnel file; any supervisor of record is entitled to every document stored in that file"
       },
       {
         "id": "b",
-        "text": "Created when HR stamps notes 'privileged'"
+        "text": "Job-related performance documents on a need-to-know basis, not investigations, medical notes, or I-9s"
       },
       {
         "id": "c",
-        "text": "A reason to deny the accused any chance to respond"
+        "text": "I-9 copies and medical notes, but withhold performance reviews as too sensitive for line managers"
       },
       {
         "id": "d",
-        "text": "Not a reason to skip a fair process for the employee"
+        "text": "The full PDFs to the manager's personal email so the files can be read off-network at home"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Privilege is not a people-process. This item asks: “Attorney-client on an investigation is:”. The matching answer is: Not a reason to skip a fair process for the employee. Independent UniPrep diagnostic — not an official HRCI PHR paper.",
+    "correctOptionId": "b",
+    "explanation": "Personnel information is disclosed on a need-to-know basis. A supervisor may see current performance, goals, and job history needed to coach. Investigation files, medical information, and I-9s serve other legal purposes and are not career-talk material. Emailing full files to a personal account also loses custody of sensitive records.",
     "distractorExplanations": {
-      "a": "Privilege protects attorney-client communications, not the underlying facts.",
-      "b": "A label does not create privilege; it requires legal advice from counsel.",
-      "c": "Privilege does not remove the need for a fair process that lets the accused respond."
+      "a": "Supervisor status is not a master key to investigations, medical data, or I-9s.",
+      "c": "That pair is backwards: performance is what the manager needs; I-9s and medical notes are not.",
+      "d": "Personal email takes records outside employer systems and heightens a privacy incident."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P1 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
   }
 ]

@@ -1,0 +1,259 @@
+{
+  "wastewater-operator-1-readiness-check": {
+    "wastewater-operator-1-readiness-check-regs-046": {
+      "prompt": "A municipal POTW just received a renewed NPDES permit. What does that permit actually set for the plant?",
+      "options": {
+        "a": "Effluent limits, monitoring, and reporting for the discharge",
+        "b": "Drinking-water MCLs and TCR sampling for the receiving stream",
+        "c": "Certified staffing ratios and weekend coverage for every shift",
+        "d": "Construction specs for laterals, manholes, and force-main pipe"
+      },
+      "correctOptionId": "a",
+      "explanation": "An NPDES permit under the Clean Water Act is the plant's discharge license. It sets numeric and narrative effluent limits, self-monitoring, and reporting to the permitting authority. It does not set Safe Drinking Water Act MCLs, operator staffing, or sewer construction codes.",
+      "distractorExplanations": {
+        "b": "MCLs and TCR sampling are Safe Drinking Water Act drinking-water rules, not NPDES effluent conditions.",
+        "c": "Staffing and certification come from state operator rules, not from the NPDES effluent tables.",
+        "d": "Sewer design criteria (for example Ten States) are separate from the NPDES discharge permit."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-regs-047": {
+      "prompt": "On a dry-weather morning, sewage is bubbling from a manhole onto a residential street. What must the crew typically do?",
+      "options": {
+        "a": "Report the event only if sewage reaches a storm inlet or creek",
+        "b": "Clean it up and mention it only on the next annual DMR summary",
+        "c": "Stop the overflow, contain what you can, and report per the permit",
+        "d": "Delay any notice until the exact overflow volume has been measured"
+      },
+      "correctOptionId": "c",
+      "explanation": "A sanitary-sewer overflow is a sewage release from the collection system. Standard practice and most NPDES/state SSO rules require stopping the overflow, containing and cleaning recoverable sewage, and giving prompt notice plus a follow-up written report. Water-of-the-U.S. contact, annual DMR notes, and exact gallon counts do not create a reporting delay.",
+      "distractorExplanations": {
+        "a": "SSOs are typically reportable even on pavement; reaching surface water is not the only trigger.",
+        "b": "SSO notice is usually 24 hours plus a short written report, not an annual DMR footnote.",
+        "d": "Deadlines run from discovery; a volume estimate can follow but does not postpone the first notice."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-048": {
+      "prompt": "During a wet-weather surge, an operator opens a gate that sends primary effluent around secondary treatment to the outfall. Unless the permit authorizes it, this bypass is:",
+      "options": {
+        "a": "Allowed whenever influent flow exceeds the plant's rated design capacity",
+        "b": "Acceptable if it is described later in the annual plant operations report",
+        "c": "A violation only if the diversion continues longer than twenty-four hours",
+        "d": "A permit violation unless a documented bypass is allowed by the permit"
+      },
+      "correctOptionId": "d",
+      "explanation": "40 CFR 122.41(m) treats a bypass as diversion around any treatment unit. Unauthorized bypass of secondary is a permit violation. High flow alone does not grant authority. Anticipated bypasses need prior notice; unanticipated ones need 24-hour oral notice and a 5-day written report, and even then only if they were unavoidable to prevent loss of life, personal injury, or severe property damage.",
+      "distractorExplanations": {
+        "a": "Exceeding design flow is not a blank check; bypass remains prohibited unless the 122.41(m) exceptions apply.",
+        "b": "An annual narrative is not the required 24-hour / 5-day bypass reporting path.",
+        "c": "There is no 24-hour grace period; an unauthorized bypass is a violation from the first diversion."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-049": {
+      "prompt": "The plant wants to land-apply dewatered cake on a nearby farm. Under 40 CFR 503-style rules, the cake must meet:",
+      "options": {
+        "a": "Pathogen class, vector-attraction reduction, and pollutant metal limits",
+        "b": "Class A pathogen reduction only; vector-attraction treatment is optional",
+        "c": "Metal ceilings only, because remaining pathogens die quickly in soil",
+        "d": "Class B pathogen limits with no access, grazing, or harvest restrictions"
+      },
+      "correctOptionId": "a",
+      "explanation": "Part 503 land application requires all three: a pathogen class (A or B), vector-attraction reduction, and pollutant (metal) limits. Class B also carries site restrictions on public access, grazing, and crop harvest. Skipping VAR or relying on soil die-off is not a substitute for those controls.",
+      "distractorExplanations": {
+        "b": "Vector-attraction reduction is required along with pathogen reduction, not an optional extra.",
+        "c": "Pathogen reduction is required; soil die-off does not replace Class A or Class B treatment.",
+        "d": "Class B biosolids carry access, grazing, and harvest restrictions; they are not unrestricted."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-050": {
+      "prompt": "Month-end lab sheets for effluent BOD, TSS, and bacteria are on the desk. The discharge monitoring report the operator must file is:",
+      "options": {
+        "a": "The SDWA consumer confidence report mailed to drinking-water customers",
+        "b": "The scheduled submittal of permit sample results to the regulator",
+        "c": "The internal process-control log of mixed-liquor and DO readings",
+        "d": "The five-year NPDES renewal application package to EPA or the state"
+      },
+      "correctOptionId": "b",
+      "explanation": "A DMR (often via NetDMR) is the periodic, usually monthly, report of NPDES monitoring results to the permitting authority. Process logs stay at the plant. Consumer confidence reports are drinking-water SDWA products. Permit renewal is a separate application, not the monthly DMR.",
+      "distractorExplanations": {
+        "a": "A CCR is a drinking-water SDWA report; a DMR reports wastewater NPDES results.",
+        "c": "Process-control logs support operations; they are not the signed DMR filed with the agency.",
+        "d": "Renewal applications are filed on the permit cycle; DMRs go in each monitoring period."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-regs-051": {
+      "prompt": "After a thunderstorm, an outfall on an old combined sewer discharges to the river. That combined sewer overflow is:",
+      "options": {
+        "a": "A sanitary-only overflow from a blocked separate sanitary sewer",
+        "b": "A stormwater-only discharge from a municipal separate storm system",
+        "c": "A wet-weather mix of sewage and stormwater from combined sewers",
+        "d": "A planned dry-weather plant bypass around secondary treatment units"
+      },
+      "correctOptionId": "c",
+      "explanation": "CSOs occur where one pipe carries both sewage and stormwater. In wet weather the system can overflow mixed wastewater at designated CSO points. They are distinct from SSOs on separate sanitary sewers, MS4 storm-only outfalls, and treatment-plant bypasses. Many cities operate CSOs under long-term control plans while reducing volume and untreated discharge.",
+      "distractorExplanations": {
+        "a": "That describes an SSO on a separate sanitary system, not a combined-sewer wet-weather overflow.",
+        "b": "MS4 outfalls carry stormwater; CSOs carry a mix of sewage and stormwater.",
+        "d": "A plant bypass is a treatment diversion; a CSO is a collection-system wet-weather overflow."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-052": {
+      "prompt": "A classified municipal wastewater plant needs someone in responsible charge on the operating shift. That person is typically:",
+      "options": {
+        "a": "An EPA-issued national certificate holder recognized in every state",
+        "b": "A certified operator only if the service population exceeds 10,000",
+        "c": "An uncertified veteran with five documented years of plant experience",
+        "d": "A state-certified operator at the grade required for the plant"
+      },
+      "correctOptionId": "d",
+      "explanation": "Operator certification is a state program. A classified plant must have a state-certified operator in responsible charge at the grade matching the plant classification. EPA does not issue a nationwide operator card. Small classified plants still need a certified operator, and experience is a path to a grade, not a substitute for the certificate.",
+      "distractorExplanations": {
+        "a": "States issue operator certificates; EPA does not, and reciprocity is not automatic nationwide.",
+        "b": "Classification uses process and size; small classified plants still need a certified operator in charge.",
+        "c": "Experience supports eligibility for a grade; it does not replace holding the required certificate."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-regs-053": {
+      "prompt": "Inspectors are checking restaurant grease interceptors under the utility's FOG program. The main reason the program exists is to:",
+      "options": {
+        "a": "Keep grease from clogging sewers and causing sanitary overflows",
+        "b": "Harvest grease for resale that funds collection-system upgrades",
+        "c": "Raise influent BOD so the aeration basin has extra carbon food",
+        "d": "Control industrial metals that would pass through to the river"
+      },
+      "correctOptionId": "a",
+      "explanation": "Fats, oils, and grease solidify in collection lines, causing blockages and SSOs. FOG programs use interceptor maintenance and food-service controls to keep that load out of the sewers. Recycling grease can be a side benefit, but it is not the regulatory purpose. Extra BOD is a nuisance, and metals belong to industrial pretreatment, not FOG.",
+      "distractorExplanations": {
+        "b": "Grease recycling may occur, but FOG rules exist to prevent blockages and overflows, not to raise revenue.",
+        "c": "FOG is a scum and blockage load, not a desired carbon source for activated sludge.",
+        "d": "Toxic pass-through is an industrial pretreatment issue; FOG programs target grease blockages."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-regs-054": {
+      "prompt": "A metal finisher dumps a cyanide slug into the city sewer. Industrial pretreatment exists mainly to:",
+      "options": {
+        "a": "Bill extra BOD surcharge so the city can expand plant capacity",
+        "b": "Stop toxic slugs from killing the biomass or passing through",
+        "c": "Let industries discharge straight to the river under the POTW permit",
+        "d": "Require every house to pretreat sewage in a septic tank first"
+      },
+      "correctOptionId": "b",
+      "explanation": "Pretreatment (40 CFR 403) controls industrial users that discharge to a POTW. The goals are to prevent interference with biological treatment, prevent pass-through of toxics to waters of the U.S., protect workers and sludge quality, and conserve treatment capacity. Surcharges may exist, but they are not the core purpose. Direct river discharge needs its own NPDES permit, and homes are not industrial users.",
+      "distractorExplanations": {
+        "a": "Strength surcharges recover cost; pretreatment's core job is interference and pass-through control.",
+        "c": "Direct dischargers need their own NPDES permits; pretreatment covers indirect users of the POTW.",
+        "d": "Pretreatment programs regulate industrial users, not ordinary residential sewer connections."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-055": {
+      "prompt": "The weekly fecal coliform result is above the weekly maximum in the NPDES permit. The operator should:",
+      "options": {
+        "a": "Re-sample until a passing result can replace the high value",
+        "b": "Leave it off the DMR if the monthly geometric mean still passes",
+        "c": "Check disinfection, resample as required, and report the result",
+        "d": "Raise the chlorine dose and omit the high result from the DMR"
+      },
+      "correctOptionId": "c",
+      "explanation": "An exceedance is both an operations problem and a reporting event. Fix disinfection, collect any additional samples the permit requires, and report every valid result on the DMR. Weekly limits stand even if the monthly average later passes. Replacing or omitting a high result is falsification under the DMR certification.",
+      "distractorExplanations": {
+        "a": "Every valid result must be reported; swapping samples to hide an exceedance is falsification.",
+        "b": "Weekly maxima are independent limits; a passing monthly average does not erase the weekly miss.",
+        "d": "Process correction does not cancel reporting; leaving a result off the DMR is a false statement."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-056": {
+      "prompt": "In a city with separate sanitary sewers, a roof drain was illegally tied into a house lateral. The correct fix is to:",
+      "options": {
+        "a": "Keep routing roof water to sanitary so it receives full secondary treatment",
+        "b": "Allow the connection only on dry days and cap it before forecast rain",
+        "c": "Dump the storm flow into aeration to dilute a high-BOD industrial slug",
+        "d": "Disconnect it so stormwater does not hydraulically overload the plant"
+      },
+      "correctOptionId": "d",
+      "explanation": "Separate sanitary systems are not designed for storm inflow. Roof leaders and other illicit connections cause hydraulic overload, washed-out biomass, and SSOs. Stormwater should stay in the storm system or on-site drainage. Diluting a BOD slug with storm flow is not treatment and can violate the NPDES prohibition on unauthorized bypass or washout.",
+      "distractorExplanations": {
+        "a": "Sending stormwater through a separate sanitary sewer causes inflow overloads and SSOs.",
+        "b": "Illicit storm connections fail during rain, which is when the overload happens; a dry-day cap is not a control.",
+        "c": "Storm dilution washes out mixed liquor and overloads clarifiers; it is not a treatment strategy."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-057": {
+      "prompt": "The permit requires a quarterly whole-effluent toxicity test on final effluent. The lab is checking:",
+      "options": {
+        "a": "Whether effluent is toxic to specified aquatic test organisms",
+        "b": "Whether BOD and TSS still meet the conventional numeric limits",
+        "c": "Whether indicator bacteria show that disinfection is adequate",
+        "d": "Whether each listed metal is below its chemical-specific limit"
+      },
+      "correctOptionId": "a",
+      "explanation": "WET tests expose live organisms (often Ceriodaphnia or fathead minnows) to effluent and measure survival or reproduction. They capture combined toxic effect that chemical-by-chemical limits can miss. BOD/TSS, fecal indicators, and ICP metals are separate conventional, disinfection, and chemical-specific tests, not WET.",
+      "distractorExplanations": {
+        "b": "BOD and TSS are conventional pollutant tests; WET is a biological toxicity assay.",
+        "c": "Indicator bacteria measure disinfection; WET measures toxicity to aquatic test organisms.",
+        "d": "Metal scans are chemical-specific; WET measures the combined toxic effect biologically."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-058": {
+      "prompt": "An inspector asks how long the plant must keep bench sheets that support the filed DMRs. The usual answer is:",
+      "options": {
+        "a": "Until the regulator accepts the next month's DMR submittal",
+        "b": "For the period the permit and state rules require",
+        "c": "For one year unless that monitoring period had an exceedance",
+        "d": "Until the contract laboratory invoice is paid and filed away"
+      },
+      "correctOptionId": "b",
+      "explanation": "NPDES standard conditions (40 CFR 122.41(j)) require monitoring records to be kept at least three years, and many permits or states require longer. Retention starts from the date of the sample or report, not from DMR acceptance, a one-year clock, or lab billing. Keep chain-of-custody, calibration, and bench data with the DMR file.",
+      "distractorExplanations": {
+        "a": "Federal rules require at least three years of monitoring records, not just until the next DMR.",
+        "c": "The three-year minimum applies whether results passed or failed; exceedances do not set a shorter clock.",
+        "d": "Record retention is a permit duty tied to compliance files, not to paying a lab invoice."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-regs-059": {
+      "prompt": "The responsible operator signs the monthly DMR before it is submitted. That signature means:",
+      "options": {
+        "a": "The contract laboratory, not the signer, owns any data errors",
+        "b": "The plant met every numeric limit for the reporting period",
+        "c": "The signer certifies the reported data are true and complete",
+        "d": "Missing values may be filled with unmarked estimates of typical data"
+      },
+      "correctOptionId": "c",
+      "explanation": "The DMR certification (40 CFR 122.22 / 122.41) is a legal statement that the information is true, accurate, and complete to the best of the signer's knowledge. It does not claim the plant passed every limit. Exceedances must still be reported. False statements, omitted results, or unmarked estimates are criminal and civil liabilities; a contract lab does not absorb that duty.",
+      "distractorExplanations": {
+        "a": "The permitted facility's signer certifies the report; a contract lab does not take that liability.",
+        "b": "Signing certifies accuracy, not compliance; exceedances must still appear on the DMR.",
+        "d": "Estimated or missing data must be identified; unmarked fill-ins misrepresent the monitoring record."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-regs-060": {
+      "prompt": "At 2 a.m. a pump failure forces an unanticipated bypass of secondary treatment. Besides stopping the diversion, NPDES standard conditions typically require:",
+      "options": {
+        "a": "A note only on the next annual facility compliance inspection form",
+        "b": "A month-end DMR comment with no separate oral or written notice",
+        "c": "A written report within 30 days if the effluent still met numeric limits",
+        "d": "Oral notice within 24 hours and a written report within 5 days"
+      },
+      "correctOptionId": "d",
+      "explanation": "For an unanticipated bypass, 40 CFR 122.41(m)(3)(i) requires oral notice to the permitting authority within 24 hours and a written report within 5 days. The same 24-hour path covers noncompliance that may endanger health or the environment. Passing limits, a later annual form, or a DMR comment do not replace that notice.",
+      "distractorExplanations": {
+        "a": "Annual inspection forms are not the 24-hour / 5-day bypass reporting required by 122.41(m).",
+        "b": "A DMR remark is extra; unanticipated bypass still needs prompt oral and 5-day written notice.",
+        "c": "Meeting numeric limits does not waive bypass reporting, and 30 days is not the 5-day written deadline."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

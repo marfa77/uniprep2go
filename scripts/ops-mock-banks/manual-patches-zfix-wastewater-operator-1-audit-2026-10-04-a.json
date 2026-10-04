@@ -1,0 +1,259 @@
+{
+  "wastewater-operator-1-readiness-check": {
+    "wastewater-operator-1-readiness-check-process-001": {
+      "prompt": "On the 6 a.m. round at a 3.2 MGD municipal plant, Primary Clarifier 2 shows a 14-inch sludge blanket and a thick scum raft. Flow then goes to aeration. What is this tank mainly supposed to take out of the wastewater?",
+      "options": {
+        "a": "Settleable solids and floating scum before biological treatment",
+        "b": "Dissolved BOD and ammonia so the aeration tanks are not loaded",
+        "c": "Colloidal solids and pathogens so chlorine contact is unnecessary",
+        "d": "Grit and sand that settle faster than organic solids at the headworks"
+      },
+      "correctOptionId": "a",
+      "explanation": "Primary clarification is gravity settling plus skimming. Settleable organics drop as primary sludge and fats/oils/grease are skimmed; soluble BOD and ammonia still go to secondary. It is not a grit chamber and does not replace disinfection.",
+      "distractorExplanations": {
+        "b": "Confuses primary settling with secondary biology; dissolved BOD and ammonia pass through the tank.",
+        "c": "Confuses gravity settling with colloid capture and pathogen kill; those need biology and disinfection.",
+        "d": "Confuses the primary tank with the grit chamber, which is upstream and targets heavy inorganics."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-002": {
+      "prompt": "The lab at Riverside WWTP pulls a mid-basin grab from Aeration Tank 1 at 10:15 for mixed liquor TSS. Operators use the result to set wasting. What does that MLSS number represent?",
+      "options": {
+        "a": "The solids settled and wasted from the primary clarifier hoppers",
+        "b": "The biomass and solids circulating in the aeration tank",
+        "c": "The suspended solids remaining in the final plant effluent",
+        "d": "The solids concentration in the RAS line returning from the clarifier"
+      },
+      "correctOptionId": "b",
+      "explanation": "MLSS is the aeration-tank inventory of mixed liquor—biomass plus other suspended solids. Operators hold it with RAS and WAS. Primary sludge, effluent TSS, and RAS concentration are related but different samples and purposes.",
+      "distractorExplanations": {
+        "a": "Confuses MLSS with primary sludge; that hopper solids never mixed in the aeration tank.",
+        "c": "Confuses MLSS with effluent TSS, a permit grab after clarification, not basin inventory.",
+        "d": "Confuses MLSS with RAS; return sludge is thicker underflow, not the mixed liquor itself."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-process-003": {
+      "prompt": "After a weekend of high FOG, the 30-minute settleometer at Mill Creek reads 680 mL with MLSS 2,400 mg/L (SVI about 283 mL/g). Secondary blankets are rising. What does that high SVI usually mean?",
+      "options": {
+        "a": "The mixed liquor settles very quickly, leaving a cloudy supernatant",
+        "b": "The aeration tank is simply over-aerated with DO above 4 mg/L",
+        "c": "The mixed liquor settles poorly and may not compact in the clarifier",
+        "d": "The sludge compacts well and the clarifier blanket stays very low"
+      },
+      "correctOptionId": "c",
+      "explanation": "SVI is settled volume (mL/L) times 1000 divided by MLSS (mg/L). Values well above about 150 mL/g mean bulky, slow-settling floc that holds water, so secondary blankets rise and effluent can carry solids. It is not a DO meter reading.",
+      "distractorExplanations": {
+        "a": "Confuses high SVI with pin floc; fast settle and turbid supernatant usually go with a low SVI.",
+        "b": "Confuses settleability with dissolved oxygen; SVI does not report aeration intensity.",
+        "d": "Confuses high SVI with good compaction; a low blanket matches a low-to-normal SVI."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-004": {
+      "prompt": "At shift change, RAS Pump 2 is in hand and the operator traces the discharge piping before restoring auto. Where should return activated sludge be sent in this conventional activated-sludge plant?",
+      "options": {
+        "a": "From the secondary hopper to the anaerobic digester as wasted solids",
+        "b": "From the primary clarifier underflow back to the plant headworks",
+        "c": "From the secondary weirs as clarified effluent recycled to aeration",
+        "d": "From the secondary hopper back to the aeration tank as seed"
+      },
+      "correctOptionId": "d",
+      "explanation": "RAS returns settled biomass from the secondary clarifier to the aeration tank so MLSS and SRT can be maintained. WAS is the sidestream to solids handling. Primary underflow and clarified effluent are not RAS.",
+      "distractorExplanations": {
+        "a": "Confuses RAS with WAS; biomass sent to digestion is wasted, not returned as seed.",
+        "b": "Confuses RAS with primary sludge recycle; RAS originates in the secondary hopper.",
+        "c": "Confuses RAS with effluent or nitrate recycle; RAS is settled sludge, not weir overflow."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-process-005": {
+      "prompt": "Solids inventory at Cedar Bend has climbed: MLSS 4,100 mg/L, SRT about 18 days, and the secondary blanket is building. The chief operator wants a shorter SRT. What is wasting (WAS) used for here?",
+      "options": {
+        "a": "Control solids retention time by removing excess biomass",
+        "b": "Seed the aeration tank by returning hopper sludge from the clarifier",
+        "c": "Raise MLSS quickly when the secondary blanket looks too thin",
+        "d": "Cut influent BOD load so the calculated F/M ratio falls"
+      },
+      "correctOptionId": "a",
+      "explanation": "WAS removes surplus biomass from the activated-sludge system, which shortens SRT and lowers MLSS. RAS returns solids; wasting does the opposite. Influent BOD is not reduced by opening the WAS valve.",
+      "distractorExplanations": {
+        "b": "Confuses WAS with RAS; returning hopper sludge seeds the tank instead of removing mass.",
+        "c": "Confuses wasting with mass-building; more WAS lowers MLSS, it does not raise it.",
+        "d": "Confuses wasting with influent load; WAS removes biomass, which tends to raise F/M."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-006": {
+      "prompt": "The process worksheet at Harbor View asks for F/M before the operator changes aeration airflow. Primary effluent BOD is known and a mixed-liquor volatile solids mass is calculated. What is a typical F/M ratio?",
+      "options": {
+        "a": "The biomass under aeration divided by the organic load being fed",
+        "b": "The organic load fed divided by the biomass under aeration",
+        "c": "The influent flow rate divided by the aeration tank volume",
+        "d": "The sludge mass wasted each day divided by the total sludge inventory"
+      },
+      "correctOptionId": "b",
+      "explanation": "F/M is food over microorganisms: pounds of BOD (or COD) applied per day divided by pounds of MLVSS under aeration. Conventional plants often run roughly 0.2–0.5 lb BOD/lb MLVSS·d. Inverse biomass/load, hydraulic detention, and 1/SRT are different ratios.",
+      "distractorExplanations": {
+        "a": "Confuses F/M with its inverse; food is the numerator, MLVSS mass is the denominator.",
+        "c": "Confuses F/M with hydraulic loading (Q/V), which ignores BOD and biomass.",
+        "d": "Confuses F/M with the wasting fraction (1/SRT), which tracks solids age, not food."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-007": {
+      "prompt": "A satellite 0.6 MGD plant uses a rock-media trickling filter after primary clarification; the operator reports ponding on one quadrant. How does a trickling filter actually treat the wastewater?",
+      "options": {
+        "a": "By straining solids through the media like a drinking-water sand filter",
+        "b": "By keeping suspended floc mixed with diffused air in an open basin",
+        "c": "By passing flow over media so attached biofilm oxidizes organics",
+        "d": "By holding flow in a pond where algae are the main oxygen source"
+      },
+      "correctOptionId": "c",
+      "explanation": "A trickling filter is attached-growth secondary treatment: wastewater is distributed over media, biofilm oxidizes BOD, and sloughed solids are settled in a following clarifier. Ponding is a media/hydraulic problem, not proof it is a strainer or an activated-sludge tank.",
+      "distractorExplanations": {
+        "a": "Confuses biological media with physical filtration; treatment is oxidation, not straining.",
+        "b": "Confuses attached growth with activated sludge, which suspends floc in aerated mixed liquor.",
+        "d": "Confuses a trickling filter with a lagoon; algae-driven ponds do not use packed media."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-008": {
+      "prompt": "The mesophilic anaerobic digester at East Fork is at 96°F with a steady gas-holder rise. Operators flare excess gas and pump digested solids to storage. What do anaerobic digesters commonly produce?",
+      "options": {
+        "a": "Oxygen-rich off-gas plus a thickened but still raw sludge",
+        "b": "Nitrogen gas from denitrifying nitrate in the sludge",
+        "c": "Carbon dioxide only, with volatile solids mass left unchanged",
+        "d": "Methane-rich biogas plus a more stable, reduced-VS sludge"
+      },
+      "correctOptionId": "d",
+      "explanation": "Anaerobic digestion converts volatile solids to biogas that is typically about 60–70% methane and 30–40% CO2, leaving a more stable sludge. It is not an aerated thickener, an anoxic denitrification tank, or a CO2-only process.",
+      "distractorExplanations": {
+        "a": "Confuses anaerobic digestion with aeration; no oxygen is generated in a sealed digester.",
+        "b": "Confuses digester gas with BNR denitrification, which reduces nitrate to N2 in anoxic zones.",
+        "c": "Understates the gas mix and VS destruction; methane is the energy fraction and mass drops."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-009": {
+      "prompt": "Secondary Clarifier 1 at Pine Ridge follows the aeration tanks; weirs feed the chlorine contact basin. Pin floc is starting to leave over the weirs. What is this final clarifier meant to do?",
+      "options": {
+        "a": "Settle biomass so a clearer effluent can go to disinfection",
+        "b": "Blend raw sewage with finished drinking water for reuse",
+        "c": "Add fluoride as a corrosion-control chemical before discharge",
+        "d": "Hold mixed liquor at high DO so nitrifiers finish in the tank"
+      },
+      "correctOptionId": "a",
+      "explanation": "Secondary clarifiers separate mixed liquor so settled biomass returns as RAS/WAS and a low-TSS supernatant proceeds to disinfection. They are not potable blending, fluoridation, or aerated reactors.",
+      "distractorExplanations": {
+        "b": "Confuses wastewater clarification with potable reuse blending, which is not this unit’s job.",
+        "c": "Confuses a wastewater clarifier with drinking-water fluoridation; fluoride is not added here.",
+        "d": "Confuses a settler with an aeration tank; residual DO in the clarifier is not the nitrification reactor."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-process-010": {
+      "prompt": "Permit ammonia at Lakeview is trending 9 mg/L as N while BOD is in range. Aeration DO is 0.6 mg/L and SRT is only 3 days. The operator is told to restore nitrification. What conversion is nitrification?",
+      "options": {
+        "a": "Nitrate to nitrogen gas in an anoxic selector",
+        "b": "Ammonia to nitrite and then nitrate under aeration",
+        "c": "Organic nitrogen to ammonia during anaerobic digestion",
+        "d": "Ammonia directly to nitrogen gas in the secondary clarifier"
+      },
+      "correctOptionId": "b",
+      "explanation": "Nitrification is aerobic oxidation of ammonia to nitrite then nitrate by autotrophs that need adequate DO, SRT, and alkalinity. Denitrification, ammonification, and shortcut N2 in a clarifier are different steps. Low DO and a 3-day SRT commonly wash nitrifiers out.",
+      "distractorExplanations": {
+        "a": "Confuses nitrification with denitrification, which reduces nitrate to N2 without free oxygen.",
+        "c": "Confuses nitrification with ammonification; digestion releases ammonia, it does not oxidize it.",
+        "d": "Confuses conventional nitrification with anammox or denitrification; clarifiers are not the reactor."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-011": {
+      "prompt": "The MLE plant at Southgate recycles nitrified mixed liquor to an unaerated anoxic zone ahead of aeration. Total nitrogen in the effluent dropped after the recycle pump was repaired. What does denitrification in that zone convert nitrate to?",
+      "options": {
+        "a": "Ammonia, which aeration then strips from the mixed liquor",
+        "b": "Nitrite that is intended to remain as the final effluent form",
+        "c": "Nitrogen gas, which leaves the liquid and lowers total nitrogen",
+        "d": "Organic nitrogen that is then wasted with the WAS stream"
+      },
+      "correctOptionId": "c",
+      "explanation": "In an anoxic zone, heterotrophs use nitrate as an electron acceptor and reduce it to N2 gas, cutting effluent total nitrogen. They need a carbon source and no free DO. The product is not ammonia, leftover nitrite, or organic-N sludge.",
+      "distractorExplanations": {
+        "a": "Confuses denitrification with dissimilatory reduction to ammonia; the BNR goal is N2 gas.",
+        "b": "Treats nitrite as the endpoint; nitrite is only a brief intermediate on the way to N2.",
+        "d": "Confuses nitrate respiration with biosorption of organic nitrogen into WAS."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-012": {
+      "prompt": "Influent pumps at North Interceptor trip on high amps after a storm. The operator finds the mechanically cleaned bar screen bypassed and rags wrapped on the impeller. What is that bar screen at the headworks supposed to remove?",
+      "options": {
+        "a": "Sand and grit that would abrade the pump volutes",
+        "b": "Floating grease and scum ahead of the primary tanks",
+        "c": "Settleable organic solids that belong in primary sludge",
+        "d": "Rags and large debris that would damage pumps and mixers"
+      },
+      "correctOptionId": "d",
+      "explanation": "Bar screens are preliminary treatment: they intercept rags, sticks, and trash so pumps and downstream equipment are protected. Grit, scum, and settleable organics are removed in later units designed for those fractions.",
+      "distractorExplanations": {
+        "a": "Confuses screening with grit removal; inorganics settle in the grit chamber after the screen.",
+        "b": "Confuses screens with scum skimmers or grease traps on the clarifiers.",
+        "c": "Confuses screens with primary clarification, where settleable organics are intended to drop out."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-process-013": {
+      "prompt": "A new operator slows the aerated grit chamber at West Branch until organics start dropping with the sand, and the dumpster smells septic. How should a grit chamber be designed to settle solids?",
+      "options": {
+        "a": "Heavy inorganic grit while keeping organics in suspension",
+        "b": "Light organic solids while sending heavy grit on to the primaries",
+        "c": "Heavy grit together with most of the settleable organic solids",
+        "d": "Fine colloids by holding velocity under about 0.1 ft/s"
+      },
+      "correctOptionId": "a",
+      "explanation": "Grit chambers target dense inorganics (sand, eggshells, cinders) at a velocity near 1 ft/s so lighter organics stay in the flow to primary and secondary treatment. Too-slow velocity makes putrescible, odorous grit and steals BOD from the plant.",
+      "distractorExplanations": {
+        "b": "Reverses the design intent; grit should drop here and organics should continue downstream.",
+        "c": "Describes over-settling; capturing organics with grit creates odor and wastes food for biology.",
+        "d": "Confuses grit removal with colloid settling; 0.1 ft/s is far too slow and not the grit target."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-014": {
+      "prompt": "Package Plant B uses covered rotating biological contactors after primary settling. One shaft is down and the media looks dry on the top third. What is an RBC in this Class 1 plant?",
+      "options": {
+        "a": "A suspended-growth basin mixed by rotating paddle aerators",
+        "b": "Attached-growth media shafts that rotate through the wastewater",
+        "c": "A rotating clarifier rake that scrapes settled sludge to a hopper",
+        "d": "Rotating drum screens that remove fine solids at the headworks"
+      },
+      "correctOptionId": "b",
+      "explanation": "An RBC is attached-growth secondary treatment: plastic media on a horizontal shaft rotate so biofilm is alternately submerged and exposed to air, oxidizing organics. It is not activated sludge, a clarifier collector, or a drum screen.",
+      "distractorExplanations": {
+        "a": "Confuses RBC discs with paddle-mixed suspended growth; floc is not the main biomass form.",
+        "c": "Confuses the biological unit with a sludge-collection mechanism in a clarifier.",
+        "d": "Confuses RBCs with preliminary drum screens; discs carry biofilm, they do not strain rags."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-process-015": {
+      "prompt": "A 0.2 MGD facultative lagoon serving a small town has a 20-day detention time, a green surface, and no RAS pumps. The operator is asked what treatment actually relies on. What is the main mechanism?",
+      "options": {
+        "a": "Short detention with mechanical aeration and continuous sludge return",
+        "b": "Chemical coagulation and settling of suspended solids as the main step",
+        "c": "Long detention with algae and bacteria working to stabilize organics",
+        "d": "Heated anaerobic digestion of thickened sludge in mixed tanks"
+      },
+      "correctOptionId": "c",
+      "explanation": "Facultative ponds treat wastewater with long hydraulic detention: bacteria oxidize organics and algae supply oxygen in the upper layer. There is no RAS loop like activated sludge, and it is not a coagulant plant or a heated sludge digester.",
+      "distractorExplanations": {
+        "a": "Confuses a lagoon with activated sludge, which uses short HRT, air, and RAS.",
+        "b": "Confuses biological pond treatment with physical-chemical coagulation.",
+        "d": "Confuses the pond with a sludge digester; the lagoon treats dilute wastewater, not thickened cake."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

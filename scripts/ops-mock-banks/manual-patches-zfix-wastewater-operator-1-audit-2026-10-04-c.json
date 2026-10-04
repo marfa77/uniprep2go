@@ -1,0 +1,259 @@
+{
+  "wastewater-operator-1-readiness-check": {
+    "wastewater-operator-1-readiness-check-labs-031": {
+      "prompt": "BOD bottles of a seeded effluent dilution are ready for incubation. Which condition matches Standard Methods for a five-day BOD?",
+      "options": {
+        "a": "35 °C for 48 hours in light, tracking oxygen while coliforms grow",
+        "b": "20 °C for five days in light so algae can replace consumed oxygen",
+        "c": "20 °C for five days in the dark, measuring dissolved-oxygen used",
+        "d": "4 °C overnight then 20 °C for two days, tracking carbon dioxide"
+      },
+      "correctOptionId": "c",
+      "explanation": "BOD5 is the oxygen microbes consume at 20 ±1 °C over five days. Bottles incubate in the dark so algae cannot photosynthesize and mask demand. The result is initial minus final DO (after seed/dilution math), not CO2 production or a coliform incubation schedule.",
+      "distractorExplanations": {
+        "a": "35 °C for 48 hours is a coliform/incubator condition, not BOD5; BOD runs 20 °C for five days.",
+        "b": "Light lets algae produce oxygen and understate demand; BOD bottles are incubated in the dark.",
+        "d": "BOD5 is not a refrigerated two-day CO2 test; it is a five-day dark DO-depletion method."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-labs-032": {
+      "prompt": "A permit TSS sample is on the bench. Which lab procedure actually measures total suspended solids?",
+      "options": {
+        "a": "Evaporate a known volume in a dish and weigh all residue as TSS",
+        "b": "Read turbidity on a nephelometer and convert NTU to mg/L TSS",
+        "c": "Settle one liter in an Imhoff cone for one hour and report mL/L",
+        "d": "Filter a known volume, dry the residue at 103–105 °C, and weigh"
+      },
+      "correctOptionId": "d",
+      "explanation": "TSS is gravimetric: a measured volume is passed through a glass-fiber filter, the filter is dried at 103–105 °C, and the retained solids are weighed. Whole-sample evaporation is total solids, Imhoff cones are settleable solids in mL/L, and turbidity only correlates with TSS.",
+      "distractorExplanations": {
+        "a": "Evaporating the entire aliquot measures total solids (dissolved plus suspended), not TSS.",
+        "b": "Turbidity can trend with solids but is not a TSS mass measurement and is not a permit substitute.",
+        "c": "An Imhoff cone measures settleable solids as volume (mL/L), not suspended solids by dry weight."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-labs-033": {
+      "prompt": "The NPDES permit lists chlorine residual as a grab. Why would a 24-hour composite jug be the wrong sample type?",
+      "options": {
+        "a": "Residual changes in minutes, so the permit requires an immediate grab",
+        "b": "Composites better represent residual because the day’s mass load matters",
+        "c": "Residual is acid-preserved and can sit on ice for 48 hours before analysis",
+        "d": "A composite equals a grab whenever plant flow stays nearly constant all day"
+      },
+      "correctOptionId": "a",
+      "explanation": "Chlorine residual and pH shift within minutes in a jug, so they are grabs (or continuous analyzers) analyzed promptly. Staffing, steady flow, or confusing residual with BOD/TSS load does not authorize swapping a required grab for a composite.",
+      "distractorExplanations": {
+        "b": "Mass-load composites are for BOD/TSS-type parameters, not for a rapidly decaying disinfectant residual.",
+        "c": "Acid preservation is for some nutrients; it destroys residual chemistry and is not a 48-hour residual hold.",
+        "d": "The permit specifies sample type; steady flow does not convert a required grab into a composite."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-034": {
+      "prompt": "Influent BOD5 and TSS are listed as 24-hour flow-weighted composites. What is the reason for that sample type?",
+      "options": {
+        "a": "Both parameters swing in minutes like pH, so one mid-shift grab is enough",
+        "b": "The result should represent the day’s mass loading, not one snapshot",
+        "c": "Fecal samples must be composited in sterile bottles over a full 24 hours",
+        "d": "Dissolved oxygen is averaged from hourly aliquots stored in one jug"
+      },
+      "correctOptionId": "b",
+      "explanation": "BOD and TSS are used to judge organic and solids load. A flow-weighted composite mixes aliquots in proportion to flow so the lab number represents the day’s mass, not a single high or low hour. pH, residual, bacteria, and DO cannot be stored that way.",
+      "distractorExplanations": {
+        "a": "pH/residual grabs are for fast-changing chemistry; BOD/TSS are load parameters that usually need composites.",
+        "c": "Bacteriological samples are sterile grabs with short holds; compositing them for 24 hours invalidates the count.",
+        "d": "DO cannot be composited in a jug; oxygen changes as soon as the sample is removed from the process."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-035": {
+      "prompt": "Mixed liquor is poured into a 2-L settleometer while RAS rate is being reviewed. What does the 30-minute settled volume mainly show?",
+      "options": {
+        "a": "The volatile (ignition-loss) fraction of the mixed-liquor solids",
+        "b": "The chlorine demand of secondary effluent before the contact tank",
+        "c": "How the mixed liquor is likely to settle and compact in the clarifier",
+        "d": "Grit-chamber capture efficiency at the headworks for that shift"
+      },
+      "correctOptionId": "c",
+      "explanation": "A settleometer (SSV30) is a process-control picture of activated-sludge settling: blanket height, compaction, and supernatant clarity after 30 minutes. Combined with MLSS it yields SVI. It does not measure VSS, chlorine demand, or grit removal.",
+      "distractorExplanations": {
+        "a": "Volatile fraction is MLVSS from ignition at 550 °C, not a 30-minute settled volume.",
+        "b": "Chlorine demand is a disinfection titration; the settleometer assesses mixed-liquor settling.",
+        "d": "Grit performance is checked at the headworks; the settleometer is an aeration/clarifier tool."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-labs-036": {
+      "prompt": "Aeration-basin DO is 0.4 mg/L and effluent ammonia is climbing. Blowers still have spare capacity. How should the operator use the DO probe?",
+      "options": {
+        "a": "Hold DO near zero so nitrifiers work faster in anoxic mixed liquor",
+        "b": "Treat the probe reading as a real-time BOD5 of the mixed liquor",
+        "c": "Push DO as high as the blowers allow so filaments cannot grow",
+        "d": "Restore about 2 mg/L DO so nitrifiers have oxygen without wasting kWh"
+      },
+      "correctOptionId": "d",
+      "explanation": "The basin DO probe is a process setpoint, typically about 1–3 mg/L. Nitrification needs roughly 2 mg/L dissolved oxygen; 0.4 mg/L with rising ammonia means raise air, not starve the tank. Excess DO wastes blower energy and can shear floc; the probe is not a BOD test.",
+      "distractorExplanations": {
+        "a": "Near-zero DO is anoxic and stalls nitrification; ammonia would keep climbing, not fall.",
+        "b": "A DO probe reads dissolved oxygen now; BOD5 is a five-day laboratory oxygen-demand test.",
+        "c": "Maximum DO wastes power and can cause pin floc; most plants target a modest 1–3 mg/L band."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-037": {
+      "prompt": "Operations wants a dissolved-oxygen number that represents the aeration tank, not a lab BOD bottle. Which sampling approach is valid?",
+      "options": {
+        "a": "Measure in place or as a grab; do not composite DO in a 24-hour jug",
+        "b": "Collect a flow-weighted 24-hour composite in the iced BOD sampler",
+        "c": "Acidify the aliquot with sulfuric acid and hold it up to 28 days",
+        "d": "Incubate a filled BOD bottle five days and call leftover DO process DO"
+      },
+      "correctOptionId": "a",
+      "explanation": "Dissolved oxygen changes as soon as mixed liquor leaves the basin or sits in a jug, so process DO is read in situ with a calibrated probe or as an immediate grab. Compositing, acid preservation, and five-day BOD leftovers do not represent tank DO.",
+      "distractorExplanations": {
+        "b": "A 24-hour composite jug will lose or gain oxygen; it cannot represent basin DO.",
+        "c": "Acid preservation is for some nutrients, kills biology, and is not a DO method or 28-day hold.",
+        "d": "Leftover DO after BOD5 is a lab endpoint, not the aeration tank’s operating dissolved oxygen."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-038": {
+      "prompt": "Today’s flow-weighted influent composite will be set up for BOD5 tomorrow morning. How should that sample be preserved?",
+      "options": {
+        "a": "Acidify to pH below 2 with sulfuric acid so microbes stop using oxygen",
+        "b": "Cool to ≤6 °C without acid and start the test within the 48-hour hold",
+        "c": "Leave the jug at gallery temperature so the seed stays biologically active",
+        "d": "Freeze the composite overnight and thaw it just before bottles are filled"
+      },
+      "correctOptionId": "b",
+      "explanation": "BOD samples are cooled to ≤6 °C, not acidified, because acid kills the organisms the test needs. Standard holding is 48 hours from collection to start of incubation. Room-temperature storage and freezing both change the oxygen demand before the bottles are set.",
+      "distractorExplanations": {
+        "a": "Sulfuric acid is used for some nutrient holds; it kills BOD microbes and voids the test.",
+        "c": "Warm storage lets microbes consume oxygen in the jug, so the BOD5 no longer matches the process.",
+        "d": "Freezing lyses cells and changes demand; BOD composites are refrigerated, not frozen."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-039": {
+      "prompt": "MLSS is 2,500 mg/L (2.5 g/L). After 30 minutes a 1-L settleometer reads 250 mL settled sludge. What SVI should be reported?",
+      "options": {
+        "a": "10 mL/g, treating the sludge as extremely dense and fast-settling",
+        "b": "250 mL/g, reporting the settled volume without dividing by MLSS",
+        "c": "100 mL/g, which is in the typical good-settling activated-sludge range",
+        "d": "625 mL/g, multiplying SSV30 by MLSS instead of dividing by it"
+      },
+      "correctOptionId": "c",
+      "explanation": "SVI = (SSV30 in mL/L) ÷ (MLSS in g/L). Here 250 mL/L ÷ 2.5 g/L = 100 mL/g, a common well-settling value (often about 80–150 mL/g). Reporting the raw 250 mL or multiplying instead of dividing produces a meaningless SVI.",
+      "distractorExplanations": {
+        "a": "10 mL/g would require dividing 250 by 25, not by 2.5 g/L; that density is not what this test shows.",
+        "b": "250 mL/L is the settleometer volume (SSV30), not SVI; SVI still needs division by MLSS.",
+        "d": "Multiplying 250 × 2.5 invents 625 mL/g and would falsely look like severe bulking."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-040": {
+      "prompt": "A BOD5 dilution depletes 7.8 mg/L oxygen but finishes at 0.3 mg/L DO. Seed blanks look acceptable. What should the operator do with that bottle?",
+      "options": {
+        "a": "Report it; any measurable depletion is treated as a valid BOD5 bottle",
+        "b": "Average it with the seed blank because residual dissolved oxygen was low",
+        "c": "Keep it only as CBOD after adding a nitrification inhibitor after the fact",
+        "d": "Reject the bottle; residual DO must remain at least about 1 mg/L"
+      },
+      "correctOptionId": "d",
+      "explanation": "Standard Methods requires at least about 2 mg/L depletion and at least 1.0 mg/L residual DO so the bottle never goes anaerobic. A 0.3 mg/L finish is invalid even if depletion looks large. You cannot rescue it by averaging a seed blank or adding inhibitor after incubation.",
+      "distractorExplanations": {
+        "a": "Large depletion with almost no residual DO means the bottle went anaerobic; the result is not reportable.",
+        "b": "Seed blanks correct for seed oxygen demand on valid bottles; they do not fix an exhausted residual DO.",
+        "c": "Nitrification inhibitor must be added at setup for CBOD; it cannot be added after a five-day run."
+      },
+      "difficulty": "hard"
+    },
+    "wastewater-operator-1-readiness-check-labs-041": {
+      "prompt": "A TSS filter has already been dried at 103–105 °C. The chemist now wants volatile suspended solids. What is the next step?",
+      "options": {
+        "a": "Ignite at 550 °C and report the weight lost as VSS (organic fraction)",
+        "b": "Re-dry the same filter at 103–105 °C and call the second weight VSS",
+        "c": "Dry at 180 °C to drive off bound water and report that loss as VSS",
+        "d": "Ignite at 103–105 °C in a muffle furnace until the filter turns to ash"
+      },
+      "correctOptionId": "a",
+      "explanation": "After TSS at 103–105 °C, VSS is the weight lost on ignition at 550 °C—the organic/volatile fraction. The ash left behind is fixed (inorganic) solids. Repeating the 103–105 °C dry, using 180 °C, or calling 103–105 °C an ignition does not measure VSS.",
+      "distractorExplanations": {
+        "b": "A second 103–105 °C dry is still TSS; volatile solids require ignition, not another drying step.",
+        "c": "180 °C is used in some total-solids variants for bound water, not the 550 °C VSS ignition.",
+        "d": "103–105 °C is a drying temperature; a muffle furnace for VSS is 550 °C, not 103–105 °C."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-042": {
+      "prompt": "The optical DO probe in the aeration tank reads 1.1 mg/L while a Winkler titration on a simultaneous grab reads 2.4 mg/L. For a calibration check, which result should govern?",
+      "options": {
+        "a": "Trust the optical probe because luminescent sensors do not need checks",
+        "b": "Use the Winkler (or a freshly calibrated meter) as the reference check",
+        "c": "Average 1.1 and 2.4 mg/L so neither method is treated as incorrect",
+        "d": "Discard both readings and enter yesterday’s SCADA DO on the log"
+      },
+      "correctOptionId": "b",
+      "explanation": "Process probes drift from fouling, membrane damage, or bad calibration. A Winkler titration (or a meter just calibrated in air-saturated water per SOP) is the laboratory reference. Averaging a drifted probe with the reference, skipping checks, or copying old SCADA hides a real aeration problem.",
+      "distractorExplanations": {
+        "a": "Optical probes still need calibration and fouling checks; they are not maintenance-free truth.",
+        "c": "Averaging a 1.3 mg/L disagreement splits the error; it does not identify which sensor is wrong.",
+        "d": "Yesterday’s SCADA value does not verify today’s probe and would hide a calibration failure."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-043": {
+      "prompt": "A 30-minute settleometer is 800 mL/L with a clear supernatant and a viscous, slow blanket. SVI calculates to about 280 mL/g. What does this picture most likely mean?",
+      "options": {
+        "a": "Pin floc from over-aeration, which leaves a cloudy, dirty supernatant",
+        "b": "A grit overload at the headworks that a settleometer cannot display",
+        "c": "Filamentous bulking: slow-settling sludge occupying most of the cylinder",
+        "d": "A dense, healthy sludge that will keep a very low blanket in the clarifier"
+      },
+      "correctOptionId": "c",
+      "explanation": "A high SSV30 with clear liquid above a bulky, slow blanket and SVI well above ~150–200 mL/g is classic filamentous bulking. Pin floc dirties the supernatant. Grit is a headworks issue. A healthy sludge would compact to a much smaller settled volume.",
+      "distractorExplanations": {
+        "a": "Pin floc produces turbid supernatant from dispersed particles, not a clear liquid over an 800 mL blanket.",
+        "b": "Grit is removed upstream; this mixed-liquor settleometer result is a biological settling problem.",
+        "d": "A dense healthy sludge would show a low SSV30 and SVI near 80–150 mL/g, not 280 mL/g."
+      },
+      "difficulty": "hard"
+    },
+    "wastewater-operator-1-readiness-check-labs-044": {
+      "prompt": "The automatic sampler collecting influent BOD and TSS has been sitting in a warm pipe gallery. What must be true before that day’s composite is valid?",
+      "options": {
+        "a": "Each aliquot was acidified in the sampler so BOD microbes are killed early",
+        "b": "The jug was left open so the composite stays saturated with dissolved oxygen",
+        "c": "Aliquots were time-paced even though the permit specified flow-weighted",
+        "d": "The sample stayed iced (≤6 °C) and aliquots were proportioned to flow"
+      },
+      "correctOptionId": "d",
+      "explanation": "A BOD/TSS composite must stay refrigerated (≤6 °C) and, when the permit says flow-weighted, take larger aliquots at higher flow. A warm gallery without ice lets microbes change the sample in the jug. Acid, an open jug, or switching to time-paced sampling against the permit all invalidate the result.",
+      "distractorExplanations": {
+        "a": "Acid kills the organisms BOD needs; nutrient acid preservation is the wrong bottle for BOD/TSS.",
+        "b": "An open jug invites contamination and oxygen exchange; composites are kept closed and iced.",
+        "c": "Time-paced aliquots under- or over-represent high-flow hours when the permit requires flow-weighted."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-labs-045": {
+      "prompt": "The BOD incubator ran at 25 °C for the entire five days instead of 20 °C. How does that temperature error bias reported BOD5?",
+      "options": {
+        "a": "Bias low, because oxygen is more soluble in the warmer bottles",
+        "b": "Bias high, because microbes consume oxygen faster than at 20 °C",
+        "c": "No bias, as long as the seed blank still meets the depletion window",
+        "d": "Bias low, because nitrifying bacteria are fully stopped above 22 °C"
+      },
+      "correctOptionId": "b",
+      "explanation": "BOD5 is defined at 20 ±1 °C. At 25 °C microbial respiration (and often nitrification) speeds up, so more oxygen is used in five days and the reported BOD reads high. A passing seed blank does not cancel that kinetic bias, and warmer water holds less—not more—dissolved oxygen.",
+      "distractorExplanations": {
+        "a": "Oxygen solubility falls as temperature rises; faster uptake still drives the BOD result higher.",
+        "c": "Seed-blank QC does not redefine the 20 °C method; a 5 °C error still changes the kinetic rate.",
+        "d": "Warmer temperatures tend to speed nitrification, adding oxygen demand rather than shutting it off."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

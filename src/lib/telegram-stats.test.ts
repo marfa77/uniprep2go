@@ -656,9 +656,11 @@ describe("telegram stats", () => {
     const now = new Date("2026-06-10T12:00:00.000Z");
     const paths: Record<string, { unique: number; views: number }> = {};
     for (let index = 1; index <= 12; index += 1) {
-      paths[`/mock-exams/mock-${index}`] = { unique: 1, views: 120 - index };
-      paths[`/decks/deck-${index}`] = { unique: 1, views: 80 - index };
+      paths[`/mock-exams/mock-${index}`] = { unique: 3, views: 120 - index };
+      paths[`/decks/deck-${index}`] = { unique: 3, views: 80 - index };
     }
+    paths["/mock-exams/one-off"] = { unique: 2, views: 400 };
+    paths["/decks/one-off"] = { unique: 1, views: 300 };
     const message = toTelegramStatsMessage(
       {
         ...sampleStats,
@@ -684,12 +686,17 @@ describe("telegram stats", () => {
 
     expect(message).toContain("Top mocks (7d visits):");
     expect(message).toContain("Top Anki (7d visits):");
-    expect(message).toContain("/mock-exams/mock-1 — 119v (1u)");
-    expect(message).toContain("/mock-exams/mock-10 — 110v (1u)");
+    expect(message).toContain("/mock-exams/mock-1 — 119v (3u)");
+    expect(message).toContain("/mock-exams/mock-10 — 110v (3u)");
     expect(message).not.toContain("/mock-exams/mock-11");
-    expect(message).toContain("/decks/deck-1 — 79v (1u)");
-    expect(message).toContain("/decks/deck-10 — 70v (1u)");
+    const mocksBlock = message.slice(message.indexOf("Top mocks (7d visits):"), message.indexOf("Top Anki (7d visits):"));
+    const ankiBlock = message.slice(message.indexOf("Top Anki (7d visits):"), message.indexOf("▸ Acquisition"));
+    expect(mocksBlock).not.toContain("/mock-exams/one-off");
+    expect(ankiBlock).not.toContain("/decks/one-off");
+    expect(message).toContain("/decks/deck-1 — 79v (3u)");
+    expect(message).toContain("/decks/deck-10 — 70v (3u)");
     expect(message).not.toContain("/decks/deck-11");
+    expect(ankiBlock).not.toContain("/decks/one-off");
     expect(message).not.toContain("stale-lifetime");
     expect(message).toContain("- …and 2 more mocks");
     expect(message).toContain("- …and 2 more Anki");
@@ -749,6 +756,35 @@ describe("telegram stats", () => {
       views: 10,
       unique: 6,
     });
+  });
+
+  it("omits mock and Anki pages with fewer than 3 weekly uniques", () => {
+    const ranked = rankWeeklyMockAndAnkiVisits(
+      {
+        ...sampleStats,
+        visitors: {
+          ...sampleStats.visitors,
+          dailySnapshots: {
+            "2026-06-09": {
+              unique: 4,
+              pageViews: 50,
+              paths: {
+                "/mock-exams/keep": { unique: 3, views: 4 },
+                "/mock-exams/drop": { unique: 2, views: 40 },
+                "/decks/keep": { unique: 3, views: 5 },
+                "/decks/drop": { unique: 1, views: 30 },
+              },
+              byChannel: { google: 1, chatgpt: 0, llm: 0, direct: 3, other: 0 },
+              byCountry: { US: 4 },
+            },
+          },
+        },
+      },
+      new Date("2026-06-10T12:00:00.000Z"),
+    );
+
+    expect(ranked.mocks.map((row) => row.path)).toEqual(["/mock-exams/keep"]);
+    expect(ranked.anki.map((row) => row.path)).toEqual(["/decks/keep"]);
   });
 
   it("splits only when the message is too long", () => {

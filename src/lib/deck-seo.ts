@@ -927,21 +927,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Parents and tutors preparing Year 7 / Grade 7 CAT4 Level D verbal and quantitative subtests — not a full four-battery GL Assessment pack.",
   },
   "gmat-focus-anki-deck": {
-    title: "GMAT Focus Exam Prep | 400 Cards + Free Mock",
-    headline: "GMAT Focus Exam Prep — 400 Flashcards + Free Mock",
-    studyLabel: "GMAT Focus exam prep",
+    title: "GMAT Anki Deck 2026 | 200 Unique Cards + Free Mock",
+    headline: "GMAT Exam Prep — 200 Unique Flashcards (rewritten Oct 2026)",
+    studyLabel: "GMAT exam prep",
     description:
-      "GMAT Focus exam prep with 400 Anki flashcards for Quant, Verbal, and Data Insights — plus a free 45-question timed readiness check with section scoring. Independent MBA prep — not GMAC material.",
+      "Current GMAT Anki: 200 unique cards for Quant, Verbal, and Data Insights — rewritten October 2026 (no Sentence Correction, no Quant geometry, Data Sufficiency only in DI). Plus a free 45-question timed mock. Independent MBA prep — not GMAC material.",
     keywords: [
+      "gmat anki deck",
       "gmat focus anki deck",
-      "gmat focus flashcards",
-      "gmat focus practice test",
-      "gmat prep course alternative",
-      "mba admissions test prep",
+      "gmat flashcards 2026",
+      "gmat practice test",
+      "data insights gmat",
       "gmat diagnostic test",
     ],
     intro:
-      "MBA applicants drill high-yield GMAT Focus question types on Anki, then validate weak sections with the free timed readiness check before official GMAC prep or tutoring.",
+      "MBA applicants drill the current GMAT (2026 SuperScore era) on Anki, then validate weak sections with the free timed readiness check. Bank rewritten October 2026 — not a 10th Edition or padded 400-card dump.",
     audience:
       "MBA and business master's applicants using spaced repetition alongside official GMAC materials.",
   },

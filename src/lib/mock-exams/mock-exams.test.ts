@@ -466,7 +466,7 @@ describe("question bank from deck content", () => {
   it("stores GMAT equation stems in the formula field using LaTeX", () => {
     const { questions } = getQuestionBankForExam("gmat-focus-readiness-check");
     const equationQuestion = questions.find((question) => question.id.endsWith("-011"));
-    expect(equationQuestion?.formula).toContain("2^{x+3}");
+    expect(equationQuestion?.formula).toContain("9^{x-1}");
     expect(equationQuestion?.prompt).not.toMatch(/\^/);
   });
 
@@ -898,7 +898,7 @@ describe("llm visibility", () => {
     expect(config).not.toBeNull();
 
     const markdown = buildMockExamMarkdown(config!);
-    expect(markdown).toContain("Graduate Management Admission Test (GMAT)");
+    expect(markdown).toContain("GMAT Exam (current edition");
     expect(markdown).toContain("205–805");
     expect(buildMockExamFacts(config!).runnable).toBe(true);
   });

@@ -1,0 +1,514 @@
+{
+  "belgium-flanders-mo-readiness-check": {
+    "belgium-flanders-mo-readiness-check-rights-nationality-001": {
+      "prompt": "U schrijft zich in bij een Vlaamse gemeente. Aan het loket zegt men dat u zich ook bij een mutualiteit moet aansluiten. Waarom is dat nodig voor uw zorg?",
+      "options": {
+        "a": "Aansluiting bij een ziekteverzekeraar is verplicht om zorgkosten (deels) terugbetaald te krijgen.",
+        "b": "Werknemers in grote bedrijven moeten een duur privékliniekabonnement nemen in plaats van de zorgkas.",
+        "c": "De gemeente zelf betaalt elk doktersbezoek cash, zonder enige ziekteverzekering.",
+        "d": "Een mutualiteit is pas verplicht nadat u de Belgische nationaliteit hebt gekregen."
+      },
+      "correctOptionId": "a",
+      "explanation": "In België is ziekteverzekering via een mutualiteit of de Hulpkas verplicht. Zonder aansluiting krijgt u de wettelijke terugbetaling van huisarts, apotheek en ziekenhuis niet. Nationaliteit is daarvoor geen voorwaarde: wie wettelijk in het land woont, moet zich aansluiten.",
+      "distractorExplanations": {
+        "b": "Verwisselt de verplichte mutualiteit met een optionele privéverzekering of bedrijfsabonnement.",
+        "c": "Gemeenten organiseren geen gratis zorgkas; terugbetaling loopt via de ziekteverzekering.",
+        "d": "Ook niet-Belgen moeten zich bij een mutualiteit aansluiten; het is geen naturalisatievoorwaarde."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-002": {
+      "prompt": "Na een consultatie krijgt u van de huisarts een getuigschrift voor terugbetaling. Waar dient u dat document in om een deel van de kost terug te krijgen?",
+      "options": {
+        "a": "Bij het OCMW van de gemeente, dat elke medische factuur volledig overneemt.",
+        "b": "Bij de politiezone, omdat zorgkosten daar administratief als een geldboete worden behandeld.",
+        "c": "Bij het Agentschap Integratie en Inburgering, dat de zorg van inburgeraars betaalt.",
+        "d": "Bij uw mutualiteit, die volgens de nomenclatuur een deel van de zorgkost terugbetaalt."
+      },
+      "correctOptionId": "d",
+      "explanation": "De mutualiteit (ziekenfonds) is de ziekteverzekeraar die getuigschriften en elektronische attesten verwerkt en de wettelijke tegemoetkoming uitbetaalt. OCMW, politie of AgII zijn geen zorgverzekeraars. Wie geen inkomen heeft, kan het OCMW later om steun vragen, maar dat vervangt de mutualiteit niet.",
+      "distractorExplanations": {
+        "a": "Het OCMW kan leefloon of medische steun onderzoeken, maar is geen ziekteverzekeraar voor routinezorg.",
+        "b": "Politie behandelt geen terugbetaling van huisartsbezoeken; 101/112 zijn noodnummers, geen zorgkas.",
+        "c": "AgII begeleidt inburgering (MO en NT2); het betaalt uw consultatie bij de huisarts niet."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-003": {
+      "prompt": "U werkt in Gent met een loonfiche, maar hebt nog geen Belgisch paspoort. Wat geldt voor de personenbelasting op dat inkomen?",
+      "options": {
+        "a": "Wie in België belastbaar inkomen heeft, is in principe belastingplichtig, ook zonder Belg te zijn.",
+        "b": "Belastingen zijn vrijwillige giften die u pas na naturalisatie aan de FOD Financiën stort.",
+        "c": "Personenbelasting is voorbehouden aan Belgen met een eID; anderen betalen niets.",
+        "d": "Zelfstandigen en werknemers zonder Belgisch paspoort zijn wettelijk volledig vrijgesteld van belasting."
+      },
+      "correctOptionId": "a",
+      "explanation": "Fiscale plicht hangt af van woonplaats en inkomen, niet van nationaliteit. Wie in België woont of hier beroepsinkomen heeft, moet een aangifte indienen. Naturalisatie, eID of inburgering maken u niet pas ‘belastbaar’; omgekeerd bevrijdt een vreemdelingenkaart u niet van de FOD Financiën.",
+      "distractorExplanations": {
+        "b": "Personenbelasting is een wettelijke verplichting, geen vrijwillige gift na het Belg worden.",
+        "c": "Ook niet-Belgen met inkomen in België vallen onder de fiscale regels, niet enkel eID-houders.",
+        "d": "Vrijstelling wegens ontbrekend paspoort bestaat niet; werknemers én zelfstandigen kunnen belastbaar zijn."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-004": {
+      "prompt": "Uw dochter is 16 en wil voltijds gaan werken in plaats van nog naar school of een traject te gaan. Wat zegt de leerplicht in Vlaanderen?",
+      "options": {
+        "a": "Leerplicht stopt op twaalf jaar; daarna beslist het kind volledig zelf over school.",
+        "b": "Leerplicht loopt tot achttien jaar; voltijds werk zonder school- of vormingstraject mag dan nog niet.",
+        "c": "Leerplicht eindigt op de dag dat het inburgeringsattest van de ouders klaar is.",
+        "d": "Leerplicht geldt louter voor kinderen die al de Belgische nationaliteit bezitten."
+      },
+      "correctOptionId": "b",
+      "explanation": "In België is er leerplicht tot 18 jaar. Dat betekent niet per se elke dag in dezelfde klas, maar wel onderwijs of een erkende combinatie van leren en werken. Nationaliteit of het MO-attest van de ouders schort die plicht niet op. Op 16 voltijds de school loslaten zonder wettelijk traject botst met die regel.",
+      "distractorExplanations": {
+        "a": "Verwart leerplicht met het einde van de lagere school; de plicht loopt door tot 18 jaar.",
+        "c": "Inburgering van ouders is een apart spoor; het vervangt of beëindigt de leerplicht van het kind niet.",
+        "d": "Leerplicht geldt voor minderjarigen die in België verblijven, niet louter voor Belgische kinderen."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-005": {
+      "prompt": "U rondt in Vlaanderen maatschappelijke oriëntatie en NT2 af en krijgt attesten van het Agentschap Integratie en Inburgering. Wat verandert er daardoor aan uw nationaliteit?",
+      "options": {
+        "a": "U wordt automatisch Belg op de dag dat het MO-attest in uw dossier zit.",
+        "b": "AgII reikt tegelijk een Belgisch paspoort uit in plaats van een verblijfskaart.",
+        "c": "De gemeente schrapt uw vreemdelingenkaart en drukt meteen een Belgische eID.",
+        "d": "Inburgering bewijst integratie-inspanningen; het deelt de Belgische nationaliteit niet uit."
+      },
+      "correctOptionId": "d",
+      "explanation": "Inburgering (MO plus NT2 en de rest van het traject) is een Vlaamse plicht tot maatschappelijke oriëntatie, geen nationaliteitsprocedure. Belg worden loopt via nationaliteitsverklaring of naturalisatie bij gemeente en justitie, met eigen voorwaarden. AgII is geen paspoortdienst. De attesten kunnen later wél als bewijs van integratie dienen, maar maken u niet vanzelf Belg.",
+      "distractorExplanations": {
+        "a": "Verwart het MO-attest met een nationaliteitsakte; er is geen automatische Belg-wording na de cursus.",
+        "b": "AgII begeleidt inburgering; paspoorten komen van de gemeente of FOD Buitenlandse Zaken, niet van AgII.",
+        "c": "De gemeente wisselt uw verblijfskaart niet om in een eID louter omdat MO is afgerond."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-006": {
+      "prompt": "Een kennis beweert dat u na precies vijf jaar wonen in België vanzelf Belg wordt, zonder dossier of beslissing. Wat is hiervan waar?",
+      "options": {
+        "a": "Klopt: vijf jaar wettelijk verblijf levert zonder aanvraag de Belgische nationaliteit op.",
+        "b": "Klopt: wie in Vlaanderen een huis koopt, wordt na drie jaar automatisch Belg.",
+        "c": "Onjuist: een vast aantal woonjaren maakt u niet vanzelf Belg; er is een procedure nodig.",
+        "d": "Onjuist: nationaliteit is in België louter mogelijk via een huwelijk met een Belg."
+      },
+      "correctOptionId": "c",
+      "explanation": "Belgische nationaliteit volgt niet automatisch uit een ronde woontermijn. Verklaring of naturalisatie vraagt een dossier, voorwaarden (onder meer wettelijk verblijf, integratie, eventueel taal) en een beslissing. MO-banken mogen geen verzonnen ‘vijf jaar en klaar’-regel als feit verkopen. Huwelijk of vastgoed zijn op zich geen automatische toegangspoort.",
+      "distractorExplanations": {
+        "a": "Verwart een mogelijke verblijfsvoorwaarde in een dossier met automatische toekenning na vijf jaar.",
+        "b": "Eigendom van een woning is geen nationaliteitsgrond; kopen maakt u geen Belg.",
+        "d": "Huwelijk met een Belg opent geen automatische nationaliteit en is niet de enige weg."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-007": {
+      "prompt": "U overweegt Belg te worden en wilt uw huidige nationaliteit behouden. Wat is het Belgische uitgangspunt over meerdere nationaliteiten?",
+      "options": {
+        "a": "België laat in veel gevallen toe dat u de Belgische nationaliteit combineert met een andere.",
+        "b": "België eist dat EU-burgers hun andere nationaliteit inleveren voor de eedaflegging.",
+        "c": "Meerdere nationaliteiten zijn in België voorbehouden aan minderjarigen tot achttien jaar.",
+        "d": "Na naturalisatie moet u binnen de maand uw oorspronkelijke paspoort verplicht inleveren bij justitie."
+      },
+      "correctOptionId": "a",
+      "explanation": "Belgisch recht verbiedt dubbele of meervoudige nationaliteit niet systematisch. U kunt vaak Belg worden zonder dat België u dwingt de andere nationaliteit op te geven. Let op: het andere land kan wél regels hebben. EU-burgerschap, minderjarigheid of een paspoortinlevering bij justitie zijn geen Belgische algemene plicht.",
+      "distractorExplanations": {
+        "b": "België eist van EU-burgers geen inlevering van de andere nationaliteit als algemene voorwaarde.",
+        "c": "Ook volwassenen kunnen meerdere nationaliteiten hebben; het is geen kinderregel.",
+        "d": "Er is geen algemene plicht om binnen de maand een ander paspoort bij justitie in te leveren."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-008": {
+      "prompt": "Er zijn federale verkiezingen. U vraagt zich af wie stemrecht heeft en of opkomst verplicht is. Wat klopt in België?",
+      "options": {
+        "a": "Elke inwoner mag vanaf zestien jaar stemmen, ook zonder Belgische nationaliteit.",
+        "b": "Stemmen is volledig optioneel vanaf eenentwintig jaar en voorbehouden aan woningeigenaars.",
+        "c": "Niet-Belgen stemmen van rechtswege voor Kamer en Vlaams Parlement.",
+        "d": "Belgische burgers hebben vanaf achttien jaar stemrecht; voor hen is de opkomstplicht de regel."
+      },
+      "correctOptionId": "d",
+      "explanation": "Voor Kamer- en Vlaamse verkiezingen is stemrecht gekoppeld aan de Belgische nationaliteit en de leeftijd van 18 jaar. Voor Belgische kiezers geldt opkomstplicht. Niet-Belgen kunnen onder voorwaarden lokaal stemmen, maar niet automatisch voor Kamer of Vlaams Parlement. Woningbezit of de leeftijd 21 zijn geen kiesdrempel.",
+      "distractorExplanations": {
+        "a": "Zestienjarigen en niet-Belgen hebben geen algemeen federaal stemrecht in België.",
+        "b": "De kiesleeftijd is 18, niet 21, en eigendom van een woning is geen voorwaarde.",
+        "c": "Kamer en Vlaams Parlement zijn geen automatische stembus voor niet-Belgische inwoners."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-009": {
+      "prompt": "Op het werk zegt een ploegbaas dat mannen voorrang krijgen bij promotie ‘omdat dat zo hoort’. Wat is de wettelijke lijn in België?",
+      "options": {
+        "a": "Mannen en vrouwen hebben gelijke rechten; geslacht mag geen grond zijn voor ongelijke behandeling.",
+        "b": "Kleine bedrijven mogen vrouwen een lager loon geven dan mannen in dezelfde functie.",
+        "c": "Gelijke rechten op de werkvloer starten pas na tien jaar wettelijk verblijf in Vlaanderen.",
+        "d": "Gehuwde vrouwen hebben andere arbeidsrechten dan ongehuwde vrouwen of dan mannen."
+      },
+      "correctOptionId": "a",
+      "explanation": "Gelijkheid van vrouwen en mannen is een kernwaarde (sokkel) van de Belgische rechtsorde. Arbeidsrecht en antidiscriminatiewet verbieden onderscheid op geslacht bij loon, aanwerving en promotie. Verblijfsduur, burgerlijke staat of de grootte van de firma maken daarvan geen uitzondering in de zin van ‘mannen eerst’.",
+      "distractorExplanations": {
+        "b": "Ondernemingsgrootte heft het verbod op loondiscriminatie tussen mannen en vrouwen niet op.",
+        "c": "Gelijke rechten hangen niet af van tien jaar inburgering of wettelijk verblijf.",
+        "d": "Burgerlijke staat geeft vrouwen geen andere fundamentele arbeidsrechten dan mannen."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-010": {
+      "prompt": "Een verhuurder weigert u een appartement omdat uw naam ‘te buitenlands klinkt’, hoewel inkomen en waarborg in orde zijn. Hoe heet dat?",
+      "options": {
+        "a": "Een toegelaten voorkeur, omdat eigenaars vrij op nationaliteit of familienaam mogen selecteren.",
+        "b": "Een OCMW-bevoegdheid: het centrum sluit huurcontracten in de plaats van de rechter.",
+        "c": "Discriminatie bij huisvesting, die u kunt aankaarten bij Unia of een gelijkekansendienst.",
+        "d": "Een inburgeringsvoorwaarde: eerst MO afronden, daarna mag u pas een woning huren."
+      },
+      "correctOptionId": "c",
+      "explanation": "Weigeren te verhuren om herkomst, naam of nationaliteit is in beginsel verboden discriminatie op de huisvestingsmarkt. U kunt dat melden bij Unia of, in Vlaanderen, bij het Vlaams Mensenrechteninstituut, naast eventueel een gerechtelijke stap. Het OCMW is geen huurrechter en MO is geen toegangsticket tot huren.",
+      "distractorExplanations": {
+        "a": "Eigendomsvrijheid laat geen raciale of etnische selectie van huurders toe.",
+        "b": "Het OCMW verleent steun; het vervangt de rechter of Unia niet bij een weigering om te verhuren.",
+        "d": "Een huurcontract hangt niet af van een afgeronde MO-cursus."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-011": {
+      "prompt": "U wilt op een markt een mening uiten over een politieke partij. Wat beschermt de Grondwet, en waar stopt die vrijheid?",
+      "options": {
+        "a": "Meningsuiting is verboden tenzij de burgemeester elke zin vooraf schriftelijk moet goedkeuren.",
+        "b": "U mag uw mening uiten, maar haatzaaien, laster of opruiing tot geweld blijven strafbaar.",
+        "c": "Erkende erediensten mogen in het openbaar spreken; andere inwoners moeten zwijgen.",
+        "d": "Vrijheid van meningsuiting is voorbehouden aan kiezers met de Belgische nationaliteit."
+      },
+      "correctOptionId": "b",
+      "explanation": "Vrijheid van meningsuiting is een grondrecht, ook voor wie geen Belg is. Ze is niet grenzeloos: racisme, haatzaaien, laster en opruiing tot geweld zijn strafbaar. De burgemeester censureert geen marktgesprekken zin per zin, en het recht is niet voorbehouden aan erkende erediensten of kiezers.",
+      "distractorExplanations": {
+        "a": "Verwart eventuele regels voor betogingen met voorafgaande censuur van elke persoonlijke zin.",
+        "c": "Godsdienstvrijheid is een ander recht; meningsuiting is niet het monopolie van erediensten.",
+        "d": "Ook niet-Belgische inwoners genieten vrijheid van meningsuiting in België."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-012": {
+      "prompt": "Een buur eist dat u zijn godsdienst volgt omdat u in dezelfde straat woont. Wat geldt in België voor geloof en dwang?",
+      "options": {
+        "a": "De gemeente bepaalt per wijk welke godsdienst de bewoners moeten volgen.",
+        "b": "Nieuwe inwoners moeten de godsdienst van hun werkgever aannemen bij indiensttreding.",
+        "c": "Vrijheid van eredienst is in Vlaanderen voorbehouden aan de katholieke Kerk.",
+        "d": "Iedereen mag een godsdienst kiezen of geen; niemand mag u tot een geloof dwingen."
+      },
+      "correctOptionId": "d",
+      "explanation": "Vrijheid van godsdienst en levensbeschouwing is een sokkelwaarde: u mag geloven, van geloof veranderen of niet geloven. De overheid, werkgever of buur mag u geen religie opleggen. België erkent meerdere erediensten; dat is iets anders dan één verplichte kerk per wijk of per bedrijf.",
+      "distractorExplanations": {
+        "a": "Gemeenten kennen geen godsdienstplicht per wijk; dat zou de vrijheid van eredienst schenden.",
+        "b": "Arbeidsrecht laat een werkgever niet toe uw geloof als aanwervingsgodsdienst op te leggen.",
+        "c": "Ook andere erkende en niet-erkende levensbeschouwingen vallen onder gewetensvrijheid."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-013": {
+      "prompt": "In de les maatschappelijke oriëntatie komt scheiding van kerk en staat ter sprake. Wat betekent dat concreet voor wetten die voor u gelden?",
+      "options": {
+        "a": "De Koning is het hoofd van alle erkende godsdiensten en wijst voorgangers aan.",
+        "b": "Overheidsbesluiten moeten eerst door een kerkraad of imamraad worden goedgekeurd.",
+        "c": "De staat legt u geen godsdienst op; burgerlijke wetten gelden ongeacht uw geloof.",
+        "d": "Scholen mogen geen levensbeschouwing aanbieden omdat religie in België verboden is."
+      },
+      "correctOptionId": "c",
+      "explanation": "Scheiding van kerk en staat betekent dat de overheid geen staatsgodsdienst oplegt en dat burgerlijk recht (huwelijk, strafrecht, schoolplicht) voor iedereen geldt, los van geloof. België erkent en financiert bepaalde erediensten, maar religieuze regels vervangen de wet niet. Levensbeschouwelijke vakken op school blijven mogelijk.",
+      "distractorExplanations": {
+        "a": "De Koning is staatshoofd, geen kerkelijk hoofd dat imams of priesters benoemt.",
+        "b": "Wetten komen van parlementen, niet van een kerk- of imamraad als veto-orgaan.",
+        "d": "Religie is niet verboden; scholen bieden vaak levensbeschouwelijke vakken aan."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-014": {
+      "prompt": "Twee vrouwen willen in uw Vlaamse gemeente huwen. Wat klopt volgens het Belgische familierecht over seksuele diversiteit?",
+      "options": {
+        "a": "Partners van hetzelfde geslacht mogen huwen, met dezelfde burgerlijke gevolgen als andere koppels.",
+        "b": "Een burgerlijk huwelijk is in België voorbehouden aan een man en een vrouw.",
+        "c": "Zo’n huwelijk kan in Brussel, maar Vlaamse gemeenten mogen de akte weigeren.",
+        "d": "Het koppel moet eerst vijf jaar inburgering afronden voor er een huwelijksakte mag komen."
+      },
+      "correctOptionId": "a",
+      "explanation": "België opent het burgerlijk huwelijk voor partners van hetzelfde geslacht. De burgerlijke gevolgen (naamkeuze, erfrecht, echtscheiding) lopen gelijk. Dat is een sokkelpunt over seksuele diversiteit. Gewest, inburgering of ‘enkel Brussel’ maken daarvan geen uitzondering. Religieuze zegen is optioneel en vervangt de ambtenaar van de burgerlijke stand niet.",
+      "distractorExplanations": {
+        "b": "Dat was de oude regel; het burgerlijk huwelijk is niet langer tot man-vrouw beperkt.",
+        "c": "Vlaamse gemeenten mogen een wettelijk huwelijk van hetzelfde geslacht niet weigeren.",
+        "d": "MO of een wachttijd van vijf jaar is geen huwelijksvoorwaarde in het Burgerlijk Wetboek."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-015": {
+      "prompt": "U zoekt een school voor uw kind van acht in een Vlaamse stad. Welk recht hebt u bij die keuze, naast de leerplicht?",
+      "options": {
+        "a": "De gemeente wijst één school toe; u mag die plaatsing niet weigeren of herzien.",
+        "b": "U mag een school kiezen (officieel of vrij net), zolang de leerplicht wordt nageleefd.",
+        "c": "Vrije scholen zijn strikt voorbehouden aan kinderen die al de Belgische nationaliteit hebben.",
+        "d": "Schoolkeuze bestaat pas nadat de ouders hun inburgeringsattest hebben behaald."
+      },
+      "correctOptionId": "b",
+      "explanation": "Onderwijsvrijheid betekent dat ouders een school mogen kiezen (gemeentelijk, GO! of vrij gesubsidieerd net), binnen de leerplicht tot 18 jaar. Nationaliteit of MO van de ouders is geen toegangsticket. De gemeente mag geen monopolie-plaatsing forceren alsof er geen keuze bestaat, al kunnen lokale inschrijvingsregels gelden.",
+      "distractorExplanations": {
+        "a": "Er is geen systeem waarbij de gemeente elke leerling dwingend aan één school koppelt zonder keuze.",
+        "c": "Ook kinderen zonder Belgische nationaliteit mogen naar een vrije of officiële school.",
+        "d": "Het inburgeringsattest van ouders is geen voorwaarde om een kind in te schrijven."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-016": {
+      "prompt": "U hebt tijdelijk geen inkomen en kunt huur en voeding niet betalen. Welke lokale dienst onderzoekt recht op maatschappelijke steun zoals leefloon?",
+      "options": {
+        "a": "De mutualiteit keert maandelijks een leefloon uit in de plaats van ziekteverzekering.",
+        "b": "Het Vlaams Parlement stort rechtstreeks de huur van elke inburgeraar.",
+        "c": "Unia kent financiële steun toe bij elke melding over discriminatie.",
+        "d": "Het OCMW van uw gemeente onderzoekt of u recht hebt op leefloon of andere steun."
+      },
+      "correctOptionId": "d",
+      "explanation": "Het OCMW (Openbaar Centrum voor Maatschappelijk Welzijn) is de lokale dienst voor maatschappelijke hulp: leefloon, medische steun, begeleiding. De mutualiteit dekt ziekte, Unia discriminatie, het parlement maakt decreten. U vraagt steun aan in de gemeente waar u woont; nationaliteit is geen automatische weigering, maar voorwaarden bestaan.",
+      "distractorExplanations": {
+        "a": "De mutualiteit vergoedt zorg, geen leefloon; dat is een OCMW-bevoegdheid.",
+        "b": "Het Vlaams Parlement is wetgever, geen loket dat huur aan inburgeraars overschrijft.",
+        "c": "Unia behandelt gelijkekansenklachten, geen maandelijkse bestaansminima."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-017": {
+      "prompt": "Op het werk kondigen collega’s een staking aan via de vakbond. Wat is in België toegelaten rond organisatie van werknemers?",
+      "options": {
+        "a": "Werknemers mogen zich organiseren in een vakbond en onder voorwaarden collectief staken.",
+        "b": "Staking is in België een strafrechtelijk misdrijf, ook wanneer de wettelijke procedure is gevolgd.",
+        "c": "Ambtenaren mogen staken, maar werknemers in de privésector hebben dat recht niet.",
+        "d": "Vakbonden zijn verboden tot u de Belgische nationaliteit en een eID hebt."
+      },
+      "correctOptionId": "a",
+      "explanation": "Vrijheid van vereniging omvat vakbonden. Collectieve actie, waaronder staking, is in België een erkend middel, met spelregels (vredeplicht in sommige cao’s, essentiële diensten). Het is geen algemeen misdrijf. Het recht hangt niet af van Belg-zijn, en het is niet voorbehouden aan de openbare sector.",
+      "distractorExplanations": {
+        "b": "Een wettelijk gevoerde staking is geen misdrijf; strafrecht grijpt in bij geweld of sabotage.",
+        "c": "Ook in de privésector kunnen werknemers zich organiseren en onder voorwaarden staken.",
+        "d": "Lidmaatschap van een vakbond vereist geen Belgische nationaliteit."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-018": {
+      "prompt": "De politie vraagt u op straat om uzelf te identificeren. Wat is de regel voor wie in België woont of hier verblijft?",
+      "options": {
+        "a": "Identificatie is optioneel zolang u nog in een inburgeringstraject van AgII zit.",
+        "b": "Belgen boven vijfenzestig moeten een identiteitskaart dragen; jongeren zijn vrijgesteld.",
+        "c": "U moet uw identiteit kunnen aantonen; ingezetenen gebruiken daarvoor de eID of verblijfskaart.",
+        "d": "Een internethandle of visitekaartje volstaat als wettelijk identiteitsbewijs op straat."
+      },
+      "correctOptionId": "c",
+      "explanation": "Wie in België verblijft, moet zich kunnen identificeren. Belgen hebben een eID; vreemdelingen een verblijfskaart of ander erkend document. Inburgering schort die plicht niet op. Een visitekaartje is geen wettelijk bewijs. Leeftijd 65 is geen aparte identiteitsdrempel.",
+      "distractorExplanations": {
+        "a": "Het MO-traject vervangt geen identiteitsplicht tegenover politie.",
+        "b": "De identiteitsplicht is niet beperkt tot 65-plussers en geldt ruimer dan die leeftijdsgroep.",
+        "d": "Informele kaartjes of sociale-mediaprofielen zijn geen wettelijk identiteitsbewijs."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-019": {
+      "prompt": "Een werkgever vraagt uw volledig medisch dossier ‘voor de personeelsmap’, zonder wettelijke basis. Wat beschermt u daartegen?",
+      "options": {
+        "a": "Werkgevers mogen medische gegevens publiceren op het intranet van de firma.",
+        "b": "Privacyregels beperken wat anderen met uw persoons- en gezondheidsgegevens mogen doen.",
+        "c": "Medische dossiers worden volledig publiek zodra u bij een mutualiteit bent aangesloten.",
+        "d": "Bescherming van persoonsgegevens geldt louter voor diplomaten en ambtenaren."
+      },
+      "correctOptionId": "b",
+      "explanation": "Privacy (AVG/GDPR en Belgische uitvoering) beperkt verwerking van persoonsgegevens, zeker gezondheidsdata. Een werkgever mag geen volledig medisch dossier eisen ‘voor de map’ zonder wettelijke grond. Mutualiteit, intranet of diplomaat-zijn maken die gegevens niet publiek of uitzonderlijk vogelvrij.",
+      "distractorExplanations": {
+        "a": "Publicatie van medische gegevens op intranet is een zware privacy-inbreuk, geen recht van de werkgever.",
+        "c": "Aansluiting bij een mutualiteit maakt uw dossier niet openbaar voor derden.",
+        "d": "Privacy geldt voor iedereen, niet louter voor diplomaten of ambtenaren."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-020": {
+      "prompt": "Een ouder zegt dat hij zijn kind van tien mag slaan ‘omdat het zijn kind is’. Wat geldt in België over kinderrechten?",
+      "options": {
+        "a": "Lichamelijke tuchtiging door ouders is een erkend opvoedingsrecht zonder wettelijke grens.",
+        "b": "Kinderrechten starten pas wanneer het kind zelf de Belgische nationaliteit heeft.",
+        "c": "Scholen mogen geweld toestaan als de ouders dat in een brief schriftelijk vragen.",
+        "d": "Kinderen hebben eigen rechten; geweld, verwaarlozing of uitbuiting zijn niet toegelaten."
+      },
+      "correctOptionId": "d",
+      "explanation": "Kinderen zijn geen eigendom van ouders. België erkent kinderrechten (onder meer via het Kinderrechtenverdrag): bescherming tegen geweld, onderwijs, zorg. Nationaliteit van het kind verandert die bescherming niet. Scholen en ouders mogen geen ‘toestemming tot slaan’ organiseren. Hulp loopt via vertrouwenscentra, politie of justitie.",
+      "distractorExplanations": {
+        "a": "Ouderlijk gezag is geen vrijbrief voor fysiek geweld als opvoedingsmethode.",
+        "b": "Bescherming tegen geweld hangt niet af van een Belgisch paspoort van het kind.",
+        "c": "Schriftelijke toestemming van ouders maakt schoolgeweld niet wettig."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-021": {
+      "prompt": "U wordt op het werk gepest omwille van herkomst. Na interne klachten zoekt u een gespecialiseerde instantie. Wie behandelt discriminatie op federaal niveau?",
+      "options": {
+        "a": "Unia behandelt discriminatieklachten en kan u informeren, bemiddelen of doorverwijzen.",
+        "b": "Het OCMW vervangt de arbeidsrechtbank bij elke klacht over racisme op het werk.",
+        "c": "De mutualiteit beboet de werkgever omdat discriminatie daar als een ziekte wordt vergoed.",
+        "d": "Het parket reikt automatisch een schadevergoeding uit, zonder dat u klacht indient."
+      },
+      "correctOptionId": "a",
+      "explanation": "Unia is het interfederale centrum voor gelijke kansen (bepaalde discriminatiegronden). In Vlaanderen kan ook het Vlaams Mensenrechteninstituut bevoegd zijn. OCMW, mutualiteit en parket hebben andere rollen: steun, zorgverzekering, strafvervolging na een klacht — geen automatische schade-uitkering en geen zorgkas-boete.",
+      "distractorExplanations": {
+        "b": "Het OCMW is geen arbeidsrechter; racisme op het werk hoort bij gelijkekanseninstanties of justitie.",
+        "c": "De mutualiteit vergoedt zorg, ze deelt geen boetes uit voor discriminatie door de werkgever.",
+        "d": "Het parket vervolgt misdrijven na een klacht of opsporing; er is geen automatische schade-uitkering."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-022": {
+      "prompt": "Familie plant een huwelijk voor uw meerderjarige nicht zonder haar vrije instemming. Wat is de Belgische regel over zo’n huwelijk?",
+      "options": {
+        "a": "Een gedwongen huwelijk is geldig als de familie in het herkomstland schriftelijk instemt.",
+        "b": "De burgemeester moet elk huwelijk goedkeuren dat de ouders van de bruid eisen.",
+        "c": "Gedwongen huwelijk is strafbaar; een geldig huwelijk vereist vrije toestemming van beide partners.",
+        "d": "Gedwongen huwelijk is toegelaten tot de inburgeringscursus van het koppel is afgerond."
+      },
+      "correctOptionId": "c",
+      "explanation": "In België is een huwelijk ongeldig zonder vrije toestemming van beide partners. Gedwongen huwelijk is strafbaar. Geen familieakkoord, burgemeestersbevel of MO-attest maakt dwang wettig. De ambtenaar van de burgerlijke stand moet de vrije wil nagaan; slachtoffers kunnen politie, justitie of hulpdiensten inschakelen.",
+      "distractorExplanations": {
+        "a": "Buitenlands familierecht of een brief uit het herkomstland maakt dwang in België niet wettig.",
+        "b": "De burgemeester dwingt geen huwelijk in opdracht van ouders; hij waakt onder meer over vrije wil.",
+        "d": "Inburgering heeft geen uitzondering die gedwongen huwelijk tijdelijk toelaat."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-023": {
+      "prompt": "Uw kind wordt geboren in een Vlaams ziekenhuis. Beide ouders hebben niet de Belgische nationaliteit. Wordt het kind daardoor meteen Belg?",
+      "options": {
+        "a": "Ja, elke geboorte op Belgisch grondgebied geeft meteen de Belgische nationaliteit.",
+        "b": "Nee, geboorte in België volstaat op zich niet; nationaliteit volgt eigen wettelijke regels.",
+        "c": "Ja, als de geboorte in het Vlaams Gewest plaatsvindt in plaats van in Brussel.",
+        "d": "Nee, kinderen van niet-Belgen mogen later in België helemaal geen nationaliteit meer aanvragen."
+      },
+      "correctOptionId": "b",
+      "explanation": "België volgt in de eerste plaats afstamming, niet louter ius soli. Geboorte in een Belgisch ziekenhuis maakt het kind niet automatisch Belg als de ouders geen Belg zijn. Later kunnen andere routes (toekenning, verklaring) openliggen; het is dus niet ‘nooit mogelijk’. Het gewest van de bevalling (Vlaanderen versus Brussel) verandert die basisregel niet.",
+      "distractorExplanations": {
+        "a": "Verwart België met landen met breed ius soli; geboorteplaats alleen volstaat hier niet.",
+        "c": "Nationaliteitsrecht is federaal; Vlaanderen versus Brussel als geboorteplaats maakt geen Belg.",
+        "d": "Kinderen kunnen later wél routes naar de Belgische nationaliteit hebben; het is geen levenslang verbod."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-024": {
+      "prompt": "U wilt met anderen vreedzaam betogen voor het gemeentehuis over een lokale maatregel. Wat klopt over dat recht?",
+      "options": {
+        "a": "Betogen is verboden; de Koning moet elke openbare bijeenkomst persoonlijk schriftelijk goedkeuren.",
+        "b": "Betogen mag louter online, niet op straat in Vlaamse steden.",
+        "c": "Betogen mag pas nadat u de Belgische nationaliteit hebt gekregen.",
+        "d": "Vreedzaam betogen is een vrijheid, binnen regels van openbare orde en lokale melding."
+      },
+      "correctOptionId": "d",
+      "explanation": "Vrijheid van vergadering en betoging is een grondrecht. Steden vragen vaak een voorafgaande melding of machtiging om de openbare orde te organiseren; dat is geen koninklijk veto en geen verbod op straat. Geweld of blokkades zonder kader kunnen wel worden beperkt. Nationaliteit is geen toegangsticket tot betogen.",
+      "distractorExplanations": {
+        "a": "De Koning keurt geen lokale betogingen persoonlijk goed; dat is geen grondwettelijk filter.",
+        "b": "Betogen is niet beperkt tot het internet; vreedzame straatacties blijven mogelijk.",
+        "c": "Ook niet-Belgische inwoners mogen in beginsel vreedzaam betogen."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-025": {
+      "prompt": "De politie verhoort u als verdachte van een misdrijf. Welk recht op verdediging hebt u in de Belgische procedure?",
+      "options": {
+        "a": "U hebt recht op een eerlijk proces en kunt zich laten bijstaan door een advocaat.",
+        "b": "U mag zelf uw straf kiezen als u bij de commissaris schuld bekent.",
+        "c": "U mag weigeren om voor een rechter te verschijnen wanneer u dat onhandig vindt.",
+        "d": "Juridische bijstand is voorbehouden aan Belgen die een oproepingsbrief als kiezer hebben."
+      },
+      "correctOptionId": "a",
+      "explanation": "Elke verdachte heeft recht op een eerlijk proces, informatie over de beschuldiging en bijstand van een advocaat (Salduz-regeling bij verhoor). Straffen bepaalt de rechter, niet de verdachte. Verschijnen kan verplicht zijn. Stemrecht of nationaliteit zijn geen voorwaarde voor verdediging; een pro-Deoadvocaat kan bij onvermogen.",
+      "distractorExplanations": {
+        "b": "Straftoemeting is een rechterlijke bevoegdheid, geen keuze van de verdachte bij de politie.",
+        "c": "Recht op verdediging betekent bijstand, geen recht om gerechtelijke oproepingen te negeren.",
+        "d": "Ook niet-Belgische verdachten hebben recht op een advocaat; kiesbrieven spelen geen rol."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-026": {
+      "prompt": "Iemand is in België al wettelijk gehuwd en wil tegelijk een tweede burgerlijk huwelijk sluiten. Mag dat volgens Belgisch recht?",
+      "options": {
+        "a": "Ja, bigamie is toegelaten als beide huwelijken in verschillende gewesten plaatsvinden.",
+        "b": "Nee, in België kan men maar met één persoon tegelijk wettelijk gehuwd zijn.",
+        "c": "Ja, bigamie is toegelaten na vijf jaar inburgering in het Vlaams Gewest.",
+        "d": "Ja, bigamie is toegelaten voor wie geen Belgische nationaliteit heeft."
+      },
+      "correctOptionId": "b",
+      "explanation": "Bigamie is in België verboden: u kunt maar met één persoon tegelijk burgerlijk gehuwd zijn. Een nieuw huwelijk vereist dat het vorige is ontbonden (echtscheiding of overlijden). Gewest, inburgering of vreemdelingenstatuut maken daarvan geen uitzondering. Religieuze rituelen zonder burgerlijke akte creëren geen tweede wettelijk huwelijk.",
+      "distractorExplanations": {
+        "a": "Gewesten (Vlaanderen, Wallonië, Brussel) hebben geen vrijhaven voor een tweede burgerlijk huwelijk.",
+        "c": "MO of een termijn van vijf jaar legaliseert geen tweede huwelijk naast een bestaand.",
+        "d": "Het verbod op bigamie geldt op Belgisch grondgebied, ook voor niet-Belgen."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-027": {
+      "prompt": "U wilt de Belgische nationaliteit aanvragen via een nationaliteitsverklaring. Waar start dat dossier doorgaans voor wie in Vlaanderen woont?",
+      "options": {
+        "a": "Bij de Europese Commissie, omdat nationaliteit een bevoegdheid van de EU-instellingen is.",
+        "b": "Bij het Agentschap Integratie en Inburgering, dat Belgische paspoorten aflevert.",
+        "c": "Bij de gemeente waar u bent ingeschreven, die het dossier verder naar de bevoegde diensten leidt.",
+        "d": "Bij de VDAB, omdat werkzoekenden automatisch de Belgische nationaliteit ontvangen."
+      },
+      "correctOptionId": "c",
+      "explanation": "Een nationaliteitsverklaring dient u in bij de gemeente van inschrijving. Die bezorgt het dossier aan de bevoegde instanties (parket, Dienst Vreemdelingenzaken volgens de procedure). Naturalisatie loopt via de Kamer, niet via AgII of VDAB. De EU deelt geen Belgische nationaliteit uit. Verzin geen extra ‘huis van burgerschap’ als enige loket.",
+      "distractorExplanations": {
+        "a": "EU-instellingen in Brussel kennen geen Belgische nationaliteit toe; dat blijft nationale bevoegdheid.",
+        "b": "AgII begeleidt inburgering; het is geen paspoort- of nationaliteitsloket.",
+        "d": "VDAB bemiddelt naar werk; inschrijving als werkzoekende maakt u geen Belg."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-028": {
+      "prompt": "U bent geen Belg, woont wel in een Vlaamse gemeente en wilt weten of u mag stemmen. Wat is het juiste onderscheid?",
+      "options": {
+        "a": "U stemt van rechtswege voor Kamer, Senaat en Vlaams Parlement, net als Belgen.",
+        "b": "Niet-Belgen hebben nergens stemrecht, ook niet bij gemeenteraadsverkiezingen.",
+        "c": "U mag online stemmen voor de Koning via de federale overheidswebsite.",
+        "d": "Lokaal stemrecht kan onder voorwaarden; federale en Vlaamse parlementsverkiezingen zijn voor Belgen."
+      },
+      "correctOptionId": "d",
+      "explanation": "Stemrecht voor Kamer en Vlaams Parlement is voorbehouden aan Belgische burgers. Voor gemeenteraadsverkiezingen kunnen EU-burgers en, na inschrijving en voorwaarden, bepaalde niet-EU-inwoners lokaal stemmen. Er is geen online koningsverkiezing. MO of AgII vervangt dat kiesrecht niet.",
+      "distractorExplanations": {
+        "a": "Kamer en Vlaams Parlement zijn geen automatische stembus voor niet-Belgische inwoners.",
+        "b": "Lokaal stemrecht kan wél bestaan; het is niet overal en voor iedereen uitgesloten.",
+        "c": "De Koning wordt niet online verkozen; stemmen gebeurt in een stemlokaal met identiteitsbewijs."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-029": {
+      "prompt": "Een vacature vermeldt ‘geen hoofddoek, geen buitenlandse namen’. Wat is de juiste inschatting onder de antidiscriminatieregels?",
+      "options": {
+        "a": "De werkgever mag zo selecteren omdat wervingsvrijheid boven gelijke behandeling staat.",
+        "b": "Zo’n criterium is in beginsel verboden discriminatie bij toegang tot arbeid.",
+        "c": "Dit mag wanneer de onderneming minder dan vijftig werknemers telt.",
+        "d": "Dit mag tot de kandidaat een inburgeringsattest van AgII kan voorleggen."
+      },
+      "correctOptionId": "b",
+      "explanation": "Antidiscriminatierecht verbiedt in beginsel selectie op ras, herkomst, geloof of naam. Wervingsvrijheid is geen vrijbrief voor zulke criteria. Kmo-grootte of het ontbreken van een MO-attest maken de zin in de vacature niet wettig. Uitzonderingen (bijvoorbeeld een echt beroepsvereiste) zijn eng en moeten objectief worden gerechtvaardigd.",
+      "distractorExplanations": {
+        "a": "Wervingsvrijheid stopt waar verboden onderscheid op beschermde kenmerken begint.",
+        "c": "Het aantal werknemers heft het discriminatieverbod bij aanwerving niet op.",
+        "d": "Een inburgeringsattest is geen toelating om etnische of religieuze filters in vacatures te zetten."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-rights-nationality-030": {
+      "prompt": "Uw schoonfamilie zegt dat uw vrouw zonder uw schriftelijke toestemming geen bankrekening of arbeidscontract mag openen. Klopt dat in België?",
+      "options": {
+        "a": "Ja, gehuwde vrouwen zijn handelingsonbekwaam tot de man het contract mee ondertekent.",
+        "b": "Ja, dat geldt voor vrouwen zonder Belgische nationaliteit, maar niet voor Belgische vrouwen.",
+        "c": "Nee, vrouwen hebben dezelfde burgerlijke bekwaamheid als mannen om contracten te sluiten.",
+        "d": "Nee, het OCMW moet namens gehuwde vrouwen elke arbeidsovereenkomst ondertekenen."
+      },
+      "correctOptionId": "c",
+      "explanation": "Gelijkheid van vrouwen en mannen omvat handelingsbekwaamheid: een volwassen vrouw sluit zelf een arbeidscontract of bankrekening, zonder toestemming van echtgenoot of schoonfamilie. Nationaliteit verandert dat niet. Het OCMW is geen wettelijke voogd van gehuwde vrouwen. Huwelijksvermogensrecht kan gemeenschappelijke goederen raken, maar maakt haar geen onbekwame.",
+      "distractorExplanations": {
+        "a": "Die oude voogdij over gehuwde vrouwen is afgeschaft; zij is handelingsbekwaam.",
+        "b": "Ook niet-Belgische vrouwen in België sluiten zelf contracten; nationaliteit maakt hen niet onbekwaam.",
+        "d": "Het OCMW tekent geen arbeidscontracten in de plaats van vrouwen."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

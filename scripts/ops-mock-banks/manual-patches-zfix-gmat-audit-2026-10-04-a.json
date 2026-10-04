@@ -1,0 +1,616 @@
+{
+  "gmat-focus-readiness-check": {
+    "gmat-focus-readiness-check-001": {
+      "topicId": "quant",
+      "prompt": "A coat listed at $160 is marked down 30%, and the reduced price is then cut another 10%. What is the price a customer pays?",
+      "options": {
+        "a": "$100.80",
+        "b": "$112.00",
+        "c": "$128.00",
+        "d": "$144.00"
+      },
+      "correctOptionId": "a",
+      "explanation": "Sequential discounts multiply remaining-price factors: 160 × 0.70 × 0.90 = 100.80. The second 10% applies to $112, not to the original $160, so the customer pays $100.80.",
+      "distractorExplanations": {
+        "b": "Takes only the first 30% markdown (160 × 0.70 = 112) and never applies the extra 10%.",
+        "c": "Treats the sale as a single 20% cut off list (160 × 0.80 = 128) instead of 30% then 10%.",
+        "d": "Applies only the second 10% to list (160 × 0.90 = 144) and skips the 30% markdown."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-002": {
+      "topicId": "quant",
+      "prompt": "A cohort of 36 interns is split between juniors and seniors in the ratio 4:5. How many seniors are in the cohort?",
+      "options": {
+        "a": "16",
+        "b": "20",
+        "c": "24",
+        "d": "27"
+      },
+      "correctOptionId": "b",
+      "explanation": "The 4:5 split makes 9 parts. Each part is 36 ÷ 9 = 4 interns, so seniors are 5 × 4 = 20. Equivalently, seniors are (5/9) × 36 = 20.",
+      "distractorExplanations": {
+        "a": "Counts the junior share (4/9 × 36 = 16) instead of the senior 5-part share.",
+        "c": "Uses 2/3 of 36, mixing the 4:5 parts with an unrelated two-thirds split.",
+        "d": "Uses 3/4 of 36, as if seniors were three-fourths of the cohort rather than 5/9."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-003": {
+      "topicId": "quant",
+      "prompt": "Priya is now three times as old as Noah. In 8 years, Priya will be twice as old as Noah. How old is Noah now?",
+      "options": {
+        "a": "4 years",
+        "b": "6 years",
+        "c": "8 years",
+        "d": "24 years"
+      },
+      "correctOptionId": "c",
+      "explanation": "Let Noah’s age be N, so Priya is 3N. Then 3N + 8 = 2(N + 8). Expanding gives 3N + 8 = 2N + 16, so N = 8. Check: ages 8 and 24 become 16 and 32, and 32 is twice 16.",
+      "distractorExplanations": {
+        "a": "Halves the true N, often from treating the future factor as 3 instead of 2 when isolating N.",
+        "b": "Comes from a constant-term slip such as 3N + 8 = 2N + 14 instead of 2N + 16.",
+        "d": "Reports Priya’s current age (3 × 8 = 24), not Noah’s age as asked."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-004": {
+      "topicId": "quant",
+      "prompt": "Faucet P can fill a tank in 9 hours and faucet Q can fill the same tank in 18 hours. If both run together at constant rates, how long do they take to fill the tank?",
+      "options": {
+        "a": "4.5 hours",
+        "b": "5 hours",
+        "c": "5.5 hours",
+        "d": "6 hours"
+      },
+      "correctOptionId": "d",
+      "explanation": "Combined rate is 1/9 + 1/18 = 2/18 + 1/18 = 3/18 = 1/6 tank per hour, so the time is 6 hours. Work problems add rates; they do not average the two times.",
+      "distractorExplanations": {
+        "a": "Halves P’s solo time (9/2) as if Q doubled P’s rate rather than adding 1/18.",
+        "b": "Averages the two times after an extra adjustment; combined work is the reciprocal of the summed rates.",
+        "c": "Splits the difference between 9 and 18 instead of adding 1/9 and 1/18."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-005": {
+      "topicId": "quant",
+      "prompt": "How many kilograms of an 8% salt brine must be mixed with 12 kg of a 20% salt brine to produce a 14% salt brine?",
+      "options": {
+        "a": "12 kg",
+        "b": "14 kg",
+        "c": "16 kg",
+        "d": "18 kg"
+      },
+      "correctOptionId": "a",
+      "explanation": "Let x be kilograms of 8% brine. Salt balance: 0.08x + 0.20(12) = 0.14(x + 12). Then 0.08x + 2.4 = 0.14x + 1.68, so 0.72 = 0.06x and x = 12. Check: 0.96 + 2.4 = 3.36 salt in 24 kg, which is 14%.",
+      "distractorExplanations": {
+        "b": "Copies the target 14% as a mass instead of solving the salt-balance equation.",
+        "c": "Uses equal total mass thinking (12 + 4) rather than the 0.06x = 0.72 step.",
+        "d": "Overweights the weaker brine, as if the 6-point gap from 8% to 14% needed 18 kg."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-006": {
+      "topicId": "quant",
+      "prompt": "A lab has 7 chemists and 5 biologists. How many 4-person panels have exactly 2 biologists?",
+      "options": {
+        "a": "140",
+        "b": "210",
+        "c": "280",
+        "d": "350"
+      },
+      "correctOptionId": "b",
+      "explanation": "Choose 2 biologists from 5 and 2 chemists from 7: C(5,2) × C(7,2) = 10 × 21 = 210. Order inside the panel does not matter, so combinations, not permutations, apply.",
+      "distractorExplanations": {
+        "a": "Uses C(7,2) × C(5,1) = 21 × 5 = 105 scaled, or otherwise undercounts the 2-and-2 case.",
+        "c": "Inflates C(7,2) as if 7 × 8 rather than 21, producing 10 × 28 = 280.",
+        "d": "Takes C(5,2) × C(7,4) = 10 × 35 = 350, which is 2 biologists and 4 chemists, not a 4-person panel."
+      },
+      "difficulty": "hard"
+    },
+    "gmat-focus-readiness-check-007": {
+      "topicId": "quant",
+      "prompt": "If n is a positive integer and 45n is a perfect square, what is the smallest possible n?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "5",
+        "d": "15"
+      },
+      "correctOptionId": "c",
+      "explanation": "45 = 3² × 5. For 45n to be a square, every exponent in the prime factorization must be even, so n must supply one factor of 5. The least such n is 5, and 45 × 5 = 225 = 15².",
+      "distractorExplanations": {
+        "a": "n = 3 yields 135 = 3³ × 5, which still has odd exponents on 3 and on 5, so it is not a square.",
+        "b": "n = 4 = 2² yields 180 = 2² × 3² × 5, which still has an odd exponent on 5.",
+        "d": "15 = 3 × 5 works but is not smallest; the extra 3 is unnecessary because 45 already has 3²."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-008": {
+      "topicId": "quant",
+      "prompt": "The mean of 8 scores is 12. After one score is dropped, the mean of the remaining 7 scores is 10. What score was dropped?",
+      "options": {
+        "a": "10",
+        "b": "14",
+        "c": "18",
+        "d": "26"
+      },
+      "correctOptionId": "d",
+      "explanation": "The original sum is 8 × 12 = 96. The remaining sum is 7 × 10 = 70. The dropped score is 96 − 70 = 26. Means convert to totals before subtracting.",
+      "distractorExplanations": {
+        "a": "Repeats the new mean instead of subtracting the two totals.",
+        "b": "Uses 8 × 12 − 7 × 12 = 12, then adds 2, a mix of keeping the old mean for the leftover scores.",
+        "c": "Computes 96 − 7 × 11.14-style slip, or 12 + 6, not 96 − 70."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-009": {
+      "topicId": "quant",
+      "prompt": "A refinery blends 70-purity lots with 40-purity lots to hit 52-purity. If the blend uses 6 lots of 40-purity, how many 70-purity lots are required?",
+      "options": {
+        "a": "4 lots",
+        "b": "6 lots",
+        "c": "8 lots",
+        "d": "10 lots"
+      },
+      "correctOptionId": "a",
+      "explanation": "Let x be the number of 70-purity lots. Then 70x + 40(6) = 52(x + 6). So 70x + 240 = 52x + 312, hence 18x = 72 and x = 4. Check: 280 + 240 = 520 purity-units in 10 lots, or 52 each.",
+      "distractorExplanations": {
+        "b": "Matches the given 6 lots of 40-purity, as if a 1:1 mix reached 52, but 1:1 would average 55.",
+        "c": "Inverts the 18-point and 12-point gaps from 70 and 40 to 52, using 8 of the richer lots.",
+        "d": "Takes the total lot count as the richer count, or 6 + 4 mis-assigned to the 70-purity side."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-010": {
+      "topicId": "quant",
+      "prompt": "A drawer holds 5 tagged chips and 11 untagged chips. Two chips are drawn at random without replacement. What is the probability both are tagged?",
+      "options": {
+        "a": "1/20",
+        "b": "1/12",
+        "c": "1/4",
+        "d": "5/16"
+      },
+      "correctOptionId": "b",
+      "explanation": "P(first tagged) = 5/16 and P(second tagged | first tagged) = 4/15. The product is 20/240 = 1/12. Without replacement, the second factor uses 15 chips, not 16.",
+      "distractorExplanations": {
+        "a": "Uses 4/16 × 5/16 or another independent-draw product that is not 5/16 × 4/15.",
+        "c": "Treats a simplified 4/16 as the two-draw probability, ignoring the second draw’s count.",
+        "d": "Stops after the first draw (5/16) and never multiplies by 4/15."
+      },
+      "difficulty": "hard"
+    },
+    "gmat-focus-readiness-check-011": {
+      "topicId": "quant",
+      "prompt": "If 9^(x−1) = 27^(x−3), what is x?",
+      "options": {
+        "a": "3",
+        "b": "5",
+        "c": "7",
+        "d": "9"
+      },
+      "correctOptionId": "c",
+      "explanation": "Rewrite 9 = 3² and 27 = 3³ so 3^{2(x−1)} = 3^{3(x−3)}. Equal bases imply 2x − 2 = 3x − 9, hence x = 7. Check: 9^6 = (3²)^6 = 3^{12} and 27^4 = (3³)^4 = 3^{12}.",
+      "distractorExplanations": {
+        "a": "Sets the original exponents equal (x−1 = x−3), which is impossible, or solves 2(x−1)=3x with a dropped constant.",
+        "b": "Drops a sign when moving −9, yielding 2x + 2 = 3x or x = 5.",
+        "d": "Reports the base 9, or solves 2(x−1)=3(x−1) as if the 27-exponent matched."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-012": {
+      "topicId": "quant",
+      "prompt": "What is the value of $2,500 after 2 years at 8% interest compounded annually?",
+      "options": {
+        "a": "$2,700",
+        "b": "$2,800",
+        "c": "$2,900",
+        "d": "$2,916"
+      },
+      "correctOptionId": "d",
+      "explanation": "Compound amount is 2500 × (1.08)² = 2500 × 1.1664 = 2916. The second year earns 8% on 2700, which is 216, for a two-year total of 416 above principal.",
+      "distractorExplanations": {
+        "a": "Applies 8% for only one year (2500 × 1.08 = 2700) and stops.",
+        "b": "Uses 2500 + 2 × 150, as if each year added a flat $150 instead of 8% of the growing balance.",
+        "c": "Computes simple interest for two years (2500 × 0.08 × 2 = 400) and reports 2900, skipping compounding."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-013": {
+      "topicId": "quant",
+      "prompt": "If 3x + y = 17 and x − y = 3, what is the value of x?",
+      "options": {
+        "a": "5",
+        "b": "7",
+        "c": "8",
+        "d": "14"
+      },
+      "correctOptionId": "a",
+      "explanation": "Add the equations: (3x + y) + (x − y) = 17 + 3, so 4x = 20 and x = 5. Then y = 2 from x − y = 3. Check: 3(5) + 2 = 17.",
+      "distractorExplanations": {
+        "b": "Adds 17 and 3 then forgets to divide by 4, or reports x + y = 7.",
+        "c": "Solves for y incorrectly as 8, or uses 17 − 3 × 3 without the system.",
+        "d": "Adds the two left sides as 3x + x and the rights as 17 − 3, then skips the 4x step, leaving 14."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-014": {
+      "topicId": "quant",
+      "prompt": "An arithmetic sequence begins 11, 17, 23, 29, … with constant difference 6. What is the 10th term?",
+      "options": {
+        "a": "59",
+        "b": "65",
+        "c": "71",
+        "d": "77"
+      },
+      "correctOptionId": "b",
+      "explanation": "The nth term is 11 + (n − 1) × 6. For n = 10 that is 11 + 9 × 6 = 11 + 54 = 65. The 10th term uses nine steps from the first term, not ten.",
+      "distractorExplanations": {
+        "a": "Computes the 9th term: 11 + 8 × 6 = 59, an off-by-one on the number of steps.",
+        "c": "Uses ten steps (11 + 10 × 6 = 71) as if a_n = a_1 + n d.",
+        "d": "Uses eleven steps (11 + 11 × 6 = 77), shifting the index two places."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-015": {
+      "topicId": "quant",
+      "prompt": "k is a positive integer such that 4k leaves remainder 5 when divided by 7. What is the smallest possible k?",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "7"
+      },
+      "correctOptionId": "c",
+      "explanation": "The condition is 4k ≡ 5 (mod 7). The inverse of 4 modulo 7 is 2 because 4 × 2 = 8 ≡ 1. Multiply both sides by 2: k ≡ 10 ≡ 3 (mod 7). The least positive k is 3, and 4 × 3 = 12 = 7 × 1 + 5.",
+      "distractorExplanations": {
+        "a": "k = 1 gives 4, which leaves remainder 4 modulo 7, not 5.",
+        "b": "k = 2 gives 8 ≡ 1 (mod 7), the inverse check, not the original remainder.",
+        "d": "Repeats the modulus 7; 4 × 7 = 28 ≡ 0 (mod 7), remainder 0 rather than 5."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-016": {
+      "topicId": "quant",
+      "prompt": "A courier drives 120 km at 40 km/h and then 80 km at 80 km/h. What is the average speed for the whole 200 km?",
+      "options": {
+        "a": "40 km/h",
+        "b": "45 km/h",
+        "c": "48 km/h",
+        "d": "50 km/h"
+      },
+      "correctOptionId": "d",
+      "explanation": "Time is 120/40 + 80/80 = 3 + 1 = 4 hours. Average speed is total distance over total time: 200/4 = 50 km/h. Do not average 40 and 80, because the legs take unequal time.",
+      "distractorExplanations": {
+        "a": "Reports only the slower leg’s speed, as if the whole trip ran at 40 km/h.",
+        "b": "Uses (120 + 80)/(40 + 80) × 18 or a blended 200/4.44-style estimate near 45.",
+        "c": "Averages 40 and 80 as 60 then scales to 48, or uses 200 km / (3 h + 1.17 h) instead of 4 h total."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-017": {
+      "topicId": "quant",
+      "prompt": "At a studio, 40% of staff are engineers, 35% are designers, and the rest are in QA. If 96 people are engineers, how many are in QA?",
+      "options": {
+        "a": "60",
+        "b": "84",
+        "c": "96",
+        "d": "120"
+      },
+      "correctOptionId": "a",
+      "explanation": "Engineers are 40% of headcount, so total staff is 96 / 0.40 = 240. QA is 100% − 40% − 35% = 25% of 240, which is 60 people.",
+      "distractorExplanations": {
+        "b": "Takes the designer share (35% of 240 = 84) instead of the 25% QA share.",
+        "c": "Copies the given engineer count rather than converting 25% of the 240 total.",
+        "d": "Uses 50% of 240, as if QA were everyone outside engineering and design were ignored."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-018": {
+      "topicId": "quant",
+      "prompt": "A wholesaler marks an item 50% above cost, then sells it at 20% off that marked price. What is the profit as a percent of cost?",
+      "options": {
+        "a": "10%",
+        "b": "20%",
+        "c": "30%",
+        "d": "40%"
+      },
+      "correctOptionId": "b",
+      "explanation": "Let cost be 100. The marked price is 150. After 20% off, the selling price is 150 × 0.80 = 120. Profit is 20 on a cost of 100, so 20%. The 50% and 20% cannot be subtracted as 30%.",
+      "distractorExplanations": {
+        "a": "Takes half of the 20% sale as the profit margin, not 120 versus 100.",
+        "c": "Subtracts the percents (50 − 20 = 30) instead of applying them in sequence to cost.",
+        "d": "Takes 80% of the 50% markup (40%) as if profit were 0.8 × 50 points on cost."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-019": {
+      "topicId": "quant",
+      "prompt": "Three consecutive multiples of 3 add to 72. What is the largest of the three?",
+      "options": {
+        "a": "21",
+        "b": "24",
+        "c": "27",
+        "d": "30"
+      },
+      "correctOptionId": "c",
+      "explanation": "Let the integers be n, n + 3, and n + 6. Then 3n + 9 = 72, so 3n = 63 and n = 21. The three multiples are 21, 24, and 27; the largest is 27. Check: 21 + 24 + 27 = 72.",
+      "distractorExplanations": {
+        "a": "Reports the smallest of the three (n = 21), not the largest.",
+        "b": "Reports the middle multiple (24) instead of n + 6.",
+        "d": "Steps one extra multiple of 3 past 27, as if the sum used n + 9 as the third term."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-020": {
+      "topicId": "quant",
+      "prompt": "Crew A installs 20 cabinets per hour and Crew B installs 30 cabinets per hour. Working together at those constant rates, how long will they take to install 250 cabinets?",
+      "options": {
+        "a": "2.5 hours",
+        "b": "4 hours",
+        "c": "4.5 hours",
+        "d": "5 hours"
+      },
+      "correctOptionId": "d",
+      "explanation": "Combined rate is 20 + 30 = 50 cabinets per hour, so time is 250 / 50 = 5 hours. Adding the rates is required; averaging 20 and 30 would understate the joint output.",
+      "distractorExplanations": {
+        "a": "Divides 250 by 100, as if the crews each did 50 per hour or the rates were doubled.",
+        "b": "Uses 250 / 62.5 or treats B’s 30 as the only rate after a 4-hour guess.",
+        "c": "Averages the two rates (25 per hour) and computes 250 / 55.5 ≈ 4.5, not 50 per hour."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-021": {
+      "topicId": "quant",
+      "prompt": "A grant rose 12% from Year 1 to Year 2, then fell 25% from Year 2 to Year 3. Year 3 funding was $84,000. What was Year 1 funding?",
+      "options": {
+        "a": "$100,000",
+        "b": "$105,000",
+        "c": "$112,000",
+        "d": "$125,000"
+      },
+      "correctOptionId": "a",
+      "explanation": "Year 3 = Year 1 × 1.12 × 0.75 = Year 1 × 0.84. So Year 1 = 84,000 / 0.84 = 100,000. Net change is multiplicative (0.84), not 12% − 25% = −13% of the original.",
+      "distractorExplanations": {
+        "b": "Backs out a single 20% drop (84,000 / 0.80) instead of dividing by 0.84.",
+        "c": "Divides 84,000 by 0.75 only, undoing the 25% drop but not the prior 12% rise.",
+        "d": "Treats 84,000 as 67.2% of start (12% then −25% added) or 84,000 / 0.672 ≈ 125,000."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-022": {
+      "topicId": "quant",
+      "prompt": "In a geometric sequence the third term is 12 and the sixth term is 96. What is the first term?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "6"
+      },
+      "correctOptionId": "b",
+      "explanation": "If the first term is a and the ratio is r, then ar² = 12 and ar⁵ = 96. The quotient is r³ = 8, so r = 2. Then a(2)² = 12 gives 4a = 12 and a = 3. Check: 3, 6, 12, 24, 48, 96.",
+      "distractorExplanations": {
+        "a": "Takes r = 4 from 96/12 then a = 12 / 4², mixing the three-step ratio with the wrong root.",
+        "c": "Sets a = 12 / 3, using the term index 3 as a divisor instead of r² = 4.",
+        "d": "Reports the second term (6) or uses r = √8 and a = 12 / (√8)² incorrectly as 6."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-024": {
+      "topicId": "quant",
+      "prompt": "25% of m equals 40% of n, and m + n = 130. What is the smaller of m and n?",
+      "options": {
+        "a": "40",
+        "b": "45",
+        "c": "50",
+        "d": "80"
+      },
+      "correctOptionId": "c",
+      "explanation": "From 0.25m = 0.40n, m = 1.6n. Then 1.6n + n = 130, so 2.6n = 130 and n = 50. Thus m = 80, and the smaller number is 50.",
+      "distractorExplanations": {
+        "a": "Swaps the percents (0.40m = 0.25n) and solves that reversed system.",
+        "b": "Uses 130 × 25/ (25+40) ≈ 50 then subtracts 5, a parts-slip on 25:40.",
+        "d": "Reports m = 80, the larger value, instead of the smaller n = 50."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-025": {
+      "topicId": "quant",
+      "prompt": "A vat holds 30 liters of a 10% juice mix. How many liters of pure juice must be added to make the mix 25% juice?",
+      "options": {
+        "a": "2 liters",
+        "b": "3 liters",
+        "c": "4 liters",
+        "d": "6 liters"
+      },
+      "correctOptionId": "d",
+      "explanation": "There are currently 3 liters of juice. After adding x liters of pure juice, (3 + x)/(30 + x) = 0.25. Then 3 + x = 7.5 + 0.25x, so 0.75x = 4.5 and x = 6. Check: 9 liters juice in 36 liters is 25%.",
+      "distractorExplanations": {
+        "a": "Uses 10% of 20 or the 15-point gap as 2 L, not the (3+x)/(30+x) balance.",
+        "b": "Adds the juice already in the vat (3 L) instead of the extra 6 L required.",
+        "c": "Takes 15% of 30 = 4.5 rounded down, treating the gap as a volume of 10% mix."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-026": {
+      "topicId": "quant",
+      "prompt": "A shop’s cost of making x units is C(x) = 100 + 12x + 0.1x² dollars. What is C(21) − C(20), the extra cost of the 21st unit?",
+      "options": {
+        "a": "$16.10",
+        "b": "$16.20",
+        "c": "$22.10",
+        "d": "$32.10"
+      },
+      "correctOptionId": "a",
+      "explanation": "The difference is 12(21 − 20) + 0.1(21² − 20²) = 12 + 0.1(441 − 400) = 12 + 0.1 × 41 = 12 + 4.10 = 16.10. The quadratic term grows by 0.1 times the odd number 41, not by 0.1 alone.",
+      "distractorExplanations": {
+        "b": "Uses 21² − 20² = 42 instead of 41, giving 12 + 4.20 = 16.20.",
+        "c": "Adds 12 + 10.10, treating 0.1 × 101 or mixing C(20)’s 0.1 × 400 fragment.",
+        "d": "Adds the linear 12 to 0.1 × 201, confusing 21² − 20² with 21² − 20."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-028": {
+      "topicId": "quant",
+      "prompt": "A fund holds stocks and cash. Stocks gain 10% and cash loses 6%; the whole fund then gains 4%. What is the ratio of stocks to cash?",
+      "options": {
+        "a": "3:5",
+        "b": "5:3",
+        "c": "2:1",
+        "d": "5:2"
+      },
+      "correctOptionId": "b",
+      "explanation": "Let S and C be starting amounts. Then 0.10S − 0.06C = 0.04(S + C). So 0.10S − 0.06C = 0.04S + 0.04C, hence 0.06S = 0.10C and S/C = 10/6 = 5/3. The stocks-to-cash ratio is 5:3.",
+      "distractorExplanations": {
+        "a": "Inverts 5:3. A 3:5 mix would net 0.10(3) − 0.06(5) over 8, which is 0, not +4%.",
+        "c": "Uses 10:6 simplified one step too far to 2:1, dropping the 5:3 reduction.",
+        "d": "Matches the 10% and 4% figures as 10:4 = 5:2 instead of 0.06S = 0.10C."
+      },
+      "difficulty": "hard"
+    },
+    "gmat-focus-readiness-check-quant-029": {
+      "topicId": "quant",
+      "prompt": "An inlet pipe can fill a cistern in 10 hours, and a drain can empty the full cistern in 15 hours. If both are opened with the cistern empty, how long until it is full?",
+      "options": {
+        "a": "12 hours",
+        "b": "20 hours",
+        "c": "30 hours",
+        "d": "60 hours"
+      },
+      "correctOptionId": "c",
+      "explanation": "Net rate is 1/10 − 1/15 = 3/30 − 2/30 = 1/30 cistern per hour, so the fill time is 30 hours. The drain subtracts from the inlet; the times are not added to 25 or averaged to 12.5.",
+      "distractorExplanations": {
+        "a": "Averages 10 and 15, which would be correct only for a meaningless mean of times, not a net rate.",
+        "b": "Adds the two times then subtracts 5, or inverts 1/10 − 1/20 instead of 1/10 − 1/15.",
+        "d": "Takes 10 × 15 / 2.5 or doubles the true 30, as if the net rate were 1/60."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-030": {
+      "topicId": "quant",
+      "prompt": "What remainder does 2^10 leave when divided by 9?",
+      "options": {
+        "a": "1",
+        "b": "4",
+        "c": "5",
+        "d": "7"
+      },
+      "correctOptionId": "d",
+      "explanation": "Powers of 2 modulo 9 cycle every 6: 2, 4, 8, 7, 5, 1. Since 10 ≡ 4 (mod 6), the remainder matches the 4th entry, 7. Directly, 2^10 = 1024 and 1024 = 9 × 113 + 7.",
+      "distractorExplanations": {
+        "a": "Uses cycle position 6 (remainder 1), as if 10 were a multiple of 6.",
+        "b": "Uses cycle position 2 (remainder 4), from 10 mod 8 or 2² instead of 10 mod 6.",
+        "c": "Uses cycle position 5 (remainder 5), off by one in the 6-term cycle."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-031": {
+      "topicId": "quant",
+      "prompt": "After a 20% discount, a buyer pays $152. What was the pre-discount price?",
+      "options": {
+        "a": "$190",
+        "b": "$200",
+        "c": "$210",
+        "d": "$228"
+      },
+      "correctOptionId": "a",
+      "explanation": "The buyer paid 80% of list, so list = 152 / 0.80 = 190. Raising 152 by 20% (152 × 1.20 = 182.40) does not undo a 20% markdown, because that 20% was of the original, not of 152.",
+      "distractorExplanations": {
+        "b": "Uses a round 20% of 200 = 40 and 200 − 48, or 152 / 0.76, not 152 / 0.80.",
+        "c": "Adds 20% of 152 twice or 152 + 58, mixing list with a $58 imagined markdown.",
+        "d": "Adds 50% of 152 (76) to 152, as if the discount were one-third off rather than 20%."
+      },
+      "difficulty": "easy"
+    },
+    "gmat-focus-readiness-check-quant-032": {
+      "topicId": "quant",
+      "prompt": "A sequence satisfies a1 = 3 and a_{n+1} = 3a_n − 1. What is the fourth term?",
+      "options": {
+        "a": "23",
+        "b": "68",
+        "c": "71",
+        "d": "80"
+      },
+      "correctOptionId": "b",
+      "explanation": "a2 = 3(3) − 1 = 8, a3 = 3(8) − 1 = 23, a4 = 3(23) − 1 = 68. Each step multiplies by 3 then subtracts 1; skipping the −1 on the last step would produce 69, not an option here.",
+      "distractorExplanations": {
+        "a": "Stops at a3 = 23, one iteration short of the fourth term.",
+        "c": "Computes 3 × 24 − 1, using 24 in place of a3 = 23.",
+        "d": "Uses 3 × 27 − 1, as if a3 were 27 (3³) instead of 23."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-034": {
+      "topicId": "quant",
+      "prompt": "A share price falls 10%, then rises 20%, then rises 25%. If the final price is $270, what was the starting price?",
+      "options": {
+        "a": "$180",
+        "b": "$190",
+        "c": "$200",
+        "d": "$240"
+      },
+      "correctOptionId": "c",
+      "explanation": "The multipliers are 0.90 × 1.20 × 1.25 = 1.35. Starting price P satisfies 1.35P = 270, so P = 270 / 1.35 = 200. The three percent moves must be multiplied, not added to +35% of an unknown base.",
+      "distractorExplanations": {
+        "a": "Treats 270 as 1.50 times start (10% + 20% + 25% − 5%) or 270 / 1.5 = 180.",
+        "b": "Backs out only the last 25% and part of the 20% (270 / 1.42 ≈ 190).",
+        "d": "Undoes only the last 12.5% (270 / 1.125 = 240) and ignores the first two moves."
+      },
+      "difficulty": "hard"
+    },
+    "gmat-focus-readiness-check-quant-035": {
+      "topicId": "quant",
+      "prompt": "In a cohort of 150 analysts, 90 take statistics, 70 take economics, and 40 take both. How many take neither course?",
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "20",
+        "d": "30"
+      },
+      "correctOptionId": "d",
+      "explanation": "By inclusion-exclusion, those in at least one course are 90 + 70 − 40 = 120. Neither is 150 − 120 = 30. Subtracting the overlap once prevents double-counting the 40 who take both.",
+      "distractorExplanations": {
+        "a": "Computes 150 − 90 − 70 + 20, under-adding the overlap correction.",
+        "b": "Uses 150 − (90 + 70 − 25) or splits the 40 overlap in half.",
+        "c": "Takes 150 − 90 − 70 + 30, a partial overlap fix that still misses 10."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-036": {
+      "topicId": "quant",
+      "prompt": "Tea bags come in packs of 10 and coffee pods in packs of 15. What is the smallest number of each that a buyer can purchase so the two counts are equal?",
+      "options": {
+        "a": "30",
+        "b": "45",
+        "c": "60",
+        "d": "90"
+      },
+      "correctOptionId": "a",
+      "explanation": "The counts must be a common multiple of 10 and 15. The least common multiple is 2 × 3 × 5 = 30. That is 3 packs of tea and 2 packs of coffee. Any larger common multiple (60, 90) works but is not minimal.",
+      "distractorExplanations": {
+        "b": "Uses 3 × 15 but 45 is not a multiple of 10, so tea packs would not be whole.",
+        "c": "A common multiple (LCM × 2) but twice the least equal count.",
+        "d": "The product 10 × 15 / 1.67 or LCM × 3; larger than the least common multiple 30."
+      },
+      "difficulty": "medium"
+    },
+    "gmat-focus-readiness-check-quant-037": {
+      "topicId": "quant",
+      "prompt": "How many positive divisors does 60 have?",
+      "options": {
+        "a": "8",
+        "b": "10",
+        "c": "12",
+        "d": "16"
+      },
+      "correctOptionId": "c",
+      "explanation": "60 = 2² × 3¹ × 5¹. The number of positive divisors is (2 + 1)(1 + 1)(1 + 1) = 3 × 2 × 2 = 12. Listing: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.",
+      "distractorExplanations": {
+        "a": "Adds the exponents 2 + 1 + 1 + 4 or counts only the proper divisors excluding 1 and 60.",
+        "b": "Uses (2+1)(1+1)+4 = 10, dropping one of the (e+1) factors.",
+        "d": "Uses 2⁴ or (2+1)(1+1)(1+1)+4, overcounting as if 60 were 2^3 × 3 × 5 with an extra 2."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

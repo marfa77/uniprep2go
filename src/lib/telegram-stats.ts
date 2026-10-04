@@ -136,6 +136,8 @@ function formatChannelLine(byChannel: Record<string, number>) {
 
 const TOP_PRODUCTS_LIMIT = 10;
 const WEEKLY_PRODUCT_DAYS = 7;
+/** Hide 1–2 unique one-offs from the weekly mock/Anki top (noise, not a ranking). */
+const MIN_WEEKLY_PRODUCT_UNIQUES = 3;
 
 function isMockVisitPath(path: string) {
   return path.startsWith("/mock-exams/");
@@ -213,7 +215,7 @@ export function rankWeeklyMockAndAnkiVisits(
     }
   }
 
-  const ranked = sortWeeklyVisitRanks(totals);
+  const ranked = sortWeeklyVisitRanks(totals).filter((row) => row.unique >= MIN_WEEKLY_PRODUCT_UNIQUES);
   return {
     mocks: ranked.filter((row) => isMockVisitPath(row.path)),
     anki: ranked.filter((row) => isAnkiVisitPath(row.path)),
@@ -452,14 +454,14 @@ export function formatFunnelSection(
     ...formatWeeklyVisitLines(
       weekly.mocks,
       "Top mocks (7d visits):",
-      "no mock visits this week",
+      "none with ≥3 uniques this week",
       "mocks",
       skuLimit,
     ),
     ...formatWeeklyVisitLines(
       weekly.anki,
       "Top Anki (7d visits):",
-      "no Anki visits this week",
+      "none with ≥3 uniques this week",
       "Anki",
       skuLimit,
     ),

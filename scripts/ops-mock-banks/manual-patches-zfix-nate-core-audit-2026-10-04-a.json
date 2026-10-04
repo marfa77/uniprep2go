@@ -1,0 +1,259 @@
+{
+  "nate-core-readiness-check": {
+    "nate-core-readiness-check-safety-001": {
+      "prompt": "A technician is about to open a gas-furnace control panel to replace a 240 V indoor-blower relay. The thermostat is already set to Off. What is the first safe step before any metal tool enters the panel?",
+      "options": {
+        "a": "Lock out and tag the disconnect, then prove the circuit dead with a meter",
+        "b": "Trust the Off thermostat and start the swap to save a trip outside",
+        "c": "Pull the door switch only so 24 V drops while line voltage stays on",
+        "d": "Wear cotton work gloves and keep the circuit live for a faster swap"
+      },
+      "correctOptionId": "a",
+      "explanation": "NATE Core electrical safety is lockout/tagout plus a proved-dead check. A thermostat Off command only opens the 24 V control path; line voltage can still sit on the transformer, relay, and blower circuit. Isolate at a lockable disconnect, tag it, and verify zero voltage with a known-good meter before tools enter the panel.",
+      "distractorExplanations": {
+        "b": "Confuses a thermostat Off command with isolation; the indoor unit can still be live at the disconnect and transformer.",
+        "c": "Confuses the blower door interlock with lockout; that switch drops only control power and leaves lethal line voltage.",
+        "d": "Cotton gloves are not electrical PPE, and working a live 240 V panel is not a time-saving method."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-002": {
+      "prompt": "An installer is brazing a new copper liquid line with the circuit open to air. Which purge practice keeps oxide scale out of the tubing and avoids feeding the joint with oxygen?",
+      "options": {
+        "a": "Flow compressed shop air through the tubing the whole time it is heated",
+        "b": "Flow a low stream of dry nitrogen through the tubing while heating",
+        "c": "Hold a static 150 psig nitrogen charge in the open joint while heating",
+        "d": "Purge with nitrogen first, then shut the flow off before the torch starts"
+      },
+      "correctOptionId": "b",
+      "explanation": "A low-flow dry-nitrogen sweep displaces oxygen while the copper is hot, so internal oxide scale does not form and the joint is not oxygen-fed. Shop air is moist oxygen. A 150 psig static charge is a pressure-test level and blows filler from an open joint. A pre-purge alone lets air return as soon as flow stops.",
+      "distractorExplanations": {
+        "a": "Shop air carries oxygen and moisture, so copper oxide still forms and the flame can be oxygen-fed.",
+        "c": "Confuses a nitrogen leak-test pressure with a braze sweep; 150 psig in an open joint ejects filler metal.",
+        "d": "A pre-purge only; air re-enters as the tube heats unless nitrogen keeps flowing during heating."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-003": {
+      "prompt": "A new line set is ready for a leak check before any refrigerant is weighed in. How should the installer pressure-test the piping?",
+      "options": {
+        "a": "Pressurize from the oxygen cylinder because that gas is dry and oil-free",
+        "b": "Pressurize with unregulated shop air so a soap-bubble test costs less",
+        "c": "Pressurize with dry nitrogen through a regulator; never use oxygen",
+        "d": "Pressurize from a virgin refrigerant cylinder until bubbles stop forming"
+      },
+      "correctOptionId": "c",
+      "explanation": "Installers leak-check with dry nitrogen and a regulator so pressure is controlled and the gas is inert. Oxygen plus compressor oil or residual organics can ignite or explode in copper piping. Shop air adds moisture. Using virgin refrigerant as a test gas wastes product and is not a controlled pressure test.",
+      "distractorExplanations": {
+        "a": "Oxygen in an oil-wetted or dirty line is an explosion hazard; dryness does not make oxygen a test gas.",
+        "b": "Unregulated shop air can overshoot the rating and loads moisture into a circuit that must stay dry.",
+        "d": "Confuses charging with leak testing; refrigerant is not a standing pressure-test medium for new piping."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-004": {
+      "prompt": "A homeowner reports a strong rotten-egg smell around a gas furnace that has not been running. The technician has just arrived. What is the correct first action?",
+      "options": {
+        "a": "Start the furnace through one full cycle to see whether the odor clears",
+        "b": "Flip the blower switch so room air dilutes the odor, then hunt the leak",
+        "c": "Inspect the flue first, because that odor always means combustion spillage",
+        "d": "Shut the gas, ventilate without making sparks, and treat it as a leak"
+      },
+      "correctOptionId": "d",
+      "explanation": "Mercaptan odorant means unburned fuel gas until proved otherwise. Kill the gas supply, ventilate by opening doors and windows, and keep ignition sources off—including light switches, motors, and the furnace itself—until the area is safe and the leak is found. Combustion products such as CO are largely odorless and are not what mercaptan signals.",
+      "distractorExplanations": {
+        "a": "Lighting burners in a gas-odor space is an ignition source; the odor itself is a stop-and-ventilate cue.",
+        "b": "Switching a blower or other load can spark; dilution is done with gas off and no electrical switching.",
+        "c": "Confuses mercaptan (unburned gas) with flue spillage; CO and other combustion gases are not rotten-egg scented."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-safety-005": {
+      "prompt": "A tech will service a natural-gas furnace in a tight attic with limited combustion openings. What must be in place before work starts?",
+      "options": {
+        "a": "Combustion-air path, CO awareness, and a planned way out of the space",
+        "b": "A dust mask, which also filters carbon monoxide during the visit",
+        "c": "Tape over combustion-air openings so the attic stays more comfortable",
+        "d": "A spotter only if the appliance is a sealed hydronic boiler, not a furnace"
+      },
+      "correctOptionId": "a",
+      "explanation": "NATE Core confined-space practice around fuel-fired equipment is combustion air, carbon monoxide awareness, and an exit plan before the tech is committed in an attic or crawl. Particulate masks do not stop CO. Blocking combustion air starves the burner and raises CO. Any fuel-fired appliance in an enclosed space can produce CO, not only boilers.",
+      "distractorExplanations": {
+        "b": "N95-style dust filters do not remove CO; that risk is handled with air, monitoring, and egress—not a mask.",
+        "c": "Sealing combustion air starves the furnace and can drive incomplete combustion and CO into the attic.",
+        "d": "CO and egress apply to a gas furnace in a tight attic the same way they apply to other fuel-fired appliances."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-006": {
+      "prompt": "On a package unit, the dual run capacitor is cracked and bulged. What is the safe replacement practice?",
+      "options": {
+        "a": "Match microfarads but drop the voltage rating if the can is a tighter fit",
+        "b": "Discharge it, then replace with the specified MFD and voltage rating",
+        "c": "Install a higher MFD can so the compressor and fan get extra torque",
+        "d": "Leave it in service if a meter still shows MFD within six percent"
+      },
+      "correctOptionId": "b",
+      "explanation": "A bulged or cracked capacitor has a failed dielectric and can still hold a shock charge. Short the terminals with an insulated tool after power is off, then install a can that matches specified microfarads and equals or exceeds the voltage rating. Oversizing MFD overheats start windings. A passing MFD reading does not make a vented case safe.",
+      "distractorExplanations": {
+        "a": "A lower voltage rating than the original can fail early; voltage must meet or exceed the specified rating.",
+        "c": "Extra MFD raises winding current and heat; replacements stay on the specified microfarad value.",
+        "d": "A cracked or bulged case is a failed part even if capacitance still reads near the label."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-007": {
+      "prompt": "An installer is setting up oxy-acetylene to braze a filter-drier in a mechanical room. Which setup is required before the torch is lit?",
+      "options": {
+        "a": "Crack the oxygen valve first so the flame lights with less acetylene",
+        "b": "Oil the oxygen regulator threads so they seat without a leak",
+        "c": "Fit flashback arrestors and keep oil and grease off oxygen fittings",
+        "d": "Lay both cylinders on their sides so they cannot be knocked over"
+      },
+      "correctOptionId": "c",
+      "explanation": "Oxygen under pressure plus oil or grease can ignite. Flashback arrestors and reverse-flow check valves stop a flame or oxygen from traveling back into the hoses and cylinders. Acetylene cylinders stay upright so acetone does not leave the porous mass. Lighting sequence and oily oxygen threads are common field errors that start fires.",
+      "distractorExplanations": {
+        "a": "Wrong lighting sequence; oxygen-first lighting and a fuel-rich start are not the safe torch procedure.",
+        "b": "Oil on oxygen fittings is an ignition hazard; those threads are seated dry, never lubricated with oil.",
+        "d": "Acetylene cylinders must stay upright; laying them down can release acetone into the hose and torch."
+      },
+      "difficulty": "hard"
+    },
+    "nate-core-readiness-check-safety-008": {
+      "prompt": "A rooftop condensing unit needs temporary 120 V for a vacuum pump after a rain. Standing water is still on the roof. How should power be supplied?",
+      "options": {
+        "a": "Use an indoor lamp cord; the unit ground already protects anyone on the roof",
+        "b": "Use a heavy outdoor cord on a plain receptacle, treating GFCI as indoor-only",
+        "c": "Cut the ground pin so a GFCI will not trip in the wet location",
+        "d": "Avoid cords if possible; if needed, use GFCI and an outdoor-rated cord"
+      },
+      "correctOptionId": "d",
+      "explanation": "Wet outdoor work is a ground-fault shock hazard. Prefer the unit’s own protected receptacle or postpone until the roof is dry. If temporary power is unavoidable, use a GFCI device and a cord rated for outdoor wet use. Equipment grounding of the condenser does not protect the person holding a damaged indoor cord.",
+      "distractorExplanations": {
+        "a": "Indoor cord jackets are not for standing water, and the unit ground does not protect the person on the cord.",
+        "b": "GFCI is required in wet outdoor locations too; conductor gauge sizes ampacity, not ground-fault protection.",
+        "c": "Removing the ground pin defeats the equipment-grounding path; a trip is a fault that must be found."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-009": {
+      "prompt": "A belt-driven indoor blower needs a new belt. The disconnect is off. What else must be true before hands go near the pulley?",
+      "options": {
+        "a": "Lockout is verified and the wheel cannot free-spin into the technician",
+        "b": "Power is restored so the tech can jog the motor and watch belt tracking",
+        "c": "The old belt stays tightly tensioned so the new belt can be size-matched",
+        "d": "The blower-door switch is jumped so the motor can bump for alignment"
+      },
+      "correctOptionId": "a",
+      "explanation": "Belt and pulley work is mechanical energy control, not only electrical off. After the disconnect is locked, confirm the circuit is dead and that the blower wheel cannot store or release rotational energy into fingers. Jogging live, leaving a loaded belt, or jumping the door switch puts hands in a rotating machine.",
+      "distractorExplanations": {
+        "b": "Restoring power to watch tracking puts hands next to a live rotating pulley—the hazard being controlled.",
+        "c": "A tensioned belt stores energy and can pinch; release tension before hands work the pulley.",
+        "d": "Jumping the door interlock defeats a guard and can start the motor while hands are in the housing."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-010": {
+      "prompt": "In a home garage, an open gasoline can sits next to a package unit the tech is about to power up for a charge check. What is the correct action?",
+      "options": {
+        "a": "Proceed; A1 refrigerants are nonflammable so a spark in the bay is fine",
+        "b": "Remove the fuel, ventilate the bay, then do any spark-producing work",
+        "c": "Keep a fire extinguisher at the unit and continue the electrical checks",
+        "d": "Open the garage door and continue; vapors are assumed to leave at once"
+      },
+      "correctOptionId": "b",
+      "explanation": "Gasoline vapor plus a contactor, meter, or motor spark is an ignition and explosion hazard, independent of the refrigerant safety class. Remove flammable liquids, ventilate until vapors are gone, then resume electrical or charging work. An extinguisher is backup, not a control. Gasoline vapor is heavier than air and can pool even with a door open.",
+      "distractorExplanations": {
+        "a": "Refrigerant A1 class is irrelevant here; the gasoline vapor is the fuel that a spark can ignite.",
+        "c": "An extinguisher does not remove the vapor; fuels leave the space before spark-producing tasks start.",
+        "d": "Heavier-than-air gasoline vapor can still pool at floor level beside the unit after a door is opened."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-safety-011": {
+      "prompt": "The same call requires brazing a liquid-line drier, then checking line voltage at a condensing-unit contactor. Which PPE approach matches both tasks?",
+      "options": {
+        "a": "Glasses for the braze only; skip gloves so recovery-hose nuts can be felt",
+        "b": "A welding helmet for the braze, then no eye protection for the voltage check",
+        "c": "Task PPE: shade and burn gear for brazing, then eye and hand protection for live voltage",
+        "d": "A hard hat and ear plugs, which cover torch burns and electrical shock"
+      },
+      "correctOptionId": "c",
+      "explanation": "NATE Core expects PPE matched to the hazard, not one outfit for the whole call. Brazing needs eye shade, gloves, and burn/fire protection. Voltage checks need eye protection and insulating gloves or tools rated for the circuit. Hearing protection and a hard hat do not stop torch burns, UV, or shock.",
+      "distractorExplanations": {
+        "a": "Skipping gloves during hose or fitting work invites frostbite or cuts; feeling nuts is not a reason to drop PPE.",
+        "b": "A helmet for brazing does not excuse bare eyes at a live contactor; arc and debris still need eye protection.",
+        "d": "Hard hats and hearing protection address impact and noise, not flame, UV, frostbite, or electrical contact."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-012": {
+      "prompt": "A fused disconnect is mounted on the wall within sight of a rooftop condensing unit. What is that disconnect for during service?",
+      "options": {
+        "a": "To replace the branch-circuit breaker as the unit’s only overcurrent device",
+        "b": "To drop 24 V control power while leaving line voltage on the contactor",
+        "c": "To reset the compressor internal overload after a high-amp trip",
+        "d": "To isolate the unit so it cannot be re-energized from a remote panel"
+      },
+      "correctOptionId": "d",
+      "explanation": "A within-sight disconnect is a local isolation means so a tech can lock the equipment off and not have someone restore power from the indoor breaker. A non-fused switch provides no overcurrent protection. Opening only 24 V leaves lethal line voltage. Internal overloads reset thermally; they are not reset by the disconnect handle.",
+      "distractorExplanations": {
+        "a": "Many disconnects are non-fused; branch overcurrent stays at the breaker or fuses, not this handle.",
+        "b": "The disconnect opens line voltage to the outdoor unit; killing only 24 V leaves the contactor live.",
+        "c": "Compressor internal overloads reset after cooldown; the disconnect is isolation, not an overload reset."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-safety-013": {
+      "prompt": "A gas furnace rollout switch is open after a no-heat call. The heat exchanger is hot and soot is visible at the burner box. What should the technician do?",
+      "options": {
+        "a": "Stop, find the blockage or heat-exchanger/vent fault, and reset only after repair",
+        "b": "Reset the rollout, watch two cycles, and replace the switch if it opens again",
+        "c": "Raise manifold pressure so the flame is pulled back into the exchanger",
+        "d": "Swap in a higher-temperature rollout so the nuisance trips stop"
+      },
+      "correctOptionId": "a",
+      "explanation": "A rollout trip means flame left the heat exchanger—blocked flue, cracked exchanger, blower failure, or overfire. Diagnose and repair the cause; reset only when the path is safe. Repeated resets, higher gas pressure, or a hotter-rated switch hide a carbon monoxide and fire hazard.",
+      "distractorExplanations": {
+        "b": "A tripping rollout is usually doing its job; swapping it skips the vent or exchanger problem behind the trip.",
+        "c": "Higher manifold pressure overfires the burner and can worsen rollout instead of pulling flame in.",
+        "d": "A higher-rated switch defeats a flame-safety device and conceals the vent or exchanger fault."
+      },
+      "difficulty": "hard"
+    },
+    "nate-core-readiness-check-safety-014": {
+      "prompt": "Between jobs, refrigerant recovery cylinders and torch tanks ride in the service van. How should they be stored?",
+      "options": {
+        "a": "Valves open and uncapped so leftover vapor can bleed off in the cargo area",
+        "b": "Capped, upright, secured, and kept within rating away from heat and flame",
+        "c": "On their sides next to the lit torch kit so they are easy to grab",
+        "d": "Refilled from each other in the van if a disposable DOT-39 can is empty"
+      },
+      "correctOptionId": "b",
+      "explanation": "Cylinders remain pressure vessels even when they feel empty. Close valves, install caps, keep them upright and secured, and store them away from the torch, sun-baked van walls, and other heat. Open valves vent residual refrigerant and admit moisture. Heat and horizontal acetylene storage are overpressure and acetone hazards. Disposable cans are not refillable.",
+      "distractorExplanations": {
+        "a": "Open valves release residual refrigerant and let moisture in; empties are stored closed and capped.",
+        "c": "Heat and flame next to cylinders can overpressurize them; they stay secured upright, away from the torch.",
+        "d": "Disposable cylinders are not refillable in the field; that practice is both illegal and unsafe."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-safety-015": {
+      "prompt": "An installer must climb an extension ladder onto a low roof to reach a package unit, carrying a small tool pouch. What setup is required before the first step up?",
+      "options": {
+        "a": "Set a 1:1 angle so the ladder sits nearly vertical and saves rooftop space",
+        "b": "Stop the rails flush with the eave so the ladder cannot slide past the roof",
+        "c": "Set about a 4:1 angle, extend rails above the roof, and keep three-point contact",
+        "d": "Stand on the top cap so both hands are free to pass tools onto the roof"
+      },
+      "correctOptionId": "c",
+      "explanation": "Extension-ladder access to HVAC equipment follows a roughly 4:1 pitch (one foot out for every four feet of rise), rails extending above the landing, a secured base, and three-point contact. A vertical 1:1 set is tip-prone. Rails flush with the eave leave no handhold for the step-off. The top cap is not a standing surface.",
+      "distractorExplanations": {
+        "a": "A near-vertical set is unstable and easy to tip backward; the working pitch is about 4:1, not 1:1.",
+        "b": "Rails need to extend above the roof so the tech has a handhold while stepping off; flush eaves are a fall setup.",
+        "d": "The top cap and top step are not standing surfaces; three-point contact is lost if both feet are on the cap."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

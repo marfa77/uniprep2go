@@ -1,0 +1,259 @@
+{
+  "barber-state-readiness-check": {
+    "barber-state-readiness-check-infection-001": {
+      "prompt": "A barber just finished a tight fade. Clipper blades and metal guards touched the client's scalp. What must happen before the next cut?",
+      "options": {
+        "a": "Clean debris off, then disinfect nonporous tools for the full EPA contact time",
+        "b": "Spray disinfectant over hair still packed in the blades, then start the next fade",
+        "c": "Park the clippers in a UV cabinet for two minutes and count that as disinfection",
+        "d": "Skip disinfection unless blood was seen; brush the blades and reuse them"
+      },
+      "correctOptionId": "a",
+      "explanation": "Sanitation is cleaning (remove hair and soil); disinfection is the EPA-registered chemical kill step on a clean, nonporous surface. Boards expect both between clients for implements that contacted skin or hair. UV storage and spraying over debris do not replace label contact time.",
+      "distractorExplanations": {
+        "b": "Disinfectant cannot reach microbes through packed hair; cleaning must come before the EPA contact time.",
+        "c": "UV cabinets store already-disinfected tools; they are not an EPA hospital-disinfectant step.",
+        "d": "Multi-use tools that touched skin or hair are cleaned and disinfected every client, not only after blood."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-002": {
+      "prompt": "During a straight-razor shave, the barber nicks the client's neck and blood appears. What is the correct next sequence?",
+      "options": {
+        "a": "Finish the remaining passes first, then put antiseptic on the nick",
+        "b": "Stop, glove, apply antiseptic, and discard blood-soiled single-use items",
+        "c": "Press a shared styptic pencil on the nick and keep the pencil for later clients",
+        "d": "Wipe the blood with the client's towel and continue the shave bare-handed"
+      },
+      "correctOptionId": "b",
+      "explanation": "A blood exposure is a stop event under typical NIC/state infection-control outlines and OSHA bloodborne practice: gloves, antiseptic on the wound, discard contaminated porous/single-use items, then clean and disinfect nonporous tools before returning to service.",
+      "distractorExplanations": {
+        "a": "Finishing the shave first spreads blood and delays control; the service stops at the nick.",
+        "c": "Shared styptic pencils are not permitted; styptic is single-use powder, liquid, or spray.",
+        "d": "Wiping with a towel and working ungloved ignores PPE and contaminates linen that must be contained."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-003": {
+      "prompt": "A jar of EPA-registered hospital disinfectant sits at the station. After which step, and on which items, is it used?",
+      "options": {
+        "a": "On porous neck strips and cotton that will be reused after a soak",
+        "b": "On shears still coated with hair, to skip a separate wash",
+        "c": "On cleaned, nonporous implements that can withstand immersion",
+        "d": "As a leave-on antiseptic painted on the client's face before a shave"
+      },
+      "correctOptionId": "c",
+      "explanation": "Hospital-level EPA disinfectant is for hard, nonporous implements after they are washed free of hair and debris. Porous single-use items are discarded. Skin is prepped with antiseptic, not immersion disinfectant. Cleaning and disinfection are sequential, not interchangeable.",
+      "distractorExplanations": {
+        "a": "Porous single-use items cannot be reliably disinfected; neck strips and cotton are discarded.",
+        "b": "Soil blocks the chemical; hair-coated shears must be cleaned before any EPA soak.",
+        "d": "EPA hospital disinfectant is not a leave-on skin product; antiseptic is used on skin."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-004": {
+      "prompt": "The barber places a paper neck strip under the cape for a new client. After the haircut, what happens to that strip?",
+      "options": {
+        "a": "Soak it in hospital disinfectant and reuse it for the rest of the day",
+        "b": "Shake it off and share it if no hair or product is visible",
+        "c": "Wash it in the shampoo bowl and hang it with the towels",
+        "d": "Discard it as a single-use porous item; do not disinfect and reuse"
+      },
+      "correctOptionId": "d",
+      "explanation": "NIC theory treats neck strips and similar porous barriers as single-use. Disinfectant does not make paper or cotton multi-use. Multi-use nonporous tools are cleaned and disinfected; porous client-contact items go in the trash after one person.",
+      "distractorExplanations": {
+        "a": "Hospital disinfectant is for nonporous tools; soaking a neck strip does not make it reusable.",
+        "b": "Visible cleanliness is not a disinfection test; a used porous strip is never shared.",
+        "c": "Shampoo-bowl washing is for hair, not a method that converts single-use paper into linen."
+      },
+      "difficulty": "easy"
+    },
+    "barber-state-readiness-check-infection-005": {
+      "prompt": "After a fade, the barber brushes hair from the clipper blades and sprays an EPA clipper disinfectant. When may the blades go back into service?",
+      "options": {
+        "a": "After they stay wet for the full contact time printed on the product label",
+        "b": "As soon as the spray mist looks dry, even if that is only a few seconds",
+        "c": "After a coat of blade oil, because oil is treated as a disinfectant",
+        "d": "After two minutes in a UV storage cabinet, which replaces the wet contact time"
+      },
+      "correctOptionId": "a",
+      "explanation": "EPA clipper sprays and hospital disinfectants kill only when the surface stays wet for the listed contact time after debris is removed. Dry-to-the-touch is not the endpoint. Blade oil lubricates; UV cabinets store clean tools. Clippers are multi-use and must complete that wet step between clients.",
+      "distractorExplanations": {
+        "b": "Mist drying in seconds usually undercuts the label minutes required for hospital-level kill.",
+        "c": "Clipper oil is lubrication, not an EPA-registered disinfectant for blades.",
+        "d": "UV storage does not replace wet contact time on an EPA-registered clipper disinfectant."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-006": {
+      "prompt": "A walk-in asks for a bald fade. The barber sees open, weeping sores on the scalp. What should the barber do?",
+      "options": {
+        "a": "Cut over the sores while wearing gloves so the shop is protected",
+        "b": "Decline the cut over broken skin and refer the client out",
+        "c": "Paint antiseptic on the sores and then proceed with the clippers",
+        "d": "Have the client sign a waiver and complete the fade as booked"
+      },
+      "correctOptionId": "b",
+      "explanation": "Broken, infected, or weeping skin is outside a routine barber service. Referral protects the client and the shop; gloves and antiseptic do not turn an open lesion into a safe cutting surface. Waivers do not override infection-control rules on servicing inflamed or broken scalp.",
+      "distractorExplanations": {
+        "a": "Gloves protect the barber but do not make cutting over open sores an allowed service.",
+        "c": "Antiseptic on lesions is not a license to clip over broken skin; the client is referred out.",
+        "d": "A liability waiver does not authorize servicing open scalp sores against board sanitation rules."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-007": {
+      "prompt": "Between a chemical relaxer and the next client's haircut, when must the barber wash with soap and water?",
+      "options": {
+        "a": "Only if that last service produced visible blood on the gloves",
+        "b": "Once at clock-in and once at clock-out; sanitizer covers the rest",
+        "c": "Before each service and after any blood or chemical contact",
+        "d": "Before the next cut, using alcohol gel instead of washing after chemicals"
+      },
+      "correctOptionId": "c",
+      "explanation": "Handwashing is a separate control from tool disinfection. Typical shop and OSHA-aligned practice is soap and water before each client and after blood, body-fluid, or chemical exposure. Alcohol gel does not remove relaxer residue the way a wash does.",
+      "distractorExplanations": {
+        "a": "Hands are washed before every service, not only after visible blood.",
+        "b": "Shift-only washing leaves every mid-day client without a required hand-hygiene step.",
+        "d": "Hand sanitizer does not replace soap-and-water after chemical contact on the skin."
+      },
+      "difficulty": "easy"
+    },
+    "barber-state-readiness-check-infection-008": {
+      "prompt": "Hot-towel shaves produce a pile of damp linens. Why does the shop keep a covered soiled-linen hamper at the station?",
+      "options": {
+        "a": "So a towel can be wrung out and used on a second client",
+        "b": "So capes can stay unwashed if they only caught hair",
+        "c": "So used neck strips can dry in the hamper and return to the drawer",
+        "d": "So used towels are contained, not piled uncovered on the station"
+      },
+      "correctOptionId": "d",
+      "explanation": "Used towels are multi-use only after proper laundry, not after sitting on the station. A covered hamper keeps soiled linen contained, limits contamination of clean tools, and is the sanitation control between the shave and the wash cycle. Capes still need cleaning per shop rules; neck strips are discarded.",
+      "distractorExplanations": {
+        "a": "A used towel is not wrung and reused; it goes to laundry after one client.",
+        "b": "The hamper does not excuse unwashed capes; hair-soiled capes are still cleaned.",
+        "c": "Neck strips are single-use trash, not items dried in the linen hamper for reuse."
+      },
+      "difficulty": "easy"
+    },
+    "barber-state-readiness-check-infection-009": {
+      "prompt": "Metal combs are soaking in a fresh EPA hospital-grade quat. What determines when they may be removed, rinsed, and stored?",
+      "options": {
+        "a": "Full label contact time on a comb that was already cleaned of debris",
+        "b": "One minute of soak time, even with hair still in the teeth",
+        "c": "When the solution has air-dried on the comb, ignoring listed minutes",
+        "d": "Half the listed time because the jar was mixed this morning"
+      },
+      "correctOptionId": "a",
+      "explanation": "Quaternary ammonium and other EPA hospital disinfectants require pre-cleaning plus the wet contact time on the label (often several minutes, product-specific). Fresh mix does not shorten that time. Air-dry or a shop 'one minute' rule is not a substitute for the EPA directions.",
+      "distractorExplanations": {
+        "b": "Hair in the teeth blocks contact, and one minute is not a universal EPA contact time.",
+        "c": "The surface must stay wet for the listed time; drying early can end the kill step too soon.",
+        "d": "A morning mix still needs the full labeled minutes; freshness is not a time discount."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-010": {
+      "prompt": "After a shave, the barber wants to strop the straight razor. The blade still has soap and skin debris on it. What is true of the leather strop?",
+      "options": {
+        "a": "Stropping the soiled blade counts as disinfection because friction kills microbes",
+        "b": "The strop is kept clean and does not replace EPA disinfection of a soiled blade",
+        "c": "The leather should be immersed in the wet sanitizer jar like a metal comb",
+        "d": "The strop is discarded after each client the same way as a neck strip"
+      },
+      "correctOptionId": "b",
+      "explanation": "A leather strop is porous and used on a clean, already-disinfected (or unused) blade to align the edge. Stropping is not sanitation, disinfection, or sterilization. Soiled razors are cleaned and given an EPA hospital-disinfectant step (or approved sterilization) before they meet the strop.",
+      "distractorExplanations": {
+        "a": "Friction on leather does not equal an EPA-registered disinfection step on a dirty blade.",
+        "c": "Leather is porous and is not soaked in wet sanitizer the way a metal comb is.",
+        "d": "A strop is a reusable shop tool kept clean, not a single-use neck-strip equivalent."
+      },
+      "difficulty": "hard"
+    },
+    "barber-state-readiness-check-infection-011": {
+      "prompt": "Hair from the last fade is still on the shop floor around the chair. What is the sanitation step before seating the next client?",
+      "options": {
+        "a": "Leave it until the morning sweep so traffic is not interrupted",
+        "b": "Spray hospital disinfectant over the loose hair, then cut",
+        "c": "Sweep the hair up so it is not tracked into the next service",
+        "d": "Kick the hair into a corner pile and empty it at closing"
+      },
+      "correctOptionId": "c",
+      "explanation": "Shop sanitation includes removing hair after each service so it is not tracked onto clean linens, tools, or the next client's skin. Disinfectant sprayed over soil does not work. A single morning sweep or a closing-time corner pile leaves contamination in the work area all day.",
+      "distractorExplanations": {
+        "a": "Waiting for a morning-only sweep leaves every later client's hair on the floor.",
+        "b": "Cleaning comes first; spraying EPA product over loose hair does not disinfect the floor.",
+        "d": "A corner pile until close still tracks hair through the shop between clients."
+      },
+      "difficulty": "easy"
+    },
+    "barber-state-readiness-check-infection-012": {
+      "prompt": "A shop owns an autoclave. How does sterilization fit with cleaning and disinfection for barber tools?",
+      "options": {
+        "a": "Skip washing because steam heat is enough to destroy soil and microbes",
+        "b": "Autoclave plastic combs and nylon brushes instead of using disinfectant solution",
+        "c": "Load towels and capes into the autoclave between clients instead of laundering",
+        "d": "Clean heat-safe metal tools first, then autoclave if the shop uses that method"
+      },
+      "correctOptionId": "d",
+      "explanation": "Cleaning removes soil; disinfection reduces pathogens on nonporous tools with EPA product; sterilization (autoclave steam) destroys all microbial life on heat-safe metal after cleaning. Most shops disinfect rather than sterilize, but an autoclave never skips the wash or replaces laundry for linens.",
+      "distractorExplanations": {
+        "a": "Debris shields microbes from steam; pre-cleaning is still required before sterilization.",
+        "b": "Most plastic combs and nylon brushes cannot take autoclave heat; they are cleaned and disinfected.",
+        "c": "Towels and capes are laundered; they are not autoclave loads between haircuts."
+      },
+      "difficulty": "hard"
+    },
+    "barber-state-readiness-check-infection-013": {
+      "prompt": "The immersion jar looks cloudy and the mix date is past the manufacturer's use-by window. What should the barber do?",
+      "options": {
+        "a": "Dump it and remix to the label; do not guess remaining strength",
+        "b": "Pour in extra concentrate until the cloudiness clears",
+        "c": "Keep using it through the last appointment, then dump it at close",
+        "d": "Use the cloudy mix only as a pre-clean wash, not as disinfectant"
+      },
+      "correctOptionId": "a",
+      "explanation": "Cloudy, contaminated, or expired EPA hospital disinfectant is not a known concentration. Boards and labels require dumping and remixing to directions. Topping up or stretching it through the day leaves tools that look 'disinfected' without a valid kill step. Pre-cleaning uses soap and water, not spent disinfectant.",
+      "distractorExplanations": {
+        "b": "Adding concentrate to spent solution yields an unknown dilution and keeps the contamination.",
+        "c": "Cloudy or expired solution is changed immediately, not after the last booked client.",
+        "d": "Spent disinfectant is discarded; pre-cleaning is soap and water, not old hospital solution."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-014": {
+      "prompt": "The barber has weeping dermatitis on both palms at the start of the shift. What is the infection-control action?",
+      "options": {
+        "a": "Work faster so the remaining book finishes before the skin worsens",
+        "b": "Pause services until the board glove or clearance rule is met",
+        "c": "Dust extra talc on the palms and continue cutting uncovered",
+        "d": "Hand the clipper to the client for the sides and only do the top"
+      },
+      "correctOptionId": "b",
+      "explanation": "Weeping or infected skin on the barber's hands is an infection-control stop. Many boards require staying off services or using required barriers only after the condition is controlled. Speed, powder, or handing tools to the client does not isolate exudate from the next scalp.",
+      "distractorExplanations": {
+        "a": "Finishing the book faster still contacts every client with weeping skin.",
+        "c": "Talc hides moisture; it is not PPE and does not meet a board clearance rule.",
+        "d": "Letting the client run the clipper does not keep the barber's open skin off the service."
+      },
+      "difficulty": "medium"
+    },
+    "barber-state-readiness-check-infection-015": {
+      "prompt": "A regular client mentions living with hepatitis B. No blood is visible yet. How should the barber handle clippers, towels, and a later nick?",
+      "options": {
+        "a": "Refuse all future haircuts because HBV cannot be managed with shop protocol",
+        "b": "Use a milder disinfectant on this client so the metal tools last longer",
+        "c": "Apply the same EPA disinfection and blood-exposure steps used for every client",
+        "d": "Write the diagnosis on the ticket so the shop can isolate only this person's tools"
+      },
+      "correctOptionId": "c",
+      "explanation": "HBV and HIV shop protocol follows OSHA-style standard (universal) precautions: treat every client's blood and implements the same way—clean then EPA-disinfect multi-use tools, discard single-use, and run the nick protocol if blood appears. You do not need a posted diagnosis, and you do not weaken the disinfectant for 'low-risk' visits.",
+      "distractorExplanations": {
+        "a": "Known HBV is managed with the same disinfection and exposure protocol, not a blanket refusal of all cuts.",
+        "b": "Milder mix undercuts hospital-level EPA kill; tool life is not a reason to dilute.",
+        "d": "Standard precautions mean you do not single out a diagnosis; every client's tools get the full protocol."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

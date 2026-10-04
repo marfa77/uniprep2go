@@ -1,0 +1,259 @@
+{
+  "nail-technician-state-readiness-check": {
+    "nail-technician-state-readiness-check-chemistry-046": {
+      "prompt": "A client hands you an unlabeled “economy” acrylic liquid whose SDS lists methyl methacrylate (MMA). Your usual powder is a salon EMA polymer. What is the correct product decision?",
+      "options": {
+        "a": "Decline the MMA liquid and use an EMA monomer system",
+        "b": "Dilute the MMA half-and-half with EMA and proceed",
+        "c": "Use the MMA liquid on toenails only, not fingernails",
+        "d": "Proceed if the table fan is already running"
+      },
+      "correctOptionId": "a",
+      "explanation": "MMA liquid is banned or heavily restricted for nail enhancements in many states because it bonds too aggressively, is hard to soak off, and is associated with plate damage and difficult repair. Salon acrylic chemistry is built around EMA (ethyl methacrylate) monomer plus polymer powder. Ventilation, dilution, or switching to toes does not legalize MMA.",
+      "distractorExplanations": {
+        "b": "Diluting MMA with EMA does not convert it into a permitted EMA system; the restricted monomer is still present.",
+        "c": "MMA restrictions apply to nail enhancements generally; toenails are not a carve-out that makes MMA legal.",
+        "d": "Local exhaust reduces vapor but does not lift an MMA ban; the monomer itself is the problem."
+      },
+      "difficulty": "medium"
+    },
+    "nail-technician-state-readiness-check-chemistry-047": {
+      "prompt": "An EMA acrylic bead looks glassy and runs into the proximal fold before you can sculpt. Which ratio error is most likely?",
+      "options": {
+        "a": "Too much polymer powder, leaving a dry, crumbly bead",
+        "b": "The powder already polymerized and needs a UV top-off",
+        "c": "Too much monomer liquid, leaving a wet, flooding bead",
+        "d": "The mix must sit under an LED lamp before it can set"
+      },
+      "correctOptionId": "c",
+      "explanation": "Acrylic hardens by chemical polymerization when liquid monomer wets polymer powder (with initiator), not by a lamp. A wet, runny, glassy bead means excess liquid relative to powder. That flood can wick into the fold, weaken the cured overlay, and invite lifting. A dry bead is the opposite error: too much powder.",
+      "distractorExplanations": {
+        "a": "A powder-heavy bead is dull and crumbly, not glassy and flooding; this stem shows the wet (liquid-heavy) error.",
+        "b": "Powder in the jar is polymer waiting to be wetted; it does not need a UV “top-off” to fix a wet bead.",
+        "d": "EMA acrylic is not a light-cure system; extra lamp time will not correct a wet liquid-to-powder ratio."
+      },
+      "difficulty": "medium"
+    },
+    "nail-technician-state-readiness-check-chemistry-048": {
+      "prompt": "Acid primer beads at the lunula and a drop slides onto the client’s eponychium, which begins to sting. What should you do first?",
+      "options": {
+        "a": "Brush the primer into the fold to improve adhesion",
+        "b": "Neutralize the drop with a soak of straight acetone",
+        "c": "Flash-cure the primer for 30 seconds under the LED lamp",
+        "d": "Rinse the skin and stop if a chemical burn is forming"
+      },
+      "correctOptionId": "d",
+      "explanation": "Corrosive (acid) primer is meant for the keratin plate in a thin film. On living skin it can chemically burn. Immediate action is to get it off the tissue with water or the rinse your board/product allows, then do not continue on injured skin. Primer is not a disinfectant, not a dehydrator substitute, and not a light-cured gel.",
+      "distractorExplanations": {
+        "a": "Working primer into the fold increases skin contact and burn risk; adhesion is not improved by burning tissue.",
+        "b": "Acetone is another solvent, not an acid-burn first aid, and adding it to irritated skin worsens dehydration.",
+        "c": "Nail primer is not polymerized by an LED lamp; the hazard here is chemical, not undercure."
+      },
+      "difficulty": "easy"
+    },
+    "nail-technician-state-readiness-check-chemistry-049": {
+      "prompt": "A client wants a soak-off of cured gel polish and offers the non-acetone polish remover they use at home on lacquer. What should you use?",
+      "options": {
+        "a": "Acetone or the system’s remover; non-acetone rarely breaks gel",
+        "b": "Non-acetone only, so the natural plate stays fully hydrated",
+        "c": "A 50/50 mix of acetone and non-acetone to slow the soak-off",
+        "d": "No solvent; peel the gel sheet off the plate in one piece"
+      },
+      "correctOptionId": "a",
+      "explanation": "Cured gel and many acrylics are polymer networks that acetone (or a manufacturer soak-off) can swell and break. Non-acetone removers are formulated for nitrocellulose lacquers and usually leave gel intact, which tempts peeling or aggressive filing. Time the acetone soak and buffer the skin; do not heat acetone on an open flame.",
+      "distractorExplanations": {
+        "b": "Non-acetone is gentler on lacquer, not a substitute for gel soak-off; the polymer will usually remain bonded.",
+        "c": "Diluting acetone with non-acetone just slows an already inefficient soak; it is not a safer gel protocol.",
+        "d": "Peeling intact gel rips layers of the natural plate; break the seal and let solvent do the work."
+      },
+      "difficulty": "easy"
+    },
+    "nail-technician-state-readiness-check-chemistry-050": {
+      "prompt": "A gel color that cured fully last month in the salon’s dual-wavelength LED stays tacky after a complete cycle in a borrowed fluorescent UV unit. What should you check first?",
+      "options": {
+        "a": "Add one extra minute, because any lamp finishes any gel",
+        "b": "Whether the gel’s photoinitiators match that lamp’s wavelengths",
+        "c": "Wipe the tack with alcohol and treat the gel as fully cured",
+        "d": "Swap in a higher-wattage bulb of any visible color temperature"
+      },
+      "correctOptionId": "b",
+      "explanation": "Light-cure gels polymerize when photoinitiators absorb the lamp’s specific wavelengths (often around UV-A vs LED peaks). Wattage and extra minutes cannot fix a spectral mismatch. Residual tack after a full cycle in the wrong unit is undercure, which can peel and sensitize—not a style to wipe away and send home.",
+      "distractorExplanations": {
+        "a": "Time does not rewrite wavelength; a mismatched fluorescent unit may never activate those photoinitiators.",
+        "c": "The inhibition layer is a thin oxygen-inhibited film on a cured gel; bulk tack after a wrong lamp is undercure.",
+        "d": "Higher wattage without the right nm still misses the initiators; color temperature of a visible bulb is the wrong variable."
+      },
+      "difficulty": "medium"
+    },
+    "nail-technician-state-readiness-check-chemistry-051": {
+      "prompt": "After a rushed fill, the apex stays gummy. Two days later the client reports itching along the free edge. What is the main chemistry concern?",
+      "options": {
+        "a": "Extra shine from a thicker, useful inhibition layer",
+        "b": "Heat spikes, which occur only in fully cured overlays",
+        "c": "Leftover uncured oligomers that can sensitize the client",
+        "d": "Yellowing from UV age rather than from an incomplete cure"
+      },
+      "correctOptionId": "c",
+      "explanation": "Undercured gel leaves unreacted monomers and oligomers that stay in contact with skin and can drive allergic contact dermatitis plus peeling. Full cure (correct lamp, thin layers, full time) is a safety step, not a cosmetic extra. Heat spikes are a different problem from thick, rapidly curing layers—not from leaving gel wet.",
+      "distractorExplanations": {
+        "a": "An inhibition layer is a thin surface film on a cured gel; a gummy apex is bulk undercure, not “useful shine.”",
+        "b": "Heat spikes happen during an aggressive cure in thick product, not because gel was left undercured.",
+        "d": "Yellowing can come from age or product, but itching after a gummy fill points to residual uncured chemistry."
+      },
+      "difficulty": "medium"
+    },
+    "nail-technician-state-readiness-check-chemistry-052": {
+      "prompt": "The EMA dappen dish sits open all afternoon and the room smells strongly of monomer. What is the best vapor control?",
+      "options": {
+        "a": "Light a scented candle so clients notice less monomer odor",
+        "b": "Add extra liquid so the product “uses up” the vapor",
+        "c": "Shut the windows so the monomer smell stays in one room",
+        "d": "Cap the monomer and use source-capture or room ventilation"
+      },
+      "correctOptionId": "d",
+      "explanation": "A strong monomer odor means vapor is in the breathing zone. Control it at the source: cap the liquid, keep dishes covered when idle, and use local exhaust or salon ventilation. Odor is not a sign the product is “weak,” and masking or trapping vapor does not protect you or the client.",
+      "distractorExplanations": {
+        "a": "An open flame near flammable monomer vapor is a fire hazard; fragrance also does not remove the chemical.",
+        "b": "More liquid increases evaporative surface and makes wetter beads; it does not consume ambient vapor.",
+        "c": "Closing windows concentrates vapor. You need air exchange or capture, not a sealed room."
+      },
+      "difficulty": "easy"
+    },
+    "nail-technician-state-readiness-check-chemistry-053": {
+      "prompt": "Primer that ran onto skin stung within minutes. A different client develops itching around the nail folds about 48 hours after a gel fill. How do those patterns typically differ?",
+      "options": {
+        "a": "Immediate burn at the spill is irritant; delayed itch fits allergy better",
+        "b": "Both are allergy, so the next visit should use a thicker product coat of gel",
+        "c": "Delayed itch is always fungus, so enhancements can continue as planned",
+        "d": "Immediate sting means the LED lamp wattage was simply set too high"
+      },
+      "correctOptionId": "a",
+      "explanation": "Irritant reactions often appear quickly where a corrosive or solvent contacted skin (acid primer, acetone). Allergic contact dermatitis is typically delayed (often a day or two) and can worsen with repeated monomer or undercured gel exposure. Either way, stop the offending service path and refer medical evaluation—do not “seal” more product over a reaction.",
+      "distractorExplanations": {
+        "b": "A thicker coat increases exposure. Allergy is not treated by applying more of the sensitizer.",
+        "c": "Delayed periungual itch after product is a contact-reaction red flag, not a license to keep filling over “fungus.”",
+        "d": "Primer sting is chemical, not a lamp-wattage burn; LED heat is a different complaint timed to the cure cycle."
+      },
+      "difficulty": "hard"
+    },
+    "nail-technician-state-readiness-check-chemistry-054": {
+      "prompt": "A gel overlay lifts at both sidewalls. You notice an oil sheen was still visible when primer went on. Which prep-chemistry statement is correct?",
+      "options": {
+        "a": "Primer already dehydrates, so skip dehydrator next time",
+        "b": "A drop of cuticle oil before primer would have sealed the plate for bonding",
+        "c": "Dehydrator removes surface oil and moisture; primer is a separate bond step",
+        "d": "A second coat of primer replaces a missed dehydrator"
+      },
+      "correctOptionId": "c",
+      "explanation": "Dehydrator (often alcohol-based) strips residual oil and moisture so the plate is dry. Primer then promotes adhesion of acrylic or some gel systems. They are sequential, not interchangeable. Oil left on the plate—or oil applied as “prep”—blocks bond and shows up as sidewall lift. Primer is also not a disinfectant.",
+      "distractorExplanations": {
+        "a": "Confuses two bottles: primer is adhesion chemistry, not a substitute for oil/moisture removal.",
+        "b": "Cuticle oil conditions skin and plate after service; used before bonding it causes lift, not a seal.",
+        "d": "Extra primer on an oily plate does not degrease it; you still need the dehydrator step."
+      },
+      "difficulty": "medium"
+    },
+    "nail-technician-state-readiness-check-chemistry-055": {
+      "prompt": "To match a photo, a technician stirs craft-store glitter into a sealed-brand gel color and applies it in one thick layer. What is the main cure risk?",
+      "options": {
+        "a": "Loose glitter chemically strengthens the polymer network",
+        "b": "Particles can block light and leave uncured gel that lifts or sensitizes",
+        "c": "Craft glitter speeds LED cure by reflecting extra light through the layer",
+        "d": "The mix can replace the system’s top coat as a surface sealer"
+      },
+      "correctOptionId": "b",
+      "explanation": "Gel systems are tested as a set: base, color, top, lamp, and times. Opaque craft glitter can shade photoinitiators, so the layer undercures even if the surface looks set. Uncured gel lifts and raises allergy risk. Stay in the manufacturer’s glitter gels or apply tested glitters in thin, fully cured layers.",
+      "distractorExplanations": {
+        "a": "Foreign particles interrupt the polymer network; they do not chemically reinforce salon gel.",
+        "c": "Reflection does not guarantee energy at the initiator wavelengths; glitter more often shadows and slows cure.",
+        "d": "Added glitter is not a tested top coat; the surface still needs the system sealer after a proper cure."
+      },
+      "difficulty": "medium"
+    },
+    "nail-technician-state-readiness-check-chemistry-056": {
+      "prompt": "An inspector asks where hazard information is kept for EMA monomer, acid primer, acetone, and the hospital-grade disinfectant. What must be available?",
+      "options": {
+        "a": "SDS only for products that carry a flame pictogram on the label",
+        "b": "SDS for nippers, carbide bits, and metal pushers",
+        "c": "The client allergy card in place of chemical SDS",
+        "d": "SDS for those salon chemicals, not merely the flammables"
+      },
+      "correctOptionId": "d",
+      "explanation": "Hazard communication (SDS) covers hazardous chemical products on the premises—monomers, primers, solvents, and disinfectants—whether or not they are flammable. Metal implements are tools, not SDS chemicals. Client intake records are not a substitute for manufacturer safety data.",
+      "distractorExplanations": {
+        "a": "Flammability is only one hazard class; corrosives, sensitizers, and disinfectants still need SDS access.",
+        "b": "SDS describe chemical products. Nippers and bits are covered by sanitation rules, not chemical SDS files.",
+        "c": "Allergy cards document the client; SDS document the product. Inspectors want the chemical sheets."
+      },
+      "difficulty": "easy"
+    },
+    "nail-technician-state-readiness-check-chemistry-057": {
+      "prompt": "Between clients, where should opened acetone and EMA monomer be stored?",
+      "options": {
+        "a": "Labeled, capped, upright, and away from heat",
+        "b": "Unlabeled misters at each table for faster service",
+        "c": "A heated cabinet so the liquids stay thin and pourable",
+        "d": "Washed yogurt cups stored under the reception desk"
+      },
+      "correctOptionId": "a",
+      "explanation": "Salon solvents and monomers are flammable, evaporative, and must stay identifiable. Store them in original or properly labeled containers, capped, upright, away from heat, ignition, and children. Hazard communication still applies after you open the bottle.",
+      "distractorExplanations": {
+        "b": "Unlabeled station bottles violate hazard communication and invite mix-ups between acetone, alcohol, and monomer.",
+        "c": "Heat raises vapor pressure and fire risk; you do not warm monomers to keep them “pourable.”",
+        "d": "Food containers invite ingestion mistakes and usually lack hazard labels; keep chemicals in proper packaging."
+      },
+      "difficulty": "easy"
+    },
+    "nail-technician-state-readiness-check-chemistry-058": {
+      "prompt": "A client asks why the acrylic overlay gets hard without a lamp if gel polish needed LED. What actually sets EMA acrylic?",
+      "options": {
+        "a": "Water evaporating from the liquid, the same way nail lacquer dries",
+        "b": "Polymerization when monomer wets polymer powder with initiator",
+        "c": "A mandatory LED lamp cycle after every sculpted acrylic bead",
+        "d": "Primer soaking through the plate to lock the overlay in place"
+      },
+      "correctOptionId": "b",
+      "explanation": "Liquid-and-powder acrylic is a chemical cure: EMA monomer plus polymer powder and a peroxide initiator form a solid polymer network as you sculpt. Gel polish is a different chemistry that needs matched UV/LED light. Lacquer dries by solvent evaporation—another third system. Primer aids adhesion; it does not “soak through” and harden the overlay.",
+      "distractorExplanations": {
+        "a": "Confuses acrylic with nail lacquer. EMA systems are not water-based paints that air-dry.",
+        "c": "LED is for photoinitiator gels. Putting acrylic under a lamp does not replace liquid-to-powder polymerization.",
+        "d": "Primer is a surface adhesion step on keratin; it does not polymerize the bead from inside the plate."
+      },
+      "difficulty": "medium"
+    },
+    "nail-technician-state-readiness-check-chemistry-059": {
+      "prompt": "A lacquer bottle is labeled “5-free.” A client with a past polish allergy asks if that means the product is medically hypoallergenic. What should you say?",
+      "options": {
+        "a": "5-free means the bottle contains no chemicals at all",
+        "b": "5-free is FDA pre-approval that the polish cannot cause allergy",
+        "c": "It omits some listed ingredients; it is not a medical clearance",
+        "d": "5-free lacquer can replace acid primer under acrylic overlays"
+      },
+      "correctOptionId": "c",
+      "explanation": "“3-free” or “5-free” is marketing that certain named ingredients (often toluene, formaldehyde, DBP, and similar) were left out. Every polish is still a chemical mixture, other sensitizers can remain, and FDA does not pre-approve cosmetics that way. Do not inflate the claim into a medical guarantee or use lacquer as primer.",
+      "distractorExplanations": {
+        "a": "All polish is chemicals. “Free” refers to a short list of omitted ingredients, not an empty bottle.",
+        "b": "FDA does not pre-approve this class of cosmetics; an “X-free” sticker is not an allergy clearance.",
+        "d": "Lacquer is not acrylic primer chemistry and will not create a proper enhancement bond."
+      },
+      "difficulty": "easy"
+    },
+    "nail-technician-state-readiness-check-chemistry-060": {
+      "prompt": "A client with yellow, crumbling nails asks you to soak the fingers in household bleach “to kill fungus” before you apply enhancements. What is correct?",
+      "options": {
+        "a": "Surface-label bleach is acceptable as a finger soak",
+        "b": "Laundry bleach use makes a nail soak equally safe",
+        "c": "Floor-strength bleach can stand in as the dehydrator before product",
+        "d": "Do not soak nails in bleach or treat suspected fungus with it"
+      },
+      "correctOptionId": "d",
+      "explanation": "Household bleach is a surface or laundry chemical when the label and board allow those uses. It is not a medical antifungal and not a nail soak. Diagnosing or treating fungus is outside nail-technician scope; refuse the soak, do not enhance over untreated disease, and refer the client to a physician.",
+      "distractorExplanations": {
+        "a": "A hard-surface disinfectant label does not authorize soaking living nails; that is a chemical burn and scope error.",
+        "b": "Towel laundry is not the same as skin contact. Linen use does not make a finger soak safe.",
+        "c": "Dehydrator is a prep solvent for oil, not bleach. Floor mix on the plate is corrosive and off-protocol."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

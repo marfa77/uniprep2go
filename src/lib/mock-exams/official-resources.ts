@@ -716,6 +716,122 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "ascp-mlt-readiness-check": {
+    certifier: "ASCP Board of Certification — MLT(ASCP)",
+    verifyAtUrl: "https://www.ascp.org/boc/explore-credentials/view-all-credentials/MLT",
+    sources: [
+      {
+        label: "ASCP BOC — Medical Laboratory Technician (MLT)",
+        url: "https://www.ascp.org/boc/explore-credentials/view-all-credentials/MLT",
+      },
+      {
+        label: "ASCP BOC — About the examination",
+        url: "https://www.ascp.org/boc/earn-a-credential/examination-process/about-the-examination",
+      },
+      {
+        label: "ASCP BOC — MLT content guideline PDF",
+        url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mlt_content_guideline.pdf",
+      },
+    ],
+  },
+  "aswb-bachelors-readiness-check": {
+    certifier: "Association of Social Work Boards — Bachelors",
+    verifyAtUrl: "https://www.aswb.org/2026exams/",
+    sources: [
+      { label: "ASWB — 2026 exams (122Q / 4 hours)", url: "https://www.aswb.org/2026exams/" },
+      { label: "ASWB — exam scoring", url: "https://www.aswb.org/exam/exam-scoring/" },
+    ],
+  },
+  "aswb-clinical-readiness-check": {
+    certifier: "Association of Social Work Boards — Clinical",
+    verifyAtUrl: "https://www.aswb.org/2026exams/",
+    sources: [
+      { label: "ASWB — 2026 exams (122Q / 4 hours)", url: "https://www.aswb.org/2026exams/" },
+      { label: "ASWB — exam scoring", url: "https://www.aswb.org/exam/exam-scoring/" },
+    ],
+  },
+  "barber-state-readiness-check": {
+    certifier: "NIC / state barber boards — National Barber Theory",
+    verifyAtUrl: "https://nictesting.org/",
+    sources: [
+      { label: "NIC testing — candidate bulletins", url: "https://nictesting.org/" },
+      {
+        label: "Example 2025 NIC National Barber Theory CIB",
+        url: "https://www.msbcb.ms.gov/wp-content/uploads/2025/08/barber_national_theory_english.pdf",
+      },
+    ],
+  },
+  "medication-aide-readiness-check": {
+    certifier: "State boards of nursing — MACE / medication aide",
+    verifyAtUrl: "https://www.ncsbn.org/",
+    sources: [
+      { label: "NCSBN", url: "https://www.ncsbn.org/" },
+      {
+        label: "Example Credentia Colorado MACE handbook",
+        url: "https://credentia.com/storage/handbooks/co-mace-candidate-handbook.pdf",
+      },
+    ],
+  },
+  "nail-technician-state-readiness-check": {
+    certifier: "State boards — NIC Nail Technology Theory",
+    verifyAtUrl: "https://nictesting.org/",
+    sources: [{ label: "NIC testing", url: "https://nictesting.org/" }],
+  },
+  "nsca-cpt-readiness-check": {
+    certifier: "National Strength and Conditioning Association — NSCA-CPT",
+    verifyAtUrl: "https://www.nsca.com/certification/cpt/",
+    sources: [{ label: "NSCA-CPT", url: "https://www.nsca.com/certification/cpt/" }],
+  },
+  "phr-hrci-readiness-check": {
+    certifier: "HR Certification Institute — PHR",
+    verifyAtUrl: "https://www.hrci.org/our-programs/our-certifications/phr",
+    sources: [{ label: "HRCI PHR", url: "https://www.hrci.org/our-programs/our-certifications/phr" }],
+  },
+  "physical-therapy-aide-readiness-check": {
+    certifier: "Employer / state PT aide rules — no national exam",
+    verifyAtUrl: "https://www.apta.org/",
+    sources: [{ label: "APTA", url: "https://www.apta.org/" }],
+  },
+  "praxis-core-readiness-check": {
+    certifier: "ETS — Praxis Core Academic Skills for Educators",
+    verifyAtUrl: "https://www.ets.org/praxis/site/test-takers/resources/prep-materials.html",
+    sources: [{ label: "ETS Praxis prep materials", url: "https://www.ets.org/praxis/site/test-takers/resources/prep-materials.html" }],
+  },
+  "praxis-special-education-readiness-check": {
+    certifier: "ETS — Praxis Special Education",
+    verifyAtUrl: "https://www.ets.org/praxis/site/test-takers/resources/prep-materials.html",
+    sources: [{ label: "ETS Praxis prep materials", url: "https://www.ets.org/praxis/site/test-takers/resources/prep-materials.html" }],
+  },
+  "precision-nutrition-l1-readiness-check": {
+    certifier: "Precision Nutrition — Level 1",
+    verifyAtUrl: "https://www.precisionnutrition.com/",
+    sources: [{ label: "Precision Nutrition", url: "https://www.precisionnutrition.com/" }],
+  },
+  "unarmed-security-officer-readiness-check": {
+    certifier: "State security licensing boards — unarmed",
+    verifyAtUrl: "https://www.dca.ca.gov/bsis/",
+    sources: [{ label: "Example: California BSIS", url: "https://www.dca.ca.gov/bsis/" }],
+  },
+  "wastewater-operator-1-readiness-check": {
+    certifier: "State wastewater operator boards",
+    verifyAtUrl: "https://www.abccert.org/",
+    sources: [{ label: "ABC Certification", url: "https://www.abccert.org/" }],
+  },
+  "electrical-journeyman-readiness-check": {
+    certifier: "State electrical boards — journeyman",
+    verifyAtUrl: "https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70",
+    sources: [{ label: "NFPA 70 / NEC", url: "https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70" }],
+  },
+  "nate-core-readiness-check": {
+    certifier: "NATE — Core",
+    verifyAtUrl: "https://www.natex.org/",
+    sources: [{ label: "NATE", url: "https://www.natex.org/" }],
+  },
+  "plumbing-journeyman-readiness-check": {
+    certifier: "State plumbing boards — journeyman",
+    verifyAtUrl: "https://www.iapmo.org/",
+    sources: [{ label: "IAPMO", url: "https://www.iapmo.org/" }],
+  },
   "nha-cmaa-readiness-check": {
     certifier: "National Healthcareer Association (NHA) — CMAA",
     verifyAtUrl:

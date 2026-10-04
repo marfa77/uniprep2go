@@ -1,0 +1,259 @@
+{
+  "nate-core-readiness-check": {
+    "nate-core-readiness-check-electrical-031": {
+      "prompt": "A PSC compressor nameplate calls for a 35 µF run capacitor; the failed part is marked 35 µF / 440 VAC. Which replacement is correct?",
+      "options": {
+        "a": "A 35 µF, 370 VAC part even though the original was marked 440 VAC",
+        "b": "A 45 µF, 440 VAC part so the compressor gets extra starting torque",
+        "c": "A 35 µF part rated 440 VAC or higher, matching the motor nameplate",
+        "d": "Any nearby µF value if the replacement is stamped at least 370 VAC"
+      },
+      "correctOptionId": "c",
+      "explanation": "Match the motor’s specified microfarads (typically within about ±10% or the OEM spec) and use a voltage rating equal to or higher than the original. A 440 V part can replace 370 V, but 370 V cannot replace 440 V. Raising µF increases winding current and heat instead of adding useful start torque.",
+      "distractorExplanations": {
+        "a": "Dropping the voltage rating from 440 V to 370 V overstresses the dielectric even if microfarads match.",
+        "b": "Extra microfarads belong to start capacitors; an oversized run capacitor overheats the start winding.",
+        "d": "Nearby µF values are not interchangeable; they change winding current and can damage the motor."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-032": {
+      "prompt": "A 40 VA furnace transformer is too hot to hold after a few minutes of a cooling call. What does that usually mean?",
+      "options": {
+        "a": "24 V on the secondary is supposed to run that hot under any load",
+        "b": "An open high-pressure switch on Y has left the secondary unloaded",
+        "c": "The 40 VA transformer is oversized for a 20 VA thermostat and relays",
+        "d": "A shorted 24 V circuit, stuck relay, or overloaded VA rating"
+      },
+      "correctOptionId": "d",
+      "explanation": "A control transformer overheats when secondary current is too high: a shorted 24 V wire, a stuck relay coil, or more VA than the transformer can supply. A correctly loaded 40 VA unit runs warm, not scalding. Opening a switch removes load and cools the transformer rather than heating it.",
+      "distractorExplanations": {
+        "a": "24 V is the normal secondary; a healthy transformer at rated load is warm, not overheated.",
+        "b": "An open safety on Y drops load off the secondary, so the transformer runs cooler, not hotter.",
+        "c": "Serving 20 VA from 40 VA is half load; extra unused VA capacity does not cause overheating."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-033": {
+      "prompt": "On a typical induced-draft gas furnace, when does the inducer motor run relative to ignition?",
+      "options": {
+        "a": "It pre-purges to prove draft, then runs through the burn as designed",
+        "b": "It starts after flame is proven, pulling flue gas only once burners are lit",
+        "c": "It runs only for the post-purge after the gas valve has already closed",
+        "d": "It replaces the circulating blower and moves room air across the heat exchanger"
+      },
+      "correctOptionId": "a",
+      "explanation": "The inducer pre-purges and must close the pressure switch before the control allows trial-for-ignition. It then stays on through the burn and usually post-purges. It moves combustion products through the heat exchanger; the indoor blower, not the inducer, moves conditioned air.",
+      "distractorExplanations": {
+        "b": "Ignition is locked out until draft is proven; the inducer is already running before the spark or hot surface igniter.",
+        "c": "Post-purge is only one slice of the cycle; the inducer also pre-purges and runs during the entire burn.",
+        "d": "The circulating blower moves supply air; the inducer is a combustion-vent motor, not a room-air mover."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-034": {
+      "prompt": "A condensing-unit contactor has badly pitted, burned points and the compressor voltage sags when it pulls in. What is the correct repair?",
+      "options": {
+        "a": "File the points smooth and put the same contactor back in as routine service",
+        "b": "Replace the contactor; pitted contacts add resistance and drop voltage",
+        "c": "Leave it in place unless an ohmmeter shows the coil winding is open",
+        "d": "Keep the pitted points and add a hard-start kit to overcome the sag"
+      },
+      "correctOptionId": "b",
+      "explanation": "Pitted contacts raise resistance, drop voltage at the compressor terminals, and keep arcing. Replacement is the repair. Filing strips the silver facing and is only a short-term field patch. Coil continuity does not prove the power contacts are good, and a hard-start kit hides the voltage drop while the points keep burning.",
+      "distractorExplanations": {
+        "a": "Filing removes the contact plating and is a temporary patch; badly pitted contactors are replaced.",
+        "c": "Coil continuity does not measure contact resistance; pitted power points can still drop voltage with a good coil.",
+        "d": "A hard-start kit adds torque but leaves the high-resistance contacts in the circuit to keep degrading."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-035": {
+      "prompt": "A compressor uses a start capacitor with a potential relay. When should that start capacitor stay in the circuit?",
+      "options": {
+        "a": "Continuously, in series with the start winding the same way a run capacitor is used",
+        "b": "Through start and run, left paralleled with the run capacitor for the whole cycle",
+        "c": "Only during start, then dropped out by the relay or PTC once the motor is up",
+        "d": "Only after the motor is at speed, so it can correct running power factor"
+      },
+      "correctOptionId": "c",
+      "explanation": "Start capacitors are intermittent-duty. A potential relay or PTC takes them out of the circuit once the motor approaches speed. Left in during run they overheat and fail. Continuous phase shift and power-factor correction are the run capacitor’s job, not the start capacitor’s.",
+      "distractorExplanations": {
+        "a": "That wiring describes a run capacitor; start capacitors are not continuous-duty and fail if left in circuit.",
+        "b": "A hard-start kit parallels the run capacitor only for start; it must drop out or the start capacitor cooks.",
+        "d": "Running power-factor correction is the run capacitor’s role; the start capacitor adds torque during start only."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-036": {
+      "prompt": "You are wiring a new heat-pump thermostat and need to know when the reversing-valve solenoid is energized. What is the right check?",
+      "options": {
+        "a": "Assume heating on every brand because the valve fails safe into cooling",
+        "b": "Feed the solenoid 240 V from the contactor so it tracks compressor run",
+        "c": "Energize it in both modes; defrost simply turns the solenoid off to reverse flow",
+        "d": "Energize it in one mode and confirm O versus B on the OEM diagram"
+      },
+      "correctOptionId": "d",
+      "explanation": "Most split heat pumps energize the reversing valve in cooling (thermostat O). Some brands energize in heating (B). The solenoid is a 24 V coil, not a line-voltage load on the contactor. Read the outdoor-unit diagram rather than guessing fail-safe polarity.",
+      "distractorExplanations": {
+        "a": "Some OEMs use B (energize in heat), but many use O (energize in cool); fail-safe polarity is not universal.",
+        "b": "The reversing-valve coil is 24 V from O/B, not 240 V paralleled with the compressor contactor.",
+        "c": "The valve is powered in only one mode; defrost drives it to the cooling position, which may be on or off by brand."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-037": {
+      "prompt": "A furnace board flashes a pressure-switch fault on a call for heat and never tries ignition. What should you check first?",
+      "options": {
+        "a": "Inducer operation, vent and intake, and the hose to the pressure switch",
+        "b": "The flame rod, treating the flash as a failed flame-prove after ignition",
+        "c": "The high-limit switch and blower wheel, as if the code were a limit trip",
+        "d": "Gas-valve outlet pressure on a manometer before looking at the vent"
+      },
+      "correctOptionId": "a",
+      "explanation": "A pressure-switch fault means the control did not see the inducer prove draft. Check inducer spin, blocked or disconnected vent/intake, a cracked or water-logged hose, and the switch itself. Flame sense, limits, and gas pressure are later in the sequence and are not energized until the switch closes.",
+      "distractorExplanations": {
+        "b": "The flame sensor proves flame after ignition; this code is about draft proof before the trial for ignition.",
+        "c": "A high-limit trip is a different code; a pressure-switch fault points at the inducer and vent path.",
+        "d": "The gas valve is not powered until the pressure switch closes, so manometer work skips the draft circuit."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-038": {
+      "prompt": "A clamp meter on a compressor run lead shows locked-rotor amps that never fall after the contactor closes. What does that mean?",
+      "options": {
+        "a": "Normal inrush that is allowed to sit at LRA for a couple of minutes",
+        "b": "The compressor or outdoor fan is not starting; the rotor is locked",
+        "c": "A high-efficiency scroll drawing full-load current that looks like LRA",
+        "d": "A normal current spike while the heat pump is in an active defrost"
+      },
+      "correctOptionId": "b",
+      "explanation": "Locked-rotor amps last only for a fraction of a second on a successful start, then current falls toward RLA. LRA that holds means the rotor is not turning: open start circuit, failed capacitor, or a seized compressor or fan. Kill power and diagnose before the windings overheat.",
+      "distractorExplanations": {
+        "a": "Healthy inrush collapses in well under a second; sustained LRA is a locked rotor, not a timed warm-up.",
+        "c": "A motor at full load draws about RLA, which is far below locked-rotor amps on the nameplate.",
+        "d": "Defrost does not pin the compressor at LRA; running current in defrost still sits near RLA."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-039": {
+      "prompt": "At a conventional 24 V thermostat sub-base, what do terminals R and C supply?",
+      "options": {
+        "a": "24 V hot and the cooling call that drives the outdoor contactor coil",
+        "b": "120 V hot and neutral taken straight off the furnace transformer primary",
+        "c": "24 V hot and common from the control-transformer secondary",
+        "d": "24 V hot and the reversing-valve output used on heat-pump O or B"
+      },
+      "correctOptionId": "c",
+      "explanation": "R is the hot side of the 24 V transformer secondary and C is the common return. Powered thermostats and many controls need both. Y is the cooling call, O/B is reversing-valve, and 120 V belongs on the transformer primary—not on the thermostat terminals.",
+      "distractorExplanations": {
+        "a": "The cooling call to the contactor is Y; C is the common return of the 24 V secondary, not the Y output.",
+        "b": "120 V feeds the transformer primary; R and C are the 24 V secondary leads, not line voltage.",
+        "d": "Reversing-valve output is O or B; C is the common side of the control circuit, not a valve feed."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-040": {
+      "prompt": "A furnace transformer secondary is described as floating (ungrounded). How should you treat the C connection?",
+      "options": {
+        "a": "Bond C to the suction line so refrigerant piping becomes the ground point",
+        "b": "Leave C disconnected at the board so the secondary stays fully floating",
+        "c": "Ground both R and C secondary legs to keep the 24 V circuit balanced",
+        "d": "Follow the OEM grounding and C landing so safeties and Wi-Fi stats work"
+      },
+      "correctOptionId": "d",
+      "explanation": "“Floating” does not mean C is unused. Land common where the schematic shows, including any OEM chassis ground of one secondary leg. Powered thermostats and many flame/safety circuits need that defined common. Bonding to piping or grounding both legs creates faults.",
+      "distractorExplanations": {
+        "a": "Refrigerant piping is not a control-circuit grounding electrode; follow the furnace schematic, not the suction line.",
+        "b": "C is still required for powered stats and many safeties; a floating secondary still uses its common lead.",
+        "c": "Grounding both secondary legs shorts the transformer through earth and typically blows the 24 V fuse."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-041": {
+      "prompt": "An outdoor condensing unit hums when the contactor pulls in, but the compressor never starts. What should you check first?",
+      "options": {
+        "a": "Indoor filter loading only, treating the hum as a return-air restriction",
+        "b": "The run or start capacitor and a possible seized compressor",
+        "c": "Whether the liquid-line drier was installed with the flow arrow reversed",
+        "d": "Suction-line insulation thickness before any electrical or amp test"
+      },
+      "correctOptionId": "b",
+      "explanation": "Hum-no-start is a classic open or weak capacitor or a locked compressor. Confirm voltage at the terminals, check capacitor µF, and feel whether the compressor is trying to turn. Airflow, driers, and insulation do not make a compressor hum in place of starting.",
+      "distractorExplanations": {
+        "a": "A dirty indoor filter can trip high pressure after a start, but it does not keep a humming compressor from starting.",
+        "c": "A reversed drier is a restriction after the unit is running; it does not produce a hum-no-start at the compressor.",
+        "d": "Suction insulation affects heat gain on the line; it is not a start-circuit or seized-rotor diagnosis."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-042": {
+      "prompt": "A heat-pump outdoor board is in defrost. What typically ends that defrost cycle?",
+      "options": {
+        "a": "The indoor coil sensor reaching a comfort termination temperature",
+        "b": "Outdoor coil termination temperature or a time-limit backup",
+        "c": "Outdoor air rising above the auxiliary-heat balance-point setting",
+        "d": "The board’s 30/60/90-minute pin timing out while still in defrost"
+      },
+      "correctOptionId": "b",
+      "explanation": "Defrost ends when the outdoor coil (or liquid-line) sensor rises to the termination temperature, or when a time-limit backup expires if the coil stays cold. The indoor coil is not the defrosted surface. Balance point controls auxiliary heat, and the 30/60/90 pins set time between defrost checks, not the end of an active defrost.",
+      "distractorExplanations": {
+        "a": "Defrost clears ice from the outdoor coil; an indoor-coil temperature is not the termination input.",
+        "c": "Balance point governs auxiliary-heat lockout and staging, not when an active defrost ends.",
+        "d": "Those pins set the interval between defrost attempts, not the maximum length of the defrost that is already running."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-043": {
+      "prompt": "A communicating or PWM furnace ECM blower will not run on a call for heat even though line voltage is present at the motor. What is usually missing?",
+      "options": {
+        "a": "A run capacitor and speed taps on the motor’s line-voltage leads, as on a PSC",
+        "b": "A separate variable-frequency drive mounted in the furnace control panel",
+        "c": "An OEM PWM, serial, or 24 V tap command plus line voltage",
+        "d": "Line voltage alone, with speed set only by an internal motor thermistor"
+      },
+      "correctOptionId": "c",
+      "explanation": "ECM modules need a command from the furnace control—PWM, serial, or discrete 24 V taps—plus correct line voltage and a good common. They do not use a PSC run capacitor. Drive electronics sit in the motor module, not a panel VFD, and line power by itself does not set torque or speed.",
+      "distractorExplanations": {
+        "a": "That describes a PSC blower; ECMs have no run capacitor and are commanded by a low-voltage or serial signal.",
+        "b": "ECM inverter electronics are inside the motor end module; residential furnaces do not add a separate panel VFD.",
+        "d": "Line voltage powers the module; without the control’s command signal the motor typically will not run."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-044": {
+      "prompt": "A new Wi-Fi thermostat keeps dropping offline on a furnace with no unused C conductor at the wall. What is the clean fix?",
+      "options": {
+        "a": "Jumper R to C at the thermostat so it can draw continuous 24 V power",
+        "b": "Feed R and C from a plug-in 120 V adapter to power the Wi-Fi radio",
+        "c": "Replace the batteries and treat C as optional backup for the display",
+        "d": "Add a C wire or an approved power extender per the OEM docs"
+      },
+      "correctOptionId": "d",
+      "explanation": "Wi-Fi stats need a real 24 V common. Run a C wire, use a spare conductor, or install an OEM-approved power extender / common maker. Jumping R to C shorts the transformer. 120 V on R/C destroys the control. Batteries do not stop power-stealing dropouts.",
+      "distractorExplanations": {
+        "a": "Jumping R to C shorts the 24 V secondary and typically blows the control fuse or the transformer.",
+        "b": "R and C are 24 V control terminals; applying 120 V destroys the thermostat and often the furnace board.",
+        "c": "C supplies continuous 24 V for the radio; batteries do not keep a power-stealing Wi-Fi thermostat online."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-electrical-045": {
+      "prompt": "You are installing a fused disconnect at a split-system condensing unit. How should the fuse size be chosen?",
+      "options": {
+        "a": "From the unit nameplate maximum fuse or HACR breaker rating",
+        "b": "Equal to the minimum circuit ampacity printed on the nameplate",
+        "c": "At 125 percent of compressor RLA, ignoring the outdoor fan motor",
+        "d": "Equal to the compressor locked-rotor amps listed on the nameplate"
+      },
+      "correctOptionId": "a",
+      "explanation": "Overcurrent protection at the condensing unit follows the nameplate maximum fuse or HACR circuit-breaker rating. Minimum circuit ampacity sizes the conductors, not the fuses. Using 125% of compressor RLA alone leaves out other loads, and fusing at LRA provides almost no protection.",
+      "distractorExplanations": {
+        "b": "MCA sizes the branch-circuit conductors; fuses are taken from the nameplate maximum overcurrent device.",
+        "c": "125% of RLA is part of the MCA wire-sizing math and is not the fuse or breaker rating by itself.",
+        "d": "LRA is far above the allowed overcurrent rating; fusing at LRA leaves the conductors essentially unprotected."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

@@ -76,6 +76,8 @@ describe("exam facts layer", () => {
     expect(profile!.exam_facts.scoring_scale).toContain("205–805");
     expect(profile!.domain_weights).toHaveLength(3);
     expect(profile!.whats_changed?.some((line) => /January 31, 2024/i.test(line))).toBe(true);
+    expect(profile!.whats_changed?.some((line) => /SuperScore/i.test(line))).toBe(true);
+    expect(profile!.candidate_qa.some((item) => /200 unique/i.test(item.a))).toBe(true);
   });
 
   it("returns an EPA Section 608 profile for the HVAC deck slug", () => {
@@ -250,5 +252,121 @@ describe("exam facts layer", () => {
     expect(profile!.exam_facts.question_count).toMatch(/110/);
     expect(profile!.exam_facts.passing_score).toMatch(/555/);
     expect(profile!.candidate_qa.some((item) => /ABD|OB/i.test(item.a))).toBe(true);
+  });
+
+  it("returns an ASCP MLT profile with 100Q CAT / scaled 400 honesty", () => {
+    const profile = getExamFactsProfileForDeck("ascp-mlt-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/100/);
+    expect(profile!.exam_facts.passing_score).toMatch(/400/);
+    expect(profile!.candidate_qa.some((item) => /MLS/i.test(item.a))).toBe(true);
+  });
+
+  it("returns ASWB Bachelors 122Q / 4h honesty", () => {
+    const profile = getExamFactsProfileForDeck("aswb-bachelors-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/122/);
+    expect(profile!.candidate_qa.some((item) => /Clinical|LCSW/i.test(item.a))).toBe(true);
+  });
+
+  it("returns ASWB Clinical 122Q / 4h honesty", () => {
+    const profile = getExamFactsProfileForDeck("aswb-clinical-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/122/);
+    expect(profile!.candidate_qa.some((item) => /Bachelors|LSW/i.test(item.a))).toBe(true);
+  });
+
+  it("returns NIC Barber theory 60 items / 90 min honesty", () => {
+    const profile = getExamFactsProfileForDeck("barber-state-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.time_limit).toMatch(/90/);
+    expect(profile!.high_yield_facts.some((item) => /Cosmetology/i.test(item))).toBe(true);
+  });
+
+  it("returns Medication Aide / MACE 60Q / 2h honesty", () => {
+    const profile = getExamFactsProfileForDeck("medication-aide-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.time_limit).toMatch(/2 hours/);
+    expect(profile!.candidate_qa.some((item) => /MACE/i.test(item.a))).toBe(true);
+  });
+
+  it("returns NIC Nail Theory 110 / 90 min honesty", () => {
+    const profile = getExamFactsProfileForDeck("nail-technician-state-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/110/);
+    expect(profile!.high_yield_facts.some((item) => /Cosmetology/i.test(item))).toBe(true);
+  });
+
+  it("returns NSCA-CPT 155Q / 3h / scaled 70 honesty", () => {
+    const profile = getExamFactsProfileForDeck("nsca-cpt-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.time_limit).toMatch(/3 hours/);
+    expect(profile!.candidate_qa.some((item) => /CSCS/i.test(item.a))).toBe(true);
+  });
+
+  it("returns HRCI PHR 90+25 / 2h / scaled 500 honesty", () => {
+    const profile = getExamFactsProfileForDeck("phr-hrci-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.passing_score).toMatch(/500/);
+    expect(profile!.high_yield_facts.some((item) => /SHRM/i.test(item))).toBe(true);
+  });
+
+  it("returns PT aide no-national-exam honesty", () => {
+    const profile = getExamFactsProfileForDeck("physical-therapy-aide-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/No national/i);
+    expect(profile!.candidate_qa.some((item) => /NPTE/i.test(item.a))).toBe(true);
+  });
+
+  it("returns Praxis Core three-test honesty", () => {
+    const profile = getExamFactsProfileForDeck("praxis-core-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/5713/);
+    expect(profile!.high_yield_facts.some((item) => /5355/i.test(item))).toBe(true);
+  });
+
+  it("returns Praxis Special Education 120Q / 2h honesty", () => {
+    const profile = getExamFactsProfileForDeck("praxis-special-education-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.time_limit).toMatch(/2 hours/);
+    expect(profile!.candidate_qa.some((item) => /Core/i.test(item.a))).toBe(true);
+  });
+
+  it("returns PN L1 not-RDN honesty", () => {
+    const profile = getExamFactsProfileForDeck("precision-nutrition-l1-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.high_yield_facts.some((item) => /RDN/i.test(item))).toBe(true);
+  });
+
+  it("returns unarmed security no-national-exam honesty", () => {
+    const profile = getExamFactsProfileForDeck("unarmed-security-officer-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/No national/i);
+    expect(profile!.candidate_qa.some((item) => /armed/i.test(item.a))).toBe(true);
+  });
+
+  it("returns wastewater operator not-drinking-water honesty", () => {
+    const profile = getExamFactsProfileForDeck("wastewater-operator-1-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/No national/i);
+    expect(profile!.high_yield_facts.some((item) => /drinking/i.test(item))).toBe(true);
+  });
+
+  it("returns electrical journeyman not-master honesty", () => {
+    const profile = getExamFactsProfileForDeck("electrical-journeyman-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.high_yield_facts.some((item) => /master/i.test(item))).toBe(true);
+  });
+
+  it("returns NATE Core not-EPA-608 honesty", () => {
+    const profile = getExamFactsProfileForDeck("nate-core-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.candidate_qa.some((item) => /608/i.test(item.a))).toBe(true);
+  });
+
+  it("returns plumbing journeyman not-master honesty", () => {
+    const profile = getExamFactsProfileForDeck("plumbing-journeyman-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.high_yield_facts.some((item) => /master/i.test(item))).toBe(true);
   });
 });

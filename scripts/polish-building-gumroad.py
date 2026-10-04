@@ -47,12 +47,16 @@ EXAM_CONTEXT: dict[str, dict[str, str]] = {
         "disclaimer": "ETS",
     },
     "gmat-focus-anki-deck": {
-        "exam_name": "GMAT Focus Edition (GMAC)",
+        "exam_name": "GMAT Exam (GMAC, 2026)",
         "blurb": (
-            "The GMAT Focus Edition is GMAC's graduate management admissions exam "
-            "(Quantitative Reasoning, Verbal Reasoning, and Data Insights; total score 205–805)."
+            "The current GMAT Exam has three 45-minute sections (Quant 21, Verbal 23, Data Insights 20), "
+            "64 questions / 2h15 / 205–805. SuperScore has been live on Official Score Reports since "
+            "12 August 2026. This 200 unique-card deck was rewritten October 2026 — no Sentence Correction, "
+            "no Quant geometry, Data Sufficiency only in Data Insights."
         ),
-        "covers": "This deck covers Quant, Verbal, and Data Insights style MCQ drills for daily spaced repetition.",
+        "covers": (
+            "67 Quant + 67 Verbal + 66 Data Insights unique MCQs from the same bank as the free 45-question timed check."
+        ),
         "disclaimer": "GMAC",
     },
     "sat-anki-deck": {

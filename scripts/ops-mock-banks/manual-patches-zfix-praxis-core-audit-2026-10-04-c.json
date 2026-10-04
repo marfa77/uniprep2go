@@ -1,0 +1,259 @@
+{
+  "praxis-core-readiness-check": {
+    "praxis-core-readiness-check-math-031": {
+      "prompt": "A third-grade class has 28 glue sticks to split between two tables in a 3:4 ratio. How many sticks should the tables receive?",
+      "options": {
+        "a": "12 and 16",
+        "b": "14 and 14",
+        "c": "16 and 21",
+        "d": "21 and 28"
+      },
+      "correctOptionId": "a",
+      "explanation": "A 3:4 ratio has 3 + 4 = 7 equal parts. Each part is 28 ÷ 7 = 4 sticks, so the tables get 3 × 4 = 12 and 4 × 4 = 16. Those amounts add to the whole class set of 28.",
+      "distractorExplanations": {
+        "b": "Equal 14-and-14 shares ignore the 3:4 split; the parts must stay in that ratio and still sum to 28.",
+        "c": "16 is the larger share, but 21 uses 3 × 7 instead of 4 × 4; 16 + 21 is 37, which is more than 28.",
+        "d": "21 and 28 multiply ratio terms by 7 and by the whole; the two table piles must themselves add to 28."
+      },
+      "difficulty": "medium"
+    },
+    "praxis-core-readiness-check-math-032": {
+      "prompt": "In a school of 80 fifth graders, 15% qualify for extra reading support. How many students is that?",
+      "options": {
+        "a": "8",
+        "b": "12",
+        "c": "15",
+        "d": "80"
+      },
+      "correctOptionId": "b",
+      "explanation": "Fifteen percent means 0.15 of the enrollment: 0.15 × 80 = 12. Equivalently, 10% of 80 is 8 and 5% is 4, so 15% is 12 students who need the extra support.",
+      "distractorExplanations": {
+        "a": "8 is 10% of 80, not 15%; the extra 5% is another 4 students, for 12 in all.",
+        "c": "15 copies the percent numeral instead of taking 15% of 80; the count is 0.15 × 80 = 12.",
+        "d": "80 is the whole grade, not the 15% subgroup; the support caseload is 12 students."
+      },
+      "difficulty": "easy"
+    },
+    "praxis-core-readiness-check-math-033": {
+      "prompt": "A teacher models packs of dry-erase markers with 2x + 6 = 18, where x is the number of packs and 6 are leftover singles. What is x?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "6",
+        "d": "12"
+      },
+      "correctOptionId": "c",
+      "explanation": "Subtract 6 from both sides to isolate the packs: 2x = 12. Divide by 2 to get x = 6. Check: 2(6) + 6 = 18, so six packs plus six singles match the total.",
+      "distractorExplanations": {
+        "a": "3 comes from dividing 18 by 6 and skipping the 2x term; after subtracting 6 you still divide 12 by 2.",
+        "b": "4 would fit 3x + 6 = 18, not 2x + 6 = 18; the coefficient of x is 2, so x = 6.",
+        "d": "12 is 18 − 6, the value of 2x, not of x; dividing that 12 by 2 gives the pack count 6."
+      },
+      "difficulty": "easy"
+    },
+    "praxis-core-readiness-check-math-034": {
+      "prompt": "On a fluency chart, words correct go from (week 1, 2) to (week 3, 14). What is the slope of the line through those two points?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "6"
+      },
+      "correctOptionId": "d",
+      "explanation": "Slope is rise over run: (14 − 2) / (3 − 1) = 12 / 2 = 6 words per week. That constant rate is the steepness of the segment joining the two plotted weeks.",
+      "distractorExplanations": {
+        "a": "2 is the run (3 − 1) or the first y-value, not rise/run; the slope uses both differences, 12/2 = 6.",
+        "b": "3 is the later week number, not the ratio of changes; the y-change of 12 over 2 weeks is 6.",
+        "c": "4 is (14 − 2) / 3, dividing by the second x instead of by Δx = 2, which yields 6."
+      },
+      "difficulty": "medium"
+    },
+    "praxis-core-readiness-check-math-035": {
+      "prompt": "A copier finishes 18 parent-letter packets in 6 minutes at a steady rate. How many packets can it finish in 15 minutes?",
+      "options": {
+        "a": "15",
+        "b": "45",
+        "c": "90",
+        "d": "270"
+      },
+      "correctOptionId": "b",
+      "explanation": "The unit rate is 18 packets / 6 minutes = 3 packets per minute. In 15 minutes the copier produces 3 × 15 = 45 packets. The same proportion is 18/6 = x/15, so x = 45.",
+      "distractorExplanations": {
+        "a": "15 is the new time, not the packet count; time and packets are different units in the rate.",
+        "c": "90 is 6 × 15, multiplying the two times and dropping the 18; the rate is 3 packets per minute, so 45.",
+        "d": "270 is 18 × 15 with no division by 6; you must scale by 15/6, which gives 45 packets."
+      },
+      "difficulty": "medium"
+    },
+    "praxis-core-readiness-check-math-036": {
+      "prompt": "Three exit-ticket scores are 4, 9, and 17. What is the mean of those scores?",
+      "options": {
+        "a": "4",
+        "b": "9",
+        "c": "10",
+        "d": "17"
+      },
+      "correctOptionId": "c",
+      "explanation": "The mean is the sum divided by the count: (4 + 9 + 17) / 3 = 30 / 3 = 10. It is a balance point, not the middle listed score and not the highest or lowest ticket.",
+      "distractorExplanations": {
+        "a": "4 is the minimum, not the mean; averaging still uses all three tickets, so 30/3 = 10.",
+        "b": "9 is the median of the ordered list 4, 9, 17; the mean uses the sum 30 divided by 3.",
+        "d": "17 is the maximum; one high score raises the mean to 10 but is not itself the average."
+      },
+      "difficulty": "easy"
+    },
+    "praxis-core-readiness-check-math-037": {
+      "prompt": "Five homework times in minutes are 11, 3, 8, 20, and 9. What is the median time?",
+      "options": {
+        "a": "3",
+        "b": "5",
+        "c": "8",
+        "d": "9"
+      },
+      "correctOptionId": "d",
+      "explanation": "Order the times first: 3, 8, 9, 11, 20. With five values the median is the third, which is 9 minutes. Do not use the middle of the unsorted list or a leftover from the range.",
+      "distractorExplanations": {
+        "a": "3 is the shortest time (the minimum), which is the first value after sorting, not the middle.",
+        "b": "5 is not in the data; it may come from 20/4, but the median is the middle ordered value 9.",
+        "c": "8 is the middle of the list as written (11, 3, 8, 20, 9); sorting first makes the middle 9."
+      },
+      "difficulty": "medium"
+    },
+    "praxis-core-readiness-check-math-038": {
+      "prompt": "A right-triangular garden plot has legs 9 m and 12 m. How long is the hypotenuse?",
+      "options": {
+        "a": "15 m",
+        "b": "21 m",
+        "c": "54 m",
+        "d": "108 m"
+      },
+      "correctOptionId": "a",
+      "explanation": "The Pythagorean theorem gives c² = 9² + 12² = 81 + 144 = 225, so c = 15 m. This is a 3-4-5 triple scaled by 3, which also yields 15 as the longest side.",
+      "distractorExplanations": {
+        "b": "21 m is 9 + 12, the sum of the legs; the hypotenuse is shorter than that walk around the right angle.",
+        "c": "54 m is (9 × 12)/2, the area of the triangle, not the length of the slanted side.",
+        "d": "108 m is 9 × 12, a rectangle area in square meters misread as a side length."
+      },
+      "difficulty": "medium"
+    },
+    "praxis-core-readiness-check-math-039": {
+      "prompt": "A classroom rug measures 6 feet by 10 feet. What is its area in square feet?",
+      "options": {
+        "a": "16",
+        "b": "60",
+        "c": "120",
+        "d": "600"
+      },
+      "correctOptionId": "b",
+      "explanation": "Rectangle area is length times width: 6 × 10 = 60 square feet. Perimeter would add the sides; area counts the square-foot tiles that cover the rug.",
+      "distractorExplanations": {
+        "a": "16 is 6 + 10, adding the two given sides once; area multiplies them, giving 60.",
+        "c": "120 is 2 × 6 × 10, as if doubling the area, or 2(6+10)×something mixed with perimeter habits.",
+        "d": "600 treats 10 as an extra factor of 10 again (6 × 10 × 10); only two dimensions multiply for area."
+      },
+      "difficulty": "easy"
+    },
+    "praxis-core-readiness-check-math-040": {
+      "prompt": "A prize jar holds 2 gold tickets and 6 silver tickets, mixed equally. One ticket is drawn at random. What is the probability it is gold?",
+      "options": {
+        "a": "1/8",
+        "b": "1/6",
+        "c": "1/4",
+        "d": "3/4"
+      },
+      "correctOptionId": "c",
+      "explanation": "Probability is favorable over total equally likely tickets: 2 gold out of 2 + 6 = 8 tickets, so 2/8 = 1/4. Odds of 2:6 are not the same as this probability.",
+      "distractorExplanations": {
+        "a": "1/8 would be one gold ticket in eight; the jar has two gold, so 2/8 = 1/4.",
+        "b": "1/6 uses only the six silver as a denominator, or simplifies 2:6 as if it were a probability.",
+        "d": "3/4 is the chance of silver (6/8), the complement of gold, not the gold probability."
+      },
+      "difficulty": "easy"
+    },
+    "praxis-core-readiness-check-math-041": {
+      "prompt": "A school-library count is written as 4.5 × 10^4 volumes. What is that number in standard form?",
+      "options": {
+        "a": "0.00045",
+        "b": "45",
+        "c": "4500",
+        "d": "45000"
+      },
+      "correctOptionId": "d",
+      "explanation": "A positive power of ten moves the decimal right. 10^4 is 10,000, so 4.5 × 10,000 = 45,000 volumes. That is four places: 4.5000 becomes 45000.",
+      "distractorExplanations": {
+        "a": "0.00045 is 4.5 × 10^−4; a positive exponent 4 moves the decimal right, not left.",
+        "b": "45 drops the power of ten entirely; multiplying by 10,000 scales 4.5 up to 45,000.",
+        "c": "4,500 is 4.5 × 10^3 (three places). Four places are required for 10^4, giving 45,000."
+      },
+      "difficulty": "medium"
+    },
+    "praxis-core-readiness-check-math-042": {
+      "prompt": "A teacher solves −2n > 10 for a number-line lesson. Which value of n is a solution?",
+      "options": {
+        "a": "−6",
+        "b": "−5",
+        "c": "0",
+        "d": "6"
+      },
+      "correctOptionId": "a",
+      "explanation": "Dividing both sides by −2 reverses the inequality: n < −5. Only numbers strictly less than −5 work. −6 gives −2(−6) = 12, and 12 > 10, so −6 is a solution.",
+      "distractorExplanations": {
+        "b": "−5 is the boundary: −2(−5) = 10, and 10 > 10 is false; the inequality is strict, so n < −5.",
+        "c": "0 yields −2(0) = 0, which is not greater than 10; positive and zero n fail this inequality.",
+        "d": "6 forgets the sign flip: −2(6) = −12, and −12 is not greater than 10."
+      },
+      "difficulty": "medium"
+    },
+    "praxis-core-readiness-check-math-043": {
+      "prompt": "A state test window lasts 3.5 hours. How many minutes is that?",
+      "options": {
+        "a": "35",
+        "b": "210",
+        "c": "350",
+        "d": "12600"
+      },
+      "correctOptionId": "b",
+      "explanation": "Each hour has 60 minutes, so 3.5 × 60 = 210 minutes. Half an hour is 30 minutes, and 3 hours is 180, which also totals 210.",
+      "distractorExplanations": {
+        "a": "35 treats 3.5 as if an hour had 10 minutes (3.5 × 10); the correct factor is 60, giving 210.",
+        "c": "350 is 3.5 × 100, a decimal-place slip; minutes use 60 per hour, not 100.",
+        "d": "12,600 is 3.5 × 3,600, the count in seconds, not minutes; in minutes the window is 210."
+      },
+      "difficulty": "easy"
+    },
+    "praxis-core-readiness-check-math-044": {
+      "prompt": "A supply crate measures 4 in by 5 in by 6 in. What is its volume in cubic inches?",
+      "options": {
+        "a": "15",
+        "b": "30",
+        "c": "120",
+        "d": "240"
+      },
+      "correctOptionId": "c",
+      "explanation": "Volume of a rectangular box is length × width × height: 4 × 5 × 6 = 120 cubic inches. That product fills the crate; adding edges or using one face leaves height out.",
+      "distractorExplanations": {
+        "a": "15 is 4 + 5 + 6, the sum of edges, not the space inside; volume multiplies the three lengths.",
+        "b": "30 is the 5 × 6 face area (or 4 × 5 + 10); cubic inches need the third factor of 4, giving 120.",
+        "d": "240 doubles 120, as if two crates or 2(lwh); a single 4 × 5 × 6 box is 120 cubic inches."
+      },
+      "difficulty": "easy"
+    },
+    "praxis-core-readiness-check-math-045": {
+      "prompt": "A teacher plots minutes of nightly reading against next-day quiz scores and sees points that rise from left to right. What does that pattern indicate?",
+      "options": {
+        "a": "A negative association, with scores falling as reading time rises",
+        "b": "No linear pattern, as if the points formed a shapeless cloud",
+        "c": "Proof that extra reading time causes the higher quiz scores",
+        "d": "A positive association: the two measures tend to rise together"
+      },
+      "correctOptionId": "d",
+      "explanation": "Points that rise to the right show a positive association: larger x-values tend to pair with larger y-values. Scatterplots display trend, not a proof that one variable causes the other.",
+      "distractorExplanations": {
+        "a": "A negative association would fall to the right; a rising cloud is the opposite trend.",
+        "b": "No association looks like a formless blob; a clear left-to-right rise is a trend.",
+        "c": "Association is not causation; the plot cannot prove that reading time produces the scores."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

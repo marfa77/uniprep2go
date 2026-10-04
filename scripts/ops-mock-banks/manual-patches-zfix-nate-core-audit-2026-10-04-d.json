@@ -1,0 +1,259 @@
+{
+  "nate-core-readiness-check": {
+    "nate-core-readiness-check-soft-skills-046": {
+      "prompt": "A homeowner points at a 410A condenser and says, \"Just add a pound — the last tech always did.\" You have not connected gauges. What should you do?",
+      "options": {
+        "a": "Diagnose with gauges, temperatures, and airflow before changing the charge",
+        "b": "Add the pound because a small 410A top-off is acceptable on residential splits",
+        "c": "Watch suction pressure only and add refrigerant if the gauge reads under 100 psig",
+        "d": "Recover the entire charge first and weigh in the nameplate amount before any tests"
+      },
+      "correctOptionId": "a",
+      "explanation": "Charge is a measured decision, not a courtesy pound. Superheat or subcooling plus confirmed airflow show whether refrigerant is actually the fault. Adding gas blind can overcharge a 410A system and hide airflow, restriction, or metering problems.",
+      "distractorExplanations": {
+        "b": "A \"harmless\" top-off is a common myth; unmeasured 410A can overcharge the coil and raise head pressure.",
+        "c": "Suction pressure alone does not show charge; you still need temperatures and correct airflow for SH/SC.",
+        "d": "Jumping to full recovery skips diagnosis; testing first shows whether charge is the problem at all."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-soft-skills-047": {
+      "prompt": "The next technician on a compressor callback finds no model, serial, pressures, or part numbers on yesterday's ticket. Why does that documentation matter?",
+      "options": {
+        "a": "EPA requires those fields on every residential service invoice, no exceptions",
+        "b": "NATE audits each technician's tickets before it will renew the credential",
+        "c": "The following tech and the warranty both need a traceable service record",
+        "d": "A warranty claim is complete if the invoice shows only the dollar total"
+      },
+      "correctOptionId": "c",
+      "explanation": "A complete ticket protects the customer, the shop, and the next person on the job. Model, serial, readings, and what was replaced let a warranty claim and a callback diagnosis start from facts instead of guesswork.",
+      "distractorExplanations": {
+        "a": "EPA recordkeeping targets refrigerant disposal and larger appliances, not a full ticket on every house call.",
+        "b": "NATE recertification uses CE hours or retesting, not an audit of a technician's service tickets.",
+        "d": "An invoice total proves payment, not the failed part, serial, or operating conditions a claim needs."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-soft-skills-048": {
+      "prompt": "The outdoor fan motor is open. The replacement will not arrive until tomorrow, and the house is occupied. How should you leave the job today?",
+      "options": {
+        "a": "Jumper the high-pressure switch so the compressor can run without the fan overnight",
+        "b": "Leave the system running as found so they keep some cooling until the part arrives",
+        "c": "Recover the charge and leave the manifold hoses on the ports until you return",
+        "d": "Make the equipment safe, explain options and price, and schedule the follow-up"
+      },
+      "correctOptionId": "d",
+      "explanation": "If you cannot finish, leave the equipment in a safe state and tell the owner what happens next. Defeating a safety or running a failed condenser overnight trades a callback for a compressor failure and liability.",
+      "distractorExplanations": {
+        "a": "Bypassing a high-pressure switch so the compressor runs without a fan is a fire and equipment hazard.",
+        "b": "Leaving a known-failed condenser running can overheat the compressor and still leave the house without reliable cooling.",
+        "c": "Gauges left on ports invite leaks and tampering, and the customer still has no price or return time."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-soft-skills-049": {
+      "prompt": "At the supply house a helper is refused a 25 lb cylinder of R-410A because they have no card. What does an EPA 608 certification actually allow?",
+      "options": {
+        "a": "Buy and handle regulated refrigerants and recover them from appliances",
+        "b": "Install line-voltage wiring from a disconnect to a new condensing unit",
+        "c": "Pull gas permits and install furnaces under the local mechanical code",
+        "d": "Purchase factory-sealed window air conditioners for rental properties"
+      },
+      "correctOptionId": "a",
+      "explanation": "Section 608 is a federal refrigerant-handling credential. It is what supply houses check before selling regulated refrigerant and what authorizes recovery from appliances. It is not an electrician, gas, or contractor license.",
+      "distractorExplanations": {
+        "b": "Line-voltage work is governed by electrical licensing and code, not by an EPA 608 card.",
+        "c": "Furnace permits and gas installs fall under local mechanical licensing, not EPA 608.",
+        "d": "Factory-sealed room units can be sold without 608; the card governs refrigerant purchase and recovery."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-soft-skills-050": {
+      "prompt": "A 14-year-old heat pump still cools, but the matching furnace has a confirmed cracked heat exchanger and CO in the living space. When is recommending a new system appropriate?",
+      "options": {
+        "a": "Any time the outdoor unit is over 10 years old, even if the repair is a cheap capacitor",
+        "b": "When the equipment is unsafe or uneconomic, and you show the owner the facts",
+        "c": "When a repair quote exceeds 25 percent of replacement, even before diagnosis",
+        "d": "Any time the unit uses R-22, because repairing R-22 systems is now illegal"
+      },
+      "correctOptionId": "b",
+      "explanation": "Replacement advice follows documented safety and economics, not age quotas. A cracked exchanger with CO in occupied space is an unsafe keep-it-running situation; you present findings and options, including replacement, instead of selling on age alone.",
+      "distractorExplanations": {
+        "a": "Age by itself does not justify replacement; a cheap repair on a still-safe unit should be offered first.",
+        "c": "A percentage rule before diagnosis is a sales shortcut, not a finding-based recommendation.",
+        "d": "R-22 production ended, but servicing existing R-22 systems with reclaimed or stocked refrigerant remains legal."
+      },
+      "difficulty": "hard"
+    },
+    "nate-core-readiness-check-soft-skills-051": {
+      "prompt": "A homeowner shows phone photos of rust streaks they believe are a cracked heat exchanger. The furnace is still running. What should you do first?",
+      "options": {
+        "a": "Disregard the photos, because a combustion analyzer is required to confirm a crack",
+        "b": "Red-tag the furnace from the photos without opening the cabinet yourself",
+        "c": "Inspect, confirm, shut the furnace down if unsafe, and document in writing",
+        "d": "Quote a heat-exchanger replacement immediately because photos are proof"
+      },
+      "correctOptionId": "c",
+      "explanation": "Customer photos are a lead, not a condemnation. You inspect, confirm with visual or camera work and combustion checks, shut the furnace down if it is unsafe, and put the finding in writing so the owner has a clear next step.",
+      "distractorExplanations": {
+        "a": "Photos are worth checking; visual inspection and combustion testing together confirm a crack, not analyzer-only dismissal.",
+        "b": "Condemning equipment needs your own confirmation; a rust photo can be a stain, not a crack.",
+        "d": "Ordering a heat exchanger from a phone picture skips confirmation and can sell a part that is not needed."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-soft-skills-052": {
+      "prompt": "You recorded 8°F subcooling on a 410A TXV system this morning. The afternoon tech recorded 22°F and added two pounds. The numbers still conflict. What is the professional move?",
+      "options": {
+        "a": "Follow the senior technician's reading and add charge to match that measurement",
+        "b": "Split the difference and add half of the refrigerant the other tech recommended",
+        "c": "Trust the newer digital manifold and ignore the analog gauges from the morning",
+        "d": "Re-measure superheat, subcooling, airflow, and the nameplate before adding more"
+      },
+      "correctOptionId": "d",
+      "explanation": "Charge disputes are settled with shared measurements, not seniority or new tools. Re-check SH/SC with confirmed airflow against the nameplate target before adding more 410A, or you stack two wrong charges on top of each other.",
+      "distractorExplanations": {
+        "a": "Seniority is not a measurement; the disagreement is resolved by re-testing SH/SC and airflow together.",
+        "b": "A compromise amount is not a diagnosis and can still leave the system over- or undercharged.",
+        "c": "Tool age does not settle a charge dispute; both techs re-measure against the same nameplate target."
+      },
+      "difficulty": "hard"
+    },
+    "nate-core-readiness-check-soft-skills-053": {
+      "prompt": "A homeowner asks you to leave the filter rack empty \"so the air handler can breathe\" year-round. What should you do?",
+      "options": {
+        "a": "Explain coil and blower damage and IAQ risk, and leave a proper filter in place",
+        "b": "Remove the filter as requested because the customer owns the equipment and signed",
+        "c": "Slide in a 1-inch MERV 16 so they get cleaner air with supposedly freer airflow",
+        "d": "Pull the filter and promise yearly coil cleaning to replace continuous filtration"
+      },
+      "correctOptionId": "a",
+      "explanation": "A filter protects the coil, blower, and indoor air. Permanent removal is not a performance upgrade. Explain the damage and IAQ risk and leave a correctly sized, reasonable-MERV filter in the rack.",
+      "distractorExplanations": {
+        "b": "Ownership does not make an unsafe request good practice; dirt will load the coil and blower.",
+        "c": "A high-MERV 1-inch filter raises static and cuts airflow; it does not \"free\" the blower.",
+        "d": "Annual coil cleaning does not stop debris loading the blower between visits; filtration is still required."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-soft-skills-054": {
+      "prompt": "While rolling a furnace across a hallway, you gouge a hardwood floor. Nobody else saw it. What should you do?",
+      "options": {
+        "a": "Patch the floor yourself after hours before telling the shop or owner",
+        "b": "Notify the shop and the customer now and follow the company's claim policy",
+        "c": "Tell dispatch only and let the office contact the owner about a claim later",
+        "d": "Hide a note on the invoice and wait for the customer to raise the damage"
+      },
+      "correctOptionId": "b",
+      "explanation": "Property damage is disclosed the same visit. Tell the shop and the customer, then follow the company's claim path. Hidden repairs and delayed office calls look like concealment and usually cost more than an honest report.",
+      "distractorExplanations": {
+        "a": "A secret after-hours patch skips insurance and claim procedure and destroys trust if the repair fails.",
+        "c": "The customer should hear about the gouge from you on site, not from the office days later.",
+        "d": "Fine print on an invoice is not disclosure; damage is reported directly and immediately."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-soft-skills-055": {
+      "prompt": "A coworker wants a social-media photo of the new thermostat showing the homeowner's PIN and street number. What is the correct handling of that information?",
+      "options": {
+        "a": "The post is fine if you crop the customer's last name out of the photo",
+        "b": "The post is fine once the job is finished and the invoice has been paid",
+        "c": "It is a privacy failure; do not post customer credentials or addresses",
+        "d": "The post is fine if you blur the house number but leave the PIN visible"
+      },
+      "correctOptionId": "c",
+      "explanation": "Thermostats, Wi-Fi logins, PINs, and addresses are customer credentials. They stay off social media even after the job is paid. Cropping a surname or blurring a house number still leaks access to the home's controls.",
+      "distractorExplanations": {
+        "a": "The PIN is still an access code; omitting a last name does not make posting it acceptable.",
+        "b": "Payment status does not change privacy duties; credentials are not content for a job-site post.",
+        "d": "Blurring the address leaves the PIN exposed, and the PIN itself grants control of the system."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-soft-skills-056": {
+      "prompt": "A no-heat call is a tripped furnace breaker. The blower had been humming before the trip. What should the visit still include?",
+      "options": {
+        "a": "Install the next larger breaker so the furnace stops those nuisance trips",
+        "b": "Reset it, confirm heat at a register, and tell them to call if it trips again",
+        "c": "Swap the breaker because any trip is proof that the device has worn out",
+        "d": "Find the overload or short that caused the trip before resetting and leaving"
+      },
+      "correctOptionId": "d",
+      "explanation": "A breaker trip is a symptom. A humming blower plus a trip points to an overloaded motor, short, or wiring fault. Find that cause before a reset-and-leave, or the next trip can be a fire instead of a callback.",
+      "distractorExplanations": {
+        "a": "Breakers protect the wire; upsizing hides the fault and can overheat the circuit.",
+        "b": "Resetting without a cause turns a diagnostic visit into a delayed failure.",
+        "c": "Most trips are overload or short; swapping the breaker leaves the real fault in place."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-soft-skills-057": {
+      "prompt": "You are writing a repair estimate for a locked compressor on a residential split. What should the quote include?",
+      "options": {
+        "a": "Recovery, filter-drier, evacuation, start components, the compressor, and labor",
+        "b": "Compressor and labor only, with recovery and the drier billed on the final invoice",
+        "c": "Part and labor only, because a replacement compressor ships with a new drier",
+        "d": "Compressor, drier, and labor, reusing the old charge without a proper evacuation"
+      },
+      "correctOptionId": "a",
+      "explanation": "A compressor change is a refrigerant circuit repair. The honest estimate includes recovery, a new drier, evacuation, start components, the compressor, and labor so the owner sees the real cost before you start, not as surprise add-ons.",
+      "distractorExplanations": {
+        "b": "Billing required recovery and a drier later hides the true cost and starts a billing fight.",
+        "c": "Replacement compressors do not include a filter-drier; that is a separate required part.",
+        "d": "Reusing the old charge skips recovery and evacuation and leaves acid and moisture in the circuit."
+      },
+      "difficulty": "hard"
+    },
+    "nate-core-readiness-check-soft-skills-058": {
+      "prompt": "A furnace swap needs a larger gas pipe. Your license covers HVAC equipment, not fuel-gas piping in this city. What should you do?",
+      "options": {
+        "a": "Run the short black-iron resize yourself, claiming the HVAC license covers it",
+        "b": "Stop the piping and have a licensed plumber or gas fitter complete the resize",
+        "c": "Install a larger gas valve so the undersized supply pipe can stay as built",
+        "d": "Complete the resize and skip the permit because the ticket is tagged service"
+      },
+      "correctOptionId": "b",
+      "explanation": "Work stays inside the license the city actually issued. If fuel-gas piping is a plumber or fitter ticket, you stop that portion and bring in the right trade. Run length, \"service\" labels, and valve swaps do not create a piping license.",
+      "distractorExplanations": {
+        "a": "A short run does not change licensing; gas piping still needs the credential this city requires.",
+        "c": "A larger gas valve cannot fix an undersized supply line; the pipe itself has to be resized.",
+        "d": "Calling the visit a service call does not waive piping licenses or permit rules."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-soft-skills-059": {
+      "prompt": "A clerk at permit intake treats your NATE Core wallet card as a contractor license. What should you tell the customer?",
+      "options": {
+        "a": "NATE Core is the state contractor license for HVAC installation and service",
+        "b": "NATE Core is the federal refrigerant exam that replaces the EPA 608 card",
+        "c": "NATE Core is an industry knowledge exam, not a license that authorizes permits",
+        "d": "NATE Core is a brand warranty class required to install specific equipment"
+      },
+      "correctOptionId": "c",
+      "explanation": "NATE Core tests installation and service fundamentals. It is a voluntary industry certification. Permits and legal HVAC work still require the state or local contractor license, and refrigerant handling still requires EPA 608.",
+      "distractorExplanations": {
+        "a": "Contractor licensing is issued by states or localities; NATE does not replace that license.",
+        "b": "EPA 608 is a separate federal requirement; passing NATE Core does not substitute for it.",
+        "d": "NATE is brand-neutral and independent; it is not a manufacturer warranty course."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-soft-skills-060": {
+      "prompt": "Capacitor and contactor are replaced. How should you close the site before you leave?",
+      "options": {
+        "a": "Reinstall the panels but leave gauges on the ports to watch charge overnight",
+        "b": "Bag the old parts but leave the blower door off so the indoor motor can cool",
+        "c": "Show cool air at a register and leave packaging in the driveway for the owner",
+        "d": "Reinstall panels, remove scraps, and confirm the system runs in the called mode"
+      },
+      "correctOptionId": "d",
+      "explanation": "A finished call is assembled, cleaned up, and demonstrated. Panels go back on, scraps leave with you, and the customer sees the system run in the mode they called about so you catch an open door switch or a dead capacitor before you drive away.",
+      "distractorExplanations": {
+        "a": "Gauges left on ports are a leak path and a tampering risk; they come off before you leave.",
+        "b": "An open blower door defeats the interlock and pulls unfiltered air across the coil.",
+        "c": "Leaving packaging in the drive is unfinished cleanup and can be a trip or wind hazard."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

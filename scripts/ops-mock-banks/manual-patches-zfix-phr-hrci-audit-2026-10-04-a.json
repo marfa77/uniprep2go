@@ -1,0 +1,259 @@
+{
+  "phr-hrci-readiness-check": {
+    "phr-hrci-readiness-check-talent-001": {
+      "prompt": "A plant needs a new maintenance technician posting by Friday, but there is no current job description. What should the PHR take from a job analysis before the posting goes live?",
+      "options": {
+        "a": "The job's tasks, required KSAs, and working conditions",
+        "b": "Market pay data and a recommended salary midpoint",
+        "c": "Last year's ratings of technicians in other plants",
+        "d": "Personality labels taken from last year's top performers"
+      },
+      "correctOptionId": "a",
+      "explanation": "Job analysis describes the work itself: tasks, knowledge/skills/abilities, and conditions. That output drives the posting, interview questions, and later evaluation. Pay grades come from job evaluation and market pricing; ratings and personality lists describe people, not the job, and can pull selection off job-related criteria.",
+      "distractorExplanations": {
+        "b": "Confuses job analysis with job evaluation and market pricing, which use the analysis later but are not its product.",
+        "c": "Performance ratings describe incumbents; analysis must describe the job independent of who currently holds it.",
+        "d": "Trait lists of 'top people' study persons, not the job, and invite non-job-related hiring screens."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-002": {
+      "prompt": "Three finalists met different interviewers who each used a unique question list and no scoring guide. Why should the PHR convert this to a structured interview?",
+      "options": {
+        "a": "So the hiring manager can spend more time selling the role",
+        "b": "So all finalists answer the same job-related questions",
+        "c": "So the panel can ask about family status before skills",
+        "d": "So KSAs from the analysis can be dropped from the talk"
+      },
+      "correctOptionId": "b",
+      "explanation": "Structured interviews use the same job-related questions and a common rating guide so candidates can be compared fairly. That design raises reliability and helps defend selection under Title VII. Rambling, family questions, or ignoring KSAs increase noise and discrimination risk, not validity.",
+      "distractorExplanations": {
+        "a": "Selling time is recruiting, not a validity reason; structure exists to compare candidates, not to lengthen the pitch.",
+        "c": "Family-status questions are not job-related and create sex and related Title VII exposure, the opposite of structure.",
+        "d": "KSAs from job analysis should drive the questions; dropping them returns the process to an unstructured chat."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-003": {
+      "prompt": "A store director wants to hire only White clerks because 'our shoppers prefer it.' How should the PHR treat that request under Title VII?",
+      "options": {
+        "a": "Allow it as a race BFOQ based on customer preference",
+        "b": "Allow an age cap if it would cut new-hire training cost",
+        "c": "Refuse it; race has no BFOQ and preference is not a defense",
+        "d": "Treat it as a business-necessity defense to disparate impact"
+      },
+      "correctOptionId": "c",
+      "explanation": "Title VII permits no BFOQ for race or color. Customer preference is not a lawful basis for excluding a protected group. Sex, religion, or national origin BFOQs are rare and must be essential to the job; they still do not cover this request. Business necessity answers disparate-impact cases, not an open race screen.",
+      "distractorExplanations": {
+        "a": "There is no race or color BFOQ, and customer preference does not convert a discriminatory hiring rule into a BFOQ.",
+        "b": "ADEA age BFOQs are narrow (for example some public-safety roles); lower training cost is not a lawful age cutoff.",
+        "d": "Confuses BFOQ (using a protected trait openly) with the business-necessity defense used after a neutral practice shows impact."
+      },
+      "difficulty": "hard"
+    },
+    "phr-hrci-readiness-check-talent-004": {
+      "prompt": "A written screen's Hispanic pass rate is 60% of the White pass rate. What should the PHR do first under the Uniform Guidelines (UGESP)?",
+      "options": {
+        "a": "Switch the screen to a 50% half-rate rule instead of four-fifths",
+        "b": "Wait to run any pass-rate statistics until a charge is filed",
+        "c": "Count protected-class hires against a yearly numeric quota",
+        "d": "Confirm the rate gap, then review validity if impact holds"
+      },
+      "correctOptionId": "d",
+      "explanation": "UGESP expects employers to monitor selection rates by race, sex, and ethnic group. The four-fifths (80%) rule is a practical screen, not the whole law. A 60% ratio is below 80%, so HR should confirm the data and, if adverse impact remains, be ready to show job-relatedness and validity or use a less-impactful alternative.",
+      "distractorExplanations": {
+        "a": "Wrong threshold: the UGESP rule of thumb is four-fifths (80%) of the highest group's rate, not 50%.",
+        "b": "Monitoring is proactive under UGESP; waiting for a lawsuit is not the compliance standard for selection rates.",
+        "c": "Adverse impact compares selection rates, not raw hire totals against a quota, which Title VII also forbids."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-005": {
+      "prompt": "A new customer-service hire finished day-one forms but still has no system access, no 30-day goals, and no check-in on the calendar. What should the PHR add so this is onboarding, not orientation?",
+      "options": {
+        "a": "Role goals, tools access, compliance, and a 30-day check",
+        "b": "Only the benefits packet and a signed handbook receipt",
+        "c": "Culture videos now, with job training delayed until day 90",
+        "d": "A full-day compliance video before meeting the manager"
+      },
+      "correctOptionId": "a",
+      "explanation": "Onboarding gets a new hire productive: role clarity, tools, required compliance, and an early (often 30-day) check with the manager. Paperwork-only orientation, delayed skill training, or a video day without a manager connection leave time-to-productivity and early turnover unmeasured.",
+      "distractorExplanations": {
+        "b": "Benefits and handbook receipt are orientation paperwork; they do not give role, tools, or an early performance check.",
+        "c": "Holding job training until day 90 slows productivity; culture content alone is not a complete onboarding plan.",
+        "d": "Compliance matters, but isolating the hire from the manager and the actual work is not effective onboarding."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-006": {
+      "prompt": "Applicants take the same cognitive screen two weeks apart and their rank order changes sharply. What does that reliability problem mean for hiring decisions?",
+      "options": {
+        "a": "The test is measuring a construct unrelated to the job",
+        "b": "Scores are unstable, so the rank order cannot be trusted",
+        "c": "The screen already has adverse impact on a protected class",
+        "d": "Scores are consistent but fail to predict later performance"
+      },
+      "correctOptionId": "b",
+      "explanation": "Reliability is score consistency. If rank order jumps on retest, you cannot trust who scored 'higher' and should not use the tool as a hurdle. Measuring the wrong construct, weak criterion prediction, and adverse impact are validity or fairness issues; they are not what a reliability failure itself shows.",
+      "distractorExplanations": {
+        "a": "Wrong construct is a validity problem; reliability asks whether the measure is consistent, not whether it is the right trait.",
+        "c": "Adverse impact is about group pass-rate gaps; bouncing scores are a consistency issue, not a four-fifths finding.",
+        "d": "That pattern is a reliable but invalid test (stable scores that do not predict). Here the scores themselves are unstable."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-007": {
+      "prompt": "HR must defend a 45-minute parts-assembly work sample used to hire technicians. What would establish content validity for that exercise?",
+      "options": {
+        "a": "Scores later correlate with on-the-job performance ratings",
+        "b": "The exercise is built to measure an abstract personality trait",
+        "c": "The sample's tasks match important tasks done on the job",
+        "d": "Retesting the same people yields nearly the same numeric scores"
+      },
+      "correctOptionId": "c",
+      "explanation": "Content validity for a work sample means the exercise is a fair sample of important job tasks identified in job analysis. Criterion-related validity is the later correlation with performance. Construct validity targets an abstract trait. Stable retest scores are reliability, not content evidence.",
+      "distractorExplanations": {
+        "a": "Correlation with later performance is criterion-related validity, a different validation strategy than content sampling.",
+        "b": "Measuring an abstract trait is construct validity; a work sample should represent job tasks, not a personality construct.",
+        "d": "Same scores on retest describe test-retest reliability, which does not prove the sample mirrors the job."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-008": {
+      "prompt": "A plant must cut 12 assembler jobs. The supervisor wants to rank people by salary, highest first, 'to save the most money.' What should the PHR require for the RIF list?",
+      "options": {
+        "a": "Rank by pay, highest first, to maximize payroll savings",
+        "b": "Rank by the supervisor's undocumented sense of cultural fit",
+        "c": "Keep the list off legal review until after layoff notices go out",
+        "d": "Use documented, job-related criteria and check age impact"
+      },
+      "correctOptionId": "d",
+      "explanation": "RIF selections must rest on documented, job-related criteria (skills, performance, seniority if used consistently). Ranking by pay often tracks age and can create ADEA disparate-impact exposure. Gut 'fit' is hard to defend. Legal and adverse-impact review belong before notices, not after.",
+      "distractorExplanations": {
+        "a": "Highest-paid-first often correlates with age; payroll savings is not a job-related RIF criterion and raises ADEA risk.",
+        "b": "Undocumented 'fit' is subjective and difficult to defend if a discrimination charge follows the layoff.",
+        "c": "Counsel and impact analysis should review the list before notices; hiding it until after the fact is the wrong sequence."
+      },
+      "difficulty": "hard"
+    },
+    "phr-hrci-readiness-check-talent-009": {
+      "prompt": "Employees say posted internal jobs are already filled by the hiring manager's pick. What change actually makes internal mobility work at the practitioner level?",
+      "options": {
+        "a": "Post real openings and stop managers from hiding roles",
+        "b": "Fill from manager referrals before any internal posting",
+        "c": "Cap transfers so high performers stay on current teams",
+        "d": "Go to the external market first to test the posted pay range"
+      },
+      "correctOptionId": "a",
+      "explanation": "Internal mobility needs a real internal market: genuine postings, visible qualifications, and managers who cannot pre-fill roles in the dark. Pre-selected referrals, transfer caps (talent hoarding), and external-first searches all close that market and drive exits of mobile talent.",
+      "distractorExplanations": {
+        "b": "Referral-first filling before a posting is the complaint: it closes the internal market and destroys trust in the process.",
+        "c": "Capping transfers is talent hoarding, a main reason mobility programs fail even when a careers site exists.",
+        "d": "External-first searches sideline internal candidates; mobility requires real internal access, not a pay survey via job boards."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-010": {
+      "prompt": "Warehouse 90-day quits keep saying recruiting 'sold a different job.' How should the PHR use a realistic job preview in talent acquisition?",
+      "options": {
+        "a": "Raise offer rates by showing only overtime premiums and perks",
+        "b": "Cut early quits by also describing the hard parts of the work",
+        "c": "Screen applicants with a scored knowledge test as a hurdle",
+        "d": "Replace the formal job description after the person starts work"
+      },
+      "correctOptionId": "b",
+      "explanation": "A realistic job preview shares both attractive and difficult parts of the work so candidates can self-select. That honesty typically lowers early turnover even if some offers are declined. A perks-only pitch, a knowledge test, or swapping out the job description after hire are different tools and do not serve the RJP purpose.",
+      "distractorExplanations": {
+        "a": "That is a sales pitch; an RJP deliberately includes downsides rather than maximizing acceptance at any cost.",
+        "c": "Knowledge tests are selection instruments; an RJP relies on informed self-selection, not a scored hurdle.",
+        "d": "An RJP supplements recruiting information; it does not replace the job description during onboarding."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-011": {
+      "prompt": "A Monday start is on the calendar. Payroll wants to 'catch up I-9s later, even for U.S. citizens after 90 days.' What timing should the PHR enforce?",
+      "options": {
+        "a": "Complete Section 1 within three business days of the start date",
+        "b": "Complete Form I-9 only for employees who are not U.S. citizens",
+        "c": "Section 1 by day one; Section 2 within three business days",
+        "d": "Complete the I-9 after the 90-day probationary period ends"
+      },
+      "correctOptionId": "c",
+      "explanation": "Under IRCA, every new hire—including U.S. citizens—completes Section 1 by the first day of work. The employer reviews identity and work-authorization documents and completes Section 2 within three business days of the start date. Probation does not delay I-9, and citizenship status does not exempt anyone.",
+      "distractorExplanations": {
+        "a": "Swaps the deadlines: Section 1 is due by day one; three business days is the Section 2 document-review window.",
+        "b": "Form I-9 is required for every new hire, including U.S. citizens; IRCA does not limit it to noncitizens.",
+        "d": "I-9 timing is hire-based (Section 1 day one, Section 2 within three business days), not after a probation period."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-012": {
+      "prompt": "An otherwise qualified applicant asks for a sign-language interpreter at the interview. The hiring manager wants to reject the person for that request. What should the PHR do under the ADA?",
+      "options": {
+        "a": "Cancel the interview because an interpreter would cost too much",
+        "b": "Ask a family member to interpret instead of a qualified interpreter",
+        "c": "Switch to a written test so no accommodation request remains",
+        "d": "Provide a reasonable interview accommodation absent undue hardship"
+      },
+      "correctOptionId": "d",
+      "explanation": "The ADA covers qualified applicants. Providing an interpreter for an interview is a typical reasonable accommodation unless it would impose undue hardship on the operation. Cost alone, a family interpreter, or swapping the process to dodge the request are not the default PHR response; document the interactive process and proceed with the interview.",
+      "distractorExplanations": {
+        "a": "Undue hardship is a fact-specific operational showing, not an automatic rejection because an interpreter has a fee.",
+        "b": "Family members are not a substitute for a qualified interpreter and can compromise accuracy and confidentiality.",
+        "c": "Changing the method to avoid the request is not the interactive process; the interview accommodation should be addressed."
+      },
+      "difficulty": "hard"
+    },
+    "phr-hrci-readiness-check-talent-013": {
+      "prompt": "The plant's only licensed boiler operator can retire in eight months. Leadership asks HR for a succession plan, not a headcount forecast. What should the PHR do?",
+      "options": {
+        "a": "Identify and develop a backup for that critical role",
+        "b": "Wait for a board vote on a new CEO when the operator leaves",
+        "c": "Post a names-only chart and skip any development actions",
+        "d": "Run a plant-wide headcount forecast for the next fiscal year"
+      },
+      "correctOptionId": "a",
+      "explanation": "Practitioner succession planning names critical roles and builds ready backups through development, not just a list. Waiting for an opening is reactive replacement. A chart with no development is not a plan. Headcount forecasting is workforce planning; it does not staff a licensed-operator gap.",
+      "distractorExplanations": {
+        "b": "A board CEO vote is executive replacement after a vacancy, not PHR-level succession for a licensed plant role.",
+        "c": "A replacement chart without development or readiness criteria is only a list, not succession planning.",
+        "d": "Fiscal headcount forecasting is workforce planning; succession targets backups for specific critical jobs."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-014": {
+      "prompt": "HR must compare six supervisor finalists on coaching and shift scheduling, not only interview talk. In this setting, what is an assessment center?",
+      "options": {
+        "a": "One structured panel interview with trained interviewers",
+        "b": "Several job-like exercises scored on defined competencies",
+        "c": "One cognitive test compared with national percentile norms",
+        "d": "An off-site classroom used to train high-potential leaders"
+      },
+      "correctOptionId": "b",
+      "explanation": "An assessment center is a method: multiple job-like exercises (in-basket, role-play, scheduling case) rated by trained assessors against competencies. A single panel interview or a cognitive test is one tool, not an assessment center. The name does not mean a training facility.",
+      "distractorExplanations": {
+        "a": "A structured interview is one method; an assessment center combines several simulations, not a single panel.",
+        "c": "A normed cognitive test is a paper-and-pencil measure, not multiple job simulations scored by assessors.",
+        "d": "Despite the name, an assessment center is an evaluation process, not an off-site leadership school."
+      },
+      "difficulty": "medium"
+    },
+    "phr-hrci-readiness-check-talent-015": {
+      "prompt": "A recruiter drafts 'seeking recent college graduates only' for an analyst job that a 52-year-old applicant fully meets. What should the PHR do?",
+      "options": {
+        "a": "Keep the phrase; it is only a slogan and not an age cutoff",
+        "b": "Add a maximum age of 40 so the preference is explicit",
+        "c": "Drop the age-proxy wording; list job-related qualifications",
+        "d": "Keep it if the team wants a cheaper-to-train incoming cohort"
+      },
+      "correctOptionId": "c",
+      "explanation": "ADEA protects applicants 40 and older. 'Recent graduate' is a classic age proxy in recruiting copy even without an explicit age. PHR practice is to state education, skills, and experience actually required. Training-cost preferences and explicit age caps are not lawful substitutes for job-related qualifications.",
+      "distractorExplanations": {
+        "a": "Courts and EEOC treat 'recent graduate' language as an age signal; calling it a slogan does not remove ADEA risk.",
+        "b": "Stating a maximum age makes the ADEA problem worse; age is not a BFOQ for a typical analyst role.",
+        "d": "Lower training cost is not a defense to age-proxy recruiting; selection must rest on job-related qualifications."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

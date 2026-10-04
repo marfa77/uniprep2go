@@ -3,7 +3,7 @@
     "id": "wastewater-operator-1-readiness-check-process-001",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Primary clarification mainly removes:",
+    "prompt": "On the 6 a.m. round at a 3.2 MGD municipal plant, Primary Clarifier 2 shows a 14-inch sludge blanket and a thick scum raft. Flow then goes to aeration. What is this tank mainly supposed to take out of the wastewater?",
     "options": [
       {
         "id": "a",
@@ -11,36 +11,36 @@
       },
       {
         "id": "b",
-        "text": "Dissolved BOD and ammonia so secondary treatment is not overloaded"
+        "text": "Dissolved BOD and ammonia so the aeration tanks are not loaded"
       },
       {
         "id": "c",
-        "text": "Colloidal solids and pathogens ahead of disinfection"
+        "text": "Colloidal solids and pathogens so chlorine contact is unnecessary"
       },
       {
         "id": "d",
-        "text": "Grit and sand that settle faster than organic solids"
+        "text": "Grit and sand that settle faster than organic solids at the headworks"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Primary tanks take settleable solids and scum; soluble BOD goes to secondary. This item asks: “Primary clarification mainly removes:”. The matching answer is: Settleable solids and floating scum before biological treatment. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Primary clarification is gravity settling plus skimming. Settleable organics drop as primary sludge and fats/oils/grease are skimmed; soluble BOD and ammonia still go to secondary. It is not a grit chamber and does not replace disinfection.",
     "distractorExplanations": {
-      "b": "Soluble BOD and ammonia pass through primary clarifiers; they are removed biologically in secondary treatment.",
-      "c": "Colloids and pathogens are not removed by plain settling; that takes secondary treatment, filtration, and disinfection.",
-      "d": "Grit is removed upstream in grit chambers; primary clarifiers capture lighter settleable organic solids and scum."
+      "b": "Confuses primary settling with secondary biology; dissolved BOD and ammonia pass through the tank.",
+      "c": "Confuses gravity settling with colloid capture and pathogen kill; those need biology and disinfection.",
+      "d": "Confuses the primary tank with the grit chamber, which is upstream and targets heavy inorganics."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-002",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "In activated sludge, mixed liquor suspended solids (MLSS) are:",
+    "prompt": "The lab at Riverside WWTP pulls a mid-basin grab from Aeration Tank 1 at 10:15 for mixed liquor TSS. Operators use the result to set wasting. What does that MLSS number represent?",
     "options": [
       {
         "id": "a",
-        "text": "The solids settled and wasted from the primary clarifier"
+        "text": "The solids settled and wasted from the primary clarifier hoppers"
       },
       {
         "id": "b",
@@ -48,36 +48,36 @@
       },
       {
         "id": "c",
-        "text": "The suspended solids remaining in the final effluent"
+        "text": "The suspended solids remaining in the final plant effluent"
       },
       {
         "id": "d",
-        "text": "The solids concentration pumped back as return sludge"
+        "text": "The solids concentration in the RAS line returning from the clarifier"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "MLSS is the aeration-tank inventory, not a potable-water clearwell number. This item asks: “In activated sludge, mixed liquor suspended solids (MLSS) are:”. The matching answer is: The biomass and solids circulating in the aeration tank. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "MLSS is the aeration-tank inventory of mixed liquor—biomass plus other suspended solids. Operators hold it with RAS and WAS. Primary sludge, effluent TSS, and RAS concentration are related but different samples and purposes.",
     "distractorExplanations": {
-      "a": "That is primary sludge (raw settled solids); MLSS is the biomass and solids in the aeration tank.",
-      "c": "That is effluent TSS, a permit parameter, not the solids inventory circulating in the aeration tank.",
-      "d": "That is RAS concentration, which is thicker than MLSS; MLSS is the mixed liquor in the aeration tank itself."
+      "a": "Confuses MLSS with primary sludge; that hopper solids never mixed in the aeration tank.",
+      "c": "Confuses MLSS with effluent TSS, a permit grab after clarification, not basin inventory.",
+      "d": "Confuses MLSS with RAS; return sludge is thicker underflow, not the mixed liquor itself."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-003",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "A high sludge volume index (SVI) usually means:",
+    "prompt": "After a weekend of high FOG, the 30-minute settleometer at Mill Creek reads 680 mL with MLSS 2,400 mg/L (SVI about 283 mL/g). Secondary blankets are rising. What does that high SVI usually mean?",
     "options": [
       {
         "id": "a",
-        "text": "The mixed liquor settles very quickly, leaving a turbid supernatant"
+        "text": "The mixed liquor settles very quickly, leaving a cloudy supernatant"
       },
       {
         "id": "b",
-        "text": "The aeration tank is overloaded with dissolved oxygen above 4 mg/L"
+        "text": "The aeration tank is simply over-aerated with DO above 4 mg/L"
       },
       {
         "id": "c",
@@ -89,53 +89,53 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "High SVI is a settling/bulking problem, not a drinking-water win. This item asks: “A high sludge volume index (SVI) usually means:”. The matching answer is: The mixed liquor settles poorly and may not compact in the clarifier. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "SVI is settled volume (mL/L) times 1000 divided by MLSS (mg/L). Values well above about 150 mL/g mean bulky, slow-settling floc that holds water, so secondary blankets rise and effluent can carry solids. It is not a DO meter reading.",
     "distractorExplanations": {
-      "a": "Fast settling with a turbid supernatant points to pin floc or old sludge, which typically gives a low SVI.",
-      "b": "SVI measures sludge settleability in mL per gram of solids; it says nothing directly about dissolved oxygen.",
-      "d": "Good compaction and a low blanket correspond to a low-to-normal SVI (roughly 80–150 mL/g), not a high one."
+      "a": "Confuses high SVI with pin floc; fast settle and turbid supernatant usually go with a low SVI.",
+      "b": "Confuses settleability with dissolved oxygen; SVI does not report aeration intensity.",
+      "d": "Confuses high SVI with good compaction; a low blanket matches a low-to-normal SVI."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-004",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Return activated sludge (RAS) is pumped to:",
+    "prompt": "At shift change, RAS Pump 2 is in hand and the operator traces the discharge piping before restoring auto. Where should return activated sludge be sent in this conventional activated-sludge plant?",
     "options": [
       {
         "id": "a",
-        "text": "Return settled biomass from the clarifier to the digester"
+        "text": "From the secondary hopper to the anaerobic digester as wasted solids"
       },
       {
         "id": "b",
-        "text": "Return thickened sludge from the primary clarifier to the headworks"
+        "text": "From the primary clarifier underflow back to the plant headworks"
       },
       {
         "id": "c",
-        "text": "Return clarifier effluent to the head of the aeration tank"
+        "text": "From the secondary weirs as clarified effluent recycled to aeration"
       },
       {
         "id": "d",
-        "text": "Return settled biomass from the clarifier to the aeration tank"
+        "text": "From the secondary hopper back to the aeration tank as seed"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "RAS keeps the aeration tank seeded; it is not sent to drinking water. This item asks: “Return activated sludge (RAS) is pumped to:”. The matching answer is: Return settled biomass from the clarifier to the aeration tank. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "RAS returns settled biomass from the secondary clarifier to the aeration tank so MLSS and SRT can be maintained. WAS is the sidestream to solids handling. Primary underflow and clarified effluent are not RAS.",
     "distractorExplanations": {
-      "a": "Biomass sent to solids handling is waste sludge (WAS); return sludge goes back to the aeration tank.",
-      "b": "RAS comes from the secondary clarifier and returns to aeration, not from the primaries to the headworks.",
-      "c": "Recycling clarified effluent is effluent or internal recycle; RAS is settled biomass, not clear effluent."
+      "a": "Confuses RAS with WAS; biomass sent to digestion is wasted, not returned as seed.",
+      "b": "Confuses RAS with primary sludge recycle; RAS originates in the secondary hopper.",
+      "c": "Confuses RAS with effluent or nitrate recycle; RAS is settled sludge, not weir overflow."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-005",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Waste activated sludge (WAS) is used to:",
+    "prompt": "Solids inventory at Cedar Bend has climbed: MLSS 4,100 mg/L, SRT about 18 days, and the secondary blanket is building. The chief operator wants a shorter SRT. What is wasting (WAS) used for here?",
     "options": [
       {
         "id": "a",
@@ -143,168 +143,168 @@
       },
       {
         "id": "b",
-        "text": "Seed the aeration tank by returning biomass from the clarifier"
+        "text": "Seed the aeration tank by returning hopper sludge from the clarifier"
       },
       {
         "id": "c",
-        "text": "Increase MLSS when the clarifier blanket is too low"
+        "text": "Raise MLSS quickly when the secondary blanket looks too thin"
       },
       {
         "id": "d",
-        "text": "Lower the F/M ratio by removing influent organic load"
+        "text": "Cut influent BOD load so the calculated F/M ratio falls"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "WAS is how operators hold SRT; it is not a fluoride feed. This item asks: “Waste activated sludge (WAS) is used to:”. The matching answer is: Control solids retention time by removing excess biomass. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "WAS removes surplus biomass from the activated-sludge system, which shortens SRT and lowers MLSS. RAS returns solids; wasting does the opposite. Influent BOD is not reduced by opening the WAS valve.",
     "distractorExplanations": {
-      "b": "Returning biomass to seed the aeration tank is the job of RAS; WAS removes excess biomass from the system.",
-      "c": "Wasting lowers MLSS; to raise MLSS the operator reduces the wasting rate.",
-      "d": "Wasting removes biomass, which raises F/M; it does not remove influent BOD."
+      "b": "Confuses WAS with RAS; returning hopper sludge seeds the tank instead of removing mass.",
+      "c": "Confuses wasting with mass-building; more WAS lowers MLSS, it does not raise it.",
+      "d": "Confuses wasting with influent load; WAS removes biomass, which tends to raise F/M."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-006",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "A typical food-to-microorganism (F/M) ratio is:",
+    "prompt": "The process worksheet at Harbor View asks for F/M before the operator changes aeration airflow. Primary effluent BOD is known and a mixed-liquor volatile solids mass is calculated. What is a typical F/M ratio?",
     "options": [
       {
         "id": "a",
-        "text": "The biomass under aeration relative to the organic load fed"
+        "text": "The biomass under aeration divided by the organic load being fed"
       },
       {
         "id": "b",
-        "text": "The organic load fed relative to the biomass under aeration"
+        "text": "The organic load fed divided by the biomass under aeration"
       },
       {
         "id": "c",
-        "text": "The influent flow relative to the aeration tank volume"
+        "text": "The influent flow rate divided by the aeration tank volume"
       },
       {
         "id": "d",
-        "text": "The sludge wasted per day relative to total sludge inventory"
+        "text": "The sludge mass wasted each day divided by the total sludge inventory"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "F/M is an activated-sludge loading ratio. This item asks: “A typical food-to-microorganism (F/M) ratio is:”. The matching answer is: The organic load fed relative to the biomass under aeration. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "F/M is food over microorganisms: pounds of BOD (or COD) applied per day divided by pounds of MLVSS under aeration. Conventional plants often run roughly 0.2–0.5 lb BOD/lb MLVSS·d. Inverse biomass/load, hydraulic detention, and 1/SRT are different ratios.",
     "distractorExplanations": {
-      "a": "That is the inverse ratio; F/M divides the BOD load (food) by the MLVSS mass (microorganisms).",
-      "c": "Flow divided by volume gives the hydraulic loading (inverse of detention time), not the F/M ratio.",
-      "d": "Wasting rate relative to inventory is the inverse of solids retention time, not the food-to-microorganism ratio."
+      "a": "Confuses F/M with its inverse; food is the numerator, MLVSS mass is the denominator.",
+      "c": "Confuses F/M with hydraulic loading (Q/V), which ignores BOD and biomass.",
+      "d": "Confuses F/M with the wasting fraction (1/SRT), which tracks solids age, not food."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-007",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "A trickling filter treats wastewater by:",
+    "prompt": "A satellite 0.6 MGD plant uses a rock-media trickling filter after primary clarification; the operator reports ponding on one quadrant. How does a trickling filter actually treat the wastewater?",
     "options": [
       {
         "id": "a",
-        "text": "Straining solids through fine media in the same way as a sand filter"
+        "text": "By straining solids through the media like a drinking-water sand filter"
       },
       {
         "id": "b",
-        "text": "Keeping suspended biomass mixed with diffused air in an open basin"
+        "text": "By keeping suspended floc mixed with diffused air in an open basin"
       },
       {
         "id": "c",
-        "text": "Passing flow over media so attached biofilm oxidizes organics"
+        "text": "By passing flow over media so attached biofilm oxidizes organics"
       },
       {
         "id": "d",
-        "text": "Holding flow in a pond where algae supply oxygen"
+        "text": "By holding flow in a pond where algae are the main oxygen source"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Trickling filters are attached-growth secondary treatment. This item asks: “A trickling filter treats wastewater by:”. The matching answer is: Passing flow over media so attached biofilm oxidizes organics. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "A trickling filter is attached-growth secondary treatment: wastewater is distributed over media, biofilm oxidizes BOD, and sloughed solids are settled in a following clarifier. Ponding is a media/hydraulic problem, not proof it is a strainer or an activated-sludge tank.",
     "distractorExplanations": {
-      "a": "Trickling filters do not strain solids; treatment is biological oxidation by the biofilm growing on the media.",
-      "b": "That is activated sludge (suspended growth); trickling filters use attached growth on fixed media.",
-      "d": "That describes a stabilization pond or lagoon, not a trickling filter with biofilm-covered media."
+      "a": "Confuses biological media with physical filtration; treatment is oxidation, not straining.",
+      "b": "Confuses attached growth with activated sludge, which suspends floc in aerated mixed liquor.",
+      "d": "Confuses a trickling filter with a lagoon; algae-driven ponds do not use packed media."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-008",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Anaerobic digesters commonly produce:",
+    "prompt": "The mesophilic anaerobic digester at East Fork is at 96°F with a steady gas-holder rise. Operators flare excess gas and pump digested solids to storage. What do anaerobic digesters commonly produce?",
     "options": [
       {
         "id": "a",
-        "text": "Oxygen-rich off-gas plus a thickened sludge"
+        "text": "Oxygen-rich off-gas plus a thickened but still raw sludge"
       },
       {
         "id": "b",
-        "text": "Nitrogen gas from denitrifying the sludge"
+        "text": "Nitrogen gas from denitrifying nitrate in the sludge"
       },
       {
         "id": "c",
-        "text": "Carbon dioxide only, with the sludge mass unchanged"
+        "text": "Carbon dioxide only, with volatile solids mass left unchanged"
       },
       {
         "id": "d",
-        "text": "Methane-rich biogas plus a more stable sludge"
+        "text": "Methane-rich biogas plus a more stable, reduced-VS sludge"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Digesters stabilize sludge and make biogas, not drinking water. This item asks: “Anaerobic digesters commonly produce:”. The matching answer is: Methane-rich biogas plus a more stable sludge. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Anaerobic digestion converts volatile solids to biogas that is typically about 60–70% methane and 30–40% CO2, leaving a more stable sludge. It is not an aerated thickener, an anoxic denitrification tank, or a CO2-only process.",
     "distractorExplanations": {
-      "a": "Anaerobic digesters produce methane and carbon dioxide; no oxygen is generated in an anaerobic process.",
-      "b": "Nitrogen gas comes from anoxic denitrification of nitrate; digesters produce methane-rich biogas.",
-      "c": "Digester gas is roughly 60–70% methane, and digestion destroys volatile solids rather than leaving mass unchanged."
+      "a": "Confuses anaerobic digestion with aeration; no oxygen is generated in a sealed digester.",
+      "b": "Confuses digester gas with BNR denitrification, which reduces nitrate to N2 in anoxic zones.",
+      "c": "Understates the gas mix and VS destruction; methane is the energy fraction and mass drops."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-009",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Secondary (final) clarifiers after aeration are meant to:",
+    "prompt": "Secondary Clarifier 1 at Pine Ridge follows the aeration tanks; weirs feed the chlorine contact basin. Pin floc is starting to leave over the weirs. What is this final clarifier meant to do?",
     "options": [
       {
         "id": "a",
-        "text": "Settle biomass so a clear effluent can go to disinfection"
+        "text": "Settle biomass so a clearer effluent can go to disinfection"
       },
       {
         "id": "b",
-        "text": "Mix raw sewage with potable water"
+        "text": "Blend raw sewage with finished drinking water for reuse"
       },
       {
         "id": "c",
-        "text": "Add fluoride"
+        "text": "Add fluoride as a corrosion-control chemical before discharge"
       },
       {
         "id": "d",
-        "text": "Store recovered refrigerant"
+        "text": "Hold mixed liquor at high DO so nitrifiers finish in the tank"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Final clarifiers separate MLSS from secondary effluent. This item asks: “Secondary (final) clarifiers after aeration are meant to:”. The matching answer is: Settle biomass so a clear effluent can go to disinfection. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Secondary clarifiers separate mixed liquor so settled biomass returns as RAS/WAS and a low-TSS supernatant proceeds to disinfection. They are not potable blending, fluoridation, or aerated reactors.",
     "distractorExplanations": {
-      "b": "“Mix raw sewage with potable water” does not answer “Secondary (final) clarifiers after aeration are meant to:”. The matching answer is: Settle biomass so a clear effluent can go to disinfection.",
-      "c": "“Add fluoride” does not answer “Secondary (final) clarifiers after aeration are meant to:”. The matching answer is: Settle biomass so a clear effluent can go to disinfection.",
-      "d": "“Store recovered refrigerant” does not answer “Secondary (final) clarifiers after aeration are meant to:”. The matching answer is: Settle biomass so a clear effluent can go to disinfection."
+      "b": "Confuses wastewater clarification with potable reuse blending, which is not this unit’s job.",
+      "c": "Confuses a wastewater clarifier with drinking-water fluoridation; fluoride is not added here.",
+      "d": "Confuses a settler with an aeration tank; residual DO in the clarifier is not the nitrification reactor."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-010",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Nitrification in a wastewater plant converts:",
+    "prompt": "Permit ammonia at Lakeview is trending 9 mg/L as N while BOD is in range. Aeration DO is 0.6 mg/L and SRT is only 3 days. The operator is told to restore nitrification. What conversion is nitrification?",
     "options": [
       {
         "id": "a",
-        "text": "Nitrate to nitrogen gas in an anoxic zone"
+        "text": "Nitrate to nitrogen gas in an anoxic selector"
       },
       {
         "id": "b",
@@ -312,7 +312,7 @@
       },
       {
         "id": "c",
-        "text": "Organic nitrogen to ammonia during digestion"
+        "text": "Organic nitrogen to ammonia during anaerobic digestion"
       },
       {
         "id": "d",
@@ -320,86 +320,86 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Nitrification is aerobic ammonia oxidation — a wastewater process goal. This item asks: “Nitrification in a wastewater plant converts:”. The matching answer is: Ammonia to nitrite and then nitrate under aeration. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Nitrification is aerobic oxidation of ammonia to nitrite then nitrate by autotrophs that need adequate DO, SRT, and alkalinity. Denitrification, ammonification, and shortcut N2 in a clarifier are different steps. Low DO and a 3-day SRT commonly wash nitrifiers out.",
     "distractorExplanations": {
-      "a": "That is denitrification; nitrification is the aerobic oxidation of ammonia to nitrite and nitrate.",
-      "c": "That is ammonification (hydrolysis of organic nitrogen); nitrification starts from ammonia.",
-      "d": "Conventional nitrification yields nitrate, not nitrogen gas, and occurs in the aerated basin, not the clarifier."
+      "a": "Confuses nitrification with denitrification, which reduces nitrate to N2 without free oxygen.",
+      "c": "Confuses nitrification with ammonification; digestion releases ammonia, it does not oxidize it.",
+      "d": "Confuses conventional nitrification with anammox or denitrification; clarifiers are not the reactor."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-011",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Denitrification in an anoxic zone converts nitrate to:",
+    "prompt": "The MLE plant at Southgate recycles nitrified mixed liquor to an unaerated anoxic zone ahead of aeration. Total nitrogen in the effluent dropped after the recycle pump was repaired. What does denitrification in that zone convert nitrate to?",
     "options": [
       {
         "id": "a",
-        "text": "Ammonia, which is then removed by aeration"
+        "text": "Ammonia, which aeration then strips from the mixed liquor"
       },
       {
         "id": "b",
-        "text": "Nitrite, which then exits as the final effluent form"
+        "text": "Nitrite that is intended to remain as the final effluent form"
       },
       {
         "id": "c",
-        "text": "Nitrogen gas, reducing total nitrogen in the effluent"
+        "text": "Nitrogen gas, which leaves the liquid and lowers total nitrogen"
       },
       {
         "id": "d",
-        "text": "Organic nitrogen, removed with the waste sludge"
+        "text": "Organic nitrogen that is then wasted with the WAS stream"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Anoxic denitrification is a BNR step, not chlorination. This item asks: “Denitrification in an anoxic zone converts nitrate to:”. The matching answer is: Nitrogen gas, reducing total nitrogen in the effluent. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "In an anoxic zone, heterotrophs use nitrate as an electron acceptor and reduce it to N2 gas, cutting effluent total nitrogen. They need a carbon source and no free DO. The product is not ammonia, leftover nitrite, or organic-N sludge.",
     "distractorExplanations": {
-      "a": "Reducing nitrate back to ammonia is not denitrification; denitrifiers reduce nitrate to nitrogen gas.",
-      "b": "Nitrite is only a transient intermediate; complete denitrification carries nitrate all the way to nitrogen gas.",
-      "d": "Nitrate is not converted to organic nitrogen; heterotrophs use it as an electron acceptor and release N2 gas."
+      "a": "Confuses denitrification with dissimilatory reduction to ammonia; the BNR goal is N2 gas.",
+      "b": "Treats nitrite as the endpoint; nitrite is only a brief intermediate on the way to N2.",
+      "d": "Confuses nitrate respiration with biosorption of organic nitrogen into WAS."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-012",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "A bar screen at the headworks removes:",
+    "prompt": "Influent pumps at North Interceptor trip on high amps after a storm. The operator finds the mechanically cleaned bar screen bypassed and rags wrapped on the impeller. What is that bar screen at the headworks supposed to remove?",
     "options": [
       {
         "id": "a",
-        "text": "Sand and grit that would abrade pumps"
+        "text": "Sand and grit that would abrade the pump volutes"
       },
       {
         "id": "b",
-        "text": "Floating grease and scum ahead of the clarifier"
+        "text": "Floating grease and scum ahead of the primary tanks"
       },
       {
         "id": "c",
-        "text": "Settleable organic solids before aeration"
+        "text": "Settleable organic solids that belong in primary sludge"
       },
       {
         "id": "d",
-        "text": "Rags and large debris that would damage pumps"
+        "text": "Rags and large debris that would damage pumps and mixers"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Preliminary treatment is mechanical debris removal. This item asks: “A bar screen at the headworks removes:”. The matching answer is: Rags and large debris that would damage pumps. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Bar screens are preliminary treatment: they intercept rags, sticks, and trash so pumps and downstream equipment are protected. Grit, scum, and settleable organics are removed in later units designed for those fractions.",
     "distractorExplanations": {
-      "a": "Grit is removed in grit chambers after screening; bar screens catch rags and large debris.",
-      "b": "Scum is skimmed in clarifiers or grease traps; bar screens remove rags and coarse solids.",
-      "c": "Settleable organics are removed in primary clarifiers, not by bar screens at the headworks."
+      "a": "Confuses screening with grit removal; inorganics settle in the grit chamber after the screen.",
+      "b": "Confuses screens with scum skimmers or grease traps on the clarifiers.",
+      "c": "Confuses screens with primary clarification, where settleable organics are intended to drop out."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-013",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Grit chambers are designed to settle:",
+    "prompt": "A new operator slows the aerated grit chamber at West Branch until organics start dropping with the sand, and the dumpster smells septic. How should a grit chamber be designed to settle solids?",
     "options": [
       {
         "id": "a",
@@ -407,1576 +407,1576 @@
       },
       {
         "id": "b",
-        "text": "Light organic solids while letting heavy grit pass to the primaries"
+        "text": "Light organic solids while sending heavy grit on to the primaries"
       },
       {
         "id": "c",
-        "text": "Heavy inorganic grit along with most settleable organics"
+        "text": "Heavy grit together with most of the settleable organic solids"
       },
       {
         "id": "d",
-        "text": "Fine colloids by slowing velocity to under 0.1 ft/s"
+        "text": "Fine colloids by holding velocity under about 0.1 ft/s"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Grit is inorganic; organics should stay in process flow. This item asks: “Grit chambers are designed to settle:”. The matching answer is: Heavy inorganic grit (sand, eggshells) while keeping organics in suspension. Independent UniPrep diagnostic — not an official NATE or state operator paper. Grit includes sand and eggshells.",
+    "explanation": "Grit chambers target dense inorganics (sand, eggshells, cinders) at a velocity near 1 ft/s so lighter organics stay in the flow to primary and secondary treatment. Too-slow velocity makes putrescible, odorous grit and steals BOD from the plant.",
     "distractorExplanations": {
-      "b": "Reverses the design: grit chambers settle heavy inorganics and keep lighter organics moving downstream.",
-      "c": "Settling organics in a grit chamber produces odorous, putrescible grit; organics should stay in suspension.",
-      "d": "Grit chambers hold about 1 ft/s so organics stay suspended; colloids do not settle in a grit chamber."
+      "b": "Reverses the design intent; grit should drop here and organics should continue downstream.",
+      "c": "Describes over-settling; capturing organics with grit creates odor and wastes food for biology.",
+      "d": "Confuses grit removal with colloid settling; 0.1 ft/s is far too slow and not the grit target."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-014",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "A rotating biological contactor (RBC) is:",
+    "prompt": "Package Plant B uses covered rotating biological contactors after primary settling. One shaft is down and the media looks dry on the top third. What is an RBC in this Class 1 plant?",
     "options": [
       {
         "id": "a",
-        "text": "A suspended-growth basin mixed by rotating paddles"
+        "text": "A suspended-growth basin mixed by rotating paddle aerators"
       },
       {
         "id": "b",
-        "text": "Attached-growth media shafts that rotate through wastewater"
+        "text": "Attached-growth media shafts that rotate through the wastewater"
       },
       {
         "id": "c",
-        "text": "A rotating clarifier rake that scrapes settled sludge"
+        "text": "A rotating clarifier rake that scrapes settled sludge to a hopper"
       },
       {
         "id": "d",
-        "text": "Rotating drum screens that remove fine solids at the plant headworks"
+        "text": "Rotating drum screens that remove fine solids at the headworks"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "RBCs are a secondary attached-growth process. This item asks: “A rotating biological contactor (RBC) is:”. The matching answer is: Attached-growth media shafts that rotate through wastewater. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "An RBC is attached-growth secondary treatment: plastic media on a horizontal shaft rotate so biofilm is alternately submerged and exposed to air, oxidizing organics. It is not activated sludge, a clarifier collector, or a drum screen.",
     "distractorExplanations": {
-      "a": "RBCs are attached-growth units; suspended growth with mixing describes activated sludge.",
-      "c": "That is a clarifier sludge collector mechanism, not a biological treatment unit.",
-      "d": "Drum screens are preliminary treatment; RBC discs carry biofilm that oxidizes organics in secondary treatment."
+      "a": "Confuses RBC discs with paddle-mixed suspended growth; floc is not the main biomass form.",
+      "c": "Confuses the biological unit with a sludge-collection mechanism in a clarifier.",
+      "d": "Confuses RBCs with preliminary drum screens; discs carry biofilm, they do not strain rags."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-process-015",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "process",
-    "prompt": "Pond/lagoon treatment relies mainly on:",
+    "prompt": "A 0.2 MGD facultative lagoon serving a small town has a 20-day detention time, a green surface, and no RAS pumps. The operator is asked what treatment actually relies on. What is the main mechanism?",
     "options": [
       {
         "id": "a",
-        "text": "Short detention with mechanical aeration and sludge return"
+        "text": "Short detention with mechanical aeration and continuous sludge return"
       },
       {
         "id": "b",
-        "text": "Chemical coagulation and settling of suspended solids"
+        "text": "Chemical coagulation and settling of suspended solids as the main step"
       },
       {
         "id": "c",
-        "text": "Long detention, algae, and bacteria to stabilize organics"
+        "text": "Long detention with algae and bacteria working to stabilize organics"
       },
       {
         "id": "d",
-        "text": "Anaerobic digestion of thickened sludge in heated tanks"
+        "text": "Heated anaerobic digestion of thickened sludge in mixed tanks"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Lagoons are long-HRT biological systems, not potable filters. This item asks: “Pond/lagoon treatment relies mainly on:”. The matching answer is: Long detention, algae, and bacteria to stabilize organics. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Facultative ponds treat wastewater with long hydraulic detention: bacteria oxidize organics and algae supply oxygen in the upper layer. There is no RAS loop like activated sludge, and it is not a coagulant plant or a heated sludge digester.",
     "distractorExplanations": {
-      "a": "That describes activated sludge; lagoons rely on long detention without sludge return.",
-      "b": "Lagoons are biological systems; coagulation and settling is a physical-chemical process.",
-      "d": "Heated digesters treat sludge; ponds treat wastewater through algae-bacteria activity over long detention."
+      "a": "Confuses a lagoon with activated sludge, which uses short HRT, air, and RAS.",
+      "b": "Confuses biological pond treatment with physical-chemical coagulation.",
+      "d": "Confuses the pond with a sludge digester; the lagoon treats dilute wastewater, not thickened cake."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-016",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "Hydrogen sulfide in a wet well is dangerous because it is:",
+    "prompt": "An operator opens a wet-well hatch, smells rotten eggs, then loses the odor after a minute. What does that fading smell actually mean?",
     "options": [
       {
         "id": "a",
-        "text": "Toxic only at levels above 1,000 ppm, well beyond sewer readings"
+        "text": "H2S is toxic only above 1,000 ppm, so a fading odor means the well is now safe"
       },
       {
         "id": "b",
-        "text": "Heavier than air but not flammable at sewer concentrations"
+        "text": "H2S is heavier than air but is not flammable at typical sewer concentrations"
       },
       {
         "id": "c",
-        "text": "Detectable by its rotten-egg smell at every dangerous level"
+        "text": "The nose remains a reliable alarm at IDLH levels if the operator waits a minute"
       },
       {
         "id": "d",
-        "text": "Toxic, flammable, and can deaden smell at high concentration"
+        "text": "H2S is toxic and flammable, and high levels can paralyze the sense of smell"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "H2S kills and explodes; do not trust a faded odor. This item asks: “Hydrogen sulfide in a wet well is dangerous because it is:”. The matching answer is: Toxic, flammable, and can deaden smell at high concentration. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Hydrogen sulfide is toxic at low ppm, immediately dangerous around 100 ppm, and flammable (LEL near 4%). Olfactory fatigue can wipe out the rotten-egg warning while the gas is still lethal, so atmosphere is judged with a meter, not the nose.",
     "distractorExplanations": {
-      "a": "H2S is immediately dangerous to life at 100 ppm and sewers can exceed that; harm starts far below 1,000 ppm.",
-      "b": "H2S is heavier than air but also flammable (LEL about 4%), so it is an explosion hazard as well as toxic.",
-      "c": "Olfactory fatigue deadens the sense of smell around 100 ppm, so odor cannot be trusted at dangerous levels."
+      "a": "Harm starts far below 1,000 ppm; IDLH is about 100 ppm and sewers can exceed that, so fading odor is not a clearance.",
+      "b": "H2S is denser than air and also flammable, so it is both a toxic pocket hazard and an explosion hazard.",
+      "c": "Smell is lost by olfactory fatigue near dangerous concentrations; waiting makes the warning worse, not better."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-017",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "Entering a pump station wet well is usually:",
+    "prompt": "A crew must drop into a lift-station wet well to pull a clogged submersible pump. How should they classify and control that entry?",
     "options": [
       {
         "id": "a",
-        "text": "A confined-space entry with atmosphere testing and a rescue plan"
+        "text": "Permit-required confined space: test, ventilate, attendant, and a rescue plan"
       },
       {
         "id": "b",
-        "text": "A routine entry once the hatch has been open and vented for 10 minutes"
+        "text": "Routine once the hatch has stood open for ten minutes of natural ventilation"
       },
       {
         "id": "c",
-        "text": "A confined-space entry with a single pre-entry test and no attendant"
+        "text": "One pre-entry four-gas snapshot is enough; no attendant is required outside"
       },
       {
         "id": "d",
-        "text": "A hot-work permit task with a fire watch and an extinguisher"
+        "text": "Treat it as hot work only: a fire watch and extinguisher satisfy the permit"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Wet wells are permit-required confined spaces. This item asks: “Entering a pump station wet well is usually:”. The matching answer is: A confined-space entry with atmosphere testing, ventilation, and a rescue plan. Independent UniPrep diagnostic — not an official NATE or state operator paper. Ventilation is part of the entry plan.",
+    "explanation": "Wet wells are permit-required confined spaces: limited entry, poor natural ventilation, and a real H2S/O2/LEL hazard. OSHA-style practice is atmospheric testing, ventilation, an attendant, and a rescue plan before anyone goes in.",
     "distractorExplanations": {
-      "b": "Natural venting does not reliably clear H2S or oxygen deficiency; testing, a permit, and continuous monitoring are required.",
-      "c": "Permit spaces need continuous or periodic monitoring and an attendant stationed outside, not one test.",
-      "d": "Hot work is a separate permit; a wet well needs confined-space atmosphere testing, ventilation, and rescue."
+      "b": "Ten minutes of open-hatch venting does not reliably clear stratified H2S or restore oxygen; meters and a permit still apply.",
+      "c": "A single snapshot misses changing atmospheres; permit spaces need monitoring and an attendant stationed outside.",
+      "d": "Hot work is a separate permit. A wet well still needs confined-space atmosphere control and rescue, even if no torch is used."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-018",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "A combustible-gas meter in a digester gallery is used to:",
+    "prompt": "In a covered digester-gas piping gallery, the portable meter’s combustible channel climbs toward 10% LEL. What is that sensor actually warning about?",
     "options": [
       {
         "id": "a",
-        "text": "Measure oxygen levels before entry"
+        "text": "Oxygen deficiency that a dedicated O2 channel is not designed to detect"
       },
       {
         "id": "b",
-        "text": "Warn of methane before a spark or entry"
+        "text": "Flammable methane approaching the lower explosive limit before a spark or entry"
       },
       {
         "id": "c",
-        "text": "Detect hydrogen sulfide toxicity levels in ppm"
+        "text": "Hydrogen sulfide toxicity in parts per million on the combustible channel"
       },
       {
         "id": "d",
-        "text": "Measure digester gas production rate"
+        "text": "Digester gas production rate in cubic feet per day for process control"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Methane plus ignition is an explosion hazard. This item asks: “A combustible-gas meter in a digester gallery is used to:”. The matching answer is: Warn of methane before a spark or entry. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "The combustible (%LEL) sensor tracks flammable gas—typically methane in digester galleries—so crews can stop ignition sources and leave before the mixture reaches the explosive range. It is not a process gas-flow meter or a toxic-ppm channel.",
     "distractorExplanations": {
-      "a": "Oxygen is read on a separate O2 sensor; the combustible sensor reads %LEL of gases such as methane.",
-      "c": "H2S toxicity needs a dedicated toxic H2S sensor reading in ppm; a combustible-gas sensor reads %LEL of gases such as methane.",
-      "d": "Gas production is measured with a gas flow meter, not a portable combustible-gas meter."
+      "a": "Oxygen is read on a separate O2 sensor; the combustible channel reports %LEL of fuel gas, not oxygen displacement.",
+      "c": "H2S toxicity is a ppm toxic sensor. A combustible cell reading %LEL of methane does not quantify H2S dose.",
+      "d": "Gas production is a process flow measurement. A portable LEL meter does not report cubic feet per day."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-019",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "Chlorine gas leak response at a wastewater plant starts with:",
+    "prompt": "The chlorine-gas detector alarms at the ton-container room while an operator is on rounds. What is the first correct action?",
     "options": [
       {
         "id": "a",
-        "text": "Spraying water into the ton container valve for fun"
+        "text": "Enter at once with a half-face cartridge respirator to close the container valve"
       },
       {
         "id": "b",
-        "text": "Holding your breath and closing valves by feel"
+        "text": "Wait until the odor fades, then walk in without respiratory protection"
       },
       {
         "id": "c",
-        "text": "Upwind evacuation, SCBA-trained responders, and the emergency plan"
+        "text": "Evacuate upwind, keep others out, and call SCBA-trained responders per the ERP"
       },
       {
         "id": "d",
-        "text": "Using the leak as disinfection for the office"
+        "text": "Spray plant water into the ton-container valve so residual chlorine dissolves"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Cl2 leaks are immediately dangerous — plan and PPE first. This item asks: “Chlorine gas leak response at a wastewater plant starts with:”. The matching answer is: Upwind evacuation, SCBA-trained responders, and the emergency plan. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Chlorine gas is immediately dangerous. Untrained staff evacuate upwind, deny entry, and activate the emergency response plan so people with SCBA and leak kits handle isolation. Cartridge respirators, odor, and water on a valve are not a first-step leak stop.",
     "distractorExplanations": {
-      "a": "“Spraying water into the ton container valve for fun” does not answer “Chlorine gas leak response at a wastewater plant starts with:”. The matching answer is: Upwind evacuation, SCBA-trained responders, and the emergency plan.",
-      "b": "“Holding your breath and closing valves by feel” does not answer “Chlorine gas leak response at a wastewater plant starts with:”. The matching answer is: Upwind evacuation, SCBA-trained responders, and the emergency plan.",
-      "d": "“Using the leak as disinfection for the office” does not answer “Chlorine gas leak response at a wastewater plant starts with:”. The matching answer is: Upwind evacuation, SCBA-trained responders, and the emergency plan."
+      "a": "A half-face cartridge is not adequate for an unknown Cl2 release; entry waits for SCBA-trained responders.",
+      "b": "Fading odor can mean olfactory overload or a shifting plume, not a safe room; do not re-enter unprotected.",
+      "d": "Water into a container valve can worsen a leak and is not the first action; evacuate and follow the ERP."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-020",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "A lockout on a screw press or clarifier drive must:",
+    "prompt": "Rags are jammed in a screw-press auger that can still start from the MCC or a local jog button. Before reaching into the flight, the operator must:",
     "options": [
       {
         "id": "a",
-        "text": "Be a note on the whiteboard"
+        "text": "Post an out-of-service note on the whiteboard and start pulling rags by hand"
       },
       {
         "id": "b",
-        "text": "Wait until after someone is caught in the flight"
+        "text": "Jog the press from the local station to confirm it is empty, then reach in"
       },
       {
         "id": "c",
-        "text": "Apply only to drinking-water high-service pumps"
+        "text": "Skip LOTO because wastewater dewatering equipment is exempt from energy-isolation rules"
       },
       {
         "id": "d",
-        "text": "Isolate energy and hold a personal lock before reaching into moving parts"
+        "text": "Isolate energy sources and apply a personal lock before reaching into the flight"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "LOTO is the same principle on any rotating equipment. This item asks: “A lockout on a screw press or clarifier drive must:”. The matching answer is: Isolate energy and hold a personal lock before reaching into moving parts. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "LOTO applies to any machine that can store or receive energy, including screw presses and clarifier drives. Isolate electrical (and hydraulic if present) energy, lock with a personal lock, and verify zero energy before hands go near the auger.",
     "distractorExplanations": {
-      "a": "“Be a note on the whiteboard only” does not answer “A lockout on a screw press or clarifier drive must:”. The matching answer is: Isolate energy and hold a personal lock before reaching into moving parts.",
-      "b": "“Wait until after someone is caught in the flight” does not answer “A lockout on a screw press or clarifier drive must:”. The matching answer is: Isolate energy and hold a personal lock before reaching into moving parts.",
-      "c": "“Apply only to drinking-water high-service pumps” does not answer “A lockout on a screw press or clarifier drive must:”. The matching answer is: Isolate energy and hold a personal lock before reaching into moving parts."
+      "a": "A whiteboard note does not prevent a remote start. Energy isolation and a personal lock are required.",
+      "b": "Jogging proves the machine can still move; it is the opposite of a zero-energy check before reaching in.",
+      "c": "Wastewater rotating equipment is not exempt from OSHA LOTO; dewatering presses are a classic entanglement source."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-021",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "Fall protection on a clarifier bridge is required because:",
+    "prompt": "An operator walks a secondary clarifier bridge to scrape weirs and sample the effluent launder. Why is fall protection required on that walk?",
     "options": [
       {
         "id": "a",
-        "text": "Open water and moving equipment can kill a slip"
+        "text": "Open water and moving collectors can drown or entangle a person who slips"
       },
       {
         "id": "b",
-        "text": "OSHA requires it only above 10 feet of height"
+        "text": "OSHA general industry triggers fall protection only above a 10-foot drop"
       },
       {
         "id": "c",
-        "text": "Bridge railings exist mainly to protect the drive"
+        "text": "Bridge railings exist mainly to keep dropped tools from damaging the drive"
       },
       {
         "id": "d",
-        "text": "Clarifier water is shallow enough to stand in"
+        "text": "Clarifier water is typically shallow enough that a fall is only a wading event"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Bridges need rails/PFAS discipline — do not treat them as sidewalks. This item asks: “Fall protection on a clarifier bridge is required because:”. The matching answer is: Open water and moving equipment can kill a slip. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Clarifier bridges sit over deep tanks with sludge and rotating collectors. A slip can drown or entangle someone even when the walkway looks like a sidewalk, so rails, gates, and PFAS discipline are required.",
     "distractorExplanations": {
-      "b": "OSHA general industry triggers fall protection at 4 feet, and drowning risk over open tanks exists at any height.",
-      "c": "Railings and fall protection protect people from falling into tanks and moving mechanisms, not the drive unit.",
-      "d": "Clarifiers are often 10–16 feet deep with sludge and moving collectors; a fall can drown or entangle."
+      "b": "General-industry walking-working surfaces trigger at 4 feet, and drowning risk over open tanks exists below any 10-foot myth.",
+      "c": "Guardrails and fall systems protect people, not the drive gearbox, from a fall into the tank.",
+      "d": "Secondary clarifiers are often 10–16 feet deep with sludge; a fall is a drowning and entanglement emergency, not wading."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-022",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "An oxygen-deficient atmosphere in a manhole is often from:",
+    "prompt": "Before a collection-system manhole entry, the four-gas meter reads 16.2% oxygen. What most often causes that oxygen-deficient atmosphere?",
     "options": [
       {
         "id": "a",
-        "text": "Chlorine residual from upstream disinfection reacting with the oxygen"
+        "text": "Residual chlorine from plant disinfection consuming oxygen in the collection system"
       },
       {
         "id": "b",
-        "text": "Displacement by other gases or biological oxygen demand in the sewer"
+        "text": "Microbial demand and displacement by sewer gases such as methane or carbon dioxide"
       },
       {
         "id": "c",
-        "text": "Air pressure drop caused by the depth of the manhole below grade"
+        "text": "Lower oxygen percentage simply because the manhole shaft is several feet below grade"
       },
       {
         "id": "d",
-        "text": "Oxygen escaping because the cover was left off overnight"
+        "text": "Overnight lid removal letting oxygen drain out of the shaft like a liquid"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Sewers consume and displace oxygen — test before entry. This item asks: “An oxygen-deficient atmosphere in a manhole is often from:”. The matching answer is: Displacement by other gases or biological oxygen demand in the sewer. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Sewers go oxygen-deficient when microbes consume O2 and when methane, CO2, or other gases displace air. That is why operators test at several depths before entry rather than assuming outdoor air continues underground.",
     "distractorExplanations": {
-      "a": "Sewers carry little chlorine; oxygen loss comes from microbial consumption and displacement by sewer gases.",
-      "c": "Manhole depth does not meaningfully change oxygen percentage; displacement and microbial demand do.",
-      "d": "An open cover increases air exchange; deficiency comes from consumption and displacement inside the sewer."
+      "a": "Collection systems carry little free chlorine; oxygen loss is biological demand and gas displacement, not Cl2 residual.",
+      "c": "Depth does not change the 20.9% oxygen fraction of air; deficiency comes from consumption and displacement inside the sewer.",
+      "d": "An open cover increases air exchange. Deficiency develops in poorly ventilated, biologically active spaces, not from oxygen pouring out."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-023",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "UV disinfection modules should be serviced:",
+    "prompt": "UV lamp sleeves in the disinfection channel need wiping. Which service method protects the operator from UV-C and shock?",
     "options": [
       {
         "id": "a",
-        "text": "Energized, so lamp output can be checked by eye during cleaning"
+        "text": "Leave lamps energized so output can be judged by looking directly at the arc"
       },
       {
         "id": "b",
-        "text": "De-energized at the panel switch, with standard safety glasses only"
+        "text": "Flip the local panel switch and wear ordinary safety glasses as the only PPE"
       },
       {
         "id": "c",
-        "text": "De-energized, with eye/skin protection against UV and electrical lockout"
+        "text": "Lock out electrical energy and wear UV-rated eye and skin protection for the job"
       },
       {
         "id": "d",
-        "text": "After draining the channel, with lamps left on to dry the sleeves"
+        "text": "Drain the channel but leave the lamps on so waste heat dries the quartz sleeves faster"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "UV and line voltage both injure — isolate first. This item asks: “UV disinfection modules should be serviced:”. The matching answer is: De-energized, with eye/skin protection against UV and electrical lockout. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "UV-C burns eyes and skin, and the racks carry line voltage. Isolate and lock out the electrical supply, then use UV-rated eye and skin protection in case of residual lamps or adjacent banks. Looking at an arc or a switch-without-lock is not service.",
     "distractorExplanations": {
-      "a": "UV-C burns eyes and skin and live voltage is a shock hazard; lockout and UV-rated protection are required.",
-      "b": "A switch is not lockout/tagout, and ordinary glasses may not block UV-C; full LOTO and UV-rated PPE are needed.",
-      "d": "Lamps must be de-energized for service; running lamps out of water overheats them and exposes staff to UV."
+      "a": "Viewing an energized UV arc can cause photokeratitis and skin burns; output is checked with instruments after isolation.",
+      "b": "A switch without a lock can be re-energized by someone else, and ordinary glasses may not block UV-C.",
+      "d": "Running lamps out of water overheats the lamps and exposes staff to UV; they must be de-energized for dry service."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-024",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "A sudden floating blanket on an anaerobic digester may signal:",
+    "prompt": "Overnight, a thick floating blanket appears on the anaerobic digester. What is the safe operations response?",
     "options": [
       {
         "id": "a",
-        "text": "Normal mixing — continue routine walks on the cover"
+        "text": "Treat it as normal mixing and continue walking the floating cover on rounds"
       },
       {
         "id": "b",
-        "text": "Gas production has stopped, so the cover is safe to open"
+        "text": "Assume gas production has stopped, so the cover can be opened for a look"
       },
       {
         "id": "c",
-        "text": "Overheating — shut off the mixers and add cold water to the digester"
+        "text": "Stop the mixers and add cold plant water immediately to collapse the foam layer"
       },
       {
         "id": "d",
-        "text": "Foaming or a process upset — stay off the cover and follow the SOP"
+        "text": "Treat it as foaming or upset: stay off the cover and follow the plant SOP"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Digester covers and foam are gas and fall hazards. This item asks: “A sudden floating blanket on an anaerobic digester may signal:”. The matching answer is: Foaming or a process upset — stay off the cover and follow the SOP. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "A sudden blanket often means foaming or a process upset. Floating covers become slick, gassy fall hazards. Operators stay off the cover, keep ignition sources away, and follow the plant SOP rather than improvising mixer or water changes from the deck.",
     "distractorExplanations": {
-      "a": "A sudden blanket signals foaming or upset; walking a floating cover risks gas exposure and falls.",
-      "b": "Gas may still be present; opening a digester cover can create an explosive air-methane mixture.",
-      "c": "Shutting off mixing worsens stratification and scum; the operator should stay off the cover and follow the SOP."
+      "a": "A sudden blanket is not normal mixing; walking a foaming cover risks H2S/methane exposure and a fall.",
+      "b": "Gas may still be present. Opening a cover can mix methane with air into the explosive range.",
+      "c": "Killing mixers can worsen scum and stratification; cold-water dumps are not a default from the cover without the SOP."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-025",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "Hearing protection is needed around:",
+    "prompt": "Which wastewater-plant locations typically require hearing protection under an OSHA noise program?",
     "options": [
       {
         "id": "a",
-        "text": "Blowers, pumps, and generators that exceed the plant’s noise policy"
+        "text": "Blower rooms, large pumps, and generators that exceed the plant noise policy"
       },
       {
         "id": "b",
-        "text": "The lab fume hood and autoclave during routine tests"
+        "text": "The process lab fume hood and autoclave during routine BOD sample setup"
       },
       {
         "id": "c",
-        "text": "Blowers only when noise exceeds 115 dBA at any point during the work shift"
+        "text": "Blowers only when instantaneous noise exceeds 115 dBA at some point in the shift"
       },
       {
         "id": "d",
-        "text": "Outdoor clarifiers and aeration tanks, mainly during windy weather"
+        "text": "Outdoor clarifier walkways, mainly on windy days over open water surfaces"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Blower rooms routinely exceed 85 dBA. This item asks: “Hearing protection is needed around:”. The matching answer is: Blowers, pumps, and generators that exceed the plant’s noise policy. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Positive-displacement blowers, large pumps, and standby generators routinely exceed the 85 dBA 8-hour action level. Plants post those rooms and require hearing protection there; lab hoods and open clarifiers are not the typical high-noise sources.",
     "distractorExplanations": {
-      "b": "Lab equipment is usually below 85 dBA; blowers, pumps, and generators drive hearing-protection needs.",
-      "c": "The OSHA action level is 85 dBA as an 8-hour TWA; 115 dBA is the old ceiling limit, not the hearing-protection trigger, and pumps count too.",
-      "d": "Clarifiers and basins are not high-noise sources; enclosed blower and pump rooms are."
+      "b": "Lab equipment is usually well below 85 dBA TWA; hearing conservation is driven by mechanical rooms, not BOD setup.",
+      "c": "115 dBA is a ceiling/impact concern, not the hearing-protection trigger; the action level is 85 dBA TWA, and pumps count too.",
+      "d": "Open tanks are not high-noise sources. Enclosed blower and pump rooms are."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-026",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "A chemical splash of polymer or hypochlorite requires:",
+    "prompt": "Sodium hypochlorite splashes into an operator’s eyes at the chemical-feed pumps. What is the correct immediate care?",
     "options": [
       {
         "id": "a",
-        "text": "Neutralizing hypochlorite with an acid rinse"
+        "text": "Neutralize residual hypochlorite with a weak acid rinse, then read the SDS"
       },
       {
         "id": "b",
-        "text": "Eyewash/shower and the SDS-directed first aid"
+        "text": "Use the eyewash for at least 15 minutes and follow the SDS first-aid steps"
       },
       {
         "id": "c",
-        "text": "A brief 2-minute rinse, then return to work"
+        "text": "Rinse for about two minutes, then return to the round if vision seems clear"
       },
       {
         "id": "d",
-        "text": "Wiping the area dry before rinsing with water"
+        "text": "Wipe the face dry with a rag before water so the chemical does not spread"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "SDS plus eyewash — do not home-brew chemistry in a face. This item asks: “A chemical splash of polymer or hypochlorite requires:”. The matching answer is: Eyewash/shower and the SDS-directed first aid. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Corrosive splashes are flushed at the eyewash or safety shower for at least 15 minutes, then SDS-directed medical follow-up. Do not neutralize chemicals on tissue; acid plus hypochlorite can release chlorine gas.",
     "distractorExplanations": {
-      "a": "Splashes are flushed, not neutralized on tissue, and acid on hypochlorite releases chlorine gas.",
-      "c": "Chemical splashes need at least 15 minutes of flushing plus SDS-directed follow-up, not a brief rinse.",
-      "d": "Delay and wiping spread the chemical; flush immediately with the eyewash or safety shower."
+      "a": "Neutralizing on the eye with acid can burn further and can generate chlorine gas from hypochlorite.",
+      "c": "Two minutes is too short; chemical eye exposures need a long flush (typically 15 minutes) before assuming vision is fine.",
+      "d": "Wiping delays dilution and smears the chemical; start water immediately at the eyewash."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-027",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "Traffic control around an open manhole in the street is:",
+    "prompt": "A collection crew opens a manhole in a residential street to jet a grease blockage. What traffic control is required?",
     "options": [
       {
         "id": "a",
-        "text": "Optional if the job takes under 15 minutes"
+        "text": "Optional if the stop is expected to last under fifteen minutes on a quiet street"
       },
       {
         "id": "b",
-        "text": "Covered by parking the truck with hazard lights on"
+        "text": "Satisfied by parking the vactor over the hole with four-way flashers and a cone"
       },
       {
         "id": "c",
-        "text": "Required so the public and the crew are not hit"
+        "text": "Required work-zone control so traffic cannot strike the crew or the open hole"
       },
       {
         "id": "d",
-        "text": "Required on highways but not on residential streets"
+        "text": "Required on state highways only, not on low-speed residential neighborhood streets"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Collection-system work is still a work zone. This item asks: “Traffic control around an open manhole in the street is:”. The matching answer is: Required so the public and the crew are not hit. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "An open manhole is a work zone on a public way. MUTCD temporary traffic control (signs, cones, vehicle positioning, flaggers as needed) protects the public and the crew from struck-by incidents on residential streets as well as highways.",
     "distractorExplanations": {
-      "a": "Short-duration work still needs traffic control per the MUTCD; struck-by incidents happen quickly.",
-      "b": "A truck with flashers is not a work-zone setup; cones, signs, and flaggers per the MUTCD are needed.",
-      "d": "Traffic control applies on any public roadway where traffic passes the work area, including residential streets."
+      "a": "Short-duration work still needs traffic control; struck-by events happen in seconds, not after a 15-minute threshold.",
+      "b": "Flashers and one cone are not a work-zone setup; advance warning and a taper or shadow vehicle are still required.",
+      "d": "Residential streets still have traffic. Control applies wherever vehicles can hit the hole or the crew."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-028",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "If an operator feels dizzy over a wet well, they should:",
+    "prompt": "While standing at an open wet-well hatch, an operator becomes dizzy and nauseated. What should they do first?",
     "options": [
       {
         "id": "a",
-        "text": "Put on a dust mask and finish the task quickly"
+        "text": "Put on an N95 dust mask and finish checking the floats as quickly as possible anyway"
       },
       {
         "id": "b",
-        "text": "Sit down at the hatch until the dizziness passes"
+        "text": "Sit on the hatch rim until the dizziness passes, then climb into the well"
       },
       {
         "id": "c",
-        "text": "Recheck the gas meter, then continue the task if it reads normal"
+        "text": "Recheck the four-gas meter and continue if the display still looks normal"
       },
       {
         "id": "d",
-        "text": "Leave immediately and treat it as an atmosphere emergency"
+        "text": "Move to fresh air immediately and treat the symptoms as an atmospheric emergency"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Dizziness is leave-now, not climb-down. This item asks: “If an operator feels dizzy over a wet well, they should:”. The matching answer is: Leave immediately and treat it as an atmosphere emergency. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Dizziness over a wet well is treated as H2S or oxygen deficiency until proven otherwise. Leave to fresh air, keep others away, and start emergency procedures. Symptoms override a reassuring meter; the sensor may be slow, placed wrong, or failed.",
     "distractorExplanations": {
-      "a": "Dust masks do not protect against H2S or oxygen deficiency; the operator should leave and treat it as an emergency.",
-      "b": "Staying at the opening continues the exposure; move to fresh air and alert others.",
-      "c": "Symptoms override a reading; the meter may be faulty or the atmosphere uneven, so leave first."
+      "a": "An N95 does not protect against H2S or low oxygen; finishing the task continues the exposure.",
+      "b": "Sitting at the opening keeps the operator in the plume; move to fresh air rather than waiting it out.",
+      "c": "A normal display does not cancel symptoms; leave first, then investigate meter placement and calibration."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-029",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "Stored sodium hypochlorite should be:",
+    "prompt": "Bulk 12.5% sodium hypochlorite for effluent disinfection should be stored how, relative to other chemicals?",
     "options": [
       {
         "id": "a",
-        "text": "In compatible tanks, away from acids that would release chlorine gas"
+        "text": "In compatible vented tanks, segregated from acids that would release chlorine gas"
       },
       {
         "id": "b",
-        "text": "In compatible tanks, stored next to acids for spill neutralization"
+        "text": "Beside bulk mineral acid so a spill can be neutralized in place without delay"
       },
       {
         "id": "c",
-        "text": "In unvented steel drums in a warm room to slow decomposition"
+        "text": "In unvented carbon-steel drums in a warm mechanical room to slow chemical decomposition"
       },
       {
         "id": "d",
-        "text": "In compatible tanks, next to ammonia for combined dosing"
+        "text": "Next to aqueous ammonia so the two can be combined later for chloramination"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Hypo plus acid makes Cl2 gas. This item asks: “Stored sodium hypochlorite should be:”. The matching answer is: In compatible tanks, away from acids that would release chlorine gas. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Hypochlorite plus acid releases chlorine gas. Store it in compatible (often lined or poly) vented tanks, cool, and separated from acids and ammonia. Heat and steel accelerate decomposition and leaks; mixing with ammonia makes chloramines.",
     "distractorExplanations": {
-      "b": "Acid mixed with hypochlorite releases chlorine gas, so the two must be segregated, not stored together.",
-      "c": "Hypochlorite corrodes steel and decomposes faster with heat; store it cool in vented compatible tanks.",
-      "d": "Ammonia mixed with hypochlorite forms toxic chloramine gases; the chemicals must be kept apart."
+      "b": "Storing acid next to hypo for “neutralization” is a Cl2-release recipe; spills are contained and kept apart, not mixed.",
+      "c": "Heat speeds decomposition and off-gassing; unvented steel drums corrode and can over-pressure.",
+      "d": "Ammonia plus hypochlorite forms toxic chloramine gases; those bulk chemicals must be segregated."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-safety-030",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "safety",
-    "prompt": "A bypass pump on a force-main repair needs:",
+    "prompt": "A portable bypass pump is set for a force-main repair beside a creek. Besides capacity, what does the setup need?",
     "options": [
       {
         "id": "a",
-        "text": "Discharge to the nearest playground"
+        "text": "An unrestricted discharge to the nearest storm inlet to empty the main quickly"
       },
       {
         "id": "b",
-        "text": "Secondary containment and spill response for sewage"
+        "text": "Secondary containment and a sewage-spill plan for hose or coupling failure"
       },
       {
         "id": "c",
-        "text": "No plugs or hoses because gravity is enough"
+        "text": "No plugs or hoses because gravity in the trench will keep sewage from escaping"
       },
       {
         "id": "d",
-        "text": "Potable-water cross-connection without a backflow preventer"
+        "text": "A potable-water flush hookup with no backflow preventer on the connection"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Bypasses still handle sewage — contain it. This item asks: “A bypass pump on a force-main repair needs:”. The matching answer is: Secondary containment and spill response for sewage. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Bypass pumping still handles raw sewage. Hoses and couplings fail, so the job needs containment, spill response, and a legal discharge path back to the collection system or plant—not a shortcut to stormwater or a potable cross-connection.",
     "distractorExplanations": {
-      "a": "“Discharge to the nearest playground” does not answer “A bypass pump on a force-main repair needs:”. The matching answer is: Secondary containment and spill response for sewage.",
-      "c": "“No plugs or hoses because gravity is enough” does not answer “A bypass pump on a force-main repair needs:”. The matching answer is: Secondary containment and spill response for sewage.",
-      "d": "“Potable-water cross-connection without a backflow preventer” does not answer “A bypass pump on a force-main repair needs:”. The matching answer is: Secondary containment and spill response for sewage."
+      "a": "Dumping to a storm inlet is an SSO/illegal discharge to waters, not a repair shortcut.",
+      "c": "Force mains are pressurized. Gravity in an open trench will not contain sewage; plugs, hoses, and pumps are required.",
+      "d": "A potable hookup without backflow protection contaminates drinking water; sewage and potable lines stay separated."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-031",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A 5-day BOD test is incubated at:",
+    "prompt": "BOD bottles of a seeded effluent dilution are ready for incubation. Which condition matches Standard Methods for a five-day BOD?",
     "options": [
       {
         "id": "a",
-        "text": "20 °C for five days, measuring carbon dioxide produced"
+        "text": "35 °C for 48 hours in light, tracking oxygen while coliforms grow"
       },
       {
         "id": "b",
-        "text": "20 °C for five days, with the bottles exposed to light"
+        "text": "20 °C for five days in light so algae can replace consumed oxygen"
       },
       {
         "id": "c",
-        "text": "20 °C for five days, measuring oxygen used by microbes"
+        "text": "20 °C for five days in the dark, measuring dissolved-oxygen used"
       },
       {
         "id": "d",
-        "text": "35 °C for 48 hours, measuring oxygen used by microbes"
+        "text": "4 °C overnight then 20 °C for two days, tracking carbon dioxide"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Standard BOD5 is 20 °C / 5 days. This item asks: “A 5-day BOD test is incubated at:”. The matching answer is: 20 °C for five days, measuring oxygen used by microbes. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "BOD5 is the oxygen microbes consume at 20 ±1 °C over five days. Bottles incubate in the dark so algae cannot photosynthesize and mask demand. The result is initial minus final DO (after seed/dilution math), not CO2 production or a coliform incubation schedule.",
     "distractorExplanations": {
-      "a": "BOD measures dissolved oxygen depletion over five days, not carbon dioxide production.",
-      "b": "BOD bottles are incubated in the dark so algae cannot produce oxygen and mask the demand.",
-      "d": "35 °C for 48 hours is a coliform incubation condition; BOD5 runs at 20 °C for five days."
+      "a": "35 °C for 48 hours is a coliform/incubator condition, not BOD5; BOD runs 20 °C for five days.",
+      "b": "Light lets algae produce oxygen and understate demand; BOD bottles are incubated in the dark.",
+      "d": "BOD5 is not a refrigerated two-day CO2 test; it is a five-day dark DO-depletion method."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-032",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "TSS is measured by:",
+    "prompt": "A permit TSS sample is on the bench. Which lab procedure actually measures total suspended solids?",
     "options": [
       {
         "id": "a",
-        "text": "Evaporating a known volume and weighing the total residue"
+        "text": "Evaporate a known volume in a dish and weigh all residue as TSS"
       },
       {
         "id": "b",
-        "text": "Reading turbidity with a nephelometer and converting it"
+        "text": "Read turbidity on a nephelometer and convert NTU to mg/L TSS"
       },
       {
         "id": "c",
-        "text": "Settling a liter in an Imhoff cone for one hour"
+        "text": "Settle one liter in an Imhoff cone for one hour and report mL/L"
       },
       {
         "id": "d",
-        "text": "Filtering a known volume and drying/weighing the residue"
+        "text": "Filter a known volume, dry the residue at 103–105 °C, and weigh"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "TSS is a gravimetric filter test. This item asks: “TSS is measured by:”. The matching answer is: Filtering a known volume and drying/weighing the residue. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "TSS is gravimetric: a measured volume is passed through a glass-fiber filter, the filter is dried at 103–105 °C, and the retained solids are weighed. Whole-sample evaporation is total solids, Imhoff cones are settleable solids in mL/L, and turbidity only correlates with TSS.",
     "distractorExplanations": {
-      "a": "Evaporating the whole sample gives total solids; TSS uses a glass-fiber filter dried at 103–105 °C.",
-      "b": "Turbidity correlates with but does not measure TSS; TSS is a gravimetric filter test.",
-      "c": "The Imhoff cone measures settleable solids in mL/L, not suspended solids by weight."
+      "a": "Evaporating the entire aliquot measures total solids (dissolved plus suspended), not TSS.",
+      "b": "Turbidity can trend with solids but is not a TSS mass measurement and is not a permit substitute.",
+      "c": "An Imhoff cone measures settleable solids as volume (mL/L), not suspended solids by dry weight."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-033",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A grab sample is appropriate when:",
+    "prompt": "The NPDES permit lists chlorine residual as a grab. Why would a 24-hour composite jug be the wrong sample type?",
     "options": [
       {
         "id": "a",
-        "text": "The parameter changes fast or the permit specifies a grab"
+        "text": "Residual changes in minutes, so the permit requires an immediate grab"
       },
       {
         "id": "b",
-        "text": "The permit asks for a 24-hour composite but staff are short"
+        "text": "Composites better represent residual because the day’s mass load matters"
       },
       {
         "id": "c",
-        "text": "The parameter is BOD or TSS that represents the daily load"
+        "text": "Residual is acid-preserved and can sit on ice for 48 hours before analysis"
       },
       {
         "id": "d",
-        "text": "Flow is steady, so one sample stands in for the composite"
+        "text": "A composite equals a grab whenever plant flow stays nearly constant all day"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Match sample type to the parameter and the permit. This item asks: “A grab sample is appropriate when:”. The matching answer is: The parameter changes fast or the permit specifies a grab (for example, pH or residual). Independent UniPrep diagnostic — not an official NATE or state operator paper. Examples include pH and chlorine residual.",
+    "explanation": "Chlorine residual and pH shift within minutes in a jug, so they are grabs (or continuous analyzers) analyzed promptly. Staffing, steady flow, or confusing residual with BOD/TSS load does not authorize swapping a required grab for a composite.",
     "distractorExplanations": {
-      "b": "Substituting a grab for a required composite is a permit violation, not a staffing option.",
-      "c": "BOD and TSS usually require composite samples so the result represents the day's load.",
-      "d": "The permit specifies the sample type; steady flow does not authorize replacing a required composite."
+      "b": "Mass-load composites are for BOD/TSS-type parameters, not for a rapidly decaying disinfectant residual.",
+      "c": "Acid preservation is for some nutrients; it destroys residual chemistry and is not a 48-hour residual hold.",
+      "d": "The permit specifies sample type; steady flow does not convert a required grab into a composite."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-034",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A flow-weighted composite is used for:",
+    "prompt": "Influent BOD5 and TSS are listed as 24-hour flow-weighted composites. What is the reason for that sample type?",
     "options": [
       {
         "id": "a",
-        "text": "Parameters like pH or chlorine residual that change quickly"
+        "text": "Both parameters swing in minutes like pH, so one mid-shift grab is enough"
       },
       {
         "id": "b",
-        "text": "Parameters like BOD or TSS that should represent the day’s load"
+        "text": "The result should represent the day’s mass loading, not one snapshot"
       },
       {
         "id": "c",
-        "text": "Parameters like fecal coliform that need sterile grab bottles"
+        "text": "Fecal samples must be composited in sterile bottles over a full 24 hours"
       },
       {
         "id": "d",
-        "text": "Parameters like dissolved oxygen read directly in the tank"
+        "text": "Dissolved oxygen is averaged from hourly aliquots stored in one jug"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Composites represent load over time. This item asks: “A flow-weighted composite is used for:”. The matching answer is: Parameters like BOD or TSS that should represent the day’s load. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "BOD and TSS are used to judge organic and solids load. A flow-weighted composite mixes aliquots in proportion to flow so the lab number represents the day’s mass, not a single high or low hour. pH, residual, bacteria, and DO cannot be stored that way.",
     "distractorExplanations": {
-      "a": "Fast-changing parameters such as pH and residual require grab samples analyzed immediately.",
-      "c": "Bacteriological samples are grabs in sterile bottles; compositing would break the holding time.",
-      "d": "Dissolved oxygen is measured in place or as a grab; it cannot be composited."
+      "a": "pH/residual grabs are for fast-changing chemistry; BOD/TSS are load parameters that usually need composites.",
+      "c": "Bacteriological samples are sterile grabs with short holds; compositing them for 24 hours invalidates the count.",
+      "d": "DO cannot be composited in a jug; oxygen changes as soon as the sample is removed from the process."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-035",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "Settleometer / 30-minute settleability helps operators:",
+    "prompt": "Mixed liquor is poured into a 2-L settleometer while RAS rate is being reviewed. What does the 30-minute settled volume mainly show?",
     "options": [
       {
         "id": "a",
-        "text": "Measure the volatile fraction of the mixed liquor"
+        "text": "The volatile (ignition-loss) fraction of the mixed-liquor solids"
       },
       {
         "id": "b",
-        "text": "Determine the chlorine demand of the final effluent"
+        "text": "The chlorine demand of secondary effluent before the contact tank"
       },
       {
         "id": "c",
-        "text": "See how the mixed liquor will behave in the clarifier"
+        "text": "How the mixed liquor is likely to settle and compact in the clarifier"
       },
       {
         "id": "d",
-        "text": "Calculate grit removal efficiency at the headworks"
+        "text": "Grit-chamber capture efficiency at the headworks for that shift"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Settleometers are an activated-sludge tool. This item asks: “Settleometer / 30-minute settleability helps operators:”. The matching answer is: See how the mixed liquor will behave in the clarifier. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "A settleometer (SSV30) is a process-control picture of activated-sludge settling: blanket height, compaction, and supernatant clarity after 30 minutes. Combined with MLSS it yields SVI. It does not measure VSS, chlorine demand, or grit removal.",
     "distractorExplanations": {
-      "a": "The volatile fraction is MLVSS by ignition at 550 °C; the settleometer shows settling behavior.",
-      "b": "Chlorine demand is a disinfection test; settleometers assess mixed liquor settling.",
-      "d": "Grit removal is checked at the headworks; the 30-minute settleometer tests mixed liquor."
+      "a": "Volatile fraction is MLVSS from ignition at 550 °C, not a 30-minute settled volume.",
+      "b": "Chlorine demand is a disinfection titration; the settleometer assesses mixed-liquor settling.",
+      "d": "Grit performance is checked at the headworks; the settleometer is an aeration/clarifier tool."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-036",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A dissolved-oxygen probe in the aeration tank is used to:",
+    "prompt": "Aeration-basin DO is 0.4 mg/L and effluent ammonia is climbing. Blowers still have spare capacity. How should the operator use the DO probe?",
     "options": [
       {
         "id": "a",
-        "text": "Hold DO near zero so the aeration tank can nitrify more fully"
+        "text": "Hold DO near zero so nitrifiers work faster in anoxic mixed liquor"
       },
       {
         "id": "b",
-        "text": "Measure the BOD of the mixed liquor in real time"
+        "text": "Treat the probe reading as a real-time BOD5 of the mixed liquor"
       },
       {
         "id": "c",
-        "text": "Drive DO as high as the blowers allow to prevent filament growth"
+        "text": "Push DO as high as the blowers allow so filaments cannot grow"
       },
       {
         "id": "d",
-        "text": "Keep enough oxygen for the biomass without wasting blower kWh"
+        "text": "Restore about 2 mg/L DO so nitrifiers have oxygen without wasting kWh"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Process DO is an aeration setpoint, not a refrigerant test. This item asks: “A dissolved-oxygen probe in the aeration tank is used to:”. The matching answer is: Keep enough oxygen for the biomass without wasting blower kWh. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "The basin DO probe is a process setpoint, typically about 1–3 mg/L. Nitrification needs roughly 2 mg/L dissolved oxygen; 0.4 mg/L with rising ammonia means raise air, not starve the tank. Excess DO wastes blower energy and can shear floc; the probe is not a BOD test.",
     "distractorExplanations": {
-      "a": "Nitrification needs roughly 2 mg/L dissolved oxygen; near-zero DO stalls it.",
-      "b": "A DO probe reads dissolved oxygen; BOD is a five-day laboratory test.",
-      "c": "Excess DO wastes blower energy and can cause pin floc; most plants target about 1–3 mg/L."
+      "a": "Near-zero DO is anoxic and stalls nitrification; ammonia would keep climbing, not fall.",
+      "b": "A DO probe reads dissolved oxygen now; BOD5 is a five-day laboratory oxygen-demand test.",
+      "c": "Maximum DO wastes power and can cause pin floc; most plants target a modest 1–3 mg/L band."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-037",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "Fecal coliform or E. coli on final effluent is a:",
+    "prompt": "Operations wants a dissolved-oxygen number that represents the aeration tank, not a lab BOD bottle. Which sampling approach is valid?",
     "options": [
       {
         "id": "a",
-        "text": "Disinfection-performance and permit-limit test for wastewater discharge"
+        "text": "Measure in place or as a grab; do not composite DO in a 24-hour jug"
       },
       {
         "id": "b",
-        "text": "Revised Total Coliform Rule test for a drinking-water distribution system"
+        "text": "Collect a flow-weighted 24-hour composite in the iced BOD sampler"
       },
       {
         "id": "c",
-        "text": "Process-control test for activated-sludge settleability and bulking"
+        "text": "Acidify the aliquot with sulfuric acid and hold it up to 28 days"
       },
       {
         "id": "d",
-        "text": "Measure of organic loading on the aeration tank"
+        "text": "Incubate a filled BOD bottle five days and call leftover DO process DO"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Effluent bacteria limits are NPDES, not the drinking-water TCR. This item asks: “Fecal coliform or E. coli on final effluent is a:”. The matching answer is: Disinfection-performance and permit-limit test for wastewater discharge. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Dissolved oxygen changes as soon as mixed liquor leaves the basin or sits in a jug, so process DO is read in situ with a calibrated probe or as an immediate grab. Compositing, acid preservation, and five-day BOD leftovers do not represent tank DO.",
     "distractorExplanations": {
-      "b": "The RTCR applies to drinking-water distribution systems, not to wastewater effluent discharge.",
-      "c": "Settleability is measured with a settleometer or SVI; indicator bacteria test disinfection.",
-      "d": "Organic load is measured by BOD or COD, not by indicator bacteria counts."
+      "b": "A 24-hour composite jug will lose or gain oxygen; it cannot represent basin DO.",
+      "c": "Acid preservation is for some nutrients, kills biology, and is not a DO method or 28-day hold.",
+      "d": "Leftover DO after BOD5 is a lab endpoint, not the aeration tank’s operating dissolved oxygen."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-038",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A chain-of-custody form is needed when:",
+    "prompt": "Today’s flow-weighted influent composite will be set up for BOD5 tomorrow morning. How should that sample be preserved?",
     "options": [
       {
         "id": "a",
-        "text": "A process-control sample is read on site by the collector"
+        "text": "Acidify to pH below 2 with sulfuric acid so microbes stop using oxygen"
       },
       {
         "id": "b",
-        "text": "Samples leave the collector for a lab or enforcement use"
+        "text": "Cool to ≤6 °C without acid and start the test within the 48-hour hold"
       },
       {
         "id": "c",
-        "text": "A result exceeds the permit limit and needs a re-sample"
+        "text": "Leave the jug at gallery temperature so the seed stays biologically active"
       },
       {
         "id": "d",
-        "text": "An online analyzer records a reading to SCADA"
+        "text": "Freeze the composite overnight and thaw it just before bottles are filled"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "COC is legal/traceability, not optional paperwork. This item asks: “A chain-of-custody form is needed when:”. The matching answer is: Samples leave the collector for a lab or enforcement use. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "BOD samples are cooled to ≤6 °C, not acidified, because acid kills the organisms the test needs. Standard holding is 48 hours from collection to start of incubation. Room-temperature storage and freezing both change the oxygen demand before the bottles are set.",
     "distractorExplanations": {
-      "a": "On-site process samples that never change hands do not need chain-of-custody documentation.",
-      "c": "Custody is documented whenever samples change hands, not only after an exceedance.",
-      "d": "Continuous analyzer data involve no physical sample transfer; COC tracks handling of sample containers."
+      "a": "Sulfuric acid is used for some nutrient holds; it kills BOD microbes and voids the test.",
+      "c": "Warm storage lets microbes consume oxygen in the jug, so the BOD5 no longer matches the process.",
+      "d": "Freezing lyses cells and changes demand; BOD composites are refrigerated, not frozen."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-039",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "Holding time and preservation (for example, H2SO4 on some nutrients) exist so:",
+    "prompt": "MLSS is 2,500 mg/L (2.5 g/L). After 30 minutes a 1-L settleometer reads 250 mL settled sludge. What SVI should be reported?",
     "options": [
       {
         "id": "a",
-        "text": "Samples can be held up to 30 days if kept on ice"
+        "text": "10 mL/g, treating the sludge as extremely dense and fast-settling"
       },
       {
         "id": "b",
-        "text": "The lab can batch all samples into one weekly run"
+        "text": "250 mL/g, reporting the settled volume without dividing by MLSS"
       },
       {
         "id": "c",
-        "text": "The result still represents the process when the lab runs it"
+        "text": "100 mL/g, which is in the typical good-settling activated-sludge range"
       },
       {
         "id": "d",
-        "text": "Acid preservation lets the same sample double as the BOD sample"
+        "text": "625 mL/g, multiplying SSV30 by MLSS instead of dividing by it"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Wrong preservation voids the result. This item asks: “Holding time and preservation (for example, H2SO4 on some nutrients) exist so:”. The matching answer is: The result still represents the process when the lab runs it. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "SVI = (SSV30 in mL/L) ÷ (MLSS in g/L). Here 250 mL/L ÷ 2.5 g/L = 100 mL/g, a common well-settling value (often about 80–150 mL/g). Reporting the raw 250 mL or multiplying instead of dividing produces a meaningless SVI.",
     "distractorExplanations": {
-      "a": "Holding times are parameter specific; BOD allows 48 hours and many tests are shorter, not 30 days.",
-      "b": "Preservation does not extend holding times to suit weekly batching; each test has its own limit.",
-      "d": "Acid kills the microbes, so an acidified sample cannot be used for a BOD test."
+      "a": "10 mL/g would require dividing 250 by 25, not by 2.5 g/L; that density is not what this test shows.",
+      "b": "250 mL/L is the settleometer volume (SSV30), not SVI; SVI still needs division by MLSS.",
+      "d": "Multiplying 250 × 2.5 invents 625 mL/g and would falsely look like severe bulking."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-040",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A calibration of a pH meter uses:",
+    "prompt": "A BOD5 dilution depletes 7.8 mg/L oxygen but finishes at 0.3 mg/L DO. Seed blanks look acceptable. What should the operator do with that bottle?",
     "options": [
       {
         "id": "a",
-        "text": "One pH 7 buffer, checked weekly against tap water"
+        "text": "Report it; any measurable depletion is treated as a valid BOD5 bottle"
       },
       {
         "id": "b",
-        "text": "Two buffers that are both below the expected sample pH"
+        "text": "Average it with the seed blank because residual dissolved oxygen was low"
       },
       {
         "id": "c",
-        "text": "Distilled water as the pH 7 reference point"
+        "text": "Keep it only as CBOD after adding a nitrification inhibitor after the fact"
       },
       {
         "id": "d",
-        "text": "At least two buffers that bracket the expected sample"
+        "text": "Reject the bottle; residual DO must remain at least about 1 mg/L"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Bracketed buffers are the standard. This item asks: “A calibration of a pH meter uses:”. The matching answer is: At least two buffers that bracket the expected sample. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Standard Methods requires at least about 2 mg/L depletion and at least 1.0 mg/L residual DO so the bottle never goes anaerobic. A 0.3 mg/L finish is invalid even if depletion looks large. You cannot rescue it by averaging a seed blank or adding inhibitor after incubation.",
     "distractorExplanations": {
-      "a": "Single-point calibration sets only the offset; slope needs two or more buffers bracketing the sample.",
-      "b": "Buffers must bracket the sample so the reading is interpolated, not extrapolated beyond the calibration.",
-      "c": "Distilled water is unbuffered and drifts as it absorbs CO2; it is not a calibration standard."
+      "a": "Large depletion with almost no residual DO means the bottle went anaerobic; the result is not reportable.",
+      "b": "Seed blanks correct for seed oxygen demand on valid bottles; they do not fix an exhausted residual DO.",
+      "c": "Nitrification inhibitor must be added at setup for CBOD; it cannot be added after a five-day run."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-041",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "Mixed-liquor volatile suspended solids (MLVSS) estimate:",
+    "prompt": "A TSS filter has already been dried at 103–105 °C. The chemist now wants volatile suspended solids. What is the next step?",
     "options": [
       {
         "id": "a",
-        "text": "The organic/active fraction of the aeration solids"
+        "text": "Ignite at 550 °C and report the weight lost as VSS (organic fraction)"
       },
       {
         "id": "b",
-        "text": "The inorganic fraction left after ignition at 550 °C"
+        "text": "Re-dry the same filter at 103–105 °C and call the second weight VSS"
       },
       {
         "id": "c",
-        "text": "The solids settled after 30 minutes in a settleometer"
+        "text": "Dry at 180 °C to drive off bound water and report that loss as VSS"
       },
       {
         "id": "d",
-        "text": "Total solids in the aeration tank including dissolved"
+        "text": "Ignite at 103–105 °C in a muffle furnace until the filter turns to ash"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "MLVSS is the volatile (mostly biomass) part of MLSS. This item asks: “Mixed-liquor volatile suspended solids (MLVSS) estimate:”. The matching answer is: The organic/active fraction of the aeration solids. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "After TSS at 103–105 °C, VSS is the weight lost on ignition at 550 °C—the organic/volatile fraction. The ash left behind is fixed (inorganic) solids. Repeating the 103–105 °C dry, using 180 °C, or calling 103–105 °C an ignition does not measure VSS.",
     "distractorExplanations": {
-      "b": "The residue after ignition is fixed (inorganic) solids; MLVSS is the weight lost on ignition.",
-      "c": "That is settleability (SSV30), a volume reading, not the volatile fraction of the solids.",
-      "d": "That is total solids; MLVSS excludes dissolved matter and the inorganic ash fraction."
+      "b": "A second 103–105 °C dry is still TSS; volatile solids require ignition, not another drying step.",
+      "c": "180 °C is used in some total-solids variants for bound water, not the 550 °C VSS ignition.",
+      "d": "103–105 °C is a drying temperature; a muffle furnace for VSS is 550 °C, not 103–105 °C."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-042",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A sudden jump in influent COD with no flow change can mean:",
+    "prompt": "The optical DO probe in the aeration tank reads 1.1 mg/L while a Winkler titration on a simultaneous grab reads 2.4 mg/L. For a calibration check, which result should govern?",
     "options": [
       {
         "id": "a",
-        "text": "Heavy rain diluting the influent strength"
+        "text": "Trust the optical probe because luminescent sensors do not need checks"
       },
       {
         "id": "b",
-        "text": "A slug of industrial or septage load — hunt the source"
+        "text": "Use the Winkler (or a freshly calibrated meter) as the reference check"
       },
       {
         "id": "c",
-        "text": "Normal diurnal variation in residential flow"
+        "text": "Average 1.1 and 2.4 mg/L so neither method is treated as incorrect"
       },
       {
         "id": "d",
-        "text": "Nitrification in the collection system raising the influent COD"
+        "text": "Discard both readings and enter yesterday’s SCADA DO on the log"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "COD spikes are often collection-system dumps. This item asks: “A sudden jump in influent COD with no flow change can mean:”. The matching answer is: A slug of industrial or septage load — hunt the source. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Process probes drift from fouling, membrane damage, or bad calibration. A Winkler titration (or a meter just calibrated in air-saturated water per SOP) is the laboratory reference. Averaging a drifted probe with the reference, skipping checks, or copying old SCADA hides a real aeration problem.",
     "distractorExplanations": {
-      "a": "Rain would raise flow and lower COD concentration, not cause a spike with no flow change.",
-      "c": "Diurnal swings track flow changes; a COD jump at steady flow points to a slug discharge.",
-      "d": "Nitrification consumes ammonia and does not raise COD; a slug of high-strength waste does."
+      "a": "Optical probes still need calibration and fouling checks; they are not maintenance-free truth.",
+      "c": "Averaging a 1.3 mg/L disagreement splits the error; it does not identify which sensor is wrong.",
+      "d": "Yesterday’s SCADA value does not verify today’s probe and would hide a calibration failure."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-043",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "Microscopic exam of mixed liquor is used to:",
+    "prompt": "A 30-minute settleometer is 800 mL/L with a clear supernatant and a viscous, slow blanket. SVI calculates to about 280 mL/g. What does this picture most likely mean?",
     "options": [
       {
         "id": "a",
-        "text": "Count fecal coliforms to confirm that disinfection is working well"
+        "text": "Pin floc from over-aeration, which leaves a cloudy, dirty supernatant"
       },
       {
         "id": "b",
-        "text": "Measure MLSS concentration directly by counting cells"
+        "text": "A grit overload at the headworks that a settleometer cannot display"
       },
       {
         "id": "c",
-        "text": "Spot filaments, protozoa, and floc quality that explain SVI problems"
+        "text": "Filamentous bulking: slow-settling sludge occupying most of the cylinder"
       },
       {
         "id": "d",
-        "text": "Identify the nitrifying bacteria species by their shape and color alone"
+        "text": "A dense, healthy sludge that will keep a very low blanket in the clarifier"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Microscopy is an activated-sludge diagnostic. This item asks: “Microscopic exam of mixed liquor is used to:”. The matching answer is: Spot filaments, protozoa, and floc quality that explain SVI problems. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "A high SSV30 with clear liquid above a bulky, slow blanket and SVI well above ~150–200 mL/g is classic filamentous bulking. Pin floc dirties the supernatant. Grit is a headworks issue. A healthy sludge would compact to a much smaller settled volume.",
     "distractorExplanations": {
-      "a": "Coliforms are counted by culture methods (MPN or membrane filter), not by routine mixed-liquor microscopy.",
-      "b": "MLSS is measured gravimetrically; microscopy assesses organisms and floc structure.",
-      "d": "Nitrifiers cannot be identified by shape under routine microscopy; nitrification is tracked by ammonia and nitrate tests."
+      "a": "Pin floc produces turbid supernatant from dispersed particles, not a clear liquid over an 800 mL blanket.",
+      "b": "Grit is removed upstream; this mixed-liquor settleometer result is a biological settling problem.",
+      "d": "A dense healthy sludge would show a low SSV30 and SVI near 80–150 mL/g, not 280 mL/g."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-044",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "A split sample or duplicate is run to:",
+    "prompt": "The automatic sampler collecting influent BOD and TSS has been sitting in a warm pipe gallery. What must be true before that day’s composite is valid?",
     "options": [
       {
         "id": "a",
-        "text": "Increase MLSS on purpose"
+        "text": "Each aliquot was acidified in the sampler so BOD microbes are killed early"
       },
       {
         "id": "b",
-        "text": "Satisfy a drinking-water lead-and-copper tap sample"
+        "text": "The jug was left open so the composite stays saturated with dissolved oxygen"
       },
       {
         "id": "c",
-        "text": "Calibrate a manometer"
+        "text": "Aliquots were time-paced even though the permit specified flow-weighted"
       },
       {
         "id": "d",
-        "text": "Check laboratory precision"
+        "text": "The sample stayed iced (≤6 °C) and aliquots were proportioned to flow"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Duplicates are a QC check. This item asks: “A split sample or duplicate is run to:”. The matching answer is: Check laboratory precision. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "A BOD/TSS composite must stay refrigerated (≤6 °C) and, when the permit says flow-weighted, take larger aliquots at higher flow. A warm gallery without ice lets microbes change the sample in the jug. Acid, an open jug, or switching to time-paced sampling against the permit all invalidate the result.",
     "distractorExplanations": {
-      "a": "“Increase MLSS on purpose” does not answer “A split sample or duplicate is run to:”. The matching answer is: Check laboratory precision.",
-      "b": "“Satisfy a drinking-water lead-and-copper tap sample” does not answer “A split sample or duplicate is run to:”. The matching answer is: Check laboratory precision.",
-      "c": "“Calibrate a manometer” does not answer “A split sample or duplicate is run to:”. The matching answer is: Check laboratory precision."
+      "a": "Acid kills the organisms BOD needs; nutrient acid preservation is the wrong bottle for BOD/TSS.",
+      "b": "An open jug invites contamination and oxygen exchange; composites are kept closed and iced.",
+      "c": "Time-paced aliquots under- or over-represent high-flow hours when the permit requires flow-weighted."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-labs-045",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "labs",
-    "prompt": "Temperature of a BOD incubator that drifts to 25 °C will:",
+    "prompt": "The BOD incubator ran at 25 °C for the entire five days instead of 20 °C. How does that temperature error bias reported BOD5?",
     "options": [
       {
         "id": "a",
-        "text": "Bias the BOD high because microbes work faster"
+        "text": "Bias low, because oxygen is more soluble in the warmer bottles"
       },
       {
         "id": "b",
-        "text": "Bias the BOD low because oxygen solubility rises"
+        "text": "Bias high, because microbes consume oxygen faster than at 20 °C"
       },
       {
         "id": "c",
-        "text": "Have no effect as long as the seed is fresh"
+        "text": "No bias, as long as the seed blank still meets the depletion window"
       },
       {
         "id": "d",
-        "text": "Bias the BOD low because nitrifiers are inhibited"
+        "text": "Bias low, because nitrifying bacteria are fully stopped above 22 °C"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "BOD is temperature-sensitive — 20 °C is the method. This item asks: “Temperature of a BOD incubator that drifts to 25 °C will:”. The matching answer is: Bias the BOD high because microbes work faster. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "correctOptionId": "b",
+    "explanation": "BOD5 is defined at 20 ±1 °C. At 25 °C microbial respiration (and often nitrification) speeds up, so more oxygen is used in five days and the reported BOD reads high. A passing seed blank does not cancel that kinetic bias, and warmer water holds less—not more—dissolved oxygen.",
     "distractorExplanations": {
-      "b": "Oxygen solubility falls as temperature rises, and faster microbial uptake biases the result high.",
-      "c": "BOD5 is defined at 20 ±1 °C; a fresh seed does not offset faster microbial rates at 25 °C.",
-      "d": "Warmer temperatures speed nitrification, adding oxygen demand rather than lowering the result."
+      "a": "Oxygen solubility falls as temperature rises; faster uptake still drives the BOD result higher.",
+      "c": "Seed-blank QC does not redefine the 20 °C method; a 5 °C error still changes the kinetic rate.",
+      "d": "Warmer temperatures tend to speed nitrification, adding oxygen demand rather than shutting it off."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-046",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "An NPDES permit for a wastewater plant sets:",
+    "prompt": "A municipal POTW just received a renewed NPDES permit. What does that permit actually set for the plant?",
     "options": [
       {
         "id": "a",
-        "text": "Drinking-water MCLs and monitoring for the receiving stream"
+        "text": "Effluent limits, monitoring, and reporting for the discharge"
       },
       {
         "id": "b",
-        "text": "Discharge limits, monitoring, and reporting for the effluent"
+        "text": "Drinking-water MCLs and TCR sampling for the receiving stream"
       },
       {
         "id": "c",
-        "text": "Operator staffing levels and shift schedules for the plant"
+        "text": "Certified staffing ratios and weekend coverage for every shift"
       },
       {
         "id": "d",
-        "text": "Construction standards for sewer pipe and manholes"
+        "text": "Construction specs for laterals, manholes, and force-main pipe"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "NPDES is the wastewater discharge permit, not drinking-water TCR. This item asks: “An NPDES permit for a wastewater plant sets:”. The matching answer is: Discharge limits, monitoring, and reporting for the effluent to waters of the U.S. Independent UniPrep diagnostic — not an official NATE or state operator paper. The effluent discharges to waters of the U.S.",
+    "correctOptionId": "a",
+    "explanation": "An NPDES permit under the Clean Water Act is the plant's discharge license. It sets numeric and narrative effluent limits, self-monitoring, and reporting to the permitting authority. It does not set Safe Drinking Water Act MCLs, operator staffing, or sewer construction codes.",
     "distractorExplanations": {
-      "a": "MCLs come from the Safe Drinking Water Act; NPDES under the Clean Water Act sets effluent discharge limits.",
-      "c": "Staffing and operator certification come from state operator rules, not the NPDES discharge limits.",
-      "d": "Sewer design standards come from state design criteria such as Ten States Standards, not the NPDES permit."
+      "b": "MCLs and TCR sampling are Safe Drinking Water Act drinking-water rules, not NPDES effluent conditions.",
+      "c": "Staffing and certification come from state operator rules, not from the NPDES effluent tables.",
+      "d": "Sewer design criteria (for example Ten States) are separate from the NPDES discharge permit."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-047",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "A sanitary-sewer overflow (SSO) typically must be:",
+    "prompt": "On a dry-weather morning, sewage is bubbling from a manhole onto a residential street. What must the crew typically do?",
     "options": [
       {
         "id": "a",
-        "text": "Reported only if it reaches a storm drain or creek"
+        "text": "Report the event only if sewage reaches a storm inlet or creek"
       },
       {
         "id": "b",
-        "text": "Stopped and cleaned up, with a report at the annual DMR"
+        "text": "Clean it up and mention it only on the next annual DMR summary"
       },
       {
         "id": "c",
-        "text": "Stopped, contained if possible, and reported per the permit"
+        "text": "Stop the overflow, contain what you can, and report per the permit"
       },
       {
         "id": "d",
-        "text": "Contained, with reporting delayed until the volume is known"
+        "text": "Delay any notice until the exact overflow volume has been measured"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "SSOs are reportable sewage releases. This item asks: “A sanitary-sewer overflow (SSO) typically must be:”. The matching answer is: Stopped, contained if possible, and reported per the permit and state rules. Independent UniPrep diagnostic — not an official NATE or state operator paper. State rules also set reporting deadlines.",
+    "explanation": "A sanitary-sewer overflow is a sewage release from the collection system. Standard practice and most NPDES/state SSO rules require stopping the overflow, containing and cleaning recoverable sewage, and giving prompt notice plus a follow-up written report. Water-of-the-U.S. contact, annual DMR notes, and exact gallon counts do not create a reporting delay.",
     "distractorExplanations": {
-      "a": "SSOs are reportable under permit and state rules even when they do not reach surface water.",
-      "b": "SSOs typically require notice within 24 hours and a written report within 5 days, not an annual entry.",
-      "d": "Reporting deadlines run from discovery; volume estimates can follow but do not delay the notice."
+      "a": "SSOs are typically reportable even on pavement; reaching surface water is not the only trigger.",
+      "b": "SSO notice is usually 24 hours plus a short written report, not an annual DMR footnote.",
+      "d": "Deadlines run from discovery; a volume estimate can follow but does not postpone the first notice."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-048",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Bypassing secondary treatment without authorization is:",
+    "prompt": "During a wet-weather surge, an operator opens a gate that sends primary effluent around secondary treatment to the outfall. Unless the permit authorizes it, this bypass is:",
     "options": [
       {
         "id": "a",
-        "text": "Allowed whenever influent flow exceeds the plant design capacity"
+        "text": "Allowed whenever influent flow exceeds the plant's rated design capacity"
       },
       {
         "id": "b",
-        "text": "Acceptable if it is reported later in the annual plant report"
+        "text": "Acceptable if it is described later in the annual plant operations report"
       },
       {
         "id": "c",
-        "text": "A violation only if the bypass lasts longer than 24 hours"
+        "text": "A violation only if the diversion continues longer than twenty-four hours"
       },
       {
         "id": "d",
-        "text": "A permit violation unless the permit allows a documented bypass"
+        "text": "A permit violation unless a documented bypass is allowed by the permit"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Unauthorized bypasses are enforcement bait. This item asks: “Bypassing secondary treatment without authorization is:”. The matching answer is: A permit violation unless the permit explicitly allows a documented bypass. Independent UniPrep diagnostic — not an official NATE or state operator paper. The permit must explicitly allow the bypass.",
+    "explanation": "40 CFR 122.41(m) treats a bypass as diversion around any treatment unit. Unauthorized bypass of secondary is a permit violation. High flow alone does not grant authority. Anticipated bypasses need prior notice; unanticipated ones need 24-hour oral notice and a 5-day written report, and even then only if they were unavoidable to prevent loss of life, personal injury, or severe property damage.",
     "distractorExplanations": {
-      "a": "High flow alone does not authorize bypass; it is prohibited unless unavoidable to prevent loss of life or severe damage, with notice.",
-      "b": "Anticipated bypasses need prior notice and unanticipated ones need 24-hour reporting, not an annual report.",
-      "c": "Any unauthorized bypass is a violation; duration does not create a 24-hour grace period."
+      "a": "Exceeding design flow is not a blank check; bypass remains prohibited unless the 122.41(m) exceptions apply.",
+      "b": "An annual narrative is not the required 24-hour / 5-day bypass reporting path.",
+      "c": "There is no 24-hour grace period; an unauthorized bypass is a violation from the first diversion."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-049",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Land-applying biosolids requires:",
+    "prompt": "The plant wants to land-apply dewatered cake on a nearby farm. Under 40 CFR 503-style rules, the cake must meet:",
     "options": [
       {
         "id": "a",
-        "text": "Meeting pathogen, vector-attraction, and metal limits for the chosen class"
+        "text": "Pathogen class, vector-attraction reduction, and pollutant metal limits"
       },
       {
         "id": "b",
-        "text": "Meeting Class A pathogen limits, with vector attraction optional"
+        "text": "Class A pathogen reduction only; vector-attraction treatment is optional"
       },
       {
         "id": "c",
-        "text": "Meeting metal limits only, since pathogens die off quickly in the soil"
+        "text": "Metal ceilings only, because remaining pathogens die quickly in soil"
       },
       {
         "id": "d",
-        "text": "Meeting Class B pathogen limits, with no site access or harvest restrictions"
+        "text": "Class B pathogen limits with no access, grazing, or harvest restrictions"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "40 CFR 503-style rules still apply at the state level. This item asks: “Land-applying biosolids requires:”. The matching answer is: Meeting pathogen, vector-attraction, and metal limits for the chosen class. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Part 503 land application requires all three: a pathogen class (A or B), vector-attraction reduction, and pollutant (metal) limits. Class B also carries site restrictions on public access, grazing, and crop harvest. Skipping VAR or relying on soil die-off is not a substitute for those controls.",
     "distractorExplanations": {
-      "b": "Part 503 requires vector-attraction reduction and metal limits in addition to pathogen reduction.",
-      "c": "Pathogen reduction (Class A, or Class B with site restrictions) is required in addition to metal limits.",
-      "d": "Class B biosolids carry site restrictions on public access, grazing, and crop harvest."
+      "b": "Vector-attraction reduction is required along with pathogen reduction, not an optional extra.",
+      "c": "Pathogen reduction is required; soil die-off does not replace Class A or Class B treatment.",
+      "d": "Class B biosolids carry access, grazing, and harvest restrictions; they are not unrestricted."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-050",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "A discharge monitoring report (DMR) is:",
+    "prompt": "Month-end lab sheets for effluent BOD, TSS, and bacteria are on the desk. The discharge monitoring report the operator must file is:",
     "options": [
       {
         "id": "a",
-        "text": "The annual drinking-water quality report sent to consumers"
+        "text": "The SDWA consumer confidence report mailed to drinking-water customers"
       },
       {
         "id": "b",
-        "text": "The periodic report of permit sample results to the regulator"
+        "text": "The scheduled submittal of permit sample results to the regulator"
       },
       {
         "id": "c",
-        "text": "The internal daily log of process-control readings"
+        "text": "The internal process-control log of mixed-liquor and DO readings"
       },
       {
         "id": "d",
-        "text": "The permit application filed every five years for renewal"
+        "text": "The five-year NPDES renewal application package to EPA or the state"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "DMRs are wastewater permit reports; CCRs are drinking water. This item asks: “A discharge monitoring report (DMR) is:”. The matching answer is: The periodic report of permit sample results to the regulator. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "A DMR (often via NetDMR) is the periodic, usually monthly, report of NPDES monitoring results to the permitting authority. Process logs stay at the plant. Consumer confidence reports are drinking-water SDWA products. Permit renewal is a separate application, not the monthly DMR.",
     "distractorExplanations": {
-      "a": "That is the Consumer Confidence Report under the SDWA; a DMR reports NPDES sample results.",
-      "c": "Process-control logs stay at the plant; a DMR reports permit compliance results to the regulator.",
-      "d": "Renewal applications are separate; DMRs are submitted monthly or quarterly with sample results."
+      "a": "A CCR is a drinking-water SDWA report; a DMR reports wastewater NPDES results.",
+      "c": "Process-control logs support operations; they are not the signed DMR filed with the agency.",
+      "d": "Renewal applications are filed on the permit cycle; DMRs go in each monitoring period."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-051",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Combined sewer overflows (CSOs), where they still exist, are:",
+    "prompt": "After a thunderstorm, an outfall on an old combined sewer discharges to the river. That combined sewer overflow is:",
     "options": [
       {
         "id": "a",
-        "text": "Overflows from separate sanitary sewers during pipe blockages"
+        "text": "A sanitary-only overflow from a blocked separate sanitary sewer"
       },
       {
         "id": "b",
-        "text": "Stormwater-only outfalls from separate storm sewer systems"
+        "text": "A stormwater-only discharge from a municipal separate storm system"
       },
       {
         "id": "c",
-        "text": "Wet-weather discharges of mixed sewage and stormwater"
+        "text": "A wet-weather mix of sewage and stormwater from combined sewers"
       },
       {
         "id": "d",
-        "text": "Planned plant bypasses around secondary treatment in dry weather"
+        "text": "A planned dry-weather plant bypass around secondary treatment units"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "CSOs are a wet-weather collection issue, not a WTP process. This item asks: “Combined sewer overflows (CSOs), where they still exist, are:”. The matching answer is: Permitted or being eliminated wet-weather discharges of mixed sewage and stormwater. Independent UniPrep diagnostic — not an official NATE or state operator paper. They are permitted under long-term control plans or being eliminated.",
+    "explanation": "CSOs occur where one pipe carries both sewage and stormwater. In wet weather the system can overflow mixed wastewater at designated CSO points. They are distinct from SSOs on separate sanitary sewers, MS4 storm-only outfalls, and treatment-plant bypasses. Many cities operate CSOs under long-term control plans while reducing volume and untreated discharge.",
     "distractorExplanations": {
-      "a": "That describes SSOs from separate sanitary systems; CSOs come from combined sewers in wet weather.",
-      "b": "MS4 outfalls carry stormwater only; CSOs carry a mix of sewage and stormwater.",
-      "d": "That describes a treatment-plant bypass, not a collection-system combined sewer overflow."
+      "a": "That describes an SSO on a separate sanitary system, not a combined-sewer wet-weather overflow.",
+      "b": "MS4 outfalls carry stormwater; CSOs carry a mix of sewage and stormwater.",
+      "d": "A plant bypass is a treatment diversion; a CSO is a collection-system wet-weather overflow."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-052",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "An operator’s certificate is typically:",
+    "prompt": "A classified municipal wastewater plant needs someone in responsible charge on the operating shift. That person is typically:",
     "options": [
       {
         "id": "a",
-        "text": "Issued by the EPA and recognized for responsible charge in every state"
+        "text": "An EPA-issued national certificate holder recognized in every state"
       },
       {
         "id": "b",
-        "text": "Required only for plants serving over 10,000 people"
+        "text": "A certified operator only if the service population exceeds 10,000"
       },
       {
         "id": "c",
-        "text": "Optional once an operator has five years of documented plant experience"
+        "text": "An uncertified veteran with five documented years of plant experience"
       },
       {
         "id": "d",
-        "text": "Required by the state to be in responsible charge of a classified plant"
+        "text": "A state-certified operator at the grade required for the plant"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "State boards license operators; NATE does not. This item asks: “An operator’s certificate is typically:”. The matching answer is: Required by the state to be in responsible charge of a classified plant. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Operator certification is a state program. A classified plant must have a state-certified operator in responsible charge at the grade matching the plant classification. EPA does not issue a nationwide operator card. Small classified plants still need a certified operator, and experience is a path to a grade, not a substitute for the certificate.",
     "distractorExplanations": {
-      "a": "Operator certification is run by each state; EPA does not issue certificates and reciprocity varies.",
-      "b": "States classify plants by process and size; small classified plants also need a certified operator in charge.",
-      "c": "Experience is a prerequisite for higher grades, not a substitute for holding the certificate."
+      "a": "States issue operator certificates; EPA does not, and reciprocity is not automatic nationwide.",
+      "b": "Classification uses process and size; small classified plants still need a certified operator in charge.",
+      "c": "Experience supports eligibility for a grade; it does not replace holding the required certificate."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-053",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Fats, oils, and grease (FOG) programs exist to:",
+    "prompt": "Inspectors are checking restaurant grease interceptors under the utility's FOG program. The main reason the program exists is to:",
     "options": [
       {
         "id": "a",
-        "text": "Keep collection systems and plants from clogging and overflowing"
+        "text": "Keep grease from clogging sewers and causing sanitary overflows"
       },
       {
         "id": "b",
-        "text": "Recover grease for resale to fund collection-system repairs and upgrades"
+        "text": "Harvest grease for resale that funds collection-system upgrades"
       },
       {
         "id": "c",
-        "text": "Raise influent BOD so activated sludge has more food"
+        "text": "Raise influent BOD so the aeration basin has extra carbon food"
       },
       {
         "id": "d",
-        "text": "Control industrial toxics that pass through the plant to the river"
+        "text": "Control industrial metals that would pass through to the river"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "FOG is a pretreatment/collection control. This item asks: “Fats, oils, and grease (FOG) programs exist to:”. The matching answer is: Keep collection systems and plants from clogging and overflowing. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Fats, oils, and grease solidify in collection lines, causing blockages and SSOs. FOG programs use interceptor maintenance and food-service controls to keep that load out of the sewers. Recycling grease can be a side benefit, but it is not the regulatory purpose. Extra BOD is a nuisance, and metals belong to industrial pretreatment, not FOG.",
     "distractorExplanations": {
-      "b": "Grease may be recycled, but FOG programs exist to prevent sewer blockages and overflows.",
-      "c": "FOG is a nuisance load causing blockages and scum, not a desired food source for the biomass.",
-      "d": "Toxic pass-through is the focus of industrial pretreatment; FOG programs target grease blockages."
+      "b": "Grease recycling may occur, but FOG rules exist to prevent blockages and overflows, not to raise revenue.",
+      "c": "FOG is a scum and blockage load, not a desired carbon source for activated sludge.",
+      "d": "Toxic pass-through is an industrial pretreatment issue; FOG programs target grease blockages."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-054",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Industrial pretreatment programs are meant to:",
+    "prompt": "A metal finisher dumps a cyanide slug into the city sewer. Industrial pretreatment exists mainly to:",
     "options": [
       {
         "id": "a",
-        "text": "Charge industries for BOD so the plant can expand capacity"
+        "text": "Bill extra BOD surcharge so the city can expand plant capacity"
       },
       {
         "id": "b",
-        "text": "Keep toxic slugs from killing the biology or passing through to the river"
+        "text": "Stop toxic slugs from killing the biomass or passing through"
       },
       {
         "id": "c",
-        "text": "Let industries discharge directly to the river under the POTW permit"
+        "text": "Let industries discharge straight to the river under the POTW permit"
       },
       {
         "id": "d",
-        "text": "Require homes to pretreat sewage with septic tanks before discharge"
+        "text": "Require every house to pretreat sewage in a septic tank first"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pretreatment protects the POTW and the permit. This item asks: “Industrial pretreatment programs are meant to:”. The matching answer is: Keep toxic slugs from killing the biology or passing through to the river. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Pretreatment (40 CFR 403) controls industrial users that discharge to a POTW. The goals are to prevent interference with biological treatment, prevent pass-through of toxics to waters of the U.S., protect workers and sludge quality, and conserve treatment capacity. Surcharges may exist, but they are not the core purpose. Direct river discharge needs its own NPDES permit, and homes are not industrial users.",
     "distractorExplanations": {
-      "a": "Surcharges may exist, but pretreatment exists to prevent interference and pass-through of toxics.",
-      "c": "Direct dischargers need their own NPDES permits; pretreatment covers indirect dischargers to the POTW.",
-      "d": "Pretreatment programs regulate industrial users, not residential sewer connections."
+      "a": "Strength surcharges recover cost; pretreatment's core job is interference and pass-through control.",
+      "c": "Direct dischargers need their own NPDES permits; pretreatment covers indirect users of the POTW.",
+      "d": "Pretreatment programs regulate industrial users, not ordinary residential sewer connections."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-055",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "If a fecal coliform result is over the weekly permit limit, the operator should:",
+    "prompt": "The weekly fecal coliform result is above the weekly maximum in the NPDES permit. The operator should:",
     "options": [
       {
         "id": "a",
-        "text": "Re-sample until a passing result replaces the high one"
+        "text": "Re-sample until a passing result can replace the high value"
       },
       {
         "id": "b",
-        "text": "Report it at the next annual review if the monthly average passes"
+        "text": "Leave it off the DMR if the monthly geometric mean still passes"
       },
       {
         "id": "c",
-        "text": "Verify disinfection, re-sample as required, and report honestly"
+        "text": "Check disinfection, resample as required, and report the result"
       },
       {
         "id": "d",
-        "text": "Increase chlorine dose and leave the result off the DMR"
+        "text": "Raise the chlorine dose and omit the high result from the DMR"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Fix the process and report — do not cook the sample. This item asks: “If a fecal coliform result is over the weekly permit limit, the operator should:”. The matching answer is: Verify disinfection, re-sample as required, and report honestly. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "An exceedance is both an operations problem and a reporting event. Fix disinfection, collect any additional samples the permit requires, and report every valid result on the DMR. Weekly limits stand even if the monthly average later passes. Replacing or omitting a high result is falsification under the DMR certification.",
     "distractorExplanations": {
-      "a": "Every valid result must be reported; selective re-sampling to replace an exceedance is falsification.",
-      "b": "Weekly limits stand on their own; the exceedance goes on the DMR and some permits require prompt notice.",
-      "d": "Process fixes do not remove the reporting duty; omitting a result from the DMR is falsification."
+      "a": "Every valid result must be reported; swapping samples to hide an exceedance is falsification.",
+      "b": "Weekly maxima are independent limits; a passing monthly average does not erase the weekly miss.",
+      "d": "Process correction does not cancel reporting; leaving a result off the DMR is a false statement."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-056",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Stormwater that is not part of a combined system should:",
+    "prompt": "In a city with separate sanitary sewers, a roof drain was illegally tied into a house lateral. The correct fix is to:",
     "options": [
       {
         "id": "a",
-        "text": "Be routed into the sanitary sewer so it receives full treatment"
+        "text": "Keep routing roof water to sanitary so it receives full secondary treatment"
       },
       {
         "id": "b",
-        "text": "Enter the sanitary sewer only during dry weather"
+        "text": "Allow the connection only on dry days and cap it before forecast rain"
       },
       {
         "id": "c",
-        "text": "Be diverted to the aeration tank to dilute a high-BOD influent"
+        "text": "Dump the storm flow into aeration to dilute a high-BOD industrial slug"
       },
       {
         "id": "d",
-        "text": "Stay out of the sanitary sewer to avoid hydraulic overload"
+        "text": "Disconnect it so stormwater does not hydraulically overload the plant"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "I&I and illegal storm connections blow plants out. This item asks: “Stormwater that is not part of a combined system should:”. The matching answer is: Stay out of the sanitary sewer to avoid hydraulic overload. Independent UniPrep diagnostic — not an official NATE or state operator paper.",
+    "explanation": "Separate sanitary systems are not designed for storm inflow. Roof leaders and other illicit connections cause hydraulic overload, washed-out biomass, and SSOs. Stormwater should stay in the storm system or on-site drainage. Diluting a BOD slug with storm flow is not treatment and can violate the NPDES prohibition on unauthorized bypass or washout.",
     "distractorExplanations": {
-      "a": "In separate systems, storm connections to the sanitary sewer cause inflow overloads and SSOs.",
-      "b": "Storm flow occurs in wet weather; illicit storm connections overload sanitary sewers during rain.",
-      "c": "Dilution with stormwater washes out biomass and overloads clarifiers; it is not treatment."
+      "a": "Sending stormwater through a separate sanitary sewer causes inflow overloads and SSOs.",
+      "b": "Illicit storm connections fail during rain, which is when the overload happens; a dry-day cap is not a control.",
+      "c": "Storm dilution washes out mixed liquor and overloads clarifiers; it is not a treatment strategy."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-057",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "A whole-effluent toxicity (WET) test looks at:",
+    "prompt": "The permit requires a quarterly whole-effluent toxicity test on final effluent. The lab is checking:",
     "options": [
       {
         "id": "a",
-        "text": "Whether the effluent is toxic to test organisms"
+        "text": "Whether effluent is toxic to specified aquatic test organisms"
       },
       {
         "id": "b",
-        "text": "Effluent BOD and TSS against conventional limits"
+        "text": "Whether BOD and TSS still meet the conventional numeric limits"
       },
       {
         "id": "c",
-        "text": "Pathogen levels using indicator bacteria counts"
+        "text": "Whether indicator bacteria show that disinfection is adequate"
       },
       {
         "id": "d",
-        "text": "Toxic metals measured individually by ICP analysis"
+        "text": "Whether each listed metal is below its chemical-specific limit"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "WET is a biological permit test. This item asks: “A whole-effluent toxicity (WET) test looks at:”. The matching answer is: Whether the effluent is toxic to test organisms, not just conventional pollutants. Independent UniPrep diagnostic — not an official NATE or state operator paper. It goes beyond conventional pollutants.",
+    "explanation": "WET tests expose live organisms (often Ceriodaphnia or fathead minnows) to effluent and measure survival or reproduction. They capture combined toxic effect that chemical-by-chemical limits can miss. BOD/TSS, fecal indicators, and ICP metals are separate conventional, disinfection, and chemical-specific tests, not WET.",
     "distractorExplanations": {
-      "b": "BOD and TSS are conventional pollutant tests; WET exposes live test organisms to the effluent.",
-      "c": "Indicator bacteria test disinfection; WET measures toxicity to organisms such as Ceriodaphnia.",
-      "d": "Chemical-specific analysis is separate; WET measures the combined toxic effect biologically."
+      "b": "BOD and TSS are conventional pollutant tests; WET is a biological toxicity assay.",
+      "c": "Indicator bacteria measure disinfection; WET measures toxicity to aquatic test organisms.",
+      "d": "Metal scans are chemical-specific; WET measures the combined toxic effect biologically."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-058",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Records for permit samples are usually kept:",
+    "prompt": "An inspector asks how long the plant must keep bench sheets that support the filed DMRs. The usual answer is:",
     "options": [
       {
         "id": "a",
-        "text": "Until the next DMR is accepted by the regulator"
+        "text": "Until the regulator accepts the next month's DMR submittal"
       },
       {
         "id": "b",
-        "text": "For the period the permit and state require"
+        "text": "For the period the permit and state rules require"
       },
       {
         "id": "c",
-        "text": "For one year unless an exceedance occurred"
+        "text": "For one year unless that monitoring period had an exceedance"
       },
       {
         "id": "d",
-        "text": "Until the lab invoice is paid and filed"
+        "text": "Until the contract laboratory invoice is paid and filed away"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Retention is a permit condition. This item asks: “Records for permit samples are usually kept:”. The matching answer is: For the period the permit and state require — often three years or more. Independent UniPrep diagnostic — not an official NATE or state operator paper. Federal NPDES rules require at least three years.",
+    "explanation": "NPDES standard conditions (40 CFR 122.41(j)) require monitoring records to be kept at least three years, and many permits or states require longer. Retention starts from the date of the sample or report, not from DMR acceptance, a one-year clock, or lab billing. Keep chain-of-custody, calibration, and bench data with the DMR file.",
     "distractorExplanations": {
-      "a": "NPDES rules require monitoring records for at least three years, not just until the next DMR.",
-      "c": "The federal minimum is three years for all monitoring records, whether results passed or failed.",
-      "d": "Retention is a permit condition tied to compliance records, not to lab billing."
+      "a": "Federal rules require at least three years of monitoring records, not just until the next DMR.",
+      "c": "The three-year minimum applies whether results passed or failed; exceedances do not set a shorter clock.",
+      "d": "Record retention is a permit duty tied to compliance files, not to paying a lab invoice."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "easy",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-059",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "Signing a DMR as the responsible operator means:",
+    "prompt": "The responsible operator signs the monthly DMR before it is submitted. That signature means:",
     "options": [
       {
         "id": "a",
-        "text": "You confirm the lab, not you, is responsible for accuracy"
+        "text": "The contract laboratory, not the signer, owns any data errors"
       },
       {
         "id": "b",
-        "text": "You are certifying the plant met every permit limit"
+        "text": "The plant met every numeric limit for the reporting period"
       },
       {
         "id": "c",
-        "text": "You are stating the data are true and complete"
+        "text": "The signer certifies the reported data are true and complete"
       },
       {
         "id": "d",
-        "text": "You may estimate missing data without noting it"
+        "text": "Missing values may be filled with unmarked estimates of typical data"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "False statements on DMRs are a federal offense. This item asks: “Signing a DMR as the responsible operator means:”. The matching answer is: You are stating the data are true and complete to the best of your knowledge. Independent UniPrep diagnostic — not an official NATE or state operator paper. The certification is to the best of your knowledge.",
+    "explanation": "The DMR certification (40 CFR 122.22 / 122.41) is a legal statement that the information is true, accurate, and complete to the best of the signer's knowledge. It does not claim the plant passed every limit. Exceedances must still be reported. False statements, omitted results, or unmarked estimates are criminal and civil liabilities; a contract lab does not absorb that duty.",
     "distractorExplanations": {
-      "a": "The signer certifies the report; responsibility is not shifted to a contract lab.",
-      "b": "Signing certifies accuracy, not compliance; exceedances must still be reported truthfully.",
-      "d": "Missing or estimated data must be identified; unmarked estimates misrepresent the record."
+      "a": "The permitted facility's signer certifies the report; a contract lab does not take that liability.",
+      "b": "Signing certifies accuracy, not compliance; exceedances must still appear on the DMR.",
+      "d": "Estimated or missing data must be identified; unmarked fill-ins misrepresent the monitoring record."
     },
     "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   },
   {
     "id": "wastewater-operator-1-readiness-check-regs-060",
     "examSlug": "wastewater-operator-1-readiness-check",
     "topicId": "regs",
-    "prompt": "This UniPrep wastewater mock is:",
+    "prompt": "At 2 a.m. a pump failure forces an unanticipated bypass of secondary treatment. Besides stopping the diversion, NPDES standard conditions typically require:",
     "options": [
       {
         "id": "a",
-        "text": "The official ABC standardized exam form"
+        "text": "A note only on the next annual facility compliance inspection form"
       },
       {
         "id": "b",
-        "text": "A state-licensed operator certification test"
+        "text": "A month-end DMR comment with no separate oral or written notice"
       },
       {
         "id": "c",
-        "text": "A retired state Grade 1 exam released publicly"
+        "text": "A written report within 30 days if the effluent still met numeric limits"
       },
       {
         "id": "d",
-        "text": "An independent 60-question diagnostic"
+        "text": "Oral notice within 24 hours and a written report within 5 days"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Honesty: we are not the licensing board. This item asks: “This UniPrep wastewater mock is:”. The matching answer is: An independent 60-question diagnostic — not a state operator exam form. Independent UniPrep diagnostic — not an official NATE or state operator paper. It is not a state operator exam form.",
+    "explanation": "For an unanticipated bypass, 40 CFR 122.41(m)(3)(i) requires oral notice to the permitting authority within 24 hours and a written report within 5 days. The same 24-hour path covers noncompliance that may endanger health or the environment. Passing limits, a later annual form, or a DMR comment do not replace that notice.",
     "distractorExplanations": {
-      "a": "ABC exams are administered through state programs; this mock is an independent practice diagnostic.",
-      "b": "No licensing board issued this mock, and passing it confers no operator certification.",
-      "c": "It is an independent practice set, not released state exam questions."
+      "a": "Annual inspection forms are not the 24-hour / 5-day bypass reporting required by 122.41(m).",
+      "b": "A DMR remark is extra; unanticipated bypass still needs prompt oral and 5-day written notice.",
+      "c": "Meeting numeric limits does not waive bypass reporting, and 30 days is not the 5-day written deadline."
     },
-    "difficulty": "medium",
-    "sourceNote": "Ops P0 rewrite 2026-09-21: replaced sibling-remap bank with credential-matched items."
+    "difficulty": "hard",
+    "sourceNote": "Ops rewrite 2026-10-04 Wave-template market-standard pass."
   }
 ]

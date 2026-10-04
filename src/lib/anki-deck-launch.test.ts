@@ -354,7 +354,25 @@ describe("anki-deck-launch", () => {
       "/samples/gmat-focus-anki-deck-sample-2.webp",
       "/samples/gmat-focus-anki-deck-sample-3.webp",
     ]);
-    expect(gmat?.faqs.some((faq) => /400/i.test(faq.answer))).toBe(true);
+    expect(gmat?.faqs.some((faq) => /200/i.test(faq.answer))).toBe(true);
+    expect(gmat?.directAnswer).toMatch(/live UniPrep2Go/i);
+    expect(gmat?.directAnswer).not.toMatch(/not yet available/i);
+    expect(gmat?.facts.delivery).toMatch(/Gumroad/i);
+  });
+
+  it("exposes launched Digital SAT deck as a live Gumroad product, not waitlist copy", () => {
+    const sat = getCatalogDeckBySlug("sat-anki-deck");
+    expect(sat).toBeDefined();
+    expect(sat?.status).toBe("available");
+    expect(sat?.apkgStatus).toBe("ready");
+    expect(sat?.title).toBe("Digital SAT Anki Deck — 160 Flashcards");
+    expect(sat?.checkoutUrl).toContain("gumroad.com/l/sat-anki-deck");
+    expect(sat?.directAnswer).toMatch(/live UniPrep2Go/i);
+    expect(sat?.directAnswer).not.toMatch(/not yet available|planned UniPrep2Go/i);
+    expect(sat?.facts.delivery).toMatch(/instant download/i);
+    expect(sat?.lastUpdated).toBe("2026-10-04");
+    expect(sat?.faqs.some((faq) => /160/i.test(faq.answer))).toBe(true);
+    expect(sat?.sampleCards).toHaveLength(3);
   });
 
 

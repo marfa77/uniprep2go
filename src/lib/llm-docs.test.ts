@@ -360,8 +360,8 @@ describe("LLM documents", () => {
     expect(llms).toContain("LLM/GEO");
     expect(llms).toContain("$100");
     expect(llms).toContain("retail price agreed with you");
-    // Soft size guard — Layer B polish (PTCB/PMP/CFA L2/CAT4 2026-10-04) nudged past 81k.
-    expect(llms.length).toBeLessThan(82000);
+    // Soft size guard — SAT live cite + GMAT 2026 block (2026-10-04) nudged past 90k.
+    expect(llms.length).toBeLessThan(95000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

@@ -1,0 +1,259 @@
+{
+  "electrical-journeyman-readiness-check": {
+    "electrical-journeyman-readiness-check-wiring-001": {
+      "prompt": "A 3/4 in. EMT run between a 480 V motor disconnect and a starter uses listed couplings and connectors made up wrench-tight. When may this EMT serve as the equipment grounding conductor?",
+      "options": {
+        "a": "When the fittings are listed for grounding and the joints are made up tight",
+        "b": "Only if a green insulated 12 AWG copper is pulled with the circuit conductors",
+        "c": "Never, because a raceway may contain an EGC but cannot itself be the EGC",
+        "d": "Only on 120 V circuits; 480 V feeders require a separate copper EGC"
+      },
+      "correctOptionId": "a",
+      "explanation": "NEC 250.118 recognizes EMT as an equipment grounding conductor when the fittings are listed for grounding and the joints are made up tight. A separate wire EGC is not required solely because the circuit is 480 V. Listed wrench-tight EMT is a standard fault-return path on motor circuits.",
+      "distractorExplanations": {
+        "b": "A wire EGC may be added, but 250.118 does not require one inside listed, tight EMT just to qualify the raceway.",
+        "c": "Several metal raceways, including EMT, RMC, and IMC, are permitted EGCs under 250.118 when fittings are listed.",
+        "d": "Voltage class does not strip EMT of EGC status; the listing and tightness of the fittings control, not 120 V versus 480 V."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-wiring-002": {
+      "prompt": "A 400 A service uses 600 kcmil copper ungrounded conductors. The grounding electrode system is two driven rods. What is the minimum copper grounding electrode conductor to those rods?",
+      "options": {
+        "a": "1/0 AWG copper, matching Table 250.66 for 600 kcmil ungrounded conductors",
+        "b": "6 AWG copper; rod, pipe, or plate taps need not exceed 6 AWG",
+        "c": "4 AWG copper, matching the concrete-encased electrode (ufer) column",
+        "d": "8 AWG copper, matching Table 250.122 for a 400 A feeder equipment ground"
+      },
+      "correctOptionId": "b",
+      "explanation": "Table 250.66 would call for 1/0 copper to a water pipe or building steel on this service, but 250.66(A) caps the conductor to a rod, pipe, or plate electrode at 6 AWG copper. The rods cannot usefully take a larger GEC, so the Code does not require one.",
+      "distractorExplanations": {
+        "a": "1/0 is the Table 250.66 size to metal water pipe or structural steel for 600 kcmil copper; 250.66(A) reduces the rod tap to 6 AWG.",
+        "c": "4 AWG copper is the usual minimum to a concrete-encased electrode under 250.66(B), not to driven rods.",
+        "d": "Table 250.122 sizes equipment grounding conductors from the OCPD; GECs to electrodes use 250.66, with the 6 AWG rod cap."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-wiring-003": {
+      "prompt": "Interior metal water piping used as a grounding electrode has an insulating meter coupling that can be removed for service. What bonding is required around that meter?",
+      "options": {
+        "a": "No jumper is needed if the meter body is listed as electrically continuous",
+        "b": "Bond only the hot-water heater piping; cold water already serves as the electrode",
+        "c": "Install a jumper only when the water utility requests it in writing",
+        "d": "Install a bonding jumper around the meter so the electrode path stays continuous"
+      },
+      "correctOptionId": "d",
+      "explanation": "250.68 and 250.53(D) require a bonding jumper around likely-to-be-disconnected sections of metal water piping used as an electrode, including meters and insulating couplings. Removing the meter must not open the grounding electrode conductor path.",
+      "distractorExplanations": {
+        "a": "A listed meter body does not keep the path intact when the meter is pulled; the jumper bonds around the removable section.",
+        "b": "The electrode connection is to the metal water piping system, not a hot-only loop; skipping the meter leaves a gap on the cold line.",
+        "c": "The Code, not a utility letter, requires continuity of the electrode path around removable fittings."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-wiring-004": {
+      "prompt": "A 60 A non-motor branch circuit is installed in Schedule 40 PVC with 6 AWG copper ungrounded conductors. What is the minimum copper equipment grounding conductor?",
+      "options": {
+        "a": "8 AWG copper, using the 100 A column of Table 250.122",
+        "b": "6 AWG copper, matching the ungrounded circuit conductors in the PVC",
+        "c": "10 AWG copper, using the 60 A column of Table 250.122",
+        "d": "12 AWG copper, using the 20 A column as if it were a receptacle circuit"
+      },
+      "correctOptionId": "c",
+      "explanation": "Table 250.122 sizes the EGC from the rating of the overcurrent device, not from the ungrounded conductor size. For a 60 A OCPD the minimum copper EGC is 10 AWG. PVC is not an EGC, so that 10 AWG must be pulled and bonded at the metal enclosure.",
+      "distractorExplanations": {
+        "a": "8 AWG copper is the 100 A row of Table 250.122, not the 60 A row.",
+        "b": "Matching the 6 AWG hots oversizes the EGC; 250.122 does not require the EGC to equal the ungrounded conductors here.",
+        "d": "12 AWG is the 20 A row. A 60 A circuit is not sized as a 15/20 A receptacle branch."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-wiring-005": {
+      "prompt": "A 20 A, 120 V circuit is pulled in Schedule 40 PVC from a panelboard to a metal disconnect on a rooftop unit. How is equipment grounding completed at the disconnect?",
+      "options": {
+        "a": "Pull a copper EGC in the PVC and terminate it to the metal enclosure",
+        "b": "Rely on the PVC itself, because nonmetallic conduit is listed as an EGC",
+        "c": "Use metal locknuts on the PVC hubs; the hubs bond the enclosure without a wire",
+        "d": "Land the grounded (neutral) conductor on the disconnect’s grounding bar"
+      },
+      "correctOptionId": "a",
+      "explanation": "PVC is not an equipment grounding conductor (250.118). A copper EGC sized from Table 250.122 must be pulled in the raceway and bonded to the metal disconnect so fault current has a path back to the source. Hub locknuts on PVC do not create that path.",
+      "distractorExplanations": {
+        "b": "Article 352 PVC is a nonmetallic raceway; it is not listed as an EGC the way EMT, IMC, or RMC can be.",
+        "c": "PVC hubs and locknuts secure the raceway; they do not substitute for an EGC terminated to the enclosure.",
+        "d": "The grounded conductor is not used as an EGC on the load side of the service; that would create objectionable current on the raceway and enclosure."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-wiring-006": {
+      "prompt": "A 2 in. RMC containing 480Y/277 V feeders enters a metal enclosure through a concentric knockout that is not listed for bonding. What is required at that entry?",
+      "options": {
+        "a": "Standard locknuts on both sides of the box, because RMC is a ferrous raceway",
+        "b": "A listed bonding bushing or locknut that bonds around the knockout",
+        "c": "No extra bonding if the conduit is wrench-tight against the outer knockout ring",
+        "d": "Change the RMC to EMT so concentric knockouts are treated as automatically bonded"
+      },
+      "correctOptionId": "b",
+      "explanation": "On circuits over 250 V to ground, 250.97 requires bonding around concentric or eccentric knockouts unless the box or knockout is listed to provide a reliable bond. A bonding bushing or equivalent listed fitting jumpers the raceway to the enclosure past the weakened rings.",
+      "distractorExplanations": {
+        "a": "Ordinary locknuts may be acceptable on a single knockout listed for grounding; they do not replace 250.97 bonding on unused concentric rings.",
+        "c": "Tightness on the outer ring still leaves painted, stacked KO rings in the fault path; that is the condition 250.97 is written to avoid.",
+        "d": "EMT has the same 250.97 duty at concentric KOs on >250 V circuits; changing raceway type does not skip the bonding fitting."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-wiring-007": {
+      "prompt": "Listed flexible metal conduit is used as the wiring method to a 120 V, 20 A disposal. When may the FMC itself serve as the equipment grounding conductor?",
+      "options": {
+        "a": "For any length, provided the connectors are listed for grounding",
+        "b": "On circuits up to 60 A if the FMC is 3/4 in. trade size or larger",
+        "c": "In a wet location if the FMC has a sunlight-resistant outer jacket",
+        "d": "Listed fittings, 20 A OCPD or less, and not more than 6 ft of FMC"
+      },
+      "correctOptionId": "d",
+      "explanation": "250.118(5) and 348.60 allow FMC to serve as the EGC only with listed grounding fittings, a circuit OCPD not over 20 A, and a total length not over 6 ft. Longer or larger-ampacity runs need a wire EGC inside the FMC.",
+      "distractorExplanations": {
+        "a": "Length is capped at 6 ft when FMC is used as the EGC; listed fittings alone do not lift that limit.",
+        "b": "The OCPD cap is 20 A, not 60 A; trade size does not buy a higher EGC rating for FMC.",
+        "c": "FMC is not a wet-location wiring method by default, and a jacket does not create EGC permission beyond 250.118(5)."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-wiring-008": {
+      "prompt": "An exposed 3/4 in. EMT homerun crosses a dry storage room and lands in a metal panel. What are the support and fastening intervals for that EMT?",
+      "options": {
+        "a": "Within 12 in. of each box and at 4.5 ft intervals, matching NM cable 334.30",
+        "b": "Within 18 in. of each box and at 8 ft intervals, matching IMC in some tables",
+        "c": "Fastened within 3 ft of each box or fitting and supported every 10 ft",
+        "d": "Only at boxes; intermediate straps are not required on a straight, short run"
+      },
+      "correctOptionId": "c",
+      "explanation": "358.30 requires EMT to be securely fastened within 3 ft of each outlet box, junction box, device box, cabinet, or fitting and supported at intervals not exceeding 10 ft. NM’s 12 in. / 4.5 ft rule is Article 334, not EMT.",
+      "distractorExplanations": {
+        "a": "12 in. and 4.5 ft are the NM-B support figures in 334.30, not the EMT fastening rule.",
+        "b": "IMC (342.30) also uses 3 ft and 10 ft in the general case; 18 in. / 8 ft is not the EMT interval.",
+        "d": "Even a straight homerun needs intermediate support at 10 ft and fastening within 3 ft of each termination."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-wiring-009": {
+      "prompt": "Nine 12 AWG THHN conductors plus a 12 AWG EGC will be pulled in 1/2 in. EMT. What determines whether that count is permitted?",
+      "options": {
+        "a": "Chapter 9 Table 1 at 40% fill, using Tables 4 and 5 conductor areas",
+        "b": "Table 310.16 ampacity only, because raceway fill is treated as a heating calculation",
+        "c": "314.16 box-fill volumes applied to the EMT trade size as if it were a device box",
+        "d": "Chapter 9 Table 8 bare-conductor areas, with no percentage fill limit applied"
+      },
+      "correctOptionId": "a",
+      "explanation": "Raceway conductor fill uses Chapter 9 Table 1 (40% when more than two conductors) against the internal area in Table 4 and the insulated conductor areas in Table 5 (or Annex C). Ampacity tables and box-fill volumes do not set how many THHN wires fit in the EMT.",
+      "distractorExplanations": {
+        "b": "310.16 sets ampacity after adjustment; it does not replace Chapter 9 percentage fill for the number of conductors.",
+        "c": "314.16 sizes boxes by cubic inches for 6 AWG and smaller; it is not the raceway fill calculation.",
+        "d": "Table 8 is compact-strand and bare properties; insulated fill uses Table 5 against the Table 1 percentage."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-wiring-010": {
+      "prompt": "A metal service raceway containing the ungrounded and grounded service conductors enters a metal service disconnect. How must that raceway be bonded to the enclosure?",
+      "options": {
+        "a": "By ordinary EMT set-screw connectors, the same method used on a branch-circuit homerun",
+        "b": "A bonding jumper or 250.92(B) locknut, bushing, or threaded hub",
+        "c": "Only if the inspector labels the enclosure as a separately derived system",
+        "d": "By landing the grounded conductor on a bonding lug at every coupling along the riser"
+      },
+      "correctOptionId": "b",
+      "explanation": "Metal raceways enclosing service conductors must be bonded under 250.92 using the methods in 250.92(B): threaded bosses, bonding locknuts or bushings, or bonding jumpers. Standard set-screw fittings that are acceptable on a branch EMT homerun are not the listed service-bonding methods.",
+      "distractorExplanations": {
+        "a": "Branch-circuit EMT set-screws may qualify the raceway as an EGC, but service raceways need the bonding methods of 250.92(B).",
+        "c": "Service equipment bonding is required whether or not a separately derived system is present; SDS bonding is 250.30, not a substitute.",
+        "d": "Couplings along the riser are made up as a raceway; they are not each a service-neutral termination point."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-wiring-011": {
+      "prompt": "A metal 4 in. square box is supplied by PVC containing a 20 A circuit and a spliced copper EGC. What must be done with the metal box?",
+      "options": {
+        "a": "Leave the box unbonded; PVC is intended to isolate metal boxes from the grounding system",
+        "b": "Bond the box only if a receptacle yoke will be installed on the cover",
+        "c": "Connect the grounded (neutral) splice to a grounding clip on the box",
+        "d": "Terminate the EGC to the box with a listed grounding screw, clip, or bushing"
+      },
+      "correctOptionId": "d",
+      "explanation": "250.148 and 314.40 require metal boxes to be connected to the equipment grounding conductor when an EGC is present. With PVC, that connection is a listed screw, clip, or grounding bushing—not the raceway. Device yokes are extra; the box itself must still be bonded.",
+      "distractorExplanations": {
+        "a": "PVC isolates the raceway, which is why the box needs a wire EGC connection; isolation is not permission to leave the box floating.",
+        "b": "A receptacle yoke can bond a box when the yoke is listed for that, but 250.148 still requires the EGC to be connected at splices in the box.",
+        "c": "The grounded conductor is not an EGC on the load side of the service; neutrals stay isolated from the box except at the service or SDS bond."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-wiring-012": {
+      "prompt": "A 100 A feeder is run in 1 in. RMC with threaded couplings made up wrench-tight between two metal enclosures. Is a separate wire EGC required in the conduit?",
+      "options": {
+        "a": "No; listed threaded RMC made up tight qualifies as an EGC under 250.118",
+        "b": "Yes; rigid metal conduit never qualifies, so a copper EGC must be pulled",
+        "c": "Yes, but only if the conduit run exceeds 25 ft between enclosures",
+        "d": "No, but only when the feeder overcurrent device is 20 A or less"
+      },
+      "correctOptionId": "a",
+      "explanation": "250.118 lists rigid metal conduit as an equipment grounding conductor when the fittings are listed and the threaded joints are made up tight. Unlike FMC, RMC has no 6 ft or 20 A cap for this use. A wire EGC may still be pulled for redundancy, but it is not required by 250.118.",
+      "distractorExplanations": {
+        "b": "RMC is one of the raceways expressly recognized as an EGC; “never qualifies” confuses RMC with PVC or non-listed flexible conduit.",
+        "c": "There is no 25 ft length limit on RMC used as an EGC; that kind of cap belongs to FMC/LFMC conditions, not threaded rigid.",
+        "d": "The 20 A / 6 ft limits apply to flexible metal conduit as an EGC, not to RMC."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-wiring-013": {
+      "prompt": "Exposed EMT will be installed under a commercial parking-deck soffit that is a wet location. Which installation is permitted?",
+      "options": {
+        "a": "Indoor set-screw EMT and fittings, because the soffit keeps rain off the raceway",
+        "b": "EMT with wet-location fittings and corrosion protection as required",
+        "c": "EMT only if it is used as a sleeve for NM-B rather than for individual conductors",
+        "d": "No EMT; wet locations require RMC or IMC and prohibit electrical metallic tubing"
+      },
+      "correctOptionId": "b",
+      "explanation": "358.10 permits EMT in wet locations when the raceway, supports, and fittings are identified for wet use and corrosion protection is provided as needed. A parking-deck soffit is still wet; indoor set-screw fittings are not the wet-location listing.",
+      "distractorExplanations": {
+        "a": "A soffit does not reclassify the space as dry, and indoor set-screw fittings are not identified for wet locations.",
+        "c": "NM-B is not a wet-location cable; sleeving it in EMT under a parking deck does not make the method legal.",
+        "d": "RMC and IMC are common in wet work, but 358.10 still allows EMT with wet-location fittings; it is not prohibited outright."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-wiring-014": {
+      "prompt": "A PVC feeder from a 200 A service disconnect supplies a remote building subpanel. Where is the grounded conductor bonded to the metal enclosure?",
+      "options": {
+        "a": "At both the service and the subpanel so each enclosure has a main bonding jumper",
+        "b": "Only at the subpanel; the service uses an equipment bonding jumper instead of an MBJ",
+        "c": "At neither location if a ground rod is driven at the remote building",
+        "d": "At the service only; the subpanel isolates neutrals from EGCs and the enclosure"
+      },
+      "correctOptionId": "d",
+      "explanation": "250.24 bonds the grounded conductor to the service enclosure with the main bonding jumper. On the load side, 250.24(A)(5) and 408.40 keep the grounded conductor isolated from EGCs and metal enclosures. The remote subpanel gets an EGC (or equivalent) with the feeder; a rod there is a grounding electrode, not a second neutral-enclosure bond.",
+      "distractorExplanations": {
+        "a": "A second MBJ at the subpanel parallels the neutral and EGC and puts objectionable current on enclosures and raceways.",
+        "b": "The MBJ belongs at the service, not at a downstream subpanel; swapping them reverses 250.24.",
+        "c": "A ground rod at a separate building does not replace feeder EGCs or authorize bonding the neutral to the subpanel enclosure on a four-wire feeder."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-wiring-015": {
+      "prompt": "A pull box has one 2 in. raceway entering a wall and another 2 in. raceway leaving the adjacent wall (angle pull). What is the minimum distance between those raceway centerlines?",
+      "options": {
+        "a": "8 times the 2 in. trade size, or 16 in., as used for a straight pull",
+        "b": "4 times the trade size, because angle pulls are allowed to be shorter than straight pulls",
+        "c": "6 times the 2 in. trade size, or 12 in., per 314.28(A)(2) for angle pulls",
+        "d": "Equal to the 2 in. trade size; conductor bending radius is not a box-sizing factor"
+      },
+      "correctOptionId": "c",
+      "explanation": "314.28(A)(2) sizes angle, U, and similar pulls at six times the largest raceway trade size between entries in the same wall—here 6 × 2 in. = 12 in. Straight pulls through opposite walls use eight times (314.28(A)(1)). Mixing the multipliers is a common journeyman error.",
+      "distractorExplanations": {
+        "a": "8× is the straight-pull multiplier in 314.28(A)(1), not the angle-pull distance between adjacent walls.",
+        "b": "Angle pulls are 6×, not 4×; 4× is not a 314.28 dimension for these entries.",
+        "d": "Pull-box sizing exists specifically to protect conductor bending; trade size alone is not the dimension."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

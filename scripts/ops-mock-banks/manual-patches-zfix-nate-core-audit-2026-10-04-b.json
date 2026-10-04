@@ -1,0 +1,259 @@
+{
+  "nate-core-readiness-check": {
+    "nate-core-readiness-check-tools-016": {
+      "prompt": "A 3-ton split just had a compressor burnout. The new compressor and liquid-line drier are in, and the tech is evacuating before charging. What deep-vacuum practice is the usual target?",
+      "options": {
+        "a": "Stop at 30 psig on the low-side manifold, then immediately add charge",
+        "b": "Open shop air to 14.7 psia and treat that as a completed vacuum",
+        "c": "Run the vacuum pump for two minutes with no gauge attached",
+        "d": "Pull to 500 microns or lower and confirm the decay test holds"
+      },
+      "correctOptionId": "d",
+      "explanation": "After a burnout, moisture and noncondensables must be pulled out, not guessed. Industry practice is a deep vacuum to about 500 microns (or lower) plus a decay test that holds, proving the system is tight and dry before refrigerant goes in.",
+      "distractorExplanations": {
+        "a": "30 psig is a positive pressure, not a vacuum. Charging from there leaves air and moisture in the circuit.",
+        "b": "14.7 psia is atmospheric pressure. Shop air at that level is the opposite of an evacuation.",
+        "c": "A two-minute pump-down with no micron gauge cannot show dryness or tightness; the reading and hold test are the proof."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-017": {
+      "prompt": "A TXV cooling system is running. Suction pressure converts to 40°F saturation, and a clamp 6 inches from the compressor on the suction line reads 52°F. What superheat should be recorded?",
+      "options": {
+        "a": "12°F: suction-line temperature minus saturated suction temperature",
+        "b": "12°F: saturated suction temperature minus the suction-line reading",
+        "c": "12°F of subcooling taken from those same suction-side numbers",
+        "d": "12°F air-side split using 52°F supply minus 40°F return air"
+      },
+      "correctOptionId": "a",
+      "explanation": "Superheat is how far actual suction-line temperature sits above saturation at the same pressure. 52°F minus 40°F is 12°F of superheat. The subtraction order matters; reversing it, using liquid-line subcooling, or mixing in air temperatures all report the wrong quantity.",
+      "distractorExplanations": {
+        "b": "Reversing the subtraction yields a negative number. Superheat is line temperature above saturation, not saturation minus the line.",
+        "c": "Subcooling is taken on the liquid line against condensing saturation, not from suction pressure and a suction-line clamp.",
+        "d": "Return-to-supply split is an air-side delta T. Those 40°F and 52°F figures are refrigerant saturation and suction-line temperature."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-018": {
+      "prompt": "A tech is charging a condenser by subcooling. High-side pressure converts to 110°F saturation, and the liquid line leaving the outdoor coil reads 98°F. How is subcooling found?",
+      "options": {
+        "a": "12°F of suction superheat using those liquid-line readings",
+        "b": "12°F: saturated condensing temperature minus liquid-line temperature",
+        "c": "Minus 12°F: liquid-line temperature minus saturated condensing temperature",
+        "d": "12°F of discharge superheat leaving the compressor scroll"
+      },
+      "correctOptionId": "b",
+      "explanation": "Subcooling is how far the liquid is cooled below condensing saturation at the measured high-side pressure. 110°F minus 98°F is 12°F of subcooling. That value is used to finish a weigh-adjustment or TXV charge by the manufacturer’s liquid-line target, not by suction or discharge superheat.",
+      "distractorExplanations": {
+        "a": "Superheat uses suction pressure and suction-line temperature. These numbers are high-side saturation and liquid-line temperature.",
+        "c": "A properly subcooled liquid line is colder than saturation, so this order produces a negative value and the wrong sign.",
+        "d": "Discharge superheat is compressor outlet temperature minus condensing saturation; it is not liquid subcooling leaving the coil."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-019": {
+      "prompt": "On a running 2-ton heat pump in cooling, the tech hoses up a digital manifold and clips its thermistor on the suction line. What is that setup mainly for?",
+      "options": {
+        "a": "Reading deep vacuum in microns to prove the circuit is dry",
+        "b": "Measuring total external static across the indoor blower",
+        "c": "Converting pressures to saturation to compute superheat",
+        "d": "Weighing how many pounds of refrigerant were added last visit"
+      },
+      "correctOptionId": "c",
+      "explanation": "A digital manifold with a temperature clamp converts measured pressures to saturation on the PT chart and subtracts the clamped line temperature to give live superheat (or subcooling on the liquid line). That is a charging and diagnosis tool, not a micron, static, or scale instrument.",
+      "distractorExplanations": {
+        "a": "Compound gauges cannot resolve microns. Dehydration is confirmed with a dedicated micron gauge on the vacuum port.",
+        "b": "TESP is an air-side manometer job with static probes in the ducts, not refrigerant hoses on the service valves.",
+        "d": "Charge mass is read on a refrigerant scale. The manifold reports pressure and computed saturation, not pounds added."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-tools-020": {
+      "prompt": "An 80 kBtu/h natural-gas furnace is being commissioned. The tech taps a hose from the gas-valve manifold port to a manometer. What should that instrument be reading?",
+      "options": {
+        "a": "Manifold gas pressure of about 3.5 psig for natural gas",
+        "b": "Deep-vacuum microns while the burners are firing",
+        "c": "Flue-gas carbon monoxide in ppm at the draft hood",
+        "d": "Manifold or inlet gas pressure in inches of water column"
+      },
+      "correctOptionId": "d",
+      "explanation": "Residential natural-gas manifold pressure is a low water-column measurement (often about 3.5 in. WC), so a manometer—not a refrigerant psig gauge—is the right tool. Inlet pressure is also checked in inches WC against the valve rating before clocking the meter or setting offset.",
+      "distractorExplanations": {
+        "a": "3.5 psig is far too high for a typical residential manifold; the common target is about 3.5 inches of water column.",
+        "b": "Microns belong to evacuation of a refrigerant circuit. A firing furnace manometer is measuring gas pressure, not vacuum.",
+        "c": "CO in ppm is a combustion-analyzer reading. A manometer measures pressure, not flue-gas concentration."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-tools-021": {
+      "prompt": "A packaged heat pump is loud at the indoor grill and the supply feels weak. The tech wants total external static pressure. How is TESP taken?",
+      "options": {
+        "a": "Supply plus return static at the air handler, blower running, filter in",
+        "b": "Supply-plenum static only, blower on high, return probe left out",
+        "c": "Static with the blower off so the manometer needles can settle",
+        "d": "Static with the filter pulled to get a clean, unrestricted baseline"
+      },
+      "correctOptionId": "a",
+      "explanation": "TESP is the sum of the supply and return static magnitudes at the air handler with the blower running and the system as it operates (filter installed). Compare that total to the blower’s rated external static. High TESP explains low airflow, noise, and coil freeze-up risk.",
+      "distractorExplanations": {
+        "b": "Supply static alone omits return restriction (filter, grille, duct). TESP needs both sides of the blower.",
+        "c": "With the blower off there is no airflow, so static is essentially zero and says nothing about the duct system.",
+        "d": "Pulling the filter lowers the reading and hides the restriction the customer actually runs with."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-022": {
+      "prompt": "A 3-ton residential cooling coil is being set up. What rule-of-thumb airflow should the tech start from, then verify with instruments?",
+      "options": {
+        "a": "250 CFM per ton as a universal humid-climate dehumidification rate",
+        "b": "About 400 CFM per ton, then check split, static, or a flow method",
+        "c": "550 CFM per ton because the indoor coil is also used for heating",
+        "d": "800 CFM per ton so the evaporator surface cannot ice in cooling"
+      },
+      "correctOptionId": "b",
+      "explanation": "Four hundred CFM per ton is the usual residential starting point (about 1,200 CFM on a 3-ton). Confirm it with temperature split, TESP versus the blower table, a flow hood, or a pressure-matching method. Do not leave airflow as a guess after charging.",
+      "distractorExplanations": {
+        "a": "Humid-climate setups may drop toward about 350 CFM/ton, not 250. That low a rate risks a frozen coil and poor capacity.",
+        "c": "Heat-pump indoor airflow is still near 400 CFM/ton; 550 overshoots it and can cut heating supply temperature.",
+        "d": "Doubling design airflow wrecks latent removal and raises static and noise. Ice is prevented near 400 CFM/ton, not 800."
+      },
+      "difficulty": "easy"
+    },
+    "nate-core-readiness-check-tools-023": {
+      "prompt": "A 230 V single-phase compressor is running in cooling. The tech puts a clamp-on ammeter around one run conductor. What comparison is that reading for?",
+      "options": {
+        "a": "Insulation resistance to ground in megohms while the motor runs",
+        "b": "Running amps versus the locked-rotor amp rating to prove it is healthy",
+        "c": "Running amps versus nameplate RLA or FLA under the present load",
+        "d": "Winding ohms between C, S, and R with the clamp jaws closed"
+      },
+      "correctOptionId": "c",
+      "explanation": "A clamp meter measures current while the compressor is loaded. Compare that amperage to rated load amps (or FLA on some motors), allowing for the actual voltage and operating pressures. High amps can mean overcharge, dirty condenser, or a failing motor; low amps can mean undercharge or a weak compressor.",
+      "distractorExplanations": {
+        "a": "Insulation to ground is a megohmmeter test with power locked out, not a live clamp-amp reading.",
+        "b": "LRA is inrush with a locked rotor, several times running current. Steady running amps are judged against RLA, not LRA.",
+        "d": "C-S-R winding resistance is an ohmmeter test on a de-energized motor. A clamp measures current, not ohms."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-024": {
+      "prompt": "A cooling coil is moving air but the space stays humid. The tech brings a Bluetooth psychrometric probe to the return and supply. What is that tool for?",
+      "options": {
+        "a": "Refrigerant dew point so liquid-line subcooling can be calculated",
+        "b": "Duct static pressure that proves a restricted return or dirty filter",
+        "c": "Flue-gas temperature and oxygen used to set combustion efficiency",
+        "d": "Wet-bulb and dry-bulb (or enthalpy) to judge airflow and capacity"
+      },
+      "correctOptionId": "d",
+      "explanation": "A psychrometer measures air wet-bulb, dry-bulb, and the derived humidity and enthalpy. Comparing return to supply enthalpy shows whether the coil is doing sensible and latent work. That air-side picture is how you catch low latent capacity even when the blower is moving air.",
+      "distractorExplanations": {
+        "a": "Subcooling uses refrigerant high-side pressure and liquid-line temperature, not air-stream dew point from a psychrometer.",
+        "b": "Static pressure is a manometer measurement. A psychrometric probe reads temperature and moisture, not inches of water.",
+        "c": "Stack temperature and O2 are combustion-analyzer readings on a furnace or boiler, not a cooling-coil air test."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-025": {
+      "prompt": "A tech is recovering R-410A from a 3-ton split into a 30 lb recovery cylinder on a scale. How must the cylinder be filled?",
+      "options": {
+        "a": "By weight, stopping before the cylinder’s rated fill limit (about 80%)",
+        "b": "By weight, filling to 100 percent of the stamped water capacity",
+        "c": "By pressure, stopping at 80 percent of the tank’s stamped rating",
+        "d": "By sight, stopping when liquid shows at the vapor-valve port"
+      },
+      "correctOptionId": "a",
+      "explanation": "Recovery cylinders are filled by weight so liquid has room to expand with temperature. Stay at or under the cylinder’s rated fill (commonly 80% of water capacity using the W.C. × 0.8 formula). Overfill is a rupture-disk or tank-failure hazard.",
+      "distractorExplanations": {
+        "b": "Filling to 100% of water capacity leaves no vapor space. Heat then raises hydrostatic pressure and can burst the cylinder.",
+        "c": "Tank pressure tracks temperature, not liquid level. An 80% pressure reading is not a fill limit.",
+        "d": "Liquid at the vapor valve means the tank is already liquid-full, past the safe fill, with no expansion space left."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-026": {
+      "prompt": "After a burnout, power is locked out and the compressor leads are lifted. The tech connects an analog megohmmeter from a winding terminal to the shell. What is being checked?",
+      "options": {
+        "a": "Running amps against nameplate RLA while the megger is connected",
+        "b": "Winding insulation resistance to ground on the megohm scale",
+        "c": "Low-ohm winding-to-winding resistance among C, S, and R",
+        "d": "Run-capacitor microfarads before the compressor is restarted"
+      },
+      "correctOptionId": "b",
+      "explanation": "A megohmmeter applies a high test voltage and reads insulation resistance to ground in megohms. After a burnout that tells you whether windings are still isolated from the shell before a new start or a replace decision. It is not an amp, C-S-R ohm, or capacitor test.",
+      "distractorExplanations": {
+        "a": "RLA comparison is a clamp-on ammeter check on a running motor. A megger is used only with the circuit de-energized.",
+        "c": "C-S-R winding resistance is a low-range ohmmeter measurement. The megger is for insulation to ground, not winding ohms.",
+        "d": "Microfarads are read with a capacitance meter on a discharged capacitor, not with megohm insulation leads."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-027": {
+      "prompt": "A 3-ton cooling system with a clean filter shows 75°F return and 70°F supply at the plenum. What does that far-too-low split usually mean?",
+      "options": {
+        "a": "A cracked heat exchanger mixing furnace gases into the supply air",
+        "b": "A clogged condensate pan that is flooding and extra-cooling the coil",
+        "c": "Too much airflow, or a coil that is undercharged or underperforming",
+        "d": "Normal high-efficiency behavior, because a tiny split saves energy"
+      },
+      "correctOptionId": "c",
+      "explanation": "A typical cooling split is about 16–22°F. Five degrees means the coil is removing little heat from the air: excess CFM, low charge, a weak compressor, or a restricted metering device. Measure airflow and refrigerant circuit before adding gas. Low airflow would raise the split, not collapse it.",
+      "distractorExplanations": {
+        "a": "A cracked heat exchanger is a heating-season combustion hazard. It does not explain a 5°F cooling delta T.",
+        "b": "A clogged drain causes overflow or a float-switch shutdown, not a collapsed supply-to-return temperature split.",
+        "d": "A very small split is lost capacity, not higher efficiency. The equipment is moving air without doing the cooling work."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-028": {
+      "prompt": "An evaporator was replaced and the circuit is empty. The nameplate charge is 6.2 lb plus a line-set adder. How should the factory charge be put in?",
+      "options": {
+        "a": "Feed vapor until the suction line frosts all the way to the compressor",
+        "b": "Add vapor until the liquid-line sight glass looks empty of bubbles",
+        "c": "Copy last season’s invoice pounds onto the tank without a scale",
+        "d": "Evacuate, then weigh the nameplate charge adjusted for line-set length"
+      },
+      "correctOptionId": "d",
+      "explanation": "After a major repair the accurate residential method is a proper vacuum, then a weigh-in of the factory charge plus the manufacturer’s extra ounces per foot of liquid line. Superheat or subcooling is a check afterward, not a substitute for the scale on an empty system.",
+      "distractorExplanations": {
+        "a": "Frost to the compressor is an overcharge/flooding sign, not a weigh-in endpoint, and it risks slugging the compressor.",
+        "b": "A clear or empty glass is a poor charge target on many TXV systems and does not replace weighing the nameplate amount.",
+        "c": "Last year’s invoice may not match this line set or this repair. Charge mass has to be weighed for this system."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-029": {
+      "prompt": "Supply air is weak and the blower sounds strained. The tech puts dual-port manometer probes immediately before and after the indoor coil. What does that reading show?",
+      "options": {
+        "a": "Air-side pressure drop that flags a dirty coil or restricted media",
+        "b": "Airflow in CFM directly, with no fan table or flow hood needed",
+        "c": "Refrigerant-side pressure drop from distributor to suction header",
+        "d": "Total external static for the entire supply-and-return duct system"
+      },
+      "correctOptionId": "a",
+      "explanation": "A dual-port manometer across one component reads that component’s air-side pressure drop. A high drop across the coil or filter means dirty media, a wet-clogged coil, or a blocked drain pan. Compare the drop to the manufacturer’s dirty-filter or coil limit.",
+      "distractorExplanations": {
+        "b": "A manometer reads inches of water, not CFM. Converting to airflow needs a fan table, coil table, or a true flow measurement.",
+        "c": "Water-column probes are in the airstream. Refrigerant drop is read with gauge hoses on the refrigerant circuit.",
+        "d": "TESP is supply plus return static at the air handler. One coil or filter drop is only that part’s share of the total."
+      },
+      "difficulty": "medium"
+    },
+    "nate-core-readiness-check-tools-030": {
+      "prompt": "A new gas cock is going onto black-iron pipe at a furnace. What thread sealant belongs on that joint?",
+      "options": {
+        "a": "Standard white PTFE plumbing tape, including on any flare nuts",
+        "b": "A listed gas-rated compound or yellow tape on the male NPT threads",
+        "c": "POE refrigerant oil brushed on the threads as a lubricant-sealant",
+        "d": "Any general pipe dope packed onto the female threads for coverage"
+      },
+      "correctOptionId": "b",
+      "explanation": "Gas NPT joints need a listed gas-rated pipe dope or gas-rated (typically yellow) PTFE tape on the male threads, sparing the first thread so compound is not pushed into the valve. Flare and union metal-to-metal faces get no tape. The listing is what makes the joint legal and leak-tight on fuel gas.",
+      "distractorExplanations": {
+        "a": "White plumbing tape is not the gas listing, and flare fittings seal metal to metal—tape on a flare is a leak path.",
+        "c": "POE oil is for refrigerant flares and O-rings. It is not a listed fuel-gas thread sealant.",
+        "d": "Dope on female threads is dragged into the gasway, and unlisted general dope may not be approved for fuel gas."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

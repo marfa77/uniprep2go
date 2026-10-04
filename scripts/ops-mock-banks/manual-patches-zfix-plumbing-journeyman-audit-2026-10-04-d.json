@@ -1,0 +1,259 @@
+{
+  "plumbing-journeyman-readiness-check": {
+    "plumbing-journeyman-readiness-check-code-001": {
+      "prompt": "A journeyman is bidding a four-story apartment in a city that adopted the International Plumbing Code. Unless the ordinance amends it, which model code governs the plumbing?",
+      "options": {
+        "a": "The ICC International Plumbing Code as adopted by the city",
+        "b": "The IAPMO Uniform Plumbing Code even though the city listed IPC",
+        "c": "NFPA 54 fuel-gas rules used as the whole plumbing code",
+        "d": "ASME A112 fixture standards standing in for the plumbing code"
+      },
+      "correctOptionId": "a",
+      "explanation": "Jurisdictions adopt a model plumbing code by ordinance. Where the city adopted the IPC, that ICC document—plus any local amendments—is the enforceable plumbing code. The UPC is a different IAPMO model code and is not in force unless the city adopted it instead.",
+      "distractorExplanations": {
+        "b": "IAPMO's Uniform Plumbing Code is a separate model; it does not override a city's IPC adoption.",
+        "c": "NFPA 54 covers fuel gas, not the full plumbing system of fixtures, DWV, and water supply.",
+        "d": "ASME A112 standards list fixtures and fittings; they are not a substitute for the adopted plumbing code."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-code-002": {
+      "prompt": "Permit drawings for a medical office cite the Uniform Plumbing Code throughout the spec. Which organization publishes that model code?",
+      "options": {
+        "a": "ICC, the publisher of the International Plumbing Code (IPC)",
+        "b": "NFPA, the publisher of NFPA 54 fuel gas and fire codes",
+        "c": "IAPMO, which writes and publishes the Uniform Plumbing Code",
+        "d": "ASME, through A112 fixture and fitting product standards series"
+      },
+      "correctOptionId": "c",
+      "explanation": "The Uniform Plumbing Code is IAPMO's model plumbing code. ICC publishes the IPC, NFPA publishes fire and fuel-gas documents, and ASME writes product standards such as A112—none of those bodies publish the UPC.",
+      "distractorExplanations": {
+        "a": "ICC publishes the IPC, a competing model code, not the Uniform Plumbing Code.",
+        "b": "NFPA publishes NFPA 54, NFPA 13, and related fire/fuel-gas codes, not the UPC.",
+        "d": "ASME A112 addresses fixtures and fittings; ASME does not publish the UPC model code."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-code-003": {
+      "prompt": "A listed vacuum breaker is on the truck, but the inspector says it cannot be used on this hose bibb. Who has final approval authority in that jurisdiction?",
+      "options": {
+        "a": "The model-code publisher that wrote the adopted code text",
+        "b": "The general contractor managing the overall construction project",
+        "c": "The listing laboratory that certified the plumbing product",
+        "d": "The local official or office that enforces the adopted code"
+      },
+      "correctOptionId": "d",
+      "explanation": "The Authority Having Jurisdiction is the local official or office that adopts, interprets, and enforces the plumbing code and issues permits. Listing and model-code text inform that decision, but they do not replace the AHJ's approval power.",
+      "distractorExplanations": {
+        "a": "ICC and IAPMO write model codes but have no local enforcement or permit power.",
+        "b": "The contractor must comply; the contractor is not the enforcing authority.",
+        "c": "Listing labs certify products to a standard; the AHJ still decides job-site approval."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-code-004": {
+      "prompt": "A homeowner asks the journeyman to skip the permit on a water-heater change-out to finish before a weekend. Why must the permit still be obtained?",
+      "options": {
+        "a": "So the AHJ can inspect the work for public health and safety",
+        "b": "So the city assumes all liability if the work later fails",
+        "c": "So the manufacturer warranty on the heater can be registered",
+        "d": "So the assessor can revalue the house for property taxes"
+      },
+      "correctOptionId": "a",
+      "explanation": "Plumbing permits exist so the AHJ can review and inspect work that affects public health and safety—gas, combustion air, T&P relief, and potable connections. Skipping the permit hides those checks; it does not transfer liability or create a warranty.",
+      "distractorExplanations": {
+        "b": "A permit does not shift defect liability onto the city; it triggers code inspections.",
+        "c": "Warranties are registered with the manufacturer, not created by the plumbing permit.",
+        "d": "Assessors may see permit data, but the code purpose is health-and-safety inspection."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-code-005": {
+      "prompt": "The water utility requires a reduced-pressure backflow assembly on a fire-sprinkler tap from the domestic main. What is the cross-connection program meant to prevent?",
+      "options": {
+        "a": "Sewer gas entering occupied rooms through dry fixture traps",
+        "b": "Keep contaminated water from entering the potable supply",
+        "c": "Keep storm inflow from entering the building sanitary sewer",
+        "d": "Water-hammer surges on the municipal distribution main"
+      },
+      "correctOptionId": "b",
+      "explanation": "Cross-connection control stops backflow of nonpotable or contaminated water into the potable system. Fire lines, irrigation, and boilers are typical hazards; approved backflow assemblies and testing programs protect the public water supply.",
+      "distractorExplanations": {
+        "a": "Sewer gas is controlled by traps and vents, not by backflow assemblies on the water main.",
+        "c": "Storm inflow is an I&I or storm-drain issue, not a potable-water cross-connection program.",
+        "d": "Surge control is hydraulic; cross-connection programs address contamination, not hammer."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-code-006": {
+      "prompt": "A supplier offers unmarked pipe that 'the last crew ran for years' on a potable riser. When is a material approved under the plumbing code?",
+      "options": {
+        "a": "When the manufacturer labels the box as plumbing-grade stock",
+        "b": "When the contractor has used the same unmarked product on prior jobs",
+        "c": "When it is listed for that use to a code-referenced standard",
+        "d": "When one listing for DWV automatically covers potable pressure"
+      },
+      "correctOptionId": "c",
+      "explanation": "Code-approved materials are those listed or accepted for the intended use to a referenced standard and accepted by the AHJ. A maker's marketing label or prior-job habit is not approval, and a DWV listing does not authorize potable pressure service.",
+      "distractorExplanations": {
+        "a": "A manufacturer's own 'plumbing-grade' sticker is not a listing to a referenced standard.",
+        "b": "Field familiarity is not code approval; unmarked pipe cannot be accepted on that basis.",
+        "d": "Listings are use-specific; DWV-rated pipe is not automatically approved for potable pressure."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-code-007": {
+      "prompt": "A single bathroom group—water closet, lavatory, and tub—needs a new vent. Unless the local table is stricter, what size does the vent typically start at?",
+      "options": {
+        "a": "1/2 inch, matching a typical lavatory or ice-maker supply",
+        "b": "3/4 inch, matching a common water-heater T&P relief line",
+        "c": "1 inch nominal, matching many fixture cold-supply risers",
+        "d": "1-1/2 inches, the usual start for a bathroom-group vent"
+      },
+      "correctOptionId": "d",
+      "explanation": "Model codes set a minimum vent of 1-1/4 inch, and a bathroom group that includes a water closet is commonly vented at 1-1/2 inch (or larger per the local DFU table). Half-inch through 1-inch sizes are supply tubing, not DWV vents.",
+      "distractorExplanations": {
+        "a": "1/2 inch is a water-supply size; it is far below the code minimum vent diameter.",
+        "b": "3/4 inch is a relief or supply size and is below the 1-1/4 inch vent minimum.",
+        "c": "1 inch still undersizes the vent; bathroom-group vents typically start at 1-1/2 inch."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-code-008": {
+      "prompt": "Remote lavatories starve when several fixtures run at once, even though the meter looks large. How does the plumbing code size water piping?",
+      "options": {
+        "a": "Fixture units, developed length, and remaining pressure",
+        "b": "Drainage fixture units plus the slope of the building drain",
+        "c": "A velocity cap only, ignoring friction over developed length",
+        "d": "Meter size alone, matched to the building main shutoff valve"
+      },
+      "correctOptionId": "a",
+      "explanation": "Water-supply sizing uses water-supply fixture units, developed length, and available pressure (minus friction and elevation). Velocity limits are a check, not the whole method. Drainage fixture units and slope size the DWV system, not the supply.",
+      "distractorExplanations": {
+        "b": "DFUs and slope size drains and vents; they do not size potable supply piping.",
+        "c": "Velocity matters, but friction over developed length and remaining pressure also control size.",
+        "d": "The meter is one constraint; branches are still sized from fixture units, length, and pressure."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-code-009": {
+      "prompt": "A client wants shower and laundry waste stored and pumped to landscape irrigation. Where gray water is allowed, what must the system do?",
+      "options": {
+        "a": "Tie into the potable supply through a single check valve",
+        "b": "Remain separated, filtered, and limited to approved uses",
+        "c": "Hold untreated gray water in the tank for at least 72 hours",
+        "d": "Include kitchen-sink waste and toilet discharge in the same tank"
+      },
+      "correctOptionId": "b",
+      "explanation": "Where permitted, gray-water systems must stay physically separated from potable piping, meet filtration/disinfection and storage limits, and serve only approved uses such as subsurface irrigation. Kitchen waste and soil waste are blackwater, not gray water.",
+      "distractorExplanations": {
+        "a": "A single check valve is not backflow protection; gray water must not interconnect with potable piping.",
+        "c": "Codes typically cap untreated storage (often about 24 hours) to limit odor and bacterial growth.",
+        "d": "Toilet discharge is blackwater; many codes also exclude kitchen sinks from gray-water collection."
+      },
+      "difficulty": "hard"
+    },
+    "plumbing-journeyman-readiness-check-code-010": {
+      "prompt": "An apprentice cannot tell how a waste stack turns from a floor plan alone. What does an isometric plumbing drawing show that a plan view does not?",
+      "options": {
+        "a": "A scaled plan view of piping as seen from directly above",
+        "b": "A single-wall elevation of fixture heights on one face",
+        "c": "A 3D-style view of pipe runs used to read the routing",
+        "d": "A building cross-section showing structural member loads"
+      },
+      "correctOptionId": "c",
+      "explanation": "Isometric plumbing drawings show piping in a 3D-style view, typically with 30-degree offsets, so vertical stacks and horizontal runs can be read on one sheet. Plan and elevation views are 2D; structural sections are not plumbing isometrics.",
+      "distractorExplanations": {
+        "a": "A plan is a top-down 2D view; an isometric is drawn to show three-dimensional routing.",
+        "b": "Elevations show one wall face; they do not replace a system-wide isometric.",
+        "d": "Structural sections show building loads; they are not used to lay out plumbing isometrics."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-code-011": {
+      "prompt": "During a restaurant remodel, both a plumbing inspector and a health inspector walk the kitchen. What may the health department specifically regulate?",
+      "options": {
+        "a": "Branch circuit wiring for water heaters, pumps, and disposers",
+        "b": "Structural notching and boring limits at plumbing holes",
+        "c": "The utility's rate schedule for municipal water service",
+        "d": "Plumbing sanitation in food sites and public health facilities"
+      },
+      "correctOptionId": "d",
+      "explanation": "Health departments commonly overlay extra sanitary rules on food-service and public-health plumbing—indirect wastes, mop sinks, grease control, and hand-wash fixtures. Electrical, structural, and utility-rate issues belong to other agencies.",
+      "distractorExplanations": {
+        "a": "Electrical inspectors enforce wiring to equipment; health departments do not adopt the electrical code.",
+        "b": "Notching and boring limits are building-code structural rules, not health-department plumbing.",
+        "c": "Water rates are a utility or commission matter, not a health-department plumbing regulation."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-code-012": {
+      "prompt": "A reduced-pressure principle assembly on a boiler fill is specified as ASSE 1013. What do ASSE standards typically cover?",
+      "options": {
+        "a": "Backflow preventers and related plumbing-device performance",
+        "b": "Fitting dimensions in the ASME B16 product-standards series",
+        "c": "The model plumbing code text adopted by states and cities",
+        "d": "Fire-sprinkler installation rules under NFPA 13 standards"
+      },
+      "correctOptionId": "a",
+      "explanation": "ASSE (now IAPMO/ASSE) writes performance standards for plumbing devices—backflow preventers, mixing valves, and similar products. Model codes come from ICC or IAPMO; B16 is ASME; sprinkler installation is NFPA 13.",
+      "distractorExplanations": {
+        "b": "ASME B16 covers fitting dimensions; it is not an ASSE plumbing-device performance standard.",
+        "c": "IPC and UPC are model codes; ASSE publishes device standards, not the adopted code text.",
+        "d": "NFPA 13 governs sprinkler installation; ASSE 1013 is a backflow-preventer performance standard."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-code-013": {
+      "prompt": "The adopted IPC table shows a 12-inch bury, but the city ordinance requires water service 42 inches deep. What may local code amendments legally do?",
+      "options": {
+        "a": "Apply to a single permit instead of the whole jurisdiction",
+        "b": "Modify the model code for local climate or soil conditions",
+        "c": "Take effect from an inspector's verbal preference alone",
+        "d": "Replace the adopted code with manufacturer instructions"
+      },
+      "correctOptionId": "b",
+      "explanation": "Governing bodies adopt the model code by ordinance and may amend it for local conditions such as frost depth, seismic rules, or water quality. Amendments apply jurisdiction-wide; a verbal inspector preference or a one-job deal is not an amendment.",
+      "distractorExplanations": {
+        "a": "A one-job change is a variance or modification, not a code amendment.",
+        "c": "Amendments must be formally adopted; an inspector's preference is not code.",
+        "d": "Manufacturer instructions apply through listings; they do not replace the adopted code."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-code-014": {
+      "prompt": "A new DWV stack is plugged and ready for the inspector. What is the common model-code tightness test for drainage and vent piping?",
+      "options": {
+        "a": "A 5-foot water head or 3 psi air held 15 minutes with no loss",
+        "b": "A 10-foot water head or 5 psi air held 5 minutes with no loss",
+        "c": "A 10-foot water head or 5 psi air held 15 minutes with no loss",
+        "d": "A 100 psi water or 50 psi air test held 15 minutes with no loss"
+      },
+      "correctOptionId": "c",
+      "explanation": "IPC/UPC DWV testing commonly requires a 10-foot water column or a 5 psi air test held 15 minutes with no pressure or water-level loss. Water-supply tests use much higher pressures and must not be applied to DWV piping.",
+      "distractorExplanations": {
+        "a": "A 5-foot head or 3 psi air is below the usual 10-foot / 5 psi DWV test.",
+        "b": "The pressure values match, but the hold time is 15 minutes, not 5.",
+        "d": "Those pressures belong to water-distribution tests; they can damage DWV joints."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-code-015": {
+      "prompt": "A helper wants to sit the journeyman exam after two weeks of carrying pipe. What does a typical journeyman plumber license require?",
+      "options": {
+        "a": "Completing a short online quiz with no documented field hours",
+        "b": "Skipping apprenticeship, related instruction, and field hours",
+        "c": "Showing a deed or lease in the licensing city or county",
+        "d": "Completing documented experience and passing the trade exam"
+      },
+      "correctOptionId": "d",
+      "explanation": "Most jurisdictions require documented apprenticeship or equivalent hours plus a trade exam before issuing a journeyman plumber license. A two-week helper stint, an online quiz, or property ownership does not meet those experience and testing requirements.",
+      "distractorExplanations": {
+        "a": "Licensing boards require documented hours and a proctored trade exam, not a short online quiz.",
+        "b": "Apprenticeship or equivalent supervised experience is the usual path, not a waiver of all training.",
+        "c": "Homeownership is unrelated to trade competence or licensing eligibility."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

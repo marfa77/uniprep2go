@@ -1,0 +1,259 @@
+{
+  "medication-aide-readiness-check": {
+    "medication-aide-readiness-check-rights-001": {
+      "prompt": "On the 0800 pass, a new admit is sitting in a roommate's recliner. Before giving morning tablets, how should the medication aide apply the six rights?",
+      "options": {
+        "a": "Confirm two identifiers, then match drug, dose, route, and time, and document after the resident swallows",
+        "b": "Match tablet color to last week's blister and skip identifiers because the door card already shows the room",
+        "c": "Use the room number as the identifier, pour the cups, and chart the entire pass before leaving the cart",
+        "d": "Ask the roommate to confirm the full name, then document the pass before any tablets are offered"
+      },
+      "correctOptionId": "a",
+      "explanation": "The six rights are right person, drug, dose, route, time, and documentation. Person is confirmed with two identifiers, not a chair or room. Documentation happens after the dose is given, not before. A medication aide in long-term care works from the MAR under nurse supervision and does not skip rights because someone looks familiar.",
+      "distractorExplanations": {
+        "b": "Color is not a right; generics change appearance. Room signage is location, not a resident identifier.",
+        "c": "Room number is not an identifier, and charting before the swallow falsifies the MAR if the resident refuses.",
+        "d": "A roommate is not a required identifier, and documenting before administration is not the right of documentation."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-002": {
+      "prompt": "The 1700 MAR line for Mr. Ortiz lists warfarin 2 mg, but the labeled blister in that slot reads warfarin 5 mg. What should the medication aide do?",
+      "options": {
+        "a": "Give the 5 mg tablet because the pharmacy label is assumed to override a typed MAR line",
+        "b": "Hold the dose and have the licensed nurse clarify the mismatch before anything is given",
+        "c": "Give both strengths so the resident does not miss evening anticoagulation coverage",
+        "d": "Borrow a 2 mg tablet from a roommate's card if that roommate is NPO for a procedure"
+      },
+      "correctOptionId": "b",
+      "explanation": "When the MAR and the labeled product disagree, the aide holds the dose and gets a licensed nurse to resolve the order. Guessing which strength is “really” intended is a wrong-dose risk. Medication aides do not independently change warfarin doses or mix cards between residents.",
+      "distractorExplanations": {
+        "a": "Neither the blister nor the MAR is assumed correct alone; a mismatch is a hold-and-clarify, not a label-wins rule.",
+        "c": "Giving both creates an unprescribed 7 mg dose; that is a dose change outside aide scope.",
+        "d": "Using another resident's supply is a wrong-person and diversion risk, not a way to “fix” a label mismatch."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-003": {
+      "prompt": "At lunch meds, Ms. Chen looks at her lisinopril and says, “That's not my pill—mine is pink.” A new generic manufacturer started this week. What should the aide do?",
+      "options": {
+        "a": "Coach her to swallow it anyway because you already compared the MAR line to the blister card",
+        "b": "Hide the tablet in pudding so she will take it tonight without seeing the new tablet color",
+        "c": "Hold the dose, do not force a swallow, and notify the licensed nurse to verify the product",
+        "d": "Mark the MAR as given now and add a refusal note later if she still objects at supper"
+      },
+      "correctOptionId": "c",
+      "explanation": "A resident who says the tablet is wrong is a safety check, even when a generic change is likely. The aide holds the dose, does not coerce or conceal the drug, and notifies the licensed nurse so identity, strength, and label can be verified. Charting as given before the swallow is falsification.",
+      "distractorExplanations": {
+        "a": "Coaxing a swallow ignores the resident's check and can complete a wrong-drug or wrong-dose error.",
+        "b": "Covert administration without an order and care-plan process is not allowed and hides a possible product mix-up.",
+        "d": "Documenting a dose as given when it was not, or delaying a refusal note, falsifies the MAR."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-004": {
+      "prompt": "Mr. Hale has new swallowing trouble. Family asks the aide to crush his metoprolol XL in applesauce for the noon pass. When may the aide crush it?",
+      "options": {
+        "a": "Whenever a resident coughs on whole tablets, because new dysphagia always authorizes crush on the spot",
+        "b": "Whenever the resident prefers applesauce at noon, even if the order still lists swallow whole",
+        "c": "Whenever the tablet is scored down the middle, because a score line means the form may be crushed",
+        "d": "Only when the current order and that dosage form both allow crush, not XL on the aide's own call"
+      },
+      "correctOptionId": "d",
+      "explanation": "Crushing is a route/form change. Extended-release (XL) and enteric-coated products can dump the full dose or irritate the gut if crushed. A medication aide does not independently alter the form; crush only if the order and the product allow it, otherwise the nurse or pharmacist must arrange another form.",
+      "distractorExplanations": {
+        "a": "Dysphagia is a reason to notify the nurse for a different form, not a license to crush XL tablets.",
+        "b": "Preference for applesauce does not override an intact-swallow order or an extended-release design.",
+        "c": "A score may allow splitting if labeled, not crushing; some scored tablets are still extended-release."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-005": {
+      "prompt": "At 1430 a resident requests hydrocodone 5 mg PRN for hip pain. The order is q4h PRN; the MAR shows the last dose at 1230. What must the aide do?",
+      "options": {
+        "a": "Check the ordered interval first, then document the reason given and the resident's response",
+        "b": "Give it every four hours on a clock so breakthrough pain stays ahead of the next request",
+        "c": "Chart only the time of the tablet because PRN reasons are handled later in verbal report",
+        "d": "Give it on request without checking the last dose time, then ask the nurse after the swallow"
+      },
+      "correctOptionId": "a",
+      "explanation": "PRN is not a scheduled pass. The aide confirms the indication, the minimum interval, and any daily maximum on the MAR, then documents why the dose was given and how the resident responded. Two hours after a q4h dose is too soon; that hold is part of right time and right dose, reported to the nurse as needed.",
+      "distractorExplanations": {
+        "b": "Turning PRN into a fixed q4h schedule is an unordered routine dose, not as-needed use.",
+        "c": "PRN charting must include indication and response, not time alone; verbal report does not replace the MAR.",
+        "d": "Skipping the interval check risks stacking opioid doses; notify the nurse before, not after, an extra tablet."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-006": {
+      "prompt": "Two residents named Helen sit at the same dining table. One has 1600 furosemide due. How should the medication aide identify the right person?",
+      "options": {
+        "a": "Use table number and the seat closest to the window as the two identifiers",
+        "b": "Use the facility's two identifiers, such as name plus photo or birth date, at the chair",
+        "c": "Call “Helen” and give the cup to whoever answers, because the dining room is supervised",
+        "d": "Match the name on the dining-room door plaque and skip a second identifier at the table"
+      },
+      "correctOptionId": "b",
+      "explanation": "Right person requires the facility's two identifiers every pass, including in the dining room. Seat, table, or a first-name response is not an identifier. Confused or hard-of-hearing residents may answer to another name. A medication aide does not rely on location the way a room list might.",
+      "distractorExplanations": {
+        "a": "Furniture location is not a resident identifier; people switch seats and rooms.",
+        "c": "Answering to a first name is unreliable and fails the two-identifier standard.",
+        "d": "A door plaque names who should sit there, not who is in the chair; a second identifier is still required."
+      },
+      "difficulty": "easy"
+    },
+    "medication-aide-readiness-check-rights-007": {
+      "prompt": "The charge nurse is in a fall huddle. A resident's daughter holds out her phone: the on-call physician wants to dictate a one-time lorazepam order to the medication aide. What should the aide do?",
+      "options": {
+        "a": "Write the new telephone order on the MAR and give the lorazepam, then catch the nurse later",
+        "b": "Accept the telephone order only if the daughter repeats it twice and signs the back of the MAR",
+        "c": "Decline to take the new order and get a licensed nurse; aides do not take provider orders",
+        "d": "Start a saline lock so the lorazepam can be given IV if the resident later refuses oral tablets"
+      },
+      "correctOptionId": "c",
+      "explanation": "State medication aides / CMAs (med-aide) administer from transcribed MAR orders under nurse supervision. Taking a new telephone or verbal order is a licensed-nurse or provider act in typical state rules, especially for controlled drugs. The aide does not start IVs or invent a route. Get the nurse to the phone.",
+      "distractorExplanations": {
+        "a": "Transcribing a new controlled-drug order onto the MAR is outside typical medication-aide scope.",
+        "b": "Family witness and a MAR signature do not authorize the aide to take a physician telephone order.",
+        "d": "Medication aides do not insert IVs or convert an oral request into an intravenous dose."
+      },
+      "difficulty": "hard"
+    },
+    "medication-aide-readiness-check-rights-008": {
+      "prompt": "0900 donepezil for several residents is given at 1045 because the aide stayed in the break room talking. The tablets and strengths were otherwise correct. How is this classified?",
+      "options": {
+        "a": "Acceptable if every dose is still given before the end of the day shift",
+        "b": "A wrong-dose error, because any late pass is documented as the wrong milligram amount",
+        "c": "Not an error if the MAR is initialed at 0900 so the times look consistent",
+        "d": "A wrong-time error: document the actual time given and report it per facility policy"
+      },
+      "correctOptionId": "d",
+      "explanation": "Right time is one of the six rights. Facility policy sets the allowed window (often about an hour around the scheduled time). Giving late because of social delay is a timing error to document honestly and report. It is not a milligram-amount error, and back-timing the MAR is falsification.",
+      "distractorExplanations": {
+        "a": "The allowed window is policy-based, not “anytime on the shift.”",
+        "b": "The strength was correct; lateness is a time error, not a dose-amount error.",
+        "c": "Charting 0900 for a 1045 pass falsifies the record and hides the timing error."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-009": {
+      "prompt": "The cart has hydralazine 25 mg and hydroxyzine 25 mg in similar blister cards for neighboring rooms. How should the medication aide handle this look-alike / sound-alike pair?",
+      "options": {
+        "a": "Keep the pair separated, read each label against the MAR, and do not pick either card from memory",
+        "b": "Store them side by side on the top tray so the similar 25 mg names are easy to compare at once",
+        "c": "File both cards in strict A-to-Z order on the cart so each name is the fastest possible grab",
+        "d": "Write a marker nickname on each blister card so the aide can tell the tablets apart later"
+      },
+      "correctOptionId": "a",
+      "explanation": "Hydralazine (blood pressure) and hydroxyzine (antihistamine/anxiolytic) are a classic LASA pair at the same 25 mg strength. Right drug means read the label, separate storage or flags, and a MAR double-check—not memory. Aides do not alter pharmacy labels. Alphabetical or side-by-side storage increases swap risk.",
+      "distractorExplanations": {
+        "b": "Side-by-side storage is how look-alike cards get swapped during a busy pass.",
+        "c": "Alphabetical filing often parks sound-alike names next to each other, which LASA precautions try to prevent.",
+        "d": "Relabeling or writing on pharmacy packaging is not an aide role and can create a new identification error."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-010": {
+      "prompt": "An alert resident asks to keep her albuterol inhaler in the nightstand and take it herself when short of breath. When is that allowed?",
+      "options": {
+        "a": "Whenever she is oriented and asks at the pass, because alert residents may store any PRN inhaler",
+        "b": "Only when the care plan and applicable law authorize self-administration with required checks",
+        "c": "Whenever a visiting family member agrees to watch her use it during visits this week",
+        "d": "When the aide leaves the inhaler on the overbed table after the morning pass for later use"
+      },
+      "correctOptionId": "b",
+      "explanation": "Self-administration in a nursing facility is a planned privilege, not a courtesy. Assessment, care-plan authorization, and facility/state checks (secure storage, documentation, observation as required) must be in place. Leaving an unlabeled inhaler at the bedside is not self-admin and breaks control and right-person rules.",
+      "distractorExplanations": {
+        "a": "Alertness and a request do not replace a documented self-administration decision on the care plan.",
+        "c": "Family watching does not substitute for facility assessment, storage, and MAR requirements.",
+        "d": "Unattended bedside medication is a storage and diversion hazard, not approved self-administration."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-011": {
+      "prompt": "While setting up 2000 eye drops, the aide finds a latanoprost bottle on the cart dated expired last month. The solution still looks clear. What should the aide do?",
+      "options": {
+        "a": "Instill tonight's dose if the drops still look clear, then pull the bottle at the next cart check",
+        "b": "Move the remaining milliliters onto another resident's evening cart so the product is not wasted",
+        "c": "Do not give it; remove it from use and follow facility process to notify nurse or pharmacy",
+        "d": "Pour the leftover into a new bottle from stock so the expiration label is no longer visible"
+      },
+      "correctOptionId": "c",
+      "explanation": "An expired product is a hard stop for right drug and right dose. Appearance does not prove potency or sterility of ophthalmic drops. The aide does not administer it, does not share it across residents, and follows facility removal and notification steps so the nurse can obtain a current bottle.",
+      "distractorExplanations": {
+        "a": "Clarity does not override an expiration date; using it completes a product-integrity error.",
+        "b": "Transferring expired stock to another cart still uses an unfit product and mixes resident supplies.",
+        "d": "Repackaging to hide a date is falsification and outside medication-aide authority."
+      },
+      "difficulty": "easy"
+    },
+    "medication-aide-readiness-check-rights-012": {
+      "prompt": "The MAR orders ofloxacin otic drops to the left ear at 2100. Two small bottles, one otic and one ophthalmic, sit in the same bin. What is the right route?",
+      "options": {
+        "a": "Two drops in each nostril, because small dropper bottles are treated as nasal unless marked otherwise",
+        "b": "The left eye, if the bottle says sterile, because otic and ophthalmic tips are interchangeable",
+        "c": "Both ear canals, so cerumen on the right side is treated at the same time as the ordered left ear",
+        "d": "The left ear canal with the otic product only—do not put ear drops in the eye"
+      },
+      "correctOptionId": "d",
+      "explanation": "Right route and right site mean the ordered otic product into the ordered ear only. Ear and eye bottles look alike; otic preparations are not formulated for the cornea. Treating the opposite ear or the nose is a wrong-site/wrong-route error. If the label is unclear, hold and ask the nurse; do not guess.",
+      "distractorExplanations": {
+        "a": "Otic means ear, not nasal; a nasal route would be a different order and product.",
+        "b": "Sterility does not make an ear drop safe in the eye; that swap can injure the cornea.",
+        "c": "Drops go only to the ear named on the order; treating both ears is a wrong-site extra dose."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-013": {
+      "prompt": "A fire-panel alarm pulls the aide off the hall mid-pass. Back at the cart, she cannot recall whether Ms. Grant already swallowed 0800 furosemide. The MAR is still blank. What should she do?",
+      "options": {
+        "a": "Do not give another tablet; recheck the MAR, ask the nurse, and only then decide if a dose is due",
+        "b": "Give the tablet again because a missed morning diuretic is always worse than a possible extra dose",
+        "c": "Skip the 0800 slot and give a double tablet at noon so the daily milligrams still add up",
+        "d": "Ask Ms. Grant whether she already took a water pill, then dose from that answer alone"
+      },
+      "correctOptionId": "a",
+      "explanation": "Uncertainty means hold, not a second tablet. Right dose and right time are confirmed on the MAR and with the licensed nurse. Doubling later is an independent dose change outside medication-aide scope. Residents may not remember a chaotic interruption, so their recall is not the record.",
+      "distractorExplanations": {
+        "b": "An unconfirmed repeat risks a double diuretic dose, hypotension, and falls; check first.",
+        "c": "Combining missed and next doses is a dose change the aide cannot order.",
+        "d": "Resident memory is unreliable after an interruption; the MAR and nurse are the sources of truth."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-014": {
+      "prompt": "Carvedilol 12.5 mg is ordered at 0800; hold if systolic BP is below 90 mm Hg and notify the nurse. Today's reading is 84/52. What should the medication aide do?",
+      "options": {
+        "a": "Give the tablet anyway and recheck the pressure in one hour so the scheduled pass stays on time",
+        "b": "Hold the dose per the written parameter, document the reading and hold, and notify as ordered",
+        "c": "Give half a tablet on your own because 84 mm Hg is only slightly below the written hold line",
+        "d": "Hold the tablet now but wait until shift change to chart the hold and then tell the nurse"
+      },
+      "correctOptionId": "b",
+      "explanation": "Hold parameters are part of the order (right dose and right time). The aide follows the written systolic limit, does not give or split the beta blocker, documents the vital sign and the hold when they happen, and notifies the licensed nurse as the order states. Splitting the tablet is an unauthorized dose change.",
+      "distractorExplanations": {
+        "a": "A hold parameter means the dose is not given when the reading is below the limit; giving it anyway is a wrong-dose error.",
+        "c": "Halving the tablet is independent dose adjustment, which medication aides must not do.",
+        "d": "Late documentation and delayed notification hide a low blood pressure the nurse needs now."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-rights-015": {
+      "prompt": "At the evening pass Mr. Cole refuses sertraline and says he is done with antidepressants. His daughter asks the aide to crush it into ice cream “so he doesn't know.” What should the aide do?",
+      "options": {
+        "a": "Hide the tablet in ice cream this once so he does not miss tonight's psychiatric dose",
+        "b": "Tell him he cannot refuse facility medications and remain until he swallows the tablet",
+        "c": "Do not conceal or force the dose; document the refusal on the MAR and notify the licensed nurse",
+        "d": "Double tomorrow's morning sertraline on your own to make up for tonight's missed milligrams"
+      },
+      "correctOptionId": "c",
+      "explanation": "Competent residents may refuse medications. The aide does not hide drugs in food without a specific order and care-plan process, does not coerce a swallow, and does not independently double the next dose. Document the refusal promptly and notify the licensed nurse so the team can follow up. Covert dosing is not a six-rights shortcut.",
+      "distractorExplanations": {
+        "a": "Covert administration without an authorized process violates consent and can complete a wrong-route or wrong-person error.",
+        "b": "Forcing a swallow ignores the right to refuse and can become assault; notify the nurse instead.",
+        "d": "Doubling the next dose is an independent dose change outside medication-aide scope."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

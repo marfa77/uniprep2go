@@ -450,7 +450,9 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
     subtitle: deck.subtitle
       .replace(/^A planned (deck|spaced-repetition deck) for /i, "Anki deck for ")
       .replace(/^A planned /i, "A focused "),
-    directAnswer: buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
+    directAnswer: /is a live UniPrep2Go/i.test(deck.directAnswer)
+      ? deck.directAnswer
+      : buildDirectAnswer(deck, cardLabel, mockPath, apkgReady),
     lastUpdated:
       deck.slug === "pmp-anki-deck" || deck.slug === "nebosh-anki-deck"
         ? "2026-09-29"
@@ -460,7 +462,11 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
             ? "2026-09-21"
             : deck.slug === "ace-cpt-anki-deck"
               ? "2026-08-13"
-              : "2026-08-06",
+              : deck.slug === "gre-anki-deck" ||
+                  deck.slug === "gmat-focus-anki-deck" ||
+                  deck.slug === "sat-anki-deck"
+                ? "2026-10-04"
+                : "2026-08-06",
     facts: {
       ...deck.facts,
       cards: cardLabel,

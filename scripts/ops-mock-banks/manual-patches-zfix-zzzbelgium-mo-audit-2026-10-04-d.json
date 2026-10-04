@@ -1,0 +1,514 @@
+{
+  "belgium-flanders-mo-readiness-check": {
+    "belgium-flanders-mo-readiness-check-society-daily-001": {
+      "prompt": "U woont in Gent en hebt al drie dagen koorts en keelpijn, maar u kunt nog lopen en drinken. Wat doet u het eerst?",
+      "options": {
+        "a": "U belt 112 voor een ambulance naar de spoedafdeling van het ziekenhuis.",
+        "b": "U gaat rechtstreeks naar de spoed omdat de huisarts alleen papieren invult.",
+        "c": "U maakt een afspraak bij uw huisarts of belt de huisartsenwachtpost.",
+        "d": "U vraagt in de apotheek om antibiotica zonder voorschrift van een arts."
+      },
+      "correctOptionId": "c",
+      "explanation": "In Vlaanderen is de huisarts het eerste aanspreekpunt voor koorts, keelpijn en andere niet-levensbedreigende klachten. De spoed en 112 zijn bedoeld voor acuut gevaar; de apotheek levert voorgeschreven geneesmiddelen, maar schrijft zelf geen antibiotica voor.",
+      "distractorExplanations": {
+        "a": "112 en de spoed zijn voor levensgevaar, niet voor gewone koorts waarbij u nog kunt functioneren.",
+        "b": "De huisarts behandelt en verwijst; het is geen loket dat alleen formulieren invult.",
+        "d": "Antibiotica krijgt u op voorschrift van een arts, niet op verzoek in de apotheek."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-002": {
+      "prompt": "U ziet op straat in Antwerpen iemand die bewusteloos is en niet meer ademt. Welk nummer belt u?",
+      "options": {
+        "a": "112 voor ambulance en andere levensbedreigende noodgevallen.",
+        "b": "101, het nummer voor de politie bij inbraak of een vechtpartij.",
+        "c": "1733 voor een huisarts van wacht bij niet-dringende klachten.",
+        "d": "911, het Amerikaanse noodnummer dat in Vlaanderen niet geldt."
+      },
+      "correctOptionId": "a",
+      "explanation": "112 is het Europese noodnummer in België voor ambulance, brandweer en zware ongevallen. Bij bewustzijnsverlies en ademstilstand is dat de juiste lijn; 101 is politie, 1733 is de huisarts van wacht, 911 is niet in gebruik.",
+      "distractorExplanations": {
+        "b": "101 is het politienummer; bij ademstilstand hebt u een ambulance via 112 nodig.",
+        "c": "1733 is voor niet-dringende huisartsenzorg, niet voor een patiënt die niet ademt.",
+        "d": "911 is het Amerikaanse systeem; in België belt u 112 bij medische spoed."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-003": {
+      "prompt": "Midden in de nacht hoort u inbrakers in de woning naast u. Niemand is zichtbaar gewond. Welk nummer past?",
+      "options": {
+        "a": "112, omdat elk buurtincident via de ambulancecentrale moet lopen.",
+        "b": "1733, zodat een huisarts van wacht de inbraak ter plaatse bekijkt.",
+        "c": "100, het oude brandnummer dat in Vlaanderen diefstal zou opnemen.",
+        "d": "101, het politienummer voor inbraak, geweld of andere politiehulp."
+      },
+      "correctOptionId": "d",
+      "explanation": "Voor inbraak, vechtpartijen en andere politiehulp belt u 101. 112 is voor levensgevaar, brand of ambulance; 1733 is medisch en niet-dringend. Verwissel politie en spoed dus niet.",
+      "distractorExplanations": {
+        "a": "112 is voor ambulance, brand of zwaar ongeval, niet voor een inbraak zonder gewonden.",
+        "b": "1733 schakelt een huisarts van wacht in, geen politieploeg tegen inbrekers.",
+        "c": "100 is een oud brandweerconcept; diefstal meldt u bij de politie op 101."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-004": {
+      "prompt": "Uw kind heeft 's nachts koorts en het voorgeschreven koortsisiroopje is op. De gewone apotheek is dicht. Wat doet u?",
+      "options": {
+        "a": "U wacht tot maandag, want geneesmiddelen mag u 's nachts nergens halen.",
+        "b": "U zoekt de apotheek van wacht via apotheek.be of de gemeentelijke wachtlijst.",
+        "c": "U belt 112 zodat de ambulance het geneesmiddel aan huis komt brengen.",
+        "d": "U koopt het siroopje zonder voorschrift in de nachtwinkel om de hoek."
+      },
+      "correctOptionId": "b",
+      "explanation": "Buiten de openingsuren is er een apotheek van wacht (wachtdienst). U vindt die via apotheek.be, 0903 99 000 of de gemeente. 112 is geen medicijnkoerier; nachtwinkels mogen geen apotheek vervangen.",
+      "distractorExplanations": {
+        "a": "Er is wel een wachtdienst: u hoeft niet tot de volgende werkdag te wachten voor dringende medicatie.",
+        "c": "112 is voor levensgevaar, niet om siroop aan huis te laten bezorgen.",
+        "d": "Voorgeschreven geneesmiddelen haalt u in een apotheek, niet in een nachtwinkel."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-005": {
+      "prompt": "U woont in een Vlaamse gemeente met GFT-inzameling. Waar horen schillen van groenten, fruitresten en koffiedik?",
+      "options": {
+        "a": "In de blauwe PMD-zak, omdat het om voedselverpakkingen zou gaan.",
+        "b": "In de glasbol, omdat organisch keukenafval bij glas hoort te worden gemengd.",
+        "c": "In de GFT-bak of -zak, volgens de sorteerregels van uw gemeente.",
+        "d": "In het restafval, want keukenafval mag in Vlaanderen nergens gescheiden."
+      },
+      "correctOptionId": "c",
+      "explanation": "GFT is groente-, fruit- en tuinafval: schillen, etensresten (waar toegelaten) en tuinafval. PMD is verpakkingen, glas hoort in de glasbol, restafval is wat niet sorteerbaar is. De afvalkalender van de intercommunale geeft de ophaaldag.",
+      "distractorExplanations": {
+        "a": "PMD is voor plastic flessen, metalen verpakkingen en drankkartons, niet voor schillen.",
+        "b": "Glasbol is voor glazen flessen en bokalen, niet voor organisch keukenafval.",
+        "d": "Waar GFT wordt opgehaald, hoort keukenafval niet standaard bij het restafval."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-006": {
+      "prompt": "U hebt een lege plastic waterfles, een metalen blikje en een drankkarton. Waar horen die in veel Vlaamse gemeenten?",
+      "options": {
+        "a": "In de PMD-zak: plastic flessen, blikjes en drankkartons.",
+        "b": "In de GFT-bak, omdat drankresten tot keukenafval worden gerekend.",
+        "c": "In de papiercontainer, omdat elk karton bij oud papier zou horen.",
+        "d": "Bij het grofvuil, dat u één keer per jaar aan de straat mag zetten."
+      },
+      "correctOptionId": "a",
+      "explanation": "PMD staat voor plastic flessen en flacons, metalen verpakkingen en drankkartons. Een drankkarton is geen oud papier; GFT is organisch; grofvuil is groot huisraad. Foute plastics (emmers, speelgoed) horen niet in PMD.",
+      "distractorExplanations": {
+        "b": "GFT is groente-, fruit- en tuinafval, geen lege drankverpakkingen.",
+        "c": "Drankkartons horen bij PMD, niet bij de papier- en kartoninzameling.",
+        "d": "Lege flessen en blikjes zijn geen grofvuil; die gaan in de PMD-zak."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-007": {
+      "prompt": "U hebt oude kranten, tijdschriften en droge kartonnen dozen zonder vet. Waar hoort dat?",
+      "options": {
+        "a": "In de PMD-zak, omdat karton hetzelfde zou zijn als een drankkarton.",
+        "b": "In de GFT-bak, omdat papier van natuurlijke vezels is gemaakt.",
+        "c": "In het restafval, want papierinzameling zou in Vlaanderen niet bestaan.",
+        "d": "Bij het oud papier en karton, volgens de afvalkalender van de gemeente."
+      },
+      "correctOptionId": "d",
+      "explanation": "Kranten, folders en droog karton gaan bij het oud papier. Drankkartons zijn PMD; vet pizzakarton of vuil papier hoort vaak bij restafval. GFT is keuken- en tuinafval, geen papier.",
+      "distractorExplanations": {
+        "a": "PMD is voor drankkartons en verpakkingen, niet voor kranten en gewone dozen.",
+        "b": "GFT is organisch keuken- en tuinafval, geen oud papier.",
+        "c": "Er is wel een papierinzameling; kijk op de gemeentelijke afvalkalender."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-008": {
+      "prompt": "Uw kind woont bij u in Vlaanderen. Welke kinderbijslag vraagt u aan, en bij wie?",
+      "options": {
+        "a": "Federaal kindergeld via de RVA, zoals vóór de regionalisering van de bijslag.",
+        "b": "Het Groeipakket via een Vlaamse uitbetaler, niet via de VDAB of het OCMW.",
+        "c": "Een leefloon van het OCMW, dat automatisch het kindergeld zou vervangen.",
+        "d": "Een Europese toeslag via de NMBS, omdat het gezin in België woont."
+      },
+      "correctOptionId": "b",
+      "explanation": "In Vlaanderen heet de kinderbijslag Groeipakket. U sluit aan bij een uitbetaler (zoals FONS, Infino, MyFamily of Parentia). VDAB is werk, OCMW is lokale bijstand, RVA is federale werkloosheid; dat zijn andere loketten.",
+      "distractorExplanations": {
+        "a": "Kinderbijslag is in Vlaanderen geregionaliseerd tot Groeipakket, niet meer RVA-kindergeld.",
+        "c": "Het OCMW kan leefloon onderzoeken, maar vervangt het Groeipakket niet automatisch.",
+        "d": "De NMBS is de spoorwegmaatschappij; kinderbijslag loopt niet via treintickets."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-009": {
+      "prompt": "U zoekt werk in Vlaanderen en wilt een beroepsopleiding volgen. Tot welke dienst richt u zich?",
+      "options": {
+        "a": "Tot de RVA, die uitkeringen betaalt maar geen Vlaamse jobbemiddeling doet.",
+        "b": "Tot De Lijn, die jobs in het openbaar vervoer als enige instantie toewijst.",
+        "c": "Tot de VDAB voor vacatures, begeleiding en opleidingen in Vlaanderen.",
+        "d": "Tot het FAVV, de federale dienst voor voedselveiligheid en horecacontrole."
+      },
+      "correctOptionId": "c",
+      "explanation": "De VDAB (Vlaamse Dienst voor Arbeidsbemiddeling en Beroepsopleiding) helpt u zoeken, bemiddelt en biedt opleidingen. De RVA betaalt werkloosheidsuitkeringen. De Lijn is bus en tram; het FAVV controleert voedsel, geen cv's.",
+      "distractorExplanations": {
+        "a": "De RVA is federaal voor werkloosheidsuitkeringen, niet de Vlaamse jobdienst.",
+        "b": "De Lijn is openbaar vervoer; die deelt geen algemene vacatures uit.",
+        "d": "Het FAVV waakt over voedselveiligheid, niet over arbeidsbemiddeling."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-010": {
+      "prompt": "U neemt de stadsbus of de tram in een Vlaamse centrumstad zoals Leuven of Gent. Welke maatschappij is dat meestal?",
+      "options": {
+        "a": "De Lijn, de Vlaamse vervoersmaatschappij voor bus en tram.",
+        "b": "De NMBS, die in heel België treinen tussen steden laat rijden.",
+        "c": "De MIVB, die bus, tram en metro in het Brussels Gewest uitbaat.",
+        "d": "TEC, de Waalse busmaatschappij die in Vlaanderen niet actief is."
+      },
+      "correctOptionId": "a",
+      "explanation": "In Vlaanderen rijden stads- en streekbussen en veel trams onder De Lijn. De NMBS is de trein. MIVB is Brussels, TEC is Waals. Een NMBS-treinticket is daardoor niet automatisch een De Lijn-busticket.",
+      "distractorExplanations": {
+        "b": "De NMBS rijdt treinen tussen stations, geen stadsbus in Leuven of Gent.",
+        "c": "De MIVB werkt in Brussel; in Vlaamse steden is De Lijn de bus en tram.",
+        "d": "TEC is het Waalse net; in Vlaanderen stapt u op De Lijn."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-011": {
+      "prompt": "U reist van Gent-Sint-Pieters naar Antwerpen-Centraal. Welk vervoer gebruikt u daarvoor?",
+      "options": {
+        "a": "Een rit van De Lijn, want die zou alle treinen in Vlaanderen exploiteren.",
+        "b": "Een TEC-bus, omdat intercityverkeer in België via Wallonië zou lopen.",
+        "c": "De MIVB-metro, die ondergronds tot in Antwerpen zou doorrijden.",
+        "d": "Een trein van de NMBS, de nationale spoorwegmaatschappij tussen steden."
+      },
+      "correctOptionId": "d",
+      "explanation": "Trajecten tussen grote stations zoals Gent en Antwerpen rijdt de NMBS. De Lijn is bus en tram, geen intercitytrein. MIVB blijft in Brussel; TEC is Waals streekvervoer.",
+      "distractorExplanations": {
+        "a": "De Lijn rijdt bus en tram, geen IC-trein tussen Gent-Sint-Pieters en Antwerpen-Centraal.",
+        "b": "TEC is Waals busvervoer en vervangt de Vlaamse treinverbinding niet.",
+        "c": "De MIVB-metro stopt in Brussel; die rijdt niet ondergronds tot Antwerpen."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-012": {
+      "prompt": "U verhuist naar een Vlaamse gemeente en gaat daar effectief wonen. Wat moet u bij aankomst regelen?",
+      "options": {
+        "a": "U huurt een postbus; een officiële inschrijving bij de gemeente is overbodig.",
+        "b": "U schrijft u in het bevolkingsregister van de gemeente van uw woonplaats.",
+        "c": "U schrijft u in bij de NMBS, omdat elke inwoner een treinkaart nodig heeft.",
+        "d": "U wacht tot de federale overheid u automatisch vanuit Brussel inschrijft."
+      },
+      "correctOptionId": "b",
+      "explanation": "Wie in België woont, moet zich inschrijven in de gemeente van de effectieve woonplaats (bevolkings- of vreemdelingenregister). Dat is nodig voor eID, mutualiteit en school. De NMBS en een postbus vervangen die aangifte niet.",
+      "distractorExplanations": {
+        "a": "Een postbus is geen wettelijk woonadres; u moet zich in de gemeente inschrijven.",
+        "c": "De NMBS verkoopt treintickets; zij beheert het bevolkingsregister niet.",
+        "d": "Inschrijving start bij de gemeente, niet via een automatische federale brief."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-013": {
+      "prompt": "U huurt een woning in Vlaanderen. Wat geldt doorgaans voor de huurwaarborg die de verhuurder vraagt?",
+      "options": {
+        "a": "De verhuurder mag een onbeperkte waarborg vragen, bijvoorbeeld een jaarloon.",
+        "b": "Een huurwaarborg is in Vlaanderen verboden; u betaalt enkel de eerste maand.",
+        "c": "De waarborg is wettelijk begrensd, vaak tot drie maanden huur via rekening of garantie.",
+        "d": "U stort de waarborg aan De Lijn, die huurgeschillen in Vlaanderen zou beheren."
+      },
+      "correctOptionId": "c",
+      "explanation": "Het Vlaamse woninghuurrecht begrenst de huurwaarborg (typisch maximaal drie maanden huur), vaak op een geblokkeerde rekening of via een bankgarantie. Een jaarloon als voorschot is niet de regel; De Lijn speelt hierin geen rol.",
+      "distractorExplanations": {
+        "a": "De waarborg is begrensd; de verhuurder mag geen jaarloon als borg eisen.",
+        "b": "Een waarborg is wel toegelaten, maar binnen de wettelijke maximumgrens.",
+        "d": "De Lijn is openbaar vervoer, geen loket voor huurwaarborgen."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-014": {
+      "prompt": "U weet niet wanneer PMD, papier of restafval in uw straat wordt opgehaald. Waar kijkt u dat na?",
+      "options": {
+        "a": "Op de afvalkalender van uw gemeente of intercommunale, via website of app.",
+        "b": "Op de dienstregeling van de NMBS, die ook huisvuilophaling zou plannen.",
+        "c": "In het Groeipakket-portaal, omdat kinderbijslag en afval samen zouden hangen.",
+        "d": "Bij de VDAB, die lokale ophaalrondes als tewerkstelling zou organiseren."
+      },
+      "correctOptionId": "a",
+      "explanation": "Ophaaldagen, sorteerregels en het recyclagepark staan op de afvalkalender van de gemeente of intercommunale (vaak Recycle! of de gemeentelijke app). Trein, Groeipakket en VDAB zijn andere diensten.",
+      "distractorExplanations": {
+        "b": "De NMBS publiceert treintijden, geen huis-aan-huis ophaling van PMD of papier.",
+        "c": "Het Groeipakket is kinderbijslag; het bevat geen afvalkalender.",
+        "d": "De VDAB bemiddelt naar werk, zij plant geen vuilnisrondes."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-015": {
+      "prompt": "Uw dochter van twaalf wil in de gemeente bij een sportclub voetballen. Wat is in Vlaanderen gebruikelijk en toegelaten?",
+      "options": {
+        "a": "Meisjes worden uit clubs geweerd, omdat teamsport wettelijk voorbehouden is aan jongens.",
+        "b": "Clubs moeten volgens religie splitsen; gemengde teams zijn in Vlaanderen verboden.",
+        "c": "Nieuwkomerskinderen mogen drie jaar niet lid worden van een gemeentelijke sportclub.",
+        "d": "Jongens en meisjes mogen samen sporten; een club mag iemand niet om het geslacht weren."
+      },
+      "correctOptionId": "d",
+      "explanation": "Sportclubs en gemeentelijke reeksen zijn toegankelijk voor jongens en meisjes. Discriminatie op geslacht, herkomst of geloof is verboden. Er is geen wettelijke wachttijd van drie jaar voor nieuwkomers om te sporten.",
+      "distractorExplanations": {
+        "a": "Meisjes mogen voetballen; sport is niet wettelijk voorbehouden aan jongens.",
+        "b": "Clubs mogen niet verplicht splitsen volgens religie; gemengd sporten is toegelaten.",
+        "c": "Nieuwkomers mogen lid worden; er is geen sportverbod van drie jaar."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-016": {
+      "prompt": "U zit binnen in een café in Leuven. Wat geldt daar voor het roken van sigaretten?",
+      "options": {
+        "a": "Roken aan de toog is toegestaan als de uitbater asbakken op de bar zet.",
+        "b": "Binnen in de horeca geldt een rookverbod; roken kan hoogstens buiten.",
+        "c": "Roken is in cafés verplicht, als teken van Vlaamse horecacultuur.",
+        "d": "Sigaren zijn verboden, maar sigaretten mag u binnen blijven roken."
+      },
+      "correctOptionId": "b",
+      "explanation": "In Belgische horeca mag u binnen niet roken. Een asbak aan de toog maakt binnen roken niet wettig. Buiten, op een terras volgens de regels, kan wel. Het verbod geldt voor tabak, niet alleen voor sigaren.",
+      "distractorExplanations": {
+        "a": "Asbakken heffen het rookverbod binnenshuis niet op.",
+        "c": "Roken is niet verplicht in cafés; binnen geldt integendeel een verbod.",
+        "d": "Het verbod geldt voor het roken binnenshuis, niet enkel voor sigaren."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-017": {
+      "prompt": "U hebt om 10.00 uur een afspraak bij de huisarts. Wat wordt in het dagelijkse leven in Vlaanderen van u verwacht?",
+      "options": {
+        "a": "U komt wanneer het uitkomt; stiptheid is in België geen sociale verwachting.",
+        "b": "U belt 112 als u vijf minuten te laat bent, zodat de spoed u opvangt.",
+        "c": "U bent op tijd of u verwittigt; te laat komen zonder bericht is ongepast.",
+        "d": "U mag de afspraak laten schieten; de huisarts factureert dat aan het OCMW."
+      },
+      "correctOptionId": "c",
+      "explanation": "Vlaanderen heeft een afsprakencultuur: u komt stipt of belt om te verzetten. Dat geldt voor huisarts, gemeentehuis, school en werk. 112 is geen laatkomlijn; het OCMW betaalt uw gemiste consult niet automatisch.",
+      "distractorExplanations": {
+        "a": "Stiptheid wordt wél verwacht bij arts, loket en werk; 'komen wanneer het uitkomt' botst daarmee.",
+        "b": "112 is voor levensgevaar, niet om vijf minuten verlet te melden.",
+        "d": "Een gemiste afspraak schuift u niet naar het OCMW; u verwittigt de praktijk."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-018": {
+      "prompt": "U fietst 's avonds op een slecht verlichte weg naar huis. Wat is aan uw fiets verplicht?",
+      "options": {
+        "a": "Een wit of geel licht vooraan en een rood licht achteraan, plus reflectoren.",
+        "b": "Niets extra: fietsverlichting is in Vlaanderen nergens wettelijk nodig, ook niet 's nachts.",
+        "c": "Een bel is voldoende; lichten zijn voorbehouden aan bromfietsen en auto's.",
+        "d": "Een oranje zwaailicht zoals bij hulpdiensten, anders mag u niet rijden."
+      },
+      "correctOptionId": "a",
+      "explanation": "Bij duisternis of slecht zicht moet een fiets vooraan een wit of geel licht voeren en achteraan een rood licht, met reflectoren. Een bel vervangt die lichten niet. Een zwaailicht van hulpdiensten hoort niet op een gewone fiets.",
+      "distractorExplanations": {
+        "b": "Verlichting is wél verplicht bij duisternis; fietsen zonder licht is onveilig en onwettig.",
+        "c": "Een bel is nuttig, maar vervangt de verplichte voor- en achterlichten niet.",
+        "d": "Oranje zwaailichten zijn voor hulpdiensten, niet voor gewone fietsers."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-019": {
+      "prompt": "U wilt in een nachtwinkel een fles bier en een fles whisky kopen. Welke leeftijdsregel geldt in de Belgische handel?",
+      "options": {
+        "a": "Bier, wijn en sterke drank zijn vanaf 14 jaar vrij te koop in België.",
+        "b": "Alle alcohol is pas vanaf 21 jaar toegelaten, zoals in sommige VS-staten.",
+        "c": "Sterke drank mag vanaf 16, bier en wijn pas vanaf 18 jaar in de winkel.",
+        "d": "Bier en wijn vanaf 16 jaar; sterke drank pas vanaf 18 jaar in de handel."
+      },
+      "correctOptionId": "d",
+      "explanation": "In de Belgische handel mag bier, wijn en andere gegiste drank vanaf 16 jaar worden verkocht; gedistilleerde dranken (whisky, vodka, jenever) pas vanaf 18. Dat is niet de Amerikaanse 21-jaargrens en ook niet alles vanaf 14.",
+      "distractorExplanations": {
+        "a": "14 jaar is te jong; bier en wijn starten op 16, sterke drank op 18.",
+        "b": "België hanteert geen algemene 21-jaargrens zoals sommige Amerikaanse staten.",
+        "c": "De leeftijden staan omgekeerd: bier en wijn 16, sterke drank 18, niet andersom."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-020": {
+      "prompt": "Het is zondagavond. U hebt hevige oorpijn, maar u bent niet kortademig en u valt niet flauw. Waar gaat u heen?",
+      "options": {
+        "a": "Naar de spoed via 112, omdat wachtposten in het weekend altijd dicht zouden zijn.",
+        "b": "Naar het NMBS-loket, waar treinpersionieel medische wachtdiensten toewijst.",
+        "c": "Naar de huisartsenwachtpost of via 1733, voor zorg buiten de kantooruren.",
+        "d": "Naar het gemeentehuis, waar de burgemeester 's nachts voorschriften uitschrijft."
+      },
+      "correctOptionId": "c",
+      "explanation": "Voor niet-levensbedreigende klachten 's avonds, 's nachts of in het weekend gaat u naar de huisartsenwachtpost of belt u 1733. 112 is voor acuut gevaar. Het station en de burgemeester zijn geen medische wachtdienst.",
+      "distractorExplanations": {
+        "a": "Wachtposten bestaan net in het weekend; 112 is niet de standaardlijn voor oorpijn.",
+        "b": "De NMBS verkoopt treintickets, geen medische wachtdienst.",
+        "d": "De burgemeester schrijft geen voorschriften uit; dat doet een arts."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-021": {
+      "prompt": "U hebt een oude stoel, een emmer steenpuin en een kapotte pan. Waar brengt u dat in een Vlaamse gemeente meestal?",
+      "options": {
+        "a": "In de PMD-zak aan de straat, samen met plastic flessen en blikjes.",
+        "b": "Naar het recyclagepark van uw gemeente of intercommunale.",
+        "c": "Naar de VDAB-campus, die grofvuil als opleidingsmateriaal zou inzamelen.",
+        "d": "Naar het station, waar de NMBS grofvuil gratis in de trein meeneemt."
+      },
+      "correctOptionId": "b",
+      "explanation": "Grofvuil, puin en metaal horen op het recyclagepark (containerpark), niet in de PMD-zak. U toont vaak uw identiteitskaart van de gemeente. VDAB en NMBS zamelen geen huisraad in.",
+      "distractorExplanations": {
+        "a": "PMD is voor kleine verpakkingen, geen stoelen, puin of pannen.",
+        "c": "De VDAB is de Vlaamse jobdienst, geen grofvuilpark voor huisraad.",
+        "d": "Op het station stapt u op de trein; grofvuil hoort op het recyclagepark."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-022": {
+      "prompt": "U hebt lege glazen wijnflessen zonder dop. Waar horen die in een Vlaamse gemeente?",
+      "options": {
+        "a": "In de PMD-zak, omdat flessen verpakkingen zijn zoals plastic flessen.",
+        "b": "In de GFT-bak, omdat glas uit zand en mineralen bestaat.",
+        "c": "Tussen het restafval, want glasrecyclage zou in Vlaanderen niet bestaan.",
+        "d": "In de glasbol of glascontainer, gescheiden van PMD en restafval."
+      },
+      "correctOptionId": "d",
+      "explanation": "Glazen flessen en bokalen gaan in de glasbol, kleur gescheiden waar dat gevraagd wordt. Plastic flessen zijn PMD; GFT is organisch. Vlakglas (ramen) hoort vaak op het recyclagepark, niet in de bol.",
+      "distractorExplanations": {
+        "a": "PMD is plastic, metaal en drankkarton; glas hoort in de glasbol.",
+        "b": "GFT is keuken- en tuinafval, geen glazen flessen.",
+        "c": "Glasrecyclage bestaat wél; daarom staan er glasbollen in de gemeente."
+      },
+      "difficulty": "easy"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-023": {
+      "prompt": "De kraan in uw huurwoning drupt en een losse tegel ligt in de gang. Wie doet wat in Vlaanderen doorgaans?",
+      "options": {
+        "a": "De gemeente stuurt de technische dienst; huurder en verhuurder betalen niets.",
+        "b": "De verhuurder moet elk klein klusje zelf doen, ook een nieuwe lamp of stop.",
+        "c": "De huurder doet klein onderhoud; de verhuurder herstelt structurele gebreken.",
+        "d": "De mutualiteit betaalt herstellingen, omdat wonen onder de ziekteverzekering valt."
+      },
+      "correctOptionId": "c",
+      "explanation": "Bij Vlaamse woninghuur doet de huurder klein onderhoud (lamp, ontstoppen, kleine slijtage). De verhuurder blijft verantwoordelijk voor structuur, dak, ketel en ernstige gebreken. De gemeente en de mutualiteit zijn geen klusjesdienst voor de huur.",
+      "distractorExplanations": {
+        "a": "De gemeentelijke technische dienst herstelt uw private huurwoning niet gratis.",
+        "b": "Niet elk klein klusje ligt bij de verhuurder; klein onderhoud is voor de huurder.",
+        "d": "De mutualiteit vergoedt medische zorg, geen losse tegels of kranen."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-024": {
+      "prompt": "U hebt 's nachts buikkrampen. U bent niet kortademig en u verliest het bewustzijn niet. Welk nummer past het best?",
+      "options": {
+        "a": "1733 om een huisarts van wacht te bereiken bij niet-levensbedreigende klachten.",
+        "b": "101, omdat de politie medische klachten buiten de kantooruren overneemt.",
+        "c": "112, dat u voor elke lichte kwaal 's nachts verplicht zou moeten gebruiken.",
+        "d": "Het groene nummer van De Lijn, dat ook huisartsen naar de halte zou sturen."
+      },
+      "correctOptionId": "a",
+      "explanation": "1733 verbindt u met de huisarts van wacht voor klachten die niet levensbedreigend zijn. 112 is voor acuut gevaar (pijn op de borst, ademnood, bewustzijnsverlies). 101 is politie; De Lijn is bus en tram.",
+      "distractorExplanations": {
+        "b": "101 is politie, geen medische wachtdienst voor buikkrampen.",
+        "c": "112 is niet bedoeld voor elke lichte kwaal; daarvoor is 1733 of de wachtpost.",
+        "d": "De Lijn regelt busritten, geen huisartsbezoek aan de halte."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-025": {
+      "prompt": "Een vet smeerpapier, een kapotte plastic emmer en kauwgom: waar horen die meestal?",
+      "options": {
+        "a": "In de PMD-zak, omdat plastics en papieren verpakkingen daar allemaal mogen.",
+        "b": "In het restafval, als ze niet tot PMD, papier, GFT of glas behoren.",
+        "c": "In de glasbol, omdat restafval in Vlaanderen bij glas mag worden gemengd.",
+        "d": "Bij het Groeipakket-kantoor, dat huisvuil voor gezinnen zou ophalen."
+      },
+      "correctOptionId": "b",
+      "explanation": "Restafval is wat niet in PMD, papier, GFT of glas mag: vuil papier, harde plastics zoals emmers, kauwgom. PMD is beperkt tot flessen, flacons, blik en drankkarton. Het Groeipakket haalt geen vuilnis op.",
+      "distractorExplanations": {
+        "a": "Een emmer en vet papier horen niet in PMD; PMD is een enge lijst van verpakkingen.",
+        "c": "Glasbol is voor glas; restafval mag u daar niet bij mengen.",
+        "d": "Het Groeipakket is kinderbijslag, geen ophaaldienst voor huisvuil."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-026": {
+      "prompt": "U fietst in een Vlaamse stad waar een fietspad is aangeduid. Wat doet u?",
+      "options": {
+        "a": "U rijdt op het voetpad, omdat fietsers daar voorrang hebben op voetgangers.",
+        "b": "U neemt de rijbaan middenin, ook als er een verplicht fietspad naast ligt.",
+        "c": "U parkeert de fiets op de rijbaan en loopt verder, want fietsen zou verboden zijn.",
+        "d": "U gebruikt het fietspad; op het voetpad fietsen is in de regel niet toegelaten."
+      },
+      "correctOptionId": "d",
+      "explanation": "Waar een fietspad is, hoort u daar te fietsen. Het voetpad is voor voetgangers; daar fietsen is in de regel verboden. Fietsen zelf is in Vlaamse steden net een gewoon en aangemoedigd vervoermiddel.",
+      "distractorExplanations": {
+        "a": "Op het voetpad hebben voetgangers voorrang; fietsers horen daar niet te rijden.",
+        "b": "Bij een verplicht fietspad hoort u dat pad te gebruiken, niet het midden van de autoweg.",
+        "c": "Fietsen is niet verboden; u moet wel het fietspad respecteren."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-027": {
+      "prompt": "U wilt na school een boek lenen en rustig wifi gebruiken. Waar kunt u in veel Vlaamse gemeenten terecht?",
+      "options": {
+        "a": "In de openbare bibliotheek, vaak met een goedkoop of gratis lidmaatschap.",
+        "b": "In de NMBS-lounge, die jeugdboeken zou uitlenen aan treinreizigers op het perron.",
+        "c": "Bij de VDAB-onthaalbalie, die jeugdboeken als lesmateriaal uitleent.",
+        "d": "In de apotheek van wacht, die een leeszaal naast de medicijnen heeft."
+      },
+      "correctOptionId": "a",
+      "explanation": "De gemeentelijke of stedelijke bibliotheek leent boeken, kranten en vaak wifi. Inschrijving is meestal goedkoop. NMBS, VDAB en de apotheek van wacht hebben die taak niet.",
+      "distractorExplanations": {
+        "b": "De NMBS-lounge is geen gemeentelijke bibliotheek voor jeugdboeken.",
+        "c": "De VDAB begeleidt werkzoekenden, zij leent geen jeugdboeken uit.",
+        "d": "De apotheek van wacht levert geneesmiddelen, geen uitleendienst voor romans."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-028": {
+      "prompt": "U wilt uw huurwoning in Vlaanderen verlaten. Wat is een realistische eerste stap?",
+      "options": {
+        "a": "U zet de spullen op straat; de verhuurder moet dat als opzeg aanvaarden.",
+        "b": "U belt 101, zodat de politie het huurcontract dezelfde dag beëindigt.",
+        "c": "U zegt schriftelijk op, met de opzegtermijn uit contract en woninghuurregels.",
+        "d": "U vraagt de NMBS om de sleutels, omdat een verhuis via de trein zou lopen."
+      },
+      "correctOptionId": "c",
+      "explanation": "Een huur beëindigt u schriftelijk, met de opzegtermijn uit het contract en het Vlaamse woninghuurdecreet (vaak drie maanden voor de huurder, soms met vergoeding in de eerste jaren). Politie en NMBS beëindigen geen huur. Spullen op straat is geen geldige opzeg.",
+      "distractorExplanations": {
+        "a": "Spullen buiten zetten is geen wettelijke opzeg en kan tot schadeclaims leiden.",
+        "b": "101 is politie bij misdrijven, geen loket om een huur dezelfde dag stop te zetten.",
+        "d": "De NMBS vervoert reizigers; zij beheert uw huursleutels niet."
+      },
+      "difficulty": "hard"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-029": {
+      "prompt": "U hebt geen abonnement en wilt één rit met de stadsbus van De Lijn. Wat is correct?",
+      "options": {
+        "a": "U reist gratis; in Vlaanderen is stadsvervoer wettelijk kosteloos voor iedereen.",
+        "b": "U koopt een NMBS-treinticket, dat automatisch op elke bus geldig zou zijn.",
+        "c": "U betaalt achteraf via het OCMW, dat alle busritten zou voorschieten.",
+        "d": "U koopt een ticket of checkt in via de app, een automaat of de chauffeur."
+      },
+      "correctOptionId": "d",
+      "explanation": "Op De Lijn reist u met een geldig ticket, abonnement of check-in (app, MOBIB, automaat, soms chauffeur). Een NMBS-treinticket dekt de stadsbus niet. Stadsvervoer is niet wettelijk gratis voor iedereen; het OCMW is geen buskassa.",
+      "distractorExplanations": {
+        "a": "Stadsbussen van De Lijn zijn niet wettelijk gratis voor elke reiziger.",
+        "b": "Een NMBS-ticket is voor de trein, niet automatisch voor De Lijn.",
+        "c": "Het OCMW is lokale bijstand, geen loket dat standaard busritten voorschiet."
+      },
+      "difficulty": "medium"
+    },
+    "belgium-flanders-mo-readiness-check-society-daily-030": {
+      "prompt": "Uw bovenburen geven in een appartement elke nacht tot 03.00 uur een luide fuif. Wat is de lijn in het dagelijkse samenleven?",
+      "options": {
+        "a": "Nachtrust bestaat niet; in Vlaanderen mag u binnenshuis onbeperkt lawaai maken.",
+        "b": "Lawaai dat de nachtrust stoort kan een inbreuk zijn; u spreekt aan of meldt het.",
+        "c": "De NMBS moet klachten over geluid registreren, via het stationsloket.",
+        "d": "U belt 112 voor een ambulance, omdat lawaai een medisch noodgeval zou zijn."
+      },
+      "correctOptionId": "b",
+      "explanation": "Nachtrust en burenoverlast zijn deel van het samenleven: overdreven nachtelijk lawaai kan een inbreuk of wanordelijk gedrag zijn. Eerst aanspreken of de verhuurder/politie (101) inschakelen is de lijn, niet 112 en niet het treinstation.",
+      "distractorExplanations": {
+        "a": "Nachtrust telt wél; onbeperkt nachtelijk lawaai is geen vrijbrief.",
+        "c": "De NMBS behandelt geen appartementslawaai; dat is een buren- of politiezaak.",
+        "d": "112 is voor levensgevaar; gewoon lawaai is geen medische spoed."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "electrical-journeyman-readiness-check": {
+    "electrical-journeyman-readiness-check-nec-001": {
+      "prompt": "A storefront lighting load is 16 A and will run more than 3 hours. Terminations are 75°C. What is the smallest copper THHN branch-circuit size and OCPD that meet the 210.19/210.20 continuous-load factors?",
+      "options": {
+        "a": "12 AWG copper on a 20 A breaker",
+        "b": "14 AWG copper on a 15 A breaker",
+        "c": "12 AWG copper on a 15 A breaker",
+        "d": "10 AWG copper on a 25 A breaker"
+      },
+      "correctOptionId": "a",
+      "explanation": "A continuous load is one expected to run 3 hours or more. Branch-circuit conductors and the OCPD must be sized at not less than 125% of that load: 16 A × 1.25 = 20 A. 12 AWG copper is the smallest size 240.4(D) permits on a 20 A breaker, and its 75°C ampacity (25 A) covers 20 A.",
+      "distractorExplanations": {
+        "b": "Uses the 16 A nameplate without the 125% continuous factor and violates the 240.4(D) 15 A cap only as if the load were noncontinuous 14 AWG work.",
+        "c": "The 12 AWG conductor can carry 20 A, but 210.20 still requires the OCPD itself to be at least 125% of the continuous load (20 A), not 15 A.",
+        "d": "Oversizes both the conductor and breaker; 25 A is not required once 16 A × 1.25 is 20 A, and it wastes material on this branch."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-002": {
+      "prompt": "A 60 A copper feeder supplies a subpanel. What equipment grounding conductor size does Table 250.122 require, independent of the ungrounded conductor size?",
+      "options": {
+        "a": "8 AWG copper, the 100 A row of Table 250.122",
+        "b": "10 AWG copper, the 60 A overcurrent-device row",
+        "c": "6 AWG copper, matching typical 60 A ungrounded conductors",
+        "d": "Size the EGC from Table 250.66 using the ungrounded conductors"
+      },
+      "correctOptionId": "b",
+      "explanation": "Equipment grounding conductors are sized from Table 250.122 by the rating of the overcurrent device ahead of the circuit, not by matching the ungrounded conductors and not from Table 250.66. For a 60 A OCPD the copper EGC is 10 AWG. Upsize the EGC only if you increase ungrounded conductors for voltage drop (250.122(B)).",
+      "distractorExplanations": {
+        "a": "Reads the 100 A row of Table 250.122 (8 AWG copper). A 60 A feeder uses the 60 A row, which is 10 AWG copper.",
+        "c": "Matches the EGC to typical 6 AWG ungrounded conductors. Table 250.122 follows the OCPD rating, so 60 A still takes 10 AWG copper.",
+        "d": "Confuses the EGC with the grounding electrode conductor. Table 250.66 sizes the GEC from ungrounded service conductors, not feeder EGCs."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-003": {
+      "prompt": "Four 10 AWG copper THHN current-carrying conductors share one EMT at 30°C. Terminations are 75°C. What ampacity do you use when selecting the branch OCPD?",
+      "options": {
+        "a": "40 A, 90°C column with no adjustment",
+        "b": "35 A, 75°C column with no CCC adjustment",
+        "c": "32 A, 90°C value times 80% for four CCC",
+        "d": "30 A, applying the 70% factor for four CCC"
+      },
+      "correctOptionId": "c",
+      "explanation": "THHN may start at the 90°C column of Table 310.16 (10 AWG copper = 40 A) for adjustment, but 310.15(C)(1) requires 80% when four to six current-carrying conductors share a raceway: 40 A × 0.80 = 32 A. That 32 A is below the 75°C termination value (35 A), so 32 A governs OCPD selection.",
+      "distractorExplanations": {
+        "a": "Uses the 90°C column as a termination rating. 110.14(C) limits terminations to 75°C unless the equipment is 90°C-listed, and four CCC still require the 80% adjustment.",
+        "b": "Takes the 75°C column (35 A) without the 80% adjustment required for four current-carrying conductors in one raceway.",
+        "d": "Applies the 70% factor, which is the 7–9 CCC row of 310.15(C)(1), not the 4–6 conductor 80% row."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-nec-004": {
+      "prompt": "A metal device box contains four 12 AWG insulated conductors, one 12 AWG equipment grounding conductor, one internal cable clamp, and one wiring device. What minimum box volume does 314.16 require?",
+      "options": {
+        "a": "13.50 in³, counting the yoke as one 12 AWG volume",
+        "b": "15.75 in³, omitting the equipment grounding conductor",
+        "c": "11.25 in³, counting only the four insulated conductors",
+        "d": "18.00 in³, using 2.25 in³ for each 12 AWG allowance"
+      },
+      "correctOptionId": "d",
+      "explanation": "Table 314.16(B) assigns 2.25 in³ per 12 AWG volume. Four insulated conductors = 9.00; all EGCs together count as one volume = 2.25; one or more internal clamps = 2.25; each yoke counts as two volumes = 4.50. Total 18.00 in³. Fill is a volume check, not an ampacity or conduit-fill check.",
+      "distractorExplanations": {
+        "a": "Counts the device yoke as a single 12 AWG volume (2.25). 314.16(B)(4) requires two volume allowances for each yoke.",
+        "b": "Drops the EGC allowance. One or more EGCs still add one volume based on the largest EGC in the box (here 2.25 in³).",
+        "c": "Counts only the four insulated conductors (9.00) plus one extra 2.25, ignoring clamp, EGC, and the double yoke allowance."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-nec-005": {
+      "prompt": "A 200 A, 120/240 V service uses 3/0 copper ungrounded conductors. The grounding electrode conductor lands only on a single driven rod. What is the smallest copper GEC Table 250.66 with 250.66(A) permits?",
+      "options": {
+        "a": "6 AWG copper, the rod-electrode ceiling in 250.66(A)",
+        "b": "4 AWG copper, the full Table 250.66 size for 3/0 copper",
+        "c": "8 AWG copper, the smallest GEC in Table 250.66",
+        "d": "2 AWG copper, the row used for 250 kcmil ungrounded conductors"
+      },
+      "correctOptionId": "a",
+      "explanation": "Table 250.66 would size a GEC for 3/0 copper ungrounded conductors at 4 AWG copper. When that GEC connects solely to a rod, pipe, or plate electrode, 250.66(A) does not require it larger than 6 AWG copper. 8 AWG is the table minimum for small services, not a further reduction off a 3/0 service.",
+      "distractorExplanations": {
+        "b": "Uses the full Table 250.66 size for 3/0 (4 AWG) and skips 250.66(A), which caps a rod-only GEC at 6 AWG copper.",
+        "c": "Drops to 8 AWG, the Table 250.66 size for 2 AWG or smaller ungrounded conductors. 250.66(A) reduces 4 AWG to 6 AWG, not to 8 AWG.",
+        "d": "Reads a larger Table 250.66 row (2 AWG for 3/0 aluminum through 250 kcmil copper). 3/0 copper is the 4 AWG copper row before the rod cap."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-nec-006": {
+      "prompt": "A 480Y/277 V switchboard has exposed live parts on both sides of the working space (Table 110.26(A)(1) Condition 3). What is the minimum clear working depth?",
+      "options": {
+        "a": "3 ft, the 0–150 V Condition 1 depth",
+        "b": "4 ft, the 151–600 V Condition 3 depth",
+        "c": "3½ ft, the 151–600 V Condition 2 depth",
+        "d": "6 ft, the dedicated equipment-space height in 110.26(E)"
+      },
+      "correctOptionId": "b",
+      "explanation": "Voltage to ground on a 480Y/277 V system is 277 V, so the 151–600 V column applies. Condition 3 is exposed live parts on both sides of the working space, which requires 4 ft of clear depth. Width and height are separate 110.26(A)(2) and (A)(3) rules; 110.26(E) dedicated space is not working-depth.",
+      "distractorExplanations": {
+        "a": "Uses the 0–150 V column and Condition 1. 277 V to ground is the 151–600 V column, and live-to-live is Condition 3.",
+        "c": "Uses Condition 2 (live parts on one side, grounded on the other) at 151–600 V, which is 3½ ft, not live-to-live Condition 3.",
+        "d": "Confuses working-space depth with dedicated equipment space, which extends 6 ft above the gear or to the structural ceiling."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-007": {
+      "prompt": "A 125 V, 20 A receptacle is installed in a non-dwelling indoor wet location subject to wash-down. Which personnel-protection rule applies?",
+      "options": {
+        "a": "AFCI only, because 210.12 is limited to dwelling units",
+        "b": "No GFCI, because 20 A commercial receptacles are exempt",
+        "c": "GFCI protection under 210.8(B) for other than dwelling units",
+        "d": "GFCI only if that receptacle is also located outdoors"
+      },
+      "correctOptionId": "c",
+      "explanation": "210.8(B) requires GFCI protection for 150 V-to-ground receptacles 50 A or less in listed other-than-dwelling locations, including indoor wet locations. AFCI in 210.12 is a dwelling arc-fire rule and does not replace GFCI shock protection in a commercial wash-down area.",
+      "distractorExplanations": {
+        "a": "Applies dwelling AFCI (210.12) to a commercial wet location. AFCI addresses arcing fire risk, not the 210.8(B) GFCI requirement.",
+        "b": "Invented a 20 A commercial exemption. 210.8(B) covers 125 V 15 A and 20 A (and larger ratings up to 50 A in current cycles) in the listed locations.",
+        "d": "Treats outdoors as the only 210.8(B) trigger. Indoor wet locations, garages, sinks, and rooftops are separate listed GFCI locations."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-008": {
+      "prompt": "A 15 A, 120 V branch circuit will supply dwelling-unit bedroom receptacles and lighting. Besides the OCPD, which additional protection does 210.12 require?",
+      "options": {
+        "a": "GFCI, because bedrooms are listed in 210.8(A)",
+        "b": "A Type 1 or 2 SPD at the service in place of AFCI",
+        "c": "No AFCI if the circuit is NM-B in wood framing",
+        "d": "Combination-type AFCI protecting that bedroom circuit"
+      },
+      "correctOptionId": "d",
+      "explanation": "210.12 requires AFCI protection of listed dwelling branch circuits, including bedrooms, to reduce fire risk from arcing faults. Combination-type AFCIs are the usual means. GFCI (210.8) is a different device for shock in wet/damp locations; an SPD (Article 242) does not satisfy 210.12.",
+      "distractorExplanations": {
+        "a": "Puts bedrooms on the 210.8 GFCI list. Bedrooms are an AFCI location in 210.12; GFCI is for bathrooms, garages, outdoors, and similar 210.8 sites.",
+        "b": "Substitutes surge protection for AFCI. SPDs clamp transients; they do not detect series or parallel arcing the way an AFCI does.",
+        "c": "Treats NM-B as an AFCI exception. Cable type does not remove 210.12 for dwelling bedroom circuits."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-009": {
+      "prompt": "A feeder’s conductors have 230 A ampacity after corrections. The load is 220 A noncontinuous. What is the largest standard OCPD 240.4(B) permits?",
+      "options": {
+        "a": "250 A, the next standard rating above 230 A",
+        "b": "200 A, because the OCPD must stay below ampacity",
+        "c": "300 A, because next-size-up always applies over 800 A",
+        "d": "230 A, using a nonstandard breaker matching ampacity"
+      },
+      "correctOptionId": "a",
+      "explanation": "240.4(B) allows the next standard overcurrent-device rating above the conductor ampacity when that ampacity does not match a 240.6 size, the OCPD is 800 A or less, and 240.4(D) small-conductor limits do not apply. 230 A is not a standard size; the next is 250 A. 240.4(C) forbids this round-up above 800 A.",
+      "distractorExplanations": {
+        "b": "Rounds down to 200 A. 240.4(B) permits the next standard size up (250 A) for 800 A or less when ampacity is 230 A.",
+        "c": "Applies next-size-up above 800 A. 240.4(C) requires conductor ampacity to be at least the OCPD rating in that range.",
+        "d": "Assumes a 230 A breaker exists. Standard ratings in 240.6 skip from 225 A to 250 A, which is why 240.4(B) exists."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-nec-010": {
+      "prompt": "A 120/240 V feeder in EMT has two ungrounded conductors and a grounded conductor serving linear loads (a 3-wire single-phase MWBC). How many current-carrying conductors count for 310.15(C)(1) adjustment?",
+      "options": {
+        "a": "Three, always counting the grounded conductor",
+        "b": "Two; the linear 120/240 V neutral is not counted",
+        "c": "One, counting only the larger ungrounded conductor",
+        "d": "Four, adding the equipment grounding conductor"
+      },
+      "correctOptionId": "b",
+      "explanation": "310.15(E)(1) does not count a grounded conductor that carries only unbalanced current from linear loads on a 3-wire 120/240 V single-phase circuit. The two ungrounded conductors are the CCCs for adjustment. Count the neutral when it is a 4-wire 3-phase wye with nonlinear loads, or when it carries substantial harmonic current.",
+      "distractorExplanations": {
+        "a": "Always counts the grounded conductor. That is required for some wye harmonic feeders, not for this linear 120/240 V 3-wire MWBC.",
+        "c": "Counts only one ungrounded conductor. Each ungrounded CCC occupies raceway heat; both hots count.",
+        "d": "Counts the EGC. Equipment grounding conductors are not current-carrying for 310.15(C)(1) adjustment."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-011": {
+      "prompt": "A panelboard is installed indoors. How far must dedicated electrical equipment space stay clear of unrelated piping and ductwork?",
+      "options": {
+        "a": "3 ft above the enclosure, matching working-space depth",
+        "b": "Foreign systems may occupy that zone if a drip pan is over the panel",
+        "c": "To 6 ft above the equipment or the structural ceiling, whichever is lower",
+        "d": "Commercial gear only; dwelling panelboards are exempt from 110.26(E)"
+      },
+      "correctOptionId": "c",
+      "explanation": "110.26(E) reserves the space equal to the equipment width and depth, from the floor to 6 ft above the equipment or to the structural ceiling, whichever is lower, for the electrical installation. Foreign systems belong above that dedicated volume (with protection from leaks), not inside it. The rule applies to indoor panelboards, including dwellings.",
+      "distractorExplanations": {
+        "a": "Uses 3 ft, a working-space depth figure. Dedicated equipment space is a 6 ft (or ceiling) envelope above the gear, not the 110.26(A) depth.",
+        "b": "Puts drip-protected piping inside the dedicated zone. Protection is for foreign systems above the dedicated space, not through it.",
+        "d": "Exempts dwellings. 110.26(E) covers indoor switchboards, switchgear, panelboards, and motor control centers in all occupancies."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-012": {
+      "prompt": "A dwelling bathroom will have a 125 V receptacle beside the basin. What branch-circuit rule in 210.11(C)(3) must the journeyman follow?",
+      "options": {
+        "a": "A 15 A lighting circuit may also feed those bathroom receptacles",
+        "b": "Bathroom receptacles may ride on a kitchen small-appliance circuit",
+        "c": "One 20 A circuit may feed bathrooms plus the garage receptacles",
+        "d": "A 20 A circuit must supply the bathroom receptacles and have no other outlets"
+      },
+      "correctOptionId": "d",
+      "explanation": "210.11(C)(3) requires at least one 20 A branch circuit for dwelling bathroom receptacle outlets, and that circuit shall have no other outlets. The exception allows other equipment only when the 20 A circuit supplies a single bathroom. Kitchen small-appliance circuits (210.11(C)(1)) and garage outlets are separate assignments.",
+      "distractorExplanations": {
+        "a": "Puts bathroom receptacles on a 15 A lighting circuit. 210.11(C)(3) requires a 20 A circuit for those receptacles.",
+        "b": "Shares the 210.11(C)(1) kitchen small-appliance circuits with the bathroom. Those two 20 A circuits are for kitchen/dining receptacles, not bathrooms.",
+        "c": "Adds garage outlets to the bathroom receptacle circuit. Garage receptacles are a 210.8 GFCI location and are not ‘other outlets’ allowed on the bathroom 20 A circuit."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-013": {
+      "prompt": "A non-motor, noncontinuous 22 A load is proposed on 12 AWG copper THHN with 75°C terminations. May the circuit use a 25 A breaker?",
+      "options": {
+        "a": "No; 240.4(D) limits 12 AWG copper to 20 A protection",
+        "b": "Yes; Table 310.16 lists 12 AWG at 25 A in the 75°C column",
+        "c": "Yes, because the load is not continuous and 22 A is under 25 A",
+        "d": "Yes, if the 90°C THHN column (30 A) is used for the breaker"
+      },
+      "correctOptionId": "a",
+      "explanation": "240.4(D) small-conductor rules cap 12 AWG copper at 20 A overcurrent protection unless a specific article (motors, tap conductors, and similar) provides otherwise. The 75°C ampacity of 25 A and the 90°C THHN value of 30 A do not override 240.4(D) for this ordinary branch circuit, so a 25 A breaker is not permitted.",
+      "distractorExplanations": {
+        "b": "Treats the 75°C ampacity column as the OCPD cap. 240.4(D) still limits 12 AWG copper to 20 A on ordinary branch circuits.",
+        "c": "Uses load current versus breaker rating and skips 240.4(D). Noncontinuous status does not authorize 12 AWG on 25 A.",
+        "d": "Uses the 90°C column to pick the breaker. 110.14(C) and 240.4(D) still keep 12 AWG copper at 20 A for this circuit."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-nec-014": {
+      "prompt": "A 120 V branch circuit supplies a 16 A continuous sign 120 ft from the panel. Using copper (K = 12.9) and a 3% branch voltage-drop target (3.6 V), what is the smallest conductor that meets that target? CM = 2KIL / VD.",
+      "options": {
+        "a": "12 AWG copper (6,530 cmil), sized only by ampacity",
+        "b": "8 AWG copper (16,510 cmil), which exceeds 13,760 cmil needed",
+        "c": "10 AWG copper (10,380 cmil), which is below 13,760 cmil needed",
+        "d": "4 AWG copper (41,740 cmil), far above the calculated area"
+      },
+      "correctOptionId": "b",
+      "explanation": "Required circular mils = 2 × 12.9 × 16 × 120 / 3.6 = 13,760 cmil. 10 AWG (10,380) is short; 8 AWG (16,510) is the smallest standard copper size over 13,760. NEC voltage-drop notes in 210.19/215.2 are informational (about 3% branch, 5% feeder plus branch), but journeyman work still sizes conductors so the load actually starts and does not overheat from excess current at low voltage.",
+      "distractorExplanations": {
+        "a": "Stops at 12 AWG ampacity (20 A continuous-capable). 6,530 cmil is far below 13,760 cmil, so drop far exceeds 3%.",
+        "c": "Picks 10 AWG because it carries 16 A × 1.25. 10,380 cmil is still below 13,760 cmil, so the 3% target is missed.",
+        "d": "Jumps to 4 AWG. That size works but is larger than needed; 8 AWG already exceeds 13,760 cmil."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-nec-015": {
+      "prompt": "How many 12 AWG copper THHN conductors (0.0133 in² each) may be installed in ¾ in. EMT (40% fill area 0.213 in²) when more than two conductors occupy the raceway?",
+      "options": {
+        "a": "9, using 60% fill as if the run were a nipple",
+        "b": "22, using the full internal area of the EMT",
+        "c": "16, 0.213 in² divided by 0.0133 in² at 40% fill",
+        "d": "4, matching the 310.15(C)(1) four-CCC adjustment count"
+      },
+      "correctOptionId": "c",
+      "explanation": "Chapter 9 Table 1 limits more than two conductors to 40% of the raceway cross section. ¾ in. EMT 40% area is 0.213 in²; 12 AWG THHN is 0.0133 in²; 0.213 / 0.0133 ≈ 16. Annex C matches that count. Nipple 60% fill and ampacity adjustment counts are different calculations.",
+      "distractorExplanations": {
+        "a": "Uses 60% fill, permitted for nipples 24 in. or less (Chapter 9 Note 4), not for a ordinary EMT run.",
+        "b": "Uses 100% of the EMT area. Table 1 allows 100% only for a single conductor, not for a bundle of 12 AWG THHN.",
+        "d": "Confuses conduit fill with the four-CCC ampacity adjustment threshold. Fill is a geometric count; adjustment is a heat-count of current-carrying conductors."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

@@ -753,8 +753,11 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "assessment", label: "Assessment" },
       { id: "foundations", label: "Foundations & professional practice" }
     ]),
-    officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Praxis Special Education readiness check with topic scoring.",
+    officialSourceNote:
+      "Typical ETS Praxis Special Education: Core Knowledge and Applications (5355) is 120 selected-response questions in 2 hours; some states use other codes. Passing scores are set by states. This free check is a shorter 60-question / 75-minute diagnostic — not Praxis Core (5713/5723/5733) and not Elementary 5001. Independent UniPrep2Go practice — not ETS material.",
+    description:
+      "Free 60-question Praxis Special Education readiness check (75 min) with topic scoring — shorter than typical 5355 120Q / 2h.",
+    lastUpdated: "2026-10-04",
     examBody: "ETS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Praxis Special Education", "sped praxis"],
@@ -794,7 +797,8 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State electrical boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Electrical Journeyman readiness check with topic scoring.",
     examBody: "State electrical boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    lastUpdated: "2026-10-04",
+    questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
     searchAliases: ["journeyman electrician exam", "electrician license test"],
   }),
   nicheReadinessConfig({
@@ -813,7 +817,8 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to State plumbing boards themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question Plumbing Journeyman readiness check with topic scoring.",
     examBody: "State plumbing boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    lastUpdated: "2026-10-04",
+    questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
     searchAliases: ["journeyman plumber exam", "plumbing license test"],
   }),
   nicheReadinessConfig({

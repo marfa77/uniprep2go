@@ -65,33 +65,32 @@ EXAM_CONTEXT: dict[str, dict[str, Any]] = {
         ],
     },
     "gmat-focus-anki-deck": {
-        "exam_name": "GMAT Focus Edition (GMAC)",
+        "exam_name": "GMAT Exam (GMAC, 2026)",
         "hook": (
-            "Active recall for the GMAT Focus Edition — Quantitative Reasoning, Verbal Reasoning, "
-            "and Data Insights in MCQ format with explanations on every card."
+            "200 unique cards rewritten October 2026 for the current GMAT — Quant, Verbal, and Data Insights. "
+            "No Sentence Correction, no Quant geometry, Data Sufficiency only in DI."
         ),
         "audience": (
-            "For MBA and business master's applicants who need daily Quant, Verbal, and Data Insights "
-            "drilling between official GMAC practice."
+            "For MBA and business master's applicants who need daily section drilling between official GMAC practice."
         ),
         "disclaimer": "GMAC",
-        "about_heading": "What is the GMAT Focus Edition?",
+        "about_heading": "What is the current GMAT Exam?",
         "about": (
-            "The GMAT Focus Edition is GMAC's graduate management admissions exam. Business schools "
-            "use the total score (and section performance) to compare MBA and specialized master's applicants."
+            "GMAC retired the Focus Edition name after 1 July 2024; the live exam is the three-section GMAT "
+            "(64 questions / 2h15 / 205–805). SuperScore has been on Official Score Reports since 12 August 2026."
         ),
-        "format": "Three sections — Quantitative Reasoning, Verbal Reasoning, and Data Insights",
-        "scoring": "Total score 205–805 (Focus Edition scale)",
+        "format": "Three 45-minute sections — Quantitative Reasoning (21), Verbal Reasoning (23), Data Insights (20)",
+        "scoring": "Total score 205–805; SuperScore live since 12 Aug 2026",
         "who": "MBA / business master's applicants targeting competitive programs",
-        "deck_covers": "Quant, Verbal, and Data Insights style MCQs for daily spaced repetition.",
+        "deck_covers": "200 unique MCQs (67/67/66) from the same October 2026 bank as the free 45-question timed check.",
         "not_included": "Official adaptive full-lengths — keep using GMAC Official Prep alongside this deck.",
-        "why_anki": "Focus Edition rewards consistent section drilling. Anki keeps weak item types from decaying between mocks.",
+        "why_anki": "The 2026 exam rewards consistent section drilling. Anki keeps weak item types from decaying between mocks.",
         "official_url": "https://www.mba.com/exams/gmat-exam",
         "facts": [
             ("Administrator", "GMAC"),
-            ("Sections", "Quant · Verbal · DI"),
+            ("Sections", "Quant 21 · Verbal 23 · DI 20"),
             ("Total score", "205–805"),
-            ("Format", "Computer adaptive"),
+            ("Bank", "200 unique · Oct 2026 rewrite"),
         ],
     },
     "sat-anki-deck": {

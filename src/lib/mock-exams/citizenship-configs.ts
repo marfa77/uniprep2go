@@ -481,7 +481,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "Belgium Flanders — Maatschappelijke oriëntatie (no single federal MCQ; proposed national test separate)",
     questionSourceNote:
       "Questions rewritten from Prep2Go Belgium Flanders MO (maatschappelijke oriëntatie) themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Flemish government material.",
-    ankiDeckCardCount: 120,
+    ankiDeckCardCount: 165,
     lastUpdated: "2026-10-04",
     searchAliases: ["maatschappelijke oriëntatie", "Flanders MO test", "inburgering Vlaanderen"],
   }),

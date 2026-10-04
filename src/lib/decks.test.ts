@@ -766,7 +766,7 @@ describe("deck catalog", () => {
       "dutch-a2-inburgering-anki-deck":
         "Dutch Inburgering NT2 A2 Anki Deck — 1897 Flashcards",
       "german-a2-anki-deck": "German Goethe telc ÖSD DTZ Anki Deck — 2115 Flashcards",
-      "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 400 Flashcards",
+      "gmat-focus-anki-deck": "GMAT Focus Anki Deck — 200 Flashcards",
       "sat-anki-deck": "Digital SAT Anki Deck — 160 Flashcards",
       "pmp-anki-deck": "PMP Anki Deck — 346 Flashcards",
       "gre-anki-deck": "GRE Anki Deck — 350 Flashcards",

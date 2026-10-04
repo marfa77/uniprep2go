@@ -1,0 +1,259 @@
+{
+  "plumbing-journeyman-readiness-check": {
+    "plumbing-journeyman-readiness-check-fixtures-001": {
+      "prompt": "A floor-mount water closet is specified with a standard 12-inch rough-in. From which points is that 12 inches measured?",
+      "options": {
+        "a": "From the open stud face to the front lip of the closet flange",
+        "b": "From the wood framing to the back edge of the closet flange",
+        "c": "From the finished wall surface to the center of the closet flange",
+        "d": "From the finished wall surface to the flange center, using 15 inches"
+      },
+      "correctOptionId": "c",
+      "explanation": "The common residential closet rough-in is 12 inches from the finished wall (not the studs) to the center of the closet flange. Measuring to a flange edge or from open framing shifts the bowl into the wall or leaves a gap. Fifteen inches is a side-clearance figure, not the rear rough-in.",
+      "distractorExplanations": {
+        "a": "Confuses stud-face-to-flange-lip with finished-wall-to-flange-center; drywall thickness would then put the bowl too close to the wall.",
+        "b": "Using the back edge of the flange and the framing, not the flange center and finished wall, misplaces the closet bolts.",
+        "d": "Fifteen inches is the usual minimum from a water-closet centerline to a side wall, not the rear-wall rough-in."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-002": {
+      "prompt": "A powder-room lavatory is being finished. What supply-stop and trap arrangement matches typical IPC/UPC fixture rules?",
+      "options": {
+        "a": "Accessible stops on the supplies and an S-trap set to the listed trap-arm height",
+        "b": "Concealed in-wall stops and a drum trap under the lavatory bowl",
+        "c": "One shutoff at the water heater and a crown-vented trap at the lavatory",
+        "d": "Accessible fixture stops on the supplies and a vented P-trap at proper height"
+      },
+      "correctOptionId": "d",
+      "explanation": "Each lavatory needs accessible fixture stops so the faucet can be serviced without shutting the house, plus a vented P-trap set to the code trap-arm height. S-traps, drum traps, and crown vents are prohibited because they siphon or are not serviceable fixture traps.",
+      "distractorExplanations": {
+        "a": "S-traps are prohibited in new work; they self-siphon. A lavatory needs a vented P-trap, not an S-trap even if the height looks listed.",
+        "b": "Stops must remain accessible; concealing them in the wall and using a drum trap both violate typical fixture rules.",
+        "c": "A heater shutoff is not a fixture stop, and a vent at the trap weir (crown vent) is prohibited."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-003": {
+      "prompt": "A dishwasher drain hose is tied into a kitchen sink with a disposer. What connection protects the hose from waste backing up?",
+      "options": {
+        "a": "A high loop or listed air gap, then into the disposer or sink drain above the trap",
+        "b": "A hose tap into the tailpiece on the sewer side of the trap weir",
+        "c": "A check valve on the dishwasher hot-water supply inlet and no drain air gap or loop",
+        "d": "A vacuum breaker threaded onto the drain hose at the disposer inlet"
+      },
+      "correctOptionId": "a",
+      "explanation": "Codes and listings require an air gap or a high loop under the counter so sink waste cannot siphon back into the dishwasher. The hose then joins the disposer nipple or a wye on the sink drain above the trap. Supply check valves and vacuum breakers do not replace that drain air break.",
+      "distractorExplanations": {
+        "b": "Tapping downstream of the trap bypasses the seal and admits sewer gas; the hose must join above the trap with a loop or air gap.",
+        "c": "A supply check valve does not protect the drain hose from dirty sink water; the drain still needs a high loop or air gap.",
+        "d": "Vacuum breakers protect potable supply outlets; dishwasher drain hoses use an air gap or high loop instead."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-004": {
+      "prompt": "A mechanical-room floor drain will see water only a few times a year. Why does the spec call for a trap primer?",
+      "options": {
+        "a": "It vents the floor-drain trap so siphonage cannot pull the water seal dry",
+        "b": "It meters small amounts of water into the trap so evaporation does not break the seal",
+        "c": "It acts as a backwater flap that blocks sewer backup onto the floor",
+        "d": "It timed-flushes debris out of the trap on a programmed wash cycle"
+      },
+      "correctOptionId": "b",
+      "explanation": "Seldom-used floor drains lose trap seal by evaporation. A trap primer (or a listed equivalent) adds makeup water so the seal stays full. Venting fights siphonage, a backwater valve fights backup, and primers are not debris-flush machines.",
+      "distractorExplanations": {
+        "a": "A primer adds water to offset evaporation; the vent addresses siphonage, a different way of losing the seal.",
+        "c": "That describes a backwater valve. A primer feeds small makeup-water doses and does not stop sewer surcharge.",
+        "d": "Primers deliver tiny makeup amounts; they are not designed to scour debris from the trap on a timer."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-005": {
+      "prompt": "A mortar-bed tile shower is being built over a liner. When must the receptor be proven watertight?",
+      "options": {
+        "a": "Cement backer board may serve as the waterproof layer under the tile",
+        "b": "A topical sealer coat over finished tile is accepted as the shower pan",
+        "c": "The liner or membrane must be waterproof and flood-tested before tile is set",
+        "d": "Flood-test the receptor after grout has cured so leaks show at the tile face"
+      },
+      "correctOptionId": "c",
+      "explanation": "The shower pan or bonded membrane is the waterproof layer. It is installed and flood-tested before mortar and tile so leaks can be repaired without demolition. Cement board is not a pan, and a sealer over grout is not a code receptor.",
+      "distractorExplanations": {
+        "a": "Cement board is a substrate, not a waterproof pan; a liner or membrane must still be installed and tested.",
+        "b": "The pan sits under the mortar bed; a topical sealer on finished tile is not the listed shower receptor.",
+        "d": "Testing after grout means tearing out finished tile to find a liner leak; the flood test is done on the bare pan."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-006": {
+      "prompt": "A food-waste disposer is added under a kitchen sink. What else must the installation provide?",
+      "options": {
+        "a": "A dedicated vent stack separate from the sink trap and vent",
+        "b": "A hot-water supply branch piped into the disposer to soften grease and food waste",
+        "c": "A trapless drain tied straight into the building drain",
+        "d": "A listed electrical connection and a drain that still uses the sink trap and vent"
+      },
+      "correctOptionId": "d",
+      "explanation": "A disposer is both an appliance and a fixture outlet: it needs a listed electrical hookup and it discharges through the sink’s trap and vent. It does not get its own stack, a water-supply tap, or a trapless run to the building drain.",
+      "distractorExplanations": {
+        "a": "The disposer uses the sink trap and vent; a separate dedicated stack is not required for a standard kitchen disposer.",
+        "b": "Disposers have no water-supply connection; makers tell users to run cold water so fats solidify and flush.",
+        "c": "Every fixture drain needs a trap; a disposer cannot bypass the sink trap into the building drain."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-007": {
+      "prompt": "An electric bidet seat is added to an existing water closet. What does a typical listing plus bathroom electrical rules expect?",
+      "options": {
+        "a": "A protected potable supply, often hot and cold, and a nearby GFCI receptacle",
+        "b": "Its own 3-inch trap and a dedicated vent stack hidden in the plumbing chase",
+        "c": "A tee off the closet fill valve with no vacuum breaker or air gap",
+        "d": "A hardwired 240-volt circuit that skips GFCI in the bathroom"
+      },
+      "correctOptionId": "a",
+      "explanation": "Washlets and bidets need a backflow-protected water supply (many use hot and cold) and, for electric seats, a 120-volt GFCI receptacle in the bathroom. They do not need a 3-inch trap and stack, an unprotected tee on the closet fill, or a 240-volt non-GFCI circuit.",
+      "distractorExplanations": {
+        "b": "A bidet fixture uses a small 1-1/4 inch trap on ordinary venting; an add-on seat uses the closet trap, not a new 3-inch stack.",
+        "c": "A spray outlet on potable water needs an air gap or vacuum breaker; an unprotected tee off the closet fill is a cross-connection.",
+        "d": "Electric bidet seats plug into a 120-volt bathroom receptacle that needs GFCI protection, not a 240-volt hardwired circuit."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-008": {
+      "prompt": "A commercial restroom will have wall-hung water closets off a chase. What is the carrier system there for?",
+      "options": {
+        "a": "Floor-mount closets bolted through a cast-iron closet bend",
+        "b": "A concealed frame that supports wall-hung closets, urinals, or lavatories",
+        "c": "Horizontal drain piping hung on straps from the floor joists",
+        "d": "A water-heater stand that lifts the storage tank a few inches off the floor"
+      },
+      "correctOptionId": "b",
+      "explanation": "A fixture carrier is a rated steel frame in the wall or chase that takes the load of a wall-hung closet, urinal, or lavatory and ties the fixture to the drain. Floor-mount closet flanges, pipe hangers, and heater stands are different supports.",
+      "distractorExplanations": {
+        "a": "Floor-mount toilets bolt to a closet flange; carriers hold wall-hung fixtures off the floor from inside the chase.",
+        "c": "Pipe hangers support horizontal drains; a carrier is the fixture frame, not a DWV hanger.",
+        "d": "Heater platforms are not carriers; carriers anchor wall-hung lavatories, urinals, and water closets."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-009": {
+      "prompt": "After trim is on a pressure-balancing tub/shower valve, the plumber sets the temperature limit stop. What does that stop do?",
+      "options": {
+        "a": "It forces a minimum hot rotation so mixed water stays above 120°F",
+        "b": "It restricts shower flow to 2.5 gpm in place of the showerhead flow restrictor",
+        "c": "It limits how far the handle can turn toward hot so outlet temperature is capped",
+        "d": "It resets the water-heater thermostat for every fixture in the house"
+      },
+      "correctOptionId": "c",
+      "explanation": "The limit stop is a mechanical rotation stop on the valve cartridge. It caps how far the handle can go toward full hot so shower outlet temperature stays at the scald-protection setting (often 120°F max). It does not set a minimum temperature, a flow rate, or the heater thermostat.",
+      "distractorExplanations": {
+        "a": "Limit stops cap maximum hot rotation to prevent scalding; they do not force mixed water to stay above 120°F.",
+        "b": "Flow is limited by the showerhead; the limit stop only restricts handle travel toward hot.",
+        "d": "The heater thermostat sets storage temperature for the system; a limit stop caps outlet temperature at that one valve."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-010": {
+      "prompt": "A wall-mount lavatory faucet is specified. What must be in the wall before finishes close?",
+      "options": {
+        "a": "Adhesive drywall anchors without wood or steel blocking behind the valve",
+        "b": "Rough-in postponed until after tile so the spout height can still be moved",
+        "c": "A deck-mount valve body set in the lavatory’s back ledge instead of the wall",
+        "d": "Correct valve rough-in dimensions and solid blocking behind the faucet"
+      },
+      "correctOptionId": "d",
+      "explanation": "Wall-mount faucets hang on the valve body. The rough-in depth and height must match the trim, and solid blocking must carry the load. Drywall anchors, waiting until after tile, or swapping in a deck-mount body will leak or pull out.",
+      "distractorExplanations": {
+        "a": "Drywall cannot carry faucet loads; wall-mount valves need solid blocking and the listed rough-in.",
+        "b": "Wall-mount rough-in is set before tile and close-in; spout height cannot be adjusted after finishes.",
+        "c": "A deck-mount body is a different faucet type; wall-mount trim needs an in-wall valve with backing."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-011": {
+      "prompt": "A wall-hung urinal is specified with a flushometer, not a tank. How is that fixture flushed?",
+      "options": {
+        "a": "Line-pressure water through a flush valve scours the fixture",
+        "b": "A gravity tank that refills through a float valve after each flush",
+        "c": "A waterless cartridge that seals with a barrier liquid and uses no flush water",
+        "d": "Building compressed air piped to the rim to scour the urinal bowl"
+      },
+      "correctOptionId": "a",
+      "explanation": "A flushometer uses building water pressure through a flush valve (manual or sensor) to rinse the urinal. Gravity tanks, waterless cartridges, and compressed-air scouring are other fixture types, not flushometer urinals.",
+      "distractorExplanations": {
+        "b": "Gravity tanks are typical of residential water closets; flushometers use line pressure through a flush valve.",
+        "c": "Waterless urinals use a cartridge and no flush water; a flushometer urinal delivers a pressurized water flush.",
+        "d": "Pressure-assist closets use air in a vessel; flushometer urinals rely on supply-water pressure, not shop air."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-012": {
+      "prompt": "A laundry closet needs a washing-machine outlet box in the wall. What does that box provide?",
+      "options": {
+        "a": "A trapped floor drain with a primer directly under the washer",
+        "b": "A recess for hot and cold stops and the standpipe drain opening",
+        "c": "A surface-mounted air-gap fitting as the washer’s discharge path",
+        "d": "A dryer-vent collar with a backdraft damper in the same plastic box"
+      },
+      "correctOptionId": "b",
+      "explanation": "A washing-machine box recesses the hot and cold fixture stops and the standpipe (or drain opening) so the hoses and discharge sit in the wall cavity. A floor pan, a standalone air-gap fitting, and a dryer vent are separate items.",
+      "distractorExplanations": {
+        "a": "A floor pan or drain is extra protection; the washer box itself houses the valves and the standpipe opening.",
+        "c": "Washers discharge into a standpipe with an air break at the box; the box is not merely a surface air-gap fitting.",
+        "d": "Dryer-vent boxes are a different product; the washing-machine box is for water valves and the drain."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-013": {
+      "prompt": "An accessible public lavatory is being set. Which combination matches ADA rules the plumber has to coordinate?",
+      "options": {
+        "a": "A pedestal lavatory with the rim at 36 inches, which also gives the required knee and toe space",
+        "b": "Twist-knob faucet handles and a rim height of 38 inches above the finished floor",
+        "c": "Knee clearance under the bowl, a rim no higher than 34 inches, and lever or sensor controls",
+        "d": "Exposed hot supplies and an uninsulated P-trap left bare so knees can reach the piping"
+      },
+      "correctOptionId": "c",
+      "explanation": "ADA lavatories need knee and toe clearance, a rim no higher than 34 inches, and controls that work without tight grasping or twisting (levers or sensors). Pedestals block knees, 36–38 inch rims are too high, and hot pipes under the bowl must be insulated or shielded.",
+      "distractorExplanations": {
+        "a": "ADA caps lavatory rim height at 34 inches and requires knee clearance, which a pedestal base blocks.",
+        "b": "Twist knobs fail the operable-parts rule, and 38 inches exceeds the 34-inch rim maximum.",
+        "d": "Hot water and drain pipes under accessible lavatories must be insulated or wrapped to protect knees; leaving them bare is the injury trap."
+      },
+      "difficulty": "hard"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-014": {
+      "prompt": "A frost-proof wall hydrant (sillcock) is run through an exterior wall in a freeze climate. How does it keep from bursting?",
+      "options": {
+        "a": "A heat-trace cable on the outdoor barrel keeps the hydrant valve body from freezing",
+        "b": "An antifreeze reservoir inside the hydrant body protects the seat",
+        "c": "Water is left pressurized in the outdoor barrel so ice cannot form",
+        "d": "The valve seat sits inside the heated space so the outdoor barrel drains when shut"
+      },
+      "correctOptionId": "d",
+      "explanation": "A frost-free sillcock uses a long stem so the valve seat is in the heated wall cavity. When the handle is closed, the outdoor barrel drains (a hose must be disconnected). Heat tape, antifreeze pots, and a pressurized outdoor barrel are not how listed frost-proof hydrants work.",
+      "distractorExplanations": {
+        "a": "Frost-free sillcocks do not rely on heat trace; the long stem places the seat inside the heated space.",
+        "b": "There is no antifreeze charge; the seat is indoors and the barrel drains when the valve is shut.",
+        "c": "Pressurized water left in the outdoor barrel would freeze and split the hydrant; the design drains that barrel."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-fixtures-015": {
+      "prompt": "DWV and water are stubbed for fixtures with the walls still open. When is the fixture rough-in inspection done?",
+      "options": {
+        "a": "After all fixtures are set, to verify flow and drainage at the final visit",
+        "b": "While piping is still exposed, before walls close, to check layout, slope, and joints",
+        "c": "After drywall is hung but before tile, to check pipe supports that are already covered",
+        "d": "Before any underground piping is laid, as a trench-depth check with no pipe in the ground"
+      },
+      "correctOptionId": "b",
+      "explanation": "Fixture rough-in inspection happens while the piping is still open in the walls and floors so the inspector can see layout, grade, supports, tests, and connections. Final inspection is after fixtures are set. Underground inspection is a separate earlier step on buried pipe.",
+      "distractorExplanations": {
+        "a": "That is the final inspection after trim; rough-in is done before concealment while joints are visible.",
+        "c": "Once drywall is up the piping is concealed; rough-in cannot verify slope and joints behind board.",
+        "d": "Underground inspection is on installed buried pipe; it is not the above-grade fixture rough-in, and it is not a trench with no pipe."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

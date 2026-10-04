@@ -1,0 +1,259 @@
+{
+  "electrical-journeyman-readiness-check": {
+    "electrical-journeyman-readiness-check-safety-001": {
+      "prompt": "A 480 V MCC bucket must be racked for troubleshooting and has no incident-energy label. Before energized work, an arc-flash risk assessment is required. What does that assessment primarily establish?",
+      "options": {
+        "a": "Available fault current used only to upsize the service overcurrent device",
+        "b": "Rubber insulating glove class from the shock voltage of the bus",
+        "c": "Which lockout steps may be skipped because live work is planned",
+        "d": "Arc-rated PPE and the arc-flash boundary for the assigned task"
+      },
+      "correctOptionId": "d",
+      "explanation": "NFPA 70E arc-flash risk assessment uses available fault current and clearing time to estimate incident energy. That result sets the arc-flash boundary and the arc-rated PPE (or PPE category) for justified energized work. It does not size service overcurrent devices, select glove class, or waive lockout.",
+      "distractorExplanations": {
+        "a": "Fault current comes from a short-circuit study (NEC 110.24) to rate equipment; arc-flash analysis uses it to find incident energy, not to resize the service main.",
+        "b": "Glove class is a shock-risk decision from voltage and ASTM D120; arc-flash analysis sets arc-rated clothing and the arc boundary.",
+        "c": "An assessment never authorizes skipping LOTO; it only specifies PPE and boundaries when energized work is justified."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-safety-002": {
+      "prompt": "A 50 hp 480 V pump will be uncoupled for a seal change. The local disconnect is opened. What must the crew still do before anyone puts a hand in the coupling?",
+      "options": {
+        "a": "Apply personal locks, release stored energy, and verify residual voltage is gone",
+        "b": "Tag the disconnect without locking because the pump coupling is already off",
+        "c": "Jog the starter once to prove the motor cannot start, then begin the seal work",
+        "d": "Wait thirty seconds for the field to collapse, then start work without testing"
+      },
+      "correctOptionId": "a",
+      "explanation": "OSHA 1910.147 and NFPA 70E require isolation, personal lockout, control of stored energy (rotation, springs, capacitors), and a proven absence of voltage before contact. Uncoupling the pump does not replace locks or a zero-energy test on a 480 V motor circuit.",
+      "distractorExplanations": {
+        "b": "A tag without a personal lock does not prevent someone from reclosing the disconnect; uncoupling is not a substitute for LOTO.",
+        "c": "Jogging can start the machine unexpectedly and is not a verification method; isolation must be proven dead, not bumped.",
+        "d": "Time delay does not prove de-energization; residual voltage and stored mechanical energy must be tested and released."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-safety-003": {
+      "prompt": "A 277 V lighting contactor must stay energized for in-service voltage checks. The journeyman needs hand tools at the terminals. How must those tools be rated?",
+      "options": {
+        "a": "To OSHA Class 00 glove voltage, because the tool rating follows glove class",
+        "b": "To the printed arc-flash PPE category stamped on the insulated tool handle",
+        "c": "To ASTM F1505/IEC 60900 insulation, typically 1000 V, jackets intact",
+        "d": "By the UL file number on the jaw, treated as the insulation voltage rating"
+      },
+      "correctOptionId": "c",
+      "explanation": "Insulated hand tools for live work are rated under ASTM F1505 / IEC 60900, commonly 1000 V, and the insulation must be intact. Glove classes, arc-flash PPE categories, and listing file numbers are different systems and do not set the tool voltage rating.",
+      "distractorExplanations": {
+        "a": "Class 00 (500 V ac) is an ASTM D120 rubber-glove class, not the rating system for insulated pliers or screwdrivers.",
+        "b": "PPE categories describe arc-rated clothing; they are not a voltage rating printed as a tool insulation class.",
+        "d": "A UL file number identifies a listed product; it is not the 1000 V insulation rating required for live-work tools."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-safety-004": {
+      "prompt": "A helper contacts a 277 V conductor and is unresponsive on the floor. The circuit is still energized. What is the first safe action?",
+      "options": {
+        "a": "De-energize from a safe place, call EMS, then start CPR if the scene is safe",
+        "b": "Grab the victim’s clothing and pull them clear of the still-live conductor",
+        "c": "Throw water on the panel so a ground-fault current will open the breaker",
+        "d": "Wait for the victim to regain consciousness before calling EMS or a supervisor"
+      },
+      "correctOptionId": "a",
+      "explanation": "Rescuers must not become a second victim. Open or trip the source from a safe place, summon EMS, then begin CPR or AED use only after the scene is de-energized or the victim is clear of the circuit. Direct contact with a live victim or wetting equipment is unsafe.",
+      "distractorExplanations": {
+        "b": "Pulling a person who is still on an energized conductor puts the rescuer in the current path.",
+        "c": "Water on energized gear creates additional shock and does not reliably clear the fault.",
+        "d": "Electrical shock can stop the heart; delayed EMS and CPR worsen outcomes even if the person looks merely stunned."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-safety-005": {
+      "prompt": "A VFD-fed 40 hp motor is locked out at the disconnect. The journeyman must land a new EGC at the drive terminals. Which remaining hazard must still be controlled?",
+      "options": {
+        "a": "Line-side residual only; load terminals are dead as soon as the disconnect opens",
+        "b": "Dynamic braking that makes shaft coasting impossible after the stop command",
+        "c": "No meter check at the VFD, because the locked disconnect is proof enough",
+        "d": "Stored energy in the DC bus capacitors until discharged and verified dead"
+      },
+      "correctOptionId": "d",
+      "explanation": "Opening a motor disconnect isolates the line but does not instantly drain a VFD DC bus. Capacitors can hold hazardous voltage for minutes. LOTO for electronic drives includes waiting the manufacturer’s discharge time, using bleed paths if provided, and proving absence of voltage at the DC bus and motor terminals.",
+      "distractorExplanations": {
+        "a": "Load-side and DC-bus terminals can remain live after the disconnect opens; residual energy is not limited to the line lugs.",
+        "b": "Many VFDs coast on stop; braking is not guaranteed and does not remove electrical stored energy.",
+        "c": "A locked disconnect is isolation, not verification; NFPA 70E still requires an absence-of-voltage test at the work point."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-safety-006": {
+      "prompt": "A 208Y/120 V panel is locked out. Before landing new branch conductors, the journeyman must prove the meter works. What is the live-dead-live sequence?",
+      "options": {
+        "a": "Watch the circuit go live, then dead after switching, then live again after restore",
+        "b": "Prove two phases dead and treat the third as dead if those two readings match",
+        "c": "Test the meter on a known live source, prove the circuit dead, then retest live",
+        "d": "Check the calibration sticker on the meter and skip the known-live source checks"
+      },
+      "correctOptionId": "c",
+      "explanation": "Live-dead-live proves the instrument, not the switching history. Test on a known energized source, measure every conductor on the locked-out circuit, then retest the meter on the known live source so a failed tester cannot be mistaken for a dead circuit.",
+      "distractorExplanations": {
+        "a": "The sequence checks the tester before and after, not whether the panel was recently energized or restored.",
+        "b": "Each ungrounded conductor and the grounded conductor must be tested; two dead phases do not prove the third.",
+        "d": "A current calibration sticker does not prove the meter works at this moment; known-live checks are still required."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-safety-007": {
+      "prompt": "A Class A GFCI on a 20 A construction receptacle trips when a helper uses a wet drill. What current condition caused that trip?",
+      "options": {
+        "a": "An arcing signature on the ungrounded conductor, which is AFCI protection",
+        "b": "About 4–6 mA imbalance between the hot and the grounded conductor",
+        "c": "More than 30 mA residual current, the typical equipment GFPE level",
+        "d": "Fault current on the equipment grounding conductor that then trips the breaker"
+      },
+      "correctOptionId": "b",
+      "explanation": "A Class A GFCI compares current leaving on the ungrounded conductor with current returning on the grounded conductor and trips at about 4–6 mA. That personnel threshold is far below 30 mA GFPE and is not the same function as an AFCI or a overcurrent device clearing via the EGC.",
+      "distractorExplanations": {
+        "a": "Detecting parallel or series arcing is an AFCI function; a GFCI does not look for arc signatures.",
+        "c": "30 mA is a common equipment ground-fault (GFPE) setting; it is too high for Class A personnel protection.",
+        "d": "Breaker trip via the EGC is overcurrent/ground-fault clearing of large current, not a 5 mA differential trip."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-safety-008": {
+      "prompt": "Covers are off a 480 V motor-control bus. The restricted approach boundary is marked. Who may cross it to take a voltage reading?",
+      "options": {
+        "a": "A qualified person using shock PPE rated for the exposed voltage",
+        "b": "An unqualified helper if a qualified person walks beside them",
+        "c": "Anyone in arc-rated clothing, because clothing also covers shock risk",
+        "d": "A qualified person without shock PPE if the meter reading takes under a minute"
+      },
+      "correctOptionId": "a",
+      "explanation": "The restricted approach boundary is a shock boundary. NFPA 70E allows only a qualified person inside it, with insulating PPE and insulated tools as the voltage requires. Escort rules apply at the limited approach boundary, not the restricted boundary, and arc-rated clothing does not replace shock protection.",
+      "distractorExplanations": {
+        "b": "An escort may take an unqualified person to the limited approach boundary, not across the restricted shock boundary.",
+        "c": "Arc-rated clothing addresses incident energy; crossing the restricted boundary is a shock decision that needs insulated PPE.",
+        "d": "Task duration does not waive shock PPE inside the restricted approach boundary."
+      },
+      "difficulty": "hard"
+    },
+    "electrical-journeyman-readiness-check-safety-009": {
+      "prompt": "A 25 hp 480 V motor in a mechanical room is served from an MCC two rooms away. For ordinary servicing at the motor, what does NEC 430.102 require?",
+      "options": {
+        "a": "A remote emergency-stop pushbutton used in place of the motor disconnecting means",
+        "b": "No local disconnect if the MCC bucket nameplate already lists this motor ID",
+        "c": "No motor disconnect when the controller disconnect is located in another building",
+        "d": "A lockable disconnect in sight of the motor unless a Code exception applies"
+      },
+      "correctOptionId": "d",
+      "explanation": "NEC 430.102(B) requires a disconnecting means in sight from the motor location, and it must be lockable. Limited exceptions exist for some industrial installations with documented safety procedures. An E-stop, a nameplate, or a remote controller disconnect does not by itself meet the in-sight motor disconnect rule.",
+      "distractorExplanations": {
+        "a": "An E-stop may drop a starter coil; it is not the lockable disconnecting means required at the motor.",
+        "b": "Identification of the MCC bucket helps lockout but does not place a disconnect in sight of the motor.",
+        "c": "Distance to the controller makes an in-sight motor disconnect more necessary, not optional."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-safety-010": {
+      "prompt": "A journeyman must replace lamps from a ladder next to an exposed 277 V lighting busway. What ladder practice is required?",
+      "options": {
+        "a": "An aluminum ladder kept about 3 ft from the energized busway",
+        "b": "A wood ladder painted so cracks in the side rails cannot collect moisture",
+        "c": "Nonconductive side rails, or stay clear of the exposed energized parts",
+        "d": "A metal ladder bonded to the enclosure before the worker climbs"
+      },
+      "correctOptionId": "c",
+      "explanation": "OSHA and NFPA 70E expect nonconductive ladders near exposed live parts, or else maintained clearance so the ladder cannot contact them. Conductive rails put the worker in a fault path; paint on wood hides defects; bonding a metal ladder does not make contact safe.",
+      "distractorExplanations": {
+        "a": "Aluminum is conductive; OSHA overhead-line clearance for up to 50 kV is 10 ft, not a 3 ft busway exception.",
+        "b": "Opaque coatings on wood ladders are prohibited because they hide cracks and other defects.",
+        "d": "Bonding a metal ladder still leaves the climber in the path if the rail touches 277 V parts."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-safety-011": {
+      "prompt": "An unlabeled 480 V switchgear cubicle will have covers removed for an infrared scan. Why are untreated cotton work clothes not enough?",
+      "options": {
+        "a": "Incident energy at 480 V can exceed cotton and needs arc-rated PPE",
+        "b": "480 V cannot sustain an arcing fault, so voltage-rated gloves are enough",
+        "c": "Arc flash is a concern on 13.8 kV gear and is treated as negligible at 480 V",
+        "d": "Infrared work is non-contact, so NFPA 70E clothing rules do not apply here"
+      },
+      "correctOptionId": "a",
+      "explanation": "Low-voltage switchgear can produce high incident energy because fault current is large and clearing times can be long. Opening doors for IR work is energized work. Untreated cotton can ignite; arc-rated clothing, face protection, and a documented risk assessment are required even at 480 V.",
+      "distractorExplanations": {
+        "b": "480 V systems readily sustain arcing faults; arc flash is a major hazard at this voltage.",
+        "c": "Many severe arc-flash injuries occur on 480 V equipment; voltage class alone does not make it negligible.",
+        "d": "Removing covers and working near exposed buses is energized work; non-contact IR does not waive 70E PPE."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-safety-012": {
+      "prompt": "A shock victim has a charred fingertip and a matching mark at the opposite boot. What do those paired marks indicate?",
+      "options": {
+        "a": "Surface-only burns, so internal tissue along the current path is uninjured",
+        "b": "Current traveled through the body and damaged tissue along that path",
+        "c": "Arc-flash radiant burns, which usually lack paired electrical contact wounds",
+        "d": "A clothing static discharge that can closely mimic true electrical contact burns"
+      },
+      "correctOptionId": "b",
+      "explanation": "Entry and exit burns mark where current entered and left the body. Damage along the path can include muscle, nerve, and heart injury that looks mild at the skin. That pattern is contact current, not purely radiant arc-flash burn or static.",
+      "distractorExplanations": {
+        "a": "Skin marks often hide deeper necrosis and cardiac effects; they are not proof the injury is superficial.",
+        "c": "Arc-flash thermal burns can be extensive on exposed skin without classic entry/exit contact pairs.",
+        "d": "Static discharge does not produce paired electrical contact burns of this kind."
+      },
+      "difficulty": "medium"
+    },
+    "electrical-journeyman-readiness-check-safety-013": {
+      "prompt": "Spare lumber and cardboard are stacked in front of a 480 V switchboard, leaving a walkway. What is wrong with that storage?",
+      "options": {
+        "a": "Storage is allowed if a 24 in. aisle remains in front of the switchboard",
+        "b": "Ladders may occupy the dedicated space above the gear if the front stays clear",
+        "c": "Required working space cannot be used for storage, and combustibles stay out",
+        "d": "A locked electrical room waives the NEC 110.26 working-space clearance rules"
+      },
+      "correctOptionId": "c",
+      "explanation": "NEC 110.26(B) forbids using required working space for storage. Combustibles next to switchgear add fire load and block emergency access. Dedicated equipment space above gear must also stay clear. Locking the room does not reduce the clearance dimensions.",
+      "distractorExplanations": {
+        "a": "A leftover walkway does not satisfy 110.26 depth and width; the working space itself cannot be storage.",
+        "b": "110.26(E) dedicated space above equipment is for raceways and ventilation, not ladder or material storage.",
+        "d": "Access control does not waive working space; clearances apply whether or not the door is locked."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-safety-014": {
+      "prompt": "After LOTO on a 480 V motor disconnect, the journeyman must prove the load side is dead before lifting motor leads. What method is required?",
+      "options": {
+        "a": "Sweep a non-contact tester near each conductor and stop if the wand is silent",
+        "b": "Open the breaker and rely on the panel schedule as the official dead check",
+        "c": "Measure one phase-to-ground pair and treat the remaining phases as matching",
+        "d": "Use a rated contact tester on each phase-to-phase and phase-to-ground pair"
+      },
+      "correctOptionId": "d",
+      "explanation": "NFPA 70E requires an adequately rated contact instrument. Test phase-to-phase and phase-to-ground on every conductor, using live-dead-live to prove the meter. Non-contact wands, schedules, and a single pair can miss a still-live lead on a motor circuit.",
+      "distractorExplanations": {
+        "a": "Non-contact testers can miss shielded or low voltage and are not the accepted absence-of-voltage method.",
+        "b": "Panel schedules are often wrong; documentation is not a voltage test.",
+        "c": "One phase-to-ground reading can miss an open ground or a live remaining phase; all combinations are required."
+      },
+      "difficulty": "easy"
+    },
+    "electrical-journeyman-readiness-check-safety-015": {
+      "prompt": "A 480 V MCC bucket must be racked. Under NEC Article 100, who is a qualified person for that task?",
+      "options": {
+        "a": "Any state-licensed journeyman, even when untrained on this specific MCC",
+        "b": "A person skilled on this equipment and trained to recognize and avoid its hazards",
+        "c": "Anyone who finished OSHA 10 awareness training, without equipment-specific practice",
+        "d": "An operator who has run the production line for years without electrical safety training"
+      },
+      "correctOptionId": "b",
+      "explanation": "Article 100 defines a qualified person as one with skills and knowledge related to the construction and operation of the electrical equipment and who has received safety training to recognize and avoid the hazards involved. A license, OSHA 10, or operating experience without that training does not meet the definition.",
+      "distractorExplanations": {
+        "a": "A license is not the Article 100 test; qualification is equipment- and hazard-specific skills plus safety training.",
+        "c": "OSHA 10 is general awareness; racking an MCC requires training on that gear and its shock and arc-flash hazards.",
+        "d": "Years of operation without electrical hazard training leave the person unqualified for exposed 480 V work."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

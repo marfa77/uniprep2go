@@ -26,8 +26,9 @@ if (!slugs.length) {
 }
 
 const TEMPLATE_NOTE_RE =
-  /matches this rule|does not match the (correct )?(definition|rule)|is (not|in)correct (here|for this item)\.?$|this option is (wrong|incorrect)\.?$|not the best answer( here)?\b|the right answer is\b|answer to a different question|remapped from sibling|fdic deposit insurance|this concept (is identical|has no application|always eliminates)/i;
-const WRAPPER_STEM_RE = /^on the .{0,80}\bmock\b|select the best answer\.?$/i;
+  /this item asks|the matching answer is|independent uniprep diagnostic|matches this rule|does not match the (correct )?(definition|rule)|is (not|in)correct (here|for this item)\.?$|this option is (wrong|incorrect)\.?$|not the best answer( here)?\b|the right answer is\b|answer to a different question|remapped from sibling|fdic deposit insurance|this concept (is identical|has no application|always eliminates)/i;
+const WRAPPER_STEM_RE =
+  /^on the .{0,80}\bmock\b|select the best answer\.?$|^this .{0,40} mock is:/i;
 const BORROW_MIN_CHARS = 25;
 const ABSOLUTE_RE = /\b(always|never|only|guaranteed|all|none|must always|under no circumstances)\b/i;
 const DEFINITION_RE = /^(what is|what are|who is|define)\b/i;

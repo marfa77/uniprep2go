@@ -1,0 +1,259 @@
+{
+  "ascp-mlt-readiness-check": {
+    "ascp-mlt-readiness-check-chemistry-016": {
+      "prompt": "An ED green-top is frankly hemolyzed and potassium prints at 6.8 mmol/L. Besides potassium, which other results are most likely falsely increased by this in-vitro hemolysis?",
+      "options": {
+        "a": "Sodium and chloride, from red-cell contents diluting the plasma electrolytes",
+        "b": "Glucose and albumin, from stored protein and sugar leaking out of erythrocytes",
+        "c": "Haptoglobin, because free hemoglobin in the tube raises the haptoglobin reading",
+        "d": "LD and AST, which are concentrated inside red cells and spill with hemolysis"
+      },
+      "correctOptionId": "d",
+      "explanation": "In-vitro hemolysis releases intracellular potassium, LD, AST, and often phosphate and magnesium. Those enzymes and K are much higher inside erythrocytes than in plasma, so a hemolyzed tube falsely raises them. Do not treat the potassium as the patient's true value; recollect a non-hemolyzed specimen per SOP.",
+      "distractorExplanations": {
+        "a": "Sodium and chloride are higher in plasma than in red cells; hemolysis does not raise them the way it raises K and LD, and Na may even fall slightly.",
+        "b": "Erythrocytes do not dump albumin, and glycolysis in a hemolyzed sample more often lowers glucose rather than raising it.",
+        "c": "Haptoglobin falls in in-vivo hemolysis as it binds free hemoglobin; in-vitro hemolysis does not increase measured haptoglobin."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-chemistry-017": {
+      "prompt": "An outpatient fasting glucose prints at 48 mg/dL, below your laboratory critical list. The courier has already left for the clinic. What should the MLT do first?",
+      "options": {
+        "a": "Call a licensed caregiver on the critical list now and document read-back",
+        "b": "File the result for the physician's inbox on the next business morning",
+        "c": "Hold the value until the patient returns for another fasting glucose draw",
+        "d": "Send the leftover plasma to blood bank for ABO typing before any call"
+      },
+      "correctOptionId": "a",
+      "explanation": "A glucose on the critical list is a timed notification, including outpatients. Call a licensed caregiver who can act, document the time and read-back, and do not wait for the next courier or next-day chart review. Recollection can follow if the SOP requires confirmation, but the critical call is not delayed for that.",
+      "distractorExplanations": {
+        "b": "Parking a critical glucose in an inbox until the next business day misses the notification window and the risk of untreated hypoglycemia.",
+        "c": "Waiting for a return visit delays care; confirmation draws do not replace an immediate critical call on a valid specimen.",
+        "d": "ABO typing is unrelated to a chemistry critical; blood bank work does not substitute for notifying a licensed caregiver."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-chemistry-018": {
+      "prompt": "A high-sensitivity troponin I is undetectable 40 minutes after ED arrival for chest pain. The nurse asks you to mark the case as “no MI” from this single draw. What is the correct response?",
+      "options": {
+        "a": "Agree and add CK-MM, because troponin I mainly tracks skeletal-muscle injury",
+        "b": "Keep serial timed draws; one early undetectable value does not exclude injury",
+        "c": "Cancel troponin and order BNP, which stages infarction by ventricular stretch",
+        "d": "Add ALT and AST instead, because troponin is paired with liver enzymes for injury"
+      },
+      "correctOptionId": "b",
+      "explanation": "Cardiac troponin I/T detect myocardial injury, but concentration depends on time after onset. High-sensitivity protocols use serial draws (and a delta) because a single very early result can still be below the cutoff. An undetectable value at 40 minutes does not close the workup; complete the timed series per the chest-pain SOP.",
+      "distractorExplanations": {
+        "a": "CK and myoglobin rise in skeletal-muscle injury; cardiac troponin I and T are used for myocardial injury, not as CK-MM substitutes.",
+        "c": "BNP or NT-proBNP reflect ventricular stretch in heart failure; they do not replace timed troponin for suspected ACS.",
+        "d": "ALT and AST assess hepatocellular injury; they are not the serial marker used to time myocardial necrosis."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-chemistry-019": {
+      "prompt": "A NICU total bilirubin arrives in a clear microtainer that sat under fluorescent lights on the counter for about an hour. How should you handle the result?",
+      "options": {
+        "a": "Report a falsely high value, because light photo-oxidizes bilirubin upward",
+        "b": "Release it if the analyzer prints, since testing within 24 hours is enough",
+        "c": "Treat as potentially falsely low; recollect in a light-protected tube",
+        "d": "Report it as valid if the tube was refrigerated while sitting in the light"
+      },
+      "correctOptionId": "c",
+      "explanation": "Bilirubin is photosensitive. Light breaks it down by photo-oxidation and lowers the measured concentration, which can miss neonatal hyperbilirubinemia. Protect specimens from light (amber tube or foil) and recollect if a clear tube was left exposed; refrigeration does not replace light protection.",
+      "distractorExplanations": {
+        "a": "Photo-oxidation destroys bilirubin, so the measured value falls; light does not inflate the result.",
+        "b": "Degradation can occur within about an hour of light exposure; a 24-hour testing window does not rescue an exposed tube.",
+        "d": "Cold storage may slow other reactions, but the error here is light, not temperature; a refrigerated clear tube can still lose bilirubin."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-chemistry-020": {
+      "prompt": "The chemistry analyzer reports eGFR with every creatinine. Which inputs does the current CKD-EPI creatinine equation actually use?",
+      "options": {
+        "a": "BUN plus the random urine creatinine from the same collection day",
+        "b": "Serum creatinine with age, sex, and a race coefficient as in older MDRD",
+        "c": "Serum albumin plus the urine albumin-to-creatinine ratio only",
+        "d": "Serum creatinine, age, and sex — no race coefficient (CKD-EPI 2021)"
+      },
+      "correctOptionId": "d",
+      "explanation": "Estimated GFR from the 2021 CKD-EPI creatinine equation uses serum creatinine, age, and sex. The race coefficient used in MDRD and earlier CKD-EPI versions was removed. Urine creatinine belongs to a measured clearance, and albuminuria grades damage rather than estimating filtration.",
+      "distractorExplanations": {
+        "a": "Urine creatinine with a timed or estimated volume is used for measured creatinine clearance, not for the serum eGFR equation.",
+        "b": "That describes older MDRD/CKD-EPI versions; CKD-EPI 2021 dropped the race term and should not be reported with it.",
+        "c": "Albumin and the UACR assess kidney damage (albuminuria). They are not the variables in the creatinine eGFR equation."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-chemistry-021": {
+      "prompt": "A non-fasting chemistry specimen is grossly milky. The hemolysis index is low and potassium looks unremarkable. What is the main analytical problem?",
+      "options": {
+        "a": "Turbidity can scatter light and interfere with spectrophotometric assays",
+        "b": "Triglycerides lyse red cells and raise potassium the same way hemolysis does",
+        "c": "Saline dilution must be applied to every analyte before any result is released",
+        "d": "Lipemia photo-oxidizes bilirubin the same way room light does in neonates"
+      },
+      "correctOptionId": "a",
+      "explanation": "Lipemia causes turbidity that scatters light and can falsely raise or lower spectrophotometric methods (and some ion-selective or volume-displacement assays). Follow SOP: ultracentrifuge or lipid-clear, comment, or recollect a fasting sample. Do not treat lipemia as hemolysis.",
+      "distractorExplanations": {
+        "b": "Potassium from cell lysis is a hemolysis problem. Lipemia acts by light scatter and volume displacement, not by bursting red cells.",
+        "c": "Blind saline dilution is not a universal fix; it can distort some results. Clearing (often ultracentrifugation) is the usual step.",
+        "d": "Bilirubin loss from light is photo-oxidation in exposed tubes. Lipemia is turbidity, not the same mechanism as light degradation."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-chemistry-022": {
+      "prompt": "A patient ate breakfast, then asks whether today's plasma glucose of 118 mg/dL means the HbA1c you just ran is invalid. What should you tell the floor?",
+      "options": {
+        "a": "HbA1c only covers the last 2–3 days, so breakfast invalidates both results",
+        "b": "HbA1c reflects weeks to months of average glucose, not this morning's meal",
+        "c": "Switch to fructosamine, because HbA1c is the same as glycated albumin",
+        "d": "Discard the HbA1c; it may be drawn only after an 8-hour overnight fast"
+      },
+      "correctOptionId": "b",
+      "explanation": "HbA1c is glycated hemoglobin and integrates glucose exposure over the red-cell lifespan, clinically about 2–3 months. It does not require fasting and is not invalidated by breakfast. A plasma glucose is a single-point value and is interpreted separately from the A1c window.",
+      "distractorExplanations": {
+        "a": "A 2–3 day window describes neither HbA1c nor a useful fasting-glucose rule; A1c averages months, not the last few days.",
+        "c": "Fructosamine measures glycated serum proteins (mainly albumin) over about 2–3 weeks; it is not the same assay as HbA1c.",
+        "d": "Fasting is required for a diagnostic fasting plasma glucose, not for HbA1c collection on a routine EDTA sample."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-chemistry-023": {
+      "prompt": "Electrolytes print Na 140, Cl 104, and HCO3 16 mmol/L. How does the laboratory typically calculate the anion gap from these numbers?",
+      "options": {
+        "a": "(Chloride plus bicarbonate) minus sodium, which yields a negative gap",
+        "b": "Sodium minus chloride only, leaving bicarbonate out of the subtraction",
+        "c": "Sodium minus (chloride plus bicarbonate), here 140 minus 120, or 20",
+        "d": "Measured osmolality minus calculated osmolality for unmeasured osmoles"
+      },
+      "correctOptionId": "c",
+      "explanation": "The routine anion gap is Na − (Cl + HCO3), using the lab's measured bicarbonate or total CO2. Here 140 − (104 + 16) = 20. Some labs add K, but the common bench formula still subtracts the measured anions from sodium. A high gap prompts review for ketoacidosis, lactate, or similar unmeasured anions.",
+      "distractorExplanations": {
+        "a": "Reversing the subtraction gives a negative number and is not the anion-gap formula used on chemistry reports.",
+        "b": "Omitting bicarbonate changes the value; the standard gap subtracts both chloride and bicarbonate (or TCO2).",
+        "d": "Measured minus calculated osmolality is the osmolal gap, used for toxic alcohols, not the electrolyte anion gap."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-chemistry-024": {
+      "prompt": "Level 1 chemistry QC exceeds +3 SD on a single point (1-3s). Level 2 is in range, and both levels were in yesterday. What is the best MLT action?",
+      "options": {
+        "a": "Treat 1-3s as likely random, stop patients, follow SOP; do not hide the point",
+        "b": "Keep reporting; only two consecutive +2 SD points (2-2s) ever reject a chemistry run",
+        "c": "Call 1-3s a systematic shift, recalibrate once, and release the overnight patient queue",
+        "d": "Erase the outlier from the QC file so the monthly coefficient of variation stays in range"
+      },
+      "correctOptionId": "a",
+      "explanation": "Westgard 1-3s (one control beyond mean ± 3 SD) is commonly a random error and is a reject rule: do not report patients until the SOP is followed (repeat QC, troubleshoot, document). Do not delete the point. 2-2s (two consecutive controls beyond the same 2 SD limit) more often flags systematic error such as a shift or trend.",
+      "distractorExplanations": {
+        "b": "1-3s is itself a Westgard reject rule. 2-2s is a different rule that more often points to systematic error, not the only reason to stop.",
+        "c": "A single 1-3s is more often random than a calibration shift. Releasing queued patients without following the QC SOP is unsafe.",
+        "d": "Deleting an outlier hides the failure, falsifies QC records, and does not make the patient run acceptable."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-chemistry-025": {
+      "prompt": "A plasma ammonia is ordered on a confused adult. Which handling keeps the result from falsely rising while the tube sits on your bench?",
+      "options": {
+        "a": "Leave the heparin tube at room temperature so cold cannot hemolyze the sample",
+        "b": "Place the tube on ice, separate promptly, and assay without an overnight batch delay",
+        "c": "Collect a serum separator tube and allow a full clot before you centrifuge it",
+        "d": "Refrigerate the unseparated whole blood overnight and run ammonia with morning chemistries"
+      },
+      "correctOptionId": "b",
+      "explanation": "Ammonia rises in vitro from deamination and red-cell metabolism. Collect in EDTA or heparin, put the tube on ice, separate cells quickly, and assay promptly (or freeze the plasma if the SOP allows delay). Room-temperature clotting or overnight batching falsely elevates ammonia.",
+      "distractorExplanations": {
+        "a": "Room temperature lets metabolism raise ammonia. Cold transport on ice is required; hemolysis is a separate interferent to avoid by gentle handling.",
+        "c": "Clotting time on a serum tube lets ammonia increase. Ammonia is a plasma assay processed on ice, not a routine SST chemistry.",
+        "d": "Even refrigerated whole blood continues to generate ammonia. Unseparated overnight storage is not an acceptable delay."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-chemistry-026": {
+      "prompt": "Vancomycin is ordered as a trough. The nurse drew the sample 30 minutes after the infusion finished and labeled it “random.” What must be true for the level to be interpretable?",
+      "options": {
+        "a": "Any draw time is acceptable if you add the dose time from memory on the report later",
+        "b": "A trough is drawn just after the infusion ends, so this labeling is already correct",
+        "c": "Every therapeutic drug assay must use a gel-separator serum tube to protect the drug",
+        "d": "Draw time versus dose time is required; this post-infusion tube is not a trough"
+      },
+      "correctOptionId": "d",
+      "explanation": "Peak and trough TDM are meaningless without the relationship between draw time and dose time. A vancomycin trough is taken just before the next dose, not 30 minutes after an infusion (a peak/distribution window). Record both times at collection; do not reconstruct them later.",
+      "distractorExplanations": {
+        "a": "Dose and draw times must be captured at collection. Reconstructing them later leads to wrong peak/trough interpretation.",
+        "b": "Just after the infusion is a peak (or distribution) window. A trough is immediately before the next scheduled dose.",
+        "c": "Gel separators adsorb some drugs. Many TDM assays require a plain red-top, not an SST for every drug."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-chemistry-027": {
+      "prompt": "A urinalysis dipstick is negative for protein and blood. The provider asks you to skip microscopy to save turnaround time. Which finding still requires the microscopic exam?",
+      "options": {
+        "a": "Dipstick specific gravity, which already proves there are no formed elements",
+        "b": "A negative leukocyte esterase pad, which rules out white cells and all casts",
+        "c": "A positive nitrite pad alone, which names the exact type of cellular cast present",
+        "d": "Casts (hyaline, granular, or cellular), which are identified only on microscopy"
+      },
+      "correctOptionId": "d",
+      "explanation": "Dipstick pads detect chemical changes (albumin-biased protein, heme, leukocyte esterase, nitrite). They do not identify formed elements. Casts are diagnosed on microscopic review of the sediment. A negative protein/blood dipstick does not authorize skipping microscopy when the SOP or clinical order still requires it, and it cannot classify cast type.",
+      "distractorExplanations": {
+        "a": "Specific gravity estimates urine concentration. It does not detect cells, casts, or crystals and cannot replace microscopy.",
+        "b": "Leukocyte esterase can miss WBCs and says nothing about RTE cells or casts; a negative pad does not clear the sediment exam.",
+        "c": "Nitrite suggests nitrate-reducing bacteria in the bladder. It does not identify hyaline versus cellular casts."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-chemistry-028": {
+      "prompt": "CSF chemistries print glucose 22 mg/dL and protein 195 mg/dL. A serum glucose drawn with the lumbar puncture is 90 mg/dL. How should the MLT interpret that pair?",
+      "options": {
+        "a": "CSF glucose should match the serum value, so 22 mg/dL means the serum tube is mislabeled",
+        "b": "CSF protein is normally similar to serum protein, so 195 mg/dL is an expected adult value",
+        "c": "CSF glucose is usually ~2/3 of serum; this low glucose plus high protein is abnormal",
+        "d": "Ignore the serum draw; CSF glucose and protein are judged only against CSF-only cutoffs"
+      },
+      "correctOptionId": "c",
+      "explanation": "CSF glucose is normally about 60–70% of a concurrent serum glucose, and CSF protein is much lower than plasma protein. Glucose 22 mg/dL against serum 90 mg/dL with protein 195 mg/dL is a low CSF glucose and high protein pattern (as in bacterial or fungal meningitis) and should be correlated with cell count and Gram stain, not treated as a labeling mismatch.",
+      "distractorExplanations": {
+        "a": "CSF glucose is not equal to serum glucose; it is typically about two-thirds of the plasma value in a paired draw.",
+        "b": "CSF protein is normally far below serum protein (roughly 15–45 mg/dL in adults). 195 mg/dL is elevated, not typical.",
+        "d": "A paired serum glucose is required to interpret CSF glucose. CSF-only numbers without the serum can mislead when plasma glucose is very high or low."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-chemistry-029": {
+      "prompt": "A bedside glucose meter reads 38 mg/dL in a diaphoretic inpatient. A venous chemistry glucose drawn about 10 minutes later is 112 mg/dL. What should the MLT do?",
+      "options": {
+        "a": "Repeat and correlate with lab glucose; do not treat a probable strip error",
+        "b": "Treat the 38 mg/dL as real because waived meters are factory-calibrated and rarely err",
+        "c": "Release the 38 mg/dL with a comment only and do not obtain another specimen",
+        "d": "Recheck from the same fingerstick puncture so the capillary error can be confirmed"
+      },
+      "correctOptionId": "a",
+      "explanation": "POC glucose can mismatch the patient because of strip lot, hematocrit, poor capillary flow, maltose/galactose interference on some meters, or a non-fasting/IV-fluid artifact. A result that does not match the clinical picture is repeated and correlated with a venous laboratory glucose. Do not drive treatment off an unexplained meter value.",
+      "distractorExplanations": {
+        "b": "Calibration does not prevent strip, hematocrit, or sampling errors. Discordance still needs laboratory correlation.",
+        "c": "A comment does not resolve a 38 versus 112 mg/dL mismatch; the meter value should not stand alone.",
+        "d": "Repeating from the same puncture can reproduce the same poor capillary sample. Confirmation is a properly collected venous laboratory glucose."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-chemistry-030": {
+      "prompt": "Ionized calcium flags as a critical low. The specimen is valid, with no hemolysis or clot flags. To whom do you report it, and how?",
+      "options": {
+        "a": "The unit clerk, who will pass the number to a nurse when the desk is free",
+        "b": "A licensed caregiver on the lab list, with documented read-back of the value",
+        "c": "The ordering physician's voicemail, so notification is captured on a recording",
+        "d": "Any licensed caregiver, reading the value once without asking for a read-back"
+      },
+      "correctOptionId": "b",
+      "explanation": "Critical (panic) values go to a licensed caregiver who can act, using the laboratory's notification list. Document the name, time, and read-back of the result. Clerical relay, voicemail, and skipped read-back do not meet the standard for a critical calcium.",
+      "distractorExplanations": {
+        "a": "Criticals are not handed to clerical staff to forward later. The call goes to a licensed caregiver who can treat.",
+        "c": "Voicemail is not an acceptable critical-value notification; you must reach a person and document read-back.",
+        "d": "Read-back is required so the caregiver repeats the calcium correctly; a one-way recitation is not complete notification."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

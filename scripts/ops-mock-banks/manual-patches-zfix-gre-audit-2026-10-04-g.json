@@ -1,0 +1,796 @@
+{
+  "gre-readiness-check": {
+    "gre-readiness-check-quant-103": {
+      "topicId": "quant",
+      "prompt": "A sequence has first term 3, and each later term is 4 less than 3 times the previous term. What is the fourth term?",
+      "options": {
+        "a": "29",
+        "b": "31",
+        "c": "35",
+        "d": "41"
+      },
+      "correctOptionId": "a",
+      "explanation": "a1=3. a2=3(3)-4=5. a3=3(5)-4=11. a4=3(11)-4=29. The fourth term is 29.",
+      "distractorExplanations": {
+        "b": "31 would need a3=35/3, which is not the integer 11 from the recurrence.",
+        "c": "35 is 3(13)-4, using 13 in place of the true third term 11.",
+        "d": "41 is 3(15)-4, as if the third term were 15 instead of 11."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-104": {
+      "topicId": "quant",
+      "prompt": "A grocer mixes 4 pounds of coffee at $3 per pound with 6 pounds at $8 per pound. What is the cost per pound of the blend?",
+      "options": {
+        "a": "$5",
+        "b": "$6",
+        "c": "$7",
+        "d": "$8"
+      },
+      "correctOptionId": "b",
+      "explanation": "Total cost is 4(3)+6(8)=12+48=60 dollars. Total mass is 10 pounds, so the unit price is 60/10=$6 per pound.",
+      "distractorExplanations": {
+        "a": "$5 is the unweighted mean (3+8)/2, which ignores the unequal pound counts.",
+        "c": "$7 overweights the $8 coffee as if more than 6 of the 10 pounds were at that price.",
+        "d": "$8 is the price of only the more expensive coffee, not of the blend."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-105": {
+      "topicId": "quant",
+      "prompt": "Line L passes through (−2, 5) and (4, −1). What is the y-intercept of L?",
+      "options": {
+        "a": "−1",
+        "b": "1",
+        "c": "3",
+        "d": "5"
+      },
+      "correctOptionId": "c",
+      "explanation": "Slope m=(−1−5)/(4−(−2))=−6/6=−1. Then y−5=−1(x+2) so y=−x+3. When x=0, y=3.",
+      "distractorExplanations": {
+        "a": "−1 is the slope of L, not the intercept on the y-axis.",
+        "b": "1 can appear from a sign error when expanding y−5=−(x+2).",
+        "d": "5 is the y-coordinate of (−2, 5), not the intercept at x=0."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-106": {
+      "topicId": "quant",
+      "prompt": "An account starts at $2,000 and earns 5% interest compounded once per year. What is the balance after 2 years?",
+      "options": {
+        "a": "$2,000",
+        "b": "$2,100",
+        "c": "$2,150",
+        "d": "$2,205"
+      },
+      "correctOptionId": "d",
+      "explanation": "After one year the balance is 2000(1.05)=2100. After two years it is 2100(1.05)=2205. Equivalently 2000(1.05)^2=2205.",
+      "distractorExplanations": {
+        "a": "$2,000 is the principal with no interest applied.",
+        "b": "$2,100 is the balance after only one compounding year.",
+        "c": "$2,150 is simple interest 2000+2(100), which skips compounding on year-1 interest."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-107": {
+      "topicId": "quant",
+      "prompt": "A parabola has vertex (3, −4) and one x-intercept at x=1. What is the other x-intercept?",
+      "options": {
+        "a": "5",
+        "b": "6",
+        "c": "7",
+        "d": "8"
+      },
+      "correctOptionId": "a",
+      "explanation": "The axis of symmetry is x=3. The intercept x=1 is 2 units left of 3, so the other intercept is 2 units right of 3, at x=5.",
+      "distractorExplanations": {
+        "b": "6 is 3 units from the axis, but x=1 is only 2 units from x=3.",
+        "c": "7 is 4 units from the axis, which breaks reflection symmetry about x=3.",
+        "d": "8 is 5 units from the axis, not the matching 2-unit partner of x=1."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-108": {
+      "topicId": "quant",
+      "prompt": "A rectangular warehouse floor is 7 feet longer than it is wide. If the perimeter is 54 feet, what is the floor area in square feet?",
+      "options": {
+        "a": "150",
+        "b": "170",
+        "c": "180",
+        "d": "200"
+      },
+      "correctOptionId": "b",
+      "explanation": "Let width w. Length is w+7. Then 2(w+7)+2w=54 so 4w+14=54, 4w=40, w=10 and length=17. Area=10×17=170.",
+      "distractorExplanations": {
+        "a": "150=10×15 uses length 15, which would make the perimeter 50, not 54.",
+        "c": "180=12×15 does not satisfy length=width+7 with perimeter 54.",
+        "d": "200=10×20 uses length=2w, not w+7, and the perimeter would be 60."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-109": {
+      "topicId": "quant",
+      "prompt": "A geometric sequence has first term 5 and common ratio 2. What is the sum of the first four terms?",
+      "options": {
+        "a": "45",
+        "b": "60",
+        "c": "75",
+        "d": "80"
+      },
+      "correctOptionId": "c",
+      "explanation": "The terms are 5, 10, 20, 40. Their sum is 5+10+20+40=75. The geometric-sum formula 5(2^4−1)/(2−1)=75 agrees.",
+      "distractorExplanations": {
+        "a": "45 is 5+10+30, as if the fourth term were 30 instead of 40.",
+        "b": "60 is 5+15+40 or 4×15, not the actual four geometric terms.",
+        "d": "80 is 5×2^4, the fifth term, not the sum of the first four."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-110": {
+      "topicId": "quant",
+      "prompt": "Pencils come in boxes of 9 and pens in boxes of 12. What is the smallest equal number of pencils and pens that can be bought in whole boxes?",
+      "options": {
+        "a": "12",
+        "b": "18",
+        "c": "24",
+        "d": "36"
+      },
+      "correctOptionId": "d",
+      "explanation": "The count must be a multiple of both 9 and 12, so the LCM. 9=3^2 and 12=2^2·3, hence LCM=2^2·3^2=36.",
+      "distractorExplanations": {
+        "a": "12 is a multiple of the pen box size only; 12 is not a multiple of 9.",
+        "b": "18 is a multiple of 9 but not of 12, so pens would not fill whole boxes.",
+        "c": "24 is a multiple of 12 but 24/9 is not an integer."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-111": {
+      "topicId": "quant",
+      "prompt": "R is the midpoint of P(4, −2) and Q(−1, 3). What is the distance from R to the origin?",
+      "options": {
+        "a": "√10 / 2",
+        "b": "5/2",
+        "c": "√10",
+        "d": "5"
+      },
+      "correctOptionId": "a",
+      "explanation": "R=((4−1)/2,(−2+3)/2)=(3/2,1/2). Distance to (0,0) is √((3/2)^2+(1/2)^2)=√(10/4)=√10 / 2.",
+      "distractorExplanations": {
+        "b": "5/2 is the sum of the midpoint coordinates, not the Euclidean distance.",
+        "c": "√10 is √(9/4+1/4) without dividing by 4 inside the square root correctly.",
+        "d": "5 is the distance PQ=√(5^2+(−5)^2)=√50, not OR."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-112": {
+      "topicId": "quant",
+      "prompt": "A rectangular box has edge lengths in the ratio 2:3:4 and volume 5,184 cubic centimeters. What is the shortest edge, in cm?",
+      "options": {
+        "a": "9",
+        "b": "12",
+        "c": "18",
+        "d": "24"
+      },
+      "correctOptionId": "b",
+      "explanation": "Let edges 2x, 3x, 4x. Then 24x^3=5184 so x^3=216 and x=6. The shortest edge is 2x=12 cm.",
+      "distractorExplanations": {
+        "a": "9 would mean x=4.5, and 24(4.5)^3 is 2,187, not 5,184.",
+        "c": "18 is the middle edge 3x, not the shortest.",
+        "d": "24 is the longest edge 4x, not the shortest."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-113": {
+      "topicId": "quant",
+      "prompt": "How many positive integers less than or equal to 60 are divisible by 4 or by 6?",
+      "options": {
+        "a": "15",
+        "b": "18",
+        "c": "20",
+        "d": "25"
+      },
+      "correctOptionId": "c",
+      "explanation": "⌊60/4⌋=15 multiples of 4, ⌊60/6⌋=10 of 6, and ⌊60/12⌋=5 of 12. Inclusion-exclusion: 15+10−5=20.",
+      "distractorExplanations": {
+        "a": "15 counts only the multiples of 4 and drops the extra multiples of 6.",
+        "b": "18 is 15+10−7, subtracting the LCM count incorrectly.",
+        "d": "25 is 15+10 with no subtraction of the double-counted multiples of 12."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-114": {
+      "topicId": "quant",
+      "prompt": "A cylinder has radius 5 and height 12. If it is filled to 40% of capacity, what is the volume of liquid, in terms of π?",
+      "options": {
+        "a": "60π",
+        "b": "75π",
+        "c": "100π",
+        "d": "120π"
+      },
+      "correctOptionId": "d",
+      "explanation": "Full volume is π(5)^2(12)=300π. Forty percent is 0.40×300π=120π.",
+      "distractorExplanations": {
+        "a": "60π is 0.20 of 300π, half the stated 40% fill.",
+        "b": "75π is 0.25 of 300π, a quarter-full tank rather than 40%.",
+        "c": "100π uses πrh=π(5)(12) then 40%, forgetting to square the radius."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-115": {
+      "topicId": "quant",
+      "prompt": "In an arithmetic sequence the 4th term is 17 and the 9th term is 42. What is the first term?",
+      "options": {
+        "a": "2",
+        "b": "5",
+        "c": "7",
+        "d": "12"
+      },
+      "correctOptionId": "a",
+      "explanation": "From a4 to a9 there are 5 steps and a change of 25, so d=5. Then a1=a4−3d=17−15=2.",
+      "distractorExplanations": {
+        "b": "5 is the common difference, not the first term.",
+        "c": "7 is a2=2+5, one term too far into the sequence.",
+        "d": "12 subtracts only one difference from 17, as if a1 were a3."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-116": {
+      "topicId": "quant",
+      "prompt": "A cyclist goes to town at 50 mph and returns the same route at 30 mph. What is the average speed for the round trip?",
+      "options": {
+        "a": "36 mph",
+        "b": "37.5 mph",
+        "c": "40 mph",
+        "d": "45 mph"
+      },
+      "correctOptionId": "b",
+      "explanation": "For equal distances the average is the harmonic mean 2ab/(a+b)=2(50)(30)/80=3000/80=37.5 mph.",
+      "distractorExplanations": {
+        "a": "36 mph is 2×50×30/83.3, a rounding error in the denominator a+b.",
+        "c": "40 mph is the arithmetic mean (50+30)/2, which is wrong when times differ.",
+        "d": "45 mph is a midpoint guess that still uses equal-time weighting."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-117": {
+      "topicId": "quant",
+      "prompt": "Triangle ABC has vertices A(0, 0), B(8, 0), and C(3, 6). What is its area?",
+      "options": {
+        "a": "12",
+        "b": "18",
+        "c": "24",
+        "d": "30"
+      },
+      "correctOptionId": "c",
+      "explanation": "AB is a base of length 8 on the x-axis. Height is the y-coordinate of C, which is 6. Area=(1/2)(8)(6)=24.",
+      "distractorExplanations": {
+        "a": "12 is (1/2)(8)(3), using the x-coordinate of C as the height.",
+        "b": "18 is (1/2)(6)(6), taking a base of 6 instead of AB=8.",
+        "d": "30 is (1/2)(10)(6), inflating the base to 8+2."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-118": {
+      "topicId": "quant",
+      "prompt": "A $400 prize is split in the ratio 1:2:5. How many dollars does the largest share receive?",
+      "options": {
+        "a": "50",
+        "b": "100",
+        "c": "200",
+        "d": "250"
+      },
+      "correctOptionId": "d",
+      "explanation": "The parts sum to 8, so each part is 400/8=50. The largest share is 5 parts: 5×50=250.",
+      "distractorExplanations": {
+        "a": "50 is one part (the smallest share), not five parts.",
+        "b": "100 is two parts, the middle share rather than the largest.",
+        "c": "200 is half of 400, as if the ratio were 1:1."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-119": {
+      "topicId": "quant",
+      "prompt": "The line 3x+4y=12 meets the x-axis at which x-value?",
+      "options": {
+        "a": "4",
+        "b": "6",
+        "c": "8",
+        "d": "12"
+      },
+      "correctOptionId": "a",
+      "explanation": "On the x-axis, y=0, so 3x=12 and x=4. The intercept is the point (4, 0).",
+      "distractorExplanations": {
+        "b": "6 is the y-intercept (set x=0 to get 4y=12), not the x-intercept.",
+        "c": "8 confuses intercept-form  x/4+y/3=1 with a doubled x-intercept.",
+        "d": "12 is the constant in 3x+4y=12, not an intercept coordinate."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-120": {
+      "topicId": "quant",
+      "prompt": "A $80 ticket is reduced 20%, then reduced another 10% from the new price. What is the final price?",
+      "options": {
+        "a": "$56",
+        "b": "$57.60",
+        "c": "$64",
+        "d": "$72"
+      },
+      "correctOptionId": "b",
+      "explanation": "After 20% off: 80(0.80)=64. Then 10% off that: 64(0.90)=57.60. Equivalently 80(0.8)(0.9)=57.60.",
+      "distractorExplanations": {
+        "a": "$56 is 80(0.70), treating the two discounts as a single 30% off.",
+        "c": "$64 is the price after only the first 20% discount.",
+        "d": "$72 is 80(0.90), applying only the 10% cut to the original price."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-121": {
+      "topicId": "quant",
+      "prompt": "The sum of the first n terms of a sequence is Sn=2n^2+n. What is the 10th term?",
+      "options": {
+        "a": "37",
+        "b": "38",
+        "c": "39",
+        "d": "41"
+      },
+      "correctOptionId": "c",
+      "explanation": "a_n=S_n−S_{n−1}. S10=2(100)+10=210 and S9=2(81)+9=171, so a10=210−171=39. Also a_n=4n−1, and 4(10)−1=39.",
+      "distractorExplanations": {
+        "a": "37 is a9=4(9)−1, the previous term rather than a10.",
+        "b": "38 is 2(10)+18 or 4n−2, dropping the −1 in 4n−1.",
+        "d": "41 is a11=4(11)−1, the next term after a10 rather than a10."
+      },
+      "difficulty": "hard"
+    },
+    "gre-readiness-check-quant-122": {
+      "topicId": "quant",
+      "prompt": "A square photo has area 36 cm^2. A uniform mat around it makes the whole piece 196 cm^2. What is the mat’s width in cm?",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "correctOptionId": "d",
+      "explanation": "Photo side √36=6. Outer side √196=14. The mat adds width on both ends, so (14−6)/2=4 cm.",
+      "distractorExplanations": {
+        "a": "1 cm would make the outer side 8, with area 64, not 196.",
+        "b": "2 cm would make the outer side 10, with area 100, not 196.",
+        "c": "3 cm is (14−6)/ something if one forgets only one side, but (14−8)/2=3 mismatches the photo side."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-123": {
+      "topicId": "quant",
+      "prompt": "The mean of 8 tests is 72. After a ninth test scoring 90, what is the new mean?",
+      "options": {
+        "a": "74",
+        "b": "75",
+        "c": "76",
+        "d": "81"
+      },
+      "correctOptionId": "a",
+      "explanation": "The original sum is 8×72=576. Adding 90 gives 666. The new mean is 666/9=74.",
+      "distractorExplanations": {
+        "b": "75 is (72+90)/2, averaging the old mean with 90 as if n were 2.",
+        "c": "76 comes from 576+108 or adding 4 points to 72 without dividing by 9.",
+        "d": "81 is (72+90)/2+9, an arithmetic mix of mean and count."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-124": {
+      "topicId": "quant",
+      "prompt": "A circle has radius 14. What is the length of a 90° arc of that circle?",
+      "options": {
+        "a": "7π/2",
+        "b": "7π",
+        "c": "14π",
+        "d": "28π"
+      },
+      "correctOptionId": "b",
+      "explanation": "Full circumference is 2π(14)=28π. A 90° arc is 90/360=1/4 of that, so 7π.",
+      "distractorExplanations": {
+        "a": "7π/2 is 1/8 of the circumference, as if the angle were 45°.",
+        "c": "14π is half the circumference (a 180° arc), not 90°.",
+        "d": "28π is the full circumference, a 360° arc."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-125": {
+      "topicId": "quant",
+      "prompt": "What is the slope of the line through (1, 2) and (7, −4)?",
+      "options": {
+        "a": "−2",
+        "b": "−3/2",
+        "c": "−1",
+        "d": "1"
+      },
+      "correctOptionId": "c",
+      "explanation": "m=(−4−2)/(7−1)=−6/6=−1. The line falls one unit in y for each unit in x.",
+      "distractorExplanations": {
+        "a": "−2 is (−4−2)/(7−4) or a denominator of 3 instead of 6.",
+        "b": "−3/2 uses Δy=−6 with Δx=4, swapping a coordinate difference.",
+        "d": "1 is the absolute value of the slope, dropping the negative sign."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-126": {
+      "topicId": "quant",
+      "prompt": "From 10 equally qualified applicants, 2 will be chosen for a panel. How many different 2-person panels are possible?",
+      "options": {
+        "a": "10",
+        "b": "20",
+        "c": "36",
+        "d": "45"
+      },
+      "correctOptionId": "d",
+      "explanation": "The count is C(10,2)=10×9/2=45 unordered pairs. Order of selection does not matter, so 10×9=90 would double-count each panel.",
+      "distractorExplanations": {
+        "a": "10 counts the applicants themselves, not the number of 2-person subsets.",
+        "b": "20 is 2×10, as if each person formed two unique panels.",
+        "c": "36 is C(9,2), leaving one applicant out of the pool by mistake."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-127": {
+      "topicId": "quant",
+      "prompt": "For the ordered list 4, 9, 11, 18, 22, 31, 40, what is the median?",
+      "options": {
+        "a": "18",
+        "b": "20",
+        "c": "22",
+        "d": "31"
+      },
+      "correctOptionId": "a",
+      "explanation": "Seven values are listed. The median is the 4th when ordered, which is already 18. Do not average 18 and 22; that is for an even count.",
+      "distractorExplanations": {
+        "b": "20 is (18+22)/2, the even-n rule, but this list has seven numbers.",
+        "c": "22 is the 5th value, one position right of the middle.",
+        "d": "31 is the 6th value, far from the middle of seven scores."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-128": {
+      "topicId": "quant",
+      "prompt": "A cylindrical tank has radius 4 ft and height 9 ft. Water is pumped in at 8π cubic feet per minute. How many minutes fill the tank?",
+      "options": {
+        "a": "12",
+        "b": "18",
+        "c": "24",
+        "d": "36"
+      },
+      "correctOptionId": "b",
+      "explanation": "The tank volume is π(4)^2(9)=144π cubic feet. Time is 144π/(8π)=18 minutes.",
+      "distractorExplanations": {
+        "a": "12 minutes uses π(4)(9)=36π as the volume, forgetting r^2.",
+        "c": "24 minutes is 144π/(6π), using a fill rate of 6π instead of 8π.",
+        "d": "36 minutes is 144π/(4π), dividing by the radius rather than the rate."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-129": {
+      "topicId": "quant",
+      "prompt": "A lab has 32 staff in the ratio 3:5 scientists to technicians. After 8 more technicians are hired, what is the new scientists-to-technicians ratio?",
+      "options": {
+        "a": "3:5",
+        "b": "3:6",
+        "c": "3:7",
+        "d": "3:8"
+      },
+      "correctOptionId": "c",
+      "explanation": "Parts 3+5=8, so scientists=12 and technicians=20. After hiring, technicians=28. The ratio 12:28 simplifies by 4 to 3:7.",
+      "distractorExplanations": {
+        "a": "3:5 is the original ratio before the 8 hires.",
+        "b": "3:6=1:2 would require 24 technicians, not 28.",
+        "d": "3:8 would require 32 technicians, as if 12 more were hired."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-130": {
+      "topicId": "quant",
+      "prompt": "Two gears have 48 teeth and 72 teeth. What is the greatest number of teeth that is a common divisor of both counts?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "12",
+        "d": "24"
+      },
+      "correctOptionId": "d",
+      "explanation": "48=2^4·3 and 72=2^3·3^2, so gcd=2^3·3=24. Both 48 and 72 divide by 24, and no larger integer does.",
+      "distractorExplanations": {
+        "a": "6 divides both but is smaller than the greatest common divisor 24.",
+        "b": "8=2^3 divides both 48 and 72 but omits the shared factor 3, so it is not the gcd.",
+        "c": "12 divides both but 24 is larger and still divides both."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-131": {
+      "topicId": "quant",
+      "prompt": "What is the distance between (−3, 4) and (1, 1) in the coordinate plane?",
+      "options": {
+        "a": "5",
+        "b": "7",
+        "c": "8",
+        "d": "25"
+      },
+      "correctOptionId": "a",
+      "explanation": "Horizontal change is 1−(−3)=4 and vertical change is 1−4=−3. Distance √(16+9)=√25=5.",
+      "distractorExplanations": {
+        "b": "7 is |Δx|+|Δy|=4+3, the taxicab length instead of Euclidean distance.",
+        "c": "8 is 4+4 or 3+5, mixing a coordinate with the hypotenuse.",
+        "d": "25 is 4^2+3^2 before taking the square root."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-132": {
+      "topicId": "quant",
+      "prompt": "A price rose 10% and then fell 10% from the new amount, ending at $990. What was the original price?",
+      "options": {
+        "a": "$990",
+        "b": "$1,000",
+        "c": "$1,089",
+        "d": "$1,100"
+      },
+      "correctOptionId": "b",
+      "explanation": "If the original is x, then x(1.10)(0.90)=0.99x=990, so x=990/0.99=1000.",
+      "distractorExplanations": {
+        "a": "$990 is the final price, not the unknown starting price.",
+        "c": "$1,089 is 990×1.10, undoing only the decrease and ignoring the increase.",
+        "d": "$1,100 is 990/0.90, undoing only the 10% fall."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-133": {
+      "topicId": "quant",
+      "prompt": "What is the y-intercept of the line 2x−y=8?",
+      "options": {
+        "a": "−16",
+        "b": "−10",
+        "c": "−8",
+        "d": "−4"
+      },
+      "correctOptionId": "c",
+      "explanation": "Solve for y: y=2x−8. The intercept is the constant term −8, which is y when x=0.",
+      "distractorExplanations": {
+        "a": "−16 is −2×8, multiplying the constant by the x-coefficient.",
+        "b": "−10 could come from 2(1)−8 with x=1, a point that is not the intercept.",
+        "d": "−4 is −8/2, the x-intercept rather than the y-intercept."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-134": {
+      "topicId": "quant",
+      "prompt": "A 30 ft by 20 ft pool has a uniform concrete border. Pool plus border cover 1,200 sq ft. What is the border width in feet?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "5"
+      },
+      "correctOptionId": "d",
+      "explanation": "(30+2w)(20+2w)=1200. Expand: 600+100w+4w^2=1200 so w^2+25w−150=0. (w+30)(w−5)=0 and w=5.",
+      "distractorExplanations": {
+        "a": "2 ft gives outer 34×24=816, far below 1,200.",
+        "b": "3 ft gives outer 36×26=936, still short of 1,200.",
+        "c": "4 ft gives outer 38×28=1,064, not 1,200."
+      },
+      "difficulty": "hard"
+    },
+    "gre-readiness-check-quant-135": {
+      "topicId": "quant",
+      "prompt": "A sequence starts at 2, and the nth term after that adds n (so a2=a1+1, a3=a2+2, …). What is the fifth term?",
+      "options": {
+        "a": "12",
+        "b": "13",
+        "c": "14",
+        "d": "16"
+      },
+      "correctOptionId": "a",
+      "explanation": "Start at 2. Then 2+1=3, 3+2=5, 5+3=8, and 8+4=12, so the fifth term is 12.",
+      "distractorExplanations": {
+        "b": "13 adds 5 at the last step, using n=5 extra instead of +4 to reach a5.",
+        "c": "14 is 2+3+4+5, summing the addends from 3 and skipping the start+1 path.",
+        "d": "16 is 2^4, as if the rule were doubling."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-136": {
+      "topicId": "quant",
+      "prompt": "A jacket is 40% off, and the sale price is $48. What was the original price?",
+      "options": {
+        "a": "$72",
+        "b": "$80",
+        "c": "$88",
+        "d": "$120"
+      },
+      "correctOptionId": "b",
+      "explanation": "Sale price is 60% of original, so 0.60x=48 and x=48/0.60=80.",
+      "distractorExplanations": {
+        "a": "$72 is 48/0.67 or 48+24, adding 50% of 48 instead of dividing by 0.60.",
+        "c": "$88 is 48+40, treating 40% as 40 dollars.",
+        "d": "$120 is 48/0.40, dividing by the discount rate instead of by 0.60."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-137": {
+      "topicId": "quant",
+      "prompt": "The solutions of |2x−3|=7 are added together. What is that sum?",
+      "options": {
+        "a": "−2",
+        "b": "2",
+        "c": "3",
+        "d": "5"
+      },
+      "correctOptionId": "c",
+      "explanation": "Split cases: 2x−3=7 gives x=5, and 2x−3=−7 gives x=−2. The two solutions sum to 5+(−2)=3.",
+      "distractorExplanations": {
+        "a": "−2 is one solution only, from 2x−3=−7, not the sum of both.",
+        "b": "2 is |−2|, the magnitude of one root rather than 5−2.",
+        "d": "5 is the other solution only, from 2x−3=7, not the sum."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-138": {
+      "topicId": "quant",
+      "prompt": "Widgets cost $5 to make and sell for $9. Monthly fixed costs are $1,200. How many widgets must be sold for a $400 profit?",
+      "options": {
+        "a": "100",
+        "b": "200",
+        "c": "300",
+        "d": "400"
+      },
+      "correctOptionId": "d",
+      "explanation": "Contribution is $4 per widget. Need $1,200+$400=$1,600 covered, so 1600/4=400 widgets.",
+      "distractorExplanations": {
+        "a": "100 covers only $400 of contribution, the profit target with fixed costs ignored.",
+        "b": "200 covers $800, half of the $1,600 needed.",
+        "c": "300 covers $1,200, breaking even with no $400 profit."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-139": {
+      "topicId": "quant",
+      "prompt": "Point P(a, b) with a≠b is reflected across y=x to Q. If PQ=4√2, what is |a−b|?",
+      "options": {
+        "a": "4",
+        "b": "4√2",
+        "c": "6",
+        "d": "8"
+      },
+      "correctOptionId": "a",
+      "explanation": "Q is (b, a), so PQ=√(2(a−b)^2)=|a−b|√2. Set |a−b|√2=4√2 to get |a−b|=4.",
+      "distractorExplanations": {
+        "b": "4√2 is the given segment length PQ, not |a−b|.",
+        "c": "6 would make PQ=6√2, larger than the given 4√2.",
+        "d": "8 treats PQ as |a−b| without dividing out √2, then doubles."
+      },
+      "difficulty": "hard"
+    },
+    "gre-readiness-check-quant-141": {
+      "topicId": "quant",
+      "prompt": "Two fair six-sided dice are rolled. What is the probability that the sum is 7?",
+      "options": {
+        "a": "1/12",
+        "b": "1/6",
+        "c": "1/4",
+        "d": "1/3"
+      },
+      "correctOptionId": "b",
+      "explanation": "There are 36 equally likely outcomes. The sums of 7 are (1,6),(2,5),(3,4),(4,3),(5,2),(6,1): 6 outcomes. Probability=6/36=1/6.",
+      "distractorExplanations": {
+        "a": "1/12=3/36 counts only three ordered pairs instead of all six.",
+        "c": "1/4=9/36 would be a 9-outcome event, such as sum 6 and 8 combined incorrectly.",
+        "d": "1/3=12/36 counts every sum from 6 through 8, not sum 7 alone."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-142": {
+      "topicId": "quant",
+      "prompt": "A square is inscribed in a circle of radius 6 so that all four vertices lie on the circle. What is the area of the square?",
+      "options": {
+        "a": "36",
+        "b": "54",
+        "c": "72",
+        "d": "108"
+      },
+      "correctOptionId": "c",
+      "explanation": "The square’s diagonal is the diameter 12. If side is s, then 2s^2=144 so s^2=72. That area is 72.",
+      "distractorExplanations": {
+        "a": "36=6^2 treats the radius as a side of the square.",
+        "b": "54 is (6√2)^2 / something between r^2 and 2r^2.",
+        "d": "108 is 3×36 or (6√3)^2, mixing in an equilateral-triangle factor."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-143": {
+      "topicId": "quant",
+      "prompt": "How many positive divisors does 60 have?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "9",
+        "d": "12"
+      },
+      "correctOptionId": "d",
+      "explanation": "Prime factorization 60=2^2·3·5. The number of positive divisors is (2+1)(1+1)(1+1)=12.",
+      "distractorExplanations": {
+        "a": "6 counts only 1,2,3,4,5,6 and misses 10,12,15,20,30,60.",
+        "b": "8 is (2+1)(1+1)+2, an incomplete product of the exponents.",
+        "c": "9 is 3^2, as if 60 were a square of a single prime power."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-144": {
+      "topicId": "quant",
+      "prompt": "An alloy is copper to zinc in the ratio 3:5. If the alloy weighs 40 kg, how many kilograms of copper are in it?",
+      "options": {
+        "a": "15",
+        "b": "16",
+        "c": "20",
+        "d": "25"
+      },
+      "correctOptionId": "a",
+      "explanation": "Copper is 3 of 8 parts. Each part is 40/8=5 kg, so copper is 3×5=15 kg.",
+      "distractorExplanations": {
+        "b": "16 is 40×0.4, as if copper were two-fifths rather than three-eighths.",
+        "c": "20 is half of 40, as if the ratio were 1:1.",
+        "d": "25 is the zinc amount (5/8 of 40), not the copper."
+      },
+      "difficulty": "easy"
+    },
+    "gre-readiness-check-quant-145": {
+      "topicId": "quant",
+      "prompt": "A $200 fee is increased 15% and then increased another 20% from the new amount. What is the final fee?",
+      "options": {
+        "a": "$250",
+        "b": "$276",
+        "c": "$280",
+        "d": "$300"
+      },
+      "correctOptionId": "b",
+      "explanation": "After 15%: 200(1.15)=230. After 20%: 230(1.20)=276. Equivalently 200(1.15)(1.20)=276.",
+      "distractorExplanations": {
+        "a": "$250 is 200+50, a 25% single increase, not successive 15% and 20%.",
+        "c": "$280 is 200(1.40), adding 15%+20%+5% or using 40% once.",
+        "d": "$300 is 200(1.50), a 50% jump unrelated to 1.15×1.20."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-146": {
+      "topicId": "quant",
+      "prompt": "Pump A fills a tank in 4 hours and pump B in 12 hours. Working together at constant rates, how many hours do they need?",
+      "options": {
+        "a": "2",
+        "b": "2.5",
+        "c": "3",
+        "d": "8"
+      },
+      "correctOptionId": "c",
+      "explanation": "Combined rate is 1/4+1/12=1/3 tank per hour, so the time is 3 hours.",
+      "distractorExplanations": {
+        "a": "2 hours would require a combined rate of 1/2, as if B also ran at 1/4.",
+        "b": "2.5 hours is the harmonic-style (4+12)/ something /2 misfire, (4×12)/(4+12)=3 actually; 2.5 is (4+1)/2.",
+        "d": "8 hours is the arithmetic mean (4+12)/2, which is not how rates add."
+      },
+      "difficulty": "medium"
+    },
+    "gre-readiness-check-quant-147": {
+      "topicId": "quant",
+      "prompt": "What simple interest is earned on $3,000 at 4% per year for 5 years?",
+      "options": {
+        "a": "$120",
+        "b": "$240",
+        "c": "$400",
+        "d": "$600"
+      },
+      "correctOptionId": "d",
+      "explanation": "Simple interest is I=Prt=3000×0.04×5=120×5=600 dollars over the five years.",
+      "distractorExplanations": {
+        "a": "$120 is one year’s interest 3000(0.04), omitting the 5 years.",
+        "b": "$240 is 3000(0.04)(2), using 2 years instead of 5.",
+        "c": "$400 is 3000(0.04)(3)+40 or 8% for 5 years on $1,000, a product error."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

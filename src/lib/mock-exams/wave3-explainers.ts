@@ -302,20 +302,33 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "medication-aide-readiness-check": {
     practiceTestName: "Medication Aide Practice Test",
-    whatIsExam: "Medication aide / medication assistant exams certify nurse aides authorized to administer certain medications in long-term care under nurse supervision. Rules vary by state.",
-    administeredBy: "State nurse aide / medication aide boards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with State nurse aide / medication aide boards.",
+    whatIsExam:
+      "Medication aide / medication assistant exams certify nurse aides to administer certain medications in long-term care under nurse supervision. Many states use NCSBN’s MACE (typically 60 multiple-choice questions / 2 hours). Other states use their own form. This is not RN/LPN practice and not the NNAAP CNA exam.",
+    administeredBy: "State boards of nursing / nurse-aide registries (NCSBN MACE where adopted)",
+    officialFormat:
+      "Typical MACE written: 60 questions / 2 hours (some outlines 50 scored + 10 pretest); pass set by NCSBN/state. UniPrep mock: 60 questions / 75 minutes / 70% diagnostic. Confirm your state handbook.",
+    whoFor:
+      "CNAs completing medication-aide training for LTC — not LPNs/RNs and not CNA-only NNAAP candidates.",
+    howToPrepare:
+      "Run this free timed check for a topic report, then repair weak rights/routes/safety/docs with the planned Anki waitlist and your state MACE/handbook. Skills/competency, if required, is separate.",
     examFaqs: [
       {
-        question: "What is the Medication Aide exam?",
-        answer: "Medication aide / medication assistant exams certify nurse aides authorized to administer certain medications in long-term care under nurse supervision. Rules vary by state.",
+        question: "How many questions are on the medication aide exam?",
+        answer:
+          "Where a state uses MACE, the written exam is typically 60 questions in 2 hours. Some states differ. UniPrep’s free check is 60 questions / 75 minutes.",
       },
       {
-        question: "Is this an official Medication Aide exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from State nurse aide / medication aide boards.",
+        question: "Is this an official Medication Aide / MACE exam?",
+        answer:
+          "No. Independent UniPrep2Go practice — not NCSBN, Credentia, or a state board exam. Matching Anki is planned (waitlist).",
+      },
+      {
+        question: "Can a medication aide start IVs or change doses?",
+        answer:
+          "No. Medication aides administer within authorized duties under nurse supervision. Hold parameters and out-of-scope requests go to the nurse — they do not independently change orders or start IVs.",
       },
     ],
-    keywords: ["medication aide practice test", "cma med aide practice test", "medication aide practice exam"],
+    keywords: ["medication aide practice test", "mace practice test", "cma med aide practice test", "medication aide practice exam"],
   },
   "home-health-aide-readiness-check": {
     practiceTestName: "Home Health Aide Practice Test",
@@ -427,20 +440,33 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "ascp-mlt-readiness-check": {
     practiceTestName: "ASCP MLT Practice Test",
-    whatIsExam: "The ASCP Medical Laboratory Technician (MLT) exam certifies laboratory technicians across core clinical lab disciplines.",
+    whatIsExam:
+      "The ASCP Board of Certification Medical Laboratory Technician exam, MLT(ASCP), is a 100-question computer-adaptive sitting (2 hours 30 minutes) with a scaled passing score of 400. It covers blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations.",
     administeredBy: "ASCP Board of Certification",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ASCP Board of Certification.",
+    officialFormat:
+      "Official MLT(ASCP): 100 CAT multiple-choice questions / 2 hours 30 minutes / scaled 400 (100–999). This UniPrep check is 60 questions / 75 minutes / 70% diagnostic (linear, not CAT). California-only MLT licensure is 80 questions / 2 hours. Not MLS.",
+    whoFor:
+      "MLT students and working technicians sitting national MLT(ASCP) — not MLS candidates and not phlebotomy-only PBT.",
+    howToPrepare:
+      "Run this free 60-question timed check for a topic report, then repair missed benches with the planned 60-card Anki waitlist and the official BOC content guideline. Add a full-length CAT-style bank before exam day.",
     examFaqs: [
       {
-        question: "What is the ASCP MLT exam?",
-        answer: "The ASCP Medical Laboratory Technician (MLT) exam certifies laboratory technicians across core clinical lab disciplines.",
+        question: "How many questions are on the ASCP MLT exam?",
+        answer:
+          "National MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes. Pass is a scaled 400 (not a published percent). UniPrep’s free check is 60 questions / 75 minutes.",
       },
       {
         question: "Is this an official ASCP MLT exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ASCP Board of Certification.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from the ASCP Board of Certification. The matching Anki deck is planned (waitlist).",
+      },
+      {
+        question: "Is MLT the same as MLS?",
+        answer:
+          "No. MLT is the technician credential. MLS(ASCP) is a separate scientist exam with different eligibility and a different content guideline.",
       },
     ],
-    keywords: ["mlt practice test", "ascp mlt practice test", "medical lab technician practice test", "ascp mlt practice exam"],
+    keywords: ["mlt practice test", "ascp mlt practice test", "medical lab technician practice test", "ascp mlt practice exam", "mlt ascp mock exam"],
   },
   "aapc-ccs-readiness-check": {
     practiceTestName: "AAPC / AHIMA CCS-style Coding Practice Test",
@@ -523,15 +549,23 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     practiceTestName: "Physical Therapy Aide Practice Test",
     whatIsExam: "Physical therapy aide assessments cover assisting licensed PTs/PTAs with prep, transfers, and clinic safety\u2014scope is limited and state/employer-defined.",
     administeredBy: "Employer / state PT aide rules",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with Employer / state PT aide rules.",
+    officialFormat:
+      "No national published Q-count or clock. UniPrep2Go session is a free 60-question / 75-minute knowledge diagnostic for aide-scope safety — not NPTE and not PTA.",
     examFaqs: [
       {
-        question: "What is the Physical Therapy Aide exam?",
-        answer: "Physical therapy aide assessments cover assisting licensed PTs/PTAs with prep, transfers, and clinic safety\u2014scope is limited and state/employer-defined.",
+        question: "Is there a national Physical Therapy Aide exam?",
+        answer:
+          "No. Hiring and competency are employer- and state-specific. UniPrep’s free check is a 60-question / 75-minute knowledge diagnostic. Aides work under a PT or PTA and do not independently evaluate or progress a plan of care.",
+      },
+      {
+        question: "Is this the NPTE or PTA exam?",
+        answer:
+          "No. The NPTE is for PT and PTA licensure. This check is aide-scope only. The matching Anki deck is planned, not a live product.",
       },
       {
         question: "Is this an official Physical Therapy Aide exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from Employer / state PT aide rules.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not a license exam and not FSBPT material.",
       },
     ],
     keywords: ["pt aide practice test", "physical therapy aide practice test", "physical therapy aide practice exam"],
@@ -609,15 +643,23 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     practiceTestName: "NSCA-CPT Practice Test",
     whatIsExam: "The NSCA-CPT certifies personal trainers through the National Strength and Conditioning Association with emphasis on safe program design.",
     administeredBy: "NSCA",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with NSCA.",
+    officialFormat:
+      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. This UniPrep2Go session is a free 60-question / 75-minute text-only diagnostic — shorter than the official sitting and without video items.",
     examFaqs: [
       {
-        question: "What is the NSCA-CPT exam?",
-        answer: "The NSCA-CPT certifies personal trainers through the National Strength and Conditioning Association with emphasis on safe program design.",
+        question: "How many questions are on the NSCA-CPT exam?",
+        answer:
+          "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s free check is 60 questions / 75 minutes with no video items.",
+      },
+      {
+        question: "Is NSCA-CPT the same as CSCS?",
+        answer:
+          "No. CSCS is NSCA’s two-section strength-and-conditioning specialist exam. NSCA-CPT is the personal-trainer credential. NASM, ACE, and ACSM CPT exams are separate certifiers.",
       },
       {
         question: "Is this an official NSCA-CPT exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from NSCA.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from NSCA. The matching Anki deck is planned, not a live product.",
       },
     ],
     keywords: ["nsca-cpt practice test", "nsca personal trainer practice test", "nsca-cpt practice exam"],
@@ -626,15 +668,23 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     practiceTestName: "Precision Nutrition L1 Practice Test",
     whatIsExam: "Precision Nutrition Level 1 is a nutrition coaching certification focused on behavior change and nutrition fundamentals for coaches (not an RDN credential).",
     administeredBy: "Precision Nutrition",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with Precision Nutrition.",
+    officialFormat:
+      "PN L1 is a Precision Nutrition coaching certification exam (not RDN, not CPT). There is no ETS-style published national Q-count used on this page. This UniPrep2Go session is a free 60-question / 75-minute coaching diagnostic.",
     examFaqs: [
       {
-        question: "What is the Precision Nutrition L1 exam?",
-        answer: "Precision Nutrition Level 1 is a nutrition coaching certification focused on behavior change and nutrition fundamentals for coaches (not an RDN credential).",
+        question: "Is Precision Nutrition Level 1 the same as becoming an RDN?",
+        answer:
+          "No. RDN is a dietetics credential. PN L1 is coaching. UniPrep’s free check is 60 questions / 75 minutes.",
+      },
+      {
+        question: "Is this a personal-trainer CPT exam?",
+        answer:
+          "No. NSCA-CPT, NASM, ACE, and ACSM CPT exams are separate. This check is PN L1 coaching scope.",
       },
       {
         question: "Is this an official Precision Nutrition L1 exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from Precision Nutrition.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from Precision Nutrition. The matching Anki deck is planned.",
       },
     ],
     keywords: ["precision nutrition practice test", "pn level 1 practice test", "precision nutrition l1 practice exam"],
@@ -674,66 +724,108 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     practiceTestName: "Nail Technician Practice Test",
     whatIsExam: "State nail technician / manicurist written exams cover infection control, nail anatomy, and service procedures required for licensure (practical often separate).",
     administeredBy: "State cosmetology boards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with State cosmetology boards.",
+    officialFormat:
+      "Official NIC National Nail Technology Theory is 110 items (100 scored) in 90 minutes. The practical/skills exam is separate. Passing scores are set by the state board (often scaled 75). This UniPrep2Go session is a free 60-question / 75-minute theory diagnostic — shorter than official theory and not Cosmetology or Barber Theory.",
     examFaqs: [
       {
-        question: "What is the Nail Technician exam?",
-        answer: "State nail technician / manicurist written exams cover infection control, nail anatomy, and service procedures required for licensure (practical often separate).",
+        question: "How many questions are on the nail technician written exam?",
+        answer:
+          "Where a state uses NIC Nail Technology Theory, the written exam is 110 items (100 scored) in 90 minutes. UniPrep’s free check is 60 questions / 75 minutes. Confirm your state CIB. Practical is separate.",
+      },
+      {
+        question: "Is nail technician theory the same as Cosmetology Theory?",
+        answer:
+          "No. NIC Cosmetology Theory is a different 110-item form. NIC Barber Theory is a 60-item form. Use the mock that matches the license you registered for.",
       },
       {
         question: "Is this an official Nail Technician exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from State cosmetology boards.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not NIC or state-board material. The matching Anki deck is planned, not a live product.",
       },
     ],
     keywords: ["nail tech exam practice test", "manicurist license practice test", "nail technician practice exam"],
   },
   "barber-state-readiness-check": {
     practiceTestName: "Barber Practice Test",
-    whatIsExam: "State barber licensing written exams cover infection control, haircutting/shaving theory, chemicals, and state rules; skills exams are usually separate.",
-    administeredBy: "State barber boards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with State barber boards.",
+    whatIsExam:
+      "Many states use NIC National Barber Theory for the written barber license: 60 items (50 scored) in 90 minutes covering scientific concepts, hair care/shaving, and related services. The practical/skills exam is separate. Passing scores are set by the state board (often scaled 75).",
+    administeredBy: "State barber boards (often NIC theory + practical)",
+    officialFormat:
+      "Official NIC Barber theory: 60 items (50 scored) / 90 minutes. UniPrep mock: 60 questions / 75 minutes / 70% diagnostic, theory only. Some states (including California) use a different written form — read your CIB.",
+    whoFor:
+      "Barber students sitting a NIC-style written exam — not cosmetology theory (typically 110 items) and not the practical.",
+    howToPrepare:
+      "Run this free 60-question timed check, then repair infection-control, cutting/shaving, chemistry, and law misses. Add your state law packet and a practical kit drill before exam day.",
     examFaqs: [
       {
-        question: "What is the Barber exam?",
-        answer: "State barber licensing written exams cover infection control, haircutting/shaving theory, chemicals, and state rules; skills exams are usually separate.",
+        question: "How many questions are on the NIC Barber theory exam?",
+        answer:
+          "Current NIC National Barber Theory: 60 items of which 50 are scored, 90 minutes. UniPrep’s free check is 60 questions / 75 minutes. Confirm your state CIB.",
       },
       {
         question: "Is this an official Barber exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from State barber boards.",
+        answer:
+          "No. Independent UniPrep2Go theory practice — not NIC or state-board material. Matching Anki is planned. Practical exam is separate.",
       },
     ],
-    keywords: ["barber exam practice test", "barber license practice test", "barber practice exam"],
+    keywords: ["barber exam practice test", "barber license practice test", "nic barber theory practice", "barber practice exam"],
   },
   "aswb-bachelors-readiness-check": {
     practiceTestName: "ASWB Bachelors Practice Test",
-    whatIsExam: "The ASWB Bachelors exam is used for BSW-level social work licensure (e.g., LSW) in many jurisdictions.",
-    administeredBy: "ASWB",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ASWB.",
+    whatIsExam:
+      "The ASWB Bachelors exam is the BSW-level social work licensing test used for titles such as LSW/LBSW in many jurisdictions. From 3 August 2026 it is 122 questions (110 scored + 12 pretest) in 4 hours on three content areas.",
+    administeredBy: "Association of Social Work Boards (ASWB)",
+    officialFormat:
+      "Official from 3 August 2026: 122 questions / 4 hours / form-equated pass (generally about 66–78 of 110 scored). UniPrep mock: 60 questions / 75 minutes / 70% diagnostic. Not Masters and not Clinical/LCSW.",
+    whoFor:
+      "BSW graduates sitting LSW/LBSW-style licensure — not LCSW Clinical candidates.",
+    howToPrepare:
+      "Run this free timed generalist check, then repair HBSE, assessment, intervention, and ethics misses. Use the free ASWB Examination Guidebook and, if registered, ASWB’s paid official practice test for 4-hour stamina.",
     examFaqs: [
       {
-        question: "What is the ASWB Bachelors exam?",
-        answer: "The ASWB Bachelors exam is used for BSW-level social work licensure (e.g., LSW) in many jurisdictions.",
+        question: "How many questions are on the ASWB Bachelors exam?",
+        answer:
+          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s free check is 60 questions / 75 minutes.",
       },
       {
         question: "Is this an official ASWB Bachelors exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ASWB.",
+        answer:
+          "No. Independent UniPrep2Go practice — not ASWB material. Matching Anki is planned (waitlist).",
+      },
+      {
+        question: "Is ASWB Bachelors the same as Clinical / LCSW?",
+        answer:
+          "No. Bachelors is BSW generalist. Clinical is the LCSW exam. Sit the category your board assigned.",
       },
     ],
-    keywords: ["aswb bachelors practice test", "lsw exam practice test", "aswb bachelors practice exam"],
+    keywords: ["aswb bachelors practice test", "lsw exam practice test", "lbsw practice test", "aswb bachelors practice exam"],
   },
   "aswb-clinical-readiness-check": {
     practiceTestName: "ASWB Clinical Practice Test",
-    whatIsExam: "The ASWB Clinical exam is the clinical social work licensing exam used for LCSW (or equivalent) licensure in most U.S. jurisdictions.",
-    administeredBy: "ASWB",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ASWB.",
+    whatIsExam:
+      "The ASWB Clinical exam is the LCSW (or equivalent) licensing test. From 3 August 2026 it is 122 questions (110 scored + 12 pretest) in 4 hours on three content areas, with more application items.",
+    administeredBy: "Association of Social Work Boards (ASWB)",
+    officialFormat:
+      "Official from 3 August 2026: 122 questions / 4 hours / form-equated pass (generally about 66–78 of 110 scored). UniPrep mock: 60 questions / 75 minutes / 70% diagnostic on clinical assessment, diagnosis concepts, psychotherapy, and ethics. Not Bachelors/LSW.",
+    whoFor:
+      "MSW graduates with required clinical hours sitting LCSW — not Bachelors/LSW candidates.",
+    howToPrepare:
+      "Run this free timed LCSW-level check, then repair weak domains. Pair with DSM-5-TR judgment, EBP matching, and the ASWB Guidebook. Official ASWB practice test is paid and for registered candidates.",
     examFaqs: [
       {
-        question: "What is the ASWB Clinical exam?",
-        answer: "The ASWB Clinical exam is the clinical social work licensing exam used for LCSW (or equivalent) licensure in most U.S. jurisdictions.",
+        question: "How many questions are on the ASWB Clinical exam?",
+        answer:
+          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s free check is 60 questions / 75 minutes.",
       },
       {
         question: "Is this an official ASWB Clinical exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ASWB.",
+        answer:
+          "No. Independent UniPrep2Go practice — not ASWB material. Matching Anki is planned (waitlist).",
+      },
+      {
+        question: "Is ASWB Clinical the same as Bachelors / LSW?",
+        answer:
+          "No. Clinical is LCSW-level. Bachelors is BSW generalist. Do not mix banks or sit the wrong category.",
       },
     ],
     keywords: ["aswb clinical practice test", "lcsw exam practice test", "aswb clinical practice exam"],
@@ -759,15 +851,23 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     practiceTestName: "PHR Practice Test",
     whatIsExam: "The HRCI Professional in Human Resources (PHR) exam certifies operational HR knowledge including talent, employee relations, and compliance.",
     administeredBy: "HRCI",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with HRCI.",
+    officialFormat:
+      "Official HRCI PHR is 90 scored + 25 pretest questions in 2 hours (plus about 30 minutes administration) with a scaled pass of 500 (100–700). This UniPrep2Go session is a free 60-question / 75-minute operational-HR diagnostic — not SPHR and not SHRM-CP.",
     examFaqs: [
       {
-        question: "What is the PHR exam?",
-        answer: "The HRCI Professional in Human Resources (PHR) exam certifies operational HR knowledge including talent, employee relations, and compliance.",
+        question: "How many questions are on the PHR exam?",
+        answer:
+          "90 scored + 25 pretest in 2 hours, scaled pass 500. UniPrep’s free check is 60 questions / 75 minutes.",
+      },
+      {
+        question: "Is PHR the same as SHRM-CP or SPHR?",
+        answer:
+          "No. PHR is HRCI’s operational HR exam. SPHR is a different HRCI exam. SHRM-CP is SHRM. Use the mock that matches the body you registered with.",
       },
       {
         question: "Is this an official PHR exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from HRCI.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from HRCI. The matching Anki deck is planned, not a live product.",
       },
     ],
     keywords: ["phr practice test", "hrci phr practice test", "phr practice exam"],
@@ -886,15 +986,23 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     practiceTestName: "Praxis Core Practice Test",
     whatIsExam: "Praxis Core Academic Skills for Educators tests reading, writing, and math skills often required for entry into teacher preparation programs.",
     administeredBy: "ETS",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ETS.",
+    officialFormat:
+      "Official Praxis Core is three separate ETS tests: Reading 5713 (56 selected-response / 85 minutes), Writing 5723 (40 selected-response + 2 essays / 100 minutes), Math 5733 (56 selected-response / 90 minutes). This UniPrep2Go session is a free combined 60-question / 75-minute selected-response diagnostic — not three sittings and not constructed-response essays.",
     examFaqs: [
       {
-        question: "What is the Praxis Core exam?",
-        answer: "Praxis Core Academic Skills for Educators tests reading, writing, and math skills often required for entry into teacher preparation programs.",
+        question: "How many questions are on Praxis Core?",
+        answer:
+          "Three sittings: Reading 56 / 85 minutes, Writing 40 selected-response plus two essays / 100 minutes, Math 56 / 90 minutes. UniPrep’s free check is 60 selected-response questions in 75 minutes — not those three forms.",
+      },
+      {
+        question: "Is this Praxis Special Education?",
+        answer:
+          "No. Special Education (often 5355) is a different content exam. This check is Core academic skills. The matching Anki deck is planned.",
       },
       {
         question: "Is this an official Praxis Core exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ETS.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from ETS.",
       },
     ],
     keywords: ["praxis core practice test", "praxis i practice test", "praxis core practice exam"],
@@ -930,15 +1038,23 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     practiceTestName: "Unarmed Security Officer Practice Test",
     whatIsExam: "State unarmed security officer exams license guards to work site security. Topics typically include law, observation, emergencies, and ethics; rules vary by state.",
     administeredBy: "State security licensing boards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with State security licensing boards.",
+    officialFormat:
+      "Unarmed security exams are state-specific — no national published Q-count. This UniPrep2Go session is a free 60-question / 75-minute unarmed knowledge diagnostic. Firearm qualification and armed cards are separate.",
     examFaqs: [
       {
-        question: "What is the Unarmed Security Officer exam?",
-        answer: "State unarmed security officer exams license guards to work site security. Topics typically include law, observation, emergencies, and ethics; rules vary by state.",
+        question: "Is there a national unarmed security exam?",
+        answer:
+          "No. States set hours and written tests. UniPrep’s free check is 60 questions / 75 minutes of unarmed knowledge.",
+      },
+      {
+        question: "Is this the armed guard exam?",
+        answer:
+          "No. This check is unarmed only. Range qualification is separate. The matching Anki deck is planned.",
       },
       {
         question: "Is this an official Unarmed Security Officer exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from State security licensing boards.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from a state board.",
       },
     ],
     keywords: ["security officer exam practice test", "unarmed guard card practice test", "unarmed security officer practice exam"],

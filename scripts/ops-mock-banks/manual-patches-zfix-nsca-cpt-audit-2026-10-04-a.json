@@ -1,0 +1,259 @@
+{
+  "nsca-cpt-readiness-check": {
+    "nsca-cpt-readiness-check-assessment-001": {
+      "prompt": "A 42-year-old books a first NSCA-CPT consult at a commercial gym. On the PAR-Q+ he marks yes to unexplained chest discomfort with easy walking. What should the trainer do before any fitness testing?",
+      "options": {
+        "a": "Stop the assessment and refer him for medical clearance",
+        "b": "Start a submaximal bike test because only walking triggered it",
+        "c": "Skip clearance because he is under the age-45 risk cutoff",
+        "d": "Have him waive liability and complete a 1RM battery today"
+      },
+      "correctOptionId": "a",
+      "explanation": "PAR-Q+ yes answers to ischemic symptoms (chest discomfort with light activity) are a stop for an NSCA-CPT. The trainer screens for red flags and refers; medical diagnosis and clearance are outside scope. No 1RM, submax, or “under 45 so it is fine” workaround until a physician clears him.",
+      "distractorExplanations": {
+        "b": "Confuses a mode change with medical clearance; swapping treadmill for bike still stresses a possible cardiac symptom.",
+        "c": "Confuses age-based risk-factor counting with a positive symptom screen; chest discomfort needs referral at any age.",
+        "d": "Confuses informed consent with permission to ignore a PAR-Q+ red flag; a waiver does not replace physician clearance."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-002": {
+      "prompt": "A new client arrives after a double espresso and a jog from the parking garage. You need a resting heart rate for her intake vitals. How should you treat the pulse you get right now?",
+      "options": {
+        "a": "Log it as her true resting HR for Karvonen zone math",
+        "b": "Reject it as resting HR; recapture after quiet rest",
+        "c": "Convert the pulse directly into heart-rate reserve",
+        "d": "Treat the pulse as a 1RM predictor for session one"
+      },
+      "correctOptionId": "b",
+      "explanation": "Resting HR must be taken after seated or supine rest, without recent caffeine, nicotine, or exercise. A post-coffee, post-jog pulse is elevated and will inflate training zones if used as RHR. Recapture under controlled conditions; do not treat the number as a strength or HRR value.",
+      "distractorExplanations": {
+        "a": "Confuses an acute, stimulated pulse with true resting HR; Karvonen built on that number overestimates intensity.",
+        "c": "Confuses a single pulse with HRR, which needs true rest and a known or estimated HRmax, not a lobby reading.",
+        "d": "Confuses vitals with maximal strength testing; heart rate does not estimate a one-repetition maximum."
+      },
+      "difficulty": "easy"
+    },
+    "nsca-cpt-readiness-check-assessment-003": {
+      "prompt": "A 28-year-old powerlifter is 5 ft 10 in and 230 lb. His BMI prints as obese on the gym kiosk. How should the NSCA-CPT use that number in the assessment?",
+      "options": {
+        "a": "Read BMI as a measured body-fat percentage",
+        "b": "Read BMI as a waist-to-height ratio for visceral fat mass",
+        "c": "Read BMI as a height-weight index that can misclassify muscle",
+        "d": "Read BMI as a lean-mass index that already credits muscle"
+      },
+      "correctOptionId": "c",
+      "explanation": "BMI is mass (kg) divided by height (m) squared. It is a population screening index, not a body-composition method, so dense muscular clients are often labeled overweight or obese. Pair it with girths, skinfolds, or another composition tool rather than treating the kiosk printout as fat or lean mass.",
+      "distractorExplanations": {
+        "a": "Confuses BMI with densitometry or calipers; BMI cannot split fat from lean tissue.",
+        "b": "Confuses BMI with waist-to-height ratio, which needs a waist girth the BMI formula never uses.",
+        "d": "Confuses BMI with FFM or FFMI; the index has no muscle adjustment, which is why lifters get misclassified."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-004": {
+      "prompt": "In a baseline battery, a 35-year-old client does as many strict push-ups as possible until form fails. What does this test primarily estimate for an NSCA-CPT?",
+      "options": {
+        "a": "Upper-body one-repetition-maximum strength",
+        "b": "Upper-body peak muscular power output",
+        "c": "Shoulder mobility and trunk flexibility",
+        "d": "Upper-body muscular endurance"
+      },
+      "correctOptionId": "d",
+      "explanation": "Repetitions to form failure with body weight estimate local muscular endurance, not a 1RM. NSCA-CPT testing matches the quality: max strength needs a heavy single or low-rep estimate, power needs a fast throw or jump, and mobility needs range-of-motion screens. Score the push-up as endurance.",
+      "distractorExplanations": {
+        "a": "Confuses high-rep bodyweight work with 1RM strength, which uses a heavy bench or similar max effort.",
+        "b": "Confuses endurance reps with power, which is force times velocity (med-ball throw, jump), not fatigue sets.",
+        "c": "Confuses a repetition-count test with ROM screens; push-ups do not grade shoulder or trunk flexibility."
+      },
+      "difficulty": "easy"
+    },
+    "nsca-cpt-readiness-check-assessment-005": {
+      "prompt": "During a treadmill submaximal screen, a 50-year-old reports crushing chest pressure that started when the grade increased. What should the NSCA-CPT do?",
+      "options": {
+        "a": "Stop the test at once and arrange medical referral",
+        "b": "Drop one stage and continue the same protocol",
+        "c": "Sit him down, then restart the identical test today",
+        "d": "Continue if pain is only 4/10 and he is under 55"
+      },
+      "correctOptionId": "a",
+      "explanation": "Exertional chest pressure is a possible cardiac symptom and an absolute stop for fitness testing. The CPT ends the test, monitors the client, and refers; lowering the grade or retesting the same day repeats the stimulus. Age cutoffs and pain scores do not authorize continuing a symptomatic screen.",
+      "distractorExplanations": {
+        "b": "Confuses intensity titration with emergency stop rules; a possible ischemic symptom is not a stage-down cue.",
+        "c": "Confuses recovery with clearance; same-day retest restimulates the same risk without a medical workup.",
+        "d": "Confuses age/risk tables with a hard stop; symptomatic chest pressure is referred at any age or rating."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-006": {
+      "prompt": "You repeat waist and hip girths every 4 weeks on a client tracking waist change. Which procedure keeps the measures comparable?",
+      "options": {
+        "a": "Same landmarks, but tape over a T-shirt for extra modesty",
+        "b": "Standard landmarks, even tension, similar time of day",
+        "c": "Any convenient site if you keep the same tape",
+        "d": "Standard landmarks, tape cinched until skin indents"
+      },
+      "correctOptionId": "b",
+      "explanation": "Girth reliability for an NSCA-CPT depends on the same anatomical landmarks, snug-not-compressing tape tension, and similar time of day and clothing state (bare skin). Clothing thickness, wandering sites, or crushing the tissue add error that looks like fat loss or gain.",
+      "distractorExplanations": {
+        "a": "Confuses comfort with reliability; fabric thickness varies and inflates girth from visit to visit.",
+        "c": "Confuses equipment with site standardization; the same tape cannot fix a moved landmark.",
+        "d": "Confuses snug contact with compression; cinching understates girth and wrecks week-to-week trends."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-007": {
+      "prompt": "A client scores well on a sit-and-reach box and asks if that proves a healthy low back. Why should the NSCA-CPT not over-read that score?",
+      "options": {
+        "a": "The test only measures hip-flexor muscle length",
+        "b": "The test grades dynamic flexibility, not static range",
+        "c": "One score mixes hamstring and low-back flexibility",
+        "d": "The test isolates lumbar motion from the hips"
+      },
+      "correctOptionId": "c",
+      "explanation": "Sit-and-reach is a static posterior-chain reach. Hamstring and lumbar flexibility both contribute, so a high score is not a spine-health diagnosis and a low score does not name one tight tissue. Use it as a limited ROM snapshot, not medical clearance of the low back.",
+      "distractorExplanations": {
+        "a": "Confuses posterior-chain sit-and-reach with hip-flexor length tests (Thomas), which target the anterior hip.",
+        "b": "Confuses static ROM with dynamic flexibility; the limit is mixed regions, not ballistic versus held stretch.",
+        "d": "Confuses isolation with the actual blended score; the box cannot separate lumbar from hip contribution."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-008": {
+      "prompt": "Seated rest blood pressure before a session is 162/100 mmHg on a calibrated cuff, repeated after five quiet minutes. What should the NSCA-CPT do?",
+      "options": {
+        "a": "Train moderate cardio only and skip free weights",
+        "b": "Train as planned because she reports feeling well",
+        "c": "Call it stage 1 and lift but skip interval work",
+        "d": "Stop the session and refer her for medical review"
+      },
+      "correctOptionId": "d",
+      "explanation": "A confirmed resting 162/100 mmHg is stage 2-range hypertension and above common CPT cutoffs for starting exercise (often SBP ≥160 or DBP ≥100). The trainer does not diagnose, but stops the session and refers. Feeling well is expected; hypertension is often silent. Stage 1 is 130–139/80–89, not this reading.",
+      "distractorExplanations": {
+        "a": "Confuses modality choice with a contraindication; 162/100 is not a green light for any training intensity.",
+        "b": "Confuses symptoms with risk; absence of headache or dizziness does not make this resting BP safe to train on.",
+        "c": "Confuses stage 1 (130–139/80–89) with this stage 2-range reading that needs referral before loading."
+      },
+      "difficulty": "hard"
+    },
+    "nsca-cpt-readiness-check-assessment-009": {
+      "prompt": "A novice wants a squat 1RM. You have a clean 5RM of 185 lb and no extra spotters for a true max. How should you treat a chart-predicted 1RM?",
+      "options": {
+        "a": "As a prediction with error, not a lab-measured max",
+        "b": "As an exact 1RM that any trained lifter will hit today",
+        "c": "As most accurate from a 12–15-repetition set",
+        "d": "As equally valid for every gym exercise"
+      },
+      "correctOptionId": "a",
+      "explanation": "NSCA-CPT load charts convert a repetition-maximum into an estimated 1RM. Error varies with training status, exercise, and how far the set is from a true max. A 5RM is a reasonable predictor, but it is not a tested single. Accuracy falls as reps rise, and the ratio is not identical across lifts.",
+      "distractorExplanations": {
+        "b": "Confuses an equation with a measured 1RM; individual error means the chart is a planning estimate.",
+        "c": "Confuses better accuracy at low reps with high-rep sets; 12–15RM predictions are typically less precise.",
+        "d": "Confuses a squat chart with a universal conversion; isolation and Olympic lifts do not share one ratio."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-010": {
+      "prompt": "A client ate recently, is under-hydrated, and uses a cheap handheld BIA at the front desk. The printout says 31% fat. What mainly explains why that number can mislead?",
+      "options": {
+        "a": "Room temperature and entered height dominate the error",
+        "b": "Hydration, recent food, and device error swing it",
+        "c": "Caffeine changes BIA but hydration does not",
+        "d": "Skinfold site choice and pinch depth drove it"
+      },
+      "correctOptionId": "b",
+      "explanation": "Handheld BIA estimates composition from a small current through body water. Hydration, recent meals, and cheap-device error move impedance and the fat estimate. Treat BIA as a trend under identical conditions, not a verdict. Height is an input, not the main error source; skinfold technique is a different method.",
+      "distractorExplanations": {
+        "a": "Confuses entered height with the main BIA bias; hydration and meal timing move impedance far more.",
+        "c": "Confuses stimulant effects with water; BIA current travels in body water, so hydration is a primary error.",
+        "d": "Confuses BIA with caliper error; site and pinch depth apply to skinfolds, not a handheld impedance wand."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-011": {
+      "prompt": "In a bodyweight squat screen, a 38-year-old winces at the bottom and points to the right anterior knee. What should the trainer do with loaded squats today?",
+      "options": {
+        "a": "Load lightly at a slow tempo so the pain settles",
+        "b": "Stretch the hips five minutes, then barbell squat",
+        "c": "Do not load that pattern; regress it or refer",
+        "d": "Diagnose the joint and write a rehab plan"
+      },
+      "correctOptionId": "c",
+      "explanation": "Pain during a movement screen is a stop for loading that pattern. The NSCA-CPT regresses to a pain-free variation or refers to a qualified clinician. Light load, stretching-then-loading, and diagnosing the joint all keep the client in a painful squat the CPT is not licensed to treat.",
+      "distractorExplanations": {
+        "a": "Confuses a lighter load with a pain-free screen; adding any load to a painful squat still loads the symptom.",
+        "b": "Confuses assumed tightness with a painful pattern; stretching then loading is treatment, not a CPT screen.",
+        "d": "Confuses CPT scope with clinical diagnosis and rehab prescription, which belong to licensed providers."
+      },
+      "difficulty": "medium"
+    },
+    "nsca-cpt-readiness-check-assessment-012": {
+      "prompt": "Before a 1.5-mile walk test, what must informed consent include so the client can agree to the assessment?",
+      "options": {
+        "a": "Procedures plus a waiver that erases all trainer liability",
+        "b": "A risk talk signed after the walk test is finished",
+        "c": "Benefits and goals with the risks left out",
+        "d": "Procedures, foreseeable risks, and the right to stop"
+      },
+      "correctOptionId": "d",
+      "explanation": "Informed consent for NSCA-CPT testing is obtained before the test. It explains what will happen, foreseeable risks and discomforts, expected benefits, and that the client may stop at any time. It is not a negligence waiver and cannot be signed after the effort or stripped of risk language.",
+      "distractorExplanations": {
+        "a": "Confuses consent with a liability waiver; explaining the test does not erase trainer negligence.",
+        "b": "Confuses timing; consent after the test cannot authorize risks the client already took.",
+        "c": "Confuses marketing the benefits with informed consent, which must include risks and the right to stop."
+      },
+      "difficulty": "easy"
+    },
+    "nsca-cpt-readiness-check-assessment-013": {
+      "prompt": "A 62-year-old on a prescribed beta-blocker wants a Karvonen heart-rate zone from today’s treadmill screen. What should the trainer expect?",
+      "options": {
+        "a": "A blunted HR response that makes HR targets unreliable",
+        "b": "An exaggerated heart-rate rise even at easy walking speeds",
+        "c": "A higher than age-predicted maximal heart rate",
+        "d": "A blunted RPE so talk-test and RPE cannot be used"
+      },
+      "correctOptionId": "a",
+      "explanation": "Beta-blockers lower resting and exercise heart rate and reduce HRmax, so age-predicted or Karvonen targets overestimate a safe zone. The NSCA-CPT should expect a blunted HR and use RPE or talk-test, not chase a formula HR. Stimulants, not beta-blockers, raise HR; RPE remains usable.",
+      "distractorExplanations": {
+        "b": "Confuses beta-blockade with stimulant or withdrawal tachycardia; these drugs blunt, not exaggerate, HR.",
+        "c": "Confuses the drug effect with a higher HRmax; beta-blockers typically reduce maximal heart rate.",
+        "d": "Confuses the HR effect with perception; RPE is preferred because HR is the blunted signal."
+      },
+      "difficulty": "hard"
+    },
+    "nsca-cpt-readiness-check-assessment-014": {
+      "prompt": "You measure a 47-year-old man’s waist at a standard site as part of cardiometabolic screening. What is the most appropriate use of that girth?",
+      "options": {
+        "a": "Convert the tape reading into a body-fat percentage",
+        "b": "Flag elevated central adiposity and related risk",
+        "c": "Estimate lean muscle mass around the trunk",
+        "d": "Score trunk flexibility instead of sit-and-reach"
+      },
+      "correctOptionId": "b",
+      "explanation": "Waist circumference is a central-adiposity risk flag linked to cardiometabolic disease. It is not a body-fat percent, a lean-mass estimate, or a flexibility test. The NSCA-CPT uses standardized landmarks and interprets high values as a reason to emphasize referral and risk-aware programming, not as a composition lab result.",
+      "distractorExplanations": {
+        "a": "Confuses girth with a % fat equation from skinfolds or BIA; a tape does not output body-fat percent.",
+        "c": "Confuses abdominal fat with muscle; lean mass needs a composition method, not a waist tape.",
+        "d": "Confuses a tape measure with ROM testing; flexibility is scored with movement screens, not girth."
+      },
+      "difficulty": "easy"
+    },
+    "nsca-cpt-readiness-check-assessment-015": {
+      "prompt": "A 29-year-old client at 22 weeks of pregnancy reports calf pain, swelling, and warmth after a long car trip. She wants a lower-body 1RM day. What should the NSCA-CPT do?",
+      "options": {
+        "a": "Proceed with machines and skip the barbell squat today",
+        "b": "Heat and massage the calf, then test the 1RM",
+        "c": "Stop lower-body loading and refer for possible DVT",
+        "d": "Elevate the leg ten minutes and retest 1RM today"
+      },
+      "correctOptionId": "c",
+      "explanation": "Unilateral calf pain, swelling, and warmth after prolonged sitting in pregnancy is a red-flag cluster for possible deep-vein thrombosis. The CPT does not diagnose DVT, but stops lower-body loading and refers immediately. Changing implements, massaging, or delaying ten minutes still stresses a potentially clotting limb.",
+      "distractorExplanations": {
+        "a": "Confuses barbell versus machine with a medical emergency; any lower-body 1RM still loads the calf.",
+        "b": "Confuses a possible clot with a muscle cramp; heat and massage are dangerous if DVT is in the differential.",
+        "d": "Confuses brief rest with medical evaluation; elevation does not clear a DVT red flag for 1RM testing."
+      },
+      "difficulty": "hard"
+    }
+  }
+}

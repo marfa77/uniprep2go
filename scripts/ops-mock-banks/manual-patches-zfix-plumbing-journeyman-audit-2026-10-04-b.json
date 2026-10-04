@@ -1,0 +1,259 @@
+{
+  "plumbing-journeyman-readiness-check": {
+    "plumbing-journeyman-readiness-check-water-001": {
+      "prompt": "A washing-machine solenoid snaps shut and copper supply in the laundry bangs. What produced the shock?",
+      "options": {
+        "a": "Sudden valve closure that launched a pressure surge through the piping",
+        "b": "Air trapped in the vent stack after the nearby bathtub drained hard",
+        "c": "Slow thermal expansion from the water heater in a closed system",
+        "d": "Oversized mains that dropped water velocity well below the design limit"
+      },
+      "correctOptionId": "a",
+      "explanation": "Water hammer is a supply-side pressure wave from rapid shutoff, typical of solenoid valves and other quick-closing devices. Arrestors or slower closure absorb the surge. Vent air, heater expansion, and oversized pipe are different problems.",
+      "distractorExplanations": {
+        "b": "Vent-stack air affects trap seals on the DWV side; hammer is a potable-supply shock from rapid shutoff.",
+        "c": "Thermal expansion raises static pressure slowly and is handled by an expansion tank, not a bang at shutoff.",
+        "d": "Larger pipe lowers velocity and reduces hammer; undersized high-velocity pipe plus quick closure causes it."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-water-002": {
+      "prompt": "An RPZ or dual-check is set on the domestic water service at the property line. What is it protecting?",
+      "options": {
+        "a": "Building drains from sewage backing up out of the public sewer",
+        "b": "The potable supply from reverse flow through a cross-connection",
+        "c": "The water heater from slow pressure rise due to thermal expansion",
+        "d": "Fixture branches from hammer caused by washer solenoid valves"
+      },
+      "correctOptionId": "b",
+      "explanation": "A backflow preventer on the domestic service stops contaminated water from reversing into the potable main through a cross-connection. Sewer backup, thermal expansion, and water hammer each use different devices.",
+      "distractorExplanations": {
+        "a": "Sewer backup into drains is a backwater-valve problem, not a water-service backflow preventer.",
+        "c": "Closed-system expansion is the expansion tank and T&P valve, not the service backflow assembly.",
+        "d": "Hammer arrestors handle pressure surges; the RPZ or dual-check stops reverse contamination."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-water-003": {
+      "prompt": "A hot-water riser will be Type L or Type M copper at the same nominal size. What is the real difference?",
+      "options": {
+        "a": "Type M has the thicker wall; Type L is the thin residential wall",
+        "b": "Type L is printed red; Type M is printed blue on the tube",
+        "c": "Type L has a thicker wall than Type M; outside diameters match",
+        "d": "Type L has a larger outside diameter than Type M at that size"
+      },
+      "correctOptionId": "c",
+      "explanation": "Drawn copper water tube shares outside diameter by nominal size. Wall thickness runs K (thickest), then L, then M (thinnest), so Type L is heavier than Type M and the inside diameter is slightly smaller. Color marks are L blue and M red.",
+      "distractorExplanations": {
+        "a": "Reverses the order: M is thinner than L; K is the thickest water-tube wall.",
+        "b": "Color codes are swapped: Type L is blue and Type M is red; Type K is green.",
+        "d": "OD is the same for K, L, and M at a given size; only wall thickness and ID change."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-water-004": {
+      "prompt": "A remodel will replace copper water distribution with PEX. Which claim is a real advantage of PEX?",
+      "options": {
+        "a": "UV stability for long exposed runs across a sunlit roof without shielding",
+        "b": "Listing for DWV work and solvent-weld joints to PVC drain fittings",
+        "c": "Copper-like rigidity, sweat-soldered joints, and wider support spacing",
+        "d": "Flexibility, corrosion resistance, and fewer fittings on long runs"
+      },
+      "correctOptionId": "d",
+      "explanation": "PEX is a flexible pressure-water material that resists scale and corrosion and can snake through framing with fewer fittings. It is not a DWV product, it is not UV-stable outdoors, and it needs closer support than copper.",
+      "distractorExplanations": {
+        "a": "PEX degrades in sunlight and must be shielded; UV exposure is a limitation, not an advantage.",
+        "b": "PEX is water-distribution tubing; DWV uses PVC, ABS, or cast iron and cannot be solvent-welded to PEX.",
+        "c": "PEX is flexible, uses crimp or expansion fittings, and needs closer hangers than rigid copper."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-water-005": {
+      "prompt": "The utility gauge at the meter reads 110 psi static. When must a pressure-reducing valve go on the building supply?",
+      "options": {
+        "a": "When street pressure exceeds the typical 80 psi fixture and equipment limit",
+        "b": "Whenever an upper-floor lavatory needs a booster because residual pressure is low",
+        "c": "On the vent stack so stack pressure cannot siphon nearby fixture traps",
+        "d": "Only if the water-heater recovery rate is below calculated fixture demand"
+      },
+      "correctOptionId": "a",
+      "explanation": "Codes cap static water pressure in the building at about 80 psi. When the street is higher, a listed PRV is installed on the supply after the meter. A PRV does not boost weak pressure, and it does not belong on vents or heaters.",
+      "distractorExplanations": {
+        "b": "A PRV lowers incoming pressure; weak upper floors need proper sizing or a booster, not a reducer.",
+        "c": "Vent stacks are DWV; a PRV is a potable-supply device used when street pressure is too high.",
+        "d": "Heater recovery is a BTU/kW rating issue; it does not trigger a building PRV."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-water-006": {
+      "prompt": "A closed system has a backflow preventer on the service and a storage water heater. What does the expansion tank prevent?",
+      "options": {
+        "a": "Hammer bangs when a dishwasher solenoid snaps shut on the hot branch",
+        "b": "Excess static pressure as heated water expands with nowhere to go",
+        "c": "Scald discharge at showers by blending cold water at the heater outlet",
+        "d": "Sediment collecting on the bottom of the tank between annual flushes"
+      },
+      "correctOptionId": "b",
+      "explanation": "With a check or backflow preventer on the service, heated water cannot push back to the street. Volume growth from heating raises static pressure. A pre-charged expansion tank on the cold inlet absorbs that expansion; it does not stop hammer, scald, or scale.",
+      "distractorExplanations": {
+        "a": "Hammer is a shock wave handled by arrestors; an expansion tank absorbs slow volume growth from heat.",
+        "c": "Scald control is a mixing valve or thermostat setting; the expansion tank does not limit outlet temperature.",
+        "d": "Sediment is flushed through the heater drain; the expansion tank does not change scale in the storage tank."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-water-007": {
+      "prompt": "Copper water tube is joining the steel nipple on a storage water heater. Why install a dielectric union there?",
+      "options": {
+        "a": "To bond copper to steel so the piping stays a grounding electrode path",
+        "b": "To join PEX to copper without a listed crimp or expansion adapter",
+        "c": "To soak up booster-pump vibration at the mechanical-room connection",
+        "d": "To isolate dissimilar metals and slow galvanic corrosion at the joint"
+      },
+      "correctOptionId": "d",
+      "explanation": "A dielectric union electrically separates copper from steel so galvanic current cannot eat the joint in the presence of water. Bonding jumpers restore grounding if required. It is not a PEX adapter and not a vibration isolator.",
+      "distractorExplanations": {
+        "a": "The union breaks metal-to-metal continuity; grounding continuity, if required, uses a bonding jumper around it.",
+        "b": "PEX-to-copper transitions use listed adapters; dielectric unions isolate copper from steel or iron.",
+        "c": "Pump vibration uses flexible connectors; the dielectric union's job is corrosion isolation."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-water-008": {
+      "prompt": "A water-service trench is opening in a frost-prone jurisdiction. What burial rule should the journeyman follow?",
+      "options": {
+        "a": "Set the service below the local frost line as the code authority requires",
+        "b": "Twelve inches of cover is enough in every cold-climate city on the water service",
+        "c": "Match foundation-footing depth even when frost goes deeper than that",
+        "d": "Keep the pipe above frost if trench wrap insulation is added on site"
+      },
+      "correctOptionId": "a",
+      "explanation": "Water service in frost areas is buried below the locally adopted frost line so the line cannot freeze. Cover depth varies by climate and AHJ. Twelve inches is a common sewer-cover figure, not a cold-climate water-service rule, and insulation does not replace frost-line burial.",
+      "distractorExplanations": {
+        "b": "Twelve inches is typical minimum cover for some sewers, not frost protection for a water service in cold climates.",
+        "c": "Footing depth may relate to frost but is not the water-service rule; the pipe must sit below the frost line.",
+        "d": "Wrap insulation does not substitute for burial below frost; frozen ground still conducts into a shallow service."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-water-009": {
+      "prompt": "A hotel shower specification calls for a pressure-balancing or thermostatic mixing valve. What hazard does that valve address?",
+      "options": {
+        "a": "Hammer from a guest slamming the shower handle closed on the valve",
+        "b": "Scald risk when supply pressure or mixed temperature swings",
+        "c": "Reverse flow of shower spray back into the potable riser",
+        "d": "Legionella growth inside a remote storage water heater"
+      },
+      "correctOptionId": "b",
+      "explanation": "Pressure-balancing and thermostatic shower valves keep outlet temperature from spiking when someone flushes a toilet or when hot/cold pressures shift. That is scald protection at the fixture. Hammer, backflow, and Legionella control use other devices and temperature policies.",
+      "distractorExplanations": {
+        "a": "Hammer arrestors address surges; mixing valves stabilize outlet temperature, not shock waves.",
+        "c": "Backflow at a shower is a vacuum-breaker or check issue; the mixing valve is a temperature-control device.",
+        "d": "Legionella control stores hot water hot; the shower mixer prevents scald at the outlet, not biofilm in the heater."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-water-010": {
+      "prompt": "On a new domestic service, where is the utility water meter typically set?",
+      "options": {
+        "a": "On the water-heater outlet so only hot use is billed by the utility",
+        "b": "Downstream of the building PRV so the meter sees reduced street pressure",
+        "c": "At the service entrance so all incoming water to the property is measured",
+        "d": "On every fixture branch so the utility can bill each fixture separately"
+      },
+      "correctOptionId": "c",
+      "explanation": "The utility meter sits at the service connection so every gallon entering the property is measured. Building PRVs, heaters, and fixture branches are downstream of that meter. Submeters, if used, are owner devices, not the typical utility location.",
+      "distractorExplanations": {
+        "a": "Some owners submeter hot water, but the utility meter is on the incoming service, not the heater outlet.",
+        "b": "The meter is at the service; a PRV is installed after the meter so it does not starve or under-read the account.",
+        "d": "Utility billing uses one service meter; per-fixture meters are not the standard service location."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-water-011": {
+      "prompt": "A three-story apartment has long developed length from the heater to distant baths. What does a hot-water recirculation pump do?",
+      "options": {
+        "a": "Raise the heater recovery rate so the tank reheats faster after a draw",
+        "b": "Boost cold-water residual pressure at the farthest lavatory on the riser",
+        "c": "Blend cold into the hot loop in place of a thermostatic mixing valve",
+        "d": "Keep hot water moving in the loop so fixtures deliver heat sooner"
+      },
+      "correctOptionId": "d",
+      "explanation": "A recirc pump circulates already-heated water through a return loop so the branch is hot when a fixture opens. It does not add heater input, does not boost cold mains, and is not a scald-mixing valve. Codes often require recirc or heat trace when developed length is long.",
+      "distractorExplanations": {
+        "a": "Recovery depends on burner or element input; the pump only moves water already in the tank and loop.",
+        "b": "Recirc serves the hot loop to cut wait time; it does not raise cold-supply residual pressure.",
+        "c": "Anti-scald mixing is a separate valve; the recirc pump's job is delivery time, not temperature limit."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-water-012": {
+      "prompt": "Sweating a copper potable-water joint. Which procedure produces a sound, code-legal connection?",
+      "options": {
+        "a": "Clean and flux the cup, heat the fitting, and let solder wick into the joint",
+        "b": "Melt solder in the torch flame onto a cold, dirty, unfluxed fitting cup",
+        "c": "Brush flux on after the copper is already glowing so the flux will not burn",
+        "d": "Use 50/50 tin-lead solder because it wets copper better than lead-free alloys"
+      },
+      "correctOptionId": "a",
+      "explanation": "A capillary solder joint needs clean metal, flux applied before heat, and heat on the fitting so solder melts on the copper and is drawn into the cup. Potable lines require lead-free solder. Flame-melted solder on a cold joint and post-heat flux both fail.",
+      "distractorExplanations": {
+        "b": "Solder must melt on the heated, fluxed metal and wick in; dropping molten solder on cold copper will not bond.",
+        "c": "Flux goes on cleaned surfaces before heating; applying it after heat defeats cleaning and wetting.",
+        "d": "Lead-bearing 50/50 solder has been banned on potable water; use listed lead-free solder."
+      },
+      "difficulty": "easy"
+    },
+    "plumbing-journeyman-readiness-check-water-013": {
+      "prompt": "A cation-exchange softener is piped on the cold supply ahead of a storage heater. What does the resin actually do?",
+      "options": {
+        "a": "Add calcium carbonate to raise pH of acidic well water",
+        "b": "Swap hardness ions (calcium and magnesium) for sodium or potassium",
+        "c": "Dose chlorine from the brine tank to disinfect the building supply",
+        "d": "Strip taste and odor the way a granular activated-carbon bed does"
+      },
+      "correctOptionId": "b",
+      "explanation": "Softener resin exchanges calcium and magnesium for sodium or potassium, which is what 'softening' means. Regeneration uses brine. Calcite beds raise pH, chlorine disinfects, and carbon treats taste and odor—those are different treatments.",
+      "distractorExplanations": {
+        "a": "Calcite neutralizers add calcium to raise pH; softeners remove calcium and magnesium, they do not add them.",
+        "c": "The brine tank holds salt to regenerate resin; a softener is not a chlorinator.",
+        "d": "Carbon filters adsorb taste, odor, and chlorine; ion exchange swaps hardness ions, not organics."
+      },
+      "difficulty": "medium"
+    },
+    "plumbing-journeyman-readiness-check-water-014": {
+      "prompt": "A journeyman is sizing the cold-water riser for a multi-bath dwelling. Which load method matches water-supply tables?",
+      "options": {
+        "a": "Add drainage fixture units from the DWV tables and pick the next steel size",
+        "b": "Run every branch at 2 inch so velocity and pressure loss never matter on the riser",
+        "c": "Convert fixtures to water-supply fixture units and size from the code charts",
+        "d": "Match the street-main diameter regardless of fixture count in the building"
+      },
+      "correctOptionId": "c",
+      "explanation": "Water distribution is sized from water-supply fixture units (WSFU) and the adopted Hunter-style charts, then checked for available pressure and velocity. Drainage fixture units size DWV, not the cold riser. Oversizing every branch or copying the street main ignores actual demand.",
+      "distractorExplanations": {
+        "a": "DFUs size drains and stacks; water piping uses WSFU because flow coincidence on supply is a different curve.",
+        "b": "Blind 2-inch branches waste material, drop velocity control, and still may starve distant fixtures if pressure is low.",
+        "d": "Street-main size is not the building load; a small house on a large main still sizes from WSFU and pressure."
+      },
+      "difficulty": "hard"
+    },
+    "plumbing-journeyman-readiness-check-water-015": {
+      "prompt": "Hotel showerheads are being replaced on a renovation. What is the federal maximum flow for a showerhead?",
+      "options": {
+        "a": "1.6 gallons per minute measured at 60 psi",
+        "b": "3.5 gallons per minute measured at 80 psi",
+        "c": "4.0 gallons per minute measured at 100 psi",
+        "d": "2.5 gallons per minute measured at 80 psi"
+      },
+      "correctOptionId": "d",
+      "explanation": "The Energy Policy Act cap for showerheads is 2.5 gpm at 80 psi. Some WaterSense or local rules go lower, but 2.5 gpm at 80 psi is the federal ceiling. 1.6 gpm is a toilet flush figure; 3.5 gpm is the old pre-1992 shower rate.",
+      "distractorExplanations": {
+        "a": "1.6 gallons is the federal toilet flush volume, not the showerhead flow cap of 2.5 gpm at 80 psi.",
+        "b": "3.5 gpm was common on older showerheads; EPAct 1992 cut the federal limit to 2.5 gpm at 80 psi.",
+        "c": "4.0 gpm at 100 psi is well above the federal showerhead limit of 2.5 gpm at 80 psi."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

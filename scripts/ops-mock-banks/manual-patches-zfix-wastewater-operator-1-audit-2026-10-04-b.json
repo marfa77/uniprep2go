@@ -1,0 +1,259 @@
+{
+  "wastewater-operator-1-readiness-check": {
+    "wastewater-operator-1-readiness-check-safety-016": {
+      "prompt": "An operator opens a wet-well hatch, smells rotten eggs, then loses the odor after a minute. What does that fading smell actually mean?",
+      "options": {
+        "a": "H2S is toxic only above 1,000 ppm, so a fading odor means the well is now safe",
+        "b": "H2S is heavier than air but is not flammable at typical sewer concentrations",
+        "c": "The nose remains a reliable alarm at IDLH levels if the operator waits a minute",
+        "d": "H2S is toxic and flammable, and high levels can paralyze the sense of smell"
+      },
+      "correctOptionId": "d",
+      "explanation": "Hydrogen sulfide is toxic at low ppm, immediately dangerous around 100 ppm, and flammable (LEL near 4%). Olfactory fatigue can wipe out the rotten-egg warning while the gas is still lethal, so atmosphere is judged with a meter, not the nose.",
+      "distractorExplanations": {
+        "a": "Harm starts far below 1,000 ppm; IDLH is about 100 ppm and sewers can exceed that, so fading odor is not a clearance.",
+        "b": "H2S is denser than air and also flammable, so it is both a toxic pocket hazard and an explosion hazard.",
+        "c": "Smell is lost by olfactory fatigue near dangerous concentrations; waiting makes the warning worse, not better."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-safety-017": {
+      "prompt": "A crew must drop into a lift-station wet well to pull a clogged submersible pump. How should they classify and control that entry?",
+      "options": {
+        "a": "Permit-required confined space: test, ventilate, attendant, and a rescue plan",
+        "b": "Routine once the hatch has stood open for ten minutes of natural ventilation",
+        "c": "One pre-entry four-gas snapshot is enough; no attendant is required outside",
+        "d": "Treat it as hot work only: a fire watch and extinguisher satisfy the permit"
+      },
+      "correctOptionId": "a",
+      "explanation": "Wet wells are permit-required confined spaces: limited entry, poor natural ventilation, and a real H2S/O2/LEL hazard. OSHA-style practice is atmospheric testing, ventilation, an attendant, and a rescue plan before anyone goes in.",
+      "distractorExplanations": {
+        "b": "Ten minutes of open-hatch venting does not reliably clear stratified H2S or restore oxygen; meters and a permit still apply.",
+        "c": "A single snapshot misses changing atmospheres; permit spaces need monitoring and an attendant stationed outside.",
+        "d": "Hot work is a separate permit. A wet well still needs confined-space atmosphere control and rescue, even if no torch is used."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-safety-018": {
+      "prompt": "In a covered digester-gas piping gallery, the portable meter’s combustible channel climbs toward 10% LEL. What is that sensor actually warning about?",
+      "options": {
+        "a": "Oxygen deficiency that a dedicated O2 channel is not designed to detect",
+        "b": "Flammable methane approaching the lower explosive limit before a spark or entry",
+        "c": "Hydrogen sulfide toxicity in parts per million on the combustible channel",
+        "d": "Digester gas production rate in cubic feet per day for process control"
+      },
+      "correctOptionId": "b",
+      "explanation": "The combustible (%LEL) sensor tracks flammable gas—typically methane in digester galleries—so crews can stop ignition sources and leave before the mixture reaches the explosive range. It is not a process gas-flow meter or a toxic-ppm channel.",
+      "distractorExplanations": {
+        "a": "Oxygen is read on a separate O2 sensor; the combustible channel reports %LEL of fuel gas, not oxygen displacement.",
+        "c": "H2S toxicity is a ppm toxic sensor. A combustible cell reading %LEL of methane does not quantify H2S dose.",
+        "d": "Gas production is a process flow measurement. A portable LEL meter does not report cubic feet per day."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-safety-019": {
+      "prompt": "The chlorine-gas detector alarms at the ton-container room while an operator is on rounds. What is the first correct action?",
+      "options": {
+        "a": "Enter at once with a half-face cartridge respirator to close the container valve",
+        "b": "Wait until the odor fades, then walk in without respiratory protection",
+        "c": "Evacuate upwind, keep others out, and call SCBA-trained responders per the ERP",
+        "d": "Spray plant water into the ton-container valve so residual chlorine dissolves"
+      },
+      "correctOptionId": "c",
+      "explanation": "Chlorine gas is immediately dangerous. Untrained staff evacuate upwind, deny entry, and activate the emergency response plan so people with SCBA and leak kits handle isolation. Cartridge respirators, odor, and water on a valve are not a first-step leak stop.",
+      "distractorExplanations": {
+        "a": "A half-face cartridge is not adequate for an unknown Cl2 release; entry waits for SCBA-trained responders.",
+        "b": "Fading odor can mean olfactory overload or a shifting plume, not a safe room; do not re-enter unprotected.",
+        "d": "Water into a container valve can worsen a leak and is not the first action; evacuate and follow the ERP."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-safety-020": {
+      "prompt": "Rags are jammed in a screw-press auger that can still start from the MCC or a local jog button. Before reaching into the flight, the operator must:",
+      "options": {
+        "a": "Post an out-of-service note on the whiteboard and start pulling rags by hand",
+        "b": "Jog the press from the local station to confirm it is empty, then reach in",
+        "c": "Skip LOTO because wastewater dewatering equipment is exempt from energy-isolation rules",
+        "d": "Isolate energy sources and apply a personal lock before reaching into the flight"
+      },
+      "correctOptionId": "d",
+      "explanation": "LOTO applies to any machine that can store or receive energy, including screw presses and clarifier drives. Isolate electrical (and hydraulic if present) energy, lock with a personal lock, and verify zero energy before hands go near the auger.",
+      "distractorExplanations": {
+        "a": "A whiteboard note does not prevent a remote start. Energy isolation and a personal lock are required.",
+        "b": "Jogging proves the machine can still move; it is the opposite of a zero-energy check before reaching in.",
+        "c": "Wastewater rotating equipment is not exempt from OSHA LOTO; dewatering presses are a classic entanglement source."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-safety-021": {
+      "prompt": "An operator walks a secondary clarifier bridge to scrape weirs and sample the effluent launder. Why is fall protection required on that walk?",
+      "options": {
+        "a": "Open water and moving collectors can drown or entangle a person who slips",
+        "b": "OSHA general industry triggers fall protection only above a 10-foot drop",
+        "c": "Bridge railings exist mainly to keep dropped tools from damaging the drive",
+        "d": "Clarifier water is typically shallow enough that a fall is only a wading event"
+      },
+      "correctOptionId": "a",
+      "explanation": "Clarifier bridges sit over deep tanks with sludge and rotating collectors. A slip can drown or entangle someone even when the walkway looks like a sidewalk, so rails, gates, and PFAS discipline are required.",
+      "distractorExplanations": {
+        "b": "General-industry walking-working surfaces trigger at 4 feet, and drowning risk over open tanks exists below any 10-foot myth.",
+        "c": "Guardrails and fall systems protect people, not the drive gearbox, from a fall into the tank.",
+        "d": "Secondary clarifiers are often 10–16 feet deep with sludge; a fall is a drowning and entanglement emergency, not wading."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-safety-022": {
+      "prompt": "Before a collection-system manhole entry, the four-gas meter reads 16.2% oxygen. What most often causes that oxygen-deficient atmosphere?",
+      "options": {
+        "a": "Residual chlorine from plant disinfection consuming oxygen in the collection system",
+        "b": "Microbial demand and displacement by sewer gases such as methane or carbon dioxide",
+        "c": "Lower oxygen percentage simply because the manhole shaft is several feet below grade",
+        "d": "Overnight lid removal letting oxygen drain out of the shaft like a liquid"
+      },
+      "correctOptionId": "b",
+      "explanation": "Sewers go oxygen-deficient when microbes consume O2 and when methane, CO2, or other gases displace air. That is why operators test at several depths before entry rather than assuming outdoor air continues underground.",
+      "distractorExplanations": {
+        "a": "Collection systems carry little free chlorine; oxygen loss is biological demand and gas displacement, not Cl2 residual.",
+        "c": "Depth does not change the 20.9% oxygen fraction of air; deficiency comes from consumption and displacement inside the sewer.",
+        "d": "An open cover increases air exchange. Deficiency develops in poorly ventilated, biologically active spaces, not from oxygen pouring out."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-safety-023": {
+      "prompt": "UV lamp sleeves in the disinfection channel need wiping. Which service method protects the operator from UV-C and shock?",
+      "options": {
+        "a": "Leave lamps energized so output can be judged by looking directly at the arc",
+        "b": "Flip the local panel switch and wear ordinary safety glasses as the only PPE",
+        "c": "Lock out electrical energy and wear UV-rated eye and skin protection for the job",
+        "d": "Drain the channel but leave the lamps on so waste heat dries the quartz sleeves faster"
+      },
+      "correctOptionId": "c",
+      "explanation": "UV-C burns eyes and skin, and the racks carry line voltage. Isolate and lock out the electrical supply, then use UV-rated eye and skin protection in case of residual lamps or adjacent banks. Looking at an arc or a switch-without-lock is not service.",
+      "distractorExplanations": {
+        "a": "Viewing an energized UV arc can cause photokeratitis and skin burns; output is checked with instruments after isolation.",
+        "b": "A switch without a lock can be re-energized by someone else, and ordinary glasses may not block UV-C.",
+        "d": "Running lamps out of water overheats the lamps and exposes staff to UV; they must be de-energized for dry service."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-safety-024": {
+      "prompt": "Overnight, a thick floating blanket appears on the anaerobic digester. What is the safe operations response?",
+      "options": {
+        "a": "Treat it as normal mixing and continue walking the floating cover on rounds",
+        "b": "Assume gas production has stopped, so the cover can be opened for a look",
+        "c": "Stop the mixers and add cold plant water immediately to collapse the foam layer",
+        "d": "Treat it as foaming or upset: stay off the cover and follow the plant SOP"
+      },
+      "correctOptionId": "d",
+      "explanation": "A sudden blanket often means foaming or a process upset. Floating covers become slick, gassy fall hazards. Operators stay off the cover, keep ignition sources away, and follow the plant SOP rather than improvising mixer or water changes from the deck.",
+      "distractorExplanations": {
+        "a": "A sudden blanket is not normal mixing; walking a foaming cover risks H2S/methane exposure and a fall.",
+        "b": "Gas may still be present. Opening a cover can mix methane with air into the explosive range.",
+        "c": "Killing mixers can worsen scum and stratification; cold-water dumps are not a default from the cover without the SOP."
+      },
+      "difficulty": "hard"
+    },
+    "wastewater-operator-1-readiness-check-safety-025": {
+      "prompt": "Which wastewater-plant locations typically require hearing protection under an OSHA noise program?",
+      "options": {
+        "a": "Blower rooms, large pumps, and generators that exceed the plant noise policy",
+        "b": "The process lab fume hood and autoclave during routine BOD sample setup",
+        "c": "Blowers only when instantaneous noise exceeds 115 dBA at some point in the shift",
+        "d": "Outdoor clarifier walkways, mainly on windy days over open water surfaces"
+      },
+      "correctOptionId": "a",
+      "explanation": "Positive-displacement blowers, large pumps, and standby generators routinely exceed the 85 dBA 8-hour action level. Plants post those rooms and require hearing protection there; lab hoods and open clarifiers are not the typical high-noise sources.",
+      "distractorExplanations": {
+        "b": "Lab equipment is usually well below 85 dBA TWA; hearing conservation is driven by mechanical rooms, not BOD setup.",
+        "c": "115 dBA is a ceiling/impact concern, not the hearing-protection trigger; the action level is 85 dBA TWA, and pumps count too.",
+        "d": "Open tanks are not high-noise sources. Enclosed blower and pump rooms are."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-safety-026": {
+      "prompt": "Sodium hypochlorite splashes into an operator’s eyes at the chemical-feed pumps. What is the correct immediate care?",
+      "options": {
+        "a": "Neutralize residual hypochlorite with a weak acid rinse, then read the SDS",
+        "b": "Use the eyewash for at least 15 minutes and follow the SDS first-aid steps",
+        "c": "Rinse for about two minutes, then return to the round if vision seems clear",
+        "d": "Wipe the face dry with a rag before water so the chemical does not spread"
+      },
+      "correctOptionId": "b",
+      "explanation": "Corrosive splashes are flushed at the eyewash or safety shower for at least 15 minutes, then SDS-directed medical follow-up. Do not neutralize chemicals on tissue; acid plus hypochlorite can release chlorine gas.",
+      "distractorExplanations": {
+        "a": "Neutralizing on the eye with acid can burn further and can generate chlorine gas from hypochlorite.",
+        "c": "Two minutes is too short; chemical eye exposures need a long flush (typically 15 minutes) before assuming vision is fine.",
+        "d": "Wiping delays dilution and smears the chemical; start water immediately at the eyewash."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-safety-027": {
+      "prompt": "A collection crew opens a manhole in a residential street to jet a grease blockage. What traffic control is required?",
+      "options": {
+        "a": "Optional if the stop is expected to last under fifteen minutes on a quiet street",
+        "b": "Satisfied by parking the vactor over the hole with four-way flashers and a cone",
+        "c": "Required work-zone control so traffic cannot strike the crew or the open hole",
+        "d": "Required on state highways only, not on low-speed residential neighborhood streets"
+      },
+      "correctOptionId": "c",
+      "explanation": "An open manhole is a work zone on a public way. MUTCD temporary traffic control (signs, cones, vehicle positioning, flaggers as needed) protects the public and the crew from struck-by incidents on residential streets as well as highways.",
+      "distractorExplanations": {
+        "a": "Short-duration work still needs traffic control; struck-by events happen in seconds, not after a 15-minute threshold.",
+        "b": "Flashers and one cone are not a work-zone setup; advance warning and a taper or shadow vehicle are still required.",
+        "d": "Residential streets still have traffic. Control applies wherever vehicles can hit the hole or the crew."
+      },
+      "difficulty": "easy"
+    },
+    "wastewater-operator-1-readiness-check-safety-028": {
+      "prompt": "While standing at an open wet-well hatch, an operator becomes dizzy and nauseated. What should they do first?",
+      "options": {
+        "a": "Put on an N95 dust mask and finish checking the floats as quickly as possible anyway",
+        "b": "Sit on the hatch rim until the dizziness passes, then climb into the well",
+        "c": "Recheck the four-gas meter and continue if the display still looks normal",
+        "d": "Move to fresh air immediately and treat the symptoms as an atmospheric emergency"
+      },
+      "correctOptionId": "d",
+      "explanation": "Dizziness over a wet well is treated as H2S or oxygen deficiency until proven otherwise. Leave to fresh air, keep others away, and start emergency procedures. Symptoms override a reassuring meter; the sensor may be slow, placed wrong, or failed.",
+      "distractorExplanations": {
+        "a": "An N95 does not protect against H2S or low oxygen; finishing the task continues the exposure.",
+        "b": "Sitting at the opening keeps the operator in the plume; move to fresh air rather than waiting it out.",
+        "c": "A normal display does not cancel symptoms; leave first, then investigate meter placement and calibration."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-safety-029": {
+      "prompt": "Bulk 12.5% sodium hypochlorite for effluent disinfection should be stored how, relative to other chemicals?",
+      "options": {
+        "a": "In compatible vented tanks, segregated from acids that would release chlorine gas",
+        "b": "Beside bulk mineral acid so a spill can be neutralized in place without delay",
+        "c": "In unvented carbon-steel drums in a warm mechanical room to slow chemical decomposition",
+        "d": "Next to aqueous ammonia so the two can be combined later for chloramination"
+      },
+      "correctOptionId": "a",
+      "explanation": "Hypochlorite plus acid releases chlorine gas. Store it in compatible (often lined or poly) vented tanks, cool, and separated from acids and ammonia. Heat and steel accelerate decomposition and leaks; mixing with ammonia makes chloramines.",
+      "distractorExplanations": {
+        "b": "Storing acid next to hypo for “neutralization” is a Cl2-release recipe; spills are contained and kept apart, not mixed.",
+        "c": "Heat speeds decomposition and off-gassing; unvented steel drums corrode and can over-pressure.",
+        "d": "Ammonia plus hypochlorite forms toxic chloramine gases; those bulk chemicals must be segregated."
+      },
+      "difficulty": "medium"
+    },
+    "wastewater-operator-1-readiness-check-safety-030": {
+      "prompt": "A portable bypass pump is set for a force-main repair beside a creek. Besides capacity, what does the setup need?",
+      "options": {
+        "a": "An unrestricted discharge to the nearest storm inlet to empty the main quickly",
+        "b": "Secondary containment and a sewage-spill plan for hose or coupling failure",
+        "c": "No plugs or hoses because gravity in the trench will keep sewage from escaping",
+        "d": "A potable-water flush hookup with no backflow preventer on the connection"
+      },
+      "correctOptionId": "b",
+      "explanation": "Bypass pumping still handles raw sewage. Hoses and couplings fail, so the job needs containment, spill response, and a legal discharge path back to the collection system or plant—not a shortcut to stormwater or a potable cross-connection.",
+      "distractorExplanations": {
+        "a": "Dumping to a storm inlet is an SSO/illegal discharge to waters, not a repair shortcut.",
+        "c": "Force mains are pressurized. Gravity in an open trench will not contain sewage; plugs, hoses, and pumps are required.",
+        "d": "A potable hookup without backflow protection contaminates drinking water; sewage and potable lines stay separated."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

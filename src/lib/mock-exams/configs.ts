@@ -661,15 +661,15 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Readiness check sampled across the three GMAT sections (Quant, Verbal, Data Insights) with equal section weights on the official 205–805 exam. Not a full GMAC practice test.",
+      "Readiness check sampled across the three current GMAT sections (Quant 21, Verbal 23, Data Insights 20 on the official 64-question / 2h15 / 205–805 exam). SuperScore (best sections across attempts) has been live on Official Score Reports since 12 August 2026. Not a GMAC practice test and not adaptive.",
     disclaimer: gmatDisclaimer,
     description:
-      "A 45-question GMAT Focus readiness diagnostic with equal section scoring, pacing feedback, and full answer review. Independent prep aligned to GMAC section types.",
+      "A 45-question GMAT readiness diagnostic (current 2026 exam: Quant, Verbal, Data Insights) with equal section scoring, pacing feedback, and full answer review. Independent prep — not GMAC material.",
     examBody: "GMAC",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-10-04",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the GMAT Focus Edition readiness check (134 Quant, 133 Verbal, 133 Data Insights in the Anki bank; 45-question timed session).",
-    ankiDeckCardCount: 400,
+      "Original UniPrep2Go questions rewritten October 2026 for the current GMAT Exam (67 Quant + 67 Verbal + 66 Data Insights unique cards; 45-question timed session). No Sentence Correction, no Quant geometry, Data Sufficiency only in Data Insights.",
+    ankiDeckCardCount: 200,
   },
   {
     slug: "sat-readiness-check",
@@ -714,9 +714,9 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 49-question Digital SAT readiness diagnostic scored on the two official axes — Reading and Writing and Math — with pacing feedback and full answer review. Independent prep aligned to College Board section types.",
     examBody: "College Board",
-    lastUpdated: "2026-10-02",
+    lastUpdated: "2026-10-04",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the Digital SAT readiness check (88 Reading and Writing + 72 Math in the Anki bank; 49-question timed session).",
+      "Original UniPrep2Go questions authored for the Digital SAT readiness check (88 Reading and Writing + 72 Math unique cards in the live Anki bank; 49-question timed session). The matching Digital SAT Anki deck is a live $11 Gumroad .apkg, not a waitlist product.",
     ankiDeckCardCount: 160,
   },
   {
@@ -817,9 +817,9 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 30-question GRE General readiness diagnostic scored on the two official MCQ axes — Verbal Reasoning and Quantitative Reasoning — with pacing feedback and full answer review. Independent prep aligned to ETS section types.",
     examBody: "ETS",
-    lastUpdated: "2026-09-03",
+    lastUpdated: "2026-10-04",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the GRE General readiness check (175 Verbal + 175 Quant in the Anki bank; 30-question timed session).",
+      "Original UniPrep2Go questions rewritten 2026-10-04 for the GRE General readiness check (175 Verbal + 175 Quant in the Anki bank; 30-question timed session).",
     ankiDeckCardCount: 350,
   },
   {

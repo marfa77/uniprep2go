@@ -1,0 +1,259 @@
+{
+  "ascp-mlt-readiness-check": {
+    "ascp-mlt-readiness-check-hematology-031": {
+      "prompt": "An adult CBC flags “blasts” while the WBC is 8.2 × 10^9/L, inside the reference interval. The SOP holds blast flags for morphology. What should the MLT do?",
+      "options": {
+        "a": "Auto-release because a normal WBC means circulating blasts are unlikely",
+        "b": "Rerun the same EDTA tube until the instrument blast flag disappears",
+        "c": "Hold the CBC for smear review; do not auto-release a blast flag",
+        "d": "Replace the count with a hemocytometer WBC and skip smear review"
+      },
+      "correctOptionId": "c",
+      "explanation": "A blast flag is a morphology hold, not a count problem. Blasts can circulate with a normal WBC, so auto-release is unsafe. The MLT makes a stained smear (and path review per SOP) rather than rerunning the analyzer or substituting a chamber count that does not identify cell type.",
+      "distractorExplanations": {
+        "a": "Confuses a normal WBC with absence of blasts; aleukemic or early leukemia can flag at a normal count.",
+        "b": "Rerunning may persist or clear a flag without proving cell identity; morphology still has to be reviewed.",
+        "d": "A hemocytometer verifies number, not blast versus lymphocyte; smear review is still required."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-hematology-032": {
+      "prompt": "A workup CBC shows hemoglobin 9.1 g/dL and MCV 118 fL. Using red-cell indices, which anemia category should the MLT support first?",
+      "options": {
+        "a": "Macrocytic anemia (B12/folate, liver disease, or marrow failure)",
+        "b": "Microcytic anemia from iron deficiency or thalassemia trait",
+        "c": "Typical anemia of chronic inflammation with a normal MCV",
+        "d": "Acute hemorrhage that has already produced microcytic indices"
+      },
+      "correctOptionId": "a",
+      "explanation": "MCV classifies anemia before iron studies are back. An MCV of 118 fL is macrocytic and points toward B12/folate deficiency, liver disease, alcohol, or marrow failure—not iron deficiency or thalassemia, which lower MCV. Chronic inflammation and acute bleeding are usually normocytic until iron is depleted later.",
+      "distractorExplanations": {
+        "b": "Iron deficiency and thalassemia trait produce a low MCV (microcytic), the opposite of 118 fL.",
+        "c": "Anemia of chronic inflammation is typically normocytic (sometimes microcytic), not frankly macrocytic.",
+        "d": "Acute blood loss is normocytic; microcytosis appears only after iron stores are later depleted."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-hematology-033": {
+      "prompt": "An EDTA CBC reports platelets 42 × 10^9/L. The patient is not bleeding, and the smear shows large platelet clumps. What is the appropriate next step?",
+      "options": {
+        "a": "Release the low platelet count as true thrombocytopenia",
+        "b": "Recollect in sodium citrate and recount platelets per SOP",
+        "c": "Recollect in a heparin tube to dissolve EDTA-dependent clumps",
+        "d": "Recollect for hemoglobin because clumps trap circulating red cells"
+      },
+      "correctOptionId": "b",
+      "explanation": "EDTA can cause in-vitro platelet clumping (pseudothrombocytopenia). Clumps are not counted as single platelets, so the reported count is falsely low. The usual fix is a sodium citrate recollection (with a citrate correction factor per SOP) and smear confirmation—not a heparin tube and not treating the EDTA count as real ITP.",
+      "distractorExplanations": {
+        "a": "A clumped smear means the count is falsely decreased; releasing it as true ITP misleads the clinician.",
+        "c": "Heparin also promotes platelet clumping; citrate, not heparin, is the usual recollection anticoagulant.",
+        "d": "Platelet clumps do not lower hemoglobin; they may falsely raise the WBC if counted as leukocytes."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-hematology-034": {
+      "prompt": "A clinician asks whether a Westergren ESR of 62 mm/h by itself diagnoses bacterial sepsis. What should the MLT communicate?",
+      "options": {
+        "a": "Treat the ESR as a specific marker of bacterial bloodstream infection",
+        "b": "Expect ESR to fall in inflammation, so a high value rules sepsis out",
+        "c": "Use the ESR alone as the confirmatory test for multiple myeloma",
+        "d": "Treat ESR as a nonspecific inflammation marker, not a diagnosis"
+      },
+      "correctOptionId": "d",
+      "explanation": "ESR rises with fibrinogen, globulins, and anemia; it is a nonspecific marker of inflammation or tissue injury. It does not identify a bacterium, prove myeloma, or replace cultures, imaging, or protein electrophoresis. MLTs report the value with that limitation rather than treating it as a disease-specific result.",
+      "distractorExplanations": {
+        "a": "ESR is not organism-specific; CRP or procalcitonin are closer infection adjuncts, and cultures still diagnose sepsis.",
+        "b": "ESR rises, not falls, with inflammation and anemia because red cells sediment faster (rouleaux).",
+        "c": "Myeloma can raise ESR, but diagnosis needs SPEP/IFE and marrow, not an ESR in isolation."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-hematology-035": {
+      "prompt": "A febrile traveler has a malaria order received at 0800. Which smear strategy matches routine MLT practice for detection?",
+      "options": {
+        "a": "One thin Wright film only, called negative after a single scan",
+        "b": "One paired thick and thin set, then stop if that set is negative",
+        "c": "Thick plus thin Giemsa films, repeated on a timed schedule if needed",
+        "d": "A single buffy-coat Wright stain instead of thick and thin films"
+      },
+      "correctOptionId": "c",
+      "explanation": "Malaria workup uses a thick film for sensitivity and a thin film for species morphology, usually Giemsa-stained. A single negative set does not exclude cyclical parasitemia, so smears are repeated (commonly every 12–24 hours for up to three collections) per SOP. A casual Wright glance or buffy-coat shortcut is not the standard method.",
+      "distractorExplanations": {
+        "a": "Thin films alone miss low parasitemia; thick films increase detection sensitivity.",
+        "b": "One negative pair can miss cycling parasites; serial timed collections are still indicated.",
+        "d": "Buffy-coat preparations are not the standard malaria method; thick and thin Giemsa films are."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-hematology-036": {
+      "prompt": "A CBC prints RBC 4.80 × 10^12/L, hemoglobin 9.0 g/dL, and hematocrit 42%. The rule of 3 is violated. What should the MLT do first?",
+      "options": {
+        "a": "Hold the CBC and investigate the hemoglobin–hematocrit mismatch",
+        "b": "Auto-release because each printed number sits near an adult range",
+        "c": "Recalculate MCV from hematocrit alone and ignore the hemoglobin",
+        "d": "Delete hemoglobin from the report and send hematocrit by itself"
+      },
+      "correctOptionId": "a",
+      "explanation": "Rule of 3 checks internal consistency: hemoglobin × 3 should approximate hematocrit (9 × 3 = 27, not 42), and RBC × 3 should approximate hemoglobin. A mismatch flags lipemia, hemolysis, clotting, cold agglutinin, or a mixed/wrong specimen. The MLT holds the run and troubleshoots rather than auto-releasing discordant indices.",
+      "distractorExplanations": {
+        "b": "Values can look “in range” individually while still being internally inconsistent; the mismatch is the hold.",
+        "c": "MCV is not a substitute for resolving a hemoglobin–hematocrit discrepancy on the same specimen.",
+        "d": "Dropping one parameter hides the error; the specimen needs investigation or recollection."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-hematology-037": {
+      "prompt": "A patient on warfarin has a prolonged PT/INR and a normal aPTT. Which coagulation-pathway statement is correct for the MLT bench?",
+      "options": {
+        "a": "aPTT is the warfarin monitor because it tests the extrinsic pathway",
+        "b": "PT/INR reflects the extrinsic pathway used to monitor warfarin",
+        "c": "PT/INR is the first-line monitor for unfractionated heparin infusions",
+        "d": "A normal aPTT proves factor VIII and IX can never be deficient"
+      },
+      "correctOptionId": "b",
+      "explanation": "PT (reported as INR) screens the extrinsic and common pathways (VII, X, V, II, fibrinogen) and is the standard monitor for vitamin K antagonists such as warfarin. aPTT screens the intrinsic pathway (XII, XI, IX, VIII) and is used for unfractionated heparin and for hemophilia screening. Swapping those assignments is a classic MLT error.",
+      "distractorExplanations": {
+        "a": "Reverses the pathways: aPTT is intrinsic (heparin/VIII/IX); PT/INR is extrinsic (warfarin).",
+        "c": "Unfractionated heparin is monitored with aPTT or anti-Xa, not with PT/INR.",
+        "d": "A normal aPTT today does not exclude later factor VIII/IX deficiency; it only reflects this specimen."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-hematology-038": {
+      "prompt": "A prolonged aPTT fully corrects into the reference interval after a 1:1 mix with pooled normal plasma, and the mix stays corrected after incubation. What does this support?",
+      "options": {
+        "a": "A lupus anticoagulant that mixing studies cannot overcome",
+        "b": "A specific factor VIII inhibitor that fails to correct on mix",
+        "c": "Heparin contamination that remains abnormal after mixing",
+        "d": "A factor deficiency whose aPTT corrects with normal plasma"
+      },
+      "correctOptionId": "d",
+      "explanation": "Mixing studies distinguish deficiency from inhibitor. Pooled normal plasma supplies missing factors, so a deficiency aPTT corrects. Inhibitors (including many lupus anticoagulants and factor VIII inhibitors) keep the mix prolonged, sometimes after incubation. Immediate, complete, stable correction therefore supports a factor deficiency rather than an inhibitor.",
+      "distractorExplanations": {
+        "a": "Lupus anticoagulants typically do not fully correct on a 1:1 mix; they act as inhibitors.",
+        "b": "Factor VIII inhibitors usually fail to correct, especially after incubation; this mix corrected.",
+        "c": "Heparin often keeps the mix prolonged (or needs a thrombin time/anti-Xa check); full correction argues against it."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-hematology-039": {
+      "prompt": "A septic adult has platelets 18 × 10^9/L, prolonged PT and aPTT, fibrinogen 80 mg/dL, a very high D-dimer, and schistocytes on the smear. Which pattern fits?",
+      "options": {
+        "a": "Isolated ITP with otherwise normal coagulation screening tests",
+        "b": "Hemophilia A with a normal platelet count and normal fibrinogen",
+        "c": "DIC consuming platelets and clotting factors, with fibrin split",
+        "d": "Classic TTP that leaves PT, aPTT, and fibrinogen fully normal"
+      },
+      "correctOptionId": "c",
+      "explanation": "DIC consumes platelets and clotting factors, so thrombocytopenia comes with prolonged PT/aPTT, low fibrinogen, elevated D-dimer/FDPs, and often schistocytes in a septic or obstetric setting. ITP is isolated thrombocytopenia with normal coag screens. TTP is a microangiopathy with a typically normal PT/aPTT/fibrinogen. Hemophilia does not drop platelets or fibrinogen this way.",
+      "distractorExplanations": {
+        "a": "ITP is isolated low platelets; PT, aPTT, fibrinogen, and D-dimer stay normal, unlike this panel.",
+        "b": "Hemophilia A prolongs aPTT with a normal platelet count and fibrinogen; this patient has both consumed.",
+        "d": "TTP usually has a normal PT/aPTT/fibrinogen; the coagulopathy here points to DIC, not TTP."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-hematology-040": {
+      "prompt": "A preoperative sickle solubility test is positive. The surgeon asks whether that result by itself proves sickle cell disease rather than trait. Best MLT reply?",
+      "options": {
+        "a": "Solubility reaction strength grades disease versus trait without HPLC",
+        "b": "Solubility screens for HbS; electrophoresis or HPLC is needed to type",
+        "c": "A positive solubility confirms Hb C and other non-sickling variants",
+        "d": "Solubility is the preferred confirmatory method in high-HbF newborns"
+      },
+      "correctOptionId": "b",
+      "explanation": "Sickle solubility detects HbS (and a few rare sickling hemoglobins) but is positive in both sickle cell disease and sickle trait. It does not quantify HbS or separate genotypes. Hemoglobin electrophoresis or HPLC is required to type. High HbF in newborns can cause false negatives, so solubility is not used as a newborn confirmatory test.",
+      "distractorExplanations": {
+        "a": "Turbidity strength does not distinguish SS from AS; quantitative electrophoresis/HPLC is required.",
+        "c": "Hb C and most non-sickling variants are solubility-negative; they need electrophoresis or HPLC.",
+        "d": "High HbF can make solubility falsely negative in newborns; those screens use electrophoresis/HPLC."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-hematology-041": {
+      "prompt": "A differential shows 18% bands, toxic granulation, and Döhle bodies, with no blasts identified. The analyzer flagged immature granulocytes. How should the MLT report this?",
+      "options": {
+        "a": "Call the flagged cells blasts and start a leukemia workup hold",
+        "b": "Treat circulating bands as equivalent to myeloblasts on the smear",
+        "c": "Ignore the left shift because the total WBC is only mildly high",
+        "d": "Report a neutrophilic left shift; bands are not the same as blasts"
+      },
+      "correctOptionId": "d",
+      "explanation": "A left shift means increased bands (and sometimes metamyelocytes) in a reactive neutrophilia, often with toxic change in infection. Bands are mature-pathway neutrophils, not blasts. The MLT reports the left shift and toxic morphology; blast flags still get smear review, but bandemia alone is not an acute leukemia call.",
+      "distractorExplanations": {
+        "a": "Immature granulocyte flags often reflect bands/metas, not blasts; morphology decides the hold.",
+        "b": "Bands are not myeloblasts; swapping those terms overcalls leukemia on a reactive smear.",
+        "c": "A left shift with toxic change is clinically useful even when the WBC is only modestly elevated."
+      },
+      "difficulty": "medium"
+    },
+    "ascp-mlt-readiness-check-hematology-042": {
+      "prompt": "An adult with hemoglobin 7.8 g/dL has a corrected reticulocyte count of 0.4%. What does that production marker indicate?",
+      "options": {
+        "a": "The marrow is not mounting an adequate response to the anemia",
+        "b": "The MCV must be high because reticulocytes are larger red cells",
+        "c": "Ferritin is already depleted and iron stores are proven exhausted",
+        "d": "A rise in retics proves the hemolysis is IgG-mediated on DAT"
+      },
+      "correctOptionId": "a",
+      "explanation": "Reticulocyte count (or reticulocyte production index) asks whether the marrow is answering anemia. A low corrected retic in significant anemia means hypoproliferative marrow (iron/B12/folate deficiency, marrow failure, chronic disease)—not an adequate hemolytic or blood-loss response. MCV, ferritin, and DAT answer different questions and are not read from the retic alone.",
+      "distractorExplanations": {
+        "b": "MCV classifies cell size; a low retic does not assign macrocytosis even though retics are large.",
+        "c": "Iron stores are measured with ferritin (and iron studies), not inferred from a reticulocyte percentage.",
+        "d": "Immune hemolysis needs a DAT; retics rise in many hemolytic and recovery states, not only IgG."
+      },
+      "difficulty": "easy"
+    },
+    "ascp-mlt-readiness-check-hematology-043": {
+      "prompt": "An analyzer WBC is 18.0 × 10^9/L. The smear shows 50 nucleated RBCs per 100 WBCs. What should the MLT do with the leukocyte count?",
+      "options": {
+        "a": "Release 18.0 uncorrected because nRBCs are red cells, not leukocytes",
+        "b": "Double the WBC, since nRBCs inflate only the red-cell count on CBC",
+        "c": "Correct the WBC for nRBCs before reporting the leukocyte count",
+        "d": "Subtract 50 from 18.0 and report 17.5 as the nRBC-corrected WBC"
+      },
+      "correctOptionId": "c",
+      "explanation": "Most impedance counters include nRBC nuclei in the WBC. Corrected WBC = uncorrected WBC × 100 / (100 + nRBCs per 100 WBCs). Here that is 18.0 × 100 / 150 = 12.0 × 10^9/L. Releasing the raw 18.0 overstates leukocytes; subtracting 50 from 18.0 is not the formula.",
+      "distractorExplanations": {
+        "a": "nRBCs are counted in the WBC channel despite being red-cell nuclei; the WBC must be corrected.",
+        "b": "nRBCs falsely raise the WBC, not by doubling, and they are not a red-count inflation to “fix” that way.",
+        "d": "Subtracting 50 from 18.0 is arithmetic nonsense; the standard formula uses 100/(100+nRBC)."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-hematology-044": {
+      "prompt": "After primaquine, a patient has bite and blister cells on Wright stain. Heinz bodies are seen only with a supravital stain. Which MLT interpretation is most appropriate?",
+      "options": {
+        "a": "Diagnose PNH from the Heinz-body preparation without other tests",
+        "b": "Suspect G6PD-related oxidative injury; Wright stain misses Heinz bodies",
+        "c": "Report hereditary spherocytosis because bite cells equal spherocytes",
+        "d": "Call the inclusions Howell-Jolly bodies already visible on Wright stain"
+      },
+      "correctOptionId": "b",
+      "explanation": "Oxidative injury (classically G6PD deficiency after primaquine, sulfa, or infection) produces Heinz bodies that require a supravital stain (crystal violet or brilliant cresyl blue). Wright stain shows bite/blister cells after splenic pitting, not the Heinz inclusions themselves. Do not confuse them with Howell-Jolly bodies, HS spherocytes, or PNH. G6PD enzyme assays during acute hemolysis can be falsely normal because older deficient cells are already lysed.",
+      "distractorExplanations": {
+        "a": "PNH is a complement-lysis disorder diagnosed by flow cytometry, not by Heinz-body stain.",
+        "c": "Bite/blister cells are oxidative pitting, not the spherocytes of hereditary spherocytosis.",
+        "d": "Howell-Jolly bodies are Wright-visible DNA remnants; Heinz bodies are denatured hemoglobin needing a supravital stain."
+      },
+      "difficulty": "hard"
+    },
+    "ascp-mlt-readiness-check-hematology-045": {
+      "prompt": "A light-blue citrate tube for PT and aPTT is filled only to about half the fill line. If the specimen is analyzed anyway, what happens?",
+      "options": {
+        "a": "The short draw falsely shortens both the PT and the aPTT",
+        "b": "PT remains valid, but aPTT falls because plasma volume is lower",
+        "c": "Results stay accurate if the short tube is inverted twenty times",
+        "d": "Excess citrate falsely prolongs PT and aPTT; reject the short draw"
+      },
+      "correctOptionId": "d",
+      "explanation": "Citrate tubes must be filled to the stated volume so the blood-to-anticoagulant ratio stays about 9:1. A short draw leaves excess citrate, which binds assay calcium and falsely prolongs PT and aPTT. Mixing cannot fix underfilling. The MLT rejects and recollects rather than reporting spuriously high coag times.",
+      "distractorExplanations": {
+        "a": "Reverses the error: underfilling prolongs, not shortens, PT and aPTT via excess citrate.",
+        "b": "Both PT and aPTT are affected; a short draw is not a PT-only valid specimen.",
+        "c": "Inversion mixes anticoagulant but cannot correct an incorrect blood-to-citrate ratio."
+      },
+      "difficulty": "easy"
+    }
+  }
+}

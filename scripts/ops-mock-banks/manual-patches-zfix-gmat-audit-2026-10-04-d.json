@@ -1,0 +1,1192 @@
+{
+  "gmat-focus-readiness-check": {
+    "gmat-focus-readiness-check-031": {
+      "prompt": "What is the value of 4n − 1? Statement (1): n = 6. Statement (2): n is a positive even integer less than 20.",
+      "options": {
+        "a": "Statement (1) alone is sufficient, but statement (2) is not.",
+        "b": "Statement (2) alone is sufficient, but statement (1) is not.",
+        "c": "Both together are sufficient, but neither statement is alone.",
+        "d": "Even combined, the two statements do not settle the question."
+      },
+      "correctOptionId": "a",
+      "explanation": "Statement (1) pins n at 6, so 4n − 1 equals 23 with no other possibility. Statement (2) still allows n = 2, 4, 8, …, 18, each giving a different value of 4n − 1, so it cannot name a unique number on its own.",
+      "distractorExplanations": {
+        "b": "Statement (2) lists many even integers below 20, not a single n, so 4n − 1 is not unique from (2) alone.",
+        "c": "Statement (1) already yields a unique value; pairing the statements is unnecessary.",
+        "d": "A unique value is available from statement (1) alone, so the pair is not jointly insufficient."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-032": {
+      "prompt": "Is real number u strictly negative? Statement (1): u² = 49. Statement (2): u³ = −343.",
+      "options": {
+        "a": "Statement (1) alone is sufficient, but statement (2) is not.",
+        "b": "Statement (2) alone is sufficient, but statement (1) is not.",
+        "c": "Both together are sufficient, but neither statement is alone.",
+        "d": "Even combined, the two statements do not settle the question."
+      },
+      "correctOptionId": "b",
+      "explanation": "Squares hide sign: u² = 49 allows u = 7 or u = −7, so (1) cannot answer whether u is negative. Cubes keep sign: the unique real cube root of −343 is u = −7, which answers the yes/no with a definite yes. A definite yes is sufficient, so (2) alone suffices.",
+      "distractorExplanations": {
+        "a": "u² = 49 is compatible with both +7 and −7, so (1) leaves the sign open.",
+        "c": "Statement (2) already answers the sign question; both statements are not required.",
+        "d": "The real cube root of −343 is unique and negative, so the question is settled by (2)."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-033": {
+      "prompt": "Is integer m a multiple of 12? Statement (1): m is a multiple of 4. Statement (2): m is a multiple of 6.",
+      "options": {
+        "a": "Statement (1) alone is sufficient, but statement (2) is not.",
+        "b": "Statement (2) alone is sufficient, but statement (1) is not.",
+        "c": "Both together are sufficient, but neither statement is alone.",
+        "d": "Even combined, the two statements do not settle the question."
+      },
+      "correctOptionId": "c",
+      "explanation": "Multiples of 4 include 4, 8, and 16, which are not all multiples of 12, so (1) is insufficient. Multiples of 6 include 6 and 18, not all multiples of 12, so (2) is insufficient. Together, m is a common multiple of 4 and 6, hence a multiple of lcm(4,6)=12, which answers yes.",
+      "distractorExplanations": {
+        "a": "Being a multiple of 4 does not force a factor of 3, so m need not be a multiple of 12.",
+        "b": "Being a multiple of 6 does not force a factor of 4; 18 is a counterexample.",
+        "d": "lcm(4,6)=12, so the two divisibility facts together do settle the question."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-034": {
+      "prompt": "What is the integer value of k? Statement (1): k is a prime number between 10 and 30. Statement (2): k is odd.",
+      "options": {
+        "a": "Statement (1) alone is sufficient, but statement (2) is not.",
+        "b": "Statement (2) alone is sufficient, but statement (1) is not.",
+        "c": "Both together are sufficient, but neither statement is alone.",
+        "d": "Even combined, the two statements do not settle the question."
+      },
+      "correctOptionId": "d",
+      "explanation": "Primes between 10 and 30 include 11, 13, 17, 19, 23, and 29. Statement (2) only notes oddness, which all of those primes already have. Even combined, several odd primes remain, so k is not unique.",
+      "distractorExplanations": {
+        "a": "Several primes sit between 10 and 30, so (1) does not name a unique k.",
+        "b": "Oddness alone allows infinitely many integers, not a unique k.",
+        "c": "Intersecting the two lists still leaves 11, 13, 17, 19, 23, and 29."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-035": {
+      "prompt": "If p and q are integers, is the product pq even? Statement (1): p is even. Statement (2): q is odd.",
+      "options": {
+        "a": "Statement (1) alone is sufficient, but statement (2) is not.",
+        "b": "Statement (2) alone is sufficient, but statement (1) is not.",
+        "c": "Both together are sufficient, but neither statement is alone.",
+        "d": "Even combined, the two statements do not settle the question."
+      },
+      "correctOptionId": "a",
+      "explanation": "An even integer times any integer is even, so (1) alone answers yes regardless of q. Statement (2) leaves p free: if p is even the product is even; if p is odd the product is odd. Only (1) is sufficient.",
+      "distractorExplanations": {
+        "b": "Knowing only that q is odd leaves p’s parity open, so pq may be even or odd.",
+        "c": "Statement (1) already settles the product’s parity; (2) is not needed.",
+        "d": "Because (1) alone answers the question, the pair is not jointly insufficient."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-036": {
+      "prompt": "A harbor weighed inbound recyclables in tons: glass 12, mixed paper 18, PET plastic 9, scrap metal 6. Which material is exactly 20% of the 45-ton total?",
+      "options": {
+        "a": "Glass, because 12 tons is a frequent inbound stream",
+        "b": "PET plastic, because 9 of 45 tons is exactly one-fifth",
+        "c": "Mixed paper, because it is the largest inbound tonnage",
+        "d": "Scrap metal, because six tons is the smallest inbound load"
+      },
+      "correctOptionId": "b",
+      "explanation": "The total is 12+18+9+6=45 tons. PET plastic is 9/45=0.20, so it is exactly one-fifth. Glass is 12/45≈26.7%, paper 40%, metal 13.3%. Share, not rank, is what the item asks.",
+      "distractorExplanations": {
+        "a": "Glass’s 12 tons is about 26.7% of 45, not 20%; stream frequency is not the share.",
+        "c": "Largest tonnage (paper at 40%) is not the 20% share requested.",
+        "d": "Smallest load (metal) is about 13.3% of the total, not 20%."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-037": {
+      "prompt": "Trail-mix labels list calories and protein per pouch: Cedar 210 kcal / 6 g; Pine 180 / 9; Maple 240 / 8; Birch 150 / 5. Which pouch has the most protein per 100 kcal?",
+      "options": {
+        "a": "Cedar, because 210 calories is a midrange pouch size",
+        "b": "Maple, because 8 grams is the second-highest protein",
+        "c": "Pine, because 9 g on 180 kcal is 5.0 g per 100 kcal",
+        "d": "Birch, because 150 calories is the lightest pouch listed"
+      },
+      "correctOptionId": "c",
+      "explanation": "Protein per 100 kcal: Cedar 6/2.10≈2.86; Pine 9/1.80=5.00; Maple 8/2.40≈3.33; Birch 5/1.50≈3.33. Pine is highest. Comparing raw grams or calories alone misses the density ratio.",
+      "distractorExplanations": {
+        "a": "Cedar’s calorie count does not make it densest; 6 g / 210 kcal is only about 2.86 per 100 kcal.",
+        "b": "Maple’s 8 g is not the top protein, and 8/240 kcal is about 3.33 per 100 kcal, below Pine.",
+        "d": "Lightest pouch is not densest; Birch is about 3.33 g per 100 kcal, below Pine."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-039": {
+      "prompt": "Four hospital units report headcount and mean annual pay: ICU 12 staff × $92k; Ward 40 × $58k; Lab 8 × $71k; Transport 15 × $44k. Which unit has the largest payroll?",
+      "options": {
+        "a": "ICU, because $92k is the highest mean pay among units",
+        "b": "Lab, because eight people is the smallest roster listed",
+        "c": "Transport, because fifteen staff sit near the median size",
+        "d": "Ward, because 40 × $58k is $2.32 million, topping the rest"
+      },
+      "correctOptionId": "d",
+      "explanation": "Payroll = headcount × mean pay: ICU 12×92k=$1.104M; Ward 40×58k=$2.32M; Lab 8×71k=$0.568M; Transport 15×44k=$0.66M. The Ward’s large roster outweighs its lower mean.",
+      "distractorExplanations": {
+        "a": "Highest mean pay (ICU) still yields only $1.104M, well below the Ward total.",
+        "b": "Smallest roster (Lab) produces the smallest payroll here, $0.568M.",
+        "c": "Transport’s 15 × $44k is $0.66M, far below the Ward’s $2.32M."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-040": {
+      "prompt": "A museum’s monthly web visits (thousands) were Jan 40, Feb 44, Mar 48, Apr 42, May 46. From January to March the series is linear. Which statement is accurate?",
+      "options": {
+        "a": "Visits rose 4,000 per month Jan–Mar, then fell 6,000 in April",
+        "b": "April traffic was the peak month in the five-month window",
+        "c": "May visits were 20% below the January starting count shown",
+        "d": "The five monthly readings sum to fewer than 200,000 visits"
+      },
+      "correctOptionId": "a",
+      "explanation": "Jan→Feb→Mar: 40, 44, 48 is a constant +4 (thousand) slope, i.e. +4,000 visits per month. April 42 is 6 thousand below March 48. May 46 is not the peak; the five months total 220 thousand.",
+      "distractorExplanations": {
+        "b": "April 42k is a dip, not the peak; March 48k is the highest reading.",
+        "c": "May 46k is above January 40k, not 20% below it.",
+        "d": "The five months total 220 thousand visits, which exceeds 200,000."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-041": {
+      "prompt": "A café logged complaint tickets by week: W1 8, W2 12, W3 10, W4 14. Relative to week 1, by what percent did week 4 tickets change?",
+      "options": {
+        "a": "A 50% increase, because 8 + 4 ticket counts as one-half",
+        "b": "A 75% increase, because 14 is 6 more than 8, and 6/8 = 0.75",
+        "c": "A 75% decrease, because tickets fell after the second week",
+        "d": "No net change, because weeks 2 and 3 average back to 8"
+      },
+      "correctOptionId": "b",
+      "explanation": "Percent change uses (new − old)/old. (14 − 8)/8 = 6/8 = 0.75, a 75% increase. A 50% rise from 8 would be +4 to 12, but week 4 is 14. Week 3’s dip does not reverse the W1-to-W4 comparison.",
+      "distractorExplanations": {
+        "a": "A 50% rise from 8 would be +4 to 12, but week 4 is 14, which is +6.",
+        "c": "Week 4 is higher than week 1, so the W1-to-W4 change is an increase.",
+        "d": "Weeks 2–3 averaging 11 does not cancel the rise from 8 to 14."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-042": {
+      "prompt": "A tutoring app’s monthly active users (thousands) were M1 20, M2 24, M3 30, M4 28, M5 35. Which two-part reading of growth is correct?",
+      "options": {
+        "a": "M1→M2 grew 20% and M4 was the five-month peak",
+        "b": "M2→M3 grew 10% and users never declined in any month",
+        "c": "M1→M2 grew 20% and M3→M4 was the only month-to-month drop",
+        "d": "M4→M5 grew 10% and the series is strictly increasing"
+      },
+      "correctOptionId": "c",
+      "explanation": "(24−20)/20=20% from M1 to M2. The only decline is 30→28 from M3 to M4. M5 35 is the peak. M2→M3 is (30−24)/24=25%, not 10%. M4→M5 is (35−28)/28=25%, not 10%.",
+      "distractorExplanations": {
+        "a": "The 20% M1→M2 rise is right, but M4 28k is not the peak; M5 is 35k.",
+        "b": "M2→M3 is a 25% rise, not 10%, and M3→M4 is a decline.",
+        "d": "M4→M5 is about 25%, not 10%, and M3→M4 breaks a strictly increasing path."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-043": {
+      "prompt": "Source A (bonus memo): “A year-end bonus is paid only if the employee’s year-end rating is at least 4.0 and paid overtime hours for the year exceed 40.” Source B (roster): Jordan rating 4.2, overtime 38; Riley 3.9, overtime 55; Avery 4.0, overtime 40; Quinn 4.5, overtime 41. Who is eligible under both rules as written?",
+      "options": {
+        "a": "Jordan, because a 4.2 rating clears the quality threshold",
+        "b": "Riley, because 55 overtime hours is the roster’s maximum",
+        "c": "Avery, because a 4.0 rating and 40 hours each meet a cutoff",
+        "d": "Quinn, because 4.5 exceeds 4.0 and 41 hours exceed 40"
+      },
+      "correctOptionId": "d",
+      "explanation": "The memo uses “at least 4.0” and “exceed 40.” Avery’s 40 hours do not exceed 40. Jordan’s 38 hours fail overtime. Riley’s 3.9 fails the rating. Only Quinn satisfies both: 4.5 ≥ 4.0 and 41 > 40.",
+      "distractorExplanations": {
+        "a": "Jordan’s rating is high enough, but 38 overtime hours do not exceed 40.",
+        "b": "Riley’s overtime is high, but a 3.9 rating is below the 4.0 floor.",
+        "c": "Avery’s 40 hours fail “exceed 40”; equality is not enough on that clause."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-044": {
+      "prompt": "Source 1 (fulfillment rule): “Free ground shipping if the merchandise subtotal is over $50; two-day shipping is $12 unless the subtotal is over $90, in which case two-day is $4.” Source 2 (cart): knit hat $18, field guide $28, rain cover $16. A shopper wants two-day delivery. What shipping charge applies?",
+      "options": {
+        "a": "Twelve dollars, because $62 is over $50 but not over $90",
+        "b": "Four dollars, because any three-item cart gets the $4 two-day rate",
+        "c": "Zero dollars, because a cart over $50 always ships two-day free",
+        "d": "Sixteen dollars, adding the $12 and $4 two-day figures together"
+      },
+      "correctOptionId": "a",
+      "explanation": "Subtotal 18+28+16=$62. Ground would be free (> $50), but the shopper chose two-day. Two-day is $12 unless the subtotal is over $90; $62 is not, so the charge is $12.",
+      "distractorExplanations": {
+        "b": "The $4 two-day rate requires a subtotal over $90, not merely three line items.",
+        "c": "Over-$50 free shipping is for ground only; two-day remains a paid option here.",
+        "d": "The $12 and $4 amounts are alternative rates, not fees to add together."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-045": {
+      "prompt": "Source 1: “Flight 811 leaves Harbor City at 09:15 and is wheels-down in Mesa at 11:05 same clock time (no zone change). Minimum connection is 40 minutes.” Source 2: “Flight 920, the only Mesa→Ridge afternoon option, boards at 11:30 and pushes at 11:50.” Can a passenger on 811 make 920 the same day?",
+      "options": {
+        "a": "Yes, because 11:05 to 11:50 is a 45-minute window on the clock",
+        "b": "No, because wheels-down at 11:05 leaves only 25 minutes before 11:30 boarding",
+        "c": "Yes, because same-clock cities ignore the 40-minute connection rule",
+        "d": "No, because Flight 920 is described as a morning departure from Mesa"
+      },
+      "correctOptionId": "b",
+      "explanation": "Arrival 11:05 versus board 11:30 is 25 minutes, short of the 40-minute minimum. Same local clocks do not waive the connection buffer. 11:50 push is afternoon, not morning.",
+      "distractorExplanations": {
+        "a": "The relevant cut is boarding at 11:30, not push at 11:50; 11:05→11:30 is 25 minutes.",
+        "c": "No zone change does not cancel the stated 40-minute minimum connection.",
+        "d": "Source 2 places 920 in the afternoon (11:50 push), not the morning."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-016": {
+      "prompt": "A ceramics kiln logs defect counts on 200-piece lots: glaze pits 14, hairline cracks 9, warping 5, stain 2. What share of all 30 defects is warping?",
+      "options": {
+        "a": "About 17%, taking 5 warped pieces out of the 200-piece lot",
+        "b": "9/30, treating hairline cracks as the warping category",
+        "c": "One-sixth, because 5 of the 30 defects are warping",
+        "d": "Two-thirds, because 14 + 9 + 5 is 28 of 30 defects"
+      },
+      "correctOptionId": "c",
+      "explanation": "Defects total 14+9+5+2=30. Warping is 5/30=1/6. The 200-piece lot size is the production base, not the defect denominator unless the question asks defect rate per piece.",
+      "distractorExplanations": {
+        "a": "5/200 is the lot defect rate for warping, not warping’s share of defects.",
+        "b": "Hairline cracks are 9/30; that category is not warping.",
+        "d": "14+9+5 mixes three defect types; that is not warping’s share."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-017": {
+      "prompt": "A ranger recorded five trail lengths in km but the notebook page is smudged. What is the median length? Statement (1): The longest trail is 15 km. Statement (2): The shortest trail is 7 km.",
+      "options": {
+        "a": "Statement (1) alone is sufficient, but statement (2) is not.",
+        "b": "Statement (2) alone is sufficient, but statement (1) is not.",
+        "c": "Both together are sufficient, but neither statement is alone.",
+        "d": "Even combined, the two statements do not settle the question."
+      },
+      "correctOptionId": "d",
+      "explanation": "For five numbers the median is the third when ordered. Statement (1) only caps the largest; statement (2) only floors the smallest. Even together, many triples can sit between 7 and 15, so the third value is not unique.",
+      "distractorExplanations": {
+        "a": "Knowing only the longest trail does not identify the ordered third length.",
+        "b": "Knowing only the shortest trail leaves every other length, including the median, open.",
+        "c": "A min of 7 and a max of 15 still allow many different middle values."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-018": {
+      "prompt": "Headcount by department: Sales 40, Ops 25, Finance 15, Design 20. Which department is 25% of the 100-person firm?",
+      "options": {
+        "a": "Ops, because 25 of 100 employees is exactly one-quarter",
+        "b": "Sales, because 40 people is the largest department listed",
+        "c": "Finance, because 15 people is the smallest department listed",
+        "d": "Design, because 20 people is one-fifth of the firm, called 25%"
+      },
+      "correctOptionId": "a",
+      "explanation": "Total 40+25+15+20=100. Ops 25/100=25%. Sales is 40%, Design 20%, Finance 15%. One-fifth is 20%, not 25%.",
+      "distractorExplanations": {
+        "b": "Largest share (Sales at 40%) is not the 25% share asked.",
+        "c": "Smallest share (Finance at 15%) is not 25%.",
+        "d": "Design is 20% (one-fifth), which is not 25%."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-019": {
+      "prompt": "A clinic’s annual visits (thousands) follow V(t)=3t+18 for t = years after 2020. Which pair is correct for 2022 (t=2) and the implied 2020 starting level?",
+      "options": {
+        "a": "2022 visits 24 thousand; 2020 starting level 3 thousand",
+        "b": "2022 visits 24 thousand; 2020 starting level 18 thousand",
+        "c": "2022 visits 21 thousand; 2020 starting level 18 thousand",
+        "d": "2022 visits 36 thousand; 2020 starting level 21 thousand"
+      },
+      "correctOptionId": "b",
+      "explanation": "V(2)=3(2)+18=24. The intercept V(0)=18 is the 2020 level. 3 is the annual slope in thousands, not the intercept. 3t+18 at t=2 is not 21 or 36.",
+      "distractorExplanations": {
+        "a": "24 thousand for 2022 is right, but 3 is the slope, not the 2020 intercept.",
+        "c": "18 thousand is the 2020 intercept, but V(2)=24, not 21.",
+        "d": "36 would be 18×2, which ignores the actual 3t+18 arithmetic."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-020": {
+      "prompt": "Bottles filled per hour: Line K 40, 36, 44, 40; Line L 38, 42, 41, 39. Which comparison of four-hour means is right?",
+      "options": {
+        "a": "Line K’s mean is 44, matching its best hour",
+        "b": "Line L’s mean is 38, matching its weakest hour",
+        "c": "Both lines average 40 bottles per hour over the four hours",
+        "d": "Line L averages 4 bottles per hour more than Line K"
+      },
+      "correctOptionId": "c",
+      "explanation": "K: (40+36+44+40)/4=160/4=40. L: (38+42+41+39)/4=160/4=40. Means match. Using a single best or worst hour as the mean is the trap.",
+      "distractorExplanations": {
+        "a": "44 is K’s peak hour, not the four-hour mean of 40.",
+        "b": "38 is L’s weakest hour, not its mean of 40.",
+        "d": "The two means are equal at 40, so L is not 4 bottles ahead."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-021": {
+      "prompt": "Two regions’ shares (%) t years after a launch: North = 8 + 2t, South = 20 − t. After how many years are the shares equal, and what is that common share?",
+      "options": {
+        "a": "Equal after 4 years at a 20% share each",
+        "b": "Equal after 6 years at an 8% share each",
+        "c": "Equal after 12 years at a 2% share each",
+        "d": "Equal after 4 years at a 16% share each"
+      },
+      "correctOptionId": "d",
+      "explanation": "Set 8+2t = 20−t → 3t=12 → t=4. Then North = 8+8=16 and South=20−4=16. Four years at 20% would treat South’s intercept as the meeting height.",
+      "distractorExplanations": {
+        "a": "t=4 is correct, but the common share is 16%, not South’s starting 20%.",
+        "b": "t=6 is not the solution of 8+2t=20−t; 8% is North’s intercept, not the crossing.",
+        "c": "t=12 would follow if 2t=12 were used without moving −t; 2% is a coefficient, not the share."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-022": {
+      "prompt": "Source A (returns desk): “A full refund issues only if the tag is intact and the return is within 14 days of the invoice date.” Source B: invoice 3 June; return 16 June; tag intact. The desk counts the invoice day as day 0. Is a full refund due?",
+      "options": {
+        "a": "Yes: 16 − 3 = 13 days, which is within 14, and the tag is intact",
+        "b": "No: any June return is treated as outside a 14-day invoice window",
+        "c": "No: an intact tag is irrelevant once 10 days have elapsed",
+        "d": "Yes: the memo refunds every tagged item regardless of calendar days"
+      },
+      "correctOptionId": "a",
+      "explanation": "Day 0 is 3 June, so 16 June is 13 days later, which is within 14, and the tag is intact. Both conditions hold. Month-of-June or a 10-day cutoff is not in the sources.",
+      "distractorExplanations": {
+        "b": "The window is 14 days from the invoice date, not “anything in June is late.”",
+        "c": "The memo never drops the tag rule after 10 days; 13 days is still inside 14.",
+        "d": "An intact tag is necessary but not sufficient without the 14-day timing rule."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-024": {
+      "prompt": "A community choir’s 200 seats split as student 50%, adult 30%, senior 20%. How many seats are adult or senior?",
+      "options": {
+        "a": "60 seats, taking only the 30% adult slice of 200",
+        "b": "100 seats, because 30% + 20% of 200 is one-half",
+        "c": "150 seats, adding the student 50% to the adult 30%",
+        "d": "40 seats, taking only the 20% senior slice of 200"
+      },
+      "correctOptionId": "b",
+      "explanation": "Adult or senior is 30%+20%=50% of 200 = 100. Students are a separate slice. Taking only adult or only senior undercounts the union of those two disjoint slices.",
+      "distractorExplanations": {
+        "a": "60 is adults alone; seniors must be included in “adult or senior.”",
+        "c": "150 adds students to adults and omits the requested senior group.",
+        "d": "40 is seniors alone and omits the adult slice."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-025": {
+      "prompt": "Grant dollars (thousands) follow G(t)=t² + 4t + 5, t = years after the seed year. What is G(3), and how much did G rise from t=2 to t=3?",
+      "options": {
+        "a": "G(3)=26 and the rise from t=2 is 4 thousand",
+        "b": "G(3)=17 and the rise from t=2 is 9 thousand",
+        "c": "G(3)=26 and the rise from t=2 is 9 thousand",
+        "d": "G(3)=32 and the rise from t=2 is 5 thousand"
+      },
+      "correctOptionId": "c",
+      "explanation": "G(3)=9+12+5=26. G(2)=4+8+5=17. Rise = 26−17=9. The linear 4t term is not the year-3 increment. 32 would mix t² and 4t incorrectly.",
+      "distractorExplanations": {
+        "a": "G(3)=26 is right, but the increment from 17 is 9, not the coefficient 4.",
+        "b": "The rise 9 is right (26−17), but G(3) is 26, not 17; 17 is G(2).",
+        "d": "32 is not G(3); 5 is the constant term, not the t=2-to-3 change."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-026": {
+      "prompt": "Source 1: “Promotion requires 24 months in grade and a completed leadership clinic.” Source 2 roster: Sam 26 months, clinic incomplete; Pat 24 months, clinic complete; Chris 18 months, clinic complete; Dana 30 months, clinic complete but on a performance warning the memo never mentions. Who meets the two written requirements?",
+      "options": {
+        "a": "Sam only, because 26 months is the longest tenure shown",
+        "b": "Chris only, because finishing the clinic overrides short tenure",
+        "c": "Sam and Dana, because both exceed 24 months in grade",
+        "d": "Pat and Dana, because each has ≥24 months and a completed clinic"
+      },
+      "correctOptionId": "d",
+      "explanation": "Both listed gates are tenure ≥24 months and clinic complete. Pat (24, complete) and Dana (30, complete) meet them. Sam lacks the clinic. Chris has only 18 months. A warning not mentioned in Source 1 is outside the written test.",
+      "distractorExplanations": {
+        "a": "Sam’s tenure is enough, but the incomplete clinic fails Source 1.",
+        "b": "Chris’s clinic is complete, but 18 months is below the 24-month gate.",
+        "c": "Sam still lacks the clinic; tenure alone does not promote."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-027": {
+      "prompt": "Four-month output (crates): Mill P 80, 90, 70, 100; Mill Q 95, 85, 90, 90. Which mill has the larger four-month total, and by how many crates?",
+      "options": {
+        "a": "Q by 20 crates: 360 versus P’s 340",
+        "b": "P by 20 crates: 360 versus Q’s 340",
+        "c": "Q by 5 crates: 350 versus P’s 345",
+        "d": "The mills tie at 360 crates over the four months"
+      },
+      "correctOptionId": "a",
+      "explanation": "P: 80+90+70+100=340. Q: 95+85+90+90=360. Q leads by 20. Swapping who has 360 is the main arithmetic trap. A tie ignores the 20-crate gap.",
+      "distractorExplanations": {
+        "b": "P totals 340, not 360; swapping the mills reverses the leader.",
+        "c": "Neither 350 nor 345 matches the actual 360 vs 340 totals.",
+        "d": "The totals differ by 20 crates; they are not tied."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-028": {
+      "prompt": "Relay boards tested: Type F 50 units, 4 defects; Type G 80, 10; Type H 40, 2; Type J 30, 6. Which type has the highest defect rate?",
+      "options": {
+        "a": "Type G, because 10 defects is the largest defect count",
+        "b": "Type J, because 6 defects in 30 units is a 20% rate",
+        "c": "Type F, because 50 units is a mid-size production lot",
+        "d": "Type H, because 2 defects is the smallest defect count"
+      },
+      "correctOptionId": "b",
+      "explanation": "Rates: F 4/50=8%; G 10/80=12.5%; H 2/40=5%; J 6/30=20%. Highest rate is J. Raw defect count (G) and smallest count (H) confuse count with rate.",
+      "distractorExplanations": {
+        "a": "G’s 10 defects are the most, but 10/80 is only 12.5%, below J’s 20%.",
+        "c": "Lot size does not rank defect rate; F’s rate is 8%.",
+        "d": "Fewest defects (H) is the lowest rate here (5%), not the highest."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-029": {
+      "prompt": "A studio’s March costs: rent $2,400, utilities $360, clay and glaze $540. What percent of the $3,300 total is clay and glaze?",
+      "options": {
+        "a": "About 11%, taking $360 utilities over the $3,300 total",
+        "b": "About 73%, taking $2,400 rent over the $3,300 total",
+        "c": "About 16%, because $540 / $3,300 = 0.1636",
+        "d": "About 25%, treating $540 as one-quarter of the rent line"
+      },
+      "correctOptionId": "c",
+      "explanation": "Total 2400+360+540=3300. Clay and glaze 540/3300≈16.4%. Utilities and rent are other slices. 540/2400 is percent of rent, not of total cost.",
+      "distractorExplanations": {
+        "a": "About 11% is roughly utilities’ share ($360), not clay and glaze.",
+        "b": "About 73% is rent’s share, not the clay and glaze line.",
+        "d": "Percent of rent is the wrong base; the item asks percent of total cost."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-030": {
+      "prompt": "Among 200 riders, 90 named bus, 70 named bike, 40 named walk as their usual mode (one choice each). If a stacked bar uses those three counts, which reading is correct?",
+      "options": {
+        "a": "Bike is 50% of riders because 70 is close to half of 90+40",
+        "b": "Walk is 40% of riders because the walk count is 40 people",
+        "c": "Bus plus walk is 70% because 90 + 40 = 130 of an unknown base",
+        "d": "Bus is 45% of riders because 90/200 = 0.45"
+      },
+      "correctOptionId": "d",
+      "explanation": "The base is 200. Bus 90/200=45%, bike 35%, walk 20%. Treating a raw count as a percent (40 people → 40%) or changing the denominator to 90+40 are classic chart misreads.",
+      "distractorExplanations": {
+        "a": "70/200 is 35%, not 50%; 90+40 is not the survey base.",
+        "b": "40 walkers are 20% of the 200-rider base, not a 40% share.",
+        "c": "130/200 is 65%, and the base is known (200), not unknown."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-031": {
+      "prompt": "A city pool scanned weekday vs weekend entries (people): Mon 120, Tue 110, Sat 200, Sun 180. Lifeguards claim weekend days average at least 50% more entries than weekday days. Which verdict is supported?",
+      "options": {
+        "a": "True: weekend mean 190 vs weekday mean 115 is about a 65% premium",
+        "b": "True: Sunday 180 is 50% above Monday 120, so the claim holds on one pair",
+        "c": "False: 200 + 180 is not 50% above 120 + 110, so weekends lag",
+        "d": "False: any Saturday below 250 entries falsifies a 50% weekend premium"
+      },
+      "correctOptionId": "a",
+      "explanation": "Weekday mean (120+110)/2=115. Weekend mean (200+180)/2=190. (190−115)/115≈65% which is at least 50%. The claim compares type-of-day averages, not one Sunday–Monday pair and not a 250-entry Saturday rule.",
+      "distractorExplanations": {
+        "b": "One pair (Sun vs Mon) is not the stated comparison of weekend vs weekday averages.",
+        "c": "Weekend sums still far exceed weekday sums; weekends do not lag on this data.",
+        "d": "The claim is about a 50% average premium over weekdays, not a 250-entry Saturday floor."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-032": {
+      "prompt": "Three mural tasks list remaining hours and percent already done: Sky 6 h left, 50% done; Wall 5 h left, 20% done; Gate 12 h left, 40% done. Original hours = remaining / (1 − percent done). Which task had the largest original estimate?",
+      "options": {
+        "a": "Sky, because 6 / 0.50 = 12 original hours",
+        "b": "Gate, because 12 / 0.60 = 20 original hours",
+        "c": "Wall, because 5 / 0.20 = 25 original hours",
+        "d": "Sky, because remaining hours alone rank original plans"
+      },
+      "correctOptionId": "b",
+      "explanation": "Original = remaining/(1−p). Sky 6/0.50=12; Wall 5/0.80=6.25; Gate 12/0.60=20. Gate is largest. Option c uses the done percent as the unfinished share, a common inversion.",
+      "distractorExplanations": {
+        "a": "Sky’s 12 original hours are less than Gate’s 20.",
+        "c": "Wall’s unfinished share is 80%, so 5/0.80=6.25, not 5/0.20.",
+        "d": "Remaining hours ignore percent complete; Sky’s 6 left is not the largest original."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-033": {
+      "prompt": "Fund Cedar returned +8% then −2% in two years on a $10,000 start. Fund Maple returned +3% then +3%. Which pair of ending values is correct (interest compounded annually)?",
+      "options": {
+        "a": "Cedar $10,800 and Maple $10,600 after the two years",
+        "b": "Cedar $10,584 and Maple $10,300 after the two years",
+        "c": "Cedar $10,584 and Maple $10,609 after the two years",
+        "d": "Cedar $10,000 and Maple $10,609 after the two years"
+      },
+      "correctOptionId": "c",
+      "explanation": "Cedar: 10000×1.08=10800, then ×0.98=10584. Maple: 10000×1.03²=10609. Adding 8% then subtracting 2% of the original (not of 10800) is the Cedar trap. Maple is not 6% of 10000 without compounding.",
+      "distractorExplanations": {
+        "a": "Cedar $10,800 is after year 1 only; Maple $10,600 skips compounding on the second 3%.",
+        "b": "Cedar $10,584 is right, but Maple $10,300 is a single 3% increase, not two.",
+        "d": "Cedar does not finish at the start value; the +8% then −2% path ends at $10,584."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-034": {
+      "prompt": "A lab began each quarter with 80 kits. Kits discarded: Q1 6, Q2 9, Q3 5, Q4 8. Replacements arrived only after each quarter’s count. What were total discards, and which quarter discarded the most?",
+      "options": {
+        "a": "24 discards, with Q1 the highest-discard quarter",
+        "b": "28 discards, with Q4 the highest-discard quarter",
+        "c": "80 discards, with Q2 matching the opening stock",
+        "d": "28 discards, with Q2 the highest-discard quarter"
+      },
+      "correctOptionId": "d",
+      "explanation": "6+9+5+8=28. Q2’s 9 is the peak. Opening stock 80 is not a discard total. Q1’s 6 and Q4’s 8 are below 9.",
+      "distractorExplanations": {
+        "a": "The sum is 28, not 24, and Q1’s 6 is not the peak.",
+        "b": "28 is the right sum, but Q4’s 8 is below Q2’s 9.",
+        "c": "80 is beginning inventory, not the discard total."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-035": {
+      "prompt": "A scatter of dose D (mg) vs relief R (%) has fitted line R = 2D + 10. At D=12 the residual of one patient is −6. What was that patient’s actual R, and what does a negative residual mean here?",
+      "options": {
+        "a": "Actual R=28; the point sits 6 points below the fitted line",
+        "b": "Actual R=34; the point sits 6 points above the fitted line",
+        "c": "Actual R=6; residual size equals the observed relief score",
+        "d": "Actual R=14; intercept 10 plus residual −6 ignores the slope"
+      },
+      "correctOptionId": "a",
+      "explanation": "Fitted R at D=12 is 2(12)+10=34. Residual = actual − fitted = −6, so actual = 28. Negative residual means observed below the line, not above, and not equal to 6% relief.",
+      "distractorExplanations": {
+        "b": "34 is the fitted value; a negative residual puts the actual below 34, not above.",
+        "c": "The residual is an error versus the line, not the patient’s relief score.",
+        "d": "Omitting 2D understates the fitted 34 and misstates the actual 28."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-036": {
+      "prompt": "Three outreach waves: Wave P reach 8,000 at 5% conversion; Wave Q reach 5,000 at 12%; Wave R reach 10,000 at 4%. Which wave produced the most conversions, and about how many?",
+      "options": {
+        "a": "Wave P with 400 conversions from 8,000 × 5%",
+        "b": "Wave Q with 600 conversions from 5,000 × 12%",
+        "c": "Wave R with 400 conversions from 10,000 × 4%",
+        "d": "Wave R with 1,000 conversions, taking 10% of 10,000 by mistake"
+      },
+      "correctOptionId": "b",
+      "explanation": "Conversions: P 8000×0.05=400; Q 5000×0.12=600; R 10000×0.04=400. Q wins despite smaller reach. Using reach rank or a 10% round number for R are the traps.",
+      "distractorExplanations": {
+        "a": "P’s 400 conversions tie R and trail Q’s 600.",
+        "c": "R’s 400 matches P but still trails Q; largest reach is not most conversions.",
+        "d": "4% of 10,000 is 400, not 1,000; 10% is not the given conversion."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-037": {
+      "prompt": "A co-op sells honey at 40% margin on cost and beeswax tins at 25% margin on cost. Cost is $12 per honey jar and $8 per tin. Which pair of selling prices follows those cost margins?",
+      "options": {
+        "a": "Honey $16.80 and tins $2.00, taking 25% of $8 as the tin price",
+        "b": "Honey $12.40 and tins $8.25, adding 40 cents and 25 cents to cost",
+        "c": "Honey $16.80 and tins $10.00 from 12×1.40 and 8×1.25",
+        "d": "Honey $15.00 and tins $10.00, averaging 40% and 25% on $12"
+      },
+      "correctOptionId": "c",
+      "explanation": "Price = cost × (1 + margin on cost). Honey 12×1.40=$16.80; tins 8×1.25=$10.00. Taking 25% of cost as the whole tin price, or adding 40 cents instead of 40%, are typical percent errors.",
+      "distractorExplanations": {
+        "a": "16.80 for honey is right, but a tin priced at 25% of $8 would be $2, not a 25% margin on cost.",
+        "b": "Adding 40 cents and 25 cents treats “percent” as “cents,” not 40% and 25% of cost.",
+        "d": "Averaging the percents and applying them to $12 ignores the tin’s own $8 cost."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-038": {
+      "prompt": "Of 500 students, 180 play in band, 150 run track, and 60 do both. How many do neither activity, and how many do exactly one?",
+      "options": {
+        "a": "Neither 170 and exactly one 270, double-counting the overlap of 60",
+        "b": "Neither 230 and exactly one 330, adding 180+150 with no overlap cut",
+        "c": "Neither 110 and exactly one 60, treating “both” as “exactly one”",
+        "d": "Neither 230 and exactly one 210, from 500−270 union and 270−60"
+      },
+      "correctOptionId": "d",
+      "explanation": "Union = 180+150−60=270. Neither = 500−270=230. Exactly one = 270−60=210 (or 120 band-only + 90 track-only). Adding 180+150 without subtracting overlap overstates the union.",
+      "distractorExplanations": {
+        "a": "Union is 270, so neither is 230, not 170; exactly one is 210, not 270.",
+        "b": "Exactly one cannot be 330 if the union itself is only 270.",
+        "c": "The 60 overlap is both activities, not the exactly-one group."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-039": {
+      "prompt": "ER wait samples (minutes): Desk A 12, 18, 15, 21; Desk B 20, 14, 16, 18. Which desk has the higher mean wait, and by how many minutes?",
+      "options": {
+        "a": "Desk B by 0.5: mean 17 versus Desk A’s 16.5",
+        "b": "Desk A by 0.5: mean 17 versus Desk B’s 16.5",
+        "c": "Desk A by 3: using 21 versus 18 as the two means",
+        "d": "The desks tie at a 16-minute mean wait"
+      },
+      "correctOptionId": "a",
+      "explanation": "A: (12+18+15+21)/4=66/4=16.5. B: (20+14+16+18)/4=68/4=17. B is 0.5 minutes higher. Swapping the means or using a single reading as the mean are the traps.",
+      "distractorExplanations": {
+        "b": "A’s mean is 16.5, not 17; swapping desks reverses the 0.5-minute gap.",
+        "c": "21 and 18 are single observations, not the four-reading means.",
+        "d": "16.5 and 17 are not equal, so the desks do not tie."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-040": {
+      "prompt": "A potter’s weekly cost is $400 fixed plus $6 per bowl. Bowls sell at $16. What is the weekly break-even quantity, and what is profit at 50 bowls?",
+      "options": {
+        "a": "Break-even 25 bowls; profit at 50 bowls is $500",
+        "b": "Break-even 40 bowls; profit at 50 bowls is $100",
+        "c": "Break-even 40 bowls; profit at 50 bowls is $800",
+        "d": "Break-even 67 bowls; profit at 50 bowls is $100"
+      },
+      "correctOptionId": "b",
+      "explanation": "Contribution $16−$6=$10 per bowl. Break-even 400/10=40. At 50 bowls, profit = 10×50 − 400 = $100. Using price instead of contribution (400/16=25) is a common error. $800 ignores variable cost.",
+      "distractorExplanations": {
+        "a": "400/16=25 uses price, not contribution margin; 50×10−400 is $100, not $500.",
+        "c": "Break-even 40 is right, but $800 is 50×16, which ignores $6 variable and $400 fixed.",
+        "d": "67 would be 400/6, dividing fixed cost by variable cost instead of by contribution."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-041": {
+      "prompt": "Library checkouts this month: graphic novels 90, cookbooks 60, travel 30, poetry 20. Graphic novels are what percent of the 200 checkouts?",
+      "options": {
+        "a": "30%, matching the travel count of 30 books",
+        "b": "60%, matching the cookbook count of 60 books",
+        "c": "45%, because 90/200 = 0.45",
+        "d": "90%, treating the graphic-novel count as a percent"
+      },
+      "correctOptionId": "c",
+      "explanation": "Total 90+60+30+20=200. Graphic novels 90/200=45%. Raw counts of 30, 60, or 90 are not percents of 200.",
+      "distractorExplanations": {
+        "a": "30 travel checkouts are 15% of 200, not graphic novels’ share.",
+        "b": "60 cookbooks are 30% of 200, not graphic novels’ share.",
+        "d": "90 is the count, not 90% of a 200-checkout base."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-042": {
+      "prompt": "A software sprint budget is $48,000. Spent so far: design $12,000, build $18,000, test $6,000. Remaining work is estimated at 40% of the original budget. Which pair is correct?",
+      "options": {
+        "a": "Spent $30,000; remaining-work estimate $19,200",
+        "b": "Spent $36,000; remaining-work estimate $48,000",
+        "c": "Spent $36,000; remaining-work estimate $28,800",
+        "d": "Spent $36,000; remaining-work estimate $19,200"
+      },
+      "correctOptionId": "d",
+      "explanation": "Spent 12+18+6=36 thousand. Remaining-work estimate is 40% of original $48,000 = $19,200, not 40% of remaining cash and not the full original budget again. $28,800 would be 60% of 48,000.",
+      "distractorExplanations": {
+        "a": "The three spend lines sum to $36,000, not $30,000 (that omits test).",
+        "b": "Spent $36,000 is right, but $48,000 is the original budget, not 40% of it.",
+        "c": "$28,800 is 60% of $48,000 (the spent share), not the 40% remaining-work estimate."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-043": {
+      "prompt": "App-store reviews last month (pos/neu/neg): River 80/30/10; Harbor 50/40/10; Dune 40/20/40. Which app has the highest positive share of its own reviews?",
+      "options": {
+        "a": "River, because 80/120 ≈ 67% of River’s reviews are positive",
+        "b": "Harbor, because 50 positives sit between the other two apps",
+        "c": "Dune, because 40 negatives show the most engagement",
+        "d": "Harbor, because 50/100 = 50% beats River’s 80 positives raw"
+      },
+      "correctOptionId": "a",
+      "explanation": "Totals: River 120, Harbor 100, Dune 100. Positive shares: River 80/120≈66.7%; Harbor 50%; Dune 40%. Raw positive counts or negative “engagement” do not rank positive share.",
+      "distractorExplanations": {
+        "b": "Harbor’s 50 positives are a 50% share, below River’s two-thirds.",
+        "c": "Dune’s many negatives pull its positive share down to 40%.",
+        "d": "Harbor’s 50% share does not beat River’s ~67%, even though Harbor’s base is 100."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-044": {
+      "prompt": "Closing index points over four sessions: Cedar 250, 255, 248, 260; Maple 180, 198, 190, 207. Which fund had the larger percent gain from first close to last close?",
+      "options": {
+        "a": "Cedar, because 260 − 250 = 10 points beats Maple’s 27-point rise",
+        "b": "Maple, because 207/180 − 1 = 15% while Cedar is only 4%",
+        "c": "Cedar, because 260/250 − 1 = 4% is called the larger percent",
+        "d": "They tie, because each fund gained exactly 10 index points"
+      },
+      "correctOptionId": "b",
+      "explanation": "Cedar: (260−250)/250=4%. Maple: (207−180)/180=15%. Maple’s percent gain is larger. A 10-point tie is false (Maple rose 27 points).",
+      "distractorExplanations": {
+        "a": "Percent change uses the starting base; Cedar’s +10 points is only 4% of 250.",
+        "c": "4% is Cedar’s percent gain, which is smaller than Maple’s 15%, not larger.",
+        "d": "Cedar rose 10 points and Maple rose 27; they do not tie in points or percent."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-045": {
+      "prompt": "In a 300-commuter survey, 40 use only tram, 50 only ferry, 30 only bike, 20 tram+ferry not bike, 15 ferry+bike not tram, 10 tram+bike not ferry, 8 all three, and the rest use none of the three. How many use none?",
+      "options": {
+        "a": "165 none, adding the seven listed cells and stopping before 8",
+        "b": "173 none, treating the 300 as already equal to the union size",
+        "c": "127 none, because the union is 173 and 300 − 173 = 127",
+        "d": "8 none, reading the all-three cell as the unused-mode group"
+      },
+      "correctOptionId": "c",
+      "explanation": "Union = 40+50+30+20+15+10+8=173. None = 300−173=127. 165 would omit the 8 all-three riders from the union. 173 is the union, not the unused group.",
+      "distractorExplanations": {
+        "a": "Omitting the 8 all-three riders understates the union (165) and overstates none.",
+        "b": "300 is the sample; 173 is the union, so none is 127, not 173.",
+        "d": "The 8 is the all-three overlap, not the unused-mode group."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-046": {
+      "prompt": "A maker’s revenue and costs ($ thousands): 2021 80 and 62; 2022 90 and 70; 2023 88 and 71. In which year was profit highest, and what was that profit?",
+      "options": {
+        "a": "2023 at $88 thousand, reading revenue as profit",
+        "b": "2021 at $80 thousand, reading the first revenue as profit",
+        "c": "2022 at $90 thousand, because revenue peaked that year",
+        "d": "2022 at $20 thousand, because 90 − 70 beats 18 and 17"
+      },
+      "correctOptionId": "d",
+      "explanation": "Profit = revenue − costs: 2021 18; 2022 20; 2023 17. Peak profit is 2022 at 20 thousand, not peak revenue. Reading revenue as profit is the main trap.",
+      "distractorExplanations": {
+        "a": "2023 revenue $88k is not profit; profit that year is $17k.",
+        "b": "2021 revenue $80k is not profit; profit that year is $18k.",
+        "c": "Peak revenue in 2022 is $90k, but profit is the $20k gap after $70k costs."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-047": {
+      "prompt": "Seed-packet sales by region (units × average price): North 400 × $6; South 250 × $8; West 300 × $7. Which region had the largest revenue?",
+      "options": {
+        "a": "North, because 400 × $6 = $2,400, above South and West",
+        "b": "South, because $8 is the highest average price listed",
+        "c": "West, because 300 units sit between the other two volumes",
+        "d": "South, because 250 × $8 = $2,400, matching North exactly"
+      },
+      "correctOptionId": "a",
+      "explanation": "Revenues: North 2400; South 2000; West 2100. North leads. Highest price (South) does not win. South is 2000, not 2400; 250×8=2000.",
+      "distractorExplanations": {
+        "b": "South’s $8 price on 250 units is $2,000, below North’s $2,400.",
+        "c": "West’s 300 × $7 = $2,100, still below North.",
+        "d": "250 × $8 is $2,000, not $2,400; that arithmetic invents a tie."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-048": {
+      "prompt": "Three restoration tasks: Frame 10 days at 40% done; Canvas 6 days at 75% done; Gilding 8 days at 50% done. Remaining days = original × (1 − percent done). Which task has the most days left?",
+      "options": {
+        "a": "Canvas, because 75% done means it is nearest to finished",
+        "b": "Frame, because 10 × 0.60 = 6 days remain",
+        "c": "Gilding, because 8 × 0.50 = 4 days remain",
+        "d": "Frame, because the 10-day original is remaining time as written"
+      },
+      "correctOptionId": "b",
+      "explanation": "Remaining: Frame 10×0.60=6; Canvas 6×0.25=1.5; Gilding 8×0.50=4. Frame has the most left. Being nearest to finished (Canvas) means the least remaining. Treating original as remaining ignores percent done.",
+      "distractorExplanations": {
+        "a": "Canvas is 75% done, so only 1.5 days remain — the least, not the most.",
+        "c": "Gilding’s 4 remaining days trail Frame’s 6.",
+        "d": "The 10-day figure is the original estimate, not the unfinished remainder."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-049": {
+      "prompt": "Ticket booths by pier (sellers × average weekly sales): East 8 × $900; Mid 5 × $1,200; West 10 × $700. Which pier has the largest weekly booth total?",
+      "options": {
+        "a": "Mid, because $1,200 is the highest average per seller",
+        "b": "West, because ten sellers is the largest staff listed",
+        "c": "East, because 8 × $900 = $7,200, above Mid and West",
+        "d": "West, because 10 × $700 = $7,200, matching East exactly"
+      },
+      "correctOptionId": "c",
+      "explanation": "Totals: East 7200; Mid 6000; West 7000. East leads. Highest average and largest staff lose to the product. West is 7000, not 7200.",
+      "distractorExplanations": {
+        "a": "Mid’s high average on five sellers is $6,000, below East’s $7,200.",
+        "b": "West’s ten sellers at $700 average $7,000, still $200 below East.",
+        "d": "10 × $700 is $7,000, not $7,200; that invents a tie with East."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-050": {
+      "prompt": "Unit cost and selling price: Loom $40 / $55; Kiln $70 / $90; Press $25 / $40. Which product has the highest contribution per unit (price − cost)?",
+      "options": {
+        "a": "Loom, because $55 is a midrange selling price",
+        "b": "Press, because $25 is the lowest unit cost listed",
+        "c": "Press, because $40 − $25 = $15 is called the top gap",
+        "d": "Kiln, because $90 − $70 = $20, above Loom’s $15 and Press’s $15"
+      },
+      "correctOptionId": "d",
+      "explanation": "Contributions: Loom 15; Kiln 20; Press 15. Kiln wins on dollar contribution. Lowest cost or a $15 gap does not beat Kiln’s $20.",
+      "distractorExplanations": {
+        "a": "Loom’s contribution is $15, below Kiln’s $20; midrange price is not the metric.",
+        "b": "Lowest cost (Press) still yields only $15 contribution.",
+        "c": "Press’s $15 gap ties Loom and still trails Kiln’s $20."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-051": {
+      "prompt": "A 200-person co-op: Kitchen 50, Front 40, Cellar 30, Delivery 80. Delivery is what percent of staff, and Kitchen plus Front together?",
+      "options": {
+        "a": "Delivery 40% and Kitchen+Front 45%",
+        "b": "Delivery 80% and Kitchen+Front 90%",
+        "c": "Delivery 40% and Kitchen+Front 90%",
+        "d": "Delivery 25% and Kitchen+Front 40%"
+      },
+      "correctOptionId": "a",
+      "explanation": "Delivery 80/200=40%. Kitchen+Front 90/200=45%. Treating headcounts as percents (80% / 90%) ignores the 200 base. 50/200=25% is Kitchen alone, not Delivery.",
+      "distractorExplanations": {
+        "b": "80 and 90 are headcounts, not percents of 200.",
+        "c": "Delivery 40% is right, but Kitchen+Front is 45%, not 90%.",
+        "d": "25% is Kitchen’s share, not Delivery; Kitchen+Front is 45%, not 40%."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-052": {
+      "prompt": "A stall’s costs were $4,000 in April, then rose $250 each month. What were June costs, and what was the April–June total?",
+      "options": {
+        "a": "June $4,250 and three-month total $12,750",
+        "b": "June $4,500 and three-month total $12,750",
+        "c": "June $4,500 and three-month total $13,500",
+        "d": "June $4,750 and three-month total $12,750"
+      },
+      "correctOptionId": "b",
+      "explanation": "April 4000, May 4250, June 4500. Total 4000+4250+4500=12750. June is two steps of $250, not one. 3×4500=13500 pretends every month is June. July would be 4750.",
+      "distractorExplanations": {
+        "a": "June is the second $250 step ($4,500), not May’s $4,250.",
+        "c": "June $4,500 is right, but 3×$4,500 ignores that April and May were lower.",
+        "d": "$4,750 would be July (third step); June is only two steps above April."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-053": {
+      "prompt": "Two radio spots: Spot K cost $2,000 and produced 250 visits; Spot L cost $3,000 and produced 450 visits. Which spot had the lower cost per visit, and what is that cost?",
+      "options": {
+        "a": "Spot K at $8.00, because 2000/250 = 8 and K spent less overall",
+        "b": "Spot L at $15.00, because 3000/200 is a rounded visit count",
+        "c": "Spot L at about $6.67, because 3000/450 ≈ 6.67 versus K’s $8",
+        "d": "Spot K at $6.67, swapping the two cost-per-visit figures"
+      },
+      "correctOptionId": "c",
+      "explanation": "K: 2000/250=$8. L: 3000/450=$6.67. L is cheaper per visit even though it spent more in total. Lower total spend is not lower unit cost.",
+      "distractorExplanations": {
+        "a": "K’s $8 per visit is higher than L’s ~$6.67; lower total spend is not the metric.",
+        "b": "3000/200 invents a visit count; L produced 450 visits, not 200.",
+        "d": "$6.67 belongs to L, not K; swapping the unit costs flips the winner."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-054": {
+      "prompt": "Quiz scores: 82, 90, 76, 88, 84. What is the mean, and is it higher than the median?",
+      "options": {
+        "a": "Mean 88; yes, because 88 is the largest listed score",
+        "b": "Mean 84; no, because the median is 90",
+        "c": "Mean 82; yes, because 82 is the first listed score",
+        "d": "Mean 84; no, because the ordered median is also 84"
+      },
+      "correctOptionId": "d",
+      "explanation": "Sum 82+90+76+88+84=420; mean 420/5=84. Ordered: 76,82,84,88,90; median 84. Mean equals median, so the mean is not higher. Using 88 or 90 as median/mean confuses a single high score with the center.",
+      "distractorExplanations": {
+        "a": "88 is one score, not the mean; the mean is 84.",
+        "b": "The mean is 84, but the median is the third ordered value 84, not 90.",
+        "c": "82 is the first listed score, not the mean of five."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-055": {
+      "prompt": "A cannery’s cases shipped: Anchovy 120, 100, 110; Brine 80, 90, 70; Citrus 60, 65, 75 for three periods. Which line had the largest three-period total?",
+      "options": {
+        "a": "Anchovy with 330 cases, above Brine 240 and Citrus 200",
+        "b": "Brine with 330 cases, swapping Anchovy’s total onto Brine",
+        "c": "Citrus with 200 cases, calling the smallest total the largest",
+        "d": "Anchovy with 120 cases, using only the first-period figure"
+      },
+      "correctOptionId": "a",
+      "explanation": "Anchovy 120+100+110=330; Brine 80+90+70=240; Citrus 60+65+75=200. Anchovy leads. This is a three-line volume comparison, not a two-product quarterly clone.",
+      "distractorExplanations": {
+        "b": "Brine totals 240, not 330; 330 is Anchovy’s sum.",
+        "c": "Citrus’s 200 is the smallest three-period total, not the largest.",
+        "d": "120 is only period 1 for Anchovy, not the three-period sum."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-056": {
+      "prompt": "Devices assembled: Radio 120 units, 6 returns; Clock 80, 8; Meter 200, 10. Which device has the highest return rate?",
+      "options": {
+        "a": "Meter, because 10 returns is the largest return count",
+        "b": "Clock, because 8/80 = 10% exceeds Radio’s 5% and Meter’s 5%",
+        "c": "Radio, because 120 units is a mid-size assembly lot",
+        "d": "Meter, because 200 units is the largest assembly lot"
+      },
+      "correctOptionId": "b",
+      "explanation": "Rates: Radio 6/120=5%; Clock 8/80=10%; Meter 10/200=5%. Clock has the highest rate. Largest return count or largest lot is not the highest rate.",
+      "distractorExplanations": {
+        "a": "Meter’s 10 returns are 5% of 200, tying Radio and trailing Clock.",
+        "c": "Lot size does not rank return rate; Radio’s rate is 5%.",
+        "d": "Largest lot (Meter) has a 5% rate, not the highest."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-057": {
+      "prompt": "Cost and price: Mug $9 / $15; Bowl $12 / $20; Jug $8 / $14. If 20 mugs, 10 bowls, and 5 jugs sell, which product contributes the most total dollar margin?",
+      "options": {
+        "a": "Bowl, because $8 unit margin times 10 bowls is $80",
+        "b": "Jug, because $6 unit margin on the highest-priced story",
+        "c": "Mug, because $6 × 20 = $120, above Bowl’s $80 and Jug’s $30",
+        "d": "Jug, because five jugs is the scarcest line and must dominate"
+      },
+      "correctOptionId": "c",
+      "explanation": "Unit margins: Mug 6, Bowl 8, Jug 6. Totals: 20×6=120; 10×8=80; 5×6=30. Mugs win on volume. Highest unit margin (Bowl) does not win total dollars here.",
+      "distractorExplanations": {
+        "a": "Bowl’s $80 total trails mugs’ $120 even though Bowl’s unit margin is $8.",
+        "b": "Jugs’ unit margin is $6, and five jugs yield only $30.",
+        "d": "Scarcity does not raise total margin; five jugs contribute $30."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-058": {
+      "prompt": "A press’s revenue grew 10% in year 1 and 20% in year 2. Starting revenue was $50,000. Which pair is correct for year-2 ending revenue and the two-year total growth rate from the start?",
+      "options": {
+        "a": "Ending $60,000 and two-year growth 30%",
+        "b": "Ending $66,000 and two-year growth 30%",
+        "c": "Ending $55,000 and two-year growth 32%",
+        "d": "Ending $66,000 and two-year growth 32%"
+      },
+      "correctOptionId": "d",
+      "explanation": "Year 1: 50,000×1.10=55,000. Year 2: 55,000×1.20=66,000. Two-year factor 66/50=1.32, i.e. 32%, not 10%+20%=30%. $60,000 would be a single 20% on 50,000. $55,000 is only year 1.",
+      "distractorExplanations": {
+        "a": "$60,000 is 20% on the start, skipping the 10% year; 30% adds the percents instead of compounding.",
+        "b": "Ending $66,000 is right, but 10%+20% = 30% understates the compounded 32%.",
+        "c": "$55,000 is the year-1 level, not the year-2 end."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-059": {
+      "prompt": "A marina fuel dock posted liters sold: diesel 2,400; gasoline 1,800; oil mix 600. Diesel is what percent of the 4,800-liter total, and gasoline plus oil mix together?",
+      "options": {
+        "a": "Diesel 50% and gasoline+oil 50%",
+        "b": "Diesel 24% and gasoline+oil 24%",
+        "c": "Diesel 50% and gasoline+oil 18%",
+        "d": "Diesel 80% and gasoline+oil 50%"
+      },
+      "correctOptionId": "a",
+      "explanation": "Total 2400+1800+600=4800. Diesel 2400/4800=50%. Gasoline+oil 2400/4800=50%. 24% would treat 2400 as a percent. 18% would be 1800/100 as if 1800 were 18%.",
+      "distractorExplanations": {
+        "b": "2,400 liters is not 24% of 4,800; it is 50%.",
+        "c": "Diesel 50% is right, but gasoline+oil is also 50% (2,400 liters), not 18%.",
+        "d": "80% would require 3,840 diesel liters; the dock sold 2,400."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-060": {
+      "prompt": "A kiosk’s week-1 sales were $9,000 and then rose $600 each week. What were week-4 sales, and what was the four-week total?",
+      "options": {
+        "a": "Week 4 $9,600 and four-week total $39,600",
+        "b": "Week 4 $10,800 and four-week total $39,600",
+        "c": "Week 4 $10,800 and four-week total $43,200",
+        "d": "Week 4 $11,400 and four-week total $39,600"
+      },
+      "correctOptionId": "b",
+      "explanation": "Weeks: 9000, 9600, 10200, 10800. Week 4 is three $600 steps: 9000+1800=10800. Total 9000+9600+10200+10800=39600. 4×10800=43200 pretends every week is week 4. Week 5 would be 11400.",
+      "distractorExplanations": {
+        "a": "Week 4 is the third step ($10,800), not week 2’s $9,600.",
+        "c": "Week 4 $10,800 is right, but 4×$10,800 ignores that earlier weeks were smaller.",
+        "d": "$11,400 would be week 5; week 4 is only three steps above week 1."
+      },
+      "difficulty": "easy",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-061": {
+      "prompt": "A sauce brand’s share (%) is modeled as M(t)=5×(1.2)^t, t = years after launch. Which pair is correct for M(0) and M(2)?",
+      "options": {
+        "a": "M(0)=0 and M(2)=7.2",
+        "b": "M(0)=5 and M(2)=6.0",
+        "c": "M(0)=5 and M(2)=7.2",
+        "d": "M(0)=1.2 and M(2)=5.0"
+      },
+      "correctOptionId": "c",
+      "explanation": "M(0)=5×1=5. M(2)=5×1.44=7.2. 1.2^2=1.44, not 1.2. M(0) is not 0. 6.0 would be 5×1.2 as if t=1 were t=2.",
+      "distractorExplanations": {
+        "a": "The model’s t=0 value is 5, not 0; 7.2 is the right M(2) but paired with a wrong intercept.",
+        "b": "M(0)=5 is right, but M(2)=5×1.44=7.2, not 5×1.2=6.",
+        "d": "1.2 is the growth factor, not M(0); 5 is M(0), not M(2)."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-062": {
+      "prompt": "Closers and deals: Nia 40 calls, 8 deals; Omar 25 calls, 10 deals; Pri 50 calls, 9 deals. Who has the highest deals-per-call rate?",
+      "options": {
+        "a": "Pri, because 50 calls is the heaviest activity listed",
+        "b": "Nia, because 40 calls is a mid-size effort",
+        "c": "Pri, because 9 deals sit between 8 and 10",
+        "d": "Omar, because 10/25 = 0.40 beats Nia’s 0.20 and Pri’s 0.18"
+      },
+      "correctOptionId": "d",
+      "explanation": "Rates: Nia 8/40=0.20; Omar 10/25=0.40; Pri 9/50=0.18. Omar converts best. Most calls or a middle deal count is not the rate.",
+      "distractorExplanations": {
+        "a": "Pri’s 50 calls yield only a 0.18 rate, the lowest of the three.",
+        "b": "Nia’s 8/40 = 0.20 conversion rate still trails Omar’s 0.40.",
+        "c": "A middle deal count is not a rate; Pri’s 9/50 lags Omar."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-063": {
+      "prompt": "A greenhouse logged trays: basil 90, mint 40, thyme 30, sage 20. Basil is what percent of the 180 trays, and mint+thyme together?",
+      "options": {
+        "a": "Basil 50% and mint+thyme about 39%",
+        "b": "Basil 90% and mint+thyme 70%",
+        "c": "Basil 50% and mint+thyme 70%",
+        "d": "Basil 18% and mint+thyme 39%"
+      },
+      "correctOptionId": "a",
+      "explanation": "Total 90+40+30+20=180. Basil 90/180=50%. Mint+thyme 70/180≈38.9%. Treating 90 and 70 as percents ignores the 180 base. 18% would be 90/500 or similar.",
+      "distractorExplanations": {
+        "b": "90 and 70 are tray counts, not percents of 180.",
+        "c": "Basil 50% is right, but mint+thyme is 70/180≈39%, not 70%.",
+        "d": "18% is not 90/180; basil is half the trays."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-064": {
+      "prompt": "A help desk closed tickets: Day 1 40, Day 2 36, Day 3 44, Day 4 40. Which statement about the four-day mean and range is correct?",
+      "options": {
+        "a": "Mean 44 and range 8, using the peak day as the mean",
+        "b": "Mean 40 and range 8, from (40+36+44+40)/4 and 44−36",
+        "c": "Mean 40 and range 4, taking 40−36 and ignoring Day 3",
+        "d": "Mean 36 and range 8, using the weakest day as the mean"
+      },
+      "correctOptionId": "b",
+      "explanation": "Mean (40+36+44+40)/4=40. Range 44−36=8. Peak or trough as the mean is the trap. Range needs max−min, not a single step from 40 to 36.",
+      "distractorExplanations": {
+        "a": "44 is the peak, not the mean; the mean is 40.",
+        "c": "Mean 40 is right, but the range uses 44 and 36, a spread of 8, not 4.",
+        "d": "36 is the weakest day, not the four-day mean of 40 tickets."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-065": {
+      "prompt": "Monthly ad spend and sales ($ thousands): M1 8 and 80; M2 10 and 90; M3 12 and 96. Sales per ad dollar fell each month. Which pair of sales-per-ad-dollar figures is correct?",
+      "options": {
+        "a": "M1 $8, M2 $9, M3 $10, stepping the ratio up instead of down",
+        "b": "M1 $80, M2 $90, M3 $96, repeating sales and ignoring spend",
+        "c": "M1 $10, M2 $9, M3 $8, because 80/8, 90/10, and 96/12",
+        "d": "M1 $8, M2 $10, M3 $12, repeating spend and ignoring sales"
+      },
+      "correctOptionId": "c",
+      "explanation": "Sales per ad dollar: 80/8=10; 90/10=9; 96/12=8, which falls each month. Repeating sales or spend as the ratio, or reversing the decline, misses the division.",
+      "distractorExplanations": {
+        "a": "The ratios fall (10, 9, 8), not rise; 80/8 is $10, not $8.",
+        "b": "Sales thousands are the numerator, not the ratio; spend must divide them.",
+        "d": "Spend thousands are the denominator, not the sales-per-dollar figures."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-066": {
+      "prompt": "A foundry’s shift output (parts): Night 120, 110, 130; Swing 90, 100, 95. Which shift has the higher three-shift total, and by how many parts?",
+      "options": {
+        "a": "Swing by 75 parts: 285 versus Night’s 360, reversed labels",
+        "b": "Night by 360 parts, reporting Night’s total as the gap",
+        "c": "The shifts tie at 360 parts over the three recordings",
+        "d": "Night by 75 parts: 360 versus Swing’s 285"
+      },
+      "correctOptionId": "d",
+      "explanation": "Night 120+110+130=360; Swing 90+100+95=285; gap 75. Reporting 360 as the gap or reversing who leads are the traps. They do not tie.",
+      "distractorExplanations": {
+        "a": "Swing’s 285 trails Night; reversing the labels flips the leader.",
+        "b": "360 is Night’s total, not the 75-part difference.",
+        "c": "360 and 285 are not equal, so the shifts do not tie."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-066-dup2": {
+      "prompt": "A two-part dashboard asks: (i) did on-time flights rise from May to June, and (ii) did cancellations fall? May: 420 on-time, 18 canceled; June: 405 on-time, 12 canceled. Which pair of answers is correct?",
+      "options": {
+        "a": "On-time rose and cancellations fell",
+        "b": "On-time rose and cancellations rose",
+        "c": "On-time fell and cancellations fell",
+        "d": "On-time fell and cancellations rose"
+      },
+      "correctOptionId": "c",
+      "explanation": "On-time 420→405 is a fall. Cancellations 18→12 is a fall. Both falling is the supported pair. Direction errors on either series produce the other three options.",
+      "distractorExplanations": {
+        "a": "On-time counts fell from 420 to 405; they did not rise.",
+        "b": "On-time fell, and cancellations also fell rather than rose.",
+        "d": "Cancellations fell from 18 to 12; they did not rise."
+      },
+      "difficulty": "hard",
+      "topicId": "data-insights"
+    },
+    "gmat-focus-readiness-check-data-insights-066-dup3": {
+      "prompt": "A print shop’s unit cost and price: Poster $4 / $9; Zine $6 / $10. Fixed weekly costs are $300. If the shop sells 40 posters and 20 zines, which pair is correct?",
+      "options": {
+        "a": "Contribution $400 and profit $100, treating posters as $10 margin",
+        "b": "Contribution $280 and profit $280, skipping the $300 fixed cost",
+        "c": "Contribution $500 and profit $200, adding prices without subtracting cost",
+        "d": "Contribution $280 and weekly profit −$20 after the $300 fixed cost"
+      },
+      "correctOptionId": "d",
+      "explanation": "Poster margin $5 × 40 = $200. Zine margin $4 × 20 = $80. Contribution $280. Profit 280−300=−$20. Skipping fixed cost reports $280 profit. Adding prices 40×9+20×10=560 is not contribution.",
+      "distractorExplanations": {
+        "a": "Poster margin is $5, not $10; 40×10 would overstate contribution.",
+        "b": "$280 is contribution, not profit; the $300 fixed cost still must be subtracted.",
+        "c": "Adding selling prices ignores unit cost and is not contribution."
+      },
+      "difficulty": "medium",
+      "topicId": "data-insights"
+    }
+  }
+}

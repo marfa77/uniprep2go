@@ -382,27 +382,27 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Property & Casualty insurance practice test",
   },
   "gmat-focus-readiness-check": {
-    title: "Free GMAT Focus Practice Test | 45-Question Mock",
+    title: "Free GMAT Practice Test 2026 | 45-Question Mock",
     description:
-      "Free GMAT Focus practice questions online: 45 timed questions across Quant, Verbal, and Data Insights, 90 minutes, 70% readiness target, section diagnosis, and full answer review. Independent GMAT prep — not GMAC material.",
+      "Free current-GMAT practice: 45 timed questions across Quant, Verbal, and Data Insights. Official exam is 64Q / 2h15 / 205–805. SuperScore live since Aug 2026. UniPrep bank rewritten October 2026 (no SC, no Quant geometry). Independent — not GMAC material.",
     keywords: [
+      "gmat practice test",
       "gmat focus practice test",
       "gmat mock exam",
       "free gmat practice questions",
-      "gmat readiness check",
-      "gmat focus edition practice",
+      "gmat 2026 practice test",
     ],
-    headline: "Free GMAT Focus Readiness Check",
+    headline: "Free GMAT Readiness Check (2026 exam)",
     intro:
-      "A timed GMAT Focus readiness diagnostic modeled on the official three-section format: Quantitative Reasoning, Verbal Reasoning, and Data Insights with equal section weights and a 205–805 style score prep target.",
+      "A timed diagnostic on the current GMAT: Quantitative Reasoning, Verbal Reasoning, and Data Insights with equal section weights. Official sitting is 64 questions / 2 hours 15 minutes / 205–805. This 45-question check uses a bank rewritten October 2026 — not Sentence Correction or Quant geometry leftovers.",
     audience:
       "MBA and business master's applicants who want a baseline timed diagnostic before official GMAC prep or tutoring.",
-    practiceTestLabel: "GMAT Focus practice test",
+    practiceTestLabel: "GMAT practice test",
   },
   "sat-readiness-check": {
     title: "Free Digital SAT Practice Test | 49-Question Mock",
     description:
-      "Free Digital SAT practice questions online: 49 timed questions across Reading and Writing and Math, 70 minutes, 70% readiness target with both section axes required, and full answer review. Independent SAT prep — not College Board material.",
+      "Free Digital SAT practice: 49 timed questions across Reading and Writing and Math, 70 minutes, both section axes required. Live $11 / 160 unique Anki .apkg on Gumroad — not waitlist. Independent SAT prep — not College Board material.",
     keywords: [
       "digital sat practice test",
       "sat mock exam",
@@ -553,6 +553,234 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     audience:
       "Sonography students and working sonographers sitting SPI as the physics gate — not ABD/OB image interpretation and not ARRT sonography.",
     practiceTestLabel: "ARDMS SPI practice test",
+  },
+  "ascp-mlt-readiness-check": {
+    title: "Free ASCP MLT Practice Test 2026 | 60Q Lab Mock",
+    description:
+      "ASCP MLT practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target. Official BOC MLT is 100Q CAT / 2h30 / scaled 400. Independent — not ASCP material. Not MLS.",
+    keywords: [
+      "ascp mlt practice test",
+      "free mlt practice test",
+      "mlt ascp practice exam",
+      "medical lab technician practice test",
+      "ascp mlt mock",
+      "mlt anki",
+    ],
+    headline: "Free ASCP MLT Practice Test — 60 Lab Questions",
+    intro:
+      "A timed 60-question / 75-minute diagnostic for ASCP BOC MLT — blood bank, chemistry, hematology, and microbiology. Official MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes with a scaled pass of 400. This check is shorter and linear (not CAT). Urinalysis, immunology, and lab operations appear inside those four benches. Planned 60-card Anki waitlist. Not MLS and not the California-only 80Q / 2h form.",
+    audience:
+      "MLT students and working technicians booking national MLT(ASCP) — not MLS scientist candidates and not phlebotomy-only PBT.",
+    practiceTestLabel: "ASCP MLT practice test",
+  },
+  "aswb-bachelors-readiness-check": {
+    title: "Free ASWB Bachelors Practice Test 2026 | 60Q LSW Mock",
+    description:
+      "ASWB Bachelors practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Official from 3 Aug 2026 is 122Q / 4h. Independent — not ASWB. Not LCSW Clinical.",
+    keywords: [
+      "aswb bachelors practice test",
+      "free lsw practice test",
+      "lbsw practice exam",
+      "aswb bachelors mock",
+      "aswb bachelors anki",
+    ],
+    headline: "Free ASWB Bachelors Practice Test — 60 Generalist Questions",
+    intro:
+      "A timed 60-question / 75-minute diagnostic for ASWB Bachelors (LSW/LBSW-style) — human development, assessment, intervention, and ethics. Official sitting from 3 August 2026 is 122 questions (110 scored) in 4 hours. This check is shorter. Planned 60-card Anki waitlist. Not Clinical/LCSW and not Masters.",
+    audience:
+      "BSW graduates sitting LSW/LBSW-style licensure — not LCSW Clinical candidates.",
+    practiceTestLabel: "ASWB Bachelors practice test",
+  },
+  "aswb-clinical-readiness-check": {
+    title: "Free ASWB Clinical Practice Test 2026 | 60Q LCSW Mock",
+    description:
+      "ASWB Clinical practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Official from 3 Aug 2026 is 122Q / 4h. Independent — not ASWB. Not Bachelors/LSW.",
+    keywords: [
+      "aswb clinical practice test",
+      "free lcsw practice test",
+      "aswb clinical mock",
+      "lcsw practice exam",
+      "aswb clinical anki",
+    ],
+    headline: "Free ASWB Clinical Practice Test — 60 LCSW Questions",
+    intro:
+      "A timed 60-question / 75-minute diagnostic for ASWB Clinical (LCSW) — clinical assessment, diagnosis concepts, psychotherapy, and ethics. Official sitting from 3 August 2026 is 122 questions (110 scored) in 4 hours. This check is shorter. Planned 60-card Anki waitlist. Not Bachelors/LSW.",
+    audience:
+      "MSW graduates with required clinical hours sitting LCSW — not Bachelors/LSW candidates.",
+    practiceTestLabel: "ASWB Clinical practice test",
+  },
+  "barber-state-readiness-check": {
+    title: "Free Barber Practice Test 2026 | 60Q NIC Theory Mock",
+    description:
+      "Barber theory practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Official NIC Barber theory is 60 items (50 scored) / 90 min. Independent — not NIC. Practical separate.",
+    keywords: [
+      "barber practice test",
+      "free barber exam practice",
+      "nic barber theory practice test",
+      "barber license mock",
+      "barber anki",
+    ],
+    headline: "Free Barber Practice Test — 60 Theory Questions",
+    intro:
+      "A timed 60-question / 75-minute theory diagnostic for NIC-style barber licensing — infection control, cutting/shaving, chemical services, and board-law themes. Official NIC National Barber Theory is 60 items (50 scored) in 90 minutes. This check is 15 minutes shorter and is not the practical. Planned 60-card Anki waitlist. Not NIC Cosmetology Theory.",
+    audience:
+      "Barber students sitting a NIC-style written exam — not cosmetology theory and not the skills sitting.",
+    practiceTestLabel: "Barber practice test",
+  },
+  "medication-aide-readiness-check": {
+    title: "Free Medication Aide Practice Test 2026 | 60Q MACE Mock",
+    description:
+      "Medication aide practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Typical MACE is 60Q / 2h. Independent — not NCSBN. Not CNA/NNAAP.",
+    keywords: [
+      "medication aide practice test",
+      "mace practice test free",
+      "cma med aide practice exam",
+      "medication aide mock",
+      "medication aide anki",
+    ],
+    headline: "Free Medication Aide Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute diagnostic for state medication-aide / MACE themes — six rights, routes, safety, and documentation. Typical NCSBN MACE is 60 questions in 2 hours where a state uses it. This check uses the same item count on a shorter clock. Planned 60-card Anki waitlist. Not RN/LPN and not NNAAP CNA.",
+    audience:
+      "CNAs completing medication-aide training for long-term care — not LPNs/RNs and not CNA-only candidates.",
+    practiceTestLabel: "Medication Aide practice test",
+  },
+  "nail-technician-state-readiness-check": {
+    title: "Free Nail Technician Practice Test 2026 | 60Q NIC Mock",
+    description:
+      "Nail technician practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Official NIC Nail Theory is 110 (100 scored) / 90 min. Independent — not NIC. Not Cosmetology or Barber Theory.",
+    keywords: [
+      "nail technician practice test",
+      "manicurist practice test free",
+      "nic nail theory practice exam",
+      "nail tech mock",
+      "nail technician anki",
+    ],
+    headline: "Free Nail Technician Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute theory diagnostic for NIC-style nail technician / manicurist licensing — infection control, anatomy, services, and chemistry. Official NIC Nail Technology Theory is 110 items (100 scored) in 90 minutes. This check is shorter. Practical is separate. Planned 60-card Anki waitlist. Not Cosmetology Theory and not Barber Theory.",
+    audience:
+      "Nail-tech students sitting a NIC-style written exam — not Cosmetology Theory and not the practical sitting.",
+    practiceTestLabel: "Nail Technician practice test",
+  },
+  "nsca-cpt-readiness-check": {
+    title: "Free NSCA-CPT Practice Test 2026 | 60-Question Mock",
+    description:
+      "NSCA-CPT practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Official NSCA-CPT is 155Q / 3h / scaled 70. Independent — not NSCA. Not CSCS.",
+    keywords: [
+      "nsca-cpt practice test",
+      "nsca personal trainer practice test",
+      "nsca cpt mock",
+      "nsca-cpt anki",
+    ],
+    headline: "Free NSCA-CPT Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute text diagnostic for NSCA-CPT — assessment, program design, technique, and safety. Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. This check has no video. Planned 60-card Anki waitlist. Not CSCS and not NASM/ACE/ACSM CPT.",
+    audience:
+      "Personal-trainer candidates sitting NSCA-CPT — not CSCS strength coaches and not NASM/ACE/ACSM CPT candidates.",
+    practiceTestLabel: "NSCA-CPT practice test",
+  },
+  "phr-hrci-readiness-check": {
+    title: "Free PHR Practice Test 2026 | 60-Question HRCI Mock",
+    description:
+      "PHR practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Official HRCI PHR is 90 scored + 25 pretest / 2h / scaled 500. Independent — not HRCI. Not SPHR or SHRM-CP.",
+    keywords: [
+      "phr practice test",
+      "hrci phr practice test free",
+      "phr mock exam",
+      "phr anki",
+    ],
+    headline: "Free PHR Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute diagnostic for HRCI PHR — talent, employee relations, compensation/benefits, and compliance. Official PHR is 90 scored + 25 pretest in 2 hours with a scaled pass of 500. This check is shorter. Planned 60-card Anki waitlist. Not SPHR and not SHRM-CP.",
+    audience:
+      "HR generalists sitting PHR — not SPHR strategy candidates and not SHRM-CP candidates.",
+    practiceTestLabel: "PHR practice test",
+  },
+  "physical-therapy-aide-readiness-check": {
+    title: "Free Physical Therapy Aide Practice Test 2026 | 60Q Mock",
+    description:
+      "PT aide practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. No national PT aide exam. Independent. Not NPTE or PTA.",
+    keywords: [
+      "physical therapy aide practice test",
+      "pt aide practice test free",
+      "pt tech practice exam",
+      "physical therapy aide anki",
+    ],
+    headline: "Free Physical Therapy Aide Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute knowledge diagnostic for physical therapy aide / PT tech scope — modalities assist, transfers, anatomy, and ethics. There is no single national PT aide exam. Aides work under a PT or PTA. Planned 60-card Anki waitlist. Not the NPTE and not a PTA exam.",
+    audience:
+      "Clinic aides and rehab techs learning aide-scope safety — not PT/PTA licensure candidates.",
+    practiceTestLabel: "Physical Therapy Aide practice test",
+  },
+  "praxis-core-readiness-check": {
+    title: "Free Praxis Core Practice Test 2026 | 60Q Combined Mock",
+    description:
+      "Praxis Core practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Official Core is three ETS tests (5713/5723/5733). Independent — not ETS. Not SpEd 5355.",
+    keywords: [
+      "praxis core practice test",
+      "praxis 5713 practice test",
+      "praxis core mock",
+      "praxis core anki",
+    ],
+    headline: "Free Praxis Core Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute selected-response diagnostic across Praxis Core reading, writing, math, and strategy. Official Core is three separate ETS tests (Reading 5713 56Q/85 min, Writing 5723 40 SR + 2 essays/100 min, Math 5733 56Q/90 min). This check is combined SR only — no essays. Planned 60-card Anki waitlist. Not Special Education 5355.",
+    audience:
+      "Teacher-prep candidates sitting Praxis Core — not Special Education 5355 and not Elementary 5001.",
+    practiceTestLabel: "Praxis Core practice test",
+  },
+  "praxis-special-education-readiness-check": {
+    title: "Free Praxis Special Education Practice Test 2026 | 60Q Mock",
+    description:
+      "Praxis Special Education practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Typical 5355 is 120Q / 2h. Independent — not ETS. Not Praxis Core.",
+    keywords: [
+      "praxis special education practice test",
+      "sped praxis practice test",
+      "praxis 5355 mock",
+      "praxis special education anki",
+    ],
+    headline: "Free Praxis Special Education Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute diagnostic for Praxis Special Education themes — development, IEP planning, assessment, and IDEA/504 foundations. Typical Core Knowledge and Applications (5355) is 120 selected-response questions in 2 hours. Confirm your state code. Planned 60-card Anki waitlist. Not Praxis Core.",
+    audience:
+      "Special-education teacher candidates — not Praxis Core academic-skills candidates.",
+    practiceTestLabel: "Praxis Special Education practice test",
+  },
+  "precision-nutrition-l1-readiness-check": {
+    title: "Free Precision Nutrition L1 Practice Test 2026 | 60Q Mock",
+    description:
+      "PN Level 1 practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. Coaching cert — not RDN, not CPT. Independent — not Precision Nutrition.",
+    keywords: [
+      "precision nutrition practice test",
+      "pn level 1 practice test",
+      "precision nutrition l1 mock",
+      "precision nutrition anki",
+    ],
+    headline: "Free Precision Nutrition L1 Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute diagnostic for Precision Nutrition Level 1 coaching — client-centered change, nutrition science, habits, and scope. PN L1 is not an RDN license and not a CPT exam. Planned 60-card Anki waitlist.",
+    audience:
+      "Coaches in the PN L1 pathway — not RDNs and not personal-trainer CPT candidates.",
+    practiceTestLabel: "Precision Nutrition L1 practice test",
+  },
+  "unarmed-security-officer-readiness-check": {
+    title: "Free Unarmed Security Officer Practice Test 2026 | 60Q Mock",
+    description:
+      "Unarmed security practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness. State-specific. Independent. Not an armed card.",
+    keywords: [
+      "unarmed security officer practice test",
+      "guard card practice test",
+      "unarmed security mock",
+      "unarmed security anki",
+    ],
+    headline: "Free Unarmed Security Officer Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute unarmed knowledge diagnostic — law/liability, patrol, emergencies, and report writing. Licensing is state-specific. Planned 60-card Anki waitlist. Not an armed/firearms qualification.",
+    audience:
+      "Unarmed guard-card candidates — not armed/range qualification candidates.",
+    practiceTestLabel: "Unarmed Security Officer practice test",
   },
   "nha-cbcs-readiness-check": {
     title: "Free NHA CBCS Practice Test 2026 | 60-Question Billing & Coding Mock",

@@ -1,0 +1,259 @@
+{
+  "medication-aide-readiness-check": {
+    "medication-aide-readiness-check-safety-031": {
+      "prompt": "Before morning carvedilol, Mrs. Hale in 214-A has sitting blood pressure 86/54. The MAR holds the dose if systolic pressure is below 90 and says to notify the nurse. What should the medication aide do?",
+      "options": {
+        "a": "Hold the carvedilol and report the blood pressure to the nurse now",
+        "b": "Give the tablet because a low reading means the beta blocker is working",
+        "c": "Crush half the tablet so a smaller amount can be given without a new order",
+        "d": "Skip the morning check and give the dose after lunch if she feels better"
+      },
+      "correctOptionId": "a",
+      "explanation": "Hold parameters are part of the order. A systolic of 86 is below the written 90 cutoff, so the aide does not give carvedilol and reports the reading to the nurse. The aide does not split, delay, or reinterpret a low pressure as “therapeutic” without a new order.",
+      "distractorExplanations": {
+        "b": "Confuses the treatment goal with the hold parameter; hypotension below the cutoff is a reason to hold, not proof it is safe to give.",
+        "c": "Crushing or cutting the dose is a prescriber change; it is not how an aide “adjusts” a hold.",
+        "d": "Delaying until after lunch skips the parameter and leaves untreated hypotension unreported."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-032": {
+      "prompt": "Mr. Ortiz is due for digoxin. The aide counts an apical heart rate of 52. The order holds the dose if the heart rate is under 60 and tells the nurse. What is the correct action?",
+      "options": {
+        "a": "Hold the digoxin and notify the nurse of the apical rate of 52",
+        "b": "Give the tablet because digoxin is ordered to slow a fast pulse",
+        "c": "Give half the tablet so the heart rate is not slowed any further",
+        "d": "Wait thirty minutes, then give the full dose without telling the nurse"
+      },
+      "correctOptionId": "a",
+      "explanation": "Digoxin hold parameters protect against bradycardia and toxicity. An apical rate of 52 is under the written 60 cutoff, so the dose is held and the nurse is told. The aide does not give, split, or “wait and see” when the parameter is already met.",
+      "distractorExplanations": {
+        "b": "Confuses the drug’s usual use (slowing tachycardia) with giving it into documented bradycardia against a hold order.",
+        "c": "Halving the tablet is an unauthorized dose change and still gives digoxin below the hold heart rate.",
+        "d": "Waiting without reporting leaves a low rate unassessed; the parameter already requires a hold and a nurse call."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-033": {
+      "prompt": "Ms. Chen is due for scheduled morning insulin. Her fingerstick glucose is 62 mg/dL. The MAR says hold insulin if glucose is below 70 and report. The aide is signed off to give insulin in this facility. What should the aide do?",
+      "options": {
+        "a": "Hold the insulin and report the glucose of 62 to the nurse immediately",
+        "b": "Give the usual units because the breakfast tray is already in the room",
+        "c": "Give juice, then the full insulin dose, without notifying the nurse",
+        "d": "Cut the dose in half on your own to match the low fingerstick reading"
+      },
+      "correctOptionId": "a",
+      "explanation": "Insulin is high-alert, and hold parameters are followed even when the aide is signed off. Glucose 62 mg/dL is below 70, so insulin is held and the nurse is notified so hypoglycemia can be treated per protocol. The aide does not give, “cover breakfast,” or invent a half-dose.",
+      "distractorExplanations": {
+        "b": "A tray in the room does not override a hold-below-70 parameter; giving insulin into hypoglycemia can drop glucose further.",
+        "c": "Juice may be part of a hypoglycemia protocol, but giving the full insulin dose and skipping the nurse report ignores the hold.",
+        "d": "Changing units is a prescriber or sliding-scale decision, not an aide shortcut for a low reading."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-034": {
+      "prompt": "After two doses of a new oral antibiotic, Ms. Brooks has a few loose stools. After the third dose she has scattered hives on her chest and itching. She is breathing comfortably. What should the medication aide do?",
+      "options": {
+        "a": "Give the next dose; loose stools and hives are both expected GI side effects",
+        "b": "Hold further antibiotic and report the hives now as a possible allergy",
+        "c": "Give an unordered antihistamine from the cart, then continue the antibiotic",
+        "d": "Chart “expected side effect” for the hives and finish the remaining doses"
+      },
+      "correctOptionId": "b",
+      "explanation": "Mild loose stools can be an expected antibiotic effect and still get reported, but new hives and itching are a possible allergic reaction. The aide holds further doses and tells the nurse immediately so the drug is not repeated. Antihistamines from the cart do not make it safe to continue.",
+      "distractorExplanations": {
+        "a": "Confuses expected GI upset with urticaria; hives are an allergic warning, not a GI side effect.",
+        "c": "An unordered antihistamine can mask progression and does not replace holding a suspected allergen.",
+        "d": "Labeling hives as an expected side effect lets a possible allergy escalate if the antibiotic is given again."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-035": {
+      "prompt": "Mr. Dunn received a new bedtime antihypertensive an hour ago. At 2200 he is dizzy standing at the bathroom door and reaches for the wall. What is the medication aide’s safest next step?",
+      "options": {
+        "a": "Give an extra ordered PRN diuretic so the blood pressure comes down faster",
+        "b": "Seat him, use fall precautions, and report the new dizziness to the nurse",
+        "c": "Raise all four side rails so he cannot get up without calling for help",
+        "d": "Change the dose time to morning on the MAR without a new prescriber order"
+      },
+      "correctOptionId": "b",
+      "explanation": "New antihypertensive doses raise orthostatic fall risk in LTC. The aide keeps the resident seated, uses ordered fall precautions, and reports dizziness so the nurse can assess blood pressure and the drug. The aide does not add diuretics, use four rails as a restraint, or change administration time.",
+      "distractorExplanations": {
+        "a": "An extra diuretic can worsen hypotension and falls; dizziness is reported, not treated with more blood-pressure drug.",
+        "c": "Four raised rails can be a restraint and increase injury if he climbs over them; use ordered precautions instead.",
+        "d": "Moving the dose to morning is a prescriber or nurse decision, not an MAR edit by the aide."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-036": {
+      "prompt": "The eMAR lists 12 units of insulin aspart for Ms. Cole at supper. The medication aide is not competency-checked in this facility to draw or inject insulin. What should the aide do?",
+      "options": {
+        "a": "Draw the 12 units because the number is printed clearly on the eMAR",
+        "b": "Leave insulin to the authorized nurse; do not draw or inject it",
+        "c": "Ask a CNA who uses insulin at home to draw it while the aide watches",
+        "d": "Give an oral diabetes tablet from another resident’s bubble pack instead"
+      },
+      "correctOptionId": "b",
+      "explanation": "Insulin is a high-alert drug. If the aide is not signed off on the device and the draw, the dose is not the aide’s to prepare. The authorized nurse gives it. Borrowing another resident’s oral agent or using a coworker’s home skill is outside scope and unsafe.",
+      "distractorExplanations": {
+        "a": "A printed unit count does not create competency; high-alert insulin still requires facility sign-off.",
+        "c": "A CNA’s home insulin use is not facility competency and splits accountability for a high-alert draw.",
+        "d": "Substituting another resident’s oral tablet is a wrong-drug, wrong-person error and does not replace insulin."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-037": {
+      "prompt": "Family asks the aide to crush metoprolol succinate XL and mix it in pudding because Mr. Lee pockets whole tablets. The tablet is labeled extended-release. What should the aide do?",
+      "options": {
+        "a": "Crush it this once because pudding is supposed to protect the coating",
+        "b": "Do not crush the XL tablet; tell the nurse about the swallow problem",
+        "c": "Split the XL tablet and give both halves hidden in applesauce",
+        "d": "Hide the whole tablet in ice cream and chart it as crushed for the family"
+      },
+      "correctOptionId": "b",
+      "explanation": "Extended-release (XL/XR/ER) tablets must not be crushed or split unless the label or pharmacist says the form may be opened. Crushing dumps a full-day dose at once and can cause hypotension. The aide reports the swallowing problem so the nurse can request a swallow-safe form.",
+      "distractorExplanations": {
+        "a": "Pudding does not preserve an XL matrix; crushing still releases the dose all at once.",
+        "c": "Splitting XL tablets also destroys the release system unless the product is scored and labeled as splittable.",
+        "d": "Hiding a whole tablet and charting “crushed” falsifies the MAR and does not fix a swallow problem."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-038": {
+      "prompt": "After a first dose of oxycodone, Mrs. Grant in 108 is hard to arouse, with respirations of 8 per minute. A PRN repeat dose is due in 30 minutes on the MAR. What should the aide do?",
+      "options": {
+        "a": "Give the next PRN on time so her pain does not rebound",
+        "b": "Leave her to sleep it off and document that she is resting well",
+        "c": "Stay with her, hold further opioid, and get the nurse now",
+        "d": "Offer coffee and sit her in a chair to keep her from falling asleep"
+      },
+      "correctOptionId": "c",
+      "explanation": "New-opioid sedation with a respiratory rate of 8 can precede respiratory arrest. The aide stays, does not give more opioid, and gets the nurse immediately. Caffeine, “let her sleep,” or giving the next PRN on schedule all miss a high-alert safety hold.",
+      "distractorExplanations": {
+        "a": "Giving more opioid to a sedated, slow-breathing resident stacks respiratory depression.",
+        "b": "Leaving a newly sedated resident unmonitored can miss apnea; the change must be reported now.",
+        "d": "Caffeine does not reverse opioid sedation and can hide worsening respiratory depression."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-039": {
+      "prompt": "Mr. Alvarez is stable on warfarin. A new ciprofloxacin order for a UTI appears on the MAR. The first antibiotic dose has not been given. What is the safest action?",
+      "options": {
+        "a": "Give both drugs as written and mention the pair at next week’s care conference",
+        "b": "Increase tonight’s warfarin because antibiotics are thought to thicken blood",
+        "c": "Tell the nurse before giving ciprofloxacin so the warfarin pair can be reviewed",
+        "d": "Stop the warfarin secretly until the antibiotic course is finished"
+      },
+      "correctOptionId": "c",
+      "explanation": "Many antibiotics, including ciprofloxacin, can raise INR with warfarin and increase bleeding risk. The medication aide does not change either dose. The new combination is flagged to the nurse before the first antibiotic dose so the prescriber or pharmacy can review it.",
+      "distractorExplanations": {
+        "a": "Waiting for a care conference delays a known interaction until after doses are already given.",
+        "b": "Antibiotics more often potentiate warfarin; increasing the dose without an order raises bleed risk.",
+        "d": "Secretly holding an ordered anticoagulant is outside scope and can cause clotting; the nurse reviews holds."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-040": {
+      "prompt": "Twenty minutes after a new penicillin tablet, Ms. Ward has an itchy truncal rash. She is otherwise stable. The next dose is on the MAR in six hours. What should the aide do?",
+      "options": {
+        "a": "Give diphenhydramine from a roommate’s PRN and continue the penicillin",
+        "b": "Record “mild side effect” and give remaining doses unless she wheezes",
+        "c": "Hold further penicillin and report a possible allergy to the nurse now",
+        "d": "Wait until the end of the shift to mention the rash if it is still visible"
+      },
+      "correctOptionId": "c",
+      "explanation": "A new rash after a new penicillin is treated as a possible allergy, which can progress to anaphylaxis if the drug is repeated. The aide holds further doses and reports immediately, even if the resident is still stable. Waiting for wheeze, borrowing another resident’s PRN, or delaying to shift end is unsafe.",
+      "distractorExplanations": {
+        "a": "A roommate’s antihistamine is the wrong person and can mask an evolving reaction while the allergen continues.",
+        "b": "Confuses a possible allergy with a mild expected side effect; stability now does not make the next dose safe.",
+        "d": "Possible allergic reactions are reported when seen, before another dose, not at shift end."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-041": {
+      "prompt": "At shift change the oxycodone blister count is two tablets short of the controlled-count book. The offgoing aide says to fix the numbers after supper. What should the oncoming medication aide do?",
+      "options": {
+        "a": "Borrow two tablets from the other hall cart so the numbers match",
+        "b": "Change the count sheet to the number on hand and add a brief note",
+        "c": "Stop, leave the count as found, and report the discrepancy immediately",
+        "d": "Finish the evening pass first and recount at the next shift if it is still off"
+      },
+      "correctOptionId": "c",
+      "explanation": "A controlled-count discrepancy is reported as found. The aide does not borrow tablets, alter the book, or wait a shift. Immediate report starts an investigation and protects both staff and residents from diversion going untracked.",
+      "distractorExplanations": {
+        "a": "Moving controlled tablets between carts hides the shortage and creates a second count error.",
+        "b": "Changing the sheet to match the drawer is falsifying a legal count record.",
+        "d": "Waiting until the next shift delays the investigation and lets the shortage stay unexplained."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-042": {
+      "prompt": "Mid-swallow of a potassium tablet, Mr. Cho cannot speak, clutches his throat, and no cough is heard. What should the medication aide do first?",
+      "options": {
+        "a": "Pour a full glass of water to try to wash the tablet down",
+        "b": "Step out so he can cough the tablet up in private",
+        "c": "Sweep a finger blindly around the mouth to find the tablet",
+        "d": "Stay, call for help, and start the trained choking response"
+      },
+      "correctOptionId": "d",
+      "explanation": "Silent clutching of the throat with no cough is severe airway obstruction. The aide stays, calls for help, and uses the facility’s trained choking response. Water, leaving the room, or a blind finger sweep can worsen obstruction.",
+      "distractorExplanations": {
+        "a": "Fluid poured into a blocked airway can worsen choking or cause aspiration.",
+        "b": "A choking resident is not left alone; private coughing is not an emergency plan.",
+        "c": "Blind finger sweeps can push the tablet deeper; use the trained response instead."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-043": {
+      "prompt": "During the evening pass the aide must help a CNA transfer a resident two rooms away. The med cart is in the hallway. What is required before leaving?",
+      "options": {
+        "a": "Leave the cart unlocked so the pass can resume a minute later",
+        "b": "Leave the keys in the lock so staff can pull a PRN if needed",
+        "c": "Roll the unlocked cart into the dining room until the transfer is done",
+        "d": "Lock the cart and keep the keys on you before leaving its sight"
+      },
+      "correctOptionId": "d",
+      "explanation": "The med cart is locked whenever it is out of the aide’s sight, including a short transfer. Keys stay on the aide, not in the lock. An unlocked hallway or dining-room cart is a diversion and accidental-ingestion risk.",
+      "distractorExplanations": {
+        "a": "A short absence still leaves an open cart; lock whenever it is out of sight, not only at the end of the pass.",
+        "b": "Keys in the lock make the cart effectively unlocked for anyone who walks up.",
+        "c": "An unlocked cart in a common area invites diversion and residents taking unlabeled doses."
+      },
+      "difficulty": "easy"
+    },
+    "medication-aide-readiness-check-safety-044": {
+      "prompt": "After a new loop diuretic, Ms. Park has more urine output, which the nurse said to expect. An hour later she is newly confused and her sitting blood pressure is 78/50. What should the aide do?",
+      "options": {
+        "a": "Treat both findings as expected diuretic effects and continue the pass",
+        "b": "Report only effects that are not printed on the pharmacy label",
+        "c": "Wait until tomorrow’s care-plan meeting to mention the new confusion",
+        "d": "Report the low BP and confusion now; do not wait for it to worsen"
+      },
+      "correctOptionId": "d",
+      "explanation": "Expected mild diuresis is not the same as new confusion with BP 78/50, which can be an adverse effect (volume depletion). When a change looks more than a mild expected side effect, or when in doubt, the aide reports immediately. Waiting for a label mismatch, a worse look, or a meeting delays treatment.",
+      "distractorExplanations": {
+        "a": "Confuses expected extra urine with symptomatic hypotension and delirium, which need a nurse now.",
+        "b": "Listed effects can still be severe for that resident; label text does not decide whether to report.",
+        "c": "A care-plan meeting is too late for BP 78/50 and new confusion; those are reported when found."
+      },
+      "difficulty": "medium"
+    },
+    "medication-aide-readiness-check-safety-045": {
+      "prompt": "The MAR lists aspirin enteric-coated for Mr. Bell, who wants it crushed in applesauce because of a sore throat. What should the medication aide do?",
+      "options": {
+        "a": "Crush it; enteric coating is only there to hide a bitter taste",
+        "b": "Dissolve the tablet in hot water so the coating is no longer an issue",
+        "c": "Split it and give both halves with pudding if he promises to swallow",
+        "d": "Leave it whole and tell the nurse so a crush-safe form can be ordered"
+      },
+      "correctOptionId": "d",
+      "explanation": "Enteric-coated aspirin is made to pass the stomach intact. Crushing or dissolving it exposes the stomach to the drug, can destroy the coating’s purpose, and may change absorption. The aide does not crush it; the swallow problem is reported so the nurse or pharmacy can supply a different form if ordered.",
+      "distractorExplanations": {
+        "a": "Enteric coating protects the stomach and controls where the drug dissolves; it is not a flavor coat.",
+        "b": "Hot water still destroys the enteric coat and can irritate the stomach the coat was meant to spare.",
+        "c": "Splitting an enteric tablet also breaks the coat unless the product is labeled as scored and splittable."
+      },
+      "difficulty": "medium"
+    }
+  }
+}
