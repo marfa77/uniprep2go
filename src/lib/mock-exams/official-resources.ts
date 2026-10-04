@@ -911,10 +911,6 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
     certifier: "ETS",
     verifyAtUrl: "https://www.ets.org/toefl.html",
   },
-  "praxis-core-readiness-check": {
-    certifier: "ETS",
-    verifyAtUrl: "https://www.ets.org/praxis.html",
-  },
   "ccse-espana-readiness-check": {
     certifier: "Instituto Cervantes (CCSE)",
     verifyAtUrl: "https://examenes.cervantes.es/es/ccse/que-es",
