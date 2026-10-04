@@ -691,6 +691,31 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "aha-bls-provider-readiness-check": {
+    certifier: "American Heart Association (AHA) — BLS Provider",
+    verifyAtUrl:
+      "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/basic-life-support-bls-training",
+    sources: [
+      {
+        label: "AHA — Basic Life Support (BLS) training",
+        url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/basic-life-support-bls-training",
+      },
+      {
+        label: "AHA — HeartCode BLS",
+        url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/basic-life-support-bls-training/heartcode-bls",
+      },
+    ],
+  },
+  "ardms-spi-readiness-check": {
+    certifier: "ARDMS / Inteleos — Sonography Principles & Instrumentation (SPI)",
+    verifyAtUrl: "https://www.ardms.org/get-certified/spi/",
+    sources: [
+      {
+        label: "ARDMS — SPI examination",
+        url: "https://www.ardms.org/get-certified/spi/",
+      },
+    ],
+  },
   "nha-ccma-readiness-check": {
     certifier: "National Healthcareer Association (NHA)",
     verifyAtUrl: "https://www.nhanow.com/certification/nha-certifications/certified-clinical-medical-assistant-(ccma)",

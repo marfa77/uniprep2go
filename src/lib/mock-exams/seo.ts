@@ -516,6 +516,44 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Patient care technician students and working aides preparing for NHA CPCT/A at a school site, PSI, or live remote proctoring — not CCMA or phlebotomy-only candidates.",
     practiceTestLabel: "NHA CPCT practice test",
   },
+  "aha-bls-provider-readiness-check": {
+    title: "Free AHA BLS Practice Test 2026 | 60Q Cognitive Mock",
+    description:
+      "AHA BLS practice test — first mock free, no signup: 60 timed questions, 45 minutes, 84% readiness target. Official HeartCode BLS cognitive is ~25Q / 84% plus skills. 2025 infant + FBAO science. Independent — not an AHA card.",
+    keywords: [
+      "aha bls practice test",
+      "free bls practice test",
+      "bls cpr practice test",
+      "basic life support practice exam",
+      "aha bls 2025",
+      "bls anki",
+    ],
+    headline: "Free AHA BLS Provider Cognitive Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 45-minute cognitive diagnostic for AHA BLS Provider — adult CPR/AED, child & infant CPR, choking & opioid emergency, and team dynamics. Official HeartCode BLS cognitive is about 25 open-resource questions with an 84% pass plus in-person skills; this check is longer and cognitive-only. 2025 science: infant compressions are heel of 1 hand or 2 thumbs, not two fingers; severe adult/child FBAO uses 5 back blows then 5 abdominal thrusts. Planned 60-card Anki waitlist. Not Heartsaver and not an AHA course card.",
+    audience:
+      "Healthcare students and clinicians booking BLS Provider who want a 2025-aligned cognitive baseline before skills — not lay Heartsaver CPR and not ACLS.",
+    practiceTestLabel: "AHA BLS practice test",
+  },
+  "ardms-spi-readiness-check": {
+    title: "Free ARDMS SPI Practice Test 2026 | 60Q Ultrasound Physics",
+    description:
+      "ARDMS SPI practice test — first mock free, no signup: 60 timed questions, 75 minutes, 70% readiness target. Official SPI is ~110Q / 2h / scaled 555. Text/physics only. Independent — not ARDMS material.",
+    keywords: [
+      "ardms spi practice test",
+      "free spi practice test",
+      "ultrasound physics practice test",
+      "spi exam practice",
+      "sonography principles instrumentation",
+      "ardms spi anki",
+    ],
+    headline: "Free ARDMS SPI Practice Test — 60 Ultrasound Physics Questions",
+    intro:
+      "A timed 60-question / 75-minute text diagnostic for ARDMS SPI — ultrasound physics, transducers and beam formation, Doppler/hemodynamics, and artifacts/safety. Official SPI is about 110 multiple-choice questions in 2 hours with a scaled pass of 555 (300–700). This check is shorter, has no image items, and is not ABD/OB specialty. Planned 60-card Anki waitlist. Independent prep — not ARDMS/Inteleos material.",
+    audience:
+      "Sonography students and working sonographers sitting SPI as the physics gate — not ABD/OB image interpretation and not ARRT sonography.",
+    practiceTestLabel: "ARDMS SPI practice test",
+  },
   "nha-cbcs-readiness-check": {
     title: "Free NHA CBCS Practice Test 2026 | 60-Question Billing & Coding Mock",
     description:

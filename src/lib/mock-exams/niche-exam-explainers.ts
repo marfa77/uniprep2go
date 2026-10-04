@@ -602,16 +602,37 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "aha-bls-provider-readiness-check": explainer({
     practiceTestName: "AHA BLS Practice Test",
     whatIsExam:
-      "American Heart Association Basic Life Support (BLS) Provider training certifies healthcare providers in high-quality CPR, AED use, and team resuscitation for adults, children, and infants. Many clinical jobs require a current BLS Provider card.",
+      "American Heart Association Basic Life Support (BLS) Provider training certifies healthcare providers in high-quality CPR, AED use, choking relief, and team resuscitation for adults, children, and infants. A current BLS Provider card is a common job requirement in hospitals, EMS, and clinics. The 2025 AHA/AAP update dropped two-finger infant compressions (heel of 1 hand or 2 thumb–encircling hands) and uses cycles of 5 back blows then 5 abdominal thrusts for severe adult/child choking. This UniPrep2Go page is independent cognitive practice — it does not issue an AHA course card.",
     administeredBy: "American Heart Association (AHA) Training Centers",
+    officialFormat:
+      "Official HeartCode BLS cognitive: about 25 questions, open-resource, 84% pass, plus in-person Adult CPR/AED and Infant CPR skills. UniPrep2Go free check: 60 questions, 45 minutes, 84% readiness target — cognitive diagnostic only, not skills testing and not a BLS card.",
+    whoFor:
+      "Nurses, medics, students, and allied health staff booking an AHA BLS Provider course who want a 2025-aligned cognitive baseline before skills testing — not Heartsaver/lay-rescuer CPR and not ACLS.",
+    howToPrepare:
+      "Read current AHA BLS Provider materials for 2025 science, then take this free timed UniPrep2Go check once. Drill weak topics (infant technique, FBAO cycles, ratios, closed-loop communication) on the planned Anki waitlist. Skills still require an authorized training center.",
     examFaqs: [
       {
         question: "What is AHA BLS Provider?",
         answer:
-          "BLS Provider is AHA’s CPR/AED certification course for healthcare professionals, completed through an authorized training center (skills + cognitive components).",
+          "BLS Provider is AHA’s CPR/AED certification course for healthcare professionals, completed through an authorized training center (cognitive plus Adult CPR/AED and Infant CPR skills).",
+      },
+      {
+        question: "How many questions is the official BLS cognitive exam?",
+        answer:
+          "HeartCode BLS cognitive is typically about 25 questions, open-resource, with an 84% passing score, plus separate skills. This free UniPrep check is a longer 60-question / 45-minute diagnostic — not the official form.",
+      },
+      {
+        question: "Did infant CPR change in 2025?",
+        answer:
+          "Yes. Two-finger infant compressions were dropped. Use the heel of 1 hand or 2 thumb–encircling hands. Severe adult/child choking now uses cycles of 5 back blows then 5 abdominal thrusts; infants get 5 back blows then 5 chest thrusts.",
+      },
+      {
+        question: "Is this UniPrep mock an AHA BLS card?",
+        answer:
+          "No. It is independent cognitive practice. Passing this page does not replace an authorized AHA course, skills testing, or a Provider card.",
       },
     ],
-    keywords: ["aha bls practice test", "bls cpr practice test", "basic life support practice exam"],
+    keywords: ["aha bls practice test", "bls cpr practice test", "basic life support practice exam", "aha bls 2025"],
   }),
   "nnaap-cna-readiness-check": explainer({
     practiceTestName: "NNAAP CNA Practice Test",
@@ -960,16 +981,37 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "ardms-spi-readiness-check": explainer({
     practiceTestName: "ARDMS SPI Practice Test",
     whatIsExam:
-      "The Sonography Principles & Instrumentation (SPI) exam from ARDMS tests ultrasound physics and instrumentation. Most sonography specialty credentials require passing SPI plus a specialty exam (e.g., ABD, OB/GYN).",
-    administeredBy: "ARDMS (American Registry for Diagnostic Medical Sonography)",
+      "The Sonography Principles & Instrumentation (SPI) exam from ARDMS (Inteleos) tests ultrasound physics and instrumentation — acoustic variables, transducers and beam formation, Doppler/hemodynamics, artifacts, quality assurance, and bioeffects. Most ARDMS specialty credentials (ABD, OB/GYN, and others) require passing SPI plus a specialty exam. This UniPrep2Go page is a text/physics diagnostic with no image-interpretation items and is not an ARDMS exam.",
+    administeredBy: "ARDMS (American Registry for Diagnostic Medical Sonography / Inteleos)",
+    officialFormat:
+      "Official ARDMS SPI: about 110 multiple-choice questions, 2 hours, scaled pass 555 on a 300–700 scale (verify current Inteleos/ARDMS bulletin). UniPrep2Go free check: 60 questions, 75 minutes, 70% readiness target — shorter diagnostic, text/physics only.",
+    whoFor:
+      "Sonography students and working sonographers sitting SPI as the physics gate before or alongside an ARDMS specialty exam — not ABD/OB image interpretation and not ARRT sonography.",
+    howToPrepare:
+      "Work official SPI content outlines (physics, transducers, Doppler, artifacts/safety), then take this free timed UniPrep2Go check once. Use the topic report to drill weak formulas (c = fλ, Z = ρc, SPL, axial resolution ≈ SPL/2, Doppler equation). Join the planned Anki waitlist for spaced repair. Confirm Q-count and scaled pass at ardms.org before you book.",
     examFaqs: [
       {
         question: "What is the ARDMS SPI exam?",
         answer:
-          "SPI is the ultrasound physics and instrumentation exam required as part of most ARDMS sonographer credentials.",
+          "SPI is the ultrasound physics and instrumentation exam required as part of most ARDMS sonographer credentials, administered by ARDMS/Inteleos.",
+      },
+      {
+        question: "How many questions is the official SPI exam?",
+        answer:
+          "About 110 multiple-choice questions in 2 hours with a scaled passing score of 555 (300–700). This free UniPrep check is a shorter 60-question / 75-minute diagnostic.",
+      },
+      {
+        question: "Does this mock include image interpretation?",
+        answer:
+          "No. UniPrep’s SPI check is text/physics only. Specialty ABD/OB image items are separate ARDMS exams.",
+      },
+      {
+        question: "Is UniPrep’s SPI check the official ARDMS exam?",
+        answer:
+          "No. It is independent practice. The matching Anki deck is planned (waitlist), not a live Gumroad SKU. Not ARDMS material.",
       },
     ],
-    keywords: ["ardms spi practice test", "ultrasound physics practice test", "spi exam practice"],
+    keywords: ["ardms spi practice test", "ultrasound physics practice test", "spi exam practice", "free spi practice test"],
   }),
   "vtne-readiness-check": explainer({
     practiceTestName: "VTNE Practice Test",

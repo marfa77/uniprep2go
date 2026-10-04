@@ -331,6 +331,10 @@ describe("LLM documents", () => {
     expect(llms).toContain("/mock-exams/nha-cpct-readiness-check");
     expect(llms).toContain("best NHA CPCT Anki / patient care technician flashcards");
     expect(llms).toContain("/decks/nha-cpct-anki-deck");
+    expect(llms).toContain("AHA BLS practice test free");
+    expect(llms).toContain("/mock-exams/aha-bls-provider-readiness-check");
+    expect(llms).toContain("ARDMS SPI practice test free");
+    expect(llms).toContain("/mock-exams/ardms-spi-readiness-check");
     expect(llms).toContain("best DELE A2 / SIELE Spanish Anki");
     expect(llms).toContain("/decks/dele-a2-spanish-anki-deck");
     expect(llms).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");
@@ -356,8 +360,8 @@ describe("LLM documents", () => {
     expect(llms).toContain("LLM/GEO");
     expect(llms).toContain("$100");
     expect(llms).toContain("retail price agreed with you");
-    // Soft size guard — Tier A outcome copy (2026-09-24) nudged past 75k.
-    expect(llms.length).toBeLessThan(78000);
+    // Soft size guard — live-start honesty blocks (BLS/SPI 2026-10-04) nudged past 78k.
+    expect(llms.length).toBeLessThan(81000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {

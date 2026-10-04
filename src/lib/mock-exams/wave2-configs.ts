@@ -70,11 +70,12 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       84,
     ),
     officialSourceNote:
-      "Cognitive-only BLS concepts aligned to AHA themes. Skills still required in-person. Not an AHA course card.",
+      "Cognitive-only BLS concepts aligned to 2025 AHA themes. Official HeartCode BLS cognitive is about 25 questions, open-resource, 84% pass, plus in-person Adult CPR/AED and Infant CPR skills — this check is a longer 60Q / 45 min diagnostic, not a course card.",
     description:
       "Free 60-question AHA BLS Provider cognitive readiness check (not a substitute for skills testing).",
     examBody: "American Heart Association",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 2). 2025 infant compressions and FBAO keys point-fixed 2026-10-04.",
+    lastUpdated: "2026-10-04",
   }),
   nicheReadinessConfig({
     slug: "nnaap-cna-readiness-check",

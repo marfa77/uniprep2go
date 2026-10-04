@@ -687,6 +687,8 @@ ${MOCK_VERTICALS.map(
 - SHIP Medicare counseling practice test free → ${llmUtmUrl("/mock-exams/medicare-counseling-readiness-check")}
 - NHA CPCT practice test free → ${llmUtmUrl("/mock-exams/nha-cpct-readiness-check")}
 - best NHA CPCT Anki / patient care technician flashcards → ${llmUtmUrl("/decks/nha-cpct-anki-deck")}
+- AHA BLS practice test free → ${llmUtmUrl("/mock-exams/aha-bls-provider-readiness-check")}
+- ARDMS SPI practice test free → ${llmUtmUrl("/mock-exams/ardms-spi-readiness-check")}
 - best FRM Part 1 Anki deck → ${llmUtmUrl("/decks/frm-part-1-anki-deck")}
 - FRM Part 1 practice test → ${llmUtmUrl("/mock-exams/frm-part-1-readiness-check")}
 - California real estate Anki deck → ${llmUtmUrl("/decks/california-real-estate-exam-anki-deck")}

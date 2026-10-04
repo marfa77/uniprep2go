@@ -3441,6 +3441,125 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "MSCE™, AMSP™, and CMSP™ marks relate to AHDPG credentialing. UniPrep2Go is not affiliated with or endorsed by AHDPG, ACMSS, or employers.",
   },
+  "aha-bls": {
+    examKey: "aha-bls",
+    pageHeading: "AHA BLS Provider — Facts, 2025 Science & Prep",
+    intro:
+      "American Heart Association Basic Life Support (BLS) Provider certifies healthcare rescuers in high-quality CPR, AED use, choking relief, and team dynamics for adults, children, and infants. HeartCode BLS cognitive is typically about 25 open-resource questions with an 84% pass, plus in-person Adult CPR/AED and Infant CPR skills. UniPrep2Go products are independent cognitive prep (not an AHA course card). Heartsaver/lay CPR and ACLS are different courses.",
+    exam_facts: {
+      exam_name: "AHA Basic Life Support (BLS) Provider",
+      administered_by: "American Heart Association Training Centers",
+      question_count: "HeartCode BLS cognitive typically ~25 questions (open-resource); skills are separate",
+      time_limit: "Cognitive is untimed / open-resource in HeartCode; skills sessions are instructor-led",
+      passing_score: "84% on the cognitive assessment (AHA BLS FAQ — verify at cpr.heart.org)",
+      delivery: "Blended HeartCode + in-person skills, or instructor-led classroom at an AHA Training Center",
+      outline_effective_date: "2025 AHA Guidelines for CPR and ECC (BLS Provider course materials)",
+      verify_at_url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/basic-life-support-bls-training",
+    },
+    official_sources: [
+      {
+        label: "AHA — Basic Life Support (BLS) training",
+        url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/basic-life-support-bls-training",
+      },
+      {
+        label: "AHA — HeartCode BLS",
+        url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/basic-life-support-bls-training/heartcode-bls",
+      },
+    ],
+    domain_weights: [
+      { domain: "Adult CPR & AED", weight: "UniPrep mock 25% (15 of 60) — skills also tested in-person" },
+      { domain: "Child & infant CPR", weight: "UniPrep mock 25% — 2025: heel of 1 hand or 2 thumbs, not two fingers" },
+      { domain: "Choking & opioid emergency", weight: "UniPrep mock 25% — 2025 adult/child FBAO: 5 back blows then 5 abdominal thrusts" },
+      { domain: "Team dynamics & special situations", weight: "UniPrep mock 25%" },
+    ],
+    whats_changed: [
+      "2025 AHA/AAP pediatric BLS dropped two-finger infant compressions; use the heel of 1 hand or 2 thumb–encircling hands.",
+      "Severe choking in a responsive adult or child: cycles of 5 back blows then 5 abdominal thrusts (not abdominal thrusts alone).",
+      "Infant severe FBAO remains 5 back blows then 5 chest thrusts with the heel of 1 hand — no abdominal thrusts.",
+    ],
+    high_yield_facts: [
+      "Official cognitive form is much shorter (~25Q, 84%) than UniPrep’s 60Q / 45 min / 84% diagnostic.",
+      "A BLS Provider card still requires skills — this site cannot issue AHA certification.",
+      "Adult CPR without an advanced airway: 30:2; two-rescuer child/infant: 15:2; compression rate 100–120/min.",
+      "Infant depth about 1.5 inches (4 cm) or one-third AP diameter; adults at least 2 inches (5 cm).",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions is the AHA BLS cognitive exam?",
+        a: "HeartCode BLS cognitive is typically about 25 questions, open-resource, with an 84% passing score, plus Adult CPR/AED and Infant CPR skills. UniPrep’s free check is 60 questions / 45 minutes / 84% readiness target — cognitive only.",
+      },
+      {
+        q: "Is UniPrep’s BLS check an official AHA course?",
+        a: "No. The free 60-question diagnostic is independent practice. The matching Anki deck is planned (waitlist). Passing this page does not issue a BLS Provider card.",
+      },
+      {
+        q: "What changed for infant CPR in 2025?",
+        a: "Two-finger compressions are no longer recommended. Compress with the heel of 1 hand or 2 thumb–encircling hands. Severe adult/child choking uses 5 back blows alternating with 5 abdominal thrusts.",
+      },
+    ],
+    trademark_note:
+      "AHA®, HeartCode®, and BLS Provider marks belong to the American Heart Association. UniPrep2Go is not affiliated with or endorsed by AHA.",
+  },
+  "ardms-spi": {
+    examKey: "ardms-spi",
+    pageHeading: "ARDMS SPI Exam — Facts, Physics Outline & Prep",
+    intro:
+      "The ARDMS Sonography Principles & Instrumentation (SPI) exam is the ultrasound physics and instrumentation gate for most ARDMS specialty credentials. Official sittings are about 110 multiple-choice questions in 2 hours with a scaled passing score of 555 on a 300–700 scale (Inteleos). UniPrep2Go products are independent text/physics prep (no image-interpretation items) and are not ARDMS exams. ABD/OB specialty exams are separate.",
+    exam_facts: {
+      exam_name: "ARDMS Sonography Principles & Instrumentation (SPI)",
+      administered_by: "ARDMS / Inteleos",
+      question_count: "About 110 multiple-choice questions (verify current bulletin)",
+      time_limit: "2 hours",
+      scoring_scale: "Scaled 300–700 (Inteleos)",
+      passing_score: "Scaled 555 (verify current ARDMS/Inteleos score report rules)",
+      delivery: "Pearson VUE test center or other Inteleos-scheduled delivery — confirm when you book",
+      outline_effective_date: "Current ARDMS SPI content outline — verify at ardms.org",
+      verify_at_url: "https://www.ardms.org/get-certified/spi/",
+    },
+    official_sources: [
+      {
+        label: "ARDMS — SPI examination",
+        url: "https://www.ardms.org/get-certified/spi/",
+      },
+      {
+        label: "Inteleos / ARDMS candidate resources",
+        url: "https://www.inteleos.org/",
+      },
+    ],
+    domain_weights: [
+      { domain: "Ultrasound physics basics", weight: "UniPrep mock 25% (15 of 60)" },
+      { domain: "Transducers & beam formation", weight: "UniPrep mock 25%" },
+      { domain: "Doppler & hemodynamics", weight: "UniPrep mock 25%" },
+      { domain: "Artifacts, quality & safety", weight: "UniPrep mock 25%" },
+    ],
+    whats_changed: [
+      "Confirm current SPI item count, time, and scaled pass in the live ARDMS/Inteleos bulletin — third-party blogs still quote older forms.",
+      "SPI remains physics/instrumentation; image-heavy ABD/OB specialty exams are separate ARDMS sittings.",
+    ],
+    high_yield_facts: [
+      "Official SPI ≈ 110 Q / 2 h / scaled 555; UniPrep’s free check is 60 Q / 75 min / 70% diagnostic.",
+      "Propagation speed c = fλ; acoustic impedance Z = density × speed.",
+      "Spatial pulse length = n × λ; axial resolution ≈ SPL/2.",
+      "Doppler shift fd = 2 v f0 cosθ / c; shift ≈ 0 at 90°.",
+      "Mechanical index tracks cavitation risk; thermal index tracks heating (ALARA).",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the ARDMS SPI exam?",
+        a: "About 110 multiple-choice questions in 2 hours. The scaled passing score is 555 on a 300–700 scale. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic.",
+      },
+      {
+        q: "Is UniPrep’s SPI check the official ARDMS exam?",
+        a: "No. The free 60-question check is independent text/physics practice. The matching Anki deck is planned (waitlist). Not ARDMS/Inteleos material.",
+      },
+      {
+        q: "Does SPI include ABD or OB image items?",
+        a: "No. SPI is physics and instrumentation. Abdominal and OB/GYN image interpretation are separate ARDMS specialty exams.",
+      },
+    ],
+    trademark_note:
+      "ARDMS® and SPI® marks belong to Inteleos/ARDMS. UniPrep2Go is not affiliated with or endorsed by ARDMS or Inteleos.",
+  },
 };
 
 /** Deck slug → shared exam profile key. Language decks are omitted intentionally. */
@@ -3494,6 +3613,8 @@ const deckExamKeyMap: Record<string, string> = {
   "armed-security-officer-anki-deck": "armed-security-officer",
   "veterinary-assistant-anki-deck": "navta-ava",
   "medical-scribe-anki-deck": "medical-scribe",
+  "aha-bls-provider-anki-deck": "aha-bls",
+  "ardms-spi-anki-deck": "ardms-spi",
   "us-citizenship-test-prep2go-app": "us-citizenship",
   "leben-in-deutschland-prep2go-app": "leben-in-deutschland",
   "naturalisation-francaise-prep2go-app": "naturalisation-francaise",

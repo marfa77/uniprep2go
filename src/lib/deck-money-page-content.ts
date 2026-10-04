@@ -80,6 +80,10 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "1,000 Danish PD2/PD3 cards with audio (≈ B1/B1+, not PD1/A2) — residence/citizenship language framing vs free AnkiWeb LITE 100.",
   "nha-cbcs-anki-deck":
     "Planned 60-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). Free 60Q / 75 min diagnostic live now — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
+  "aha-bls-provider-anki-deck":
+    "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). Free 60Q / 45 min / 84% cognitive diagnostic live now — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
+  "ardms-spi-anki-deck":
+    "Planned 60-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety). Free 60Q / 75 min diagnostic live now — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
   "cosmetology-state-anki-deck":
     "Planned 60-card NIC-style cosmetology theory Anki. Free 60Q / 75 min diagnostic live now — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
   "cdl-general-knowledge-anki-deck":
@@ -149,6 +153,10 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "1,000 Danish vocabulary cards with audio for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2/PD1) plus residence and citizenship language themes. Ownable $26 .apkg — prefer over the free Prep2Go AnkiWeb LITE 100 when you need full pathway coverage; not a timed listening/writing substitute for official sample papers on danskogproever.dk.",
   "nha-cbcs-anki-deck":
     "Planned NHA CBCS spaced-repetition deck for ICD/CPT coding judgment, claims/reimbursement, HIPAA/compliance, and revenue-cycle front office. Free 60-question / 75-minute readiness check is live; official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Not AAPC CPC and not NHA CCMA.",
+  "aha-bls-provider-anki-deck":
+    "Planned AHA BLS Provider Anki for 2025 adult CPR/AED, infant heel-of-1-hand or 2-thumb compressions, FBAO cycles, and team dynamics. Free 60-question / 45-minute / 84% cognitive check is live; official HeartCode BLS cognitive is about 25 questions / 84% plus skills. Not a BLS card and not Heartsaver/ACLS.",
+  "ardms-spi-anki-deck":
+    "Planned ARDMS SPI Anki for ultrasound physics, transducers/beam, Doppler, and artifacts/safety. Free 60-question / 75-minute readiness check is live; official SPI is about 110 questions / 2 hours / scaled 555. Text/physics only — not ABD/OB image interpretation.",
   "cosmetology-state-anki-deck":
     "Planned NIC-style cosmetology theory Anki for scientific concepts & safety, hair services, skin & nails, and salon/infection-control themes. Free 60-question / 75-minute readiness check is live; NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes — verify your state CIB. Theory only — practical exam is separate.",
   "cdl-general-knowledge-anki-deck":
@@ -374,6 +382,26 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "Official NPI databank and model test own exam-day format. UniPrep wins when you want a free longer timed diagnostic plus an ownable Anki deck for spaced reálie recall — not a third-party AI dump that skips the 30/30/60% honesty.",
+  },
+  "aha-bls-provider-anki-deck": {
+    ourEdge: [
+      "Planned 60-card BLS Anki for 2025 adult, infant, FBAO, and team themes",
+      "Free 60Q / 45 min / 84% cognitive diagnostic live now",
+      "Honest: official HeartCode BLS cognitive is ~25Q / 84% plus in-person skills",
+      "≠ Heartsaver / ACLS — independent prep, not an AHA course card",
+    ],
+    summaryProse:
+      "OpenExamPrep 100Q banks and HeartStartCPR quizzes own volume. UniPrep wins when you want a free timed 60Q / 84% cognitive diagnostic that already uses 2025 infant and FBAO science, plus a planned ownable Anki waitlist — not a 25-question HeartCode substitute and not skills testing.",
+  },
+  "ardms-spi-anki-deck": {
+    ourEdge: [
+      "Planned 60-card SPI Anki for physics, transducers, Doppler, artifacts/safety",
+      "Free 60Q / 75 min timed diagnostic live now",
+      "Honest: official SPI is ~110Q / 2h / scaled 555 — our mock is shorter",
+      "Text/physics only — ≠ ABD/OB image interpretation",
+    ],
+    summaryProse:
+      "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a free timed 60Q physics diagnostic with topic scoring plus a planned ownable Anki waitlist — not a full 110-item SPI form and not an image-heavy specialty bank.",
   },
   "nha-cbcs-anki-deck": {
     ourEdge: [
@@ -1647,6 +1675,42 @@ Candidates treat a longer free diagnostic as the official 30/30/60% form, confus
 ### What this does not replace
 
 MV ČR / NPI registration, the official databank/model test, or the B1 language exam. Independent prep — not MV ČR material.`,
+
+  "aha-bls-provider-anki-deck": `### What is inside
+
+Planned **60** flashcards across adult CPR & AED, child & infant CPR, choking & opioid emergency, and team dynamics — the same four buckets as the free cognitive check. Built for 2025 AHA BLS science (heel of 1 hand or 2 thumbs for infants; 5 back blows then 5 abdominal thrusts for severe adult/child FBAO), not Heartsaver lay-rescuer or ACLS.
+
+### Plan with the free BLS mock (live now)
+
+**Start:** Take the [free 60-question AHA BLS Provider readiness check](/mock-exams/aha-bls-provider-readiness-check) (45 minutes / 84% diagnostic). **Then:** Book an authorized AHA skills session. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official HeartCode BLS cognitive is typically **~25 open-resource questions / 84% pass plus Adult CPR/AED and Infant CPR skills**. Our mock is a longer cognitive diagnostic — not a course card.
+
+### Pitfalls this deck targets (when live)
+
+Candidates still use two-finger infant compressions, skip back blows on adult FBAO, or treat this page as a BLS card. Cards force 2025 technique under spaced recall.
+
+### What this does not replace
+
+An AHA Training Center course, skills testing, or a Provider card. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not AHA material.`,
+
+  "ardms-spi-anki-deck": `### What is inside
+
+Planned **60** flashcards across ultrasound physics, transducers & beam formation, Doppler & hemodynamics, and artifacts/quality/safety — the same four buckets as the free readiness check. Built for SPI formulas (c = fλ, Z = ρc, axial resolution ≈ SPL/2, Doppler equation), not ABD/OB image dumps.
+
+### Plan with the free SPI mock (live now)
+
+**Start:** Take the [free 60-question ARDMS SPI readiness check](/mock-exams/ardms-spi-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use ARDMS/Inteleos outlines and a full-length physics bank for stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official SPI: **about 110 multiple-choice questions / 2 hours / scaled pass 555 (300–700)**. Our mock is shorter and text/physics only.
+
+### Pitfalls this deck targets (when live)
+
+Candidates confuse SPL with axial resolution, treat 90° Doppler as a strong shift, or sit ABD image items thinking they are SPI. Cards force physics judgment under spaced recall.
+
+### What this does not replace
+
+ARDMS/Inteleos registration or a full 110-item sitting. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ARDMS material.`,
 
   "nha-cbcs-anki-deck": `### What is inside
 

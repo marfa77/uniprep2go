@@ -23,7 +23,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Diagnostic ultrasound commonly uses MHz frequencies.",
+    "explanation": "Ultrasound is sound above 20 kHz, beyond human hearing. Diagnostic imaging typically uses 2–15 MHz; that MHz range is a subset of ultrasound, not the definition.",
     "distractorExplanations": {
       "b": "Sound below 20 Hz is infrasound; ultrasound is the opposite end, above the upper limit of hearing.",
       "c": "20 Hz to 20 kHz is audible sound; ultrasound begins above 20 kHz.",
@@ -44,7 +44,7 @@
       },
       {
         "id": "b",
-        "text": "Propagation speed divided by frequency (c/f)"
+        "text": "Spatial pulse length times number of cycles"
       },
       {
         "id": "c",
@@ -52,15 +52,15 @@
       },
       {
         "id": "d",
-        "text": "Spatial pulse length times number of cycles"
+        "text": "Propagation speed divided by frequency (c/f)"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "λ = c/f; higher frequency → shorter wavelength → better axial resolution generally.",
     "distractorExplanations": {
       "a": "Multiplying speed by frequency gives the wrong units; wavelength is speed divided by frequency (λ = c/f).",
-      "c": "That inverts the ratio; f/c equals 1/λ, so higher frequency would wrongly give a longer wavelength.",
-      "d": "SPL equals cycles × wavelength, so wavelength is SPL divided by the number of cycles, not multiplied by it."
+      "b": "SPL equals cycles × wavelength, so wavelength is SPL divided by the number of cycles, not multiplied by it.",
+      "c": "That inverts the ratio; f/c equals 1/λ, so higher frequency would wrongly give a longer wavelength."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -122,11 +122,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Reflection depends on impedance mismatch at boundaries.",
+    "explanation": "Acoustic impedance Z = density × propagation speed. Large Z mismatches (soft tissue–air, soft tissue–bone) reflect strongly; similar Z values transmit.",
     "distractorExplanations": {
-      "a": "Fλ = c.",
-      "b": "Dividing inverts the relationship; impedance is density multiplied by propagation speed (Z = ρc, in rayls).",
-      "c": "Stiffness and density together set propagation speed; impedance uses density times speed, not stiffness."
+      "a": "Frequency times wavelength equals speed (c = fλ), not acoustic impedance Z = ρc.",
+      "b": "Density divided by speed is not a used ultrasound quantity; Z is density times speed.",
+      "c": "Frequency times density is not impedance; Z does not include frequency."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -139,7 +139,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Reciprocals (T = 1/f)"
+        "text": "Set by the medium"
       },
       {
         "id": "b",
@@ -147,18 +147,18 @@
       },
       {
         "id": "c",
-        "text": "Set by the medium"
+        "text": "Reciprocals (T = 1/f)"
       },
       {
         "id": "d",
         "text": "Related by the speed (T = c/f)"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Source (transducer) determines frequency/period; medium determines speed.",
     "distractorExplanations": {
+      "a": "The sound source (transducer) sets both period and frequency; the medium sets propagation speed.",
       "b": "As frequency rises the period gets shorter, so the two are inversely related, not directly proportional.",
-      "c": "The sound source (transducer) sets both period and frequency; the medium sets propagation speed.",
       "d": "Speed divided by frequency gives wavelength (λ = c/f); period is simply the reciprocal of frequency."
     },
     "difficulty": "easy",
@@ -188,11 +188,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Intensity also ∝ A^2; important for bioeffects/output discussions.",
+    "explanation": "Power and intensity both vary with amplitude squared. Doubling amplitude quadruples intensity, which is why output and bioeffect discussions track amplitude carefully.",
     "distractorExplanations": {
-      "a": "Squared is standard relation.",
-      "c": "Not zero.",
-      "d": "Not purely inverse."
+      "a": "The relation is amplitude squared, not linear in amplitude; doubling amplitude quadruples power.",
+      "c": "Power is not independent of amplitude; it scales with amplitude squared.",
+      "d": "Power is not inversely proportional to amplitude; higher amplitude means higher power."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -419,11 +419,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PRF is pulse rate; deeper imaging generally requires lower PRF.",
+    "explanation": "PRF is the number of pulses sent per second. Deeper imaging needs a longer listening time, so PRF must fall to avoid range ambiguity.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “The number of pulses transmitted per second”.",
-      "c": "Not the best answer here; the right answer is “The number of pulses transmitted per second”.",
-      "d": "Not the best answer here; the right answer is “The number of pulses transmitted per second”."
+      "b": "Pulse duration is the time one pulse is on, not how many pulses are sent each second.",
+      "c": "Duty factor is the on-time fraction (PD × PRF), not the pulse rate itself.",
+      "d": "Period is the time of one cycle inside a pulse, not the number of pulses per second."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -452,11 +452,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Deeper echoes take longer; PRF must decrease to avoid range ambiguity.",
+    "explanation": "Echoes from greater depth take longer to return. To wait for those echoes before the next pulse, PRF (and often frame rate) must decrease, or range-ambiguity artifact appears.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Lower PRF to allow time for echoes to return”.",
-      "c": "Not the best answer here; the right answer is “Lower PRF to allow time for echoes to return”.",
-      "d": "Not the best answer here; the right answer is “Lower PRF to allow time for echoes to return”."
+      "a": "Raising PRF at greater depth invites range ambiguity because the next pulse is sent before late echoes arrive.",
+      "c": "Wavelength is set by frequency and speed, not by imaging depth.",
+      "d": "Increasing depth does not raise duty factor by itself; the system usually drops PRF instead."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -502,7 +502,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Certain materials convert pressure to electricity and vice versa"
+        "text": "Magnetic fields make the crystal change shape to emit sound"
       },
       {
         "id": "b",
@@ -510,18 +510,18 @@
       },
       {
         "id": "c",
-        "text": "Magnetic fields make the crystal change shape to emit sound"
+        "text": "Certain materials convert pressure to electricity and vice versa"
       },
       {
         "id": "d",
         "text": "Materials convert electricity to pressure but not the reverse"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "PZT elements transmit and receive; Curie temperature destroys piezoelectricity if overheated.",
     "distractorExplanations": {
+      "a": "Shape change driven by a magnetic field is magnetostriction, not the piezoelectric effect, which uses voltage.",
       "b": "Heating does not produce the ultrasound pulse; voltage deforms the crystal directly, and heat can destroy it above the Curie point.",
-      "c": "Shape change driven by a magnetic field is magnetostriction, not the piezoelectric effect, which uses voltage.",
       "d": "The effect is reciprocal: the same element converts voltage to pressure on transmit and pressure to voltage on receive."
     },
     "difficulty": "easy",
@@ -539,7 +539,7 @@
       },
       {
         "id": "b",
-        "text": "Improve transmission between PZT and tissue"
+        "text": "Raise the impedance above that of PZT"
       },
       {
         "id": "c",
@@ -547,15 +547,15 @@
       },
       {
         "id": "d",
-        "text": "Raise the impedance above that of PZT"
+        "text": "Improve transmission between PZT and tissue"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "The matching layer has an impedance between PZT and tissue, improving transmission; its thickness is about 1/4 wavelength.",
     "distractorExplanations": {
       "a": "Absorbing ringing to shorten the pulse is the job of the backing (damping) material behind the crystal.",
-      "c": "Elevational focusing is done by the acoustic lens, not by the matching layer.",
-      "d": "The matching layer impedance sits between PZT and skin; raising it above PZT would increase reflection."
+      "b": "The matching layer impedance sits between PZT and skin; raising it above PZT would increase reflection.",
+      "c": "Elevational focusing is done by the acoustic lens, not by the matching layer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -634,7 +634,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Focus (narrowest beam width)"
+        "text": "Transducer face, near the crystal"
       },
       {
         "id": "b",
@@ -642,18 +642,18 @@
       },
       {
         "id": "c",
-        "text": "Transducer face, near the crystal"
+        "text": "Focus (narrowest beam width)"
       },
       {
         "id": "d",
         "text": "Deepest part of the image"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Focusing improves lateral resolution at the focal zone; multiple foci reduce frame rate.",
     "distractorExplanations": {
+      "a": "At the face the beam is as wide as the crystal, about twice its width at the focus.",
       "b": "The beam diverges in the far zone, so lateral resolution degrades beyond the focus.",
-      "c": "At the face the beam is as wide as the crystal, about twice its width at the focus.",
       "d": "The deepest region is in the diverging far field, where beam width and lateral resolution are worst."
     },
     "difficulty": "easy",
@@ -815,7 +815,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "SPL determines axial resolution; PD = n × T.",
+    "explanation": "Spatial pulse length = number of cycles × wavelength. Shorter SPL (damping, higher frequency) improves axial resolution. Cycles × period is pulse duration, a time, not a length.",
     "distractorExplanations": {
       "a": "Cycles multiplied by period gives pulse duration (a time), not spatial pulse length (a distance).",
       "c": "SPL grows with more cycles, so it is wavelength multiplied by cycles, not divided.",
@@ -894,31 +894,31 @@
     "id": "ardms-spi-readiness-check-transducers-beam-013",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "transducers-beam",
-    "prompt": "Spatial pulse length (SPL) equals",
+    "prompt": "Axial resolution is approximately equal to",
     "options": [
       {
         "id": "a",
-        "text": "Number of cycles in the pulse × wavelength"
+        "text": "One-half of the spatial pulse length"
       },
       {
         "id": "b",
-        "text": "Number of cycles in the pulse × period"
+        "text": "The number of cycles in the pulse times the period"
       },
       {
         "id": "c",
-        "text": "Pulse duration × pulse repetition frequency"
+        "text": "Pulse duration times pulse repetition frequency"
       },
       {
         "id": "d",
-        "text": "One half of the axial resolution value"
+        "text": "Twice the spatial pulse length"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "SPL = n × λ; shorter SPL improves axial resolution.",
+    "explanation": "Axial (longitudinal) resolution ≈ SPL/2. Shorter spatial pulse length — fewer cycles or shorter wavelength — improves the ability to separate two reflectors along the beam. Pulse duration × PRF is duty factor, not resolution.",
     "distractorExplanations": {
-      "b": "Cycles times period is pulse duration, the time version; SPL uses wavelength to give a distance.",
-      "c": "Pulse duration times PRF equals duty factor, not spatial pulse length.",
-      "d": "Axial resolution is SPL/2, so SPL is twice the axial resolution, not half of it."
+      "b": "Cycles times period is pulse duration (time), not a spatial resolution length.",
+      "c": "Pulse duration times PRF equals duty factor, the fraction of time the system is transmitting.",
+      "d": "Doubling SPL would worsen axial resolution; the formula is SPL/2, not 2×SPL."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1013,7 +1013,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "fd = 2v f0 cosθ / c; angle critical for velocity estimates.",
+    "explanation": "Doppler shift fd = 2 v f0 cosθ / c. Shift rises with flow speed and operating frequency and falls as the beam–flow angle approaches 90°.",
     "distractorExplanations": {
       "b": "The Doppler equation uses cosine, which is maximal at 0°; sine would wrongly make the shift maximal at 90°.",
       "c": "The shift depends on cos θ, so the angle matters and must be corrected for velocity estimates.",
@@ -1034,7 +1034,7 @@
       },
       {
         "id": "b",
-        "text": "Cosine is 0 so no Doppler shift is detected"
+        "text": "Velocity estimates are at their most accurate"
       },
       {
         "id": "c",
@@ -1042,15 +1042,15 @@
       },
       {
         "id": "d",
-        "text": "Velocity estimates are at their most accurate"
+        "text": "Cosine is 0 so no Doppler shift is detected"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "d",
     "explanation": "Avoid 90°; aim for ≤60° for quantitative vascular Doppler when possible.",
     "distractorExplanations": {
       "a": "Cos θ equals 1 at 0°, where the shift is maximal; at 90° cosine is 0.",
-      "c": "Cos θ equals 0.5 at 60°; at 90° it is 0 and no shift is detected.",
-      "d": "Angles near 90° give the largest velocity errors; keep the angle at or below 60° for velocity estimates."
+      "b": "Angles near 90° give the largest velocity errors; keep the angle at or below 60° for velocity estimates.",
+      "c": "Cos θ equals 0.5 at 60°; at 90° it is 0 and no shift is detected."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1112,11 +1112,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "CW lacks range resolution; PW has sample volume depth selectivity.",
+    "explanation": "Continuous-wave Doppler has no pulse listening window, so it measures high velocities without aliasing, but it cannot select a depth (range ambiguity along the entire beam). Pulsed-wave Doppler has a sample volume and can alias.",
     "distractorExplanations": {
-      "a": "CW lacks range resolution.",
-      "b": "CW typically uses two elements.",
-      "c": "Angle still matters."
+      "a": "CW cannot isolate depth; that range resolution is the PW advantage.",
+      "b": "CW probes typically use two elements (one send, one receive); that is a construction fact, not the clinical advantage.",
+      "c": "Angle still affects CW velocity estimates; cosine θ remains in the Doppler equation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1129,7 +1129,7 @@
     "options": [
       {
         "id": "a",
-        "text": "4v^2 (modified Bernoulli)"
+        "text": "v^2/4 (velocity squared over 4)"
       },
       {
         "id": "b",
@@ -1137,18 +1137,18 @@
       },
       {
         "id": "c",
-        "text": "v^2/4 (velocity squared over 4)"
+        "text": "4v^2 (modified Bernoulli)"
       },
       {
         "id": "d",
         "text": "8v^2 (doubled for valves)"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "ΔP ≈ 4v² relates peak velocity to pressure drop across stenoses/valves.",
     "distractorExplanations": {
+      "a": "The factor 4 multiplies v², it does not divide it; ΔP = 4v² in mmHg with v in m/s.",
       "b": "The velocity must be squared; ΔP = 4v², so 4 m/s gives 64 mmHg, not 16 mmHg.",
-      "c": "The factor 4 multiplies v², it does not divide it; ΔP = 4v² in mmHg with v in m/s.",
       "d": "The simplified constant is 4, not 8; there is no doubling for valves in the modified Bernoulli equation."
     },
     "difficulty": "hard",
@@ -1261,7 +1261,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Strength/amplitude of Doppler shifts"
+        "text": "Peak velocity over time as a spectrum"
       },
       {
         "id": "b",
@@ -1269,18 +1269,18 @@
       },
       {
         "id": "c",
-        "text": "Peak velocity over time as a spectrum"
+        "text": "Strength/amplitude of Doppler shifts"
       },
       {
         "id": "d",
         "text": "Tissue motion rather than blood flow"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Power Doppler displays signal strength rather than mean velocity/direction; it is more sensitive to flow presence and less angle dependent than color.",
     "distractorExplanations": {
+      "a": "A velocity-time spectrum is the spectral Doppler display, not power Doppler.",
       "b": "Mean velocity and direction are what color (velocity) Doppler maps; power Doppler shows signal strength.",
-      "c": "A velocity-time spectrum is the spectral Doppler display, not power Doppler.",
       "d": "Low-velocity, high-amplitude tissue motion is displayed by tissue Doppler imaging, not power Doppler."
     },
     "difficulty": "easy",
@@ -1343,11 +1343,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "fd ∝ 2v f0 cosθ / c; higher v or f0 increases shift (angle matters)",
+    "explanation": "From fd = 2 v f0 cosθ / c, Doppler shift increases when velocity or transmit frequency rises, or when the angle is closer to 0° (larger cosine). It falls at 90°.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Reflector speed increases (toward/away component) or operating frequency increases, for a given angle factor”.",
-      "c": "Not the best answer here; the right answer is “Reflector speed increases (toward/away component) or operating frequency increases, for a given angle factor”.",
-      "d": "Not the best answer here; the right answer is “Reflector speed increases (toward/away component) or operating frequency increases, for a given angle factor”."
+      "b": "A 90° angle makes cosθ ≈ 0, so the shift nearly disappears rather than increases.",
+      "c": "Higher propagation speed in the denominator lowers the shift; it does not increase it.",
+      "d": "A drop in operating frequency or a move toward 90° reduces the Doppler shift; the shift rises with speed and frequency at a given angle."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1409,11 +1409,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Laminar flow is orderly; turbulence widens the spectral envelope.",
+    "explanation": "Laminar flow moves in parallel layers with a relatively narrow velocity range — fastest in the center of the vessel, slowest at the walls. Turbulent flow is chaotic with a wide velocity spectrum and often a bruit.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Streamlined layers with a relatively narrow range of velocities in a vessel”.",
-      "c": "In laminar (parabolic) flow the fastest layers are in the center and the slowest are at the walls.",
-      "d": "Flow reversal (as in triphasic arterial flow) can occur with laminar flow but does not define it."
+      "a": "Plug flow is a blunt, nearly uniform profile at the entrance of a vessel; laminar (parabolic) flow has a range of layer speeds, fastest in the center.",
+      "c": "In laminar (parabolic) flow the fastest layers are in the center and the slowest are at the walls — not the reverse.",
+      "d": "Brief flow reversal can appear in triphasic arterial waveforms and still be laminar; reversal does not define laminar flow."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1492,7 +1492,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Highly attenuating/reflecting structures"
+        "text": "Areas where far-field TGC is set too high"
       },
       {
         "id": "b",
@@ -1500,18 +1500,18 @@
       },
       {
         "id": "c",
-        "text": "Areas where far-field TGC is set too high"
+        "text": "Highly attenuating/reflecting structures"
       },
       {
         "id": "d",
         "text": "Tissues with lower propagation speed than 1540"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Useful diagnostically for stones; distinguish from improper TGC. Shadows form deep to calcifications, stones and bone.",
     "distractorExplanations": {
+      "a": "Excess far-field TGC makes deep tissue too bright; it does not create an acoustic shadow.",
       "b": "Low-attenuating fluid such as cysts and the bladder produces enhancement, the opposite of shadowing.",
-      "c": "Excess far-field TGC makes deep tissue too bright; it does not create an acoustic shadow.",
       "d": "Speed differences cause range (depth) errors and refraction, not shadowing distal to a structure."
     },
     "difficulty": "easy",
@@ -1541,7 +1541,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Through-transmission helps confirm cystic nature.",
+    "explanation": "Acoustic enhancement (through-transmission) appears distal to a low-attenuating structure such as a cyst. The beam is stronger than the TGC expects, so the tissue behind looks brighter.",
     "distractorExplanations": {
       "a": "Stones are highly attenuating and cast shadows, not enhancement.",
       "c": "Calcified plaque reflects and attenuates strongly, producing a shadow rather than enhancement.",
@@ -1562,7 +1562,7 @@
       },
       {
         "id": "b",
-        "text": "Dark bands distal to a highly attenuating structure"
+        "text": "A structure displaced sideways at an oblique interface"
       },
       {
         "id": "c",
@@ -1570,15 +1570,15 @@
       },
       {
         "id": "d",
-        "text": "A structure displaced sideways at an oblique interface"
+        "text": "Dark bands distal to a highly attenuating structure"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Reverberation produces multiple equally spaced echoes from strong parallel reflectors; comet-tail/ring-down are related variants taught in SPI.",
     "distractorExplanations": {
       "a": "A duplicate image deep to a strong curved reflector such as the diaphragm is mirror-image artifact.",
-      "b": "Dark bands distal to an attenuating structure are acoustic shadowing, not reverberation.",
-      "d": "Sideways displacement at an oblique interface is a refraction artifact."
+      "b": "Sideways displacement at an oblique interface is a refraction artifact.",
+      "d": "Dark bands distal to an attenuating structure are acoustic shadowing, not reverberation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Reverberation from closely spaced strong reflectors"
+        "text": "Mirror imaging across a strong reflector like the diaphragm"
       },
       {
         "id": "b",
@@ -1830,18 +1830,18 @@
       },
       {
         "id": "c",
-        "text": "Mirror imaging across a strong reflector like the diaphragm"
+        "text": "Reverberation from closely spaced strong reflectors"
       },
       {
         "id": "d",
         "text": "Propagation speed error from passing through fat"
       }
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Comet-tail is a dense reverberation pattern from metal/cholesterol etc.",
     "distractorExplanations": {
+      "a": "A duplicated structure across the diaphragm is mirror-image artifact, not comet tail.",
       "b": "Refraction at curved edges produces edge shadows, not the tapering echo trail of a comet tail.",
-      "c": "A duplicated structure across the diaphragm is mirror-image artifact, not comet tail.",
       "d": "Slower speed in fat causes range errors and displacement, not a dense trail of reverberation echoes."
     },
     "difficulty": "medium",
@@ -1904,11 +1904,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "MI relates to mechanical (cavitation) bioeffect potential.",
+    "explanation": "Mechanical index (MI) tracks cavitation risk. Thermal index (TI) tracks heating. Keep both as low as reasonably achievable (ALARA), especially in obstetric imaging.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Mechanical/nonthermal effects monitored conceptually by MI”.",
-      "c": "Not the best answer here; the right answer is “Mechanical/nonthermal effects monitored conceptually by MI”.",
-      "d": "Not the best answer here; the right answer is “Mechanical/nonthermal effects monitored conceptually by MI”."
+      "a": "Thermal index tracks heating risk, not cavitation; mechanical index (MI) is the cavitation-related parameter.",
+      "c": "Duty factor is the transmit on-time fraction; it feeds heating models more than cavitation risk.",
+      "d": "Frame rate affects how often pulses are sent, a heating/duty-factor issue, not the primary cavitation index."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1937,7 +1937,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Beam refraction at curved borders can create edge shadows.",
+    "explanation": "Edge (refraction) shadowing appears at the curved margins of a cyst or vessel where the beam bends and intensity drops, leaving a thin dark line distal to the edge.",
     "distractorExplanations": {
       "b": "Shadowing deep to a gallstone is an attenuation shadow from the stone itself, not a refraction edge shadow.",
       "c": "A bright band deep to a cyst is posterior acoustic enhancement, not edge shadowing.",

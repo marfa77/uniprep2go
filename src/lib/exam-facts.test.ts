@@ -223,4 +223,20 @@ describe("exam facts layer", () => {
     expect(profile!.high_yield_facts.some((fact) => /1 March 2027/i.test(fact))).toBe(true);
     expect(profile!.candidate_qa.some((item) => /Anki deck/i.test(item.a))).toBe(true);
   });
+
+  it("returns an AHA BLS profile with HeartCode 25Q / 84% honesty", () => {
+    const profile = getExamFactsProfileForDeck("aha-bls-provider-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/25/);
+    expect(profile!.exam_facts.passing_score).toMatch(/84%/);
+    expect(profile!.candidate_qa.some((item) => /two-finger|heel of 1 hand/i.test(item.a))).toBe(true);
+  });
+
+  it("returns an ARDMS SPI profile with 110Q / 555 honesty", () => {
+    const profile = getExamFactsProfileForDeck("ardms-spi-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/110/);
+    expect(profile!.exam_facts.passing_score).toMatch(/555/);
+    expect(profile!.candidate_qa.some((item) => /ABD|OB/i.test(item.a))).toBe(true);
+  });
 });

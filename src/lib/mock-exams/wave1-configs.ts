@@ -28,15 +28,16 @@ function readinessConfig(
   > & {
     status?: MockExamConfig["status"];
     passPercent?: number;
+    lastUpdated?: string;
   },
 ): MockExamConfig {
-  const { passPercent = 70, status = "live", ...rest } = partial;
+  const { passPercent = 70, status = "live", lastUpdated = "2026-07-16", ...rest } = partial;
   return finalizeMockExamConfig({
     ...rest,
     accessMode: "free_demand_test",
     status,
     disclaimer: nicheDisclaimer,
-    lastUpdated: "2026-07-16",
+    lastUpdated,
     passRule: {
       type: "readiness_check",
       passPercent,
@@ -353,11 +354,12 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "artifacts-safety", label: "Artifacts, quality & safety" },
     ]),
     officialSourceNote:
-      "Text/physics readiness check aligned to ARDMS SPI themes (no image interpretation items). Not an ARDMS exam.",
+      "Text/physics readiness check aligned to ARDMS SPI themes (no image-interpretation items). Official SPI is about 110 multiple-choice questions / 2 hours / scaled pass 555 on 300–700 (Inteleos) — this check is a shorter 60Q / 75 min diagnostic. Not an ARDMS exam.",
     description:
       "Free 60-question ARDMS SPI readiness check focused on ultrasound physics and instrumentation concepts.",
     examBody: "ARDMS",
-    questionSourceNote: "Original UniPrep2Go local bank for SPI physics topics.",
+    questionSourceNote: "Original UniPrep2Go local bank for SPI physics topics. Near-dup SPL items and thin notes point-fixed 2026-10-04.",
+    lastUpdated: "2026-10-04",
   }),
   readinessConfig({
     slug: "nbstsa-cst-readiness-check",

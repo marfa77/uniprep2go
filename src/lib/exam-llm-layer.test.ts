@@ -246,6 +246,10 @@ describe("exam-llm-layer", () => {
     expect(highIntent).toContain("/mock-exams/bms-bas-readiness-check");
     expect(highIntent).toContain("NHA CPCT practice test free");
     expect(highIntent).toContain("/mock-exams/nha-cpct-readiness-check");
+    expect(highIntent).toContain("AHA BLS practice test free");
+    expect(highIntent).toContain("/mock-exams/aha-bls-provider-readiness-check");
+    expect(highIntent).toContain("ARDMS SPI practice test free");
+    expect(highIntent).toContain("/mock-exams/ardms-spi-readiness-check");
   });
 
   it("builds high-intent llms.txt section with FINRA ladder first", () => {

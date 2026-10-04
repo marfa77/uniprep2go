@@ -155,11 +155,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Adult CPR uses 30 compressions to 2 breaths for 1 or 2 rescuers before advanced airway.",
+    "explanation": "Without an advanced airway, adult CPR is 30 compressions to 2 breaths for one or two rescuers. After an advanced airway is in place, compressions are continuous and breaths are 1 every 6 seconds (10/min). 15:2 is the two-rescuer pediatric ratio, not adult.",
     "distractorExplanations": {
-      "b": "15:2 is used for 2-rescuer infant/child CPR in many AHA algorithms.",
-      "c": "5:1 is outdated.",
-      "d": "Compression-only is acceptable for untrained/ unwilling breathers, but trained BLS includes 30:2 when giving breaths."
+      "b": "15:2 is the two-rescuer infant/child ratio without an advanced airway, not the adult ratio.",
+      "c": "A 5:1 ratio is an old pediatric teaching point; current adult CPR without an advanced airway is 30:2.",
+      "d": "Compression-only CPR is for untrained or unwilling rescuers; trained BLS providers give 30:2 when they can deliver breaths."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -258,7 +258,7 @@
     "distractorExplanations": {
       "a": "The upper sternum is too high; compress on the lower half of the sternum in the center of the chest.",
       "b": "Pressing on the xiphoid can injure the liver; hands go on the lower half of the sternum above it.",
-      "c": "Fingertip compressions below the nipple line are an infant technique; adults need two hands."
+      "c": "Two-finger compressions are an obsolete infant method (dropped in 2025); adults use two hands, heel of one on the lower sternum."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -419,11 +419,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Short pauses preserve coronary perfusion pressure.",
+    "explanation": "Keep interruptions in compressions as short as possible — ideally under 10 seconds — so coronary perfusion pressure does not collapse. Rhythm checks and compressor switches happen about every 2 minutes, not as long pauses.",
     "distractorExplanations": {
-      "b": "Long routine pauses are harmful.",
-      "c": "BLS must continue until ALS/relief/ROS C criteria.",
-      "d": "Continuous high-quality compressions are the goal."
+      "b": "Pauses of 20–30 seconds wipe out coronary perfusion; compressions should resume within about 10 seconds.",
+      "c": "BLS continues until ROSC, a valid DNR, or a trained team takes over — not a 10-second cap on the whole resuscitation.",
+      "d": "The goal is continuous high-quality compressions with only brief pauses for shocks, analysis, or a compressor switch."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -551,11 +551,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "AHA uses 15:2 for 2-rescuer infant/child CPR; 30:2 for single rescuer.",
+    "explanation": "Without an advanced airway, two-rescuer infant or child CPR uses 15:2 so the extra pair of hands can share breaths. A lone rescuer still uses 30:2 for a child or infant. After an advanced airway, compressions are continuous.",
     "distractorExplanations": {
-      "a": "30:2 is single-rescuer pediatric ratio.",
-      "c": "5:1 outdated.",
-      "d": "50:5 incorrect."
+      "a": "30:2 is the single-rescuer pediatric ratio; two rescuers switch to 15:2.",
+      "c": "A 5:1 ratio is outdated pediatric teaching; two-rescuer infant/child CPR is 15:2.",
+      "d": "50:5 is not an AHA ratio; two rescuers use 15 compressions to 2 breaths."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -564,31 +564,31 @@
     "id": "aha-bls-provider-readiness-check-child-infant-003",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "child-infant",
-    "prompt": "Infant chest compressions may be performed with:",
+    "prompt": "Infant chest compressions should be performed with which technique?",
     "options": [
       {
         "id": "a",
-        "text": "The heel of both hands stacked, as for an adult victim"
+        "text": "Two fingers on the sternum just below the nipple line"
       },
       {
         "id": "b",
-        "text": "Two thumbs pressing on the xiphoid with hands around the chest"
+        "text": "The heel of 1 hand, or 2 thumbs encircling the chest"
       },
       {
         "id": "c",
-        "text": "Two fingers (1 rescuer) or two-thumb–encircling hands (2 rescuers)"
+        "text": "Two stacked hands, as for an adult victim"
       },
       {
         "id": "d",
-        "text": "Two fingers placed on the upper third of the sternum"
+        "text": "Two fingers pressing on the xiphoid process"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Infant techniques protect the small thorax while generating adequate depth (~1½ inches / 4 cm)",
+    "correctOptionId": "b",
+    "explanation": "The 2025 AHA/AAP pediatric BLS guidelines dropped 2-finger compressions because they rarely reach adequate depth. Compress the lower sternum with the heel of 1 hand or the 2 thumb–encircling hands technique, about 1.5 inches (4 cm) or one-third of chest depth. If you cannot encircle the chest, use the heel of 1 hand. Skills testing now covers both allowed techniques.",
     "distractorExplanations": {
-      "a": "Two stacked hands are an adult technique and would compress an infant chest far too deeply.",
-      "b": "Thumbs go just below the nipple line on the lower sternum, not on the xiphoid process.",
-      "d": "Infant compressions are on the lower half of the sternum, just below the nipple line, not the upper third."
+      "a": "Two-finger compressions were removed in the 2025 guidelines; they usually fail to reach 1.5 inches of depth.",
+      "c": "Two stacked adult hands are too large and too deep for an infant chest and risk injury.",
+      "d": "Pressing on the xiphoid risks liver injury; compress the lower half of the sternum just below the nipple line."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -617,7 +617,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Infants need about 1½ inches / ⅓ chest depth.",
+    "explanation": "Infant compression depth is about 1.5 inches (4 cm), or one-third of the chest’s anterior–posterior diameter, using heel of 1 hand or 2 thumbs. Adult depth (at least 2 inches / 5 cm) is too deep for an infant.",
     "distractorExplanations": {
       "a": "Half an inch is far too shallow to generate blood flow; infants need about 1.5 inches (4 cm).",
       "b": "Three-quarters of an inch is too shallow; the infant target is about one-third chest depth, 1.5 inches.",
@@ -828,31 +828,31 @@
     "id": "aha-bls-provider-readiness-check-child-infant-011",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "child-infant",
-    "prompt": "Two-thumb encircling hands technique for infants is preferred when",
+    "prompt": "When should the 2 thumb–encircling hands technique be used for infant compressions?",
     "options": [
       {
         "id": "a",
-        "text": "Never preferred"
+        "text": "Only when two rescuers are present; a lone rescuer must use two fingers"
       },
       {
         "id": "b",
-        "text": "Only for adults"
+        "text": "Whenever the rescuer can encircle the chest; otherwise use the heel of 1 hand"
       },
       {
         "id": "c",
-        "text": "Two rescuers are available"
+        "text": "Never — only the heel of 1 hand is permitted after 2025"
       },
       {
         "id": "d",
-        "text": "Only during choking with effective cough"
+        "text": "Only during choking when the infant still has an effective cough"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Two-thumb technique generally produces better depth/consistency with two rescuers.",
+    "correctOptionId": "b",
+    "explanation": "2025 AHA BLS allows either the heel of 1 hand or 2 thumb–encircling hands for infant compressions. Use thumbs when you can encircle the chest; if you cannot, use the heel of 1 hand. Two-finger compressions are no longer recommended, even for a lone rescuer.",
     "distractorExplanations": {
-      "a": "It is preferred for 2-rescuer infant CPR.",
-      "b": "Adults use heel-of-hand methods.",
-      "d": "Effective cough means observe, not CPR thumbs."
+      "a": "Two-finger technique is no longer taught; a lone rescuer uses the heel of 1 hand if they cannot encircle the chest.",
+      "c": "Both heel-of-1-hand and 2 thumb–encircling hands are recommended; thumbs are not banned.",
+      "d": "An infant with an effective cough is still a mild obstruction — observe and encourage coughing, do not start compressions."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -881,7 +881,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Same target rate as adults: 100–120/min.",
+    "explanation": "Infants and children use the same compression rate as adults: 100–120 per minute, with full recoil. Rate does not slow just because the patient is small.",
     "distractorExplanations": {
       "a": "40-60/min sits near the bradycardia threshold for starting compressions; it is not a compression rate.",
       "b": "60-80/min is too slow; infants and children get the same 100-120/min rate as adults.",
@@ -947,7 +947,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Correct landmarking avoids abdominal organ injury.",
+    "explanation": "Infant compressions land on the lower half of the sternum, just below the nipple line, so the heart is squeezed between sternum and spine. Avoid the xiphoid and the upper sternum.",
     "distractorExplanations": {
       "a": "Pressing on the xiphoid risks liver injury; compress just below the nipple line on the sternum.",
       "c": "The upper sternum is too high; infant compressions use the lower half of the sternum.",
@@ -993,11 +993,11 @@
     "id": "aha-bls-provider-readiness-check-choking-opioid-001",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "choking-opioid",
-    "prompt": "A responsive adult with severe choking (cannot speak/cough effectively) needs",
+    "prompt": "A responsive adult with severe choking (cannot speak or cough effectively) needs",
     "options": [
       {
         "id": "a",
-        "text": "Abdominal thrusts until object expels or victim becomes unresponsive"
+        "text": "Cycles of 5 back blows then 5 abdominal thrusts until the object expels or the person is unresponsive"
       },
       {
         "id": "b",
@@ -1005,7 +1005,7 @@
       },
       {
         "id": "c",
-        "text": "A blind finger sweep to find the object, then abdominal thrusts"
+        "text": "A blind finger sweep to find the object, then abdominal thrusts only"
       },
       {
         "id": "d",
@@ -1013,11 +1013,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Severe FBAO requires thrusts; mild obstruction with effective cough—encourage coughing.",
+    "explanation": "2025 AHA adult FBAO: for severe obstruction, give repeated cycles of 5 back blows followed by 5 abdominal thrusts until the object is expelled or the person becomes unresponsive. Then start CPR and look in the mouth before breaths. Mild obstruction with an effective cough is still “encourage coughing.”",
     "distractorExplanations": {
-      "b": "Coughing is encouraged in mild obstruction; inability to speak or cough means severe obstruction needing thrusts.",
-      "c": "Blind finger sweeps can push the object deeper; remove an object only if you can see it.",
-      "d": "Rescue breaths are given to an unresponsive victim within CPR; a responsive choking adult needs thrusts."
+      "b": "Effective coughing is only for mild obstruction; inability to speak or cough means severe FBAO and needs the 2025 back-blow then thrust cycles.",
+      "c": "Blind finger sweeps can push the object deeper; 2025 adult relief starts with back blows, not abdominal thrusts alone.",
+      "d": "Rescue breaths are for an unresponsive victim during CPR; a responsive choking adult needs back blows and thrusts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1071,7 +1071,7 @@
       },
       {
         "id": "c",
-        "text": "5 back blows followed by 5 chest thrusts"
+        "text": "5 back blows followed by 5 chest thrusts (heel of 1 hand)"
       },
       {
         "id": "d",
@@ -1079,11 +1079,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Infant FBAO uses back blows and chest thrusts, not abdominal thrusts; repeat until relieved or the infant becomes unresponsive.",
+    "explanation": "For a responsive infant with severe FBAO, give repeated cycles of 5 back blows then 5 chest thrusts (heel of 1 hand on the lower sternum) until the object comes out or the infant becomes unresponsive. Abdominal thrusts are not used in infants.",
     "distractorExplanations": {
-      "a": "Abdominal thrusts can injure an infant's liver; infants get back blows and chest thrusts.",
-      "b": "Abdominal thrusts are not used in infants; the sequence starts with 5 back blows.",
-      "d": "Blind finger sweeps can push the object deeper in an infant; remove only visible objects."
+      "a": "Abdominal thrusts can injure an infant liver; infants get back blows then chest thrusts, not abdominal thrusts.",
+      "b": "Abdominal thrusts are not used in infants; start with 5 back blows, then 5 chest thrusts with the heel of 1 hand.",
+      "d": "Blind finger sweeps can push the object deeper; remove only an object you can see."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1145,11 +1145,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pregnancy/obesity alter landmarking; use chest thrusts per BLS training.",
+    "explanation": "Chest thrusts replace abdominal thrusts for a responsive pregnant or markedly obese adult. Children with severe FBAO now get 5 back blows alternating with 5 abdominal thrusts (2025), not chest thrusts. Infants get back blows and chest thrusts, never abdominal thrusts.",
     "distractorExplanations": {
-      "b": "Children from 1 year to puberty get abdominal thrusts like adults; chest thrusts are for infants and special cases.",
-      "c": "A mild obstruction with an effective cough needs encouragement to cough, not thrusts.",
-      "d": "Age and cardiac history do not change technique; chest thrusts are for pregnancy or marked obesity."
+      "b": "A child 1 year to puberty with severe choking gets 5 back blows then 5 abdominal thrusts, like an adult — not chest thrusts.",
+      "c": "A child with an effective cough has mild obstruction; encourage coughing rather than chest thrusts.",
+      "d": "A responsive adult who can cough forcefully has mild obstruction; chest thrusts are for pregnant or obese severe FBAO."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1455,7 +1455,7 @@
     "id": "aha-bls-provider-readiness-check-choking-opioid-015",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "choking-opioid",
-    "prompt": "If abdominal thrusts fail and the adult remains responsive but still severely choking, you should",
+    "prompt": "If the first cycle of back blows and abdominal thrusts does not clear a responsive adult’s severe choking, you should",
     "options": [
       {
         "id": "a",
@@ -1463,23 +1463,23 @@
       },
       {
         "id": "b",
-        "text": "Stop thrusts and wait for EMS while the victim coughs"
+        "text": "Stop the maneuvers and wait for EMS while the victim tries to cough"
       },
       {
         "id": "c",
-        "text": "Continue cycles of thrusts until the object is expelled"
+        "text": "Continue alternating 5 back blows and 5 abdominal thrusts"
       },
       {
         "id": "d",
-        "text": "Try a blind finger sweep after each unsuccessful round of thrusts"
+        "text": "Do a blind finger sweep after each unsuccessful cycle"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Persist with the choking algorithm until the object is expelled; prepare to transition to CPR if the victim becomes unresponsive.",
+    "explanation": "Keep repeating 5 back blows then 5 abdominal thrusts until the object is expelled or the adult becomes unresponsive. Then lower them to a firm surface, start CPR, and look for a visible object before each breath.",
     "distractorExplanations": {
-      "a": "Rescue breaths are for unresponsive victims during CPR; a responsive victim needs continued thrusts.",
-      "b": "A victim who cannot cough effectively needs ongoing thrusts, not waiting for EMS.",
-      "d": "Blind sweeps can push the object deeper; look for and remove only visible objects."
+      "a": "Rescue breaths are for unresponsive victims during CPR; a responsive victim needs continued back blows and thrusts.",
+      "b": "A victim who cannot cough effectively still needs the FBAO cycles, not a pause while waiting for EMS.",
+      "d": "Blind sweeps can lodge the object deeper; look for and remove only an object you can see."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -1508,7 +1508,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Closed-loop reduces errors in high-stress codes.",
+    "explanation": "Closed-loop communication: the sender gives an order, the receiver repeats it back, and the sender confirms. That read-back catches wrong drugs, doses, and missed tasks in a noisy code.",
     "distractorExplanations": {
       "b": "Repeating an order is one-way; closed loop needs the receiver to echo it and the sender to confirm.",
       "c": "A nod gives no verbal check; closed loop requires a read-back and confirmation.",

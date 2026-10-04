@@ -57,6 +57,8 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | veterinary-assistant-anki-deck + veterinary-assistant-readiness-check | wave pair (Anki planned) | 2026-09-12 | 2026-11-11 | Pulse mock views; free 60Q vs OpenExamPrep/VetMedTeam; official AVA ~100Q/150m/75%; ≠ VTNE; Anki waitlist |
 | cda-childcare-anki-deck + cda-childcare-readiness-check | wave pair (Anki planned) | 2026-10-03 | 2026-12-02 | Bing WI Exam start; SERP: OpenExamPrep (200+ free, no signup), iPrep (2-day free), Council official sample PDFs per setting, dental-assistant CDA sites take half the results; beat = free timed 60Q + 4-topic report, new scenario bank; gap fixed = official 65 Q / 1 h 45 / pass-fail + Birth to Five note left to Council, title disambiguates "Child Development Associate"; deck planned (noindex, waitlist) |
 | medical-scribe-anki-deck + medical-scribe-readiness-check | wave pair (Anki planned) | 2026-09-20 | 2026-11-19 | Bing PH Exam start; bank rewritten from CMA remap; free 60Q vs OpenExamPrep MSCE volume; MSCE ~100/75/80% honesty; ≠ CCMA/CMA; Anki waitlist |
+| aha-bls-provider-anki-deck + aha-bls-provider-readiness-check | wave pair (Anki planned) | 2026-10-04 | 2026-12-03 | Charleston SC Exam start; P0 2025 infant/FBAO keys fixed; beat = free timed 60Q/45m/84% cognitive vs OpenExamPrep 100Q / Educato stale 2024; honesty ~25Q HeartCode + skills; deck planned |
+| ardms-spi-anki-deck + ardms-spi-readiness-check | wave pair (Anki planned) | 2026-10-04 | 2026-12-03 | Seoul Bing Learn start; beat = free timed 60Q physics vs OpenExamPrep 124+ / Mometrix; honesty ~110Q/2h/555; text-only ≠ ABD/OB; deck planned |
 
 Homepage `/` is a hub — not a SKU row.
 
