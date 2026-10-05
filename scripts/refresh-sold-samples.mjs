@@ -54,6 +54,7 @@ const LANGUAGE_EXAM = new Set([
 
 const TEMPLATE_RE =
   /fdic deposit insurance|this concept is identical|this concept has no application|this concept always eliminates|does not match the correct definition|remapped from sibling|what is included in /i;
+const TEMPLATE_NOTE_RE = /not the best answer here|the right answer is|this item asks|the matching answer is|matches this rule/i;
 const WEAK_STEM_RE =
   /^(what is (risk|the sec|finra|pure risk|speculative risk|personal property|real property|a fixture)\b)/i;
 const META_EXAM_RE =
@@ -123,8 +124,8 @@ function scoreCivic(q, a, hint) {
 function scoreMcq(q, a, allOptionText, hint) {
   q = sanitizeStem(q);
   a = clean(a);
-  if (q.length < 28 || q.length > 320) return -1;
-  if (a.length < 8 || a.length > 200) return -1;
+  if (q.length < 28 || q.length > 380) return -1;
+  if (a.length < 8 || a.length > 420) return -1;
   if (TEMPLATE_RE.test(q) || TEMPLATE_RE.test(a)) return -1;
   let score = 16;
   if (TEMPLATE_RE.test(allOptionText)) score = 3;
@@ -132,7 +133,10 @@ function scoreMcq(q, a, allOptionText, hint) {
   if (/\?/.test(q) || /:$/.test(q)) score += 3;
   if (a.length >= 18 && a.length <= 140) score += 4;
   if (q.length >= 50 && q.length <= 200) score += 3;
-  if (/\b(must|which|when|before|after|primarily|typically)\b/i.test(q)) score += 2;
+  if (q.length > 140) score += 8;
+  if (/\b(seller|buyer|licensee|salesperson|broker|homeowner|client)\b/i.test(q)) score += 8;
+  if (/\b(must|which|when|before|after|primarily)\b/i.test(q)) score += 2;
+  if (/best characterized as|typically may result|fee simple absolute/i.test(q)) score -= 22;
   score += Math.min(6, overlapHint(`${q} ${a}`, hint) * 2);
   return score;
 }
@@ -240,11 +244,17 @@ function pickFromMockBank(slug, file, hint) {
   const ranked = questions
     .map((q) => {
       const correct = (q.options || []).find((o) => o.id === q.correctOptionId)?.text ?? "";
+      const notes = Object.values(q.distractorExplanations || {}).map(clean);
+      const teaches =
+        clean(q.explanation).length >= 60 &&
+        notes.length >= (q.options || []).length - 1 &&
+        notes.every((note) => note.length >= 40 && !TEMPLATE_NOTE_RE.test(note));
       return {
         q: sanitizeStem(q.prompt),
         a: clean(correct),
         topic: q.topicId || "",
-        score: scoreMcq(
+        showcase: teaches && clean(q.prompt).length >= 150 && clean(q.explanation).length >= 150,
+        score: !teaches ? -1 : scoreMcq(
           q.prompt,
           correct,
           (q.options || []).map((o) => o.text).join(" "),
@@ -252,7 +262,9 @@ function pickFromMockBank(slug, file, hint) {
         ),
       };
     });
-  return diversify(ranked, slug);
+  const showcase = ranked.filter((row) => row.showcase && row.score > 0);
+  const showcaseTopics = new Set(showcase.map((row) => row.topic));
+  return diversify(showcase.length >= 3 && showcaseTopics.size >= 3 ? showcase : ranked, slug);
 }
 
 function loadJson(path, fallback) {

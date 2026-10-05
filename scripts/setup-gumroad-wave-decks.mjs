@@ -814,7 +814,7 @@ async function main() {
         const product = await createGumroadProduct({
           token,
           name,
-          priceCents: catalog.defaultPriceCents,
+          priceCents: record.priceCents ?? catalog.defaultPriceCents,
           description,
           permalink,
         });
