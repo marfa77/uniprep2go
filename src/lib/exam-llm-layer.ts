@@ -832,7 +832,7 @@ export function buildMockDataLlmFacts(
       ? `${examProfile.exam_facts.exam_name}: ${profileFactLines(examProfile).join(" ")}`
       : config.officialSourceNote,
     `Topics: ${topicSummary}.`,
-    examProfile ? `High-yield: ${topHighYieldFacts(examProfile)}.` : null,
+    examProfile ? `High-yield: ${topHighYieldFacts(examProfile).replace(/\.$/, "")}.` : null,
     examProfile ? topCandidateQa(examProfile) : null,
     seo.examFaqs?.[0] ? `Q: ${seo.examFaqs[0].question} A: ${seo.examFaqs[0].answer}` : null,
     `Independent study aid — not official ${config.examBody} exam material.`,
@@ -926,7 +926,7 @@ export function buildDeckDataLlmFacts(
     examProfile
       ? `${examProfile.exam_facts.exam_name}: ${profileFactLines(examProfile).join(" ")}`
       : null,
-    examProfile ? `High-yield: ${topHighYieldFacts(examProfile)}.` : null,
+    examProfile ? `High-yield: ${topHighYieldFacts(examProfile).replace(/\.$/, "")}.` : null,
     examProfile ? topCandidateQa(examProfile) : null,
     linkedMock
       ? `Linked free mock: ${linkedMock.title} — ${linkedMock.questionCount} questions, ${linkedMock.durationMinutes} min.`
@@ -1005,7 +1005,7 @@ export function buildDeckAiCategory(deck: DeckLlmInput): string {
 export function buildSiteDataLlmFacts(indexedMockCount: number, deckCount: number): string {
   return compactJoin([
     `${siteConfig.name}: ${siteConfig.description}`,
-    `Primary market: ${siteConfig.primaryMarket}. Positioning: ${siteConfig.primaryPositioning}.`,
+    `Primary market: ${siteConfig.primaryMarket}. Positioning: ${siteConfig.primaryPositioning.replace(/\.$/, "")}.`,
     `${indexedMockCount} live indexed timed practice tests (first mock free, then $5 for 5 attempts); ${deckCount} paid Anki decks and PDFs for weak-topic repair after mock reports.`,
     `Flagship mock: FINRA SIE (75 questions). Building/safety mocks include EPA 608, LEED GA, BMS, MRICS, CFPS, NEBOSH.`,
     mockFreeAccessNotice,
