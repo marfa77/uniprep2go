@@ -8,6 +8,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 
 | Slug | Kind | last_pass | next_ok | One-line beat / gap |
 | --- | --- | --- | --- | --- |
+| rd-exam-anki-deck + rd-exam-readiness-check | wave pair (live $11 Anki) | 2026-10-05 | 2026-12-04 | Bing PH Exam start. Beat = free no-signup timed **120Q/120m** + $11/120 .apkg vs Mometrix/Study.com teasers, DietitianTest 10Q (wrong 25/40/21/14 weights), OpenExamPrep 200+ untimed. Honesty: official CAT 125–145 / 3h / scaled 25; not CAT; 2022–2026 domains (2027 regroup). Gap: volume vs 1k+ paid banks. |
 | praxis-core-anki-deck + praxis-core-readiness-check | wave pair (Anki planned) | 2026-10-04 | 2026-12-03 | Wave-template rewrite; beat = free 60Q/75m combined SR vs 240Tutoring. Honesty: three ETS Core tests. ≠ 5355. |
 | praxis-special-education-anki-deck + praxis-special-education-readiness-check | wave pair (Anki planned) | 2026-10-04 | 2026-12-03 | Wave-template rewrite; typical 5355 120Q/2h vs 60Q/75m. ≠ Core. |
 | precision-nutrition-l1-anki-deck + precision-nutrition-l1-readiness-check | wave pair (Anki planned) | 2026-10-04 | 2026-12-03 | Wave-template rewrite; coaching cert ≠ RDN/CPT. |

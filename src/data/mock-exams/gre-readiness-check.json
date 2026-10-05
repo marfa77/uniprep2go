@@ -9969,33 +9969,34 @@
     "id": "gre-readiness-check-quant-143",
     "examSlug": "gre-readiness-check",
     "topicId": "quant",
-    "prompt": "How many positive divisors does 48 have?",
+    "prompt": "How many three-digit positive integers are divisible by 7?",
     "options": [
       {
         "id": "a",
-        "text": "6"
+        "text": "127"
       },
       {
         "id": "b",
-        "text": "8"
+        "text": "128"
       },
       {
         "id": "c",
-        "text": "10"
+        "text": "129"
       },
       {
         "id": "d",
-        "text": "12."
+        "text": "142"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "48 = 2^4 × 3^1, so the number of positive divisors is (4+1)(1+1) = 10. Candidates who treat 48 as 2^4 × 3^2 (confusing with 144) get 15, which is not listed; (4+1)(1+0) as if 3 were missing yields 5.",
+    "correctOptionId": "b",
+    "explanation": "The three-digit integers run from 100 through 999. The smallest multiple of 7 in that range is 105 (7 × 15) and the largest is 994 (7 × 142). The count is 142 − 15 + 1 = 128. Equivalently, ⌊999/7⌋ − ⌊99/7⌋ = 142 − 14 = 128.",
     "distractorExplanations": {
-      "a": "6 would fit 32 = 2^5 (six divisors) or 12 = 2^2×3, not 48.",
+      "a": "127 is an off-by-one: 142 − 15 = 127 drops the inclusive +1 on the 105-to-994 count.",
       "b": "8 is the divisor count of 24 = 2^3×3 or of a 7th power of a prime, not of 48.",
-      "d": "12 is the divisor count of 60 = 2^2×3×5; that extra prime 5 is not in 48."
+      "d": "142 is ⌊999/7⌋, the count of positive multiples of 7 up to 999, including 7 through 98.",
+      "c": "129 would be 142 − 14 + 1, which treats 98 as a three-digit multiple (it is two-digit)."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04 GRE Verbal+Quant market-standard pass."
   },
   {

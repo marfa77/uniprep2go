@@ -471,8 +471,9 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     description:
       "Free 120-question Registered Dietitian (RDN) exam readiness check across CDR’s four domains — principles, nutrition care, management, and foodservice.",
     examBody: "CDR (Commission on Dietetic Registration)",
-    lastUpdated: "2026-08-14",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2) — thickened explanations August 2026.",
+    lastUpdated: "2026-10-05",
+    questionSourceNote:
+      "Original UniPrep2Go local bank (Wave 2). Point-fixed 2026-10-05: leftover-reheat 165°F/15 s vs poultry cook CCP, thin notes/explanations.",
   }),
 ];
 

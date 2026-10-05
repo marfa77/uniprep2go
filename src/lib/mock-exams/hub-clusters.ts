@@ -139,7 +139,7 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "tx-real-estate-readiness-check":
     "This free Texas real estate sales agent readiness check is a timed TREC-style diagnostic after qualifying education — dual national + Texas-law themes (TRELA/TREC rules, contracts & agency, finance/closing math, property practice). Official Pearson VUE sitting is longer with ~70% required on each scored portion; this 60-question / 75-minute / 70% mock finds weak domains before you schedule. Independent — not TREC material.",
   "rd-exam-readiness-check":
-    "This free RD / RDN readiness check maps to CDR’s four Registration Examination domains — Principles (21%), Nutrition Care (45%), Management (21%), and Foodservice Systems (13%). Official exam is computer-adaptive 125–145 items in 3 hours with scaled pass 25/50; this 60-question timed diagnostic is a shorter baseline so dietetic candidates repair weak domains with Anki before Pearson VUE — not CDR material.",
+    "This free RD / RDN readiness check maps to CDR’s four Registration Examination domains — Principles (21%), Nutrition Care (45%), Management (21%), and Foodservice Systems (13%). Official exam is computer-adaptive 125–145 items in 3 hours with scaled pass 25/50; this 120-question / 120-minute timed diagnostic is a linear baseline (not CAT) so dietetic candidates repair weak domains with the $11 / 120-card Anki deck before Pearson VUE — not CDR material.",
   "pmp-readiness-check":
     "This free PMP readiness check stresses PMI ECO domains under timed pressure so project managers can see which people, process, and business-environment topics still need Anki before booking the Pearson VUE window.",
   "us-citizenship-readiness-check":

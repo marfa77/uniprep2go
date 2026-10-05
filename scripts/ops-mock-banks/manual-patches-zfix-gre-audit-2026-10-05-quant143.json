@@ -1,0 +1,21 @@
+{
+  "gre-readiness-check": {
+    "gre-readiness-check-quant-143": {
+      "prompt": "How many three-digit positive integers are divisible by 7?",
+      "options": {
+        "a": "127",
+        "b": "128",
+        "c": "129",
+        "d": "142"
+      },
+      "correctOptionId": "b",
+      "explanation": "The three-digit integers run from 100 through 999. The smallest multiple of 7 in that range is 105 (7 × 15) and the largest is 994 (7 × 142). The count is 142 − 15 + 1 = 128. Equivalently, ⌊999/7⌋ − ⌊99/7⌋ = 142 − 14 = 128.",
+      "distractorExplanations": {
+        "a": "127 is an off-by-one: 142 − 15 = 127 drops the inclusive +1 on the 105-to-994 count.",
+        "c": "129 would be 142 − 14 + 1, which treats 98 as a three-digit multiple (it is two-digit).",
+        "d": "142 is ⌊999/7⌋, the count of positive multiples of 7 up to 999, including 7 through 98."
+      },
+      "difficulty": "medium"
+    }
+  }
+}

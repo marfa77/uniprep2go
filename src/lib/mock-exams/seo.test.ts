@@ -17,6 +17,13 @@ describe("mock exam SEO", () => {
 
     expect(buildMockSeoTitle(sie!)).toContain("SIE Practice Test");
     expect(buildMockSeoDescription(sie!)).toContain("75 timed questions");
+
+    const rd = getMockExamConfig("rd-exam-readiness-check");
+    expect(rd).toBeDefined();
+    expect(buildMockSeoTitle(rd!)).toContain("RD Exam Practice Test");
+    expect(buildMockSeoDescription(rd!)).toContain("120 timed questions");
+    expect(buildMockSeoDescription(rd!)).not.toContain("60 timed questions");
+    expect(buildMockSeoDescription(rd!)).toContain("$11");
   });
 
   it("exposes search-intent FAQs on the HTML page and in JSON-LD", () => {

@@ -1319,9 +1319,14 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
           "Computer-adaptive: 125–145 total questions including 25 unscored pretest items. You must answer at least 125 items for a scored report.",
       },
       {
+        question: "How long is the UniPrep2Go RD readiness check?",
+        answer:
+          "120 multiple-choice questions in 120 minutes with a 70% diagnostic target and a score for each of the four CDR domains. It is linear, not computer-adaptive. Official CDR is 125–145 items in 3 hours, scaled pass 25/50.",
+      },
+      {
         question: "Is this UniPrep2Go check the official CDR exam?",
         answer:
-          "No. It is an independent 120-question readiness diagnostic mapped to CDR domain themes — not CDR or Pearson VUE material.",
+          "No. It is an independent 120-question / 120-minute readiness diagnostic mapped to 2022–2026 CDR domain themes — not CDR or Pearson VUE material, and not the 2027–2031 outline yet.",
       },
     ],
     keywords: ["rd exam practice test", "rdn practice exam", "dietitian registration exam practice", "cdr rd practice test"],

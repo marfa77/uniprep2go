@@ -1030,6 +1030,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Data centre operators, facility engineers, IT infrastructure staff, and technicians preparing for the EXIN EPI Certified Data Centre Professional credential after accredited EPI training.",
     practiceTestLabel: "CDCP practice test",
   },
+  "rd-exam-readiness-check": {
+    title: "Free RD Exam Practice Test 2026 | 120 Questions Online",
+    description:
+      "Free RD / RDN practice test — first mock free, no signup: 120 timed questions, 120 minutes, 70% readiness target, four CDR domain scores. Official exam is CAT 125–145 items / 3 hours / scaled 25. Then repair with the $11 / 120-card Anki deck. Independent — not CDR material.",
+    keywords: [
+      "rd exam practice test",
+      "rdn practice exam",
+      "free registered dietitian practice test",
+      "cdr rd practice test",
+      "dietitian registration exam practice",
+      "rd exam anki",
+    ],
+    headline: "Free RD Exam Practice Test",
+    intro:
+      "A timed 120-question / 120-minute linear diagnostic across CDR’s 2022–2026 domains (Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%) — then drill weak rows in the linked $11 / 120-card Anki deck. Official Registration Examination for Dietitians is computer-adaptive 125–145 items in 3 hours with scaled pass 25/50. This check is not CAT and is not Pearson VUE. From January 1, 2027 CDR regroups domains; this bank still uses 2022–2026 labels.",
+    audience:
+      "Dietetic interns and RDN candidates after ACEND-accredited education and supervised practice who want a timed domain report before Pearson VUE — not DTR/NDTR and not a nursing or CPT bank.",
+    practiceTestLabel: "RD Exam practice test",
+  },
   "acsm-cpt-readiness-check": {
     title: "Free ACSM CPT Practice Test 2026 | 120 Questions Online",
     description:
