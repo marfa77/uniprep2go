@@ -409,9 +409,9 @@ describe("deck catalog", () => {
     expect(seriesSevenDeck?.facts.cards).toBe("300");
     expect(seriesSevenDeck?.sampleCards).toHaveLength(3);
     expect(seriesSevenDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "How do defined benefit and defined contribution plans differ?",
-      "When must retail communications about registered investment companies be filed with FINRA?",
-      "How do all-or-none, fill-or-kill, and immediate-or-cancel orders differ?",
+      "A customer in the 32% bracket compares a 4% muni with a 5.5% corporate bond. Which pays more after tax?",
+      "A customer buys 1 XYZ Jan 50 put at 3. What is the maximum loss, and at what stock price does it occur?",
+      "When a customer's risk tolerance and risk capacity disagree, which one limits the recommendation?",
     ]);
   });
 

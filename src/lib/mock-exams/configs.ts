@@ -355,7 +355,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A free 60-question Series 7 readiness diagnostic: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-10-02",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "series-63-readiness-check",

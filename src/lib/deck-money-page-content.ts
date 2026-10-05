@@ -1748,6 +1748,8 @@ New entrants confuse IPO vs secondary offerings, margin account rules, and when 
 
 Series 7 flashcards for Top-Off: seeking business and opening accounts, investment products (equity, debt, options, funds), recommendations and suitability, order handling, confirmations, settlement, and regulatory records. Options cards include spreads, straddles, and margin requirements. Municipal securities and MSRB rules have dedicated prompts. This is not a [Series 63 flashcards](/decks/series-63-anki-deck) pack (NASAA state law).
 
+The three sample cards on this page are real notes from the shipped .apkg: tax-equivalent yield on a 4% muni versus a 5.5% corporate in the 32% bracket, maximum loss on a long XYZ 50 put bought at 3, and which of risk tolerance versus capacity limits a recommendation.
+
 Official FINRA Series 7 Top-Off is **125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated)**. Our free mock is a **60-question / 90-minute** job-function diagnostic — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
 
 ### Study plan with the free mock

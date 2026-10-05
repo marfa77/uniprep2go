@@ -821,21 +821,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "How do defined benefit and defined contribution plans differ?",
+        question: "A customer in the 32% bracket compares a 4% muni with a 5.5% corporate bond. Which pays more after tax?",
         answer:
-          "Defined benefit promises a set retirement benefit and the employer bears the investment risk. Defined contribution sets contributions, and the employee bears investment risk.",
+          "Divide the muni yield by one minus the customer's federal bracket to get the taxable-equivalent yield. 4% / 0.68 = 5.88%, which beats the 5.5% corporate, so the muni wins. The higher the bracket, the more a muni is worth; an in-state muni can also avoid state tax. The comparison is meaningless inside an IRA.",
         imageUrl: "/samples/series-7-anki-deck-sample-1.webp",
       },
       {
-        question: "When must retail communications about registered investment companies be filed with FINRA?",
+        question: "A customer buys 1 XYZ Jan 50 put at 3. What is the maximum loss, and at what stock price does it occur?",
         answer:
-          "Retail communications about mutual funds, ETFs, UITs, and variable products that were not previously filed must be filed within 10 business days after first use.",
+          "A long put's maximum loss is the premium paid, times 100 shares per contract. It happens if the stock closes at or above the strike at expiration, because the put expires worthless. The risk is known and paid up front, which is why buying a put is a lower-risk bearish strategy than shorting the stock.",
         imageUrl: "/samples/series-7-anki-deck-sample-2.webp",
       },
       {
-        question: "How do all-or-none, fill-or-kill, and immediate-or-cancel orders differ?",
+        question: "When a customer's risk tolerance and risk capacity disagree, which one limits the recommendation?",
         answer:
-          "AON: fill the whole order or nothing, but not necessarily immediately. FOK: fill the whole order immediately or cancel it. IOC: fill immediately whatever is possible and cancel the rest.",
+          "Risk tolerance is the customer's willingness to accept losses; risk capacity is the financial ability to absorb them, based on income, net worth, obligations, and time horizon. The recommendation should fit the lower of the two: an eager investor with little capacity, or a wealthy but anxious one, both get a more conservative portfolio.",
         imageUrl: "/samples/series-7-anki-deck-sample-3.webp",
       },
     ],

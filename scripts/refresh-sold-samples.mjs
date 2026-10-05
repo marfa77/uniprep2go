@@ -219,6 +219,8 @@ function pickFromAuthoredDeckCsv(slug, files, maxBack = 220) {
       let score = 10;
       if (/^(what is|what are|what does)\b/i.test(q)) score -= 6;
       if (/\b(how|why|when|differ|breakeven|compare|versus|vs\.?)\b/i.test(q)) score += 6;
+      if (/\b(customer|client|investor)\b/i.test(q)) score += 8;
+      if (/\d/.test(q) && /\d/.test(a)) score += 6;
       if (clean(cells[iMistake])) score += 3;
       if (clean(cells[iExample])) score += 2;
       if (clean(cells[iFormula])) score += 3;
@@ -281,7 +283,7 @@ for (const [slug, product] of Object.entries(civic.products || {})) {
 
 const authoredDeckCsv = [
   ["sie-exam-anki-deck", "sie_300_authored.csv"],
-  ["series-7-anki-deck", "series7_300_authored.csv"],
+  ["series-7-anki-deck", "series7_300_authored.csv", 380],
   ["series-63-anki-deck", "series63_250_authored.csv"],
   ["frm-part-1-anki-deck", "frm_part1_v2_authored.csv"],
   ["cfa-level-2-anki-deck", ["cfa_level2_complete.csv", "cfa_level2_p1_authored.csv"], 420],
