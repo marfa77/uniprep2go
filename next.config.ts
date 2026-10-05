@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },
+  async redirects() {
+    return [
+      // No standalone pricing page — list prices live on the deck catalog.
+      {
+        source: "/pricing",
+        destination: "/decks",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

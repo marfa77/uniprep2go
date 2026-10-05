@@ -65,6 +65,8 @@ import {
   buildMockSeoTitle,
   getMockLocaleMeta,
 } from "@/lib/mock-exams/seo";
+import { getLinkedDeckCoverUrl } from "@/lib/mock-exams/linked-deck-cover";
+import { getMockClusterImage } from "@/lib/mock-exams/cluster-images";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import { getCitizenshipGuideContent } from "@/lib/mock-exams/citizenship-guide-content";
 import { buildSocialMetadata } from "@/lib/social-metadata";
@@ -95,7 +97,9 @@ export async function generateMetadata({
   const keywords = buildMockSeoKeywords(config);
   const localeMeta = getMockLocaleMeta(config, "nl-BE");
 
-  const coverImage = absoluteUrl(`/covers/${config.linkedDeckSlug}.webp`);
+  const coverImage = absoluteUrl(
+    getLinkedDeckCoverUrl(config.linkedDeckSlug) ?? getMockClusterImage(getVerticalDefinition(config.verticalId)?.imageType ?? config.verticalId),
+  );
   const examFactsProfile = getExamFactsProfileForDeck(config.linkedDeckSlug);
   const robots = mockExamRobots(config.slug);
 

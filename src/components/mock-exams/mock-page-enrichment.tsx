@@ -1,27 +1,15 @@
-import fs from "node:fs";
-import path from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { getCatalogDeckBySlug } from "@/lib/decks";
+import { getLinkedDeckCoverUrl } from "@/lib/mock-exams/linked-deck-cover";
 import { getMockClusterImage } from "@/lib/mock-exams/cluster-images";
 import { getMocksByVertical } from "@/lib/mock-exams/hub-clusters";
-import {
-  getMockOfficialResources,
-  type MockOfficialResources,
-} from "@/lib/mock-exams/official-resources";
+import { getMockOfficialResources, type MockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
 import { buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
-
-function linkedDeckCoverExists(deckSlug: string) {
-  try {
-    return fs.existsSync(path.join(process.cwd(), "public", "covers", `${deckSlug}.webp`));
-  } catch {
-    return false;
-  }
-}
 
 function ExternalLink({
   href,
@@ -48,8 +36,7 @@ function ExternalLink({
 export function MockExamVisualHero({ config }: { config: MockExamConfig }) {
   const vertical = getVerticalDefinition(config.verticalId);
   const clusterSrc = getMockClusterImage(vertical?.imageType ?? config.verticalId);
-  const hasCover = linkedDeckCoverExists(config.linkedDeckSlug);
-  const coverSrc = `/covers/${config.linkedDeckSlug}.webp`;
+  const coverSrc = getLinkedDeckCoverUrl(config.linkedDeckSlug);
   const copy = buildMockSeoPageCopy(config);
 
   return (
@@ -66,7 +53,7 @@ export function MockExamVisualHero({ config }: { config: MockExamConfig }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#18140f] via-[#18140f]/55 to-[#18140f]/15" />
         <div className="absolute inset-x-0 bottom-0 flex items-end gap-4 p-5 sm:p-6">
-          {hasCover ? (
+          {coverSrc ? (
             <div className="relative h-20 w-14 shrink-0 overflow-hidden rounded-lg border border-[#fffaf0]/25 shadow-lg sm:h-24 sm:w-[4.25rem]">
               <Image
                 alt={`${copy.practiceTestLabel} Anki cover`}
