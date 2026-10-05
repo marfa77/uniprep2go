@@ -749,7 +749,7 @@ describe("deck catalog", () => {
       "cfps-anki-deck": "CFPS Anki Deck — 400 Flashcards",
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",
-      "series-7-anki-deck": "Series 7 Anki Deck — 300 High-Yield Flashcards",
+      "series-7-anki-deck": "Series 7 Flashcards — 300 High-Yield Top-Off Cards + Free Timed Mock",
       "series-63-anki-deck": "Series 63 Flashcards — 250 High-Yield NASAA Cards + Free Timed Mock",
       "california-real-estate-exam-anki-deck":
         "California Real Estate Exam Anki Deck — 250 High-Yield Flashcards",

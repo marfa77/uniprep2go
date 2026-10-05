@@ -119,7 +119,7 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "series-7-readiness-check":
     "Use this free Series 7 readiness check after SIE to stress-test General Securities Representative judgment on equities, debt, options, packaged products, and customer suitability. It is built for sponsored candidates climbing the FINRA license ladder — not a recycled SIE quiz — so you can see which Series 7 topics still need daily drill.",
   "series-63-readiness-check":
-    "This free Series 63 readiness check targets Uniform Securities Agent State Law rules that sit beside Series 7 for many state registrations. Timed items cover registration, unethical practices, and administrative provisions so you can close the state-law gap on the same buyer ladder as SIE and Series 7.",
+    "This free Series 63 readiness check targets Uniform Securities Agent State Law rules that sit beside Series 7 for many state registrations. Timed items cover registration, unethical practices, and administrative provisions so you can close the state-law gap — then repair with Series 63 flashcards on the same buyer ladder as SIE and Series 7.",
   "california-real-estate-readiness-check":
     "This free California real estate salesperson readiness check focuses on DRE license law, contracts, property ownership, agency, and exam math for the endless CA cohort. Use it as a timed diagnostic before PSI — then repair weak topics with the linked Anki deck between study blocks.",
   "cfa-level-1-readiness-check":
@@ -129,7 +129,7 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "frm-part-1-readiness-check":
     "This free FRM Part 1 readiness check targets foundations of risk, quant, markets and products, and valuation models so GARP candidates can see which Part 1 pillars still need daily Anki before booking the exam window.",
   "ptcb-pharmacy-technician-mock":
-    "This free PTCB pharmacy technician practice mock covers medications, federal requirements, patient safety, and order entry judgment. Use the topic report to decide whether to buy the PTCB Anki deck or the 2026 study guide next — not a recycled generic quiz bank.",
+    "This free PTCB pharmacy technician practice mock covers medications, federal requirements, patient safety, and order entry judgment. Need the January 2026 PTCE content outline in print? Use the linked blueprint study guide. Use the topic report to decide whether to buy the PTCB Anki deck or the 2026 study guide next — not a recycled generic quiz bank.",
   "nha-excpt-readiness-check":
     "This free NHA ExCPT readiness check is built for pharmacy technician candidates on the ExCPT path who need timed practice before the official exam. Review weak domains, then drill the matching Anki rows instead of re-reading unpaid blog dumps.",
   "mrics-quantity-surveying-readiness-check":

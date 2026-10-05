@@ -784,13 +784,15 @@ const rawDecks: Deck[] = [
     slug: "series-7-anki-deck",
     category: "finance",
     status: "available",
-    title: "Series 7 Anki Deck — 300 High-Yield Flashcards",
+    title: "Series 7 Flashcards — 300 High-Yield Top-Off Cards + Free Timed Mock",
     shortName: "Series 7",
-    subtitle: "A focused Anki deck for FINRA Series 7 Top-Off active recall.",
+    subtitle:
+      "Series 7 flashcards: 300 FINRA Top-Off Anki cards + free 60-question timed practice test — suitability, products, order flow.",
     directAnswer:
-      "UniPrep2Go sells an independent Series 7 Anki deck with 300 high-yield cards covering FINRA's Series 7 job-function outline: seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 60-question / 90-minute Series 7 readiness check (official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 equated). Every card pairs the rule with a worked example and a common-mistake note, and the 300 cards follow FINRA's 7/9/73/11% job-function weights. The deck is a supplementary active-recall study aid for Series 7 candidates and is not official FINRA material.",
-    lastUpdated: "2026-10-02",
-    audience: "Series 7 candidates sponsored by a FINRA member firm, new financial advisors, registered representative trainees, and SIE passers who want focused spaced-repetition review.",
+      "UniPrep2Go sells Series 7 flashcards as a 300-card Anki deck for FINRA Series 7 Top-Off — seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing — plus a 60-question timed Series 7 practice test (first mock free, no signup) with job-function scoring. The official exam is 125 scored + 5 pretest in 3 hours 45 minutes; passing score 72 equated. Card counts follow FINRA’s 7/9/73/11% job-function weights. Every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official FINRA material.",
+    lastUpdated: "2026-10-05",
+    audience:
+      "Series 7 candidates searching for flashcards after the SIE, sponsored registered-rep trainees, and anyone who needs Top-Off product/suitability recall plus a free timed mock — not Series 63 state-law flashcards.",
     format: ".apkg",
     coverImage: "/covers/series-7-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/lvzval?wanted=true",
@@ -838,6 +840,11 @@ const rawDecks: Deck[] = [
       },
     ],
     faqs: [
+      {
+        question: "Where can I get Series 7 flashcards?",
+        answer:
+          "UniPrep2Go’s Series 7 Anki deck is 300 high-yield flashcards covering FINRA Top-Off job functions — suitability, products, options, accounts, and order flow — delivered as an .apkg for spaced repetition on phone or desktop.",
+      },
       {
         question: "What does the Series 7 deck include?",
         answer: "300 high-yield Anki cards covering FINRA Series 7 Top-Off topics including suitability, products, options, bonds, customer accounts, order handling, settlement, and communications. Each card has a question-style front, a rule-level answer, a worked example, and a common-mistake note; 50 cards carry formulas.",
@@ -4990,6 +4997,7 @@ export function getFeaturedDecks() {
 export const RELATED_DECK_PEER_GROUPS: string[][] = [
   ["nasm-cpt-anki-deck", "issa-cpt-anki-deck", "ace-cpt-anki-deck"],
   ["luxembourg-vivre-ensemble-anki-deck", "einburgerung-schweiz-anki-deck", "leben-in-deutschland-anki-deck"],
+  ["sie-exam-anki-deck", "series-7-anki-deck", "series-63-anki-deck"],
   ["ptcb-pharmacy-technician-anki-deck", "ptcb-study-guide-2026"],
   ["cfa-level-1-anki-deck", "cfa-level-1-formula-reference-2026", "cfa-level-2-anki-deck"],
   // English-for-* family — cross-link siblings so Google sees distinct gloss editions (PT was crawled-not-indexed as near-dupe).

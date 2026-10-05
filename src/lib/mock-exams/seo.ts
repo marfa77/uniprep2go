@@ -159,10 +159,12 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "ptce practice exam",
       "pharmacy technician practice test",
       "ptcb exam questions",
+      "ptce content outline",
+      "ptcb outline 2026",
     ],
     headline: "Free PTCB Pharmacy Technician Practice Test (2026 Outline)",
     intro:
-      "A full-length PTCB / PTCE mock on the January 2026 outline: 90 questions in 110 minutes with domain-weighted scoring across medications, federal requirements (including DSCSA), patient safety, and order entry. Official PTCE pass is a scaled 1,400 on 80 scored items (10 pretest). Compounding/alligation are off the 2026 outline. After the report, drill only weak domains in the $11 / 300-card Anki deck (study-guide PDF sold separately).",
+      "A full-length PTCB / PTCE mock on the January 2026 outline: 90 questions in 110 minutes with domain-weighted scoring across medications, federal requirements (including DSCSA), patient safety, and order entry. For the printable PTCE content outline / blueprint chapters, use the [PTCB Outline 2026 Study Guide](/decks/ptcb-study-guide-2026). Official PTCE pass is a scaled 1,400 on 80 scored items (10 pretest). Compounding/alligation are off the 2026 outline. After the report, drill only weak domains in the $11 / 300-card Anki deck.",
     audience:
       "Pharmacy technician candidates, pharmacy tech students, and career changers preparing for the PTCE who want a timed readiness baseline before buying prep courses or drilling flashcards.",
     practiceTestLabel: "PTCB / PTCE practice test",
@@ -206,7 +208,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-7-readiness-check": {
     title: "Series 7 Practice Test 2026 | Free 60Q Timed Online",
     description:
-      "Series 7 practice test — first mock free, no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with the linked $29 / 300-card Anki deck. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
+      "Series 7 practice test — first mock free, no signup: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with Series 7 flashcards ($29 / 300-card Anki). Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
     keywords: [
       "series 7 practice test",
       "free series 7 practice test",
@@ -217,7 +219,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Series 7 Practice Test — 60 Questions",
     intro:
-      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions in the linked $29 / 300-card Anki deck. Official FINRA Series 7 is 125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated); this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
+      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions with [Series 7 flashcards](/decks/series-7-anki-deck) ($29 / 300 cards). Official FINRA Series 7 is 125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated); this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
     audience: "Series 7 Top-Off candidates who want a timed diagnostic before drilling suitability and product questions.",
     practiceTestLabel: "Series 7 practice test",
   },

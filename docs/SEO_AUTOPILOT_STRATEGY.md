@@ -80,6 +80,13 @@ Pricing, Gumroad IDs, auth, DB banks, layout CSS, invented official pass rates, 
 
 ## Run log
 
+### 2026-10-05 — Layer B: Series 7 flashcards (GSC pos 12.5)
+
+**Why:** Fresh `gsc:export` 2026-10-05. Only commercial query already on page 2 is `series 7 flashcards` → `/decks/series-7-anki-deck` (6 impr / 28d @ 12.5). Series 63 flashcards still ~57. PTCB guide page-pos 4.3 is still junk `yes`. Indexing already done by hand — no mass Request indexing.
+**Shipped:** Series 7 title/H1/directAnswer/FAQ/money copy → flashcards; FINRA related-rail SIE↔7↔63; PTCB mock intro points outline queries to the 2026 PDF.
+**Pause:** still no hub tree / catalog dump.
+**Next:** 14d GSC — if Series 7 pos ≤10, deepen 7→63 internal links only.
+
 ### 2026-09-24 — Pause until ~2026-10-01
 
 **Why:** Wave 1 funnel + homepage shorten + GSC wedge lock shipped to prod; need 14d GSC signal before more Layer B churn.  

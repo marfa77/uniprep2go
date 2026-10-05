@@ -27,7 +27,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "german-a2-anki-deck":
     "2,115 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
-    "300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock (official exam is 125 scored + 5 pretest / 3h45 / passing score 72 equated).",
+    "Series 7 flashcards: 300 Top-Off cards for suitability, products, and order flow — plus a free 60-question Series 7 mock (official exam is 125 scored + 5 pretest / 3h45 / passing score 72 equated).",
   "servsafe-manager-anki-deck":
     "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a free 90-question ServSafe mock (official 80 scored + 10 pilot / 2h; official pass 70% (56/80) · 75% readiness target).",
   "gre-anki-deck":
@@ -158,7 +158,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "sie-exam-anki-deck":
     "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":
-    "Job-function outline coverage: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — pair 15–20 cards/day with the free 60Q diagnostic to catch weak suitability and products chapters early. Ownable $29 .apkg vs mega free 125Q banks when you want spaced repair after SIE.",
+    "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — pair 15–20 cards/day with the free 60Q diagnostic. Ownable $29 .apkg vs mega free 125Q banks; not Series 63 state-law flashcards.",
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the free 90-question mock first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
@@ -306,13 +306,13 @@ export const positioningOverrides: Partial<
   },
   "series-7-anki-deck": {
     ourEdge: [
-      "300 cards mapped to FINRA Series 7 Top-Off job functions",
+      "Series 7 flashcards: 300 cards mapped to FINRA Top-Off job functions",
       "Suitability, options, bonds, margin, and settlement recall",
       "Free 60-question Series 7 practice test with topic breakdown",
       "Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
     ],
     summaryProse:
-      "Full-length free 125Q banks win on volume. UniPrep wins when you want a free timed 60Q job-function diagnostic plus an ownable $29 / 300-card .apkg for daily suitability and products repair after SIE — not another browser-only Q dump.",
+      "Full-length free 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a free timed 60Q job-function diagnostic plus an ownable $29 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump.",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     ourEdge: [
@@ -1746,7 +1746,7 @@ New entrants confuse IPO vs secondary offerings, margin account rules, and when 
 
   "series-7-anki-deck": `### What is inside
 
-Top-Off coverage: seeking business and opening accounts, investment products (equity, debt, options, funds), recommendations and suitability, order handling, confirmations, settlement, and regulatory records. Options cards include spreads, straddles, and margin requirements. Municipal securities and MSRB rules have dedicated prompts.
+Series 7 flashcards for Top-Off: seeking business and opening accounts, investment products (equity, debt, options, funds), recommendations and suitability, order handling, confirmations, settlement, and regulatory records. Options cards include spreads, straddles, and margin requirements. Municipal securities and MSRB rules have dedicated prompts. This is not a [Series 63 flashcards](/decks/series-63-anki-deck) pack (NASAA state law).
 
 Official FINRA Series 7 Top-Off is **125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated)**. Our free mock is a **60-question / 90-minute** job-function diagnostic — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
 
@@ -1756,7 +1756,7 @@ Run the [free 60-question Series 7 practice test](/mock-exams/series-7-readiness
 
 ### Pitfalls this deck targets
 
-Representatives mix suitability standards for elderly clients, options exercise vs assignment, and when a principal must approve a trade. Cards isolate those rule boundaries.`,
+Representatives mix suitability standards for elderly clients, options exercise vs assignment, and when a principal must approve a trade. Cards isolate those rule boundaries. After Top-Off, state registration often still needs [Series 63 flashcards](/decks/series-63-anki-deck).`,
 
   "servsafe-manager-anki-deck": `### What is inside
 
@@ -1940,7 +1940,7 @@ ETS registration, the free Study Companion PDF, or paid ETS interactive practice
 
   "series-63-anki-deck": `### What is inside
 
-Series 63 cards for NASAA Uniform Securities Act themes: broker-dealer and agent registration, unethical business practices, communications with the public, and investment adviser basics. Built for state-law repair after SIE / Series 7 — same themes as the free timed readiness check.
+Series 63 flashcards for NASAA Uniform Securities Act themes: broker-dealer and agent registration, unethical business practices, communications with the public, and investment adviser basics. Built for state-law repair after SIE / [Series 7 flashcards](/decks/series-7-anki-deck) — same themes as the free timed readiness check.
 
 ### Plan with the free Series 63 mock
 
@@ -1948,7 +1948,7 @@ Series 63 cards for NASAA Uniform Securities Act themes: broker-dealer and agent
 
 ### Pitfalls this deck targets
 
-Candidates reuse SIE product cards for Series 63, under-drill USA registration exemptions, and confuse federal vs state jurisdiction. Cards force state-law framing under spaced recall.
+Candidates reuse Series 7 product cards for Series 63, under-drill USA registration exemptions, and confuse federal vs state jurisdiction. Cards force state-law framing under spaced recall.
 
 ### What this does not replace
 

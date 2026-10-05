@@ -760,20 +760,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall. Use the free 25-question diagnostic for a fast gap check, or the full 75-question / 105-minute mock before exam day.",
   },
   "series-7-anki-deck": {
-    title: "Series 7 Anki 2026 | 300 Cards + Free Practice Test",
-    headline: "Series 7 Exam Prep — 300 Flashcards + Free 60Q Test",
-    studyLabel: "Series 7 exam prep",
+    title: "Series 7 Flashcards 2026 | 300 Cards + Free Mock",
+    headline: "Series 7 Flashcards — 300 Top-Off Cards + Free 60Q Mock",
+    studyLabel: "Series 7 flashcards",
     description:
-      "Series 7 Top-Off prep: 300 flashcards for suitability, options, products, and FINRA job functions — plus a 60-question Series 7 practice test online (first mock free, no signup). Official exam is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); our mock is shorter. For US registered rep candidates.",
+      "Series 7 flashcards for FINRA Top-Off: 300 Anki cards (suitability, products, options, order flow) plus a free 60-question timed practice test with job-function scoring. Official exam 125 scored + 5 pretest / 3h45 / pass 72 equated. Independent — not FINRA material.",
     keywords: [
-      "series 7 exam prep",
       "series 7 flashcards",
+      "series 7 anki",
       "series 7 practice test",
-      "finra series 7 anki",
-      "series 7 top off study guide",
+      "finra series 7 flashcards",
+      "series 7 exam prep",
+      "series 7 top off study",
     ],
     intro:
-      "US Series 7 candidates drill suitability, investment products, and order-flow rules on their phone between full-length Q-banks — then use the free 60Q readiness check for a timed job-function baseline before the official 125-question sit.",
+      "Looking for Series 7 flashcards after the SIE? Start with the free 60-question timed readiness check, then drill only weak job functions in this 300-card deck before the 125-question sit — not a Series 63 state-law pack.",
   },
   "series-63-anki-deck": {
     title: "Series 63 Flashcards 2026 | 250 Cards + Free Mock",
