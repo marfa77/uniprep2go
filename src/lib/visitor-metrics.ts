@@ -667,20 +667,12 @@ export function readVisitorMetricsFromMemory(): VisitorMetrics {
     periodUnique: store.period.size,
     periodNew: store.periodNew.size,
     periodReturning: store.periodReturning.size,
-    lifetimeByChannel: {
-      google: store.lifetimeChannel.google.size,
-      chatgpt: store.lifetimeChannel.chatgpt.size,
-      llm: store.lifetimeChannel.llm.size,
-      direct: store.lifetimeChannel.direct.size,
-      other: store.lifetimeChannel.other.size,
-    },
-    periodByChannel: {
-      google: store.periodChannel.google.size,
-      chatgpt: store.periodChannel.chatgpt.size,
-      llm: store.periodChannel.llm.size,
-      direct: store.periodChannel.direct.size,
-      other: store.periodChannel.other.size,
-    },
+    lifetimeByChannel: Object.fromEntries(
+      TRAFFIC_CHANNELS.map((channel) => [channel, store.lifetimeChannel[channel].size]),
+    ) as Record<TrafficChannel, number>,
+    periodByChannel: Object.fromEntries(
+      TRAFFIC_CHANNELS.map((channel) => [channel, store.periodChannel[channel].size]),
+    ) as Record<TrafficChannel, number>,
     periodByCountry: mapSetSizes(store.periodCountry),
     dailyUnique,
     dailyPageViews,
