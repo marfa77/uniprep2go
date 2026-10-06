@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 /**
- * Publish Sample cards Gumroad landings for finance catalog decks (CFA, FRM, SIE, Series…).
- * Uses checkout permalink + public/samples webps. Stamps src/data/gumroad/finance-anki-decks.json.
+ * Finance catalog: keep the classic Gumroad page. Custom landings hide description + gallery.
+ * Archives landing HTML, clears any live custom page. Gallery updates go through
+ * `node scripts/publish-gumroad-classic.mjs --slug <slug>`.
  *
  *   node scripts/publish-finance-gumroad-polish.mjs --dry-run
  *   node scripts/publish-finance-gumroad-polish.mjs --slug cfa-level-1-anki-deck
- *   node scripts/publish-finance-gumroad-polish.mjs --slug sie-exam-anki-deck --refresh-samples
- *     (new public/samples webps: upload new gallery previews, publish landing, then remove the old previews)
  */
 
 import { execSync } from "node:child_process";
@@ -219,12 +218,9 @@ async function main() {
       if (!productId) throw new Error("no product id");
       const product = gumroadJson(["products", "view", productId]).product ?? {};
 
-      const staleUrls = args.refreshSamples ? (cdnCache[slug] ?? []) : [];
-      if (args.refreshSamples && !args.dryRun) delete cdnCache[slug];
-      const sampleUrls = ensureCdnUrls(productId, slug, cdnCache, args.dryRun);
+      const sampleUrls = (cdnCache[slug] ?? []).slice(0, 3);
       const mockSlug = linkedMockSlug(slug);
       const mockUrl = mockSlug ? `https://uniprep2go.study/mock-exams/${mockSlug}` : null;
-      const coverUrl = product.covers?.[0]?.original_url || product.covers?.[0]?.url || "";
       const html = renderLanding({
         title: meta.title || product.name,
         shortName: meta.shortName || slug,
@@ -237,25 +233,17 @@ async function main() {
       writeFileSync(outPath, html);
 
       if (args.dryRun) {
-        console.log(`DRY ${slug} → ${outPath}`);
+        console.log(`DRY ${slug} → clear custom landing; archive ${outPath}`);
         continue;
       }
 
-      const tmp = `/tmp/gumroad-finance-${slug}.html`;
-      writeFileSync(tmp, html);
-      execSync(`gumroad products page publish --yes --non-interactive -- "${perm}" "${tmp}"`, {
-        stdio: "inherit",
-      });
-      execSync(`gumroad products publish --non-interactive -- "${perm}"`, { stdio: "inherit" });
-      if (staleUrls.length) {
-        const covers = (gumroadJson(["products", "view", productId]).product ?? {}).covers ?? [];
-        for (const cover of covers) {
-          if (staleUrls.includes(cover.original_url || cover.url)) {
-            execSync(`gumroad products covers remove --non-interactive --yes -- "${productId}" "${cover.id}"`, {
-              stdio: "inherit",
-            });
-          }
-        }
+      try {
+        execSync(`gumroad products page clear --yes --non-interactive -- "${productId}"`, {
+          stdio: ["ignore", "pipe", "pipe"],
+        });
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        if (!/not found|no landing|404/i.test(message)) throw error;
       }
 
       catalog.products[slug] = {
@@ -263,10 +251,9 @@ async function main() {
         gumroadProductId: productId,
         shortUrl: product.short_url ?? meta.checkoutUrl.split("?")[0],
         descriptionPolishedAt: now,
-        samplesUploadedAt: now,
-        landingPublishedAt: now,
+        landingClearedAt: now,
       };
-      console.log(`OK ${slug}`);
+      console.log(`OK ${slug} (custom landing cleared)`);
     } catch (error) {
       console.error(`FAIL ${slug}: ${error instanceof Error ? error.message : error}`);
     }

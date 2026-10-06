@@ -466,6 +466,8 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
                   deck.slug === "gmat-focus-anki-deck" ||
                   deck.slug === "sat-anki-deck"
                 ? "2026-10-04"
+                : deck.slug === "cem-anki-deck"
+                  ? "2026-10-06"
                 : "2026-08-06",
     facts: {
       ...deck.facts,

@@ -4066,10 +4066,10 @@ const rawDecks: Deck[] = [
     coverImage: "/covers/cem-anki-deck.webp",
     title: "Certified Energy Manager (CEM) Anki Deck",
     shortName: "CEM",
-    subtitle: "A planned spaced-repetition deck for the AEE CEM Body of Knowledge.",
+    subtitle: "Anki deck for the AEE CEM Body of Knowledge — 250 cards plus a free 50-question timed mock.",
     directAnswer:
-      "The CEM Anki Deck is a planned UniPrep2Go product for energy managers and facility engineers preparing for AEE Certified Energy Manager certification. Take the free 65-question readiness check first.",
-    lastUpdated: "2026-06-02",
+      "UniPrep2Go sells a live UniPrep2Go CEM Anki deck: 250 independent flashcards across five grouped AEE Body of Knowledge domains (policy/audits/economics, electrical/lighting, HVAC/envelope/BAS, industrial/boiler/renewables, commissioning/ESPC/M&V) plus a free 50-question / 50-minute timed readiness check. Official CEM is 130 questions in 4 hours, open book, scaled pass 700 — this deck is not AEE material and is not the paid 65-question AEE self-eval.",
+    lastUpdated: "2026-10-06",
     audience: "Energy managers, facility engineers, and sustainability professionals pursuing AEE CEM certification.",
     format: ".apkg",
     facts: {
@@ -4088,21 +4088,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A 460V motor circuit draws 100 A at 0.75 power factor. Approximate real power is",
+        question: "A technician checks the refrigerant charge on a DX unit after airflow is confirmed correct. Which field data should be compared with the manufacturer's charging procedure?",
         answer:
-          "Correct: (d) 59 kW Three-phase kW ≈ √3 × V × I × PF / 1000 = 1.732 × 460 × 100 × 0.75 / 1000 ≈ 59.7 kW.",
+          "Correct: (c) Measured superheat and subcooling under the specified operating conditions Charge must be evaluated under stable, specified conditions using the manufacturer's method. Fixed-orifice systems commonly use target superheat, while TXV systems commonly use target subcooling; checking both temperatures and pressures also helps distinguish charge problems from metering or airflow faults.",
         imageUrl: "/samples/cem-anki-deck-sample-1.webp",
       },
       {
-        question: "A centrifugal chiller rated at 0.55 kW/ton at AHRI conditions is operating at 0.72 kW/ton. Which issue is MOST likely?",
+        question: "A natural-gas boiler has 7% O2 in its flue gas at normal load, negligible CO, and a stable flame. Which action most directly improves combustion efficiency?",
         answer:
-          "Correct: (d) Elevated condenser water temperature or fouled condenser tubes raising lift Higher condenser entering water temperature increases compressor lift and kW/ton; condenser fouling has a similar effect.",
+          "Correct: (a) Retune the burner to reduce excess air while monitoring O2 and CO High flue-gas O2 with negligible CO indicates more excess air than combustion requires. Careful burner tuning reduces the mass of hot gas leaving the stack while preserving complete combustion.",
         imageUrl: "/samples/cem-anki-deck-sample-2.webp",
       },
       {
-        question: "An energy manager compares two ECMs using simple payback. Project A saves $12,000/year with a $36,000 cost. Project B saves $8,000/year with a $20,000 cost. Which statement is correct?",
+        question: "A campus completes several interacting ECMs expected to reduce total metered use by 18%. Reliable utility data exist for the baseline and reporting periods. Which IPMVP approach best fits?",
         answer:
-          "Correct: (b) Project B has the shorter simple payback period Simple payback equals initial cost divided by annual savings. Project A: 3.0 years; Project B: 2.5 years, so Project B returns capital faster on a simple payback basis.",
+          "Correct: (c) Option C, analyzing whole-facility meters with routine and non-routine adjustments Option C fits when aggregate savings are large enough to emerge from whole-facility meter noise and reliable baseline data support a model. Routine adjustments normalize variables such as weather, while non-routine adjustments address changed static factors.",
         imageUrl: "/samples/cem-anki-deck-sample-3.webp",
       },
     ],
@@ -4110,7 +4110,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CEM practice test?",
         answer:
-          "Yes. Take the free 65-question CEM readiness check at uniprep2go.study/mock-exams/cem-readiness-check.",
+          "Yes. Take the free 50-question / 50-minute CEM readiness check at uniprep2go.study/mock-exams/cem-readiness-check. Official AEE CEM is 130 questions / 4 hours; AEE also sells a separate 65-question / 2-hour self-eval with no answer key.",
       },
       {
         question: "Is this official AEE material?",

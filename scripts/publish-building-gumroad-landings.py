@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Publish Gumroad custom landing pages with Sample cards images in the description body.
+"""Archive building landing HTML, then clear any live custom Gumroad page.
 
-Gumroad strips <img> from the default product description. Custom landing HTML keeps them.
-Do NOT upload samples as product covers — put them in the Sample cards section only.
+Custom landings hide the classic product page (description + gallery). Samples belong
+on the classic gallery via `node scripts/publish-gumroad-classic.mjs --slug <slug>`.
+This script no longer publishes a custom page or appends sample covers.
 """
 
 from __future__ import annotations
@@ -917,29 +918,25 @@ def remove_trailing_sample_covers(product_id: str, keep: int = 3) -> str:
     return f"covers {len(covers)}→{len(covers) - removed} (removed {removed})"
 
 
-def publish_landing(product_id: str, html_doc: str) -> None:
-    with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as fh:
-        fh.write(html_doc)
-        path = fh.name
-    try:
-        out = subprocess.run(
-            [
-                "gumroad",
-                "products",
-                "page",
-                "publish",
-                product_id,
-                path,
-                "--yes",
-                "--non-interactive",
-            ],
-            capture_output=True,
-            text=True,
-        )
-        if out.returncode != 0:
-            raise RuntimeError(out.stderr.strip() or out.stdout.strip())
-    finally:
-        Path(path).unlink(missing_ok=True)
+def clear_custom_landing(product_id: str) -> None:
+    out = subprocess.run(
+        [
+            "gumroad",
+            "products",
+            "page",
+            "clear",
+            "--yes",
+            "--non-interactive",
+            "--",
+            product_id,
+        ],
+        capture_output=True,
+        text=True,
+    )
+    if out.returncode != 0:
+        err = (out.stderr or out.stdout or "").strip()
+        if not re.search(r"not found|no landing|404", err, re.I):
+            raise RuntimeError(err)
 
 
 def main() -> None:
@@ -990,25 +987,19 @@ def main() -> None:
             cover_url = covers[0].get("original_url") or covers[0].get("url") or ""
 
         try:
-            if args.dry_run and not args.force_cdn and slug in cdn_cache:
-                sample_urls = cdn_cache[slug]
-            elif args.dry_run:
-                sample_urls = [f"https://public-files.gumroad.com/dry-run-{slug}-{i}" for i in range(1, 4)]
-            else:
-                sample_urls = ensure_sample_cdn_urls(
-                    product_id, slug, cdn_cache, force=args.force_cdn
-                )
-
+            sample_urls = cdn_cache.get(slug) or [
+                f"https://public-files.gumroad.com/archive-{slug}-{i}" for i in range(1, 4)
+            ]
             html_doc = render_landing(spec, product, cover_url, sample_urls)
             out_path = OUT_DIR / f"{slug}.html"
             out_path.write_text(html_doc, encoding="utf-8")
 
             if args.dry_run:
-                results.append(f"DRY   {slug} → {out_path} ({len(html_doc)} chars, {len(sample_urls)} samples)")
+                results.append(f"DRY   {slug} → clear custom landing; archive {out_path}")
                 continue
 
-            publish_landing(product_id, html_doc)
-            note = f"published cdn={len(sample_urls)}"
+            clear_custom_landing(product_id)
+            note = "custom landing cleared"
             if args.strip_sample_covers:
                 note += "; " + remove_trailing_sample_covers(product_id, keep=args.keep_covers)
             results.append(f"OK    {slug} ({note})")

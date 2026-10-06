@@ -107,8 +107,8 @@ const DECK_CONFIGS = {
     panelKind: "survey",
   },
   "gmat-focus-anki-deck": {
-    title: "GMAT Focus\nAnki Deck",
-    subtitle: "Business school admissions flashcards",
+    title: "GMAT Exam\nAnki Deck",
+    subtitle: "Quant, Verbal, Data Insights",
     monogram: "GMAT",
     panelKind: "finance",
   },

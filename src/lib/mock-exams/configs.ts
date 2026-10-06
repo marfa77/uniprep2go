@@ -1263,14 +1263,14 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Readiness check sized to AEE's 65-question self-evaluation format. Official CEM exam: 130 questions (120 scored + 10 pretest), 4 hours, open book, scaled pass score 700 (0–1040 scale). Not AEE exam material.",
+      "This diagnostic is 50 questions in 50 minutes with a 70% UniPrep2Go readiness target — shorter than the official exam and not AEE’s paid 65-question / 2-hour self-evaluation. Official CEM exam: 130 questions (120 scored + 10 pretest), 4 hours, open book, scaled pass score 700 (0–1040 scale). Not AEE exam material.",
     disclaimer: aeeDisclaimer,
     description:
-      "A 65-question CEM readiness diagnostic across AEE Body of Knowledge domains including audits, HVAC, electrical systems, renewables, and performance contracting. Independent prep, not AEE material.",
+      "A 50-question / 50-minute CEM readiness diagnostic across five grouped AEE Body of Knowledge domains including audits, HVAC, electrical systems, renewables, and performance contracting. Independent prep, not AEE material.",
     examBody: "AEE (Association of Energy Engineers)",
-    lastUpdated: "2026-07-24",
+    lastUpdated: "2026-10-06",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the CEM readiness check (250 cards across five Body of Knowledge groups; 65-question timed session).",
+      "Original UniPrep2Go questions authored for the CEM readiness check (250 cards across five Body of Knowledge groups; 50-question timed session).",
   },
   {
     slug: "ashrae-certifications-readiness-check",

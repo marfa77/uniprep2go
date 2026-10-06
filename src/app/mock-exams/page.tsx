@@ -191,6 +191,9 @@ export default function MockExamsIndexPage() {
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/well-ap-readiness-check">
               WELL AP practice test
             </Link>
+            <Link className="underline-offset-4 hover:underline" href="/mock-exams/cem-readiness-check">
+              CEM practice test
+            </Link>
             <Link className="underline-offset-4 hover:underline" href="/mock-exams/ashrae-certifications-readiness-check">
               ASHRAE certifications practice test
             </Link>

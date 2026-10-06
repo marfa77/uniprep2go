@@ -974,19 +974,20 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "WELL AP practice test",
   },
   "cem-readiness-check": {
-    title: "Free CEM Practice Test | 65-Question Certified Energy Manager Readiness Check",
+    title: "Free CEM Practice Test | 50-Question Certified Energy Manager Readiness Check",
     description:
-      "Free Certified Energy Manager practice questions online: 65 timed questions across AEE Body of Knowledge domains, 120 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent CEM prep — not AEE exam material.",
+      "Free Certified Energy Manager practice — first mock free, no signup: 50 timed questions, 50 minutes, 70% readiness target, five BoK-group scores — then repair with the $11 / 250-card Anki deck. Official AEE CEM is 130Q / 4h / open book / scaled 700. Not AEE’s paid 65Q self-eval. Independent — not AEE material.",
     keywords: [
       "cem practice test",
       "certified energy manager exam",
       "aee cem study guide",
       "free cem practice questions",
       "energy manager certification test",
+      "cem anki",
     ],
     headline: "Free Certified Energy Manager (CEM) Readiness Check",
     intro:
-      "A timed CEM readiness diagnostic sized to AEE's half-length self-evaluation format. Official CEM exam: 130 questions, 4 hours, open book, scaled pass score 700 (0–1040).",
+      "A timed 50-question / 50-minute CEM diagnostic across five grouped AEE Body of Knowledge domains — then drill weak groups in the linked $11 / 250-card Anki deck. Official CEM exam (verify on AEE): 130 questions (120 scored + 10 pretest), 4 hours, open book, scaled pass 700 on a 0–1,040 scale. AEE’s optional paid self-evaluation is 65 questions / 2 hours with section pass/fail only and no answer key — this page is not that product.",
     audience:
       "Energy managers, facility engineers, sustainability professionals, and HVAC/electrical engineers preparing for AEE CEM certification.",
     practiceTestLabel: "CEM practice test",

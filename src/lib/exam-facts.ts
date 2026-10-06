@@ -2032,11 +2032,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         label: "AEE — CEM Body of Knowledge & Study Guide (PDF)",
-        url: "https://www.aeecenter.org/wp-content/uploads/2024/03/CEM-BodyofKnowledge_StudyGuide_1.7.pdf",
+        url: "https://www.aeecenter.org/wp-content/uploads/2024/03/CEM-BodyofKnowledge_StudyGuide_1.8.pdf",
       },
       {
         label: "AEE — CEM certification handbook",
-        url: "https://www.aeecenter.org/wp-content/uploads/2024/03/CEMHandbook-2.13.pdf",
+        url: "https://www.aeecenter.org/wp-content/uploads/2024/03/CEMHandbook-2.15.pdf",
       },
     ],
     domain_weights: [
@@ -2064,7 +2064,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "Passing score is 700 on a 0–1,040 scaled score — not a simple percentage.",
       "HVAC Systems and Building Envelope is the highest-weight subject area (up to 16% of scored content).",
       "No penalty for wrong answers — answer every question on the 130-item form.",
-      "AEE offers a 65-question paid self-evaluation exam that mirrors half the official exam length (verify at aeecenter.org/cemresources).",
+      "AEE offers a paid 65-question / 2-hour self-evaluation exam (section pass/fail, no item-level answers — verify at aeecenter.org).",
       "Non-programmable calculator permitted; programmable calculators and exam software on personal devices are prohibited.",
       "CEM application file must be completed within 3 years of passing the exam or the process restarts.",
     ],

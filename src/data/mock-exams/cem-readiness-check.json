@@ -23,9 +23,9 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Option B uses periodic or continuous measurements at specific retrofits to quantify savings.",
+    "explanation": "IPMVP Option B isolates the retrofit and measures all significant energy-use parameters needed to calculate its savings; measurements may be short-term, periodic, or continuous as the M&V plan requires.",
     "distractorExplanations": {
-      "b": "Measuring key parameters while stipulating the rest is IPMVP Option A; Option B measures every parameter at the retrofit.",
+      "b": "Measuring selected key parameters while stipulating others is IPMVP Option A; Option B measures all significant energy-use parameters within the retrofit boundary.",
       "c": "Calibrated whole-building simulation is IPMVP Option D, used when baseline or isolation data are not available.",
       "d": "Whole-facility utility meter analysis with routine and non-routine adjustments is IPMVP Option C, not Option B."
     },
@@ -650,7 +650,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Programs verify savings claims before paying incentives.",
+    "explanation": "Custom utility incentive programs commonly require approval before installation plus pre- and post-installation verification. Their M&V rules establish that the claimed reduction is eligible before the incentive is paid.",
     "distractorExplanations": {
       "a": "Most custom incentive programs require pre-approval and a pre-installation inspection; applying after installation often forfeits the incentive.",
       "c": "Utility incentives are available to owner-funded projects too; an ESPC with an ESCO guarantee is not a program prerequisite.",
@@ -696,31 +696,31 @@
     "id": "cem-readiness-check-commissioning-espc-022",
     "examSlug": "cem-readiness-check",
     "topicId": "commissioning-espc",
-    "prompt": "IPMVP Option C is most appropriate when:",
+    "prompt": "A campus completes several interacting ECMs expected to reduce total metered use by 18%. Reliable utility data exist for the baseline and reporting periods. Which IPMVP approach best fits?",
     "options": [
       {
         "id": "a",
-        "text": "A single lighting retrofit is isolated and its operating hours are measured on site"
+        "text": "Option A, measuring selected key parameters and stipulating the remaining factors with occupancy and weather as the only adjustments"
       },
       {
         "id": "b",
-        "text": "No baseline meter data exist and a calibrated simulation is required"
+        "text": "Option B, isolating each retrofit and measuring all significant energy parameters"
       },
       {
         "id": "c",
-        "text": "Whole-facility or whole-system utility data are used with routine adjustments"
+        "text": "Option C, analyzing whole-facility meters with routine and non-routine adjustments"
       },
       {
         "id": "d",
-        "text": "Expected savings are small relative to the facility's total consumption"
+        "text": "Option D, replacing the available meter history with a calibrated simulation"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Option C uses whole-facility metering with adjustments for static factors.",
+    "explanation": "Option C fits when aggregate savings are large enough to emerge from whole-facility meter noise and reliable baseline data support a model. Routine adjustments normalize variables such as weather, while non-routine adjustments address changed static factors.",
     "distractorExplanations": {
-      "a": "Isolating one retrofit and measuring its key parameter is IPMVP Option A, not a whole-facility Option C approach.",
-      "b": "Missing baseline data that require calibrated simulation point to IPMVP Option D rather than Option C.",
-      "d": "Option C needs savings large relative to facility use (often above about 10%) or they get lost in meter noise."
+      "a": "Option A isolates a retrofit and stipulates some parameters; it does not capture several interacting ECMs through the facility meter.",
+      "b": "Option B measures all significant parameters inside each retrofit boundary; that isolation effort is unnecessary when whole-facility data can resolve aggregate savings.",
+      "d": "Option D uses calibrated simulation when measured baseline or reporting data are unavailable or inadequate; this campus has reliable meter history."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -749,7 +749,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Accurate metering underpins defensible savings claims.",
+    "explanation": "The M&V plan should state calibration frequency, procedures, and traceability based on manufacturer guidance, expected drift, program rules, and the accuracy needed to support defensible savings calculations.",
     "distractorExplanations": {
       "a": "Electronic meters and CTs still drift; a one-time calibration at installation does not keep M&V data defensible.",
       "b": "Billing-cycle alignment concerns read dates, not calibration; intervals come from manufacturer and program requirements.",
@@ -815,7 +815,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Performance periods often run 5–15 years depending on contract and measure life.",
+    "explanation": "The performance period begins after implementation and acceptance, then continues while savings are measured, reconciled, and guaranteed. Its length is contract-specific and commonly extends many years, often roughly 5 to 20 years.",
     "distractorExplanations": {
       "a": "Installation and commissioning make up the implementation period; the performance period starts after acceptance.",
       "b": "The investment-grade audit is the development phase before contract award, not the period when savings are guaranteed.",
@@ -1331,7 +1331,7 @@
       },
       {
         "id": "b",
-        "text": "Construction means and methods used by each trade during installation"
+        "text": "Construction means and methods used by each trade during installation used by each trade on the jobsite"
       },
       {
         "id": "c",
@@ -1343,7 +1343,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Training enables staff to operate systems as commissioned.",
+    "explanation": "Effective turnover training prepares O&M staff to sustain commissioned performance by operating normal and seasonal modes, responding to alarms, preserving intended setpoints, and finding the governing system documentation.",
     "distractorExplanations": {
       "b": "Installation means and methods are the contractor's concern; operators need to know how to run the installed systems.",
       "c": "Load calculations and selection software are design-team tools, not operating knowledge for O&M staff.",
@@ -1426,27 +1426,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Variables that change routinely, such as degree-days, entered in the baseline regression"
+        "text": "Variables expected to change routinely, such as outdoor temperature or production volume such as outdoor temperature or production volume"
       },
       {
         "id": "b",
-        "text": "Measured savings parameters stipulated by agreement, such as lamp wattage under Option A"
+        "text": "ECM parameters stipulated by agreement instead of measured under Option A"
       },
       {
         "id": "c",
-        "text": "Parameters held constant or adjusted such as floor area, production rate, or operating hours"
+        "text": "Site characteristics expected to remain fixed, such as floor area, schedule, or equipment inventory"
       },
       {
         "id": "d",
-        "text": "Utility tariff components, such as demand ratchets and fuel adjustments, used to price savings"
+        "text": "Tariff components used to convert verified energy savings into avoided cost"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Static factors change independently of ECM performance and need documented adjustment.",
+    "explanation": "Static factors are site characteristics expected not to change during the measurement period. If floor area, operating schedule, equipment inventory, or similar conditions change, the analyst documents a non-routine adjustment.",
     "distractorExplanations": {
-      "a": "Routinely changing drivers like degree-days are independent variables handled by routine adjustments, not static factors.",
-      "b": "Stipulated Option A parameters are agreed estimates for the ECM; static factors are site conditions outside the ECM.",
-      "d": "Tariff components only price the savings; static factors are physical conditions that affect energy use."
+      "a": "Weather and production are often routine independent variables in a baseline model; static factors are conditions expected to remain fixed.",
+      "b": "A stipulated Option A parameter is an agreed input to an ECM savings calculation, not a site condition monitored for non-routine change.",
+      "d": "Tariff components convert energy or demand savings into money; they do not define the physical and operational conditions of the baseline."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -1554,31 +1554,31 @@
     "id": "cem-readiness-check-commissioning-espc-048",
     "examSlug": "cem-readiness-check",
     "topicId": "commissioning-espc",
-    "prompt": "Weather normalization using heating degree days (HDD) adjusts",
+    "prompt": "A boiler retrofit's reporting winter is much milder than its baseline winter. Before attributing the drop in fuel use to the ECM, the analyst should use HDD to",
     "options": [
       {
         "id": "a",
-        "text": "Cooling energy comparisons for hotter or cooler reporting periods versus baseline"
+        "text": "Normalize cooling energy for the reporting period's outdoor temperature"
       },
       {
         "id": "b",
-        "text": "Electric demand charges for peak months in the reporting period versus baseline"
+        "text": "Normalize electric demand charges for the reporting period's peak months without restating the regression equation each year"
       },
       {
         "id": "c",
-        "text": "Domestic hot water use for changes in occupancy between baseline and reporting"
+        "text": "Normalize domestic hot water use for the reporting period's occupancy"
       },
       {
         "id": "d",
-        "text": "Heating energy comparisons for colder or milder periods versus baseline"
+        "text": "Normalize heating energy for the weather difference between the two winters"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Heating degree day models separate weather-driven heating consumption from ECM impacts, so a colder or milder reporting period can be compared fairly with the baseline.",
+    "explanation": "Heating degree days represent the outdoor-temperature driver of heating load. Normalizing fuel use for the milder reporting winter prevents favorable weather from being misreported as boiler-retrofit savings.",
     "distractorExplanations": {
-      "a": "Cooling energy is normalized with cooling degree days (CDD); heating degree days apply to heating energy.",
-      "b": "Demand charges depend on peak kW and tariff terms; HDD normalization adjusts heating energy for weather.",
-      "c": "Occupancy-driven hot water use is adjusted with occupancy variables, not with heating degree days."
+      "a": "Cooling loads are commonly normalized with cooling degree days, while HDD applies to weather-sensitive heating consumption.",
+      "b": "Demand charges depend on peak kW and tariff rules; HDD normalization addresses heating energy, not the price of monthly peaks.",
+      "c": "Occupancy or hot-water demand requires a relevant occupancy or usage variable; HDD represents outdoor-temperature effects on space heating."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -1632,7 +1632,7 @@
       },
       {
         "id": "c",
-        "text": "Retrofit isolation measures every energy parameter continuously at the ECM with submeters"
+        "text": "Retrofit isolation measures every energy parameter continuously at the ECM with submeters even when isolation metering would cost little"
       },
       {
         "id": "d",
@@ -1640,7 +1640,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Option A combines measured parameters with stipulated factors for short-term ECMs.",
+    "explanation": "Option A isolates a retrofit, measures the parameters that most strongly drive savings, and stipulates less influential factors when the resulting uncertainty is acceptable and full measurement is not cost-effective.",
     "distractorExplanations": {
       "a": "Missing baseline data with calibrated simulation is the IPMVP Option D situation, not Option A.",
       "b": "Whole-facility utility data with weather and static factor adjustments describe IPMVP Option C.",
@@ -1727,23 +1727,24 @@
       },
       {
         "id": "b",
-        "text": "800"
+        "text": "0.80"
       },
       {
         "id": "c",
-        "text": "1.25"
+        "text": "1.00"
       },
       {
         "id": "d",
-        "text": "0.80"
+        "text": "1.25"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Power factor = kW / kVA = 800 / 1,000 = 0.80.",
+    "correctOptionId": "b",
+    "explanation": "Power factor is real power divided by apparent power: 800 kW / 1,000 kVA = 0.80, so the load draws 80% as much real power as its apparent-power rating.",
     "distractorExplanations": {
-      "a": "0.50 would require kW half of kVA at equal kVA.",
+      "a": "A 0.50 power factor would correspond to 500 kW at an apparent demand of 1,000 kVA.",
       "b": "800 is kW, not a dimensionless power factor.",
-      "c": "1.25 is kVA/kW, the inverse of power factor and not a valid PF value above 1."
+      "c": "Unity power factor would require real and apparent power to be equal, or 1,000 kW at 1,000 kVA.",
+      "d": "This reverses the ratio as kVA/kW; power factor is kW/kVA and cannot exceed 1.0."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -1789,15 +1790,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Annual lamp replacement frequency"
+        "text": "The facility's total monthly energy charge, even if operating hours stay unchanged"
       },
       {
         "id": "b",
-        "text": "Power factor penalty thresholds automatically to 1.0"
+        "text": "The locked-rotor current drawn by each motor during its own start"
       },
       {
         "id": "c",
-        "text": "Motor nameplate horsepower"
+        "text": "The sum of all connected motor nameplate ratings used by the utility"
       },
       {
         "id": "d",
@@ -1807,9 +1808,9 @@
     "correctOptionId": "d",
     "explanation": "Starting multiple large motors simultaneously creates short demand spikes; sequencing starts spreads load and lowers billed peak kW.",
     "distractorExplanations": {
-      "a": "Lamp maintenance is unrelated to motor starting strategy.",
-      "b": "Demand management does not automatically set power factor to unity.",
-      "c": "Starting sequence does not change nameplate ratings."
+      "a": "Staggering starts shifts load in time but does not materially change monthly kWh when motor operating hours are unchanged.",
+      "b": "Each motor can still draw its normal inrush current; sequencing prevents several starts from overlapping in the demand interval.",
+      "c": "Utilities bill measured interval demand rather than the sum of connected nameplate ratings."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -1851,7 +1852,7 @@
     "id": "cem-readiness-check-electrical-lighting-007",
     "examSlug": "cem-readiness-check",
     "topicId": "electrical-lighting",
-    "prompt": "A VFD should NOT typically be installed on which application without engineering review?",
+    "prompt": "Which application requires special motor thermal and drive-sizing review rather than applying standard variable-torque VFD assumptions?",
     "options": [
       {
         "id": "a",
@@ -1917,15 +1918,15 @@
     "id": "cem-readiness-check-electrical-lighting-009",
     "examSlug": "cem-readiness-check",
     "topicId": "electrical-lighting",
-    "prompt": "An LED retrofit maintains 30 fc on the workplane with half the input watts of the legacy system. The legacy system's efficacy was 60 lm/W. The new system efficacy is approximately",
+    "prompt": "A lighting retrofit delivers the same lumens with half the input watts of a legacy system rated at 60 lm/W. The new system efficacy is approximately",
     "options": [
       {
         "id": "a",
-        "text": "240 lm/W"
+        "text": "30 lm/W"
       },
       {
         "id": "b",
-        "text": "30 lm/W"
+        "text": "60 lm/W"
       },
       {
         "id": "c",
@@ -1933,15 +1934,15 @@
       },
       {
         "id": "d",
-        "text": "60 lm/W"
+        "text": "240 lm/W"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Same light output at half the power doubles efficacy: 60 lm/W × 2 = 120 lm/W.",
     "distractorExplanations": {
-      "a": "240 lm/W would imply quarter power, not half.",
-      "b": "Lower efficacy would require more power for the same illuminance.",
-      "d": "Equal efficacy would not halve power for the same output."
+      "a": "This halves efficacy even though the retrofit produces the same lumens with half the power.",
+      "b": "Unchanged efficacy would require the same input power for the same lumen output.",
+      "d": "An efficacy of 240 lm/W would deliver the same lumens at one-quarter of the legacy input power."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -1991,23 +1992,24 @@
       },
       {
         "id": "b",
-        "text": "$1,500/month in demand charges"
-      },
-      {
-        "id": "c",
         "text": "$150/month"
       },
       {
+        "id": "c",
+        "text": "$1,500/month"
+      },
+      {
         "id": "d",
-        "text": "Nothing if total kWh is unchanged"
+        "text": "$18,000/month"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Demand savings = kW reduced × demand rate = 100 kW × $15/kW = $1,500 per month in demand charges.",
     "distractorExplanations": {
-      "a": "This reflects 1 kW of reduction at $15/kW.",
+      "a": "This applies the $15/kW rate to only 1 kW rather than the full 100 kW reduction.",
       "c": "This reflects only 10 kW of reduction at $15/kW.",
-      "d": "Demand charges apply to peak kW regardless of whether total kWh changes."
+      "d": "$18,000 is the annual saving from twelve months at $1,500, not the saving for one month.",
+      "b": "This applies the demand rate to only 10 kW and understates the monthly saving by a factor of ten."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2024,23 +2026,23 @@
       },
       {
         "id": "b",
-        "text": "Increasing lamp efficacy above 300 lm/W"
+        "text": "Dimming fixtures in proportion to the daylight measured at the workplane"
       },
       {
         "id": "c",
-        "text": "Eliminating the need for illuminance standards"
+        "text": "Trimming occupied light levels to a lower commissioned task setpoint"
       },
       {
         "id": "d",
-        "text": "Raising power factor above unity"
+        "text": "Reducing connected lighting watts through a lower-efficacy fixture selection"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Occupancy controls turn off or dim lights when spaces are vacant, reducing operating hours and kWh without changing fixture efficacy.",
     "distractorExplanations": {
-      "b": "Occupancy sensors switch fixtures off; they do not change luminaire efficacy, and 300 lm/W is beyond any current commercial LED.",
-      "c": "Sensors change when lights run, not the required illuminance; IES target light levels still apply whenever the space is occupied.",
-      "d": "Power factor cannot exceed 1.0 (unity), and occupancy sensing has no effect on the power factor of the lighting load."
+      "b": "Photosensor-based daylight harvesting performs this function; occupancy sensors respond to presence or vacancy.",
+      "c": "Task tuning establishes a commissioned output level while occupied; occupancy sensing reduces operation during vacancy.",
+      "d": "Fixture selection sets connected watts and efficacy, whereas an occupancy sensor reduces operating time."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2115,7 +2117,7 @@
     "id": "cem-readiness-check-electrical-lighting-015",
     "examSlug": "cem-readiness-check",
     "topicId": "electrical-lighting",
-    "prompt": "Soft-start reduced-voltage starters save energy primarily by:",
+    "prompt": "Compared with across-the-line starting, the primary benefit of a reduced-voltage soft starter is",
     "options": [
       {
         "id": "a",
@@ -2135,7 +2137,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Soft starters reduce starting torque and inrush, lowering demand spikes and mechanical stress; continuous-run efficiency gains are typically small compared with VFDs. Energy savings at run conditions are usually modest.",
+    "explanation": "Soft starters limit starting current and torque to reduce voltage dip and mechanical stress; unlike VFDs, they usually provide little or no continuous-run energy saving.",
     "distractorExplanations": {
       "b": "Soft starters ramp voltage only during starting; they do not vary running speed the way a VFD does.",
       "c": "Soft starters do not supply reactive power; power factor correction still needs capacitors or other equipment.",
@@ -2152,11 +2154,11 @@
     "options": [
       {
         "id": "a",
-        "text": "550 W per fixture"
+        "text": "50 W per fixture"
       },
       {
         "id": "b",
-        "text": "50 W per fixture"
+        "text": "150 W per fixture"
       },
       {
         "id": "c",
@@ -2164,15 +2166,15 @@
       },
       {
         "id": "d",
-        "text": "No reduction because lumens are identical"
+        "text": "550 W per fixture"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Per-fixture savings = 400 W − 150 W = 250 W, assuming comparable delivered illuminance and controls.",
     "distractorExplanations": {
-      "a": "This adds wattages instead of subtracting.",
-      "b": "50 W would imply a 350 W LED fixture, not 150 W.",
-      "d": "Equal illuminance with lower wattage is the basis of efficacy improvement."
+      "a": "A 50 W reduction would leave a 350 W replacement, not the specified 150 W LED fixture.",
+      "b": "This is the LED input wattage itself rather than the difference between old and new input.",
+      "d": "This adds the two fixture wattages instead of subtracting the new 150 W from the old 400 W."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2317,15 +2319,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Parking lot asphalt reflectance"
+        "text": "Measured lighting demand after occupancy and daylight control credits"
       },
       {
         "id": "b",
-        "text": "Boiler combustion efficiency"
+        "text": "Annual lighting energy use per unit area for each building type"
       },
       {
         "id": "c",
-        "text": "Motor horsepower per ton of cooling"
+        "text": "Required maintained lumens per unit area for each visual task"
       },
       {
         "id": "d",
@@ -2335,9 +2337,9 @@
     "correctOptionId": "d",
     "explanation": "Codes set maximum allowed lighting watts per square foot (or W/m²) for space types to cap installed lighting power.",
     "distractorExplanations": {
-      "a": "Pavement reflectance may affect outdoor lighting design but LPD limits address installed wattage.",
-      "b": "Boiler efficiency is a thermal plant code topic.",
-      "c": "Motor power per ton is an HVAC metric, not LPD."
+      "a": "LPD is based on installed connected lighting power; permitted control credits are handled separately by the applicable code.",
+      "b": "LPD limits connected watts per area, not annual kWh, which depends on schedules and controls.",
+      "c": "Illuminance criteria address maintained light on the workplane; LPD is an installed-power limit."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2449,27 +2451,28 @@
     "options": [
       {
         "id": "a",
-        "text": "100 kW"
+        "text": "34.5 kW"
       },
       {
         "id": "b",
-        "text": "46 kW"
+        "text": "46.0 kW"
       },
       {
         "id": "c",
-        "text": "79 kW"
+        "text": "59.8 kW"
       },
       {
         "id": "d",
-        "text": "59 kW"
+        "text": "79.7 kW"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Three-phase kW ≈ √3 × V × I × PF / 1000 = 1.732 × 460 × 100 × 0.75 / 1000 ≈ 59.7 kW.",
+    "correctOptionId": "c",
+    "explanation": "For a three-phase load, real power is √3 × V × I × PF / 1,000 = 1.732 × 460 × 100 × 0.75 / 1,000 = 59.8 kW.",
     "distractorExplanations": {
-      "a": "100 kW ignores voltage, √3 factor, and power factor.",
-      "b": "This understates real power for the given voltage, current, and PF.",
-      "c": "This would require PF near 1.0 without adjusting the calculation."
+      "a": "This uses V × I × PF as though the circuit were single-phase and omits the three-phase √3 factor.",
+      "b": "This uses V × I only, omitting both the three-phase √3 factor and the 0.75 power factor.",
+      "c": "This would require PF near 1.0 without adjusting the calculation.",
+      "d": "This is the three-phase apparent power in kVA; multiplying it by 0.75 gives the real power."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2515,27 +2518,28 @@
     "options": [
       {
         "id": "a",
-        "text": "80% leaving only 20% of full power regardless of system curve"
+        "text": "0%"
       },
       {
         "id": "b",
-        "text": "About 49% using the cube law (0.8³ ≈ 0.51 of full power)"
+        "text": "20%"
       },
       {
         "id": "c",
-        "text": "20% following the linear affinity law"
+        "text": "49%"
       },
       {
         "id": "d",
-        "text": "0% because pumps always use full power"
+        "text": "80%"
       }
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "For centrifugal pumps on similar system curves, power varies roughly with speed cubed: (0.8)³ = 0.512, about 49% power reduction.",
     "distractorExplanations": {
-      "a": "80% power reduction would correspond to a much lower speed than 80%.",
+      "a": "This assumes pump power remains constant, ignoring the affinity-law effect of reducing speed.",
       "c": "Linear 20% reduction applies to speed change, not power for centrifugal loads.",
-      "d": "Pump power drops significantly with speed on typical system curves."
+      "d": "An 80% reduction would leave only 20% power and would require a speed ratio much lower than 0.80.",
+      "b": "A 20% reduction follows the linear speed ratio, but centrifugal-load power varies approximately with speed cubed."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2742,7 +2746,7 @@
     "id": "cem-readiness-check-electrical-lighting-034",
     "examSlug": "cem-readiness-check",
     "topicId": "electrical-lighting",
-    "prompt": "A facility replaces magnetic ballast T12 systems with electronic ballast T8 then LED. The largest single-step savings typically come from:",
+    "prompt": "For equivalent delivered light, which retrofit choice generally provides the lowest system wattage among T12 magnetic, T8 electronic, and LED alternatives?",
     "options": [
       {
         "id": "a",
@@ -2750,23 +2754,23 @@
       },
       {
         "id": "b",
-        "text": "Painting walls darker to absorb light"
+        "text": "T8 electronic-ballast conversion because LEDs retain the same fluorescent ballast losses"
       },
       {
         "id": "c",
-        "text": "Cleaning diffusers only without lamp changes"
+        "text": "Lens cleaning because restored light output reduces connected input watts"
       },
       {
         "id": "d",
-        "text": "Switching from T12 magnetic to T8 magnetic with no lamp change"
+        "text": "Electronic-ballast T12 conversion while retaining the original T12 lamps"
       }
     ],
     "correctOptionId": "a",
     "explanation": "LED retrofits cut system watts dramatically versus T12/T8 fluorescent by combining higher efficacy with integrated drivers and better optical control.",
     "distractorExplanations": {
-      "b": "Darker surfaces increase required light levels, increasing energy use.",
-      "c": "Cleaning improves output slightly but not like a technology change.",
-      "d": "T8 with electronic ballasts saves versus T12 magnetic but less than LED."
+      "b": "Electronic-ballast T8 systems improve on magnetic T12 systems, but a well-designed LED conversion generally cuts system watts further.",
+      "c": "Cleaning can restore delivered light but does not by itself reduce connected watts unless controls are retuned.",
+      "d": "Retaining T12 lamps limits efficacy gains and generally saves less than replacing the system with LEDs."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2779,27 +2783,28 @@
     "options": [
       {
         "id": "a",
-        "text": "90%"
-      },
-      {
-        "id": "b",
-        "text": "111%"
-      },
-      {
-        "id": "c",
         "text": "9%"
       },
       {
-        "id": "d",
+        "id": "b",
         "text": "81%"
+      },
+      {
+        "id": "c",
+        "text": "90%"
+      },
+      {
+        "id": "d",
+        "text": "111%"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Efficiency = output / input = 81 / 90 = 0.90 or 90%.",
+    "correctOptionId": "c",
+    "explanation": "Motor efficiency is useful shaft output divided by electrical input: 81 kW / 90 kW = 0.90, or 90%; the remaining 9 kW represents losses.",
     "distractorExplanations": {
-      "b": "Efficiency cannot exceed 100%.",
+      "b": "This treats the 81 kW output value as a percentage without dividing it by the 90 kW input.",
       "c": "9% would reflect only losses, not efficiency.",
-      "d": "81% would imply 73 kW output at 90 kW input."
+      "d": "This reverses the ratio as input/output; a motor efficiency above 100% would violate energy conservation.",
+      "a": "Nine percent confuses the 9 kW loss with efficiency and also divides that loss by the wrong basis."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -2911,11 +2916,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic removal of all harmonics"
+        "text": "Absorption of characteristic drive harmonics by the standard capacitor stages"
       },
       {
         "id": "b",
-        "text": "Guaranteed unity power factor with no side effects"
+        "text": "Displacement power-factor improvement without any change in harmonic current"
       },
       {
         "id": "c",
@@ -2923,15 +2928,15 @@
       },
       {
         "id": "d",
-        "text": "Increased motor synchronous speed above nameplate indefinitely"
+        "text": "Reduced distortion because capacitor impedance rises at harmonic frequencies"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Capacitors can resonate with system inductance and VFD harmonics; detuned or filtered banks are required on harmonic-rich networks.",
     "distractorExplanations": {
-      "a": "Standard capacitors do not eliminate VFD harmonics.",
-      "b": "Uncoordinated capacitors can worsen distortion despite PF improvement.",
-      "d": "Capacitors do not raise motor speed above synchronous speed."
+      "a": "Standard correction capacitors can amplify harmonic current through resonance; tuned filters are designed to absorb selected harmonics.",
+      "b": "Even if displacement power factor improves, resonance can magnify harmonic current and damage capacitors or other equipment.",
+      "d": "Capacitive reactance decreases as frequency rises, so a capacitor can attract harmonic current rather than block it."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -3105,7 +3110,7 @@
     "id": "cem-readiness-check-electrical-lighting-045",
     "examSlug": "cem-readiness-check",
     "topicId": "electrical-lighting",
-    "prompt": "A lighting retrofit maintains the same luminaire count but reduces watts from 32W to 15W per lamp across 500 fixtures operating 3,000 h/yr. Approximate annual kWh savings",
+    "prompt": "A lighting retrofit maintains the same lamp count but replaces 500 lamps rated at 32 W with 15 W lamps operating 3,000 h/yr. Approximate annual kWh savings",
     "options": [
       {
         "id": "a",
@@ -3158,7 +3163,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Inrush can be several times full-load current, contributing to peak demand charges and voltage sag that affects other equipment.",
+    "explanation": "Across-the-line starting can draw several times full-load current, creating a brief voltage drop on weak feeders and a transient current spike until the motor accelerates.",
     "distractorExplanations": {
       "a": "Demand is averaged over 15 to 30 minutes, so a few seconds of inrush adds only a small spike, not locked-rotor kW.",
       "b": "Starting method does not change running efficiency once the motor is up to speed.",
@@ -3521,11 +3526,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Low delta-T increases flow demand, raises pump energy, and can limit chiller loading efficiency in primary-secondary plants.",
+    "explanation": "When water flow is excessive for the heat being removed, each gallon absorbs little heat and the return-water temperature stays too close to supply. The resulting low delta-T raises pumping energy and can consume plant flow capacity before the chillers are fully loaded.",
     "distractorExplanations": {
-      "a": "Too little flow for the load produces a high delta-T, the opposite of low delta-T syndrome.",
-      "b": "Evaporator fouling hurts chiller heat transfer but does not cause the excess flow behind low delta-T.",
-      "c": "Surge is a compressor stability issue at low lift and load; low delta-T is a loop flow-to-load mismatch."
+      "a": "Too little flow for a given coil load generally increases the water temperature rise and produces high delta-T, not low delta-T.",
+      "b": "Evaporator fouling impairs heat transfer inside the chiller, but it does not identify the excess distribution flow that characterizes low delta-T syndrome.",
+      "c": "Compressor surge is a refrigerant-side stability problem associated with lift and loading; low loop delta-T is a water flow-to-load mismatch."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -3699,31 +3704,31 @@
     "id": "cem-readiness-check-hvac-envelope-bas-013",
     "examSlug": "cem-readiness-check",
     "topicId": "hvac-envelope-bas",
-    "prompt": "Proper DX refrigerant charge is often verified in the field by checking",
+    "prompt": "A technician checks the refrigerant charge on a DX unit after airflow is confirmed correct. Which field data should be compared with the manufacturer's charging procedure?",
     "options": [
       {
         "id": "a",
-        "text": "Suction pressure alone, compared against a standard refrigerant pressure-temperature chart"
+        "text": "Suction pressure alone and the refrigerant pressure-temperature chart regardless of expansion device or manufacturer"
       },
       {
         "id": "b",
-        "text": "Compressor amperage compared against nameplate rated load amps (RLA)"
+        "text": "Compressor current alone and the nameplate rated-load amperage"
       },
       {
         "id": "c",
-        "text": "Superheat at the evaporator and subcooling at the condenser within manufacturer ranges"
+        "text": "Measured superheat and subcooling under the specified operating conditions"
       },
       {
         "id": "d",
-        "text": "Sight glass clarity, with bubbles indicating overcharge of refrigerant"
+        "text": "Sight-glass condition alone after the compressor has run for five minutes"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Superheat and subcooling indicate whether refrigerant charge and metering device operation are within acceptable limits for DX systems.",
+    "explanation": "Charge must be evaluated under stable, specified conditions using the manufacturer's method. Fixed-orifice systems commonly use target superheat, while TXV systems commonly use target subcooling; checking both temperatures and pressures also helps distinguish charge problems from metering or airflow faults.",
     "distractorExplanations": {
-      "a": "Suction pressure alone gives saturation temperature but not superheat; charge needs pressure and line temperature.",
-      "b": "Amp draw varies with load and conditions, so it is not a reliable indicator of correct refrigerant charge.",
-      "d": "Bubbles in the sight glass usually indicate undercharge or flash gas, not overcharge."
+      "a": "Suction pressure gives evaporating saturation temperature but cannot show actual superheat without the suction-line temperature.",
+      "b": "Compressor current changes with indoor load, outdoor temperature, and voltage, so amperage alone cannot establish correct charge.",
+      "d": "A sight glass can show flash gas caused by pressure drop or low charge, but its appearance alone is not a complete charging method."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -3765,31 +3770,32 @@
     "id": "cem-readiness-check-hvac-envelope-bas-015",
     "examSlug": "cem-readiness-check",
     "topicId": "hvac-envelope-bas",
-    "prompt": "HVAC temperature setback during unoccupied periods saves energy primarily by:",
+    "prompt": "An office is unoccupied for 12 hours each night. Why does widening the heating and cooling setpoints during that period usually reduce HVAC energy use?",
     "options": [
       {
         "id": "a",
-        "text": "Disabling all safety interlocks permanently"
+        "text": "It lowers the indoor-outdoor temperature difference for the active seasonal load and reduces equipment runtime"
       },
       {
         "id": "b",
-        "text": "Increasing simultaneous heating and cooling intentionally"
+        "text": "It keeps the envelope heat-transfer rate unchanged but shifts all conditioning to the morning recovery period whenever night occupancy is expected to be low"
       },
       {
         "id": "c",
-        "text": "Eliminating all thermal mass effects in the building"
+        "text": "It removes stored heat from the building mass, so occupied-hour heating and cooling loads disappear"
       },
       {
         "id": "d",
-        "text": "Reducing temperature difference driving heat gain or loss through the envelope and lowering equipment runtime"
+        "text": "It maintains occupied temperatures with lower fan speed while heating and cooling capacity remains enabled"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Wider deadbands and reduced conditioning during unoccupied schedules lower conduction loads and runtime.",
+    "correctOptionId": "a",
+    "explanation": "Heating setback lowers the indoor temperature in cold weather, and cooling setup raises it in warm weather. Both reduce the temperature difference that drives envelope heat transfer and allow conditioning equipment to remain off longer, provided recovery is properly scheduled.",
     "distractorExplanations": {
       "a": "Safety interlocks must remain active.",
-      "b": "Simultaneous heating and cooling wastes energy.",
-      "c": "Thermal mass still affects recovery time after setback."
+      "b": "Setback changes the indoor-outdoor temperature difference, so it reduces heat transfer during the unoccupied period rather than merely shifting an unchanged load.",
+      "c": "Thermal mass delays and stores heat but does not make the next occupied-period load disappear; recovery still has to restore the space.",
+      "d": "Holding occupied temperatures is not setback, and leaving heating and cooling enabled can preserve unnecessary runtime even if fan speed is reduced."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -3884,11 +3890,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Supply duct leaks discharge treated air outside the intended distribution path, increasing runtime and fan/p plant load.",
+    "explanation": "A supply duct is normally at positive pressure, so leakage discharges conditioned air before it reaches the zones. The fan and heating or cooling plant must then run longer to satisfy space loads, and the lost air can also upset building pressure balance.",
     "distractorExplanations": {
-      "b": "Supply ducts are under positive pressure and leak outward; drawing plenum air inward is return-side leakage.",
-      "c": "Leaks reduce resistance and lower delivered airflow; they do not add resistance to the supply path.",
-      "d": "Leaked supply air never reaches zones, so it does not overventilate them or count as outdoor air."
+      "b": "Inward leakage is characteristic of a return duct under negative pressure; a pressurized supply duct normally leaks outward.",
+      "c": "An opening provides an additional discharge path and does not add series resistance; the problem is lost delivered airflow, not higher duct resistance.",
+      "d": "Air discharged into the plenum does not reach the occupied zone and therefore cannot be credited as zone outdoor-air ventilation."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -3963,31 +3969,32 @@
     "id": "cem-readiness-check-hvac-envelope-bas-021",
     "examSlug": "cem-readiness-check",
     "topicId": "hvac-envelope-bas",
-    "prompt": "The relationship between R-value and U-value is",
+    "prompt": "A wall assembly has a total thermal resistance of R-20 h·ft²·°F/Btu, including surface films. What U-value should be used for a simplified heat-transfer estimate?",
     "options": [
       {
         "id": "a",
-        "text": "R-value increases as U-value increases for the same assembly"
+        "text": "0.05 Btu/h·ft²·°F"
       },
       {
         "id": "b",
-        "text": "U = 1/R (for consistent units in a single-layer approximation)"
+        "text": "0.20 Btu/h·ft²·°F"
       },
       {
         "id": "c",
-        "text": "U equals R multiplied by area only with no inverse relationship"
+        "text": "5.0 Btu/h·ft²·°F"
       },
       {
         "id": "d",
-        "text": "U-value has no use in envelope heat transfer calculations"
+        "text": "20 Btu/h·ft²·°F"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "U-value is thermal transmittance; higher R means lower U and less heat flow per unit temperature difference.",
+    "correctOptionId": "a",
+    "explanation": "For consistent units, overall thermal transmittance is the reciprocal of total assembly resistance: U = 1/R = 1/20 = 0.05 Btu/h·ft²·°F. A larger total R-value therefore produces a smaller U-value and less conductive heat flow.",
     "distractorExplanations": {
       "a": "Higher R means lower U, not higher.",
-      "c": "U and R are inversely related, not a simple area product without context.",
-      "d": "U-value is fundamental to envelope load calculations."
+      "c": "This reverses the scale and would correspond to a very low resistance of R-0.2, not an insulated R-20 wall.",
+      "d": "This copies the numerical R-value without taking its reciprocal and also assigns it the wrong physical meaning.",
+      "b": "This treats the reciprocal as 1/5 rather than 1/20; an R-5 assembly, not R-20, would have U = 0.20."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -3996,31 +4003,31 @@
     "id": "cem-readiness-check-hvac-envelope-bas-022",
     "examSlug": "cem-readiness-check",
     "topicId": "hvac-envelope-bas",
-    "prompt": "An air barrier in the building envelope is intended to:",
+    "prompt": "Smoke-pencil testing finds air entering around wall-to-roof transitions even though cavity insulation is intact. Which enclosure repair addresses the primary defect?",
     "options": [
       {
         "id": "a",
-        "text": "Control unintended airflow through the enclosure assembly"
+        "text": "Make the air-barrier system continuous across the transitions and seal penetrations"
       },
       {
         "id": "b",
-        "text": "Block all water vapor movement in every climate without exception"
+        "text": "Add batt insulation at the transitions without sealing joints in the enclosure through the roof deck only"
       },
       {
         "id": "c",
-        "text": "Provide structural load bearing for the roof deck"
+        "text": "Install a lower-permeance vapor retarder over every interior finish surface"
       },
       {
         "id": "d",
-        "text": "Replace all insulation requirements in the wall"
+        "text": "Increase outdoor-air intake until the leakage paths stop drawing air inward"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Air barriers limit infiltration/exfiltration that drives latent loads and moisture transport through assemblies.",
+    "explanation": "An air barrier controls unintended bulk airflow only when its materials, joints, and transitions form a continuous plane. Sealing the wall-to-roof connection and penetrations addresses the measured leakage while insulation continues to control conductive heat flow.",
     "distractorExplanations": {
-      "b": "Vapor control may be separate; air barriers primarily address bulk air movement.",
-      "c": "Structural support is not the primary function of an air barrier.",
-      "d": "Insulation and air barriers serve different roles."
+      "b": "Fibrous insulation can slow conduction but does not reliably stop air moving through open joints, so the measured leakage path remains.",
+      "c": "Vapor diffusion control is climate- and assembly-specific; a vapor retarder is not a substitute for sealing discontinuities in the air barrier.",
+      "d": "Pressurization can mask inward leakage during one operating mode but increases fan and conditioning energy and does not repair the enclosure."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -4049,11 +4056,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Infiltration is uncontrolled outdoor air leakage that must be conditioned, unlike designed ventilation.",
+    "explanation": "Infiltration is uncontrolled outdoor air driven through enclosure leaks by wind, stack effect, or mechanical pressure differences. That air adds sensible load and, when outdoor humidity differs from indoors, latent load that the HVAC system must handle.",
     "distractorExplanations": {
-      "a": "Infiltration is uncontrolled and cannot be counted on for ventilation; designed outdoor air is still required.",
-      "b": "Infiltration occurs when the building is at negative pressure relative to outside; it does not pressurize it.",
-      "c": "Conduction depends on R-value, which infiltration does not change; infiltration adds air-exchange loads."
+      "a": "Infiltration is variable and poorly distributed, so it cannot be used as a dependable substitute for code-required designed ventilation.",
+      "b": "Infiltration is inward airflow at leakage locations created by local pressure differences; it does not itself raise building pressurization.",
+      "c": "Infiltration adds an air-exchange load rather than changing the material R-value used to calculate conductive wall heat transfer."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -4128,31 +4135,31 @@
     "id": "cem-readiness-check-hvac-envelope-bas-026",
     "examSlug": "cem-readiness-check",
     "topicId": "hvac-envelope-bas",
-    "prompt": "Continuous insulation above a metal deck roof assembly primarily helps",
+    "prompt": "Continuous insulation above a metal roof deck primarily improves envelope performance by",
     "options": [
       {
         "id": "a",
-        "text": "Serve as the roof's primary air barrier in place of a separate membrane"
+        "text": "Serving as the roof air barrier without sealed joints or a separate membrane"
       },
       {
         "id": "b",
-        "text": "Add thermal mass that shifts the roof's peak cooling load to evening"
+        "text": "Adding enough thermal mass to shift the roof cooling peak into the evening"
       },
       {
         "id": "c",
-        "text": "Raise the roof's solar reflectance so less solar heat is absorbed at the exterior surface"
+        "text": "Increasing exterior solar reflectance regardless of the installed roof membrane because fasteners never create thermal bridges"
       },
       {
         "id": "d",
-        "text": "Reduce thermal bridging through deck fasteners and maintain effective R-value"
+        "text": "Maintaining a continuous thermal layer across conductive deck and framing elements"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Continuous insulation layers limit heat short-circuiting through highly conductive deck elements.",
+    "explanation": "Placing insulation continuously above the metal deck keeps conductive deck and framing elements on the conditioned side of the thermal layer and limits thermal short circuits. Fasteners still create point bridges, but the assembly performs much better than insulation interrupted by metal members.",
     "distractorExplanations": {
-      "a": "Insulation boards are not an air barrier by themselves; the air barrier must be a continuous separate layer.",
-      "b": "Rigid insulation has little thermal mass; its role is resisting heat flow and limiting thermal bridging.",
-      "c": "Solar reflectance is a property of the roof surface or coating, not the insulation layer beneath it."
+      "a": "Insulation boards are not automatically an air barrier; joints, transitions, and penetrations require a tested continuous air-control layer.",
+      "b": "Rigid roof insulation provides thermal resistance but relatively little useful heat capacity, so thermal-mass load shifting is not its primary benefit.",
+      "c": "Solar reflectance is determined by the exposed membrane or coating; insulation below that surface does not set roof reflectance."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -4771,15 +4778,15 @@
       },
       {
         "id": "d",
-        "text": "Locking out a chiller when load falls below its minimum stable flow"
+        "text": "Locking out a chiller when evaporator flow falls below its allowable minimum"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Poor staging increases kW/ton by running too many machines at inefficient low loads. This matters most when one chiller could carry the load efficiently.",
+    "explanation": "Starting more chillers than the load requires can leave each machine at an inefficient low load while also adding pump and tower auxiliaries. Sequencing should compare total plant kW/ton and keep the fewest efficient machines online that can reliably carry the load.",
     "distractorExplanations": {
-      "a": "Lead/lag rotation balances wear and is a sound practice; parallel chiller sequences should keep it, not avoid it.",
-      "c": "Lowering condenser water temperature when wet-bulb permits reduces lift and kW/ton; it is a recommended strategy.",
-      "d": "Lockout below minimum stable flow protects the machine from surge and low-flow trips; it should be included, not avoided."
+      "a": "Lead/lag rotation is a sound maintenance practice when efficiency constraints are respected; it is not the operating condition the sequence should avoid.",
+      "c": "Lower condenser-water temperature can reduce compressor lift and kW/ton when tower conditions permit, subject to each chiller's minimum limit.",
+      "d": "Minimum evaporator flow protects heat transfer and avoids freeze or low-flow trips; a chiller below that limit should be unloaded or locked out."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -4788,33 +4795,33 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-001",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Boiler combustion efficiency is primarily improved by:",
+    "prompt": "A natural-gas boiler has 7% O2 in its flue gas at normal load, negligible CO, and a stable flame. Which action most directly improves combustion efficiency?",
     "options": [
       {
         "id": "a",
-        "text": "Tuning excess air, maintaining clean heat transfer surfaces, and recovering waste heat"
+        "text": "Retune the burner to reduce excess air while monitoring O2 and CO"
       },
       {
         "id": "b",
-        "text": "Raising excess air well above 30% to ensure complete burnout at each firing rate"
+        "text": "Clean waterside scale so more heat reaches the boiler water"
       },
       {
         "id": "c",
-        "text": "Raising stack temperature so that more heat leaves with the flue gas as useful work"
+        "text": "Install an economizer to recover sensible heat from the flue gas"
       },
       {
         "id": "d",
-        "text": "Increasing blowdown frequency and firing at maximum steam pressure in each season"
+        "text": "Increase blowdown to keep dissolved solids farther below the limit"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Efficient combustion minimizes excess air while maintaining complete burn and maximizing heat transfer to the load. Waste heat recovery applies where feasible.",
+    "explanation": "High flue-gas O2 with negligible CO indicates more excess air than combustion requires. Careful burner tuning reduces the mass of hot gas leaving the stack while preserving complete combustion.",
     "distractorExplanations": {
-      "b": "Excess air far above the burner's optimum carries heat up the stack; typical gas targets are about 10-15% (2-3% O2).",
-      "c": "Higher stack temperature means more heat lost to the flue; efficiency improves when stack temperature is lowered.",
-      "d": "Extra blowdown discards heated water and needless high pressure raises losses; neither improves combustion efficiency."
+      "b": "Scale removal improves heat-transfer and overall boiler efficiency, but it does not correct the excessive air-to-fuel ratio measured in the flue gas.",
+      "c": "An economizer reduces stack heat loss and improves overall boiler efficiency; it does not directly improve the burner’s combustion efficiency.",
+      "d": "Extra blowdown discards hot boiler water and increases makeup heating. Blowdown is governed by water chemistry, not flue-gas oxygen."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
   },
   {
@@ -4854,31 +4861,31 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-003",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Blowdown heat recovery on a steam boiler saves energy by:",
+    "prompt": "After high-pressure boiler blowdown enters a flash tank, the remaining hot liquid passes through a heat exchanger before discharge. What useful energy does that exchanger recover?",
     "options": [
       {
         "id": "a",
-        "text": "Returning blowdown water to the deaerator as clean feedwater makeup"
+        "text": "Chemical energy from dissolved solids remaining in the blowdown"
       },
       {
         "id": "b",
-        "text": "Reducing the blowdown rate by raising boiler water conductivity limits"
+        "text": "Latent heat released by combustion products condensing in the stack after the flash vessel has already separated vapor"
       },
       {
         "id": "c",
-        "text": "Capturing latent heat from flue gas condensing in the economizer section of the stack"
+        "text": "Mechanical energy from the pressure drop across the blowdown valve"
       },
       {
         "id": "d",
-        "text": "Capturing sensible heat from blowdown water before it is discharged to drain"
+        "text": "Sensible heat from the flash-tank liquid used to preheat makeup water"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Blowdown discards concentrated boiler water; heat exchangers preheat makeup water using that waste heat.",
+    "explanation": "The flash tank first separates steam formed by the pressure reduction. The downstream exchanger then transfers sensible heat from the still-hot liquid blowdown to cooler makeup water.",
     "distractorExplanations": {
-      "a": "Blowdown carries concentrated dissolved solids; returning it as feedwater defeats its purpose. Only its heat and flash steam are reused.",
-      "b": "Changing conductivity limits adjusts how much blowdown occurs; blowdown heat recovery captures heat from whatever is discharged.",
-      "c": "Flue-gas condensing recovery is a condensing economizer measure, not blowdown heat recovery from boiler water."
+      "a": "Dissolved solids have no useful fuel value in this application; their concentration is the reason the contaminated water must be discharged.",
+      "b": "Condensing combustion products describes a condensing economizer. This exchanger receives liquid boiler blowdown rather than flue gas.",
+      "c": "The blowdown valve dissipates pressure instead of producing useful shaft work; the recovery exchanger captures thermal energy from the liquid."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -4887,31 +4894,31 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-004",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Failed steam traps on a distribution system typically cause",
+    "prompt": "During a no-load period, a steam trap remains hot and produces a continuous high-intensity ultrasonic flow signature. What is the most likely energy consequence?",
     "options": [
       {
         "id": "a",
-        "text": "Condensate backing up into heat exchangers when traps fail open"
+        "text": "Condensate backs up because the trap has failed closed"
       },
       {
         "id": "b",
-        "text": "Live steam loss to condensate return or atmosphere, wasting fuel"
+        "text": "Live steam passes through the failed-open trap and raises boiler load"
       },
       {
         "id": "c",
-        "text": "Higher steam pressure in the mains as failed traps hold back steam"
+        "text": "Steam-main pressure rises because the trap retains vapor upstream"
       },
       {
         "id": "d",
-        "text": "Lower boiler load because less condensate is returned to the plant"
+        "text": "Feedwater demand falls because less condensate reaches the return tank"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Blown traps pass steam continuously, increasing boiler load and risking system damage. Failed traps can also cause water hammer.",
+    "explanation": "Continuous flow when no condensate load is expected is evidence of a failed-open or blowing trap. Lost live steam must be replaced by additional boiler firing and treated makeup water.",
     "distractorExplanations": {
-      "a": "Traps failing open blow live steam through; condensate backup into equipment is the symptom of a trap that fails closed.",
-      "c": "Failed-open traps vent steam and lower available pressure; they do not raise main pressure by holding steam back.",
-      "d": "Steam lost through failed traps must be replaced by the boiler, raising fuel use and makeup water rather than lowering load."
+      "a": "A failed-closed trap causes condensate backup and often a cold downstream line; it does not produce continuous ultrasonic flow.",
+      "c": "A blowing trap releases steam into the return system and can reduce available pressure. Retaining steam is not the observed failure mode.",
+      "d": "Loss of condensate increases rather than decreases makeup demand, and the boiler must fire more to replace the escaped steam."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -4953,31 +4960,31 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-006",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Boiler turndown ratio describes:",
+    "prompt": "A burner can fire stably from 2 MMBtu/h to 20 MMBtu/h. How should its turndown be stated?",
     "options": [
       {
         "id": "a",
-        "text": "The ratio of steam output to fuel input at full firing rate"
+        "text": "2:1, because minimum firing is 2 MMBtu/h"
       },
       {
         "id": "b",
-        "text": "The time needed to go from cold start to full firing rate"
+        "text": "9:1, because the firing-rate span is 18 MMBtu/h"
       },
       {
         "id": "c",
-        "text": "The share of boiler capacity held in reserve at peak load"
+        "text": "18:1, because maximum minus minimum equals 18 MMBtu/h expressed as a firing-rate percentage band"
       },
       {
         "id": "d",
-        "text": "The range between minimum and maximum stable firing rate"
+        "text": "10:1, because maximum stable firing divided by minimum stable firing is 10"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Higher turndown allows efficient operation at varying loads without excessive cycling.",
+    "explanation": "Turndown is the ratio of maximum to minimum stable firing rate, so 20 divided by 2 equals 10:1. Higher turndown lets a boiler follow light loads with less on-off cycling.",
     "distractorExplanations": {
-      "a": "Output divided by fuel input is boiler efficiency; turndown compares the maximum to the minimum stable firing rate.",
-      "b": "Cold-start time is a warm-up or ramp-rate characteristic; turndown is the max-to-min stable firing rate ratio.",
-      "c": "Reserve capacity at peak is a redundancy or standby margin, not the burner's maximum-to-minimum firing ratio."
+      "a": "The minimum firing rate by itself is not a ratio; it must be compared with the maximum stable firing rate.",
+      "b": "Dividing the firing-rate span by the minimum is not the standard turndown definition, even though that calculation yields nine.",
+      "c": "Subtracting minimum from maximum gives an 18 MMBtu/h firing span, not the dimensionless maximum-to-minimum turndown ratio."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -5184,31 +5191,31 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-013",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Reducing steam pressure at the point of use when process allows saves energy because",
+    "prompt": "A plant confirms that every connected process can operate at a lower steam-header pressure. If the boiler and header setpoint are reduced together, what is the most defensible expected benefit?",
     "options": [
       {
         "id": "a",
-        "text": "Lower pressure raises steam's saturation temperature and speeds heat transfer"
+        "text": "Higher steam saturation temperature and a larger process temperature difference"
       },
       {
         "id": "b",
-        "text": "Lower pressure steam has less latent heat, so each pound carries less energy"
+        "text": "More latent heat per hour because each pound of steam condenses at higher pressure at the boiler only, leaving remote high-pressure loads unchanged"
       },
       {
         "id": "c",
-        "text": "Lower pressure eliminates flash steam at condensate traps and receivers"
+        "text": "Complete elimination of flash steam wherever condensate enters a return system"
       },
       {
         "id": "d",
-        "text": "Lower pressure reduces heat loss through piping and may improve boiler efficiency"
+        "text": "Lower distribution heat loss and leakage, subject to adequate pressure at every load"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Lower system pressure reduces saturation temperature and line losses if process requirements permit. The boiler efficiency gain comes at lower firing.",
+    "explanation": "Lowering the actual boiler and distribution pressure lowers steam temperature and can reduce pipe heat loss, leakage, and flash losses. The measure is valid only after pressure drop and end-use requirements are checked.",
     "distractorExplanations": {
-      "a": "Saturation temperature falls as pressure drops; the heat transfer driving force decreases, which is why process needs set the floor.",
-      "b": "Latent heat per pound actually rises slightly as pressure falls; the saving comes from lower line and flash losses.",
-      "c": "Flash steam forms whenever condensate drops to a lower pressure; lowering system pressure reduces flash rather than eliminating it."
+      "a": "Steam saturation temperature decreases as pressure decreases, so the process temperature difference generally becomes smaller rather than larger.",
+      "b": "Latent heat per pound rises slightly as pressure falls, but hourly useful heat still depends on steam flow and the process load.",
+      "c": "Condensate can still flash whenever it enters a vessel below its saturation pressure; a lower header pressure may reduce but not eliminate flashing."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -5250,31 +5257,32 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-015",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Solar PV capacity factor is defined as:",
+    "prompt": "A 500-kWAC solar PV system produces 876,000 kWh in a non-leap year. What is its annual AC capacity factor?",
     "options": [
       {
         "id": "a",
-        "text": "Actual energy output divided by theoretical maximum output at rated capacity over a period"
+        "text": "10%"
       },
       {
         "id": "b",
-        "text": "Actual AC energy output divided by the total solar energy incident on the module surface"
+        "text": "20%"
       },
       {
         "id": "c",
-        "text": "Peak sun hours per day divided by 24 hours, adjusted for the inverter rating"
+        "text": "25%"
       },
       {
         "id": "d",
-        "text": "Measured output divided by modeled expected output for the same weather period, as a percentage"
+        "text": "50%"
       }
     ],
-    "correctOptionId": "a",
-    "explanation": "Capacity factor reflects resource, shading, and system availability versus nameplate DC rating converted to AC output.",
+    "correctOptionId": "b",
+    "explanation": "Maximum annual energy at the stated AC rating is 500 kW × 8,760 h = 4,380,000 kWh. Dividing 876,000 by 4,380,000 gives an AC capacity factor of 20%.",
     "distractorExplanations": {
       "b": "Output divided by incident solar energy is system or module conversion efficiency, not capacity factor.",
-      "c": "Peak sun hours describe the solar resource; capacity factor compares actual kWh to rated kW times hours in the period.",
-      "d": "Measured versus modeled output under actual weather is the performance ratio or performance index, not capacity factor."
+      "c": "Twenty-five percent would require 1,095,000 kWh per year. It does not result from actual energy divided by rated power times hours.",
+      "d": "Fifty percent would require 2,190,000 kWh per year and is not obtained from the system’s stated annual generation.",
+      "a": "Ten percent would correspond to 438,000 kWh per year at a 500-kWAC rating, only half of the stated production."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -5283,31 +5291,31 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-016",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Net metering for on-site solar typically allows",
+    "prompt": "A utility credits onsite PV exports at an avoided-cost rate below the customer’s retail energy rate. Which project response is most likely to improve bill savings?",
     "options": [
       {
         "id": "a",
-        "text": "Elimination of all interconnection review"
+        "text": "Increase array size until annual exports greatly exceed onsite consumption even when the interconnection agreement forbids export"
       },
       {
         "id": "b",
-        "text": "Billing credit or offset for exported generation up to policy limits"
+        "text": "Align PV production or storage discharge with onsite load to increase self-consumption"
       },
       {
         "id": "c",
-        "text": "Operation without any utility connection ever"
+        "text": "Treat every exported kWh as equal in value to a retail kWh avoided onsite"
       },
       {
         "id": "d",
-        "text": "Unlimited export payment at premium rates in all jurisdictions without rules"
+        "text": "Disconnect from the utility so the export-credit rule no longer applies"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Net metering policies vary by utility and state; they affect project economics.",
+    "explanation": "When exports earn less than the retail rate, a PV kWh consumed onsite usually avoids a higher-cost purchase than an exported kWh earns. Load alignment or storage can therefore increase value, subject to storage losses and cost.",
     "distractorExplanations": {
-      "a": "Interconnection standards still apply.",
-      "c": "Grid-tied systems require interconnection.",
-      "d": "Policies have caps and rate structures."
+      "a": "Oversizing can increase low-value exports and weaken economics when export compensation is below the retail rate.",
+      "c": "Retail-rate avoidance and avoided-cost export compensation have different values; treating them as equal overstates export savings.",
+      "d": "Going off-grid requires enough generation, storage, and backup for reliability and is not a routine response to export pricing."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -5547,31 +5555,31 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-024",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "A boiler economizer preheats",
+    "prompt": "In a conventional industrial boiler, what stream does a feedwater economizer preheat?",
     "options": [
       {
         "id": "a",
-        "text": "Feedwater or combustion air using flue gas heat before it exits the stack"
+        "text": "Boiler feedwater using sensible heat recovered from flue gas"
       },
       {
         "id": "b",
-        "text": "Makeup water using heat recovered from continuous surface blowdown before the deaerator"
+        "text": "Burner combustion air using sensible heat recovered from flue gas"
       },
       {
         "id": "c",
-        "text": "Outdoor ventilation air using exhaust air from the boiler room"
+        "text": "Cold makeup water using heat recovered from liquid blowdown"
       },
       {
         "id": "d",
-        "text": "Condensate return using flash steam from the deaerator vent"
+        "text": "Condensate return using flash steam recovered at a receiver"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Economizers recover sensible heat from flue gas, improving boiler efficiency.",
+    "explanation": "A feedwater economizer transfers sensible heat from boiler flue gas to feedwater before it enters the boiler. This reduces the fuel needed to raise the water to steam conditions.",
     "distractorExplanations": {
-      "b": "Preheating makeup with blowdown heat is a blowdown heat exchanger, not an economizer, which uses flue gas heat.",
-      "c": "Exhaust-to-ventilation air recovery is an HVAC energy recovery ventilator; an economizer recovers flue gas heat.",
-      "d": "Flash steam and vent condensers recover deaerator or condensate heat; economizers transfer stack heat to feedwater."
+      "b": "A device that transfers flue-gas heat to burner air is a combustion-air preheater, not a feedwater economizer.",
+      "c": "A blowdown heat exchanger transfers heat from discharged boiler water to makeup water; its source is not flue gas.",
+      "d": "Flash-steam recovery is part of the condensate or blowdown system and is distinct from a flue-gas feedwater economizer."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -5613,31 +5621,32 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-026",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "CHP project economics often depend on the spark spread, which is",
+    "prompt": "A CHP unit has an electrical heat rate of 10,000 Btu/kWh. Natural gas costs $8.00/MMBtu, variable O&M is $0.015/kWh, and avoided grid electricity costs $0.140/kWh. Before crediting recovered heat, what is the electrical spark spread?",
     "options": [
       {
         "id": "a",
-        "text": "The difference between peak and off-peak electricity prices in a TOU tariff"
+        "text": "$0.015/kWh"
       },
       {
         "id": "b",
-        "text": "The ratio of electrical output to fuel input of the CHP prime mover"
+        "text": "$0.045/kWh"
       },
       {
         "id": "c",
-        "text": "The difference between natural gas commodity and pipeline delivery charges"
+        "text": "$0.080/kWh"
       },
       {
         "id": "d",
-        "text": "The difference between electricity purchase price and fuel cost"
+        "text": "$0.095/kWh"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Favorable spark spread means onsite generation fuel cost is below avoided electricity cost. The comparison is made on an equivalent energy basis.",
+    "correctOptionId": "b",
+    "explanation": "Fuel costs 0.010 MMBtu/kWh × $8.00/MMBtu = $0.080/kWh. Adding $0.015/kWh O&M gives $0.095/kWh onsite cost, so the spread is $0.140 − $0.095 = $0.045/kWh.",
     "distractorExplanations": {
-      "a": "The peak/off-peak spread drives load shifting and storage; spark spread compares the power price with the fuel cost.",
+      "a": "$0.015/kWh is only variable O&M and omits the fuel cost derived from the unit’s electrical heat rate.",
       "b": "Output over fuel input is electrical efficiency; spark spread is a price difference between electricity and fuel.",
-      "c": "Commodity versus delivery split is a gas bill structure; spark spread compares electricity price against fuel cost."
+      "c": "$0.080/kWh is the calculated fuel cost alone, not the difference between avoided electricity cost and total variable generation cost.",
+      "d": "$0.095/kWh is the total variable onsite generation cost after fuel and O&M, not the resulting electrical spark spread."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -5745,31 +5754,31 @@
     "id": "cem-readiness-check-industrial-boiler-renewables-030",
     "examSlug": "cem-readiness-check",
     "topicId": "industrial-boiler-renewables",
-    "prompt": "Pinch analysis in industrial heat integration identifies",
+    "prompt": "In a process heat-integration study, what does the pinch represent after the designer selects a minimum approach temperature?",
     "options": [
       {
         "id": "a",
-        "text": "The lowest flue gas temperature allowed before acid condensation occurs in the stack"
+        "text": "The flue-gas temperature below which sulfuric acid must condense"
       },
       {
         "id": "b",
-        "text": "The economic pipe size that balances friction loss against first cost"
+        "text": "The pipe diameter that minimizes combined pumping and capital cost"
       },
       {
         "id": "c",
-        "text": "The point of maximum heat exchanger effectiveness in a single counterflow exchanger unit"
+        "text": "The operating point of maximum effectiveness for one heat exchanger below which the designer must always add a new utility heater"
       },
       {
         "id": "d",
-        "text": "The minimum temperature approach limiting heat recovery between hot and cold streams"
+        "text": "The closest hot- and cold-stream temperature region that constrains heat recovery"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Pinch temperature helps maximize recovery with heat exchanger networks.",
+    "explanation": "The pinch is the process temperature region where shifted hot and cold composite curves come closest at the chosen minimum approach. It sets minimum heating and cooling utility targets and constrains exchanger-network design.",
     "distractorExplanations": {
-      "a": "That is the acid dew point limit on stack heat recovery; pinch analysis finds the network temperature bottleneck.",
-      "b": "Economic pipe sizing trades pumping energy against capital cost; pinch analysis concerns heat exchange between streams.",
-      "c": "Effectiveness describes a single exchanger; pinch analysis uses composite curves for the whole process network."
+      "a": "The acid dew point limits how far a particular flue gas may be cooled; it is not the composite-curve constraint used in pinch analysis.",
+      "b": "Economic pipe sizing balances friction energy against first cost, while pinch analysis targets thermal utility use across process streams.",
+      "c": "Effectiveness describes performance of one exchanger. The pinch is derived from all relevant hot and cold process streams."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -6669,31 +6678,31 @@
     "id": "cem-readiness-check-policy-audits-economics-008",
     "examSlug": "cem-readiness-check",
     "topicId": "policy-audits-economics",
-    "prompt": "IPMVP Option A is most appropriate when:",
+    "prompt": "A lighting retrofit has two savings variables: fixture wattage and operating hours. The team will measure operating hours with loggers but stipulate fixture wattage from verified product data. Which IPMVP approach best fits this plan?",
     "options": [
       {
         "id": "a",
-        "text": "Retrofit savings are isolated with continuous measurement of all key parameters over time"
+        "text": "Option B, because every savings variable within the retrofit boundary must be measured"
       },
       {
         "id": "b",
-        "text": "Whole-facility savings must be determined using utility bill regression"
+        "text": "Option C, because whole-facility utility data determine the lighting savings"
       },
       {
         "id": "c",
-        "text": "Individual equipment retrofit savings are isolated with periodic short-term measurements"
+        "text": "Option A, because a key parameter is measured while another parameter is stipulated"
       },
       {
         "id": "d",
-        "text": "Savings are estimated with a calibrated whole-building simulation model"
+        "text": "Option D, because a calibrated whole-building simulation determines the savings"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "IPMVP Option A (retrofit isolation) uses short-term measurements of key parameters combined with stipulated values for other factors to quantify savings for specific retrofits.",
+    "explanation": "IPMVP Option A is retrofit isolation with key-parameter measurement: at least one key parameter is measured, while other parameters may be stipulated from defensible records. Here, runtime is measured and fixture wattage is stipulated.",
     "distractorExplanations": {
-      "a": "Measuring all parameters continuously within the retrofit boundary is Option B; Option A measures key parameters and stipulates others.",
-      "b": "Whole-facility utility analysis aligns more with Option C or D approaches.",
-      "d": "Calibrated simulation is Option D, used when baseline or reporting data are missing or interactive effects are complex."
+      "a": "Option B measures all parameters needed to calculate savings within the retrofit boundary; this plan stipulates fixture wattage instead.",
+      "b": "Option C evaluates savings at the whole-facility meter and cannot isolate lighting savings from this logger-and-stipulation plan.",
+      "d": "Option D uses calibrated simulation; no simulation is needed when the retrofit can be isolated with measured and stipulated parameters."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -6857,7 +6866,7 @@
     "explanation": "Demand charge: 500 kW × $12/kW = $6,000. Energy charge: 200,000 kWh × $0.08/kWh = $16,000. Combined total = $22,000.",
     "distractorExplanations": {
       "a": "This reflects demand charges only, omitting energy charges.",
-      "c": "This overstates the bill by adding incorrect components.",
+      "c": "$28,000 incorrectly adds the $6,000 demand charge twice to the $16,000 energy charge.",
       "d": "This reflects energy charges only, omitting demand charges."
     },
     "difficulty": "medium",
@@ -6879,15 +6888,15 @@
       },
       {
         "id": "c",
-        "text": "Annual energy cost per square foot to the regional utility average"
+        "text": "Annual energy cost per square foot to the regional utility average against the building's own prior-year source EUI only"
       },
       {
         "id": "d",
-        "text": "Actual source EUI to the national median for similar building types"
+        "text": "Weather- and operation-normalized source EUI relative to national peers of the same building type"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Portfolio Manager scores compare a building's weather-normalized source EUI against peer buildings of the same type to produce a 1–100 performance score.",
+    "explanation": "The ENERGY STAR score compares a building's source energy performance with a national peer model after normalizing for weather and relevant operating characteristics. It is not a comparison with the building's own history or an ASHRAE 90.1 design baseline.",
     "distractorExplanations": {
       "a": "Comparing to the building's own history is trend tracking; the 1-100 score compares source EUI to national peers.",
       "b": "Code-baseline comparisons are used for modeling compliance; Portfolio Manager scores use source EUI versus a national peer group.",
@@ -6955,7 +6964,7 @@
     "correctOptionId": "d",
     "explanation": "Federal statutes and executive orders establish energy intensity reduction targets and reporting for federal agencies, driving efficiency in government facilities. These goals require energy intensity reduction.",
     "distractorExplanations": {
-      "a": "DOE appliance standards apply to products sold nationwide; federal building targets come from EISA/NECPA mandates.",
+      "a": "DOE appliance standards apply to products sold nationwide; federal building reduction targets arise from statutes such as EISA and ECPA and related federal directives.",
       "b": "Section 179D is a tax deduction for efficient buildings; it does not set mandatory federal agency reduction targets.",
       "c": "ENERGY STAR certification is a voluntary recognition program, not a mandated energy reduction target for agencies."
     },
@@ -7032,31 +7041,31 @@
     "id": "cem-readiness-check-policy-audits-economics-019",
     "examSlug": "cem-readiness-check",
     "topicId": "policy-audits-economics",
-    "prompt": "Internal rate of return (IRR) for an energy project is best described as:",
+    "prompt": "For a proposed boiler upgrade, an analyst varies the discount rate until the present value of project savings exactly equals the present value of project costs. Which financial metric has the analyst found?",
     "options": [
       {
         "id": "a",
-        "text": "The simple payback multiplied by the discount rate"
+        "text": "The discounted payback period"
       },
       {
         "id": "b",
-        "text": "Annual kWh savings divided by peak kW"
+        "text": "The organization's hurdle rate"
       },
       {
         "id": "c",
-        "text": "The discount rate at which NPV equals zero"
+        "text": "The internal rate of return"
       },
       {
         "id": "d",
-        "text": "The utility's published demand charge"
+        "text": "The savings-to-investment ratio"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "IRR is the discount rate that makes the present value of inflows equal outflows (NPV = 0), often compared to a hurdle rate for project approval.",
+    "explanation": "The internal rate of return is the discount rate at which a project's net present value equals zero. For conventional cash flows, the project clears a financial hurdle when its IRR exceeds the required return.",
     "distractorExplanations": {
-      "a": "IRR is not derived from simple payback multiplied by a discount rate.",
-      "b": "KWh/kW is a load factor-related ratio, not IRR.",
-      "d": "Demand charges are tariff rates, not project return metrics."
+      "a": "Discounted payback is the elapsed time needed for discounted savings to recover cost; it is measured in years, not as the rate that sets NPV to zero.",
+      "b": "A hurdle rate is management's required return used to screen projects; it is an input for comparison, not a return solved from project cash flows.",
+      "d": "The savings-to-investment ratio divides discounted savings by discounted investment; it is a ratio rather than the discount rate that makes NPV zero."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -7164,31 +7173,31 @@
     "id": "cem-readiness-check-policy-audits-economics-023",
     "examSlug": "cem-readiness-check",
     "topicId": "policy-audits-economics",
-    "prompt": "IPMVP Option C (whole facility) is commonly selected when:",
+    "prompt": "A campus installs several interacting HVAC, lighting, and controls measures whose combined effect is visible at the main utility meter, but isolating each measure would be impractical. Which IPMVP option best fits the savings evaluation?",
     "options": [
       {
         "id": "a",
-        "text": "Baseline and reporting periods must be identical calendar months only with no adjustments"
+        "text": "Option A, retrofit isolation with selected parameters measured and others stipulated"
       },
       {
         "id": "b",
-        "text": "No utility meter serves the facility"
+        "text": "Option B, retrofit isolation with all savings parameters measured"
       },
       {
         "id": "c",
-        "text": "Only a single lamp is replaced"
+        "text": "Option D, calibrated simulation of the facility or affected systems"
       },
       {
         "id": "d",
-        "text": "Multiple interactive ECMs affect the entire meter and individual isolation is impractical"
+        "text": "Option C, whole-facility analysis using utility-meter data and adjustment models"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Option C uses whole-facility utility data with a calibrated model to verify savings when multiple measures interact and retrofit isolation is not feasible.",
+    "explanation": "IPMVP Option C uses whole-facility meter data and a baseline model, commonly regression against weather, production, or occupancy, to determine aggregate savings. It suits multiple interacting measures when expected savings are large enough to distinguish from normal facility variation.",
     "distractorExplanations": {
-      "a": "Option C allows routine adjustments for weather, occupancy, and other independent variables.",
-      "b": "Option C requires facility-level meter data.",
-      "c": "Single small measures are better suited to Option A or B isolation approaches."
+      "a": "Option A isolates a retrofit and stipulates some parameters; it is not the best fit when several interacting measures are evaluated together at the main meter.",
+      "b": "Option B measures all parameters within a retrofit boundary; isolating every interacting campus measure would defeat the stated whole-facility approach.",
+      "c": "Option D uses calibrated simulation when measured baseline or reporting data are unavailable or inadequate; usable whole-facility meter data support Option C here."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -7329,7 +7338,7 @@
     "id": "cem-readiness-check-policy-audits-economics-028",
     "examSlug": "cem-readiness-check",
     "topicId": "policy-audits-economics",
-    "prompt": "Which metric is calculated as total annual energy cost divided by total annual energy consumption?",
+    "prompt": "A facility paid $240,000 for 2,000,000 kWh over the year. An analyst divides total annual energy cost by total annual consumption and obtains $0.12/kWh. What does this figure represent?",
     "options": [
       {
         "id": "a",
@@ -7349,7 +7358,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Dividing total cost by total consumption yields an average unit cost, useful for screening ECM economics when marginal rates are not available.",
+    "explanation": "The calculation $240,000 ÷ 2,000,000 kWh yields a $0.12/kWh average blended energy rate. It is useful for screening, but it may differ from the marginal rate actually avoided by an ECM under tiered or time-varying tariffs.",
     "distractorExplanations": {
       "a": "The marginal rate is the cost of the next unit at the current tier or period, not total cost divided by total use.",
       "b": "Load factor is average kW divided by peak kW over a period, a usage shape metric, not a cost per unit.",
@@ -7758,7 +7767,7 @@
     "id": "cem-readiness-check-policy-audits-economics-041",
     "examSlug": "cem-readiness-check",
     "topicId": "policy-audits-economics",
-    "prompt": "A campus uses shadow metering on a substation feeder for M&V. Shadow metering means:",
+    "prompt": "A campus installs a second revenue-grade meter on a substation feeder alongside the utility meter so it can independently check consumption during M&V and resolve discrepancies. What is this arrangement called?",
     "options": [
       {
         "id": "a",
@@ -7778,7 +7787,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Shadow meters provide an independent check of consumption for M&V, calibration, or dispute resolution parallel to billing meters.",
+    "explanation": "This is shadow metering: a separate meter operates in parallel with the primary or billing meter to provide an independent consumption record for M&V, calibration checks, or dispute resolution.",
     "distractorExplanations": {
       "a": "Filling gaps with a calibrated model is an Option D or data-estimation method, not shadow metering.",
       "b": "Short-term portable logging is spot or short-term metering for Option A, not permanent parallel metering.",
@@ -7956,11 +7965,11 @@
     "id": "cem-readiness-check-policy-audits-economics-047",
     "examSlug": "cem-readiness-check",
     "topicId": "policy-audits-economics",
-    "prompt": "When escalating energy prices at 3%/year in LCC, the effect on savings present value is to?",
+    "prompt": "In a life-cycle cost model, energy prices are assumed to escalate 3% per year instead of remaining flat. What is the direct effect of that assumption on the modeled savings?",
     "options": [
       {
         "id": "a",
-        "text": "Decrease the present value of savings because prices are discounted"
+        "text": "Decrease the present value of savings because prices are discounted because the discount rate is assumed to stay flat"
       },
       {
         "id": "b",
@@ -8034,19 +8043,19 @@
       },
       {
         "id": "c",
-        "text": "A measure's cost per unit of energy saved and potential savings volume"
+        "text": "A measure's cost per tonne of emissions avoided and its potential abatement volume"
       },
       {
         "id": "d",
-        "text": "A measure's emissions per kWh saved and the grid's marginal emissions rate"
+        "text": "A measure's emissions per kWh saved and the grid's marginal emissions rate ranked by simple payback without an emissions axis"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "MACC charts rank ECMs by cost-effectiveness ($/kWh or $/tonne saved) against cumulative savings potential to prioritize implementation.",
+    "explanation": "A marginal abatement cost curve ranks measures by cost per unit of greenhouse-gas emissions avoided, commonly dollars per tonne of CO2e. Bar width represents potential abatement volume, while bar height represents marginal abatement cost.",
     "distractorExplanations": {
-      "a": "MACC bar height is cost per unit abated and width is volume; payback is not the plotted metric.",
-      "b": "Capital cost alone ignores savings; MACC bars show cost-effectiveness per unit saved and volume.",
-      "d": "Emission factors convert energy to carbon but are not the bars; MACC bars plot cost per unit and potential."
+      "a": "Simple payback and first-year energy savings can support project screening, but they are not the height and width plotted on a marginal abatement cost curve.",
+      "b": "Capital cost and budget share do not express marginal abatement cost; the curve relates cost per tonne avoided to potential emissions reduction.",
+      "d": "Emissions per kWh and the grid marginal emissions rate may help calculate avoided emissions, but the curve plots cost per tonne avoided and abatement volume."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."

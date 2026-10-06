@@ -937,6 +937,9 @@ describe("llm visibility", () => {
     expect(buildMockExamFacts(wellAp).runnable).toBe(true);
 
     const cem = getMockExamConfig("cem-readiness-check")!;
+    expect(cem.questionCount).toBe(50);
+    expect(cem.durationMinutes).toBe(50);
+    expect(cem.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(50);
     expect(buildMockExamMarkdown(cem)).toContain("Certified Energy Manager (CEM)");
     expect(buildMockExamMarkdown(cem)).toContain("700");
     expect(buildMockExamFacts(cem).runnable).toBe(true);

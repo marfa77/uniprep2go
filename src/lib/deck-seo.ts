@@ -990,7 +990,17 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "WELL AP Exam Prep | 250+ Cards + Free Mock",
   },
   "cem-anki-deck": {
-    title: "CEM Exam Prep | 250+ Cards + Free Mock",
+    title: "CEM Exam Prep | 250 Cards + Free 50Q Mock",
+    headline: "Certified Energy Manager Anki — 250 Cards + Free Mock",
+    description:
+      "Independent AEE CEM Anki: $11 / 250 cards across five Body of Knowledge groups plus a free 50-question / 50-minute timed diagnostic. Official CEM is 130Q / 4h / open book / scaled 700. Not AEE’s paid 65Q self-eval and not AEE exam material.",
+    keywords: [
+      "cem anki",
+      "certified energy manager flashcards",
+      "aee cem practice test",
+      "cem exam prep",
+      "free cem practice questions",
+    ],
   },
   "ashrae-certifications-anki-deck": {
     title: "ASHRAE Cert Prep | 250+ Cards + Free Mock",

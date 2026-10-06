@@ -372,14 +372,14 @@ function publishCommand(slug) {
   const chunk = at < 0 ? "" : decks.slice(at, at + 12000);
   const checkout = chunk.match(/checkoutUrl:\s*"([^"]+)"/)?.[1] ?? "";
   if (live("finance-anki-decks.json") || /category:\s*"finance"/.test(chunk.slice(0, 4000))) {
-    return ["node", "scripts/publish-finance-gumroad-polish.mjs", "--slug", slug, "--refresh-samples"];
+    return ["node", "scripts/publish-gumroad-classic.mjs", "--slug", slug];
   }
   if (inSpec("wave_deck_specs.json")) {
     return live("wave-anki-decks.json") ? ["node", "scripts/setup-gumroad-wave-decks.mjs", "--slug", slug, "--polish-only"] : null;
   }
   if (inSpec("building_deck_specs.json")) {
     return live("building-anki-decks.json")
-      ? ["python3", "scripts/publish-building-gumroad-landings.py", "--slug", slug, "--force-cdn"]
+      ? ["node", "scripts/publish-gumroad-classic.mjs", "--slug", slug]
       : null;
   }
   return /gumroad\.com\/l\//.test(checkout) ? ["node", "scripts/publish-authored-gumroad-samples.mjs", "--slug", slug] : null;

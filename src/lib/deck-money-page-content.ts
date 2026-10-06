@@ -72,6 +72,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "$11 / 250 NEBOSH IGC cards + free 50Q knowledge diagnostic — honest: official GIC1/GIC2 are not MCQ.",
   "well-ap-anki-deck":
     "$11 / 250 WELL AP cards + free 50Q timed mock — official 115 items / 2.5h / scaled 170. Not IWBI material.",
+  "cem-anki-deck":
+    "$11 / 250 CEM cards + free 50Q / 50 min timed mock — official AEE CEM is 130Q / 4h / open book / scaled 700. Not the paid 65Q AEE self-eval.",
   "california-real-estate-exam-anki-deck":
     "250 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
   "series-63-anki-deck":
@@ -819,6 +821,21 @@ Candidates over-drill favorite concepts (Air, Materials) and under-drill Certifi
 ### What this does not replace
 
 IWBI/GBCI registration, continuing education, or the official WELL AP exam (115 items, scaled pass 170). This deck is independent prep — not IWBI material.`,
+  "cem-anki-deck": `### What is inside
+
+250 MCQ cards grouped the way UniPrep2Go scores the free mock: policy/audits/economics, electrical/lighting, HVAC/envelope/BAS, industrial/boiler/renewables, and commissioning/ESPC/M&V. That is a 5-bucket map of AEE’s 14 Body of Knowledge sections — HVAC still gets the heaviest official weight (up to 16%). Every card has a teaching explanation and notes on why the other options fail.
+
+### 3–4 week study plan with the free mock
+
+**Week 1:** 15–20 new cards/day on economics math (simple payback, demand charges) and lighting/electrical PF and kW. **Week 2:** HVAC, envelope, and BAS sequences. **Week 3:** Sit the [free 50-question CEM readiness check](/mock-exams/cem-readiness-check) (50 minutes, 70% diagnostic target). **Final days:** Review-only Anki on the weakest group; tab the open-book binder you will actually carry — AEE’s exam is 130 questions / 4 hours / scaled 700.
+
+### Pitfalls this deck targets
+
+Candidates confuse IPMVP Options A–D, treat AEE’s paid 65-question / 2-hour self-eval as a scored mock with answer keys (it is section pass/fail only), and under-drill boilers, TES, and ESPC relative to HVAC. Cards force all five groups under spaced recall.
+
+### What this does not replace
+
+An AEE-approved preparatory seminar, eligibility documentation, or the official CEM exam. Independent prep — not AEE material.`,
   "rd-exam-anki-deck": `### What is inside
 
 120 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank themes as the free timed readiness check.
